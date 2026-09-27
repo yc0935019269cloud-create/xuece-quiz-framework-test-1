@@ -130,11 +130,23 @@ const U = (() => {
     if (!m) return null;
     return m[2] ? Number(m[1]) / Number(m[2]) : Number(m[1]);
   }
+  /* 中英並列答案（如「額骨 / frontal bone」）：忽略分隔符號與引號、中英順序可對調、頜／頷與腭／顎通用。
+   * 只在標準答案同時含中文與英文字母時啟用，數學分數（1/2）等不受影響。 */
+  const HAN = /[㐀-鿿]/, LAT = /[a-z]/i;
+  const loose = s => normAns(s).replace(/[\/／,、;:()\[\]{}\-_|·・'’‘"“”`]/g, '').replace(/頷/g, '頜').replace(/顎/g, '腭');
   function sameAns(a, b) {
+    const raw = String(b);
     a = normAns(a); b = normAns(b);
     if (a === b) return true;
     const x = numOf(a), y = numOf(b);
-    return x !== null && y !== null && Math.abs(x - y) < 1e-9;
+    if (x !== null && y !== null && Math.abs(x - y) < 1e-9) return true;
+    if (HAN.test(raw) && LAT.test(raw)) {
+      const la = loose(a);
+      if (la === loose(raw)) return true;
+      const parts = raw.split(/\s*[\/／]\s*/);
+      if (parts.length === 2 && la === loose(parts[1]) + loose(parts[0])) return true;
+    }
+    return false;
   }
   const img = p => IMGMAP[p] || p;
   return { img, sameAns, $, $$, esc, h, rnd, chance, pick, shuffle, pickN, clamp, sleep, pct, md, toast, modal, confirm };
