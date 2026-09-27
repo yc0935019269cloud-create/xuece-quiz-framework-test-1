@@ -645,7 +645,8 @@ const Screens = (() => {
       <div class="row amb-presets">${AMB.PRESETS.map((pr, i) => `<button class="px-btn small" data-pre="${i}">${pr.name}</button>`).join('')}</div>
       <label class="volrow"><span>白噪音總量</span><input type="range" min="0" max="100" step="1" data-k="amb" value="${Math.round(VOL.get('amb') * 100)}"><b>${Math.round(VOL.get('amb') * 100)}</b></label>
       ${Object.entries(AMB.TYPES).map(([k, t]) => `<label class="volrow amb"><span>${t.icon} ${t.name}</span><input type="range" min="0" max="100" step="1" data-k="amb_${k}" value="${Math.round((VOL.get('amb_' + k) || 0) * 100)}"><b>${Math.round((VOL.get('amb_' + k) || 0) * 100) || '關'}</b></label>`).join('')}
-      <div class="small-t dim">可以同時混合多種聲音，拉到 0 即關閉（CC0 實錄環境音）</div></div>`);
+      <div class="small-t dim">可以同時混合多種聲音，拉到 0 即關閉（CC0 實錄環境音）</div>
+      <div class="small-t dim">音量控制方式：${U.esc(MIX.info())}${IS_IOS ? '（iPhone 側邊靜音鍵開啟時會沒有聲音）' : ''}</div></div>`);
     U.$$('input[type=range]', box).forEach(r => {
       r.oninput = () => { VOL.set(r.dataset.k, r.value / 100); r.nextElementSibling.textContent = (r.dataset.k.startsWith('amb_') && +r.value === 0) ? '關' : r.value; };
       r.onchange = () => SFX.play('coin');

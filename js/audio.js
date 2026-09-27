@@ -97,8 +97,11 @@ const SFX = (() => {
  * 偵測到不能調音量時，把 <audio> 接到 Web Audio 的 GainNode，用 gain 控制音量。
  * 只在 http(s) 啟用：file:// 下 createMediaElementSource 會被當成跨來源而變成無聲；能調 volume 的裝置完全不走這裡。 */
 const VOL_OK = (() => { try { const p = new Audio(); p.volume = 0.5; return Math.abs(p.volume - 0.5) < 0.01; } catch (e) { return false; } })();
+// 新版 iOS 可能會「回報」設定的 volume 卻不套用，所以只靠讀回值判斷不可靠 → 另外直接認 iPhone／iPad（含偽裝成 Mac 的 iPadOS）
+const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 const MIX = (() => {
-  const need = !VOL_OK && /^https?:$/.test(location.protocol);
+  const http = /^https?:$/.test(location.protocol);
+  const need = (IS_IOS || !VOL_OK) && http;
   let ctx = null;
   const gains = new Map();
   function ac() {
@@ -113,9 +116,16 @@ const MIX = (() => {
     try { const s = c.createMediaElementSource(el), g = c.createGain(); g.gain.value = 0; s.connect(g); g.connect(c.destination); gains.set(el, g); } catch (e) {}
   }
   function setVol(el, v) { const g = gains.get(el); if (g) g.gain.value = v; else el.volume = v; }
-  const ok = el => VOL_OK || gains.has(el);   // 這個元素的音量能不能真的被控制
-  ['pointerdown', 'keydown', 'touchend'].forEach(ev => document.addEventListener(ev, () => { if (ctx && ctx.state !== 'running') ctx.resume().catch(() => {}); }, true));
-  return { need, attach, setVol, ok };
+  const ok = el => gains.has(el) || (VOL_OK && !IS_IOS);   // 這個元素的音量能不能真的被控制
+  // iOS 只在 touchend／click 這類手勢裡允許啟動 AudioContext；被來電、切 App 中斷後也要重新 resume
+  ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown'].forEach(ev => document.addEventListener(ev, () => { if (ctx && ctx.state !== 'running') ctx.resume().catch(() => {}); }, true));
+  document.addEventListener('visibilitychange', () => { if (!document.hidden && ctx && ctx.state !== 'running') ctx.resume().catch(() => {}); });
+  function info() {
+    if (need) return gains.size ? `Web Audio 音量控制（${ctx ? ctx.state : '—'}）` : 'Web Audio 音量控制（點一下畫面後啟用）';
+    if (IS_IOS || !VOL_OK) return http ? '無法調整音量' : '無法調整音量（用檔案開啟；請改用網址開啟）';
+    return '瀏覽器原生音量';
+  }
+  return { need, attach, setVol, ok, info };
 })();
 
 /* 背景音樂：兩個 <audio> 交叉淡入淡出，第一次點擊畫面後才開始播放（瀏覽器自動播放限制）
