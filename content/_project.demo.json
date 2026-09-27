@@ -1,0 +1,10 @@
+{
+  "id": "demo",
+  "title": "刷題地牢",
+  "subtitle": "把任何題庫變成地牢冒險",
+  "disclaimer": "",
+  "subjects": [
+    { "id": "demo_sci", "name": "示範：自然", "theme": "sci", "desc": "範例科目，可刪除", "words": ["分子", "細胞", "電流", "光合"] },
+    { "id": "demo_eng", "name": "示範：英文", "theme": "lang", "desc": "範例科目（CSV 匯入），可刪除" }
+  ]
+}

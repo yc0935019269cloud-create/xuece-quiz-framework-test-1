@@ -1,0 +1,39 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "ans-handout",
+    "subject": "eye_ans",
+    "name": "講義小試身手：眼球自主神經（國考題）",
+    "order": 9,
+    "source": "曾廣文〈眼球自主神經系統（一）〉p.11 小試身手（114 年驗光師第 26 題）"
+  },
+  "groups": [],
+  "questions": [
+    {
+      "n": 26,
+      "type": "single",
+      "level": 2,
+      "stem": "交感神經纖維（the sympathetic nerve fibers）經由那一條神經到達睫狀體及瞳孔擴大肌？",
+      "choices": [
+        "淚腺神經（Lacrimal nerve）",
+        "額神經（frontal nerve）",
+        "鼻睫神經（nasociliary nerve）",
+        "三叉神經（trigeminal nerve）"
+      ],
+      "answer": "C",
+      "explain": [
+        "**核心觀念**：交感節後纖維沿頸動脈叢入顱後，搭 V1 的**鼻睫神經**，再經長、短睫狀神經進入眼球。",
+        "",
+        "- A：淚腺神經分布到淚腺與外上眼瞼，不進眼球。",
+        "- B：額神經分布到額部，也不進眼球。",
+        "- **C 正確**：只有鼻睫神經分出長、短睫狀神經。",
+        "- D：三叉神經太籠統；題目問的是「哪一條神經」，最精確的是鼻睫神經。"
+      ],
+      "tags": [
+        "交感路徑",
+        "鼻睫神經",
+        "國考"
+      ]
+    }
+  ]
+}
