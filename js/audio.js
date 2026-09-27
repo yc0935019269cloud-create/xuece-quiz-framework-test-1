@@ -151,19 +151,32 @@ const BGM = (() => {
 
   const a = [new Audio(), new Audio()];
   a.forEach(x => { x.loop = true; x.preload = 'auto'; x.volume = 0; x.addEventListener('ended', () => { if (x === a[cur]) onEnded(); }); });
+  // iOS Safari 的 audio.volume 是唯讀（永遠 1），不能靠讀回 volume 判斷淡出完成，否則舊曲永遠不會暫停。
+  // 所以另外記錄「邏輯音量」lv；偵測到裝置不支援調音量時，切歌／靜音改成直接暫停。
+  const VOL_OK = (() => { try { const p = new Audio(); p.volume = 0.5; return Math.abs(p.volume - 0.5) < 0.01; } catch (e) { return false; } })();
+  const lv = [0, 0];
   let cur = 0, curName = null, unlocked = false, fadeT = null, curScene = 'hub', shufPick = {}, listIdx = 0, preview = false;
   let held = false, ovr = null; // held：番茄鐘專注時暫停音樂；ovr：番茄鐘專注時指定的曲目
   function target() { return held ? 0 : VOL.music(); }
   function fade() {
     clearInterval(fadeT);
+    if (!VOL_OK) {
+      // 無法調音量：不做淡入淡出，非目前曲目與音量為 0 時直接暫停
+      const t = target();
+      a.forEach((x, i) => {
+        lv[i] = i === cur ? t : 0;
+        if (lv[i] <= 0.001 && !x.paused) x.pause();
+      });
+      return;
+    }
     fadeT = setInterval(() => {
       const t = target(); let done = true;
       a.forEach((x, i) => {
         const goal = i === cur ? t : 0;
-        const nv = x.volume + Math.sign(goal - x.volume) * Math.min(0.05, Math.abs(goal - x.volume));
-        x.volume = Math.max(0, Math.min(1, nv));
-        if (Math.abs(x.volume - goal) > 0.001) done = false;
-        if (i !== cur && x.volume <= 0.001 && !x.paused) x.pause();
+        lv[i] = Math.max(0, Math.min(1, lv[i] + Math.sign(goal - lv[i]) * Math.min(0.05, Math.abs(goal - lv[i]))));
+        x.volume = lv[i];
+        if (Math.abs(lv[i] - goal) > 0.001) done = false;
+        if (lv[i] <= 0.001 && !x.paused) x.pause();   // 淡出完成（含靜音、番茄鐘暫停）就真的暫停
       });
       if (done) clearInterval(fadeT);
     }, 60);
@@ -174,7 +187,7 @@ const BGM = (() => {
     curName = id;
     cur = 1 - cur;
     const x = a[cur];
-    x.loop = loop; x.src = TRACKS[id].src; x.currentTime = 0; x.volume = 0;
+    x.loop = loop; x.src = TRACKS[id].src; x.currentTime = 0; x.volume = 0; lv[cur] = 0;
     if (unlocked && target() > 0) x.play().catch(() => {});
     fade();
     notify();
