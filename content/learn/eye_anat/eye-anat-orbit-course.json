@@ -1,0 +1,973 @@
+{
+  "schema": "xd-learn/1",
+  "id": "eye-anat-orbit-course",
+  "subject": "eye_anat",
+  "unit": "骨質眼窩與顱骨",
+  "title": "眼眶骨與顱孔：從圖認骨、從孔辨神經",
+  "desc": "用無標籤骨圖練七塊眼眶骨，再依顱神經順序記孔洞及通過物。",
+  "level": 2,
+  "minutes": 90,
+  "order": 1,
+  "source": "《1.骨質眼窩+圖譜+2026-01.pdf》全 10 頁（圖譜頁碼 10–19）；《新增 文字文件.txt》眼眶骨、顱孔逐字稿。；看圖座標已依原始投影片校正",
+  "tags": [
+    "眼眶骨",
+    "眼眶壁",
+    "顱孔",
+    "腦神經通過物",
+    "眼眶骨折"
+  ],
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "眼眶七骨：先認圖，再說中英文",
+      "goals": [
+        "不看標籤辨認眼眶七塊骨頭",
+        "每一骨都能寫出中文與英文",
+        "說出眼眶骨頭總數"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "眼眶不是一塊骨頭挖出來的洞",
+          "body": [
+            "想像眼眶像一個由多片骨板拼成的錐形凹室。跑台把標籤貼在其中一片骨上，你要立即說出中英文。",
+            "本課先建立「七塊骨」地圖，再用無標籤模型練定位。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "眼眶七骨總表",
+          "body": [
+            "眼眶由七塊骨構成：",
+            "| 中文 | English |",
+            "|---|---|",
+            "| 額骨 | frontal bone |",
+            "| 蝶骨 | sphenoid bone |",
+            "| 顴骨 | zygomatic bone |",
+            "| 上頜骨 | maxilla |",
+            "| 腭骨 | palatine bone |",
+            "| 篩骨 | ethmoid bone |",
+            "| 淚骨 | lacrimal bone |",
+            "",
+            "**蝶骨小翼與大翼是蝶骨的部分，不是第八、第九塊骨。**"
+          ],
+          "keys": [
+            "總數七塊",
+            "七個中英文名稱都要成對背"
+          ],
+          "flash": {
+            "front": "眼眶由幾塊骨頭構成？",
+            "back": "七塊：額骨 frontal bone、蝶骨 sphenoid bone、顴骨 zygomatic bone、上頜骨 maxilla、腭骨 palatine bone、篩骨 ethmoid bone、淚骨 lacrimal bone。"
+          }
+        },
+        {
+          "type": "check",
+          "kind": "fill",
+          "q": "眼眶骨總數是幾塊？",
+          "answer": [
+            "7",
+            "七",
+            "7塊",
+            "七塊"
+          ],
+          "explain": "眼眶由七塊骨構成；蝶骨的小翼與大翼不另計。",
+          "hint": "把額、蝶、顴、上頜、腭、篩、淚逐一數一遍。"
+        },
+        {
+          "type": "card",
+          "title": "看眼眶模型時的五個辨認錨點",
+          "body": [
+            "先從最容易定位的骨開始：",
+            "- 額骨 frontal bone：眼眶上方。",
+            "- 蝶骨 sphenoid bone：眼眶後方；可看小翼 lesser wing、大翼 greater wing。",
+            "- 篩骨 ethmoid bone、淚骨 lacrimal bone：眼眶內側。",
+            "- 顴骨 zygomatic bone：外側、前外側。",
+            "- 上頜骨 maxilla：下方及內側前部。",
+            "- 腭骨 palatine bone：下壁後部的小範圍。",
+            "",
+            "圖上的顏色是模型標示，不是骨頭真實顏色；辨認靠位置與相鄰關係。"
+          ],
+          "keys": [
+            "先定上／下／內／外，再辨骨名",
+            "蝶骨小翼與大翼不可混成兩塊骨"
+          ],
+          "flash": {
+            "front": "看到眼眶內側壁，優先在腦中搜尋哪兩塊骨？",
+            "back": "篩骨 ethmoid bone 與淚骨 lacrimal bone；上頜骨及蝶骨也參與內側壁。"
+          }
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "眼眶後部、與視神經管及眶上裂相鄰的骨是哪一塊？",
+          "answer": 1,
+          "explain": "蝶骨形成眼眶後部，具有小翼、大翼及相關孔裂。",
+          "hint": "先找眼眶後端尖部與兩翼。",
+          "choices": [
+            "額骨 frontal bone",
+            "蝶骨 sphenoid bone",
+            "顴骨 zygomatic bone",
+            "淚骨 lacrimal bone"
+          ]
+        },
+        {
+          "type": "diagram",
+          "title": "無標籤眼眶骨模型：標記點辨認",
+          "body": "依序點選標記，先看骨名與所在位置，再進入測驗。答案要能中英文都說出。",
+          "img": "img/eye-anat-orbit/orbit-unlabeled.png",
+          "source": "使用者提供《1.骨質眼窩+圖譜+2026-01.pdf》PDF p.7，裁出無文字標籤模型圖。",
+          "mode": "both",
+          "points": [
+            {
+              "name": "額骨 Frontal bone",
+              "desc": "眼眶上壁的重要骨；標記在前上方骨面。",
+              "x": 42,
+              "y": 19
+            },
+            {
+              "name": "蝶骨 Sphenoid bone",
+              "desc": "小翼、 大翼均屬於同一塊蝶骨；標記在眼眶後部。",
+              "x": 50,
+              "y": 49
+            },
+            {
+              "name": "篩骨 Ethmoid bone",
+              "desc": "眼眶內側壁；鄰近篩竇。",
+              "x": 38,
+              "y": 52
+            },
+            {
+              "name": "顴骨 Zygomatic bone",
+              "desc": "眼眶外側壁與下壁的一部分。",
+              "x": 84,
+              "y": 72
+            },
+            {
+              "name": "上頜骨 Maxilla",
+              "desc": "眼眶下壁與內側壁的一部分。",
+              "x": 55,
+              "y": 72
+            },
+            {
+              "name": "淚骨 Lacrimal bone",
+              "desc": "內側壁前方的橘色小骨，在篩骨前方，有淚囊窩。",
+              "x": 34,
+              "y": 62
+            }
+          ]
+        },
+        {
+          "type": "example",
+          "title": "由標記點回推骨名",
+          "problem": "標記位於眼眶外側的黃色骨面，如何快速寫出答案？",
+          "steps": [
+            "先判方向：此點在眼眶外側，不在內側鼻腔旁。",
+            "再比相鄰骨：眼眶外側壁的重要骨是顴骨；後方另接蝶骨大翼。",
+            "寫完整雙語名稱，避免只寫「顴」或只寫英文。"
+          ],
+          "answer": "顴骨 / zygomatic bone。關鍵：辨明外側壁，且中英文都寫。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：眼眶七骨辨認",
+          "qids": [
+            "eye-anat-orbit-1",
+            "eye-anat-orbit-6"
+          ],
+          "pick": {
+            "match": [
+              "眼眶骨",
+              "看圖辨識",
+              "中英文名詞"
+            ],
+            "n": 2
+          },
+          "checks": [
+            {
+              "kind": "self",
+              "q": "請不看表格，完整寫出眼眶七塊骨的中英文名稱。",
+              "answer": "額骨 frontal bone；蝶骨 sphenoid bone；顴骨 zygomatic bone；上頜骨 maxilla；腭骨 palatine bone；篩骨 ethmoid bone；淚骨 lacrimal bone。",
+              "explain": "七個都要成對；蝶骨小翼與大翼合計仍是一塊蝶骨。",
+              "hint": "按上、外、下、內側順序回想各骨，再補齊剩下的骨。"
+            },
+            {
+              "kind": "self",
+              "q": "請完整寫出眼眶七骨的中文與英文名稱。",
+              "answer": "額骨 frontal bone；蝶骨 sphenoid bone；顴骨 zygomatic bone；上頜骨 maxilla；腭骨 palatine bone；篩骨 ethmoid bone；淚骨 lacrimal bone。",
+              "explain": "共七塊；不要漏掉腭骨或淚骨。",
+              "hint": "按眼眶壁的位置繞一圈回想，再補蝶骨。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "眼眶由七塊骨構成。",
+            "蝶骨的小翼與大翼是同一塊蝶骨的部分。",
+            "篩骨、淚骨位於內側；顴骨偏外側；上頜骨參與下壁與內側壁。",
+            "模型圖的標記題須直接練中文＋英文，不可只認顏色。"
+          ],
+          "flash": [
+            {
+              "front": "眼眶七骨有哪些？",
+              "back": "額骨 frontal bone、蝶骨 sphenoid bone、顴骨 zygomatic bone、上頜骨 maxilla、腭骨 palatine bone、篩骨 ethmoid bone、淚骨 lacrimal bone。"
+            },
+            {
+              "front": "蝶骨小翼、大翼是幾塊骨？",
+              "back": "都是蝶骨 sphenoid bone 的部分，合計仍是一塊骨。"
+            }
+          ],
+          "next": "下一課用四壁與眼眶後端建立方向，再辨認視神經管與眶裂。"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "眼眶四壁、蝶骨兩翼與眼眶裂孔",
+      "goals": [
+        "依眼眶方向說出各壁骨頭",
+        "分清眶上孔、眶上裂、視神經管",
+        "描述眼眶後尖端與視神經管的位置"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "先定方向，才不會把相鄰骨背亂",
+          "body": [
+            "眼眶前方開口大，往後逐漸變窄，近似錐狀。先找到後方尖端的視神經管，再判上下、內外。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "眼眶四壁的骨頭組成",
+          "body": [
+            "依課堂逐字稿整理：",
+            "| 眼眶壁 | 骨頭 |",
+            "|---|---|",
+            "| 上壁 | 額骨 frontal bone、蝶骨小翼 lesser wing of sphenoid |",
+            "| 外側壁 | 顴骨 zygomatic bone、蝶骨大翼 greater wing of sphenoid |",
+            "| 內側壁 | 上頜骨 maxilla、淚骨 lacrimal bone、篩骨 ethmoid bone、蝶骨 sphenoid bone |",
+            "| 下壁 | 上頜骨 maxilla、顴骨 zygomatic bone、腭骨 palatine bone |",
+            "",
+            "上頜骨同時參與下壁與內側壁；蝶骨小翼在上方，大翼在外側。"
+          ],
+          "keys": [
+            "上壁2、外側壁2、內側壁4、下壁3",
+            "同一骨可參與不只一面"
+          ],
+          "flash": {
+            "front": "眼眶上壁由哪兩個骨性部分構成？",
+            "back": "額骨 frontal bone 與蝶骨小翼 lesser wing of sphenoid。"
+          },
+          "tip": "不要把蝶骨大翼放進上壁。"
+        },
+        {
+          "type": "check",
+          "kind": "fill",
+          "q": "請寫出眼眶外側壁兩個骨性部分（中英文）。",
+          "answer": [
+            "顴骨 / zygomatic bone；蝶骨大翼 / greater wing of sphenoid",
+            "顴骨 zygomatic bone；蝶骨大翼 greater wing of sphenoid"
+          ],
+          "explain": "外側壁由顴骨與蝶骨大翼構成。",
+          "hint": "想外側壁：顴骨在前外側，蝶骨大翼在後方。"
+        },
+        {
+          "type": "card",
+          "title": "蝶骨兩翼與眶上裂",
+          "body": [
+            "蝶骨 sphenoid bone 的小翼 lesser wing 與大翼 greater wing 是同一骨的不同部分。**眶上裂 superior orbital fissure 位於兩翼之間**，不是「在小翼上」也不是「在大翼上」。",
+            "",
+            "視神經管 optic canal 位在眼眶後端尖部附近；眶上裂在其旁側。眶下裂 inferior orbital fissure 位於眼眶後下方。"
+          ],
+          "keys": [
+            "眶上裂＝小翼與大翼之間",
+            "視神經管靠眼眶後尖端"
+          ],
+          "flash": {
+            "front": "眶上裂的中文英文名稱及位置如何完整表達？",
+            "back": "眶上裂 / superior orbital fissure；位於蝶骨小翼與大翼之間。"
+          },
+          "tip": "記住是「兩翼之間」，不是其中一翼上。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪一個是額骨上的孔，而不是蝶骨裂隙？",
+          "answer": 0,
+          "explain": "眶上孔位於額骨；眶上裂是蝶骨小翼、大翼之間的裂隙。",
+          "hint": "看名稱最後的詞：foramen 是孔，fissure 是裂。",
+          "choices": [
+            "眶上孔 supraorbital foramen",
+            "眶上裂 superior orbital fissure",
+            "眶下裂 inferior orbital fissure",
+            "視神經管 optic canal"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "三個易混名稱：孔、管、裂",
+          "body": [
+            "- 視神經管 optic canal：視神經與眼動脈通過，靠眼眶後尖端。",
+            "- 眶上裂 superior orbital fissure：CN III、IV、V1、VI 通過，位於蝶骨兩翼之間。",
+            "- 眶下裂 inferior orbital fissure：位於眼眶後下方；本次逐字稿沒有列通過物，先熟悉辨名與位置。",
+            "- 眶上孔 supraorbital foramen：額骨標誌。",
+            "- 眶下孔 infraorbital foramen：上頜骨標誌。"
+          ],
+          "keys": [
+            "optic canal 不等於 optic tract",
+            "foramen、canal、fissure 的中文名稱要分清"
+          ],
+          "flash": {
+            "front": "視神經與眼動脈共同通過哪個構造？",
+            "back": "視神經管 optic canal。"
+          },
+          "tip": "不是視束 optic tract；視束在視交叉後方。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "視神經管 optic canal 最接近眼眶哪個部位？",
+          "answer": 1,
+          "explain": "眼眶呈前寬後窄的錐狀，視神經管在後方尖端附近。",
+          "hint": "沿眼眶往後找最窄處。",
+          "choices": [
+            "眼眶前方開口",
+            "眼眶後方尖端",
+            "眼眶外側前端",
+            "眼眶下壁中央"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "從方向判斷裂孔",
+          "problem": "看到位於蝶骨小翼與大翼之間的縫隙，應如何命名？",
+          "steps": [
+            "確認骨頭：蝶骨 sphenoid。",
+            "確認位置：小翼 lesser wing 與大翼 greater wing 之間。",
+            "依「眶＋上＋裂」寫出構造，並補上英文。"
+          ],
+          "answer": "眶上裂 / superior orbital fissure。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：眼眶方向與孔裂",
+          "qids": [
+            "eye-anat-orbit-45",
+            "eye-anat-orbit-50"
+          ],
+          "pick": {
+            "match": [
+              "眼眶壁",
+              "眶上裂",
+              "視神經管"
+            ],
+            "n": 2
+          },
+          "checks": [
+            {
+              "kind": "self",
+              "q": "請以中英文寫出眶上裂的位置，並寫出視神經管的位置。",
+              "answer": "眶上裂 superior orbital fissure 位於蝶骨小翼與大翼之間；視神經管 optic canal 位於眼眶後方尖端附近。",
+              "explain": "兩個位置都要寫，並避免把眶上裂寫成位於某一翼上。",
+              "hint": "先辨認蝶骨兩翼，再想眼眶的後尖端。"
+            },
+            {
+              "kind": "self",
+              "q": "請寫出「眶上裂」的中英文及其與蝶骨兩翼的位置關係。",
+              "answer": "眶上裂 superior orbital fissure 位於蝶骨小翼 lesser wing 與大翼 greater wing 之間。",
+              "explain": "關鍵介系詞是「之間」。",
+              "hint": "同時想像蝶骨的上下兩翼。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "眼眶前寬後窄、近似錐狀；視神經管在後尖端附近。",
+            "上壁：額骨＋蝶骨小翼；外側壁：顴骨＋蝶骨大翼。",
+            "內側壁：上頜骨、淚骨、篩骨、蝶骨；下壁：上頜骨、顴骨、腭骨。",
+            "眶上裂位於蝶骨小翼與大翼之間。",
+            "眶上孔、眶上裂、視神經管不能混稱。"
+          ],
+          "flash": [
+            {
+              "front": "眶上裂在哪裡？",
+              "back": "蝶骨小翼與大翼之間。"
+            },
+            {
+              "front": "optic canal 通過什麼？",
+              "back": "視神經 optic nerve 與眼動脈 ophthalmic artery。"
+            }
+          ],
+          "next": "下一課按腦神經順序整理顱底孔洞與通過物。"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "顱底孔洞：用腦神經順序記通過物",
+      "goals": [
+        "配對眼眶附近孔洞與腦神經",
+        "分辨圓孔、卵圓孔、棘孔",
+        "按神經編號整理顱底孔洞"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "為什麼不要把孔洞表當成散亂清單背？",
+          "body": [
+            "孔洞名稱一多，很容易把 V2、V3 或 CN VII、VIII 放錯。逐字稿建議依腦神經編號排序，讓每個孔洞成為路徑上的一站。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "從 CN I 到 CN VI：前段顱孔",
+          "body": [
+            "| 孔洞 | 通過物 |",
+            "|---|---|",
+            "| 篩孔 olfactory foramina | 嗅神經 CN I |",
+            "| 視神經管 optic canal | 視神經 CN II；眼動脈 ophthalmic artery |",
+            "| 眶上裂 superior orbital fissure | CN III、CN IV、CN V1、CN VI |",
+            "",
+            "V1 是三叉神經眼神經（ophthalmic division）；不要和眼動脈 ophthalmic artery 混為一個構造。"
+          ],
+          "keys": [
+            "CN I→篩孔；CN II→視神經管",
+            "眶上裂→III、IV、V1、VI"
+          ],
+          "flash": {
+            "front": "哪個孔洞通過 CN II？",
+            "back": "視神經管 optic canal。"
+          },
+          "tip": "按神經編號找：CN II 是視神經。"
+        },
+        {
+          "type": "check",
+          "kind": "fill",
+          "q": "眶上裂通過哪些腦神經（用羅馬數字列出）？",
+          "answer": [
+            "III、IV、V1、VI",
+            "III IV V1 VI",
+            "CN III、CN IV、CN V1、CN VI"
+          ],
+          "explain": "眶上裂通過 CN III、IV、V1、VI。",
+          "hint": "不是只記眼動神經；中間還有滑車神經與 V1。"
+        },
+        {
+          "type": "card",
+          "title": "CN V 分支：圓孔與卵圓孔",
+          "body": [
+            "三叉神經 CN V 的三個分支按位置記：",
+            "- 眼神經 V1：經眶上裂 superior orbital fissure。",
+            "- 上頜神經 V2：經圓孔 foramen rotundum。",
+            "- 下頜神經 V3：經卵圓孔 foramen ovale。",
+            "",
+            "口訣：**V2 圓、V3 卵**。"
+          ],
+          "keys": [
+            "foramen rotundum＝V2",
+            "foramen ovale＝V3"
+          ],
+          "flash": {
+            "front": "第五對腦神經第二支 V2 通過哪個孔？",
+            "back": "圓孔 foramen rotundum。"
+          },
+          "tip": "口訣「V2 圓、V3 卵」。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪個孔洞通過 V3（下頜神經）？",
+          "answer": 2,
+          "explain": "V3 經卵圓孔；V2 經圓孔。",
+          "hint": "用口訣「V2 圓、V3 卵」。",
+          "choices": [
+            "眶上裂 superior orbital fissure",
+            "圓孔 foramen rotundum",
+            "卵圓孔 foramen ovale",
+            "棘孔 foramen spinosum"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "CN VII 到 CN XII：後段顱孔",
+          "body": [
+            "| 孔洞 | 通過物 |",
+            "|---|---|",
+            "| 內耳道 internal acoustic meatus | CN VII、CN VIII |",
+            "| 頸靜脈孔 jugular foramen | CN IX、CN X、CN XI |",
+            "| 舌下神經管 hypoglossal canal | CN XII |",
+            "| 棘孔 foramen spinosum | 中腦膜動脈 middle meningeal artery |",
+            "",
+            "破裂孔 foramen lacerum 在圖譜中有標示，但這份逐字稿沒有交代通過物；先背名稱與位置，不要把其他孔的內容硬套過來。"
+          ],
+          "keys": [
+            "VII/VIII 內耳道",
+            "IX/X/XI 頸靜脈孔；XII 舌下神經管"
+          ],
+          "flash": {
+            "front": "CN IX、X、XI 一起對應哪個孔洞？",
+            "back": "頸靜脈孔 jugular foramen。"
+          },
+          "tip": "把 IX、X、XI 當一組記。"
+        },
+        {
+          "type": "check",
+          "kind": "order",
+          "q": "依逐字稿建議，將孔洞與腦神經由低編號到高編號排列。",
+          "explain": "先看腦神經編號，再把每組孔洞放在相應位置。",
+          "hint": "這題不依顱底圖上的左右順序，而依 CN I→XII 排列。",
+          "items": [
+            "篩孔 olfactory foramina（CN I）",
+            "視神經管 optic canal（CN II）",
+            "眶上裂 superior orbital fissure（CN III、IV、V1、VI）",
+            "圓孔 foramen rotundum（V2）",
+            "卵圓孔 foramen ovale（V3）",
+            "內耳道 internal acoustic meatus（VII、VIII）",
+            "頸靜脈孔 jugular foramen（IX、X、XI）",
+            "舌下神經管 hypoglossal canal（XII）"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "從 V2 推回顱孔",
+          "problem": "題目給出「上頜神經」，如何在圓孔與卵圓孔中判斷？",
+          "steps": [
+            "確認上頜神經是三叉神經第二支 V2。",
+            "套用配對：V2 走圓孔；V3 才走卵圓孔。",
+            "寫出中英文：圓孔 foramen rotundum。"
+          ],
+          "answer": "上頜神經 V2 通過圓孔 / foramen rotundum；關鍵是「V2 圓、V3 卵」。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：顱孔與通過物",
+          "qids": [
+            "eye-anat-orbit-55",
+            "eye-anat-orbit-58"
+          ],
+          "pick": {
+            "match": [
+              "顱孔通過物",
+              "三叉神經",
+              "腦神經順序"
+            ],
+            "n": 2
+          },
+          "checks": [
+            {
+              "kind": "self",
+              "q": "不看表格，寫出圓孔、卵圓孔、棘孔各自的重要通過物。",
+              "answer": "圓孔 foramen rotundum：V2；卵圓孔 foramen ovale：V3；棘孔 foramen spinosum：中腦膜動脈 middle meningeal artery。",
+              "explain": "三個名稱與三個通過物都要對上。",
+              "hint": "用「V2 圓、V3 卵；棘孔有中腦膜動脈」回想。"
+            },
+            {
+              "kind": "self",
+              "q": "請配對圓孔、卵圓孔與 CN V 的分支。",
+              "answer": "圓孔 foramen rotundum—V2 上頜神經；卵圓孔 foramen ovale—V3 下頜神經。",
+              "explain": "V2、V3 順序別對調。",
+              "hint": "回想「V2 圓、V3 卵」。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "顱孔可按 CN I→XII 排序記憶。",
+            "眶上裂通過 CN III、IV、V1、VI。",
+            "V2 走圓孔；V3 走卵圓孔。",
+            "棘孔通過中腦膜動脈；內耳道對 VII/VIII；頸靜脈孔對 IX/X/XI；舌下神經管對 XII。",
+            "破裂孔通過物未在本段逐字稿交代，避免自行混配。"
+          ],
+          "flash": [
+            {
+              "front": "V2、V3 分別經哪個孔？",
+              "back": "V2 經圓孔 foramen rotundum；V3 經卵圓孔 foramen ovale。"
+            },
+            {
+              "front": "棘孔的重要通過物？",
+              "back": "中腦膜動脈 middle meningeal artery。"
+            }
+          ],
+          "next": "最後一課把顱骨圖譜的鼻腔標誌與眼眶旁副鼻竇一起複習。"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "顱骨圖譜延伸標誌與眼眶骨折鄰近關係",
+      "goals": [
+        "辨認圖譜中的主要顱骨標誌中英文",
+        "說出眼眶與四組副鼻竇的相鄰方向",
+        "把眶底骨折與上頜竇位置連結"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "圖譜不只畫眼眶，也畫了周圍地標",
+          "body": [
+            "鼻腔、顱底、顳骨與枕骨標誌，能幫你在標本上定方向。本課把圖譜詞彙分組背，優先記住和眼眶相鄰者。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "眼眶周圍的鼻腔與上顎標誌",
+          "body": [
+            "| 中文 | English |",
+            "|---|---|",
+            "| 鼻骨 | nasal bone |",
+            "| 鼻中隔 | nasal septum |",
+            "| 鋤骨 | vomer |",
+            "| 篩骨垂直板 | perpendicular plate of ethmoid |",
+            "| 中鼻甲 | middle nasal concha |",
+            "| 下鼻甲 | inferior nasal concha |",
+            "| 上頜骨腭突 | palatine process of maxilla |",
+            "| 腭骨水平板 | horizontal plate of palatine bone |",
+            "| 切牙孔 | incisive foramen |",
+            "",
+            "下鼻甲是獨立骨；中鼻甲屬篩骨。硬顎前部由上頜骨腭突形成，後部由腭骨水平板形成。"
+          ],
+          "keys": [
+            "middle nasal concha 屬篩骨",
+            "inferior nasal concha 是獨立骨"
+          ],
+          "flash": {
+            "front": "構成硬顎後部的是哪個骨性部分？",
+            "back": "腭骨水平板 horizontal plate of palatine bone。"
+          },
+          "tip": "硬顎前部是上頜骨腭突，後部是腭骨水平板。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列鼻甲與來源配對何者正確？",
+          "answer": "B",
+          "explain": "中鼻甲屬篩骨；下鼻甲為獨立骨。",
+          "hint": "先記住 inferior nasal concha 是一塊獨立骨。",
+          "choices": [
+            "中鼻甲是獨立骨；下鼻甲屬篩骨",
+            "中鼻甲屬篩骨；下鼻甲是獨立骨",
+            "中鼻甲與下鼻甲都屬蝶骨",
+            "中鼻甲與下鼻甲都屬額骨"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "顱底與顳骨、枕骨標誌",
+          "body": [
+            "圖譜常見名稱成對記：",
+            "- 雞冠 crista galli；篩板 cribriform plate；嗅孔 olfactory foramina。",
+            "- 蝶鞍 sella turcica；腦下垂體窩 hypophyseal fossa。",
+            "- 枕骨大孔 foramen magnum；枕骨髁 occipital condyle。",
+            "- 乳突 mastoid process；莖突 styloid process；莖乳突孔 stylomastoid foramen。",
+            "- 外耳道 external acoustic meatus；下頜窩 mandibular fossa。",
+            "- 顴弓 zygomatic arch：顳骨顴突與顴骨顳突合成。"
+          ],
+          "keys": [
+            "crista galli、cribriform plate、olfactory foramina 是不同構造",
+            "zygomatic arch 由顳骨與顴骨的突起形成"
+          ],
+          "flash": {
+            "front": "顱底篩骨中，哪個構造有嗅神經絲通過的小孔？",
+            "back": "篩板 cribriform plate 上的嗅孔 olfactory foramina。"
+          },
+          "tip": "區分骨板（plate）和板上的小孔（foramina）。"
+        },
+        {
+          "type": "check",
+          "kind": "fill",
+          "q": "請寫出「顴弓」的英文名稱及構成它的兩個骨性突起（中英文）。",
+          "answer": [
+            "顴弓 / zygomatic arch；顳骨顴突 / zygomatic process of temporal bone；顴骨顳突 / temporal process of zygomatic bone"
+          ],
+          "explain": "顴弓由顳骨顴突與顴骨顳突共同形成。",
+          "hint": "兩個突起的骨名互換：一個是顳骨的顴突，一個是顴骨的顳突。"
+        },
+        {
+          "type": "card",
+          "title": "眼眶與副鼻竇：用方向記骨折鄰近",
+          "body": [
+            "| 方位 | 鄰近副鼻竇 |",
+            "|---|---|",
+            "| 眼眶上方 | 額竇 frontal sinus |",
+            "| 眼眶內側 | 篩竇 ethmoidal sinus |",
+            "| 眼眶下方 | 上頜竇 maxillary sinus |",
+            "| 眼眶後方 | 蝶竇 sphenoidal sinus |",
+            "",
+            "逐字稿提醒：眼眶部分骨壁較薄，眶底骨折時要想到下方的上頜竇。臨床判讀還須依影像與完整解剖，不可只靠口訣。"
+          ],
+          "keys": [
+            "上額、內篩、下上頜、後蝶",
+            "眶底骨折優先聯想到上頜竇"
+          ],
+          "flash": {
+            "front": "眶底骨折最直接鄰近哪個副鼻竇？",
+            "back": "上頜竇 maxillary sinus。"
+          },
+          "tip": "先用方向定位：眶底在下方。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "眼眶內側壁骨折的鄰近副鼻竇是哪一個？",
+          "answer": "B",
+          "explain": "篩竇位於眼眶內側附近；上頜竇在下方、額竇在上方、蝶竇在後方。",
+          "choices": [
+            "額竇 frontal sinus",
+            "篩竇 ethmoidal sinus",
+            "上頜竇 maxillary sinus",
+            "蝶竇 sphenoidal sinus"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "從骨折位置定位副鼻竇",
+          "problem": "標本顯示眼眶底骨折，逐字稿要你優先想到哪個鄰近構造？",
+          "steps": [
+            "先判骨折位置：眼眶下壁／眶底。",
+            "按方位表，下方鄰近上頜竇。",
+            "用雙語寫出名稱。"
+          ],
+          "answer": "上頜竇 / maxillary sinus。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：圖譜名稱與鄰近構造",
+          "qids": [
+            "eye-anat-orbit-52",
+            "eye-anat-orbit-59"
+          ],
+          "pick": {
+            "match": [
+              "副鼻竇",
+              "眼眶骨折",
+              "顱骨標誌"
+            ],
+            "n": 2
+          },
+          "checks": [
+            {
+              "kind": "self",
+              "q": "以中英文寫出眼眶上、內、下、後方分別鄰近的副鼻竇。",
+              "answer": "上方額竇 frontal sinus；內側篩竇 ethmoidal sinus；下方上頜竇 maxillary sinus；後方蝶竇 sphenoidal sinus。",
+              "explain": "四個方位都要填上，別把篩竇與上頜竇互換。",
+              "hint": "先想眼眶四壁，再沿上、內、下、後順時針回想。"
+            },
+            {
+              "kind": "self",
+              "q": "請按上、內、下、後寫出眼眶鄰近副鼻竇。",
+              "answer": "上方額竇 frontal sinus；內側篩竇 ethmoidal sinus；下方上頜竇 maxillary sinus；後方蝶竇 sphenoidal sinus。",
+              "explain": "四方位各一個副鼻竇。",
+              "hint": "想像眼眶周圍順序：頂、鼻側、底、後尖。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "硬顎前部是上頜骨腭突，後部是腭骨水平板。",
+            "中鼻甲屬篩骨；下鼻甲是獨立骨。",
+            "嗅孔位於篩板；雞冠是篩骨中線向上突起。",
+            "顴弓由顳骨顴突與顴骨顳突形成。",
+            "眼眶上額、內篩、下上頜、後蝶；眶底骨折要想到上頜竇。"
+          ],
+          "flash": [
+            {
+              "front": "中鼻甲與下鼻甲各屬何者？",
+              "back": "中鼻甲 middle nasal concha 屬篩骨；下鼻甲 inferior nasal concha 是獨立骨。"
+            },
+            {
+              "front": "眼眶下方鄰近哪個副鼻竇？",
+              "back": "上頜竇 maxillary sinus。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l5",
+      "title": "顱骨圖譜其他標籤：鼻腔、顱縫、下頜與顳骨",
+      "goals": [
+        "辨認圖譜中鼻腔與顱縫標籤",
+        "中英文說出顳骨、下頜骨與枕骨的常見標誌",
+        "用成組方式複習圖譜的非眼眶直接標記"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "圖譜頁上標出的，也要能認得",
+          "body": [
+            "骨質眼窩簡報使用的圖譜還標示鼻腔、顱縫、下頜骨與顳骨構造。這些不全是眼眶骨，但能幫你辨方向，也可能成為標本辨名題。",
+            "這堂把標籤依位置分組，不要求把一長串名詞當成無關清單死背。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "鼻腔中線與鼻甲",
+          "body": [
+            "- 鼻骨 nasal bone。",
+            "- 鼻中隔 nasal septum 的骨性部分包括鋤骨 vomer 與篩骨垂直板 perpendicular plate of ethmoid。",
+            "- 中鼻甲 middle nasal concha 屬篩骨 ethmoid；下鼻甲 inferior nasal concha 是獨立骨。",
+            "- 上頜骨腭突 palatine process of maxilla 與腭骨水平板 horizontal plate of palatine bone 共同形成硬顎 hard palate。",
+            "- 切牙孔 incisive foramen 位於硬顎前部。"
+          ],
+          "keys": [
+            "鋤骨＋篩骨垂直板參與鼻中隔",
+            "中鼻甲屬篩骨；下鼻甲為獨立骨"
+          ],
+          "flash": {
+            "front": "中鼻甲與下鼻甲的骨性來源？",
+            "back": "中鼻甲 middle nasal concha 屬篩骨；下鼻甲 inferior nasal concha 是獨立骨。"
+          }
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪一個鼻甲是獨立骨？",
+          "choices": [
+            "上鼻甲 superior nasal concha",
+            "中鼻甲 middle nasal concha",
+            "下鼻甲 inferior nasal concha",
+            "三者都屬篩骨"
+          ],
+          "answer": "C",
+          "hint": "比較 middle 與 inferior nasal concha 的骨性來源。",
+          "explain": "下鼻甲 inferior nasal concha 是獨立骨；中鼻甲屬篩骨。"
+        },
+        {
+          "type": "card",
+          "title": "顱頂顱縫與枕骨標誌",
+          "body": [
+            "| 名稱 | English | 位置提示 |",
+            "|---|---|---|",
+            "| 頂骨 | parietal bone | 顱頂側上方 |",
+            "| 矢狀縫 | sagittal suture | 左右頂骨中線 |",
+            "| 冠狀縫 | coronal suture | 額骨與頂骨之間 |",
+            "| 人字縫 | lambdoid suture | 頂骨與枕骨之間 |",
+            "| 鱗狀縫 | squamous suture | 顳骨與頂骨之間 |",
+            "| 頂骨孔 | parietal foramen | 頂骨上的小孔 |",
+            "| 外枕隆凸 | external occipital protuberance | 枕骨外表中線隆起 |",
+            "| 枕骨 | occipital bone | 顱骨後下方 |",
+            "| 枕骨髁 | occipital condyle | 枕骨大孔兩側關節面 |"
+          ],
+          "keys": [
+            "矢狀：左右頂骨中線",
+            "冠狀：額骨／頂骨；人字：頂骨／枕骨"
+          ],
+          "flash": {
+            "front": "冠狀縫、矢狀縫、人字縫各位於哪裡？",
+            "back": "冠狀縫 coronal suture：額骨與頂骨間；矢狀縫 sagittal suture：左右頂骨間；人字縫 lambdoid suture：頂骨與枕骨間。"
+          }
+        },
+        {
+          "type": "check",
+          "kind": "fill",
+          "q": "頂骨與枕骨之間的顱縫是什麼？請中英文回答。",
+          "answer": [
+            "人字縫 / lambdoid suture",
+            "人字縫 lambdoid suture",
+            "lambdoid suture / 人字縫"
+          ],
+          "hint": "英文名稱以 lambda 字母形狀命名。",
+          "explain": "頂骨與枕骨之間是人字縫 lambdoid suture。"
+        },
+        {
+          "type": "card",
+          "title": "下頜骨與顳骨的圖譜標誌",
+          "body": [
+            "- 下頜骨 mandible：標示下頜孔 mandibular foramen、頦孔 mental foramen。",
+            "- 顳骨 temporal bone：標示乳突 mastoid process、莖突 styloid process、鼓部 tympanic part、外耳道 external acoustic meatus、下頜窩 mandibular fossa、關節結節 articular tubercle。",
+            "- 顴弓 zygomatic arch 由顳骨顴突 zygomatic process of temporal bone 與顴骨顳突 temporal process of zygomatic bone 形成。",
+            "- 莖乳突孔 stylomastoid foramen 位於莖突與乳突之間附近。",
+            "- 舌骨 hyoid bone 也在前面觀圖譜中出現；它不是眼眶骨。"
+          ],
+          "keys": [
+            "頦孔在下頜骨前外側；下頜孔在內側面",
+            "顴弓由顳骨與顴骨的突起接合"
+          ],
+          "flash": {
+            "front": "顴弓由哪兩個骨性突起形成？",
+            "back": "顳骨顴突 zygomatic process of temporal bone＋顴骨顳突 temporal process of zygomatic bone。"
+          }
+        },
+        {
+          "type": "check",
+          "kind": "fill",
+          "q": "下頜骨 mandible 上的「頦孔」與「下頜孔」英文分別是什麼？",
+          "answer": [
+            "頦孔 / mental foramen；下頜孔 / mandibular foramen",
+            "mental foramen；mandibular foramen"
+          ],
+          "hint": "mental 對應頦部；mandibular 指下頜骨。",
+          "explain": "頦孔 mental foramen 與下頜孔 mandibular foramen 是不同位置、不同名稱的孔。"
+        },
+        {
+          "type": "example",
+          "title": "由縫線名稱判顱骨相鄰骨",
+          "problem": "標本上一條顱縫位於左右頂骨正中線，請命名。",
+          "steps": [
+            "先看縫線走向：在顱頂正中線。",
+            "再判相鄰骨：左右兩塊頂骨 parietal bones。",
+            "依圖譜名詞寫出中英文。"
+          ],
+          "answer": "矢狀縫 / sagittal suture。它連接左右頂骨。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：顱骨圖譜延伸標籤",
+          "qids": [
+            "eye-anat-orbit-60",
+            "eye-anat-orbit-82",
+            "eye-anat-orbit-85"
+          ],
+          "pick": {
+            "match": [
+              "顱骨圖譜名詞",
+              "中英文名詞"
+            ],
+            "n": 2
+          },
+          "checks": [
+            {
+              "kind": "self",
+              "q": "請寫出顱頂三條主要顱縫的中英文，並說明各自分隔哪些骨。",
+              "answer": "矢狀縫 sagittal suture：左右頂骨間；冠狀縫 coronal suture：額骨與頂骨間；人字縫 lambdoid suture：頂骨與枕骨間。",
+              "hint": "先從正中線往前、再往兩側與後方定位。",
+              "explain": "三條縫線以相鄰骨與位置辨認，名稱需中英文都正確。"
+            },
+            {
+              "kind": "self",
+              "q": "請各舉一個顳骨、枕骨與下頜骨的圖譜標誌，並寫中英文。",
+              "answer": "例如：顳骨乳突 mastoid process；枕骨大孔 foramen magnum；下頜骨頦孔 mental foramen。",
+              "hint": "分別想耳後突起、顱底大孔、下頜前外側孔。",
+              "explain": "答案可有其他圖譜中出現的同類標誌，但中英文須配對。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "鼻中隔骨性部分包括鋤骨與篩骨垂直板。",
+            "中鼻甲屬篩骨；下鼻甲是獨立骨。",
+            "矢狀縫在左右頂骨間；冠狀縫在額骨與頂骨間；人字縫在頂骨與枕骨間。",
+            "下頜骨圖譜標出頦孔與下頜孔；兩者英文不同。",
+            "顴弓由顳骨顴突與顴骨顳突形成。",
+            "顳骨標誌包括乳突、莖突、外耳道、下頜窩等；枕骨標誌包括枕骨大孔與枕骨髁。"
+          ],
+          "flash": [
+            {
+              "front": "鼻中隔骨性部分有哪些？",
+              "back": "鋤骨 vomer 與篩骨垂直板 perpendicular plate of ethmoid。"
+            },
+            {
+              "front": "頦孔與下頜孔的英文？",
+              "back": "mental foramen；mandibular foramen。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
