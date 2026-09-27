@@ -93,6 +93,31 @@ const SFX = (() => {
   return { play, chime, CHIMES, toggle, get on() { return !VOL.get('muted'); } };
 })();
 
+/* 音量混音：iOS Safari 的 audio.volume 是唯讀（永遠 1），滑桿除了 0 以外都一樣大聲。
+ * 偵測到不能調音量時，把 <audio> 接到 Web Audio 的 GainNode，用 gain 控制音量。
+ * 只在 http(s) 啟用：file:// 下 createMediaElementSource 會被當成跨來源而變成無聲；能調 volume 的裝置完全不走這裡。 */
+const VOL_OK = (() => { try { const p = new Audio(); p.volume = 0.5; return Math.abs(p.volume - 0.5) < 0.01; } catch (e) { return false; } })();
+const MIX = (() => {
+  const need = !VOL_OK && /^https?:$/.test(location.protocol);
+  let ctx = null;
+  const gains = new Map();
+  function ac() {
+    if (!ctx) { try { ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { return null; } }
+    if (ctx.state !== 'running') ctx.resume().catch(() => {});
+    return ctx;
+  }
+  /* 必須在使用者點擊（解鎖）之後呼叫，AudioContext 才會是 running */
+  function attach(el) {
+    if (!need || gains.has(el)) return;
+    const c = ac(); if (!c) return;
+    try { const s = c.createMediaElementSource(el), g = c.createGain(); g.gain.value = 0; s.connect(g); g.connect(c.destination); gains.set(el, g); } catch (e) {}
+  }
+  function setVol(el, v) { const g = gains.get(el); if (g) g.gain.value = v; else el.volume = v; }
+  const ok = el => VOL_OK || gains.has(el);   // 這個元素的音量能不能真的被控制
+  ['pointerdown', 'keydown', 'touchend'].forEach(ev => document.addEventListener(ev, () => { if (ctx && ctx.state !== 'running') ctx.resume().catch(() => {}); }, true));
+  return { need, attach, setVol, ok };
+})();
+
 /* 背景音樂：兩個 <audio> 交叉淡入淡出，第一次點擊畫面後才開始播放（瀏覽器自動播放限制）
  * 三種模式（存在 xd_audio.bgm）：
  *   scene：依場景播放（每個場景可指定一首，或「從歌單隨機」）
@@ -151,16 +176,15 @@ const BGM = (() => {
 
   const a = [new Audio(), new Audio()];
   a.forEach(x => { x.loop = true; x.preload = 'auto'; x.volume = 0; x.addEventListener('ended', () => { if (x === a[cur]) onEnded(); }); });
-  // iOS Safari 的 audio.volume 是唯讀（永遠 1），不能靠讀回 volume 判斷淡出完成，否則舊曲永遠不會暫停。
-  // 所以另外記錄「邏輯音量」lv；偵測到裝置不支援調音量時，切歌／靜音改成直接暫停。
-  const VOL_OK = (() => { try { const p = new Audio(); p.volume = 0.5; return Math.abs(p.volume - 0.5) < 0.01; } catch (e) { return false; } })();
+  // iOS 不能讀回 volume 判斷淡出完成（否則舊曲永遠不會暫停），所以另外記錄「邏輯音量」lv，
+  // 實際音量交給 MIX.setVol（iOS 走 GainNode）。完全無法控制音量時，切歌／靜音改成直接暫停。
   const lv = [0, 0];
   let cur = 0, curName = null, unlocked = false, fadeT = null, curScene = 'hub', shufPick = {}, listIdx = 0, preview = false;
   let held = false, ovr = null; // held：番茄鐘專注時暫停音樂；ovr：番茄鐘專注時指定的曲目
   function target() { return held ? 0 : VOL.music(); }
   function fade() {
     clearInterval(fadeT);
-    if (!VOL_OK) {
+    if (!MIX.ok(a[cur])) {
       // 無法調音量：不做淡入淡出，非目前曲目與音量為 0 時直接暫停
       const t = target();
       a.forEach((x, i) => {
@@ -174,7 +198,7 @@ const BGM = (() => {
       a.forEach((x, i) => {
         const goal = i === cur ? t : 0;
         lv[i] = Math.max(0, Math.min(1, lv[i] + Math.sign(goal - lv[i]) * Math.min(0.05, Math.abs(goal - lv[i]))));
-        x.volume = lv[i];
+        MIX.setVol(x, lv[i]);
         if (Math.abs(lv[i] - goal) > 0.001) done = false;
         if (lv[i] <= 0.001 && !x.paused) x.pause();   // 淡出完成（含靜音、番茄鐘暫停）就真的暫停
       });
@@ -187,7 +211,7 @@ const BGM = (() => {
     curName = id;
     cur = 1 - cur;
     const x = a[cur];
-    x.loop = loop; x.src = TRACKS[id].src; x.currentTime = 0; x.volume = 0; lv[cur] = 0;
+    x.loop = loop; x.src = TRACKS[id].src; x.currentTime = 0; MIX.setVol(x, 0); lv[cur] = 0;
     if (unlocked && target() > 0) x.play().catch(() => {});
     fade();
     notify();
@@ -228,6 +252,7 @@ const BGM = (() => {
   function notify() { document.querySelectorAll('[data-track]').forEach(e => { e.textContent = curName ? TRACKS[curName].name : '—'; }); subs.forEach(f => f()); }
   function unlock() {
     if (unlocked) return; unlocked = true;
+    a.forEach(MIX.attach);
     if (curName && target() > 0) a[cur].play().catch(() => {});
     fade();
   }
@@ -267,7 +292,7 @@ const AMB = (() => {
     if (P[k]) return P[k];
     const o = { a: [new Audio(TYPES[k].src), new Audio(TYPES[k].src)], cur: 0, fading: false };
     o.a.forEach((x, i) => {
-      x.preload = 'auto'; x.volume = 0;
+      x.preload = 'auto'; x.volume = 0; MIX.attach(x); MIX.setVol(x, 0);   // ensure 只在解鎖後呼叫
       x.addEventListener('timeupdate', () => {
         if (i !== o.cur || o.fading || !x.duration) return;
         if (x.duration - x.currentTime < 2.5) crossfade(k);
@@ -279,12 +304,12 @@ const AMB = (() => {
   function crossfade(k) {
     const o = P[k]; o.fading = true;
     const from = o.a[o.cur], to = o.a[1 - o.cur];
-    to.currentTime = 0; to.volume = 0; to.play().catch(() => {});
+    to.currentTime = 0; MIX.setVol(to, 0); to.play().catch(() => {});
     o.cur = 1 - o.cur;
     const t0 = Date.now();
     const iv = setInterval(() => {
       const r = Math.min(1, (Date.now() - t0) / 2400), v = vol(k);
-      to.volume = Math.min(1, v * r); from.volume = Math.min(1, v * (1 - r));
+      MIX.setVol(to, Math.min(1, v * r)); MIX.setVol(from, Math.min(1, v * (1 - r)));
       if (r >= 1) { clearInterval(iv); from.pause(); o.fading = false; }
     }, 60);
   }
@@ -294,7 +319,7 @@ const AMB = (() => {
       if (v > 0) {
         if (!unlocked) return;
         const o = ensure(k), x = o.a[o.cur];
-        if (!o.fading) x.volume = Math.min(1, v);
+        if (!o.fading) MIX.setVol(x, Math.min(1, v));
         if (x.paused) x.play().catch(() => {});
       } else if (P[k]) P[k].a.forEach(x => x.pause());
     });

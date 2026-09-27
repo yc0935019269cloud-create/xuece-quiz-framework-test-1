@@ -306,7 +306,11 @@ input.px-in, select.px-in { background: var(--line); color: var(--text); border:
   .hud { width: 47%; }
   .qrow { grid-template-columns: 1fr auto; }
   .qrow .thumb { display: none; }
-  #topTitle { font-size: 16px; }
+  /* 手機：標題不要被擠成一字一行，太長就用「…」 */
+  #topbar { gap: 6px; padding: 6px 8px; }
+  #topTitle { font-size: 16px; letter-spacing: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  #topRes { gap: 6px; }
+  #topRes .res { padding: 2px 6px; }
   #screen { padding: 10px; }
 }
 
@@ -881,6 +885,8 @@ details.ltree.d0 > summary .ltree-n { color: var(--gold); font-size: 18px; }
 .lb-hud { position: absolute; left: 8px; top: 4px; font-size: 15px; z-index: 3; display: flex; gap: 10px; text-shadow: 1px 1px 0 #000; }
 .lb-hp { color: #ff6b7a; letter-spacing: 1px; } .lb-hp i { color: #4a3d62; font-style: normal; }
 .lb-en { color: #ffd84a; } .lb-en i { color: #4a3d62; font-style: normal; }
+/* 手機（iOS／Android）會把 ❤ ⚡ 畫成彩色 emoji，color 無效 → 已失去的格子要用濾鏡變暗，否則看起來血量都沒掉 */
+.lb-hp i, .lb-en i { filter: grayscale(1) brightness(.55); opacity: .45; }
 .lb-hero { position: absolute; left: 14%; bottom: 8px; display: flex; align-items: flex-end; gap: 4px; }
 .lb-pet { margin-bottom: -2px; }
 .lb-mon { position: absolute; right: 12%; bottom: 8px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 2px; }
