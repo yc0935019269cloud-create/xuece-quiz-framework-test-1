@@ -8,7 +8,7 @@
       "眼解剖實驗",
       "視覺路徑"
     ],
-    "source": "《2.視覺路徑+標號-02.pdf》投影片 p.1–13；《新增 文字文件.txt》逐字稿（頸內動脈、視覺路徑、視神經分段、枕葉切片與視交叉段落）。題目依素材自編。；已依原始投影片校正看圖標記點、刪除重複題",
+    "source": "《2.視覺路徑+標號-02.pdf》投影片 p.1–13；《新增 文字文件.txt》逐字稿（頸內動脈、視覺路徑、視神經分段、枕葉切片與視交叉段落）。題目依素材自編。；已依原始投影片校正看圖標記點、刪除重複題；部分看圖題底圖：Servier Medical Art（smart.servier.com），CC BY 4.0；看圖題另用講義圖譜與簡報圖（已移除標籤），及 Wikimedia Commons 開放授權圖（出處見各題詳解）",
     "order": 2
   },
   "groups": [],
@@ -147,47 +147,81 @@
     {
       "n": 6,
       "type": "fill",
-      "stem": "請寫出「前大腦動脈」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "前大腦動脈 / anterior cerebral artery",
       "accept": [
-        "前大腦動脈 / anterior cerebral artery"
+        "前大腦動脈 / anterior cerebral artery",
+        "前大腦動脈 / ACA",
+        "大腦前動脈 / anterior cerebral artery"
       ],
-      "explain": "頸內動脈前循環重要分支之一；簡稱 ACA。 標準寫法：前大腦動脈 / anterior cerebral artery。",
+      "explain": "從內頸動脈末端往**前內側**彎、在中線靠前交通動脈相連的是**前大腦動脈**（ACA），供應額葉與頂葉內側面。\n\n標準寫法：前大腦動脈 / anterior cerebral artery。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/circle-of-willis.png"
+      ],
+      "marks": [
+        {
+          "x": 30,
+          "y": 14,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 7,
       "type": "fill",
-      "stem": "請寫出「中大腦動脈」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "中大腦動脈 / middle cerebral artery",
       "accept": [
-        "中大腦動脈 / middle cerebral artery"
+        "中大腦動脈 / middle cerebral artery",
+        "中大腦動脈 / MCA",
+        "大腦中動脈 / middle cerebral artery"
       ],
-      "explain": "頸內動脈前循環重要分支之一；簡稱 MCA。 標準寫法：中大腦動脈 / middle cerebral artery。",
+      "explain": "從內頸動脈末端往**外側**直直伸出去的粗支是**中大腦動脈**（MCA），走在外側溝內，供應大腦外側面（包含視放射）。\n\n標準寫法：中大腦動脈 / middle cerebral artery。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/circle-of-willis.png"
+      ],
+      "marks": [
+        {
+          "x": 6,
+          "y": 24.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 8,
       "type": "fill",
-      "stem": "請寫出「眼動脈」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：右眼眶上面觀（前方在上、內側在左）。標記點（編號 1）所指的紅色動脈主幹是什麼？請寫出中文名與英文名（中文與英文都要寫）",
       "answer": "眼動脈 / ophthalmic artery",
       "accept": [
         "眼動脈 / ophthalmic artery"
       ],
-      "explain": "頸內動脈分支，與眼球血液供應直接相關。 標準寫法：眼動脈 / ophthalmic artery。",
+      "explain": "右眼眶上面觀（前方在上、內側在左）：從視神經管進入眼眶、在視神經旁往內前方走的紅色動脈主幹是**眼動脈**（內頸動脈第一個分支），分出視網膜中央動脈、淚腺動脈等。\n\n標準寫法：眼動脈 / ophthalmic artery。（圖：Patrick J. Lynch, medical illustrator; C. Carl Jaffe, MD，Wikimedia Commons「Eye orbit anatomy superior.jpg」，CC BY 2.5）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/orbit-superior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 24.0,
+          "y": 74.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 9,
@@ -207,53 +241,83 @@
     {
       "n": 10,
       "type": "fill",
-      "stem": "請寫出「視神經」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "視神經 / optic nerve",
       "accept": [
         "視神經 / optic nerve"
       ],
-      "explain": "視交叉前段；承載視網膜神經節細胞軸突。 標準寫法：視神經 / optic nerve。",
+      "explain": "從眼球後方一路往後、還沒交叉的神經束是**視神經**（CN II）。它含同側眼睛的全部纖維（圖中黃色＋紫紅色都有）。\n\n標準寫法：視神經 / optic nerve。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/visual-pathway.png"
+      ],
+      "marks": [
+        {
+          "x": 29,
+          "y": 22,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 11,
       "type": "fill",
-      "stem": "請寫出「視交叉」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "視交叉 / optic chiasm",
       "accept": [
         "視交叉 / optic chiasm"
       ],
-      "explain": "鼻側視網膜纖維交叉的位置；之後續為視束。 標準寫法：視交叉 / optic chiasm。",
+      "explain": "兩側視神經在中線呈 **X 形**交會處是**視交叉**。鼻側纖維在此交叉到對側，顳側纖維不交叉；它就在腦下垂體正上方。\n\n標準寫法：視交叉 / optic chiasm。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/visual-pathway.png"
+      ],
+      "marks": [
+        {
+          "x": 50,
+          "y": 46,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 12,
       "type": "fill",
-      "stem": "請寫出「視束」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "視束 / optic tract",
       "accept": [
         "視束 / optic tract",
         "視徑 / optic tract"
       ],
-      "explain": "位於視交叉之後，向外側膝狀體傳遞視覺訊息。 標準寫法：視束 / optic tract。",
+      "explain": "視交叉**之後**、繞過大腦腳往後走的纖維束是**視束**。每一條視束都含同側顳側＋對側鼻側纖維，所以圖中同一條裡有兩種顏色。\n\n標準寫法：視束 / optic tract。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/visual-pathway.png"
+      ],
+      "marks": [
+        {
+          "x": 61.5,
+          "y": 56,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 13,
       "type": "fill",
-      "stem": "請寫出「外側膝狀體」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "外側膝狀體 / lateral geniculate nucleus",
       "accept": [
         "外側膝狀體 / lateral geniculate nucleus",
@@ -261,192 +325,260 @@
         "外側膝狀體 / LGN",
         "外側膝狀體核 / lateral geniculate nucleus",
         "外側膝狀體核 / lateral geniculate body",
-        "外側膝狀體核 / LGN"
+        "外側膝狀體核 / LGN",
+        "外側膝狀核 / lateral geniculate nucleus"
       ],
-      "explain": "常用縮寫 LGN；位於丘腦，是視覺傳導中繼站。講義亦稱 lateral geniculate body。 標準寫法：外側膝狀體 / lateral geniculate nucleus。",
+      "explain": "視束纖維**終止**、換神經元的圓形節點處是**外側膝狀體**（LGN），屬於視丘。之後的纖維就是視放射。\n\n標準寫法：外側膝狀體 / lateral geniculate nucleus。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/visual-pathway.png"
+      ],
+      "marks": [
+        {
+          "x": 64.5,
+          "y": 66,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 14,
       "type": "fill",
-      "stem": "請寫出「視放射」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "視放射 / optic radiation",
       "accept": [
-        "視放射 / optic radiation"
+        "視放射 / optic radiation",
+        "視放射 / optic radiations",
+        "膝距束 / geniculocalcarine tract"
       ],
-      "explain": "由外側膝狀體投射至枕葉視覺皮質的纖維。 標準寫法：視放射 / optic radiation。",
+      "explain": "從外側膝狀體**呈扇形散開**往後到枕葉的纖維是**視放射**（膝距束）。下方纖維繞經顳葉形成梅氏環，上方纖維經頂葉（鮑氏環）。\n\n標準寫法：視放射 / optic radiation。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 2
-    },
-    {
-      "n": 15,
-      "type": "fill",
-      "stem": "請寫出「梅氏環」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
-      "answer": "梅氏環 / Meyer’s loop",
-      "accept": [
-        "梅氏環 / Meyer’s loop",
-        "梅氏環 / Meyer loop",
-        "Meyer 環 / Meyer’s loop",
-        "Meyer 環 / Meyer loop",
-        "邁爾氏環 / Meyer’s loop",
-        "邁爾氏環 / Meyer loop"
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/visual-pathway.png"
       ],
-      "explain": "視放射的下方顳葉環路；英文拼法常見 Meyer loop。 標準寫法：梅氏環 / Meyer’s loop。",
-      "tags": [
-        "視覺路徑",
-        "中英文名詞"
-      ],
-      "level": 2
-    },
-    {
-      "n": 16,
-      "type": "fill",
-      "stem": "請寫出「鮑氏環」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
-      "answer": "鮑氏環 / Baum’s loop",
-      "accept": [
-        "鮑氏環 / Baum’s loop",
-        "鮑氏環 / Baum loop",
-        "Baum 環 / Baum’s loop",
-        "Baum 環 / Baum loop"
-      ],
-      "explain": "投影片標示的上方／頂葉視放射路徑；其命名及臨床象限對應依課堂圖版記憶。 標準寫法：鮑氏環 / Baum’s loop。",
-      "tags": [
-        "視覺路徑",
-        "中英文名詞"
-      ],
-      "level": 2
+      "marks": [
+        {
+          "x": 67,
+          "y": 78,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 17,
       "type": "fill",
-      "stem": "請寫出「初級視覺皮質」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "初級視覺皮質 / primary visual cortex",
       "accept": [
-        "初級視覺皮質 / primary visual cortex"
+        "初級視覺皮質 / primary visual cortex",
+        "初級視覺皮質 / V1",
+        "視覺皮質 / visual cortex",
+        "紋狀皮質 / striate cortex",
+        "初級視皮質 / primary visual cortex"
       ],
-      "explain": "位於枕葉內側、距狀溝周圍。 標準寫法：初級視覺皮質 / primary visual cortex。",
+      "explain": "視放射終止的枕葉距狀溝周圍皮質（圖中上色的區域）是**初級視覺皮質**（V1，Brodmann 17 區）。\n\n標準寫法：初級視覺皮質 / primary visual cortex。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/visual-pathway.png"
+      ],
+      "marks": [
+        {
+          "x": 53,
+          "y": 80,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 18,
       "type": "fill",
-      "stem": "請寫出「紋狀皮質」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指的皮質區，因切面上可見白色條紋而另有一個名稱。請寫出這個名稱的中文與英文（中文與英文都要寫）",
       "answer": "紋狀皮質 / striate cortex",
       "accept": [
-        "紋狀皮質 / striate cortex"
+        "紋狀皮質 / striate cortex",
+        "紋狀皮層 / striate cortex",
+        "紋狀區 / striate cortex"
       ],
-      "explain": "初級視覺皮質的別稱，因可見 Gennari 線形成條紋外觀。 標準寫法：紋狀皮質 / striate cortex。",
+      "explain": "初級視覺皮質在切面上可以看到一條白色有髓纖維帶（Gennari 線），呈條紋狀，所以又叫**紋狀皮質**（striate cortex）。\n\n標準寫法：紋狀皮質 / striate cortex。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/visual-pathway.png"
+      ],
+      "marks": [
+        {
+          "x": 24,
+          "y": 92,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 19,
       "type": "fill",
-      "stem": "請寫出「Gennari 線」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：這是枕葉距狀溝附近的皮質切面放大。標記點（編號 1）所指、皮質中間那條淺色條紋叫什麼？請寫出中文名與英文名（中文與英文都要寫）",
       "answer": "Gennari 線 / line of Gennari",
       "accept": [
         "Gennari 線 / line of Gennari",
         "Gennari 線 / stria of Gennari",
         "Gennari 線 / Gennari line"
       ],
-      "explain": "初級視覺皮質中的明顯白色髓鞘條紋。 標準寫法：Gennari 線 / line of Gennari。",
+      "explain": "距狀溝附近的皮質切面放大：初級視覺皮質中間那條**淺色的有髓纖維帶**就是 **Gennari 線**，也因為這條紋，V1 又叫紋狀皮質。\n\n標準寫法：Gennari 線 / line of Gennari。（圖：課堂簡報《2.視覺路徑》標本照，已移除標示線，僅供個人複習）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/specimen-visual-cortex.jpg"
+      ],
+      "marks": [
+        {
+          "x": 51.1,
+          "y": 43.8,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 20,
       "type": "fill",
-      "stem": "請寫出「距狀溝」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "距狀溝 / calcarine sulcus",
       "accept": [
         "距狀溝 / calcarine sulcus",
         "距狀溝 / calcarine fissure"
       ],
-      "explain": "位於枕葉內側面，初級視覺皮質分布於其上下唇周邊。 標準寫法：距狀溝 / calcarine sulcus。",
+      "explain": "腦正中矢狀切面（前方在右）：枕葉內側面**水平走向**的深溝是**距狀溝**，初級視覺皮質（V1）就在它的上下兩唇。\n\n標準寫法：距狀溝 / calcarine sulcus。（圖：課堂簡報《2.視覺路徑》標本照，已移除標示線，僅供個人複習）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 3
+      "level": 3,
+      "img": [
+        "img/eye-anat-gallery/specimen-brain-sagittal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 17.0,
+          "y": 64.7,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 21,
       "type": "fill",
-      "stem": "請寫出「頂枕溝」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "頂枕溝 / parieto-occipital sulcus",
       "accept": [
         "頂枕溝 / parieto-occipital sulcus",
         "頂枕溝 / parietooccipital sulcus"
       ],
-      "explain": "位於大腦內側面，協助辨認頂葉與枕葉交界。 標準寫法：頂枕溝 / parieto-occipital sulcus。",
+      "explain": "腦正中矢狀切面：枕葉內側面**斜向上後**、把頂葉和枕葉分開的溝是**頂枕溝**；它和距狀溝在前方會合成 Y 字形。\n\n標準寫法：頂枕溝 / parieto-occipital sulcus。（圖：課堂簡報《2.視覺路徑》標本照，已移除標示線，僅供個人複習）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 3
+      "level": 3,
+      "img": [
+        "img/eye-anat-gallery/specimen-brain-sagittal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 17.4,
+          "y": 45.9,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 22,
       "type": "fill",
-      "stem": "請寫出「腦下垂體」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "腦下垂體 / pituitary gland",
       "accept": [
         "腦下垂體 / pituitary gland",
-        "腦下垂體 / hypophysis"
+        "腦下垂體 / hypophysis",
+        "腦垂體 / pituitary gland"
       ],
-      "explain": "位於視交叉下方；腫瘤向上壓迫視交叉可造成雙顳側偏盲。 標準寫法：腦下垂體 / pituitary gland。",
+      "explain": "腦正中矢狀切面：視交叉**正下方**、坐在蝶鞍裡的小腺體是**腦下垂體**；腦下垂體瘤從下方壓迫視交叉會造成雙顳側偏盲。\n\n標準寫法：腦下垂體 / pituitary gland。（圖：課堂簡報《2.視覺路徑》標本照，已移除標示線，僅供個人複習）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 3
+      "level": 3,
+      "img": [
+        "img/eye-anat-gallery/specimen-brain-sagittal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 54.0,
+          "y": 59.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 23,
       "type": "fill",
-      "stem": "請寫出「蝶鞍」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "蝶鞍 / sella turcica",
       "accept": [
-        "蝶鞍 / sella turcica"
+        "蝶鞍 / sella turcica",
+        "蝶鞍 / hypophyseal fossa"
       ],
-      "explain": "蝶骨上的鞍狀區域，腦下垂體所在處。 標準寫法：蝶鞍 / sella turcica。",
+      "explain": "蝶骨上面觀：蝶骨體**正中**凹下去、像馬鞍的窩是**蝶鞍**（腦下垂體窩），兩側是小翼與大翼。\n\n標準寫法：蝶鞍 / sella turcica。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 3
+      "level": 3,
+      "img": [
+        "img/eye-anat-gallery/atlas-sphenoid.jpg"
+      ],
+      "marks": [
+        {
+          "x": 52.3,
+          "y": 45.7,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 24,
       "type": "fill",
-      "stem": "請寫出「雙顳側偏盲」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：圖為某位病人雙眼的視野檢查結果（黑色為看不到的區域）。這種視野缺損的中文與英文名稱是什麼？（中文與英文都要寫）",
       "answer": "雙顳側偏盲 / bitemporal hemianopia",
       "accept": [
-        "雙顳側偏盲 / bitemporal hemianopia"
+        "雙顳側偏盲 / bitemporal hemianopia",
+        "雙顳側偏盲 / bitemporal hemianopsia",
+        "雙顳側半盲 / bitemporal hemianopia"
       ],
-      "explain": "視交叉受壓時典型視野缺損；逐字稿以腦下垂體腫瘤上壓作例。 標準寫法：雙顳側偏盲 / bitemporal hemianopia。",
+      "explain": "兩眼都是**顳側（外側）半邊**看不到，叫**雙顳側偏盲**。病灶在**視交叉**：交叉的鼻側纖維（負責顳側視野）受壓，最常見是腦下垂體瘤。\n\n標準寫法：雙顳側偏盲 / bitemporal hemianopia。（示意圖：自繪）",
       "tags": [
-        "視覺路徑",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑"
       ],
-      "level": 3
+      "level": 3,
+      "img": [
+        "img/eye-anat-gallery/visual-field-bitemporal.png"
+      ]
     },
     {
       "n": 25,
@@ -468,62 +600,109 @@
     {
       "n": 26,
       "type": "fill",
-      "stem": "視神經四段中的「眼內段」標準英文名稱是什麼？請中英文並列。（中文與英文都要寫）",
+      "stem": "看圖：示意圖是視神經從眼球到視交叉的側面觀。標記點（編號 1）所在的是視神經的哪一段？請寫出中文名與英文名（中文與英文都要寫）",
       "answer": "眼內段 / intraocular segment",
       "accept": [
-        "眼內段 / intraocular segment"
+        "眼內段 / intraocular segment",
+        "眼球內段 / intraocular segment",
+        "眼內段 / intraocular part"
       ],
-      "explain": "位於眼球內的視神經部分，常稱視神經乳頭／視盤段。 此分段術語依常用解剖名稱補全；教師若指定不同的細分詞，依課堂版本為準。",
+      "explain": "視神經在**眼球壁內**（穿過鞏膜篩板、視神經盤處）那一小段叫**眼內段**，最短（約 1 mm）。\n\n標準寫法：眼內段 / intraocular segment。（示意圖：自繪）",
       "tags": [
-        "視神經分段",
-        "中英文名詞"
+        "看圖辨識",
+        "視神經分段"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/optic-nerve-segments.png"
+      ],
+      "marks": [
+        {
+          "x": 28.7,
+          "y": 50.0,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 27,
       "type": "fill",
-      "stem": "視神經四段中的「眶內段」標準英文名稱是什麼？請中英文並列。（中文與英文都要寫）",
+      "stem": "看圖：示意圖是視神經從眼球到視交叉的側面觀。標記點（編號 1）所在的是視神經的哪一段？請寫出中文名與英文名（中文與英文都要寫）",
       "answer": "眶內段 / intraorbital segment",
       "accept": [
-        "眶內段 / intraorbital segment"
+        "眶內段 / intraorbital segment",
+        "眶內段 / intraorbital part",
+        "眼眶內段 / intraorbital segment"
       ],
-      "explain": "視神經在眼眶內的部分。 此分段術語依常用解剖名稱補全；教師若指定不同的細分詞，依課堂版本為準。",
+      "explain": "從眼球後方到視神經管口、走在**眼眶**裡的那段叫**眶內段**，最長（約 25 mm），呈 S 形彎曲讓眼球能轉動。\n\n標準寫法：眶內段 / intraorbital segment。（示意圖：自繪）",
       "tags": [
-        "視神經分段",
-        "中英文名詞"
+        "看圖辨識",
+        "視神經分段"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/optic-nerve-segments.png"
+      ],
+      "marks": [
+        {
+          "x": 43.0,
+          "y": 50.0,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 28,
       "type": "fill",
-      "stem": "視神經四段中的「管內段」標準英文名稱是什麼？請中英文並列。（中文與英文都要寫）",
+      "stem": "看圖：示意圖是視神經從眼球到視交叉的側面觀。標記點（編號 1）所在的是視神經的哪一段？請寫出中文名與英文名（中文與英文都要寫）",
       "answer": "管內段 / intracanalicular segment",
       "accept": [
-        "管內段 / intracanalicular segment"
+        "管內段 / intracanalicular segment",
+        "管內段 / intracanalicular part",
+        "視神經管內段 / intracanalicular segment"
       ],
-      "explain": "視神經通過視神經管的部分。 此分段術語依常用解剖名稱補全；教師若指定不同的細分詞，依課堂版本為準。",
+      "explain": "穿過**骨性視神經管**的那段叫**管內段**（約 9 mm），被骨頭包住，頭部外傷時容易受損。\n\n標準寫法：管內段 / intracanalicular segment。（示意圖：自繪）",
       "tags": [
-        "視神經分段",
-        "中英文名詞"
+        "看圖辨識",
+        "視神經分段"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/optic-nerve-segments.png"
+      ],
+      "marks": [
+        {
+          "x": 62.0,
+          "y": 50.0,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 29,
       "type": "fill",
-      "stem": "視神經四段中的「顱內段」標準英文名稱是什麼？請中英文並列。（中文與英文都要寫）",
+      "stem": "看圖：示意圖是視神經從眼球到視交叉的側面觀。標記點（編號 1）所在的是視神經的哪一段？請寫出中文名與英文名（中文與英文都要寫）",
       "answer": "顱內段 / intracranial segment",
       "accept": [
-        "顱內段 / intracranial segment"
+        "顱內段 / intracranial segment",
+        "顱內段 / intracranial part"
       ],
-      "explain": "視神經離開視神經管至視交叉前的部分。 此分段術語依常用解剖名稱補全；教師若指定不同的細分詞，依課堂版本為準。",
+      "explain": "出了視神經管、在**顱腔**內走到視交叉的那段叫**顱內段**（約 10 mm）。\n\n標準寫法：顱內段 / intracranial segment。（示意圖：自繪）",
       "tags": [
-        "視神經分段",
-        "中英文名詞"
+        "看圖辨識",
+        "視神經分段"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/optic-nerve-segments.png"
+      ],
+      "marks": [
+        {
+          "x": 75.0,
+          "y": 50.0,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 30,
@@ -687,108 +866,187 @@
     {
       "n": 41,
       "type": "fill",
-      "stem": "請寫出「頸內動脈」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "頸內動脈 / internal carotid artery",
       "accept": [
-        "頸內動脈 / internal carotid artery"
+        "頸內動脈 / internal carotid artery",
+        "內頸動脈 / internal carotid artery",
+        "頸內動脈 / ICA"
       ],
-      "explain": "頸內動脈提供前循環，逐字稿列出的眼動脈與前脈絡叢動脈等分支來自此系統。 標準寫法：頸內動脈 / internal carotid artery。",
+      "explain": "圖上圓形**切斷面**處是**內頸動脈**（頸內動脈）往上進入顱內的地方，它在此分成前大腦動脈與中大腦動脈，並往後發出後交通動脈。\n\n標準寫法：頸內動脈 / internal carotid artery。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑與腦血管",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑與腦血管"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/circle-of-willis.png"
+      ],
+      "marks": [
+        {
+          "x": 28,
+          "y": 24,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 42,
       "type": "fill",
-      "stem": "請寫出「前交通動脈」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "前交通動脈 / anterior communicating artery",
       "accept": [
-        "前交通動脈 / anterior communicating artery"
+        "前交通動脈 / anterior communicating artery",
+        "前交通動脈 / ACoA"
       ],
-      "explain": "連接左右前大腦動脈近端。 標準寫法：前交通動脈 / anterior communicating artery。",
+      "explain": "兩條前大腦動脈在**中線前方**相連的那一小段短橫支是**前交通動脈**（ACoA），是 Willis 環的最前端。\n\n標準寫法：前交通動脈 / anterior communicating artery。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑與腦血管",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑與腦血管"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/circle-of-willis.png"
+      ],
+      "marks": [
+        {
+          "x": 50,
+          "y": 9.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 43,
       "type": "fill",
-      "stem": "請寫出「後交通動脈」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "後交通動脈 / posterior communicating artery",
       "accept": [
-        "後交通動脈 / posterior communicating artery"
+        "後交通動脈 / posterior communicating artery",
+        "後交通動脈 / PCoA"
       ],
-      "explain": "連接頸內動脈與後大腦動脈系統，構成 Willis 環的一部分。 標準寫法：後交通動脈 / posterior communicating artery。",
+      "explain": "從內頸動脈往**後**直直連到後大腦動脈的縱向血管是**後交通動脈**（PCoA），把前循環（內頸）和後循環（椎基底）接起來。\n\n標準寫法：後交通動脈 / posterior communicating artery。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑與腦血管",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑與腦血管"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/circle-of-willis.png"
+      ],
+      "marks": [
+        {
+          "x": 30,
+          "y": 37,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 44,
       "type": "fill",
-      "stem": "請寫出「後大腦動脈」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "後大腦動脈 / posterior cerebral artery",
       "accept": [
-        "後大腦動脈 / posterior cerebral artery"
+        "後大腦動脈 / posterior cerebral artery",
+        "後大腦動脈 / PCA",
+        "大腦後動脈 / posterior cerebral artery"
       ],
-      "explain": "後循環主要動脈，供應枕葉視覺皮質的重要血管來源。 標準寫法：後大腦動脈 / posterior cerebral artery。",
+      "explain": "基底動脈頂端分叉、往兩側橫走的粗支是**後大腦動脈**（PCA），供應枕葉（含初級視覺皮質）。\n\n標準寫法：後大腦動脈 / posterior cerebral artery。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑與腦血管",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑與腦血管"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/circle-of-willis.png"
+      ],
+      "marks": [
+        {
+          "x": 14,
+          "y": 46.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 45,
       "type": "fill",
-      "stem": "請寫出「基底動脈」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "基底動脈 / basilar artery",
       "accept": [
         "基底動脈 / basilar artery"
       ],
-      "explain": "由左右椎動脈匯合形成，向上分出後大腦動脈。 標準寫法：基底動脈 / basilar artery。",
+      "explain": "中線上那條粗大、兩側發出許多小橋腦支的縱走血管是**基底動脈**，由左右椎動脈會合而成。\n\n標準寫法：基底動脈 / basilar artery。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑與腦血管",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑與腦血管"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/circle-of-willis.png"
+      ],
+      "marks": [
+        {
+          "x": 50,
+          "y": 68,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 46,
       "type": "fill",
-      "stem": "請寫出「椎動脈」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "椎動脈 / vertebral artery",
       "accept": [
         "椎動脈 / vertebral artery"
       ],
-      "explain": "左右椎動脈在腦幹腹側匯合形成基底動脈。 標準寫法：椎動脈 / vertebral artery。",
+      "explain": "圖最下方、由兩側往上斜走並在中線會合的是**椎動脈**；左右椎動脈會合後成為基底動脈。\n\n標準寫法：椎動脈 / vertebral artery。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑與腦血管",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑與腦血管"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/circle-of-willis.png"
+      ],
+      "marks": [
+        {
+          "x": 33,
+          "y": 95,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 47,
       "type": "fill",
-      "stem": "請寫出「Willis 動脈環」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）位在中央，周圍這一整圈互相連通的血管合稱什麼？請寫出中文名與英文名（中文與英文都要寫）",
       "answer": "Willis 動脈環 / Circle of Willis",
       "accept": [
         "Willis 動脈環 / Circle of Willis",
-        "Willis 動脈環 / cerebral arterial circle"
+        "Willis 動脈環 / cerebral arterial circle",
+        "Willis 環 / Circle of Willis",
+        "大腦動脈環 / cerebral arterial circle",
+        "威利氏環 / Circle of Willis"
       ],
-      "explain": "腦底部動脈環；圖版有標示。 標準寫法：Willis 動脈環 / Circle of Willis。",
+      "explain": "由前交通動脈、兩側前大腦動脈、內頸動脈、後交通動脈與後大腦動脈在腦底圍成的環狀吻合，稱為 **Willis 動脈環**（大腦動脈環）。\n\n標準寫法：Willis 動脈環 / Circle of Willis。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑與腦血管",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑與腦血管"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/circle-of-willis.png"
+      ],
+      "marks": [
+        {
+          "x": 50,
+          "y": 30,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 48,
@@ -808,17 +1066,29 @@
     {
       "n": 49,
       "type": "fill",
-      "stem": "請寫出「動眼神經」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：這是移除大腦後從上往下看的顱底（前方在上）。標記點（編號 1）所指、穿過硬腦膜的神經是哪一條？請寫出中文名與英文名（中文與英文都要寫）",
       "answer": "動眼神經 / oculomotor nerve",
       "accept": [
-        "動眼神經 / oculomotor nerve"
+        "動眼神經 / oculomotor nerve",
+        "動眼神經 / CN III",
+        "動眼神經 / cranial nerve III"
       ],
-      "explain": "投影片近反射圖標示 CN III；支配內直肌及相關近反應效應器的運動輸出。 標準寫法：動眼神經 / oculomotor nerve。",
+      "explain": "顱底上面觀（腦已移除，前方在上）：視神經後方、在後床突旁**穿過硬腦膜**往前進入海綿竇的是**動眼神經（CN III）**。\n\n標準寫法：動眼神經 / oculomotor nerve。（圖：Anatomist90，Wikimedia Commons「Oculomotor nerve.jpg」，CC BY-SA 3.0，已移除文字）",
       "tags": [
-        "視覺路徑與腦血管",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑與腦血管"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/oculomotor-specimen.jpg"
+      ],
+      "marks": [
+        {
+          "x": 40.2,
+          "y": 28.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 50,
@@ -839,17 +1109,28 @@
     {
       "n": 51,
       "type": "fill",
-      "stem": "請寫出「睫狀肌」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造內有一條負責調節（看近時收縮）的肌肉，請寫出這條肌肉的中文名與英文名（中文與英文都要寫）",
       "answer": "睫狀肌 / ciliary muscle",
       "accept": [
-        "睫狀肌 / ciliary muscle"
+        "睫狀肌 / ciliary muscle",
+        "睫狀肌 / ciliary muscles"
       ],
-      "explain": "近反應時收縮，使晶狀體變厚、增加屈光力以聚焦近物。 標準寫法：睫狀肌 / ciliary muscle。",
+      "explain": "水晶體外側、虹膜根部後方那塊粉紅色環狀構造是**睫狀體**，裡面的平滑肌就是**睫狀肌**。看近時睫狀肌收縮 → 懸韌帶放鬆 → 水晶體變凸（調節）。\n\n標準寫法：睫狀肌 / ciliary muscle。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "視覺路徑與腦血管",
-        "中英文名詞"
+        "看圖辨識",
+        "視覺路徑與腦血管"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/eye-structure.png"
+      ],
+      "marks": [
+        {
+          "x": 78,
+          "y": 29.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 52,

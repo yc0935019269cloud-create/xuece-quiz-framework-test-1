@@ -1,0 +1,7 @@
+from common import *
+save("content/project.json", {
+ "id": "physopt-y2", "title": "刷題地牢", "subtitle": "把講義與題庫變成地牢冒險，邊闖關邊把觀念刷熟。",
+ "disclaimer": "詳解為依授課簡報、講義與逐字稿自編的教學解說，僅供參考；以課本與授課老師講義為準。",
+ "subjects": [{"id": "physopt", "name": "生理光學", "theme": "sci",
+   "desc": "光學共同語言、反射與折射介面、薄透鏡成像、厚透鏡與高斯系統（聚散度、屈光力、主平面、基點）。",
+   "words": ["聚散", "屈光", "透鏡", "折射", "焦點", "主平", "頂點", "稜光"]}]})

@@ -1,0 +1,63 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;padding:10px;font:15px system-ui,"Microsoft JhengHei",sans-serif;background:#fbf7ec;color:#2e2116}
+.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:5px 0}
+svg{width:100%;height:auto;background:#fff;border:1px solid #d8cfb8;border-radius:8px}
+.note{background:#fff3cf;padding:6px 10px;border-radius:6px}
+input[type=range]{width:230px}
+table{border-collapse:collapse;font-size:15px}
+td{border:1px solid #d8cfb8;padding:3px 8px;background:#fff}
+.small{font-size:14px;color:#6b5a45}
+#tip{font-weight:bold;color:#8a3b12}
+</style></head><body>
+<div class="note">觀察重點：同一條 V = P + U。先看入射光（U），再加上透鏡的屈光力（P），出射光（V）的正負就決定實像或虛像。</div>
+<svg id="s" viewBox="0 0 900 380"></svg>
+<div class="row">
+<label>透鏡屈光力 P <input id="p" type="range" min="-10" max="10" step="0.25" value="5"> <b id="pv"></b></label>
+<label>物距 u <input id="u" type="range" min="-100" max="60" step="1" value="-30"> <b id="uv"></b></label>
+</div>
+<div class="row"><table><tr><td>U = 1/u</td><td id="U"></td><td>V = P + U</td><td id="V"></td><td>v = 1/V</td><td id="v"></td><td>m = U/V</td><td id="m"></td></tr></table></div>
+<div id="tip"></div>
+<div class="small">空氣中薄透鏡，光由左向右，沿光行進方向為正；u &gt; 0 表示虛物（入射光朝透鏡後方會聚）。紅：平行光線、藍：節點光線、綠：焦點光線；虛線是延長線。</div>
+<script>
+function $(i){return document.getElementById(i)}
+var X0=450,Y0=190,S=3.5,H=50,XM=130;
+function X(x){return X0+x*S}function Y(y){return Y0-y}
+function ln(x1,y1,x2,y2,c,dash){return '<line x1="'+X(x1)+'" y1="'+Y(y1)+'" x2="'+X(x2)+'" y2="'+Y(y2)+'" stroke="'+c+'" stroke-width="2"'+(dash?' stroke-dasharray="6 5"':'')+'/>'}
+function arw(x,y,dx,dy,c){var a=Math.atan2(-dy,dx*S),px=X(x),py=Y(y),L=8;return '<polygon fill="'+c+'" points="'+(px+L*Math.cos(a))+','+(py+L*Math.sin(a))+' '+(px-L*Math.cos(a)+5*Math.sin(a))+','+(py-L*Math.sin(a)-5*Math.cos(a))+' '+(px-L*Math.cos(a)-5*Math.sin(a))+','+(py-L*Math.sin(a)+5*Math.cos(a))+'"/>'}
+function arrowObj(x,h,c,dash){var o=ln(x,0,x,h,c,dash);var t=h>0?1:-1;o+='<polygon fill="'+c+'" points="'+X(x)+','+Y(h)+' '+(X(x)-7)+','+(Y(h)+10*t)+' '+(X(x)+7)+','+(Y(h)+10*t)+'"/>';return o}
+function f2s(z){return (z>0?'+':'')+z.toFixed(2)}
+function draw(){
+var P=+$('p').value,u=+$('u').value,o='';
+$('pv').textContent=f2s(P)+' D';$('uv').textContent=(u>0?'+':'')+u+' cm'+(u<0?'（實物）':u>0?'（虛物）':'');
+o+='<line x1="0" y1="'+Y0+'" x2="900" y2="'+Y0+'" stroke="#999"/>';
+o+='<line x1="'+X0+'" y1="25" x2="'+X0+'" y2="355" stroke="#333" stroke-width="3"/>';
+if(P>0)o+='<polygon points="'+X0+',18 '+(X0-9)+',34 '+(X0+9)+',34"/><polygon points="'+X0+',362 '+(X0-9)+',346 '+(X0+9)+',346"/>';
+else if(P<0)o+='<polyline points="'+(X0-9)+',18 '+X0+',30 '+(X0+9)+',18" fill="none" stroke="#333" stroke-width="3"/><polyline points="'+(X0-9)+',362 '+X0+',350 '+(X0+9)+',362" fill="none" stroke="#333" stroke-width="3"/>';
+var f2=P!==0?100/P:Infinity,f1=-f2;
+if(P!==0){[[f1,'F₁'],[f2,'F₂'],[2*f1,'2F₁'],[2*f2,'2F₂']].forEach(function(a){if(Math.abs(a[0])<XM)o+='<circle cx="'+X(a[0])+'" cy="'+Y0+'" r="4" fill="#333"/><text x="'+(X(a[0])-10)+'" y="'+(Y0+22)+'" font-size="14">'+a[1]+'</text>'})}
+if(u===0){$('s').innerHTML=o;$('tip').textContent='物在透鏡上，請移動物體。';['U','V','v','m'].forEach(function(i){$(i).textContent='—'});return}
+var U=100/u,V=P+U,inf=Math.abs(V)<1e-9,v=inf?Infinity:100/V,m=inf?null:U/V;
+o+=arrowObj(u,H,'#6b3e1f',u>0);if(u>0)o+='<text x="'+(X(u)+6)+'" y="'+(Y(H)-6)+'" font-size="14">虛物</text>';
+var rays=[['#c0392b',H],['#1d6fb8',0]];
+if(P!==0&&Math.abs(f1-u)>0.5){var yl=H*f1/(f1-u);if(Math.abs(yl)<175)rays.push(['#1e8c4e',yl])}
+rays.forEach(function(r){var c=r[0],yl=r[1],ki=(yl-H)/(0-u);
+ if(u<0){o+=ln(u,H,0,yl,c);o+=arw(u/2,H+ki*(u/2-u),1,ki,c)}
+ else{o+=ln(-XM,yl-ki*XM,0,yl,c);o+=arw(-XM/2,yl-ki*XM/2,1,ki,c);o+=ln(0,yl,u,H,c,true)}
+ var k=inf?H/u:(m*H-yl)/v;o+=ln(0,yl,XM,yl+k*XM,c);o+=arw(XM*0.6,yl+k*XM*0.6,1,k,c);
+ if(!inf&&v<0)o+=ln(0,yl,Math.max(v,-XM*2),yl+k*Math.max(v,-XM*2),c,true);});
+var tx='';
+if(!inf){if(Math.abs(v)<=XM){o+=arrowObj(v,m*H,'#7a1fa2',v<0);o+='<text x="'+(X(v)+6)+'" y="'+(Y(m*H)+(m>0?-6:16))+'" font-size="14" fill="#7a1fa2">'+(V>0?'實像':'虛像')+'</text>'}else tx='（像在畫面外）'}
+$('s').innerHTML=o;
+$('U').textContent=f2s(U)+' D';$('V').textContent=f2s(V)+' D';
+$('v').textContent=inf?'∞':(v>0?'+':'')+v.toFixed(1)+' cm';$('m').textContent=inf?'—':f2s(m);
+var t='';
+if(inf)t='V = 0：出射光平行，像在無限遠。';
+else{t=(V>0?'實像':'虛像')+'、'+(m>0?'正立':'倒立')+'、'+(Math.abs(Math.abs(m)-1)<1e-9?'等大':Math.abs(m)>1?'放大':'縮小')+(u>0?'（相對虛物）':'')+'。'+tx}
+if(P>0&&u<0)t+=Math.abs(U)<P?' 物在 F₁ 外：|U| < P。':Math.abs(U)>P?' 物在 F₁ 內：|U| > P，出射仍發散（放大鏡）。':'';
+if(P>0&&u>0)t+=' 正透鏡＋虛物：V = P + U > P，實像更靠近透鏡。';
+if(P<0&&u<0)t+=' 負透鏡＋實物：一定是正立縮小虛像。';
+if(P<0&&u>0)t+=U>-P?' 虛物會聚夠強（U > |P|）：負透鏡也能成實像！':U<-P?' 虛物會聚不足（U < |P|）：成虛像。':'';
+if(P===0)t+=' P = 0：沒有屈光力，出射等於入射。';
+$('tip').textContent=t;}
+$('p').oninput=draw;$('u').oninput=draw;draw();
+</script></body></html>

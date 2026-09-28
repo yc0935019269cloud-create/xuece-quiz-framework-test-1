@@ -1,0 +1,45 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;padding:10px;font:15px system-ui,"Microsoft JhengHei",sans-serif;background:#fbf7ec;color:#2e2116}
+.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:6px 0}
+svg{width:100%;height:auto;background:#fff;border:1px solid #d8cfb8;border-radius:8px}
+.big{font-size:20px;font-weight:bold;color:#8a3b12}
+.note{background:#fff3cf;padding:6px 10px;border-radius:6px}
+.small{font-size:14px;color:#6b5a45}
+input[type=range]{width:240px}
+</style></head><body>
+<div class="note">觀察重點：離點光源（或會聚點）越遠，波前越平，|聚散度| 越小；會聚取正、發散取負。</div>
+<svg id="s" viewBox="0 0 800 300"></svg>
+<div class="row">
+<label><input type="radio" name="t" value="-1" checked> 發散光（來自點光源）</label>
+<label><input type="radio" name="t" value="1"> 會聚光（朝向會聚點）</label>
+<label>介質 <select id="n"><option value="1">空氣 n = 1.000</option><option value="1.333">水 n = 1.333</option><option value="1.5">玻璃 n = 1.500</option></select></label>
+</div>
+<div class="row"><label>觀察位置到點的距離 q：<input id="d" type="range" min="1" max="200" value="50"></label><b id="dv"></b></div>
+<div class="row big" id="out"></div>
+<div id="msg"></div>
+<div class="small">公式：聚散度 P = n / q（q 換成公尺；會聚為正、發散為負；單位 D = m⁻¹）</div>
+<script>
+var s=document.getElementById('s'),d=document.getElementById('d'),nS=document.getElementById('n');
+function ar(x1,y1,x2,y2,c){var mx=(x1+x2)/2,my=(y1+y2)/2,a=Math.atan2(y2-y1,x2-x1),L=9;
+return '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="'+c+'" stroke-width="2"/>'+
+'<polygon fill="'+c+'" points="'+(mx+L*Math.cos(a))+','+(my+L*Math.sin(a))+' '+(mx-L*Math.cos(a)+5*Math.sin(a))+','+(my-L*Math.sin(a)-5*Math.cos(a))+' '+(mx-L*Math.cos(a)-5*Math.sin(a))+','+(my-L*Math.sin(a)+5*Math.cos(a))+'"/>';}
+function draw(){
+var q=+d.value,n=+nS.value,t=+document.querySelector('input[name=t]:checked').value,R=q*3,cy=150,h=Math.min(110,R*0.95),a=Math.asin(h/R),o='',wx,px;
+o+='<line x1="0" y1="150" x2="800" y2="150" stroke="#bbb" stroke-dasharray="5 5"/>';
+if(t<0){px=80;wx=px+R;
+ [-1,-0.5,0,0.5,1].forEach(function(k){var g=k*a;o+=ar(px,cy,px+(R+50)*Math.cos(g),cy+(R+50)*Math.sin(g),'#c0392b');});
+ o+='<path d="M'+(px+R*Math.cos(a))+' '+(cy-h)+' A'+R+' '+R+' 0 0 1 '+(px+R*Math.cos(a))+' '+(cy+h)+'" fill="none" stroke="#1d6fb8" stroke-width="4"/>';
+ o+='<circle cx="'+px+'" cy="150" r="7" fill="#e0a100"/><text x="'+(px-30)+'" y="290" font-size="14">點光源</text>';
+}else{wx=120;px=wx+R;
+ [-1,-0.5,0,0.5,1].forEach(function(k){var g=k*a;o+=ar(px-(R+50)*Math.cos(g),cy-(R+50)*Math.sin(g),px,cy,'#c0392b');});
+ o+='<path d="M'+(px-R*Math.cos(a))+' '+(cy-h)+' A'+R+' '+R+' 0 0 0 '+(px-R*Math.cos(a))+' '+(cy+h)+'" fill="none" stroke="#1d6fb8" stroke-width="4"/>';
+ o+='<circle cx="'+px+'" cy="150" r="6" fill="#c0392b"/><text x="'+(px-24)+'" y="290" font-size="14">會聚點</text>';}
+o+='<line x1="'+Math.min(px,wx)+'" y1="272" x2="'+Math.max(px,wx)+'" y2="272" stroke="#333" stroke-width="2"/>';
+o+='<text x="'+((px+wx)/2-24)+'" y="266" font-size="14">q = '+q+' cm</text>';
+o+='<text x="'+(wx-26)+'" y="24" font-size="14" fill="#1d6fb8">觀察處波前</text>';
+s.innerHTML=o;
+var P=t*n/(q/100);document.getElementById('dv').textContent=q+' cm = '+(q/100).toFixed(2)+' m';
+document.getElementById('out').textContent='聚散度 P = '+(t>0?'+':'−')+n.toFixed(3)+' / '+(q/100).toFixed(2)+' m = '+(P>0?'+':'')+P.toFixed(2)+' D';
+document.getElementById('msg').textContent=t<0?'發散光：能量散開，能量密度變小 → 聚散度為負。越遠 |P| 越小，趨近平行光（P = 0）。':'會聚光：能量集中，能量密度變大 → 聚散度為正。越靠近會聚點 |P| 越大。';}
+d.oninput=draw;nS.onchange=draw;document.querySelectorAll('input[name=t]').forEach(function(e){e.onchange=draw});draw();
+</script></body></html>

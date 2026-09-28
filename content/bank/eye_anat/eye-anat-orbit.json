@@ -8,7 +8,7 @@
       "眼解剖實驗",
       "骨質眼窩與顱孔"
     ],
-    "source": "《1.骨質眼窩+圖譜+2026-01.pdf》PDF p.1–10（圖譜頁碼 10–19）；《新增 文字文件.txt》逐字稿（眼眶骨與孔洞段落）。題目依素材自編。；已依原始投影片校正看圖標記點、刪除重複題",
+    "source": "《1.骨質眼窩+圖譜+2026-01.pdf》PDF p.1–10（圖譜頁碼 10–19）；《新增 文字文件.txt》逐字稿（眼眶骨與孔洞段落）。題目依素材自編。；已依原始投影片校正看圖標記點、刪除重複題；部分看圖題底圖：Servier Medical Art（smart.servier.com），CC BY 4.0；看圖題另用講義圖譜與簡報圖（已移除標籤），及 Wikimedia Commons 開放授權圖（出處見各題詳解）",
     "order": 1
   },
   "groups": [],
@@ -195,553 +195,899 @@
     {
       "n": 8,
       "type": "fill",
-      "stem": "請寫出「額骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "額骨 / frontal bone",
       "accept": [
         "額骨 / frontal bone"
       ],
-      "explain": "構成眼眶上壁；前額部骨。 標準寫法：額骨 / frontal bone。",
+      "explain": "顱骨側面觀**最前上方**、冠狀縫前面的大片骨頭是**額骨**。它向下延伸構成眼眶上壁與眶上緣。辨認：冠狀縫（頭頂那條縱向鋸齒縫）前方＝額骨，後方＝頂骨。\n\n標準寫法：額骨 / frontal bone。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 75,
+          "y": 24,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 9,
       "type": "fill",
-      "stem": "請寫出「蝶骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "蝶骨 / sphenoid bone",
       "accept": [
         "蝶骨 / sphenoid bone",
         "蝶骨 / sphenoid"
       ],
-      "explain": "蝶骨小翼與大翼參與眼眶後部及相關裂孔周圍。 標準寫法：蝶骨 / sphenoid bone。",
+      "explain": "太陽穴深處、夾在額骨、頂骨、顳骨與顴骨之間的是**蝶骨大翼**，名稱寫**蝶骨**即可。它在眼眶內構成外側壁後部，大翼與小翼之間就是**眶上裂**。\n\n標準寫法：蝶骨 / sphenoid bone。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 67,
+          "y": 45,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 10,
       "type": "fill",
-      "stem": "請寫出「顴骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "顴骨 / zygomatic bone",
       "accept": [
         "顴骨 / zygomatic bone"
       ],
-      "explain": "參與眼眶外側壁及下壁。 標準寫法：顴骨 / zygomatic bone。",
+      "explain": "眼眶**外下方**、形成顴部隆起的是**顴骨**。它向後伸出顳突，和顳骨的顴突接成顴弓；在眼眶內參與外側壁與眶底。\n\n標準寫法：顴骨 / zygomatic bone。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 79,
+          "y": 58,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 11,
       "type": "fill",
-      "stem": "請寫出「上頜骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "上頜骨 / maxilla",
       "accept": [
         "上頜骨 / maxilla",
         "上頜骨 / maxillary bone"
       ],
-      "explain": "參與眼眶下壁與內側壁。 標準寫法：上頜骨 / maxilla。",
+      "explain": "牙齒上方、鼻孔外側、眼眶下方的是**上頜骨**。它構成眶底大部分，體內有**上頜竇**，眶下孔也開在它前面。\n\n標準寫法：上頜骨 / maxilla。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
-    },
-    {
-      "n": 12,
-      "type": "fill",
-      "stem": "請寫出「腭骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
-      "answer": "腭骨 / palatine bone",
-      "accept": [
-        "腭骨 / palatine bone"
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
       ],
-      "explain": "以眶突參與眼眶下壁的後部。 標準寫法：腭骨 / palatine bone。",
-      "tags": [
-        "中英文名詞",
-        "眼眶與顱底構造"
-      ],
-      "level": 1
+      "marks": [
+        {
+          "x": 88,
+          "y": 70,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 13,
       "type": "fill",
-      "stem": "請寫出「篩骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "篩骨 / ethmoid bone",
       "accept": [
         "篩骨 / ethmoid bone",
         "篩骨 / ethmoid"
       ],
-      "explain": "參與眼眶內側壁；與篩竇相鄰。 標準寫法：篩骨 / ethmoid bone。",
+      "explain": "左眼眶照片（轉了 90°）中，內側壁中段的**黃綠色薄骨**是**篩骨**的眶板（紙樣板），很薄、容易骨折。內側壁由前到後：上頜骨額突 → 淚骨 → 篩骨 → 蝶骨。\n\n標準寫法：篩骨 / ethmoid bone。",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-orbit/orbit-unlabeled.png"
+      ],
+      "marks": [
+        {
+          "x": 37,
+          "y": 56,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 14,
       "type": "fill",
-      "stem": "請寫出「淚骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "淚骨 / lacrimal bone",
       "accept": [
         "淚骨 / lacrimal bone"
       ],
-      "explain": "參與眼眶內側壁前部，與淚囊窩區域相關。 標準寫法：淚骨 / lacrimal bone。",
+      "explain": "內側壁**最前方**的**橘色長條小骨**是**淚骨**，上面有淚囊窩。它在黃綠色的篩骨前方，不要搞混。\n\n標準寫法：淚骨 / lacrimal bone。",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-orbit/orbit-unlabeled.png"
+      ],
+      "marks": [
+        {
+          "x": 36,
+          "y": 67,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 15,
       "type": "fill",
-      "stem": "請寫出「視神經管」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "視神經管 / optic canal",
       "accept": [
         "視神經管 / optic canal",
-        "視神經管 / optic foramen"
+        "視神經管 / optic foramen",
+        "視神經孔 / optic foramen"
       ],
-      "explain": "位於眼眶後方尖端附近，視神經與眼動脈通過。 標準寫法：視神經管 / optic canal。",
+      "explain": "顱底內面觀（上方為前）：蝶骨小翼根部、蝶鞍前外側的小圓孔是**視神經管**，通過**視神經與眼動脈**。它在眶尖、眶上裂的內上方。\n\n標準寫法：視神經管 / optic canal。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-internal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 54.1,
+          "y": 34.1,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 16,
       "type": "fill",
-      "stem": "請寫出「眶上裂」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "眶上裂 / superior orbital fissure",
       "accept": [
         "眶上裂 / superior orbital fissure"
       ],
-      "explain": "位於蝶骨小翼與大翼之間；多條眼眶神經通過。 標準寫法：眶上裂 / superior orbital fissure。",
+      "explain": "頭骨前面觀：眼眶深處、**外上方**那道斜長裂縫是**眶上裂**，夾在蝶骨大翼與小翼之間。通過 CN III、IV、V1、VI 與眼上靜脈。\n\n標準寫法：眶上裂 / superior orbital fissure。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-anterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 64.7,
+          "y": 39.2,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 17,
       "type": "fill",
-      "stem": "請寫出「眶下裂」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "眶下裂 / inferior orbital fissure",
       "accept": [
         "眶下裂 / inferior orbital fissure"
       ],
-      "explain": "眼眶下壁與外側壁後部的裂隙；逐字稿只提到名稱，通過物未詳講。 標準寫法：眶下裂 / inferior orbital fissure。",
+      "explain": "頭骨前面觀：眼眶**外下方**深處、眶外側壁與眶底之間的裂縫是**眶下裂**，通過上頜神經（V2）的分支眶下神經與血管。\n\n標準寫法：眶下裂 / inferior orbital fissure。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-anterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 76.4,
+          "y": 46.3,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 18,
       "type": "fill",
-      "stem": "請寫出「眶上孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "眶上孔 / supraorbital foramen",
       "accept": [
-        "眶上孔 / supraorbital foramen"
+        "眶上孔 / supraorbital foramen",
+        "眶上切跡 / supraorbital notch"
       ],
-      "explain": "額骨可見的孔，名稱不可與眶上裂混淆。 標準寫法：眶上孔 / supraorbital foramen。",
+      "explain": "頭骨前面觀：**眶上緣**中內 1/3 處的小孔（有時是切跡）是**眶上孔**，眶上神經與血管由此到額部。\n\n標準寫法：眶上孔 / supraorbital foramen。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-anterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 68.5,
+          "y": 26.8,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 19,
       "type": "fill",
-      "stem": "請寫出「眶下孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "眶下孔 / infraorbital foramen",
       "accept": [
         "眶下孔 / infraorbital foramen"
       ],
-      "explain": "上頜骨可見的孔；名稱不可與眶下裂混淆。 標準寫法：眶下孔 / infraorbital foramen。",
+      "explain": "頭骨前面觀：眼眶**下緣下方**、上頜骨前面的小孔是**眶下孔**，眶下神經（V2 延續）與血管由此穿出到臉頰。\n\n標準寫法：眶下孔 / infraorbital foramen。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-anterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 71.5,
+          "y": 51.7,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 20,
       "type": "fill",
-      "stem": "請寫出「篩板」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "篩板 / cribriform plate",
       "accept": [
         "篩板 / cribriform plate"
       ],
-      "explain": "篩骨的一部分，表面有嗅神經絲通過的小孔。 標準寫法：篩板 / cribriform plate。",
+      "explain": "顱底內面觀（上方為前）：前顱窩正中、**雞冠兩側**那兩條凹下去、布滿小孔的薄骨板是**篩板**（屬篩骨）。\n\n標準寫法：篩板 / cribriform plate。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-internal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 46.7,
+          "y": 26.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 21,
       "type": "fill",
-      "stem": "請寫出「嗅孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點處這片骨板上布滿的許多小孔叫什麼？請寫出中文名與英文名（中文與英文都要寫）",
       "answer": "嗅孔 / olfactory foramina",
       "accept": [
         "嗅孔 / olfactory foramina",
-        "嗅孔 / olfactory foramen"
+        "嗅孔 / olfactory foramen",
+        "篩孔 / olfactory foramina"
       ],
-      "explain": "位於篩板，嗅神經絲通過。 標準寫法：嗅孔 / olfactory foramina。",
+      "explain": "顱底內面觀（上方為前）：篩板上那一顆顆**小孔**叫**嗅孔**，嗅神經（CN I）的纖維由鼻腔頂穿過這些孔到嗅球。\n\n標準寫法：嗅孔 / olfactory foramina。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-internal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 50.0,
+          "y": 26.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 22,
       "type": "fill",
-      "stem": "請寫出「雞冠」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "雞冠 / crista galli",
       "accept": [
         "雞冠 / crista galli"
       ],
-      "explain": "篩骨向上突起，位於篩板中線附近。 標準寫法：雞冠 / crista galli。",
+      "explain": "顱底內面觀（上方為前）：前顱窩**正中線**往上翹起的骨嵴是**雞冠**（篩骨），大腦鐮附著在這裡。\n\n標準寫法：雞冠 / crista galli。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-internal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 48.1,
+          "y": 21.8,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 23,
       "type": "fill",
-      "stem": "請寫出「蝶鞍」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "蝶鞍 / sella turcica",
       "accept": [
-        "蝶鞍 / sella turcica"
+        "蝶鞍 / sella turcica",
+        "蝶鞍 / hypophyseal fossa",
+        "垂體窩 / hypophyseal fossa"
       ],
-      "explain": "蝶骨上承載腦下垂體的鞍狀區域；圖版副名 hypophyseal fossa 指垂體窩。 標準寫法：蝶鞍 / sella turcica。",
+      "explain": "顱底內面觀（上方為前）：顱底正中、像馬鞍一樣凹下去的窩是**蝶鞍**（腦下垂體窩），腦下垂體就坐在裡面，視交叉在它的正上方。\n\n標準寫法：蝶鞍 / sella turcica。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-internal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 49.0,
+          "y": 40.0,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 24,
       "type": "fill",
-      "stem": "請寫出「圓孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "圓孔 / foramen rotundum",
       "accept": [
         "圓孔 / foramen rotundum"
       ],
-      "explain": "第五對腦神經第二支 V2 通過。 標準寫法：圓孔 / foramen rotundum。",
+      "explain": "顱底內面觀（上方為前）：中顱窩內、**眶上裂後下方**第一個孔是**圓孔**，通過**上頜神經（V2）**。由前往後記：圓孔（V2）→ 卵圓孔（V3）→ 棘孔（中腦膜動脈）。\n\n標準寫法：圓孔 / foramen rotundum。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-internal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 38.2,
+          "y": 40.0,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 25,
       "type": "fill",
-      "stem": "請寫出「卵圓孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "卵圓孔 / foramen ovale",
       "accept": [
         "卵圓孔 / foramen ovale"
       ],
-      "explain": "第五對腦神經第三支 V3 通過。 標準寫法：卵圓孔 / foramen ovale。",
+      "explain": "顱底外面觀（上方為牙齒／前方）：蝶骨大翼上、**較大的橢圓形孔**是**卵圓孔**，通過**下頜神經（V3）**。它的後外側那個小孔是棘孔。\n\n標準寫法：卵圓孔 / foramen ovale。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-external.jpg"
+      ],
+      "marks": [
+        {
+          "x": 29.0,
+          "y": 44.8,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 26,
       "type": "fill",
-      "stem": "請寫出「棘孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "棘孔 / foramen spinosum",
       "accept": [
-        "棘孔 / foramen spinosum"
+        "棘孔 / foramen spinosum",
+        "棘孔 / formen spinosum"
       ],
-      "explain": "中腦膜動脈通過；勿與卵圓孔混淆。 標準寫法：棘孔 / foramen spinosum。",
+      "explain": "顱底內面觀（上方為前）：卵圓孔**後外側**的小圓孔是**棘孔**，通過**中腦膜動脈**。\n\n標準寫法：棘孔 / foramen spinosum。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-internal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 30.7,
+          "y": 50.0,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 27,
       "type": "fill",
-      "stem": "請寫出「破裂孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "破裂孔 / foramen lacerum",
       "accept": [
         "破裂孔 / foramen lacerum"
       ],
-      "explain": "顱底孔洞之一；本逐字稿未交代通過物，不將其作為通過物記憶題。 標準寫法：破裂孔 / foramen lacerum。",
+      "explain": "顱底外面觀（上方為牙齒／前方）：顳骨岩部尖端與蝶骨、枕骨之間的**不規則大孔**是**破裂孔**；活體時被軟骨填住，內頸動脈從它上方經過。\n\n標準寫法：破裂孔 / foramen lacerum。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-external.jpg"
+      ],
+      "marks": [
+        {
+          "x": 59.6,
+          "y": 48.3,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 28,
       "type": "fill",
-      "stem": "請寫出「頸動脈管」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "頸動脈管 / carotid canal",
       "accept": [
         "頸動脈管 / carotid canal"
       ],
-      "explain": "頸內動脈進入顱腔的通道。 標準寫法：頸動脈管 / carotid canal。",
+      "explain": "顱底外面觀（上方為牙齒／前方）：顳骨岩部下面的**圓形管口**是**頸動脈管**外口，**內頸動脈**由此進入顱內。\n\n標準寫法：頸動脈管 / carotid canal。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-external.jpg"
+      ],
+      "marks": [
+        {
+          "x": 27.5,
+          "y": 55.6,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 29,
       "type": "fill",
-      "stem": "請寫出「頸靜脈孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "頸靜脈孔 / jugular foramen",
       "accept": [
         "頸靜脈孔 / jugular foramen"
       ],
-      "explain": "第九、十、十一對腦神經相關的孔洞。 標準寫法：頸靜脈孔 / jugular foramen。",
+      "explain": "顱底內面觀（上方為前）：顳骨岩部與枕骨之間、枕骨大孔外前方的**大孔**是**頸靜脈孔**，通過 CN IX、X、XI 與內頸靜脈。\n\n標準寫法：頸靜脈孔 / jugular foramen。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-internal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 35.1,
+          "y": 61.7,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 30,
       "type": "fill",
-      "stem": "請寫出「舌下神經管」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "舌下神經管 / hypoglossal canal",
       "accept": [
         "舌下神經管 / hypoglossal canal"
       ],
-      "explain": "第十二對腦神經通過。 標準寫法：舌下神經管 / hypoglossal canal。",
+      "explain": "顱底外面觀（上方為牙齒／前方）：枕骨髁**基部**、枕骨大孔前外側緣的小管是**舌下神經管**，通過**舌下神經（CN XII）**。\n\n標準寫法：舌下神經管 / hypoglossal canal。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-external.jpg"
+      ],
+      "marks": [
+        {
+          "x": 40.2,
+          "y": 65.3,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 31,
       "type": "fill",
-      "stem": "請寫出「內耳道」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "內耳道 / internal acoustic meatus",
       "accept": [
         "內耳道 / internal acoustic meatus",
         "內耳道 / internal auditory meatus"
       ],
-      "explain": "第七、八對腦神經通過。 標準寫法：內耳道 / internal acoustic meatus。",
+      "explain": "顱底內面觀（上方為前）：顳骨岩部**後面**的圓孔是**內耳道**，通過**顏面神經（CN VII）與前庭耳蝸神經（CN VIII）**。\n\n標準寫法：內耳道 / internal acoustic meatus。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-internal.jpg"
+      ],
+      "marks": [
+        {
+          "x": 33.8,
+          "y": 56.2,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 32,
       "type": "fill",
-      "stem": "請寫出「枕骨大孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "枕骨大孔 / foramen magnum",
       "accept": [
         "枕骨大孔 / foramen magnum"
       ],
-      "explain": "位於顱底後部的大孔；圖版可辨認名稱。 標準寫法：枕骨大孔 / foramen magnum。",
+      "explain": "顱底外面觀（上方為牙齒／前方）：顱底正中後方**最大的圓孔**是**枕骨大孔**，延髓在此接脊髓，椎動脈也由此進入。\n\n標準寫法：枕骨大孔 / foramen magnum。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-external.jpg"
+      ],
+      "marks": [
+        {
+          "x": 53.3,
+          "y": 73.7,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 33,
       "type": "fill",
-      "stem": "請寫出「枕骨髁」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "枕骨髁 / occipital condyle",
       "accept": [
         "枕骨髁 / occipital condyle"
       ],
-      "explain": "枕骨下方與寰椎相接的關節面。 標準寫法：枕骨髁 / occipital condyle。",
+      "explain": "顱底外面觀（上方為牙齒／前方）：枕骨大孔**兩側**的橢圓形關節面突起是**枕骨髁**，與第一頸椎（寰椎）形成寰枕關節。\n\n標準寫法：枕骨髁 / occipital condyle。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-external.jpg"
+      ],
+      "marks": [
+        {
+          "x": 61.4,
+          "y": 63.8,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 34,
       "type": "fill",
-      "stem": "請寫出「硬顎」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點所在、構成口腔頂部的整片骨性結構合稱什麼？請寫出中文名與英文名（中文與英文都要寫）",
       "answer": "硬顎 / hard palate",
       "accept": [
-        "硬顎 / hard palate"
+        "硬顎 / hard palate",
+        "硬腭 / hard palate",
+        "骨腭 / bony palate"
       ],
-      "explain": "口腔頂部骨性部分；上頜骨腭突與腭骨水平板構成。 標準寫法：硬顎 / hard palate。",
+      "explain": "顱底外面觀（上方為牙齒／前方）：口腔頂部的骨板合稱**硬顎**：前 2/3 是**上頜骨腭突**，後 1/3 是**腭骨水平板**。\n\n標準寫法：硬顎 / hard palate。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-external.jpg"
+      ],
+      "marks": [
+        {
+          "x": 55.8,
+          "y": 21.8,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 35,
       "type": "fill",
-      "stem": "請寫出「顴弓」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "顴弓 / zygomatic arch",
       "accept": [
         "顴弓 / zygomatic arch"
       ],
-      "explain": "顳骨顴突與顴骨顳突共同形成。 標準寫法：顴弓 / zygomatic arch。",
+      "explain": "顴骨往後、顳骨往前各伸出一根骨突，兩者接成橫跨在下頜骨冠突上方的骨橋，就是**顴弓**。它下方的空隙讓顳肌通過。\n\n標準寫法：顴弓 / zygomatic arch。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 63,
+          "y": 61,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 36,
       "type": "fill",
-      "stem": "請寫出「顳骨乳突」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "顳骨乳突 / mastoid process",
       "accept": [
         "顳骨乳突 / mastoid process",
-        "乳突 / mastoid process"
+        "乳突 / mastoid process",
+        "乳突 / mastoid"
       ],
-      "explain": "顳骨的突起。 標準寫法：顳骨乳突 / mastoid process。",
+      "explain": "外耳道**後下方**、向下突出的圓鈍骨突是**顳骨乳突**。注意：外耳道前下方細長尖尖的是莖突，不是乳突。\n\n標準寫法：顳骨乳突 / mastoid process。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 38,
+          "y": 67,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 37,
       "type": "fill",
-      "stem": "請寫出「莖乳突孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "莖乳突孔 / stylomastoid foramen",
       "accept": [
         "莖乳突孔 / stylomastoid foramen"
       ],
-      "explain": "顳骨上的孔，圖版有標示。 標準寫法：莖乳突孔 / stylomastoid foramen。",
+      "explain": "顱底外面觀（上方為牙齒／前方）：莖突與乳突**之間**的小孔是**莖乳突孔**，**顏面神經（CN VII）**由此出顱。\n\n標準寫法：莖乳突孔 / stylomastoid foramen。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-external.jpg"
+      ],
+      "marks": [
+        {
+          "x": 80.2,
+          "y": 62.9,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 38,
       "type": "fill",
-      "stem": "請寫出「外耳道」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "外耳道 / external acoustic meatus",
       "accept": [
         "外耳道 / external acoustic meatus",
         "外耳道 / external auditory meatus"
       ],
-      "explain": "顳骨上的外耳道。 標準寫法：外耳道 / external acoustic meatus。",
+      "explain": "下頜骨髁突正後方的**橢圓形開口**是**外耳道**（external acoustic meatus），位在顳骨上。它後下方是乳突、前下方是莖突。\n\n標準寫法：外耳道 / external acoustic meatus。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 47,
+          "y": 65,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 39,
       "type": "fill",
-      "stem": "請寫出「下頜窩」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "下頜窩 / mandibular fossa",
       "accept": [
-        "下頜窩 / mandibular fossa"
+        "下頜窩 / mandibular fossa",
+        "下頜窩 / glenoid fossa"
       ],
-      "explain": "顳骨上與下頜骨髁突形成關節的窩。 標準寫法：下頜窩 / mandibular fossa。",
+      "explain": "頭骨左側觀（頭蓋骨已移除）：外耳道前方、顴弓根部下面的凹窩是**下頜窩**，容納下頜骨髁突，形成顳顎關節。\n\n標準寫法：下頜窩 / mandibular fossa。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-left-lateral.jpg"
+      ],
+      "marks": [
+        {
+          "x": 36.9,
+          "y": 47.2,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 40,
       "type": "fill",
-      "stem": "請寫出「蝶竇」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "蝶竇 / sphenoidal sinus",
       "accept": [
         "蝶竇 / sphenoidal sinus",
         "蝶竇 / sphenoid sinus"
       ],
-      "explain": "位於蝶骨內；與眼眶後方相鄰。 標準寫法：蝶竇 / sphenoidal sinus。",
+      "explain": "鼻竇示意圖（右為側面觀）：位在蝶骨體內、鼻腔**最後上方**、蝶鞍正下方的是**蝶竇**（紅色）。\n\n標準寫法：蝶竇 / sphenoidal sinus。（圖：Patrick J. Lynch 等，Wikimedia Commons「Paranasal sinuses numbers.svg」，CC BY 2.5，已裁去圖例）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/paranasal-sinuses.png"
+      ],
+      "marks": [
+        {
+          "x": 76.6,
+          "y": 51.9,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 41,
       "type": "fill",
-      "stem": "請寫出「額竇」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "額竇 / frontal sinus",
       "accept": [
         "額竇 / frontal sinus"
       ],
-      "explain": "位於額骨內，鄰近眼眶上方。 標準寫法：額竇 / frontal sinus。",
+      "explain": "鼻竇示意圖（左為正面觀）：眉毛後方、**額骨**內的是**額竇**（綠色）。\n\n標準寫法：額竇 / frontal sinus。（圖：Patrick J. Lynch 等，Wikimedia Commons「Paranasal sinuses numbers.svg」，CC BY 2.5，已裁去圖例）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/paranasal-sinuses.png"
+      ],
+      "marks": [
+        {
+          "x": 21.6,
+          "y": 37.6,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 42,
       "type": "fill",
-      "stem": "請寫出「篩竇」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "篩竇 / ethmoidal sinus",
       "accept": [
         "篩竇 / ethmoidal sinus",
         "篩竇 / ethmoid sinus",
-        "篩竇 / ethmoidal air cells"
+        "篩竇 / ethmoidal air cells",
+        "篩小房 / ethmoidal air cells"
       ],
-      "explain": "位於眼眶內側附近。 標準寫法：篩竇 / ethmoidal sinus。",
+      "explain": "鼻竇示意圖：兩眼之間、眼眶**內側**一群小氣室是**篩竇**（篩小房，紫色），和眼眶只隔一層很薄的紙樣板。\n\n標準寫法：篩竇 / ethmoidal sinus。（圖：Patrick J. Lynch 等，Wikimedia Commons「Paranasal sinuses numbers.svg」，CC BY 2.5，已裁去圖例）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/paranasal-sinuses.png"
+      ],
+      "marks": [
+        {
+          "x": 23.6,
+          "y": 46.3,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 43,
       "type": "fill",
-      "stem": "請寫出「上頜竇」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "上頜竇 / maxillary sinus",
       "accept": [
         "上頜竇 / maxillary sinus"
       ],
-      "explain": "位於眼眶下方；眼眶底薄處骨折可涉及此竇。 標準寫法：上頜竇 / maxillary sinus。",
+      "explain": "鼻竇示意圖：眼眶**下方**、臉頰內最大的是**上頜竇**（藍綠色）；眶底骨折時最常波及。\n\n標準寫法：上頜竇 / maxillary sinus。（圖：Patrick J. Lynch 等，Wikimedia Commons「Paranasal sinuses numbers.svg」，CC BY 2.5，已裁去圖例）",
       "tags": [
-        "中英文名詞",
+        "看圖辨識",
         "眼眶與顱底構造"
       ],
-      "level": 2
+      "level": 2,
+      "img": [
+        "img/eye-anat-gallery/paranasal-sinuses.png"
+      ],
+      "marks": [
+        {
+          "x": 17.1,
+          "y": 58.9,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 44,
@@ -1033,428 +1379,717 @@
     {
       "n": 60,
       "type": "fill",
-      "stem": "請寫出「鼻骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "鼻骨 / nasal bone",
       "accept": [
         "鼻骨 / nasal bone"
       ],
-      "explain": "鼻腔上方、兩側眼眶內側前方的骨。 標準寫法：鼻骨 / nasal bone。",
+      "explain": "兩眼之間、構成**鼻樑上段**的小骨是**鼻骨**。側面觀只看得到它在眼眶前方鼻樑處的一小段。\n\n標準寫法：鼻骨 / nasal bone。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 95,
+          "y": 47,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 61,
       "type": "fill",
-      "stem": "請寫出「上鼻甲」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "上鼻甲 / superior nasal concha",
       "accept": [
         "上鼻甲 / superior nasal concha"
       ],
-      "explain": "篩骨迷路的一部分，位於鼻腔外側壁上方。 標準寫法：上鼻甲 / superior nasal concha。",
+      "explain": "鼻腔外側壁矢狀切面（前方在左）：三片鼻甲中**最上、最小、最靠後**的是**上鼻甲**（屬篩骨），在蝶竇前下方。\n\n標準寫法：上鼻甲 / superior nasal concha。（圖：Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0，已移除標籤）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/nasal-cavity.jpg"
+      ],
+      "marks": [
+        {
+          "x": 53.5,
+          "y": 38.3,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 62,
       "type": "fill",
-      "stem": "請寫出「中鼻甲」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "中鼻甲 / middle nasal concha",
       "accept": [
         "中鼻甲 / middle nasal concha"
       ],
-      "explain": "篩骨迷路的一部分，位於鼻腔外側壁中段。 標準寫法：中鼻甲 / middle nasal concha。",
+      "explain": "頭骨前面觀：鼻腔內、鼻中隔外側**上方**那片捲曲的骨是**中鼻甲**（屬篩骨）。\n\n標準寫法：中鼻甲 / middle nasal concha。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-anterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 55.2,
+          "y": 48.9,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 63,
       "type": "fill",
-      "stem": "請寫出「下鼻甲」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "下鼻甲 / inferior nasal concha",
       "accept": [
         "下鼻甲 / inferior nasal concha"
       ],
-      "explain": "獨立骨，位於鼻腔外側壁下段。 標準寫法：下鼻甲 / inferior nasal concha。",
+      "explain": "頭骨前面觀：鼻腔外側壁**最下方、最大**的捲曲骨片是**下鼻甲**，它是獨立的一塊骨頭。\n\n標準寫法：下鼻甲 / inferior nasal concha。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-anterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 59.4,
+          "y": 53.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 64,
       "type": "fill",
-      "stem": "請寫出「下頜骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "下頜骨 / mandible",
       "accept": [
         "下頜骨 / mandible"
       ],
-      "explain": "顱骨中可活動的骨，圖版標示下頜孔與頦孔。 標準寫法：下頜骨 / mandible。",
+      "explain": "構成下巴與下顎、唯一能活動的顱骨是**下頜骨**。標記點在下頜體；往後上方是下頜支，頂端的髁突與顳骨形成顳顎關節。\n\n標準寫法：下頜骨 / mandible。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 66,
+          "y": 90,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 65,
       "type": "fill",
-      "stem": "請寫出「頦孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "頦孔 / mental foramen",
       "accept": [
         "頦孔 / mental foramen"
       ],
-      "explain": "位於下頜骨前外側，圖譜標示的孔。 標準寫法：頦孔 / mental foramen。",
+      "explain": "下頜骨**前外側、約在前臼齒下方**的小孔是**頦孔**，頦神經與血管由此穿出。\n\n標準寫法：頦孔 / mental foramen。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 84.5,
+          "y": 91.8,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 66,
       "type": "fill",
-      "stem": "請寫出「顳骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "顳骨 / temporal bone",
       "accept": [
         "顳骨 / temporal bone"
       ],
-      "explain": "顱骨側部骨，圖譜標出乳突、莖突、下頜窩等。 標準寫法：顳骨 / temporal bone。",
+      "explain": "耳朵上方、鱗狀縫（弧形縫）下方的扇形骨片是**顳骨**（鱗部）。外耳道、乳突、莖突也都屬於顳骨。\n\n標準寫法：顳骨 / temporal bone。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 40,
+          "y": 43,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 67,
       "type": "fill",
-      "stem": "請寫出「鋤骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "鋤骨 / vomer",
       "accept": [
-        "鋤骨 / vomer"
+        "鋤骨 / vomer",
+        "犁骨 / vomer"
       ],
-      "explain": "構成鼻中隔骨性部分之一。 標準寫法：鋤骨 / vomer。",
+      "explain": "頭骨前面觀：鼻中隔**後下部**的薄骨板是**鋤骨**（犁骨）；上部則是篩骨垂直板。\n\n標準寫法：鋤骨 / vomer。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-anterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 49.0,
+          "y": 58.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 68,
       "type": "fill",
-      "stem": "請寫出「鼻中隔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點所在、把鼻腔分成左右兩半的整片構造叫什麼？請寫出中文名與英文名（中文與英文都要寫）",
       "answer": "鼻中隔 / nasal septum",
       "accept": [
         "鼻中隔 / nasal septum"
       ],
-      "explain": "分隔左右鼻腔的中線構造。 標準寫法：鼻中隔 / nasal septum。",
+      "explain": "頭骨前面觀：把鼻腔分成左右兩半的是**鼻中隔**；骨性部分上為**篩骨垂直板**、下為**鋤骨**，前方還有軟骨。\n\n標準寫法：鼻中隔 / nasal septum。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-anterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 50.2,
+          "y": 54.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 69,
       "type": "fill",
-      "stem": "請寫出「篩骨垂直板」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "篩骨垂直板 / perpendicular plate of ethmoid",
       "accept": [
         "篩骨垂直板 / perpendicular plate of ethmoid",
         "篩骨垂直板 / perpendicular plate of ethmoid bone"
       ],
-      "explain": "構成鼻中隔上部的骨性部分。 標準寫法：篩骨垂直板 / perpendicular plate of ethmoid。",
+      "explain": "頭骨前面觀：鼻中隔**上部**的骨板是**篩骨垂直板**；下接鋤骨。\n\n標準寫法：篩骨垂直板 / perpendicular plate of ethmoid。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-anterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 51.3,
+          "y": 50.8,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 71,
       "type": "fill",
-      "stem": "請寫出「莖突」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "莖突 / styloid process",
       "accept": [
         "莖突 / styloid process"
       ],
-      "explain": "顳骨向下突出的細長突起。 標準寫法：莖突 / styloid process。",
+      "explain": "外耳道**前下方**、細長尖尖向下伸的骨突是**莖突**。和它後方圓鈍的乳突比較：莖突細長，乳突粗圓。\n\n標準寫法：莖突 / styloid process。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 50.5,
+          "y": 75,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 72,
       "type": "fill",
-      "stem": "請寫出「顴骨突（顳骨）」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指的是顴弓上的哪一個骨突？請寫出它的中文名與英文名（中文與英文都要寫）",
       "answer": "顴骨突（顳骨） / zygomatic process of temporal bone",
       "accept": [
         "顴骨突（顳骨） / zygomatic process of temporal bone",
-        "顳骨顴突 / zygomatic process of temporal bone"
+        "顳骨顴突 / zygomatic process of temporal bone",
+        "顴突 / zygomatic process of temporal bone",
+        "顴突 / zygomatic process"
       ],
-      "explain": "顳骨向前延伸、參與形成顴弓的突起。 標準寫法：顴骨突（顳骨） / zygomatic process of temporal bone。",
+      "explain": "顴弓**後段**、從顳骨往前伸的是**顳骨的顴突**（zygomatic process of temporal bone）。顴弓＝顳骨顴突（後）＋顴骨顳突（前）。\n\n標準寫法：顴骨突（顳骨） / zygomatic process of temporal bone。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 56,
+          "y": 61,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 73,
       "type": "fill",
-      "stem": "請寫出「顳突（顴骨）」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指的是顴弓上的哪一個骨突？請寫出它的中文名與英文名（中文與英文都要寫）",
       "answer": "顳突（顴骨） / temporal process of zygomatic bone",
       "accept": [
         "顳突（顴骨） / temporal process of zygomatic bone",
-        "顴骨顳突 / temporal process of zygomatic bone"
+        "顴骨顳突 / temporal process of zygomatic bone",
+        "顳突 / temporal process of zygomatic bone",
+        "顳突 / temporal process"
       ],
-      "explain": "顴骨向後延伸、參與形成顴弓的突起。 標準寫法：顳突（顴骨） / temporal process of zygomatic bone。",
+      "explain": "顴弓**前段**、從顴骨往後伸的是**顴骨的顳突**（temporal process of zygomatic bone）。顴弓＝顳骨顴突（後）＋顴骨顳突（前）。\n\n標準寫法：顳突（顴骨） / temporal process of zygomatic bone。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 70,
+          "y": 61.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 74,
       "type": "fill",
-      "stem": "請寫出「鱗狀縫」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "鱗狀縫 / squamous suture",
       "accept": [
-        "鱗狀縫 / squamous suture"
+        "鱗狀縫 / squamous suture",
+        "鱗狀縫 / squamosal suture"
       ],
-      "explain": "顳骨與頂骨之間的顱縫。 標準寫法：鱗狀縫 / squamous suture。",
+      "explain": "耳朵上方那條**弧形**的縫，是顳骨鱗部和頂骨之間的**鱗狀縫**。辨認：頭頂前段縱走的鋸齒縫是冠狀縫，後腦的是人字縫，耳上方弧形的是鱗狀縫。\n\n標準寫法：鱗狀縫 / squamous suture。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 42,
+          "y": 32.3,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 75,
       "type": "fill",
-      "stem": "請寫出「切牙孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "切牙孔 / incisive foramen",
       "accept": [
-        "切牙孔 / incisive foramen"
+        "切牙孔 / incisive foramen",
+        "門齒孔 / incisive foramen"
       ],
-      "explain": "硬顎前部的孔。 標準寫法：切牙孔 / incisive foramen。",
+      "explain": "顱底外面觀（上方為牙齒／前方）：門齒正後方、硬顎**最前端中線**的小孔是**切牙孔**（門齒孔），鼻腭神經由此通過。\n\n標準寫法：切牙孔 / incisive foramen。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-external.jpg"
+      ],
+      "marks": [
+        {
+          "x": 50.0,
+          "y": 9.4,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 76,
       "type": "fill",
-      "stem": "請寫出「腭骨水平板」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "腭骨水平板 / horizontal plate of palatine bone",
       "accept": [
         "腭骨水平板 / horizontal plate of palatine bone"
       ],
-      "explain": "構成硬顎後部。 標準寫法：腭骨水平板 / horizontal plate of palatine bone。",
+      "explain": "顱底外面觀（上方為牙齒／前方）：硬顎**後 1/3** 的骨板是**腭骨水平板**；前面接上頜骨腭突。\n\n標準寫法：腭骨水平板 / horizontal plate of palatine bone。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-external.jpg"
+      ],
+      "marks": [
+        {
+          "x": 59.7,
+          "y": 26.6,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 77,
       "type": "fill",
-      "stem": "請寫出「上頜骨腭突」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "上頜骨腭突 / palatine process of maxilla",
       "accept": [
         "上頜骨腭突 / palatine process of maxilla"
       ],
-      "explain": "構成硬顎前部。 標準寫法：上頜骨腭突 / palatine process of maxilla。",
+      "explain": "顱底外面觀（上方為牙齒／前方）：硬顎**前 2/3** 的骨板是**上頜骨腭突**；後面接腭骨水平板。\n\n標準寫法：上頜骨腭突 / palatine process of maxilla。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-base-external.jpg"
+      ],
+      "marks": [
+        {
+          "x": 52.2,
+          "y": 16.9,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 78,
       "type": "fill",
-      "stem": "請寫出「頂骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "頂骨 / parietal bone",
       "accept": [
         "頂骨 / parietal bone"
       ],
-      "explain": "構成顱蓋側上部的骨。 標準寫法：頂骨 / parietal bone。",
+      "explain": "頭頂側面、冠狀縫後方、人字縫前方、鱗狀縫上方的大片骨頭是**頂骨**（左右各一）。\n\n標準寫法：頂骨 / parietal bone。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 38,
+          "y": 18,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 79,
       "type": "fill",
-      "stem": "請寫出「頂骨孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "頂骨孔 / parietal foramen",
       "accept": [
         "頂骨孔 / parietal foramen",
         "頂骨孔 / parietal foramina"
       ],
-      "explain": "頂骨上的小孔，圖版有標示。 標準寫法：頂骨孔 / parietal foramen。",
+      "explain": "頭骨後面觀：矢狀縫**兩旁、靠後方**的小孔是**頂骨孔**，導靜脈通過。\n\n標準寫法：頂骨孔 / parietal foramen。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-posterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 44.9,
+          "y": 8.6,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 80,
       "type": "fill",
-      "stem": "請寫出「外枕隆凸」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "外枕隆凸 / external occipital protuberance",
       "accept": [
         "外枕隆凸 / external occipital protuberance"
       ],
-      "explain": "枕骨外表面的中線骨性隆起。 標準寫法：外枕隆凸 / external occipital protuberance。",
+      "explain": "頭骨後面觀：枕骨**正中**向後突出的隆起是**外枕隆凸**（摸後腦勺最凸的那一點）。\n\n標準寫法：外枕隆凸 / external occipital protuberance。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-posterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 47.8,
+          "y": 65.4,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 81,
       "type": "fill",
-      "stem": "請寫出「人字縫」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "人字縫 / lambdoid suture",
       "accept": [
-        "人字縫 / lambdoid suture"
+        "人字縫 / lambdoid suture",
+        "人字縫 / lambdoidal suture"
       ],
-      "explain": "頂骨與枕骨之間的顱縫。 標準寫法：人字縫 / lambdoid suture。",
+      "explain": "後腦勺、頂骨和枕骨之間斜向的鋸齒縫是**人字縫**（兩側合起來像「人」字）。\n\n標準寫法：人字縫 / lambdoid suture。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 8.7,
+          "y": 38,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 82,
       "type": "fill",
-      "stem": "請寫出「矢狀縫」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "矢狀縫 / sagittal suture",
       "accept": [
         "矢狀縫 / sagittal suture"
       ],
-      "explain": "左右頂骨之間的中線顱縫。 標準寫法：矢狀縫 / sagittal suture。",
+      "explain": "頭骨上面觀：頭頂**正中線**、左右頂骨之間前後走的鋸齒縫是**矢狀縫**；下方橫走的是冠狀縫。\n\n標準寫法：矢狀縫 / sagittal suture。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-superior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 44.1,
+          "y": 45.5,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 83,
       "type": "fill",
-      "stem": "請寫出「冠狀縫」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "冠狀縫 / coronal suture",
       "accept": [
         "冠狀縫 / coronal suture"
       ],
-      "explain": "額骨與頂骨之間的顱縫。 標準寫法：冠狀縫 / coronal suture。",
+      "explain": "頭頂前段、額骨和頂骨之間的鋸齒縫是**冠狀縫**。側面觀看起來是一條從頭頂往下的縱向鋸齒線。\n\n標準寫法：冠狀縫 / coronal suture。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 61.5,
+          "y": 15,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 84,
       "type": "fill",
-      "stem": "請寫出「枕骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "枕骨 / occipital bone",
       "accept": [
         "枕骨 / occipital bone"
       ],
-      "explain": "構成顱骨後下部，具有枕骨大孔與枕骨髁。 標準寫法：枕骨 / occipital bone。",
+      "explain": "人字縫**後下方**、構成後腦勺的是**枕骨**；它底部有枕骨大孔和枕骨髁。\n\n標準寫法：枕骨 / occipital bone。（圖：Servier Medical Art，CC BY 4.0）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/skull-lateral.png"
+      ],
+      "marks": [
+        {
+          "x": 6,
+          "y": 45,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 85,
       "type": "fill",
-      "stem": "請寫出「下頜孔」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "下頜孔 / mandibular foramen",
       "accept": [
         "下頜孔 / mandibular foramen"
       ],
-      "explain": "下頜骨內側面的孔，圖版有標示。 標準寫法：下頜孔 / mandibular foramen。",
+      "explain": "頭骨後面觀：下頜支**內側面**中央的孔是**下頜孔**，下齒槽神經與血管由此進入下頜管。\n\n標準寫法：下頜孔 / mandibular foramen。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-skull-posterior.jpg"
+      ],
+      "marks": [
+        {
+          "x": 78.0,
+          "y": 77.3,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 86,
       "type": "fill",
-      "stem": "請寫出「鼓部（顳骨）」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "鼓部（顳骨） / tympanic part of temporal bone",
       "accept": [
         "鼓部（顳骨） / tympanic part of temporal bone",
-        "顳骨鼓部 / tympanic part of temporal bone"
+        "顳骨鼓部 / tympanic part of temporal bone",
+        "鼓部 / tympanic part"
       ],
-      "explain": "顳骨構成外耳道周圍的部分。 標準寫法：鼓部（顳骨） / tympanic part of temporal bone。",
+      "explain": "右顳骨外側觀：外耳道**前下方**圍成外耳道壁的那一片是顳骨的**鼓部**。\n\n標準寫法：鼓部（顳骨） / tympanic part of temporal bone。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-temporal-bone.jpg"
+      ],
+      "marks": [
+        {
+          "x": 38.5,
+          "y": 79.2,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 87,
       "type": "fill",
-      "stem": "請寫出「關節結節」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "關節結節 / articular tubercle",
       "accept": [
         "關節結節 / articular tubercle"
       ],
-      "explain": "顳骨顴突根部附近、顳下頜關節前方的骨性隆起。 標準寫法：關節結節 / articular tubercle。",
+      "explain": "右顳骨外側觀：下頜窩**前方**、顴突根部下面的圓丘是**關節結節**；張大嘴時下頜髁會滑到它前方。\n\n標準寫法：關節結節 / articular tubercle。（圖：課堂講義《1.骨質眼窩＋圖譜》，已移除文字標籤，僅供個人複習）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/atlas-temporal-bone.jpg"
+      ],
+      "marks": [
+        {
+          "x": 54.0,
+          "y": 80.4,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 88,
       "type": "fill",
-      "stem": "請寫出「舌骨」的標準英文名稱；答案仍須同時列中文與英文。（中文與英文都要寫）",
+      "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
       "answer": "舌骨 / hyoid bone",
       "accept": [
         "舌骨 / hyoid bone",
         "舌骨 / hyoid"
       ],
-      "explain": "圖譜頁1標示的舌骨；屬頸部骨骼，不參與眼眶。 標準寫法：舌骨 / hyoid bone。",
+      "explain": "頸部唯一不和其他骨頭形成關節的 U 形骨是**舌骨**；標記點在它的**體部**，兩側往後伸的是大角、小角。\n\n標準寫法：舌骨 / hyoid bone。（圖：Hariadhi，Wikimedia Commons「Hyoid bone hariadhi.svg」，CC BY-SA 4.0，已移除標籤）",
       "tags": [
-        "顱骨圖譜名詞",
-        "中英文名詞"
+        "看圖辨識",
+        "顱骨圖譜名詞"
       ],
-      "level": 1
+      "level": 1,
+      "img": [
+        "img/eye-anat-gallery/hyoid.png"
+      ],
+      "marks": [
+        {
+          "x": 50.0,
+          "y": 81.9,
+          "label": "1"
+        }
+      ]
     },
     {
       "n": 89,

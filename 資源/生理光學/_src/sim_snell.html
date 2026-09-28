@@ -1,0 +1,53 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;padding:10px;font:15px system-ui,"Microsoft JhengHei",sans-serif;background:#fbf7ec;color:#2e2116}
+.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:5px 0}
+svg{width:100%;height:auto;border:1px solid #d8cfb8;border-radius:8px}
+.big{font-size:18px;font-weight:bold;color:#8a3b12}
+.note{background:#fff3cf;padding:6px 10px;border-radius:6px}
+button{font:inherit;padding:3px 10px;border-radius:6px;border:1px solid #b9a77f;background:#fff}
+input[type=range]{width:200px}
+.small{font-size:14px;color:#6b5a45}
+</style></head><body>
+<div class="note">觀察重點：角度一律從法線量起。進入較大 n 的介質 → 偏向法線；進入較小 n 的介質 → 偏離法線，入射角 ≥ 臨界角時全反射。</div>
+<svg id="s" viewBox="0 0 800 340"></svg>
+<div class="row">
+<label>上方 n₁ <input id="n1" type="range" min="1" max="2" step="0.01" value="1"> <b id="n1v"></b></label>
+<label>下方 n₂ <input id="n2" type="range" min="1" max="2" step="0.01" value="1.33"> <b id="n2v"></b></label>
+</div>
+<div class="row"><label>入射角 θ₁ <input id="a" type="range" min="0" max="89" value="40"> <b id="av"></b></label>
+<button data-p="1,1.33">空氣→水</button><button data-p="1.33,1">水→空氣</button><button data-p="1.5,1">玻璃→空氣</button><button data-p="1,1.5">空氣→玻璃</button></div>
+<div class="big" id="out"></div>
+<div id="msg"></div>
+<div class="small">公式：n₁ sin θ₁ = n₂ sin θ₂；臨界角 sin θc = n₂ / n₁（只在 n₁ &gt; n₂ 時存在）；近軸：n₁θ₁ ≈ n₂θ₂</div>
+<script>
+function $(i){return document.getElementById(i)}
+var R=Math.PI/180;
+function ar(x1,y1,x2,y2,c,w){var mx=(x1+x2)/2,my=(y1+y2)/2,a=Math.atan2(y2-y1,x2-x1),L=9;
+return '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="'+c+'" stroke-width="'+w+'"/><polygon fill="'+c+'" points="'+(mx+L*Math.cos(a))+','+(my+L*Math.sin(a))+' '+(mx-L*Math.cos(a)+5*Math.sin(a))+','+(my-L*Math.sin(a)-5*Math.cos(a))+' '+(mx-L*Math.cos(a)-5*Math.sin(a))+','+(my-L*Math.sin(a)+5*Math.cos(a))+'"/>';}
+function draw(){
+var n1=+$('n1').value,n2=+$('n2').value,t1=+$('a').value,ox=400,oy=170,L=190,o='';
+$('n1v').textContent=n1.toFixed(2);$('n2v').textContent=n2.toFixed(2);$('av').textContent=t1+'°';
+function shade(v){var k=Math.round(255-(v-1)*120);return 'rgb('+k+','+(k+5>255?255:k+5)+',255)'}
+o+='<rect x="0" y="0" width="800" height="170" fill="'+shade(n1)+'"/><rect x="0" y="170" width="800" height="170" fill="'+shade(n2)+'"/>';
+o+='<line x1="0" y1="170" x2="800" y2="170" stroke="#444" stroke-width="2"/>';
+o+='<line x1="400" y1="0" x2="400" y2="340" stroke="#555" stroke-dasharray="6 5"/><text x="408" y="18" font-size="14">法線</text><text x="700" y="162" font-size="14">介面</text>';
+o+='<text x="12" y="24" font-size="15">n₁ = '+n1.toFixed(2)+'</text><text x="12" y="330" font-size="15">n₂ = '+n2.toFixed(2)+'</text>';
+var s1=Math.sin(t1*R),sx=ox-L*s1,sy=oy-L*Math.cos(t1*R),x=n1*s1/n2,tir=x>1;
+o+=ar(sx,sy,ox,oy,'#c0392b',3);
+o+=ar(ox,oy,ox+L*s1,oy-L*Math.cos(t1*R),'#e08a00',tir?3:1.5);
+var msg='',t2;
+if(!tir){t2=Math.asin(x)/R;o+=ar(ox,oy,ox+L*Math.sin(t2*R),oy+L*Math.cos(t2*R),'#1d6fb8',3);
+ o+='<text x="'+(ox+12+60*Math.sin(t2*R))+'" y="'+(oy+70)+'" font-size="14" fill="#1d6fb8">θ₂</text>';}
+o+='<text x="'+(ox-30-50*s1)+'" y="'+(oy-60)+'" font-size="14" fill="#c0392b">θ₁</text>';
+$('s').innerHTML=o;
+var tc=n1>n2?Math.asin(n2/n1)/R:null;
+if(tir){$('out').textContent='θ₁ = '+t1+'°：全反射！（沒有折射光）';msg='n₁ sinθ₁ / n₂ = '+x.toFixed(3)+' > 1，找不到折射角。';}
+else{$('out').textContent='θ₁ = '+t1+'°　→　θ₂ = '+t2.toFixed(1)+'°';
+ msg=n2>n1?'進入較大折射率（較慢）的介質：折射光偏向法線（θ₂ < θ₁）。':(n2<n1?'進入較小折射率（較快）的介質：折射光偏離法線（θ₂ > θ₁）。':'折射率相同：不偏折。');
+ if(t1>0){var p=n1*t1/n2;msg+='　近軸近似 θ₂ ≈ n₁θ₁/n₂ = '+p.toFixed(1)+'°（誤差 '+Math.abs(p-t2).toFixed(1)+'°）';}}
+if(tc!==null)msg+='　臨界角 θc = '+tc.toFixed(1)+'°';else msg+='　（n₁ ≤ n₂：不會全反射）';
+$('msg').textContent=msg;}
+['n1','n2','a'].forEach(function(i){$(i).oninput=draw});
+document.querySelectorAll('button').forEach(function(b){b.onclick=function(){var p=b.dataset.p.split(',');$('n1').value=p[0];$('n2').value=p[1];draw();}});
+draw();
+</script></body></html>

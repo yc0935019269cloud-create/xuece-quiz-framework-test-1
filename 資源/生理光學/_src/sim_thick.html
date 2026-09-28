@@ -1,0 +1,65 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;padding:10px;font:15px system-ui,"Microsoft JhengHei",sans-serif;background:#fbf7ec;color:#2e2116}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:4px 0}
+svg{width:100%;height:auto;background:#fff;border:1px solid #d8cfb8;border-radius:8px}
+.note{background:#fff3cf;padding:6px 10px;border-radius:6px}
+input[type=range]{width:170px}
+table{border-collapse:collapse;font-size:14px}
+td{border:1px solid #d8cfb8;padding:2px 7px;background:#fff}
+#tip{font-weight:bold;color:#8a3b12}
+.small{font-size:14px;color:#6b5a45}
+</style></head><body>
+<div class="note">觀察重點：厚度讓光在鏡片內「走一段路」，所以 Pe ≠ P₁ + P₂，而且 Pe、Pv、Pf 回答的是不同問題；主平面 H₁、H₂ 會跟著移動。</div>
+<svg id="s" viewBox="0 0 900 300"></svg>
+<div class="row">
+<label>P₁ <input id="p1" type="range" min="-20" max="30" step="0.5" value="16"> <b id="p1v"></b></label>
+<label>P₂ <input id="p2" type="range" min="-20" max="20" step="0.5" value="-2"> <b id="p2v"></b></label>
+</div><div class="row">
+<label>中心厚度 d <input id="d" type="range" min="0" max="30" step="0.25" value="11.25"> <b id="dv"></b></label>
+<label>折射率 n <input id="n" type="range" min="1.4" max="1.8" step="0.01" value="1.5"> <b id="nv"></b></label>
+</div>
+<table><tr><td>d̄ = d/n</td><td id="db"></td><td>P₁ + P₂（薄透鏡近似）</td><td id="thin"></td></tr>
+<tr><td>Pe = P₁ + P₂ − d̄P₁P₂</td><td id="pe"></td><td>f₂ = 1/Pe（由 H₂ 量）</td><td id="f2"></td></tr>
+<tr><td>Pv = Pe / (1 − d̄P₁)</td><td id="pv"></td><td>fb = 1/Pv（由後頂點量）</td><td id="fb"></td></tr>
+<tr><td>Pf = Pe / (1 − d̄P₂)</td><td id="pf"></td><td>ff = −1/Pf（由前頂點量）</td><td id="ff"></td></tr>
+<tr><td>L₁H₁ = ff − f₁</td><td id="h1"></td><td>LbH₂ = fb − f₂</td><td id="h2"></td></tr></table>
+<div id="tip"></div>
+<div class="small">空氣中厚透鏡，光由左向右；d̄ 以公尺代入公式。圖中：紅線為平行入射光的實際路徑，虛線延長交點落在 H₂；空氣中 N₁ = H₁、N₂ = H₂。</div>
+<script>
+function $(i){return document.getElementById(i)}
+var X0=380,SC=2.5,Y0=160;
+function X(mm){return X0+mm*SC}
+function fmt(v,u){if(!isFinite(v))return '∞';return (v>0?'+':'')+v.toFixed(2)+(u||'')}
+function draw(){
+var P1=+$('p1').value,P2=+$('p2').value,d=+$('d').value,n=+$('n').value,db=d/1000/n;
+$('p1v').textContent=fmt(P1,' D');$('p2v').textContent=fmt(P2,' D');$('dv').textContent=d.toFixed(2)+' mm';$('nv').textContent=n.toFixed(2);
+var Pe=P1+P2-db*P1*P2,a1=1-db*P1,a2=1-db*P2,Pv=Math.abs(a1)<1e-9?Infinity:Pe/a1,Pf=Math.abs(a2)<1e-9?Infinity:Pe/a2;
+var af=Math.abs(Pe)<1e-6,f2=af?Infinity:1000/Pe,fb=(Pv===0||!isFinite(Pv))?Infinity:1000/Pv,ff=(Pf===0||!isFinite(Pf))?Infinity:-1000/Pf;
+var L1H1=af?NaN:ff+f2,LbH2=af?NaN:fb-f2;
+$('db').textContent=(db*1000).toFixed(2)+' mm = '+db.toFixed(5)+' m';$('thin').textContent=fmt(P1+P2,' D');
+$('pe').textContent=fmt(Pe,' D');$('pv').textContent=fmt(Pv,' D');$('pf').textContent=fmt(Pf,' D');
+$('f2').textContent=af?'∞（無焦系統）':fmt(f2/10,' cm');$('fb').textContent=fmt(fb/10,' cm');$('ff').textContent=fmt(ff/10,' cm');
+$('h1').textContent=isNaN(L1H1)?'—':fmt(L1H1/10,' cm');$('h2').textContent=isNaN(LbH2)?'—':fmt(LbH2/10,' cm');
+var o='<line x1="0" y1="'+Y0+'" x2="900" y2="'+Y0+'" stroke="#999"/>';
+var xa=X(0),xb=X(d),b1=P1>0?-10:P1<0?10:0,b2=P2>0?10:P2<0?-10:0,top=Y0-95,bot=Y0+95;
+o+='<path d="M'+xa+' '+top+' Q'+(xa+2*b1)+' '+Y0+' '+xa+' '+bot+' L'+xb+' '+bot+' Q'+(xb+2*b2)+' '+Y0+' '+xb+' '+top+' Z" fill="#dcebf8" stroke="#1d6fb8" stroke-width="2"/>';
+o+='<text x="'+(xa-18)+'" y="'+(bot+18)+'" font-size="13">L₁</text><text x="'+(xb+2)+'" y="'+(bot+18)+'" font-size="13">Lb</text>';
+function vline(mm,lab,c,dx){var x=X(mm);if(x<5||x>895)return '';return '<line x1="'+x+'" y1="40" x2="'+x+'" y2="280" stroke="'+c+'" stroke-dasharray="6 5"/><text x="'+(x+dx)+'" y="36" font-size="14" fill="'+c+'">'+lab+'</text>'}
+function pt(mm,lab){var x=X(mm);if(!isFinite(mm)||x<5||x>895)return '';return '<circle cx="'+x+'" cy="'+Y0+'" r="4"/><text x="'+(x-8)+'" y="'+(Y0+20)+'" font-size="14">'+lab+'</text>'}
+if(!af){var h1l=L1H1<=d+LbH2;o+=vline(L1H1,'H₁','#7a1fa2',h1l?-22:3);o+=vline(d+LbH2,'H₂','#1e8c4e',h1l?3:-22);o+=pt(ff,'F₁');o+=pt(d+fb,'F₂');}
+var y1=60,y2=y1*a1;
+o+='<line x1="0" y1="'+(Y0-y1)+'" x2="'+xa+'" y2="'+(Y0-y1)+'" stroke="#c0392b" stroke-width="2"/>';
+o+='<line x1="'+xa+'" y1="'+(Y0-y1)+'" x2="'+xb+'" y2="'+(Y0-y2)+'" stroke="#c0392b" stroke-width="2"/>';
+if(!af&&isFinite(fb)){var xF=X(d+fb),k=(0-y2)/(xF-xb);
+ o+='<line x1="'+xb+'" y1="'+(Y0-y2)+'" x2="900" y2="'+(Y0-(y2+k*(900-xb)))+'" stroke="#c0392b" stroke-width="2"/>';
+ var xH=xb+(y1-y2)/k;o+='<line x1="'+xb+'" y1="'+(Y0-y2)+'" x2="'+xH+'" y2="'+(Y0-y1)+'" stroke="#c0392b" stroke-dasharray="4 4"/>';
+ o+='<line x1="'+xa+'" y1="'+(Y0-y1)+'" x2="'+xH+'" y2="'+(Y0-y1)+'" stroke="#c0392b" stroke-dasharray="4 4"/>';
+ if(fb<0)o+='<line x1="'+xb+'" y1="'+(Y0-y2)+'" x2="'+xF+'" y2="'+Y0+'" stroke="#c0392b" stroke-dasharray="2 4"/>';}
+else o+='<line x1="'+xb+'" y1="'+(Y0-y2)+'" x2="900" y2="'+(Y0-y2)+'" stroke="#c0392b" stroke-width="2"/>';
+$('s').innerHTML=o;
+var t='';if(af)t='Pe = 0：無焦系統（平行光進、平行光出）。';
+else{var pr=P1*P2;t=pr>0?'P₁P₂ > 0：厚度項為負，增加厚度使 Pe 降低。':pr<0?'P₁P₂ < 0：厚度項為正，增加厚度使 Pe 增加。':'有一面為平面：Pe 不隨厚度改變，但 Pv 或 Pf 與主平面仍會改變。';
+ t+=' 與薄透鏡近似相差 '+Math.abs(Pe-(P1+P2)).toFixed(2)+' D。'}
+$('tip').textContent=t;}
+['p1','p2','d','n'].forEach(function(i){$(i).oninput=draw});draw();
+</script></body></html>
