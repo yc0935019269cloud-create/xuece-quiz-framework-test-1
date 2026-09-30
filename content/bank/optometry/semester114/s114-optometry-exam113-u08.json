@@ -1,0 +1,73 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam113-u08",
+    "subject": "optometry",
+    "name": "立體視覺：深度線索、視差與檢測｜113 年國考",
+    "year": 113,
+    "path": [
+      "114 大一下",
+      "113 年國考",
+      "視光學",
+      "第08單元 立體視覺：深度線索、視差與檢測"
+    ],
+    "order": 8,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0417",
+      "type": "single",
+      "stem": "關於各種立體視測驗的比較，下列何者錯誤？",
+      "choices": [
+        "TNO 測試相比其它類型測試，幾乎可讓單眼線索完全消失",
+        "對於6 個月至4 歲的兒童，需要配戴測試眼鏡的測驗可能難以配合，可嘗試使用Titmus 蒼蠅立體本",
+        "Frisby 立體視是各種測驗中，少數真的有深度落差的測驗項目",
+        "Lang 立體視可檢測是否具有立體視覺，但不適合檢測立體視能力是否足夠"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n幼兒立體視工具選擇\n\n**白話理解**\nTNO幾乎無單眼線索；Frisby有真深度；Lang適合篩查有無立體視但量化有限。抗拒戴鏡可選Lang或Frisby。\n\n**口訣**\n不戴鏡選Lang/Frisby，不是Titmus。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n錯誤。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\驗光學概要\\113年驗光生普考.pdf；原題編號 15；舊 ID opt-q0417",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0417",
+      "source_number": "15",
+      "source_year": "113",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "幼兒立體視工具選擇",
+        "simple": "TNO幾乎無單眼線索；Frisby有真深度；Lang適合篩查有無立體視但量化有限。抗拒戴鏡可選Lang或Frisby。",
+        "memory": "不戴鏡選Lang/Frisby，不是Titmus。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

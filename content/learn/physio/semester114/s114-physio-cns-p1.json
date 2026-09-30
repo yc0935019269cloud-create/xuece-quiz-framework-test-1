@@ -1,0 +1,793 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-physio-cns-p1",
+  "subject": "physio",
+  "unit": "第13單元 中樞神經系統與周邊神經系統",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "生理學",
+    "第13單元 中樞神經系統與周邊神經系統"
+  ],
+  "title": "中樞神經系統與周邊神經系統（1）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://lustrous-malasada-6d28a9.netlify.app/",
+  "level": 2,
+  "minutes": 75,
+  "order": 13,
+  "source": "https://lustrous-malasada-6d28a9.netlify.app/",
+  "tags": [
+    "中樞神經系統與周邊神經系統"
+  ],
+  "lessons": [
+    {
+      "id": "cns-overview-1",
+      "title": "第 1 站：神經系統三特性與 CNS/PNS 的界線（1）",
+      "goals": [
+        "解釋神經系統的三個基本特性",
+        "解釋★CNS vs PNS：只要一部分在周邊就算 PNS",
+        "解釋訊號方向：afferent / efferent 與三大功能"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 1 站：神經系統三特性與 CNS/PNS 的界線",
+          "body": "神經系統有三個基本特性；中樞與周邊的界線有一條嚴格定義：只要 neuron 任何一部分在周邊，整顆就算 PNS。\n\n- 先記神經系統的三個基本特性（與肌肉的差別）。\n- 把 CNS vs PNS 的嚴格定義記死（最常考）。\n- 認得訊號方向詞 afferent/efferent 與三大功能。\n- 把 PNS 再分成 somatic / autonomic / enteric。"
+        },
+        {
+          "type": "card",
+          "title": "神經系統的三個基本特性",
+          "body": "**連到前一觀念**\n先把神經組織和其他組織區分開來。\n\n**觀念**\n三特性：① excitability（可興奮性）——能產生動作電位的組織才叫 excitable tissue（神經與肌肉都算）；② 能產生並長距離傳遞 action potential；③ 功能是調控器官、讓細胞彼此溝通（不是收縮）。\n\n**為什麼**\n前兩點神經和肌肉都有；第三點是神經和肌肉最大的差別：肌肉產生 AP 是為了收縮做工，神經產生 AP 是為了傳遞、整合訊息、控制身體。神經系統 ~2 kg、約 3% 體重、大部分是水，所以對缺水/缺氧很敏感（大出血優先供血給心與腦）。\n\n**考試角度**\n- excitable tissue＝能產生動作電位（神經、肌肉）\n- 神經 vs 肌肉差別：神經是調控/溝通，不是收縮\n- 大出血優先供應：心臟與腦\n\n**英文考句**\n- Excitable tissue = tissue able to generate an action potential (neurons and muscle).\n- Unlike muscle, the main role of a neuron after firing is communication/integration, not contraction.",
+          "keys": [
+            "excitable tissue＝能產生動作電位（神經、肌肉）",
+            "神經 vs 肌肉差別：神經是調控/溝通，不是收縮",
+            "大出血優先供應：心臟與腦"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "In physiology, what is the definition of excitable tissue?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "可興奮組織＝能產生動作電位者，神經與肌肉都算。\n\n正確選項：Tissue capable of generating action potentials。\n三特性：① excitability（可興奮性）——能產生動作電位的組織才叫 excitable tissue（神經與肌肉都算）；② 能產生並長距離傳遞 action potential；③ 功能是調控器官、讓細胞彼此溝通（不是收縮）。\n\n中文對照：question：生理學中『excitable tissue（可興奮組織）』的定義是？\nchoices：- 能產生動作電位的組織\n- 能收縮的組織\n- 含有粒線體的組織\n- 能分裂的組織",
+          "choices": [
+            "Tissue capable of generating action potentials",
+            "Tissue capable of contraction",
+            "Tissue containing mitochondria",
+            "Tissue capable of cell division"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "★CNS vs PNS：只要一部分在周邊就算 PNS",
+          "body": "**連到前一觀念**\n這是整個單元最常考的判斷規則，先記死。\n\n**觀念**\n中樞神經系統 CNS＝brain＋spinal cord（在顱骨、脊椎管內）；其餘為周邊 PNS。嚴格定義：只要一個 neuron 的任何部分在周邊，整顆就算 PNS；要算 CNS，必須所有組成都在中樞。\n\n**為什麼**\n很多神經會跨足兩邊（細胞本體在一邊、axon 在另一邊）。判斷時不要看『大部分在哪』，而是看『有沒有任何一部分在周邊』——有，就是 PNS。\n\n**考試角度**\n- CNS＝brain＋spinal cord；其餘 PNS\n- 規則：任一部分在周邊 → 整顆 PNS\n- 全部都在中樞 → 才算 CNS\n\n**英文考句**\n- If any part of a neuron lies in the periphery, the whole neuron is classified as PNS.\n- A neuron is CNS only if all of its components lie within the CNS (brain + spinal cord).\n\n**易錯與比較**\n別用『細胞本體在哪』判斷中樞/周邊；要用『有沒有任何一部分在周邊』。",
+          "keys": [
+            "CNS＝brain＋spinal cord；其餘 PNS",
+            "規則：任一部分在周邊 → 整顆 PNS",
+            "全部都在中樞 → 才算 CNS"
+          ],
+          "tip": "別用『細胞本體在哪』判斷中樞/周邊；要用『有沒有任何一部分在周邊』。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "A neuron's cell body is in the CNS, but its axon extends into the periphery. How is the neuron classified?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "只要任一部分在周邊，整顆就算 PNS。\n\n正確選項：Peripheral nervous system (PNS)。\n中樞神經系統 CNS＝brain＋spinal cord（在顱骨、脊椎管內）；其餘為周邊 PNS。嚴格定義：只要一個 neuron 的任何部分在周邊，整顆就算 PNS；要算 CNS，必須所有組成都在中樞。\n\n中文對照：question：一個 neuron 細胞本體在中樞、axon 伸到周邊，它屬於？\nchoices：- 周邊神經系統 PNS\n- 中樞神經系統 CNS\n- 兩者皆是\n- 無法歸類",
+          "choices": [
+            "Peripheral nervous system (PNS)",
+            "Central nervous system (CNS)",
+            "Both CNS and PNS",
+            "It cannot be classified"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "訊號方向：afferent / efferent 與三大功能",
+          "body": "**連到前一觀念**\n中樞與周邊之間訊號有方向，名詞要立刻反應。\n\n**觀念**\n周邊→中樞用 afferent / input / sensory；中樞→周邊用 efferent / output / motor。一套神經系統要成立需三大功能：感覺輸入（sensory/afferent）→ 整合（integration）→ 運動輸出（motor/efferent）。\n\n**為什麼**\nafferent 和 efferent 發音很像、最容易混。記法：Afferent＝Arrive（到中樞）、Efferent＝Exit（離中樞）。訊息進來→中樞整合→送出產生反應。\n\n**考試角度**\n- afferent＝input＝sensory：周邊 → 中樞\n- efferent＝output＝motor：中樞 → 周邊\n- 三功能：sensory → integration → motor\n\n**英文考句**\n- Afferent = sensory = input (periphery → CNS); efferent = motor = output (CNS → periphery).\n- A nervous system needs three basic functions: sensory input, integration, and motor output.",
+          "keys": [
+            "afferent＝input＝sensory：周邊 → 中樞",
+            "efferent＝output＝motor：中樞 → 周邊",
+            "三功能：sensory → integration → motor"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "When you see efferent, output, or motor, which direction does the signal travel?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "efferent＝output＝motor＝中樞送往周邊。\n\n正確選項：CNS → periphery。\n周邊→中樞用 afferent / input / sensory；中樞→周邊用 efferent / output / motor。一套神經系統要成立需三大功能：感覺輸入（sensory/afferent）→ 整合（integration）→ 運動輸出（motor/efferent）。\n\n中文對照：question：聽到 efferent / output / motor，訊號方向是？\nchoices：- 中樞 → 周邊\n- 周邊 → 中樞\n- 中樞內部循環\n- 周邊內部循環",
+          "choices": [
+            "CNS → periphery",
+            "Periphery → CNS",
+            "Within the CNS only",
+            "Within the periphery only"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：訊號方向：afferent / efferent 與三大功能",
+          "problem": "When you see efferent, output, or motor, which direction does the signal travel?\n\nA. CNS → periphery\nB. Periphery → CNS\nC. Within the CNS only\nD. Within the periphery only",
+          "steps": [
+            "先確認題目問的主題：訊號方向：afferent / efferent 與三大功能",
+            "周邊→中樞用 afferent / input / sensory；中樞→周邊用 efferent / output / motor。一套神經系統要成立需三大功能：感覺輸入（sensory/afferent）→ 整合（integration）→ 運動輸出（motor/efferent）。",
+            "把判斷依據連回題目：efferent＝output＝motor＝中樞送往周邊。\n\n正確選項：CNS → periphery。\n周邊→中樞用 afferent / input / sensory；中樞→周邊用 efferent / output / motor。一套神經系統要成立需三大功能：感覺輸入（sensory/afferent）→ 整合（integration）→ 運動輸出（motor/efferent）。\n\n中文對照：question：聽到 efferent / output / motor，訊號方向是？\nchoices：- 中樞 → 周邊\n- 周邊 → 中樞\n- 中樞內部循環\n- 周邊內部循環"
+          ],
+          "answer": "CNS → periphery"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 1 站：神經系統三特性與 CNS/PNS 的界線",
+          "qids": [
+            "s114-physio-course114-u13-phys-13-01",
+            "s114-physio-course114-u13-phys-13-02"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "A neuron's cell body is in the CNS, but its axon extends into the periphery. How is the neuron classified?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "只要任一部分在周邊，整顆就算 PNS。\n\n正確選項：Peripheral nervous system (PNS)。\n中樞神經系統 CNS＝brain＋spinal cord（在顱骨、脊椎管內）；其餘為周邊 PNS。嚴格定義：只要一個 neuron 的任何部分在周邊，整顆就算 PNS；要算 CNS，必須所有組成都在中樞。\n\n中文對照：question：一個 neuron 細胞本體在中樞、axon 伸到周邊，它屬於？\nchoices：- 周邊神經系統 PNS\n- 中樞神經系統 CNS\n- 兩者皆是\n- 無法歸類",
+              "choices": [
+                "Peripheral nervous system (PNS)",
+                "Central nervous system (CNS)",
+                "Both CNS and PNS",
+                "It cannot be classified"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "When you see efferent, output, or motor, which direction does the signal travel?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "efferent＝output＝motor＝中樞送往周邊。\n\n正確選項：CNS → periphery。\n周邊→中樞用 afferent / input / sensory；中樞→周邊用 efferent / output / motor。一套神經系統要成立需三大功能：感覺輸入（sensory/afferent）→ 整合（integration）→ 運動輸出（motor/efferent）。\n\n中文對照：question：聽到 efferent / output / motor，訊號方向是？\nchoices：- 中樞 → 周邊\n- 周邊 → 中樞\n- 中樞內部循環\n- 周邊內部循環",
+              "choices": [
+                "CNS → periphery",
+                "Periphery → CNS",
+                "Within the CNS only",
+                "Within the periphery only"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "excitable tissue＝能產生動作電位（神經、肌肉）",
+            "神經 vs 肌肉差別：神經是調控/溝通，不是收縮",
+            "CNS＝brain＋spinal cord；其餘 PNS",
+            "規則：任一部分在周邊 → 整顆 PNS",
+            "afferent＝input＝sensory：周邊 → 中樞",
+            "efferent＝output＝motor：中樞 → 周邊",
+            "三特性：可興奮(能產生 AP)、產生動作電位、調控/溝通(非收縮) → CNS=brain+spinal cord，只要一部分在周邊就算 PNS → afferent/sensory/input(周邊→中樞)、efferent/motor/output(中樞→周邊)、三功能 sensory→integration→motor → PNS 再分 somatic/autonomic/enteric。"
+          ],
+          "flash": [
+            {
+              "front": "神經系統的三個基本特性",
+              "back": "三特性：① excitability（可興奮性）——能產生動作電位的組織才叫 excitable tissue（神經與肌肉都算）；② 能產生並長距離傳遞 action potential；③ 功能是調控器官、讓細胞彼此溝通（不是收縮）。"
+            },
+            {
+              "front": "★CNS vs PNS：只要一部分在周邊就算 PNS",
+              "back": "中樞神經系統 CNS＝brain＋spinal cord（在顱骨、脊椎管內）；其餘為周邊 PNS。嚴格定義：只要一個 neuron 的任何部分在周邊，整顆就算 PNS；要算 CNS，必須所有組成都在中樞。"
+            },
+            {
+              "front": "訊號方向：afferent / efferent 與三大功能",
+              "back": "周邊→中樞用 afferent / input / sensory；中樞→周邊用 efferent / output / motor。一套神經系統要成立需三大功能：感覺輸入（sensory/afferent）→ 整合（integration）→ 運動輸出（motor/efferent）。"
+            },
+            {
+              "front": "In physiology, what is the definition of excitable tissue?",
+              "back": "可興奮組織＝能產生動作電位者，神經與肌肉都算。\n\n正確選項：Tissue capable of generating action potentials。\n三特性：① excitability（可興奮性）——能產生動作電位的組織才叫 excitable tissue（神經與肌肉都算）；② 能產生並長距離傳遞 action potential；③ 功能是調控器官、讓細胞彼此溝通（不是收縮）。\n\n中文對照：question：生理學中『excitable tissue（可興奮組織）』的定義是？\nchoices：- 能產生動作電位的組織\n- 能收縮的組織\n- 含有粒線體的組織\n- 能分裂的組織"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cns-overview-2",
+      "title": "第 1 站：神經系統三特性與 CNS/PNS 的界線（2）",
+      "goals": [
+        "解釋PNS 再分類：somatic / autonomic / enteric"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 1 站：神經系統三特性與 CNS/PNS 的界線",
+          "body": "神經系統有三個基本特性；中樞與周邊的界線有一條嚴格定義：只要 neuron 任何一部分在周邊，整顆就算 PNS。\n\n- 先記神經系統的三個基本特性（與肌肉的差別）。\n- 把 CNS vs PNS 的嚴格定義記死（最常考）。\n- 認得訊號方向詞 afferent/efferent 與三大功能。\n- 把 PNS 再分成 somatic / autonomic / enteric。"
+        },
+        {
+          "type": "card",
+          "title": "PNS 再分類：somatic / autonomic / enteric",
+          "body": "**連到前一觀念**\n把周邊神經系統再切成三套。\n\n**觀念**\n周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n\n**為什麼**\n腸神經為何能獨立？離體的兔子小腸切斷神經血管後仍會蠕動，因為它自己就具備感覺→整合→運動三功能。現在課本多把它放在消化系統講。\n\n**考試角度**\n- somatic：意識可控/可感（conscious）\n- autonomic：意識不可直接控制\n- enteric：自備感覺/整合/運動（離體小腸仍蠕動）\n\n**英文考句**\n- Somatic = under conscious control/sensation; autonomic = not under direct conscious control.\n- The enteric nervous system can independently perform sensory, integrative and motor functions.",
+          "keys": [
+            "somatic：意識可控/可感（conscious）",
+            "autonomic：意識不可直接控制",
+            "enteric：自備感覺/整合/運動（離體小腸仍蠕動）"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "An isolated rabbit intestine continues peristalsis after its nerves and blood vessels are cut. Which system does this best demonstrate?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "腸神經自備感覺/整合/運動，能獨立控制蠕動。\n\n正確選項：Enteric nervous system。\n周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n\n中文對照：question：離體的兔子小腸切斷神經血管後仍能蠕動，最能說明哪一系統？\nchoices：- 腸神經系統 enteric\n- 體神經系統 somatic\n- 中樞神經系統\n- 交感神經系統",
+          "choices": [
+            "Enteric nervous system",
+            "Somatic nervous system",
+            "Central nervous system",
+            "Sympathetic nervous system"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\nAn isolated rabbit intestine continues peristalsis after its nerves and blood vessels are cut. Which system does this best demonstrate?\n\nA. Enteric nervous system\nB. Somatic nervous system\nC. Central nervous system\nD. Sympathetic nervous system\n\n**判斷步驟**\n- 先確認題目問的主題：PNS 再分類：somatic / autonomic / enteric\n- 周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n- 把判斷依據連回題目：腸神經自備感覺/整合/運動，能獨立控制蠕動。\n\n正確選項：Enteric nervous system。\n周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n\n中文對照：question：離體的兔子小腸切斷神經血管後仍能蠕動，最能說明哪一系統？\nchoices：- 腸神經系統 enteric\n- 體神經系統 somat",
+          "keys": [
+            "Enteric nervous system"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "Enteric nervous system",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：PNS 再分類：somatic / autonomic / enteric\n- 周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n- 把判斷依據連回題目：腸神經自備感覺/整合/運動，能獨立控制蠕動。\n\n正確選項：Enteric nervous system。\n周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n\n中文對照：question：離體的兔子小腸切斷神經血管後仍能蠕動，最能說明哪一系統？\nchoices：- 腸神經系統 enteric\n- 體神經系統 somatic\n- 中樞神經系統\n- 交感神經系統"
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "ic\n- 中樞神經系統\n- 交感神經系統\n\n**結論與依據**\nEnteric nervous system",
+          "keys": [
+            "Enteric nervous system"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "Enteric nervous system",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：PNS 再分類：somatic / autonomic / enteric\n- 周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n- 把判斷依據連回題目：腸神經自備感覺/整合/運動，能獨立控制蠕動。\n\n正確選項：Enteric nervous system。\n周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n\n中文對照：question：離體的兔子小腸切斷神經血管後仍能蠕動，最能說明哪一系統？\nchoices：- 腸神經系統 enteric\n- 體神經系統 somatic\n- 中樞神經系統\n- 交感神經系統"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：PNS 再分類：somatic / autonomic / enteric",
+          "problem": "An isolated rabbit intestine continues peristalsis after its nerves and blood vessels are cut. Which system does this best demonstrate?\n\nA. Enteric nervous system\nB. Somatic nervous system\nC. Central nervous system\nD. Sympathetic nervous system",
+          "steps": [
+            "先確認題目問的主題：PNS 再分類：somatic / autonomic / enteric",
+            "周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。",
+            "把判斷依據連回題目：腸神經自備感覺/整合/運動，能獨立控制蠕動。\n\n正確選項：Enteric nervous system。\n周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n\n中文對照：question：離體的兔子小腸切斷神經血管後仍能蠕動，最能說明哪一系統？\nchoices：- 腸神經系統 enteric\n- 體神經系統 somatic\n- 中樞神經系統\n- 交感神經系統"
+          ],
+          "answer": "Enteric nervous system"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 1 站：神經系統三特性與 CNS/PNS 的界線",
+          "qids": [
+            "s114-physio-course114-u13-phys-13-04",
+            "s114-physio-course114-u13-phys-13-05"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "An isolated rabbit intestine continues peristalsis after its nerves and blood vessels are cut. Which system does this best demonstrate?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "腸神經自備感覺/整合/運動，能獨立控制蠕動。\n\n正確選項：Enteric nervous system。\n周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n\n中文對照：question：離體的兔子小腸切斷神經血管後仍能蠕動，最能說明哪一系統？\nchoices：- 腸神經系統 enteric\n- 體神經系統 somatic\n- 中樞神經系統\n- 交感神經系統",
+              "choices": [
+                "Enteric nervous system",
+                "Somatic nervous system",
+                "Central nervous system",
+                "Sympathetic nervous system"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "somatic：意識可控/可感（conscious）",
+            "autonomic：意識不可直接控制",
+            "三特性：可興奮(能產生 AP)、產生動作電位、調控/溝通(非收縮) → CNS=brain+spinal cord，只要一部分在周邊就算 PNS → afferent/sensory/input(周邊→中樞)、efferent/motor/output(中樞→周邊)、三功能 sensory→integration→motor → PNS 再分 somatic/autonomic/enteric。",
+            "PNS 再分類：somatic / autonomic / enteric：somatic：意識可控/可感（conscious）",
+            "- 先確認題目問的主題：PNS 再分類：somatic / autonomic / enteric\n- 周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n- 把判斷依據連回題目：腸神經自備感覺/整合/運動，能獨立控制蠕動。\n\n正確選項：Enteric nervous system。\n周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n\n中文對照：question：離體的兔子小腸切斷神經血管後仍能蠕動，最能說明哪一系統？\nchoices：- 腸神經系統 enteric\n- 體神經系統 somatic\n- 中樞神經系統\n- 交感神經系統"
+          ],
+          "flash": [
+            {
+              "front": "PNS 再分類：somatic / autonomic / enteric",
+              "back": "周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：PNS 再分類：somatic / autonomic / enteric\n- 周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n- 把判斷依據連回題目：腸神經自備感覺/整合/運動，能獨立控制蠕動。\n\n正確選項：Enteric nervous system。\n周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n\n中文對照：question：離體的兔子小腸切斷神經血管後仍能蠕動，最能說明哪一系統？\nchoices：- 腸神經系統 enteric\n- 體神經系統 somatic\n- 中樞神經系統\n- 交感神經系統"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：PNS 再分類：somatic / autonomic / enteric\n- 周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n- 把判斷依據連回題目：腸神經自備感覺/整合/運動，能獨立控制蠕動。\n\n正確選項：Enteric nervous system。\n周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n\n中文對照：question：離體的兔子小腸切斷神經血管後仍能蠕動，最能說明哪一系統？\nchoices：- 腸神經系統 enteric\n- 體神經系統 somatic\n- 中樞神經系統\n- 交感神經系統"
+            },
+            {
+              "front": "An isolated rabbit intestine continues peristalsis after its nerves and blood vessels are cut. Which system does this best demonstrate?",
+              "back": "腸神經自備感覺/整合/運動，能獨立控制蠕動。\n\n正確選項：Enteric nervous system。\n周邊神經再分：① somatic（體神經）——意識可控制或感知（如伸手拿東西、閉眼摸出形狀）；② autonomic（自主神經）——意識無法直接控制（如無法用意念馬上加快心跳）；③ enteric（腸神經）——能獨立完成感覺、整合、運動。\n\n中文對照：question：離體的兔子小腸切斷神經血管後仍能蠕動，最能說明哪一系統？\nchoices：- 腸神經系統 enteric\n- 體神經系統 somatic\n- 中樞神經系統\n- 交感神經系統"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cns-classify-1",
+      "title": "第 2 站：用兩個神經元練判斷＋感覺/運動單位（1）",
+      "goals": [
+        "解釋體感覺神經元：本體周邊、terminal 中樞 → PNS",
+        "解釋α motor neuron：本體中樞、axon 周邊 → PNS",
+        "解釋Sensory unit / Motor unit：大小 vs 精細"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 2 站：用兩個神經元練判斷＋感覺/運動單位",
+          "body": "用 DRG 感覺神經元與 α motor neuron 練習中樞/周邊判斷；再認識 sensory unit / motor unit 與『大小 vs 精細』。\n\n- 體感覺神經元：本體在周邊、terminal 在中樞 → 整顆 PNS。\n- α motor neuron：本體在中樞、axon 在周邊 → 整顆 PNS。\n- sensory unit / motor unit 的定義與大小、精細度。\n- CNS / PNS 具體包含哪些（12 腦神經全是 PNS）。"
+        },
+        {
+          "type": "card",
+          "title": "體感覺神經元：本體周邊、terminal 中樞 → PNS",
+          "body": "**連到前一觀念**\n用最常考的感覺神經元練判斷。\n\n**觀念**\n體感覺（痛/觸/壓）神經元走 sensory/afferent pathway，細胞本體在 dorsal root ganglion（DRG，脊髓外＝周邊），axon terminal 進入 spinal cord（中樞）。因為本體在周邊，整顆算 PNS。\n\n**為什麼**\n考試愛拆兩問：『細胞本體在哪？』→ 周邊（DRG）；『axon terminal 在哪？』→ 中樞（脊髓）。但整顆的歸類仍是 PNS（任一部分在周邊就算）。\n\n**考試角度**\n- 細胞本體：DRG（周邊）\n- axon terminal：spinal cord（中樞）\n- 整顆歸類：PNS\n\n**英文考句**\n- A somatosensory neuron has its cell body in the dorsal root ganglion (periphery) and its axon terminal in the spinal cord (CNS), so it is classified as PNS.",
+          "keys": [
+            "細胞本體：DRG（周邊）",
+            "axon terminal：spinal cord（中樞）",
+            "整顆歸類：PNS"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Where is the cell body of a somatic sensory neuron, and how is the entire neuron classified?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "本體在 DRG(周邊)、terminal 在中樞，整顆仍算 PNS。\n\n正確選項：Cell body in the DRG (periphery); neuron belongs to the PNS。\n體感覺（痛/觸/壓）神經元走 sensory/afferent pathway，細胞本體在 dorsal root ganglion（DRG，脊髓外＝周邊），axon terminal 進入 spinal cord（中樞）。因為本體在周邊，整顆算 PNS。\n\n中文對照：question：體感覺神經元的細胞本體與整顆歸類，分別是？\nchoices：- 本體在 DRG(周邊)；整顆屬 PNS\n- 本體在脊髓(中樞)；整顆屬 CNS\n- 本體在 DRG；整顆屬 CNS\n- 本體在腦；整顆屬 PNS",
+          "choices": [
+            "Cell body in the DRG (periphery); neuron belongs to the PNS",
+            "Cell body in the spinal cord (CNS); neuron belongs to the CNS",
+            "Cell body in the DRG; neuron belongs to the CNS",
+            "Cell body in the brain; neuron belongs to the PNS"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "α motor neuron：本體中樞、axon 周邊 → PNS",
+          "body": "**連到前一觀念**\n再用運動神經元練一次，方向剛好相反。\n\n**觀念**\nα motor neuron 控制骨骼肌，細胞本體在 spinal cord ventral horn（中樞），axon 伸到骨骼肌（周邊）。因為 axon 在周邊，整顆仍算 PNS。它的特徵是細胞本體很大。\n\n**為什麼**\n和感覺神經元剛好相反：這次是『本體在中樞、軸突在周邊』，但結論一樣是 PNS——因為規則只看『有沒有任何一部分在周邊』。看到很大的 motor neuron 本體，多半就是 α motor neuron。\n\n**考試角度**\n- 細胞本體：ventral horn（中樞）\n- axon terminal：骨骼肌（周邊）\n- 整顆歸類：PNS；本體大\n\n**英文考句**\n- An α motor neuron has its cell body in the spinal cord ventral horn (CNS) but its axon in the periphery (skeletal muscle) → PNS.\n\n**易錯與比較**\n感覺神經元與 α motor neuron 本體位置相反，但兩者都歸類為 PNS（規則一致）。",
+          "keys": [
+            "細胞本體：ventral horn（中樞）",
+            "axon terminal：骨骼肌（周邊）",
+            "整顆歸類：PNS；本體大"
+          ],
+          "tip": "感覺神經元與 α motor neuron 本體位置相反，但兩者都歸類為 PNS（規則一致）。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Where is the cell body of an α motor neuron, and how is the entire neuron classified?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "本體在 ventral horn(中樞)、axon 到肌肉(周邊)，整顆仍算 PNS。\n\n正確選項：Ventral horn of the spinal cord (CNS); neuron belongs to the PNS。\nα motor neuron 控制骨骼肌，細胞本體在 spinal cord ventral horn（中樞），axon 伸到骨骼肌（周邊）。因為 axon 在周邊，整顆仍算 PNS。它的特徵是細胞本體很大。\n\n中文對照：question：α motor neuron 的細胞本體在哪、整顆屬於？\nchoices：- 脊髓腹角(中樞)；整顆 PNS\n- DRG(周邊)；整顆 PNS\n- 骨骼肌；整顆 CNS\n- 脊髓腹角；整顆 CNS",
+          "choices": [
+            "Ventral horn of the spinal cord (CNS); neuron belongs to the PNS",
+            "DRG (periphery); neuron belongs to the PNS",
+            "Skeletal muscle; neuron belongs to the CNS",
+            "Ventral horn of the spinal cord; neuron belongs to the CNS"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Sensory unit / Motor unit：大小 vs 精細",
+          "body": "**連到前一觀念**\n把『一個神經元帶幾個』量化成單位。\n\n**觀念**\nSensory unit＝一個感覺神經元＋它支配的所有感受器；motor unit＝一個運動神經元＋它支配的所有骨骼肌纖維。單位越小越精細、力量小；越大力量大但較不精細。\n\n**為什麼**\n手指：感受器/肌纖維接近一對一（小單位）→ 觸覺精細、動作精細；手背/大腿：多對一（大單位）→ 力量大但解析差。閉眼用手指摸筆很快認得，放手背就難——就是 unit 大小差別。\n\n**考試角度**\n- sensory unit＝1 感覺神經元＋其感受器\n- motor unit＝1 運動神經元＋其肌纖維\n- 小單位：精細、力小；大單位：力大、不精細\n\n**英文考句**\n- A motor unit = one motor neuron + all the muscle fibers it innervates.\n- Small units give fine control (low force); large units give high force (less fine control).",
+          "keys": [
+            "sensory unit＝1 感覺神經元＋其感受器",
+            "motor unit＝1 運動神經元＋其肌纖維",
+            "小單位：精細、力小；大單位：力大、不精細"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Why can the fingers perform very fine movements?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "小 motor unit → 精細控制；大 motor unit → 力量大但較不精細。\n\n正確選項：They have small motor units, with each neuron innervating few muscle fibers。\nSensory unit＝一個感覺神經元＋它支配的所有感受器；motor unit＝一個運動神經元＋它支配的所有骨骼肌纖維。單位越小越精細、力量小；越大力量大但較不精細。\n\n中文對照：question：手指能做很精細動作，主要因為它的 motor unit？\nchoices：- 較小（一神經元支配少數肌纖維）\n- 較大（支配很多肌纖維）\n- 沒有 motor unit\n- 由感覺神經元控制",
+          "choices": [
+            "They have small motor units, with each neuron innervating few muscle fibers",
+            "They have large motor units that innervate many muscle fibers",
+            "They do not have motor units",
+            "They are controlled by sensory neurons"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：Sensory unit / Motor unit：大小 vs 精細",
+          "problem": "Why can the fingers perform very fine movements?\n\nA. They have small motor units, with each neuron innervating few muscle fibers\nB. They have large motor units that innervate many muscle fibers\nC. They do not have motor units\nD. They are controlled by sensory neurons",
+          "steps": [
+            "先確認題目問的主題：Sensory unit / Motor unit：大小 vs 精細",
+            "Sensory unit＝一個感覺神經元＋它支配的所有感受器；motor unit＝一個運動神經元＋它支配的所有骨骼肌纖維。單位越小越精細、力量小；越大力量大但較不精細。",
+            "把判斷依據連回題目：小 motor unit → 精細控制；大 motor unit → 力量大但較不精細。\n\n正確選項：They have small motor units, with each neuron innervating few muscle fibers。\nSensory unit＝一個感覺神經元＋它支配的所有感受器；motor unit＝一個運動神經元＋它支配的所有骨骼肌纖維。單位越小越精細、力量小；越大力量大但較不精細。\n\n中文對照：question：手指能做很精細動作，主要因為它的 motor unit？\nchoices：- 較小（一神經元支配少數肌纖維）\n- 較大（支配很多肌纖維）\n- 沒有 motor unit\n- 由感覺神經元控制"
+          ],
+          "answer": "They have small motor units, with each neuron innervating few muscle fibers"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 2 站：用兩個神經元練判斷＋感覺/運動單位",
+          "qids": [
+            "s114-physio-course114-u13-phys-13-01",
+            "s114-physio-course114-u13-phys-13-02"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Where is the cell body of an α motor neuron, and how is the entire neuron classified?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "本體在 ventral horn(中樞)、axon 到肌肉(周邊)，整顆仍算 PNS。\n\n正確選項：Ventral horn of the spinal cord (CNS); neuron belongs to the PNS。\nα motor neuron 控制骨骼肌，細胞本體在 spinal cord ventral horn（中樞），axon 伸到骨骼肌（周邊）。因為 axon 在周邊，整顆仍算 PNS。它的特徵是細胞本體很大。\n\n中文對照：question：α motor neuron 的細胞本體在哪、整顆屬於？\nchoices：- 脊髓腹角(中樞)；整顆 PNS\n- DRG(周邊)；整顆 PNS\n- 骨骼肌；整顆 CNS\n- 脊髓腹角；整顆 CNS",
+              "choices": [
+                "Ventral horn of the spinal cord (CNS); neuron belongs to the PNS",
+                "DRG (periphery); neuron belongs to the PNS",
+                "Skeletal muscle; neuron belongs to the CNS",
+                "Ventral horn of the spinal cord; neuron belongs to the CNS"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Why can the fingers perform very fine movements?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "小 motor unit → 精細控制；大 motor unit → 力量大但較不精細。\n\n正確選項：They have small motor units, with each neuron innervating few muscle fibers。\nSensory unit＝一個感覺神經元＋它支配的所有感受器；motor unit＝一個運動神經元＋它支配的所有骨骼肌纖維。單位越小越精細、力量小；越大力量大但較不精細。\n\n中文對照：question：手指能做很精細動作，主要因為它的 motor unit？\nchoices：- 較小（一神經元支配少數肌纖維）\n- 較大（支配很多肌纖維）\n- 沒有 motor unit\n- 由感覺神經元控制",
+              "choices": [
+                "They have small motor units, with each neuron innervating few muscle fibers",
+                "They have large motor units that innervate many muscle fibers",
+                "They do not have motor units",
+                "They are controlled by sensory neurons"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "細胞本體：DRG（周邊）",
+            "axon terminal：spinal cord（中樞）",
+            "細胞本體：ventral horn（中樞）",
+            "axon terminal：骨骼肌（周邊）",
+            "sensory unit＝1 感覺神經元＋其感受器",
+            "motor unit＝1 運動神經元＋其肌纖維",
+            "體感覺神經元(本體在 DRG=周邊、terminal 入脊髓=中樞)→PNS；α motor neuron(本體在 ventral horn=中樞、axon 到肌肉=周邊)→PNS → sensory/motor unit：小單位精細力小、大單位力大不精細 → 12 對腦神經全是 PNS。"
+          ],
+          "flash": [
+            {
+              "front": "體感覺神經元：本體周邊、terminal 中樞 → PNS",
+              "back": "體感覺（痛/觸/壓）神經元走 sensory/afferent pathway，細胞本體在 dorsal root ganglion（DRG，脊髓外＝周邊），axon terminal 進入 spinal cord（中樞）。因為本體在周邊，整顆算 PNS。"
+            },
+            {
+              "front": "α motor neuron：本體中樞、axon 周邊 → PNS",
+              "back": "α motor neuron 控制骨骼肌，細胞本體在 spinal cord ventral horn（中樞），axon 伸到骨骼肌（周邊）。因為 axon 在周邊，整顆仍算 PNS。它的特徵是細胞本體很大。"
+            },
+            {
+              "front": "Sensory unit / Motor unit：大小 vs 精細",
+              "back": "Sensory unit＝一個感覺神經元＋它支配的所有感受器；motor unit＝一個運動神經元＋它支配的所有骨骼肌纖維。單位越小越精細、力量小；越大力量大但較不精細。"
+            },
+            {
+              "front": "Where is the cell body of a somatic sensory neuron, and how is the entire neuron classified?",
+              "back": "本體在 DRG(周邊)、terminal 在中樞，整顆仍算 PNS。\n\n正確選項：Cell body in the DRG (periphery); neuron belongs to the PNS。\n體感覺（痛/觸/壓）神經元走 sensory/afferent pathway，細胞本體在 dorsal root ganglion（DRG，脊髓外＝周邊），axon terminal 進入 spinal cord（中樞）。因為本體在周邊，整顆算 PNS。\n\n中文對照：question：體感覺神經元的細胞本體與整顆歸類，分別是？\nchoices：- 本體在 DRG(周邊)；整顆屬 PNS\n- 本體在脊髓(中樞)；整顆屬 CNS\n- 本體在 DRG；整顆屬 CNS\n- 本體在腦；整顆屬 PNS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cns-classify-2",
+      "title": "第 2 站：用兩個神經元練判斷＋感覺/運動單位（2）",
+      "goals": [
+        "解釋CNS / PNS 具體包含哪些（12 腦神經全 PNS）"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 2 站：用兩個神經元練判斷＋感覺/運動單位",
+          "body": "用 DRG 感覺神經元與 α motor neuron 練習中樞/周邊判斷；再認識 sensory unit / motor unit 與『大小 vs 精細』。\n\n- 體感覺神經元：本體在周邊、terminal 在中樞 → 整顆 PNS。\n- α motor neuron：本體在中樞、axon 在周邊 → 整顆 PNS。\n- sensory unit / motor unit 的定義與大小、精細度。\n- CNS / PNS 具體包含哪些（12 腦神經全是 PNS）。"
+        },
+        {
+          "type": "card",
+          "title": "CNS / PNS 具體包含哪些（12 腦神經全 PNS）",
+          "body": "**連到前一觀念**\n把名詞歸位：看到名詞要立刻反應中樞或周邊。\n\n**觀念**\nCNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n\n**為什麼**\n12 對腦神經都屬周邊，因為它們的 axon/neuron 有部分在周邊。脊神經（C/T/L/S/coccygeal）也都是 PNS。看到 ganglion（神經節）→ 多在中樞外 → 周邊。\n\n**考試角度**\n- CNS：大腦/間腦/腦幹/上下丘/脊髓\n- PNS：12 對腦神經、脊神經、神經節、周邊神經\n- 12 對腦神經全屬 PNS\n\n**英文考句**\n- All 12 cranial nerves belong to the PNS.\n- Ganglia (collections of neuronal cell bodies outside the CNS) are part of the PNS.",
+          "keys": [
+            "CNS：大腦/間腦/腦幹/上下丘/脊髓",
+            "PNS：12 對腦神經、脊神經、神經節、周邊神經",
+            "12 對腦神經全屬 PNS"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Which of the following belongs to the peripheral nervous system?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "12 對腦神經全屬 PNS；大腦、上丘、脊髓屬 CNS。\n\n正確選項：The 12 pairs of cranial nerves。\nCNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n\n中文對照：question：下列何者屬於周邊神經系統？\nchoices：- 12 對腦神經\n- 大腦皮質\n- 上丘 superior colliculus\n- 脊髓",
+          "choices": [
+            "The 12 pairs of cranial nerves",
+            "Cerebral cortex",
+            "Superior colliculus",
+            "Spinal cord"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\nWhich of the following belongs to the peripheral nervous system?\n\nA. The 12 pairs of cranial nerves\nB. Cerebral cortex\nC. Superior colliculus\nD. Spinal cord\n\n**判斷步驟**\n- 先確認題目問的主題：CNS / PNS 具體包含哪些（12 腦神經全 PNS）\n- CNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n- 把判斷依據連回題目：12 對腦神經全屬 PNS；大腦、上丘、脊髓屬 CNS。\n\n正確選項：The 12 pairs of cranial nerves。\nCNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n\n中文對照：question：下列何者屬於周邊神經系統？\nchoices：",
+          "keys": [
+            "The 12 pairs of cranial nerves"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "The 12 pairs of cranial nerves",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：CNS / PNS 具體包含哪些（12 腦神經全 PNS）\n- CNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n- 把判斷依據連回題目：12 對腦神經全屬 PNS；大腦、上丘、脊髓屬 CNS。\n\n正確選項：The 12 pairs of cranial nerves。\nCNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n\n中文對照：question：下列何者屬於周邊神經系統？\nchoices：- 12 對腦神經\n- 大腦皮質\n- 上丘 superior colliculus\n- 脊髓"
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "- 12 對腦神經\n- 大腦皮質\n- 上丘 superior colliculus\n- 脊髓\n\n**結論與依據**\nThe 12 pairs of cranial nerves",
+          "keys": [
+            "The 12 pairs of cranial nerves"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "The 12 pairs of cranial nerves",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：CNS / PNS 具體包含哪些（12 腦神經全 PNS）\n- CNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n- 把判斷依據連回題目：12 對腦神經全屬 PNS；大腦、上丘、脊髓屬 CNS。\n\n正確選項：The 12 pairs of cranial nerves。\nCNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n\n中文對照：question：下列何者屬於周邊神經系統？\nchoices：- 12 對腦神經\n- 大腦皮質\n- 上丘 superior colliculus\n- 脊髓"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：CNS / PNS 具體包含哪些（12 腦神經全 PNS）",
+          "problem": "Which of the following belongs to the peripheral nervous system?\n\nA. The 12 pairs of cranial nerves\nB. Cerebral cortex\nC. Superior colliculus\nD. Spinal cord",
+          "steps": [
+            "先確認題目問的主題：CNS / PNS 具體包含哪些（12 腦神經全 PNS）",
+            "CNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。",
+            "把判斷依據連回題目：12 對腦神經全屬 PNS；大腦、上丘、脊髓屬 CNS。\n\n正確選項：The 12 pairs of cranial nerves。\nCNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n\n中文對照：question：下列何者屬於周邊神經系統？\nchoices：- 12 對腦神經\n- 大腦皮質\n- 上丘 superior colliculus\n- 脊髓"
+          ],
+          "answer": "The 12 pairs of cranial nerves"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 2 站：用兩個神經元練判斷＋感覺/運動單位",
+          "qids": [
+            "s114-physio-course114-u13-phys-13-04",
+            "s114-physio-course114-u13-phys-13-05"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Which of the following belongs to the peripheral nervous system?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "12 對腦神經全屬 PNS；大腦、上丘、脊髓屬 CNS。\n\n正確選項：The 12 pairs of cranial nerves。\nCNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n\n中文對照：question：下列何者屬於周邊神經系統？\nchoices：- 12 對腦神經\n- 大腦皮質\n- 上丘 superior colliculus\n- 脊髓",
+              "choices": [
+                "The 12 pairs of cranial nerves",
+                "Cerebral cortex",
+                "Superior colliculus",
+                "Spinal cord"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "CNS：大腦/間腦/腦幹/上下丘/脊髓",
+            "PNS：12 對腦神經、脊神經、神經節、周邊神經",
+            "體感覺神經元(本體在 DRG=周邊、terminal 入脊髓=中樞)→PNS；α motor neuron(本體在 ventral horn=中樞、axon 到肌肉=周邊)→PNS → sensory/motor unit：小單位精細力小、大單位力大不精細 → 12 對腦神經全是 PNS。",
+            "CNS / PNS 具體包含哪些（12 腦神經全 PNS）：CNS：大腦/間腦/腦幹/上下丘/脊髓",
+            "- 先確認題目問的主題：CNS / PNS 具體包含哪些（12 腦神經全 PNS）\n- CNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n- 把判斷依據連回題目：12 對腦神經全屬 PNS；大腦、上丘、脊髓屬 CNS。\n\n正確選項：The 12 pairs of cranial nerves。\nCNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n\n中文對照：question：下列何者屬於周邊神經系統？\nchoices：- 12 對腦神經\n- 大腦皮質\n- 上丘 superior colliculus\n- 脊髓"
+          ],
+          "flash": [
+            {
+              "front": "CNS / PNS 具體包含哪些（12 腦神經全 PNS）",
+              "back": "CNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：CNS / PNS 具體包含哪些（12 腦神經全 PNS）\n- CNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n- 把判斷依據連回題目：12 對腦神經全屬 PNS；大腦、上丘、脊髓屬 CNS。\n\n正確選項：The 12 pairs of cranial nerves。\nCNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n\n中文對照：question：下列何者屬於周邊神經系統？\nchoices：- 12 對腦神經\n- 大腦皮質\n- 上丘 superior colliculus\n- 脊髓"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：CNS / PNS 具體包含哪些（12 腦神經全 PNS）\n- CNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n- 把判斷依據連回題目：12 對腦神經全屬 PNS；大腦、上丘、脊髓屬 CNS。\n\n正確選項：The 12 pairs of cranial nerves。\nCNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n\n中文對照：question：下列何者屬於周邊神經系統？\nchoices：- 12 對腦神經\n- 大腦皮質\n- 上丘 superior colliculus\n- 脊髓"
+            },
+            {
+              "front": "Which of the following belongs to the peripheral nervous system?",
+              "back": "12 對腦神經全屬 PNS；大腦、上丘、脊髓屬 CNS。\n\n正確選項：The 12 pairs of cranial nerves。\nCNS：cerebrum、diencephalon、brainstem（midbrain/pons/medulla）、superior/inferior colliculus、spinal cord。PNS：cranial nerves（12 對全是 PNS）、spinal nerves（頸/胸/腰/薦/尾）、ganglia、peripheral nerves。\n\n中文對照：question：下列何者屬於周邊神經系統？\nchoices：- 12 對腦神經\n- 大腦皮質\n- 上丘 superior colliculus\n- 脊髓"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cns-neuron-1",
+      "title": "第 3 站：神經元的結構與分類（1）",
+      "goals": [
+        "解釋神經元結構：動作電位在 axon hillock 起始",
+        "解釋結構分類：unipolar / bipolar / pseudounipolar / multipolar",
+        "解釋功能分類與特殊神經元"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 3 站：神經元的結構與分類",
+          "body": "認識神經元各部位（動作電位在 axon hillock 起始）、用突起數做結構分類、再看軸漿運輸。\n\n- 先認神經元各部位，特別是 axon hillock＝動作電位起始點。\n- 用『突起數量』做結構分類：uni / bi / pseudouni / multipolar。\n- 功能分類與幾個特殊神經元。\n- 軸漿運輸：順向 / 逆向。"
+        },
+        {
+          "type": "card",
+          "title": "神經元結構：動作電位在 axon hillock 起始",
+          "body": "**連到前一觀念**\n先把一顆神經元的零件認齊。\n\n**觀念**\n一顆神經元有：soma/cell body（本體，通常一個）、dendrite（樹突，接收訊息、分支多）、axon（軸突，通常一條主幹）、axon hillock（軸丘）、axon terminal、synapse。動作電位最容易在 axon hillock 起始。\n\n**為什麼**\naxon hillock 有非常多 voltage-gated sodium channels，所以是閾值最易達到、AP 起始的地方。樹突收到的局部電位加總後傳到軸丘，夠強（過閾值）就引發 action potential。\n\n**考試角度**\n- dendrite 接收、axon 通常一條、本體通常一個\n- axon hillock：voltage-gated Na 通道多 → AP 起始點\n- 局部電位加總 → 過閾值 → AP\n\n**英文考句**\n- The action potential is initiated at the axon hillock, which has a high density of voltage-gated Na⁺ channels.",
+          "keys": [
+            "dendrite 接收、axon 通常一條、本體通常一個",
+            "axon hillock：voltage-gated Na 通道多 → AP 起始點",
+            "局部電位加總 → 過閾值 → AP"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Where is a neuronal action potential usually initiated?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "軸丘的電壓門控鈉通道密度高，是 AP 起始點。\n\n正確選項：Axon hillock。\n一顆神經元有：soma/cell body（本體，通常一個）、dendrite（樹突，接收訊息、分支多）、axon（軸突，通常一條主幹）、axon hillock（軸丘）、axon terminal、synapse。動作電位最容易在 axon hillock 起始。\n\n中文對照：question：神經元動作電位最常從哪裡起始？\nchoices：- axon hillock 軸丘\n- dendrite 末端\n- axon terminal\n- 細胞核",
+          "choices": [
+            "Axon hillock",
+            "Distal dendrite",
+            "Axon terminal",
+            "Nucleus"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "結構分類：unipolar / bipolar / pseudounipolar / multipolar",
+          "body": "**連到前一觀念**\n結構分類只看一件事：從本體伸出幾條突起。\n\n**觀念**\n依突起數：unipolar（1 條）；bipolar（2 條：一 dendrite 一 axon，見於視網膜等特殊感覺）；pseudounipolar（看似單極、功能像雙極，見於 DRG 感覺神經元）；multipolar（多條，中樞整合用，如 α motor neuron、pyramidal cell、Purkinje cell）。\n\n**為什麼**\n聯想法：bipolar → 視網膜/特殊感覺；pseudounipolar → DRG/感覺神經元/周邊；multipolar → 中樞整合（樹突多、收很多訊息）。\n\n**考試角度**\n- unipolar(1)、bipolar(2, 視網膜)、pseudounipolar(DRG)、multipolar(中樞)\n- bipolar → 特殊感覺；pseudounipolar → DRG 感覺神經元\n- multipolar → 中樞整合（dendrite 多）\n\n**英文考句**\n- Pseudounipolar neurons (e.g., DRG sensory neurons) look unipolar but function as bipolar.\n- Multipolar neurons have many dendrites and dominate the CNS (integration).\n\n**易錯與比較**\npseudounipolar『看起來單極、功能上像雙極』，是 DRG 感覺神經元的型態，別跟真正的 unipolar 混。",
+          "keys": [
+            "unipolar(1)、bipolar(2, 視網膜)、pseudounipolar(DRG)、multipolar(中樞)",
+            "bipolar → 特殊感覺；pseudounipolar → DRG 感覺神經元",
+            "multipolar → 中樞整合（dendrite 多）"
+          ],
+          "tip": "pseudounipolar『看起來單極、功能上像雙極』，是 DRG 感覺神經元的型態，別跟真正的 unipolar 混。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Bipolar neurons are most commonly associated with which location?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "雙極神經元常見於視網膜等特殊感覺路徑。\n\n正確選項：Retina and other special sensory pathways。\n依突起數：unipolar（1 條）；bipolar（2 條：一 dendrite 一 axon，見於視網膜等特殊感覺）；pseudounipolar（看似單極、功能像雙極，見於 DRG 感覺神經元）；multipolar（多條，中樞整合用，如 α motor neuron、pyramidal cell、Purkinje cell）。\n\n中文對照：question：Bipolar neuron 最常聯想到哪個位置？\nchoices：- 視網膜（特殊感覺）\n- 骨骼肌\n- 大腦皮質運動區\n- 腎絲球",
+          "choices": [
+            "Retina and other special sensory pathways",
+            "Skeletal muscle",
+            "Motor cortex",
+            "Renal glomerulus"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "功能分類與特殊神經元",
+          "body": "**連到前一觀念**\n換個角度，用功能分類，並認幾個明星細胞。\n\n**觀念**\n功能分：sensory neuron、interneuron（中間，中樞整合）、motor neuron。特殊細胞：pyramidal cell（錐體細胞，大腦皮質/海馬，高等認知）、Purkinje cell（小腦，樹突像掃把頭、整合大量訊息，與運動/平衡有關），都是 multipolar。\n\n**為什麼**\n感覺進、運動出，中間靠 interneuron 整合（呼應三功能）。Purkinje cell 樹突極複雜＝接收整合的訊息超多；運動控制是神經系統最難的章節之一。\n\n**考試角度**\n- 功能：sensory / interneuron / motor\n- pyramidal cell：大腦皮質/海馬、高等認知（multipolar）\n- Purkinje cell：小腦、樹突如掃把頭（multipolar）",
+          "keys": [
+            "功能：sensory / interneuron / motor",
+            "pyramidal cell：大腦皮質/海馬、高等認知（multipolar）",
+            "Purkinje cell：小腦、樹突如掃把頭（multipolar）"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Which cerebellar neuron has a broom-like dendritic tree and is involved in movement and balance?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Purkinje cell 在小腦、樹突極複雜，屬 multipolar。\n\n正確選項：Purkinje cell。\n功能分：sensory neuron、interneuron（中間，中樞整合）、motor neuron。特殊細胞：pyramidal cell（錐體細胞，大腦皮質/海馬，高等認知）、Purkinje cell（小腦，樹突像掃把頭、整合大量訊息，與運動/平衡有關），都是 multipolar。\n\n中文對照：question：樹突像掃把頭、位於小腦、與運動平衡有關的是？\nchoices：- Purkinje cell\n- pyramidal cell\n- bipolar cell\n- α motor neuron",
+          "choices": [
+            "Purkinje cell",
+            "Pyramidal cell",
+            "Bipolar cell",
+            "α motor neuron"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：功能分類與特殊神經元",
+          "problem": "Which cerebellar neuron has a broom-like dendritic tree and is involved in movement and balance?\n\nA. Purkinje cell\nB. Pyramidal cell\nC. Bipolar cell\nD. α motor neuron",
+          "steps": [
+            "先確認題目問的主題：功能分類與特殊神經元",
+            "功能分：sensory neuron、interneuron（中間，中樞整合）、motor neuron。特殊細胞：pyramidal cell（錐體細胞，大腦皮質/海馬，高等認知）、Purkinje cell（小腦，樹突像掃把頭、整合大量訊息，與運動/平衡有關），都是 multipolar。",
+            "把判斷依據連回題目：Purkinje cell 在小腦、樹突極複雜，屬 multipolar。\n\n正確選項：Purkinje cell。\n功能分：sensory neuron、interneuron（中間，中樞整合）、motor neuron。特殊細胞：pyramidal cell（錐體細胞，大腦皮質/海馬，高等認知）、Purkinje cell（小腦，樹突像掃把頭、整合大量訊息，與運動/平衡有關），都是 multipolar。\n\n中文對照：question：樹突像掃把頭、位於小腦、與運動平衡有關的是？\nchoices：- Purkinje cell\n- pyramidal cell\n- bipolar cell\n- α motor neuron"
+          ],
+          "answer": "Purkinje cell"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 3 站：神經元的結構與分類",
+          "qids": [
+            "s114-physio-course114-u13-phys-13-01",
+            "s114-physio-course114-u13-phys-13-02"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Bipolar neurons are most commonly associated with which location?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "雙極神經元常見於視網膜等特殊感覺路徑。\n\n正確選項：Retina and other special sensory pathways。\n依突起數：unipolar（1 條）；bipolar（2 條：一 dendrite 一 axon，見於視網膜等特殊感覺）；pseudounipolar（看似單極、功能像雙極，見於 DRG 感覺神經元）；multipolar（多條，中樞整合用，如 α motor neuron、pyramidal cell、Purkinje cell）。\n\n中文對照：question：Bipolar neuron 最常聯想到哪個位置？\nchoices：- 視網膜（特殊感覺）\n- 骨骼肌\n- 大腦皮質運動區\n- 腎絲球",
+              "choices": [
+                "Retina and other special sensory pathways",
+                "Skeletal muscle",
+                "Motor cortex",
+                "Renal glomerulus"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Which cerebellar neuron has a broom-like dendritic tree and is involved in movement and balance?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Purkinje cell 在小腦、樹突極複雜，屬 multipolar。\n\n正確選項：Purkinje cell。\n功能分：sensory neuron、interneuron（中間，中樞整合）、motor neuron。特殊細胞：pyramidal cell（錐體細胞，大腦皮質/海馬，高等認知）、Purkinje cell（小腦，樹突像掃把頭、整合大量訊息，與運動/平衡有關），都是 multipolar。\n\n中文對照：question：樹突像掃把頭、位於小腦、與運動平衡有關的是？\nchoices：- Purkinje cell\n- pyramidal cell\n- bipolar cell\n- α motor neuron",
+              "choices": [
+                "Purkinje cell",
+                "Pyramidal cell",
+                "Bipolar cell",
+                "α motor neuron"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "dendrite 接收、axon 通常一條、本體通常一個",
+            "axon hillock：voltage-gated Na 通道多 → AP 起始點",
+            "unipolar(1)、bipolar(2, 視網膜)、pseudounipolar(DRG)、multipolar(中樞)",
+            "bipolar → 特殊感覺；pseudounipolar → DRG 感覺神經元",
+            "功能：sensory / interneuron / motor",
+            "pyramidal cell：大腦皮質/海馬、高等認知（multipolar）",
+            "結構：dendrite 接收 → soma → axon hillock（電壓門控 Na 通道多，AP 起始/閾值）→ axon → terminal → synapse。結構分類靠突起數：unipolar/bipolar(視網膜)/pseudounipolar(DRG)/multipolar(中樞)。軸漿運輸：anterograde(本體→末端)、retrograde(末端→本體, 可做 tracer)。"
+          ],
+          "flash": [
+            {
+              "front": "神經元結構：動作電位在 axon hillock 起始",
+              "back": "一顆神經元有：soma/cell body（本體，通常一個）、dendrite（樹突，接收訊息、分支多）、axon（軸突，通常一條主幹）、axon hillock（軸丘）、axon terminal、synapse。動作電位最容易在 axon hillock 起始。"
+            },
+            {
+              "front": "結構分類：unipolar / bipolar / pseudounipolar / multipolar",
+              "back": "依突起數：unipolar（1 條）；bipolar（2 條：一 dendrite 一 axon，見於視網膜等特殊感覺）；pseudounipolar（看似單極、功能像雙極，見於 DRG 感覺神經元）；multipolar（多條，中樞整合用，如 α motor neuron、pyramidal cell、Purkinje cell）。"
+            },
+            {
+              "front": "功能分類與特殊神經元",
+              "back": "功能分：sensory neuron、interneuron（中間，中樞整合）、motor neuron。特殊細胞：pyramidal cell（錐體細胞，大腦皮質/海馬，高等認知）、Purkinje cell（小腦，樹突像掃把頭、整合大量訊息，與運動/平衡有關），都是 multipolar。"
+            },
+            {
+              "front": "Where is a neuronal action potential usually initiated?",
+              "back": "軸丘的電壓門控鈉通道密度高，是 AP 起始點。\n\n正確選項：Axon hillock。\n一顆神經元有：soma/cell body（本體，通常一個）、dendrite（樹突，接收訊息、分支多）、axon（軸突，通常一條主幹）、axon hillock（軸丘）、axon terminal、synapse。動作電位最容易在 axon hillock 起始。\n\n中文對照：question：神經元動作電位最常從哪裡起始？\nchoices：- axon hillock 軸丘\n- dendrite 末端\n- axon terminal\n- 細胞核"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

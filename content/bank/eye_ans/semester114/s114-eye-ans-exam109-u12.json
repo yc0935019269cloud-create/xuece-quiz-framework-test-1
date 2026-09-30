@@ -1,0 +1,85 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-eye-ans-exam109-u12",
+    "subject": "eye_ans",
+    "name": "視網膜與眼電位｜109 年國考",
+    "year": 109,
+    "path": [
+      "114 大一下",
+      "109 年國考",
+      "眼解剖生理學",
+      "第12單元 視網膜與眼電位"
+    ],
+    "order": 12,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；眼解剖期末國考刷題庫"
+  },
+  "questions": [
+    {
+      "n": "q0132",
+      "type": "single",
+      "stem": "視網膜電位圖（electroretinography）分成暗適應（scotopic）和明適應（photopic）檢查兩大類，下列何者 和其他三者分屬不同類？",
+      "choices": [
+        "桿細胞反應（rod response）",
+        "結合桿細胞和錐細胞反應（combined rod and cone response）",
+        "震盪電位（oscillatory potentials）",
+        "錐細胞閃爍（cone flicker）"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\nERG 各項目的暗適應 vs 明適應分類\n\n**白話理解**\nERG 分兩大組：暗適應（scotopic，測桿細胞主導）和明適應（photopic，測錐細胞主導）。A、B、C 都屬暗適應組，只有 D『錐細胞閃爍』屬明適應組，所以 D 跟其他三者不同類。\n\n**口訣**\n暗組＝桿細胞天下；明組＝錐細胞天下。Flicker（30 Hz閃爍）＝錐細胞＝明組。\n\n**考點與解題步驟**\n- 標準 ERG（ISCEV）暗適應項目：rod response、combined（max）response、oscillatory potentials。\n- 明適應項目：single-flash cone response 與 30 Hz flicker（cone flicker）。\n- 30 Hz 高頻閃爍只有反應快的錐細胞跟得上，桿細胞跟不上，所以是測錐細胞功能。\n\n**選項 A：桿細胞反應（暗適應組）**\n屬暗適應（scotopic）。在暗適應後用弱光刺激，主要叫醒的是桿細胞（rod），所以這是暗組項目，與 D 不同類。\n\nRod response＝純暗組。\n\n- 弱閃光下錐細胞幾乎不反應，故反映桿細胞。\n\n**選項 B：桿錐結合反應（暗適應組）**\n屬暗適應（scotopic）。combined（最大反應）是在暗適應狀態下用強閃光，同時叫到桿與錐，但檢查歸在暗適應大類，與 D 不同類。\n\nCombined＝暗組中的強閃光。\n\n- 此波 a、b 振幅最大，反映整體外層網膜。\n\n**選項 C：震盪電位（暗適應組）**\n屬暗適應（scotopic）。oscillatory potentials 是疊在 b 波上升段的小鋸齒波，標準上在暗適應強閃光條件下記錄，歸暗組，與 D 不同類。來源與內層網膜（無軸突細胞 amacrine 等）有關。\n\nOPs＝b波上的小鋸齒，暗組。\n\n- 糖尿病視網膜病變早期 OPs 易下降。\n\n**選項 D：錐細胞閃爍（本題答案，明適應組）**\n這就是答案。錐細胞閃爍（cone flicker，30 Hz）在背景光下進行，屬明適應（photopic）大類，與 A、B、C 三個暗適應項目分屬不同類，所以選 D。\n\nCone flicker＝唯一的明組，與眾不同。\n\n- 30 Hz 下只有錐細胞反應得過來，可單獨評估錐細胞系統。\n\n**原始出處**\n驗光師\\眼球解剖生理學與倫理法規\\109年驗光師高考.pdf；原題編號 30；舊 ID q0132",
+      "tags": [
+        "視網膜與眼電位",
+        "驗光師高考｜眼球解剖生理學與倫理法規"
+      ],
+      "source_id": "q0132",
+      "source_number": "30",
+      "source_year": "109",
+      "source_subject": "驗光師高考｜眼球解剖生理學與倫理法規",
+      "source_detail": {
+        "sectionTitle": "視網膜與眼電位",
+        "title": "ERG 各項目的暗適應 vs 明適應分類",
+        "simple": "ERG 分兩大組：暗適應（scotopic，測桿細胞主導）和明適應（photopic，測錐細胞主導）。A、B、C 都屬暗適應組，只有 D『錐細胞閃爍』屬明適應組，所以 D 跟其他三者不同類。",
+        "memory": "暗組＝桿細胞天下；明組＝錐細胞天下。Flicker（30 Hz閃爍）＝錐細胞＝明組。",
+        "examFocus": [
+          "標準 ERG（ISCEV）暗適應項目：rod response、combined（max）response、oscillatory potentials。",
+          "明適應項目：single-flash cone response 與 30 Hz flicker（cone flicker）。",
+          "30 Hz 高頻閃爍只有反應快的錐細胞跟得上，桿細胞跟不上，所以是測錐細胞功能。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "桿細胞反應（暗適應組）",
+          "rule": "屬暗適應（scotopic）。在暗適應後用弱光刺激，主要叫醒的是桿細胞（rod），所以這是暗組項目，與 D 不同類。",
+          "memory": "Rod response＝純暗組。",
+          "examFocus": [
+            "弱閃光下錐細胞幾乎不反應，故反映桿細胞。"
+          ]
+        },
+        "B": {
+          "title": "桿錐結合反應（暗適應組）",
+          "rule": "屬暗適應（scotopic）。combined（最大反應）是在暗適應狀態下用強閃光，同時叫到桿與錐，但檢查歸在暗適應大類，與 D 不同類。",
+          "memory": "Combined＝暗組中的強閃光。",
+          "examFocus": [
+            "此波 a、b 振幅最大，反映整體外層網膜。"
+          ]
+        },
+        "C": {
+          "title": "震盪電位（暗適應組）",
+          "rule": "屬暗適應（scotopic）。oscillatory potentials 是疊在 b 波上升段的小鋸齒波，標準上在暗適應強閃光條件下記錄，歸暗組，與 D 不同類。來源與內層網膜（無軸突細胞 amacrine 等）有關。",
+          "memory": "OPs＝b波上的小鋸齒，暗組。",
+          "examFocus": [
+            "糖尿病視網膜病變早期 OPs 易下降。"
+          ]
+        },
+        "D": {
+          "title": "錐細胞閃爍（本題答案，明適應組）",
+          "rule": "這就是答案。錐細胞閃爍（cone flicker，30 Hz）在背景光下進行，屬明適應（photopic）大類，與 A、B、C 三個暗適應項目分屬不同類，所以選 D。",
+          "memory": "Cone flicker＝唯一的明組，與眾不同。",
+          "examFocus": [
+            "30 Hz 下只有錐細胞反應得過來，可單獨評估錐細胞系統。"
+          ]
+        }
+      }
+    }
+  ]
+}

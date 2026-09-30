@@ -1,0 +1,355 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam107-u07",
+    "subject": "optometry",
+    "name": "瞳孔反應：光反射、RAPD 與 Horner syndrome｜107 年國考",
+    "year": 107,
+    "path": [
+      "114 大一下",
+      "107 年國考",
+      "視光學",
+      "第07單元 瞳孔反應：光反射、RAPD 與 Horner syndrome"
+    ],
+    "order": 7,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0094",
+      "type": "single",
+      "stem": "關於瞳孔直接光反射（direct pupillary light reflex）反應之路徑說明，下列何者正確？①傳入路徑通過視放 射 ②傳入路徑通過視覺皮質（visual cortex） ③傳出路徑通過 Edinger-Westphal nucleus（EW）核 ④ 傳出路徑通過頂蓋前核（pretectal nucleus）",
+      "choices": [
+        "僅①③",
+        "僅①④",
+        "僅②③",
+        "僅③④"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n直接瞳孔光反射路徑\n\n**白話理解**\n直接光反射不需經視放射或視覺皮質；訊號由視束分支到頂蓋前核，再連到雙側 Edinger–Westphal 核，傳出副交感路徑經動眼神經造成縮瞳。\n\n**口訣**\n不進皮質：視束→pretectal→EW→III。\n\n**考點與解題步驟**\n- 嚴格而言頂蓋前核屬傳入後的中繼／雙側投射，不是周邊『傳出神經』；題目措辭較寬鬆。\n\n**選項 A：A 選項**\n①錯，光反射弧不需視放射。\n\n**選項 B：B 選項**\n①錯。\n\n**選項 C：C 選項**\n②錯，視覺皮質不是必要環節。\n\n**選項 D：D 選項**\n依題庫答案，EW 核與頂蓋前核都在反射路徑中。\n\n**原始出處**\n驗光師\\眼球解剖生理學與倫理法規\\107年驗光師高考.pdf；原題編號 27；舊 ID opt-q0094",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜眼球解剖生理學與倫理法規"
+      ],
+      "source_id": "opt-q0094",
+      "source_number": "27",
+      "source_year": "107",
+      "source_subject": "驗光師高考｜眼球解剖生理學與倫理法規",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "直接瞳孔光反射路徑",
+        "simple": "直接光反射不需經視放射或視覺皮質；訊號由視束分支到頂蓋前核，再連到雙側 Edinger–Westphal 核，傳出副交感路徑經動眼神經造成縮瞳。",
+        "memory": "不進皮質：視束→pretectal→EW→III。",
+        "examFocus": [
+          "嚴格而言頂蓋前核屬傳入後的中繼／雙側投射，不是周邊『傳出神經』；題目措辭較寬鬆。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "①錯，光反射弧不需視放射。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "①錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "②錯，視覺皮質不是必要環節。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "依題庫答案，EW 核與頂蓋前核都在反射路徑中。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0095",
+      "type": "single",
+      "stem": "有關控制瞳孔大小的神經與肌肉，下列敘述何者錯誤？",
+      "choices": [
+        "瞳孔括約肌（sphincter pupillae muscle）收縮時，瞳孔將縮小",
+        "支配瞳孔肌肉的交感神經（sympathetic nerves）興奮時，會使瞳孔放大",
+        "瞳孔大小的變化主要目的是要控制進入眼睛光線的量",
+        "控制瞳孔縮小的自主神經是來自於第二對腦神經"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n控制瞳孔的肌肉與腦神經\n\n**白話理解**\n第二對視神經負責對光反射的傳入；縮瞳傳出由 Edinger–Westphal 核的副交感纖維隨第三對動眼神經到睫狀神經節，再支配瞳孔括約肌。\n\n**口訣**\n二進三出：CN II 感光，CN III 縮瞳。\n\n**考點與解題步驟**\n- 視神經看到光，不代表它直接支配虹膜肌。\n\n**選項 A：A 選項**\n正確，括約肌收縮會縮瞳。\n\n**選項 B：B 選項**\n正確，交感興奮使擴大肌收縮而散瞳。\n\n**選項 C：C 選項**\n正確，瞳孔可調節入眼光量。\n\n**選項 D：D 選項**\n錯誤；CN II 傳入，CN III 副交感傳出縮瞳。\n\n**原始出處**\n驗光師\\眼球解剖生理學與倫理法規\\107年驗光師高考.pdf；原題編號 35；舊 ID opt-q0095",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜眼球解剖生理學與倫理法規"
+      ],
+      "source_id": "opt-q0095",
+      "source_number": "35",
+      "source_year": "107",
+      "source_subject": "驗光師高考｜眼球解剖生理學與倫理法規",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "控制瞳孔的肌肉與腦神經",
+        "simple": "第二對視神經負責對光反射的傳入；縮瞳傳出由 Edinger–Westphal 核的副交感纖維隨第三對動眼神經到睫狀神經節，再支配瞳孔括約肌。",
+        "memory": "二進三出：CN II 感光，CN III 縮瞳。",
+        "examFocus": [
+          "視神經看到光，不代表它直接支配虹膜肌。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確，括約肌收縮會縮瞳。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確，交感興奮使擴大肌收縮而散瞳。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確，瞳孔可調節入眼光量。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "錯誤；CN II 傳入，CN III 副交感傳出縮瞳。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0097",
+      "type": "single",
+      "stem": "進行瞳孔檢查時，發現患者兩側瞳孔大小不等，下列何者為患者下一步的檢測項目？",
+      "choices": [
+        "暗-亮瞳孔檢查（dim bright pupillary test）",
+        "兩眼瞳孔距離檢查（interpupillary distance）",
+        "瞳孔的近調節反應（near response of the pupil）",
+        "手電筒搖擺瞳孔檢查（swinging flashlight test）"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n不等瞳的明暗環境判讀\n\n**白話理解**\n發現瞳孔不等大後，先比較明亮與昏暗環境下 anisocoria 哪一種更明顯，以判斷異常側：暗處差更大常提示小瞳孔側交感路徑異常；亮處差更大常提示大瞳孔側副交感異常。\n\n**口訣**\n先問差在暗處大，還是亮處大。\n\n**考點與解題步驟**\n- RAPD 通常不造成明顯靜態瞳孔大小不等。\n\n**選項 A：A 選項**\n正確，是定位不等瞳下一步。\n\n**選項 B：B 選項**\nPD 與瞳孔神經異常定位無關。\n\n**選項 C：C 選項**\n近反應可後續評估，但不是首先區分異常側的方法。\n\n**選項 D：D 選項**\n搖擺手電筒主要查 RAPD，不以瞳孔大小不等為首要定位。\n\n**原始出處**\n驗光師\\視光學\\107年驗光師高考.pdf；原題編號 15；舊 ID opt-q0097",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0097",
+      "source_number": "15",
+      "source_year": "107",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "不等瞳的明暗環境判讀",
+        "simple": "發現瞳孔不等大後，先比較明亮與昏暗環境下 anisocoria 哪一種更明顯，以判斷異常側：暗處差更大常提示小瞳孔側交感路徑異常；亮處差更大常提示大瞳孔側副交感異常。",
+        "memory": "先問差在暗處大，還是亮處大。",
+        "examFocus": [
+          "RAPD 通常不造成明顯靜態瞳孔大小不等。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確，是定位不等瞳下一步。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "PD 與瞳孔神經異常定位無關。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "近反應可後續評估，但不是首先區分異常側的方法。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "搖擺手電筒主要查 RAPD，不以瞳孔大小不等為首要定位。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0107",
+      "type": "single",
+      "stem": "會讓瞳孔縮小的肌肉是經由下列那一條神經所支配？",
+      "choices": [
+        "動眼神經（oculomotor nerve）",
+        "滑車神經（trochlear nerve）",
+        "三叉神經（trigeminal nerve）",
+        "外旋神經（abducens nerve）"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n縮瞳肌的神經支配\n\n**白話理解**\nEdinger–Westphal 核的節前副交感纖維隨第三對動眼神經，到睫狀神經節換節後經短睫狀神經，使瞳孔括約肌收縮。\n\n**口訣**\n縮瞳走第三對：EW→III→睫狀節。\n\n**考點與解題步驟**\n- 視神經是傳入，動眼神經才是縮瞳傳出。\n\n**選項 A：A 選項**\n正確，CN III 搭載縮瞳副交感纖維。\n\n**選項 B：B 選項**\nCN IV 支配上斜肌。\n\n**選項 C：C 選項**\nCN V 主要負責顏面感覺與咀嚼。\n\n**選項 D：D 選項**\nCN VI 支配外直肌。\n\n**原始出處**\n驗光生\\眼球構造與倫理法規概要\\107年驗光生特考.pdf；原題編號 9；舊 ID opt-q0107",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光生特考｜眼球構造與倫理法規概要"
+      ],
+      "source_id": "opt-q0107",
+      "source_number": "9",
+      "source_year": "107",
+      "source_subject": "驗光生特考｜眼球構造與倫理法規概要",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "縮瞳肌的神經支配",
+        "simple": "Edinger–Westphal 核的節前副交感纖維隨第三對動眼神經，到睫狀神經節換節後經短睫狀神經，使瞳孔括約肌收縮。",
+        "memory": "縮瞳走第三對：EW→III→睫狀節。",
+        "examFocus": [
+          "視神經是傳入，動眼神經才是縮瞳傳出。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確，CN III 搭載縮瞳副交感纖維。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "CN IV 支配上斜肌。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "CN V 主要負責顏面感覺與咀嚼。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "CN VI 支配外直肌。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0113",
+      "type": "single",
+      "stem": "筆燈光源照射右眼，下列瞳孔反應何者為正常？",
+      "choices": [
+        "左眼瞳孔變大",
+        "左眼瞳孔變小",
+        "右眼瞳孔變大",
+        "左眼瞳孔不變"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n直接與共感瞳孔光反射\n\n**白話理解**\n右眼受光會產生右眼直接光反射，也因頂蓋前核向雙側 EW 核投射而引起左眼間接／共感光反射。\n\n**口訣**\n照一眼，正常兩眼都縮。\n\n**考點與解題步驟**\n- 對側反應稱 consensual，不代表光真的照到對側眼。\n\n**選項 A：A 選項**\n正常共感反射不是散瞳。\n\n**選項 B：B 選項**\n正確，左眼縮瞳。\n\n**選項 C：C 選項**\n右眼應直接縮瞳。\n\n**選項 D：D 選項**\n正常雙側路徑下左眼會有反應。\n\n**原始出處**\n驗光生\\驗光學概要\\107年驗光生特考.pdf；原題編號 19；舊 ID opt-q0113",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光生特考｜驗光學概要"
+      ],
+      "source_id": "opt-q0113",
+      "source_number": "19",
+      "source_year": "107",
+      "source_subject": "驗光生特考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "直接與共感瞳孔光反射",
+        "simple": "右眼受光會產生右眼直接光反射，也因頂蓋前核向雙側 EW 核投射而引起左眼間接／共感光反射。",
+        "memory": "照一眼，正常兩眼都縮。",
+        "examFocus": [
+          "對側反應稱 consensual，不代表光真的照到對側眼。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正常共感反射不是散瞳。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確，左眼縮瞳。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "右眼應直接縮瞳。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正常雙側路徑下左眼會有反應。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0127",
+      "type": "single",
+      "stem": "瞳孔大小調節，對光線的反應，與下列那個神經系統無關？",
+      "choices": [
+        "第二對腦神經",
+        "第三對腦神經",
+        "第六對腦神經",
+        "自律神經系統"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n瞳孔反射涉及的神經系統\n\n**白話理解**\nCN II 負責光反射傳入，CN III 搭載副交感縮瞳傳出，自律神經控制括約肌與擴大肌；CN VI 只支配外直肌，主要控制眼球外展。\n\n**口訣**\n二進三出加自律；第六只管外直肌。\n\n**考點與解題步驟**\n- 近反應的眼球聚合涉及眼外肌，但瞳孔大小本身仍非 CN VI 控制。\n\n**選項 A：A 選項**\n視神經是光反射傳入。\n\n**選項 B：B 選項**\n動眼神經是縮瞳傳出。\n\n**選項 C：C 選項**\n正確，外旋神經不控制瞳孔。\n\n**選項 D：D 選項**\n交感與副交感皆屬自律神經。\n\n**原始出處**\n驗光生\\眼球構造與倫理法規概要\\107年驗光生普考.pdf；原題編號 21；舊 ID opt-q0127",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光生普考｜眼球構造與倫理法規概要"
+      ],
+      "source_id": "opt-q0127",
+      "source_number": "21",
+      "source_year": "107",
+      "source_subject": "驗光生普考｜眼球構造與倫理法規概要",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "瞳孔反射涉及的神經系統",
+        "simple": "CN II 負責光反射傳入，CN III 搭載副交感縮瞳傳出，自律神經控制括約肌與擴大肌；CN VI 只支配外直肌，主要控制眼球外展。",
+        "memory": "二進三出加自律；第六只管外直肌。",
+        "examFocus": [
+          "近反應的眼球聚合涉及眼外肌，但瞳孔大小本身仍非 CN VI 控制。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "視神經是光反射傳入。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "動眼神經是縮瞳傳出。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確，外旋神經不控制瞳孔。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "交感與副交感皆屬自律神經。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

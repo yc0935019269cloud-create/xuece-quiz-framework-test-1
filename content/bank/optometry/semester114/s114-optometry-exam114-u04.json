@@ -1,0 +1,298 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam114-u04",
+    "subject": "optometry",
+    "name": "瞳距測量與焦度計｜114 年國考",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 年國考",
+      "視光學",
+      "第04單元 瞳距測量與焦度計"
+    ],
+    "order": 4,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0436",
+      "type": "single",
+      "stem": "有一片-5.00 DS 的球鏡，在施做時鏡片中心不小心往瞳孔中心的鼻側偏移4 公釐（mm），往下側偏移3 公 釐，會造什麼樣的稜鏡效果？",
+      "choices": [
+        "1.5Δ 基底朝上，2Δ 基底朝內",
+        "1.5Δ 基底朝下，2Δ 基底朝內",
+        "1.5Δ 基底朝上，2Δ 基底朝外",
+        "2Δ 基底朝上，1.5Δ 基底朝外"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n負鏡鼻下移心\n\n**白話理解**\n負鏡OC鼻移4mm，視軸在顳側周邊，產生2Δ BO；OC下移3mm，視軸在上方周邊，產生1.5Δ BU。\n\n**口訣**\n負鏡OC鼻→BO，OC下→BU。\n\n**考點與解題步驟**\n- 0.4×5=2；0.3×5=1.5。\n\n**選項 A：A 選項**\n水平方向錯。\n\n**選項 B：B 選項**\n兩方向錯。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n量對調。\n\n**原始出處**\n驗光師\\視覺光學\\114年驗光師高考.pdf；原題編號 27；舊 ID opt-q0436",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0436",
+      "source_number": "27",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "負鏡鼻下移心",
+        "simple": "負鏡OC鼻移4mm，視軸在顳側周邊，產生2Δ BO；OC下移3mm，視軸在上方周邊，產生1.5Δ BU。",
+        "memory": "負鏡OC鼻→BO，OC下→BU。",
+        "examFocus": [
+          "0.4×5=2；0.3×5=1.5。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "水平方向錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "兩方向錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "量對調。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0438",
+      "type": "single",
+      "stem": "使用鏡片驗度儀測量眼鏡鏡片度數呈現下圖時（圖A 為-2.00 D，圖B 為-4.00 D），則該鏡片度數為何？",
+      "choices": [
+        "-2.00DS/-4.00DC×135",
+        "-2.00DS/-4.00DC×045",
+        "-2.00DS/-2.00DC×135",
+        "-2.00DS/-2.00DC×045"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n驗度儀圖示處方\n\n**白話理解**\n兩焦線分別在 −2.00 D 與 −4.00 D 清晰，柱鏡差為 −2.00 D；原圖線組方向對應負柱鏡軸 135°，所以為 −2.00 DS/−2.00 DC×135。\n\n**口訣**\n兩讀值差才是cylinder。\n\n**考點與解題步驟**\n- cyl=−4−(−2)=−2D。\n\n**選項 A：A 選項**\n柱量錯成−4。\n\n**選項 B：B 選項**\n量軸皆錯。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n軸錯。\n\n**原始出處**\n驗光師\\隱形眼鏡學與配鏡學\\114年驗光師高考.pdf；原題編號 41；舊 ID opt-q0438",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光師高考｜隱形眼鏡學與配鏡學"
+      ],
+      "source_id": "opt-q0438",
+      "source_number": "41",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜隱形眼鏡學與配鏡學",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "驗度儀圖示處方",
+        "simple": "兩焦線分別在 −2.00 D 與 −4.00 D 清晰，柱鏡差為 −2.00 D；原圖線組方向對應負柱鏡軸 135°，所以為 −2.00 DS/−2.00 DC×135。",
+        "memory": "兩讀值差才是cylinder。",
+        "examFocus": [
+          "cyl=−4−(−2)=−2D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "柱量錯成−4。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "量軸皆錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "軸錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "img": [
+        "img/s114-optometry/114年_驗光師高考_隱形眼鏡學與配鏡學_第41題.png"
+      ]
+    },
+    {
+      "n": "opt-q0443",
+      "type": "single",
+      "stem": "當一副眼鏡對配戴者的右眼產生2ΔBU，左眼產生3ΔBD，這副眼鏡對於配戴者左眼相較於右眼共產生了多 少稜鏡量？",
+      "choices": [
+        "5ΔBU",
+        "5ΔBD",
+        "1ΔBU",
+        "1ΔBD"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n雙眼垂直相對稜鏡\n\n**白話理解**\n右眼2BU與左眼3BD方向相反，相對差相加5Δ；以左眼相對右眼表示為BD。\n\n**口訣**\n一上兩、一下三，相對共五，跟指定眼方向。\n\n**選項 A：A 選項**\n若以右眼表示才BU。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n不應取差1。\n\n**選項 D：D 選項**\n量錯。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\114年驗光生普考.pdf；原題編號 45；舊 ID opt-q0443",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0443",
+      "source_number": "45",
+      "source_year": "114",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "雙眼垂直相對稜鏡",
+        "simple": "右眼2BU與左眼3BD方向相反，相對差相加5Δ；以左眼相對右眼表示為BD。",
+        "memory": "一上兩、一下三，相對共五，跟指定眼方向。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "若以右眼表示才BU。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "不應取差1。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "量錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0444",
+      "type": "single",
+      "stem": "遮住右眼，將稜鏡置於左眼前方，稜鏡的基底朝內（鼻側），則此人所見影像將往被檢者的那一個方向位移？",
+      "choices": [
+        "左方",
+        "右方",
+        "上方",
+        "下方"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n左眼BI影像方向\n\n**白話理解**\n左眼base in基底朝鼻側，即患者右方；影像移向頂點，頂點在患者左方。\n\n**口訣**\n像往apex；左眼BI的像往左。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n是基底方向。\n\n**選項 C：C 選項**\n無垂直。\n\n**選項 D：D 選項**\n無垂直。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\114年驗光生普考.pdf；原題編號 47；舊 ID opt-q0444",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0444",
+      "source_number": "47",
+      "source_year": "114",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "左眼BI影像方向",
+        "simple": "左眼base in基底朝鼻側，即患者右方；影像移向頂點，頂點在患者左方。",
+        "memory": "像往apex；左眼BI的像往左。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "是基底方向。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "無垂直。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "無垂直。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0445",
+      "type": "single",
+      "stem": "當眼睛從光學中心下方10 mm 看出去時，下列那個處方的垂直稜鏡效應最小？",
+      "choices": [
+        "右眼：-2.00DS/-1.00DC×180；左眼：-2.50DS/-1.50DC×180",
+        "右眼：-5.00DS/-1.00DC×180；左眼：-6.00DS/-1.00DC×180",
+        "右眼：+2.00DS/-3.00DC×180；左眼：-0.25DS/-0.50DC×180",
+        "右眼：+1.50DS/-1.50DC×180；左眼：-1.00DS/-1.00DC×180"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n球柱鏡垂直差異稜鏡\n\n**白話理解**\n向下10mm時看90°主經線功率。A：OD−3、OS−4，差1Δ；B：−6與−7.5，差1.5Δ；C：OD−1、OS−0.75，且符號同為負，差0.25Δ；D：OD0、OS−2，差2Δ。故C最小。\n\n**口訣**\n垂直看90°功率，再比較雙眼差。\n\n**考點與解題步驟**\n- A差1；B差1.5；C差0.25；D差2Δ。\n\n**選項 A：A 選項**\n差1Δ。\n\n**選項 B：B 選項**\n差1.5Δ。\n\n**選項 C：C 選項**\n正確，差0.25Δ。\n\n**選項 D：D 選項**\n差2Δ。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\114年驗光生普考.pdf；原題編號 49；舊 ID opt-q0445",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0445",
+      "source_number": "49",
+      "source_year": "114",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "球柱鏡垂直差異稜鏡",
+        "simple": "向下10mm時看90°主經線功率。A：OD−3、OS−4，差1Δ；B：−6與−7.5，差1.5Δ；C：OD−1、OS−0.75，且符號同為負，差0.25Δ；D：OD0、OS−2，差2Δ。故C最小。",
+        "memory": "垂直看90°功率，再比較雙眼差。",
+        "examFocus": [
+          "A差1；B差1.5；C差0.25；D差2Δ。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "差1Δ。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "差1.5Δ。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確，差0.25Δ。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "差2Δ。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

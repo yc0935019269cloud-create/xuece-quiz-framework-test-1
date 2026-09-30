@@ -1,0 +1,677 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam111-u04",
+    "subject": "optometry",
+    "name": "瞳距測量與焦度計｜111 年國考",
+    "year": 111,
+    "path": [
+      "114 大一下",
+      "111 年國考",
+      "視光學",
+      "第04單元 瞳距測量與焦度計"
+    ],
+    "order": 4,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0325",
+      "type": "single",
+      "stem": "近視患者若配戴的矯正眼鏡光學中心距大於瞳孔距時，將產生何種方向的稜鏡效應？",
+      "choices": [
+        "基底朝上",
+        "基底朝下",
+        "基底朝外",
+        "基底朝內"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n負鏡DBOC大\n\n**白話理解**\n視線通過負鏡光心鼻側，負鏡基底朝周邊鼻側，雙眼皆base in。\n\n**口訣**\n負鏡光心在外＝BI。\n\n**選項 A：A 選項**\n非垂直。\n\n**選項 B：B 選項**\n非垂直。\n\n**選項 C：C 選項**\n正鏡才相反。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\111年驗光師高考.pdf；原題編號 7；舊 ID opt-q0325",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0325",
+      "source_number": "7",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "負鏡DBOC大",
+        "simple": "視線通過負鏡光心鼻側，負鏡基底朝周邊鼻側，雙眼皆base in。",
+        "memory": "負鏡光心在外＝BI。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "非垂直。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "非垂直。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正鏡才相反。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0334",
+      "type": "single",
+      "stem": "一光線經過聚碳酸酯稜鏡後，可使光線在距離稜鏡40 cm 處偏移5 cm，則該稜鏡之稜鏡度為何？",
+      "choices": [
+        "8∆",
+        "12.5∆",
+        "0.125∆",
+        "0.08∆"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n短距離稜鏡換算\n\n**白話理解**\n40cm＝0.4m，P＝5cm÷0.4m＝12.5Δ。\n\n**口訣**\n5公分除0.4公尺。\n\n**考點與解題步驟**\n- 5/0.4=12.5。\n\n**選項 A：A 選項**\n低估。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n倒數錯。\n\n**選項 D：D 選項**\n倒數錯。\n\n**原始出處**\n驗光師\\視覺光學\\111年驗光師高考.pdf；原題編號 25；舊 ID opt-q0334",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0334",
+      "source_number": "25",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "短距離稜鏡換算",
+        "simple": "40cm＝0.4m，P＝5cm÷0.4m＝12.5Δ。",
+        "memory": "5公分除0.4公尺。",
+        "examFocus": [
+          "5/0.4=12.5。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "低估。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "倒數錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "倒數錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0335",
+      "type": "single",
+      "stem": "一個凹透鏡度數-5.00 D 的鏡片，透鏡光學中心向外偏移瞳孔中心4 mm，將會產生怎樣的稜鏡效果？",
+      "choices": [
+        "4∆ 基底向外",
+        "4∆ 基底向內",
+        "2∆ 基底向外",
+        "2∆ 基底向內"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n負鏡OC外移\n\n**白話理解**\n光心向外4mm，視軸通過負鏡鼻側周邊，負鏡基底朝鼻側BI；P＝0.4×5＝2Δ。\n\n**口訣**\n負鏡OC外移＝BI。\n\n**考點與解題步驟**\n- 0.4×5=2Δ。\n\n**選項 A：A 選項**\n量大一倍且方向錯。\n\n**選項 B：B 選項**\n量大一倍。\n\n**選項 C：C 選項**\n方向錯。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視覺光學\\111年驗光師高考.pdf；原題編號 26；舊 ID opt-q0335",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0335",
+      "source_number": "26",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "負鏡OC外移",
+        "simple": "光心向外4mm，視軸通過負鏡鼻側周邊，負鏡基底朝鼻側BI；P＝0.4×5＝2Δ。",
+        "memory": "負鏡OC外移＝BI。",
+        "examFocus": [
+          "0.4×5=2Δ。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "量大一倍且方向錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "量大一倍。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "方向錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0336",
+      "type": "single",
+      "stem": "患者眼鏡度數分別為OD：-4.25DS /-1.50DC×180，OS：+0.50DS/-1.25DC×180，其眼鏡被小孩弄歪往他 的右邊偏4 mm，且向下滑落3 mm。此時患者雙眼同時看出去時感受的稜鏡效應為何？",
+      "choices": [
+        "右眼有1.5∆基底朝外，同時左眼有1.5∆基底朝上",
+        "左眼有1.5∆基底朝外，同時右眼有1.5∆基底朝上",
+        "右眼有1.9∆基底朝內，同時左眼有1.5∆基底朝下",
+        "左眼有1.9∆基底朝外，同時右眼有1.5∆基底朝下"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n球柱鏡架位移的雙眼等效稜鏡\n\n**白話理解**\n鏡架右移、下滑後，各眼球柱鏡在水平與垂直方向產生不同稜鏡；將共同yoked分量消去並以雙眼相對效果表示，對應右眼1.9Δ BI與左眼1.5Δ BD。\n\n**口訣**\n此類題先分方向功率，再轉成雙眼相對表示。\n\n**選項 A：A 選項**\n眼別與方向不符。\n\n**選項 B：B 選項**\n不符。\n\n**選項 C：C 選項**\n題庫正解。\n\n**選項 D：D 選項**\n水平眼別與方向錯。\n\n**原始出處**\n驗光師\\隱形眼鏡學與配鏡學\\111年驗光師高考.pdf；原題編號 40；舊 ID opt-q0336",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光師高考｜隱形眼鏡學與配鏡學"
+      ],
+      "source_id": "opt-q0336",
+      "source_number": "40",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜隱形眼鏡學與配鏡學",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "球柱鏡架位移的雙眼等效稜鏡",
+        "simple": "鏡架右移、下滑後，各眼球柱鏡在水平與垂直方向產生不同稜鏡；將共同yoked分量消去並以雙眼相對效果表示，對應右眼1.9Δ BI與左眼1.5Δ BD。",
+        "memory": "此類題先分方向功率，再轉成雙眼相對表示。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "眼別與方向不符。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "不符。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "題庫正解。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "水平眼別與方向錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0337",
+      "type": "single",
+      "stem": "有關半自動驗度儀（lensometer）之敘述，下列何者錯誤？",
+      "choices": [
+        "目鏡（eyepiece）需要在使用前先對焦",
+        "透過散光軸度轉輪（cylinder axis wheel）可以知道散光度數的軸度與稜鏡度",
+        "透鏡夾（lens stop）可以夾住鏡片穩定放置到載鏡平台（spectacle table）上",
+        "光學標記器（ink marker）可以打點到在鏡片上標記光學中心點"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n半自動驗度儀部件\n\n**白話理解**\n稜鏡量由reticle上target偏心讀取；eyepiece先調焦、lens stop固定鏡片、marker標記光心皆正確。\n\n**口訣**\naxis wheel看軸；reticle看prism。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n錯誤。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\隱形眼鏡學與配鏡學\\111年驗光師高考.pdf；原題編號 41；舊 ID opt-q0337",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光師高考｜隱形眼鏡學與配鏡學"
+      ],
+      "source_id": "opt-q0337",
+      "source_number": "41",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜隱形眼鏡學與配鏡學",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "半自動驗度儀部件",
+        "simple": "稜鏡量由reticle上target偏心讀取；eyepiece先調焦、lens stop固定鏡片、marker標記光心皆正確。",
+        "memory": "axis wheel看軸；reticle看prism。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0338",
+      "type": "single",
+      "stem": "使用驗度儀量測漸進多焦點鏡片時，如何量測及計算可以準確得到加入度？",
+      "choices": [
+        "近用參考圈之前頂點屈光力減遠用參考圈之後頂點屈光力",
+        "近用參考圈之後頂點屈光力減遠用參考圈之前頂點屈光力",
+        "近用參考圈之前頂點屈光力減遠用參考圈之前頂點屈光力",
+        "近用參考圈之後頂點屈光力減遠用參考圈之後頂點屈光力"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n漸進鏡ADD量測\n\n**白話理解**\n多焦鏡ADD應在相同頂點基準下比較；量前頂點時近、遠區都以前頂點力相減。\n\n**口訣**\n近遠必須用同一頂點基準。\n\n**選項 A：A 選項**\n混用前後頂點。\n\n**選項 B：B 選項**\n混用。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n若按本題指定量法非答案。\n\n**原始出處**\n驗光師\\隱形眼鏡學與配鏡學\\111年驗光師高考.pdf；原題編號 50；舊 ID opt-q0338",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光師高考｜隱形眼鏡學與配鏡學"
+      ],
+      "source_id": "opt-q0338",
+      "source_number": "50",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜隱形眼鏡學與配鏡學",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "漸進鏡ADD量測",
+        "simple": "多焦鏡ADD應在相同頂點基準下比較；量前頂點時近、遠區都以前頂點力相減。",
+        "memory": "近遠必須用同一頂點基準。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "混用前後頂點。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "混用。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "若按本題指定量法非答案。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0346",
+      "type": "single",
+      "stem": "假如使用驗度儀去測量鏡片，右眼鏡片測量到2∆BU 和左眼鏡片測量到3∆BD，下列敘述何者正確？",
+      "choices": [
+        "對於配戴者右眼來說產生5∆BU",
+        "對於配戴者左眼來說產生5∆BU",
+        "對於配戴者右眼來說產生1∆BU",
+        "對於配戴者左眼來說產生1∆BU"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n雙眼垂直稜鏡等效\n\n**白話理解**\nOD 2BU與OS 3BD為相反基底，造成的雙眼垂直差相加5Δ；可全數等效寫在右眼為5BU。\n\n**口訣**\n一BU一BD，相對量相加。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n若寫左眼應5BD。\n\n**選項 C：C 選項**\n不是取差。\n\n**選項 D：D 選項**\n量方向皆錯。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\111年驗光生普考.pdf；原題編號 44；舊 ID opt-q0346",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0346",
+      "source_number": "44",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "雙眼垂直稜鏡等效",
+        "simple": "OD 2BU與OS 3BD為相反基底，造成的雙眼垂直差相加5Δ；可全數等效寫在右眼為5BU。",
+        "memory": "一BU一BD，相對量相加。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "若寫左眼應5BD。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "不是取差。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "量方向皆錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0347",
+      "type": "single",
+      "stem": "患者左眼鏡片處方+1.50DS/-2.50DC×090，右眼鏡片處方-1.00DS/-1.00DC×180，雙眼鏡片中心間距 （DBOC）為62 mm，雙眼配戴眼鏡後產生0.4∆基底朝外的稜鏡量，求患者的雙眼瞳距（PD）？",
+      "choices": [
+        "58 mm",
+        "60 mm",
+        "64 mm",
+        "66 mm"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n由誘發稜鏡反推PD\n\n**白話理解**\nDBOC62mm與PD差造成0.4Δ BO。依兩眼水平有效功率與偏心分配反推，PD需比DBOC大4mm，即66mm，視線在負／混合鏡片相對位置產生題述BO差。\n\n**口訣**\n本題答案對應PD比DBOC大4mm。\n\n**選項 A：A 選項**\n差向相反。\n\n**選項 B：B 選項**\n偏心不足。\n\n**選項 C：C 選項**\n差2mm。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\111年驗光生普考.pdf；原題編號 47；舊 ID opt-q0347",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0347",
+      "source_number": "47",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "由誘發稜鏡反推PD",
+        "simple": "DBOC62mm與PD差造成0.4Δ BO。依兩眼水平有效功率與偏心分配反推，PD需比DBOC大4mm，即66mm，視線在負／混合鏡片相對位置產生題述BO差。",
+        "memory": "本題答案對應PD比DBOC大4mm。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "差向相反。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "偏心不足。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "差2mm。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0348",
+      "type": "single",
+      "stem": "鏡片度數為-5.50 D，其向外偏移2 mm，向下偏移3 mm，其產生的稜鏡效應為何？",
+      "choices": [
+        "1.1∆基底朝內，1.65∆基底朝下",
+        "1.1∆基底朝內，1.65∆基底朝上",
+        "1.65∆基底朝外，1.1∆基底朝上",
+        "1.65∆基底朝外，1.1∆基底朝下"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n負球鏡二維偏心\n\n**白話理解**\n負鏡光心向外2mm，使視軸通過鼻側周邊，P=0.2×5.5=1.1BI；光心向下3mm，使視軸在上方周邊，P=0.3×5.5=1.65BU。\n\n**口訣**\n負鏡OC外→BI，OC下→BU。\n\n**考點與解題步驟**\n- 水平1.1；垂直1.65。\n\n**選項 A：A 選項**\n垂直方向錯。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n量與方向錯。\n\n**選項 D：D 選項**\n量對調。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\111年驗光生普考.pdf；原題編號 48；舊 ID opt-q0348",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0348",
+      "source_number": "48",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "負球鏡二維偏心",
+        "simple": "負鏡光心向外2mm，使視軸通過鼻側周邊，P=0.2×5.5=1.1BI；光心向下3mm，使視軸在上方周邊，P=0.3×5.5=1.65BU。",
+        "memory": "負鏡OC外→BI，OC下→BU。",
+        "examFocus": [
+          "水平1.1；垂直1.65。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "垂直方向錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "量與方向錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "量對調。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0349",
+      "type": "single",
+      "stem": "若稜鏡度數為0.5∆，使物體位移了50 mm，則該物體與稜鏡之距離為何？",
+      "choices": [
+        "5 m",
+        "50 cm",
+        "100 cm",
+        "10 m"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n稜鏡反算距離\n\n**白話理解**\n50mm＝5cm；d＝偏移/Δ＝5/0.5＝10m。\n\n**口訣**\n5公分除0.5Δ。\n\n**考點與解題步驟**\n- 5÷0.5=10m。\n\n**選項 A：A 選項**\n少一半。\n\n**選項 B：B 選項**\n單位錯。\n\n**選項 C：C 選項**\n單位錯。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\111年驗光生普考.pdf；原題編號 50；舊 ID opt-q0349",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0349",
+      "source_number": "50",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "稜鏡反算距離",
+        "simple": "50mm＝5cm；d＝偏移/Δ＝5/0.5＝10m。",
+        "memory": "5公分除0.5Δ。",
+        "examFocus": [
+          "5÷0.5=10m。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "少一半。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "單位錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "單位錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0356",
+      "type": "single",
+      "stem": "有關驗度儀（lensometer）的測量可以獲得下列何種資訊？ ①後頂點屈光度（back vertex power）②前表面弧度（front surface curvature）③光學中心位置（optical center position）",
+      "choices": [
+        "僅①②",
+        "僅②③",
+        "僅①③",
+        "①②③"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n驗度儀資訊\n\n**白話理解**\nlensometer量鏡片頂點屈光力、軸、ADD、prism與光心；不直接量前表面曲率。\n\n**口訣**\n量度數和光心，不量表面弧度。\n\n**選項 A：A 選項**\n②錯。\n\n**選項 B：B 選項**\n②錯。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n②錯。\n\n**原始出處**\n驗光生\\驗光學概要\\111年驗光生普考.pdf；原題編號 23；舊 ID opt-q0356",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0356",
+      "source_number": "23",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "驗度儀資訊",
+        "simple": "lensometer量鏡片頂點屈光力、軸、ADD、prism與光心；不直接量前表面曲率。",
+        "memory": "量度數和光心，不量表面弧度。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "②錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "②錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "②錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0357",
+      "type": "single",
+      "stem": "用驗度儀檢測到患者眼鏡的右眼鏡-5.00 D，戴上眼鏡之後，患者的視線軸在水平線上向外側偏離光學中心 4 mm，這稜鏡效應為：",
+      "choices": [
+        "右眼2 稜鏡度基底朝外",
+        "右眼2 稜鏡度基底朝內",
+        "右眼2 稜鏡度基底朝上",
+        "右眼2 稜鏡度基底朝下"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n負鏡顳側觀看\n\n**白話理解**\n視線在負鏡光心外側4mm，P=0.4×5=2Δ；負鏡基底朝周邊外側，故BO。\n\n**口訣**\n負鏡看外側＝BO。\n\n**考點與解題步驟**\n- 0.4×5=2Δ。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n方向錯。\n\n**選項 C：C 選項**\n非垂直。\n\n**選項 D：D 選項**\n非垂直。\n\n**原始出處**\n驗光生\\驗光學概要\\111年驗光生普考.pdf；原題編號 27；舊 ID opt-q0357",
+      "tags": [
+        "瞳距測量與焦度計",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0357",
+      "source_number": "27",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "負鏡顳側觀看",
+        "simple": "視線在負鏡光心外側4mm，P=0.4×5=2Δ；負鏡基底朝周邊外側，故BO。",
+        "memory": "負鏡看外側＝BO。",
+        "examFocus": [
+          "0.4×5=2Δ。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "方向錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "非垂直。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "非垂直。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

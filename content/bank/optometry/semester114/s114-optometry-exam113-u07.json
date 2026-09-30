@@ -1,0 +1,73 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam113-u07",
+    "subject": "optometry",
+    "name": "瞳孔反應：光反射、RAPD 與 Horner syndrome｜113 年國考",
+    "year": 113,
+    "path": [
+      "114 大一下",
+      "113 年國考",
+      "視光學",
+      "第07單元 瞳孔反應：光反射、RAPD 與 Horner syndrome"
+    ],
+    "order": 7,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0405",
+      "type": "single",
+      "stem": "下列那一項藥物無法使瞳孔散大（mydriasis）？",
+      "choices": [
+        "托吡卡胺（tropicamide）",
+        "阿托平（atropine）",
+        "毛果芸香鹼（pilocarpine）",
+        "古柯鹼（cocaine）"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n瞳孔藥理\n\n**白話理解**\n毛果芸香鹼為muscarinic agonist，使括約肌與睫狀肌收縮；tropicamide、atropine阻斷副交感，cocaine增強交感，皆可散瞳。\n\n**口訣**\npilocarpine縮瞳；tropicamide/atropine散瞳。\n\n**選項 A：A 選項**\n可散瞳。\n\n**選項 B：B 選項**\n可。\n\n**選項 C：C 選項**\n正確，造成縮瞳。\n\n**選項 D：D 選項**\n可散瞳。\n\n**原始出處**\n驗光師\\眼球解剖生理學與倫理法規\\113年驗光師高考.pdf；原題編號 27；舊 ID opt-q0405",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜眼球解剖生理學與倫理法規"
+      ],
+      "source_id": "opt-q0405",
+      "source_number": "27",
+      "source_year": "113",
+      "source_subject": "驗光師高考｜眼球解剖生理學與倫理法規",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "瞳孔藥理",
+        "simple": "毛果芸香鹼為muscarinic agonist，使括約肌與睫狀肌收縮；tropicamide、atropine阻斷副交感，cocaine增強交感，皆可散瞳。",
+        "memory": "pilocarpine縮瞳；tropicamide/atropine散瞳。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "可散瞳。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "可。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確，造成縮瞳。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "可散瞳。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

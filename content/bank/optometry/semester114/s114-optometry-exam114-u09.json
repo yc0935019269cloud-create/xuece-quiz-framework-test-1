@@ -1,0 +1,239 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam114-u09",
+    "subject": "optometry",
+    "name": "近點調節 NPA 與近點聚合 NPC｜114 年國考",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 年國考",
+      "視光學",
+      "第09單元 近點調節 NPA 與近點聚合 NPC"
+    ],
+    "order": 9,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0427",
+      "type": "single",
+      "stem": "近距離反射（near reflex）不包括那一項？",
+      "choices": [
+        "調節（accommodation）",
+        "開散（divergence）",
+        "內聚（convergence）",
+        "縮瞳（miosis）"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n近反射三聯\n\n**白話理解**\nnear triad為調節、內聚、縮瞳；開散是看遠方向。\n\n**口訣**\n調節、內聚、縮瞳。\n\n**選項 A：A 選項**\n包括。\n\n**選項 B：B 選項**\n正確，不包括。\n\n**選項 C：C 選項**\n包括。\n\n**選項 D：D 選項**\n包括。\n\n**原始出處**\n驗光師\\眼球解剖生理學與倫理法規\\114年驗光師高考.pdf；原題編號 25；舊 ID opt-q0427",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光師高考｜眼球解剖生理學與倫理法規"
+      ],
+      "source_id": "opt-q0427",
+      "source_number": "25",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜眼球解剖生理學與倫理法規",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "近反射三聯",
+        "simple": "near triad為調節、內聚、縮瞳；開散是看遠方向。",
+        "memory": "調節、內聚、縮瞳。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "包括。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確，不包括。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "包括。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "包括。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0434",
+      "type": "single",
+      "stem": "若一正視眼習慣於眼前40 公分處閱讀，其調節幅度為2.0 D，請問一開始要加上多少度的老花度數讓病人 試戴？",
+      "choices": [
+        "1.0 D",
+        "1.5 D",
+        "2.0 D",
+        "2.5 D"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n半幅AA起始ADD\n\n**白話理解**\n40cm需求2.5D，AA2D依半幅原則只用1D，ADD=1.5D。\n\n**口訣**\n需求2.5減可用1。\n\n**考點與解題步驟**\n- 2.5−1=1.5D。\n\n**選項 A：A 選項**\n需用超過半幅。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n偏高。\n\n**選項 D：D 選項**\n完全不用調節。\n\n**原始出處**\n驗光師\\視光學\\114年驗光師高考.pdf；原題編號 30；舊 ID opt-q0434",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0434",
+      "source_number": "30",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "半幅AA起始ADD",
+        "simple": "40cm需求2.5D，AA2D依半幅原則只用1D，ADD=1.5D。",
+        "memory": "需求2.5減可用1。",
+        "examFocus": [
+          "2.5−1=1.5D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "需用超過半幅。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "偏高。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "完全不用調節。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0440",
+      "type": "single",
+      "stem": "下列選項的每一位患者都有相同的調節幅度，則關於調節近點（near point of accommodation）的敘述，何 者最正確？",
+      "choices": [
+        "只有正視眼患者的調節近點最靠近眼睛",
+        "只有以隱形眼鏡完全矯正的-5.00 D 近視眼患者的調節近點最靠近眼睛",
+        "只有以隱形眼鏡完全矯正的+5.00 D 遠視眼患者的調節近點最靠近眼睛",
+        "以上各患者的眼調節近點皆相同"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n完全矯正後近點\n\n**白話理解**\n正視、近視與遠視若皆以隱形眼鏡完全矯正至遠點無限遠，且AA相同，近點屈光需求一致。\n\n**口訣**\n遠點都歸零後，NPA只看AA。\n\n**選項 A：A 選項**\n矯正後無此差。\n\n**選項 B：B 選項**\n無。\n\n**選項 C：C 選項**\n無。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\114年驗光生普考.pdf；原題編號 5；舊 ID opt-q0440",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0440",
+      "source_number": "5",
+      "source_year": "114",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "完全矯正後近點",
+        "simple": "正視、近視與遠視若皆以隱形眼鏡完全矯正至遠點無限遠，且AA相同，近點屈光需求一致。",
+        "memory": "遠點都歸零後，NPA只看AA。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "矯正後無此差。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "無。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "無。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0441",
+      "type": "single",
+      "stem": "有一位近視-5.00 D 者配戴-2.00 D 矯正眼鏡後，請問此時他的遠點位置位於：",
+      "choices": [
+        "眼前方33.33 公分處",
+        "眼後方33.33 公分處",
+        "眼前方20.00 公分處",
+        "眼後方20.00 公分處"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n部分矯正近視遠點\n\n**白話理解**\n原近視−5D只戴−2D，殘留−3D；遠點=1/3m=33.3cm眼前。\n\n**口訣**\n剩3D近視，遠點33cm。\n\n**考點與解題步驟**\n- −5−(−2)=−3D→33.3cm。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n方向錯。\n\n**選項 C：C 選項**\n是裸眼−5D遠點。\n\n**選項 D：D 選項**\n方向與量錯。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\114年驗光生普考.pdf；原題編號 10；舊 ID opt-q0441",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0441",
+      "source_number": "10",
+      "source_year": "114",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "部分矯正近視遠點",
+        "simple": "原近視−5D只戴−2D，殘留−3D；遠點=1/3m=33.3cm眼前。",
+        "memory": "剩3D近視，遠點33cm。",
+        "examFocus": [
+          "−5−(−2)=−3D→33.3cm。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "方向錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "是裸眼−5D遠點。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "方向與量錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

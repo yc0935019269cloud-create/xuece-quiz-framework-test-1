@@ -1,0 +1,127 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam111-u07",
+    "subject": "optometry",
+    "name": "瞳孔反應：光反射、RAPD 與 Horner syndrome｜111 年國考",
+    "year": 111,
+    "path": [
+      "114 大一下",
+      "111 年國考",
+      "視光學",
+      "第07單元 瞳孔反應：光反射、RAPD 與 Horner syndrome"
+    ],
+    "order": 7,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0324",
+      "type": "single",
+      "stem": "有關瞳孔直接光反射的反應路徑順序，下列何者正確？①視徑（optic tract） ②動眼神經的副交感神經核 （Edinger-Westphal nucleus） ③前頂蓋核（pretectal nucleus） ④眼眶的睫狀神經節（ciliary ganglion） ⑤瞳孔收縮肌",
+      "choices": [
+        "①②③④⑤",
+        "①③②④⑤",
+        "①④②③⑤",
+        "②①③④⑤"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n光反射順序\n\n**白話理解**\n光反射傳入由視束分支到pretectal，再雙側投射EW；節前隨CNIII到睫狀節，節後至括約肌。\n\n**口訣**\ntract→pretectal→EW→ciliary→sphincter。\n\n**選項 A：A 選項**\npretectal與EW順序反。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n睫狀節過早。\n\n**選項 D：D 選項**\n起點錯。\n\n**原始出處**\n驗光師\\眼球解剖生理學與倫理法規\\111年驗光師高考.pdf；原題編號 27；舊 ID opt-q0324",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜眼球解剖生理學與倫理法規"
+      ],
+      "source_id": "opt-q0324",
+      "source_number": "27",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜眼球解剖生理學與倫理法規",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "光反射順序",
+        "simple": "光反射傳入由視束分支到pretectal，再雙側投射EW；節前隨CNIII到睫狀節，節後至括約肌。",
+        "memory": "tract→pretectal→EW→ciliary→sphincter。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "pretectal與EW順序反。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "睫狀節過早。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "起點錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0327",
+      "type": "single",
+      "stem": "相對性瞳孔傳入障礙（relative afferent pupillary defect, RAPD）應該是在瞳孔光反射檢查的那個步驟發現的？",
+      "choices": [
+        "直接反應（direct response）",
+        "間接反應（consensual response）",
+        "筆燈搖擺測試（swinging flashlight test）",
+        "瞳孔調節反應（accommodative response of pupil）"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nRAPD檢查\n\n**白話理解**\n交替照兩眼比較傳入訊號強弱；照到患眼時雙眼相對散大即RAPD。\n\n**口訣**\nRAPD就搖手電筒。\n\n**選項 A：A 選項**\n單次direct不易比較。\n\n**選項 B：B 選項**\n同理。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n測近反應。\n\n**原始出處**\n驗光師\\視光學\\111年驗光師高考.pdf；原題編號 11；舊 ID opt-q0327",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0327",
+      "source_number": "11",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "RAPD檢查",
+        "simple": "交替照兩眼比較傳入訊號強弱；照到患眼時雙眼相對散大即RAPD。",
+        "memory": "RAPD就搖手電筒。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "單次direct不易比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "同理。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "測近反應。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

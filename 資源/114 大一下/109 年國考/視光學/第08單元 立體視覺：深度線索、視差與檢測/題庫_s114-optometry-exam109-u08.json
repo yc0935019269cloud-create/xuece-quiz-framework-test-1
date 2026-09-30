@@ -1,0 +1,73 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam109-u08",
+    "subject": "optometry",
+    "name": "立體視覺：深度線索、視差與檢測｜109 年國考",
+    "year": 109,
+    "path": [
+      "114 大一下",
+      "109 年國考",
+      "視光學",
+      "第08單元 立體視覺：深度線索、視差與檢測"
+    ],
+    "order": 8,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0278",
+      "type": "single",
+      "stem": "下列何者的視覺問題較不會造成立體視（stereopsis）異常？",
+      "choices": [
+        "斜視",
+        "色弱",
+        "屈光異常",
+        "弱視"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n立體視影響因素\n\n**白話理解**\n斜視、未矯正屈光異常與弱視會破壞雙眼清晰、對位與融合；一般色覺異常較少影響雙眼視差。\n\n**口訣**\n立體視怕斜、糊、弱視，不太怕色弱。\n\n**選項 A：A 選項**\n常影響。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n可影響。\n\n**選項 D：D 選項**\n常影響。\n\n**原始出處**\n驗光生\\驗光學概要\\109年驗光生普考.pdf；原題編號 17；舊 ID opt-q0278",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0278",
+      "source_number": "17",
+      "source_year": "109",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "立體視影響因素",
+        "simple": "斜視、未矯正屈光異常與弱視會破壞雙眼清晰、對位與融合；一般色覺異常較少影響雙眼視差。",
+        "memory": "立體視怕斜、糊、弱視，不太怕色弱。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "常影響。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "可影響。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "常影響。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

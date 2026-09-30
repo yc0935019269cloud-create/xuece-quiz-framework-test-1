@@ -1,0 +1,73 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam110-u07",
+    "subject": "optometry",
+    "name": "瞳孔反應：光反射、RAPD 與 Horner syndrome｜110 年國考",
+    "year": 110,
+    "path": [
+      "114 大一下",
+      "110 年國考",
+      "視光學",
+      "第07單元 瞳孔反應：光反射、RAPD 與 Horner syndrome"
+    ],
+    "order": 7,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0289",
+      "type": "single",
+      "stem": "有關瞳孔的反應，下列何者錯誤？",
+      "choices": [
+        "瞳孔對光的反應要經過大腦枕葉皮質（occipital cortex）",
+        "看近物時瞳孔會縮小",
+        "嚴重的白內障雖然視力已很模糊但並不影響瞳孔對光的反應",
+        "光照向正常眼時，失明的眼睛瞳孔仍會有反應"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n皮質與瞳孔反射\n\n**白話理解**\n反射在中腦頂蓋前區與EW核完成。近反應縮瞳；嚴重白內障若仍可傳光，光反射可保存；照正常眼可經雙側EW使失明眼共感縮瞳。\n\n**口訣**\n對光反射不用上枕葉。\n\n**選項 A：A 選項**\n錯誤。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n大致正確。\n\n**選項 D：D 選項**\n若失明眼傳出路徑完整，可有共感反應。\n\n**原始出處**\n驗光師\\低視力學\\110年驗光師高考.pdf；原題編號 43；舊 ID opt-q0289",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜低視力學"
+      ],
+      "source_id": "opt-q0289",
+      "source_number": "43",
+      "source_year": "110",
+      "source_subject": "驗光師高考｜低視力學",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "皮質與瞳孔反射",
+        "simple": "反射在中腦頂蓋前區與EW核完成。近反應縮瞳；嚴重白內障若仍可傳光，光反射可保存；照正常眼可經雙側EW使失明眼共感縮瞳。",
+        "memory": "對光反射不用上枕葉。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "大致正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "若失明眼傳出路徑完整，可有共感反應。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 const fs = require('fs'), path = require('path'), vm = require('vm');
 const root = path.resolve(__dirname, '..');
-const out = path.join(root, '資源', '114 大一下', '_來源');
+const out = path.join(root, '資源', '114 大一下', '.來源');
 function extract(file) {
   const context = {window: {}, console};
   vm.createContext(context);
@@ -27,3 +27,17 @@ for (const host of fs.readdirSync(out).filter(s=>!s.startsWith('_'))) {
     for(const [k,v] of Object.entries(b)) if(Array.isArray(v)) console.log(k,v.length,JSON.stringify(v[0]).slice(0,4500));
   }
 }
+function snippet(file, start, end, exports) {
+  const source=fs.readFileSync(file,'utf8');
+  const context={window:{}}; vm.createContext(context);
+  vm.runInContext(source.slice(source.indexOf(start),source.indexOf(end))+`;window.result={${exports}};`,context);
+  return context.window.result;
+}
+const rapid=path.join(out,'glittering-pony-c07f88/assets/rapid.js');
+const rescue=path.join(out,'gleeful-paletas-d56a9b/index.html');
+const supplements={
+  rapid:snippet(rapid,'  const glossary=','  const done=', 'glossary,babySprint,babyWords'),
+  rescue:snippet(rescue,'const CH =','const grid =','CH,REPS'),
+  highyield:extract(path.join(out,'lustrous-malasada-6d28a9/assets/high-yield.js')).PHYSIO_HIGH_YIELD
+};
+fs.writeFileSync(path.join(out,'_supplements.json'),JSON.stringify(supplements,null,2));

@@ -1,0 +1,569 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam108-u05",
+    "subject": "optometry",
+    "name": "客觀驗光：視網膜檢影與綜合驗光儀｜108 年國考",
+    "year": 108,
+    "path": [
+      "114 大一下",
+      "108 年國考",
+      "視光學",
+      "第05單元 客觀驗光：視網膜檢影與綜合驗光儀"
+    ],
+    "order": 5,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0150",
+      "type": "single",
+      "stem": "有關視網膜檢影鏡（retinoscopy）檢查的敘述，下列何者最不適當？",
+      "choices": [
+        "斷裂現象（break phenomenon）是指散光的病人在瞳孔內的反光有可能與視網膜鏡的光線（streak）不 連續",
+        "斷裂現象可以幫助我們去找散光的軸度",
+        "偏移現象（skew phenomenon）可以幫助我們去找散光的軸度",
+        "偏移現象是指在不同的經緯度（meridian）檢查散光的病人時，其反光的厚度會不一樣"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n散光檢影現象\n\n**白話理解**\nskew 是光帶與反光未對準散光軸時出現斜向移動，可用於定軸；不同經線反光厚薄不同稱 thickness phenomenon。\n\n**口訣**\n厚薄叫 thickness；斜著跑叫 skew。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n錯誤，將 thickness 說成 skew。\n\n**原始出處**\n驗光師\\視光學\\108年驗光師特考.pdf；原題編號 16；舊 ID opt-q0150",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師特考｜視光學"
+      ],
+      "source_id": "opt-q0150",
+      "source_number": "16",
+      "source_year": "108",
+      "source_subject": "驗光師特考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "散光檢影現象",
+        "simple": "skew 是光帶與反光未對準散光軸時出現斜向移動，可用於定軸；不同經線反光厚薄不同稱 thickness phenomenon。",
+        "memory": "厚薄叫 thickness；斜著跑叫 skew。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "錯誤，將 thickness 說成 skew。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0151",
+      "type": "single",
+      "stem": "視網膜檢影鏡檢查距離病患眼睛66 cm 投射平行光，使用鏡片-3.50 D 在垂直方向呈現中和，-2.00 D 在180 度呈現水平方向，病患此眼屈光狀態最可能為何？",
+      "choices": [
+        "-5.50DS/-3.50DC×180",
+        "-1.50DS/-1.50DC×090",
+        "-3.50DS/-1.50DC×180",
+        "-3.50DS/-1.50DC×090"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n散光檢影修正\n\n**白話理解**\n66 cm WD 約 1.50 D。兩毛值 −3.50、−2.00 修正後為 −5.00、−3.50 D；負柱式以較正 −3.50 作球面，差 −1.50，軸180。\n\n**口訣**\n兩軸都減1.5，較正者寫負柱球面。\n\n**考點與解題步驟**\n- 主經線＝−5.00、−3.50；處方−3.50/−1.50×180。\n\n**選項 A：A 選項**\n柱鏡量錯。\n\n**選項 B：B 選項**\n漏或錯配WD。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n軸錯。\n\n**原始出處**\n驗光師\\視光學\\108年驗光師特考.pdf；原題編號 18；舊 ID opt-q0151",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師特考｜視光學"
+      ],
+      "source_id": "opt-q0151",
+      "source_number": "18",
+      "source_year": "108",
+      "source_subject": "驗光師特考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "散光檢影修正",
+        "simple": "66 cm WD 約 1.50 D。兩毛值 −3.50、−2.00 修正後為 −5.00、−3.50 D；負柱式以較正 −3.50 作球面，差 −1.50，軸180。",
+        "memory": "兩軸都減1.5，較正者寫負柱球面。",
+        "examFocus": [
+          "主經線＝−5.00、−3.50；處方−3.50/−1.50×180。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "柱鏡量錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "漏或錯配WD。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "軸錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0161",
+      "type": "single",
+      "stem": "有關利用鏡片組（lens rack）做視網膜檢影鏡檢查，下列敘述何者最不適當？",
+      "choices": [
+        "要中和一般的規則性散光，兩個主要的經緯度（meridians）要分別操作",
+        "如果達到中和點（neutrality），此時改變視網膜檢影鏡的套筒（sleeve）的位置，由下而上或者由上而 下，會發現依然維持在中和點",
+        "達到中和點所使用的鏡片即是病人的度數",
+        "可以根據視網膜檢影鏡檢查的結果為病人做矯正視力的檢測"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n檢影中和毛值\n\n**白話理解**\n若未使用正確工作輔助鏡，達中和的毛值仍需扣工作距離；散光需分主經線中和，結果可作後續主觀驗光起點。\n\n**口訣**\n中和鏡≠處方，先問工作距離。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n中和後改套筒仍無相對移動的敘述依題意成立。\n\n**選項 C：C 選項**\n錯誤，尚需WD修正。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\108年驗光師高考.pdf；原題編號 14；舊 ID opt-q0161",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0161",
+      "source_number": "14",
+      "source_year": "108",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "檢影中和毛值",
+        "simple": "若未使用正確工作輔助鏡，達中和的毛值仍需扣工作距離；散光需分主經線中和，結果可作後續主觀驗光起點。",
+        "memory": "中和鏡≠處方，先問工作距離。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "中和後改套筒仍無相對移動的敘述依題意成立。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "錯誤，尚需WD修正。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0162",
+      "type": "single",
+      "stem": "視網膜檢影鏡檢查投射平行光，使用+1.50 D 鏡片，距離病患眼睛66 cm 於180 度方向掃描呈現中和點， 同樣投射平行光使用+1.50 D 鏡片，距離病患同一眼50 cm 於90 度方向掃描，呈現中和點，則此病患眼 屈光狀態為何？",
+      "choices": [
+        "plano/-0.50DC×180",
+        "+3.00DS/-1.50DC×090",
+        "+1.50DS/-1.50DC×180",
+        "+1.50DS/-1.50DC×090"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n不同距離主經線中和\n\n**白話理解**\n180方向66cm中和：+1.5−1.5＝0D；90方向50cm中和：+1.5−2＝−0.5D，故負柱式 plano/−0.50×180。\n\n**口訣**\n每軸各減自己的WD。\n\n**考點與解題步驟**\n- 兩主經線0與−0.5D。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n度數過正。\n\n**選項 C：C 選項**\n未扣WD。\n\n**選項 D：D 選項**\n未扣WD且軸錯。\n\n**原始出處**\n驗光師\\視光學\\108年驗光師高考.pdf；原題編號 17；舊 ID opt-q0162",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0162",
+      "source_number": "17",
+      "source_year": "108",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "不同距離主經線中和",
+        "simple": "180方向66cm中和：+1.5−1.5＝0D；90方向50cm中和：+1.5−2＝−0.5D，故負柱式 plano/−0.50×180。",
+        "memory": "每軸各減自己的WD。",
+        "examFocus": [
+          "兩主經線0與−0.5D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "度數過正。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "未扣WD。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "未扣WD且軸錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0166",
+      "type": "single",
+      "stem": "透過檢影鏡檢查患者之屈光度數，在距離患者67 cm 處，測得軸度10 度方向的中和點度數為-6.25 D，在 軸度100 度方向為-5.75 D，此患者的屈光度數為何？",
+      "choices": [
+        "-5.75DS/-0.50DC×010",
+        "-6.25DS/-0.50DC×100",
+        "-7.25DS/-0.50DC×100",
+        "-7.75DS/-0.50DC×010"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n斜散光檢影\n\n**白話理解**\n67cm兩毛值各減1.50，得−7.75與−7.25 D；負柱式以較正−7.25作sphere，差−0.50，軸100。\n\n**口訣**\n都減1.5，較正者當負柱球面。\n\n**考點與解題步驟**\n- −6.25−1.5＝−7.75；−5.75−1.5＝−7.25。\n\n**選項 A：A 選項**\n漏扣WD。\n\n**選項 B：B 選項**\n球面與軸不符。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n把較負經線作sphere。\n\n**原始出處**\n驗光師\\視覺光學\\108年驗光師高考.pdf；原題編號 24；舊 ID opt-q0166",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0166",
+      "source_number": "24",
+      "source_year": "108",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "斜散光檢影",
+        "simple": "67cm兩毛值各減1.50，得−7.75與−7.25 D；負柱式以較正−7.25作sphere，差−0.50，軸100。",
+        "memory": "都減1.5，較正者當負柱球面。",
+        "examFocus": [
+          "−6.25−1.5＝−7.75；−5.75−1.5＝−7.25。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "漏扣WD。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "球面與軸不符。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "把較負經線作sphere。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0188",
+      "type": "single",
+      "stem": "視網膜檢影鏡測量時，在被檢者在90 度方向得到的中和度數鏡片為+3.00 D，在180 度方向得到的中和度 數鏡片為+5.00 D，若檢影鏡測距為50 cm，下列何者為被檢者的屈光度數？ +3.00",
+      "choices": [
+        "DS/-2.00DC×090 +3.00",
+        "DS/-2.00DC×180 +5.00",
+        "DS/-2.00DC×090 +5.00",
+        "DS/-2.00DC×180"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n正值散光檢影\n\n**白話理解**\n50cm兩毛值各減2D，得到90°方向+1D、180°方向+3D；負柱式以+3D為sphere，差−2D，軸180。\n\n**口訣**\n先都減2D，再用較正者寫負柱。\n\n**考點與解題步驟**\n- +3−2＝+1；+5−2＝+3。\n\n**選項 A：A 選項**\n軸錯。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n球面未依主經線整理。\n\n**選項 D：D 選項**\n球面錯。\n\n**原始出處**\n驗光生\\驗光學概要\\108年驗光生特考.pdf；原題編號 28；舊 ID opt-q0188",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生特考｜驗光學概要"
+      ],
+      "source_id": "opt-q0188",
+      "source_number": "28",
+      "source_year": "108",
+      "source_subject": "驗光生特考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "正值散光檢影",
+        "simple": "50cm兩毛值各減2D，得到90°方向+1D、180°方向+3D；負柱式以+3D為sphere，差−2D，軸180。",
+        "memory": "先都減2D，再用較正者寫負柱。",
+        "examFocus": [
+          "+3−2＝+1；+5−2＝+3。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "軸錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "球面未依主經線整理。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "球面錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0199",
+      "type": "single",
+      "stem": "在調節放鬆下，使用視網膜檢影鏡檢查戴著度數為-3.00DS/-1.50DC×180 眼鏡的病患。若檢查距離為50 cm， 測得在180 度方向可用+2.00 DS 達到中和，在90 度方向可用+1.50 DS 達到中和，此病患的正確屈光度數 為下列何者？",
+      "choices": [
+        "-3.00DS/-2.00DC×180",
+        "-3.50DS/-1.50DC×180",
+        "-2.50DS/-2.00DC×180",
+        "-1.00 DS"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n戴原鏡檢影精修\n\n**白話理解**\n50cm時戴原鏡再加+2.00於180經線恰抵WD，表示該經線原鏡正確；90經線只需+1.50，顯示尚有−0.50D殘餘，故原−1.50 cyl應加深為−2.00。\n\n**口訣**\n50cm理想加+2中和；少0.5代表該經線多欠−0.5。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n球面改動不符。\n\n**選項 C：C 選項**\n球面與散光不符。\n\n**選項 D：D 選項**\n忽略散光。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\108年驗光生普考.pdf；原題編號 26；舊 ID opt-q0199",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0199",
+      "source_number": "26",
+      "source_year": "108",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "戴原鏡檢影精修",
+        "simple": "50cm時戴原鏡再加+2.00於180經線恰抵WD，表示該經線原鏡正確；90經線只需+1.50，顯示尚有−0.50D殘餘，故原−1.50 cyl應加深為−2.00。",
+        "memory": "50cm理想加+2中和；少0.5代表該經線多欠−0.5。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "球面改動不符。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "球面與散光不符。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "忽略散光。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0211",
+      "type": "single",
+      "stem": "視網膜檢影鏡檢查時，如果一開始觀察到逆動，下列何項作法可以觀察到接近中和的反射？",
+      "choices": [
+        "加上正度數鏡片",
+        "靠近病人一些",
+        "離病人遠一些",
+        "把檢查室燈光調暗"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n逆動與移動中和\n\n**白話理解**\n一開始逆動表示檢查者位於遠點外側；縮短工作距離、往病人靠近，會接近其遠點並達中和。\n\n**口訣**\n逆動就往病人靠，找遠點。\n\n**選項 A：A 選項**\n逆動通常加負鏡，不是正鏡。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n會更遠離遠點。\n\n**選項 D：D 選項**\n只改亮度。\n\n**原始出處**\n驗光生\\驗光學概要\\108年驗光生普考.pdf；原題編號 26；舊 ID opt-q0211",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0211",
+      "source_number": "26",
+      "source_year": "108",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "逆動與移動中和",
+        "simple": "一開始逆動表示檢查者位於遠點外側；縮短工作距離、往病人靠近，會接近其遠點並達中和。",
+        "memory": "逆動就往病人靠，找遠點。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "逆動通常加負鏡，不是正鏡。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "會更遠離遠點。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "只改亮度。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0213",
+      "type": "single",
+      "stem": "靜態視網膜檢影法中，檢測時未加入工作輔助鏡片，檢測距離患者67 cm，得到患者水平方向屈光度為-4.00 D， 垂直方向屈光度為-2.00 D，則患者之屈光異常為何？",
+      "choices": [
+        "-3.50DS/-2.00DC×090",
+        "-3.50DS/-5.50DC×090",
+        "-5.50DS/-3.50DC×090",
+        "-2.00DS/-2.00DC×090"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n主經線檢影處方\n\n**白話理解**\n67cm WD為1.5D。依題庫對水平/垂直方向配對，修正後兩主經線為−5.5與−3.5D，負柱式−3.5/−2×90。\n\n**口訣**\n兩軸都減1.5，差仍2D。\n\n**考點與解題步驟**\n- −4−1.5＝−5.5；−2−1.5＝−3.5。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n柱鏡錯。\n\n**選項 C：C 選項**\nsphere/cyl整理錯。\n\n**選項 D：D 選項**\n漏扣WD。\n\n**原始出處**\n驗光生\\驗光學概要\\108年驗光生普考.pdf；原題編號 28；舊 ID opt-q0213",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0213",
+      "source_number": "28",
+      "source_year": "108",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "主經線檢影處方",
+        "simple": "67cm WD為1.5D。依題庫對水平/垂直方向配對，修正後兩主經線為−5.5與−3.5D，負柱式−3.5/−2×90。",
+        "memory": "兩軸都減1.5，差仍2D。",
+        "examFocus": [
+          "−4−1.5＝−5.5；−2−1.5＝−3.5。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "柱鏡錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "sphere/cyl整理錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "漏扣WD。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0215",
+      "type": "single",
+      "stem": "操作靜態視網膜檢影鏡檢查（static retinoscopy），以平行光發現患者瞳孔出現檢影鏡反射光呈剪刀狀移 動（scissors motion）現象，最常見於何種狀況？",
+      "choices": [
+        "年輕人的近視眼",
+        "老年人的遠視眼",
+        "小瞳孔",
+        "正視眼"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n檢影剪刀動\n\n**白話理解**\nscissors motion常與不規則屈光、角膜不規則或明顯球面像差相關；題庫選項中年輕近視眼最符合常見情境。\n\n**口訣**\n剪刀動想不規則光學，題庫選年輕近視。\n\n**選項 A：A 選項**\n題庫正解。\n\n**選項 B：B 選項**\n非典型。\n\n**選項 C：C 選項**\n小瞳孔通常限制觀察，不是典型剪刀動。\n\n**選項 D：D 選項**\n正視眼不應常見。\n\n**原始出處**\n驗光生\\驗光學概要\\108年驗光生普考.pdf；原題編號 30；舊 ID opt-q0215",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0215",
+      "source_number": "30",
+      "source_year": "108",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "檢影剪刀動",
+        "simple": "scissors motion常與不規則屈光、角膜不規則或明顯球面像差相關；題庫選項中年輕近視眼最符合常見情境。",
+        "memory": "剪刀動想不規則光學，題庫選年輕近視。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "題庫正解。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "非典型。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "小瞳孔通常限制觀察，不是典型剪刀動。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正視眼不應常見。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

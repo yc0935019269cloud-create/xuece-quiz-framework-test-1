@@ -1,0 +1,248 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-course114-u04",
+    "subject": "optometry",
+    "name": "瞳距測量與焦度計｜114 學年度",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 學年度",
+      "視光學",
+      "第04單元 瞳距測量與焦度計"
+    ],
+    "order": 4,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-teacher-04-01",
+      "type": "single",
+      "stem": "一個 5△ 的稜鏡能使光線在 2 公尺處偏移多少距離？",
+      "choices": [
+        "1 cm",
+        "10 cm",
+        "0.4 cm",
+        "2.5 cm"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n稜鏡度定義\n\n**白話理解**\n稜鏡度定義為在 1 m 距離造成 1 cm 偏移；5△ 在 2 m 造成 5×2＝10 cm 偏移。\n\n**口訣**\n1△、1公尺、偏1公分。\n\n**考點與解題步驟**\n- 偏移量(cm)＝稜鏡度(△)×距離(m)＝5×2＝10 cm。\n- 距離加倍，線性偏移量也加倍。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 1；舊 ID opt-teacher-04-01",
+      "tags": [
+        "瞳距測量與焦度計",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-04-01",
+      "source_number": "1",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "稜鏡度定義",
+        "simple": "稜鏡度定義為在 1 m 距離造成 1 cm 偏移；5△ 在 2 m 造成 5×2＝10 cm 偏移。",
+        "memory": "1△、1公尺、偏1公分。",
+        "examFocus": [
+          "偏移量(cm)＝稜鏡度(△)×距離(m)＝5×2＝10 cm。",
+          "距離加倍，線性偏移量也加倍。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-04-02",
+      "type": "single",
+      "stem": "用驗度儀檢測到患者右眼鏡片為 −5.00 D。戴上眼鏡後，右眼視線軸在水平線上向外側偏離光學中心 4 mm，該稜鏡效應為何？",
+      "choices": [
+        "右眼 2△ 基底朝外",
+        "右眼 2△ 基底朝內",
+        "右眼 2△ 基底朝上",
+        "右眼 2△ 基底朝下"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\nPrentice 定律與負鏡片基底方向\n\n**白話理解**\nPrentice 定律 P＝cF。偏心 4 mm＝0.4 cm，乘以 5.00 D 得 2△。負透鏡的稜鏡基底方向遠離光學中心；視線位於右鏡片光學中心外側，故為 BO。\n\n**口訣**\n負鏡：基底離開 OC。\n\n**考點與解題步驟**\n- P＝0.4×5.00＝2.00△。\n- 公式使用公分，不是毫米。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 2；舊 ID opt-teacher-04-02",
+      "tags": [
+        "瞳距測量與焦度計",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-04-02",
+      "source_number": "2",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "Prentice 定律與負鏡片基底方向",
+        "simple": "Prentice 定律 P＝cF。偏心 4 mm＝0.4 cm，乘以 5.00 D 得 2△。負透鏡的稜鏡基底方向遠離光學中心；視線位於右鏡片光學中心外側，故為 BO。",
+        "memory": "負鏡：基底離開 OC。",
+        "examFocus": [
+          "P＝0.4×5.00＝2.00△。",
+          "公式使用公分，不是毫米。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-04-03",
+      "type": "single",
+      "stem": "若兩眼配戴球面凹透鏡片，而鏡片光學中心間距離（DBOC）大於配戴者瞳孔間距離，向正前方直視時會產生何種稜鏡效應？",
+      "choices": [
+        "基底朝內",
+        "基底朝外",
+        "基底朝上",
+        "基底朝下"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n水平偏心與凹透鏡稜鏡效應\n\n**白話理解**\nDBOC 大於 PD 時，兩眼視線都通過各鏡片光學中心的鼻側。凹透鏡的基底方向遠離光學中心，因此右眼基底向鼻、左眼也向鼻，合稱 BI。\n\n**口訣**\n負鏡 OC 放太寬，雙眼看鼻側，得到 BI。\n\n**考點與解題步驟**\n- 不要套用凸透鏡的基底方向。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 3；舊 ID opt-teacher-04-03",
+      "tags": [
+        "瞳距測量與焦度計",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-04-03",
+      "source_number": "3",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "水平偏心與凹透鏡稜鏡效應",
+        "simple": "DBOC 大於 PD 時，兩眼視線都通過各鏡片光學中心的鼻側。凹透鏡的基底方向遠離光學中心，因此右眼基底向鼻、左眼也向鼻，合稱 BI。",
+        "memory": "負鏡 OC 放太寬，雙眼看鼻側，得到 BI。",
+        "examFocus": [
+          "不要套用凸透鏡的基底方向。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-04-04",
+      "type": "single",
+      "stem": "右眼 −6.00 DS、左眼 −8.00 DS；患者 PD 66 mm（右 34、左 32），鏡片 DBOC 66 mm（右 30、左 36）。配戴眼鏡會產生多少雙眼水平稜鏡量？",
+      "choices": [
+        "0.6△ BO",
+        "0.6△ BI",
+        "0.8△ BI",
+        "0.8△ BO"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n單眼 PD、DBOC 與水平稜鏡不平衡\n\n**白話理解**\n右眼視線比 OC 外移 4 mm，−6 D 產生 2.4△ BO；左眼視線比 OC 內移 4 mm，−8 D 產生 3.2△ BI。兩眼效應方向相反，差值為 0.8△，由較大的左眼 BI 決定。\n\n**口訣**\n先逐眼算方向，再取對抗效應的差。\n\n**考點與解題步驟**\n- OD：0.4×6＝2.4△ BO。\n- OS：0.4×8＝3.2△ BI。\n- 差值＝3.2−2.4＝0.8△ BI。\n- 不能只用總 PD；本題關鍵是左右單眼 PD 不對稱。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 4；舊 ID opt-teacher-04-04",
+      "tags": [
+        "瞳距測量與焦度計",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-04-04",
+      "source_number": "4",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳距與焦度計",
+        "title": "單眼 PD、DBOC 與水平稜鏡不平衡",
+        "simple": "右眼視線比 OC 外移 4 mm，−6 D 產生 2.4△ BO；左眼視線比 OC 內移 4 mm，−8 D 產生 3.2△ BI。兩眼效應方向相反，差值為 0.8△，由較大的左眼 BI 決定。",
+        "memory": "先逐眼算方向，再取對抗效應的差。",
+        "examFocus": [
+          "OD：0.4×6＝2.4△ BO。",
+          "OS：0.4×8＝3.2△ BI。",
+          "差值＝3.2−2.4＝0.8△ BI。",
+          "不能只用總 PD；本題關鍵是左右單眼 PD 不對稱。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

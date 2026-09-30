@@ -1,0 +1,708 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-optometry-near-point-p1",
+  "subject": "optometry",
+  "unit": "第09單元 近點調節 NPA 與近點聚合 NPC",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "視光學",
+    "第09單元 近點調節 NPA 與近點聚合 NPC"
+  ],
+  "title": "近點調節 NPA 與近點聚合 NPC（1）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://frabjous-druid-ff547a.netlify.app/",
+  "level": 2,
+  "minutes": 60,
+  "order": 9,
+  "source": "https://frabjous-druid-ff547a.netlify.app/",
+  "tags": [
+    "近點調節 NPA 與近點聚合 NPC"
+  ],
+  "lessons": [
+    {
+      "id": "accommodation-basics-1",
+      "title": "調節：把水晶體變厚，讓近物重新清楚",
+      "goals": [
+        "解釋看近時：睫狀肌收縮，水晶體變圓",
+        "解釋調節三面向：能力、準確度、切換速度",
+        "解釋FP、NP 與 AA：清楚範圍的兩個邊界"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "調節：把水晶體變厚，讓近物重新清楚",
+          "body": "調節是改變水晶體正屈光力的對焦功能；幅度、準確度與速度是三個不同面向。\n\n- 先走一次看近時的肌肉與水晶體變化。\n- 再分清 amplitude、response、facility。\n- 最後用 far point 與 near point 算調節幅度。"
+        },
+        {
+          "type": "card",
+          "title": "看近時：睫狀肌收縮，水晶體變圓",
+          "body": "**一句話／白話**\n看近就像把眼內鏡片調得更凸：睫狀肌收縮、懸韌帶放鬆、水晶體變厚，正度數增加。\n\n**觀念**\nAccommodation 讓眼睛在不同距離維持清楚。看近時 ciliary muscle 收縮，使 zonules 放鬆，crystalline lens 回到較圓、較厚的形狀，增加正屈光力並把焦點拉回視網膜；調節量以 diopter 表示。\n\n**考試角度**\n- ciliary muscle 收縮\n- zonules 放鬆，crystalline lens 變厚變圓\n- 水晶體正屈光力增加，單位為 D\n\n**口訣**\n肌肉收、韌帶鬆、晶體胖，近物清。",
+          "keys": [
+            "ciliary muscle 收縮",
+            "zonules 放鬆，crystalline lens 變厚變圓",
+            "水晶體正屈光力增加，單位為 D"
+          ],
+          "tip": "口訣：肌肉收、韌帶鬆、晶體胖，近物清。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "看近發生調節時，下列何者正確？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "看近時睫狀肌收縮、懸韌帶放鬆，水晶體變圓變厚。\n\n正確選項：睫狀肌收縮，水晶體變厚。\nAccommodation 讓眼睛在不同距離維持清楚。看近時 ciliary muscle 收縮，使 zonules 放鬆，crystalline lens 回到較圓、較厚的形狀，增加正屈光力並把焦點拉回視網膜；調節量以 diopter 表示。",
+          "choices": [
+            "睫狀肌放鬆，懸韌帶拉緊",
+            "水晶體變薄，正屈光力下降",
+            "睫狀肌收縮，水晶體變厚",
+            "角膜曲率主動大幅改變"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "調節三面向：能力、準確度、切換速度",
+          "body": "**一句話／白話**\nAmplitude 問最多能對焦多少；response 問有沒有對準；facility 問遠近切換快不快。\n\n**觀念**\nAmplitude of accommodation 是最大調節能力。Accommodative response 描述實際反應是否落在需求上，過度稱 lead、不足稱 lag。Accommodative facility 則是焦點在遠近之間快速切換的能力。\n\n**考試角度**\n- amplitude：最大 focusing ability\n- response：lead 或 lag，反映準確度\n- facility：改變焦點的速度與彈性\n\n**口訣**\nAmplitude 看最大，response 看準不準，facility 看快不快。",
+          "keys": [
+            "amplitude：最大 focusing ability",
+            "response：lead 或 lag，反映準確度",
+            "facility：改變焦點的速度與彈性"
+          ],
+          "tip": "口訣：Amplitude 看最大，response 看準不準，facility 看快不快。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "患者遠近轉換時要等很久才清楚，最直接反映哪一面向？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Facility 描述調節焦點切換的速度與彈性。\n\n正確選項：facility。\nAmplitude of accommodation 是最大調節能力。Accommodative response 描述實際反應是否落在需求上，過度稱 lead、不足稱 lag。Accommodative facility 則是焦點在遠近之間快速切換的能力。",
+          "choices": [
+            "facility",
+            "amplitude",
+            "corneal power",
+            "pupil diameter"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "FP、NP 與 AA：清楚範圍的兩個邊界",
+          "body": "**一句話／白話**\nFP 是最遠清楚點，NP 是最近清楚點；兩者用屈光度相減，就是調節幅度。\n\n**觀念**\nFar point 是調節完全放鬆時最遠清楚點；near point 是最大調節時最近清楚點；兩者之間是 range of clear vision。完全矯正或正視眼的 FP 在無限遠，因此 AA 等於 NP 的屈光度；未完全矯正時 AA = NP - FP，且距離需先轉成 diopter。\n\n**考試角度**\n- FP：調節放鬆時最遠清楚點\n- NP / NPA：最大調節時最近清楚點\n- 同樣 NPA 距離不代表相同 AA，仍要看 FP\n\n**公式**\nAA = NP(D) - FP(D)；完全矯正時 FP = 0D，所以 AA = NP(D)\n\n**口訣**\n清楚範圍兩端是 FP 和 NP；幅度就是 NP 減 FP。",
+          "keys": [
+            "FP：調節放鬆時最遠清楚點",
+            "NP / NPA：最大調節時最近清楚點",
+            "同樣 NPA 距離不代表相同 AA，仍要看 FP"
+          ],
+          "tip": "口訣：清楚範圍兩端是 FP 和 NP；幅度就是 NP 減 FP。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "完全矯正患者的 NPA 為 10 cm，調節幅度約為多少？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "10 cm = 0.10 m，1/0.10 = 10D；完全矯正時 AA 等於 NP 屈光度。\n\n正確選項：10.00D。\nFar point 是調節完全放鬆時最遠清楚點；near point 是最大調節時最近清楚點；兩者之間是 range of clear vision。完全矯正或正視眼的 FP 在無限遠，因此 AA 等於 NP 的屈光度；未完全矯正時 AA = NP - FP，且距離需先轉成 diopter。",
+          "choices": [
+            "2.50D",
+            "5.00D",
+            "8.00D",
+            "10.00D"
+          ]
+        },
+        {
+          "type": "interactive",
+          "title": "調節幅度與近點",
+          "task": "把近點從 25 cm 改到 10 cm，算出所需調節。",
+          "body": "每次只改一個參數，先預測，再觀察數值。",
+          "reference": "25 cm 是 4 D；10 cm 是 10 D。這是正視眼且遠點在無限遠的結果。\n正視眼、遠點在無限遠：A=1/近點距離（m）。一般 A=近點聚散度需求−遠點需求，勿把 NPA 與 NPC 混用。",
+          "height": 540,
+          "html": "<!doctype html><html lang=\"zh-Hant\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{margin:0;padding:10px;box-sizing:border-box;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}*{box-sizing:border-box}h3{font-size:18px;margin:0 0 8px}.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}label{display:block}.row label{flex:1 1 125px;min-width:0;max-width:180px}input{max-width:150px;width:100%}button{font:inherit;padding:6px 12px;background:#fff;border:1px solid #75644d;border-radius:6px}svg{width:100%;height:160px;background:#fff;border:1px solid #cabfa7}#result,.note{padding:6px;background:#fff1c9;margin-top:6px}small{font-size:14px;display:block;margin-top:6px}@media(max-width:400px){body{padding:8px}.row label{flex-basis:105px}svg{height:110px}h3{font-size:16px}}</style><h3>調節幅度與近點</h3><div class=\"note\">觀察重點：把近點從 25 cm 改到 10 cm，算出所需調節。</div><div class=\"row\"><label>近點距離 <output id=\"ro\"></output><input aria-label=\"近點距離\" id=\"r\" type=\"range\" min=\"5\" max=\"100\" step=\"1\" value=\"25\" data-unit=\"cm\" style=\"display:block\"></label><button id=\"reset\">重設</button></div><svg id=\"plot\" viewBox=\"0 0 700 210\" role=\"img\" aria-label=\"即時比較圖\"></svg><small id=\"legend\"></small><div id=\"result\" aria-live=\"polite\"></div><small>正視眼、遠點在無限遠：A=1/近點距離（m）。一般 A=近點聚散度需求−遠點需求，勿把 NPA 與 NPC 混用。</small><script>const inputs=[...document.querySelectorAll('input')],result=document.getElementById('result'),svg=document.getElementById('plot');const v=id=>Number(document.getElementById(id).value),fmt=x=>Number.isFinite(x)?x.toFixed(2):'超出模型';function bars(vals,names){const scale=130/Math.max(1,...vals.map(Math.abs));svg.innerHTML=vals.map((x,i)=>`<rect x='${50+i*180}' y='${x>=0?150-x*scale:150}' width='90' height='${Math.abs(x)*scale}' fill='${i%2?'#916a28':'#286b80'}'/><text x='${80+i*180}' y='200' font-size='44'>${i+1}</text>`).join('')+`<line x1='20' y1='150' x2='680' y2='150' stroke='#555'/>`;document.getElementById('legend').textContent=names.map((n,i)=>(i+1)+'．'+n).join('　');}function update(){inputs.forEach(x=>document.getElementById(x.id+'o').textContent=x.value+' '+x.dataset.unit);const A=100/v('r');result.textContent=`正視眼的近點需求 = ${fmt(A)} D；距離更近，所需調節更多。屈光不正者另須考慮遠點。`;bars([A],['調節需求 D']);}inputs.forEach(x=>x.addEventListener('input',update));document.getElementById('reset').onclick=()=>{inputs.forEach(x=>x.value=x.defaultValue);update()};update();</script></html>"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
+          "answer": "25 cm 是 4 D；10 cm 是 10 D。這是正視眼且遠點在無限遠的結果。\n正視眼、遠點在無限遠：A=1/近點距離（m）。一般 A=近點聚散度需求−遠點需求，勿把 NPA 與 NPC 混用。",
+          "hint": "逐步比較相鄰階段或改變前後，並區分方向與因果。",
+          "explain": "25 cm 是 4 D；10 cm 是 10 D。這是正視眼且遠點在無限遠的結果。\n正視眼、遠點在無限遠：A=1/近點距離（m）。一般 A=近點聚散度需求−遠點需求，勿把 NPA 與 NPC 混用。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：FP、NP 與 AA：清楚範圍的兩個邊界",
+          "problem": "完全矯正患者的 NPA 為 10 cm，調節幅度約為多少？\n\nA. 2.50D\nB. 5.00D\nC. 8.00D\nD. 10.00D",
+          "steps": [
+            "先確認題目問的主題：FP、NP 與 AA：清楚範圍的兩個邊界",
+            "Far point 是調節完全放鬆時最遠清楚點；near point 是最大調節時最近清楚點；兩者之間是 range of clear vision。完全矯正或正視眼的 FP 在無限遠，因此 AA 等於 NP 的屈光度；未完全矯正時 AA = NP - FP，且距離需先轉成 diopter。",
+            "把判斷依據連回題目：10 cm = 0.10 m，1/0.10 = 10D；完全矯正時 AA 等於 NP 屈光度。\n\n正確選項：10.00D。\nFar point 是調節完全放鬆時最遠清楚點；near point 是最大調節時最近清楚點；兩者之間是 range of clear vision。完全矯正或正視眼的 FP 在無限遠，因此 AA 等於 NP 的屈光度；未完全矯正時 AA = NP - FP，且距離需先轉成 diopter。"
+          ],
+          "answer": "10.00D"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：調節：把水晶體變厚，讓近物重新清楚",
+          "qids": [
+            "s114-optometry-exam106-u09-opt-q0005",
+            "s114-optometry-exam106-u09-opt-q0009"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "患者遠近轉換時要等很久才清楚，最直接反映哪一面向？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Facility 描述調節焦點切換的速度與彈性。\n\n正確選項：facility。\nAmplitude of accommodation 是最大調節能力。Accommodative response 描述實際反應是否落在需求上，過度稱 lead、不足稱 lag。Accommodative facility 則是焦點在遠近之間快速切換的能力。",
+              "choices": [
+                "facility",
+                "amplitude",
+                "corneal power",
+                "pupil diameter"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "完全矯正患者的 NPA 為 10 cm，調節幅度約為多少？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "10 cm = 0.10 m，1/0.10 = 10D；完全矯正時 AA 等於 NP 屈光度。\n\n正確選項：10.00D。\nFar point 是調節完全放鬆時最遠清楚點；near point 是最大調節時最近清楚點；兩者之間是 range of clear vision。完全矯正或正視眼的 FP 在無限遠，因此 AA 等於 NP 的屈光度；未完全矯正時 AA = NP - FP，且距離需先轉成 diopter。",
+              "choices": [
+                "2.50D",
+                "5.00D",
+                "8.00D",
+                "10.00D"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "ciliary muscle 收縮",
+            "zonules 放鬆，crystalline lens 變厚變圓",
+            "amplitude：最大 focusing ability",
+            "response：lead 或 lag，反映準確度",
+            "FP：調節放鬆時最遠清楚點",
+            "NP / NPA：最大調節時最近清楚點"
+          ],
+          "flash": [
+            {
+              "front": "看近時：睫狀肌收縮，水晶體變圓",
+              "back": "看近就像把眼內鏡片調得更凸：睫狀肌收縮、懸韌帶放鬆、水晶體變厚，正度數增加。"
+            },
+            {
+              "front": "調節三面向：能力、準確度、切換速度",
+              "back": "Amplitude 問最多能對焦多少；response 問有沒有對準；facility 問遠近切換快不快。"
+            },
+            {
+              "front": "FP、NP 與 AA：清楚範圍的兩個邊界",
+              "back": "FP 是最遠清楚點，NP 是最近清楚點；兩者用屈光度相減，就是調節幅度。"
+            },
+            {
+              "front": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
+              "back": "25 cm 是 4 D；10 cm 是 10 D。這是正視眼且遠點在無限遠的結果。\n正視眼、遠點在無限遠：A=1/近點距離（m）。一般 A=近點聚散度需求−遠點需求，勿把 NPA 與 NPC 混用。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amplitude-interpretation-1",
+      "title": "調節幅度：先看年齡，再判斷是不是異常",
+      "goals": [
+        "解釋Hofstetter 公式：最低值最重要",
+        "解釋調節不足會讓近距離工作撐不久",
+        "解釋兩眼 AA 差超過 1D，要找原因"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "調節幅度：先看年齡，再判斷是不是異常",
+          "body": "調節會隨年齡下降；臨床最重要的是實測值是否低於該年齡的最低預期值。\n\n- 先用 Hofstetter 公式找年齡預期值。\n- 再把症狀連到 accommodative insufficiency。\n- 最後遇到兩眼不對稱時找原因。"
+        },
+        {
+          "type": "card",
+          "title": "Hofstetter 公式：最低值最重要",
+          "body": "**一句話／白話**\n年紀越大，調節越少；臨床先算最低應有值，實測比它低才要警覺。\n\n**觀念**\nAge 是 amplitude of accommodation 最重要的決定因素。Hofstetter 公式可估最低、平均與最高值：minimum = 15 - 0.25(age)，mean = 18.5 - 0.3(age)，maximum = 25 - 0.4(age)。臨床判斷 accommodative insufficiency 時，最低預期值最重要。\n\n**考試角度**\n- 年齡是 AA 最佳決定因素\n- 低於 Hofstetter minimum 才特別支持調節不足\n- 舒適近用通常使用不超過總 AA 的一半\n\n**公式**\nMinimum AA = 15 - 0.25(age)；Mean = 18.5 - 0.3(age)；Maximum = 25 - 0.4(age)\n\n**口訣**\n最低值：15 減四分之一歲數。",
+          "keys": [
+            "年齡是 AA 最佳決定因素",
+            "低於 Hofstetter minimum 才特別支持調節不足",
+            "舒適近用通常使用不超過總 AA 的一半"
+          ],
+          "tip": "口訣：最低值：15 減四分之一歲數。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "20 歲患者依 Hofstetter minimum 預期至少應有多少 AA？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "15 - 0.25×20 = 10D。\n\n正確選項：10D。\nAge 是 amplitude of accommodation 最重要的決定因素。Hofstetter 公式可估最低、平均與最高值：minimum = 15 - 0.25(age)，mean = 18.5 - 0.3(age)，maximum = 25 - 0.4(age)。臨床判斷 accommodative insufficiency 時，最低預期值最重要。",
+          "choices": [
+            "5D",
+            "10D",
+            "13D",
+            "15D"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "調節不足會讓近距離工作撐不久",
+          "body": "**一句話／白話**\n不是完全看不到近物，而是看一下就糊、累、額頭痛，閱讀耐力變差。\n\n**觀念**\n調節不足常在長時間近距離工作後出現間歇模糊、眼疲勞、全身疲倦、額頭痛與閱讀能力下降。藥物、近期疾病與水晶體狀態也會影響 AA。年輕患者可考慮正鏡片或視覺訓練；老花造成的自然老化無法靠訓練恢復。\n\n**考試角度**\n- 典型症狀集中在持續近距離工作\n- 正鏡片可降低近用調節需求\n- 非老花患者可考慮視覺訓練\n\n**口訣**\n近看一下就糊又累，先想調節不足。",
+          "keys": [
+            "典型症狀集中在持續近距離工作",
+            "正鏡片可降低近用調節需求",
+            "非老花患者可考慮視覺訓練"
+          ],
+          "tip": "口訣：近看一下就糊又累，先想調節不足。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "年輕患者看近一段時間後反覆模糊、眼疲勞，且 AA 低於年齡最低值，最符合？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "近距離症狀加上低於 Hofstetter minimum 的 AA 支持調節不足。\n\n正確選項：accommodative insufficiency。\n調節不足常在長時間近距離工作後出現間歇模糊、眼疲勞、全身疲倦、額頭痛與閱讀能力下降。藥物、近期疾病與水晶體狀態也會影響 AA。年輕患者可考慮正鏡片或視覺訓練；老花造成的自然老化無法靠訓練恢復。",
+          "choices": [
+            "accommodative insufficiency",
+            "正常立體視",
+            "角膜過陡",
+            "RAPD"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "兩眼 AA 差超過 1D，要找原因",
+          "body": "**一句話／白話**\n兩眼調節能力應接近；單眼明顯變差不是小事，要先排除度數、藥物、發炎與神經問題。\n\n**觀念**\n兩眼 AA 差異應小於約 1.00D。單眼 AA 下降合併瞳孔散大可能涉及副交感路徑。其他原因包括屈光不正改變、雙眼平衡不良、睫狀體發炎或創傷、單眼接觸抗膽鹼藥物，以及測試技術不一致。\n\n**考試角度**\n- 兩眼 AA 差異應小於約 1.00D\n- 單眼 AA 下降加瞳孔散大要警覺神經問題\n- 先確認屈光矯正、藥物、眼健康與測試方法\n\n**口訣**\n差超過 1D 不要只重測，要找原因。",
+          "keys": [
+            "兩眼 AA 差異應小於約 1.00D",
+            "單眼 AA 下降加瞳孔散大要警覺神經問題",
+            "先確認屈光矯正、藥物、眼健康與測試方法"
+          ],
+          "tip": "口訣：差超過 1D 不要只重測，要找原因。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "右眼 AA 明顯下降且右瞳孔散大，最需要優先考慮哪一類問題？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "調節與縮瞳共享副交感路徑，單眼 AA 下降合併散瞳需警覺神經問題。\n\n正確選項：副交感神經相關問題。\n兩眼 AA 差異應小於約 1.00D。單眼 AA 下降合併瞳孔散大可能涉及副交感路徑。其他原因包括屈光不正改變、雙眼平衡不良、睫狀體發炎或創傷、單眼接觸抗膽鹼藥物，以及測試技術不一致。",
+          "choices": [
+            "單純單眼深度線索",
+            "角膜色階",
+            "副交感神經相關問題",
+            "正常年齡變化一定只影響右眼"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：兩眼 AA 差超過 1D，要找原因",
+          "problem": "右眼 AA 明顯下降且右瞳孔散大，最需要優先考慮哪一類問題？\n\nA. 單純單眼深度線索\nB. 角膜色階\nC. 副交感神經相關問題\nD. 正常年齡變化一定只影響右眼",
+          "steps": [
+            "先確認題目問的主題：兩眼 AA 差超過 1D，要找原因",
+            "兩眼 AA 差異應小於約 1.00D。單眼 AA 下降合併瞳孔散大可能涉及副交感路徑。其他原因包括屈光不正改變、雙眼平衡不良、睫狀體發炎或創傷、單眼接觸抗膽鹼藥物，以及測試技術不一致。",
+            "把判斷依據連回題目：調節與縮瞳共享副交感路徑，單眼 AA 下降合併散瞳需警覺神經問題。\n\n正確選項：副交感神經相關問題。\n兩眼 AA 差異應小於約 1.00D。單眼 AA 下降合併瞳孔散大可能涉及副交感路徑。其他原因包括屈光不正改變、雙眼平衡不良、睫狀體發炎或創傷、單眼接觸抗膽鹼藥物，以及測試技術不一致。"
+          ],
+          "answer": "副交感神經相關問題"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：調節幅度：先看年齡，再判斷是不是異常",
+          "qids": [
+            "s114-optometry-exam106-u09-opt-q0005",
+            "s114-optometry-exam106-u09-opt-q0009"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "年輕患者看近一段時間後反覆模糊、眼疲勞，且 AA 低於年齡最低值，最符合？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "近距離症狀加上低於 Hofstetter minimum 的 AA 支持調節不足。\n\n正確選項：accommodative insufficiency。\n調節不足常在長時間近距離工作後出現間歇模糊、眼疲勞、全身疲倦、額頭痛與閱讀能力下降。藥物、近期疾病與水晶體狀態也會影響 AA。年輕患者可考慮正鏡片或視覺訓練；老花造成的自然老化無法靠訓練恢復。",
+              "choices": [
+                "accommodative insufficiency",
+                "正常立體視",
+                "角膜過陡",
+                "RAPD"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "右眼 AA 明顯下降且右瞳孔散大，最需要優先考慮哪一類問題？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "調節與縮瞳共享副交感路徑，單眼 AA 下降合併散瞳需警覺神經問題。\n\n正確選項：副交感神經相關問題。\n兩眼 AA 差異應小於約 1.00D。單眼 AA 下降合併瞳孔散大可能涉及副交感路徑。其他原因包括屈光不正改變、雙眼平衡不良、睫狀體發炎或創傷、單眼接觸抗膽鹼藥物，以及測試技術不一致。",
+              "choices": [
+                "單純單眼深度線索",
+                "角膜色階",
+                "副交感神經相關問題",
+                "正常年齡變化一定只影響右眼"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "年齡是 AA 最佳決定因素",
+            "低於 Hofstetter minimum 才特別支持調節不足",
+            "典型症狀集中在持續近距離工作",
+            "正鏡片可降低近用調節需求",
+            "兩眼 AA 差異應小於約 1.00D",
+            "單眼 AA 下降加瞳孔散大要警覺神經問題"
+          ],
+          "flash": [
+            {
+              "front": "Hofstetter 公式：最低值最重要",
+              "back": "年紀越大，調節越少；臨床先算最低應有值，實測比它低才要警覺。"
+            },
+            {
+              "front": "調節不足會讓近距離工作撐不久",
+              "back": "不是完全看不到近物，而是看一下就糊、累、額頭痛，閱讀耐力變差。"
+            },
+            {
+              "front": "兩眼 AA 差超過 1D，要找原因",
+              "back": "兩眼調節能力應接近；單眼明顯變差不是小事，要先排除度數、藥物、發炎與神經問題。"
+            },
+            {
+              "front": "20 歲患者依 Hofstetter minimum 預期至少應有多少 AA？",
+              "back": "15 - 0.25×20 = 10D。\n\n正確選項：10D。\nAge 是 amplitude of accommodation 最重要的決定因素。Hofstetter 公式可估最低、平均與最高值：minimum = 15 - 0.25(age)，mean = 18.5 - 0.3(age)，maximum = 25 - 0.4(age)。臨床判斷 accommodative insufficiency 時，最低預期值最重要。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "npa-methods-1",
+      "title": "NPA 與三種調節幅度測法",
+      "goals": [
+        "解釋Push-up：從 40 cm 推近到持續模糊",
+        "解釋Pull-away：從模糊拉遠到第一次清楚",
+        "解釋Minus lens to blur：負鏡片量加上 2.50D"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "NPA 與三種調節幅度測法",
+          "body": "所有方法都在找調節極限，但移動方向、終點與系統性偏差不同。\n\n- 先學最常用的推近法與持續模糊終點。\n- 再比較拉遠法的清楚終點。\n- 最後理解負鏡片模糊法的公式與低估。"
+        },
+        {
+          "type": "card",
+          "title": "Push-up：從 40 cm 推近到持續模糊",
+          "body": "**一句話／白話**\n把小字慢慢推近，第一次模糊可能只是閃一下；真正終點是再用力也清不回來的持續模糊。\n\n**觀念**\n雙眼推近法是快速初步篩檢，視標放在正前方約 40 cm，以每秒約 5 cm 推近，患者報持續模糊時記錄，並觀察雙眼是否持續內聚。單眼推近法則遮一眼、視標放在受測眼視軸上，可比較左右眼；終點需來回夾逼確認，距離量到鼻樑或眼鏡平面。\n\n**考試角度**\n- 起始約 40 cm，推近速度每秒約 5 cm\n- 終點是持續模糊，不是第一次短暫模糊\n- push-up 因 target 變大可能稍微高估 AA\n\n**口訣**\n40 公分開始，慢慢推，持續糊才停。",
+          "keys": [
+            "起始約 40 cm，推近速度每秒約 5 cm",
+            "終點是持續模糊，不是第一次短暫模糊",
+            "push-up 因 target 變大可能稍微高估 AA"
+          ],
+          "tip": "口訣：40 公分開始，慢慢推，持續糊才停。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Push-up NPA 的正確終點是？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "NPA 的終點是持續模糊，患者再努力也無法恢復清楚。\n\n正確選項：患者報持續模糊。\n雙眼推近法是快速初步篩檢，視標放在正前方約 40 cm，以每秒約 5 cm 推近，患者報持續模糊時記錄，並觀察雙眼是否持續內聚。單眼推近法則遮一眼、視標放在受測眼視軸上，可比較左右眼；終點需來回夾逼確認，距離量到鼻樑或眼鏡平面。",
+          "choices": [
+            "第一次眨眼",
+            "target 碰到鼻子",
+            "患者報持續模糊",
+            "患者看到 diplopia 才停止"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Pull-away：從模糊拉遠到第一次清楚",
+          "body": "**一句話／白話**\n小朋友不一定懂什麼叫模糊；從很近拉遠，等他能說出圖案，終點通常比較容易回答。\n\n**觀念**\n拉遠法使用與推近法相同的照明與視標，但從近處模糊位置往遠處移動，患者第一次報清楚時記錄。它適合幼童，但因視標越拉越小，可能稍微低估 AA。推近法與拉遠法可重複並平均，以減少各自偏差。\n\n**考試角度**\n- 拉遠法終點是第一次清楚\n- 對幼童較容易理解\n- pull-away 可能低估，push-up 可能高估\n\n**口訣**\n推近找糊，拉遠找清；一高估、一低估。",
+          "keys": [
+            "拉遠法終點是第一次清楚",
+            "對幼童較容易理解",
+            "pull-away 可能低估，push-up 可能高估"
+          ],
+          "tip": "口訣：推近找糊，拉遠找清；一高估、一低估。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Pull-away 法特別適合幼童的主要原因是？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "幼童通常比起描述模糊，更容易說出何時能看清楚圖案。\n\n正確選項：孩子較容易回報何時看清楚圖案。\n拉遠法使用與推近法相同的照明與視標，但從近處模糊位置往遠處移動，患者第一次報清楚時記錄。它適合幼童，但因視標越拉越小，可能稍微低估 AA。推近法與拉遠法可重複並平均，以減少各自偏差。",
+          "choices": [
+            "不需要任何視標",
+            "孩子較容易回報何時看清楚圖案",
+            "一定比所有方法精準",
+            "只測 convergence"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Minus lens to blur：負鏡片量加上 2.50D",
+          "body": "**一句話／白話**\n40 cm 本來就需要 2.50D 調節，再加多少負鏡片才持續模糊，就把那個量一起加上去。\n\n**觀念**\n負鏡片模糊法是單眼測試，患者戴遠用處方，近用視標固定在 40 cm。每 1-2 秒加入 -0.25D，直到出現輕微且持續模糊。AA 等於加入負鏡片度數的絕對值再加 2.50D；因負鏡片使影像縮小，結果通常比推近法低約 2D。\n\n**考試角度**\n- 單眼、distance Rx、40 cm near target\n- 每次 -0.25D，1-2 秒後再加\n- 結果通常比 push-up 低約 2D\n\n**公式**\nAA = |加入的負鏡片度數| + 2.50D（視標固定在 40 cm）\n\n**口訣**\n40 cm 先有 2.50D，再加負鏡片絕對值。",
+          "keys": [
+            "單眼、distance Rx、40 cm near target",
+            "每次 -0.25D，1-2 秒後再加",
+            "結果通常比 push-up 低約 2D"
+          ],
+          "tip": "口訣：40 cm 先有 2.50D，再加負鏡片絕對值。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "40 cm 測 minus lens to blur，加入 -5.00D 時達 sustained blur，AA 為多少？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "|-5.00| + 2.50 = 7.50D。\n\n正確選項：7.50D。\n負鏡片模糊法是單眼測試，患者戴遠用處方，近用視標固定在 40 cm。每 1-2 秒加入 -0.25D，直到出現輕微且持續模糊。AA 等於加入負鏡片度數的絕對值再加 2.50D；因負鏡片使影像縮小，結果通常比推近法低約 2D。",
+          "choices": [
+            "2.50D",
+            "5.00D",
+            "7.50D",
+            "10.00D"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：Minus lens to blur：負鏡片量加上 2.50D",
+          "problem": "40 cm 測 minus lens to blur，加入 -5.00D 時達 sustained blur，AA 為多少？\n\nA. 2.50D\nB. 5.00D\nC. 7.50D\nD. 10.00D",
+          "steps": [
+            "先確認題目問的主題：Minus lens to blur：負鏡片量加上 2.50D",
+            "負鏡片模糊法是單眼測試，患者戴遠用處方，近用視標固定在 40 cm。每 1-2 秒加入 -0.25D，直到出現輕微且持續模糊。AA 等於加入負鏡片度數的絕對值再加 2.50D；因負鏡片使影像縮小，結果通常比推近法低約 2D。",
+            "把判斷依據連回題目：|-5.00| + 2.50 = 7.50D。\n\n正確選項：7.50D。\n負鏡片模糊法是單眼測試，患者戴遠用處方，近用視標固定在 40 cm。每 1-2 秒加入 -0.25D，直到出現輕微且持續模糊。AA 等於加入負鏡片度數的絕對值再加 2.50D；因負鏡片使影像縮小，結果通常比推近法低約 2D。"
+          ],
+          "answer": "7.50D"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：NPA 與三種調節幅度測法",
+          "qids": [
+            "s114-optometry-exam106-u09-opt-q0005",
+            "s114-optometry-exam106-u09-opt-q0009"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Pull-away 法特別適合幼童的主要原因是？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "幼童通常比起描述模糊，更容易說出何時能看清楚圖案。\n\n正確選項：孩子較容易回報何時看清楚圖案。\n拉遠法使用與推近法相同的照明與視標，但從近處模糊位置往遠處移動，患者第一次報清楚時記錄。它適合幼童，但因視標越拉越小，可能稍微低估 AA。推近法與拉遠法可重複並平均，以減少各自偏差。",
+              "choices": [
+                "不需要任何視標",
+                "孩子較容易回報何時看清楚圖案",
+                "一定比所有方法精準",
+                "只測 convergence"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "40 cm 測 minus lens to blur，加入 -5.00D 時達 sustained blur，AA 為多少？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "|-5.00| + 2.50 = 7.50D。\n\n正確選項：7.50D。\n負鏡片模糊法是單眼測試，患者戴遠用處方，近用視標固定在 40 cm。每 1-2 秒加入 -0.25D，直到出現輕微且持續模糊。AA 等於加入負鏡片度數的絕對值再加 2.50D；因負鏡片使影像縮小，結果通常比推近法低約 2D。",
+              "choices": [
+                "2.50D",
+                "5.00D",
+                "7.50D",
+                "10.00D"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "起始約 40 cm，推近速度每秒約 5 cm",
+            "終點是持續模糊，不是第一次短暫模糊",
+            "拉遠法終點是第一次清楚",
+            "對幼童較容易理解",
+            "單眼、distance Rx、40 cm near target",
+            "每次 -0.25D，1-2 秒後再加"
+          ],
+          "flash": [
+            {
+              "front": "Push-up：從 40 cm 推近到持續模糊",
+              "back": "把小字慢慢推近，第一次模糊可能只是閃一下；真正終點是再用力也清不回來的持續模糊。"
+            },
+            {
+              "front": "Pull-away：從模糊拉遠到第一次清楚",
+              "back": "小朋友不一定懂什麼叫模糊；從很近拉遠，等他能說出圖案，終點通常比較容易回答。"
+            },
+            {
+              "front": "Minus lens to blur：負鏡片量加上 2.50D",
+              "back": "40 cm 本來就需要 2.50D 調節，再加多少負鏡片才持續模糊，就把那個量一起加上去。"
+            },
+            {
+              "front": "Push-up NPA 的正確終點是？",
+              "back": "NPA 的終點是持續模糊，患者再努力也無法恢復清楚。\n\n正確選項：患者報持續模糊。\n雙眼推近法是快速初步篩檢，視標放在正前方約 40 cm，以每秒約 5 cm 推近，患者報持續模糊時記錄，並觀察雙眼是否持續內聚。單眼推近法則遮一眼、視標放在受測眼視軸上，可比較左右眼；終點需來回夾逼確認，距離量到鼻樑或眼鏡平面。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "npc-1",
+      "title": "NPC：兩眼最多能往內聚到哪裡",
+      "goals": [
+        "解釋Version 同方向，vergence 反方向",
+        "解釋NPC 記破裂點 / 恢復點，不是模糊點",
+        "解釋不同 target 的 NPC 差很多，要想 convergence insufficiency"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "NPC：兩眼最多能往內聚到哪裡",
+          "body": "NPA 找模糊點，NPC 找單一影像破裂點；兩者終點、單位與異常意義完全不同。\n\n- 先分清 version、vergence、convergence。\n- 再學 NPC 的 break、recovery 與正常值。\n- 最後用不同 target 比較找 convergence insufficiency。"
+        },
+        {
+          "type": "card",
+          "title": "Version 同方向，vergence 反方向",
+          "body": "**一句話／白話**\n兩眼一起往右叫 version；看近時兩眼朝鼻側叫 convergence，是 vergence 的一種。\n\n**觀念**\nVersion 描述兩眼往相同方向移動。Vergence 描述兩眼往相反方向移動，其中 convergence 是兩眼向內，divergence 是兩眼向外。NPC 測的是雙眼最大 convergence 能力，不是調節模糊極限。\n\n**考試角度**\n- version：兩眼同方向\n- vergence：兩眼反方向\n- convergence 向內、divergence 向外\n\n**口訣**\nVersion 同向走；vergence 反向開合。",
+          "keys": [
+            "version：兩眼同方向",
+            "vergence：兩眼反方向",
+            "convergence 向內、divergence 向外"
+          ],
+          "tip": "口訣：Version 同向走；vergence 反向開合。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "看近物時兩眼同時朝鼻側轉動，稱為？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "兩眼朝相反方向並向內轉動稱 convergence。\n\n正確選項：convergence。\nVersion 描述兩眼往相同方向移動。Vergence 描述兩眼往相反方向移動，其中 convergence 是兩眼向內，divergence 是兩眼向外。NPC 測的是雙眼最大 convergence 能力，不是調節模糊極限。",
+          "choices": [
+            "version",
+            "convergence",
+            "divergence",
+            "accommodative lag"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "NPC 記破裂點 / 恢復點，不是模糊點",
+          "body": "**一句話／白話**\n把目標移近，影像第一次變兩個或看到一眼跑出去是 break；拉遠重新變一個是 recovery。\n\n**觀念**\nNPC 是視軸最大交叉點，臨床從顏面量距離。破裂點可由患者報複視，或檢查者看到一眼外轉；拉遠至重新單一為恢復點。記錄格式是破裂點/恢復點 cm，也可記 TTN；若患者不報雙影但一眼外轉，需記抑制與眼別。\n\n**考試角度**\n- NPC 終點是破裂點，不是持續模糊\n- 平均 break 約 5 cm；大於 9 cm 異常\n- recovery 應在 break 後 7 cm 以內\n\n**口訣**\nNPA 停在糊；NPC 停在裂，拉遠再合。",
+          "keys": [
+            "NPC 終點是破裂點，不是持續模糊",
+            "平均 break 約 5 cm；大於 9 cm 異常",
+            "recovery 應在 break 後 7 cm 以內"
+          ],
+          "tip": "口訣：NPA 停在糊；NPC 停在裂，拉遠再合。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "NPC 記錄 12/22 cm，最需要注意哪一項？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Break 12 cm 已大於 9 cm；recovery 比 break 遠 10 cm，也超過 7 cm。\n\n正確選項：break 大於 9 cm，且 recovery 距 break 超過 7 cm。\nNPC 是視軸最大交叉點，臨床從顏面量距離。破裂點可由患者報複視，或檢查者看到一眼外轉；拉遠至重新單一為恢復點。記錄格式是破裂點/恢復點 cm，也可記 TTN；若患者不報雙影但一眼外轉，需記抑制與眼別。",
+          "choices": [
+            "break 大於 9 cm，且 recovery 距 break 超過 7 cm",
+            "完全正常，因兩數都大於 5",
+            "這是 NPA 持續模糊",
+            "代表 TTN"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "不同 target 的 NPC 差很多，要想 convergence insufficiency",
+          "body": "**一句話／白話**\n有細節的字會用調節幫忙內聚；筆燈幫助較少。兩者差太多，代表純內聚能力可能不足。\n\n**觀念**\nNPC 可用調節性視標、筆燈或紅色鏡片加筆燈。老花者常用非調節性視標，避免把模糊與複視混淆。若調節性視標與筆燈或紅色鏡片測得的破裂點相差超過 5 cm，或恢復點相差超過 8 cm，需考慮內聚不足。症狀可包含複視、額頭痛、眼疲勞、全身疲倦、想睡與閱讀能力下降。\n\n**考試角度**\n- 調節性視標會提供調節性內聚幫助\n- break 差 >5 cm 或 recovery 差 >8 cm 要警覺 CI\n- 老花者宜用非調節性視標\n\n**口訣**\n字卡有調節幫忙；燈光差很多，想 CI。",
+          "keys": [
+            "調節性視標會提供調節性內聚幫助",
+            "break 差 >5 cm 或 recovery 差 >8 cm 要警覺 CI",
+            "老花者宜用非調節性視標"
+          ],
+          "tip": "口訣：字卡有調節幫忙；燈光差很多，想 CI。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Accommodative target 與 penlight 測得的 NPC break 相差 7 cm，最應考慮？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "不同 target 的 break 相差超過 5 cm，需警覺 convergence insufficiency。\n\n正確選項：convergence insufficiency。\nNPC 可用調節性視標、筆燈或紅色鏡片加筆燈。老花者常用非調節性視標，避免把模糊與複視混淆。若調節性視標與筆燈或紅色鏡片測得的破裂點相差超過 5 cm，或恢復點相差超過 8 cm，需考慮內聚不足。症狀可包含複視、額頭痛、眼疲勞、全身疲倦、想睡與閱讀能力下降。",
+          "choices": [
+            "正常差異，不需理會",
+            "RAPD",
+            "convergence insufficiency",
+            "角膜散光"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：不同 target 的 NPC 差很多，要想 convergence insufficiency",
+          "problem": "Accommodative target 與 penlight 測得的 NPC break 相差 7 cm，最應考慮？\n\nA. 正常差異，不需理會\nB. RAPD\nC. convergence insufficiency\nD. 角膜散光",
+          "steps": [
+            "先確認題目問的主題：不同 target 的 NPC 差很多，要想 convergence insufficiency",
+            "NPC 可用調節性視標、筆燈或紅色鏡片加筆燈。老花者常用非調節性視標，避免把模糊與複視混淆。若調節性視標與筆燈或紅色鏡片測得的破裂點相差超過 5 cm，或恢復點相差超過 8 cm，需考慮內聚不足。症狀可包含複視、額頭痛、眼疲勞、全身疲倦、想睡與閱讀能力下降。",
+            "把判斷依據連回題目：不同 target 的 break 相差超過 5 cm，需警覺 convergence insufficiency。\n\n正確選項：convergence insufficiency。\nNPC 可用調節性視標、筆燈或紅色鏡片加筆燈。老花者常用非調節性視標，避免把模糊與複視混淆。若調節性視標與筆燈或紅色鏡片測得的破裂點相差超過 5 cm，或恢復點相差超過 8 cm，需考慮內聚不足。症狀可包含複視、額頭痛、眼疲勞、全身疲倦、想睡與閱讀能力下降。"
+          ],
+          "answer": "convergence insufficiency"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：NPC：兩眼最多能往內聚到哪裡",
+          "qids": [
+            "s114-optometry-exam106-u09-opt-q0005",
+            "s114-optometry-exam106-u09-opt-q0009"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "NPC 記錄 12/22 cm，最需要注意哪一項？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Break 12 cm 已大於 9 cm；recovery 比 break 遠 10 cm，也超過 7 cm。\n\n正確選項：break 大於 9 cm，且 recovery 距 break 超過 7 cm。\nNPC 是視軸最大交叉點，臨床從顏面量距離。破裂點可由患者報複視，或檢查者看到一眼外轉；拉遠至重新單一為恢復點。記錄格式是破裂點/恢復點 cm，也可記 TTN；若患者不報雙影但一眼外轉，需記抑制與眼別。",
+              "choices": [
+                "break 大於 9 cm，且 recovery 距 break 超過 7 cm",
+                "完全正常，因兩數都大於 5",
+                "這是 NPA 持續模糊",
+                "代表 TTN"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Accommodative target 與 penlight 測得的 NPC break 相差 7 cm，最應考慮？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "不同 target 的 break 相差超過 5 cm，需警覺 convergence insufficiency。\n\n正確選項：convergence insufficiency。\nNPC 可用調節性視標、筆燈或紅色鏡片加筆燈。老花者常用非調節性視標，避免把模糊與複視混淆。若調節性視標與筆燈或紅色鏡片測得的破裂點相差超過 5 cm，或恢復點相差超過 8 cm，需考慮內聚不足。症狀可包含複視、額頭痛、眼疲勞、全身疲倦、想睡與閱讀能力下降。",
+              "choices": [
+                "正常差異，不需理會",
+                "RAPD",
+                "convergence insufficiency",
+                "角膜散光"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "version：兩眼同方向",
+            "vergence：兩眼反方向",
+            "NPC 終點是破裂點，不是持續模糊",
+            "平均 break 約 5 cm；大於 9 cm 異常",
+            "調節性視標會提供調節性內聚幫助",
+            "break 差 >5 cm 或 recovery 差 >8 cm 要警覺 CI"
+          ],
+          "flash": [
+            {
+              "front": "Version 同方向，vergence 反方向",
+              "back": "兩眼一起往右叫 version；看近時兩眼朝鼻側叫 convergence，是 vergence 的一種。"
+            },
+            {
+              "front": "NPC 記破裂點 / 恢復點，不是模糊點",
+              "back": "把目標移近，影像第一次變兩個或看到一眼跑出去是 break；拉遠重新變一個是 recovery。"
+            },
+            {
+              "front": "不同 target 的 NPC 差很多，要想 convergence insufficiency",
+              "back": "有細節的字會用調節幫忙內聚；筆燈幫助較少。兩者差太多，代表純內聚能力可能不足。"
+            },
+            {
+              "front": "看近物時兩眼同時朝鼻側轉動，稱為？",
+              "back": "兩眼朝相反方向並向內轉動稱 convergence。\n\n正確選項：convergence。\nVersion 描述兩眼往相同方向移動。Vergence 描述兩眼往相反方向移動，其中 convergence 是兩眼向內，divergence 是兩眼向外。NPC 測的是雙眼最大 convergence 能力，不是調節模糊極限。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

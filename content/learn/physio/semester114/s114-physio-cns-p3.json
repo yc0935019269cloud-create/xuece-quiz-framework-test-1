@@ -1,0 +1,713 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-physio-cns-p3",
+  "subject": "physio",
+  "unit": "第13單元 中樞神經系統與周邊神經系統",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "生理學",
+    "第13單元 中樞神經系統與周邊神經系統"
+  ],
+  "title": "中樞神經系統與周邊神經系統（3）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://lustrous-malasada-6d28a9.netlify.app/",
+  "level": 2,
+  "minutes": 75,
+  "order": 13,
+  "source": "https://lustrous-malasada-6d28a9.netlify.app/",
+  "tags": [
+    "中樞神經系統與周邊神經系統"
+  ],
+  "lessons": [
+    {
+      "id": "review-extra-2",
+      "title": "串連、公式與易錯整合（2）",
+      "goals": [
+        "解釋急速重點：Afferent vs Efferent",
+        "解釋急速重點：α motor neuron 位置",
+        "解釋急速重點：Motor unit 與精細度"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：Afferent vs Efferent",
+          "body": "**一句話／白話**\n感覺訊息往 brain/spinal cord 送；運動命令則從那裡送往肌肉或器官。\n\n**觀念**\nAfferent 把資訊送往 CNS；Efferent 把命令從 CNS 送到效應器。\n\n**易錯與比較**\nA = Arrives；E = Exits。\n\n**口訣**\nA＝到達；E＝離開。",
+          "keys": [
+            "感覺訊息往 brain/spinal cord 送；運動命令則從那裡送往肌肉或器官。"
+          ],
+          "tip": "口訣：A＝到達；E＝離開。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：Afferent vs Efferent」，並說出一個判斷依據。",
+          "answer": "Afferent 把資訊送往 CNS；Efferent 把命令從 CNS 送到效應器。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "Afferent 把資訊送往 CNS；Efferent 把命令從 CNS 送到效應器。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：α motor neuron 位置",
+          "body": "**一句話／白話**\n控制骨骼肌的神經元，細胞本體住在 spinal cord，但長長的軸突會伸出去找肌肉。\n\n**觀念**\ncell body 在 ventral horn；axon 經 ventral root 離開並支配 skeletal muscle。\n\n**易錯與比較**\n胞體在 CNS，但軸突大部分位於 PNS。\n\n**口訣**\n身體在中樞，長手在周邊。",
+          "keys": [
+            "控制骨骼肌的神經元，細胞本體住在 spinal cord，但長長的軸突會伸出去找肌肉。"
+          ],
+          "tip": "口訣：身體在中樞，長手在周邊。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：α motor neuron 位置」，並說出一個判斷依據。",
+          "answer": "cell body 在 ventral horn；axon 經 ventral root 離開並支配 skeletal muscle。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "cell body 在 ventral horn；axon 經 ventral root 離開並支配 skeletal muscle。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：Motor unit 與精細度",
+          "body": "**一句話／白話**\n一顆運動神經帶的肌纖維越少，動作越精細；一次帶很多，力量較大但控制較粗。\n\n**觀念**\n一個 α motor neuron + 它支配的全部肌纖維 = motor unit；小 unit 精細，大 unit 力量大。\n\n**易錯與比較**\n眼外肌、手指偏小；大腿肌偏大。\n\n**口訣**\n小隊精細，大隊有力。",
+          "keys": [
+            "一顆運動神經帶的肌纖維越少，動作越精細；一次帶很多，力量較大但控制較粗。"
+          ],
+          "tip": "口訣：小隊精細，大隊有力。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：Motor unit 與精細度」，並說出一個判斷依據。",
+          "answer": "一個 α motor neuron + 它支配的全部肌纖維 = motor unit；小 unit 精細，大 unit 力量大。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "一個 α motor neuron + 它支配的全部肌纖維 = motor unit；小 unit 精細，大 unit 力量大。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：急速重點：Motor unit 與精細度",
+          "problem": "用自己的話說明「急速重點：Motor unit 與精細度」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：急速重點：Motor unit 與精細度",
+            "一個 α motor neuron + 它支配的全部肌纖維 = motor unit；小 unit 精細，大 unit 力量大。",
+            "把判斷依據連回題目：一個 α motor neuron + 它支配的全部肌纖維 = motor unit；小 unit 精細，大 unit 力量大。"
+          ],
+          "answer": "一個 α motor neuron + 它支配的全部肌纖維 = motor unit；小 unit 精細，大 unit 力量大。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-physio-course114-u13-phys-13-04",
+            "s114-physio-course114-u13-phys-13-05"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：α motor neuron 位置」，並說出一個判斷依據。",
+              "answer": "cell body 在 ventral horn；axon 經 ventral root 離開並支配 skeletal muscle。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "cell body 在 ventral horn；axon 經 ventral root 離開並支配 skeletal muscle。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：Motor unit 與精細度」，並說出一個判斷依據。",
+              "answer": "一個 α motor neuron + 它支配的全部肌纖維 = motor unit；小 unit 精細，大 unit 力量大。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "一個 α motor neuron + 它支配的全部肌纖維 = motor unit；小 unit 精細，大 unit 力量大。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "感覺訊息往 brain/spinal cord 送；運動命令則從那裡送往肌肉或器官。",
+            "控制骨骼肌的神經元，細胞本體住在 spinal cord，但長長的軸突會伸出去找肌肉。",
+            "一顆運動神經帶的肌纖維越少，動作越精細；一次帶很多，力量較大但控制較粗。",
+            "急速重點：Afferent vs Efferent：感覺訊息往 brain/spinal cord 送；運動命令則從那裡送往肌肉或器官。",
+            "急速重點：α motor neuron 位置：控制骨骼肌的神經元，細胞本體住在 spinal cord，但長長的軸突會伸出去找肌肉。"
+          ],
+          "flash": [
+            {
+              "front": "急速重點：Afferent vs Efferent",
+              "back": "感覺訊息往 brain/spinal cord 送；運動命令則從那裡送往肌肉或器官。"
+            },
+            {
+              "front": "急速重點：α motor neuron 位置",
+              "back": "控制骨骼肌的神經元，細胞本體住在 spinal cord，但長長的軸突會伸出去找肌肉。"
+            },
+            {
+              "front": "急速重點：Motor unit 與精細度",
+              "back": "一顆運動神經帶的肌纖維越少，動作越精細；一次帶很多，力量較大但控制較粗。"
+            },
+            {
+              "front": "用自己的話說明「急速重點：Afferent vs Efferent」，並說出一個判斷依據。",
+              "back": "Afferent 把資訊送往 CNS；Efferent 把命令從 CNS 送到效應器。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review-extra-3",
+      "title": "串連、公式與易錯整合（3）",
+      "goals": [
+        "解釋急速重點：Glia 語言與功能"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：Glia 語言與功能",
+          "body": "**一句話／白話**\n神經元負責傳訊；旁邊的膠質細胞負責餵養、清潔、包絕緣層與維持環境。\n\n**觀念**\nglia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。\n\n**易錯與比較**\n不負責主要長距離 action potential 傳遞。\n\n**口訣**\n一個送訊息，一群做後勤。",
+          "keys": [
+            "神經元負責傳訊；旁邊的膠質細胞負責餵養、清潔、包絕緣層與維持環境。"
+          ],
+          "tip": "口訣：一個送訊息，一群做後勤。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：Glia 語言與功能」，並說出一個判斷依據。",
+          "answer": "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。"
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\n用自己的話說明「急速重點：Glia 語言與功能」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：急速重點：Glia 語言與功能\n- glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。\n- 把判斷依據連回題目：glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。\n\n**結論與依據**\nglia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。",
+          "keys": [
+            "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：急速重點：Glia 語言與功能\n- glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。\n- 把判斷依據連回題目：glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：急速重點：Glia 語言與功能",
+          "problem": "用自己的話說明「急速重點：Glia 語言與功能」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：急速重點：Glia 語言與功能",
+            "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。",
+            "把判斷依據連回題目：glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。"
+          ],
+          "answer": "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-physio-course114-u13-phys-13-07",
+            "s114-physio-course114-u13-phys-13-08"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：Glia 語言與功能」，並說出一個判斷依據。",
+              "answer": "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "神經元負責傳訊；旁邊的膠質細胞負責餵養、清潔、包絕緣層與維持環境。",
+            "急速重點：Glia 語言與功能：神經元負責傳訊；旁邊的膠質細胞負責餵養、清潔、包絕緣層與維持環境。",
+            "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。",
+            "- 先確認題目問的主題：急速重點：Glia 語言與功能\n- glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。\n- 把判斷依據連回題目：glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。",
+            "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。"
+          ],
+          "flash": [
+            {
+              "front": "急速重點：Glia 語言與功能",
+              "back": "神經元負責傳訊；旁邊的膠質細胞負責餵養、清潔、包絕緣層與維持環境。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：急速重點：Glia 語言與功能\n- glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。\n- 把判斷依據連回題目：glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。"
+            },
+            {
+              "front": "用自己的話說明「急速重點：Glia 語言與功能」，並說出一個判斷依據。",
+              "back": "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：急速重點：Glia 語言與功能\n- glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。\n- 把判斷依據連回題目：glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-1",
+      "title": "整合驗收 1",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞神經系統與周邊神經系統",
+          "body": "If any part is in the periphery it is PNS; only if all components are in the CNS is it CNS.\n\n正確選項：A neuron is CNS only if all its parts lie in the CNS。\n\n\n中文對照：question：CNS 的嚴格定義是？\nchoices：- 所有組成都在中樞才算 CNS\n- 大部分在中樞就算 CNS\n- 有細胞本體在中樞就算 CNS\n- 有 axon 在中樞就算 CNS\nexplain：只要任一部分在周邊就算 PNS；全部在中樞才算 CNS。",
+          "keys": [
+            "If any part is in the periphery it is PNS; only if all components are in the CNS is it CNS.\n\n正確選項：A neuron is CNS only if all its parts lie in the CNS。\n\n\n中文對照：question：CNS 的嚴格定義是？\nchoices：- 所有組成都在中樞才算 CNS\n- 大部分在中樞就算 CNS\n- 有細胞本體在中樞就算 CNS\n- 有 axon 在中樞就算 CNS\nexplain：只要任一部分在周邊就算 PNS；全部在中樞才算 CNS。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "What is the strict definition of CNS?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "If any part is in the periphery it is PNS; only if all components are in the CNS is it CNS.\n\n正確選項：A neuron is CNS only if all its parts lie in the CNS。\n\n\n中文對照：question：CNS 的嚴格定義是？\nchoices：- 所有組成都在中樞才算 CNS\n- 大部分在中樞就算 CNS\n- 有細胞本體在中樞就算 CNS\n- 有 axon 在中樞就算 CNS\nexplain：只要任一部分在周邊就算 PNS；全部在中樞才算 CNS。",
+          "choices": [
+            "A neuron is CNS only if all its parts lie in the CNS",
+            "A neuron is CNS if most of it lies in the CNS",
+            "A neuron is CNS if its cell body is in the CNS",
+            "A neuron is CNS if its axon is in the CNS"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞神經系統與周邊神經系統",
+          "body": "Afferent = sensory = input = periphery to CNS.\n\n正確選項：Periphery → CNS。\n\n\n中文對照：question：afferent 代表的訊號方向是？\nchoices：- 周邊 → 中樞\n- 中樞 → 周邊\n- 中樞內循環\n- 周邊內循環\nexplain：afferent＝sensory＝input＝周邊到中樞。",
+          "keys": [
+            "Afferent = sensory = input = periphery to CNS.\n\n正確選項：Periphery → CNS。\n\n\n中文對照：question：afferent 代表的訊號方向是？\nchoices：- 周邊 → 中樞\n- 中樞 → 周邊\n- 中樞內循環\n- 周邊內循環\nexplain：afferent＝sensory＝input＝周邊到中樞。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Which signal direction does 'afferent' indicate?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Afferent = sensory = input = periphery to CNS.\n\n正確選項：Periphery → CNS。\n\n\n中文對照：question：afferent 代表的訊號方向是？\nchoices：- 周邊 → 中樞\n- 中樞 → 周邊\n- 中樞內循環\n- 周邊內循環\nexplain：afferent＝sensory＝input＝周邊到中樞。",
+          "choices": [
+            "Periphery → CNS",
+            "CNS → periphery",
+            "Within the CNS",
+            "Within the periphery"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞神經系統與周邊神經系統",
+          "body": "Cell body in the ventral horn (CNS) but axon in the periphery → the whole neuron is PNS.\n\n正確選項：PNS; cell body in the ventral horn (CNS)。\n\n\n中文對照：question：α motor neuron 的歸類與本體位置？\nchoices：- PNS；本體在脊髓腹角(中樞)\n- CNS；本體在脊髓腹角\n- PNS；本體在 DRG\n- CNS；本體在骨骼肌\nexplain：本體在 ventral horn(中樞)、axon 在周邊，整顆算 PNS。",
+          "keys": [
+            "Cell body in the ventral horn (CNS) but axon in the periphery → the whole neuron is PNS.\n\n正確選項：PNS; cell body in the ventral horn (CNS)。\n\n\n中文對照：question：α motor neuron 的歸類與本體位置？\nchoices：- PNS；本體在脊髓腹角(中樞)\n- CNS；本體在脊髓腹角\n- PNS；本體在 DRG\n- CNS；本體在骨骼肌\nexplain：本體在 ventral horn(中樞)、axon 在周邊，整顆算 PNS。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "How is an α motor neuron classified, and where is its cell body?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Cell body in the ventral horn (CNS) but axon in the periphery → the whole neuron is PNS.\n\n正確選項：PNS; cell body in the ventral horn (CNS)。\n\n\n中文對照：question：α motor neuron 的歸類與本體位置？\nchoices：- PNS；本體在脊髓腹角(中樞)\n- CNS；本體在脊髓腹角\n- PNS；本體在 DRG\n- CNS；本體在骨骼肌\nexplain：本體在 ventral horn(中樞)、axon 在周邊，整顆算 PNS。",
+          "choices": [
+            "PNS; cell body in the ventral horn (CNS)",
+            "CNS; cell body in the ventral horn",
+            "PNS; cell body in the DRG",
+            "CNS; cell body in skeletal muscle"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "What is the strict definition of CNS?",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "If any part is in the periphery it is PNS; only if all components are in the CNS is it CNS.\n\n正確選項：A neuron is CNS only if all its parts lie in the CNS。\n\n\n中文對照：question：CNS 的嚴格定義是？\nchoices：- 所有組成都在中樞才算 CNS\n- 大部分在中樞就算 CNS\n- 有細胞本體在中樞就算 CNS\n- 有 axon 在中樞就算 CNS\nexplain：只要任一部分在周邊就算 PNS；全部在中樞才算 CNS。",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "A neuron is CNS only if all its parts lie in the CNS"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "What is the strict definition of CNS?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "If any part is in the periphery it is PNS; only if all components are in the CNS is it CNS.\n\n正確選項：A neuron is CNS only if all its parts lie in the CNS。\n\n\n中文對照：question：CNS 的嚴格定義是？\nchoices：- 所有組成都在中樞才算 CNS\n- 大部分在中樞就算 CNS\n- 有細胞本體在中樞就算 CNS\n- 有 axon 在中樞就算 CNS\nexplain：只要任一部分在周邊就算 PNS；全部在中樞才算 CNS。",
+              "choices": [
+                "A neuron is CNS only if all its parts lie in the CNS",
+                "A neuron is CNS if most of it lies in the CNS",
+                "A neuron is CNS if its cell body is in the CNS",
+                "A neuron is CNS if its axon is in the CNS"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Which signal direction does 'afferent' indicate?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Afferent = sensory = input = periphery to CNS.\n\n正確選項：Periphery → CNS。\n\n\n中文對照：question：afferent 代表的訊號方向是？\nchoices：- 周邊 → 中樞\n- 中樞 → 周邊\n- 中樞內循環\n- 周邊內循環\nexplain：afferent＝sensory＝input＝周邊到中樞。",
+              "choices": [
+                "Periphery → CNS",
+                "CNS → periphery",
+                "Within the CNS",
+                "Within the periphery"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "How is an α motor neuron classified, and where is its cell body?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Cell body in the ventral horn (CNS) but axon in the periphery → the whole neuron is PNS.\n\n正確選項：PNS; cell body in the ventral horn (CNS)。\n\n\n中文對照：question：α motor neuron 的歸類與本體位置？\nchoices：- PNS；本體在脊髓腹角(中樞)\n- CNS；本體在脊髓腹角\n- PNS；本體在 DRG\n- CNS；本體在骨骼肌\nexplain：本體在 ventral horn(中樞)、axon 在周邊，整顆算 PNS。",
+              "choices": [
+                "PNS; cell body in the ventral horn (CNS)",
+                "CNS; cell body in the ventral horn",
+                "PNS; cell body in the DRG",
+                "CNS; cell body in skeletal muscle"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "If any part is in the periphery it is PNS; only if all components are in the CNS is it CNS.\n\n正確選項：A neuron is CNS only if all its parts lie in the CNS。\n\n\n中文對照：question：CNS 的嚴格定義是？\nchoices：- 所有組成都在中樞才算 CNS\n- 大部分在中樞就算 CNS\n- 有細胞本體在中樞就算 CNS\n- 有 axon 在中樞就算 CNS\nexplain：只要任一部分在周邊就算 PNS；全部在中樞才算 CNS。",
+            "Afferent = sensory = input = periphery to CNS.\n\n正確選項：Periphery → CNS。\n\n\n中文對照：question：afferent 代表的訊號方向是？\nchoices：- 周邊 → 中樞\n- 中樞 → 周邊\n- 中樞內循環\n- 周邊內循環\nexplain：afferent＝sensory＝input＝周邊到中樞。",
+            "Cell body in the ventral horn (CNS) but axon in the periphery → the whole neuron is PNS.\n\n正確選項：PNS; cell body in the ventral horn (CNS)。\n\n\n中文對照：question：α motor neuron 的歸類與本體位置？\nchoices：- PNS；本體在脊髓腹角(中樞)\n- CNS；本體在脊髓腹角\n- PNS；本體在 DRG\n- CNS；本體在骨骼肌\nexplain：本體在 ventral horn(中樞)、axon 在周邊，整顆算 PNS。",
+            "If any part is in the periphery it is PNS; only if all components are in the CNS is it CNS.\n\n正確選項：A neuron is CNS only if all its parts lie in the CNS。\n\n\n中文對照：question：CNS 的嚴格定義是？\nchoices：- 所有組成都在中樞才算 CNS\n- 大部分在中樞就算 CNS\n- 有細胞本體在中樞就算 CNS\n- 有 axon 在中樞就算 CNS\nexplain：只要任一部分在周邊就算 PNS；全部在中樞才算 CNS。",
+            "Afferent = sensory = input = periphery to CNS.\n\n正確選項：Periphery → CNS。\n\n\n中文對照：question：afferent 代表的訊號方向是？\nchoices：- 周邊 → 中樞\n- 中樞 → 周邊\n- 中樞內循環\n- 周邊內循環\nexplain：afferent＝sensory＝input＝周邊到中樞。"
+          ],
+          "flash": [
+            {
+              "front": "What is the strict definition of CNS?",
+              "back": "If any part is in the periphery it is PNS; only if all components are in the CNS is it CNS.\n\n正確選項：A neuron is CNS only if all its parts lie in the CNS。\n\n\n中文對照：question：CNS 的嚴格定義是？\nchoices：- 所有組成都在中樞才算 CNS\n- 大部分在中樞就算 CNS\n- 有細胞本體在中樞就算 CNS\n- 有 axon 在中樞就算 CNS\nexplain：只要任一部分在周邊就算 PNS；全部在中樞才算 CNS。"
+            },
+            {
+              "front": "Which signal direction does 'afferent' indicate?",
+              "back": "Afferent = sensory = input = periphery to CNS.\n\n正確選項：Periphery → CNS。\n\n\n中文對照：question：afferent 代表的訊號方向是？\nchoices：- 周邊 → 中樞\n- 中樞 → 周邊\n- 中樞內循環\n- 周邊內循環\nexplain：afferent＝sensory＝input＝周邊到中樞。"
+            },
+            {
+              "front": "How is an α motor neuron classified, and where is its cell body?",
+              "back": "Cell body in the ventral horn (CNS) but axon in the periphery → the whole neuron is PNS.\n\n正確選項：PNS; cell body in the ventral horn (CNS)。\n\n\n中文對照：question：α motor neuron 的歸類與本體位置？\nchoices：- PNS；本體在脊髓腹角(中樞)\n- CNS；本體在脊髓腹角\n- PNS；本體在 DRG\n- CNS；本體在骨骼肌\nexplain：本體在 ventral horn(中樞)、axon 在周邊，整顆算 PNS。"
+            },
+            {
+              "front": "What is the strict definition of CNS?",
+              "back": "If any part is in the periphery it is PNS; only if all components are in the CNS is it CNS.\n\n正確選項：A neuron is CNS only if all its parts lie in the CNS。\n\n\n中文對照：question：CNS 的嚴格定義是？\nchoices：- 所有組成都在中樞才算 CNS\n- 大部分在中樞就算 CNS\n- 有細胞本體在中樞就算 CNS\n- 有 axon 在中樞就算 CNS\nexplain：只要任一部分在周邊就算 PNS；全部在中樞才算 CNS。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-2",
+      "title": "整合驗收 2",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞神經系統與周邊神經系統",
+          "body": "The axon hillock has a high density of voltage-gated Na⁺ channels and is the AP initiation site.\n\n正確選項：Axon hillock。\n\n\n中文對照：question：神經元動作電位的起始點通常在？\nchoices：- axon hillock\n- dendrite\n- soma 核\n- axon terminal\nexplain：軸丘有大量電壓門控鈉通道，是 AP 起始點。",
+          "keys": [
+            "The axon hillock has a high density of voltage-gated Na⁺ channels and is the AP initiation site.\n\n正確選項：Axon hillock。\n\n\n中文對照：question：神經元動作電位的起始點通常在？\nchoices：- axon hillock\n- dendrite\n- soma 核\n- axon terminal\nexplain：軸丘有大量電壓門控鈉通道，是 AP 起始點。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Where is a neuron's action potential usually initiated?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "The axon hillock has a high density of voltage-gated Na⁺ channels and is the AP initiation site.\n\n正確選項：Axon hillock。\n\n\n中文對照：question：神經元動作電位的起始點通常在？\nchoices：- axon hillock\n- dendrite\n- soma 核\n- axon terminal\nexplain：軸丘有大量電壓門控鈉通道，是 AP 起始點。",
+          "choices": [
+            "Axon hillock",
+            "Dendrite",
+            "Soma/nucleus",
+            "Axon terminal"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞神經系統與周邊神經系統",
+          "body": "Pseudounipolar neurons look unipolar but function as bipolar, seen in DRG sensory neurons.\n\n正確選項：DRG sensory neurons。\n\n\n中文對照：question：Pseudounipolar neuron 最常見於？\nchoices：- DRG 感覺神經元\n- 大腦皮質\n- 小腦 Purkinje\n- 骨骼肌\nexplain：假單極神經元看似單極、功能像雙極，見於 DRG 感覺神經元。",
+          "keys": [
+            "Pseudounipolar neurons look unipolar but function as bipolar, seen in DRG sensory neurons.\n\n正確選項：DRG sensory neurons。\n\n\n中文對照：question：Pseudounipolar neuron 最常見於？\nchoices：- DRG 感覺神經元\n- 大腦皮質\n- 小腦 Purkinje\n- 骨骼肌\nexplain：假單極神經元看似單極、功能像雙極，見於 DRG 感覺神經元。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Pseudounipolar neurons are most commonly found in?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Pseudounipolar neurons look unipolar but function as bipolar, seen in DRG sensory neurons.\n\n正確選項：DRG sensory neurons。\n\n\n中文對照：question：Pseudounipolar neuron 最常見於？\nchoices：- DRG 感覺神經元\n- 大腦皮質\n- 小腦 Purkinje\n- 骨骼肌\nexplain：假單極神經元看似單極、功能像雙極，見於 DRG 感覺神經元。",
+          "choices": [
+            "DRG sensory neurons",
+            "Cerebral cortex",
+            "Cerebellar Purkinje cells",
+            "Skeletal muscle"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞神經系統與周邊神經系統",
+          "body": "Oligodendrocytes form myelin in the CNS; Schwann cells in the PNS.\n\n正確選項：Oligodendrocyte。\n\n\n中文對照：question：中樞神經系統製造髓鞘的細胞是？\nchoices：- oligodendrocyte\n- Schwann cell\n- satellite cell\n- microglia\nexplain：中樞 oligodendrocyte、周邊 Schwann cell 製造髓鞘。",
+          "keys": [
+            "Oligodendrocytes form myelin in the CNS; Schwann cells in the PNS.\n\n正確選項：Oligodendrocyte。\n\n\n中文對照：question：中樞神經系統製造髓鞘的細胞是？\nchoices：- oligodendrocyte\n- Schwann cell\n- satellite cell\n- microglia\nexplain：中樞 oligodendrocyte、周邊 Schwann cell 製造髓鞘。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Which cell forms myelin in the CNS?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Oligodendrocytes form myelin in the CNS; Schwann cells in the PNS.\n\n正確選項：Oligodendrocyte。\n\n\n中文對照：question：中樞神經系統製造髓鞘的細胞是？\nchoices：- oligodendrocyte\n- Schwann cell\n- satellite cell\n- microglia\nexplain：中樞 oligodendrocyte、周邊 Schwann cell 製造髓鞘。",
+          "choices": [
+            "Oligodendrocyte",
+            "Schwann cell",
+            "Satellite cell",
+            "Microglia"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "Where is a neuron's action potential usually initiated?",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "The axon hillock has a high density of voltage-gated Na⁺ channels and is the AP initiation site.\n\n正確選項：Axon hillock。\n\n\n中文對照：question：神經元動作電位的起始點通常在？\nchoices：- axon hillock\n- dendrite\n- soma 核\n- axon terminal\nexplain：軸丘有大量電壓門控鈉通道，是 AP 起始點。",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "Axon hillock"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Where is a neuron's action potential usually initiated?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "The axon hillock has a high density of voltage-gated Na⁺ channels and is the AP initiation site.\n\n正確選項：Axon hillock。\n\n\n中文對照：question：神經元動作電位的起始點通常在？\nchoices：- axon hillock\n- dendrite\n- soma 核\n- axon terminal\nexplain：軸丘有大量電壓門控鈉通道，是 AP 起始點。",
+              "choices": [
+                "Axon hillock",
+                "Dendrite",
+                "Soma/nucleus",
+                "Axon terminal"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Pseudounipolar neurons are most commonly found in?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Pseudounipolar neurons look unipolar but function as bipolar, seen in DRG sensory neurons.\n\n正確選項：DRG sensory neurons。\n\n\n中文對照：question：Pseudounipolar neuron 最常見於？\nchoices：- DRG 感覺神經元\n- 大腦皮質\n- 小腦 Purkinje\n- 骨骼肌\nexplain：假單極神經元看似單極、功能像雙極，見於 DRG 感覺神經元。",
+              "choices": [
+                "DRG sensory neurons",
+                "Cerebral cortex",
+                "Cerebellar Purkinje cells",
+                "Skeletal muscle"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Which cell forms myelin in the CNS?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Oligodendrocytes form myelin in the CNS; Schwann cells in the PNS.\n\n正確選項：Oligodendrocyte。\n\n\n中文對照：question：中樞神經系統製造髓鞘的細胞是？\nchoices：- oligodendrocyte\n- Schwann cell\n- satellite cell\n- microglia\nexplain：中樞 oligodendrocyte、周邊 Schwann cell 製造髓鞘。",
+              "choices": [
+                "Oligodendrocyte",
+                "Schwann cell",
+                "Satellite cell",
+                "Microglia"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "The axon hillock has a high density of voltage-gated Na⁺ channels and is the AP initiation site.\n\n正確選項：Axon hillock。\n\n\n中文對照：question：神經元動作電位的起始點通常在？\nchoices：- axon hillock\n- dendrite\n- soma 核\n- axon terminal\nexplain：軸丘有大量電壓門控鈉通道，是 AP 起始點。",
+            "Pseudounipolar neurons look unipolar but function as bipolar, seen in DRG sensory neurons.\n\n正確選項：DRG sensory neurons。\n\n\n中文對照：question：Pseudounipolar neuron 最常見於？\nchoices：- DRG 感覺神經元\n- 大腦皮質\n- 小腦 Purkinje\n- 骨骼肌\nexplain：假單極神經元看似單極、功能像雙極，見於 DRG 感覺神經元。",
+            "Oligodendrocytes form myelin in the CNS; Schwann cells in the PNS.\n\n正確選項：Oligodendrocyte。\n\n\n中文對照：question：中樞神經系統製造髓鞘的細胞是？\nchoices：- oligodendrocyte\n- Schwann cell\n- satellite cell\n- microglia\nexplain：中樞 oligodendrocyte、周邊 Schwann cell 製造髓鞘。",
+            "The axon hillock has a high density of voltage-gated Na⁺ channels and is the AP initiation site.\n\n正確選項：Axon hillock。\n\n\n中文對照：question：神經元動作電位的起始點通常在？\nchoices：- axon hillock\n- dendrite\n- soma 核\n- axon terminal\nexplain：軸丘有大量電壓門控鈉通道，是 AP 起始點。",
+            "Pseudounipolar neurons look unipolar but function as bipolar, seen in DRG sensory neurons.\n\n正確選項：DRG sensory neurons。\n\n\n中文對照：question：Pseudounipolar neuron 最常見於？\nchoices：- DRG 感覺神經元\n- 大腦皮質\n- 小腦 Purkinje\n- 骨骼肌\nexplain：假單極神經元看似單極、功能像雙極，見於 DRG 感覺神經元。"
+          ],
+          "flash": [
+            {
+              "front": "Where is a neuron's action potential usually initiated?",
+              "back": "The axon hillock has a high density of voltage-gated Na⁺ channels and is the AP initiation site.\n\n正確選項：Axon hillock。\n\n\n中文對照：question：神經元動作電位的起始點通常在？\nchoices：- axon hillock\n- dendrite\n- soma 核\n- axon terminal\nexplain：軸丘有大量電壓門控鈉通道，是 AP 起始點。"
+            },
+            {
+              "front": "Pseudounipolar neurons are most commonly found in?",
+              "back": "Pseudounipolar neurons look unipolar but function as bipolar, seen in DRG sensory neurons.\n\n正確選項：DRG sensory neurons。\n\n\n中文對照：question：Pseudounipolar neuron 最常見於？\nchoices：- DRG 感覺神經元\n- 大腦皮質\n- 小腦 Purkinje\n- 骨骼肌\nexplain：假單極神經元看似單極、功能像雙極，見於 DRG 感覺神經元。"
+            },
+            {
+              "front": "Which cell forms myelin in the CNS?",
+              "back": "Oligodendrocytes form myelin in the CNS; Schwann cells in the PNS.\n\n正確選項：Oligodendrocyte。\n\n\n中文對照：question：中樞神經系統製造髓鞘的細胞是？\nchoices：- oligodendrocyte\n- Schwann cell\n- satellite cell\n- microglia\nexplain：中樞 oligodendrocyte、周邊 Schwann cell 製造髓鞘。"
+            },
+            {
+              "front": "Where is a neuron's action potential usually initiated?",
+              "back": "The axon hillock has a high density of voltage-gated Na⁺ channels and is the AP initiation site.\n\n正確選項：Axon hillock。\n\n\n中文對照：question：神經元動作電位的起始點通常在？\nchoices：- axon hillock\n- dendrite\n- soma 核\n- axon terminal\nexplain：軸丘有大量電壓門控鈉通道，是 AP 起始點。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-3",
+      "title": "整合驗收 3",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞神經系統與周邊神經系統",
+          "body": "Cerebrum: gray outside, white inside; the spinal cord is the reverse.\n\n正確選項：Gray outside, white inside。\n\n\n中文對照：question：大腦皮質的灰白質分布是？\nchoices：- 外灰內白\n- 外白內灰\n- 全灰\n- 全白\nexplain：大腦外灰內白；脊髓相反。",
+          "keys": [
+            "Cerebrum: gray outside, white inside; the spinal cord is the reverse.\n\n正確選項：Gray outside, white inside。\n\n\n中文對照：question：大腦皮質的灰白質分布是？\nchoices：- 外灰內白\n- 外白內灰\n- 全灰\n- 全白\nexplain：大腦外灰內白；脊髓相反。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "How are gray and white matter arranged in the cerebrum?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Cerebrum: gray outside, white inside; the spinal cord is the reverse.\n\n正確選項：Gray outside, white inside。\n\n\n中文對照：question：大腦皮質的灰白質分布是？\nchoices：- 外灰內白\n- 外白內灰\n- 全灰\n- 全白\nexplain：大腦外灰內白；脊髓相反。",
+          "choices": [
+            "Gray outside, white inside",
+            "White outside, gray inside",
+            "All gray",
+            "All white"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞神經系統與周邊神經系統",
+          "body": "The BBB is formed by capillary endothelial cells and astrocytes, controlling CNS permeability.\n\n正確選項：Capillary endothelial cells and astrocytes。\n\n\n中文對照：question：血腦屏障主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與紅血球\n- 灰質與白質\nexplain：BBB 由血管內皮與星狀膠質細胞等構成。",
+          "keys": [
+            "The BBB is formed by capillary endothelial cells and astrocytes, controlling CNS permeability.\n\n正確選項：Capillary endothelial cells and astrocytes。\n\n\n中文對照：question：血腦屏障主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與紅血球\n- 灰質與白質\nexplain：BBB 由血管內皮與星狀膠質細胞等構成。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "The blood-brain barrier is mainly formed by?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "The BBB is formed by capillary endothelial cells and astrocytes, controlling CNS permeability.\n\n正確選項：Capillary endothelial cells and astrocytes。\n\n\n中文對照：question：血腦屏障主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與紅血球\n- 灰質與白質\nexplain：BBB 由血管內皮與星狀膠質細胞等構成。",
+          "choices": [
+            "Capillary endothelial cells and astrocytes",
+            "Neurons and Schwann cells",
+            "Microglia and red blood cells",
+            "Gray and white matter"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "How are gray and white matter arranged in the cerebrum?",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "Cerebrum: gray outside, white inside; the spinal cord is the reverse.\n\n正確選項：Gray outside, white inside。\n\n\n中文對照：question：大腦皮質的灰白質分布是？\nchoices：- 外灰內白\n- 外白內灰\n- 全灰\n- 全白\nexplain：大腦外灰內白；脊髓相反。",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "Gray outside, white inside"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "How are gray and white matter arranged in the cerebrum?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Cerebrum: gray outside, white inside; the spinal cord is the reverse.\n\n正確選項：Gray outside, white inside。\n\n\n中文對照：question：大腦皮質的灰白質分布是？\nchoices：- 外灰內白\n- 外白內灰\n- 全灰\n- 全白\nexplain：大腦外灰內白；脊髓相反。",
+              "choices": [
+                "Gray outside, white inside",
+                "White outside, gray inside",
+                "All gray",
+                "All white"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "The blood-brain barrier is mainly formed by?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "The BBB is formed by capillary endothelial cells and astrocytes, controlling CNS permeability.\n\n正確選項：Capillary endothelial cells and astrocytes。\n\n\n中文對照：question：血腦屏障主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與紅血球\n- 灰質與白質\nexplain：BBB 由血管內皮與星狀膠質細胞等構成。",
+              "choices": [
+                "Capillary endothelial cells and astrocytes",
+                "Neurons and Schwann cells",
+                "Microglia and red blood cells",
+                "Gray and white matter"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "Cerebrum: gray outside, white inside; the spinal cord is the reverse.\n\n正確選項：Gray outside, white inside。\n\n\n中文對照：question：大腦皮質的灰白質分布是？\nchoices：- 外灰內白\n- 外白內灰\n- 全灰\n- 全白\nexplain：大腦外灰內白；脊髓相反。",
+            "The BBB is formed by capillary endothelial cells and astrocytes, controlling CNS permeability.\n\n正確選項：Capillary endothelial cells and astrocytes。\n\n\n中文對照：question：血腦屏障主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與紅血球\n- 灰質與白質\nexplain：BBB 由血管內皮與星狀膠質細胞等構成。",
+            "Cerebrum: gray outside, white inside; the spinal cord is the reverse.\n\n正確選項：Gray outside, white inside。\n\n\n中文對照：question：大腦皮質的灰白質分布是？\nchoices：- 外灰內白\n- 外白內灰\n- 全灰\n- 全白\nexplain：大腦外灰內白；脊髓相反。",
+            "The BBB is formed by capillary endothelial cells and astrocytes, controlling CNS permeability.\n\n正確選項：Capillary endothelial cells and astrocytes。\n\n\n中文對照：question：血腦屏障主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與紅血球\n- 灰質與白質\nexplain：BBB 由血管內皮與星狀膠質細胞等構成。",
+            "Cerebrum: gray outside, white inside; the spinal cord is the reverse.\n\n正確選項：Gray outside, white inside。\n\n\n中文對照：question：大腦皮質的灰白質分布是？\nchoices：- 外灰內白\n- 外白內灰\n- 全灰\n- 全白\nexplain：大腦外灰內白；脊髓相反。"
+          ],
+          "flash": [
+            {
+              "front": "How are gray and white matter arranged in the cerebrum?",
+              "back": "Cerebrum: gray outside, white inside; the spinal cord is the reverse.\n\n正確選項：Gray outside, white inside。\n\n\n中文對照：question：大腦皮質的灰白質分布是？\nchoices：- 外灰內白\n- 外白內灰\n- 全灰\n- 全白\nexplain：大腦外灰內白；脊髓相反。"
+            },
+            {
+              "front": "The blood-brain barrier is mainly formed by?",
+              "back": "The BBB is formed by capillary endothelial cells and astrocytes, controlling CNS permeability.\n\n正確選項：Capillary endothelial cells and astrocytes。\n\n\n中文對照：question：血腦屏障主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與紅血球\n- 灰質與白質\nexplain：BBB 由血管內皮與星狀膠質細胞等構成。"
+            },
+            {
+              "front": "How are gray and white matter arranged in the cerebrum?",
+              "back": "Cerebrum: gray outside, white inside; the spinal cord is the reverse.\n\n正確選項：Gray outside, white inside。\n\n\n中文對照：question：大腦皮質的灰白質分布是？\nchoices：- 外灰內白\n- 外白內灰\n- 全灰\n- 全白\nexplain：大腦外灰內白；脊髓相反。"
+            },
+            {
+              "front": "The blood-brain barrier is mainly formed by?",
+              "back": "The BBB is formed by capillary endothelial cells and astrocytes, controlling CNS permeability.\n\n正確選項：Capillary endothelial cells and astrocytes。\n\n\n中文對照：question：血腦屏障主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與紅血球\n- 灰質與白質\nexplain：BBB 由血管內皮與星狀膠質細胞等構成。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

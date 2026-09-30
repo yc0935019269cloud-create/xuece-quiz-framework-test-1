@@ -1,0 +1,685 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-physio-cardiovascular-p3",
+  "subject": "physio",
+  "unit": "第10-11單元 心血管系統",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "生理學",
+    "第10-11單元 心血管系統"
+  ],
+  "title": "心血管系統（3）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://lustrous-malasada-6d28a9.netlify.app/",
+  "level": 2,
+  "minutes": 75,
+  "order": 10,
+  "source": "https://lustrous-malasada-6d28a9.netlify.app/",
+  "tags": [
+    "心血管系統"
+  ],
+  "lessons": [
+    {
+      "id": "cardio-sounds-output-2",
+      "title": "第 5 站：心音與心輸出量（2）",
+      "goals": [
+        "解釋藥理情境用 preload / afterload / contractility 推"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 5 站：心音與心輸出量",
+          "body": "心音來自瓣膜關閉與填充事件；心輸出量 CO 把心率 HR 和每搏輸出 SV 合起來，當作心臟整體表現的指標。\n\n- 先記 S1、S2 是兩道門關上的聲音。\n- 再認 S3、S4 這兩個額外聲音在提醒什麼問題。\n- 用 CO = HR × SV 把表現量化（運動員 HR 慢但 SV 大）。\n- 最後用 preload/afterload/contractility 推藥理題。"
+        },
+        {
+          "type": "card",
+          "title": "藥理情境用 preload / afterload / contractility 推",
+          "body": "**連到前一觀念**\n心血管藥理題看起來很多變，其實都回到三個旋鈕。\n\n**觀念**\n遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。\n\n**為什麼**\nPreload 是收縮前心室裝多少血（受靜脈回流影響）；afterload 是心室射血要對抗的出口壓力（受 TPR/主動脈壓影響）；contractility 是心肌本身的力氣（受細胞內 Ca²⁺ 影響）。三者各自往哪走，SV 與 CO 就跟著走。\n\n**考試角度**\n- 靜脈擴張（如 histamine）→ 靜脈回流↓ → preload↓ → CO↓\n- 小動脈收縮 → TPR/afterload↑ → SV↓\n- Ca²⁺ 多 → contractility↑ → ESV↓ → SV↑\n\n**易錯與比較**\npreload 和 afterload 很容易搞混：preload 是『收縮前裝多少』，afterload 是『射血要對抗多大阻力』。",
+          "keys": [
+            "靜脈擴張（如 histamine）→ 靜脈回流↓ → preload↓ → CO↓",
+            "小動脈收縮 → TPR/afterload↑ → SV↓",
+            "Ca²⁺ 多 → contractility↑ → ESV↓ → SV↑"
+          ],
+          "tip": "preload 和 afterload 很容易搞混：preload 是『收縮前裝多少』，afterload 是『射血要對抗多大阻力』。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Histamine 造成靜脈擴張時，最直接會讓哪個變低？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "靜脈擴張使靜脈回流下降 → preload 下降 → CO 可能下降。\n\n正確選項：Preload。\n遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。",
+          "choices": [
+            "Preload",
+            "Afterload",
+            "QRS duration",
+            "PR interval"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\nHistamine 造成靜脈擴張時，最直接會讓哪個變低？\n\nA. Preload\nB. Afterload\nC. QRS duration\nD. PR interval\n\n**判斷步驟**\n- 先確認題目問的主題：藥理情境用 preload / afterload / contractility 推\n- 遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。\n- 把判斷依據連回題目：靜脈擴張使靜脈回流下降 → preload 下降 → CO 可能下降。\n\n正確選項：Preload。\n遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。\n\n**結論與依據**\nPreload",
+          "keys": [
+            "Preload"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "Preload",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：藥理情境用 preload / afterload / contractility 推\n- 遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。\n- 把判斷依據連回題目：靜脈擴張使靜脈回流下降 → preload 下降 → CO 可能下降。\n\n正確選項：Preload。\n遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：藥理情境用 preload / afterload / contractility 推",
+          "problem": "Histamine 造成靜脈擴張時，最直接會讓哪個變低？\n\nA. Preload\nB. Afterload\nC. QRS duration\nD. PR interval",
+          "steps": [
+            "先確認題目問的主題：藥理情境用 preload / afterload / contractility 推",
+            "遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。",
+            "把判斷依據連回題目：靜脈擴張使靜脈回流下降 → preload 下降 → CO 可能下降。\n\n正確選項：Preload。\n遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。"
+          ],
+          "answer": "Preload"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 5 站：心音與心輸出量",
+          "qids": [
+            "s114-physio-course114-u10-11-phys-10-11-04",
+            "s114-physio-course114-u10-11-phys-10-11-05"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Histamine 造成靜脈擴張時，最直接會讓哪個變低？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "靜脈擴張使靜脈回流下降 → preload 下降 → CO 可能下降。\n\n正確選項：Preload。\n遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。",
+              "choices": [
+                "Preload",
+                "Afterload",
+                "QRS duration",
+                "PR interval"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "靜脈擴張（如 histamine）→ 靜脈回流↓ → preload↓ → CO↓",
+            "小動脈收縮 → TPR/afterload↑ → SV↓",
+            "S1/S2 是房室瓣、半月瓣關閉的聲音 → S3/S4 提示填充或心室硬度問題 → CO = HR × SV → 藥理題先問三件事：進來多少血(preload)、出去多難(afterload)、心肌多用力(contractility)。",
+            "藥理情境用 preload / afterload / contractility 推：靜脈擴張（如 histamine）→ 靜脈回流↓ → preload↓ → CO↓",
+            "靜脈擴張使靜脈回流下降 → preload 下降 → CO 可能下降。\n\n正確選項：Preload。\n遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。"
+          ],
+          "flash": [
+            {
+              "front": "藥理情境用 preload / afterload / contractility 推",
+              "back": "遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：藥理情境用 preload / afterload / contractility 推\n- 遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。\n- 把判斷依據連回題目：靜脈擴張使靜脈回流下降 → preload 下降 → CO 可能下降。\n\n正確選項：Preload。\n遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。"
+            },
+            {
+              "front": "Histamine 造成靜脈擴張時，最直接會讓哪個變低？",
+              "back": "靜脈擴張使靜脈回流下降 → preload 下降 → CO 可能下降。\n\n正確選項：Preload。\n遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：藥理情境用 preload / afterload / contractility 推\n- 遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。\n- 把判斷依據連回題目：靜脈擴張使靜脈回流下降 → preload 下降 → CO 可能下降。\n\n正確選項：Preload。\n遇到藥理或情境題，先問三件事：進來多少血（preload）、出去有多難（afterload）、心肌能擠多用力（contractility）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardio-pv-loop-1",
+      "title": "第 6 站：把壓力、體積、做功畫成一圈（1）",
+      "goals": [
+        "解釋PV loop：四條邊就是心動週期四期，面積＝做功",
+        "解釋Preload ↑ → EDV ↑、SV 增加（圈變寬）",
+        "解釋Afterload ↑ → ESV ↑、SV 下降（圈變高變窄）"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 6 站：把壓力、體積、做功畫成一圈",
+          "body": "PV loop 把一個心跳畫成壓力–體積的封閉迴圈：寬度反映 SV，面積代表這一拍做的功。preload、afterload、contractility 會用不同方式改變這個圈。\n\n- 先看懂這一圈：橫軸體積、縱軸壓力，四條邊對應心動週期四期，寬度就是 SV。\n- 再一個一個轉旋鈕：preload 上升讓圈變寬。\n- afterload 上升讓圈變高變窄。\n- contractility 上升讓圈右下角內縮、SV 變大。"
+        },
+        {
+          "type": "card",
+          "title": "PV loop：四條邊就是心動週期四期，面積＝做功",
+          "body": "**連到前一觀念**\n先看懂這一圈在說什麼，再來轉旋鈕。\n\n**觀念**\n壓力–體積 loop 的橫軸是左心室體積、縱軸是左心室壓力。四條邊剛好對應填充、等容積收縮、射血、等容積舒張四期；loop 左右寬度約等於 stroke volume，圍出的面積約等於這一拍對血做的外功。\n\n**為什麼**\n壓力 × 體積變化 = 做功，所以圍出來的面積就是這一拍做的功。底邊（填充，向右）→ 右邊（等容收縮，向上）→ 頂邊（射血，向左）→ 左邊（等容舒張，向下），繞一圈回到原點。考試重點不是叫你積分，而是看懂圈變寬、變窄、變高代表什麼。\n\n**考試角度**\n- 橫軸 LV 體積、縱軸 LV 壓力\n- 四條邊＝填充、等容收縮、射血、等容舒張\n- 寬度 ≈ stroke volume、面積 ≈ 外做功\n\n**公式**\nloop 寬度 ≈ SV；loop 面積 ≈ 每一拍外做功",
+          "keys": [
+            "橫軸 LV 體積、縱軸 LV 壓力",
+            "四條邊＝填充、等容收縮、射血、等容舒張",
+            "寬度 ≈ stroke volume、面積 ≈ 外做功"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "PV loop 的寬度最直接代表什麼？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "PV loop 左右寬度 ≈ EDV − ESV = stroke volume。\n\n正確選項：Stroke volume。\n壓力–體積 loop 的橫軸是左心室體積、縱軸是左心室壓力。四條邊剛好對應填充、等容積收縮、射血、等容積舒張四期；loop 左右寬度約等於 stroke volume，圍出的面積約等於這一拍對血做的外功。",
+          "choices": [
+            "Stroke volume",
+            "Heart rate",
+            "PR interval",
+            "主動脈瓣厚度"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Preload ↑ → EDV ↑、SV 增加（圈變寬）",
+          "body": "**連到前一觀念**\n第一個旋鈕：收縮前先裝多少血。\n\n**觀念**\nPreload 增加通常來自靜脈回流上升，使舒張末容積 EDV 增加。根據 Frank–Starling，心肌被拉得更長、收縮會更有力，所以 SV 增加、loop 變寬。\n\n**為什麼**\nFrank–Starling 就像把橡皮筋拉得更長、彈回來更有力。心室在收縮前裝越多血（拉越長），這一拍就射得越多。這是心臟自我調節 preload 的方式。\n\n**考試角度**\n- 靜脈回流↑ → preload↑ → EDV↑\n- Frank–Starling：心肌拉長 → 收縮更強 → SV↑\n- PV loop 右緣外移、變寬",
+          "keys": [
+            "靜脈回流↑ → preload↑ → EDV↑",
+            "Frank–Starling：心肌拉長 → 收縮更強 → SV↑",
+            "PV loop 右緣外移、變寬"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Preload 上升最典型會讓 PV loop 如何改變？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Preload↑ 使 EDV↑、SV↑，所以 loop 寬度增加（變寬）。\n\n正確選項：變寬。\nPreload 增加通常來自靜脈回流上升，使舒張末容積 EDV 增加。根據 Frank–Starling，心肌被拉得更長、收縮會更有力，所以 SV 增加、loop 變寬。",
+          "choices": [
+            "變寬",
+            "完全消失",
+            "只向下平移",
+            "QRS 變窄"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Afterload ↑ → ESV ↑、SV 下降（圈變高變窄）",
+          "body": "**連到前一觀念**\n第二個旋鈕：射血要對抗多大的出口阻力。\n\n**觀念**\nAfterload 增加代表心室要對抗更高的主動脈壓才能射血。射血變困難，這一拍射出的血變少，所以 SV 下降、ESV 增加，loop 變高且變窄。\n\n**為什麼**\n出口壓力越高，主動脈瓣越晚才打得開、越早關，心室還沒射完就關門，於是收縮末剩下的血（ESV）變多、射出的（SV）變少。\n\n**考試角度**\n- 主動脈壓 / TPR↑ → afterload↑\n- 射血困難 → ESV↑、SV↓\n- PV loop 變高、變窄\n\n**易錯與比較**\nafterload 上升時 EDV 不一定變，主要變的是 ESV（射完剩比較多）。",
+          "keys": [
+            "主動脈壓 / TPR↑ → afterload↑",
+            "射血困難 → ESV↑、SV↓",
+            "PV loop 變高、變窄"
+          ],
+          "tip": "afterload 上升時 EDV 不一定變，主要變的是 ESV（射完剩比較多）。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Afterload 上升時，ESV 常會怎麼變？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "射血困難，收縮末剩下的血變多，所以 ESV 增加、SV 下降。\n\n正確選項：增加。\nAfterload 增加代表心室要對抗更高的主動脈壓才能射血。射血變困難，這一拍射出的血變少，所以 SV 下降、ESV 增加，loop 變高且變窄。",
+          "choices": [
+            "增加",
+            "歸零",
+            "不可能改變",
+            "變成 EDV"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：Afterload ↑ → ESV ↑、SV 下降（圈變高變窄）",
+          "problem": "Afterload 上升時，ESV 常會怎麼變？\n\nA. 增加\nB. 歸零\nC. 不可能改變\nD. 變成 EDV",
+          "steps": [
+            "先確認題目問的主題：Afterload ↑ → ESV ↑、SV 下降（圈變高變窄）",
+            "Afterload 增加代表心室要對抗更高的主動脈壓才能射血。射血變困難，這一拍射出的血變少，所以 SV 下降、ESV 增加，loop 變高且變窄。",
+            "把判斷依據連回題目：射血困難，收縮末剩下的血變多，所以 ESV 增加、SV 下降。\n\n正確選項：增加。\nAfterload 增加代表心室要對抗更高的主動脈壓才能射血。射血變困難，這一拍射出的血變少，所以 SV 下降、ESV 增加，loop 變高且變窄。"
+          ],
+          "answer": "增加"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 6 站：把壓力、體積、做功畫成一圈",
+          "qids": [
+            "s114-physio-course114-u10-11-phys-10-11-01",
+            "s114-physio-course114-u10-11-phys-10-11-02"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Preload 上升最典型會讓 PV loop 如何改變？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Preload↑ 使 EDV↑、SV↑，所以 loop 寬度增加（變寬）。\n\n正確選項：變寬。\nPreload 增加通常來自靜脈回流上升，使舒張末容積 EDV 增加。根據 Frank–Starling，心肌被拉得更長、收縮會更有力，所以 SV 增加、loop 變寬。",
+              "choices": [
+                "變寬",
+                "完全消失",
+                "只向下平移",
+                "QRS 變窄"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Afterload 上升時，ESV 常會怎麼變？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "射血困難，收縮末剩下的血變多，所以 ESV 增加、SV 下降。\n\n正確選項：增加。\nAfterload 增加代表心室要對抗更高的主動脈壓才能射血。射血變困難，這一拍射出的血變少，所以 SV 下降、ESV 增加，loop 變高且變窄。",
+              "choices": [
+                "增加",
+                "歸零",
+                "不可能改變",
+                "變成 EDV"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "橫軸 LV 體積、縱軸 LV 壓力",
+            "四條邊＝填充、等容收縮、射血、等容舒張",
+            "靜脈回流↑ → preload↑ → EDV↑",
+            "Frank–Starling：心肌拉長 → 收縮更強 → SV↑",
+            "主動脈壓 / TPR↑ → afterload↑",
+            "射血困難 → ESV↑、SV↓",
+            "PV loop 寬度 = SV、面積 = 做功 → preload↑ 使 EDV↑、SV↑（圈變寬）→ afterload↑ 使 ESV↑、SV↓（圈變高變窄）→ contractility↑ 使 ESV↓、SV↑。考題多半問『圈怎麼變』的生理意義，不是要你積分。"
+          ],
+          "flash": [
+            {
+              "front": "PV loop：四條邊就是心動週期四期，面積＝做功",
+              "back": "壓力–體積 loop 的橫軸是左心室體積、縱軸是左心室壓力。四條邊剛好對應填充、等容積收縮、射血、等容積舒張四期；loop 左右寬度約等於 stroke volume，圍出的面積約等於這一拍對血做的外功。"
+            },
+            {
+              "front": "Preload ↑ → EDV ↑、SV 增加（圈變寬）",
+              "back": "Preload 增加通常來自靜脈回流上升，使舒張末容積 EDV 增加。根據 Frank–Starling，心肌被拉得更長、收縮會更有力，所以 SV 增加、loop 變寬。"
+            },
+            {
+              "front": "Afterload ↑ → ESV ↑、SV 下降（圈變高變窄）",
+              "back": "Afterload 增加代表心室要對抗更高的主動脈壓才能射血。射血變困難，這一拍射出的血變少，所以 SV 下降、ESV 增加，loop 變高且變窄。"
+            },
+            {
+              "front": "PV loop 的寬度最直接代表什麼？",
+              "back": "PV loop 左右寬度 ≈ EDV − ESV = stroke volume。\n\n正確選項：Stroke volume。\n壓力–體積 loop 的橫軸是左心室體積、縱軸是左心室壓力。四條邊剛好對應填充、等容積收縮、射血、等容積舒張四期；loop 左右寬度約等於 stroke volume，圍出的面積約等於這一拍對血做的外功。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardio-pv-loop-2",
+      "title": "第 6 站：把壓力、體積、做功畫成一圈（2）",
+      "goals": [
+        "解釋Contractility ↑ → ESV ↓、SV 增加"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 6 站：把壓力、體積、做功畫成一圈",
+          "body": "PV loop 把一個心跳畫成壓力–體積的封閉迴圈：寬度反映 SV，面積代表這一拍做的功。preload、afterload、contractility 會用不同方式改變這個圈。\n\n- 先看懂這一圈：橫軸體積、縱軸壓力，四條邊對應心動週期四期，寬度就是 SV。\n- 再一個一個轉旋鈕：preload 上升讓圈變寬。\n- afterload 上升讓圈變高變窄。\n- contractility 上升讓圈右下角內縮、SV 變大。"
+        },
+        {
+          "type": "card",
+          "title": "Contractility ↑ → ESV ↓、SV 增加",
+          "body": "**連到前一觀念**\n第三個旋鈕：心肌本身的力氣。\n\n**觀念**\n收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。\n\n**為什麼**\n收縮力主要受細胞內 Ca²⁺ 影響。Ca²⁺ 越多、心肌擠得越用力，把更多血擠出去，收縮末殘留（ESV）就更少。這和 preload/afterload 不同，是心肌『自己變強』。\n\n**考試角度**\n- 細胞內 Ca²⁺↑ → contractility↑\n- Contractility↑ → ESV↓\n- SV↑、CO↑",
+          "keys": [
+            "細胞內 Ca²⁺↑ → contractility↑",
+            "Contractility↑ → ESV↓",
+            "SV↑、CO↑"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Contractility 上升最直接會造成哪個變化？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "收縮力強，能射出更多血，收縮末殘留 ESV 下降、SV 上升。\n\n正確選項：ESV 下降。\n收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。",
+          "choices": [
+            "ESV 下降",
+            "EDV 必定降到零",
+            "PR interval 延長",
+            "AV node 消失"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\nContractility 上升最直接會造成哪個變化？\n\nA. ESV 下降\nB. EDV 必定降到零\nC. PR interval 延長\nD. AV node 消失\n\n**判斷步驟**\n- 先確認題目問的主題：Contractility ↑ → ESV ↓、SV 增加\n- 收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。\n- 把判斷依據連回題目：收縮力強，能射出更多血，收縮末殘留 ESV 下降、SV 上升。\n\n正確選項：ESV 下降。\n收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。\n\n**結論與依據**\nESV 下降",
+          "keys": [
+            "ESV 下降"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "ESV 下降",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：Contractility ↑ → ESV ↓、SV 增加\n- 收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。\n- 把判斷依據連回題目：收縮力強，能射出更多血，收縮末殘留 ESV 下降、SV 上升。\n\n正確選項：ESV 下降。\n收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：Contractility ↑ → ESV ↓、SV 增加",
+          "problem": "Contractility 上升最直接會造成哪個變化？\n\nA. ESV 下降\nB. EDV 必定降到零\nC. PR interval 延長\nD. AV node 消失",
+          "steps": [
+            "先確認題目問的主題：Contractility ↑ → ESV ↓、SV 增加",
+            "收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。",
+            "把判斷依據連回題目：收縮力強，能射出更多血，收縮末殘留 ESV 下降、SV 上升。\n\n正確選項：ESV 下降。\n收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。"
+          ],
+          "answer": "ESV 下降"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 6 站：把壓力、體積、做功畫成一圈",
+          "qids": [
+            "s114-physio-course114-u10-11-phys-10-11-04",
+            "s114-physio-course114-u10-11-phys-10-11-05"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Contractility 上升最直接會造成哪個變化？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "收縮力強，能射出更多血，收縮末殘留 ESV 下降、SV 上升。\n\n正確選項：ESV 下降。\n收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。",
+              "choices": [
+                "ESV 下降",
+                "EDV 必定降到零",
+                "PR interval 延長",
+                "AV node 消失"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "細胞內 Ca²⁺↑ → contractility↑",
+            "Contractility↑ → ESV↓",
+            "PV loop 寬度 = SV、面積 = 做功 → preload↑ 使 EDV↑、SV↑（圈變寬）→ afterload↑ 使 ESV↑、SV↓（圈變高變窄）→ contractility↑ 使 ESV↓、SV↑。考題多半問『圈怎麼變』的生理意義，不是要你積分。",
+            "Contractility ↑ → ESV ↓、SV 增加：細胞內 Ca²⁺↑ → contractility↑",
+            "收縮力強，能射出更多血，收縮末殘留 ESV 下降、SV 上升。\n\n正確選項：ESV 下降。\n收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。"
+          ],
+          "flash": [
+            {
+              "front": "Contractility ↑ → ESV ↓、SV 增加",
+              "back": "收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：Contractility ↑ → ESV ↓、SV 增加\n- 收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。\n- 把判斷依據連回題目：收縮力強，能射出更多血，收縮末殘留 ESV 下降、SV 上升。\n\n正確選項：ESV 下降。\n收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。"
+            },
+            {
+              "front": "Contractility 上升最直接會造成哪個變化？",
+              "back": "收縮力強，能射出更多血，收縮末殘留 ESV 下降、SV 上升。\n\n正確選項：ESV 下降。\n收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：Contractility ↑ → ESV ↓、SV 增加\n- 收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。\n- 把判斷依據連回題目：收縮力強，能射出更多血，收縮末殘留 ESV 下降、SV 上升。\n\n正確選項：ESV 下降。\n收縮力 contractility 增加時，心室在收縮期能產生更大張力、射出更多血，因此 ESV 下降、SV 增加、CO 上升。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review-extra-1",
+      "title": "串連、公式與易錯整合（1）",
+      "goals": [
+        "解釋必記與易錯",
+        "解釋急速重點：ECG 核心算法",
+        "解釋急速重點：T wave 為何通常向上"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "必記與易錯",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\nmustKnow：- 四腔室、四瓣膜與血流 8 字形是所有題目的地圖；瓣膜開關只看壓力差。\n- AV delay 是『有意義的慢』，三機制：transitional fiber 粗-細-粗、Ca²⁺ 依賴的上升支較慢、gap junction 少。\n- ECG 鐵律：記細胞膜外、值＝正極 − 負極、電流朝正極往上；把波從零推出來不要背圖。\n- T 波該倒卻向上＝『負負得正』：再極化次序與去極化不同，加上再極化的電性相反；膜電位時程的區域差異是重要原因。\n- 心動週期 MC→AO→AC→MO；射血分快速(1/3)/慢速(2/3)；SV = EDV − ESV；CO = HR × SV。\n- PV loop 寬度＝SV、面積＝做功；preload/afterload/contractility 各自如何改變 loop。\ntraps：- ECG 記的是細胞膜『外』、不是細胞內；公式是『正極減負極』別反。\n- 波形向上向下看『電流方向 對 導程方向』同向或反向，不是直接看去極化或再極化。\n- T 波要會解釋『為何該倒卻向上』，不是只背向上。\n- 射血後 2/3 仍是收縮期，只是部分心肌進入休息，不是舒張。\n- 心跳快 ≠ 心臟強；運動員 HR 慢但 SV 大，CO 仍正常。\n- ST elevation 不能單憑 ECG 下診斷，需結合症狀與 troponin。",
+          "keys": [
+            "把本單元的關係串起來，確認易錯条件與方向。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
+          "answer": "mustKnow：- 四腔室、四瓣膜與血流 8 字形是所有題目的地圖；瓣膜開關只看壓力差。\n- AV delay 是『有意義的慢』，三機制：transitional fiber 粗-細-粗、Ca²⁺ 依賴的上升支較慢、gap junction 少。\n- ECG 鐵律：記細胞膜外、值＝正極 − 負極、電流朝正極往上；把波從零推出來不要背圖。\n- T 波該倒卻向上＝『負負得正』：再極化次序與去極化不同，加上再極化的電性相反；膜電位時程的區域差異是重要原因。\n- 心動週期 MC→AO→AC→MO；射血分快速(1/3)/慢速(2/3)；SV = EDV − ESV；CO = HR × SV。\n- PV loop 寬度＝SV、面積＝做功；preload/afterload/contractility 各自如何改變 loop。\ntraps：- ECG 記的是細胞膜『外』、不是細胞內；公式是『正極減負極』別反。\n- 波形向上向下看『電流方向 對 導程方向』同向或反向，不是直接看去極化或再極化。\n- T 波要會解釋『為何該倒卻向上』，不是只背向上。\n- 射血後 2/3 仍是收縮期，只是部分心肌進入休息，不是舒張。\n- 心跳快 ≠ 心臟強；運動員 HR 慢但 SV 大，CO 仍正常。\n- ST elevation 不能單憑 ECG 下診斷，需結合症狀與 troponin。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "mustKnow：- 四腔室、四瓣膜與血流 8 字形是所有題目的地圖；瓣膜開關只看壓力差。\n- AV delay 是『有意義的慢』，三機制：transitional fiber 粗-細-粗、Ca²⁺ 依賴的上升支較慢、gap junction 少。\n- ECG 鐵律：記細胞膜外、值＝正極 − 負極、電流朝正極往上；把波從零推出來不要背圖。\n- T 波該倒卻向上＝『負負得正』：再極化次序與去極化不同，加上再極化的電性相反；膜電位時程的區域差異是重要原因。\n- 心動週期 MC→AO→AC→MO；射血分快速(1/3)/慢速(2/3)；SV = EDV − ESV；CO = HR × SV。\n- PV loop 寬度＝SV、面積＝做功；preload/afterload/contractility 各自如何改變 loop。\ntraps：- ECG 記的是細胞膜『外』、不是細胞內；公式是『正極減負極』別反。\n- 波形向上向下看『電流方向 對 導程方向』同向或反向，不是直接看去極化或再極化。\n- T 波要會解釋『為何該倒卻向上』，不是只背向上。\n- 射血後 2/3 仍是收縮期，只是部分心肌進入休息，不是舒張。\n- 心跳快 ≠ 心臟強；運動員 HR 慢但 SV 大，CO 仍正常。\n- ST elevation 不能單憑 ECG 下診斷，需結合症狀與 troponin。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：ECG 核心算法",
+          "body": "**一句話／白話**\n把心臟想成一群人搬正電。電往鏡頭的正端跑，線就往上；背對它跑，線就往下。\n\n**觀念**\n每個 lead 記錄「正極電位總和 − 負極電位總和」；細胞外正電荷朝正極移動，波形向上，背離則向下。\n\n**易錯與比較**\nI：RA(−)→LA(+)；II：RA(−)→LL(+)；III：LA(−)→LL(+)。\n\n**口訣**\n朝正端＝上；離正端＝下。",
+          "keys": [
+            "把心臟想成一群人搬正電。電往鏡頭的正端跑，線就往上；背對它跑，線就往下。"
+          ],
+          "tip": "口訣：朝正端＝上；離正端＝下。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：ECG 核心算法」，並說出一個判斷依據。",
+          "answer": "每個 lead 記錄「正極電位總和 − 負極電位總和」；細胞外正電荷朝正極移動，波形向上，背離則向下。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "每個 lead 記錄「正極電位總和 − 負極電位總和」；細胞外正電荷朝正極移動，波形向上，背離則向下。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：T wave 為何通常向上",
+          "body": "**一句話／白話**\n心室恢復休息時，移動方向和電性一起反過來；反兩次就等於沒反，所以通常仍畫向上。\n\n**觀念**\n心室再極化方向與去極化相反，但電性也相反；兩次負號抵銷，所以多數 lead 的 T wave 仍向上。\n\n**易錯與比較**\n不能只看到「方向相反」就判定向下。\n\n**口訣**\n兩個相反互相取消。",
+          "keys": [
+            "心室恢復休息時，移動方向和電性一起反過來；反兩次就等於沒反，所以通常仍畫向上。"
+          ],
+          "tip": "口訣：兩個相反互相取消。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：T wave 為何通常向上」，並說出一個判斷依據。",
+          "answer": "心室再極化方向與去極化相反，但電性也相反；兩次負號抵銷，所以多數 lead 的 T wave 仍向上。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "心室再極化方向與去極化相反，但電性也相反；兩次負號抵銷，所以多數 lead 的 T wave 仍向上。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：急速重點：T wave 為何通常向上",
+          "problem": "用自己的話說明「急速重點：T wave 為何通常向上」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：急速重點：T wave 為何通常向上",
+            "心室再極化方向與去極化相反，但電性也相反；兩次負號抵銷，所以多數 lead 的 T wave 仍向上。",
+            "把判斷依據連回題目：心室再極化方向與去極化相反，但電性也相反；兩次負號抵銷，所以多數 lead 的 T wave 仍向上。"
+          ],
+          "answer": "心室再極化方向與去極化相反，但電性也相反；兩次負號抵銷，所以多數 lead 的 T wave 仍向上。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-physio-course114-u10-11-phys-10-11-01",
+            "s114-physio-course114-u10-11-phys-10-11-02"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：ECG 核心算法」，並說出一個判斷依據。",
+              "answer": "每個 lead 記錄「正極電位總和 − 負極電位總和」；細胞外正電荷朝正極移動，波形向上，背離則向下。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "每個 lead 記錄「正極電位總和 − 負極電位總和」；細胞外正電荷朝正極移動，波形向上，背離則向下。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：T wave 為何通常向上」，並說出一個判斷依據。",
+              "answer": "心室再極化方向與去極化相反，但電性也相反；兩次負號抵銷，所以多數 lead 的 T wave 仍向上。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "心室再極化方向與去極化相反，但電性也相反；兩次負號抵銷，所以多數 lead 的 T wave 仍向上。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把本單元的關係串起來，確認易錯条件與方向。",
+            "把心臟想成一群人搬正電。電往鏡頭的正端跑，線就往上；背對它跑，線就往下。",
+            "心室恢復休息時，移動方向和電性一起反過來；反兩次就等於沒反，所以通常仍畫向上。",
+            "必記與易錯：把本單元的關係串起來，確認易錯条件與方向。",
+            "急速重點：ECG 核心算法：把心臟想成一群人搬正電。電往鏡頭的正端跑，線就往上；背對它跑，線就往下。"
+          ],
+          "flash": [
+            {
+              "front": "必記與易錯",
+              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+            },
+            {
+              "front": "急速重點：ECG 核心算法",
+              "back": "把心臟想成一群人搬正電。電往鏡頭的正端跑，線就往上；背對它跑，線就往下。"
+            },
+            {
+              "front": "急速重點：T wave 為何通常向上",
+              "back": "心室恢復休息時，移動方向和電性一起反過來；反兩次就等於沒反，所以通常仍畫向上。"
+            },
+            {
+              "front": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
+              "back": "mustKnow：- 四腔室、四瓣膜與血流 8 字形是所有題目的地圖；瓣膜開關只看壓力差。\n- AV delay 是『有意義的慢』，三機制：transitional fiber 粗-細-粗、Ca²⁺ 依賴的上升支較慢、gap junction 少。\n- ECG 鐵律：記細胞膜外、值＝正極 − 負極、電流朝正極往上；把波從零推出來不要背圖。\n- T 波該倒卻向上＝『負負得正』：再極化次序與去極化不同，加上再極化的電性相反；膜電位時程的區域差異是重要原因。\n- 心動週期 MC→AO→AC→MO；射血分快速(1/3)/慢速(2/3)；SV = EDV − ESV；CO = HR × SV。\n- PV loop 寬度＝SV、面積＝做功；preload/afterload/contractility 各自如何改變 loop。\ntraps：- ECG 記的是細胞膜『外』、不是細胞內；公式是『正極減負極』別反。\n- 波形向上向下看『電流方向 對 導程方向』同向或反向，不是直接看去極化或再極化。\n- T 波要會解釋『為何該倒卻向上』，不是只背向上。\n- 射血後 2/3 仍是收縮期，只是部分心肌進入休息，不是舒張。\n- 心跳快 ≠ 心臟強；運動員 HR 慢但 SV 大，CO 仍正常。\n- ST elevation 不能單憑 ECG 下診斷，需結合症狀與 troponin。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review-extra-2",
+      "title": "串連、公式與易錯整合（2）",
+      "goals": [
+        "解釋急速重點：RR interval 與心率",
+        "解釋急速重點：PR interval 與 AV delay",
+        "解釋急速重點：AV node 為何傳得慢"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：RR interval 與心率",
+          "body": "**一句話／白話**\n找相鄰兩個最高尖峰，它們的距離就是一次心跳花的時間；越近代表跳越快。\n\n**觀念**\nRR interval 是相鄰 R 波間距，代表一個心搏週期。\n\n**易錯與比較**\n規則心律：HR ≈ 60 ÷ RR（秒）。\n\n**口訣**\n尖峰擠得近＝心跳快。",
+          "keys": [
+            "找相鄰兩個最高尖峰，它們的距離就是一次心跳花的時間；越近代表跳越快。"
+          ],
+          "tip": "口訣：尖峰擠得近＝心跳快。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：RR interval 與心率」，並說出一個判斷依據。",
+          "answer": "RR interval 是相鄰 R 波間距，代表一個心搏週期。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "RR interval 是相鄰 R 波間距，代表一個心搏週期。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：PR interval 與 AV delay",
+          "body": "**一句話／白話**\n訊號到心房和心室中間時會故意等一下，讓上面的心房先把血倒進下面的心室。\n\n**觀念**\nPR interval 是心房去極化開始到心室去極化開始；AV delay 讓心房先收縮、心室後收縮。\n\n**易錯與比較**\nPR > 0.20 s 常見於 first-degree AV block。\n\n**口訣**\n先裝滿，再開打。",
+          "keys": [
+            "訊號到心房和心室中間時會故意等一下，讓上面的心房先把血倒進下面的心室。"
+          ],
+          "tip": "口訣：先裝滿，再開打。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：PR interval 與 AV delay」，並說出一個判斷依據。",
+          "answer": "PR interval 是心房去極化開始到心室去極化開始；AV delay 讓心房先收縮、心室後收縮。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "PR interval 是心房去極化開始到心室去極化開始；AV delay 讓心房先收縮、心室後收縮。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：AV node 為何傳得慢",
+          "body": "**一句話／白話**\n房室之間的轉運站路窄、出口少，所以電跑得慢；這不是故障，是讓心室有時間裝血。\n\n**觀念**\ntransitional/nodal fibers 較細、Ca²⁺ 依賴的上升支較慢、gap junction 較少。\n\n**易錯與比較**\n生理目的：確保心室充盈。\n\n**口訣**\n慢，是為了裝血。",
+          "keys": [
+            "房室之間的轉運站路窄、出口少，所以電跑得慢；這不是故障，是讓心室有時間裝血。"
+          ],
+          "tip": "口訣：慢，是為了裝血。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：AV node 為何傳得慢」，並說出一個判斷依據。",
+          "answer": "transitional/nodal fibers 較細、Ca²⁺ 依賴的上升支較慢、gap junction 較少。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "transitional/nodal fibers 較細、Ca²⁺ 依賴的上升支較慢、gap junction 較少。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：急速重點：AV node 為何傳得慢",
+          "problem": "用自己的話說明「急速重點：AV node 為何傳得慢」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：急速重點：AV node 為何傳得慢",
+            "transitional/nodal fibers 較細、Ca²⁺ 依賴的上升支較慢、gap junction 較少。",
+            "把判斷依據連回題目：transitional/nodal fibers 較細、Ca²⁺ 依賴的上升支較慢、gap junction 較少。"
+          ],
+          "answer": "transitional/nodal fibers 較細、Ca²⁺ 依賴的上升支較慢、gap junction 較少。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-physio-course114-u10-11-phys-10-11-04",
+            "s114-physio-course114-u10-11-phys-10-11-05"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：PR interval 與 AV delay」，並說出一個判斷依據。",
+              "answer": "PR interval 是心房去極化開始到心室去極化開始；AV delay 讓心房先收縮、心室後收縮。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "PR interval 是心房去極化開始到心室去極化開始；AV delay 讓心房先收縮、心室後收縮。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：AV node 為何傳得慢」，並說出一個判斷依據。",
+              "answer": "transitional/nodal fibers 較細、Ca²⁺ 依賴的上升支較慢、gap junction 較少。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "transitional/nodal fibers 較細、Ca²⁺ 依賴的上升支較慢、gap junction 較少。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "找相鄰兩個最高尖峰，它們的距離就是一次心跳花的時間；越近代表跳越快。",
+            "訊號到心房和心室中間時會故意等一下，讓上面的心房先把血倒進下面的心室。",
+            "房室之間的轉運站路窄、出口少，所以電跑得慢；這不是故障，是讓心室有時間裝血。",
+            "急速重點：RR interval 與心率：找相鄰兩個最高尖峰，它們的距離就是一次心跳花的時間；越近代表跳越快。",
+            "急速重點：PR interval 與 AV delay：訊號到心房和心室中間時會故意等一下，讓上面的心房先把血倒進下面的心室。"
+          ],
+          "flash": [
+            {
+              "front": "急速重點：RR interval 與心率",
+              "back": "找相鄰兩個最高尖峰，它們的距離就是一次心跳花的時間；越近代表跳越快。"
+            },
+            {
+              "front": "急速重點：PR interval 與 AV delay",
+              "back": "訊號到心房和心室中間時會故意等一下，讓上面的心房先把血倒進下面的心室。"
+            },
+            {
+              "front": "急速重點：AV node 為何傳得慢",
+              "back": "房室之間的轉運站路窄、出口少，所以電跑得慢；這不是故障，是讓心室有時間裝血。"
+            },
+            {
+              "front": "用自己的話說明「急速重點：RR interval 與心率」，並說出一個判斷依據。",
+              "back": "RR interval 是相鄰 R 波間距，代表一個心搏週期。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

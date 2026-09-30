@@ -1,0 +1,127 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam112-u07",
+    "subject": "optometry",
+    "name": "瞳孔反應：光反射、RAPD 與 Horner syndrome｜112 年國考",
+    "year": 112,
+    "path": [
+      "114 大一下",
+      "112 年國考",
+      "視光學",
+      "第07單元 瞳孔反應：光反射、RAPD 與 Horner syndrome"
+    ],
+    "order": 7,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0365",
+      "type": "single",
+      "stem": "有關瞳孔對光線的神經傳導性檢查，下列何者最不適當？",
+      "choices": [
+        "需要一個近的注視目標",
+        "利用筆燈（penlight）輪流照射兩眼，讓光線在每個眼睛停留約3 到5 秒鐘，觀察瞳孔的反應，如此 反覆2 到3 個完整循環，可以檢查是否有傳入性瞳孔反應缺損（afferent pupillary defect）",
+        "需要記錄其大小、形狀與位置",
+        "需要觀察其收縮的速度"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n瞳孔光反射檢查條件\n\n**白話理解**\n近目標會誘發近反應縮瞳。應記錄大小形狀位置與收縮速度；交替照光可查APD。\n\n**口訣**\n查光反射時別用近目標。\n\n**選項 A：A 選項**\n不適當。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\112年驗光師高考.pdf；原題編號 7；舊 ID opt-q0365",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0365",
+      "source_number": "7",
+      "source_year": "112",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "瞳孔光反射檢查條件",
+        "simple": "近目標會誘發近反應縮瞳。應記錄大小形狀位置與收縮速度；交替照光可查APD。",
+        "memory": "查光反射時別用近目標。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "不適當。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0382",
+      "type": "single",
+      "stem": "瞳孔光反射所需要的視覺路徑，不包括下列何者？",
+      "choices": [
+        "視網膜",
+        "眼窩視神經",
+        "視交叉",
+        "丘腦的外側膝狀核"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n光反射傳入路徑\n\n**白話理解**\n光反射傳入經視網膜、視神經、視交叉、視束到pretectal，於LGN前分支。\n\n**口訣**\n到pretectal，不進LGN。\n\n**選項 A：A 選項**\n包括。\n\n**選項 B：B 選項**\n包括。\n\n**選項 C：C 選項**\n包括。\n\n**選項 D：D 選項**\n正確，不包括。\n\n**原始出處**\n驗光生\\眼球構造與倫理法規概要\\112年驗光生普考.pdf；原題編號 13；舊 ID opt-q0382",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光生普考｜眼球構造與倫理法規概要"
+      ],
+      "source_id": "opt-q0382",
+      "source_number": "13",
+      "source_year": "112",
+      "source_subject": "驗光生普考｜眼球構造與倫理法規概要",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "光反射傳入路徑",
+        "simple": "光反射傳入經視網膜、視神經、視交叉、視束到pretectal，於LGN前分支。",
+        "memory": "到pretectal，不進LGN。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "包括。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "包括。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "包括。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確，不包括。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,627 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam110-u09",
+    "subject": "optometry",
+    "name": "近點調節 NPA 與近點聚合 NPC｜110 年國考",
+    "year": 110,
+    "path": [
+      "114 大一下",
+      "110 年國考",
+      "視光學",
+      "第09單元 近點調節 NPA 與近點聚合 NPC"
+    ],
+    "order": 9,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0294",
+      "type": "single",
+      "stem": "以Hofstetter’s 公式最小值計算40 歲的個案，其NPA（near point of accommodation）最大距離應為何？",
+      "choices": [
+        "10 cm",
+        "15 cm",
+        "20 cm",
+        "25 cm"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nHofstetter最小AA轉NPA\n\n**白話理解**\n40歲最小AA＝5D；正視眼近點距離＝1/5m＝20cm。這是最低幅度對應、也就是最遠的可接受NPA。\n\n**口訣**\n40歲最低5D，近點20cm。\n\n**考點與解題步驟**\n- 15−0.25×40＝5D；1/5m＝20cm。\n\n**選項 A：A 選項**\n需10D。\n\n**選項 B：B 選項**\n需6.67D。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n只有4D。\n\n**原始出處**\n驗光師\\視光學\\110年驗光師高考.pdf；原題編號 28；舊 ID opt-q0294",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0294",
+      "source_number": "28",
+      "source_year": "110",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "Hofstetter最小AA轉NPA",
+        "simple": "40歲最小AA＝5D；正視眼近點距離＝1/5m＝20cm。這是最低幅度對應、也就是最遠的可接受NPA。",
+        "memory": "40歲最低5D，近點20cm。",
+        "examFocus": [
+          "15−0.25×40＝5D；1/5m＝20cm。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "需10D。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "需6.67D。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "只有4D。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0295",
+      "type": "single",
+      "stem": "將+3.00 DS 凸透鏡放置於正視眼眼前，測得調節近點為眼前10 cm，此眼之調節幅度（accommodative amplitude）為多少？",
+      "choices": [
+        "3 D",
+        "7 D",
+        "10 D",
+        "13 D"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n正鏡下NPA\n\n**白話理解**\n10cm視標需10D；眼前+3D正鏡替眼睛提供3D，眼睛實際調節10−3＝7D。\n\n**口訣**\n距離需求減正鏡。\n\n**考點與解題步驟**\n- AA＝10−3＝7D。\n\n**選項 A：A 選項**\n只算鏡片。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n漏扣正鏡。\n\n**選項 D：D 選項**\n錯誤相加。\n\n**原始出處**\n驗光師\\視光學\\110年驗光師高考.pdf；原題編號 29；舊 ID opt-q0295",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0295",
+      "source_number": "29",
+      "source_year": "110",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "正鏡下NPA",
+        "simple": "10cm視標需10D；眼前+3D正鏡替眼睛提供3D，眼睛實際調節10−3＝7D。",
+        "memory": "距離需求減正鏡。",
+        "examFocus": [
+          "AA＝10−3＝7D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "只算鏡片。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "漏扣正鏡。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "錯誤相加。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0302",
+      "type": "single",
+      "stem": "一位遠點距離為眼前50 cm，近點距離為8 cm 的患者，習慣閱讀距離為33 cm。在戴遠用眼鏡的情況下， 則此患者需要多少近距離加入度數（near ADD），以方便患者閱讀？",
+      "choices": [
+        "10.50 D",
+        "3.00 D",
+        "1.00 D",
+        "不需加入度數"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n高AA患者ADD\n\n**白話理解**\n遠點50cm＝2D近視，近點8cm＝12.5D，AA＝10.5D。戴遠用鏡後33cm需3D，遠低於半幅AA5.25D，無需加光。\n\n**口訣**\n半幅AA已超過近需求，不加。\n\n**考點與解題步驟**\n- AA=12.5−2=10.5D。\n\n**選項 A：A 選項**\n是AA不是ADD。\n\n**選項 B：B 選項**\n工作需求但患者可自行負擔。\n\n**選項 C：C 選項**\n不需要。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視覺光學\\110年驗光師高考.pdf；原題編號 39；舊 ID opt-q0302",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0302",
+      "source_number": "39",
+      "source_year": "110",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "高AA患者ADD",
+        "simple": "遠點50cm＝2D近視，近點8cm＝12.5D，AA＝10.5D。戴遠用鏡後33cm需3D，遠低於半幅AA5.25D，無需加光。",
+        "memory": "半幅AA已超過近需求，不加。",
+        "examFocus": [
+          "AA=12.5−2=10.5D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "是AA不是ADD。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "工作需求但患者可自行負擔。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "不需要。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0303",
+      "type": "single",
+      "stem": "當看近調節時，下列何種情形沒有發生？",
+      "choices": [
+        "睫狀肌收縮",
+        "水晶體懸韌帶收縮",
+        "水晶體形狀變凸",
+        "眼球屈光力增加"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n近調節機制\n\n**白話理解**\n看近時睫狀肌收縮、睫狀環縮小，懸韌帶鬆弛，晶體變凸，屈光力增加。\n\n**口訣**\n肌縮、帶鬆、晶體凸。\n\n**選項 A：A 選項**\n會發生。\n\n**選項 B：B 選項**\n正確，沒有發生。\n\n**選項 C：C 選項**\n會。\n\n**選項 D：D 選項**\n會。\n\n**原始出處**\n驗光師\\視覺光學\\110年驗光師高考.pdf；原題編號 42；舊 ID opt-q0303",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0303",
+      "source_number": "42",
+      "source_year": "110",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "近調節機制",
+        "simple": "看近時睫狀肌收縮、睫狀環縮小，懸韌帶鬆弛，晶體變凸，屈光力增加。",
+        "memory": "肌縮、帶鬆、晶體凸。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "會發生。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確，沒有發生。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "會。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "會。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0304",
+      "type": "single",
+      "stem": "一個人的遠點（far point）為眼前200 cm 處，近點（near point）為眼前12.5 cm 處，則此人之調節力為 多少？",
+      "choices": [
+        "6.0 D",
+        "7.5 D",
+        "8.0 D",
+        "8.5 D"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n遠近點AA\n\n**白話理解**\n遠點2m＝0.5D近視，近點12.5cm＝8D；AA＝8−0.5＝7.5D。\n\n**口訣**\n近點8D減遠點0.5D。\n\n**考點與解題步驟**\n- 8−0.5＝7.5D。\n\n**選項 A：A 選項**\n低估。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n忽略遠點。\n\n**選項 D：D 選項**\n錯誤相加。\n\n**原始出處**\n驗光師\\視覺光學\\110年驗光師高考.pdf；原題編號 43；舊 ID opt-q0304",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0304",
+      "source_number": "43",
+      "source_year": "110",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "遠近點AA",
+        "simple": "遠點2m＝0.5D近視，近點12.5cm＝8D；AA＝8−0.5＝7.5D。",
+        "memory": "近點8D減遠點0.5D。",
+        "examFocus": [
+          "8−0.5＝7.5D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "低估。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "忽略遠點。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "錯誤相加。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0311",
+      "type": "single",
+      "stem": "有關眼睛遠點的敘述，下列何者錯誤？",
+      "choices": [
+        "遠視眼遠點在視網膜後",
+        "調節靜止時所能看到的最近物體處",
+        "調節靜止時所能看到的最遠物體處",
+        "可以在眼前或眼後的任何位置"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n遠點定義\n\n**白話理解**\n遠點是調節靜止時最遠清楚物點，可在眼前、無限遠或眼後；遠視眼以物空間描述為眼後虛遠點。\n\n**口訣**\n無調節最遠清楚點。\n\n**選項 A：A 選項**\n概念上指眼後虛遠點。\n\n**選項 B：B 選項**\n錯誤，是最遠。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\驗光學概要\\110年驗光生普考.pdf；原題編號 9；舊 ID opt-q0311",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0311",
+      "source_number": "9",
+      "source_year": "110",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "遠點定義",
+        "simple": "遠點是調節靜止時最遠清楚物點，可在眼前、無限遠或眼後；遠視眼以物空間描述為眼後虛遠點。",
+        "memory": "無調節最遠清楚點。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "概念上指眼後虛遠點。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "錯誤，是最遠。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0312",
+      "type": "single",
+      "stem": "關於調節幅度（amplitude of accommodation）檢查的敘述，下列何者正確？",
+      "choices": [
+        "負鏡片法（minus lens method）測得的結果，通常較推近法（push-up method）所測結果為低",
+        "在標準近距離施測負鏡片法，在加到-4.00 D 後視標開始持續模糊，則該眼的調節幅度為4.00 D",
+        "檢查視標愈大時，調節幅度檢查結果愈小",
+        "推近法測得的調節幅度，通常低於推遠法（pull-away method）結果"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\nAA方法比較\n\n**白話理解**\n負鏡縮小視標、近感知固定，終點較保守；push-up視標變大而常高估。負鏡法還須加工作距離需求。\n\n**口訣**\nminus較低，push-up較高。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n還要加近距離需求。\n\n**選項 C：C 選項**\n大視標通常讓終點更近、AA偏高。\n\n**選項 D：D 選項**\npush-up通常高於pull-away。\n\n**原始出處**\n驗光生\\驗光學概要\\110年驗光生普考.pdf；原題編號 13；舊 ID opt-q0312",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0312",
+      "source_number": "13",
+      "source_year": "110",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "AA方法比較",
+        "simple": "負鏡縮小視標、近感知固定，終點較保守；push-up視標變大而常高估。負鏡法還須加工作距離需求。",
+        "memory": "minus較低，push-up較高。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "還要加近距離需求。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "大視標通常讓終點更近、AA偏高。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "push-up通常高於pull-away。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0313",
+      "type": "single",
+      "stem": "一調節正常患者，近視-1.00 DS 屈光異常未矯正，調節近點（near point of accommodation）位於眼前20 cm， 則其調節幅度為下列何者？",
+      "choices": [
+        "3.00 D",
+        "4.00 D",
+        "5.00 D",
+        "6.00 D"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n裸眼近視NPA修正\n\n**白話理解**\n裸眼近點20cm＝5D總力，未矯正近視1D已提供，真正調節＝5−1＝4D。\n\n**口訣**\n近點總D減近視D。\n\n**考點與解題步驟**\n- 5−1＝4D。\n\n**選項 A：A 選項**\n多減。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n忽略近視。\n\n**選項 D：D 選項**\n錯誤相加。\n\n**原始出處**\n驗光生\\驗光學概要\\110年驗光生普考.pdf；原題編號 16；舊 ID opt-q0313",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0313",
+      "source_number": "16",
+      "source_year": "110",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "裸眼近視NPA修正",
+        "simple": "裸眼近點20cm＝5D總力，未矯正近視1D已提供，真正調節＝5−1＝4D。",
+        "memory": "近點總D減近視D。",
+        "examFocus": [
+          "5−1＝4D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "多減。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "忽略近視。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "錯誤相加。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0321",
+      "type": "single",
+      "stem": "依據Hofstetter’s 的最小調節幅度公式，並採取保留一半調節幅度之原則，52 歲的受檢者要閱讀近距離 33 cm 的文件，需要多少加入度？",
+      "choices": [
+        "+1.50 D",
+        "+2.00 D",
+        "+2.50 D",
+        "+3.00 D"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nHofstetter半幅ADD\n\n**白話理解**\n52歲最小AA＝15−13＝2D，只用一半1D；33cm需求3D，ADD＝3−1＝2D。\n\n**口訣**\n52歲最低2D，能用1D。\n\n**考點與解題步驟**\n- AAmin2D；ADD=3−1=2D。\n\n**選項 A：A 選項**\n不足。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n偏高。\n\n**選項 D：D 選項**\n完全不用自身調節。\n\n**原始出處**\n驗光生\\驗光學概要\\110年驗光生普考.pdf；原題編號 43；舊 ID opt-q0321",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0321",
+      "source_number": "43",
+      "source_year": "110",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "Hofstetter半幅ADD",
+        "simple": "52歲最小AA＝15−13＝2D，只用一半1D；33cm需求3D，ADD＝3−1＝2D。",
+        "memory": "52歲最低2D，能用1D。",
+        "examFocus": [
+          "AAmin2D；ADD=3−1=2D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "不足。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "偏高。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "完全不用自身調節。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0322",
+      "type": "single",
+      "stem": "受檢者有遠視+2.00 DS，習慣近用閱讀距離為40 cm，用推進法或上推法（push-up method）測出調節力為 1.00 D。若運用調節幅度一半原則（tentative add based on half the accommodation）配製單焦老花眼鏡，此 眼鏡的鏡片度數為下列何者？",
+      "choices": [
+        "+1.00 DS",
+        "+2.00 DS",
+        "+3.00 DS",
+        "+4.00 DS"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n遠視單焦老花處方\n\n**白話理解**\n40cm需求2.5D，AA1D只用0.5D，需近用加光2D；再加遠用遠視矯正+2D，近用總處方+4D。\n\n**口訣**\n先算ADD，再加遠用+2。\n\n**考點與解題步驟**\n- ADD=2.5−0.5=2D；近用總度=2+2=4D。\n\n**選項 A：A 選項**\n低於遠用。\n\n**選項 B：B 選項**\n只有遠用。\n\n**選項 C：C 選項**\nADD不足。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\驗光學概要\\110年驗光生普考.pdf；原題編號 46；舊 ID opt-q0322",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0322",
+      "source_number": "46",
+      "source_year": "110",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "遠視單焦老花處方",
+        "simple": "40cm需求2.5D，AA1D只用0.5D，需近用加光2D；再加遠用遠視矯正+2D，近用總處方+4D。",
+        "memory": "先算ADD，再加遠用+2。",
+        "examFocus": [
+          "ADD=2.5−0.5=2D；近用總度=2+2=4D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "低於遠用。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "只有遠用。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "ADD不足。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0323",
+      "type": "single",
+      "stem": "有關正視眼者的老花調節幅度（amplitude of accommodation）與測量的敘述，下列何者錯誤？",
+      "choices": [
+        "患者調節力在60 歲時降至約3 D 左右",
+        "若近點（near point）為25 cm，則患者的調節力為4 D",
+        "對65 歲的受檢者檢查調節力，所測量的結果可能是焦深（depth of focus）而非調節幅度",
+        "受檢者超過60 歲，可直接由工作距離預估暫定加入度，如40 cm 則放+2.50 DS"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n高齡調節與焦深\n\n**白話理解**\n25cm近點在正視眼是4D；65歲量到的變化可能主要是焦深；超過60歲常可由工作需求估全額ADD。\n\n**口訣**\n60歲不會還平均3D真調節。\n\n**選項 A：A 選項**\n錯誤。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\驗光學概要\\110年驗光生普考.pdf；原題編號 49；舊 ID opt-q0323",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0323",
+      "source_number": "49",
+      "source_year": "110",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "高齡調節與焦深",
+        "simple": "25cm近點在正視眼是4D；65歲量到的變化可能主要是焦深；超過60歲常可由工作需求估全額ADD。",
+        "memory": "60歲不會還平均3D真調節。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

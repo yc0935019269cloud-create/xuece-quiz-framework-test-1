@@ -1,0 +1,414 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-course114-u06",
+    "subject": "optometry",
+    "name": "角膜曲率測量：K 值與角膜地圖｜114 學年度",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 學年度",
+      "視光學",
+      "第06單元 角膜曲率測量：K 值與角膜地圖"
+    ],
+    "order": 6,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-teacher-06-01",
+      "type": "single",
+      "stem": "某人眼鏡處方 −5.50 DS/−2.00 DC×90，角膜 K 值 7.50@180、7.85@90。眼球散光度數大多來自何者？",
+      "choices": [
+        "角膜",
+        "水晶體",
+        "視網膜",
+        "鞏膜"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n角膜散光與全眼散光\n\n**白話理解**\n7.50 mm 約 45.00 D，7.85 mm 約 43.00 D，角膜兩主子午線差約 2.00 D，與處方柱鏡 2.00 D 相近，因此全眼散光主要由角膜造成。\n\n**口訣**\nK 差接近處方柱鏡，主因就在角膜。\n\n**考點與解題步驟**\n- K 差約 45.00−43.00＝2.00 D。\n- 半徑越小，角膜屈光力越大。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 1；舊 ID opt-teacher-06-01",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-06-01",
+      "source_number": "1",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "角膜散光與全眼散光",
+        "simple": "7.50 mm 約 45.00 D，7.85 mm 約 43.00 D，角膜兩主子午線差約 2.00 D，與處方柱鏡 2.00 D 相近，因此全眼散光主要由角膜造成。",
+        "memory": "K 差接近處方柱鏡，主因就在角膜。",
+        "examFocus": [
+          "K 差約 45.00−43.00＝2.00 D。",
+          "半徑越小，角膜屈光力越大。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-06-02",
+      "type": "single",
+      "stem": "角膜弧度為 45.00@180／43.00@90，依 Javal’s rule 預測其總屈光散光為何？",
+      "choices": [
+        "−2.00 DC×180",
+        "−2.00 DC×90",
+        "−3.00 DC×180",
+        "−3.00 DC×90"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\nJaval’s rule\n\n**白話理解**\n水平子午線 45 D、垂直 43 D，角膜為 2 D 逆規散光，以負柱鏡表示為 −2.00×90。Javal 經驗式將角膜散光乘約 1.25，並加入約 0.50 D 的逆規內部散光，得到約 −3.00×90。\n\n**口訣**\n先由 K 值判方向，再套 1.25 與內部逆規修正。\n\n**考點與解題步驟**\n- 1.25×2.00＋0.50≈3.00 D，軸向 90°。\n- K 值的 @ 軸是該子午線位置，不是直接照抄柱鏡軸。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 2；舊 ID opt-teacher-06-02",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-06-02",
+      "source_number": "2",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "Javal’s rule",
+        "simple": "水平子午線 45 D、垂直 43 D，角膜為 2 D 逆規散光，以負柱鏡表示為 −2.00×90。Javal 經驗式將角膜散光乘約 1.25，並加入約 0.50 D 的逆規內部散光，得到約 −3.00×90。",
+        "memory": "先由 K 值判方向，再套 1.25 與內部逆規修正。",
+        "examFocus": [
+          "1.25×2.00＋0.50≈3.00 D，軸向 90°。",
+          "K 值的 @ 軸是該子午線位置，不是直接照抄柱鏡軸。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-06-03",
+      "type": "single",
+      "stem": "角膜弧度儀測得 H：7.95@180、V：7.85@90，此患者角膜散光屬於何者？",
+      "choices": [
+        "順規散光",
+        "逆規散光",
+        "斜散光",
+        "不規則散光"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n由角膜半徑判定散光型態\n\n**白話理解**\n垂直子午線半徑 7.85 mm 小於水平的 7.95 mm，代表垂直較陡、屈光力較強；垂直較陡即順規散光。\n\n**口訣**\n半徑小＝較陡；垂直陡＝順規。\n\n**考點與解題步驟**\n- 不要把半徑大小直接當成屈光力大小。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 3；舊 ID opt-teacher-06-03",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-06-03",
+      "source_number": "3",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "由角膜半徑判定散光型態",
+        "simple": "垂直子午線半徑 7.85 mm 小於水平的 7.95 mm，代表垂直較陡、屈光力較強；垂直較陡即順規散光。",
+        "memory": "半徑小＝較陡；垂直陡＝順規。",
+        "examFocus": [
+          "不要把半徑大小直接當成屈光力大小。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-06-04",
+      "type": "single",
+      "stem": "角膜地圖儀（corneal topography）在臨床上可用於下列何者？",
+      "choices": [
+        "檢查白內障",
+        "監測視網膜病變",
+        "評估翼狀贅片（贅肉）",
+        "測量角膜厚度"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n角膜地形圖用途\n\n**白話理解**\n角膜地形圖呈現角膜前表面曲率與形狀，可追蹤翼狀贅片牽拉造成的局部扁平與不規則散光。白內障和視網膜病變不是角膜地形圖的檢查目標；角膜厚度需角膜測厚或斷層設備。\n\n**口訣**\nTopography 看表面形狀，不等於 pachymetry 看厚度。\n\n**考點與解題步驟**\n- 部分斷層儀可同時給厚度，但單純地形圖不以測厚為主。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 4；舊 ID opt-teacher-06-04",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-06-04",
+      "source_number": "4",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "角膜地形圖用途",
+        "simple": "角膜地形圖呈現角膜前表面曲率與形狀，可追蹤翼狀贅片牽拉造成的局部扁平與不規則散光。白內障和視網膜病變不是角膜地形圖的檢查目標；角膜厚度需角膜測厚或斷層設備。",
+        "memory": "Topography 看表面形狀，不等於 pachymetry 看厚度。",
+        "examFocus": [
+          "部分斷層儀可同時給厚度，但單純地形圖不以測厚為主。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-06-05",
+      "type": "single",
+      "stem": "有關角膜弧度儀（keratometry）的敘述，下列何者正確？",
+      "choices": [
+        "原理是利用角膜折射特性",
+        "可提供全角膜弧度資訊",
+        "散光度數相當於檢影鏡測得的散光度數",
+        "可用於圓錐角膜複診追蹤及隱形眼鏡驗配"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n角膜弧度儀原理與限制\n\n**白話理解**\n角膜弧度儀利用角膜前表面的鏡面反射，不是折射；只測中央一小區域，不能代表全角膜；它量到的是角膜散光，不必然等於全眼檢影散光。\n\n**口訣**\nK 儀看中央前表面反射。\n\n**考點與解題步驟**\n- 角膜散光不等於全眼散光。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 5；舊 ID opt-teacher-06-05",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-06-05",
+      "source_number": "5",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "角膜弧度儀原理與限制",
+        "simple": "角膜弧度儀利用角膜前表面的鏡面反射，不是折射；只測中央一小區域，不能代表全角膜；它量到的是角膜散光，不必然等於全眼檢影散光。",
+        "memory": "K 儀看中央前表面反射。",
+        "examFocus": [
+          "角膜散光不等於全眼散光。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-06-06",
+      "type": "single",
+      "stem": "當水平聚焦線比垂直聚焦線更靠近眼球前端時，這是何種散光，而平坦 K 值位於哪一子午線？",
+      "choices": [
+        "逆規；水平子午線",
+        "順規；垂直子午線",
+        "逆規；垂直子午線",
+        "順規；水平子午線"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\nSturm 光錐與主子午線\n\n**白話理解**\n水平焦線由垂直子午線的屈光力形成；它更靠前表示垂直子午線較強、較陡，故為順規散光。相對較平的是水平子午線。\n\n**口訣**\n水平線靠前，是垂直力量強。\n\n**考點與解題步驟**\n- 焦線方向與產生它的子午線互相垂直。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 6；舊 ID opt-teacher-06-06",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-06-06",
+      "source_number": "6",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "Sturm 光錐與主子午線",
+        "simple": "水平焦線由垂直子午線的屈光力形成；它更靠前表示垂直子午線較強、較陡，故為順規散光。相對較平的是水平子午線。",
+        "memory": "水平線靠前，是垂直力量強。",
+        "examFocus": [
+          "焦線方向與產生它的子午線互相垂直。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-06-07",
+      "type": "single",
+      "stem": "角膜弧度儀測得 42.50@180／43.50@90；下列敘述何者錯誤？",
+      "choices": [
+        "180° 為 42.50 D，90° 為 43.50 D",
+        "角膜散光可寫為 −1.00×180",
+        "角膜為逆規散光",
+        "MCAR 代表影像清楚且規則"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nK 值與負柱鏡表示\n\n**白話理解**\n90° 子午線 43.50 D 比 180° 的 42.50 D 更陡，屬垂直較陡的順規散光。以負柱鏡表示為 −1.00 DC×180。\n\n**口訣**\n90 強、180 平＝順規，負柱軸 180。\n\n**考點與解題步驟**\n- 角膜散光＝43.50−42.50＝1.00 D。\n- 不要因 @90 就把柱鏡軸也寫成 90。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 7；舊 ID opt-teacher-06-07",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-06-07",
+      "source_number": "7",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "K 值與負柱鏡表示",
+        "simple": "90° 子午線 43.50 D 比 180° 的 42.50 D 更陡，屬垂直較陡的順規散光。以負柱鏡表示為 −1.00 DC×180。",
+        "memory": "90 強、180 平＝順規，負柱軸 180。",
+        "examFocus": [
+          "角膜散光＝43.50−42.50＝1.00 D。",
+          "不要因 @90 就把柱鏡軸也寫成 90。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

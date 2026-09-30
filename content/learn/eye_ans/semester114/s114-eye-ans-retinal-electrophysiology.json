@@ -1,0 +1,901 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-eye-ans-retinal-electrophysiology",
+  "subject": "eye_ans",
+  "unit": "第12單元 視網膜與眼電位",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "眼解剖生理學",
+    "第12單元 視網膜與眼電位"
+  ],
+  "title": "視網膜與眼電位",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://harmonious-rugelach-6d5134.netlify.app/",
+  "level": 2,
+  "minutes": 90,
+  "order": 12,
+  "source": "https://harmonious-rugelach-6d5134.netlify.app/",
+  "tags": [
+    "視網膜與眼電位"
+  ],
+  "lessons": [
+    {
+      "id": "phototransduction-1",
+      "title": "光轉換：光如何讓 photoreceptor 安靜",
+      "goals": [
+        "解釋暗電流維持去極化",
+        "解釋光轉換 cascade 關閉通道",
+        "解釋光使 photoreceptor 超極化"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "光轉換：光如何讓 photoreceptor 安靜",
+          "body": "光啟動 rhodopsin/transducin/PDE，讓 cGMP 降低並關閉通道。\n\n- 先比較暗與亮。\n- 再記 cascade。\n- 最後連到膜電位與 neurotransmitter。"
+        },
+        {
+          "type": "card",
+          "title": "暗電流維持去極化",
+          "body": "**一句話／白話**\n暗處 cGMP 高，cation channel 開啟，photoreceptor 去極化並持續釋放 glutamate。\n\n**觀念**\n外節 cGMP-gated channels 在暗處開啟，Na+ 與 Ca2+ 流入；內節 K+ 外流，形成 dark current。photoreceptor 因此保持相對 depolarized。\n\n**考試角度**\n- dark：cGMP high、channel open\n- dark current 主要涉及外節陽離子流入\n- 暗處 glutamate release high\n\n**口訣**\n黑暗讓門開著，感光細胞一直說話。",
+          "keys": [
+            "dark：cGMP high、channel open",
+            "dark current 主要涉及外節陽離子流入",
+            "暗處 glutamate release high"
+          ],
+          "tip": "口訣：黑暗讓門開著，感光細胞一直說話。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "暗處 photoreceptor 外節的 cGMP-gated channel 通常？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "dark：cGMP high、channel open\n\n正確選項：開啟。\n外節 cGMP-gated channels 在暗處開啟，Na+ 與 Ca2+ 流入；內節 K+ 外流，形成 dark current。photoreceptor 因此保持相對 depolarized。",
+          "choices": [
+            "變成 chloride channel",
+            "產生 action potential",
+            "關閉",
+            "開啟"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "光轉換 cascade 關閉通道",
+          "body": "**一句話／白話**\n光依序啟動 rhodopsin、transducin、PDE，使 cGMP 下降。\n\n**觀念**\nphoton 將 11-cis retinal 轉為 all-trans retinal，啟動 rhodopsin；rhodopsin 活化 transducin，transducin 活化 phosphodiesterase，PDE 分解 cGMP，使 cation channels 關閉。\n\n**考試角度**\n- 順序：rhodopsin → transducin → PDE → cGMP↓\n- 11-cis retinal 轉為 all-trans retinal\n- 訊號級聯具有 amplification\n\n**口訣**\n光打 R，R 叫 T，T 叫 PDE，把 cGMP 清掉。",
+          "keys": [
+            "順序：rhodopsin → transducin → PDE → cGMP↓",
+            "11-cis retinal 轉為 all-trans retinal",
+            "訊號級聯具有 amplification"
+          ],
+          "tip": "口訣：光打 R，R 叫 T，T 叫 PDE，把 cGMP 清掉。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "phototransduction 中直接分解 cGMP 的是？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "順序：rhodopsin → transducin → PDE → cGMP↓\n\n正確選項：PDE。\nphoton 將 11-cis retinal 轉為 all-trans retinal，啟動 rhodopsin；rhodopsin 活化 transducin，transducin 活化 phosphodiesterase，PDE 分解 cGMP，使 cation channels 關閉。",
+          "choices": [
+            "PDE",
+            "glutamate",
+            "rhodopsin",
+            "transducin"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "光使 photoreceptor 超極化",
+          "body": "**一句話／白話**\n通道關閉後陽離子流入減少，photoreceptor hyperpolarize，glutamate release 下降。\n\n**觀念**\n光反應與一般感覺受器常見的去極化不同。photoreceptor 在光下變得更負，這個 graded hyperpolarization 再透過 glutamate 減少傳給 ON/OFF bipolar pathways。\n\n**考試角度**\n- light：hyperpolarization\n- light：glutamate release decreases\n- 反應是 graded potential\n\n**口訣**\n光越亮，感光細胞越安靜。",
+          "keys": [
+            "light：hyperpolarization",
+            "light：glutamate release decreases",
+            "反應是 graded potential"
+          ],
+          "tip": "口訣：光越亮，感光細胞越安靜。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "光照後 photoreceptor 的膜電位通常？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "light：hyperpolarization\n\n正確選項：hyperpolarize。\n光反應與一般感覺受器常見的去極化不同。photoreceptor 在光下變得更負，這個 graded hyperpolarization 再透過 glutamate 減少傳給 ON/OFF bipolar pathways。",
+          "choices": [
+            "產生高頻 spike",
+            "完全不變",
+            "depolarize",
+            "hyperpolarize"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：光使 photoreceptor 超極化",
+          "problem": "光照後 photoreceptor 的膜電位通常？\n\nA. 產生高頻 spike\nB. 完全不變\nC. depolarize\nD. hyperpolarize",
+          "steps": [
+            "先確認題目問的主題：光使 photoreceptor 超極化",
+            "光反應與一般感覺受器常見的去極化不同。photoreceptor 在光下變得更負，這個 graded hyperpolarization 再透過 glutamate 減少傳給 ON/OFF bipolar pathways。",
+            "把判斷依據連回題目：light：hyperpolarization\n\n正確選項：hyperpolarize。\n光反應與一般感覺受器常見的去極化不同。photoreceptor 在光下變得更負，這個 graded hyperpolarization 再透過 glutamate 減少傳給 ON/OFF bipolar pathways。"
+          ],
+          "answer": "hyperpolarize"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：光轉換：光如何讓 photoreceptor 安靜",
+          "qids": [
+            "s114-eye-ans-exam106-u12-q0018",
+            "s114-eye-ans-exam107-u12-q0067"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "phototransduction 中直接分解 cGMP 的是？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "順序：rhodopsin → transducin → PDE → cGMP↓\n\n正確選項：PDE。\nphoton 將 11-cis retinal 轉為 all-trans retinal，啟動 rhodopsin；rhodopsin 活化 transducin，transducin 活化 phosphodiesterase，PDE 分解 cGMP，使 cation channels 關閉。",
+              "choices": [
+                "PDE",
+                "glutamate",
+                "rhodopsin",
+                "transducin"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "光照後 photoreceptor 的膜電位通常？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "light：hyperpolarization\n\n正確選項：hyperpolarize。\n光反應與一般感覺受器常見的去極化不同。photoreceptor 在光下變得更負，這個 graded hyperpolarization 再透過 glutamate 減少傳給 ON/OFF bipolar pathways。",
+              "choices": [
+                "產生高頻 spike",
+                "完全不變",
+                "depolarize",
+                "hyperpolarize"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "dark：cGMP high、channel open",
+            "dark current 主要涉及外節陽離子流入",
+            "順序：rhodopsin → transducin → PDE → cGMP↓",
+            "11-cis retinal 轉為 all-trans retinal",
+            "light：hyperpolarization",
+            "light：glutamate release decreases"
+          ],
+          "flash": [
+            {
+              "front": "暗電流維持去極化",
+              "back": "暗處 cGMP 高，cation channel 開啟，photoreceptor 去極化並持續釋放 glutamate。"
+            },
+            {
+              "front": "光轉換 cascade 關閉通道",
+              "back": "光依序啟動 rhodopsin、transducin、PDE，使 cGMP 下降。"
+            },
+            {
+              "front": "光使 photoreceptor 超極化",
+              "back": "通道關閉後陽離子流入減少，photoreceptor hyperpolarize，glutamate release 下降。"
+            },
+            {
+              "front": "暗處 photoreceptor 外節的 cGMP-gated channel 通常？",
+              "back": "dark：cGMP high、channel open\n\n正確選項：開啟。\n外節 cGMP-gated channels 在暗處開啟，Na+ 與 Ca2+ 流入；內節 K+ 外流，形成 dark current。photoreceptor 因此保持相對 depolarized。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erg-waves-1",
+      "title": "ERG 基本波：先看向下，再看向上",
+      "goals": [
+        "解釋a-wave 主要反映 photoreceptor",
+        "解釋b-wave 主要反映 inner retinal bipolar/Müller activity",
+        "解釋c-wave 與慢電位"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "ERG 基本波：先看向下，再看向上",
+          "body": "a-wave 先向下、b-wave 再向上；來源要用細胞群理解。\n\n- 先認波形方向。\n- 再配對主要細胞來源。\n- 最後看波形改變代表哪層出問題。"
+        },
+        {
+          "type": "card",
+          "title": "a-wave 主要反映 photoreceptor",
+          "body": "**一句話／白話**\n閃光後第一個向下的負波是 a-wave，主要來自 rods/cones 的光反應。\n\n**觀念**\na-wave 是早期負向 deflection，主要反映 photoreceptor outer retinal response。若 photoreceptor 廣泛受損，a-wave amplitude 會下降。\n\n**考試角度**\n- a-wave：先出現、負向\n- 主要來源：photoreceptor\n- outer retinal disease 可降低 a-wave\n\n**口訣**\na = 第一個向下，想感光細胞先接光。",
+          "keys": [
+            "a-wave：先出現、負向",
+            "主要來源：photoreceptor",
+            "outer retinal disease 可降低 a-wave"
+          ],
+          "tip": "口訣：a = 第一個向下，想感光細胞先接光。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "ERG 的 a-wave 主要反映？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "a-wave：先出現、負向\n\n正確選項：photoreceptor。\na-wave 是早期負向 deflection，主要反映 photoreceptor outer retinal response。若 photoreceptor 廣泛受損，a-wave amplitude 會下降。",
+          "choices": [
+            "optic nerve",
+            "lens",
+            "ganglion cell",
+            "photoreceptor"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "b-wave 主要反映 inner retinal bipolar/Müller activity",
+          "body": "**一句話／白話**\na-wave 後的大向上波是 b-wave，主要與 ON bipolar 與 Müller cell 相關。\n\n**觀念**\nb-wave 是明顯正向波，主要由 inner retinal activity 產生，常以 ON bipolar cell response 與 Müller cell potassium currents 解釋。若 b-wave 顯著下降而 a-wave 相對保留，提示 photoreceptor 後方傳遞異常。\n\n**考試角度**\n- b-wave：a-wave 後的正向大波\n- 主要與 ON bipolar/Müller cell activity 有關\n- a 保留、b 降低稱 electronegative pattern\n\n**口訣**\nb = big upward wave，想到 bipolar。",
+          "keys": [
+            "b-wave：a-wave 後的正向大波",
+            "主要與 ON bipolar/Müller cell activity 有關",
+            "a 保留、b 降低稱 electronegative pattern"
+          ],
+          "tip": "口訣：b = big upward wave，想到 bipolar。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "a-wave 相對保留但 b-wave 明顯降低，較提示？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "b-wave：a-wave 後的正向大波\n\n正確選項：photoreceptor 後的 inner retinal 傳遞異常。\nb-wave 是明顯正向波，主要由 inner retinal activity 產生，常以 ON bipolar cell response 與 Müller cell potassium currents 解釋。若 b-wave 顯著下降而 a-wave 相對保留，提示 photoreceptor 後方傳遞異常。",
+          "choices": [
+            "單純屈光不正",
+            "photoreceptor 後的 inner retinal 傳遞異常",
+            "角膜曲率變化",
+            "視交叉病灶"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "c-wave 與慢電位",
+          "body": "**一句話／白話**\nc-wave 是較慢的正向變化，和 RPE 與 Müller cell 對離子環境的反應有關。\n\n**觀念**\nc-wave 出現較晚，主要與 RPE apical membrane response 及 Müller cell slow component 有關。臨床常規 ERG 最常聚焦 a/b waves，但考題可能用 c-wave 連到 RPE。\n\n**考試角度**\n- c-wave 較慢\n- 主要聯想到 RPE\n- 不要把 c-wave 當 optic nerve action potential\n\n**口訣**\nc 比較慢，想到照顧外層的 RPE。",
+          "keys": [
+            "c-wave 較慢",
+            "主要聯想到 RPE",
+            "不要把 c-wave 當 optic nerve action potential"
+          ],
+          "tip": "口訣：c 比較慢，想到照顧外層的 RPE。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "ERG c-wave 最常聯想到哪個結構？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "c-wave 較慢\n\n正確選項：RPE。\nc-wave 出現較晚，主要與 RPE apical membrane response 及 Müller cell slow component 有關。臨床常規 ERG 最常聚焦 a/b waves，但考題可能用 c-wave 連到 RPE。",
+          "choices": [
+            "extraocular muscle",
+            "RPE",
+            "lens",
+            "optic chiasm"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：c-wave 與慢電位",
+          "problem": "ERG c-wave 最常聯想到哪個結構？\n\nA. extraocular muscle\nB. RPE\nC. lens\nD. optic chiasm",
+          "steps": [
+            "先確認題目問的主題：c-wave 與慢電位",
+            "c-wave 出現較晚，主要與 RPE apical membrane response 及 Müller cell slow component 有關。臨床常規 ERG 最常聚焦 a/b waves，但考題可能用 c-wave 連到 RPE。",
+            "把判斷依據連回題目：c-wave 較慢\n\n正確選項：RPE。\nc-wave 出現較晚，主要與 RPE apical membrane response 及 Müller cell slow component 有關。臨床常規 ERG 最常聚焦 a/b waves，但考題可能用 c-wave 連到 RPE。"
+          ],
+          "answer": "RPE"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：ERG 基本波：先看向下，再看向上",
+          "qids": [
+            "s114-eye-ans-exam106-u12-q0018",
+            "s114-eye-ans-exam107-u12-q0067"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "a-wave 相對保留但 b-wave 明顯降低，較提示？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "b-wave：a-wave 後的正向大波\n\n正確選項：photoreceptor 後的 inner retinal 傳遞異常。\nb-wave 是明顯正向波，主要由 inner retinal activity 產生，常以 ON bipolar cell response 與 Müller cell potassium currents 解釋。若 b-wave 顯著下降而 a-wave 相對保留，提示 photoreceptor 後方傳遞異常。",
+              "choices": [
+                "單純屈光不正",
+                "photoreceptor 後的 inner retinal 傳遞異常",
+                "角膜曲率變化",
+                "視交叉病灶"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "ERG c-wave 最常聯想到哪個結構？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "c-wave 較慢\n\n正確選項：RPE。\nc-wave 出現較晚，主要與 RPE apical membrane response 及 Müller cell slow component 有關。臨床常規 ERG 最常聚焦 a/b waves，但考題可能用 c-wave 連到 RPE。",
+              "choices": [
+                "extraocular muscle",
+                "RPE",
+                "lens",
+                "optic chiasm"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "a-wave：先出現、負向",
+            "主要來源：photoreceptor",
+            "b-wave：a-wave 後的正向大波",
+            "主要與 ON bipolar/Müller cell activity 有關",
+            "c-wave 較慢",
+            "主要聯想到 RPE"
+          ],
+          "flash": [
+            {
+              "front": "a-wave 主要反映 photoreceptor",
+              "back": "閃光後第一個向下的負波是 a-wave，主要來自 rods/cones 的光反應。"
+            },
+            {
+              "front": "b-wave 主要反映 inner retinal bipolar/Müller activity",
+              "back": "a-wave 後的大向上波是 b-wave，主要與 ON bipolar 與 Müller cell 相關。"
+            },
+            {
+              "front": "c-wave 與慢電位",
+              "back": "c-wave 是較慢的正向變化，和 RPE 與 Müller cell 對離子環境的反應有關。"
+            },
+            {
+              "front": "ERG 的 a-wave 主要反映？",
+              "back": "a-wave：先出現、負向\n\n正確選項：photoreceptor。\na-wave 是早期負向 deflection，主要反映 photoreceptor outer retinal response。若 photoreceptor 廣泛受損，a-wave amplitude 會下降。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erg-interpretation-1",
+      "title": "怎麼讀 ERG：先問測誰，再看哪個波壞",
+      "goals": [
+        "解釋dark-adapted ERG 偏重 rod system",
+        "解釋light-adapted 與 flicker 偏重 cone system",
+        "解釋full-field ERG 正常不代表 macula 一定正常"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "怎麼讀 ERG：先問測誰，再看哪個波壞",
+          "body": "全場 ERG 看整體，局部中央病灶可能需要不同測法；適應狀態決定 rods 或 cones 誰主導。\n\n- 先分 dark-adapted 與 light-adapted。\n- 再分 full-field 與 focal/multifocal。\n- 最後用波形定位。"
+        },
+        {
+          "type": "card",
+          "title": "dark-adapted ERG 偏重 rod system",
+          "body": "**一句話／白話**\n暗適應後 rods 恢復敏感，適合測 scotopic retinal function。\n\n**觀念**\ndark-adapted testing 使用不同閃光強度分離 rod-dominant 與 combined rod-cone responses。因 rods 在弱光下主導，因此可偵測廣泛 rod system dysfunction。\n\n**考試角度**\n- dark-adapted = scotopic/rod-dominant\n- 需要足夠暗適應時間\n- rod-cone dystrophy 常有明顯異常\n\n**口訣**\n暗室叫 rod 上班。",
+          "keys": [
+            "dark-adapted = scotopic/rod-dominant",
+            "需要足夠暗適應時間",
+            "rod-cone dystrophy 常有明顯異常"
+          ],
+          "tip": "口訣：暗室叫 rod 上班。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "dark-adapted ERG 最主要用來評估？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "dark-adapted = scotopic/rod-dominant\n\n正確選項：rod-dominant function。\ndark-adapted testing 使用不同閃光強度分離 rod-dominant 與 combined rod-cone responses。因 rods 在弱光下主導，因此可偵測廣泛 rod system dysfunction。",
+          "choices": [
+            "視放射",
+            "眼外肌",
+            "rod-dominant function",
+            "單純角膜厚度"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "light-adapted 與 flicker 偏重 cone system",
+          "body": "**一句話／白話**\n背景亮光壓低 rods，cone response 與快速 flicker 就更容易被單獨觀察。\n\n**觀念**\nphotopic ERG 在 light-adapted background 下測 cone system。30-Hz flicker 速度太快，rods 無法有效追隨，因此主要反映 cone pathway。\n\n**考試角度**\n- light-adapted = cone-dominant\n- 30-Hz flicker 主要測 cone pathway\n- cone dysfunction 會影響 photopic/flicker responses\n\n**口訣**\n亮背景讓 rod 下班；快閃只剩 cone 跟得上。",
+          "keys": [
+            "light-adapted = cone-dominant",
+            "30-Hz flicker 主要測 cone pathway",
+            "cone dysfunction 會影響 photopic/flicker responses"
+          ],
+          "tip": "口訣：亮背景讓 rod 下班；快閃只剩 cone 跟得上。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "30-Hz flicker ERG 主要測？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "light-adapted = cone-dominant\n\n正確選項：cone pathway。\nphotopic ERG 在 light-adapted background 下測 cone system。30-Hz flicker 速度太快，rods 無法有效追隨，因此主要反映 cone pathway。",
+          "choices": [
+            "optic nerve",
+            "RPE only",
+            "rod pathway",
+            "cone pathway"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "full-field ERG 正常不代表 macula 一定正常",
+          "body": "**一句話／白話**\n全場 ERG 是整張視網膜總和，小範圍 macular lesion 可能被大量正常周邊訊號淹沒。\n\n**觀念**\nfull-field ERG 適合偵測 diffuse retinal dysfunction，但對局限 foveal/macular lesion 可能不敏感。multifocal ERG 可建立不同 retinal locations 的局部反應地圖，pattern ERG 則較關聯 ganglion/macular function。\n\n**考試角度**\n- full-field ERG 看整體\n- mfERG 看局部地圖\n- 局部 macular disease 可有近正常 full-field ERG\n\n**口訣**\n全場像全班平均，小範圍壞掉可能被平均掉。",
+          "keys": [
+            "full-field ERG 看整體",
+            "mfERG 看局部地圖",
+            "局部 macular disease 可有近正常 full-field ERG"
+          ],
+          "tip": "口訣：全場像全班平均，小範圍壞掉可能被平均掉。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "局部 macular lesion 但 full-field ERG 近正常，原因最可能是？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "full-field ERG 看整體\n\n正確選項：周邊正常訊號在總和中占多數。\nfull-field ERG 適合偵測 diffuse retinal dysfunction，但對局限 foveal/macular lesion 可能不敏感。multifocal ERG 可建立不同 retinal locations 的局部反應地圖，pattern ERG 則較關聯 ganglion/macular function。",
+          "choices": [
+            "周邊正常訊號在總和中占多數",
+            "macula 沒有 photoreceptor",
+            "視神經完全代償",
+            "ERG 只測角膜"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：full-field ERG 正常不代表 macula 一定正常",
+          "problem": "局部 macular lesion 但 full-field ERG 近正常，原因最可能是？\n\nA. 周邊正常訊號在總和中占多數\nB. macula 沒有 photoreceptor\nC. 視神經完全代償\nD. ERG 只測角膜",
+          "steps": [
+            "先確認題目問的主題：full-field ERG 正常不代表 macula 一定正常",
+            "full-field ERG 適合偵測 diffuse retinal dysfunction，但對局限 foveal/macular lesion 可能不敏感。multifocal ERG 可建立不同 retinal locations 的局部反應地圖，pattern ERG 則較關聯 ganglion/macular function。",
+            "把判斷依據連回題目：full-field ERG 看整體\n\n正確選項：周邊正常訊號在總和中占多數。\nfull-field ERG 適合偵測 diffuse retinal dysfunction，但對局限 foveal/macular lesion 可能不敏感。multifocal ERG 可建立不同 retinal locations 的局部反應地圖，pattern ERG 則較關聯 ganglion/macular function。"
+          ],
+          "answer": "周邊正常訊號在總和中占多數"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：怎麼讀 ERG：先問測誰，再看哪個波壞",
+          "qids": [
+            "s114-eye-ans-exam106-u12-q0018",
+            "s114-eye-ans-exam107-u12-q0067"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "30-Hz flicker ERG 主要測？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "light-adapted = cone-dominant\n\n正確選項：cone pathway。\nphotopic ERG 在 light-adapted background 下測 cone system。30-Hz flicker 速度太快，rods 無法有效追隨，因此主要反映 cone pathway。",
+              "choices": [
+                "optic nerve",
+                "RPE only",
+                "rod pathway",
+                "cone pathway"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "局部 macular lesion 但 full-field ERG 近正常，原因最可能是？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "full-field ERG 看整體\n\n正確選項：周邊正常訊號在總和中占多數。\nfull-field ERG 適合偵測 diffuse retinal dysfunction，但對局限 foveal/macular lesion 可能不敏感。multifocal ERG 可建立不同 retinal locations 的局部反應地圖，pattern ERG 則較關聯 ganglion/macular function。",
+              "choices": [
+                "周邊正常訊號在總和中占多數",
+                "macula 沒有 photoreceptor",
+                "視神經完全代償",
+                "ERG 只測角膜"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "dark-adapted = scotopic/rod-dominant",
+            "需要足夠暗適應時間",
+            "light-adapted = cone-dominant",
+            "30-Hz flicker 主要測 cone pathway",
+            "full-field ERG 看整體",
+            "mfERG 看局部地圖"
+          ],
+          "flash": [
+            {
+              "front": "dark-adapted ERG 偏重 rod system",
+              "back": "暗適應後 rods 恢復敏感，適合測 scotopic retinal function。"
+            },
+            {
+              "front": "light-adapted 與 flicker 偏重 cone system",
+              "back": "背景亮光壓低 rods，cone response 與快速 flicker 就更容易被單獨觀察。"
+            },
+            {
+              "front": "full-field ERG 正常不代表 macula 一定正常",
+              "back": "全場 ERG 是整張視網膜總和，小範圍 macular lesion 可能被大量正常周邊訊號淹沒。"
+            },
+            {
+              "front": "dark-adapted ERG 最主要用來評估？",
+              "back": "dark-adapted = scotopic/rod-dominant\n\n正確選項：rod-dominant function。\ndark-adapted testing 使用不同閃光強度分離 rod-dominant 與 combined rod-cone responses。因 rods 在弱光下主導，因此可偵測廣泛 rod system dysfunction。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "goals": [
+        "解釋單元路線"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "單元路線",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。",
+          "keys": [
+            "把本單元的關係串起來，確認易錯条件與方向。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "answer": "- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。"
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。\n- 把判斷依據連回題目：- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。\n\n**結論與依據**\n- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。",
+          "keys": [
+            "- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：單元路線\n- - 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。\n- 把判斷依據連回題目：- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：單元路線",
+          "problem": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：單元路線",
+            "- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。",
+            "把判斷依據連回題目：- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。"
+          ],
+          "answer": "- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-eye-ans-exam106-u12-q0018",
+            "s114-eye-ans-exam107-u12-q0067"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "answer": "- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把本單元的關係串起來，確認易錯条件與方向。",
+            "單元路線：把本單元的關係串起來，確認易錯条件與方向。",
+            "- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。",
+            "- 先確認題目問的主題：單元路線\n- - 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。\n- 把判斷依據連回題目：- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。",
+            "- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。"
+          ],
+          "flash": [
+            {
+              "front": "單元路線",
+              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。\n- 把判斷依據連回題目：- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。"
+            },
+            {
+              "front": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "back": "- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。\n- 把判斷依據連回題目：- 先懂 phototransduction。\n- 再認 a、b、c wave 的來源。\n- 最後用 dark/light adaptation 與不同 ERG 類型定位病變。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-1",
+      "title": "整合驗收 1",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：視網膜與眼電位",
+          "body": "光先啟動 rhodopsin，再經 transducin、PDE 降低 cGMP。\n\n正確選項：rhodopsin → transducin → PDE → cGMP↓。\n",
+          "keys": [
+            "光先啟動 rhodopsin，再經 transducin、PDE 降低 cGMP。\n\n正確選項：rhodopsin → transducin → PDE → cGMP↓。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "光轉換 cascade 的正確順序？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "光先啟動 rhodopsin，再經 transducin、PDE 降低 cGMP。\n\n正確選項：rhodopsin → transducin → PDE → cGMP↓。\n",
+          "choices": [
+            "PDE → rhodopsin → cGMP↑",
+            "rhodopsin → transducin → PDE → cGMP↓",
+            "glutamate → PDE → rhodopsin",
+            "transducin → cGMP↑ → channel open"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：視網膜與眼電位",
+          "body": "a-wave 是早期 photoreceptor-related negative wave。\n\n正確選項：a-wave，photoreceptor。\n",
+          "keys": [
+            "a-wave 是早期 photoreceptor-related negative wave。\n\n正確選項：a-wave，photoreceptor。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "ERG 第一個負向波主要是？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "a-wave 是早期 photoreceptor-related negative wave。\n\n正確選項：a-wave，photoreceptor。\n",
+          "choices": [
+            "d-wave，lens",
+            "a-wave，photoreceptor",
+            "b-wave，ganglion",
+            "c-wave，optic nerve"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：視網膜與眼電位",
+          "body": "快速 flicker 主要由 cone pathway 追隨。\n\n正確選項：cone。\n",
+          "keys": [
+            "快速 flicker 主要由 cone pathway 追隨。\n\n正確選項：cone。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "30-Hz flicker 主要評估？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "快速 flicker 主要由 cone pathway 追隨。\n\n正確選項：cone。\n",
+          "choices": [
+            "choroid",
+            "rod",
+            "cone",
+            "RPE"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "光轉換 cascade 的正確順序？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "光先啟動 rhodopsin，再經 transducin、PDE 降低 cGMP。\n\n正確選項：rhodopsin → transducin → PDE → cGMP↓。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "rhodopsin → transducin → PDE → cGMP↓"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "光轉換 cascade 的正確順序？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "光先啟動 rhodopsin，再經 transducin、PDE 降低 cGMP。\n\n正確選項：rhodopsin → transducin → PDE → cGMP↓。\n",
+              "choices": [
+                "PDE → rhodopsin → cGMP↑",
+                "rhodopsin → transducin → PDE → cGMP↓",
+                "glutamate → PDE → rhodopsin",
+                "transducin → cGMP↑ → channel open"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "ERG 第一個負向波主要是？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "a-wave 是早期 photoreceptor-related negative wave。\n\n正確選項：a-wave，photoreceptor。\n",
+              "choices": [
+                "d-wave，lens",
+                "a-wave，photoreceptor",
+                "b-wave，ganglion",
+                "c-wave，optic nerve"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "30-Hz flicker 主要評估？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "快速 flicker 主要由 cone pathway 追隨。\n\n正確選項：cone。\n",
+              "choices": [
+                "choroid",
+                "rod",
+                "cone",
+                "RPE"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "光先啟動 rhodopsin，再經 transducin、PDE 降低 cGMP。\n\n正確選項：rhodopsin → transducin → PDE → cGMP↓。\n",
+            "a-wave 是早期 photoreceptor-related negative wave。\n\n正確選項：a-wave，photoreceptor。\n",
+            "快速 flicker 主要由 cone pathway 追隨。\n\n正確選項：cone。\n",
+            "光先啟動 rhodopsin，再經 transducin、PDE 降低 cGMP。\n\n正確選項：rhodopsin → transducin → PDE → cGMP↓。\n",
+            "a-wave 是早期 photoreceptor-related negative wave。\n\n正確選項：a-wave，photoreceptor。\n"
+          ],
+          "flash": [
+            {
+              "front": "光轉換 cascade 的正確順序？",
+              "back": "光先啟動 rhodopsin，再經 transducin、PDE 降低 cGMP。\n\n正確選項：rhodopsin → transducin → PDE → cGMP↓。\n"
+            },
+            {
+              "front": "ERG 第一個負向波主要是？",
+              "back": "a-wave 是早期 photoreceptor-related negative wave。\n\n正確選項：a-wave，photoreceptor。\n"
+            },
+            {
+              "front": "30-Hz flicker 主要評估？",
+              "back": "快速 flicker 主要由 cone pathway 追隨。\n\n正確選項：cone。\n"
+            },
+            {
+              "front": "光轉換 cascade 的正確順序？",
+              "back": "光先啟動 rhodopsin，再經 transducin、PDE 降低 cGMP。\n\n正確選項：rhodopsin → transducin → PDE → cGMP↓。\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-2",
+      "title": "整合驗收 2",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：視網膜與眼電位",
+          "body": "這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n",
+          "keys": [
+            "這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "a-wave 保留、b-wave 低下最適合描述？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n",
+          "choices": [
+            "electronegative pattern",
+            "正常角膜反射",
+            "視交叉壓迫",
+            "tear breakup"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\na-wave 保留、b-wave 低下最適合描述？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- 這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\nelectronegative pattern",
+          "keys": [
+            "electronegative pattern"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "electronegative pattern",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 確認題目問的構造、條件或量。\n- 這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n- 將判斷依據連到正確選項。"
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "a-wave 保留、b-wave 低下最適合描述？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "electronegative pattern"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "a-wave 保留、b-wave 低下最適合描述？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n",
+              "choices": [
+                "electronegative pattern",
+                "正常角膜反射",
+                "視交叉壓迫",
+                "tear breakup"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n",
+            "- 確認題目問的構造、條件或量。\n- 這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n- 將判斷依據連到正確選項。",
+            "這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n",
+            "- 確認題目問的構造、條件或量。\n- 這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n- 將判斷依據連到正確選項。",
+            "這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n"
+          ],
+          "flash": [
+            {
+              "front": "a-wave 保留、b-wave 低下最適合描述？",
+              "back": "這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- 這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n- 將判斷依據連到正確選項。"
+            },
+            {
+              "front": "a-wave 保留、b-wave 低下最適合描述？",
+              "back": "這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- 這種波形提示 photoreceptor 後的傳遞異常。\n\n正確選項：electronegative pattern。\n- 將判斷依據連到正確選項。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

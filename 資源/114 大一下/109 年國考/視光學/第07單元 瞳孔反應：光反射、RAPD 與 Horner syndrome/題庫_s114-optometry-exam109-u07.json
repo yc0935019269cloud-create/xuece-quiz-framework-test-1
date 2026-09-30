@@ -1,0 +1,181 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam109-u07",
+    "subject": "optometry",
+    "name": "瞳孔反應：光反射、RAPD 與 Horner syndrome｜109 年國考",
+    "year": 109,
+    "path": [
+      "114 大一下",
+      "109 年國考",
+      "視光學",
+      "第07單元 瞳孔反應：光反射、RAPD 與 Horner syndrome"
+    ],
+    "order": 7,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0218",
+      "type": "single",
+      "stem": "下列那兩條腦神經與瞳孔對光反射（pupillary light reflex）有關？",
+      "choices": [
+        "視神經與動眼神經",
+        "動眼神經與外展神經",
+        "外展神經與顏面神經",
+        "顏面神經與視神經"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n光反射腦神經\n\n**白話理解**\nCN II負責傳入光刺激，CN III搭載副交感傳出使瞳孔括約肌收縮。\n\n**口訣**\n二進三出。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\nCN VI無關。\n\n**選項 C：C 選項**\n皆非主要路徑。\n\n**選項 D：D 選項**\nCN VII無關。\n\n**原始出處**\n驗光師\\眼球解剖生理學與倫理法規\\109年驗光師特考.pdf；原題編號 27；舊 ID opt-q0218",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師特考｜眼球解剖生理學與倫理法規"
+      ],
+      "source_id": "opt-q0218",
+      "source_number": "27",
+      "source_year": "109",
+      "source_subject": "驗光師特考｜眼球解剖生理學與倫理法規",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "光反射腦神經",
+        "simple": "CN II負責傳入光刺激，CN III搭載副交感傳出使瞳孔括約肌收縮。",
+        "memory": "二進三出。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "CN VI無關。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "皆非主要路徑。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "CN VII無關。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0231",
+      "type": "single",
+      "stem": "下列何種眼生理反射反應輸出，其傳導路徑需通過Edinger-Westphal 核作用？①直接瞳孔光反射（direct pupillary light reflex） ②交互協調瞳孔光反射（consensual pupillary light reflex） ③眨眼反射（blink reflex） ④光誘導反射流淚（light-induced reflex lacrimation）",
+      "choices": [
+        "僅①",
+        "①②",
+        "①③",
+        "③④"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nEW核功能\n\n**白話理解**\n兩種縮瞳反應的副交感傳出皆由Edinger–Westphal核經CN III到睫狀神經節；眨眼與流淚走其他反射路徑。\n\n**口訣**\n只要是光反射縮瞳，直接與共感都走EW。\n\n**選項 A：A 選項**\n漏掉共感反射。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n眨眼不經EW。\n\n**選項 D：D 選項**\n兩者皆非EW縮瞳輸出。\n\n**原始出處**\n驗光師\\眼球解剖生理學與倫理法規\\109年驗光師高考.pdf；原題編號 27；舊 ID opt-q0231",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜眼球解剖生理學與倫理法規"
+      ],
+      "source_id": "opt-q0231",
+      "source_number": "27",
+      "source_year": "109",
+      "source_subject": "驗光師高考｜眼球解剖生理學與倫理法規",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "EW核功能",
+        "simple": "兩種縮瞳反應的副交感傳出皆由Edinger–Westphal核經CN III到睫狀神經節；眨眼與流淚走其他反射路徑。",
+        "memory": "只要是光反射縮瞳，直接與共感都走EW。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "漏掉共感反射。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "眨眼不經EW。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "兩者皆非EW縮瞳輸出。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0232",
+      "type": "single",
+      "stem": "有關瞳孔檢查，下列敘述何者錯誤？",
+      "choices": [
+        "瞳孔檢查中若發現兩眼瞳孔大小不同，需作暗-亮瞳孔檢查（dim-bright pupillary test）",
+        "直接瞳孔反應為觀察筆燈照射的眼睛是否出現因光照而產生的縮瞳現象",
+        "手電筒搖擺檢查（swinging flashlight test）是用來檢查是否有相對性傳入（relative afferent）異常",
+        "直接和間接瞳孔反應異常時，需要布魯克諾檢查（Brückner test）"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n瞳孔檢查流程\n\n**白話理解**\n不等瞳先做明暗比較；direct觀察受照眼縮瞳；swinging flashlight查RAPD。Brückner主要篩檢紅光反射不對稱、斜視或屈光異常。\n\n**口訣**\nBrückner不是光反射異常的標準定位測試。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n錯誤。\n\n**原始出處**\n驗光師\\視光學\\109年驗光師高考.pdf；原題編號 13；舊 ID opt-q0232",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0232",
+      "source_number": "13",
+      "source_year": "109",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "瞳孔檢查流程",
+        "simple": "不等瞳先做明暗比較；direct觀察受照眼縮瞳；swinging flashlight查RAPD。Brückner主要篩檢紅光反射不對稱、斜視或屈光異常。",
+        "memory": "Brückner不是光反射異常的標準定位測試。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

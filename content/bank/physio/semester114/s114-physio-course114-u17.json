@@ -1,0 +1,3529 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-physio-course114-u17",
+    "subject": "physio",
+    "name": "Unit 17｜生殖系統｜114 學年度",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 學年度",
+      "生理學",
+      "第17單元 生殖系統"
+    ],
+    "order": 17,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；生理學期末題庫"
+  },
+  "questions": [
+    {
+      "n": "phys-17-01",
+      "type": "single",
+      "stem": "性腺（睪丸/卵巢）的兩大功能是？",
+      "choices": [
+        "產生配子＋分泌性類固醇",
+        "只產生配子",
+        "只分泌荷爾蒙",
+        "過濾血液"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜基礎題\n\n**白話理解**\n性腺＝配子工廠（生殖功能）＋性類固醇工廠（內分泌功能）。\n\n**考點與解題步驟**\n- 難度：基礎\n\n**選項 A：正確答案**\n性腺＝配子工廠（生殖功能）＋性類固醇工廠（內分泌功能）。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 1；舊 ID phys-17-01",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "基礎"
+      ],
+      "source_id": "phys-17-01",
+      "source_number": "1",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜基礎題",
+        "simple": "性腺＝配子工廠（生殖功能）＋性類固醇工廠（內分泌功能）。",
+        "memory": "",
+        "examFocus": [
+          "難度：基礎"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "性腺＝配子工廠（生殖功能）＋性類固醇工廠（內分泌功能）。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 1
+    },
+    {
+      "n": "phys-17-02",
+      "type": "single",
+      "stem": "睪丸中相當於卵巢 granulosa cell（保母細胞）的是哪個？",
+      "choices": [
+        "Sertoli cell",
+        "Leydig cell",
+        "精原細胞",
+        "間質細胞"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜基礎題\n\n**白話理解**\n保母細胞 nurse cell：男性是 Sertoli、女性是 granulosa（兩者對應、都分泌 inhibin）。\n\n**考點與解題步驟**\n- 難度：基礎\n\n**選項 A：正確答案**\n保母細胞 nurse cell：男性是 Sertoli、女性是 granulosa（兩者對應、都分泌 inhibin）。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 2；舊 ID phys-17-02",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "基礎"
+      ],
+      "source_id": "phys-17-02",
+      "source_number": "2",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜基礎題",
+        "simple": "保母細胞 nurse cell：男性是 Sertoli、女性是 granulosa（兩者對應、都分泌 inhibin）。",
+        "memory": "",
+        "examFocus": [
+          "難度：基礎"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "保母細胞 nurse cell：男性是 Sertoli、女性是 granulosa（兩者對應、都分泌 inhibin）。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 1
+    },
+    {
+      "n": "phys-17-03",
+      "type": "single",
+      "stem": "把未分化性腺推向睪丸發育的關鍵是？",
+      "choices": [
+        "Y 染色體上的 SRY 基因（TDF）",
+        "X 染色體數目",
+        "雌激素濃度",
+        "FSH"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜基礎題\n\n**白話理解**\nSRY（sex-determining region Y）＝睪丸決定因子 TDF，是性腺變睪丸的開關。\n\n**考點與解題步驟**\n- 難度：基礎\n\n**選項 A：正確答案**\nSRY（sex-determining region Y）＝睪丸決定因子 TDF，是性腺變睪丸的開關。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 3；舊 ID phys-17-03",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "基礎"
+      ],
+      "source_id": "phys-17-03",
+      "source_number": "3",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜基礎題",
+        "simple": "SRY（sex-determining region Y）＝睪丸決定因子 TDF，是性腺變睪丸的開關。",
+        "memory": "",
+        "examFocus": [
+          "難度：基礎"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "SRY（sex-determining region Y）＝睪丸決定因子 TDF，是性腺變睪丸的開關。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 1
+    },
+    {
+      "n": "phys-17-04",
+      "type": "single",
+      "stem": "一個精原細胞經完整精子生成最後產生幾個精子？",
+      "choices": [
+        "4 個",
+        "1 個",
+        "2 個",
+        "8 個"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜基礎題\n\n**白話理解**\n精子生成 1 個精原細胞 → 4 個精子（與卵子生成 1→1 不同）。\n\n**考點與解題步驟**\n- 難度：基礎\n\n**選項 A：正確答案**\n精子生成 1 個精原細胞 → 4 個精子（與卵子生成 1→1 不同）。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 4；舊 ID phys-17-04",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "基礎"
+      ],
+      "source_id": "phys-17-04",
+      "source_number": "4",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜基礎題",
+        "simple": "精子生成 1 個精原細胞 → 4 個精子（與卵子生成 1→1 不同）。",
+        "memory": "",
+        "examFocus": [
+          "難度：基礎"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "精子生成 1 個精原細胞 → 4 個精子（與卵子生成 1→1 不同）。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 1
+    },
+    {
+      "n": "phys-17-05",
+      "type": "single",
+      "stem": "卵子生成中，第二次減數分裂停滯在哪一期、何時才完成？",
+      "choices": [
+        "metaphase II；受精時",
+        "prophase I；排卵時",
+        "anaphase I；青春期",
+        "telophase II；月經時"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜基礎題\n\n**白話理解**\n次級卵母細胞停在 metaphase II，受精才完成第二次減數分裂、變成卵子。\n\n**考點與解題步驟**\n- 難度：基礎\n\n**選項 A：正確答案**\n次級卵母細胞停在 metaphase II，受精才完成第二次減數分裂、變成卵子。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 5；舊 ID phys-17-05",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "基礎"
+      ],
+      "source_id": "phys-17-05",
+      "source_number": "5",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜基礎題",
+        "simple": "次級卵母細胞停在 metaphase II，受精才完成第二次減數分裂、變成卵子。",
+        "memory": "",
+        "examFocus": [
+          "難度：基礎"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "次級卵母細胞停在 metaphase II，受精才完成第二次減數分裂、變成卵子。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 1
+    },
+    {
+      "n": "phys-17-06",
+      "type": "single",
+      "stem": "關於精子與卵子生成的對照，何者正確？",
+      "choices": [
+        "精子 1→4 連續、卵子 1→1 且有兩次減數分裂停滯",
+        "兩者都是 1→4",
+        "卵子連續、精子停滯",
+        "兩者都無停滯"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜基礎題\n\n**白話理解**\n精子 1→4、連續無停滯；卵子 1→1＋極體、有 prophase I 與 metaphase II 兩次停滯。\n\n**考點與解題步驟**\n- 難度：基礎\n\n**選項 A：正確答案**\n精子 1→4、連續無停滯；卵子 1→1＋極體、有 prophase I 與 metaphase II 兩次停滯。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 6；舊 ID phys-17-06",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "基礎"
+      ],
+      "source_id": "phys-17-06",
+      "source_number": "6",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜基礎題",
+        "simple": "精子 1→4、連續無停滯；卵子 1→1＋極體、有 prophase I 與 metaphase II 兩次停滯。",
+        "memory": "",
+        "examFocus": [
+          "難度：基礎"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "精子 1→4、連續無停滯；卵子 1→1＋極體、有 prophase I 與 metaphase II 兩次停滯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 1
+    },
+    {
+      "n": "phys-17-07",
+      "type": "single",
+      "stem": "所有性類固醇荷爾蒙的共同原料是？",
+      "choices": [
+        "膽固醇 cholesterol",
+        "酪胺酸",
+        "膽鹼",
+        "花生四烯酸"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜基礎題\n\n**白話理解**\n睪固酮、雌激素、黃體素等性類固醇全部由膽固醇衍生。\n\n**考點與解題步驟**\n- 難度：基礎\n\n**選項 A：正確答案**\n睪固酮、雌激素、黃體素等性類固醇全部由膽固醇衍生。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 7；舊 ID phys-17-07",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "基礎"
+      ],
+      "source_id": "phys-17-07",
+      "source_number": "7",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜基礎題",
+        "simple": "睪固酮、雌激素、黃體素等性類固醇全部由膽固醇衍生。",
+        "memory": "",
+        "examFocus": [
+          "難度：基礎"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "睪固酮、雌激素、黃體素等性類固醇全部由膽固醇衍生。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 1
+    },
+    {
+      "n": "phys-17-08",
+      "type": "single",
+      "stem": "把睪固酮轉成作用更強的 DHT 的酵素是？",
+      "choices": [
+        "5α-reductase",
+        "aromatase",
+        "17β-HSD",
+        "3β-HSD"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜基礎題\n\n**白話理解**\n5α-還原酶把睪固酮變成強約 3 倍的 DHT；aromatase 則把雄性素變雌激素。\n\n**考點與解題步驟**\n- 難度：基礎\n\n**選項 A：正確答案**\n5α-還原酶把睪固酮變成強約 3 倍的 DHT；aromatase 則把雄性素變雌激素。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 8；舊 ID phys-17-08",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "基礎"
+      ],
+      "source_id": "phys-17-08",
+      "source_number": "8",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜基礎題",
+        "simple": "5α-還原酶把睪固酮變成強約 3 倍的 DHT；aromatase 則把雄性素變雌激素。",
+        "memory": "",
+        "examFocus": [
+          "難度：基礎"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "5α-還原酶把睪固酮變成強約 3 倍的 DHT；aromatase 則把雄性素變雌激素。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 1
+    },
+    {
+      "n": "phys-17-09",
+      "type": "single",
+      "stem": "雌二醇(E2)與雌酮(E1)互相轉換靠哪個酵素？",
+      "choices": [
+        "17β-HSD",
+        "5α-reductase",
+        "aromatase",
+        "3β-HSD"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜基礎題\n\n**白話理解**\nE2 ⇌ E1 由 17β-HSD 催化；再代謝為 E3 從尿排出。\n\n**考點與解題步驟**\n- 難度：基礎\n\n**選項 A：正確答案**\nE2 ⇌ E1 由 17β-HSD 催化；再代謝為 E3 從尿排出。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 9；舊 ID phys-17-09",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "基礎"
+      ],
+      "source_id": "phys-17-09",
+      "source_number": "9",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜基礎題",
+        "simple": "E2 ⇌ E1 由 17β-HSD 催化；再代謝為 E3 從尿排出。",
+        "memory": "",
+        "examFocus": [
+          "難度：基礎"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "E2 ⇌ E1 由 17β-HSD 催化；再代謝為 E3 從尿排出。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 1
+    },
+    {
+      "n": "phys-17-10",
+      "type": "single",
+      "stem": "生殖軸中 inhibin 的主要作用是？",
+      "choices": [
+        "抑制 FSH 分泌",
+        "刺激 LH 分泌",
+        "刺激 GnRH",
+        "刺激排卵"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜基礎題\n\n**白話理解**\ninhibin 由保母細胞（Sertoli/granulosa）分泌，主要抑制 FSH。\n\n**考點與解題步驟**\n- 難度：基礎\n\n**選項 A：正確答案**\ninhibin 由保母細胞（Sertoli/granulosa）分泌，主要抑制 FSH。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 10；舊 ID phys-17-10",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "基礎"
+      ],
+      "source_id": "phys-17-10",
+      "source_number": "10",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜基礎題",
+        "simple": "inhibin 由保母細胞（Sertoli/granulosa）分泌，主要抑制 FSH。",
+        "memory": "",
+        "examFocus": [
+          "難度：基礎"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "inhibin 由保母細胞（Sertoli/granulosa）分泌，主要抑制 FSH。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 1
+    },
+    {
+      "n": "phys-17-11",
+      "type": "single",
+      "stem": "卵巢 two-cell theory 中，雄性素在哪裡製造、由哪個激素驅動？",
+      "choices": [
+        "theca cell；LH",
+        "granulosa cell；FSH",
+        "theca cell；FSH",
+        "granulosa cell；LH"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜進階題\n\n**白話理解**\nLH→theca 做雄性素；雄性素再到 granulosa 由 FSH 誘導的 aromatase 變雌激素。\n\n**考點與解題步驟**\n- 難度：進階\n\n**選項 A：正確答案**\nLH→theca 做雄性素；雄性素再到 granulosa 由 FSH 誘導的 aromatase 變雌激素。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 11；舊 ID phys-17-11",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-17-11",
+      "source_number": "11",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜進階題",
+        "simple": "LH→theca 做雄性素；雄性素再到 granulosa 由 FSH 誘導的 aromatase 變雌激素。",
+        "memory": "",
+        "examFocus": [
+          "難度：進階"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "LH→theca 做雄性素；雄性素再到 granulosa 由 FSH 誘導的 aromatase 變雌激素。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-17-12",
+      "type": "single",
+      "stem": "雌激素引發 LH surge（排卵）的條件是？",
+      "choices": [
+        "雌激素持續高濃度（約 >48 小時）",
+        "雌激素一升高立刻",
+        "雌激素下降時",
+        "黃體素升高時"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜進階題\n\n**白話理解**\n雌激素要持續維持高濃度（~>48hr）才從負回饋翻成正回饋，引發 LH surge 與排卵。\n\n**考點與解題步驟**\n- 難度：進階\n\n**選項 A：正確答案**\n雌激素要持續維持高濃度（~>48hr）才從負回饋翻成正回饋，引發 LH surge 與排卵。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 12；舊 ID phys-17-12",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-17-12",
+      "source_number": "12",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜進階題",
+        "simple": "雌激素要持續維持高濃度（~>48hr）才從負回饋翻成正回饋，引發 LH surge 與排卵。",
+        "memory": "",
+        "examFocus": [
+          "難度：進階"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "雌激素要持續維持高濃度（~>48hr）才從負回饋翻成正回饋，引發 LH surge 與排卵。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-17-13",
+      "type": "single",
+      "stem": "SRY gene 最直接促進哪一項早期性別分化？",
+      "choices": [
+        "未分化性腺朝睪丸方向發育",
+        "卵巢形成黃體",
+        "子宮內膜增生",
+        "第二次減數分裂完成"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜進階題\n\n**白話理解**\nY 染色體上的 SRY 會啟動 testis-determining pathway，使未分化性腺朝睪丸分化；之後才由睪丸荷爾蒙推動表型性別發育。\n\n**考點與解題步驟**\n- 難度：進階\n\n**選項 A：正確答案**\nY 染色體上的 SRY 會啟動 testis-determining pathway，使未分化性腺朝睪丸分化；之後才由睪丸荷爾蒙推動表型性別發育。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 13；舊 ID phys-17-13",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-17-13",
+      "source_number": "13",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜進階題",
+        "simple": "Y 染色體上的 SRY 會啟動 testis-determining pathway，使未分化性腺朝睪丸分化；之後才由睪丸荷爾蒙推動表型性別發育。",
+        "memory": "",
+        "examFocus": [
+          "難度：進階"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "Y 染色體上的 SRY 會啟動 testis-determining pathway，使未分化性腺朝睪丸分化；之後才由睪丸荷爾蒙推動表型性別發育。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-17-14",
+      "type": "single",
+      "stem": "精子生成由一個 primary spermatocyte 完成減數分裂後，典型結果為？",
+      "choices": [
+        "四個 haploid spermatids",
+        "一個卵與三個極體",
+        "兩個 diploid spermatogonia",
+        "一個 Leydig cell"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜進階題\n\n**白話理解**\n精母細胞經減數分裂 I、II 形成四個 haploid spermatids，之後再經 spermiogenesis 形成精子；與卵子生成的不對稱分裂不同。\n\n**考點與解題步驟**\n- 難度：進階\n\n**選項 A：正確答案**\n精母細胞經減數分裂 I、II 形成四個 haploid spermatids，之後再經 spermiogenesis 形成精子；與卵子生成的不對稱分裂不同。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 14；舊 ID phys-17-14",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-17-14",
+      "source_number": "14",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜進階題",
+        "simple": "精母細胞經減數分裂 I、II 形成四個 haploid spermatids，之後再經 spermiogenesis 形成精子；與卵子生成的不對稱分裂不同。",
+        "memory": "",
+        "examFocus": [
+          "難度：進階"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "精母細胞經減數分裂 I、II 形成四個 haploid spermatids，之後再經 spermiogenesis 形成精子；與卵子生成的不對稱分裂不同。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-17-15",
+      "type": "single",
+      "stem": "卵子在排卵時通常停滯在哪一期？",
+      "choices": [
+        "metaphase II",
+        "prophase I",
+        "metaphase I",
+        "telophase II"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜進階題\n\n**白話理解**\n初級卵母細胞自胎兒期停在 prophase I，排卵前完成第一次減數分裂；排出的次級卵母細胞停在 metaphase II，通常受精後才完成。\n\n**考點與解題步驟**\n- 難度：進階\n\n**選項 A：正確答案**\n初級卵母細胞自胎兒期停在 prophase I，排卵前完成第一次減數分裂；排出的次級卵母細胞停在 metaphase II，通常受精後才完成。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 15；舊 ID phys-17-15",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-17-15",
+      "source_number": "15",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜進階題",
+        "simple": "初級卵母細胞自胎兒期停在 prophase I，排卵前完成第一次減數分裂；排出的次級卵母細胞停在 metaphase II，通常受精後才完成。",
+        "memory": "",
+        "examFocus": [
+          "難度：進階"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "初級卵母細胞自胎兒期停在 prophase I，排卵前完成第一次減數分裂；排出的次級卵母細胞停在 metaphase II，通常受精後才完成。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-17-16",
+      "type": "single",
+      "stem": "aromatase 的主要功能是？",
+      "choices": [
+        "將 androgen 轉成 estrogen",
+        "將 testosterone 轉成 DHT",
+        "將 cholesterol 轉成 glucose",
+        "分解 LH"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜進階題\n\n**白話理解**\naromatase 可把 androgen 芳香化成 estrogen，是卵巢 granulosa cell 等組織製造雌激素的重要酵素。\n\n**考點與解題步驟**\n- 難度：進階\n\n**選項 A：正確答案**\naromatase 可把 androgen 芳香化成 estrogen，是卵巢 granulosa cell 等組織製造雌激素的重要酵素。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 16；舊 ID phys-17-16",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-17-16",
+      "source_number": "16",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜進階題",
+        "simple": "aromatase 可把 androgen 芳香化成 estrogen，是卵巢 granulosa cell 等組織製造雌激素的重要酵素。",
+        "memory": "",
+        "examFocus": [
+          "難度：進階"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "aromatase 可把 androgen 芳香化成 estrogen，是卵巢 granulosa cell 等組織製造雌激素的重要酵素。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-17-17",
+      "type": "single",
+      "stem": "5α-reductase 可將 testosterone 轉成？",
+      "choices": [
+        "DHT",
+        "estradiol",
+        "progesterone",
+        "cortisol"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜進階題\n\n**白話理解**\n5α-reductase 將 testosterone 轉為作用更強的 dihydrotestosterone（DHT），對外生殖器與部分男性第二性徵很重要。\n\n**考點與解題步驟**\n- 難度：進階\n\n**選項 A：正確答案**\n5α-reductase 將 testosterone 轉為作用更強的 dihydrotestosterone（DHT），對外生殖器與部分男性第二性徵很重要。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 17；舊 ID phys-17-17",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-17-17",
+      "source_number": "17",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜進階題",
+        "simple": "5α-reductase 將 testosterone 轉為作用更強的 dihydrotestosterone（DHT），對外生殖器與部分男性第二性徵很重要。",
+        "memory": "",
+        "examFocus": [
+          "難度：進階"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "5α-reductase 將 testosterone 轉為作用更強的 dihydrotestosterone（DHT），對外生殖器與部分男性第二性徵很重要。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-17-18",
+      "type": "single",
+      "stem": "two-cell theory 中，theca cell 與 granulosa cell 的合作為何？",
+      "choices": [
+        "theca 產生 androgen，granulosa 以 aromatase 轉成 estrogen",
+        "granulosa 產生 renin，theca 產生 ADH",
+        "兩者都只製造配子",
+        "theca 只製造 inhibin"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜進階題\n\n**白話理解**\nLH 主要刺激 theca cell 產生 androgen；androgen 擴散至 granulosa cell，在 FSH 促進的 aromatase 作用下轉為 estrogen。\n\n**考點與解題步驟**\n- 難度：進階\n\n**選項 A：正確答案**\nLH 主要刺激 theca cell 產生 androgen；androgen 擴散至 granulosa cell，在 FSH 促進的 aromatase 作用下轉為 estrogen。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 18；舊 ID phys-17-18",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-17-18",
+      "source_number": "18",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜進階題",
+        "simple": "LH 主要刺激 theca cell 產生 androgen；androgen 擴散至 granulosa cell，在 FSH 促進的 aromatase 作用下轉為 estrogen。",
+        "memory": "",
+        "examFocus": [
+          "難度：進階"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "LH 主要刺激 theca cell 產生 androgen；androgen 擴散至 granulosa cell，在 FSH 促進的 aromatase 作用下轉為 estrogen。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-17-19",
+      "type": "single",
+      "stem": "inhibin 對腦下垂體前葉的主要作用是？",
+      "choices": [
+        "抑制 FSH 分泌",
+        "促進大量 LH surge",
+        "促進 ACTH",
+        "抑制 ADH"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜進階題\n\n**白話理解**\ninhibin 由 Sertoli 或 granulosa cell 分泌，主要對 anterior pituitary 抑制 FSH，形成生殖軸的選擇性負回饋。\n\n**考點與解題步驟**\n- 難度：進階\n\n**選項 A：正確答案**\ninhibin 由 Sertoli 或 granulosa cell 分泌，主要對 anterior pituitary 抑制 FSH，形成生殖軸的選擇性負回饋。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 19；舊 ID phys-17-19",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-17-19",
+      "source_number": "19",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜進階題",
+        "simple": "inhibin 由 Sertoli 或 granulosa cell 分泌，主要對 anterior pituitary 抑制 FSH，形成生殖軸的選擇性負回饋。",
+        "memory": "",
+        "examFocus": [
+          "難度：進階"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "inhibin 由 Sertoli 或 granulosa cell 分泌，主要對 anterior pituitary 抑制 FSH，形成生殖軸的選擇性負回饋。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-17-20",
+      "type": "single",
+      "stem": "正常月經週期中，持續高濃度 estradiol 超過約 48 小時可引發？",
+      "choices": [
+        "正回饋與 LH surge",
+        "FSH、LH 永久停止",
+        "立即月經",
+        "prolactin 完全消失"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜進階題\n\n**白話理解**\n多數時候 estrogen 是負回饋；排卵前持續高 estradiol 是重要例外，會轉成正回饋，造成 LH surge 並觸發排卵。\n\n**考點與解題步驟**\n- 難度：進階\n\n**選項 A：正確答案**\n多數時候 estrogen 是負回饋；排卵前持續高 estradiol 是重要例外，會轉成正回饋，造成 LH surge 並觸發排卵。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 20；舊 ID phys-17-20",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-17-20",
+      "source_number": "20",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜進階題",
+        "simple": "多數時候 estrogen 是負回饋；排卵前持續高 estradiol 是重要例外，會轉成正回饋，造成 LH surge 並觸發排卵。",
+        "memory": "",
+        "examFocus": [
+          "難度：進階"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "多數時候 estrogen 是負回饋；排卵前持續高 estradiol 是重要例外，會轉成正回饋，造成 LH surge 並觸發排卵。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-17-21",
+      "type": "single",
+      "stem": "睪丸中製造性類固醇的細胞是？",
+      "choices": [
+        "Leydig cell",
+        "Sertoli cell",
+        "精原細胞",
+        "支持細胞"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜挑戰題\n\n**白話理解**\nLeydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。\n\n**考點與解題步驟**\n- 難度：挑戰\n\n**選項 A：正確答案**\nLeydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 21；舊 ID phys-17-21",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-17-21",
+      "source_number": "21",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜挑戰題",
+        "simple": "Leydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。",
+        "memory": "",
+        "examFocus": [
+          "難度：挑戰"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "Leydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-17-22",
+      "type": "single",
+      "stem": "卵子生成第一次減數分裂停滯在哪一期？",
+      "choices": [
+        "prophase I（到排卵前才完成）",
+        "metaphase II",
+        "anaphase I",
+        "telophase II"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜挑戰題\n\n**白話理解**\n初級卵母細胞停在 prophase I，一路到排卵前才完成第一次減數分裂。\n\n**考點與解題步驟**\n- 難度：挑戰\n\n**選項 A：正確答案**\n初級卵母細胞停在 prophase I，一路到排卵前才完成第一次減數分裂。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 22；舊 ID phys-17-22",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-17-22",
+      "source_number": "22",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜挑戰題",
+        "simple": "初級卵母細胞停在 prophase I，一路到排卵前才完成第一次減數分裂。",
+        "memory": "",
+        "examFocus": [
+          "難度：挑戰"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "初級卵母細胞停在 prophase I，一路到排卵前才完成第一次減數分裂。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-17-23",
+      "type": "single",
+      "stem": "一個精原細胞與一個卵原細胞最終各產生幾個配子？",
+      "choices": [
+        "精子 4 個、卵 1 個",
+        "各 4 個",
+        "各 1 個",
+        "精子 1 個、卵 4 個"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜挑戰題\n\n**白話理解**\n精子 1→4；卵子 1→1（＋極體）。\n\n**考點與解題步驟**\n- 難度：挑戰\n\n**選項 A：正確答案**\n精子 1→4；卵子 1→1（＋極體）。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 23；舊 ID phys-17-23",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-17-23",
+      "source_number": "23",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜挑戰題",
+        "simple": "精子 1→4；卵子 1→1（＋極體）。",
+        "memory": "",
+        "examFocus": [
+          "難度：挑戰"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "精子 1→4；卵子 1→1（＋極體）。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-17-24",
+      "type": "single",
+      "stem": "把睪固酮變成作用更強 DHT 的酵素是？",
+      "choices": [
+        "5α-reductase",
+        "aromatase",
+        "17β-HSD",
+        "3β-HSD"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜挑戰題\n\n**白話理解**\n5α-還原酶：testosterone→DHT（強約 3 倍）。\n\n**考點與解題步驟**\n- 難度：挑戰\n\n**選項 A：正確答案**\n5α-還原酶：testosterone→DHT（強約 3 倍）。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 24；舊 ID phys-17-24",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-17-24",
+      "source_number": "24",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜挑戰題",
+        "simple": "5α-還原酶：testosterone→DHT（強約 3 倍）。",
+        "memory": "",
+        "examFocus": [
+          "難度：挑戰"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "5α-還原酶：testosterone→DHT（強約 3 倍）。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-17-25",
+      "type": "single",
+      "stem": "卵巢 two-cell theory 中 aromatase 位於哪、由哪個激素誘導？",
+      "choices": [
+        "granulosa cell；FSH",
+        "theca cell；LH",
+        "granulosa cell；LH",
+        "theca cell；FSH"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜挑戰題\n\n**白話理解**\naromatase 在 granulosa cell、由 FSH 誘導，把 theca 來的雄性素變雌激素。\n\n**考點與解題步驟**\n- 難度：挑戰\n\n**選項 A：正確答案**\naromatase 在 granulosa cell、由 FSH 誘導，把 theca 來的雄性素變雌激素。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 25；舊 ID phys-17-25",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-17-25",
+      "source_number": "25",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜挑戰題",
+        "simple": "aromatase 在 granulosa cell、由 FSH 誘導，把 theca 來的雄性素變雌激素。",
+        "memory": "",
+        "examFocus": [
+          "難度：挑戰"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "aromatase 在 granulosa cell、由 FSH 誘導，把 theca 來的雄性素變雌激素。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-17-26",
+      "type": "single",
+      "stem": "雌激素引發排卵的回饋性質與條件是？",
+      "choices": [
+        "正回饋；持續高濃度 >48hr",
+        "負回饋；濃度下降",
+        "正回饋；一升高立刻",
+        "負回饋；持續高濃度"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜挑戰題\n\n**白話理解**\n雌激素持續高 >48hr 由負回饋翻成正回饋 → LH surge → 排卵。\n\n**考點與解題步驟**\n- 難度：挑戰\n\n**選項 A：正確答案**\n雌激素持續高 >48hr 由負回饋翻成正回饋 → LH surge → 排卵。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 26；舊 ID phys-17-26",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-17-26",
+      "source_number": "26",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜挑戰題",
+        "simple": "雌激素持續高 >48hr 由負回饋翻成正回饋 → LH surge → 排卵。",
+        "memory": "",
+        "examFocus": [
+          "難度：挑戰"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "雌激素持續高 >48hr 由負回饋翻成正回饋 → LH surge → 排卵。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-17-27",
+      "type": "single",
+      "stem": "性別決定中把性腺推成睪丸的是？",
+      "choices": [
+        "Y 染色體上的 SRY（TDF）",
+        "X 染色體數目",
+        "雌激素",
+        "FSH"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜挑戰題\n\n**白話理解**\nSRY＝睪丸決定因子 TDF。\n\n**考點與解題步驟**\n- 難度：挑戰\n\n**選項 A：正確答案**\nSRY＝睪丸決定因子 TDF。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 27；舊 ID phys-17-27",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-17-27",
+      "source_number": "27",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜挑戰題",
+        "simple": "SRY＝睪丸決定因子 TDF。",
+        "memory": "",
+        "examFocus": [
+          "難度：挑戰"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "SRY＝睪丸決定因子 TDF。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-17-28",
+      "type": "single",
+      "stem": "下列何者由保母細胞（Sertoli/granulosa）分泌、抑制 FSH？",
+      "choices": [
+        "inhibin",
+        "activin",
+        "GnRH",
+        "LH"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜挑戰題\n\n**白話理解**\ninhibin 抑制 FSH（activin 則促進）。\n\n**考點與解題步驟**\n- 難度：挑戰\n\n**選項 A：正確答案**\ninhibin 抑制 FSH（activin 則促進）。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 28；舊 ID phys-17-28",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-17-28",
+      "source_number": "28",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜挑戰題",
+        "simple": "inhibin 抑制 FSH（activin 則促進）。",
+        "memory": "",
+        "examFocus": [
+          "難度：挑戰"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "inhibin 抑制 FSH（activin 則促進）。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-17-29",
+      "type": "single",
+      "stem": "若男性 5α-reductase 缺乏，哪種轉換最直接受阻？",
+      "choices": [
+        "testosterone → DHT",
+        "androgen → estrogen",
+        "cholesterol → pregnenolone",
+        "FSH → inhibin"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜挑戰題\n\n**白話理解**\n5α-reductase 專門將 testosterone 轉為 DHT。缺乏時 DHT 依賴的外生殖器男性化與部分第二性徵可能受影響，但 testosterone 本身仍可存在。\n\n**考點與解題步驟**\n- 難度：挑戰\n\n**選項 A：正確答案**\n5α-reductase 專門將 testosterone 轉為 DHT。缺乏時 DHT 依賴的外生殖器男性化與部分第二性徵可能受影響，但 testosterone 本身仍可存在。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 29；舊 ID phys-17-29",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-17-29",
+      "source_number": "29",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜挑戰題",
+        "simple": "5α-reductase 專門將 testosterone 轉為 DHT。缺乏時 DHT 依賴的外生殖器男性化與部分第二性徵可能受影響，但 testosterone 本身仍可存在。",
+        "memory": "",
+        "examFocus": [
+          "難度：挑戰"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "5α-reductase 專門將 testosterone 轉為 DHT。缺乏時 DHT 依賴的外生殖器男性化與部分第二性徵可能受影響，但 testosterone 本身仍可存在。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-17-30",
+      "type": "single",
+      "stem": "若排卵前 estradiol 無法形成正回饋，最直接受影響的事件是？",
+      "choices": [
+        "LH surge 與排卵",
+        "胎兒期 SRY 表現",
+        "精子尾部形成",
+        "腎臟 EPO 分泌"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n生殖系統｜挑戰題\n\n**白話理解**\n排卵前高 estradiol 的正回饋是 LH surge 的關鍵。缺少此正回饋時，LH 峰值不足，成熟濾泡較難完成排卵。\n\n**考點與解題步驟**\n- 難度：挑戰\n\n**選項 A：正確答案**\n排卵前高 estradiol 的正回饋是 LH surge 的關鍵。缺少此正回饋時，LH 峰值不足，成熟濾泡較難完成排卵。\n\n**選項 B：B 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 C：C 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**選項 D：D 選項**\n此選項不符合本題的核心生理機制，請依詳解重新比較。\n\n**原始出處**\n生理學期末｜Unit 17 生殖系統；原題編號 30；舊 ID phys-17-30",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-17-30",
+      "source_number": "30",
+      "source_year": "期末題庫",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "生殖系統｜挑戰題",
+        "simple": "排卵前高 estradiol 的正回饋是 LH surge 的關鍵。缺少此正回饋時，LH 峰值不足，成熟濾泡較難完成排卵。",
+        "memory": "",
+        "examFocus": [
+          "難度：挑戰"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "排卵前高 estradiol 的正回饋是 LH surge 的關鍵。缺少此正回饋時，LH 峰值不足，成熟濾泡較難完成排卵。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "此選項不符合本題的核心生理機制，請依詳解重新比較。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-redesign-17-01",
+      "type": "single",
+      "stem": "正常體細胞中 Barr body 數量通常如何估算？",
+      "choices": [
+        "永遠為1",
+        "X染色體數減1",
+        "Y染色體數加1",
+        "常染色體數除2"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nBarr body｜原創進階題\n\n**白話理解**\n每個細胞通常只保留一條活性 X，其餘 X 被大幅失活形成 Barr bodies；例如 XX=1、XXY=1、XXX=2。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：Barr body 判斷\n\n**選項 A：A 選項｜為何不選**\n「永遠為1」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：正確答案**\n每個細胞通常只保留一條活性 X，其餘 X 被大幅失活形成 Barr bodies；例如 XX=1、XXY=1、XXX=2。\n\n**選項 C：C 選項｜為何不選**\n「Y染色體數加1」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「常染色體數除2」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R31；舊 ID phys-redesign-17-01",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-01",
+      "source_number": "R31",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "Barr body｜原創進階題",
+        "simple": "每個細胞通常只保留一條活性 X，其餘 X 被大幅失活形成 Barr bodies；例如 XX=1、XXY=1、XXX=2。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：Barr body 判斷"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「永遠為1」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "正確答案",
+          "rule": "每個細胞通常只保留一條活性 X，其餘 X 被大幅失活形成 Barr bodies；例如 XX=1、XXY=1、XXX=2。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「Y染色體數加1」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「常染色體數除2」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-02",
+      "type": "single",
+      "stem": "核型 XXX 的體細胞通常有幾個 Barr bodies？",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nBarr body｜原創進階題\n\n**白話理解**\nBarr body 數=X chromosome 數−1，因此 XXX 通常有2個。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：Barr body 判斷\n\n**選項 A：A 選項｜為何不選**\n「0」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「1」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：正確答案**\nBarr body 數=X chromosome 數−1，因此 XXX 通常有2個。\n\n**選項 D：D 選項｜為何不選**\n「3」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R32；舊 ID phys-redesign-17-02",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-02",
+      "source_number": "R32",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "Barr body｜原創進階題",
+        "simple": "Barr body 數=X chromosome 數−1，因此 XXX 通常有2個。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：Barr body 判斷"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「0」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「1」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "正確答案",
+          "rule": "Barr body 數=X chromosome 數−1，因此 XXX 通常有2個。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「3」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-03",
+      "type": "single",
+      "stem": "初級卵母細胞與次級卵母細胞分別停在哪個時期？",
+      "choices": [
+        "metaphase I；prophase II",
+        "prophase II；anaphase II",
+        "兩者都停在telophase",
+        "prophase I；metaphase II"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n減數分裂停滯｜原創進階題\n\n**白話理解**\n初級卵母細胞自胎兒期停在 prophase I；排卵的是停在 metaphase II 的次級卵母細胞，受精後才完成 meiosis II。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：卵子兩次 arrest\n\n**選項 A：A 選項｜為何不選**\n「metaphase I；prophase II」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「prophase II；anaphase II」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「兩者都停在telophase」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：正確答案**\n初級卵母細胞自胎兒期停在 prophase I；排卵的是停在 metaphase II 的次級卵母細胞，受精後才完成 meiosis II。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R33；舊 ID phys-redesign-17-03",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-03",
+      "source_number": "R33",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "減數分裂停滯｜原創進階題",
+        "simple": "初級卵母細胞自胎兒期停在 prophase I；排卵的是停在 metaphase II 的次級卵母細胞，受精後才完成 meiosis II。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：卵子兩次 arrest"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「metaphase I；prophase II」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「prophase II；anaphase II」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「兩者都停在telophase」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "正確答案",
+          "rule": "初級卵母細胞自胎兒期停在 prophase I；排卵的是停在 metaphase II 的次級卵母細胞，受精後才完成 meiosis II。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-04",
+      "type": "single",
+      "stem": "女性 oogonia 的 mitosis 通常在何時停止？",
+      "choices": [
+        "受精後",
+        "更年期後才停止",
+        "出生前",
+        "青春期後每月持續"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n男女配子差異｜原創進階題\n\n**白話理解**\n必考重點明確指出女性 oogonia 的有絲分裂在出生前已停止。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：卵子兩次 arrest\n\n**選項 A：A 選項｜為何不選**\n「受精後」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「更年期後才停止」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：正確答案**\n必考重點明確指出女性 oogonia 的有絲分裂在出生前已停止。\n\n**選項 D：D 選項｜為何不選**\n「青春期後每月持續」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R34；舊 ID phys-redesign-17-04",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-04",
+      "source_number": "R34",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "男女配子差異｜原創進階題",
+        "simple": "必考重點明確指出女性 oogonia 的有絲分裂在出生前已停止。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：卵子兩次 arrest"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「受精後」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「更年期後才停止」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "正確答案",
+          "rule": "必考重點明確指出女性 oogonia 的有絲分裂在出生前已停止。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「青春期後每月持續」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-05",
+      "type": "single",
+      "stem": "具有 SRY 且功能正常的未分化性腺，最先被推向哪個方向？",
+      "choices": [
+        "pituitary gland",
+        "testis differentiation",
+        "ovary differentiation",
+        "adrenal cortex"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n性腺分化｜原創進階題\n\n**白話理解**\nSRY 啟動 SOX9 等睪丸分化程序，形成 Sertoli/Leydig 系統。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：性腺胚胎來源\n\n**選項 A：A 選項｜為何不選**\n「pituitary gland」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：正確答案**\nSRY 啟動 SOX9 等睪丸分化程序，形成 Sertoli/Leydig 系統。\n\n**選項 C：C 選項｜為何不選**\n「ovary differentiation」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「adrenal cortex」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R35；舊 ID phys-redesign-17-05",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-05",
+      "source_number": "R35",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "性腺分化｜原創進階題",
+        "simple": "SRY 啟動 SOX9 等睪丸分化程序，形成 Sertoli/Leydig 系統。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：性腺胚胎來源"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「pituitary gland」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "正確答案",
+          "rule": "SRY 啟動 SOX9 等睪丸分化程序，形成 Sertoli/Leydig 系統。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「ovary differentiation」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「adrenal cortex」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-06",
+      "type": "single",
+      "stem": "胎兒 Sertoli cell 分泌 AMH 的主要結果是？",
+      "choices": [
+        "Müllerian ducts退化",
+        "Wolffian ducts退化",
+        "外生殖器男性化",
+        "睪固酮轉為DHT"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\nSertoli 胚胎作用｜原創進階題\n\n**白話理解**\nAMH 使 Müllerian structures 退化；Wolffian 維持需要 testosterone，外生殖器男性化主要依 DHT。\n\n**考點與解題步驟**\n- 出題範圍：互動式教學\n- 對應知識卡：導管命運與 MIS：內生殖器 T、外生殖器 DHT\n\n**選項 A：正確答案**\nAMH 使 Müllerian structures 退化；Wolffian 維持需要 testosterone，外生殖器男性化主要依 DHT。\n\n**選項 B：B 選項｜為何不選**\n「Wolffian ducts退化」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「外生殖器男性化」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「睪固酮轉為DHT」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R36；舊 ID phys-redesign-17-06",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-06",
+      "source_number": "R36",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "Sertoli 胚胎作用｜原創進階題",
+        "simple": "AMH 使 Müllerian structures 退化；Wolffian 維持需要 testosterone，外生殖器男性化主要依 DHT。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：互動式教學",
+          "對應知識卡：導管命運與 MIS：內生殖器 T、外生殖器 DHT"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "AMH 使 Müllerian structures 退化；Wolffian 維持需要 testosterone，外生殖器男性化主要依 DHT。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「Wolffian ducts退化」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「外生殖器男性化」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「睪固酮轉為DHT」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-07",
+      "type": "single",
+      "stem": "胎兒 Leydig cell 分泌 testosterone 最直接維持哪一構造？",
+      "choices": [
+        "Müllerian ducts",
+        "神經管",
+        "甲狀腺濾泡",
+        "Wolffian ducts"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\nLeydig 胚胎作用｜原創進階題\n\n**白話理解**\ntestosterone 支持 Wolffian ducts 發育為副睪、輸精管與精囊等內生殖道。\n\n**考點與解題步驟**\n- 出題範圍：互動式教學\n- 對應知識卡：導管命運與 MIS：內生殖器 T、外生殖器 DHT\n\n**選項 A：A 選項｜為何不選**\n「Müllerian ducts」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「神經管」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「甲狀腺濾泡」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：正確答案**\ntestosterone 支持 Wolffian ducts 發育為副睪、輸精管與精囊等內生殖道。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R37；舊 ID phys-redesign-17-07",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-07",
+      "source_number": "R37",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "Leydig 胚胎作用｜原創進階題",
+        "simple": "testosterone 支持 Wolffian ducts 發育為副睪、輸精管與精囊等內生殖道。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：互動式教學",
+          "對應知識卡：導管命運與 MIS：內生殖器 T、外生殖器 DHT"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「Müllerian ducts」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「神經管」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「甲狀腺濾泡」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "正確答案",
+          "rule": "testosterone 支持 Wolffian ducts 發育為副睪、輸精管與精囊等內生殖道。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-08",
+      "type": "single",
+      "stem": "46,XY 個體缺乏 5α-reductase，最可能的組合是？",
+      "choices": [
+        "完全無testosterone",
+        "卵巢正常排卵",
+        "Wolffian內生殖道可存在，但外生殖器男性化不足",
+        "Müllerian ducts完整且無睪丸"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n5α-reductase｜原創挑戰題\n\n**白話理解**\ntestosterone 可維持 Wolffian ducts，但外生殖器與前列腺發育高度依賴 DHT。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：17β-HSD vs 5α-reductase\n\n**選項 A：A 選項｜為何不選**\n「完全無testosterone」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「卵巢正常排卵」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：正確答案**\ntestosterone 可維持 Wolffian ducts，但外生殖器與前列腺發育高度依賴 DHT。\n\n**選項 D：D 選項｜為何不選**\n「Müllerian ducts完整且無睪丸」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R38；舊 ID phys-redesign-17-08",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-redesign-17-08",
+      "source_number": "R38",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "5α-reductase｜原創挑戰題",
+        "simple": "testosterone 可維持 Wolffian ducts，但外生殖器與前列腺發育高度依賴 DHT。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：17β-HSD vs 5α-reductase"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「完全無testosterone」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「卵巢正常排卵」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "正確答案",
+          "rule": "testosterone 可維持 Wolffian ducts，但外生殖器與前列腺發育高度依賴 DHT。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「Müllerian ducts完整且無睪丸」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-redesign-17-09",
+      "type": "single",
+      "stem": "睪丸中 17β-HSD 活性嚴重下降，最直接影響哪個轉換？",
+      "choices": [
+        "estradiol→estrone only",
+        "androstenedione→testosterone",
+        "testosterone→DHT",
+        "cholesterol→pregnenolone"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n17β-HSD｜原創挑戰題\n\n**白話理解**\n17β-HSD 參與 17-ketosteroid 與 17β-hydroxysteroid 互轉；男性生殖中常考 androstenedione 生成 testosterone。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：17β-HSD vs 5α-reductase\n\n**選項 A：A 選項｜為何不選**\n「estradiol→estrone only」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：正確答案**\n17β-HSD 參與 17-ketosteroid 與 17β-hydroxysteroid 互轉；男性生殖中常考 androstenedione 生成 testosterone。\n\n**選項 C：C 選項｜為何不選**\n「testosterone→DHT」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「cholesterol→pregnenolone」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R39；舊 ID phys-redesign-17-09",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-redesign-17-09",
+      "source_number": "R39",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "17β-HSD｜原創挑戰題",
+        "simple": "17β-HSD 參與 17-ketosteroid 與 17β-hydroxysteroid 互轉；男性生殖中常考 androstenedione 生成 testosterone。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：17β-HSD vs 5α-reductase"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「estradiol→estrone only」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "正確答案",
+          "rule": "17β-HSD 參與 17-ketosteroid 與 17β-hydroxysteroid 互轉；男性生殖中常考 androstenedione 生成 testosterone。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「testosterone→DHT」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「cholesterol→pregnenolone」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-redesign-17-10",
+      "type": "single",
+      "stem": "LH 與 FSH 在睪丸的主要靶細胞配對為？",
+      "choices": [
+        "LH→Leydig；FSH→Sertoli",
+        "LH→Sertoli；FSH→Leydig",
+        "兩者都只作用精子",
+        "兩者都只作用前列腺"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n男性 HPG 軸｜原創進階題\n\n**白話理解**\nLH 促 Leydig 產 testosterone；FSH 與 testosterone 一起支持 Sertoli 與 spermatogenesis。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：男性 HPG axis\n\n**選項 A：正確答案**\nLH 促 Leydig 產 testosterone；FSH 與 testosterone 一起支持 Sertoli 與 spermatogenesis。\n\n**選項 B：B 選項｜為何不選**\n「LH→Sertoli；FSH→Leydig」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「兩者都只作用精子」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「兩者都只作用前列腺」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R40；舊 ID phys-redesign-17-10",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-10",
+      "source_number": "R40",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "男性 HPG 軸｜原創進階題",
+        "simple": "LH 促 Leydig 產 testosterone；FSH 與 testosterone 一起支持 Sertoli 與 spermatogenesis。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：男性 HPG axis"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "LH 促 Leydig 產 testosterone；FSH 與 testosterone 一起支持 Sertoli 與 spermatogenesis。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「LH→Sertoli；FSH→Leydig」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「兩者都只作用精子」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「兩者都只作用前列腺」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-11",
+      "type": "single",
+      "stem": "下列何者不是 Sertoli cell 的典型功能？",
+      "choices": [
+        "形成blood-testis barrier",
+        "分泌inhibin B",
+        "支持生殖細胞成熟",
+        "分泌大量循環testosterone作為主要來源"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\nSertoli 功能｜原創進階題\n\n**白話理解**\ntestosterone 主要由 Leydig cell 產生；Sertoli 提供結構、營養、ABP、inhibin 與免疫隔離。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：Sertoli cell 功能\n\n**選項 A：A 選項｜為何不選**\n「形成blood-testis barrier」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「分泌inhibin B」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「支持生殖細胞成熟」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：正確答案**\ntestosterone 主要由 Leydig cell 產生；Sertoli 提供結構、營養、ABP、inhibin 與免疫隔離。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R41；舊 ID phys-redesign-17-11",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-11",
+      "source_number": "R41",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "Sertoli 功能｜原創進階題",
+        "simple": "testosterone 主要由 Leydig cell 產生；Sertoli 提供結構、營養、ABP、inhibin 與免疫隔離。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：Sertoli cell 功能"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「形成blood-testis barrier」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「分泌inhibin B」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「支持生殖細胞成熟」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "正確答案",
+          "rule": "testosterone 主要由 Leydig cell 產生；Sertoli 提供結構、營養、ABP、inhibin 與免疫隔離。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-12",
+      "type": "single",
+      "stem": "blood-testis barrier 的重要性為何？",
+      "choices": [
+        "由Leydig tight junction形成",
+        "讓精子直接進入血液",
+        "隔離減數分裂後出現的新抗原並建立特殊微環境",
+        "阻止所有testosterone進入曲細精管"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nBlood-testis barrier｜原創挑戰題\n\n**白話理解**\nSertoli tight junction 將基底與近腔室分開，避免免疫攻擊並控制生殖細胞發育環境。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：Sertoli cell 功能\n\n**選項 A：A 選項｜為何不選**\n「由Leydig tight junction形成」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「讓精子直接進入血液」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：正確答案**\nSertoli tight junction 將基底與近腔室分開，避免免疫攻擊並控制生殖細胞發育環境。\n\n**選項 D：D 選項｜為何不選**\n「阻止所有testosterone進入曲細精管」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R42；舊 ID phys-redesign-17-12",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "挑戰"
+      ],
+      "source_id": "phys-redesign-17-12",
+      "source_number": "R42",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "Blood-testis barrier｜原創挑戰題",
+        "simple": "Sertoli tight junction 將基底與近腔室分開，避免免疫攻擊並控制生殖細胞發育環境。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：Sertoli cell 功能"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「由Leydig tight junction形成」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「讓精子直接進入血液」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "正確答案",
+          "rule": "Sertoli tight junction 將基底與近腔室分開，避免免疫攻擊並控制生殖細胞發育環境。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「阻止所有testosterone進入曲細精管」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 3
+    },
+    {
+      "n": "phys-redesign-17-13",
+      "type": "single",
+      "stem": "Sertoli cell 的 inhibin B 主要負回饋抑制？",
+      "choices": [
+        "hCG",
+        "FSH",
+        "LH",
+        "GnRH only without FSH"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nInhibin B｜原創進階題\n\n**白話理解**\ninhibin B 對 anterior pituitary 的 FSH 具選擇性抑制；testosterone/estradiol 對 GnRH/LH 也有回饋。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：男性 HPG axis\n\n**選項 A：A 選項｜為何不選**\n「hCG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：正確答案**\ninhibin B 對 anterior pituitary 的 FSH 具選擇性抑制；testosterone/estradiol 對 GnRH/LH 也有回饋。\n\n**選項 C：C 選項｜為何不選**\n「LH」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「GnRH only without FSH」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R43；舊 ID phys-redesign-17-13",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-13",
+      "source_number": "R43",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "Inhibin B｜原創進階題",
+        "simple": "inhibin B 對 anterior pituitary 的 FSH 具選擇性抑制；testosterone/estradiol 對 GnRH/LH 也有回饋。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：男性 HPG axis"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「hCG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "正確答案",
+          "rule": "inhibin B 對 anterior pituitary 的 FSH 具選擇性抑制；testosterone/estradiol 對 GnRH/LH 也有回饋。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「LH」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「GnRH only without FSH」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-14",
+      "type": "single",
+      "stem": "循環 testosterone 的主要狀態是？",
+      "choices": [
+        "多數與SHBG或albumin結合，少部分游離",
+        "全部游離",
+        "全部存在紅血球內",
+        "只與C-peptide結合"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\nTestosterone transport｜原創進階題\n\n**白話理解**\n性類固醇脂溶，血中多由 SHBG 與 albumin 攜帶；游離部分具直接生物可用性。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：Testosterone 的運輸\n\n**選項 A：正確答案**\n性類固醇脂溶，血中多由 SHBG 與 albumin 攜帶；游離部分具直接生物可用性。\n\n**選項 B：B 選項｜為何不選**\n「全部游離」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「全部存在紅血球內」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「只與C-peptide結合」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R44；舊 ID phys-redesign-17-14",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-14",
+      "source_number": "R44",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "Testosterone transport｜原創進階題",
+        "simple": "性類固醇脂溶，血中多由 SHBG 與 albumin 攜帶；游離部分具直接生物可用性。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：Testosterone 的運輸"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "性類固醇脂溶，血中多由 SHBG 與 albumin 攜帶；游離部分具直接生物可用性。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「全部游離」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「全部存在紅血球內」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「只與C-peptide結合」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-15",
+      "type": "single",
+      "stem": "由 spermatogonium 形成四個 haploid spermatids，染色體套數變化的關鍵是？",
+      "choices": [
+        "兩次有絲分裂",
+        "只做meiosis II",
+        "完全不複製DNA",
+        "meiosis I分離同源染色體，meiosis II分離姊妹染色分體"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n精子生成｜原創進階題\n\n**白話理解**\n一次 DNA 複製後接兩次分裂；第一減數分裂降套數，第二分裂分離姊妹染色分體。\n\n**考點與解題步驟**\n- 出題範圍：互動式教學\n- 對應知識卡：精子形變與怕熱：acrosome、尾巴與低溫保護\n\n**選項 A：A 選項｜為何不選**\n「兩次有絲分裂」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「只做meiosis II」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「完全不複製DNA」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：正確答案**\n一次 DNA 複製後接兩次分裂；第一減數分裂降套數，第二分裂分離姊妹染色分體。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R45；舊 ID phys-redesign-17-15",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-15",
+      "source_number": "R45",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "精子生成｜原創進階題",
+        "simple": "一次 DNA 複製後接兩次分裂；第一減數分裂降套數，第二分裂分離姊妹染色分體。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：互動式教學",
+          "對應知識卡：精子形變與怕熱：acrosome、尾巴與低溫保護"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「兩次有絲分裂」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「只做meiosis II」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「完全不複製DNA」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "正確答案",
+          "rule": "一次 DNA 複製後接兩次分裂；第一減數分裂降套數，第二分裂分離姊妹染色分體。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-16",
+      "type": "single",
+      "stem": "隱睪症未矯正時較容易先損害哪項功能？",
+      "choices": [
+        "甲狀腺素合成",
+        "腦下垂體ACTH",
+        "spermatogenesis",
+        "腎上腺catecholamine"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n溫度｜原創進階題\n\n**白話理解**\n生精需要低於核心體溫的陰囊環境；Leydig steroidogenesis 有時相對較能保留。\n\n**考點與解題步驟**\n- 出題範圍：互動式教學\n- 對應知識卡：精子形變與怕熱：acrosome、尾巴與低溫保護\n\n**選項 A：A 選項｜為何不選**\n「甲狀腺素合成」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「腦下垂體ACTH」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：正確答案**\n生精需要低於核心體溫的陰囊環境；Leydig steroidogenesis 有時相對較能保留。\n\n**選項 D：D 選項｜為何不選**\n「腎上腺catecholamine」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R46；舊 ID phys-redesign-17-16",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-16",
+      "source_number": "R46",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "溫度｜原創進階題",
+        "simple": "生精需要低於核心體溫的陰囊環境；Leydig steroidogenesis 有時相對較能保留。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：互動式教學",
+          "對應知識卡：精子形變與怕熱：acrosome、尾巴與低溫保護"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「甲狀腺素合成」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「腦下垂體ACTH」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "正確答案",
+          "rule": "生精需要低於核心體溫的陰囊環境；Leydig steroidogenesis 有時相對較能保留。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「腎上腺catecholamine」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-17",
+      "type": "single",
+      "stem": "卵巢 two-cell, two-gonadotropin model 中正確配對是？",
+      "choices": [
+        "granulosa沒有aromatase",
+        "LH促theca產androgen；FSH促granulosa aromatize成estrogen",
+        "FSH促theca產DHT；LH促granulosa分泌AMH only",
+        "LH與FSH都只作用oocyte"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nTwo-cell theory｜原創進階題\n\n**白話理解**\ntheca 有 LH receptor 並供應 androgen；granulosa 在 FSH 下增加 aromatase，轉為 estrogen。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：Two-cell, two-gonadotropin\n\n**選項 A：A 選項｜為何不選**\n「granulosa沒有aromatase」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：正確答案**\ntheca 有 LH receptor 並供應 androgen；granulosa 在 FSH 下增加 aromatase，轉為 estrogen。\n\n**選項 C：C 選項｜為何不選**\n「FSH促theca產DHT；LH促granulosa分泌AMH only」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「LH與FSH都只作用oocyte」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R47；舊 ID phys-redesign-17-17",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-17",
+      "source_number": "R47",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "Two-cell theory｜原創進階題",
+        "simple": "theca 有 LH receptor 並供應 androgen；granulosa 在 FSH 下增加 aromatase，轉為 estrogen。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：Two-cell, two-gonadotropin"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「granulosa沒有aromatase」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "正確答案",
+          "rule": "theca 有 LH receptor 並供應 androgen；granulosa 在 FSH 下增加 aromatase，轉為 estrogen。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「FSH促theca產DHT；LH促granulosa分泌AMH only」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「LH與FSH都只作用oocyte」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-18",
+      "type": "single",
+      "stem": "卵泡期早期 FSH 上升後，estradiol 增加的主要來源是？",
+      "choices": [
+        "granulosa把theca androgen芳香化",
+        "oocyte直接由glucose合成estradiol",
+        "corpus luteum大量分泌",
+        "腎臟分泌"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n卵泡期｜原創進階題\n\n**白話理解**\n這是 two-cell cooperation；卵泡成熟後 granulosa 的 aromatase 活性提高。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：Two-cell, two-gonadotropin\n\n**選項 A：正確答案**\n這是 two-cell cooperation；卵泡成熟後 granulosa 的 aromatase 活性提高。\n\n**選項 B：B 選項｜為何不選**\n「oocyte直接由glucose合成estradiol」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「corpus luteum大量分泌」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「腎臟分泌」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R48；舊 ID phys-redesign-17-18",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-18",
+      "source_number": "R48",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "卵泡期｜原創進階題",
+        "simple": "這是 two-cell cooperation；卵泡成熟後 granulosa 的 aromatase 活性提高。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：Two-cell, two-gonadotropin"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "這是 two-cell cooperation；卵泡成熟後 granulosa 的 aromatase 活性提高。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「oocyte直接由glucose合成estradiol」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「corpus luteum大量分泌」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「腎臟分泌」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-19",
+      "type": "single",
+      "stem": "seminiferous tubule 內維持高局部 testosterone 濃度主要依靠？",
+      "choices": [
+        "SHBG",
+        "TBG",
+        "C-peptide",
+        "ABP"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\nTestosterone transport｜原創進階題\n\n**白話理解**\n一般血液中主要與 SHBG 結合；曲細精管內則由 Sertoli cell 分泌的 ABP 維持高局部濃度。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：Testosterone 的運輸\n\n**選項 A：A 選項｜為何不選**\n「SHBG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「TBG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「C-peptide」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：正確答案**\n一般血液中主要與 SHBG 結合；曲細精管內則由 Sertoli cell 分泌的 ABP 維持高局部濃度。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R49；舊 ID phys-redesign-17-19",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-19",
+      "source_number": "R49",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "Testosterone transport｜原創進階題",
+        "simple": "一般血液中主要與 SHBG 結合；曲細精管內則由 Sertoli cell 分泌的 ABP 維持高局部濃度。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：Testosterone 的運輸"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「SHBG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「TBG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「C-peptide」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "正確答案",
+          "rule": "一般血液中主要與 SHBG 結合；曲細精管內則由 Sertoli cell 分泌的 ABP 維持高局部濃度。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-20",
+      "type": "single",
+      "stem": "排卵前 estradiol 持續高濃度時，回饋由負轉正，造成？",
+      "choices": [
+        "progesterone立即消失",
+        "hCG surge",
+        "LH surge",
+        "FSH永久歸零"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nLH surge｜原創進階題\n\n**白話理解**\n持續高 estradiol 對 hypothalamus/pituitary 形成正回饋，觸發 LH surge 與排卵。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：排卵與週期\n\n**選項 A：A 選項｜為何不選**\n「progesterone立即消失」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「hCG surge」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：正確答案**\n持續高 estradiol 對 hypothalamus/pituitary 形成正回饋，觸發 LH surge 與排卵。\n\n**選項 D：D 選項｜為何不選**\n「FSH永久歸零」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R50；舊 ID phys-redesign-17-20",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-20",
+      "source_number": "R50",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "LH surge｜原創進階題",
+        "simple": "持續高 estradiol 對 hypothalamus/pituitary 形成正回饋，觸發 LH surge 與排卵。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：排卵與週期"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「progesterone立即消失」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「hCG surge」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "正確答案",
+          "rule": "持續高 estradiol 對 hypothalamus/pituitary 形成正回饋，觸發 LH surge 與排卵。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「FSH永久歸零」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-21",
+      "type": "single",
+      "stem": "LH surge 最直接引發哪組事件？",
+      "choices": [
+        "胎盤分泌hCG",
+        "卵母細胞恢復減數分裂、卵泡破裂與黃體化",
+        "Müllerian duct退化",
+        "Sertoli形成屏障"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n排卵｜原創進階題\n\n**白話理解**\nLH surge 使初級卵母細胞完成 meiosis I、排出次級卵母細胞，並讓殘餘卵泡形成 corpus luteum。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：排卵與週期\n\n**選項 A：A 選項｜為何不選**\n「胎盤分泌hCG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：正確答案**\nLH surge 使初級卵母細胞完成 meiosis I、排出次級卵母細胞，並讓殘餘卵泡形成 corpus luteum。\n\n**選項 C：C 選項｜為何不選**\n「Müllerian duct退化」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「Sertoli形成屏障」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R51；舊 ID phys-redesign-17-21",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-21",
+      "source_number": "R51",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "排卵｜原創進階題",
+        "simple": "LH surge 使初級卵母細胞完成 meiosis I、排出次級卵母細胞，並讓殘餘卵泡形成 corpus luteum。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：排卵與週期"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「胎盤分泌hCG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "正確答案",
+          "rule": "LH surge 使初級卵母細胞完成 meiosis I、排出次級卵母細胞，並讓殘餘卵泡形成 corpus luteum。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「Müllerian duct退化」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「Sertoli形成屏障」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-22",
+      "type": "single",
+      "stem": "排卵後 progesterone 升高的主要來源與子宮效應是？",
+      "choices": [
+        "corpus luteum；使endometrium進入分泌期",
+        "theca בלבד；使內膜脫落",
+        "oocyte；抑制所有腺體",
+        "pituitary；造成月經"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n黃體期｜原創進階題\n\n**白話理解**\n黃體分泌 progesterone 穩定並轉化增生內膜為適合著床的分泌型內膜。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：排卵與週期\n\n**選項 A：正確答案**\n黃體分泌 progesterone 穩定並轉化增生內膜為適合著床的分泌型內膜。\n\n**選項 B：B 選項｜為何不選**\n「theca בלבד；使內膜脫落」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「oocyte；抑制所有腺體」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「pituitary；造成月經」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R52；舊 ID phys-redesign-17-22",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-22",
+      "source_number": "R52",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "黃體期｜原創進階題",
+        "simple": "黃體分泌 progesterone 穩定並轉化增生內膜為適合著床的分泌型內膜。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：排卵與週期"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "黃體分泌 progesterone 穩定並轉化增生內膜為適合著床的分泌型內膜。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「theca בלבד；使內膜脫落」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「oocyte；抑制所有腺體」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「pituitary；造成月經」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-23",
+      "type": "single",
+      "stem": "排卵後基礎體溫略升，主要與哪個荷爾蒙有關？",
+      "choices": [
+        "FSH",
+        "AMH",
+        "inhibin B only",
+        "progesterone"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n基礎體溫｜原創進階題\n\n**白話理解**\nprogesterone 對體溫調節中樞有產熱效應，因此黃體期基礎體溫常上升約 0.3–0.5°C。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：排卵與週期\n\n**選項 A：A 選項｜為何不選**\n「FSH」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「AMH」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「inhibin B only」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：正確答案**\nprogesterone 對體溫調節中樞有產熱效應，因此黃體期基礎體溫常上升約 0.3–0.5°C。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R53；舊 ID phys-redesign-17-23",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-23",
+      "source_number": "R53",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "基礎體溫｜原創進階題",
+        "simple": "progesterone 對體溫調節中樞有產熱效應，因此黃體期基礎體溫常上升約 0.3–0.5°C。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：排卵與週期"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「FSH」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「AMH」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「inhibin B only」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "正確答案",
+          "rule": "progesterone 對體溫調節中樞有產熱效應，因此黃體期基礎體溫常上升約 0.3–0.5°C。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-24",
+      "type": "single",
+      "stem": "若未受精，月經開始的直接內分泌原因是？",
+      "choices": [
+        "LH持續高峰",
+        "AMH突然增加",
+        "黃體退化使progesterone與estrogen下降",
+        "hCG大量上升"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n月經｜原創進階題\n\n**白話理解**\n失去黃體支持後螺旋動脈與內膜穩定性下降，functional layer 崩解脫落。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：排卵與週期\n\n**選項 A：A 選項｜為何不選**\n「LH持續高峰」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「AMH突然增加」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：正確答案**\n失去黃體支持後螺旋動脈與內膜穩定性下降，functional layer 崩解脫落。\n\n**選項 D：D 選項｜為何不選**\n「hCG大量上升」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R54；舊 ID phys-redesign-17-24",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-24",
+      "source_number": "R54",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "月經｜原創進階題",
+        "simple": "失去黃體支持後螺旋動脈與內膜穩定性下降，functional layer 崩解脫落。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：排卵與週期"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「LH持續高峰」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「AMH突然增加」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "正確答案",
+          "rule": "失去黃體支持後螺旋動脈與內膜穩定性下降，functional layer 崩解脫落。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「hCG大量上升」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-25",
+      "type": "single",
+      "stem": "正常受精最常發生於何處，之後囊胚到何處著床？",
+      "choices": [
+        "卵巢；膀胱",
+        "輸卵管；子宮內膜",
+        "子宮頸；卵巢",
+        "陰道；輸卵管"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n受精與著床｜原創進階題\n\n**白話理解**\n互動式教學涵蓋受精卵由輸卵管移向子宮，形成 blastocyst 後著床。\n\n**考點與解題步驟**\n- 出題範圍：互動式教學\n- 對應知識卡：從受精到著床：輸卵管受精、囊胚著床\n\n**選項 A：A 選項｜為何不選**\n「卵巢；膀胱」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：正確答案**\n互動式教學涵蓋受精卵由輸卵管移向子宮，形成 blastocyst 後著床。\n\n**選項 C：C 選項｜為何不選**\n「子宮頸；卵巢」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「陰道；輸卵管」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R55；舊 ID phys-redesign-17-25",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-25",
+      "source_number": "R55",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "受精與著床｜原創進階題",
+        "simple": "互動式教學涵蓋受精卵由輸卵管移向子宮，形成 blastocyst 後著床。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：互動式教學",
+          "對應知識卡：從受精到著床：輸卵管受精、囊胚著床"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「卵巢；膀胱」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "正確答案",
+          "rule": "互動式教學涵蓋受精卵由輸卵管移向子宮，形成 blastocyst 後著床。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「子宮頸；卵巢」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「陰道；輸卵管」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-26",
+      "type": "single",
+      "stem": "acrosome reaction 的主要目的為？",
+      "choices": [
+        "釋放酵素並協助穿越zona pellucida",
+        "阻止精子接觸卵母細胞",
+        "完成卵母細胞meiosis I",
+        "形成corpus luteum"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\nAcrosome reaction｜原創進階題\n\n**白話理解**\n精子與 zona proteins 互動後釋放頂體酵素，配合運動穿越 zona pellucida。\n\n**考點與解題步驟**\n- 出題範圍：互動式教學\n- 對應知識卡：精子形變與怕熱：acrosome、尾巴與低溫保護\n\n**選項 A：正確答案**\n精子與 zona proteins 互動後釋放頂體酵素，配合運動穿越 zona pellucida。\n\n**選項 B：B 選項｜為何不選**\n「阻止精子接觸卵母細胞」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「完成卵母細胞meiosis I」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「形成corpus luteum」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R56；舊 ID phys-redesign-17-26",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-26",
+      "source_number": "R56",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "Acrosome reaction｜原創進階題",
+        "simple": "精子與 zona proteins 互動後釋放頂體酵素，配合運動穿越 zona pellucida。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：互動式教學",
+          "對應知識卡：精子形變與怕熱：acrosome、尾巴與低溫保護"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "精子與 zona proteins 互動後釋放頂體酵素，配合運動穿越 zona pellucida。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「阻止精子接觸卵母細胞」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「完成卵母細胞meiosis I」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「形成corpus luteum」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-27",
+      "type": "single",
+      "stem": "acrosome 的主要意義是？",
+      "choices": [
+        "產生testosterone",
+        "形成Barr body",
+        "分泌hCG",
+        "含協助穿越卵子外層的酵素"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n精子形變｜原創進階題\n\n**白話理解**\n互動式教學在精子形變卡中說明 acrosome 含水解酵素，協助接近卵子。\n\n**考點與解題步驟**\n- 出題範圍：互動式教學\n- 對應知識卡：精子形變與怕熱：acrosome、尾巴與低溫保護\n\n**選項 A：A 選項｜為何不選**\n「產生testosterone」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「形成Barr body」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「分泌hCG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：正確答案**\n互動式教學在精子形變卡中說明 acrosome 含水解酵素，協助接近卵子。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R57；舊 ID phys-redesign-17-27",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-27",
+      "source_number": "R57",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "精子形變｜原創進階題",
+        "simple": "互動式教學在精子形變卡中說明 acrosome 含水解酵素，協助接近卵子。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：互動式教學",
+          "對應知識卡：精子形變與怕熱：acrosome、尾巴與低溫保護"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「產生testosterone」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「形成Barr body」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「分泌hCG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "正確答案",
+          "rule": "互動式教學在精子形變卡中說明 acrosome 含水解酵素，協助接近卵子。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-28",
+      "type": "single",
+      "stem": "早期懷孕 hCG 的最重要功能是？",
+      "choices": [
+        "抑制全部胎盤形成",
+        "讓Müllerian duct退化",
+        "維持corpus luteum繼續分泌progesterone",
+        "直接造成月經"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nhCG｜原創進階題\n\n**白話理解**\n滋養層分泌 hCG，作用類似 LH，延長黃體壽命直到胎盤能接手 steroid production。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：hCG 的功能\n\n**選項 A：A 選項｜為何不選**\n「抑制全部胎盤形成」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：B 選項｜為何不選**\n「讓Müllerian duct退化」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：正確答案**\n滋養層分泌 hCG，作用類似 LH，延長黃體壽命直到胎盤能接手 steroid production。\n\n**選項 D：D 選項｜為何不選**\n「直接造成月經」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R58；舊 ID phys-redesign-17-28",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-28",
+      "source_number": "R58",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "hCG｜原創進階題",
+        "simple": "滋養層分泌 hCG，作用類似 LH，延長黃體壽命直到胎盤能接手 steroid production。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：hCG 的功能"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「抑制全部胎盤形成」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「讓Müllerian duct退化」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "正確答案",
+          "rule": "滋養層分泌 hCG，作用類似 LH，延長黃體壽命直到胎盤能接手 steroid production。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「直接造成月經」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-29",
+      "type": "single",
+      "stem": "受精後立刻驗尿常為陰性，最合理原因是？",
+      "choices": [
+        "尿液永遠測不到hCG",
+        "需先著床並由syncytiotrophoblast產生足量hCG",
+        "卵母細胞不含DNA",
+        "hCG只在男性出現"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n驗孕時間｜原創進階題\n\n**白話理解**\nhCG 在著床後由滋養層產生並累積；受精當下尚未達檢測閾值。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：hCG 的功能\n\n**選項 A：A 選項｜為何不選**\n「尿液永遠測不到hCG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 B：正確答案**\nhCG 在著床後由滋養層產生並累積；受精當下尚未達檢測閾值。\n\n**選項 C：C 選項｜為何不選**\n「卵母細胞不含DNA」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「hCG只在男性出現」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R59；舊 ID phys-redesign-17-29",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-29",
+      "source_number": "R59",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "驗孕時間｜原創進階題",
+        "simple": "hCG 在著床後由滋養層產生並累積；受精當下尚未達檢測閾值。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：hCG 的功能"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項｜為何不選",
+          "rule": "「尿液永遠測不到hCG」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "正確答案",
+          "rule": "hCG 在著床後由滋養層產生並累積；受精當下尚未達檢測閾值。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「卵母細胞不含DNA」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「hCG只在男性出現」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    },
+    {
+      "n": "phys-redesign-17-30",
+      "type": "single",
+      "stem": "未分化性腺分化時，男性睪丸與女性卵巢主要分別由哪一區域發展？",
+      "choices": [
+        "medulla；cortex",
+        "cortex；medulla",
+        "Müllerian duct；Wolffian duct",
+        "neural crest；endoderm"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n性腺胚胎區域｜原創進階題\n\n**白話理解**\n未分化性腺的髓質在男性路徑中發展成睪丸結構；皮質則在女性路徑中發展成卵巢，這是必考的方向配對。\n\n**考點與解題步驟**\n- 出題範圍：必考重點\n- 對應知識卡：性腺胚胎來源\n\n**選項 A：正確答案**\n未分化性腺的髓質在男性路徑中發展成睪丸結構；皮質則在女性路徑中發展成卵巢，這是必考的方向配對。\n\n**選項 B：B 選項｜為何不選**\n「cortex；medulla」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 C：C 選項｜為何不選**\n「Müllerian duct；Wolffian duct」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**選項 D：D 選項｜為何不選**\n「neural crest；endoderm」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。\n\n**原始出處**\n生理學期末｜必考重點原創進階題；原題編號 R60；舊 ID phys-redesign-17-30",
+      "tags": [
+        "Unit 17｜生殖系統",
+        "生理學｜生殖系統",
+        "進階"
+      ],
+      "source_id": "phys-redesign-17-30",
+      "source_number": "R60",
+      "source_year": "必考重點重製",
+      "source_subject": "生理學｜生殖系統",
+      "source_detail": {
+        "sectionTitle": "Unit 17｜生殖系統",
+        "title": "性腺胚胎區域｜原創進階題",
+        "simple": "未分化性腺的髓質在男性路徑中發展成睪丸結構；皮質則在女性路徑中發展成卵巢，這是必考的方向配對。",
+        "memory": "",
+        "examFocus": [
+          "出題範圍：必考重點",
+          "對應知識卡：性腺胚胎來源"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "正確答案",
+          "rule": "未分化性腺的髓質在男性路徑中發展成睪丸結構；皮質則在女性路徑中發展成卵巢，這是必考的方向配對。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項｜為何不選",
+          "rule": "「cortex；medulla」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項｜為何不選",
+          "rule": "「Müllerian duct；Wolffian duct」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項｜為何不選",
+          "rule": "「neural crest；endoderm」不是題幹條件下最符合的結果。判讀時應抓住詳解中的因果鏈，而不是只認關鍵字。",
+          "memory": "",
+          "examFocus": []
+        }
+      },
+      "level": 2
+    }
+  ]
+}

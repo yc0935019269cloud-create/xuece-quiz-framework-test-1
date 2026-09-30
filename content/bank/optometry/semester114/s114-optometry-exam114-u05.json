@@ -1,0 +1,291 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam114-u05",
+    "subject": "optometry",
+    "name": "客觀驗光：視網膜檢影與綜合驗光儀｜114 年國考",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 年國考",
+      "視光學",
+      "第05單元 客觀驗光：視網膜檢影與綜合驗光儀"
+    ],
+    "order": 5,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0430",
+      "type": "single",
+      "stem": "一位驗光師對病人進行視網膜檢影法（retinoscopy），此位驗光師的工作距離是50 cm。發現分別以0.00 D 鏡片沿軸度120 度達到中和點，+2.00 D 鏡片沿軸度30 度達到中和點。則這位病人的度數為何？",
+      "choices": [
+        "+2.00DS/-2.00DC×120",
+        "+1.50DS/-2.00DC×120",
+        "+0.50DS/-2.00DC×030",
+        "+planoDS/-2.00DC×030"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n50cm混合毛值\n\n**白話理解**\n50cm毛值0與+2D，各減2D後為−2D與0D；負柱式plano/−2×30。\n\n**口訣**\n每經線都減2D。\n\n**考點與解題步驟**\n- 0−2=−2；+2−2=0。\n\n**選項 A：A 選項**\n漏扣WD。\n\n**選項 B：B 選項**\n扣錯。\n\n**選項 C：C 選項**\n軸錯。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\114年驗光師高考.pdf；原題編號 14；舊 ID opt-q0430",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0430",
+      "source_number": "14",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "50cm混合毛值",
+        "simple": "50cm毛值0與+2D，各減2D後為−2D與0D；負柱式plano/−2×30。",
+        "memory": "每經線都減2D。",
+        "examFocus": [
+          "0−2=−2；+2−2=0。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "漏扣WD。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "扣錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "軸錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0432",
+      "type": "single",
+      "stem": "下列關於靜態檢影鏡（static retinoscopy）的敘述何者不適當？",
+      "choices": [
+        "確認受測者眼睛他覺式遠距離屈光狀態及調節狀態",
+        "檢查結果可作為自覺式驗光的起始點",
+        "當受測者無法配合自覺式驗光時檢查結果可當作最終處方",
+        "可配合綜合驗光儀、板鏡或試片組等進行檢查"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n靜態檢影目的\n\n**白話理解**\n檢查要求調節放鬆，結果可作主觀驗光起點；無法主觀配合者可作處方重要依據，並可搭配phoropter或試片。\n\n**口訣**\n控制調節來量遠屈光，不是量調節功能。\n\n**選項 A：A 選項**\n不適當。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n在特定患者可。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\114年驗光師高考.pdf；原題編號 16；舊 ID opt-q0432",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0432",
+      "source_number": "16",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "靜態檢影目的",
+        "simple": "檢查要求調節放鬆，結果可作主觀驗光起點；無法主觀配合者可作處方重要依據，並可搭配phoropter或試片。",
+        "memory": "控制調節來量遠屈光，不是量調節功能。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "不適當。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "在特定患者可。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0433",
+      "type": "single",
+      "stem": "使用靜態檢影鏡（static retinoscopy）測驗時，若檢影鏡使用收束光，並且工作距離為67 cm，觀察到的光 線動態為順動，則屈光狀態最可能是下列何者？",
+      "choices": [
+        "遠視",
+        "低度遠視",
+        "正視",
+        "近視"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n凹面鏡模式動向\n\n**白話理解**\n凹面鏡／收束光模式會使一般plane-mirror的順逆動關係反轉，因此順動可提示近視。\n\n**口訣**\nconcave mode順逆反過來。\n\n**選項 A：A 選項**\n在收束模式判讀反轉。\n\n**選項 B：B 選項**\n同理。\n\n**選項 C：C 選項**\n非最可能。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\114年驗光師高考.pdf；原題編號 17；舊 ID opt-q0433",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0433",
+      "source_number": "17",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "凹面鏡模式動向",
+        "simple": "凹面鏡／收束光模式會使一般plane-mirror的順逆動關係反轉，因此順動可提示近視。",
+        "memory": "concave mode順逆反過來。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "在收束模式判讀反轉。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "同理。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "非最可能。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0435",
+      "type": "single",
+      "stem": "透過檢影鏡，在距離67 公分處檢查一調節放鬆、配戴舊眼鏡-3.00DS/-1.00DC×180 的顧客。測得180 度 方向（水平）的中和點鏡片為+0.25 D，在90 度（垂直）方向中和點鏡片為-0.50 D，則配眼鏡的正確度數 為何？",
+      "choices": [
+        "-2.75DS/-1.75DC×180",
+        "-3.50DS/-0.75DC×180",
+        "-4.00DS/-1.50DC×180",
+        "-4.25DS/-1.75DC×180 題組題，請依序回答第20 題至第24 題："
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n戴舊鏡檢影更新處方\n\n**白話理解**\n67cm需扣1.5D；戴舊鏡狀態下兩經線附加中和讀值+0.25與−0.50，修正並加回舊處方後，得到題庫處方−4.25/−1.75×180。\n\n**口訣**\n附加讀值先扣WD，再與舊鏡主經線相加。\n\n**選項 A：A 選項**\nsphere不足。\n\n**選項 B：B 選項**\ncyl不足。\n\n**選項 C：C 選項**\n量不符。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視覺光學\\114年驗光師高考.pdf；原題編號 19；舊 ID opt-q0435",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0435",
+      "source_number": "19",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "戴舊鏡檢影更新處方",
+        "simple": "67cm需扣1.5D；戴舊鏡狀態下兩經線附加中和讀值+0.25與−0.50，修正並加回舊處方後，得到題庫處方−4.25/−1.75×180。",
+        "memory": "附加讀值先扣WD，再與舊鏡主經線相加。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "sphere不足。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "cyl不足。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "量不符。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0442",
+      "type": "single",
+      "stem": "用視網膜檢影鏡檢查顧客，發現10 度方向為-3.00 D，100 度方向為-1.50 D。有關受檢者的屈光狀態的敘 述，何者正確？",
+      "choices": [
+        "-3.00 DC×010 與-1.50 DC×100 組合",
+        "-1.50 DS/-1.50 DC×010",
+        "複合型散光（compound astigmatism）",
+        "順散光（with-the-rule astigmatism）"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n散光類型\n\n**白話理解**\n兩主經線−3D與−1.5D皆為近視，故compound myopic astigmatism；正式處方可整理為−1.50/−1.50×100或等效形式。\n\n**口訣**\n兩主經線都負＝複合近視散光。\n\n**選項 A：A 選項**\n不能把兩個柱鏡直接相加描述。\n\n**選項 B：B 選項**\n軸依主經線配對不符。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n軸10/100屬斜散光，不是典型WTR。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\114年驗光生普考.pdf；原題編號 30；舊 ID opt-q0442",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0442",
+      "source_number": "30",
+      "source_year": "114",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "散光類型",
+        "simple": "兩主經線−3D與−1.5D皆為近視，故compound myopic astigmatism；正式處方可整理為−1.50/−1.50×100或等效形式。",
+        "memory": "兩主經線都負＝複合近視散光。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "不能把兩個柱鏡直接相加描述。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "軸依主經線配對不符。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "軸10/100屬斜散光，不是典型WTR。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

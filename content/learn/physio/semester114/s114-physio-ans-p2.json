@@ -1,0 +1,870 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-physio-ans-p2",
+  "subject": "physio",
+  "unit": "第15單元 自主神經系統",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "生理學",
+    "第15單元 自主神經系統"
+  ],
+  "title": "自主神經系統（2）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://lustrous-malasada-6d28a9.netlify.app/",
+  "level": 2,
+  "minutes": 90,
+  "order": 15,
+  "source": "https://lustrous-malasada-6d28a9.netlify.app/",
+  "tags": [
+    "自主神經系統"
+  ],
+  "lessons": [
+    {
+      "id": "review-extra-1",
+      "title": "串連、公式與易錯整合（1）",
+      "goals": [
+        "解釋必記與易錯",
+        "解釋急速重點：ANS 四大特性",
+        "解釋急速重點：交感 vs 副交感長短"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "必記與易錯",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\nmustKnow：- ANS＝subconscious、以反射運作；輸出一律 preganglionic→ganglion→postganglionic 兩顆神經元。\n- 四大特性：basal tone、dual innervation、antagonistic、mass discharge(交感特有)。\n- 交感＝胸腰 T1–L3、有 trunk、節前短節後長；副交感＝腦薦 III/VII/IX/X＋S2–4、節前長節後短。\n- 節前 ACh→Nn；副交感節後 ACh→M；交感節後 NE→α/β（汗腺例外用 ACh、腎入球只交感）。\n- 受體：N 離子通道(興奮)、M1/3/5＋α1＝Gq(興奮)、M2/4＋α2＝Gi(抑制)、β＝Gs。\n- 腎上腺髓質受交感節前(ACh→Nn)、釋放 EPI/NE 入血；節前胞體在脊髓 IML(中樞)。\ntraps：- 交感與副交感的『節前』都是 ACh→Nn；差別在節後。\n- 汗腺是交感支配但用 ACh（不是副交感）。\n- mass discharge 是交感特有。\n- 一個傳導物的作用取決於效應器的受體型別，不是傳導物本身。\n- 副交感腦神經是 3/7/9/10＋S2–S4。",
+          "keys": [
+            "把本單元的關係串起來，確認易錯条件與方向。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
+          "answer": "mustKnow：- ANS＝subconscious、以反射運作；輸出一律 preganglionic→ganglion→postganglionic 兩顆神經元。\n- 四大特性：basal tone、dual innervation、antagonistic、mass discharge(交感特有)。\n- 交感＝胸腰 T1–L3、有 trunk、節前短節後長；副交感＝腦薦 III/VII/IX/X＋S2–4、節前長節後短。\n- 節前 ACh→Nn；副交感節後 ACh→M；交感節後 NE→α/β（汗腺例外用 ACh、腎入球只交感）。\n- 受體：N 離子通道(興奮)、M1/3/5＋α1＝Gq(興奮)、M2/4＋α2＝Gi(抑制)、β＝Gs。\n- 腎上腺髓質受交感節前(ACh→Nn)、釋放 EPI/NE 入血；節前胞體在脊髓 IML(中樞)。\ntraps：- 交感與副交感的『節前』都是 ACh→Nn；差別在節後。\n- 汗腺是交感支配但用 ACh（不是副交感）。\n- mass discharge 是交感特有。\n- 一個傳導物的作用取決於效應器的受體型別，不是傳導物本身。\n- 副交感腦神經是 3/7/9/10＋S2–S4。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "mustKnow：- ANS＝subconscious、以反射運作；輸出一律 preganglionic→ganglion→postganglionic 兩顆神經元。\n- 四大特性：basal tone、dual innervation、antagonistic、mass discharge(交感特有)。\n- 交感＝胸腰 T1–L3、有 trunk、節前短節後長；副交感＝腦薦 III/VII/IX/X＋S2–4、節前長節後短。\n- 節前 ACh→Nn；副交感節後 ACh→M；交感節後 NE→α/β（汗腺例外用 ACh、腎入球只交感）。\n- 受體：N 離子通道(興奮)、M1/3/5＋α1＝Gq(興奮)、M2/4＋α2＝Gi(抑制)、β＝Gs。\n- 腎上腺髓質受交感節前(ACh→Nn)、釋放 EPI/NE 入血；節前胞體在脊髓 IML(中樞)。\ntraps：- 交感與副交感的『節前』都是 ACh→Nn；差別在節後。\n- 汗腺是交感支配但用 ACh（不是副交感）。\n- mass discharge 是交感特有。\n- 一個傳導物的作用取決於效應器的受體型別，不是傳導物本身。\n- 副交感腦神經是 3/7/9/10＋S2–S4。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：ANS 四大特性",
+          "body": "**一句話／白話**\n這套系統不必一直用意識指揮，會自動調心跳、腸胃、腺體；多數器官還有油門和煞車一起管。\n\n**觀念**\ninvoluntary、雙神經元鏈、多數器官雙重支配、以拮抗或協同維持 homeostasis。\n\n**易錯與比較**\n問答題先畫比較表，再補例外。\n\n**口訣**\n自動控制，兩邊拉平衡。",
+          "keys": [
+            "這套系統不必一直用意識指揮，會自動調心跳、腸胃、腺體；多數器官還有油門和煞車一起管。"
+          ],
+          "tip": "口訣：自動控制，兩邊拉平衡。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：ANS 四大特性」，並說出一個判斷依據。",
+          "answer": "involuntary、雙神經元鏈、多數器官雙重支配、以拮抗或協同維持 homeostasis。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "involuntary、雙神經元鏈、多數器官雙重支配、以拮抗或協同維持 homeostasis。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：交感 vs 副交感長短",
+          "body": "**一句話／白話**\n緊急系統的轉運站靠近 spinal cord；休息系統的轉運站靠近器官，所以前後兩段長短剛好相反。\n\n**觀念**\n交感 thoracolumbar：短節前、長節後；副交感 craniosacral：長節前、短節後。\n\n**易錯與比較**\n副交感 cranial：III/VII/IX/X；sacral：S2–S4。\n\n**口訣**\n站靠哪邊，哪一邊的線就短。",
+          "keys": [
+            "緊急系統的轉運站靠近 spinal cord；休息系統的轉運站靠近器官，所以前後兩段長短剛好相反。"
+          ],
+          "tip": "口訣：站靠哪邊，哪一邊的線就短。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：交感 vs 副交感長短」，並說出一個判斷依據。",
+          "answer": "交感 thoracolumbar：短節前、長節後；副交感 craniosacral：長節前、短節後。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "交感 thoracolumbar：短節前、長節後；副交感 craniosacral：長節前、短節後。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：急速重點：交感 vs 副交感長短",
+          "problem": "用自己的話說明「急速重點：交感 vs 副交感長短」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：急速重點：交感 vs 副交感長短",
+            "交感 thoracolumbar：短節前、長節後；副交感 craniosacral：長節前、短節後。",
+            "把判斷依據連回題目：交感 thoracolumbar：短節前、長節後；副交感 craniosacral：長節前、短節後。"
+          ],
+          "answer": "交感 thoracolumbar：短節前、長節後；副交感 craniosacral：長節前、短節後。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-physio-course114-u15-phys-15-01",
+            "s114-physio-course114-u15-phys-15-02"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：ANS 四大特性」，並說出一個判斷依據。",
+              "answer": "involuntary、雙神經元鏈、多數器官雙重支配、以拮抗或協同維持 homeostasis。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "involuntary、雙神經元鏈、多數器官雙重支配、以拮抗或協同維持 homeostasis。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：交感 vs 副交感長短」，並說出一個判斷依據。",
+              "answer": "交感 thoracolumbar：短節前、長節後；副交感 craniosacral：長節前、短節後。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "交感 thoracolumbar：短節前、長節後；副交感 craniosacral：長節前、短節後。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把本單元的關係串起來，確認易錯条件與方向。",
+            "這套系統不必一直用意識指揮，會自動調心跳、腸胃、腺體；多數器官還有油門和煞車一起管。",
+            "緊急系統的轉運站靠近 spinal cord；休息系統的轉運站靠近器官，所以前後兩段長短剛好相反。",
+            "必記與易錯：把本單元的關係串起來，確認易錯条件與方向。",
+            "急速重點：ANS 四大特性：這套系統不必一直用意識指揮，會自動調心跳、腸胃、腺體；多數器官還有油門和煞車一起管。"
+          ],
+          "flash": [
+            {
+              "front": "必記與易錯",
+              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+            },
+            {
+              "front": "急速重點：ANS 四大特性",
+              "back": "這套系統不必一直用意識指揮，會自動調心跳、腸胃、腺體；多數器官還有油門和煞車一起管。"
+            },
+            {
+              "front": "急速重點：交感 vs 副交感長短",
+              "back": "緊急系統的轉運站靠近 spinal cord；休息系統的轉運站靠近器官，所以前後兩段長短剛好相反。"
+            },
+            {
+              "front": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
+              "back": "mustKnow：- ANS＝subconscious、以反射運作；輸出一律 preganglionic→ganglion→postganglionic 兩顆神經元。\n- 四大特性：basal tone、dual innervation、antagonistic、mass discharge(交感特有)。\n- 交感＝胸腰 T1–L3、有 trunk、節前短節後長；副交感＝腦薦 III/VII/IX/X＋S2–4、節前長節後短。\n- 節前 ACh→Nn；副交感節後 ACh→M；交感節後 NE→α/β（汗腺例外用 ACh、腎入球只交感）。\n- 受體：N 離子通道(興奮)、M1/3/5＋α1＝Gq(興奮)、M2/4＋α2＝Gi(抑制)、β＝Gs。\n- 腎上腺髓質受交感節前(ACh→Nn)、釋放 EPI/NE 入血；節前胞體在脊髓 IML(中樞)。\ntraps：- 交感與副交感的『節前』都是 ACh→Nn；差別在節後。\n- 汗腺是交感支配但用 ACh（不是副交感）。\n- mass discharge 是交感特有。\n- 一個傳導物的作用取決於效應器的受體型別，不是傳導物本身。\n- 副交感腦神經是 3/7/9/10＋S2–S4。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review-extra-2",
+      "title": "串連、公式與易錯整合（2）",
+      "goals": [
+        "解釋急速重點：傳遞物總表",
+        "解釋急速重點：汗腺例外",
+        "解釋急速重點：腎上腺髓質"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：傳遞物總表",
+          "body": "**一句話／白話**\n不管緊急或休息系統，從 CNS 出發的第一顆神經都用同一種傳遞物；第二棒才開始分家。\n\n**觀念**\n所有 ANS 節前 ACh→Nn；副交感節後 ACh→M；多數交感節後 NE→α/β。\n\n**易錯與比較**\n體運動是單一 neuron，ACh→Nm。\n\n**口訣**\n第一棒相同，第二棒不同。",
+          "keys": [
+            "不管緊急或休息系統，從 CNS 出發的第一顆神經都用同一種傳遞物；第二棒才開始分家。"
+          ],
+          "tip": "口訣：第一棒相同，第二棒不同。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：傳遞物總表」，並說出一個判斷依據。",
+          "answer": "所有 ANS 節前 ACh→Nn；副交感節後 ACh→M；多數交感節後 NE→α/β。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "所有 ANS 節前 ACh→Nn；副交感節後 ACh→M；多數交感節後 NE→α/β。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：汗腺例外",
+          "body": "**一句話／白話**\n汗腺明明屬於緊急系統，但最後一棒不用平常的緊急傳遞物，反而使用休息系統常見的那一種。\n\n**觀念**\n汗腺只受交感支配，但節後釋放 ACh，作用 muscarinic receptor。\n\n**易錯與比較**\n「交感節後一律 NE」是錯的。\n\n**口訣**\n交感的身分，副交感的武器。",
+          "keys": [
+            "汗腺明明屬於緊急系統，但最後一棒不用平常的緊急傳遞物，反而使用休息系統常見的那一種。"
+          ],
+          "tip": "口訣：交感的身分，副交感的武器。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：汗腺例外」，並說出一個判斷依據。",
+          "answer": "汗腺只受交感支配，但節後釋放 ACh，作用 muscarinic receptor。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "汗腺只受交感支配，但節後釋放 ACh，作用 muscarinic receptor。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：腎上腺髓質",
+          "body": "**一句話／白話**\n一般神經只對附近器官說話；腎上腺會把緊急訊號灑進血液，讓全身一起進入備戰。\n\n**觀念**\n改造的 sympathetic ganglion；節前 ACh→chromaffin Nn→E/NE 入血。\n\n**易錯與比較**\n沒有典型 postganglionic axon。\n\n**口訣**\n局部電話變全身廣播。",
+          "keys": [
+            "一般神經只對附近器官說話；腎上腺會把緊急訊號灑進血液，讓全身一起進入備戰。"
+          ],
+          "tip": "口訣：局部電話變全身廣播。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：腎上腺髓質」，並說出一個判斷依據。",
+          "answer": "改造的 sympathetic ganglion；節前 ACh→chromaffin Nn→E/NE 入血。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "改造的 sympathetic ganglion；節前 ACh→chromaffin Nn→E/NE 入血。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：急速重點：腎上腺髓質",
+          "problem": "用自己的話說明「急速重點：腎上腺髓質」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：急速重點：腎上腺髓質",
+            "改造的 sympathetic ganglion；節前 ACh→chromaffin Nn→E/NE 入血。",
+            "把判斷依據連回題目：改造的 sympathetic ganglion；節前 ACh→chromaffin Nn→E/NE 入血。"
+          ],
+          "answer": "改造的 sympathetic ganglion；節前 ACh→chromaffin Nn→E/NE 入血。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-physio-course114-u15-phys-15-04",
+            "s114-physio-course114-u15-phys-15-05"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：汗腺例外」，並說出一個判斷依據。",
+              "answer": "汗腺只受交感支配，但節後釋放 ACh，作用 muscarinic receptor。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "汗腺只受交感支配，但節後釋放 ACh，作用 muscarinic receptor。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：腎上腺髓質」，並說出一個判斷依據。",
+              "answer": "改造的 sympathetic ganglion；節前 ACh→chromaffin Nn→E/NE 入血。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "改造的 sympathetic ganglion；節前 ACh→chromaffin Nn→E/NE 入血。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "不管緊急或休息系統，從 CNS 出發的第一顆神經都用同一種傳遞物；第二棒才開始分家。",
+            "汗腺明明屬於緊急系統，但最後一棒不用平常的緊急傳遞物，反而使用休息系統常見的那一種。",
+            "一般神經只對附近器官說話；腎上腺會把緊急訊號灑進血液，讓全身一起進入備戰。",
+            "急速重點：傳遞物總表：不管緊急或休息系統，從 CNS 出發的第一顆神經都用同一種傳遞物；第二棒才開始分家。",
+            "急速重點：汗腺例外：汗腺明明屬於緊急系統，但最後一棒不用平常的緊急傳遞物，反而使用休息系統常見的那一種。"
+          ],
+          "flash": [
+            {
+              "front": "急速重點：傳遞物總表",
+              "back": "不管緊急或休息系統，從 CNS 出發的第一顆神經都用同一種傳遞物；第二棒才開始分家。"
+            },
+            {
+              "front": "急速重點：汗腺例外",
+              "back": "汗腺明明屬於緊急系統，但最後一棒不用平常的緊急傳遞物，反而使用休息系統常見的那一種。"
+            },
+            {
+              "front": "急速重點：腎上腺髓質",
+              "back": "一般神經只對附近器官說話；腎上腺會把緊急訊號灑進血液，讓全身一起進入備戰。"
+            },
+            {
+              "front": "用自己的話說明「急速重點：傳遞物總表」，並說出一個判斷依據。",
+              "back": "所有 ANS 節前 ACh→Nn；副交感節後 ACh→M；多數交感節後 NE→α/β。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review-extra-3",
+      "title": "串連、公式與易錯整合（3）",
+      "goals": [
+        "解釋急速重點：ANS 的 CNS/PNS 位置",
+        "解釋急速重點：ACh 合成與受體",
+        "解釋急速重點：Adrenergic receptor 快表"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：ANS 的 CNS/PNS 位置",
+          "body": "**一句話／白話**\n這套系統算周邊運動輸出，但第一顆神經的細胞本體仍住在 brain 或 spinal cord。\n\n**觀念**\nANS 屬 PNS motor division，但 preganglionic cell body 在 CNS；交感胞體主要在 IML。\n\n**易錯與比較**\n勿混淆系統分類與胞體位置。\n\n**口訣**\n系統分類和住址是兩件事。",
+          "keys": [
+            "這套系統算周邊運動輸出，但第一顆神經的細胞本體仍住在 brain 或 spinal cord。"
+          ],
+          "tip": "口訣：系統分類和住址是兩件事。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：ANS 的 CNS/PNS 位置」，並說出一個判斷依據。",
+          "answer": "ANS 屬 PNS motor division，但 preganglionic cell body 在 CNS；交感胞體主要在 IML。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "ANS 屬 PNS motor division，但 preganglionic cell body 在 CNS；交感胞體主要在 IML。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：ACh 合成與受體",
+          "body": "**一句話／白話**\n一種受體是直接開離子門、反應快；另一種先叫細胞內接力、反應較慢但變化多。\n\n**觀念**\nCholine+acetyl-CoA 經 ChAT→ACh；AChE 分解。Nicotinic 是 ion channel，muscarinic 是 GPCR。\n\n**易錯與比較**\nNm 在 NMJ；Nn 在 ganglia/adrenal medulla。\n\n**口訣**\n快門直接開，慢門叫接力。",
+          "keys": [
+            "一種受體是直接開離子門、反應快；另一種先叫細胞內接力、反應較慢但變化多。"
+          ],
+          "tip": "口訣：快門直接開，慢門叫接力。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：ACh 合成與受體」，並說出一個判斷依據。",
+          "answer": "Choline+acetyl-CoA 經 ChAT→ACh；AChE 分解。Nicotinic 是 ion channel，muscarinic 是 GPCR。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "Choline+acetyl-CoA 經 ChAT→ACh；AChE 分解。Nicotinic 是 ion channel，muscarinic 是 GPCR。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：Adrenergic receptor 快表",
+          "body": "**一句話／白話**\n不同受體會讓心跳變快、支氣管放鬆或血管收縮；不要只背字母，要把字母黏到器官動作。\n\n**觀念**\nα₁收縮；α₂抑制釋放；β₁心率/收縮力/renin↑；β₂支氣管與部分血管舒張；β₃脂解與逼尿肌舒張。\n\n**易錯與比較**\nβ₂ 不是讓所有平滑肌收縮。\n\n**口訣**\n受體名字要綁器官反應。",
+          "keys": [
+            "不同受體會讓心跳變快、支氣管放鬆或血管收縮；不要只背字母，要把字母黏到器官動作。"
+          ],
+          "tip": "口訣：受體名字要綁器官反應。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：Adrenergic receptor 快表」，並說出一個判斷依據。",
+          "answer": "α₁收縮；α₂抑制釋放；β₁心率/收縮力/renin↑；β₂支氣管與部分血管舒張；β₃脂解與逼尿肌舒張。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "α₁收縮；α₂抑制釋放；β₁心率/收縮力/renin↑；β₂支氣管與部分血管舒張；β₃脂解與逼尿肌舒張。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：急速重點：Adrenergic receptor 快表",
+          "problem": "用自己的話說明「急速重點：Adrenergic receptor 快表」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：急速重點：Adrenergic receptor 快表",
+            "α₁收縮；α₂抑制釋放；β₁心率/收縮力/renin↑；β₂支氣管與部分血管舒張；β₃脂解與逼尿肌舒張。",
+            "把判斷依據連回題目：α₁收縮；α₂抑制釋放；β₁心率/收縮力/renin↑；β₂支氣管與部分血管舒張；β₃脂解與逼尿肌舒張。"
+          ],
+          "answer": "α₁收縮；α₂抑制釋放；β₁心率/收縮力/renin↑；β₂支氣管與部分血管舒張；β₃脂解與逼尿肌舒張。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-physio-course114-u15-phys-15-07",
+            "s114-physio-course114-u15-phys-15-08"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：ACh 合成與受體」，並說出一個判斷依據。",
+              "answer": "Choline+acetyl-CoA 經 ChAT→ACh；AChE 分解。Nicotinic 是 ion channel，muscarinic 是 GPCR。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "Choline+acetyl-CoA 經 ChAT→ACh；AChE 分解。Nicotinic 是 ion channel，muscarinic 是 GPCR。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：Adrenergic receptor 快表」，並說出一個判斷依據。",
+              "answer": "α₁收縮；α₂抑制釋放；β₁心率/收縮力/renin↑；β₂支氣管與部分血管舒張；β₃脂解與逼尿肌舒張。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "α₁收縮；α₂抑制釋放；β₁心率/收縮力/renin↑；β₂支氣管與部分血管舒張；β₃脂解與逼尿肌舒張。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "這套系統算周邊運動輸出，但第一顆神經的細胞本體仍住在 brain 或 spinal cord。",
+            "一種受體是直接開離子門、反應快；另一種先叫細胞內接力、反應較慢但變化多。",
+            "不同受體會讓心跳變快、支氣管放鬆或血管收縮；不要只背字母，要把字母黏到器官動作。",
+            "急速重點：ANS 的 CNS/PNS 位置：這套系統算周邊運動輸出，但第一顆神經的細胞本體仍住在 brain 或 spinal cord。",
+            "急速重點：ACh 合成與受體：一種受體是直接開離子門、反應快；另一種先叫細胞內接力、反應較慢但變化多。"
+          ],
+          "flash": [
+            {
+              "front": "急速重點：ANS 的 CNS/PNS 位置",
+              "back": "這套系統算周邊運動輸出，但第一顆神經的細胞本體仍住在 brain 或 spinal cord。"
+            },
+            {
+              "front": "急速重點：ACh 合成與受體",
+              "back": "一種受體是直接開離子門、反應快；另一種先叫細胞內接力、反應較慢但變化多。"
+            },
+            {
+              "front": "急速重點：Adrenergic receptor 快表",
+              "back": "不同受體會讓心跳變快、支氣管放鬆或血管收縮；不要只背字母，要把字母黏到器官動作。"
+            },
+            {
+              "front": "用自己的話說明「急速重點：ANS 的 CNS/PNS 位置」，並說出一個判斷依據。",
+              "back": "ANS 屬 PNS motor division，但 preganglionic cell body 在 CNS；交感胞體主要在 IML。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-1",
+      "title": "整合驗收 1",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：自主神經系統",
+          "body": "Sympathetic = thoracolumbar (T1–L3); parasympathetic = craniosacral.\n\n正確選項：Thoracolumbar, T1–L3。\n\n\n中文對照：question：交感神經系統的來源(outflow)是？\nchoices：- 胸腰 thoracolumbar，T1–L3\n- 腦薦 craniosacral\n- 只有腦神經\n- 只有薦髓 S2–S4\nexplain：交感＝thoracolumbar(T1–L3)；副交感＝craniosacral。",
+          "keys": [
+            "Sympathetic = thoracolumbar (T1–L3); parasympathetic = craniosacral.\n\n正確選項：Thoracolumbar, T1–L3。\n\n\n中文對照：question：交感神經系統的來源(outflow)是？\nchoices：- 胸腰 thoracolumbar，T1–L3\n- 腦薦 craniosacral\n- 只有腦神經\n- 只有薦髓 S2–S4\nexplain：交感＝thoracolumbar(T1–L3)；副交感＝craniosacral。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "What is the outflow (origin) of the sympathetic nervous system?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Sympathetic = thoracolumbar (T1–L3); parasympathetic = craniosacral.\n\n正確選項：Thoracolumbar, T1–L3。\n\n\n中文對照：question：交感神經系統的來源(outflow)是？\nchoices：- 胸腰 thoracolumbar，T1–L3\n- 腦薦 craniosacral\n- 只有腦神經\n- 只有薦髓 S2–S4\nexplain：交感＝thoracolumbar(T1–L3)；副交感＝craniosacral。",
+          "choices": [
+            "Thoracolumbar, T1–L3",
+            "Craniosacral",
+            "Cranial nerves only",
+            "Sacral S2–S4 only"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：自主神經系統",
+          "body": "Both sympathetic and parasympathetic preganglionic neurons release ACh on Nn.\n\n正確選項：ACh on nicotinic (Nn)。\n\n\n中文對照：question：所有自主神經節前神經元釋放什麼、作用在哪種受體？\nchoices：- ACh → nicotinic (Nn)\n- NE → α/β\n- ACh → muscarinic\n- EPI → β\nexplain：交感與副交感的節前都是 ACh→Nn。",
+          "keys": [
+            "Both sympathetic and parasympathetic preganglionic neurons release ACh on Nn.\n\n正確選項：ACh on nicotinic (Nn)。\n\n\n中文對照：question：所有自主神經節前神經元釋放什麼、作用在哪種受體？\nchoices：- ACh → nicotinic (Nn)\n- NE → α/β\n- ACh → muscarinic\n- EPI → β\nexplain：交感與副交感的節前都是 ACh→Nn。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "What do all autonomic preganglionic neurons release, and on which receptor?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Both sympathetic and parasympathetic preganglionic neurons release ACh on Nn.\n\n正確選項：ACh on nicotinic (Nn)。\n\n\n中文對照：question：所有自主神經節前神經元釋放什麼、作用在哪種受體？\nchoices：- ACh → nicotinic (Nn)\n- NE → α/β\n- ACh → muscarinic\n- EPI → β\nexplain：交感與副交感的節前都是 ACh→Nn。",
+          "choices": [
+            "ACh on nicotinic (Nn)",
+            "NE on α/β",
+            "ACh on muscarinic",
+            "EPI on β"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：自主神經系統",
+          "body": "Sympathetic postganglionic neurons mostly release NE on α/β; sweat glands are the cholinergic exception.\n\n正確選項：NE (norepinephrine)。\n\n\n中文對照：question：交感神經節後神經元主要釋放什麼？(汗腺除外)\nchoices：- NE（正腎上腺素）\n- ACh\n- EPI\n- dopamine\nexplain：交感節後多為 NE→α/β；汗腺是用 ACh 的例外。",
+          "keys": [
+            "Sympathetic postganglionic neurons mostly release NE on α/β; sweat glands are the cholinergic exception.\n\n正確選項：NE (norepinephrine)。\n\n\n中文對照：question：交感神經節後神經元主要釋放什麼？(汗腺除外)\nchoices：- NE（正腎上腺素）\n- ACh\n- EPI\n- dopamine\nexplain：交感節後多為 NE→α/β；汗腺是用 ACh 的例外。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "What do most sympathetic postganglionic neurons release (sweat glands excepted)?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Sympathetic postganglionic neurons mostly release NE on α/β; sweat glands are the cholinergic exception.\n\n正確選項：NE (norepinephrine)。\n\n\n中文對照：question：交感神經節後神經元主要釋放什麼？(汗腺除外)\nchoices：- NE（正腎上腺素）\n- ACh\n- EPI\n- dopamine\nexplain：交感節後多為 NE→α/β；汗腺是用 ACh 的例外。",
+          "choices": [
+            "NE (norepinephrine)",
+            "ACh",
+            "EPI",
+            "Dopamine"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "What is the outflow (origin) of the sympathetic nervous system?",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "Sympathetic = thoracolumbar (T1–L3); parasympathetic = craniosacral.\n\n正確選項：Thoracolumbar, T1–L3。\n\n\n中文對照：question：交感神經系統的來源(outflow)是？\nchoices：- 胸腰 thoracolumbar，T1–L3\n- 腦薦 craniosacral\n- 只有腦神經\n- 只有薦髓 S2–S4\nexplain：交感＝thoracolumbar(T1–L3)；副交感＝craniosacral。",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "Thoracolumbar, T1–L3"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "What is the outflow (origin) of the sympathetic nervous system?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Sympathetic = thoracolumbar (T1–L3); parasympathetic = craniosacral.\n\n正確選項：Thoracolumbar, T1–L3。\n\n\n中文對照：question：交感神經系統的來源(outflow)是？\nchoices：- 胸腰 thoracolumbar，T1–L3\n- 腦薦 craniosacral\n- 只有腦神經\n- 只有薦髓 S2–S4\nexplain：交感＝thoracolumbar(T1–L3)；副交感＝craniosacral。",
+              "choices": [
+                "Thoracolumbar, T1–L3",
+                "Craniosacral",
+                "Cranial nerves only",
+                "Sacral S2–S4 only"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "What do all autonomic preganglionic neurons release, and on which receptor?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Both sympathetic and parasympathetic preganglionic neurons release ACh on Nn.\n\n正確選項：ACh on nicotinic (Nn)。\n\n\n中文對照：question：所有自主神經節前神經元釋放什麼、作用在哪種受體？\nchoices：- ACh → nicotinic (Nn)\n- NE → α/β\n- ACh → muscarinic\n- EPI → β\nexplain：交感與副交感的節前都是 ACh→Nn。",
+              "choices": [
+                "ACh on nicotinic (Nn)",
+                "NE on α/β",
+                "ACh on muscarinic",
+                "EPI on β"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "What do most sympathetic postganglionic neurons release (sweat glands excepted)?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Sympathetic postganglionic neurons mostly release NE on α/β; sweat glands are the cholinergic exception.\n\n正確選項：NE (norepinephrine)。\n\n\n中文對照：question：交感神經節後神經元主要釋放什麼？(汗腺除外)\nchoices：- NE（正腎上腺素）\n- ACh\n- EPI\n- dopamine\nexplain：交感節後多為 NE→α/β；汗腺是用 ACh 的例外。",
+              "choices": [
+                "NE (norepinephrine)",
+                "ACh",
+                "EPI",
+                "Dopamine"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "Sympathetic = thoracolumbar (T1–L3); parasympathetic = craniosacral.\n\n正確選項：Thoracolumbar, T1–L3。\n\n\n中文對照：question：交感神經系統的來源(outflow)是？\nchoices：- 胸腰 thoracolumbar，T1–L3\n- 腦薦 craniosacral\n- 只有腦神經\n- 只有薦髓 S2–S4\nexplain：交感＝thoracolumbar(T1–L3)；副交感＝craniosacral。",
+            "Both sympathetic and parasympathetic preganglionic neurons release ACh on Nn.\n\n正確選項：ACh on nicotinic (Nn)。\n\n\n中文對照：question：所有自主神經節前神經元釋放什麼、作用在哪種受體？\nchoices：- ACh → nicotinic (Nn)\n- NE → α/β\n- ACh → muscarinic\n- EPI → β\nexplain：交感與副交感的節前都是 ACh→Nn。",
+            "Sympathetic postganglionic neurons mostly release NE on α/β; sweat glands are the cholinergic exception.\n\n正確選項：NE (norepinephrine)。\n\n\n中文對照：question：交感神經節後神經元主要釋放什麼？(汗腺除外)\nchoices：- NE（正腎上腺素）\n- ACh\n- EPI\n- dopamine\nexplain：交感節後多為 NE→α/β；汗腺是用 ACh 的例外。",
+            "Sympathetic = thoracolumbar (T1–L3); parasympathetic = craniosacral.\n\n正確選項：Thoracolumbar, T1–L3。\n\n\n中文對照：question：交感神經系統的來源(outflow)是？\nchoices：- 胸腰 thoracolumbar，T1–L3\n- 腦薦 craniosacral\n- 只有腦神經\n- 只有薦髓 S2–S4\nexplain：交感＝thoracolumbar(T1–L3)；副交感＝craniosacral。",
+            "Both sympathetic and parasympathetic preganglionic neurons release ACh on Nn.\n\n正確選項：ACh on nicotinic (Nn)。\n\n\n中文對照：question：所有自主神經節前神經元釋放什麼、作用在哪種受體？\nchoices：- ACh → nicotinic (Nn)\n- NE → α/β\n- ACh → muscarinic\n- EPI → β\nexplain：交感與副交感的節前都是 ACh→Nn。"
+          ],
+          "flash": [
+            {
+              "front": "What is the outflow (origin) of the sympathetic nervous system?",
+              "back": "Sympathetic = thoracolumbar (T1–L3); parasympathetic = craniosacral.\n\n正確選項：Thoracolumbar, T1–L3。\n\n\n中文對照：question：交感神經系統的來源(outflow)是？\nchoices：- 胸腰 thoracolumbar，T1–L3\n- 腦薦 craniosacral\n- 只有腦神經\n- 只有薦髓 S2–S4\nexplain：交感＝thoracolumbar(T1–L3)；副交感＝craniosacral。"
+            },
+            {
+              "front": "What do all autonomic preganglionic neurons release, and on which receptor?",
+              "back": "Both sympathetic and parasympathetic preganglionic neurons release ACh on Nn.\n\n正確選項：ACh on nicotinic (Nn)。\n\n\n中文對照：question：所有自主神經節前神經元釋放什麼、作用在哪種受體？\nchoices：- ACh → nicotinic (Nn)\n- NE → α/β\n- ACh → muscarinic\n- EPI → β\nexplain：交感與副交感的節前都是 ACh→Nn。"
+            },
+            {
+              "front": "What do most sympathetic postganglionic neurons release (sweat glands excepted)?",
+              "back": "Sympathetic postganglionic neurons mostly release NE on α/β; sweat glands are the cholinergic exception.\n\n正確選項：NE (norepinephrine)。\n\n\n中文對照：question：交感神經節後神經元主要釋放什麼？(汗腺除外)\nchoices：- NE（正腎上腺素）\n- ACh\n- EPI\n- dopamine\nexplain：交感節後多為 NE→α/β；汗腺是用 ACh 的例外。"
+            },
+            {
+              "front": "What is the outflow (origin) of the sympathetic nervous system?",
+              "back": "Sympathetic = thoracolumbar (T1–L3); parasympathetic = craniosacral.\n\n正確選項：Thoracolumbar, T1–L3。\n\n\n中文對照：question：交感神經系統的來源(outflow)是？\nchoices：- 胸腰 thoracolumbar，T1–L3\n- 腦薦 craniosacral\n- 只有腦神經\n- 只有薦髓 S2–S4\nexplain：交感＝thoracolumbar(T1–L3)；副交感＝craniosacral。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-2",
+      "title": "整合驗收 2",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：自主神經系統",
+          "body": "M1/3/5 and α1 = Gq; M2/4 and α2 = Gi; β = Gs.\n\n正確選項：M1/M3/M5 and α1。\n\n\n中文對照：question：下列哪一組受體偶聯 Gq（興奮性）？\nchoices：- M1/M3/M5 與 α1\n- M2/M4 與 α2\n- β1 與 β2\n- Nn 與 Nm\nexplain：M1/3/5、α1＝Gq；M2/4、α2＝Gi；β＝Gs。",
+          "keys": [
+            "M1/3/5 and α1 = Gq; M2/4 and α2 = Gi; β = Gs.\n\n正確選項：M1/M3/M5 and α1。\n\n\n中文對照：question：下列哪一組受體偶聯 Gq（興奮性）？\nchoices：- M1/M3/M5 與 α1\n- M2/M4 與 α2\n- β1 與 β2\n- Nn 與 Nm\nexplain：M1/3/5、α1＝Gq；M2/4、α2＝Gi；β＝Gs。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Which receptor pair couples to Gq (excitatory)?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "M1/3/5 and α1 = Gq; M2/4 and α2 = Gi; β = Gs.\n\n正確選項：M1/M3/M5 and α1。\n\n\n中文對照：question：下列哪一組受體偶聯 Gq（興奮性）？\nchoices：- M1/M3/M5 與 α1\n- M2/M4 與 α2\n- β1 與 β2\n- Nn 與 Nm\nexplain：M1/3/5、α1＝Gq；M2/4、α2＝Gi；β＝Gs。",
+          "choices": [
+            "M1/M3/M5 and α1",
+            "M2/M4 and α2",
+            "β1 and β2",
+            "Nn and Nm"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：自主神經系統",
+          "body": "Sweat glands are the classic exception: sympathetic but cholinergic (ACh).\n\n正確選項：Sympathetic; releases ACh。\n\n\n中文對照：question：汗腺受哪一系統支配？釋放什麼？\nchoices：- 交感；釋放 ACh\n- 副交感；釋放 ACh\n- 交感；釋放 NE\n- 副交感；釋放 NE\nexplain：汗腺是交感支配但用 ACh 的經典例外。",
+          "keys": [
+            "Sweat glands are the classic exception: sympathetic but cholinergic (ACh).\n\n正確選項：Sympathetic; releases ACh。\n\n\n中文對照：question：汗腺受哪一系統支配？釋放什麼？\nchoices：- 交感；釋放 ACh\n- 副交感；釋放 ACh\n- 交感；釋放 NE\n- 副交感；釋放 NE\nexplain：汗腺是交感支配但用 ACh 的經典例外。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Which division innervates sweat glands, and what transmitter is used?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Sweat glands are the classic exception: sympathetic but cholinergic (ACh).\n\n正確選項：Sympathetic; releases ACh。\n\n\n中文對照：question：汗腺受哪一系統支配？釋放什麼？\nchoices：- 交感；釋放 ACh\n- 副交感；釋放 ACh\n- 交感；釋放 NE\n- 副交感；釋放 NE\nexplain：汗腺是交感支配但用 ACh 的經典例外。",
+          "choices": [
+            "Sympathetic; releases ACh",
+            "Parasympathetic; releases ACh",
+            "Sympathetic; releases NE",
+            "Parasympathetic; releases NE"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：自主神經系統",
+          "body": "Sympathetic trunk lies near the cord → short pre, long post; parasympathetic ganglia lie near organs → long pre, short post.\n\n正確選項：Sympathetic: short pre, long post; parasympathetic is the reverse。\n\n\n中文對照：question：交感與副交感的節前/節後纖維長短，何者正確？\nchoices：- 交感節前短節後長；副交感相反\n- 兩者都節前短\n- 交感節前長節後短\n- 副交感無節後纖維\nexplain：交感有 trunk(近脊髓)→前短後長；副交感神經節近效應器→前長後短。",
+          "keys": [
+            "Sympathetic trunk lies near the cord → short pre, long post; parasympathetic ganglia lie near organs → long pre, short post.\n\n正確選項：Sympathetic: short pre, long post; parasympathetic is the reverse。\n\n\n中文對照：question：交感與副交感的節前/節後纖維長短，何者正確？\nchoices：- 交感節前短節後長；副交感相反\n- 兩者都節前短\n- 交感節前長節後短\n- 副交感無節後纖維\nexplain：交感有 trunk(近脊髓)→前短後長；副交感神經節近效應器→前長後短。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Which statement about pre-/postganglionic fiber length is correct?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Sympathetic trunk lies near the cord → short pre, long post; parasympathetic ganglia lie near organs → long pre, short post.\n\n正確選項：Sympathetic: short pre, long post; parasympathetic is the reverse。\n\n\n中文對照：question：交感與副交感的節前/節後纖維長短，何者正確？\nchoices：- 交感節前短節後長；副交感相反\n- 兩者都節前短\n- 交感節前長節後短\n- 副交感無節後纖維\nexplain：交感有 trunk(近脊髓)→前短後長；副交感神經節近效應器→前長後短。",
+          "choices": [
+            "Sympathetic: short pre, long post; parasympathetic is the reverse",
+            "Both have short preganglionic fibers",
+            "Sympathetic: long pre, short post",
+            "Parasympathetic has no postganglionic fiber"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "Which receptor pair couples to Gq (excitatory)?",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "M1/3/5 and α1 = Gq; M2/4 and α2 = Gi; β = Gs.\n\n正確選項：M1/M3/M5 and α1。\n\n\n中文對照：question：下列哪一組受體偶聯 Gq（興奮性）？\nchoices：- M1/M3/M5 與 α1\n- M2/M4 與 α2\n- β1 與 β2\n- Nn 與 Nm\nexplain：M1/3/5、α1＝Gq；M2/4、α2＝Gi；β＝Gs。",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "M1/M3/M5 and α1"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Which receptor pair couples to Gq (excitatory)?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "M1/3/5 and α1 = Gq; M2/4 and α2 = Gi; β = Gs.\n\n正確選項：M1/M3/M5 and α1。\n\n\n中文對照：question：下列哪一組受體偶聯 Gq（興奮性）？\nchoices：- M1/M3/M5 與 α1\n- M2/M4 與 α2\n- β1 與 β2\n- Nn 與 Nm\nexplain：M1/3/5、α1＝Gq；M2/4、α2＝Gi；β＝Gs。",
+              "choices": [
+                "M1/M3/M5 and α1",
+                "M2/M4 and α2",
+                "β1 and β2",
+                "Nn and Nm"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Which division innervates sweat glands, and what transmitter is used?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Sweat glands are the classic exception: sympathetic but cholinergic (ACh).\n\n正確選項：Sympathetic; releases ACh。\n\n\n中文對照：question：汗腺受哪一系統支配？釋放什麼？\nchoices：- 交感；釋放 ACh\n- 副交感；釋放 ACh\n- 交感；釋放 NE\n- 副交感；釋放 NE\nexplain：汗腺是交感支配但用 ACh 的經典例外。",
+              "choices": [
+                "Sympathetic; releases ACh",
+                "Parasympathetic; releases ACh",
+                "Sympathetic; releases NE",
+                "Parasympathetic; releases NE"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Which statement about pre-/postganglionic fiber length is correct?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Sympathetic trunk lies near the cord → short pre, long post; parasympathetic ganglia lie near organs → long pre, short post.\n\n正確選項：Sympathetic: short pre, long post; parasympathetic is the reverse。\n\n\n中文對照：question：交感與副交感的節前/節後纖維長短，何者正確？\nchoices：- 交感節前短節後長；副交感相反\n- 兩者都節前短\n- 交感節前長節後短\n- 副交感無節後纖維\nexplain：交感有 trunk(近脊髓)→前短後長；副交感神經節近效應器→前長後短。",
+              "choices": [
+                "Sympathetic: short pre, long post; parasympathetic is the reverse",
+                "Both have short preganglionic fibers",
+                "Sympathetic: long pre, short post",
+                "Parasympathetic has no postganglionic fiber"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "M1/3/5 and α1 = Gq; M2/4 and α2 = Gi; β = Gs.\n\n正確選項：M1/M3/M5 and α1。\n\n\n中文對照：question：下列哪一組受體偶聯 Gq（興奮性）？\nchoices：- M1/M3/M5 與 α1\n- M2/M4 與 α2\n- β1 與 β2\n- Nn 與 Nm\nexplain：M1/3/5、α1＝Gq；M2/4、α2＝Gi；β＝Gs。",
+            "Sweat glands are the classic exception: sympathetic but cholinergic (ACh).\n\n正確選項：Sympathetic; releases ACh。\n\n\n中文對照：question：汗腺受哪一系統支配？釋放什麼？\nchoices：- 交感；釋放 ACh\n- 副交感；釋放 ACh\n- 交感；釋放 NE\n- 副交感；釋放 NE\nexplain：汗腺是交感支配但用 ACh 的經典例外。",
+            "Sympathetic trunk lies near the cord → short pre, long post; parasympathetic ganglia lie near organs → long pre, short post.\n\n正確選項：Sympathetic: short pre, long post; parasympathetic is the reverse。\n\n\n中文對照：question：交感與副交感的節前/節後纖維長短，何者正確？\nchoices：- 交感節前短節後長；副交感相反\n- 兩者都節前短\n- 交感節前長節後短\n- 副交感無節後纖維\nexplain：交感有 trunk(近脊髓)→前短後長；副交感神經節近效應器→前長後短。",
+            "M1/3/5 and α1 = Gq; M2/4 and α2 = Gi; β = Gs.\n\n正確選項：M1/M3/M5 and α1。\n\n\n中文對照：question：下列哪一組受體偶聯 Gq（興奮性）？\nchoices：- M1/M3/M5 與 α1\n- M2/M4 與 α2\n- β1 與 β2\n- Nn 與 Nm\nexplain：M1/3/5、α1＝Gq；M2/4、α2＝Gi；β＝Gs。",
+            "Sweat glands are the classic exception: sympathetic but cholinergic (ACh).\n\n正確選項：Sympathetic; releases ACh。\n\n\n中文對照：question：汗腺受哪一系統支配？釋放什麼？\nchoices：- 交感；釋放 ACh\n- 副交感；釋放 ACh\n- 交感；釋放 NE\n- 副交感；釋放 NE\nexplain：汗腺是交感支配但用 ACh 的經典例外。"
+          ],
+          "flash": [
+            {
+              "front": "Which receptor pair couples to Gq (excitatory)?",
+              "back": "M1/3/5 and α1 = Gq; M2/4 and α2 = Gi; β = Gs.\n\n正確選項：M1/M3/M5 and α1。\n\n\n中文對照：question：下列哪一組受體偶聯 Gq（興奮性）？\nchoices：- M1/M3/M5 與 α1\n- M2/M4 與 α2\n- β1 與 β2\n- Nn 與 Nm\nexplain：M1/3/5、α1＝Gq；M2/4、α2＝Gi；β＝Gs。"
+            },
+            {
+              "front": "Which division innervates sweat glands, and what transmitter is used?",
+              "back": "Sweat glands are the classic exception: sympathetic but cholinergic (ACh).\n\n正確選項：Sympathetic; releases ACh。\n\n\n中文對照：question：汗腺受哪一系統支配？釋放什麼？\nchoices：- 交感；釋放 ACh\n- 副交感；釋放 ACh\n- 交感；釋放 NE\n- 副交感；釋放 NE\nexplain：汗腺是交感支配但用 ACh 的經典例外。"
+            },
+            {
+              "front": "Which statement about pre-/postganglionic fiber length is correct?",
+              "back": "Sympathetic trunk lies near the cord → short pre, long post; parasympathetic ganglia lie near organs → long pre, short post.\n\n正確選項：Sympathetic: short pre, long post; parasympathetic is the reverse。\n\n\n中文對照：question：交感與副交感的節前/節後纖維長短，何者正確？\nchoices：- 交感節前短節後長；副交感相反\n- 兩者都節前短\n- 交感節前長節後短\n- 副交感無節後纖維\nexplain：交感有 trunk(近脊髓)→前短後長；副交感神經節近效應器→前長後短。"
+            },
+            {
+              "front": "Which receptor pair couples to Gq (excitatory)?",
+              "back": "M1/3/5 and α1 = Gq; M2/4 and α2 = Gi; β = Gs.\n\n正確選項：M1/M3/M5 and α1。\n\n\n中文對照：question：下列哪一組受體偶聯 Gq（興奮性）？\nchoices：- M1/M3/M5 與 α1\n- M2/M4 與 α2\n- β1 與 β2\n- Nn 與 Nm\nexplain：M1/3/5、α1＝Gq；M2/4、α2＝Gi；β＝Gs。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-3",
+      "title": "整合驗收 3",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：自主神經系統",
+          "body": "The adrenal medulla is innervated by sympathetic preganglionic fibers (ACh→Nn); chromaffin cells release EPI/NE into the blood.\n\n正確選項：EPI/NE into the blood (endocrine)。\n\n\n中文對照：question：腎上腺髓質 chromaffin cell 釋放的主要物質與去向？\nchoices：- EPI/NE 釋放入血（內分泌）\n- ACh 到突觸\n- NE 到神經肌肉接合\n- dopamine 到腦\nexplain：腎上腺髓質受交感節前(ACh→Nn)，chromaffin cell 釋放 EPI/NE 入血。",
+          "keys": [
+            "The adrenal medulla is innervated by sympathetic preganglionic fibers (ACh→Nn); chromaffin cells release EPI/NE into the blood.\n\n正確選項：EPI/NE into the blood (endocrine)。\n\n\n中文對照：question：腎上腺髓質 chromaffin cell 釋放的主要物質與去向？\nchoices：- EPI/NE 釋放入血（內分泌）\n- ACh 到突觸\n- NE 到神經肌肉接合\n- dopamine 到腦\nexplain：腎上腺髓質受交感節前(ACh→Nn)，chromaffin cell 釋放 EPI/NE 入血。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "What do adrenal medulla chromaffin cells release, and where?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "The adrenal medulla is innervated by sympathetic preganglionic fibers (ACh→Nn); chromaffin cells release EPI/NE into the blood.\n\n正確選項：EPI/NE into the blood (endocrine)。\n\n\n中文對照：question：腎上腺髓質 chromaffin cell 釋放的主要物質與去向？\nchoices：- EPI/NE 釋放入血（內分泌）\n- ACh 到突觸\n- NE 到神經肌肉接合\n- dopamine 到腦\nexplain：腎上腺髓質受交感節前(ACh→Nn)，chromaffin cell 釋放 EPI/NE 入血。",
+          "choices": [
+            "EPI/NE into the blood (endocrine)",
+            "ACh into a synapse",
+            "NE at the neuromuscular junction",
+            "Dopamine to the brain"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：自主神經系統",
+          "body": "Preganglionic cell bodies sit in the intermediolateral cell column (IML), part of the CNS.\n\n正確選項：Intermediolateral cell column (IML) of the spinal cord。\n\n\n中文對照：question：自主神經節前神經元胞體位於？\nchoices：- 脊髓中側角 IML\n- 背根神經節\n- 腹角 ventral horn\n- 下視丘\nexplain：節前胞體在脊髓 intermediolateral cell column(IML，屬中樞)。",
+          "keys": [
+            "Preganglionic cell bodies sit in the intermediolateral cell column (IML), part of the CNS.\n\n正確選項：Intermediolateral cell column (IML) of the spinal cord。\n\n\n中文對照：question：自主神經節前神經元胞體位於？\nchoices：- 脊髓中側角 IML\n- 背根神經節\n- 腹角 ventral horn\n- 下視丘\nexplain：節前胞體在脊髓 intermediolateral cell column(IML，屬中樞)。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Where are the cell bodies of autonomic preganglionic neurons located?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Preganglionic cell bodies sit in the intermediolateral cell column (IML), part of the CNS.\n\n正確選項：Intermediolateral cell column (IML) of the spinal cord。\n\n\n中文對照：question：自主神經節前神經元胞體位於？\nchoices：- 脊髓中側角 IML\n- 背根神經節\n- 腹角 ventral horn\n- 下視丘\nexplain：節前胞體在脊髓 intermediolateral cell column(IML，屬中樞)。",
+          "choices": [
+            "Intermediolateral cell column (IML) of the spinal cord",
+            "Dorsal root ganglion",
+            "Ventral horn",
+            "Hypothalamus"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "What do adrenal medulla chromaffin cells release, and where?",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "The adrenal medulla is innervated by sympathetic preganglionic fibers (ACh→Nn); chromaffin cells release EPI/NE into the blood.\n\n正確選項：EPI/NE into the blood (endocrine)。\n\n\n中文對照：question：腎上腺髓質 chromaffin cell 釋放的主要物質與去向？\nchoices：- EPI/NE 釋放入血（內分泌）\n- ACh 到突觸\n- NE 到神經肌肉接合\n- dopamine 到腦\nexplain：腎上腺髓質受交感節前(ACh→Nn)，chromaffin cell 釋放 EPI/NE 入血。",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "EPI/NE into the blood (endocrine)"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "What do adrenal medulla chromaffin cells release, and where?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "The adrenal medulla is innervated by sympathetic preganglionic fibers (ACh→Nn); chromaffin cells release EPI/NE into the blood.\n\n正確選項：EPI/NE into the blood (endocrine)。\n\n\n中文對照：question：腎上腺髓質 chromaffin cell 釋放的主要物質與去向？\nchoices：- EPI/NE 釋放入血（內分泌）\n- ACh 到突觸\n- NE 到神經肌肉接合\n- dopamine 到腦\nexplain：腎上腺髓質受交感節前(ACh→Nn)，chromaffin cell 釋放 EPI/NE 入血。",
+              "choices": [
+                "EPI/NE into the blood (endocrine)",
+                "ACh into a synapse",
+                "NE at the neuromuscular junction",
+                "Dopamine to the brain"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Where are the cell bodies of autonomic preganglionic neurons located?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Preganglionic cell bodies sit in the intermediolateral cell column (IML), part of the CNS.\n\n正確選項：Intermediolateral cell column (IML) of the spinal cord。\n\n\n中文對照：question：自主神經節前神經元胞體位於？\nchoices：- 脊髓中側角 IML\n- 背根神經節\n- 腹角 ventral horn\n- 下視丘\nexplain：節前胞體在脊髓 intermediolateral cell column(IML，屬中樞)。",
+              "choices": [
+                "Intermediolateral cell column (IML) of the spinal cord",
+                "Dorsal root ganglion",
+                "Ventral horn",
+                "Hypothalamus"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "The adrenal medulla is innervated by sympathetic preganglionic fibers (ACh→Nn); chromaffin cells release EPI/NE into the blood.\n\n正確選項：EPI/NE into the blood (endocrine)。\n\n\n中文對照：question：腎上腺髓質 chromaffin cell 釋放的主要物質與去向？\nchoices：- EPI/NE 釋放入血（內分泌）\n- ACh 到突觸\n- NE 到神經肌肉接合\n- dopamine 到腦\nexplain：腎上腺髓質受交感節前(ACh→Nn)，chromaffin cell 釋放 EPI/NE 入血。",
+            "Preganglionic cell bodies sit in the intermediolateral cell column (IML), part of the CNS.\n\n正確選項：Intermediolateral cell column (IML) of the spinal cord。\n\n\n中文對照：question：自主神經節前神經元胞體位於？\nchoices：- 脊髓中側角 IML\n- 背根神經節\n- 腹角 ventral horn\n- 下視丘\nexplain：節前胞體在脊髓 intermediolateral cell column(IML，屬中樞)。",
+            "The adrenal medulla is innervated by sympathetic preganglionic fibers (ACh→Nn); chromaffin cells release EPI/NE into the blood.\n\n正確選項：EPI/NE into the blood (endocrine)。\n\n\n中文對照：question：腎上腺髓質 chromaffin cell 釋放的主要物質與去向？\nchoices：- EPI/NE 釋放入血（內分泌）\n- ACh 到突觸\n- NE 到神經肌肉接合\n- dopamine 到腦\nexplain：腎上腺髓質受交感節前(ACh→Nn)，chromaffin cell 釋放 EPI/NE 入血。",
+            "Preganglionic cell bodies sit in the intermediolateral cell column (IML), part of the CNS.\n\n正確選項：Intermediolateral cell column (IML) of the spinal cord。\n\n\n中文對照：question：自主神經節前神經元胞體位於？\nchoices：- 脊髓中側角 IML\n- 背根神經節\n- 腹角 ventral horn\n- 下視丘\nexplain：節前胞體在脊髓 intermediolateral cell column(IML，屬中樞)。",
+            "The adrenal medulla is innervated by sympathetic preganglionic fibers (ACh→Nn); chromaffin cells release EPI/NE into the blood.\n\n正確選項：EPI/NE into the blood (endocrine)。\n\n\n中文對照：question：腎上腺髓質 chromaffin cell 釋放的主要物質與去向？\nchoices：- EPI/NE 釋放入血（內分泌）\n- ACh 到突觸\n- NE 到神經肌肉接合\n- dopamine 到腦\nexplain：腎上腺髓質受交感節前(ACh→Nn)，chromaffin cell 釋放 EPI/NE 入血。"
+          ],
+          "flash": [
+            {
+              "front": "What do adrenal medulla chromaffin cells release, and where?",
+              "back": "The adrenal medulla is innervated by sympathetic preganglionic fibers (ACh→Nn); chromaffin cells release EPI/NE into the blood.\n\n正確選項：EPI/NE into the blood (endocrine)。\n\n\n中文對照：question：腎上腺髓質 chromaffin cell 釋放的主要物質與去向？\nchoices：- EPI/NE 釋放入血（內分泌）\n- ACh 到突觸\n- NE 到神經肌肉接合\n- dopamine 到腦\nexplain：腎上腺髓質受交感節前(ACh→Nn)，chromaffin cell 釋放 EPI/NE 入血。"
+            },
+            {
+              "front": "Where are the cell bodies of autonomic preganglionic neurons located?",
+              "back": "Preganglionic cell bodies sit in the intermediolateral cell column (IML), part of the CNS.\n\n正確選項：Intermediolateral cell column (IML) of the spinal cord。\n\n\n中文對照：question：自主神經節前神經元胞體位於？\nchoices：- 脊髓中側角 IML\n- 背根神經節\n- 腹角 ventral horn\n- 下視丘\nexplain：節前胞體在脊髓 intermediolateral cell column(IML，屬中樞)。"
+            },
+            {
+              "front": "What do adrenal medulla chromaffin cells release, and where?",
+              "back": "The adrenal medulla is innervated by sympathetic preganglionic fibers (ACh→Nn); chromaffin cells release EPI/NE into the blood.\n\n正確選項：EPI/NE into the blood (endocrine)。\n\n\n中文對照：question：腎上腺髓質 chromaffin cell 釋放的主要物質與去向？\nchoices：- EPI/NE 釋放入血（內分泌）\n- ACh 到突觸\n- NE 到神經肌肉接合\n- dopamine 到腦\nexplain：腎上腺髓質受交感節前(ACh→Nn)，chromaffin cell 釋放 EPI/NE 入血。"
+            },
+            {
+              "front": "Where are the cell bodies of autonomic preganglionic neurons located?",
+              "back": "Preganglionic cell bodies sit in the intermediolateral cell column (IML), part of the CNS.\n\n正確選項：Intermediolateral cell column (IML) of the spinal cord。\n\n\n中文對照：question：自主神經節前神經元胞體位於？\nchoices：- 脊髓中側角 IML\n- 背根神經節\n- 腹角 ventral horn\n- 下視丘\nexplain：節前胞體在脊髓 intermediolateral cell column(IML，屬中樞)。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam110-u05",
+    "subject": "optometry",
+    "name": "客觀驗光：視網膜檢影與綜合驗光儀｜110 年國考",
+    "year": 110,
+    "path": [
+      "114 大一下",
+      "110 年國考",
+      "視光學",
+      "第05單元 客觀驗光：視網膜檢影與綜合驗光儀"
+    ],
+    "order": 5,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0291",
+      "type": "single",
+      "stem": "關於視網膜檢影鏡法（retinoscopy）檢查，下列何者最不適當？",
+      "choices": [
+        "用您的右眼檢查病人的左眼",
+        "距離病人大約50～67 cm",
+        "最好把房間光線調暗些",
+        "請病人張開雙眼並注視遠方目標"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n檢影眼別站位\n\n**白話理解**\n同側眼檢查可避免頭部遮擋患者遠標，並維持接近視軸；其餘為標準靜態檢影條件。\n\n**口訣**\n右對右、左對左。\n\n**選項 A：A 選項**\n錯誤，眼別交叉。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\110年驗光師高考.pdf；原題編號 16；舊 ID opt-q0291",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0291",
+      "source_number": "16",
+      "source_year": "110",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "檢影眼別站位",
+        "simple": "同側眼檢查可避免頭部遮擋患者遠標，並維持接近視軸；其餘為標準靜態檢影條件。",
+        "memory": "右對右、左對左。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "錯誤，眼別交叉。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0292",
+      "type": "single",
+      "stem": "進行視網膜檢影鏡檢查時，若在患者之眼底反光中觀察到剪刀式反光（scissors’s reflex）可能是由於光學像 差，如：彗星像差所引起的。則下列那一類型患者眼前進行視網膜檢影鏡檢查時，較不會觀察到剪刀式反 光？",
+      "choices": [
+        "圓錐角膜（keratoconus）",
+        "角膜結痂（corneal scarring）",
+        "縮瞳（miosis）",
+        "高度近視（high myopia）"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n剪刀反光與瞳孔\n\n**白話理解**\n小瞳孔遮蔽周邊不規則光線，使彗差與角膜不規則造成的剪刀動較不明顯；圓錐角膜、疤痕、高度近視較可見。\n\n**口訣**\n小瞳孔擋掉周邊像差，剪刀動較少。\n\n**選項 A：A 選項**\n常見。\n\n**選項 B：B 選項**\n可見。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n可能可見。\n\n**原始出處**\n驗光師\\視光學\\110年驗光師高考.pdf；原題編號 17；舊 ID opt-q0292",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0292",
+      "source_number": "17",
+      "source_year": "110",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "剪刀反光與瞳孔",
+        "simple": "小瞳孔遮蔽周邊不規則光線，使彗差與角膜不規則造成的剪刀動較不明顯；圓錐角膜、疤痕、高度近視較可見。",
+        "memory": "小瞳孔擋掉周邊像差，剪刀動較少。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "常見。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "可見。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "可能可見。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0293",
+      "type": "single",
+      "stem": "關於視網膜檢影鏡法（retinoscopy）檢查時，被檢查者眼球在180 度及90 度的方向，皆可以+3.00 D 達到 中和，若檢查距離為67 cm，被檢查者的屈光度數為下列何者？",
+      "choices": [
+        "+1.50 DS",
+        "+3.00 DS",
+        "+4.50 DS",
+        "+6.00 DS"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n球面檢影\n\n**白話理解**\n67cm工作距離1.50D，兩經線毛值都+3D，實際球面＝+3−1.5＝+1.5D，無散光。\n\n**口訣**\n67cm毛值減1.5。\n\n**考點與解題步驟**\n- +3−1.5＝+1.5D。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n漏扣WD。\n\n**選項 C：C 選項**\n錯誤相加。\n\n**選項 D：D 選項**\n過高。\n\n**原始出處**\n驗光師\\視光學\\110年驗光師高考.pdf；原題編號 20；舊 ID opt-q0293",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0293",
+      "source_number": "20",
+      "source_year": "110",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "球面檢影",
+        "simple": "67cm工作距離1.50D，兩經線毛值都+3D，實際球面＝+3−1.5＝+1.5D，無散光。",
+        "memory": "67cm毛值減1.5。",
+        "examFocus": [
+          "+3−1.5＝+1.5D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "漏扣WD。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "錯誤相加。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "過高。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0316",
+      "type": "single",
+      "stem": "有關靜態視網膜檢影法（static retinoscopy）的敘述，下列何者正確？",
+      "choices": [
+        "建議用6/6 的視標請受測者注視",
+        "檢查室儘量保持光線明亮以幫助受檢者注視視標",
+        "檢查時希望受測者調節力為放鬆的狀態",
+        "一般檢查時會建議用凹面鏡模式（concave mirror mode）以方便觀察"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n靜態檢影條件\n\n**白話理解**\n應用較大遠標、昏暗但非全黑環境，通常用平面鏡模式；目的取得無調節遠點。\n\n**口訣**\n靜態＝遠注視、放調節、平面鏡。\n\n**選項 A：A 選項**\n6/6小視標可能刺激調節。\n\n**選項 B：B 選項**\n過亮不利看反光。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n一般用plane mirror。\n\n**原始出處**\n驗光生\\驗光學概要\\110年驗光生普考.pdf；原題編號 25；舊 ID opt-q0316",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0316",
+      "source_number": "25",
+      "source_year": "110",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "靜態檢影條件",
+        "simple": "應用較大遠標、昏暗但非全黑環境，通常用平面鏡模式；目的取得無調節遠點。",
+        "memory": "靜態＝遠注視、放調節、平面鏡。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "6/6小視標可能刺激調節。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "過亮不利看反光。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "一般用plane mirror。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0318",
+      "type": "single",
+      "stem": "檢查者於距離患者眼前67 cm 處實施靜態視網膜檢影法，使用+2.00 D 的工作輔助鏡片，得到中和度數 為-6.00 DS，則患眼的屈光異常為下列何者？",
+      "choices": [
+        "-4.50 DS",
+        "-5.00 DS",
+        "-5.50 DS",
+        "-6.00 DS"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n錯用工作輔助鏡\n\n**白話理解**\n67cm使用+2D工作輔助鏡，但正確WD鏡應+1.5D，多放+0.5D；中和讀值−6D需補回0.5，實際為−5.5D。\n\n**口訣**\n67cm放+2比應有+1.5多0.5，結果修正+0.5。\n\n**選項 A：A 選項**\n修正過多。\n\n**選項 B：B 選項**\n差1D。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n未修正錯誤工作鏡。\n\n**原始出處**\n驗光生\\驗光學概要\\110年驗光生普考.pdf；原題編號 27；舊 ID opt-q0318",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0318",
+      "source_number": "27",
+      "source_year": "110",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "錯用工作輔助鏡",
+        "simple": "67cm使用+2D工作輔助鏡，但正確WD鏡應+1.5D，多放+0.5D；中和讀值−6D需補回0.5，實際為−5.5D。",
+        "memory": "67cm放+2比應有+1.5多0.5，結果修正+0.5。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "修正過多。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "差1D。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "未修正錯誤工作鏡。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0319",
+      "type": "single",
+      "stem": "在進行靜態視網膜檢影法（static retinoscopy）時，看到了「順動（with motion）」，下列何者為此情形的可 能原因？①遠點（far point）在視網膜鏡（retinoscope）的後方 ②遠點在受測者眼睛的後方 ③受測者為 正視眼（emmetropia） ④受測者有高度近視（myopia）",
+      "choices": [
+        "①②",
+        "①②③",
+        "①③",
+        "①③④"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n順動可能狀態\n\n**白話理解**\n平面鏡下遠點在檢查者後方、眼後虛遠點的遠視、以及正視眼在有限工作距離都呈順動；高度近視通常逆動。\n\n**口訣**\n順動包括遠視、正視、低近視。\n\n**選項 A：A 選項**\n漏正視。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n漏遠視。\n\n**選項 D：D 選項**\n④錯。\n\n**原始出處**\n驗光生\\驗光學概要\\110年驗光生普考.pdf；原題編號 28；舊 ID opt-q0319",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0319",
+      "source_number": "28",
+      "source_year": "110",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "順動可能狀態",
+        "simple": "平面鏡下遠點在檢查者後方、眼後虛遠點的遠視、以及正視眼在有限工作距離都呈順動；高度近視通常逆動。",
+        "memory": "順動包括遠視、正視、低近視。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "漏正視。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "漏遠視。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "④錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam112-u06",
+    "subject": "optometry",
+    "name": "角膜曲率測量：K 值與角膜地圖｜112 年國考",
+    "year": 112,
+    "path": [
+      "114 大一下",
+      "112 年國考",
+      "視光學",
+      "第06單元 角膜曲率測量：K 值與角膜地圖"
+    ],
+    "order": 6,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0363",
+      "type": "single",
+      "stem": "當水平聚焦線（horizontal focal line）比垂直聚焦線（vertical focal line）靠近眼球前端時，這是何種散 光，而平K（flat K）值位於那一子午線？",
+      "choices": [
+        "逆規（against-the-rule）；水平子午線（horizontal meridian）",
+        "順規（with-the-rule）；垂直子午線（vertical meridian）",
+        "逆規（against-the-rule）；垂直子午線（vertical meridian）",
+        "順規（with-the-rule）；水平子午線（horizontal meridian）"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n焦線與角膜主經線\n\n**白話理解**\n水平焦線較前表示垂直主經線屈光力較強，角膜垂直較陡，屬WTR；因此水平主經線較平。\n\n**口訣**\n垂直陡＝WTR；平K水平。\n\n**選項 A：A 選項**\n分類與flat K錯。\n\n**選項 B：B 選項**\nflat K錯。\n\n**選項 C：C 選項**\n分類錯。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\112年驗光師高考.pdf；原題編號 1；舊 ID opt-q0363",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0363",
+      "source_number": "1",
+      "source_year": "112",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "焦線與角膜主經線",
+        "simple": "水平焦線較前表示垂直主經線屈光力較強，角膜垂直較陡，屬WTR；因此水平主經線較平。",
+        "memory": "垂直陡＝WTR；平K水平。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "分類與flat K錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "flat K錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "分類錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0387",
+      "type": "single",
+      "stem": "在使用角膜地形圖儀（keratoscopy 或placido disc）時，當觀察或測量之環狀線間距離愈靠近則代表角膜的 弧度愈：",
+      "choices": [
+        "平坦",
+        "陡",
+        "愈不規則",
+        "愈規則"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nPlacido環判讀\n\n**白話理解**\n較陡曲面反射的環影間距縮小；較平區環距較寬。\n\n**口訣**\n環靠近＝角膜陡。\n\n**選項 A：A 選項**\n方向反。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n密不等於不規則。\n\n**選項 D：D 選項**\n也不代表規則性。\n\n**原始出處**\n驗光生\\隱形眼鏡學概要\\112年驗光生普考.pdf；原題編號 31；舊 ID opt-q0387",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜隱形眼鏡學概要"
+      ],
+      "source_id": "opt-q0387",
+      "source_number": "31",
+      "source_year": "112",
+      "source_subject": "驗光生普考｜隱形眼鏡學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "Placido環判讀",
+        "simple": "較陡曲面反射的環影間距縮小；較平區環距較寬。",
+        "memory": "環靠近＝角膜陡。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "方向反。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "密不等於不規則。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "也不代表規則性。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0396",
+      "type": "single",
+      "stem": "關於角膜弧度儀測量之敘述，下列何者錯誤？",
+      "choices": [
+        "屈光不正的患者，透過角膜弧度儀測量角膜，可有助於了解為軸性或屈光性",
+        "驗配隱形眼鏡搭配角膜弧度儀，可得知患者的角膜曲率半徑（corneal radius of curvature）",
+        "角膜弧度儀實際上測得的為前、後角膜弧度平均值",
+        "角膜弧度與屈光度換算公式F =（n' - n ）/ r，其中n 為空氣折射率，n' 為角膜折射率"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nK儀假設折射率\n\n**白話理解**\n它量前表面反射，再用假設角膜折射率1.3375估算總角膜力；可提供半徑並協助判斷屈光性因素。\n\n**口訣**\n實測前表面，用假設index包入後表面。\n\n**選項 A：A 選項**\n可作屈光性線索。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n錯誤。\n\n**選項 D：D 選項**\n基本折射公式正確。\n\n**原始出處**\n驗光生\\驗光學概要\\112年驗光生普考.pdf；原題編號 27；舊 ID opt-q0396",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0396",
+      "source_number": "27",
+      "source_year": "112",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "K儀假設折射率",
+        "simple": "它量前表面反射，再用假設角膜折射率1.3375估算總角膜力；可提供半徑並協助判斷屈光性因素。",
+        "memory": "實測前表面，用假設index包入後表面。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "可作屈光性線索。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "基本折射公式正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0398",
+      "type": "single",
+      "stem": "以角膜弧度儀測量檢查發現角膜弧度H：7.95@180；V：7.85@090，此患者的角膜散光屬於下列何者？",
+      "choices": [
+        "順散光",
+        "逆散光",
+        "斜散光",
+        "不規則散光"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n半徑判WTR\n\n**白話理解**\n90°半徑7.85小於180°7.95，垂直較陡，屬WTR。\n\n**口訣**\n90半徑小＝垂直陡＝順散。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n水平較陡才ATR。\n\n**選項 C：C 選項**\n軸非斜向。\n\n**選項 D：D 選項**\n主經線規則垂直。\n\n**原始出處**\n驗光生\\驗光學概要\\112年驗光生普考.pdf；原題編號 30；舊 ID opt-q0398",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0398",
+      "source_number": "30",
+      "source_year": "112",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "半徑判WTR",
+        "simple": "90°半徑7.85小於180°7.95，垂直較陡，屬WTR。",
+        "memory": "90半徑小＝垂直陡＝順散。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "水平較陡才ATR。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "軸非斜向。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "主經線規則垂直。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 import re, json
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / '資源' / '114 大一下' / '_來源'
+OUT = ROOT / '資源' / '114 大一下' / '.來源'
 HOSTS = ['glittering-pony-c07f88', 'lustrous-malasada-6d28a9', 'enchanting-mandazi-e371e7', 'gleeful-paletas-d56a9b', 'harmonious-rugelach-6d5134', 'frabjous-druid-ff547a']
 
 def download(host):

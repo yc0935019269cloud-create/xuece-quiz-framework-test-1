@@ -1,0 +1,349 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam113-u09",
+    "subject": "optometry",
+    "name": "近點調節 NPA 與近點聚合 NPC｜113 年國考",
+    "year": 113,
+    "path": [
+      "114 大一下",
+      "113 年國考",
+      "視光學",
+      "第09單元 近點調節 NPA 與近點聚合 NPC"
+    ],
+    "order": 9,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0406",
+      "type": "single",
+      "stem": "一位正視眼患者，其近點（near point of accommodation）在眼前50 公分，若工作距離是眼前20 公分，老 花眼眼鏡的度數應約為多少？",
+      "choices": [
+        "+3.00 D",
+        "+5.00 D",
+        "+2.00 D",
+        "+1.00 D"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n由近點與工作距離算ADD\n\n**白話理解**\n近點50cm代表AA2D；20cm需求5D。若讓患者使用全部AA，最低補償5−2=3D，與答案一致。\n\n**口訣**\n20cm5D減AA2D。\n\n**考點與解題步驟**\n- 5−2=+3D。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n完全不使用調節。\n\n**選項 C：C 選項**\n不足。\n\n**選項 D：D 選項**\n不足。\n\n**原始出處**\n驗光師\\視光學\\113年驗光師高考.pdf；原題編號 9；舊 ID opt-q0406",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0406",
+      "source_number": "9",
+      "source_year": "113",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "由近點與工作距離算ADD",
+        "simple": "近點50cm代表AA2D；20cm需求5D。若讓患者使用全部AA，最低補償5−2=3D，與答案一致。",
+        "memory": "20cm5D減AA2D。",
+        "examFocus": [
+          "5−2=+3D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "完全不使用調節。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "不足。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "不足。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0413",
+      "type": "single",
+      "stem": "當眼睛進行調節作用（accomodation）時，不會產生下列何種現象？",
+      "choices": [
+        "物體在眼內形成的影像會往眼球前方移動",
+        "睫狀肌（ciliary muscle）收縮造成水晶體厚度變厚",
+        "睫狀肌收縮使得懸韌帶拉緊",
+        "眼球的總屈光度增加"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n調節變化\n\n**白話理解**\n睫狀肌收縮使懸韌帶放鬆，晶體變厚、總屈光力增加，使原本焦點向前移。\n\n**口訣**\n肌縮帶鬆，不是拉緊。\n\n**選項 A：A 選項**\n會發生。\n\n**選項 B：B 選項**\n正確現象。\n\n**選項 C：C 選項**\n不會，答案。\n\n**選項 D：D 選項**\n會。\n\n**原始出處**\n驗光師\\視覺光學\\113年驗光師高考.pdf；原題編號 43；舊 ID opt-q0413",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0413",
+      "source_number": "43",
+      "source_year": "113",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "調節變化",
+        "simple": "睫狀肌收縮使懸韌帶放鬆，晶體變厚、總屈光力增加，使原本焦點向前移。",
+        "memory": "肌縮帶鬆，不是拉緊。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "會發生。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確現象。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "不會，答案。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "會。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0423",
+      "type": "single",
+      "stem": "一名近視-3.50DS 的患者，其調節近點為眼前10 cm，其調節幅度（Amplitude of Accommodation）為：",
+      "choices": [
+        "6.50 D",
+        "3.50 D",
+        "1.00 D",
+        "4.50 D"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n未矯正近視AA\n\n**白話理解**\n裸眼近點10cm總屈光力10D，未矯正近視3.5D已提供，AA=10−3.5=6.5D。\n\n**口訣**\n近點總D減近視D。\n\n**考點與解題步驟**\n- 10−3.5=6.5D。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n只是近視量。\n\n**選項 C：C 選項**\n過低。\n\n**選項 D：D 選項**\n計算錯。\n\n**原始出處**\n驗光生\\驗光學概要\\113年驗光生普考.pdf；原題編號 42；舊 ID opt-q0423",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0423",
+      "source_number": "42",
+      "source_year": "113",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "未矯正近視AA",
+        "simple": "裸眼近點10cm總屈光力10D，未矯正近視3.5D已提供，AA=10−3.5=6.5D。",
+        "memory": "近點總D減近視D。",
+        "examFocus": [
+          "10−3.5=6.5D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "只是近視量。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "過低。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "計算錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0424",
+      "type": "single",
+      "stem": "下列何種年齡，其眼球調節幅度（accommodative amplitude）約為0.5 D（diopter）到1.0 D（diopter）？",
+      "choices": [
+        "15 歲",
+        "30 歲",
+        "45 歲",
+        "60 歲"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n年齡與AA\n\n**白話理解**\n晶體老化使AA持續下降，約60歲時只剩極少真調節。\n\n**口訣**\n60歲接近0到1D。\n\n**選項 A：A 選項**\nAA很高。\n\n**選項 B：B 選項**\n仍高。\n\n**選項 C：C 選項**\n通常數D。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\驗光學概要\\113年驗光生普考.pdf；原題編號 46；舊 ID opt-q0424",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0424",
+      "source_number": "46",
+      "source_year": "113",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "年齡與AA",
+        "simple": "晶體老化使AA持續下降，約60歲時只剩極少真調節。",
+        "memory": "60歲接近0到1D。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "AA很高。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "仍高。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "通常數D。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0425",
+      "type": "single",
+      "stem": "測量調節幅度（amplitude of accommodation, AA）檢查時，下列敘述何者錯誤？",
+      "choices": [
+        "使用推進法測得可保持清晰之最短距離後，最後的紀錄結果是以公分為單位而非公尺",
+        "測試目的在測量水晶體因近點刺激能改變焦點的能力",
+        "為單眼進行測試",
+        "可配戴近用老花眼鏡進行測試"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\nAA結果單位\n\n**白話理解**\npush-up先量距離，但AA臨床結果以屈光度表示；測的是水晶體調焦能力，通常單眼並戴最佳遠用矯正，不應以近用ADD代替真AA。\n\n**口訣**\n距離是原始值，AA最後用D。\n\n**選項 A：A 選項**\n錯誤，最終記D。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n題庫未選，但一般應戴最佳遠矯而非老花近用鏡。\n\n**原始出處**\n驗光生\\驗光學概要\\113年驗光生普考.pdf；原題編號 48；舊 ID opt-q0425",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0425",
+      "source_number": "48",
+      "source_year": "113",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "AA結果單位",
+        "simple": "push-up先量距離，但AA臨床結果以屈光度表示；測的是水晶體調焦能力，通常單眼並戴最佳遠用矯正，不應以近用ADD代替真AA。",
+        "memory": "距離是原始值，AA最後用D。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "錯誤，最終記D。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "題庫未選，但一般應戴最佳遠矯而非老花近用鏡。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0426",
+      "type": "single",
+      "stem": "使用霍夫史底特氏（Hofstetter’s）幅度公式計算調節幅度（amplitude of accommodation, AA）時，若患者年 紀50 歲，期望的幅度平均值為何？",
+      "choices": [
+        "2.50 D",
+        "3.00 D",
+        "3.50 D",
+        "5.00 D"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nHofstetter平均值\n\n**白話理解**\n18.5−0.30×50＝3.5D。\n\n**口訣**\n50歲平均3.5D。\n\n**考點與解題步驟**\n- 18.5−15=3.5。\n\n**選項 A：A 選項**\n是最小值。\n\n**選項 B：B 選項**\n低0.5。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n過高。\n\n**原始出處**\n驗光生\\驗光學概要\\113年驗光生普考.pdf；原題編號 49；舊 ID opt-q0426",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0426",
+      "source_number": "49",
+      "source_year": "113",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "Hofstetter平均值",
+        "simple": "18.5−0.30×50＝3.5D。",
+        "memory": "50歲平均3.5D。",
+        "examFocus": [
+          "18.5−15=3.5。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "是最小值。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "低0.5。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "過高。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

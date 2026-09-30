@@ -1,0 +1,563 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam109-u06",
+    "subject": "optometry",
+    "name": "角膜曲率測量：K 值與角膜地圖｜109 年國考",
+    "year": 109,
+    "path": [
+      "114 大一下",
+      "109 年國考",
+      "視光學",
+      "第06單元 角膜曲率測量：K 值與角膜地圖"
+    ],
+    "order": 6,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0223",
+      "type": "single",
+      "stem": "一個人看遠方時需配戴-2.00DS/+1.25DC×180 的眼鏡矯正，可以得到最佳視力。假設此人的散光全由角 膜引起，角膜弧度測量的結果為：",
+      "choices": [
+        "順散光，角膜水平方向較平坦",
+        "順散光，角膜垂直方向較平坦",
+        "逆散光，角膜水平方向較平坦",
+        "逆散光，角膜垂直方向較平坦"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n正柱處方反推角膜散光\n\n**白話理解**\n−2/+1.25×180為正柱，180軸無柱力，90方向增加+1.25；等效負柱為−0.75/−1.25×90，表示水平角膜較陡、垂直較平，屬ATR。\n\n**口訣**\n正柱180等效負柱90＝ATR，垂直平。\n\n**選項 A：A 選項**\n分類錯。\n\n**選項 B：B 選項**\n分類錯。\n\n**選項 C：C 選項**\n平坦方向錯。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視覺光學\\109年驗光師特考.pdf；原題編號 7；舊 ID opt-q0223",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光師特考｜視覺光學"
+      ],
+      "source_id": "opt-q0223",
+      "source_number": "7",
+      "source_year": "109",
+      "source_subject": "驗光師特考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "正柱處方反推角膜散光",
+        "simple": "−2/+1.25×180為正柱，180軸無柱力，90方向增加+1.25；等效負柱為−0.75/−1.25×90，表示水平角膜較陡、垂直較平，屬ATR。",
+        "memory": "正柱180等效負柱90＝ATR，垂直平。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "分類錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "分類錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "平坦方向錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0229",
+      "type": "single",
+      "stem": "有一材質Dk 值是40，中心厚度是0.2 mm，試問傳氧率（oxygen transmission）多少？",
+      "choices": [
+        "40",
+        "8",
+        "20",
+        "200"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n隱形眼鏡Dk/t\n\n**白話理解**\n依原題答案表與題目採用的 Dk/t 尺度換算，答案為 20。這類題目的 Dk 與厚度常帶有約定尺度，不能把題面數字當作無單位的 40÷0.2。\n\n**口訣**\n先確認厚度單位與Dk/t尺度；本題答案20。\n\n**考點與解題步驟**\n- 依題庫標準答案：40÷2＝20。\n\n**選項 A：A 選項**\n未除厚度。\n\n**選項 B：B 選項**\n不符。\n\n**選項 C：C 選項**\n題庫答案。\n\n**選項 D：D 選項**\n若直接用0.2相除會得200，反映單位歧義。\n\n**原始出處**\n驗光師\\隱形眼鏡學與配鏡學\\109年驗光師特考.pdf；原題編號 4；舊 ID opt-q0229",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光師特考｜隱形眼鏡學與配鏡學"
+      ],
+      "source_id": "opt-q0229",
+      "source_number": "4",
+      "source_year": "109",
+      "source_subject": "驗光師特考｜隱形眼鏡學與配鏡學",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "隱形眼鏡Dk/t",
+        "simple": "依原題答案表與題目採用的 Dk/t 尺度換算，答案為 20。這類題目的 Dk 與厚度常帶有約定尺度，不能把題面數字當作無單位的 40÷0.2。",
+        "memory": "先確認厚度單位與Dk/t尺度；本題答案20。",
+        "examFocus": [
+          "依題庫標準答案：40÷2＝20。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "未除厚度。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "不符。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "題庫答案。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "若直接用0.2相除會得200，反映單位歧義。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0239",
+      "type": "single",
+      "stem": "若一眼以角膜弧度儀（keratometry）量測出其角膜散光為-2.25 DC×180，則預測其屈光散光（refractive astigmatism）為何？",
+      "choices": [
+        "-1.75 DC×180",
+        "-1.25 DC×180",
+        "-2.75 DC×180",
+        "-3.25 DC×180"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\nJaval rule預測\n\n**白話理解**\n依Javal rule，總屈光散光約為1.25倍角膜散光再加約−0.50D ATR內部散光；本題課程採簡化預測得到約−1.75×180。\n\n**口訣**\nWTR角膜散光常被內部ATR抵掉約0.5D。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n低估。\n\n**選項 C：C 選項**\n高估且未抵內部散光。\n\n**選項 D：D 選項**\n過高。\n\n**原始出處**\n驗光師\\視覺光學\\109年驗光師高考.pdf；原題編號 36；舊 ID opt-q0239",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0239",
+      "source_number": "36",
+      "source_year": "109",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "Javal rule預測",
+        "simple": "依Javal rule，總屈光散光約為1.25倍角膜散光再加約−0.50D ATR內部散光；本題課程採簡化預測得到約−1.75×180。",
+        "memory": "WTR角膜散光常被內部ATR抵掉約0.5D。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "低估。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "高估且未抵內部散光。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "過高。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0240",
+      "type": "single",
+      "stem": "角膜弧度測量儀測得一角膜弧度曲率半徑為7 mm，如角膜的折射率以1.3375 計算，此角膜屈光度約為：",
+      "choices": [
+        "50.2 D",
+        "48.2 D",
+        "45.2 D",
+        "40.2 D"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n半徑轉K值\n\n**白話理解**\nF＝337.5÷7.00＝48.21D。\n\n**口訣**\n7mm角膜很陡，約48.2D。\n\n**考點與解題步驟**\n- 337.5/7＝48.2D。\n\n**選項 A：A 選項**\n高估。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n低估。\n\n**選項 D：D 選項**\n低估。\n\n**原始出處**\n驗光師\\視覺光學\\109年驗光師高考.pdf；原題編號 37；舊 ID opt-q0240",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0240",
+      "source_number": "37",
+      "source_year": "109",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "半徑轉K值",
+        "simple": "F＝337.5÷7.00＝48.21D。",
+        "memory": "7mm角膜很陡，約48.2D。",
+        "examFocus": [
+          "337.5/7＝48.2D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "高估。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "低估。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "低估。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0243",
+      "type": "single",
+      "stem": "有關角膜弧度測量儀，下列何者錯誤？",
+      "choices": [
+        "角膜弧度儀，是一項容易操作、簡單非侵入性的檢查，是驗配隱形眼鏡一個重要的步驟",
+        "可以測量角膜屈光度、角膜散光和晶體散光",
+        "主要測量角膜中心3 mm 的地方，甚至更大範圍",
+        "測出的屈光度是來自角膜前表面"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nK儀可測項目\n\n**白話理解**\nkeratometer是非侵入式角膜前表面曲率量測，主要看中央約3mm，對CL基弧評估重要；晶體散光需由全眼與角膜資料推算。\n\n**口訣**\nK儀只直接看角膜，不看水晶體。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n錯誤。\n\n**選項 C：C 選項**\n大致正確。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\隱形眼鏡學與配鏡學\\109年驗光師高考.pdf；原題編號 15；舊 ID opt-q0243",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光師高考｜隱形眼鏡學與配鏡學"
+      ],
+      "source_id": "opt-q0243",
+      "source_number": "15",
+      "source_year": "109",
+      "source_subject": "驗光師高考｜隱形眼鏡學與配鏡學",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "K儀可測項目",
+        "simple": "keratometer是非侵入式角膜前表面曲率量測，主要看中央約3mm，對CL基弧評估重要；晶體散光需由全眼與角膜資料推算。",
+        "memory": "K儀只直接看角膜，不看水晶體。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "大致正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0248",
+      "type": "single",
+      "stem": "關於角膜弧度的測量，下列敘述何者正確？",
+      "choices": [
+        "角膜弧度43.00D@180/43.00D@090，表示眼睛沒有散光",
+        "一般傳統角膜弧度儀測量原理中，是假設角膜中心為球面",
+        "角膜曲率半徑愈大表示屈光度愈大，罹患近視的可能性也大",
+        "垂直主經線測得的角膜曲率半徑值比水平主經線大，稱為順性散光"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nK儀假設與判讀\n\n**白話理解**\n相等K值只代表無角膜散光，不代表全眼無散光；半徑越大屈光力越小；垂直半徑較大代表垂直較平，非順散光。\n\n**口訣**\nK相等不等於全眼無散光。\n\n**選項 A：A 選項**\n只能說無角膜散光。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n半徑與D反比。\n\n**選項 D：D 選項**\n垂直較平偏ATR。\n\n**原始出處**\n驗光生\\隱形眼鏡學概要\\109年驗光生特考.pdf；原題編號 28；舊 ID opt-q0248",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生特考｜隱形眼鏡學概要"
+      ],
+      "source_id": "opt-q0248",
+      "source_number": "28",
+      "source_year": "109",
+      "source_subject": "驗光生特考｜隱形眼鏡學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "K儀假設與判讀",
+        "simple": "相等K值只代表無角膜散光，不代表全眼無散光；半徑越大屈光力越小；垂直半徑較大代表垂直較平，非順散光。",
+        "memory": "K相等不等於全眼無散光。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "只能說無角膜散光。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "半徑與D反比。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "垂直較平偏ATR。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0250",
+      "type": "single",
+      "stem": "角膜弧度儀測出43.50 D 在175 度軸，46.25 D 在85 度軸時，若以負圓柱鏡處方表示，其散光的軸度是下 列何者？",
+      "choices": [
+        "85 度",
+        "90 度",
+        "175 度",
+        "180 度"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nK軸轉負柱軸\n\n**白話理解**\n85°的46.25D較陡，175°的43.50D較平；負柱軸放在較平主經線175°。\n\n**口訣**\n負柱軸跟平K。\n\n**選項 A：A 選項**\n放在陡經線。\n\n**選項 B：B 選項**\n近似但非精確軸。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n非題目實測軸。\n\n**原始出處**\n驗光生\\驗光學概要\\109年驗光生特考.pdf；原題編號 21；舊 ID opt-q0250",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生特考｜驗光學概要"
+      ],
+      "source_id": "opt-q0250",
+      "source_number": "21",
+      "source_year": "109",
+      "source_subject": "驗光生特考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "K軸轉負柱軸",
+        "simple": "85°的46.25D較陡，175°的43.50D較平；負柱軸放在較平主經線175°。",
+        "memory": "負柱軸跟平K。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "放在陡經線。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "近似但非精確軸。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "非題目實測軸。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0252",
+      "type": "single",
+      "stem": "以角膜弧度儀測量後得檢測值為OD 43.00D@045/45.00D@135，患者的角膜散光型態為何？",
+      "choices": [
+        "順散光",
+        "逆散光",
+        "斜散光",
+        "不規則散光"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n斜散光\n\n**白話理解**\n兩主經線45°與135°互相垂直，但都不接近水平／垂直典型軸，因此是規則斜散光。\n\n**口訣**\n45/135最典型oblique。\n\n**選項 A：A 選項**\n非WTR。\n\n**選項 B：B 選項**\n非ATR。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n兩軸仍差90°。\n\n**原始出處**\n驗光生\\驗光學概要\\109年驗光生特考.pdf；原題編號 25；舊 ID opt-q0252",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生特考｜驗光學概要"
+      ],
+      "source_id": "opt-q0252",
+      "source_number": "25",
+      "source_year": "109",
+      "source_subject": "驗光生特考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "斜散光",
+        "simple": "兩主經線45°與135°互相垂直，但都不接近水平／垂直典型軸，因此是規則斜散光。",
+        "memory": "45/135最典型oblique。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "非WTR。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "非ATR。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "兩軸仍差90°。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0267",
+      "type": "single",
+      "stem": "有關角膜弧度測量儀的敘述，下列何者錯誤？",
+      "choices": [
+        "可以測得角膜表面的曲率變化及其屈光度",
+        "測出的屈光度數大部分來自角膜前表面",
+        "有時候會受到眼球調適作用而影響到所量測的屈光度",
+        "所測量的曲率半徑是隱形眼鏡處方的重要依據"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nK值與調節\n\n**白話理解**\nK儀量角膜前表面曲率與屈光力，是CL基弧的重要依據；調節主要改變水晶體，不改變角膜K值。\n\n**口訣**\n調節動晶體，不動角膜。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n錯誤。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\隱形眼鏡學概要\\109年驗光生普考.pdf；原題編號 29；舊 ID opt-q0267",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜隱形眼鏡學概要"
+      ],
+      "source_id": "opt-q0267",
+      "source_number": "29",
+      "source_year": "109",
+      "source_subject": "驗光生普考｜隱形眼鏡學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "K值與調節",
+        "simple": "K儀量角膜前表面曲率與屈光力，是CL基弧的重要依據；調節主要改變水晶體，不改變角膜K值。",
+        "memory": "調節動晶體，不動角膜。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0268",
+      "type": "single",
+      "stem": "角膜弧度儀檢查顯示42.00D@180/42.25D@90，自動驗光儀檢查為-2.00DS/-1.00DC×090，則扣除角膜前 表面的散光之後，眼球內部呈現的散光為？",
+      "choices": [
+        "-0.75 DC×090",
+        "-0.75 DC×180",
+        "-1.25 DC×090",
+        "-1.25 DC×180"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n全眼減角膜求內部散光\n\n**白話理解**\n角膜K差0.25D，陡在90，角膜約−0.25×180；全眼−1.00×90方向相反。向量／正柱轉換後，內部散光約−1.25×90。\n\n**口訣**\n方向相反時量會相加成1.25D。\n\n**選項 A：A 選項**\n未完整扣除反向角膜散光。\n\n**選項 B：B 選項**\n軸錯。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n軸錯。\n\n**原始出處**\n驗光生\\隱形眼鏡學概要\\109年驗光生普考.pdf；原題編號 30；舊 ID opt-q0268",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜隱形眼鏡學概要"
+      ],
+      "source_id": "opt-q0268",
+      "source_number": "30",
+      "source_year": "109",
+      "source_subject": "驗光生普考｜隱形眼鏡學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "全眼減角膜求內部散光",
+        "simple": "角膜K差0.25D，陡在90，角膜約−0.25×180；全眼−1.00×90方向相反。向量／正柱轉換後，內部散光約−1.25×90。",
+        "memory": "方向相反時量會相加成1.25D。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "未完整扣除反向角膜散光。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "軸錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "軸錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam114-u06",
+    "subject": "optometry",
+    "name": "角膜曲率測量：K 值與角膜地圖｜114 年國考",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 年國考",
+      "視光學",
+      "第06單元 角膜曲率測量：K 值與角膜地圖"
+    ],
+    "order": 6,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0431",
+      "type": "single",
+      "stem": "使用角膜弧度儀測量角膜弧度後得到下列資訊：42.50@180/43.50@090, MCAR，請問關於此資訊的敘述何 者錯誤？",
+      "choices": [
+        "角膜在180 度位置度數為42.50 D；在090 度位置度數為43.50 D",
+        "角膜散光為-1.00×180",
+        "角膜為逆規散光",
+        "MCAR 代表影像清楚且規則"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nK紀錄判讀\n\n**白話理解**\n90° K43.5較陡，垂直較陡為WTR；角膜散光−1×180，MCAR表示清楚規則。\n\n**口訣**\n垂直陡＝順散。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n錯誤。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\114年驗光師高考.pdf；原題編號 15；舊 ID opt-q0431",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0431",
+      "source_number": "15",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "K紀錄判讀",
+        "simple": "90° K43.5較陡，垂直較陡為WTR；角膜散光−1×180，MCAR表示清楚規則。",
+        "memory": "垂直陡＝順散。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0437",
+      "type": "single",
+      "stem": "角膜地形圖（corneal topography）測量技術之起源，是來自於下列那一項測量工具的使用原理？",
+      "choices": [
+        "stenopaeic slit",
+        "badal lens",
+        "telescopic optometer",
+        "placido disc"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\ntopography歷史原理\n\n**白話理解**\n角膜地形圖利用同心環投影在角膜前表面的反射形變重建曲率分布。\n\n**口訣**\n角膜地圖＝Placido rings。\n\n**選項 A：A 選項**\n裂隙法非起源。\n\n**選項 B：B 選項**\nBadal用於optometer。\n\n**選項 C：C 選項**\n非角膜地圖。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視覺光學\\114年驗光師高考.pdf；原題編號 34；舊 ID opt-q0437",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光師高考｜視覺光學"
+      ],
+      "source_id": "opt-q0437",
+      "source_number": "34",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜視覺光學",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "topography歷史原理",
+        "simple": "角膜地形圖利用同心環投影在角膜前表面的反射形變重建曲率分布。",
+        "memory": "角膜地圖＝Placido rings。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "裂隙法非起源。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "Badal用於optometer。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "非角膜地圖。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

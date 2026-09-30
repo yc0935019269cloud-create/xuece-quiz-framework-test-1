@@ -1,0 +1,473 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-course114-u09",
+    "subject": "optometry",
+    "name": "近點調節 NPA 與近點聚合 NPC｜114 學年度",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 學年度",
+      "視光學",
+      "第09單元 近點調節 NPA 與近點聚合 NPC"
+    ],
+    "order": 9,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-teacher-09-01",
+      "type": "single",
+      "stem": "兩眼均遠視 +2.00 D，已在未矯正狀態下看 33 cm 距離時，需使用多少調節力？",
+      "choices": [
+        "2 D",
+        "3 D",
+        "5 D",
+        "7 D"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n未矯正遠視的近距離調節\n\n**白話理解**\n33 cm 的近距離需求約 3.00 D；未矯正 +2.00 D 遠視在看遠時就需額外使用 2.00 D 調節，因此總需求為 5.00 D。\n\n**口訣**\n遠視先欠 2 D，看近再加 3 D。\n\n**考點與解題步驟**\n- 近距離需求＝1/0.33≈3.00 D。\n- 總調節＝3.00＋2.00＝5.00 D。\n- 若題目是已戴足矯正鏡，才只需約 3 D。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 1；舊 ID opt-teacher-09-01",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-09-01",
+      "source_number": "1",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "未矯正遠視的近距離調節",
+        "simple": "33 cm 的近距離需求約 3.00 D；未矯正 +2.00 D 遠視在看遠時就需額外使用 2.00 D 調節，因此總需求為 5.00 D。",
+        "memory": "遠視先欠 2 D，看近再加 3 D。",
+        "examFocus": [
+          "近距離需求＝1/0.33≈3.00 D。",
+          "總調節＝3.00＋2.00＝5.00 D。",
+          "若題目是已戴足矯正鏡，才只需約 3 D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-09-02",
+      "type": "single",
+      "stem": "依 Hofstetter 最小調節幅度公式，何者最可能有調節不足？",
+      "choices": [
+        "20 歲，調節幅度 10.00 D",
+        "30 歲，調節幅度 6.00 D",
+        "40 歲，調節幅度 5.00 D",
+        "50 歲，調節幅度 3.50 D"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nHofstetter 最小調節幅度\n\n**白話理解**\nHofstetter 最小值＝15−0.25×年齡。20、30、40、50 歲的最低值分別是 10、7.5、5、2.5 D；只有 30 歲的 6 D 低於門檻。\n\n**口訣**\n最低＝15−四分之一歲數。\n\n**考點與解題步驟**\n- 30歲最低值＝15−0.25×30＝7.50 D；實測 6.00 D。\n- 等於最低值不算低於門檻。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 2；舊 ID opt-teacher-09-02",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-09-02",
+      "source_number": "2",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "Hofstetter 最小調節幅度",
+        "simple": "Hofstetter 最小值＝15−0.25×年齡。20、30、40、50 歲的最低值分別是 10、7.5、5、2.5 D；只有 30 歲的 6 D 低於門檻。",
+        "memory": "最低＝15−四分之一歲數。",
+        "examFocus": [
+          "30歲最低值＝15−0.25×30＝7.50 D；實測 6.00 D。",
+          "等於最低值不算低於門檻。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-09-03",
+      "type": "single",
+      "stem": "有關近視眼的遠點與近點之敘述，何者正確？",
+      "choices": [
+        "近點在眼球後方、遠點在眼球前方",
+        "近點與遠點均在眼球前方",
+        "調節力夠大時兩者均在眼球前方",
+        "調節力為零時兩者均在眼球後方"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n近視眼遠點與近點\n\n**白話理解**\n未矯正近視眼在不調節時只能清楚看有限距離的遠點；使用調節後可看更近，因此近點也在眼前，且比遠點更靠近眼睛。\n\n**口訣**\n近視的清晰範圍整段都在眼前。\n\n**考點與解題步驟**\n- 眼球後方的虛遠點是遠視眼的特徵。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 3；舊 ID opt-teacher-09-03",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-09-03",
+      "source_number": "3",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "近視眼遠點與近點",
+        "simple": "未矯正近視眼在不調節時只能清楚看有限距離的遠點；使用調節後可看更近，因此近點也在眼前，且比遠點更靠近眼睛。",
+        "memory": "近視的清晰範圍整段都在眼前。",
+        "examFocus": [
+          "眼球後方的虛遠點是遠視眼的特徵。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-09-04",
+      "type": "single",
+      "stem": "一個近視眼其遠點在眼前 100 cm，近點在眼前 20 cm，其調節幅度為多少？",
+      "choices": [
+        "+4.00 D",
+        "+5.00 D",
+        "+6.00 D",
+        "無法得知"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n由遠點與近點求調節幅度\n\n**白話理解**\n近點屈光需求為 1/0.20＝5 D，遠點對應 1/1.00＝1 D；兩者差值就是可增加的調節量。\n\n**口訣**\n近點 D 減遠點 D。\n\n**考點與解題步驟**\n- AA＝1/0.20−1/1.00＝5−1＝4 D。\n- 不能只取近點距離的倒數。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 4；舊 ID opt-teacher-09-04",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-09-04",
+      "source_number": "4",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "由遠點與近點求調節幅度",
+        "simple": "近點屈光需求為 1/0.20＝5 D，遠點對應 1/1.00＝1 D；兩者差值就是可增加的調節量。",
+        "memory": "近點 D 減遠點 D。",
+        "examFocus": [
+          "AA＝1/0.20−1/1.00＝5−1＝4 D。",
+          "不能只取近點距離的倒數。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-09-05",
+      "type": "single",
+      "stem": "依 Hofstetter 調節幅度最低期望值公式，受檢者最大調節幅度為 2.50 D，推估其年齡為何？",
+      "choices": [
+        "50 歲",
+        "52 歲",
+        "54 歲",
+        "56 歲"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\nHofstetter 公式反推年齡\n\n**白話理解**\n最低調節幅度公式為 15−0.25×年齡。令其等於 2.50 D，可解得年齡 50 歲。\n\n**口訣**\n先用 15 減實測，再乘 4。\n\n**考點與解題步驟**\n- 2.50＝15−0.25×年齡；年齡＝(15−2.5)/0.25＝50。\n- 本題使用最低值公式，不是平均值公式。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 5；舊 ID opt-teacher-09-05",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-09-05",
+      "source_number": "5",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "Hofstetter 公式反推年齡",
+        "simple": "最低調節幅度公式為 15−0.25×年齡。令其等於 2.50 D，可解得年齡 50 歲。",
+        "memory": "先用 15 減實測，再乘 4。",
+        "examFocus": [
+          "2.50＝15−0.25×年齡；年齡＝(15−2.5)/0.25＝50。",
+          "本題使用最低值公式，不是平均值公式。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-09-06",
+      "type": "single",
+      "stem": "進行近點聚合（NPC）時，視標在受測者前方 16 cm 報告複視；後移後在 20 cm 恢復單一視標。最可能是哪種情況？",
+      "choices": [
+        "弱視",
+        "調節不足",
+        "聚合不足",
+        "抑制"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nNPC break／recovery 判讀\n\n**白話理解**\nNPC 正常應能維持到更靠近鼻根的位置。16 cm 才出現複視、20 cm 才恢復，兩個數值都偏遠，符合 convergence insufficiency。若是抑制，患者可能不報告複視。\n\n**口訣**\nNPC 數字越大＝越退後＝聚合越弱。\n\n**考點與解題步驟**\n- 出現複視代表雙眼影像未被抑制。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 6；舊 ID opt-teacher-09-06",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-09-06",
+      "source_number": "6",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "NPC break／recovery 判讀",
+        "simple": "NPC 正常應能維持到更靠近鼻根的位置。16 cm 才出現複視、20 cm 才恢復，兩個數值都偏遠，符合 convergence insufficiency。若是抑制，患者可能不報告複視。",
+        "memory": "NPC 數字越大＝越退後＝聚合越弱。",
+        "examFocus": [
+          "出現複視代表雙眼影像未被抑制。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-09-07",
+      "type": "single",
+      "stem": "受檢者有 −1.50 D 近視，未戴矯正眼鏡，以負鏡片法在 40 cm 測調節幅度；加至 −10.00 D 時開始持續模糊。調節幅度為何？",
+      "choices": [
+        "8.50 D",
+        "10.00 D",
+        "11.00 D",
+        "14.00 D"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n負鏡片法與未矯正屈光誤差\n\n**白話理解**\n40 cm 需求為 2.50 D，加上的負鏡為 10.00 D；未矯正近視 1.50 D 會抵銷部分需求，因此 AA＝10＋2.5−1.5＝11 D。\n\n**口訣**\n負鏡＋近距離需求，再扣未矯正近視。\n\n**考點與解題步驟**\n- AA＝加入負鏡 10.00＋工作距離 2.50−未矯正近視 1.50＝11.00 D。\n- 不能只把 −10 D 的絕對值當作調節幅度。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 7；舊 ID opt-teacher-09-07",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-09-07",
+      "source_number": "7",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "負鏡片法與未矯正屈光誤差",
+        "simple": "40 cm 需求為 2.50 D，加上的負鏡為 10.00 D；未矯正近視 1.50 D 會抵銷部分需求，因此 AA＝10＋2.5−1.5＝11 D。",
+        "memory": "負鏡＋近距離需求，再扣未矯正近視。",
+        "examFocus": [
+          "AA＝加入負鏡 10.00＋工作距離 2.50−未矯正近視 1.50＝11.00 D。",
+          "不能只把 −10 D 的絕對值當作調節幅度。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-09-08",
+      "type": "single",
+      "stem": "關於調節幅度（amplitude of accommodation）檢查，下列何者正確？",
+      "choices": [
+        "負鏡片法測得的結果通常較推近法低",
+        "40 cm 負鏡片法加到 −4.00 D 才模糊，調節幅度就是 4.00 D",
+        "視標愈大，測得調節幅度必定愈小",
+        "推近法測得的調節幅度通常低於推遠法"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n調節幅度測量方法比較\n\n**白話理解**\n負鏡片會造成影像縮小且測試距離固定，常使終點較早；推近法則受相對距離放大等近端線索影響，結果常偏高。40 cm 測試還要把 2.50 D 距離需求加回；推近法通常不是低於推遠法。\n\n**口訣**\n推近常偏高，負鏡常偏低。\n\n**考點與解題步驟**\n- 負鏡法不能忘記測試距離的屈光需求。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 8；舊 ID opt-teacher-09-08",
+      "tags": [
+        "近點調節 NPA 與近點聚合 NPC",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-09-08",
+      "source_number": "8",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "NPA / NPC",
+        "title": "調節幅度測量方法比較",
+        "simple": "負鏡片會造成影像縮小且測試距離固定，常使終點較早；推近法則受相對距離放大等近端線索影響，結果常偏高。40 cm 測試還要把 2.50 D 距離需求加回；推近法通常不是低於推遠法。",
+        "memory": "推近常偏高，負鏡常偏低。",
+        "examFocus": [
+          "負鏡法不能忘記測試距離的屈光需求。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

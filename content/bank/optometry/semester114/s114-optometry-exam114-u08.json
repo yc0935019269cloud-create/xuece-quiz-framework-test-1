@@ -1,0 +1,73 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam114-u08",
+    "subject": "optometry",
+    "name": "立體視覺：深度線索、視差與檢測｜114 年國考",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 年國考",
+      "視光學",
+      "第08單元 立體視覺：深度線索、視差與檢測"
+    ],
+    "order": 8,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0429",
+      "type": "single",
+      "stem": "下列有關立體視測試之敘述，何者錯誤？",
+      "choices": [
+        "少量模糊或雙眼影像不等症（aniseikonia）會造成立體視力測試結果較差",
+        "立體視小於60 秒角為正常，但大部分成人或5 歲以上學童可表現更佳",
+        "立體視力 40 ≦ 秒角代表眼球不對齊（ocular misalignment）程度大於生理性融像範圍（Panum’s fusional area）",
+        "常見檢測過程錯誤包括允許受測者頭部傾斜，使用之屈光矯正鏡片度數不合及在戴上偏光眼鏡前，就讓 受測者看見視標"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n立體視秒角判讀\n\n**白話理解**\n模糊與aniseikonia可降低立體視；≤60秒角常視為正常，許多成人達40秒角；頭傾、錯誤矯正與偷看視標會造成測試誤差。\n\n**口訣**\n數字越小越精細；40秒角很好。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n錯誤。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\114年驗光師高考.pdf；原題編號 13；舊 ID opt-q0429",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0429",
+      "source_number": "13",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "立體視秒角判讀",
+        "simple": "模糊與aniseikonia可降低立體視；≤60秒角常視為正常，許多成人達40秒角；頭傾、錯誤矯正與偷看視標會造成測試誤差。",
+        "memory": "數字越小越精細；40秒角很好。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

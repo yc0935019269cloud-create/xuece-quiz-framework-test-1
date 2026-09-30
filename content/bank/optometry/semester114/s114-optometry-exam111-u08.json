@@ -1,0 +1,127 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam111-u08",
+    "subject": "optometry",
+    "name": "立體視覺：深度線索、視差與檢測｜111 年國考",
+    "year": 111,
+    "path": [
+      "114 大一下",
+      "111 年國考",
+      "視光學",
+      "第08單元 立體視覺：深度線索、視差與檢測"
+    ],
+    "order": 8,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0332",
+      "type": "single",
+      "stem": "立體視檢測方法，常因有單眼線索或患者斜角觀看，而導致不準確的檢測結果，下列何者檢測不會有此影響？",
+      "choices": [
+        "TNO 蝴蝶及圖形立體檢測",
+        "Titmus 蒼蠅立體檢測",
+        "Frisby 玻璃板立體檢測",
+        "Randot Circle 亂點圓立體檢測"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\nglobal random-dot stereo\n\n**白話理解**\nrandom-dot global stereogram須兩眼整合才看出圖形；Titmus與部分local contour tests可被斜看或單眼線索猜中。\n\n**口訣**\nTNO無雙眼融合就看不到形。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n有輪廓單眼線索。\n\n**選項 C：C 選項**\n真深度但可能有其他線索。\n\n**選項 D：D 選項**\n部分圓形可能有local cues。\n\n**原始出處**\n驗光師\\視光學\\111年驗光師高考.pdf；原題編號 33；舊 ID opt-q0332",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0332",
+      "source_number": "33",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "global random-dot stereo",
+        "simple": "random-dot global stereogram須兩眼整合才看出圖形；Titmus與部分local contour tests可被斜看或單眼線索猜中。",
+        "memory": "TNO無雙眼融合就看不到形。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "有輪廓單眼線索。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "真深度但可能有其他線索。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "部分圓形可能有local cues。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0333",
+      "type": "single",
+      "stem": "下列那些立體視覺測試不需要配戴偏光眼鏡（polarized glasses），以分隔兩眼所看到的影像？①提瑪斯立體 測試（Titmus stereo test） ②蘭氏立體測試（Lang stereo test） ③亂點E 立體測試（Random dot E stereo test） ④費斯比立體測試（Frisby stereo test）",
+      "choices": [
+        "①②",
+        "②④",
+        "③④",
+        "②③"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n立體測試分離方式\n\n**白話理解**\nLang利用柱狀光柵自體分離，Frisby利用實體板厚真深度；Titmus與Random dot E通常需偏光鏡。\n\n**口訣**\nLang、Frisby裸眼；Titmus、RDE戴偏光。\n\n**選項 A：A 選項**\nTitmus需要。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\nRandom dot E需要。\n\n**選項 D：D 選項**\nRandom dot E需要。\n\n**原始出處**\n驗光師\\視光學\\111年驗光師高考.pdf；原題編號 35；舊 ID opt-q0333",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0333",
+      "source_number": "35",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "立體測試分離方式",
+        "simple": "Lang利用柱狀光柵自體分離，Frisby利用實體板厚真深度；Titmus與Random dot E通常需偏光鏡。",
+        "memory": "Lang、Frisby裸眼；Titmus、RDE戴偏光。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "Titmus需要。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "Random dot E需要。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "Random dot E需要。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

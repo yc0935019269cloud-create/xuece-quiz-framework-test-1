@@ -1,0 +1,785 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-optometry-terms-p1",
+  "subject": "optometry",
+  "unit": "第99單元 中英文核心名詞",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "視光學",
+    "第99單元 中英文核心名詞"
+  ],
+  "title": "中英文核心名詞（1）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://frabjous-druid-ff547a.netlify.app/",
+  "level": 2,
+  "minutes": 90,
+  "order": 99,
+  "source": "https://frabjous-druid-ff547a.netlify.app/",
+  "tags": [
+    "中英文核心名詞"
+  ],
+  "lessons": [
+    {
+      "id": "terms-1-1",
+      "title": "中英文核心名詞 1",
+      "goals": [
+        "解釋PD／pupillary distance",
+        "解釋DBOC／prism",
+        "解釋base in／base out"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 1",
+          "body": "這課從「中英文核心名詞 1」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "PD／pupillary distance",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**PD｜瞳距（pupillary distance）**\n兩眼瞳孔中心的距離，用來讓鏡片光心對準眼睛，避免多餘稜鏡。\n\n**pupillary distance｜瞳距**\n配鏡定位的核心距離，決定左右鏡片光學中心要放在哪裡。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「PD／pupillary distance」，並說出一個判斷依據。",
+          "answer": "**PD｜瞳距（pupillary distance）**\n兩眼瞳孔中心的距離，用來讓鏡片光心對準眼睛，避免多餘稜鏡。\n\n**pupillary distance｜瞳距**\n配鏡定位的核心距離，決定左右鏡片光學中心要放在哪裡。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**PD｜瞳距（pupillary distance）**\n兩眼瞳孔中心的距離，用來讓鏡片光心對準眼睛，避免多餘稜鏡。\n\n**pupillary distance｜瞳距**\n配鏡定位的核心距離，決定左右鏡片光學中心要放在哪裡。"
+        },
+        {
+          "type": "card",
+          "title": "DBOC／prism",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**DBOC｜雙眼光心距離（distance between optical centers）**\n左右鏡片光心之間的距離；和 PD 不合時會產生稜鏡效果。\n\n**prism｜稜鏡**\n改變光線方向，讓影像往稜鏡尖端方向看起來移動，臨床上用來補償眼位或檢查偏位。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「DBOC／prism」，並說出一個判斷依據。",
+          "answer": "**DBOC｜雙眼光心距離（distance between optical centers）**\n左右鏡片光心之間的距離；和 PD 不合時會產生稜鏡效果。\n\n**prism｜稜鏡**\n改變光線方向，讓影像往稜鏡尖端方向看起來移動，臨床上用來補償眼位或檢查偏位。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**DBOC｜雙眼光心距離（distance between optical centers）**\n左右鏡片光心之間的距離；和 PD 不合時會產生稜鏡效果。\n\n**prism｜稜鏡**\n改變光線方向，讓影像往稜鏡尖端方向看起來移動，臨床上用來補償眼位或檢查偏位。"
+        },
+        {
+          "type": "card",
+          "title": "base in／base out",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**base in｜底向內**\n稜鏡底朝鼻側，常用於處理外斜或改變水平影像位置。\n\n**base out｜底向外**\n稜鏡底朝顳側，常用於處理內斜或增加集合需求。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「base in／base out」，並說出一個判斷依據。",
+          "answer": "**base in｜底向內**\n稜鏡底朝鼻側，常用於處理外斜或改變水平影像位置。\n\n**base out｜底向外**\n稜鏡底朝顳側，常用於處理內斜或增加集合需求。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**base in｜底向內**\n稜鏡底朝鼻側，常用於處理外斜或改變水平影像位置。\n\n**base out｜底向外**\n稜鏡底朝顳側，常用於處理內斜或增加集合需求。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：base in／base out",
+          "problem": "用自己的話說明「base in／base out」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：base in／base out",
+            "**base in｜底向內**\n稜鏡底朝鼻側，常用於處理外斜或改變水平影像位置。\n\n**base out｜底向外**\n稜鏡底朝顳側，常用於處理內斜或增加集合需求。",
+            "把判斷依據連回題目：**base in｜底向內**\n稜鏡底朝鼻側，常用於處理外斜或改變水平影像位置。\n\n**base out｜底向外**\n稜鏡底朝顳側，常用於處理內斜或增加集合需求。"
+          ],
+          "answer": "**base in｜底向內**\n稜鏡底朝鼻側，常用於處理外斜或改變水平影像位置。\n\n**base out｜底向外**\n稜鏡底朝顳側，常用於處理內斜或增加集合需求。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 1",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「DBOC／prism」，並說出一個判斷依據。",
+              "answer": "**DBOC｜雙眼光心距離（distance between optical centers）**\n左右鏡片光心之間的距離；和 PD 不合時會產生稜鏡效果。\n\n**prism｜稜鏡**\n改變光線方向，讓影像往稜鏡尖端方向看起來移動，臨床上用來補償眼位或檢查偏位。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**DBOC｜雙眼光心距離（distance between optical centers）**\n左右鏡片光心之間的距離；和 PD 不合時會產生稜鏡效果。\n\n**prism｜稜鏡**\n改變光線方向，讓影像往稜鏡尖端方向看起來移動，臨床上用來補償眼位或檢查偏位。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「base in／base out」，並說出一個判斷依據。",
+              "answer": "**base in｜底向內**\n稜鏡底朝鼻側，常用於處理外斜或改變水平影像位置。\n\n**base out｜底向外**\n稜鏡底朝顳側，常用於處理內斜或增加集合需求。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**base in｜底向內**\n稜鏡底朝鼻側，常用於處理外斜或改變水平影像位置。\n\n**base out｜底向外**\n稜鏡底朝顳側，常用於處理內斜或增加集合需求。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "PD／pupillary distance：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "DBOC／prism：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**PD｜瞳距（pupillary distance）**\n兩眼瞳孔中心的距離，用來讓鏡片光心對準眼睛，避免多餘稜鏡。\n\n**pupillary distance｜瞳距**\n配鏡定位的核心距離，決定左右鏡片光學中心要放在哪裡。",
+            "**DBOC｜雙眼光心距離（distance between optical centers）**\n左右鏡片光心之間的距離；和 PD 不合時會產生稜鏡效果。\n\n**prism｜稜鏡**\n改變光線方向，讓影像往稜鏡尖端方向看起來移動，臨床上用來補償眼位或檢查偏位。"
+          ],
+          "flash": [
+            {
+              "front": "PD／pupillary distance",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "DBOC／prism",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "base in／base out",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「PD／pupillary distance」，並說出一個判斷依據。",
+              "back": "**PD｜瞳距（pupillary distance）**\n兩眼瞳孔中心的距離，用來讓鏡片光心對準眼睛，避免多餘稜鏡。\n\n**pupillary distance｜瞳距**\n配鏡定位的核心距離，決定左右鏡片光學中心要放在哪裡。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms-2-1",
+      "title": "中英文核心名詞 2",
+      "goals": [
+        "解釋base up／base down",
+        "解釋front vertex power／back vertex power",
+        "解釋single vision／multifocal"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 2",
+          "body": "這課從「中英文核心名詞 2」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "base up／base down",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**base up｜底向上**\n稜鏡底朝上，會讓影像往下移，常用在垂直偏位補償。\n\n**base down｜底向下**\n稜鏡底朝下，會讓影像往上移，常用在垂直偏位補償。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「base up／base down」，並說出一個判斷依據。",
+          "answer": "**base up｜底向上**\n稜鏡底朝上，會讓影像往下移，常用在垂直偏位補償。\n\n**base down｜底向下**\n稜鏡底朝下，會讓影像往上移，常用在垂直偏位補償。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**base up｜底向上**\n稜鏡底朝上，會讓影像往下移，常用在垂直偏位補償。\n\n**base down｜底向下**\n稜鏡底朝下，會讓影像往上移，常用在垂直偏位補償。"
+        },
+        {
+          "type": "card",
+          "title": "front vertex power／back vertex power",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**front vertex power｜前頂點屈光力**\n從鏡片前表面頂點量到的屈光力，多焦近用區常用這個概念。\n\n**back vertex power｜後頂點屈光力**\n從鏡片後表面頂點量到的屈光力，單焦處方驗配通常重視它。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「front vertex power／back vertex power」，並說出一個判斷依據。",
+          "answer": "**front vertex power｜前頂點屈光力**\n從鏡片前表面頂點量到的屈光力，多焦近用區常用這個概念。\n\n**back vertex power｜後頂點屈光力**\n從鏡片後表面頂點量到的屈光力，單焦處方驗配通常重視它。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**front vertex power｜前頂點屈光力**\n從鏡片前表面頂點量到的屈光力，多焦近用區常用這個概念。\n\n**back vertex power｜後頂點屈光力**\n從鏡片後表面頂點量到的屈光力，單焦處方驗配通常重視它。"
+        },
+        {
+          "type": "card",
+          "title": "single vision／multifocal",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**single vision｜單焦鏡片**\n整片鏡片主要提供一個度數，用於單一距離的清楚視力。\n\n**multifocal｜多焦鏡片**\n同一片鏡片有遠、中、近不同焦度區，用來處理老花或多距離需求。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「single vision／multifocal」，並說出一個判斷依據。",
+          "answer": "**single vision｜單焦鏡片**\n整片鏡片主要提供一個度數，用於單一距離的清楚視力。\n\n**multifocal｜多焦鏡片**\n同一片鏡片有遠、中、近不同焦度區，用來處理老花或多距離需求。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**single vision｜單焦鏡片**\n整片鏡片主要提供一個度數，用於單一距離的清楚視力。\n\n**multifocal｜多焦鏡片**\n同一片鏡片有遠、中、近不同焦度區，用來處理老花或多距離需求。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：single vision／multifocal",
+          "problem": "用自己的話說明「single vision／multifocal」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：single vision／multifocal",
+            "**single vision｜單焦鏡片**\n整片鏡片主要提供一個度數，用於單一距離的清楚視力。\n\n**multifocal｜多焦鏡片**\n同一片鏡片有遠、中、近不同焦度區，用來處理老花或多距離需求。",
+            "把判斷依據連回題目：**single vision｜單焦鏡片**\n整片鏡片主要提供一個度數，用於單一距離的清楚視力。\n\n**multifocal｜多焦鏡片**\n同一片鏡片有遠、中、近不同焦度區，用來處理老花或多距離需求。"
+          ],
+          "answer": "**single vision｜單焦鏡片**\n整片鏡片主要提供一個度數，用於單一距離的清楚視力。\n\n**multifocal｜多焦鏡片**\n同一片鏡片有遠、中、近不同焦度區，用來處理老花或多距離需求。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 2",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「front vertex power／back vertex power」，並說出一個判斷依據。",
+              "answer": "**front vertex power｜前頂點屈光力**\n從鏡片前表面頂點量到的屈光力，多焦近用區常用這個概念。\n\n**back vertex power｜後頂點屈光力**\n從鏡片後表面頂點量到的屈光力，單焦處方驗配通常重視它。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**front vertex power｜前頂點屈光力**\n從鏡片前表面頂點量到的屈光力，多焦近用區常用這個概念。\n\n**back vertex power｜後頂點屈光力**\n從鏡片後表面頂點量到的屈光力，單焦處方驗配通常重視它。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「single vision／multifocal」，並說出一個判斷依據。",
+              "answer": "**single vision｜單焦鏡片**\n整片鏡片主要提供一個度數，用於單一距離的清楚視力。\n\n**multifocal｜多焦鏡片**\n同一片鏡片有遠、中、近不同焦度區，用來處理老花或多距離需求。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**single vision｜單焦鏡片**\n整片鏡片主要提供一個度數，用於單一距離的清楚視力。\n\n**multifocal｜多焦鏡片**\n同一片鏡片有遠、中、近不同焦度區，用來處理老花或多距離需求。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "base up／base down：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "front vertex power／back vertex power：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**base up｜底向上**\n稜鏡底朝上，會讓影像往下移，常用在垂直偏位補償。\n\n**base down｜底向下**\n稜鏡底朝下，會讓影像往上移，常用在垂直偏位補償。",
+            "**front vertex power｜前頂點屈光力**\n從鏡片前表面頂點量到的屈光力，多焦近用區常用這個概念。\n\n**back vertex power｜後頂點屈光力**\n從鏡片後表面頂點量到的屈光力，單焦處方驗配通常重視它。"
+          ],
+          "flash": [
+            {
+              "front": "base up／base down",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "front vertex power／back vertex power",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "single vision／multifocal",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「base up／base down」，並說出一個判斷依據。",
+              "back": "**base up｜底向上**\n稜鏡底朝上，會讓影像往下移，常用在垂直偏位補償。\n\n**base down｜底向下**\n稜鏡底朝下，會讓影像往上移，常用在垂直偏位補償。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms-3-1",
+      "title": "中英文核心名詞 3",
+      "goals": [
+        "解釋PAL／ADD",
+        "解釋Keplerian telescope／Galilean telescope",
+        "解釋standard lens／lens stop"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 3",
+          "body": "這課從「中英文核心名詞 3」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "PAL／ADD",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**PAL｜漸進多焦鏡片（progressive addition lens）**\n遠用到近用度數連續變化，沒有明顯分界線，但兩側有變形區。\n\n**ADD｜近用加入度**\n近用區比遠用區多加的正度數，主要用來補償老花的調節不足。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「PAL／ADD」，並說出一個判斷依據。",
+          "answer": "**PAL｜漸進多焦鏡片（progressive addition lens）**\n遠用到近用度數連續變化，沒有明顯分界線，但兩側有變形區。\n\n**ADD｜近用加入度**\n近用區比遠用區多加的正度數，主要用來補償老花的調節不足。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**PAL｜漸進多焦鏡片（progressive addition lens）**\n遠用到近用度數連續變化，沒有明顯分界線，但兩側有變形區。\n\n**ADD｜近用加入度**\n近用區比遠用區多加的正度數，主要用來補償老花的調節不足。"
+        },
+        {
+          "type": "card",
+          "title": "Keplerian telescope／Galilean telescope",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**Keplerian telescope｜克卜勒式望遠鏡**\n兩片凸透鏡形成放大影像，視野較大但影像會倒立，需要轉像系統。\n\n**Galilean telescope｜伽利略式望遠鏡**\n凸物鏡加凹目鏡，影像正立、系統較短，但視野通常較小。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「Keplerian telescope／Galilean telescope」，並說出一個判斷依據。",
+          "answer": "**Keplerian telescope｜克卜勒式望遠鏡**\n兩片凸透鏡形成放大影像，視野較大但影像會倒立，需要轉像系統。\n\n**Galilean telescope｜伽利略式望遠鏡**\n凸物鏡加凹目鏡，影像正立、系統較短，但視野通常較小。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**Keplerian telescope｜克卜勒式望遠鏡**\n兩片凸透鏡形成放大影像，視野較大但影像會倒立，需要轉像系統。\n\n**Galilean telescope｜伽利略式望遠鏡**\n凸物鏡加凹目鏡，影像正立、系統較短，但視野通常較小。"
+        },
+        {
+          "type": "card",
+          "title": "standard lens／lens stop",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**standard lens｜標準鏡片**\n焦度計內用來建立基準或比較的已知鏡片。\n\n**lens stop｜鏡片靠座**\n讓鏡片在焦度計上穩定定位，減少讀值因位置改變而漂移。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「standard lens／lens stop」，並說出一個判斷依據。",
+          "answer": "**standard lens｜標準鏡片**\n焦度計內用來建立基準或比較的已知鏡片。\n\n**lens stop｜鏡片靠座**\n讓鏡片在焦度計上穩定定位，減少讀值因位置改變而漂移。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**standard lens｜標準鏡片**\n焦度計內用來建立基準或比較的已知鏡片。\n\n**lens stop｜鏡片靠座**\n讓鏡片在焦度計上穩定定位，減少讀值因位置改變而漂移。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：standard lens／lens stop",
+          "problem": "用自己的話說明「standard lens／lens stop」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：standard lens／lens stop",
+            "**standard lens｜標準鏡片**\n焦度計內用來建立基準或比較的已知鏡片。\n\n**lens stop｜鏡片靠座**\n讓鏡片在焦度計上穩定定位，減少讀值因位置改變而漂移。",
+            "把判斷依據連回題目：**standard lens｜標準鏡片**\n焦度計內用來建立基準或比較的已知鏡片。\n\n**lens stop｜鏡片靠座**\n讓鏡片在焦度計上穩定定位，減少讀值因位置改變而漂移。"
+          ],
+          "answer": "**standard lens｜標準鏡片**\n焦度計內用來建立基準或比較的已知鏡片。\n\n**lens stop｜鏡片靠座**\n讓鏡片在焦度計上穩定定位，減少讀值因位置改變而漂移。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 3",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「Keplerian telescope／Galilean telescope」，並說出一個判斷依據。",
+              "answer": "**Keplerian telescope｜克卜勒式望遠鏡**\n兩片凸透鏡形成放大影像，視野較大但影像會倒立，需要轉像系統。\n\n**Galilean telescope｜伽利略式望遠鏡**\n凸物鏡加凹目鏡，影像正立、系統較短，但視野通常較小。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**Keplerian telescope｜克卜勒式望遠鏡**\n兩片凸透鏡形成放大影像，視野較大但影像會倒立，需要轉像系統。\n\n**Galilean telescope｜伽利略式望遠鏡**\n凸物鏡加凹目鏡，影像正立、系統較短，但視野通常較小。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「standard lens／lens stop」，並說出一個判斷依據。",
+              "answer": "**standard lens｜標準鏡片**\n焦度計內用來建立基準或比較的已知鏡片。\n\n**lens stop｜鏡片靠座**\n讓鏡片在焦度計上穩定定位，減少讀值因位置改變而漂移。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**standard lens｜標準鏡片**\n焦度計內用來建立基準或比較的已知鏡片。\n\n**lens stop｜鏡片靠座**\n讓鏡片在焦度計上穩定定位，減少讀值因位置改變而漂移。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "PAL／ADD：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "Keplerian telescope／Galilean telescope：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**PAL｜漸進多焦鏡片（progressive addition lens）**\n遠用到近用度數連續變化，沒有明顯分界線，但兩側有變形區。\n\n**ADD｜近用加入度**\n近用區比遠用區多加的正度數，主要用來補償老花的調節不足。",
+            "**Keplerian telescope｜克卜勒式望遠鏡**\n兩片凸透鏡形成放大影像，視野較大但影像會倒立，需要轉像系統。\n\n**Galilean telescope｜伽利略式望遠鏡**\n凸物鏡加凹目鏡，影像正立、系統較短，但視野通常較小。"
+          ],
+          "flash": [
+            {
+              "front": "PAL／ADD",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "Keplerian telescope／Galilean telescope",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "standard lens／lens stop",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「PAL／ADD」，並說出一個判斷依據。",
+              "back": "**PAL｜漸進多焦鏡片（progressive addition lens）**\n遠用到近用度數連續變化，沒有明顯分界線，但兩側有變形區。\n\n**ADD｜近用加入度**\n近用區比遠用區多加的正度數，主要用來補償老花的調節不足。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms-4-1",
+      "title": "中英文核心名詞 4",
+      "goals": [
+        "解釋sphere／cylinder",
+        "解釋axis／bracketing",
+        "解釋streak／plane mirror effect"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 4",
+          "body": "這課從「中英文核心名詞 4」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "sphere／cylinder",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**sphere｜球面度數**\n所有方向屈光力相同，用來矯正近視或遠視的主要度數。\n\n**cylinder｜柱鏡度數**\n只在特定方向增加或減少屈光力，用來矯正散光。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「sphere／cylinder」，並說出一個判斷依據。",
+          "answer": "**sphere｜球面度數**\n所有方向屈光力相同，用來矯正近視或遠視的主要度數。\n\n**cylinder｜柱鏡度數**\n只在特定方向增加或減少屈光力，用來矯正散光。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**sphere｜球面度數**\n所有方向屈光力相同，用來矯正近視或遠視的主要度數。\n\n**cylinder｜柱鏡度數**\n只在特定方向增加或減少屈光力，用來矯正散光。"
+        },
+        {
+          "type": "card",
+          "title": "axis／bracketing",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**axis｜散光軸度**\n柱鏡不產生屈光力的方向；它標示方向，不是強弱。\n\n**bracketing｜夾逼法**\n在兩個反應之間來回縮小範圍，用來更精準找到中和或最佳值。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「axis／bracketing」，並說出一個判斷依據。",
+          "answer": "**axis｜散光軸度**\n柱鏡不產生屈光力的方向；它標示方向，不是強弱。\n\n**bracketing｜夾逼法**\n在兩個反應之間來回縮小範圍，用來更精準找到中和或最佳值。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**axis｜散光軸度**\n柱鏡不產生屈光力的方向；它標示方向，不是強弱。\n\n**bracketing｜夾逼法**\n在兩個反應之間來回縮小範圍，用來更精準找到中和或最佳值。"
+        },
+        {
+          "type": "card",
+          "title": "streak／plane mirror effect",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**streak｜線狀光帶**\n檢影鏡投出的線形光，用來判斷不同主經線的順動、逆動和中和。\n\n**plane mirror effect｜平面鏡效應**\n檢影鏡套筒在特定位置時形成發散光，判讀順逆動要依這個狀態。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「streak／plane mirror effect」，並說出一個判斷依據。",
+          "answer": "**streak｜線狀光帶**\n檢影鏡投出的線形光，用來判斷不同主經線的順動、逆動和中和。\n\n**plane mirror effect｜平面鏡效應**\n檢影鏡套筒在特定位置時形成發散光，判讀順逆動要依這個狀態。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**streak｜線狀光帶**\n檢影鏡投出的線形光，用來判斷不同主經線的順動、逆動和中和。\n\n**plane mirror effect｜平面鏡效應**\n檢影鏡套筒在特定位置時形成發散光，判讀順逆動要依這個狀態。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：streak／plane mirror effect",
+          "problem": "用自己的話說明「streak／plane mirror effect」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：streak／plane mirror effect",
+            "**streak｜線狀光帶**\n檢影鏡投出的線形光，用來判斷不同主經線的順動、逆動和中和。\n\n**plane mirror effect｜平面鏡效應**\n檢影鏡套筒在特定位置時形成發散光，判讀順逆動要依這個狀態。",
+            "把判斷依據連回題目：**streak｜線狀光帶**\n檢影鏡投出的線形光，用來判斷不同主經線的順動、逆動和中和。\n\n**plane mirror effect｜平面鏡效應**\n檢影鏡套筒在特定位置時形成發散光，判讀順逆動要依這個狀態。"
+          ],
+          "answer": "**streak｜線狀光帶**\n檢影鏡投出的線形光，用來判斷不同主經線的順動、逆動和中和。\n\n**plane mirror effect｜平面鏡效應**\n檢影鏡套筒在特定位置時形成發散光，判讀順逆動要依這個狀態。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 4",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「axis／bracketing」，並說出一個判斷依據。",
+              "answer": "**axis｜散光軸度**\n柱鏡不產生屈光力的方向；它標示方向，不是強弱。\n\n**bracketing｜夾逼法**\n在兩個反應之間來回縮小範圍，用來更精準找到中和或最佳值。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**axis｜散光軸度**\n柱鏡不產生屈光力的方向；它標示方向，不是強弱。\n\n**bracketing｜夾逼法**\n在兩個反應之間來回縮小範圍，用來更精準找到中和或最佳值。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「streak／plane mirror effect」，並說出一個判斷依據。",
+              "answer": "**streak｜線狀光帶**\n檢影鏡投出的線形光，用來判斷不同主經線的順動、逆動和中和。\n\n**plane mirror effect｜平面鏡效應**\n檢影鏡套筒在特定位置時形成發散光，判讀順逆動要依這個狀態。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**streak｜線狀光帶**\n檢影鏡投出的線形光，用來判斷不同主經線的順動、逆動和中和。\n\n**plane mirror effect｜平面鏡效應**\n檢影鏡套筒在特定位置時形成發散光，判讀順逆動要依這個狀態。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "sphere／cylinder：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "axis／bracketing：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**sphere｜球面度數**\n所有方向屈光力相同，用來矯正近視或遠視的主要度數。\n\n**cylinder｜柱鏡度數**\n只在特定方向增加或減少屈光力，用來矯正散光。",
+            "**axis｜散光軸度**\n柱鏡不產生屈光力的方向；它標示方向，不是強弱。\n\n**bracketing｜夾逼法**\n在兩個反應之間來回縮小範圍，用來更精準找到中和或最佳值。"
+          ],
+          "flash": [
+            {
+              "front": "sphere／cylinder",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "axis／bracketing",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "streak／plane mirror effect",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「sphere／cylinder」，並說出一個判斷依據。",
+              "back": "**sphere｜球面度數**\n所有方向屈光力相同，用來矯正近視或遠視的主要度數。\n\n**cylinder｜柱鏡度數**\n只在特定方向增加或減少屈光力，用來矯正散光。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms-5-1",
+      "title": "中英文核心名詞 5",
+      "goals": [
+        "解釋concave mirror effect／working lens",
+        "解釋objective refraction／subjective refraction",
+        "解釋autorefractor／corneal topographer"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 5",
+          "body": "這課從「中英文核心名詞 5」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "concave mirror effect／working lens",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**concave mirror effect｜凹面鏡效應**\n檢影鏡套筒改變成收斂光狀態，順逆動判讀會和另一模式不同。\n\n**working lens｜工作距離鏡片**\n用鏡片補償檢查者工作距離造成的屈光偏差，最後處方要扣除。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「concave mirror effect／working lens」，並說出一個判斷依據。",
+          "answer": "**concave mirror effect｜凹面鏡效應**\n檢影鏡套筒改變成收斂光狀態，順逆動判讀會和另一模式不同。\n\n**working lens｜工作距離鏡片**\n用鏡片補償檢查者工作距離造成的屈光偏差，最後處方要扣除。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**concave mirror effect｜凹面鏡效應**\n檢影鏡套筒改變成收斂光狀態，順逆動判讀會和另一模式不同。\n\n**working lens｜工作距離鏡片**\n用鏡片補償檢查者工作距離造成的屈光偏差，最後處方要扣除。"
+        },
+        {
+          "type": "card",
+          "title": "objective refraction／subjective refraction",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**objective refraction｜客觀驗光**\n不依賴病人主觀回答，由檢查者或儀器估計屈光狀態。\n\n**subjective refraction｜主觀驗光**\n根據病人的清晰度回饋微調處方，是最後配鏡的重要步驟。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「objective refraction／subjective refraction」，並說出一個判斷依據。",
+          "answer": "**objective refraction｜客觀驗光**\n不依賴病人主觀回答，由檢查者或儀器估計屈光狀態。\n\n**subjective refraction｜主觀驗光**\n根據病人的清晰度回饋微調處方，是最後配鏡的重要步驟。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**objective refraction｜客觀驗光**\n不依賴病人主觀回答，由檢查者或儀器估計屈光狀態。\n\n**subjective refraction｜主觀驗光**\n根據病人的清晰度回饋微調處方，是最後配鏡的重要步驟。"
+        },
+        {
+          "type": "card",
+          "title": "autorefractor／corneal topographer",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**autorefractor｜自動驗光機**\n快速估算屈光度數的儀器，適合作起點但不能完全取代主觀驗光。\n\n**corneal topographer｜角膜地形圖儀**\n量測角膜表面形狀並用顏色地圖呈現不規則彎曲。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「autorefractor／corneal topographer」，並說出一個判斷依據。",
+          "answer": "**autorefractor｜自動驗光機**\n快速估算屈光度數的儀器，適合作起點但不能完全取代主觀驗光。\n\n**corneal topographer｜角膜地形圖儀**\n量測角膜表面形狀並用顏色地圖呈現不規則彎曲。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**autorefractor｜自動驗光機**\n快速估算屈光度數的儀器，適合作起點但不能完全取代主觀驗光。\n\n**corneal topographer｜角膜地形圖儀**\n量測角膜表面形狀並用顏色地圖呈現不規則彎曲。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：autorefractor／corneal topographer",
+          "problem": "用自己的話說明「autorefractor／corneal topographer」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：autorefractor／corneal topographer",
+            "**autorefractor｜自動驗光機**\n快速估算屈光度數的儀器，適合作起點但不能完全取代主觀驗光。\n\n**corneal topographer｜角膜地形圖儀**\n量測角膜表面形狀並用顏色地圖呈現不規則彎曲。",
+            "把判斷依據連回題目：**autorefractor｜自動驗光機**\n快速估算屈光度數的儀器，適合作起點但不能完全取代主觀驗光。\n\n**corneal topographer｜角膜地形圖儀**\n量測角膜表面形狀並用顏色地圖呈現不規則彎曲。"
+          ],
+          "answer": "**autorefractor｜自動驗光機**\n快速估算屈光度數的儀器，適合作起點但不能完全取代主觀驗光。\n\n**corneal topographer｜角膜地形圖儀**\n量測角膜表面形狀並用顏色地圖呈現不規則彎曲。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 5",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「objective refraction／subjective refraction」，並說出一個判斷依據。",
+              "answer": "**objective refraction｜客觀驗光**\n不依賴病人主觀回答，由檢查者或儀器估計屈光狀態。\n\n**subjective refraction｜主觀驗光**\n根據病人的清晰度回饋微調處方，是最後配鏡的重要步驟。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**objective refraction｜客觀驗光**\n不依賴病人主觀回答，由檢查者或儀器估計屈光狀態。\n\n**subjective refraction｜主觀驗光**\n根據病人的清晰度回饋微調處方，是最後配鏡的重要步驟。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「autorefractor／corneal topographer」，並說出一個判斷依據。",
+              "answer": "**autorefractor｜自動驗光機**\n快速估算屈光度數的儀器，適合作起點但不能完全取代主觀驗光。\n\n**corneal topographer｜角膜地形圖儀**\n量測角膜表面形狀並用顏色地圖呈現不規則彎曲。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**autorefractor｜自動驗光機**\n快速估算屈光度數的儀器，適合作起點但不能完全取代主觀驗光。\n\n**corneal topographer｜角膜地形圖儀**\n量測角膜表面形狀並用顏色地圖呈現不規則彎曲。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "concave mirror effect／working lens：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "objective refraction／subjective refraction：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**concave mirror effect｜凹面鏡效應**\n檢影鏡套筒改變成收斂光狀態，順逆動判讀會和另一模式不同。\n\n**working lens｜工作距離鏡片**\n用鏡片補償檢查者工作距離造成的屈光偏差，最後處方要扣除。",
+            "**objective refraction｜客觀驗光**\n不依賴病人主觀回答，由檢查者或儀器估計屈光狀態。\n\n**subjective refraction｜主觀驗光**\n根據病人的清晰度回饋微調處方，是最後配鏡的重要步驟。"
+          ],
+          "flash": [
+            {
+              "front": "concave mirror effect／working lens",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "objective refraction／subjective refraction",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "autorefractor／corneal topographer",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「concave mirror effect／working lens」，並說出一個判斷依據。",
+              "back": "**concave mirror effect｜凹面鏡效應**\n檢影鏡套筒改變成收斂光狀態，順逆動判讀會和另一模式不同。\n\n**working lens｜工作距離鏡片**\n用鏡片補償檢查者工作距離造成的屈光偏差，最後處方要扣除。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms-6-1",
+      "title": "中英文核心名詞 6",
+      "goals": [
+        "解釋corneal astigmatism／flat K",
+        "解釋steep K／WTR",
+        "解釋with-the-rule／ATR"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 6",
+          "body": "這課從「中英文核心名詞 6」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "corneal astigmatism／flat K",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**corneal astigmatism｜角膜散光**\n由角膜兩條主子午線彎曲度不同造成的散光成分。\n\n**flat K｜較平 K 值**\n角膜較平的主子午線讀值，常和較陡 K 值一起判斷散光。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「corneal astigmatism／flat K」，並說出一個判斷依據。",
+          "answer": "**corneal astigmatism｜角膜散光**\n由角膜兩條主子午線彎曲度不同造成的散光成分。\n\n**flat K｜較平 K 值**\n角膜較平的主子午線讀值，常和較陡 K 值一起判斷散光。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**corneal astigmatism｜角膜散光**\n由角膜兩條主子午線彎曲度不同造成的散光成分。\n\n**flat K｜較平 K 值**\n角膜較平的主子午線讀值，常和較陡 K 值一起判斷散光。"
+        },
+        {
+          "type": "card",
+          "title": "steep K／WTR",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**steep K｜較陡 K 值**\n角膜較陡的主子午線讀值，數值通常較高。\n\n**WTR｜順規散光（with-the-rule）**\n垂直子午線較陡的常見散光型態。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「steep K／WTR」，並說出一個判斷依據。",
+          "answer": "**steep K｜較陡 K 值**\n角膜較陡的主子午線讀值，數值通常較高。\n\n**WTR｜順規散光（with-the-rule）**\n垂直子午線較陡的常見散光型態。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**steep K｜較陡 K 值**\n角膜較陡的主子午線讀值，數值通常較高。\n\n**WTR｜順規散光（with-the-rule）**\n垂直子午線較陡的常見散光型態。"
+        },
+        {
+          "type": "card",
+          "title": "with-the-rule／ATR",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**with-the-rule｜順規散光**\n角膜垂直方向較陡，處方軸位常接近 180 度。\n\n**ATR｜逆規散光（against-the-rule）**\n水平子午線較陡的散光型態。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「with-the-rule／ATR」，並說出一個判斷依據。",
+          "answer": "**with-the-rule｜順規散光**\n角膜垂直方向較陡，處方軸位常接近 180 度。\n\n**ATR｜逆規散光（against-the-rule）**\n水平子午線較陡的散光型態。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**with-the-rule｜順規散光**\n角膜垂直方向較陡，處方軸位常接近 180 度。\n\n**ATR｜逆規散光（against-the-rule）**\n水平子午線較陡的散光型態。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：with-the-rule／ATR",
+          "problem": "用自己的話說明「with-the-rule／ATR」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：with-the-rule／ATR",
+            "**with-the-rule｜順規散光**\n角膜垂直方向較陡，處方軸位常接近 180 度。\n\n**ATR｜逆規散光（against-the-rule）**\n水平子午線較陡的散光型態。",
+            "把判斷依據連回題目：**with-the-rule｜順規散光**\n角膜垂直方向較陡，處方軸位常接近 180 度。\n\n**ATR｜逆規散光（against-the-rule）**\n水平子午線較陡的散光型態。"
+          ],
+          "answer": "**with-the-rule｜順規散光**\n角膜垂直方向較陡，處方軸位常接近 180 度。\n\n**ATR｜逆規散光（against-the-rule）**\n水平子午線較陡的散光型態。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 6",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「steep K／WTR」，並說出一個判斷依據。",
+              "answer": "**steep K｜較陡 K 值**\n角膜較陡的主子午線讀值，數值通常較高。\n\n**WTR｜順規散光（with-the-rule）**\n垂直子午線較陡的常見散光型態。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**steep K｜較陡 K 值**\n角膜較陡的主子午線讀值，數值通常較高。\n\n**WTR｜順規散光（with-the-rule）**\n垂直子午線較陡的常見散光型態。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「with-the-rule／ATR」，並說出一個判斷依據。",
+              "answer": "**with-the-rule｜順規散光**\n角膜垂直方向較陡，處方軸位常接近 180 度。\n\n**ATR｜逆規散光（against-the-rule）**\n水平子午線較陡的散光型態。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**with-the-rule｜順規散光**\n角膜垂直方向較陡，處方軸位常接近 180 度。\n\n**ATR｜逆規散光（against-the-rule）**\n水平子午線較陡的散光型態。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "corneal astigmatism／flat K：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "steep K／WTR：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**corneal astigmatism｜角膜散光**\n由角膜兩條主子午線彎曲度不同造成的散光成分。\n\n**flat K｜較平 K 值**\n角膜較平的主子午線讀值，常和較陡 K 值一起判斷散光。",
+            "**steep K｜較陡 K 值**\n角膜較陡的主子午線讀值，數值通常較高。\n\n**WTR｜順規散光（with-the-rule）**\n垂直子午線較陡的常見散光型態。"
+          ],
+          "flash": [
+            {
+              "front": "corneal astigmatism／flat K",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "steep K／WTR",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "with-the-rule／ATR",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「corneal astigmatism／flat K」，並說出一個判斷依據。",
+              "back": "**corneal astigmatism｜角膜散光**\n由角膜兩條主子午線彎曲度不同造成的散光成分。\n\n**flat K｜較平 K 值**\n角膜較平的主子午線讀值，常和較陡 K 值一起判斷散光。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

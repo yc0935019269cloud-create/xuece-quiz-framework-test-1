@@ -1,0 +1,299 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-course114-u08",
+    "subject": "optometry",
+    "name": "立體視覺：深度線索、視差與檢測｜114 學年度",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 學年度",
+      "視光學",
+      "第08單元 立體視覺：深度線索、視差與檢測"
+    ],
+    "order": 8,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-teacher-08-01",
+      "type": "single",
+      "stem": "下列何者為正常立體視範圍？",
+      "choices": [
+        "1～3 秒角",
+        "5～15 秒角",
+        "20～60 秒角",
+        "80～120 秒角"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n立體視閾值\n\n**白話理解**\n正常成人在良好矯正與測試條件下，立體視閾值可低至約 10 秒角；數值越小代表能辨認越細微的視差。\n\n**口訣**\n秒角越小，立體視越精細。\n\n**考點與解題步驟**\n- 不要把篩檢工具的較粗正常門檻當成人的最佳立體視。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 1；舊 ID opt-teacher-08-01",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-08-01",
+      "source_number": "1",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "立體視閾值",
+        "simple": "正常成人在良好矯正與測試條件下，立體視閾值可低至約 10 秒角；數值越小代表能辨認越細微的視差。",
+        "memory": "秒角越小，立體視越精細。",
+        "examFocus": [
+          "不要把篩檢工具的較粗正常門檻當成人的最佳立體視。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-08-02",
+      "type": "single",
+      "stem": "下列何者描述在有數分角（minutes of arc）誤差的情況下，仍舊能夠維持融像？",
+      "choices": [
+        "交叉性差距",
+        "顏色差距",
+        "視網膜差距",
+        "注視差距（fixation disparity）"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\nFixation disparity\n\n**白話理解**\n注視差距是雙眼視線存在極小偏差、影像落在 Panum 融合區內，患者仍維持單一融合視覺的狀態。\n\n**口訣**\n有小偏差、仍單一＝注視差距。\n\n**考點與解題步驟**\n- 視網膜差距是廣義刺激，不等同臨床定義的 fixation disparity。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 2；舊 ID opt-teacher-08-02",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-08-02",
+      "source_number": "2",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "Fixation disparity",
+        "simple": "注視差距是雙眼視線存在極小偏差、影像落在 Panum 融合區內，患者仍維持單一融合視覺的狀態。",
+        "memory": "有小偏差、仍單一＝注視差距。",
+        "examFocus": [
+          "視網膜差距是廣義刺激，不等同臨床定義的 fixation disparity。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-08-03",
+      "type": "single",
+      "stem": "檢測幼童立體視時，若幼童不能容忍配戴測試眼鏡，可用哪一組工具？",
+      "choices": [
+        "Bernell、TNO",
+        "Frisby、Lang",
+        "Randot、Titmus",
+        "無工具可供檢測"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n兒童立體視工具\n\n**白話理解**\nFrisby 以透明板的真實深度產生視差；Lang 以柱狀光柵與隨機點設計把不同影像送入兩眼，兩者都適合不易配戴眼鏡的幼童。\n\n**口訣**\n不戴眼鏡：Frisby、Lang。\n\n**考點與解題步驟**\n- TNO 需紅綠眼鏡；Titmus、Randot 多需偏光眼鏡。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 3；舊 ID opt-teacher-08-03",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-08-03",
+      "source_number": "3",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "兒童立體視工具",
+        "simple": "Frisby 以透明板的真實深度產生視差；Lang 以柱狀光柵與隨機點設計把不同影像送入兩眼，兩者都適合不易配戴眼鏡的幼童。",
+        "memory": "不戴眼鏡：Frisby、Lang。",
+        "examFocus": [
+          "TNO 需紅綠眼鏡；Titmus、Randot 多需偏光眼鏡。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-08-04",
+      "type": "single",
+      "stem": "立體視檢測常因單眼線索或患者斜著看而導致結果不準確。下列何種檢測最不受此影響？",
+      "choices": [
+        "TNO 蝴蝶及圖形立體檢測",
+        "Titmus 蒼蠅立體檢測",
+        "Frisby 玻璃板立體檢測",
+        "Randot Circle 亂點圓立體檢測"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n立體視測試的單眼線索\n\n**白話理解**\nTNO 的目標埋在隨機點圖中，單眼看不到有意義的輪廓，必須靠雙眼視差辨認。Titmus 大型蒼蠅容易有輪廓線索；Frisby 若斜視或移動頭部可能利用運動視差。\n\n**口訣**\n純 random-dot 目標最難靠單眼猜。\n\n**考點與解題步驟**\n- 名稱含 Randot 不代表每個子測驗都完全沒有輪廓提示。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 4；舊 ID opt-teacher-08-04",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-08-04",
+      "source_number": "4",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "立體視測試的單眼線索",
+        "simple": "TNO 的目標埋在隨機點圖中，單眼看不到有意義的輪廓，必須靠雙眼視差辨認。Titmus 大型蒼蠅容易有輪廓線索；Frisby 若斜視或移動頭部可能利用運動視差。",
+        "memory": "純 random-dot 目標最難靠單眼猜。",
+        "examFocus": [
+          "名稱含 Randot 不代表每個子測驗都完全沒有輪廓提示。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-08-05",
+      "type": "single",
+      "stem": "關於操作亂點 E 卡（random dot E cards），下列何者最不適當？",
+      "choices": [
+        "受測者需配戴偏光眼鏡",
+        "檢查時不需要配戴近用矯正眼鏡",
+        "檢查環境應有良好照明",
+        "正常立體視成人可辨認約 150 cm 處的亂點 E 卡"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nRandom Dot E 測試條件\n\n**白話理解**\n清晰的雙眼影像是立體視測試前提，未矯正屈光不正會降低結果。Random Dot E 需偏光眼鏡與良好照明；距離式篩檢可依工具規範在約 1.5 m 使用。\n\n**口訣**\n先矯正清楚，再測立體視。\n\n**考點與解題步驟**\n- 測的是雙眼功能，不代表屈光矯正可以拿掉。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 5；舊 ID opt-teacher-08-05",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-08-05",
+      "source_number": "5",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "Random Dot E 測試條件",
+        "simple": "清晰的雙眼影像是立體視測試前提，未矯正屈光不正會降低結果。Random Dot E 需偏光眼鏡與良好照明；距離式篩檢可依工具規範在約 1.5 m 使用。",
+        "memory": "先矯正清楚，再測立體視。",
+        "examFocus": [
+          "測的是雙眼功能，不代表屈光矯正可以拿掉。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

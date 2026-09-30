@@ -1,0 +1,1566 @@
+{
+  "rapid": {
+    "glossary": {
+      "ECG": "Electrocardiogram，心電圖。從體表記錄心臟整體電活動，不是心臟收縮力量。",
+      "lead": "導程。像從某個方向拍心臟電活動的攝影機。",
+      "RA": "Right atrium，右心房；收全身回來的缺氧血。",
+      "RV": "Right ventricle，右心室；把血送去肺。",
+      "LA": "Left atrium，左心房；收肺回來的含氧血。",
+      "LV": "Left ventricle，左心室；把血送去全身。",
+      "AV node": "Atrioventricular node，房室結；故意讓訊號慢一下，讓心房先把血倒進心室。",
+      "SA node": "Sinoatrial node，竇房結；心臟天然的 pacemaker。",
+      "pacemaker": "節律器；能自己規律發出電訊號的細胞或裝置。",
+      "depolarization": "去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。",
+      "repolarization": "再極化；細胞膜電位回到休息狀態。",
+      "preload": "前負荷；心室收縮前裝進多少血。",
+      "afterload": "後負荷；心室把血推出去時面對的阻力。",
+      "contractility": "收縮力；在相同裝血量下，心肌本身能擠多用力。",
+      "EDV": "End-diastolic volume，舒張末期容積；心室裝最滿時的血量。",
+      "ESV": "End-systolic volume，收縮末期容積；射血後剩下的血量。",
+      "SV": "Stroke volume，每搏量；一次心跳射出的血量，SV = EDV − ESV。",
+      "CO": "Cardiac output，心輸出量；每分鐘打出的血量，CO = HR × SV。",
+      "GFR": "Glomerular filtration rate，腎絲球過濾率；每分鐘產生多少濾液。",
+      "RPF": "Renal plasma flow，腎血漿流量；每分鐘送到腎臟的血漿量。",
+      "clearance": "清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。",
+      "nephron": "腎元；腎臟做過濾、回收、分泌的基本工作單位。",
+      "JGA": "Juxtaglomerular apparatus，腎絲球旁器；偵測壓力與 NaCl，控制 renin。",
+      "RAAS": "Renin–angiotensin–aldosterone system；低血壓時啟動的保水、保鈉、升壓系統。",
+      "renin": "腎素；RAAS 的第一個開關，由 JG cells 釋放。",
+      "Ang II": "Angiotensin II；讓血管收縮、促進 aldosterone，幫忙升血壓。",
+      "aldosterone": "醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。",
+      "CNS": "Central nervous system，中樞神經系統；brain + spinal cord。",
+      "PNS": "Peripheral nervous system，周邊神經系統；中樞以外的神經部分。",
+      "afferent": "傳入；把感覺資訊送到 CNS。記 A = Arrives。",
+      "efferent": "傳出；把命令從 CNS 送出去。記 E = Exits。",
+      "neuron": "神經元；負責接收、處理與傳遞訊號的細胞。",
+      "glia": "膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。",
+      "myelin": "髓鞘；包住 axon 的絕緣層，讓訊號跳著跑、跑更快。",
+      "action potential": "動作電位；細胞沿膜傳遞的一次全有全無電訊號。",
+      "BBB": "Blood–brain barrier，血腦障壁；保護 CNS、限制許多物質進入。",
+      "rod": "桿狀細胞；擅長暗處、靈敏但不看顏色與細節。",
+      "cone": "錐狀細胞；擅長亮處、顏色與高解析度。",
+      "rhodopsin": "視紫質；rod 裡的感光色素。",
+      "phototransduction": "感光換能；把光變成神經電訊號。",
+      "hyperpolarization": "超極化；膜電位變得更負。photoreceptor 見光時會這樣。",
+      "cochlea": "耳蝸；內耳負責把聲音振動轉成神經訊號的構造。",
+      "basilar membrane": "基底膜；耳蝸內的頻率地圖，高頻靠 base、低頻靠 apex。",
+      "hair cell": "毛細胞；內耳的機械感受器，纖毛彎曲就改變 transmitter 釋放。",
+      "endolymph": "內淋巴；內耳特殊液體，K⁺ 很高。",
+      "ANS": "Autonomic nervous system，自主神經系統；自動控制內臟、腺體與平滑肌。",
+      "ACh": "Acetylcholine，乙醯膽鹼；所有 ANS 節前神經都使用。",
+      "NE": "Norepinephrine，正腎上腺素；多數 sympathetic 節後神經使用。",
+      "sympathetic": "交感神經；偏向緊急、動員能量的 fight-or-flight。",
+      "parasympathetic": "副交感神經；偏向休息、消化的 rest-and-digest。",
+      "nicotinic receptor": "菸鹼型受體；ACh 受體中的 ion channel，ganglia 常見 Nn。",
+      "muscarinic receptor": "毒蕈鹼型受體；ACh 受體中的 GPCR，副交感效應器常見。",
+      "GPCR": "G protein-coupled receptor，G 蛋白偶聯受體；把膜外訊號傳進細胞。",
+      "peptide hormone": "胜肽荷爾蒙；水溶、用膜受體、可先儲存在 vesicle。",
+      "steroid hormone": "類固醇荷爾蒙；脂溶、由 cholesterol 製造、使用細胞內受體。",
+      "intracrine": "胞內分泌；訊號留在製造它的細胞內作用，沒有被分泌出去。",
+      "autocrine": "自分泌；細胞放出訊號後，回頭作用在自己身上。",
+      "paracrine": "旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。",
+      "endocrine": "內分泌；荷爾蒙進入血液，前往遠方帶有正確 receptor 的 target cell。",
+      "neuroendocrine": "神經內分泌；neuron 把訊號分泌進血液，例如 ADH、oxytocin。",
+      "target cell": "標的細胞；具有對應 receptor、能讀懂某種荷爾蒙的細胞。",
+      "RTK": "Receptor tyrosine kinase，受體酪胺酸激酶；insulin receptor 使用的膜受體。",
+      "JAK-STAT": "由 receptor 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 gene expression。",
+      "second messenger": "第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。",
+      "ADH": "Antidiuretic hormone，抗利尿激素；V2 使 collecting duct 插入 AQP2、幫身體留水。",
+      "AQP2": "Aquaporin-2；ADH 叫 collecting duct 放到膜上的水通道。",
+      "oxytocin": "催產素；促進子宮收縮，也讓乳腺肌上皮收縮、射出乳汁。",
+      "prolactin": "泌乳激素；負責製造乳汁。射乳則主要靠 oxytocin。",
+      "GH": "Growth hormone，生長激素；促進 IGF-1、生長，也直接影響代謝。",
+      "IGF-1": "Insulin-like growth factor 1；主要由肝臟在 GH 刺激下製造，幫助身體生長。",
+      "NIS": "Sodium–iodide symporter；甲狀腺濾泡細胞從血液攝取 iodide 的運輸器。",
+      "TPO": "Thyroid peroxidase；負責 iodide oxidation、organification 與 coupling 的關鍵酵素。",
+      "MIT": "Monoiodotyrosine；一個碘的 tyrosine，MIT + DIT 可形成 T3。",
+      "DIT": "Diiodotyrosine；兩個碘的 tyrosine，DIT + DIT 可形成 T4。",
+      "calcitonin": "降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。",
+      "osteoblast": "造骨細胞；負責形成骨，也用 RANKL 間接叫 osteoclast 工作。",
+      "osteoclast": "蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。",
+      "RANKL": "osteoblast 表面的訊號；促進 osteoclast precursor 成熟並增加骨吸收。",
+      "C-peptide": "proinsulin 被切割時和 insulin 一起產生；可用來判斷內源性 insulin 分泌。",
+      "insulin resistance": "胰島素阻抗；細胞對 insulin 反應變差，早期 β cell 會代償分泌更多。",
+      "PTH": "Parathyroid hormone，副甲狀腺素；低血鈣時升高血鈣。",
+      "T3": "Triiodothyronine，三碘甲狀腺素；活性較強的 thyroid hormone。",
+      "T4": "Thyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 T3。",
+      "insulin": "胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。",
+      "glucagon": "升糖素；由 pancreatic α cells 分泌，幫助升高血糖。",
+      "GnRH": "Gonadotropin-releasing hormone；下視丘叫 pituitary 釋放 LH/FSH 的口令。",
+      "LH": "Luteinizing hormone；男性刺激 Leydig，女性觸發 ovulation 並支持 corpus luteum。",
+      "FSH": "Follicle-stimulating hormone；男性支持 spermatogenesis，女性促 follicle 與 estrogen。",
+      "HPG axis": "Hypothalamic–pituitary–gonadal axis；下視丘→腦下垂體→性腺的控制軸。",
+      "gamete": "配子；男性是 sperm、女性是 oocyte，各帶一半染色體。",
+      "meiosis": "減數分裂；把染色體數目減半，並透過重組增加遺傳變化。",
+      "spermatogenesis": "精子生成；由 spermatogonia 經 meiosis 與成熟形成 sperm。",
+      "oogenesis": "卵子生成；出生前已開始，包含 prophase I 與 metaphase II 兩次停頓。",
+      "primary oocyte": "初級卵母細胞；停在 prophase I，直到排卵前才完成 meiosis I。",
+      "secondary oocyte": "次級卵母細胞；排卵時停在 metaphase II，受精後才完成 meiosis II。",
+      "17β-HSD": "17β-hydroxysteroid dehydrogenase；參與 testosterone 與 estradiol 的生成轉換。",
+      "5α-reductase": "把 testosterone 轉成作用更強的 DHT，主要在周邊 target tissue。",
+      "DHT": "Dihydrotestosterone；由 testosterone 經 5α-reductase 形成，對外生殖器與前列腺很重要。",
+      "inhibin": "主要由 Sertoli／granulosa cells 分泌，選擇性負回饋抑制 FSH。",
+      "activin": "促進 FSH 合成與分泌，方向大致與 inhibin 相反。",
+      "SRY": "Y chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。",
+      "AMH": "Anti-Müllerian hormone；由 fetal Sertoli cells 分泌，使 Müllerian duct 退化。",
+      "seminiferous tubule": "曲細精管；testis 內進行 spermatogenesis 的場所。",
+      "blood-testis barrier": "血睪屏障；由 Sertoli cell tight junction 形成，保護發育中的 germ cells。",
+      "ABP": "Androgen-binding protein；由 Sertoli cell 分泌，維持 seminiferous tubule 內高 testosterone。",
+      "theca cell": "卵泡膜細胞；受 LH 刺激製造 androgen。",
+      "granulosa cell": "顆粒細胞；受 FSH 刺激，用 aromatase 把 androgen 轉成 estrogen。",
+      "aromatase": "芳香化酶；把 androgen 轉成 estrogen。",
+      "follicular phase": "濾泡期；從月經開始到 ovulation，主要由 follicle 與 estrogen 主導。",
+      "luteal phase": "黃體期；ovulation 後到下次月經，主要由 corpus luteum 與 progesterone 主導。",
+      "LH surge": "LH 急升；高 estradiol 正回饋造成，會觸發 ovulation。",
+      "Sertoli cell": "支持細胞；照顧精子生成，分泌 ABP 與 inhibin。",
+      "Leydig cell": "間質細胞；受 LH 刺激製造 testosterone。",
+      "ovulation": "排卵；成熟卵泡釋出 secondary oocyte，通常在下次月經前約 14 天。",
+      "hCG": "Human chorionic gonadotropin；早期胚胎訊號，維持 corpus luteum。",
+      "corpus luteum": "黃體；排卵後卵泡變成的暫時內分泌構造，主要分泌 progesterone。",
+      "progesterone": "黃體素；穩定 endometrium、支持妊娠，並使基礎體溫稍微升高。",
+      "implantation": "著床；blastocyst 黏附並進入 endometrium，之後開始建立 placenta。",
+      "placenta": "胎盤；負責母胎物質交換，也分泌 hCG、progesterone、estrogen 等荷爾蒙。",
+      "Barr body": "失活並濃縮的 X chromosome；數量通常是 X 染色體數減 1。"
+    },
+    "babySprint": {
+      "cardiovascular": [
+        [
+          "心電圖在看電往哪跑",
+          "把心臟想成一群人搬正電。電往鏡頭的正端跑，線就往上；背對它跑，線就往下。",
+          "朝正端＝上；離正端＝下。"
+        ],
+        [
+          "為什麼休息波還是向上",
+          "心室恢復休息時，移動方向和電性一起反過來；反兩次就等於沒反，所以通常仍畫向上。",
+          "兩個相反互相取消。"
+        ],
+        [
+          "兩個尖峰隔多久",
+          "找相鄰兩個最高尖峰，它們的距離就是一次心跳花的時間；越近代表跳越快。",
+          "尖峰擠得近＝心跳快。"
+        ],
+        [
+          "心房要先倒完血",
+          "訊號到心房和心室中間時會故意等一下，讓上面的心房先把血倒進下面的心室。",
+          "先裝滿，再開打。"
+        ],
+        [
+          "中間轉運站故意很慢",
+          "房室之間的轉運站路窄、出口少，所以電跑得慢；這不是故障，是讓心室有時間裝血。",
+          "慢，是為了裝血。"
+        ],
+        [
+          "平線翹起或沉下要小心",
+          "心室整片都在忙時，圖本來應接近平線；突然抬高或壓低，常表示心肌正在缺血或受傷。",
+          "該平不平＝警報。"
+        ],
+        [
+          "六個方向看同一顆心",
+          "手腳上的電極像六台相機，從不同方向看同一股心臟電流。",
+          "相機方向不同，波形就不同。"
+        ],
+        [
+          "肌肉放鬆不等於舒張開始",
+          "心室正在把最後一點血推出去時，肌肉可能已開始鬆，但出口門還沒關，所以仍算收縮期。",
+          "看門，不看肌肉表情。"
+        ]
+      ],
+      "urinary": [
+        [
+          "腎臟門口的三人警報隊",
+          "腎臟入口旁有三種細胞一起看鹽夠不夠、血壓夠不夠；不夠就按下升壓警鈴。",
+          "低鹽或低壓 → 按警鈴。"
+        ],
+        [
+          "血壓太低就啟動保水鏈",
+          "腎臟覺得血不夠，會啟動一串接力：先縮血管，再叫身體留下鹽和水，把血壓救回來。",
+          "縮管＋留鹽水＝升壓。"
+        ],
+        [
+          "尿裡最後有多少",
+          "某物進入腎小管後，可以被拿回身體，也可以再被丟進尿裡；最後排出量就是進來減拿回、再加丟入。",
+          "排出＝進來－拿回＋再丟。"
+        ],
+        [
+          "短吸管和長吸管",
+          "多數腎元的管子較短；少數管子伸得很深，專門建立濃度階梯，幫你在缺水時做出濃尿。",
+          "長管子＝比較會省水。"
+        ],
+        [
+          "血管捏細，壓力就上去",
+          "水管半徑只縮一點，阻力就會暴增；心臟更難推血，血壓也容易升高。",
+          "管子細一點，阻力大很多。"
+        ]
+      ],
+      "cns": [
+        [
+          "先認英文路標",
+          "這單元的題目常直接放英文，所以要做到看到字就能知道它是中樞、周邊、傳入還是傳出。",
+          "英文不是裝飾，是題目本體。"
+        ],
+        [
+          "有一截跑出腦和脊髓就算周邊",
+          "一條神經只要有部分離開 brain 或 spinal cord，那段就屬於身體外圍的神經系統。",
+          "全程待在中樞才叫中樞。"
+        ],
+        [
+          "感覺進來，命令出去",
+          "感覺訊息往 brain/spinal cord 送；運動命令則從那裡送往肌肉或器官。",
+          "A＝到達；E＝離開。"
+        ],
+        [
+          "運動神經的家在裡面，手伸到外面",
+          "控制骨骼肌的神經元，細胞本體住在 spinal cord，但長長的軸突會伸出去找肌肉。",
+          "身體在中樞，長手在周邊。"
+        ],
+        [
+          "一個隊長帶幾個兵",
+          "一顆運動神經帶的肌纖維越少，動作越精細；一次帶很多，力量較大但控制較粗。",
+          "小隊精細，大隊有力。"
+        ],
+        [
+          "神經元工作，膠質細胞養家",
+          "神經元負責傳訊；旁邊的膠質細胞負責餵養、清潔、包絕緣層與維持環境。",
+          "一個送訊息，一群做後勤。"
+        ]
+      ],
+      "special-senses": [
+        [
+          "光照下去，感光細胞反而安靜",
+          "暗處時感光細胞一直放訊號；光一來會把入口關起來，細胞變得更安靜，訊號反而減少。",
+          "光來＝關門＝更安靜。"
+        ],
+        [
+          "夜班眼睛和白天眼睛",
+          "一種細胞很會在暗處抓微光，但看不清顏色；另一種要亮一點，卻能看顏色與細節。",
+          "暗處求有，亮處求精。"
+        ],
+        [
+          "每個感受器都有最愛",
+          "感受器不是只能被一種刺激叫醒，而是對某種刺激最省力、最敏感。",
+          "最容易叫醒它的，就是它的最愛。"
+        ],
+        [
+          "鼻側的線會換邊",
+          "兩眼送出的視覺線路中，靠鼻子那半邊會在中間交叉，靠太陽穴那半邊不交叉。",
+          "鼻子過橋，太陽穴直走。"
+        ],
+        [
+          "看缺哪一塊，找哪裡斷線",
+          "單眼全黑多半是眼睛剛出去的線壞；兩側外邊看不到常是中間交叉處壞；同一側視野缺則是更後面壞。",
+          "缺損形狀就是斷線地址。"
+        ],
+        [
+          "盲點是沒有感光工人的出口",
+          "視神經離開眼球的地方沒有感光細胞，所以那一小塊真的看不到；平常由另一眼和腦補起來。",
+          "電線出口沒裝鏡頭。"
+        ],
+        [
+          "小鼓面把力集中到小窗戶",
+          "耳膜面積大，內耳入口小，再加上三塊小骨頭幫忙，把空氣的小震動集中成較大的壓力。",
+          "大面收力，小面出力。"
+        ],
+        [
+          "高音停得早，低音跑得遠",
+          "耳蝸裡的膜像一條長地毯：高頻在入口附近震最大，低頻要跑到深處才震最大。",
+          "高音靠門，低音進裡面。"
+        ],
+        [
+          "毛往高處倒，細胞就開門",
+          "內耳小毛被推向最高那根時，拉繩把通道打開，特殊液體裡的鉀跑進細胞，開始放訊號。",
+          "往高毛倒＝開門。"
+        ],
+        [
+          "分清是傳不進去，還是接收器壞了",
+          "外耳或中耳卡住，是聲音傳送問題；內耳或神經壞掉，是接收與傳訊問題。",
+          "前段塞車 vs 後段機器壞。"
+        ],
+        [
+          "轉圈和直線由不同感測器管",
+          "三個半圓管負責感覺旋轉；另外兩個小袋子負責直線加速和頭部傾斜。",
+          "轉彎看管子，直線看袋子。"
+        ],
+        [
+          "味道和氣味都是化學偵探",
+          "舌頭認基本味道，鼻子補出食物的完整風味；鼻子的線路也很靠近情緒與記憶區。",
+          "舌頭給骨架，鼻子加靈魂。"
+        ]
+      ],
+      "ans": [
+        [
+          "內臟的自動駕駛",
+          "這套系統不必一直用意識指揮，會自動調心跳、腸胃、腺體；多數器官還有油門和煞車一起管。",
+          "自動控制，兩邊拉平衡。"
+        ],
+        [
+          "緊急線短前長後，休息線長前短後",
+          "緊急系統的轉運站靠近 spinal cord；休息系統的轉運站靠近器官，所以前後兩段長短剛好相反。",
+          "站靠哪邊，哪一邊的線就短。"
+        ],
+        [
+          "第一棒都用同一種傳話筒",
+          "不管緊急或休息系統，從 CNS 出發的第一顆神經都用同一種傳遞物；第二棒才開始分家。",
+          "第一棒相同，第二棒不同。"
+        ],
+        [
+          "汗腺是穿錯制服的例外",
+          "汗腺明明屬於緊急系統，但最後一棒不用平常的緊急傳遞物，反而使用休息系統常見的那一種。",
+          "交感的身分，副交感的武器。"
+        ],
+        [
+          "腎上腺是把訊號倒進血裡的大喇叭",
+          "一般神經只對附近器官說話；腎上腺會把緊急訊號灑進血液，讓全身一起進入備戰。",
+          "局部電話變全身廣播。"
+        ],
+        [
+          "分類看工作，不要只看細胞住哪",
+          "這套系統算周邊運動輸出，但第一顆神經的細胞本體仍住在 brain 或 spinal cord。",
+          "系統分類和住址是兩件事。"
+        ],
+        [
+          "同一把鑰匙可以開快門或慢機器",
+          "一種受體是直接開離子門、反應快；另一種先叫細胞內接力、反應較慢但變化多。",
+          "快門直接開，慢門叫接力。"
+        ],
+        [
+          "看到受體先問器官結果",
+          "不同受體會讓心跳變快、支氣管放鬆或血管收縮；不要只背字母，要把字母黏到器官動作。",
+          "受體名字要綁器官反應。"
+        ]
+      ],
+      "endocrine": [
+        [
+          "荷爾蒙分三種送貨方式",
+          "水溶性的包好放倉庫、需要時倒出去；脂溶性的臨時製造、直接穿牆；少數由胺基酸做的要看它像哪一邊。",
+          "先問能不能溶在水。"
+        ],
+        [
+          "蛋白質荷爾蒙像工廠包裹",
+          "先做很長的半成品，再一路剪裁、包進小泡泡；收到命令時，小泡泡和細胞膜融合，把成品倒出去。",
+          "先做、先存、再出貨。"
+        ],
+        [
+          "細胞外按門鈴，細胞內跑接力",
+          "不能穿膜的荷爾蒙在門外按 receptor，細胞內再用小分子接力，把訊號放大。",
+          "外面按鈴，裡面傳話。"
+        ],
+        [
+          "甲狀腺把碘裝到大蛋白上",
+          "先把碘抓進細胞，再送進濾泡中央，接到 tyrosine 上並兩兩配對，最後切下 T3/T4 放進血。",
+          "抓碘 → 黏碘 → 配對 → 剪下。"
+        ],
+        [
+          "T4 像庫存，T3 像開工版本",
+          "甲狀腺主要放出較多 T4；到了周邊組織，可以轉成較有力的 T3，也能轉成沒作用的版本。",
+          "T4 多，T3 強。"
+        ],
+        [
+          "看上游和下游誰高誰低",
+          "甲狀腺自己太旺時，下游荷爾蒙高、上游命令低；原料不足時，下游低、上游會拼命催，腺體可能被催大。",
+          "產品多就少催，產品少就猛催。"
+        ],
+        [
+          "血鈣太低時，身體先救血液",
+          "身體會從骨頭借鈣、讓腎臟少丟鈣，並叫腸子多吸收；因為血鈣太低會讓神經肌肉亂放電。",
+          "先救血，再顧骨。"
+        ],
+        [
+          "骨頭拆除隊不是直接接命令",
+          "升血鈣荷爾蒙先告訴造骨細胞，再由造骨細胞叫醒拆骨細胞，讓骨鈣釋出。",
+          "長官不直接找拆除工。"
+        ],
+        [
+          "維生素 D 要蓋三個章",
+          "皮膚或食物取得原料後，先去肝、再去腎加工，才變成能幫腸子吸收鈣的活性版本。",
+          "皮膚 → 肝 → 腎 → 腸。"
+        ],
+        [
+          "胰島像四色小隊",
+          "不同細胞各自負責降血糖、升血糖、踩煞車；胰臟同時也會把消化液送進腸道。",
+          "一邊管血糖，一邊管消化。"
+        ],
+        [
+          "看陪跑碎片就知道是不是自己做的",
+          "身體自己製造 insulin 時，會同時放出一塊陪跑碎片；外面打進來的 insulin 沒有它。",
+          "有陪跑碎片＝自己做的。"
+        ]
+      ],
+      "reproduction": [
+        [
+          "多一條 X，就多收起一條",
+          "細胞只需要一條 X 工作，多出來的會捲起來休息；所以休息小球的數量是 X 數量減一。",
+          "X 有幾條，休息的少一條。"
+        ],
+        [
+          "卵子一生會按兩次暫停",
+          "女性的卵細胞出生前先停一次；排卵時再停一次，只有真的受精才會把第二次分裂做完。",
+          "出生前停一，排卵後停二。"
+        ],
+        [
+          "一把做性荷爾蒙，一把做更強男性版本",
+          "性腺裡的酵素幫忙做 testosterone 或 estrogen；另一把酵素在周邊把 testosterone 改成更強的 DHT。",
+          "性腺製造，周邊強化。"
+        ],
+        [
+          "睪丸從裡面長，卵巢從外面長",
+          "胚胎早期的性腺有外層和內層；男性主要保留內層，女性主要保留外層。",
+          "男內、女外。"
+        ],
+        [
+          "大腦下令，兩種細胞分工",
+          "上游先放總命令，再分成兩條：一條叫 Leydig 做 testosterone；另一條叫 Sertoli 照顧精子。",
+          "L 做荷爾蒙，S 顧精子。"
+        ],
+        [
+          "Sertoli 是精子幼兒園老師",
+          "它餵養發育中的精子、築起保護牆、留住高濃度 testosterone，還會回報上游不要再催太多。",
+          "餵、擋、留、回報。"
+        ],
+        [
+          "血裡和睪丸小管裡用不同保母車",
+          "testosterone 在一般血液中搭一種運輸蛋白；進入製造精子的管子後，改由 Sertoli 做的蛋白留住。",
+          "血裡一台，小管另一台。"
+        ],
+        [
+          "卵泡兩個房間接力做 estrogen",
+          "外層細胞先在 LH 命令下做原料；內層細胞再受 FSH 命令，把原料改成 estrogen。",
+          "外層做原料，內層做成品。"
+        ],
+        [
+          "排卵看下次月經倒數十四天",
+          "不是每個人都固定在週期第十四天排卵；比較穩的是排卵後大約十四天才來月經。",
+          "從下次月經往前倒數。"
+        ],
+        [
+          "胚胎先發維持黃體的續約通知",
+          "懷孕初期胎盤還沒完全接手，胚胎先放出類似 LH 的訊號，叫黃體繼續製造 progesterone。",
+          "先續約黃體，再由胎盤接班。"
+        ]
+      ]
+    },
+    "babyWords": [
+      [
+        "intracellular receptor",
+        "住在細胞裡面的接收器（intracellular receptor）"
+      ],
+      [
+        "juxtamedullary nephron",
+        "伸進深處、很會幫忙濃縮尿的長腎元（juxtamedullary nephron）"
+      ],
+      [
+        "gene transcription",
+        "叫細胞照 DNA 說明書製造新東西（gene transcription）"
+      ],
+      [
+        "negative feedback",
+        "產品夠了，就回頭叫上游少做一點（negative feedback）"
+      ],
+      [
+        "positive feedback",
+        "越做越強，直到事情完成（positive feedback）"
+      ],
+      [
+        "membrane receptor",
+        "裝在細胞外牆上的接收器（membrane receptor）"
+      ],
+      [
+        "hyperpolarization",
+        "細胞變得更安靜、更難放電（hyperpolarization）"
+      ],
+      [
+        "second messenger",
+        "細胞裡負責接棒傳話的小弟（second messenger）"
+      ],
+      [
+        "action potential",
+        "沿著細胞膜跑的一次電訊號（action potential）"
+      ],
+      [
+        "cortical nephron",
+        "住得較外面、管子較短的腎元（cortical nephron）"
+      ],
+      [
+        "neurotransmitter",
+        "神經末端放出的傳話小分子（neurotransmitter）"
+      ],
+      [
+        "collecting duct",
+        "最後決定要留多少水的集合管（collecting duct）"
+      ],
+      [
+        "parasympathetic",
+        "身體的休息消化模式（parasympathetic）"
+      ],
+      [
+        "peptide hormone",
+        "能溶在水、先包好存起來的荷爾蒙（peptide hormone）"
+      ],
+      [
+        "steroid hormone",
+        "能穿膜、需要時才製造的荷爾蒙（steroid hormone）"
+      ],
+      [
+        "spermatogenesis",
+        "一路把原始生殖細胞做成精子（spermatogenesis）"
+      ],
+      [
+        "neuroendocrine",
+        "神經細胞把訊號倒進血裡（neuroendocrine）"
+      ],
+      [
+        "depolarization",
+        "細胞被叫醒、準備放電（depolarization）"
+      ],
+      [
+        "repolarization",
+        "細胞回到休息狀態（repolarization）"
+      ],
+      [
+        "cardiac output",
+        "心臟一分鐘總共送出多少血（cardiac output）"
+      ],
+      [
+        "postganglionic",
+        "從轉運站到器官的第二棒神經（postganglionic）"
+      ],
+      [
+        "granulosa cell",
+        "把原料改成 estrogen、也照顧卵子的細胞（granulosa cell）"
+      ],
+      [
+        "contractility",
+        "心肌自己能擠多用力（contractility）"
+      ],
+      [
+        "stroke volume",
+        "一次心跳送出多少血（stroke volume）"
+      ],
+      [
+        "photoreceptor",
+        "把光變成神經訊號的感光細胞（photoreceptor）"
+      ],
+      [
+        "preganglionic",
+        "從 CNS 到轉運站的第一棒神經（preganglionic）"
+      ],
+      [
+        "corpus luteum",
+        "排卵後留下、暫時做 progesterone 的黃體（corpus luteum）"
+      ],
+      [
+        "target cells",
+        "有正確接收器的目標細胞（target cells）"
+      ],
+      [
+        "reabsorption",
+        "把身體還想要的東西撿回來（reabsorption）"
+      ],
+      [
+        "macula densa",
+        "負責聞尿管裡鹽夠不夠的感測細胞（macula densa）"
+      ],
+      [
+        "implantation",
+        "小胚胎黏進子宮內膜安家（implantation）"
+      ],
+      [
+        "Sertoli cell",
+        "餵養並保護發育中精子的保母細胞（Sertoli cell）"
+      ],
+      [
+        "progesterone",
+        "排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）"
+      ],
+      [
+        "testosterone",
+        "主要男性 androgen，也支援精子生成（testosterone）"
+      ],
+      [
+        "hypothalamus",
+        "連接神經和荷爾蒙控制的下視丘（hypothalamus）"
+      ],
+      [
+        "target cell",
+        "有正確接收器的目標細胞（target cell）"
+      ],
+      [
+        "homeostasis",
+        "把身體維持在剛剛好的狀態（homeostasis）"
+      ],
+      [
+        "aldosterone",
+        "叫腎臟留鹽留水、排鉀的荷爾蒙（aldosterone）"
+      ],
+      [
+        "sympathetic",
+        "身體的緊急備戰模式（sympathetic）"
+      ],
+      [
+        "cholesterol",
+        "製造 steroid hormone 的原料（cholesterol）"
+      ],
+      [
+        "Leydig cell",
+        "收到 LH 後製造 testosterone 的細胞（Leydig cell）"
+      ],
+      [
+        "intracrine",
+        "訊號留在自己細胞裡，不送出去（intracrine）"
+      ],
+      [
+        "filtration",
+        "先把血漿裡的小東西大量篩出去（filtration）"
+      ],
+      [
+        "glomerulus",
+        "腎臟最前面的濾網球（glomerulus）"
+      ],
+      [
+        "theca cell",
+        "先製造 androgen 原料的卵泡外層細胞（theca cell）"
+      ],
+      [
+        "osteoblast",
+        "負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）"
+      ],
+      [
+        "osteoclast",
+        "負責拆骨頭並放出鈣的細胞（osteoclast）"
+      ],
+      [
+        "autocrine",
+        "自己送訊號給自己（autocrine）"
+      ],
+      [
+        "paracrine",
+        "只送給隔壁鄰居（paracrine）"
+      ],
+      [
+        "endocrine",
+        "訊號搭血液去遠方（endocrine）"
+      ],
+      [
+        "secretion",
+        "再把不要的東西丟進尿管（secretion）"
+      ],
+      [
+        "excretion",
+        "最後真的跟尿一起離開（excretion）"
+      ],
+      [
+        "afterload",
+        "心室把血推出去時遇到多大阻力（afterload）"
+      ],
+      [
+        "pacemaker",
+        "自己會規律喊開始的節拍器細胞（pacemaker）"
+      ],
+      [
+        "hair cell",
+        "毛一彎就開始傳訊的內耳細胞（hair cell）"
+      ],
+      [
+        "ovulation",
+        "卵泡把卵細胞放出去（ovulation）"
+      ],
+      [
+        "oogenesis",
+        "一路準備卵細胞的過程（oogenesis）"
+      ],
+      [
+        "germ cell",
+        "未來會變成精子或卵子的細胞（germ cell）"
+      ],
+      [
+        "aromatase",
+        "把 androgen 改造成 estrogen 的工具酵素（aromatase）"
+      ],
+      [
+        "vitamin D",
+        "加工完成後幫腸子吸收鈣的訊號（vitamin D）"
+      ],
+      [
+        "pituitary",
+        "接收命令、再指揮其他腺體的腦下垂體（pituitary）"
+      ],
+      [
+        "afferent",
+        "把消息送進腦和脊髓（afferent）"
+      ],
+      [
+        "efferent",
+        "把命令從腦和脊髓送出去（efferent）"
+      ],
+      [
+        "ganglion",
+        "兩顆神經交棒的轉運站（ganglion）"
+      ],
+      [
+        "follicle",
+        "裝著卵細胞、照顧它長大的小房間（follicle）"
+      ],
+      [
+        "placenta",
+        "媽媽和胎兒交換物資、也做荷爾蒙的胎盤（placenta）"
+      ],
+      [
+        "estrogen",
+        "讓子宮內膜長厚、排卵前能踩油門的荷爾蒙（estrogen）"
+      ],
+      [
+        "glucagon",
+        "血糖低時叫肝臟放糖的荷爾蒙（glucagon）"
+      ],
+      [
+        "receptor",
+        "收訊號用的接收器（receptor）"
+      ],
+      [
+        "nephron",
+        "腎臟裡的一條迷你處理管（nephron）"
+      ],
+      [
+        "preload",
+        "心室開打前先裝進多少血（preload）"
+      ],
+      [
+        "cochlea",
+        "把聲音震動變成神經訊號的耳蝸（cochlea）"
+      ],
+      [
+        "meiosis",
+        "把染色體分成一半、製造配子的分裂（meiosis）"
+      ],
+      [
+        "inhibin",
+        "回頭叫 FSH 少一點的煞車訊號（inhibin）"
+      ],
+      [
+        "insulin",
+        "叫細胞收下血糖、儲存能量的荷爾蒙（insulin）"
+      ],
+      [
+        "hormone",
+        "身體細胞用來傳話的化學小紙條（hormone）"
+      ],
+      [
+        "neuron",
+        "負責傳訊的神經細胞（neuron）"
+      ],
+      [
+        "myelin",
+        "包住神經線、讓電跑更快的絕緣套（myelin）"
+      ],
+      [
+        "renin",
+        "低壓時按下升壓接力賽第一棒的訊號（renin）"
+      ],
+      [
+        "glia",
+        "照顧神經元的後勤細胞（glia）"
+      ],
+      [
+        "cone",
+        "負責亮處、顏色和細節的細胞（cone）"
+      ],
+      [
+        "CNS",
+        "腦和脊髓這個總部（CNS）"
+      ],
+      [
+        "PNS",
+        "總部以外的神經線（PNS）"
+      ],
+      [
+        "rod",
+        "負責暗處、敏感但看不清顏色的細胞（rod）"
+      ]
+    ]
+  },
+  "rescue": {
+    "CH": {
+      "6": "第六章・厚透鏡",
+      "7": "第七章・球面屈光不正",
+      "8": "第八章・反射",
+      "9": "第九章・像差"
+    },
+    "REPS": [
+      {
+        "ch": 6,
+        "type": "單面屈光力 F=(n′−n)/r",
+        "src": "114 驗光生・眼鏡光學概要",
+        "hook": "基弧 8.3 mm 的隱形眼鏡是幾度？把『半徑』變『度數』。",
+        "stem": "硬式隱形眼鏡（折射率 1.3375）的基弧為 8.3 mm，把它的後表面當作單一折射面，其屈光度為何？",
+        "simple": "一個彎曲的面就是一個度數。度數 =（兩邊折射率差）÷（半徑，單位公尺）。半徑越彎(越小)，度數越大。",
+        "formula": "F =（n′ − n）/ r　（r 一定換成公尺）",
+        "steps": [
+          "先找折射率差：角膜弧度慣用 n′=1.3375，外面是空氣 n=1，差 = 0.3375。",
+          "把半徑換單位：8.3 mm = 0.0083 m（這步最常忘！）。",
+          "代入公式：F = 0.3375 ÷ 0.0083。",
+          "算出 F ≈ +40.66 D。"
+        ],
+        "opts": [
+          "36.11 D",
+          "39.22 D",
+          "40.66 D",
+          "42.33 D"
+        ],
+        "ans": 2,
+        "why": {
+          "0": "折射率差取錯（例如用 1.30）才會偏小。",
+          "2": "0.3375 ÷ 0.0083 ≈ 40.66，正解。",
+          "3": "半徑取太小或提早四捨五入會偏大。"
+        },
+        "trap": "8.3 mm 要先變 0.0083 m，用 mm 直接除會差 1000 倍；折射率差是 0.3375 不是 0.375。"
+      },
+      {
+        "ch": 6,
+        "type": "簡併（縮減）厚度 t/n",
+        "src": "114 驗光生・眼鏡光學概要",
+        "hook": "2 mm 厚的玻璃，光走起來等於多厚的空氣？",
+        "stem": "一道光線穿透中心厚度 2 mm、折射率 1.523 的鏡片，其簡併（縮減）厚度約為多少？",
+        "simple": "光在玻璃裡走得慢，等效路程會變短。把實際厚度『除以折射率』就得到簡併厚度（一定比原本薄）。",
+        "formula": "簡併厚度 = 實際厚度 t ÷ 折射率 n",
+        "steps": [
+          "確認概念：除以 n（不是乘以 n）。",
+          "代入：2 mm ÷ 1.523。",
+          "得 ≈ 1.31 mm（比 2 mm 薄，合理）。"
+        ],
+        "opts": [
+          "1.31 mm",
+          "1.42 mm",
+          "1.51 mm",
+          "1.62 mm"
+        ],
+        "ans": 0,
+        "why": {
+          "0": "2 ÷ 1.523 ≈ 1.31 mm。",
+          "3": "算成 2 × 某數或方向相反會偏大。"
+        },
+        "trap": "是「除以」n；簡併厚度必定比實際厚度小，若算出比 2 大一定錯。"
+      },
+      {
+        "ch": 6,
+        "type": "後頂點屈光力 Fv",
+        "src": "112 驗光師・視覺光學",
+        "hook": "前+8、後−3、厚 5mm，實際戴起來幾度？標稱+5 不是答案！",
+        "stem": "一透鏡前、後表面屈光力分別為 +8.00 D、−3.00 D，中心厚度 5 mm，折射率 1.6，其後頂點屈光力 Fv 為多少？",
+        "simple": "後頂點度數＝把前表面『被厚度放大一點』後，再加上後表面。正透鏡會比標稱(+5)再正一點點。",
+        "formula": "Fv = F₁ /（1 −（t/n）·F₁）+ F₂",
+        "steps": [
+          "先算簡併厚度 t/n = 0.005 ÷ 1.6 = 0.003125 m。",
+          "算分母：（t/n）·F₁ = 0.003125 × 8 = 0.025，所以分母 = 1 − 0.025 = 0.975。",
+          "前表面被放大：F₁ ÷ 0.975 = 8 ÷ 0.975 = 8.205。",
+          "再加後表面：8.205 +（−3）= +5.205 ≈ +5.20 D。"
+        ],
+        "opts": [
+          "+4.60 D",
+          "+4.80 D",
+          "+5.00 D",
+          "+5.20 D"
+        ],
+        "ans": 3,
+        "why": {
+          "2": "+5.00 是忽略厚度的『標稱度數』，不是後頂點度數。",
+          "3": "8/0.975 − 3 ≈ +5.20 D。"
+        },
+        "trap": "只有 F₁ 要被 (1−(t/n)F₁) 修正，F₂ 直接加；厚度讓正透鏡更正一點。"
+      },
+      {
+        "ch": 6,
+        "type": "等效屈光力 Fe（反求厚度）",
+        "src": "113 驗光師・視覺光學",
+        "hook": "已知 Fe，倒過來求厚度。公式會用、也要會反解。",
+        "stem": "空氣中一雙凸厚透鏡，前表面 +2 D、後表面 +5 D，折射率 1.6，等效屈光力 Fe=+6.875 D，則厚度為何？",
+        "simple": "等效屈光力＝兩面相加再被厚度『扣掉一點』。題目給了扣掉多少，我們反推厚度。",
+        "formula": "Fe = F₁ + F₂ −（t/n）·F₁·F₂",
+        "steps": [
+          "把已知塞進公式：6.875 = 2 + 5 −（t/1.6）×2×5。",
+          "整理：7 − 6.875 = 0.125 =（t/1.6）×10 = 6.25 t。",
+          "解 t：t = 0.125 ÷ 6.25 = 0.02 m = 2 cm。"
+        ],
+        "opts": [
+          "2 cm",
+          "3 cm",
+          "4 cm",
+          "5 cm"
+        ],
+        "ans": 0,
+        "why": {
+          "0": "0.125 = 6.25 t → t = 0.02 m = 2 cm。",
+          "3": "把 n 漏掉或乘錯會得到偏大的厚度。"
+        },
+        "trap": "(t/n) 的 n 用鏡片折射率 1.6；算出 t 是公尺，記得換回 cm。"
+      },
+      {
+        "ch": 7,
+        "type": "遠點計算（簡化眼）",
+        "src": "114 驗光生・眼鏡光學概要",
+        "hook": "+62D、眼軸 21mm，遠點在眼前還眼後？",
+        "stem": "一屈光力 +62.00 D、眼軸長 21 mm 的眼睛，平均折射率 nₑ=1.336，則該眼的遠點位於何處？",
+        "simple": "先看『要聚在視網膜需要幾度』，再跟眼睛實際度數比。差出來的就是遠點的聚散度，取倒數就是距離。",
+        "formula": "V = nₑ / 軸長；K = V − F；遠點距離 = 1 / K（物空間用 n=1）",
+        "steps": [
+          "要落在 21 mm 視網膜需要：V = 1.336 ÷ 0.021 = 63.62 D。",
+          "眼睛只有 +62 D，差 K = 63.62 − 62 = +1.62 D。",
+          "K 為正（會聚）→ 遠點是『虛』的，在角膜後方。",
+          "距離 = 1 ÷ 1.62 ≈ 0.617 m → 角膜後 61.7 cm（此眼為遠視）。"
+        ],
+        "opts": [
+          "角膜後 50 cm",
+          "角膜後 61.7 cm",
+          "角膜後 82.5 cm",
+          "角膜前無限遠"
+        ],
+        "ans": 1,
+        "why": {
+          "1": "K=+1.62 D → 角膜後 61.7 cm。",
+          "3": "+62 D 不剛好等於正視，所以不是無限遠。"
+        },
+        "trap": "正 K → 遠點在眼後（遠視）；負 K 才在眼前（近視）。距離用 n=1。"
+      },
+      {
+        "ch": 7,
+        "type": "軸性屈光不正 → 配鏡",
+        "src": "112 驗光師・視覺光學",
+        "hook": "21mm、+62D，要配近視鏡還是遠視鏡？幾度？",
+        "stem": "某眼眼軸長 21 mm、眼內總屈光力 +62.00 D、平均折射率 1.333，此人需配何種眼鏡及度數？",
+        "simple": "算『要聚在視網膜需要幾度』，比眼睛實際度數多就是遠視(配凸鏡)、少就是近視(配凹鏡)。",
+        "formula": "V = n / 軸長；缺的度數 = V − F",
+        "steps": [
+          "落在 21 mm 需要：V = 1.333 ÷ 0.021 = 63.48 D。",
+          "眼睛只有 +62 D，缺 63.48 − 62 = +1.48 D。",
+          "缺『正』度數＝遠視 → 配遠視（凸）眼鏡 +1.48 D。"
+        ],
+        "opts": [
+          "近視眼鏡 1.48 D",
+          "遠視眼鏡 1.48 D",
+          "近視眼鏡 2.48 D",
+          "遠視眼鏡 2.48 D"
+        ],
+        "ans": 1,
+        "why": {
+          "0": "把正負弄反才會誤判成近視。",
+          "1": "缺 +1.48 D → 遠視鏡。"
+        },
+        "trap": "眼睛太短、度數不夠 → 遠視；n/軸長要用公尺。"
+      },
+      {
+        "ch": 7,
+        "type": "頂點距離換算（框→隱形）",
+        "src": "114 驗光生・眼鏡光學概要",
+        "hook": "框架 −6.00D 換成隱形眼鏡要幾度？",
+        "stem": "甲的近視可用 −6.00 D 框架眼鏡矯正、頂點距離 14 mm。若改以隱形眼鏡矯正，度數約為多少？",
+        "simple": "鏡片越靠近眼睛，近視所需的負度數會『變小一點』。用頂點距離公式換算。",
+        "formula": "F꜀ₗ = F /（1 − d·F），d = 頂點距離（公尺）",
+        "steps": [
+          "d = 14 mm = 0.014 m。",
+          "算分母：1 − 0.014×(−6) = 1 + 0.084 = 1.084。",
+          "F꜀ₗ = −6 ÷ 1.084 = −5.535 ≈ −5.50 D。"
+        ],
+        "opts": [
+          "−5.00 D",
+          "−5.50 D",
+          "−6.00 D",
+          "−6.50 D"
+        ],
+        "ans": 1,
+        "why": {
+          "1": "−6 ÷ 1.084 ≈ −5.50 D。",
+          "2": "−6.00 是沒換算的框架度數。"
+        },
+        "trap": "近視往眼睛靠近 → 度數變小（負得少）；F 帶負號使分母變 1+0.084。"
+      },
+      {
+        "ch": 7,
+        "type": "欠矯反推新處方",
+        "src": "109 驗光生・眼鏡光學概要",
+        "hook": "舊眼鏡戴不夠，遠點跑出來了，怎麼反推新隱形眼鏡度數？",
+        "stem": "柯先生戴 3 年前的 −6.00 DS 眼鏡（頂點距離 15 mm），發現現在左眼遠點在『鏡片前 50 cm』，則左眼隱形眼鏡處方應為何？",
+        "simple": "分兩步：①先補上『還沒矯正掉的度數』得到真正眼鏡度數；②再用頂點距離換成隱形眼鏡。",
+        "formula": "欠矯量 = −1 / 遠點距離；新眼鏡度 = 舊度 + 欠矯量；F꜀ₗ = F /（1 − d·F）",
+        "steps": [
+          "戴 −6 還剩遠點在鏡前 50 cm → 還欠 −1 ÷ 0.5 = −2.00 D。",
+          "真正眼鏡度數 = −6.00 +（−2.00）= −8.00 D。",
+          "換隱形眼鏡：−8 ÷（1 − 0.015×(−8)）= −8 ÷ 1.12 = −7.14 D。",
+          "最接近 −7.25 D。"
+        ],
+        "opts": [
+          "−5.00 DS",
+          "−6.25 DS",
+          "−7.25 DS",
+          "−8.00 DS"
+        ],
+        "ans": 2,
+        "why": {
+          "2": "補上欠矯得 −8 D，再換到角膜 ≈ −7.25 D。",
+          "3": "−8.00 是眼鏡面度數，還沒換成隱形眼鏡。"
+        },
+        "trap": "別只看 −6；要先加上欠矯 −2 D，再做頂點距離換算。"
+      },
+      {
+        "ch": 8,
+        "type": "凹面鏡成像與放大率",
+        "src": "114 驗光師・視覺光學",
+        "hook": "凹面鏡＋物在焦距內，像是放大還縮小？虛還實？",
+        "stem": "空氣中，一實物在凹面鏡（曲率半徑 1 公尺）左側 25 公分，則最後成像的大小、性質為何？",
+        "simple": "凹面鏡像放大鏡：物在焦距內 → 像跑到鏡後，變成放大、正立的虛像（像化妝鏡放大臉）。",
+        "formula": "f = R/2；1/v + 1/u = 1/f；放大率 m = −v/u",
+        "steps": [
+          "焦距 f = R/2 = 100/2 = 50 cm。物在 25 cm，比焦距近（焦距內）。",
+          "1/v = 1/f − 1/u = 1/50 − 1/25 = −1/50 → v = −50 cm（負＝虛像，在鏡後）。",
+          "放大率 m = −v/u = −(−50)/25 = +2（正＝正立、放大 2 倍）。",
+          "結論：2 倍大、正立、虛像。"
+        ],
+        "opts": [
+          "2 倍大、虛像",
+          "0.5 倍大、虛像",
+          "2 倍大、實像",
+          "0.5 倍大、實像"
+        ],
+        "ans": 0,
+        "why": {
+          "0": "m = +2、虛像。",
+          "3": "物若在焦距外才會是縮小或倒立實像。"
+        },
+        "trap": "物在焦距內 → 放大虛像；m 帶正號代表正立。"
+      },
+      {
+        "ch": 8,
+        "type": "反射率 R",
+        "src": "112 驗光師・視覺光學",
+        "hook": "鏡片泡在水裡反射率剩多少？先由速度求折射率。",
+        "stem": "光在某材質行進速度為 2×10⁸ m/s，此材質於『水中』單一面的反射率為何？（空氣中光速 3×10⁸ m/s，水 n=1.333）",
+        "simple": "兩邊折射率越接近，反射越少。先用速度求材質折射率，再套反射率公式（分母是相加！）。",
+        "formula": "n = c / v；R = [（n₂ − n₁）/（n₂ + n₁）]²",
+        "steps": [
+          "材質折射率 n = 3×10⁸ ÷ 2×10⁸ = 1.5。",
+          "在水中：n₁ = 1.333、n₂ = 1.5。",
+          "代入：R = [(1.5−1.333)/(1.5+1.333)]² = (0.167/2.833)²。",
+          "R ≈ (0.059)² ≈ 0.0035 = 0.35%。"
+        ],
+        "opts": [
+          "3.4%",
+          "1.5%",
+          "0.35%",
+          "0.72%"
+        ],
+        "ans": 2,
+        "why": {
+          "0": "3.4% 是在『空氣中』(1 vs 1.5) 的反射率。",
+          "2": "(0.167/2.833)² ≈ 0.35%。"
+        },
+        "trap": "分母是兩折射率『相加』不是相減；先由速度求 n=1.5。"
+      },
+      {
+        "ch": 8,
+        "type": "抗反射膜折射率",
+        "src": "113 驗光師・視覺光學",
+        "hook": "CR-39 要鍍抗反射膜，膜的折射率是多少？開根號就對了。",
+        "stem": "一需鍍抗反射膜的 CR-39 塑膠鏡片（n=1.498），該抗反射薄膜的折射率約為何？",
+        "simple": "要讓上下兩面的反射光一樣強而互相抵消，膜的折射率＝鏡片折射率『開根號』。",
+        "formula": "n_膜 = √(n_鏡片)",
+        "steps": [
+          "套公式：n_膜 = √1.498。",
+          "計算：√1.498 ≈ 1.224。",
+          "答案 ≈ 1.22。"
+        ],
+        "opts": [
+          "1.22",
+          "1.49",
+          "2.1",
+          "3.2"
+        ],
+        "ans": 0,
+        "why": {
+          "0": "√1.498 ≈ 1.22。",
+          "1": "1.49 是鏡片折射率本身（陷阱），不是膜。"
+        },
+        "trap": "是開根號不是取一半；膜厚度則要 1/4 波長（別跟折射率搞混）。"
+      },
+      {
+        "ch": 8,
+        "type": "Purkinje I 影像位置",
+        "src": "112 驗光師・視覺光學",
+        "hook": "角膜亮點＝凸面鏡反射，像在角膜後幾 mm？",
+        "stem": "某光源位於角膜前表面 50 cm 處，角膜前表面半徑 7.80 mm，其 Purkinje I 影像在角膜後幾 mm？",
+        "simple": "角膜前表面對反射光就像一面『凸面鏡』。物很遠時，像差不多落在焦點附近，稍微近一點。",
+        "formula": "凸面鏡 f = R/2；1/v + 1/u = 1/f（凸面鏡 f 在鏡後）",
+        "steps": [
+          "焦距 f = R/2 = 7.8/2 = 3.9 mm（凸面鏡虛焦點，在鏡後）。",
+          "物在 50 cm = 500 mm（很遠但非無限遠）。",
+          "1/v = 1/f − 1/u ≈ 1/(−3.9) − 1/500 → v ≈ −3.87 mm。",
+          "負號＝像在角膜『後方』3.87 mm。"
+        ],
+        "opts": [
+          "3.90 mm",
+          "3.87 mm",
+          "3.83 mm",
+          "3.75 mm"
+        ],
+        "ans": 1,
+        "why": {
+          "0": "3.90 是物在無限遠的理想焦距。",
+          "1": "考慮 50 cm 物距得 3.87 mm。"
+        },
+        "trap": "物不是無限遠 → 略小於焦距 3.9 → 3.87；用凸面鏡計算。"
+      },
+      {
+        "ch": 8,
+        "type": "角膜弧度儀屈光度",
+        "src": "109 驗光師・視覺光學",
+        "hook": "角膜半徑 7mm 換成度數，用哪個折射率？",
+        "stem": "角膜弧度測量儀測得角膜曲率半徑 7 mm，角膜折射率以 1.3375 計算，此角膜屈光度約為？",
+        "simple": "角膜弧度儀用 1.3375 這個『調整折射率』把半徑直接換成度數，公式跟單面屈光力一樣。",
+        "formula": "F =（n − 1）/ r =（1.3375 − 1）/ r",
+        "steps": [
+          "折射率差 = 1.3375 − 1 = 0.3375。",
+          "半徑換單位：7 mm = 0.007 m。",
+          "F = 0.3375 ÷ 0.007 = 48.21 D ≈ 48.2 D。"
+        ],
+        "opts": [
+          "50.2 D",
+          "48.2 D",
+          "45.2 D",
+          "40.2 D"
+        ],
+        "ans": 1,
+        "why": {
+          "0": "若改用真實角膜 1.376 會偏大到 ≈ 53 D。",
+          "1": "0.3375 ÷ 0.007 ≈ 48.2 D。"
+        },
+        "trap": "用的是 1.3375（keratometric index）不是真正角膜 1.376；半徑換公尺。"
+      },
+      {
+        "ch": 9,
+        "type": "阿貝數與色像差",
+        "src": "112 驗光生・眼鏡光學概要",
+        "hook": "給三個波長折射率，求阿貝數＋色像差。",
+        "stem": "一 +10.00 D 鏡片，紅 656 nm 折射率 1.521、藍 486 nm 折射率 1.530、黃 587 nm 折射率 1.523，求阿貝數與（縱向）色像差。",
+        "simple": "阿貝數＝黃光的屈光本事 ÷ 藍紅折射率差。色像差＝度數 ÷ 阿貝數。",
+        "formula": "V =（n_d − 1）/（n_F − n_C）；色像差 = F / V",
+        "steps": [
+          "分子 n_d − 1 = 1.523 − 1 = 0.523（黃光）。",
+          "分母 n_F − n_C = 1.530 − 1.521 = 0.009（藍 − 紅）。",
+          "阿貝數 V = 0.523 ÷ 0.009 = 58.11。",
+          "色像差 = F ÷ V = 10 ÷ 58.11 = 0.17 D。"
+        ],
+        "opts": [
+          "58.11 及 0.17 D",
+          "58.11 及 5.81 D",
+          "0.017 及 58.11 D",
+          "0.017 及 60.00 D"
+        ],
+        "ans": 0,
+        "why": {
+          "0": "V=58.11、CA=10/58.11=0.17 D。",
+          "1": "5.81 是把 F/V 誤算成 F×0.581 之類。"
+        },
+        "trap": "分子要 n_d − 1（記得減 1）；分母是藍減紅；色像差用 F/V。"
+      },
+      {
+        "ch": 9,
+        "type": "橫向色像差（稜鏡）",
+        "src": "113 驗光生・眼鏡光學概要",
+        "hook": "鏡片偏心 10mm，會有多少色像差稜鏡？",
+        "stem": "高度近視戴 −10.00 D 鏡片、阿貝數 36，當鏡片中心偏離視線 10 mm 時，產生多少稜鏡效應的橫向色像差？",
+        "simple": "先用 Prentice 算偏心處的稜鏡度，再除以阿貝數就是色像差。",
+        "formula": "稜鏡度 = h(cm) × |F|；橫向色像差 = 稜鏡度 / 阿貝數",
+        "steps": [
+          "偏心換單位：10 mm = 1.0 cm。",
+          "Prentice 稜鏡度 = 1.0 × 10 = 10 Δ。",
+          "橫向色像差 = 稜鏡度 ÷ 阿貝數 = 10 ÷ 36。",
+          "= 0.277 ≈ 0.27 Δ。"
+        ],
+        "opts": [
+          "0.27 Δ",
+          "0.70 Δ",
+          "10.00 Δ",
+          "36.00 Δ"
+        ],
+        "ans": 0,
+        "why": {
+          "0": "10 ÷ 36 ≈ 0.27 Δ。",
+          "2": "10 Δ 只是該點稜鏡度，還沒除阿貝數。"
+        },
+        "trap": "10 mm 要換 1.0 cm；最後一定要除阿貝數，別把 10 Δ 當答案。"
+      }
+    ]
+  },
+  "highyield": {
+    "cardiovascular": [
+      [
+        "must",
+        "ECG 核心算法",
+        "每個 lead 記錄「正極電位總和 − 負極電位總和」；細胞外正電荷朝正極移動，波形向上，背離則向下。",
+        "I：RA(−)→LA(+)；II：RA(−)→LL(+)；III：LA(−)→LL(+)。"
+      ],
+      [
+        "must",
+        "T wave 為何通常向上",
+        "心室再極化方向與去極化相反，但電性也相反；兩次負號抵銷，所以多數 lead 的 T wave 仍向上。",
+        "不能只看到「方向相反」就判定向下。"
+      ],
+      [
+        "freq",
+        "RR interval 與心率",
+        "RR interval 是相鄰 R 波間距，代表一個心搏週期。",
+        "規則心律：HR ≈ 60 ÷ RR（秒）。"
+      ],
+      [
+        "freq",
+        "PR interval 與 AV delay",
+        "PR interval 是心房去極化開始到心室去極化開始；AV delay 讓心房先收縮、心室後收縮。",
+        "PR > 0.20 s 常見於 first-degree AV block。"
+      ],
+      [
+        "freq",
+        "AV node 為何傳得慢",
+        "transitional/nodal fibers 較細、K⁺ channel 較多、gap junction 較少。",
+        "生理目的：確保心室充盈。"
+      ],
+      [
+        "freq",
+        "ST segment 臨床意義",
+        "ST elevation 常提示急性 transmural injury；ST depression 常見於 subendocardial ischemia。",
+        "勿混淆 ST、T wave、Q wave 的意義。"
+      ],
+      [
+        "must",
+        "肢導程與增強肢導程",
+        "Lead I/II/III 正負極要背；aVR、aVL、aVF 分別看右臂、左臂、足部方向。",
+        "增強導程其餘兩肢是共同 reference。"
+      ],
+      [
+        "freq",
+        "心臟週期分界",
+        "射血後段即使肌纖維開始放鬆仍屬收縮期；主動脈瓣關閉到二尖瓣開啟才是 isovolumetric relaxation。",
+        "肌肉開始放鬆 ≠ 已進入舒張期。"
+      ]
+    ],
+    "urinary": [
+      [
+        "freq",
+        "JGA 三大組成",
+        "macula densa、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 NaCl／灌流並調節 renin。",
+        "distal tubule 貼近 afferent arteriole 就想到 JGA。"
+      ],
+      [
+        "freq",
+        "RAAS 主線",
+        "腎灌流壓↓、macula densa NaCl↓或 β₁ 刺激→renin→Ang I→ACE→Ang II→血管收縮與 aldosterone。",
+        "TPR↑、Na⁺/水再吸收↑、血壓↑。"
+      ],
+      [
+        "freq",
+        "Renal handling 總公式",
+        "排泄量 = 濾過量 − 再吸收量 + 分泌量。",
+        "filtered load = plasma [X] × GFR。"
+      ],
+      [
+        "freq",
+        "兩類 nephron",
+        "Cortical nephron 多、loop 短；juxtamedullary loop 長，配合 vasa recta 建立髓質滲透梯度。",
+        "不要誤背成 renin 只由某類 nephron 分泌。"
+      ],
+      [
+        "freq",
+        "小動脈半徑與血壓",
+        "半徑下降→resistance、TPR、arterial pressure 上升。",
+        "Poiseuille：R ∝ 1/r⁴。"
+      ]
+    ],
+    "cns": [
+      [
+        "must",
+        "英文名詞直接考",
+        "CNS/PNS、afferent/efferent、somatic/autonomic、cerebrum/cerebellum/brainstem/spinal cord 都要直接認英文。",
+        "不能只認中文。"
+      ],
+      [
+        "freq",
+        "CNS / PNS 判定",
+        "完全位於 brain 與 spinal cord 內才算 CNS；伸到中樞外的構造屬 PNS。",
+        "常用 cell body 與 axon terminal 位置混淆。"
+      ],
+      [
+        "must",
+        "Afferent vs Efferent",
+        "Afferent 把資訊送往 CNS；Efferent 把命令從 CNS 送到效應器。",
+        "A = Arrives；E = Exits。"
+      ],
+      [
+        "freq",
+        "α motor neuron 位置",
+        "cell body 在 ventral horn；axon 經 ventral root 離開並支配 skeletal muscle。",
+        "胞體在 CNS，但軸突大部分位於 PNS。"
+      ],
+      [
+        "freq",
+        "Motor unit 與精細度",
+        "一個 α motor neuron + 它支配的全部肌纖維 = motor unit；小 unit 精細，大 unit 力量大。",
+        "眼外肌、手指偏小；大腿肌偏大。"
+      ],
+      [
+        "freq",
+        "Glia 語言與功能",
+        "glia 可作集合／複數；負責支持、髓鞘、恆定、免疫與修復。",
+        "不負責主要長距離 action potential 傳遞。"
+      ]
+    ],
+    "special-senses": [
+      [
+        "must",
+        "Rhodopsin cycle",
+        "Rhodopsin=opsin+11-cis retinal；光→all-trans→transducin→PDE→cGMP↓→Na⁺ channel 關閉→hyperpolarization。",
+        "感光細胞受光是超極化，不是去極化。"
+      ],
+      [
+        "must",
+        "Rod vs Cone",
+        "Rod：暗視、靈敏、低解析、無色覺；Cone：明視、高解析、色覺。",
+        "Rhodopsin 屬 rod；cone 使用 photopsin。"
+      ],
+      [
+        "freq",
+        "Adequate stimulus",
+        "適宜刺激是以最低能量門檻活化 receptor 的刺激型態。",
+        "不代表 receptor 絕不能被其他刺激活化。"
+      ],
+      [
+        "must",
+        "Visual pathway 與交叉",
+        "Retina→optic nerve→chiasm→tract→LGN→radiation→visual cortex；只有 nasal retina 纖維交叉。",
+        "右視野到左半球；左視野到右半球。"
+      ],
+      [
+        "freq",
+        "視野病灶速判",
+        "Optic nerve：同側單眼失明；chiasm：雙顳側偏盲；tract/radiation/cortex：對側同名偏盲。",
+        "要會由視野找病灶，也要反推視野。"
+      ],
+      [
+        "freq",
+        "盲點判讀",
+        "盲點來自無 photoreceptor 的 optic disc；右眼盲點在右眼視野 temporal side，左眼相反。",
+        "測量圖要包含 entering 與 leaving point。"
+      ],
+      [
+        "freq",
+        "中耳阻抗匹配",
+        "鼓膜面積大於卵圓窗，加三小聽骨槓桿，提高壓力並把空氣振動傳入 cochlear fluid。",
+        "不考計算仍要會概念。"
+      ],
+      [
+        "freq",
+        "Traveling wave",
+        "高頻在 basilar membrane 基部達最大振幅；低頻在 apex 達最大振幅。",
+        "高頻靠底、低頻跑遠。"
+      ],
+      [
+        "freq",
+        "Hair cell 換能",
+        "朝最高 stereocilia 偏轉→tip link 開 K⁺ channel→K⁺由 endolymph 進入→去極化→Ca²⁺進入→transmitter↑。",
+        "endolymph 是高 K⁺。"
+      ],
+      [
+        "freq",
+        "Air vs Bone conduction",
+        "正常 Rinne：AC>BC；Weber 傳導性聽損偏患側，感音神經性聽損偏健側。",
+        "先分 conductive 或 sensorineural。"
+      ],
+      [
+        "freq",
+        "平衡器官配對",
+        "semicircular canals 感受 angular acceleration；utricle/saccule 感受 linear acceleration 與重力位置。",
+        "平衡也整合視覺與 proprioception。"
+      ],
+      [
+        "freq",
+        "味覺與嗅覺",
+        "味覺：CN VII 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。",
+        "不考很細，不等於完全不考。"
+      ]
+    ],
+    "ans": [
+      [
+        "must",
+        "ANS 四大特性",
+        "involuntary、雙神經元鏈、多數器官雙重支配、以拮抗或協同維持 homeostasis。",
+        "問答題先畫比較表，再補例外。"
+      ],
+      [
+        "must",
+        "交感 vs 副交感長短",
+        "交感 thoracolumbar：短節前、長節後；副交感 craniosacral：長節前、短節後。",
+        "副交感 cranial：III/VII/IX/X；sacral：S2–S4。"
+      ],
+      [
+        "must",
+        "傳遞物總表",
+        "所有 ANS 節前 ACh→Nn；副交感節後 ACh→M；多數交感節後 NE→α/β。",
+        "體運動是單一 neuron，ACh→Nm。"
+      ],
+      [
+        "must",
+        "汗腺例外",
+        "汗腺只受交感支配，但節後釋放 ACh，作用 muscarinic receptor。",
+        "「交感節後一律 NE」是錯的。"
+      ],
+      [
+        "must",
+        "腎上腺髓質",
+        "改造的 sympathetic ganglion；節前 ACh→chromaffin Nn→E/NE 入血。",
+        "沒有典型 postganglionic axon。"
+      ],
+      [
+        "freq",
+        "ANS 的 CNS/PNS 位置",
+        "ANS 屬 PNS motor division，但 preganglionic cell body 在 CNS；交感胞體主要在 IML。",
+        "勿混淆系統分類與胞體位置。"
+      ],
+      [
+        "freq",
+        "ACh 合成與受體",
+        "Choline+acetyl-CoA 經 ChAT→ACh；AChE 分解。Nicotinic 是 ion channel，muscarinic 是 GPCR。",
+        "Nm 在 NMJ；Nn 在 ganglia/adrenal medulla。"
+      ],
+      [
+        "freq",
+        "Adrenergic receptor 快表",
+        "α₁收縮；α₂抑制釋放；β₁心率/收縮力/renin↑；β₂支氣管與部分血管舒張；β₃脂解與逼尿肌舒張。",
+        "β₂ 不是讓所有平滑肌收縮。"
+      ]
+    ],
+    "endocrine": [
+      [
+        "must",
+        "荷爾蒙三大類",
+        "Peptide：水溶、膜受體、可儲存、反應快；Steroid：膽固醇來源、脂溶、細胞內受體、現做現放；catecholamine 像 peptide，thyroid hormone 像 steroid。",
+        "Amine 分類表超高頻。"
+      ],
+      [
+        "must",
+        "Peptide hormone 合成",
+        "preprohormone→prohormone→hormone；RER/Golgi 加工後裝入 vesicle，Ca²⁺促進釋放。",
+        "可儲存，因此可有雙相分泌。"
+      ],
+      [
+        "freq",
+        "受體位置與訊息",
+        "水溶性用膜受體與 second messenger；脂溶性用 cytosolic/nuclear receptor 調 gene transcription。",
+        "Gs↑cAMP；Gi↓cAMP；Gq→PLC→IP₃/DAG→Ca²⁺。"
+      ],
+      [
+        "must",
+        "甲狀腺素合成",
+        "NIS 攝碘→pendrin 入 colloid→TPO 氧化/organification→MIT/DIT→coupling→thyroglobulin 儲存→endocytosis/proteolysis。",
+        "DIT+DIT=T4；MIT+DIT=T3。"
+      ],
+      [
+        "freq",
+        "T3、T4、rT3",
+        "甲狀腺主要分泌 T4；周邊轉成活性較高 T3 或不活性 rT3；free T3/T4 才具活性。",
+        "判功能不可只看 total hormone。"
+      ],
+      [
+        "freq",
+        "甲狀腺疾病比較",
+        "Cretinism：幼兒 TH 不足，生長與智力受損；Graves：T3/T4↑、TSH↓；缺碘 goiter：TH↓、TSH↑。",
+        "GH deficiency 侏儒症通常智力不受損。"
+      ],
+      [
+        "must",
+        "血鈣三巨頭",
+        "PTH、active vitamin D 提高血鈣；calcitonin 降低血鈣；低血鈣使神經肌肉興奮性↑。",
+        "PTH 是快速維持血鈣主角。"
+      ],
+      [
+        "board",
+        "PTH 與骨重塑",
+        "PTH→osteoblast→RANKL↑→活化 osteoclast precursor→bone resorption↑。",
+        "osteoclast 沒有主要 PTH receptor。"
+      ],
+      [
+        "board",
+        "Vitamin D 活化",
+        "皮膚 UVB→肝 25-hydroxylation→腎 1α-hydroxylation（PTH 促進）→calcitriol。",
+        "活性型 1,25-(OH)₂D₃；增加腸道 Ca²⁺/PO₄³⁻吸收。"
+      ],
+      [
+        "must",
+        "胰島細胞配對",
+        "α/A→glucagon；β/B→insulin；δ/D→somatostatin；PP/F→pancreatic polypeptide。",
+        "Pancreas 是 endocrine+exocrine 混合腺。"
+      ],
+      [
+        "freq",
+        "C-peptide 判讀",
+        "proinsulin→insulin+C-peptide，內源性約1:1釋放；外源 insulin 不含 C-peptide。",
+        "用來估 β-cell 自體分泌。"
+      ]
+    ],
+    "reproduction": [
+      [
+        "must",
+        "Barr body",
+        "Barr body 是失活 X chromosome；嗜中性球可見 drumstick appendage。",
+        "Barr body 數=X chromosome 數−1。"
+      ],
+      [
+        "must",
+        "卵子兩次 arrest",
+        "primary oocyte 停 prophase I；排卵時 secondary oocyte 停 metaphase II，受精後才完成 meiosis II。",
+        "oogonia mitosis 在出生前停止。"
+      ],
+      [
+        "must",
+        "17β-HSD vs 5α-reductase",
+        "17β-HSD 在性腺參與形成 testosterone/estradiol；5α-reductase 在周邊把 testosterone→DHT。",
+        "DHT 不是主要在性腺製造。"
+      ],
+      [
+        "must",
+        "性腺胚胎來源",
+        "男性 testis 主要由 medulla 發展；女性 ovary 主要由 cortex 發展。",
+        "老師明示必考。"
+      ],
+      [
+        "must",
+        "男性 HPG axis",
+        "GnRH→LH/FSH；LH→Leydig→testosterone；FSH→Sertoli→spermatogenesis、ABP、inhibin。",
+        "Inhibin 主要負回饋 FSH。"
+      ],
+      [
+        "must",
+        "Sertoli cell",
+        "支持/營養 germ cell、blood-testis barrier、分泌 ABP/inhibin、協助 spermatogenesis。",
+        "ABP 維持管內高 testosterone。"
+      ],
+      [
+        "must",
+        "Testosterone 運輸",
+        "一般血液中主要與 SHBG 結合；seminiferous tubule 內靠 ABP。",
+        "主要 transport protein：SHBG。"
+      ],
+      [
+        "must",
+        "Two-cell, two-gonadotropin",
+        "LH→theca→androgen；androgen 進 granulosa，FSH 促 aromatase→estrogen。",
+        "theca 造 androgen；granulosa 造 estrogen。"
+      ],
+      [
+        "freq",
+        "排卵與週期",
+        "排卵約在下一次月經前14天；高 estradiol 正回饋→LH surge→ovulation。",
+        "不是固定週期第14天。"
+      ],
+      [
+        "board",
+        "hCG 功能",
+        "早期胚胎/胎盤 hCG 類似 LH，維持 corpus luteum 與 progesterone，直到 placenta 接手。",
+        "驗孕測 hCG；排卵試紙測 LH。"
+      ]
+    ]
+  }
+}

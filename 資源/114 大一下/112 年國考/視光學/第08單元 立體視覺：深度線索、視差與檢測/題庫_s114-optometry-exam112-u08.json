@@ -1,0 +1,181 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam112-u08",
+    "subject": "optometry",
+    "name": "立體視覺：深度線索、視差與檢測｜112 年國考",
+    "year": 112,
+    "path": [
+      "114 大一下",
+      "112 年國考",
+      "視光學",
+      "第08單元 立體視覺：深度線索、視差與檢測"
+    ],
+    "order": 8,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0366",
+      "type": "single",
+      "stem": "有關立體視覺檢查，下列何者不適當？",
+      "choices": [
+        "通常會需要偏光眼鏡或紅綠眼鏡",
+        "一般比較建議使用帝特瑪斯試驗（Titmus test），因為此檢查較不易測出單眼的線索（monocular cues）",
+        "藍氏立體測試（Lang stereotest）不需要偏光眼鏡或紅綠眼鏡",
+        "也可以測試遠距離立體視覺"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nTitmus單眼線索\n\n**白話理解**\n許多測試需偏光或紅綠分離；Lang不需輔助鏡；也有遠距立體視測試。Titmus尤其fly與local contours可能被單眼猜中。\n\n**口訣**\nTitmus好用但不等於沒有monocular cues。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n錯誤。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\112年驗光師高考.pdf；原題編號 8；舊 ID opt-q0366",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0366",
+      "source_number": "8",
+      "source_year": "112",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "Titmus單眼線索",
+        "simple": "許多測試需偏光或紅綠分離；Lang不需輔助鏡；也有遠距立體視測試。Titmus尤其fly與local contours可能被單眼猜中。",
+        "memory": "Titmus好用但不等於沒有monocular cues。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0390",
+      "type": "single",
+      "stem": "下列那些立體視覺檢查，患者不需配戴額外輔助眼鏡（偏光鏡或紅綠眼鏡），較適合年齡較小的孩童及無 法配戴眼鏡的患者？①Bernell 立體視覺檢查 ②Frisby 立體視覺檢查 ③Lang 立體視覺檢查 ④Random Dot E 立體視覺檢查 ⑤Titmus 立體視覺檢查 ⑥TNO 立體視覺檢查",
+      "choices": [
+        "僅②③",
+        "僅①⑥",
+        "僅④⑤",
+        "④⑤⑥"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n幼兒裸眼立體視測試\n\n**白話理解**\nFrisby使用實體板厚真深度，Lang用柱狀光柵自體分像；Random Dot E、Titmus、TNO等需偏光或紅綠分離。\n\n**口訣**\nFrisby、Lang免戴鏡。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\nTNO需紅綠鏡。\n\n**選項 C：C 選項**\n兩者需偏光。\n\n**選項 D：D 選項**\n皆需輔助鏡。\n\n**原始出處**\n驗光生\\驗光學概要\\112年驗光生普考.pdf；原題編號 12；舊 ID opt-q0390",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0390",
+      "source_number": "12",
+      "source_year": "112",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "幼兒裸眼立體視測試",
+        "simple": "Frisby使用實體板厚真深度，Lang用柱狀光柵自體分像；Random Dot E、Titmus、TNO等需偏光或紅綠分離。",
+        "memory": "Frisby、Lang免戴鏡。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "TNO需紅綠鏡。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "兩者需偏光。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "皆需輔助鏡。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0391",
+      "type": "single",
+      "stem": "關於立體視覺測驗，下列敘述何者正確？",
+      "choices": [
+        "隨機亂點立體視覺具有最少的單眼線索，為測驗首選",
+        "TNO 立體視覺不用配戴試驗眼鏡，適合抗拒配戴眼鏡的幼童實施測試",
+        "立體視覺的單位是分角（minutes of arc）",
+        "立體視覺的測驗距離可依據受測者閱讀習慣與手的長度進行調整，不影響測驗結果"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n立體視測驗品質\n\n**白話理解**\nglobal random-dot圖形只有雙眼視差整合後才浮現。TNO需紅綠鏡；立體視通常以秒角記錄；測距必須固定。\n\n**口訣**\nrandom dot最少monocular cue。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\nTNO需紅綠眼鏡。\n\n**選項 C：C 選項**\n單位通常是秒角。\n\n**選項 D：D 選項**\n距離會改變視差標定。\n\n**原始出處**\n驗光生\\驗光學概要\\112年驗光生普考.pdf；原題編號 19；舊 ID opt-q0391",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0391",
+      "source_number": "19",
+      "source_year": "112",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "立體視測驗品質",
+        "simple": "global random-dot圖形只有雙眼視差整合後才浮現。TNO需紅綠鏡；立體視通常以秒角記錄；測距必須固定。",
+        "memory": "random dot最少monocular cue。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "TNO需紅綠眼鏡。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "單位通常是秒角。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "距離會改變視差標定。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,750 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-eye-ans-adnexa-p2",
+  "subject": "eye_ans",
+  "unit": "第17單元 眼瞼淚腺與結膜",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "眼解剖生理學",
+    "第17單元 眼瞼淚腺與結膜"
+  ],
+  "title": "眼瞼、淚腺與結膜（2）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://harmonious-rugelach-6d5134.netlify.app/",
+  "level": 2,
+  "minutes": 75,
+  "order": 17,
+  "source": "https://harmonious-rugelach-6d5134.netlify.app/",
+  "tags": [
+    "眼瞼、淚腺與結膜"
+  ],
+  "lessons": [
+    {
+      "id": "lacrimal-apparatus-1",
+      "title": "淚器：造淚與排淚的一套系統",
+      "goals": [
+        "解釋淚腺：外上角的腺體，被提肌腱分成兩部",
+        "解釋淚液排出路：淚點→淚小管→淚囊→鼻淚管",
+        "解釋淚液幫浦與流淚反射"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "淚器：造淚與排淚的一套系統",
+          "body": "把淚腺的位置與分部、淚水的排出路徑，與眨眼幫浦加流淚反射走完一遍。\n\n- 先看淚腺在哪、被誰分成兩部。\n- 再走淚液排出五站。\n- 最後懂幫浦與五進七出反射。"
+        },
+        {
+          "type": "card",
+          "title": "淚腺：外上角的腺體，被提肌腱分成兩部",
+          "body": "**一句話／白話**\n淚腺躲在眼眶外上角，被提瞼肌的外側腱穿過，分成大的眶部和小的瞼部；排出管開口在外側穹窿。\n\n**觀念**\nlacrimal apparatus 含 lacrimal gland（分泌）與 lacrimal ducts（排泄）。lacrimal gland 位於眼眶外上壁的淚腺窩，正常摸不到；levator palpebrae superioris muscle 的外側肌腱穿過它，分成較大的 orbital part 與較小的 palpebral part，10~20 條排出管開口於外側 fornix conjunctiva。另有穹窿的 glands of Krause 與 glands of Wolfring 為 accessory lacrimal glands。淚器又分 secretory system（製造遞送）與 excretory system（排泄清理）。\n\n**考試角度**\n- lacrimal gland 在眼眶外上方淚腺窩，被 levator palpebrae superioris muscle 外側腱分成 orbital part（大）與 palpebral part（小）\n- 主淚腺 10~20 條排出管開口於外側 fornix conjunctiva\n- accessory lacrimal glands＝glands of Krause（穹窿）＋glands of Wolfring（瞼板緣）\n\n**口訣**\n外上角淚腺，提肌腱一刀分眶部瞼部；管子開在外側穹窿。",
+          "keys": [
+            "lacrimal gland 在眼眶外上方淚腺窩，被 levator palpebrae superioris muscle 外側腱分成 orbital part（大）與 palpebral part（小）",
+            "主淚腺 10~20 條排出管開口於外側 fornix conjunctiva",
+            "accessory lacrimal glands＝glands of Krause（穹窿）＋glands of Wolfring（瞼板緣）"
+          ],
+          "tip": "口訣：外上角淚腺，提肌腱一刀分眶部瞼部；管子開在外側穹窿。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "淚腺被哪條構造分成 orbital part 與 palpebral part？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "lacrimal gland 在眼眶外上方淚腺窩，被 levator palpebrae superioris muscle 外側腱分成 orbital part（大）與 palpebral part（小）\n\n正確選項：levator palpebrae superioris muscle 的外側肌腱。\nlacrimal apparatus 含 lacrimal gland（分泌）與 lacrimal ducts（排泄）。lacrimal gland 位於眼眶外上壁的淚腺窩，正常摸不到；levator palpebrae superioris muscle 的外側肌腱穿過它，分成較大的 orbital part 與較小的 palpebral part，10~20 條排出管開口於外側 fornix conjunctiva。另有穹窿的 glands of Krause 與 glands of Wolfring 為 accessory lacrimal glands。淚器又分 secretory system（製造遞送）與 excretory system（排泄清理）。",
+          "choices": [
+            "Whitnall's ligament",
+            "tarsal plate",
+            "levator palpebrae superioris muscle 的外側肌腱",
+            "orbital septum"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "淚液排出路：淚點→淚小管→淚囊→鼻淚管",
+          "body": "**一句話／白話**\n眼淚從瞼緣鼻側的淚點進去，經淚小管到淚囊，再走鼻淚管流到鼻子的下鼻道。\n\n**觀念**\n排出順序：lacrimal puncta，在上下瞼緣鼻側、距 medial canthus 約 6.0~6.5 mm，徑 0.2~0.3 mm，收集 lacus lacrimalis 的淚水 → lacrimal canaliculi，先垂直 1~2 mm 再轉水平約 8 mm → lacrimal sac，淚骨窩內、上端盲端、垂直約 12 mm，與淚小管交接處有 Rosenmüller valve 防逆流 → nasolacrimal duct，骨性 12 mm、膜性 5 mm，下端有 Hasner valve，開口於 inferior meatus。嬰兒 Hasner valve 未開通→先天性鼻淚管阻塞與慢性 dacryocystitis。\n\n**考試角度**\n- 順序：lacrimal puncta→lacrimal canaliculi→lacrimal sac→nasolacrimal duct→inferior meatus\n- Rosenmüller valve 在淚小管－淚囊交接防逆流；Hasner valve 在 nasolacrimal duct 下端\n- nasolacrimal duct 開口在 inferior meatus（下鼻甲下方），不是中鼻道\n\n**口訣**\n點、管、囊、鼻淚管、下鼻道；上有羅氏、下有哈氏兩道閥。",
+          "keys": [
+            "順序：lacrimal puncta→lacrimal canaliculi→lacrimal sac→nasolacrimal duct→inferior meatus",
+            "Rosenmüller valve 在淚小管－淚囊交接防逆流；Hasner valve 在 nasolacrimal duct 下端",
+            "nasolacrimal duct 開口在 inferior meatus（下鼻甲下方），不是中鼻道"
+          ],
+          "tip": "口訣：點、管、囊、鼻淚管、下鼻道；上有羅氏、下有哈氏兩道閥。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "nasolacrimal duct 最後開口於下列何處？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "順序：lacrimal puncta→lacrimal canaliculi→lacrimal sac→nasolacrimal duct→inferior meatus\n\n正確選項：inferior meatus。\n排出順序：lacrimal puncta，在上下瞼緣鼻側、距 medial canthus 約 6.0~6.5 mm，徑 0.2~0.3 mm，收集 lacus lacrimalis 的淚水 → lacrimal canaliculi，先垂直 1~2 mm 再轉水平約 8 mm → lacrimal sac，淚骨窩內、上端盲端、垂直約 12 mm，與淚小管交接處有 Rosenmüller valve 防逆流 → nasolacrimal duct，骨性 12 mm、膜性 5 mm，下端有 Hasner valve，開口於 inferior meatus。嬰兒 Hasner valve 未開通→先天性鼻淚管阻塞與慢性 dacryocystitis。",
+          "choices": [
+            "中鼻道",
+            "上鼻道",
+            "額竇",
+            "inferior meatus"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "淚液幫浦與流淚反射",
+          "body": "**一句話／白話**\n眨眼時眼輪匝肌收縮把淚囊撐開、淚小管夾扁，產生負壓把淚水吸進去；流淚反射是三叉進、顏面（副交感）出。\n\n**觀念**\nlacrimal pump：閉眼時 orbicularis oculi muscle 收縮使 lacrimal sac 擴張，同時把眼瞼往後淚脊拉、lacrimal canaliculi 受壓收縮產生負壓，把淚水抽進 lacrimal sac，再靠重力與彈性經 nasolacrimal duct 流入鼻腔。tear reflex 的傳入是 ophthalmic nerve（V1，屬 CN V），傳出是自主性的 facial nerve（CN VII）副交感、經 pterygopalatine ganglion。新生兒神經控制未成熟，故『哭而無淚』。臨床：老年人原發性分泌不足、Sjögren's syndrome 為次發性、trachoma 或化學灼傷會阻塞淚腺管徑。\n\n**考試角度**\n- lacrimal pump：閉眼 orbicularis oculi muscle 收縮→lacrimal sac 擴張＋lacrimal canaliculi 收縮→負壓把淚抽進淚囊\n- tear reflex：傳入 CN V（ophthalmic nerve），傳出 CN VII 副交感經 pterygopalatine ganglion\n- Sjögren's syndrome＝次發性乾眼；trachoma／化學灼傷→淚腺管阻塞；新生兒哭而無淚\n\n**口訣**\n眨眼當幫浦：囊張管縮抽淚水；反射五進七出，副交感過翼腭。",
+          "keys": [
+            "lacrimal pump：閉眼 orbicularis oculi muscle 收縮→lacrimal sac 擴張＋lacrimal canaliculi 收縮→負壓把淚抽進淚囊",
+            "tear reflex：傳入 CN V（ophthalmic nerve），傳出 CN VII 副交感經 pterygopalatine ganglion",
+            "Sjögren's syndrome＝次發性乾眼；trachoma／化學灼傷→淚腺管阻塞；新生兒哭而無淚"
+          ],
+          "tip": "口訣：眨眼當幫浦：囊張管縮抽淚水；反射五進七出，副交感過翼腭。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "tear reflex 的 efferent 主要經哪條腦神經的副交感纖維？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "lacrimal pump：閉眼 orbicularis oculi muscle 收縮→lacrimal sac 擴張＋lacrimal canaliculi 收縮→負壓把淚抽進淚囊\n\n正確選項：facial nerve（CN VII）。\nlacrimal pump：閉眼時 orbicularis oculi muscle 收縮使 lacrimal sac 擴張，同時把眼瞼往後淚脊拉、lacrimal canaliculi 受壓收縮產生負壓，把淚水抽進 lacrimal sac，再靠重力與彈性經 nasolacrimal duct 流入鼻腔。tear reflex 的傳入是 ophthalmic nerve（V1，屬 CN V），傳出是自主性的 facial nerve（CN VII）副交感、經 pterygopalatine ganglion。新生兒神經控制未成熟，故『哭而無淚』。臨床：老年人原發性分泌不足、Sjögren's syndrome 為次發性、trachoma 或化學灼傷會阻塞淚腺管徑。",
+          "choices": [
+            "oculomotor nerve（CN III）",
+            "optic nerve（CN II）",
+            "facial nerve（CN VII）",
+            "trigeminal nerve（CN V）"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：淚液幫浦與流淚反射",
+          "problem": "tear reflex 的 efferent 主要經哪條腦神經的副交感纖維？\n\nA. oculomotor nerve（CN III）\nB. optic nerve（CN II）\nC. facial nerve（CN VII）\nD. trigeminal nerve（CN V）",
+          "steps": [
+            "先確認題目問的主題：淚液幫浦與流淚反射",
+            "lacrimal pump：閉眼時 orbicularis oculi muscle 收縮使 lacrimal sac 擴張，同時把眼瞼往後淚脊拉、lacrimal canaliculi 受壓收縮產生負壓，把淚水抽進 lacrimal sac，再靠重力與彈性經 nasolacrimal duct 流入鼻腔。tear reflex 的傳入是 ophthalmic nerve（V1，屬 CN V），傳出是自主性的 facial nerve（CN VII）副交感、經 pterygopalatine ganglion。新生兒神經控制未成熟，故『哭而無淚』。臨床：老年人原發性分泌不足、Sjögren's syndrome 為次發性、trachoma 或化學灼傷會阻塞淚腺管徑。",
+            "把判斷依據連回題目：lacrimal pump：閉眼 orbicularis oculi muscle 收縮→lacrimal sac 擴張＋lacrimal canaliculi 收縮→負壓把淚抽進淚囊\n\n正確選項：facial nerve（CN VII）。\nlacrimal pump：閉眼時 orbicularis oculi muscle 收縮使 lacrimal sac 擴張，同時把眼瞼往後淚脊拉、lacrimal canaliculi 受壓收縮產生負壓，把淚水抽進 lacrimal sac，再靠重力與彈性經 nasolacrimal duct 流入鼻腔。tear reflex 的傳入是 ophthalmic nerve（V1，屬 CN V），傳出是自主性的 facial nerve（CN VII）副交感、經 pterygopalatine ganglion。新生兒神經控制未成熟，故『哭而無淚』。臨床：老年人原發性分泌不足、Sjögren's syndrome 為次發性、trachoma 或化學灼傷會阻塞淚腺管徑。"
+          ],
+          "answer": "facial nerve（CN VII）"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：淚器：造淚與排淚的一套系統",
+          "qids": [
+            "s114-eye-ans-exam106-u17-q0001",
+            "s114-eye-ans-exam106-u17-q0002"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "nasolacrimal duct 最後開口於下列何處？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "順序：lacrimal puncta→lacrimal canaliculi→lacrimal sac→nasolacrimal duct→inferior meatus\n\n正確選項：inferior meatus。\n排出順序：lacrimal puncta，在上下瞼緣鼻側、距 medial canthus 約 6.0~6.5 mm，徑 0.2~0.3 mm，收集 lacus lacrimalis 的淚水 → lacrimal canaliculi，先垂直 1~2 mm 再轉水平約 8 mm → lacrimal sac，淚骨窩內、上端盲端、垂直約 12 mm，與淚小管交接處有 Rosenmüller valve 防逆流 → nasolacrimal duct，骨性 12 mm、膜性 5 mm，下端有 Hasner valve，開口於 inferior meatus。嬰兒 Hasner valve 未開通→先天性鼻淚管阻塞與慢性 dacryocystitis。",
+              "choices": [
+                "中鼻道",
+                "上鼻道",
+                "額竇",
+                "inferior meatus"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "tear reflex 的 efferent 主要經哪條腦神經的副交感纖維？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "lacrimal pump：閉眼 orbicularis oculi muscle 收縮→lacrimal sac 擴張＋lacrimal canaliculi 收縮→負壓把淚抽進淚囊\n\n正確選項：facial nerve（CN VII）。\nlacrimal pump：閉眼時 orbicularis oculi muscle 收縮使 lacrimal sac 擴張，同時把眼瞼往後淚脊拉、lacrimal canaliculi 受壓收縮產生負壓，把淚水抽進 lacrimal sac，再靠重力與彈性經 nasolacrimal duct 流入鼻腔。tear reflex 的傳入是 ophthalmic nerve（V1，屬 CN V），傳出是自主性的 facial nerve（CN VII）副交感、經 pterygopalatine ganglion。新生兒神經控制未成熟，故『哭而無淚』。臨床：老年人原發性分泌不足、Sjögren's syndrome 為次發性、trachoma 或化學灼傷會阻塞淚腺管徑。",
+              "choices": [
+                "oculomotor nerve（CN III）",
+                "optic nerve（CN II）",
+                "facial nerve（CN VII）",
+                "trigeminal nerve（CN V）"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "lacrimal gland 在眼眶外上方淚腺窩，被 levator palpebrae superioris muscle 外側腱分成 orbital part（大）與 palpebral part（小）",
+            "主淚腺 10~20 條排出管開口於外側 fornix conjunctiva",
+            "順序：lacrimal puncta→lacrimal canaliculi→lacrimal sac→nasolacrimal duct→inferior meatus",
+            "Rosenmüller valve 在淚小管－淚囊交接防逆流；Hasner valve 在 nasolacrimal duct 下端",
+            "lacrimal pump：閉眼 orbicularis oculi muscle 收縮→lacrimal sac 擴張＋lacrimal canaliculi 收縮→負壓把淚抽進淚囊",
+            "tear reflex：傳入 CN V（ophthalmic nerve），傳出 CN VII 副交感經 pterygopalatine ganglion"
+          ],
+          "flash": [
+            {
+              "front": "淚腺：外上角的腺體，被提肌腱分成兩部",
+              "back": "淚腺躲在眼眶外上角，被提瞼肌的外側腱穿過，分成大的眶部和小的瞼部；排出管開口在外側穹窿。"
+            },
+            {
+              "front": "淚液排出路：淚點→淚小管→淚囊→鼻淚管",
+              "back": "眼淚從瞼緣鼻側的淚點進去，經淚小管到淚囊，再走鼻淚管流到鼻子的下鼻道。"
+            },
+            {
+              "front": "淚液幫浦與流淚反射",
+              "back": "眨眼時眼輪匝肌收縮把淚囊撐開、淚小管夾扁，產生負壓把淚水吸進去；流淚反射是三叉進、顏面（副交感）出。"
+            },
+            {
+              "front": "淚腺被哪條構造分成 orbital part 與 palpebral part？",
+              "back": "lacrimal gland 在眼眶外上方淚腺窩，被 levator palpebrae superioris muscle 外側腱分成 orbital part（大）與 palpebral part（小）\n\n正確選項：levator palpebrae superioris muscle 的外側肌腱。\nlacrimal apparatus 含 lacrimal gland（分泌）與 lacrimal ducts（排泄）。lacrimal gland 位於眼眶外上壁的淚腺窩，正常摸不到；levator palpebrae superioris muscle 的外側肌腱穿過它，分成較大的 orbital part 與較小的 palpebral part，10~20 條排出管開口於外側 fornix conjunctiva。另有穹窿的 glands of Krause 與 glands of Wolfring 為 accessory lacrimal glands。淚器又分 secretory system（製造遞送）與 excretory system（排泄清理）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "goals": [
+        "解釋單元路線"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "單元路線",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。",
+          "keys": [
+            "把本單元的關係串起來，確認易錯条件與方向。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "answer": "- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。"
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。\n- 把判斷依據連回題目：- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。\n\n**結論與依據**\n- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。",
+          "keys": [
+            "- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：單元路線\n- - 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。\n- 把判斷依據連回題目：- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：單元路線",
+          "problem": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：單元路線",
+            "- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。",
+            "把判斷依據連回題目：- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。"
+          ],
+          "answer": "- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-eye-ans-exam106-u17-q0001",
+            "s114-eye-ans-exam106-u17-q0002"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "answer": "- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把本單元的關係串起來，確認易錯条件與方向。",
+            "單元路線：把本單元的關係串起來，確認易錯条件與方向。",
+            "- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。",
+            "- 先確認題目問的主題：單元路線\n- - 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。\n- 把判斷依據連回題目：- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。",
+            "- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。"
+          ],
+          "flash": [
+            {
+              "front": "單元路線",
+              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。\n- 把判斷依據連回題目：- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。"
+            },
+            {
+              "front": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "back": "- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。\n- 把判斷依據連回題目：- 先把眼瞼拆成五層與前後板，記住睜眼／閉眼兩條肌與它們的腦神經。\n- 再認眼瞼緣地標與各腺體分泌的淚膜層，並把結膜分成瞼、球、穹窿三部。\n- 最後走一遍淚器：淚腺造淚、淚點到鼻淚管排淚、眨眼當幫浦、反射五進七出。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-1",
+      "title": "整合驗收 1",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：眼瞼、淚腺與結膜",
+          "body": "前板與後板的分界是 grey line，不是 mucocutaneous junction。\n\n正確選項：前板與後板的分界是 mucocutaneous junction。\n",
+          "keys": [
+            "前板與後板的分界是 grey line，不是 mucocutaneous junction。\n\n正確選項：前板與後板的分界是 mucocutaneous junction。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "有關眼瞼的敘述，下列何者錯誤？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "前板與後板的分界是 grey line，不是 mucocutaneous junction。\n\n正確選項：前板與後板的分界是 mucocutaneous junction。\n",
+          "choices": [
+            "提上瞼肌腱膜與皮下組織相連位置差異造成東西方雙眼皮不同",
+            "前板與後板的分界是 mucocutaneous junction",
+            "上下眼瞼接觸處稱為 canthus",
+            "嬰幼兒假性內斜視主因是 epicanthus"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：眼瞼、淚腺與結膜",
+          "body": "palpebral conjunctiva 牢固黏瞼板（不可推動）；bulbar conjunctiva 鬆散貼鞏膜（可推動）。\n\n正確選項：瞼結膜牢固附著於瞼板、球結膜鬆散附著於鞏膜外層。\n",
+          "keys": [
+            "palpebral conjunctiva 牢固黏瞼板（不可推動）；bulbar conjunctiva 鬆散貼鞏膜（可推動）。\n\n正確選項：瞼結膜牢固附著於瞼板、球結膜鬆散附著於鞏膜外層。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "有關球結膜與瞼結膜的敘述，下列何者正確？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "palpebral conjunctiva 牢固黏瞼板（不可推動）；bulbar conjunctiva 鬆散貼鞏膜（可推動）。\n\n正確選項：瞼結膜牢固附著於瞼板、球結膜鬆散附著於鞏膜外層。\n",
+          "choices": [
+            "球結膜及瞼結膜都鬆散覆蓋眼表",
+            "球結膜牢固附著鞏膜、瞼結膜鬆散附著瞼板",
+            "瞼結膜牢固附著於瞼板、球結膜鬆散附著於鞏膜外層",
+            "球結膜及瞼結膜都牢固附著於下方組織"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：眼瞼、淚腺與結膜",
+          "body": "由前（皮膚側）到後（結膜側）：lash line→grey line→mucocutaneous junction。\n\n正確選項：睫毛線→灰線→皮膚黏膜交界。\n",
+          "keys": [
+            "由前（皮膚側）到後（結膜側）：lash line→grey line→mucocutaneous junction。\n\n正確選項：睫毛線→灰線→皮膚黏膜交界。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "灰線、睫毛線、皮膚黏膜交界在瞼緣由外（前）而內（後）的排序？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "由前（皮膚側）到後（結膜側）：lash line→grey line→mucocutaneous junction。\n\n正確選項：睫毛線→灰線→皮膚黏膜交界。\n",
+          "choices": [
+            "皮膚黏膜交界→睫毛線→灰線",
+            "睫毛線→灰線→皮膚黏膜交界",
+            "灰線→睫毛線→皮膚黏膜交界",
+            "灰線→皮膚黏膜交界→睫毛線"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "有關眼瞼的敘述，下列何者錯誤？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "前板與後板的分界是 grey line，不是 mucocutaneous junction。\n\n正確選項：前板與後板的分界是 mucocutaneous junction。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "前板與後板的分界是 mucocutaneous junction"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "有關眼瞼的敘述，下列何者錯誤？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "前板與後板的分界是 grey line，不是 mucocutaneous junction。\n\n正確選項：前板與後板的分界是 mucocutaneous junction。\n",
+              "choices": [
+                "提上瞼肌腱膜與皮下組織相連位置差異造成東西方雙眼皮不同",
+                "前板與後板的分界是 mucocutaneous junction",
+                "上下眼瞼接觸處稱為 canthus",
+                "嬰幼兒假性內斜視主因是 epicanthus"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "有關球結膜與瞼結膜的敘述，下列何者正確？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "palpebral conjunctiva 牢固黏瞼板（不可推動）；bulbar conjunctiva 鬆散貼鞏膜（可推動）。\n\n正確選項：瞼結膜牢固附著於瞼板、球結膜鬆散附著於鞏膜外層。\n",
+              "choices": [
+                "球結膜及瞼結膜都鬆散覆蓋眼表",
+                "球結膜牢固附著鞏膜、瞼結膜鬆散附著瞼板",
+                "瞼結膜牢固附著於瞼板、球結膜鬆散附著於鞏膜外層",
+                "球結膜及瞼結膜都牢固附著於下方組織"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "灰線、睫毛線、皮膚黏膜交界在瞼緣由外（前）而內（後）的排序？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "由前（皮膚側）到後（結膜側）：lash line→grey line→mucocutaneous junction。\n\n正確選項：睫毛線→灰線→皮膚黏膜交界。\n",
+              "choices": [
+                "皮膚黏膜交界→睫毛線→灰線",
+                "睫毛線→灰線→皮膚黏膜交界",
+                "灰線→睫毛線→皮膚黏膜交界",
+                "灰線→皮膚黏膜交界→睫毛線"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "前板與後板的分界是 grey line，不是 mucocutaneous junction。\n\n正確選項：前板與後板的分界是 mucocutaneous junction。\n",
+            "palpebral conjunctiva 牢固黏瞼板（不可推動）；bulbar conjunctiva 鬆散貼鞏膜（可推動）。\n\n正確選項：瞼結膜牢固附著於瞼板、球結膜鬆散附著於鞏膜外層。\n",
+            "由前（皮膚側）到後（結膜側）：lash line→grey line→mucocutaneous junction。\n\n正確選項：睫毛線→灰線→皮膚黏膜交界。\n",
+            "前板與後板的分界是 grey line，不是 mucocutaneous junction。\n\n正確選項：前板與後板的分界是 mucocutaneous junction。\n",
+            "palpebral conjunctiva 牢固黏瞼板（不可推動）；bulbar conjunctiva 鬆散貼鞏膜（可推動）。\n\n正確選項：瞼結膜牢固附著於瞼板、球結膜鬆散附著於鞏膜外層。\n"
+          ],
+          "flash": [
+            {
+              "front": "有關眼瞼的敘述，下列何者錯誤？",
+              "back": "前板與後板的分界是 grey line，不是 mucocutaneous junction。\n\n正確選項：前板與後板的分界是 mucocutaneous junction。\n"
+            },
+            {
+              "front": "有關球結膜與瞼結膜的敘述，下列何者正確？",
+              "back": "palpebral conjunctiva 牢固黏瞼板（不可推動）；bulbar conjunctiva 鬆散貼鞏膜（可推動）。\n\n正確選項：瞼結膜牢固附著於瞼板、球結膜鬆散附著於鞏膜外層。\n"
+            },
+            {
+              "front": "灰線、睫毛線、皮膚黏膜交界在瞼緣由外（前）而內（後）的排序？",
+              "back": "由前（皮膚側）到後（結膜側）：lash line→grey line→mucocutaneous junction。\n\n正確選項：睫毛線→灰線→皮膚黏膜交界。\n"
+            },
+            {
+              "front": "有關眼瞼的敘述，下列何者錯誤？",
+              "back": "前板與後板的分界是 grey line，不是 mucocutaneous junction。\n\n正確選項：前板與後板的分界是 mucocutaneous junction。\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-2",
+      "title": "整合驗收 2",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：眼瞼、淚腺與結膜",
+          "body": "提上瞼肌＝CN III、眼部感覺＝CN V 正確；orbicularis oculi muscle 是 CN VII（非 CN V），Müller's muscle 是交感（非副交感）。\n\n正確選項：提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve。\n",
+          "keys": [
+            "提上瞼肌＝CN III、眼部感覺＝CN V 正確；orbicularis oculi muscle 是 CN VII（非 CN V），Müller's muscle 是交感（非副交感）。\n\n正確選項：提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "有關眼瞼神經支配，下列敘述何者正確？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "提上瞼肌＝CN III、眼部感覺＝CN V 正確；orbicularis oculi muscle 是 CN VII（非 CN V），Müller's muscle 是交感（非副交感）。\n\n正確選項：提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve。\n",
+          "choices": [
+            "眼輪匝肌由 trigeminal nerve、Müller's muscle 由副交感神經",
+            "淚腺感覺由 trigeminal nerve、Müller's muscle 由副交感神經",
+            "提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve",
+            "提上瞼肌由 oculomotor nerve、眼輪匝肌由 trigeminal nerve"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：眼瞼、淚腺與結膜",
+          "body": "閉眼的 orbicularis oculi muscle＝CN VII；提上瞼肌是 CN III、淚腺分泌是 CN VII 副交感、Müller's muscle 是交感。\n\n正確選項：眼輪匝肌由 facial nerve（CN VII）支配。\n",
+          "keys": [
+            "閉眼的 orbicularis oculi muscle＝CN VII；提上瞼肌是 CN III、淚腺分泌是 CN VII 副交感、Müller's muscle 是交感。\n\n正確選項：眼輪匝肌由 facial nerve（CN VII）支配。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "支配眼瞼結構的神經，下列何者正確？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "閉眼的 orbicularis oculi muscle＝CN VII；提上瞼肌是 CN III、淚腺分泌是 CN VII 副交感、Müller's muscle 是交感。\n\n正確選項：眼輪匝肌由 facial nerve（CN VII）支配。\n",
+          "choices": [
+            "眼輪匝肌由 facial nerve（CN VII）支配",
+            "提上瞼肌由 abducens nerve（CN VI）支配",
+            "淚腺分泌神經由 trigeminal nerve（CN V）支配",
+            "Müller's muscle 由副交感神經支配"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：眼瞼、淚腺與結膜",
+          "body": "結膜是富血管半透明黏膜、具免疫功能；只分泌少量水液與黏液；palpebral conjunctiva 才牢固、bulbar conjunctiva 鬆散。\n\n正確選項：結膜是富含血管的半透明黏膜層。\n",
+          "keys": [
+            "結膜是富血管半透明黏膜、具免疫功能；只分泌少量水液與黏液；palpebral conjunctiva 才牢固、bulbar conjunctiva 鬆散。\n\n正確選項：結膜是富含血管的半透明黏膜層。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "有關結膜的敘述，下列何者正確？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "結膜是富血管半透明黏膜、具免疫功能；只分泌少量水液與黏液；palpebral conjunctiva 才牢固、bulbar conjunctiva 鬆散。\n\n正確選項：結膜是富含血管的半透明黏膜層。\n",
+          "choices": [
+            "結膜會分泌大量淚液",
+            "球結膜牢固覆蓋眼球、瞼結膜鬆散附著瞼板",
+            "結膜組織不負責免疫防禦",
+            "結膜是富含血管的半透明黏膜層"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "有關眼瞼神經支配，下列敘述何者正確？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "提上瞼肌＝CN III、眼部感覺＝CN V 正確；orbicularis oculi muscle 是 CN VII（非 CN V），Müller's muscle 是交感（非副交感）。\n\n正確選項：提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "有關眼瞼神經支配，下列敘述何者正確？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "提上瞼肌＝CN III、眼部感覺＝CN V 正確；orbicularis oculi muscle 是 CN VII（非 CN V），Müller's muscle 是交感（非副交感）。\n\n正確選項：提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve。\n",
+              "choices": [
+                "眼輪匝肌由 trigeminal nerve、Müller's muscle 由副交感神經",
+                "淚腺感覺由 trigeminal nerve、Müller's muscle 由副交感神經",
+                "提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve",
+                "提上瞼肌由 oculomotor nerve、眼輪匝肌由 trigeminal nerve"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "支配眼瞼結構的神經，下列何者正確？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "閉眼的 orbicularis oculi muscle＝CN VII；提上瞼肌是 CN III、淚腺分泌是 CN VII 副交感、Müller's muscle 是交感。\n\n正確選項：眼輪匝肌由 facial nerve（CN VII）支配。\n",
+              "choices": [
+                "眼輪匝肌由 facial nerve（CN VII）支配",
+                "提上瞼肌由 abducens nerve（CN VI）支配",
+                "淚腺分泌神經由 trigeminal nerve（CN V）支配",
+                "Müller's muscle 由副交感神經支配"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "有關結膜的敘述，下列何者正確？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "結膜是富血管半透明黏膜、具免疫功能；只分泌少量水液與黏液；palpebral conjunctiva 才牢固、bulbar conjunctiva 鬆散。\n\n正確選項：結膜是富含血管的半透明黏膜層。\n",
+              "choices": [
+                "結膜會分泌大量淚液",
+                "球結膜牢固覆蓋眼球、瞼結膜鬆散附著瞼板",
+                "結膜組織不負責免疫防禦",
+                "結膜是富含血管的半透明黏膜層"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "提上瞼肌＝CN III、眼部感覺＝CN V 正確；orbicularis oculi muscle 是 CN VII（非 CN V），Müller's muscle 是交感（非副交感）。\n\n正確選項：提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve。\n",
+            "閉眼的 orbicularis oculi muscle＝CN VII；提上瞼肌是 CN III、淚腺分泌是 CN VII 副交感、Müller's muscle 是交感。\n\n正確選項：眼輪匝肌由 facial nerve（CN VII）支配。\n",
+            "結膜是富血管半透明黏膜、具免疫功能；只分泌少量水液與黏液；palpebral conjunctiva 才牢固、bulbar conjunctiva 鬆散。\n\n正確選項：結膜是富含血管的半透明黏膜層。\n",
+            "提上瞼肌＝CN III、眼部感覺＝CN V 正確；orbicularis oculi muscle 是 CN VII（非 CN V），Müller's muscle 是交感（非副交感）。\n\n正確選項：提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve。\n",
+            "閉眼的 orbicularis oculi muscle＝CN VII；提上瞼肌是 CN III、淚腺分泌是 CN VII 副交感、Müller's muscle 是交感。\n\n正確選項：眼輪匝肌由 facial nerve（CN VII）支配。\n"
+          ],
+          "flash": [
+            {
+              "front": "有關眼瞼神經支配，下列敘述何者正確？",
+              "back": "提上瞼肌＝CN III、眼部感覺＝CN V 正確；orbicularis oculi muscle 是 CN VII（非 CN V），Müller's muscle 是交感（非副交感）。\n\n正確選項：提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve。\n"
+            },
+            {
+              "front": "支配眼瞼結構的神經，下列何者正確？",
+              "back": "閉眼的 orbicularis oculi muscle＝CN VII；提上瞼肌是 CN III、淚腺分泌是 CN VII 副交感、Müller's muscle 是交感。\n\n正確選項：眼輪匝肌由 facial nerve（CN VII）支配。\n"
+            },
+            {
+              "front": "有關結膜的敘述，下列何者正確？",
+              "back": "結膜是富血管半透明黏膜、具免疫功能；只分泌少量水液與黏液；palpebral conjunctiva 才牢固、bulbar conjunctiva 鬆散。\n\n正確選項：結膜是富含血管的半透明黏膜層。\n"
+            },
+            {
+              "front": "有關眼瞼神經支配，下列敘述何者正確？",
+              "back": "提上瞼肌＝CN III、眼部感覺＝CN V 正確；orbicularis oculi muscle 是 CN VII（非 CN V），Müller's muscle 是交感（非副交感）。\n\n正確選項：提上瞼肌由 oculomotor nerve、淚腺與眼部感覺由 trigeminal nerve。\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-3",
+      "title": "整合驗收 3",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：眼瞼、淚腺與結膜",
+          "body": "眨眼把淚送向淚點、淚囊鼻側且與 lacrimal canaliculi 垂直皆正確；orbicularis oculi muscle 收縮使淚囊『擴張』產生負壓把淚抽入（非向下流出），nasolacrimal duct 開口在『下鼻道』。\n\n正確選項：眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直。\n",
+          "keys": [
+            "眨眼把淚送向淚點、淚囊鼻側且與 lacrimal canaliculi 垂直皆正確；orbicularis oculi muscle 收縮使淚囊『擴張』產生負壓把淚抽入（非向下流出），nasolacrimal duct 開口在『下鼻道』。\n\n正確選項：眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列有關淚液排出系統，何者正確？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "眨眼把淚送向淚點、淚囊鼻側且與 lacrimal canaliculi 垂直皆正確；orbicularis oculi muscle 收縮使淚囊『擴張』產生負壓把淚抽入（非向下流出），nasolacrimal duct 開口在『下鼻道』。\n\n正確選項：眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直。\n",
+          "choices": [
+            "眼輪匝肌收縮時淚囊也收縮，使淚從淚點向下流出",
+            "鼻淚管開口在中鼻甲下外側的小孔",
+            "淚囊上方接鼻淚管、下方為盲端",
+            "眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：眼瞼、淚腺與結膜",
+          "body": "Meibomian glands 產生的是 lipid layer（脂質層），mucus layer 由結膜 goblet cells 製造。\n\n正確選項：Meibomian glands 產生淚液中的黏液層。\n",
+          "keys": [
+            "Meibomian glands 產生的是 lipid layer（脂質層），mucus layer 由結膜 goblet cells 製造。\n\n正確選項：Meibomian glands 產生淚液中的黏液層。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "關於淚腺系統的敘述，下列何者錯誤？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Meibomian glands 產生的是 lipid layer（脂質層），mucus layer 由結膜 goblet cells 製造。\n\n正確選項：Meibomian glands 產生淚液中的黏液層。\n",
+          "choices": [
+            "淚液可提供角膜所需氧氣",
+            "淚水由淚腺分泌",
+            "鼻淚管經由下鼻道通往鼻腔",
+            "Meibomian glands 產生淚液中的黏液層"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "下列有關淚液排出系統，何者正確？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "眨眼把淚送向淚點、淚囊鼻側且與 lacrimal canaliculi 垂直皆正確；orbicularis oculi muscle 收縮使淚囊『擴張』產生負壓把淚抽入（非向下流出），nasolacrimal duct 開口在『下鼻道』。\n\n正確選項：眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "下列有關淚液排出系統，何者正確？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "眨眼把淚送向淚點、淚囊鼻側且與 lacrimal canaliculi 垂直皆正確；orbicularis oculi muscle 收縮使淚囊『擴張』產生負壓把淚抽入（非向下流出），nasolacrimal duct 開口在『下鼻道』。\n\n正確選項：眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直。\n",
+              "choices": [
+                "眼輪匝肌收縮時淚囊也收縮，使淚從淚點向下流出",
+                "鼻淚管開口在中鼻甲下外側的小孔",
+                "淚囊上方接鼻淚管、下方為盲端",
+                "眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "關於淚腺系統的敘述，下列何者錯誤？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Meibomian glands 產生的是 lipid layer（脂質層），mucus layer 由結膜 goblet cells 製造。\n\n正確選項：Meibomian glands 產生淚液中的黏液層。\n",
+              "choices": [
+                "淚液可提供角膜所需氧氣",
+                "淚水由淚腺分泌",
+                "鼻淚管經由下鼻道通往鼻腔",
+                "Meibomian glands 產生淚液中的黏液層"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "眨眼把淚送向淚點、淚囊鼻側且與 lacrimal canaliculi 垂直皆正確；orbicularis oculi muscle 收縮使淚囊『擴張』產生負壓把淚抽入（非向下流出），nasolacrimal duct 開口在『下鼻道』。\n\n正確選項：眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直。\n",
+            "Meibomian glands 產生的是 lipid layer（脂質層），mucus layer 由結膜 goblet cells 製造。\n\n正確選項：Meibomian glands 產生淚液中的黏液層。\n",
+            "眨眼把淚送向淚點、淚囊鼻側且與 lacrimal canaliculi 垂直皆正確；orbicularis oculi muscle 收縮使淚囊『擴張』產生負壓把淚抽入（非向下流出），nasolacrimal duct 開口在『下鼻道』。\n\n正確選項：眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直。\n",
+            "Meibomian glands 產生的是 lipid layer（脂質層），mucus layer 由結膜 goblet cells 製造。\n\n正確選項：Meibomian glands 產生淚液中的黏液層。\n",
+            "眨眼把淚送向淚點、淚囊鼻側且與 lacrimal canaliculi 垂直皆正確；orbicularis oculi muscle 收縮使淚囊『擴張』產生負壓把淚抽入（非向下流出），nasolacrimal duct 開口在『下鼻道』。\n\n正確選項：眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直。\n"
+          ],
+          "flash": [
+            {
+              "front": "下列有關淚液排出系統，何者正確？",
+              "back": "眨眼把淚送向淚點、淚囊鼻側且與 lacrimal canaliculi 垂直皆正確；orbicularis oculi muscle 收縮使淚囊『擴張』產生負壓把淚抽入（非向下流出），nasolacrimal duct 開口在『下鼻道』。\n\n正確選項：眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直。\n"
+            },
+            {
+              "front": "關於淚腺系統的敘述，下列何者錯誤？",
+              "back": "Meibomian glands 產生的是 lipid layer（脂質層），mucus layer 由結膜 goblet cells 製造。\n\n正確選項：Meibomian glands 產生淚液中的黏液層。\n"
+            },
+            {
+              "front": "下列有關淚液排出系統，何者正確？",
+              "back": "眨眼把淚送向淚點、淚囊鼻側且與 lacrimal canaliculi 垂直皆正確；orbicularis oculi muscle 收縮使淚囊『擴張』產生負壓把淚抽入（非向下流出），nasolacrimal duct 開口在『下鼻道』。\n\n正確選項：眨眼幫助淚液流向淚點，且淚囊在鼻側、於眼窩內與淚小管垂直。\n"
+            },
+            {
+              "front": "關於淚腺系統的敘述，下列何者錯誤？",
+              "back": "Meibomian glands 產生的是 lipid layer（脂質層），mucus layer 由結膜 goblet cells 製造。\n\n正確選項：Meibomian glands 產生淚液中的黏液層。\n"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

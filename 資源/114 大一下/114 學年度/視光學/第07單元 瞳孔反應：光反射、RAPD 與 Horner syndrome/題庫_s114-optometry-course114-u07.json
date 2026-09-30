@@ -1,0 +1,523 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-course114-u07",
+    "subject": "optometry",
+    "name": "瞳孔反應：光反射、RAPD 與 Horner syndrome｜114 學年度",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 學年度",
+      "視光學",
+      "第07單元 瞳孔反應：光反射、RAPD 與 Horner syndrome"
+    ],
+    "order": 7,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-teacher-07-01",
+      "type": "single",
+      "stem": "下列何種眼生理反應與通過頸上神經節之自律神經作用有關？",
+      "choices": [
+        "瞳孔括約肌收縮",
+        "瞳孔擴張肌收縮",
+        "睫狀肌收縮",
+        "外直肌收縮"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n眼部自律神經支配\n\n**白話理解**\n眼部交感節後纖維由頸上神經節出發，支配虹膜擴張肌造成散瞳。括約肌與睫狀肌主要受副交感支配；外直肌是第六腦神經的骨骼肌。\n\n**口訣**\n交感散瞳，副交感縮瞳與調節。\n\n**考點與解題步驟**\n- 外眼肌不屬自律神經支配。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 1；舊 ID opt-teacher-07-01",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-07-01",
+      "source_number": "1",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "眼部自律神經支配",
+        "simple": "眼部交感節後纖維由頸上神經節出發，支配虹膜擴張肌造成散瞳。括約肌與睫狀肌主要受副交感支配；外直肌是第六腦神經的骨骼肌。",
+        "memory": "交感散瞳，副交感縮瞳與調節。",
+        "examFocus": [
+          "外眼肌不屬自律神經支配。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-07-02",
+      "type": "single",
+      "stem": "關於瞳孔直接光反射的傳入路徑：①經視神經 ②經視覺皮質 ③經 Edinger–Westphal 核 ④經頂蓋前核。何者正確？",
+      "choices": [
+        "僅①③",
+        "僅①④",
+        "僅②③",
+        "僅③④"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n瞳孔光反射傳入與傳出\n\n**白話理解**\n光反射傳入由視網膜經視神經、視交叉、視束到中腦頂蓋前核；不必經視覺皮質。Edinger–Westphal 核屬副交感傳出路徑的起點，不列為傳入段。\n\n**口訣**\n傳入到 pretectal；傳出從 EW。\n\n**考點與解題步驟**\n- 題目限定『傳入路徑』，因此不能把 EW 核算進去。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 2；舊 ID opt-teacher-07-02",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-07-02",
+      "source_number": "2",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "瞳孔光反射傳入與傳出",
+        "simple": "光反射傳入由視網膜經視神經、視交叉、視束到中腦頂蓋前核；不必經視覺皮質。Edinger–Westphal 核屬副交感傳出路徑的起點，不列為傳入段。",
+        "memory": "傳入到 pretectal；傳出從 EW。",
+        "examFocus": [
+          "題目限定『傳入路徑』，因此不能把 EW 核算進去。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-07-03",
+      "type": "single",
+      "stem": "有關副交感神經的主要作用，下列何者錯誤？",
+      "choices": [
+        "控制調焦作用",
+        "刺激鼻腔黏液腺分泌",
+        "刺激淚腺分泌",
+        "散瞳"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n副交感生理作用\n\n**白話理解**\n副交感使睫狀肌收縮以調節近距離，並促進腺體分泌；眼內則使瞳孔括約肌收縮而縮瞳。散瞳主要由交感支配虹膜擴張肌。\n\n**口訣**\n副交感：看近、縮瞳、分泌。\n\n**考點與解題步驟**\n- 散瞳和縮瞳的神經支配方向相反。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 3；舊 ID opt-teacher-07-03",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-07-03",
+      "source_number": "3",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "副交感生理作用",
+        "simple": "副交感使睫狀肌收縮以調節近距離，並促進腺體分泌；眼內則使瞳孔括約肌收縮而縮瞳。散瞳主要由交感支配虹膜擴張肌。",
+        "memory": "副交感：看近、縮瞳、分泌。",
+        "examFocus": [
+          "散瞳和縮瞳的神經支配方向相反。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-07-04",
+      "type": "single",
+      "stem": "有關虹膜生理特點的敘述，下列何者錯誤？",
+      "choices": [
+        "虹膜可調節進入眼內光線量",
+        "虹膜括約肌受副交感神經支配，具有放大瞳孔作用",
+        "虹膜可使可見光主要經瞳孔進入眼內",
+        "虹膜基質色素與上皮色素含量決定虹膜顏色"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n虹膜肌肉與瞳孔大小\n\n**白話理解**\n虹膜括約肌環繞瞳孔，收縮時孔徑變小；放大瞳孔的是受交感支配的虹膜擴張肌。其餘敘述符合虹膜遮光與色素特性。\n\n**口訣**\n括約肌『括住』瞳孔＝縮小。\n\n**考點與解題步驟**\n- 一個選項可能前半句正確、後半句錯誤。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 4；舊 ID opt-teacher-07-04",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-07-04",
+      "source_number": "4",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "虹膜肌肉與瞳孔大小",
+        "simple": "虹膜括約肌環繞瞳孔，收縮時孔徑變小；放大瞳孔的是受交感支配的虹膜擴張肌。其餘敘述符合虹膜遮光與色素特性。",
+        "memory": "括約肌『括住』瞳孔＝縮小。",
+        "examFocus": [
+          "一個選項可能前半句正確、後半句錯誤。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-07-05",
+      "type": "single",
+      "stem": "眼睛經光線照射會造成瞳孔收縮，此瞳孔對光反射的中樞位於何處？",
+      "choices": [
+        "視丘",
+        "中腦",
+        "橋腦",
+        "延腦"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n瞳孔光反射中樞\n\n**白話理解**\n頂蓋前核與 Edinger–Westphal 核都位於中腦，負責整合光反射並發出副交感訊號。\n\n**口訣**\n光反射：pretectal＋EW，都在中腦。\n\n**考點與解題步驟**\n- 視丘是重要感覺中繼站，但不是此反射整合中樞。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 5；舊 ID opt-teacher-07-05",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-07-05",
+      "source_number": "5",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "瞳孔光反射中樞",
+        "simple": "頂蓋前核與 Edinger–Westphal 核都位於中腦，負責整合光反射並發出副交感訊號。",
+        "memory": "光反射：pretectal＋EW，都在中腦。",
+        "examFocus": [
+          "視丘是重要感覺中繼站，但不是此反射整合中樞。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-07-06",
+      "type": "single",
+      "stem": "當光線照入左眼時，右眼瞳孔收縮。此反應為何？",
+      "choices": [
+        "間接反應（consensual response）",
+        "近距離反應",
+        "畏光反應",
+        "普肯野反應"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n直接與間接光反射\n\n**白話理解**\n照光眼本身縮瞳稱直接反應；對側未受光眼同步縮瞳稱間接或共感反應，源自頂蓋前核對雙側 EW 核的投射。\n\n**口訣**\n照左、右縮＝對側共感。\n\n**考點與解題步驟**\n- 近反應需要近距離注視，不只是單眼照光。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 6；舊 ID opt-teacher-07-06",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-07-06",
+      "source_number": "6",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "直接與間接光反射",
+        "simple": "照光眼本身縮瞳稱直接反應；對側未受光眼同步縮瞳稱間接或共感反應，源自頂蓋前核對雙側 EW 核的投射。",
+        "memory": "照左、右縮＝對側共感。",
+        "examFocus": [
+          "近反應需要近距離注視，不只是單眼照光。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-07-07",
+      "type": "single",
+      "stem": "瞳孔近距離反應測試主要測量哪三種反應？",
+      "choices": [
+        "調節、眼球震顫、散瞳",
+        "開散、縮瞳、眨眼",
+        "眼球震顫、開散、散瞳",
+        "縮瞳、調節、內聚"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n近反應三聯徵\n\n**白話理解**\n由遠轉看近時，晶狀體增加屈光力、雙眼內聚對準目標，並縮瞳增加景深，合稱 near triad。\n\n**口訣**\n看近：對焦、對眼、縮孔。\n\n**考點與解題步驟**\n- 開散與散瞳是相反方向。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 7；舊 ID opt-teacher-07-07",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-07-07",
+      "source_number": "7",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "近反應三聯徵",
+        "simple": "由遠轉看近時，晶狀體增加屈光力、雙眼內聚對準目標，並縮瞳增加景深，合稱 near triad。",
+        "memory": "看近：對焦、對眼、縮孔。",
+        "examFocus": [
+          "開散與散瞳是相反方向。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-07-08",
+      "type": "single",
+      "stem": "有關調節反射（accommodation reflex）的敘述，下列何者錯誤？",
+      "choices": [
+        "由遠看近時，訊號可經視覺皮質參與",
+        "額葉皮質訊號下行至中腦動眼神經相關核",
+        "副交感傳出使內直肌相關內聚、睫狀肌收縮與縮瞳",
+        "節後交感纖維使睫狀肌放鬆並使瞳孔括約肌收縮，以增加屈光力"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n調節反射路徑\n\n**白話理解**\n看近時增加屈光力主要靠副交感使睫狀肌收縮、晶狀體變凸，並使瞳孔括約肌收縮。交感使睫狀肌較放鬆且促進散瞳，不能同時造成題述的縮瞳與增加調節。\n\n**口訣**\n近反應的眼內兩件事——調節與縮瞳——都以副交感為主。\n\n**考點與解題步驟**\n- 交感造成睫狀肌放鬆時，屈光力反而下降。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 8；舊 ID opt-teacher-07-08",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-07-08",
+      "source_number": "8",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "調節反射路徑",
+        "simple": "看近時增加屈光力主要靠副交感使睫狀肌收縮、晶狀體變凸，並使瞳孔括約肌收縮。交感使睫狀肌較放鬆且促進散瞳，不能同時造成題述的縮瞳與增加調節。",
+        "memory": "近反應的眼內兩件事——調節與縮瞳——都以副交感為主。",
+        "examFocus": [
+          "交感造成睫狀肌放鬆時，屈光力反而下降。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-teacher-07-09",
+      "type": "single",
+      "stem": "相對性瞳孔傳入障礙（RAPD）應在瞳孔光反射檢查的哪個步驟被發現？",
+      "choices": [
+        "直接反應",
+        "間接反應",
+        "擺燈搖擺測試（swinging flashlight test）",
+        "瞳孔調節反應"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nRAPD 檢查\n\n**白話理解**\n在兩眼間交替移動光源，可比較兩眼傳入訊號。移到患眼時雙眼相對散大或縮瞳減弱，即提示 RAPD。\n\n**口訣**\nRAPD 要左右比，所以用 swinging flashlight。\n\n**考點與解題步驟**\n- 單看一次直接反應可能漏掉相對差異。\n\n**選項 A：A 選項**\n\n\n**選項 B：B 選項**\n\n\n**選項 C：C 選項**\n\n\n**選項 D：D 選項**\n\n\n**原始出處**\n老師給的課堂投影片；原題編號 9；舊 ID opt-teacher-07-09",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "老師課堂題目"
+      ],
+      "source_id": "opt-teacher-07-09",
+      "source_number": "9",
+      "source_year": "老師給的題目",
+      "source_subject": "老師課堂題目",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "RAPD 檢查",
+        "simple": "在兩眼間交替移動光源，可比較兩眼傳入訊號。移到患眼時雙眼相對散大或縮瞳減弱，即提示 RAPD。",
+        "memory": "RAPD 要左右比，所以用 swinging flashlight。",
+        "examFocus": [
+          "單看一次直接反應可能漏掉相對差異。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam110-u08",
+    "subject": "optometry",
+    "name": "立體視覺：深度線索、視差與檢測｜110 年國考",
+    "year": 110,
+    "path": [
+      "114 大一下",
+      "110 年國考",
+      "視光學",
+      "第08單元 立體視覺：深度線索、視差與檢測"
+    ],
+    "order": 8,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0290",
+      "type": "single",
+      "stem": "關於操作亂點E 卡（random dot E cards），下列何者最不適當？",
+      "choices": [
+        "病人需要配戴偏光眼鏡（polaroid glasses）",
+        "檢查過程病人都不需要配戴看近用眼鏡（near correction）",
+        "檢查環境的光線要好（in good illumination）",
+        "具正常立體感之成年人，可以辨別距離他眼前150 cm 的亂點E 卡"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nRandom dot E操作\n\n**白話理解**\nRandom dot E需偏光眼鏡、良好照明與正確測距；未矯正近視或老花會降低立體視結果，不能一律不戴近用鏡。\n\n**口訣**\n立體測試也要先看清楚。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n最不適當。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n依測試規範可在150cm辨識。\n\n**原始出處**\n驗光師\\視光學\\110年驗光師高考.pdf；原題編號 9；舊 ID opt-q0290",
+      "tags": [
+        "立體視覺：深度線索、視差與檢測",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0290",
+      "source_number": "9",
+      "source_year": "110",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "立體視覺",
+        "title": "Random dot E操作",
+        "simple": "Random dot E需偏光眼鏡、良好照明與正確測距；未矯正近視或老花會降低立體視結果，不能一律不戴近用鏡。",
+        "memory": "立體測試也要先看清楚。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "最不適當。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "依測試規範可在150cm辨識。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

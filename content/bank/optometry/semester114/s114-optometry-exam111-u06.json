@@ -1,0 +1,237 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam111-u06",
+    "subject": "optometry",
+    "name": "角膜曲率測量：K 值與角膜地圖｜111 年國考",
+    "year": 111,
+    "path": [
+      "114 大一下",
+      "111 年國考",
+      "視光學",
+      "第06單元 角膜曲率測量：K 值與角膜地圖"
+    ],
+    "order": 6,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0350",
+      "type": "single",
+      "stem": "有一受測者自覺式驗光結果為-1.00DS/-1.00DC×180，其角膜弧度儀檢查結果為44.50D@180/46.00D@090， 則眼內所殘餘的散光值為何？",
+      "choices": [
+        "-0.50DC×180",
+        "-1.00DC×180",
+        "+0.50DC×180",
+        "+1.00DC×180"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n殘餘散光\n\n**白話理解**\n角膜K差1.5D，角膜散光約−1.5×180；全眼−1×180，內部需+0.5×180抵消一部分。\n\n**口訣**\n全眼比角膜少0.5，內部反向+0.5。\n\n**考點與解題步驟**\n- −1−(−1.5)=+0.5。\n\n**選項 A：A 選項**\n符號錯。\n\n**選項 B：B 選項**\n等於全眼量。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n量過大。\n\n**原始出處**\n驗光生\\隱形眼鏡學概要\\111年驗光生普考.pdf；原題編號 21；舊 ID opt-q0350",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜隱形眼鏡學概要"
+      ],
+      "source_id": "opt-q0350",
+      "source_number": "21",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜隱形眼鏡學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "殘餘散光",
+        "simple": "角膜K差1.5D，角膜散光約−1.5×180；全眼−1×180，內部需+0.5×180抵消一部分。",
+        "memory": "全眼比角膜少0.5，內部反向+0.5。",
+        "examFocus": [
+          "−1−(−1.5)=+0.5。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "符號錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "等於全眼量。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "量過大。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0351",
+      "type": "single",
+      "stem": "有關角膜弧度測量（keratometry），下列敘述何者錯誤？",
+      "choices": [
+        "傳統的角膜弧度儀（keratometer）可以測量角膜中心頂點（apex），無法測量周邊角膜的弧度",
+        "角膜的弧度，以曲率半徑，單位為釐米（mm）或K 值（屈光度）來表示",
+        "使用同心環圓盤系統Placido disc 測量角膜曲率，是由投射在角膜前表面的反射影像，運用公式計算出 來的",
+        "角膜弧度儀可以測量角膜曲率、角膜散光及散光軸度"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n角膜曲率量測\n\n**白話理解**\n角膜曲率用mm或D表示；Placido依反射環計算；K儀可量曲率、角膜散光與軸。\n\n**口訣**\n常規中央，不等於物理上只能apex。\n\n**選項 A：A 選項**\n錯誤，過度絕對。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\隱形眼鏡學概要\\111年驗光生普考.pdf；原題編號 33；舊 ID opt-q0351",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜隱形眼鏡學概要"
+      ],
+      "source_id": "opt-q0351",
+      "source_number": "33",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜隱形眼鏡學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "角膜曲率量測",
+        "simple": "角膜曲率用mm或D表示；Placido依反射環計算；K儀可量曲率、角膜散光與軸。",
+        "memory": "常規中央，不等於物理上只能apex。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "錯誤，過度絕對。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0353",
+      "type": "single",
+      "stem": "使用角膜弧度儀所測得的數據為42.50＠165/44.00＠075，下列敘述何者錯誤？",
+      "choices": [
+        "其角膜散光為1.50 D",
+        "可以允許簡化紀錄為42.50/44.00＠075",
+        "屬於不規則散光",
+        "測量時也可以順便評估淚液表面完整性"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n斜散光與不規則散光\n\n**白話理解**\nK差1.5D；可簡記平K/陡K@陡軸；mires亦可順便評估淚膜品質。\n\n**口訣**\n軸斜但仍差90度＝規則斜散光。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n錯誤，不是不規則。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\驗光學概要\\111年驗光生普考.pdf；原題編號 20；舊 ID opt-q0353",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0353",
+      "source_number": "20",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "斜散光與不規則散光",
+        "simple": "K差1.5D；可簡記平K/陡K@陡軸；mires亦可順便評估淚膜品質。",
+        "memory": "軸斜但仍差90度＝規則斜散光。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "錯誤，不是不規則。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0355",
+      "type": "single",
+      "stem": "角膜地圖儀（corneal topography）在臨床上可用於下列何者？",
+      "choices": [
+        "檢查白內障",
+        "監測視網膜病變",
+        "評估翼狀贅片",
+        "測量角膜厚度"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n角膜地圖臨床用途\n\n**白話理解**\ntopography描繪角膜表面，適合評估pterygium引起的角膜扭曲；不看白內障、視網膜，也非角膜厚度儀。\n\n**口訣**\ntopography看形狀，不看厚度或眼底。\n\n**選項 A：A 選項**\n需裂隙燈。\n\n**選項 B：B 選項**\n需眼底檢查。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n厚度用pachymetry。\n\n**原始出處**\n驗光生\\驗光學概要\\111年驗光生普考.pdf；原題編號 22；舊 ID opt-q0355",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0355",
+      "source_number": "22",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "角膜地圖臨床用途",
+        "simple": "topography描繪角膜表面，適合評估pterygium引起的角膜扭曲；不看白內障、視網膜，也非角膜厚度儀。",
+        "memory": "topography看形狀，不看厚度或眼底。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "需裂隙燈。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "需眼底檢查。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "厚度用pachymetry。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,918 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-eye-ans-retinal-transmission",
+  "subject": "eye_ans",
+  "unit": "第11單元 視網膜與神經傳遞",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "眼解剖生理學",
+    "第11單元 視網膜與神經傳遞"
+  ],
+  "title": "視網膜與神經傳遞",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://harmonious-rugelach-6d5134.netlify.app/",
+  "level": 2,
+  "minutes": 90,
+  "order": 11,
+  "source": "https://harmonious-rugelach-6d5134.netlify.app/",
+  "tags": [
+    "視網膜與神經傳遞"
+  ],
+  "lessons": [
+    {
+      "id": "vertical-path-1",
+      "title": "直向主路徑：三站把光變成輸出",
+      "goals": [
+        "解釋主路徑只有三站",
+        "解釋暗處 photoreceptor 反而去極化",
+        "解釋ganglion cell 是最後輸出端"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "直向主路徑：三站把光變成輸出",
+          "body": "最簡單的主線是 photoreceptor → bipolar → ganglion。\n\n- 先看暗處 photoreceptor 狀態。\n- 再看光來時怎麼變。\n- 最後看 ganglion cell 如何輸出 action potential。"
+        },
+        {
+          "type": "card",
+          "title": "主路徑只有三站",
+          "body": "**一句話／白話**\nphotoreceptor 收光，bipolar cell 中繼，ganglion cell 把結果送入 optic nerve。\n\n**觀念**\nrods 與 cones 將光轉為 graded potential；bipolar cells 依受體不同形成 ON/OFF pathway；ganglion cells 是視網膜主要產生 action potential 的輸出神經元，其 axons 組成 optic nerve。\n\n**考試角度**\n- photoreceptor 與 bipolar 多用 graded potential\n- ganglion cell 產生 action potential\n- optic nerve 由 ganglion cell axons 組成\n\n**口訣**\n感光收、雙極接、節細胞送。",
+          "keys": [
+            "photoreceptor 與 bipolar 多用 graded potential",
+            "ganglion cell 產生 action potential",
+            "optic nerve 由 ganglion cell axons 組成"
+          ],
+          "tip": "口訣：感光收、雙極接、節細胞送。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "視網膜中主要以 action potential 將訊息送入視神經的是？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "photoreceptor 與 bipolar 多用 graded potential\n\n正確選項：ganglion cell。\nrods 與 cones 將光轉為 graded potential；bipolar cells 依受體不同形成 ON/OFF pathway；ganglion cells 是視網膜主要產生 action potential 的輸出神經元，其 axons 組成 optic nerve。",
+          "choices": [
+            "photoreceptor",
+            "bipolar cell",
+            "ganglion cell",
+            "RPE"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "暗處 photoreceptor 反而去極化",
+          "body": "**一句話／白話**\n黑暗時 cGMP 門開著，photoreceptor depolarized 並持續釋放 glutamate。\n\n**觀念**\n暗處 cGMP-gated cation channels 開啟形成 dark current，photoreceptor 約維持在較去極化狀態並持續釋放 glutamate。光來後啟動 phototransduction，cGMP 降低、通道關閉、細胞 hyperpolarized、glutamate 減少。\n\n**考試角度**\n- dark = depolarized + glutamate high\n- light = hyperpolarized + glutamate low\n- photoreceptor 對光的直接反應不是 action potential\n\n**口訣**\n感光細胞很反直覺：黑暗很吵，亮光安靜。",
+          "keys": [
+            "dark = depolarized + glutamate high",
+            "light = hyperpolarized + glutamate low",
+            "photoreceptor 對光的直接反應不是 action potential"
+          ],
+          "tip": "口訣：感光細胞很反直覺：黑暗很吵，亮光安靜。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "光照 photoreceptor 時最直接發生？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "dark = depolarized + glutamate high\n\n正確選項：超極化且 glutamate 減少。\n暗處 cGMP-gated cation channels 開啟形成 dark current，photoreceptor 約維持在較去極化狀態並持續釋放 glutamate。光來後啟動 phototransduction，cGMP 降低、通道關閉、細胞 hyperpolarized、glutamate 減少。",
+          "choices": [
+            "cGMP 增加",
+            "去極化且 glutamate 增加",
+            "超極化且 glutamate 減少",
+            "產生大量 action potential"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "ganglion cell 是最後輸出端",
+          "body": "**一句話／白話**\n所有眼內運算最後都要轉成 ganglion cell 放電頻率，才能沿視神經離開。\n\n**觀念**\nganglion cell 整合 bipolar 與 amacrine input，將局部亮暗、對比、顏色或動態資訊編碼成 action potential frequency。不同 ganglion cell 類型具有不同 receptive field 與功能。\n\n**考試角度**\n- ganglion cell axons 形成 NFL 與 optic nerve\n- 輸出以 spike frequency 編碼\n- ganglion cell 並非只做被動中繼\n\n**口訣**\n眼內算完，節細胞用放電把答案送出去。",
+          "keys": [
+            "ganglion cell axons 形成 NFL 與 optic nerve",
+            "輸出以 spike frequency 編碼",
+            "ganglion cell 並非只做被動中繼"
+          ],
+          "tip": "口訣：眼內算完，節細胞用放電把答案送出去。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "optic nerve 的 axons 來自？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "ganglion cell axons 形成 NFL 與 optic nerve\n\n正確選項：ganglion cells。\nganglion cell 整合 bipolar 與 amacrine input，將局部亮暗、對比、顏色或動態資訊編碼成 action potential frequency。不同 ganglion cell 類型具有不同 receptive field 與功能。",
+          "choices": [
+            "ganglion cells",
+            "horizontal cells",
+            "photoreceptors",
+            "bipolar cells"
+          ]
+        },
+        {
+          "type": "interactive",
+          "title": "視網膜：光線與訊號反方向",
+          "task": "用「逐步」走完一次，說明每一步如何造成下一步。",
+          "body": "光由內往外，主要訊號由感光細胞往內傳。",
+          "reference": "光由玻璃體側進入：光先穿過內層神經組織，抵達外側感光細胞。\n感光細胞光轉換：光使 cGMP 減少、陽離子通道關閉，細胞超極化，麩胺酸釋放減少。\n雙極細胞分流：ON 與 OFF 路徑對麩胺酸的反應不同；水平細胞調整橫向對比。\n神經節細胞輸出：雙極細胞與無軸突細胞調整神經節輸出；神經節細胞軸突形成視神經。",
+          "height": 420,
+          "html": "<!doctype html><html lang=\"zh-Hant\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{margin:0;padding:10px;box-sizing:border-box;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}*{box-sizing:border-box}h3{font-size:18px;margin:0 0 8px}.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}label{display:block}.row label{flex:1 1 125px;min-width:0;max-width:180px}input{max-width:150px;width:100%}button{font:inherit;padding:6px 12px;background:#fff;border:1px solid #75644d;border-radius:6px}svg{width:100%;height:160px;background:#fff;border:1px solid #cabfa7}#result,.note{padding:6px;background:#fff1c9;margin-top:6px}small{font-size:14px;display:block;margin-top:6px}@media(max-width:400px){body{padding:8px}.row label{flex-basis:105px}svg{height:110px}h3{font-size:16px}}#stage{font-size:20px}#detail{line-height:1.8;min-height:100px}</style><h3>視網膜：光線與訊號反方向</h3><div class=\"note\">觀察重點：光由內往外，主要訊號由感光細胞往內傳。</div><div class=\"row\"><button id=\"play\">播放</button><button id=\"step\">逐步</button><button id=\"reset\">重設</button><span id=\"count\"></span></div><label>過程階段<input aria-label=\"過程階段\" id=\"progress\" type=\"range\" min=\"0\" max=\"3\" value=\"0\"></label><h4 id=\"stage\"></h4><p id=\"detail\"></p><small>此圖呈現事件順序與因果，時間間隔為教學節奏，不代表生理時間或實際解剖距離。</small><script>const stages=[[\"光由玻璃體側進入\", \"光先穿過內層神經組織，抵達外側感光細胞。\"], [\"感光細胞光轉換\", \"光使 cGMP 減少、陽離子通道關閉，細胞超極化，麩胺酸釋放減少。\"], [\"雙極細胞分流\", \"ON 與 OFF 路徑對麩胺酸的反應不同；水平細胞調整橫向對比。\"], [\"神經節細胞輸出\", \"雙極細胞與無軸突細胞調整神經節輸出；神經節細胞軸突形成視神經。\"]];let index=0,playing=false,last=0;const title=document.getElementById('stage'),body=document.getElementById('detail'),counter=document.getElementById('count'),play=document.getElementById('play');function draw(){title.textContent=(index+1)+'．'+stages[index][0];body.textContent=stages[index][1];counter.textContent=(index+1)+' / '+stages.length;document.getElementById('progress').value=index;}function pause(){playing=false;play.textContent='播放';}play.onclick=()=>{playing=!playing;play.textContent=playing?'暫停':'播放';last=performance.now()};document.getElementById('step').onclick=()=>{pause();index=(index+1)%stages.length;draw()};document.getElementById('reset').onclick=()=>{pause();index=0;draw()};document.getElementById('progress').oninput=e=>{pause();index=Number(e.target.value);draw()};function tick(t){if(playing&&t-last>1800){index=(index+1)%stages.length;last=t;draw()}requestAnimationFrame(tick)}draw();requestAnimationFrame(tick);</script></html>"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
+          "answer": "光由玻璃體側進入：光先穿過內層神經組織，抵達外側感光細胞。\n感光細胞光轉換：光使 cGMP 減少、陽離子通道關閉，細胞超極化，麩胺酸釋放減少。\n雙極細胞分流：ON 與 OFF 路徑對麩胺酸的反應不同；水平細胞調整橫向對比。\n神經節細胞輸出：雙極細胞與無軸突細胞調整神經節輸出；神經節細胞軸突形成視神經。",
+          "hint": "逐步比較相鄰階段或改變前後，並區分方向與因果。",
+          "explain": "光由玻璃體側進入：光先穿過內層神經組織，抵達外側感光細胞。\n感光細胞光轉換：光使 cGMP 減少、陽離子通道關閉，細胞超極化，麩胺酸釋放減少。\n雙極細胞分流：ON 與 OFF 路徑對麩胺酸的反應不同；水平細胞調整橫向對比。\n神經節細胞輸出：雙極細胞與無軸突細胞調整神經節輸出；神經節細胞軸突形成視神經。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：ganglion cell 是最後輸出端",
+          "problem": "optic nerve 的 axons 來自？\n\nA. ganglion cells\nB. horizontal cells\nC. photoreceptors\nD. bipolar cells",
+          "steps": [
+            "先確認題目問的主題：ganglion cell 是最後輸出端",
+            "ganglion cell 整合 bipolar 與 amacrine input，將局部亮暗、對比、顏色或動態資訊編碼成 action potential frequency。不同 ganglion cell 類型具有不同 receptive field 與功能。",
+            "把判斷依據連回題目：ganglion cell axons 形成 NFL 與 optic nerve\n\n正確選項：ganglion cells。\nganglion cell 整合 bipolar 與 amacrine input，將局部亮暗、對比、顏色或動態資訊編碼成 action potential frequency。不同 ganglion cell 類型具有不同 receptive field 與功能。"
+          ],
+          "answer": "ganglion cells"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：直向主路徑：三站把光變成輸出",
+          "qids": [
+            "s114-eye-ans-exam106-u10-q0036",
+            "s114-eye-ans-exam106-u11-q0006"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "光照 photoreceptor 時最直接發生？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "dark = depolarized + glutamate high\n\n正確選項：超極化且 glutamate 減少。\n暗處 cGMP-gated cation channels 開啟形成 dark current，photoreceptor 約維持在較去極化狀態並持續釋放 glutamate。光來後啟動 phototransduction，cGMP 降低、通道關閉、細胞 hyperpolarized、glutamate 減少。",
+              "choices": [
+                "cGMP 增加",
+                "去極化且 glutamate 增加",
+                "超極化且 glutamate 減少",
+                "產生大量 action potential"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "optic nerve 的 axons 來自？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "ganglion cell axons 形成 NFL 與 optic nerve\n\n正確選項：ganglion cells。\nganglion cell 整合 bipolar 與 amacrine input，將局部亮暗、對比、顏色或動態資訊編碼成 action potential frequency。不同 ganglion cell 類型具有不同 receptive field 與功能。",
+              "choices": [
+                "ganglion cells",
+                "horizontal cells",
+                "photoreceptors",
+                "bipolar cells"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "photoreceptor 與 bipolar 多用 graded potential",
+            "ganglion cell 產生 action potential",
+            "dark = depolarized + glutamate high",
+            "light = hyperpolarized + glutamate low",
+            "ganglion cell axons 形成 NFL 與 optic nerve",
+            "輸出以 spike frequency 編碼"
+          ],
+          "flash": [
+            {
+              "front": "主路徑只有三站",
+              "back": "photoreceptor 收光，bipolar cell 中繼，ganglion cell 把結果送入 optic nerve。"
+            },
+            {
+              "front": "暗處 photoreceptor 反而去極化",
+              "back": "黑暗時 cGMP 門開著，photoreceptor depolarized 並持續釋放 glutamate。"
+            },
+            {
+              "front": "ganglion cell 是最後輸出端",
+              "back": "所有眼內運算最後都要轉成 ganglion cell 放電頻率，才能沿視神經離開。"
+            },
+            {
+              "front": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
+              "back": "光由玻璃體側進入：光先穿過內層神經組織，抵達外側感光細胞。\n感光細胞光轉換：光使 cGMP 減少、陽離子通道關閉，細胞超極化，麩胺酸釋放減少。\n雙極細胞分流：ON 與 OFF 路徑對麩胺酸的反應不同；水平細胞調整橫向對比。\n神經節細胞輸出：雙極細胞與無軸突細胞調整神經節輸出；神經節細胞軸突形成視神經。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rod-cone-1",
+      "title": "rod、cone 與會聚：敏感度換解析度",
+      "goals": [
+        "解釋rods 專長弱光，cones 專長細節與色彩",
+        "解釋convergence 是敏感度與解析度的交換",
+        "解釋三種 cone 建立色覺"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "rod、cone 與會聚：敏感度換解析度",
+          "body": "會聚越多越敏感，但越難知道光到底落在哪一個點。\n\n- 先比較 rod/cone 功能。\n- 再看 convergence。\n- 最後連到中央與周邊視覺。"
+        },
+        {
+          "type": "card",
+          "title": "rods 專長弱光，cones 專長細節與色彩",
+          "body": "**一句話／白話**\nrod 很敏感但不辨色；cone 需要較亮光，卻能看細節與顏色。\n\n**觀念**\nrods 主要參與 scotopic vision，對弱光敏感、反應較慢且飽和較早。cones 參與 photopic vision，提供高 acuity 與 color vision；S/M/L cone 對不同波段最敏感。\n\n**考試角度**\n- rod：高 sensitivity、低 acuity、無色覺\n- cone：較低 sensitivity、高 acuity、有色覺\n- 暗處看東西常用周邊視網膜較有效\n\n**口訣**\nrod 看暗不看色；cone 看細又看色。",
+          "keys": [
+            "rod：高 sensitivity、低 acuity、無色覺",
+            "cone：較低 sensitivity、高 acuity、有色覺",
+            "暗處看東西常用周邊視網膜較有效"
+          ],
+          "tip": "口訣：rod 看暗不看色；cone 看細又看色。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪項最符合 rod 功能？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "rod：高 sensitivity、低 acuity、無色覺\n\n正確選項：弱光敏感但低解析。\nrods 主要參與 scotopic vision，對弱光敏感、反應較慢且飽和較早。cones 參與 photopic vision，提供高 acuity 與 color vision；S/M/L cone 對不同波段最敏感。",
+          "choices": [
+            "只位於 foveola",
+            "不會飽和",
+            "高解析彩色視覺",
+            "弱光敏感但低解析"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "convergence 是敏感度與解析度的交換",
+          "body": "**一句話／白話**\n很多 photoreceptors 共用一條輸出，容易抓到微弱光，但無法精準定位。\n\n**觀念**\n周邊 rods 常高度 convergence 到 bipolar/ganglion pathway，可進行 spatial summation 增加 sensitivity，但降低 spatial resolution。foveal cones 接近一對一路徑，定位精準但需要較強光。\n\n**考試角度**\n- high convergence → high sensitivity, low acuity\n- low convergence → high acuity\n- fovea 低會聚；周邊 rod pathway 高會聚\n\n**口訣**\n多人一起按警鈴：容易聽見，但不知道是誰按的。",
+          "keys": [
+            "high convergence → high sensitivity, low acuity",
+            "low convergence → high acuity",
+            "fovea 低會聚；周邊 rod pathway 高會聚"
+          ],
+          "tip": "口訣：多人一起按警鈴：容易聽見，但不知道是誰按的。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "高度 convergence 最可能造成？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "high convergence → high sensitivity, low acuity\n\n正確選項：敏感度提高但定位變差。\n周邊 rods 常高度 convergence 到 bipolar/ganglion pathway，可進行 spatial summation 增加 sensitivity，但降低 spatial resolution。foveal cones 接近一對一路徑，定位精準但需要較強光。",
+          "choices": [
+            "敏感度提高但定位變差",
+            "色覺增加",
+            "完全無法偵測弱光",
+            "解析度提高"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "三種 cone 建立色覺",
+          "body": "**一句話／白話**\n大腦比較 S、M、L cone 的相對反應，而不是每個 cone 單獨看出一種固定顏色。\n\n**觀念**\nS、M、L cones 對短、中、長波長有不同但重疊的 sensitivity curves。顏色知覺來自不同 cone outputs 的比較；單一 cone 的放電無法獨立決定波長。\n\n**考試角度**\n- 三種 cone sensitivity curve 會重疊\n- 色覺依相對反應比較\n- rod 不提供正常三色覺\n\n**口訣**\n顏色不是一盞燈，是三盞燈亮度比例。",
+          "keys": [
+            "三種 cone sensitivity curve 會重疊",
+            "色覺依相對反應比較",
+            "rod 不提供正常三色覺"
+          ],
+          "tip": "口訣：顏色不是一盞燈，是三盞燈亮度比例。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "正常三色覺主要依賴？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "三種 cone sensitivity curve 會重疊\n\n正確選項：S/M/L cone 相對反應比較。\nS、M、L cones 對短、中、長波長有不同但重疊的 sensitivity curves。顏色知覺來自不同 cone outputs 的比較；單一 cone 的放電無法獨立決定波長。",
+          "choices": [
+            "S/M/L cone 相對反應比較",
+            "rod 相對反應",
+            "RPE 色素比例",
+            "單一 cone 判斷波長"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：三種 cone 建立色覺",
+          "problem": "正常三色覺主要依賴？\n\nA. S/M/L cone 相對反應比較\nB. rod 相對反應\nC. RPE 色素比例\nD. 單一 cone 判斷波長",
+          "steps": [
+            "先確認題目問的主題：三種 cone 建立色覺",
+            "S、M、L cones 對短、中、長波長有不同但重疊的 sensitivity curves。顏色知覺來自不同 cone outputs 的比較；單一 cone 的放電無法獨立決定波長。",
+            "把判斷依據連回題目：三種 cone sensitivity curve 會重疊\n\n正確選項：S/M/L cone 相對反應比較。\nS、M、L cones 對短、中、長波長有不同但重疊的 sensitivity curves。顏色知覺來自不同 cone outputs 的比較；單一 cone 的放電無法獨立決定波長。"
+          ],
+          "answer": "S/M/L cone 相對反應比較"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：rod、cone 與會聚：敏感度換解析度",
+          "qids": [
+            "s114-eye-ans-exam106-u10-q0036",
+            "s114-eye-ans-exam106-u11-q0006"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "高度 convergence 最可能造成？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "high convergence → high sensitivity, low acuity\n\n正確選項：敏感度提高但定位變差。\n周邊 rods 常高度 convergence 到 bipolar/ganglion pathway，可進行 spatial summation 增加 sensitivity，但降低 spatial resolution。foveal cones 接近一對一路徑，定位精準但需要較強光。",
+              "choices": [
+                "敏感度提高但定位變差",
+                "色覺增加",
+                "完全無法偵測弱光",
+                "解析度提高"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "正常三色覺主要依賴？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "三種 cone sensitivity curve 會重疊\n\n正確選項：S/M/L cone 相對反應比較。\nS、M、L cones 對短、中、長波長有不同但重疊的 sensitivity curves。顏色知覺來自不同 cone outputs 的比較；單一 cone 的放電無法獨立決定波長。",
+              "choices": [
+                "S/M/L cone 相對反應比較",
+                "rod 相對反應",
+                "RPE 色素比例",
+                "單一 cone 判斷波長"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "rod：高 sensitivity、低 acuity、無色覺",
+            "cone：較低 sensitivity、高 acuity、有色覺",
+            "high convergence → high sensitivity, low acuity",
+            "low convergence → high acuity",
+            "三種 cone sensitivity curve 會重疊",
+            "色覺依相對反應比較"
+          ],
+          "flash": [
+            {
+              "front": "rods 專長弱光，cones 專長細節與色彩",
+              "back": "rod 很敏感但不辨色；cone 需要較亮光，卻能看細節與顏色。"
+            },
+            {
+              "front": "convergence 是敏感度與解析度的交換",
+              "back": "很多 photoreceptors 共用一條輸出，容易抓到微弱光，但無法精準定位。"
+            },
+            {
+              "front": "三種 cone 建立色覺",
+              "back": "大腦比較 S、M、L cone 的相對反應，而不是每個 cone 單獨看出一種固定顏色。"
+            },
+            {
+              "front": "哪項最符合 rod 功能？",
+              "back": "rod：高 sensitivity、低 acuity、無色覺\n\n正確選項：弱光敏感但低解析。\nrods 主要參與 scotopic vision，對弱光敏感、反應較慢且飽和較早。cones 參與 photopic vision，提供高 acuity 與 color vision；S/M/L cone 對不同波段最敏感。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "on-off-horizontal-1",
+      "title": "ON/OFF 與橫向調節：視網膜如何抓邊界",
+      "goals": [
+        "解釋ON 與 OFF bipolar 對同一個 glutamate 說不同語言",
+        "解釋center-surround receptive field 強化對比",
+        "解釋horizontal 與 amacrine 做不同層次的側向運算"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "ON/OFF 與橫向調節：視網膜如何抓邊界",
+          "body": "視網膜不是回報總亮度，而是特別在意哪裡變亮、哪裡變暗、哪裡有邊界。\n\n- 先分 ON 與 OFF bipolar。\n- 再看 center-surround。\n- 最後認 horizontal/amacrine 的分工。"
+        },
+        {
+          "type": "card",
+          "title": "ON 與 OFF bipolar 對同一個 glutamate 說不同語言",
+          "body": "**一句話／白話**\n光讓 glutamate 下降；ON bipolar 因此開心去極化，OFF bipolar 則超極化。\n\n**觀念**\nON bipolar 表現 sign-inverting mGluR6 pathway：黑暗 glutamate 抑制它，光照時解除抑制而 depolarize。OFF bipolar 透過 ionotropic receptor 保留符號：glutamate 下降時 hyperpolarize。\n\n**考試角度**\n- light：ON bipolar depolarizes\n- light：OFF bipolar hyperpolarizes\n- ON/OFF 分流從 bipolar cell 開始\n\n**口訣**\n光來：ON 開、OFF 關。",
+          "keys": [
+            "light：ON bipolar depolarizes",
+            "light：OFF bipolar hyperpolarizes",
+            "ON/OFF 分流從 bipolar cell 開始"
+          ],
+          "tip": "口訣：光來：ON 開、OFF 關。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "光照中心時，ON bipolar cell 通常如何反應？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "light：ON bipolar depolarizes\n\n正確選項：depolarize。\nON bipolar 表現 sign-inverting mGluR6 pathway：黑暗 glutamate 抑制它，光照時解除抑制而 depolarize。OFF bipolar 透過 ionotropic receptor 保留符號：glutamate 下降時 hyperpolarize。",
+          "choices": [
+            "釋放更多 photopigment",
+            "depolarize",
+            "hyperpolarize",
+            "產生視神經"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "center-surround receptive field 強化對比",
+          "body": "**一句話／白話**\n中心與周邊反向反應，讓 ganglion cell 特別容易發現邊界，而不是均勻亮面。\n\n**觀念**\nON-center/OFF-surround cell 對中心變亮最興奮，但周邊亮會抑制；OFF-center/ON-surround 相反。均勻照亮中心與周邊時，兩者效果部分抵消，因此對 contrast edge 最敏感。\n\n**考試角度**\n- center 與 surround 拮抗\n- 均勻光反應小於局部對比\n- 功能是邊界與 contrast enhancement\n\n**口訣**\n視網膜愛抓明暗交界，不愛報告一整片均勻亮。",
+          "keys": [
+            "center 與 surround 拮抗",
+            "均勻光反應小於局部對比",
+            "功能是邊界與 contrast enhancement"
+          ],
+          "tip": "口訣：視網膜愛抓明暗交界，不愛報告一整片均勻亮。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "center-surround 結構最有助於偵測？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "center 與 surround 拮抗\n\n正確選項：明暗邊界與對比。\nON-center/OFF-surround cell 對中心變亮最興奮，但周邊亮會抑制；OFF-center/ON-surround 相反。均勻照亮中心與周邊時，兩者效果部分抵消，因此對 contrast edge 最敏感。",
+          "choices": [
+            "聲音頻率",
+            "眼壓",
+            "均勻總亮度",
+            "明暗邊界與對比"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "horizontal 與 amacrine 做不同層次的側向運算",
+          "body": "**一句話／白話**\nhorizontal cell 主要在 OPL 比較空間鄰居；amacrine cell 主要在 IPL 調節時間、動態與複雜訊號。\n\n**觀念**\nhorizontal cells 連接 photoreceptor 與 bipolar 周邊，建立 lateral inhibition 與 surround。amacrine cells 在 bipolar-ganglion junction 參與 temporal filtering、motion、rod pathway 與多種抑制調節。\n\n**考試角度**\n- horizontal cell：OPL、空間側抑制\n- amacrine cell：IPL、時間與動態調節\n- 兩者都不是視神經主要輸出\n\n**口訣**\nhorizontal 管旁邊；amacrine 管時機與動態。",
+          "keys": [
+            "horizontal cell：OPL、空間側抑制",
+            "amacrine cell：IPL、時間與動態調節",
+            "兩者都不是視神經主要輸出"
+          ],
+          "tip": "口訣：horizontal 管旁邊；amacrine 管時機與動態。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "主要在 OPL 建立 lateral inhibition 的細胞是？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "horizontal cell：OPL、空間側抑制\n\n正確選項：horizontal cell。\nhorizontal cells 連接 photoreceptor 與 bipolar 周邊，建立 lateral inhibition 與 surround。amacrine cells 在 bipolar-ganglion junction 參與 temporal filtering、motion、rod pathway 與多種抑制調節。",
+          "choices": [
+            "Müller cell",
+            "ganglion cell",
+            "horizontal cell",
+            "amacrine cell"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：horizontal 與 amacrine 做不同層次的側向運算",
+          "problem": "主要在 OPL 建立 lateral inhibition 的細胞是？\n\nA. Müller cell\nB. ganglion cell\nC. horizontal cell\nD. amacrine cell",
+          "steps": [
+            "先確認題目問的主題：horizontal 與 amacrine 做不同層次的側向運算",
+            "horizontal cells 連接 photoreceptor 與 bipolar 周邊，建立 lateral inhibition 與 surround。amacrine cells 在 bipolar-ganglion junction 參與 temporal filtering、motion、rod pathway 與多種抑制調節。",
+            "把判斷依據連回題目：horizontal cell：OPL、空間側抑制\n\n正確選項：horizontal cell。\nhorizontal cells 連接 photoreceptor 與 bipolar 周邊，建立 lateral inhibition 與 surround。amacrine cells 在 bipolar-ganglion junction 參與 temporal filtering、motion、rod pathway 與多種抑制調節。"
+          ],
+          "answer": "horizontal cell"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：ON/OFF 與橫向調節：視網膜如何抓邊界",
+          "qids": [
+            "s114-eye-ans-exam106-u10-q0036",
+            "s114-eye-ans-exam106-u11-q0006"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "center-surround 結構最有助於偵測？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "center 與 surround 拮抗\n\n正確選項：明暗邊界與對比。\nON-center/OFF-surround cell 對中心變亮最興奮，但周邊亮會抑制；OFF-center/ON-surround 相反。均勻照亮中心與周邊時，兩者效果部分抵消，因此對 contrast edge 最敏感。",
+              "choices": [
+                "聲音頻率",
+                "眼壓",
+                "均勻總亮度",
+                "明暗邊界與對比"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "主要在 OPL 建立 lateral inhibition 的細胞是？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "horizontal cell：OPL、空間側抑制\n\n正確選項：horizontal cell。\nhorizontal cells 連接 photoreceptor 與 bipolar 周邊，建立 lateral inhibition 與 surround。amacrine cells 在 bipolar-ganglion junction 參與 temporal filtering、motion、rod pathway 與多種抑制調節。",
+              "choices": [
+                "Müller cell",
+                "ganglion cell",
+                "horizontal cell",
+                "amacrine cell"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "light：ON bipolar depolarizes",
+            "light：OFF bipolar hyperpolarizes",
+            "center 與 surround 拮抗",
+            "均勻光反應小於局部對比",
+            "horizontal cell：OPL、空間側抑制",
+            "amacrine cell：IPL、時間與動態調節"
+          ],
+          "flash": [
+            {
+              "front": "ON 與 OFF bipolar 對同一個 glutamate 說不同語言",
+              "back": "光讓 glutamate 下降；ON bipolar 因此開心去極化，OFF bipolar 則超極化。"
+            },
+            {
+              "front": "center-surround receptive field 強化對比",
+              "back": "中心與周邊反向反應，讓 ganglion cell 特別容易發現邊界，而不是均勻亮面。"
+            },
+            {
+              "front": "horizontal 與 amacrine 做不同層次的側向運算",
+              "back": "horizontal cell 主要在 OPL 比較空間鄰居；amacrine cell 主要在 IPL 調節時間、動態與複雜訊號。"
+            },
+            {
+              "front": "光照中心時，ON bipolar cell 通常如何反應？",
+              "back": "light：ON bipolar depolarizes\n\n正確選項：depolarize。\nON bipolar 表現 sign-inverting mGluR6 pathway：黑暗 glutamate 抑制它，光照時解除抑制而 depolarize。OFF bipolar 透過 ionotropic receptor 保留符號：glutamate 下降時 hyperpolarize。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "goals": [
+        "解釋單元路線"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "單元路線",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。",
+          "keys": [
+            "把本單元的關係串起來，確認易錯条件與方向。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "answer": "- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。"
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。\n- 把判斷依據連回題目：- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。\n\n**結論與依據**\n- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。",
+          "keys": [
+            "- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：單元路線\n- - 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。\n- 把判斷依據連回題目：- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：單元路線",
+          "problem": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：單元路線",
+            "- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。",
+            "把判斷依據連回題目：- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。"
+          ],
+          "answer": "- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-eye-ans-exam106-u10-q0036",
+            "s114-eye-ans-exam106-u11-q0006"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "answer": "- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把本單元的關係串起來，確認易錯条件與方向。",
+            "單元路線：把本單元的關係串起來，確認易錯条件與方向。",
+            "- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。",
+            "- 先確認題目問的主題：單元路線\n- - 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。\n- 把判斷依據連回題目：- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。",
+            "- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。"
+          ],
+          "flash": [
+            {
+              "front": "單元路線",
+              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。\n- 把判斷依據連回題目：- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。"
+            },
+            {
+              "front": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "back": "- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。\n- 把判斷依據連回題目：- 先抓直向主路徑。\n- 再理解 rod/cone 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-1",
+      "title": "整合驗收 1",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：視網膜與神經傳遞",
+          "body": "光使 photoreceptor hyperpolarize，glutamate release 減少。\n\n正確選項：減少。\n",
+          "keys": [
+            "光使 photoreceptor hyperpolarize，glutamate release 減少。\n\n正確選項：減少。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "光照 photoreceptor 後 glutamate 如何改變？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "光使 photoreceptor hyperpolarize，glutamate release 減少。\n\n正確選項：減少。\n",
+          "choices": [
+            "減少",
+            "不變",
+            "先完全消失再增加",
+            "增加"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：視網膜與神經傳遞",
+          "body": "多個輸入匯在一起會降低定位精度。\n\n正確選項：解析度下降。\n",
+          "keys": [
+            "多個輸入匯在一起會降低定位精度。\n\n正確選項：解析度下降。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "高 convergence 的代價是？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "多個輸入匯在一起會降低定位精度。\n\n正確選項：解析度下降。\n",
+          "choices": [
+            "解析度下降",
+            "無法感光",
+            "顏色增加",
+            "敏感度下降"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：視網膜與神經傳遞",
+          "body": "ON-center 對中心亮刺激最興奮。\n\n正確選項：中心亮、周邊暗。\n",
+          "keys": [
+            "ON-center 對中心亮刺激最興奮。\n\n正確選項：中心亮、周邊暗。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "ON-center ganglion cell 最喜歡哪種刺激？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "ON-center 對中心亮刺激最興奮。\n\n正確選項：中心亮、周邊暗。\n",
+          "choices": [
+            "中心暗、周邊亮",
+            "全部均勻亮",
+            "完全沒有輸入",
+            "中心亮、周邊暗"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "光照 photoreceptor 後 glutamate 如何改變？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "光使 photoreceptor hyperpolarize，glutamate release 減少。\n\n正確選項：減少。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "減少"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "光照 photoreceptor 後 glutamate 如何改變？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "光使 photoreceptor hyperpolarize，glutamate release 減少。\n\n正確選項：減少。\n",
+              "choices": [
+                "減少",
+                "不變",
+                "先完全消失再增加",
+                "增加"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "高 convergence 的代價是？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "多個輸入匯在一起會降低定位精度。\n\n正確選項：解析度下降。\n",
+              "choices": [
+                "解析度下降",
+                "無法感光",
+                "顏色增加",
+                "敏感度下降"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "ON-center ganglion cell 最喜歡哪種刺激？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "ON-center 對中心亮刺激最興奮。\n\n正確選項：中心亮、周邊暗。\n",
+              "choices": [
+                "中心暗、周邊亮",
+                "全部均勻亮",
+                "完全沒有輸入",
+                "中心亮、周邊暗"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "光使 photoreceptor hyperpolarize，glutamate release 減少。\n\n正確選項：減少。\n",
+            "多個輸入匯在一起會降低定位精度。\n\n正確選項：解析度下降。\n",
+            "ON-center 對中心亮刺激最興奮。\n\n正確選項：中心亮、周邊暗。\n",
+            "光使 photoreceptor hyperpolarize，glutamate release 減少。\n\n正確選項：減少。\n",
+            "多個輸入匯在一起會降低定位精度。\n\n正確選項：解析度下降。\n"
+          ],
+          "flash": [
+            {
+              "front": "光照 photoreceptor 後 glutamate 如何改變？",
+              "back": "光使 photoreceptor hyperpolarize，glutamate release 減少。\n\n正確選項：減少。\n"
+            },
+            {
+              "front": "高 convergence 的代價是？",
+              "back": "多個輸入匯在一起會降低定位精度。\n\n正確選項：解析度下降。\n"
+            },
+            {
+              "front": "ON-center ganglion cell 最喜歡哪種刺激？",
+              "back": "ON-center 對中心亮刺激最興奮。\n\n正確選項：中心亮、周邊暗。\n"
+            },
+            {
+              "front": "光照 photoreceptor 後 glutamate 如何改變？",
+              "back": "光使 photoreceptor hyperpolarize，glutamate release 減少。\n\n正確選項：減少。\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-2",
+      "title": "整合驗收 2",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：視網膜與神經傳遞",
+          "body": "amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n",
+          "keys": [
+            "amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "amacrine cell 的主要突觸活動區是？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n",
+          "choices": [
+            "OPL",
+            "IPL",
+            "RPE",
+            "choroid"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\namacrine cell 的主要突觸活動區是？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\nIPL",
+          "keys": [
+            "IPL"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "IPL",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 確認題目問的構造、條件或量。\n- amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n- 將判斷依據連到正確選項。"
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "amacrine cell 的主要突觸活動區是？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "IPL"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "amacrine cell 的主要突觸活動區是？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n",
+              "choices": [
+                "OPL",
+                "IPL",
+                "RPE",
+                "choroid"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n",
+            "- 確認題目問的構造、條件或量。\n- amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n- 將判斷依據連到正確選項。",
+            "amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n",
+            "- 確認題目問的構造、條件或量。\n- amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n- 將判斷依據連到正確選項。",
+            "amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n"
+          ],
+          "flash": [
+            {
+              "front": "amacrine cell 的主要突觸活動區是？",
+              "back": "amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n- 將判斷依據連到正確選項。"
+            },
+            {
+              "front": "amacrine cell 的主要突觸活動區是？",
+              "back": "amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- amacrine cell 主要在 IPL 調節 bipolar-ganglion 傳遞。\n\n正確選項：IPL。\n- 將判斷依據連到正確選項。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

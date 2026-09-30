@@ -1,0 +1,400 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-eye-ans-central-visual-pathway-p2",
+  "subject": "eye_ans",
+  "unit": "第14單元 中樞視覺路徑",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "眼解剖生理學",
+    "第14單元 中樞視覺路徑"
+  ],
+  "title": "中樞視覺路徑（2）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://harmonious-rugelach-6d5134.netlify.app/",
+  "level": 2,
+  "minutes": 45,
+  "order": 14,
+  "source": "https://harmonious-rugelach-6d5134.netlify.app/",
+  "tags": [
+    "中樞視覺路徑"
+  ],
+  "lessons": [
+    {
+      "id": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "goals": [
+        "解釋單元路線"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "單元路線",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。",
+          "keys": [
+            "把本單元的關係串起來，確認易錯条件與方向。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "answer": "- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。"
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。\n- 把判斷依據連回題目：- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。\n\n**結論與依據**\n- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。",
+          "keys": [
+            "- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：單元路線\n- - 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。\n- 把判斷依據連回題目：- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：單元路線",
+          "problem": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：單元路線",
+            "- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。",
+            "把判斷依據連回題目：- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。"
+          ],
+          "answer": "- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-eye-ans-exam106-u14-q0009",
+            "s114-eye-ans-exam106-u14-q0015"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "answer": "- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把本單元的關係串起來，確認易錯条件與方向。",
+            "單元路線：把本單元的關係串起來，確認易錯条件與方向。",
+            "- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。",
+            "- 先確認題目問的主題：單元路線\n- - 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。\n- 把判斷依據連回題目：- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。",
+            "- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。"
+          ],
+          "flash": [
+            {
+              "front": "單元路線",
+              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。\n- 把判斷依據連回題目：- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。"
+            },
+            {
+              "front": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "back": "- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。\n- 把判斷依據連回題目：- 先把 retina 與 visual field 對應翻正。\n- 再跟著 optic nerve → chiasm → tract → LGN → radiation → cortex。\n- 最後用視野缺損反推病灶。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-1",
+      "title": "整合驗收 1",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞視覺路徑",
+          "body": "nasal hemiretinal fibers 在視交叉 decussate。\n\n正確選項：nasal。\n",
+          "keys": [
+            "nasal hemiretinal fibers 在視交叉 decussate。\n\n正確選項：nasal。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪類 retinal fibers 會在 chiasm 交叉？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "nasal hemiretinal fibers 在視交叉 decussate。\n\n正確選項：nasal。\n",
+          "choices": [
+            "nasal",
+            "全部",
+            "都不會",
+            "temporal"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞視覺路徑",
+          "body": "Meyer loop 攜帶對側上視野。\n\n正確選項：左上象限。\n",
+          "keys": [
+            "Meyer loop 攜帶對側上視野。\n\n正確選項：左上象限。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "右 Meyer loop 病灶造成哪個缺損？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Meyer loop 攜帶對側上視野。\n\n正確選項：左上象限。\n",
+          "choices": [
+            "右眼全盲",
+            "左上象限",
+            "左下象限",
+            "右上象限"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞視覺路徑",
+          "body": "中央 chiasm 病灶傷到交叉中的 nasal retinal fibers。\n\n正確選項：optic chiasm。\n",
+          "keys": [
+            "中央 chiasm 病灶傷到交叉中的 nasal retinal fibers。\n\n正確選項：optic chiasm。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "雙顳側偏盲最典型病灶位置？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "中央 chiasm 病灶傷到交叉中的 nasal retinal fibers。\n\n正確選項：optic chiasm。\n",
+          "choices": [
+            "right optic nerve",
+            "left visual cortex",
+            "fovea",
+            "optic chiasm"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "哪類 retinal fibers 會在 chiasm 交叉？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "nasal hemiretinal fibers 在視交叉 decussate。\n\n正確選項：nasal。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "nasal"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "哪類 retinal fibers 會在 chiasm 交叉？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "nasal hemiretinal fibers 在視交叉 decussate。\n\n正確選項：nasal。\n",
+              "choices": [
+                "nasal",
+                "全部",
+                "都不會",
+                "temporal"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "右 Meyer loop 病灶造成哪個缺損？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Meyer loop 攜帶對側上視野。\n\n正確選項：左上象限。\n",
+              "choices": [
+                "右眼全盲",
+                "左上象限",
+                "左下象限",
+                "右上象限"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "雙顳側偏盲最典型病灶位置？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "中央 chiasm 病灶傷到交叉中的 nasal retinal fibers。\n\n正確選項：optic chiasm。\n",
+              "choices": [
+                "right optic nerve",
+                "left visual cortex",
+                "fovea",
+                "optic chiasm"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "nasal hemiretinal fibers 在視交叉 decussate。\n\n正確選項：nasal。\n",
+            "Meyer loop 攜帶對側上視野。\n\n正確選項：左上象限。\n",
+            "中央 chiasm 病灶傷到交叉中的 nasal retinal fibers。\n\n正確選項：optic chiasm。\n",
+            "nasal hemiretinal fibers 在視交叉 decussate。\n\n正確選項：nasal。\n",
+            "Meyer loop 攜帶對側上視野。\n\n正確選項：左上象限。\n"
+          ],
+          "flash": [
+            {
+              "front": "哪類 retinal fibers 會在 chiasm 交叉？",
+              "back": "nasal hemiretinal fibers 在視交叉 decussate。\n\n正確選項：nasal。\n"
+            },
+            {
+              "front": "右 Meyer loop 病灶造成哪個缺損？",
+              "back": "Meyer loop 攜帶對側上視野。\n\n正確選項：左上象限。\n"
+            },
+            {
+              "front": "雙顳側偏盲最典型病灶位置？",
+              "back": "中央 chiasm 病灶傷到交叉中的 nasal retinal fibers。\n\n正確選項：optic chiasm。\n"
+            },
+            {
+              "front": "哪類 retinal fibers 會在 chiasm 交叉？",
+              "back": "nasal hemiretinal fibers 在視交叉 decussate。\n\n正確選項：nasal。\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-2",
+      "title": "整合驗收 2",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：中樞視覺路徑",
+          "body": "交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n",
+          "keys": [
+            "交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "交叉後單側病灶共同特徵？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n",
+          "choices": [
+            "只有色覺下降",
+            "同側單眼失明",
+            "對側 homonymous defect",
+            "雙鼻側偏盲"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\n交叉後單側病灶共同特徵？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- 交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\n對側 homonymous defect",
+          "keys": [
+            "對側 homonymous defect"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "對側 homonymous defect",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 確認題目問的構造、條件或量。\n- 交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n- 將判斷依據連到正確選項。"
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "交叉後單側病灶共同特徵？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "對側 homonymous defect"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "交叉後單側病灶共同特徵？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n",
+              "choices": [
+                "只有色覺下降",
+                "同側單眼失明",
+                "對側 homonymous defect",
+                "雙鼻側偏盲"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n",
+            "- 確認題目問的構造、條件或量。\n- 交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n- 將判斷依據連到正確選項。",
+            "交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n",
+            "- 確認題目問的構造、條件或量。\n- 交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n- 將判斷依據連到正確選項。",
+            "交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n"
+          ],
+          "flash": [
+            {
+              "front": "交叉後單側病灶共同特徵？",
+              "back": "交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- 交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n- 將判斷依據連到正確選項。"
+            },
+            {
+              "front": "交叉後單側病灶共同特徵？",
+              "back": "交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- 交叉後路徑已依半視野整合。\n\n正確選項：對側 homonymous defect。\n- 將判斷依據連到正確選項。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

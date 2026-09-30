@@ -1,0 +1,289 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam108-u07",
+    "subject": "optometry",
+    "name": "瞳孔反應：光反射、RAPD 與 Horner syndrome｜108 年國考",
+    "year": 108,
+    "path": [
+      "114 大一下",
+      "108 年國考",
+      "視光學",
+      "第07單元 瞳孔反應：光反射、RAPD 與 Horner syndrome"
+    ],
+    "order": 7,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0146",
+      "type": "single",
+      "stem": "關於虹膜擴張肌與括約肌的敘述，下列何者正確？",
+      "choices": [
+        "擴張肌的功能由副交感支配",
+        "括約肌在虹膜的排列位置以輻射狀呈現",
+        "括約肌的主要功能是增加周圍光線進入視網膜",
+        "括約肌位於虹膜靠近瞳孔的位置"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n虹膜肌排列與功能\n\n**白話理解**\n括約肌呈環狀，受副交感支配，收縮使瞳孔縮小；擴張肌呈放射狀，受交感支配。\n\n**口訣**\n環狀括約靠瞳孔；放射擴張靠交感。\n\n**選項 A：A 選項**\n擴張肌由交感支配。\n\n**選項 B：B 選項**\n輻射狀是擴張肌。\n\n**選項 C：C 選項**\n括約肌減少入光。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\眼球解剖生理學與倫理法規\\108年驗光師特考.pdf；原題編號 1；舊 ID opt-q0146",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師特考｜眼球解剖生理學與倫理法規"
+      ],
+      "source_id": "opt-q0146",
+      "source_number": "1",
+      "source_year": "108",
+      "source_subject": "驗光師特考｜眼球解剖生理學與倫理法規",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "虹膜肌排列與功能",
+        "simple": "括約肌呈環狀，受副交感支配，收縮使瞳孔縮小；擴張肌呈放射狀，受交感支配。",
+        "memory": "環狀括約靠瞳孔；放射擴張靠交感。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "擴張肌由交感支配。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "輻射狀是擴張肌。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "括約肌減少入光。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0148",
+      "type": "single",
+      "stem": "瞳孔光反射神經傳導途徑（neural reflex pathway）不涉及下列那一構造？",
+      "choices": [
+        "虹膜",
+        "視覺傳導路徑",
+        "副交感神經支配系統",
+        "大腦視覺皮質"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n瞳孔光反射弧\n\n**白話理解**\n光反射弧由視網膜／視神經傳入中腦頂蓋前區，再經副交感路徑至虹膜括約肌；在皮質前已完成。\n\n**口訣**\n對光反射走中腦，不必上皮質。\n\n**選項 A：A 選項**\n虹膜是效應器。\n\n**選項 B：B 選項**\n涉及前段視覺傳入路徑。\n\n**選項 C：C 選項**\n涉及副交感傳出。\n\n**選項 D：D 選項**\n正確，不需視覺皮質。\n\n**原始出處**\n驗光師\\視光學\\108年驗光師特考.pdf；原題編號 11；舊 ID opt-q0148",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師特考｜視光學"
+      ],
+      "source_id": "opt-q0148",
+      "source_number": "11",
+      "source_year": "108",
+      "source_subject": "驗光師特考｜視光學",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "瞳孔光反射弧",
+        "simple": "光反射弧由視網膜／視神經傳入中腦頂蓋前區，再經副交感路徑至虹膜括約肌；在皮質前已完成。",
+        "memory": "對光反射走中腦，不必上皮質。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "虹膜是效應器。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "涉及前段視覺傳入路徑。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "涉及副交感傳出。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確，不需視覺皮質。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0196",
+      "type": "single",
+      "stem": "有關瞳孔的敘述，下列何者錯誤？",
+      "choices": [
+        "主要的作用是控制進入眼內的光量",
+        "一眼視力不好，該眼瞳孔就會變大",
+        "瞳孔括約肌由第三對腦神經（副交感神經）控制",
+        "瞳孔擴張肌由交感神經控制"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n視力與瞳孔大小\n\n**白話理解**\n瞳孔大小由自主神經與光反射路徑控制；單眼視力差若非嚴重傳入缺損，靜態瞳孔大小可能正常。\n\n**口訣**\n視力差不等於瞳孔一定大。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n錯誤。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\眼球構造與倫理法規概要\\108年驗光生普考.pdf；原題編號 9；舊 ID opt-q0196",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光生普考｜眼球構造與倫理法規概要"
+      ],
+      "source_id": "opt-q0196",
+      "source_number": "9",
+      "source_year": "108",
+      "source_subject": "驗光生普考｜眼球構造與倫理法規概要",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "視力與瞳孔大小",
+        "simple": "瞳孔大小由自主神經與光反射路徑控制；單眼視力差若非嚴重傳入缺損，靜態瞳孔大小可能正常。",
+        "memory": "視力差不等於瞳孔一定大。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0197",
+      "type": "single",
+      "stem": "有關眼睛照光時瞳孔發生光反射之神經傳導路徑順序，下列何者正確？①視網膜神經節細胞（ganglion cell）之神經纖維（第一神經元） ②在外側膝狀體（lateral geniculate body）發生突觸 ③在中腦頂蓋前 核（pretectal nucleus）發生突觸 ④在Edinger-Westphal 核發生突觸 ⑤在睫狀神經節（ciliary ganglion） 發生突觸 ⑥由短睫神經到瞳孔括約肌令瞳孔收縮 ⑦由交感神經到瞳孔擴大肌令瞳孔散大 ⑧第二神 經元（連接性） ⑨第三神經元（節前運動神經元） ①",
+      "choices": [
+        "→②→⑧→④→⑨→⑤→⑥ ①",
+        "→③→⑧→④→⑨→⑤→⑦ ①",
+        "→③→⑧→④→⑨→⑤→⑥ ①",
+        "→②→⑧→④→⑨→⑤→⑦"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n完整光反射路徑\n\n**白話理解**\n視網膜神經節纖維到中腦頂蓋前核，不經外側膝狀體；再聯絡EW核，節前副交感到睫狀節，節後短睫神經使括約肌收縮。\n\n**口訣**\nretina→pretectal→EW→ciliary ganglion→short ciliary。\n\n**選項 A：A 選項**\n錯經LGN。\n\n**選項 B：B 選項**\n末端走交感擴瞳錯。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\nLGN與交感皆錯。\n\n**原始出處**\n驗光生\\眼球構造與倫理法規概要\\108年驗光生普考.pdf；原題編號 14；舊 ID opt-q0197",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光生普考｜眼球構造與倫理法規概要"
+      ],
+      "source_id": "opt-q0197",
+      "source_number": "14",
+      "source_year": "108",
+      "source_subject": "驗光生普考｜眼球構造與倫理法規概要",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "完整光反射路徑",
+        "simple": "視網膜神經節纖維到中腦頂蓋前核，不經外側膝狀體；再聯絡EW核，節前副交感到睫狀節，節後短睫神經使括約肌收縮。",
+        "memory": "retina→pretectal→EW→ciliary ganglion→short ciliary。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "錯經LGN。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "末端走交感擴瞳錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "LGN與交感皆錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0209",
+      "type": "single",
+      "stem": "眼初步檢查中的瞳孔檢查，確認兩眼對於光刺激反應是否相等的方法為下列何者？",
+      "choices": [
+        "觀察兩眼瞳孔是否相等大小",
+        "直接光反應（direct pupillary response）測試",
+        "光游移測試（swinging flashlight test）",
+        "調節反應（accommodative response）測試"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nRAPD檢查\n\n**白話理解**\nswinging flashlight test在兩眼間交替照光，比較兩眼傳入光反射是否對稱，可檢出RAPD。\n\n**口訣**\n比較兩眼光刺激＝swinging flashlight。\n\n**選項 A：A 選項**\n只看靜態大小。\n\n**選項 B：B 選項**\n只測單眼直接反應。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n測近反應。\n\n**原始出處**\n驗光生\\驗光學概要\\108年驗光生普考.pdf；原題編號 19；舊 ID opt-q0209",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0209",
+      "source_number": "19",
+      "source_year": "108",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "RAPD檢查",
+        "simple": "swinging flashlight test在兩眼間交替照光，比較兩眼傳入光反射是否對稱，可檢出RAPD。",
+        "memory": "比較兩眼光刺激＝swinging flashlight。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "只看靜態大小。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "只測單眼直接反應。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "測近反應。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

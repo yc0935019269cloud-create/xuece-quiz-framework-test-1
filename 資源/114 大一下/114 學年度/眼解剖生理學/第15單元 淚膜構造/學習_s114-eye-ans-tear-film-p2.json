@@ -1,0 +1,412 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-eye-ans-tear-film-p2",
+  "subject": "eye_ans",
+  "unit": "第15單元 淚膜構造",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "眼解剖生理學",
+    "第15單元 淚膜構造"
+  ],
+  "title": "淚膜構造（2）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://harmonious-rugelach-6d5134.netlify.app/",
+  "level": 2,
+  "minutes": 45,
+  "order": 15,
+  "source": "https://harmonious-rugelach-6d5134.netlify.app/",
+  "tags": [
+    "淚膜構造"
+  ],
+  "lessons": [
+    {
+      "id": "tear-model-update-1",
+      "title": "三層教學與現代淚膜模型",
+      "goals": [
+        "解釋傳統三層與現代雙相模型"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "三層教學與現代淚膜模型",
+          "body": "用傳統三層辨認分泌來源，也理解現代雙相觀點。"
+        },
+        {
+          "type": "card",
+          "title": "傳統三層與現代雙相模型",
+          "body": "**一句話／白話**\n三層模型有助考試辨認来源，實際水與黏蛋白呈漸變混合。\n\n**觀念**\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。",
+          "keys": [
+            "三層模型有助考試辨認来源，實際水與黏蛋白呈漸變混合。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "現代模型中，水液與可溶黏蛋白的關係為何？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "水液與可溶黏蛋白形成水液黏蛋白相；瞼板腺主要供脂質，杯狀細胞供黏蛋白，淚腺主要供水液。\n\n正確選項：呈漸變混合相。\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。",
+          "choices": [
+            "完全互不接觸",
+            "呈漸變混合相",
+            "都由瞼板腺分泌",
+            "都只由杯狀細胞分泌"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\n現代模型中，水液與可溶黏蛋白的關係為何？\n\nA. 完全互不接觸\nB. 呈漸變混合相\nC. 都由瞼板腺分泌\nD. 都只由杯狀細胞分泌\n\n**判斷步驟**\n- 先確認題目問的主題：傳統三層與現代雙相模型\n- 傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。\n- 把判斷依據連回題目：水液與可溶黏蛋白形成水液黏蛋白相；瞼板腺主要供脂質，杯狀細胞供黏蛋白，淚腺主要供水液。\n\n正確選項：呈漸變混合相。\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。\n\n**結論與依據**\n呈漸變混合相",
+          "keys": [
+            "呈漸變混合相"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "呈漸變混合相",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：傳統三層與現代雙相模型\n- 傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。\n- 把判斷依據連回題目：水液與可溶黏蛋白形成水液黏蛋白相；瞼板腺主要供脂質，杯狀細胞供黏蛋白，淚腺主要供水液。\n\n正確選項：呈漸變混合相。\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：傳統三層與現代雙相模型",
+          "problem": "現代模型中，水液與可溶黏蛋白的關係為何？\n\nA. 完全互不接觸\nB. 呈漸變混合相\nC. 都由瞼板腺分泌\nD. 都只由杯狀細胞分泌",
+          "steps": [
+            "先確認題目問的主題：傳統三層與現代雙相模型",
+            "傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。",
+            "把判斷依據連回題目：水液與可溶黏蛋白形成水液黏蛋白相；瞼板腺主要供脂質，杯狀細胞供黏蛋白，淚腺主要供水液。\n\n正確選項：呈漸變混合相。\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。"
+          ],
+          "answer": "呈漸變混合相"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：三層教學與現代淚膜模型",
+          "qids": [
+            "s114-eye-ans-exam106-u15-q0031",
+            "s114-eye-ans-exam106-u15-q0035"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "現代模型中，水液與可溶黏蛋白的關係為何？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "水液與可溶黏蛋白形成水液黏蛋白相；瞼板腺主要供脂質，杯狀細胞供黏蛋白，淚腺主要供水液。\n\n正確選項：呈漸變混合相。\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。",
+              "choices": [
+                "完全互不接觸",
+                "呈漸變混合相",
+                "都由瞼板腺分泌",
+                "都只由杯狀細胞分泌"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "三層模型有助考試辨認来源，實際水與黏蛋白呈漸變混合。",
+            "傳統三層與現代雙相模型：三層模型有助考試辨認来源，實際水與黏蛋白呈漸變混合。",
+            "水液與可溶黏蛋白形成水液黏蛋白相；瞼板腺主要供脂質，杯狀細胞供黏蛋白，淚腺主要供水液。\n\n正確選項：呈漸變混合相。\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。",
+            "- 先確認題目問的主題：傳統三層與現代雙相模型\n- 傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。\n- 把判斷依據連回題目：水液與可溶黏蛋白形成水液黏蛋白相；瞼板腺主要供脂質，杯狀細胞供黏蛋白，淚腺主要供水液。\n\n正確選項：呈漸變混合相。\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。",
+            "水液與可溶黏蛋白形成水液黏蛋白相；瞼板腺主要供脂質，杯狀細胞供黏蛋白，淚腺主要供水液。\n\n正確選項：呈漸變混合相。\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。"
+          ],
+          "flash": [
+            {
+              "front": "傳統三層與現代雙相模型",
+              "back": "三層模型有助考試辨認来源，實際水與黏蛋白呈漸變混合。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：傳統三層與現代雙相模型\n- 傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。\n- 把判斷依據連回題目：水液與可溶黏蛋白形成水液黏蛋白相；瞼板腺主要供脂質，杯狀細胞供黏蛋白，淚腺主要供水液。\n\n正確選項：呈漸變混合相。\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。"
+            },
+            {
+              "front": "現代模型中，水液與可溶黏蛋白的關係為何？",
+              "back": "水液與可溶黏蛋白形成水液黏蛋白相；瞼板腺主要供脂質，杯狀細胞供黏蛋白，淚腺主要供水液。\n\n正確選項：呈漸變混合相。\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：傳統三層與現代雙相模型\n- 傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。\n- 把判斷依據連回題目：水液與可溶黏蛋白形成水液黏蛋白相；瞼板腺主要供脂質，杯狀細胞供黏蛋白，淚腺主要供水液。\n\n正確選項：呈漸變混合相。\n傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。兩種是描述尺度不同，不代表考試分泌來源失效。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-1",
+      "title": "整合驗收 1",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：淚膜構造",
+          "body": "meibomian glands 是 lipid layer 的主要來源。\n\n正確選項：lipid layer。\n",
+          "keys": [
+            "meibomian glands 是 lipid layer 的主要來源。\n\n正確選項：lipid layer。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "meibomian gland dysfunction 最直接影響哪一層？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "meibomian glands 是 lipid layer 的主要來源。\n\n正確選項：lipid layer。\n",
+          "choices": [
+            "RPE",
+            "vitreous",
+            "lipid layer",
+            "aqueous only"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：淚膜構造",
+          "body": "conjunctival goblet cells 主要分泌 mucin。\n\n正確選項：secreted mucin。\n",
+          "keys": [
+            "conjunctival goblet cells 主要分泌 mucin。\n\n正確選項：secreted mucin。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "goblet cells 主要提供？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "conjunctival goblet cells 主要分泌 mucin。\n\n正確選項：secreted mucin。\n",
+          "choices": [
+            "lipid",
+            "collagen",
+            "secreted mucin",
+            "aqueous only"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：淚膜構造",
+          "body": "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN V1。\n",
+          "keys": [
+            "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN V1。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "反射性流淚的感覺傳入主要走？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN V1。\n",
+          "choices": [
+            "CN II",
+            "CN VI",
+            "CN XII",
+            "CN V1"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "meibomian gland dysfunction 最直接影響哪一層？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "meibomian glands 是 lipid layer 的主要來源。\n\n正確選項：lipid layer。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "lipid layer"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "meibomian gland dysfunction 最直接影響哪一層？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "meibomian glands 是 lipid layer 的主要來源。\n\n正確選項：lipid layer。\n",
+              "choices": [
+                "RPE",
+                "vitreous",
+                "lipid layer",
+                "aqueous only"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "goblet cells 主要提供？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "conjunctival goblet cells 主要分泌 mucin。\n\n正確選項：secreted mucin。\n",
+              "choices": [
+                "lipid",
+                "collagen",
+                "secreted mucin",
+                "aqueous only"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "反射性流淚的感覺傳入主要走？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN V1。\n",
+              "choices": [
+                "CN II",
+                "CN VI",
+                "CN XII",
+                "CN V1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "meibomian glands 是 lipid layer 的主要來源。\n\n正確選項：lipid layer。\n",
+            "conjunctival goblet cells 主要分泌 mucin。\n\n正確選項：secreted mucin。\n",
+            "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN V1。\n",
+            "meibomian glands 是 lipid layer 的主要來源。\n\n正確選項：lipid layer。\n",
+            "conjunctival goblet cells 主要分泌 mucin。\n\n正確選項：secreted mucin。\n"
+          ],
+          "flash": [
+            {
+              "front": "meibomian gland dysfunction 最直接影響哪一層？",
+              "back": "meibomian glands 是 lipid layer 的主要來源。\n\n正確選項：lipid layer。\n"
+            },
+            {
+              "front": "goblet cells 主要提供？",
+              "back": "conjunctival goblet cells 主要分泌 mucin。\n\n正確選項：secreted mucin。\n"
+            },
+            {
+              "front": "反射性流淚的感覺傳入主要走？",
+              "back": "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN V1。\n"
+            },
+            {
+              "front": "meibomian gland dysfunction 最直接影響哪一層？",
+              "back": "meibomian glands 是 lipid layer 的主要來源。\n\n正確選項：lipid layer。\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-2",
+      "title": "整合驗收 2",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：淚膜構造",
+          "body": "nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n",
+          "keys": [
+            "nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "淚液最後流入鼻腔哪裡？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n",
+          "choices": [
+            "inferior meatus",
+            "sphenoid sinus",
+            "middle ear",
+            "superior meatus"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\n淚液最後流入鼻腔哪裡？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\ninferior meatus",
+          "keys": [
+            "inferior meatus"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "inferior meatus",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 確認題目問的構造、條件或量。\n- nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n- 將判斷依據連到正確選項。"
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "淚液最後流入鼻腔哪裡？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "inferior meatus"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "淚液最後流入鼻腔哪裡？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n",
+              "choices": [
+                "inferior meatus",
+                "sphenoid sinus",
+                "middle ear",
+                "superior meatus"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n",
+            "- 確認題目問的構造、條件或量。\n- nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n- 將判斷依據連到正確選項。",
+            "nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n",
+            "- 確認題目問的構造、條件或量。\n- nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n- 將判斷依據連到正確選項。",
+            "nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n"
+          ],
+          "flash": [
+            {
+              "front": "淚液最後流入鼻腔哪裡？",
+              "back": "nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n- 將判斷依據連到正確選項。"
+            },
+            {
+              "front": "淚液最後流入鼻腔哪裡？",
+              "back": "nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- nasolacrimal duct 開口於 inferior meatus。\n\n正確選項：inferior meatus。\n- 將判斷依據連到正確選項。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam114-u07",
+    "subject": "optometry",
+    "name": "瞳孔反應：光反射、RAPD 與 Horner syndrome｜114 年國考",
+    "year": 114,
+    "path": [
+      "114 大一下",
+      "114 年國考",
+      "視光學",
+      "第07單元 瞳孔反應：光反射、RAPD 與 Horner syndrome"
+    ],
+    "order": 7,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0428",
+      "type": "single",
+      "stem": "交感神經纖維（the sympathetic nerve fibers）經由那一條神經到達睫狀體及瞳孔擴大肌？",
+      "choices": [
+        "淚腺神經（lacrimal nerve）",
+        "額神經（frontal nerve）",
+        "鼻睫神經（nasociliary nerve）",
+        "三叉神經（trigeminal nerve）"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n眼交感末梢路徑\n\n**白話理解**\n節後交感沿頸內動脈叢進入眼眶，部分隨V1鼻睫神經及長睫神經至瞳孔擴大肌與睫狀體。\n\n**口訣**\nV1的nasociliary帶交感進眼。\n\n**選項 A：A 選項**\n主要至淚腺區。\n\n**選項 B：B 選項**\n主要額頭感覺。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n太籠統，實際分支為鼻睫神經。\n\n**原始出處**\n驗光師\\眼球解剖生理學與倫理法規\\114年驗光師高考.pdf；原題編號 26；舊 ID opt-q0428",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜眼球解剖生理學與倫理法規"
+      ],
+      "source_id": "opt-q0428",
+      "source_number": "26",
+      "source_year": "114",
+      "source_subject": "驗光師高考｜眼球解剖生理學與倫理法規",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "眼交感末梢路徑",
+        "simple": "節後交感沿頸內動脈叢進入眼眶，部分隨V1鼻睫神經及長睫神經至瞳孔擴大肌與睫狀體。",
+        "memory": "V1的nasociliary帶交感進眼。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "主要至淚腺區。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "主要額頭感覺。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "太籠統，實際分支為鼻睫神經。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0439",
+      "type": "single",
+      "stem": "下列何者參與瞳孔光反射（pupillary light reflex）之訊息傳遞？①外側膝狀體 ②四疊體區（pretectal complex） ③大腦視覺皮質區 ④E-W 核（Edinger–Westphal nucleus）",
+      "choices": [
+        "①③",
+        "①④",
+        "②③",
+        "②④"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n光反射中樞\n\n**白話理解**\n光反射不需LGN或視覺皮質；視束分支至頂蓋前區，再連EW核。\n\n**口訣**\npretectal＋EW。\n\n**選項 A：A 選項**\n兩者皆非必要。\n\n**選項 B：B 選項**\nLGN非。\n\n**選項 C：C 選項**\n皮質非。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\眼球構造與倫理法規概要\\114年驗光生普考.pdf；原題編號 16；舊 ID opt-q0439",
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光生普考｜眼球構造與倫理法規概要"
+      ],
+      "source_id": "opt-q0439",
+      "source_number": "16",
+      "source_year": "114",
+      "source_subject": "驗光生普考｜眼球構造與倫理法規概要",
+      "source_detail": {
+        "sectionTitle": "瞳孔反應",
+        "title": "光反射中樞",
+        "simple": "光反射不需LGN或視覺皮質；視束分支至頂蓋前區，再連EW核。",
+        "memory": "pretectal＋EW。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "兩者皆非必要。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "LGN非。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "皮質非。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,785 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-optometry-terms-p3",
+  "subject": "optometry",
+  "unit": "第99單元 中英文核心名詞",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "視光學",
+    "第99單元 中英文核心名詞"
+  ],
+  "title": "中英文核心名詞（3）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://frabjous-druid-ff547a.netlify.app/",
+  "level": 2,
+  "minutes": 90,
+  "order": 99,
+  "source": "https://frabjous-druid-ff547a.netlify.app/",
+  "tags": [
+    "中英文核心名詞"
+  ],
+  "lessons": [
+    {
+      "id": "terms-13-1",
+      "title": "中英文核心名詞 13",
+      "goals": [
+        "解釋MRP／OC",
+        "解釋Prentice's rule／retinoscopy",
+        "解釋with motion／against motion"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 13",
+          "body": "這課從「中英文核心名詞 13」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "MRP／OC",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**MRP｜主要參考點**\nprescribed prism 的定位點，配鏡與驗證稜鏡時用來標記。\n\n**OC｜光學中心**\n通過此點不產生稜鏡效果；OC 與瞳孔不對位會誘發稜鏡。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「MRP／OC」，並說出一個判斷依據。",
+          "answer": "**MRP｜主要參考點**\nprescribed prism 的定位點，配鏡與驗證稜鏡時用來標記。\n\n**OC｜光學中心**\n通過此點不產生稜鏡效果；OC 與瞳孔不對位會誘發稜鏡。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**MRP｜主要參考點**\nprescribed prism 的定位點，配鏡與驗證稜鏡時用來標記。\n\n**OC｜光學中心**\n通過此點不產生稜鏡效果；OC 與瞳孔不對位會誘發稜鏡。"
+        },
+        {
+          "type": "card",
+          "title": "Prentice's rule／retinoscopy",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**Prentice's rule｜普倫提斯法則**\nP = dF，用去中心距離與鏡片度數估算誘發稜鏡。\n\n**retinoscopy｜視網膜檢影**\n用眼底反射光客觀估計屈光狀態。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「Prentice's rule／retinoscopy」，並說出一個判斷依據。",
+          "answer": "**Prentice's rule｜普倫提斯法則**\nP = dF，用去中心距離與鏡片度數估算誘發稜鏡。\n\n**retinoscopy｜視網膜檢影**\n用眼底反射光客觀估計屈光狀態。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**Prentice's rule｜普倫提斯法則**\nP = dF，用去中心距離與鏡片度數估算誘發稜鏡。\n\n**retinoscopy｜視網膜檢影**\n用眼底反射光客觀估計屈光狀態。"
+        },
+        {
+          "type": "card",
+          "title": "with motion／against motion",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**with motion｜順動**\n反射光與檢影光束同方向移動。\n\n**against motion｜逆動**\n反射光與檢影光束反方向移動。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「with motion／against motion」，並說出一個判斷依據。",
+          "answer": "**with motion｜順動**\n反射光與檢影光束同方向移動。\n\n**against motion｜逆動**\n反射光與檢影光束反方向移動。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**with motion｜順動**\n反射光與檢影光束同方向移動。\n\n**against motion｜逆動**\n反射光與檢影光束反方向移動。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：with motion／against motion",
+          "problem": "用自己的話說明「with motion／against motion」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：with motion／against motion",
+            "**with motion｜順動**\n反射光與檢影光束同方向移動。\n\n**against motion｜逆動**\n反射光與檢影光束反方向移動。",
+            "把判斷依據連回題目：**with motion｜順動**\n反射光與檢影光束同方向移動。\n\n**against motion｜逆動**\n反射光與檢影光束反方向移動。"
+          ],
+          "answer": "**with motion｜順動**\n反射光與檢影光束同方向移動。\n\n**against motion｜逆動**\n反射光與檢影光束反方向移動。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 13",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「Prentice's rule／retinoscopy」，並說出一個判斷依據。",
+              "answer": "**Prentice's rule｜普倫提斯法則**\nP = dF，用去中心距離與鏡片度數估算誘發稜鏡。\n\n**retinoscopy｜視網膜檢影**\n用眼底反射光客觀估計屈光狀態。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**Prentice's rule｜普倫提斯法則**\nP = dF，用去中心距離與鏡片度數估算誘發稜鏡。\n\n**retinoscopy｜視網膜檢影**\n用眼底反射光客觀估計屈光狀態。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「with motion／against motion」，並說出一個判斷依據。",
+              "answer": "**with motion｜順動**\n反射光與檢影光束同方向移動。\n\n**against motion｜逆動**\n反射光與檢影光束反方向移動。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**with motion｜順動**\n反射光與檢影光束同方向移動。\n\n**against motion｜逆動**\n反射光與檢影光束反方向移動。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "MRP／OC：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "Prentice's rule／retinoscopy：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**MRP｜主要參考點**\nprescribed prism 的定位點，配鏡與驗證稜鏡時用來標記。\n\n**OC｜光學中心**\n通過此點不產生稜鏡效果；OC 與瞳孔不對位會誘發稜鏡。",
+            "**Prentice's rule｜普倫提斯法則**\nP = dF，用去中心距離與鏡片度數估算誘發稜鏡。\n\n**retinoscopy｜視網膜檢影**\n用眼底反射光客觀估計屈光狀態。"
+          ],
+          "flash": [
+            {
+              "front": "MRP／OC",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "Prentice's rule／retinoscopy",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "with motion／against motion",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「MRP／OC」，並說出一個判斷依據。",
+              "back": "**MRP｜主要參考點**\nprescribed prism 的定位點，配鏡與驗證稜鏡時用來標記。\n\n**OC｜光學中心**\n通過此點不產生稜鏡效果；OC 與瞳孔不對位會誘發稜鏡。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms-14-1",
+      "title": "中英文核心名詞 14",
+      "goals": [
+        "解釋neutral／working distance",
+        "解釋phoropter／keratometer",
+        "解釋mire／K reading"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 14",
+          "body": "這課從「中英文核心名詞 14」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "neutral／working distance",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**neutral｜中和**\n檢影 endpoint，反射不再有明顯方向性移動。\n\n**working distance｜工作距離**\n檢影時驗者到受檢眼的距離，需扣除或用 working lens 補償。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「neutral／working distance」，並說出一個判斷依據。",
+          "answer": "**neutral｜中和**\n檢影 endpoint，反射不再有明顯方向性移動。\n\n**working distance｜工作距離**\n檢影時驗者到受檢眼的距離，需扣除或用 working lens 補償。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**neutral｜中和**\n檢影 endpoint，反射不再有明顯方向性移動。\n\n**working distance｜工作距離**\n檢影時驗者到受檢眼的距離，需扣除或用 working lens 補償。"
+        },
+        {
+          "type": "card",
+          "title": "phoropter／keratometer",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**phoropter｜綜合驗光儀**\n可切換球鏡、柱鏡、軸位以進行客觀與主觀驗光。\n\n**keratometer｜角膜曲率儀**\n測前角膜中央約 3 mm 的曲率與角膜散光。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「phoropter／keratometer」，並說出一個判斷依據。",
+          "answer": "**phoropter｜綜合驗光儀**\n可切換球鏡、柱鏡、軸位以進行客觀與主觀驗光。\n\n**keratometer｜角膜曲率儀**\n測前角膜中央約 3 mm 的曲率與角膜散光。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**phoropter｜綜合驗光儀**\n可切換球鏡、柱鏡、軸位以進行客觀與主觀驗光。\n\n**keratometer｜角膜曲率儀**\n測前角膜中央約 3 mm 的曲率與角膜散光。"
+        },
+        {
+          "type": "card",
+          "title": "mire／K reading",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**mire｜角膜曲率儀視標/反射像**\n由角膜前表面反射，用來對焦與對齊測 K 值。\n\n**K reading｜K 值**\n角膜主子午線的屈光力記錄。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「mire／K reading」，並說出一個判斷依據。",
+          "answer": "**mire｜角膜曲率儀視標/反射像**\n由角膜前表面反射，用來對焦與對齊測 K 值。\n\n**K reading｜K 值**\n角膜主子午線的屈光力記錄。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**mire｜角膜曲率儀視標/反射像**\n由角膜前表面反射，用來對焦與對齊測 K 值。\n\n**K reading｜K 值**\n角膜主子午線的屈光力記錄。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：mire／K reading",
+          "problem": "用自己的話說明「mire／K reading」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：mire／K reading",
+            "**mire｜角膜曲率儀視標/反射像**\n由角膜前表面反射，用來對焦與對齊測 K 值。\n\n**K reading｜K 值**\n角膜主子午線的屈光力記錄。",
+            "把判斷依據連回題目：**mire｜角膜曲率儀視標/反射像**\n由角膜前表面反射，用來對焦與對齊測 K 值。\n\n**K reading｜K 值**\n角膜主子午線的屈光力記錄。"
+          ],
+          "answer": "**mire｜角膜曲率儀視標/反射像**\n由角膜前表面反射，用來對焦與對齊測 K 值。\n\n**K reading｜K 值**\n角膜主子午線的屈光力記錄。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 14",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「phoropter／keratometer」，並說出一個判斷依據。",
+              "answer": "**phoropter｜綜合驗光儀**\n可切換球鏡、柱鏡、軸位以進行客觀與主觀驗光。\n\n**keratometer｜角膜曲率儀**\n測前角膜中央約 3 mm 的曲率與角膜散光。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**phoropter｜綜合驗光儀**\n可切換球鏡、柱鏡、軸位以進行客觀與主觀驗光。\n\n**keratometer｜角膜曲率儀**\n測前角膜中央約 3 mm 的曲率與角膜散光。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「mire／K reading」，並說出一個判斷依據。",
+              "answer": "**mire｜角膜曲率儀視標/反射像**\n由角膜前表面反射，用來對焦與對齊測 K 值。\n\n**K reading｜K 值**\n角膜主子午線的屈光力記錄。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**mire｜角膜曲率儀視標/反射像**\n由角膜前表面反射，用來對焦與對齊測 K 值。\n\n**K reading｜K 值**\n角膜主子午線的屈光力記錄。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "neutral／working distance：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "phoropter／keratometer：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**neutral｜中和**\n檢影 endpoint，反射不再有明顯方向性移動。\n\n**working distance｜工作距離**\n檢影時驗者到受檢眼的距離，需扣除或用 working lens 補償。",
+            "**phoropter｜綜合驗光儀**\n可切換球鏡、柱鏡、軸位以進行客觀與主觀驗光。\n\n**keratometer｜角膜曲率儀**\n測前角膜中央約 3 mm 的曲率與角膜散光。"
+          ],
+          "flash": [
+            {
+              "front": "neutral／working distance",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "phoropter／keratometer",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "mire／K reading",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「neutral／working distance」，並說出一個判斷依據。",
+              "back": "**neutral｜中和**\n檢影 endpoint，反射不再有明顯方向性移動。\n\n**working distance｜工作距離**\n檢影時驗者到受檢眼的距離，需扣除或用 working lens 補償。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms-15-1",
+      "title": "中英文核心名詞 15",
+      "goals": [
+        "解釋topography／RAPD",
+        "解釋Adie's tonic pupil／Horner syndrome",
+        "解釋depth perception／monocular cues"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 15",
+          "body": "這課從「中英文核心名詞 15」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "topography／RAPD",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**topography｜角膜地圖**\n以熱圖呈現角膜表面曲率與形態。\n\n**RAPD｜相對傳入性瞳孔缺損**\nswinging flashlight test 中病眼被照時雙眼反而相對放大。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「topography／RAPD」，並說出一個判斷依據。",
+          "answer": "**topography｜角膜地圖**\n以熱圖呈現角膜表面曲率與形態。\n\n**RAPD｜相對傳入性瞳孔缺損**\nswinging flashlight test 中病眼被照時雙眼反而相對放大。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**topography｜角膜地圖**\n以熱圖呈現角膜表面曲率與形態。\n\n**RAPD｜相對傳入性瞳孔缺損**\nswinging flashlight test 中病眼被照時雙眼反而相對放大。"
+        },
+        {
+          "type": "card",
+          "title": "Adie's tonic pupil／Horner syndrome",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**Adie's tonic pupil｜Adie 強直性瞳孔**\n副交感節後病變，光反應差、近反應慢且保留，對低濃度 pilocarpine 超敏感。\n\n**Horner syndrome｜霍納氏症候群**\n交感路徑受損，典型 ptosis、miosis、anhidrosis 與 dilation lag。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「Adie's tonic pupil／Horner syndrome」，並說出一個判斷依據。",
+          "answer": "**Adie's tonic pupil｜Adie 強直性瞳孔**\n副交感節後病變，光反應差、近反應慢且保留，對低濃度 pilocarpine 超敏感。\n\n**Horner syndrome｜霍納氏症候群**\n交感路徑受損，典型 ptosis、miosis、anhidrosis 與 dilation lag。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**Adie's tonic pupil｜Adie 強直性瞳孔**\n副交感節後病變，光反應差、近反應慢且保留，對低濃度 pilocarpine 超敏感。\n\n**Horner syndrome｜霍納氏症候群**\n交感路徑受損，典型 ptosis、miosis、anhidrosis 與 dilation lag。"
+        },
+        {
+          "type": "card",
+          "title": "depth perception／monocular cues",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**depth perception｜深度知覺**\n感覺物體前後與距離的能力，包含單眼線索與雙眼立體視。\n\n**monocular cues｜單眼深度線索**\n只用一眼也能利用的後天深度判斷經驗。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「depth perception／monocular cues」，並說出一個判斷依據。",
+          "answer": "**depth perception｜深度知覺**\n感覺物體前後與距離的能力，包含單眼線索與雙眼立體視。\n\n**monocular cues｜單眼深度線索**\n只用一眼也能利用的後天深度判斷經驗。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**depth perception｜深度知覺**\n感覺物體前後與距離的能力，包含單眼線索與雙眼立體視。\n\n**monocular cues｜單眼深度線索**\n只用一眼也能利用的後天深度判斷經驗。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：depth perception／monocular cues",
+          "problem": "用自己的話說明「depth perception／monocular cues」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：depth perception／monocular cues",
+            "**depth perception｜深度知覺**\n感覺物體前後與距離的能力，包含單眼線索與雙眼立體視。\n\n**monocular cues｜單眼深度線索**\n只用一眼也能利用的後天深度判斷經驗。",
+            "把判斷依據連回題目：**depth perception｜深度知覺**\n感覺物體前後與距離的能力，包含單眼線索與雙眼立體視。\n\n**monocular cues｜單眼深度線索**\n只用一眼也能利用的後天深度判斷經驗。"
+          ],
+          "answer": "**depth perception｜深度知覺**\n感覺物體前後與距離的能力，包含單眼線索與雙眼立體視。\n\n**monocular cues｜單眼深度線索**\n只用一眼也能利用的後天深度判斷經驗。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 15",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「Adie's tonic pupil／Horner syndrome」，並說出一個判斷依據。",
+              "answer": "**Adie's tonic pupil｜Adie 強直性瞳孔**\n副交感節後病變，光反應差、近反應慢且保留，對低濃度 pilocarpine 超敏感。\n\n**Horner syndrome｜霍納氏症候群**\n交感路徑受損，典型 ptosis、miosis、anhidrosis 與 dilation lag。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**Adie's tonic pupil｜Adie 強直性瞳孔**\n副交感節後病變，光反應差、近反應慢且保留，對低濃度 pilocarpine 超敏感。\n\n**Horner syndrome｜霍納氏症候群**\n交感路徑受損，典型 ptosis、miosis、anhidrosis 與 dilation lag。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「depth perception／monocular cues」，並說出一個判斷依據。",
+              "answer": "**depth perception｜深度知覺**\n感覺物體前後與距離的能力，包含單眼線索與雙眼立體視。\n\n**monocular cues｜單眼深度線索**\n只用一眼也能利用的後天深度判斷經驗。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**depth perception｜深度知覺**\n感覺物體前後與距離的能力，包含單眼線索與雙眼立體視。\n\n**monocular cues｜單眼深度線索**\n只用一眼也能利用的後天深度判斷經驗。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "topography／RAPD：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "Adie's tonic pupil／Horner syndrome：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**topography｜角膜地圖**\n以熱圖呈現角膜表面曲率與形態。\n\n**RAPD｜相對傳入性瞳孔缺損**\nswinging flashlight test 中病眼被照時雙眼反而相對放大。",
+            "**Adie's tonic pupil｜Adie 強直性瞳孔**\n副交感節後病變，光反應差、近反應慢且保留，對低濃度 pilocarpine 超敏感。\n\n**Horner syndrome｜霍納氏症候群**\n交感路徑受損，典型 ptosis、miosis、anhidrosis 與 dilation lag。"
+          ],
+          "flash": [
+            {
+              "front": "topography／RAPD",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "Adie's tonic pupil／Horner syndrome",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "depth perception／monocular cues",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「topography／RAPD」，並說出一個判斷依據。",
+              "back": "**topography｜角膜地圖**\n以熱圖呈現角膜表面曲率與形態。\n\n**RAPD｜相對傳入性瞳孔缺損**\nswinging flashlight test 中病眼被照時雙眼反而相對放大。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms-16-1",
+      "title": "中英文核心名詞 16",
+      "goals": [
+        "解釋stereopsis／retinal disparity",
+        "解釋fusion／diplopia",
+        "解釋stereoacuity／seconds of arc"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 16",
+          "body": "這課從「中英文核心名詞 16」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "stereopsis／retinal disparity",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**stereopsis｜立體視**\n大腦融合左右眼略有差異的影像後產生的細膩深度感。\n\n**retinal disparity｜視網膜視差**\n同一物體在左右眼視網膜上成像位置的差異，是立體視的重要來源。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「stereopsis／retinal disparity」，並說出一個判斷依據。",
+          "answer": "**stereopsis｜立體視**\n大腦融合左右眼略有差異的影像後產生的細膩深度感。\n\n**retinal disparity｜視網膜視差**\n同一物體在左右眼視網膜上成像位置的差異，是立體視的重要來源。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**stereopsis｜立體視**\n大腦融合左右眼略有差異的影像後產生的細膩深度感。\n\n**retinal disparity｜視網膜視差**\n同一物體在左右眼視網膜上成像位置的差異，是立體視的重要來源。"
+        },
+        {
+          "type": "card",
+          "title": "fusion／diplopia",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**fusion｜融像**\n大腦將左右眼影像整合成單一知覺的過程。\n\n**diplopia｜複視**\n左右眼影像無法成功融像，因而看成兩個。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「fusion／diplopia」，並說出一個判斷依據。",
+          "answer": "**fusion｜融像**\n大腦將左右眼影像整合成單一知覺的過程。\n\n**diplopia｜複視**\n左右眼影像無法成功融像，因而看成兩個。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**fusion｜融像**\n大腦將左右眼影像整合成單一知覺的過程。\n\n**diplopia｜複視**\n左右眼影像無法成功融像，因而看成兩個。"
+        },
+        {
+          "type": "card",
+          "title": "stereoacuity／seconds of arc",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**stereoacuity｜立體視力**\n能偵測到的最小深度視差，通常以秒角表示，數值越小越好。\n\n**seconds of arc｜秒角**\n極小的角度單位，用於記錄立體視力。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「stereoacuity／seconds of arc」，並說出一個判斷依據。",
+          "answer": "**stereoacuity｜立體視力**\n能偵測到的最小深度視差，通常以秒角表示，數值越小越好。\n\n**seconds of arc｜秒角**\n極小的角度單位，用於記錄立體視力。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**stereoacuity｜立體視力**\n能偵測到的最小深度視差，通常以秒角表示，數值越小越好。\n\n**seconds of arc｜秒角**\n極小的角度單位，用於記錄立體視力。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：stereoacuity／seconds of arc",
+          "problem": "用自己的話說明「stereoacuity／seconds of arc」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：stereoacuity／seconds of arc",
+            "**stereoacuity｜立體視力**\n能偵測到的最小深度視差，通常以秒角表示，數值越小越好。\n\n**seconds of arc｜秒角**\n極小的角度單位，用於記錄立體視力。",
+            "把判斷依據連回題目：**stereoacuity｜立體視力**\n能偵測到的最小深度視差，通常以秒角表示，數值越小越好。\n\n**seconds of arc｜秒角**\n極小的角度單位，用於記錄立體視力。"
+          ],
+          "answer": "**stereoacuity｜立體視力**\n能偵測到的最小深度視差，通常以秒角表示，數值越小越好。\n\n**seconds of arc｜秒角**\n極小的角度單位，用於記錄立體視力。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 16",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「fusion／diplopia」，並說出一個判斷依據。",
+              "answer": "**fusion｜融像**\n大腦將左右眼影像整合成單一知覺的過程。\n\n**diplopia｜複視**\n左右眼影像無法成功融像，因而看成兩個。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**fusion｜融像**\n大腦將左右眼影像整合成單一知覺的過程。\n\n**diplopia｜複視**\n左右眼影像無法成功融像，因而看成兩個。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「stereoacuity／seconds of arc」，並說出一個判斷依據。",
+              "answer": "**stereoacuity｜立體視力**\n能偵測到的最小深度視差，通常以秒角表示，數值越小越好。\n\n**seconds of arc｜秒角**\n極小的角度單位，用於記錄立體視力。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**stereoacuity｜立體視力**\n能偵測到的最小深度視差，通常以秒角表示，數值越小越好。\n\n**seconds of arc｜秒角**\n極小的角度單位，用於記錄立體視力。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "stereopsis／retinal disparity：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "fusion／diplopia：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**stereopsis｜立體視**\n大腦融合左右眼略有差異的影像後產生的細膩深度感。\n\n**retinal disparity｜視網膜視差**\n同一物體在左右眼視網膜上成像位置的差異，是立體視的重要來源。",
+            "**fusion｜融像**\n大腦將左右眼影像整合成單一知覺的過程。\n\n**diplopia｜複視**\n左右眼影像無法成功融像，因而看成兩個。"
+          ],
+          "flash": [
+            {
+              "front": "stereopsis／retinal disparity",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "fusion／diplopia",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "stereoacuity／seconds of arc",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「stereopsis／retinal disparity」，並說出一個判斷依據。",
+              "back": "**stereopsis｜立體視**\n大腦融合左右眼略有差異的影像後產生的細膩深度感。\n\n**retinal disparity｜視網膜視差**\n同一物體在左右眼視網膜上成像位置的差異，是立體視的重要來源。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms-17-1",
+      "title": "中英文核心名詞 17",
+      "goals": [
+        "解釋relative size／relative height",
+        "解釋relative motion／perspective",
+        "解釋occlusion／texture gradient"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 17",
+          "body": "這課從「中英文核心名詞 17」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "relative size／relative height",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**relative size｜相對大小**\n把看起來較小的同類物體判斷為較遠的單眼線索。\n\n**relative height｜相對高度**\n平面中位置較高的物體通常被判斷為較遠。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「relative size／relative height」，並說出一個判斷依據。",
+          "answer": "**relative size｜相對大小**\n把看起來較小的同類物體判斷為較遠的單眼線索。\n\n**relative height｜相對高度**\n平面中位置較高的物體通常被判斷為較遠。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**relative size｜相對大小**\n把看起來較小的同類物體判斷為較遠的單眼線索。\n\n**relative height｜相對高度**\n平面中位置較高的物體通常被判斷為較遠。"
+        },
+        {
+          "type": "card",
+          "title": "relative motion／perspective",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**relative motion｜相對動態**\n利用觀察者移動時近遠物體的相對移動差判斷深度。\n\n**perspective｜透視**\n利用平行線往遠方收斂等幾何關係判斷深度。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「relative motion／perspective」，並說出一個判斷依據。",
+          "answer": "**relative motion｜相對動態**\n利用觀察者移動時近遠物體的相對移動差判斷深度。\n\n**perspective｜透視**\n利用平行線往遠方收斂等幾何關係判斷深度。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**relative motion｜相對動態**\n利用觀察者移動時近遠物體的相對移動差判斷深度。\n\n**perspective｜透視**\n利用平行線往遠方收斂等幾何關係判斷深度。"
+        },
+        {
+          "type": "card",
+          "title": "occlusion／texture gradient",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**occlusion｜遮擋**\n遮住其他物體者被判斷為在前方。\n\n**texture gradient｜紋理梯度**\n近處細節清楚、遠處紋理密集模糊的單眼深度線索。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「occlusion／texture gradient」，並說出一個判斷依據。",
+          "answer": "**occlusion｜遮擋**\n遮住其他物體者被判斷為在前方。\n\n**texture gradient｜紋理梯度**\n近處細節清楚、遠處紋理密集模糊的單眼深度線索。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**occlusion｜遮擋**\n遮住其他物體者被判斷為在前方。\n\n**texture gradient｜紋理梯度**\n近處細節清楚、遠處紋理密集模糊的單眼深度線索。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：occlusion／texture gradient",
+          "problem": "用自己的話說明「occlusion／texture gradient」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：occlusion／texture gradient",
+            "**occlusion｜遮擋**\n遮住其他物體者被判斷為在前方。\n\n**texture gradient｜紋理梯度**\n近處細節清楚、遠處紋理密集模糊的單眼深度線索。",
+            "把判斷依據連回題目：**occlusion｜遮擋**\n遮住其他物體者被判斷為在前方。\n\n**texture gradient｜紋理梯度**\n近處細節清楚、遠處紋理密集模糊的單眼深度線索。"
+          ],
+          "answer": "**occlusion｜遮擋**\n遮住其他物體者被判斷為在前方。\n\n**texture gradient｜紋理梯度**\n近處細節清楚、遠處紋理密集模糊的單眼深度線索。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 17",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「relative motion／perspective」，並說出一個判斷依據。",
+              "answer": "**relative motion｜相對動態**\n利用觀察者移動時近遠物體的相對移動差判斷深度。\n\n**perspective｜透視**\n利用平行線往遠方收斂等幾何關係判斷深度。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**relative motion｜相對動態**\n利用觀察者移動時近遠物體的相對移動差判斷深度。\n\n**perspective｜透視**\n利用平行線往遠方收斂等幾何關係判斷深度。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「occlusion／texture gradient」，並說出一個判斷依據。",
+              "answer": "**occlusion｜遮擋**\n遮住其他物體者被判斷為在前方。\n\n**texture gradient｜紋理梯度**\n近處細節清楚、遠處紋理密集模糊的單眼深度線索。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**occlusion｜遮擋**\n遮住其他物體者被判斷為在前方。\n\n**texture gradient｜紋理梯度**\n近處細節清楚、遠處紋理密集模糊的單眼深度線索。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "relative size／relative height：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "relative motion／perspective：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**relative size｜相對大小**\n把看起來較小的同類物體判斷為較遠的單眼線索。\n\n**relative height｜相對高度**\n平面中位置較高的物體通常被判斷為較遠。",
+            "**relative motion｜相對動態**\n利用觀察者移動時近遠物體的相對移動差判斷深度。\n\n**perspective｜透視**\n利用平行線往遠方收斂等幾何關係判斷深度。"
+          ],
+          "flash": [
+            {
+              "front": "relative size／relative height",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "relative motion／perspective",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "occlusion／texture gradient",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「relative size／relative height」，並說出一個判斷依據。",
+              "back": "**relative size｜相對大小**\n把看起來較小的同類物體判斷為較遠的單眼線索。\n\n**relative height｜相對高度**\n平面中位置較高的物體通常被判斷為較遠。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terms-18-1",
+      "title": "中英文核心名詞 18",
+      "goals": [
+        "解釋shading／clarity",
+        "解釋horopter／Panum's fusional area",
+        "解釋zero disparity／crossed disparity"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "中英文核心名詞 18",
+          "body": "這課從「中英文核心名詞 18」開始。先理解定義與作用，接著用檢核、範例與實戰確認是否能說明判斷理由。"
+        },
+        {
+          "type": "card",
+          "title": "shading／clarity",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**shading｜陰影線索**\n依亮暗與光源方向推測表面凸凹。\n\n**clarity｜清晰度線索**\n較清楚物體通常被判斷為較近。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「shading／clarity」，並說出一個判斷依據。",
+          "answer": "**shading｜陰影線索**\n依亮暗與光源方向推測表面凸凹。\n\n**clarity｜清晰度線索**\n較清楚物體通常被判斷為較近。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**shading｜陰影線索**\n依亮暗與光源方向推測表面凸凹。\n\n**clarity｜清晰度線索**\n較清楚物體通常被判斷為較近。"
+        },
+        {
+          "type": "card",
+          "title": "horopter／Panum's fusional area",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**horopter｜雙眼單視界**\n注視時落在兩眼對應視網膜點、看起來與注視點同深度的位置集合。\n\n**Panum's fusional area｜潘納姆融像區**\nHoropter 前後仍可維持融合與單視的容許範圍。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「horopter／Panum's fusional area」，並說出一個判斷依據。",
+          "answer": "**horopter｜雙眼單視界**\n注視時落在兩眼對應視網膜點、看起來與注視點同深度的位置集合。\n\n**Panum's fusional area｜潘納姆融像區**\nHoropter 前後仍可維持融合與單視的容許範圍。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**horopter｜雙眼單視界**\n注視時落在兩眼對應視網膜點、看起來與注視點同深度的位置集合。\n\n**Panum's fusional area｜潘納姆融像區**\nHoropter 前後仍可維持融合與單視的容許範圍。"
+        },
+        {
+          "type": "card",
+          "title": "zero disparity／crossed disparity",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**zero disparity｜零視差**\n物體位於 horopter，左右眼影像落在對應位置。\n\n**crossed disparity｜交叉性視差**\n物體在注視平面前方時的視差，融合後感覺較近。",
+          "keys": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「zero disparity／crossed disparity」，並說出一個判斷依據。",
+          "answer": "**zero disparity｜零視差**\n物體位於 horopter，左右眼影像落在對應位置。\n\n**crossed disparity｜交叉性視差**\n物體在注視平面前方時的視差，融合後感覺較近。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "**zero disparity｜零視差**\n物體位於 horopter，左右眼影像落在對應位置。\n\n**crossed disparity｜交叉性視差**\n物體在注視平面前方時的視差，融合後感覺較近。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：zero disparity／crossed disparity",
+          "problem": "用自己的話說明「zero disparity／crossed disparity」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：zero disparity／crossed disparity",
+            "**zero disparity｜零視差**\n物體位於 horopter，左右眼影像落在對應位置。\n\n**crossed disparity｜交叉性視差**\n物體在注視平面前方時的視差，融合後感覺較近。",
+            "把判斷依據連回題目：**zero disparity｜零視差**\n物體位於 horopter，左右眼影像落在對應位置。\n\n**crossed disparity｜交叉性視差**\n物體在注視平面前方時的視差，融合後感覺較近。"
+          ],
+          "answer": "**zero disparity｜零視差**\n物體位於 horopter，左右眼影像落在對應位置。\n\n**crossed disparity｜交叉性視差**\n物體在注視平面前方時的視差，融合後感覺較近。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：中英文核心名詞 18",
+          "qids": [],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「horopter／Panum's fusional area」，並說出一個判斷依據。",
+              "answer": "**horopter｜雙眼單視界**\n注視時落在兩眼對應視網膜點、看起來與注視點同深度的位置集合。\n\n**Panum's fusional area｜潘納姆融像區**\nHoropter 前後仍可維持融合與單視的容許範圍。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**horopter｜雙眼單視界**\n注視時落在兩眼對應視網膜點、看起來與注視點同深度的位置集合。\n\n**Panum's fusional area｜潘納姆融像區**\nHoropter 前後仍可維持融合與單視的容許範圍。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「zero disparity／crossed disparity」，並說出一個判斷依據。",
+              "answer": "**zero disparity｜零視差**\n物體位於 horopter，左右眼影像落在對應位置。\n\n**crossed disparity｜交叉性視差**\n物體在注視平面前方時的視差，融合後感覺較近。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "**zero disparity｜零視差**\n物體位於 horopter，左右眼影像落在對應位置。\n\n**crossed disparity｜交叉性視差**\n物體在注視平面前方時的視差，融合後感覺較近。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把中英文名詞和功能連在一起，避免只會背拼字。",
+            "shading／clarity：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "horopter／Panum's fusional area：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**shading｜陰影線索**\n依亮暗與光源方向推測表面凸凹。\n\n**clarity｜清晰度線索**\n較清楚物體通常被判斷為較近。",
+            "**horopter｜雙眼單視界**\n注視時落在兩眼對應視網膜點、看起來與注視點同深度的位置集合。\n\n**Panum's fusional area｜潘納姆融像區**\nHoropter 前後仍可維持融合與單視的容許範圍。"
+          ],
+          "flash": [
+            {
+              "front": "shading／clarity",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "horopter／Panum's fusional area",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "zero disparity／crossed disparity",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+            },
+            {
+              "front": "用自己的話說明「shading／clarity」，並說出一個判斷依據。",
+              "back": "**shading｜陰影線索**\n依亮暗與光源方向推測表面凸凹。\n\n**clarity｜清晰度線索**\n較清楚物體通常被判斷為較近。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

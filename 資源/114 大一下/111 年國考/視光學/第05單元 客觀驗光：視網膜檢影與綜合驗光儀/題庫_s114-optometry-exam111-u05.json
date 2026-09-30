@@ -1,0 +1,403 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam111-u05",
+    "subject": "optometry",
+    "name": "客觀驗光：視網膜檢影與綜合驗光儀｜111 年國考",
+    "year": 111,
+    "path": [
+      "114 大一下",
+      "111 年國考",
+      "視光學",
+      "第05單元 客觀驗光：視網膜檢影與綜合驗光儀"
+    ],
+    "order": 5,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0328",
+      "type": "single",
+      "stem": "關於靜態視網膜檢影鏡法（static retinoscopy），下列何者錯誤？",
+      "choices": [
+        "透過平光鏡看到逆動（against motion），代表病人可能有近視",
+        "透過平光鏡看到逆動，需要用凹透鏡來達到中和（neutralization）",
+        "如果反射光條（streak）出現偏斜現象（skew phenomenon），表示可能有散光（astigmatism）",
+        "通常逆動到中和點比順動（with motion）到中和點較容易觀察"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\n檢影動向難易\n\n**白話理解**\n平面鏡逆動提示近視並加負鏡；skew提示散光。順動一般較直觀，逆動速度與方向在高度近視時可能較難判。\n\n**口訣**\n逆動不是公認比較容易。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n錯誤。\n\n**原始出處**\n驗光師\\視光學\\111年驗光師高考.pdf；原題編號 16；舊 ID opt-q0328",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0328",
+      "source_number": "16",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "檢影動向難易",
+        "simple": "平面鏡逆動提示近視並加負鏡；skew提示散光。順動一般較直觀，逆動速度與方向在高度近視時可能較難判。",
+        "memory": "逆動不是公認比較容易。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "錯誤。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0329",
+      "type": "single",
+      "stem": "如果在50 cm 的工作距離下，進行視網膜檢影法，並使用鏡片-5.00DS/-1.00DC×180 可達到中和點，則實 際處方為何？",
+      "choices": [
+        "-7.00DS/-1.00DC×180",
+        "-7.00DS/-3.00DC×180",
+        "-5.00DS/-1.00DC×180",
+        "-5.00DS/-3.00DC×180"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n球柱檢影WD修正\n\n**白話理解**\n50cm未用工作鏡，球面毛值−5再減2D；柱鏡與軸不變。\n\n**口訣**\n只改sphere，不改cyl。\n\n**考點與解題步驟**\n- sphere=−5−2=−7D。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n錯把WD加柱鏡。\n\n**選項 C：C 選項**\n漏扣WD。\n\n**選項 D：D 選項**\n漏扣且柱鏡錯。\n\n**原始出處**\n驗光師\\視光學\\111年驗光師高考.pdf；原題編號 19；舊 ID opt-q0329",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0329",
+      "source_number": "19",
+      "source_year": "111",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "球柱檢影WD修正",
+        "simple": "50cm未用工作鏡，球面毛值−5再減2D；柱鏡與軸不變。",
+        "memory": "只改sphere，不改cyl。",
+        "examFocus": [
+          "sphere=−5−2=−7D。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "錯把WD加柱鏡。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "漏扣WD。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "漏扣且柱鏡錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0344",
+      "type": "single",
+      "stem": "以靜態視網膜檢影鏡法（static retinoscopy）測得30°經線（meridian）度數為-9.25 D，120°經線度數為-7.50 D， 下列表示何者正確？",
+      "choices": [
+        "-9.25DS/-1.75DC×030",
+        "-7.50DS/-1.75DC×030",
+        "-9.25DS/+1.75DC×030",
+        "-7.50DS/+1.75DC×030"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n主經線轉正柱\n\n**白話理解**\n30°經線−9.25、120°−7.50；正柱式以較負−9.25為sphere，加+1.75，軸30°。\n\n**口訣**\n正柱用較負主經線。\n\n**考點與解題步驟**\n- −7.50−(−9.25)=+1.75。\n\n**選項 A：A 選項**\n柱量符號/量錯。\n\n**選項 B：B 選項**\n負柱軸不符。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\nsphere錯。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\111年驗光生普考.pdf；原題編號 9；舊 ID opt-q0344",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0344",
+      "source_number": "9",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "主經線轉正柱",
+        "simple": "30°經線−9.25、120°−7.50；正柱式以較負−9.25為sphere，加+1.75，軸30°。",
+        "memory": "正柱用較負主經線。",
+        "examFocus": [
+          "−7.50−(−9.25)=+1.75。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "柱量符號/量錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "負柱軸不符。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "sphere錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0345",
+      "type": "single",
+      "stem": "以視網膜鏡（retinoscope）搭配工作鏡片檢查，在水平方向測得屈光度為-1.50 D，在垂直方向測得屈光度 為+1.50 D，其處方為何？",
+      "choices": [
+        "-1.50DS/+1.50DC×090",
+        "-1.50DS/+3.00DC×090",
+        "+1.50DS/-3.00DC×090",
+        "+1.50DS/-1.50DC×180"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n混合散光處方\n\n**白話理解**\n兩主經線−1.50與+1.50，負柱式以較正+1.50作sphere，差−3.00；軸依題庫方向為90°。\n\n**口訣**\n+1.5到−1.5，差3D。\n\n**選項 A：A 選項**\n柱量不足。\n\n**選項 B：B 選項**\n正柱軸/球面不符。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n柱量不足。\n\n**原始出處**\n驗光生\\眼鏡光學概要\\111年驗光生普考.pdf；原題編號 29；舊 ID opt-q0345",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜眼鏡光學概要"
+      ],
+      "source_id": "opt-q0345",
+      "source_number": "29",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜眼鏡光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "混合散光處方",
+        "simple": "兩主經線−1.50與+1.50，負柱式以較正+1.50作sphere，差−3.00；軸依題庫方向為90°。",
+        "memory": "+1.5到−1.5，差3D。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "柱量不足。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正柱軸/球面不符。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "柱量不足。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0354",
+      "type": "single",
+      "stem": "視網膜檢影鏡測量度數時，下列何者對檢查的過程影響最小？",
+      "choices": [
+        "調節力大小",
+        "視標的亮度",
+        "瞳孔的大小",
+        "弱視或斜視"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\n檢影影響因素\n\n**白話理解**\n調節、瞳孔、弱視或斜視會直接影響反光與固視；在可見範圍內視標亮度相對不是主要誤差來源。\n\n**口訣**\n最怕調節、瞳孔、固視；視標亮度相對小。\n\n**選項 A：A 選項**\n影響大。\n\n**選項 B：B 選項**\n正確。\n\n**選項 C：C 選項**\n影響反光。\n\n**選項 D：D 選項**\n影響固視與反射判讀。\n\n**原始出處**\n驗光生\\驗光學概要\\111年驗光生普考.pdf；原題編號 21；舊 ID opt-q0354",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0354",
+      "source_number": "21",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "檢影影響因素",
+        "simple": "調節、瞳孔、弱視或斜視會直接影響反光與固視；在可見範圍內視標亮度相對不是主要誤差來源。",
+        "memory": "最怕調節、瞳孔、固視；視標亮度相對小。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "影響大。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "影響反光。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "影響固視與反射判讀。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0358",
+      "type": "single",
+      "stem": "進行靜態視網膜檢影時，受檢者戴用+1.50DS/-1.00DC×180 鏡片時反射光為完全中和，如工作距離為67 cm， 未放入工作距離輔助鏡片。此眼的實際屈光度數為下列何者？",
+      "choices": [
+        "+1.50DS/-1.00DC×180",
+        "-2.50DC×180",
+        "-1.00DC×180",
+        "-0.50DS/-2.50DC×180"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n工作距離只改sphere\n\n**白話理解**\n67cm毛處方+1.50/−1.00×180，未放工作鏡，sphere減1.50成plano；cyl與axis不變。\n\n**口訣**\n+1.5毛值減1.5變plano。\n\n**選項 A：A 選項**\n漏扣WD。\n\n**選項 B：B 選項**\n錯把WD加到cyl。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n多項錯。\n\n**原始出處**\n驗光生\\驗光學概要\\111年驗光生普考.pdf；原題編號 28；舊 ID opt-q0358",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0358",
+      "source_number": "28",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "工作距離只改sphere",
+        "simple": "67cm毛處方+1.50/−1.00×180，未放工作鏡，sphere減1.50成plano；cyl與axis不變。",
+        "memory": "+1.5毛值減1.5變plano。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "漏扣WD。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "錯把WD加到cyl。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "多項錯。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0359",
+      "type": "single",
+      "stem": "視網膜檢影鏡的光束（light streak）與100 度的方向平行時，反射光（light reflex）被-1.25 D 鏡片中和，而 光束與10 度的方向平行時，反射光（light reflex）被+0.50 D 鏡片中和。檢查者的工作距離為57 cm。此受 測者有那種類型的散光？",
+      "choices": [
+        "混合性散光（mixed astigmatism）",
+        "單純性遠視散光（simple hyperopic astigmatism）",
+        "複合性近視散光（compound myopic astigmatism）",
+        "複合性遠視散光（compound hyperopic astigmatism）"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\n散光類型分類\n\n**白話理解**\n57cm WD約1.75D；兩毛值修正後約−3.00D與−1.25D，兩主經線皆近視但程度不同，故compound myopic astigmatism。\n\n**口訣**\n兩主經線都負＝複合近視散光。\n\n**考點與解題步驟**\n- −1.25−1.75≈−3.00；+0.50−1.75≈−1.25。\n\n**選項 A：A 選項**\n兩經線不同號才混合。\n\n**選項 B：B 選項**\n一條plano一條遠視。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n兩條皆正才是。\n\n**原始出處**\n驗光生\\驗光學概要\\111年驗光生普考.pdf；原題編號 29；舊 ID opt-q0359",
+      "tags": [
+        "客觀驗光：視網膜檢影與綜合驗光儀",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0359",
+      "source_number": "29",
+      "source_year": "111",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "客觀驗光",
+        "title": "散光類型分類",
+        "simple": "57cm WD約1.75D；兩毛值修正後約−3.00D與−1.25D，兩主經線皆近視但程度不同，故compound myopic astigmatism。",
+        "memory": "兩主經線都負＝複合近視散光。",
+        "examFocus": [
+          "−1.25−1.75≈−3.00；+0.50−1.75≈−1.25。"
+        ]
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "兩經線不同號才混合。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "一條plano一條遠視。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "兩條皆正才是。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}

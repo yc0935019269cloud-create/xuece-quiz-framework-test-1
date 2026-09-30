@@ -1,0 +1,892 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-physio-special-senses-p2",
+  "subject": "physio",
+  "unit": "第14單元 特殊感覺系統",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "生理學",
+    "第14單元 特殊感覺系統"
+  ],
+  "title": "特殊感覺系統（2）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://lustrous-malasada-6d28a9.netlify.app/",
+  "level": 2,
+  "minutes": 90,
+  "order": 14,
+  "source": "https://lustrous-malasada-6d28a9.netlify.app/",
+  "tags": [
+    "特殊感覺系統"
+  ],
+  "lessons": [
+    {
+      "id": "ss-pathway-2",
+      "title": "第 4 站：視覺（三）視網膜迴路與視覺路徑（2）",
+      "goals": [
+        "解釋Primary vs Secondary 視覺皮質：客觀 vs 主觀",
+        "解釋幾個視覺生理現象（視力/視野/盲點/明暗適應）"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 4 站：視覺（三）視網膜迴路與視覺路徑",
+          "body": "視網膜分層與側抑制；視覺路徑鼻側交叉、顳側不交叉，不同位置受損造成不同視野缺損；primary 與 secondary cortex 對應客觀/主觀。\n\n- 視網膜功能分層與 cone 一對一/rod 多對一、lateral inhibition。\n- 視覺路徑：鼻側交叉、顳側不交叉，與病灶判讀。\n- primary（客觀）vs secondary（主觀）視覺皮質。\n- 幾個視覺生理現象（視力/視野/盲點/明暗適應）。"
+        },
+        {
+          "type": "card",
+          "title": "Primary vs Secondary 視覺皮質：客觀 vs 主觀",
+          "body": "**連到前一觀念**\n看到之後，大腦怎麼把它變成『你以為看到的』？\n\n**觀念**\n感覺訊號先到 primary visual cortex（形成客觀感覺＝忠實呈現看到什麼），再到 secondary / association visual cortex（形成主觀感覺＝加上過去經驗、記憶、情緒整合，會與 somatosensory 等其他皮質整合）。所有感覺最後都是主觀的。\n\n**為什麼**\n客觀：視網膜忠實把影像送到 primary cortex（你看到什麼說什麼）。主觀：海馬迴 hippocampus 等記憶區把經驗送到 secondary cortex 整合，可能反轉判讀（同一張臉因情境/記憶被判成不同性別）。視網膜成像雖倒，但只要訊號投射到相應皮質區判讀，最後感覺就是正的。\n\n**考試角度**\n- primary visual cortex → 客觀感覺（先到這）\n- secondary/association → 主觀感覺（整合記憶/情緒）\n- 成像雖倒，靠 cortex 對位投射 → 感覺是正的\n\n**英文考句**\n- The primary visual cortex forms the objective percept; the secondary/association cortex integrates memory and experience to form the subjective percept.",
+          "keys": [
+            "primary visual cortex → 客觀感覺（先到這）",
+            "secondary/association → 主觀感覺（整合記憶/情緒）",
+            "成像雖倒，靠 cortex 對位投射 → 感覺是正的"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Where is subjective visual perception integrated with past experience, memory, and emotion?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "primary 形成客觀感覺；secondary/association 整合記憶經驗形成主觀感覺。\n\n正確選項：Secondary or association visual cortex。\n感覺訊號先到 primary visual cortex（形成客觀感覺＝忠實呈現看到什麼），再到 secondary / association visual cortex（形成主觀感覺＝加上過去經驗、記憶、情緒整合，會與 somatosensory 等其他皮質整合）。所有感覺最後都是主觀的。\n\n中文對照：question：加上過去經驗、記憶與情緒整合的主觀視覺感覺，主要在哪裡形成？\nchoices：- secondary / association visual cortex\n- primary visual cortex\n- retina\n- optic nerve",
+          "choices": [
+            "Secondary or association visual cortex",
+            "Primary visual cortex",
+            "Retina",
+            "Optic nerve"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "幾個視覺生理現象（視力/視野/盲點/明暗適應）",
+          "body": "**連到前一觀念**\n把實驗常見的視覺現象收齊。\n\n**觀念**\n視力 visual acuity 本質是 two-point discrimination（能分辨兩點的最短距離）。視野 visual field：白色(rod)範圍最大 > 藍 > 紅綠(cone)。盲點 blind spot＝optic nerve 離開眼球處、無感光細胞。明適應 light adaptation 與暗適應 dark adaptation 機制不同。\n\n**為什麼**\n視野：rod 分布廣 → 黑白視野最大；cone 集中中央 → 彩色視野較小。明適應：暗中累積的大量 rhodopsin 在進亮處時大量裂解（先一片亮，再由 cone 接手看清）。暗適應：進暗處需重新累積 rhodopsin 才能感光（較慢）。盲點可用來判斷視野圖是左眼或右眼。\n\n**考試角度**\n- 視力＝two-point discrimination\n- 視野大小：白(rod) > 藍 > 紅綠(cone)\n- 盲點＝optic nerve output、無感光細胞\n- 明適應(rhodopsin 大量裂解) vs 暗適應(重新累積 rhodopsin)\n\n**英文考句**\n- The blind spot corresponds to the optic disc (optic nerve head), which has no photoreceptors.\n- Dark adaptation requires rebuilding rhodopsin and is slower than light adaptation.",
+          "keys": [
+            "視力＝two-point discrimination",
+            "視野大小：白(rod) > 藍 > 紅綠(cone)",
+            "盲點＝optic nerve output、無感光細胞",
+            "明適應(rhodopsin 大量裂解) vs 暗適應(重新累積 rhodopsin)"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Why is no image detected at the blind spot?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "盲點是 optic nerve output 的位置，沒有 photoreceptor。\n\n正確選項：It is where the optic nerve exits and contains no photoreceptors。\n視力 visual acuity 本質是 two-point discrimination（能分辨兩點的最短距離）。視野 visual field：白色(rod)範圍最大 > 藍 > 紅綠(cone)。盲點 blind spot＝optic nerve 離開眼球處、無感光細胞。明適應 light adaptation 與暗適應 dark adaptation 機制不同。\n\n中文對照：question：盲點 blind spot 之所以看不到，是因為該處？\nchoices：- 是視神經離開處、沒有感光細胞\n- 色素層太厚\n- 晶狀體擋住\n- 充滿 cone",
+          "choices": [
+            "It is where the optic nerve exits and contains no photoreceptors",
+            "The pigment layer is too thick",
+            "The lens blocks the light",
+            "It is filled entirely with cones"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：幾個視覺生理現象（視力/視野/盲點/明暗適應）",
+          "problem": "Why is no image detected at the blind spot?\n\nA. It is where the optic nerve exits and contains no photoreceptors\nB. The pigment layer is too thick\nC. The lens blocks the light\nD. It is filled entirely with cones",
+          "steps": [
+            "先確認題目問的主題：幾個視覺生理現象（視力/視野/盲點/明暗適應）",
+            "視力 visual acuity 本質是 two-point discrimination（能分辨兩點的最短距離）。視野 visual field：白色(rod)範圍最大 > 藍 > 紅綠(cone)。盲點 blind spot＝optic nerve 離開眼球處、無感光細胞。明適應 light adaptation 與暗適應 dark adaptation 機制不同。",
+            "把判斷依據連回題目：盲點是 optic nerve output 的位置，沒有 photoreceptor。\n\n正確選項：It is where the optic nerve exits and contains no photoreceptors。\n視力 visual acuity 本質是 two-point discrimination（能分辨兩點的最短距離）。視野 visual field：白色(rod)範圍最大 > 藍 > 紅綠(cone)。盲點 blind spot＝optic nerve 離開眼球處、無感光細胞。明適應 light adaptation 與暗適應 dark adaptation 機制不同。\n\n中文對照：question：盲點 blind spot 之所以看不到，是因為該處？\nchoices：- 是視神經離開處、沒有感光細胞\n- 色素層太厚\n- 晶狀體擋住\n- 充滿 cone"
+          ],
+          "answer": "It is where the optic nerve exits and contains no photoreceptors"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 4 站：視覺（三）視網膜迴路與視覺路徑",
+          "qids": [
+            "s114-physio-course114-u14-phys-14-04",
+            "s114-physio-course114-u14-phys-14-05"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Where is subjective visual perception integrated with past experience, memory, and emotion?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "primary 形成客觀感覺；secondary/association 整合記憶經驗形成主觀感覺。\n\n正確選項：Secondary or association visual cortex。\n感覺訊號先到 primary visual cortex（形成客觀感覺＝忠實呈現看到什麼），再到 secondary / association visual cortex（形成主觀感覺＝加上過去經驗、記憶、情緒整合，會與 somatosensory 等其他皮質整合）。所有感覺最後都是主觀的。\n\n中文對照：question：加上過去經驗、記憶與情緒整合的主觀視覺感覺，主要在哪裡形成？\nchoices：- secondary / association visual cortex\n- primary visual cortex\n- retina\n- optic nerve",
+              "choices": [
+                "Secondary or association visual cortex",
+                "Primary visual cortex",
+                "Retina",
+                "Optic nerve"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Why is no image detected at the blind spot?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "盲點是 optic nerve output 的位置，沒有 photoreceptor。\n\n正確選項：It is where the optic nerve exits and contains no photoreceptors。\n視力 visual acuity 本質是 two-point discrimination（能分辨兩點的最短距離）。視野 visual field：白色(rod)範圍最大 > 藍 > 紅綠(cone)。盲點 blind spot＝optic nerve 離開眼球處、無感光細胞。明適應 light adaptation 與暗適應 dark adaptation 機制不同。\n\n中文對照：question：盲點 blind spot 之所以看不到，是因為該處？\nchoices：- 是視神經離開處、沒有感光細胞\n- 色素層太厚\n- 晶狀體擋住\n- 充滿 cone",
+              "choices": [
+                "It is where the optic nerve exits and contains no photoreceptors",
+                "The pigment layer is too thick",
+                "The lens blocks the light",
+                "It is filled entirely with cones"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "primary visual cortex → 客觀感覺（先到這）",
+            "secondary/association → 主觀感覺（整合記憶/情緒）",
+            "視力＝two-point discrimination",
+            "視野大小：白(rod) > 藍 > 紅綠(cone)",
+            "視網膜：pigment→photoreceptor→bipolar→ganglion(＋horizontal/amacrine 橫向調控)；cone 一對一(精細)、rod 多對一(放大)、lateral inhibition 增對比 → 路徑：鼻側交叉(optic chiasm)、顳側不交叉；optic nerve 病灶→該眼全盲、chiasm→兩眼顳側缺損、tract→對側偏盲 → primary cortex 客觀、secondary 主觀(整合記憶)。"
+          ],
+          "flash": [
+            {
+              "front": "Primary vs Secondary 視覺皮質：客觀 vs 主觀",
+              "back": "感覺訊號先到 primary visual cortex（形成客觀感覺＝忠實呈現看到什麼），再到 secondary / association visual cortex（形成主觀感覺＝加上過去經驗、記憶、情緒整合，會與 somatosensory 等其他皮質整合）。所有感覺最後都是主觀的。"
+            },
+            {
+              "front": "幾個視覺生理現象（視力/視野/盲點/明暗適應）",
+              "back": "視力 visual acuity 本質是 two-point discrimination（能分辨兩點的最短距離）。視野 visual field：白色(rod)範圍最大 > 藍 > 紅綠(cone)。盲點 blind spot＝optic nerve 離開眼球處、無感光細胞。明適應 light adaptation 與暗適應 dark adaptation 機制不同。"
+            },
+            {
+              "front": "Where is subjective visual perception integrated with past experience, memory, and emotion?",
+              "back": "primary 形成客觀感覺；secondary/association 整合記憶經驗形成主觀感覺。\n\n正確選項：Secondary or association visual cortex。\n感覺訊號先到 primary visual cortex（形成客觀感覺＝忠實呈現看到什麼），再到 secondary / association visual cortex（形成主觀感覺＝加上過去經驗、記憶、情緒整合，會與 somatosensory 等其他皮質整合）。所有感覺最後都是主觀的。\n\n中文對照：question：加上過去經驗、記憶與情緒整合的主觀視覺感覺，主要在哪裡形成？\nchoices：- secondary / association visual cortex\n- primary visual cortex\n- retina\n- optic nerve"
+            },
+            {
+              "front": "Why is no image detected at the blind spot?",
+              "back": "盲點是 optic nerve output 的位置，沒有 photoreceptor。\n\n正確選項：It is where the optic nerve exits and contains no photoreceptors。\n視力 visual acuity 本質是 two-point discrimination（能分辨兩點的最短距離）。視野 visual field：白色(rod)範圍最大 > 藍 > 紅綠(cone)。盲點 blind spot＝optic nerve 離開眼球處、無感光細胞。明適應 light adaptation 與暗適應 dark adaptation 機制不同。\n\n中文對照：question：盲點 blind spot 之所以看不到，是因為該處？\nchoices：- 是視神經離開處、沒有感光細胞\n- 色素層太厚\n- 晶狀體擋住\n- 充滿 cone"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ss-hearing-1",
+      "title": "第 5 站：聽覺與平衡（1）",
+      "goals": [
+        "解釋外/中/內耳與三小聽骨（阻抗匹配）",
+        "解釋耳蝸三腔與『外鈉內鉀』",
+        "解釋★行波理論：高頻在底、低頻在頂"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 5 站：聽覺與平衡",
+          "body": "中耳三小聽骨做阻抗匹配；耳蝸三腔『外鈉內鉀』；行波理論用位置編頻率；organ of Corti 的 hair cell 靠剪切去極化；平衡靠視覺/前庭/本體三來源。\n\n- 外/中/內耳與三小聽骨、聽覺反射。\n- 耳蝸三腔與『外鈉內鉀』。\n- 行波理論：高頻在底、低頻在頂。\n- hair cell 活化、聲音方位、air vs bone conduction。\n- 平衡：三來源與前庭器官。"
+        },
+        {
+          "type": "card",
+          "title": "外/中/內耳與三小聽骨（阻抗匹配）",
+          "body": "**連到前一觀念**\n聲音怎麼有效率地進到耳蝸？\n\n**觀念**\n聲音傳導路徑：外耳 → 中耳 → 內耳。中耳有三小聽骨 ossicles，做阻抗匹配 impedance matching、放大振幅，讓鼓膜震動更有效率地傳到耳蝸。兩個聽覺反射：attenuation reflex（大聲時拉緊鼓膜保護）、head rotation reflex（轉頭朝向聲源）。\n\n**為什麼**\n空氣與耳蝸液體的阻抗差很大，若直接傳會損失很多能量；三小聽骨把大面積鼓膜的震動集中到小面積卵圓窗、增壓放大，達到阻抗匹配。attenuation reflex：突然巨響時相關肌肉把鼓膜拉緊（像繃緊的鼓不易破），保護聽覺。\n\n**考試角度**\n- 路徑：外耳 → 中耳 → 內耳\n- 中耳三小聽骨：阻抗匹配、放大振幅\n- attenuation reflex（保護）、head rotation reflex\n\n**英文考句**\n- The middle-ear ossicles provide impedance matching and amplify vibration before it reaches the cochlea.\n- The attenuation reflex tightens the eardrum to protect hearing from loud sounds.",
+          "keys": [
+            "路徑：外耳 → 中耳 → 內耳",
+            "中耳三小聽骨：阻抗匹配、放大振幅",
+            "attenuation reflex（保護）、head rotation reflex"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "What is the main physiological function of the three middle-ear ossicles?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "三小聽骨做 impedance matching、放大振幅，讓聲音更有效率傳入耳蝸。\n\n正確選項：Impedance matching and amplification to improve sound transmission。\n聲音傳導路徑：外耳 → 中耳 → 內耳。中耳有三小聽骨 ossicles，做阻抗匹配 impedance matching、放大振幅，讓鼓膜震動更有效率地傳到耳蝸。兩個聽覺反射：attenuation reflex（大聲時拉緊鼓膜保護）、head rotation reflex（轉頭朝向聲源）。\n\n中文對照：question：中耳三小聽骨（ossicles）的主要生理功能是？\nchoices：- 阻抗匹配、放大振幅以提高傳導效率\n- 產生神經衝動\n- 分泌內淋巴\n- 判斷聲音頻率",
+          "choices": [
+            "Impedance matching and amplification to improve sound transmission",
+            "Generation of nerve impulses",
+            "Secretion of endolymph",
+            "Determination of sound frequency"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "耳蝸三腔與『外鈉內鉀』",
+          "body": "**連到前一觀念**\n進到耳蝸，先認得它的結構與離子環境。\n\n**觀念**\n耳蝸 cochlea（蝸牛狀）橫切分三腔：scala vestibuli（前庭階）、scala media（中央階）、scala tympani（鼓室階）。前庭階＋鼓室階是外淋巴 perilymph（高 Na⁺）；中央階是內淋巴 endolymph（高 K⁺）——『外鈉內鉀』。中央階有 basilar membrane，上面是 organ of Corti（柯蒂氏器/螺旋器）。\n\n**為什麼**\n三小聽骨在 oval window（卵圓窗）造成液體震動，傳到 round window（圓窗）。本質是震動中央階的 basilar membrane。內淋巴高 K⁺ 是後面 hair cell『K⁺ 內流』的關鍵。\n\n**考試角度**\n- 三腔：scala vestibuli / scala media / scala tympani\n- 外淋巴(前庭階+鼓室階)高 Na⁺；內淋巴(中央階)高 K⁺\n- 中央階：basilar membrane＋organ of Corti\n\n**英文考句**\n- Perilymph (scala vestibuli + scala tympani) is high in Na⁺; endolymph (scala media) is high in K⁺.\n- The organ of Corti sits on the basilar membrane in the scala media.\n\n**易錯與比較**\n內淋巴(中央階)是高 K⁺、外淋巴是高 Na⁺；別記反（這決定 hair cell 是 K⁺ 內流）。",
+          "keys": [
+            "三腔：scala vestibuli / scala media / scala tympani",
+            "外淋巴(前庭階+鼓室階)高 Na⁺；內淋巴(中央階)高 K⁺",
+            "中央階：basilar membrane＋organ of Corti"
+          ],
+          "tip": "內淋巴(中央階)是高 K⁺、外淋巴是高 Na⁺；別記反（這決定 hair cell 是 K⁺ 內流）。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "What is the characteristic ionic composition of endolymph in the scala media?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "內淋巴高 K⁺、外淋巴高 Na⁺（外鈉內鉀）。\n\n正確選項：High K⁺。\n耳蝸 cochlea（蝸牛狀）橫切分三腔：scala vestibuli（前庭階）、scala media（中央階）、scala tympani（鼓室階）。前庭階＋鼓室階是外淋巴 perilymph（高 Na⁺）；中央階是內淋巴 endolymph（高 K⁺）——『外鈉內鉀』。中央階有 basilar membrane，上面是 organ of Corti（柯蒂氏器/螺旋器）。\n\n中文對照：question：耳蝸中央階(scala media)的內淋巴液離子特徵是？\nchoices：- 高 K⁺（鉀）\n- 高 Na⁺（鈉）\n- 高 Ca²⁺\n- 高 Cl⁻",
+          "choices": [
+            "High K⁺",
+            "High Na⁺",
+            "High Ca²⁺",
+            "High Cl⁻"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "★行波理論：高頻在底、低頻在頂",
+          "body": "**連到前一觀念**\n人怎麼分辨不同頻率的聲音？必考名詞解釋。\n\n**觀念**\n行波理論 traveling wave theory：basilar membrane 被震動時形成行波，不同頻率的最大振幅出現在不同位置——高頻在靠近卵圓窗/三小聽骨的底部(base)，低頻在遠端頂部(apex)。某位置的 organ of Corti 被最大程度活化，就判讀成對應頻率。\n\n**為什麼**\n耳蝸的長度與結構決定能聽到的頻率範圍（結構決定功能）。有些動物耳蝸較長，能聽更低頻。位置編碼頻率＝tonotopy。\n\n**考試角度**\n- traveling wave theory：用位置編頻率\n- 高頻 → base(近卵圓窗)；低頻 → apex(遠端)\n- 耳蝸長度決定可聽頻率範圍\n\n**英文考句**\n- Traveling wave theory: high frequencies peak near the base (oval window) of the basilar membrane and low frequencies peak at the apex.",
+          "keys": [
+            "traveling wave theory：用位置編頻率",
+            "高頻 → base(近卵圓窗)；低頻 → apex(遠端)",
+            "耳蝸長度決定可聽頻率範圍"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "According to traveling-wave theory, where does a high-frequency sound produce maximal displacement of the basilar membrane?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "高頻在 base(近卵圓窗)、低頻在 apex(遠端)。\n\n正確選項：At the base near the oval window。\n行波理論 traveling wave theory：basilar membrane 被震動時形成行波，不同頻率的最大振幅出現在不同位置——高頻在靠近卵圓窗/三小聽骨的底部(base)，低頻在遠端頂部(apex)。某位置的 organ of Corti 被最大程度活化，就判讀成對應頻率。\n\n中文對照：question：依行波理論，高頻聲音在 basilar membrane 何處造成最大振幅？\nchoices：- 靠近卵圓窗的底部(base)\n- 遠端頂部(apex)\n- 中央階中段固定點\n- 圓窗",
+          "choices": [
+            "At the base near the oval window",
+            "At the distal apex",
+            "At a fixed point in the middle of the scala media",
+            "At the round window"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：★行波理論：高頻在底、低頻在頂",
+          "problem": "According to traveling-wave theory, where does a high-frequency sound produce maximal displacement of the basilar membrane?\n\nA. At the base near the oval window\nB. At the distal apex\nC. At a fixed point in the middle of the scala media\nD. At the round window",
+          "steps": [
+            "先確認題目問的主題：★行波理論：高頻在底、低頻在頂",
+            "行波理論 traveling wave theory：basilar membrane 被震動時形成行波，不同頻率的最大振幅出現在不同位置——高頻在靠近卵圓窗/三小聽骨的底部(base)，低頻在遠端頂部(apex)。某位置的 organ of Corti 被最大程度活化，就判讀成對應頻率。",
+            "把判斷依據連回題目：高頻在 base(近卵圓窗)、低頻在 apex(遠端)。\n\n正確選項：At the base near the oval window。\n行波理論 traveling wave theory：basilar membrane 被震動時形成行波，不同頻率的最大振幅出現在不同位置——高頻在靠近卵圓窗/三小聽骨的底部(base)，低頻在遠端頂部(apex)。某位置的 organ of Corti 被最大程度活化，就判讀成對應頻率。\n\n中文對照：question：依行波理論，高頻聲音在 basilar membrane 何處造成最大振幅？\nchoices：- 靠近卵圓窗的底部(base)\n- 遠端頂部(apex)\n- 中央階中段固定點\n- 圓窗"
+          ],
+          "answer": "At the base near the oval window"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 5 站：聽覺與平衡",
+          "qids": [
+            "s114-physio-course114-u14-phys-14-01",
+            "s114-physio-course114-u14-phys-14-02"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "What is the characteristic ionic composition of endolymph in the scala media?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "內淋巴高 K⁺、外淋巴高 Na⁺（外鈉內鉀）。\n\n正確選項：High K⁺。\n耳蝸 cochlea（蝸牛狀）橫切分三腔：scala vestibuli（前庭階）、scala media（中央階）、scala tympani（鼓室階）。前庭階＋鼓室階是外淋巴 perilymph（高 Na⁺）；中央階是內淋巴 endolymph（高 K⁺）——『外鈉內鉀』。中央階有 basilar membrane，上面是 organ of Corti（柯蒂氏器/螺旋器）。\n\n中文對照：question：耳蝸中央階(scala media)的內淋巴液離子特徵是？\nchoices：- 高 K⁺（鉀）\n- 高 Na⁺（鈉）\n- 高 Ca²⁺\n- 高 Cl⁻",
+              "choices": [
+                "High K⁺",
+                "High Na⁺",
+                "High Ca²⁺",
+                "High Cl⁻"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "According to traveling-wave theory, where does a high-frequency sound produce maximal displacement of the basilar membrane?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "高頻在 base(近卵圓窗)、低頻在 apex(遠端)。\n\n正確選項：At the base near the oval window。\n行波理論 traveling wave theory：basilar membrane 被震動時形成行波，不同頻率的最大振幅出現在不同位置——高頻在靠近卵圓窗/三小聽骨的底部(base)，低頻在遠端頂部(apex)。某位置的 organ of Corti 被最大程度活化，就判讀成對應頻率。\n\n中文對照：question：依行波理論，高頻聲音在 basilar membrane 何處造成最大振幅？\nchoices：- 靠近卵圓窗的底部(base)\n- 遠端頂部(apex)\n- 中央階中段固定點\n- 圓窗",
+              "choices": [
+                "At the base near the oval window",
+                "At the distal apex",
+                "At a fixed point in the middle of the scala media",
+                "At the round window"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "路徑：外耳 → 中耳 → 內耳",
+            "中耳三小聽骨：阻抗匹配、放大振幅",
+            "三腔：scala vestibuli / scala media / scala tympani",
+            "外淋巴(前庭階+鼓室階)高 Na⁺；內淋巴(中央階)高 K⁺",
+            "traveling wave theory：用位置編頻率",
+            "高頻 → base(近卵圓窗)；低頻 → apex(遠端)",
+            "中耳三小聽骨阻抗匹配/放大 → 耳蝸三腔(前庭階+鼓室階=外淋巴高Na、中央階=內淋巴高K) → 行波理論(高頻近卵圓窗/低頻遠端、耳蝸長度決定可聽範圍) → organ of Corti 的 hair cell 浸內淋巴(高K→K內流，例外)、剪切去極化；方位靠時間差+強度差；air vs bone 區分中耳/內耳問題 → 平衡：視覺(最主要)+前庭(半規管角加速度/球囊橢圓囊線加速度)+本體感覺。"
+          ],
+          "flash": [
+            {
+              "front": "外/中/內耳與三小聽骨（阻抗匹配）",
+              "back": "聲音傳導路徑：外耳 → 中耳 → 內耳。中耳有三小聽骨 ossicles，做阻抗匹配 impedance matching、放大振幅，讓鼓膜震動更有效率地傳到耳蝸。兩個聽覺反射：attenuation reflex（大聲時拉緊鼓膜保護）、head rotation reflex（轉頭朝向聲源）。"
+            },
+            {
+              "front": "耳蝸三腔與『外鈉內鉀』",
+              "back": "耳蝸 cochlea（蝸牛狀）橫切分三腔：scala vestibuli（前庭階）、scala media（中央階）、scala tympani（鼓室階）。前庭階＋鼓室階是外淋巴 perilymph（高 Na⁺）；中央階是內淋巴 endolymph（高 K⁺）——『外鈉內鉀』。中央階有 basilar membrane，上面是 organ of Corti（柯蒂氏器/螺旋器）。"
+            },
+            {
+              "front": "★行波理論：高頻在底、低頻在頂",
+              "back": "行波理論 traveling wave theory：basilar membrane 被震動時形成行波，不同頻率的最大振幅出現在不同位置——高頻在靠近卵圓窗/三小聽骨的底部(base)，低頻在遠端頂部(apex)。某位置的 organ of Corti 被最大程度活化，就判讀成對應頻率。"
+            },
+            {
+              "front": "What is the main physiological function of the three middle-ear ossicles?",
+              "back": "三小聽骨做 impedance matching、放大振幅，讓聲音更有效率傳入耳蝸。\n\n正確選項：Impedance matching and amplification to improve sound transmission。\n聲音傳導路徑：外耳 → 中耳 → 內耳。中耳有三小聽骨 ossicles，做阻抗匹配 impedance matching、放大振幅，讓鼓膜震動更有效率地傳到耳蝸。兩個聽覺反射：attenuation reflex（大聲時拉緊鼓膜保護）、head rotation reflex（轉頭朝向聲源）。\n\n中文對照：question：中耳三小聽骨（ossicles）的主要生理功能是？\nchoices：- 阻抗匹配、放大振幅以提高傳導效率\n- 產生神經衝動\n- 分泌內淋巴\n- 判斷聲音頻率"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ss-hearing-2",
+      "title": "第 5 站：聽覺與平衡（2）",
+      "goals": [
+        "解釋Hair cell 活化、聲音方位、air vs bone conduction",
+        "解釋Hair cell 活化、聲音方位、air vs bone conduction",
+        "解釋平衡：視覺、前庭、本體三來源"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 5 站：聽覺與平衡",
+          "body": "中耳三小聽骨做阻抗匹配；耳蝸三腔『外鈉內鉀』；行波理論用位置編頻率；organ of Corti 的 hair cell 靠剪切去極化；平衡靠視覺/前庭/本體三來源。\n\n- 外/中/內耳與三小聽骨、聽覺反射。\n- 耳蝸三腔與『外鈉內鉀』。\n- 行波理論：高頻在底、低頻在頂。\n- hair cell 活化、聲音方位、air vs bone conduction。\n- 平衡：三來源與前庭器官。"
+        },
+        {
+          "type": "card",
+          "title": "Hair cell 活化、聲音方位、air vs bone conduction（1/2）",
+          "body": "**連到前一觀念**\n震動怎麼變成神經訊號？又怎麼判斷方位與病灶？\n**觀念**\nOrgan of Corti 上的 hair cell（內/外毛細胞）纖毛接 tectorial membrane（蓋膜）。\n液體震動造成 shearing movement（剪切），纖毛被拉扯：hair cell 浸在內淋巴（高 K⁺），機械門控通道開時 K⁺ 內流 → 去極化（這是『K⁺ 內流去極化』的例外）。\n聲音方位靠兩耳的時間差＋強度差。\n臨床用 air vs bone conduction 區分：內耳/毛細胞問題（sensorineural）兩者都降；\n中耳問題（conductive）只有氣傳導降、骨傳導正常。\n\n**為什麼**\n纖毛最長的是 kinocilium、其餘 stereocilia；\n往一方向拉→興奮(聽神經放電增加)、往另一方向→抑制(減少)，靠 firing rate 編碼。\n骨傳導 bone conduction 可不經三小聽骨、直接震動耳蝸，平常被氣傳導蓋過。\n\n**考試角度**\n- hair cell 浸內淋巴(高 K⁺)→ 機械門控 → K⁺ 內流去極化（例外）\n- 剪切 shearing 使纖毛拉扯；\n方位＝時間差＋強度差\n- sensorineural（內耳/毛細胞）：air+bone 都降；\nconductive（中耳）：air 降、bone 正常",
+          "keys": [
+            "hair cell 浸內淋巴(高 K⁺)→ 機械門控 → K⁺ 內流去極化（例外）",
+            "剪切 shearing 使纖毛拉扯；方位＝時間差＋強度差",
+            "sensorineural（內耳/毛細胞）：air+bone 都降；conductive（中耳）：air 降、bone 正常"
+          ],
+          "tip": "hair cell 是『K⁺ 內流』造成去極化（因浸內淋巴高 K⁺），是一般『Na⁺ 內流』的例外。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「Hair cell 活化、聲音方位、air vs bone conduction」，並說出一個判斷依據。",
+          "answer": "Organ of Corti 上的 hair cell（內/外毛細胞）纖毛接 tectorial membrane（蓋膜）。液體震動造成 shearing movement（剪切），纖毛被拉扯：hair cell 浸在內淋巴（高 K⁺），機械門控通道開時 K⁺ 內流 → 去極化（這是『K⁺ 內流去極化』的例外）。聲音方位靠兩耳的時間差＋強度差。臨床用 air vs bone conduction 區分：內耳/毛細胞問題（sensorineural）兩者都降；中耳問題（conductive）只有氣傳導降、骨傳導正常。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "Organ of Corti 上的 hair cell（內/外毛細胞）纖毛接 tectorial membrane（蓋膜）。液體震動造成 shearing movement（剪切），纖毛被拉扯：hair cell 浸在內淋巴（高 K⁺），機械門控通道開時 K⁺ 內流 → 去極化（這是『K⁺ 內流去極化』的例外）。聲音方位靠兩耳的時間差＋強度差。臨床用 air vs bone conduction 區分：內耳/毛細胞問題（sensorineural）兩者都降；中耳問題（conductive）只有氣傳導降、骨傳導正常。"
+        },
+        {
+          "type": "card",
+          "title": "Hair cell 活化、聲音方位、air vs bone conduction（2/2）",
+          "body": "**英文考句**\n- Hair cells bathe in endolymph (high K⁺); mechanical gating opens channels and K⁺ flows in, depolarizing the cell.\n- Sound localization uses interaural time and intensity differences.\n- Sensorineural loss reduces both air and bone conduction; conductive loss reduces air but spares bone conduction.\n**易錯與比較**\nhair cell 是『K⁺ 內流』造成去極化（因浸內淋巴高 K⁺），是一般『Na⁺ 內流』的例外。",
+          "keys": [
+            "hair cell 浸內淋巴(高 K⁺)→ 機械門控 → K⁺ 內流去極化（例外）",
+            "剪切 shearing 使纖毛拉扯；方位＝時間差＋強度差",
+            "sensorineural（內耳/毛細胞）：air+bone 都降；conductive（中耳）：air 降、bone 正常"
+          ],
+          "tip": "hair cell 是『K⁺ 內流』造成去極化（因浸內淋巴高 K⁺），是一般『Na⁺ 內流』的例外。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Which ion mainly enters to depolarize a cochlear hair cell, and why?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "hair cell 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化（例外）。\n\n正確選項：K⁺, because the cell is bathed in K⁺-rich endolymph。\nOrgan of Corti 上的 hair cell（內/外毛細胞）纖毛接 tectorial membrane（蓋膜）。液體震動造成 shearing movement（剪切），纖毛被拉扯：hair cell 浸在內淋巴（高 K⁺），機械門控通道開時 K⁺ 內流 → 去極化（這是『K⁺ 內流去極化』的例外）。聲音方位靠兩耳的時間差＋強度差。臨床用 air vs bone conduction 區分：內耳/毛細胞問題（sensorineural）兩者都降；中耳問題（conductive）只有氣傳導降、骨傳導正常。\n\n中文對照：question：耳蝸 hair cell 去極化主要靠哪種離子內流？為什麼？\nchoices：- K⁺；因浸在高 K⁺ 的內淋巴\n- Na⁺；因浸在高 Na⁺\n- Ca²⁺；因高鈣\n- Cl⁻；因高氯",
+          "choices": [
+            "K⁺, because the cell is bathed in K⁺-rich endolymph",
+            "Na⁺, because the cell is bathed in Na⁺-rich fluid",
+            "Ca²⁺, because the surrounding fluid is rich in calcium",
+            "Cl⁻, because the surrounding fluid is rich in chloride"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "平衡：視覺、前庭、本體三來源",
+          "body": "**連到前一觀念**\n平衡其實不只靠耳朵。\n\n**觀念**\n平衡靠三來源：① 視覺（最主要）；② 前庭器官 vestibular（三半規管 semicircular canals 偵測角加速度/頭部位置，壺腹 ampulla 有 hair cell；utricle 橢圓囊與 saccule 球囊偵測線性加速度）；③ 本體感覺 proprioception。前庭 hair cell 機制與聽覺相同（浸內淋巴、K⁺ 內流）。\n\n**為什麼**\n暈車＝感知矛盾：前庭/本體說『在晃』、但視覺被前庭眼反射校正成『看起來沒晃』，中樞判讀衝突 → 暈。人以視覺為主，所以閉眼/睡覺（關掉視覺）可減輕。三半規管近似 XYZ 三軸 → 判斷 3D 空間。\n\n**考試角度**\n- 平衡三來源：視覺(最主要)、前庭、本體感覺\n- 半規管：角加速度/頭部位置；球囊+橢圓囊：線性加速度\n- 前庭 hair cell 機制同聽覺（內淋巴、K⁺ 內流）\n\n**英文考句**\n- Balance relies on vision (dominant), the vestibular apparatus, and proprioception.\n- Semicircular canals detect angular acceleration; the utricle and saccule detect linear acceleration.\n\n**易錯與比較**\n偵測線性加速度的是 utricle/saccule；半規管偵測角加速度/旋轉。",
+          "keys": [
+            "平衡三來源：視覺(最主要)、前庭、本體感覺",
+            "半規管：角加速度/頭部位置；球囊+橢圓囊：線性加速度",
+            "前庭 hair cell 機制同聽覺（內淋巴、K⁺ 內流）"
+          ],
+          "tip": "偵測線性加速度的是 utricle/saccule；半規管偵測角加速度/旋轉。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "What do the semicircular canals primarily detect?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "半規管偵測角加速度/頭部位置；球囊橢圓囊偵測線性加速度。\n\n正確選項：Angular acceleration and head rotation。\n平衡靠三來源：① 視覺（最主要）；② 前庭器官 vestibular（三半規管 semicircular canals 偵測角加速度/頭部位置，壺腹 ampulla 有 hair cell；utricle 橢圓囊與 saccule 球囊偵測線性加速度）；③ 本體感覺 proprioception。前庭 hair cell 機制與聽覺相同（浸內淋巴、K⁺ 內流）。\n\n中文對照：question：三半規管(semicircular canals)主要偵測？\nchoices：- 角加速度/頭部旋轉與位置\n- 線性加速度\n- 聲音頻率\n- 光強度",
+          "choices": [
+            "Angular acceleration and head rotation",
+            "Linear acceleration",
+            "Sound frequency",
+            "Light intensity"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：平衡：視覺、前庭、本體三來源",
+          "problem": "What do the semicircular canals primarily detect?\n\nA. Angular acceleration and head rotation\nB. Linear acceleration\nC. Sound frequency\nD. Light intensity",
+          "steps": [
+            "先確認題目問的主題：平衡：視覺、前庭、本體三來源",
+            "平衡靠三來源：① 視覺（最主要）；② 前庭器官 vestibular（三半規管 semicircular canals 偵測角加速度/頭部位置，壺腹 ampulla 有 hair cell；utricle 橢圓囊與 saccule 球囊偵測線性加速度）；③ 本體感覺 proprioception。前庭 hair cell 機制與聽覺相同（浸內淋巴、K⁺ 內流）。",
+            "把判斷依據連回題目：半規管偵測角加速度/頭部位置；球囊橢圓囊偵測線性加速度。\n\n正確選項：Angular acceleration and head rotation。\n平衡靠三來源：① 視覺（最主要）；② 前庭器官 vestibular（三半規管 semicircular canals 偵測角加速度/頭部位置，壺腹 ampulla 有 hair cell；utricle 橢圓囊與 saccule 球囊偵測線性加速度）；③ 本體感覺 proprioception。前庭 hair cell 機制與聽覺相同（浸內淋巴、K⁺ 內流）。\n\n中文對照：question：三半規管(semicircular canals)主要偵測？\nchoices：- 角加速度/頭部旋轉與位置\n- 線性加速度\n- 聲音頻率\n- 光強度"
+          ],
+          "answer": "Angular acceleration and head rotation"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 5 站：聽覺與平衡",
+          "qids": [
+            "s114-physio-course114-u14-phys-14-04",
+            "s114-physio-course114-u14-phys-14-05"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Which ion mainly enters to depolarize a cochlear hair cell, and why?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "hair cell 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化（例外）。\n\n正確選項：K⁺, because the cell is bathed in K⁺-rich endolymph。\nOrgan of Corti 上的 hair cell（內/外毛細胞）纖毛接 tectorial membrane（蓋膜）。液體震動造成 shearing movement（剪切），纖毛被拉扯：hair cell 浸在內淋巴（高 K⁺），機械門控通道開時 K⁺ 內流 → 去極化（這是『K⁺ 內流去極化』的例外）。聲音方位靠兩耳的時間差＋強度差。臨床用 air vs bone conduction 區分：內耳/毛細胞問題（sensorineural）兩者都降；中耳問題（conductive）只有氣傳導降、骨傳導正常。\n\n中文對照：question：耳蝸 hair cell 去極化主要靠哪種離子內流？為什麼？\nchoices：- K⁺；因浸在高 K⁺ 的內淋巴\n- Na⁺；因浸在高 Na⁺\n- Ca²⁺；因高鈣\n- Cl⁻；因高氯",
+              "choices": [
+                "K⁺, because the cell is bathed in K⁺-rich endolymph",
+                "Na⁺, because the cell is bathed in Na⁺-rich fluid",
+                "Ca²⁺, because the surrounding fluid is rich in calcium",
+                "Cl⁻, because the surrounding fluid is rich in chloride"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "What do the semicircular canals primarily detect?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "半規管偵測角加速度/頭部位置；球囊橢圓囊偵測線性加速度。\n\n正確選項：Angular acceleration and head rotation。\n平衡靠三來源：① 視覺（最主要）；② 前庭器官 vestibular（三半規管 semicircular canals 偵測角加速度/頭部位置，壺腹 ampulla 有 hair cell；utricle 橢圓囊與 saccule 球囊偵測線性加速度）；③ 本體感覺 proprioception。前庭 hair cell 機制與聽覺相同（浸內淋巴、K⁺ 內流）。\n\n中文對照：question：三半規管(semicircular canals)主要偵測？\nchoices：- 角加速度/頭部旋轉與位置\n- 線性加速度\n- 聲音頻率\n- 光強度",
+              "choices": [
+                "Angular acceleration and head rotation",
+                "Linear acceleration",
+                "Sound frequency",
+                "Light intensity"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "hair cell 浸內淋巴(高 K⁺)→ 機械門控 → K⁺ 內流去極化（例外）",
+            "剪切 shearing 使纖毛拉扯；方位＝時間差＋強度差",
+            "平衡三來源：視覺(最主要)、前庭、本體感覺",
+            "半規管：角加速度/頭部位置；球囊+橢圓囊：線性加速度",
+            "中耳三小聽骨阻抗匹配/放大 → 耳蝸三腔(前庭階+鼓室階=外淋巴高Na、中央階=內淋巴高K) → 行波理論(高頻近卵圓窗/低頻遠端、耳蝸長度決定可聽範圍) → organ of Corti 的 hair cell 浸內淋巴(高K→K內流，例外)、剪切去極化；方位靠時間差+強度差；air vs bone 區分中耳/內耳問題 → 平衡：視覺(最主要)+前庭(半規管角加速度/球囊橢圓囊線加速度)+本體感覺。"
+          ],
+          "flash": [
+            {
+              "front": "Hair cell 活化、聲音方位、air vs bone conduction",
+              "back": "Organ of Corti 上的 hair cell（內/外毛細胞）纖毛接 tectorial membrane（蓋膜）。液體震動造成 shearing movement（剪切），纖毛被拉扯：hair cell 浸在內淋巴（高 K⁺），機械門控通道開時 K⁺ 內流 → 去極化（這是『K⁺ 內流去極化』的例外）。聲音方位靠兩耳的時間差＋強度差。臨床用 air vs bone conduction 區分：內耳/毛細胞問題（sensorineural）兩者都降；中耳問題（conductive）只有氣傳導降、骨傳導正常。"
+            },
+            {
+              "front": "Hair cell 活化、聲音方位、air vs bone conduction",
+              "back": "Organ of Corti 上的 hair cell（內/外毛細胞）纖毛接 tectorial membrane（蓋膜）。液體震動造成 shearing movement（剪切），纖毛被拉扯：hair cell 浸在內淋巴（高 K⁺），機械門控通道開時 K⁺ 內流 → 去極化（這是『K⁺ 內流去極化』的例外）。聲音方位靠兩耳的時間差＋強度差。臨床用 air vs bone conduction 區分：內耳/毛細胞問題（sensorineural）兩者都降；中耳問題（conductive）只有氣傳導降、骨傳導正常。"
+            },
+            {
+              "front": "平衡：視覺、前庭、本體三來源",
+              "back": "平衡靠三來源：① 視覺（最主要）；② 前庭器官 vestibular（三半規管 semicircular canals 偵測角加速度/頭部位置，壺腹 ampulla 有 hair cell；utricle 橢圓囊與 saccule 球囊偵測線性加速度）；③ 本體感覺 proprioception。前庭 hair cell 機制與聽覺相同（浸內淋巴、K⁺ 內流）。"
+            },
+            {
+              "front": "用自己的話說明「Hair cell 活化、聲音方位、air vs bone conduction」，並說出一個判斷依據。",
+              "back": "Organ of Corti 上的 hair cell（內/外毛細胞）纖毛接 tectorial membrane（蓋膜）。液體震動造成 shearing movement（剪切），纖毛被拉扯：hair cell 浸在內淋巴（高 K⁺），機械門控通道開時 K⁺ 內流 → 去極化（這是『K⁺ 內流去極化』的例外）。聲音方位靠兩耳的時間差＋強度差。臨床用 air vs bone conduction 區分：內耳/毛細胞問題（sensorineural）兩者都降；中耳問題（conductive）只有氣傳導降、骨傳導正常。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ss-taste-smell-1",
+      "title": "第 6 站：味覺與嗅覺",
+      "goals": [
+        "解釋味覺：五味、對應 chemical 與腦神經",
+        "解釋嗅覺：直連 limbic system 與 flavor"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "第 6 站：味覺與嗅覺",
+          "body": "五味對應不同 chemical（苦最敏感）、由三條腦神經傳；嗅覺可直連邊緣系統，與情緒記憶連結強，並與味覺合成 flavor。\n\n- 五味與對應 chemical、閾值、傳入腦神經。\n- 嗅覺直連 limbic system 與 flavor。"
+        },
+        {
+          "type": "card",
+          "title": "味覺：五味、對應 chemical 與腦神經",
+          "body": "**連到前一觀念**\n先把五味與它們的化學刺激、神經對上。\n\n**觀念**\n五味：sour（酸，H⁺）、sweet（甜）、bitter（苦）、salty（鹹，Na⁺/NaCl）、umami（鮮，glutamate）。受器在 taste bud（味蕾，上有 microvilli、taste pore）。味覺由三條腦神經傳：第 7 顏面神經 facial、第 9 舌咽神經 glossopharyngeal、第 10 迷走神經 vagus。\n\n**為什麼**\n閾值最低（最敏感）的是苦味（微莫耳級），因為苦常代表毒，敏感有保護意義。umami 的 glutamate 也是中樞最重要的興奮性神經傳遞物。\n\n**考試角度**\n- 五味：酸(H⁺)/甜/苦/鹹(Na⁺)/鮮(glutamate)\n- 苦味閾值最低（最敏感）\n- 味覺腦神經：VII 顏面、IX 舌咽、X 迷走\n\n**英文考句**\n- Five tastes: sour (H⁺), sweet, bitter, salty (Na⁺), umami (glutamate).\n- Taste is carried by cranial nerves VII (facial), IX (glossopharyngeal), and X (vagus).",
+          "keys": [
+            "五味：酸(H⁺)/甜/苦/鹹(Na⁺)/鮮(glutamate)",
+            "苦味閾值最低（最敏感）",
+            "味覺腦神經：VII 顏面、IX 舌咽、X 迷走"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Which taste has the lowest threshold and greatest sensitivity?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "苦味閾值最低、最敏感（苦常代表毒，敏感有保護意義）。\n\n正確選項：Bitter。\n五味：sour（酸，H⁺）、sweet（甜）、bitter（苦）、salty（鹹，Na⁺/NaCl）、umami（鮮，glutamate）。受器在 taste bud（味蕾，上有 microvilli、taste pore）。味覺由三條腦神經傳：第 7 顏面神經 facial、第 9 舌咽神經 glossopharyngeal、第 10 迷走神經 vagus。\n\n中文對照：question：下列哪一味覺的閾值最低（最敏感）？\nchoices：- 苦 bitter\n- 甜 sweet\n- 鹹 salty\n- 鮮 umami",
+          "choices": [
+            "Bitter",
+            "Sweet",
+            "Salty",
+            "Umami"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "嗅覺：直連 limbic system 與 flavor",
+          "body": "**連到前一觀念**\n嗅覺有個和其他感覺很不一樣的特點。\n\n**觀念**\n嗅覺受器在 olfactory epithelium（嗅上皮）。嗅覺路徑特別：很多感覺要先經 thalamus 再到 cortex，但嗅覺有路徑可較直接連到 limbic system（邊緣系統），所以與情緒、記憶連結很強。味覺與嗅覺常一起工作，合成整體風味 flavor。\n\n**為什麼**\n聞到某味道突然想起兒時場景，就是嗅覺直連 limbic（情緒/記憶）的例子。感冒鼻塞吃東西沒味道，不是味覺壞了，而是嗅覺參與變少、flavor 下降。\n\n**考試角度**\n- 嗅覺受器：olfactory epithelium\n- 可直連 limbic system（不一定先經 thalamus）→ 情緒/記憶連結強\n- 味＋嗅＝flavor（鼻塞時 flavor 下降）\n\n**英文考句**\n- Olfaction can connect relatively directly to the limbic system, giving it a strong link to emotion and memory.\n- Flavor is a combination of taste and smell.",
+          "keys": [
+            "嗅覺受器：olfactory epithelium",
+            "可直連 limbic system（不一定先經 thalamus）→ 情緒/記憶連結強",
+            "味＋嗅＝flavor（鼻塞時 flavor 下降）"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Why is olfaction strongly linked to emotion and memory?",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "嗅覺有路徑可直連 limbic system，所以與情緒記憶連結強。\n\n正確選項：Its pathway connects relatively directly to the limbic system。\n嗅覺受器在 olfactory epithelium（嗅上皮）。嗅覺路徑特別：很多感覺要先經 thalamus 再到 cortex，但嗅覺有路徑可較直接連到 limbic system（邊緣系統），所以與情緒、記憶連結很強。味覺與嗅覺常一起工作，合成整體風味 flavor。\n\n中文對照：question：嗅覺與情緒、記憶連結特別強，主要因為它的路徑？\nchoices：- 可較直接連到 limbic system（邊緣系統）\n- 完全不進中樞\n- 只連到小腦\n- 只連到脊髓",
+          "choices": [
+            "Its pathway connects relatively directly to the limbic system",
+            "It never enters the CNS",
+            "It connects only to the cerebellum",
+            "It connects only to the spinal cord"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：嗅覺：直連 limbic system 與 flavor",
+          "problem": "Why is olfaction strongly linked to emotion and memory?\n\nA. Its pathway connects relatively directly to the limbic system\nB. It never enters the CNS\nC. It connects only to the cerebellum\nD. It connects only to the spinal cord",
+          "steps": [
+            "先確認題目問的主題：嗅覺：直連 limbic system 與 flavor",
+            "嗅覺受器在 olfactory epithelium（嗅上皮）。嗅覺路徑特別：很多感覺要先經 thalamus 再到 cortex，但嗅覺有路徑可較直接連到 limbic system（邊緣系統），所以與情緒、記憶連結很強。味覺與嗅覺常一起工作，合成整體風味 flavor。",
+            "把判斷依據連回題目：嗅覺有路徑可直連 limbic system，所以與情緒記憶連結強。\n\n正確選項：Its pathway connects relatively directly to the limbic system。\n嗅覺受器在 olfactory epithelium（嗅上皮）。嗅覺路徑特別：很多感覺要先經 thalamus 再到 cortex，但嗅覺有路徑可較直接連到 limbic system（邊緣系統），所以與情緒、記憶連結很強。味覺與嗅覺常一起工作，合成整體風味 flavor。\n\n中文對照：question：嗅覺與情緒、記憶連結特別強，主要因為它的路徑？\nchoices：- 可較直接連到 limbic system（邊緣系統）\n- 完全不進中樞\n- 只連到小腦\n- 只連到脊髓"
+          ],
+          "answer": "Its pathway connects relatively directly to the limbic system"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：第 6 站：味覺與嗅覺",
+          "qids": [
+            "s114-physio-course114-u14-phys-14-01",
+            "s114-physio-course114-u14-phys-14-02"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Which taste has the lowest threshold and greatest sensitivity?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "苦味閾值最低、最敏感（苦常代表毒，敏感有保護意義）。\n\n正確選項：Bitter。\n五味：sour（酸，H⁺）、sweet（甜）、bitter（苦）、salty（鹹，Na⁺/NaCl）、umami（鮮，glutamate）。受器在 taste bud（味蕾，上有 microvilli、taste pore）。味覺由三條腦神經傳：第 7 顏面神經 facial、第 9 舌咽神經 glossopharyngeal、第 10 迷走神經 vagus。\n\n中文對照：question：下列哪一味覺的閾值最低（最敏感）？\nchoices：- 苦 bitter\n- 甜 sweet\n- 鹹 salty\n- 鮮 umami",
+              "choices": [
+                "Bitter",
+                "Sweet",
+                "Salty",
+                "Umami"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Why is olfaction strongly linked to emotion and memory?",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "嗅覺有路徑可直連 limbic system，所以與情緒記憶連結強。\n\n正確選項：Its pathway connects relatively directly to the limbic system。\n嗅覺受器在 olfactory epithelium（嗅上皮）。嗅覺路徑特別：很多感覺要先經 thalamus 再到 cortex，但嗅覺有路徑可較直接連到 limbic system（邊緣系統），所以與情緒、記憶連結很強。味覺與嗅覺常一起工作，合成整體風味 flavor。\n\n中文對照：question：嗅覺與情緒、記憶連結特別強，主要因為它的路徑？\nchoices：- 可較直接連到 limbic system（邊緣系統）\n- 完全不進中樞\n- 只連到小腦\n- 只連到脊髓",
+              "choices": [
+                "Its pathway connects relatively directly to the limbic system",
+                "It never enters the CNS",
+                "It connects only to the cerebellum",
+                "It connects only to the spinal cord"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "五味：酸(H⁺)/甜/苦/鹹(Na⁺)/鮮(glutamate)",
+            "苦味閾值最低（最敏感）",
+            "嗅覺受器：olfactory epithelium",
+            "可直連 limbic system（不一定先經 thalamus）→ 情緒/記憶連結強",
+            "五味：酸(H⁺)/甜/苦/鹹(Na⁺)/鮮(glutamate)，苦閾值最低(最敏感)，由第 7/9/10 對腦神經傳 → 嗅覺受器在 olfactory epithelium、可直連 limbic system(情緒記憶) → 味＋嗅＝flavor。"
+          ],
+          "flash": [
+            {
+              "front": "味覺：五味、對應 chemical 與腦神經",
+              "back": "五味：sour（酸，H⁺）、sweet（甜）、bitter（苦）、salty（鹹，Na⁺/NaCl）、umami（鮮，glutamate）。受器在 taste bud（味蕾，上有 microvilli、taste pore）。味覺由三條腦神經傳：第 7 顏面神經 facial、第 9 舌咽神經 glossopharyngeal、第 10 迷走神經 vagus。"
+            },
+            {
+              "front": "嗅覺：直連 limbic system 與 flavor",
+              "back": "嗅覺受器在 olfactory epithelium（嗅上皮）。嗅覺路徑特別：很多感覺要先經 thalamus 再到 cortex，但嗅覺有路徑可較直接連到 limbic system（邊緣系統），所以與情緒、記憶連結很強。味覺與嗅覺常一起工作，合成整體風味 flavor。"
+            },
+            {
+              "front": "Which taste has the lowest threshold and greatest sensitivity?",
+              "back": "苦味閾值最低、最敏感（苦常代表毒，敏感有保護意義）。\n\n正確選項：Bitter。\n五味：sour（酸，H⁺）、sweet（甜）、bitter（苦）、salty（鹹，Na⁺/NaCl）、umami（鮮，glutamate）。受器在 taste bud（味蕾，上有 microvilli、taste pore）。味覺由三條腦神經傳：第 7 顏面神經 facial、第 9 舌咽神經 glossopharyngeal、第 10 迷走神經 vagus。\n\n中文對照：question：下列哪一味覺的閾值最低（最敏感）？\nchoices：- 苦 bitter\n- 甜 sweet\n- 鹹 salty\n- 鮮 umami"
+            },
+            {
+              "front": "Why is olfaction strongly linked to emotion and memory?",
+              "back": "嗅覺有路徑可直連 limbic system，所以與情緒記憶連結強。\n\n正確選項：Its pathway connects relatively directly to the limbic system。\n嗅覺受器在 olfactory epithelium（嗅上皮）。嗅覺路徑特別：很多感覺要先經 thalamus 再到 cortex，但嗅覺有路徑可較直接連到 limbic system（邊緣系統），所以與情緒、記憶連結很強。味覺與嗅覺常一起工作，合成整體風味 flavor。\n\n中文對照：question：嗅覺與情緒、記憶連結特別強，主要因為它的路徑？\nchoices：- 可較直接連到 limbic system（邊緣系統）\n- 完全不進中樞\n- 只連到小腦\n- 只連到脊髓"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review-extra-1",
+      "title": "串連、公式與易錯整合（1）",
+      "goals": [
+        "解釋必記與易錯",
+        "解釋必記與易錯",
+        "解釋急速重點：Rhodopsin cycle"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "必記與易錯（1/2）",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\nmustKnow：- 感覺骨架：適宜刺激 → 換能 → receptor potential → 過閾值 → action potential → 中樞；\n可見光 ~370–740 nm。\n\n- 折光可調的是晶狀體(看近變厚)；\n看近三反射：晶狀體變厚＋瞳孔縮小＋convergence；\n近點變遠＝老花。\n\n- Rod(rhodopsin/黑白/周邊/多對一/scotopic) vs Cone(3 photopsin/彩色/中央凹/一對一/photopic)。\n\n- ★Dark current：暗→cGMP 高→Na 開→去極化→放 NT；\n光→transducin→PDE→cGMP↓→Na 關→超極化→減 NT（與一般神經相反）。\n\n- 視覺路徑鼻側交叉/顳側不交叉；\noptic nerve 損→該眼全盲、chiasm→兩眼顳側缺損、tract→對側偏盲；\nprimary 客觀/secondary 主觀。\n\n- 中耳三小聽骨阻抗匹配；\n耳蝸外鈉內鉀；\n行波理論高頻 base/低頻 apex；\nhair cell 在內淋巴→K⁺ 內流去極化(例外)。\n\n- 平衡靠視覺(最主要)+前庭(半規管角加速度/球囊橢圓囊線加速度)+本體；\n五味苦最敏感、味覺走 VII/IX/X；\n嗅覺直連 limbic。\n\ntraps：- 感光細胞被光刺激是『超極化、減少 NT』，和一般神經相反。",
+          "keys": [
+            "把本單元的關係串起來，確認易錯条件與方向。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
+          "answer": "mustKnow：- 感覺骨架：適宜刺激 → 換能 → receptor potential → 過閾值 → action potential → 中樞；可見光 ~370–740 nm。\n- 折光可調的是晶狀體(看近變厚)；看近三反射：晶狀體變厚＋瞳孔縮小＋convergence；近點變遠＝老花。\n- Rod(rhodopsin/黑白/周邊/多對一/scotopic) vs Cone(3 photopsin/彩色/中央凹/一對一/photopic)。\n- ★Dark current：暗→cGMP 高→Na 開→去極化→放 NT；光→transducin→PDE→cGMP↓→Na 關→超極化→減 NT（與一般神經相反）。\n- 視覺路徑鼻側交叉/顳側不交叉；optic nerve 損→該眼全盲、chiasm→兩眼顳側缺損、tract→對側偏盲；primary 客觀/secondary 主觀。\n- 中耳三小聽骨阻抗匹配；耳蝸外鈉內鉀；行波理論高頻 base/低頻 apex；hair cell 在內淋巴→K⁺ 內流去極化(例外)。\n- 平衡靠視覺(最主要)+前庭(半規管角加速度/球囊橢圓囊線加速度)+本體；五味苦最敏感、味覺走 VII/IX/X；嗅覺直連 limbic。\ntraps：- 感光細胞被光刺激是『超極化、減少 NT』，和一般神經相反。\n- optic chiasm 受損是『兩眼顳側』視野缺損（成像左右相反）。\n- 耳蝸內淋巴(中央階)高 K⁺、外淋巴高 Na⁺，別記反。\n- hair cell 去極化靠 K⁺ 內流（浸高 K⁺ 內淋巴），是 Na⁺ 內流的例外。\n- 半規管偵測角加速度、球囊/橢圓囊偵測線性加速度。\n- 近點是『看清楚』的最近距離，不是『看得到』。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "mustKnow：- 感覺骨架：適宜刺激 → 換能 → receptor potential → 過閾值 → action potential → 中樞；可見光 ~370–740 nm。\n- 折光可調的是晶狀體(看近變厚)；看近三反射：晶狀體變厚＋瞳孔縮小＋convergence；近點變遠＝老花。\n- Rod(rhodopsin/黑白/周邊/多對一/scotopic) vs Cone(3 photopsin/彩色/中央凹/一對一/photopic)。\n- ★Dark current：暗→cGMP 高→Na 開→去極化→放 NT；光→transducin→PDE→cGMP↓→Na 關→超極化→減 NT（與一般神經相反）。\n- 視覺路徑鼻側交叉/顳側不交叉；optic nerve 損→該眼全盲、chiasm→兩眼顳側缺損、tract→對側偏盲；primary 客觀/secondary 主觀。\n- 中耳三小聽骨阻抗匹配；耳蝸外鈉內鉀；行波理論高頻 base/低頻 apex；hair cell 在內淋巴→K⁺ 內流去極化(例外)。\n- 平衡靠視覺(最主要)+前庭(半規管角加速度/球囊橢圓囊線加速度)+本體；五味苦最敏感、味覺走 VII/IX/X；嗅覺直連 limbic。\ntraps：- 感光細胞被光刺激是『超極化、減少 NT』，和一般神經相反。\n- optic chiasm 受損是『兩眼顳側』視野缺損（成像左右相反）。\n- 耳蝸內淋巴(中央階)高 K⁺、外淋巴高 Na⁺，別記反。\n- hair cell 去極化靠 K⁺ 內流（浸高 K⁺ 內淋巴），是 Na⁺ 內流的例外。\n- 半規管偵測角加速度、球囊/橢圓囊偵測線性加速度。\n- 近點是『看清楚』的最近距離，不是『看得到』。"
+        },
+        {
+          "type": "card",
+          "title": "必記與易錯（2/2）",
+          "body": "- optic chiasm 受損是『兩眼顳側』視野缺損（成像左右相反）。\n\n- 耳蝸內淋巴(中央階)高 K⁺、外淋巴高 Na⁺，別記反。\n\n- hair cell 去極化靠 K⁺ 內流（浸高 K⁺ 內淋巴），是 Na⁺ 內流的例外。\n\n- 半規管偵測角加速度、球囊/橢圓囊偵測線性加速度。\n\n- 近點是『看清楚』的最近距離，不是『看得到』。",
+          "keys": [
+            "把本單元的關係串起來，確認易錯条件與方向。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
+          "answer": "mustKnow：- 感覺骨架：適宜刺激 → 換能 → receptor potential → 過閾值 → action potential → 中樞；可見光 ~370–740 nm。\n- 折光可調的是晶狀體(看近變厚)；看近三反射：晶狀體變厚＋瞳孔縮小＋convergence；近點變遠＝老花。\n- Rod(rhodopsin/黑白/周邊/多對一/scotopic) vs Cone(3 photopsin/彩色/中央凹/一對一/photopic)。\n- ★Dark current：暗→cGMP 高→Na 開→去極化→放 NT；光→transducin→PDE→cGMP↓→Na 關→超極化→減 NT（與一般神經相反）。\n- 視覺路徑鼻側交叉/顳側不交叉；optic nerve 損→該眼全盲、chiasm→兩眼顳側缺損、tract→對側偏盲；primary 客觀/secondary 主觀。\n- 中耳三小聽骨阻抗匹配；耳蝸外鈉內鉀；行波理論高頻 base/低頻 apex；hair cell 在內淋巴→K⁺ 內流去極化(例外)。\n- 平衡靠視覺(最主要)+前庭(半規管角加速度/球囊橢圓囊線加速度)+本體；五味苦最敏感、味覺走 VII/IX/X；嗅覺直連 limbic。\ntraps：- 感光細胞被光刺激是『超極化、減少 NT』，和一般神經相反。\n- optic chiasm 受損是『兩眼顳側』視野缺損（成像左右相反）。\n- 耳蝸內淋巴(中央階)高 K⁺、外淋巴高 Na⁺，別記反。\n- hair cell 去極化靠 K⁺ 內流（浸高 K⁺ 內淋巴），是 Na⁺ 內流的例外。\n- 半規管偵測角加速度、球囊/橢圓囊偵測線性加速度。\n- 近點是『看清楚』的最近距離，不是『看得到』。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "mustKnow：- 感覺骨架：適宜刺激 → 換能 → receptor potential → 過閾值 → action potential → 中樞；可見光 ~370–740 nm。\n- 折光可調的是晶狀體(看近變厚)；看近三反射：晶狀體變厚＋瞳孔縮小＋convergence；近點變遠＝老花。\n- Rod(rhodopsin/黑白/周邊/多對一/scotopic) vs Cone(3 photopsin/彩色/中央凹/一對一/photopic)。\n- ★Dark current：暗→cGMP 高→Na 開→去極化→放 NT；光→transducin→PDE→cGMP↓→Na 關→超極化→減 NT（與一般神經相反）。\n- 視覺路徑鼻側交叉/顳側不交叉；optic nerve 損→該眼全盲、chiasm→兩眼顳側缺損、tract→對側偏盲；primary 客觀/secondary 主觀。\n- 中耳三小聽骨阻抗匹配；耳蝸外鈉內鉀；行波理論高頻 base/低頻 apex；hair cell 在內淋巴→K⁺ 內流去極化(例外)。\n- 平衡靠視覺(最主要)+前庭(半規管角加速度/球囊橢圓囊線加速度)+本體；五味苦最敏感、味覺走 VII/IX/X；嗅覺直連 limbic。\ntraps：- 感光細胞被光刺激是『超極化、減少 NT』，和一般神經相反。\n- optic chiasm 受損是『兩眼顳側』視野缺損（成像左右相反）。\n- 耳蝸內淋巴(中央階)高 K⁺、外淋巴高 Na⁺，別記反。\n- hair cell 去極化靠 K⁺ 內流（浸高 K⁺ 內淋巴），是 Na⁺ 內流的例外。\n- 半規管偵測角加速度、球囊/橢圓囊偵測線性加速度。\n- 近點是『看清楚』的最近距離，不是『看得到』。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：Rhodopsin cycle",
+          "body": "**一句話／白話**\n暗處時感光細胞一直放訊號；光一來會把入口關起來，細胞變得更安靜，訊號反而減少。\n\n**觀念**\nRhodopsin=opsin+11-cis retinal；光→all-trans→transducin→PDE→cGMP↓→Na⁺ channel 關閉→hyperpolarization。\n\n**易錯與比較**\n感光細胞受光是超極化，不是去極化。\n\n**口訣**\n光來＝關門＝更安靜。",
+          "keys": [
+            "暗處時感光細胞一直放訊號；光一來會把入口關起來，細胞變得更安靜，訊號反而減少。"
+          ],
+          "tip": "口訣：光來＝關門＝更安靜。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：Rhodopsin cycle」，並說出一個判斷依據。",
+          "answer": "Rhodopsin=opsin+11-cis retinal；光→all-trans→transducin→PDE→cGMP↓→Na⁺ channel 關閉→hyperpolarization。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "Rhodopsin=opsin+11-cis retinal；光→all-trans→transducin→PDE→cGMP↓→Na⁺ channel 關閉→hyperpolarization。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：急速重點：Rhodopsin cycle",
+          "problem": "用自己的話說明「急速重點：Rhodopsin cycle」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：急速重點：Rhodopsin cycle",
+            "Rhodopsin=opsin+11-cis retinal；光→all-trans→transducin→PDE→cGMP↓→Na⁺ channel 關閉→hyperpolarization。",
+            "把判斷依據連回題目：Rhodopsin=opsin+11-cis retinal；光→all-trans→transducin→PDE→cGMP↓→Na⁺ channel 關閉→hyperpolarization。"
+          ],
+          "answer": "Rhodopsin=opsin+11-cis retinal；光→all-trans→transducin→PDE→cGMP↓→Na⁺ channel 關閉→hyperpolarization。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-physio-course114-u14-phys-14-01",
+            "s114-physio-course114-u14-phys-14-02"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
+              "answer": "mustKnow：- 感覺骨架：適宜刺激 → 換能 → receptor potential → 過閾值 → action potential → 中樞；可見光 ~370–740 nm。\n- 折光可調的是晶狀體(看近變厚)；看近三反射：晶狀體變厚＋瞳孔縮小＋convergence；近點變遠＝老花。\n- Rod(rhodopsin/黑白/周邊/多對一/scotopic) vs Cone(3 photopsin/彩色/中央凹/一對一/photopic)。\n- ★Dark current：暗→cGMP 高→Na 開→去極化→放 NT；光→transducin→PDE→cGMP↓→Na 關→超極化→減 NT（與一般神經相反）。\n- 視覺路徑鼻側交叉/顳側不交叉；optic nerve 損→該眼全盲、chiasm→兩眼顳側缺損、tract→對側偏盲；primary 客觀/secondary 主觀。\n- 中耳三小聽骨阻抗匹配；耳蝸外鈉內鉀；行波理論高頻 base/低頻 apex；hair cell 在內淋巴→K⁺ 內流去極化(例外)。\n- 平衡靠視覺(最主要)+前庭(半規管角加速度/球囊橢圓囊線加速度)+本體；五味苦最敏感、味覺走 VII/IX/X；嗅覺直連 limbic。\ntraps：- 感光細胞被光刺激是『超極化、減少 NT』，和一般神經相反。\n- optic chiasm 受損是『兩眼顳側』視野缺損（成像左右相反）。\n- 耳蝸內淋巴(中央階)高 K⁺、外淋巴高 Na⁺，別記反。\n- hair cell 去極化靠 K⁺ 內流（浸高 K⁺ 內淋巴），是 Na⁺ 內流的例外。\n- 半規管偵測角加速度、球囊/橢圓囊偵測線性加速度。\n- 近點是『看清楚』的最近距離，不是『看得到』。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "mustKnow：- 感覺骨架：適宜刺激 → 換能 → receptor potential → 過閾值 → action potential → 中樞；可見光 ~370–740 nm。\n- 折光可調的是晶狀體(看近變厚)；看近三反射：晶狀體變厚＋瞳孔縮小＋convergence；近點變遠＝老花。\n- Rod(rhodopsin/黑白/周邊/多對一/scotopic) vs Cone(3 photopsin/彩色/中央凹/一對一/photopic)。\n- ★Dark current：暗→cGMP 高→Na 開→去極化→放 NT；光→transducin→PDE→cGMP↓→Na 關→超極化→減 NT（與一般神經相反）。\n- 視覺路徑鼻側交叉/顳側不交叉；optic nerve 損→該眼全盲、chiasm→兩眼顳側缺損、tract→對側偏盲；primary 客觀/secondary 主觀。\n- 中耳三小聽骨阻抗匹配；耳蝸外鈉內鉀；行波理論高頻 base/低頻 apex；hair cell 在內淋巴→K⁺ 內流去極化(例外)。\n- 平衡靠視覺(最主要)+前庭(半規管角加速度/球囊橢圓囊線加速度)+本體；五味苦最敏感、味覺走 VII/IX/X；嗅覺直連 limbic。\ntraps：- 感光細胞被光刺激是『超極化、減少 NT』，和一般神經相反。\n- optic chiasm 受損是『兩眼顳側』視野缺損（成像左右相反）。\n- 耳蝸內淋巴(中央階)高 K⁺、外淋巴高 Na⁺，別記反。\n- hair cell 去極化靠 K⁺ 內流（浸高 K⁺ 內淋巴），是 Na⁺ 內流的例外。\n- 半規管偵測角加速度、球囊/橢圓囊偵測線性加速度。\n- 近點是『看清楚』的最近距離，不是『看得到』。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：Rhodopsin cycle」，並說出一個判斷依據。",
+              "answer": "Rhodopsin=opsin+11-cis retinal；光→all-trans→transducin→PDE→cGMP↓→Na⁺ channel 關閉→hyperpolarization。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "Rhodopsin=opsin+11-cis retinal；光→all-trans→transducin→PDE→cGMP↓→Na⁺ channel 關閉→hyperpolarization。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把本單元的關係串起來，確認易錯条件與方向。",
+            "暗處時感光細胞一直放訊號；光一來會把入口關起來，細胞變得更安靜，訊號反而減少。",
+            "必記與易錯（1/2）：把本單元的關係串起來，確認易錯条件與方向。",
+            "必記與易錯（2/2）：把本單元的關係串起來，確認易錯条件與方向。",
+            "mustKnow：- 感覺骨架：適宜刺激 → 換能 → receptor potential → 過閾值 → action potential → 中樞；可見光 ~370–740 nm。\n- 折光可調的是晶狀體(看近變厚)；看近三反射：晶狀體變厚＋瞳孔縮小＋convergence；近點變遠＝老花。\n- Rod(rhodopsin/黑白/周邊/多對一/scotopic) vs Cone(3 photopsin/彩色/中央凹/一對一/photopic)。\n- ★Dark current：暗→cGMP 高→Na 開→去極化→放 NT；光→transducin→PDE→cGMP↓→Na 關→超極化→減 NT（與一般神經相反）。\n- 視覺路徑鼻側交叉/顳側不交叉；optic nerve 損→該眼全盲、chiasm→兩眼顳側缺損、tract→對側偏盲；primary 客觀/secondary 主觀。\n- 中耳三小聽骨阻抗匹配；耳蝸外鈉內鉀；行波理論高頻 base/低頻 apex；hair cell 在內淋巴→K⁺ 內流去極化(例外)。\n- 平衡靠視覺(最主要)+前庭(半規管角加速度/球囊橢圓囊線加速度)+本體；五味苦最敏感、味覺走 VII/IX/X；嗅覺直連 limbic。\ntraps：- 感光細胞被光刺激是『超極化、減少 NT』，和一般神經相反。\n- optic chiasm 受損是『兩眼顳側』視野缺損（成像左右相反）。\n- 耳蝸內淋巴(中央階)高 K⁺、外淋巴高 Na⁺，別記反。\n- hair cell 去極化靠 K⁺ 內流（浸高 K⁺ 內淋巴），是 Na⁺ 內流的例外。\n- 半規管偵測角加速度、球囊/橢圓囊偵測線性加速度。\n- 近點是『看清楚』的最近距離，不是『看得到』。"
+          ],
+          "flash": [
+            {
+              "front": "必記與易錯",
+              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+            },
+            {
+              "front": "必記與易錯",
+              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+            },
+            {
+              "front": "急速重點：Rhodopsin cycle",
+              "back": "暗處時感光細胞一直放訊號；光一來會把入口關起來，細胞變得更安靜，訊號反而減少。"
+            },
+            {
+              "front": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
+              "back": "mustKnow：- 感覺骨架：適宜刺激 → 換能 → receptor potential → 過閾值 → action potential → 中樞；可見光 ~370–740 nm。\n- 折光可調的是晶狀體(看近變厚)；看近三反射：晶狀體變厚＋瞳孔縮小＋convergence；近點變遠＝老花。\n- Rod(rhodopsin/黑白/周邊/多對一/scotopic) vs Cone(3 photopsin/彩色/中央凹/一對一/photopic)。\n- ★Dark current：暗→cGMP 高→Na 開→去極化→放 NT；光→transducin→PDE→cGMP↓→Na 關→超極化→減 NT（與一般神經相反）。\n- 視覺路徑鼻側交叉/顳側不交叉；optic nerve 損→該眼全盲、chiasm→兩眼顳側缺損、tract→對側偏盲；primary 客觀/secondary 主觀。\n- 中耳三小聽骨阻抗匹配；耳蝸外鈉內鉀；行波理論高頻 base/低頻 apex；hair cell 在內淋巴→K⁺ 內流去極化(例外)。\n- 平衡靠視覺(最主要)+前庭(半規管角加速度/球囊橢圓囊線加速度)+本體；五味苦最敏感、味覺走 VII/IX/X；嗅覺直連 limbic。\ntraps：- 感光細胞被光刺激是『超極化、減少 NT』，和一般神經相反。\n- optic chiasm 受損是『兩眼顳側』視野缺損（成像左右相反）。\n- 耳蝸內淋巴(中央階)高 K⁺、外淋巴高 Na⁺，別記反。\n- hair cell 去極化靠 K⁺ 內流（浸高 K⁺ 內淋巴），是 Na⁺ 內流的例外。\n- 半規管偵測角加速度、球囊/橢圓囊偵測線性加速度。\n- 近點是『看清楚』的最近距離，不是『看得到』。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review-extra-2",
+      "title": "串連、公式與易錯整合（2）",
+      "goals": [
+        "解釋急速重點：Rod vs Cone",
+        "解釋急速重點：Adequate stimulus",
+        "解釋急速重點：Visual pathway 與交叉"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：Rod vs Cone",
+          "body": "**一句話／白話**\n一種細胞很會在暗處抓微光，但看不清顏色；另一種要亮一點，卻能看顏色與細節。\n\n**觀念**\nRod：暗視、靈敏、低解析、無色覺；Cone：明視、高解析、色覺。\n\n**易錯與比較**\nRhodopsin 屬 rod；cone 使用 photopsin。\n\n**口訣**\n暗處求有，亮處求精。",
+          "keys": [
+            "一種細胞很會在暗處抓微光，但看不清顏色；另一種要亮一點，卻能看顏色與細節。"
+          ],
+          "tip": "口訣：暗處求有，亮處求精。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：Rod vs Cone」，並說出一個判斷依據。",
+          "answer": "Rod：暗視、靈敏、低解析、無色覺；Cone：明視、高解析、色覺。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "Rod：暗視、靈敏、低解析、無色覺；Cone：明視、高解析、色覺。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：Adequate stimulus",
+          "body": "**一句話／白話**\n感受器不是只能被一種刺激叫醒，而是對某種刺激最省力、最敏感。\n\n**觀念**\n適宜刺激是以最低能量門檻活化 receptor 的刺激型態。\n\n**易錯與比較**\n不代表 receptor 絕不能被其他刺激活化。\n\n**口訣**\n最容易叫醒它的，就是它的最愛。",
+          "keys": [
+            "感受器不是只能被一種刺激叫醒，而是對某種刺激最省力、最敏感。"
+          ],
+          "tip": "口訣：最容易叫醒它的，就是它的最愛。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：Adequate stimulus」，並說出一個判斷依據。",
+          "answer": "適宜刺激是以最低能量門檻活化 receptor 的刺激型態。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "適宜刺激是以最低能量門檻活化 receptor 的刺激型態。"
+        },
+        {
+          "type": "card",
+          "title": "急速重點：Visual pathway 與交叉",
+          "body": "**一句話／白話**\n兩眼送出的視覺線路中，靠鼻子那半邊會在中間交叉，靠太陽穴那半邊不交叉。\n\n**觀念**\nRetina→optic nerve→chiasm→tract→LGN→radiation→visual cortex；只有 nasal retina 纖維交叉。\n\n**易錯與比較**\n右視野到左半球；左視野到右半球。\n\n**口訣**\n鼻子過橋，太陽穴直走。",
+          "keys": [
+            "兩眼送出的視覺線路中，靠鼻子那半邊會在中間交叉，靠太陽穴那半邊不交叉。"
+          ],
+          "tip": "口訣：鼻子過橋，太陽穴直走。"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「急速重點：Visual pathway 與交叉」，並說出一個判斷依據。",
+          "answer": "Retina→optic nerve→chiasm→tract→LGN→radiation→visual cortex；只有 nasal retina 纖維交叉。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "Retina→optic nerve→chiasm→tract→LGN→radiation→visual cortex；只有 nasal retina 纖維交叉。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：急速重點：Visual pathway 與交叉",
+          "problem": "用自己的話說明「急速重點：Visual pathway 與交叉」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：急速重點：Visual pathway 與交叉",
+            "Retina→optic nerve→chiasm→tract→LGN→radiation→visual cortex；只有 nasal retina 纖維交叉。",
+            "把判斷依據連回題目：Retina→optic nerve→chiasm→tract→LGN→radiation→visual cortex；只有 nasal retina 纖維交叉。"
+          ],
+          "answer": "Retina→optic nerve→chiasm→tract→LGN→radiation→visual cortex；只有 nasal retina 纖維交叉。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-physio-course114-u14-phys-14-04",
+            "s114-physio-course114-u14-phys-14-05"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：Adequate stimulus」，並說出一個判斷依據。",
+              "answer": "適宜刺激是以最低能量門檻活化 receptor 的刺激型態。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "適宜刺激是以最低能量門檻活化 receptor 的刺激型態。"
+            },
+            {
+              "kind": "self",
+              "q": "用自己的話說明「急速重點：Visual pathway 與交叉」，並說出一個判斷依據。",
+              "answer": "Retina→optic nerve→chiasm→tract→LGN→radiation→visual cortex；只有 nasal retina 纖維交叉。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "Retina→optic nerve→chiasm→tract→LGN→radiation→visual cortex；只有 nasal retina 纖維交叉。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "一種細胞很會在暗處抓微光，但看不清顏色；另一種要亮一點，卻能看顏色與細節。",
+            "感受器不是只能被一種刺激叫醒，而是對某種刺激最省力、最敏感。",
+            "兩眼送出的視覺線路中，靠鼻子那半邊會在中間交叉，靠太陽穴那半邊不交叉。",
+            "急速重點：Rod vs Cone：一種細胞很會在暗處抓微光，但看不清顏色；另一種要亮一點，卻能看顏色與細節。",
+            "急速重點：Adequate stimulus：感受器不是只能被一種刺激叫醒，而是對某種刺激最省力、最敏感。"
+          ],
+          "flash": [
+            {
+              "front": "急速重點：Rod vs Cone",
+              "back": "一種細胞很會在暗處抓微光，但看不清顏色；另一種要亮一點，卻能看顏色與細節。"
+            },
+            {
+              "front": "急速重點：Adequate stimulus",
+              "back": "感受器不是只能被一種刺激叫醒，而是對某種刺激最省力、最敏感。"
+            },
+            {
+              "front": "急速重點：Visual pathway 與交叉",
+              "back": "兩眼送出的視覺線路中，靠鼻子那半邊會在中間交叉，靠太陽穴那半邊不交叉。"
+            },
+            {
+              "front": "用自己的話說明「急速重點：Rod vs Cone」，並說出一個判斷依據。",
+              "back": "Rod：暗視、靈敏、低解析、無色覺；Cone：明視、高解析、色覺。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "schema": "xd-bank/1",
+  "set": {
+    "id": "s114-optometry-exam113-u06",
+    "subject": "optometry",
+    "name": "角膜曲率測量：K 值與角膜地圖｜113 年國考",
+    "year": 113,
+    "path": [
+      "114 大一下",
+      "113 年國考",
+      "視光學",
+      "第06單元 角膜曲率測量：K 值與角膜地圖"
+    ],
+    "order": 6,
+    "source": "114 大一下個人學習題庫；保留原始考卷年度與原題編號；視光學期末刷題庫"
+  },
+  "questions": [
+    {
+      "n": "opt-q0409",
+      "type": "single",
+      "stem": "若使用角膜弧度儀測量到受測者之角膜弧度為45.00@180/43.00@090，若以爪哇定律（Javal's Rule）預測 其總屈光散光應為何？",
+      "choices": [
+        "-2.00 DC × 180",
+        "-2.00 DC × 90",
+        "-3.00 DC × 180",
+        "-3.00 DC × 90"
+      ],
+      "answer": "D",
+      "explain": "**觀念**\nJaval rule ATR\n\n**白話理解**\n角膜水平180°較陡2D，為ATR角膜散光；Javal rule放大約1.25倍並加入內部ATR偏移，預測約3D，負柱軸90。\n\n**口訣**\n水平陡→負柱90；Javal後約3D。\n\n**選項 A：A 選項**\n軸錯。\n\n**選項 B：B 選項**\n未套Javal倍率/內部項。\n\n**選項 C：C 選項**\n軸錯。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光師\\視光學\\113年驗光師高考.pdf；原題編號 17；舊 ID opt-q0409",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光師高考｜視光學"
+      ],
+      "source_id": "opt-q0409",
+      "source_number": "17",
+      "source_year": "113",
+      "source_subject": "驗光師高考｜視光學",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "Javal rule ATR",
+        "simple": "角膜水平180°較陡2D，為ATR角膜散光；Javal rule放大約1.25倍並加入內部ATR偏移，預測約3D，負柱軸90。",
+        "memory": "水平陡→負柱90；Javal後約3D。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "軸錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "未套Javal倍率/內部項。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "軸錯。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0416",
+      "type": "single",
+      "stem": "根據Bennett & Henry 教科書，傳統角膜弧度儀（keratometer）可用來測量角膜中央直徑約：",
+      "choices": [
+        "1.0 mm",
+        "2.0 mm",
+        "3.0 mm",
+        "4.0 mm"
+      ],
+      "answer": "C",
+      "explain": "**觀念**\nK儀量測直徑\n\n**白話理解**\n傳統keratometer常規反射量測區約中央3mm。\n\n**口訣**\n中央約3mm。\n\n**選項 A：A 選項**\n過小。\n\n**選項 B：B 選項**\n偏小。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n偏大。\n\n**原始出處**\n驗光生\\隱形眼鏡學概要\\113年驗光生普考.pdf；原題編號 27；舊 ID opt-q0416",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜隱形眼鏡學概要"
+      ],
+      "source_id": "opt-q0416",
+      "source_number": "27",
+      "source_year": "113",
+      "source_subject": "驗光生普考｜隱形眼鏡學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "K儀量測直徑",
+        "simple": "傳統keratometer常規反射量測區約中央3mm。",
+        "memory": "中央約3mm。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "過小。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "偏小。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "偏大。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0418",
+      "type": "single",
+      "stem": "若有一份角膜弧度儀之檢查處方，紀錄為OD：42.50D@180/43.50D@90, MCAROS：41.75D@180/43.75D@090, MCAR。下列敘述何者錯誤？",
+      "choices": [
+        "由此處方可知患者有角膜散光，右眼-1.00DC × 180，左眼-2.00DC × 180",
+        "患者在進行角膜弧度儀量測時標線（Mires）出現扭曲及不規則",
+        "兩眼皆為順散光（with-the-rule astigmatism）",
+        "使用角膜弧度儀測量時也可以順便評估淚膜完整性"
+      ],
+      "answer": "B",
+      "explain": "**觀念**\nMCAR縮寫\n\n**白話理解**\n兩眼垂直K較陡，為WTR；K差分別1D、2D，負柱軸180；K儀也可觀察淚膜。\n\n**口訣**\nMCAR=mires clear and regular。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n錯誤，並未扭曲。\n\n**選項 C：C 選項**\n正確。\n\n**選項 D：D 選項**\n正確。\n\n**原始出處**\n驗光生\\驗光學概要\\113年驗光生普考.pdf；原題編號 21；舊 ID opt-q0418",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0418",
+      "source_number": "21",
+      "source_year": "113",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "MCAR縮寫",
+        "simple": "兩眼垂直K較陡，為WTR；K差分別1D、2D，負柱軸180；K儀也可觀察淚膜。",
+        "memory": "MCAR=mires clear and regular。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "錯誤，並未扭曲。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    },
+    {
+      "n": "opt-q0419",
+      "type": "single",
+      "stem": "以角膜弧度儀測量眼睛，OD：7.80 mm@180 / 7.60 mm@090，則角膜散光屬於何種類型？",
+      "choices": [
+        "順散光（with-the-rule）",
+        "逆散光（against-the-rule）",
+        "斜散光（oblique）",
+        "不規則散光（irregular）"
+      ],
+      "answer": "A",
+      "explain": "**觀念**\n半徑判順散\n\n**白話理解**\n90°半徑7.60小於180°7.80，垂直較陡，屬WTR。\n\n**口訣**\n90半徑小＝順散。\n\n**選項 A：A 選項**\n正確。\n\n**選項 B：B 選項**\n方向反。\n\n**選項 C：C 選項**\n非斜向。\n\n**選項 D：D 選項**\n兩軸規則垂直。\n\n**原始出處**\n驗光生\\驗光學概要\\113年驗光生普考.pdf；原題編號 24；舊 ID opt-q0419",
+      "tags": [
+        "角膜曲率測量：K 值與角膜地圖",
+        "驗光生普考｜驗光學概要"
+      ],
+      "source_id": "opt-q0419",
+      "source_number": "24",
+      "source_year": "113",
+      "source_subject": "驗光生普考｜驗光學概要",
+      "source_detail": {
+        "sectionTitle": "角膜曲率",
+        "title": "半徑判順散",
+        "simple": "90°半徑7.60小於180°7.80，垂直較陡，屬WTR。",
+        "memory": "90半徑小＝順散。",
+        "examFocus": []
+      },
+      "source_optionReviews": {
+        "A": {
+          "title": "A 選項",
+          "rule": "正確。",
+          "memory": "",
+          "examFocus": []
+        },
+        "B": {
+          "title": "B 選項",
+          "rule": "方向反。",
+          "memory": "",
+          "examFocus": []
+        },
+        "C": {
+          "title": "C 選項",
+          "rule": "非斜向。",
+          "memory": "",
+          "examFocus": []
+        },
+        "D": {
+          "title": "D 選項",
+          "rule": "兩軸規則垂直。",
+          "memory": "",
+          "examFocus": []
+        }
+      }
+    }
+  ]
+}
