@@ -1,6 +1,6 @@
 /* 進入點與畫面切換 */
 const App = (() => {
-  const TITLES = { hub: APP_TITLE, map: '冒險地圖', free: '自由遠征', abyss: '深淵遠征', classes: '職業殿堂', bank: '題庫', wrong: '錯題本', pets: '寵物小屋', upg: '永久強化', relics: '遺物圖鑑', bestiary: '怪物圖鑑', ach: '成就與收藏', pomo: '番茄鐘', learn: '學習模式', import: '導入素材', prompts: 'AI 提示詞', char: '統計', settings: '設定與存檔', run: '遠征中' };
+  const TITLES = { peglin: '彈珠刷題', peglinLearn: '彈珠學習', hub: APP_TITLE, map: '冒險地圖', free: '自由遠征', abyss: '深淵遠征', classes: '職業殿堂', bank: '題庫', wrong: '錯題本', pets: '寵物小屋', upg: '永久強化', relics: '遺物圖鑑', bestiary: '怪物圖鑑', ach: '成就與收藏', pomo: '番茄鐘', learn: '學習模式', import: '導入素材', prompts: 'AI 提示詞', char: '統計', settings: '設定與存檔', run: '遠征中' };
   const MUSIC = { hub: 'title', run: null };
   function refreshTop() {
     U.$('#resGem').textContent = Store.profile.gems;
@@ -9,7 +9,7 @@ const App = (() => {
   }
   function go(name, arg) {
     RunUI.stopTimer && RunUI.stopTimer();
-    window.LEARN_UI && LEARN_UI.leave();
+    typeof LEARN_UI !== 'undefined' && LEARN_UI.leave();
     U.$('#modalRoot').innerHTML = '';
     closeVol();
     U.$('#topTitle').textContent = TITLES[name] || APP_TITLE;
@@ -17,6 +17,8 @@ const App = (() => {
     refreshTop();
     if (name !== 'run') BGM.play(MUSIC[name] || 'select');
     switch (name) {
+      case 'peglin': return PEGLIN.screen(arg || 'quiz');
+      case 'peglinLearn': return PEGLIN.screen('learn');
       case 'run': return RunUI.start(arg);
       case 'map': return Screens.map();
       case 'free': return Screens.free();
@@ -58,7 +60,7 @@ const App = (() => {
     U.$('#btnSound').onclick = toggleVol;
     U.$('#btnSound').title = '音量設定';
     document.title = APP_TITLE;
-    go('hub');
+    go(location.hash === '#peglin' ? 'peglin' : location.hash === '#peglin-learn' ? 'peglinLearn' : 'hub');
   }
   document.addEventListener('DOMContentLoaded', init);
   return { go, refreshTop };

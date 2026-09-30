@@ -149,13 +149,14 @@ const Store = (() => {
   function loadRun() { return load(K.run, null); }
 
   function exportAll() {
-    return JSON.stringify({ v: 1, project: (window.QB.meta || {}).id, profile, qs, wrong, settings, run: loadRun(), pomo: window.POMO ? POMO.exportData() : null, learn: window.LEARN_UI ? LEARN_UI.exportData() : null, at: new Date().toISOString() });
+    return JSON.stringify({ v: 1, project: (window.QB.meta || {}).id, profile, qs, wrong, settings, run: loadRun(), pomo: typeof POMO !== 'undefined' ? POMO.exportData() : null, learn: typeof LEARN_UI !== 'undefined' ? LEARN_UI.exportData() : null, peglin: typeof PEGLIN !== 'undefined' ? PEGLIN.exportData() : null, at: new Date().toISOString() });
   }
   function importAll(txt) {
     const d = JSON.parse(txt);
     if (!d.profile) throw new Error('格式不符');
     profile = Object.assign(defProfile(), d.profile); qs = d.qs || {}; wrong = d.wrong || {}; settings = Object.assign(settings, d.settings || {});
     save(K.profile, profile); saveQs(); saveWrong(); save(K.set, settings); saveRun(d.run || null); if (d.pomo) save(SKEY('pomo'), d.pomo); if (d.learn) save(SKEY('learn'), d.learn);
+    if (d.peglin && typeof PEGLIN !== 'undefined') PEGLIN.importData(d.peglin);
   }
   function resetAll() { Object.values(K).concat([SKEY('pomo'), SKEY('learn')]).forEach(k => localStorage.removeItem(k)); location.reload(); }
   function saveSettings() { save(K.set, settings); }

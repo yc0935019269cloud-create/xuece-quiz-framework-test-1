@@ -214,6 +214,8 @@ const Screens = (() => {
       { id: 'prompts', icon: '📋', t: 'AI 提示詞', d: '複製提示詞：素材→課程、出題、補詳解、轉格式、找圖標記' },
       { id: 'map', icon: 57, t: '冒險地圖', d: '依科目與題本挑戰各區域地牢' },
       { id: 'free', icon: 105, t: '自由遠征', d: '自選科目、題本、題型、數量與作答狀態' },
+      { id: 'peglin', icon: '⚪', t: '彈珠刷題', d: 'Peglin 原版戰鬥・一題一球（需本機啟動器）' },
+      { id: 'peglinLearn', icon: '📘', t: '彈珠學習', d: 'Peglin 原版戰鬥・讀一張卡打一顆球（需本機啟動器）' },
       { id: 'pomo', icon: '🍅', t: '番茄鐘', d: `今天 🍅 ${POMO.data.log.filter(l => new Date(l.t).toDateString() === new Date().toDateString()).length} 顆・專注花園 ${POMO.data.garden.length} 株` },
       { id: 'wrongrun', icon: 64, t: '錯題重刷', d: `以錯題本出征（${wrongN} 題未掌握）` },
       { id: 'bank', icon: 63, t: '題庫', d: `瀏覽 ${window.QB.questions.length} 題，直接作答看詳解` },
@@ -1004,5 +1006,5 @@ const Screens = (() => {
     U.$('#rs').onclick = async () => { if (await U.confirm('重置全部進度', '所有作答紀錄、錯題、角色成長都會被清除，無法復原！')) Store.resetAll(); };
   }
 
-  return { syncSubjects, hub, map, free, abyss, classes, bestiary, bank, wrongbook, pets, upg, relics, char, settings, startRun, qrow, volumeControls, ach: () => CampFun.achScreen() };
+  return { setPicker, syncSubjects, hub, map, free, abyss, classes, bestiary, bank, wrongbook, pets, upg, relics, char, settings, startRun, qrow, volumeControls, ach: () => CampFun.achScreen() };
 })();

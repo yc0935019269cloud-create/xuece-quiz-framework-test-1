@@ -87,6 +87,10 @@ js/ css/                遊戲程式
 - `assets/music/u_*.mp3` 是原作者**自備的商業錄音，僅限個人使用，不可散布**。要把框架給別人或上傳網路前，請先刪掉這些檔案，並把 `js/audio.js` 裡 `BGM.TRACKS` 對應的行移除（其他音樂是 CC0，見 `assets/music/CREDITS.txt`）。
 - 題目與教材的著作權屬於原作者；請只放你有權使用的內容。
 
+## 彈珠刷題（Peglin 原版整合，選用）
+
+營地多了「⚪ 彈珠刷題」與「📘 彈珠學習」：在真正的 Peglin 戰鬥裡一題一球、一卡一球。遊戲本體在 `E:\PeglinQuiz`，由本機啟動器 `Start-PeglinQuiz.exe` 連到這個資料夾的題庫；作答紀錄與錯題本存在 `peglin/紀錄/`（不上傳）。沒有啟動器的電腦（包括別人開 GitHub Page）只會看到說明，其他功能不受影響。詳見 `peglin/README.md`。
+
 ---
 
 # 開發交接（給接手的 AI／開發者）

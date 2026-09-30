@@ -774,6 +774,27 @@ const LEARN_UI = (() => {
     return `${packs.length} 個單元・已完成 ${done} 課${due ? `・🔁 待複習 ${due}` : ''}`;
   }
   function exportData() { return D; }
+  /* 彈珠學習（Peglin）回流：檢核錯題進複習盒；整課完成時比照學習模式記完成、星等與獎勵 */
+  function applyPeglin(ev) {
+    if (ev.type === 'check') {
+      if (!ITEMS[ev.id]) return false;
+      D.stat.checks++; if (ev.first) D.stat.right++;
+      if (!ev.ok) addRev(ev.id, true);
+      save(); return true;
+    }
+    const p = PK[ev.pack], l = p && p.lessons.find(x => x.id === ev.lesson);
+    if (!l) return false;
+    const st = D.les[lkey(p, l)] || (D.les[lkey(p, l)] = { i: 0, done: 0, best: 0 });
+    const acc = ev.n ? ev.ok / ev.n : 1, star = acc >= 0.9 ? 3 : acc >= 0.7 ? 2 : 1, first = !st.done;
+    const gain = first ? 3 + star * 2 : (star > (st.best || 0) ? (star - (st.best || 0)) * 2 : 0);
+    st.done = (st.done || 0) + 1; st.best = Math.max(st.best || 0, star); st.last = Date.now(); st.run = null; st.i = 0;
+    D.stat.lessons++; D.last = { p: p.id, l: l.id };
+    l.steps.forEach(s => { if (s.type === 'card' && s.flash) addRev(s.flash.id); if (s.type === 'recap') (s.flash || []).forEach(f => addRev(f.id)); });
+    save();
+    if (gain) Store.addGems(gain);
+    Store.addAccXp(first ? 25 : 8);
+    return true;
+  }
 
-  return { reindex, screen, tileDesc, exportData, leave: cleanup, renderCheck, sameAns, get packs() { return packs; } };
+  return { reindex, screen, tileDesc, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, get packs() { return packs; } };
 })();
