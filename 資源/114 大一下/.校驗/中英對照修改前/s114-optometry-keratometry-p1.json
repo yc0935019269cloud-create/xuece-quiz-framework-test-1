@@ -1,0 +1,708 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-optometry-keratometry-p1",
+  "subject": "optometry",
+  "unit": "第06單元 角膜曲率測量：K 值與角膜地圖",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "視光學",
+    "第06單元 角膜曲率測量：K 值與角膜地圖"
+  ],
+  "title": "角膜曲率測量：K 值與角膜地圖（1）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://frabjous-druid-ff547a.netlify.app/",
+  "level": 2,
+  "minutes": 60,
+  "order": 6,
+  "source": "https://frabjous-druid-ff547a.netlify.app/",
+  "tags": [
+    "角膜曲率測量：K 值與角膜地圖"
+  ],
+  "lessons": [
+    {
+      "id": "corneal-optics-1",
+      "title": "角膜光學與 K 值意義",
+      "goals": [
+        "解釋角膜平均屈光力約 42-44D",
+        "解釋曲率半徑與屈光力反相關",
+        "解釋Keratometer 與 topographer 不測球面屈光度"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "角膜光學與 K 值意義",
+          "body": "角膜提供眼球約三分之二屈光力；曲率半徑越大，角膜越平，屈光力越小。\n\n- 先記角膜是眼球主要屈光面。\n- 再用半徑理解陡平。\n- 最後分清 K 值不是眼鏡處方。"
+        },
+        {
+          "type": "card",
+          "title": "角膜平均屈光力約 42-44D",
+          "body": "**一句話／白話**\n角膜是眼球最大屈光面，中央角膜大約提供 42-44D，所以 K 值是臨床配鏡和角膜評估重點。\n\n**觀念**\n眼球總屈光力約 60D，其中約 40D 來自角膜、約 20D 來自水晶體。角膜中央約 4 mm 對中央視力最重要。\n\n**重點**\n- 角膜是主要屈光介面\n- 中央比周邊通常更陡\n- K 值主要描述前角膜中央區域\n\n**考試角度**\n- 角膜是主要屈光介面\n- 中央比周邊通常更陡\n- K 值主要描述前角膜中央區域\n\n**口訣**\n眼總屈光約 60D，角膜約 2/3。",
+          "keys": [
+            "角膜是主要屈光介面",
+            "中央比周邊通常更陡",
+            "K 值主要描述前角膜中央區域"
+          ],
+          "tip": "口訣：眼總屈光約 60D，角膜約 2/3。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "眼球總屈光力約 60D，其中角膜約提供多少？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "逐字稿說角膜約 40D，約佔三分之二。\n\n正確選項：40D。\n眼球總屈光力約 60D，其中約 40D 來自角膜、約 20D 來自水晶體。角膜中央約 4 mm 對中央視力最重要。",
+          "choices": [
+            "10D",
+            "20D",
+            "40D",
+            "80D"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "曲率半徑與屈光力反相關",
+          "body": "**一句話／白話**\n角膜半徑越小代表越彎、越陡，屈光力越高；半徑越大代表越平，屈光力越低。\n\n**觀念**\n角膜表面度數可用 F = (n' - n) / r 理解。以 keratometer index 1.3375 與空氣 1 估算，可用 337.5 / D 換算半徑 mm。\n\n**重點**\n- r 越大 = 越平 = D 越小\n- 7.5 mm 約 45.00D\n- 7.8 mm 約 43.25D\n\n**考試角度**\n- r 越大 = 越平 = D 越小\n- 7.5 mm 約 45.00D\n- 7.8 mm 約 43.25D\n\n**公式**\nr(mm) = 337.5 / F(D)\n\n**口訣**\n小 r 大 D，大 r 小 D；r = 337.5 / F。",
+          "keys": [
+            "r 越大 = 越平 = D 越小",
+            "7.5 mm 約 45.00D",
+            "7.8 mm 約 43.25D"
+          ],
+          "tip": "口訣：小 r 大 D，大 r 小 D；r = 337.5 / F。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜曲率半徑變大時，表面屈光力通常會？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "半徑越大代表越平，屈光力越小。\n\n正確選項：變小。\n角膜表面度數可用 F = (n' - n) / r 理解。以 keratometer index 1.3375 與空氣 1 估算，可用 337.5 / D 換算半徑 mm。",
+          "choices": [
+            "變小",
+            "變大",
+            "不變",
+            "變成 RAPD"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Keratometer 與 topographer 不測球面屈光度",
+          "body": "**一句話／白話**\nkeratometer 和 topographer 主要測角膜形狀，不是直接測整眼球面屈光，所以不能把 K 值當眼鏡處方。\n\n**觀念**\n傳統 keratometer 與 corneal topographer 提供角膜散光與角膜/淚液表面健康資訊；它們不是用來直接測 myopia/hyperopia 的球面屈光度。\n\n**重點**\n- 可評估 CL fitting\n- 可看 mire distortion 或不規則性\n- 球面屈光度需靠驗光/自動驗光等資訊\n\n**考試角度**\n- 可評估 CL fitting\n- 可看 mire distortion 或不規則性\n- 球面屈光度需靠驗光/自動驗光等資訊\n\n**口訣**\nK 看 cornea，Rx 看整眼。",
+          "keys": [
+            "可評估 CL fitting",
+            "可看 mire distortion 或不規則性",
+            "球面屈光度需靠驗光/自動驗光等資訊"
+          ],
+          "tip": "口訣：K 看 cornea，Rx 看整眼。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "傳統 keratometer 最主要提供的是？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "投影片強調 keratometer/topographer 提供 corneal astigmatism，不是球面屈光度。\n\n正確選項：角膜散光與前表面曲率資訊。\n傳統 keratometer 與 corneal topographer 提供角膜散光與角膜/淚液表面健康資訊；它們不是用來直接測 myopia/hyperopia 的球面屈光度。",
+          "choices": [
+            "角膜散光與前表面曲率資訊",
+            "視神經傳入缺損",
+            "房水流速",
+            "最終主觀處方"
+          ]
+        },
+        {
+          "type": "interactive",
+          "title": "角膜半徑與 K 值",
+          "task": "把半徑由 7.8 mm 調到 6.8 mm，觀察 K 值變化。",
+          "body": "每次只改一個參數，先預測，再觀察數值。",
+          "reference": "r=7.8 mm 時 K≈43.27 D；r=6.8 mm 時 K≈49.63 D。\nK = (1.3375−1)/r（m）=337.5/r（mm）。1.3375 是角膜曲率計等效折射率，不是真實角膜材料折射率。",
+          "height": 540,
+          "html": "<!doctype html><html lang=\"zh-Hant\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{margin:0;padding:10px;box-sizing:border-box;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}*{box-sizing:border-box}h3{font-size:18px;margin:0 0 8px}.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}label{display:block}.row label{flex:1 1 125px;min-width:0;max-width:180px}input{max-width:150px;width:100%}button{font:inherit;padding:6px 12px;background:#fff;border:1px solid #75644d;border-radius:6px}svg{width:100%;height:160px;background:#fff;border:1px solid #cabfa7}#result,.note{padding:6px;background:#fff1c9;margin-top:6px}small{font-size:14px;display:block;margin-top:6px}@media(max-width:400px){body{padding:8px}.row label{flex-basis:105px}svg{height:110px}h3{font-size:16px}}</style><h3>角膜半徑與 K 值</h3><div class=\"note\">觀察重點：把半徑由 7.8 mm 調到 6.8 mm，觀察 K 值變化。</div><div class=\"row\"><label>角膜半徑 <output id=\"ro\"></output><input aria-label=\"角膜半徑\" id=\"r\" type=\"range\" min=\"6\" max=\"10\" step=\"0.1\" value=\"7.8\" data-unit=\"mm\" style=\"display:block\"></label><button id=\"reset\">重設</button></div><svg id=\"plot\" viewBox=\"0 0 700 210\" role=\"img\" aria-label=\"即時比較圖\"></svg><small id=\"legend\"></small><div id=\"result\" aria-live=\"polite\"></div><small>K = (1.3375−1)/r（m）=337.5/r（mm）。1.3375 是角膜曲率計等效折射率，不是真實角膜材料折射率。</small><script>const inputs=[...document.querySelectorAll('input')],result=document.getElementById('result'),svg=document.getElementById('plot');const v=id=>Number(document.getElementById(id).value),fmt=x=>Number.isFinite(x)?x.toFixed(2):'超出模型';function bars(vals,names){const scale=130/Math.max(1,...vals.map(Math.abs));svg.innerHTML=vals.map((x,i)=>`<rect x='${50+i*180}' y='${x>=0?150-x*scale:150}' width='90' height='${Math.abs(x)*scale}' fill='${i%2?'#916a28':'#286b80'}'/><text x='${80+i*180}' y='200' font-size='44'>${i+1}</text>`).join('')+`<line x1='20' y1='150' x2='680' y2='150' stroke='#555'/>`;document.getElementById('legend').textContent=names.map((n,i)=>(i+1)+'．'+n).join('　');}function update(){inputs.forEach(x=>document.getElementById(x.id+'o').textContent=x.value+' '+x.dataset.unit);const K=337.5/v('r');result.textContent=`K = ${fmt(K)} D；半徑越小，曲率越大，K 值越高。這是角膜曲率計等效指數的估計值。`;bars([K],['角膜 K 值 D']);}inputs.forEach(x=>x.addEventListener('input',update));document.getElementById('reset').onclick=()=>{inputs.forEach(x=>x.value=x.defaultValue);update()};update();</script></html>"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
+          "answer": "r=7.8 mm 時 K≈43.27 D；r=6.8 mm 時 K≈49.63 D。\nK = (1.3375−1)/r（m）=337.5/r（mm）。1.3375 是角膜曲率計等效折射率，不是真實角膜材料折射率。",
+          "hint": "逐步比較相鄰階段或改變前後，並區分方向與因果。",
+          "explain": "r=7.8 mm 時 K≈43.27 D；r=6.8 mm 時 K≈49.63 D。\nK = (1.3375−1)/r（m）=337.5/r（mm）。1.3375 是角膜曲率計等效折射率，不是真實角膜材料折射率。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：Keratometer 與 topographer 不測球面屈光度",
+          "problem": "傳統 keratometer 最主要提供的是？\n\nA. 角膜散光與前表面曲率資訊\nB. 視神經傳入缺損\nC. 房水流速\nD. 最終主觀處方",
+          "steps": [
+            "先確認題目問的主題：Keratometer 與 topographer 不測球面屈光度",
+            "傳統 keratometer 與 corneal topographer 提供角膜散光與角膜/淚液表面健康資訊；它們不是用來直接測 myopia/hyperopia 的球面屈光度。",
+            "把判斷依據連回題目：投影片強調 keratometer/topographer 提供 corneal astigmatism，不是球面屈光度。\n\n正確選項：角膜散光與前表面曲率資訊。\n傳統 keratometer 與 corneal topographer 提供角膜散光與角膜/淚液表面健康資訊；它們不是用來直接測 myopia/hyperopia 的球面屈光度。"
+          ],
+          "answer": "角膜散光與前表面曲率資訊"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：角膜光學與 K 值意義",
+          "qids": [
+            "s114-optometry-exam106-u06-opt-q0002",
+            "s114-optometry-exam106-u06-opt-q0003"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "角膜曲率半徑變大時，表面屈光力通常會？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "半徑越大代表越平，屈光力越小。\n\n正確選項：變小。\n角膜表面度數可用 F = (n' - n) / r 理解。以 keratometer index 1.3375 與空氣 1 估算，可用 337.5 / D 換算半徑 mm。",
+              "choices": [
+                "變小",
+                "變大",
+                "不變",
+                "變成 RAPD"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "傳統 keratometer 最主要提供的是？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "投影片強調 keratometer/topographer 提供 corneal astigmatism，不是球面屈光度。\n\n正確選項：角膜散光與前表面曲率資訊。\n傳統 keratometer 與 corneal topographer 提供角膜散光與角膜/淚液表面健康資訊；它們不是用來直接測 myopia/hyperopia 的球面屈光度。",
+              "choices": [
+                "角膜散光與前表面曲率資訊",
+                "視神經傳入缺損",
+                "房水流速",
+                "最終主觀處方"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "角膜是主要屈光介面",
+            "中央比周邊通常更陡",
+            "r 越大 = 越平 = D 越小",
+            "7.5 mm 約 45.00D",
+            "可評估 CL fitting",
+            "可看 mire distortion 或不規則性"
+          ],
+          "flash": [
+            {
+              "front": "角膜平均屈光力約 42-44D",
+              "back": "角膜是眼球最大屈光面，中央角膜大約提供 42-44D，所以 K 值是臨床配鏡和角膜評估重點。"
+            },
+            {
+              "front": "曲率半徑與屈光力反相關",
+              "back": "角膜半徑越小代表越彎、越陡，屈光力越高；半徑越大代表越平，屈光力越低。"
+            },
+            {
+              "front": "Keratometer 與 topographer 不測球面屈光度",
+              "back": "keratometer 和 topographer 主要測角膜形狀，不是直接測整眼球面屈光，所以不能把 K 值當眼鏡處方。"
+            },
+            {
+              "front": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
+              "back": "r=7.8 mm 時 K≈43.27 D；r=6.8 mm 時 K≈49.63 D。\nK = (1.3375−1)/r（m）=337.5/r（mm）。1.3375 是角膜曲率計等效折射率，不是真實角膜材料折射率。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "keratometer-method-1",
+      "title": "Keratometer 原理與記錄",
+      "goals": [
+        "解釋mire 反射與 prism doubling",
+        "解釋K reading 記錄的是 power meridian",
+        "解釋MCR 與 distorted mires"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Keratometer 原理與記錄",
+          "body": "角膜可視為凸折射面與凸面鏡；儀器透過 mire 反射影像、prism doubling 與 telescope 量中央約 3 mm。\n\n- 先看 mire 如何被角膜反射。\n- 再理解 prism doubling 對齊。\n- 最後用 mire 形狀判斷規則或扭曲。"
+        },
+        {
+          "type": "card",
+          "title": "mire 反射與 prism doubling",
+          "body": "**一句話／白話**\nkeratometer 看的是 mire 在角膜凸面上的反射影像，透過 doubling 對齊來換算角膜曲率。\n\n**觀念**\n已知大小的 mire 放在角膜前固定距離，角膜前表面反射出影像；keratometer 透過望遠鏡測量，prism doubling + mirror 形成三個 mire images。\n\n**重點**\n- 角膜像 convex mirror 反射 mire\n- 先 focus mires，再 align\n- mire 扭曲可提示淚液/角膜表面問題\n\n**考試角度**\n- 角膜像 convex mirror 反射 mire\n- 先 focus mires，再 align\n- mire 扭曲可提示淚液/角膜表面問題\n\n**口訣**\nmire 要清楚規則，doubling 要對齊。",
+          "keys": [
+            "角膜像 convex mirror 反射 mire",
+            "先 focus mires，再 align",
+            "mire 扭曲可提示淚液/角膜表面問題"
+          ],
+          "tip": "口訣：mire 要清楚規則，doubling 要對齊。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "keratometer 中 mire image 主要來自哪裡？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "原理是角膜當作凸面鏡反射 mire。\n\n正確選項：角膜前表面反射。\n已知大小的 mire 放在角膜前固定距離，角膜前表面反射出影像；keratometer 透過望遠鏡測量，prism doubling + mirror 形成三個 mire images。",
+          "choices": [
+            "角膜前表面反射",
+            "視網膜神經節細胞",
+            "水晶體後囊",
+            "視神經交叉"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "K reading 記錄的是 power meridian",
+          "body": "**一句話／白話**\nK reading 記錄哪條子午線的角膜屈光力，不等於眼鏡負柱鏡的處方軸位。\n\n**觀念**\nK reading 通常先記水平子午線 power，再記垂直；記錄的是 power meridian，不是散光處方的 axis。最小屈光度子午線 flat K = 負柱鏡 axis 方向。\n\n**重點**\n- 例：42.75@180; 43.50@90\n- 也可寫 42.75/43.50@090\n- 角膜散光 = 兩主經線 D 差值\n\n**考試角度**\n- 例：42.75@180; 43.50@90\n- 也可寫 42.75/43.50@090\n- 角膜散光 = 兩主經線 D 差值\n\n**口訣**\nK 記 power meridian；Rx axis 要再轉換。",
+          "keys": [
+            "例：42.75@180; 43.50@90",
+            "也可寫 42.75/43.50@090",
+            "角膜散光 = 兩主經線 D 差值"
+          ],
+          "tip": "口訣：K 記 power meridian；Rx axis 要再轉換。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "K reading 中 42.75@180; 43.50@90 記錄的是什麼？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "講義強調記錄的是 power meridian，不是 axis。\n\n正確選項：各 power meridian 的角膜屈光力。\nK reading 通常先記水平子午線 power，再記垂直；記錄的是 power meridian，不是散光處方的 axis。最小屈光度子午線 flat K = 負柱鏡 axis 方向。",
+          "choices": [
+            "散光處方 axis",
+            "各 power meridian 的角膜屈光力",
+            "瞳孔反應速度",
+            "PD/DBOC 差"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "MCR 與 distorted mires",
+          "body": "**一句話／白話**\nmire 清楚規則代表中央角膜表面較規則；眨眼後變形或持續扭曲，提示淚膜或角膜不規則。\n\n**觀念**\n除了 K 值，也要記錄 mire 狀態。Mires clear and regular 可寫 MCR；若 blink 後很快扭曲或持續不規則，需記錄 distorted/irregular 與時間。\n\n**重點**\n- MCR = mire clear and regular\n- 幾秒後扭曲可提示 tear film 問題\n- 持續扭曲要考慮角膜不規則\n\n**考試角度**\n- MCR = mire clear and regular\n- 幾秒後扭曲可提示 tear film 問題\n- 持續扭曲要考慮角膜不規則\n\n**口訣**\nmire 變形先想 tear film，再想 corneal irregularity。",
+          "keys": [
+            "MCR = mire clear and regular",
+            "幾秒後扭曲可提示 tear film 問題",
+            "持續扭曲要考慮角膜不規則"
+          ],
+          "tip": "口訣：mire 變形先想 tear film，再想 corneal irregularity。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "MCR 在 K reading 紀錄中代表？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "逐字稿說清楚規則的 mire 可記 MCR。\n\n正確選項：mire clear and regular。\n除了 K 值，也要記錄 mire 狀態。Mires clear and regular 可寫 MCR；若 blink 後很快扭曲或持續不規則，需記錄 distorted/irregular 與時間。",
+          "choices": [
+            "mire clear and regular",
+            "Marcus Gunn response",
+            "minus cylinder refraction",
+            "maximum corneal radius"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：MCR 與 distorted mires",
+          "problem": "MCR 在 K reading 紀錄中代表？\n\nA. mire clear and regular\nB. Marcus Gunn response\nC. minus cylinder refraction\nD. maximum corneal radius",
+          "steps": [
+            "先確認題目問的主題：MCR 與 distorted mires",
+            "除了 K 值，也要記錄 mire 狀態。Mires clear and regular 可寫 MCR；若 blink 後很快扭曲或持續不規則，需記錄 distorted/irregular 與時間。",
+            "把判斷依據連回題目：逐字稿說清楚規則的 mire 可記 MCR。\n\n正確選項：mire clear and regular。\n除了 K 值，也要記錄 mire 狀態。Mires clear and regular 可寫 MCR；若 blink 後很快扭曲或持續不規則，需記錄 distorted/irregular 與時間。"
+          ],
+          "answer": "mire clear and regular"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：Keratometer 原理與記錄",
+          "qids": [
+            "s114-optometry-exam106-u06-opt-q0002",
+            "s114-optometry-exam106-u06-opt-q0003"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "K reading 中 42.75@180; 43.50@90 記錄的是什麼？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "講義強調記錄的是 power meridian，不是 axis。\n\n正確選項：各 power meridian 的角膜屈光力。\nK reading 通常先記水平子午線 power，再記垂直；記錄的是 power meridian，不是散光處方的 axis。最小屈光度子午線 flat K = 負柱鏡 axis 方向。",
+              "choices": [
+                "散光處方 axis",
+                "各 power meridian 的角膜屈光力",
+                "瞳孔反應速度",
+                "PD/DBOC 差"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "MCR 在 K reading 紀錄中代表？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "逐字稿說清楚規則的 mire 可記 MCR。\n\n正確選項：mire clear and regular。\n除了 K 值，也要記錄 mire 狀態。Mires clear and regular 可寫 MCR；若 blink 後很快扭曲或持續不規則，需記錄 distorted/irregular 與時間。",
+              "choices": [
+                "mire clear and regular",
+                "Marcus Gunn response",
+                "minus cylinder refraction",
+                "maximum corneal radius"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "角膜像 convex mirror 反射 mire",
+            "先 focus mires，再 align",
+            "例：42.75@180; 43.50@90",
+            "也可寫 42.75/43.50@090",
+            "MCR = mire clear and regular",
+            "幾秒後扭曲可提示 tear film 問題"
+          ],
+          "flash": [
+            {
+              "front": "mire 反射與 prism doubling",
+              "back": "keratometer 看的是 mire 在角膜凸面上的反射影像，透過 doubling 對齊來換算角膜曲率。"
+            },
+            {
+              "front": "K reading 記錄的是 power meridian",
+              "back": "K reading 記錄哪條子午線的角膜屈光力，不等於眼鏡負柱鏡的處方軸位。"
+            },
+            {
+              "front": "MCR 與 distorted mires",
+              "back": "mire 清楚規則代表中央角膜表面較規則；眨眼後變形或持續扭曲，提示淚膜或角膜不規則。"
+            },
+            {
+              "front": "keratometer 中 mire image 主要來自哪裡？",
+              "back": "原理是角膜當作凸面鏡反射 mire。\n\n正確選項：角膜前表面反射。\n已知大小的 mire 放在角膜前固定距離，角膜前表面反射出影像；keratometer 透過望遠鏡測量，prism doubling + mirror 形成三個 mire images。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "astigmatism-javal-1",
+      "title": "角膜散光、WTR/ATR 與 Javal's rule",
+      "goals": [
+        "解釋WTR/ATR 判斷",
+        "解釋角膜散光差值轉矯正柱鏡",
+        "解釋Javal's rule"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "角膜散光、WTR/ATR 與 Javal's rule",
+          "body": "K 值差就是角膜散光；比較陡的方向決定 WTR/ATR/oblique，總散光估算要考慮 1.25 修正與眼內殘餘散光。\n\n- 先找 flat K 與 steep K。\n- 再判斷 WTR/ATR/oblique。\n- 最後把角膜散光轉成負柱鏡估計。"
+        },
+        {
+          "type": "card",
+          "title": "WTR/ATR 判斷",
+          "body": "**一句話／白話**\nWTR/ATR 是看角膜哪個方向較陡：垂直較陡多為 WTR，水平較陡多為 ATR。\n\n**觀念**\n垂直方向較陡、度數較高，多為 with-the-rule；水平方向較陡、垂直較平，多為 against-the-rule；斜向較陡則為 oblique。\n\n**重點**\n- WTR：vertical meridian steeper\n- ATR：horizontal meridian steeper\n- axis 通常在 flat meridian\n\n**考試角度**\n- WTR：vertical meridian steeper\n- ATR：horizontal meridian steeper\n- axis 通常在 flat meridian\n\n**口訣**\n垂直陡 WTR，水平陡 ATR，斜陡 oblique。",
+          "keys": [
+            "WTR：vertical meridian steeper",
+            "ATR：horizontal meridian steeper",
+            "axis 通常在 flat meridian"
+          ],
+          "tip": "口訣：垂直陡 WTR，水平陡 ATR，斜陡 oblique。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "K = 42.50@180; 44.50@90，屬於哪種角膜散光？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "90 度垂直方向較陡，所以是 WTR。\n\n正確選項：WTR。\n垂直方向較陡、度數較高，多為 with-the-rule；水平方向較陡、垂直較平，多為 against-the-rule；斜向較陡則為 oblique。",
+          "choices": [
+            "WTR",
+            "ATR",
+            "RAPD",
+            "Horner"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "角膜散光差值轉矯正柱鏡",
+          "body": "**一句話／白話**\n兩條 K 值相差多少，就是角膜散光量的估計；轉成負柱鏡時要注意軸位轉換。\n\n**觀念**\n角膜散光 = 兩主經線屈光力差。矯正負柱鏡的 axis 在 flat K 方向，例如 42.50@180; 44.50@90 → -2.00 x180。\n\n**重點**\n- flat K 是負柱鏡 axis\n- 差值是 cylinder magnitude\n- 球面可寫 PL 或依完整處方處理\n\n**考試角度**\n- flat K 是負柱鏡 axis\n- 差值是 cylinder magnitude\n- 球面可寫 PL 或依完整處方處理\n\n**公式**\ncorneal astigmatism = steep K - flat K\n\n**口訣**\nsteep - flat = corneal cyl；負柱鏡軸靠 flat meridian。",
+          "keys": [
+            "flat K 是負柱鏡 axis",
+            "差值是 cylinder magnitude",
+            "球面可寫 PL 或依完整處方處理"
+          ],
+          "tip": "口訣：steep - flat = corneal cyl；負柱鏡軸靠 flat meridian。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "R: 42.75D at 180; 42.00D at 90，矯正負柱鏡軸位約為？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "90 度是 flat K，因此負柱鏡 axis 在 090。\n\n正確選項：090。\n角膜散光 = 兩主經線屈光力差。矯正負柱鏡的 axis 在 flat K 方向，例如 42.50@180; 44.50@90 → -2.00 x180。",
+          "choices": [
+            "180",
+            "090",
+            "045",
+            "不用軸位"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Javal's rule",
+          "body": "**一句話／白話**\nJaval's rule 用角膜散光估總散光，但要加入內部散光補償，所以只能當估算，不是最終處方。\n\n**觀念**\n框架眼鏡總散光估算可用 A total = 1.25(A corneal) + A internal。課堂採用平均眼內殘餘散光約 -0.50 x090；隱形眼鏡矯正通常不需 1.25 correction factor。\n\n**重點**\n- 1.25 是角膜到眼鏡平面修正\n- A internal 常用 -0.50 x090\n- CL correction 不必套此 correction factor\n\n**考試角度**\n- 1.25 是角膜到眼鏡平面修正\n- A internal 常用 -0.50 x090\n- CL correction 不必套此 correction factor\n\n**公式**\nA_total = 1.25(A_角膜) + A_眼內\n\n**口訣**\nJaval = 角膜散光 × 1.25，再加 residual ATR。",
+          "keys": [
+            "1.25 是角膜到眼鏡平面修正",
+            "A internal 常用 -0.50 x090",
+            "CL correction 不必套此 correction factor"
+          ],
+          "tip": "口訣：Javal = 角膜散光 × 1.25，再加 residual ATR。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Javal's rule 中 1.25 correction factor 主要用於估算哪種矯正？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "投影片說 A total 是 spectacle correction，CL correction 不需此修正係數。\n\n正確選項：框架眼鏡 spectacle correction。\n框架眼鏡總散光估算可用 A total = 1.25(A corneal) + A internal。課堂採用平均眼內殘餘散光約 -0.50 x090；隱形眼鏡矯正通常不需 1.25 correction factor。",
+          "choices": [
+            "框架眼鏡 spectacle correction",
+            "瞳孔近反射",
+            "cocaine test",
+            "reticle 歸零"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：Javal's rule",
+          "problem": "Javal's rule 中 1.25 correction factor 主要用於估算哪種矯正？\n\nA. 框架眼鏡 spectacle correction\nB. 瞳孔近反射\nC. cocaine test\nD. reticle 歸零",
+          "steps": [
+            "先確認題目問的主題：Javal's rule",
+            "框架眼鏡總散光估算可用 A total = 1.25(A corneal) + A internal。課堂採用平均眼內殘餘散光約 -0.50 x090；隱形眼鏡矯正通常不需 1.25 correction factor。",
+            "把判斷依據連回題目：投影片說 A total 是 spectacle correction，CL correction 不需此修正係數。\n\n正確選項：框架眼鏡 spectacle correction。\n框架眼鏡總散光估算可用 A total = 1.25(A corneal) + A internal。課堂採用平均眼內殘餘散光約 -0.50 x090；隱形眼鏡矯正通常不需 1.25 correction factor。"
+          ],
+          "answer": "框架眼鏡 spectacle correction"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：角膜散光、WTR/ATR 與 Javal's rule",
+          "qids": [
+            "s114-optometry-exam106-u06-opt-q0002",
+            "s114-optometry-exam106-u06-opt-q0003"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "R: 42.75D at 180; 42.00D at 90，矯正負柱鏡軸位約為？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "90 度是 flat K，因此負柱鏡 axis 在 090。\n\n正確選項：090。\n角膜散光 = 兩主經線屈光力差。矯正負柱鏡的 axis 在 flat K 方向，例如 42.50@180; 44.50@90 → -2.00 x180。",
+              "choices": [
+                "180",
+                "090",
+                "045",
+                "不用軸位"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "Javal's rule 中 1.25 correction factor 主要用於估算哪種矯正？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "投影片說 A total 是 spectacle correction，CL correction 不需此修正係數。\n\n正確選項：框架眼鏡 spectacle correction。\n框架眼鏡總散光估算可用 A total = 1.25(A corneal) + A internal。課堂採用平均眼內殘餘散光約 -0.50 x090；隱形眼鏡矯正通常不需 1.25 correction factor。",
+              "choices": [
+                "框架眼鏡 spectacle correction",
+                "瞳孔近反射",
+                "cocaine test",
+                "reticle 歸零"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "WTR：vertical meridian steeper",
+            "ATR：horizontal meridian steeper",
+            "flat K 是負柱鏡 axis",
+            "差值是 cylinder magnitude",
+            "1.25 是角膜到眼鏡平面修正",
+            "A internal 常用 -0.50 x090"
+          ],
+          "flash": [
+            {
+              "front": "WTR/ATR 判斷",
+              "back": "WTR/ATR 是看角膜哪個方向較陡：垂直較陡多為 WTR，水平較陡多為 ATR。"
+            },
+            {
+              "front": "角膜散光差值轉矯正柱鏡",
+              "back": "兩條 K 值相差多少，就是角膜散光量的估計；轉成負柱鏡時要注意軸位轉換。"
+            },
+            {
+              "front": "Javal's rule",
+              "back": "Javal's rule 用角膜散光估總散光，但要加入內部散光補償，所以只能當估算，不是最終處方。"
+            },
+            {
+              "front": "K = 42.50@180; 44.50@90，屬於哪種角膜散光？",
+              "back": "90 度垂直方向較陡，所以是 WTR。\n\n正確選項：WTR。\n垂直方向較陡、度數較高，多為 with-the-rule；水平方向較陡、垂直較平，多為 against-the-rule；斜向較陡則為 oblique。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topography-1",
+      "title": "角膜地圖 Topography",
+      "goals": [
+        "解釋熱圖顏色：紅陡、藍紫平",
+        "解釋topographer 比 keratometer 範圍更廣",
+        "解釋不規則散光與圓錐角膜"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "角膜地圖 Topography",
+          "body": "topographer 用熱圖呈現角膜表面形狀；比 keratometer 更能看全角膜光學品質、疾病追蹤與術後變化。\n\n- 先讀色階：紅陡、藍平。\n- 再比較中央 K 與全角膜地圖。\n- 最後看不規則 pattern 與 keratoconus。"
+        },
+        {
+          "type": "card",
+          "title": "熱圖顏色：紅陡、藍紫平",
+          "body": "**一句話／白話**\n角膜地形圖用顏色快速呈現彎曲程度；紅色通常較陡，藍紫通常較平。\n\n**觀念**\n角膜地圖把角膜表面形狀呈現為 heat map；紅色代表 steeper、度數較高，藍紫代表 flatter、度數較低。\n\n**重點**\n- 紅色不等於發炎，是曲率較陡\n- 藍紫代表較平或術後削薄區\n- 要結合比例尺與圖型判讀\n\n**考試角度**\n- 紅色不等於發炎，是曲率較陡\n- 藍紫代表較平或術後削薄區\n- 要結合比例尺與圖型判讀\n\n**口訣**\n紅陡藍平；先看 pattern，再看數字。",
+          "keys": [
+            "紅色不等於發炎，是曲率較陡",
+            "藍紫代表較平或術後削薄區",
+            "要結合比例尺與圖型判讀"
+          ],
+          "tip": "口訣：紅陡藍平；先看 pattern，再看數字。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜地圖上紅色區域通常代表？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "講義明確說 red = steeper，purple/blue = flatter。\n\n正確選項：較陡、屈光力較高。\n角膜地圖把角膜表面形狀呈現為 heat map；紅色代表 steeper、度數較高，藍紫代表 flatter、度數較低。",
+          "choices": [
+            "較陡、屈光力較高",
+            "較平、屈光力較低",
+            "一定是出血",
+            "一定是 RAPD"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "topographer 比 keratometer 範圍更廣",
+          "body": "**一句話／白話**\nkeratometer 主要看中央少數點，topographer 能看更大角膜範圍，因此更適合看不規則與術後形狀。\n\n**觀念**\n傳統 keratometer 主要看中央約 3 mm；topographer 可評估更大範圍與整體角膜光學品質，因此更適合追蹤疾病、手術或 injury 後復原。\n\n**重點**\n- keratometer：中央 3 mm\n- topographer：全角膜較廣泛資訊\n- 可追蹤 keratoconus 或雷射術後形態\n\n**考試角度**\n- keratometer：中央 3 mm\n- topographer：全角膜較廣泛資訊\n- 可追蹤 keratoconus 或雷射術後形態\n\n**口訣**\nKeratometer 看中央，topographer 看地圖。",
+          "keys": [
+            "keratometer：中央 3 mm",
+            "topographer：全角膜較廣泛資訊",
+            "可追蹤 keratoconus 或雷射術後形態"
+          ],
+          "tip": "口訣：Keratometer 看中央，topographer 看地圖。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列哪項是 topographer 相對於傳統 keratometer 的優勢？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "逐字稿強調 topography 比傳統 keratometer 能看更廣、更多角膜變化。\n\n正確選項：可看更大範圍的角膜形態。\n傳統 keratometer 主要看中央約 3 mm；topographer 可評估更大範圍與整體角膜光學品質，因此更適合追蹤疾病、手術或 injury 後復原。",
+          "choices": [
+            "只能測瞳孔大小",
+            "可看更大範圍的角膜形態",
+            "可直接治療青光眼",
+            "可替代所有主觀驗光"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "不規則散光與圓錐角膜",
+          "body": "**一句話／白話**\n不規則散光不是兩條整齊主經線能解釋；圓錐角膜會出現局部下方或偏心變陡。\n\n**觀念**\n不規則散光可表現為上下不相等或兩主經線不相差 90 度。keratoconus 會在 topography 上看到局部 cone 區域變陡，且可隨病程惡化。\n\n**重點**\n- regular astigmatism：主經線相差 90 度\n- irregular：上下不同或主經線非 90 度\n- keratoconus 常有局部 inferior steepening\n\n**考試角度**\n- regular astigmatism：主經線相差 90 度\n- irregular：上下不同或主經線非 90 度\n- keratoconus 常有局部 inferior steepening\n\n**口訣**\n局部紅 cone、形狀偏心，先警覺 keratoconus。",
+          "keys": [
+            "regular astigmatism：主經線相差 90 度",
+            "irregular：上下不同或主經線非 90 度",
+            "keratoconus 常有局部 inferior steepening"
+          ],
+          "tip": "口訣：局部紅 cone、形狀偏心，先警覺 keratoconus。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列何者符合不規則散光的定義之一？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "逐字稿說除了上下不等，兩主經線不相差 90 度也屬不規則散光。\n\n正確選項：兩主經線不相差 90 度。\n不規則散光可表現為上下不相等或兩主經線不相差 90 度。keratoconus 會在 topography 上看到局部 cone 區域變陡，且可隨病程惡化。",
+          "choices": [
+            "兩主經線不相差 90 度",
+            "K 值一定等於 42D",
+            "瞳孔小於 3 mm",
+            "DBOC 等於 PD"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：不規則散光與圓錐角膜",
+          "problem": "下列何者符合不規則散光的定義之一？\n\nA. 兩主經線不相差 90 度\nB. K 值一定等於 42D\nC. 瞳孔小於 3 mm\nD. DBOC 等於 PD",
+          "steps": [
+            "先確認題目問的主題：不規則散光與圓錐角膜",
+            "不規則散光可表現為上下不相等或兩主經線不相差 90 度。keratoconus 會在 topography 上看到局部 cone 區域變陡，且可隨病程惡化。",
+            "把判斷依據連回題目：逐字稿說除了上下不等，兩主經線不相差 90 度也屬不規則散光。\n\n正確選項：兩主經線不相差 90 度。\n不規則散光可表現為上下不相等或兩主經線不相差 90 度。keratoconus 會在 topography 上看到局部 cone 區域變陡，且可隨病程惡化。"
+          ],
+          "answer": "兩主經線不相差 90 度"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：角膜地圖 Topography",
+          "qids": [
+            "s114-optometry-exam106-u06-opt-q0002",
+            "s114-optometry-exam106-u06-opt-q0003"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "下列哪項是 topographer 相對於傳統 keratometer 的優勢？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "逐字稿強調 topography 比傳統 keratometer 能看更廣、更多角膜變化。\n\n正確選項：可看更大範圍的角膜形態。\n傳統 keratometer 主要看中央約 3 mm；topographer 可評估更大範圍與整體角膜光學品質，因此更適合追蹤疾病、手術或 injury 後復原。",
+              "choices": [
+                "只能測瞳孔大小",
+                "可看更大範圍的角膜形態",
+                "可直接治療青光眼",
+                "可替代所有主觀驗光"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "下列何者符合不規則散光的定義之一？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "逐字稿說除了上下不等，兩主經線不相差 90 度也屬不規則散光。\n\n正確選項：兩主經線不相差 90 度。\n不規則散光可表現為上下不相等或兩主經線不相差 90 度。keratoconus 會在 topography 上看到局部 cone 區域變陡，且可隨病程惡化。",
+              "choices": [
+                "兩主經線不相差 90 度",
+                "K 值一定等於 42D",
+                "瞳孔小於 3 mm",
+                "DBOC 等於 PD"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "紅色不等於發炎，是曲率較陡",
+            "藍紫代表較平或術後削薄區",
+            "keratometer：中央 3 mm",
+            "topographer：全角膜較廣泛資訊",
+            "regular astigmatism：主經線相差 90 度",
+            "irregular：上下不同或主經線非 90 度"
+          ],
+          "flash": [
+            {
+              "front": "熱圖顏色：紅陡、藍紫平",
+              "back": "角膜地形圖用顏色快速呈現彎曲程度；紅色通常較陡，藍紫通常較平。"
+            },
+            {
+              "front": "topographer 比 keratometer 範圍更廣",
+              "back": "keratometer 主要看中央少數點，topographer 能看更大角膜範圍，因此更適合看不規則與術後形狀。"
+            },
+            {
+              "front": "不規則散光與圓錐角膜",
+              "back": "不規則散光不是兩條整齊主經線能解釋；圓錐角膜會出現局部下方或偏心變陡。"
+            },
+            {
+              "front": "角膜地圖上紅色區域通常代表？",
+              "back": "講義明確說 red = steeper，purple/blue = flatter。\n\n正確選項：較陡、屈光力較高。\n角膜地圖把角膜表面形狀呈現為 heat map；紅色代表 steeper、度數較高，藍紫代表 flatter、度數較低。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

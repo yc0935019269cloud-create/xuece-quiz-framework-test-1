@@ -14,11 +14,5 @@
   "simulations": 15,
   "diagrams": 6,
   "lessonSteps": "8–20",
-  "folderPaths": "一致",
-  "browserChecks": [
-    "360px 預覽、答題回饋、圖解點選",
-    "厚透鏡滑桿 t=0 → Fe=Fv=Fn=5 D",
-    "正式遊戲 1878 題、92 單元、415 課載入與 114 大一下分類樹，無 console error"
-  ],
-  "offlineVerification": "所有課程互動均不引用外部資源，預覽使用內嵌資料與相對圖片路徑；瀏覽器政策拒絕 file://，因此實測使用 127.0.0.1，未完成雙擊離線實測。"
+  "folderPaths": "一致"
 }

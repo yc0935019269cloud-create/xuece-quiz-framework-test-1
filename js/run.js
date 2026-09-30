@@ -132,7 +132,7 @@ class Run {
   pool() {
     if (this._pool) return this._pool;
     const cfg = this.s.cfg;
-    let list = Store.filter({ subjects: cfg.subjects, types: cfg.types });
+    let list = Store.filter({ subjects: cfg.subjects, exams: cfg.mode === 'abyss' ? cfg.exams : undefined, types: cfg.types });
     if (!(cfg.types || []).includes('open')) list = list.filter(q => q.type !== 'open');
     this._pool = list;
     return list;

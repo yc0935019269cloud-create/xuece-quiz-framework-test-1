@@ -24,25 +24,25 @@
       "title": "檢影 setup 與工作距離",
       "goals": [
         "解釋受檢者看遠，驗者不要擋住視線",
-        "解釋working distance 要固定",
-        "解釋retinoscope sleeve down 是 plane mirror effect"
+        "解釋工作距離（working distance） 要固定",
+        "解釋retinoscope sleeve down 是 平面鏡效應（plane mirror effect）"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "檢影 setup 與工作距離",
-          "body": "客觀驗光要讓受檢者看遠、避免調節、固定 working distance，並把 retinoscope streak、phoropter axis 與反射光方向對齊。\n\n- 先固定看遠與正確站位。\n- 再把 working distance 變成可扣回的基準。\n- 最後確認 retinoscope sleeve 模式再判讀。"
+          "body": "客觀驗光要讓受檢者看遠、避免調節、固定 工作距離（working distance），並把 retinoscope 線狀光帶（streak）、綜合驗光儀（phoropter） 軸向（axis） 與反射光方向對齊。\n\n- 先固定看遠與正確站位。\n- 再把 工作距離 變成可扣回的基準。\n- 最後確認 retinoscope sleeve 模式再判讀。"
         },
         {
           "type": "card",
           "title": "受檢者看遠，驗者不要擋住視線",
-          "body": "**一句話／白話**\n檢影要讓病人放鬆看遠；如果驗者擋住遠方目標，病人調節一啟動，屈光估計就偏了。\n\n**觀念**\n病人應注視遠方目標。掃右眼用右眼、掃左眼用左眼，身體稍微偏側，避免擋住患者視線造成調節不穩。\n\n**重點**\n- 看遠可放鬆 accommodation\n- 驗者擋住視標會讓病人開始調節\n- 調節不穩會讓中和點漂移\n\n**考試角度**\n- 看遠可放鬆 accommodation\n- 驗者擋住視標會讓病人開始調節\n- 調節不穩會讓中和點漂移\n\n**口訣**\n檢影怕 accommodation；站位先保視線。",
+          "body": "**一句話／白話**\n檢影要讓病人放鬆看遠；如果驗者擋住遠方目標，病人調節一啟動，屈光估計就偏了。\n\n**觀念**\n病人應注視遠方目標。掃右眼用右眼、掃左眼用左眼，身體稍微偏側，避免擋住患者視線造成調節不穩。\n\n**重點**\n- 看遠可放鬆 調節（accommodation）\n- 驗者擋住視標會讓病人開始調節\n- 調節不穩會讓中和點漂移\n\n**考試角度**\n- 看遠可放鬆 調節\n- 驗者擋住視標會讓病人開始調節\n- 調節不穩會讓中和點漂移\n\n**口訣**\n檢影怕 調節；站位先保視線。",
           "keys": [
-            "看遠可放鬆 accommodation",
+            "看遠可放鬆 調節（accommodation）",
             "驗者擋住視標會讓病人開始調節",
             "調節不穩會讓中和點漂移"
           ],
-          "tip": "口訣：檢影怕 accommodation；站位先保視線。"
+          "tip": "口訣：檢影怕 調節（accommodation）；站位先保視線。"
         },
         {
           "type": "check",
@@ -54,16 +54,17 @@
           "choices": [
             "角膜散光消失",
             "病人調節不穩導致結果不準",
-            "瞳孔必定 RAPD",
-            "焦度計 reticle 模糊"
-          ]
+            "瞳孔必定 相對傳入性瞳孔缺損（RAPD）",
+            "焦度計 分劃板（reticle） 模糊"
+          ],
+          "id": "c3371e502"
         },
         {
           "type": "card",
-          "title": "working distance 要固定",
-          "body": "**一句話／白話**\n工作距離是檢影的基準平面；距離不同，最後要扣掉的 working lens 也不同。\n\n**觀念**\n檢影工作距離改變會改變中和所需度數。實作上常把手臂伸直固定距離；若未戴 working lens，最後要扣除 working distance lens。\n\n**重點**\n- 57 cm 約等於 +1.75D working lens\n- 若病人已戴相當於工作距離的補助鏡，就不再扣\n- 手臂彎曲會讓距離不穩\n\n**考試角度**\n- 57 cm 約等於 +1.75D working lens\n- 若病人已戴相當於工作距離的補助鏡，就不再扣\n- 手臂彎曲會讓距離不穩\n\n**公式**\nRx = retinoscopy result - working lens\n\n**口訣**\n50 cm 扣 2.00D，67 cm 扣 1.50D；距離先固定。",
+          "title": "工作距離（working distance） 要固定",
+          "body": "**一句話／白話**\n工作距離是檢影的基準平面；距離不同，最後要扣掉的 工作距離鏡片（working lens） 也不同。\n\n**觀念**\n檢影工作距離改變會改變中和所需度數。實作上常把手臂伸直固定距離；若未戴 工作距離鏡片，最後要扣除 工作距離（working distance） 透鏡（lens）。\n\n**重點**\n- 57 cm 約等於 +1.75D 工作距離鏡片\n- 若病人已戴相當於工作距離的補助鏡，就不再扣\n- 手臂彎曲會讓距離不穩\n\n**考試角度**\n- 57 cm 約等於 +1.75D 工作距離鏡片\n- 若病人已戴相當於工作距離的補助鏡，就不再扣\n- 手臂彎曲會讓距離不穩\n\n**公式**\nRx = 視網膜檢影（retinoscopy） result - 工作距離鏡片\n\n**口訣**\n50 cm 扣 2.00D，67 cm 扣 1.50D；距離先固定。",
           "keys": [
-            "57 cm 約等於 +1.75D working lens",
+            "57 cm 約等於 +1.75D 工作距離鏡片（working lens）",
             "若病人已戴相當於工作距離的補助鏡，就不再扣",
             "手臂彎曲會讓距離不穩"
           ],
@@ -72,25 +73,26 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "若受檢者已戴相當於 57 cm 的 working lens 進行檢影，最後處方應如何處理？",
+          "q": "若受檢者已戴相當於 57 cm 的 工作距離鏡片（working lens） 進行檢影，最後處方應如何處理？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "逐字稿題目中說已戴 working distance 補助鏡，因此掃出的結果就是 Rx。\n\n正確選項：不用再扣除 working lens。\n檢影工作距離改變會改變中和所需度數。實作上常把手臂伸直固定距離；若未戴 working lens，最後要扣除 working distance lens。",
+          "explain": "逐字稿題目中說已戴 工作距離（working distance） 補助鏡，因此掃出的結果就是 Rx。\n\n正確選項：不用再扣除 工作距離鏡片（working lens）。\n檢影工作距離改變會改變中和所需度數。實作上常把手臂伸直固定距離；若未戴 工作距離鏡片（working lens），最後要扣除 工作距離（working distance） 透鏡（lens）。",
           "choices": [
-            "再扣一次 working lens",
-            "不用再扣除 working lens",
+            "再扣一次 工作距離鏡片（working lens）",
+            "不用再扣除 工作距離鏡片（working lens）",
             "全部加 +3.00D",
-            "只保留 cylinder"
-          ]
+            "只保留 柱鏡度數（cylinder）"
+          ],
+          "id": "c149e8861"
         },
         {
           "type": "card",
-          "title": "retinoscope sleeve down 是 plane mirror effect",
-          "body": "**一句話／白話**\n套筒位置會改變出射光型態，判讀 with/against 前要先知道目前是 plane mirror 還是 concave mirror effect。\n\n**觀念**\n課堂強調 sleeve down 時光源與反射鏡較近，呈現較發散的 plane mirror effect；sleeve up 則較接近 concave mirror/聚合效果。\n\n**重點**\n- 初學流程多以 sleeve down position\n- 要熟悉 retinoscope 內部：光源、反射鏡、鏡子\n- plane mirror effect 會影響 with/against 的判讀\n\n**考試角度**\n- 初學流程多以 sleeve down position\n- 要熟悉 retinoscope 內部：光源、反射鏡、鏡子\n- plane mirror effect 會影響 with/against 的判讀\n\n**口訣**\n先看 sleeve，再判 motion；模式錯，方向會誤解。",
+          "title": "retinoscope sleeve down 是 平面鏡效應（plane mirror effect）",
+          "body": "**一句話／白話**\n套筒位置會改變出射光型態，判讀 with/against 前要先知道目前是 plane mirror 還是 凹面鏡效應（concave mirror effect）。\n\n**觀念**\n課堂強調 sleeve down 時光源與反射鏡較近，呈現較發散的 平面鏡效應（plane mirror effect）；sleeve up 則較接近 concave mirror/聚合效果。\n\n**重點**\n- 初學流程多以 sleeve down position\n- 要熟悉 retinoscope 內部：光源、反射鏡、鏡子\n- 平面鏡效應 會影響 with/against 的判讀\n\n**考試角度**\n- 初學流程多以 sleeve down position\n- 要熟悉 retinoscope 內部：光源、反射鏡、鏡子\n- 平面鏡效應 會影響 with/against 的判讀\n\n**口訣**\n先看 sleeve，再判 motion；模式錯，方向會誤解。",
           "keys": [
             "初學流程多以 sleeve down position",
             "要熟悉 retinoscope 內部：光源、反射鏡、鏡子",
-            "plane mirror effect 會影響 with/against 的判讀"
+            "平面鏡效應（plane mirror effect） 會影響 with/against 的判讀"
           ],
           "tip": "口訣：先看 sleeve，再判 motion；模式錯，方向會誤解。"
         },
@@ -100,24 +102,25 @@
           "q": "逐字稿中 sleeve down position 主要對應哪種效果？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "老師說 sleeve 往下時以平行/較發散方式呈現，屬 plane mirror effect。\n\n正確選項：plane mirror effect。\n課堂強調 sleeve down 時光源與反射鏡較近，呈現較發散的 plane mirror effect；sleeve up 則較接近 concave mirror/聚合效果。",
+          "explain": "老師說 sleeve 往下時以平行/較發散方式呈現，屬 平面鏡效應（plane mirror effect）。\n\n正確選項：平面鏡效應（plane mirror effect）。\n課堂強調 sleeve down 時光源與反射鏡較近，呈現較發散的 平面鏡效應（plane mirror effect）；sleeve up 則較接近 concave mirror/聚合效果。",
           "choices": [
-            "prism thinning",
-            "plane mirror effect",
-            "corneal topography",
-            "near reflex"
-          ]
+            "稜鏡（prism） thinning",
+            "平面鏡效應（plane mirror effect）",
+            "角膜的（corneal） 地形圖（topography）",
+            "near 反射（reflex）"
+          ],
+          "id": "ce7ef8ff5"
         },
         {
           "type": "example",
-          "title": "範例拆解：retinoscope sleeve down 是 plane mirror effect",
-          "problem": "逐字稿中 sleeve down position 主要對應哪種效果？\n\nA. prism thinning\nB. plane mirror effect\nC. corneal topography\nD. near reflex",
+          "title": "範例拆解：retinoscope sleeve down 是 平面鏡效應（plane mirror effect）",
+          "problem": "逐字稿中 sleeve down position 主要對應哪種效果？\n\nA. 稜鏡（prism） thinning\nB. 平面鏡效應（plane mirror effect）\nC. 角膜的（corneal） 地形圖（topography）\nD. near 反射（reflex）",
           "steps": [
-            "先確認題目問的主題：retinoscope sleeve down 是 plane mirror effect",
-            "課堂強調 sleeve down 時光源與反射鏡較近，呈現較發散的 plane mirror effect；sleeve up 則較接近 concave mirror/聚合效果。",
-            "把判斷依據連回題目：老師說 sleeve 往下時以平行/較發散方式呈現，屬 plane mirror effect。\n\n正確選項：plane mirror effect。\n課堂強調 sleeve down 時光源與反射鏡較近，呈現較發散的 plane mirror effect；sleeve up 則較接近 concave mirror/聚合效果。"
+            "先確認題目問的主題：retinoscope sleeve down 是 平面鏡效應（plane mirror effect）",
+            "課堂強調 sleeve down 時光源與反射鏡較近，呈現較發散的 平面鏡效應（plane mirror effect）；sleeve up 則較接近 concave mirror/聚合效果。",
+            "把判斷依據連回題目：老師說 sleeve 往下時以平行/較發散方式呈現，屬 平面鏡效應（plane mirror effect）。\n\n正確選項：平面鏡效應（plane mirror effect）。\n課堂強調 sleeve down 時光源與反射鏡較近，呈現較發散的 平面鏡效應（plane mirror effect）；sleeve up 則較接近 concave mirror/聚合效果。"
           ],
-          "answer": "plane mirror effect"
+          "answer": "平面鏡效應（plane mirror effect）"
         },
         {
           "type": "practice",
@@ -129,38 +132,40 @@
           "checks": [
             {
               "kind": "single",
-              "q": "若受檢者已戴相當於 57 cm 的 working lens 進行檢影，最後處方應如何處理？",
+              "q": "若受檢者已戴相當於 57 cm 的 工作距離鏡片（working lens） 進行檢影，最後處方應如何處理？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "逐字稿題目中說已戴 working distance 補助鏡，因此掃出的結果就是 Rx。\n\n正確選項：不用再扣除 working lens。\n檢影工作距離改變會改變中和所需度數。實作上常把手臂伸直固定距離；若未戴 working lens，最後要扣除 working distance lens。",
+              "explain": "逐字稿題目中說已戴 工作距離（working distance） 補助鏡，因此掃出的結果就是 Rx。\n\n正確選項：不用再扣除 工作距離鏡片（working lens）。\n檢影工作距離改變會改變中和所需度數。實作上常把手臂伸直固定距離；若未戴 工作距離鏡片（working lens），最後要扣除 工作距離（working distance） 透鏡（lens）。",
               "choices": [
-                "再扣一次 working lens",
-                "不用再扣除 working lens",
+                "再扣一次 工作距離鏡片（working lens）",
+                "不用再扣除 工作距離鏡片（working lens）",
                 "全部加 +3.00D",
-                "只保留 cylinder"
-              ]
+                "只保留 柱鏡度數（cylinder）"
+              ],
+              "id": "c149e8861"
             },
             {
               "kind": "single",
               "q": "逐字稿中 sleeve down position 主要對應哪種效果？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "老師說 sleeve 往下時以平行/較發散方式呈現，屬 plane mirror effect。\n\n正確選項：plane mirror effect。\n課堂強調 sleeve down 時光源與反射鏡較近，呈現較發散的 plane mirror effect；sleeve up 則較接近 concave mirror/聚合效果。",
+              "explain": "老師說 sleeve 往下時以平行/較發散方式呈現，屬 平面鏡效應（plane mirror effect）。\n\n正確選項：平面鏡效應（plane mirror effect）。\n課堂強調 sleeve down 時光源與反射鏡較近，呈現較發散的 平面鏡效應（plane mirror effect）；sleeve up 則較接近 concave mirror/聚合效果。",
               "choices": [
-                "prism thinning",
-                "plane mirror effect",
-                "corneal topography",
-                "near reflex"
-              ]
+                "稜鏡（prism） thinning",
+                "平面鏡效應（plane mirror effect）",
+                "角膜的（corneal） 地形圖（topography）",
+                "near 反射（reflex）"
+              ],
+              "id": "ce7ef8ff5"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "看遠可放鬆 accommodation",
+            "看遠可放鬆 調節（accommodation）",
             "驗者擋住視標會讓病人開始調節",
-            "57 cm 約等於 +1.75D working lens",
+            "57 cm 約等於 +1.75D 工作距離鏡片（working lens）",
             "若病人已戴相當於工作距離的補助鏡，就不再扣",
             "初學流程多以 sleeve down position",
             "要熟悉 retinoscope 內部：光源、反射鏡、鏡子"
@@ -168,19 +173,23 @@
           "flash": [
             {
               "front": "受檢者看遠，驗者不要擋住視線",
-              "back": "檢影要讓病人放鬆看遠；如果驗者擋住遠方目標，病人調節一啟動，屈光估計就偏了。"
+              "back": "檢影要讓病人放鬆看遠；如果驗者擋住遠方目標，病人調節一啟動，屈光估計就偏了。",
+              "id": "f1e369bf9"
             },
             {
-              "front": "working distance 要固定",
-              "back": "工作距離是檢影的基準平面；距離不同，最後要扣掉的 working lens 也不同。"
+              "front": "工作距離（working distance） 要固定",
+              "back": "工作距離是檢影的基準平面；距離不同，最後要扣掉的 工作距離鏡片（working lens） 也不同。",
+              "id": "fc28e46eb"
             },
             {
-              "front": "retinoscope sleeve down 是 plane mirror effect",
-              "back": "套筒位置會改變出射光型態，判讀 with/against 前要先知道目前是 plane mirror 還是 concave mirror effect。"
+              "front": "retinoscope sleeve down 是 平面鏡效應（plane mirror effect）",
+              "back": "套筒位置會改變出射光型態，判讀 with/against 前要先知道目前是 plane mirror 還是 凹面鏡效應（concave mirror effect）。",
+              "id": "ff1775008"
             },
             {
               "front": "視網膜檢影時若驗者擋住病人遠方視標，最可能造成？",
-              "back": "逐字稿特別說擋住視線會讓病人沒有目標可看，開始調節，檢影不準。\n\n正確選項：病人調節不穩導致結果不準。\n病人應注視遠方目標。掃右眼用右眼、掃左眼用左眼，身體稍微偏側，避免擋住患者視線造成調節不穩。"
+              "back": "逐字稿特別說擋住視線會讓病人沒有目標可看，開始調節，檢影不準。\n\n正確選項：病人調節不穩導致結果不準。\n病人應注視遠方目標。掃右眼用右眼、掃左眼用左眼，身體稍微偏側，避免擋住患者視線造成調節不穩。",
+              "id": "f3371e502"
             }
           ]
         }
@@ -188,107 +197,110 @@
     },
     {
       "id": "motion-neutral-1",
-      "title": "with/against motion 與中和",
+      "title": "with/逆動（against motion） 與中和",
       "goals": [
-        "解釋with motion 與 against motion",
-        "解釋bracketing：先跨過再抓回中和點",
+        "解釋順動（with motion） 與 逆動（against motion）",
+        "解釋夾逼法（bracketing）：先跨過再抓回中和點",
         "解釋球面中和後再處理第二主經線"
       ],
       "steps": [
         {
           "type": "intro",
-          "title": "with/against motion 與中和",
-          "body": "檢影判讀核心是看眼底反射相對 streak 的移動方向，逐步加球鏡或柱鏡直到 neutral reflex。\n\n- 先辨認 with 與 against。\n- 再用 bracketing 夾出 neutral。\n- 最後轉 90 度處理第二主經線。"
+          "title": "with/逆動（against motion） 與中和",
+          "body": "檢影判讀核心是看眼底反射相對 線狀光帶（streak） 的移動方向，逐步加球鏡或柱鏡直到 中和（neutral） 反射（reflex）。\n\n- 先辨認 with 與 against。\n- 再用 夾逼法（bracketing） 夾出 中和。\n- 最後轉 90 度處理第二主經線。"
         },
         {
           "type": "card",
-          "title": "with motion 與 against motion",
-          "body": "**一句話／白話**\nwith motion 是反射跟光帶同向，against motion 是反向；你用鏡片把反射推到 neutral。\n\n**觀念**\nwith motion 表示反射光跟 streak 同方向；against motion 表示反射光反方向。中和時反射不再有明顯移動，亮度通常最亮、最寬、最快。\n\n**重點**\n- with motion 通常先用球面度數處理\n- against motion 表示焦線已在視網膜前方\n- neutral 是 endpoint，不是越亮越好就一直加\n\n**考試角度**\n- with motion 通常先用球面度數處理\n- against motion 表示焦線已在視網膜前方\n- neutral 是 endpoint，不是越亮越好就一直加\n\n**口訣**\n順動加正或少負，逆動加負或少正；終點是 neutral。",
+          "title": "順動（with motion） 與 逆動（against motion）",
+          "body": "**一句話／白話**\n順動（with motion） 是反射跟光帶同向，逆動（against motion） 是反向；你用鏡片把反射推到 中和（neutral）。\n\n**觀念**\n順動 表示反射光跟 線狀光帶（streak） 同方向；逆動 表示反射光反方向。中和時反射不再有明顯移動，亮度通常最亮、最寬、最快。\n\n**重點**\n- 順動 通常先用球面度數處理\n- 逆動 表示焦線已在視網膜前方\n- 中和 是 終點（endpoint），不是越亮越好就一直加\n\n**考試角度**\n- 順動 通常先用球面度數處理\n- 逆動 表示焦線已在視網膜前方\n- 中和 是 終點，不是越亮越好就一直加\n\n**口訣**\n順動加正或少負，逆動加負或少正；終點是 中和。",
           "keys": [
-            "with motion 通常先用球面度數處理",
-            "against motion 表示焦線已在視網膜前方",
-            "neutral 是 endpoint，不是越亮越好就一直加"
+            "順動（with motion） 通常先用球面度數處理",
+            "逆動（against motion） 表示焦線已在視網膜前方",
+            "中和（neutral） 是 終點（endpoint），不是越亮越好就一直加"
           ],
-          "tip": "口訣：順動加正或少負，逆動加負或少正；終點是 neutral。"
+          "tip": "口訣：順動加正或少負，逆動加負或少正；終點是 中和（neutral）。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "檢影中看到反射光與 streak 反方向移動，稱為？",
+          "q": "檢影中看到反射光與 線狀光帶（streak） 反方向移動，稱為？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "反向就是 against motion。\n\n正確選項：against motion。\nwith motion 表示反射光跟 streak 同方向；against motion 表示反射光反方向。中和時反射不再有明顯移動，亮度通常最亮、最寬、最快。",
+          "explain": "反向就是 逆動（against motion）。\n\n正確選項：逆動（against motion）。\n順動（with motion） 表示反射光跟 線狀光帶（streak） 同方向；逆動（against motion） 表示反射光反方向。中和時反射不再有明顯移動，亮度通常最亮、最寬、最快。",
           "choices": [
-            "neutral",
-            "with motion",
-            "against motion",
-            "MCR"
-          ]
+            "中和（neutral）",
+            "順動（with motion）",
+            "逆動（against motion）",
+            "角膜反射像清楚且規則（MCR）"
+          ],
+          "id": "cf7bc72d2"
         },
         {
           "type": "card",
-          "title": "bracketing：先跨過再抓回中和點",
-          "body": "**一句話／白話**\nbracketing 是故意從一側跨過中和點，再往回縮小範圍，避免把接近中和誤判成真正中和。\n\n**觀念**\n若加鏡後反射變暗，可能走錯方向。初學常先調到可看見明顯 against motion，再往回推抓 neutral，這就是 bracketing。\n\n**重點**\n- 不要長時間停留在誘發調節的狀態\n- 跨過 endpoint 再回來可提高判斷\n- 反射變暗可能代表方向錯\n\n**考試角度**\n- 不要長時間停留在誘發調節的狀態\n- 跨過 endpoint 再回來可提高判斷\n- 反射變暗可能代表方向錯\n\n**口訣**\n先跨過，再夾回；endpoint 不是最亮，是剛好 neutral。",
+          "title": "夾逼法（bracketing）：先跨過再抓回中和點",
+          "body": "**一句話／白話**\n夾逼法（bracketing） 是故意從一側跨過中和點，再往回縮小範圍，避免把接近中和誤判成真正中和。\n\n**觀念**\n若加鏡後反射變暗，可能走錯方向。初學常先調到可看見明顯 逆動（against motion），再往回推抓 中和（neutral），這就是 夾逼法。\n\n**重點**\n- 不要長時間停留在誘發調節的狀態\n- 跨過 終點（endpoint） 再回來可提高判斷\n- 反射變暗可能代表方向錯\n\n**考試角度**\n- 不要長時間停留在誘發調節的狀態\n- 跨過 終點 再回來可提高判斷\n- 反射變暗可能代表方向錯\n\n**口訣**\n先跨過，再夾回；終點 不是最亮，是剛好 中和。",
           "keys": [
             "不要長時間停留在誘發調節的狀態",
-            "跨過 endpoint 再回來可提高判斷",
+            "跨過 終點（endpoint） 再回來可提高判斷",
             "反射變暗可能代表方向錯"
           ],
-          "tip": "口訣：先跨過，再夾回；endpoint 不是最亮，是剛好 neutral。"
+          "tip": "口訣：先跨過，再夾回；終點（endpoint） 不是最亮，是剛好 中和（neutral）。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "bracketing 技巧的重點是？",
+          "q": "夾逼法（bracketing） 技巧的重點是？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "逐字稿說從一側調到另一側，再回去抓中點，稱 bracketing。\n\n正確選項：故意跨過中和點再回推找 endpoint。\n若加鏡後反射變暗，可能走錯方向。初學常先調到可看見明顯 against motion，再往回推抓 neutral，這就是 bracketing。",
+          "explain": "逐字稿說從一側調到另一側，再回去抓中點，稱 夾逼法（bracketing）。\n\n正確選項：故意跨過中和點再回推找 終點（endpoint）。\n若加鏡後反射變暗，可能走錯方向。初學常先調到可看見明顯 逆動（against motion），再往回推抓 中和（neutral），這就是 夾逼法（bracketing）。",
           "choices": [
             "永遠只加正鏡",
-            "故意跨過中和點再回推找 endpoint",
+            "故意跨過中和點再回推找 終點（endpoint）",
             "只測第二主經線",
-            "忽略 working distance"
-          ]
+            "忽略 工作距離（working distance）"
+          ],
+          "id": "c24529b8a"
         },
         {
           "type": "card",
           "title": "球面中和後再處理第二主經線",
-          "body": "**一句話／白話**\n先把一條主經線用 sphere 中和，再轉 90 度看另一條主經線差多少，差值就是散光成分。\n\n**觀念**\n先找最 hyperopic 的主經線，用 sphere power 中和。再把 streak 與 phoropter axis 轉 90 度，第二主經線應看到 against motion，接著用 cylinder power 中和。\n\n**重點**\n- 第一主經線：sphere power\n- 第二主經線：cylinder power\n- 規則性散光兩主經線差 90 度\n\n**考試角度**\n- 第一主經線：sphere power\n- 第二主經線：cylinder power\n- 規則性散光兩主經線差 90 度\n\n**口訣**\n一軸先 neutral，轉 90 度找 cylinder。",
+          "body": "**一句話／白話**\n先把一條主經線用 球面度數（sphere） 中和，再轉 90 度看另一條主經線差多少，差值就是散光成分。\n\n**觀念**\n先找最 hyperopic 的主經線，用 球面度數 屈光力（power） 中和。再把 線狀光帶（streak） 與 綜合驗光儀（phoropter） 軸向（axis） 轉 90 度，第二主經線應看到 逆動（against motion），接著用 柱鏡度數（cylinder） 屈光力 中和。\n\n**重點**\n- 第一主經線：球面度數 屈光力\n- 第二主經線：柱鏡度數 屈光力\n- 規則性散光兩主經線差 90 度\n\n**考試角度**\n- 第一主經線：球面度數 屈光力\n- 第二主經線：柱鏡度數 屈光力\n- 規則性散光兩主經線差 90 度\n\n**口訣**\n一軸先 中和（neutral），轉 90 度找 柱鏡度數。",
           "keys": [
-            "第一主經線：sphere power",
-            "第二主經線：cylinder power",
+            "第一主經線：球面度數（sphere） 屈光力（power）",
+            "第二主經線：柱鏡度數（cylinder） 屈光力（power）",
             "規則性散光兩主經線差 90 度"
           ],
-          "tip": "口訣：一軸先 neutral，轉 90 度找 cylinder。"
+          "tip": "口訣：一軸先 中和（neutral），轉 90 度找 柱鏡度數（cylinder）。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "retinoscopy with phoropter 中，第一主經線中和後，第二主經線通常用什麼中和？",
+          "q": "視網膜檢影（retinoscopy） with 綜合驗光儀（phoropter） 中，第一主經線中和後，第二主經線通常用什麼中和？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "投影片與逐字稿都說第二主經線用 cylinder power neutralize。\n\n正確選項：cylinder power。\n先找最 hyperopic 的主經線，用 sphere power 中和。再把 streak 與 phoropter axis 轉 90 度，第二主經線應看到 against motion，接著用 cylinder power 中和。",
+          "explain": "投影片與逐字稿都說第二主經線用 柱鏡度數（cylinder） 屈光力（power） neutralize。\n\n正確選項：柱鏡度數（cylinder） 屈光力（power）。\n先找最 hyperopic 的主經線，用 球面度數（sphere） 屈光力（power） 中和。再把 線狀光帶（streak） 與 綜合驗光儀（phoropter） 軸向（axis） 轉 90 度，第二主經線應看到 逆動（against motion），接著用 柱鏡度數（cylinder） 屈光力（power） 中和。",
           "choices": [
-            "cylinder power",
-            "PD ruler",
-            "cocaine",
-            "keratometer mire"
-          ]
+            "柱鏡度數（cylinder） 屈光力（power）",
+            "瞳距（PD） ruler",
+            "古柯鹼（cocaine）",
+            "角膜曲率儀（keratometer） 測標反射像（mire）"
+          ],
+          "id": "cde78e03a"
         },
         {
           "type": "example",
           "title": "範例拆解：球面中和後再處理第二主經線",
-          "problem": "retinoscopy with phoropter 中，第一主經線中和後，第二主經線通常用什麼中和？\n\nA. cylinder power\nB. PD ruler\nC. cocaine\nD. keratometer mire",
+          "problem": "視網膜檢影（retinoscopy） with 綜合驗光儀（phoropter） 中，第一主經線中和後，第二主經線通常用什麼中和？\n\nA. 柱鏡度數（cylinder） 屈光力（power）\nB. 瞳距（PD） ruler\nC. 古柯鹼（cocaine）\nD. 角膜曲率儀（keratometer） 測標反射像（mire）",
           "steps": [
             "先確認題目問的主題：球面中和後再處理第二主經線",
-            "先找最 hyperopic 的主經線，用 sphere power 中和。再把 streak 與 phoropter axis 轉 90 度，第二主經線應看到 against motion，接著用 cylinder power 中和。",
-            "把判斷依據連回題目：投影片與逐字稿都說第二主經線用 cylinder power neutralize。\n\n正確選項：cylinder power。\n先找最 hyperopic 的主經線，用 sphere power 中和。再把 streak 與 phoropter axis 轉 90 度，第二主經線應看到 against motion，接著用 cylinder power 中和。"
+            "先找最 hyperopic 的主經線，用 球面度數（sphere） 屈光力（power） 中和。再把 線狀光帶（streak） 與 綜合驗光儀（phoropter） 軸向（axis） 轉 90 度，第二主經線應看到 逆動（against motion），接著用 柱鏡度數（cylinder） 屈光力（power） 中和。",
+            "把判斷依據連回題目：投影片與逐字稿都說第二主經線用 柱鏡度數（cylinder） 屈光力（power） neutralize。\n\n正確選項：柱鏡度數（cylinder） 屈光力（power）。\n先找最 hyperopic 的主經線，用 球面度數（sphere） 屈光力（power） 中和。再把 線狀光帶（streak） 與 綜合驗光儀（phoropter） 軸向（axis） 轉 90 度，第二主經線應看到 逆動（against motion），接著用 柱鏡度數（cylinder） 屈光力（power） 中和。"
           ],
-          "answer": "cylinder power"
+          "answer": "柱鏡度數（cylinder） 屈光力（power）"
         },
         {
           "type": "practice",
-          "title": "實戰：with/against motion 與中和",
+          "title": "實戰：with/逆動（against motion） 與中和",
           "qids": [
             "s114-optometry-exam106-u05-opt-q0006",
             "s114-optometry-exam106-u05-opt-q0008"
@@ -296,58 +308,64 @@
           "checks": [
             {
               "kind": "single",
-              "q": "bracketing 技巧的重點是？",
+              "q": "夾逼法（bracketing） 技巧的重點是？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "逐字稿說從一側調到另一側，再回去抓中點，稱 bracketing。\n\n正確選項：故意跨過中和點再回推找 endpoint。\n若加鏡後反射變暗，可能走錯方向。初學常先調到可看見明顯 against motion，再往回推抓 neutral，這就是 bracketing。",
+              "explain": "逐字稿說從一側調到另一側，再回去抓中點，稱 夾逼法（bracketing）。\n\n正確選項：故意跨過中和點再回推找 終點（endpoint）。\n若加鏡後反射變暗，可能走錯方向。初學常先調到可看見明顯 逆動（against motion），再往回推抓 中和（neutral），這就是 夾逼法（bracketing）。",
               "choices": [
                 "永遠只加正鏡",
-                "故意跨過中和點再回推找 endpoint",
+                "故意跨過中和點再回推找 終點（endpoint）",
                 "只測第二主經線",
-                "忽略 working distance"
-              ]
+                "忽略 工作距離（working distance）"
+              ],
+              "id": "c24529b8a"
             },
             {
               "kind": "single",
-              "q": "retinoscopy with phoropter 中，第一主經線中和後，第二主經線通常用什麼中和？",
+              "q": "視網膜檢影（retinoscopy） with 綜合驗光儀（phoropter） 中，第一主經線中和後，第二主經線通常用什麼中和？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "投影片與逐字稿都說第二主經線用 cylinder power neutralize。\n\n正確選項：cylinder power。\n先找最 hyperopic 的主經線，用 sphere power 中和。再把 streak 與 phoropter axis 轉 90 度，第二主經線應看到 against motion，接著用 cylinder power 中和。",
+              "explain": "投影片與逐字稿都說第二主經線用 柱鏡度數（cylinder） 屈光力（power） neutralize。\n\n正確選項：柱鏡度數（cylinder） 屈光力（power）。\n先找最 hyperopic 的主經線，用 球面度數（sphere） 屈光力（power） 中和。再把 線狀光帶（streak） 與 綜合驗光儀（phoropter） 軸向（axis） 轉 90 度，第二主經線應看到 逆動（against motion），接著用 柱鏡度數（cylinder） 屈光力（power） 中和。",
               "choices": [
-                "cylinder power",
-                "PD ruler",
-                "cocaine",
-                "keratometer mire"
-              ]
+                "柱鏡度數（cylinder） 屈光力（power）",
+                "瞳距（PD） ruler",
+                "古柯鹼（cocaine）",
+                "角膜曲率儀（keratometer） 測標反射像（mire）"
+              ],
+              "id": "cde78e03a"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "with motion 通常先用球面度數處理",
-            "against motion 表示焦線已在視網膜前方",
+            "順動（with motion） 通常先用球面度數處理",
+            "逆動（against motion） 表示焦線已在視網膜前方",
             "不要長時間停留在誘發調節的狀態",
-            "跨過 endpoint 再回來可提高判斷",
-            "第一主經線：sphere power",
-            "第二主經線：cylinder power"
+            "跨過 終點（endpoint） 再回來可提高判斷",
+            "第一主經線：球面度數（sphere） 屈光力（power）",
+            "第二主經線：柱鏡度數（cylinder） 屈光力（power）"
           ],
           "flash": [
             {
-              "front": "with motion 與 against motion",
-              "back": "with motion 是反射跟光帶同向，against motion 是反向；你用鏡片把反射推到 neutral。"
+              "front": "順動（with motion） 與 逆動（against motion）",
+              "back": "順動（with motion） 是反射跟光帶同向，逆動（against motion） 是反向；你用鏡片把反射推到 中和（neutral）。",
+              "id": "f4f8bea27"
             },
             {
-              "front": "bracketing：先跨過再抓回中和點",
-              "back": "bracketing 是故意從一側跨過中和點，再往回縮小範圍，避免把接近中和誤判成真正中和。"
+              "front": "夾逼法（bracketing）：先跨過再抓回中和點",
+              "back": "夾逼法（bracketing） 是故意從一側跨過中和點，再往回縮小範圍，避免把接近中和誤判成真正中和。",
+              "id": "f3c9be962"
             },
             {
               "front": "球面中和後再處理第二主經線",
-              "back": "先把一條主經線用 sphere 中和，再轉 90 度看另一條主經線差多少，差值就是散光成分。"
+              "back": "先把一條主經線用 球面度數（sphere） 中和，再轉 90 度看另一條主經線差多少，差值就是散光成分。",
+              "id": "f1662e800"
             },
             {
-              "front": "檢影中看到反射光與 streak 反方向移動，稱為？",
-              "back": "反向就是 against motion。\n\n正確選項：against motion。\nwith motion 表示反射光跟 streak 同方向；against motion 表示反射光反方向。中和時反射不再有明顯移動，亮度通常最亮、最寬、最快。"
+              "front": "檢影中看到反射光與 線狀光帶（streak） 反方向移動，稱為？",
+              "back": "反向就是 逆動（against motion）。\n\n正確選項：逆動（against motion）。\n順動（with motion） 表示反射光跟 線狀光帶（streak） 同方向；逆動（against motion） 表示反射光反方向。中和時反射不再有明顯移動，亮度通常最亮、最寬、最快。",
+              "id": "ff7bc72d2"
             }
           ]
         }
@@ -357,26 +375,26 @@
       "id": "phoropter-cylinder-1",
       "title": "綜合驗光儀與柱鏡/軸位",
       "goals": [
-        "解釋phoropter 控制：sphere/cylinder/axis",
-        "解釋streak、反射光、phoropter axis 要平行",
-        "解釋負柱鏡寫法：比較正者作 sphere"
+        "解釋綜合驗光儀（phoropter） 控制：球面度數（sphere）/柱鏡度數（cylinder）/軸向（axis）",
+        "解釋線狀光帶（streak）、反射光、綜合驗光儀（phoropter） 軸向（axis） 要平行",
+        "解釋負柱鏡寫法：比較正者作 球面度數（sphere）"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "綜合驗光儀與柱鏡/軸位",
-          "body": "phoropter 上 sphere、cylinder、axis 的操作要與檢影 streak 和反射光方向保持平行，避免軸位與度數對錯。\n\n- 先知道 sphere/cylinder/axis 各管什麼。\n- 再讓 streak、reflex、axis 平行。\n- 最後把兩主經線轉成負柱鏡。"
+          "body": "綜合驗光儀（phoropter） 上 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis） 的操作要與檢影 線狀光帶（streak） 和反射光方向保持平行，避免軸位與度數對錯。\n\n- 先知道 球面度數/柱鏡度數/軸向 各管什麼。\n- 再讓 線狀光帶、反射（reflex）、軸向 平行。\n- 最後把兩主經線轉成負柱鏡。"
         },
         {
           "type": "card",
-          "title": "phoropter 控制：sphere/cylinder/axis",
-          "body": "**一句話／白話**\n綜合驗光儀上 sphere 控整體焦點，cylinder 控散光量，axis 控散光方向；三者不要混在一起轉。\n\n**觀念**\n投影片標出 0.25D sphere、3.00D sphere、sphere power scale、cylinder power knob、cylinder axis knob 與 cylinder power scale。實驗室使用負柱鏡系統。\n\n**重點**\n- sphere 常以 0.25D step 微調\n- cylinder power knob 每格常 0.25D\n- axis knob 改變柱鏡軸位\n\n**考試角度**\n- sphere 常以 0.25D step 微調\n- cylinder power knob 每格常 0.25D\n- axis knob 改變柱鏡軸位\n\n**口訣**\nS 管整體，C 管差值，axis 管方向。",
+          "title": "綜合驗光儀（phoropter） 控制：球面度數（sphere）/柱鏡度數（cylinder）/軸向（axis）",
+          "body": "**一句話／白話**\n綜合驗光儀上 球面度數（sphere） 控整體焦點，柱鏡度數（cylinder） 控散光量，軸向（axis） 控散光方向；三者不要混在一起轉。\n\n**觀念**\n投影片標出 0.25D 球面度數、3.00D 球面度數、球面度數 屈光力（power） scale、柱鏡度數 屈光力 knob、柱鏡度數 軸向 knob 與 柱鏡度數 屈光力 scale。實驗室使用負柱鏡系統。\n\n**重點**\n- 球面度數 常以 0.25D step 微調\n- 柱鏡度數 屈光力 knob 每格常 0.25D\n- 軸向 knob 改變柱鏡軸位\n\n**考試角度**\n- 球面度數 常以 0.25D step 微調\n- 柱鏡度數 屈光力 knob 每格常 0.25D\n- 軸向 knob 改變柱鏡軸位\n\n**口訣**\nS 管整體，C 管差值，軸向 管方向。",
           "keys": [
-            "sphere 常以 0.25D step 微調",
-            "cylinder power knob 每格常 0.25D",
-            "axis knob 改變柱鏡軸位"
+            "球面度數（sphere） 常以 0.25D step 微調",
+            "柱鏡度數（cylinder） 屈光力（power） knob 每格常 0.25D",
+            "軸向（axis） knob 改變柱鏡軸位"
           ],
-          "tip": "口訣：S 管整體，C 管差值，axis 管方向。"
+          "tip": "口訣：S 管整體，C 管差值，軸向（axis） 管方向。"
         },
         {
           "type": "check",
@@ -384,24 +402,25 @@
           "q": "要改變柱鏡軸位時，主要操作哪個部分？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "axis knob 控制柱鏡軸位。\n\n正確選項：cylinder axis knob。\n投影片標出 0.25D sphere、3.00D sphere、sphere power scale、cylinder power knob、cylinder axis knob 與 cylinder power scale。實驗室使用負柱鏡系統。",
+          "explain": "軸向（axis） knob 控制柱鏡軸位。\n\n正確選項：柱鏡度數（cylinder） 軸向（axis） knob。\n投影片標出 0.25D 球面度數（sphere）、3.00D 球面度數（sphere）、球面度數（sphere） 屈光力（power） scale、柱鏡度數（cylinder） 屈光力（power） knob、柱鏡度數（cylinder） 軸向（axis） knob 與 柱鏡度數（cylinder） 屈光力（power） scale。實驗室使用負柱鏡系統。",
           "choices": [
-            "cylinder axis knob",
-            "PD ruler",
-            "lens stop",
-            "mire alignment knob"
-          ]
+            "柱鏡度數（cylinder） 軸向（axis） knob",
+            "瞳距（PD） ruler",
+            "鏡片靠座（lens stop）",
+            "測標反射像（mire） alignment knob"
+          ],
+          "id": "cff3cd2e5"
         },
         {
           "type": "card",
-          "title": "streak、反射光、phoropter axis 要平行",
-          "body": "**一句話／白話**\n檢影散光時，光帶、視網膜反射與 phoropter axis 必須對準同一主經線，讀值才有意義。\n\n**觀念**\n當找到主經線時，retinoscope streak、眼底反射光方向、phoropter 上的 axis 指示要互相平行，才開始中和。\n\n**重點**\n- 三者平行是軸位正確的安全檢查\n- 第一主經線完成後三者一起轉 90 度\n- 若軸位錯，中和結果會錯\n\n**考試角度**\n- 三者平行是軸位正確的安全檢查\n- 第一主經線完成後三者一起轉 90 度\n- 若軸位錯，中和結果會錯\n\n**口訣**\n三線平行再下手：streak、reflex、axis。",
+          "title": "線狀光帶（streak）、反射光、綜合驗光儀（phoropter） 軸向（axis） 要平行",
+          "body": "**一句話／白話**\n檢影散光時，光帶、視網膜反射與 綜合驗光儀（phoropter） 軸向（axis） 必須對準同一主經線，讀值才有意義。\n\n**觀念**\n當找到主經線時，retinoscope 線狀光帶（streak）、眼底反射光方向、綜合驗光儀 上的 軸向 指示要互相平行，才開始中和。\n\n**重點**\n- 三者平行是軸位正確的安全檢查\n- 第一主經線完成後三者一起轉 90 度\n- 若軸位錯，中和結果會錯\n\n**考試角度**\n- 三者平行是軸位正確的安全檢查\n- 第一主經線完成後三者一起轉 90 度\n- 若軸位錯，中和結果會錯\n\n**口訣**\n三線平行再下手：線狀光帶、反射（reflex）、軸向。",
           "keys": [
             "三者平行是軸位正確的安全檢查",
             "第一主經線完成後三者一起轉 90 度",
             "若軸位錯，中和結果會錯"
           ],
-          "tip": "口訣：三線平行再下手：streak、reflex、axis。"
+          "tip": "口訣：三線平行再下手：線狀光帶（streak）、反射（reflex）、軸向（axis）。"
         },
         {
           "type": "check",
@@ -409,47 +428,49 @@
           "q": "下列哪一組在檢影找主經線時應互相平行？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "逐字稿反覆強調這三個方向要平行。\n\n正確選項：streak、眼底反射、phoropter axis。\n當找到主經線時，retinoscope streak、眼底反射光方向、phoropter 上的 axis 指示要互相平行，才開始中和。",
+          "explain": "逐字稿反覆強調這三個方向要平行。\n\n正確選項：線狀光帶（streak）、眼底反射、綜合驗光儀（phoropter） 軸向（axis）。\n當找到主經線時，retinoscope 線狀光帶（streak）、眼底反射光方向、綜合驗光儀（phoropter） 上的 軸向（axis） 指示要互相平行，才開始中和。",
           "choices": [
-            "streak、眼底反射、phoropter axis",
-            "PD、DBOC、ADD",
+            "線狀光帶（streak）、眼底反射、綜合驗光儀（phoropter） 軸向（axis）",
+            "瞳距（PD）、雙眼光心距離（DBOC）、近用加入度（ADD）",
             "SVC、IVC、PA",
-            "mire、RAPD、Horner"
-          ]
+            "測標反射像（mire）、相對傳入性瞳孔缺損（RAPD）、霍納氏（Horner）"
+          ],
+          "id": "c3d7e87f5"
         },
         {
           "type": "card",
-          "title": "負柱鏡寫法：比較正者作 sphere",
-          "body": "**一句話／白話**\n負柱鏡處方把比較正的主經線當 sphere，再用比較負的差值寫成負 cylinder。\n\n**觀念**\n若兩主經線分別由 -1.75D 與 +0.50D 中和，且題目已處理 working lens，負柱鏡處方以比較正的 +0.50D 為 sphere，差值 2.25D 作負柱鏡。\n\n**重點**\n- 比較正的經線作 sphere\n- 差值為 cylinder magnitude\n- 負柱鏡 axis 為比較正/平的方向\n\n**考試角度**\n- 比較正的經線作 sphere\n- 差值為 cylinder magnitude\n- 負柱鏡 axis 為比較正/平的方向\n\n**公式**\n例：+0.50 -2.25 × 160\n\n**口訣**\n正者當 S，差值當 C，軸看不加 C 的方向。",
+          "title": "負柱鏡寫法：比較正者作 球面度數（sphere）",
+          "body": "**一句話／白話**\n負柱鏡處方把比較正的主經線當 球面度數（sphere），再用比較負的差值寫成負 柱鏡度數（cylinder）。\n\n**觀念**\n若兩主經線分別由 -1.75D 與 +0.50D 中和，且題目已處理 工作距離鏡片（working lens），負柱鏡處方以比較正的 +0.50D 為 球面度數，差值 2.25D 作負柱鏡。\n\n**重點**\n- 比較正的經線作 球面度數\n- 差值為 柱鏡度數 magnitude\n- 負柱鏡 軸向（axis） 為比較正/平的方向\n\n**考試角度**\n- 比較正的經線作 球面度數\n- 差值為 柱鏡度數 magnitude\n- 負柱鏡 軸向 為比較正/平的方向\n\n**公式**\n例：+0.50 -2.25 × 160\n\n**口訣**\n正者當 S，差值當 C，軸看不加 C 的方向。",
           "keys": [
-            "比較正的經線作 sphere",
-            "差值為 cylinder magnitude",
-            "負柱鏡 axis 為比較正/平的方向"
+            "比較正的經線作 球面度數（sphere）",
+            "差值為 柱鏡度數（cylinder） magnitude",
+            "負柱鏡 軸向（axis） 為比較正/平的方向"
           ],
           "tip": "口訣：正者當 S，差值當 C，軸看不加 C 的方向。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "兩主經線中和讀值為 -1.75D 與 +0.50D，負柱鏡的 cylinder magnitude 是？",
+          "q": "兩主經線中和讀值為 -1.75D 與 +0.50D，負柱鏡的 柱鏡度數（cylinder） magnitude 是？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "兩讀值差距為 2.25D。\n\n正確選項：2.25D。\n若兩主經線分別由 -1.75D 與 +0.50D 中和，且題目已處理 working lens，負柱鏡處方以比較正的 +0.50D 為 sphere，差值 2.25D 作負柱鏡。",
+          "explain": "兩讀值差距為 2.25D。\n\n正確選項：2.25D。\n若兩主經線分別由 -1.75D 與 +0.50D 中和，且題目已處理 工作距離鏡片（working lens），負柱鏡處方以比較正的 +0.50D 為 球面度數（sphere），差值 2.25D 作負柱鏡。",
           "choices": [
             "0.50D",
             "1.75D",
             "2.25D",
             "3.00D"
-          ]
+          ],
+          "id": "c1d21309d"
         },
         {
           "type": "example",
-          "title": "範例拆解：負柱鏡寫法：比較正者作 sphere",
-          "problem": "兩主經線中和讀值為 -1.75D 與 +0.50D，負柱鏡的 cylinder magnitude 是？\n\nA. 0.50D\nB. 1.75D\nC. 2.25D\nD. 3.00D",
+          "title": "範例拆解：負柱鏡寫法：比較正者作 球面度數（sphere）",
+          "problem": "兩主經線中和讀值為 -1.75D 與 +0.50D，負柱鏡的 柱鏡度數（cylinder） magnitude 是？\n\nA. 0.50D\nB. 1.75D\nC. 2.25D\nD. 3.00D",
           "steps": [
-            "先確認題目問的主題：負柱鏡寫法：比較正者作 sphere",
-            "若兩主經線分別由 -1.75D 與 +0.50D 中和，且題目已處理 working lens，負柱鏡處方以比較正的 +0.50D 為 sphere，差值 2.25D 作負柱鏡。",
-            "把判斷依據連回題目：兩讀值差距為 2.25D。\n\n正確選項：2.25D。\n若兩主經線分別由 -1.75D 與 +0.50D 中和，且題目已處理 working lens，負柱鏡處方以比較正的 +0.50D 為 sphere，差值 2.25D 作負柱鏡。"
+            "先確認題目問的主題：負柱鏡寫法：比較正者作 球面度數（sphere）",
+            "若兩主經線分別由 -1.75D 與 +0.50D 中和，且題目已處理 工作距離鏡片（working lens），負柱鏡處方以比較正的 +0.50D 為 球面度數（sphere），差值 2.25D 作負柱鏡。",
+            "把判斷依據連回題目：兩讀值差距為 2.25D。\n\n正確選項：2.25D。\n若兩主經線分別由 -1.75D 與 +0.50D 中和，且題目已處理 工作距離鏡片（working lens），負柱鏡處方以比較正的 +0.50D 為 球面度數（sphere），差值 2.25D 作負柱鏡。"
           ],
           "answer": "2.25D"
         },
@@ -466,55 +487,61 @@
               "q": "下列哪一組在檢影找主經線時應互相平行？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "逐字稿反覆強調這三個方向要平行。\n\n正確選項：streak、眼底反射、phoropter axis。\n當找到主經線時，retinoscope streak、眼底反射光方向、phoropter 上的 axis 指示要互相平行，才開始中和。",
+              "explain": "逐字稿反覆強調這三個方向要平行。\n\n正確選項：線狀光帶（streak）、眼底反射、綜合驗光儀（phoropter） 軸向（axis）。\n當找到主經線時，retinoscope 線狀光帶（streak）、眼底反射光方向、綜合驗光儀（phoropter） 上的 軸向（axis） 指示要互相平行，才開始中和。",
               "choices": [
-                "streak、眼底反射、phoropter axis",
-                "PD、DBOC、ADD",
+                "線狀光帶（streak）、眼底反射、綜合驗光儀（phoropter） 軸向（axis）",
+                "瞳距（PD）、雙眼光心距離（DBOC）、近用加入度（ADD）",
                 "SVC、IVC、PA",
-                "mire、RAPD、Horner"
-              ]
+                "測標反射像（mire）、相對傳入性瞳孔缺損（RAPD）、霍納氏（Horner）"
+              ],
+              "id": "c3d7e87f5"
             },
             {
               "kind": "single",
-              "q": "兩主經線中和讀值為 -1.75D 與 +0.50D，負柱鏡的 cylinder magnitude 是？",
+              "q": "兩主經線中和讀值為 -1.75D 與 +0.50D，負柱鏡的 柱鏡度數（cylinder） magnitude 是？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "兩讀值差距為 2.25D。\n\n正確選項：2.25D。\n若兩主經線分別由 -1.75D 與 +0.50D 中和，且題目已處理 working lens，負柱鏡處方以比較正的 +0.50D 為 sphere，差值 2.25D 作負柱鏡。",
+              "explain": "兩讀值差距為 2.25D。\n\n正確選項：2.25D。\n若兩主經線分別由 -1.75D 與 +0.50D 中和，且題目已處理 工作距離鏡片（working lens），負柱鏡處方以比較正的 +0.50D 為 球面度數（sphere），差值 2.25D 作負柱鏡。",
               "choices": [
                 "0.50D",
                 "1.75D",
                 "2.25D",
                 "3.00D"
-              ]
+              ],
+              "id": "c1d21309d"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "sphere 常以 0.25D step 微調",
-            "cylinder power knob 每格常 0.25D",
+            "球面度數（sphere） 常以 0.25D step 微調",
+            "柱鏡度數（cylinder） 屈光力（power） knob 每格常 0.25D",
             "三者平行是軸位正確的安全檢查",
             "第一主經線完成後三者一起轉 90 度",
-            "比較正的經線作 sphere",
-            "差值為 cylinder magnitude"
+            "比較正的經線作 球面度數（sphere）",
+            "差值為 柱鏡度數（cylinder） magnitude"
           ],
           "flash": [
             {
-              "front": "phoropter 控制：sphere/cylinder/axis",
-              "back": "綜合驗光儀上 sphere 控整體焦點，cylinder 控散光量，axis 控散光方向；三者不要混在一起轉。"
+              "front": "綜合驗光儀（phoropter） 控制：球面度數（sphere）/柱鏡度數（cylinder）/軸向（axis）",
+              "back": "綜合驗光儀上 球面度數（sphere） 控整體焦點，柱鏡度數（cylinder） 控散光量，軸向（axis） 控散光方向；三者不要混在一起轉。",
+              "id": "f8a978438"
             },
             {
-              "front": "streak、反射光、phoropter axis 要平行",
-              "back": "檢影散光時，光帶、視網膜反射與 phoropter axis 必須對準同一主經線，讀值才有意義。"
+              "front": "線狀光帶（streak）、反射光、綜合驗光儀（phoropter） 軸向（axis） 要平行",
+              "back": "檢影散光時，光帶、視網膜反射與 綜合驗光儀（phoropter） 軸向（axis） 必須對準同一主經線，讀值才有意義。",
+              "id": "f6671d5cd"
             },
             {
-              "front": "負柱鏡寫法：比較正者作 sphere",
-              "back": "負柱鏡處方把比較正的主經線當 sphere，再用比較負的差值寫成負 cylinder。"
+              "front": "負柱鏡寫法：比較正者作 球面度數（sphere）",
+              "back": "負柱鏡處方把比較正的主經線當 球面度數（sphere），再用比較負的差值寫成負 柱鏡度數（cylinder）。",
+              "id": "f0840a892"
             },
             {
               "front": "要改變柱鏡軸位時，主要操作哪個部分？",
-              "back": "axis knob 控制柱鏡軸位。\n\n正確選項：cylinder axis knob。\n投影片標出 0.25D sphere、3.00D sphere、sphere power scale、cylinder power knob、cylinder axis knob 與 cylinder power scale。實驗室使用負柱鏡系統。"
+              "back": "軸向（axis） knob 控制柱鏡軸位。\n\n正確選項：柱鏡度數（cylinder） 軸向（axis） knob。\n投影片標出 0.25D 球面度數（sphere）、3.00D 球面度數（sphere）、球面度數（sphere） 屈光力（power） scale、柱鏡度數（cylinder） 屈光力（power） knob、柱鏡度數（cylinder） 軸向（axis） knob 與 柱鏡度數（cylinder） 屈光力（power） scale。實驗室使用負柱鏡系統。",
+              "id": "fff3cd2e5"
             }
           ]
         }
@@ -524,47 +551,48 @@
       "id": "review-cases-1",
       "title": "檢影題型總整理",
       "goals": [
-        "解釋先看 working lens 是否已戴",
+        "解釋先看 工作距離鏡片（working lens） 是否已戴",
         "解釋光束方向不等於被測經線方向",
-        "解釋客觀驗光結果要回頭 double check"
+        "解釋客觀驗光結果要回頭 再次確認（double check）"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "檢影題型總整理",
-          "body": "考題常把工作距離、主經線方向、球柱鏡轉換混在一起；拆題時先判斷是否要扣 working lens，再轉成負柱鏡。\n\n- 先讀題幹是否已戴 working lens。\n- 再分清光束方向與 power meridian。\n- 最後回頭 double check 再接主觀驗光。"
+          "body": "考題常把工作距離、主經線方向、球柱鏡轉換混在一起；拆題時先判斷是否要扣 工作距離鏡片（working lens），再轉成負柱鏡。\n\n- 先讀題幹是否已戴 工作距離鏡片。\n- 再分清光束方向與 屈光力子午線（power meridian）。\n- 最後回頭 再次確認（double check） 再接主觀驗光。"
         },
         {
           "type": "card",
-          "title": "先看 working lens 是否已戴",
-          "body": "**一句話／白話**\n檢影題要先判斷 working lens 是否已經放入；已戴就不用再扣，未戴才要扣工作距離。\n\n**觀念**\n題目寫『受檢者戴上相當於 57 cm 的工作距離補助鏡』，代表已補償 working distance，不要再扣。若沒有戴，才用 result - working lens。\n\n**重點**\n- 看到已戴補助鏡：不扣\n- 沒戴補助鏡：扣 working lens\n- 扣錯會整題 sphere 偏移\n\n**考試角度**\n- 看到已戴補助鏡：不扣\n- 沒戴補助鏡：扣 working lens\n- 扣錯會整題 sphere 偏移\n\n**口訣**\n題幹先抓已戴/未戴；不要無腦扣。",
+          "title": "先看 工作距離鏡片（working lens） 是否已戴",
+          "body": "**一句話／白話**\n檢影題要先判斷 工作距離鏡片（working lens） 是否已經放入；已戴就不用再扣，未戴才要扣工作距離。\n\n**觀念**\n題目寫『受檢者戴上相當於 57 cm 的工作距離補助鏡』，代表已補償 工作距離（working distance），不要再扣。若沒有戴，才用 result - 工作距離鏡片。\n\n**重點**\n- 看到已戴補助鏡：不扣\n- 沒戴補助鏡：扣 工作距離鏡片\n- 扣錯會整題 球面度數（sphere） 偏移\n\n**考試角度**\n- 看到已戴補助鏡：不扣\n- 沒戴補助鏡：扣 工作距離鏡片\n- 扣錯會整題 球面度數 偏移\n\n**口訣**\n題幹先抓已戴/未戴；不要無腦扣。",
           "keys": [
             "看到已戴補助鏡：不扣",
-            "沒戴補助鏡：扣 working lens",
-            "扣錯會整題 sphere 偏移"
+            "沒戴補助鏡：扣 工作距離鏡片（working lens）",
+            "扣錯會整題 球面度數（sphere） 偏移"
           ],
           "tip": "口訣：題幹先抓已戴/未戴；不要無腦扣。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "檢影題最容易造成 sphere 整體錯位的第一個陷阱是？",
+          "q": "檢影題最容易造成 球面度數（sphere） 整體錯位的第一個陷阱是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "working lens 是否已戴會直接影響整體球面度數。\n\n正確選項：忘記判斷 working lens 是否已補償。\n題目寫『受檢者戴上相當於 57 cm 的工作距離補助鏡』，代表已補償 working distance，不要再扣。若沒有戴，才用 result - working lens。",
+          "explain": "工作距離鏡片（working lens） 是否已戴會直接影響整體球面度數。\n\n正確選項：忘記判斷 工作距離鏡片（working lens） 是否已補償。\n題目寫『受檢者戴上相當於 57 cm 的工作距離補助鏡』，代表已補償 工作距離（working distance），不要再扣。若沒有戴，才用 result - 工作距離鏡片（working lens）。",
           "choices": [
-            "忘記判斷 working lens 是否已補償",
-            "把 WTR 當 ATR",
+            "忘記判斷 工作距離鏡片（working lens） 是否已補償",
+            "把 順規散光（WTR） 當 逆規散光（ATR）",
             "忘記測 K 值",
-            "把 RAPD 寫成 Horner"
-          ]
+            "把 相對傳入性瞳孔缺損（RAPD） 寫成 霍納氏（Horner）"
+          ],
+          "id": "c5ffee478"
         },
         {
           "type": "card",
           "title": "光束方向不等於被測經線方向",
-          "body": "**一句話／白話**\n檢影光帶的方向和實際被中和的 power meridian 差 90 度，所以要把光束方向轉成正確主經線。\n\n**觀念**\n逐字稿題目提醒：當光束與 160 度平行時，實際掃的是與 streak 垂直的 70 度方向。最後 axis 要依題目與負柱鏡規則判斷。\n\n**重點**\n- streak 平行方向與 power meridian 可能相差 90 度\n- 題目要畫光十字才不容易錯\n- 不要只看到 160 就直接填所有欄位\n\n**考試角度**\n- streak 平行方向與 power meridian 可能相差 90 度\n- 題目要畫光十字才不容易錯\n- 不要只看到 160 就直接填所有欄位\n\n**口訣**\n光帶方向看起來是線；真正測的是垂直那條經線。",
+          "body": "**一句話／白話**\n檢影光帶的方向和實際被中和的 屈光力子午線（power meridian） 差 90 度，所以要把光束方向轉成正確主經線。\n\n**觀念**\n逐字稿題目提醒：當光束與 160 度平行時，實際掃的是與 線狀光帶（streak） 垂直的 70 度方向。最後 軸向（axis） 要依題目與負柱鏡規則判斷。\n\n**重點**\n- 線狀光帶 平行方向與 屈光力子午線 可能相差 90 度\n- 題目要畫光十字才不容易錯\n- 不要只看到 160 就直接填所有欄位\n\n**考試角度**\n- 線狀光帶 平行方向與 屈光力子午線 可能相差 90 度\n- 題目要畫光十字才不容易錯\n- 不要只看到 160 就直接填所有欄位\n\n**口訣**\n光帶方向看起來是線；真正測的是垂直那條經線。",
           "keys": [
-            "streak 平行方向與 power meridian 可能相差 90 度",
+            "線狀光帶（streak） 平行方向與 屈光力子午線（power meridian） 可能相差 90 度",
             "題目要畫光十字才不容易錯",
             "不要只看到 160 就直接填所有欄位"
           ],
@@ -576,22 +604,23 @@
           "q": "當檢影光束與 160 度平行時，常需要注意什麼？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "逐字稿用這題提醒 streak 與主經線方向要畫出來。\n\n正確選項：實際分析的另一主經線可能是 70 度。\n逐字稿題目提醒：當光束與 160 度平行時，實際掃的是與 streak 垂直的 70 度方向。最後 axis 要依題目與負柱鏡規則判斷。",
+          "explain": "逐字稿用這題提醒 線狀光帶（streak） 與主經線方向要畫出來。\n\n正確選項：實際分析的另一主經線可能是 70 度。\n逐字稿題目提醒：當光束與 160 度平行時，實際掃的是與 線狀光帶（streak） 垂直的 70 度方向。最後 軸向（axis） 要依題目與負柱鏡規則判斷。",
           "choices": [
             "實際分析的另一主經線可能是 70 度",
-            "working distance 一定為 1 m",
-            "一定是 RAPD",
+            "工作距離（working distance） 一定為 1 m",
+            "一定是 相對傳入性瞳孔缺損（RAPD）",
             "K 值一定為 45D"
-          ]
+          ],
+          "id": "cbb75835a"
         },
         {
           "type": "card",
-          "title": "客觀驗光結果要回頭 double check",
-          "body": "**一句話／白話**\n客觀驗光只是起點，雙眼各自中和後要回頭確認右眼，再接主觀驗光微調。\n\n**觀念**\n右眼掃完、左眼掃完後，回到右眼 double check。客觀結果是起點，最後仍需主觀驗光確認最佳視力與舒適度。\n\n**重點**\n- 客觀驗光提供起始處方\n- 雙眼互相影響，完成後回查\n- 不要把 retinoscopy 結果當最終配鏡處方\n\n**考試角度**\n- 客觀驗光提供起始處方\n- 雙眼互相影響，完成後回查\n- 不要把 retinoscopy 結果當最終配鏡處方\n\n**口訣**\nOD -> OS -> OD recheck -> subjective refinement。",
+          "title": "客觀驗光結果要回頭 再次確認（double check）",
+          "body": "**一句話／白話**\n客觀驗光只是起點，雙眼各自中和後要回頭確認右眼，再接主觀驗光微調。\n\n**觀念**\n右眼掃完、左眼掃完後，回到右眼 再次確認（double check）。客觀結果是起點，最後仍需主觀驗光確認最佳視力與舒適度。\n\n**重點**\n- 客觀驗光提供起始處方\n- 雙眼互相影響，完成後回查\n- 不要把 視網膜檢影（retinoscopy） 結果當最終配鏡處方\n\n**考試角度**\n- 客觀驗光提供起始處方\n- 雙眼互相影響，完成後回查\n- 不要把 視網膜檢影 結果當最終配鏡處方\n\n**口訣**\nOD -> OS -> OD recheck -> subjective refinement。",
           "keys": [
             "客觀驗光提供起始處方",
             "雙眼互相影響，完成後回查",
-            "不要把 retinoscopy 結果當最終配鏡處方"
+            "不要把 視網膜檢影（retinoscopy） 結果當最終配鏡處方"
           ],
           "tip": "口訣：OD -> OS -> OD recheck -> subjective refinement。"
         },
@@ -601,24 +630,25 @@
           "q": "完成左眼檢影後，逐字稿建議下一步是？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "老師說左眼掃完要回去右眼 double check。\n\n正確選項：回右眼 double check。\n右眼掃完、左眼掃完後，回到右眼 double check。客觀結果是起點，最後仍需主觀驗光確認最佳視力與舒適度。",
+          "explain": "老師說左眼掃完要回去右眼 再次確認（double check）。\n\n正確選項：回右眼 再次確認（double check）。\n右眼掃完、左眼掃完後，回到右眼 再次確認（double check）。客觀結果是起點，最後仍需主觀驗光確認最佳視力與舒適度。",
           "choices": [
             "直接下處方",
-            "回右眼 double check",
+            "回右眼 再次確認（double check）",
             "量 K 值",
-            "點 pilocarpine"
-          ]
+            "點 匹羅卡品（pilocarpine）"
+          ],
+          "id": "cd07b252a"
         },
         {
           "type": "example",
-          "title": "範例拆解：客觀驗光結果要回頭 double check",
-          "problem": "完成左眼檢影後，逐字稿建議下一步是？\n\nA. 直接下處方\nB. 回右眼 double check\nC. 量 K 值\nD. 點 pilocarpine",
+          "title": "範例拆解：客觀驗光結果要回頭 再次確認（double check）",
+          "problem": "完成左眼檢影後，逐字稿建議下一步是？\n\nA. 直接下處方\nB. 回右眼 再次確認（double check）\nC. 量 K 值\nD. 點 匹羅卡品（pilocarpine）",
           "steps": [
-            "先確認題目問的主題：客觀驗光結果要回頭 double check",
-            "右眼掃完、左眼掃完後，回到右眼 double check。客觀結果是起點，最後仍需主觀驗光確認最佳視力與舒適度。",
-            "把判斷依據連回題目：老師說左眼掃完要回去右眼 double check。\n\n正確選項：回右眼 double check。\n右眼掃完、左眼掃完後，回到右眼 double check。客觀結果是起點，最後仍需主觀驗光確認最佳視力與舒適度。"
+            "先確認題目問的主題：客觀驗光結果要回頭 再次確認（double check）",
+            "右眼掃完、左眼掃完後，回到右眼 再次確認（double check）。客觀結果是起點，最後仍需主觀驗光確認最佳視力與舒適度。",
+            "把判斷依據連回題目：老師說左眼掃完要回去右眼 再次確認（double check）。\n\n正確選項：回右眼 再次確認（double check）。\n右眼掃完、左眼掃完後，回到右眼 再次確認（double check）。客觀結果是起點，最後仍需主觀驗光確認最佳視力與舒適度。"
           ],
-          "answer": "回右眼 double check"
+          "answer": "回右眼 再次確認（double check）"
         },
         {
           "type": "practice",
@@ -633,26 +663,28 @@
               "q": "當檢影光束與 160 度平行時，常需要注意什麼？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "逐字稿用這題提醒 streak 與主經線方向要畫出來。\n\n正確選項：實際分析的另一主經線可能是 70 度。\n逐字稿題目提醒：當光束與 160 度平行時，實際掃的是與 streak 垂直的 70 度方向。最後 axis 要依題目與負柱鏡規則判斷。",
+              "explain": "逐字稿用這題提醒 線狀光帶（streak） 與主經線方向要畫出來。\n\n正確選項：實際分析的另一主經線可能是 70 度。\n逐字稿題目提醒：當光束與 160 度平行時，實際掃的是與 線狀光帶（streak） 垂直的 70 度方向。最後 軸向（axis） 要依題目與負柱鏡規則判斷。",
               "choices": [
                 "實際分析的另一主經線可能是 70 度",
-                "working distance 一定為 1 m",
-                "一定是 RAPD",
+                "工作距離（working distance） 一定為 1 m",
+                "一定是 相對傳入性瞳孔缺損（RAPD）",
                 "K 值一定為 45D"
-              ]
+              ],
+              "id": "cbb75835a"
             },
             {
               "kind": "single",
               "q": "完成左眼檢影後，逐字稿建議下一步是？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "老師說左眼掃完要回去右眼 double check。\n\n正確選項：回右眼 double check。\n右眼掃完、左眼掃完後，回到右眼 double check。客觀結果是起點，最後仍需主觀驗光確認最佳視力與舒適度。",
+              "explain": "老師說左眼掃完要回去右眼 再次確認（double check）。\n\n正確選項：回右眼 再次確認（double check）。\n右眼掃完、左眼掃完後，回到右眼 再次確認（double check）。客觀結果是起點，最後仍需主觀驗光確認最佳視力與舒適度。",
               "choices": [
                 "直接下處方",
-                "回右眼 double check",
+                "回右眼 再次確認（double check）",
                 "量 K 值",
-                "點 pilocarpine"
-              ]
+                "點 匹羅卡品（pilocarpine）"
+              ],
+              "id": "cd07b252a"
             }
           ]
         },
@@ -660,28 +692,32 @@
           "type": "recap",
           "points": [
             "看到已戴補助鏡：不扣",
-            "沒戴補助鏡：扣 working lens",
-            "streak 平行方向與 power meridian 可能相差 90 度",
+            "沒戴補助鏡：扣 工作距離鏡片（working lens）",
+            "線狀光帶（streak） 平行方向與 屈光力子午線（power meridian） 可能相差 90 度",
             "題目要畫光十字才不容易錯",
             "客觀驗光提供起始處方",
             "雙眼互相影響，完成後回查"
           ],
           "flash": [
             {
-              "front": "先看 working lens 是否已戴",
-              "back": "檢影題要先判斷 working lens 是否已經放入；已戴就不用再扣，未戴才要扣工作距離。"
+              "front": "先看 工作距離鏡片（working lens） 是否已戴",
+              "back": "檢影題要先判斷 工作距離鏡片（working lens） 是否已經放入；已戴就不用再扣，未戴才要扣工作距離。",
+              "id": "f876717c1"
             },
             {
               "front": "光束方向不等於被測經線方向",
-              "back": "檢影光帶的方向和實際被中和的 power meridian 差 90 度，所以要把光束方向轉成正確主經線。"
+              "back": "檢影光帶的方向和實際被中和的 屈光力子午線（power meridian） 差 90 度，所以要把光束方向轉成正確主經線。",
+              "id": "fb82322d6"
             },
             {
-              "front": "客觀驗光結果要回頭 double check",
-              "back": "客觀驗光只是起點，雙眼各自中和後要回頭確認右眼，再接主觀驗光微調。"
+              "front": "客觀驗光結果要回頭 再次確認（double check）",
+              "back": "客觀驗光只是起點，雙眼各自中和後要回頭確認右眼，再接主觀驗光微調。",
+              "id": "f17a0a90f"
             },
             {
-              "front": "檢影題最容易造成 sphere 整體錯位的第一個陷阱是？",
-              "back": "working lens 是否已戴會直接影響整體球面度數。\n\n正確選項：忘記判斷 working lens 是否已補償。\n題目寫『受檢者戴上相當於 57 cm 的工作距離補助鏡』，代表已補償 working distance，不要再扣。若沒有戴，才用 result - working lens。"
+              "front": "檢影題最容易造成 球面度數（sphere） 整體錯位的第一個陷阱是？",
+              "back": "工作距離鏡片（working lens） 是否已戴會直接影響整體球面度數。\n\n正確選項：忘記判斷 工作距離鏡片（working lens） 是否已補償。\n題目寫『受檢者戴上相當於 57 cm 的工作距離補助鏡』，代表已補償 工作距離（working distance），不要再扣。若沒有戴，才用 result - 工作距離鏡片（working lens）。",
+              "id": "f5ffee478"
             }
           ]
         }

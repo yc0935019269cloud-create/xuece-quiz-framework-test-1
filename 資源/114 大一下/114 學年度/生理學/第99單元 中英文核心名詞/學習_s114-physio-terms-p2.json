@@ -23,9 +23,9 @@
       "id": "terms-7-1",
       "title": "中英文核心名詞 7",
       "goals": [
-        "解釋rod／cone",
-        "解釋rhodopsin／phototransduction",
-        "解釋hyperpolarization／cochlea"
+        "解釋桿狀細胞（rod）／錐狀細胞（cone）",
+        "解釋視紫質（rhodopsin）／感光換能（phototransduction）",
+        "解釋超極化（hyperpolarization）／耳蝸（cochlea）"
       ],
       "steps": [
         {
@@ -35,8 +35,8 @@
         },
         {
           "type": "card",
-          "title": "rod／cone",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**rod｜rod**\n桿狀細胞；擅長暗處、靈敏但不看顏色與細節。\n\n**cone｜cone**\n錐狀細胞；擅長亮處、顏色與高解析度。",
+          "title": "桿狀細胞（rod）／錐狀細胞（cone）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**桿狀細胞（rod）｜桿狀細胞**\n桿狀細胞；擅長暗處、靈敏但不看顏色與細節。\n\n**錐狀細胞（cone）｜錐狀細胞**\n錐狀細胞；擅長亮處、顏色與高解析度。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -45,15 +45,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「rod／cone」，並說出一個判斷依據。",
-          "answer": "**rod｜rod**\n桿狀細胞；擅長暗處、靈敏但不看顏色與細節。\n\n**cone｜cone**\n錐狀細胞；擅長亮處、顏色與高解析度。",
+          "q": "用自己的話說明「桿狀細胞（rod）／錐狀細胞（cone）」，並說出一個判斷依據。",
+          "answer": "**桿狀細胞（rod）｜桿狀細胞（rod）**\n桿狀細胞；擅長暗處、靈敏但不看顏色與細節。\n\n**錐狀細胞（cone）｜錐狀細胞（cone）**\n錐狀細胞；擅長亮處、顏色與高解析度。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**rod｜rod**\n桿狀細胞；擅長暗處、靈敏但不看顏色與細節。\n\n**cone｜cone**\n錐狀細胞；擅長亮處、顏色與高解析度。"
+          "explain": "**桿狀細胞（rod）｜桿狀細胞（rod）**\n桿狀細胞；擅長暗處、靈敏但不看顏色與細節。\n\n**錐狀細胞（cone）｜錐狀細胞（cone）**\n錐狀細胞；擅長亮處、顏色與高解析度。",
+          "id": "c73b5087b"
         },
         {
           "type": "card",
-          "title": "rhodopsin／phototransduction",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**rhodopsin｜rhodopsin**\n視紫質；rod 裡的感光色素。\n\n**phototransduction｜phototransduction**\n感光換能；把光變成神經電訊號。",
+          "title": "視紫質（rhodopsin）／感光換能（phototransduction）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**視紫質（rhodopsin）｜視紫質**\n視紫質；桿狀細胞（rod） 裡的感光色素。\n\n**感光換能（phototransduction）｜感光換能**\n感光換能；把光變成神經電訊號。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -62,15 +63,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「rhodopsin／phototransduction」，並說出一個判斷依據。",
-          "answer": "**rhodopsin｜rhodopsin**\n視紫質；rod 裡的感光色素。\n\n**phototransduction｜phototransduction**\n感光換能；把光變成神經電訊號。",
+          "q": "用自己的話說明「視紫質（rhodopsin）／感光換能（phototransduction）」，並說出一個判斷依據。",
+          "answer": "**視紫質（rhodopsin）｜視紫質（rhodopsin）**\n視紫質；桿狀細胞（rod） 裡的感光色素。\n\n**感光換能（phototransduction）｜感光換能（phototransduction）**\n感光換能；把光變成神經電訊號。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**rhodopsin｜rhodopsin**\n視紫質；rod 裡的感光色素。\n\n**phototransduction｜phototransduction**\n感光換能；把光變成神經電訊號。"
+          "explain": "**視紫質（rhodopsin）｜視紫質（rhodopsin）**\n視紫質；桿狀細胞（rod） 裡的感光色素。\n\n**感光換能（phototransduction）｜感光換能（phototransduction）**\n感光換能；把光變成神經電訊號。",
+          "id": "c088f91fb"
         },
         {
           "type": "card",
-          "title": "hyperpolarization／cochlea",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**hyperpolarization｜hyperpolarization**\n超極化；膜電位變得更負。photoreceptor 見光時會這樣。\n\n**cochlea｜cochlea**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。",
+          "title": "超極化（hyperpolarization）／耳蝸（cochlea）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**超極化（hyperpolarization）｜超極化**\n超極化；膜電位變得更負。感光細胞（photoreceptor） 見光時會這樣。\n\n**耳蝸（cochlea）｜耳蝸**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -79,21 +81,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「hyperpolarization／cochlea」，並說出一個判斷依據。",
-          "answer": "**hyperpolarization｜hyperpolarization**\n超極化；膜電位變得更負。photoreceptor 見光時會這樣。\n\n**cochlea｜cochlea**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。",
+          "q": "用自己的話說明「超極化（hyperpolarization）／耳蝸（cochlea）」，並說出一個判斷依據。",
+          "answer": "**超極化（hyperpolarization）｜超極化（hyperpolarization）**\n超極化；膜電位變得更負。感光細胞（photoreceptor） 見光時會這樣。\n\n**耳蝸（cochlea）｜耳蝸（cochlea）**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**hyperpolarization｜hyperpolarization**\n超極化；膜電位變得更負。photoreceptor 見光時會這樣。\n\n**cochlea｜cochlea**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。"
+          "explain": "**超極化（hyperpolarization）｜超極化（hyperpolarization）**\n超極化；膜電位變得更負。感光細胞（photoreceptor） 見光時會這樣。\n\n**耳蝸（cochlea）｜耳蝸（cochlea）**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。",
+          "id": "c2f6c75c1"
         },
         {
           "type": "example",
-          "title": "範例拆解：hyperpolarization／cochlea",
-          "problem": "用自己的話說明「hyperpolarization／cochlea」，並說出一個判斷依據。",
+          "title": "範例拆解：超極化（hyperpolarization）／耳蝸（cochlea）",
+          "problem": "用自己的話說明「超極化（hyperpolarization）／耳蝸（cochlea）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：hyperpolarization／cochlea",
-            "**hyperpolarization｜hyperpolarization**\n超極化；膜電位變得更負。photoreceptor 見光時會這樣。\n\n**cochlea｜cochlea**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。",
-            "把判斷依據連回題目：**hyperpolarization｜hyperpolarization**\n超極化；膜電位變得更負。photoreceptor 見光時會這樣。\n\n**cochlea｜cochlea**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。"
+            "先確認題目問的主題：超極化（hyperpolarization）／耳蝸（cochlea）",
+            "**超極化（hyperpolarization）｜超極化（hyperpolarization）**\n超極化；膜電位變得更負。感光細胞（photoreceptor） 見光時會這樣。\n\n**耳蝸（cochlea）｜耳蝸（cochlea）**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。",
+            "把判斷依據連回題目：**超極化（hyperpolarization）｜超極化（hyperpolarization）**\n超極化；膜電位變得更負。感光細胞（photoreceptor） 見光時會這樣。\n\n**耳蝸（cochlea）｜耳蝸（cochlea）**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。"
           ],
-          "answer": "**hyperpolarization｜hyperpolarization**\n超極化；膜電位變得更負。photoreceptor 見光時會這樣。\n\n**cochlea｜cochlea**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。"
+          "answer": "**超極化（hyperpolarization）｜超極化（hyperpolarization）**\n超極化；膜電位變得更負。感光細胞（photoreceptor） 見光時會這樣。\n\n**耳蝸（cochlea）｜耳蝸（cochlea）**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。"
         },
         {
           "type": "practice",
@@ -102,17 +105,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「rhodopsin／phototransduction」，並說出一個判斷依據。",
-              "answer": "**rhodopsin｜rhodopsin**\n視紫質；rod 裡的感光色素。\n\n**phototransduction｜phototransduction**\n感光換能；把光變成神經電訊號。",
+              "q": "用自己的話說明「視紫質（rhodopsin）／感光換能（phototransduction）」，並說出一個判斷依據。",
+              "answer": "**視紫質（rhodopsin）｜視紫質（rhodopsin）**\n視紫質；桿狀細胞（rod） 裡的感光色素。\n\n**感光換能（phototransduction）｜感光換能（phototransduction）**\n感光換能；把光變成神經電訊號。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**rhodopsin｜rhodopsin**\n視紫質；rod 裡的感光色素。\n\n**phototransduction｜phototransduction**\n感光換能；把光變成神經電訊號。"
+              "explain": "**視紫質（rhodopsin）｜視紫質（rhodopsin）**\n視紫質；桿狀細胞（rod） 裡的感光色素。\n\n**感光換能（phototransduction）｜感光換能（phototransduction）**\n感光換能；把光變成神經電訊號。",
+              "id": "c088f91fb"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「hyperpolarization／cochlea」，並說出一個判斷依據。",
-              "answer": "**hyperpolarization｜hyperpolarization**\n超極化；膜電位變得更負。photoreceptor 見光時會這樣。\n\n**cochlea｜cochlea**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。",
+              "q": "用自己的話說明「超極化（hyperpolarization）／耳蝸（cochlea）」，並說出一個判斷依據。",
+              "answer": "**超極化（hyperpolarization）｜超極化（hyperpolarization）**\n超極化；膜電位變得更負。感光細胞（photoreceptor） 見光時會這樣。\n\n**耳蝸（cochlea）｜耳蝸（cochlea）**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**hyperpolarization｜hyperpolarization**\n超極化；膜電位變得更負。photoreceptor 見光時會這樣。\n\n**cochlea｜cochlea**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。"
+              "explain": "**超極化（hyperpolarization）｜超極化（hyperpolarization）**\n超極化；膜電位變得更負。感光細胞（photoreceptor） 見光時會這樣。\n\n**耳蝸（cochlea）｜耳蝸（cochlea）**\n耳蝸；內耳負責把聲音振動轉成神經訊號的構造。",
+              "id": "c2f6c75c1"
             }
           ]
         },
@@ -120,27 +125,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "rod／cone：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "rhodopsin／phototransduction：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**rod｜rod**\n桿狀細胞；擅長暗處、靈敏但不看顏色與細節。\n\n**cone｜cone**\n錐狀細胞；擅長亮處、顏色與高解析度。",
-            "**rhodopsin｜rhodopsin**\n視紫質；rod 裡的感光色素。\n\n**phototransduction｜phototransduction**\n感光換能；把光變成神經電訊號。"
+            "桿狀細胞（rod）／錐狀細胞（cone）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "視紫質（rhodopsin）／感光換能（phototransduction）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**桿狀細胞（rod）｜桿狀細胞（rod）**\n桿狀細胞；擅長暗處、靈敏但不看顏色與細節。\n\n**錐狀細胞（cone）｜錐狀細胞（cone）**\n錐狀細胞；擅長亮處、顏色與高解析度。",
+            "**視紫質（rhodopsin）｜視紫質（rhodopsin）**\n視紫質；桿狀細胞（rod） 裡的感光色素。\n\n**感光換能（phototransduction）｜感光換能（phototransduction）**\n感光換能；把光變成神經電訊號。"
           ],
           "flash": [
             {
-              "front": "rod／cone",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "桿狀細胞（rod）／錐狀細胞（cone）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f310d6e1f"
             },
             {
-              "front": "rhodopsin／phototransduction",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "視紫質（rhodopsin）／感光換能（phototransduction）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "ff88cbd52"
             },
             {
-              "front": "hyperpolarization／cochlea",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "超極化（hyperpolarization）／耳蝸（cochlea）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f1173e76d"
             },
             {
-              "front": "用自己的話說明「rod／cone」，並說出一個判斷依據。",
-              "back": "**rod｜rod**\n桿狀細胞；擅長暗處、靈敏但不看顏色與細節。\n\n**cone｜cone**\n錐狀細胞；擅長亮處、顏色與高解析度。"
+              "front": "用自己的話說明「桿狀細胞（rod）／錐狀細胞（cone）」，並說出一個判斷依據。",
+              "back": "**桿狀細胞（rod）｜桿狀細胞（rod）**\n桿狀細胞；擅長暗處、靈敏但不看顏色與細節。\n\n**錐狀細胞（cone）｜錐狀細胞（cone）**\n錐狀細胞；擅長亮處、顏色與高解析度。",
+              "id": "f73b5087b"
             }
           ]
         }
@@ -150,9 +159,9 @@
       "id": "terms-8-1",
       "title": "中英文核心名詞 8",
       "goals": [
-        "解釋basilar membrane／hair cell",
-        "解釋endolymph／ANS",
-        "解釋ACh／NE"
+        "解釋基底膜（basilar membrane）／毛細胞（hair cell）",
+        "解釋內淋巴（endolymph）／自主神經系統（ANS）",
+        "解釋乙醯膽鹼（ACh）／正腎上腺素（NE）"
       ],
       "steps": [
         {
@@ -162,8 +171,8 @@
         },
         {
           "type": "card",
-          "title": "basilar membrane／hair cell",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**basilar membrane｜basilar membrane**\n基底膜；耳蝸內的頻率地圖，高頻靠 base、低頻靠 apex。\n\n**hair cell｜hair cell**\n毛細胞；內耳的機械感受器，纖毛彎曲就改變 transmitter 釋放。",
+          "title": "基底膜（basilar membrane）／毛細胞（hair cell）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**基底膜（basilar membrane）｜基底膜**\n基底膜；耳蝸內的頻率地圖，高頻靠 基底部（base）、低頻靠 頂端（apex）。\n\n**毛細胞（hair cell）｜毛細胞**\n毛細胞；內耳的機械感受器，纖毛彎曲就改變 傳導物質（transmitter） 釋放。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -172,15 +181,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「basilar membrane／hair cell」，並說出一個判斷依據。",
-          "answer": "**basilar membrane｜basilar membrane**\n基底膜；耳蝸內的頻率地圖，高頻靠 base、低頻靠 apex。\n\n**hair cell｜hair cell**\n毛細胞；內耳的機械感受器，纖毛彎曲就改變 transmitter 釋放。",
+          "q": "用自己的話說明「基底膜（basilar membrane）／毛細胞（hair cell）」，並說出一個判斷依據。",
+          "answer": "**基底膜（basilar membrane）｜基底膜（basilar membrane）**\n基底膜；耳蝸內的頻率地圖，高頻靠 基底部（base）、低頻靠 頂端（apex）。\n\n**毛細胞（hair cell）｜毛細胞（hair cell）**\n毛細胞；內耳的機械感受器，纖毛彎曲就改變 傳導物質（transmitter） 釋放。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**basilar membrane｜basilar membrane**\n基底膜；耳蝸內的頻率地圖，高頻靠 base、低頻靠 apex。\n\n**hair cell｜hair cell**\n毛細胞；內耳的機械感受器，纖毛彎曲就改變 transmitter 釋放。"
+          "explain": "**基底膜（basilar membrane）｜基底膜（basilar membrane）**\n基底膜；耳蝸內的頻率地圖，高頻靠 基底部（base）、低頻靠 頂端（apex）。\n\n**毛細胞（hair cell）｜毛細胞（hair cell）**\n毛細胞；內耳的機械感受器，纖毛彎曲就改變 傳導物質（transmitter） 釋放。",
+          "id": "cb049f283"
         },
         {
           "type": "card",
-          "title": "endolymph／ANS",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**endolymph｜endolymph**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**ANS｜ANS**\nAutonomic nervous system，自主神經系統；自動控制內臟、腺體與平滑肌。",
+          "title": "內淋巴（endolymph）／自主神經系統（ANS）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**內淋巴（endolymph）｜內淋巴**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**自主神經系統（ANS）｜自主神經系統**\n自主神經系統（Autonomic nervous system），自主神經系統；自動控制內臟、腺體與平滑肌。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -189,15 +199,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「endolymph／ANS」，並說出一個判斷依據。",
-          "answer": "**endolymph｜endolymph**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**ANS｜ANS**\nAutonomic nervous system，自主神經系統；自動控制內臟、腺體與平滑肌。",
+          "q": "用自己的話說明「內淋巴（endolymph）／自主神經系統（ANS）」，並說出一個判斷依據。",
+          "answer": "**內淋巴（endolymph）｜內淋巴（endolymph）**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**自主神經系統（ANS）｜自主神經系統（ANS）**\n自主神經系統（Autonomic nervous system），自主神經系統；自動控制內臟、腺體與平滑肌。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**endolymph｜endolymph**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**ANS｜ANS**\nAutonomic nervous system，自主神經系統；自動控制內臟、腺體與平滑肌。"
+          "explain": "**內淋巴（endolymph）｜內淋巴（endolymph）**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**自主神經系統（ANS）｜自主神經系統（ANS）**\n自主神經系統（Autonomic nervous system），自主神經系統；自動控制內臟、腺體與平滑肌。",
+          "id": "c7f0044eb"
         },
         {
           "type": "card",
-          "title": "ACh／NE",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**ACh｜ACh**\nAcetylcholine，乙醯膽鹼；所有 ANS 節前神經都使用。\n\n**NE｜NE**\nNorepinephrine，正腎上腺素；多數 sympathetic 節後神經使用。",
+          "title": "乙醯膽鹼（ACh）／正腎上腺素（NE）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**乙醯膽鹼（ACh）｜乙醯膽鹼**\nAcetylcholine，乙醯膽鹼；所有 自主神經系統（ANS） 節前神經都使用。\n\n**正腎上腺素（NE）｜正腎上腺素**\n正腎上腺素（Norepinephrine），正腎上腺素；多數 交感神經（sympathetic） 節後神經使用。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -206,21 +217,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「ACh／NE」，並說出一個判斷依據。",
-          "answer": "**ACh｜ACh**\nAcetylcholine，乙醯膽鹼；所有 ANS 節前神經都使用。\n\n**NE｜NE**\nNorepinephrine，正腎上腺素；多數 sympathetic 節後神經使用。",
+          "q": "用自己的話說明「乙醯膽鹼（ACh）／正腎上腺素（NE）」，並說出一個判斷依據。",
+          "answer": "**乙醯膽鹼（ACh）｜乙醯膽鹼（ACh）**\nAcetylcholine，乙醯膽鹼；所有 自主神經系統（ANS） 節前神經都使用。\n\n**正腎上腺素（NE）｜正腎上腺素（NE）**\n正腎上腺素（Norepinephrine），正腎上腺素；多數 交感神經（sympathetic） 節後神經使用。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**ACh｜ACh**\nAcetylcholine，乙醯膽鹼；所有 ANS 節前神經都使用。\n\n**NE｜NE**\nNorepinephrine，正腎上腺素；多數 sympathetic 節後神經使用。"
+          "explain": "**乙醯膽鹼（ACh）｜乙醯膽鹼（ACh）**\nAcetylcholine，乙醯膽鹼；所有 自主神經系統（ANS） 節前神經都使用。\n\n**正腎上腺素（NE）｜正腎上腺素（NE）**\n正腎上腺素（Norepinephrine），正腎上腺素；多數 交感神經（sympathetic） 節後神經使用。",
+          "id": "c7e244262"
         },
         {
           "type": "example",
-          "title": "範例拆解：ACh／NE",
-          "problem": "用自己的話說明「ACh／NE」，並說出一個判斷依據。",
+          "title": "範例拆解：乙醯膽鹼（ACh）／正腎上腺素（NE）",
+          "problem": "用自己的話說明「乙醯膽鹼（ACh）／正腎上腺素（NE）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：ACh／NE",
-            "**ACh｜ACh**\nAcetylcholine，乙醯膽鹼；所有 ANS 節前神經都使用。\n\n**NE｜NE**\nNorepinephrine，正腎上腺素；多數 sympathetic 節後神經使用。",
-            "把判斷依據連回題目：**ACh｜ACh**\nAcetylcholine，乙醯膽鹼；所有 ANS 節前神經都使用。\n\n**NE｜NE**\nNorepinephrine，正腎上腺素；多數 sympathetic 節後神經使用。"
+            "先確認題目問的主題：乙醯膽鹼（ACh）／正腎上腺素（NE）",
+            "**乙醯膽鹼（ACh）｜乙醯膽鹼（ACh）**\nAcetylcholine，乙醯膽鹼；所有 自主神經系統（ANS） 節前神經都使用。\n\n**正腎上腺素（NE）｜正腎上腺素（NE）**\n正腎上腺素（Norepinephrine），正腎上腺素；多數 交感神經（sympathetic） 節後神經使用。",
+            "把判斷依據連回題目：**乙醯膽鹼（ACh）｜乙醯膽鹼（ACh）**\nAcetylcholine，乙醯膽鹼；所有 自主神經系統（ANS） 節前神經都使用。\n\n**正腎上腺素（NE）｜正腎上腺素（NE）**\n正腎上腺素（Norepinephrine），正腎上腺素；多數 交感神經（sympathetic） 節後神經使用。"
           ],
-          "answer": "**ACh｜ACh**\nAcetylcholine，乙醯膽鹼；所有 ANS 節前神經都使用。\n\n**NE｜NE**\nNorepinephrine，正腎上腺素；多數 sympathetic 節後神經使用。"
+          "answer": "**乙醯膽鹼（ACh）｜乙醯膽鹼（ACh）**\nAcetylcholine，乙醯膽鹼；所有 自主神經系統（ANS） 節前神經都使用。\n\n**正腎上腺素（NE）｜正腎上腺素（NE）**\n正腎上腺素（Norepinephrine），正腎上腺素；多數 交感神經（sympathetic） 節後神經使用。"
         },
         {
           "type": "practice",
@@ -229,17 +241,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「endolymph／ANS」，並說出一個判斷依據。",
-              "answer": "**endolymph｜endolymph**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**ANS｜ANS**\nAutonomic nervous system，自主神經系統；自動控制內臟、腺體與平滑肌。",
+              "q": "用自己的話說明「內淋巴（endolymph）／自主神經系統（ANS）」，並說出一個判斷依據。",
+              "answer": "**內淋巴（endolymph）｜內淋巴（endolymph）**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**自主神經系統（ANS）｜自主神經系統（ANS）**\n自主神經系統（Autonomic nervous system），自主神經系統；自動控制內臟、腺體與平滑肌。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**endolymph｜endolymph**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**ANS｜ANS**\nAutonomic nervous system，自主神經系統；自動控制內臟、腺體與平滑肌。"
+              "explain": "**內淋巴（endolymph）｜內淋巴（endolymph）**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**自主神經系統（ANS）｜自主神經系統（ANS）**\n自主神經系統（Autonomic nervous system），自主神經系統；自動控制內臟、腺體與平滑肌。",
+              "id": "c7f0044eb"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「ACh／NE」，並說出一個判斷依據。",
-              "answer": "**ACh｜ACh**\nAcetylcholine，乙醯膽鹼；所有 ANS 節前神經都使用。\n\n**NE｜NE**\nNorepinephrine，正腎上腺素；多數 sympathetic 節後神經使用。",
+              "q": "用自己的話說明「乙醯膽鹼（ACh）／正腎上腺素（NE）」，並說出一個判斷依據。",
+              "answer": "**乙醯膽鹼（ACh）｜乙醯膽鹼（ACh）**\nAcetylcholine，乙醯膽鹼；所有 自主神經系統（ANS） 節前神經都使用。\n\n**正腎上腺素（NE）｜正腎上腺素（NE）**\n正腎上腺素（Norepinephrine），正腎上腺素；多數 交感神經（sympathetic） 節後神經使用。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**ACh｜ACh**\nAcetylcholine，乙醯膽鹼；所有 ANS 節前神經都使用。\n\n**NE｜NE**\nNorepinephrine，正腎上腺素；多數 sympathetic 節後神經使用。"
+              "explain": "**乙醯膽鹼（ACh）｜乙醯膽鹼（ACh）**\nAcetylcholine，乙醯膽鹼；所有 自主神經系統（ANS） 節前神經都使用。\n\n**正腎上腺素（NE）｜正腎上腺素（NE）**\n正腎上腺素（Norepinephrine），正腎上腺素；多數 交感神經（sympathetic） 節後神經使用。",
+              "id": "c7e244262"
             }
           ]
         },
@@ -247,27 +261,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "basilar membrane／hair cell：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "endolymph／ANS：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**basilar membrane｜basilar membrane**\n基底膜；耳蝸內的頻率地圖，高頻靠 base、低頻靠 apex。\n\n**hair cell｜hair cell**\n毛細胞；內耳的機械感受器，纖毛彎曲就改變 transmitter 釋放。",
-            "**endolymph｜endolymph**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**ANS｜ANS**\nAutonomic nervous system，自主神經系統；自動控制內臟、腺體與平滑肌。"
+            "基底膜（basilar membrane）／毛細胞（hair cell）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "內淋巴（endolymph）／自主神經系統（ANS）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**基底膜（basilar membrane）｜基底膜（basilar membrane）**\n基底膜；耳蝸內的頻率地圖，高頻靠 基底部（base）、低頻靠 頂端（apex）。\n\n**毛細胞（hair cell）｜毛細胞（hair cell）**\n毛細胞；內耳的機械感受器，纖毛彎曲就改變 傳導物質（transmitter） 釋放。",
+            "**內淋巴（endolymph）｜內淋巴（endolymph）**\n內淋巴；內耳特殊液體，K⁺ 很高。\n\n**自主神經系統（ANS）｜自主神經系統（ANS）**\n自主神經系統（Autonomic nervous system），自主神經系統；自動控制內臟、腺體與平滑肌。"
           ],
           "flash": [
             {
-              "front": "basilar membrane／hair cell",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "基底膜（basilar membrane）／毛細胞（hair cell）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f9352e4e5"
             },
             {
-              "front": "endolymph／ANS",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "內淋巴（endolymph）／自主神經系統（ANS）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fa05b739e"
             },
             {
-              "front": "ACh／NE",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "乙醯膽鹼（ACh）／正腎上腺素（NE）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "ff75e286e"
             },
             {
-              "front": "用自己的話說明「basilar membrane／hair cell」，並說出一個判斷依據。",
-              "back": "**basilar membrane｜basilar membrane**\n基底膜；耳蝸內的頻率地圖，高頻靠 base、低頻靠 apex。\n\n**hair cell｜hair cell**\n毛細胞；內耳的機械感受器，纖毛彎曲就改變 transmitter 釋放。"
+              "front": "用自己的話說明「基底膜（basilar membrane）／毛細胞（hair cell）」，並說出一個判斷依據。",
+              "back": "**基底膜（basilar membrane）｜基底膜（basilar membrane）**\n基底膜；耳蝸內的頻率地圖，高頻靠 基底部（base）、低頻靠 頂端（apex）。\n\n**毛細胞（hair cell）｜毛細胞（hair cell）**\n毛細胞；內耳的機械感受器，纖毛彎曲就改變 傳導物質（transmitter） 釋放。",
+              "id": "fb049f283"
             }
           ]
         }
@@ -277,9 +295,9 @@
       "id": "terms-9-1",
       "title": "中英文核心名詞 9",
       "goals": [
-        "解釋sympathetic／parasympathetic",
-        "解釋nicotinic receptor／muscarinic receptor",
-        "解釋GPCR／peptide hormone"
+        "解釋交感神經（sympathetic）／副交感神經（parasympathetic）",
+        "解釋菸鹼型受體（nicotinic receptor）／毒蕈鹼型受體（muscarinic receptor）",
+        "解釋蛋白偶聯受體（GPCR）／胜肽荷爾蒙（peptide hormone）"
       ],
       "steps": [
         {
@@ -289,8 +307,8 @@
         },
         {
           "type": "card",
-          "title": "sympathetic／parasympathetic",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**sympathetic｜sympathetic**\n交感神經；偏向緊急、動員能量的 fight-or-flight。\n\n**parasympathetic｜parasympathetic**\n副交感神經；偏向休息、消化的 rest-and-digest。",
+          "title": "交感神經（sympathetic）／副交感神經（parasympathetic）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**交感神經（sympathetic）｜交感神經**\n交感神經；偏向緊急、動員能量的 戰或逃反應（fight-or-flight）。\n\n**副交感神經（parasympathetic）｜副交感神經**\n副交感神經；偏向休息、消化的 休息與消化反應（rest-and-digest）。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -299,15 +317,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「sympathetic／parasympathetic」，並說出一個判斷依據。",
-          "answer": "**sympathetic｜sympathetic**\n交感神經；偏向緊急、動員能量的 fight-or-flight。\n\n**parasympathetic｜parasympathetic**\n副交感神經；偏向休息、消化的 rest-and-digest。",
+          "q": "用自己的話說明「交感神經（sympathetic）／副交感神經（parasympathetic）」，並說出一個判斷依據。",
+          "answer": "**交感神經（sympathetic）｜交感神經（sympathetic）**\n交感神經；偏向緊急、動員能量的 戰或逃反應（fight-or-flight）。\n\n**副交感神經（parasympathetic）｜副交感神經（parasympathetic）**\n副交感神經；偏向休息、消化的 休息與消化反應（rest-and-digest）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**sympathetic｜sympathetic**\n交感神經；偏向緊急、動員能量的 fight-or-flight。\n\n**parasympathetic｜parasympathetic**\n副交感神經；偏向休息、消化的 rest-and-digest。"
+          "explain": "**交感神經（sympathetic）｜交感神經（sympathetic）**\n交感神經；偏向緊急、動員能量的 戰或逃反應（fight-or-flight）。\n\n**副交感神經（parasympathetic）｜副交感神經（parasympathetic）**\n副交感神經；偏向休息、消化的 休息與消化反應（rest-and-digest）。",
+          "id": "cbe8101f6"
         },
         {
           "type": "card",
-          "title": "nicotinic receptor／muscarinic receptor",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**nicotinic receptor｜nicotinic receptor**\n菸鹼型受體；ACh 受體中的 ion channel，ganglia 常見 Nn。\n\n**muscarinic receptor｜muscarinic receptor**\n毒蕈鹼型受體；ACh 受體中的 GPCR，副交感效應器常見。",
+          "title": "菸鹼型受體（nicotinic receptor）／毒蕈鹼型受體（muscarinic receptor）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**菸鹼型受體（nicotinic receptor）｜菸鹼型受體**\n菸鹼型受體；乙醯膽鹼（ACh） 受體中的 離子通道（ion channel），神經節（ganglia） 常見 Nn。\n\n**毒蕈鹼型受體（muscarinic receptor）｜毒蕈鹼型受體**\n毒蕈鹼型受體；乙醯膽鹼 受體中的 蛋白偶聯受體（GPCR），副交感效應器常見。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -316,15 +335,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「nicotinic receptor／muscarinic receptor」，並說出一個判斷依據。",
-          "answer": "**nicotinic receptor｜nicotinic receptor**\n菸鹼型受體；ACh 受體中的 ion channel，ganglia 常見 Nn。\n\n**muscarinic receptor｜muscarinic receptor**\n毒蕈鹼型受體；ACh 受體中的 GPCR，副交感效應器常見。",
+          "q": "用自己的話說明「菸鹼型受體（nicotinic receptor）／毒蕈鹼型受體（muscarinic receptor）」，並說出一個判斷依據。",
+          "answer": "**菸鹼型受體（nicotinic receptor）｜菸鹼型受體（nicotinic receptor）**\n菸鹼型受體；乙醯膽鹼（ACh） 受體中的 離子通道（ion channel），神經節（ganglia） 常見 Nn。\n\n**毒蕈鹼型受體（muscarinic receptor）｜毒蕈鹼型受體（muscarinic receptor）**\n毒蕈鹼型受體；乙醯膽鹼（ACh） 受體中的 蛋白偶聯受體（GPCR），副交感效應器常見。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**nicotinic receptor｜nicotinic receptor**\n菸鹼型受體；ACh 受體中的 ion channel，ganglia 常見 Nn。\n\n**muscarinic receptor｜muscarinic receptor**\n毒蕈鹼型受體；ACh 受體中的 GPCR，副交感效應器常見。"
+          "explain": "**菸鹼型受體（nicotinic receptor）｜菸鹼型受體（nicotinic receptor）**\n菸鹼型受體；乙醯膽鹼（ACh） 受體中的 離子通道（ion channel），神經節（ganglia） 常見 Nn。\n\n**毒蕈鹼型受體（muscarinic receptor）｜毒蕈鹼型受體（muscarinic receptor）**\n毒蕈鹼型受體；乙醯膽鹼（ACh） 受體中的 蛋白偶聯受體（GPCR），副交感效應器常見。",
+          "id": "c59494771"
         },
         {
           "type": "card",
-          "title": "GPCR／peptide hormone",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**GPCR｜GPCR**\nG protein-coupled receptor，G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**peptide hormone｜peptide hormone**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 vesicle。",
+          "title": "蛋白偶聯受體（GPCR）／胜肽荷爾蒙（peptide hormone）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**蛋白偶聯受體（GPCR）｜蛋白偶聯受體**\nG protein-coupled 受體（receptor），G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**胜肽荷爾蒙（peptide hormone）｜胜肽荷爾蒙**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 囊泡（vesicle）。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -333,21 +353,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「GPCR／peptide hormone」，並說出一個判斷依據。",
-          "answer": "**GPCR｜GPCR**\nG protein-coupled receptor，G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**peptide hormone｜peptide hormone**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 vesicle。",
+          "q": "用自己的話說明「蛋白偶聯受體（GPCR）／胜肽荷爾蒙（peptide hormone）」，並說出一個判斷依據。",
+          "answer": "**蛋白偶聯受體（GPCR）｜蛋白偶聯受體（GPCR）**\nG protein-coupled 受體（receptor），G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**胜肽荷爾蒙（peptide hormone）｜胜肽荷爾蒙（peptide hormone）**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 囊泡（vesicle）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**GPCR｜GPCR**\nG protein-coupled receptor，G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**peptide hormone｜peptide hormone**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 vesicle。"
+          "explain": "**蛋白偶聯受體（GPCR）｜蛋白偶聯受體（GPCR）**\nG protein-coupled 受體（receptor），G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**胜肽荷爾蒙（peptide hormone）｜胜肽荷爾蒙（peptide hormone）**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 囊泡（vesicle）。",
+          "id": "cd82e1453"
         },
         {
           "type": "example",
-          "title": "範例拆解：GPCR／peptide hormone",
-          "problem": "用自己的話說明「GPCR／peptide hormone」，並說出一個判斷依據。",
+          "title": "範例拆解：蛋白偶聯受體（GPCR）／胜肽荷爾蒙（peptide hormone）",
+          "problem": "用自己的話說明「蛋白偶聯受體（GPCR）／胜肽荷爾蒙（peptide hormone）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：GPCR／peptide hormone",
-            "**GPCR｜GPCR**\nG protein-coupled receptor，G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**peptide hormone｜peptide hormone**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 vesicle。",
-            "把判斷依據連回題目：**GPCR｜GPCR**\nG protein-coupled receptor，G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**peptide hormone｜peptide hormone**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 vesicle。"
+            "先確認題目問的主題：蛋白偶聯受體（GPCR）／胜肽荷爾蒙（peptide hormone）",
+            "**蛋白偶聯受體（GPCR）｜蛋白偶聯受體（GPCR）**\nG protein-coupled 受體（receptor），G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**胜肽荷爾蒙（peptide hormone）｜胜肽荷爾蒙（peptide hormone）**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 囊泡（vesicle）。",
+            "把判斷依據連回題目：**蛋白偶聯受體（GPCR）｜蛋白偶聯受體（GPCR）**\nG protein-coupled 受體（receptor），G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**胜肽荷爾蒙（peptide hormone）｜胜肽荷爾蒙（peptide hormone）**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 囊泡（vesicle）。"
           ],
-          "answer": "**GPCR｜GPCR**\nG protein-coupled receptor，G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**peptide hormone｜peptide hormone**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 vesicle。"
+          "answer": "**蛋白偶聯受體（GPCR）｜蛋白偶聯受體（GPCR）**\nG protein-coupled 受體（receptor），G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**胜肽荷爾蒙（peptide hormone）｜胜肽荷爾蒙（peptide hormone）**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 囊泡（vesicle）。"
         },
         {
           "type": "practice",
@@ -356,17 +377,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「nicotinic receptor／muscarinic receptor」，並說出一個判斷依據。",
-              "answer": "**nicotinic receptor｜nicotinic receptor**\n菸鹼型受體；ACh 受體中的 ion channel，ganglia 常見 Nn。\n\n**muscarinic receptor｜muscarinic receptor**\n毒蕈鹼型受體；ACh 受體中的 GPCR，副交感效應器常見。",
+              "q": "用自己的話說明「菸鹼型受體（nicotinic receptor）／毒蕈鹼型受體（muscarinic receptor）」，並說出一個判斷依據。",
+              "answer": "**菸鹼型受體（nicotinic receptor）｜菸鹼型受體（nicotinic receptor）**\n菸鹼型受體；乙醯膽鹼（ACh） 受體中的 離子通道（ion channel），神經節（ganglia） 常見 Nn。\n\n**毒蕈鹼型受體（muscarinic receptor）｜毒蕈鹼型受體（muscarinic receptor）**\n毒蕈鹼型受體；乙醯膽鹼（ACh） 受體中的 蛋白偶聯受體（GPCR），副交感效應器常見。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**nicotinic receptor｜nicotinic receptor**\n菸鹼型受體；ACh 受體中的 ion channel，ganglia 常見 Nn。\n\n**muscarinic receptor｜muscarinic receptor**\n毒蕈鹼型受體；ACh 受體中的 GPCR，副交感效應器常見。"
+              "explain": "**菸鹼型受體（nicotinic receptor）｜菸鹼型受體（nicotinic receptor）**\n菸鹼型受體；乙醯膽鹼（ACh） 受體中的 離子通道（ion channel），神經節（ganglia） 常見 Nn。\n\n**毒蕈鹼型受體（muscarinic receptor）｜毒蕈鹼型受體（muscarinic receptor）**\n毒蕈鹼型受體；乙醯膽鹼（ACh） 受體中的 蛋白偶聯受體（GPCR），副交感效應器常見。",
+              "id": "c59494771"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「GPCR／peptide hormone」，並說出一個判斷依據。",
-              "answer": "**GPCR｜GPCR**\nG protein-coupled receptor，G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**peptide hormone｜peptide hormone**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 vesicle。",
+              "q": "用自己的話說明「蛋白偶聯受體（GPCR）／胜肽荷爾蒙（peptide hormone）」，並說出一個判斷依據。",
+              "answer": "**蛋白偶聯受體（GPCR）｜蛋白偶聯受體（GPCR）**\nG protein-coupled 受體（receptor），G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**胜肽荷爾蒙（peptide hormone）｜胜肽荷爾蒙（peptide hormone）**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 囊泡（vesicle）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**GPCR｜GPCR**\nG protein-coupled receptor，G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**peptide hormone｜peptide hormone**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 vesicle。"
+              "explain": "**蛋白偶聯受體（GPCR）｜蛋白偶聯受體（GPCR）**\nG protein-coupled 受體（receptor），G 蛋白偶聯受體；把膜外訊號傳進細胞。\n\n**胜肽荷爾蒙（peptide hormone）｜胜肽荷爾蒙（peptide hormone）**\n胜肽荷爾蒙；水溶、用膜受體、可先儲存在 囊泡（vesicle）。",
+              "id": "cd82e1453"
             }
           ]
         },
@@ -374,27 +397,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "sympathetic／parasympathetic：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "nicotinic receptor／muscarinic receptor：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**sympathetic｜sympathetic**\n交感神經；偏向緊急、動員能量的 fight-or-flight。\n\n**parasympathetic｜parasympathetic**\n副交感神經；偏向休息、消化的 rest-and-digest。",
-            "**nicotinic receptor｜nicotinic receptor**\n菸鹼型受體；ACh 受體中的 ion channel，ganglia 常見 Nn。\n\n**muscarinic receptor｜muscarinic receptor**\n毒蕈鹼型受體；ACh 受體中的 GPCR，副交感效應器常見。"
+            "交感神經（sympathetic）／副交感神經（parasympathetic）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "菸鹼型受體（nicotinic receptor）／毒蕈鹼型受體（muscarinic receptor）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**交感神經（sympathetic）｜交感神經（sympathetic）**\n交感神經；偏向緊急、動員能量的 戰或逃反應（fight-or-flight）。\n\n**副交感神經（parasympathetic）｜副交感神經（parasympathetic）**\n副交感神經；偏向休息、消化的 休息與消化反應（rest-and-digest）。",
+            "**菸鹼型受體（nicotinic receptor）｜菸鹼型受體（nicotinic receptor）**\n菸鹼型受體；乙醯膽鹼（ACh） 受體中的 離子通道（ion channel），神經節（ganglia） 常見 Nn。\n\n**毒蕈鹼型受體（muscarinic receptor）｜毒蕈鹼型受體（muscarinic receptor）**\n毒蕈鹼型受體；乙醯膽鹼（ACh） 受體中的 蛋白偶聯受體（GPCR），副交感效應器常見。"
           ],
           "flash": [
             {
-              "front": "sympathetic／parasympathetic",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "交感神經（sympathetic）／副交感神經（parasympathetic）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fa0a0abdb"
             },
             {
-              "front": "nicotinic receptor／muscarinic receptor",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "菸鹼型受體（nicotinic receptor）／毒蕈鹼型受體（muscarinic receptor）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f8fcaa3e6"
             },
             {
-              "front": "GPCR／peptide hormone",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "蛋白偶聯受體（GPCR）／胜肽荷爾蒙（peptide hormone）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f1cf2a7fe"
             },
             {
-              "front": "用自己的話說明「sympathetic／parasympathetic」，並說出一個判斷依據。",
-              "back": "**sympathetic｜sympathetic**\n交感神經；偏向緊急、動員能量的 fight-or-flight。\n\n**parasympathetic｜parasympathetic**\n副交感神經；偏向休息、消化的 rest-and-digest。"
+              "front": "用自己的話說明「交感神經（sympathetic）／副交感神經（parasympathetic）」，並說出一個判斷依據。",
+              "back": "**交感神經（sympathetic）｜交感神經（sympathetic）**\n交感神經；偏向緊急、動員能量的 戰或逃反應（fight-or-flight）。\n\n**副交感神經（parasympathetic）｜副交感神經（parasympathetic）**\n副交感神經；偏向休息、消化的 休息與消化反應（rest-and-digest）。",
+              "id": "fbe8101f6"
             }
           ]
         }
@@ -404,9 +431,9 @@
       "id": "terms-10-1",
       "title": "中英文核心名詞 10",
       "goals": [
-        "解釋steroid hormone／intracrine",
-        "解釋autocrine／paracrine",
-        "解釋endocrine／neuroendocrine"
+        "解釋類固醇荷爾蒙（steroid hormone）／胞內分泌（intracrine）",
+        "解釋自分泌（autocrine）／旁分泌（paracrine）",
+        "解釋內分泌（endocrine）／神經內分泌（neuroendocrine）"
       ],
       "steps": [
         {
@@ -416,8 +443,8 @@
         },
         {
           "type": "card",
-          "title": "steroid hormone／intracrine",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**steroid hormone｜steroid hormone**\n類固醇荷爾蒙；脂溶、由 cholesterol 製造、使用細胞內受體。\n\n**intracrine｜intracrine**\n胞內分泌；訊號留在製造它的細胞內作用，沒有被分泌出去。",
+          "title": "類固醇荷爾蒙（steroid hormone）／胞內分泌（intracrine）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**類固醇荷爾蒙（steroid hormone）｜類固醇荷爾蒙**\n類固醇荷爾蒙；脂溶、由 膽固醇（cholesterol） 製造、使用細胞內受體。\n\n**胞內分泌（intracrine）｜胞內分泌**\n胞內分泌；訊號留在製造它的細胞內作用，沒有被分泌出去。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -426,15 +453,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「steroid hormone／intracrine」，並說出一個判斷依據。",
-          "answer": "**steroid hormone｜steroid hormone**\n類固醇荷爾蒙；脂溶、由 cholesterol 製造、使用細胞內受體。\n\n**intracrine｜intracrine**\n胞內分泌；訊號留在製造它的細胞內作用，沒有被分泌出去。",
+          "q": "用自己的話說明「類固醇荷爾蒙（steroid hormone）／胞內分泌（intracrine）」，並說出一個判斷依據。",
+          "answer": "**類固醇荷爾蒙（steroid hormone）｜類固醇荷爾蒙（steroid hormone）**\n類固醇荷爾蒙；脂溶、由 膽固醇（cholesterol） 製造、使用細胞內受體。\n\n**胞內分泌（intracrine）｜胞內分泌（intracrine）**\n胞內分泌；訊號留在製造它的細胞內作用，沒有被分泌出去。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**steroid hormone｜steroid hormone**\n類固醇荷爾蒙；脂溶、由 cholesterol 製造、使用細胞內受體。\n\n**intracrine｜intracrine**\n胞內分泌；訊號留在製造它的細胞內作用，沒有被分泌出去。"
+          "explain": "**類固醇荷爾蒙（steroid hormone）｜類固醇荷爾蒙（steroid hormone）**\n類固醇荷爾蒙；脂溶、由 膽固醇（cholesterol） 製造、使用細胞內受體。\n\n**胞內分泌（intracrine）｜胞內分泌（intracrine）**\n胞內分泌；訊號留在製造它的細胞內作用，沒有被分泌出去。",
+          "id": "c43ef3997"
         },
         {
           "type": "card",
-          "title": "autocrine／paracrine",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**autocrine｜autocrine**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**paracrine｜paracrine**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。",
+          "title": "自分泌（autocrine）／旁分泌（paracrine）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**自分泌（autocrine）｜自分泌**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**旁分泌（paracrine）｜旁分泌**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -443,15 +471,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「autocrine／paracrine」，並說出一個判斷依據。",
-          "answer": "**autocrine｜autocrine**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**paracrine｜paracrine**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。",
+          "q": "用自己的話說明「自分泌（autocrine）／旁分泌（paracrine）」，並說出一個判斷依據。",
+          "answer": "**自分泌（autocrine）｜自分泌（autocrine）**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**旁分泌（paracrine）｜旁分泌（paracrine）**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**autocrine｜autocrine**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**paracrine｜paracrine**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。"
+          "explain": "**自分泌（autocrine）｜自分泌（autocrine）**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**旁分泌（paracrine）｜旁分泌（paracrine）**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。",
+          "id": "cde471011"
         },
         {
           "type": "card",
-          "title": "endocrine／neuroendocrine",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**endocrine｜endocrine**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 receptor 的 target cell。\n\n**neuroendocrine｜neuroendocrine**\n神經內分泌；neuron 把訊號分泌進血液，例如 ADH、oxytocin。",
+          "title": "內分泌（endocrine）／神經內分泌（neuroendocrine）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**內分泌（endocrine）｜內分泌**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 受體（receptor） 的 標的細胞（target cell）。\n\n**神經內分泌（neuroendocrine）｜神經內分泌**\n神經內分泌；神經元（neuron） 把訊號分泌進血液，例如 抗利尿激素（ADH）、催產素（oxytocin）。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -460,21 +489,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「endocrine／neuroendocrine」，並說出一個判斷依據。",
-          "answer": "**endocrine｜endocrine**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 receptor 的 target cell。\n\n**neuroendocrine｜neuroendocrine**\n神經內分泌；neuron 把訊號分泌進血液，例如 ADH、oxytocin。",
+          "q": "用自己的話說明「內分泌（endocrine）／神經內分泌（neuroendocrine）」，並說出一個判斷依據。",
+          "answer": "**內分泌（endocrine）｜內分泌（endocrine）**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 受體（receptor） 的 標的細胞（target cell）。\n\n**神經內分泌（neuroendocrine）｜神經內分泌（neuroendocrine）**\n神經內分泌；神經元（neuron） 把訊號分泌進血液，例如 抗利尿激素（ADH）、催產素（oxytocin）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**endocrine｜endocrine**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 receptor 的 target cell。\n\n**neuroendocrine｜neuroendocrine**\n神經內分泌；neuron 把訊號分泌進血液，例如 ADH、oxytocin。"
+          "explain": "**內分泌（endocrine）｜內分泌（endocrine）**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 受體（receptor） 的 標的細胞（target cell）。\n\n**神經內分泌（neuroendocrine）｜神經內分泌（neuroendocrine）**\n神經內分泌；神經元（neuron） 把訊號分泌進血液，例如 抗利尿激素（ADH）、催產素（oxytocin）。",
+          "id": "c237795b8"
         },
         {
           "type": "example",
-          "title": "範例拆解：endocrine／neuroendocrine",
-          "problem": "用自己的話說明「endocrine／neuroendocrine」，並說出一個判斷依據。",
+          "title": "範例拆解：內分泌（endocrine）／神經內分泌（neuroendocrine）",
+          "problem": "用自己的話說明「內分泌（endocrine）／神經內分泌（neuroendocrine）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：endocrine／neuroendocrine",
-            "**endocrine｜endocrine**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 receptor 的 target cell。\n\n**neuroendocrine｜neuroendocrine**\n神經內分泌；neuron 把訊號分泌進血液，例如 ADH、oxytocin。",
-            "把判斷依據連回題目：**endocrine｜endocrine**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 receptor 的 target cell。\n\n**neuroendocrine｜neuroendocrine**\n神經內分泌；neuron 把訊號分泌進血液，例如 ADH、oxytocin。"
+            "先確認題目問的主題：內分泌（endocrine）／神經內分泌（neuroendocrine）",
+            "**內分泌（endocrine）｜內分泌（endocrine）**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 受體（receptor） 的 標的細胞（target cell）。\n\n**神經內分泌（neuroendocrine）｜神經內分泌（neuroendocrine）**\n神經內分泌；神經元（neuron） 把訊號分泌進血液，例如 抗利尿激素（ADH）、催產素（oxytocin）。",
+            "把判斷依據連回題目：**內分泌（endocrine）｜內分泌（endocrine）**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 受體（receptor） 的 標的細胞（target cell）。\n\n**神經內分泌（neuroendocrine）｜神經內分泌（neuroendocrine）**\n神經內分泌；神經元（neuron） 把訊號分泌進血液，例如 抗利尿激素（ADH）、催產素（oxytocin）。"
           ],
-          "answer": "**endocrine｜endocrine**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 receptor 的 target cell。\n\n**neuroendocrine｜neuroendocrine**\n神經內分泌；neuron 把訊號分泌進血液，例如 ADH、oxytocin。"
+          "answer": "**內分泌（endocrine）｜內分泌（endocrine）**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 受體（receptor） 的 標的細胞（target cell）。\n\n**神經內分泌（neuroendocrine）｜神經內分泌（neuroendocrine）**\n神經內分泌；神經元（neuron） 把訊號分泌進血液，例如 抗利尿激素（ADH）、催產素（oxytocin）。"
         },
         {
           "type": "practice",
@@ -483,17 +513,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「autocrine／paracrine」，並說出一個判斷依據。",
-              "answer": "**autocrine｜autocrine**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**paracrine｜paracrine**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。",
+              "q": "用自己的話說明「自分泌（autocrine）／旁分泌（paracrine）」，並說出一個判斷依據。",
+              "answer": "**自分泌（autocrine）｜自分泌（autocrine）**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**旁分泌（paracrine）｜旁分泌（paracrine）**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**autocrine｜autocrine**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**paracrine｜paracrine**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。"
+              "explain": "**自分泌（autocrine）｜自分泌（autocrine）**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**旁分泌（paracrine）｜旁分泌（paracrine）**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。",
+              "id": "cde471011"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「endocrine／neuroendocrine」，並說出一個判斷依據。",
-              "answer": "**endocrine｜endocrine**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 receptor 的 target cell。\n\n**neuroendocrine｜neuroendocrine**\n神經內分泌；neuron 把訊號分泌進血液，例如 ADH、oxytocin。",
+              "q": "用自己的話說明「內分泌（endocrine）／神經內分泌（neuroendocrine）」，並說出一個判斷依據。",
+              "answer": "**內分泌（endocrine）｜內分泌（endocrine）**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 受體（receptor） 的 標的細胞（target cell）。\n\n**神經內分泌（neuroendocrine）｜神經內分泌（neuroendocrine）**\n神經內分泌；神經元（neuron） 把訊號分泌進血液，例如 抗利尿激素（ADH）、催產素（oxytocin）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**endocrine｜endocrine**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 receptor 的 target cell。\n\n**neuroendocrine｜neuroendocrine**\n神經內分泌；neuron 把訊號分泌進血液，例如 ADH、oxytocin。"
+              "explain": "**內分泌（endocrine）｜內分泌（endocrine）**\n內分泌；荷爾蒙進入血液，前往遠方帶有正確 受體（receptor） 的 標的細胞（target cell）。\n\n**神經內分泌（neuroendocrine）｜神經內分泌（neuroendocrine）**\n神經內分泌；神經元（neuron） 把訊號分泌進血液，例如 抗利尿激素（ADH）、催產素（oxytocin）。",
+              "id": "c237795b8"
             }
           ]
         },
@@ -501,27 +533,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "steroid hormone／intracrine：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "autocrine／paracrine：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**steroid hormone｜steroid hormone**\n類固醇荷爾蒙；脂溶、由 cholesterol 製造、使用細胞內受體。\n\n**intracrine｜intracrine**\n胞內分泌；訊號留在製造它的細胞內作用，沒有被分泌出去。",
-            "**autocrine｜autocrine**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**paracrine｜paracrine**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。"
+            "類固醇荷爾蒙（steroid hormone）／胞內分泌（intracrine）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "自分泌（autocrine）／旁分泌（paracrine）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**類固醇荷爾蒙（steroid hormone）｜類固醇荷爾蒙（steroid hormone）**\n類固醇荷爾蒙；脂溶、由 膽固醇（cholesterol） 製造、使用細胞內受體。\n\n**胞內分泌（intracrine）｜胞內分泌（intracrine）**\n胞內分泌；訊號留在製造它的細胞內作用，沒有被分泌出去。",
+            "**自分泌（autocrine）｜自分泌（autocrine）**\n自分泌；細胞放出訊號後，回頭作用在自己身上。\n\n**旁分泌（paracrine）｜旁分泌（paracrine）**\n旁分泌；訊號只走到附近鄰居，不靠血液跑遍全身。"
           ],
           "flash": [
             {
-              "front": "steroid hormone／intracrine",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "類固醇荷爾蒙（steroid hormone）／胞內分泌（intracrine）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "ff0d99590"
             },
             {
-              "front": "autocrine／paracrine",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "自分泌（autocrine）／旁分泌（paracrine）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f910aba47"
             },
             {
-              "front": "endocrine／neuroendocrine",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "內分泌（endocrine）／神經內分泌（neuroendocrine）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f07cd2905"
             },
             {
-              "front": "用自己的話說明「steroid hormone／intracrine」，並說出一個判斷依據。",
-              "back": "**steroid hormone｜steroid hormone**\n類固醇荷爾蒙；脂溶、由 cholesterol 製造、使用細胞內受體。\n\n**intracrine｜intracrine**\n胞內分泌；訊號留在製造它的細胞內作用，沒有被分泌出去。"
+              "front": "用自己的話說明「類固醇荷爾蒙（steroid hormone）／胞內分泌（intracrine）」，並說出一個判斷依據。",
+              "back": "**類固醇荷爾蒙（steroid hormone）｜類固醇荷爾蒙（steroid hormone）**\n類固醇荷爾蒙；脂溶、由 膽固醇（cholesterol） 製造、使用細胞內受體。\n\n**胞內分泌（intracrine）｜胞內分泌（intracrine）**\n胞內分泌；訊號留在製造它的細胞內作用，沒有被分泌出去。",
+              "id": "f43ef3997"
             }
           ]
         }
@@ -531,9 +567,9 @@
       "id": "terms-11-1",
       "title": "中英文核心名詞 11",
       "goals": [
-        "解釋target cell／RTK",
-        "解釋JAK-STAT／second messenger",
-        "解釋ADH／AQP2"
+        "解釋標的細胞（target cell）／受體酪胺酸激酶（RTK）",
+        "解釋JAK－STAT 訊息傳遞路徑（JAK-STAT）／第二傳訊者（second messenger）",
+        "解釋抗利尿激素（ADH）／水通道蛋白 2（AQP2）"
       ],
       "steps": [
         {
@@ -543,8 +579,8 @@
         },
         {
           "type": "card",
-          "title": "target cell／RTK",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**target cell｜target cell**\n標的細胞；具有對應 receptor、能讀懂某種荷爾蒙的細胞。\n\n**RTK｜RTK**\nReceptor tyrosine kinase，受體酪胺酸激酶；insulin receptor 使用的膜受體。",
+          "title": "標的細胞（target cell）／受體酪胺酸激酶（RTK）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**標的細胞（target cell）｜標的細胞**\n標的細胞；具有對應 受體（receptor）、能讀懂某種荷爾蒙的細胞。\n\n**受體酪胺酸激酶（RTK）｜受體酪胺酸激酶**\n受體 酪胺酸（tyrosine） kinase，受體酪胺酸激酶；胰島素受體（insulin receptor） 使用的膜受體。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -553,15 +589,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「target cell／RTK」，並說出一個判斷依據。",
-          "answer": "**target cell｜target cell**\n標的細胞；具有對應 receptor、能讀懂某種荷爾蒙的細胞。\n\n**RTK｜RTK**\nReceptor tyrosine kinase，受體酪胺酸激酶；insulin receptor 使用的膜受體。",
+          "q": "用自己的話說明「標的細胞（target cell）／受體酪胺酸激酶（RTK）」，並說出一個判斷依據。",
+          "answer": "**標的細胞（target cell）｜標的細胞（target cell）**\n標的細胞；具有對應 受體（receptor）、能讀懂某種荷爾蒙的細胞。\n\n**受體酪胺酸激酶（RTK）｜受體酪胺酸激酶（RTK）**\n受體（Receptor） 酪胺酸（tyrosine） kinase，受體酪胺酸激酶；胰島素受體（insulin receptor） 使用的膜受體。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**target cell｜target cell**\n標的細胞；具有對應 receptor、能讀懂某種荷爾蒙的細胞。\n\n**RTK｜RTK**\nReceptor tyrosine kinase，受體酪胺酸激酶；insulin receptor 使用的膜受體。"
+          "explain": "**標的細胞（target cell）｜標的細胞（target cell）**\n標的細胞；具有對應 受體（receptor）、能讀懂某種荷爾蒙的細胞。\n\n**受體酪胺酸激酶（RTK）｜受體酪胺酸激酶（RTK）**\n受體（Receptor） 酪胺酸（tyrosine） kinase，受體酪胺酸激酶；胰島素受體（insulin receptor） 使用的膜受體。",
+          "id": "c5a5db787"
         },
         {
           "type": "card",
-          "title": "JAK-STAT／second messenger",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**JAK-STAT｜JAK-STAT**\n由 receptor 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 gene expression。\n\n**second messenger｜second messenger**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。",
+          "title": "JAK－STAT 訊息傳遞路徑（JAK-STAT）／第二傳訊者（second messenger）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**JAK－STAT 訊息傳遞路徑（JAK-STAT）｜JAK－STAT 訊息傳遞路徑**\n由 受體（receptor） 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 基因表現（gene expression）。\n\n**第二傳訊者（second messenger）｜第二傳訊者**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -570,15 +607,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「JAK-STAT／second messenger」，並說出一個判斷依據。",
-          "answer": "**JAK-STAT｜JAK-STAT**\n由 receptor 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 gene expression。\n\n**second messenger｜second messenger**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。",
+          "q": "用自己的話說明「JAK－STAT 訊息傳遞路徑（JAK-STAT）／第二傳訊者（second messenger）」，並說出一個判斷依據。",
+          "answer": "**JAK－STAT 訊息傳遞路徑（JAK-STAT）｜JAK－STAT 訊息傳遞路徑（JAK-STAT）**\n由 受體（receptor） 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 基因表現（gene expression）。\n\n**第二傳訊者（second messenger）｜第二傳訊者（second messenger）**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**JAK-STAT｜JAK-STAT**\n由 receptor 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 gene expression。\n\n**second messenger｜second messenger**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。"
+          "explain": "**JAK－STAT 訊息傳遞路徑（JAK-STAT）｜JAK－STAT 訊息傳遞路徑（JAK-STAT）**\n由 受體（receptor） 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 基因表現（gene expression）。\n\n**第二傳訊者（second messenger）｜第二傳訊者（second messenger）**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。",
+          "id": "c21d0ea3b"
         },
         {
           "type": "card",
-          "title": "ADH／AQP2",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**ADH｜ADH**\nAntidiuretic hormone，抗利尿激素；V2 使 collecting duct 插入 AQP2、幫身體留水。\n\n**AQP2｜AQP2**\nAquaporin-2；ADH 叫 collecting duct 放到膜上的水通道。",
+          "title": "抗利尿激素（ADH）／水通道蛋白 2（AQP2）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**抗利尿激素（ADH）｜抗利尿激素**\nAntidiuretic 荷爾蒙（hormone），抗利尿激素；V2 使 集合管（collecting duct） 插入 水通道蛋白 2（AQP2）、幫身體留水。\n\n**水通道蛋白 2｜水通道蛋白 2**\nAquaporin-2；抗利尿激素 叫 集合管 放到膜上的水通道。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -587,21 +625,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「ADH／AQP2」，並說出一個判斷依據。",
-          "answer": "**ADH｜ADH**\nAntidiuretic hormone，抗利尿激素；V2 使 collecting duct 插入 AQP2、幫身體留水。\n\n**AQP2｜AQP2**\nAquaporin-2；ADH 叫 collecting duct 放到膜上的水通道。",
+          "q": "用自己的話說明「抗利尿激素（ADH）／水通道蛋白 2（AQP2）」，並說出一個判斷依據。",
+          "answer": "**抗利尿激素（ADH）｜抗利尿激素（ADH）**\nAntidiuretic 荷爾蒙（hormone），抗利尿激素；V2 使 集合管（collecting duct） 插入 水通道蛋白 2（AQP2）、幫身體留水。\n\n**水通道蛋白 2（AQP2）｜水通道蛋白 2（AQP2）**\nAquaporin-2；抗利尿激素（ADH） 叫 集合管（collecting duct） 放到膜上的水通道。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**ADH｜ADH**\nAntidiuretic hormone，抗利尿激素；V2 使 collecting duct 插入 AQP2、幫身體留水。\n\n**AQP2｜AQP2**\nAquaporin-2；ADH 叫 collecting duct 放到膜上的水通道。"
+          "explain": "**抗利尿激素（ADH）｜抗利尿激素（ADH）**\nAntidiuretic 荷爾蒙（hormone），抗利尿激素；V2 使 集合管（collecting duct） 插入 水通道蛋白 2（AQP2）、幫身體留水。\n\n**水通道蛋白 2（AQP2）｜水通道蛋白 2（AQP2）**\nAquaporin-2；抗利尿激素（ADH） 叫 集合管（collecting duct） 放到膜上的水通道。",
+          "id": "c4383bd88"
         },
         {
           "type": "example",
-          "title": "範例拆解：ADH／AQP2",
-          "problem": "用自己的話說明「ADH／AQP2」，並說出一個判斷依據。",
+          "title": "範例拆解：抗利尿激素（ADH）／水通道蛋白 2（AQP2）",
+          "problem": "用自己的話說明「抗利尿激素（ADH）／水通道蛋白 2（AQP2）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：ADH／AQP2",
-            "**ADH｜ADH**\nAntidiuretic hormone，抗利尿激素；V2 使 collecting duct 插入 AQP2、幫身體留水。\n\n**AQP2｜AQP2**\nAquaporin-2；ADH 叫 collecting duct 放到膜上的水通道。",
-            "把判斷依據連回題目：**ADH｜ADH**\nAntidiuretic hormone，抗利尿激素；V2 使 collecting duct 插入 AQP2、幫身體留水。\n\n**AQP2｜AQP2**\nAquaporin-2；ADH 叫 collecting duct 放到膜上的水通道。"
+            "先確認題目問的主題：抗利尿激素（ADH）／水通道蛋白 2（AQP2）",
+            "**抗利尿激素（ADH）｜抗利尿激素（ADH）**\nAntidiuretic 荷爾蒙（hormone），抗利尿激素；V2 使 集合管（collecting duct） 插入 水通道蛋白 2（AQP2）、幫身體留水。\n\n**水通道蛋白 2（AQP2）｜水通道蛋白 2（AQP2）**\nAquaporin-2；抗利尿激素（ADH） 叫 集合管（collecting duct） 放到膜上的水通道。",
+            "把判斷依據連回題目：**抗利尿激素（ADH）｜抗利尿激素（ADH）**\nAntidiuretic 荷爾蒙（hormone），抗利尿激素；V2 使 集合管（collecting duct） 插入 水通道蛋白 2（AQP2）、幫身體留水。\n\n**水通道蛋白 2（AQP2）｜水通道蛋白 2（AQP2）**\nAquaporin-2；抗利尿激素（ADH） 叫 集合管（collecting duct） 放到膜上的水通道。"
           ],
-          "answer": "**ADH｜ADH**\nAntidiuretic hormone，抗利尿激素；V2 使 collecting duct 插入 AQP2、幫身體留水。\n\n**AQP2｜AQP2**\nAquaporin-2；ADH 叫 collecting duct 放到膜上的水通道。"
+          "answer": "**抗利尿激素（ADH）｜抗利尿激素（ADH）**\nAntidiuretic 荷爾蒙（hormone），抗利尿激素；V2 使 集合管（collecting duct） 插入 水通道蛋白 2（AQP2）、幫身體留水。\n\n**水通道蛋白 2（AQP2）｜水通道蛋白 2（AQP2）**\nAquaporin-2；抗利尿激素（ADH） 叫 集合管（collecting duct） 放到膜上的水通道。"
         },
         {
           "type": "practice",
@@ -610,17 +649,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「JAK-STAT／second messenger」，並說出一個判斷依據。",
-              "answer": "**JAK-STAT｜JAK-STAT**\n由 receptor 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 gene expression。\n\n**second messenger｜second messenger**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。",
+              "q": "用自己的話說明「JAK－STAT 訊息傳遞路徑（JAK-STAT）／第二傳訊者（second messenger）」，並說出一個判斷依據。",
+              "answer": "**JAK－STAT 訊息傳遞路徑（JAK-STAT）｜JAK－STAT 訊息傳遞路徑（JAK-STAT）**\n由 受體（receptor） 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 基因表現（gene expression）。\n\n**第二傳訊者（second messenger）｜第二傳訊者（second messenger）**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**JAK-STAT｜JAK-STAT**\n由 receptor 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 gene expression。\n\n**second messenger｜second messenger**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。"
+              "explain": "**JAK－STAT 訊息傳遞路徑（JAK-STAT）｜JAK－STAT 訊息傳遞路徑（JAK-STAT）**\n由 受體（receptor） 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 基因表現（gene expression）。\n\n**第二傳訊者（second messenger）｜第二傳訊者（second messenger）**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。",
+              "id": "c21d0ea3b"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「ADH／AQP2」，並說出一個判斷依據。",
-              "answer": "**ADH｜ADH**\nAntidiuretic hormone，抗利尿激素；V2 使 collecting duct 插入 AQP2、幫身體留水。\n\n**AQP2｜AQP2**\nAquaporin-2；ADH 叫 collecting duct 放到膜上的水通道。",
+              "q": "用自己的話說明「抗利尿激素（ADH）／水通道蛋白 2（AQP2）」，並說出一個判斷依據。",
+              "answer": "**抗利尿激素（ADH）｜抗利尿激素（ADH）**\nAntidiuretic 荷爾蒙（hormone），抗利尿激素；V2 使 集合管（collecting duct） 插入 水通道蛋白 2（AQP2）、幫身體留水。\n\n**水通道蛋白 2（AQP2）｜水通道蛋白 2（AQP2）**\nAquaporin-2；抗利尿激素（ADH） 叫 集合管（collecting duct） 放到膜上的水通道。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**ADH｜ADH**\nAntidiuretic hormone，抗利尿激素；V2 使 collecting duct 插入 AQP2、幫身體留水。\n\n**AQP2｜AQP2**\nAquaporin-2；ADH 叫 collecting duct 放到膜上的水通道。"
+              "explain": "**抗利尿激素（ADH）｜抗利尿激素（ADH）**\nAntidiuretic 荷爾蒙（hormone），抗利尿激素；V2 使 集合管（collecting duct） 插入 水通道蛋白 2（AQP2）、幫身體留水。\n\n**水通道蛋白 2（AQP2）｜水通道蛋白 2（AQP2）**\nAquaporin-2；抗利尿激素（ADH） 叫 集合管（collecting duct） 放到膜上的水通道。",
+              "id": "c4383bd88"
             }
           ]
         },
@@ -628,27 +669,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "target cell／RTK：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "JAK-STAT／second messenger：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**target cell｜target cell**\n標的細胞；具有對應 receptor、能讀懂某種荷爾蒙的細胞。\n\n**RTK｜RTK**\nReceptor tyrosine kinase，受體酪胺酸激酶；insulin receptor 使用的膜受體。",
-            "**JAK-STAT｜JAK-STAT**\n由 receptor 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 gene expression。\n\n**second messenger｜second messenger**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。"
+            "標的細胞（target cell）／受體酪胺酸激酶（RTK）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "JAK－STAT 訊息傳遞路徑（JAK-STAT）／第二傳訊者（second messenger）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**標的細胞（target cell）｜標的細胞（target cell）**\n標的細胞；具有對應 受體（receptor）、能讀懂某種荷爾蒙的細胞。\n\n**受體酪胺酸激酶（RTK）｜受體酪胺酸激酶（RTK）**\n受體（Receptor） 酪胺酸（tyrosine） kinase，受體酪胺酸激酶；胰島素受體（insulin receptor） 使用的膜受體。",
+            "**JAK－STAT 訊息傳遞路徑（JAK-STAT）｜JAK－STAT 訊息傳遞路徑（JAK-STAT）**\n由 受體（receptor） 旁的 JAK 啟動 STAT，STAT 再進細胞核調整 基因表現（gene expression）。\n\n**第二傳訊者（second messenger）｜第二傳訊者（second messenger）**\n第二傳訊者；細胞內接棒傳訊的分子，如 cAMP、IP₃、Ca²⁺。"
           ],
           "flash": [
             {
-              "front": "target cell／RTK",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "標的細胞（target cell）／受體酪胺酸激酶（RTK）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f8b893bfc"
             },
             {
-              "front": "JAK-STAT／second messenger",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "JAK－STAT 訊息傳遞路徑（JAK-STAT）／第二傳訊者（second messenger）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fec353e35"
             },
             {
-              "front": "ADH／AQP2",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "抗利尿激素（ADH）／水通道蛋白 2（AQP2）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fccd18888"
             },
             {
-              "front": "用自己的話說明「target cell／RTK」，並說出一個判斷依據。",
-              "back": "**target cell｜target cell**\n標的細胞；具有對應 receptor、能讀懂某種荷爾蒙的細胞。\n\n**RTK｜RTK**\nReceptor tyrosine kinase，受體酪胺酸激酶；insulin receptor 使用的膜受體。"
+              "front": "用自己的話說明「標的細胞（target cell）／受體酪胺酸激酶（RTK）」，並說出一個判斷依據。",
+              "back": "**標的細胞（target cell）｜標的細胞（target cell）**\n標的細胞；具有對應 受體（receptor）、能讀懂某種荷爾蒙的細胞。\n\n**受體酪胺酸激酶（RTK）｜受體酪胺酸激酶（RTK）**\n受體（Receptor） 酪胺酸（tyrosine） kinase，受體酪胺酸激酶；胰島素受體（insulin receptor） 使用的膜受體。",
+              "id": "f5a5db787"
             }
           ]
         }
@@ -658,9 +703,9 @@
       "id": "terms-12-1",
       "title": "中英文核心名詞 12",
       "goals": [
-        "解釋oxytocin／prolactin",
-        "解釋GH／IGF-1",
-        "解釋NIS／TPO"
+        "解釋催產素（oxytocin）／泌乳激素（prolactin）",
+        "解釋生長激素（GH）／類胰島素生長因子 1（IGF-1）",
+        "解釋鈉碘同向運輸蛋白（NIS）／甲狀腺過氧化酶（TPO）"
       ],
       "steps": [
         {
@@ -670,8 +715,8 @@
         },
         {
           "type": "card",
-          "title": "oxytocin／prolactin",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**oxytocin｜oxytocin**\n催產素；促進子宮收縮，也讓乳腺肌上皮收縮、射出乳汁。\n\n**prolactin｜prolactin**\n泌乳激素；負責製造乳汁。射乳則主要靠 oxytocin。",
+          "title": "催產素（oxytocin）／泌乳激素（prolactin）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**催產素（oxytocin）｜催產素**\n催產素；促進子宮收縮，也讓乳腺肌上皮收縮、射出乳汁。\n\n**泌乳激素（prolactin）｜泌乳激素**\n泌乳激素；負責製造乳汁。射乳則主要靠 催產素。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -680,15 +725,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「oxytocin／prolactin」，並說出一個判斷依據。",
-          "answer": "**oxytocin｜oxytocin**\n催產素；促進子宮收縮，也讓乳腺肌上皮收縮、射出乳汁。\n\n**prolactin｜prolactin**\n泌乳激素；負責製造乳汁。射乳則主要靠 oxytocin。",
+          "q": "用自己的話說明「催產素（oxytocin）／泌乳激素（prolactin）」，並說出一個判斷依據。",
+          "answer": "**催產素（oxytocin）｜催產素（oxytocin）**\n催產素；促進子宮收縮，也讓乳腺肌上皮收縮、射出乳汁。\n\n**泌乳激素（prolactin）｜泌乳激素（prolactin）**\n泌乳激素；負責製造乳汁。射乳則主要靠 催產素（oxytocin）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**oxytocin｜oxytocin**\n催產素；促進子宮收縮，也讓乳腺肌上皮收縮、射出乳汁。\n\n**prolactin｜prolactin**\n泌乳激素；負責製造乳汁。射乳則主要靠 oxytocin。"
+          "explain": "**催產素（oxytocin）｜催產素（oxytocin）**\n催產素；促進子宮收縮，也讓乳腺肌上皮收縮、射出乳汁。\n\n**泌乳激素（prolactin）｜泌乳激素（prolactin）**\n泌乳激素；負責製造乳汁。射乳則主要靠 催產素（oxytocin）。",
+          "id": "c7d7d121a"
         },
         {
           "type": "card",
-          "title": "GH／IGF-1",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**GH｜GH**\nGrowth hormone，生長激素；促進 IGF-1、生長，也直接影響代謝。\n\n**IGF-1｜IGF-1**\nInsulin-like growth factor 1；主要由肝臟在 GH 刺激下製造，幫助身體生長。",
+          "title": "生長激素（GH）／類胰島素生長因子 1（IGF-1）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**生長激素（GH）｜生長激素**\nGrowth 荷爾蒙（hormone），生長激素；促進 類胰島素生長因子 1（IGF-1）、生長，也直接影響代謝。\n\n**類胰島素生長因子 1｜類胰島素生長因子 1**\n胰島素（Insulin）-like growth factor 1；主要由肝臟在 生長激素 刺激下製造，幫助身體生長。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -697,15 +743,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「GH／IGF-1」，並說出一個判斷依據。",
-          "answer": "**GH｜GH**\nGrowth hormone，生長激素；促進 IGF-1、生長，也直接影響代謝。\n\n**IGF-1｜IGF-1**\nInsulin-like growth factor 1；主要由肝臟在 GH 刺激下製造，幫助身體生長。",
+          "q": "用自己的話說明「生長激素（GH）／類胰島素生長因子 1（IGF-1）」，並說出一個判斷依據。",
+          "answer": "**生長激素（GH）｜生長激素（GH）**\nGrowth 荷爾蒙（hormone），生長激素；促進 類胰島素生長因子 1（IGF-1）、生長，也直接影響代謝。\n\n**類胰島素生長因子 1（IGF-1）｜類胰島素生長因子 1（IGF-1）**\n胰島素（Insulin）-like growth factor 1；主要由肝臟在 生長激素（GH） 刺激下製造，幫助身體生長。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**GH｜GH**\nGrowth hormone，生長激素；促進 IGF-1、生長，也直接影響代謝。\n\n**IGF-1｜IGF-1**\nInsulin-like growth factor 1；主要由肝臟在 GH 刺激下製造，幫助身體生長。"
+          "explain": "**生長激素（GH）｜生長激素（GH）**\nGrowth 荷爾蒙（hormone），生長激素；促進 類胰島素生長因子 1（IGF-1）、生長，也直接影響代謝。\n\n**類胰島素生長因子 1（IGF-1）｜類胰島素生長因子 1（IGF-1）**\n胰島素（Insulin）-like growth factor 1；主要由肝臟在 生長激素（GH） 刺激下製造，幫助身體生長。",
+          "id": "c6c75b1b5"
         },
         {
           "type": "card",
-          "title": "NIS／TPO",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**NIS｜NIS**\nSodium–iodide symporter；甲狀腺濾泡細胞從血液攝取 iodide 的運輸器。\n\n**TPO｜TPO**\nThyroid peroxidase；負責 iodide oxidation、organification 與 coupling 的關鍵酵素。",
+          "title": "鈉碘同向運輸蛋白（NIS）／甲狀腺過氧化酶（TPO）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**鈉碘同向運輸蛋白（NIS）｜鈉碘同向運輸蛋白**\nSodium–碘離子（iodide） symporter；甲狀腺濾泡細胞從血液攝取 碘離子 的運輸器。\n\n**甲狀腺過氧化酶（TPO）｜甲狀腺過氧化酶**\nThyroid peroxidase；負責 碘離子氧化（iodide oxidation）、有機化（organification） 與 偶聯（coupling） 的關鍵酵素。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -714,21 +761,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「NIS／TPO」，並說出一個判斷依據。",
-          "answer": "**NIS｜NIS**\nSodium–iodide symporter；甲狀腺濾泡細胞從血液攝取 iodide 的運輸器。\n\n**TPO｜TPO**\nThyroid peroxidase；負責 iodide oxidation、organification 與 coupling 的關鍵酵素。",
+          "q": "用自己的話說明「鈉碘同向運輸蛋白（NIS）／甲狀腺過氧化酶（TPO）」，並說出一個判斷依據。",
+          "answer": "**鈉碘同向運輸蛋白（NIS）｜鈉碘同向運輸蛋白（NIS）**\nSodium–碘離子（iodide） symporter；甲狀腺濾泡細胞從血液攝取 碘離子（iodide） 的運輸器。\n\n**甲狀腺過氧化酶（TPO）｜甲狀腺過氧化酶（TPO）**\nThyroid peroxidase；負責 碘離子氧化（iodide oxidation）、有機化（organification） 與 偶聯（coupling） 的關鍵酵素。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**NIS｜NIS**\nSodium–iodide symporter；甲狀腺濾泡細胞從血液攝取 iodide 的運輸器。\n\n**TPO｜TPO**\nThyroid peroxidase；負責 iodide oxidation、organification 與 coupling 的關鍵酵素。"
+          "explain": "**鈉碘同向運輸蛋白（NIS）｜鈉碘同向運輸蛋白（NIS）**\nSodium–碘離子（iodide） symporter；甲狀腺濾泡細胞從血液攝取 碘離子（iodide） 的運輸器。\n\n**甲狀腺過氧化酶（TPO）｜甲狀腺過氧化酶（TPO）**\nThyroid peroxidase；負責 碘離子氧化（iodide oxidation）、有機化（organification） 與 偶聯（coupling） 的關鍵酵素。",
+          "id": "ca891564c"
         },
         {
           "type": "example",
-          "title": "範例拆解：NIS／TPO",
-          "problem": "用自己的話說明「NIS／TPO」，並說出一個判斷依據。",
+          "title": "範例拆解：鈉碘同向運輸蛋白（NIS）／甲狀腺過氧化酶（TPO）",
+          "problem": "用自己的話說明「鈉碘同向運輸蛋白（NIS）／甲狀腺過氧化酶（TPO）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：NIS／TPO",
-            "**NIS｜NIS**\nSodium–iodide symporter；甲狀腺濾泡細胞從血液攝取 iodide 的運輸器。\n\n**TPO｜TPO**\nThyroid peroxidase；負責 iodide oxidation、organification 與 coupling 的關鍵酵素。",
-            "把判斷依據連回題目：**NIS｜NIS**\nSodium–iodide symporter；甲狀腺濾泡細胞從血液攝取 iodide 的運輸器。\n\n**TPO｜TPO**\nThyroid peroxidase；負責 iodide oxidation、organification 與 coupling 的關鍵酵素。"
+            "先確認題目問的主題：鈉碘同向運輸蛋白（NIS）／甲狀腺過氧化酶（TPO）",
+            "**鈉碘同向運輸蛋白（NIS）｜鈉碘同向運輸蛋白（NIS）**\nSodium–碘離子（iodide） symporter；甲狀腺濾泡細胞從血液攝取 碘離子（iodide） 的運輸器。\n\n**甲狀腺過氧化酶（TPO）｜甲狀腺過氧化酶（TPO）**\nThyroid peroxidase；負責 碘離子氧化（iodide oxidation）、有機化（organification） 與 偶聯（coupling） 的關鍵酵素。",
+            "把判斷依據連回題目：**鈉碘同向運輸蛋白（NIS）｜鈉碘同向運輸蛋白（NIS）**\nSodium–碘離子（iodide） symporter；甲狀腺濾泡細胞從血液攝取 碘離子（iodide） 的運輸器。\n\n**甲狀腺過氧化酶（TPO）｜甲狀腺過氧化酶（TPO）**\nThyroid peroxidase；負責 碘離子氧化（iodide oxidation）、有機化（organification） 與 偶聯（coupling） 的關鍵酵素。"
           ],
-          "answer": "**NIS｜NIS**\nSodium–iodide symporter；甲狀腺濾泡細胞從血液攝取 iodide 的運輸器。\n\n**TPO｜TPO**\nThyroid peroxidase；負責 iodide oxidation、organification 與 coupling 的關鍵酵素。"
+          "answer": "**鈉碘同向運輸蛋白（NIS）｜鈉碘同向運輸蛋白（NIS）**\nSodium–碘離子（iodide） symporter；甲狀腺濾泡細胞從血液攝取 碘離子（iodide） 的運輸器。\n\n**甲狀腺過氧化酶（TPO）｜甲狀腺過氧化酶（TPO）**\nThyroid peroxidase；負責 碘離子氧化（iodide oxidation）、有機化（organification） 與 偶聯（coupling） 的關鍵酵素。"
         },
         {
           "type": "practice",
@@ -737,17 +785,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「GH／IGF-1」，並說出一個判斷依據。",
-              "answer": "**GH｜GH**\nGrowth hormone，生長激素；促進 IGF-1、生長，也直接影響代謝。\n\n**IGF-1｜IGF-1**\nInsulin-like growth factor 1；主要由肝臟在 GH 刺激下製造，幫助身體生長。",
+              "q": "用自己的話說明「生長激素（GH）／類胰島素生長因子 1（IGF-1）」，並說出一個判斷依據。",
+              "answer": "**生長激素（GH）｜生長激素（GH）**\nGrowth 荷爾蒙（hormone），生長激素；促進 類胰島素生長因子 1（IGF-1）、生長，也直接影響代謝。\n\n**類胰島素生長因子 1（IGF-1）｜類胰島素生長因子 1（IGF-1）**\n胰島素（Insulin）-like growth factor 1；主要由肝臟在 生長激素（GH） 刺激下製造，幫助身體生長。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**GH｜GH**\nGrowth hormone，生長激素；促進 IGF-1、生長，也直接影響代謝。\n\n**IGF-1｜IGF-1**\nInsulin-like growth factor 1；主要由肝臟在 GH 刺激下製造，幫助身體生長。"
+              "explain": "**生長激素（GH）｜生長激素（GH）**\nGrowth 荷爾蒙（hormone），生長激素；促進 類胰島素生長因子 1（IGF-1）、生長，也直接影響代謝。\n\n**類胰島素生長因子 1（IGF-1）｜類胰島素生長因子 1（IGF-1）**\n胰島素（Insulin）-like growth factor 1；主要由肝臟在 生長激素（GH） 刺激下製造，幫助身體生長。",
+              "id": "c6c75b1b5"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「NIS／TPO」，並說出一個判斷依據。",
-              "answer": "**NIS｜NIS**\nSodium–iodide symporter；甲狀腺濾泡細胞從血液攝取 iodide 的運輸器。\n\n**TPO｜TPO**\nThyroid peroxidase；負責 iodide oxidation、organification 與 coupling 的關鍵酵素。",
+              "q": "用自己的話說明「鈉碘同向運輸蛋白（NIS）／甲狀腺過氧化酶（TPO）」，並說出一個判斷依據。",
+              "answer": "**鈉碘同向運輸蛋白（NIS）｜鈉碘同向運輸蛋白（NIS）**\nSodium–碘離子（iodide） symporter；甲狀腺濾泡細胞從血液攝取 碘離子（iodide） 的運輸器。\n\n**甲狀腺過氧化酶（TPO）｜甲狀腺過氧化酶（TPO）**\nThyroid peroxidase；負責 碘離子氧化（iodide oxidation）、有機化（organification） 與 偶聯（coupling） 的關鍵酵素。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**NIS｜NIS**\nSodium–iodide symporter；甲狀腺濾泡細胞從血液攝取 iodide 的運輸器。\n\n**TPO｜TPO**\nThyroid peroxidase；負責 iodide oxidation、organification 與 coupling 的關鍵酵素。"
+              "explain": "**鈉碘同向運輸蛋白（NIS）｜鈉碘同向運輸蛋白（NIS）**\nSodium–碘離子（iodide） symporter；甲狀腺濾泡細胞從血液攝取 碘離子（iodide） 的運輸器。\n\n**甲狀腺過氧化酶（TPO）｜甲狀腺過氧化酶（TPO）**\nThyroid peroxidase；負責 碘離子氧化（iodide oxidation）、有機化（organification） 與 偶聯（coupling） 的關鍵酵素。",
+              "id": "ca891564c"
             }
           ]
         },
@@ -755,27 +805,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "oxytocin／prolactin：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "GH／IGF-1：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**oxytocin｜oxytocin**\n催產素；促進子宮收縮，也讓乳腺肌上皮收縮、射出乳汁。\n\n**prolactin｜prolactin**\n泌乳激素；負責製造乳汁。射乳則主要靠 oxytocin。",
-            "**GH｜GH**\nGrowth hormone，生長激素；促進 IGF-1、生長，也直接影響代謝。\n\n**IGF-1｜IGF-1**\nInsulin-like growth factor 1；主要由肝臟在 GH 刺激下製造，幫助身體生長。"
+            "催產素（oxytocin）／泌乳激素（prolactin）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "生長激素（GH）／類胰島素生長因子 1（IGF-1）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**催產素（oxytocin）｜催產素（oxytocin）**\n催產素；促進子宮收縮，也讓乳腺肌上皮收縮、射出乳汁。\n\n**泌乳激素（prolactin）｜泌乳激素（prolactin）**\n泌乳激素；負責製造乳汁。射乳則主要靠 催產素（oxytocin）。",
+            "**生長激素（GH）｜生長激素（GH）**\nGrowth 荷爾蒙（hormone），生長激素；促進 類胰島素生長因子 1（IGF-1）、生長，也直接影響代謝。\n\n**類胰島素生長因子 1（IGF-1）｜類胰島素生長因子 1（IGF-1）**\n胰島素（Insulin）-like growth factor 1；主要由肝臟在 生長激素（GH） 刺激下製造，幫助身體生長。"
           ],
           "flash": [
             {
-              "front": "oxytocin／prolactin",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "催產素（oxytocin）／泌乳激素（prolactin）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fbbf47ba9"
             },
             {
-              "front": "GH／IGF-1",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "生長激素（GH）／類胰島素生長因子 1（IGF-1）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fd6b94f72"
             },
             {
-              "front": "NIS／TPO",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "鈉碘同向運輸蛋白（NIS）／甲狀腺過氧化酶（TPO）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f39d821d8"
             },
             {
-              "front": "用自己的話說明「oxytocin／prolactin」，並說出一個判斷依據。",
-              "back": "**oxytocin｜oxytocin**\n催產素；促進子宮收縮，也讓乳腺肌上皮收縮、射出乳汁。\n\n**prolactin｜prolactin**\n泌乳激素；負責製造乳汁。射乳則主要靠 oxytocin。"
+              "front": "用自己的話說明「催產素（oxytocin）／泌乳激素（prolactin）」，並說出一個判斷依據。",
+              "back": "**催產素（oxytocin）｜催產素（oxytocin）**\n催產素；促進子宮收縮，也讓乳腺肌上皮收縮、射出乳汁。\n\n**泌乳激素（prolactin）｜泌乳激素（prolactin）**\n泌乳激素；負責製造乳汁。射乳則主要靠 催產素（oxytocin）。",
+              "id": "f7d7d121a"
             }
           ]
         }

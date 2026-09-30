@@ -23,9 +23,9 @@
       "id": "terms-25-1",
       "title": "中英文核心名詞 25",
       "goals": [
-        "解釋NP／NPA",
-        "解釋Hofstetter／accommodative insufficiency",
-        "解釋plus lenses／vision therapy"
+        "解釋近點（NP）／調節近點（NPA）",
+        "解釋霍夫斯泰特公式（Hofstetter）／調節不足（accommodative insufficiency）",
+        "解釋正鏡片（plus lenses）／視覺訓練（vision therapy）"
       ],
       "steps": [
         {
@@ -35,8 +35,8 @@
         },
         {
           "type": "card",
-          "title": "NP／NPA",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**NP｜近點**\nNear point 的縮寫。\n\n**NPA｜近點調節**\nNear point of accommodation，測量調節極限的近點。",
+          "title": "近點（NP）／調節近點（NPA）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**近點（NP）｜近點**\n近點（Near point） 的縮寫。\n\n**調節近點（NPA）｜近點調節**\n近點 of 調節（accommodation），測量調節極限的近點。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -45,15 +45,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「NP／NPA」，並說出一個判斷依據。",
-          "answer": "**NP｜近點**\nNear point 的縮寫。\n\n**NPA｜近點調節**\nNear point of accommodation，測量調節極限的近點。",
+          "q": "用自己的話說明「近點（NP）／調節近點（NPA）」，並說出一個判斷依據。",
+          "answer": "**近點（NP）｜近點**\n近點（Near point） 的縮寫。\n\n**調節近點（NPA）｜近點調節**\n近點（Near point） of 調節（accommodation），測量調節極限的近點。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**NP｜近點**\nNear point 的縮寫。\n\n**NPA｜近點調節**\nNear point of accommodation，測量調節極限的近點。"
+          "explain": "**近點（NP）｜近點**\n近點（Near point） 的縮寫。\n\n**調節近點（NPA）｜近點調節**\n近點（Near point） of 調節（accommodation），測量調節極限的近點。",
+          "id": "cfcff7365"
         },
         {
           "type": "card",
-          "title": "Hofstetter／accommodative insufficiency",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**Hofstetter｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**accommodative insufficiency｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。",
+          "title": "霍夫斯泰特公式（Hofstetter）／調節不足（accommodative insufficiency）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**霍夫斯泰特公式（Hofstetter）｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**調節不足（accommodative insufficiency）｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -62,15 +63,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「Hofstetter／accommodative insufficiency」，並說出一個判斷依據。",
-          "answer": "**Hofstetter｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**accommodative insufficiency｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。",
+          "q": "用自己的話說明「霍夫斯泰特公式（Hofstetter）／調節不足（accommodative insufficiency）」，並說出一個判斷依據。",
+          "answer": "**霍夫斯泰特公式（Hofstetter）｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**調節不足（accommodative insufficiency）｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**Hofstetter｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**accommodative insufficiency｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。"
+          "explain": "**霍夫斯泰特公式（Hofstetter）｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**調節不足（accommodative insufficiency）｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。",
+          "id": "cf7f66dc2"
         },
         {
           "type": "card",
-          "title": "plus lenses／vision therapy",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**plus lenses｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**vision therapy｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。",
+          "title": "正鏡片（plus lenses）／視覺訓練（vision therapy）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**正鏡片（plus lenses）｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**視覺訓練（vision therapy）｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -79,21 +81,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「plus lenses／vision therapy」，並說出一個判斷依據。",
-          "answer": "**plus lenses｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**vision therapy｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。",
+          "q": "用自己的話說明「正鏡片（plus lenses）／視覺訓練（vision therapy）」，並說出一個判斷依據。",
+          "answer": "**正鏡片（plus lenses）｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**視覺訓練（vision therapy）｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**plus lenses｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**vision therapy｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。"
+          "explain": "**正鏡片（plus lenses）｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**視覺訓練（vision therapy）｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。",
+          "id": "c53bfa02f"
         },
         {
           "type": "example",
-          "title": "範例拆解：plus lenses／vision therapy",
-          "problem": "用自己的話說明「plus lenses／vision therapy」，並說出一個判斷依據。",
+          "title": "範例拆解：正鏡片（plus lenses）／視覺訓練（vision therapy）",
+          "problem": "用自己的話說明「正鏡片（plus lenses）／視覺訓練（vision therapy）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：plus lenses／vision therapy",
-            "**plus lenses｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**vision therapy｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。",
-            "把判斷依據連回題目：**plus lenses｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**vision therapy｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。"
+            "先確認題目問的主題：正鏡片（plus lenses）／視覺訓練（vision therapy）",
+            "**正鏡片（plus lenses）｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**視覺訓練（vision therapy）｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。",
+            "把判斷依據連回題目：**正鏡片（plus lenses）｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**視覺訓練（vision therapy）｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。"
           ],
-          "answer": "**plus lenses｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**vision therapy｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。"
+          "answer": "**正鏡片（plus lenses）｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**視覺訓練（vision therapy）｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。"
         },
         {
           "type": "practice",
@@ -102,17 +105,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「Hofstetter／accommodative insufficiency」，並說出一個判斷依據。",
-              "answer": "**Hofstetter｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**accommodative insufficiency｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。",
+              "q": "用自己的話說明「霍夫斯泰特公式（Hofstetter）／調節不足（accommodative insufficiency）」，並說出一個判斷依據。",
+              "answer": "**霍夫斯泰特公式（Hofstetter）｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**調節不足（accommodative insufficiency）｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**Hofstetter｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**accommodative insufficiency｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。"
+              "explain": "**霍夫斯泰特公式（Hofstetter）｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**調節不足（accommodative insufficiency）｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。",
+              "id": "cf7f66dc2"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「plus lenses／vision therapy」，並說出一個判斷依據。",
-              "answer": "**plus lenses｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**vision therapy｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。",
+              "q": "用自己的話說明「正鏡片（plus lenses）／視覺訓練（vision therapy）」，並說出一個判斷依據。",
+              "answer": "**正鏡片（plus lenses）｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**視覺訓練（vision therapy）｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**plus lenses｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**vision therapy｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。"
+              "explain": "**正鏡片（plus lenses）｜正鏡片**\n近用時可分擔調節需求，減少眼睛負擔。\n\n**視覺訓練（vision therapy）｜視覺訓練**\n針對非老花患者的調節或雙眼視功能進行訓練。",
+              "id": "c53bfa02f"
             }
           ]
         },
@@ -120,27 +125,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "NP／NPA：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "Hofstetter／accommodative insufficiency：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**NP｜近點**\nNear point 的縮寫。\n\n**NPA｜近點調節**\nNear point of accommodation，測量調節極限的近點。",
-            "**Hofstetter｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**accommodative insufficiency｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。"
+            "近點（NP）／調節近點（NPA）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "霍夫斯泰特公式（Hofstetter）／調節不足（accommodative insufficiency）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**近點（NP）｜近點**\n近點（Near point） 的縮寫。\n\n**調節近點（NPA）｜近點調節**\n近點（Near point） of 調節（accommodation），測量調節極限的近點。",
+            "**霍夫斯泰特公式（Hofstetter）｜霍夫斯泰特公式**\n依年齡估計最低、平均與最高調節幅度。\n\n**調節不足（accommodative insufficiency）｜調節不足**\n調節幅度低於需求，常造成近距離模糊與疲勞。"
           ],
           "flash": [
             {
-              "front": "NP／NPA",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "近點（NP）／調節近點（NPA）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f23a03b0a"
             },
             {
-              "front": "Hofstetter／accommodative insufficiency",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "霍夫斯泰特公式（Hofstetter）／調節不足（accommodative insufficiency）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fed641306"
             },
             {
-              "front": "plus lenses／vision therapy",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "正鏡片（plus lenses）／視覺訓練（vision therapy）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f11beca38"
             },
             {
-              "front": "用自己的話說明「NP／NPA」，並說出一個判斷依據。",
-              "back": "**NP｜近點**\nNear point 的縮寫。\n\n**NPA｜近點調節**\nNear point of accommodation，測量調節極限的近點。"
+              "front": "用自己的話說明「近點（NP）／調節近點（NPA）」，並說出一個判斷依據。",
+              "back": "**近點（NP）｜近點**\n近點（Near point） 的縮寫。\n\n**調節近點（NPA）｜近點調節**\n近點（Near point） of 調節（accommodation），測量調節極限的近點。",
+              "id": "ffcff7365"
             }
           ]
         }
@@ -150,9 +159,9 @@
       "id": "terms-26-1",
       "title": "中英文核心名詞 26",
       "goals": [
-        "解釋parasympathetic pathway／push-up",
-        "解釋pull-away／minus lens to blur",
-        "解釋sustained blur／distance Rx"
+        "解釋副交感路徑（parasympathetic pathway）／推近法（push-up）",
+        "解釋拉遠法（pull-away）／負鏡片模糊法（minus lens to blur）",
+        "解釋持續模糊（sustained blur）／遠用處方（distance Rx）"
       ],
       "steps": [
         {
@@ -162,8 +171,8 @@
         },
         {
           "type": "card",
-          "title": "parasympathetic pathway／push-up",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**parasympathetic pathway｜副交感路徑**\n參與縮瞳與調節的神經路徑。\n\n**push-up｜推近法**\n將視標由遠推近至 sustained blur，以測量 NPA。",
+          "title": "副交感路徑（parasympathetic pathway）／推近法（push-up）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**副交感路徑（parasympathetic pathway）｜副交感路徑**\n參與縮瞳與調節的神經路徑。\n\n**推近法（push-up）｜推近法**\n將視標由遠推近至 持續模糊（sustained blur），以測量 調節近點（NPA）。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -172,15 +181,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「parasympathetic pathway／push-up」，並說出一個判斷依據。",
-          "answer": "**parasympathetic pathway｜副交感路徑**\n參與縮瞳與調節的神經路徑。\n\n**push-up｜推近法**\n將視標由遠推近至 sustained blur，以測量 NPA。",
+          "q": "用自己的話說明「副交感路徑（parasympathetic pathway）／推近法（push-up）」，並說出一個判斷依據。",
+          "answer": "**副交感路徑（parasympathetic pathway）｜副交感路徑**\n參與縮瞳與調節的神經路徑。\n\n**推近法（push-up）｜推近法**\n將視標由遠推近至 持續模糊（sustained blur），以測量 調節近點（NPA）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**parasympathetic pathway｜副交感路徑**\n參與縮瞳與調節的神經路徑。\n\n**push-up｜推近法**\n將視標由遠推近至 sustained blur，以測量 NPA。"
+          "explain": "**副交感路徑（parasympathetic pathway）｜副交感路徑**\n參與縮瞳與調節的神經路徑。\n\n**推近法（push-up）｜推近法**\n將視標由遠推近至 持續模糊（sustained blur），以測量 調節近點（NPA）。",
+          "id": "c6521ad56"
         },
         {
           "type": "card",
-          "title": "pull-away／minus lens to blur",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**pull-away｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**minus lens to blur｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 sustained blur 的調節幅度測法。",
+          "title": "拉遠法（pull-away）／負鏡片模糊法（minus lens to blur）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**拉遠法（pull-away）｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**負鏡片模糊法（minus lens to blur）｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 持續模糊（sustained blur） 的調節幅度測法。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -189,15 +199,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「pull-away／minus lens to blur」，並說出一個判斷依據。",
-          "answer": "**pull-away｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**minus lens to blur｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 sustained blur 的調節幅度測法。",
+          "q": "用自己的話說明「拉遠法（pull-away）／負鏡片模糊法（minus lens to blur）」，並說出一個判斷依據。",
+          "answer": "**拉遠法（pull-away）｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**負鏡片模糊法（minus lens to blur）｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 持續模糊（sustained blur） 的調節幅度測法。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**pull-away｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**minus lens to blur｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 sustained blur 的調節幅度測法。"
+          "explain": "**拉遠法（pull-away）｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**負鏡片模糊法（minus lens to blur）｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 持續模糊（sustained blur） 的調節幅度測法。",
+          "id": "cec775c53"
         },
         {
           "type": "card",
-          "title": "sustained blur／distance Rx",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**sustained blur｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 NPA 與 minus lens 測法的終點。\n\n**distance Rx｜遠用處方**\n患者遠距離完全矯正的度數。",
+          "title": "持續模糊（sustained blur）／遠用處方（distance Rx）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**持續模糊（sustained blur）｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 調節近點（NPA） 與 負度數（minus） 透鏡（lens） 測法的終點。\n\n**遠用處方（distance Rx）｜遠用處方**\n患者遠距離完全矯正的度數。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -206,21 +217,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「sustained blur／distance Rx」，並說出一個判斷依據。",
-          "answer": "**sustained blur｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 NPA 與 minus lens 測法的終點。\n\n**distance Rx｜遠用處方**\n患者遠距離完全矯正的度數。",
+          "q": "用自己的話說明「持續模糊（sustained blur）／遠用處方（distance Rx）」，並說出一個判斷依據。",
+          "answer": "**持續模糊（sustained blur）｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 調節近點（NPA） 與 負度數（minus） 透鏡（lens） 測法的終點。\n\n**遠用處方（distance Rx）｜遠用處方**\n患者遠距離完全矯正的度數。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**sustained blur｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 NPA 與 minus lens 測法的終點。\n\n**distance Rx｜遠用處方**\n患者遠距離完全矯正的度數。"
+          "explain": "**持續模糊（sustained blur）｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 調節近點（NPA） 與 負度數（minus） 透鏡（lens） 測法的終點。\n\n**遠用處方（distance Rx）｜遠用處方**\n患者遠距離完全矯正的度數。",
+          "id": "c50031be8"
         },
         {
           "type": "example",
-          "title": "範例拆解：sustained blur／distance Rx",
-          "problem": "用自己的話說明「sustained blur／distance Rx」，並說出一個判斷依據。",
+          "title": "範例拆解：持續模糊（sustained blur）／遠用處方（distance Rx）",
+          "problem": "用自己的話說明「持續模糊（sustained blur）／遠用處方（distance Rx）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：sustained blur／distance Rx",
-            "**sustained blur｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 NPA 與 minus lens 測法的終點。\n\n**distance Rx｜遠用處方**\n患者遠距離完全矯正的度數。",
-            "把判斷依據連回題目：**sustained blur｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 NPA 與 minus lens 測法的終點。\n\n**distance Rx｜遠用處方**\n患者遠距離完全矯正的度數。"
+            "先確認題目問的主題：持續模糊（sustained blur）／遠用處方（distance Rx）",
+            "**持續模糊（sustained blur）｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 調節近點（NPA） 與 負度數（minus） 透鏡（lens） 測法的終點。\n\n**遠用處方（distance Rx）｜遠用處方**\n患者遠距離完全矯正的度數。",
+            "把判斷依據連回題目：**持續模糊（sustained blur）｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 調節近點（NPA） 與 負度數（minus） 透鏡（lens） 測法的終點。\n\n**遠用處方（distance Rx）｜遠用處方**\n患者遠距離完全矯正的度數。"
           ],
-          "answer": "**sustained blur｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 NPA 與 minus lens 測法的終點。\n\n**distance Rx｜遠用處方**\n患者遠距離完全矯正的度數。"
+          "answer": "**持續模糊（sustained blur）｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 調節近點（NPA） 與 負度數（minus） 透鏡（lens） 測法的終點。\n\n**遠用處方（distance Rx）｜遠用處方**\n患者遠距離完全矯正的度數。"
         },
         {
           "type": "practice",
@@ -229,17 +241,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「pull-away／minus lens to blur」，並說出一個判斷依據。",
-              "answer": "**pull-away｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**minus lens to blur｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 sustained blur 的調節幅度測法。",
+              "q": "用自己的話說明「拉遠法（pull-away）／負鏡片模糊法（minus lens to blur）」，並說出一個判斷依據。",
+              "answer": "**拉遠法（pull-away）｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**負鏡片模糊法（minus lens to blur）｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 持續模糊（sustained blur） 的調節幅度測法。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**pull-away｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**minus lens to blur｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 sustained blur 的調節幅度測法。"
+              "explain": "**拉遠法（pull-away）｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**負鏡片模糊法（minus lens to blur）｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 持續模糊（sustained blur） 的調節幅度測法。",
+              "id": "cec775c53"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「sustained blur／distance Rx」，並說出一個判斷依據。",
-              "answer": "**sustained blur｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 NPA 與 minus lens 測法的終點。\n\n**distance Rx｜遠用處方**\n患者遠距離完全矯正的度數。",
+              "q": "用自己的話說明「持續模糊（sustained blur）／遠用處方（distance Rx）」，並說出一個判斷依據。",
+              "answer": "**持續模糊（sustained blur）｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 調節近點（NPA） 與 負度數（minus） 透鏡（lens） 測法的終點。\n\n**遠用處方（distance Rx）｜遠用處方**\n患者遠距離完全矯正的度數。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**sustained blur｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 NPA 與 minus lens 測法的終點。\n\n**distance Rx｜遠用處方**\n患者遠距離完全矯正的度數。"
+              "explain": "**持續模糊（sustained blur）｜持續模糊**\n即使努力對焦仍無法恢復清楚，是 調節近點（NPA） 與 負度數（minus） 透鏡（lens） 測法的終點。\n\n**遠用處方（distance Rx）｜遠用處方**\n患者遠距離完全矯正的度數。",
+              "id": "c50031be8"
             }
           ]
         },
@@ -247,27 +261,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "parasympathetic pathway／push-up：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "pull-away／minus lens to blur：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**parasympathetic pathway｜副交感路徑**\n參與縮瞳與調節的神經路徑。\n\n**push-up｜推近法**\n將視標由遠推近至 sustained blur，以測量 NPA。",
-            "**pull-away｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**minus lens to blur｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 sustained blur 的調節幅度測法。"
+            "副交感路徑（parasympathetic pathway）／推近法（push-up）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "拉遠法（pull-away）／負鏡片模糊法（minus lens to blur）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**副交感路徑（parasympathetic pathway）｜副交感路徑**\n參與縮瞳與調節的神經路徑。\n\n**推近法（push-up）｜推近法**\n將視標由遠推近至 持續模糊（sustained blur），以測量 調節近點（NPA）。",
+            "**拉遠法（pull-away）｜拉遠法**\n將視標由近拉遠至第一次清楚，以估計調節幅度。\n\n**負鏡片模糊法（minus lens to blur）｜負鏡片模糊法**\n在固定近距離逐步加負鏡片至 持續模糊（sustained blur） 的調節幅度測法。"
           ],
           "flash": [
             {
-              "front": "parasympathetic pathway／push-up",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "副交感路徑（parasympathetic pathway）／推近法（push-up）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fcb2fa4b7"
             },
             {
-              "front": "pull-away／minus lens to blur",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "拉遠法（pull-away）／負鏡片模糊法（minus lens to blur）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f9215aab1"
             },
             {
-              "front": "sustained blur／distance Rx",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "持續模糊（sustained blur）／遠用處方（distance Rx）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "faed17375"
             },
             {
-              "front": "用自己的話說明「parasympathetic pathway／push-up」，並說出一個判斷依據。",
-              "back": "**parasympathetic pathway｜副交感路徑**\n參與縮瞳與調節的神經路徑。\n\n**push-up｜推近法**\n將視標由遠推近至 sustained blur，以測量 NPA。"
+              "front": "用自己的話說明「副交感路徑（parasympathetic pathway）／推近法（push-up）」，並說出一個判斷依據。",
+              "back": "**副交感路徑（parasympathetic pathway）｜副交感路徑**\n參與縮瞳與調節的神經路徑。\n\n**推近法（push-up）｜推近法**\n將視標由遠推近至 持續模糊（sustained blur），以測量 調節近點（NPA）。",
+              "id": "f6521ad56"
             }
           ]
         }
@@ -277,9 +295,9 @@
       "id": "terms-27-1",
       "title": "中英文核心名詞 27",
       "goals": [
-        "解釋spectacle plane／version",
-        "解釋vergence／convergence",
-        "解釋divergence／NPC"
+        "解釋眼鏡平面（spectacle plane）／共同運動（version）",
+        "解釋異向運動（vergence）／會聚（convergence）",
+        "解釋散開（divergence）／集合近點（NPC）"
       ],
       "steps": [
         {
@@ -289,8 +307,8 @@
         },
         {
           "type": "card",
-          "title": "spectacle plane／version",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**spectacle plane｜眼鏡平面**\n戴鏡患者測量近點距離時使用的起始平面。\n\n**version｜共同運動**\n兩眼往同一方向移動。",
+          "title": "眼鏡平面（spectacle plane）／共同運動（version）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**眼鏡平面（spectacle plane）｜眼鏡平面**\n戴鏡患者測量近點距離時使用的起始平面。\n\n**共同運動（version）｜共同運動**\n兩眼往同一方向移動。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -299,15 +317,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「spectacle plane／version」，並說出一個判斷依據。",
-          "answer": "**spectacle plane｜眼鏡平面**\n戴鏡患者測量近點距離時使用的起始平面。\n\n**version｜共同運動**\n兩眼往同一方向移動。",
+          "q": "用自己的話說明「眼鏡平面（spectacle plane）／共同運動（version）」，並說出一個判斷依據。",
+          "answer": "**眼鏡平面（spectacle plane）｜眼鏡平面**\n戴鏡患者測量近點距離時使用的起始平面。\n\n**共同運動（version）｜共同運動**\n兩眼往同一方向移動。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**spectacle plane｜眼鏡平面**\n戴鏡患者測量近點距離時使用的起始平面。\n\n**version｜共同運動**\n兩眼往同一方向移動。"
+          "explain": "**眼鏡平面（spectacle plane）｜眼鏡平面**\n戴鏡患者測量近點距離時使用的起始平面。\n\n**共同運動（version）｜共同運動**\n兩眼往同一方向移動。",
+          "id": "ca6071989"
         },
         {
           "type": "card",
-          "title": "vergence／convergence",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**vergence｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**convergence｜內聚**\n兩眼向鼻側轉動以注視近物。",
+          "title": "異向運動（vergence）／會聚（convergence）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**異向運動（vergence）｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**會聚（convergence）｜內聚**\n兩眼向鼻側轉動以注視近物。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -316,15 +335,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「vergence／convergence」，並說出一個判斷依據。",
-          "answer": "**vergence｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**convergence｜內聚**\n兩眼向鼻側轉動以注視近物。",
+          "q": "用自己的話說明「異向運動（vergence）／會聚（convergence）」，並說出一個判斷依據。",
+          "answer": "**異向運動（vergence）｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**會聚（convergence）｜內聚**\n兩眼向鼻側轉動以注視近物。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**vergence｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**convergence｜內聚**\n兩眼向鼻側轉動以注視近物。"
+          "explain": "**異向運動（vergence）｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**會聚（convergence）｜內聚**\n兩眼向鼻側轉動以注視近物。",
+          "id": "cde5ea70b"
         },
         {
           "type": "card",
-          "title": "divergence／NPC",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**divergence｜散開**\n兩眼向外轉動以注視較遠物。\n\n**NPC｜近點聚合**\nNear point of convergence，兩眼能維持聚合單視的最近點。",
+          "title": "散開（divergence）／集合近點（NPC）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**散開（divergence）｜散開**\n兩眼向外轉動以注視較遠物。\n\n**集合近點（NPC）｜近點聚合**\n近點（Near point） of 會聚（convergence），兩眼能維持聚合單視的最近點。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -333,21 +353,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「divergence／NPC」，並說出一個判斷依據。",
-          "answer": "**divergence｜散開**\n兩眼向外轉動以注視較遠物。\n\n**NPC｜近點聚合**\nNear point of convergence，兩眼能維持聚合單視的最近點。",
+          "q": "用自己的話說明「散開（divergence）／集合近點（NPC）」，並說出一個判斷依據。",
+          "answer": "**散開（divergence）｜散開**\n兩眼向外轉動以注視較遠物。\n\n**集合近點（NPC）｜近點聚合**\n近點（Near point） of 會聚（convergence），兩眼能維持聚合單視的最近點。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**divergence｜散開**\n兩眼向外轉動以注視較遠物。\n\n**NPC｜近點聚合**\nNear point of convergence，兩眼能維持聚合單視的最近點。"
+          "explain": "**散開（divergence）｜散開**\n兩眼向外轉動以注視較遠物。\n\n**集合近點（NPC）｜近點聚合**\n近點（Near point） of 會聚（convergence），兩眼能維持聚合單視的最近點。",
+          "id": "c8f5d495f"
         },
         {
           "type": "example",
-          "title": "範例拆解：divergence／NPC",
-          "problem": "用自己的話說明「divergence／NPC」，並說出一個判斷依據。",
+          "title": "範例拆解：散開（divergence）／集合近點（NPC）",
+          "problem": "用自己的話說明「散開（divergence）／集合近點（NPC）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：divergence／NPC",
-            "**divergence｜散開**\n兩眼向外轉動以注視較遠物。\n\n**NPC｜近點聚合**\nNear point of convergence，兩眼能維持聚合單視的最近點。",
-            "把判斷依據連回題目：**divergence｜散開**\n兩眼向外轉動以注視較遠物。\n\n**NPC｜近點聚合**\nNear point of convergence，兩眼能維持聚合單視的最近點。"
+            "先確認題目問的主題：散開（divergence）／集合近點（NPC）",
+            "**散開（divergence）｜散開**\n兩眼向外轉動以注視較遠物。\n\n**集合近點（NPC）｜近點聚合**\n近點（Near point） of 會聚（convergence），兩眼能維持聚合單視的最近點。",
+            "把判斷依據連回題目：**散開（divergence）｜散開**\n兩眼向外轉動以注視較遠物。\n\n**集合近點（NPC）｜近點聚合**\n近點（Near point） of 會聚（convergence），兩眼能維持聚合單視的最近點。"
           ],
-          "answer": "**divergence｜散開**\n兩眼向外轉動以注視較遠物。\n\n**NPC｜近點聚合**\nNear point of convergence，兩眼能維持聚合單視的最近點。"
+          "answer": "**散開（divergence）｜散開**\n兩眼向外轉動以注視較遠物。\n\n**集合近點（NPC）｜近點聚合**\n近點（Near point） of 會聚（convergence），兩眼能維持聚合單視的最近點。"
         },
         {
           "type": "practice",
@@ -356,17 +377,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「vergence／convergence」，並說出一個判斷依據。",
-              "answer": "**vergence｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**convergence｜內聚**\n兩眼向鼻側轉動以注視近物。",
+              "q": "用自己的話說明「異向運動（vergence）／會聚（convergence）」，並說出一個判斷依據。",
+              "answer": "**異向運動（vergence）｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**會聚（convergence）｜內聚**\n兩眼向鼻側轉動以注視近物。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**vergence｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**convergence｜內聚**\n兩眼向鼻側轉動以注視近物。"
+              "explain": "**異向運動（vergence）｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**會聚（convergence）｜內聚**\n兩眼向鼻側轉動以注視近物。",
+              "id": "cde5ea70b"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「divergence／NPC」，並說出一個判斷依據。",
-              "answer": "**divergence｜散開**\n兩眼向外轉動以注視較遠物。\n\n**NPC｜近點聚合**\nNear point of convergence，兩眼能維持聚合單視的最近點。",
+              "q": "用自己的話說明「散開（divergence）／集合近點（NPC）」，並說出一個判斷依據。",
+              "answer": "**散開（divergence）｜散開**\n兩眼向外轉動以注視較遠物。\n\n**集合近點（NPC）｜近點聚合**\n近點（Near point） of 會聚（convergence），兩眼能維持聚合單視的最近點。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**divergence｜散開**\n兩眼向外轉動以注視較遠物。\n\n**NPC｜近點聚合**\nNear point of convergence，兩眼能維持聚合單視的最近點。"
+              "explain": "**散開（divergence）｜散開**\n兩眼向外轉動以注視較遠物。\n\n**集合近點（NPC）｜近點聚合**\n近點（Near point） of 會聚（convergence），兩眼能維持聚合單視的最近點。",
+              "id": "c8f5d495f"
             }
           ]
         },
@@ -374,27 +397,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "spectacle plane／version：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "vergence／convergence：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**spectacle plane｜眼鏡平面**\n戴鏡患者測量近點距離時使用的起始平面。\n\n**version｜共同運動**\n兩眼往同一方向移動。",
-            "**vergence｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**convergence｜內聚**\n兩眼向鼻側轉動以注視近物。"
+            "眼鏡平面（spectacle plane）／共同運動（version）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "異向運動（vergence）／會聚（convergence）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**眼鏡平面（spectacle plane）｜眼鏡平面**\n戴鏡患者測量近點距離時使用的起始平面。\n\n**共同運動（version）｜共同運動**\n兩眼往同一方向移動。",
+            "**異向運動（vergence）｜異向運動**\n兩眼往相反方向移動的總稱。\n\n**會聚（convergence）｜內聚**\n兩眼向鼻側轉動以注視近物。"
           ],
           "flash": [
             {
-              "front": "spectacle plane／version",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "眼鏡平面（spectacle plane）／共同運動（version）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f93a070a3"
             },
             {
-              "front": "vergence／convergence",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "異向運動（vergence）／會聚（convergence）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f137d62e8"
             },
             {
-              "front": "divergence／NPC",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "散開（divergence）／集合近點（NPC）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f52be3101"
             },
             {
-              "front": "用自己的話說明「spectacle plane／version」，並說出一個判斷依據。",
-              "back": "**spectacle plane｜眼鏡平面**\n戴鏡患者測量近點距離時使用的起始平面。\n\n**version｜共同運動**\n兩眼往同一方向移動。"
+              "front": "用自己的話說明「眼鏡平面（spectacle plane）／共同運動（version）」，並說出一個判斷依據。",
+              "back": "**眼鏡平面（spectacle plane）｜眼鏡平面**\n戴鏡患者測量近點距離時使用的起始平面。\n\n**共同運動（version）｜共同運動**\n兩眼往同一方向移動。",
+              "id": "fa6071989"
             }
           ]
         }
@@ -404,9 +431,9 @@
       "id": "terms-28-1",
       "title": "中英文核心名詞 28",
       "goals": [
-        "解釋break／recovery",
-        "解釋TTN／suppression",
-        "解釋accommodative target／penlight"
+        "解釋破裂點（break）／恢復點（recovery）",
+        "解釋到鼻尖（TTN）／抑制（suppression）",
+        "解釋調節性視標（accommodative target）／筆燈（penlight）"
       ],
       "steps": [
         {
@@ -416,8 +443,8 @@
         },
         {
           "type": "card",
-          "title": "break／recovery",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**break｜破裂點**\nNPC 中第一次複視或觀察到一眼外轉的位置。\n\n**recovery｜恢復點**\nNPC 視標拉遠後重新成為單一影像的位置。",
+          "title": "破裂點（break）／恢復點（recovery）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**破裂點（break）｜破裂點**\n集合近點（NPC） 中第一次複視或觀察到一眼外轉的位置。\n\n**恢復點（recovery）｜恢復點**\n集合近點 視標拉遠後重新成為單一影像的位置。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -426,15 +453,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「break／recovery」，並說出一個判斷依據。",
-          "answer": "**break｜破裂點**\nNPC 中第一次複視或觀察到一眼外轉的位置。\n\n**recovery｜恢復點**\nNPC 視標拉遠後重新成為單一影像的位置。",
+          "q": "用自己的話說明「破裂點（break）／恢復點（recovery）」，並說出一個判斷依據。",
+          "answer": "**破裂點（break）｜破裂點**\n集合近點（NPC） 中第一次複視或觀察到一眼外轉的位置。\n\n**恢復點（recovery）｜恢復點**\n集合近點（NPC） 視標拉遠後重新成為單一影像的位置。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**break｜破裂點**\nNPC 中第一次複視或觀察到一眼外轉的位置。\n\n**recovery｜恢復點**\nNPC 視標拉遠後重新成為單一影像的位置。"
+          "explain": "**破裂點（break）｜破裂點**\n集合近點（NPC） 中第一次複視或觀察到一眼外轉的位置。\n\n**恢復點（recovery）｜恢復點**\n集合近點（NPC） 視標拉遠後重新成為單一影像的位置。",
+          "id": "cada82811"
         },
         {
           "type": "card",
-          "title": "TTN／suppression",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**TTN｜到鼻尖**\nTo the nose，NPC 測到鼻尖仍未出現 break。\n\n**suppression｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。",
+          "title": "到鼻尖（TTN）／抑制（suppression）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**到鼻尖（TTN）｜到鼻尖**\nTo the nose，集合近點（NPC） 測到鼻尖仍未出現 破裂點（break）。\n\n**抑制（suppression）｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -443,15 +471,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「TTN／suppression」，並說出一個判斷依據。",
-          "answer": "**TTN｜到鼻尖**\nTo the nose，NPC 測到鼻尖仍未出現 break。\n\n**suppression｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。",
+          "q": "用自己的話說明「到鼻尖（TTN）／抑制（suppression）」，並說出一個判斷依據。",
+          "answer": "**到鼻尖（TTN）｜到鼻尖**\nTo the nose，集合近點（NPC） 測到鼻尖仍未出現 破裂點（break）。\n\n**抑制（suppression）｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**TTN｜到鼻尖**\nTo the nose，NPC 測到鼻尖仍未出現 break。\n\n**suppression｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。"
+          "explain": "**到鼻尖（TTN）｜到鼻尖**\nTo the nose，集合近點（NPC） 測到鼻尖仍未出現 破裂點（break）。\n\n**抑制（suppression）｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。",
+          "id": "c9e8d1b67"
         },
         {
           "type": "card",
-          "title": "accommodative target／penlight",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**accommodative target｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**penlight｜筆燈**\n缺少細節的非調節性 NPC 視標。",
+          "title": "調節性視標（accommodative target）／筆燈（penlight）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**調節性視標（accommodative target）｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**筆燈（penlight）｜筆燈**\n缺少細節的非調節性 集合近點（NPC） 視標。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -460,21 +489,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「accommodative target／penlight」，並說出一個判斷依據。",
-          "answer": "**accommodative target｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**penlight｜筆燈**\n缺少細節的非調節性 NPC 視標。",
+          "q": "用自己的話說明「調節性視標（accommodative target）／筆燈（penlight）」，並說出一個判斷依據。",
+          "answer": "**調節性視標（accommodative target）｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**筆燈（penlight）｜筆燈**\n缺少細節的非調節性 集合近點（NPC） 視標。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**accommodative target｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**penlight｜筆燈**\n缺少細節的非調節性 NPC 視標。"
+          "explain": "**調節性視標（accommodative target）｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**筆燈（penlight）｜筆燈**\n缺少細節的非調節性 集合近點（NPC） 視標。",
+          "id": "cc16fbecb"
         },
         {
           "type": "example",
-          "title": "範例拆解：accommodative target／penlight",
-          "problem": "用自己的話說明「accommodative target／penlight」，並說出一個判斷依據。",
+          "title": "範例拆解：調節性視標（accommodative target）／筆燈（penlight）",
+          "problem": "用自己的話說明「調節性視標（accommodative target）／筆燈（penlight）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：accommodative target／penlight",
-            "**accommodative target｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**penlight｜筆燈**\n缺少細節的非調節性 NPC 視標。",
-            "把判斷依據連回題目：**accommodative target｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**penlight｜筆燈**\n缺少細節的非調節性 NPC 視標。"
+            "先確認題目問的主題：調節性視標（accommodative target）／筆燈（penlight）",
+            "**調節性視標（accommodative target）｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**筆燈（penlight）｜筆燈**\n缺少細節的非調節性 集合近點（NPC） 視標。",
+            "把判斷依據連回題目：**調節性視標（accommodative target）｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**筆燈（penlight）｜筆燈**\n缺少細節的非調節性 集合近點（NPC） 視標。"
           ],
-          "answer": "**accommodative target｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**penlight｜筆燈**\n缺少細節的非調節性 NPC 視標。"
+          "answer": "**調節性視標（accommodative target）｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**筆燈（penlight）｜筆燈**\n缺少細節的非調節性 集合近點（NPC） 視標。"
         },
         {
           "type": "practice",
@@ -483,17 +513,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「TTN／suppression」，並說出一個判斷依據。",
-              "answer": "**TTN｜到鼻尖**\nTo the nose，NPC 測到鼻尖仍未出現 break。\n\n**suppression｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。",
+              "q": "用自己的話說明「到鼻尖（TTN）／抑制（suppression）」，並說出一個判斷依據。",
+              "answer": "**到鼻尖（TTN）｜到鼻尖**\nTo the nose，集合近點（NPC） 測到鼻尖仍未出現 破裂點（break）。\n\n**抑制（suppression）｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**TTN｜到鼻尖**\nTo the nose，NPC 測到鼻尖仍未出現 break。\n\n**suppression｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。"
+              "explain": "**到鼻尖（TTN）｜到鼻尖**\nTo the nose，集合近點（NPC） 測到鼻尖仍未出現 破裂點（break）。\n\n**抑制（suppression）｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。",
+              "id": "c9e8d1b67"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「accommodative target／penlight」，並說出一個判斷依據。",
-              "answer": "**accommodative target｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**penlight｜筆燈**\n缺少細節的非調節性 NPC 視標。",
+              "q": "用自己的話說明「調節性視標（accommodative target）／筆燈（penlight）」，並說出一個判斷依據。",
+              "answer": "**調節性視標（accommodative target）｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**筆燈（penlight）｜筆燈**\n缺少細節的非調節性 集合近點（NPC） 視標。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**accommodative target｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**penlight｜筆燈**\n缺少細節的非調節性 NPC 視標。"
+              "explain": "**調節性視標（accommodative target）｜調節性視標**\n有細節可對焦的字或圖案，會同時誘發調節與內聚。\n\n**筆燈（penlight）｜筆燈**\n缺少細節的非調節性 集合近點（NPC） 視標。",
+              "id": "cc16fbecb"
             }
           ]
         },
@@ -501,27 +533,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "break／recovery：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "TTN／suppression：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**break｜破裂點**\nNPC 中第一次複視或觀察到一眼外轉的位置。\n\n**recovery｜恢復點**\nNPC 視標拉遠後重新成為單一影像的位置。",
-            "**TTN｜到鼻尖**\nTo the nose，NPC 測到鼻尖仍未出現 break。\n\n**suppression｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。"
+            "破裂點（break）／恢復點（recovery）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "到鼻尖（TTN）／抑制（suppression）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**破裂點（break）｜破裂點**\n集合近點（NPC） 中第一次複視或觀察到一眼外轉的位置。\n\n**恢復點（recovery）｜恢復點**\n集合近點（NPC） 視標拉遠後重新成為單一影像的位置。",
+            "**到鼻尖（TTN）｜到鼻尖**\nTo the nose，集合近點（NPC） 測到鼻尖仍未出現 破裂點（break）。\n\n**抑制（suppression）｜抑制**\n大腦忽略其中一眼影像，因此患者可能不報複視。"
           ],
           "flash": [
             {
-              "front": "break／recovery",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "破裂點（break）／恢復點（recovery）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fb7128bed"
             },
             {
-              "front": "TTN／suppression",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "到鼻尖（TTN）／抑制（suppression）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f37d7cfa7"
             },
             {
-              "front": "accommodative target／penlight",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "調節性視標（accommodative target）／筆燈（penlight）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f38da1064"
             },
             {
-              "front": "用自己的話說明「break／recovery」，並說出一個判斷依據。",
-              "back": "**break｜破裂點**\nNPC 中第一次複視或觀察到一眼外轉的位置。\n\n**recovery｜恢復點**\nNPC 視標拉遠後重新成為單一影像的位置。"
+              "front": "用自己的話說明「破裂點（break）／恢復點（recovery）」，並說出一個判斷依據。",
+              "back": "**破裂點（break）｜破裂點**\n集合近點（NPC） 中第一次複視或觀察到一眼外轉的位置。\n\n**恢復點（recovery）｜恢復點**\n集合近點（NPC） 視標拉遠後重新成為單一影像的位置。",
+              "id": "fada82811"
             }
           ]
         }
@@ -531,9 +567,9 @@
       "id": "terms-29-1",
       "title": "中英文核心名詞 29",
       "goals": [
-        "解釋red lens／convergence insufficiency",
-        "解釋non-accommodative target／crossed",
-        "解釋uncrossed／local"
+        "解釋紅色鏡片（red lens）／內聚不足（convergence insufficiency）",
+        "解釋非調節性視標（non-accommodative target）／交叉性（crossed）",
+        "解釋非交叉性（uncrossed）／局部（local）"
       ],
       "steps": [
         {
@@ -543,8 +579,8 @@
         },
         {
           "type": "card",
-          "title": "red lens／convergence insufficiency",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**red lens｜紅色鏡片**\n配合筆燈使用，可幫助分離雙眼影像與判定 NPC。\n\n**convergence insufficiency｜內聚不足**\n近距離聚合能力不足，可能造成複視、疲勞與閱讀困難。",
+          "title": "紅色鏡片（red lens）／內聚不足（convergence insufficiency）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**紅色鏡片（red lens）｜紅色鏡片**\n配合筆燈使用，可幫助分離雙眼影像與判定 集合近點（NPC）。\n\n**內聚不足（convergence insufficiency）｜內聚不足**\n近距離聚合能力不足，可能造成複視、疲勞與閱讀困難。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -553,15 +589,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「red lens／convergence insufficiency」，並說出一個判斷依據。",
-          "answer": "**red lens｜紅色鏡片**\n配合筆燈使用，可幫助分離雙眼影像與判定 NPC。\n\n**convergence insufficiency｜內聚不足**\n近距離聚合能力不足，可能造成複視、疲勞與閱讀困難。",
+          "q": "用自己的話說明「紅色鏡片（red lens）／內聚不足（convergence insufficiency）」，並說出一個判斷依據。",
+          "answer": "**紅色鏡片（red lens）｜紅色鏡片**\n配合筆燈使用，可幫助分離雙眼影像與判定 集合近點（NPC）。\n\n**內聚不足（convergence insufficiency）｜內聚不足**\n近距離聚合能力不足，可能造成複視、疲勞與閱讀困難。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**red lens｜紅色鏡片**\n配合筆燈使用，可幫助分離雙眼影像與判定 NPC。\n\n**convergence insufficiency｜內聚不足**\n近距離聚合能力不足，可能造成複視、疲勞與閱讀困難。"
+          "explain": "**紅色鏡片（red lens）｜紅色鏡片**\n配合筆燈使用，可幫助分離雙眼影像與判定 集合近點（NPC）。\n\n**內聚不足（convergence insufficiency）｜內聚不足**\n近距離聚合能力不足，可能造成複視、疲勞與閱讀困難。",
+          "id": "c816011cb"
         },
         {
           "type": "card",
-          "title": "non-accommodative target／crossed",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**non-accommodative target｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 NPC。\n\n**crossed｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。",
+          "title": "非調節性視標（non-accommodative target）／交叉性（crossed）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**非調節性視標（non-accommodative target）｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 集合近點（NPC）。\n\n**交叉性（crossed）｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -570,15 +607,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「non-accommodative target／crossed」，並說出一個判斷依據。",
-          "answer": "**non-accommodative target｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 NPC。\n\n**crossed｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。",
+          "q": "用自己的話說明「非調節性視標（non-accommodative target）／交叉性（crossed）」，並說出一個判斷依據。",
+          "answer": "**非調節性視標（non-accommodative target）｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 集合近點（NPC）。\n\n**交叉性（crossed）｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**non-accommodative target｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 NPC。\n\n**crossed｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。"
+          "explain": "**非調節性視標（non-accommodative target）｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 集合近點（NPC）。\n\n**交叉性（crossed）｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。",
+          "id": "c5e745f8b"
         },
         {
           "type": "card",
-          "title": "uncrossed／local",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**uncrossed｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**local｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。",
+          "title": "非交叉性（uncrossed）／局部（local）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**非交叉性（uncrossed）｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**局部（local）｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -587,21 +625,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「uncrossed／local」，並說出一個判斷依據。",
-          "answer": "**uncrossed｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**local｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。",
+          "q": "用自己的話說明「非交叉性（uncrossed）／局部（local）」，並說出一個判斷依據。",
+          "answer": "**非交叉性（uncrossed）｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**局部（local）｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**uncrossed｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**local｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。"
+          "explain": "**非交叉性（uncrossed）｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**局部（local）｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。",
+          "id": "cf246971f"
         },
         {
           "type": "example",
-          "title": "範例拆解：uncrossed／local",
-          "problem": "用自己的話說明「uncrossed／local」，並說出一個判斷依據。",
+          "title": "範例拆解：非交叉性（uncrossed）／局部（local）",
+          "problem": "用自己的話說明「非交叉性（uncrossed）／局部（local）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：uncrossed／local",
-            "**uncrossed｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**local｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。",
-            "把判斷依據連回題目：**uncrossed｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**local｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。"
+            "先確認題目問的主題：非交叉性（uncrossed）／局部（local）",
+            "**非交叉性（uncrossed）｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**局部（local）｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。",
+            "把判斷依據連回題目：**非交叉性（uncrossed）｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**局部（local）｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。"
           ],
-          "answer": "**uncrossed｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**local｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。"
+          "answer": "**非交叉性（uncrossed）｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**局部（local）｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。"
         },
         {
           "type": "practice",
@@ -610,17 +649,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「non-accommodative target／crossed」，並說出一個判斷依據。",
-              "answer": "**non-accommodative target｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 NPC。\n\n**crossed｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。",
+              "q": "用自己的話說明「非調節性視標（non-accommodative target）／交叉性（crossed）」，並說出一個判斷依據。",
+              "answer": "**非調節性視標（non-accommodative target）｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 集合近點（NPC）。\n\n**交叉性（crossed）｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**non-accommodative target｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 NPC。\n\n**crossed｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。"
+              "explain": "**非調節性視標（non-accommodative target）｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 集合近點（NPC）。\n\n**交叉性（crossed）｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。",
+              "id": "c5e745f8b"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「uncrossed／local」，並說出一個判斷依據。",
-              "answer": "**uncrossed｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**local｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。",
+              "q": "用自己的話說明「非交叉性（uncrossed）／局部（local）」，並說出一個判斷依據。",
+              "answer": "**非交叉性（uncrossed）｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**局部（local）｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**uncrossed｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**local｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。"
+              "explain": "**非交叉性（uncrossed）｜非交叉性**\n在立體視中通常表示物體感覺位於注視平面後方。\n\n**局部（local）｜局部**\n立體視檢查中使用中央小視標、可能含單眼線索的類型。",
+              "id": "cf246971f"
             }
           ]
         },
@@ -628,27 +669,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "red lens／convergence insufficiency：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "non-accommodative target／crossed：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**red lens｜紅色鏡片**\n配合筆燈使用，可幫助分離雙眼影像與判定 NPC。\n\n**convergence insufficiency｜內聚不足**\n近距離聚合能力不足，可能造成複視、疲勞與閱讀困難。",
-            "**non-accommodative target｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 NPC。\n\n**crossed｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。"
+            "紅色鏡片（red lens）／內聚不足（convergence insufficiency）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "非調節性視標（non-accommodative target）／交叉性（crossed）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**紅色鏡片（red lens）｜紅色鏡片**\n配合筆燈使用，可幫助分離雙眼影像與判定 集合近點（NPC）。\n\n**內聚不足（convergence insufficiency）｜內聚不足**\n近距離聚合能力不足，可能造成複視、疲勞與閱讀困難。",
+            "**非調節性視標（non-accommodative target）｜非調節性視標**\n不含細節、較少誘發調節的視標，常用於老花者 集合近點（NPC）。\n\n**交叉性（crossed）｜交叉性**\n在立體視中通常表示物體感覺位於注視平面前方。"
           ],
           "flash": [
             {
-              "front": "red lens／convergence insufficiency",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "紅色鏡片（red lens）／內聚不足（convergence insufficiency）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "feb9ce7b7"
             },
             {
-              "front": "non-accommodative target／crossed",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "非調節性視標（non-accommodative target）／交叉性（crossed）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f8a236353"
             },
             {
-              "front": "uncrossed／local",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "非交叉性（uncrossed）／局部（local）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "ff3952289"
             },
             {
-              "front": "用自己的話說明「red lens／convergence insufficiency」，並說出一個判斷依據。",
-              "back": "**red lens｜紅色鏡片**\n配合筆燈使用，可幫助分離雙眼影像與判定 NPC。\n\n**convergence insufficiency｜內聚不足**\n近距離聚合能力不足，可能造成複視、疲勞與閱讀困難。"
+              "front": "用自己的話說明「紅色鏡片（red lens）／內聚不足（convergence insufficiency）」，並說出一個判斷依據。",
+              "back": "**紅色鏡片（red lens）｜紅色鏡片**\n配合筆燈使用，可幫助分離雙眼影像與判定 集合近點（NPC）。\n\n**內聚不足（convergence insufficiency）｜內聚不足**\n近距離聚合能力不足，可能造成複視、疲勞與閱讀困難。",
+              "id": "f816011cb"
             }
           ]
         }
@@ -658,9 +703,9 @@
       "id": "terms-30-1",
       "title": "中英文核心名詞 30",
       "goals": [
-        "解釋global／texture",
-        "解釋Panum／fovea",
-        "解釋fixation／stereotest"
+        "解釋整體（global）／紋理（texture）",
+        "解釋潘納姆（Panum）／中央凹（fovea）",
+        "解釋注視（fixation）／立體視檢查（stereotest）"
       ],
       "steps": [
         {
@@ -670,8 +715,8 @@
         },
         {
           "type": "card",
-          "title": "global／texture",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**global｜整體**\n立體視檢查中使用較大隨機點範圍、需要更多雙眼整合的類型。\n\n**texture｜紋理**\n物體表面的細節排列，可提供遠近線索。",
+          "title": "整體（global）／紋理（texture）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**整體（global）｜整體**\n立體視檢查中使用較大隨機點範圍、需要更多雙眼整合的類型。\n\n**紋理（texture）｜紋理**\n物體表面的細節排列，可提供遠近線索。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -680,15 +725,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「global／texture」，並說出一個判斷依據。",
-          "answer": "**global｜整體**\n立體視檢查中使用較大隨機點範圍、需要更多雙眼整合的類型。\n\n**texture｜紋理**\n物體表面的細節排列，可提供遠近線索。",
+          "q": "用自己的話說明「整體（global）／紋理（texture）」，並說出一個判斷依據。",
+          "answer": "**整體（global）｜整體**\n立體視檢查中使用較大隨機點範圍、需要更多雙眼整合的類型。\n\n**紋理（texture）｜紋理**\n物體表面的細節排列，可提供遠近線索。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**global｜整體**\n立體視檢查中使用較大隨機點範圍、需要更多雙眼整合的類型。\n\n**texture｜紋理**\n物體表面的細節排列，可提供遠近線索。"
+          "explain": "**整體（global）｜整體**\n立體視檢查中使用較大隨機點範圍、需要更多雙眼整合的類型。\n\n**紋理（texture）｜紋理**\n物體表面的細節排列，可提供遠近線索。",
+          "id": "ced9aeffa"
         },
         {
           "type": "card",
-          "title": "Panum／fovea",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**Panum｜潘納姆**\n常用來指 horopter 前後仍可融合的 Panum 融像區。\n\n**fovea｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。",
+          "title": "潘納姆（Panum）／中央凹（fovea）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**潘納姆（Panum）｜潘納姆**\n常用來指 雙眼單視界（horopter） 前後仍可融合的 潘納姆 融像區。\n\n**中央凹（fovea）｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -697,15 +743,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「Panum／fovea」，並說出一個判斷依據。",
-          "answer": "**Panum｜潘納姆**\n常用來指 horopter 前後仍可融合的 Panum 融像區。\n\n**fovea｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。",
+          "q": "用自己的話說明「潘納姆（Panum）／中央凹（fovea）」，並說出一個判斷依據。",
+          "answer": "**潘納姆（Panum）｜潘納姆**\n常用來指 雙眼單視界（horopter） 前後仍可融合的 潘納姆（Panum） 融像區。\n\n**中央凹（fovea）｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**Panum｜潘納姆**\n常用來指 horopter 前後仍可融合的 Panum 融像區。\n\n**fovea｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。"
+          "explain": "**潘納姆（Panum）｜潘納姆**\n常用來指 雙眼單視界（horopter） 前後仍可融合的 潘納姆（Panum） 融像區。\n\n**中央凹（fovea）｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。",
+          "id": "c8a4c6f67"
         },
         {
           "type": "card",
-          "title": "fixation／stereotest",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**fixation｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**stereotest｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。",
+          "title": "注視（fixation）／立體視檢查（stereotest）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**注視（fixation）｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**立體視檢查（stereotest）｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -714,21 +761,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「fixation／stereotest」，並說出一個判斷依據。",
-          "answer": "**fixation｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**stereotest｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。",
+          "q": "用自己的話說明「注視（fixation）／立體視檢查（stereotest）」，並說出一個判斷依據。",
+          "answer": "**注視（fixation）｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**立體視檢查（stereotest）｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**fixation｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**stereotest｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。"
+          "explain": "**注視（fixation）｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**立體視檢查（stereotest）｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。",
+          "id": "c03a21b07"
         },
         {
           "type": "example",
-          "title": "範例拆解：fixation／stereotest",
-          "problem": "用自己的話說明「fixation／stereotest」，並說出一個判斷依據。",
+          "title": "範例拆解：注視（fixation）／立體視檢查（stereotest）",
+          "problem": "用自己的話說明「注視（fixation）／立體視檢查（stereotest）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：fixation／stereotest",
-            "**fixation｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**stereotest｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。",
-            "把判斷依據連回題目：**fixation｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**stereotest｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。"
+            "先確認題目問的主題：注視（fixation）／立體視檢查（stereotest）",
+            "**注視（fixation）｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**立體視檢查（stereotest）｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。",
+            "把判斷依據連回題目：**注視（fixation）｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**立體視檢查（stereotest）｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。"
           ],
-          "answer": "**fixation｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**stereotest｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。"
+          "answer": "**注視（fixation）｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**立體視檢查（stereotest）｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。"
         },
         {
           "type": "practice",
@@ -737,17 +785,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「Panum／fovea」，並說出一個判斷依據。",
-              "answer": "**Panum｜潘納姆**\n常用來指 horopter 前後仍可融合的 Panum 融像區。\n\n**fovea｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。",
+              "q": "用自己的話說明「潘納姆（Panum）／中央凹（fovea）」，並說出一個判斷依據。",
+              "answer": "**潘納姆（Panum）｜潘納姆**\n常用來指 雙眼單視界（horopter） 前後仍可融合的 潘納姆（Panum） 融像區。\n\n**中央凹（fovea）｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**Panum｜潘納姆**\n常用來指 horopter 前後仍可融合的 Panum 融像區。\n\n**fovea｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。"
+              "explain": "**潘納姆（Panum）｜潘納姆**\n常用來指 雙眼單視界（horopter） 前後仍可融合的 潘納姆（Panum） 融像區。\n\n**中央凹（fovea）｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。",
+              "id": "c8a4c6f67"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「fixation／stereotest」，並說出一個判斷依據。",
-              "answer": "**fixation｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**stereotest｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。",
+              "q": "用自己的話說明「注視（fixation）／立體視檢查（stereotest）」，並說出一個判斷依據。",
+              "answer": "**注視（fixation）｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**立體視檢查（stereotest）｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**fixation｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**stereotest｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。"
+              "explain": "**注視（fixation）｜注視**\n讓雙眼視軸對準目標並維持觀看。\n\n**立體視檢查（stereotest）｜立體視檢查**\n用來測量是否具有立體視及最小可辨認視差。",
+              "id": "c03a21b07"
             }
           ]
         },
@@ -755,27 +805,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "global／texture：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "Panum／fovea：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**global｜整體**\n立體視檢查中使用較大隨機點範圍、需要更多雙眼整合的類型。\n\n**texture｜紋理**\n物體表面的細節排列，可提供遠近線索。",
-            "**Panum｜潘納姆**\n常用來指 horopter 前後仍可融合的 Panum 融像區。\n\n**fovea｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。"
+            "整體（global）／紋理（texture）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "潘納姆（Panum）／中央凹（fovea）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**整體（global）｜整體**\n立體視檢查中使用較大隨機點範圍、需要更多雙眼整合的類型。\n\n**紋理（texture）｜紋理**\n物體表面的細節排列，可提供遠近線索。",
+            "**潘納姆（Panum）｜潘納姆**\n常用來指 雙眼單視界（horopter） 前後仍可融合的 潘納姆（Panum） 融像區。\n\n**中央凹（fovea）｜中央凹**\n視網膜中央視力最精細的區域，注視點影像通常落在此處。"
           ],
           "flash": [
             {
-              "front": "global／texture",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "整體（global）／紋理（texture）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fb27b589b"
             },
             {
-              "front": "Panum／fovea",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "潘納姆（Panum）／中央凹（fovea）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fa21a8533"
             },
             {
-              "front": "fixation／stereotest",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "注視（fixation）／立體視檢查（stereotest）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f3d560ca1"
             },
             {
-              "front": "用自己的話說明「global／texture」，並說出一個判斷依據。",
-              "back": "**global｜整體**\n立體視檢查中使用較大隨機點範圍、需要更多雙眼整合的類型。\n\n**texture｜紋理**\n物體表面的細節排列，可提供遠近線索。"
+              "front": "用自己的話說明「整體（global）／紋理（texture）」，並說出一個判斷依據。",
+              "back": "**整體（global）｜整體**\n立體視檢查中使用較大隨機點範圍、需要更多雙眼整合的類型。\n\n**紋理（texture）｜紋理**\n物體表面的細節排列，可提供遠近線索。",
+              "id": "fed9aeffa"
             }
           ]
         }

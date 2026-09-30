@@ -36,7 +36,7 @@
         {
           "type": "card",
           "title": "急速重點：視野病灶速判",
-          "body": "**一句話／白話**\n單眼全黑多半是眼睛剛出去的線壞；兩側外邊看不到常是中間交叉處壞；同一側視野缺則是更後面壞。\n\n**觀念**\nOptic nerve：同側單眼失明；chiasm：雙顳側偏盲；tract/radiation/cortex：對側同名偏盲。\n\n**易錯與比較**\n要會由視野找病灶，也要反推視野。\n\n**口訣**\n缺損形狀就是斷線地址。",
+          "body": "**一句話／白話**\n單眼全黑多半是眼睛剛出去的線壞；兩側外邊看不到常是中間交叉處壞；同一側視野缺則是更後面壞。\n\n**觀念**\n視神經（Optic nerve）：同側單眼失明；視交叉（chiasm）：雙顳側偏盲；神經束（tract）/radiation/皮質（cortex）：對側同名偏盲。\n\n**易錯與比較**\n要會由視野找病灶，也要反推視野。\n\n**口訣**\n缺損形狀就是斷線地址。",
           "keys": [
             "單眼全黑多半是眼睛剛出去的線壞；兩側外邊看不到常是中間交叉處壞；同一側視野缺則是更後面壞。"
           ],
@@ -46,14 +46,15 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：視野病灶速判」，並說出一個判斷依據。",
-          "answer": "Optic nerve：同側單眼失明；chiasm：雙顳側偏盲；tract/radiation/cortex：對側同名偏盲。",
+          "answer": "視神經（Optic nerve）：同側單眼失明；視交叉（chiasm）：雙顳側偏盲；神經束（tract）/radiation/皮質（cortex）：對側同名偏盲。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "Optic nerve：同側單眼失明；chiasm：雙顳側偏盲；tract/radiation/cortex：對側同名偏盲。"
+          "explain": "視神經（Optic nerve）：同側單眼失明；視交叉（chiasm）：雙顳側偏盲；神經束（tract）/radiation/皮質（cortex）：對側同名偏盲。",
+          "id": "cbfbbf353"
         },
         {
           "type": "card",
           "title": "急速重點：盲點判讀",
-          "body": "**一句話／白話**\n視神經離開眼球的地方沒有感光細胞，所以那一小塊真的看不到；平常由另一眼和腦補起來。\n\n**觀念**\n盲點來自無 photoreceptor 的 optic disc；右眼盲點在右眼視野 temporal side，左眼相反。\n\n**易錯與比較**\n測量圖要包含 entering 與 leaving point。\n\n**口訣**\n電線出口沒裝鏡頭。",
+          "body": "**一句話／白話**\n視神經離開眼球的地方沒有感光細胞，所以那一小塊真的看不到；平常由另一眼和腦補起來。\n\n**觀念**\n盲點來自無 感光細胞（photoreceptor） 的 視乳頭（optic disc）；右眼盲點在右眼視野 顳側（temporal） side，左眼相反。\n\n**易錯與比較**\n測量圖要包含 entering 與 leaving point。\n\n**口訣**\n電線出口沒裝鏡頭。",
           "keys": [
             "視神經離開眼球的地方沒有感光細胞，所以那一小塊真的看不到；平常由另一眼和腦補起來。"
           ],
@@ -63,9 +64,10 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：盲點判讀」，並說出一個判斷依據。",
-          "answer": "盲點來自無 photoreceptor 的 optic disc；右眼盲點在右眼視野 temporal side，左眼相反。",
+          "answer": "盲點來自無 感光細胞（photoreceptor） 的 視乳頭（optic disc）；右眼盲點在右眼視野 顳側（temporal） side，左眼相反。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "盲點來自無 photoreceptor 的 optic disc；右眼盲點在右眼視野 temporal side，左眼相反。"
+          "explain": "盲點來自無 感光細胞（photoreceptor） 的 視乳頭（optic disc）；右眼盲點在右眼視野 顳側（temporal） side，左眼相反。",
+          "id": "c8896a7bc"
         },
         {
           "type": "card",
@@ -82,7 +84,8 @@
           "q": "用自己的話說明「急速重點：中耳阻抗匹配」，並說出一個判斷依據。",
           "answer": "鼓膜面積大於卵圓窗，加三小聽骨槓桿，提高壓力並把空氣振動傳入 cochlear fluid。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "鼓膜面積大於卵圓窗，加三小聽骨槓桿，提高壓力並把空氣振動傳入 cochlear fluid。"
+          "explain": "鼓膜面積大於卵圓窗，加三小聽骨槓桿，提高壓力並把空氣振動傳入 cochlear fluid。",
+          "id": "c040c8359"
         },
         {
           "type": "example",
@@ -106,16 +109,18 @@
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：盲點判讀」，並說出一個判斷依據。",
-              "answer": "盲點來自無 photoreceptor 的 optic disc；右眼盲點在右眼視野 temporal side，左眼相反。",
+              "answer": "盲點來自無 感光細胞（photoreceptor） 的 視乳頭（optic disc）；右眼盲點在右眼視野 顳側（temporal） side，左眼相反。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "盲點來自無 photoreceptor 的 optic disc；右眼盲點在右眼視野 temporal side，左眼相反。"
+              "explain": "盲點來自無 感光細胞（photoreceptor） 的 視乳頭（optic disc）；右眼盲點在右眼視野 顳側（temporal） side，左眼相反。",
+              "id": "c8896a7bc"
             },
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：中耳阻抗匹配」，並說出一個判斷依據。",
               "answer": "鼓膜面積大於卵圓窗，加三小聽骨槓桿，提高壓力並把空氣振動傳入 cochlear fluid。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "鼓膜面積大於卵圓窗，加三小聽骨槓桿，提高壓力並把空氣振動傳入 cochlear fluid。"
+              "explain": "鼓膜面積大於卵圓窗，加三小聽骨槓桿，提高壓力並把空氣振動傳入 cochlear fluid。",
+              "id": "c040c8359"
             }
           ]
         },
@@ -131,19 +136,23 @@
           "flash": [
             {
               "front": "急速重點：視野病灶速判",
-              "back": "單眼全黑多半是眼睛剛出去的線壞；兩側外邊看不到常是中間交叉處壞；同一側視野缺則是更後面壞。"
+              "back": "單眼全黑多半是眼睛剛出去的線壞；兩側外邊看不到常是中間交叉處壞；同一側視野缺則是更後面壞。",
+              "id": "fcc4674cc"
             },
             {
               "front": "急速重點：盲點判讀",
-              "back": "視神經離開眼球的地方沒有感光細胞，所以那一小塊真的看不到；平常由另一眼和腦補起來。"
+              "back": "視神經離開眼球的地方沒有感光細胞，所以那一小塊真的看不到；平常由另一眼和腦補起來。",
+              "id": "f07273ab0"
             },
             {
               "front": "急速重點：中耳阻抗匹配",
-              "back": "耳膜面積大，內耳入口小，再加上三塊小骨頭幫忙，把空氣的小震動集中成較大的壓力。"
+              "back": "耳膜面積大，內耳入口小，再加上三塊小骨頭幫忙，把空氣的小震動集中成較大的壓力。",
+              "id": "f9bd6cdbe"
             },
             {
               "front": "用自己的話說明「急速重點：視野病灶速判」，並說出一個判斷依據。",
-              "back": "Optic nerve：同側單眼失明；chiasm：雙顳側偏盲；tract/radiation/cortex：對側同名偏盲。"
+              "back": "視神經（Optic nerve）：同側單眼失明；視交叉（chiasm）：雙顳側偏盲；神經束（tract）/radiation/皮質（cortex）：對側同名偏盲。",
+              "id": "fbfbbf353"
             }
           ]
         }
@@ -154,8 +163,8 @@
       "title": "串連、公式與易錯整合（4）",
       "goals": [
         "解釋急速重點：Traveling wave",
-        "解釋急速重點：Hair cell 換能",
-        "解釋急速重點：Air vs Bone conduction"
+        "解釋急速重點：毛細胞（Hair cell） 換能",
+        "解釋急速重點：空氣（Air） vs Bone conduction"
       ],
       "steps": [
         {
@@ -166,7 +175,7 @@
         {
           "type": "card",
           "title": "急速重點：Traveling wave",
-          "body": "**一句話／白話**\n耳蝸裡的膜像一條長地毯：高頻在入口附近震最大，低頻要跑到深處才震最大。\n\n**觀念**\n高頻在 basilar membrane 基部達最大振幅；低頻在 apex 達最大振幅。\n\n**易錯與比較**\n高頻靠底、低頻跑遠。\n\n**口訣**\n高音靠門，低音進裡面。",
+          "body": "**一句話／白話**\n耳蝸裡的膜像一條長地毯：高頻在入口附近震最大，低頻要跑到深處才震最大。\n\n**觀念**\n高頻在 基底膜（basilar membrane） 基部達最大振幅；低頻在 頂端（apex） 達最大振幅。\n\n**易錯與比較**\n高頻靠底、低頻跑遠。\n\n**口訣**\n高音靠門，低音進裡面。",
           "keys": [
             "耳蝸裡的膜像一條長地毯：高頻在入口附近震最大，低頻要跑到深處才震最大。"
           ],
@@ -176,14 +185,15 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：Traveling wave」，並說出一個判斷依據。",
-          "answer": "高頻在 basilar membrane 基部達最大振幅；低頻在 apex 達最大振幅。",
+          "answer": "高頻在 基底膜（basilar membrane） 基部達最大振幅；低頻在 頂端（apex） 達最大振幅。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "高頻在 basilar membrane 基部達最大振幅；低頻在 apex 達最大振幅。"
+          "explain": "高頻在 基底膜（basilar membrane） 基部達最大振幅；低頻在 頂端（apex） 達最大振幅。",
+          "id": "ca63747f9"
         },
         {
           "type": "card",
-          "title": "急速重點：Hair cell 換能",
-          "body": "**一句話／白話**\n內耳小毛被推向最高那根時，拉繩把通道打開，特殊液體裡的鉀跑進細胞，開始放訊號。\n\n**觀念**\n朝最高 stereocilia 偏轉→tip link 開 K⁺ channel→K⁺由 endolymph 進入→去極化→Ca²⁺進入→transmitter↑。\n\n**易錯與比較**\nendolymph 是高 K⁺。\n\n**口訣**\n往高毛倒＝開門。",
+          "title": "急速重點：毛細胞（Hair cell） 換能",
+          "body": "**一句話／白話**\n內耳小毛被推向最高那根時，拉繩把通道打開，特殊液體裡的鉀跑進細胞，開始放訊號。\n\n**觀念**\n朝最高 stereocilia 偏轉→tip link 開 K⁺ 通道（channel）→K⁺由 內淋巴（endolymph） 進入→去極化→Ca²⁺進入→傳導物質（transmitter）↑。\n\n**易錯與比較**\n內淋巴 是高 K⁺。\n\n**口訣**\n往高毛倒＝開門。",
           "keys": [
             "內耳小毛被推向最高那根時，拉繩把通道打開，特殊液體裡的鉀跑進細胞，開始放訊號。"
           ],
@@ -192,14 +202,15 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：Hair cell 換能」，並說出一個判斷依據。",
-          "answer": "朝最高 stereocilia 偏轉→tip link 開 K⁺ channel→K⁺由 endolymph 進入→去極化→Ca²⁺進入→transmitter↑。",
+          "q": "用自己的話說明「急速重點：毛細胞（Hair cell） 換能」，並說出一個判斷依據。",
+          "answer": "朝最高 stereocilia 偏轉→tip link 開 K⁺ 通道（channel）→K⁺由 內淋巴（endolymph） 進入→去極化→Ca²⁺進入→傳導物質（transmitter）↑。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "朝最高 stereocilia 偏轉→tip link 開 K⁺ channel→K⁺由 endolymph 進入→去極化→Ca²⁺進入→transmitter↑。"
+          "explain": "朝最高 stereocilia 偏轉→tip link 開 K⁺ 通道（channel）→K⁺由 內淋巴（endolymph） 進入→去極化→Ca²⁺進入→傳導物質（transmitter）↑。",
+          "id": "c7b5d9495"
         },
         {
           "type": "card",
-          "title": "急速重點：Air vs Bone conduction",
+          "title": "急速重點：空氣（Air） vs Bone conduction",
           "body": "**一句話／白話**\n外耳或中耳卡住，是聲音傳送問題；內耳或神經壞掉，是接收與傳訊問題。\n\n**觀念**\n正常 Rinne：AC>BC；Weber 傳導性聽損偏患側，感音神經性聽損偏健側。\n\n**易錯與比較**\n先分 conductive 或 sensorineural。\n\n**口訣**\n前段塞車 vs 後段機器壞。",
           "keys": [
             "外耳或中耳卡住，是聲音傳送問題；內耳或神經壞掉，是接收與傳訊問題。"
@@ -209,17 +220,18 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：Air vs Bone conduction」，並說出一個判斷依據。",
+          "q": "用自己的話說明「急速重點：空氣（Air） vs Bone conduction」，並說出一個判斷依據。",
           "answer": "正常 Rinne：AC>BC；Weber 傳導性聽損偏患側，感音神經性聽損偏健側。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "正常 Rinne：AC>BC；Weber 傳導性聽損偏患側，感音神經性聽損偏健側。"
+          "explain": "正常 Rinne：AC>BC；Weber 傳導性聽損偏患側，感音神經性聽損偏健側。",
+          "id": "c94e28f2d"
         },
         {
           "type": "example",
-          "title": "範例拆解：急速重點：Air vs Bone conduction",
-          "problem": "用自己的話說明「急速重點：Air vs Bone conduction」，並說出一個判斷依據。",
+          "title": "範例拆解：急速重點：空氣（Air） vs Bone conduction",
+          "problem": "用自己的話說明「急速重點：空氣（Air） vs Bone conduction」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：急速重點：Air vs Bone conduction",
+            "先確認題目問的主題：急速重點：空氣（Air） vs Bone conduction",
             "正常 Rinne：AC>BC；Weber 傳導性聽損偏患側，感音神經性聽損偏健側。",
             "把判斷依據連回題目：正常 Rinne：AC>BC；Weber 傳導性聽損偏患側，感音神經性聽損偏健側。"
           ],
@@ -235,17 +247,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：Hair cell 換能」，並說出一個判斷依據。",
-              "answer": "朝最高 stereocilia 偏轉→tip link 開 K⁺ channel→K⁺由 endolymph 進入→去極化→Ca²⁺進入→transmitter↑。",
+              "q": "用自己的話說明「急速重點：毛細胞（Hair cell） 換能」，並說出一個判斷依據。",
+              "answer": "朝最高 stereocilia 偏轉→tip link 開 K⁺ 通道（channel）→K⁺由 內淋巴（endolymph） 進入→去極化→Ca²⁺進入→傳導物質（transmitter）↑。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "朝最高 stereocilia 偏轉→tip link 開 K⁺ channel→K⁺由 endolymph 進入→去極化→Ca²⁺進入→transmitter↑。"
+              "explain": "朝最高 stereocilia 偏轉→tip link 開 K⁺ 通道（channel）→K⁺由 內淋巴（endolymph） 進入→去極化→Ca²⁺進入→傳導物質（transmitter）↑。",
+              "id": "c7b5d9495"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：Air vs Bone conduction」，並說出一個判斷依據。",
+              "q": "用自己的話說明「急速重點：空氣（Air） vs Bone conduction」，並說出一個判斷依據。",
               "answer": "正常 Rinne：AC>BC；Weber 傳導性聽損偏患側，感音神經性聽損偏健側。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "正常 Rinne：AC>BC；Weber 傳導性聽損偏患側，感音神經性聽損偏健側。"
+              "explain": "正常 Rinne：AC>BC；Weber 傳導性聽損偏患側，感音神經性聽損偏健側。",
+              "id": "c94e28f2d"
             }
           ]
         },
@@ -256,24 +270,28 @@
             "內耳小毛被推向最高那根時，拉繩把通道打開，特殊液體裡的鉀跑進細胞，開始放訊號。",
             "外耳或中耳卡住，是聲音傳送問題；內耳或神經壞掉，是接收與傳訊問題。",
             "急速重點：Traveling wave：耳蝸裡的膜像一條長地毯：高頻在入口附近震最大，低頻要跑到深處才震最大。",
-            "急速重點：Hair cell 換能：內耳小毛被推向最高那根時，拉繩把通道打開，特殊液體裡的鉀跑進細胞，開始放訊號。"
+            "急速重點：毛細胞（Hair cell） 換能：內耳小毛被推向最高那根時，拉繩把通道打開，特殊液體裡的鉀跑進細胞，開始放訊號。"
           ],
           "flash": [
             {
               "front": "急速重點：Traveling wave",
-              "back": "耳蝸裡的膜像一條長地毯：高頻在入口附近震最大，低頻要跑到深處才震最大。"
+              "back": "耳蝸裡的膜像一條長地毯：高頻在入口附近震最大，低頻要跑到深處才震最大。",
+              "id": "f3c4246fa"
             },
             {
-              "front": "急速重點：Hair cell 換能",
-              "back": "內耳小毛被推向最高那根時，拉繩把通道打開，特殊液體裡的鉀跑進細胞，開始放訊號。"
+              "front": "急速重點：毛細胞（Hair cell） 換能",
+              "back": "內耳小毛被推向最高那根時，拉繩把通道打開，特殊液體裡的鉀跑進細胞，開始放訊號。",
+              "id": "f688e8bfd"
             },
             {
-              "front": "急速重點：Air vs Bone conduction",
-              "back": "外耳或中耳卡住，是聲音傳送問題；內耳或神經壞掉，是接收與傳訊問題。"
+              "front": "急速重點：空氣（Air） vs Bone conduction",
+              "back": "外耳或中耳卡住，是聲音傳送問題；內耳或神經壞掉，是接收與傳訊問題。",
+              "id": "fc8c0ea4b"
             },
             {
               "front": "用自己的話說明「急速重點：Traveling wave」，並說出一個判斷依據。",
-              "back": "高頻在 basilar membrane 基部達最大振幅；低頻在 apex 達最大振幅。"
+              "back": "高頻在 基底膜（basilar membrane） 基部達最大振幅；低頻在 頂端（apex） 達最大振幅。",
+              "id": "fa63747f9"
             }
           ]
         }
@@ -295,7 +313,7 @@
         {
           "type": "card",
           "title": "急速重點：平衡器官配對",
-          "body": "**一句話／白話**\n三個半圓管負責感覺旋轉；另外兩個小袋子負責直線加速和頭部傾斜。\n\n**觀念**\nsemicircular canals 感受 angular acceleration；utricle/saccule 感受 linear acceleration 與重力位置。\n\n**易錯與比較**\n平衡也整合視覺與 proprioception。\n\n**口訣**\n轉彎看管子，直線看袋子。",
+          "body": "**一句話／白話**\n三個半圓管負責感覺旋轉；另外兩個小袋子負責直線加速和頭部傾斜。\n\n**觀念**\n半規管（semicircular canals） 感受 angular acceleration；橢圓囊（utricle）/球囊（saccule） 感受 linear acceleration 與重力位置。\n\n**易錯與比較**\n平衡也整合視覺與 proprioception。\n\n**口訣**\n轉彎看管子，直線看袋子。",
           "keys": [
             "三個半圓管負責感覺旋轉；另外兩個小袋子負責直線加速和頭部傾斜。"
           ],
@@ -305,14 +323,15 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：平衡器官配對」，並說出一個判斷依據。",
-          "answer": "semicircular canals 感受 angular acceleration；utricle/saccule 感受 linear acceleration 與重力位置。",
+          "answer": "半規管（semicircular canals） 感受 angular acceleration；橢圓囊（utricle）/球囊（saccule） 感受 linear acceleration 與重力位置。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "semicircular canals 感受 angular acceleration；utricle/saccule 感受 linear acceleration 與重力位置。"
+          "explain": "半規管（semicircular canals） 感受 angular acceleration；橢圓囊（utricle）/球囊（saccule） 感受 linear acceleration 與重力位置。",
+          "id": "c66b9c645"
         },
         {
           "type": "card",
           "title": "急速重點：味覺與嗅覺",
-          "body": "**一句話／白話**\n舌頭認基本味道，鼻子補出食物的完整風味；鼻子的線路也很靠近情緒與記憶區。\n\n**觀念**\n味覺：CN VII 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。\n\n**易錯與比較**\n不考很細，不等於完全不考。\n\n**口訣**\n舌頭給骨架，鼻子加靈魂。",
+          "body": "**一句話／白話**\n舌頭認基本味道，鼻子補出食物的完整風味；鼻子的線路也很靠近情緒與記憶區。\n\n**觀念**\n味覺：第七對腦神經（CN VII） 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。\n\n**易錯與比較**\n不考很細，不等於完全不考。\n\n**口訣**\n舌頭給骨架，鼻子加靈魂。",
           "keys": [
             "舌頭認基本味道，鼻子補出食物的完整風味；鼻子的線路也很靠近情緒與記憶區。"
           ],
@@ -322,9 +341,10 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：味覺與嗅覺」，並說出一個判斷依據。",
-          "answer": "味覺：CN VII 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。",
+          "answer": "味覺：第七對腦神經（CN VII） 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "味覺：CN VII 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。"
+          "explain": "味覺：第七對腦神經（CN VII） 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。",
+          "id": "cbbe32165"
         },
         {
           "type": "example",
@@ -332,10 +352,10 @@
           "problem": "用自己的話說明「急速重點：味覺與嗅覺」，並說出一個判斷依據。",
           "steps": [
             "先確認題目問的主題：急速重點：味覺與嗅覺",
-            "味覺：CN VII 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。",
-            "把判斷依據連回題目：味覺：CN VII 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。"
+            "味覺：第七對腦神經（CN VII） 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。",
+            "把判斷依據連回題目：味覺：第七對腦神經（CN VII） 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。"
           ],
-          "answer": "味覺：CN VII 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。"
+          "answer": "味覺：第七對腦神經（CN VII） 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。"
         },
         {
           "type": "practice",
@@ -348,16 +368,18 @@
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：平衡器官配對」，並說出一個判斷依據。",
-              "answer": "semicircular canals 感受 angular acceleration；utricle/saccule 感受 linear acceleration 與重力位置。",
+              "answer": "半規管（semicircular canals） 感受 angular acceleration；橢圓囊（utricle）/球囊（saccule） 感受 linear acceleration 與重力位置。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "semicircular canals 感受 angular acceleration；utricle/saccule 感受 linear acceleration 與重力位置。"
+              "explain": "半規管（semicircular canals） 感受 angular acceleration；橢圓囊（utricle）/球囊（saccule） 感受 linear acceleration 與重力位置。",
+              "id": "c66b9c645"
             },
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：味覺與嗅覺」，並說出一個判斷依據。",
-              "answer": "味覺：CN VII 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。",
+              "answer": "味覺：第七對腦神經（CN VII） 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "味覺：CN VII 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。"
+              "explain": "味覺：第七對腦神經（CN VII） 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。",
+              "id": "cbbe32165"
             }
           ]
         },
@@ -368,24 +390,28 @@
             "舌頭認基本味道，鼻子補出食物的完整風味；鼻子的線路也很靠近情緒與記憶區。",
             "急速重點：平衡器官配對：三個半圓管負責感覺旋轉；另外兩個小袋子負責直線加速和頭部傾斜。",
             "急速重點：味覺與嗅覺：舌頭認基本味道，鼻子補出食物的完整風味；鼻子的線路也很靠近情緒與記憶區。",
-            "semicircular canals 感受 angular acceleration；utricle/saccule 感受 linear acceleration 與重力位置。"
+            "半規管（semicircular canals） 感受 angular acceleration；橢圓囊（utricle）/球囊（saccule） 感受 linear acceleration 與重力位置。"
           ],
           "flash": [
             {
               "front": "急速重點：平衡器官配對",
-              "back": "三個半圓管負責感覺旋轉；另外兩個小袋子負責直線加速和頭部傾斜。"
+              "back": "三個半圓管負責感覺旋轉；另外兩個小袋子負責直線加速和頭部傾斜。",
+              "id": "fdfe2f5a5"
             },
             {
               "front": "急速重點：味覺與嗅覺",
-              "back": "舌頭認基本味道，鼻子補出食物的完整風味；鼻子的線路也很靠近情緒與記憶區。"
+              "back": "舌頭認基本味道，鼻子補出食物的完整風味；鼻子的線路也很靠近情緒與記憶區。",
+              "id": "f9f7d60c2"
             },
             {
               "front": "用自己的話說明「急速重點：平衡器官配對」，並說出一個判斷依據。",
-              "back": "semicircular canals 感受 angular acceleration；utricle/saccule 感受 linear acceleration 與重力位置。"
+              "back": "半規管（semicircular canals） 感受 angular acceleration；橢圓囊（utricle）/球囊（saccule） 感受 linear acceleration 與重力位置。",
+              "id": "f66b9c645"
             },
             {
               "front": "用自己的話說明「急速重點：味覺與嗅覺」，並說出一個判斷依據。",
-              "back": "味覺：CN VII 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。"
+              "back": "味覺：第七對腦神經（CN VII） 前2/3、IX 後1/3、X 會厭；嗅覺：CN I；兩者都是 chemical senses。",
+              "id": "fbbe32165"
             }
           ]
         }
@@ -406,79 +432,82 @@
         {
           "type": "card",
           "title": "判斷依據：特殊感覺系統",
-          "body": "換能先產生 receptor potential，過閾值才形成 AP。\n\n正確選項：Receptor potential。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- receptor potential\n- action potential\n- resting potential\n- threshold potential",
+          "body": "換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（AP）。\n\n正確選項：受器電位。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- 受器電位\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 閾值電位（threshold potential）",
           "keys": [
-            "換能先產生 receptor potential，過閾值才形成 AP。\n\n正確選項：Receptor potential。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- receptor potential\n- action potential\n- resting potential\n- threshold potential"
+            "換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（AP）。\n\n正確選項：受器電位（Receptor potential）。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- 受器電位（receptor potential）\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 閾值電位（threshold potential）"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "During sensation, what is the local subthreshold potential generated by transduction?",
+          "q": "感覺形成中，換能產生、尚未達閾值的局部電位是？\n英文：During sensation, what is the local subthreshold potential generated by transduction?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "換能先產生 receptor potential，過閾值才形成 AP。\n\n正確選項：Receptor potential。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- receptor potential\n- action potential\n- resting potential\n- threshold potential",
+          "explain": "換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（AP）。\n\n正確選項：受器電位（Receptor potential）。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- 受器電位（receptor potential）\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 閾值電位（threshold potential）",
           "choices": [
-            "Receptor potential",
-            "Action potential",
-            "Resting potential",
-            "Threshold potential"
-          ]
+            "受器電位（receptor potential）\n英文：Receptor potential",
+            "動作電位（action potential）\n英文：Action potential",
+            "靜止膜電位（resting potential）\n英文：Resting potential",
+            "閾值電位（threshold potential）\n英文：Threshold potential"
+          ],
+          "id": "ce705380e"
         },
         {
           "type": "card",
           "title": "判斷依據：特殊感覺系統",
-          "body": "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 convergence",
+          "body": "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 會聚（convergence）",
           "keys": [
-            "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 convergence"
+            "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 會聚（convergence）"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Which does NOT occur when viewing a near object?",
+          "q": "看近物時，下列哪一項不會發生？\n英文：Which does NOT occur when viewing a near object?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 convergence",
+          "explain": "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 會聚（convergence）",
           "choices": [
-            "Pupil dilation",
-            "Lens thickening",
-            "Pupil constriction",
-            "Convergence of both eyes"
-          ]
+            "瞳孔放大\n英文：Pupil dilation",
+            "晶狀體變厚\n英文：Lens thickening",
+            "瞳孔縮小\n英文：Pupil constriction",
+            "兩眼 會聚（convergence）\n英文：Convergence of both eyes"
+          ],
+          "id": "c9dbb8da4"
         },
         {
           "type": "card",
           "title": "判斷依據：特殊感覺系統",
-          "body": "光→cGMP↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：Hyperpolarization and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加",
+          "body": "光→環鳥苷酸（cGMP）↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：超極化（Hyperpolarization） and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加",
           "keys": [
-            "光→cGMP↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：Hyperpolarization and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加"
+            "光→環鳥苷酸（cGMP）↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：超極化（Hyperpolarization） and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "When light strikes a photoreceptor, how do its membrane potential and neurotransmitter release change?",
+          "q": "光照射感光細胞，膜電位與 NT 釋放如何變化？\n英文：When light strikes a photoreceptor, how do its membrane potential and neurotransmitter release change?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "光→cGMP↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：Hyperpolarization and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加",
+          "explain": "光→環鳥苷酸（cGMP）↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：超極化（Hyperpolarization） and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加",
           "choices": [
-            "Hyperpolarization and decreased release",
-            "Depolarization and increased release",
-            "Depolarization and decreased release",
-            "Hyperpolarization and increased release"
-          ]
+            "超極化、釋放減少\n英文：Hyperpolarization and decreased release",
+            "去極化、釋放增加\n英文：Depolarization and increased release",
+            "去極化、釋放減少\n英文：Depolarization and decreased release",
+            "超極化、釋放增加\n英文：Hyperpolarization and increased release"
+          ],
+          "id": "cd3e7c657"
         },
         {
           "type": "example",
           "title": "回看第一題的判斷",
-          "problem": "During sensation, what is the local subthreshold potential generated by transduction?",
+          "problem": "感覺形成中，換能產生、尚未達閾值的局部電位是？\n英文：During sensation, what is the local subthreshold potential generated by transduction?",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "換能先產生 receptor potential，過閾值才形成 AP。\n\n正確選項：Receptor potential。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- receptor potential\n- action potential\n- resting potential\n- threshold potential",
+            "換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（AP）。\n\n正確選項：受器電位（Receptor potential）。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- 受器電位（receptor potential）\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 閾值電位（threshold potential）",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "Receptor potential"
+          "answer": "受器電位（receptor potential）\n英文：Receptor potential"
         },
         {
           "type": "practice",
@@ -486,70 +515,77 @@
           "checks": [
             {
               "kind": "single",
-              "q": "During sensation, what is the local subthreshold potential generated by transduction?",
+              "q": "感覺形成中，換能產生、尚未達閾值的局部電位是？\n英文：During sensation, what is the local subthreshold potential generated by transduction?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "換能先產生 receptor potential，過閾值才形成 AP。\n\n正確選項：Receptor potential。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- receptor potential\n- action potential\n- resting potential\n- threshold potential",
+              "explain": "換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（AP）。\n\n正確選項：受器電位（Receptor potential）。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- 受器電位（receptor potential）\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 閾值電位（threshold potential）",
               "choices": [
-                "Receptor potential",
-                "Action potential",
-                "Resting potential",
-                "Threshold potential"
-              ]
+                "受器電位（receptor potential）\n英文：Receptor potential",
+                "動作電位（action potential）\n英文：Action potential",
+                "靜止膜電位（resting potential）\n英文：Resting potential",
+                "閾值電位（threshold potential）\n英文：Threshold potential"
+              ],
+              "id": "ce705380e"
             },
             {
               "kind": "single",
-              "q": "Which does NOT occur when viewing a near object?",
+              "q": "看近物時，下列哪一項不會發生？\n英文：Which does NOT occur when viewing a near object?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 convergence",
+              "explain": "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 會聚（convergence）",
               "choices": [
-                "Pupil dilation",
-                "Lens thickening",
-                "Pupil constriction",
-                "Convergence of both eyes"
-              ]
+                "瞳孔放大\n英文：Pupil dilation",
+                "晶狀體變厚\n英文：Lens thickening",
+                "瞳孔縮小\n英文：Pupil constriction",
+                "兩眼 會聚（convergence）\n英文：Convergence of both eyes"
+              ],
+              "id": "c9dbb8da4"
             },
             {
               "kind": "single",
-              "q": "When light strikes a photoreceptor, how do its membrane potential and neurotransmitter release change?",
+              "q": "光照射感光細胞，膜電位與 NT 釋放如何變化？\n英文：When light strikes a photoreceptor, how do its membrane potential and neurotransmitter release change?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "光→cGMP↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：Hyperpolarization and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加",
+              "explain": "光→環鳥苷酸（cGMP）↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：超極化（Hyperpolarization） and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加",
               "choices": [
-                "Hyperpolarization and decreased release",
-                "Depolarization and increased release",
-                "Depolarization and decreased release",
-                "Hyperpolarization and increased release"
-              ]
+                "超極化、釋放減少\n英文：Hyperpolarization and decreased release",
+                "去極化、釋放增加\n英文：Depolarization and increased release",
+                "去極化、釋放減少\n英文：Depolarization and decreased release",
+                "超極化、釋放增加\n英文：Hyperpolarization and increased release"
+              ],
+              "id": "cd3e7c657"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "換能先產生 receptor potential，過閾值才形成 AP。\n\n正確選項：Receptor potential。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- receptor potential\n- action potential\n- resting potential\n- threshold potential",
-            "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 convergence",
-            "光→cGMP↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：Hyperpolarization and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加",
-            "換能先產生 receptor potential，過閾值才形成 AP。\n\n正確選項：Receptor potential。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- receptor potential\n- action potential\n- resting potential\n- threshold potential",
-            "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 convergence"
+            "換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（AP）。\n\n正確選項：受器電位（Receptor potential）。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- 受器電位（receptor potential）\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 閾值電位（threshold potential）",
+            "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 會聚（convergence）",
+            "光→環鳥苷酸（cGMP）↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：超極化（Hyperpolarization） and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加",
+            "換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（AP）。\n\n正確選項：受器電位（Receptor potential）。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- 受器電位（receptor potential）\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 閾值電位（threshold potential）",
+            "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 會聚（convergence）"
           ],
           "flash": [
             {
-              "front": "During sensation, what is the local subthreshold potential generated by transduction?",
-              "back": "換能先產生 receptor potential，過閾值才形成 AP。\n\n正確選項：Receptor potential。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- receptor potential\n- action potential\n- resting potential\n- threshold potential"
+              "front": "感覺形成中，換能產生、尚未達閾值的局部電位是？\n英文：During sensation, what is the local subthreshold potential generated by transduction?",
+              "back": "換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（AP）。\n\n正確選項：受器電位（Receptor potential）。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- 受器電位（receptor potential）\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 閾值電位（threshold potential）",
+              "id": "fe705380e"
             },
             {
-              "front": "Which does NOT occur when viewing a near object?",
-              "back": "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 convergence"
+              "front": "看近物時，下列哪一項不會發生？\n英文：Which does NOT occur when viewing a near object?",
+              "back": "看近物瞳孔縮小；放大是看遠/需更多光時。\n\n正確選項：Pupil dilation。\n\n\n中文對照：question：看近物時，下列哪一項不會發生？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼 會聚（convergence）",
+              "id": "f9dbb8da4"
             },
             {
-              "front": "When light strikes a photoreceptor, how do its membrane potential and neurotransmitter release change?",
-              "back": "光→cGMP↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：Hyperpolarization and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加"
+              "front": "光照射感光細胞，膜電位與 NT 釋放如何變化？\n英文：When light strikes a photoreceptor, how do its membrane potential and neurotransmitter release change?",
+              "back": "光→環鳥苷酸（cGMP）↓→Na 通道關→超極化→減少 NT（與一般神經相反）。\n\n正確選項：超極化（Hyperpolarization） and decreased release。\n\n\n中文對照：question：光照射感光細胞，膜電位與 NT 釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 去極化、釋放減少\n- 超極化、釋放增加",
+              "id": "fd3e7c657"
             },
             {
-              "front": "During sensation, what is the local subthreshold potential generated by transduction?",
-              "back": "換能先產生 receptor potential，過閾值才形成 AP。\n\n正確選項：Receptor potential。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- receptor potential\n- action potential\n- resting potential\n- threshold potential"
+              "front": "感覺形成中，換能產生、尚未達閾值的局部電位是？\n英文：During sensation, what is the local subthreshold potential generated by transduction?",
+              "back": "換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（AP）。\n\n正確選項：受器電位（Receptor potential）。\n\n\n中文對照：question：感覺形成中，換能產生、尚未達閾值的局部電位是？\nchoices：- 受器電位（receptor potential）\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 閾值電位（threshold potential）",
+              "id": "fe705380e"
             }
           ]
         }
@@ -570,79 +606,82 @@
         {
           "type": "card",
           "title": "判斷依據：特殊感覺系統",
-          "body": "chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n\n\n中文對照：question：Optic chiasm 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
+          "body": "視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n\n\n中文對照：question：視交叉（Optic chiasm） 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
           "keys": [
-            "chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n\n\n中文對照：question：Optic chiasm 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常"
+            "視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n\n\n中文對照：question：視交叉（Optic chiasm） 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "A midline lesion of the optic chiasm most typically causes?",
+          "q": "視交叉（Optic chiasm） 正中受損最典型造成？\n英文：A midline lesion of the optic chiasm most typically causes?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n\n\n中文對照：question：Optic chiasm 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
+          "explain": "視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n\n\n中文對照：question：視交叉（Optic chiasm） 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
           "choices": [
-            "Bitemporal visual field loss",
-            "Complete blindness in one eye",
-            "Contralateral homonymous hemianopia",
-            "No visual deficit"
-          ]
+            "兩眼顳側視野缺損(bitemporal)\n英文：Bitemporal visual field loss",
+            "單眼全盲\n英文：Complete blindness in one eye",
+            "對側同名偏盲\n英文：Contralateral homonymous hemianopia",
+            "完全正常\n英文：No visual deficit"
+          ],
+          "id": "c1b91fdf5"
         },
         {
           "type": "card",
           "title": "判斷依據：特殊感覺系統",
-          "body": "高頻在 base、低頻在 apex。\n\n正確選項：At the distal apex。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 basilar membrane 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點",
+          "body": "高頻在 基底部（base）、低頻在 頂端（apex）。\n\n正確選項：At the distal 頂端。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 基底膜（basilar membrane） 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點",
           "keys": [
-            "高頻在 base、低頻在 apex。\n\n正確選項：At the distal apex。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 basilar membrane 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點"
+            "高頻在 基底部（base）、低頻在 頂端（apex）。\n\n正確選項：At the distal 頂端（apex）。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 基底膜（basilar membrane） 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "According to traveling-wave theory, where does a low-frequency sound produce maximal displacement of the basilar membrane?",
+          "q": "依行波理論，低頻聲音最大振幅在 基底膜（basilar membrane） 何處？\n英文：According to traveling-wave theory, where does a low-frequency sound produce maximal displacement of the basilar membrane?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "高頻在 base、低頻在 apex。\n\n正確選項：At the distal apex。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 basilar membrane 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點",
+          "explain": "高頻在 基底部（base）、低頻在 頂端（apex）。\n\n正確選項：At the distal 頂端（apex）。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 基底膜（basilar membrane） 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點",
           "choices": [
-            "At the distal apex",
-            "At the base near the oval window",
-            "At the round window",
-            "At a fixed central point"
-          ]
+            "遠端頂部(apex)\n英文：At the distal apex",
+            "靠卵圓窗的底部(base)\n英文：At the base near the oval window",
+            "圓窗\n英文：At the round window",
+            "中央固定點\n英文：At a fixed central point"
+          ],
+          "id": "cb0dfb9e5"
         },
         {
           "type": "card",
           "title": "判斷依據：特殊感覺系統",
-          "body": "hair cell 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich endolymph。\n\n\n中文對照：question：耳蝸 hair cell 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- Cl⁻",
+          "body": "毛細胞（hair cell） 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich 內淋巴（endolymph）。\n\n\n中文對照：question：耳蝸 毛細胞 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- 隱形眼鏡（Cl）⁻",
           "keys": [
-            "hair cell 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich endolymph。\n\n\n中文對照：question：耳蝸 hair cell 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- Cl⁻"
+            "毛細胞（hair cell） 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich 內淋巴（endolymph）。\n\n\n中文對照：question：耳蝸 毛細胞（hair cell） 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- 隱形眼鏡（Cl）⁻"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Which ion enters to depolarize a cochlear hair cell?",
+          "q": "耳蝸 毛細胞（hair cell） 去極化靠哪種離子內流？\n英文：Which ion enters to depolarize a cochlear hair cell?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "hair cell 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich endolymph。\n\n\n中文對照：question：耳蝸 hair cell 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- Cl⁻",
+          "explain": "毛細胞（hair cell） 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich 內淋巴（endolymph）。\n\n\n中文對照：question：耳蝸 毛細胞（hair cell） 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- 隱形眼鏡（Cl）⁻",
           "choices": [
-            "K⁺ from K⁺-rich endolymph",
-            "Na⁺",
-            "Ca²⁺",
-            "Cl⁻"
-          ]
+            "K⁺（浸在高鉀內淋巴）\n英文：K⁺ from K⁺-rich endolymph",
+            "Na⁺\n英文：Na⁺",
+            "Ca²⁺\n英文：Ca²⁺",
+            "隱形眼鏡（Cl）⁻\n英文：Cl⁻"
+          ],
+          "id": "cb50e0868"
         },
         {
           "type": "example",
           "title": "回看第一題的判斷",
-          "problem": "A midline lesion of the optic chiasm most typically causes?",
+          "problem": "視交叉（Optic chiasm） 正中受損最典型造成？\n英文：A midline lesion of the optic chiasm most typically causes?",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n\n\n中文對照：question：Optic chiasm 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
+            "視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n\n\n中文對照：question：視交叉（Optic chiasm） 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "Bitemporal visual field loss"
+          "answer": "兩眼顳側視野缺損(bitemporal)\n英文：Bitemporal visual field loss"
         },
         {
           "type": "practice",
@@ -650,70 +689,77 @@
           "checks": [
             {
               "kind": "single",
-              "q": "A midline lesion of the optic chiasm most typically causes?",
+              "q": "視交叉（Optic chiasm） 正中受損最典型造成？\n英文：A midline lesion of the optic chiasm most typically causes?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n\n\n中文對照：question：Optic chiasm 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
+              "explain": "視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n\n\n中文對照：question：視交叉（Optic chiasm） 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
               "choices": [
-                "Bitemporal visual field loss",
-                "Complete blindness in one eye",
-                "Contralateral homonymous hemianopia",
-                "No visual deficit"
-              ]
+                "兩眼顳側視野缺損(bitemporal)\n英文：Bitemporal visual field loss",
+                "單眼全盲\n英文：Complete blindness in one eye",
+                "對側同名偏盲\n英文：Contralateral homonymous hemianopia",
+                "完全正常\n英文：No visual deficit"
+              ],
+              "id": "c1b91fdf5"
             },
             {
               "kind": "single",
-              "q": "According to traveling-wave theory, where does a low-frequency sound produce maximal displacement of the basilar membrane?",
+              "q": "依行波理論，低頻聲音最大振幅在 基底膜（basilar membrane） 何處？\n英文：According to traveling-wave theory, where does a low-frequency sound produce maximal displacement of the basilar membrane?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "高頻在 base、低頻在 apex。\n\n正確選項：At the distal apex。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 basilar membrane 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點",
+              "explain": "高頻在 基底部（base）、低頻在 頂端（apex）。\n\n正確選項：At the distal 頂端（apex）。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 基底膜（basilar membrane） 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點",
               "choices": [
-                "At the distal apex",
-                "At the base near the oval window",
-                "At the round window",
-                "At a fixed central point"
-              ]
+                "遠端頂部(apex)\n英文：At the distal apex",
+                "靠卵圓窗的底部(base)\n英文：At the base near the oval window",
+                "圓窗\n英文：At the round window",
+                "中央固定點\n英文：At a fixed central point"
+              ],
+              "id": "cb0dfb9e5"
             },
             {
               "kind": "single",
-              "q": "Which ion enters to depolarize a cochlear hair cell?",
+              "q": "耳蝸 毛細胞（hair cell） 去極化靠哪種離子內流？\n英文：Which ion enters to depolarize a cochlear hair cell?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "hair cell 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich endolymph。\n\n\n中文對照：question：耳蝸 hair cell 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- Cl⁻",
+              "explain": "毛細胞（hair cell） 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich 內淋巴（endolymph）。\n\n\n中文對照：question：耳蝸 毛細胞（hair cell） 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- 隱形眼鏡（Cl）⁻",
               "choices": [
-                "K⁺ from K⁺-rich endolymph",
-                "Na⁺",
-                "Ca²⁺",
-                "Cl⁻"
-              ]
+                "K⁺（浸在高鉀內淋巴）\n英文：K⁺ from K⁺-rich endolymph",
+                "Na⁺\n英文：Na⁺",
+                "Ca²⁺\n英文：Ca²⁺",
+                "隱形眼鏡（Cl）⁻\n英文：Cl⁻"
+              ],
+              "id": "cb50e0868"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n\n\n中文對照：question：Optic chiasm 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
-            "高頻在 base、低頻在 apex。\n\n正確選項：At the distal apex。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 basilar membrane 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點",
-            "hair cell 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich endolymph。\n\n\n中文對照：question：耳蝸 hair cell 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- Cl⁻",
-            "chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n\n\n中文對照：question：Optic chiasm 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
-            "高頻在 base、低頻在 apex。\n\n正確選項：At the distal apex。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 basilar membrane 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點"
+            "視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n\n\n中文對照：question：視交叉（Optic chiasm） 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
+            "高頻在 基底部（base）、低頻在 頂端（apex）。\n\n正確選項：At the distal 頂端（apex）。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 基底膜（basilar membrane） 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點",
+            "毛細胞（hair cell） 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich 內淋巴（endolymph）。\n\n\n中文對照：question：耳蝸 毛細胞（hair cell） 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- 隱形眼鏡（Cl）⁻",
+            "視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n\n\n中文對照：question：視交叉（Optic chiasm） 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
+            "高頻在 基底部（base）、低頻在 頂端（apex）。\n\n正確選項：At the distal 頂端（apex）。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 基底膜（basilar membrane） 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點"
           ],
           "flash": [
             {
-              "front": "A midline lesion of the optic chiasm most typically causes?",
-              "back": "chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n\n\n中文對照：question：Optic chiasm 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常"
+              "front": "視交叉（Optic chiasm） 正中受損最典型造成？\n英文：A midline lesion of the optic chiasm most typically causes?",
+              "back": "視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n\n\n中文對照：question：視交叉（Optic chiasm） 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
+              "id": "f1b91fdf5"
             },
             {
-              "front": "According to traveling-wave theory, where does a low-frequency sound produce maximal displacement of the basilar membrane?",
-              "back": "高頻在 base、低頻在 apex。\n\n正確選項：At the distal apex。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 basilar membrane 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點"
+              "front": "依行波理論，低頻聲音最大振幅在 基底膜（basilar membrane） 何處？\n英文：According to traveling-wave theory, where does a low-frequency sound produce maximal displacement of the basilar membrane?",
+              "back": "高頻在 基底部（base）、低頻在 頂端（apex）。\n\n正確選項：At the distal 頂端（apex）。\n\n\n中文對照：question：依行波理論，低頻聲音最大振幅在 基底膜（basilar membrane） 何處？\nchoices：- 遠端頂部(apex)\n- 靠卵圓窗的底部(base)\n- 圓窗\n- 中央固定點",
+              "id": "fb0dfb9e5"
             },
             {
-              "front": "Which ion enters to depolarize a cochlear hair cell?",
-              "back": "hair cell 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich endolymph。\n\n\n中文對照：question：耳蝸 hair cell 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- Cl⁻"
+              "front": "耳蝸 毛細胞（hair cell） 去極化靠哪種離子內流？\n英文：Which ion enters to depolarize a cochlear hair cell?",
+              "back": "毛細胞（hair cell） 在內淋巴(高 K⁺)，機械門控開 → K⁺ 內流去極化。\n\n正確選項：K⁺ from K⁺-rich 內淋巴（endolymph）。\n\n\n中文對照：question：耳蝸 毛細胞（hair cell） 去極化靠哪種離子內流？\nchoices：- K⁺（浸在高鉀內淋巴）\n- Na⁺\n- Ca²⁺\n- 隱形眼鏡（Cl）⁻",
+              "id": "fb50e0868"
             },
             {
-              "front": "A midline lesion of the optic chiasm most typically causes?",
-              "back": "chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n\n\n中文對照：question：Optic chiasm 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常"
+              "front": "視交叉（Optic chiasm） 正中受損最典型造成？\n英文：A midline lesion of the optic chiasm most typically causes?",
+              "back": "視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n\n\n中文對照：question：視交叉（Optic chiasm） 正中受損最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 完全正常",
+              "id": "f1b91fdf5"
             }
           ]
         }
@@ -734,24 +780,25 @@
         {
           "type": "card",
           "title": "判斷依據：特殊感覺系統",
-          "body": "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：Utricle and saccule。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- utricle 與 saccule（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
+          "body": "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：橢圓囊（Utricle） and 球囊（saccule）。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- 橢圓囊 與 球囊（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
           "keys": [
-            "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：Utricle and saccule。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- utricle 與 saccule（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分"
+            "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：橢圓囊（Utricle） and 球囊（saccule）。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- 橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Which vestibular structures detect linear acceleration?",
+          "q": "偵測線性加速度的前庭構造是？\n英文：Which vestibular structures detect linear acceleration?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：Utricle and saccule。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- utricle 與 saccule（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
+          "explain": "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：橢圓囊（Utricle） and 球囊（saccule）。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- 橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
           "choices": [
-            "Utricle and saccule",
-            "Semicircular canals",
-            "Cochlea",
-            "Ampullary portions of the semicircular canals"
-          ]
+            "橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n英文：Utricle and saccule",
+            "三半規管\n英文：Semicircular canals",
+            "耳蝸\n英文：Cochlea",
+            "壺腹的半規管部分\n英文：Ampullary portions of the semicircular canals"
+          ],
+          "id": "ca4a15bfa"
         },
         {
           "type": "card",
@@ -764,27 +811,28 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "Which cranial nerves carry taste sensation?",
+          "q": "味覺由哪幾對腦神經傳入？\n英文：Which cranial nerves carry taste sensation?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
           "explain": "味覺走第 7 顏面、第 9 舌咽、第 10 迷走神經。\n\n正確選項：VII, IX, and X (facial, glossopharyngeal, and vagus)。\n\n\n中文對照：question：味覺由哪幾對腦神經傳入？\nchoices：- VII、IX、X（顏面/舌咽/迷走）\n- I、II、VIII\n- III、IV、VI\n- V、VII、VIII",
           "choices": [
-            "VII, IX, and X (facial, glossopharyngeal, and vagus)",
-            "I, II, and VIII",
-            "III, IV, and VI",
-            "V, VII, and VIII"
-          ]
+            "VII、IX、X（顏面/舌咽/迷走）\n英文：VII, IX, and X (facial, glossopharyngeal, and vagus)",
+            "I、II、VIII\n英文：I, II, and VIII",
+            "III、IV、VI\n英文：III, IV, and VI",
+            "V、VII、VIII\n英文：V, VII, and VIII"
+          ],
+          "id": "c63700967"
         },
         {
           "type": "example",
           "title": "回看第一題的判斷",
-          "problem": "Which vestibular structures detect linear acceleration?",
+          "problem": "偵測線性加速度的前庭構造是？\n英文：Which vestibular structures detect linear acceleration?",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：Utricle and saccule。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- utricle 與 saccule（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
+            "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：橢圓囊（Utricle） and 球囊（saccule）。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- 橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "Utricle and saccule"
+          "answer": "橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n英文：Utricle and saccule"
         },
         {
           "type": "practice",
@@ -792,57 +840,63 @@
           "checks": [
             {
               "kind": "single",
-              "q": "Which vestibular structures detect linear acceleration?",
+              "q": "偵測線性加速度的前庭構造是？\n英文：Which vestibular structures detect linear acceleration?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：Utricle and saccule。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- utricle 與 saccule（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
+              "explain": "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：橢圓囊（Utricle） and 球囊（saccule）。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- 橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
               "choices": [
-                "Utricle and saccule",
-                "Semicircular canals",
-                "Cochlea",
-                "Ampullary portions of the semicircular canals"
-              ]
+                "橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n英文：Utricle and saccule",
+                "三半規管\n英文：Semicircular canals",
+                "耳蝸\n英文：Cochlea",
+                "壺腹的半規管部分\n英文：Ampullary portions of the semicircular canals"
+              ],
+              "id": "ca4a15bfa"
             },
             {
               "kind": "single",
-              "q": "Which cranial nerves carry taste sensation?",
+              "q": "味覺由哪幾對腦神經傳入？\n英文：Which cranial nerves carry taste sensation?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
               "explain": "味覺走第 7 顏面、第 9 舌咽、第 10 迷走神經。\n\n正確選項：VII, IX, and X (facial, glossopharyngeal, and vagus)。\n\n\n中文對照：question：味覺由哪幾對腦神經傳入？\nchoices：- VII、IX、X（顏面/舌咽/迷走）\n- I、II、VIII\n- III、IV、VI\n- V、VII、VIII",
               "choices": [
-                "VII, IX, and X (facial, glossopharyngeal, and vagus)",
-                "I, II, and VIII",
-                "III, IV, and VI",
-                "V, VII, and VIII"
-              ]
+                "VII、IX、X（顏面/舌咽/迷走）\n英文：VII, IX, and X (facial, glossopharyngeal, and vagus)",
+                "I、II、VIII\n英文：I, II, and VIII",
+                "III、IV、VI\n英文：III, IV, and VI",
+                "V、VII、VIII\n英文：V, VII, and VIII"
+              ],
+              "id": "c63700967"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：Utricle and saccule。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- utricle 與 saccule（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
+            "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：橢圓囊（Utricle） and 球囊（saccule）。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- 橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
             "味覺走第 7 顏面、第 9 舌咽、第 10 迷走神經。\n\n正確選項：VII, IX, and X (facial, glossopharyngeal, and vagus)。\n\n\n中文對照：question：味覺由哪幾對腦神經傳入？\nchoices：- VII、IX、X（顏面/舌咽/迷走）\n- I、II、VIII\n- III、IV、VI\n- V、VII、VIII",
-            "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：Utricle and saccule。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- utricle 與 saccule（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
+            "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：橢圓囊（Utricle） and 球囊（saccule）。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- 橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
             "味覺走第 7 顏面、第 9 舌咽、第 10 迷走神經。\n\n正確選項：VII, IX, and X (facial, glossopharyngeal, and vagus)。\n\n\n中文對照：question：味覺由哪幾對腦神經傳入？\nchoices：- VII、IX、X（顏面/舌咽/迷走）\n- I、II、VIII\n- III、IV、VI\n- V、VII、VIII",
-            "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：Utricle and saccule。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- utricle 與 saccule（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分"
+            "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：橢圓囊（Utricle） and 球囊（saccule）。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- 橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分"
           ],
           "flash": [
             {
-              "front": "Which vestibular structures detect linear acceleration?",
-              "back": "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：Utricle and saccule。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- utricle 與 saccule（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分"
+              "front": "偵測線性加速度的前庭構造是？\n英文：Which vestibular structures detect linear acceleration?",
+              "back": "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：橢圓囊（Utricle） and 球囊（saccule）。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- 橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
+              "id": "fa4a15bfa"
             },
             {
-              "front": "Which cranial nerves carry taste sensation?",
-              "back": "味覺走第 7 顏面、第 9 舌咽、第 10 迷走神經。\n\n正確選項：VII, IX, and X (facial, glossopharyngeal, and vagus)。\n\n\n中文對照：question：味覺由哪幾對腦神經傳入？\nchoices：- VII、IX、X（顏面/舌咽/迷走）\n- I、II、VIII\n- III、IV、VI\n- V、VII、VIII"
+              "front": "味覺由哪幾對腦神經傳入？\n英文：Which cranial nerves carry taste sensation?",
+              "back": "味覺走第 7 顏面、第 9 舌咽、第 10 迷走神經。\n\n正確選項：VII, IX, and X (facial, glossopharyngeal, and vagus)。\n\n\n中文對照：question：味覺由哪幾對腦神經傳入？\nchoices：- VII、IX、X（顏面/舌咽/迷走）\n- I、II、VIII\n- III、IV、VI\n- V、VII、VIII",
+              "id": "f63700967"
             },
             {
-              "front": "Which vestibular structures detect linear acceleration?",
-              "back": "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：Utricle and saccule。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- utricle 與 saccule（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分"
+              "front": "偵測線性加速度的前庭構造是？\n英文：Which vestibular structures detect linear acceleration?",
+              "back": "球囊橢圓囊偵測線性加速度；半規管偵測角加速度。\n\n正確選項：橢圓囊（Utricle） and 球囊（saccule）。\n\n\n中文對照：question：偵測線性加速度的前庭構造是？\nchoices：- 橢圓囊（utricle） 與 球囊（saccule）（橢圓囊/球囊）\n- 三半規管\n- 耳蝸\n- 壺腹的半規管部分",
+              "id": "fa4a15bfa"
             },
             {
-              "front": "Which cranial nerves carry taste sensation?",
-              "back": "味覺走第 7 顏面、第 9 舌咽、第 10 迷走神經。\n\n正確選項：VII, IX, and X (facial, glossopharyngeal, and vagus)。\n\n\n中文對照：question：味覺由哪幾對腦神經傳入？\nchoices：- VII、IX、X（顏面/舌咽/迷走）\n- I、II、VIII\n- III、IV、VI\n- V、VII、VIII"
+              "front": "味覺由哪幾對腦神經傳入？\n英文：Which cranial nerves carry taste sensation?",
+              "back": "味覺走第 7 顏面、第 9 舌咽、第 10 迷走神經。\n\n正確選項：VII, IX, and X (facial, glossopharyngeal, and vagus)。\n\n\n中文對照：question：味覺由哪幾對腦神經傳入？\nchoices：- VII、IX、X（顏面/舌咽/迷走）\n- I、II、VIII\n- III、IV、VI\n- V、VII、VIII",
+              "id": "f63700967"
             }
           ]
         }

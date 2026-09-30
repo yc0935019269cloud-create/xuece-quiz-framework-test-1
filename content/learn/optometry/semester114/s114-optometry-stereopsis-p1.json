@@ -36,11 +36,11 @@
         {
           "type": "card",
           "title": "深度知覺不等於真正立體視",
-          "body": "**一句話／白話**\n遮住一眼仍能猜誰近誰遠，是因為大腦會用經驗推理；真正 stereopsis 必須靠兩眼影像的細微差異。\n\n**觀念**\nDepth perception 是感覺物體前後距離的總能力，單眼也能靠 monocular cues 做到。Stereopsis 則是雙眼把略有差異的影像融合後產生的細膩立體感，所以單眼者可有深度知覺，但沒有真正雙眼立體視。\n\n**考試角度**\n- monocular cues 是後天學會的推論，不是精細 stereopsis\n- 單眼可保留粗略 depth perception\n- 真正 stereopsis 需要雙眼影像與 fusion\n\n**口訣**\n單眼會猜遠近；雙眼才會做真正 3D。",
+          "body": "**一句話／白話**\n遮住一眼仍能猜誰近誰遠，是因為大腦會用經驗推理；真正 立體視（stereopsis） 必須靠兩眼影像的細微差異。\n\n**觀念**\n深度知覺（Depth perception） 是感覺物體前後距離的總能力，單眼也能靠 單眼深度線索（monocular cues） 做到。立體視 則是雙眼把略有差異的影像融合後產生的細膩立體感，所以單眼者可有深度知覺，但沒有真正雙眼立體視。\n\n**考試角度**\n- 單眼深度線索 是後天學會的推論，不是精細 立體視\n- 單眼可保留粗略 深度知覺\n- 真正 立體視 需要雙眼影像與 融像（fusion）\n\n**口訣**\n單眼會猜遠近；雙眼才會做真正 3D。",
           "keys": [
-            "monocular cues 是後天學會的推論，不是精細 stereopsis",
-            "單眼可保留粗略 depth perception",
-            "真正 stereopsis 需要雙眼影像與 fusion"
+            "單眼深度線索（monocular cues） 是後天學會的推論，不是精細 立體視（stereopsis）",
+            "單眼可保留粗略 深度知覺（depth perception）",
+            "真正 立體視（stereopsis） 需要雙眼影像與 融像（fusion）"
           ],
           "tip": "口訣：單眼會猜遠近；雙眼才會做真正 3D。"
         },
@@ -50,22 +50,23 @@
           "q": "遮住一眼後仍能判斷水壺比老師近，最主要代表什麼？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "單眼可利用後天學會的深度線索，但真正 stereopsis 需要雙眼。\n\n正確選項：可利用 monocular cues 判斷深度。\nDepth perception 是感覺物體前後距離的總能力，單眼也能靠 monocular cues 做到。Stereopsis 則是雙眼把略有差異的影像融合後產生的細膩立體感，所以單眼者可有深度知覺，但沒有真正雙眼立體視。",
+          "explain": "單眼可利用後天學會的深度線索，但真正 立體視（stereopsis） 需要雙眼。\n\n正確選項：可利用 單眼深度線索（monocular cues） 判斷深度。\n深度知覺（Depth perception） 是感覺物體前後距離的總能力，單眼也能靠 單眼深度線索（monocular cues） 做到。立體視（Stereopsis） 則是雙眼把略有差異的影像融合後產生的細膩立體感，所以單眼者可有深度知覺，但沒有真正雙眼立體視。",
           "choices": [
-            "仍有完整 stereopsis",
-            "可利用 monocular cues 判斷深度",
+            "仍有完整 立體視（stereopsis）",
+            "可利用 單眼深度線索（monocular cues） 判斷深度",
             "視網膜視差變得更大",
-            "一定存在 diplopia"
-          ]
+            "一定存在 複視（diplopia）"
+          ],
+          "id": "cf079b991"
         },
         {
           "type": "card",
           "title": "幾何線索：大小、高度、透視與遮擋",
-          "body": "**一句話／白話**\n大腦看到物體較小、較高、靠近透視消失點或被別人擋住，就會把它判成比較遠。\n\n**觀念**\nRelative size 利用遠物看起來較小；relative height 利用平面上較高位置判斷較遠；perspective 利用平行線往遠方收斂；occlusion 則把遮住別人的物體判為較近。這些規則也能被藝術家用來製造平面上的立體錯覺。\n\n**考試角度**\n- relative size：同類物體看起來越小通常越遠\n- relative height / perspective：較高、較靠近消失點通常較遠\n- occlusion：遮擋者在前，被遮擋者在後\n\n**口訣**\n小、高、收斂、被擋，通常都在後面。",
+          "body": "**一句話／白話**\n大腦看到物體較小、較高、靠近透視消失點或被別人擋住，就會把它判成比較遠。\n\n**觀念**\n相對大小（Relative size） 利用遠物看起來較小；相對高度（relative height） 利用平面上較高位置判斷較遠；透視（perspective） 利用平行線往遠方收斂；遮擋（occlusion） 則把遮住別人的物體判為較近。這些規則也能被藝術家用來製造平面上的立體錯覺。\n\n**考試角度**\n- 相對大小：同類物體看起來越小通常越遠\n- 相對高度 / 透視：較高、較靠近消失點通常較遠\n- 遮擋：遮擋者在前，被遮擋者在後\n\n**口訣**\n小、高、收斂、被擋，通常都在後面。",
           "keys": [
-            "relative size：同類物體看起來越小通常越遠",
-            "relative height / perspective：較高、較靠近消失點通常較遠",
-            "occlusion：遮擋者在前，被遮擋者在後"
+            "相對大小（relative size）：同類物體看起來越小通常越遠",
+            "相對高度（relative height） / 透視（perspective）：較高、較靠近消失點通常較遠",
+            "遮擋（occlusion）：遮擋者在前，被遮擋者在後"
           ],
           "tip": "口訣：小、高、收斂、被擋，通常都在後面。"
         },
@@ -75,22 +76,23 @@
           "q": "兩個相同大小的人物畫在平面上，其中一個較小且靠近透視消失點，大腦通常判斷它如何？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "相對大小與透視都會讓較小、靠近消失點的物體被判為較遠。\n\n正確選項：比較遠。\nRelative size 利用遠物看起來較小；relative height 利用平面上較高位置判斷較遠；perspective 利用平行線往遠方收斂；occlusion 則把遮住別人的物體判為較近。這些規則也能被藝術家用來製造平面上的立體錯覺。",
+          "explain": "相對大小與透視都會讓較小、靠近消失點的物體被判為較遠。\n\n正確選項：比較遠。\n相對大小（Relative size） 利用遠物看起來較小；相對高度（relative height） 利用平面上較高位置判斷較遠；透視（perspective） 利用平行線往遠方收斂；遮擋（occlusion） 則把遮住別人的物體判為較近。這些規則也能被藝術家用來製造平面上的立體錯覺。",
           "choices": [
             "比較近",
             "一定比較高",
             "比較遠",
             "無法使用任何深度線索"
-          ]
+          ],
+          "id": "c9439d928"
         },
         {
           "type": "card",
           "title": "外觀線索：動態、紋理、陰影與清晰度",
-          "body": "**一句話／白話**\n近物移動感較明顯、細節較多也較清楚；陰影方向則幫大腦猜表面是凸還是凹。\n\n**觀念**\nRelative motion 會讓移動觀察者感到近物與遠物移動方向或速度不同；texture gradient 讓近處細節較清楚、遠處紋理較密；shading 依光源與陰影推測凸凹；clarity 則把較清楚物體判成較近。\n\n**考試角度**\n- relative motion 可用視差移動判斷前後\n- texture 與 clarity：近處細節多且清楚\n- shading 依光源方向推測凸面或凹面\n\n**口訣**\n近的動得明顯、看得細、也看得清。",
+          "body": "**一句話／白話**\n近物移動感較明顯、細節較多也較清楚；陰影方向則幫大腦猜表面是凸還是凹。\n\n**觀念**\n相對動態（Relative motion） 會讓移動觀察者感到近物與遠物移動方向或速度不同；紋理梯度（texture gradient） 讓近處細節較清楚、遠處紋理較密；陰影線索（shading） 依光源與陰影推測凸凹；清晰度線索（clarity） 則把較清楚物體判成較近。\n\n**考試角度**\n- 相對動態 可用視差移動判斷前後\n- 紋理（texture） 與 清晰度線索：近處細節多且清楚\n- 陰影線索 依光源方向推測凸面或凹面\n\n**口訣**\n近的動得明顯、看得細、也看得清。",
           "keys": [
-            "relative motion 可用視差移動判斷前後",
-            "texture 與 clarity：近處細節多且清楚",
-            "shading 依光源方向推測凸面或凹面"
+            "相對動態（relative motion） 可用視差移動判斷前後",
+            "紋理（texture） 與 清晰度線索（clarity）：近處細節多且清楚",
+            "陰影線索（shading） 依光源方向推測凸面或凹面"
           ],
           "tip": "口訣：近的動得明顯、看得細、也看得清。"
         },
@@ -100,24 +102,25 @@
           "q": "遠方花田的花朵逐漸看不出單朵細節，主要是哪一種單眼線索？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "近處紋理細節清楚、遠處紋理逐漸密集模糊，稱 texture gradient。\n\n正確選項：texture gradient。\nRelative motion 會讓移動觀察者感到近物與遠物移動方向或速度不同；texture gradient 讓近處細節較清楚、遠處紋理較密；shading 依光源與陰影推測凸凹；clarity 則把較清楚物體判成較近。",
+          "explain": "近處紋理細節清楚、遠處紋理逐漸密集模糊，稱 紋理梯度（texture gradient）。\n\n正確選項：紋理梯度（texture gradient）。\n相對動態（Relative motion） 會讓移動觀察者感到近物與遠物移動方向或速度不同；紋理梯度（texture gradient） 讓近處細節較清楚、遠處紋理較密；陰影線索（shading） 依光源與陰影推測凸凹；清晰度線索（clarity） 則把較清楚物體判成較近。",
           "choices": [
-            "texture gradient",
-            "crossed disparity",
-            "fixation disparity",
-            "fusion"
-          ]
+            "紋理梯度（texture gradient）",
+            "交叉視差（crossed disparity）",
+            "固視偏差（fixation disparity）",
+            "融像（fusion）"
+          ],
+          "id": "c6b5b620b"
         },
         {
           "type": "example",
           "title": "範例拆解：外觀線索：動態、紋理、陰影與清晰度",
-          "problem": "遠方花田的花朵逐漸看不出單朵細節，主要是哪一種單眼線索？\n\nA. texture gradient\nB. crossed disparity\nC. fixation disparity\nD. fusion",
+          "problem": "遠方花田的花朵逐漸看不出單朵細節，主要是哪一種單眼線索？\n\nA. 紋理梯度（texture gradient）\nB. 交叉視差（crossed disparity）\nC. 固視偏差（fixation disparity）\nD. 融像（fusion）",
           "steps": [
             "先確認題目問的主題：外觀線索：動態、紋理、陰影與清晰度",
-            "Relative motion 會讓移動觀察者感到近物與遠物移動方向或速度不同；texture gradient 讓近處細節較清楚、遠處紋理較密；shading 依光源與陰影推測凸凹；clarity 則把較清楚物體判成較近。",
-            "把判斷依據連回題目：近處紋理細節清楚、遠處紋理逐漸密集模糊，稱 texture gradient。\n\n正確選項：texture gradient。\nRelative motion 會讓移動觀察者感到近物與遠物移動方向或速度不同；texture gradient 讓近處細節較清楚、遠處紋理較密；shading 依光源與陰影推測凸凹；clarity 則把較清楚物體判成較近。"
+            "相對動態（Relative motion） 會讓移動觀察者感到近物與遠物移動方向或速度不同；紋理梯度（texture gradient） 讓近處細節較清楚、遠處紋理較密；陰影線索（shading） 依光源與陰影推測凸凹；清晰度線索（clarity） 則把較清楚物體判成較近。",
+            "把判斷依據連回題目：近處紋理細節清楚、遠處紋理逐漸密集模糊，稱 紋理梯度（texture gradient）。\n\n正確選項：紋理梯度（texture gradient）。\n相對動態（Relative motion） 會讓移動觀察者感到近物與遠物移動方向或速度不同；紋理梯度（texture gradient） 讓近處細節較清楚、遠處紋理較密；陰影線索（shading） 依光源與陰影推測凸凹；清晰度線索（clarity） 則把較清楚物體判成較近。"
           ],
-          "answer": "texture gradient"
+          "answer": "紋理梯度（texture gradient）"
         },
         {
           "type": "practice",
@@ -132,55 +135,61 @@
               "q": "兩個相同大小的人物畫在平面上，其中一個較小且靠近透視消失點，大腦通常判斷它如何？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "相對大小與透視都會讓較小、靠近消失點的物體被判為較遠。\n\n正確選項：比較遠。\nRelative size 利用遠物看起來較小；relative height 利用平面上較高位置判斷較遠；perspective 利用平行線往遠方收斂；occlusion 則把遮住別人的物體判為較近。這些規則也能被藝術家用來製造平面上的立體錯覺。",
+              "explain": "相對大小與透視都會讓較小、靠近消失點的物體被判為較遠。\n\n正確選項：比較遠。\n相對大小（Relative size） 利用遠物看起來較小；相對高度（relative height） 利用平面上較高位置判斷較遠；透視（perspective） 利用平行線往遠方收斂；遮擋（occlusion） 則把遮住別人的物體判為較近。這些規則也能被藝術家用來製造平面上的立體錯覺。",
               "choices": [
                 "比較近",
                 "一定比較高",
                 "比較遠",
                 "無法使用任何深度線索"
-              ]
+              ],
+              "id": "c9439d928"
             },
             {
               "kind": "single",
               "q": "遠方花田的花朵逐漸看不出單朵細節，主要是哪一種單眼線索？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "近處紋理細節清楚、遠處紋理逐漸密集模糊，稱 texture gradient。\n\n正確選項：texture gradient。\nRelative motion 會讓移動觀察者感到近物與遠物移動方向或速度不同；texture gradient 讓近處細節較清楚、遠處紋理較密；shading 依光源與陰影推測凸凹；clarity 則把較清楚物體判成較近。",
+              "explain": "近處紋理細節清楚、遠處紋理逐漸密集模糊，稱 紋理梯度（texture gradient）。\n\n正確選項：紋理梯度（texture gradient）。\n相對動態（Relative motion） 會讓移動觀察者感到近物與遠物移動方向或速度不同；紋理梯度（texture gradient） 讓近處細節較清楚、遠處紋理較密；陰影線索（shading） 依光源與陰影推測凸凹；清晰度線索（clarity） 則把較清楚物體判成較近。",
               "choices": [
-                "texture gradient",
-                "crossed disparity",
-                "fixation disparity",
-                "fusion"
-              ]
+                "紋理梯度（texture gradient）",
+                "交叉視差（crossed disparity）",
+                "固視偏差（fixation disparity）",
+                "融像（fusion）"
+              ],
+              "id": "c6b5b620b"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "monocular cues 是後天學會的推論，不是精細 stereopsis",
-            "單眼可保留粗略 depth perception",
-            "relative size：同類物體看起來越小通常越遠",
-            "relative height / perspective：較高、較靠近消失點通常較遠",
-            "relative motion 可用視差移動判斷前後",
-            "texture 與 clarity：近處細節多且清楚"
+            "單眼深度線索（monocular cues） 是後天學會的推論，不是精細 立體視（stereopsis）",
+            "單眼可保留粗略 深度知覺（depth perception）",
+            "相對大小（relative size）：同類物體看起來越小通常越遠",
+            "相對高度（relative height） / 透視（perspective）：較高、較靠近消失點通常較遠",
+            "相對動態（relative motion） 可用視差移動判斷前後",
+            "紋理（texture） 與 清晰度線索（clarity）：近處細節多且清楚"
           ],
           "flash": [
             {
               "front": "深度知覺不等於真正立體視",
-              "back": "遮住一眼仍能猜誰近誰遠，是因為大腦會用經驗推理；真正 stereopsis 必須靠兩眼影像的細微差異。"
+              "back": "遮住一眼仍能猜誰近誰遠，是因為大腦會用經驗推理；真正 立體視（stereopsis） 必須靠兩眼影像的細微差異。",
+              "id": "f6cedd61a"
             },
             {
               "front": "幾何線索：大小、高度、透視與遮擋",
-              "back": "大腦看到物體較小、較高、靠近透視消失點或被別人擋住，就會把它判成比較遠。"
+              "back": "大腦看到物體較小、較高、靠近透視消失點或被別人擋住，就會把它判成比較遠。",
+              "id": "fcfdd9ec5"
             },
             {
               "front": "外觀線索：動態、紋理、陰影與清晰度",
-              "back": "近物移動感較明顯、細節較多也較清楚；陰影方向則幫大腦猜表面是凸還是凹。"
+              "back": "近物移動感較明顯、細節較多也較清楚；陰影方向則幫大腦猜表面是凸還是凹。",
+              "id": "f7ffb1604"
             },
             {
               "front": "遮住一眼後仍能判斷水壺比老師近，最主要代表什麼？",
-              "back": "單眼可利用後天學會的深度線索，但真正 stereopsis 需要雙眼。\n\n正確選項：可利用 monocular cues 判斷深度。\nDepth perception 是感覺物體前後距離的總能力，單眼也能靠 monocular cues 做到。Stereopsis 則是雙眼把略有差異的影像融合後產生的細膩立體感，所以單眼者可有深度知覺，但沒有真正雙眼立體視。"
+              "back": "單眼可利用後天學會的深度線索，但真正 立體視（stereopsis） 需要雙眼。\n\n正確選項：可利用 單眼深度線索（monocular cues） 判斷深度。\n深度知覺（Depth perception） 是感覺物體前後距離的總能力，單眼也能靠 單眼深度線索（monocular cues） 做到。立體視（Stereopsis） 則是雙眼把略有差異的影像融合後產生的細膩立體感，所以單眼者可有深度知覺，但沒有真正雙眼立體視。",
+              "id": "ff079b991"
             }
           ]
         }
@@ -190,76 +199,78 @@
       "id": "binocular-stereopsis-1",
       "title": "雙眼把兩張不同照片合成深度",
       "goals": [
-        "解釋Retinal disparity 加 fusion 產生 stereopsis",
-        "解釋Horopter 與 Panum's fusional area",
-        "解釋Crossed disparity 在前，uncrossed disparity 在後"
+        "解釋視網膜視差（Retinal disparity） 加 融像（fusion） 產生 立體視（stereopsis）",
+        "解釋雙眼單視界（Horopter） 與 潘納姆融像區（Panum's fusional area）",
+        "解釋交叉視差（Crossed disparity） 在前，非交叉視差（uncrossed disparity） 在後"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "雙眼把兩張不同照片合成深度",
-          "body": "左右眼位置不同，所以收到略不同影像；只要差異適中，大腦就能融像並感覺前後。\n\n- 先理解 retinal disparity 與 fusion。\n- 再用 horopter 和 Panum 區域理解能不能單視。\n- 最後用 crossed / uncrossed disparity 判斷前後。"
+          "body": "左右眼位置不同，所以收到略不同影像；只要差異適中，大腦就能融像並感覺前後。\n\n- 先理解 視網膜視差（retinal disparity） 與 融像（fusion）。\n- 再用 雙眼單視界（horopter） 和 潘納姆（Panum） 區域理解能不能單視。\n- 最後用 交叉性（crossed） / 非交叉視差（uncrossed disparity） 判斷前後。"
         },
         {
           "type": "card",
-          "title": "Retinal disparity 加 fusion 產生 stereopsis",
-          "body": "**一句話／白話**\n左右眼像兩台相隔一點距離的相機；大腦把兩張略不同照片疊起來，就得到深度。\n\n**觀念**\nRetinal disparity 來自左右眼觀看角度不同。兩眼影像差異適中時，大腦可用 fusion 合成單一立體影像；若差異過大而無法融合，就會出現 diplopia。Stereoacuity 是能偵測到的最小深度差，以 seconds of arc 表示。\n\n**考試角度**\n- retinal disparity 是左右眼影像位置差\n- fusion 成功產生 stereopsis；失敗可產生 diplopia\n- stereoacuity 單位是 seconds of arc，數值越小越好\n\n**口訣**\n有小差異才有立體；差太大就變雙影。",
+          "title": "視網膜視差（Retinal disparity） 加 融像（fusion） 產生 立體視（stereopsis）",
+          "body": "**一句話／白話**\n左右眼像兩台相隔一點距離的相機；大腦把兩張略不同照片疊起來，就得到深度。\n\n**觀念**\n視網膜視差（Retinal disparity） 來自左右眼觀看角度不同。兩眼影像差異適中時，大腦可用 融像（fusion） 合成單一立體影像；若差異過大而無法融合，就會出現 複視（diplopia）。立體視力（Stereoacuity） 是能偵測到的最小深度差，以 角秒（seconds of arc） 表示。\n\n**考試角度**\n- 視網膜視差 是左右眼影像位置差\n- 融像 成功產生 立體視（stereopsis）；失敗可產生 複視\n- 立體視力 單位是 角秒，數值越小越好\n\n**口訣**\n有小差異才有立體；差太大就變雙影。",
           "keys": [
-            "retinal disparity 是左右眼影像位置差",
-            "fusion 成功產生 stereopsis；失敗可產生 diplopia",
-            "stereoacuity 單位是 seconds of arc，數值越小越好"
+            "視網膜視差（retinal disparity） 是左右眼影像位置差",
+            "融像（fusion） 成功產生 立體視（stereopsis）；失敗可產生 複視（diplopia）",
+            "立體視力（stereoacuity） 單位是 角秒（seconds of arc），數值越小越好"
           ],
           "tip": "口訣：有小差異才有立體；差太大就變雙影。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Stereoacuity 數值從 40 seconds of arc 改善到 10 seconds of arc，代表什麼？",
+          "q": "立體視力（Stereoacuity） 數值從 40 角秒（seconds of arc） 改善到 10 角秒（seconds of arc），代表什麼？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Stereoacuity 是最小可偵測視差，數值越小代表越精細。\n\n正確選項：可辨認更小的深度差，立體視更精細。\nRetinal disparity 來自左右眼觀看角度不同。兩眼影像差異適中時，大腦可用 fusion 合成單一立體影像；若差異過大而無法融合，就會出現 diplopia。Stereoacuity 是能偵測到的最小深度差，以 seconds of arc 表示。",
+          "explain": "立體視力（Stereoacuity） 是最小可偵測視差，數值越小代表越精細。\n\n正確選項：可辨認更小的深度差，立體視更精細。\n視網膜視差（Retinal disparity） 來自左右眼觀看角度不同。兩眼影像差異適中時，大腦可用 融像（fusion） 合成單一立體影像；若差異過大而無法融合，就會出現 複視（diplopia）。立體視力（Stereoacuity） 是能偵測到的最小深度差，以 角秒（seconds of arc） 表示。",
           "choices": [
             "立體視變差",
             "只能靠單眼線索",
             "複視增加",
             "可辨認更小的深度差，立體視更精細"
-          ]
+          ],
+          "id": "cc6704471"
         },
         {
           "type": "card",
-          "title": "Horopter 與 Panum's fusional area",
-          "body": "**一句話／白話**\nHoropter 是和注視點看起來同一深度的線；前後有一小段容許區，落在裡面仍能融合。\n\n**觀念**\n注視點影像落在兩眼 fovea。位於 horopter 的其他物體會落在對應視網膜點，形成 zero disparity，看起來與注視點同深度。Horopter 前後的 Panum's fusional area 容許少量不對應，仍可維持單視並產生深度；超出太多則可能複視。\n\n**考試角度**\n- horopter 上的物體為 zero disparity、看起來同深度\n- Panum's fusional area 是 horopter 前後仍可融合的範圍\n- 超出融合範圍太多可能產生 diplopia\n\n**口訣**\n圈上同深度，圈旁可立體，離圈太遠會雙影。",
+          "title": "雙眼單視界（Horopter） 與 潘納姆融像區（Panum's fusional area）",
+          "body": "**一句話／白話**\n雙眼單視界（Horopter） 是和注視點看起來同一深度的線；前後有一小段容許區，落在裡面仍能融合。\n\n**觀念**\n注視點影像落在兩眼 中央凹（fovea）。位於 雙眼單視界 的其他物體會落在對應視網膜點，形成 零視差（zero disparity），看起來與注視點同深度。雙眼單視界 前後的 潘納姆融像區（Panum's fusional area） 容許少量不對應，仍可維持單視並產生深度；超出太多則可能複視。\n\n**考試角度**\n- 雙眼單視界 上的物體為 零視差、看起來同深度\n- 潘納姆融像區 是 雙眼單視界 前後仍可融合的範圍\n- 超出融合範圍太多可能產生 複視（diplopia）\n\n**口訣**\n圈上同深度，圈旁可立體，離圈太遠會雙影。",
           "keys": [
-            "horopter 上的物體為 zero disparity、看起來同深度",
-            "Panum's fusional area 是 horopter 前後仍可融合的範圍",
-            "超出融合範圍太多可能產生 diplopia"
+            "雙眼單視界（horopter） 上的物體為 零視差（zero disparity）、看起來同深度",
+            "潘納姆融像區（Panum's fusional area） 是 雙眼單視界（horopter） 前後仍可融合的範圍",
+            "超出融合範圍太多可能產生 複視（diplopia）"
           ],
           "tip": "口訣：圈上同深度，圈旁可立體，離圈太遠會雙影。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "物體落在 horopter 上時，最符合哪一項？",
+          "q": "物體落在 雙眼單視界（horopter） 上時，最符合哪一項？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Horopter 上的物體落在兩眼對應視網膜點，屬 zero disparity。\n\n正確選項：zero disparity。\n注視點影像落在兩眼 fovea。位於 horopter 的其他物體會落在對應視網膜點，形成 zero disparity，看起來與注視點同深度。Horopter 前後的 Panum's fusional area 容許少量不對應，仍可維持單視並產生深度；超出太多則可能複視。",
+          "explain": "雙眼單視界（Horopter） 上的物體落在兩眼對應視網膜點，屬 零視差（zero disparity）。\n\n正確選項：零視差（zero disparity）。\n注視點影像落在兩眼 中央凹（fovea）。位於 雙眼單視界（horopter） 的其他物體會落在對應視網膜點，形成 零視差（zero disparity），看起來與注視點同深度。雙眼單視界（Horopter） 前後的 潘納姆融像區（Panum's fusional area） 容許少量不對應，仍可維持單視並產生深度；超出太多則可能複視。",
           "choices": [
-            "crossed disparity",
-            "zero disparity",
+            "交叉視差（crossed disparity）",
+            "零視差（zero disparity）",
             "一定複視",
-            "exo fixation disparity"
-          ]
+            "外向固視偏差（exo fixation disparity）"
+          ],
+          "id": "c0c69f03c"
         },
         {
           "type": "card",
-          "title": "Crossed disparity 在前，uncrossed disparity 在後",
-          "body": "**一句話／白話**\n想把眼睛交叉看近物：交叉視差代表物體在注視點前；非交叉視差代表在後。\n\n**觀念**\nTarget 位於 horopter 前方時產生 crossed disparity，融合後感覺物體較近；位於後方時產生 uncrossed disparity，融合後感覺物體較遠。多數立體視檢測利用 crossed disparity 讓圖形看起來浮出。\n\n**考試角度**\n- crossed disparity：target 在 fixation 前方\n- uncrossed disparity：target 在 fixation 後方\n- 多數臨床 stereotest 以 crossed disparity 呈現浮出效果\n\n**口訣**\nCrossed 往前浮；uncrossed 往後陷。",
+          "title": "交叉視差（Crossed disparity） 在前，非交叉視差（uncrossed disparity） 在後",
+          "body": "**一句話／白話**\n想把眼睛交叉看近物：交叉視差代表物體在注視點前；非交叉視差代表在後。\n\n**觀念**\n目標（Target） 位於 雙眼單視界（horopter） 前方時產生 交叉視差（crossed disparity），融合後感覺物體較近；位於後方時產生 非交叉視差（uncrossed disparity），融合後感覺物體較遠。多數立體視檢測利用 交叉視差 讓圖形看起來浮出。\n\n**考試角度**\n- 交叉視差：目標 在 注視（fixation） 前方\n- 非交叉視差：目標 在 注視 後方\n- 多數臨床 立體視檢查（stereotest） 以 交叉視差 呈現浮出效果\n\n**口訣**\n交叉性（Crossed） 往前浮；非交叉性（uncrossed） 往後陷。",
           "keys": [
-            "crossed disparity：target 在 fixation 前方",
-            "uncrossed disparity：target 在 fixation 後方",
-            "多數臨床 stereotest 以 crossed disparity 呈現浮出效果"
+            "交叉視差（crossed disparity）：目標（target） 在 注視（fixation） 前方",
+            "非交叉視差（uncrossed disparity）：目標（target） 在 注視（fixation） 後方",
+            "多數臨床 立體視檢查（stereotest） 以 交叉視差（crossed disparity） 呈現浮出效果"
           ],
-          "tip": "口訣：Crossed 往前浮；uncrossed 往後陷。"
+          "tip": "口訣：交叉性（Crossed） 往前浮；非交叉性（uncrossed） 往後陷。"
         },
         {
           "type": "check",
@@ -267,24 +278,25 @@
           "q": "立體視本中的圖形看起來浮到紙張前方，最可能使用哪種視差？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Crossed disparity 融合後會讓 target 感覺在注視平面前方。\n\n正確選項：crossed disparity。\nTarget 位於 horopter 前方時產生 crossed disparity，融合後感覺物體較近；位於後方時產生 uncrossed disparity，融合後感覺物體較遠。多數立體視檢測利用 crossed disparity 讓圖形看起來浮出。",
+          "explain": "交叉視差（Crossed disparity） 融合後會讓 目標（target） 感覺在注視平面前方。\n\n正確選項：交叉視差（crossed disparity）。\n目標（Target） 位於 雙眼單視界（horopter） 前方時產生 交叉視差（crossed disparity），融合後感覺物體較近；位於後方時產生 非交叉視差（uncrossed disparity），融合後感覺物體較遠。多數立體視檢測利用 交叉視差（crossed disparity） 讓圖形看起來浮出。",
           "choices": [
-            "uncrossed disparity",
-            "zero disparity",
-            "crossed disparity",
-            "fixation disparity"
-          ]
+            "非交叉視差（uncrossed disparity）",
+            "零視差（zero disparity）",
+            "交叉視差（crossed disparity）",
+            "固視偏差（fixation disparity）"
+          ],
+          "id": "c8260be43"
         },
         {
           "type": "example",
-          "title": "範例拆解：Crossed disparity 在前，uncrossed disparity 在後",
-          "problem": "立體視本中的圖形看起來浮到紙張前方，最可能使用哪種視差？\n\nA. uncrossed disparity\nB. zero disparity\nC. crossed disparity\nD. fixation disparity",
+          "title": "範例拆解：交叉視差（Crossed disparity） 在前，非交叉視差（uncrossed disparity） 在後",
+          "problem": "立體視本中的圖形看起來浮到紙張前方，最可能使用哪種視差？\n\nA. 非交叉視差（uncrossed disparity）\nB. 零視差（zero disparity）\nC. 交叉視差（crossed disparity）\nD. 固視偏差（fixation disparity）",
           "steps": [
-            "先確認題目問的主題：Crossed disparity 在前，uncrossed disparity 在後",
-            "Target 位於 horopter 前方時產生 crossed disparity，融合後感覺物體較近；位於後方時產生 uncrossed disparity，融合後感覺物體較遠。多數立體視檢測利用 crossed disparity 讓圖形看起來浮出。",
-            "把判斷依據連回題目：Crossed disparity 融合後會讓 target 感覺在注視平面前方。\n\n正確選項：crossed disparity。\nTarget 位於 horopter 前方時產生 crossed disparity，融合後感覺物體較近；位於後方時產生 uncrossed disparity，融合後感覺物體較遠。多數立體視檢測利用 crossed disparity 讓圖形看起來浮出。"
+            "先確認題目問的主題：交叉視差（Crossed disparity） 在前，非交叉視差（uncrossed disparity） 在後",
+            "目標（Target） 位於 雙眼單視界（horopter） 前方時產生 交叉視差（crossed disparity），融合後感覺物體較近；位於後方時產生 非交叉視差（uncrossed disparity），融合後感覺物體較遠。多數立體視檢測利用 交叉視差（crossed disparity） 讓圖形看起來浮出。",
+            "把判斷依據連回題目：交叉視差（Crossed disparity） 融合後會讓 目標（target） 感覺在注視平面前方。\n\n正確選項：交叉視差（crossed disparity）。\n目標（Target） 位於 雙眼單視界（horopter） 前方時產生 交叉視差（crossed disparity），融合後感覺物體較近；位於後方時產生 非交叉視差（uncrossed disparity），融合後感覺物體較遠。多數立體視檢測利用 交叉視差（crossed disparity） 讓圖形看起來浮出。"
           ],
-          "answer": "crossed disparity"
+          "answer": "交叉視差（crossed disparity）"
         },
         {
           "type": "practice",
@@ -296,58 +308,64 @@
           "checks": [
             {
               "kind": "single",
-              "q": "物體落在 horopter 上時，最符合哪一項？",
+              "q": "物體落在 雙眼單視界（horopter） 上時，最符合哪一項？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "Horopter 上的物體落在兩眼對應視網膜點，屬 zero disparity。\n\n正確選項：zero disparity。\n注視點影像落在兩眼 fovea。位於 horopter 的其他物體會落在對應視網膜點，形成 zero disparity，看起來與注視點同深度。Horopter 前後的 Panum's fusional area 容許少量不對應，仍可維持單視並產生深度；超出太多則可能複視。",
+              "explain": "雙眼單視界（Horopter） 上的物體落在兩眼對應視網膜點，屬 零視差（zero disparity）。\n\n正確選項：零視差（zero disparity）。\n注視點影像落在兩眼 中央凹（fovea）。位於 雙眼單視界（horopter） 的其他物體會落在對應視網膜點，形成 零視差（zero disparity），看起來與注視點同深度。雙眼單視界（Horopter） 前後的 潘納姆融像區（Panum's fusional area） 容許少量不對應，仍可維持單視並產生深度；超出太多則可能複視。",
               "choices": [
-                "crossed disparity",
-                "zero disparity",
+                "交叉視差（crossed disparity）",
+                "零視差（zero disparity）",
                 "一定複視",
-                "exo fixation disparity"
-              ]
+                "外向固視偏差（exo fixation disparity）"
+              ],
+              "id": "c0c69f03c"
             },
             {
               "kind": "single",
               "q": "立體視本中的圖形看起來浮到紙張前方，最可能使用哪種視差？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "Crossed disparity 融合後會讓 target 感覺在注視平面前方。\n\n正確選項：crossed disparity。\nTarget 位於 horopter 前方時產生 crossed disparity，融合後感覺物體較近；位於後方時產生 uncrossed disparity，融合後感覺物體較遠。多數立體視檢測利用 crossed disparity 讓圖形看起來浮出。",
+              "explain": "交叉視差（Crossed disparity） 融合後會讓 目標（target） 感覺在注視平面前方。\n\n正確選項：交叉視差（crossed disparity）。\n目標（Target） 位於 雙眼單視界（horopter） 前方時產生 交叉視差（crossed disparity），融合後感覺物體較近；位於後方時產生 非交叉視差（uncrossed disparity），融合後感覺物體較遠。多數立體視檢測利用 交叉視差（crossed disparity） 讓圖形看起來浮出。",
               "choices": [
-                "uncrossed disparity",
-                "zero disparity",
-                "crossed disparity",
-                "fixation disparity"
-              ]
+                "非交叉視差（uncrossed disparity）",
+                "零視差（zero disparity）",
+                "交叉視差（crossed disparity）",
+                "固視偏差（fixation disparity）"
+              ],
+              "id": "c8260be43"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "retinal disparity 是左右眼影像位置差",
-            "fusion 成功產生 stereopsis；失敗可產生 diplopia",
-            "horopter 上的物體為 zero disparity、看起來同深度",
-            "Panum's fusional area 是 horopter 前後仍可融合的範圍",
-            "crossed disparity：target 在 fixation 前方",
-            "uncrossed disparity：target 在 fixation 後方"
+            "視網膜視差（retinal disparity） 是左右眼影像位置差",
+            "融像（fusion） 成功產生 立體視（stereopsis）；失敗可產生 複視（diplopia）",
+            "雙眼單視界（horopter） 上的物體為 零視差（zero disparity）、看起來同深度",
+            "潘納姆融像區（Panum's fusional area） 是 雙眼單視界（horopter） 前後仍可融合的範圍",
+            "交叉視差（crossed disparity）：目標（target） 在 注視（fixation） 前方",
+            "非交叉視差（uncrossed disparity）：目標（target） 在 注視（fixation） 後方"
           ],
           "flash": [
             {
-              "front": "Retinal disparity 加 fusion 產生 stereopsis",
-              "back": "左右眼像兩台相隔一點距離的相機；大腦把兩張略不同照片疊起來，就得到深度。"
+              "front": "視網膜視差（Retinal disparity） 加 融像（fusion） 產生 立體視（stereopsis）",
+              "back": "左右眼像兩台相隔一點距離的相機；大腦把兩張略不同照片疊起來，就得到深度。",
+              "id": "f010f3e9a"
             },
             {
-              "front": "Horopter 與 Panum's fusional area",
-              "back": "Horopter 是和注視點看起來同一深度的線；前後有一小段容許區，落在裡面仍能融合。"
+              "front": "雙眼單視界（Horopter） 與 潘納姆融像區（Panum's fusional area）",
+              "back": "雙眼單視界（Horopter） 是和注視點看起來同一深度的線；前後有一小段容許區，落在裡面仍能融合。",
+              "id": "f45e418a6"
             },
             {
-              "front": "Crossed disparity 在前，uncrossed disparity 在後",
-              "back": "想把眼睛交叉看近物：交叉視差代表物體在注視點前；非交叉視差代表在後。"
+              "front": "交叉視差（Crossed disparity） 在前，非交叉視差（uncrossed disparity） 在後",
+              "back": "想把眼睛交叉看近物：交叉視差代表物體在注視點前；非交叉視差代表在後。",
+              "id": "faf15694f"
             },
             {
-              "front": "Stereoacuity 數值從 40 seconds of arc 改善到 10 seconds of arc，代表什麼？",
-              "back": "Stereoacuity 是最小可偵測視差，數值越小代表越精細。\n\n正確選項：可辨認更小的深度差，立體視更精細。\nRetinal disparity 來自左右眼觀看角度不同。兩眼影像差異適中時，大腦可用 fusion 合成單一立體影像；若差異過大而無法融合，就會出現 diplopia。Stereoacuity 是能偵測到的最小深度差，以 seconds of arc 表示。"
+              "front": "立體視力（Stereoacuity） 數值從 40 角秒（seconds of arc） 改善到 10 角秒（seconds of arc），代表什麼？",
+              "back": "立體視力（Stereoacuity） 是最小可偵測視差，數值越小代表越精細。\n\n正確選項：可辨認更小的深度差，立體視更精細。\n視網膜視差（Retinal disparity） 來自左右眼觀看角度不同。兩眼影像差異適中時，大腦可用 融像（fusion） 合成單一立體影像；若差異過大而無法融合，就會出現 複視（diplopia）。立體視力（Stereoacuity） 是能偵測到的最小深度差，以 角秒（seconds of arc） 表示。",
+              "id": "fc6704471"
             }
           ]
         }
@@ -358,14 +376,14 @@
       "title": "視差不只一種，發展時間也會考",
       "goals": [
         "解釋相對視差比絕對視差敏感",
-        "解釋Fixation disparity 是沒有複視的小固視誤差",
+        "解釋固視偏差（Fixation disparity） 是沒有複視的小固視誤差",
         "解釋立體視是兒童雙眼視發展的警報器"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "視差不只一種，發展時間也會考",
-          "body": "相對視差最敏感；固視可以有小誤差；兒童早期雙眼視受干擾會明顯傷害立體視。\n\n- 先比較相對視差與絕對視差。\n- 再理解 fixation disparity 是可容許的小誤差。\n- 最後記立體視發展與臨床重要性。"
+          "body": "相對視差最敏感；固視可以有小誤差；兒童早期雙眼視受干擾會明顯傷害立體視。\n\n- 先比較相對視差與絕對視差。\n- 再理解 固視偏差（fixation disparity） 是可容許的小誤差。\n- 最後記立體視發展與臨床重要性。"
         },
         {
           "type": "card",
@@ -384,47 +402,49 @@
           "q": "視覺系統通常對哪一種視差較敏感？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "有 fixation reference 可做相對比較，因此 relative disparity 較敏感。\n\n正確選項：relative disparity。\n角度視差可分相對視差與絕對視差。相對視差會比較視標與可見注視參考點的視差；絕對視差只看視標相對注視軸的位置。人類視覺系統對相對視差更敏感。",
+          "explain": "有 注視（fixation） 參考點（reference） 可做相對比較，因此 相對視差（relative disparity） 較敏感。\n\n正確選項：相對視差（relative disparity）。\n角度視差可分相對視差與絕對視差。相對視差會比較視標與可見注視參考點的視差；絕對視差只看視標相對注視軸的位置。人類視覺系統對相對視差更敏感。",
           "choices": [
-            "relative disparity",
-            "absolute disparity",
+            "相對視差（relative disparity）",
+            "絕對視差（absolute disparity）",
             "沒有差別",
-            "只有 monocular disparity"
-          ]
+            "只有 單眼的（monocular） 視差（disparity）"
+          ],
+          "id": "c0665fc1e"
         },
         {
           "type": "card",
-          "title": "Fixation disparity 是沒有複視的小固視誤差",
-          "body": "**一句話／白話**\n兩眼注視時不一定瞄得百分之百準；只要誤差很小，大腦仍能融合，不會看到兩個。\n\n**觀念**\nFixation disparity 是 underconvergence 或 overconvergence 的微小誤差，但仍維持單視。Underconvergence 稱 exo fixation disparity，overconvergence 稱 eso fixation disparity。課堂數值提醒：外向誤差約 6 minutes of arc 內、內向誤差約 4 minutes of arc 內通常仍可融合。\n\n**考試角度**\n- fixation disparity 存在時仍沒有 diplopia\n- underconvergence = exo fixation disparity\n- overconvergence = eso fixation disparity\n\n**口訣**\n少聚是 exo，多聚是 eso；小誤差仍可單視。",
+          "title": "固視偏差（Fixation disparity） 是沒有複視的小固視誤差",
+          "body": "**一句話／白話**\n兩眼注視時不一定瞄得百分之百準；只要誤差很小，大腦仍能融合，不會看到兩個。\n\n**觀念**\n固視偏差（Fixation disparity） 是 內聚不足（underconvergence） 或 內聚過度（overconvergence） 的微小誤差，但仍維持單視。內聚不足 稱 外向固視偏差（exo fixation disparity），內聚過度 稱 內向固視偏差（eso fixation disparity）。課堂數值提醒：外向誤差約 6 分角（minutes of arc） 內、內向誤差約 4 分角 內通常仍可融合。\n\n**考試角度**\n- 固視偏差 存在時仍沒有 複視（diplopia）\n- 內聚不足 = 外向固視偏差\n- 內聚過度 = 內向固視偏差\n\n**口訣**\n少聚是 外向（exo），多聚是 內向（eso）；小誤差仍可單視。",
           "keys": [
-            "fixation disparity 存在時仍沒有 diplopia",
-            "underconvergence = exo fixation disparity",
-            "overconvergence = eso fixation disparity"
+            "固視偏差（fixation disparity） 存在時仍沒有 複視（diplopia）",
+            "內聚不足（underconvergence） = 外向固視偏差（exo fixation disparity）",
+            "內聚過度（overconvergence） = 內向固視偏差（eso fixation disparity）"
           ],
-          "tip": "口訣：少聚是 exo，多聚是 eso；小誤差仍可單視。"
+          "tip": "口訣：少聚是 外向（exo），多聚是 內向（eso）；小誤差仍可單視。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "眼睛稍微 underconverge，但患者仍沒有複視，稱為什麼？",
+          "q": "眼睛稍微 內聚不足（underconverge），但患者仍沒有複視，稱為什麼？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Underconvergence 對應 exo fixation disparity，且小誤差仍可維持融合。\n\n正確選項：exo fixation disparity。\nFixation disparity 是 underconvergence 或 overconvergence 的微小誤差，但仍維持單視。Underconvergence 稱 exo fixation disparity，overconvergence 稱 eso fixation disparity。課堂數值提醒：外向誤差約 6 minutes of arc 內、內向誤差約 4 minutes of arc 內通常仍可融合。",
+          "explain": "內聚不足（Underconvergence） 對應 外向固視偏差（exo fixation disparity），且小誤差仍可維持融合。\n\n正確選項：外向固視偏差（exo fixation disparity）。\n固視偏差（Fixation disparity） 是 內聚不足（underconvergence） 或 內聚過度（overconvergence） 的微小誤差，但仍維持單視。內聚不足（Underconvergence） 稱 外向固視偏差（exo fixation disparity），內聚過度（overconvergence） 稱 內向固視偏差（eso fixation disparity）。課堂數值提醒：外向誤差約 6 分角（minutes of arc） 內、內向誤差約 4 分角（minutes of arc） 內通常仍可融合。",
           "choices": [
-            "eso fixation disparity",
-            "exo fixation disparity",
-            "crossed diplopia",
-            "zero disparity"
-          ]
+            "內向固視偏差（eso fixation disparity）",
+            "外向固視偏差（exo fixation disparity）",
+            "交叉性（crossed） 複視（diplopia）",
+            "零視差（zero disparity）"
+          ],
+          "id": "cff782d3c"
         },
         {
           "type": "card",
           "title": "立體視是兒童雙眼視發展的警報器",
-          "body": "**一句話／白話**\n小朋友若兩眼沒有一起好好工作，立體視通常最早、最明顯下降，所以它很適合當篩檢。\n\n**觀念**\nStereoacuity 約出生後 3-5 個月開始發展，約 6-9 歲接近成人程度，細膩立體視可持續成熟至約 12 歲。正常常見約 5-15 seconds of arc，最佳可達約 2 seconds。五歲前若斜視、弱視或其他問題破壞 binocular vision，立體視可能大幅下降。\n\n**考試角度**\n- 立體視約出生後 3-5 個月開始發展\n- 五歲前 binocular vision 受干擾影響特別大\n- 正常 stereoacuity 常見 5-15 seconds of arc，數值越小越好\n\n**口訣**\n五歲前雙眼一起用，立體視才長得好。",
+          "body": "**一句話／白話**\n小朋友若兩眼沒有一起好好工作，立體視通常最早、最明顯下降，所以它很適合當篩檢。\n\n**觀念**\n立體視力（Stereoacuity） 約出生後 3-5 個月開始發展，約 6-9 歲接近成人程度，細膩立體視可持續成熟至約 12 歲。正常常見約 5-15 角秒（seconds of arc），最佳可達約 2 秒（seconds）。五歲前若斜視、弱視或其他問題破壞 雙眼視覺（binocular vision），立體視可能大幅下降。\n\n**考試角度**\n- 立體視約出生後 3-5 個月開始發展\n- 五歲前 雙眼視覺 受干擾影響特別大\n- 正常 立體視力 常見 5-15 角秒，數值越小越好\n\n**口訣**\n五歲前雙眼一起用，立體視才長得好。",
           "keys": [
             "立體視約出生後 3-5 個月開始發展",
-            "五歲前 binocular vision 受干擾影響特別大",
-            "正常 stereoacuity 常見 5-15 seconds of arc，數值越小越好"
+            "五歲前 雙眼視覺（binocular vision） 受干擾影響特別大",
+            "正常 立體視力（stereoacuity） 常見 5-15 角秒（seconds of arc），數值越小越好"
           ],
           "tip": "口訣：五歲前雙眼一起用，立體視才長得好。"
         },
@@ -434,13 +454,14 @@
           "q": "為什麼立體視檢查對幼兒雙眼視篩檢特別重要？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "立體視依賴正常雙眼視發展，早期干擾會造成明顯下降。\n\n正確選項：五歲前雙眼視受干擾可使立體視大幅下降。\nStereoacuity 約出生後 3-5 個月開始發展，約 6-9 歲接近成人程度，細膩立體視可持續成熟至約 12 歲。正常常見約 5-15 seconds of arc，最佳可達約 2 seconds。五歲前若斜視、弱視或其他問題破壞 binocular vision，立體視可能大幅下降。",
+          "explain": "立體視依賴正常雙眼視發展，早期干擾會造成明顯下降。\n\n正確選項：五歲前雙眼視受干擾可使立體視大幅下降。\n立體視力（Stereoacuity） 約出生後 3-5 個月開始發展，約 6-9 歲接近成人程度，細膩立體視可持續成熟至約 12 歲。正常常見約 5-15 角秒（seconds of arc），最佳可達約 2 秒（seconds）。五歲前若斜視、弱視或其他問題破壞 雙眼視覺（binocular vision），立體視可能大幅下降。",
           "choices": [
             "立體視完全不受斜視影響",
             "只要單眼視力好，立體視一定正常",
             "五歲前雙眼視受干擾可使立體視大幅下降",
             "立體視出生時已完全成熟"
-          ]
+          ],
+          "id": "c9c4909fd"
         },
         {
           "type": "example",
@@ -448,8 +469,8 @@
           "problem": "為什麼立體視檢查對幼兒雙眼視篩檢特別重要？\n\nA. 立體視完全不受斜視影響\nB. 只要單眼視力好，立體視一定正常\nC. 五歲前雙眼視受干擾可使立體視大幅下降\nD. 立體視出生時已完全成熟",
           "steps": [
             "先確認題目問的主題：立體視是兒童雙眼視發展的警報器",
-            "Stereoacuity 約出生後 3-5 個月開始發展，約 6-9 歲接近成人程度，細膩立體視可持續成熟至約 12 歲。正常常見約 5-15 seconds of arc，最佳可達約 2 seconds。五歲前若斜視、弱視或其他問題破壞 binocular vision，立體視可能大幅下降。",
-            "把判斷依據連回題目：立體視依賴正常雙眼視發展，早期干擾會造成明顯下降。\n\n正確選項：五歲前雙眼視受干擾可使立體視大幅下降。\nStereoacuity 約出生後 3-5 個月開始發展，約 6-9 歲接近成人程度，細膩立體視可持續成熟至約 12 歲。正常常見約 5-15 seconds of arc，最佳可達約 2 seconds。五歲前若斜視、弱視或其他問題破壞 binocular vision，立體視可能大幅下降。"
+            "立體視力（Stereoacuity） 約出生後 3-5 個月開始發展，約 6-9 歲接近成人程度，細膩立體視可持續成熟至約 12 歲。正常常見約 5-15 角秒（seconds of arc），最佳可達約 2 秒（seconds）。五歲前若斜視、弱視或其他問題破壞 雙眼視覺（binocular vision），立體視可能大幅下降。",
+            "把判斷依據連回題目：立體視依賴正常雙眼視發展，早期干擾會造成明顯下降。\n\n正確選項：五歲前雙眼視受干擾可使立體視大幅下降。\n立體視力（Stereoacuity） 約出生後 3-5 個月開始發展，約 6-9 歲接近成人程度，細膩立體視可持續成熟至約 12 歲。正常常見約 5-15 角秒（seconds of arc），最佳可達約 2 秒（seconds）。五歲前若斜視、弱視或其他問題破壞 雙眼視覺（binocular vision），立體視可能大幅下降。"
           ],
           "answer": "五歲前雙眼視受干擾可使立體視大幅下降"
         },
@@ -463,29 +484,31 @@
           "checks": [
             {
               "kind": "single",
-              "q": "眼睛稍微 underconverge，但患者仍沒有複視，稱為什麼？",
+              "q": "眼睛稍微 內聚不足（underconverge），但患者仍沒有複視，稱為什麼？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "Underconvergence 對應 exo fixation disparity，且小誤差仍可維持融合。\n\n正確選項：exo fixation disparity。\nFixation disparity 是 underconvergence 或 overconvergence 的微小誤差，但仍維持單視。Underconvergence 稱 exo fixation disparity，overconvergence 稱 eso fixation disparity。課堂數值提醒：外向誤差約 6 minutes of arc 內、內向誤差約 4 minutes of arc 內通常仍可融合。",
+              "explain": "內聚不足（Underconvergence） 對應 外向固視偏差（exo fixation disparity），且小誤差仍可維持融合。\n\n正確選項：外向固視偏差（exo fixation disparity）。\n固視偏差（Fixation disparity） 是 內聚不足（underconvergence） 或 內聚過度（overconvergence） 的微小誤差，但仍維持單視。內聚不足（Underconvergence） 稱 外向固視偏差（exo fixation disparity），內聚過度（overconvergence） 稱 內向固視偏差（eso fixation disparity）。課堂數值提醒：外向誤差約 6 分角（minutes of arc） 內、內向誤差約 4 分角（minutes of arc） 內通常仍可融合。",
               "choices": [
-                "eso fixation disparity",
-                "exo fixation disparity",
-                "crossed diplopia",
-                "zero disparity"
-              ]
+                "內向固視偏差（eso fixation disparity）",
+                "外向固視偏差（exo fixation disparity）",
+                "交叉性（crossed） 複視（diplopia）",
+                "零視差（zero disparity）"
+              ],
+              "id": "cff782d3c"
             },
             {
               "kind": "single",
               "q": "為什麼立體視檢查對幼兒雙眼視篩檢特別重要？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "立體視依賴正常雙眼視發展，早期干擾會造成明顯下降。\n\n正確選項：五歲前雙眼視受干擾可使立體視大幅下降。\nStereoacuity 約出生後 3-5 個月開始發展，約 6-9 歲接近成人程度，細膩立體視可持續成熟至約 12 歲。正常常見約 5-15 seconds of arc，最佳可達約 2 seconds。五歲前若斜視、弱視或其他問題破壞 binocular vision，立體視可能大幅下降。",
+              "explain": "立體視依賴正常雙眼視發展，早期干擾會造成明顯下降。\n\n正確選項：五歲前雙眼視受干擾可使立體視大幅下降。\n立體視力（Stereoacuity） 約出生後 3-5 個月開始發展，約 6-9 歲接近成人程度，細膩立體視可持續成熟至約 12 歲。正常常見約 5-15 角秒（seconds of arc），最佳可達約 2 秒（seconds）。五歲前若斜視、弱視或其他問題破壞 雙眼視覺（binocular vision），立體視可能大幅下降。",
               "choices": [
                 "立體視完全不受斜視影響",
                 "只要單眼視力好，立體視一定正常",
                 "五歲前雙眼視受干擾可使立體視大幅下降",
                 "立體視出生時已完全成熟"
-              ]
+              ],
+              "id": "c9c4909fd"
             }
           ]
         },
@@ -494,27 +517,31 @@
           "points": [
             "角度視差是用角度表示的雙眼視差",
             "相對視差有可比較的注視參考點",
-            "fixation disparity 存在時仍沒有 diplopia",
-            "underconvergence = exo fixation disparity",
+            "固視偏差（fixation disparity） 存在時仍沒有 複視（diplopia）",
+            "內聚不足（underconvergence） = 外向固視偏差（exo fixation disparity）",
             "立體視約出生後 3-5 個月開始發展",
-            "五歲前 binocular vision 受干擾影響特別大"
+            "五歲前 雙眼視覺（binocular vision） 受干擾影響特別大"
           ],
           "flash": [
             {
               "front": "相對視差比絕對視差敏感",
-              "back": "大腦最會做比較題：有注視點當尺，兩個物體互相比前後，比單獨猜一個位置更精準。"
+              "back": "大腦最會做比較題：有注視點當尺，兩個物體互相比前後，比單獨猜一個位置更精準。",
+              "id": "fa0cbc3a3"
             },
             {
-              "front": "Fixation disparity 是沒有複視的小固視誤差",
-              "back": "兩眼注視時不一定瞄得百分之百準；只要誤差很小，大腦仍能融合，不會看到兩個。"
+              "front": "固視偏差（Fixation disparity） 是沒有複視的小固視誤差",
+              "back": "兩眼注視時不一定瞄得百分之百準；只要誤差很小，大腦仍能融合，不會看到兩個。",
+              "id": "fb660576c"
             },
             {
               "front": "立體視是兒童雙眼視發展的警報器",
-              "back": "小朋友若兩眼沒有一起好好工作，立體視通常最早、最明顯下降，所以它很適合當篩檢。"
+              "back": "小朋友若兩眼沒有一起好好工作，立體視通常最早、最明顯下降，所以它很適合當篩檢。",
+              "id": "f45c8ac0f"
             },
             {
               "front": "視覺系統通常對哪一種視差較敏感？",
-              "back": "有 fixation reference 可做相對比較，因此 relative disparity 較敏感。\n\n正確選項：relative disparity。\n角度視差可分相對視差與絕對視差。相對視差會比較視標與可見注視參考點的視差；絕對視差只看視標相對注視軸的位置。人類視覺系統對相對視差更敏感。"
+              "back": "有 注視（fixation） 參考點（reference） 可做相對比較，因此 相對視差（relative disparity） 較敏感。\n\n正確選項：相對視差（relative disparity）。\n角度視差可分相對視差與絕對視差。相對視差會比較視標與可見注視參考點的視差；絕對視差只看視標相對注視軸的位置。人類視覺系統對相對視差更敏感。",
+              "id": "f0665fc1e"
             }
           ]
         }
@@ -522,74 +549,76 @@
     },
     {
       "id": "stereo-tests-1",
-      "title": "立體視檢查：先分 local 與 global",
+      "title": "立體視檢查：先分 局部（local） 與 整體（global）",
       "goals": [
         "解釋局部測驗容易猜，整體測驗更依賴真正雙眼視",
         "解釋測驗與眼鏡配對：偏光、紅綠、無測試鏡",
-        "解釋檢查時先防止猜題，再看最小 seconds of arc"
+        "解釋檢查時先防止猜題，再看最小 角秒（seconds of arc）"
       ],
       "steps": [
         {
           "type": "intro",
-          "title": "立體視檢查：先分 local 與 global",
-          "body": "局部測驗較容易但可能被單眼線索猜中；整體隨機點測驗較困難，也更能確認真正雙眼整合。\n\n- 先比較 local 與 global 的核心差異。\n- 再把常見測驗配對到眼鏡與類型。\n- 最後用患者能力與作答方式判讀結果。"
+          "title": "立體視檢查：先分 局部（local） 與 整體（global）",
+          "body": "局部測驗較容易但可能被單眼線索猜中；整體隨機點測驗較困難，也更能確認真正雙眼整合。\n\n- 先比較 局部（local） 與 整體（global） 的核心差異。\n- 再把常見測驗配對到眼鏡與類型。\n- 最後用患者能力與作答方式判讀結果。"
         },
         {
           "type": "card",
           "title": "局部測驗容易猜，整體測驗更依賴真正雙眼視",
-          "body": "**一句話／白話**\n局部測驗像看一隻有輪廓的蒼蠅，單眼也可能猜；整體測驗像在亂點中找圖，必須靠雙眼一起解碼。\n\n**觀念**\n局部立體視檢查使用小視標與中央視覺，常包含輪廓、陰影等單眼線索，例如 Titmus 蒼蠅。整體立體視檢查使用較大視網膜範圍與隨機點，需要圖像背景區分和更多神經處理，通常沒有可用的單眼深度線索。\n\n**考試角度**\n- 局部測驗：中央視覺、小視標，可能含單眼線索\n- 整體測驗：隨機點、圖像背景區分、較困難\n- 雙眼視較弱者可能通過局部測驗，卻無法通過整體測驗\n\n**口訣**\nLocal 可猜；global 要真的兩眼合作。",
+          "body": "**一句話／白話**\n局部測驗像看一隻有輪廓的蒼蠅，單眼也可能猜；整體測驗像在亂點中找圖，必須靠雙眼一起解碼。\n\n**觀念**\n局部立體視檢查使用小視標與中央視覺，常包含輪廓、陰影等單眼線索，例如 提特姆斯（Titmus） 蒼蠅。整體立體視檢查使用較大視網膜範圍與隨機點，需要圖像背景區分和更多神經處理，通常沒有可用的單眼深度線索。\n\n**考試角度**\n- 局部測驗：中央視覺、小視標，可能含單眼線索\n- 整體測驗：隨機點、圖像背景區分、較困難\n- 雙眼視較弱者可能通過局部測驗，卻無法通過整體測驗\n\n**口訣**\n局部（Local） 可猜；整體（global） 要真的兩眼合作。",
           "keys": [
             "局部測驗：中央視覺、小視標，可能含單眼線索",
             "整體測驗：隨機點、圖像背景區分、較困難",
             "雙眼視較弱者可能通過局部測驗，卻無法通過整體測驗"
           ],
-          "tip": "口訣：Local 可猜；global 要真的兩眼合作。"
+          "tip": "口訣：局部（Local） 可猜；整體（global） 要真的兩眼合作。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "患者能通過 Titmus local stereotest，卻無法通過 random-dot global stereotest，最合理的解釋是？",
+          "q": "患者能通過 提特姆斯（Titmus） 局部立體視檢查（local stereotest），卻無法通過 random-dot 整體立體視檢查（global stereotest），最合理的解釋是？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Local 測驗可能含單眼線索，弱雙眼視患者仍可能猜對。\n\n正確選項：local 的單眼線索可能幫助作答。\n局部立體視檢查使用小視標與中央視覺，常包含輪廓、陰影等單眼線索，例如 Titmus 蒼蠅。整體立體視檢查使用較大視網膜範圍與隨機點，需要圖像背景區分和更多神經處理，通常沒有可用的單眼深度線索。",
+          "explain": "局部（Local） 測驗可能含單眼線索，弱雙眼視患者仍可能猜對。\n\n正確選項：局部（local） 的單眼線索可能幫助作答。\n局部立體視檢查使用小視標與中央視覺，常包含輪廓、陰影等單眼線索，例如 提特姆斯（Titmus） 蒼蠅。整體立體視檢查使用較大視網膜範圍與隨機點，需要圖像背景區分和更多神經處理，通常沒有可用的單眼深度線索。",
           "choices": [
             "患者一定沒有任何視覺",
-            "local 的單眼線索可能幫助作答",
-            "global 比 local 更容易",
-            "Titmus 不需要中央視覺"
-          ]
+            "局部（local） 的單眼線索可能幫助作答",
+            "整體（global） 比 局部（local） 更容易",
+            "提特姆斯（Titmus） 不需要中央視覺"
+          ],
+          "id": "cb4ce0a99"
         },
         {
           "type": "card",
           "title": "測驗與眼鏡配對：偏光、紅綠、無測試鏡",
-          "body": "**一句話／白話**\n不同測驗只是用不同方法把左右眼影像分開：偏光、紅綠，或直接利用測試板本身。\n\n**觀念**\nTitmus、Randot 與部分隨機點測驗常使用偏光測試鏡。TNO 是課堂中特別強調使用紅綠測試鏡的測驗。Frisby 與 Lang 立體視檢查不需偏光或紅綠鏡，適合不願戴測試鏡的幼童；但 Frisby 偏頭觀看可能帶來單眼線索。\n\n**考試角度**\n- TNO 使用紅綠測試鏡\n- Frisby 與 Lang 不需要測試眼鏡\n- Frisby 偏頭或移動可能產生單眼線索\n\n**口訣**\nTNO 用紅綠鏡；Frisby、Lang 不需測試鏡。",
+          "body": "**一句話／白話**\n不同測驗只是用不同方法把左右眼影像分開：偏光、紅綠，或直接利用測試板本身。\n\n**觀念**\n提特姆斯（Titmus）、隨機點立體視檢查（Randot） 與部分隨機點測驗常使用偏光測試鏡。TNO 立體視覺檢查（TNO） 是課堂中特別強調使用紅綠測試鏡的測驗。弗里斯比（Frisby） 與 朗氏（Lang） 立體視檢查不需偏光或紅綠鏡，適合不願戴測試鏡的幼童；但 弗里斯比 偏頭觀看可能帶來單眼線索。\n\n**考試角度**\n- TNO 立體視覺檢查 使用紅綠測試鏡\n- 弗里斯比 與 朗氏 不需要測試眼鏡\n- 弗里斯比 偏頭或移動可能產生單眼線索\n\n**口訣**\nTNO 立體視覺檢查 用紅綠鏡；弗里斯比、朗氏 不需測試鏡。",
           "keys": [
-            "TNO 使用紅綠測試鏡",
-            "Frisby 與 Lang 不需要測試眼鏡",
-            "Frisby 偏頭或移動可能產生單眼線索"
+            "TNO 立體視覺檢查（TNO） 使用紅綠測試鏡",
+            "弗里斯比（Frisby） 與 朗氏（Lang） 不需要測試眼鏡",
+            "弗里斯比（Frisby） 偏頭或移動可能產生單眼線索"
           ],
-          "tip": "口訣：TNO 用紅綠鏡；Frisby、Lang 不需測試鏡。"
+          "tip": "口訣：TNO 立體視覺檢查（TNO） 用紅綠鏡；弗里斯比（Frisby）、朗氏（Lang） 不需測試鏡。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "下列哪一個立體視測驗使用 red-green glasses？",
+          "q": "下列哪一個立體視測驗使用 紅綠測試鏡（red-green glasses）？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "TNO 是課堂中特別強調使用紅綠鏡的隨機點立體視檢查。\n\n正確選項：TNO。\nTitmus、Randot 與部分隨機點測驗常使用偏光測試鏡。TNO 是課堂中特別強調使用紅綠測試鏡的測驗。Frisby 與 Lang 立體視檢查不需偏光或紅綠鏡，適合不願戴測試鏡的幼童；但 Frisby 偏頭觀看可能帶來單眼線索。",
+          "explain": "TNO 立體視覺檢查（TNO） 是課堂中特別強調使用紅綠鏡的隨機點立體視檢查。\n\n正確選項：TNO 立體視覺檢查（TNO）。\n提特姆斯（Titmus）、隨機點立體視檢查（Randot） 與部分隨機點測驗常使用偏光測試鏡。TNO 立體視覺檢查（TNO） 是課堂中特別強調使用紅綠測試鏡的測驗。弗里斯比（Frisby） 與 朗氏（Lang） 立體視檢查不需偏光或紅綠鏡，適合不願戴測試鏡的幼童；但 弗里斯比（Frisby） 偏頭觀看可能帶來單眼線索。",
           "choices": [
-            "Titmus 蒼蠅",
-            "Frisby",
-            "TNO",
-            "Lang"
-          ]
+            "提特姆斯（Titmus） 蒼蠅",
+            "弗里斯比（Frisby）",
+            "TNO 立體視覺檢查（TNO）",
+            "朗氏（Lang）"
+          ],
+          "id": "c4a56b743"
         },
         {
           "type": "card",
-          "title": "檢查時先防止猜題，再看最小 seconds of arc",
-          "body": "**一句話／白話**\n先確認患者不是靠輪廓、偏頭或偷看猜答案，再把最後能通過的最小秒角記成立體視力。\n\n**觀念**\n立體視多在近距離測量。檢查者需確認測試距離、測試鏡與雙眼都正確使用，並避免患者靠單眼線索或改變觀看角度猜題。能辨認的 disparity 越小，stereoacuity 越好；global 測驗失敗也可能提示較弱 binocular vision。\n\n**考試角度**\n- stereoacuity 記錄最小可辨認 seconds of arc\n- 數值越小代表越好的立體視力\n- 要排除輪廓、偏頭、移動等單眼猜題線索\n\n**口訣**\n先防猜，再記最小秒角；越小越好。",
+          "title": "檢查時先防止猜題，再看最小 角秒（seconds of arc）",
+          "body": "**一句話／白話**\n先確認患者不是靠輪廓、偏頭或偷看猜答案，再把最後能通過的最小秒角記成立體視力。\n\n**觀念**\n立體視多在近距離測量。檢查者需確認測試距離、測試鏡與雙眼都正確使用，並避免患者靠單眼線索或改變觀看角度猜題。能辨認的 視差（disparity） 越小，立體視力（stereoacuity） 越好；整體（global） 測驗失敗也可能提示較弱 雙眼視覺（binocular vision）。\n\n**考試角度**\n- 立體視力 記錄最小可辨認 角秒（seconds of arc）\n- 數值越小代表越好的立體視力\n- 要排除輪廓、偏頭、移動等單眼猜題線索\n\n**口訣**\n先防猜，再記最小秒角；越小越好。",
           "keys": [
-            "stereoacuity 記錄最小可辨認 seconds of arc",
+            "立體視力（stereoacuity） 記錄最小可辨認 角秒（seconds of arc）",
             "數值越小代表越好的立體視力",
             "要排除輪廓、偏頭、移動等單眼猜題線索"
           ],
@@ -598,31 +627,32 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "立體視檢查結果 20 seconds of arc 與 100 seconds of arc 相比，哪一個較好？",
+          "q": "立體視檢查結果 20 角秒（seconds of arc） 與 100 角秒（seconds of arc） 相比，哪一個較好？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Stereoacuity 是最小可辨認視差，數值越小越精細。\n\n正確選項：20，因為可辨認更小視差。\n立體視多在近距離測量。檢查者需確認測試距離、測試鏡與雙眼都正確使用，並避免患者靠單眼線索或改變觀看角度猜題。能辨認的 disparity 越小，stereoacuity 越好；global 測驗失敗也可能提示較弱 binocular vision。",
+          "explain": "立體視力（Stereoacuity） 是最小可辨認視差，數值越小越精細。\n\n正確選項：20，因為可辨認更小視差。\n立體視多在近距離測量。檢查者需確認測試距離、測試鏡與雙眼都正確使用，並避免患者靠單眼線索或改變觀看角度猜題。能辨認的 視差（disparity） 越小，立體視力（stereoacuity） 越好；整體（global） 測驗失敗也可能提示較弱 雙眼視覺（binocular vision）。",
           "choices": [
             "100，因為數字較大",
             "兩者完全相同",
             "不能比較",
             "20，因為可辨認更小視差"
-          ]
+          ],
+          "id": "cbb5e5d75"
         },
         {
           "type": "example",
-          "title": "範例拆解：檢查時先防止猜題，再看最小 seconds of arc",
-          "problem": "立體視檢查結果 20 seconds of arc 與 100 seconds of arc 相比，哪一個較好？\n\nA. 100，因為數字較大\nB. 兩者完全相同\nC. 不能比較\nD. 20，因為可辨認更小視差",
+          "title": "範例拆解：檢查時先防止猜題，再看最小 角秒（seconds of arc）",
+          "problem": "立體視檢查結果 20 角秒（seconds of arc） 與 100 角秒（seconds of arc） 相比，哪一個較好？\n\nA. 100，因為數字較大\nB. 兩者完全相同\nC. 不能比較\nD. 20，因為可辨認更小視差",
           "steps": [
-            "先確認題目問的主題：檢查時先防止猜題，再看最小 seconds of arc",
-            "立體視多在近距離測量。檢查者需確認測試距離、測試鏡與雙眼都正確使用，並避免患者靠單眼線索或改變觀看角度猜題。能辨認的 disparity 越小，stereoacuity 越好；global 測驗失敗也可能提示較弱 binocular vision。",
-            "把判斷依據連回題目：Stereoacuity 是最小可辨認視差，數值越小越精細。\n\n正確選項：20，因為可辨認更小視差。\n立體視多在近距離測量。檢查者需確認測試距離、測試鏡與雙眼都正確使用，並避免患者靠單眼線索或改變觀看角度猜題。能辨認的 disparity 越小，stereoacuity 越好；global 測驗失敗也可能提示較弱 binocular vision。"
+            "先確認題目問的主題：檢查時先防止猜題，再看最小 角秒（seconds of arc）",
+            "立體視多在近距離測量。檢查者需確認測試距離、測試鏡與雙眼都正確使用，並避免患者靠單眼線索或改變觀看角度猜題。能辨認的 視差（disparity） 越小，立體視力（stereoacuity） 越好；整體（global） 測驗失敗也可能提示較弱 雙眼視覺（binocular vision）。",
+            "把判斷依據連回題目：立體視力（Stereoacuity） 是最小可辨認視差，數值越小越精細。\n\n正確選項：20，因為可辨認更小視差。\n立體視多在近距離測量。檢查者需確認測試距離、測試鏡與雙眼都正確使用，並避免患者靠單眼線索或改變觀看角度猜題。能辨認的 視差（disparity） 越小，立體視力（stereoacuity） 越好；整體（global） 測驗失敗也可能提示較弱 雙眼視覺（binocular vision）。"
           ],
           "answer": "20，因為可辨認更小視差"
         },
         {
           "type": "practice",
-          "title": "實戰：立體視檢查：先分 local 與 global",
+          "title": "實戰：立體視檢查：先分 局部（local） 與 整體（global）",
           "qids": [
             "s114-optometry-exam106-u08-opt-q0077",
             "s114-optometry-exam107-u08-opt-q0120"
@@ -630,29 +660,31 @@
           "checks": [
             {
               "kind": "single",
-              "q": "下列哪一個立體視測驗使用 red-green glasses？",
+              "q": "下列哪一個立體視測驗使用 紅綠測試鏡（red-green glasses）？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "TNO 是課堂中特別強調使用紅綠鏡的隨機點立體視檢查。\n\n正確選項：TNO。\nTitmus、Randot 與部分隨機點測驗常使用偏光測試鏡。TNO 是課堂中特別強調使用紅綠測試鏡的測驗。Frisby 與 Lang 立體視檢查不需偏光或紅綠鏡，適合不願戴測試鏡的幼童；但 Frisby 偏頭觀看可能帶來單眼線索。",
+              "explain": "TNO 立體視覺檢查（TNO） 是課堂中特別強調使用紅綠鏡的隨機點立體視檢查。\n\n正確選項：TNO 立體視覺檢查（TNO）。\n提特姆斯（Titmus）、隨機點立體視檢查（Randot） 與部分隨機點測驗常使用偏光測試鏡。TNO 立體視覺檢查（TNO） 是課堂中特別強調使用紅綠測試鏡的測驗。弗里斯比（Frisby） 與 朗氏（Lang） 立體視檢查不需偏光或紅綠鏡，適合不願戴測試鏡的幼童；但 弗里斯比（Frisby） 偏頭觀看可能帶來單眼線索。",
               "choices": [
-                "Titmus 蒼蠅",
-                "Frisby",
-                "TNO",
-                "Lang"
-              ]
+                "提特姆斯（Titmus） 蒼蠅",
+                "弗里斯比（Frisby）",
+                "TNO 立體視覺檢查（TNO）",
+                "朗氏（Lang）"
+              ],
+              "id": "c4a56b743"
             },
             {
               "kind": "single",
-              "q": "立體視檢查結果 20 seconds of arc 與 100 seconds of arc 相比，哪一個較好？",
+              "q": "立體視檢查結果 20 角秒（seconds of arc） 與 100 角秒（seconds of arc） 相比，哪一個較好？",
               "answer": 3,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "Stereoacuity 是最小可辨認視差，數值越小越精細。\n\n正確選項：20，因為可辨認更小視差。\n立體視多在近距離測量。檢查者需確認測試距離、測試鏡與雙眼都正確使用，並避免患者靠單眼線索或改變觀看角度猜題。能辨認的 disparity 越小，stereoacuity 越好；global 測驗失敗也可能提示較弱 binocular vision。",
+              "explain": "立體視力（Stereoacuity） 是最小可辨認視差，數值越小越精細。\n\n正確選項：20，因為可辨認更小視差。\n立體視多在近距離測量。檢查者需確認測試距離、測試鏡與雙眼都正確使用，並避免患者靠單眼線索或改變觀看角度猜題。能辨認的 視差（disparity） 越小，立體視力（stereoacuity） 越好；整體（global） 測驗失敗也可能提示較弱 雙眼視覺（binocular vision）。",
               "choices": [
                 "100，因為數字較大",
                 "兩者完全相同",
                 "不能比較",
                 "20，因為可辨認更小視差"
-              ]
+              ],
+              "id": "cbb5e5d75"
             }
           ]
         },
@@ -661,27 +693,31 @@
           "points": [
             "局部測驗：中央視覺、小視標，可能含單眼線索",
             "整體測驗：隨機點、圖像背景區分、較困難",
-            "TNO 使用紅綠測試鏡",
-            "Frisby 與 Lang 不需要測試眼鏡",
-            "stereoacuity 記錄最小可辨認 seconds of arc",
+            "TNO 立體視覺檢查（TNO） 使用紅綠測試鏡",
+            "弗里斯比（Frisby） 與 朗氏（Lang） 不需要測試眼鏡",
+            "立體視力（stereoacuity） 記錄最小可辨認 角秒（seconds of arc）",
             "數值越小代表越好的立體視力"
           ],
           "flash": [
             {
               "front": "局部測驗容易猜，整體測驗更依賴真正雙眼視",
-              "back": "局部測驗像看一隻有輪廓的蒼蠅，單眼也可能猜；整體測驗像在亂點中找圖，必須靠雙眼一起解碼。"
+              "back": "局部測驗像看一隻有輪廓的蒼蠅，單眼也可能猜；整體測驗像在亂點中找圖，必須靠雙眼一起解碼。",
+              "id": "ffdd10b23"
             },
             {
               "front": "測驗與眼鏡配對：偏光、紅綠、無測試鏡",
-              "back": "不同測驗只是用不同方法把左右眼影像分開：偏光、紅綠，或直接利用測試板本身。"
+              "back": "不同測驗只是用不同方法把左右眼影像分開：偏光、紅綠，或直接利用測試板本身。",
+              "id": "f32a8b211"
             },
             {
-              "front": "檢查時先防止猜題，再看最小 seconds of arc",
-              "back": "先確認患者不是靠輪廓、偏頭或偷看猜答案，再把最後能通過的最小秒角記成立體視力。"
+              "front": "檢查時先防止猜題，再看最小 角秒（seconds of arc）",
+              "back": "先確認患者不是靠輪廓、偏頭或偷看猜答案，再把最後能通過的最小秒角記成立體視力。",
+              "id": "f0588489b"
             },
             {
-              "front": "患者能通過 Titmus local stereotest，卻無法通過 random-dot global stereotest，最合理的解釋是？",
-              "back": "Local 測驗可能含單眼線索，弱雙眼視患者仍可能猜對。\n\n正確選項：local 的單眼線索可能幫助作答。\n局部立體視檢查使用小視標與中央視覺，常包含輪廓、陰影等單眼線索，例如 Titmus 蒼蠅。整體立體視檢查使用較大視網膜範圍與隨機點，需要圖像背景區分和更多神經處理，通常沒有可用的單眼深度線索。"
+              "front": "患者能通過 提特姆斯（Titmus） 局部立體視檢查（local stereotest），卻無法通過 random-dot 整體立體視檢查（global stereotest），最合理的解釋是？",
+              "back": "局部（Local） 測驗可能含單眼線索，弱雙眼視患者仍可能猜對。\n\n正確選項：局部（local） 的單眼線索可能幫助作答。\n局部立體視檢查使用小視標與中央視覺，常包含輪廓、陰影等單眼線索，例如 提特姆斯（Titmus） 蒼蠅。整體立體視檢查使用較大視網膜範圍與隨機點，需要圖像背景區分和更多神經處理，通常沒有可用的單眼深度線索。",
+              "id": "fb4ce0a99"
             }
           ]
         }

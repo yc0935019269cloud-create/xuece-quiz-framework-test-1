@@ -31,7 +31,7 @@
         {
           "type": "intro",
           "title": "第 1 站：荷爾蒙是什麼、怎麼分三大類",
-          "body": "荷爾蒙是內分泌腺丟進血液的化學訊息，量極微、靠受體生效。先用『水溶 vs 脂溶』把它分三大類，受體位置與作用方式就全推出來了。\n\n- 先記荷爾蒙的共同特性：血液運送、量極微、必須有受體、種類超過 200。\n- 用一個分水嶺『溶不溶於水』把荷爾蒙分三大類。\n- 把『蛋白質類 vs 類固醇類』的比較表整張記起來（必考）。\n- 最後補一個特別的脂質類：eicosanoids。"
+          "body": "荷爾蒙是內分泌腺丟進血液的化學訊息，量極微、靠受體生效。先用『水溶 vs 脂溶』把它分三大類，受體位置與作用方式就全推出來了。\n\n- 先記荷爾蒙的共同特性：血液運送、量極微、必須有受體、種類超過 200。\n- 用一個分水嶺『溶不溶於水』把荷爾蒙分三大類。\n- 把『蛋白質類 vs 類固醇類』的比較表整張記起來（必考）。\n- 最後補一個特別的脂質類：類二十烷酸（eicosanoids）。"
         },
         {
           "type": "card",
@@ -56,12 +56,13 @@
             "荷爾蒙只流到特定器官",
             "其他細胞沒有血流",
             "荷爾蒙會自己挑路"
-          ]
+          ],
+          "id": "c71d355c8"
         },
         {
           "type": "card",
           "title": "用『水溶 vs 脂溶』把荷爾蒙分三大類",
-          "body": "**連到前一觀念**\n有了共同特性，接著用一個分水嶺把荷爾蒙分類。\n\n**觀念**\n依溶解度分三大類：① 水溶性（蛋白質／胜肽、胺類）→ 不能過細胞膜 → 用細胞膜上的受體；② 脂溶性（類固醇）→ 能穿過細胞膜 → 用細胞內（核內）受體；③ 脂質衍生的 eicosanoids。\n\n**為什麼**\n細胞膜是雙層脂質，脂溶的東西鑽得進去、水溶的鑽不進去。所以『溶解度』直接決定受體放在膜上還是細胞裡，連帶決定作用是快是慢。先判溶解度，其他全部能推。\n\n**考試角度**\n- 水溶（蛋白質/胜肽、胺類）→ 膜受體 + 二級傳訊 → 快、短\n- 脂溶（類固醇）→ 核內受體 → 改 DNA 轉錄 → 慢、長\n- 判斷起手式：先問『水溶還是脂溶』\n\n**易錯與比較**\n胺類荷爾蒙多半水溶（如腎上腺素），但甲狀腺素例外偏脂溶——考細節時要小心，但大原則先用溶解度推。",
+          "body": "**連到前一觀念**\n有了共同特性，接著用一個分水嶺把荷爾蒙分類。\n\n**觀念**\n依溶解度分三大類：① 水溶性（蛋白質／胜肽、胺類）→ 不能過細胞膜 → 用細胞膜上的受體；② 脂溶性（類固醇）→ 能穿過細胞膜 → 用細胞內（核內）受體；③ 脂質衍生的 類二十烷酸（eicosanoids）。\n\n**為什麼**\n細胞膜是雙層脂質，脂溶的東西鑽得進去、水溶的鑽不進去。所以『溶解度』直接決定受體放在膜上還是細胞裡，連帶決定作用是快是慢。先判溶解度，其他全部能推。\n\n**考試角度**\n- 水溶（蛋白質/胜肽、胺類）→ 膜受體 + 二級傳訊 → 快、短\n- 脂溶（類固醇）→ 核內受體 → 改 DNA 轉錄 → 慢、長\n- 判斷起手式：先問『水溶還是脂溶』\n\n**易錯與比較**\n胺類荷爾蒙多半水溶（如腎上腺素），但甲狀腺素例外偏脂溶——考細節時要小心，但大原則先用溶解度推。",
           "keys": [
             "水溶（蛋白質/胜肽、胺類）→ 膜受體 + 二級傳訊 → 快、短",
             "脂溶（類固醇）→ 核內受體 → 改 DNA 轉錄 → 慢、長",
@@ -75,18 +76,19 @@
           "q": "脂溶性的類固醇荷爾蒙，受體主要在哪裡？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "脂溶能穿過細胞膜，所以用細胞內（核內）受體，直接調控 DNA 轉錄。\n\n正確選項：細胞內（核內）。\n依溶解度分三大類：① 水溶性（蛋白質／胜肽、胺類）→ 不能過細胞膜 → 用細胞膜上的受體；② 脂溶性（類固醇）→ 能穿過細胞膜 → 用細胞內（核內）受體；③ 脂質衍生的 eicosanoids。",
+          "explain": "脂溶能穿過細胞膜，所以用細胞內（核內）受體，直接調控 DNA 轉錄。\n\n正確選項：細胞內（核內）。\n依溶解度分三大類：① 水溶性（蛋白質／胜肽、胺類）→ 不能過細胞膜 → 用細胞膜上的受體；② 脂溶性（類固醇）→ 能穿過細胞膜 → 用細胞內（核內）受體；③ 脂質衍生的 類二十烷酸（eicosanoids）。",
           "choices": [
             "細胞內（核內）",
             "細胞膜外側",
             "血液中",
             "粒線體膜上專一"
-          ]
+          ],
+          "id": "cfacbd94f"
         },
         {
           "type": "card",
           "title": "★必考比較表：蛋白質類 vs 類固醇類",
-          "body": "**連到前一觀念**\n分好類之後，這張比較表幾乎每年考，整張記。\n\n**觀念**\n蛋白質/胜肽類 vs 類固醇類，逐欄對比：前驅物、溶解度、血中型態、半衰期、濃度、儲存、受體、訊號傳遞、作用時間、能否口服。\n\n**為什麼**\n整張表其實一條線就能推：水溶 → 血中不結合、t½ 短、存在顆粒裡、膜受體＋二級傳訊、作用快；脂溶 → 血中要靠蛋白攜帶、t½ 長、不儲存（要用才現做）、核內受體改 DNA、作用慢、且可口服（不會被消化酵素破壞）。\n\n**考試角度**\n- 蛋白質類：水溶、血中不結合、t½ 短、存顆粒、膜受體、二級傳訊、作用快(sec)、不可口服\n- 類固醇類：脂溶、血中蛋白結合、t½ 長、不儲存、核內受體、調 DNA、作用慢(min~days)、可口服\n- 濃度：蛋白質類 10⁻¹⁰~10⁻¹² M(低)、類固醇類 10⁻⁹ M(高)\n\n**公式**\n前驅物：蛋白質類＝pre-pro-hormone；類固醇類＝cholesterol\n\n**易錯與比較**\n『可口服』的是類固醇類（脂溶、耐消化）；蛋白質類口服會被消化酵素分解，所以胰島素要用打的。",
+          "body": "**連到前一觀念**\n分好類之後，這張比較表幾乎每年考，整張記。\n\n**觀念**\n蛋白質/胜肽類 vs 類固醇類，逐欄對比：前驅物、溶解度、血中型態、半衰期、濃度、儲存、受體、訊號傳遞、作用時間、能否口服。\n\n**為什麼**\n整張表其實一條線就能推：水溶 → 血中不結合、t½ 短、存在顆粒裡、膜受體＋二級傳訊、作用快；脂溶 → 血中要靠蛋白攜帶、t½ 長、不儲存（要用才現做）、核內受體改 DNA、作用慢、且可口服（不會被消化酵素破壞）。\n\n**考試角度**\n- 蛋白質類：水溶、血中不結合、t½ 短、存顆粒、膜受體、二級傳訊、作用快(sec)、不可口服\n- 類固醇類：脂溶、血中蛋白結合、t½ 長、不儲存、核內受體、調 DNA、作用慢(min~days)、可口服\n- 濃度：蛋白質類 10⁻¹⁰~10⁻¹² M(低)、類固醇類 10⁻⁹ M(高)\n\n**公式**\n前驅物：蛋白質類＝pre-pro-荷爾蒙（hormone）；類固醇類＝膽固醇（cholesterol）\n\n**易錯與比較**\n『可口服』的是類固醇類（脂溶、耐消化）；蛋白質類口服會被消化酵素分解，所以胰島素要用打的。",
           "keys": [
             "蛋白質類：水溶、血中不結合、t½ 短、存顆粒、膜受體、二級傳訊、作用快(sec)、不可口服",
             "類固醇類：脂溶、血中蛋白結合、t½ 長、不儲存、核內受體、調 DNA、作用慢(min~days)、可口服",
@@ -105,30 +107,32 @@
             "血中靠蛋白攜帶、半衰期長、可口服",
             "存在分泌顆粒、半衰期短",
             "用細胞膜受體＋二級傳訊",
-            "前驅物是 pre-pro-hormone"
-          ]
+            "前驅物是 pre-pro-荷爾蒙（hormone）"
+          ],
+          "id": "cbbbaf674"
         },
         {
           "type": "interactive",
           "title": "下視丘—腦下垂體—甲狀腺負回饋",
           "task": "用「逐步」走完一次，說明每一步如何造成下一步。",
           "body": "觀察上游刺激與下游負回饋方向。",
-          "reference": "下視丘 TRH：下視丘釋放 TRH，刺激腦下垂體前葉。\n前葉 TSH：前葉釋放 TSH，刺激甲狀腺。\n甲狀腺 T₃/T₄：甲狀腺產生並釋放 T₃/T₄，作用於標的細胞。\n負回饋：T₃/T₄ 增加會抑制上游 TRH 與 TSH，避免訊號持續過強。",
+          "reference": "下視丘 促甲狀腺素釋放激素（TRH）：下視丘釋放 促甲狀腺素釋放激素（TRH），刺激腦下垂體前葉。\n前葉 甲狀腺刺激素（TSH）：前葉釋放 甲狀腺刺激素（TSH），刺激甲狀腺。\n甲狀腺 T₃/T₄：甲狀腺產生並釋放 T₃/T₄，作用於標的細胞。\n負回饋：T₃/T₄ 增加會抑制上游 促甲狀腺素釋放激素（TRH） 與 甲狀腺刺激素（TSH），避免訊號持續過強。",
           "height": 420,
-          "html": "<!doctype html><html lang=\"zh-Hant\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{margin:0;padding:10px;box-sizing:border-box;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}*{box-sizing:border-box}h3{font-size:18px;margin:0 0 8px}.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}label{display:block}.row label{flex:1 1 125px;min-width:0;max-width:180px}input{max-width:150px;width:100%}button{font:inherit;padding:6px 12px;background:#fff;border:1px solid #75644d;border-radius:6px}svg{width:100%;height:160px;background:#fff;border:1px solid #cabfa7}#result,.note{padding:6px;background:#fff1c9;margin-top:6px}small{font-size:14px;display:block;margin-top:6px}@media(max-width:400px){body{padding:8px}.row label{flex-basis:105px}svg{height:110px}h3{font-size:16px}}#stage{font-size:20px}#detail{line-height:1.8;min-height:100px}</style><h3>下視丘—腦下垂體—甲狀腺負回饋</h3><div class=\"note\">觀察重點：觀察上游刺激與下游負回饋方向。</div><div class=\"row\"><button id=\"play\">播放</button><button id=\"step\">逐步</button><button id=\"reset\">重設</button><span id=\"count\"></span></div><label>過程階段<input aria-label=\"過程階段\" id=\"progress\" type=\"range\" min=\"0\" max=\"3\" value=\"0\"></label><h4 id=\"stage\"></h4><p id=\"detail\"></p><small>此圖呈現事件順序與因果，時間間隔為教學節奏，不代表生理時間或實際解剖距離。</small><script>const stages=[[\"下視丘 TRH\", \"下視丘釋放 TRH，刺激腦下垂體前葉。\"], [\"前葉 TSH\", \"前葉釋放 TSH，刺激甲狀腺。\"], [\"甲狀腺 T₃/T₄\", \"甲狀腺產生並釋放 T₃/T₄，作用於標的細胞。\"], [\"負回饋\", \"T₃/T₄ 增加會抑制上游 TRH 與 TSH，避免訊號持續過強。\"]];let index=0,playing=false,last=0;const title=document.getElementById('stage'),body=document.getElementById('detail'),counter=document.getElementById('count'),play=document.getElementById('play');function draw(){title.textContent=(index+1)+'．'+stages[index][0];body.textContent=stages[index][1];counter.textContent=(index+1)+' / '+stages.length;document.getElementById('progress').value=index;}function pause(){playing=false;play.textContent='播放';}play.onclick=()=>{playing=!playing;play.textContent=playing?'暫停':'播放';last=performance.now()};document.getElementById('step').onclick=()=>{pause();index=(index+1)%stages.length;draw()};document.getElementById('reset').onclick=()=>{pause();index=0;draw()};document.getElementById('progress').oninput=e=>{pause();index=Number(e.target.value);draw()};function tick(t){if(playing&&t-last>1800){index=(index+1)%stages.length;last=t;draw()}requestAnimationFrame(tick)}draw();requestAnimationFrame(tick);</script></html>"
+          "html": "<!doctype html><html lang=\"zh-Hant\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{margin:0;padding:10px;box-sizing:border-box;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}*{box-sizing:border-box}h3{font-size:18px;margin:0 0 8px}.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}label{display:block}.row label{flex:1 1 125px;min-width:0;max-width:180px}input{max-width:150px;width:100%}button{font:inherit;padding:6px 12px;background:#fff;border:1px solid #75644d;border-radius:6px}svg{width:100%;height:160px;background:#fff;border:1px solid #cabfa7}#result,.note{padding:6px;background:#fff1c9;margin-top:6px}small{font-size:14px;display:block;margin-top:6px}@media(max-width:400px){body{padding:8px}.row label{flex-basis:105px}svg{height:110px}h3{font-size:16px}}#stage{font-size:20px}#detail{line-height:1.8;min-height:100px}</style><h3>下視丘—腦下垂體—甲狀腺負回饋</h3><div class=\"note\">觀察重點：觀察上游刺激與下游負回饋方向。</div><div class=\"row\"><button id=\"play\">播放</button><button id=\"step\">逐步</button><button id=\"reset\">重設</button><span id=\"count\"></span></div><label>過程階段<input aria-label=\"過程階段\" id=\"progress\" type=\"range\" min=\"0\" max=\"3\" value=\"0\"></label><h4 id=\"stage\"></h4><p id=\"detail\"></p><small>此圖呈現事件順序與因果，時間間隔為教學節奏，不代表生理時間或實際解剖距離。</small><script>const stages=[[\"下視丘 促甲狀腺素釋放激素（TRH）\", \"下視丘釋放 促甲狀腺素釋放激素（TRH），刺激腦下垂體前葉。\"], [\"前葉 甲狀腺刺激素（TSH）\", \"前葉釋放 甲狀腺刺激素（TSH），刺激甲狀腺。\"], [\"甲狀腺 T₃/T₄\", \"甲狀腺產生並釋放 T₃/T₄，作用於標的細胞。\"], [\"負回饋\", \"T₃/T₄ 增加會抑制上游 促甲狀腺素釋放激素（TRH） 與 甲狀腺刺激素（TSH），避免訊號持續過強。\"]];let index=0,playing=false,last=0;const title=document.getElementById('stage'),body=document.getElementById('detail'),counter=document.getElementById('count'),play=document.getElementById('play');function draw(){title.textContent=(index+1)+'．'+stages[index][0];body.textContent=stages[index][1];counter.textContent=(index+1)+' / '+stages.length;document.getElementById('progress').value=index;}function pause(){playing=false;play.textContent='播放';}play.onclick=()=>{playing=!playing;play.textContent=playing?'暫停':'播放';last=performance.now()};document.getElementById('step').onclick=()=>{pause();index=(index+1)%stages.length;draw()};document.getElementById('reset').onclick=()=>{pause();index=0;draw()};document.getElementById('progress').oninput=e=>{pause();index=Number(e.target.value);draw()};function tick(t){if(playing&&t-last>1800){index=(index+1)%stages.length;last=t;draw()}requestAnimationFrame(tick)}draw();requestAnimationFrame(tick);</script></html>"
         },
         {
           "type": "check",
           "kind": "self",
           "q": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
-          "answer": "下視丘 TRH：下視丘釋放 TRH，刺激腦下垂體前葉。\n前葉 TSH：前葉釋放 TSH，刺激甲狀腺。\n甲狀腺 T₃/T₄：甲狀腺產生並釋放 T₃/T₄，作用於標的細胞。\n負回饋：T₃/T₄ 增加會抑制上游 TRH 與 TSH，避免訊號持續過強。",
+          "answer": "下視丘 促甲狀腺素釋放激素（TRH）：下視丘釋放 促甲狀腺素釋放激素（TRH），刺激腦下垂體前葉。\n前葉 甲狀腺刺激素（TSH）：前葉釋放 甲狀腺刺激素（TSH），刺激甲狀腺。\n甲狀腺 T₃/T₄：甲狀腺產生並釋放 T₃/T₄，作用於標的細胞。\n負回饋：T₃/T₄ 增加會抑制上游 促甲狀腺素釋放激素（TRH） 與 甲狀腺刺激素（TSH），避免訊號持續過強。",
           "hint": "逐步比較相鄰階段或改變前後，並區分方向與因果。",
-          "explain": "下視丘 TRH：下視丘釋放 TRH，刺激腦下垂體前葉。\n前葉 TSH：前葉釋放 TSH，刺激甲狀腺。\n甲狀腺 T₃/T₄：甲狀腺產生並釋放 T₃/T₄，作用於標的細胞。\n負回饋：T₃/T₄ 增加會抑制上游 TRH 與 TSH，避免訊號持續過強。"
+          "explain": "下視丘 促甲狀腺素釋放激素（TRH）：下視丘釋放 促甲狀腺素釋放激素（TRH），刺激腦下垂體前葉。\n前葉 甲狀腺刺激素（TSH）：前葉釋放 甲狀腺刺激素（TSH），刺激甲狀腺。\n甲狀腺 T₃/T₄：甲狀腺產生並釋放 T₃/T₄，作用於標的細胞。\n負回饋：T₃/T₄ 增加會抑制上游 促甲狀腺素釋放激素（TRH） 與 甲狀腺刺激素（TSH），避免訊號持續過強。",
+          "id": "c2ad5dca5"
         },
         {
           "type": "example",
           "title": "範例拆解：★必考比較表：蛋白質類 vs 類固醇類",
-          "problem": "下列何者是『類固醇類』荷爾蒙的特徵？\n\nA. 血中靠蛋白攜帶、半衰期長、可口服\nB. 存在分泌顆粒、半衰期短\nC. 用細胞膜受體＋二級傳訊\nD. 前驅物是 pre-pro-hormone",
+          "problem": "下列何者是『類固醇類』荷爾蒙的特徵？\n\nA. 血中靠蛋白攜帶、半衰期長、可口服\nB. 存在分泌顆粒、半衰期短\nC. 用細胞膜受體＋二級傳訊\nD. 前驅物是 pre-pro-荷爾蒙（hormone）",
           "steps": [
             "先確認題目問的主題：★必考比較表：蛋白質類 vs 類固醇類",
             "蛋白質/胜肽類 vs 類固醇類，逐欄對比：前驅物、溶解度、血中型態、半衰期、濃度、儲存、受體、訊號傳遞、作用時間、能否口服。",
@@ -149,13 +153,14 @@
               "q": "脂溶性的類固醇荷爾蒙，受體主要在哪裡？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "脂溶能穿過細胞膜，所以用細胞內（核內）受體，直接調控 DNA 轉錄。\n\n正確選項：細胞內（核內）。\n依溶解度分三大類：① 水溶性（蛋白質／胜肽、胺類）→ 不能過細胞膜 → 用細胞膜上的受體；② 脂溶性（類固醇）→ 能穿過細胞膜 → 用細胞內（核內）受體；③ 脂質衍生的 eicosanoids。",
+              "explain": "脂溶能穿過細胞膜，所以用細胞內（核內）受體，直接調控 DNA 轉錄。\n\n正確選項：細胞內（核內）。\n依溶解度分三大類：① 水溶性（蛋白質／胜肽、胺類）→ 不能過細胞膜 → 用細胞膜上的受體；② 脂溶性（類固醇）→ 能穿過細胞膜 → 用細胞內（核內）受體；③ 脂質衍生的 類二十烷酸（eicosanoids）。",
               "choices": [
                 "細胞內（核內）",
                 "細胞膜外側",
                 "血液中",
                 "粒線體膜上專一"
-              ]
+              ],
+              "id": "cfacbd94f"
             },
             {
               "kind": "single",
@@ -167,8 +172,9 @@
                 "血中靠蛋白攜帶、半衰期長、可口服",
                 "存在分泌顆粒、半衰期短",
                 "用細胞膜受體＋二級傳訊",
-                "前驅物是 pre-pro-hormone"
-              ]
+                "前驅物是 pre-pro-荷爾蒙（hormone）"
+              ],
+              "id": "cbbbaf674"
             }
           ]
         },
@@ -181,24 +187,28 @@
             "脂溶（類固醇）→ 核內受體 → 改 DNA 轉錄 → 慢、長",
             "蛋白質類：水溶、血中不結合、t½ 短、存顆粒、膜受體、二級傳訊、作用快(sec)、不可口服",
             "類固醇類：脂溶、血中蛋白結合、t½ 長、不儲存、核內受體、調 DNA、作用慢(min~days)、可口服",
-            "荷爾蒙＝血液送的化學訊息、靠受體生效 → 用溶解度分類：水溶走膜受體＋二級傳訊（快、短）、脂溶走核內受體調 DNA（慢、長）→ 比較表整張背 → eicosanoids 是膜脂肪酸現做的局部荷爾蒙。"
+            "荷爾蒙＝血液送的化學訊息、靠受體生效 → 用溶解度分類：水溶走膜受體＋二級傳訊（快、短）、脂溶走核內受體調 DNA（慢、長）→ 比較表整張背 → 類二十烷酸（eicosanoids） 是膜脂肪酸現做的局部荷爾蒙。"
           ],
           "flash": [
             {
               "front": "荷爾蒙的共同特性：少少的、靠受體、走血液",
-              "back": "荷爾蒙是內分泌腺分泌、由血液運送到遠處作用的化學訊息；血中濃度極微（約 10⁻⁶~10⁻¹² g/ml），一定要目標細胞上有對應受體才有效；人體有超過 200 種荷爾蒙，作用時間從毫秒到數天不等。"
+              "back": "荷爾蒙是內分泌腺分泌、由血液運送到遠處作用的化學訊息；血中濃度極微（約 10⁻⁶~10⁻¹² g/ml），一定要目標細胞上有對應受體才有效；人體有超過 200 種荷爾蒙，作用時間從毫秒到數天不等。",
+              "id": "fd0d829da"
             },
             {
               "front": "用『水溶 vs 脂溶』把荷爾蒙分三大類",
-              "back": "依溶解度分三大類：① 水溶性（蛋白質／胜肽、胺類）→ 不能過細胞膜 → 用細胞膜上的受體；② 脂溶性（類固醇）→ 能穿過細胞膜 → 用細胞內（核內）受體；③ 脂質衍生的 eicosanoids。"
+              "back": "依溶解度分三大類：① 水溶性（蛋白質／胜肽、胺類）→ 不能過細胞膜 → 用細胞膜上的受體；② 脂溶性（類固醇）→ 能穿過細胞膜 → 用細胞內（核內）受體；③ 脂質衍生的 類二十烷酸（eicosanoids）。",
+              "id": "fc687cc03"
             },
             {
               "front": "★必考比較表：蛋白質類 vs 類固醇類",
-              "back": "蛋白質/胜肽類 vs 類固醇類，逐欄對比：前驅物、溶解度、血中型態、半衰期、濃度、儲存、受體、訊號傳遞、作用時間、能否口服。"
+              "back": "蛋白質/胜肽類 vs 類固醇類，逐欄對比：前驅物、溶解度、血中型態、半衰期、濃度、儲存、受體、訊號傳遞、作用時間、能否口服。",
+              "id": "f7ed16809"
             },
             {
               "front": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
-              "back": "下視丘 TRH：下視丘釋放 TRH，刺激腦下垂體前葉。\n前葉 TSH：前葉釋放 TSH，刺激甲狀腺。\n甲狀腺 T₃/T₄：甲狀腺產生並釋放 T₃/T₄，作用於標的細胞。\n負回饋：T₃/T₄ 增加會抑制上游 TRH 與 TSH，避免訊號持續過強。"
+              "back": "下視丘 促甲狀腺素釋放激素（TRH）：下視丘釋放 促甲狀腺素釋放激素（TRH），刺激腦下垂體前葉。\n前葉 甲狀腺刺激素（TSH）：前葉釋放 甲狀腺刺激素（TSH），刺激甲狀腺。\n甲狀腺 T₃/T₄：甲狀腺產生並釋放 T₃/T₄，作用於標的細胞。\n負回饋：T₃/T₄ 增加會抑制上游 促甲狀腺素釋放激素（TRH） 與 甲狀腺刺激素（TSH），避免訊號持續過強。",
+              "id": "f2ad5dca5"
             }
           ]
         }
@@ -208,20 +218,20 @@
       "id": "endo-overview-2",
       "title": "第 1 站：荷爾蒙是什麼、怎麼分三大類（2）",
       "goals": [
-        "解釋第三類：eicosanoids（脂質衍生的局部荷爾蒙）"
+        "解釋第三類：類二十烷酸（eicosanoids）（脂質衍生的局部荷爾蒙）"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 1 站：荷爾蒙是什麼、怎麼分三大類",
-          "body": "荷爾蒙是內分泌腺丟進血液的化學訊息，量極微、靠受體生效。先用『水溶 vs 脂溶』把它分三大類，受體位置與作用方式就全推出來了。\n\n- 先記荷爾蒙的共同特性：血液運送、量極微、必須有受體、種類超過 200。\n- 用一個分水嶺『溶不溶於水』把荷爾蒙分三大類。\n- 把『蛋白質類 vs 類固醇類』的比較表整張記起來（必考）。\n- 最後補一個特別的脂質類：eicosanoids。"
+          "body": "荷爾蒙是內分泌腺丟進血液的化學訊息，量極微、靠受體生效。先用『水溶 vs 脂溶』把它分三大類，受體位置與作用方式就全推出來了。\n\n- 先記荷爾蒙的共同特性：血液運送、量極微、必須有受體、種類超過 200。\n- 用一個分水嶺『溶不溶於水』把荷爾蒙分三大類。\n- 把『蛋白質類 vs 類固醇類』的比較表整張記起來（必考）。\n- 最後補一個特別的脂質類：類二十烷酸（eicosanoids）。"
         },
         {
           "type": "card",
-          "title": "第三類：eicosanoids（脂質衍生的局部荷爾蒙）",
-          "body": "**連到前一觀念**\n三大類最後補上這個特別的脂質類。\n\n**觀念**\nEicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n\n**為什麼**\n細胞需要時才從細胞膜的磷脂上切下 arachidonic acid 現做，作用範圍很近（自分泌/旁分泌），不像典型荷爾蒙跑遍全身。\n\n**考試角度**\n- 脂溶；來源＝arachidonic acid（20 碳、20:4 ω6）\n- 屬局部作用（autocrine/paracrine）的荷爾蒙\n- 代表：prostaglandins 等",
+          "title": "第三類：類二十烷酸（eicosanoids）（脂質衍生的局部荷爾蒙）",
+          "body": "**連到前一觀念**\n三大類最後補上這個特別的脂質類。\n\n**觀念**\n類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n\n**為什麼**\n細胞需要時才從細胞膜的磷脂上切下 花生四烯酸（arachidonic acid） 現做，作用範圍很近（自分泌/旁分泌），不像典型荷爾蒙跑遍全身。\n\n**考試角度**\n- 脂溶；來源＝花生四烯酸（20 碳、20:4 ω6）\n- 屬局部作用（autocrine/paracrine）的荷爾蒙\n- 代表：prostaglandins 等",
           "keys": [
-            "脂溶；來源＝arachidonic acid（20 碳、20:4 ω6）",
+            "脂溶；來源＝花生四烯酸（arachidonic acid）（20 碳、20:4 ω6）",
             "屬局部作用（autocrine/paracrine）的荷爾蒙",
             "代表：prostaglandins 等"
           ],
@@ -230,43 +240,45 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "Eicosanoids（如前列腺素）主要由什麼衍生而來？",
+          "q": "類二十烷酸（Eicosanoids）（如前列腺素）主要由什麼衍生而來？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Eicosanoids 由 20 碳不飽和脂肪酸 arachidonic acid（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 arachidonic acid。\nEicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。",
+          "explain": "類二十烷酸（Eicosanoids） 由 20 碳不飽和脂肪酸 花生四烯酸（arachidonic acid）（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 （arachidonic acid）。\n類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。",
           "choices": [
-            "20 碳的花生四烯酸 arachidonic acid",
+            "20 碳的花生四烯酸 （arachidonic acid）",
             "膽固醇",
             "酪胺酸",
-            "前驅多肽 pre-pro-hormone"
-          ]
+            "前驅多肽 pre-pro-荷爾蒙（hormone）"
+          ],
+          "id": "cc632ebd1"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\nEicosanoids（如前列腺素）主要由什麼衍生而來？\n\nA. 20 碳的花生四烯酸 arachidonic acid\nB. 膽固醇\nC. 酪胺酸\nD. 前驅多肽 pre-pro-hormone\n\n**判斷步驟**\n- 先確認題目問的主題：第三類：eicosanoids（脂質衍生的局部荷爾蒙）\n- Eicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n- 把判斷依據連回題目：Eicosanoids 由 20 碳不飽和脂肪酸 arachidonic acid（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 arachidonic acid。\nEicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n\n**結論與依據**\n20 碳的花生四烯酸 arachidonic acid",
+          "body": "**情境**\n類二十烷酸（Eicosanoids）（如前列腺素）主要由什麼衍生而來？\n\nA. 20 碳的花生四烯酸 （arachidonic acid）\nB. 膽固醇\nC. 酪胺酸\nD. 前驅多肽 pre-pro-荷爾蒙（hormone）\n\n**判斷步驟**\n- 先確認題目問的主題：第三類：類二十烷酸（脂質衍生的局部荷爾蒙）\n- 類二十烷酸 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n- 把判斷依據連回題目：類二十烷酸 由 20 碳不飽和脂肪酸 花生四烯酸（arachidonic acid）（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 （arachidonic acid）。\n類二十烷酸 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n\n**結論與依據**\n20 碳的花生四烯酸 （arachidonic acid）",
           "keys": [
-            "20 碳的花生四烯酸 arachidonic acid"
+            "20 碳的花生四烯酸 （arachidonic acid）"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "20 碳的花生四烯酸 arachidonic acid",
+          "answer": "20 碳的花生四烯酸 （arachidonic acid）",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：第三類：eicosanoids（脂質衍生的局部荷爾蒙）\n- Eicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n- 把判斷依據連回題目：Eicosanoids 由 20 碳不飽和脂肪酸 arachidonic acid（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 arachidonic acid。\nEicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。"
+          "explain": "- 先確認題目問的主題：第三類：類二十烷酸（eicosanoids）（脂質衍生的局部荷爾蒙）\n- 類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n- 把判斷依據連回題目：類二十烷酸（Eicosanoids） 由 20 碳不飽和脂肪酸 花生四烯酸（arachidonic acid）（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 （arachidonic acid）。\n類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。",
+          "id": "cb97d79d8"
         },
         {
           "type": "example",
-          "title": "範例拆解：第三類：eicosanoids（脂質衍生的局部荷爾蒙）",
-          "problem": "Eicosanoids（如前列腺素）主要由什麼衍生而來？\n\nA. 20 碳的花生四烯酸 arachidonic acid\nB. 膽固醇\nC. 酪胺酸\nD. 前驅多肽 pre-pro-hormone",
+          "title": "範例拆解：第三類：類二十烷酸（eicosanoids）（脂質衍生的局部荷爾蒙）",
+          "problem": "類二十烷酸（Eicosanoids）（如前列腺素）主要由什麼衍生而來？\n\nA. 20 碳的花生四烯酸 （arachidonic acid）\nB. 膽固醇\nC. 酪胺酸\nD. 前驅多肽 pre-pro-荷爾蒙（hormone）",
           "steps": [
-            "先確認題目問的主題：第三類：eicosanoids（脂質衍生的局部荷爾蒙）",
-            "Eicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。",
-            "把判斷依據連回題目：Eicosanoids 由 20 碳不飽和脂肪酸 arachidonic acid（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 arachidonic acid。\nEicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。"
+            "先確認題目問的主題：第三類：類二十烷酸（eicosanoids）（脂質衍生的局部荷爾蒙）",
+            "類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。",
+            "把判斷依據連回題目：類二十烷酸（Eicosanoids） 由 20 碳不飽和脂肪酸 花生四烯酸（arachidonic acid）（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 （arachidonic acid）。\n類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。"
           ],
-          "answer": "20 碳的花生四烯酸 arachidonic acid"
+          "answer": "20 碳的花生四烯酸 （arachidonic acid）"
         },
         {
           "type": "practice",
@@ -278,44 +290,49 @@
           "checks": [
             {
               "kind": "single",
-              "q": "Eicosanoids（如前列腺素）主要由什麼衍生而來？",
+              "q": "類二十烷酸（Eicosanoids）（如前列腺素）主要由什麼衍生而來？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "Eicosanoids 由 20 碳不飽和脂肪酸 arachidonic acid（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 arachidonic acid。\nEicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。",
+              "explain": "類二十烷酸（Eicosanoids） 由 20 碳不飽和脂肪酸 花生四烯酸（arachidonic acid）（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 （arachidonic acid）。\n類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。",
               "choices": [
-                "20 碳的花生四烯酸 arachidonic acid",
+                "20 碳的花生四烯酸 （arachidonic acid）",
                 "膽固醇",
                 "酪胺酸",
-                "前驅多肽 pre-pro-hormone"
-              ]
+                "前驅多肽 pre-pro-荷爾蒙（hormone）"
+              ],
+              "id": "cc632ebd1"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "脂溶；來源＝arachidonic acid（20 碳、20:4 ω6）",
+            "脂溶；來源＝花生四烯酸（arachidonic acid）（20 碳、20:4 ω6）",
             "屬局部作用（autocrine/paracrine）的荷爾蒙",
-            "荷爾蒙＝血液送的化學訊息、靠受體生效 → 用溶解度分類：水溶走膜受體＋二級傳訊（快、短）、脂溶走核內受體調 DNA（慢、長）→ 比較表整張背 → eicosanoids 是膜脂肪酸現做的局部荷爾蒙。",
-            "第三類：eicosanoids（脂質衍生的局部荷爾蒙）：脂溶；來源＝arachidonic acid（20 碳、20:4 ω6）",
-            "Eicosanoids 由 20 碳不飽和脂肪酸 arachidonic acid（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 arachidonic acid。\nEicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。"
+            "荷爾蒙＝血液送的化學訊息、靠受體生效 → 用溶解度分類：水溶走膜受體＋二級傳訊（快、短）、脂溶走核內受體調 DNA（慢、長）→ 比較表整張背 → 類二十烷酸（eicosanoids） 是膜脂肪酸現做的局部荷爾蒙。",
+            "第三類：類二十烷酸（eicosanoids）（脂質衍生的局部荷爾蒙）：脂溶；來源＝花生四烯酸（arachidonic acid）（20 碳、20:4 ω6）",
+            "類二十烷酸（Eicosanoids） 由 20 碳不飽和脂肪酸 花生四烯酸（arachidonic acid）（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 （arachidonic acid）。\n類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。"
           ],
           "flash": [
             {
-              "front": "第三類：eicosanoids（脂質衍生的局部荷爾蒙）",
-              "back": "Eicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。"
+              "front": "第三類：類二十烷酸（eicosanoids）（脂質衍生的局部荷爾蒙）",
+              "back": "類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。",
+              "id": "ff03a0eb4"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：第三類：eicosanoids（脂質衍生的局部荷爾蒙）\n- Eicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n- 把判斷依據連回題目：Eicosanoids 由 20 碳不飽和脂肪酸 arachidonic acid（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 arachidonic acid。\nEicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。"
+              "back": "- 先確認題目問的主題：第三類：類二十烷酸（eicosanoids）（脂質衍生的局部荷爾蒙）\n- 類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n- 把判斷依據連回題目：類二十烷酸（Eicosanoids） 由 20 碳不飽和脂肪酸 花生四烯酸（arachidonic acid）（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 （arachidonic acid）。\n類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。",
+              "id": "fb97d79d8"
             },
             {
-              "front": "Eicosanoids（如前列腺素）主要由什麼衍生而來？",
-              "back": "Eicosanoids 由 20 碳不飽和脂肪酸 arachidonic acid（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 arachidonic acid。\nEicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。"
+              "front": "類二十烷酸（Eicosanoids）（如前列腺素）主要由什麼衍生而來？",
+              "back": "類二十烷酸（Eicosanoids） 由 20 碳不飽和脂肪酸 花生四烯酸（arachidonic acid）（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 （arachidonic acid）。\n類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。",
+              "id": "fc632ebd1"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：第三類：eicosanoids（脂質衍生的局部荷爾蒙）\n- Eicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n- 把判斷依據連回題目：Eicosanoids 由 20 碳不飽和脂肪酸 arachidonic acid（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 arachidonic acid。\nEicosanoids 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 arachidonic acid（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。"
+              "back": "- 先確認題目問的主題：第三類：類二十烷酸（eicosanoids）（脂質衍生的局部荷爾蒙）\n- 類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。\n- 把判斷依據連回題目：類二十烷酸（Eicosanoids） 由 20 碳不飽和脂肪酸 花生四烯酸（arachidonic acid）（20:4 ω6）衍生，屬脂溶性局部荷爾蒙。\n\n正確選項：20 碳的花生四烯酸 （arachidonic acid）。\n類二十烷酸（Eicosanoids） 是脂溶性、由 20 個碳的不飽和脂肪酸——花生四烯酸 （arachidonic acid）（20:4 ω6）——衍生而來的局部荷爾蒙（如前列腺素 PG）。",
+              "id": "fb97d79d8"
             }
           ]
         }
@@ -323,53 +340,54 @@
     },
     {
       "id": "endo-adh-insulin-1",
-      "title": "第 2 站：兩個必考腺體——ADH 與 Insulin（1）",
+      "title": "第 2 站：兩個必考腺體——抗利尿激素（ADH） 與 胰島素（Insulin）（1）",
       "goals": [
-        "解釋ADH × 血量：血變少 → baroreceptor → ADH 升",
-        "解釋改變 ADH 分泌的因素（升的、降的）",
-        "解釋Insulin 的功能：降血糖、把多餘能量收進倉庫"
+        "解釋抗利尿激素（ADH） × 血量：血變少 → 壓力感受器（baroreceptor） → 抗利尿激素（ADH） 升",
+        "解釋改變 抗利尿激素（ADH） 分泌的因素（升的、降的）",
+        "解釋胰島素（Insulin） 的功能：降血糖、把多餘能量收進倉庫"
       ],
       "steps": [
         {
           "type": "intro",
-          "title": "第 2 站：兩個必考腺體——ADH 與 Insulin",
-          "body": "考試範圍鎖定兩個例子：後葉的 ADH（抗利尿激素）怎麼被血量與各種因素調控；胰島素 Insulin 怎麼降血糖、把多餘能量收進倉庫。\n\n- ADH 第一招：血量掉了，靠壓力感受器把 ADH 拉高，留住水。\n- ADH 第二招：認得一串會改變 ADH 分泌的因素（升的、降的）。\n- Insulin：主功能是降血糖、把養分收進肝/肌肉/脂肪。\n- 把 Insulin 的分泌刺激與整體迴路串起來。"
+          "title": "第 2 站：兩個必考腺體——抗利尿激素（ADH） 與 胰島素（Insulin）",
+          "body": "考試範圍鎖定兩個例子：後葉的 ADH（抗利尿激素）怎麼被血量與各種因素調控；胰島素 （Insulin） 怎麼降血糖、把多餘能量收進倉庫。\n\n- 抗利尿激素（ADH） 第一招：血量掉了，靠壓力感受器把 抗利尿激素 拉高，留住水。\n- 抗利尿激素 第二招：認得一串會改變 抗利尿激素 分泌的因素（升的、降的）。\n- 胰島素（Insulin）：主功能是降血糖、把養分收進肝/肌肉/脂肪。\n- 把 胰島素 的分泌刺激與整體迴路串起來。"
         },
         {
           "type": "card",
-          "title": "ADH × 血量：血變少 → baroreceptor → ADH 升",
-          "body": "**連到前一觀念**\n先看 ADH 最核心的觸發：血量。\n\n**觀念**\n當血量下降約 8-10%（例如出血 hemorrhage），壓力感受器（baroreceptor）偵測到後，會讓 ADH（抗利尿激素）大幅上升，命令腎臟多留水以維持血量。\n\n**為什麼**\nADH 作用走 V2 受體（Gq）。血量小幅變化時 ADH 變化不大，但一旦掉超過約 8-10%，ADH 會陡升（救命機制）。偵測點就是三個 baroreceptor：頸動脈竇 carotid sinus、主動脈弓 aortic arch、左心房 left atrium。\n\n**考試角度**\n- 觸發：血量↓ 約 8-10%（如出血）→ ADH ↑↑\n- 三個 baroreceptor：carotid sinus、aortic arch、left atrium\n- ADH 留水 → 維持血量／血壓\n\n**易錯與比較**\n血量要掉到一定程度（~8-10%）ADH 才明顯上升；小變化主要由血漿滲透壓那條路徑管。",
+          "title": "抗利尿激素（ADH） × 血量：血變少 → 壓力感受器（baroreceptor） → 抗利尿激素（ADH） 升",
+          "body": "**連到前一觀念**\n先看 抗利尿激素（ADH） 最核心的觸發：血量。\n\n**觀念**\n當血量下降約 8-10%（例如出血 hemorrhage），壓力感受器（baroreceptor）偵測到後，會讓 ADH（抗利尿激素）大幅上升，命令腎臟多留水以維持血量。\n\n**為什麼**\n抗利尿激素 作用走 V2 受體（Gq）。血量小幅變化時 抗利尿激素 變化不大，但一旦掉超過約 8-10%，抗利尿激素 會陡升（救命機制）。偵測點就是三個 壓力感受器（baroreceptor）：頸動脈竇 carotid sinus、主動脈弓 aortic arch、左心房 left atrium。\n\n**考試角度**\n- 觸發：血量↓ 約 8-10%（如出血）→ 抗利尿激素 ↑↑\n- 三個 壓力感受器：carotid sinus、aortic arch、left atrium\n- 抗利尿激素 留水 → 維持血量／血壓\n\n**易錯與比較**\n血量要掉到一定程度（~8-10%）抗利尿激素 才明顯上升；小變化主要由血漿滲透壓那條路徑管。",
           "keys": [
-            "觸發：血量↓ 約 8-10%（如出血）→ ADH ↑↑",
-            "三個 baroreceptor：carotid sinus、aortic arch、left atrium",
-            "ADH 留水 → 維持血量／血壓"
+            "觸發：血量↓ 約 8-10%（如出血）→ 抗利尿激素（ADH） ↑↑",
+            "三個 壓力感受器（baroreceptor）：carotid sinus、aortic arch、left atrium",
+            "抗利尿激素（ADH） 留水 → 維持血量／血壓"
           ],
-          "tip": "血量要掉到一定程度（~8-10%）ADH 才明顯上升；小變化主要由血漿滲透壓那條路徑管。"
+          "tip": "血量要掉到一定程度（~8-10%）抗利尿激素（ADH） 才明顯上升；小變化主要由血漿滲透壓那條路徑管。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "大量失血使血量明顯下降時，ADH 會如何變化、靠什麼偵測？",
+          "q": "大量失血使血量明顯下降時，抗利尿激素（ADH） 會如何變化、靠什麼偵測？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "血量↓約 8-10% 由 baroreceptor（頸動脈竇/主動脈弓/左心房）偵測 → ADH↑ 留水。\n\n正確選項：ADH 上升，由 baroreceptor 偵測。\n當血量下降約 8-10%（例如出血 hemorrhage），壓力感受器（baroreceptor）偵測到後，會讓 ADH（抗利尿激素）大幅上升，命令腎臟多留水以維持血量。",
+          "explain": "血量↓約 8-10% 由 壓力感受器（baroreceptor）（頸動脈竇/主動脈弓/左心房）偵測 → 抗利尿激素（ADH）↑ 留水。\n\n正確選項：抗利尿激素（ADH） 上升，由 壓力感受器（baroreceptor） 偵測。\n當血量下降約 8-10%（例如出血 hemorrhage），壓力感受器（baroreceptor）偵測到後，會讓 ADH（抗利尿激素）大幅上升，命令腎臟多留水以維持血量。",
           "choices": [
-            "ADH 上升，由 baroreceptor 偵測",
-            "ADH 下降，由化學受體偵測",
-            "ADH 不變",
-            "ADH 上升但與感受器無關"
-          ]
+            "抗利尿激素（ADH） 上升，由 壓力感受器（baroreceptor） 偵測",
+            "抗利尿激素（ADH） 下降，由化學受體偵測",
+            "抗利尿激素（ADH） 不變",
+            "抗利尿激素（ADH） 上升但與感受器無關"
+          ],
+          "id": "c7dfd8d5e"
         },
         {
           "type": "card",
-          "title": "改變 ADH 分泌的因素（升的、降的）",
-          "body": "**連到前一觀念**\n除了血量，還有一串因素會調 ADH，常考。\n\n**觀念**\n升 ADH：女性>男性、黃體期/懷孕（降低釋放門檻）、年長>年輕、運動/壓力/疼痛/恐懼（同時 ↑ADH 並走 CRH-ACTH-cortisol）。降 ADH：酒精（抑制分泌→脫水）、咖啡因（阻斷 ADH 在腎集尿管的 V2 受體）。\n\n**為什麼**\n酒精抑制 ADH，所以喝酒會一直排尿、容易脫水；咖啡因不是抑制分泌，而是擋住 ADH 的 V2 受體作用，效果都是利尿。\n\n**考試角度**\n- ↑ADH：♀>♂、黃體期/懷孕（門檻↓）、年長>年輕、運動/壓力/痛/恐懼\n- 壓力 → ↑ADH 並 → CRH-ACTH-cortisol↑\n- ↓ADH：酒精（抑制分泌、致脫水）、咖啡因（阻斷腎 V2 受體）\n\n**易錯與比較**\n酒精是『抑制 ADH 分泌』；咖啡因是『阻斷 V2 受體』——機制不同但都讓你多尿。",
+          "title": "改變 抗利尿激素（ADH） 分泌的因素（升的、降的）",
+          "body": "**連到前一觀念**\n除了血量，還有一串因素會調 抗利尿激素（ADH），常考。\n\n**觀念**\n升 抗利尿激素：女性>男性、黃體期/懷孕（降低釋放門檻）、年長>年輕、運動/壓力/疼痛/恐懼（同時 ↑ADH 並走 CRH-ACTH-cortisol）。降 抗利尿激素：酒精（抑制分泌→脫水）、咖啡因（阻斷 ADH 在腎集尿管的 V2 受體）。\n\n**為什麼**\n酒精抑制 抗利尿激素，所以喝酒會一直排尿、容易脫水；咖啡因不是抑制分泌，而是擋住 抗利尿激素 的 V2 受體作用，效果都是利尿。\n\n**考試角度**\n- ↑抗利尿激素：♀>♂、黃體期/懷孕（門檻↓）、年長>年輕、運動/壓力/痛/恐懼\n- 壓力 → ↑抗利尿激素 並 → 促腎上腺皮質素釋放激素（CRH）-促腎上腺皮質激素（ACTH）-cortisol↑\n- ↓抗利尿激素：酒精（抑制分泌、致脫水）、咖啡因（阻斷腎 V2 受體）\n\n**易錯與比較**\n酒精是『抑制 抗利尿激素 分泌』；咖啡因是『阻斷 V2 受體』——機制不同但都讓你多尿。",
           "keys": [
-            "↑ADH：♀>♂、黃體期/懷孕（門檻↓）、年長>年輕、運動/壓力/痛/恐懼",
-            "壓力 → ↑ADH 並 → CRH-ACTH-cortisol↑",
-            "↓ADH：酒精（抑制分泌、致脫水）、咖啡因（阻斷腎 V2 受體）"
+            "↑抗利尿激素（ADH）：♀>♂、黃體期/懷孕（門檻↓）、年長>年輕、運動/壓力/痛/恐懼",
+            "壓力 → ↑抗利尿激素（ADH） 並 → 促腎上腺皮質素釋放激素（CRH）-促腎上腺皮質激素（ACTH）-cortisol↑",
+            "↓抗利尿激素（ADH）：酒精（抑制分泌、致脫水）、咖啡因（阻斷腎 V2 受體）"
           ],
-          "tip": "酒精是『抑制 ADH 分泌』；咖啡因是『阻斷 V2 受體』——機制不同但都讓你多尿。"
+          "tip": "酒精是『抑制 抗利尿激素（ADH） 分泌』；咖啡因是『阻斷 V2 受體』——機制不同但都讓你多尿。"
         },
         {
           "type": "check",
@@ -377,21 +395,22 @@
           "q": "酒精造成利尿、容易脫水，最主要是因為？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "酒精是 ADH 分泌的抑制劑，ADH↓ → 腎少留水 → 利尿、脫水。咖啡因才是阻斷 V2 受體。\n\n正確選項：抑制 ADH 分泌。\n升 ADH：女性>男性、黃體期/懷孕（降低釋放門檻）、年長>年輕、運動/壓力/疼痛/恐懼（同時 ↑ADH 並走 CRH-ACTH-cortisol）。降 ADH：酒精（抑制分泌→脫水）、咖啡因（阻斷 ADH 在腎集尿管的 V2 受體）。",
+          "explain": "酒精是 抗利尿激素（ADH） 分泌的抑制劑，抗利尿激素（ADH）↓ → 腎少留水 → 利尿、脫水。咖啡因才是阻斷 V2 受體。\n\n正確選項：抑制 抗利尿激素（ADH） 分泌。\n升 抗利尿激素（ADH）：女性>男性、黃體期/懷孕（降低釋放門檻）、年長>年輕、運動/壓力/疼痛/恐懼（同時 ↑ADH 並走 CRH-ACTH-cortisol）。降 抗利尿激素（ADH）：酒精（抑制分泌→脫水）、咖啡因（阻斷 ADH 在腎集尿管的 V2 受體）。",
           "choices": [
-            "抑制 ADH 分泌",
+            "抑制 抗利尿激素（ADH） 分泌",
             "阻斷 V2 受體",
-            "增加 ADH 分泌",
+            "增加 抗利尿激素（ADH） 分泌",
             "增加醛固酮"
-          ]
+          ],
+          "id": "ca2a134c1"
         },
         {
           "type": "card",
-          "title": "Insulin 的功能：降血糖、把多餘能量收進倉庫",
-          "body": "**連到前一觀念**\n第二個必考腺體：胰臟的胰島素。\n\n**觀念**\n胰島素 Insulin 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。\n\n**為什麼**\n胰島素一來，肝、肌肉、脂肪這三大倉庫就把血裡的葡萄糖、脂肪酸、甘油、酮體、胺基酸抓進細胞、合成肝醣/脂肪/蛋白儲存起來，血糖因此下降。可以記成『同化（合成、儲存）荷爾蒙』。\n\n**考試角度**\n- 主功能：降血糖；是儲存多餘能量最重要的控制者\n- 三大標的：liver、skeletal muscle、adipose tissue\n- 促進攝取/儲存：葡萄糖、脂肪酸、甘油、酮體、胺基酸\n\n**易錯與比較**\n胰島素是蛋白質類荷爾蒙（水溶）→ 不能口服（會被消化），糖尿病要用注射。",
+          "title": "胰島素（Insulin） 的功能：降血糖、把多餘能量收進倉庫",
+          "body": "**連到前一觀念**\n第二個必考腺體：胰臟的胰島素。\n\n**觀念**\n胰島素 （Insulin） 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。\n\n**為什麼**\n胰島素一來，肝、肌肉、脂肪這三大倉庫就把血裡的葡萄糖、脂肪酸、甘油、酮體、胺基酸抓進細胞、合成肝醣/脂肪/蛋白儲存起來，血糖因此下降。可以記成『同化（合成、儲存）荷爾蒙』。\n\n**考試角度**\n- 主功能：降血糖；是儲存多餘能量最重要的控制者\n- 三大標的：liver、骨骼肌（skeletal muscle）、adipose tissue\n- 促進攝取/儲存：葡萄糖、脂肪酸、甘油、酮體、胺基酸\n\n**易錯與比較**\n胰島素是蛋白質類荷爾蒙（水溶）→ 不能口服（會被消化），糖尿病要用注射。",
           "keys": [
             "主功能：降血糖；是儲存多餘能量最重要的控制者",
-            "三大標的：liver、skeletal muscle、adipose tissue",
+            "三大標的：liver、骨骼肌（skeletal muscle）、adipose tissue",
             "促進攝取/儲存：葡萄糖、脂肪酸、甘油、酮體、胺基酸"
           ],
           "tip": "胰島素是蛋白質類荷爾蒙（水溶）→ 不能口服（會被消化），糖尿病要用注射。"
@@ -402,28 +421,29 @@
           "q": "胰島素的主要功能與標的，下列何者正確？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "胰島素降血糖、把養分收進三大倉庫：肝、骨骼肌、脂肪組織。\n\n正確選項：降血糖；作用於肝、骨骼肌、脂肪。\n胰島素 Insulin 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。",
+          "explain": "胰島素降血糖、把養分收進三大倉庫：肝、骨骼肌、脂肪組織。\n\n正確選項：降血糖；作用於肝、骨骼肌、脂肪。\n胰島素 （Insulin） 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。",
           "choices": [
             "降血糖；作用於肝、骨骼肌、脂肪",
             "升血糖；作用於腦",
             "降血糖；只作用於腎",
             "升血糖；作用於肌肉"
-          ]
+          ],
+          "id": "c1d0012e3"
         },
         {
           "type": "example",
-          "title": "範例拆解：Insulin 的功能：降血糖、把多餘能量收進倉庫",
+          "title": "範例拆解：胰島素（Insulin） 的功能：降血糖、把多餘能量收進倉庫",
           "problem": "胰島素的主要功能與標的，下列何者正確？\n\nA. 降血糖；作用於肝、骨骼肌、脂肪\nB. 升血糖；作用於腦\nC. 降血糖；只作用於腎\nD. 升血糖；作用於肌肉",
           "steps": [
-            "先確認題目問的主題：Insulin 的功能：降血糖、把多餘能量收進倉庫",
-            "胰島素 Insulin 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。",
-            "把判斷依據連回題目：胰島素降血糖、把養分收進三大倉庫：肝、骨骼肌、脂肪組織。\n\n正確選項：降血糖；作用於肝、骨骼肌、脂肪。\n胰島素 Insulin 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。"
+            "先確認題目問的主題：胰島素（Insulin） 的功能：降血糖、把多餘能量收進倉庫",
+            "胰島素 （Insulin） 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。",
+            "把判斷依據連回題目：胰島素降血糖、把養分收進三大倉庫：肝、骨骼肌、脂肪組織。\n\n正確選項：降血糖；作用於肝、骨骼肌、脂肪。\n胰島素 （Insulin） 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。"
           ],
           "answer": "降血糖；作用於肝、骨骼肌、脂肪"
         },
         {
           "type": "practice",
-          "title": "實戰：第 2 站：兩個必考腺體——ADH 與 Insulin",
+          "title": "實戰：第 2 站：兩個必考腺體——抗利尿激素（ADH） 與 胰島素（Insulin）",
           "qids": [
             "s114-physio-course114-u16-phys-16-01",
             "s114-physio-course114-u16-phys-16-02"
@@ -434,56 +454,62 @@
               "q": "酒精造成利尿、容易脫水，最主要是因為？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "酒精是 ADH 分泌的抑制劑，ADH↓ → 腎少留水 → 利尿、脫水。咖啡因才是阻斷 V2 受體。\n\n正確選項：抑制 ADH 分泌。\n升 ADH：女性>男性、黃體期/懷孕（降低釋放門檻）、年長>年輕、運動/壓力/疼痛/恐懼（同時 ↑ADH 並走 CRH-ACTH-cortisol）。降 ADH：酒精（抑制分泌→脫水）、咖啡因（阻斷 ADH 在腎集尿管的 V2 受體）。",
+              "explain": "酒精是 抗利尿激素（ADH） 分泌的抑制劑，抗利尿激素（ADH）↓ → 腎少留水 → 利尿、脫水。咖啡因才是阻斷 V2 受體。\n\n正確選項：抑制 抗利尿激素（ADH） 分泌。\n升 抗利尿激素（ADH）：女性>男性、黃體期/懷孕（降低釋放門檻）、年長>年輕、運動/壓力/疼痛/恐懼（同時 ↑ADH 並走 CRH-ACTH-cortisol）。降 抗利尿激素（ADH）：酒精（抑制分泌→脫水）、咖啡因（阻斷 ADH 在腎集尿管的 V2 受體）。",
               "choices": [
-                "抑制 ADH 分泌",
+                "抑制 抗利尿激素（ADH） 分泌",
                 "阻斷 V2 受體",
-                "增加 ADH 分泌",
+                "增加 抗利尿激素（ADH） 分泌",
                 "增加醛固酮"
-              ]
+              ],
+              "id": "ca2a134c1"
             },
             {
               "kind": "single",
               "q": "胰島素的主要功能與標的，下列何者正確？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "胰島素降血糖、把養分收進三大倉庫：肝、骨骼肌、脂肪組織。\n\n正確選項：降血糖；作用於肝、骨骼肌、脂肪。\n胰島素 Insulin 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。",
+              "explain": "胰島素降血糖、把養分收進三大倉庫：肝、骨骼肌、脂肪組織。\n\n正確選項：降血糖；作用於肝、骨骼肌、脂肪。\n胰島素 （Insulin） 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。",
               "choices": [
                 "降血糖；作用於肝、骨骼肌、脂肪",
                 "升血糖；作用於腦",
                 "降血糖；只作用於腎",
                 "升血糖；作用於肌肉"
-              ]
+              ],
+              "id": "c1d0012e3"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "觸發：血量↓ 約 8-10%（如出血）→ ADH ↑↑",
-            "三個 baroreceptor：carotid sinus、aortic arch、left atrium",
-            "↑ADH：♀>♂、黃體期/懷孕（門檻↓）、年長>年輕、運動/壓力/痛/恐懼",
-            "壓力 → ↑ADH 並 → CRH-ACTH-cortisol↑",
+            "觸發：血量↓ 約 8-10%（如出血）→ 抗利尿激素（ADH） ↑↑",
+            "三個 壓力感受器（baroreceptor）：carotid sinus、aortic arch、left atrium",
+            "↑抗利尿激素（ADH）：♀>♂、黃體期/懷孕（門檻↓）、年長>年輕、運動/壓力/痛/恐懼",
+            "壓力 → ↑抗利尿激素（ADH） 並 → 促腎上腺皮質素釋放激素（CRH）-促腎上腺皮質激素（ACTH）-cortisol↑",
             "主功能：降血糖；是儲存多餘能量最重要的控制者",
-            "三大標的：liver、skeletal muscle、adipose tissue",
-            "血量↓8-10% → baroreceptor（carotid sinus / aortic arch / left atrium）→ ADH↑ 留水 → 壓力痛恐懼↑、酒精/咖啡因↓ → Insulin 降血糖、把糖/胺基酸/脂肪收進肝/肌/脂肪倉庫。"
+            "三大標的：liver、骨骼肌（skeletal muscle）、adipose tissue",
+            "血量↓8-10% → 壓力感受器（baroreceptor）（carotid sinus / aortic arch / left atrium）→ 抗利尿激素（ADH）↑ 留水 → 壓力痛恐懼↑、酒精/咖啡因↓ → 胰島素（Insulin） 降血糖、把糖/胺基酸/脂肪收進肝/肌/脂肪倉庫。"
           ],
           "flash": [
             {
-              "front": "ADH × 血量：血變少 → baroreceptor → ADH 升",
-              "back": "當血量下降約 8-10%（例如出血 hemorrhage），壓力感受器（baroreceptor）偵測到後，會讓 ADH（抗利尿激素）大幅上升，命令腎臟多留水以維持血量。"
+              "front": "抗利尿激素（ADH） × 血量：血變少 → 壓力感受器（baroreceptor） → 抗利尿激素（ADH） 升",
+              "back": "當血量下降約 8-10%（例如出血 hemorrhage），壓力感受器（baroreceptor）偵測到後，會讓 ADH（抗利尿激素）大幅上升，命令腎臟多留水以維持血量。",
+              "id": "fcb8bf67c"
             },
             {
-              "front": "改變 ADH 分泌的因素（升的、降的）",
-              "back": "升 ADH：女性>男性、黃體期/懷孕（降低釋放門檻）、年長>年輕、運動/壓力/疼痛/恐懼（同時 ↑ADH 並走 CRH-ACTH-cortisol）。降 ADH：酒精（抑制分泌→脫水）、咖啡因（阻斷 ADH 在腎集尿管的 V2 受體）。"
+              "front": "改變 抗利尿激素（ADH） 分泌的因素（升的、降的）",
+              "back": "升 抗利尿激素（ADH）：女性>男性、黃體期/懷孕（降低釋放門檻）、年長>年輕、運動/壓力/疼痛/恐懼（同時 ↑ADH 並走 CRH-ACTH-cortisol）。降 抗利尿激素（ADH）：酒精（抑制分泌→脫水）、咖啡因（阻斷 ADH 在腎集尿管的 V2 受體）。",
+              "id": "f81d7c7d1"
             },
             {
-              "front": "Insulin 的功能：降血糖、把多餘能量收進倉庫",
-              "back": "胰島素 Insulin 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。"
+              "front": "胰島素（Insulin） 的功能：降血糖、把多餘能量收進倉庫",
+              "back": "胰島素 （Insulin） 的主要功能是降低血糖；它是調控有機物代謝、把多餘能量『存起來』最重要的荷爾蒙。主要作用標的是肝臟、骨骼肌、脂肪組織。",
+              "id": "fc64b97a3"
             },
             {
-              "front": "大量失血使血量明顯下降時，ADH 會如何變化、靠什麼偵測？",
-              "back": "血量↓約 8-10% 由 baroreceptor（頸動脈竇/主動脈弓/左心房）偵測 → ADH↑ 留水。\n\n正確選項：ADH 上升，由 baroreceptor 偵測。\n當血量下降約 8-10%（例如出血 hemorrhage），壓力感受器（baroreceptor）偵測到後，會讓 ADH（抗利尿激素）大幅上升，命令腎臟多留水以維持血量。"
+              "front": "大量失血使血量明顯下降時，抗利尿激素（ADH） 會如何變化、靠什麼偵測？",
+              "back": "血量↓約 8-10% 由 壓力感受器（baroreceptor）（頸動脈竇/主動脈弓/左心房）偵測 → 抗利尿激素（ADH）↑ 留水。\n\n正確選項：抗利尿激素（ADH） 上升，由 壓力感受器（baroreceptor） 偵測。\n當血量下降約 8-10%（例如出血 hemorrhage），壓力感受器（baroreceptor）偵測到後，會讓 ADH（抗利尿激素）大幅上升，命令腎臟多留水以維持血量。",
+              "id": "f7dfd8d5e"
             }
           ]
         }
@@ -491,19 +517,19 @@
     },
     {
       "id": "endo-adh-insulin-2",
-      "title": "第 2 站：兩個必考腺體——ADH 與 Insulin（2）",
+      "title": "第 2 站：兩個必考腺體——抗利尿激素（ADH） 與 胰島素（Insulin）（2）",
       "goals": [
-        "解釋Insulin 的分泌刺激與整體迴路"
+        "解釋胰島素（Insulin） 的分泌刺激與整體迴路"
       ],
       "steps": [
         {
           "type": "intro",
-          "title": "第 2 站：兩個必考腺體——ADH 與 Insulin",
-          "body": "考試範圍鎖定兩個例子：後葉的 ADH（抗利尿激素）怎麼被血量與各種因素調控；胰島素 Insulin 怎麼降血糖、把多餘能量收進倉庫。\n\n- ADH 第一招：血量掉了，靠壓力感受器把 ADH 拉高，留住水。\n- ADH 第二招：認得一串會改變 ADH 分泌的因素（升的、降的）。\n- Insulin：主功能是降血糖、把養分收進肝/肌肉/脂肪。\n- 把 Insulin 的分泌刺激與整體迴路串起來。"
+          "title": "第 2 站：兩個必考腺體——抗利尿激素（ADH） 與 胰島素（Insulin）",
+          "body": "考試範圍鎖定兩個例子：後葉的 ADH（抗利尿激素）怎麼被血量與各種因素調控；胰島素 （Insulin） 怎麼降血糖、把多餘能量收進倉庫。\n\n- 抗利尿激素（ADH） 第一招：血量掉了，靠壓力感受器把 抗利尿激素 拉高，留住水。\n- 抗利尿激素 第二招：認得一串會改變 抗利尿激素 分泌的因素（升的、降的）。\n- 胰島素（Insulin）：主功能是降血糖、把養分收進肝/肌肉/脂肪。\n- 把 胰島素 的分泌刺激與整體迴路串起來。"
         },
         {
           "type": "card",
-          "title": "Insulin 的分泌刺激與整體迴路",
+          "title": "胰島素（Insulin） 的分泌刺激與整體迴路",
           "body": "**連到前一觀念**\n最後把『什麼會叫胰島素出來、它又做了什麼』串成一圈。\n\n**觀念**\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。\n\n**為什麼**\n吃飽後血糖/胺基酸上升 → 刺激 β 細胞放胰島素 → 肝肌脂肪把養分收走儲存 → 血中養分降回 → 刺激減弱、胰島素回落。這就是維持血糖穩定的核心迴路。\n\n**考試角度**\n- 分泌刺激：glucose、amino acids、fatty acids、ketoacids 上升\n- 胰島素 → 促攝取/代謝/儲存 → 血中養分↓\n- 屬負回饋：養分↑→胰島素↑→養分↓→胰島素↓",
           "keys": [
             "分泌刺激：glucose、amino acids、fatty acids、ketoacids 上升",
@@ -522,14 +548,15 @@
           "choices": [
             "血中葡萄糖、胺基酸上升",
             "血糖下降",
-            "ADH 上升",
+            "抗利尿激素（ADH） 上升",
             "血量下降"
-          ]
+          ],
+          "id": "cd33572c7"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n下列何者會刺激胰島素分泌？\n\nA. 血中葡萄糖、胺基酸上升\nB. 血糖下降\nC. ADH 上升\nD. 血量下降\n\n**判斷步驟**\n- 先確認題目問的主題：Insulin 的分泌刺激與整體迴路\n- 血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。\n- 把判斷依據連回題目：餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。\n\n**結論與依據**\n血中葡萄糖、胺基酸上升",
+          "body": "**情境**\n下列何者會刺激胰島素分泌？\n\nA. 血中葡萄糖、胺基酸上升\nB. 血糖下降\nC. 抗利尿激素（ADH） 上升\nD. 血量下降\n\n**判斷步驟**\n- 先確認題目問的主題：胰島素（Insulin） 的分泌刺激與整體迴路\n- 血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。\n- 把判斷依據連回題目：餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。\n\n**結論與依據**\n血中葡萄糖、胺基酸上升",
           "keys": [
             "血中葡萄糖、胺基酸上升"
           ]
@@ -540,14 +567,15 @@
           "q": "解釋這個結論所用的條件或判斷依據。",
           "answer": "血中葡萄糖、胺基酸上升",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：Insulin 的分泌刺激與整體迴路\n- 血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。\n- 把判斷依據連回題目：餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。"
+          "explain": "- 先確認題目問的主題：胰島素（Insulin） 的分泌刺激與整體迴路\n- 血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。\n- 把判斷依據連回題目：餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。",
+          "id": "cbbf785bc"
         },
         {
           "type": "example",
-          "title": "範例拆解：Insulin 的分泌刺激與整體迴路",
-          "problem": "下列何者會刺激胰島素分泌？\n\nA. 血中葡萄糖、胺基酸上升\nB. 血糖下降\nC. ADH 上升\nD. 血量下降",
+          "title": "範例拆解：胰島素（Insulin） 的分泌刺激與整體迴路",
+          "problem": "下列何者會刺激胰島素分泌？\n\nA. 血中葡萄糖、胺基酸上升\nB. 血糖下降\nC. 抗利尿激素（ADH） 上升\nD. 血量下降",
           "steps": [
-            "先確認題目問的主題：Insulin 的分泌刺激與整體迴路",
+            "先確認題目問的主題：胰島素（Insulin） 的分泌刺激與整體迴路",
             "血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。",
             "把判斷依據連回題目：餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。"
           ],
@@ -555,7 +583,7 @@
         },
         {
           "type": "practice",
-          "title": "實戰：第 2 站：兩個必考腺體——ADH 與 Insulin",
+          "title": "實戰：第 2 站：兩個必考腺體——抗利尿激素（ADH） 與 胰島素（Insulin）",
           "qids": [
             "s114-physio-course114-u16-phys-16-04",
             "s114-physio-course114-u16-phys-16-05"
@@ -570,9 +598,10 @@
               "choices": [
                 "血中葡萄糖、胺基酸上升",
                 "血糖下降",
-                "ADH 上升",
+                "抗利尿激素（ADH） 上升",
                 "血量下降"
-              ]
+              ],
+              "id": "cd33572c7"
             }
           ]
         },
@@ -581,26 +610,30 @@
           "points": [
             "分泌刺激：glucose、amino acids、fatty acids、ketoacids 上升",
             "胰島素 → 促攝取/代謝/儲存 → 血中養分↓",
-            "血量↓8-10% → baroreceptor（carotid sinus / aortic arch / left atrium）→ ADH↑ 留水 → 壓力痛恐懼↑、酒精/咖啡因↓ → Insulin 降血糖、把糖/胺基酸/脂肪收進肝/肌/脂肪倉庫。",
-            "Insulin 的分泌刺激與整體迴路：分泌刺激：glucose、amino acids、fatty acids、ketoacids 上升",
+            "血量↓8-10% → 壓力感受器（baroreceptor）（carotid sinus / aortic arch / left atrium）→ 抗利尿激素（ADH）↑ 留水 → 壓力痛恐懼↑、酒精/咖啡因↓ → 胰島素（Insulin） 降血糖、把糖/胺基酸/脂肪收進肝/肌/脂肪倉庫。",
+            "胰島素（Insulin） 的分泌刺激與整體迴路：分泌刺激：glucose、amino acids、fatty acids、ketoacids 上升",
             "餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。"
           ],
           "flash": [
             {
-              "front": "Insulin 的分泌刺激與整體迴路",
-              "back": "血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。"
+              "front": "胰島素（Insulin） 的分泌刺激與整體迴路",
+              "back": "血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。",
+              "id": "f4bcec25d"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：Insulin 的分泌刺激與整體迴路\n- 血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。\n- 把判斷依據連回題目：餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。"
+              "back": "- 先確認題目問的主題：胰島素（Insulin） 的分泌刺激與整體迴路\n- 血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。\n- 把判斷依據連回題目：餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。",
+              "id": "fbbf785bc"
             },
             {
               "front": "下列何者會刺激胰島素分泌？",
-              "back": "餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。"
+              "back": "餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。",
+              "id": "fd33572c7"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：Insulin 的分泌刺激與整體迴路\n- 血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。\n- 把判斷依據連回題目：餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。"
+              "back": "- 先確認題目問的主題：胰島素（Insulin） 的分泌刺激與整體迴路\n- 血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。\n- 把判斷依據連回題目：餐後血中葡萄糖、胺基酸（也含脂肪酸、酮酸）上升會刺激胰島素分泌，促進攝取儲存。\n\n正確選項：血中葡萄糖、胺基酸上升。\n血中養分變多（葡萄糖、胺基酸、脂肪酸、酮酸）會刺激胰島素分泌；胰島素再促進各組織攝取、代謝、儲存這些養分，使血中養分回降——形成一個負回饋的調控迴路。",
+              "id": "fbbf785bc"
             }
           ]
         }
@@ -612,7 +645,7 @@
       "goals": [
         "解釋必記與易錯",
         "解釋急速重點：荷爾蒙三大類",
-        "解釋急速重點：Peptide hormone 合成"
+        "解釋急速重點：胜肽荷爾蒙（Peptide hormone） 合成"
       ],
       "steps": [
         {
@@ -623,7 +656,7 @@
         {
           "type": "card",
           "title": "必記與易錯",
-          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\nmustKnow：- 荷爾蒙：血液運送、量極微（10⁻⁶~10⁻¹² g/ml）、靠受體、>200 種；判斷起手式先問水溶/脂溶。\n- 水溶（蛋白質/胺類）→ 膜受體＋二級傳訊、快、短、不可口服；脂溶（類固醇）→ 核內受體調 DNA、慢、長、可口服。\n- 蛋白質類 vs 類固醇類比較表（前驅物/溶解度/血中/t½/儲存/受體/訊號/口服）要整張記。\n- Eicosanoids＝arachidonic acid（20:4 ω6）衍生的脂溶局部荷爾蒙。\n- ADH：血量↓8-10%→baroreceptor（carotid sinus/aortic arch/left atrium）→ADH↑；酒精抑制分泌、咖啡因阻斷 V2。\n- Insulin：降血糖、儲能；標的肝/骨骼肌/脂肪；蛋白質類不可口服要注射。\ntraps：- 荷爾蒙有沒有作用看『有沒有受體』，不是看血中濃度。\n- 可口服的是類固醇類（脂溶耐消化）；蛋白質類（如胰島素）口服會被分解。\n- 酒精是『抑制 ADH 分泌』、咖啡因是『阻斷 V2 受體』，機制不同。\n- 甲狀腺素是胺類中偏脂溶的例外。",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\nmustKnow：- 荷爾蒙：血液運送、量極微（10⁻⁶~10⁻¹² g/ml）、靠受體、>200 種；判斷起手式先問水溶/脂溶。\n- 水溶（蛋白質/胺類）→ 膜受體＋二級傳訊、快、短、不可口服；脂溶（類固醇）→ 核內受體調 DNA、慢、長、可口服。\n- 蛋白質類 vs 類固醇類比較表（前驅物/溶解度/血中/t½/儲存/受體/訊號/口服）要整張記。\n- 類二十烷酸（Eicosanoids）＝花生四烯酸（arachidonic acid）（20:4 ω6）衍生的脂溶局部荷爾蒙。\n- 抗利尿激素（ADH）：血量↓8-10%→壓力感受器（baroreceptor）（carotid sinus/aortic arch/left atrium）→抗利尿激素↑；酒精抑制分泌、咖啡因阻斷 V2。\n- 胰島素（Insulin）：降血糖、儲能；標的肝/骨骼肌/脂肪；蛋白質類不可口服要注射。\ntraps：- 荷爾蒙有沒有作用看『有沒有受體』，不是看血中濃度。\n- 可口服的是類固醇類（脂溶耐消化）；蛋白質類（如胰島素）口服會被分解。\n- 酒精是『抑制 抗利尿激素 分泌』、咖啡因是『阻斷 V2 受體』，機制不同。\n- 甲狀腺素是胺類中偏脂溶的例外。",
           "keys": [
             "把本單元的關係串起來，確認易錯条件與方向。"
           ],
@@ -633,14 +666,15 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
-          "answer": "mustKnow：- 荷爾蒙：血液運送、量極微（10⁻⁶~10⁻¹² g/ml）、靠受體、>200 種；判斷起手式先問水溶/脂溶。\n- 水溶（蛋白質/胺類）→ 膜受體＋二級傳訊、快、短、不可口服；脂溶（類固醇）→ 核內受體調 DNA、慢、長、可口服。\n- 蛋白質類 vs 類固醇類比較表（前驅物/溶解度/血中/t½/儲存/受體/訊號/口服）要整張記。\n- Eicosanoids＝arachidonic acid（20:4 ω6）衍生的脂溶局部荷爾蒙。\n- ADH：血量↓8-10%→baroreceptor（carotid sinus/aortic arch/left atrium）→ADH↑；酒精抑制分泌、咖啡因阻斷 V2。\n- Insulin：降血糖、儲能；標的肝/骨骼肌/脂肪；蛋白質類不可口服要注射。\ntraps：- 荷爾蒙有沒有作用看『有沒有受體』，不是看血中濃度。\n- 可口服的是類固醇類（脂溶耐消化）；蛋白質類（如胰島素）口服會被分解。\n- 酒精是『抑制 ADH 分泌』、咖啡因是『阻斷 V2 受體』，機制不同。\n- 甲狀腺素是胺類中偏脂溶的例外。",
+          "answer": "mustKnow：- 荷爾蒙：血液運送、量極微（10⁻⁶~10⁻¹² g/ml）、靠受體、>200 種；判斷起手式先問水溶/脂溶。\n- 水溶（蛋白質/胺類）→ 膜受體＋二級傳訊、快、短、不可口服；脂溶（類固醇）→ 核內受體調 DNA、慢、長、可口服。\n- 蛋白質類 vs 類固醇類比較表（前驅物/溶解度/血中/t½/儲存/受體/訊號/口服）要整張記。\n- 類二十烷酸（Eicosanoids）＝花生四烯酸（arachidonic acid）（20:4 ω6）衍生的脂溶局部荷爾蒙。\n- 抗利尿激素（ADH）：血量↓8-10%→壓力感受器（baroreceptor）（carotid sinus/aortic arch/left atrium）→抗利尿激素（ADH）↑；酒精抑制分泌、咖啡因阻斷 V2。\n- 胰島素（Insulin）：降血糖、儲能；標的肝/骨骼肌/脂肪；蛋白質類不可口服要注射。\ntraps：- 荷爾蒙有沒有作用看『有沒有受體』，不是看血中濃度。\n- 可口服的是類固醇類（脂溶耐消化）；蛋白質類（如胰島素）口服會被分解。\n- 酒精是『抑制 抗利尿激素（ADH） 分泌』、咖啡因是『阻斷 V2 受體』，機制不同。\n- 甲狀腺素是胺類中偏脂溶的例外。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "mustKnow：- 荷爾蒙：血液運送、量極微（10⁻⁶~10⁻¹² g/ml）、靠受體、>200 種；判斷起手式先問水溶/脂溶。\n- 水溶（蛋白質/胺類）→ 膜受體＋二級傳訊、快、短、不可口服；脂溶（類固醇）→ 核內受體調 DNA、慢、長、可口服。\n- 蛋白質類 vs 類固醇類比較表（前驅物/溶解度/血中/t½/儲存/受體/訊號/口服）要整張記。\n- Eicosanoids＝arachidonic acid（20:4 ω6）衍生的脂溶局部荷爾蒙。\n- ADH：血量↓8-10%→baroreceptor（carotid sinus/aortic arch/left atrium）→ADH↑；酒精抑制分泌、咖啡因阻斷 V2。\n- Insulin：降血糖、儲能；標的肝/骨骼肌/脂肪；蛋白質類不可口服要注射。\ntraps：- 荷爾蒙有沒有作用看『有沒有受體』，不是看血中濃度。\n- 可口服的是類固醇類（脂溶耐消化）；蛋白質類（如胰島素）口服會被分解。\n- 酒精是『抑制 ADH 分泌』、咖啡因是『阻斷 V2 受體』，機制不同。\n- 甲狀腺素是胺類中偏脂溶的例外。"
+          "explain": "mustKnow：- 荷爾蒙：血液運送、量極微（10⁻⁶~10⁻¹² g/ml）、靠受體、>200 種；判斷起手式先問水溶/脂溶。\n- 水溶（蛋白質/胺類）→ 膜受體＋二級傳訊、快、短、不可口服；脂溶（類固醇）→ 核內受體調 DNA、慢、長、可口服。\n- 蛋白質類 vs 類固醇類比較表（前驅物/溶解度/血中/t½/儲存/受體/訊號/口服）要整張記。\n- 類二十烷酸（Eicosanoids）＝花生四烯酸（arachidonic acid）（20:4 ω6）衍生的脂溶局部荷爾蒙。\n- 抗利尿激素（ADH）：血量↓8-10%→壓力感受器（baroreceptor）（carotid sinus/aortic arch/left atrium）→抗利尿激素（ADH）↑；酒精抑制分泌、咖啡因阻斷 V2。\n- 胰島素（Insulin）：降血糖、儲能；標的肝/骨骼肌/脂肪；蛋白質類不可口服要注射。\ntraps：- 荷爾蒙有沒有作用看『有沒有受體』，不是看血中濃度。\n- 可口服的是類固醇類（脂溶耐消化）；蛋白質類（如胰島素）口服會被分解。\n- 酒精是『抑制 抗利尿激素（ADH） 分泌』、咖啡因是『阻斷 V2 受體』，機制不同。\n- 甲狀腺素是胺類中偏脂溶的例外。",
+          "id": "c6178a7f2"
         },
         {
           "type": "card",
           "title": "急速重點：荷爾蒙三大類",
-          "body": "**一句話／白話**\n水溶性的包好放倉庫、需要時倒出去；脂溶性的臨時製造、直接穿牆；少數由胺基酸做的要看它像哪一邊。\n\n**觀念**\nPeptide：水溶、膜受體、可儲存、反應快；Steroid：膽固醇來源、脂溶、細胞內受體、現做現放；catecholamine 像 peptide，thyroid hormone 像 steroid。\n\n**易錯與比較**\nAmine 分類表超高頻。\n\n**口訣**\n先問能不能溶在水。",
+          "body": "**一句話／白話**\n水溶性的包好放倉庫、需要時倒出去；脂溶性的臨時製造、直接穿牆；少數由胺基酸做的要看它像哪一邊。\n\n**觀念**\nPeptide：水溶、膜受體、可儲存、反應快；Steroid：膽固醇來源、脂溶、細胞內受體、現做現放；catecholamine 像 peptide，thyroid 荷爾蒙（hormone） 像 steroid。\n\n**易錯與比較**\nAmine 分類表超高頻。\n\n**口訣**\n先問能不能溶在水。",
           "keys": [
             "水溶性的包好放倉庫、需要時倒出去；脂溶性的臨時製造、直接穿牆；少數由胺基酸做的要看它像哪一邊。"
           ],
@@ -650,14 +684,15 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：荷爾蒙三大類」，並說出一個判斷依據。",
-          "answer": "Peptide：水溶、膜受體、可儲存、反應快；Steroid：膽固醇來源、脂溶、細胞內受體、現做現放；catecholamine 像 peptide，thyroid hormone 像 steroid。",
+          "answer": "Peptide：水溶、膜受體、可儲存、反應快；Steroid：膽固醇來源、脂溶、細胞內受體、現做現放；catecholamine 像 peptide，thyroid 荷爾蒙（hormone） 像 steroid。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "Peptide：水溶、膜受體、可儲存、反應快；Steroid：膽固醇來源、脂溶、細胞內受體、現做現放；catecholamine 像 peptide，thyroid hormone 像 steroid。"
+          "explain": "Peptide：水溶、膜受體、可儲存、反應快；Steroid：膽固醇來源、脂溶、細胞內受體、現做現放；catecholamine 像 peptide，thyroid 荷爾蒙（hormone） 像 steroid。",
+          "id": "c8897b916"
         },
         {
           "type": "card",
-          "title": "急速重點：Peptide hormone 合成",
-          "body": "**一句話／白話**\n先做很長的半成品，再一路剪裁、包進小泡泡；收到命令時，小泡泡和細胞膜融合，把成品倒出去。\n\n**觀念**\npreprohormone→prohormone→hormone；RER/Golgi 加工後裝入 vesicle，Ca²⁺促進釋放。\n\n**易錯與比較**\n可儲存，因此可有雙相分泌。\n\n**口訣**\n先做、先存、再出貨。",
+          "title": "急速重點：胜肽荷爾蒙（Peptide hormone） 合成",
+          "body": "**一句話／白話**\n先做很長的半成品，再一路剪裁、包進小泡泡；收到命令時，小泡泡和細胞膜融合，把成品倒出去。\n\n**觀念**\npreprohormone→prohormone→荷爾蒙（hormone）；RER/Golgi 加工後裝入 囊泡（vesicle），Ca²⁺促進釋放。\n\n**易錯與比較**\n可儲存，因此可有雙相分泌。\n\n**口訣**\n先做、先存、再出貨。",
           "keys": [
             "先做很長的半成品，再一路剪裁、包進小泡泡；收到命令時，小泡泡和細胞膜融合，把成品倒出去。"
           ],
@@ -666,21 +701,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：Peptide hormone 合成」，並說出一個判斷依據。",
-          "answer": "preprohormone→prohormone→hormone；RER/Golgi 加工後裝入 vesicle，Ca²⁺促進釋放。",
+          "q": "用自己的話說明「急速重點：胜肽荷爾蒙（Peptide hormone） 合成」，並說出一個判斷依據。",
+          "answer": "preprohormone→prohormone→荷爾蒙（hormone）；RER/Golgi 加工後裝入 囊泡（vesicle），Ca²⁺促進釋放。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "preprohormone→prohormone→hormone；RER/Golgi 加工後裝入 vesicle，Ca²⁺促進釋放。"
+          "explain": "preprohormone→prohormone→荷爾蒙（hormone）；RER/Golgi 加工後裝入 囊泡（vesicle），Ca²⁺促進釋放。",
+          "id": "cb9551400"
         },
         {
           "type": "example",
-          "title": "範例拆解：急速重點：Peptide hormone 合成",
-          "problem": "用自己的話說明「急速重點：Peptide hormone 合成」，並說出一個判斷依據。",
+          "title": "範例拆解：急速重點：胜肽荷爾蒙（Peptide hormone） 合成",
+          "problem": "用自己的話說明「急速重點：胜肽荷爾蒙（Peptide hormone） 合成」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：急速重點：Peptide hormone 合成",
-            "preprohormone→prohormone→hormone；RER/Golgi 加工後裝入 vesicle，Ca²⁺促進釋放。",
-            "把判斷依據連回題目：preprohormone→prohormone→hormone；RER/Golgi 加工後裝入 vesicle，Ca²⁺促進釋放。"
+            "先確認題目問的主題：急速重點：胜肽荷爾蒙（Peptide hormone） 合成",
+            "preprohormone→prohormone→荷爾蒙（hormone）；RER/Golgi 加工後裝入 囊泡（vesicle），Ca²⁺促進釋放。",
+            "把判斷依據連回題目：preprohormone→prohormone→荷爾蒙（hormone）；RER/Golgi 加工後裝入 囊泡（vesicle），Ca²⁺促進釋放。"
           ],
-          "answer": "preprohormone→prohormone→hormone；RER/Golgi 加工後裝入 vesicle，Ca²⁺促進釋放。"
+          "answer": "preprohormone→prohormone→荷爾蒙（hormone）；RER/Golgi 加工後裝入 囊泡（vesicle），Ca²⁺促進釋放。"
         },
         {
           "type": "practice",
@@ -693,16 +729,18 @@
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：荷爾蒙三大類」，並說出一個判斷依據。",
-              "answer": "Peptide：水溶、膜受體、可儲存、反應快；Steroid：膽固醇來源、脂溶、細胞內受體、現做現放；catecholamine 像 peptide，thyroid hormone 像 steroid。",
+              "answer": "Peptide：水溶、膜受體、可儲存、反應快；Steroid：膽固醇來源、脂溶、細胞內受體、現做現放；catecholamine 像 peptide，thyroid 荷爾蒙（hormone） 像 steroid。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "Peptide：水溶、膜受體、可儲存、反應快；Steroid：膽固醇來源、脂溶、細胞內受體、現做現放；catecholamine 像 peptide，thyroid hormone 像 steroid。"
+              "explain": "Peptide：水溶、膜受體、可儲存、反應快；Steroid：膽固醇來源、脂溶、細胞內受體、現做現放；catecholamine 像 peptide，thyroid 荷爾蒙（hormone） 像 steroid。",
+              "id": "c8897b916"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：Peptide hormone 合成」，並說出一個判斷依據。",
-              "answer": "preprohormone→prohormone→hormone；RER/Golgi 加工後裝入 vesicle，Ca²⁺促進釋放。",
+              "q": "用自己的話說明「急速重點：胜肽荷爾蒙（Peptide hormone） 合成」，並說出一個判斷依據。",
+              "answer": "preprohormone→prohormone→荷爾蒙（hormone）；RER/Golgi 加工後裝入 囊泡（vesicle），Ca²⁺促進釋放。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "preprohormone→prohormone→hormone；RER/Golgi 加工後裝入 vesicle，Ca²⁺促進釋放。"
+              "explain": "preprohormone→prohormone→荷爾蒙（hormone）；RER/Golgi 加工後裝入 囊泡（vesicle），Ca²⁺促進釋放。",
+              "id": "cb9551400"
             }
           ]
         },
@@ -718,19 +756,23 @@
           "flash": [
             {
               "front": "必記與易錯",
-              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+              "back": "把本單元的關係串起來，確認易錯条件與方向。",
+              "id": "f4128b78b"
             },
             {
               "front": "急速重點：荷爾蒙三大類",
-              "back": "水溶性的包好放倉庫、需要時倒出去；脂溶性的臨時製造、直接穿牆；少數由胺基酸做的要看它像哪一邊。"
+              "back": "水溶性的包好放倉庫、需要時倒出去；脂溶性的臨時製造、直接穿牆；少數由胺基酸做的要看它像哪一邊。",
+              "id": "fae7318b1"
             },
             {
-              "front": "急速重點：Peptide hormone 合成",
-              "back": "先做很長的半成品，再一路剪裁、包進小泡泡；收到命令時，小泡泡和細胞膜融合，把成品倒出去。"
+              "front": "急速重點：胜肽荷爾蒙（Peptide hormone） 合成",
+              "back": "先做很長的半成品，再一路剪裁、包進小泡泡；收到命令時，小泡泡和細胞膜融合，把成品倒出去。",
+              "id": "f88e21051"
             },
             {
               "front": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
-              "back": "mustKnow：- 荷爾蒙：血液運送、量極微（10⁻⁶~10⁻¹² g/ml）、靠受體、>200 種；判斷起手式先問水溶/脂溶。\n- 水溶（蛋白質/胺類）→ 膜受體＋二級傳訊、快、短、不可口服；脂溶（類固醇）→ 核內受體調 DNA、慢、長、可口服。\n- 蛋白質類 vs 類固醇類比較表（前驅物/溶解度/血中/t½/儲存/受體/訊號/口服）要整張記。\n- Eicosanoids＝arachidonic acid（20:4 ω6）衍生的脂溶局部荷爾蒙。\n- ADH：血量↓8-10%→baroreceptor（carotid sinus/aortic arch/left atrium）→ADH↑；酒精抑制分泌、咖啡因阻斷 V2。\n- Insulin：降血糖、儲能；標的肝/骨骼肌/脂肪；蛋白質類不可口服要注射。\ntraps：- 荷爾蒙有沒有作用看『有沒有受體』，不是看血中濃度。\n- 可口服的是類固醇類（脂溶耐消化）；蛋白質類（如胰島素）口服會被分解。\n- 酒精是『抑制 ADH 分泌』、咖啡因是『阻斷 V2 受體』，機制不同。\n- 甲狀腺素是胺類中偏脂溶的例外。"
+              "back": "mustKnow：- 荷爾蒙：血液運送、量極微（10⁻⁶~10⁻¹² g/ml）、靠受體、>200 種；判斷起手式先問水溶/脂溶。\n- 水溶（蛋白質/胺類）→ 膜受體＋二級傳訊、快、短、不可口服；脂溶（類固醇）→ 核內受體調 DNA、慢、長、可口服。\n- 蛋白質類 vs 類固醇類比較表（前驅物/溶解度/血中/t½/儲存/受體/訊號/口服）要整張記。\n- 類二十烷酸（Eicosanoids）＝花生四烯酸（arachidonic acid）（20:4 ω6）衍生的脂溶局部荷爾蒙。\n- 抗利尿激素（ADH）：血量↓8-10%→壓力感受器（baroreceptor）（carotid sinus/aortic arch/left atrium）→抗利尿激素（ADH）↑；酒精抑制分泌、咖啡因阻斷 V2。\n- 胰島素（Insulin）：降血糖、儲能；標的肝/骨骼肌/脂肪；蛋白質類不可口服要注射。\ntraps：- 荷爾蒙有沒有作用看『有沒有受體』，不是看血中濃度。\n- 可口服的是類固醇類（脂溶耐消化）；蛋白質類（如胰島素）口服會被分解。\n- 酒精是『抑制 抗利尿激素（ADH） 分泌』、咖啡因是『阻斷 V2 受體』，機制不同。\n- 甲狀腺素是胺類中偏脂溶的例外。",
+              "id": "f6178a7f2"
             }
           ]
         }

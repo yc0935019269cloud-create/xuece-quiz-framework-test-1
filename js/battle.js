@@ -611,7 +611,8 @@ const RunUI = (() => {
     const used = new Set(s.queue.concat(s.used || []));
     let pool;
     if (Z.wrong) pool = Object.keys(Store.wrong).filter(id => !Store.wrong[id].done && Store.Q[id] && ['single', 'multi'].includes(Store.Q[id].type)).map(id => Store.Q[id]);
-    else pool = Store.filter({ subjects: s.cfg.subjects || [], types: ['single', 'multi'] }).filter(q => !used.has(q.id));
+    else pool = Store.filter({ subjects: s.cfg.subjects || [], exams: s.cfg.mode === 'abyss' ? s.cfg.exams : undefined, types: ['single', 'multi'] }).filter(q => !used.has(q.id));
+    if (!pool.length && s.cfg.exams && s.cfg.exams.length) pool = Store.filter({ subjects: s.cfg.subjects || [], types: ['single', 'multi'] }).filter(q => !used.has(q.id));   // 選的範圍沒有選擇題時退回整科
     if (!pool.length) pool = window.QB.questions.filter(q => q.type === 'single');
     const q = U.pick(pool);
     const main = frame(`<div class="panel dark"><h2>${Z.title}</h2><div id="sq"></div></div>`);

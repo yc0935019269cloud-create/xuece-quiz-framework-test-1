@@ -31,14 +31,14 @@
         {
           "type": "intro",
           "title": "第 1 站：心臟就是兩台接力水泵",
-          "body": "先認得四個房間、兩種門和血流方向。這張地圖站穩了，後面的心動週期、心音、ECG 才不會亂。\n\n- 先分清楚四個房間：右心 vs 左心、心房（上）vs 心室（下）。\n- 再把兩種門裝上去：房室瓣（房↔室）、半月瓣（室↔動脈）。\n- 最後用一條原則『哪邊壓力大血就往哪推』解釋所有門的開關。"
+          "body": "先認得四個房間、兩種門和血流方向。這張地圖站穩了，後面的心動週期、心音、心電圖（ECG） 才不會亂。\n\n- 先分清楚四個房間：右心 vs 左心、心房（上）vs 心室（下）。\n- 再把兩種門裝上去：房室瓣（房↔室）、半月瓣（室↔動脈）。\n- 最後用一條原則『哪邊壓力大血就往哪推』解釋所有門的開關。"
         },
         {
           "type": "card",
           "title": "四個 chamber 是泵浦的房間，血走 8 字形",
-          "body": "**連到前一觀念**\n一切從認房間開始：房間搞錯，後面血流、心音、ECG 全跟著錯。\n\n**觀念**\n右心房 RA 收全身回來的缺氧血，交給右心室 RV 打去肺；左心房 LA 收肺回來的含氧血，交給左心室 LV 打去全身。心房在上、心室在下。\n\n**為什麼**\n為什麼要兩套泵？因為血一定要先去肺『加氧、排二氧化碳』，再送去全身用。所以分成右心（走肺循環）和左心（走全身循環）兩台串聯的泵，血繞成一個 8 字形。右心壓力低、左心壓力高，但同一拍打出的血量其實一樣多。\n\n**考試角度**\n- 完整路線：RA → RV → 肺動脈 → 肺 → LA → LV → 主動脈 → 全身\n- 左心室壁最厚：要對抗全身循環的高壓\n- 右心是低壓泵、左心是高壓泵\n\n**易錯與比較**\n別把『含氧/缺氧』跟『動脈/靜脈』綁死：肺動脈裡裝的是缺氧血、肺靜脈裡裝的是含氧血，剛好跟全身相反。",
+          "body": "**連到前一觀念**\n一切從認房間開始：房間搞錯，後面血流、心音、心電圖（ECG） 全跟著錯。\n\n**觀念**\n右心房 （RA） 收全身回來的缺氧血，交給右心室 （RV） 打去肺；左心房 （LA） 收肺回來的含氧血，交給左心室 （LV） 打去全身。心房在上、心室在下。\n\n**為什麼**\n為什麼要兩套泵？因為血一定要先去肺『加氧、排二氧化碳』，再送去全身用。所以分成右心（走肺循環）和左心（走全身循環）兩台串聯的泵，血繞成一個 8 字形。右心壓力低、左心壓力高，但同一拍打出的血量其實一樣多。\n\n**考試角度**\n- 完整路線：右心房（RA） → 右心室（RV） → 肺動脈 → 肺 → 左心房（LA） → 左心室（LV） → 主動脈 → 全身\n- 左心室壁最厚：要對抗全身循環的高壓\n- 右心是低壓泵、左心是高壓泵\n\n**易錯與比較**\n別把『含氧/缺氧』跟『動脈/靜脈』綁死：肺動脈裡裝的是缺氧血、肺靜脈裡裝的是含氧血，剛好跟全身相反。",
           "keys": [
-            "完整路線：RA → RV → 肺動脈 → 肺 → LA → LV → 主動脈 → 全身",
+            "完整路線：右心房（RA） → 右心室（RV） → 肺動脈 → 肺 → 左心房（LA） → 左心室（LV） → 主動脈 → 全身",
             "左心室壁最厚：要對抗全身循環的高壓",
             "右心是低壓泵、左心是高壓泵"
           ],
@@ -50,13 +50,14 @@
           "q": "左心室最主要接到哪一條大血管？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "左心室把血送到全身，出口是主動脈。肺動脈是右心室的出口。\n\n正確選項：主動脈 aorta。\n右心房 RA 收全身回來的缺氧血，交給右心室 RV 打去肺；左心房 LA 收肺回來的含氧血，交給左心室 LV 打去全身。心房在上、心室在下。",
+          "explain": "左心室把血送到全身，出口是主動脈。肺動脈是右心室的出口。\n\n正確選項：主動脈 aorta。\n右心房 （RA） 收全身回來的缺氧血，交給右心室 （RV） 打去肺；左心房 （LA） 收肺回來的含氧血，交給左心室 （LV） 打去全身。心房在上、心室在下。",
           "choices": [
             "主動脈 aorta",
             "肺動脈 pulmonary artery",
             "上腔靜脈 SVC",
             "肺靜脈 pulmonary vein"
-          ]
+          ],
+          "id": "c55a58f26"
         },
         {
           "type": "card",
@@ -81,7 +82,8 @@
             "主動脈瓣關閉",
             "肺動脈瓣開啟",
             "二尖瓣開啟"
-          ]
+          ],
+          "id": "cbdd5b738"
         },
         {
           "type": "card",
@@ -106,7 +108,8 @@
             "二尖瓣關閉",
             "主動脈瓣開啟",
             "三尖瓣開啟"
-          ]
+          ],
+          "id": "cd36bb2c5"
         },
         {
           "type": "interactive",
@@ -123,7 +126,8 @@
           "q": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
           "answer": "等容積收縮：二尖瓣剛關（S1），主動脈瓣尚未開；心室壓上升，容積不變。\n射血：心室壓超過主動脈壓，主動脈瓣打開，心室容積下降。\n等容積舒張：主動脈瓣關（S2），二尖瓣尚未開；壓下降，容積不變。\n心室充盈：心室壓低於左心房壓，二尖瓣打開，容積增加。",
           "hint": "逐步比較相鄰階段或改變前後，並區分方向與因果。",
-          "explain": "等容積收縮：二尖瓣剛關（S1），主動脈瓣尚未開；心室壓上升，容積不變。\n射血：心室壓超過主動脈壓，主動脈瓣打開，心室容積下降。\n等容積舒張：主動脈瓣關（S2），二尖瓣尚未開；壓下降，容積不變。\n心室充盈：心室壓低於左心房壓，二尖瓣打開，容積增加。"
+          "explain": "等容積收縮：二尖瓣剛關（S1），主動脈瓣尚未開；心室壓上升，容積不變。\n射血：心室壓超過主動脈壓，主動脈瓣打開，心室容積下降。\n等容積舒張：主動脈瓣關（S2），二尖瓣尚未開；壓下降，容積不變。\n心室充盈：心室壓低於左心房壓，二尖瓣打開，容積增加。",
+          "id": "cc41dde24"
         },
         {
           "type": "diagram",
@@ -134,25 +138,25 @@
           "source": "本次自製 SVG 教學示意，依教材基本構造重繪；非來源網站截圖。",
           "points": [
             {
-              "name": "右心房 RA",
+              "name": "右心房 （RA）",
               "desc": "接收上、下腔靜脈與冠狀竇回流。",
               "x": 31.875,
               "y": 28.333333333333332
             },
             {
-              "name": "右心室 RV",
+              "name": "右心室 （RV）",
               "desc": "經肺動脈瓣射血至肺動脈。",
               "x": 31.25,
               "y": 62.77777777777778
             },
             {
-              "name": "左心房 LA",
+              "name": "左心房 （LA）",
               "desc": "接收肺靜脈回流。",
               "x": 68.125,
               "y": 28.333333333333332
             },
             {
-              "name": "左心室 LV",
+              "name": "左心室 （LV）",
               "desc": "經主動脈瓣射血至主動脈，壁比右心室厚。",
               "x": 69.6875,
               "y": 62.77777777777778
@@ -199,9 +203,10 @@
           "type": "check",
           "kind": "self",
           "q": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
-          "answer": "右心房 RA：接收上、下腔靜脈與冠狀竇回流。\n右心室 RV：經肺動脈瓣射血至肺動脈。\n左心房 LA：接收肺靜脈回流。\n左心室 LV：經主動脈瓣射血至主動脈，壁比右心室厚。\n三尖瓣 Tricuspid valve：右心房與右心室間的房室瓣。\n二尖瓣 Mitral valve：左心房與左心室間的房室瓣。\n腔靜脈 Vena cava：體循環靜脈回流到右心房。\n肺動脈 Pulmonary artery：由右心室離心，載缺氧血至肺。\n肺靜脈 Pulmonary vein：含氧血由肺回到左心房。\n主動脈 Aorta：由左心室送含氧血到全身。",
+          "answer": "右心房 （RA）：接收上、下腔靜脈與冠狀竇回流。\n右心室 （RV）：經肺動脈瓣射血至肺動脈。\n左心房 （LA）：接收肺靜脈回流。\n左心室 （LV）：經主動脈瓣射血至主動脈，壁比右心室厚。\n三尖瓣 Tricuspid valve：右心房與右心室間的房室瓣。\n二尖瓣 Mitral valve：左心房與左心室間的房室瓣。\n腔靜脈 Vena cava：體循環靜脈回流到右心房。\n肺動脈 Pulmonary artery：由右心室離心，載缺氧血至肺。\n肺靜脈 Pulmonary vein：含氧血由肺回到左心房。\n主動脈 Aorta：由左心室送含氧血到全身。",
           "hint": "逐步比較相鄰階段或改變前後，並區分方向與因果。",
-          "explain": "右心房 RA：接收上、下腔靜脈與冠狀竇回流。\n右心室 RV：經肺動脈瓣射血至肺動脈。\n左心房 LA：接收肺靜脈回流。\n左心室 LV：經主動脈瓣射血至主動脈，壁比右心室厚。\n三尖瓣 Tricuspid valve：右心房與右心室間的房室瓣。\n二尖瓣 Mitral valve：左心房與左心室間的房室瓣。\n腔靜脈 Vena cava：體循環靜脈回流到右心房。\n肺動脈 Pulmonary artery：由右心室離心，載缺氧血至肺。\n肺靜脈 Pulmonary vein：含氧血由肺回到左心房。\n主動脈 Aorta：由左心室送含氧血到全身。"
+          "explain": "右心房 （RA）：接收上、下腔靜脈與冠狀竇回流。\n右心室 （RV）：經肺動脈瓣射血至肺動脈。\n左心房 （LA）：接收肺靜脈回流。\n左心室 （LV）：經主動脈瓣射血至主動脈，壁比右心室厚。\n三尖瓣 Tricuspid valve：右心房與右心室間的房室瓣。\n二尖瓣 Mitral valve：左心房與左心室間的房室瓣。\n腔靜脈 Vena cava：體循環靜脈回流到右心房。\n肺動脈 Pulmonary artery：由右心室離心，載缺氧血至肺。\n肺靜脈 Pulmonary vein：含氧血由肺回到左心房。\n主動脈 Aorta：由左心室送含氧血到全身。",
+          "id": "cc41dde24"
         },
         {
           "type": "example",
@@ -233,7 +238,8 @@
                 "主動脈瓣關閉",
                 "肺動脈瓣開啟",
                 "二尖瓣開啟"
-              ]
+              ],
+              "id": "cbdd5b738"
             },
             {
               "kind": "single",
@@ -246,14 +252,15 @@
                 "二尖瓣關閉",
                 "主動脈瓣開啟",
                 "三尖瓣開啟"
-              ]
+              ],
+              "id": "cd36bb2c5"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "完整路線：RA → RV → 肺動脈 → 肺 → LA → LV → 主動脈 → 全身",
+            "完整路線：右心房（RA） → 右心室（RV） → 肺動脈 → 肺 → 左心房（LA） → 左心室（LV） → 主動脈 → 全身",
             "左心室壁最厚：要對抗全身循環的高壓",
             "右側：tricuspid valve（三尖瓣）",
             "左側：bicuspid valve / mitral valve（兩者是同一個瓣膜的不同英文名稱）",
@@ -264,19 +271,23 @@
           "flash": [
             {
               "front": "四個 chamber 是泵浦的房間，血走 8 字形",
-              "back": "右心房 RA 收全身回來的缺氧血，交給右心室 RV 打去肺；左心房 LA 收肺回來的含氧血，交給左心室 LV 打去全身。心房在上、心室在下。"
+              "back": "右心房 （RA） 收全身回來的缺氧血，交給右心室 （RV） 打去肺；左心房 （LA） 收肺回來的含氧血，交給左心室 （LV） 打去全身。心房在上、心室在下。",
+              "id": "fbb2c07f8"
             },
             {
               "front": "房室瓣 AV valve：房室之間的單向門",
-              "back": "房室瓣是心房通往心室的單向門：右側三尖瓣 tricuspid、左側二尖瓣 bicuspid / mitral。心室一收縮、壓力超過心房，這道門就關起來，避免血倒流回心房。"
+              "back": "房室瓣是心房通往心室的單向門：右側三尖瓣 tricuspid、左側二尖瓣 bicuspid / mitral。心室一收縮、壓力超過心房，這道門就關起來，避免血倒流回心房。",
+              "id": "fca04d3ab"
             },
             {
               "front": "半月瓣 semilunar valve：心室的出口門",
-              "back": "半月瓣是心室通往大動脈的門：右心室出口是肺動脈瓣 pulmonary valve、左心室出口是主動脈瓣 aortic valve。心室壓高過動脈壓時打開射血，射完壓力降下來就關閉。"
+              "back": "半月瓣是心室通往大動脈的門：右心室出口是肺動脈瓣 pulmonary valve、左心室出口是主動脈瓣 aortic valve。心室壓高過動脈壓時打開射血，射完壓力降下來就關閉。",
+              "id": "fdc1ba1d6"
             },
             {
               "front": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
-              "back": "等容積收縮：二尖瓣剛關（S1），主動脈瓣尚未開；心室壓上升，容積不變。\n射血：心室壓超過主動脈壓，主動脈瓣打開，心室容積下降。\n等容積舒張：主動脈瓣關（S2），二尖瓣尚未開；壓下降，容積不變。\n心室充盈：心室壓低於左心房壓，二尖瓣打開，容積增加。"
+              "back": "等容積收縮：二尖瓣剛關（S1），主動脈瓣尚未開；心室壓上升，容積不變。\n射血：心室壓超過主動脈壓，主動脈瓣打開，心室容積下降。\n等容積舒張：主動脈瓣關（S2），二尖瓣尚未開；壓下降，容積不變。\n心室充盈：心室壓低於左心房壓，二尖瓣打開，容積增加。",
+              "id": "fc41dde24"
             }
           ]
         }
@@ -292,16 +303,16 @@
         {
           "type": "intro",
           "title": "第 1 站：心臟就是兩台接力水泵",
-          "body": "先認得四個房間、兩種門和血流方向。這張地圖站穩了，後面的心動週期、心音、ECG 才不會亂。\n\n- 先分清楚四個房間：右心 vs 左心、心房（上）vs 心室（下）。\n- 再把兩種門裝上去：房室瓣（房↔室）、半月瓣（室↔動脈）。\n- 最後用一條原則『哪邊壓力大血就往哪推』解釋所有門的開關。"
+          "body": "先認得四個房間、兩種門和血流方向。這張地圖站穩了，後面的心動週期、心音、心電圖（ECG） 才不會亂。\n\n- 先分清楚四個房間：右心 vs 左心、心房（上）vs 心室（下）。\n- 再把兩種門裝上去：房室瓣（房↔室）、半月瓣（室↔動脈）。\n- 最後用一條原則『哪邊壓力大血就往哪推』解釋所有門的開關。"
         },
         {
           "type": "card",
           "title": "瓣膜只聽壓力差，不聽你背表格",
-          "body": "**連到前一觀念**\n與其背四個瓣膜何時開關，不如記住背後唯一的原則。\n\n**觀念**\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。\n\n**為什麼**\n瓣膜沒有肌肉、不會自己決定開關，它只是被壓力差推開或壓上。所以題目只要給你兩側壓力，你逐一比大小，門是開是關就出來了。\n\n**考試角度**\n- 二尖瓣開：LA 壓 > LV 壓（心房較高，血灌入心室）\n- 二尖瓣關：LV 壓 > LA 壓\n- 主動脈瓣開：LV 壓 > 主動脈壓\n\n**易錯與比較**\n看到一堆瓣膜題先別慌：把每個壓力數字寫下來，逐一比大小，門的開關就出來了。",
+          "body": "**連到前一觀念**\n與其背四個瓣膜何時開關，不如記住背後唯一的原則。\n\n**觀念**\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。\n\n**為什麼**\n瓣膜沒有肌肉、不會自己決定開關，它只是被壓力差推開或壓上。所以題目只要給你兩側壓力，你逐一比大小，門是開是關就出來了。\n\n**考試角度**\n- 二尖瓣開：左心房（LA） 壓 > 左心室（LV） 壓（心房較高，血灌入心室）\n- 二尖瓣關：左心室 壓 > 左心房 壓\n- 主動脈瓣開：左心室 壓 > 主動脈壓\n\n**易錯與比較**\n看到一堆瓣膜題先別慌：把每個壓力數字寫下來，逐一比大小，門的開關就出來了。",
           "keys": [
-            "二尖瓣開：LA 壓 > LV 壓（心房較高，血灌入心室）",
-            "二尖瓣關：LV 壓 > LA 壓",
-            "主動脈瓣開：LV 壓 > 主動脈壓"
+            "二尖瓣開：左心房（LA） 壓 > 左心室（LV） 壓（心房較高，血灌入心室）",
+            "二尖瓣關：左心室（LV） 壓 > 左心房（LA） 壓",
+            "主動脈瓣開：左心室（LV） 壓 > 主動脈壓"
           ],
           "tip": "看到一堆瓣膜題先別慌：把每個壓力數字寫下來，逐一比大小，門的開關就出來了。"
         },
@@ -311,35 +322,37 @@
           "q": "左心室壓 20、左心房壓 10、主動脈壓 80 mmHg 時，最合理的瓣膜狀態是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "LV(20) > LA(10) 所以二尖瓣關；LV(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。",
+          "explain": "左心室（LV）(20) > 左心房（LA）(10) 所以二尖瓣關；左心室（LV）(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。",
           "choices": [
             "二尖瓣關、主動脈瓣關",
             "二尖瓣開、主動脈瓣關",
             "二尖瓣關、主動脈瓣開",
             "兩瓣都開"
-          ]
+          ],
+          "id": "cb0f439f2"
         },
         {
           "type": "interactive",
           "title": "每搏量與心輸出量",
-          "task": "維持 EDV=120 mL、ESV=50 mL，把心率從 75 改到 100 次/min。",
+          "task": "維持 舒張末期容積（EDV）=120 mL、收縮末期容積（ESV）=50 mL，把心率從 75 改到 100 次/min。",
           "body": "每次只改一個參數，先預測，再觀察數值。",
-          "reference": "SV=120−50=70 mL；75 次/min 時 CO=5.25 L/min，100 次/min 時為 7.00 L/min。\nSV=EDV−ESV；CO=HR×SV（mL/min，除以1000得 L/min）；EF=SV/EDV×100%。容積取獨立教學參數。",
+          "reference": "每搏量（SV）=120−50=70 mL；75 次/min 時 心輸出量（CO）=5.25 L/min，100 次/min 時為 7.00 L/min。\n每搏量（SV）=舒張末期容積（EDV）−收縮末期容積（ESV）；心輸出量（CO）=心率（HR）×每搏量（SV）（mL/min，除以1000得 L/min）；EF=每搏量（SV）/舒張末期容積（EDV）×100%。容積取獨立教學參數。",
           "height": 540,
-          "html": "<!doctype html><html lang=\"zh-Hant\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{margin:0;padding:10px;box-sizing:border-box;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}*{box-sizing:border-box}h3{font-size:18px;margin:0 0 8px}.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}label{display:block}.row label{flex:1 1 125px;min-width:0;max-width:180px}input{max-width:150px;width:100%}button{font:inherit;padding:6px 12px;background:#fff;border:1px solid #75644d;border-radius:6px}svg{width:100%;height:160px;background:#fff;border:1px solid #cabfa7}#result,.note{padding:6px;background:#fff1c9;margin-top:6px}small{font-size:14px;display:block;margin-top:6px}@media(max-width:400px){body{padding:8px}.row label{flex-basis:105px}svg{height:110px}h3{font-size:16px}}</style><h3>每搏量與心輸出量</h3><div class=\"note\">觀察重點：維持 EDV=120 mL、ESV=50 mL，把心率從 75 改到 100 次/min。</div><div class=\"row\"><label>心率 <output id=\"hro\"></output><input aria-label=\"心率\" id=\"hr\" type=\"range\" min=\"40\" max=\"160\" step=\"5\" value=\"75\" data-unit=\"次/min\" style=\"display:block\"></label><label>舒張末期容積 <output id=\"edvo\"></output><input aria-label=\"舒張末期容積\" id=\"edv\" type=\"range\" min=\"90\" max=\"180\" step=\"5\" value=\"120\" data-unit=\"mL\" style=\"display:block\"></label><label>收縮末期容積 <output id=\"esvo\"></output><input aria-label=\"收縮末期容積\" id=\"esv\" type=\"range\" min=\"20\" max=\"80\" step=\"5\" value=\"50\" data-unit=\"mL\" style=\"display:block\"></label><button id=\"reset\">重設</button></div><svg id=\"plot\" viewBox=\"0 0 700 210\" role=\"img\" aria-label=\"即時比較圖\"></svg><small id=\"legend\"></small><div id=\"result\" aria-live=\"polite\"></div><small>SV=EDV−ESV；CO=HR×SV（mL/min，除以1000得 L/min）；EF=SV/EDV×100%。容積取獨立教學參數。</small><script>const inputs=[...document.querySelectorAll('input')],result=document.getElementById('result'),svg=document.getElementById('plot');const v=id=>Number(document.getElementById(id).value),fmt=x=>Number.isFinite(x)?x.toFixed(2):'超出模型';function bars(vals,names){const scale=130/Math.max(1,...vals.map(Math.abs));svg.innerHTML=vals.map((x,i)=>`<rect x='${50+i*180}' y='${x>=0?150-x*scale:150}' width='90' height='${Math.abs(x)*scale}' fill='${i%2?'#916a28':'#286b80'}'/><text x='${80+i*180}' y='200' font-size='44'>${i+1}</text>`).join('')+`<line x1='20' y1='150' x2='680' y2='150' stroke='#555'/>`;document.getElementById('legend').textContent=names.map((n,i)=>(i+1)+'．'+n).join('　');}function update(){inputs.forEach(x=>document.getElementById(x.id+'o').textContent=x.value+' '+x.dataset.unit);const SV=v('edv')-v('esv'),CO=v('hr')*SV/1000,EF=100*SV/v('edv');result.textContent=`SV = ${fmt(SV)} mL；CO = ${fmt(CO)} L/min；EF = ${fmt(EF)}%。固定其他值比較單一變因；高心率時充盈改變不在此模型內。`;bars([v('edv'),v('esv'),SV],['EDV mL','ESV mL','SV mL']);}inputs.forEach(x=>x.addEventListener('input',update));document.getElementById('reset').onclick=()=>{inputs.forEach(x=>x.value=x.defaultValue);update()};update();</script></html>"
+          "html": "<!doctype html><html lang=\"zh-Hant\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{margin:0;padding:10px;box-sizing:border-box;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}*{box-sizing:border-box}h3{font-size:18px;margin:0 0 8px}.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}label{display:block}.row label{flex:1 1 125px;min-width:0;max-width:180px}input{max-width:150px;width:100%}button{font:inherit;padding:6px 12px;background:#fff;border:1px solid #75644d;border-radius:6px}svg{width:100%;height:160px;background:#fff;border:1px solid #cabfa7}#result,.note{padding:6px;background:#fff1c9;margin-top:6px}small{font-size:14px;display:block;margin-top:6px}@media(max-width:400px){body{padding:8px}.row label{flex-basis:105px}svg{height:110px}h3{font-size:16px}}</style><h3>每搏量與心輸出量</h3><div class=\"note\">觀察重點：維持 舒張末期容積（EDV）=120 mL、收縮末期容積（ESV）=50 mL，把心率從 75 改到 100 次/min。</div><div class=\"row\"><label>心率 <output id=\"hro\"></output><input aria-label=\"心率\" id=\"hr\" type=\"range\" min=\"40\" max=\"160\" step=\"5\" value=\"75\" data-unit=\"次/min\" style=\"display:block\"></label><label>舒張末期容積 <output id=\"edvo\"></output><input aria-label=\"舒張末期容積\" id=\"edv\" type=\"range\" min=\"90\" max=\"180\" step=\"5\" value=\"120\" data-unit=\"mL\" style=\"display:block\"></label><label>收縮末期容積 <output id=\"esvo\"></output><input aria-label=\"收縮末期容積\" id=\"esv\" type=\"range\" min=\"20\" max=\"80\" step=\"5\" value=\"50\" data-unit=\"mL\" style=\"display:block\"></label><button id=\"reset\">重設</button></div><svg id=\"plot\" viewBox=\"0 0 700 210\" role=\"img\" aria-label=\"即時比較圖\"></svg><small id=\"legend\"></small><div id=\"result\" aria-live=\"polite\"></div><small>每搏量（SV）=舒張末期容積（EDV）−收縮末期容積（ESV）；心輸出量（CO）=心率（HR）×每搏量（SV）（mL/min，除以1000得 L/min）；EF=每搏量（SV）/舒張末期容積（EDV）×100%。容積取獨立教學參數。</small><script>const inputs=[...document.querySelectorAll('input')],result=document.getElementById('result'),svg=document.getElementById('plot');const v=id=>Number(document.getElementById(id).value),fmt=x=>Number.isFinite(x)?x.toFixed(2):'超出模型';function bars(vals,names){const scale=130/Math.max(1,...vals.map(Math.abs));svg.innerHTML=vals.map((x,i)=>`<rect x='${50+i*180}' y='${x>=0?150-x*scale:150}' width='90' height='${Math.abs(x)*scale}' fill='${i%2?'#916a28':'#286b80'}'/><text x='${80+i*180}' y='200' font-size='44'>${i+1}</text>`).join('')+`<line x1='20' y1='150' x2='680' y2='150' stroke='#555'/>`;document.getElementById('legend').textContent=names.map((n,i)=>(i+1)+'．'+n).join('　');}function update(){inputs.forEach(x=>document.getElementById(x.id+'o').textContent=x.value+' '+x.dataset.unit);const SV=v('edv')-v('esv'),CO=v('hr')*SV/1000,EF=100*SV/v('edv');result.textContent=`SV = ${fmt(SV)} mL；CO = ${fmt(CO)} L/min；EF = ${fmt(EF)}%。固定其他值比較單一變因；高心率時充盈改變不在此模型內。`;bars([v('edv'),v('esv'),SV],['EDV mL','ESV mL','SV mL']);}inputs.forEach(x=>x.addEventListener('input',update));document.getElementById('reset').onclick=()=>{inputs.forEach(x=>x.value=x.defaultValue);update()};update();</script></html>"
         },
         {
           "type": "check",
           "kind": "self",
           "q": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
-          "answer": "SV=120−50=70 mL；75 次/min 時 CO=5.25 L/min，100 次/min 時為 7.00 L/min。\nSV=EDV−ESV；CO=HR×SV（mL/min，除以1000得 L/min）；EF=SV/EDV×100%。容積取獨立教學參數。",
+          "answer": "每搏量（SV）=120−50=70 mL；75 次/min 時 心輸出量（CO）=5.25 L/min，100 次/min 時為 7.00 L/min。\n每搏量（SV）=舒張末期容積（EDV）−收縮末期容積（ESV）；心輸出量（CO）=心率（HR）×每搏量（SV）（mL/min，除以1000得 L/min）；EF=每搏量（SV）/舒張末期容積（EDV）×100%。容積取獨立教學參數。",
           "hint": "逐步比較相鄰階段或改變前後，並區分方向與因果。",
-          "explain": "SV=120−50=70 mL；75 次/min 時 CO=5.25 L/min，100 次/min 時為 7.00 L/min。\nSV=EDV−ESV；CO=HR×SV（mL/min，除以1000得 L/min）；EF=SV/EDV×100%。容積取獨立教學參數。"
+          "explain": "每搏量（SV）=120−50=70 mL；75 次/min 時 心輸出量（CO）=5.25 L/min，100 次/min 時為 7.00 L/min。\n每搏量（SV）=舒張末期容積（EDV）−收縮末期容積（ESV）；心輸出量（CO）=心率（HR）×每搏量（SV）（mL/min，除以1000得 L/min）；EF=每搏量（SV）/舒張末期容積（EDV）×100%。容積取獨立教學參數。",
+          "id": "c21698785"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n左心室壓 20、左心房壓 10、主動脈壓 80 mmHg 時，最合理的瓣膜狀態是？\n\nA. 二尖瓣關、主動脈瓣關\nB. 二尖瓣開、主動脈瓣關\nC. 二尖瓣關、主動脈瓣開\nD. 兩瓣都開\n\n**判斷步驟**\n- 先確認題目問的主題：瓣膜只聽壓力差，不聽你背表格\n- 所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。\n- 把判斷依據連回題目：LV(20) > LA(10) 所以二尖瓣關；LV(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。\n\n**結論與依據**\n二尖瓣關、主動脈瓣關",
+          "body": "**情境**\n左心室壓 20、左心房壓 10、主動脈壓 80 mmHg 時，最合理的瓣膜狀態是？\n\nA. 二尖瓣關、主動脈瓣關\nB. 二尖瓣開、主動脈瓣關\nC. 二尖瓣關、主動脈瓣開\nD. 兩瓣都開\n\n**判斷步驟**\n- 先確認題目問的主題：瓣膜只聽壓力差，不聽你背表格\n- 所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。\n- 把判斷依據連回題目：左心室（LV）(20) > 左心房（LA）(10) 所以二尖瓣關；左心室(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。\n\n**結論與依據**\n二尖瓣關、主動脈瓣關",
           "keys": [
             "二尖瓣關、主動脈瓣關"
           ]
@@ -350,7 +363,8 @@
           "q": "解釋這個結論所用的條件或判斷依據。",
           "answer": "二尖瓣關、主動脈瓣關",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：瓣膜只聽壓力差，不聽你背表格\n- 所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。\n- 把判斷依據連回題目：LV(20) > LA(10) 所以二尖瓣關；LV(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。"
+          "explain": "- 先確認題目問的主題：瓣膜只聽壓力差，不聽你背表格\n- 所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。\n- 把判斷依據連回題目：左心室（LV）(20) > 左心房（LA）(10) 所以二尖瓣關；左心室（LV）(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。",
+          "id": "c2e459390"
         },
         {
           "type": "example",
@@ -359,7 +373,7 @@
           "steps": [
             "先確認題目問的主題：瓣膜只聽壓力差，不聽你背表格",
             "所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。",
-            "把判斷依據連回題目：LV(20) > LA(10) 所以二尖瓣關；LV(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。"
+            "把判斷依據連回題目：左心室（LV）(20) > 左心房（LA）(10) 所以二尖瓣關；左心室（LV）(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。"
           ],
           "answer": "二尖瓣關、主動脈瓣關"
         },
@@ -376,41 +390,46 @@
               "q": "左心室壓 20、左心房壓 10、主動脈壓 80 mmHg 時，最合理的瓣膜狀態是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "LV(20) > LA(10) 所以二尖瓣關；LV(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。",
+              "explain": "左心室（LV）(20) > 左心房（LA）(10) 所以二尖瓣關；左心室（LV）(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。",
               "choices": [
                 "二尖瓣關、主動脈瓣關",
                 "二尖瓣開、主動脈瓣關",
                 "二尖瓣關、主動脈瓣開",
                 "兩瓣都開"
-              ]
+              ],
+              "id": "cb0f439f2"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "二尖瓣開：LA 壓 > LV 壓（心房較高，血灌入心室）",
-            "二尖瓣關：LV 壓 > LA 壓",
+            "二尖瓣開：左心房（LA） 壓 > 左心室（LV） 壓（心房較高，血灌入心室）",
+            "二尖瓣關：左心室（LV） 壓 > 左心房（LA） 壓",
             "四腔定出血流的 8 字形路線 → 房室瓣防止血倒流回心房（S1）→ 半月瓣守住心室出口（S2）→ 壓力差決定每一個瓣膜事件。記住最後這條，就不用背瓣膜表。",
-            "瓣膜只聽壓力差，不聽你背表格：二尖瓣開：LA 壓 > LV 壓（心房較高，血灌入心室）",
-            "SV=120−50=70 mL；75 次/min 時 CO=5.25 L/min，100 次/min 時為 7.00 L/min。\nSV=EDV−ESV；CO=HR×SV（mL/min，除以1000得 L/min）；EF=SV/EDV×100%。容積取獨立教學參數。"
+            "瓣膜只聽壓力差，不聽你背表格：二尖瓣開：左心房（LA） 壓 > 左心室（LV） 壓（心房較高，血灌入心室）",
+            "每搏量（SV）=120−50=70 mL；75 次/min 時 心輸出量（CO）=5.25 L/min，100 次/min 時為 7.00 L/min。\n每搏量（SV）=舒張末期容積（EDV）−收縮末期容積（ESV）；心輸出量（CO）=心率（HR）×每搏量（SV）（mL/min，除以1000得 L/min）；EF=每搏量（SV）/舒張末期容積（EDV）×100%。容積取獨立教學參數。"
           ],
           "flash": [
             {
               "front": "瓣膜只聽壓力差，不聽你背表格",
-              "back": "所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。"
+              "back": "所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。",
+              "id": "ffe24c1dd"
             },
             {
               "front": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
-              "back": "SV=120−50=70 mL；75 次/min 時 CO=5.25 L/min，100 次/min 時為 7.00 L/min。\nSV=EDV−ESV；CO=HR×SV（mL/min，除以1000得 L/min）；EF=SV/EDV×100%。容積取獨立教學參數。"
+              "back": "每搏量（SV）=120−50=70 mL；75 次/min 時 心輸出量（CO）=5.25 L/min，100 次/min 時為 7.00 L/min。\n每搏量（SV）=舒張末期容積（EDV）−收縮末期容積（ESV）；心輸出量（CO）=心率（HR）×每搏量（SV）（mL/min，除以1000得 L/min）；EF=每搏量（SV）/舒張末期容積（EDV）×100%。容積取獨立教學參數。",
+              "id": "f21698785"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：瓣膜只聽壓力差，不聽你背表格\n- 所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。\n- 把判斷依據連回題目：LV(20) > LA(10) 所以二尖瓣關；LV(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。"
+              "back": "- 先確認題目問的主題：瓣膜只聽壓力差，不聽你背表格\n- 所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。\n- 把判斷依據連回題目：左心室（LV）(20) > 左心房（LA）(10) 所以二尖瓣關；左心室（LV）(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。",
+              "id": "f2e459390"
             },
             {
               "front": "左心室壓 20、左心房壓 10、主動脈壓 80 mmHg 時，最合理的瓣膜狀態是？",
-              "back": "LV(20) > LA(10) 所以二尖瓣關；LV(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。"
+              "back": "左心室（LV）(20) > 左心房（LA）(10) 所以二尖瓣關；左心室（LV）(20) < AO(80) 所以主動脈瓣也關。這正是等容積收縮期。\n\n正確選項：二尖瓣關、主動脈瓣關。\n所有瓣膜的開關只看一件事：兩側的壓力差。哪一側壓力大，血就往另一側推，門也跟著開或關。把這條記住，整個心動週期都能自己推。",
+              "id": "fb0f439f2"
             }
           ]
         }
@@ -422,22 +441,22 @@
       "goals": [
         "解釋工作心肌做工，節律細胞喊口令（它是心肌，不是神經）",
         "解釋傳導路線是一條固定路徑（右上跑到左下）",
-        "解釋AV delay 是『有意義的慢』——而且有三個機制"
+        "解釋房室傳導延遲（AV delay） 是『有意義的慢』——而且有三個機制"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 2 站：誰喊口令、誰用力擠，還有那個『有意義的慢』",
-          "body": "心臟裡有兩種心肌：工作心肌負責擠血，節律傳導系統負責喊口令。AV delay 是讓心房先收縮的關鍵紅綠燈，背後有三個機制。\n\n- 先分兩種心肌：工作心肌（擠血）vs 節律/傳導細胞（喊口令、是心肌不是神經）。\n- 再記一條固定路線：SA → 心房 → AV → His → 束支 → Purkinje。\n- 重點搞懂 AV delay 為什麼要『故意慢』（三個機制），以及 pre-excitation 怎麼走捷徑。"
+          "body": "心臟裡有兩種心肌：工作心肌負責擠血，節律傳導系統負責喊口令。房室傳導延遲（AV delay） 是讓心房先收縮的關鍵紅綠燈，背後有三個機制。\n\n- 先分兩種心肌：工作心肌（擠血）vs 節律/傳導細胞（喊口令、是心肌不是神經）。\n- 再記一條固定路線：SA → 心房 → AV → 希氏束（His） → 束支 → 浦肯野（Purkinje）。\n- 重點搞懂 房室傳導延遲 為什麼要『故意慢』（三個機制），以及 預激（pre-excitation） 怎麼走捷徑。"
         },
         {
           "type": "card",
           "title": "工作心肌做工，節律細胞喊口令（它是心肌，不是神經）",
-          "body": "**連到前一觀念**\n要看懂傳導，先分清楚心臟裡兩種完全不同的細胞。\n\n**觀念**\n工作心肌（atrial / ventricular myocyte，又叫 working muscle）負責收縮擠血；節律與傳導系統（SA node、AV node、His、束支、Purkinje）負責產生並傳遞節律訊號。\n\n**為什麼**\n節律系統會製造又會傳動作電位，所以很多人誤以為它是『神經』——其實它是特化的心肌（conducting system）。正常由 SA node 主導節律；AV junction 與 His–Purkinje 系統亦有潛在自律性，通常受較快竇房結節律抑制。竇房結失效時可出現保護性的逸搏，不能把所有非竇房結自發節律都視為病理。\n\n**考試角度**\n- 工作心肌：心房肌、心室肌 → 收縮做工\n- 節律/傳導：SA、AV、His、束支、Purkinje → 是心肌不是神經\n- 正常起搏點 pacemaker＝SA node（自發放電最快）\n\n**易錯與比較**\n節律傳導系統會放電就把它當神經，是最常見的誤解。它是 conducting system，本質仍是心肌。",
+          "body": "**連到前一觀念**\n要看懂傳導，先分清楚心臟裡兩種完全不同的細胞。\n\n**觀念**\n工作心肌（atrial / ventricular myocyte，又叫 working muscle）負責收縮擠血；節律與傳導系統（SA node、AV node、His、束支、Purkinje）負責產生並傳遞節律訊號。\n\n**為什麼**\n節律系統會製造又會傳動作電位，所以很多人誤以為它是『神經』——其實它是特化的心肌（conducting system）。正常由 竇房結（SA node） 主導節律；AV junction 與 希氏束（His）–浦肯野（Purkinje） 系統亦有潛在自律性，通常受較快竇房結節律抑制。竇房結失效時可出現保護性的逸搏，不能把所有非竇房結自發節律都視為病理。\n\n**考試角度**\n- 工作心肌：心房肌、心室肌 → 收縮做工\n- 節律/傳導：SA、AV、希氏束、束支、浦肯野 → 是心肌不是神經\n- 正常起搏點 節律器（pacemaker）＝竇房結（自發放電最快）\n\n**易錯與比較**\n節律傳導系統會放電就把它當神經，是最常見的誤解。它是 conducting system，本質仍是心肌。",
           "keys": [
             "工作心肌：心房肌、心室肌 → 收縮做工",
-            "節律/傳導：SA、AV、His、束支、Purkinje → 是心肌不是神經",
-            "正常起搏點 pacemaker＝SA node（自發放電最快）"
+            "節律/傳導：SA、AV、希氏束（His）、束支、浦肯野（Purkinje） → 是心肌不是神經",
+            "正常起搏點 節律器（pacemaker）＝竇房結（SA node）（自發放電最快）"
           ],
           "tip": "節律傳導系統會放電就把它當神經，是最常見的誤解。它是 conducting system，本質仍是心肌。"
         },
@@ -447,24 +466,25 @@
           "q": "正常心臟主要的起搏點（pacemaker）是哪一個？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "SA node 自發放電最快，是正常節律的起點，所以叫主起搏點。\n\n正確選項：SA node 竇房結。\n工作心肌（atrial / ventricular myocyte，又叫 working muscle）負責收縮擠血；節律與傳導系統（SA node、AV node、His、束支、Purkinje）負責產生並傳遞節律訊號。",
+          "explain": "竇房結（SA node） 自發放電最快，是正常節律的起點，所以叫主起搏點。\n\n正確選項：竇房結（SA node） 竇房結。\n工作心肌（atrial / ventricular myocyte，又叫 working muscle）負責收縮擠血；節律與傳導系統（SA node、AV node、His、束支、Purkinje）負責產生並傳遞節律訊號。",
           "choices": [
-            "SA node 竇房結",
-            "AV node 房室結",
-            "Purkinje fiber",
+            "竇房結（SA node） 竇房結",
+            "房室結（AV node） 房室結",
+            "浦肯野纖維（Purkinje fiber）",
             "左束支"
-          ]
+          ],
+          "id": "c4beb7a5c"
         },
         {
           "type": "card",
           "title": "傳導路線是一條固定路徑（右上跑到左下）",
-          "body": "**連到前一觀念**\n知道有節律系統後，要記住訊號跑的固定路線。\n\n**觀念**\n訊號由 SA node 發出，傳遍心房後到 AV node，再經 His bundle、左右束支、Purkinje fiber 快速送到兩側心室。整條路線的方向大致是『右上 → 左下』。\n\n**為什麼**\nPurkinje 末端分成超多分支、深入厚厚的心室壁，才能讓整片心室肌幾乎同步去極化，正常 QRS 因此又窄又快。注意：左束支有兩條、右束支只有一條，因為左心室壁更厚，需要更強的輸出才電得開。\n\n**考試角度**\n- 路線：SA node → 心房 → AV node → His → 束支 → Purkinje\n- QRS 窄 = 心室快速同步去極化\n- LBB 兩條、RBB 一條（左心室較厚）；QRS 變寬＝傳導變慢（如束支阻斷）\n\n**易錯與比較**\nQRS 變寬不是『心臟比較強』，而是心室沒辦法同步、傳導變慢。",
+          "body": "**連到前一觀念**\n知道有節律系統後，要記住訊號跑的固定路線。\n\n**觀念**\n訊號由 竇房結（SA node） 發出，傳遍心房後到 房室結（AV node），再經 希氏束（His bundle）、左右束支、浦肯野纖維（Purkinje fiber） 快速送到兩側心室。整條路線的方向大致是『右上 → 左下』。\n\n**為什麼**\n浦肯野（Purkinje） 末端分成超多分支、深入厚厚的心室壁，才能讓整片心室肌幾乎同步去極化，正常 QRS 波群（QRS） 因此又窄又快。注意：左束支有兩條、右束支只有一條，因為左心室壁更厚，需要更強的輸出才電得開。\n\n**考試角度**\n- 路線：竇房結 → 心房 → 房室結 → 希氏束（His） → 束支 → 浦肯野\n- QRS 波群 窄 = 心室快速同步去極化\n- 左束支（LBB） 兩條、右束支（RBB） 一條（左心室較厚）；QRS 波群 變寬＝傳導變慢（如束支阻斷）\n\n**易錯與比較**\nQRS 波群 變寬不是『心臟比較強』，而是心室沒辦法同步、傳導變慢。",
           "keys": [
-            "路線：SA node → 心房 → AV node → His → 束支 → Purkinje",
-            "QRS 窄 = 心室快速同步去極化",
-            "LBB 兩條、RBB 一條（左心室較厚）；QRS 變寬＝傳導變慢（如束支阻斷）"
+            "路線：竇房結（SA node） → 心房 → 房室結（AV node） → 希氏束（His） → 束支 → 浦肯野（Purkinje）",
+            "QRS 波群（QRS） 窄 = 心室快速同步去極化",
+            "左束支（LBB） 兩條、右束支（RBB） 一條（左心室較厚）；QRS 波群（QRS） 變寬＝傳導變慢（如束支阻斷）"
           ],
-          "tip": "QRS 變寬不是『心臟比較強』，而是心室沒辦法同步、傳導變慢。"
+          "tip": "QRS 波群（QRS） 變寬不是『心臟比較強』，而是心室沒辦法同步、傳導變慢。"
         },
         {
           "type": "check",
@@ -472,49 +492,51 @@
           "q": "為什麼左束支（LBB）有兩條、右束支（RBB）只有一條？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "左心室壁明顯比右心室厚，需要更強、更分散的輸出才能同步電開，所以 LBB 分兩條。\n\n正確選項：左心室壁較厚，需要更強的同步輸出。\n訊號由 SA node 發出，傳遍心房後到 AV node，再經 His bundle、左右束支、Purkinje fiber 快速送到兩側心室。整條路線的方向大致是『右上 → 左下』。",
+          "explain": "左心室壁明顯比右心室厚，需要更強、更分散的輸出才能同步電開，所以 左束支（LBB） 分兩條。\n\n正確選項：左心室壁較厚，需要更強的同步輸出。\n訊號由 竇房結（SA node） 發出，傳遍心房後到 房室結（AV node），再經 希氏束（His bundle）、左右束支、浦肯野纖維（Purkinje fiber） 快速送到兩側心室。整條路線的方向大致是『右上 → 左下』。",
           "choices": [
             "左心室壁較厚，需要更強的同步輸出",
             "左心房比較大",
             "右心室不需要收縮",
-            "右邊沒有 Purkinje"
-          ]
+            "右邊沒有 浦肯野（Purkinje）"
+          ],
+          "id": "ca8dddb2f"
         },
         {
           "type": "card",
-          "title": "AV delay 是『有意義的慢』——而且有三個機制",
-          "body": "**連到前一觀念**\n路線上有一個地方故意變慢，這個慢非常重要，老師特別強調它的三個原因。\n\n**觀念**\n訊號到 AV node 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 ECG 上的 PR interval（正常約 0.12–0.20 秒）。\n\n**為什麼**\n為什麼這裡會慢？有三個被廣泛接受的機制：① transitional fiber 的纖維『粗 → 細 → 粗』，細的地方傳導慢（用神經學的直覺：細傳得慢）；② AV node 的鉀離子通道特別多，膜電位被往負拉、比較難去極化；③ 這裡的 gap junction 比其他心肌少，細胞間接力比較慢。三個加起來，就把訊號『煞車』。\n\n**考試角度**\n- AV delay 對應 ECG 的 PR interval（約 0.12–0.20 秒）\n- 三機制：transitional fiber 粗-細-粗、Ca²⁺ 依賴的上升支較慢、gap junction 少\n- PR 過長 → 提示 AV block（房室傳導阻滯）\n\n**易錯與比較**\nPR interval 量的是『心房開始去極化到心室開始去極化』，卡點主要在 AV node，不是 SA node。",
+          "title": "房室傳導延遲（AV delay） 是『有意義的慢』——而且有三個機制",
+          "body": "**連到前一觀念**\n路線上有一個地方故意變慢，這個慢非常重要，老師特別強調它的三個原因。\n\n**觀念**\n訊號到 房室結（AV node） 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 心電圖（ECG） 上的 PR 間期（PR interval）（正常約 0.12–0.20 秒）。\n\n**為什麼**\n為什麼這裡會慢？有三個被廣泛接受的機制：① transitional fiber 的纖維『粗 → 細 → 粗』，細的地方傳導慢（用神經學的直覺：細傳得慢）；② 房室結 的鉀離子通道特別多，膜電位被往負拉、比較難去極化；③ 這裡的 間隙接合（gap junction） 比其他心肌少，細胞間接力比較慢。三個加起來，就把訊號『煞車』。\n\n**考試角度**\n- 房室傳導延遲（AV delay） 對應 心電圖 的 PR 間期（約 0.12–0.20 秒）\n- 三機制：transitional fiber 粗-細-粗、Ca²⁺ 依賴的上升支較慢、間隙接合 少\n- PR 過長 → 提示 AV block（房室傳導阻滯）\n\n**易錯與比較**\nPR 間期 量的是『心房開始去極化到心室開始去極化』，卡點主要在 房室結，不是 竇房結（SA node）。",
           "keys": [
-            "AV delay 對應 ECG 的 PR interval（約 0.12–0.20 秒）",
-            "三機制：transitional fiber 粗-細-粗、Ca²⁺ 依賴的上升支較慢、gap junction 少",
+            "房室傳導延遲（AV delay） 對應 心電圖（ECG） 的 PR 間期（PR interval）（約 0.12–0.20 秒）",
+            "三機制：transitional fiber 粗-細-粗、Ca²⁺ 依賴的上升支較慢、間隙接合（gap junction） 少",
             "PR 過長 → 提示 AV block（房室傳導阻滯）"
           ],
-          "tip": "PR interval 量的是『心房開始去極化到心室開始去極化』，卡點主要在 AV node，不是 SA node。"
+          "tip": "PR 間期（PR interval） 量的是『心房開始去極化到心室開始去極化』，卡點主要在 房室結（AV node），不是 竇房結（SA node）。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "下列何者不是造成 AV delay（房室延遲）的機制？",
+          "q": "下列何者不是造成 房室傳導延遲（AV delay）（房室延遲）的機制？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "AV delay 來自纖維粗細、Ca²⁺ 依賴的上升支較慢、gap junction 少這三點；Purkinje 分支多是讓心室同步、與延遲無關。\n\n正確選項：AV node 的 Purkinje 分支特別多。\n訊號到 AV node 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 ECG 上的 PR interval（正常約 0.12–0.20 秒）。",
+          "explain": "房室傳導延遲（AV delay） 來自纖維粗細、Ca²⁺ 依賴的上升支較慢、間隙接合（gap junction） 少這三點；浦肯野（Purkinje） 分支多是讓心室同步、與延遲無關。\n\n正確選項：房室結（AV node） 的 浦肯野（Purkinje） 分支特別多。\n訊號到 房室結（AV node） 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 心電圖（ECG） 上的 PR 間期（PR interval）（正常約 0.12–0.20 秒）。",
           "choices": [
-            "AV node 的 Purkinje 分支特別多",
+            "房室結（AV node） 的 浦肯野（Purkinje） 分支特別多",
             "transitional fiber 呈現粗-細-粗、細處傳導慢",
-            "AV node 鉀離子通道較多",
-            "AV node 的 gap junction 較少"
-          ]
+            "房室結（AV node） 鉀離子通道較多",
+            "房室結（AV node） 的 間隙接合（gap junction） 較少"
+          ],
+          "id": "c711c3fe3"
         },
         {
           "type": "example",
-          "title": "範例拆解：AV delay 是『有意義的慢』——而且有三個機制",
-          "problem": "下列何者不是造成 AV delay（房室延遲）的機制？\n\nA. AV node 的 Purkinje 分支特別多\nB. transitional fiber 呈現粗-細-粗、細處傳導慢\nC. AV node 鉀離子通道較多\nD. AV node 的 gap junction 較少",
+          "title": "範例拆解：房室傳導延遲（AV delay） 是『有意義的慢』——而且有三個機制",
+          "problem": "下列何者不是造成 房室傳導延遲（AV delay）（房室延遲）的機制？\n\nA. 房室結（AV node） 的 浦肯野（Purkinje） 分支特別多\nB. transitional fiber 呈現粗-細-粗、細處傳導慢\nC. 房室結（AV node） 鉀離子通道較多\nD. 房室結（AV node） 的 間隙接合（gap junction） 較少",
           "steps": [
-            "先確認題目問的主題：AV delay 是『有意義的慢』——而且有三個機制",
-            "訊號到 AV node 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 ECG 上的 PR interval（正常約 0.12–0.20 秒）。",
-            "把判斷依據連回題目：AV delay 來自纖維粗細、Ca²⁺ 依賴的上升支較慢、gap junction 少這三點；Purkinje 分支多是讓心室同步、與延遲無關。\n\n正確選項：AV node 的 Purkinje 分支特別多。\n訊號到 AV node 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 ECG 上的 PR interval（正常約 0.12–0.20 秒）。"
+            "先確認題目問的主題：房室傳導延遲（AV delay） 是『有意義的慢』——而且有三個機制",
+            "訊號到 房室結（AV node） 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 心電圖（ECG） 上的 PR 間期（PR interval）（正常約 0.12–0.20 秒）。",
+            "把判斷依據連回題目：房室傳導延遲（AV delay） 來自纖維粗細、Ca²⁺ 依賴的上升支較慢、間隙接合（gap junction） 少這三點；浦肯野（Purkinje） 分支多是讓心室同步、與延遲無關。\n\n正確選項：房室結（AV node） 的 浦肯野（Purkinje） 分支特別多。\n訊號到 房室結（AV node） 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 心電圖（ECG） 上的 PR 間期（PR interval）（正常約 0.12–0.20 秒）。"
           ],
-          "answer": "AV node 的 Purkinje 分支特別多"
+          "answer": "房室結（AV node） 的 浦肯野（Purkinje） 分支特別多"
         },
         {
           "type": "practice",
@@ -529,26 +551,28 @@
               "q": "為什麼左束支（LBB）有兩條、右束支（RBB）只有一條？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "左心室壁明顯比右心室厚，需要更強、更分散的輸出才能同步電開，所以 LBB 分兩條。\n\n正確選項：左心室壁較厚，需要更強的同步輸出。\n訊號由 SA node 發出，傳遍心房後到 AV node，再經 His bundle、左右束支、Purkinje fiber 快速送到兩側心室。整條路線的方向大致是『右上 → 左下』。",
+              "explain": "左心室壁明顯比右心室厚，需要更強、更分散的輸出才能同步電開，所以 左束支（LBB） 分兩條。\n\n正確選項：左心室壁較厚，需要更強的同步輸出。\n訊號由 竇房結（SA node） 發出，傳遍心房後到 房室結（AV node），再經 希氏束（His bundle）、左右束支、浦肯野纖維（Purkinje fiber） 快速送到兩側心室。整條路線的方向大致是『右上 → 左下』。",
               "choices": [
                 "左心室壁較厚，需要更強的同步輸出",
                 "左心房比較大",
                 "右心室不需要收縮",
-                "右邊沒有 Purkinje"
-              ]
+                "右邊沒有 浦肯野（Purkinje）"
+              ],
+              "id": "ca8dddb2f"
             },
             {
               "kind": "single",
-              "q": "下列何者不是造成 AV delay（房室延遲）的機制？",
+              "q": "下列何者不是造成 房室傳導延遲（AV delay）（房室延遲）的機制？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "AV delay 來自纖維粗細、Ca²⁺ 依賴的上升支較慢、gap junction 少這三點；Purkinje 分支多是讓心室同步、與延遲無關。\n\n正確選項：AV node 的 Purkinje 分支特別多。\n訊號到 AV node 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 ECG 上的 PR interval（正常約 0.12–0.20 秒）。",
+              "explain": "房室傳導延遲（AV delay） 來自纖維粗細、Ca²⁺ 依賴的上升支較慢、間隙接合（gap junction） 少這三點；浦肯野（Purkinje） 分支多是讓心室同步、與延遲無關。\n\n正確選項：房室結（AV node） 的 浦肯野（Purkinje） 分支特別多。\n訊號到 房室結（AV node） 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 心電圖（ECG） 上的 PR 間期（PR interval）（正常約 0.12–0.20 秒）。",
               "choices": [
-                "AV node 的 Purkinje 分支特別多",
+                "房室結（AV node） 的 浦肯野（Purkinje） 分支特別多",
                 "transitional fiber 呈現粗-細-粗、細處傳導慢",
-                "AV node 鉀離子通道較多",
-                "AV node 的 gap junction 較少"
-              ]
+                "房室結（AV node） 鉀離子通道較多",
+                "房室結（AV node） 的 間隙接合（gap junction） 較少"
+              ],
+              "id": "c711c3fe3"
             }
           ]
         },
@@ -556,29 +580,33 @@
           "type": "recap",
           "points": [
             "工作心肌：心房肌、心室肌 → 收縮做工",
-            "節律/傳導：SA、AV、His、束支、Purkinje → 是心肌不是神經",
-            "路線：SA node → 心房 → AV node → His → 束支 → Purkinje",
-            "QRS 窄 = 心室快速同步去極化",
-            "AV delay 對應 ECG 的 PR interval（約 0.12–0.20 秒）",
-            "三機制：transitional fiber 粗-細-粗、Ca²⁺ 依賴的上升支較慢、gap junction 少",
-            "工作心肌做工、節律系統發號施令 → 訊號沿固定路線跑 → AV node 用三個機制故意延遲，讓心房先填血 → 繞過延遲就是 pre-excitation（WPW/LGL）。這條路線之後對應到 ECG 的 P、PR、QRS。"
+            "節律/傳導：SA、AV、希氏束（His）、束支、浦肯野（Purkinje） → 是心肌不是神經",
+            "路線：竇房結（SA node） → 心房 → 房室結（AV node） → 希氏束（His） → 束支 → 浦肯野（Purkinje）",
+            "QRS 波群（QRS） 窄 = 心室快速同步去極化",
+            "房室傳導延遲（AV delay） 對應 心電圖（ECG） 的 PR 間期（PR interval）（約 0.12–0.20 秒）",
+            "三機制：transitional fiber 粗-細-粗、Ca²⁺ 依賴的上升支較慢、間隙接合（gap junction） 少",
+            "工作心肌做工、節律系統發號施令 → 訊號沿固定路線跑 → 房室結（AV node） 用三個機制故意延遲，讓心房先填血 → 繞過延遲就是 預激（pre-excitation）（WPW/LGL）。這條路線之後對應到 心電圖（ECG） 的 P、PR、QRS 波群（QRS）。"
           ],
           "flash": [
             {
               "front": "工作心肌做工，節律細胞喊口令（它是心肌，不是神經）",
-              "back": "工作心肌（atrial / ventricular myocyte，又叫 working muscle）負責收縮擠血；節律與傳導系統（SA node、AV node、His、束支、Purkinje）負責產生並傳遞節律訊號。"
+              "back": "工作心肌（atrial / ventricular myocyte，又叫 working muscle）負責收縮擠血；節律與傳導系統（SA node、AV node、His、束支、Purkinje）負責產生並傳遞節律訊號。",
+              "id": "f3781b5ec"
             },
             {
               "front": "傳導路線是一條固定路徑（右上跑到左下）",
-              "back": "訊號由 SA node 發出，傳遍心房後到 AV node，再經 His bundle、左右束支、Purkinje fiber 快速送到兩側心室。整條路線的方向大致是『右上 → 左下』。"
+              "back": "訊號由 竇房結（SA node） 發出，傳遍心房後到 房室結（AV node），再經 希氏束（His bundle）、左右束支、浦肯野纖維（Purkinje fiber） 快速送到兩側心室。整條路線的方向大致是『右上 → 左下』。",
+              "id": "f036204ae"
             },
             {
-              "front": "AV delay 是『有意義的慢』——而且有三個機制",
-              "back": "訊號到 AV node 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 ECG 上的 PR interval（正常約 0.12–0.20 秒）。"
+              "front": "房室傳導延遲（AV delay） 是『有意義的慢』——而且有三個機制",
+              "back": "訊號到 房室結（AV node） 會故意慢一下（AV delay），讓心房先收縮、把血灌進心室，之後心室才收縮。這段延遲對應 心電圖（ECG） 上的 PR 間期（PR interval）（正常約 0.12–0.20 秒）。",
+              "id": "f3dec3416"
             },
             {
               "front": "正常心臟主要的起搏點（pacemaker）是哪一個？",
-              "back": "SA node 自發放電最快，是正常節律的起點，所以叫主起搏點。\n\n正確選項：SA node 竇房結。\n工作心肌（atrial / ventricular myocyte，又叫 working muscle）負責收縮擠血；節律與傳導系統（SA node、AV node、His、束支、Purkinje）負責產生並傳遞節律訊號。"
+              "back": "竇房結（SA node） 自發放電最快，是正常節律的起點，所以叫主起搏點。\n\n正確選項：竇房結（SA node） 竇房結。\n工作心肌（atrial / ventricular myocyte，又叫 working muscle）負責收縮擠血；節律與傳導系統（SA node、AV node、His、束支、Purkinje）負責產生並傳遞節律訊號。",
+              "id": "f4beb7a5c"
             }
           ]
         }
@@ -588,65 +616,67 @@
       "id": "cardio-conduction-2",
       "title": "第 2 站：誰喊口令、誰用力擠，還有那個『有意義的慢』（2）",
       "goals": [
-        "解釋Pre-excitation 會繞過 AV delay：WPW vs LGL"
+        "解釋預激（Pre-excitation） 會繞過 房室傳導延遲（AV delay）：沃夫－巴金森－懷特症候群（WPW） vs LGL"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 2 站：誰喊口令、誰用力擠，還有那個『有意義的慢』",
-          "body": "心臟裡有兩種心肌：工作心肌負責擠血，節律傳導系統負責喊口令。AV delay 是讓心房先收縮的關鍵紅綠燈，背後有三個機制。\n\n- 先分兩種心肌：工作心肌（擠血）vs 節律/傳導細胞（喊口令、是心肌不是神經）。\n- 再記一條固定路線：SA → 心房 → AV → His → 束支 → Purkinje。\n- 重點搞懂 AV delay 為什麼要『故意慢』（三個機制），以及 pre-excitation 怎麼走捷徑。"
+          "body": "心臟裡有兩種心肌：工作心肌負責擠血，節律傳導系統負責喊口令。房室傳導延遲（AV delay） 是讓心房先收縮的關鍵紅綠燈，背後有三個機制。\n\n- 先分兩種心肌：工作心肌（擠血）vs 節律/傳導細胞（喊口令、是心肌不是神經）。\n- 再記一條固定路線：SA → 心房 → AV → 希氏束（His） → 束支 → 浦肯野（Purkinje）。\n- 重點搞懂 房室傳導延遲 為什麼要『故意慢』（三個機制），以及 預激（pre-excitation） 怎麼走捷徑。"
         },
         {
           "type": "card",
-          "title": "Pre-excitation 會繞過 AV delay：WPW vs LGL",
-          "body": "**連到前一觀念**\n如果有人偷走捷徑、繞過那個『有意義的慢』，ECG 會怎樣？\n\n**觀念**\nPre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。\n\n**為什麼**\n正常一定要排隊等 AV delay，但旁路像沒有紅綠燈的捷徑，訊號提早抵達心室，所以 PR（PR segment）變短。WPW 的旁路直接接到一般心室肌、不是走 conducting system，傳得慢，去極化起步慢慢爬，就畫出斜斜的 delta wave。LGL 繞過後又回到正常路徑（His-束支），所以 PR 短但沒有 delta。\n\n**考試角度**\n- WPW：PR 縮短 + delta wave（旁路直接電一般心室肌）\n- LGL：PR 縮短、無 delta wave（繞過後回到正常路徑）\n- 共同重點：no normal AV delay（沒有正常房室延遲）\n\n**易錯與比較**\ndelta wave 的斜坡，是因為訊號走在『一般心肌』上電得慢；不是心室特別強。",
+          "title": "預激（Pre-excitation） 會繞過 房室傳導延遲（AV delay）：沃夫－巴金森－懷特症候群（WPW） vs LGL",
+          "body": "**連到前一觀念**\n如果有人偷走捷徑、繞過那個『有意義的慢』，心電圖（ECG） 會怎樣？\n\n**觀念**\n預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波。\n\n**為什麼**\n正常一定要排隊等 房室傳導延遲（AV delay），但旁路像沒有紅綠燈的捷徑，訊號提早抵達心室，所以 PR（PR segment）變短。沃夫－巴金森－懷特症候群 的旁路直接接到一般心室肌、不是走 conducting system，傳得慢，去極化起步慢慢爬，就畫出斜斜的 δ 波。LGL 繞過後又回到正常路徑（His-束支），所以 PR 短但沒有 delta。\n\n**考試角度**\n- 沃夫－巴金森－懷特症候群：PR 縮短 + δ 波（旁路直接電一般心室肌）\n- LGL：PR 縮短、無 δ 波（繞過後回到正常路徑）\n- 共同重點：no normal 房室傳導延遲（沒有正常房室延遲）\n\n**易錯與比較**\nδ 波 的斜坡，是因為訊號走在『一般心肌』上電得慢；不是心室特別強。",
           "keys": [
-            "WPW：PR 縮短 + delta wave（旁路直接電一般心室肌）",
-            "LGL：PR 縮短、無 delta wave（繞過後回到正常路徑）",
-            "共同重點：no normal AV delay（沒有正常房室延遲）"
+            "沃夫－巴金森－懷特症候群（WPW）：PR 縮短 + δ 波（delta wave）（旁路直接電一般心室肌）",
+            "LGL：PR 縮短、無 δ 波（delta wave）（繞過後回到正常路徑）",
+            "共同重點：no normal 房室傳導延遲（AV delay）（沒有正常房室延遲）"
           ],
-          "tip": "delta wave 的斜坡，是因為訊號走在『一般心肌』上電得慢；不是心室特別強。"
+          "tip": "δ 波（delta wave） 的斜坡，是因為訊號走在『一般心肌』上電得慢；不是心室特別強。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "WPW 的典型 ECG 提示是哪一組？",
+          "q": "沃夫－巴金森－懷特症候群（WPW） 的典型 心電圖（ECG） 提示是哪一組？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "WPW = PR 縮短 + delta wave，因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 delta wave。\nPre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。",
+          "explain": "沃夫－巴金森－懷特症候群（WPW） = PR 縮短 + δ 波（delta wave），因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 δ 波（delta wave）。\n預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。",
           "choices": [
-            "PR 變短且有 delta wave",
-            "PR 變長且 QRS 消失",
+            "PR 變短且有 δ 波（delta wave）",
+            "PR 變長且 QRS 波群（QRS） 消失",
             "QT 變短且 T 波消失",
             "RR interval 完全固定"
-          ]
+          ],
+          "id": "c24103b4a"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\nWPW 的典型 ECG 提示是哪一組？\n\nA. PR 變短且有 delta wave\nB. PR 變長且 QRS 消失\nC. QT 變短且 T 波消失\nD. RR interval 完全固定\n\n**判斷步驟**\n- 先確認題目問的主題：Pre-excitation 會繞過 AV delay：WPW vs LGL\n- Pre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。\n- 把判斷依據連回題目：WPW = PR 縮短 + delta wave，因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 delta wave。\nPre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。\n\n**結論與依據**\nPR 變短且有 delta wave",
+          "body": "**情境**\n沃夫－巴金森－懷特症候群（WPW） 的典型 心電圖（ECG） 提示是哪一組？\n\nA. PR 變短且有 δ 波（delta wave）\nB. PR 變長且 QRS 波群（QRS） 消失\nC. QT 變短且 T 波消失\nD. RR interval 完全固定\n\n**判斷步驟**\n- 先確認題目問的主題：預激（Pre-excitation） 會繞過 房室傳導延遲（AV delay）：沃夫－巴金森－懷特症候群 vs LGL\n- 預激（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群 典型是 PR 變短 + δ 波；LGL 是 PR 變短但沒有 δ 波。\n- 把判斷依據連回題目：沃夫－巴金森－懷特症候群 = PR 縮短 + δ 波，因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 δ 波。\n預激（預先興奮）代表訊號透過旁路繞過 房室結 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群 典型是 PR 變短 + δ 波；LGL 是 PR 變短但沒有 δ 波。\n\n**結論與依據**\nPR 變短且有 δ 波",
           "keys": [
-            "PR 變短且有 delta wave"
+            "PR 變短且有 δ 波（delta wave）"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "PR 變短且有 delta wave",
+          "answer": "PR 變短且有 δ 波（delta wave）",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：Pre-excitation 會繞過 AV delay：WPW vs LGL\n- Pre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。\n- 把判斷依據連回題目：WPW = PR 縮短 + delta wave，因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 delta wave。\nPre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。"
+          "explain": "- 先確認題目問的主題：預激（Pre-excitation） 會繞過 房室傳導延遲（AV delay）：沃夫－巴金森－懷特症候群（WPW） vs LGL\n- 預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。\n- 把判斷依據連回題目：沃夫－巴金森－懷特症候群（WPW） = PR 縮短 + δ 波（delta wave），因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 δ 波（delta wave）。\n預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。",
+          "id": "c0b86c1a1"
         },
         {
           "type": "example",
-          "title": "範例拆解：Pre-excitation 會繞過 AV delay：WPW vs LGL",
-          "problem": "WPW 的典型 ECG 提示是哪一組？\n\nA. PR 變短且有 delta wave\nB. PR 變長且 QRS 消失\nC. QT 變短且 T 波消失\nD. RR interval 完全固定",
+          "title": "範例拆解：預激（Pre-excitation） 會繞過 房室傳導延遲（AV delay）：沃夫－巴金森－懷特症候群（WPW） vs LGL",
+          "problem": "沃夫－巴金森－懷特症候群（WPW） 的典型 心電圖（ECG） 提示是哪一組？\n\nA. PR 變短且有 δ 波（delta wave）\nB. PR 變長且 QRS 波群（QRS） 消失\nC. QT 變短且 T 波消失\nD. RR interval 完全固定",
           "steps": [
-            "先確認題目問的主題：Pre-excitation 會繞過 AV delay：WPW vs LGL",
-            "Pre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。",
-            "把判斷依據連回題目：WPW = PR 縮短 + delta wave，因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 delta wave。\nPre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。"
+            "先確認題目問的主題：預激（Pre-excitation） 會繞過 房室傳導延遲（AV delay）：沃夫－巴金森－懷特症候群（WPW） vs LGL",
+            "預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。",
+            "把判斷依據連回題目：沃夫－巴金森－懷特症候群（WPW） = PR 縮短 + δ 波（delta wave），因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 δ 波（delta wave）。\n預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。"
           ],
-          "answer": "PR 變短且有 delta wave"
+          "answer": "PR 變短且有 δ 波（delta wave）"
         },
         {
           "type": "practice",
@@ -658,44 +688,49 @@
           "checks": [
             {
               "kind": "single",
-              "q": "WPW 的典型 ECG 提示是哪一組？",
+              "q": "沃夫－巴金森－懷特症候群（WPW） 的典型 心電圖（ECG） 提示是哪一組？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "WPW = PR 縮短 + delta wave，因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 delta wave。\nPre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。",
+              "explain": "沃夫－巴金森－懷特症候群（WPW） = PR 縮短 + δ 波（delta wave），因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 δ 波（delta wave）。\n預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。",
               "choices": [
-                "PR 變短且有 delta wave",
-                "PR 變長且 QRS 消失",
+                "PR 變短且有 δ 波（delta wave）",
+                "PR 變長且 QRS 波群（QRS） 消失",
                 "QT 變短且 T 波消失",
                 "RR interval 完全固定"
-              ]
+              ],
+              "id": "c24103b4a"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "WPW：PR 縮短 + delta wave（旁路直接電一般心室肌）",
-            "LGL：PR 縮短、無 delta wave（繞過後回到正常路徑）",
-            "工作心肌做工、節律系統發號施令 → 訊號沿固定路線跑 → AV node 用三個機制故意延遲，讓心房先填血 → 繞過延遲就是 pre-excitation（WPW/LGL）。這條路線之後對應到 ECG 的 P、PR、QRS。",
-            "Pre-excitation 會繞過 AV delay：WPW vs LGL：WPW：PR 縮短 + delta wave（旁路直接電一般心室肌）",
-            "WPW = PR 縮短 + delta wave，因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 delta wave。\nPre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。"
+            "沃夫－巴金森－懷特症候群（WPW）：PR 縮短 + δ 波（delta wave）（旁路直接電一般心室肌）",
+            "LGL：PR 縮短、無 δ 波（delta wave）（繞過後回到正常路徑）",
+            "工作心肌做工、節律系統發號施令 → 訊號沿固定路線跑 → 房室結（AV node） 用三個機制故意延遲，讓心房先填血 → 繞過延遲就是 預激（pre-excitation）（WPW/LGL）。這條路線之後對應到 心電圖（ECG） 的 P、PR、QRS 波群（QRS）。",
+            "預激（Pre-excitation） 會繞過 房室傳導延遲（AV delay）：沃夫－巴金森－懷特症候群（WPW） vs LGL：沃夫－巴金森－懷特症候群（WPW）：PR 縮短 + δ 波（delta wave）（旁路直接電一般心室肌）",
+            "沃夫－巴金森－懷特症候群（WPW） = PR 縮短 + δ 波（delta wave），因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 δ 波（delta wave）。\n預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。"
           ],
           "flash": [
             {
-              "front": "Pre-excitation 會繞過 AV delay：WPW vs LGL",
-              "back": "Pre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。"
+              "front": "預激（Pre-excitation） 會繞過 房室傳導延遲（AV delay）：沃夫－巴金森－懷特症候群（WPW） vs LGL",
+              "back": "預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。",
+              "id": "fbac34170"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：Pre-excitation 會繞過 AV delay：WPW vs LGL\n- Pre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。\n- 把判斷依據連回題目：WPW = PR 縮短 + delta wave，因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 delta wave。\nPre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。"
+              "back": "- 先確認題目問的主題：預激（Pre-excitation） 會繞過 房室傳導延遲（AV delay）：沃夫－巴金森－懷特症候群（WPW） vs LGL\n- 預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。\n- 把判斷依據連回題目：沃夫－巴金森－懷特症候群（WPW） = PR 縮短 + δ 波（delta wave），因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 δ 波（delta wave）。\n預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。",
+              "id": "f0b86c1a1"
             },
             {
-              "front": "WPW 的典型 ECG 提示是哪一組？",
-              "back": "WPW = PR 縮短 + delta wave，因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 delta wave。\nPre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。"
+              "front": "沃夫－巴金森－懷特症候群（WPW） 的典型 心電圖（ECG） 提示是哪一組？",
+              "back": "沃夫－巴金森－懷特症候群（WPW） = PR 縮短 + δ 波（delta wave），因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 δ 波（delta wave）。\n預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。",
+              "id": "f24103b4a"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：Pre-excitation 會繞過 AV delay：WPW vs LGL\n- Pre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。\n- 把判斷依據連回題目：WPW = PR 縮短 + delta wave，因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 delta wave。\nPre-excitation（預先興奮）代表訊號透過旁路繞過 AV node 的正常延遲，提早叫醒心室。WPW 典型是 PR 變短 + delta wave；LGL 是 PR 變短但沒有 delta wave。"
+              "back": "- 先確認題目問的主題：預激（Pre-excitation） 會繞過 房室傳導延遲（AV delay）：沃夫－巴金森－懷特症候群（WPW） vs LGL\n- 預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。\n- 把判斷依據連回題目：沃夫－巴金森－懷特症候群（WPW） = PR 縮短 + δ 波（delta wave），因為旁路提早、且走一般心肌慢慢激動心室。\n\n正確選項：PR 變短且有 δ 波（delta wave）。\n預激（Pre-excitation）（預先興奮）代表訊號透過旁路繞過 房室結（AV node） 的正常延遲，提早叫醒心室。沃夫－巴金森－懷特症候群（WPW） 典型是 PR 變短 + δ 波（delta wave）；LGL 是 PR 變短但沒有 δ 波（delta wave）。",
+              "id": "f0b86c1a1"
             }
           ]
         }
@@ -703,28 +738,28 @@
     },
     {
       "id": "cardio-ecg-1",
-      "title": "第 3 站：ECG 不要背圖，跟老師一格一格把波推出來（1）",
+      "title": "第 3 站：心電圖（ECG） 不要背圖，跟老師一格一格把波推出來（1）",
       "goals": [
-        "解釋ECG 在記什麼？心臟細胞膜『外』的電位",
+        "解釋心電圖（ECG） 在記什麼？心臟細胞膜『外』的電位",
         "解釋唯一要背的鐵律：正極記到的 − 負極記到的",
         "解釋把一個波從零推出來：去極化→正波、再極化→倒波"
       ],
       "steps": [
         {
           "type": "intro",
-          "title": "第 3 站：ECG 不要背圖，跟老師一格一格把波推出來",
-          "body": "心電圖只有一條鐵律：『正極記到的 − 負極記到的』。它記的是細胞膜外的電位，電流朝正極就往上、離開就往下。把這條記住，每個波都能自己推出來。\n\n- 先搞懂 ECG 在記什麼：細胞膜『外』的電位，而且是非侵入式。\n- 記住唯一公式：正極記到 − 負極記到（每個電極數電荷）。\n- 用這條公式，把一個波從零推出來（去極化→正波、再極化→倒波）。\n- 再加上『導程＝看的角度＋向量投影』，就能解釋 P/Q/R/S/T，甚至 T 波為何向上。"
+          "title": "第 3 站：心電圖（ECG） 不要背圖，跟老師一格一格把波推出來",
+          "body": "心電圖只有一條鐵律：『正極記到的 − 負極記到的』。它記的是細胞膜外的電位，電流朝正極就往上、離開就往下。把這條記住，每個波都能自己推出來。\n\n- 先搞懂 心電圖（ECG） 在記什麼：細胞膜『外』的電位，而且是非侵入式。\n- 記住唯一公式：正極記到 − 負極記到（每個電極數電荷）。\n- 用這條公式，把一個波從零推出來（去極化→正波、再極化→倒波）。\n- 再加上『導程＝看的角度＋向量投影』，就能解釋 P/Q/R/S/T，甚至 T 波為何向上。"
         },
         {
           "type": "card",
-          "title": "ECG 在記什麼？心臟細胞膜『外』的電位",
-          "body": "**連到前一觀念**\n推任何波之前，先確定我們到底在記哪裡的電。\n\n**觀念**\nECG 是非侵入式量測，貼在皮膚上，記到的不可能是細胞『裡面』，而是心肌細胞膜『外』的電位變化。\n\n**為什麼**\n可興奮組織在靜止時是『內負外正』。因為貼片在體表、記的是細胞外，所以靜止時你記到的是正電（外面是正的）。整張 ECG 從頭到尾都在記細胞膜外電荷的合成結果，不是細胞內。先把這件事釘死，後面才不會推錯。\n\n**考試角度**\n- ECG＝記心臟電氣活動，且是非侵入式\n- 記的是細胞膜『外』電位（不是細胞內）\n- 靜止（resting）內負外正 → 體表記到正電\n\n**易錯與比較**\n很多人推 ECG 推錯，第一個錯就在這：以為記的是細胞內。記住——非侵入，所以一律是細胞外。",
+          "title": "心電圖（ECG） 在記什麼？心臟細胞膜『外』的電位",
+          "body": "**連到前一觀念**\n推任何波之前，先確定我們到底在記哪裡的電。\n\n**觀念**\n心電圖（ECG） 是非侵入式量測，貼在皮膚上，記到的不可能是細胞『裡面』，而是心肌細胞膜『外』的電位變化。\n\n**為什麼**\n可興奮組織在靜止時是『內負外正』。因為貼片在體表、記的是細胞外，所以靜止時你記到的是正電（外面是正的）。整張 心電圖 從頭到尾都在記細胞膜外電荷的合成結果，不是細胞內。先把這件事釘死，後面才不會推錯。\n\n**考試角度**\n- 心電圖＝記心臟電氣活動，且是非侵入式\n- 記的是細胞膜『外』電位（不是細胞內）\n- 靜止（resting）內負外正 → 體表記到正電\n\n**易錯與比較**\n很多人推 心電圖 推錯，第一個錯就在這：以為記的是細胞內。記住——非侵入，所以一律是細胞外。",
           "keys": [
-            "ECG＝記心臟電氣活動，且是非侵入式",
+            "心電圖（ECG）＝記心臟電氣活動，且是非侵入式",
             "記的是細胞膜『外』電位（不是細胞內）",
             "靜止（resting）內負外正 → 體表記到正電"
           ],
-          "tip": "很多人推 ECG 推錯，第一個錯就在這：以為記的是細胞內。記住——非侵入，所以一律是細胞外。"
+          "tip": "很多人推 心電圖（ECG） 推錯，第一個錯就在這：以為記的是細胞內。記住——非侵入，所以一律是細胞外。"
         },
         {
           "type": "check",
@@ -732,22 +767,23 @@
           "q": "心電圖貼在體表，記錄到的是哪裡的電位變化？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "ECG 是非侵入式，記的是細胞膜外電位的合成結果，不是細胞內。\n\n正確選項：心肌細胞膜外。\nECG 是非侵入式量測，貼在皮膚上，記到的不可能是細胞『裡面』，而是心肌細胞膜『外』的電位變化。",
+          "explain": "心電圖（ECG） 是非侵入式，記的是細胞膜外電位的合成結果，不是細胞內。\n\n正確選項：心肌細胞膜外。\n心電圖（ECG） 是非侵入式量測，貼在皮膚上，記到的不可能是細胞『裡面』，而是心肌細胞膜『外』的電位變化。",
           "choices": [
             "心肌細胞膜外",
             "心肌細胞內",
             "血液裡的離子",
             "骨骼肌"
-          ]
+          ],
+          "id": "ca1891163"
         },
         {
           "type": "card",
           "title": "唯一要背的鐵律：正極記到的 − 負極記到的",
-          "body": "**連到前一觀念**\n知道記細胞外之後，接著只要一條公式就能算出波形。\n\n**觀念**\n雙極導程的數值＝正極記到的電位 − 負極記到的電位。這是定義，不要問為什麼，記起來就好。\n\n**為什麼**\n把每個電極想成『會數電荷的小眼睛』。假設一個電極一次只數 4 顆電荷：靜止時細胞外全是正電，正極數到 +4、負極也數到 +4，正減負 = 0，所以 ECG 是一條停在零位的平線。等到某邊去極化、外面變負，兩個電極數到的就不一樣，正減負不再是 0，筆就開始上下跑。\n\n**考試角度**\n- 公式：正極 − 負極（定義，背起來）\n- 靜止：兩極都記到正電 → 相減 = 0 → 平線\n- Lead II = Lead I + Lead III（Einthoven 三角）\n\n**公式**\n雙極導程值 = 正極記到的 − 負極記到的\n\n**易錯與比較**\n符號別反：是『正極減負極』。把減反了，整個波形上下顛倒。",
+          "body": "**連到前一觀念**\n知道記細胞外之後，接著只要一條公式就能算出波形。\n\n**觀念**\n雙極導程的數值＝正極記到的電位 − 負極記到的電位。這是定義，不要問為什麼，記起來就好。\n\n**為什麼**\n把每個電極想成『會數電荷的小眼睛』。假設一個電極一次只數 4 顆電荷：靜止時細胞外全是正電，正極數到 +4、負極也數到 +4，正減負 = 0，所以 心電圖（ECG） 是一條停在零位的平線。等到某邊去極化、外面變負，兩個電極數到的就不一樣，正減負不再是 0，筆就開始上下跑。\n\n**考試角度**\n- 公式：正極 − 負極（定義，背起來）\n- 靜止：兩極都記到正電 → 相減 = 0 → 平線\n- 導程（Lead） II = 導程 I + 導程 III（Einthoven 三角）\n\n**公式**\n雙極導程值 = 正極記到的 − 負極記到的\n\n**易錯與比較**\n符號別反：是『正極減負極』。把減反了，整個波形上下顛倒。",
           "keys": [
             "公式：正極 − 負極（定義，背起來）",
             "靜止：兩極都記到正電 → 相減 = 0 → 平線",
-            "Lead II = Lead I + Lead III（Einthoven 三角）"
+            "導程（Lead） II = 導程（Lead） I + 導程（Lead） III（Einthoven 三角）"
           ],
           "tip": "符號別反：是『正極減負極』。把減反了，整個波形上下顛倒。"
         },
@@ -763,7 +799,8 @@
             "心臟沒有電",
             "正極壞掉",
             "細胞內沒有鉀離子"
-          ]
+          ],
+          "id": "ca52746ec"
         },
         {
           "type": "card",
@@ -779,7 +816,7 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "一段心肌去極化，方向朝著導程正極前進，ECG 會出現？",
+          "q": "一段心肌去極化，方向朝著導程正極前進，心電圖（ECG） 會出現？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
           "explain": "電荷移動方向朝向正極，正減負由 0 往上爬，畫出正向波。\n\n正確選項：正向波（往上）。\n讓去極化從一端掃過一條心肌：細胞外由正翻負，這個『負區』往前推進。當電荷移動方向朝向正極，正減負就由 0 往上爬，畫出一個正波；去極化掃完又回到 0。接著再極化從同一端開始，畫出方向相反的倒波。",
@@ -787,13 +824,14 @@
             "正向波（往上）",
             "倒向波（往下）",
             "完全沒有波",
-            "一定是 QRS"
-          ]
+            "一定是 QRS 波群（QRS）"
+          ],
+          "id": "c8594102d"
         },
         {
           "type": "example",
           "title": "範例拆解：把一個波從零推出來：去極化→正波、再極化→倒波",
-          "problem": "一段心肌去極化，方向朝著導程正極前進，ECG 會出現？\n\nA. 正向波（往上）\nB. 倒向波（往下）\nC. 完全沒有波\nD. 一定是 QRS",
+          "problem": "一段心肌去極化，方向朝著導程正極前進，心電圖（ECG） 會出現？\n\nA. 正向波（往上）\nB. 倒向波（往下）\nC. 完全沒有波\nD. 一定是 QRS 波群（QRS）",
           "steps": [
             "先確認題目問的主題：把一個波從零推出來：去極化→正波、再極化→倒波",
             "讓去極化從一端掃過一條心肌：細胞外由正翻負，這個『負區』往前推進。當電荷移動方向朝向正極，正減負就由 0 往上爬，畫出一個正波；去極化掃完又回到 0。接著再極化從同一端開始，畫出方向相反的倒波。",
@@ -803,7 +841,7 @@
         },
         {
           "type": "practice",
-          "title": "實戰：第 3 站：ECG 不要背圖，跟老師一格一格把波推出來",
+          "title": "實戰：第 3 站：心電圖（ECG） 不要背圖，跟老師一格一格把波推出來",
           "qids": [
             "s114-physio-course114-u10-11-phys-10-11-01",
             "s114-physio-course114-u10-11-phys-10-11-02"
@@ -820,11 +858,12 @@
                 "心臟沒有電",
                 "正極壞掉",
                 "細胞內沒有鉀離子"
-              ]
+              ],
+              "id": "ca52746ec"
             },
             {
               "kind": "single",
-              "q": "一段心肌去極化，方向朝著導程正極前進，ECG 會出現？",
+              "q": "一段心肌去極化，方向朝著導程正極前進，心電圖（ECG） 會出現？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
               "explain": "電荷移動方向朝向正極，正減負由 0 往上爬，畫出正向波。\n\n正確選項：正向波（往上）。\n讓去極化從一端掃過一條心肌：細胞外由正翻負，這個『負區』往前推進。當電荷移動方向朝向正極，正減負就由 0 往上爬，畫出一個正波；去極化掃完又回到 0。接著再極化從同一端開始，畫出方向相反的倒波。",
@@ -832,38 +871,43 @@
                 "正向波（往上）",
                 "倒向波（往下）",
                 "完全沒有波",
-                "一定是 QRS"
-              ]
+                "一定是 QRS 波群（QRS）"
+              ],
+              "id": "c8594102d"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "ECG＝記心臟電氣活動，且是非侵入式",
+            "心電圖（ECG）＝記心臟電氣活動，且是非侵入式",
             "記的是細胞膜『外』電位（不是細胞內）",
             "公式：正極 − 負極（定義，背起來）",
             "靜止：兩極都記到正電 → 相減 = 0 → 平線",
             "去極化朝正極前進 → 正向波",
             "再極化方向相反 → 倒向波",
-            "ECG 記細胞膜外電位 → 公式只有『正極 − 負極』 → 電流朝正極往上、離開往下 → P/QRS/T 是心房去極化、心室去極化、心室再極化 → T 波因『負負得正』而向上 → 紙速 25mm/s、用 300 法則算心率。"
+            "心電圖（ECG） 記細胞膜外電位 → 公式只有『正極 − 負極』 → 電流朝正極往上、離開往下 → P/QRS 波群（QRS）/T 是心房去極化、心室去極化、心室再極化 → T 波因『負負得正』而向上 → 紙速 25mm/s、用 300 法則算心率。"
           ],
           "flash": [
             {
-              "front": "ECG 在記什麼？心臟細胞膜『外』的電位",
-              "back": "ECG 是非侵入式量測，貼在皮膚上，記到的不可能是細胞『裡面』，而是心肌細胞膜『外』的電位變化。"
+              "front": "心電圖（ECG） 在記什麼？心臟細胞膜『外』的電位",
+              "back": "心電圖（ECG） 是非侵入式量測，貼在皮膚上，記到的不可能是細胞『裡面』，而是心肌細胞膜『外』的電位變化。",
+              "id": "f830b45e7"
             },
             {
               "front": "唯一要背的鐵律：正極記到的 − 負極記到的",
-              "back": "雙極導程的數值＝正極記到的電位 − 負極記到的電位。這是定義，不要問為什麼，記起來就好。"
+              "back": "雙極導程的數值＝正極記到的電位 − 負極記到的電位。這是定義，不要問為什麼，記起來就好。",
+              "id": "f9bb8ff27"
             },
             {
               "front": "把一個波從零推出來：去極化→正波、再極化→倒波",
-              "back": "讓去極化從一端掃過一條心肌：細胞外由正翻負，這個『負區』往前推進。當電荷移動方向朝向正極，正減負就由 0 往上爬，畫出一個正波；去極化掃完又回到 0。接著再極化從同一端開始，畫出方向相反的倒波。"
+              "back": "讓去極化從一端掃過一條心肌：細胞外由正翻負，這個『負區』往前推進。當電荷移動方向朝向正極，正減負就由 0 往上爬，畫出一個正波；去極化掃完又回到 0。接著再極化從同一端開始，畫出方向相反的倒波。",
+              "id": "f21e2472c"
             },
             {
               "front": "心電圖貼在體表，記錄到的是哪裡的電位變化？",
-              "back": "ECG 是非侵入式，記的是細胞膜外電位的合成結果，不是細胞內。\n\n正確選項：心肌細胞膜外。\nECG 是非侵入式量測，貼在皮膚上，記到的不可能是細胞『裡面』，而是心肌細胞膜『外』的電位變化。"
+              "back": "心電圖（ECG） 是非侵入式，記的是細胞膜外電位的合成結果，不是細胞內。\n\n正確選項：心肌細胞膜外。\n心電圖（ECG） 是非侵入式量測，貼在皮膚上，記到的不可能是細胞『裡面』，而是心肌細胞膜『外』的電位變化。",
+              "id": "fa1891163"
             }
           ]
         }

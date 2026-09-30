@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}
+.w{padding:8px 12px}.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:5px 0}
+button{font:inherit;padding:4px 10px;border:1px solid #b9a784;background:#fff;border-radius:6px;cursor:pointer}
+button.on{background:#2e2116;color:#fff}button.big{background:#c0392b;color:#fff;border-color:#c0392b;font-weight:bold}
+.box{background:#fff;border:1px solid #d8cbb0;border-radius:8px;padding:6px 10px;margin-top:6px;line-height:1.55}
+.dials{display:flex;gap:8px;justify-content:center}.dials svg{width:48%;max-width:260px;height:auto;background:#fff;border:2px solid #d8cbb0;border-radius:8px}
+.dials svg.pick{border-color:#1d7a3a;box-shadow:0 0 0 3px #bfe3c8}
+.note{font-size:14px;color:#6b5a45}.say{font-weight:bold;color:#1d4f9a}
+</style></head><body><div class="w">
+<div class="note">觀察重點：找軸度時 JCC <b>跨軸</b>、追紅點（負散綜合驗光儀）；找度數時 JCC <b>對軸</b>，紅點面清楚＝接受 → 加 −0.25 DC。每改 −0.50 DC 要補 +0.25 DS。</div>
+<div class="row"><b>步驟：</b><button id="mA" class="on">c. 找精確軸度（跨軸）</button><button id="mP">b/d. 找度數（對軸）</button>
+<button id="np">新病人</button><label><input type="checkbox" id="hi"> 中高度散光</label></div>
+<div class="row"><b>綜合驗光儀：</b>軸 <button data-a="-15">−15°</button><button data-a="-5">−5°</button><button data-a="-1">−1°</button><button data-a="1">+1°</button><button data-a="5">+5°</button><button data-a="15">+15°</button>
+　柱鏡 <button data-c="-0.25">加 −0.25 DC</button><button data-c="0.25">減 −0.25 DC</button></div>
+<div class="row"><button class="big" id="ask">翻轉 JCC，問病人「1 還是 2 比較清楚？」</button><button id="rev">揭曉答案</button></div>
+<div class="dials"><svg id="d1" viewBox="0 0 260 170"></svg><svg id="d2" viewBox="0 0 260 170"></svg></div>
+<div class="box" id="out"></div>
+<div class="note">畫法：檢查者面對病人看，0° 在右、逆時鐘增加（處方只寫 1～180°）。藍色三角形＝綜合驗光儀柱鏡軸；紅點＝JCC 負散軸（最正度數），白點＝正散軸。模擬以屈光力向量計算殘餘散光，並假設球面已正確補償。</div>
+</div><script>
+const $=id=>document.getElementById(id),R=Math.PI/180;
+let mode='A',E={},P={},n=0,last=null;
+const f=v=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(2),ax=a=>{a=((Math.round(a)%180)+180)%180;return a===0?180:a};
+const J=(C,t)=>[-(C/2)*Math.cos(2*t*R),-(C/2)*Math.sin(2*t*R)];
+function blur(redAxis){const N=J(E.C,E.a),Q=J(P.C,P.a),K=redAxis==null?[0,0]:[0.25*Math.cos(2*redAxis*R),0.25*Math.sin(2*redAxis*R)];
+ return Math.hypot(N[0]-Q[0]-K[0],N[1]-Q[1]-K[1])}
+function reds(){return mode==='A'?[P.a+45,P.a-45]:[P.a,P.a+90]}
+function newPt(){const hi=$('hi').checked;E={C:-(hi?(Math.floor(Math.random()*7)+8)/4:(Math.floor(Math.random()*6)+3)/4),a:Math.floor(Math.random()*180)+1};
+ const off=(Math.random()<.5?-1:1)*(hi?(4+Math.floor(Math.random()*6)):(10+Math.floor(Math.random()*16)));
+ P={C:Math.max(-0.5,E.C+(Math.random()<.5?0.25:0.5)),a:ax(E.a+off)};if(mode==='P'){P.a=E.a}n=0;last=null;draw('新病人就位：已完成最佳球面（或初始球面）。先問病人，再依回答調整。')}
+function dial(svg,red,lab,pick){const c=[130,112],r=80;let g=`<text x="10" y="20" font-size="15" font-weight="bold">${lab}</text>`;
+ g+=`<path d="M${c[0]-r-14},${c[1]} A${r+14},${r+14} 0 0 1 ${c[0]+r+14},${c[1]}" fill="none" stroke="#bbb"/>`;
+ for(let t=0;t<=180;t+=15){const L=t%45?6:12,x1=c[0]+(r+14)*Math.cos(t*R),y1=c[1]-(r+14)*Math.sin(t*R),x2=c[0]+(r+14-L)*Math.cos(t*R),y2=c[1]-(r+14-L)*Math.sin(t*R);g+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#888"/>`;if(t%45===0)g+=`<text x="${c[0]+(r+28)*Math.cos(t*R)}" y="${c[1]-(r+28)*Math.sin(t*R)+5}" font-size="13" text-anchor="middle" fill="#666">${t}</text>`}
+ g+=`<circle cx="${c[0]}" cy="${c[1]}" r="${r-8}" fill="#e7eef7" stroke="#333" stroke-width="2"/>`;
+ for(const s of[0,180]){const t=(P.a+s)*R,x=c[0]+(r+4)*Math.cos(t),y=c[1]-(r+4)*Math.sin(t);g+=`<circle cx="${x}" cy="${y}" r="7" fill="#1f5fbf"/>`}
+ g+=`<line x1="${c[0]-(r-8)*Math.cos(P.a*R)}" y1="${c[1]+(r-8)*Math.sin(P.a*R)}" x2="${c[0]+(r-8)*Math.cos(P.a*R)}" y2="${c[1]-(r-8)*Math.sin(P.a*R)}" stroke="#1f5fbf" stroke-dasharray="4 4"/>`;
+ for(const s of[0,180]){let t=(red+s)*R;g+=`<circle cx="${c[0]+48*Math.cos(t)}" cy="${c[1]-48*Math.sin(t)}" r="9" fill="#d23c30" stroke="#333"/>`;t=(red+90+s)*R;g+=`<circle cx="${c[0]+48*Math.cos(t)}" cy="${c[1]-48*Math.sin(t)}" r="9" fill="#fff" stroke="#333"/>`}
+ svg.innerHTML=g;svg.classList.toggle('pick',!!pick)}
+function draw(msg){const[r1,r2]=reds();dial($('d1'),r1,'位置 1',last===1);dial($('d2'),r2,'位置 2',last===2);
+ $('out').innerHTML=`綜合驗光儀：<b>${f(P.C)} DC × ${ax(P.a)}</b>；球面補償：柱鏡每 −0.50 DC 要 +0.25 DS（目前需比最佳球面 ${f(-P.C/2)} DS）<br>已詢問 ${n} 次。${msg||''}`}
+$('ask').onclick=()=>{n++;const[r1,r2]=reds(),b1=blur(r1),b2=blur(r2);let s;
+ if(Math.abs(b1-b2)<0.03){last=0;s='「<span class="say">兩個差不多一樣</span>」'}else if(b1<b2){last=1;s='「<span class="say">1 比較清楚</span>」'}else{last=2;s='「<span class="say">2 比較清楚</span>」'}
+ let tip='';if(mode==='A'&&last)tip=`→ 被選的那一面紅點在 ${ax(last===1?r1:r2)}°，把柱鏡軸往紅點方向轉（${(last===1)?'逆時鐘，度數變大':'順時鐘，度數變小'}）。`;
+ if(mode==='A'&&!last)tip='→ 兩面一樣：這就是軸度終點。';
+ if(mode==='P')tip=last===1?'→ 紅點對軸的一面較清楚＝接受：加 −0.25 DC。':last===2?'→ 白點對軸的一面較清楚＝拒絕：減 −0.25 DC（或回到上一個接受的度數）。':'→ 一樣＝接受；再加一次確認，第二次「一樣」就是拒絕，終點是第一次「一樣」。';
+ draw(`病人說：${s} ${tip}`)};
+document.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{P.a=ax(P.a+ +b.dataset.a);last=null;draw()});
+document.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>{P.C=Math.min(0,Math.round((P.C+ +b.dataset.c)*4)/4);last=null;draw()});
+$('mA').onclick=()=>{mode='A';$('mA').classList.add('on');$('mP').classList.remove('on');last=null;draw('找軸度：JCC 的兩個主軸跨在柱鏡軸兩側（A 字對軸）。')};
+$('mP').onclick=()=>{mode='P';$('mP').classList.add('on');$('mA').classList.remove('on');last=null;draw('找度數：JCC 的紅點／白點對齊柱鏡軸（P 字對軸）。')};
+$('np').onclick=newPt;
+$('rev').onclick=()=>{const d=Math.abs(((ax(P.a)-E.a+90)%180+180)%180-90);draw(`答案：病人需要 <b>${f(E.C)} DC × ${E.a}</b>；你的軸差 ${d}°、度數差 ${f(P.C-E.C)} D；殘餘散光約 ${(2*blur(null)).toFixed(2)} D。`)};
+newPt();
+</script></body></html>

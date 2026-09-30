@@ -1,0 +1,400 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-optometry-keratometry-p2",
+  "subject": "optometry",
+  "unit": "第06單元 角膜曲率測量：K 值與角膜地圖",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "視光學",
+    "第06單元 角膜曲率測量：K 值與角膜地圖"
+  ],
+  "title": "角膜曲率測量：K 值與角膜地圖（2）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://frabjous-druid-ff547a.netlify.app/",
+  "level": 2,
+  "minutes": 45,
+  "order": 6,
+  "source": "https://frabjous-druid-ff547a.netlify.app/",
+  "tags": [
+    "角膜曲率測量：K 值與角膜地圖"
+  ],
+  "lessons": [
+    {
+      "id": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "goals": [
+        "解釋單元路線"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "單元路線",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。",
+          "keys": [
+            "把本單元的關係串起來，確認易錯条件與方向。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "answer": "- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。"
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。\n- 把判斷依據連回題目：- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。\n\n**結論與依據**\n- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。",
+          "keys": [
+            "- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：單元路線\n- - 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。\n- 把判斷依據連回題目：- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：單元路線",
+          "problem": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：單元路線",
+            "- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。",
+            "把判斷依據連回題目：- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。"
+          ],
+          "answer": "- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-optometry-exam106-u06-opt-q0002",
+            "s114-optometry-exam106-u06-opt-q0003"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "answer": "- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把本單元的關係串起來，確認易錯条件與方向。",
+            "單元路線：把本單元的關係串起來，確認易錯条件與方向。",
+            "- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。",
+            "- 先確認題目問的主題：單元路線\n- - 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。\n- 把判斷依據連回題目：- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。",
+            "- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。"
+          ],
+          "flash": [
+            {
+              "front": "單元路線",
+              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。\n- 把判斷依據連回題目：- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。"
+            },
+            {
+              "front": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "back": "- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。\n- 把判斷依據連回題目：- 先抓角膜曲率和屈光力的關係：越陡度數越高，越平度數越低。\n- 再理解 keratometer 是看 mire 反射，不是在量整眼球面處方。\n- 接著把 K reading 轉成角膜散光、WTR/ATR/oblique 與負柱鏡軸位。\n- 最後用 topography 看更大範圍，辨認不規則散光與圓錐角膜。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-1",
+      "title": "整合驗收 1",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：角膜曲率測量：K 值與角膜地圖",
+          "body": "K reading 是各子午線角膜屈光力。\n\n正確選項：power meridian。\n",
+          "keys": [
+            "K reading 是各子午線角膜屈光力。\n\n正確選項：power meridian。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Keratometer 的 K reading 記錄的是？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "K reading 是各子午線角膜屈光力。\n\n正確選項：power meridian。\n",
+          "choices": [
+            "power meridian",
+            "RAPD grade",
+            "PD",
+            "retinoscopy endpoint"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：角膜曲率測量：K 值與角膜地圖",
+          "body": "最小屈光度子午線為 flat K，也是負柱鏡軸方向。\n\n正確選項：flat K 方向就是負柱鏡 axis。\n",
+          "keys": [
+            "最小屈光度子午線為 flat K，也是負柱鏡軸方向。\n\n正確選項：flat K 方向就是負柱鏡 axis。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "flat K 與負柱鏡 axis 的關係是？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "最小屈光度子午線為 flat K，也是負柱鏡軸方向。\n\n正確選項：flat K 方向就是負柱鏡 axis。\n",
+          "choices": [
+            "flat K 方向就是負柱鏡 axis",
+            "永遠相差 45 度",
+            "無關",
+            "只看瞳孔大小"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：角膜曲率測量：K 值與角膜地圖",
+          "body": "46-42 = 4D。\n\n正確選項：4D。\n",
+          "keys": [
+            "46-42 = 4D。\n\n正確選項：4D。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "42.00@010; 46.00@100 的角膜散光量是？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "46-42 = 4D。\n\n正確選項：4D。\n",
+          "choices": [
+            "1D",
+            "2D",
+            "4D",
+            "6D"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "Keratometer 的 K reading 記錄的是？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "K reading 是各子午線角膜屈光力。\n\n正確選項：power meridian。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "power meridian"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Keratometer 的 K reading 記錄的是？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "K reading 是各子午線角膜屈光力。\n\n正確選項：power meridian。\n",
+              "choices": [
+                "power meridian",
+                "RAPD grade",
+                "PD",
+                "retinoscopy endpoint"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "flat K 與負柱鏡 axis 的關係是？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "最小屈光度子午線為 flat K，也是負柱鏡軸方向。\n\n正確選項：flat K 方向就是負柱鏡 axis。\n",
+              "choices": [
+                "flat K 方向就是負柱鏡 axis",
+                "永遠相差 45 度",
+                "無關",
+                "只看瞳孔大小"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "42.00@010; 46.00@100 的角膜散光量是？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "46-42 = 4D。\n\n正確選項：4D。\n",
+              "choices": [
+                "1D",
+                "2D",
+                "4D",
+                "6D"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "K reading 是各子午線角膜屈光力。\n\n正確選項：power meridian。\n",
+            "最小屈光度子午線為 flat K，也是負柱鏡軸方向。\n\n正確選項：flat K 方向就是負柱鏡 axis。\n",
+            "46-42 = 4D。\n\n正確選項：4D。\n",
+            "K reading 是各子午線角膜屈光力。\n\n正確選項：power meridian。\n",
+            "最小屈光度子午線為 flat K，也是負柱鏡軸方向。\n\n正確選項：flat K 方向就是負柱鏡 axis。\n"
+          ],
+          "flash": [
+            {
+              "front": "Keratometer 的 K reading 記錄的是？",
+              "back": "K reading 是各子午線角膜屈光力。\n\n正確選項：power meridian。\n"
+            },
+            {
+              "front": "flat K 與負柱鏡 axis 的關係是？",
+              "back": "最小屈光度子午線為 flat K，也是負柱鏡軸方向。\n\n正確選項：flat K 方向就是負柱鏡 axis。\n"
+            },
+            {
+              "front": "42.00@010; 46.00@100 的角膜散光量是？",
+              "back": "46-42 = 4D。\n\n正確選項：4D。\n"
+            },
+            {
+              "front": "Keratometer 的 K reading 記錄的是？",
+              "back": "K reading 是各子午線角膜屈光力。\n\n正確選項：power meridian。\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-2",
+      "title": "整合驗收 2",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：角膜曲率測量：K 值與角膜地圖",
+          "body": "紅較陡，藍紫較平。\n\n正確選項：較平。\n",
+          "keys": [
+            "紅較陡，藍紫較平。\n\n正確選項：較平。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "topography 熱圖藍紫色通常代表？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "紅較陡，藍紫較平。\n\n正確選項：較平。\n",
+          "choices": [
+            "較平",
+            "較陡",
+            "一定感染",
+            "一定水腫"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\ntopography 熱圖藍紫色通常代表？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- 紅較陡，藍紫較平。\n\n正確選項：較平。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\n較平",
+          "keys": [
+            "較平"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "較平",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 確認題目問的構造、條件或量。\n- 紅較陡，藍紫較平。\n\n正確選項：較平。\n- 將判斷依據連到正確選項。"
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "topography 熱圖藍紫色通常代表？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "紅較陡，藍紫較平。\n\n正確選項：較平。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "較平"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "topography 熱圖藍紫色通常代表？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "紅較陡，藍紫較平。\n\n正確選項：較平。\n",
+              "choices": [
+                "較平",
+                "較陡",
+                "一定感染",
+                "一定水腫"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "紅較陡，藍紫較平。\n\n正確選項：較平。\n",
+            "- 確認題目問的構造、條件或量。\n- 紅較陡，藍紫較平。\n\n正確選項：較平。\n- 將判斷依據連到正確選項。",
+            "紅較陡，藍紫較平。\n\n正確選項：較平。\n",
+            "- 確認題目問的構造、條件或量。\n- 紅較陡，藍紫較平。\n\n正確選項：較平。\n- 將判斷依據連到正確選項。",
+            "紅較陡，藍紫較平。\n\n正確選項：較平。\n"
+          ],
+          "flash": [
+            {
+              "front": "topography 熱圖藍紫色通常代表？",
+              "back": "紅較陡，藍紫較平。\n\n正確選項：較平。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- 紅較陡，藍紫較平。\n\n正確選項：較平。\n- 將判斷依據連到正確選項。"
+            },
+            {
+              "front": "topography 熱圖藍紫色通常代表？",
+              "back": "紅較陡，藍紫較平。\n\n正確選項：較平。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- 紅較陡，藍紫較平。\n\n正確選項：較平。\n- 將判斷依據連到正確選項。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

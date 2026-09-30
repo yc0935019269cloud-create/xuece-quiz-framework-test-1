@@ -34,7 +34,7 @@
         {
           "type": "card",
           "title": "單元路線",
-          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
           "keys": [
             "把本單元的關係串起來，確認易錯条件與方向。"
           ],
@@ -44,41 +44,44 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
-          "answer": "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。",
+          "answer": "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+          "explain": "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
+          "id": "c3226c9fa"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。\n\n**結論與依據**\n- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens ",
+          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離 固定。\n- 再判斷 視網膜的 反射 的 with / against / 中和，並用 夾逼法 找 終點。\n- 接著把兩條主經線轉成 綜合驗光儀 上的 球面度數、柱鏡度數、軸向。\n- 最後檢查 工作距離鏡片 是否已扣，並用 再次確認 接到主觀驗光。\n\n**結論與依據**\n- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離 固定。\n- 再判斷 視網膜的 反射 的 with / against / 中和，並用 夾逼法 找 終點。\n- 接著把兩條主經線轉成 綜合驗光儀 上的 球面度數、柱鏡度數、軸向。\n- 最後檢查 工作距離鏡片 ",
           "keys": [
-            "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+            "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。",
+          "answer": "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+          "explain": "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
+          "id": "cda05e6b9"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "是否已扣，並用 double check 接到主觀驗光。",
+          "body": "是否已扣，並用 再次確認（double check） 接到主觀驗光。",
           "keys": [
-            "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+            "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。",
+          "answer": "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+          "explain": "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
+          "id": "cda05e6b9"
         },
         {
           "type": "example",
@@ -86,10 +89,10 @@
           "problem": "用自己的話說明「單元路線」，並說出一個判斷依據。",
           "steps": [
             "先確認題目問的主題：單元路線",
-            "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。",
-            "把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+            "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
+            "把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。"
           ],
-          "answer": "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+          "answer": "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。"
         },
         {
           "type": "practice",
@@ -102,9 +105,10 @@
             {
               "kind": "self",
               "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
-              "answer": "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。",
+              "answer": "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+              "explain": "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
+              "id": "c3226c9fa"
             }
           ]
         },
@@ -113,26 +117,30 @@
           "points": [
             "把本單元的關係串起來，確認易錯条件與方向。",
             "單元路線：把本單元的關係串起來，確認易錯条件與方向。",
-            "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。",
-            "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。",
-            "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+            "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
+            "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
+            "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。"
           ],
           "flash": [
             {
               "front": "單元路線",
-              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+              "back": "把本單元的關係串起來，確認易錯条件與方向。",
+              "id": "f2e39b5df"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+              "back": "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
+              "id": "fda05e6b9"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+              "back": "- 先確認題目問的主題：單元路線\n- - 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。\n- 把判斷依據連回題目：- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
+              "id": "fda05e6b9"
             },
             {
               "front": "用自己的話說明「單元路線」，並說出一個判斷依據。",
-              "back": "- 先建立正確檢影環境：病人看遠、站位不遮擋、working distance 固定。\n- 再判斷 retinal reflex 的 with / against / neutral，並用 bracketing 找 endpoint。\n- 接著把兩條主經線轉成 phoropter 上的 sphere、cylinder、axis。\n- 最後檢查 working lens 是否已扣，並用 double check 接到主觀驗光。"
+              "back": "- 先建立正確檢影環境：病人看遠、站位不遮擋、工作距離（working distance） 固定。\n- 再判斷 視網膜的（retinal） 反射（reflex） 的 with / against / 中和（neutral），並用 夾逼法（bracketing） 找 終點（endpoint）。\n- 接著把兩條主經線轉成 綜合驗光儀（phoropter） 上的 球面度數（sphere）、柱鏡度數（cylinder）、軸向（axis）。\n- 最後檢查 工作距離鏡片（working lens） 是否已扣，並用 再次確認（double check） 接到主觀驗光。",
+              "id": "f3226c9fa"
             }
           ]
         }
@@ -153,79 +161,82 @@
         {
           "type": "card",
           "title": "判斷依據：客觀驗光：視網膜檢影與綜合驗光儀",
-          "body": "公式是 Rx = result - working lens。\n\n正確選項：result - working lens。\n",
+          "body": "公式是 Rx = result - 工作距離鏡片（working lens）。\n\n正確選項：result - 工作距離鏡片。\n",
           "keys": [
-            "公式是 Rx = result - working lens。\n\n正確選項：result - working lens。\n"
+            "公式是 Rx = result - 工作距離鏡片（working lens）。\n\n正確選項：result - 工作距離鏡片（working lens）。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "retinoscopy 的 working distance 若未補償，最後 Rx 應如何得到？",
+          "q": "視網膜檢影（retinoscopy） 的 工作距離（working distance） 若未補償，最後 Rx 應如何得到？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "公式是 Rx = result - working lens。\n\n正確選項：result - working lens。\n",
+          "explain": "公式是 Rx = result - 工作距離鏡片（working lens）。\n\n正確選項：result - 工作距離鏡片（working lens）。\n",
           "choices": [
-            "result - working lens",
-            "result + PD",
+            "result - 工作距離鏡片（working lens）",
+            "result + 瞳距（PD）",
             "K 值 × 1.25",
-            "只看 cylinder"
-          ]
+            "只看 柱鏡度數（cylinder）"
+          ],
+          "id": "c5a00955c"
         },
         {
           "type": "card",
           "title": "判斷依據：客觀驗光：視網膜檢影與綜合驗光儀",
-          "body": "第二焦線在視網膜前方時會看到 against motion。\n\n正確選項：against motion。\n",
+          "body": "第二焦線在視網膜前方時會看到 逆動（against motion）。\n\n正確選項：逆動。\n",
           "keys": [
-            "第二焦線在視網膜前方時會看到 against motion。\n\n正確選項：against motion。\n"
+            "第二焦線在視網膜前方時會看到 逆動（against motion）。\n\n正確選項：逆動（against motion）。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "第一主經線用 sphere 中和後，第二主經線預期常看到？",
+          "q": "第一主經線用 球面度數（sphere） 中和後，第二主經線預期常看到？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "第二焦線在視網膜前方時會看到 against motion。\n\n正確選項：against motion。\n",
+          "explain": "第二焦線在視網膜前方時會看到 逆動（against motion）。\n\n正確選項：逆動（against motion）。\n",
           "choices": [
-            "against motion",
-            "miosis",
-            "MCR",
-            "cocaine response"
-          ]
+            "逆動（against motion）",
+            "縮瞳（miosis）",
+            "角膜反射像清楚且規則（MCR）",
+            "古柯鹼（cocaine） 反應（response）"
+          ],
+          "id": "c49915df3"
         },
         {
           "type": "card",
           "title": "判斷依據：客觀驗光：視網膜檢影與綜合驗光儀",
-          "body": "axis knob 控制 cylinder axis。\n\n正確選項：改變柱鏡軸位。\n",
+          "body": "軸向（axis） knob 控制 柱鏡度數（cylinder） 軸向。\n\n正確選項：改變柱鏡軸位。\n",
           "keys": [
-            "axis knob 控制 cylinder axis。\n\n正確選項：改變柱鏡軸位。\n"
+            "軸向（axis） knob 控制 柱鏡度數（cylinder） 軸向（axis）。\n\n正確選項：改變柱鏡軸位。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "負柱鏡 phoropter 中，axis knob 用於？",
+          "q": "負柱鏡 綜合驗光儀（phoropter） 中，軸向（axis） knob 用於？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "axis knob 控制 cylinder axis。\n\n正確選項：改變柱鏡軸位。\n",
+          "explain": "軸向（axis） knob 控制 柱鏡度數（cylinder） 軸向（axis）。\n\n正確選項：改變柱鏡軸位。\n",
           "choices": [
             "改變柱鏡軸位",
-            "改變 PD",
+            "改變 瞳距（PD）",
             "改變瞳孔大小",
             "測角膜地圖"
-          ]
+          ],
+          "id": "c4cb10f01"
         },
         {
           "type": "example",
           "title": "回看第一題的判斷",
-          "problem": "retinoscopy 的 working distance 若未補償，最後 Rx 應如何得到？",
+          "problem": "視網膜檢影（retinoscopy） 的 工作距離（working distance） 若未補償，最後 Rx 應如何得到？",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "公式是 Rx = result - working lens。\n\n正確選項：result - working lens。\n",
+            "公式是 Rx = result - 工作距離鏡片（working lens）。\n\n正確選項：result - 工作距離鏡片（working lens）。\n",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "result - working lens"
+          "answer": "result - 工作距離鏡片（working lens）"
         },
         {
           "type": "practice",
@@ -233,70 +244,77 @@
           "checks": [
             {
               "kind": "single",
-              "q": "retinoscopy 的 working distance 若未補償，最後 Rx 應如何得到？",
+              "q": "視網膜檢影（retinoscopy） 的 工作距離（working distance） 若未補償，最後 Rx 應如何得到？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "公式是 Rx = result - working lens。\n\n正確選項：result - working lens。\n",
+              "explain": "公式是 Rx = result - 工作距離鏡片（working lens）。\n\n正確選項：result - 工作距離鏡片（working lens）。\n",
               "choices": [
-                "result - working lens",
-                "result + PD",
+                "result - 工作距離鏡片（working lens）",
+                "result + 瞳距（PD）",
                 "K 值 × 1.25",
-                "只看 cylinder"
-              ]
+                "只看 柱鏡度數（cylinder）"
+              ],
+              "id": "c5a00955c"
             },
             {
               "kind": "single",
-              "q": "第一主經線用 sphere 中和後，第二主經線預期常看到？",
+              "q": "第一主經線用 球面度數（sphere） 中和後，第二主經線預期常看到？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "第二焦線在視網膜前方時會看到 against motion。\n\n正確選項：against motion。\n",
+              "explain": "第二焦線在視網膜前方時會看到 逆動（against motion）。\n\n正確選項：逆動（against motion）。\n",
               "choices": [
-                "against motion",
-                "miosis",
-                "MCR",
-                "cocaine response"
-              ]
+                "逆動（against motion）",
+                "縮瞳（miosis）",
+                "角膜反射像清楚且規則（MCR）",
+                "古柯鹼（cocaine） 反應（response）"
+              ],
+              "id": "c49915df3"
             },
             {
               "kind": "single",
-              "q": "負柱鏡 phoropter 中，axis knob 用於？",
+              "q": "負柱鏡 綜合驗光儀（phoropter） 中，軸向（axis） knob 用於？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "axis knob 控制 cylinder axis。\n\n正確選項：改變柱鏡軸位。\n",
+              "explain": "軸向（axis） knob 控制 柱鏡度數（cylinder） 軸向（axis）。\n\n正確選項：改變柱鏡軸位。\n",
               "choices": [
                 "改變柱鏡軸位",
-                "改變 PD",
+                "改變 瞳距（PD）",
                 "改變瞳孔大小",
                 "測角膜地圖"
-              ]
+              ],
+              "id": "c4cb10f01"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "公式是 Rx = result - working lens。\n\n正確選項：result - working lens。\n",
-            "第二焦線在視網膜前方時會看到 against motion。\n\n正確選項：against motion。\n",
-            "axis knob 控制 cylinder axis。\n\n正確選項：改變柱鏡軸位。\n",
-            "公式是 Rx = result - working lens。\n\n正確選項：result - working lens。\n",
-            "第二焦線在視網膜前方時會看到 against motion。\n\n正確選項：against motion。\n"
+            "公式是 Rx = result - 工作距離鏡片（working lens）。\n\n正確選項：result - 工作距離鏡片（working lens）。\n",
+            "第二焦線在視網膜前方時會看到 逆動（against motion）。\n\n正確選項：逆動（against motion）。\n",
+            "軸向（axis） knob 控制 柱鏡度數（cylinder） 軸向（axis）。\n\n正確選項：改變柱鏡軸位。\n",
+            "公式是 Rx = result - 工作距離鏡片（working lens）。\n\n正確選項：result - 工作距離鏡片（working lens）。\n",
+            "第二焦線在視網膜前方時會看到 逆動（against motion）。\n\n正確選項：逆動（against motion）。\n"
           ],
           "flash": [
             {
-              "front": "retinoscopy 的 working distance 若未補償，最後 Rx 應如何得到？",
-              "back": "公式是 Rx = result - working lens。\n\n正確選項：result - working lens。\n"
+              "front": "視網膜檢影（retinoscopy） 的 工作距離（working distance） 若未補償，最後 Rx 應如何得到？",
+              "back": "公式是 Rx = result - 工作距離鏡片（working lens）。\n\n正確選項：result - 工作距離鏡片（working lens）。\n",
+              "id": "f5a00955c"
             },
             {
-              "front": "第一主經線用 sphere 中和後，第二主經線預期常看到？",
-              "back": "第二焦線在視網膜前方時會看到 against motion。\n\n正確選項：against motion。\n"
+              "front": "第一主經線用 球面度數（sphere） 中和後，第二主經線預期常看到？",
+              "back": "第二焦線在視網膜前方時會看到 逆動（against motion）。\n\n正確選項：逆動（against motion）。\n",
+              "id": "f49915df3"
             },
             {
-              "front": "負柱鏡 phoropter 中，axis knob 用於？",
-              "back": "axis knob 控制 cylinder axis。\n\n正確選項：改變柱鏡軸位。\n"
+              "front": "負柱鏡 綜合驗光儀（phoropter） 中，軸向（axis） knob 用於？",
+              "back": "軸向（axis） knob 控制 柱鏡度數（cylinder） 軸向（axis）。\n\n正確選項：改變柱鏡軸位。\n",
+              "id": "f4cb10f01"
             },
             {
-              "front": "retinoscopy 的 working distance 若未補償，最後 Rx 應如何得到？",
-              "back": "公式是 Rx = result - working lens。\n\n正確選項：result - working lens。\n"
+              "front": "視網膜檢影（retinoscopy） 的 工作距離（working distance） 若未補償，最後 Rx 應如何得到？",
+              "back": "公式是 Rx = result - 工作距離鏡片（working lens）。\n\n正確選項：result - 工作距離鏡片（working lens）。\n",
+              "id": "f5a00955c"
             }
           ]
         }
@@ -317,51 +335,53 @@
         {
           "type": "card",
           "title": "判斷依據：客觀驗光：視網膜檢影與綜合驗光儀",
-          "body": "三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n",
+          "body": "三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n",
           "keys": [
-            "三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n"
+            "三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "三線平行檢查包含 retinoscope streak、眼底反射與？",
+          "q": "三線平行檢查包含 retinoscope 線狀光帶（streak）、眼底反射與？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n",
+          "explain": "三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n",
           "choices": [
-            "phoropter axis",
-            "near triad",
-            "MRP",
-            "mire regularity"
-          ]
+            "綜合驗光儀（phoropter） 軸向（axis）",
+            "近反應三聯（near triad）",
+            "最大正鏡至最佳視力（MRP）",
+            "測標反射像（mire） regularity"
+          ],
+          "id": "ca3e515aa"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n三線平行檢查包含 retinoscope streak、眼底反射與？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\nphoropter axis",
+          "body": "**情境**\n三線平行檢查包含 retinoscope 線狀光帶（streak）、眼底反射與？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\n綜合驗光儀 軸向",
           "keys": [
-            "phoropter axis"
+            "綜合驗光儀（phoropter） 軸向（axis）"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "phoropter axis",
+          "answer": "綜合驗光儀（phoropter） 軸向（axis）",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n- 將判斷依據連到正確選項。"
+          "explain": "- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n- 將判斷依據連到正確選項。",
+          "id": "ca2d6deb6"
         },
         {
           "type": "example",
           "title": "回看第一題的判斷",
-          "problem": "三線平行檢查包含 retinoscope streak、眼底反射與？",
+          "problem": "三線平行檢查包含 retinoscope 線狀光帶（streak）、眼底反射與？",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n",
+            "三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "phoropter axis"
+          "answer": "綜合驗光儀（phoropter） 軸向（axis）"
         },
         {
           "type": "practice",
@@ -369,44 +389,49 @@
           "checks": [
             {
               "kind": "single",
-              "q": "三線平行檢查包含 retinoscope streak、眼底反射與？",
+              "q": "三線平行檢查包含 retinoscope 線狀光帶（streak）、眼底反射與？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n",
+              "explain": "三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n",
               "choices": [
-                "phoropter axis",
-                "near triad",
-                "MRP",
-                "mire regularity"
-              ]
+                "綜合驗光儀（phoropter） 軸向（axis）",
+                "近反應三聯（near triad）",
+                "最大正鏡至最佳視力（MRP）",
+                "測標反射像（mire） regularity"
+              ],
+              "id": "ca3e515aa"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n",
-            "- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n- 將判斷依據連到正確選項。",
-            "三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n",
-            "- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n- 將判斷依據連到正確選項。",
-            "三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n"
+            "三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n",
+            "- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n- 將判斷依據連到正確選項。",
+            "三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n",
+            "- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n- 將判斷依據連到正確選項。",
+            "三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n"
           ],
           "flash": [
             {
-              "front": "三線平行檢查包含 retinoscope streak、眼底反射與？",
-              "back": "三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n"
+              "front": "三線平行檢查包含 retinoscope 線狀光帶（streak）、眼底反射與？",
+              "back": "三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n",
+              "id": "fa3e515aa"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n- 將判斷依據連到正確選項。"
+              "back": "- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n- 將判斷依據連到正確選項。",
+              "id": "fa2d6deb6"
             },
             {
-              "front": "三線平行檢查包含 retinoscope streak、眼底反射與？",
-              "back": "三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n"
+              "front": "三線平行檢查包含 retinoscope 線狀光帶（streak）、眼底反射與？",
+              "back": "三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n",
+              "id": "fa3e515aa"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：phoropter axis。\n- 將判斷依據連到正確選項。"
+              "back": "- 確認題目問的構造、條件或量。\n- 三者平行才是正確主經線。\n\n正確選項：綜合驗光儀（phoropter） 軸向（axis）。\n- 將判斷依據連到正確選項。",
+              "id": "fa2d6deb6"
             }
           ]
         }

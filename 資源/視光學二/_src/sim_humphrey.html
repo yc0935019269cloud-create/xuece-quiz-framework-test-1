@@ -1,0 +1,42 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}
+.w{padding:8px 12px}.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0}
+button{font:inherit;padding:4px 9px;border:1px solid #b9a784;background:#fff;border-radius:6px;cursor:pointer}button.on{background:#2e2116;color:#fff}
+.plots{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}.plots div{flex:1;min-width:200px;max-width:320px;text-align:center;font-weight:bold}
+svg{width:100%;height:auto;background:#fff;border:1px solid #d8cbb0;border-radius:8px}
+.box{background:#fff;border:1px solid #d8cbb0;border-radius:8px;padding:6px 10px;margin-top:6px;line-height:1.55}
+.note{font-size:14px;color:#6b5a45}input[type=range]{width:160px}
+</style></head><body><div class="w">
+<div class="note">觀察重點：總差值圖（Total deviation）跟「同年齡正常值」比；趨勢偏差圖（Pattern deviation）先扣掉整體下降，再跟「病人自己其他點」比。介質混濁只讓整座視野山丘變矮，所以 TD 一片黑、PD 幾乎正常。</div>
+<div class="row"><b>情境：</b><button data-k="n" class="on">正常</button><button data-k="c">白內障（介質混濁）</button><button data-k="g">青光眼上方弓形缺損</button><button data-k="cg">白內障＋青光眼</button>
+<label>介質混濁 <input id="dep" type="range" min="0" max="15" step="1" value="8"> <b id="depv"></b></label></div>
+<div class="plots"><div>數字型圖示（dB）<svg id="p0" viewBox="0 0 300 250"></svg></div><div>總差值 Total deviation<svg id="p1" viewBox="0 0 300 250"></svg></div><div>趨勢偏差 Pattern deviation<svg id="p2" viewBox="0 0 300 250"></svg></div></div>
+<div class="box" id="out"></div>
+<div class="note">示意：右眼 24-2（54 點，每點相距 6°），盲點在顳側（右）約 15°。正常值與數字為教學用的簡化模型，不是真實常模。dB 越大＝能看到越暗的光＝越敏感；0 dB＝最亮的光也看不到（絕對盲點）。</div>
+</div><script>
+const $=id=>document.getElementById(id);let K='n';
+const rows=[[21,[-9,-3,3,9]],[15,[-15,-9,-3,3,9,15]],[9,[-21,-15,-9,-3,3,9,15,21]],[3,[-27,-21,-15,-9,-3,3,9,15,21]]];
+const pts=[];rows.forEach(([y,xs])=>xs.forEach(x=>{pts.push([x,y]);pts.push([x,-y])}));
+let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647};const noise=pts.map(()=>Math.round((rnd()-0.5)*3));
+const normal=([x,y])=>Math.round(33-0.18*Math.hypot(x,y)+(y>0?-0.5:0));
+const bs=([x,y])=>x===15&&Math.abs(y)===3;
+function glc([x,y]){const e=Math.hypot(x,y);if(y>0&&e>=8&&e<=24&&x<=12)return -(9+Math.round((24-Math.abs(e-16))*0.4));if(y===3&&x<=-21)return -12;return 0}
+function calc(){const d=+$('dep').value;return pts.map((p,i)=>{if(bs(p))return{p,bs:1};const N=normal(p);let v=N+noise[i];
+ if(K==='c'||K==='cg')v-=d;if(K==='g'||K==='cg')v+=glc(p);v=Math.max(0,v);return{p,v,td:v-N}})}
+const X=x=>150+x*4.6,Y=y=>125-y*4.6;
+function axes(){return`<line x1="10" y1="125" x2="290" y2="125" stroke="#999"/><line x1="150" y1="10" x2="150" y2="240" stroke="#999"/>`}
+function shade(t){return t>=-2?'#ffffff':t>=-5?'#e2e2e2':t>=-8?'#bdbdbd':t>=-12?'#8a8a8a':'#333333'}
+function draw(){$('depv').textContent=$('dep').value+' dB';const D=calc(),ok=D.filter(q=>!q.bs);
+ const tds=ok.map(q=>q.td).sort((a,b)=>b-a),gh=tds[6];ok.forEach(q=>q.pd=q.td-gh);
+ const md=ok.reduce((s,q)=>s+q.td,0)/ok.length,mp=ok.reduce((s,q)=>s+q.pd,0)/ok.length,psd=Math.sqrt(ok.reduce((s,q)=>s+(q.pd-mp)**2,0)/ok.length);
+ let a=axes(),b=axes(),c=axes();
+ D.forEach(q=>{const[x,y]=q.p;if(q.bs){a+=`<text x="${X(x)}" y="${Y(y)+5}" font-size="12" text-anchor="middle" fill="#999">盲</text>`;return}
+  a+=`<text x="${X(x)}" y="${Y(y)+5}" font-size="13" text-anchor="middle" fill="${q.v<10?'#b3261e':'#222'}">${q.v}</text>`;
+  b+=`<rect x="${X(x)-11}" y="${Y(y)-11}" width="22" height="22" fill="${shade(q.td)}" stroke="#999"/><text x="${X(x)}" y="${Y(y)+5}" font-size="11" text-anchor="middle" fill="${q.td<-8?'#fff':'#333'}">${q.td}</text>`;
+  c+=`<rect x="${X(x)-11}" y="${Y(y)-11}" width="22" height="22" fill="${shade(q.pd)}" stroke="#999"/><text x="${X(x)}" y="${Y(y)+5}" font-size="11" text-anchor="middle" fill="${q.pd<-8?'#fff':'#333'}">${q.pd}</text>`});
+ $('p0').innerHTML=a;$('p1').innerHTML=b;$('p2').innerHTML=c;
+ const msg={n:'正常：TD、PD 都接近 0。',c:'介質混濁：整體下降（MD 變負），但各點「一起」下降，所以扣掉整體高度後 PD 幾乎正常、PSD 小。',g:'青光眼：局部缺損（上方弓形＋鼻側階梯），TD 與 PD 都在同一區塊變黑，PSD 變大。',cg:'白內障＋青光眼：TD 一片黑、看不出哪裡是真正的神經缺損；PD 扣掉整體下降後，局部的弓形缺損就浮現出來。'}[K];
+ $('out').innerHTML=`整體高度修正（第 7 高的 TD）＝ ${gh} dB；MD（平均 TD）≈ <b>${md.toFixed(1)} dB</b>；PSD（PD 的離散程度）≈ <b>${psd.toFixed(1)} dB</b><br>${msg}`}
+document.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>{K=b.dataset.k;document.querySelectorAll('[data-k]').forEach(x=>x.classList.toggle('on',x===b));draw()});
+$('dep').oninput=draw;draw();
+</script></body></html>

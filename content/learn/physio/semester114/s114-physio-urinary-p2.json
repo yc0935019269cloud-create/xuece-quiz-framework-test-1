@@ -21,107 +21,110 @@
   "lessons": [
     {
       "id": "renal-jga-raas-1",
-      "title": "第 4 站：JGA 偵測、RAAS 升壓（1）",
+      "title": "第 4 站：腎絲球旁器（JGA） 偵測、腎素－血管張力素－醛固酮系統（RAAS） 升壓（1）",
       "goals": [
-        "解釋JGA 的兩個角色：JG cell 與 macula densa",
-        "解釋Renin 釋放的三大原因（而且要知道為什麼）",
-        "解釋RAAS 串起來：renin → Ang I → Ang II"
+        "解釋腎絲球旁器（JGA） 的兩個角色：腎絲球旁細胞（JG cell） 與 緻密斑（macula densa）",
+        "解釋腎素（Renin） 釋放的三大原因（而且要知道為什麼）",
+        "解釋腎素－血管張力素－醛固酮系統（RAAS） 串起來：腎素（renin） → 血管張力素 I（Ang I） → 血管張力素 II（Ang II）"
       ],
       "steps": [
         {
           "type": "intro",
-          "title": "第 4 站：JGA 偵測、RAAS 升壓",
-          "body": "腎小球旁器 JGA 有兩個感受器：JG cell 看血壓、macula densa 看 NaCl。低血壓、低 NaCl、交感興奮都會放 renin，啟動 RAAS 升壓保水。\n\n- 認識 JGA 的兩個核心角色：JG cell 與 macula densa。\n- 搞懂 renin 釋放的三大原因，而且知道為什麼。\n- 把 RAAS 一路串起來：renin → Ang I → Ang II。\n- 記住 Ang II 的兩大作用：縮血管、刺激 aldosterone。"
+          "title": "第 4 站：腎絲球旁器（JGA） 偵測、腎素－血管張力素－醛固酮系統（RAAS） 升壓",
+          "body": "腎小球旁器 腎絲球旁器（JGA） 有兩個感受器：腎絲球旁細胞（JG cell） 看血壓、緻密斑（macula densa） 看 氯化鈉（NaCl）。低血壓、低 氯化鈉、交感興奮都會放 腎素（renin），啟動 腎素－血管張力素－醛固酮系統（RAAS） 升壓保水。\n\n- 認識 腎絲球旁器 的兩個核心角色：腎絲球旁細胞 與 緻密斑。\n- 搞懂 腎素 釋放的三大原因，而且知道為什麼。\n- 把 腎素－血管張力素－醛固酮系統 一路串起來：腎素 → 血管張力素 I（Ang I） → 血管張力素 II（Ang II）。\n- 記住 血管張力素 II 的兩大作用：縮血管、刺激 醛固酮（aldosterone）。"
         },
         {
           "type": "card",
-          "title": "JGA 的兩個角色：JG cell 與 macula densa",
-          "body": "**連到前一觀念**\n升壓系統的起點，是一個會偵測的小裝置。\n\n**觀念**\n腎小球旁器 juxtaglomerular apparatus（JGA）有兩種細胞：JG cell（顆粒細胞）在入球小動脈壁，像壓力感受器、負責分泌 renin；macula densa（緻密斑）在『自己的』上行粗段／遠曲小管起始處，像化學感受器、偵測流經濾液的 NaCl 濃度。\n\n**為什麼**\n老師強調 macula densa 是回到『自己的』腎元的入球小動脈附近——這樣才能用自己腎元濾液的 NaCl 來回饋調節自己的入球。JG cell 看壓力、macula densa 看 NaCl，兩個感受器一起決定要不要放 renin。\n\n**考試角度**\n- JG cell：入球小動脈、壓力感受器、分泌 renin\n- Macula densa：自己的 thick ascending limb/DCT 起始、化學感受器、偵測 NaCl\n- 兩者合稱 JGA\n\n**易錯與比較**\nJG cell＝看壓力放 renin；macula densa＝看 NaCl。別把兩個感受器的角色對調。",
+          "title": "腎絲球旁器（JGA） 的兩個角色：腎絲球旁細胞（JG cell） 與 緻密斑（macula densa）",
+          "body": "**連到前一觀念**\n升壓系統的起點，是一個會偵測的小裝置。\n\n**觀念**\n腎小球旁器 juxtaglomerular apparatus（JGA）有兩種細胞：腎絲球旁細胞（JG cell）（顆粒細胞）在入球小動脈壁，像壓力感受器、負責分泌 腎素（renin）；macula densa（緻密斑）在『自己的』上行粗段／遠曲小管起始處，像化學感受器、偵測流經濾液的 氯化鈉（NaCl） 濃度。\n\n**為什麼**\n老師強調 緻密斑（macula densa） 是回到『自己的』腎元的入球小動脈附近——這樣才能用自己腎元濾液的 氯化鈉 來回饋調節自己的入球。腎絲球旁細胞 看壓力、緻密斑 看 氯化鈉，兩個感受器一起決定要不要放 腎素。\n\n**考試角度**\n- 腎絲球旁細胞：入球小動脈、壓力感受器、分泌 腎素\n- 緻密斑：自己的 thick ascending limb/遠端曲小管（DCT） 起始、化學感受器、偵測 氯化鈉\n- 兩者合稱 腎絲球旁器（JGA）\n\n**易錯與比較**\n腎絲球旁細胞＝看壓力放 腎素；緻密斑＝看 氯化鈉。別把兩個感受器的角色對調。",
           "keys": [
-            "JG cell：入球小動脈、壓力感受器、分泌 renin",
-            "Macula densa：自己的 thick ascending limb/DCT 起始、化學感受器、偵測 NaCl",
-            "兩者合稱 JGA"
+            "腎絲球旁細胞（JG cell）：入球小動脈、壓力感受器、分泌 腎素（renin）",
+            "緻密斑（Macula densa）：自己的 thick ascending limb/遠端曲小管（DCT） 起始、化學感受器、偵測 氯化鈉（NaCl）",
+            "兩者合稱 腎絲球旁器（JGA）"
           ],
-          "tip": "JG cell＝看壓力放 renin；macula densa＝看 NaCl。別把兩個感受器的角色對調。"
+          "tip": "腎絲球旁細胞（JG cell）＝看壓力放 腎素（renin）；緻密斑（macula densa）＝看 氯化鈉（NaCl）。別把兩個感受器的角色對調。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "JGA 中偵測濾液 NaCl 濃度的是哪個構造？",
+          "q": "腎絲球旁器（JGA） 中偵測濾液 氯化鈉（NaCl） 濃度的是哪個構造？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "macula densa 是化學感受器、偵測 NaCl；JG cell 是壓力感受器、放 renin。\n\n正確選項：Macula densa。\n腎小球旁器 juxtaglomerular apparatus（JGA）有兩種細胞：JG cell（顆粒細胞）在入球小動脈壁，像壓力感受器、負責分泌 renin；macula densa（緻密斑）在『自己的』上行粗段／遠曲小管起始處，像化學感受器、偵測流經濾液的 NaCl 濃度。",
+          "explain": "緻密斑（macula densa） 是化學感受器、偵測 氯化鈉（NaCl）；腎絲球旁細胞（JG cell） 是壓力感受器、放 腎素（renin）。\n\n正確選項：緻密斑（Macula densa）。\n腎小球旁器 juxtaglomerular apparatus（JGA）有兩種細胞：腎絲球旁細胞（JG cell）（顆粒細胞）在入球小動脈壁，像壓力感受器、負責分泌 腎素（renin）；macula densa（緻密斑）在『自己的』上行粗段／遠曲小管起始處，像化學感受器、偵測流經濾液的 氯化鈉（NaCl） 濃度。",
           "choices": [
-            "Macula densa",
-            "JG cell",
+            "緻密斑（Macula densa）",
+            "腎絲球旁細胞（JG cell）",
             "Podocyte",
             "Mesangial cell"
-          ]
+          ],
+          "id": "c223ea9f2"
         },
         {
           "type": "card",
-          "title": "Renin 釋放的三大原因（而且要知道為什麼）",
-          "body": "**連到前一觀念**\nrenin 是整條升壓鏈的開關，先搞懂什麼時候放。\n\n**觀念**\n三大刺激：① 血壓下降、② 流經 NaCl 下降、③ 交感神經興奮。三者其實都在告訴腎臟『循環量可能不夠』，於是放 renin 升壓保水。\n\n**為什麼**\n為什麼？① 血壓↓ → 入球壁牽張變少 → 內皮放 NO／prostaglandin（PGE2、PGI2）→ 促 JG cell 放 renin；② NaCl↓ → macula densa 用 NKCC2 偵測到 → 放訊號（prostaglandin）→ renin↑；③ 交感興奮 → 作用 JG cell 的 β1 受體 → cAMP → renin↑。\n\n**考試角度**\n- 三因：血壓↓、NaCl↓、交感神經興奮\n- 血壓↓→內皮 NO/PG；NaCl↓→macula densa 訊號\n- 交感→JG cell 的 β1 受體→cAMP→renin↑\n\n**易錯與比較**\n交感作用在 JG cell 的是 β1 受體（→cAMP）。三因共同訊息＝循環量不足。",
+          "title": "腎素（Renin） 釋放的三大原因（而且要知道為什麼）",
+          "body": "**連到前一觀念**\n腎素（renin） 是整條升壓鏈的開關，先搞懂什麼時候放。\n\n**觀念**\n三大刺激：① 血壓下降、② 流經 氯化鈉（NaCl） 下降、③ 交感神經興奮。三者其實都在告訴腎臟『循環量可能不夠』，於是放 腎素 升壓保水。\n\n**為什麼**\n為什麼？① 血壓↓ → 入球壁牽張變少 → 內皮放 NO／prostaglandin（PGE2、PGI2）→ 促 腎絲球旁細胞（JG cell） 放 腎素；② 氯化鈉↓ → 緻密斑（macula densa） 用 NKCC2 偵測到 → 放訊號（prostaglandin）→ 腎素↑；③ 交感興奮 → 作用 腎絲球旁細胞 的 β1 受體 → cAMP → 腎素↑。\n\n**考試角度**\n- 三因：血壓↓、氯化鈉↓、交感神經興奮\n- 血壓↓→內皮 NO/PG；氯化鈉↓→緻密斑 訊號\n- 交感→腎絲球旁細胞 的 β1 受體→cAMP→腎素↑\n\n**易錯與比較**\n交感作用在 腎絲球旁細胞 的是 β1 受體（→cAMP）。三因共同訊息＝循環量不足。",
           "keys": [
-            "三因：血壓↓、NaCl↓、交感神經興奮",
-            "血壓↓→內皮 NO/PG；NaCl↓→macula densa 訊號",
-            "交感→JG cell 的 β1 受體→cAMP→renin↑"
+            "三因：血壓↓、氯化鈉（NaCl）↓、交感神經興奮",
+            "血壓↓→內皮 NO/PG；氯化鈉（NaCl）↓→緻密斑（macula densa） 訊號",
+            "交感→腎絲球旁細胞（JG cell） 的 β1 受體→cAMP→腎素（renin）↑"
           ],
-          "tip": "交感作用在 JG cell 的是 β1 受體（→cAMP）。三因共同訊息＝循環量不足。"
+          "tip": "交感作用在 腎絲球旁細胞（JG cell） 的是 β1 受體（→cAMP）。三因共同訊息＝循環量不足。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "下列何者不是直接刺激 renin 釋放的原因？",
+          "q": "下列何者不是直接刺激 腎素（renin） 釋放的原因？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "renin 三大刺激是血壓↓、NaCl↓、交感興奮；血壓上升反而抑制 renin。\n\n正確選項：血壓上升。\n三大刺激：① 血壓下降、② 流經 NaCl 下降、③ 交感神經興奮。三者其實都在告訴腎臟『循環量可能不夠』，於是放 renin 升壓保水。",
+          "explain": "腎素（renin） 三大刺激是血壓↓、氯化鈉（NaCl）↓、交感興奮；血壓上升反而抑制 腎素（renin）。\n\n正確選項：血壓上升。\n三大刺激：① 血壓下降、② 流經 氯化鈉（NaCl） 下降、③ 交感神經興奮。三者其實都在告訴腎臟『循環量可能不夠』，於是放 腎素（renin） 升壓保水。",
           "choices": [
             "血壓上升",
             "血壓下降",
-            "流經 NaCl 下降",
+            "流經 氯化鈉（NaCl） 下降",
             "交感神經興奮"
-          ]
+          ],
+          "id": "c4e6216d2"
         },
         {
           "type": "card",
-          "title": "RAAS 串起來：renin → Ang I → Ang II",
-          "body": "**連到前一觀念**\n放出 renin 之後，骨牌一路倒下去。\n\n**觀念**\nRenin 把血中的血管收縮素原 angiotensinogen 轉成 angiotensin I；angiotensin I 再被 ACE（血管收縮素轉換酶）轉成 angiotensin II。Ang II 才是主要的作用者。\n\n**為什麼**\nrenin 本身是酵素也是內分泌訊號，它啟動的是一連串轉換：angiotensinogen → Ang I →(ACE)→ Ang II。臨床的 ACE inhibitor 就是擋在 Ang I→Ang II 這一步來降血壓。\n\n**考試角度**\n- renin：angiotensinogen → angiotensin I\n- ACE：angiotensin I → angiotensin II\n- Ang II 是主要作用者；ACEi 擋此步降壓",
+          "title": "腎素－血管張力素－醛固酮系統（RAAS） 串起來：腎素（renin） → 血管張力素 I（Ang I） → 血管張力素 II（Ang II）",
+          "body": "**連到前一觀念**\n放出 腎素（renin） 之後，骨牌一路倒下去。\n\n**觀念**\n腎素 把血中的血管收縮素原 angiotensinogen 轉成 血管張力素 I（angiotensin I）；血管張力素 I 再被 血管張力素轉換酶（ACE）（血管收縮素轉換酶）轉成 血管張力素 II（angiotensin II）。血管張力素 II（Ang II） 才是主要的作用者。\n\n**為什麼**\n腎素 本身是酵素也是內分泌訊號，它啟動的是一連串轉換：angiotensinogen → 血管張力素 I（Ang I） →(ACE)→ 血管張力素 II。臨床的 血管張力素轉換酶 inhibitor 就是擋在 血管張力素 I→血管張力素 II 這一步來降血壓。\n\n**考試角度**\n- 腎素：angiotensinogen → 血管張力素 I\n- 血管張力素轉換酶：血管張力素 I → 血管張力素 II\n- 血管張力素 II 是主要作用者；ACEi 擋此步降壓",
           "keys": [
-            "renin：angiotensinogen → angiotensin I",
-            "ACE：angiotensin I → angiotensin II",
-            "Ang II 是主要作用者；ACEi 擋此步降壓"
+            "腎素（renin）：angiotensinogen → 血管張力素 I（angiotensin I）",
+            "血管張力素轉換酶（ACE）：血管張力素 I（angiotensin I） → 血管張力素 II（angiotensin II）",
+            "血管張力素 II（Ang II） 是主要作用者；ACEi 擋此步降壓"
           ],
           "tip": ""
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "把 angiotensin I 轉成 angiotensin II 的酵素是？",
+          "q": "把 血管張力素 I（angiotensin I） 轉成 血管張力素 II（angiotensin II） 的酵素是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "ACE（血管收縮素轉換酶）把 Ang I 轉成 Ang II；renin 是上一步。\n\n正確選項：ACE。\nRenin 把血中的血管收縮素原 angiotensinogen 轉成 angiotensin I；angiotensin I 再被 ACE（血管收縮素轉換酶）轉成 angiotensin II。Ang II 才是主要的作用者。",
+          "explain": "血管張力素轉換酶（ACE）（血管收縮素轉換酶）把 血管張力素 I（Ang I） 轉成 血管張力素 II（Ang II）；腎素（renin） 是上一步。\n\n正確選項：血管張力素轉換酶（ACE）。\n腎素（Renin） 把血中的血管收縮素原 angiotensinogen 轉成 血管張力素 I（angiotensin I）；血管張力素 I（angiotensin I） 再被 血管張力素轉換酶（ACE）（血管收縮素轉換酶）轉成 血管張力素 II（angiotensin II）。血管張力素 II（Ang II） 才是主要的作用者。",
           "choices": [
-            "ACE",
-            "renin",
-            "aldosterone",
-            "ADH"
-          ]
+            "血管張力素轉換酶（ACE）",
+            "腎素（renin）",
+            "醛固酮（aldosterone）",
+            "抗利尿激素（ADH）"
+          ],
+          "id": "c9fcb3897"
         },
         {
           "type": "example",
-          "title": "範例拆解：RAAS 串起來：renin → Ang I → Ang II",
-          "problem": "把 angiotensin I 轉成 angiotensin II 的酵素是？\n\nA. ACE\nB. renin\nC. aldosterone\nD. ADH",
+          "title": "範例拆解：腎素－血管張力素－醛固酮系統（RAAS） 串起來：腎素（renin） → 血管張力素 I（Ang I） → 血管張力素 II（Ang II）",
+          "problem": "把 血管張力素 I（angiotensin I） 轉成 血管張力素 II（angiotensin II） 的酵素是？\n\nA. 血管張力素轉換酶（ACE）\nB. 腎素（renin）\nC. 醛固酮（aldosterone）\nD. 抗利尿激素（ADH）",
           "steps": [
-            "先確認題目問的主題：RAAS 串起來：renin → Ang I → Ang II",
-            "Renin 把血中的血管收縮素原 angiotensinogen 轉成 angiotensin I；angiotensin I 再被 ACE（血管收縮素轉換酶）轉成 angiotensin II。Ang II 才是主要的作用者。",
-            "把判斷依據連回題目：ACE（血管收縮素轉換酶）把 Ang I 轉成 Ang II；renin 是上一步。\n\n正確選項：ACE。\nRenin 把血中的血管收縮素原 angiotensinogen 轉成 angiotensin I；angiotensin I 再被 ACE（血管收縮素轉換酶）轉成 angiotensin II。Ang II 才是主要的作用者。"
+            "先確認題目問的主題：腎素－血管張力素－醛固酮系統（RAAS） 串起來：腎素（renin） → 血管張力素 I（Ang I） → 血管張力素 II（Ang II）",
+            "腎素（Renin） 把血中的血管收縮素原 angiotensinogen 轉成 血管張力素 I（angiotensin I）；血管張力素 I（angiotensin I） 再被 血管張力素轉換酶（ACE）（血管收縮素轉換酶）轉成 血管張力素 II（angiotensin II）。血管張力素 II（Ang II） 才是主要的作用者。",
+            "把判斷依據連回題目：血管張力素轉換酶（ACE）（血管收縮素轉換酶）把 血管張力素 I（Ang I） 轉成 血管張力素 II（Ang II）；腎素（renin） 是上一步。\n\n正確選項：血管張力素轉換酶（ACE）。\n腎素（Renin） 把血中的血管收縮素原 angiotensinogen 轉成 血管張力素 I（angiotensin I）；血管張力素 I（angiotensin I） 再被 血管張力素轉換酶（ACE）（血管收縮素轉換酶）轉成 血管張力素 II（angiotensin II）。血管張力素 II（Ang II） 才是主要的作用者。"
           ],
-          "answer": "ACE"
+          "answer": "血管張力素轉換酶（ACE）"
         },
         {
           "type": "practice",
-          "title": "實戰：第 4 站：JGA 偵測、RAAS 升壓",
+          "title": "實戰：第 4 站：腎絲球旁器（JGA） 偵測、腎素－血管張力素－醛固酮系統（RAAS） 升壓",
           "qids": [
             "s114-physio-course114-u12-phys-12-01",
             "s114-physio-course114-u12-phys-12-02"
@@ -129,59 +132,65 @@
           "checks": [
             {
               "kind": "single",
-              "q": "下列何者不是直接刺激 renin 釋放的原因？",
+              "q": "下列何者不是直接刺激 腎素（renin） 釋放的原因？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "renin 三大刺激是血壓↓、NaCl↓、交感興奮；血壓上升反而抑制 renin。\n\n正確選項：血壓上升。\n三大刺激：① 血壓下降、② 流經 NaCl 下降、③ 交感神經興奮。三者其實都在告訴腎臟『循環量可能不夠』，於是放 renin 升壓保水。",
+              "explain": "腎素（renin） 三大刺激是血壓↓、氯化鈉（NaCl）↓、交感興奮；血壓上升反而抑制 腎素（renin）。\n\n正確選項：血壓上升。\n三大刺激：① 血壓下降、② 流經 氯化鈉（NaCl） 下降、③ 交感神經興奮。三者其實都在告訴腎臟『循環量可能不夠』，於是放 腎素（renin） 升壓保水。",
               "choices": [
                 "血壓上升",
                 "血壓下降",
-                "流經 NaCl 下降",
+                "流經 氯化鈉（NaCl） 下降",
                 "交感神經興奮"
-              ]
+              ],
+              "id": "c4e6216d2"
             },
             {
               "kind": "single",
-              "q": "把 angiotensin I 轉成 angiotensin II 的酵素是？",
+              "q": "把 血管張力素 I（angiotensin I） 轉成 血管張力素 II（angiotensin II） 的酵素是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "ACE（血管收縮素轉換酶）把 Ang I 轉成 Ang II；renin 是上一步。\n\n正確選項：ACE。\nRenin 把血中的血管收縮素原 angiotensinogen 轉成 angiotensin I；angiotensin I 再被 ACE（血管收縮素轉換酶）轉成 angiotensin II。Ang II 才是主要的作用者。",
+              "explain": "血管張力素轉換酶（ACE）（血管收縮素轉換酶）把 血管張力素 I（Ang I） 轉成 血管張力素 II（Ang II）；腎素（renin） 是上一步。\n\n正確選項：血管張力素轉換酶（ACE）。\n腎素（Renin） 把血中的血管收縮素原 angiotensinogen 轉成 血管張力素 I（angiotensin I）；血管張力素 I（angiotensin I） 再被 血管張力素轉換酶（ACE）（血管收縮素轉換酶）轉成 血管張力素 II（angiotensin II）。血管張力素 II（Ang II） 才是主要的作用者。",
               "choices": [
-                "ACE",
-                "renin",
-                "aldosterone",
-                "ADH"
-              ]
+                "血管張力素轉換酶（ACE）",
+                "腎素（renin）",
+                "醛固酮（aldosterone）",
+                "抗利尿激素（ADH）"
+              ],
+              "id": "c9fcb3897"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "JG cell：入球小動脈、壓力感受器、分泌 renin",
-            "Macula densa：自己的 thick ascending limb/DCT 起始、化學感受器、偵測 NaCl",
-            "三因：血壓↓、NaCl↓、交感神經興奮",
-            "血壓↓→內皮 NO/PG；NaCl↓→macula densa 訊號",
-            "renin：angiotensinogen → angiotensin I",
-            "ACE：angiotensin I → angiotensin II",
-            "JGA：JG cell（壓力感受器、放 renin）＋ macula densa（化學感受器、看 NaCl）→ renin 三因（血壓↓、NaCl↓、交感 β1）→ RAAS：renin→angiotensinogen→Ang I→(ACE)→Ang II → Ang II：①AT1 縮小動脈 TPR↑ ②刺激 aldosterone 留鈉排鉀 → 兩條都升血壓。"
+            "腎絲球旁細胞（JG cell）：入球小動脈、壓力感受器、分泌 腎素（renin）",
+            "緻密斑（Macula densa）：自己的 thick ascending limb/遠端曲小管（DCT） 起始、化學感受器、偵測 氯化鈉（NaCl）",
+            "三因：血壓↓、氯化鈉（NaCl）↓、交感神經興奮",
+            "血壓↓→內皮 NO/PG；氯化鈉（NaCl）↓→緻密斑（macula densa） 訊號",
+            "腎素（renin）：angiotensinogen → 血管張力素 I（angiotensin I）",
+            "血管張力素轉換酶（ACE）：血管張力素 I（angiotensin I） → 血管張力素 II（angiotensin II）",
+            "腎絲球旁器（JGA）：腎絲球旁細胞（JG cell）（壓力感受器、放 renin）＋ 緻密斑（macula densa）（化學感受器、看 NaCl）→ 腎素（renin） 三因（血壓↓、NaCl↓、交感 β1）→ 腎素－血管張力素－醛固酮系統（RAAS）：腎素（renin）→angiotensinogen→血管張力素 I（Ang I）→(ACE)→血管張力素 II（Ang II） → 血管張力素 II（Ang II）：①AT1 縮小動脈 總周邊阻力（TPR）↑ ②刺激 醛固酮（aldosterone） 留鈉排鉀 → 兩條都升血壓。"
           ],
           "flash": [
             {
-              "front": "JGA 的兩個角色：JG cell 與 macula densa",
-              "back": "腎小球旁器 juxtaglomerular apparatus（JGA）有兩種細胞：JG cell（顆粒細胞）在入球小動脈壁，像壓力感受器、負責分泌 renin；macula densa（緻密斑）在『自己的』上行粗段／遠曲小管起始處，像化學感受器、偵測流經濾液的 NaCl 濃度。"
+              "front": "腎絲球旁器（JGA） 的兩個角色：腎絲球旁細胞（JG cell） 與 緻密斑（macula densa）",
+              "back": "腎小球旁器 juxtaglomerular apparatus（JGA）有兩種細胞：腎絲球旁細胞（JG cell）（顆粒細胞）在入球小動脈壁，像壓力感受器、負責分泌 腎素（renin）；macula densa（緻密斑）在『自己的』上行粗段／遠曲小管起始處，像化學感受器、偵測流經濾液的 氯化鈉（NaCl） 濃度。",
+              "id": "f6a6cb145"
             },
             {
-              "front": "Renin 釋放的三大原因（而且要知道為什麼）",
-              "back": "三大刺激：① 血壓下降、② 流經 NaCl 下降、③ 交感神經興奮。三者其實都在告訴腎臟『循環量可能不夠』，於是放 renin 升壓保水。"
+              "front": "腎素（Renin） 釋放的三大原因（而且要知道為什麼）",
+              "back": "三大刺激：① 血壓下降、② 流經 氯化鈉（NaCl） 下降、③ 交感神經興奮。三者其實都在告訴腎臟『循環量可能不夠』，於是放 腎素（renin） 升壓保水。",
+              "id": "f5847544c"
             },
             {
-              "front": "RAAS 串起來：renin → Ang I → Ang II",
-              "back": "Renin 把血中的血管收縮素原 angiotensinogen 轉成 angiotensin I；angiotensin I 再被 ACE（血管收縮素轉換酶）轉成 angiotensin II。Ang II 才是主要的作用者。"
+              "front": "腎素－血管張力素－醛固酮系統（RAAS） 串起來：腎素（renin） → 血管張力素 I（Ang I） → 血管張力素 II（Ang II）",
+              "back": "腎素（Renin） 把血中的血管收縮素原 angiotensinogen 轉成 血管張力素 I（angiotensin I）；血管張力素 I（angiotensin I） 再被 血管張力素轉換酶（ACE）（血管收縮素轉換酶）轉成 血管張力素 II（angiotensin II）。血管張力素 II（Ang II） 才是主要的作用者。",
+              "id": "f388b8bc3"
             },
             {
-              "front": "JGA 中偵測濾液 NaCl 濃度的是哪個構造？",
-              "back": "macula densa 是化學感受器、偵測 NaCl；JG cell 是壓力感受器、放 renin。\n\n正確選項：Macula densa。\n腎小球旁器 juxtaglomerular apparatus（JGA）有兩種細胞：JG cell（顆粒細胞）在入球小動脈壁，像壓力感受器、負責分泌 renin；macula densa（緻密斑）在『自己的』上行粗段／遠曲小管起始處，像化學感受器、偵測流經濾液的 NaCl 濃度。"
+              "front": "腎絲球旁器（JGA） 中偵測濾液 氯化鈉（NaCl） 濃度的是哪個構造？",
+              "back": "緻密斑（macula densa） 是化學感受器、偵測 氯化鈉（NaCl）；腎絲球旁細胞（JG cell） 是壓力感受器、放 腎素（renin）。\n\n正確選項：緻密斑（Macula densa）。\n腎小球旁器 juxtaglomerular apparatus（JGA）有兩種細胞：腎絲球旁細胞（JG cell）（顆粒細胞）在入球小動脈壁，像壓力感受器、負責分泌 腎素（renin）；macula densa（緻密斑）在『自己的』上行粗段／遠曲小管起始處，像化學感受器、偵測流經濾液的 氯化鈉（NaCl） 濃度。",
+              "id": "f223ea9f2"
             }
           ]
         }
@@ -189,45 +198,46 @@
     },
     {
       "id": "renal-jga-raas-2",
-      "title": "第 4 站：JGA 偵測、RAAS 升壓（2）",
+      "title": "第 4 站：腎絲球旁器（JGA） 偵測、腎素－血管張力素－醛固酮系統（RAAS） 升壓（2）",
       "goals": [
-        "解釋Ang II 兩大作用：縮血管、刺激 aldosterone"
+        "解釋血管張力素 II（Ang II） 兩大作用：縮血管、刺激 醛固酮（aldosterone）"
       ],
       "steps": [
         {
           "type": "intro",
-          "title": "第 4 站：JGA 偵測、RAAS 升壓",
-          "body": "腎小球旁器 JGA 有兩個感受器：JG cell 看血壓、macula densa 看 NaCl。低血壓、低 NaCl、交感興奮都會放 renin，啟動 RAAS 升壓保水。\n\n- 認識 JGA 的兩個核心角色：JG cell 與 macula densa。\n- 搞懂 renin 釋放的三大原因，而且知道為什麼。\n- 把 RAAS 一路串起來：renin → Ang I → Ang II。\n- 記住 Ang II 的兩大作用：縮血管、刺激 aldosterone。"
+          "title": "第 4 站：腎絲球旁器（JGA） 偵測、腎素－血管張力素－醛固酮系統（RAAS） 升壓",
+          "body": "腎小球旁器 腎絲球旁器（JGA） 有兩個感受器：腎絲球旁細胞（JG cell） 看血壓、緻密斑（macula densa） 看 氯化鈉（NaCl）。低血壓、低 氯化鈉、交感興奮都會放 腎素（renin），啟動 腎素－血管張力素－醛固酮系統（RAAS） 升壓保水。\n\n- 認識 腎絲球旁器 的兩個核心角色：腎絲球旁細胞 與 緻密斑。\n- 搞懂 腎素 釋放的三大原因，而且知道為什麼。\n- 把 腎素－血管張力素－醛固酮系統 一路串起來：腎素 → 血管張力素 I（Ang I） → 血管張力素 II（Ang II）。\n- 記住 血管張力素 II 的兩大作用：縮血管、刺激 醛固酮（aldosterone）。"
         },
         {
           "type": "card",
-          "title": "Ang II 兩大作用：縮血管、刺激 aldosterone",
-          "body": "**連到前一觀念**\nAng II 怎麼把血壓拉上來？兩條路。\n\n**觀念**\n① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n\n**為什麼**\n兩條路一條快（縮血管直接升壓）、一條慢（保鈉保水升血量）。aldosterone 的口訣只有一句：『留鈉排鉀，水跟著鈉走』。腎上腺皮質三層由外到內：球狀帶（aldosterone）、束狀帶（cortisol）、網狀帶（androgen），與 RAAS 有關的是最外層球狀帶。\n\n**考試角度**\n- Ang II → AT1 受體 → 小動脈收縮 → TPR↑ → 血壓↑\n- Ang II → aldosterone（zona glomerulosa）→ DCT/CD 留鈉排鉀 → 水↑血量↑\n- 腎上腺皮質：球狀帶 aldosterone / 束狀帶 cortisol / 網狀帶 androgen\n\n**易錯與比較**\nAng II 縮血管走的是 AT1 受體（不是 AT2）；aldosterone 是『留鈉排鉀』別反。",
+          "title": "血管張力素 II（Ang II） 兩大作用：縮血管、刺激 醛固酮（aldosterone）",
+          "body": "**連到前一觀念**\n血管張力素 II（Ang II） 怎麼把血壓拉上來？兩條路。\n\n**觀念**\n① 血管張力素 II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n\n**為什麼**\n兩條路一條快（縮血管直接升壓）、一條慢（保鈉保水升血量）。醛固酮 的口訣只有一句：『留鈉排鉀，水跟著鈉走』。腎上腺皮質三層由外到內：球狀帶（aldosterone）、束狀帶（cortisol）、網狀帶（androgen），與 腎素－血管張力素－醛固酮系統（RAAS） 有關的是最外層球狀帶。\n\n**考試角度**\n- 血管張力素 II → AT1 受體 → 小動脈收縮 → 總周邊阻力（TPR）↑ → 血壓↑\n- 血管張力素 II → 醛固酮（zona glomerulosa）→ 遠端曲小管（DCT）/CD 留鈉排鉀 → 水↑血量↑\n- 腎上腺皮質：球狀帶 醛固酮 / 束狀帶 cortisol / 網狀帶 雄激素（androgen）\n\n**易錯與比較**\n血管張力素 II 縮血管走的是 AT1 受體（不是 AT2）；醛固酮 是『留鈉排鉀』別反。",
           "keys": [
-            "Ang II → AT1 受體 → 小動脈收縮 → TPR↑ → 血壓↑",
-            "Ang II → aldosterone（zona glomerulosa）→ DCT/CD 留鈉排鉀 → 水↑血量↑",
-            "腎上腺皮質：球狀帶 aldosterone / 束狀帶 cortisol / 網狀帶 androgen"
+            "血管張力素 II（Ang II） → AT1 受體 → 小動脈收縮 → 總周邊阻力（TPR）↑ → 血壓↑",
+            "血管張力素 II（Ang II） → 醛固酮（aldosterone）（zona glomerulosa）→ 遠端曲小管（DCT）/CD 留鈉排鉀 → 水↑血量↑",
+            "腎上腺皮質：球狀帶 醛固酮（aldosterone） / 束狀帶 cortisol / 網狀帶 雄激素（androgen）"
           ],
-          "tip": "Ang II 縮血管走的是 AT1 受體（不是 AT2）；aldosterone 是『留鈉排鉀』別反。"
+          "tip": "血管張力素 II（Ang II） 縮血管走的是 AT1 受體（不是 AT2）；醛固酮（aldosterone） 是『留鈉排鉀』別反。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Aldosterone 作用於遠曲小管/集尿管的主要效果是？",
+          "q": "醛固酮（Aldosterone） 作用於遠曲小管/集尿管的主要效果是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "aldosterone 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。",
+          "explain": "醛固酮（aldosterone） 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。",
           "choices": [
             "留鈉排鉀，水跟著鈉回收",
             "留鉀排鈉",
             "排鈉排水",
-            "增加 GFR"
-          ]
+            "增加 腎絲球過濾率（GFR）"
+          ],
+          "id": "c099c9bb6"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\nAldosterone 作用於遠曲小管/集尿管的主要效果是？\n\nA. 留鈉排鉀，水跟著鈉回收\nB. 留鉀排鈉\nC. 排鈉排水\nD. 增加 GFR\n\n**判斷步驟**\n- 先確認題目問的主題：Ang II 兩大作用：縮血管、刺激 aldosterone\n- ① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n- 把判斷依據連回題目：aldosterone 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n\n**結論與依據**\n留鈉排鉀，水跟著鈉回收",
+          "body": "**情境**\n醛固酮（Aldosterone） 作用於遠曲小管/集尿管的主要效果是？\n\nA. 留鈉排鉀，水跟著鈉回收\nB. 留鉀排鈉\nC. 排鈉排水\nD. 增加 腎絲球過濾率（GFR）\n\n**判斷步驟**\n- 先確認題目問的主題：血管張力素 II（Ang II） 兩大作用：縮血管、刺激 醛固酮\n- ① 血管張力素 II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮 → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n- 把判斷依據連回題目：醛固酮 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① 血管張力素 II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮 → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n\n**結論與依據**\n留鈉排鉀，水跟著鈉回收",
           "keys": [
             "留鈉排鉀，水跟著鈉回收"
           ]
@@ -238,22 +248,23 @@
           "q": "解釋這個結論所用的條件或判斷依據。",
           "answer": "留鈉排鉀，水跟著鈉回收",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：Ang II 兩大作用：縮血管、刺激 aldosterone\n- ① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n- 把判斷依據連回題目：aldosterone 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。"
+          "explain": "- 先確認題目問的主題：血管張力素 II（Ang II） 兩大作用：縮血管、刺激 醛固酮（aldosterone）\n- ① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n- 把判斷依據連回題目：醛固酮（aldosterone） 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。",
+          "id": "c5580075d"
         },
         {
           "type": "example",
-          "title": "範例拆解：Ang II 兩大作用：縮血管、刺激 aldosterone",
-          "problem": "Aldosterone 作用於遠曲小管/集尿管的主要效果是？\n\nA. 留鈉排鉀，水跟著鈉回收\nB. 留鉀排鈉\nC. 排鈉排水\nD. 增加 GFR",
+          "title": "範例拆解：血管張力素 II（Ang II） 兩大作用：縮血管、刺激 醛固酮（aldosterone）",
+          "problem": "醛固酮（Aldosterone） 作用於遠曲小管/集尿管的主要效果是？\n\nA. 留鈉排鉀，水跟著鈉回收\nB. 留鉀排鈉\nC. 排鈉排水\nD. 增加 腎絲球過濾率（GFR）",
           "steps": [
-            "先確認題目問的主題：Ang II 兩大作用：縮血管、刺激 aldosterone",
-            "① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。",
-            "把判斷依據連回題目：aldosterone 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。"
+            "先確認題目問的主題：血管張力素 II（Ang II） 兩大作用：縮血管、刺激 醛固酮（aldosterone）",
+            "① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。",
+            "把判斷依據連回題目：醛固酮（aldosterone） 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。"
           ],
           "answer": "留鈉排鉀，水跟著鈉回收"
         },
         {
           "type": "practice",
-          "title": "實戰：第 4 站：JGA 偵測、RAAS 升壓",
+          "title": "實戰：第 4 站：腎絲球旁器（JGA） 偵測、腎素－血管張力素－醛固酮系統（RAAS） 升壓",
           "qids": [
             "s114-physio-course114-u12-phys-12-04",
             "s114-physio-course114-u12-phys-12-05"
@@ -261,44 +272,49 @@
           "checks": [
             {
               "kind": "single",
-              "q": "Aldosterone 作用於遠曲小管/集尿管的主要效果是？",
+              "q": "醛固酮（Aldosterone） 作用於遠曲小管/集尿管的主要效果是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "aldosterone 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。",
+              "explain": "醛固酮（aldosterone） 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。",
               "choices": [
                 "留鈉排鉀，水跟著鈉回收",
                 "留鉀排鈉",
                 "排鈉排水",
-                "增加 GFR"
-              ]
+                "增加 腎絲球過濾率（GFR）"
+              ],
+              "id": "c099c9bb6"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "Ang II → AT1 受體 → 小動脈收縮 → TPR↑ → 血壓↑",
-            "Ang II → aldosterone（zona glomerulosa）→ DCT/CD 留鈉排鉀 → 水↑血量↑",
-            "JGA：JG cell（壓力感受器、放 renin）＋ macula densa（化學感受器、看 NaCl）→ renin 三因（血壓↓、NaCl↓、交感 β1）→ RAAS：renin→angiotensinogen→Ang I→(ACE)→Ang II → Ang II：①AT1 縮小動脈 TPR↑ ②刺激 aldosterone 留鈉排鉀 → 兩條都升血壓。",
-            "Ang II 兩大作用：縮血管、刺激 aldosterone：Ang II → AT1 受體 → 小動脈收縮 → TPR↑ → 血壓↑",
-            "aldosterone 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。"
+            "血管張力素 II（Ang II） → AT1 受體 → 小動脈收縮 → 總周邊阻力（TPR）↑ → 血壓↑",
+            "血管張力素 II（Ang II） → 醛固酮（aldosterone）（zona glomerulosa）→ 遠端曲小管（DCT）/CD 留鈉排鉀 → 水↑血量↑",
+            "腎絲球旁器（JGA）：腎絲球旁細胞（JG cell）（壓力感受器、放 renin）＋ 緻密斑（macula densa）（化學感受器、看 NaCl）→ 腎素（renin） 三因（血壓↓、NaCl↓、交感 β1）→ 腎素－血管張力素－醛固酮系統（RAAS）：腎素（renin）→angiotensinogen→血管張力素 I（Ang I）→(ACE)→血管張力素 II（Ang II） → 血管張力素 II（Ang II）：①AT1 縮小動脈 總周邊阻力（TPR）↑ ②刺激 醛固酮（aldosterone） 留鈉排鉀 → 兩條都升血壓。",
+            "血管張力素 II（Ang II） 兩大作用：縮血管、刺激 醛固酮（aldosterone）：血管張力素 II（Ang II） → AT1 受體 → 小動脈收縮 → 總周邊阻力（TPR）↑ → 血壓↑",
+            "醛固酮（aldosterone） 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。"
           ],
           "flash": [
             {
-              "front": "Ang II 兩大作用：縮血管、刺激 aldosterone",
-              "back": "① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。"
+              "front": "血管張力素 II（Ang II） 兩大作用：縮血管、刺激 醛固酮（aldosterone）",
+              "back": "① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。",
+              "id": "fc1960a02"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：Ang II 兩大作用：縮血管、刺激 aldosterone\n- ① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n- 把判斷依據連回題目：aldosterone 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。"
+              "back": "- 先確認題目問的主題：血管張力素 II（Ang II） 兩大作用：縮血管、刺激 醛固酮（aldosterone）\n- ① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n- 把判斷依據連回題目：醛固酮（aldosterone） 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。",
+              "id": "f5580075d"
             },
             {
-              "front": "Aldosterone 作用於遠曲小管/集尿管的主要效果是？",
-              "back": "aldosterone 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。"
+              "front": "醛固酮（Aldosterone） 作用於遠曲小管/集尿管的主要效果是？",
+              "back": "醛固酮（aldosterone） 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。",
+              "id": "f099c9bb6"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：Ang II 兩大作用：縮血管、刺激 aldosterone\n- ① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n- 把判斷依據連回題目：aldosterone 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① Ang II 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 TPR 上升 → 血壓上升；② Ang II 刺激腎上腺皮質（zona glomerulosa）分泌 aldosterone → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。"
+              "back": "- 先確認題目問的主題：血管張力素 II（Ang II） 兩大作用：縮血管、刺激 醛固酮（aldosterone）\n- ① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。\n- 把判斷依據連回題目：醛固酮（aldosterone） 留 Na⁺、排 K⁺，水跟著鈉回收 → 血量、血壓上升。\n\n正確選項：留鈉排鉀，水跟著鈉回收。\n① 血管張力素 II（Ang II） 作用於小動脈的 AT1 受體 → 小動脈收縮 → 總周邊阻力 （TPR） 上升 → 血壓上升；② 血管張力素 II（Ang II） 刺激腎上腺皮質（zona glomerulosa）分泌 醛固酮（aldosterone） → 作用遠曲小管／集尿管 → 留鈉排鉀（Na⁺ 留下、K⁺ 排出）→ 水跟著鈉回收 → 血量上升 → 血壓上升。",
+              "id": "f5580075d"
             }
           ]
         }
@@ -309,21 +325,21 @@
       "title": "第 5 站：腎臟也是內分泌器官（維他命 D、EPO）",
       "goals": [
         "解釋維他命 D 活化：最後一步在腎臟",
-        "解釋EPO：腎臟感測缺氧、命令骨髓造血"
+        "解釋紅血球生成素（EPO）：腎臟感測缺氧、命令骨髓造血"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 5 站：腎臟也是內分泌器官（維他命 D、EPO）",
-          "body": "腎臟不只過濾，還做兩件內分泌大事：把維他命 D 活化成 1,25-(OH)₂ 形式、分泌 EPO 通知骨髓造血。\n\n- 維他命 D 的最後活化步驟在腎臟。\n- EPO：腎臟感測缺氧、命令骨髓造紅血球。"
+          "body": "腎臟不只過濾，還做兩件內分泌大事：把維他命 D 活化成 1,25-(OH)₂ 形式、分泌 紅血球生成素（EPO） 通知骨髓造血。\n\n- 維他命 D 的最後活化步驟在腎臟。\n- 紅血球生成素：腎臟感測缺氧、命令骨髓造紅血球。"
         },
         {
           "type": "card",
           "title": "維他命 D 活化：最後一步在腎臟",
-          "body": "**連到前一觀念**\n腎臟的第一個內分泌角色，和鈣與骨頭有關。\n\n**觀念**\n維他命 D 來源（曬太陽、食物、保健品）都需要代謝活化：皮膚的 7-dehydrocholesterol 經陽光形成維他命 D，在血中由 DBP 攜帶 → 到肝臟轉成 25-OH vitamin D → 到腎臟轉成 1,25-(OH)₂ vitamin D（活性型）。活性 D 增加腸道對鈣的吸收，也影響骨骼、肌肉與免疫。\n\n**為什麼**\n記『肝 25、腎 1,25』：肝先做第一步羥化（25-OH），腎做最後一步（1,25）才有活性。所以腎功能差的人容易缺活性維他命 D、影響鈣與骨頭。\n\n**考試角度**\n- 皮膚 7-DHC →(陽光)→ 維他命 D →(DBP 攜帶)\n- 肝 → 25-OH vitamin D → 腎 → 1,25-(OH)₂（活性型）\n- 活性 D：增加腸道鈣吸收\n\n**易錯與比較**\n最後、最關鍵的活化（1,25）在腎臟；肝只做到 25-OH（半成品）。",
+          "body": "**連到前一觀念**\n腎臟的第一個內分泌角色，和鈣與骨頭有關。\n\n**觀念**\n維他命 D 來源（曬太陽、食物、保健品）都需要代謝活化：皮膚的 7-dehydrocholesterol 經陽光形成維他命 D，在血中由 DBP 攜帶 → 到肝臟轉成 25-OH 維生素 D（vitamin D） → 到腎臟轉成 1,25-(OH)₂ 維生素 D（活性型）。活性 D 增加腸道對鈣的吸收，也影響骨骼、肌肉與免疫。\n\n**為什麼**\n記『肝 25、腎 1,25』：肝先做第一步羥化（25-OH），腎做最後一步（1,25）才有活性。所以腎功能差的人容易缺活性維他命 D、影響鈣與骨頭。\n\n**考試角度**\n- 皮膚 7-DHC →(陽光)→ 維他命 D →(DBP 攜帶)\n- 肝 → 25-OH 維生素 D → 腎 → 1,25-(OH)₂（活性型）\n- 活性 D：增加腸道鈣吸收\n\n**易錯與比較**\n最後、最關鍵的活化（1,25）在腎臟；肝只做到 25-OH（半成品）。",
           "keys": [
             "皮膚 7-DHC →(陽光)→ 維他命 D →(DBP 攜帶)",
-            "肝 → 25-OH vitamin D → 腎 → 1,25-(OH)₂（活性型）",
+            "肝 → 25-OH 維生素 D（vitamin D） → 腎 → 1,25-(OH)₂（活性型）",
             "活性 D：增加腸道鈣吸收"
           ],
           "tip": "最後、最關鍵的活化（1,25）在腎臟；肝只做到 25-OH（半成品）。"
@@ -334,22 +350,23 @@
           "q": "維他命 D 活化成 1,25-(OH)₂ 的最後一步發生在哪裡？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "肝做 25-OH，腎做最後一步 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n維他命 D 來源（曬太陽、食物、保健品）都需要代謝活化：皮膚的 7-dehydrocholesterol 經陽光形成維他命 D，在血中由 DBP 攜帶 → 到肝臟轉成 25-OH vitamin D → 到腎臟轉成 1,25-(OH)₂ vitamin D（活性型）。活性 D 增加腸道對鈣的吸收，也影響骨骼、肌肉與免疫。",
+          "explain": "肝做 25-OH，腎做最後一步 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n維他命 D 來源（曬太陽、食物、保健品）都需要代謝活化：皮膚的 7-dehydrocholesterol 經陽光形成維他命 D，在血中由 DBP 攜帶 → 到肝臟轉成 25-OH 維生素 D（vitamin D） → 到腎臟轉成 1,25-(OH)₂ 維生素 D（vitamin D）（活性型）。活性 D 增加腸道對鈣的吸收，也影響骨骼、肌肉與免疫。",
           "choices": [
             "腎臟",
             "肝臟",
             "皮膚",
             "腸道"
-          ]
+          ],
+          "id": "cec325c74"
         },
         {
           "type": "card",
-          "title": "EPO：腎臟感測缺氧、命令骨髓造血",
-          "body": "**連到前一觀念**\n腎臟的第二個內分泌角色，和紅血球有關。\n\n**觀念**\n紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 EPO 生成，EPO 通知紅骨髓製造紅血球。\n\n**為什麼**\n腎臟像氧氣感測站：氧不足 → 放 EPO → 骨髓多造『運氧車』（紅血球）。所以腎功能不好時 EPO 製造不足，會造成腎性貧血 renal anemia。\n\n**考試角度**\n- EPO 由腎臟分泌；腎感測缺氧 → EPO↑\n- EPO → 紅骨髓 → 製造紅血球\n- 腎功能差 → EPO 不足 → 腎性貧血",
+          "title": "紅血球生成素（EPO）：腎臟感測缺氧、命令骨髓造血",
+          "body": "**連到前一觀念**\n腎臟的第二個內分泌角色，和紅血球有關。\n\n**觀念**\n紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 紅血球生成素（EPO） 生成，紅血球生成素 通知紅骨髓製造紅血球。\n\n**為什麼**\n腎臟像氧氣感測站：氧不足 → 放 紅血球生成素 → 骨髓多造『運氧車』（紅血球）。所以腎功能不好時 紅血球生成素 製造不足，會造成腎性貧血 renal anemia。\n\n**考試角度**\n- 紅血球生成素 由腎臟分泌；腎感測缺氧 → 紅血球生成素↑\n- 紅血球生成素 → 紅骨髓 → 製造紅血球\n- 腎功能差 → 紅血球生成素 不足 → 腎性貧血",
           "keys": [
-            "EPO 由腎臟分泌；腎感測缺氧 → EPO↑",
-            "EPO → 紅骨髓 → 製造紅血球",
-            "腎功能差 → EPO 不足 → 腎性貧血"
+            "紅血球生成素（EPO） 由腎臟分泌；腎感測缺氧 → 紅血球生成素（EPO）↑",
+            "紅血球生成素（EPO） → 紅骨髓 → 製造紅血球",
+            "腎功能差 → 紅血球生成素（EPO） 不足 → 腎性貧血"
           ],
           "tip": ""
         },
@@ -359,24 +376,25 @@
           "q": "慢性腎衰竭病人容易貧血，最主要原因是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "腎臟分泌 EPO 通知骨髓造血；腎壞 → EPO↓ → 腎性貧血。\n\n正確選項：腎臟 EPO 製造不足。\n紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 EPO 生成，EPO 通知紅骨髓製造紅血球。",
+          "explain": "腎臟分泌 紅血球生成素（EPO） 通知骨髓造血；腎壞 → 紅血球生成素（EPO）↓ → 腎性貧血。\n\n正確選項：腎臟 紅血球生成素（EPO） 製造不足。\n紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 紅血球生成素（EPO） 生成，紅血球生成素（EPO） 通知紅骨髓製造紅血球。",
           "choices": [
-            "腎臟 EPO 製造不足",
+            "腎臟 紅血球生成素（EPO） 製造不足",
             "鐵吸收過多",
             "骨髓被腫瘤取代",
             "維他命 B12 中毒"
-          ]
+          ],
+          "id": "c448dd0df"
         },
         {
           "type": "example",
-          "title": "範例拆解：EPO：腎臟感測缺氧、命令骨髓造血",
-          "problem": "慢性腎衰竭病人容易貧血，最主要原因是？\n\nA. 腎臟 EPO 製造不足\nB. 鐵吸收過多\nC. 骨髓被腫瘤取代\nD. 維他命 B12 中毒",
+          "title": "範例拆解：紅血球生成素（EPO）：腎臟感測缺氧、命令骨髓造血",
+          "problem": "慢性腎衰竭病人容易貧血，最主要原因是？\n\nA. 腎臟 紅血球生成素（EPO） 製造不足\nB. 鐵吸收過多\nC. 骨髓被腫瘤取代\nD. 維他命 B12 中毒",
           "steps": [
-            "先確認題目問的主題：EPO：腎臟感測缺氧、命令骨髓造血",
-            "紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 EPO 生成，EPO 通知紅骨髓製造紅血球。",
-            "把判斷依據連回題目：腎臟分泌 EPO 通知骨髓造血；腎壞 → EPO↓ → 腎性貧血。\n\n正確選項：腎臟 EPO 製造不足。\n紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 EPO 生成，EPO 通知紅骨髓製造紅血球。"
+            "先確認題目問的主題：紅血球生成素（EPO）：腎臟感測缺氧、命令骨髓造血",
+            "紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 紅血球生成素（EPO） 生成，紅血球生成素（EPO） 通知紅骨髓製造紅血球。",
+            "把判斷依據連回題目：腎臟分泌 紅血球生成素（EPO） 通知骨髓造血；腎壞 → 紅血球生成素（EPO）↓ → 腎性貧血。\n\n正確選項：腎臟 紅血球生成素（EPO） 製造不足。\n紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 紅血球生成素（EPO） 生成，紅血球生成素（EPO） 通知紅骨髓製造紅血球。"
           ],
-          "answer": "腎臟 EPO 製造不足"
+          "answer": "腎臟 紅血球生成素（EPO） 製造不足"
         },
         {
           "type": "practice",
@@ -391,26 +409,28 @@
               "q": "維他命 D 活化成 1,25-(OH)₂ 的最後一步發生在哪裡？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "肝做 25-OH，腎做最後一步 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n維他命 D 來源（曬太陽、食物、保健品）都需要代謝活化：皮膚的 7-dehydrocholesterol 經陽光形成維他命 D，在血中由 DBP 攜帶 → 到肝臟轉成 25-OH vitamin D → 到腎臟轉成 1,25-(OH)₂ vitamin D（活性型）。活性 D 增加腸道對鈣的吸收，也影響骨骼、肌肉與免疫。",
+              "explain": "肝做 25-OH，腎做最後一步 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n維他命 D 來源（曬太陽、食物、保健品）都需要代謝活化：皮膚的 7-dehydrocholesterol 經陽光形成維他命 D，在血中由 DBP 攜帶 → 到肝臟轉成 25-OH 維生素 D（vitamin D） → 到腎臟轉成 1,25-(OH)₂ 維生素 D（vitamin D）（活性型）。活性 D 增加腸道對鈣的吸收，也影響骨骼、肌肉與免疫。",
               "choices": [
                 "腎臟",
                 "肝臟",
                 "皮膚",
                 "腸道"
-              ]
+              ],
+              "id": "cec325c74"
             },
             {
               "kind": "single",
               "q": "慢性腎衰竭病人容易貧血，最主要原因是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "腎臟分泌 EPO 通知骨髓造血；腎壞 → EPO↓ → 腎性貧血。\n\n正確選項：腎臟 EPO 製造不足。\n紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 EPO 生成，EPO 通知紅骨髓製造紅血球。",
+              "explain": "腎臟分泌 紅血球生成素（EPO） 通知骨髓造血；腎壞 → 紅血球生成素（EPO）↓ → 腎性貧血。\n\n正確選項：腎臟 紅血球生成素（EPO） 製造不足。\n紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 紅血球生成素（EPO） 生成，紅血球生成素（EPO） 通知紅骨髓製造紅血球。",
               "choices": [
-                "腎臟 EPO 製造不足",
+                "腎臟 紅血球生成素（EPO） 製造不足",
                 "鐵吸收過多",
                 "骨髓被腫瘤取代",
                 "維他命 B12 中毒"
-              ]
+              ],
+              "id": "c448dd0df"
             }
           ]
         },
@@ -418,27 +438,31 @@
           "type": "recap",
           "points": [
             "皮膚 7-DHC →(陽光)→ 維他命 D →(DBP 攜帶)",
-            "肝 → 25-OH vitamin D → 腎 → 1,25-(OH)₂（活性型）",
-            "EPO 由腎臟分泌；腎感測缺氧 → EPO↑",
-            "EPO → 紅骨髓 → 製造紅血球",
-            "維他命 D：皮膚/食物 → 肝 25-OH → 腎 1,25-(OH)₂（活性）→ 增加腸道鈣吸收；EPO：腎感測缺氧 → EPO → 紅骨髓造紅血球；腎壞 → EPO 不足 → 腎性貧血。"
+            "肝 → 25-OH 維生素 D（vitamin D） → 腎 → 1,25-(OH)₂（活性型）",
+            "紅血球生成素（EPO） 由腎臟分泌；腎感測缺氧 → 紅血球生成素（EPO）↑",
+            "紅血球生成素（EPO） → 紅骨髓 → 製造紅血球",
+            "維他命 D：皮膚/食物 → 肝 25-OH → 腎 1,25-(OH)₂（活性）→ 增加腸道鈣吸收；紅血球生成素（EPO）：腎感測缺氧 → 紅血球生成素（EPO） → 紅骨髓造紅血球；腎壞 → 紅血球生成素（EPO） 不足 → 腎性貧血。"
           ],
           "flash": [
             {
               "front": "維他命 D 活化：最後一步在腎臟",
-              "back": "維他命 D 來源（曬太陽、食物、保健品）都需要代謝活化：皮膚的 7-dehydrocholesterol 經陽光形成維他命 D，在血中由 DBP 攜帶 → 到肝臟轉成 25-OH vitamin D → 到腎臟轉成 1,25-(OH)₂ vitamin D（活性型）。活性 D 增加腸道對鈣的吸收，也影響骨骼、肌肉與免疫。"
+              "back": "維他命 D 來源（曬太陽、食物、保健品）都需要代謝活化：皮膚的 7-dehydrocholesterol 經陽光形成維他命 D，在血中由 DBP 攜帶 → 到肝臟轉成 25-OH 維生素 D（vitamin D） → 到腎臟轉成 1,25-(OH)₂ 維生素 D（vitamin D）（活性型）。活性 D 增加腸道對鈣的吸收，也影響骨骼、肌肉與免疫。",
+              "id": "fb757d0fe"
             },
             {
-              "front": "EPO：腎臟感測缺氧、命令骨髓造血",
-              "back": "紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 EPO 生成，EPO 通知紅骨髓製造紅血球。"
+              "front": "紅血球生成素（EPO）：腎臟感測缺氧、命令骨髓造血",
+              "back": "紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 紅血球生成素（EPO） 生成，紅血球生成素（EPO） 通知紅骨髓製造紅血球。",
+              "id": "fca24d851"
             },
             {
               "front": "維他命 D 活化成 1,25-(OH)₂ 的最後一步發生在哪裡？",
-              "back": "肝做 25-OH，腎做最後一步 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n維他命 D 來源（曬太陽、食物、保健品）都需要代謝活化：皮膚的 7-dehydrocholesterol 經陽光形成維他命 D，在血中由 DBP 攜帶 → 到肝臟轉成 25-OH vitamin D → 到腎臟轉成 1,25-(OH)₂ vitamin D（活性型）。活性 D 增加腸道對鈣的吸收，也影響骨骼、肌肉與免疫。"
+              "back": "肝做 25-OH，腎做最後一步 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n維他命 D 來源（曬太陽、食物、保健品）都需要代謝活化：皮膚的 7-dehydrocholesterol 經陽光形成維他命 D，在血中由 DBP 攜帶 → 到肝臟轉成 25-OH 維生素 D（vitamin D） → 到腎臟轉成 1,25-(OH)₂ 維生素 D（vitamin D）（活性型）。活性 D 增加腸道對鈣的吸收，也影響骨骼、肌肉與免疫。",
+              "id": "fec325c74"
             },
             {
               "front": "慢性腎衰竭病人容易貧血，最主要原因是？",
-              "back": "腎臟分泌 EPO 通知骨髓造血；腎壞 → EPO↓ → 腎性貧血。\n\n正確選項：腎臟 EPO 製造不足。\n紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 EPO 生成，EPO 通知紅骨髓製造紅血球。"
+              "back": "腎臟分泌 紅血球生成素（EPO） 通知骨髓造血；腎壞 → 紅血球生成素（EPO）↓ → 腎性貧血。\n\n正確選項：腎臟 紅血球生成素（EPO） 製造不足。\n紅血球生成素 erythropoietin（EPO）由腎臟分泌：腎臟能感測血氧狀態，缺氧時促進 紅血球生成素（EPO） 生成，紅血球生成素（EPO） 通知紅骨髓製造紅血球。",
+              "id": "f448dd0df"
             }
           ]
         }
@@ -446,24 +470,24 @@
     },
     {
       "id": "renal-clearance-1",
-      "title": "第 6 站：用『單位時間兩顆腎的體積』看懂 GFR 與 inulin",
+      "title": "第 6 站：用『單位時間兩顆腎的體積』看懂 腎絲球過濾率（GFR） 與 菊糖（inulin）",
       "goals": [
         "解釋別被中文騙：很多『率』是『單位時間的體積』",
-        "解釋用質量守恆推 GFR，並找『理想物質』",
-        "解釋Inulin 菊糖（不是 insulin）最適合測 GFR"
+        "解釋用質量守恆推 腎絲球過濾率（GFR），並找『理想物質』",
+        "解釋菊糖（Inulin） 菊糖（不是 insulin）最適合測 腎絲球過濾率（GFR）"
       ],
       "steps": [
         {
           "type": "intro",
-          "title": "第 6 站：用『單位時間兩顆腎的體積』看懂 GFR 與 inulin",
-          "body": "老師的招牌提醒：別被中文『率/清除率』騙了——很多其實是『單位時間內兩顆腎發生某事的體積』。用質量守恆與理想物質 inulin 就能算 GFR。\n\n- 先校正觀念：腎臟很多『率』其實是『單位時間的體積』。\n- 用質量守恆推 GFR，並理解為何需要理想物質。\n- 認識 inulin（不是 insulin）為何最適合測 GFR。"
+          "title": "第 6 站：用『單位時間兩顆腎的體積』看懂 腎絲球過濾率（GFR） 與 菊糖（inulin）",
+          "body": "老師的招牌提醒：別被中文『率/清除率』騙了——很多其實是『單位時間內兩顆腎發生某事的體積』。用質量守恆與理想物質 菊糖（inulin） 就能算 腎絲球過濾率（GFR）。\n\n- 先校正觀念：腎臟很多『率』其實是『單位時間的體積』。\n- 用質量守恆推 腎絲球過濾率，並理解為何需要理想物質。\n- 認識 菊糖（不是 insulin）為何最適合測 腎絲球過濾率。"
         },
         {
           "type": "card",
           "title": "別被中文騙：很多『率』是『單位時間的體積』",
-          "body": "**連到前一觀念**\n算任何腎臟數值前，先把觀念校正好。\n\n**觀念**\n老師提醒：腎臟很多看起來像『率』或『清除率』的數值，本質上是『單位時間內，兩顆腎發生某件事的體積』。例如 GFR（腎絲球過濾率）＝每分鐘兩顆腎中，血漿穿過超過濾膜變成濾液的體積。\n\n**為什麼**\n把 GFR 讀成『每分鐘濾出多少 mL 濾液』，而不是抽象的『率』，後面的公式就都變成體積的加減。清除率也是同理：是『每分鐘有多少 mL 血漿被某物質等效清空』的虛擬體積，不是把血液洗乾淨的速度。\n\n**考試角度**\n- GFR＝每分鐘兩腎血漿 → 濾液的體積（mL/min）\n- 清除率 Cx＝每分鐘被某物質『等效清空』的血漿體積\n- 讀成『體積』，不要被中文『率』誤導\n\n**易錯與比較**\n『清除率』不是『把血液洗乾淨的速度』，而是一個等效體積（虛擬清空多少 mL 血漿）。",
+          "body": "**連到前一觀念**\n算任何腎臟數值前，先把觀念校正好。\n\n**觀念**\n老師提醒：腎臟很多看起來像『率』或『清除率』的數值，本質上是『單位時間內，兩顆腎發生某件事的體積』。例如 GFR（腎絲球過濾率）＝每分鐘兩顆腎中，血漿穿過超過濾膜變成濾液的體積。\n\n**為什麼**\n把 腎絲球過濾率（GFR） 讀成『每分鐘濾出多少 mL 濾液』，而不是抽象的『率』，後面的公式就都變成體積的加減。清除率也是同理：是『每分鐘有多少 mL 血漿被某物質等效清空』的虛擬體積，不是把血液洗乾淨的速度。\n\n**考試角度**\n- 腎絲球過濾率＝每分鐘兩腎血漿 → 濾液的體積（mL/min）\n- 清除率 Cx＝每分鐘被某物質『等效清空』的血漿體積\n- 讀成『體積』，不要被中文『率』誤導\n\n**易錯與比較**\n『清除率』不是『把血液洗乾淨的速度』，而是一個等效體積（虛擬清空多少 mL 血漿）。",
           "keys": [
-            "GFR＝每分鐘兩腎血漿 → 濾液的體積（mL/min）",
+            "腎絲球過濾率（GFR）＝每分鐘兩腎血漿 → 濾液的體積（mL/min）",
             "清除率 Cx＝每分鐘被某物質『等效清空』的血漿體積",
             "讀成『體積』，不要被中文『率』誤導"
           ],
@@ -472,81 +496,84 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "GFR 的本質意義最接近下列何者？",
+          "q": "腎絲球過濾率（GFR） 的本質意義最接近下列何者？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "GFR＝單位時間兩顆腎血漿穿過超過濾膜變濾液的體積（mL/min）。\n\n正確選項：每分鐘兩腎血漿變成濾液的體積。\n老師提醒：腎臟很多看起來像『率』或『清除率』的數值，本質上是『單位時間內，兩顆腎發生某件事的體積』。例如 GFR（腎絲球過濾率）＝每分鐘兩顆腎中，血漿穿過超過濾膜變成濾液的體積。",
+          "explain": "腎絲球過濾率（GFR）＝單位時間兩顆腎血漿穿過超過濾膜變濾液的體積（mL/min）。\n\n正確選項：每分鐘兩腎血漿變成濾液的體積。\n老師提醒：腎臟很多看起來像『率』或『清除率』的數值，本質上是『單位時間內，兩顆腎發生某件事的體積』。例如 GFR（腎絲球過濾率）＝每分鐘兩顆腎中，血漿穿過超過濾膜變成濾液的體積。",
           "choices": [
             "每分鐘兩腎血漿變成濾液的體積",
             "每分鐘心臟打出的血量",
             "把血液洗乾淨的速度",
             "尿量"
-          ]
+          ],
+          "id": "c1190b55f"
         },
         {
           "type": "card",
-          "title": "用質量守恆推 GFR，並找『理想物質』",
-          "body": "**連到前一觀念**\n有了體積觀念，用質量守恆就能把 GFR 算出來。\n\n**觀念**\n對某物質 X 用質量守恆：血漿中 X 濃度 × GFR ＝ X 被濾過進入濾液的量；再加減小管的重吸收與分泌，最後才是尿中 X 的量。問題是重吸收/分泌很難算，所以要找一個『自由通過超過濾膜、但不被重吸收也不被分泌』的理想物質（tubular treatment = 0）。\n\n**為什麼**\n若 X 在小管完全不被處理（tubular treatment=0），那『濾過量＝排出量』，GFR 就能用尿中 X 的排出量 ÷ 血漿 X 濃度直接算出來，不必煩惱重吸收/分泌。\n\n**考試角度**\n- 質量守恆：Px × GFR ＝濾過量；再±重吸收/分泌＝尿中量\n- 理想物質：自由過濾、不被重吸收、不被分泌（tubular treatment=0）\n- 此時 GFR ＝ Ux·V / Px\n\n**公式**\nPx × GFR ＝ Ux × V（當 X 的 tubular treatment = 0）\n\n**易錯與比較**\n能直接拿來算 GFR 的，必須『過濾後在小管完全不被動手腳』，否則濾過量≠排出量。",
+          "title": "用質量守恆推 腎絲球過濾率（GFR），並找『理想物質』",
+          "body": "**連到前一觀念**\n有了體積觀念，用質量守恆就能把 腎絲球過濾率（GFR） 算出來。\n\n**觀念**\n對某物質 X 用質量守恆：血漿中 X 濃度 × 腎絲球過濾率 ＝ X 被濾過進入濾液的量；再加減小管的重吸收與分泌，最後才是尿中 X 的量。問題是重吸收/分泌很難算，所以要找一個『自由通過超過濾膜、但不被重吸收也不被分泌』的理想物質（tubular treatment = 0）。\n\n**為什麼**\n若 X 在小管完全不被處理（tubular treatment=0），那『濾過量＝排出量』，腎絲球過濾率 就能用尿中 X 的排出量 ÷ 血漿 X 濃度直接算出來，不必煩惱重吸收/分泌。\n\n**考試角度**\n- 質量守恆：Px × 腎絲球過濾率 ＝濾過量；再±重吸收/分泌＝尿中量\n- 理想物質：自由過濾、不被重吸收、不被分泌（tubular treatment=0）\n- 此時 腎絲球過濾率 ＝ Ux·V / Px\n\n**公式**\nPx × 腎絲球過濾率 ＝ Ux × V（當 X 的 tubular treatment = 0）\n\n**易錯與比較**\n能直接拿來算 腎絲球過濾率 的，必須『過濾後在小管完全不被動手腳』，否則濾過量≠排出量。",
           "keys": [
-            "質量守恆：Px × GFR ＝濾過量；再±重吸收/分泌＝尿中量",
+            "質量守恆：Px × 腎絲球過濾率（GFR） ＝濾過量；再±重吸收/分泌＝尿中量",
             "理想物質：自由過濾、不被重吸收、不被分泌（tubular treatment=0）",
-            "此時 GFR ＝ Ux·V / Px"
+            "此時 腎絲球過濾率（GFR） ＝ Ux·V / Px"
           ],
-          "tip": "能直接拿來算 GFR 的，必須『過濾後在小管完全不被動手腳』，否則濾過量≠排出量。"
+          "tip": "能直接拿來算 腎絲球過濾率（GFR） 的，必須『過濾後在小管完全不被動手腳』，否則濾過量≠排出量。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "要用某物質直接測 GFR，它在小管必須？",
+          "q": "要用某物質直接測 腎絲球過濾率（GFR），它在小管必須？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "理想標記物自由過濾、不被重吸收也不被分泌，濾過量＝排出量，才能直接算 GFR。\n\n正確選項：不被重吸收也不被分泌（tubular treatment=0）。\n對某物質 X 用質量守恆：血漿中 X 濃度 × GFR ＝ X 被濾過進入濾液的量；再加減小管的重吸收與分泌，最後才是尿中 X 的量。問題是重吸收/分泌很難算，所以要找一個『自由通過超過濾膜、但不被重吸收也不被分泌』的理想物質（tubular treatment = 0）。",
+          "explain": "理想標記物自由過濾、不被重吸收也不被分泌，濾過量＝排出量，才能直接算 腎絲球過濾率（GFR）。\n\n正確選項：不被重吸收也不被分泌（tubular treatment=0）。\n對某物質 X 用質量守恆：血漿中 X 濃度 × 腎絲球過濾率（GFR） ＝ X 被濾過進入濾液的量；再加減小管的重吸收與分泌，最後才是尿中 X 的量。問題是重吸收/分泌很難算，所以要找一個『自由通過超過濾膜、但不被重吸收也不被分泌』的理想物質（tubular treatment = 0）。",
           "choices": [
             "不被重吸收也不被分泌（tubular treatment=0）",
             "被大量重吸收",
             "被大量分泌",
             "完全不被過濾"
-          ]
+          ],
+          "id": "c376691e5"
         },
         {
           "type": "card",
-          "title": "Inulin 菊糖（不是 insulin）最適合測 GFR",
-          "body": "**連到前一觀念**\n理想物質長什麼樣？Homer Smith 找到了它。\n\n**觀念**\nInulin（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 GFR。某物質的清除率 Cx = Ux·V / Px。\n\n**為什麼**\n因為身體的運輸通道和受體都不認得 inulin，所以不會去重吸收或分泌它——濾過多少就排出多少，inulin 清除率＝GFR。把任一物質的清除率和 GFR（inulin 清除率）比較，還能判斷小管是在『撿回它（重吸收）』還是『額外丟它（分泌）』。\n\n**考試角度**\n- inulin：小、不帶電、不被重吸收/分泌、不被合成代謝、無毒\n- → inulin 清除率 ＝ GFR（黃金標準）\n- 清除率公式 Cx = Ux·V / Px；與 GFR 比可判斷重吸收 vs 分泌\n\n**公式**\n清除率 Cx = (Ux × V) / Px；inulin 清除率 = GFR\n\n**易錯與比較**\ninulin（菊糖）≠ insulin（胰島素），別看錯字。",
+          "title": "菊糖（Inulin） 菊糖（不是 insulin）最適合測 腎絲球過濾率（GFR）",
+          "body": "**連到前一觀念**\n理想物質長什麼樣？Homer Smith 找到了它。\n\n**觀念**\n菊糖（Inulin）（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 腎絲球過濾率（GFR）。某物質的清除率 Cx = Ux·V / Px。\n\n**為什麼**\n因為身體的運輸通道和受體都不認得 菊糖，所以不會去重吸收或分泌它——濾過多少就排出多少，菊糖 清除率＝腎絲球過濾率。把任一物質的清除率和 腎絲球過濾率（inulin 清除率）比較，還能判斷小管是在『撿回它（重吸收）』還是『額外丟它（分泌）』。\n\n**考試角度**\n- 菊糖：小、不帶電、不被重吸收/分泌、不被合成代謝、無毒\n- → 菊糖 清除率 ＝ 腎絲球過濾率（黃金標準）\n- 清除率公式 Cx = Ux·V / Px；與 腎絲球過濾率 比可判斷重吸收 vs 分泌\n\n**公式**\n清除率 Cx = (Ux × V) / Px；菊糖 清除率 = 腎絲球過濾率\n\n**易錯與比較**\ninulin（菊糖）≠ insulin（胰島素），別看錯字。",
           "keys": [
-            "inulin：小、不帶電、不被重吸收/分泌、不被合成代謝、無毒",
-            "→ inulin 清除率 ＝ GFR（黃金標準）",
-            "清除率公式 Cx = Ux·V / Px；與 GFR 比可判斷重吸收 vs 分泌"
+            "菊糖（inulin）：小、不帶電、不被重吸收/分泌、不被合成代謝、無毒",
+            "→ 菊糖（inulin） 清除率 ＝ 腎絲球過濾率（GFR）（黃金標準）",
+            "清除率公式 Cx = Ux·V / Px；與 腎絲球過濾率（GFR） 比可判斷重吸收 vs 分泌"
           ],
           "tip": "inulin（菊糖）≠ insulin（胰島素），別看錯字。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "為什麼 inulin 的清除率可以代表 GFR？",
+          "q": "為什麼 菊糖（inulin） 的清除率可以代表 腎絲球過濾率（GFR）？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "inulin 自由過濾、在小管完全不被處理，濾過量＝排出量，所以清除率＝GFR。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\nInulin（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 GFR。某物質的清除率 Cx = Ux·V / Px。",
+          "explain": "菊糖（inulin） 自由過濾、在小管完全不被處理，濾過量＝排出量，所以清除率＝腎絲球過濾率（GFR）。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n菊糖（Inulin）（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 腎絲球過濾率（GFR）。某物質的清除率 Cx = Ux·V / Px。",
           "choices": [
             "自由過濾、不被重吸收也不被分泌",
             "會被大量分泌",
             "只在腎髓質作用",
             "由腎臟合成"
-          ]
+          ],
+          "id": "c8e75031e"
         },
         {
           "type": "example",
-          "title": "範例拆解：Inulin 菊糖（不是 insulin）最適合測 GFR",
-          "problem": "為什麼 inulin 的清除率可以代表 GFR？\n\nA. 自由過濾、不被重吸收也不被分泌\nB. 會被大量分泌\nC. 只在腎髓質作用\nD. 由腎臟合成",
+          "title": "範例拆解：菊糖（Inulin） 菊糖（不是 insulin）最適合測 腎絲球過濾率（GFR）",
+          "problem": "為什麼 菊糖（inulin） 的清除率可以代表 腎絲球過濾率（GFR）？\n\nA. 自由過濾、不被重吸收也不被分泌\nB. 會被大量分泌\nC. 只在腎髓質作用\nD. 由腎臟合成",
           "steps": [
-            "先確認題目問的主題：Inulin 菊糖（不是 insulin）最適合測 GFR",
-            "Inulin（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 GFR。某物質的清除率 Cx = Ux·V / Px。",
-            "把判斷依據連回題目：inulin 自由過濾、在小管完全不被處理，濾過量＝排出量，所以清除率＝GFR。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\nInulin（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 GFR。某物質的清除率 Cx = Ux·V / Px。"
+            "先確認題目問的主題：菊糖（Inulin） 菊糖（不是 insulin）最適合測 腎絲球過濾率（GFR）",
+            "菊糖（Inulin）（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 腎絲球過濾率（GFR）。某物質的清除率 Cx = Ux·V / Px。",
+            "把判斷依據連回題目：菊糖（inulin） 自由過濾、在小管完全不被處理，濾過量＝排出量，所以清除率＝腎絲球過濾率（GFR）。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n菊糖（Inulin）（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 腎絲球過濾率（GFR）。某物質的清除率 Cx = Ux·V / Px。"
           ],
           "answer": "自由過濾、不被重吸收也不被分泌"
         },
         {
           "type": "practice",
-          "title": "實戰：第 6 站：用『單位時間兩顆腎的體積』看懂 GFR 與 inulin",
+          "title": "實戰：第 6 站：用『單位時間兩顆腎的體積』看懂 腎絲球過濾率（GFR） 與 菊糖（inulin）",
           "qids": [
             "s114-physio-course114-u12-phys-12-01",
             "s114-physio-course114-u12-phys-12-02"
@@ -554,59 +581,65 @@
           "checks": [
             {
               "kind": "single",
-              "q": "要用某物質直接測 GFR，它在小管必須？",
+              "q": "要用某物質直接測 腎絲球過濾率（GFR），它在小管必須？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "理想標記物自由過濾、不被重吸收也不被分泌，濾過量＝排出量，才能直接算 GFR。\n\n正確選項：不被重吸收也不被分泌（tubular treatment=0）。\n對某物質 X 用質量守恆：血漿中 X 濃度 × GFR ＝ X 被濾過進入濾液的量；再加減小管的重吸收與分泌，最後才是尿中 X 的量。問題是重吸收/分泌很難算，所以要找一個『自由通過超過濾膜、但不被重吸收也不被分泌』的理想物質（tubular treatment = 0）。",
+              "explain": "理想標記物自由過濾、不被重吸收也不被分泌，濾過量＝排出量，才能直接算 腎絲球過濾率（GFR）。\n\n正確選項：不被重吸收也不被分泌（tubular treatment=0）。\n對某物質 X 用質量守恆：血漿中 X 濃度 × 腎絲球過濾率（GFR） ＝ X 被濾過進入濾液的量；再加減小管的重吸收與分泌，最後才是尿中 X 的量。問題是重吸收/分泌很難算，所以要找一個『自由通過超過濾膜、但不被重吸收也不被分泌』的理想物質（tubular treatment = 0）。",
               "choices": [
                 "不被重吸收也不被分泌（tubular treatment=0）",
                 "被大量重吸收",
                 "被大量分泌",
                 "完全不被過濾"
-              ]
+              ],
+              "id": "c376691e5"
             },
             {
               "kind": "single",
-              "q": "為什麼 inulin 的清除率可以代表 GFR？",
+              "q": "為什麼 菊糖（inulin） 的清除率可以代表 腎絲球過濾率（GFR）？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "inulin 自由過濾、在小管完全不被處理，濾過量＝排出量，所以清除率＝GFR。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\nInulin（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 GFR。某物質的清除率 Cx = Ux·V / Px。",
+              "explain": "菊糖（inulin） 自由過濾、在小管完全不被處理，濾過量＝排出量，所以清除率＝腎絲球過濾率（GFR）。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n菊糖（Inulin）（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 腎絲球過濾率（GFR）。某物質的清除率 Cx = Ux·V / Px。",
               "choices": [
                 "自由過濾、不被重吸收也不被分泌",
                 "會被大量分泌",
                 "只在腎髓質作用",
                 "由腎臟合成"
-              ]
+              ],
+              "id": "c8e75031e"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "GFR＝每分鐘兩腎血漿 → 濾液的體積（mL/min）",
+            "腎絲球過濾率（GFR）＝每分鐘兩腎血漿 → 濾液的體積（mL/min）",
             "清除率 Cx＝每分鐘被某物質『等效清空』的血漿體積",
-            "質量守恆：Px × GFR ＝濾過量；再±重吸收/分泌＝尿中量",
+            "質量守恆：Px × 腎絲球過濾率（GFR） ＝濾過量；再±重吸收/分泌＝尿中量",
             "理想物質：自由過濾、不被重吸收、不被分泌（tubular treatment=0）",
-            "inulin：小、不帶電、不被重吸收/分泌、不被合成代謝、無毒",
-            "→ inulin 清除率 ＝ GFR（黃金標準）",
-            "GFR＝每分鐘兩顆腎血漿穿過超過濾膜變成濾液的體積 → 用質量守恆：血漿 X 濃度 × GFR ＝濾過量；要好算就找『自由過濾、不被重吸收也不被分泌（tubular treatment=0）』的物質 → inulin 菊糖最理想；清除率 Cx = Ux·V / Px。"
+            "菊糖（inulin）：小、不帶電、不被重吸收/分泌、不被合成代謝、無毒",
+            "→ 菊糖（inulin） 清除率 ＝ 腎絲球過濾率（GFR）（黃金標準）",
+            "腎絲球過濾率（GFR）＝每分鐘兩顆腎血漿穿過超過濾膜變成濾液的體積 → 用質量守恆：血漿 X 濃度 × 腎絲球過濾率（GFR） ＝濾過量；要好算就找『自由過濾、不被重吸收也不被分泌（tubular treatment=0）』的物質 → 菊糖（inulin） 菊糖最理想；清除率 Cx = Ux·V / Px。"
           ],
           "flash": [
             {
               "front": "別被中文騙：很多『率』是『單位時間的體積』",
-              "back": "老師提醒：腎臟很多看起來像『率』或『清除率』的數值，本質上是『單位時間內，兩顆腎發生某件事的體積』。例如 GFR（腎絲球過濾率）＝每分鐘兩顆腎中，血漿穿過超過濾膜變成濾液的體積。"
+              "back": "老師提醒：腎臟很多看起來像『率』或『清除率』的數值，本質上是『單位時間內，兩顆腎發生某件事的體積』。例如 GFR（腎絲球過濾率）＝每分鐘兩顆腎中，血漿穿過超過濾膜變成濾液的體積。",
+              "id": "fa40edc8b"
             },
             {
-              "front": "用質量守恆推 GFR，並找『理想物質』",
-              "back": "對某物質 X 用質量守恆：血漿中 X 濃度 × GFR ＝ X 被濾過進入濾液的量；再加減小管的重吸收與分泌，最後才是尿中 X 的量。問題是重吸收/分泌很難算，所以要找一個『自由通過超過濾膜、但不被重吸收也不被分泌』的理想物質（tubular treatment = 0）。"
+              "front": "用質量守恆推 腎絲球過濾率（GFR），並找『理想物質』",
+              "back": "對某物質 X 用質量守恆：血漿中 X 濃度 × 腎絲球過濾率（GFR） ＝ X 被濾過進入濾液的量；再加減小管的重吸收與分泌，最後才是尿中 X 的量。問題是重吸收/分泌很難算，所以要找一個『自由通過超過濾膜、但不被重吸收也不被分泌』的理想物質（tubular treatment = 0）。",
+              "id": "ffbf8dd44"
             },
             {
-              "front": "Inulin 菊糖（不是 insulin）最適合測 GFR",
-              "back": "Inulin（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 GFR。某物質的清除率 Cx = Ux·V / Px。"
+              "front": "菊糖（Inulin） 菊糖（不是 insulin）最適合測 腎絲球過濾率（GFR）",
+              "back": "菊糖（Inulin）（菊糖，一種植物性糖類，不是胰島素 insulin）符合所有理想條件：分子夠小可自由通過超過濾膜、不帶電、不被重吸收、不被分泌、身體不合成也不代謝、無毒。所以它的清除率剛好等於 腎絲球過濾率（GFR）。某物質的清除率 Cx = Ux·V / Px。",
+              "id": "ffd36ce4a"
             },
             {
-              "front": "GFR 的本質意義最接近下列何者？",
-              "back": "GFR＝單位時間兩顆腎血漿穿過超過濾膜變濾液的體積（mL/min）。\n\n正確選項：每分鐘兩腎血漿變成濾液的體積。\n老師提醒：腎臟很多看起來像『率』或『清除率』的數值，本質上是『單位時間內，兩顆腎發生某件事的體積』。例如 GFR（腎絲球過濾率）＝每分鐘兩顆腎中，血漿穿過超過濾膜變成濾液的體積。"
+              "front": "腎絲球過濾率（GFR） 的本質意義最接近下列何者？",
+              "back": "腎絲球過濾率（GFR）＝單位時間兩顆腎血漿穿過超過濾膜變濾液的體積（mL/min）。\n\n正確選項：每分鐘兩腎血漿變成濾液的體積。\n老師提醒：腎臟很多看起來像『率』或『清除率』的數值，本質上是『單位時間內，兩顆腎發生某件事的體積』。例如 GFR（腎絲球過濾率）＝每分鐘兩顆腎中，血漿穿過超過濾膜變成濾液的體積。",
+              "id": "f1190b55f"
             }
           ]
         }
@@ -618,7 +651,7 @@
       "goals": [
         "解釋必記與易錯",
         "解釋必記與易錯",
-        "解釋急速重點：JGA 三大組成"
+        "解釋急速重點：腎絲球旁器（JGA） 三大組成"
       ],
       "steps": [
         {
@@ -629,7 +662,7 @@
         {
           "type": "card",
           "title": "必記與易錯（1/2）",
-          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\nmustKnow：- 演化推結構：過濾(腎絲球)→重吸收 NaCl(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n\n- 腎臟 ~0.5% 體重卻拿 ~25% CO；\n三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n\n- Cortical(短環、重吸收、多) vs juxtamedullary(長環深入髓質、濃縮稀釋)；\n出球→peritubular vs vasa recta。\n\n- 超過濾膜三層：fenestration(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte filtration slit(不規則)；\nmesangial 調 Kf。\n\n- JGA：JG cell(看壓力放 renin)＋macula densa(看 NaCl)；\nrenin 三因＝血壓↓、NaCl↓、交感 β1。\n\n- RAAS：renin→Ang I→(ACE)→Ang II；\nAng II 走 AT1 縮血管(TPR↑)＋刺激 aldosterone(留鈉排鉀、水跟著)。\n\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 EPO（腎壞→腎性貧血）。\n\n- GFR＝單位時間兩腎濾液體積；\n理想物質 tubular treatment=0；\ninulin 清除率＝GFR；\nCx=Ux·V/Px。\n\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\nmustKnow：- 演化推結構：過濾(腎絲球)→重吸收 氯化鈉（NaCl）(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n\n- 腎臟 ~0.5% 體重卻拿 ~25% 心輸出量（CO）；\n三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n\n- Cortical(短環、重吸收、多) vs 近髓質（juxtamedullary）(長環深入髓質、濃縮稀釋)；\n出球→peritubular vs 直小血管（vasa recta）。\n\n- 超過濾膜三層：窗孔（fenestration）(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte 濾過（filtration） 狹縫（slit）(不規則)；\nmesangial 調 Kf。\n\n- 腎絲球旁器（JGA）：腎絲球旁細胞（JG cell）(看壓力放 renin)＋緻密斑（macula densa）(看 NaCl)；\n腎素（renin） 三因＝血壓↓、氯化鈉↓、交感 β1。\n\n- 腎素－血管張力素－醛固酮系統（RAAS）：腎素→血管張力素 I（Ang I）→(ACE)→血管張力素 II（Ang II）；\n血管張力素 II 走 AT1 縮血管(TPR↑)＋刺激 醛固酮（aldosterone）(留鈉排鉀、水跟著)。\n\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 紅血球生成素（EPO）（腎壞→腎性貧血）。\n\n- 腎絲球過濾率（GFR）＝單位時間兩腎濾液體積；\n理想物質 tubular treatment=0；\n菊糖（inulin） 清除率＝腎絲球過濾率；\nCx=Ux·V/Px。\n\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。",
           "keys": [
             "把本單元的關係串起來，確認易錯条件與方向。"
           ],
@@ -639,14 +672,15 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
-          "answer": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 NaCl(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% CO；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs juxtamedullary(長環深入髓質、濃縮稀釋)；出球→peritubular vs vasa recta。\n- 超過濾膜三層：fenestration(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte filtration slit(不規則)；mesangial 調 Kf。\n- JGA：JG cell(看壓力放 renin)＋macula densa(看 NaCl)；renin 三因＝血壓↓、NaCl↓、交感 β1。\n- RAAS：renin→Ang I→(ACE)→Ang II；Ang II 走 AT1 縮血管(TPR↑)＋刺激 aldosterone(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 EPO（腎壞→腎性貧血）。\n- GFR＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；inulin 清除率＝GFR；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 juxtamedullary（長環）＋vasa recta，不是數量多的 cortical。\n- fenestration(內皮、規則窗孔) 與 filtration slit(足細胞、不規則) 別配錯。\n- renin 三因是血壓↓/NaCl↓/交感；血壓上升反而抑制 renin。\n- aldosterone 是『留鈉排鉀』；Ang II 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
+          "answer": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 氯化鈉（NaCl）(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% 心輸出量（CO）；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs 近髓質（juxtamedullary）(長環深入髓質、濃縮稀釋)；出球→peritubular vs 直小血管（vasa recta）。\n- 超過濾膜三層：窗孔（fenestration）(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte 濾過（filtration） 狹縫（slit）(不規則)；mesangial 調 Kf。\n- 腎絲球旁器（JGA）：腎絲球旁細胞（JG cell）(看壓力放 renin)＋緻密斑（macula densa）(看 NaCl)；腎素（renin） 三因＝血壓↓、氯化鈉（NaCl）↓、交感 β1。\n- 腎素－血管張力素－醛固酮系統（RAAS）：腎素（renin）→血管張力素 I（Ang I）→(ACE)→血管張力素 II（Ang II）；血管張力素 II（Ang II） 走 AT1 縮血管(TPR↑)＋刺激 醛固酮（aldosterone）(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 紅血球生成素（EPO）（腎壞→腎性貧血）。\n- 腎絲球過濾率（GFR）＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；菊糖（inulin） 清除率＝腎絲球過濾率（GFR）；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 近髓質（juxtamedullary）（長環）＋直小血管（vasa recta），不是數量多的 cortical。\n- 窗孔（fenestration）(內皮、規則窗孔) 與 濾過（filtration） 狹縫（slit）(足細胞、不規則) 別配錯。\n- 腎素（renin） 三因是血壓↓/氯化鈉（NaCl）↓/交感；血壓上升反而抑制 腎素（renin）。\n- 醛固酮（aldosterone） 是『留鈉排鉀』；血管張力素 II（Ang II） 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 NaCl(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% CO；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs juxtamedullary(長環深入髓質、濃縮稀釋)；出球→peritubular vs vasa recta。\n- 超過濾膜三層：fenestration(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte filtration slit(不規則)；mesangial 調 Kf。\n- JGA：JG cell(看壓力放 renin)＋macula densa(看 NaCl)；renin 三因＝血壓↓、NaCl↓、交感 β1。\n- RAAS：renin→Ang I→(ACE)→Ang II；Ang II 走 AT1 縮血管(TPR↑)＋刺激 aldosterone(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 EPO（腎壞→腎性貧血）。\n- GFR＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；inulin 清除率＝GFR；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 juxtamedullary（長環）＋vasa recta，不是數量多的 cortical。\n- fenestration(內皮、規則窗孔) 與 filtration slit(足細胞、不規則) 別配錯。\n- renin 三因是血壓↓/NaCl↓/交感；血壓上升反而抑制 renin。\n- aldosterone 是『留鈉排鉀』；Ang II 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。"
+          "explain": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 氯化鈉（NaCl）(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% 心輸出量（CO）；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs 近髓質（juxtamedullary）(長環深入髓質、濃縮稀釋)；出球→peritubular vs 直小血管（vasa recta）。\n- 超過濾膜三層：窗孔（fenestration）(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte 濾過（filtration） 狹縫（slit）(不規則)；mesangial 調 Kf。\n- 腎絲球旁器（JGA）：腎絲球旁細胞（JG cell）(看壓力放 renin)＋緻密斑（macula densa）(看 NaCl)；腎素（renin） 三因＝血壓↓、氯化鈉（NaCl）↓、交感 β1。\n- 腎素－血管張力素－醛固酮系統（RAAS）：腎素（renin）→血管張力素 I（Ang I）→(ACE)→血管張力素 II（Ang II）；血管張力素 II（Ang II） 走 AT1 縮血管(TPR↑)＋刺激 醛固酮（aldosterone）(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 紅血球生成素（EPO）（腎壞→腎性貧血）。\n- 腎絲球過濾率（GFR）＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；菊糖（inulin） 清除率＝腎絲球過濾率（GFR）；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 近髓質（juxtamedullary）（長環）＋直小血管（vasa recta），不是數量多的 cortical。\n- 窗孔（fenestration）(內皮、規則窗孔) 與 濾過（filtration） 狹縫（slit）(足細胞、不規則) 別配錯。\n- 腎素（renin） 三因是血壓↓/氯化鈉（NaCl）↓/交感；血壓上升反而抑制 腎素（renin）。\n- 醛固酮（aldosterone） 是『留鈉排鉀』；血管張力素 II（Ang II） 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
+          "id": "c0cf16934"
         },
         {
           "type": "card",
           "title": "必記與易錯（2/2）",
-          "body": "- 濃縮稀釋靠 juxtamedullary（長環）＋vasa recta，不是數量多的 cortical。\n\n- fenestration(內皮、規則窗孔) 與 filtration slit(足細胞、不規則) 別配錯。\n\n- renin 三因是血壓↓/NaCl↓/交感；\n血壓上升反而抑制 renin。\n\n- aldosterone 是『留鈉排鉀』；\nAng II 縮血管走 AT1 受體。\n\n- inulin（菊糖）不是 insulin（胰島素）。\n\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
+          "body": "- 濃縮稀釋靠 近髓質（juxtamedullary）（長環）＋直小血管（vasa recta），不是數量多的 cortical。\n\n- 窗孔（fenestration）(內皮、規則窗孔) 與 濾過（filtration） 狹縫（slit）(足細胞、不規則) 別配錯。\n\n- 腎素（renin） 三因是血壓↓/氯化鈉（NaCl）↓/交感；\n血壓上升反而抑制 腎素。\n\n- 醛固酮（aldosterone） 是『留鈉排鉀』；\n血管張力素 II（Ang II） 縮血管走 AT1 受體。\n\n- inulin（菊糖）不是 insulin（胰島素）。\n\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
           "keys": [
             "把本單元的關係串起來，確認易錯条件與方向。"
           ],
@@ -656,14 +690,15 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
-          "answer": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 NaCl(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% CO；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs juxtamedullary(長環深入髓質、濃縮稀釋)；出球→peritubular vs vasa recta。\n- 超過濾膜三層：fenestration(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte filtration slit(不規則)；mesangial 調 Kf。\n- JGA：JG cell(看壓力放 renin)＋macula densa(看 NaCl)；renin 三因＝血壓↓、NaCl↓、交感 β1。\n- RAAS：renin→Ang I→(ACE)→Ang II；Ang II 走 AT1 縮血管(TPR↑)＋刺激 aldosterone(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 EPO（腎壞→腎性貧血）。\n- GFR＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；inulin 清除率＝GFR；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 juxtamedullary（長環）＋vasa recta，不是數量多的 cortical。\n- fenestration(內皮、規則窗孔) 與 filtration slit(足細胞、不規則) 別配錯。\n- renin 三因是血壓↓/NaCl↓/交感；血壓上升反而抑制 renin。\n- aldosterone 是『留鈉排鉀』；Ang II 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
+          "answer": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 氯化鈉（NaCl）(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% 心輸出量（CO）；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs 近髓質（juxtamedullary）(長環深入髓質、濃縮稀釋)；出球→peritubular vs 直小血管（vasa recta）。\n- 超過濾膜三層：窗孔（fenestration）(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte 濾過（filtration） 狹縫（slit）(不規則)；mesangial 調 Kf。\n- 腎絲球旁器（JGA）：腎絲球旁細胞（JG cell）(看壓力放 renin)＋緻密斑（macula densa）(看 NaCl)；腎素（renin） 三因＝血壓↓、氯化鈉（NaCl）↓、交感 β1。\n- 腎素－血管張力素－醛固酮系統（RAAS）：腎素（renin）→血管張力素 I（Ang I）→(ACE)→血管張力素 II（Ang II）；血管張力素 II（Ang II） 走 AT1 縮血管(TPR↑)＋刺激 醛固酮（aldosterone）(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 紅血球生成素（EPO）（腎壞→腎性貧血）。\n- 腎絲球過濾率（GFR）＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；菊糖（inulin） 清除率＝腎絲球過濾率（GFR）；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 近髓質（juxtamedullary）（長環）＋直小血管（vasa recta），不是數量多的 cortical。\n- 窗孔（fenestration）(內皮、規則窗孔) 與 濾過（filtration） 狹縫（slit）(足細胞、不規則) 別配錯。\n- 腎素（renin） 三因是血壓↓/氯化鈉（NaCl）↓/交感；血壓上升反而抑制 腎素（renin）。\n- 醛固酮（aldosterone） 是『留鈉排鉀』；血管張力素 II（Ang II） 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 NaCl(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% CO；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs juxtamedullary(長環深入髓質、濃縮稀釋)；出球→peritubular vs vasa recta。\n- 超過濾膜三層：fenestration(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte filtration slit(不規則)；mesangial 調 Kf。\n- JGA：JG cell(看壓力放 renin)＋macula densa(看 NaCl)；renin 三因＝血壓↓、NaCl↓、交感 β1。\n- RAAS：renin→Ang I→(ACE)→Ang II；Ang II 走 AT1 縮血管(TPR↑)＋刺激 aldosterone(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 EPO（腎壞→腎性貧血）。\n- GFR＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；inulin 清除率＝GFR；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 juxtamedullary（長環）＋vasa recta，不是數量多的 cortical。\n- fenestration(內皮、規則窗孔) 與 filtration slit(足細胞、不規則) 別配錯。\n- renin 三因是血壓↓/NaCl↓/交感；血壓上升反而抑制 renin。\n- aldosterone 是『留鈉排鉀』；Ang II 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。"
+          "explain": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 氯化鈉（NaCl）(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% 心輸出量（CO）；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs 近髓質（juxtamedullary）(長環深入髓質、濃縮稀釋)；出球→peritubular vs 直小血管（vasa recta）。\n- 超過濾膜三層：窗孔（fenestration）(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte 濾過（filtration） 狹縫（slit）(不規則)；mesangial 調 Kf。\n- 腎絲球旁器（JGA）：腎絲球旁細胞（JG cell）(看壓力放 renin)＋緻密斑（macula densa）(看 NaCl)；腎素（renin） 三因＝血壓↓、氯化鈉（NaCl）↓、交感 β1。\n- 腎素－血管張力素－醛固酮系統（RAAS）：腎素（renin）→血管張力素 I（Ang I）→(ACE)→血管張力素 II（Ang II）；血管張力素 II（Ang II） 走 AT1 縮血管(TPR↑)＋刺激 醛固酮（aldosterone）(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 紅血球生成素（EPO）（腎壞→腎性貧血）。\n- 腎絲球過濾率（GFR）＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；菊糖（inulin） 清除率＝腎絲球過濾率（GFR）；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 近髓質（juxtamedullary）（長環）＋直小血管（vasa recta），不是數量多的 cortical。\n- 窗孔（fenestration）(內皮、規則窗孔) 與 濾過（filtration） 狹縫（slit）(足細胞、不規則) 別配錯。\n- 腎素（renin） 三因是血壓↓/氯化鈉（NaCl）↓/交感；血壓上升反而抑制 腎素（renin）。\n- 醛固酮（aldosterone） 是『留鈉排鉀』；血管張力素 II（Ang II） 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
+          "id": "c0cf16934"
         },
         {
           "type": "card",
-          "title": "急速重點：JGA 三大組成",
-          "body": "**一句話／白話**\n腎臟入口旁有三種細胞一起看鹽夠不夠、血壓夠不夠；不夠就按下升壓警鈴。\n\n**觀念**\nmacula densa、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 NaCl／灌流並調節 renin。\n\n**易錯與比較**\ndistal tubule 貼近 afferent arteriole 就想到 JGA。\n\n**口訣**\n低鹽或低壓 → 按警鈴。",
+          "title": "急速重點：腎絲球旁器（JGA） 三大組成",
+          "body": "**一句話／白話**\n腎臟入口旁有三種細胞一起看鹽夠不夠、血壓夠不夠；不夠就按下升壓警鈴。\n\n**觀念**\n緻密斑（macula densa）、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 氯化鈉（NaCl）／灌流並調節 腎素（renin）。\n\n**易錯與比較**\ndistal tubule 貼近 傳入（afferent） arteriole 就想到 腎絲球旁器（JGA）。\n\n**口訣**\n低鹽或低壓 → 按警鈴。",
           "keys": [
             "腎臟入口旁有三種細胞一起看鹽夠不夠、血壓夠不夠；不夠就按下升壓警鈴。"
           ],
@@ -672,21 +707,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：JGA 三大組成」，並說出一個判斷依據。",
-          "answer": "macula densa、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 NaCl／灌流並調節 renin。",
+          "q": "用自己的話說明「急速重點：腎絲球旁器（JGA） 三大組成」，並說出一個判斷依據。",
+          "answer": "緻密斑（macula densa）、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 氯化鈉（NaCl）／灌流並調節 腎素（renin）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "macula densa、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 NaCl／灌流並調節 renin。"
+          "explain": "緻密斑（macula densa）、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 氯化鈉（NaCl）／灌流並調節 腎素（renin）。",
+          "id": "c526099d6"
         },
         {
           "type": "example",
-          "title": "範例拆解：急速重點：JGA 三大組成",
-          "problem": "用自己的話說明「急速重點：JGA 三大組成」，並說出一個判斷依據。",
+          "title": "範例拆解：急速重點：腎絲球旁器（JGA） 三大組成",
+          "problem": "用自己的話說明「急速重點：腎絲球旁器（JGA） 三大組成」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：急速重點：JGA 三大組成",
-            "macula densa、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 NaCl／灌流並調節 renin。",
-            "把判斷依據連回題目：macula densa、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 NaCl／灌流並調節 renin。"
+            "先確認題目問的主題：急速重點：腎絲球旁器（JGA） 三大組成",
+            "緻密斑（macula densa）、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 氯化鈉（NaCl）／灌流並調節 腎素（renin）。",
+            "把判斷依據連回題目：緻密斑（macula densa）、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 氯化鈉（NaCl）／灌流並調節 腎素（renin）。"
           ],
-          "answer": "macula densa、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 NaCl／灌流並調節 renin。"
+          "answer": "緻密斑（macula densa）、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 氯化鈉（NaCl）／灌流並調節 腎素（renin）。"
         },
         {
           "type": "practice",
@@ -699,16 +735,18 @@
             {
               "kind": "self",
               "q": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
-              "answer": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 NaCl(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% CO；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs juxtamedullary(長環深入髓質、濃縮稀釋)；出球→peritubular vs vasa recta。\n- 超過濾膜三層：fenestration(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte filtration slit(不規則)；mesangial 調 Kf。\n- JGA：JG cell(看壓力放 renin)＋macula densa(看 NaCl)；renin 三因＝血壓↓、NaCl↓、交感 β1。\n- RAAS：renin→Ang I→(ACE)→Ang II；Ang II 走 AT1 縮血管(TPR↑)＋刺激 aldosterone(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 EPO（腎壞→腎性貧血）。\n- GFR＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；inulin 清除率＝GFR；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 juxtamedullary（長環）＋vasa recta，不是數量多的 cortical。\n- fenestration(內皮、規則窗孔) 與 filtration slit(足細胞、不規則) 別配錯。\n- renin 三因是血壓↓/NaCl↓/交感；血壓上升反而抑制 renin。\n- aldosterone 是『留鈉排鉀』；Ang II 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
+              "answer": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 氯化鈉（NaCl）(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% 心輸出量（CO）；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs 近髓質（juxtamedullary）(長環深入髓質、濃縮稀釋)；出球→peritubular vs 直小血管（vasa recta）。\n- 超過濾膜三層：窗孔（fenestration）(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte 濾過（filtration） 狹縫（slit）(不規則)；mesangial 調 Kf。\n- 腎絲球旁器（JGA）：腎絲球旁細胞（JG cell）(看壓力放 renin)＋緻密斑（macula densa）(看 NaCl)；腎素（renin） 三因＝血壓↓、氯化鈉（NaCl）↓、交感 β1。\n- 腎素－血管張力素－醛固酮系統（RAAS）：腎素（renin）→血管張力素 I（Ang I）→(ACE)→血管張力素 II（Ang II）；血管張力素 II（Ang II） 走 AT1 縮血管(TPR↑)＋刺激 醛固酮（aldosterone）(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 紅血球生成素（EPO）（腎壞→腎性貧血）。\n- 腎絲球過濾率（GFR）＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；菊糖（inulin） 清除率＝腎絲球過濾率（GFR）；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 近髓質（juxtamedullary）（長環）＋直小血管（vasa recta），不是數量多的 cortical。\n- 窗孔（fenestration）(內皮、規則窗孔) 與 濾過（filtration） 狹縫（slit）(足細胞、不規則) 別配錯。\n- 腎素（renin） 三因是血壓↓/氯化鈉（NaCl）↓/交感；血壓上升反而抑制 腎素（renin）。\n- 醛固酮（aldosterone） 是『留鈉排鉀』；血管張力素 II（Ang II） 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 NaCl(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% CO；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs juxtamedullary(長環深入髓質、濃縮稀釋)；出球→peritubular vs vasa recta。\n- 超過濾膜三層：fenestration(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte filtration slit(不規則)；mesangial 調 Kf。\n- JGA：JG cell(看壓力放 renin)＋macula densa(看 NaCl)；renin 三因＝血壓↓、NaCl↓、交感 β1。\n- RAAS：renin→Ang I→(ACE)→Ang II；Ang II 走 AT1 縮血管(TPR↑)＋刺激 aldosterone(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 EPO（腎壞→腎性貧血）。\n- GFR＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；inulin 清除率＝GFR；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 juxtamedullary（長環）＋vasa recta，不是數量多的 cortical。\n- fenestration(內皮、規則窗孔) 與 filtration slit(足細胞、不規則) 別配錯。\n- renin 三因是血壓↓/NaCl↓/交感；血壓上升反而抑制 renin。\n- aldosterone 是『留鈉排鉀』；Ang II 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。"
+              "explain": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 氯化鈉（NaCl）(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% 心輸出量（CO）；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs 近髓質（juxtamedullary）(長環深入髓質、濃縮稀釋)；出球→peritubular vs 直小血管（vasa recta）。\n- 超過濾膜三層：窗孔（fenestration）(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte 濾過（filtration） 狹縫（slit）(不規則)；mesangial 調 Kf。\n- 腎絲球旁器（JGA）：腎絲球旁細胞（JG cell）(看壓力放 renin)＋緻密斑（macula densa）(看 NaCl)；腎素（renin） 三因＝血壓↓、氯化鈉（NaCl）↓、交感 β1。\n- 腎素－血管張力素－醛固酮系統（RAAS）：腎素（renin）→血管張力素 I（Ang I）→(ACE)→血管張力素 II（Ang II）；血管張力素 II（Ang II） 走 AT1 縮血管(TPR↑)＋刺激 醛固酮（aldosterone）(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 紅血球生成素（EPO）（腎壞→腎性貧血）。\n- 腎絲球過濾率（GFR）＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；菊糖（inulin） 清除率＝腎絲球過濾率（GFR）；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 近髓質（juxtamedullary）（長環）＋直小血管（vasa recta），不是數量多的 cortical。\n- 窗孔（fenestration）(內皮、規則窗孔) 與 濾過（filtration） 狹縫（slit）(足細胞、不規則) 別配錯。\n- 腎素（renin） 三因是血壓↓/氯化鈉（NaCl）↓/交感；血壓上升反而抑制 腎素（renin）。\n- 醛固酮（aldosterone） 是『留鈉排鉀』；血管張力素 II（Ang II） 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
+              "id": "c0cf16934"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：JGA 三大組成」，並說出一個判斷依據。",
-              "answer": "macula densa、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 NaCl／灌流並調節 renin。",
+              "q": "用自己的話說明「急速重點：腎絲球旁器（JGA） 三大組成」，並說出一個判斷依據。",
+              "answer": "緻密斑（macula densa）、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 氯化鈉（NaCl）／灌流並調節 腎素（renin）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "macula densa、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 NaCl／灌流並調節 renin。"
+              "explain": "緻密斑（macula densa）、juxtaglomerular/granular cells、extraglomerular mesangial cells；感知 氯化鈉（NaCl）／灌流並調節 腎素（renin）。",
+              "id": "c526099d6"
             }
           ]
         },
@@ -719,24 +757,28 @@
             "腎臟入口旁有三種細胞一起看鹽夠不夠、血壓夠不夠；不夠就按下升壓警鈴。",
             "必記與易錯（1/2）：把本單元的關係串起來，確認易錯条件與方向。",
             "必記與易錯（2/2）：把本單元的關係串起來，確認易錯条件與方向。",
-            "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 NaCl(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% CO；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs juxtamedullary(長環深入髓質、濃縮稀釋)；出球→peritubular vs vasa recta。\n- 超過濾膜三層：fenestration(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte filtration slit(不規則)；mesangial 調 Kf。\n- JGA：JG cell(看壓力放 renin)＋macula densa(看 NaCl)；renin 三因＝血壓↓、NaCl↓、交感 β1。\n- RAAS：renin→Ang I→(ACE)→Ang II；Ang II 走 AT1 縮血管(TPR↑)＋刺激 aldosterone(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 EPO（腎壞→腎性貧血）。\n- GFR＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；inulin 清除率＝GFR；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 juxtamedullary（長環）＋vasa recta，不是數量多的 cortical。\n- fenestration(內皮、規則窗孔) 與 filtration slit(足細胞、不規則) 別配錯。\n- renin 三因是血壓↓/NaCl↓/交感；血壓上升反而抑制 renin。\n- aldosterone 是『留鈉排鉀』；Ang II 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。"
+            "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 氯化鈉（NaCl）(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% 心輸出量（CO）；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs 近髓質（juxtamedullary）(長環深入髓質、濃縮稀釋)；出球→peritubular vs 直小血管（vasa recta）。\n- 超過濾膜三層：窗孔（fenestration）(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte 濾過（filtration） 狹縫（slit）(不規則)；mesangial 調 Kf。\n- 腎絲球旁器（JGA）：腎絲球旁細胞（JG cell）(看壓力放 renin)＋緻密斑（macula densa）(看 NaCl)；腎素（renin） 三因＝血壓↓、氯化鈉（NaCl）↓、交感 β1。\n- 腎素－血管張力素－醛固酮系統（RAAS）：腎素（renin）→血管張力素 I（Ang I）→(ACE)→血管張力素 II（Ang II）；血管張力素 II（Ang II） 走 AT1 縮血管(TPR↑)＋刺激 醛固酮（aldosterone）(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 紅血球生成素（EPO）（腎壞→腎性貧血）。\n- 腎絲球過濾率（GFR）＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；菊糖（inulin） 清除率＝腎絲球過濾率（GFR）；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 近髓質（juxtamedullary）（長環）＋直小血管（vasa recta），不是數量多的 cortical。\n- 窗孔（fenestration）(內皮、規則窗孔) 與 濾過（filtration） 狹縫（slit）(足細胞、不規則) 別配錯。\n- 腎素（renin） 三因是血壓↓/氯化鈉（NaCl）↓/交感；血壓上升反而抑制 腎素（renin）。\n- 醛固酮（aldosterone） 是『留鈉排鉀』；血管張力素 II（Ang II） 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。"
           ],
           "flash": [
             {
               "front": "必記與易錯",
-              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+              "back": "把本單元的關係串起來，確認易錯条件與方向。",
+              "id": "f3eb951f2"
             },
             {
               "front": "必記與易錯",
-              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+              "back": "把本單元的關係串起來，確認易錯条件與方向。",
+              "id": "f3eb951f2"
             },
             {
-              "front": "急速重點：JGA 三大組成",
-              "back": "腎臟入口旁有三種細胞一起看鹽夠不夠、血壓夠不夠；不夠就按下升壓警鈴。"
+              "front": "急速重點：腎絲球旁器（JGA） 三大組成",
+              "back": "腎臟入口旁有三種細胞一起看鹽夠不夠、血壓夠不夠；不夠就按下升壓警鈴。",
+              "id": "f2dd607b9"
             },
             {
               "front": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
-              "back": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 NaCl(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% CO；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs juxtamedullary(長環深入髓質、濃縮稀釋)；出球→peritubular vs vasa recta。\n- 超過濾膜三層：fenestration(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte filtration slit(不規則)；mesangial 調 Kf。\n- JGA：JG cell(看壓力放 renin)＋macula densa(看 NaCl)；renin 三因＝血壓↓、NaCl↓、交感 β1。\n- RAAS：renin→Ang I→(ACE)→Ang II；Ang II 走 AT1 縮血管(TPR↑)＋刺激 aldosterone(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 EPO（腎壞→腎性貧血）。\n- GFR＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；inulin 清除率＝GFR；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 juxtamedullary（長環）＋vasa recta，不是數量多的 cortical。\n- fenestration(內皮、規則窗孔) 與 filtration slit(足細胞、不規則) 別配錯。\n- renin 三因是血壓↓/NaCl↓/交感；血壓上升反而抑制 renin。\n- aldosterone 是『留鈉排鉀』；Ang II 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。"
+              "back": "mustKnow：- 演化推結構：過濾(腎絲球)→重吸收 氯化鈉（NaCl）(小管)→省水(吸鈉帶水)→拉長小管提高效率。\n- 腎臟 ~0.5% 體重卻拿 ~25% 心輸出量（CO）；三大功能＝過濾、重吸收、分泌（尿＝濾過−重吸收＋分泌）。\n- Cortical(短環、重吸收、多) vs 近髓質（juxtamedullary）(長環深入髓質、濃縮稀釋)；出球→peritubular vs 直小血管（vasa recta）。\n- 超過濾膜三層：窗孔（fenestration）(規則窗孔)/基底膜(帶負電擋蛋白)/podocyte 濾過（filtration） 狹縫（slit）(不規則)；mesangial 調 Kf。\n- 腎絲球旁器（JGA）：腎絲球旁細胞（JG cell）(看壓力放 renin)＋緻密斑（macula densa）(看 NaCl)；腎素（renin） 三因＝血壓↓、氯化鈉（NaCl）↓、交感 β1。\n- 腎素－血管張力素－醛固酮系統（RAAS）：腎素（renin）→血管張力素 I（Ang I）→(ACE)→血管張力素 II（Ang II）；血管張力素 II（Ang II） 走 AT1 縮血管(TPR↑)＋刺激 醛固酮（aldosterone）(留鈉排鉀、水跟著)。\n- 腎內分泌：腎做 1,25-(OH)₂ vit D（最後活化）、分泌 紅血球生成素（EPO）（腎壞→腎性貧血）。\n- 腎絲球過濾率（GFR）＝單位時間兩腎濾液體積；理想物質 tubular treatment=0；菊糖（inulin） 清除率＝腎絲球過濾率（GFR）；Cx=Ux·V/Px。\ntraps：- 重吸收是小管→血管、分泌是血管→小管，方向相反。\n- 濃縮稀釋靠 近髓質（juxtamedullary）（長環）＋直小血管（vasa recta），不是數量多的 cortical。\n- 窗孔（fenestration）(內皮、規則窗孔) 與 濾過（filtration） 狹縫（slit）(足細胞、不規則) 別配錯。\n- 腎素（renin） 三因是血壓↓/氯化鈉（NaCl）↓/交感；血壓上升反而抑制 腎素（renin）。\n- 醛固酮（aldosterone） 是『留鈉排鉀』；血管張力素 II（Ang II） 縮血管走 AT1 受體。\n- inulin（菊糖）不是 insulin（胰島素）。\n- 『清除率』是等效體積，不是把血洗乾淨的速度。",
+              "id": "f0cf16934"
             }
           ]
         }

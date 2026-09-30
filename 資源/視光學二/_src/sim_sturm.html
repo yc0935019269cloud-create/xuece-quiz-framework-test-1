@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}
+.w{padding:8px 12px}.row{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;margin:4px 0}
+label{display:flex;align-items:center;gap:6px;flex:1 1 230px;min-width:0}input[type=range]{flex:1;min-width:80px}
+b.v{min-width:64px;display:inline-block;text-align:right;font-variant-numeric:tabular-nums}
+.box{background:#fff;border:1px solid #d8cbb0;border-radius:8px;padding:6px 10px;margin-top:6px;line-height:1.55}
+.ok{color:#1d7a3a;font-weight:bold}.warn{color:#b3401f;font-weight:bold}.note{font-size:14px;color:#6b5a45}
+button{font:inherit;padding:3px 10px;border:1px solid #b9a784;background:#fff;border-radius:6px;cursor:pointer}
+</style></head><body><div class="w">
+<div class="note">觀察重點：球面鏡片只會把兩條焦線「一起前後搬動」；只有柱鏡能把兩條焦線「拉近」。最佳球面＝把最小錯亂圓（COLC）放到網膜上。</div>
+<svg id="s" viewBox="0 0 800 210" style="width:100%;height:auto;background:#fff;border:1px solid #d8cbb0;border-radius:8px;margin-top:6px"></svg>
+<div class="row" id="pr"><b>病人的矯正度數（答案）：</b><label>球面 S <input id="es" type="range" min="-6" max="4" step="0.25" value="-2"><b class="v" id="esv"></b></label>
+<label>柱鏡 C（負散，軸 180） <input id="ec" type="range" min="-4" max="0" step="0.25" value="-1.5"><b class="v" id="ecv"></b></label></div>
+<div class="row"><b>綜合驗光儀上的鏡片：</b><label>球面 <input id="ts" type="range" min="-8" max="6" step="0.25" value="0"><b class="v" id="tsv"></b></label>
+<label>柱鏡 <input id="tc" type="range" min="-4" max="0" step="0.25" value="0"><b class="v" id="tcv"></b></label>
+<button id="hide">隱藏答案（自己找最佳球面）</button></div>
+<div class="box" id="out"></div>
+<div class="note">慣例：網膜在 0；左邊＝網膜前（玻璃體內），右邊＝網膜後。「／」代表水平焦線（透視畫法），「｜」代表垂直焦線。視力估計假設沒有調節（近視或絕對性遠視），依「散光度數約為球面的 2 倍才有相同視力」的表內插。</div>
+</div><script>
+const $=id=>document.getElementById(id);
+const f=v=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(2);
+const VA=[[0,20],[0.25,25],[0.5,30],[0.75,40],[1,60],[1.5,80],[2,120],[2.5,200],[4,400]];
+function va(E){E=Math.abs(E);for(let i=0;i<VA.length-1;i++){const[a,x]=VA[i],[b,y]=VA[i+1];if(E<=b)return x+(y-x)*(E-a)/(b-a)}return 400}
+let hidden=false;
+function draw(){
+ const S=+$('es').value,C=+$('ec').value,T=+$('ts').value,Cc=+$('tc').value;
+ $('pr').style.visibility=hidden?'hidden':'visible';$('esv').textContent=hidden?'??':f(S)+' DS';$('ecv').textContent=hidden?'??':f(C)+' DC';$('tsv').textContent=f(T)+' DS';$('tcv').textContent=f(Cc)+' DC';
+ const rV=S-T;            // 180 子午線 → 垂直焦線；殘餘「還需要的矯正度數」
+ const rH=S+C-T-Cc;       // 90 子午線 → 水平焦線
+ const m=(rV+rH)/2, cyl=Math.abs(rH-rV), E=Math.abs(m)+cyl/2, v=va(E);
+ const X=d=>400+Math.max(-4.5,Math.min(4.5,d))*80; // 1 D = 80 px
+ let g='<line x1="10" y1="105" x2="790" y2="105" stroke="#aaa"/>';
+ for(let d=-4;d<=4;d++)g+=`<line x1="${X(d)}" y1="175" x2="${X(d)}" y2="181" stroke="#999"/><text x="${X(d)}" y="197" font-size="13" text-anchor="middle" fill="#777">${d>0?'+'+d:d}</text>`;
+ g+=`<text x="${X(-4)}" y="22" font-size="14" fill="#6b5a45">← 網膜前（近視側）</text><text x="${X(4)}" y="22" font-size="14" text-anchor="end" fill="#6b5a45">網膜後（遠視側）→</text>`;
+ g+=`<line x1="400" y1="35" x2="400" y2="170" stroke="#2c8a4a" stroke-width="5"/><text x="406" y="48" font-size="14" fill="#2c8a4a">網膜</text>`;
+ const a=Math.min(X(rV),X(rH)),b=Math.max(X(rV),X(rH));
+ if(cyl>0.01)g+=`<line x1="${a}" y1="160" x2="${b}" y2="160" stroke="#333"/><line x1="${a}" y1="153" x2="${a}" y2="167" stroke="#333"/><line x1="${b}" y1="153" x2="${b}" y2="167" stroke="#333"/><text x="${(a+b)/2}" y="152" font-size="13" text-anchor="middle">散光間距 ${cyl.toFixed(2)} D</text>`;
+ g+=`<line x1="${X(rH)-22}" y1="125" x2="${X(rH)+22}" y2="85" stroke="#c0392b" stroke-width="5"/><text x="${X(rH)}" y="72" font-size="13" text-anchor="middle" fill="#c0392b">水平焦線</text>`;
+ g+=`<line x1="${X(rV)}" y1="75" x2="${X(rV)}" y2="135" stroke="#1f5fbf" stroke-width="5"/><text x="${X(rV)}" y="148" font-size="13" text-anchor="middle" fill="#1f5fbf">垂直焦線</text>`;
+ g+=`<circle cx="${X(m)}" cy="105" r="${4+cyl*7}" fill="none" stroke="#000" stroke-width="2.5"/>`;
+ $('s').innerHTML=g;
+ let msg;
+ if(cyl<0.01&&Math.abs(m)<0.01)msg='<span class="ok">兩條焦線重合在網膜上：散光與球面都已完全矯正。</span>';
+ else if(Math.abs(m)<0.13&&cyl>0.01)msg='<span class="ok">COLC 落在網膜上 → 這就是「最佳球面」（MPMVA 的終點）。剩下的模糊來自還沒矯正的散光，要交給 JCC。</span>';
+ else if(m<0)msg='<span class="warn">COLC 在網膜前：還需要更多負度數（或減少正度數）。</span>';
+ else msg='<span class="warn">COLC 在網膜後：鏡片負度數給太多（over-minus）或正度數不夠；年輕人可能用調節把它拉回來。</span>';
+ const se=S+C/2;
+ $('out').innerHTML=`殘餘：垂直焦線 ${f(rV)} D、水平焦線 ${f(rH)} D、COLC ${f(m)} D；估計視力約 <b>20/${Math.round(v)}</b>（小數 ${(20/v).toFixed(2)}）<br>${msg}`+(hidden?'':`<br>病人的等效球鏡度 S + C/2 = ${f(S)} + (${f(C)}/2) = <b>${f(se)} DS</b> ← 不加柱鏡時的最佳球面`);
+}
+['es','ec','ts','tc'].forEach(i=>$(i).oninput=draw);
+$('hide').onclick=()=>{hidden=!hidden;$('hide').textContent=hidden?'顯示答案':'隱藏答案（自己找最佳球面）';
+ if(hidden){$('es').value=(Math.round((Math.random()*8-6)*4)/4);$('ec').value=-(Math.round(Math.random()*12+2)/4);$('ts').value=0;$('tc').value=0}draw()};
+draw();
+</script></body></html>

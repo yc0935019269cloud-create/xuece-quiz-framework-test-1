@@ -1,0 +1,708 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-optometry-pd-lensometry-p1",
+  "subject": "optometry",
+  "unit": "第04單元 瞳距測量與焦度計",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "視光學",
+    "第04單元 瞳距測量與焦度計"
+  ],
+  "title": "瞳距測量與焦度計（1）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://frabjous-druid-ff547a.netlify.app/",
+  "level": 2,
+  "minutes": 60,
+  "order": 4,
+  "source": "https://frabjous-druid-ff547a.netlify.app/",
+  "tags": [
+    "瞳距測量與焦度計"
+  ],
+  "lessons": [
+    {
+      "id": "lensometer-structure-1",
+      "title": "焦度計 Lensometer：儀器、歸零與鏡片測量",
+      "goals": [
+        "解釋焦度計可以測什麼",
+        "解釋Keplerian telescope 造成影像反向",
+        "解釋使用前一定要歸零與調 reticle"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "焦度計 Lensometer：儀器、歸零與鏡片測量",
+          "body": "焦度計用望遠鏡系統觀察 reticle 與 movable target，藉由移動視標恢復清晰來讀出鏡片後頂點或前頂點度數。\n\n- 先認 lensometer 內部光路。\n- 再看 reticle 與 movable target 誰先清楚。\n- 最後把清楚位置連到鏡片讀值。"
+        },
+        {
+          "type": "card",
+          "title": "焦度計可以測什麼",
+          "body": "**一句話／白話**\n焦度計就是鏡片的讀值機：它不只讀球面度數，也能找散光、軸度、光心、稜鏡與多焦近用加入度。\n\n**觀念**\n單焦鏡片測後頂點度數；多焦鏡片近用區測前頂點度數。焦度計也能找光學中心、測柱鏡/軸度、測稜鏡量與標記 MRP。\n\n**重點**\n- single vision 多測 back vertex power\n- multifocal/PAL 近用區翻面測 front vertex power\n- OC/MRP 標記會影響配鏡定位與誘發稜鏡\n\n**考試角度**\n- single vision 多測 back vertex power\n- multifocal/PAL 近用區翻面測 front vertex power\n- OC/MRP 標記會影響配鏡定位與誘發稜鏡\n\n**口訣**\n焦度計五件事：S、C、axis、OC/MRP、prism/ADD。",
+          "keys": [
+            "single vision 多測 back vertex power",
+            "multifocal/PAL 近用區翻面測 front vertex power",
+            "OC/MRP 標記會影響配鏡定位與誘發稜鏡"
+          ],
+          "tip": "口訣：焦度計五件事：S、C、axis、OC/MRP、prism/ADD。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "焦度計在單焦鏡片最主要測到的是什麼？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "逐字稿強調單焦鏡片通常背面靠 lens stop，因此讀的是後頂點度數。\n\n正確選項：後頂點度數 back vertex power。\n單焦鏡片測後頂點度數；多焦鏡片近用區測前頂點度數。焦度計也能找光學中心、測柱鏡/軸度、測稜鏡量與標記 MRP。",
+          "choices": [
+            "後頂點度數 back vertex power",
+            "眼軸長度 axial length",
+            "角膜曲率半徑",
+            "前房深度"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Keplerian telescope 造成影像反向",
+          "body": "**一句話／白話**\nKeplerian telescope 會形成倒立影像，所以你移動鏡片時，看到的 target 方向可能和實際移動相反。\n\n**觀念**\n焦度計望遠鏡常是 Keplerian telescope，物鏡與目鏡都是凸透鏡，因此觀察到的 target 移動方向會與實際鏡片移動方向相反。\n\n**重點**\n- Galilean telescope：影像正立、較輕、低放大\n- Keplerian telescope：影像倒立、視野較大、可看遠\n- 驗度儀內看到往上移，影像可能往下\n\n**考試角度**\n- Galilean telescope：影像正立、較輕、低放大\n- Keplerian telescope：影像倒立、視野較大、可看遠\n- 驗度儀內看到往上移，影像可能往下\n\n**口訣**\nK = 兩凸透鏡 = 倒像；看到反向先想到 Keplerian。",
+          "keys": [
+            "Galilean telescope：影像正立、較輕、低放大",
+            "Keplerian telescope：影像倒立、視野較大、可看遠",
+            "驗度儀內看到往上移，影像可能往下"
+          ],
+          "tip": "口訣：K = 兩凸透鏡 = 倒像；看到反向先想到 Keplerian。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "為什麼焦度計中移動鏡片時視標方向常看起來反過來？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "Keplerian telescope 的成像倒立，這是逐字稿特別提醒的觀念。\n\n正確選項：因為 Keplerian telescope 形成倒立影像。\n焦度計望遠鏡常是 Keplerian telescope，物鏡與目鏡都是凸透鏡，因此觀察到的 target 移動方向會與實際鏡片移動方向相反。",
+          "choices": [
+            "因為鏡片夾造成機械誤差",
+            "因為 Keplerian telescope 形成倒立影像",
+            "因為稜鏡基底方向相反",
+            "因為 reticle 沒有歸零"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "使用前一定要歸零與調 reticle",
+          "body": "**一句話／白話**\n歸零是在建立測量基準：先讓 reticle 清楚，再放鏡片找 target 清楚的位置。\n\n**觀念**\n測量前先把 power wheel 歸零，調整目鏡讓 reticle 清楚。無鏡片時 movable target 在 standard lens focal length；放入未知鏡片後 target 變模糊，再轉度數輪使它清楚。\n\n**重點**\n- 先清楚 reticle，再清楚 movable target\n- 未知鏡片讓目標失焦\n- 恢復清晰的位置對應鏡片度數\n\n**考試角度**\n- 先清楚 reticle，再清楚 movable target\n- 未知鏡片讓目標失焦\n- 恢復清晰的位置對應鏡片度數\n\n**口訣**\n先清 reticle，再清 target；基準錯，讀值全錯。",
+          "keys": [
+            "先清楚 reticle，再清楚 movable target",
+            "未知鏡片讓目標失焦",
+            "恢復清晰的位置對應鏡片度數"
+          ],
+          "tip": "口訣：先清 reticle，再清 target；基準錯，讀值全錯。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "焦度計測量前的正確第一步是？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "若 reticle 沒清楚，後面 target 是否清晰會判斷錯。\n\n正確選項：先歸零並調清楚 reticle。\n測量前先把 power wheel 歸零，調整目鏡讓 reticle 清楚。無鏡片時 movable target 在 standard lens focal length；放入未知鏡片後 target 變模糊，再轉度數輪使它清楚。",
+          "choices": [
+            "先找柱鏡軸位",
+            "先把鏡片翻面",
+            "先歸零並調清楚 reticle",
+            "先量 DBOC"
+          ]
+        },
+        {
+          "type": "interactive",
+          "title": "偏心與稜鏡量：Prentice 法則",
+          "task": "設定 +4.00 D、偏心 5 mm，算出稜鏡量；再把偏心減半。",
+          "body": "每次只改一個參數，先預測，再觀察數值。",
+          "reference": "5 mm=0.5 cm；P=0.5×4=2 Δ。偏心減半，稜鏡量減半。\nP（Δ）= c（cm）× |F（D）|。1 Δ 表示 1 m 處偏移 1 cm；此模擬計算大小，不推定底向。",
+          "height": 540,
+          "html": "<!doctype html><html lang=\"zh-Hant\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{margin:0;padding:10px;box-sizing:border-box;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}*{box-sizing:border-box}h3{font-size:18px;margin:0 0 8px}.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}label{display:block}.row label{flex:1 1 125px;min-width:0;max-width:180px}input{max-width:150px;width:100%}button{font:inherit;padding:6px 12px;background:#fff;border:1px solid #75644d;border-radius:6px}svg{width:100%;height:160px;background:#fff;border:1px solid #cabfa7}#result,.note{padding:6px;background:#fff1c9;margin-top:6px}small{font-size:14px;display:block;margin-top:6px}@media(max-width:400px){body{padding:8px}.row label{flex-basis:105px}svg{height:110px}h3{font-size:16px}}</style><h3>偏心與稜鏡量：Prentice 法則</h3><div class=\"note\">觀察重點：設定 +4.00 D、偏心 5 mm，算出稜鏡量；再把偏心減半。</div><div class=\"row\"><label>鏡片度數 <output id=\"ao\"></output><input aria-label=\"鏡片度數\" id=\"a\" type=\"range\" min=\"-10\" max=\"10\" step=\"0.25\" value=\"4\" data-unit=\"D\" style=\"display:block\"></label><label>單眼偏心量 <output id=\"co\"></output><input aria-label=\"單眼偏心量\" id=\"c\" type=\"range\" min=\"0\" max=\"10\" step=\"0.5\" value=\"5\" data-unit=\"mm\" style=\"display:block\"></label><button id=\"reset\">重設</button></div><svg id=\"plot\" viewBox=\"0 0 700 210\" role=\"img\" aria-label=\"即時比較圖\"></svg><small id=\"legend\"></small><div id=\"result\" aria-live=\"polite\"></div><small>P（Δ）= c（cm）× |F（D）|。1 Δ 表示 1 m 處偏移 1 cm；此模擬計算大小，不推定底向。</small><script>const inputs=[...document.querySelectorAll('input')],result=document.getElementById('result'),svg=document.getElementById('plot');const v=id=>Number(document.getElementById(id).value),fmt=x=>Number.isFinite(x)?x.toFixed(2):'超出模型';function bars(vals,names){const scale=130/Math.max(1,...vals.map(Math.abs));svg.innerHTML=vals.map((x,i)=>`<rect x='${50+i*180}' y='${x>=0?150-x*scale:150}' width='90' height='${Math.abs(x)*scale}' fill='${i%2?'#916a28':'#286b80'}'/><text x='${80+i*180}' y='200' font-size='44'>${i+1}</text>`).join('')+`<line x1='20' y1='150' x2='680' y2='150' stroke='#555'/>`;document.getElementById('legend').textContent=names.map((n,i)=>(i+1)+'．'+n).join('　');}function update(){inputs.forEach(x=>document.getElementById(x.id+'o').textContent=x.value+' '+x.dataset.unit);const P=v('c')/10*Math.abs(v('a'));result.textContent=`單眼稜鏡量大小 = ${fmt(P)} Δ；方向另依光心位置與正負鏡判斷。${v('c')===0?'對準光心，偏心稜鏡量為零。':''}`;bars([P],['稜鏡量 Δ']);}inputs.forEach(x=>x.addEventListener('input',update));document.getElementById('reset').onclick=()=>{inputs.forEach(x=>x.value=x.defaultValue);update()};update();</script></html>"
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
+          "answer": "5 mm=0.5 cm；P=0.5×4=2 Δ。偏心減半，稜鏡量減半。\nP（Δ）= c（cm）× |F（D）|。1 Δ 表示 1 m 處偏移 1 cm；此模擬計算大小，不推定底向。",
+          "hint": "逐步比較相鄰階段或改變前後，並區分方向與因果。",
+          "explain": "5 mm=0.5 cm；P=0.5×4=2 Δ。偏心減半，稜鏡量減半。\nP（Δ）= c（cm）× |F（D）|。1 Δ 表示 1 m 處偏移 1 cm；此模擬計算大小，不推定底向。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：使用前一定要歸零與調 reticle",
+          "problem": "焦度計測量前的正確第一步是？\n\nA. 先找柱鏡軸位\nB. 先把鏡片翻面\nC. 先歸零並調清楚 reticle\nD. 先量 DBOC",
+          "steps": [
+            "先確認題目問的主題：使用前一定要歸零與調 reticle",
+            "測量前先把 power wheel 歸零，調整目鏡讓 reticle 清楚。無鏡片時 movable target 在 standard lens focal length；放入未知鏡片後 target 變模糊，再轉度數輪使它清楚。",
+            "把判斷依據連回題目：若 reticle 沒清楚，後面 target 是否清晰會判斷錯。\n\n正確選項：先歸零並調清楚 reticle。\n測量前先把 power wheel 歸零，調整目鏡讓 reticle 清楚。無鏡片時 movable target 在 standard lens focal length；放入未知鏡片後 target 變模糊，再轉度數輪使它清楚。"
+          ],
+          "answer": "先歸零並調清楚 reticle"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：焦度計 Lensometer：儀器、歸零與鏡片測量",
+          "qids": [
+            "s114-optometry-exam106-u04-opt-q0018",
+            "s114-optometry-exam106-u04-opt-q0019"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "為什麼焦度計中移動鏡片時視標方向常看起來反過來？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "Keplerian telescope 的成像倒立，這是逐字稿特別提醒的觀念。\n\n正確選項：因為 Keplerian telescope 形成倒立影像。\n焦度計望遠鏡常是 Keplerian telescope，物鏡與目鏡都是凸透鏡，因此觀察到的 target 移動方向會與實際鏡片移動方向相反。",
+              "choices": [
+                "因為鏡片夾造成機械誤差",
+                "因為 Keplerian telescope 形成倒立影像",
+                "因為稜鏡基底方向相反",
+                "因為 reticle 沒有歸零"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "焦度計測量前的正確第一步是？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "若 reticle 沒清楚，後面 target 是否清晰會判斷錯。\n\n正確選項：先歸零並調清楚 reticle。\n測量前先把 power wheel 歸零，調整目鏡讓 reticle 清楚。無鏡片時 movable target 在 standard lens focal length；放入未知鏡片後 target 變模糊，再轉度數輪使它清楚。",
+              "choices": [
+                "先找柱鏡軸位",
+                "先把鏡片翻面",
+                "先歸零並調清楚 reticle",
+                "先量 DBOC"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "single vision 多測 back vertex power",
+            "multifocal/PAL 近用區翻面測 front vertex power",
+            "Galilean telescope：影像正立、較輕、低放大",
+            "Keplerian telescope：影像倒立、視野較大、可看遠",
+            "先清楚 reticle，再清楚 movable target",
+            "未知鏡片讓目標失焦"
+          ],
+          "flash": [
+            {
+              "front": "焦度計可以測什麼",
+              "back": "焦度計就是鏡片的讀值機：它不只讀球面度數，也能找散光、軸度、光心、稜鏡與多焦近用加入度。"
+            },
+            {
+              "front": "Keplerian telescope 造成影像反向",
+              "back": "Keplerian telescope 會形成倒立影像，所以你移動鏡片時，看到的 target 方向可能和實際移動相反。"
+            },
+            {
+              "front": "使用前一定要歸零與調 reticle",
+              "back": "歸零是在建立測量基準：先讓 reticle 清楚，再放鏡片找 target 清楚的位置。"
+            },
+            {
+              "front": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
+              "back": "5 mm=0.5 cm；P=0.5×4=2 Δ。偏心減半，稜鏡量減半。\nP（Δ）= c（cm）× |F（D）|。1 Δ 表示 1 m 處偏移 1 cm；此模擬計算大小，不推定底向。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "single-cylinder-1",
+      "title": "單焦與散光鏡片測量",
+      "goals": [
+        "解釋球面鏡片：兩方向同時清楚",
+        "解釋散光鏡片：先找兩主經線",
+        "解釋短軸對比較正，長軸對比較負"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "單焦與散光鏡片測量",
+          "body": "球面鏡片兩軸同時清楚；散光鏡片要分別找兩主經線，短軸讀比較正的度數，長軸讀比較負的度數。\n\n- 先分球面與散光的成焦差異。\n- 再找兩條主經線。\n- 最後把比較正/比較負轉成負柱鏡處方。"
+        },
+        {
+          "type": "card",
+          "title": "球面鏡片：兩方向同時清楚",
+          "body": "**一句話／白話**\n球面鏡片每個方向屈光力相同，所以焦度計 target 的長短線會一起清楚。\n\n**觀念**\n若 movable target 的長短線與中央點圈同時清楚，代表鏡片沒有柱鏡成分，直接讀 sphere power。\n\n**重點**\n- 兩主經線同時成焦\n- 沒有散光時不需要轉 axis wheel\n- 讀值可直接作為球面度數\n\n**考試角度**\n- 兩主經線同時成焦\n- 沒有散光時不需要轉 axis wheel\n- 讀值可直接作為球面度數\n\n**口訣**\n兩線同清楚 = sphere；不用急著轉 axis。",
+          "keys": [
+            "兩主經線同時成焦",
+            "沒有散光時不需要轉 axis wheel",
+            "讀值可直接作為球面度數"
+          ],
+          "tip": "口訣：兩線同清楚 = sphere；不用急著轉 axis。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "焦度計中長短線與中央點同時清楚，最可能代表？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "散光會造成兩主經線分開成焦；同時清楚通常是球面鏡片。\n\n正確選項：鏡片為球面度數。\n若 movable target 的長短線與中央點圈同時清楚，代表鏡片沒有柱鏡成分，直接讀 sphere power。",
+          "choices": [
+            "鏡片含斜散",
+            "鏡片為球面度數",
+            "鏡片必有稜鏡",
+            "鏡片是 PAL 近用區"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "散光鏡片：先找兩主經線",
+          "body": "**一句話／白話**\n散光鏡片有兩個互相垂直的主方向，測量時要先對齊軸向，再分別讀兩個方向的度數。\n\n**觀念**\n含散光鏡片會出現一組線清楚、一組線模糊。轉 axis wheel 讓暈開方向與 target 線對齊，再分別讀兩條主經線度數。\n\n**重點**\n- 兩主經線相差 90 度\n- 先對齊 axis，再讀 power\n- 不要把焦度計 target 當成光十字直接套用\n\n**考試角度**\n- 兩主經線相差 90 度\n- 先對齊 axis，再讀 power\n- 不要把焦度計 target 當成光十字直接套用\n\n**口訣**\n散光三步：對 axis、讀兩線、相減成 cylinder。",
+          "keys": [
+            "兩主經線相差 90 度",
+            "先對齊 axis，再讀 power",
+            "不要把焦度計 target 當成光十字直接套用"
+          ],
+          "tip": "口訣：散光三步：對 axis、讀兩線、相減成 cylinder。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "測散光鏡片時，為什麼不能直接把焦度計視標當光十字？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "逐字稿特別提醒：長短軸與讀值有固定對應，直接當光十字會寫錯處方。\n\n正確選項：因為會把長短軸與度數/軸位對應搞反。\n含散光鏡片會出現一組線清楚、一組線模糊。轉 axis wheel 讓暈開方向與 target 線對齊，再分別讀兩條主經線度數。",
+          "choices": [
+            "因為視標沒有任何軸向資訊",
+            "因為會把長短軸與度數/軸位對應搞反",
+            "因為焦度計只能測球面鏡片",
+            "因為焦度計沒有 reticle"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "短軸對比較正，長軸對比較負",
+          "body": "**一句話／白話**\n負柱鏡寫法中，比較正的讀值當 sphere，比較負的讀值和它相減得到 cylinder，axis 看長軸方向。\n\n**觀念**\n負柱鏡記錄時，短軸通常對到比較正的讀值，長軸對到比較負的讀值；兩者差值為 cylinder power，長軸所在刻度作為 axis。\n\n**重點**\n- 比較正者作 sphere\n- 比較負與比較正的差為負柱鏡量\n- axis 看長線落在哪個刻度或 axis wheel\n\n**考試角度**\n- 比較正者作 sphere\n- 比較負與比較正的差為負柱鏡量\n- axis 看長線落在哪個刻度或 axis wheel\n\n**口訣**\n短正、長負；長軸給負柱鏡 axis。",
+          "keys": [
+            "比較正者作 sphere",
+            "比較負與比較正的差為負柱鏡量",
+            "axis 看長線落在哪個刻度或 axis wheel"
+          ],
+          "tip": "口訣：短正、長負；長軸給負柱鏡 axis。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "若短軸清楚時讀 -1.75D，長軸清楚時讀 -3.00D，負柱鏡表示為？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "比較正的 -1.75 作 sphere；差值 1.25D；負柱鏡軸位看長軸方向。\n\n正確選項：-1.75 -1.25 x 長軸。\n負柱鏡記錄時，短軸通常對到比較正的讀值，長軸對到比較負的讀值；兩者差值為 cylinder power，長軸所在刻度作為 axis。",
+          "choices": [
+            "-3.00 -1.25 x 短軸",
+            "-1.75 -1.25 x 長軸",
+            "-1.75 +1.25 x 長軸",
+            "-3.00 +1.25 x 短軸"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：短軸對比較正，長軸對比較負",
+          "problem": "若短軸清楚時讀 -1.75D，長軸清楚時讀 -3.00D，負柱鏡表示為？\n\nA. -3.00 -1.25 x 短軸\nB. -1.75 -1.25 x 長軸\nC. -1.75 +1.25 x 長軸\nD. -3.00 +1.25 x 短軸",
+          "steps": [
+            "先確認題目問的主題：短軸對比較正，長軸對比較負",
+            "負柱鏡記錄時，短軸通常對到比較正的讀值，長軸對到比較負的讀值；兩者差值為 cylinder power，長軸所在刻度作為 axis。",
+            "把判斷依據連回題目：比較正的 -1.75 作 sphere；差值 1.25D；負柱鏡軸位看長軸方向。\n\n正確選項：-1.75 -1.25 x 長軸。\n負柱鏡記錄時，短軸通常對到比較正的讀值，長軸對到比較負的讀值；兩者差值為 cylinder power，長軸所在刻度作為 axis。"
+          ],
+          "answer": "-1.75 -1.25 x 長軸"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：單焦與散光鏡片測量",
+          "qids": [
+            "s114-optometry-exam106-u04-opt-q0018",
+            "s114-optometry-exam106-u04-opt-q0019"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "測散光鏡片時，為什麼不能直接把焦度計視標當光十字？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "逐字稿特別提醒：長短軸與讀值有固定對應，直接當光十字會寫錯處方。\n\n正確選項：因為會把長短軸與度數/軸位對應搞反。\n含散光鏡片會出現一組線清楚、一組線模糊。轉 axis wheel 讓暈開方向與 target 線對齊，再分別讀兩條主經線度數。",
+              "choices": [
+                "因為視標沒有任何軸向資訊",
+                "因為會把長短軸與度數/軸位對應搞反",
+                "因為焦度計只能測球面鏡片",
+                "因為焦度計沒有 reticle"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "若短軸清楚時讀 -1.75D，長軸清楚時讀 -3.00D，負柱鏡表示為？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "比較正的 -1.75 作 sphere；差值 1.25D；負柱鏡軸位看長軸方向。\n\n正確選項：-1.75 -1.25 x 長軸。\n負柱鏡記錄時，短軸通常對到比較正的讀值，長軸對到比較負的讀值；兩者差值為 cylinder power，長軸所在刻度作為 axis。",
+              "choices": [
+                "-3.00 -1.25 x 短軸",
+                "-1.75 -1.25 x 長軸",
+                "-1.75 +1.25 x 長軸",
+                "-3.00 +1.25 x 短軸"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "兩主經線同時成焦",
+            "沒有散光時不需要轉 axis wheel",
+            "兩主經線相差 90 度",
+            "先對齊 axis，再讀 power",
+            "比較正者作 sphere",
+            "比較負與比較正的差為負柱鏡量"
+          ],
+          "flash": [
+            {
+              "front": "球面鏡片：兩方向同時清楚",
+              "back": "球面鏡片每個方向屈光力相同，所以焦度計 target 的長短線會一起清楚。"
+            },
+            {
+              "front": "散光鏡片：先找兩主經線",
+              "back": "散光鏡片有兩個互相垂直的主方向，測量時要先對齊軸向，再分別讀兩個方向的度數。"
+            },
+            {
+              "front": "短軸對比較正，長軸對比較負",
+              "back": "負柱鏡寫法中，比較正的讀值當 sphere，比較負的讀值和它相減得到 cylinder，axis 看長軸方向。"
+            },
+            {
+              "front": "焦度計中長短線與中央點同時清楚，最可能代表？",
+              "back": "散光會造成兩主經線分開成焦；同時清楚通常是球面鏡片。\n\n正確選項：鏡片為球面度數。\n若 movable target 的長短線與中央點圈同時清楚，代表鏡片沒有柱鏡成分，直接讀 sphere power。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multifocal-prism-1",
+      "title": "多焦鏡片、稜鏡與 MRP",
+      "goals": [
+        "解釋多焦鏡片近用區要翻面測",
+        "解釋稜鏡讓影像往 apex、物體看似往 base",
+        "解釋MRP 不等於 OC 時會產生稜鏡效果"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "多焦鏡片、稜鏡與 MRP",
+          "body": "多焦鏡片要確認遠/近用區與 ADD；稜鏡測量重點在 base direction、MRP 位置與 lensometer target 在 reticle 上的偏移。\n\n- 先分遠用與近用測量方向。\n- 再理解 prism base/apex 與影像位移。\n- 最後對齊 MRP、OC、PD，避免誘發稜鏡。"
+        },
+        {
+          "type": "card",
+          "title": "多焦鏡片近用區要翻面測",
+          "body": "**一句話／白話**\n多焦近用區重視前頂點度數，所以要翻面讓前表面靠 lens stop 才能正確讀 ADD。\n\n**觀念**\nPAL、bifocal、trifocal 的遠用區像單焦測後頂點；近用區要翻面讓前表面靠 lens stop，測 front vertex power，再確認 ADD 與定位。\n\n**重點**\n- 遠用區：背面靠 lens stop\n- 近用區：前表面靠 lens stop\n- 送工廠需單眼 PD，尤其 PAL 定位\n\n**考試角度**\n- 遠用區：背面靠 lens stop\n- 近用區：前表面靠 lens stop\n- 送工廠需單眼 PD，尤其 PAL 定位\n\n**口訣**\n遠用像單焦，近用要翻面；PAL 記得 fitting cross。",
+          "keys": [
+            "遠用區：背面靠 lens stop",
+            "近用區：前表面靠 lens stop",
+            "送工廠需單眼 PD，尤其 PAL 定位"
+          ],
+          "tip": "口訣：遠用像單焦，近用要翻面；PAL 記得 fitting cross。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "多焦鏡片測近用區時，為什麼要翻面？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "逐字稿明確說近距離區域測前頂點度數，所以鏡片方向要翻過來。\n\n正確選項：因為要測前頂點度數。\nPAL、bifocal、trifocal 的遠用區像單焦測後頂點；近用區要翻面讓前表面靠 lens stop，測 front vertex power，再確認 ADD 與定位。",
+          "choices": [
+            "因為要測前頂點度數",
+            "因為要避免稜鏡效應",
+            "因為近用區沒有 ADD",
+            "因為 reticle 會倒立"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "稜鏡讓影像往 apex、物體看似往 base",
+          "body": "**一句話／白話**\n稜鏡讓光線折向 base，但觀察者會覺得影像往 apex 方向跑，這就是 BI/BO/BU/BD 判斷的核心。\n\n**觀念**\n稜鏡改變光線方向，可處理 binocular vision 問題、移動/擴大視野，也可 prism thinning。處方可用 BI/BO/BU/BD 或斜稜鏡組合表示。\n\n**重點**\n- 水平：base in / base out\n- 垂直：base up / base down\n- 斜稜鏡 = 水平 + 垂直分量\n\n**考試角度**\n- 水平：base in / base out\n- 垂直：base up / base down\n- 斜稜鏡 = 水平 + 垂直分量\n\n**口訣**\n光向 base，像向 apex；處方看 base direction。",
+          "keys": [
+            "水平：base in / base out",
+            "垂直：base up / base down",
+            "斜稜鏡 = 水平 + 垂直分量"
+          ],
+          "tip": "口訣：光向 base，像向 apex；處方看 base direction。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "稜鏡處方中的 BO 代表什麼？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "BO 是 base out，屬於水平稜鏡方向。\n\n正確選項：base out。\n稜鏡改變光線方向，可處理 binocular vision 問題、移動/擴大視野，也可 prism thinning。處方可用 BI/BO/BU/BD 或斜稜鏡組合表示。",
+          "choices": [
+            "base down",
+            "base out",
+            "base over",
+            "base oblique"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "MRP 不等於 OC 時會產生稜鏡效果",
+          "body": "**一句話／白話**\n眼睛沒有通過鏡片光心時，就等於透過一個稜鏡在看，所以 PD、DBOC、OC/MRP 必須對齊。\n\n**觀念**\n配鏡或驗證稜鏡時，lensometer movable target 偏離 reticle 中心。若兩鏡片的 DBOC 與病人 PD 不一致，會因去中心產生 Prentice prism。\n\n**重點**\n- MRP 是 prescribed prism 的參考點\n- OC 是無稜鏡的光學中心\n- DBOC 不等於 PD 會誘發棱鏡\n\n**考試角度**\n- MRP 是 prescribed prism 的參考點\n- OC 是無稜鏡的光學中心\n- DBOC 不等於 PD 會誘發棱鏡\n\n**口訣**\nOC 是無稜鏡點，MRP 是處方稜鏡點；不重合就要算。",
+          "keys": [
+            "MRP 是 prescribed prism 的參考點",
+            "OC 是無稜鏡的光學中心",
+            "DBOC 不等於 PD 會誘發棱鏡"
+          ],
+          "tip": "口訣：OC 是無稜鏡點，MRP 是處方稜鏡點；不重合就要算。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "當 DBOC 不等於病人遠用 PD 時，最直接的臨床後果是？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "投影片標示 DBOC ≠ PD 會產生 prism effect。\n\n正確選項：誘發稜鏡效果。\n配鏡或驗證稜鏡時，lensometer movable target 偏離 reticle 中心。若兩鏡片的 DBOC 與病人 PD 不一致，會因去中心產生 Prentice prism。",
+          "choices": [
+            "角膜 K 值改變",
+            "誘發稜鏡效果",
+            "瞳孔無直接反應",
+            "焦度計不能歸零"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：MRP 不等於 OC 時會產生稜鏡效果",
+          "problem": "當 DBOC 不等於病人遠用 PD 時，最直接的臨床後果是？\n\nA. 角膜 K 值改變\nB. 誘發稜鏡效果\nC. 瞳孔無直接反應\nD. 焦度計不能歸零",
+          "steps": [
+            "先確認題目問的主題：MRP 不等於 OC 時會產生稜鏡效果",
+            "配鏡或驗證稜鏡時，lensometer movable target 偏離 reticle 中心。若兩鏡片的 DBOC 與病人 PD 不一致，會因去中心產生 Prentice prism。",
+            "把判斷依據連回題目：投影片標示 DBOC ≠ PD 會產生 prism effect。\n\n正確選項：誘發稜鏡效果。\n配鏡或驗證稜鏡時，lensometer movable target 偏離 reticle 中心。若兩鏡片的 DBOC 與病人 PD 不一致，會因去中心產生 Prentice prism。"
+          ],
+          "answer": "誘發稜鏡效果"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：多焦鏡片、稜鏡與 MRP",
+          "qids": [
+            "s114-optometry-exam106-u04-opt-q0018",
+            "s114-optometry-exam106-u04-opt-q0019"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "稜鏡處方中的 BO 代表什麼？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "BO 是 base out，屬於水平稜鏡方向。\n\n正確選項：base out。\n稜鏡改變光線方向，可處理 binocular vision 問題、移動/擴大視野，也可 prism thinning。處方可用 BI/BO/BU/BD 或斜稜鏡組合表示。",
+              "choices": [
+                "base down",
+                "base out",
+                "base over",
+                "base oblique"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "當 DBOC 不等於病人遠用 PD 時，最直接的臨床後果是？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "投影片標示 DBOC ≠ PD 會產生 prism effect。\n\n正確選項：誘發稜鏡效果。\n配鏡或驗證稜鏡時，lensometer movable target 偏離 reticle 中心。若兩鏡片的 DBOC 與病人 PD 不一致，會因去中心產生 Prentice prism。",
+              "choices": [
+                "角膜 K 值改變",
+                "誘發稜鏡效果",
+                "瞳孔無直接反應",
+                "焦度計不能歸零"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "遠用區：背面靠 lens stop",
+            "近用區：前表面靠 lens stop",
+            "水平：base in / base out",
+            "垂直：base up / base down",
+            "MRP 是 prescribed prism 的參考點",
+            "OC 是無稜鏡的光學中心"
+          ],
+          "flash": [
+            {
+              "front": "多焦鏡片近用區要翻面測",
+              "back": "多焦近用區重視前頂點度數，所以要翻面讓前表面靠 lens stop 才能正確讀 ADD。"
+            },
+            {
+              "front": "稜鏡讓影像往 apex、物體看似往 base",
+              "back": "稜鏡讓光線折向 base，但觀察者會覺得影像往 apex 方向跑，這就是 BI/BO/BU/BD 判斷的核心。"
+            },
+            {
+              "front": "MRP 不等於 OC 時會產生稜鏡效果",
+              "back": "眼睛沒有通過鏡片光心時，就等於透過一個稜鏡在看，所以 PD、DBOC、OC/MRP 必須對齊。"
+            },
+            {
+              "front": "多焦鏡片測近用區時，為什麼要翻面？",
+              "back": "逐字稿明確說近距離區域測前頂點度數，所以鏡片方向要翻過來。\n\n正確選項：因為要測前頂點度數。\nPAL、bifocal、trifocal 的遠用區像單焦測後頂點；近用區要翻面讓前表面靠 lens stop，測 front vertex power，再確認 ADD 與定位。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prentice-1",
+      "title": "Prentice's rule 與計算題",
+      "goals": [
+        "解釋公式：P = d × F",
+        "解釋水平與垂直稜鏡的加減規則",
+        "解釋焦度計測稜鏡：target 偏到幾圈就是幾 Δ"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "Prentice's rule 與計算題",
+          "body": "P = dF；d 用公分，F 用 D。考題重點是左右眼、正負鏡片、去中心方向與 BI/BO/BU/BD 的判斷。\n\n- 先背 P = dF。\n- 再確認 d 用 cm、左右眼分開。\n- 最後判斷 BI/BO/BU/BD 與水平垂直加減。"
+        },
+        {
+          "type": "card",
+          "title": "公式：P = d × F",
+          "body": "**一句話／白話**\nPrentice's rule 說明去中心越多、鏡片度數越高，誘發稜鏡越大；d 一定要用公分。\n\n**觀念**\nP 是稜鏡度 prism diopter；d 是光學中心到視線/MRP 的距離，單位必須是 cm；F 是鏡片度數的絕對量。\n\n**重點**\n- mm 要先除以 10 變 cm\n- 左右眼各自算，不要直接用雙眼差\n- 高度數與大去中心會快速增加稜鏡量\n\n**考試角度**\n- mm 要先除以 10 變 cm\n- 左右眼各自算，不要直接用雙眼差\n- 高度數與大去中心會快速增加稜鏡量\n\n**公式**\nP(Δ) = d(cm) × F(D)\n\n**口訣**\nP = dF；mm 先除 10，每眼分開算。",
+          "keys": [
+            "mm 要先除以 10 變 cm",
+            "左右眼各自算，不要直接用雙眼差",
+            "高度數與大去中心會快速增加稜鏡量"
+          ],
+          "tip": "口訣：P = dF；mm 先除 10，每眼分開算。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Rx = -4.00DS OU，PD = 62 mm，DBOC = 72 mm，兩眼各誘發多少稜鏡？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "DBOC 比 PD 大 10 mm，單眼差 5 mm = 0.5 cm；0.5×4=2Δ。負鏡外移相當 BI。\n\n正確選項：2Δ BI each。\nP 是稜鏡度 prism diopter；d 是光學中心到視線/MRP 的距離，單位必須是 cm；F 是鏡片度數的絕對量。",
+          "choices": [
+            "1Δ BI each",
+            "2Δ BI each",
+            "2Δ BO each",
+            "4Δ BI each"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "水平與垂直稜鏡的加減規則",
+          "body": "**一句話／白話**\n兩眼稜鏡不能只看數字，要先分水平和垂直；方向關係不同，加減規則也不同。\n\n**觀念**\n投影片整理：水平稜鏡同方向相加、相反方向相減；垂直稜鏡相反方向相加、同方向相減。判斷時先分 OD/OS，再分 H/V。\n\n**重點**\n- H prism：same direction add\n- V prism：opposite direction add\n- 斜稜鏡要拆成水平與垂直分量\n\n**考試角度**\n- H prism：same direction add\n- V prism：opposite direction add\n- 斜稜鏡要拆成水平與垂直分量\n\n**口訣**\n水平同向加、反向減；垂直反向加、同向減。",
+          "keys": [
+            "H prism：same direction add",
+            "V prism：opposite direction add",
+            "斜稜鏡要拆成水平與垂直分量"
+          ],
+          "tip": "口訣：水平同向加、反向減；垂直反向加、同向減。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "兩眼水平稜鏡都是 BO，總水平稜鏡效果如何處理？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "水平稜鏡 same direction add。\n\n正確選項：相加。\n投影片整理：水平稜鏡同方向相加、相反方向相減；垂直稜鏡相反方向相加、同方向相減。判斷時先分 OD/OS，再分 H/V。",
+          "choices": [
+            "相減",
+            "忽略",
+            "相加",
+            "只看 OD"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "焦度計測稜鏡：target 偏到幾圈就是幾 Δ",
+          "body": "**一句話／白話**\n焦度計 reticle 像稜鏡座標紙，target 偏離中心幾圈，就代表幾個 prism diopter 的偏移。\n\n**觀念**\n1 m 處 1 cm 偏移 = 1Δ。lensometer reticle 上若 target 中心位於 2 ring 上方，表示 2Δ BU；BO 例子中 OD/OS target 會在相反側。\n\n**重點**\n- 垂直 2Δ BU：target 在中心上方 2 ring\n- OU 1.5Δ BO：OD 與 OS target 偏向相對側\n- 標記 MRP 後確認瞳孔是否對上\n\n**考試角度**\n- 垂直 2Δ BU：target 在中心上方 2 ring\n- OU 1.5Δ BO：OD 與 OS target 偏向相對側\n- 標記 MRP 後確認瞳孔是否對上\n\n**口訣**\ntarget 離中心幾 ring = 幾 Δ；先分 OD/OS 再判方向。",
+          "keys": [
+            "垂直 2Δ BU：target 在中心上方 2 ring",
+            "OU 1.5Δ BO：OD 與 OS target 偏向相對側",
+            "標記 MRP 後確認瞳孔是否對上"
+          ],
+          "tip": "口訣：target 離中心幾 ring = 幾 Δ；先分 OD/OS 再判方向。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "右眼處方 2Δ BU 時，焦度計 movable target 應位於 reticle 中心的哪裡？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "投影片例子明確示範 2Δ Base Up 時 target 在中心上方 2 ring。\n\n正確選項：上方 2 ring。\n1 m 處 1 cm 偏移 = 1Δ。lensometer reticle 上若 target 中心位於 2 ring 上方，表示 2Δ BU；BO 例子中 OD/OS target 會在相反側。",
+          "choices": [
+            "左方 2 ring",
+            "右方 2 ring",
+            "上方 2 ring",
+            "下方 2 ring"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：焦度計測稜鏡：target 偏到幾圈就是幾 Δ",
+          "problem": "右眼處方 2Δ BU 時，焦度計 movable target 應位於 reticle 中心的哪裡？\n\nA. 左方 2 ring\nB. 右方 2 ring\nC. 上方 2 ring\nD. 下方 2 ring",
+          "steps": [
+            "先確認題目問的主題：焦度計測稜鏡：target 偏到幾圈就是幾 Δ",
+            "1 m 處 1 cm 偏移 = 1Δ。lensometer reticle 上若 target 中心位於 2 ring 上方，表示 2Δ BU；BO 例子中 OD/OS target 會在相反側。",
+            "把判斷依據連回題目：投影片例子明確示範 2Δ Base Up 時 target 在中心上方 2 ring。\n\n正確選項：上方 2 ring。\n1 m 處 1 cm 偏移 = 1Δ。lensometer reticle 上若 target 中心位於 2 ring 上方，表示 2Δ BU；BO 例子中 OD/OS target 會在相反側。"
+          ],
+          "answer": "上方 2 ring"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：Prentice's rule 與計算題",
+          "qids": [
+            "s114-optometry-exam106-u04-opt-q0018",
+            "s114-optometry-exam106-u04-opt-q0019"
+          ],
+          "checks": [
+            {
+              "kind": "single",
+              "q": "兩眼水平稜鏡都是 BO，總水平稜鏡效果如何處理？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "水平稜鏡 same direction add。\n\n正確選項：相加。\n投影片整理：水平稜鏡同方向相加、相反方向相減；垂直稜鏡相反方向相加、同方向相減。判斷時先分 OD/OS，再分 H/V。",
+              "choices": [
+                "相減",
+                "忽略",
+                "相加",
+                "只看 OD"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "右眼處方 2Δ BU 時，焦度計 movable target 應位於 reticle 中心的哪裡？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "投影片例子明確示範 2Δ Base Up 時 target 在中心上方 2 ring。\n\n正確選項：上方 2 ring。\n1 m 處 1 cm 偏移 = 1Δ。lensometer reticle 上若 target 中心位於 2 ring 上方，表示 2Δ BU；BO 例子中 OD/OS target 會在相反側。",
+              "choices": [
+                "左方 2 ring",
+                "右方 2 ring",
+                "上方 2 ring",
+                "下方 2 ring"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "mm 要先除以 10 變 cm",
+            "左右眼各自算，不要直接用雙眼差",
+            "H prism：same direction add",
+            "V prism：opposite direction add",
+            "垂直 2Δ BU：target 在中心上方 2 ring",
+            "OU 1.5Δ BO：OD 與 OS target 偏向相對側"
+          ],
+          "flash": [
+            {
+              "front": "公式：P = d × F",
+              "back": "Prentice's rule 說明去中心越多、鏡片度數越高，誘發稜鏡越大；d 一定要用公分。"
+            },
+            {
+              "front": "水平與垂直稜鏡的加減規則",
+              "back": "兩眼稜鏡不能只看數字，要先分水平和垂直；方向關係不同，加減規則也不同。"
+            },
+            {
+              "front": "焦度計測稜鏡：target 偏到幾圈就是幾 Δ",
+              "back": "焦度計 reticle 像稜鏡座標紙，target 偏離中心幾圈，就代表幾個 prism diopter 的偏移。"
+            },
+            {
+              "front": "Rx = -4.00DS OU，PD = 62 mm，DBOC = 72 mm，兩眼各誘發多少稜鏡？",
+              "back": "DBOC 比 PD 大 10 mm，單眼差 5 mm = 0.5 cm；0.5×4=2Δ。負鏡外移相當 BI。\n\n正確選項：2Δ BI each。\nP 是稜鏡度 prism diopter；d 是光學中心到視線/MRP 的距離，單位必須是 cm；F 是鏡片度數的絕對量。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,68 @@ const Screens = (() => {
   const SETS = window.QB.exams;
   /* 題本（章節／試卷）篩選 chips：只列出目前選到的科目 */
   const setChips = (subjects, sel) => chipGroup(SETS.filter(e => !subjects.length || subjects.includes(e.subj)).map(e => [e.id, QV.exLabel(e)]), sel);
+
+  /* ---------- 題本樹：依 set.path 分層（自由遠征、冒險地圖共用） ----------
+   * path 裡和科目同名的層級省略；「106 年國考」「114 學年度」這類來源層放到最後，當成題本按鈕的名稱，
+   * 所以 114 大一下的「學期 → 年份 → 科目 → 單元」會顯示成「學期 → 單元 → 各年份」。 */
+  const SRC_RE = /(年國考|學年度|考古題)$/;
+  function setPlace(e) {
+    const sn = C.SUBJECTS[e.subj]?.name;
+    const p = (e.path || []).map(String).filter(x => x && x !== sn);
+    const src = p.filter(x => SRC_RE.test(x)), dirs = p.filter(x => !SRC_RE.test(x));
+    const leaf = src.length ? src.join('・') : QV.exLabel(e).replace(/^【[^】]*】\s*/, '');
+    return { dirs, leaf };
+  }
+  function setTree(exams) {
+    const mk = (name, key) => ({ name, key, kids: new Map(), sets: [] });
+    const root = mk('', '');
+    exams.forEach(e => {
+      const { dirs, leaf } = setPlace(e); let n = root;
+      dirs.forEach(d => { if (!n.kids.has(d)) n.kids.set(d, mk(d, n.key + '/' + d)); n = n.kids.get(d); });
+      n.sets.push({ e, leaf });
+    });
+    // 只有一個子層、本身沒有題本的層級併成「A › B」，少點一層
+    const squash = n => { n.kids.forEach(squash); if (n !== root) while (!n.sets.length && n.kids.size === 1) { const k = [...n.kids.values()][0]; n.name += ' › ' + k.name; n.key = k.key; n.kids = k.kids; n.sets = k.sets; } };
+    squash(root);
+    return root;
+  }
+  const treeIds = n => [...n.sets.map(s => s.e.id), ...[...n.kids.values()].flatMap(treeIds)];
+  /* 題本挑選器（自由遠征、深淵遠征）：依分類樹收合，每層可一鍵全選；state.exams 空陣列＝全部。
+   * 回傳重畫函式；科目改變時呼叫它。展開狀態在這次畫面內記住。 */
+  function setPicker(box, state, onChange) {
+    const open = {};
+    const draw = () => {
+      state.exams = state.exams.filter(id => Store.EX[id] && state.subjects.includes(Store.EX[id].subj));
+      const sel = new Set(state.exams);
+      const pick = ids => { const on = ids.filter(id => sel.has(id)).length;
+        return `<span class="dim small-t">${on ? `已選 ${on}／` : ''}${ids.length} 本</span><span class="grow"></span><button class="px-btn small" data-pick="${ids.join(',')}">${on === ids.length ? '取消' : '全選'}</button>`; };
+      const chips = sets => `<div class="st-sets">${sets.map(({ e, leaf }) => `<span class="chip ${sel.has(e.id) ? 'on' : ''}" data-v="${e.id}" title="${U.esc(QV.exLabel(e))}">${U.esc(leaf)} <small class="dim">${e.count}</small></span>`).join('')}</div>`;
+      const node = (n, sj, depth) => { const k = sj + n.key;
+        return `<details class="stree" data-key="${U.esc(k)}" ${(open[k] ?? depth === 0) ? 'open' : ''}><summary><span class="st-name">${U.esc(n.name)}</span>${pick(treeIds(n))}</summary>
+          <div class="st-body">${[...n.kids.values()].map(c => node(c, sj, depth + 1)).join('')}${n.sets.length ? chips(n.sets) : ''}</div></details>`; };
+      const html = state.subjects.map(sj => {
+        const ex = SETS.filter(e => e.subj === sj); if (!ex.length) return '';
+        const t = setTree(ex); t.name = C.SUBJECTS[sj].name;
+        return node(t, sj, state.subjects.length > 1 ? 1 : 0);   // 選多科時各科先收起來
+      }).join('');
+      box.innerHTML = html ? `<div class="stree-wrap">${html}</div>` : '<span class="dim small-t">（先選科目）</span>';
+    };
+    box.addEventListener('toggle', e => { if (e.target.dataset && e.target.dataset.key) open[e.target.dataset.key] = e.target.open; }, true);
+    box.onclick = ev => {
+      const b = ev.target.closest('[data-pick]'), c = ev.target.closest('.chip[data-v]');
+      if (b) {
+        ev.preventDefault(); ev.stopPropagation();
+        const ids = b.dataset.pick.split(','), all = ids.every(id => state.exams.includes(id));
+        state.exams = all ? state.exams.filter(id => !ids.includes(id)) : [...new Set(state.exams.concat(ids))];
+      } else if (c) {
+        const id = c.dataset.v, i = state.exams.indexOf(id);
+        i >= 0 ? state.exams.splice(i, 1) : state.exams.push(id);
+      } else return;
+      SFX.play('click'); draw(); onChange && onChange();
+    };
+    draw();
+    return draw;
+  }
   const TYPES = [['single', '單選'], ['multi', '多選'], ['fill', '填答'], ['open', '非選']];
   const STATUS = [['all', '全部'], ['new', '未作答'], ['wrong', '曾答錯'], ['lastwrong', '上次答錯'], ['unmastered', '未答對過'], ['right', '答對過']];
 
@@ -27,7 +89,7 @@ const Screens = (() => {
   async function startRun(cfg) {
     let ids = null;
     if (cfg.mode === 'abyss') {
-      const n = Store.filter({ subjects: cfg.subjects, types: cfg.types }).filter(q => cfg.types.includes('open') || q.type !== 'open').length;
+      const n = Store.filter({ subjects: cfg.subjects, exams: cfg.exams, types: cfg.types }).filter(q => cfg.types.includes('open') || q.type !== 'open').length;
       if (!n) { U.toast('沒有符合條件的題目，請放寬篩選'); return; }
     } else {
       ids = buildQueue(cfg);
@@ -251,33 +313,48 @@ const Screens = (() => {
   function map() {
     const p = P();
     let html = `<div class="row mb"><h2 class="gold-t" style="margin:0;font-weight:normal">冒險地圖</h2><span class="dim">每個節點是一個題本（章節／試卷）。星等依命中率：90% 以上三星、70% 以上二星、完成一星。</span></div>`;
+    const groups = [];
     if (!SETS.length) html += `<div class="panel">題庫是空的。把題目放進 <code>content/bank/</code> 後執行 <code>python tools/build.py</code>。</div>`;
     MAIN_SUBJ.forEach(sj => {
       const S = C.SUBJECTS[sj];
       const exams = SETS.filter(e => e.subj === sj);
       if (!exams.length) return;
-      html += `<div class="panel region"><div class="region-head">${SP.tile(S.icon, 48)}<div><b>${S.region}</b><div class="dim small-t">${S.name}・${S.desc}</div></div><span class="grow"></span>
-        <button class="px-btn small purple" data-all="${sj}">綜合試煉</button></div><div class="path">`;
-      exams.forEach((e, i) => {
-        const st = Store.examStats(e.id), sg = p.stages[e.id];
-        const stars = sg ? sg.stars : 0;
-        html += `${i ? '<div class="link"></div>' : ''}<div class="node ${stars ? 'done' : ''}" data-exam="${e.id}">
-          ${SP.tile(i === exams.length - 1 ? 92 : [45, 46, 47, 21, 33][i % 5], 40)}
-          <div class="yr">${U.esc(QV.exLabel(e))}</div><div class="stars">${'★'.repeat(stars)}${'☆'.repeat(3 - stars)}</div>
+      html += `<div class="panel region"><div class="region-head">${SP.tile(S.icon, 48)}<div><b>${U.esc(S.name)}</b> <span class="dim small-t">${U.esc(S.region)}・${exams.length} 關</span><div class="dim small-t">${U.esc(S.desc || '')}</div></div><span class="grow"></span>
+        <button class="px-btn small purple" data-all="${sj}">綜合試煉</button></div>`;
+      const nodes = sets => `<div class="path">${sets.map(({ e, leaf }, i) => {
+        const st = Store.examStats(e.id), sg = p.stages[e.id], stars = sg ? sg.stars : 0;
+        return `${i ? '<div class="link"></div>' : ''}<div class="node ${stars ? 'done' : ''}" data-exam="${e.id}" title="${U.esc(QV.exLabel(e))}">
+          ${SP.tile(i === sets.length - 1 ? 92 : [45, 46, 47, 21, 33][i % 5], 40)}
+          <div class="yr">${U.esc(leaf)}</div><div class="stars">${'★'.repeat(stars)}${'☆'.repeat(3 - stars)}</div>
           <div class="small-t dim">${st.done}/${st.total} 題${sg ? `・最佳 ${sg.best}%` : ''}</div>
           <div class="progress-mini"><i style="width:${U.pct(st.done, st.total)}%"></i></div></div>`;
-      });
-      html += '</div></div>';
+      }).join('')}</div>`;
+      const group = (n, depth) => {
+        const ids = treeIds(n);
+        const cleared = ids.filter(id => p.stages[id]).length;
+        groups.push({ ids, title: `${S.name}・${n.name}` });
+        return `<details class="stree" data-key="${U.esc(sj + n.key)}" ${openMap[sj + n.key] ?? depth === 0 ? 'open' : ''}>
+          <summary><span class="st-name">${U.esc(n.name)}</span><span class="dim small-t">${cleared}/${ids.length} 關</span><span class="grow"></span>
+          <button class="px-btn small" data-grp="${groups.length - 1}">挑戰這組</button></summary>
+          <div class="st-body">${[...n.kids.values()].map(k => group(k, depth + 1)).join('')}${n.sets.length ? nodes(n.sets) : ''}</div></details>`;
+      };
+      const tree = setTree(exams);
+      html += [...tree.kids.values()].map(k => group(k, 0)).join('') + (tree.sets.length ? nodes(tree.sets) : '');
+      html += '</div>';
     });
     scr().innerHTML = html;
     U.$$('[data-exam]').forEach(n => n.onclick = () => stageModal({ examId: n.dataset.exam }));
     U.$$('[data-all]').forEach(n => n.onclick = () => stageModal({ subj: n.dataset.all }));
+    U.$$('[data-grp]').forEach(b => b.onclick = e => { e.preventDefault(); e.stopPropagation(); stageModal(groups[+b.dataset.grp]); });
+    U.$$('details.stree').forEach(d => d.ontoggle = () => { openMap[d.dataset.key] = d.open; });
   }
-  function stageModal({ examId, subj }) {
+  const openMap = {};   // 冒險地圖各分組的展開狀態（這次開啟期間記住）
+  function stageModal({ examId, subj, ids, title: gTitle }) {
     const ex = examId ? Store.EX[examId] : null;
-    const title = ex ? `${C.SUBJECTS[ex.subj].region}・${QV.exLabel(ex)}` : `${C.SUBJECTS[subj].region}・綜合試煉`;
+    const title = ex ? `${C.SUBJECTS[ex.subj].region}・${QV.exLabel(ex)}` : ids ? gTitle : `${C.SUBJECTS[subj].region}・綜合試煉`;
     const state = { count: '20', status: 'all', types: ['single', 'multi', 'fill'] };
-    const base = ex ? { exams: [examId] } : { subjects: [subj] };
+    const base = ex ? { exams: [examId] } : ids ? { exams: ids.slice() } : { subjects: [subj] };
+    if (ids && !subj) subj = Store.EX[ids[0]].subj;
     const m = U.modal({
       title, narrow: true, body: `
       <div class="filters">
@@ -317,7 +394,7 @@ const Screens = (() => {
       <p class="dim small-t">提示：題數越多，樓層越深、首領越強，獎勵也越多。題本不選＝全部。沒有標準答案的填答／非選題採「揭曉後自評」。</p>
       <div class="row"><button class="px-btn gold big" id="go">出發遠征！</button></div></div>`;
     const upd = () => { const n = Store.filter(state).filter(q => state.types.includes('open') || q.type !== 'open').length; U.$('#cnt').textContent = `符合條件：${n} 題（將出 ${Math.min(n, Number(state.count))} 題）`; };
-    const drawSets = () => { state.exams = state.exams.filter(id => state.subjects.includes(Store.EX[id].subj)); U.$('#fy').innerHTML = setChips(state.subjects, state.exams) || '<span class="dim small-t">（先選科目）</span>'; bindChips(scr(), '#fy', state, 'exams', true, upd); };
+    const drawSets = setPicker(U.$('#fy'), state, upd);
     bindChips(scr(), '#fsj', state, 'subjects', true, () => { drawSets(); upd(); });
     drawSets();
     bindChips(scr(), '#ft', state, 'types', true, upd);
@@ -669,12 +746,15 @@ const Screens = (() => {
   function abyss() {
     const p = P(), A = p.abyss;
     const last = p.abyssCfg || {};
-    const state = { subjects: last.subjects || MAIN_SUBJ.slice(), types: last.types || ['single', 'multi', 'fill'], pref: last.pref || 'rand', diff: Math.min(last.diff ?? A.maxDiff, A.maxDiff) };
+    const state = { subjects: (last.subjects || MAIN_SUBJ.slice()).filter(x => C.SUBJECTS[x]), exams: (last.exams || []).filter(id => Store.EX[id]), types: last.types || ['single', 'multi', 'fill'], pref: last.pref || 'rand', diff: Math.min(last.diff ?? A.maxDiff, A.maxDiff) };
+    // 有選題本時，只有這些題本所屬的科目會登場（首領也只出這些科目）
+    const effSubj = () => state.exams.length ? state.subjects.filter(x => state.exams.some(id => Store.EX[id].subj === x)) : state.subjects;
     scr().innerHTML = `<div class="abyss-grid">
       <div class="panel"><h2>深淵遠征</h2>
         <p class="dim small-t">三章分岔地圖的長篇冒險：沿路線選擇戰鬥、精英、事件、篝火、行商與寶箱，每章盡頭有各科首領。擊敗首領可從三件強力「首領遺物」中擇一。三章全破即通關，並解鎖下一個試煉等級。角色升級會解鎖戰鬥技能。</p>
         <div class="filters">
           <div class="frow"><label>科目</label><span id="fsj">${chipGroup(MAIN_SUBJ.map(x => [x, C.SUBJECTS[x].name]), state.subjects)}</span></div>
+          <div class="frow"><label>範圍</label><span id="fy"></span></div>
           <div class="frow"><label>題型</label><span id="ft">${chipGroup(TYPES, state.types)}</span></div>
           <div class="frow"><label>出題</label><span id="fp">${chipGroup([['rand', '隨機'], ['new', '未作答優先'], ['wrong', '錯題優先']], [state.pref], false)}</span></div>
         </div>
@@ -705,22 +785,25 @@ const Screens = (() => {
       });
     };
     const drawBoss = () => {
-      U.$('#bl').innerHTML = state.subjects.map(x => `<div class="small-t mb"><b style="color:${C.SUBJECTS[x].color}">${C.SUBJECTS[x].name}</b>：${C.themeOf(x) === 'mix' ? '<span class="dim">綜合主題：首領從所有主題隨機登場</span>' : C.BOSS_DEFS[C.themeOf(x)].map((b, i) => `${i + 1}章 ${b.name}<span class="tag ng">${C.MECHS[b.mech].name}</span>`).join(' ')}</div>`).join('') || '<span class="dim">請選擇科目</span>';
+      U.$('#bl').innerHTML = effSubj().map(x => `<div class="small-t mb"><b style="color:${C.SUBJECTS[x].color}">${C.SUBJECTS[x].name}</b>：${C.themeOf(x) === 'mix' ? '<span class="dim">綜合主題：首領從所有主題隨機登場</span>' : C.BOSS_DEFS[C.themeOf(x)].map((b, i) => `${i + 1}章 ${b.name}<span class="tag ng">${C.MECHS[b.mech].name}</span>`).join(' ')}</div>`).join('') || '<span class="dim">請選擇科目</span>';
     };
     const upd = () => {
-      const n = Store.filter({ subjects: state.subjects, types: state.types }).filter(q => state.types.includes('open') || q.type !== 'open').length;
-      U.$('#cnt').textContent = `題池：${n} 題（冒險中會持續抽題，不限題數；首領戰只出該首領科目的題目）`; drawBoss();
+      const n = Store.filter({ subjects: state.subjects, exams: state.exams, types: state.types }).filter(q => state.types.includes('open') || q.type !== 'open').length;
+      U.$('#cnt').textContent = `題池：${n} 題${state.exams.length ? `（已選 ${state.exams.length} 本題本）` : '（範圍不選＝所選科目全部題本）'}。冒險中會持續抽題、不限題數；首領戰只出該首領科目的題目。`; drawBoss();
     };
-    bindChips(scr(), '#fsj', state, 'subjects', true, upd);
+    const drawSets = setPicker(U.$('#fy'), state, upd);
+    bindChips(scr(), '#fsj', state, 'subjects', true, () => { drawSets(); upd(); });
     bindChips(scr(), '#ft', state, 'types', true, upd);
     bindChips(scr(), '#fp', state, 'pref', false);
     drawDiffs(); upd();
     U.$('#chcls').onclick = () => App.go('classes');
     U.$('#go').onclick = () => {
       if (!state.subjects.length || !state.types.length) { U.toast('科目、題型至少各選一項'); return; }
-      p.abyssCfg = { subjects: state.subjects.slice(), types: state.types.slice(), pref: state.pref, diff: state.diff }; Store.saveProfile();
-      const names = state.subjects.length === MAIN_SUBJ.length && MAIN_SUBJ.length > 1 ? '全科' : state.subjects.map(x => C.SUBJECTS[x].name).join('・');
-      startRun({ mode: 'abyss', title: `深淵遠征（${names}）`, subjects: state.subjects.slice(), types: state.types.slice(), pref: state.pref, diff: state.diff });
+      const subs = effSubj();
+      if (!subs.length) { U.toast('選的題本不在已選的科目裡'); return; }
+      p.abyssCfg = { subjects: state.subjects.slice(), exams: state.exams.slice(), types: state.types.slice(), pref: state.pref, diff: state.diff }; Store.saveProfile();
+      const names = (state.subjects.length === MAIN_SUBJ.length && MAIN_SUBJ.length > 1 && !state.exams.length ? '全科' : subs.map(x => C.SUBJECTS[x].name).join('・')) + (state.exams.length ? `・${state.exams.length} 本` : '');
+      startRun({ mode: 'abyss', title: `深淵遠征（${names}）`, subjects: subs, exams: state.exams.slice(), types: state.types.slice(), pref: state.pref, diff: state.diff });
     };
   }
 

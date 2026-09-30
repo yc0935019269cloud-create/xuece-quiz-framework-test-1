@@ -242,6 +242,21 @@ details.passage .pbody { max-height: 55vh; overflow: auto; border-bottom: 3px da
 .region-head { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
 .region-head b { font-size: 20px; color: var(--gold); font-weight: normal; text-shadow: 2px 2px 0 #000; }
 .path { display: flex; align-items: center; gap: 0; overflow-x: auto; padding: 6px 2px 12px; }
+/* 題本分類樹（自由遠征、冒險地圖） */
+.stree-wrap { flex: 1; min-width: 0; }
+.stree { border-left: 3px solid var(--line); margin: 4px 0; background: rgba(0,0,0,.12); }
+.stree[open] { border-left-color: var(--gold); }
+.stree > summary { display: flex; align-items: center; gap: 8px; padding: 6px 8px; cursor: pointer; list-style: none; user-select: none; }
+.stree > summary::-webkit-details-marker { display: none; }
+.stree > summary::before { content: '▸'; color: var(--dim); width: 12px; flex: none; }
+.stree[open] > summary::before { content: '▾'; color: var(--gold); }
+.stree > summary:hover { background: rgba(255,255,255,.04); }
+.stree .st-name { color: var(--gold); }
+.stree .st-body { padding: 0 6px 6px 16px; }
+.stree .st-sets { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px 0; }
+.stree .st-sets .chip small { opacity: .7; }
+.region .stree .path { padding-top: 4px; }
+@media (max-width: 640px) { .stree .st-body { padding-left: 8px; } .stree > summary { padding: 6px 4px; gap: 6px; } }
 .node { flex: none; width: 130px; text-align: center; cursor: pointer; padding: 8px 4px; background: var(--bg2); border: 4px solid var(--line); box-shadow: inset 0 0 0 3px var(--hi); }
 .node:hover { box-shadow: inset 0 0 0 3px var(--gold); }
 .node.done { box-shadow: inset 0 0 0 3px var(--green); }

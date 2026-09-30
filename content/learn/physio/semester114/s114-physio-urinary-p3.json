@@ -23,9 +23,9 @@
       "id": "review-extra-2",
       "title": "串連、公式與易錯整合（2）",
       "goals": [
-        "解釋急速重點：RAAS 主線",
+        "解釋急速重點：腎素－血管張力素－醛固酮系統（RAAS） 主線",
         "解釋急速重點：Renal handling 總公式",
-        "解釋急速重點：兩類 nephron"
+        "解釋急速重點：兩類 腎元（nephron）"
       ],
       "steps": [
         {
@@ -35,8 +35,8 @@
         },
         {
           "type": "card",
-          "title": "急速重點：RAAS 主線",
-          "body": "**一句話／白話**\n腎臟覺得血不夠，會啟動一串接力：先縮血管，再叫身體留下鹽和水，把血壓救回來。\n\n**觀念**\n腎灌流壓↓、macula densa NaCl↓或 β₁ 刺激→renin→Ang I→ACE→Ang II→血管收縮與 aldosterone。\n\n**易錯與比較**\nTPR↑、Na⁺/水再吸收↑、血壓↑。\n\n**口訣**\n縮管＋留鹽水＝升壓。",
+          "title": "急速重點：腎素－血管張力素－醛固酮系統（RAAS） 主線",
+          "body": "**一句話／白話**\n腎臟覺得血不夠，會啟動一串接力：先縮血管，再叫身體留下鹽和水，把血壓救回來。\n\n**觀念**\n腎灌流壓↓、緻密斑（macula densa） 氯化鈉（NaCl）↓或 β₁ 刺激→腎素（renin）→血管張力素 I（Ang I）→血管張力素轉換酶（ACE）→血管張力素 II（Ang II）→血管收縮與 醛固酮（aldosterone）。\n\n**易錯與比較**\n總周邊阻力（TPR）↑、Na⁺/水再吸收↑、血壓↑。\n\n**口訣**\n縮管＋留鹽水＝升壓。",
           "keys": [
             "腎臟覺得血不夠，會啟動一串接力：先縮血管，再叫身體留下鹽和水，把血壓救回來。"
           ],
@@ -45,15 +45,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：RAAS 主線」，並說出一個判斷依據。",
-          "answer": "腎灌流壓↓、macula densa NaCl↓或 β₁ 刺激→renin→Ang I→ACE→Ang II→血管收縮與 aldosterone。",
+          "q": "用自己的話說明「急速重點：腎素－血管張力素－醛固酮系統（RAAS） 主線」，並說出一個判斷依據。",
+          "answer": "腎灌流壓↓、緻密斑（macula densa） 氯化鈉（NaCl）↓或 β₁ 刺激→腎素（renin）→血管張力素 I（Ang I）→血管張力素轉換酶（ACE）→血管張力素 II（Ang II）→血管收縮與 醛固酮（aldosterone）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "腎灌流壓↓、macula densa NaCl↓或 β₁ 刺激→renin→Ang I→ACE→Ang II→血管收縮與 aldosterone。"
+          "explain": "腎灌流壓↓、緻密斑（macula densa） 氯化鈉（NaCl）↓或 β₁ 刺激→腎素（renin）→血管張力素 I（Ang I）→血管張力素轉換酶（ACE）→血管張力素 II（Ang II）→血管收縮與 醛固酮（aldosterone）。",
+          "id": "c6462e395"
         },
         {
           "type": "card",
           "title": "急速重點：Renal handling 總公式",
-          "body": "**一句話／白話**\n某物進入腎小管後，可以被拿回身體，也可以再被丟進尿裡；最後排出量就是進來減拿回、再加丟入。\n\n**觀念**\n排泄量 = 濾過量 − 再吸收量 + 分泌量。\n\n**易錯與比較**\nfiltered load = plasma [X] × GFR。\n\n**口訣**\n排出＝進來－拿回＋再丟。",
+          "body": "**一句話／白話**\n某物進入腎小管後，可以被拿回身體，也可以再被丟進尿裡；最後排出量就是進來減拿回、再加丟入。\n\n**觀念**\n排泄量 = 濾過量 − 再吸收量 + 分泌量。\n\n**易錯與比較**\nfiltered load = plasma [X] × 腎絲球過濾率（GFR）。\n\n**口訣**\n排出＝進來－拿回＋再丟。",
           "keys": [
             "某物進入腎小管後，可以被拿回身體，也可以再被丟進尿裡；最後排出量就是進來減拿回、再加丟入。"
           ],
@@ -65,12 +66,13 @@
           "q": "用自己的話說明「急速重點：Renal handling 總公式」，並說出一個判斷依據。",
           "answer": "排泄量 = 濾過量 − 再吸收量 + 分泌量。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "排泄量 = 濾過量 − 再吸收量 + 分泌量。"
+          "explain": "排泄量 = 濾過量 − 再吸收量 + 分泌量。",
+          "id": "cf9a16ec0"
         },
         {
           "type": "card",
-          "title": "急速重點：兩類 nephron",
-          "body": "**一句話／白話**\n多數腎元的管子較短；少數管子伸得很深，專門建立濃度階梯，幫你在缺水時做出濃尿。\n\n**觀念**\nCortical nephron 多、loop 短；juxtamedullary loop 長，配合 vasa recta 建立髓質滲透梯度。\n\n**易錯與比較**\n不要誤背成 renin 只由某類 nephron 分泌。\n\n**口訣**\n長管子＝比較會省水。",
+          "title": "急速重點：兩類 腎元（nephron）",
+          "body": "**一句話／白話**\n多數腎元的管子較短；少數管子伸得很深，專門建立濃度階梯，幫你在缺水時做出濃尿。\n\n**觀念**\n皮質腎元（Cortical nephron） 多、loop 短；近髓質（juxtamedullary） loop 長，配合 直小血管（vasa recta） 建立髓質滲透梯度。\n\n**易錯與比較**\n不要誤背成 腎素（renin） 只由某類 腎元（nephron） 分泌。\n\n**口訣**\n長管子＝比較會省水。",
           "keys": [
             "多數腎元的管子較短；少數管子伸得很深，專門建立濃度階梯，幫你在缺水時做出濃尿。"
           ],
@@ -79,21 +81,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：兩類 nephron」，並說出一個判斷依據。",
-          "answer": "Cortical nephron 多、loop 短；juxtamedullary loop 長，配合 vasa recta 建立髓質滲透梯度。",
+          "q": "用自己的話說明「急速重點：兩類 腎元（nephron）」，並說出一個判斷依據。",
+          "answer": "皮質腎元（Cortical nephron） 多、loop 短；近髓質（juxtamedullary） loop 長，配合 直小血管（vasa recta） 建立髓質滲透梯度。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "Cortical nephron 多、loop 短；juxtamedullary loop 長，配合 vasa recta 建立髓質滲透梯度。"
+          "explain": "皮質腎元（Cortical nephron） 多、loop 短；近髓質（juxtamedullary） loop 長，配合 直小血管（vasa recta） 建立髓質滲透梯度。",
+          "id": "c84593ebb"
         },
         {
           "type": "example",
-          "title": "範例拆解：急速重點：兩類 nephron",
-          "problem": "用自己的話說明「急速重點：兩類 nephron」，並說出一個判斷依據。",
+          "title": "範例拆解：急速重點：兩類 腎元（nephron）",
+          "problem": "用自己的話說明「急速重點：兩類 腎元（nephron）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：急速重點：兩類 nephron",
-            "Cortical nephron 多、loop 短；juxtamedullary loop 長，配合 vasa recta 建立髓質滲透梯度。",
-            "把判斷依據連回題目：Cortical nephron 多、loop 短；juxtamedullary loop 長，配合 vasa recta 建立髓質滲透梯度。"
+            "先確認題目問的主題：急速重點：兩類 腎元（nephron）",
+            "皮質腎元（Cortical nephron） 多、loop 短；近髓質（juxtamedullary） loop 長，配合 直小血管（vasa recta） 建立髓質滲透梯度。",
+            "把判斷依據連回題目：皮質腎元（Cortical nephron） 多、loop 短；近髓質（juxtamedullary） loop 長，配合 直小血管（vasa recta） 建立髓質滲透梯度。"
           ],
-          "answer": "Cortical nephron 多、loop 短；juxtamedullary loop 長，配合 vasa recta 建立髓質滲透梯度。"
+          "answer": "皮質腎元（Cortical nephron） 多、loop 短；近髓質（juxtamedullary） loop 長，配合 直小血管（vasa recta） 建立髓質滲透梯度。"
         },
         {
           "type": "practice",
@@ -108,14 +111,16 @@
               "q": "用自己的話說明「急速重點：Renal handling 總公式」，並說出一個判斷依據。",
               "answer": "排泄量 = 濾過量 − 再吸收量 + 分泌量。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "排泄量 = 濾過量 − 再吸收量 + 分泌量。"
+              "explain": "排泄量 = 濾過量 − 再吸收量 + 分泌量。",
+              "id": "cf9a16ec0"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：兩類 nephron」，並說出一個判斷依據。",
-              "answer": "Cortical nephron 多、loop 短；juxtamedullary loop 長，配合 vasa recta 建立髓質滲透梯度。",
+              "q": "用自己的話說明「急速重點：兩類 腎元（nephron）」，並說出一個判斷依據。",
+              "answer": "皮質腎元（Cortical nephron） 多、loop 短；近髓質（juxtamedullary） loop 長，配合 直小血管（vasa recta） 建立髓質滲透梯度。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "Cortical nephron 多、loop 短；juxtamedullary loop 長，配合 vasa recta 建立髓質滲透梯度。"
+              "explain": "皮質腎元（Cortical nephron） 多、loop 短；近髓質（juxtamedullary） loop 長，配合 直小血管（vasa recta） 建立髓質滲透梯度。",
+              "id": "c84593ebb"
             }
           ]
         },
@@ -125,25 +130,29 @@
             "腎臟覺得血不夠，會啟動一串接力：先縮血管，再叫身體留下鹽和水，把血壓救回來。",
             "某物進入腎小管後，可以被拿回身體，也可以再被丟進尿裡；最後排出量就是進來減拿回、再加丟入。",
             "多數腎元的管子較短；少數管子伸得很深，專門建立濃度階梯，幫你在缺水時做出濃尿。",
-            "急速重點：RAAS 主線：腎臟覺得血不夠，會啟動一串接力：先縮血管，再叫身體留下鹽和水，把血壓救回來。",
+            "急速重點：腎素－血管張力素－醛固酮系統（RAAS） 主線：腎臟覺得血不夠，會啟動一串接力：先縮血管，再叫身體留下鹽和水，把血壓救回來。",
             "急速重點：Renal handling 總公式：某物進入腎小管後，可以被拿回身體，也可以再被丟進尿裡；最後排出量就是進來減拿回、再加丟入。"
           ],
           "flash": [
             {
-              "front": "急速重點：RAAS 主線",
-              "back": "腎臟覺得血不夠，會啟動一串接力：先縮血管，再叫身體留下鹽和水，把血壓救回來。"
+              "front": "急速重點：腎素－血管張力素－醛固酮系統（RAAS） 主線",
+              "back": "腎臟覺得血不夠，會啟動一串接力：先縮血管，再叫身體留下鹽和水，把血壓救回來。",
+              "id": "ff6626b61"
             },
             {
               "front": "急速重點：Renal handling 總公式",
-              "back": "某物進入腎小管後，可以被拿回身體，也可以再被丟進尿裡；最後排出量就是進來減拿回、再加丟入。"
+              "back": "某物進入腎小管後，可以被拿回身體，也可以再被丟進尿裡；最後排出量就是進來減拿回、再加丟入。",
+              "id": "fb6d45d51"
             },
             {
-              "front": "急速重點：兩類 nephron",
-              "back": "多數腎元的管子較短；少數管子伸得很深，專門建立濃度階梯，幫你在缺水時做出濃尿。"
+              "front": "急速重點：兩類 腎元（nephron）",
+              "back": "多數腎元的管子較短；少數管子伸得很深，專門建立濃度階梯，幫你在缺水時做出濃尿。",
+              "id": "fe9d7bcc7"
             },
             {
-              "front": "用自己的話說明「急速重點：RAAS 主線」，並說出一個判斷依據。",
-              "back": "腎灌流壓↓、macula densa NaCl↓或 β₁ 刺激→renin→Ang I→ACE→Ang II→血管收縮與 aldosterone。"
+              "front": "用自己的話說明「急速重點：腎素－血管張力素－醛固酮系統（RAAS） 主線」，並說出一個判斷依據。",
+              "back": "腎灌流壓↓、緻密斑（macula densa） 氯化鈉（NaCl）↓或 β₁ 刺激→腎素（renin）→血管張力素 I（Ang I）→血管張力素轉換酶（ACE）→血管張力素 II（Ang II）→血管收縮與 醛固酮（aldosterone）。",
+              "id": "f6462e395"
             }
           ]
         }
@@ -164,7 +173,7 @@
         {
           "type": "card",
           "title": "急速重點：小動脈半徑與血壓",
-          "body": "**一句話／白話**\n水管半徑只縮一點，阻力就會暴增；心臟更難推血，血壓也容易升高。\n\n**觀念**\n半徑下降→resistance、TPR、arterial pressure 上升。\n\n**易錯與比較**\nPoiseuille：R ∝ 1/r⁴。\n\n**口訣**\n管子細一點，阻力大很多。",
+          "body": "**一句話／白話**\n水管半徑只縮一點，阻力就會暴增；心臟更難推血，血壓也容易升高。\n\n**觀念**\n半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。\n\n**易錯與比較**\nPoiseuille：R ∝ 1/r⁴。\n\n**口訣**\n管子細一點，阻力大很多。",
           "keys": [
             "水管半徑只縮一點，阻力就會暴增；心臟更難推血，血壓也容易升高。"
           ],
@@ -174,25 +183,27 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：小動脈半徑與血壓」，並說出一個判斷依據。",
-          "answer": "半徑下降→resistance、TPR、arterial pressure 上升。",
+          "answer": "半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "半徑下降→resistance、TPR、arterial pressure 上升。"
+          "explain": "半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
+          "id": "c88e7d96e"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n用自己的話說明「急速重點：小動脈半徑與血壓」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：急速重點：小動脈半徑與血壓\n- 半徑下降→resistance、TPR、arterial pressure 上升。\n- 把判斷依據連回題目：半徑下降→resistance、TPR、arterial pressure 上升。\n\n**結論與依據**\n半徑下降→resistance、TPR、arterial pressure 上升。",
+          "body": "**情境**\n用自己的話說明「急速重點：小動脈半徑與血壓」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：急速重點：小動脈半徑與血壓\n- 半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。\n- 把判斷依據連回題目：半徑下降→阻力、總周邊阻力、動脈壓 上升。\n\n**結論與依據**\n半徑下降→阻力、總周邊阻力、動脈壓 上升。",
           "keys": [
-            "半徑下降→resistance、TPR、arterial pressure 上升。"
+            "半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "半徑下降→resistance、TPR、arterial pressure 上升。",
+          "answer": "半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：急速重點：小動脈半徑與血壓\n- 半徑下降→resistance、TPR、arterial pressure 上升。\n- 把判斷依據連回題目：半徑下降→resistance、TPR、arterial pressure 上升。"
+          "explain": "- 先確認題目問的主題：急速重點：小動脈半徑與血壓\n- 半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。\n- 把判斷依據連回題目：半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
+          "id": "c1f5c42b6"
         },
         {
           "type": "example",
@@ -200,10 +211,10 @@
           "problem": "用自己的話說明「急速重點：小動脈半徑與血壓」，並說出一個判斷依據。",
           "steps": [
             "先確認題目問的主題：急速重點：小動脈半徑與血壓",
-            "半徑下降→resistance、TPR、arterial pressure 上升。",
-            "把判斷依據連回題目：半徑下降→resistance、TPR、arterial pressure 上升。"
+            "半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
+            "把判斷依據連回題目：半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。"
           ],
-          "answer": "半徑下降→resistance、TPR、arterial pressure 上升。"
+          "answer": "半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。"
         },
         {
           "type": "practice",
@@ -216,9 +227,10 @@
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：小動脈半徑與血壓」，並說出一個判斷依據。",
-              "answer": "半徑下降→resistance、TPR、arterial pressure 上升。",
+              "answer": "半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "半徑下降→resistance、TPR、arterial pressure 上升。"
+              "explain": "半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
+              "id": "c88e7d96e"
             }
           ]
         },
@@ -227,26 +239,30 @@
           "points": [
             "水管半徑只縮一點，阻力就會暴增；心臟更難推血，血壓也容易升高。",
             "急速重點：小動脈半徑與血壓：水管半徑只縮一點，阻力就會暴增；心臟更難推血，血壓也容易升高。",
-            "半徑下降→resistance、TPR、arterial pressure 上升。",
-            "- 先確認題目問的主題：急速重點：小動脈半徑與血壓\n- 半徑下降→resistance、TPR、arterial pressure 上升。\n- 把判斷依據連回題目：半徑下降→resistance、TPR、arterial pressure 上升。",
-            "半徑下降→resistance、TPR、arterial pressure 上升。"
+            "半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
+            "- 先確認題目問的主題：急速重點：小動脈半徑與血壓\n- 半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。\n- 把判斷依據連回題目：半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
+            "半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。"
           ],
           "flash": [
             {
               "front": "急速重點：小動脈半徑與血壓",
-              "back": "水管半徑只縮一點，阻力就會暴增；心臟更難推血，血壓也容易升高。"
+              "back": "水管半徑只縮一點，阻力就會暴增；心臟更難推血，血壓也容易升高。",
+              "id": "f63ffdd54"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：急速重點：小動脈半徑與血壓\n- 半徑下降→resistance、TPR、arterial pressure 上升。\n- 把判斷依據連回題目：半徑下降→resistance、TPR、arterial pressure 上升。"
+              "back": "- 先確認題目問的主題：急速重點：小動脈半徑與血壓\n- 半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。\n- 把判斷依據連回題目：半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
+              "id": "f1f5c42b6"
             },
             {
               "front": "用自己的話說明「急速重點：小動脈半徑與血壓」，並說出一個判斷依據。",
-              "back": "半徑下降→resistance、TPR、arterial pressure 上升。"
+              "back": "半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
+              "id": "f88e7d96e"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：急速重點：小動脈半徑與血壓\n- 半徑下降→resistance、TPR、arterial pressure 上升。\n- 把判斷依據連回題目：半徑下降→resistance、TPR、arterial pressure 上升。"
+              "back": "- 先確認題目問的主題：急速重點：小動脈半徑與血壓\n- 半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。\n- 把判斷依據連回題目：半徑下降→阻力（resistance）、總周邊阻力（TPR）、動脈壓（arterial pressure） 上升。",
+              "id": "f1f5c42b6"
             }
           ]
         }
@@ -267,9 +283,9 @@
         {
           "type": "card",
           "title": "判斷依據：泌尿系統",
-          "body": "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 filtration。\n",
+          "body": "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 濾過（filtration）。\n",
           "keys": [
-            "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 filtration。\n"
+            "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 濾過（filtration）。\n"
           ]
         },
         {
@@ -278,20 +294,21 @@
           "q": "依演化邏輯，腎絲球最早負責的功能是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 filtration。\n",
+          "explain": "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 濾過（filtration）。\n",
           "choices": [
-            "過濾 filtration",
-            "重吸收 NaCl",
+            "過濾 濾過（filtration）",
+            "重吸收 氯化鈉（NaCl）",
             "分泌毒素",
             "造紅血球"
-          ]
+          ],
+          "id": "c1c14d651"
         },
         {
           "type": "card",
           "title": "判斷依據：泌尿系統",
-          "body": "juxtamedullary 長環深入髓質、配 vasa recta 建立梯度，負責濃縮稀釋。\n\n正確選項：Juxtamedullary nephron。\n",
+          "body": "近髓質（juxtamedullary） 長環深入髓質、配 直小血管（vasa recta） 建立梯度，負責濃縮稀釋。\n\n正確選項：近髓質腎元（Juxtamedullary nephron）。\n",
           "keys": [
-            "juxtamedullary 長環深入髓質、配 vasa recta 建立梯度，負責濃縮稀釋。\n\n正確選項：Juxtamedullary nephron。\n"
+            "近髓質（juxtamedullary） 長環深入髓質、配 直小血管（vasa recta） 建立梯度，負責濃縮稀釋。\n\n正確選項：近髓質腎元（Juxtamedullary nephron）。\n"
           ]
         },
         {
@@ -300,20 +317,21 @@
           "q": "負責尿液濃縮稀釋、長環深入髓質的腎元是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "juxtamedullary 長環深入髓質、配 vasa recta 建立梯度，負責濃縮稀釋。\n\n正確選項：Juxtamedullary nephron。\n",
+          "explain": "近髓質（juxtamedullary） 長環深入髓質、配 直小血管（vasa recta） 建立梯度，負責濃縮稀釋。\n\n正確選項：近髓質腎元（Juxtamedullary nephron）。\n",
           "choices": [
-            "Juxtamedullary nephron",
-            "Cortical nephron",
+            "近髓質腎元（Juxtamedullary nephron）",
+            "皮質腎元（Cortical nephron）",
             "兩者皆是",
             "集尿管"
-          ]
+          ],
+          "id": "c2e1ef6de"
         },
         {
           "type": "card",
           "title": "判斷依據：泌尿系統",
-          "body": "內皮上的規則孔＝fenestration；足細胞之間不規則的才是 filtration slit。\n\n正確選項：fenestration（有窗孔）。\n",
+          "body": "內皮上的規則孔＝窗孔（fenestration）；足細胞之間不規則的才是 濾過（filtration） 狹縫（slit）。\n\n正確選項：窗孔（有窗孔）。\n",
           "keys": [
-            "內皮上的規則孔＝fenestration；足細胞之間不規則的才是 filtration slit。\n\n正確選項：fenestration（有窗孔）。\n"
+            "內皮上的規則孔＝窗孔（fenestration）；足細胞之間不規則的才是 濾過（filtration） 狹縫（slit）。\n\n正確選項：窗孔（fenestration）（有窗孔）。\n"
           ]
         },
         {
@@ -322,13 +340,14 @@
           "q": "超過濾膜中位於內皮、形狀規則的孔稱為？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "內皮上的規則孔＝fenestration；足細胞之間不規則的才是 filtration slit。\n\n正確選項：fenestration（有窗孔）。\n",
+          "explain": "內皮上的規則孔＝窗孔（fenestration）；足細胞之間不規則的才是 濾過（filtration） 狹縫（slit）。\n\n正確選項：窗孔（fenestration）（有窗孔）。\n",
           "choices": [
-            "fenestration（有窗孔）",
-            "filtration slit",
+            "窗孔（fenestration）（有窗孔）",
+            "濾過（filtration） 狹縫（slit）",
             "basement membrane",
             "mesangium"
-          ]
+          ],
+          "id": "ce916cece"
         },
         {
           "type": "example",
@@ -336,10 +355,10 @@
           "problem": "依演化邏輯，腎絲球最早負責的功能是？",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 filtration。\n",
+            "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 濾過（filtration）。\n",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "過濾 filtration"
+          "answer": "過濾 濾過（filtration）"
         },
         {
           "type": "practice",
@@ -350,67 +369,74 @@
               "q": "依演化邏輯，腎絲球最早負責的功能是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 filtration。\n",
+              "explain": "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 濾過（filtration）。\n",
               "choices": [
-                "過濾 filtration",
-                "重吸收 NaCl",
+                "過濾 濾過（filtration）",
+                "重吸收 氯化鈉（NaCl）",
                 "分泌毒素",
                 "造紅血球"
-              ]
+              ],
+              "id": "c1c14d651"
             },
             {
               "kind": "single",
               "q": "負責尿液濃縮稀釋、長環深入髓質的腎元是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "juxtamedullary 長環深入髓質、配 vasa recta 建立梯度，負責濃縮稀釋。\n\n正確選項：Juxtamedullary nephron。\n",
+              "explain": "近髓質（juxtamedullary） 長環深入髓質、配 直小血管（vasa recta） 建立梯度，負責濃縮稀釋。\n\n正確選項：近髓質腎元（Juxtamedullary nephron）。\n",
               "choices": [
-                "Juxtamedullary nephron",
-                "Cortical nephron",
+                "近髓質腎元（Juxtamedullary nephron）",
+                "皮質腎元（Cortical nephron）",
                 "兩者皆是",
                 "集尿管"
-              ]
+              ],
+              "id": "c2e1ef6de"
             },
             {
               "kind": "single",
               "q": "超過濾膜中位於內皮、形狀規則的孔稱為？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "內皮上的規則孔＝fenestration；足細胞之間不規則的才是 filtration slit。\n\n正確選項：fenestration（有窗孔）。\n",
+              "explain": "內皮上的規則孔＝窗孔（fenestration）；足細胞之間不規則的才是 濾過（filtration） 狹縫（slit）。\n\n正確選項：窗孔（fenestration）（有窗孔）。\n",
               "choices": [
-                "fenestration（有窗孔）",
-                "filtration slit",
+                "窗孔（fenestration）（有窗孔）",
+                "濾過（filtration） 狹縫（slit）",
                 "basement membrane",
                 "mesangium"
-              ]
+              ],
+              "id": "ce916cece"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 filtration。\n",
-            "juxtamedullary 長環深入髓質、配 vasa recta 建立梯度，負責濃縮稀釋。\n\n正確選項：Juxtamedullary nephron。\n",
-            "內皮上的規則孔＝fenestration；足細胞之間不規則的才是 filtration slit。\n\n正確選項：fenestration（有窗孔）。\n",
-            "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 filtration。\n",
-            "juxtamedullary 長環深入髓質、配 vasa recta 建立梯度，負責濃縮稀釋。\n\n正確選項：Juxtamedullary nephron。\n"
+            "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 濾過（filtration）。\n",
+            "近髓質（juxtamedullary） 長環深入髓質、配 直小血管（vasa recta） 建立梯度，負責濃縮稀釋。\n\n正確選項：近髓質腎元（Juxtamedullary nephron）。\n",
+            "內皮上的規則孔＝窗孔（fenestration）；足細胞之間不規則的才是 濾過（filtration） 狹縫（slit）。\n\n正確選項：窗孔（fenestration）（有窗孔）。\n",
+            "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 濾過（filtration）。\n",
+            "近髓質（juxtamedullary） 長環深入髓質、配 直小血管（vasa recta） 建立梯度，負責濃縮稀釋。\n\n正確選項：近髓質腎元（Juxtamedullary nephron）。\n"
           ],
           "flash": [
             {
               "front": "依演化邏輯，腎絲球最早負責的功能是？",
-              "back": "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 filtration。\n"
+              "back": "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 濾過（filtration）。\n",
+              "id": "f1c14d651"
             },
             {
               "front": "負責尿液濃縮稀釋、長環深入髓質的腎元是？",
-              "back": "juxtamedullary 長環深入髓質、配 vasa recta 建立梯度，負責濃縮稀釋。\n\n正確選項：Juxtamedullary nephron。\n"
+              "back": "近髓質（juxtamedullary） 長環深入髓質、配 直小血管（vasa recta） 建立梯度，負責濃縮稀釋。\n\n正確選項：近髓質腎元（Juxtamedullary nephron）。\n",
+              "id": "f2e1ef6de"
             },
             {
               "front": "超過濾膜中位於內皮、形狀規則的孔稱為？",
-              "back": "內皮上的規則孔＝fenestration；足細胞之間不規則的才是 filtration slit。\n\n正確選項：fenestration（有窗孔）。\n"
+              "back": "內皮上的規則孔＝窗孔（fenestration）；足細胞之間不規則的才是 濾過（filtration） 狹縫（slit）。\n\n正確選項：窗孔（fenestration）（有窗孔）。\n",
+              "id": "fe916cece"
             },
             {
               "front": "依演化邏輯，腎絲球最早負責的功能是？",
-              "back": "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 filtration。\n"
+              "back": "最早演化出的腎絲球(濾網)負責過濾；小管系統後來才負責重吸收。\n\n正確選項：過濾 濾過（filtration）。\n",
+              "id": "f1c14d651"
             }
           ]
         }
@@ -431,76 +457,79 @@
         {
           "type": "card",
           "title": "判斷依據：泌尿系統",
-          "body": "交感→JG cell 的 β1 受體→cAMP→renin↑。\n\n正確選項：β1 受體。\n",
+          "body": "交感→腎絲球旁細胞（JG cell） 的 β1 受體→cAMP→腎素（renin）↑。\n\n正確選項：β1 受體。\n",
           "keys": [
-            "交感→JG cell 的 β1 受體→cAMP→renin↑。\n\n正確選項：β1 受體。\n"
+            "交感→腎絲球旁細胞（JG cell） 的 β1 受體→cAMP→腎素（renin）↑。\n\n正確選項：β1 受體。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "交感神經促進 renin 釋放是作用在 JG cell 的哪個受體？",
+          "q": "交感神經促進 腎素（renin） 釋放是作用在 腎絲球旁細胞（JG cell） 的哪個受體？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "交感→JG cell 的 β1 受體→cAMP→renin↑。\n\n正確選項：β1 受體。\n",
+          "explain": "交感→腎絲球旁細胞（JG cell） 的 β1 受體→cAMP→腎素（renin）↑。\n\n正確選項：β1 受體。\n",
           "choices": [
             "β1 受體",
             "α1 受體",
             "M3 受體",
             "AT1 受體"
-          ]
+          ],
+          "id": "c7868b53d"
         },
         {
           "type": "card",
           "title": "判斷依據：泌尿系統",
-          "body": "Ang II 走 AT1 縮血管使 TPR↑，並刺激 aldosterone 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 aldosterone(保鈉保水)。\n",
+          "body": "血管張力素 II（Ang II） 走 AT1 縮血管使 總周邊阻力（TPR）↑，並刺激 醛固酮（aldosterone） 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 醛固酮(保鈉保水)。\n",
           "keys": [
-            "Ang II 走 AT1 縮血管使 TPR↑，並刺激 aldosterone 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 aldosterone(保鈉保水)。\n"
+            "血管張力素 II（Ang II） 走 AT1 縮血管使 總周邊阻力（TPR）↑，並刺激 醛固酮（aldosterone） 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 醛固酮（aldosterone）(保鈉保水)。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Angiotensin II 升血壓的兩條途徑是？",
+          "q": "血管張力素 II（Angiotensin II） 升血壓的兩條途徑是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Ang II 走 AT1 縮血管使 TPR↑，並刺激 aldosterone 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 aldosterone(保鈉保水)。\n",
+          "explain": "血管張力素 II（Ang II） 走 AT1 縮血管使 總周邊阻力（TPR）↑，並刺激 醛固酮（aldosterone） 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 醛固酮（aldosterone）(保鈉保水)。\n",
           "choices": [
-            "AT1 縮小動脈(TPR↑) 與刺激 aldosterone(保鈉保水)",
+            "AT1 縮小動脈(TPR↑) 與刺激 醛固酮（aldosterone）(保鈉保水)",
             "擴張血管與排鈉",
-            "降低 TPR 與排水",
+            "降低 總周邊阻力（TPR） 與排水",
             "抑制交感與利尿"
-          ]
+          ],
+          "id": "cf364677a"
         },
         {
           "type": "card",
           "title": "判斷依據：泌尿系統",
-          "body": "renin：angiotensinogen→Ang I；ACE 才是 Ang I→Ang II。\n\n正確選項：renin。\n",
+          "body": "腎素（renin）：angiotensinogen→血管張力素 I（Ang I）；血管張力素轉換酶（ACE） 才是 血管張力素 I→血管張力素 II（Ang II）。\n\n正確選項：腎素。\n",
           "keys": [
-            "renin：angiotensinogen→Ang I；ACE 才是 Ang I→Ang II。\n\n正確選項：renin。\n"
+            "腎素（renin）：angiotensinogen→血管張力素 I（Ang I）；血管張力素轉換酶（ACE） 才是 血管張力素 I（Ang I）→血管張力素 II（Ang II）。\n\n正確選項：腎素（renin）。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "把 angiotensinogen 轉成 angiotensin I 的是？",
+          "q": "把 angiotensinogen 轉成 血管張力素 I（angiotensin I） 的是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "renin：angiotensinogen→Ang I；ACE 才是 Ang I→Ang II。\n\n正確選項：renin。\n",
+          "explain": "腎素（renin）：angiotensinogen→血管張力素 I（Ang I）；血管張力素轉換酶（ACE） 才是 血管張力素 I（Ang I）→血管張力素 II（Ang II）。\n\n正確選項：腎素（renin）。\n",
           "choices": [
-            "renin",
-            "ACE",
-            "aldosterone",
-            "ADH"
-          ]
+            "腎素（renin）",
+            "血管張力素轉換酶（ACE）",
+            "醛固酮（aldosterone）",
+            "抗利尿激素（ADH）"
+          ],
+          "id": "cf922ed71"
         },
         {
           "type": "example",
           "title": "回看第一題的判斷",
-          "problem": "交感神經促進 renin 釋放是作用在 JG cell 的哪個受體？",
+          "problem": "交感神經促進 腎素（renin） 釋放是作用在 腎絲球旁細胞（JG cell） 的哪個受體？",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "交感→JG cell 的 β1 受體→cAMP→renin↑。\n\n正確選項：β1 受體。\n",
+            "交感→腎絲球旁細胞（JG cell） 的 β1 受體→cAMP→腎素（renin）↑。\n\n正確選項：β1 受體。\n",
             "將判斷依據連到正確選項。"
           ],
           "answer": "β1 受體"
@@ -511,70 +540,77 @@
           "checks": [
             {
               "kind": "single",
-              "q": "交感神經促進 renin 釋放是作用在 JG cell 的哪個受體？",
+              "q": "交感神經促進 腎素（renin） 釋放是作用在 腎絲球旁細胞（JG cell） 的哪個受體？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "交感→JG cell 的 β1 受體→cAMP→renin↑。\n\n正確選項：β1 受體。\n",
+              "explain": "交感→腎絲球旁細胞（JG cell） 的 β1 受體→cAMP→腎素（renin）↑。\n\n正確選項：β1 受體。\n",
               "choices": [
                 "β1 受體",
                 "α1 受體",
                 "M3 受體",
                 "AT1 受體"
-              ]
+              ],
+              "id": "c7868b53d"
             },
             {
               "kind": "single",
-              "q": "Angiotensin II 升血壓的兩條途徑是？",
+              "q": "血管張力素 II（Angiotensin II） 升血壓的兩條途徑是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "Ang II 走 AT1 縮血管使 TPR↑，並刺激 aldosterone 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 aldosterone(保鈉保水)。\n",
+              "explain": "血管張力素 II（Ang II） 走 AT1 縮血管使 總周邊阻力（TPR）↑，並刺激 醛固酮（aldosterone） 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 醛固酮（aldosterone）(保鈉保水)。\n",
               "choices": [
-                "AT1 縮小動脈(TPR↑) 與刺激 aldosterone(保鈉保水)",
+                "AT1 縮小動脈(TPR↑) 與刺激 醛固酮（aldosterone）(保鈉保水)",
                 "擴張血管與排鈉",
-                "降低 TPR 與排水",
+                "降低 總周邊阻力（TPR） 與排水",
                 "抑制交感與利尿"
-              ]
+              ],
+              "id": "cf364677a"
             },
             {
               "kind": "single",
-              "q": "把 angiotensinogen 轉成 angiotensin I 的是？",
+              "q": "把 angiotensinogen 轉成 血管張力素 I（angiotensin I） 的是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "renin：angiotensinogen→Ang I；ACE 才是 Ang I→Ang II。\n\n正確選項：renin。\n",
+              "explain": "腎素（renin）：angiotensinogen→血管張力素 I（Ang I）；血管張力素轉換酶（ACE） 才是 血管張力素 I（Ang I）→血管張力素 II（Ang II）。\n\n正確選項：腎素（renin）。\n",
               "choices": [
-                "renin",
-                "ACE",
-                "aldosterone",
-                "ADH"
-              ]
+                "腎素（renin）",
+                "血管張力素轉換酶（ACE）",
+                "醛固酮（aldosterone）",
+                "抗利尿激素（ADH）"
+              ],
+              "id": "cf922ed71"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "交感→JG cell 的 β1 受體→cAMP→renin↑。\n\n正確選項：β1 受體。\n",
-            "Ang II 走 AT1 縮血管使 TPR↑，並刺激 aldosterone 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 aldosterone(保鈉保水)。\n",
-            "renin：angiotensinogen→Ang I；ACE 才是 Ang I→Ang II。\n\n正確選項：renin。\n",
-            "交感→JG cell 的 β1 受體→cAMP→renin↑。\n\n正確選項：β1 受體。\n",
-            "Ang II 走 AT1 縮血管使 TPR↑，並刺激 aldosterone 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 aldosterone(保鈉保水)。\n"
+            "交感→腎絲球旁細胞（JG cell） 的 β1 受體→cAMP→腎素（renin）↑。\n\n正確選項：β1 受體。\n",
+            "血管張力素 II（Ang II） 走 AT1 縮血管使 總周邊阻力（TPR）↑，並刺激 醛固酮（aldosterone） 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 醛固酮（aldosterone）(保鈉保水)。\n",
+            "腎素（renin）：angiotensinogen→血管張力素 I（Ang I）；血管張力素轉換酶（ACE） 才是 血管張力素 I（Ang I）→血管張力素 II（Ang II）。\n\n正確選項：腎素（renin）。\n",
+            "交感→腎絲球旁細胞（JG cell） 的 β1 受體→cAMP→腎素（renin）↑。\n\n正確選項：β1 受體。\n",
+            "血管張力素 II（Ang II） 走 AT1 縮血管使 總周邊阻力（TPR）↑，並刺激 醛固酮（aldosterone） 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 醛固酮（aldosterone）(保鈉保水)。\n"
           ],
           "flash": [
             {
-              "front": "交感神經促進 renin 釋放是作用在 JG cell 的哪個受體？",
-              "back": "交感→JG cell 的 β1 受體→cAMP→renin↑。\n\n正確選項：β1 受體。\n"
+              "front": "交感神經促進 腎素（renin） 釋放是作用在 腎絲球旁細胞（JG cell） 的哪個受體？",
+              "back": "交感→腎絲球旁細胞（JG cell） 的 β1 受體→cAMP→腎素（renin）↑。\n\n正確選項：β1 受體。\n",
+              "id": "f7868b53d"
             },
             {
-              "front": "Angiotensin II 升血壓的兩條途徑是？",
-              "back": "Ang II 走 AT1 縮血管使 TPR↑，並刺激 aldosterone 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 aldosterone(保鈉保水)。\n"
+              "front": "血管張力素 II（Angiotensin II） 升血壓的兩條途徑是？",
+              "back": "血管張力素 II（Ang II） 走 AT1 縮血管使 總周邊阻力（TPR）↑，並刺激 醛固酮（aldosterone） 留鈉排鉀、水跟著 → 血量↑。\n\n正確選項：AT1 縮小動脈(TPR↑) 與刺激 醛固酮（aldosterone）(保鈉保水)。\n",
+              "id": "ff364677a"
             },
             {
-              "front": "把 angiotensinogen 轉成 angiotensin I 的是？",
-              "back": "renin：angiotensinogen→Ang I；ACE 才是 Ang I→Ang II。\n\n正確選項：renin。\n"
+              "front": "把 angiotensinogen 轉成 血管張力素 I（angiotensin I） 的是？",
+              "back": "腎素（renin）：angiotensinogen→血管張力素 I（Ang I）；血管張力素轉換酶（ACE） 才是 血管張力素 I（Ang I）→血管張力素 II（Ang II）。\n\n正確選項：腎素（renin）。\n",
+              "id": "ff922ed71"
             },
             {
-              "front": "交感神經促進 renin 釋放是作用在 JG cell 的哪個受體？",
-              "back": "交感→JG cell 的 β1 受體→cAMP→renin↑。\n\n正確選項：β1 受體。\n"
+              "front": "交感神經促進 腎素（renin） 釋放是作用在 腎絲球旁細胞（JG cell） 的哪個受體？",
+              "back": "交感→腎絲球旁細胞（JG cell） 的 β1 受體→cAMP→腎素（renin）↑。\n\n正確選項：β1 受體。\n",
+              "id": "f7868b53d"
             }
           ]
         }
@@ -612,29 +648,31 @@
             "肝臟",
             "皮膚",
             "腸道"
-          ]
+          ],
+          "id": "c4dca16f4"
         },
         {
           "type": "card",
           "title": "判斷依據：泌尿系統",
-          "body": "inulin tubular treatment=0，濾過量＝排出量，清除率＝GFR。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
+          "body": "菊糖（inulin） tubular treatment=0，濾過量＝排出量，清除率＝腎絲球過濾率（GFR）。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
           "keys": [
-            "inulin tubular treatment=0，濾過量＝排出量，清除率＝GFR。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n"
+            "菊糖（inulin） tubular treatment=0，濾過量＝排出量，清除率＝腎絲球過濾率（GFR）。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "inulin 的清除率可代表 GFR，因為它？",
+          "q": "菊糖（inulin） 的清除率可代表 腎絲球過濾率（GFR），因為它？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "inulin tubular treatment=0，濾過量＝排出量，清除率＝GFR。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
+          "explain": "菊糖（inulin） tubular treatment=0，濾過量＝排出量，清除率＝腎絲球過濾率（GFR）。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
           "choices": [
             "自由過濾、不被重吸收也不被分泌",
             "被大量分泌",
             "由腎合成",
             "只在髓質作用"
-          ]
+          ],
+          "id": "cdecacbc4"
         },
         {
           "type": "example",
@@ -662,20 +700,22 @@
                 "肝臟",
                 "皮膚",
                 "腸道"
-              ]
+              ],
+              "id": "c4dca16f4"
             },
             {
               "kind": "single",
-              "q": "inulin 的清除率可代表 GFR，因為它？",
+              "q": "菊糖（inulin） 的清除率可代表 腎絲球過濾率（GFR），因為它？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "inulin tubular treatment=0，濾過量＝排出量，清除率＝GFR。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
+              "explain": "菊糖（inulin） tubular treatment=0，濾過量＝排出量，清除率＝腎絲球過濾率（GFR）。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
               "choices": [
                 "自由過濾、不被重吸收也不被分泌",
                 "被大量分泌",
                 "由腎合成",
                 "只在髓質作用"
-              ]
+              ],
+              "id": "cdecacbc4"
             }
           ]
         },
@@ -683,27 +723,31 @@
           "type": "recap",
           "points": [
             "肝做 25-OH、腎做 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n",
-            "inulin tubular treatment=0，濾過量＝排出量，清除率＝GFR。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
+            "菊糖（inulin） tubular treatment=0，濾過量＝排出量，清除率＝腎絲球過濾率（GFR）。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
             "肝做 25-OH、腎做 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n",
-            "inulin tubular treatment=0，濾過量＝排出量，清除率＝GFR。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
+            "菊糖（inulin） tubular treatment=0，濾過量＝排出量，清除率＝腎絲球過濾率（GFR）。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
             "肝做 25-OH、腎做 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n"
           ],
           "flash": [
             {
               "front": "維他命 D 的最後活化(1,25-(OH)₂)在哪個器官？",
-              "back": "肝做 25-OH、腎做 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n"
+              "back": "肝做 25-OH、腎做 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n",
+              "id": "f4dca16f4"
             },
             {
-              "front": "inulin 的清除率可代表 GFR，因為它？",
-              "back": "inulin tubular treatment=0，濾過量＝排出量，清除率＝GFR。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n"
+              "front": "菊糖（inulin） 的清除率可代表 腎絲球過濾率（GFR），因為它？",
+              "back": "菊糖（inulin） tubular treatment=0，濾過量＝排出量，清除率＝腎絲球過濾率（GFR）。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
+              "id": "fdecacbc4"
             },
             {
               "front": "維他命 D 的最後活化(1,25-(OH)₂)在哪個器官？",
-              "back": "肝做 25-OH、腎做 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n"
+              "back": "肝做 25-OH、腎做 1,25-(OH)₂（活性型）。\n\n正確選項：腎臟。\n",
+              "id": "f4dca16f4"
             },
             {
-              "front": "inulin 的清除率可代表 GFR，因為它？",
-              "back": "inulin tubular treatment=0，濾過量＝排出量，清除率＝GFR。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n"
+              "front": "菊糖（inulin） 的清除率可代表 腎絲球過濾率（GFR），因為它？",
+              "back": "菊糖（inulin） tubular treatment=0，濾過量＝排出量，清除率＝腎絲球過濾率（GFR）。\n\n正確選項：自由過濾、不被重吸收也不被分泌。\n",
+              "id": "fdecacbc4"
             }
           ]
         }

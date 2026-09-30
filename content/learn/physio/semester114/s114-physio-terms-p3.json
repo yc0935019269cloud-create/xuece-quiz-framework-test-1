@@ -23,9 +23,9 @@
       "id": "terms-13-1",
       "title": "中英文核心名詞 13",
       "goals": [
-        "解釋MIT／DIT",
-        "解釋calcitonin／osteoblast",
-        "解釋osteoclast／RANKL"
+        "解釋單碘酪胺酸（MIT）／雙碘酪胺酸（DIT）",
+        "解釋降鈣素（calcitonin）／造骨細胞（osteoblast）",
+        "解釋蝕骨細胞（osteoclast）／核因子 κB 受體活化因子配體（RANKL）"
       ],
       "steps": [
         {
@@ -35,8 +35,8 @@
         },
         {
           "type": "card",
-          "title": "MIT／DIT",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**MIT｜MIT**\nMonoiodotyrosine；一個碘的 tyrosine，MIT + DIT 可形成 T3。\n\n**DIT｜DIT**\nDiiodotyrosine；兩個碘的 tyrosine，DIT + DIT 可形成 T4。",
+          "title": "單碘酪胺酸（MIT）／雙碘酪胺酸（DIT）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**單碘酪胺酸（MIT）｜單碘酪胺酸**\nMonoiodotyrosine；一個碘的 酪胺酸（tyrosine），單碘酪胺酸 + 雙碘酪胺酸（DIT） 可形成 三碘甲狀腺素（T3）。\n\n**雙碘酪胺酸｜雙碘酪胺酸**\nDiiodotyrosine；兩個碘的 酪胺酸，雙碘酪胺酸 + 雙碘酪胺酸 可形成 四碘甲狀腺素（T4）。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -45,15 +45,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「MIT／DIT」，並說出一個判斷依據。",
-          "answer": "**MIT｜MIT**\nMonoiodotyrosine；一個碘的 tyrosine，MIT + DIT 可形成 T3。\n\n**DIT｜DIT**\nDiiodotyrosine；兩個碘的 tyrosine，DIT + DIT 可形成 T4。",
+          "q": "用自己的話說明「單碘酪胺酸（MIT）／雙碘酪胺酸（DIT）」，並說出一個判斷依據。",
+          "answer": "**單碘酪胺酸（MIT）｜單碘酪胺酸（MIT）**\nMonoiodotyrosine；一個碘的 酪胺酸（tyrosine），單碘酪胺酸（MIT） + 雙碘酪胺酸（DIT） 可形成 三碘甲狀腺素（T3）。\n\n**雙碘酪胺酸（DIT）｜雙碘酪胺酸（DIT）**\nDiiodotyrosine；兩個碘的 酪胺酸（tyrosine），雙碘酪胺酸（DIT） + 雙碘酪胺酸（DIT） 可形成 四碘甲狀腺素（T4）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**MIT｜MIT**\nMonoiodotyrosine；一個碘的 tyrosine，MIT + DIT 可形成 T3。\n\n**DIT｜DIT**\nDiiodotyrosine；兩個碘的 tyrosine，DIT + DIT 可形成 T4。"
+          "explain": "**單碘酪胺酸（MIT）｜單碘酪胺酸（MIT）**\nMonoiodotyrosine；一個碘的 酪胺酸（tyrosine），單碘酪胺酸（MIT） + 雙碘酪胺酸（DIT） 可形成 三碘甲狀腺素（T3）。\n\n**雙碘酪胺酸（DIT）｜雙碘酪胺酸（DIT）**\nDiiodotyrosine；兩個碘的 酪胺酸（tyrosine），雙碘酪胺酸（DIT） + 雙碘酪胺酸（DIT） 可形成 四碘甲狀腺素（T4）。",
+          "id": "cc94d5ea1"
         },
         {
           "type": "card",
-          "title": "calcitonin／osteoblast",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**calcitonin｜calcitonin**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**osteoblast｜osteoblast**\n造骨細胞；負責形成骨，也用 RANKL 間接叫 osteoclast 工作。",
+          "title": "降鈣素（calcitonin）／造骨細胞（osteoblast）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**降鈣素（calcitonin）｜降鈣素**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**造骨細胞（osteoblast）｜造骨細胞**\n造骨細胞；負責形成骨，也用 核因子 κB 受體活化因子配體（RANKL） 間接叫 蝕骨細胞（osteoclast） 工作。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -62,15 +63,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「calcitonin／osteoblast」，並說出一個判斷依據。",
-          "answer": "**calcitonin｜calcitonin**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**osteoblast｜osteoblast**\n造骨細胞；負責形成骨，也用 RANKL 間接叫 osteoclast 工作。",
+          "q": "用自己的話說明「降鈣素（calcitonin）／造骨細胞（osteoblast）」，並說出一個判斷依據。",
+          "answer": "**降鈣素（calcitonin）｜降鈣素（calcitonin）**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**造骨細胞（osteoblast）｜造骨細胞（osteoblast）**\n造骨細胞；負責形成骨，也用 核因子 κB 受體活化因子配體（RANKL） 間接叫 蝕骨細胞（osteoclast） 工作。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**calcitonin｜calcitonin**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**osteoblast｜osteoblast**\n造骨細胞；負責形成骨，也用 RANKL 間接叫 osteoclast 工作。"
+          "explain": "**降鈣素（calcitonin）｜降鈣素（calcitonin）**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**造骨細胞（osteoblast）｜造骨細胞（osteoblast）**\n造骨細胞；負責形成骨，也用 核因子 κB 受體活化因子配體（RANKL） 間接叫 蝕骨細胞（osteoclast） 工作。",
+          "id": "c7315fe8c"
         },
         {
           "type": "card",
-          "title": "osteoclast／RANKL",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**osteoclast｜osteoclast**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**RANKL｜RANKL**\nosteoblast 表面的訊號；促進 osteoclast precursor 成熟並增加骨吸收。",
+          "title": "蝕骨細胞（osteoclast）／核因子 κB 受體活化因子配體（RANKL）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**蝕骨細胞（osteoclast）｜蝕骨細胞**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**核因子 κB 受體活化因子配體（RANKL）｜核因子 κB 受體活化因子配體**\n造骨細胞（osteoblast） 表面的訊號；促進 蝕骨細胞 precursor 成熟並增加骨吸收。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -79,21 +81,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「osteoclast／RANKL」，並說出一個判斷依據。",
-          "answer": "**osteoclast｜osteoclast**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**RANKL｜RANKL**\nosteoblast 表面的訊號；促進 osteoclast precursor 成熟並增加骨吸收。",
+          "q": "用自己的話說明「蝕骨細胞（osteoclast）／核因子 κB 受體活化因子配體（RANKL）」，並說出一個判斷依據。",
+          "answer": "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**核因子 κB 受體活化因子配體（RANKL）｜核因子 κB 受體活化因子配體（RANKL）**\n造骨細胞（osteoblast） 表面的訊號；促進 蝕骨細胞（osteoclast） precursor 成熟並增加骨吸收。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**osteoclast｜osteoclast**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**RANKL｜RANKL**\nosteoblast 表面的訊號；促進 osteoclast precursor 成熟並增加骨吸收。"
+          "explain": "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**核因子 κB 受體活化因子配體（RANKL）｜核因子 κB 受體活化因子配體（RANKL）**\n造骨細胞（osteoblast） 表面的訊號；促進 蝕骨細胞（osteoclast） precursor 成熟並增加骨吸收。",
+          "id": "cf95e1356"
         },
         {
           "type": "example",
-          "title": "範例拆解：osteoclast／RANKL",
-          "problem": "用自己的話說明「osteoclast／RANKL」，並說出一個判斷依據。",
+          "title": "範例拆解：蝕骨細胞（osteoclast）／核因子 κB 受體活化因子配體（RANKL）",
+          "problem": "用自己的話說明「蝕骨細胞（osteoclast）／核因子 κB 受體活化因子配體（RANKL）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：osteoclast／RANKL",
-            "**osteoclast｜osteoclast**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**RANKL｜RANKL**\nosteoblast 表面的訊號；促進 osteoclast precursor 成熟並增加骨吸收。",
-            "把判斷依據連回題目：**osteoclast｜osteoclast**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**RANKL｜RANKL**\nosteoblast 表面的訊號；促進 osteoclast precursor 成熟並增加骨吸收。"
+            "先確認題目問的主題：蝕骨細胞（osteoclast）／核因子 κB 受體活化因子配體（RANKL）",
+            "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**核因子 κB 受體活化因子配體（RANKL）｜核因子 κB 受體活化因子配體（RANKL）**\n造骨細胞（osteoblast） 表面的訊號；促進 蝕骨細胞（osteoclast） precursor 成熟並增加骨吸收。",
+            "把判斷依據連回題目：**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**核因子 κB 受體活化因子配體（RANKL）｜核因子 κB 受體活化因子配體（RANKL）**\n造骨細胞（osteoblast） 表面的訊號；促進 蝕骨細胞（osteoclast） precursor 成熟並增加骨吸收。"
           ],
-          "answer": "**osteoclast｜osteoclast**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**RANKL｜RANKL**\nosteoblast 表面的訊號；促進 osteoclast precursor 成熟並增加骨吸收。"
+          "answer": "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**核因子 κB 受體活化因子配體（RANKL）｜核因子 κB 受體活化因子配體（RANKL）**\n造骨細胞（osteoblast） 表面的訊號；促進 蝕骨細胞（osteoclast） precursor 成熟並增加骨吸收。"
         },
         {
           "type": "practice",
@@ -102,17 +105,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「calcitonin／osteoblast」，並說出一個判斷依據。",
-              "answer": "**calcitonin｜calcitonin**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**osteoblast｜osteoblast**\n造骨細胞；負責形成骨，也用 RANKL 間接叫 osteoclast 工作。",
+              "q": "用自己的話說明「降鈣素（calcitonin）／造骨細胞（osteoblast）」，並說出一個判斷依據。",
+              "answer": "**降鈣素（calcitonin）｜降鈣素（calcitonin）**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**造骨細胞（osteoblast）｜造骨細胞（osteoblast）**\n造骨細胞；負責形成骨，也用 核因子 κB 受體活化因子配體（RANKL） 間接叫 蝕骨細胞（osteoclast） 工作。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**calcitonin｜calcitonin**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**osteoblast｜osteoblast**\n造骨細胞；負責形成骨，也用 RANKL 間接叫 osteoclast 工作。"
+              "explain": "**降鈣素（calcitonin）｜降鈣素（calcitonin）**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**造骨細胞（osteoblast）｜造骨細胞（osteoblast）**\n造骨細胞；負責形成骨，也用 核因子 κB 受體活化因子配體（RANKL） 間接叫 蝕骨細胞（osteoclast） 工作。",
+              "id": "c7315fe8c"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「osteoclast／RANKL」，並說出一個判斷依據。",
-              "answer": "**osteoclast｜osteoclast**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**RANKL｜RANKL**\nosteoblast 表面的訊號；促進 osteoclast precursor 成熟並增加骨吸收。",
+              "q": "用自己的話說明「蝕骨細胞（osteoclast）／核因子 κB 受體活化因子配體（RANKL）」，並說出一個判斷依據。",
+              "answer": "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**核因子 κB 受體活化因子配體（RANKL）｜核因子 κB 受體活化因子配體（RANKL）**\n造骨細胞（osteoblast） 表面的訊號；促進 蝕骨細胞（osteoclast） precursor 成熟並增加骨吸收。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**osteoclast｜osteoclast**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**RANKL｜RANKL**\nosteoblast 表面的訊號；促進 osteoclast precursor 成熟並增加骨吸收。"
+              "explain": "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n蝕骨細胞；負責分解骨、把 Ca²⁺ 釋放到血液。\n\n**核因子 κB 受體活化因子配體（RANKL）｜核因子 κB 受體活化因子配體（RANKL）**\n造骨細胞（osteoblast） 表面的訊號；促進 蝕骨細胞（osteoclast） precursor 成熟並增加骨吸收。",
+              "id": "cf95e1356"
             }
           ]
         },
@@ -120,27 +125,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "MIT／DIT：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "calcitonin／osteoblast：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**MIT｜MIT**\nMonoiodotyrosine；一個碘的 tyrosine，MIT + DIT 可形成 T3。\n\n**DIT｜DIT**\nDiiodotyrosine；兩個碘的 tyrosine，DIT + DIT 可形成 T4。",
-            "**calcitonin｜calcitonin**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**osteoblast｜osteoblast**\n造骨細胞；負責形成骨，也用 RANKL 間接叫 osteoclast 工作。"
+            "單碘酪胺酸（MIT）／雙碘酪胺酸（DIT）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "降鈣素（calcitonin）／造骨細胞（osteoblast）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**單碘酪胺酸（MIT）｜單碘酪胺酸（MIT）**\nMonoiodotyrosine；一個碘的 酪胺酸（tyrosine），單碘酪胺酸（MIT） + 雙碘酪胺酸（DIT） 可形成 三碘甲狀腺素（T3）。\n\n**雙碘酪胺酸（DIT）｜雙碘酪胺酸（DIT）**\nDiiodotyrosine；兩個碘的 酪胺酸（tyrosine），雙碘酪胺酸（DIT） + 雙碘酪胺酸（DIT） 可形成 四碘甲狀腺素（T4）。",
+            "**降鈣素（calcitonin）｜降鈣素（calcitonin）**\n降鈣素；由 thyroid C cells 分泌，方向上幫助降低血鈣。\n\n**造骨細胞（osteoblast）｜造骨細胞（osteoblast）**\n造骨細胞；負責形成骨，也用 核因子 κB 受體活化因子配體（RANKL） 間接叫 蝕骨細胞（osteoclast） 工作。"
           ],
           "flash": [
             {
-              "front": "MIT／DIT",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "單碘酪胺酸（MIT）／雙碘酪胺酸（DIT）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "ffeeaae7f"
             },
             {
-              "front": "calcitonin／osteoblast",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "降鈣素（calcitonin）／造骨細胞（osteoblast）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f8e63196e"
             },
             {
-              "front": "osteoclast／RANKL",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "蝕骨細胞（osteoclast）／核因子 κB 受體活化因子配體（RANKL）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fd7d70a0b"
             },
             {
-              "front": "用自己的話說明「MIT／DIT」，並說出一個判斷依據。",
-              "back": "**MIT｜MIT**\nMonoiodotyrosine；一個碘的 tyrosine，MIT + DIT 可形成 T3。\n\n**DIT｜DIT**\nDiiodotyrosine；兩個碘的 tyrosine，DIT + DIT 可形成 T4。"
+              "front": "用自己的話說明「單碘酪胺酸（MIT）／雙碘酪胺酸（DIT）」，並說出一個判斷依據。",
+              "back": "**單碘酪胺酸（MIT）｜單碘酪胺酸（MIT）**\nMonoiodotyrosine；一個碘的 酪胺酸（tyrosine），單碘酪胺酸（MIT） + 雙碘酪胺酸（DIT） 可形成 三碘甲狀腺素（T3）。\n\n**雙碘酪胺酸（DIT）｜雙碘酪胺酸（DIT）**\nDiiodotyrosine；兩個碘的 酪胺酸（tyrosine），雙碘酪胺酸（DIT） + 雙碘酪胺酸（DIT） 可形成 四碘甲狀腺素（T4）。",
+              "id": "fc94d5ea1"
             }
           ]
         }
@@ -150,9 +159,9 @@
       "id": "terms-14-1",
       "title": "中英文核心名詞 14",
       "goals": [
-        "解釋C-peptide／insulin resistance",
-        "解釋PTH／T3",
-        "解釋T4／insulin"
+        "解釋C 肽（C-peptide）／胰島素阻抗（insulin resistance）",
+        "解釋副甲狀腺素（PTH）／三碘甲狀腺素（T3）",
+        "解釋四碘甲狀腺素（T4）／胰島素（insulin）"
       ],
       "steps": [
         {
@@ -162,8 +171,8 @@
         },
         {
           "type": "card",
-          "title": "C-peptide／insulin resistance",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**C-peptide｜C-peptide**\nproinsulin 被切割時和 insulin 一起產生；可用來判斷內源性 insulin 分泌。\n\n**insulin resistance｜insulin resistance**\n胰島素阻抗；細胞對 insulin 反應變差，早期 β cell 會代償分泌更多。",
+          "title": "C 肽（C-peptide）／胰島素阻抗（insulin resistance）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**C 肽（C-peptide）｜C 肽**\n前胰島素（proinsulin） 被切割時和 胰島素（insulin） 一起產生；可用來判斷內源性 胰島素 分泌。\n\n**胰島素阻抗（insulin resistance）｜胰島素阻抗**\n胰島素阻抗；細胞對 胰島素 反應變差，早期 β cell 會代償分泌更多。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -172,15 +181,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「C-peptide／insulin resistance」，並說出一個判斷依據。",
-          "answer": "**C-peptide｜C-peptide**\nproinsulin 被切割時和 insulin 一起產生；可用來判斷內源性 insulin 分泌。\n\n**insulin resistance｜insulin resistance**\n胰島素阻抗；細胞對 insulin 反應變差，早期 β cell 會代償分泌更多。",
+          "q": "用自己的話說明「C 肽（C-peptide）／胰島素阻抗（insulin resistance）」，並說出一個判斷依據。",
+          "answer": "**C 肽（C-peptide）｜C 肽（C-peptide）**\n前胰島素（proinsulin） 被切割時和 胰島素（insulin） 一起產生；可用來判斷內源性 胰島素（insulin） 分泌。\n\n**胰島素阻抗（insulin resistance）｜胰島素阻抗（insulin resistance）**\n胰島素阻抗；細胞對 胰島素（insulin） 反應變差，早期 β cell 會代償分泌更多。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**C-peptide｜C-peptide**\nproinsulin 被切割時和 insulin 一起產生；可用來判斷內源性 insulin 分泌。\n\n**insulin resistance｜insulin resistance**\n胰島素阻抗；細胞對 insulin 反應變差，早期 β cell 會代償分泌更多。"
+          "explain": "**C 肽（C-peptide）｜C 肽（C-peptide）**\n前胰島素（proinsulin） 被切割時和 胰島素（insulin） 一起產生；可用來判斷內源性 胰島素（insulin） 分泌。\n\n**胰島素阻抗（insulin resistance）｜胰島素阻抗（insulin resistance）**\n胰島素阻抗；細胞對 胰島素（insulin） 反應變差，早期 β cell 會代償分泌更多。",
+          "id": "c40610ed8"
         },
         {
           "type": "card",
-          "title": "PTH／T3",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**PTH｜PTH**\nParathyroid hormone，副甲狀腺素；低血鈣時升高血鈣。\n\n**T3｜T3**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid hormone。",
+          "title": "副甲狀腺素（PTH）／三碘甲狀腺素（T3）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**副甲狀腺素（PTH）｜副甲狀腺素**\nParathyroid 荷爾蒙（hormone），副甲狀腺素；低血鈣時升高血鈣。\n\n**三碘甲狀腺素（T3）｜三碘甲狀腺素**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid 荷爾蒙。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -189,15 +199,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「PTH／T3」，並說出一個判斷依據。",
-          "answer": "**PTH｜PTH**\nParathyroid hormone，副甲狀腺素；低血鈣時升高血鈣。\n\n**T3｜T3**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid hormone。",
+          "q": "用自己的話說明「副甲狀腺素（PTH）／三碘甲狀腺素（T3）」，並說出一個判斷依據。",
+          "answer": "**副甲狀腺素（PTH）｜副甲狀腺素（PTH）**\nParathyroid 荷爾蒙（hormone），副甲狀腺素；低血鈣時升高血鈣。\n\n**三碘甲狀腺素（T3）｜三碘甲狀腺素（T3）**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid 荷爾蒙（hormone）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**PTH｜PTH**\nParathyroid hormone，副甲狀腺素；低血鈣時升高血鈣。\n\n**T3｜T3**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid hormone。"
+          "explain": "**副甲狀腺素（PTH）｜副甲狀腺素（PTH）**\nParathyroid 荷爾蒙（hormone），副甲狀腺素；低血鈣時升高血鈣。\n\n**三碘甲狀腺素（T3）｜三碘甲狀腺素（T3）**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid 荷爾蒙（hormone）。",
+          "id": "cbb0bf30a"
         },
         {
           "type": "card",
-          "title": "T4／insulin",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**T4｜T4**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 T3。\n\n**insulin｜insulin**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。",
+          "title": "四碘甲狀腺素（T4）／胰島素（insulin）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**四碘甲狀腺素（T4）｜四碘甲狀腺素**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 三碘甲狀腺素（T3）。\n\n**胰島素（insulin）｜胰島素**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -206,21 +217,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「T4／insulin」，並說出一個判斷依據。",
-          "answer": "**T4｜T4**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 T3。\n\n**insulin｜insulin**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。",
+          "q": "用自己的話說明「四碘甲狀腺素（T4）／胰島素（insulin）」，並說出一個判斷依據。",
+          "answer": "**四碘甲狀腺素（T4）｜四碘甲狀腺素（T4）**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 三碘甲狀腺素（T3）。\n\n**胰島素（insulin）｜胰島素（insulin）**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**T4｜T4**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 T3。\n\n**insulin｜insulin**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。"
+          "explain": "**四碘甲狀腺素（T4）｜四碘甲狀腺素（T4）**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 三碘甲狀腺素（T3）。\n\n**胰島素（insulin）｜胰島素（insulin）**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。",
+          "id": "c5e3db07d"
         },
         {
           "type": "example",
-          "title": "範例拆解：T4／insulin",
-          "problem": "用自己的話說明「T4／insulin」，並說出一個判斷依據。",
+          "title": "範例拆解：四碘甲狀腺素（T4）／胰島素（insulin）",
+          "problem": "用自己的話說明「四碘甲狀腺素（T4）／胰島素（insulin）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：T4／insulin",
-            "**T4｜T4**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 T3。\n\n**insulin｜insulin**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。",
-            "把判斷依據連回題目：**T4｜T4**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 T3。\n\n**insulin｜insulin**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。"
+            "先確認題目問的主題：四碘甲狀腺素（T4）／胰島素（insulin）",
+            "**四碘甲狀腺素（T4）｜四碘甲狀腺素（T4）**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 三碘甲狀腺素（T3）。\n\n**胰島素（insulin）｜胰島素（insulin）**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。",
+            "把判斷依據連回題目：**四碘甲狀腺素（T4）｜四碘甲狀腺素（T4）**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 三碘甲狀腺素（T3）。\n\n**胰島素（insulin）｜胰島素（insulin）**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。"
           ],
-          "answer": "**T4｜T4**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 T3。\n\n**insulin｜insulin**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。"
+          "answer": "**四碘甲狀腺素（T4）｜四碘甲狀腺素（T4）**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 三碘甲狀腺素（T3）。\n\n**胰島素（insulin）｜胰島素（insulin）**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。"
         },
         {
           "type": "practice",
@@ -229,17 +241,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「PTH／T3」，並說出一個判斷依據。",
-              "answer": "**PTH｜PTH**\nParathyroid hormone，副甲狀腺素；低血鈣時升高血鈣。\n\n**T3｜T3**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid hormone。",
+              "q": "用自己的話說明「副甲狀腺素（PTH）／三碘甲狀腺素（T3）」，並說出一個判斷依據。",
+              "answer": "**副甲狀腺素（PTH）｜副甲狀腺素（PTH）**\nParathyroid 荷爾蒙（hormone），副甲狀腺素；低血鈣時升高血鈣。\n\n**三碘甲狀腺素（T3）｜三碘甲狀腺素（T3）**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid 荷爾蒙（hormone）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**PTH｜PTH**\nParathyroid hormone，副甲狀腺素；低血鈣時升高血鈣。\n\n**T3｜T3**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid hormone。"
+              "explain": "**副甲狀腺素（PTH）｜副甲狀腺素（PTH）**\nParathyroid 荷爾蒙（hormone），副甲狀腺素；低血鈣時升高血鈣。\n\n**三碘甲狀腺素（T3）｜三碘甲狀腺素（T3）**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid 荷爾蒙（hormone）。",
+              "id": "cbb0bf30a"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「T4／insulin」，並說出一個判斷依據。",
-              "answer": "**T4｜T4**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 T3。\n\n**insulin｜insulin**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。",
+              "q": "用自己的話說明「四碘甲狀腺素（T4）／胰島素（insulin）」，並說出一個判斷依據。",
+              "answer": "**四碘甲狀腺素（T4）｜四碘甲狀腺素（T4）**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 三碘甲狀腺素（T3）。\n\n**胰島素（insulin）｜胰島素（insulin）**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**T4｜T4**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 T3。\n\n**insulin｜insulin**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。"
+              "explain": "**四碘甲狀腺素（T4）｜四碘甲狀腺素（T4）**\nThyroxine，四碘甲狀腺素；甲狀腺主要分泌形式，可在周邊轉成 三碘甲狀腺素（T3）。\n\n**胰島素（insulin）｜胰島素（insulin）**\n胰島素；由 pancreatic β cells 分泌，幫助降低血糖與儲存能量。",
+              "id": "c5e3db07d"
             }
           ]
         },
@@ -247,27 +261,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "C-peptide／insulin resistance：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "PTH／T3：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**C-peptide｜C-peptide**\nproinsulin 被切割時和 insulin 一起產生；可用來判斷內源性 insulin 分泌。\n\n**insulin resistance｜insulin resistance**\n胰島素阻抗；細胞對 insulin 反應變差，早期 β cell 會代償分泌更多。",
-            "**PTH｜PTH**\nParathyroid hormone，副甲狀腺素；低血鈣時升高血鈣。\n\n**T3｜T3**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid hormone。"
+            "C 肽（C-peptide）／胰島素阻抗（insulin resistance）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "副甲狀腺素（PTH）／三碘甲狀腺素（T3）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**C 肽（C-peptide）｜C 肽（C-peptide）**\n前胰島素（proinsulin） 被切割時和 胰島素（insulin） 一起產生；可用來判斷內源性 胰島素（insulin） 分泌。\n\n**胰島素阻抗（insulin resistance）｜胰島素阻抗（insulin resistance）**\n胰島素阻抗；細胞對 胰島素（insulin） 反應變差，早期 β cell 會代償分泌更多。",
+            "**副甲狀腺素（PTH）｜副甲狀腺素（PTH）**\nParathyroid 荷爾蒙（hormone），副甲狀腺素；低血鈣時升高血鈣。\n\n**三碘甲狀腺素（T3）｜三碘甲狀腺素（T3）**\nTriiodothyronine，三碘甲狀腺素；活性較強的 thyroid 荷爾蒙（hormone）。"
           ],
           "flash": [
             {
-              "front": "C-peptide／insulin resistance",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "C 肽（C-peptide）／胰島素阻抗（insulin resistance）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f64aac18c"
             },
             {
-              "front": "PTH／T3",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "副甲狀腺素（PTH）／三碘甲狀腺素（T3）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f26ff5a67"
             },
             {
-              "front": "T4／insulin",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "四碘甲狀腺素（T4）／胰島素（insulin）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "ff7c507a3"
             },
             {
-              "front": "用自己的話說明「C-peptide／insulin resistance」，並說出一個判斷依據。",
-              "back": "**C-peptide｜C-peptide**\nproinsulin 被切割時和 insulin 一起產生；可用來判斷內源性 insulin 分泌。\n\n**insulin resistance｜insulin resistance**\n胰島素阻抗；細胞對 insulin 反應變差，早期 β cell 會代償分泌更多。"
+              "front": "用自己的話說明「C 肽（C-peptide）／胰島素阻抗（insulin resistance）」，並說出一個判斷依據。",
+              "back": "**C 肽（C-peptide）｜C 肽（C-peptide）**\n前胰島素（proinsulin） 被切割時和 胰島素（insulin） 一起產生；可用來判斷內源性 胰島素（insulin） 分泌。\n\n**胰島素阻抗（insulin resistance）｜胰島素阻抗（insulin resistance）**\n胰島素阻抗；細胞對 胰島素（insulin） 反應變差，早期 β cell 會代償分泌更多。",
+              "id": "f40610ed8"
             }
           ]
         }
@@ -277,9 +295,9 @@
       "id": "terms-15-1",
       "title": "中英文核心名詞 15",
       "goals": [
-        "解釋glucagon／GnRH",
-        "解釋LH／FSH",
-        "解釋HPG axis／gamete"
+        "解釋升糖素（glucagon）／促性腺激素釋放激素（GnRH）",
+        "解釋黃體生成素（LH）／濾泡刺激素（FSH）",
+        "解釋下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）／配子（gamete）"
       ],
       "steps": [
         {
@@ -289,8 +307,8 @@
         },
         {
           "type": "card",
-          "title": "glucagon／GnRH",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**glucagon｜glucagon**\n升糖素；由 pancreatic α cells 分泌，幫助升高血糖。\n\n**GnRH｜GnRH**\nGonadotropin-releasing hormone；下視丘叫 pituitary 釋放 LH/FSH 的口令。",
+          "title": "升糖素（glucagon）／促性腺激素釋放激素（GnRH）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**升糖素（glucagon）｜升糖素**\n升糖素；由 pancreatic α cells 分泌，幫助升高血糖。\n\n**促性腺激素釋放激素（GnRH）｜促性腺激素釋放激素**\nGonadotropin-releasing 荷爾蒙（hormone）；下視丘叫 腦下垂體（pituitary） 釋放 黃體生成素（LH）/濾泡刺激素（FSH） 的口令。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -299,15 +317,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「glucagon／GnRH」，並說出一個判斷依據。",
-          "answer": "**glucagon｜glucagon**\n升糖素；由 pancreatic α cells 分泌，幫助升高血糖。\n\n**GnRH｜GnRH**\nGonadotropin-releasing hormone；下視丘叫 pituitary 釋放 LH/FSH 的口令。",
+          "q": "用自己的話說明「升糖素（glucagon）／促性腺激素釋放激素（GnRH）」，並說出一個判斷依據。",
+          "answer": "**升糖素（glucagon）｜升糖素（glucagon）**\n升糖素；由 pancreatic α cells 分泌，幫助升高血糖。\n\n**促性腺激素釋放激素（GnRH）｜促性腺激素釋放激素（GnRH）**\nGonadotropin-releasing 荷爾蒙（hormone）；下視丘叫 腦下垂體（pituitary） 釋放 黃體生成素（LH）/濾泡刺激素（FSH） 的口令。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**glucagon｜glucagon**\n升糖素；由 pancreatic α cells 分泌，幫助升高血糖。\n\n**GnRH｜GnRH**\nGonadotropin-releasing hormone；下視丘叫 pituitary 釋放 LH/FSH 的口令。"
+          "explain": "**升糖素（glucagon）｜升糖素（glucagon）**\n升糖素；由 pancreatic α cells 分泌，幫助升高血糖。\n\n**促性腺激素釋放激素（GnRH）｜促性腺激素釋放激素（GnRH）**\nGonadotropin-releasing 荷爾蒙（hormone）；下視丘叫 腦下垂體（pituitary） 釋放 黃體生成素（LH）/濾泡刺激素（FSH） 的口令。",
+          "id": "c3ab9a5a2"
         },
         {
           "type": "card",
-          "title": "LH／FSH",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**LH｜LH**\nLuteinizing hormone；男性刺激 Leydig，女性觸發 ovulation 並支持 corpus luteum。\n\n**FSH｜FSH**\nFollicle-stimulating hormone；男性支持 spermatogenesis，女性促 follicle 與 estrogen。",
+          "title": "黃體生成素（LH）／濾泡刺激素（FSH）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**黃體生成素（LH）｜黃體生成素**\nLuteinizing 荷爾蒙（hormone）；男性刺激 萊迪氏細胞（Leydig），女性觸發 排卵（ovulation） 並支持 黃體（corpus luteum）。\n\n**濾泡刺激素（FSH）｜濾泡刺激素**\n濾泡（Follicle）-stimulating 荷爾蒙；男性支持 精子生成（spermatogenesis），女性促 濾泡 與 雌激素（estrogen）。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -316,15 +335,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「LH／FSH」，並說出一個判斷依據。",
-          "answer": "**LH｜LH**\nLuteinizing hormone；男性刺激 Leydig，女性觸發 ovulation 並支持 corpus luteum。\n\n**FSH｜FSH**\nFollicle-stimulating hormone；男性支持 spermatogenesis，女性促 follicle 與 estrogen。",
+          "q": "用自己的話說明「黃體生成素（LH）／濾泡刺激素（FSH）」，並說出一個判斷依據。",
+          "answer": "**黃體生成素（LH）｜黃體生成素（LH）**\nLuteinizing 荷爾蒙（hormone）；男性刺激 萊迪氏細胞（Leydig），女性觸發 排卵（ovulation） 並支持 黃體（corpus luteum）。\n\n**濾泡刺激素（FSH）｜濾泡刺激素（FSH）**\n濾泡（Follicle）-stimulating 荷爾蒙（hormone）；男性支持 精子生成（spermatogenesis），女性促 濾泡（follicle） 與 雌激素（estrogen）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**LH｜LH**\nLuteinizing hormone；男性刺激 Leydig，女性觸發 ovulation 並支持 corpus luteum。\n\n**FSH｜FSH**\nFollicle-stimulating hormone；男性支持 spermatogenesis，女性促 follicle 與 estrogen。"
+          "explain": "**黃體生成素（LH）｜黃體生成素（LH）**\nLuteinizing 荷爾蒙（hormone）；男性刺激 萊迪氏細胞（Leydig），女性觸發 排卵（ovulation） 並支持 黃體（corpus luteum）。\n\n**濾泡刺激素（FSH）｜濾泡刺激素（FSH）**\n濾泡（Follicle）-stimulating 荷爾蒙（hormone）；男性支持 精子生成（spermatogenesis），女性促 濾泡（follicle） 與 雌激素（estrogen）。",
+          "id": "c9ea1c3e0"
         },
         {
           "type": "card",
-          "title": "HPG axis／gamete",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**HPG axis｜HPG axis**\nHypothalamic–pituitary–gonadal axis；下視丘→腦下垂體→性腺的控制軸。\n\n**gamete｜gamete**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。",
+          "title": "下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）／配子（gamete）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）｜下視丘－腦下垂體－性腺軸 軸向**\nHypothalamic–腦下垂體（pituitary）–gonadal 軸向；下視丘→腦下垂體→性腺的控制軸。\n\n**配子（gamete）｜配子**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -333,21 +353,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「HPG axis／gamete」，並說出一個判斷依據。",
-          "answer": "**HPG axis｜HPG axis**\nHypothalamic–pituitary–gonadal axis；下視丘→腦下垂體→性腺的控制軸。\n\n**gamete｜gamete**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。",
+          "q": "用自己的話說明「下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）／配子（gamete）」，並說出一個判斷依據。",
+          "answer": "**下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）｜下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）**\nHypothalamic–腦下垂體（pituitary）–gonadal 軸向（axis）；下視丘→腦下垂體→性腺的控制軸。\n\n**配子（gamete）｜配子（gamete）**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**HPG axis｜HPG axis**\nHypothalamic–pituitary–gonadal axis；下視丘→腦下垂體→性腺的控制軸。\n\n**gamete｜gamete**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。"
+          "explain": "**下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）｜下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）**\nHypothalamic–腦下垂體（pituitary）–gonadal 軸向（axis）；下視丘→腦下垂體→性腺的控制軸。\n\n**配子（gamete）｜配子（gamete）**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。",
+          "id": "c25923df7"
         },
         {
           "type": "example",
-          "title": "範例拆解：HPG axis／gamete",
-          "problem": "用自己的話說明「HPG axis／gamete」，並說出一個判斷依據。",
+          "title": "範例拆解：下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）／配子（gamete）",
+          "problem": "用自己的話說明「下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）／配子（gamete）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：HPG axis／gamete",
-            "**HPG axis｜HPG axis**\nHypothalamic–pituitary–gonadal axis；下視丘→腦下垂體→性腺的控制軸。\n\n**gamete｜gamete**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。",
-            "把判斷依據連回題目：**HPG axis｜HPG axis**\nHypothalamic–pituitary–gonadal axis；下視丘→腦下垂體→性腺的控制軸。\n\n**gamete｜gamete**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。"
+            "先確認題目問的主題：下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）／配子（gamete）",
+            "**下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）｜下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）**\nHypothalamic–腦下垂體（pituitary）–gonadal 軸向（axis）；下視丘→腦下垂體→性腺的控制軸。\n\n**配子（gamete）｜配子（gamete）**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。",
+            "把判斷依據連回題目：**下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）｜下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）**\nHypothalamic–腦下垂體（pituitary）–gonadal 軸向（axis）；下視丘→腦下垂體→性腺的控制軸。\n\n**配子（gamete）｜配子（gamete）**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。"
           ],
-          "answer": "**HPG axis｜HPG axis**\nHypothalamic–pituitary–gonadal axis；下視丘→腦下垂體→性腺的控制軸。\n\n**gamete｜gamete**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。"
+          "answer": "**下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）｜下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）**\nHypothalamic–腦下垂體（pituitary）–gonadal 軸向（axis）；下視丘→腦下垂體→性腺的控制軸。\n\n**配子（gamete）｜配子（gamete）**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。"
         },
         {
           "type": "practice",
@@ -356,17 +377,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「LH／FSH」，並說出一個判斷依據。",
-              "answer": "**LH｜LH**\nLuteinizing hormone；男性刺激 Leydig，女性觸發 ovulation 並支持 corpus luteum。\n\n**FSH｜FSH**\nFollicle-stimulating hormone；男性支持 spermatogenesis，女性促 follicle 與 estrogen。",
+              "q": "用自己的話說明「黃體生成素（LH）／濾泡刺激素（FSH）」，並說出一個判斷依據。",
+              "answer": "**黃體生成素（LH）｜黃體生成素（LH）**\nLuteinizing 荷爾蒙（hormone）；男性刺激 萊迪氏細胞（Leydig），女性觸發 排卵（ovulation） 並支持 黃體（corpus luteum）。\n\n**濾泡刺激素（FSH）｜濾泡刺激素（FSH）**\n濾泡（Follicle）-stimulating 荷爾蒙（hormone）；男性支持 精子生成（spermatogenesis），女性促 濾泡（follicle） 與 雌激素（estrogen）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**LH｜LH**\nLuteinizing hormone；男性刺激 Leydig，女性觸發 ovulation 並支持 corpus luteum。\n\n**FSH｜FSH**\nFollicle-stimulating hormone；男性支持 spermatogenesis，女性促 follicle 與 estrogen。"
+              "explain": "**黃體生成素（LH）｜黃體生成素（LH）**\nLuteinizing 荷爾蒙（hormone）；男性刺激 萊迪氏細胞（Leydig），女性觸發 排卵（ovulation） 並支持 黃體（corpus luteum）。\n\n**濾泡刺激素（FSH）｜濾泡刺激素（FSH）**\n濾泡（Follicle）-stimulating 荷爾蒙（hormone）；男性支持 精子生成（spermatogenesis），女性促 濾泡（follicle） 與 雌激素（estrogen）。",
+              "id": "c9ea1c3e0"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「HPG axis／gamete」，並說出一個判斷依據。",
-              "answer": "**HPG axis｜HPG axis**\nHypothalamic–pituitary–gonadal axis；下視丘→腦下垂體→性腺的控制軸。\n\n**gamete｜gamete**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。",
+              "q": "用自己的話說明「下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）／配子（gamete）」，並說出一個判斷依據。",
+              "answer": "**下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）｜下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）**\nHypothalamic–腦下垂體（pituitary）–gonadal 軸向（axis）；下視丘→腦下垂體→性腺的控制軸。\n\n**配子（gamete）｜配子（gamete）**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**HPG axis｜HPG axis**\nHypothalamic–pituitary–gonadal axis；下視丘→腦下垂體→性腺的控制軸。\n\n**gamete｜gamete**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。"
+              "explain": "**下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）｜下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）**\nHypothalamic–腦下垂體（pituitary）–gonadal 軸向（axis）；下視丘→腦下垂體→性腺的控制軸。\n\n**配子（gamete）｜配子（gamete）**\n配子；男性是 sperm、女性是 oocyte，各帶一半染色體。",
+              "id": "c25923df7"
             }
           ]
         },
@@ -374,27 +397,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "glucagon／GnRH：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "LH／FSH：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**glucagon｜glucagon**\n升糖素；由 pancreatic α cells 分泌，幫助升高血糖。\n\n**GnRH｜GnRH**\nGonadotropin-releasing hormone；下視丘叫 pituitary 釋放 LH/FSH 的口令。",
-            "**LH｜LH**\nLuteinizing hormone；男性刺激 Leydig，女性觸發 ovulation 並支持 corpus luteum。\n\n**FSH｜FSH**\nFollicle-stimulating hormone；男性支持 spermatogenesis，女性促 follicle 與 estrogen。"
+            "升糖素（glucagon）／促性腺激素釋放激素（GnRH）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "黃體生成素（LH）／濾泡刺激素（FSH）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**升糖素（glucagon）｜升糖素（glucagon）**\n升糖素；由 pancreatic α cells 分泌，幫助升高血糖。\n\n**促性腺激素釋放激素（GnRH）｜促性腺激素釋放激素（GnRH）**\nGonadotropin-releasing 荷爾蒙（hormone）；下視丘叫 腦下垂體（pituitary） 釋放 黃體生成素（LH）/濾泡刺激素（FSH） 的口令。",
+            "**黃體生成素（LH）｜黃體生成素（LH）**\nLuteinizing 荷爾蒙（hormone）；男性刺激 萊迪氏細胞（Leydig），女性觸發 排卵（ovulation） 並支持 黃體（corpus luteum）。\n\n**濾泡刺激素（FSH）｜濾泡刺激素（FSH）**\n濾泡（Follicle）-stimulating 荷爾蒙（hormone）；男性支持 精子生成（spermatogenesis），女性促 濾泡（follicle） 與 雌激素（estrogen）。"
           ],
           "flash": [
             {
-              "front": "glucagon／GnRH",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "升糖素（glucagon）／促性腺激素釋放激素（GnRH）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f07cc33e0"
             },
             {
-              "front": "LH／FSH",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "黃體生成素（LH）／濾泡刺激素（FSH）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f7876eae3"
             },
             {
-              "front": "HPG axis／gamete",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）／配子（gamete）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f1414db66"
             },
             {
-              "front": "用自己的話說明「glucagon／GnRH」，並說出一個判斷依據。",
-              "back": "**glucagon｜glucagon**\n升糖素；由 pancreatic α cells 分泌，幫助升高血糖。\n\n**GnRH｜GnRH**\nGonadotropin-releasing hormone；下視丘叫 pituitary 釋放 LH/FSH 的口令。"
+              "front": "用自己的話說明「升糖素（glucagon）／促性腺激素釋放激素（GnRH）」，並說出一個判斷依據。",
+              "back": "**升糖素（glucagon）｜升糖素（glucagon）**\n升糖素；由 pancreatic α cells 分泌，幫助升高血糖。\n\n**促性腺激素釋放激素（GnRH）｜促性腺激素釋放激素（GnRH）**\nGonadotropin-releasing 荷爾蒙（hormone）；下視丘叫 腦下垂體（pituitary） 釋放 黃體生成素（LH）/濾泡刺激素（FSH） 的口令。",
+              "id": "f3ab9a5a2"
             }
           ]
         }
@@ -404,9 +431,9 @@
       "id": "terms-16-1",
       "title": "中英文核心名詞 16",
       "goals": [
-        "解釋meiosis／spermatogenesis",
-        "解釋oogenesis／primary oocyte",
-        "解釋secondary oocyte／17β-HSD"
+        "解釋減數分裂（meiosis）／精子生成（spermatogenesis）",
+        "解釋卵子生成（oogenesis）／初級卵母細胞（primary oocyte）",
+        "解釋次級卵母細胞（secondary oocyte）／17β-羥基類固醇脫氫酶（HSD）"
       ],
       "steps": [
         {
@@ -416,8 +443,8 @@
         },
         {
           "type": "card",
-          "title": "meiosis／spermatogenesis",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**meiosis｜meiosis**\n減數分裂；把染色體數目減半，並透過重組增加遺傳變化。\n\n**spermatogenesis｜spermatogenesis**\n精子生成；由 spermatogonia 經 meiosis 與成熟形成 sperm。",
+          "title": "減數分裂（meiosis）／精子生成（spermatogenesis）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**減數分裂（meiosis）｜減數分裂**\n減數分裂；把染色體數目減半，並透過重組增加遺傳變化。\n\n**精子生成（spermatogenesis）｜精子生成**\n精子生成；由 spermatogonia 經 減數分裂 與成熟形成 sperm。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -426,15 +453,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「meiosis／spermatogenesis」，並說出一個判斷依據。",
-          "answer": "**meiosis｜meiosis**\n減數分裂；把染色體數目減半，並透過重組增加遺傳變化。\n\n**spermatogenesis｜spermatogenesis**\n精子生成；由 spermatogonia 經 meiosis 與成熟形成 sperm。",
+          "q": "用自己的話說明「減數分裂（meiosis）／精子生成（spermatogenesis）」，並說出一個判斷依據。",
+          "answer": "**減數分裂（meiosis）｜減數分裂（meiosis）**\n減數分裂；把染色體數目減半，並透過重組增加遺傳變化。\n\n**精子生成（spermatogenesis）｜精子生成（spermatogenesis）**\n精子生成；由 spermatogonia 經 減數分裂（meiosis） 與成熟形成 sperm。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**meiosis｜meiosis**\n減數分裂；把染色體數目減半，並透過重組增加遺傳變化。\n\n**spermatogenesis｜spermatogenesis**\n精子生成；由 spermatogonia 經 meiosis 與成熟形成 sperm。"
+          "explain": "**減數分裂（meiosis）｜減數分裂（meiosis）**\n減數分裂；把染色體數目減半，並透過重組增加遺傳變化。\n\n**精子生成（spermatogenesis）｜精子生成（spermatogenesis）**\n精子生成；由 spermatogonia 經 減數分裂（meiosis） 與成熟形成 sperm。",
+          "id": "c0fd7c184"
         },
         {
           "type": "card",
-          "title": "oogenesis／primary oocyte",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**oogenesis｜oogenesis**\n卵子生成；出生前已開始，包含 prophase I 與 metaphase II 兩次停頓。\n\n**primary oocyte｜primary oocyte**\n初級卵母細胞；停在 prophase I，直到排卵前才完成 meiosis I。",
+          "title": "卵子生成（oogenesis）／初級卵母細胞（primary oocyte）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**卵子生成（oogenesis）｜卵子生成**\n卵子生成；出生前已開始，包含 第一次減數分裂前期（prophase I） 與 第二次減數分裂中期（metaphase II） 兩次停頓。\n\n**初級卵母細胞（primary oocyte）｜初級卵母細胞**\n初級卵母細胞；停在 第一次減數分裂前期，直到排卵前才完成 減數分裂（meiosis） I。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -443,15 +471,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「oogenesis／primary oocyte」，並說出一個判斷依據。",
-          "answer": "**oogenesis｜oogenesis**\n卵子生成；出生前已開始，包含 prophase I 與 metaphase II 兩次停頓。\n\n**primary oocyte｜primary oocyte**\n初級卵母細胞；停在 prophase I，直到排卵前才完成 meiosis I。",
+          "q": "用自己的話說明「卵子生成（oogenesis）／初級卵母細胞（primary oocyte）」，並說出一個判斷依據。",
+          "answer": "**卵子生成（oogenesis）｜卵子生成（oogenesis）**\n卵子生成；出生前已開始，包含 第一次減數分裂前期（prophase I） 與 第二次減數分裂中期（metaphase II） 兩次停頓。\n\n**初級卵母細胞（primary oocyte）｜初級卵母細胞（primary oocyte）**\n初級卵母細胞；停在 第一次減數分裂前期（prophase I），直到排卵前才完成 減數分裂（meiosis） I。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**oogenesis｜oogenesis**\n卵子生成；出生前已開始，包含 prophase I 與 metaphase II 兩次停頓。\n\n**primary oocyte｜primary oocyte**\n初級卵母細胞；停在 prophase I，直到排卵前才完成 meiosis I。"
+          "explain": "**卵子生成（oogenesis）｜卵子生成（oogenesis）**\n卵子生成；出生前已開始，包含 第一次減數分裂前期（prophase I） 與 第二次減數分裂中期（metaphase II） 兩次停頓。\n\n**初級卵母細胞（primary oocyte）｜初級卵母細胞（primary oocyte）**\n初級卵母細胞；停在 第一次減數分裂前期（prophase I），直到排卵前才完成 減數分裂（meiosis） I。",
+          "id": "c33b03b16"
         },
         {
           "type": "card",
-          "title": "secondary oocyte／17β-HSD",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**secondary oocyte｜secondary oocyte**\n次級卵母細胞；排卵時停在 metaphase II，受精後才完成 meiosis II。\n\n**17β-HSD｜17β-HSD**\n17β-hydroxysteroid dehydrogenase；參與 testosterone 與 estradiol 的生成轉換。",
+          "title": "次級卵母細胞（secondary oocyte）／17β-羥基類固醇脫氫酶（HSD）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**次級卵母細胞（secondary oocyte）｜次級卵母細胞**\n次級卵母細胞；排卵時停在 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。\n\n**17β-羥基類固醇脫氫酶（HSD）｜17β-羥基類固醇脫氫酶**\n17β-hydroxysteroid dehydrogenase；參與 睪固酮（testosterone） 與 雌二醇（estradiol） 的生成轉換。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -460,21 +489,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「secondary oocyte／17β-HSD」，並說出一個判斷依據。",
-          "answer": "**secondary oocyte｜secondary oocyte**\n次級卵母細胞；排卵時停在 metaphase II，受精後才完成 meiosis II。\n\n**17β-HSD｜17β-HSD**\n17β-hydroxysteroid dehydrogenase；參與 testosterone 與 estradiol 的生成轉換。",
+          "q": "用自己的話說明「次級卵母細胞（secondary oocyte）／17β-羥基類固醇脫氫酶（HSD）」，並說出一個判斷依據。",
+          "answer": "**次級卵母細胞（secondary oocyte）｜次級卵母細胞（secondary oocyte）**\n次級卵母細胞；排卵時停在 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。\n\n**17β-羥基類固醇脫氫酶（HSD）｜17β-羥基類固醇脫氫酶（HSD）**\n17β-hydroxysteroid dehydrogenase；參與 睪固酮（testosterone） 與 雌二醇（estradiol） 的生成轉換。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**secondary oocyte｜secondary oocyte**\n次級卵母細胞；排卵時停在 metaphase II，受精後才完成 meiosis II。\n\n**17β-HSD｜17β-HSD**\n17β-hydroxysteroid dehydrogenase；參與 testosterone 與 estradiol 的生成轉換。"
+          "explain": "**次級卵母細胞（secondary oocyte）｜次級卵母細胞（secondary oocyte）**\n次級卵母細胞；排卵時停在 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。\n\n**17β-羥基類固醇脫氫酶（HSD）｜17β-羥基類固醇脫氫酶（HSD）**\n17β-hydroxysteroid dehydrogenase；參與 睪固酮（testosterone） 與 雌二醇（estradiol） 的生成轉換。",
+          "id": "cece79f50"
         },
         {
           "type": "example",
-          "title": "範例拆解：secondary oocyte／17β-HSD",
-          "problem": "用自己的話說明「secondary oocyte／17β-HSD」，並說出一個判斷依據。",
+          "title": "範例拆解：次級卵母細胞（secondary oocyte）／17β-羥基類固醇脫氫酶（HSD）",
+          "problem": "用自己的話說明「次級卵母細胞（secondary oocyte）／17β-羥基類固醇脫氫酶（HSD）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：secondary oocyte／17β-HSD",
-            "**secondary oocyte｜secondary oocyte**\n次級卵母細胞；排卵時停在 metaphase II，受精後才完成 meiosis II。\n\n**17β-HSD｜17β-HSD**\n17β-hydroxysteroid dehydrogenase；參與 testosterone 與 estradiol 的生成轉換。",
-            "把判斷依據連回題目：**secondary oocyte｜secondary oocyte**\n次級卵母細胞；排卵時停在 metaphase II，受精後才完成 meiosis II。\n\n**17β-HSD｜17β-HSD**\n17β-hydroxysteroid dehydrogenase；參與 testosterone 與 estradiol 的生成轉換。"
+            "先確認題目問的主題：次級卵母細胞（secondary oocyte）／17β-羥基類固醇脫氫酶（HSD）",
+            "**次級卵母細胞（secondary oocyte）｜次級卵母細胞（secondary oocyte）**\n次級卵母細胞；排卵時停在 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。\n\n**17β-羥基類固醇脫氫酶（HSD）｜17β-羥基類固醇脫氫酶（HSD）**\n17β-hydroxysteroid dehydrogenase；參與 睪固酮（testosterone） 與 雌二醇（estradiol） 的生成轉換。",
+            "把判斷依據連回題目：**次級卵母細胞（secondary oocyte）｜次級卵母細胞（secondary oocyte）**\n次級卵母細胞；排卵時停在 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。\n\n**17β-羥基類固醇脫氫酶（HSD）｜17β-羥基類固醇脫氫酶（HSD）**\n17β-hydroxysteroid dehydrogenase；參與 睪固酮（testosterone） 與 雌二醇（estradiol） 的生成轉換。"
           ],
-          "answer": "**secondary oocyte｜secondary oocyte**\n次級卵母細胞；排卵時停在 metaphase II，受精後才完成 meiosis II。\n\n**17β-HSD｜17β-HSD**\n17β-hydroxysteroid dehydrogenase；參與 testosterone 與 estradiol 的生成轉換。"
+          "answer": "**次級卵母細胞（secondary oocyte）｜次級卵母細胞（secondary oocyte）**\n次級卵母細胞；排卵時停在 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。\n\n**17β-羥基類固醇脫氫酶（HSD）｜17β-羥基類固醇脫氫酶（HSD）**\n17β-hydroxysteroid dehydrogenase；參與 睪固酮（testosterone） 與 雌二醇（estradiol） 的生成轉換。"
         },
         {
           "type": "practice",
@@ -483,17 +513,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「oogenesis／primary oocyte」，並說出一個判斷依據。",
-              "answer": "**oogenesis｜oogenesis**\n卵子生成；出生前已開始，包含 prophase I 與 metaphase II 兩次停頓。\n\n**primary oocyte｜primary oocyte**\n初級卵母細胞；停在 prophase I，直到排卵前才完成 meiosis I。",
+              "q": "用自己的話說明「卵子生成（oogenesis）／初級卵母細胞（primary oocyte）」，並說出一個判斷依據。",
+              "answer": "**卵子生成（oogenesis）｜卵子生成（oogenesis）**\n卵子生成；出生前已開始，包含 第一次減數分裂前期（prophase I） 與 第二次減數分裂中期（metaphase II） 兩次停頓。\n\n**初級卵母細胞（primary oocyte）｜初級卵母細胞（primary oocyte）**\n初級卵母細胞；停在 第一次減數分裂前期（prophase I），直到排卵前才完成 減數分裂（meiosis） I。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**oogenesis｜oogenesis**\n卵子生成；出生前已開始，包含 prophase I 與 metaphase II 兩次停頓。\n\n**primary oocyte｜primary oocyte**\n初級卵母細胞；停在 prophase I，直到排卵前才完成 meiosis I。"
+              "explain": "**卵子生成（oogenesis）｜卵子生成（oogenesis）**\n卵子生成；出生前已開始，包含 第一次減數分裂前期（prophase I） 與 第二次減數分裂中期（metaphase II） 兩次停頓。\n\n**初級卵母細胞（primary oocyte）｜初級卵母細胞（primary oocyte）**\n初級卵母細胞；停在 第一次減數分裂前期（prophase I），直到排卵前才完成 減數分裂（meiosis） I。",
+              "id": "c33b03b16"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「secondary oocyte／17β-HSD」，並說出一個判斷依據。",
-              "answer": "**secondary oocyte｜secondary oocyte**\n次級卵母細胞；排卵時停在 metaphase II，受精後才完成 meiosis II。\n\n**17β-HSD｜17β-HSD**\n17β-hydroxysteroid dehydrogenase；參與 testosterone 與 estradiol 的生成轉換。",
+              "q": "用自己的話說明「次級卵母細胞（secondary oocyte）／17β-羥基類固醇脫氫酶（HSD）」，並說出一個判斷依據。",
+              "answer": "**次級卵母細胞（secondary oocyte）｜次級卵母細胞（secondary oocyte）**\n次級卵母細胞；排卵時停在 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。\n\n**17β-羥基類固醇脫氫酶（HSD）｜17β-羥基類固醇脫氫酶（HSD）**\n17β-hydroxysteroid dehydrogenase；參與 睪固酮（testosterone） 與 雌二醇（estradiol） 的生成轉換。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**secondary oocyte｜secondary oocyte**\n次級卵母細胞；排卵時停在 metaphase II，受精後才完成 meiosis II。\n\n**17β-HSD｜17β-HSD**\n17β-hydroxysteroid dehydrogenase；參與 testosterone 與 estradiol 的生成轉換。"
+              "explain": "**次級卵母細胞（secondary oocyte）｜次級卵母細胞（secondary oocyte）**\n次級卵母細胞；排卵時停在 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。\n\n**17β-羥基類固醇脫氫酶（HSD）｜17β-羥基類固醇脫氫酶（HSD）**\n17β-hydroxysteroid dehydrogenase；參與 睪固酮（testosterone） 與 雌二醇（estradiol） 的生成轉換。",
+              "id": "cece79f50"
             }
           ]
         },
@@ -501,27 +533,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "meiosis／spermatogenesis：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "oogenesis／primary oocyte：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**meiosis｜meiosis**\n減數分裂；把染色體數目減半，並透過重組增加遺傳變化。\n\n**spermatogenesis｜spermatogenesis**\n精子生成；由 spermatogonia 經 meiosis 與成熟形成 sperm。",
-            "**oogenesis｜oogenesis**\n卵子生成；出生前已開始，包含 prophase I 與 metaphase II 兩次停頓。\n\n**primary oocyte｜primary oocyte**\n初級卵母細胞；停在 prophase I，直到排卵前才完成 meiosis I。"
+            "減數分裂（meiosis）／精子生成（spermatogenesis）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "卵子生成（oogenesis）／初級卵母細胞（primary oocyte）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**減數分裂（meiosis）｜減數分裂（meiosis）**\n減數分裂；把染色體數目減半，並透過重組增加遺傳變化。\n\n**精子生成（spermatogenesis）｜精子生成（spermatogenesis）**\n精子生成；由 spermatogonia 經 減數分裂（meiosis） 與成熟形成 sperm。",
+            "**卵子生成（oogenesis）｜卵子生成（oogenesis）**\n卵子生成；出生前已開始，包含 第一次減數分裂前期（prophase I） 與 第二次減數分裂中期（metaphase II） 兩次停頓。\n\n**初級卵母細胞（primary oocyte）｜初級卵母細胞（primary oocyte）**\n初級卵母細胞；停在 第一次減數分裂前期（prophase I），直到排卵前才完成 減數分裂（meiosis） I。"
           ],
           "flash": [
             {
-              "front": "meiosis／spermatogenesis",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "減數分裂（meiosis）／精子生成（spermatogenesis）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f1fd8c459"
             },
             {
-              "front": "oogenesis／primary oocyte",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "卵子生成（oogenesis）／初級卵母細胞（primary oocyte）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fccd4bf16"
             },
             {
-              "front": "secondary oocyte／17β-HSD",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "次級卵母細胞（secondary oocyte）／17β-羥基類固醇脫氫酶（HSD）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f23980502"
             },
             {
-              "front": "用自己的話說明「meiosis／spermatogenesis」，並說出一個判斷依據。",
-              "back": "**meiosis｜meiosis**\n減數分裂；把染色體數目減半，並透過重組增加遺傳變化。\n\n**spermatogenesis｜spermatogenesis**\n精子生成；由 spermatogonia 經 meiosis 與成熟形成 sperm。"
+              "front": "用自己的話說明「減數分裂（meiosis）／精子生成（spermatogenesis）」，並說出一個判斷依據。",
+              "back": "**減數分裂（meiosis）｜減數分裂（meiosis）**\n減數分裂；把染色體數目減半，並透過重組增加遺傳變化。\n\n**精子生成（spermatogenesis）｜精子生成（spermatogenesis）**\n精子生成；由 spermatogonia 經 減數分裂（meiosis） 與成熟形成 sperm。",
+              "id": "f0fd7c184"
             }
           ]
         }
@@ -531,9 +567,9 @@
       "id": "terms-17-1",
       "title": "中英文核心名詞 17",
       "goals": [
-        "解釋5α-reductase／DHT",
-        "解釋inhibin／activin",
-        "解釋SRY／AMH"
+        "解釋把（5α-reductase）／二氫睪固酮（DHT）",
+        "解釋抑制素（inhibin）／促進（activin）",
+        "解釋Y 染色體性別決定區基因（SRY）／抗穆勒氏管激素（AMH）"
       ],
       "steps": [
         {
@@ -543,8 +579,8 @@
         },
         {
           "type": "card",
-          "title": "5α-reductase／DHT",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**5α-reductase｜5α-reductase**\n把 testosterone 轉成作用更強的 DHT，主要在周邊 target tissue。\n\n**DHT｜DHT**\nDihydrotestosterone；由 testosterone 經 5α-reductase 形成，對外生殖器與前列腺很重要。",
+          "title": "把（5α-reductase）／二氫睪固酮（DHT）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**把（5α-reductase）｜把**\n把 睪固酮（testosterone） 轉成作用更強的 二氫睪固酮（DHT），主要在周邊 目標（target） tissue。\n\n**二氫睪固酮｜二氫睪固酮**\nDihydrotestosterone；由 睪固酮 經 把 形成，對外生殖器與前列腺很重要。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -553,15 +589,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「5α-reductase／DHT」，並說出一個判斷依據。",
-          "answer": "**5α-reductase｜5α-reductase**\n把 testosterone 轉成作用更強的 DHT，主要在周邊 target tissue。\n\n**DHT｜DHT**\nDihydrotestosterone；由 testosterone 經 5α-reductase 形成，對外生殖器與前列腺很重要。",
+          "q": "用自己的話說明「把（5α-reductase）／二氫睪固酮（DHT）」，並說出一個判斷依據。",
+          "answer": "**把（5α-reductase）｜把（5α-reductase）**\n把 睪固酮（testosterone） 轉成作用更強的 二氫睪固酮（DHT），主要在周邊 目標（target） tissue。\n\n**二氫睪固酮（DHT）｜二氫睪固酮（DHT）**\nDihydrotestosterone；由 睪固酮（testosterone） 經 把（5α-reductase） 形成，對外生殖器與前列腺很重要。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**5α-reductase｜5α-reductase**\n把 testosterone 轉成作用更強的 DHT，主要在周邊 target tissue。\n\n**DHT｜DHT**\nDihydrotestosterone；由 testosterone 經 5α-reductase 形成，對外生殖器與前列腺很重要。"
+          "explain": "**把（5α-reductase）｜把（5α-reductase）**\n把 睪固酮（testosterone） 轉成作用更強的 二氫睪固酮（DHT），主要在周邊 目標（target） tissue。\n\n**二氫睪固酮（DHT）｜二氫睪固酮（DHT）**\nDihydrotestosterone；由 睪固酮（testosterone） 經 把（5α-reductase） 形成，對外生殖器與前列腺很重要。",
+          "id": "c97db4331"
         },
         {
           "type": "card",
-          "title": "inhibin／activin",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**inhibin｜inhibin**\n主要由 Sertoli／granulosa cells 分泌，選擇性負回饋抑制 FSH。\n\n**activin｜activin**\n促進 FSH 合成與分泌，方向大致與 inhibin 相反。",
+          "title": "抑制素（inhibin）／促進（activin）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**抑制素（inhibin）｜抑制素**\n主要由 塞爾托利氏細胞（Sertoli）／顆粒細胞（granulosa） cells 分泌，選擇性負回饋抑制 濾泡刺激素（FSH）。\n\n**促進（activin）｜促進**\n促進 濾泡刺激素 合成與分泌，方向大致與 抑制素 相反。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -570,15 +607,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「inhibin／activin」，並說出一個判斷依據。",
-          "answer": "**inhibin｜inhibin**\n主要由 Sertoli／granulosa cells 分泌，選擇性負回饋抑制 FSH。\n\n**activin｜activin**\n促進 FSH 合成與分泌，方向大致與 inhibin 相反。",
+          "q": "用自己的話說明「抑制素（inhibin）／促進（activin）」，並說出一個判斷依據。",
+          "answer": "**抑制素（inhibin）｜抑制素（inhibin）**\n主要由 塞爾托利氏細胞（Sertoli）／顆粒細胞（granulosa） cells 分泌，選擇性負回饋抑制 濾泡刺激素（FSH）。\n\n**促進（activin）｜促進（activin）**\n促進 濾泡刺激素（FSH） 合成與分泌，方向大致與 抑制素（inhibin） 相反。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**inhibin｜inhibin**\n主要由 Sertoli／granulosa cells 分泌，選擇性負回饋抑制 FSH。\n\n**activin｜activin**\n促進 FSH 合成與分泌，方向大致與 inhibin 相反。"
+          "explain": "**抑制素（inhibin）｜抑制素（inhibin）**\n主要由 塞爾托利氏細胞（Sertoli）／顆粒細胞（granulosa） cells 分泌，選擇性負回饋抑制 濾泡刺激素（FSH）。\n\n**促進（activin）｜促進（activin）**\n促進 濾泡刺激素（FSH） 合成與分泌，方向大致與 抑制素（inhibin） 相反。",
+          "id": "ce0e0c823"
         },
         {
           "type": "card",
-          "title": "SRY／AMH",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**SRY｜SRY**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**AMH｜AMH**\nAnti-Müllerian hormone；由 fetal Sertoli cells 分泌，使 Müllerian duct 退化。",
+          "title": "Y 染色體性別決定區基因（SRY）／抗穆勒氏管激素（AMH）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**Y 染色體性別決定區基因（SRY）｜Y 染色體性別決定區基因**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**抗穆勒氏管激素（AMH）｜抗穆勒氏管激素**\nAnti-Müllerian 荷爾蒙（hormone）；由 fetal 塞爾托利氏細胞（Sertoli） cells 分泌，使 Müllerian duct 退化。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -587,21 +625,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「SRY／AMH」，並說出一個判斷依據。",
-          "answer": "**SRY｜SRY**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**AMH｜AMH**\nAnti-Müllerian hormone；由 fetal Sertoli cells 分泌，使 Müllerian duct 退化。",
+          "q": "用自己的話說明「Y 染色體性別決定區基因（SRY）／抗穆勒氏管激素（AMH）」，並說出一個判斷依據。",
+          "answer": "**Y 染色體性別決定區基因（SRY）｜Y 染色體性別決定區基因（SRY）**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**抗穆勒氏管激素（AMH）｜抗穆勒氏管激素（AMH）**\nAnti-Müllerian 荷爾蒙（hormone）；由 fetal 塞爾托利氏細胞（Sertoli） cells 分泌，使 Müllerian duct 退化。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**SRY｜SRY**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**AMH｜AMH**\nAnti-Müllerian hormone；由 fetal Sertoli cells 分泌，使 Müllerian duct 退化。"
+          "explain": "**Y 染色體性別決定區基因（SRY）｜Y 染色體性別決定區基因（SRY）**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**抗穆勒氏管激素（AMH）｜抗穆勒氏管激素（AMH）**\nAnti-Müllerian 荷爾蒙（hormone）；由 fetal 塞爾托利氏細胞（Sertoli） cells 分泌，使 Müllerian duct 退化。",
+          "id": "ccb28d9e2"
         },
         {
           "type": "example",
-          "title": "範例拆解：SRY／AMH",
-          "problem": "用自己的話說明「SRY／AMH」，並說出一個判斷依據。",
+          "title": "範例拆解：Y 染色體性別決定區基因（SRY）／抗穆勒氏管激素（AMH）",
+          "problem": "用自己的話說明「Y 染色體性別決定區基因（SRY）／抗穆勒氏管激素（AMH）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：SRY／AMH",
-            "**SRY｜SRY**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**AMH｜AMH**\nAnti-Müllerian hormone；由 fetal Sertoli cells 分泌，使 Müllerian duct 退化。",
-            "把判斷依據連回題目：**SRY｜SRY**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**AMH｜AMH**\nAnti-Müllerian hormone；由 fetal Sertoli cells 分泌，使 Müllerian duct 退化。"
+            "先確認題目問的主題：Y 染色體性別決定區基因（SRY）／抗穆勒氏管激素（AMH）",
+            "**Y 染色體性別決定區基因（SRY）｜Y 染色體性別決定區基因（SRY）**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**抗穆勒氏管激素（AMH）｜抗穆勒氏管激素（AMH）**\nAnti-Müllerian 荷爾蒙（hormone）；由 fetal 塞爾托利氏細胞（Sertoli） cells 分泌，使 Müllerian duct 退化。",
+            "把判斷依據連回題目：**Y 染色體性別決定區基因（SRY）｜Y 染色體性別決定區基因（SRY）**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**抗穆勒氏管激素（AMH）｜抗穆勒氏管激素（AMH）**\nAnti-Müllerian 荷爾蒙（hormone）；由 fetal 塞爾托利氏細胞（Sertoli） cells 分泌，使 Müllerian duct 退化。"
           ],
-          "answer": "**SRY｜SRY**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**AMH｜AMH**\nAnti-Müllerian hormone；由 fetal Sertoli cells 分泌，使 Müllerian duct 退化。"
+          "answer": "**Y 染色體性別決定區基因（SRY）｜Y 染色體性別決定區基因（SRY）**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**抗穆勒氏管激素（AMH）｜抗穆勒氏管激素（AMH）**\nAnti-Müllerian 荷爾蒙（hormone）；由 fetal 塞爾托利氏細胞（Sertoli） cells 分泌，使 Müllerian duct 退化。"
         },
         {
           "type": "practice",
@@ -610,17 +649,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「inhibin／activin」，並說出一個判斷依據。",
-              "answer": "**inhibin｜inhibin**\n主要由 Sertoli／granulosa cells 分泌，選擇性負回饋抑制 FSH。\n\n**activin｜activin**\n促進 FSH 合成與分泌，方向大致與 inhibin 相反。",
+              "q": "用自己的話說明「抑制素（inhibin）／促進（activin）」，並說出一個判斷依據。",
+              "answer": "**抑制素（inhibin）｜抑制素（inhibin）**\n主要由 塞爾托利氏細胞（Sertoli）／顆粒細胞（granulosa） cells 分泌，選擇性負回饋抑制 濾泡刺激素（FSH）。\n\n**促進（activin）｜促進（activin）**\n促進 濾泡刺激素（FSH） 合成與分泌，方向大致與 抑制素（inhibin） 相反。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**inhibin｜inhibin**\n主要由 Sertoli／granulosa cells 分泌，選擇性負回饋抑制 FSH。\n\n**activin｜activin**\n促進 FSH 合成與分泌，方向大致與 inhibin 相反。"
+              "explain": "**抑制素（inhibin）｜抑制素（inhibin）**\n主要由 塞爾托利氏細胞（Sertoli）／顆粒細胞（granulosa） cells 分泌，選擇性負回饋抑制 濾泡刺激素（FSH）。\n\n**促進（activin）｜促進（activin）**\n促進 濾泡刺激素（FSH） 合成與分泌，方向大致與 抑制素（inhibin） 相反。",
+              "id": "ce0e0c823"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「SRY／AMH」，並說出一個判斷依據。",
-              "answer": "**SRY｜SRY**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**AMH｜AMH**\nAnti-Müllerian hormone；由 fetal Sertoli cells 分泌，使 Müllerian duct 退化。",
+              "q": "用自己的話說明「Y 染色體性別決定區基因（SRY）／抗穆勒氏管激素（AMH）」，並說出一個判斷依據。",
+              "answer": "**Y 染色體性別決定區基因（SRY）｜Y 染色體性別決定區基因（SRY）**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**抗穆勒氏管激素（AMH）｜抗穆勒氏管激素（AMH）**\nAnti-Müllerian 荷爾蒙（hormone）；由 fetal 塞爾托利氏細胞（Sertoli） cells 分泌，使 Müllerian duct 退化。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**SRY｜SRY**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**AMH｜AMH**\nAnti-Müllerian hormone；由 fetal Sertoli cells 分泌，使 Müllerian duct 退化。"
+              "explain": "**Y 染色體性別決定區基因（SRY）｜Y 染色體性別決定區基因（SRY）**\nY chromosome 上的 sex-determining region；啟動未分化性腺往 testis 發展。\n\n**抗穆勒氏管激素（AMH）｜抗穆勒氏管激素（AMH）**\nAnti-Müllerian 荷爾蒙（hormone）；由 fetal 塞爾托利氏細胞（Sertoli） cells 分泌，使 Müllerian duct 退化。",
+              "id": "ccb28d9e2"
             }
           ]
         },
@@ -628,27 +669,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "5α-reductase／DHT：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "inhibin／activin：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**5α-reductase｜5α-reductase**\n把 testosterone 轉成作用更強的 DHT，主要在周邊 target tissue。\n\n**DHT｜DHT**\nDihydrotestosterone；由 testosterone 經 5α-reductase 形成，對外生殖器與前列腺很重要。",
-            "**inhibin｜inhibin**\n主要由 Sertoli／granulosa cells 分泌，選擇性負回饋抑制 FSH。\n\n**activin｜activin**\n促進 FSH 合成與分泌，方向大致與 inhibin 相反。"
+            "把（5α-reductase）／二氫睪固酮（DHT）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "抑制素（inhibin）／促進（activin）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**把（5α-reductase）｜把（5α-reductase）**\n把 睪固酮（testosterone） 轉成作用更強的 二氫睪固酮（DHT），主要在周邊 目標（target） tissue。\n\n**二氫睪固酮（DHT）｜二氫睪固酮（DHT）**\nDihydrotestosterone；由 睪固酮（testosterone） 經 把（5α-reductase） 形成，對外生殖器與前列腺很重要。",
+            "**抑制素（inhibin）｜抑制素（inhibin）**\n主要由 塞爾托利氏細胞（Sertoli）／顆粒細胞（granulosa） cells 分泌，選擇性負回饋抑制 濾泡刺激素（FSH）。\n\n**促進（activin）｜促進（activin）**\n促進 濾泡刺激素（FSH） 合成與分泌，方向大致與 抑制素（inhibin） 相反。"
           ],
           "flash": [
             {
-              "front": "5α-reductase／DHT",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "把（5α-reductase）／二氫睪固酮（DHT）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fd76a8621"
             },
             {
-              "front": "inhibin／activin",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "抑制素（inhibin）／促進（activin）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "ff447e877"
             },
             {
-              "front": "SRY／AMH",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "Y 染色體性別決定區基因（SRY）／抗穆勒氏管激素（AMH）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f3db2067b"
             },
             {
-              "front": "用自己的話說明「5α-reductase／DHT」，並說出一個判斷依據。",
-              "back": "**5α-reductase｜5α-reductase**\n把 testosterone 轉成作用更強的 DHT，主要在周邊 target tissue。\n\n**DHT｜DHT**\nDihydrotestosterone；由 testosterone 經 5α-reductase 形成，對外生殖器與前列腺很重要。"
+              "front": "用自己的話說明「把（5α-reductase）／二氫睪固酮（DHT）」，並說出一個判斷依據。",
+              "back": "**把（5α-reductase）｜把（5α-reductase）**\n把 睪固酮（testosterone） 轉成作用更強的 二氫睪固酮（DHT），主要在周邊 目標（target） tissue。\n\n**二氫睪固酮（DHT）｜二氫睪固酮（DHT）**\nDihydrotestosterone；由 睪固酮（testosterone） 經 把（5α-reductase） 形成，對外生殖器與前列腺很重要。",
+              "id": "f97db4331"
             }
           ]
         }
@@ -658,9 +703,9 @@
       "id": "terms-18-1",
       "title": "中英文核心名詞 18",
       "goals": [
-        "解釋seminiferous tubule／blood-testis barrier",
-        "解釋ABP／theca cell",
-        "解釋granulosa cell／aromatase"
+        "解釋曲細精管（seminiferous tubule）／血睪屏障（blood-testis barrier）",
+        "解釋雄激素結合蛋白（ABP）／卵泡膜細胞（theca cell）",
+        "解釋顆粒細胞（granulosa cell）／芳香環酶（aromatase）"
       ],
       "steps": [
         {
@@ -670,8 +715,8 @@
         },
         {
           "type": "card",
-          "title": "seminiferous tubule／blood-testis barrier",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**seminiferous tubule｜seminiferous tubule**\n曲細精管；testis 內進行 spermatogenesis 的場所。\n\n**blood-testis barrier｜blood-testis barrier**\n血睪屏障；由 Sertoli cell tight junction 形成，保護發育中的 germ cells。",
+          "title": "曲細精管（seminiferous tubule）／血睪屏障（blood-testis barrier）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**曲細精管（seminiferous tubule）｜曲細精管**\n曲細精管；testis 內進行 精子生成（spermatogenesis） 的場所。\n\n**血睪屏障（blood-testis barrier）｜血睪屏障**\n血睪屏障；由 塞爾托利氏細胞（Sertoli cell） 緊密接合（tight junction） 形成，保護發育中的 germ cells。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -680,15 +725,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「seminiferous tubule／blood-testis barrier」，並說出一個判斷依據。",
-          "answer": "**seminiferous tubule｜seminiferous tubule**\n曲細精管；testis 內進行 spermatogenesis 的場所。\n\n**blood-testis barrier｜blood-testis barrier**\n血睪屏障；由 Sertoli cell tight junction 形成，保護發育中的 germ cells。",
+          "q": "用自己的話說明「曲細精管（seminiferous tubule）／血睪屏障（blood-testis barrier）」，並說出一個判斷依據。",
+          "answer": "**曲細精管（seminiferous tubule）｜曲細精管（seminiferous tubule）**\n曲細精管；testis 內進行 精子生成（spermatogenesis） 的場所。\n\n**血睪屏障（blood-testis barrier）｜血睪屏障（blood-testis barrier）**\n血睪屏障；由 塞爾托利氏細胞（Sertoli cell） 緊密接合（tight junction） 形成，保護發育中的 germ cells。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**seminiferous tubule｜seminiferous tubule**\n曲細精管；testis 內進行 spermatogenesis 的場所。\n\n**blood-testis barrier｜blood-testis barrier**\n血睪屏障；由 Sertoli cell tight junction 形成，保護發育中的 germ cells。"
+          "explain": "**曲細精管（seminiferous tubule）｜曲細精管（seminiferous tubule）**\n曲細精管；testis 內進行 精子生成（spermatogenesis） 的場所。\n\n**血睪屏障（blood-testis barrier）｜血睪屏障（blood-testis barrier）**\n血睪屏障；由 塞爾托利氏細胞（Sertoli cell） 緊密接合（tight junction） 形成，保護發育中的 germ cells。",
+          "id": "c2e846d98"
         },
         {
           "type": "card",
-          "title": "ABP／theca cell",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**ABP｜ABP**\nAndrogen-binding protein；由 Sertoli cell 分泌，維持 seminiferous tubule 內高 testosterone。\n\n**theca cell｜theca cell**\n卵泡膜細胞；受 LH 刺激製造 androgen。",
+          "title": "雄激素結合蛋白（ABP）／卵泡膜細胞（theca cell）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**雄激素結合蛋白（ABP）｜雄激素結合蛋白**\n雄激素（Androgen）-binding protein；由 塞爾托利氏細胞（Sertoli cell） 分泌，維持 曲細精管（seminiferous tubule） 內高 睪固酮（testosterone）。\n\n**卵泡膜細胞（theca cell）｜卵泡膜細胞**\n卵泡膜細胞；受 黃體生成素（LH） 刺激製造 雄激素。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -697,15 +743,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「ABP／theca cell」，並說出一個判斷依據。",
-          "answer": "**ABP｜ABP**\nAndrogen-binding protein；由 Sertoli cell 分泌，維持 seminiferous tubule 內高 testosterone。\n\n**theca cell｜theca cell**\n卵泡膜細胞；受 LH 刺激製造 androgen。",
+          "q": "用自己的話說明「雄激素結合蛋白（ABP）／卵泡膜細胞（theca cell）」，並說出一個判斷依據。",
+          "answer": "**雄激素結合蛋白（ABP）｜雄激素結合蛋白（ABP）**\n雄激素（Androgen）-binding protein；由 塞爾托利氏細胞（Sertoli cell） 分泌，維持 曲細精管（seminiferous tubule） 內高 睪固酮（testosterone）。\n\n**卵泡膜細胞（theca cell）｜卵泡膜細胞（theca cell）**\n卵泡膜細胞；受 黃體生成素（LH） 刺激製造 雄激素（androgen）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**ABP｜ABP**\nAndrogen-binding protein；由 Sertoli cell 分泌，維持 seminiferous tubule 內高 testosterone。\n\n**theca cell｜theca cell**\n卵泡膜細胞；受 LH 刺激製造 androgen。"
+          "explain": "**雄激素結合蛋白（ABP）｜雄激素結合蛋白（ABP）**\n雄激素（Androgen）-binding protein；由 塞爾托利氏細胞（Sertoli cell） 分泌，維持 曲細精管（seminiferous tubule） 內高 睪固酮（testosterone）。\n\n**卵泡膜細胞（theca cell）｜卵泡膜細胞（theca cell）**\n卵泡膜細胞；受 黃體生成素（LH） 刺激製造 雄激素（androgen）。",
+          "id": "c91556cae"
         },
         {
           "type": "card",
-          "title": "granulosa cell／aromatase",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**granulosa cell｜granulosa cell**\n顆粒細胞；受 FSH 刺激，用 aromatase 把 androgen 轉成 estrogen。\n\n**aromatase｜aromatase**\n芳香化酶；把 androgen 轉成 estrogen。",
+          "title": "顆粒細胞（granulosa cell）／芳香環酶（aromatase）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**顆粒細胞（granulosa cell）｜顆粒細胞**\n顆粒細胞；受 濾泡刺激素（FSH） 刺激，用 芳香環酶（aromatase） 把 雄激素（androgen） 轉成 雌激素（estrogen）。\n\n**芳香環酶｜芳香環酶**\n芳香化酶；把 雄激素 轉成 雌激素。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -714,21 +761,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「granulosa cell／aromatase」，並說出一個判斷依據。",
-          "answer": "**granulosa cell｜granulosa cell**\n顆粒細胞；受 FSH 刺激，用 aromatase 把 androgen 轉成 estrogen。\n\n**aromatase｜aromatase**\n芳香化酶；把 androgen 轉成 estrogen。",
+          "q": "用自己的話說明「顆粒細胞（granulosa cell）／芳香環酶（aromatase）」，並說出一個判斷依據。",
+          "answer": "**顆粒細胞（granulosa cell）｜顆粒細胞（granulosa cell）**\n顆粒細胞；受 濾泡刺激素（FSH） 刺激，用 芳香環酶（aromatase） 把 雄激素（androgen） 轉成 雌激素（estrogen）。\n\n**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n芳香化酶；把 雄激素（androgen） 轉成 雌激素（estrogen）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**granulosa cell｜granulosa cell**\n顆粒細胞；受 FSH 刺激，用 aromatase 把 androgen 轉成 estrogen。\n\n**aromatase｜aromatase**\n芳香化酶；把 androgen 轉成 estrogen。"
+          "explain": "**顆粒細胞（granulosa cell）｜顆粒細胞（granulosa cell）**\n顆粒細胞；受 濾泡刺激素（FSH） 刺激，用 芳香環酶（aromatase） 把 雄激素（androgen） 轉成 雌激素（estrogen）。\n\n**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n芳香化酶；把 雄激素（androgen） 轉成 雌激素（estrogen）。",
+          "id": "ceb461fe8"
         },
         {
           "type": "example",
-          "title": "範例拆解：granulosa cell／aromatase",
-          "problem": "用自己的話說明「granulosa cell／aromatase」，並說出一個判斷依據。",
+          "title": "範例拆解：顆粒細胞（granulosa cell）／芳香環酶（aromatase）",
+          "problem": "用自己的話說明「顆粒細胞（granulosa cell）／芳香環酶（aromatase）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：granulosa cell／aromatase",
-            "**granulosa cell｜granulosa cell**\n顆粒細胞；受 FSH 刺激，用 aromatase 把 androgen 轉成 estrogen。\n\n**aromatase｜aromatase**\n芳香化酶；把 androgen 轉成 estrogen。",
-            "把判斷依據連回題目：**granulosa cell｜granulosa cell**\n顆粒細胞；受 FSH 刺激，用 aromatase 把 androgen 轉成 estrogen。\n\n**aromatase｜aromatase**\n芳香化酶；把 androgen 轉成 estrogen。"
+            "先確認題目問的主題：顆粒細胞（granulosa cell）／芳香環酶（aromatase）",
+            "**顆粒細胞（granulosa cell）｜顆粒細胞（granulosa cell）**\n顆粒細胞；受 濾泡刺激素（FSH） 刺激，用 芳香環酶（aromatase） 把 雄激素（androgen） 轉成 雌激素（estrogen）。\n\n**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n芳香化酶；把 雄激素（androgen） 轉成 雌激素（estrogen）。",
+            "把判斷依據連回題目：**顆粒細胞（granulosa cell）｜顆粒細胞（granulosa cell）**\n顆粒細胞；受 濾泡刺激素（FSH） 刺激，用 芳香環酶（aromatase） 把 雄激素（androgen） 轉成 雌激素（estrogen）。\n\n**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n芳香化酶；把 雄激素（androgen） 轉成 雌激素（estrogen）。"
           ],
-          "answer": "**granulosa cell｜granulosa cell**\n顆粒細胞；受 FSH 刺激，用 aromatase 把 androgen 轉成 estrogen。\n\n**aromatase｜aromatase**\n芳香化酶；把 androgen 轉成 estrogen。"
+          "answer": "**顆粒細胞（granulosa cell）｜顆粒細胞（granulosa cell）**\n顆粒細胞；受 濾泡刺激素（FSH） 刺激，用 芳香環酶（aromatase） 把 雄激素（androgen） 轉成 雌激素（estrogen）。\n\n**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n芳香化酶；把 雄激素（androgen） 轉成 雌激素（estrogen）。"
         },
         {
           "type": "practice",
@@ -737,17 +785,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「ABP／theca cell」，並說出一個判斷依據。",
-              "answer": "**ABP｜ABP**\nAndrogen-binding protein；由 Sertoli cell 分泌，維持 seminiferous tubule 內高 testosterone。\n\n**theca cell｜theca cell**\n卵泡膜細胞；受 LH 刺激製造 androgen。",
+              "q": "用自己的話說明「雄激素結合蛋白（ABP）／卵泡膜細胞（theca cell）」，並說出一個判斷依據。",
+              "answer": "**雄激素結合蛋白（ABP）｜雄激素結合蛋白（ABP）**\n雄激素（Androgen）-binding protein；由 塞爾托利氏細胞（Sertoli cell） 分泌，維持 曲細精管（seminiferous tubule） 內高 睪固酮（testosterone）。\n\n**卵泡膜細胞（theca cell）｜卵泡膜細胞（theca cell）**\n卵泡膜細胞；受 黃體生成素（LH） 刺激製造 雄激素（androgen）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**ABP｜ABP**\nAndrogen-binding protein；由 Sertoli cell 分泌，維持 seminiferous tubule 內高 testosterone。\n\n**theca cell｜theca cell**\n卵泡膜細胞；受 LH 刺激製造 androgen。"
+              "explain": "**雄激素結合蛋白（ABP）｜雄激素結合蛋白（ABP）**\n雄激素（Androgen）-binding protein；由 塞爾托利氏細胞（Sertoli cell） 分泌，維持 曲細精管（seminiferous tubule） 內高 睪固酮（testosterone）。\n\n**卵泡膜細胞（theca cell）｜卵泡膜細胞（theca cell）**\n卵泡膜細胞；受 黃體生成素（LH） 刺激製造 雄激素（androgen）。",
+              "id": "c91556cae"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「granulosa cell／aromatase」，並說出一個判斷依據。",
-              "answer": "**granulosa cell｜granulosa cell**\n顆粒細胞；受 FSH 刺激，用 aromatase 把 androgen 轉成 estrogen。\n\n**aromatase｜aromatase**\n芳香化酶；把 androgen 轉成 estrogen。",
+              "q": "用自己的話說明「顆粒細胞（granulosa cell）／芳香環酶（aromatase）」，並說出一個判斷依據。",
+              "answer": "**顆粒細胞（granulosa cell）｜顆粒細胞（granulosa cell）**\n顆粒細胞；受 濾泡刺激素（FSH） 刺激，用 芳香環酶（aromatase） 把 雄激素（androgen） 轉成 雌激素（estrogen）。\n\n**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n芳香化酶；把 雄激素（androgen） 轉成 雌激素（estrogen）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**granulosa cell｜granulosa cell**\n顆粒細胞；受 FSH 刺激，用 aromatase 把 androgen 轉成 estrogen。\n\n**aromatase｜aromatase**\n芳香化酶；把 androgen 轉成 estrogen。"
+              "explain": "**顆粒細胞（granulosa cell）｜顆粒細胞（granulosa cell）**\n顆粒細胞；受 濾泡刺激素（FSH） 刺激，用 芳香環酶（aromatase） 把 雄激素（androgen） 轉成 雌激素（estrogen）。\n\n**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n芳香化酶；把 雄激素（androgen） 轉成 雌激素（estrogen）。",
+              "id": "ceb461fe8"
             }
           ]
         },
@@ -755,27 +805,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "seminiferous tubule／blood-testis barrier：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "ABP／theca cell：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**seminiferous tubule｜seminiferous tubule**\n曲細精管；testis 內進行 spermatogenesis 的場所。\n\n**blood-testis barrier｜blood-testis barrier**\n血睪屏障；由 Sertoli cell tight junction 形成，保護發育中的 germ cells。",
-            "**ABP｜ABP**\nAndrogen-binding protein；由 Sertoli cell 分泌，維持 seminiferous tubule 內高 testosterone。\n\n**theca cell｜theca cell**\n卵泡膜細胞；受 LH 刺激製造 androgen。"
+            "曲細精管（seminiferous tubule）／血睪屏障（blood-testis barrier）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "雄激素結合蛋白（ABP）／卵泡膜細胞（theca cell）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**曲細精管（seminiferous tubule）｜曲細精管（seminiferous tubule）**\n曲細精管；testis 內進行 精子生成（spermatogenesis） 的場所。\n\n**血睪屏障（blood-testis barrier）｜血睪屏障（blood-testis barrier）**\n血睪屏障；由 塞爾托利氏細胞（Sertoli cell） 緊密接合（tight junction） 形成，保護發育中的 germ cells。",
+            "**雄激素結合蛋白（ABP）｜雄激素結合蛋白（ABP）**\n雄激素（Androgen）-binding protein；由 塞爾托利氏細胞（Sertoli cell） 分泌，維持 曲細精管（seminiferous tubule） 內高 睪固酮（testosterone）。\n\n**卵泡膜細胞（theca cell）｜卵泡膜細胞（theca cell）**\n卵泡膜細胞；受 黃體生成素（LH） 刺激製造 雄激素（androgen）。"
           ],
           "flash": [
             {
-              "front": "seminiferous tubule／blood-testis barrier",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "曲細精管（seminiferous tubule）／血睪屏障（blood-testis barrier）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f925dbe4f"
             },
             {
-              "front": "ABP／theca cell",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "雄激素結合蛋白（ABP）／卵泡膜細胞（theca cell）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fe1d33328"
             },
             {
-              "front": "granulosa cell／aromatase",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "顆粒細胞（granulosa cell）／芳香環酶（aromatase）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f94d0c090"
             },
             {
-              "front": "用自己的話說明「seminiferous tubule／blood-testis barrier」，並說出一個判斷依據。",
-              "back": "**seminiferous tubule｜seminiferous tubule**\n曲細精管；testis 內進行 spermatogenesis 的場所。\n\n**blood-testis barrier｜blood-testis barrier**\n血睪屏障；由 Sertoli cell tight junction 形成，保護發育中的 germ cells。"
+              "front": "用自己的話說明「曲細精管（seminiferous tubule）／血睪屏障（blood-testis barrier）」，並說出一個判斷依據。",
+              "back": "**曲細精管（seminiferous tubule）｜曲細精管（seminiferous tubule）**\n曲細精管；testis 內進行 精子生成（spermatogenesis） 的場所。\n\n**血睪屏障（blood-testis barrier）｜血睪屏障（blood-testis barrier）**\n血睪屏障；由 塞爾托利氏細胞（Sertoli cell） 緊密接合（tight junction） 形成，保護發育中的 germ cells。",
+              "id": "f2e846d98"
             }
           ]
         }

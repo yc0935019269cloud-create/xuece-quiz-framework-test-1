@@ -23,9 +23,9 @@
       "id": "terms-25-1",
       "title": "中英文核心名詞 25",
       "goals": [
-        "解釋photoreceptor／preganglionic",
-        "解釋corpus luteum／target cells",
-        "解釋reabsorption／macula densa"
+        "解釋感光細胞（photoreceptor）／節前（preganglionic）",
+        "解釋黃體（corpus luteum）／標的細胞（target cells）",
+        "解釋再吸收（reabsorption）／緻密斑（macula densa）"
       ],
       "steps": [
         {
@@ -35,8 +35,8 @@
         },
         {
           "type": "card",
-          "title": "photoreceptor／preganglionic",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**photoreceptor｜photoreceptor**\n把光變成神經訊號的感光細胞（photoreceptor）\n\n**preganglionic｜preganglionic**\n從 CNS 到轉運站的第一棒神經（preganglionic）",
+          "title": "感光細胞（photoreceptor）／節前（preganglionic）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**感光細胞（photoreceptor）｜感光細胞**\n把光變成神經訊號的感光細胞（photoreceptor）\n\n**節前（preganglionic）｜節前**\n從 中樞神經系統（CNS） 到轉運站的第一棒神經（preganglionic）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -45,15 +45,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「photoreceptor／preganglionic」，並說出一個判斷依據。",
-          "answer": "**photoreceptor｜photoreceptor**\n把光變成神經訊號的感光細胞（photoreceptor）\n\n**preganglionic｜preganglionic**\n從 CNS 到轉運站的第一棒神經（preganglionic）",
+          "q": "用自己的話說明「感光細胞（photoreceptor）／節前（preganglionic）」，並說出一個判斷依據。",
+          "answer": "**感光細胞（photoreceptor）｜感光細胞（photoreceptor）**\n把光變成神經訊號的感光細胞（photoreceptor）\n\n**節前（preganglionic）｜節前（preganglionic）**\n從 中樞神經系統（CNS） 到轉運站的第一棒神經（preganglionic）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**photoreceptor｜photoreceptor**\n把光變成神經訊號的感光細胞（photoreceptor）\n\n**preganglionic｜preganglionic**\n從 CNS 到轉運站的第一棒神經（preganglionic）"
+          "explain": "**感光細胞（photoreceptor）｜感光細胞（photoreceptor）**\n把光變成神經訊號的感光細胞（photoreceptor）\n\n**節前（preganglionic）｜節前（preganglionic）**\n從 中樞神經系統（CNS） 到轉運站的第一棒神經（preganglionic）",
+          "id": "c8dc11da5"
         },
         {
           "type": "card",
-          "title": "corpus luteum／target cells",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**corpus luteum｜corpus luteum**\n排卵後留下、暫時做 progesterone 的黃體（corpus luteum）\n\n**target cells｜target cells**\n有正確接收器的目標細胞（target cells）",
+          "title": "黃體（corpus luteum）／標的細胞（target cells）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**黃體（corpus luteum）｜黃體**\n排卵後留下、暫時做 黃體素（progesterone） 的黃體（corpus luteum）\n\n**標的細胞（target cells）｜標的細胞**\n有正確接收器的目標細胞（target cells）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -62,15 +63,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「corpus luteum／target cells」，並說出一個判斷依據。",
-          "answer": "**corpus luteum｜corpus luteum**\n排卵後留下、暫時做 progesterone 的黃體（corpus luteum）\n\n**target cells｜target cells**\n有正確接收器的目標細胞（target cells）",
+          "q": "用自己的話說明「黃體（corpus luteum）／標的細胞（target cells）」，並說出一個判斷依據。",
+          "answer": "**黃體（corpus luteum）｜黃體（corpus luteum）**\n排卵後留下、暫時做 黃體素（progesterone） 的黃體（corpus luteum）\n\n**標的細胞（target cells）｜標的細胞（target cells）**\n有正確接收器的目標細胞（target cells）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**corpus luteum｜corpus luteum**\n排卵後留下、暫時做 progesterone 的黃體（corpus luteum）\n\n**target cells｜target cells**\n有正確接收器的目標細胞（target cells）"
+          "explain": "**黃體（corpus luteum）｜黃體（corpus luteum）**\n排卵後留下、暫時做 黃體素（progesterone） 的黃體（corpus luteum）\n\n**標的細胞（target cells）｜標的細胞（target cells）**\n有正確接收器的目標細胞（target cells）",
+          "id": "c8b9edaa7"
         },
         {
           "type": "card",
-          "title": "reabsorption／macula densa",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**reabsorption｜reabsorption**\n把身體還想要的東西撿回來（reabsorption）\n\n**macula densa｜macula densa**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）",
+          "title": "再吸收（reabsorption）／緻密斑（macula densa）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**再吸收（reabsorption）｜再吸收**\n把身體還想要的東西撿回來（reabsorption）\n\n**緻密斑（macula densa）｜緻密斑**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -79,21 +81,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「reabsorption／macula densa」，並說出一個判斷依據。",
-          "answer": "**reabsorption｜reabsorption**\n把身體還想要的東西撿回來（reabsorption）\n\n**macula densa｜macula densa**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）",
+          "q": "用自己的話說明「再吸收（reabsorption）／緻密斑（macula densa）」，並說出一個判斷依據。",
+          "answer": "**再吸收（reabsorption）｜再吸收（reabsorption）**\n把身體還想要的東西撿回來（reabsorption）\n\n**緻密斑（macula densa）｜緻密斑（macula densa）**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**reabsorption｜reabsorption**\n把身體還想要的東西撿回來（reabsorption）\n\n**macula densa｜macula densa**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）"
+          "explain": "**再吸收（reabsorption）｜再吸收（reabsorption）**\n把身體還想要的東西撿回來（reabsorption）\n\n**緻密斑（macula densa）｜緻密斑（macula densa）**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）",
+          "id": "c59dd91c9"
         },
         {
           "type": "example",
-          "title": "範例拆解：reabsorption／macula densa",
-          "problem": "用自己的話說明「reabsorption／macula densa」，並說出一個判斷依據。",
+          "title": "範例拆解：再吸收（reabsorption）／緻密斑（macula densa）",
+          "problem": "用自己的話說明「再吸收（reabsorption）／緻密斑（macula densa）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：reabsorption／macula densa",
-            "**reabsorption｜reabsorption**\n把身體還想要的東西撿回來（reabsorption）\n\n**macula densa｜macula densa**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）",
-            "把判斷依據連回題目：**reabsorption｜reabsorption**\n把身體還想要的東西撿回來（reabsorption）\n\n**macula densa｜macula densa**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）"
+            "先確認題目問的主題：再吸收（reabsorption）／緻密斑（macula densa）",
+            "**再吸收（reabsorption）｜再吸收（reabsorption）**\n把身體還想要的東西撿回來（reabsorption）\n\n**緻密斑（macula densa）｜緻密斑（macula densa）**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）",
+            "把判斷依據連回題目：**再吸收（reabsorption）｜再吸收（reabsorption）**\n把身體還想要的東西撿回來（reabsorption）\n\n**緻密斑（macula densa）｜緻密斑（macula densa）**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）"
           ],
-          "answer": "**reabsorption｜reabsorption**\n把身體還想要的東西撿回來（reabsorption）\n\n**macula densa｜macula densa**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）"
+          "answer": "**再吸收（reabsorption）｜再吸收（reabsorption）**\n把身體還想要的東西撿回來（reabsorption）\n\n**緻密斑（macula densa）｜緻密斑（macula densa）**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）"
         },
         {
           "type": "practice",
@@ -102,17 +105,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「corpus luteum／target cells」，並說出一個判斷依據。",
-              "answer": "**corpus luteum｜corpus luteum**\n排卵後留下、暫時做 progesterone 的黃體（corpus luteum）\n\n**target cells｜target cells**\n有正確接收器的目標細胞（target cells）",
+              "q": "用自己的話說明「黃體（corpus luteum）／標的細胞（target cells）」，並說出一個判斷依據。",
+              "answer": "**黃體（corpus luteum）｜黃體（corpus luteum）**\n排卵後留下、暫時做 黃體素（progesterone） 的黃體（corpus luteum）\n\n**標的細胞（target cells）｜標的細胞（target cells）**\n有正確接收器的目標細胞（target cells）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**corpus luteum｜corpus luteum**\n排卵後留下、暫時做 progesterone 的黃體（corpus luteum）\n\n**target cells｜target cells**\n有正確接收器的目標細胞（target cells）"
+              "explain": "**黃體（corpus luteum）｜黃體（corpus luteum）**\n排卵後留下、暫時做 黃體素（progesterone） 的黃體（corpus luteum）\n\n**標的細胞（target cells）｜標的細胞（target cells）**\n有正確接收器的目標細胞（target cells）",
+              "id": "c8b9edaa7"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「reabsorption／macula densa」，並說出一個判斷依據。",
-              "answer": "**reabsorption｜reabsorption**\n把身體還想要的東西撿回來（reabsorption）\n\n**macula densa｜macula densa**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）",
+              "q": "用自己的話說明「再吸收（reabsorption）／緻密斑（macula densa）」，並說出一個判斷依據。",
+              "answer": "**再吸收（reabsorption）｜再吸收（reabsorption）**\n把身體還想要的東西撿回來（reabsorption）\n\n**緻密斑（macula densa）｜緻密斑（macula densa）**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**reabsorption｜reabsorption**\n把身體還想要的東西撿回來（reabsorption）\n\n**macula densa｜macula densa**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）"
+              "explain": "**再吸收（reabsorption）｜再吸收（reabsorption）**\n把身體還想要的東西撿回來（reabsorption）\n\n**緻密斑（macula densa）｜緻密斑（macula densa）**\n負責聞尿管裡鹽夠不夠的感測細胞（macula densa）",
+              "id": "c59dd91c9"
             }
           ]
         },
@@ -120,27 +125,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "photoreceptor／preganglionic：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "corpus luteum／target cells：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**photoreceptor｜photoreceptor**\n把光變成神經訊號的感光細胞（photoreceptor）\n\n**preganglionic｜preganglionic**\n從 CNS 到轉運站的第一棒神經（preganglionic）",
-            "**corpus luteum｜corpus luteum**\n排卵後留下、暫時做 progesterone 的黃體（corpus luteum）\n\n**target cells｜target cells**\n有正確接收器的目標細胞（target cells）"
+            "感光細胞（photoreceptor）／節前（preganglionic）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "黃體（corpus luteum）／標的細胞（target cells）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**感光細胞（photoreceptor）｜感光細胞（photoreceptor）**\n把光變成神經訊號的感光細胞（photoreceptor）\n\n**節前（preganglionic）｜節前（preganglionic）**\n從 中樞神經系統（CNS） 到轉運站的第一棒神經（preganglionic）",
+            "**黃體（corpus luteum）｜黃體（corpus luteum）**\n排卵後留下、暫時做 黃體素（progesterone） 的黃體（corpus luteum）\n\n**標的細胞（target cells）｜標的細胞（target cells）**\n有正確接收器的目標細胞（target cells）"
           ],
           "flash": [
             {
-              "front": "photoreceptor／preganglionic",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "感光細胞（photoreceptor）／節前（preganglionic）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f8ae9e2c9"
             },
             {
-              "front": "corpus luteum／target cells",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "黃體（corpus luteum）／標的細胞（target cells）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f2224b112"
             },
             {
-              "front": "reabsorption／macula densa",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "再吸收（reabsorption）／緻密斑（macula densa）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f89cb3fa2"
             },
             {
-              "front": "用自己的話說明「photoreceptor／preganglionic」，並說出一個判斷依據。",
-              "back": "**photoreceptor｜photoreceptor**\n把光變成神經訊號的感光細胞（photoreceptor）\n\n**preganglionic｜preganglionic**\n從 CNS 到轉運站的第一棒神經（preganglionic）"
+              "front": "用自己的話說明「感光細胞（photoreceptor）／節前（preganglionic）」，並說出一個判斷依據。",
+              "back": "**感光細胞（photoreceptor）｜感光細胞（photoreceptor）**\n把光變成神經訊號的感光細胞（photoreceptor）\n\n**節前（preganglionic）｜節前（preganglionic）**\n從 中樞神經系統（CNS） 到轉運站的第一棒神經（preganglionic）",
+              "id": "f8dc11da5"
             }
           ]
         }
@@ -150,9 +159,9 @@
       "id": "terms-26-1",
       "title": "中英文核心名詞 26",
       "goals": [
-        "解釋implantation／Sertoli cell",
-        "解釋progesterone／testosterone",
-        "解釋hypothalamus／target cell"
+        "解釋著床（implantation）／塞爾托利氏細胞（Sertoli cell）",
+        "解釋黃體素（progesterone）／睪固酮（testosterone）",
+        "解釋下視丘（hypothalamus）／標的細胞（target cell）"
       ],
       "steps": [
         {
@@ -162,8 +171,8 @@
         },
         {
           "type": "card",
-          "title": "implantation／Sertoli cell",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**implantation｜implantation**\n小胚胎黏進子宮內膜安家（implantation）\n\n**Sertoli cell｜Sertoli cell**\n餵養並保護發育中精子的保母細胞（Sertoli cell）",
+          "title": "著床（implantation）／塞爾托利氏細胞（Sertoli cell）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**著床（implantation）｜著床**\n小胚胎黏進子宮內膜安家（implantation）\n\n**塞爾托利氏細胞（Sertoli cell）｜塞爾托利氏細胞**\n餵養並保護發育中精子的保母細胞（Sertoli cell）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -172,15 +181,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「implantation／Sertoli cell」，並說出一個判斷依據。",
-          "answer": "**implantation｜implantation**\n小胚胎黏進子宮內膜安家（implantation）\n\n**Sertoli cell｜Sertoli cell**\n餵養並保護發育中精子的保母細胞（Sertoli cell）",
+          "q": "用自己的話說明「著床（implantation）／塞爾托利氏細胞（Sertoli cell）」，並說出一個判斷依據。",
+          "answer": "**著床（implantation）｜著床（implantation）**\n小胚胎黏進子宮內膜安家（implantation）\n\n**塞爾托利氏細胞（Sertoli cell）｜塞爾托利氏細胞（Sertoli cell）**\n餵養並保護發育中精子的保母細胞（Sertoli cell）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**implantation｜implantation**\n小胚胎黏進子宮內膜安家（implantation）\n\n**Sertoli cell｜Sertoli cell**\n餵養並保護發育中精子的保母細胞（Sertoli cell）"
+          "explain": "**著床（implantation）｜著床（implantation）**\n小胚胎黏進子宮內膜安家（implantation）\n\n**塞爾托利氏細胞（Sertoli cell）｜塞爾托利氏細胞（Sertoli cell）**\n餵養並保護發育中精子的保母細胞（Sertoli cell）",
+          "id": "c5b1f82f5"
         },
         {
           "type": "card",
-          "title": "progesterone／testosterone",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**progesterone｜progesterone**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**testosterone｜testosterone**\n主要男性 androgen，也支援精子生成（testosterone）",
+          "title": "黃體素（progesterone）／睪固酮（testosterone）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**黃體素（progesterone）｜黃體素**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**睪固酮（testosterone）｜睪固酮**\n主要男性 雄激素（androgen），也支援精子生成（testosterone）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -189,15 +199,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「progesterone／testosterone」，並說出一個判斷依據。",
-          "answer": "**progesterone｜progesterone**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**testosterone｜testosterone**\n主要男性 androgen，也支援精子生成（testosterone）",
+          "q": "用自己的話說明「黃體素（progesterone）／睪固酮（testosterone）」，並說出一個判斷依據。",
+          "answer": "**黃體素（progesterone）｜黃體素（progesterone）**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**睪固酮（testosterone）｜睪固酮（testosterone）**\n主要男性 雄激素（androgen），也支援精子生成（testosterone）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**progesterone｜progesterone**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**testosterone｜testosterone**\n主要男性 androgen，也支援精子生成（testosterone）"
+          "explain": "**黃體素（progesterone）｜黃體素（progesterone）**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**睪固酮（testosterone）｜睪固酮（testosterone）**\n主要男性 雄激素（androgen），也支援精子生成（testosterone）",
+          "id": "c78d05d1d"
         },
         {
           "type": "card",
-          "title": "hypothalamus／target cell",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**hypothalamus｜hypothalamus**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**target cell｜target cell**\n有正確接收器的目標細胞（target cell）",
+          "title": "下視丘（hypothalamus）／標的細胞（target cell）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**下視丘（hypothalamus）｜下視丘**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**標的細胞（target cell）｜標的細胞**\n有正確接收器的目標細胞（target cell）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -206,21 +217,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「hypothalamus／target cell」，並說出一個判斷依據。",
-          "answer": "**hypothalamus｜hypothalamus**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**target cell｜target cell**\n有正確接收器的目標細胞（target cell）",
+          "q": "用自己的話說明「下視丘（hypothalamus）／標的細胞（target cell）」，並說出一個判斷依據。",
+          "answer": "**下視丘（hypothalamus）｜下視丘（hypothalamus）**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**標的細胞（target cell）｜標的細胞（target cell）**\n有正確接收器的目標細胞（target cell）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**hypothalamus｜hypothalamus**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**target cell｜target cell**\n有正確接收器的目標細胞（target cell）"
+          "explain": "**下視丘（hypothalamus）｜下視丘（hypothalamus）**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**標的細胞（target cell）｜標的細胞（target cell）**\n有正確接收器的目標細胞（target cell）",
+          "id": "ce7a75405"
         },
         {
           "type": "example",
-          "title": "範例拆解：hypothalamus／target cell",
-          "problem": "用自己的話說明「hypothalamus／target cell」，並說出一個判斷依據。",
+          "title": "範例拆解：下視丘（hypothalamus）／標的細胞（target cell）",
+          "problem": "用自己的話說明「下視丘（hypothalamus）／標的細胞（target cell）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：hypothalamus／target cell",
-            "**hypothalamus｜hypothalamus**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**target cell｜target cell**\n有正確接收器的目標細胞（target cell）",
-            "把判斷依據連回題目：**hypothalamus｜hypothalamus**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**target cell｜target cell**\n有正確接收器的目標細胞（target cell）"
+            "先確認題目問的主題：下視丘（hypothalamus）／標的細胞（target cell）",
+            "**下視丘（hypothalamus）｜下視丘（hypothalamus）**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**標的細胞（target cell）｜標的細胞（target cell）**\n有正確接收器的目標細胞（target cell）",
+            "把判斷依據連回題目：**下視丘（hypothalamus）｜下視丘（hypothalamus）**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**標的細胞（target cell）｜標的細胞（target cell）**\n有正確接收器的目標細胞（target cell）"
           ],
-          "answer": "**hypothalamus｜hypothalamus**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**target cell｜target cell**\n有正確接收器的目標細胞（target cell）"
+          "answer": "**下視丘（hypothalamus）｜下視丘（hypothalamus）**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**標的細胞（target cell）｜標的細胞（target cell）**\n有正確接收器的目標細胞（target cell）"
         },
         {
           "type": "practice",
@@ -229,17 +241,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「progesterone／testosterone」，並說出一個判斷依據。",
-              "answer": "**progesterone｜progesterone**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**testosterone｜testosterone**\n主要男性 androgen，也支援精子生成（testosterone）",
+              "q": "用自己的話說明「黃體素（progesterone）／睪固酮（testosterone）」，並說出一個判斷依據。",
+              "answer": "**黃體素（progesterone）｜黃體素（progesterone）**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**睪固酮（testosterone）｜睪固酮（testosterone）**\n主要男性 雄激素（androgen），也支援精子生成（testosterone）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**progesterone｜progesterone**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**testosterone｜testosterone**\n主要男性 androgen，也支援精子生成（testosterone）"
+              "explain": "**黃體素（progesterone）｜黃體素（progesterone）**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**睪固酮（testosterone）｜睪固酮（testosterone）**\n主要男性 雄激素（androgen），也支援精子生成（testosterone）",
+              "id": "c78d05d1d"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「hypothalamus／target cell」，並說出一個判斷依據。",
-              "answer": "**hypothalamus｜hypothalamus**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**target cell｜target cell**\n有正確接收器的目標細胞（target cell）",
+              "q": "用自己的話說明「下視丘（hypothalamus）／標的細胞（target cell）」，並說出一個判斷依據。",
+              "answer": "**下視丘（hypothalamus）｜下視丘（hypothalamus）**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**標的細胞（target cell）｜標的細胞（target cell）**\n有正確接收器的目標細胞（target cell）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**hypothalamus｜hypothalamus**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**target cell｜target cell**\n有正確接收器的目標細胞（target cell）"
+              "explain": "**下視丘（hypothalamus）｜下視丘（hypothalamus）**\n連接神經和荷爾蒙控制的下視丘（hypothalamus）\n\n**標的細胞（target cell）｜標的細胞（target cell）**\n有正確接收器的目標細胞（target cell）",
+              "id": "ce7a75405"
             }
           ]
         },
@@ -247,27 +261,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "implantation／Sertoli cell：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "progesterone／testosterone：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**implantation｜implantation**\n小胚胎黏進子宮內膜安家（implantation）\n\n**Sertoli cell｜Sertoli cell**\n餵養並保護發育中精子的保母細胞（Sertoli cell）",
-            "**progesterone｜progesterone**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**testosterone｜testosterone**\n主要男性 androgen，也支援精子生成（testosterone）"
+            "著床（implantation）／塞爾托利氏細胞（Sertoli cell）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "黃體素（progesterone）／睪固酮（testosterone）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**著床（implantation）｜著床（implantation）**\n小胚胎黏進子宮內膜安家（implantation）\n\n**塞爾托利氏細胞（Sertoli cell）｜塞爾托利氏細胞（Sertoli cell）**\n餵養並保護發育中精子的保母細胞（Sertoli cell）",
+            "**黃體素（progesterone）｜黃體素（progesterone）**\n排卵後穩住子宮內膜、支持懷孕的荷爾蒙（progesterone）\n\n**睪固酮（testosterone）｜睪固酮（testosterone）**\n主要男性 雄激素（androgen），也支援精子生成（testosterone）"
           ],
           "flash": [
             {
-              "front": "implantation／Sertoli cell",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "著床（implantation）／塞爾托利氏細胞（Sertoli cell）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f29d7fc4c"
             },
             {
-              "front": "progesterone／testosterone",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "黃體素（progesterone）／睪固酮（testosterone）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f03f5e8be"
             },
             {
-              "front": "hypothalamus／target cell",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "下視丘（hypothalamus）／標的細胞（target cell）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f746a6758"
             },
             {
-              "front": "用自己的話說明「implantation／Sertoli cell」，並說出一個判斷依據。",
-              "back": "**implantation｜implantation**\n小胚胎黏進子宮內膜安家（implantation）\n\n**Sertoli cell｜Sertoli cell**\n餵養並保護發育中精子的保母細胞（Sertoli cell）"
+              "front": "用自己的話說明「著床（implantation）／塞爾托利氏細胞（Sertoli cell）」，並說出一個判斷依據。",
+              "back": "**著床（implantation）｜著床（implantation）**\n小胚胎黏進子宮內膜安家（implantation）\n\n**塞爾托利氏細胞（Sertoli cell）｜塞爾托利氏細胞（Sertoli cell）**\n餵養並保護發育中精子的保母細胞（Sertoli cell）",
+              "id": "f5b1f82f5"
             }
           ]
         }
@@ -277,9 +295,9 @@
       "id": "terms-27-1",
       "title": "中英文核心名詞 27",
       "goals": [
-        "解釋homeostasis／aldosterone",
-        "解釋sympathetic／cholesterol",
-        "解釋Leydig cell／intracrine"
+        "解釋homeostasis／醛固酮（aldosterone）",
+        "解釋交感神經（sympathetic）／膽固醇（cholesterol）",
+        "解釋萊迪氏細胞（Leydig cell）／胞內分泌（intracrine）"
       ],
       "steps": [
         {
@@ -289,8 +307,8 @@
         },
         {
           "type": "card",
-          "title": "homeostasis／aldosterone",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**homeostasis｜homeostasis**\n把身體維持在剛剛好的狀態（homeostasis）\n\n**aldosterone｜aldosterone**\n叫腎臟留鹽留水、排鉀的荷爾蒙（aldosterone）",
+          "title": "homeostasis／醛固酮（aldosterone）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**homeostasis｜homeostasis**\n把身體維持在剛剛好的狀態（homeostasis）\n\n**醛固酮（aldosterone）｜醛固酮**\n叫腎臟留鹽留水、排鉀的荷爾蒙（aldosterone）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -299,15 +317,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「homeostasis／aldosterone」，並說出一個判斷依據。",
-          "answer": "**homeostasis｜homeostasis**\n把身體維持在剛剛好的狀態（homeostasis）\n\n**aldosterone｜aldosterone**\n叫腎臟留鹽留水、排鉀的荷爾蒙（aldosterone）",
+          "q": "用自己的話說明「homeostasis／醛固酮（aldosterone）」，並說出一個判斷依據。",
+          "answer": "**homeostasis｜homeostasis**\n把身體維持在剛剛好的狀態（homeostasis）\n\n**醛固酮（aldosterone）｜醛固酮（aldosterone）**\n叫腎臟留鹽留水、排鉀的荷爾蒙（aldosterone）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**homeostasis｜homeostasis**\n把身體維持在剛剛好的狀態（homeostasis）\n\n**aldosterone｜aldosterone**\n叫腎臟留鹽留水、排鉀的荷爾蒙（aldosterone）"
+          "explain": "**homeostasis｜homeostasis**\n把身體維持在剛剛好的狀態（homeostasis）\n\n**醛固酮（aldosterone）｜醛固酮（aldosterone）**\n叫腎臟留鹽留水、排鉀的荷爾蒙（aldosterone）",
+          "id": "c4c35bd53"
         },
         {
           "type": "card",
-          "title": "sympathetic／cholesterol",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**sympathetic｜sympathetic**\n身體的緊急備戰模式（sympathetic）\n\n**cholesterol｜cholesterol**\n製造 steroid hormone 的原料（cholesterol）",
+          "title": "交感神經（sympathetic）／膽固醇（cholesterol）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**交感神經（sympathetic）｜交感神經**\n身體的緊急備戰模式（sympathetic）\n\n**膽固醇（cholesterol）｜膽固醇**\n製造 類固醇荷爾蒙（steroid hormone） 的原料（cholesterol）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -316,15 +335,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「sympathetic／cholesterol」，並說出一個判斷依據。",
-          "answer": "**sympathetic｜sympathetic**\n身體的緊急備戰模式（sympathetic）\n\n**cholesterol｜cholesterol**\n製造 steroid hormone 的原料（cholesterol）",
+          "q": "用自己的話說明「交感神經（sympathetic）／膽固醇（cholesterol）」，並說出一個判斷依據。",
+          "answer": "**交感神經（sympathetic）｜交感神經（sympathetic）**\n身體的緊急備戰模式（sympathetic）\n\n**膽固醇（cholesterol）｜膽固醇（cholesterol）**\n製造 類固醇荷爾蒙（steroid hormone） 的原料（cholesterol）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**sympathetic｜sympathetic**\n身體的緊急備戰模式（sympathetic）\n\n**cholesterol｜cholesterol**\n製造 steroid hormone 的原料（cholesterol）"
+          "explain": "**交感神經（sympathetic）｜交感神經（sympathetic）**\n身體的緊急備戰模式（sympathetic）\n\n**膽固醇（cholesterol）｜膽固醇（cholesterol）**\n製造 類固醇荷爾蒙（steroid hormone） 的原料（cholesterol）",
+          "id": "c51fa1675"
         },
         {
           "type": "card",
-          "title": "Leydig cell／intracrine",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**Leydig cell｜Leydig cell**\n收到 LH 後製造 testosterone 的細胞（Leydig cell）\n\n**intracrine｜intracrine**\n訊號留在自己細胞裡，不送出去（intracrine）",
+          "title": "萊迪氏細胞（Leydig cell）／胞內分泌（intracrine）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**萊迪氏細胞（Leydig cell）｜萊迪氏細胞**\n收到 黃體生成素（LH） 後製造 睪固酮（testosterone） 的細胞（Leydig cell）\n\n**胞內分泌（intracrine）｜胞內分泌**\n訊號留在自己細胞裡，不送出去（intracrine）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -333,21 +353,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「Leydig cell／intracrine」，並說出一個判斷依據。",
-          "answer": "**Leydig cell｜Leydig cell**\n收到 LH 後製造 testosterone 的細胞（Leydig cell）\n\n**intracrine｜intracrine**\n訊號留在自己細胞裡，不送出去（intracrine）",
+          "q": "用自己的話說明「萊迪氏細胞（Leydig cell）／胞內分泌（intracrine）」，並說出一個判斷依據。",
+          "answer": "**萊迪氏細胞（Leydig cell）｜萊迪氏細胞（Leydig cell）**\n收到 黃體生成素（LH） 後製造 睪固酮（testosterone） 的細胞（Leydig cell）\n\n**胞內分泌（intracrine）｜胞內分泌（intracrine）**\n訊號留在自己細胞裡，不送出去（intracrine）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**Leydig cell｜Leydig cell**\n收到 LH 後製造 testosterone 的細胞（Leydig cell）\n\n**intracrine｜intracrine**\n訊號留在自己細胞裡，不送出去（intracrine）"
+          "explain": "**萊迪氏細胞（Leydig cell）｜萊迪氏細胞（Leydig cell）**\n收到 黃體生成素（LH） 後製造 睪固酮（testosterone） 的細胞（Leydig cell）\n\n**胞內分泌（intracrine）｜胞內分泌（intracrine）**\n訊號留在自己細胞裡，不送出去（intracrine）",
+          "id": "cc93d7bb9"
         },
         {
           "type": "example",
-          "title": "範例拆解：Leydig cell／intracrine",
-          "problem": "用自己的話說明「Leydig cell／intracrine」，並說出一個判斷依據。",
+          "title": "範例拆解：萊迪氏細胞（Leydig cell）／胞內分泌（intracrine）",
+          "problem": "用自己的話說明「萊迪氏細胞（Leydig cell）／胞內分泌（intracrine）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：Leydig cell／intracrine",
-            "**Leydig cell｜Leydig cell**\n收到 LH 後製造 testosterone 的細胞（Leydig cell）\n\n**intracrine｜intracrine**\n訊號留在自己細胞裡，不送出去（intracrine）",
-            "把判斷依據連回題目：**Leydig cell｜Leydig cell**\n收到 LH 後製造 testosterone 的細胞（Leydig cell）\n\n**intracrine｜intracrine**\n訊號留在自己細胞裡，不送出去（intracrine）"
+            "先確認題目問的主題：萊迪氏細胞（Leydig cell）／胞內分泌（intracrine）",
+            "**萊迪氏細胞（Leydig cell）｜萊迪氏細胞（Leydig cell）**\n收到 黃體生成素（LH） 後製造 睪固酮（testosterone） 的細胞（Leydig cell）\n\n**胞內分泌（intracrine）｜胞內分泌（intracrine）**\n訊號留在自己細胞裡，不送出去（intracrine）",
+            "把判斷依據連回題目：**萊迪氏細胞（Leydig cell）｜萊迪氏細胞（Leydig cell）**\n收到 黃體生成素（LH） 後製造 睪固酮（testosterone） 的細胞（Leydig cell）\n\n**胞內分泌（intracrine）｜胞內分泌（intracrine）**\n訊號留在自己細胞裡，不送出去（intracrine）"
           ],
-          "answer": "**Leydig cell｜Leydig cell**\n收到 LH 後製造 testosterone 的細胞（Leydig cell）\n\n**intracrine｜intracrine**\n訊號留在自己細胞裡，不送出去（intracrine）"
+          "answer": "**萊迪氏細胞（Leydig cell）｜萊迪氏細胞（Leydig cell）**\n收到 黃體生成素（LH） 後製造 睪固酮（testosterone） 的細胞（Leydig cell）\n\n**胞內分泌（intracrine）｜胞內分泌（intracrine）**\n訊號留在自己細胞裡，不送出去（intracrine）"
         },
         {
           "type": "practice",
@@ -356,17 +377,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「sympathetic／cholesterol」，並說出一個判斷依據。",
-              "answer": "**sympathetic｜sympathetic**\n身體的緊急備戰模式（sympathetic）\n\n**cholesterol｜cholesterol**\n製造 steroid hormone 的原料（cholesterol）",
+              "q": "用自己的話說明「交感神經（sympathetic）／膽固醇（cholesterol）」，並說出一個判斷依據。",
+              "answer": "**交感神經（sympathetic）｜交感神經（sympathetic）**\n身體的緊急備戰模式（sympathetic）\n\n**膽固醇（cholesterol）｜膽固醇（cholesterol）**\n製造 類固醇荷爾蒙（steroid hormone） 的原料（cholesterol）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**sympathetic｜sympathetic**\n身體的緊急備戰模式（sympathetic）\n\n**cholesterol｜cholesterol**\n製造 steroid hormone 的原料（cholesterol）"
+              "explain": "**交感神經（sympathetic）｜交感神經（sympathetic）**\n身體的緊急備戰模式（sympathetic）\n\n**膽固醇（cholesterol）｜膽固醇（cholesterol）**\n製造 類固醇荷爾蒙（steroid hormone） 的原料（cholesterol）",
+              "id": "c51fa1675"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「Leydig cell／intracrine」，並說出一個判斷依據。",
-              "answer": "**Leydig cell｜Leydig cell**\n收到 LH 後製造 testosterone 的細胞（Leydig cell）\n\n**intracrine｜intracrine**\n訊號留在自己細胞裡，不送出去（intracrine）",
+              "q": "用自己的話說明「萊迪氏細胞（Leydig cell）／胞內分泌（intracrine）」，並說出一個判斷依據。",
+              "answer": "**萊迪氏細胞（Leydig cell）｜萊迪氏細胞（Leydig cell）**\n收到 黃體生成素（LH） 後製造 睪固酮（testosterone） 的細胞（Leydig cell）\n\n**胞內分泌（intracrine）｜胞內分泌（intracrine）**\n訊號留在自己細胞裡，不送出去（intracrine）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**Leydig cell｜Leydig cell**\n收到 LH 後製造 testosterone 的細胞（Leydig cell）\n\n**intracrine｜intracrine**\n訊號留在自己細胞裡，不送出去（intracrine）"
+              "explain": "**萊迪氏細胞（Leydig cell）｜萊迪氏細胞（Leydig cell）**\n收到 黃體生成素（LH） 後製造 睪固酮（testosterone） 的細胞（Leydig cell）\n\n**胞內分泌（intracrine）｜胞內分泌（intracrine）**\n訊號留在自己細胞裡，不送出去（intracrine）",
+              "id": "cc93d7bb9"
             }
           ]
         },
@@ -374,27 +397,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "homeostasis／aldosterone：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "sympathetic／cholesterol：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**homeostasis｜homeostasis**\n把身體維持在剛剛好的狀態（homeostasis）\n\n**aldosterone｜aldosterone**\n叫腎臟留鹽留水、排鉀的荷爾蒙（aldosterone）",
-            "**sympathetic｜sympathetic**\n身體的緊急備戰模式（sympathetic）\n\n**cholesterol｜cholesterol**\n製造 steroid hormone 的原料（cholesterol）"
+            "homeostasis／醛固酮（aldosterone）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "交感神經（sympathetic）／膽固醇（cholesterol）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**homeostasis｜homeostasis**\n把身體維持在剛剛好的狀態（homeostasis）\n\n**醛固酮（aldosterone）｜醛固酮（aldosterone）**\n叫腎臟留鹽留水、排鉀的荷爾蒙（aldosterone）",
+            "**交感神經（sympathetic）｜交感神經（sympathetic）**\n身體的緊急備戰模式（sympathetic）\n\n**膽固醇（cholesterol）｜膽固醇（cholesterol）**\n製造 類固醇荷爾蒙（steroid hormone） 的原料（cholesterol）"
           ],
           "flash": [
             {
-              "front": "homeostasis／aldosterone",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "homeostasis／醛固酮（aldosterone）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f951ce9c7"
             },
             {
-              "front": "sympathetic／cholesterol",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "交感神經（sympathetic）／膽固醇（cholesterol）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f1108e1b9"
             },
             {
-              "front": "Leydig cell／intracrine",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "萊迪氏細胞（Leydig cell）／胞內分泌（intracrine）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fb4d203f5"
             },
             {
-              "front": "用自己的話說明「homeostasis／aldosterone」，並說出一個判斷依據。",
-              "back": "**homeostasis｜homeostasis**\n把身體維持在剛剛好的狀態（homeostasis）\n\n**aldosterone｜aldosterone**\n叫腎臟留鹽留水、排鉀的荷爾蒙（aldosterone）"
+              "front": "用自己的話說明「homeostasis／醛固酮（aldosterone）」，並說出一個判斷依據。",
+              "back": "**homeostasis｜homeostasis**\n把身體維持在剛剛好的狀態（homeostasis）\n\n**醛固酮（aldosterone）｜醛固酮（aldosterone）**\n叫腎臟留鹽留水、排鉀的荷爾蒙（aldosterone）",
+              "id": "f4c35bd53"
             }
           ]
         }
@@ -404,9 +431,9 @@
       "id": "terms-28-1",
       "title": "中英文核心名詞 28",
       "goals": [
-        "解釋filtration／glomerulus",
-        "解釋theca cell／osteoblast",
-        "解釋osteoclast／autocrine"
+        "解釋濾過（filtration）／glomerulus",
+        "解釋卵泡膜細胞（theca cell）／造骨細胞（osteoblast）",
+        "解釋蝕骨細胞（osteoclast）／自分泌（autocrine）"
       ],
       "steps": [
         {
@@ -416,8 +443,8 @@
         },
         {
           "type": "card",
-          "title": "filtration／glomerulus",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**filtration｜filtration**\n先把血漿裡的小東西大量篩出去（filtration）\n\n**glomerulus｜glomerulus**\n腎臟最前面的濾網球（glomerulus）",
+          "title": "濾過（filtration）／glomerulus",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**濾過（filtration）｜濾過**\n先把血漿裡的小東西大量篩出去（filtration）\n\n**glomerulus｜glomerulus**\n腎臟最前面的濾網球（glomerulus）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -426,15 +453,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「filtration／glomerulus」，並說出一個判斷依據。",
-          "answer": "**filtration｜filtration**\n先把血漿裡的小東西大量篩出去（filtration）\n\n**glomerulus｜glomerulus**\n腎臟最前面的濾網球（glomerulus）",
+          "q": "用自己的話說明「濾過（filtration）／glomerulus」，並說出一個判斷依據。",
+          "answer": "**濾過（filtration）｜濾過（filtration）**\n先把血漿裡的小東西大量篩出去（filtration）\n\n**glomerulus｜glomerulus**\n腎臟最前面的濾網球（glomerulus）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**filtration｜filtration**\n先把血漿裡的小東西大量篩出去（filtration）\n\n**glomerulus｜glomerulus**\n腎臟最前面的濾網球（glomerulus）"
+          "explain": "**濾過（filtration）｜濾過（filtration）**\n先把血漿裡的小東西大量篩出去（filtration）\n\n**glomerulus｜glomerulus**\n腎臟最前面的濾網球（glomerulus）",
+          "id": "c7223d57c"
         },
         {
           "type": "card",
-          "title": "theca cell／osteoblast",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**theca cell｜theca cell**\n先製造 androgen 原料的卵泡外層細胞（theca cell）\n\n**osteoblast｜osteoblast**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）",
+          "title": "卵泡膜細胞（theca cell）／造骨細胞（osteoblast）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**卵泡膜細胞（theca cell）｜卵泡膜細胞**\n先製造 雄激素（androgen） 原料的卵泡外層細胞（theca cell）\n\n**造骨細胞（osteoblast）｜造骨細胞**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -443,15 +471,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「theca cell／osteoblast」，並說出一個判斷依據。",
-          "answer": "**theca cell｜theca cell**\n先製造 androgen 原料的卵泡外層細胞（theca cell）\n\n**osteoblast｜osteoblast**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）",
+          "q": "用自己的話說明「卵泡膜細胞（theca cell）／造骨細胞（osteoblast）」，並說出一個判斷依據。",
+          "answer": "**卵泡膜細胞（theca cell）｜卵泡膜細胞（theca cell）**\n先製造 雄激素（androgen） 原料的卵泡外層細胞（theca cell）\n\n**造骨細胞（osteoblast）｜造骨細胞（osteoblast）**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**theca cell｜theca cell**\n先製造 androgen 原料的卵泡外層細胞（theca cell）\n\n**osteoblast｜osteoblast**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）"
+          "explain": "**卵泡膜細胞（theca cell）｜卵泡膜細胞（theca cell）**\n先製造 雄激素（androgen） 原料的卵泡外層細胞（theca cell）\n\n**造骨細胞（osteoblast）｜造骨細胞（osteoblast）**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）",
+          "id": "c24180bf2"
         },
         {
           "type": "card",
-          "title": "osteoclast／autocrine",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**osteoclast｜osteoclast**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**autocrine｜autocrine**\n自己送訊號給自己（autocrine）",
+          "title": "蝕骨細胞（osteoclast）／自分泌（autocrine）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**蝕骨細胞（osteoclast）｜蝕骨細胞**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**自分泌（autocrine）｜自分泌**\n自己送訊號給自己（autocrine）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -460,21 +489,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「osteoclast／autocrine」，並說出一個判斷依據。",
-          "answer": "**osteoclast｜osteoclast**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**autocrine｜autocrine**\n自己送訊號給自己（autocrine）",
+          "q": "用自己的話說明「蝕骨細胞（osteoclast）／自分泌（autocrine）」，並說出一個判斷依據。",
+          "answer": "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**自分泌（autocrine）｜自分泌（autocrine）**\n自己送訊號給自己（autocrine）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**osteoclast｜osteoclast**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**autocrine｜autocrine**\n自己送訊號給自己（autocrine）"
+          "explain": "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**自分泌（autocrine）｜自分泌（autocrine）**\n自己送訊號給自己（autocrine）",
+          "id": "c6b6c131d"
         },
         {
           "type": "example",
-          "title": "範例拆解：osteoclast／autocrine",
-          "problem": "用自己的話說明「osteoclast／autocrine」，並說出一個判斷依據。",
+          "title": "範例拆解：蝕骨細胞（osteoclast）／自分泌（autocrine）",
+          "problem": "用自己的話說明「蝕骨細胞（osteoclast）／自分泌（autocrine）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：osteoclast／autocrine",
-            "**osteoclast｜osteoclast**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**autocrine｜autocrine**\n自己送訊號給自己（autocrine）",
-            "把判斷依據連回題目：**osteoclast｜osteoclast**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**autocrine｜autocrine**\n自己送訊號給自己（autocrine）"
+            "先確認題目問的主題：蝕骨細胞（osteoclast）／自分泌（autocrine）",
+            "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**自分泌（autocrine）｜自分泌（autocrine）**\n自己送訊號給自己（autocrine）",
+            "把判斷依據連回題目：**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**自分泌（autocrine）｜自分泌（autocrine）**\n自己送訊號給自己（autocrine）"
           ],
-          "answer": "**osteoclast｜osteoclast**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**autocrine｜autocrine**\n自己送訊號給自己（autocrine）"
+          "answer": "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**自分泌（autocrine）｜自分泌（autocrine）**\n自己送訊號給自己（autocrine）"
         },
         {
           "type": "practice",
@@ -483,17 +513,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「theca cell／osteoblast」，並說出一個判斷依據。",
-              "answer": "**theca cell｜theca cell**\n先製造 androgen 原料的卵泡外層細胞（theca cell）\n\n**osteoblast｜osteoblast**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）",
+              "q": "用自己的話說明「卵泡膜細胞（theca cell）／造骨細胞（osteoblast）」，並說出一個判斷依據。",
+              "answer": "**卵泡膜細胞（theca cell）｜卵泡膜細胞（theca cell）**\n先製造 雄激素（androgen） 原料的卵泡外層細胞（theca cell）\n\n**造骨細胞（osteoblast）｜造骨細胞（osteoblast）**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**theca cell｜theca cell**\n先製造 androgen 原料的卵泡外層細胞（theca cell）\n\n**osteoblast｜osteoblast**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）"
+              "explain": "**卵泡膜細胞（theca cell）｜卵泡膜細胞（theca cell）**\n先製造 雄激素（androgen） 原料的卵泡外層細胞（theca cell）\n\n**造骨細胞（osteoblast）｜造骨細胞（osteoblast）**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）",
+              "id": "c24180bf2"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「osteoclast／autocrine」，並說出一個判斷依據。",
-              "answer": "**osteoclast｜osteoclast**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**autocrine｜autocrine**\n自己送訊號給自己（autocrine）",
+              "q": "用自己的話說明「蝕骨細胞（osteoclast）／自分泌（autocrine）」，並說出一個判斷依據。",
+              "answer": "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**自分泌（autocrine）｜自分泌（autocrine）**\n自己送訊號給自己（autocrine）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**osteoclast｜osteoclast**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**autocrine｜autocrine**\n自己送訊號給自己（autocrine）"
+              "explain": "**蝕骨細胞（osteoclast）｜蝕骨細胞（osteoclast）**\n負責拆骨頭並放出鈣的細胞（osteoclast）\n\n**自分泌（autocrine）｜自分泌（autocrine）**\n自己送訊號給自己（autocrine）",
+              "id": "c6b6c131d"
             }
           ]
         },
@@ -501,27 +533,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "filtration／glomerulus：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "theca cell／osteoblast：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**filtration｜filtration**\n先把血漿裡的小東西大量篩出去（filtration）\n\n**glomerulus｜glomerulus**\n腎臟最前面的濾網球（glomerulus）",
-            "**theca cell｜theca cell**\n先製造 androgen 原料的卵泡外層細胞（theca cell）\n\n**osteoblast｜osteoblast**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）"
+            "濾過（filtration）／glomerulus：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "卵泡膜細胞（theca cell）／造骨細胞（osteoblast）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**濾過（filtration）｜濾過（filtration）**\n先把血漿裡的小東西大量篩出去（filtration）\n\n**glomerulus｜glomerulus**\n腎臟最前面的濾網球（glomerulus）",
+            "**卵泡膜細胞（theca cell）｜卵泡膜細胞（theca cell）**\n先製造 雄激素（androgen） 原料的卵泡外層細胞（theca cell）\n\n**造骨細胞（osteoblast）｜造骨細胞（osteoblast）**\n負責蓋骨頭、也能呼叫拆骨隊的細胞（osteoblast）"
           ],
           "flash": [
             {
-              "front": "filtration／glomerulus",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "濾過（filtration）／glomerulus",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f21a805dd"
             },
             {
-              "front": "theca cell／osteoblast",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "卵泡膜細胞（theca cell）／造骨細胞（osteoblast）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fefd253a4"
             },
             {
-              "front": "osteoclast／autocrine",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "蝕骨細胞（osteoclast）／自分泌（autocrine）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fe7c446b5"
             },
             {
-              "front": "用自己的話說明「filtration／glomerulus」，並說出一個判斷依據。",
-              "back": "**filtration｜filtration**\n先把血漿裡的小東西大量篩出去（filtration）\n\n**glomerulus｜glomerulus**\n腎臟最前面的濾網球（glomerulus）"
+              "front": "用自己的話說明「濾過（filtration）／glomerulus」，並說出一個判斷依據。",
+              "back": "**濾過（filtration）｜濾過（filtration）**\n先把血漿裡的小東西大量篩出去（filtration）\n\n**glomerulus｜glomerulus**\n腎臟最前面的濾網球（glomerulus）",
+              "id": "f7223d57c"
             }
           ]
         }
@@ -531,9 +567,9 @@
       "id": "terms-29-1",
       "title": "中英文核心名詞 29",
       "goals": [
-        "解釋paracrine／endocrine",
-        "解釋secretion／excretion",
-        "解釋afterload／pacemaker"
+        "解釋旁分泌（paracrine）／內分泌（endocrine）",
+        "解釋分泌（secretion）／excretion",
+        "解釋後負荷（afterload）／節律器（pacemaker）"
       ],
       "steps": [
         {
@@ -543,8 +579,8 @@
         },
         {
           "type": "card",
-          "title": "paracrine／endocrine",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**paracrine｜paracrine**\n只送給隔壁鄰居（paracrine）\n\n**endocrine｜endocrine**\n訊號搭血液去遠方（endocrine）",
+          "title": "旁分泌（paracrine）／內分泌（endocrine）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**旁分泌（paracrine）｜旁分泌**\n只送給隔壁鄰居（paracrine）\n\n**內分泌（endocrine）｜內分泌**\n訊號搭血液去遠方（endocrine）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -553,15 +589,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「paracrine／endocrine」，並說出一個判斷依據。",
-          "answer": "**paracrine｜paracrine**\n只送給隔壁鄰居（paracrine）\n\n**endocrine｜endocrine**\n訊號搭血液去遠方（endocrine）",
+          "q": "用自己的話說明「旁分泌（paracrine）／內分泌（endocrine）」，並說出一個判斷依據。",
+          "answer": "**旁分泌（paracrine）｜旁分泌（paracrine）**\n只送給隔壁鄰居（paracrine）\n\n**內分泌（endocrine）｜內分泌（endocrine）**\n訊號搭血液去遠方（endocrine）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**paracrine｜paracrine**\n只送給隔壁鄰居（paracrine）\n\n**endocrine｜endocrine**\n訊號搭血液去遠方（endocrine）"
+          "explain": "**旁分泌（paracrine）｜旁分泌（paracrine）**\n只送給隔壁鄰居（paracrine）\n\n**內分泌（endocrine）｜內分泌（endocrine）**\n訊號搭血液去遠方（endocrine）",
+          "id": "c48f2b0f8"
         },
         {
           "type": "card",
-          "title": "secretion／excretion",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**secretion｜secretion**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）",
+          "title": "分泌（secretion）／excretion",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**分泌（secretion）｜分泌**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -570,15 +607,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「secretion／excretion」，並說出一個判斷依據。",
-          "answer": "**secretion｜secretion**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）",
+          "q": "用自己的話說明「分泌（secretion）／excretion」，並說出一個判斷依據。",
+          "answer": "**分泌（secretion）｜分泌（secretion）**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**secretion｜secretion**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）"
+          "explain": "**分泌（secretion）｜分泌（secretion）**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）",
+          "id": "cf79bbb8b"
         },
         {
           "type": "card",
-          "title": "afterload／pacemaker",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**afterload｜afterload**\n心室把血推出去時遇到多大阻力（afterload）\n\n**pacemaker｜pacemaker**\n自己會規律喊開始的節拍器細胞（pacemaker）",
+          "title": "後負荷（afterload）／節律器（pacemaker）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**後負荷（afterload）｜後負荷**\n心室把血推出去時遇到多大阻力（afterload）\n\n**節律器（pacemaker）｜節律器**\n自己會規律喊開始的節拍器細胞（pacemaker）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -587,21 +625,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「afterload／pacemaker」，並說出一個判斷依據。",
-          "answer": "**afterload｜afterload**\n心室把血推出去時遇到多大阻力（afterload）\n\n**pacemaker｜pacemaker**\n自己會規律喊開始的節拍器細胞（pacemaker）",
+          "q": "用自己的話說明「後負荷（afterload）／節律器（pacemaker）」，並說出一個判斷依據。",
+          "answer": "**後負荷（afterload）｜後負荷（afterload）**\n心室把血推出去時遇到多大阻力（afterload）\n\n**節律器（pacemaker）｜節律器（pacemaker）**\n自己會規律喊開始的節拍器細胞（pacemaker）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**afterload｜afterload**\n心室把血推出去時遇到多大阻力（afterload）\n\n**pacemaker｜pacemaker**\n自己會規律喊開始的節拍器細胞（pacemaker）"
+          "explain": "**後負荷（afterload）｜後負荷（afterload）**\n心室把血推出去時遇到多大阻力（afterload）\n\n**節律器（pacemaker）｜節律器（pacemaker）**\n自己會規律喊開始的節拍器細胞（pacemaker）",
+          "id": "cff06c513"
         },
         {
           "type": "example",
-          "title": "範例拆解：afterload／pacemaker",
-          "problem": "用自己的話說明「afterload／pacemaker」，並說出一個判斷依據。",
+          "title": "範例拆解：後負荷（afterload）／節律器（pacemaker）",
+          "problem": "用自己的話說明「後負荷（afterload）／節律器（pacemaker）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：afterload／pacemaker",
-            "**afterload｜afterload**\n心室把血推出去時遇到多大阻力（afterload）\n\n**pacemaker｜pacemaker**\n自己會規律喊開始的節拍器細胞（pacemaker）",
-            "把判斷依據連回題目：**afterload｜afterload**\n心室把血推出去時遇到多大阻力（afterload）\n\n**pacemaker｜pacemaker**\n自己會規律喊開始的節拍器細胞（pacemaker）"
+            "先確認題目問的主題：後負荷（afterload）／節律器（pacemaker）",
+            "**後負荷（afterload）｜後負荷（afterload）**\n心室把血推出去時遇到多大阻力（afterload）\n\n**節律器（pacemaker）｜節律器（pacemaker）**\n自己會規律喊開始的節拍器細胞（pacemaker）",
+            "把判斷依據連回題目：**後負荷（afterload）｜後負荷（afterload）**\n心室把血推出去時遇到多大阻力（afterload）\n\n**節律器（pacemaker）｜節律器（pacemaker）**\n自己會規律喊開始的節拍器細胞（pacemaker）"
           ],
-          "answer": "**afterload｜afterload**\n心室把血推出去時遇到多大阻力（afterload）\n\n**pacemaker｜pacemaker**\n自己會規律喊開始的節拍器細胞（pacemaker）"
+          "answer": "**後負荷（afterload）｜後負荷（afterload）**\n心室把血推出去時遇到多大阻力（afterload）\n\n**節律器（pacemaker）｜節律器（pacemaker）**\n自己會規律喊開始的節拍器細胞（pacemaker）"
         },
         {
           "type": "practice",
@@ -610,17 +649,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「secretion／excretion」，並說出一個判斷依據。",
-              "answer": "**secretion｜secretion**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）",
+              "q": "用自己的話說明「分泌（secretion）／excretion」，並說出一個判斷依據。",
+              "answer": "**分泌（secretion）｜分泌（secretion）**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**secretion｜secretion**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）"
+              "explain": "**分泌（secretion）｜分泌（secretion）**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）",
+              "id": "cf79bbb8b"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「afterload／pacemaker」，並說出一個判斷依據。",
-              "answer": "**afterload｜afterload**\n心室把血推出去時遇到多大阻力（afterload）\n\n**pacemaker｜pacemaker**\n自己會規律喊開始的節拍器細胞（pacemaker）",
+              "q": "用自己的話說明「後負荷（afterload）／節律器（pacemaker）」，並說出一個判斷依據。",
+              "answer": "**後負荷（afterload）｜後負荷（afterload）**\n心室把血推出去時遇到多大阻力（afterload）\n\n**節律器（pacemaker）｜節律器（pacemaker）**\n自己會規律喊開始的節拍器細胞（pacemaker）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**afterload｜afterload**\n心室把血推出去時遇到多大阻力（afterload）\n\n**pacemaker｜pacemaker**\n自己會規律喊開始的節拍器細胞（pacemaker）"
+              "explain": "**後負荷（afterload）｜後負荷（afterload）**\n心室把血推出去時遇到多大阻力（afterload）\n\n**節律器（pacemaker）｜節律器（pacemaker）**\n自己會規律喊開始的節拍器細胞（pacemaker）",
+              "id": "cff06c513"
             }
           ]
         },
@@ -628,27 +669,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "paracrine／endocrine：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "secretion／excretion：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**paracrine｜paracrine**\n只送給隔壁鄰居（paracrine）\n\n**endocrine｜endocrine**\n訊號搭血液去遠方（endocrine）",
-            "**secretion｜secretion**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）"
+            "旁分泌（paracrine）／內分泌（endocrine）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "分泌（secretion）／excretion：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**旁分泌（paracrine）｜旁分泌（paracrine）**\n只送給隔壁鄰居（paracrine）\n\n**內分泌（endocrine）｜內分泌（endocrine）**\n訊號搭血液去遠方（endocrine）",
+            "**分泌（secretion）｜分泌（secretion）**\n再把不要的東西丟進尿管（secretion）\n\n**excretion｜excretion**\n最後真的跟尿一起離開（excretion）"
           ],
           "flash": [
             {
-              "front": "paracrine／endocrine",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "旁分泌（paracrine）／內分泌（endocrine）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f75c265ba"
             },
             {
-              "front": "secretion／excretion",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "分泌（secretion）／excretion",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f432be6eb"
             },
             {
-              "front": "afterload／pacemaker",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "後負荷（afterload）／節律器（pacemaker）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f6f78133f"
             },
             {
-              "front": "用自己的話說明「paracrine／endocrine」，並說出一個判斷依據。",
-              "back": "**paracrine｜paracrine**\n只送給隔壁鄰居（paracrine）\n\n**endocrine｜endocrine**\n訊號搭血液去遠方（endocrine）"
+              "front": "用自己的話說明「旁分泌（paracrine）／內分泌（endocrine）」，並說出一個判斷依據。",
+              "back": "**旁分泌（paracrine）｜旁分泌（paracrine）**\n只送給隔壁鄰居（paracrine）\n\n**內分泌（endocrine）｜內分泌（endocrine）**\n訊號搭血液去遠方（endocrine）",
+              "id": "f48f2b0f8"
             }
           ]
         }
@@ -658,9 +703,9 @@
       "id": "terms-30-1",
       "title": "中英文核心名詞 30",
       "goals": [
-        "解釋hair cell／ovulation",
-        "解釋oogenesis／germ cell",
-        "解釋aromatase／vitamin D"
+        "解釋毛細胞（hair cell）／排卵（ovulation）",
+        "解釋卵子生成（oogenesis）／germ cell",
+        "解釋芳香環酶（aromatase）／維生素 D（vitamin D）"
       ],
       "steps": [
         {
@@ -670,8 +715,8 @@
         },
         {
           "type": "card",
-          "title": "hair cell／ovulation",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**hair cell｜hair cell**\n毛一彎就開始傳訊的內耳細胞（hair cell）\n\n**ovulation｜ovulation**\n卵泡把卵細胞放出去（ovulation）",
+          "title": "毛細胞（hair cell）／排卵（ovulation）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**毛細胞（hair cell）｜毛細胞**\n毛一彎就開始傳訊的內耳細胞（hair cell）\n\n**排卵（ovulation）｜排卵**\n卵泡把卵細胞放出去（ovulation）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -680,15 +725,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「hair cell／ovulation」，並說出一個判斷依據。",
-          "answer": "**hair cell｜hair cell**\n毛一彎就開始傳訊的內耳細胞（hair cell）\n\n**ovulation｜ovulation**\n卵泡把卵細胞放出去（ovulation）",
+          "q": "用自己的話說明「毛細胞（hair cell）／排卵（ovulation）」，並說出一個判斷依據。",
+          "answer": "**毛細胞（hair cell）｜毛細胞（hair cell）**\n毛一彎就開始傳訊的內耳細胞（hair cell）\n\n**排卵（ovulation）｜排卵（ovulation）**\n卵泡把卵細胞放出去（ovulation）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**hair cell｜hair cell**\n毛一彎就開始傳訊的內耳細胞（hair cell）\n\n**ovulation｜ovulation**\n卵泡把卵細胞放出去（ovulation）"
+          "explain": "**毛細胞（hair cell）｜毛細胞（hair cell）**\n毛一彎就開始傳訊的內耳細胞（hair cell）\n\n**排卵（ovulation）｜排卵（ovulation）**\n卵泡把卵細胞放出去（ovulation）",
+          "id": "c9ebbb831"
         },
         {
           "type": "card",
-          "title": "oogenesis／germ cell",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**oogenesis｜oogenesis**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）",
+          "title": "卵子生成（oogenesis）／germ cell",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**卵子生成（oogenesis）｜卵子生成**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -697,15 +743,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「oogenesis／germ cell」，並說出一個判斷依據。",
-          "answer": "**oogenesis｜oogenesis**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）",
+          "q": "用自己的話說明「卵子生成（oogenesis）／germ cell」，並說出一個判斷依據。",
+          "answer": "**卵子生成（oogenesis）｜卵子生成（oogenesis）**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**oogenesis｜oogenesis**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）"
+          "explain": "**卵子生成（oogenesis）｜卵子生成（oogenesis）**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）",
+          "id": "c5dc7c575"
         },
         {
           "type": "card",
-          "title": "aromatase／vitamin D",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**aromatase｜aromatase**\n把 androgen 改造成 estrogen 的工具酵素（aromatase）\n\n**vitamin D｜vitamin D**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）",
+          "title": "芳香環酶（aromatase）／維生素 D（vitamin D）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**芳香環酶（aromatase）｜芳香環酶**\n把 雄激素（androgen） 改造成 雌激素（estrogen） 的工具酵素（aromatase）\n\n**維生素 D（vitamin D）｜維生素 D**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -714,21 +761,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「aromatase／vitamin D」，並說出一個判斷依據。",
-          "answer": "**aromatase｜aromatase**\n把 androgen 改造成 estrogen 的工具酵素（aromatase）\n\n**vitamin D｜vitamin D**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）",
+          "q": "用自己的話說明「芳香環酶（aromatase）／維生素 D（vitamin D）」，並說出一個判斷依據。",
+          "answer": "**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n把 雄激素（androgen） 改造成 雌激素（estrogen） 的工具酵素（aromatase）\n\n**維生素 D（vitamin D）｜維生素 D（vitamin D）**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**aromatase｜aromatase**\n把 androgen 改造成 estrogen 的工具酵素（aromatase）\n\n**vitamin D｜vitamin D**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）"
+          "explain": "**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n把 雄激素（androgen） 改造成 雌激素（estrogen） 的工具酵素（aromatase）\n\n**維生素 D（vitamin D）｜維生素 D（vitamin D）**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）",
+          "id": "c2860b6f0"
         },
         {
           "type": "example",
-          "title": "範例拆解：aromatase／vitamin D",
-          "problem": "用自己的話說明「aromatase／vitamin D」，並說出一個判斷依據。",
+          "title": "範例拆解：芳香環酶（aromatase）／維生素 D（vitamin D）",
+          "problem": "用自己的話說明「芳香環酶（aromatase）／維生素 D（vitamin D）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：aromatase／vitamin D",
-            "**aromatase｜aromatase**\n把 androgen 改造成 estrogen 的工具酵素（aromatase）\n\n**vitamin D｜vitamin D**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）",
-            "把判斷依據連回題目：**aromatase｜aromatase**\n把 androgen 改造成 estrogen 的工具酵素（aromatase）\n\n**vitamin D｜vitamin D**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）"
+            "先確認題目問的主題：芳香環酶（aromatase）／維生素 D（vitamin D）",
+            "**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n把 雄激素（androgen） 改造成 雌激素（estrogen） 的工具酵素（aromatase）\n\n**維生素 D（vitamin D）｜維生素 D（vitamin D）**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）",
+            "把判斷依據連回題目：**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n把 雄激素（androgen） 改造成 雌激素（estrogen） 的工具酵素（aromatase）\n\n**維生素 D（vitamin D）｜維生素 D（vitamin D）**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）"
           ],
-          "answer": "**aromatase｜aromatase**\n把 androgen 改造成 estrogen 的工具酵素（aromatase）\n\n**vitamin D｜vitamin D**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）"
+          "answer": "**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n把 雄激素（androgen） 改造成 雌激素（estrogen） 的工具酵素（aromatase）\n\n**維生素 D（vitamin D）｜維生素 D（vitamin D）**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）"
         },
         {
           "type": "practice",
@@ -737,17 +785,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「oogenesis／germ cell」，並說出一個判斷依據。",
-              "answer": "**oogenesis｜oogenesis**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）",
+              "q": "用自己的話說明「卵子生成（oogenesis）／germ cell」，並說出一個判斷依據。",
+              "answer": "**卵子生成（oogenesis）｜卵子生成（oogenesis）**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**oogenesis｜oogenesis**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）"
+              "explain": "**卵子生成（oogenesis）｜卵子生成（oogenesis）**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）",
+              "id": "c5dc7c575"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「aromatase／vitamin D」，並說出一個判斷依據。",
-              "answer": "**aromatase｜aromatase**\n把 androgen 改造成 estrogen 的工具酵素（aromatase）\n\n**vitamin D｜vitamin D**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）",
+              "q": "用自己的話說明「芳香環酶（aromatase）／維生素 D（vitamin D）」，並說出一個判斷依據。",
+              "answer": "**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n把 雄激素（androgen） 改造成 雌激素（estrogen） 的工具酵素（aromatase）\n\n**維生素 D（vitamin D）｜維生素 D（vitamin D）**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**aromatase｜aromatase**\n把 androgen 改造成 estrogen 的工具酵素（aromatase）\n\n**vitamin D｜vitamin D**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）"
+              "explain": "**芳香環酶（aromatase）｜芳香環酶（aromatase）**\n把 雄激素（androgen） 改造成 雌激素（estrogen） 的工具酵素（aromatase）\n\n**維生素 D（vitamin D）｜維生素 D（vitamin D）**\n加工完成後幫腸子吸收鈣的訊號（vitamin D）",
+              "id": "c2860b6f0"
             }
           ]
         },
@@ -755,27 +805,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "hair cell／ovulation：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "oogenesis／germ cell：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**hair cell｜hair cell**\n毛一彎就開始傳訊的內耳細胞（hair cell）\n\n**ovulation｜ovulation**\n卵泡把卵細胞放出去（ovulation）",
-            "**oogenesis｜oogenesis**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）"
+            "毛細胞（hair cell）／排卵（ovulation）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "卵子生成（oogenesis）／germ cell：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**毛細胞（hair cell）｜毛細胞（hair cell）**\n毛一彎就開始傳訊的內耳細胞（hair cell）\n\n**排卵（ovulation）｜排卵（ovulation）**\n卵泡把卵細胞放出去（ovulation）",
+            "**卵子生成（oogenesis）｜卵子生成（oogenesis）**\n一路準備卵細胞的過程（oogenesis）\n\n**germ cell｜germ cell**\n未來會變成精子或卵子的細胞（germ cell）"
           ],
           "flash": [
             {
-              "front": "hair cell／ovulation",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "毛細胞（hair cell）／排卵（ovulation）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fe92b18f0"
             },
             {
-              "front": "oogenesis／germ cell",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "卵子生成（oogenesis）／germ cell",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f3748ea1c"
             },
             {
-              "front": "aromatase／vitamin D",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "芳香環酶（aromatase）／維生素 D（vitamin D）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fa3679a57"
             },
             {
-              "front": "用自己的話說明「hair cell／ovulation」，並說出一個判斷依據。",
-              "back": "**hair cell｜hair cell**\n毛一彎就開始傳訊的內耳細胞（hair cell）\n\n**ovulation｜ovulation**\n卵泡把卵細胞放出去（ovulation）"
+              "front": "用自己的話說明「毛細胞（hair cell）／排卵（ovulation）」，並說出一個判斷依據。",
+              "back": "**毛細胞（hair cell）｜毛細胞（hair cell）**\n毛一彎就開始傳訊的內耳細胞（hair cell）\n\n**排卵（ovulation）｜排卵（ovulation）**\n卵泡把卵細胞放出去（ovulation）",
+              "id": "f9ebbb831"
             }
           ]
         }

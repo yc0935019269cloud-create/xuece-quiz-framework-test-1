@@ -23,90 +23,93 @@
       "id": "field-retina-1",
       "title": "先解開最容易混亂的翻轉",
       "goals": [
-        "解釋visual field 與 retina 左右上下都翻轉",
-        "解釋nasal retinal fibers 交叉，temporal fibers 不交叉",
-        "解釋每條 optic tract 都看對側半邊世界"
+        "解釋視野（visual field） 與 視網膜（retina） 左右上下都翻轉",
+        "解釋鼻側視網膜纖維（nasal retinal fibers） 交叉，顳側（temporal） fibers 不交叉",
+        "解釋每條 視束（optic tract） 都看對側半邊世界"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "先解開最容易混亂的翻轉",
-          "body": "影像落到相反側 retina；nasal visual field 落在 temporal retina，反之亦然。\n\n- 先分左右視野。\n- 再分 nasal/temporal retina。\n- 最後抓 nasal retinal fibers 會交叉。"
+          "body": "影像落到相反側 視網膜（retina）；鼻側（nasal） 視野（visual field） 落在 顳側（temporal） 視網膜，反之亦然。\n\n- 先分左右視野。\n- 再分 鼻側/顳側 視網膜。\n- 最後抓 鼻側視網膜纖維（nasal retinal fibers） 會交叉。"
         },
         {
           "type": "card",
-          "title": "visual field 與 retina 左右上下都翻轉",
-          "body": "**一句話／白話**\n上方視野落到下 retina，左側視野落到兩眼右半 retina。\n\n**觀念**\n眼球光學系統使影像倒轉。左 visual hemifield 投射到左眼 nasal retina 與右眼 temporal retina；右 visual hemifield 投射到相反組合。上方視野投射到 inferior retina。\n\n**考試角度**\n- left visual field → right halves of both retinae\n- superior field → inferior retina\n- 視野位置與 retinal image 相反\n\n**口訣**\n看到哪邊，影像就落到相反邊的 retina。",
+          "title": "視野（visual field） 與 視網膜（retina） 左右上下都翻轉",
+          "body": "**一句話／白話**\n上方視野落到下 視網膜（retina），左側視野落到兩眼右半 視網膜。\n\n**觀念**\n眼球光學系統使影像倒轉。左 visual hemifield 投射到左眼 鼻側（nasal） 視網膜 與右眼 顳側（temporal） 視網膜；右 visual hemifield 投射到相反組合。上方視野投射到 inferior 視網膜。\n\n**考試角度**\n- left 視野（visual field） → right halves of both retinae\n- superior field → inferior 視網膜\n- 視野位置與 視網膜的（retinal） image 相反\n\n**口訣**\n看到哪邊，影像就落到相反邊的 視網膜。",
           "keys": [
-            "left visual field → right halves of both retinae",
-            "superior field → inferior retina",
-            "視野位置與 retinal image 相反"
+            "left 視野（visual field） → right halves of both retinae",
+            "superior field → inferior 視網膜（retina）",
+            "視野位置與 視網膜的（retinal） image 相反"
           ],
-          "tip": "口訣：看到哪邊，影像就落到相反邊的 retina。"
+          "tip": "口訣：看到哪邊，影像就落到相反邊的 視網膜（retina）。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "上方 visual field 主要投射到？",
+          "q": "上方 視野（visual field） 主要投射到？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "left visual field → right halves of both retinae\n\n正確選項：inferior retina。\n眼球光學系統使影像倒轉。左 visual hemifield 投射到左眼 nasal retina 與右眼 temporal retina；右 visual hemifield 投射到相反組合。上方視野投射到 inferior retina。",
+          "explain": "left 視野（visual field） → right halves of both retinae\n\n正確選項：inferior 視網膜（retina）。\n眼球光學系統使影像倒轉。左 visual hemifield 投射到左眼 鼻側（nasal） 視網膜（retina） 與右眼 顳側（temporal） 視網膜（retina）；右 visual hemifield 投射到相反組合。上方視野投射到 inferior 視網膜（retina）。",
           "choices": [
-            "superior retina",
-            "inferior retina",
-            "optic disc only",
-            "lens"
-          ]
+            "superior 視網膜（retina）",
+            "inferior 視網膜（retina）",
+            "視乳頭（optic disc） only",
+            "透鏡（lens）"
+          ],
+          "id": "caf600fb2"
         },
         {
           "type": "card",
-          "title": "nasal retinal fibers 交叉，temporal fibers 不交叉",
-          "body": "**一句話／白話**\n視交叉只讓 nasal retina 的 axons 過馬路。\n\n**觀念**\n在 optic chiasm，nasal hemiretinal fibers decussate，temporal hemiretinal fibers remain ipsilateral。結果每條 optic tract 都攜帶對側 visual hemifield 的資訊。\n\n**考試角度**\n- nasal retina crosses\n- temporal retina stays ipsilateral\n- optic tract 代表 contralateral visual field\n\n**口訣**\n鼻側過馬路，顳側留原地。",
+          "title": "鼻側視網膜纖維（nasal retinal fibers） 交叉，顳側（temporal） fibers 不交叉",
+          "body": "**一句話／白話**\n視交叉只讓 鼻側（nasal） 視網膜（retina） 的 軸突（axons） 過馬路。\n\n**觀念**\n在 視交叉（optic chiasm），鼻側 hemiretinal fibers decussate，顳側（temporal） hemiretinal fibers remain ipsilateral。結果每條 視束（optic tract） 都攜帶對側 visual hemifield 的資訊。\n\n**考試角度**\n- 鼻側 視網膜 crosses\n- 顳側 視網膜 stays ipsilateral\n- 視束 代表 contralateral 視野（visual field）\n\n**口訣**\n鼻側過馬路，顳側留原地。",
           "keys": [
-            "nasal retina crosses",
-            "temporal retina stays ipsilateral",
-            "optic tract 代表 contralateral visual field"
+            "鼻側（nasal） 視網膜（retina） crosses",
+            "顳側（temporal） 視網膜（retina） stays ipsilateral",
+            "視束（optic tract） 代表 contralateral 視野（visual field）"
           ],
           "tip": "口訣：鼻側過馬路，顳側留原地。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "在 optic chiasm 交叉的是？",
+          "q": "在 視交叉（optic chiasm） 交叉的是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "nasal retina crosses\n\n正確選項：nasal retinal fibers。\n在 optic chiasm，nasal hemiretinal fibers decussate，temporal hemiretinal fibers remain ipsilateral。結果每條 optic tract 都攜帶對側 visual hemifield 的資訊。",
+          "explain": "鼻側（nasal） 視網膜（retina） crosses\n\n正確選項：鼻側視網膜纖維（nasal retinal fibers）。\n在 視交叉（optic chiasm），鼻側（nasal） hemiretinal fibers decussate，顳側（temporal） hemiretinal fibers remain ipsilateral。結果每條 視束（optic tract） 都攜帶對側 visual hemifield 的資訊。",
           "choices": [
-            "nasal retinal fibers",
-            "所有 ganglion fibers",
-            "optic radiation",
-            "temporal retinal fibers"
-          ]
+            "鼻側視網膜纖維（nasal retinal fibers）",
+            "所有 神經節（ganglion） fibers",
+            "視放射（optic radiation）",
+            "顳側（temporal） 視網膜的（retinal） fibers"
+          ],
+          "id": "c8dfb4217"
         },
         {
           "type": "card",
-          "title": "每條 optic tract 都看對側半邊世界",
-          "body": "**一句話／白話**\n右 optic tract 攜帶左 visual field；左 optic tract 攜帶右 visual field。\n\n**觀念**\n因 nasal fibers 已交叉，right optic tract 包含 right temporal retina 與 left nasal retina fibers，兩者都代表 left visual hemifield。這條規則一路維持到 LGN 與 visual cortex。\n\n**考試角度**\n- right tract = left visual field\n- left tract = right visual field\n- tract lesion 造成 contralateral homonymous hemianopia\n\n**口訣**\ntract 看的是對側世界，不是單一眼睛。",
+          "title": "每條 視束（optic tract） 都看對側半邊世界",
+          "body": "**一句話／白話**\n右 視束（optic tract） 攜帶左 視野（visual field）；左 視束 攜帶右 視野。\n\n**觀念**\n因 鼻側（nasal） fibers 已交叉，right 視束 包含 right 顳側（temporal） 視網膜（retina） 與 left 鼻側 視網膜 fibers，兩者都代表 left visual hemifield。這條規則一路維持到 外側膝狀體（LGN） 與 視覺皮質（visual cortex）。\n\n**考試角度**\n- right 神經束（tract） = left 視野\n- left 神經束 = right 視野\n- 神經束 病灶（lesion） 造成 contralateral 同向偏盲（homonymous hemianopia）\n\n**口訣**\n神經束 看的是對側世界，不是單一眼睛。",
           "keys": [
-            "right tract = left visual field",
-            "left tract = right visual field",
-            "tract lesion 造成 contralateral homonymous hemianopia"
+            "right 神經束（tract） = left 視野（visual field）",
+            "left 神經束（tract） = right 視野（visual field）",
+            "神經束（tract） 病灶（lesion） 造成 contralateral 同向偏盲（homonymous hemianopia）"
           ],
-          "tip": "口訣：tract 看的是對側世界，不是單一眼睛。"
+          "tip": "口訣：神經束（tract） 看的是對側世界，不是單一眼睛。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "右 optic tract 病灶最典型造成？",
+          "q": "右 視束（optic tract） 病灶最典型造成？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "right tract = left visual field\n\n正確選項：左同向偏盲。\n因 nasal fibers 已交叉，right optic tract 包含 right temporal retina 與 left nasal retina fibers，兩者都代表 left visual hemifield。這條規則一路維持到 LGN 與 visual cortex。",
+          "explain": "right 神經束（tract） = left 視野（visual field）\n\n正確選項：左同向偏盲。\n因 鼻側（nasal） fibers 已交叉，right 視束（optic tract） 包含 right 顳側（temporal） 視網膜（retina） 與 left 鼻側（nasal） 視網膜（retina） fibers，兩者都代表 left visual hemifield。這條規則一路維持到 外側膝狀體（LGN） 與 視覺皮質（visual cortex）。",
           "choices": [
             "右同向偏盲",
             "雙顳側偏盲",
             "右眼全盲",
             "左同向偏盲"
-          ]
+          ],
+          "id": "cfb7a7d02"
         },
         {
           "type": "diagram",
@@ -117,37 +120,37 @@
           "source": "本次自製 SVG 教學示意，依教材基本構造重繪；非來源網站截圖。",
           "points": [
             {
-              "name": "視神經 Optic nerve",
+              "name": "視神經 （Optic nerve）",
               "desc": "每眼神經節細胞軸突匯集，包含該眼鼻、顳半視網膜資訊。",
               "x": 35,
               "y": 13.185185185185185
             },
             {
-              "name": "視交叉 Optic chiasm",
+              "name": "視交叉 （Optic chiasm）",
               "desc": "鼻半視網膜纖維交叉，顳半視網膜纖維維持同側。",
               "x": 50,
               "y": 25.777777777777775
             },
             {
-              "name": "視束 Optic tract",
+              "name": "視束 （Optic tract）",
               "desc": "同一側視束含對側視野資訊，來自兩眼。",
               "x": 65,
               "y": 38.37037037037037
             },
             {
-              "name": "外側膝狀體 LGN",
+              "name": "外側膝狀體 （LGN）",
               "desc": "視丘的主要視覺中繼核。",
               "x": 35,
               "y": 50.96296296296297
             },
             {
-              "name": "視放射 Optic radiation",
-              "desc": "由 LGN 投射至枕葉；顳葉 Meyer loop 傳遞上視野資訊。",
+              "name": "視放射 （Optic radiation）",
+              "desc": "由 外側膝狀體（LGN） 投射至枕葉；顳葉 梅耶氏環（Meyer loop） 傳遞上視野資訊。",
               "x": 50,
               "y": 63.55555555555554
             },
             {
-              "name": "初級視覺皮質 V1",
+              "name": "初級視覺皮質 （V1）",
               "desc": "位於枕葉距狀溝周圍，接收對側視野資訊。",
               "x": 65,
               "y": 76.14814814814814
@@ -158,18 +161,19 @@
           "type": "check",
           "kind": "self",
           "q": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
-          "answer": "視神經 Optic nerve：每眼神經節細胞軸突匯集，包含該眼鼻、顳半視網膜資訊。\n視交叉 Optic chiasm：鼻半視網膜纖維交叉，顳半視網膜纖維維持同側。\n視束 Optic tract：同一側視束含對側視野資訊，來自兩眼。\n外側膝狀體 LGN：視丘的主要視覺中繼核。\n視放射 Optic radiation：由 LGN 投射至枕葉；顳葉 Meyer loop 傳遞上視野資訊。\n初級視覺皮質 V1：位於枕葉距狀溝周圍，接收對側視野資訊。",
+          "answer": "視神經 （Optic nerve）：每眼神經節細胞軸突匯集，包含該眼鼻、顳半視網膜資訊。\n視交叉 （Optic chiasm）：鼻半視網膜纖維交叉，顳半視網膜纖維維持同側。\n視束 （Optic tract）：同一側視束含對側視野資訊，來自兩眼。\n外側膝狀體 （LGN）：視丘的主要視覺中繼核。\n視放射 （Optic radiation）：由 外側膝狀體（LGN） 投射至枕葉；顳葉 梅耶氏環（Meyer loop） 傳遞上視野資訊。\n初級視覺皮質 （V1）：位於枕葉距狀溝周圍，接收對側視野資訊。",
           "hint": "逐步比較相鄰階段或改變前後，並區分方向與因果。",
-          "explain": "視神經 Optic nerve：每眼神經節細胞軸突匯集，包含該眼鼻、顳半視網膜資訊。\n視交叉 Optic chiasm：鼻半視網膜纖維交叉，顳半視網膜纖維維持同側。\n視束 Optic tract：同一側視束含對側視野資訊，來自兩眼。\n外側膝狀體 LGN：視丘的主要視覺中繼核。\n視放射 Optic radiation：由 LGN 投射至枕葉；顳葉 Meyer loop 傳遞上視野資訊。\n初級視覺皮質 V1：位於枕葉距狀溝周圍，接收對側視野資訊。"
+          "explain": "視神經 （Optic nerve）：每眼神經節細胞軸突匯集，包含該眼鼻、顳半視網膜資訊。\n視交叉 （Optic chiasm）：鼻半視網膜纖維交叉，顳半視網膜纖維維持同側。\n視束 （Optic tract）：同一側視束含對側視野資訊，來自兩眼。\n外側膝狀體 （LGN）：視丘的主要視覺中繼核。\n視放射 （Optic radiation）：由 外側膝狀體（LGN） 投射至枕葉；顳葉 梅耶氏環（Meyer loop） 傳遞上視野資訊。\n初級視覺皮質 （V1）：位於枕葉距狀溝周圍，接收對側視野資訊。",
+          "id": "cb922c9fe"
         },
         {
           "type": "example",
-          "title": "範例拆解：每條 optic tract 都看對側半邊世界",
-          "problem": "右 optic tract 病灶最典型造成？\n\nA. 右同向偏盲\nB. 雙顳側偏盲\nC. 右眼全盲\nD. 左同向偏盲",
+          "title": "範例拆解：每條 視束（optic tract） 都看對側半邊世界",
+          "problem": "右 視束（optic tract） 病灶最典型造成？\n\nA. 右同向偏盲\nB. 雙顳側偏盲\nC. 右眼全盲\nD. 左同向偏盲",
           "steps": [
-            "先確認題目問的主題：每條 optic tract 都看對側半邊世界",
-            "因 nasal fibers 已交叉，right optic tract 包含 right temporal retina 與 left nasal retina fibers，兩者都代表 left visual hemifield。這條規則一路維持到 LGN 與 visual cortex。",
-            "把判斷依據連回題目：right tract = left visual field\n\n正確選項：左同向偏盲。\n因 nasal fibers 已交叉，right optic tract 包含 right temporal retina 與 left nasal retina fibers，兩者都代表 left visual hemifield。這條規則一路維持到 LGN 與 visual cortex。"
+            "先確認題目問的主題：每條 視束（optic tract） 都看對側半邊世界",
+            "因 鼻側（nasal） fibers 已交叉，right 視束（optic tract） 包含 right 顳側（temporal） 視網膜（retina） 與 left 鼻側（nasal） 視網膜（retina） fibers，兩者都代表 left visual hemifield。這條規則一路維持到 外側膝狀體（LGN） 與 視覺皮質（visual cortex）。",
+            "把判斷依據連回題目：right 神經束（tract） = left 視野（visual field）\n\n正確選項：左同向偏盲。\n因 鼻側（nasal） fibers 已交叉，right 視束（optic tract） 包含 right 顳側（temporal） 視網膜（retina） 與 left 鼻側（nasal） 視網膜（retina） fibers，兩者都代表 left visual hemifield。這條規則一路維持到 外側膝狀體（LGN） 與 視覺皮質（visual cortex）。"
           ],
           "answer": "左同向偏盲"
         },
@@ -183,58 +187,64 @@
           "checks": [
             {
               "kind": "single",
-              "q": "在 optic chiasm 交叉的是？",
+              "q": "在 視交叉（optic chiasm） 交叉的是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "nasal retina crosses\n\n正確選項：nasal retinal fibers。\n在 optic chiasm，nasal hemiretinal fibers decussate，temporal hemiretinal fibers remain ipsilateral。結果每條 optic tract 都攜帶對側 visual hemifield 的資訊。",
+              "explain": "鼻側（nasal） 視網膜（retina） crosses\n\n正確選項：鼻側視網膜纖維（nasal retinal fibers）。\n在 視交叉（optic chiasm），鼻側（nasal） hemiretinal fibers decussate，顳側（temporal） hemiretinal fibers remain ipsilateral。結果每條 視束（optic tract） 都攜帶對側 visual hemifield 的資訊。",
               "choices": [
-                "nasal retinal fibers",
-                "所有 ganglion fibers",
-                "optic radiation",
-                "temporal retinal fibers"
-              ]
+                "鼻側視網膜纖維（nasal retinal fibers）",
+                "所有 神經節（ganglion） fibers",
+                "視放射（optic radiation）",
+                "顳側（temporal） 視網膜的（retinal） fibers"
+              ],
+              "id": "c8dfb4217"
             },
             {
               "kind": "single",
-              "q": "右 optic tract 病灶最典型造成？",
+              "q": "右 視束（optic tract） 病灶最典型造成？",
               "answer": 3,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "right tract = left visual field\n\n正確選項：左同向偏盲。\n因 nasal fibers 已交叉，right optic tract 包含 right temporal retina 與 left nasal retina fibers，兩者都代表 left visual hemifield。這條規則一路維持到 LGN 與 visual cortex。",
+              "explain": "right 神經束（tract） = left 視野（visual field）\n\n正確選項：左同向偏盲。\n因 鼻側（nasal） fibers 已交叉，right 視束（optic tract） 包含 right 顳側（temporal） 視網膜（retina） 與 left 鼻側（nasal） 視網膜（retina） fibers，兩者都代表 left visual hemifield。這條規則一路維持到 外側膝狀體（LGN） 與 視覺皮質（visual cortex）。",
               "choices": [
                 "右同向偏盲",
                 "雙顳側偏盲",
                 "右眼全盲",
                 "左同向偏盲"
-              ]
+              ],
+              "id": "cfb7a7d02"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "left visual field → right halves of both retinae",
-            "superior field → inferior retina",
-            "nasal retina crosses",
-            "temporal retina stays ipsilateral",
-            "right tract = left visual field",
-            "left tract = right visual field"
+            "left 視野（visual field） → right halves of both retinae",
+            "superior field → inferior 視網膜（retina）",
+            "鼻側（nasal） 視網膜（retina） crosses",
+            "顳側（temporal） 視網膜（retina） stays ipsilateral",
+            "right 神經束（tract） = left 視野（visual field）",
+            "left 神經束（tract） = right 視野（visual field）"
           ],
           "flash": [
             {
-              "front": "visual field 與 retina 左右上下都翻轉",
-              "back": "上方視野落到下 retina，左側視野落到兩眼右半 retina。"
+              "front": "視野（visual field） 與 視網膜（retina） 左右上下都翻轉",
+              "back": "上方視野落到下 視網膜（retina），左側視野落到兩眼右半 視網膜（retina）。",
+              "id": "fe43a66dc"
             },
             {
-              "front": "nasal retinal fibers 交叉，temporal fibers 不交叉",
-              "back": "視交叉只讓 nasal retina 的 axons 過馬路。"
+              "front": "鼻側視網膜纖維（nasal retinal fibers） 交叉，顳側（temporal） fibers 不交叉",
+              "back": "視交叉只讓 鼻側（nasal） 視網膜（retina） 的 軸突（axons） 過馬路。",
+              "id": "f4acb1ba7"
             },
             {
-              "front": "每條 optic tract 都看對側半邊世界",
-              "back": "右 optic tract 攜帶左 visual field；左 optic tract 攜帶右 visual field。"
+              "front": "每條 視束（optic tract） 都看對側半邊世界",
+              "back": "右 視束（optic tract） 攜帶左 視野（visual field）；左 視束（optic tract） 攜帶右 視野（visual field）。",
+              "id": "f5aeb04d8"
             },
             {
               "front": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
-              "back": "視神經 Optic nerve：每眼神經節細胞軸突匯集，包含該眼鼻、顳半視網膜資訊。\n視交叉 Optic chiasm：鼻半視網膜纖維交叉，顳半視網膜纖維維持同側。\n視束 Optic tract：同一側視束含對側視野資訊，來自兩眼。\n外側膝狀體 LGN：視丘的主要視覺中繼核。\n視放射 Optic radiation：由 LGN 投射至枕葉；顳葉 Meyer loop 傳遞上視野資訊。\n初級視覺皮質 V1：位於枕葉距狀溝周圍，接收對側視野資訊。"
+              "back": "視神經 （Optic nerve）：每眼神經節細胞軸突匯集，包含該眼鼻、顳半視網膜資訊。\n視交叉 （Optic chiasm）：鼻半視網膜纖維交叉，顳半視網膜纖維維持同側。\n視束 （Optic tract）：同一側視束含對側視野資訊，來自兩眼。\n外側膝狀體 （LGN）：視丘的主要視覺中繼核。\n視放射 （Optic radiation）：由 外側膝狀體（LGN） 投射至枕葉；顳葉 梅耶氏環（Meyer loop） 傳遞上視野資訊。\n初級視覺皮質 （V1）：位於枕葉距狀溝周圍，接收對側視野資訊。",
+              "id": "fb922c9fe"
             }
           ]
         }
@@ -242,78 +252,80 @@
     },
     {
       "id": "relay-1",
-      "title": "從 optic nerve 到 LGN：中繼與分流",
+      "title": "從 視神經（optic nerve） 到 外側膝狀體（LGN）：中繼與分流",
       "goals": [
-        "解釋optic nerve 是單眼全部輸出",
-        "解釋LGN 是有秩序的視覺中繼站",
+        "解釋視神經（optic nerve） 是單眼全部輸出",
+        "解釋外側膝狀體（LGN） 是有秩序的視覺中繼站",
         "解釋視覺訊號也分流到反射與生理時鐘"
       ],
       "steps": [
         {
           "type": "intro",
-          "title": "從 optic nerve 到 LGN：中繼與分流",
-          "body": "大部分訊號去 LGN，再到視覺皮質；少部分分流去反射與節律中心。\n\n- 先看 optic nerve/chiasm/tract。\n- 再看 LGN 六層。\n- 最後認 pretectal、superior colliculus、SCN 分流。"
+          "title": "從 視神經（optic nerve） 到 外側膝狀體（LGN）：中繼與分流",
+          "body": "大部分訊號去 外側膝狀體（LGN），再到視覺皮質；少部分分流去反射與節律中心。\n\n- 先看 視神經（optic nerve）/視交叉（chiasm）/神經束（tract）。\n- 再看 外側膝狀體 六層。\n- 最後認 pretectal、上丘（superior colliculus）、SCN 分流。"
         },
         {
           "type": "card",
-          "title": "optic nerve 是單眼全部輸出",
-          "body": "**一句話／白話**\n視交叉前的 optic nerve 尚未混合兩眼，所以病灶會讓同側單眼視力喪失。\n\n**觀念**\noptic nerve 由 ipsilateral eye 的 ganglion cell axons 組成。離開眼球後穿 optic canal 到 chiasm；在 chiasm 前受損會造成同側 monocular visual loss。\n\n**考試角度**\n- optic nerve lesion：ipsilateral monocular loss\n- chiasm 前尚未依 visual hemifield 重組\n- optic nerve 也是 afferent pupillary pathway\n\n**口訣**\n交叉前是一眼一條線；壞掉就是那一眼黑掉。",
+          "title": "視神經（optic nerve） 是單眼全部輸出",
+          "body": "**一句話／白話**\n視交叉前的 視神經（optic nerve） 尚未混合兩眼，所以病灶會讓同側單眼視力喪失。\n\n**觀念**\n視神經 由 ipsilateral eye 的 神經節細胞（ganglion cell） 軸突（axons） 組成。離開眼球後穿 optic canal 到 視交叉（chiasm）；在 視交叉 前受損會造成同側 單眼的（monocular） visual loss。\n\n**考試角度**\n- 視神經 病灶（lesion）：ipsilateral 單眼的 loss\n- 視交叉 前尚未依 visual hemifield 重組\n- 視神經 也是 傳入（afferent） pupillary 路徑（pathway）\n\n**口訣**\n交叉前是一眼一條線；壞掉就是那一眼黑掉。",
           "keys": [
-            "optic nerve lesion：ipsilateral monocular loss",
-            "chiasm 前尚未依 visual hemifield 重組",
-            "optic nerve 也是 afferent pupillary pathway"
+            "視神經（optic nerve） 病灶（lesion）：ipsilateral 單眼的（monocular） loss",
+            "視交叉（chiasm） 前尚未依 visual hemifield 重組",
+            "視神經（optic nerve） 也是 傳入（afferent） pupillary 路徑（pathway）"
           ],
           "tip": "口訣：交叉前是一眼一條線；壞掉就是那一眼黑掉。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "左 optic nerve 完全受損最典型造成？",
+          "q": "左 視神經（optic nerve） 完全受損最典型造成？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "optic nerve lesion：ipsilateral monocular loss\n\n正確選項：左眼失明。\noptic nerve 由 ipsilateral eye 的 ganglion cell axons 組成。離開眼球後穿 optic canal 到 chiasm；在 chiasm 前受損會造成同側 monocular visual loss。",
+          "explain": "視神經（optic nerve） 病灶（lesion）：ipsilateral 單眼的（monocular） loss\n\n正確選項：左眼失明。\n視神經（optic nerve） 由 ipsilateral eye 的 神經節細胞（ganglion cell） 軸突（axons） 組成。離開眼球後穿 optic canal 到 視交叉（chiasm）；在 視交叉（chiasm） 前受損會造成同側 單眼的（monocular） visual loss。",
           "choices": [
             "左同向偏盲",
             "左眼失明",
             "右眼失明",
             "雙顳側偏盲"
-          ]
+          ],
+          "id": "c248166ad"
         },
         {
           "type": "card",
-          "title": "LGN 是有秩序的視覺中繼站",
-          "body": "**一句話／白話**\nLGN 保留 retinal map，並將不同眼與不同訊息通道分層整理。\n\n**觀念**\nlateral geniculate nucleus 通常描述為六層。magnocellular layers 1–2 偏重 motion、低對比與時間解析；parvocellular layers 3–6 偏重細節與顏色，另有 koniocellular pathways。\n\n**考試角度**\n- LGN 保留 retinotopic organization\n- M pathway：motion/temporal\n- P pathway：detail/color\n\n**口訣**\nLGN 像六層分類站：動態走 M，細節色彩走 P。",
+          "title": "外側膝狀體（LGN） 是有秩序的視覺中繼站",
+          "body": "**一句話／白話**\n外側膝狀體（LGN） 保留 視網膜的（retinal） 平均動脈壓（map），並將不同眼與不同訊息通道分層整理。\n\n**觀念**\nlateral geniculate 核（nucleus） 通常描述為六層。magnocellular 層（layers） 1–2 偏重 motion、低對比與時間解析；parvocellular 層 3–6 偏重細節與顏色，另有 koniocellular pathways。\n\n**考試角度**\n- 外側膝狀體 保留 retinotopic organization\n- M 路徑（pathway）：motion/顳側（temporal）\n- P 路徑：detail/color\n\n**口訣**\n外側膝狀體 像六層分類站：動態走 M，細節色彩走 P。",
           "keys": [
-            "LGN 保留 retinotopic organization",
-            "M pathway：motion/temporal",
-            "P pathway：detail/color"
+            "外側膝狀體（LGN） 保留 retinotopic organization",
+            "M 路徑（pathway）：motion/顳側（temporal）",
+            "P 路徑（pathway）：detail/color"
           ],
-          "tip": "口訣：LGN 像六層分類站：動態走 M，細節色彩走 P。"
+          "tip": "口訣：外側膝狀體（LGN） 像六層分類站：動態走 M，細節色彩走 P。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "parvocellular pathway 較偏重？",
+          "q": "parvocellular 路徑（pathway） 較偏重？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "LGN 保留 retinotopic organization\n\n正確選項：細節與色彩。\nlateral geniculate nucleus 通常描述為六層。magnocellular layers 1–2 偏重 motion、低對比與時間解析；parvocellular layers 3–6 偏重細節與顏色，另有 koniocellular pathways。",
+          "explain": "外側膝狀體（LGN） 保留 retinotopic organization\n\n正確選項：細節與色彩。\nlateral geniculate 核（nucleus） 通常描述為六層。magnocellular 層（layers） 1–2 偏重 motion、低對比與時間解析；parvocellular 層（layers） 3–6 偏重細節與顏色，另有 koniocellular pathways。",
           "choices": [
             "細節與色彩",
             "前庭反射",
             "淚液分泌",
             "眼壓調節"
-          ]
+          ],
+          "id": "c7c5a9584"
         },
         {
           "type": "card",
           "title": "視覺訊號也分流到反射與生理時鐘",
-          "body": "**一句話／白話**\n不是所有 optic tract fibers 都去 LGN；有些去 pretectal area、superior colliculus 與 SCN。\n\n**觀念**\npretectal nuclei 參與 pupillary light reflex；superior colliculus 協助視覺定向與眼頭轉向；suprachiasmatic nucleus 接收光訊號調節 circadian rhythm。\n\n**考試角度**\n- pretectal area：pupillary light reflex\n- superior colliculus：orienting responses\n- SCN：circadian rhythm\n\n**口訣**\nLGN 負責看；pretectal 縮瞳；上丘轉向；SCN 校時。",
+          "body": "**一句話／白話**\n不是所有 視束（optic tract） fibers 都去 外側膝狀體（LGN）；有些去 頂蓋前區（pretectal area）、上丘（superior colliculus） 與 SCN。\n\n**觀念**\npretectal 細胞核（nuclei） 參與 pupillary 光（light） 反射（reflex）；上丘 協助視覺定向與眼頭轉向；suprachiasmatic 核（nucleus） 接收光訊號調節 circadian rhythm。\n\n**考試角度**\n- 頂蓋前區：pupillary 光 反射\n- 上丘：orienting responses\n- SCN：circadian rhythm\n\n**口訣**\n外側膝狀體 負責看；pretectal 縮瞳；上丘轉向；SCN 校時。",
           "keys": [
-            "pretectal area：pupillary light reflex",
-            "superior colliculus：orienting responses",
+            "頂蓋前區（pretectal area）：pupillary 光（light） 反射（reflex）",
+            "上丘（superior colliculus）：orienting responses",
             "SCN：circadian rhythm"
           ],
-          "tip": "口訣：LGN 負責看；pretectal 縮瞳；上丘轉向；SCN 校時。"
+          "tip": "口訣：外側膝狀體（LGN） 負責看；pretectal 縮瞳；上丘轉向；SCN 校時。"
         },
         {
           "type": "check",
@@ -321,28 +333,29 @@
           "q": "光線調整 circadian rhythm 主要經哪個中心？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "pretectal area：pupillary light reflex\n\n正確選項：suprachiasmatic nucleus。\npretectal nuclei 參與 pupillary light reflex；superior colliculus 協助視覺定向與眼頭轉向；suprachiasmatic nucleus 接收光訊號調節 circadian rhythm。",
+          "explain": "頂蓋前區（pretectal area）：pupillary 光（light） 反射（reflex）\n\n正確選項：suprachiasmatic 核（nucleus）。\npretectal 細胞核（nuclei） 參與 pupillary 光（light） 反射（reflex）；上丘（superior colliculus） 協助視覺定向與眼頭轉向；suprachiasmatic 核（nucleus） 接收光訊號調節 circadian rhythm。",
           "choices": [
-            "red nucleus",
-            "LGN only",
-            "suprachiasmatic nucleus",
+            "red 核（nucleus）",
+            "外側膝狀體（LGN） only",
+            "suprachiasmatic 核（nucleus）",
             "cerebellum"
-          ]
+          ],
+          "id": "c7a3c863d"
         },
         {
           "type": "example",
           "title": "範例拆解：視覺訊號也分流到反射與生理時鐘",
-          "problem": "光線調整 circadian rhythm 主要經哪個中心？\n\nA. red nucleus\nB. LGN only\nC. suprachiasmatic nucleus\nD. cerebellum",
+          "problem": "光線調整 circadian rhythm 主要經哪個中心？\n\nA. red 核（nucleus）\nB. 外側膝狀體（LGN） only\nC. suprachiasmatic 核（nucleus）\nD. cerebellum",
           "steps": [
             "先確認題目問的主題：視覺訊號也分流到反射與生理時鐘",
-            "pretectal nuclei 參與 pupillary light reflex；superior colliculus 協助視覺定向與眼頭轉向；suprachiasmatic nucleus 接收光訊號調節 circadian rhythm。",
-            "把判斷依據連回題目：pretectal area：pupillary light reflex\n\n正確選項：suprachiasmatic nucleus。\npretectal nuclei 參與 pupillary light reflex；superior colliculus 協助視覺定向與眼頭轉向；suprachiasmatic nucleus 接收光訊號調節 circadian rhythm。"
+            "pretectal 細胞核（nuclei） 參與 pupillary 光（light） 反射（reflex）；上丘（superior colliculus） 協助視覺定向與眼頭轉向；suprachiasmatic 核（nucleus） 接收光訊號調節 circadian rhythm。",
+            "把判斷依據連回題目：頂蓋前區（pretectal area）：pupillary 光（light） 反射（reflex）\n\n正確選項：suprachiasmatic 核（nucleus）。\npretectal 細胞核（nuclei） 參與 pupillary 光（light） 反射（reflex）；上丘（superior colliculus） 協助視覺定向與眼頭轉向；suprachiasmatic 核（nucleus） 接收光訊號調節 circadian rhythm。"
           ],
-          "answer": "suprachiasmatic nucleus"
+          "answer": "suprachiasmatic 核（nucleus）"
         },
         {
           "type": "practice",
-          "title": "實戰：從 optic nerve 到 LGN：中繼與分流",
+          "title": "實戰：從 視神經（optic nerve） 到 外側膝狀體（LGN）：中繼與分流",
           "qids": [
             "s114-eye-ans-exam106-u14-q0009",
             "s114-eye-ans-exam106-u14-q0015"
@@ -350,58 +363,64 @@
           "checks": [
             {
               "kind": "single",
-              "q": "parvocellular pathway 較偏重？",
+              "q": "parvocellular 路徑（pathway） 較偏重？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "LGN 保留 retinotopic organization\n\n正確選項：細節與色彩。\nlateral geniculate nucleus 通常描述為六層。magnocellular layers 1–2 偏重 motion、低對比與時間解析；parvocellular layers 3–6 偏重細節與顏色，另有 koniocellular pathways。",
+              "explain": "外側膝狀體（LGN） 保留 retinotopic organization\n\n正確選項：細節與色彩。\nlateral geniculate 核（nucleus） 通常描述為六層。magnocellular 層（layers） 1–2 偏重 motion、低對比與時間解析；parvocellular 層（layers） 3–6 偏重細節與顏色，另有 koniocellular pathways。",
               "choices": [
                 "細節與色彩",
                 "前庭反射",
                 "淚液分泌",
                 "眼壓調節"
-              ]
+              ],
+              "id": "c7c5a9584"
             },
             {
               "kind": "single",
               "q": "光線調整 circadian rhythm 主要經哪個中心？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "pretectal area：pupillary light reflex\n\n正確選項：suprachiasmatic nucleus。\npretectal nuclei 參與 pupillary light reflex；superior colliculus 協助視覺定向與眼頭轉向；suprachiasmatic nucleus 接收光訊號調節 circadian rhythm。",
+              "explain": "頂蓋前區（pretectal area）：pupillary 光（light） 反射（reflex）\n\n正確選項：suprachiasmatic 核（nucleus）。\npretectal 細胞核（nuclei） 參與 pupillary 光（light） 反射（reflex）；上丘（superior colliculus） 協助視覺定向與眼頭轉向；suprachiasmatic 核（nucleus） 接收光訊號調節 circadian rhythm。",
               "choices": [
-                "red nucleus",
-                "LGN only",
-                "suprachiasmatic nucleus",
+                "red 核（nucleus）",
+                "外側膝狀體（LGN） only",
+                "suprachiasmatic 核（nucleus）",
                 "cerebellum"
-              ]
+              ],
+              "id": "c7a3c863d"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "optic nerve lesion：ipsilateral monocular loss",
-            "chiasm 前尚未依 visual hemifield 重組",
-            "LGN 保留 retinotopic organization",
-            "M pathway：motion/temporal",
-            "pretectal area：pupillary light reflex",
-            "superior colliculus：orienting responses"
+            "視神經（optic nerve） 病灶（lesion）：ipsilateral 單眼的（monocular） loss",
+            "視交叉（chiasm） 前尚未依 visual hemifield 重組",
+            "外側膝狀體（LGN） 保留 retinotopic organization",
+            "M 路徑（pathway）：motion/顳側（temporal）",
+            "頂蓋前區（pretectal area）：pupillary 光（light） 反射（reflex）",
+            "上丘（superior colliculus）：orienting responses"
           ],
           "flash": [
             {
-              "front": "optic nerve 是單眼全部輸出",
-              "back": "視交叉前的 optic nerve 尚未混合兩眼，所以病灶會讓同側單眼視力喪失。"
+              "front": "視神經（optic nerve） 是單眼全部輸出",
+              "back": "視交叉前的 視神經（optic nerve） 尚未混合兩眼，所以病灶會讓同側單眼視力喪失。",
+              "id": "f0d6bee64"
             },
             {
-              "front": "LGN 是有秩序的視覺中繼站",
-              "back": "LGN 保留 retinal map，並將不同眼與不同訊息通道分層整理。"
+              "front": "外側膝狀體（LGN） 是有秩序的視覺中繼站",
+              "back": "外側膝狀體（LGN） 保留 視網膜的（retinal） 平均動脈壓（map），並將不同眼與不同訊息通道分層整理。",
+              "id": "f37734826"
             },
             {
               "front": "視覺訊號也分流到反射與生理時鐘",
-              "back": "不是所有 optic tract fibers 都去 LGN；有些去 pretectal area、superior colliculus 與 SCN。"
+              "back": "不是所有 視束（optic tract） fibers 都去 外側膝狀體（LGN）；有些去 頂蓋前區（pretectal area）、上丘（superior colliculus） 與 SCN。",
+              "id": "f6908851e"
             },
             {
-              "front": "左 optic nerve 完全受損最典型造成？",
-              "back": "optic nerve lesion：ipsilateral monocular loss\n\n正確選項：左眼失明。\noptic nerve 由 ipsilateral eye 的 ganglion cell axons 組成。離開眼球後穿 optic canal 到 chiasm；在 chiasm 前受損會造成同側 monocular visual loss。"
+              "front": "左 視神經（optic nerve） 完全受損最典型造成？",
+              "back": "視神經（optic nerve） 病灶（lesion）：ipsilateral 單眼的（monocular） loss\n\n正確選項：左眼失明。\n視神經（optic nerve） 由 ipsilateral eye 的 神經節細胞（ganglion cell） 軸突（axons） 組成。離開眼球後穿 optic canal 到 視交叉（chiasm）；在 視交叉（chiasm） 前受損會造成同側 單眼的（monocular） visual loss。",
+              "id": "f248166ad"
             }
           ]
         }
@@ -411,23 +430,23 @@
       "id": "radiations-cortex-1",
       "title": "視放射與視覺皮質：上下視野分兩條走",
       "goals": [
-        "解釋Meyer loop 繞 temporal lobe，攜帶上視野",
-        "解釋parietal optic radiation 攜帶下視野",
-        "解釋V1 位於 calcarine cortex 並保留視網膜地圖"
+        "解釋梅耶氏環（Meyer loop） 繞 顳葉（temporal lobe），攜帶上視野",
+        "解釋parietal 視放射（optic radiation） 攜帶下視野",
+        "解釋初級視覺皮質（V1） 位於 距狀溝周圍皮質（calcarine cortex） 並保留視網膜地圖"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "視放射與視覺皮質：上下視野分兩條走",
-          "body": "inferior retina 代表上視野，走 temporal Meyer loop；superior retina 代表下視野，走 parietal route。\n\n- 先把上視野配 inferior retina。\n- 再配 Meyer loop。\n- 最後看 V1 的 calcarine 分布。"
+          "body": "inferior 視網膜（retina） 代表上視野，走 顳側（temporal） 梅耶氏環（Meyer loop）；superior 視網膜 代表下視野，走 parietal route。\n\n- 先把上視野配 inferior 視網膜。\n- 再配 梅耶氏環。\n- 最後看 初級視覺皮質（V1） 的 calcarine 分布。"
         },
         {
           "type": "card",
-          "title": "Meyer loop 繞 temporal lobe，攜帶上視野",
-          "body": "**一句話／白話**\ninferior retinal fibers 先向前繞入 temporal lobe，形成 Meyer loop，代表 contralateral superior visual field。\n\n**觀念**\noptic radiation 的 inferior division 經 temporal lobe Meyer loop 到 lower bank of calcarine fissure。temporal lobe lesion 造成 contralateral superior quadrantanopia，常稱 pie in the sky。\n\n**考試角度**\n- Meyer loop：temporal lobe\n- 攜帶 contralateral superior visual field\n- 病灶：contralateral superior quadrantanopia\n\n**口訣**\nMeyer 往顳葉繞，天空那一角會掉。",
+          "title": "梅耶氏環（Meyer loop） 繞 顳葉（temporal lobe），攜帶上視野",
+          "body": "**一句話／白話**\ninferior 視網膜的（retinal） fibers 先向前繞入 顳葉（temporal lobe），形成 梅耶氏環（Meyer loop），代表 contralateral superior 視野（visual field）。\n\n**觀念**\n視放射（optic radiation） 的 inferior division 經 顳葉 梅耶氏環 到 lower bank of calcarine fissure。顳葉 病灶（lesion） 造成 contralateral superior quadrantanopia，常稱 pie in the sky。\n\n**考試角度**\n- 梅耶氏環：顳葉\n- 攜帶 contralateral superior 視野\n- 病灶：contralateral superior quadrantanopia\n\n**口訣**\nMeyer 往顳葉繞，天空那一角會掉。",
           "keys": [
-            "Meyer loop：temporal lobe",
-            "攜帶 contralateral superior visual field",
+            "梅耶氏環（Meyer loop）：顳葉（temporal lobe）",
+            "攜帶 contralateral superior 視野（visual field）",
             "病灶：contralateral superior quadrantanopia"
           ],
           "tip": "口訣：Meyer 往顳葉繞，天空那一角會掉。"
@@ -435,21 +454,22 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "右 temporal Meyer loop 病灶造成？",
+          "q": "右 顳側（temporal） 梅耶氏環（Meyer loop） 病灶造成？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Meyer loop：temporal lobe\n\n正確選項：左上象限缺損。\noptic radiation 的 inferior division 經 temporal lobe Meyer loop 到 lower bank of calcarine fissure。temporal lobe lesion 造成 contralateral superior quadrantanopia，常稱 pie in the sky。",
+          "explain": "梅耶氏環（Meyer loop）：顳葉（temporal lobe）\n\n正確選項：左上象限缺損。\n視放射（optic radiation） 的 inferior division 經 顳葉（temporal lobe） 梅耶氏環（Meyer loop） 到 lower bank of calcarine fissure。顳葉（temporal lobe） 病灶（lesion） 造成 contralateral superior quadrantanopia，常稱 pie in the sky。",
           "choices": [
             "雙鼻側偏盲",
             "左上象限缺損",
             "左下象限缺損",
             "右眼失明"
-          ]
+          ],
+          "id": "cf9bee1b6"
         },
         {
           "type": "card",
-          "title": "parietal optic radiation 攜帶下視野",
-          "body": "**一句話／白話**\nsuperior retinal fibers 較直接經 parietal lobe 向後，代表 contralateral inferior visual field。\n\n**觀念**\noptic radiation superior division 經 parietal lobe 到 upper bank of calcarine fissure。parietal lesion 常造成 contralateral inferior quadrantanopia，稱 pie on the floor。\n\n**考試角度**\n- parietal route：contralateral inferior field\n- 到 calcarine upper bank\n- 病灶：pie on the floor\n\n**口訣**\n頂葉走地板，下方視野會掉。",
+          "title": "parietal 視放射（optic radiation） 攜帶下視野",
+          "body": "**一句話／白話**\nsuperior 視網膜的（retinal） fibers 較直接經 parietal lobe 向後，代表 contralateral inferior 視野（visual field）。\n\n**觀念**\n視放射（optic radiation） superior division 經 parietal lobe 到 upper bank of calcarine fissure。parietal 病灶（lesion） 常造成 contralateral inferior quadrantanopia，稱 pie on the floor。\n\n**考試角度**\n- parietal route：contralateral inferior field\n- 到 calcarine upper bank\n- 病灶：pie on the floor\n\n**口訣**\n頂葉走地板，下方視野會掉。",
           "keys": [
             "parietal route：contralateral inferior field",
             "到 calcarine upper bank",
@@ -460,24 +480,25 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "左 parietal optic radiation 病灶最可能造成？",
+          "q": "左 parietal 視放射（optic radiation） 病灶最可能造成？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "parietal route：contralateral inferior field\n\n正確選項：右下象限缺損。\noptic radiation superior division 經 parietal lobe 到 upper bank of calcarine fissure。parietal lesion 常造成 contralateral inferior quadrantanopia，稱 pie on the floor。",
+          "explain": "parietal route：contralateral inferior field\n\n正確選項：右下象限缺損。\n視放射（optic radiation） superior division 經 parietal lobe 到 upper bank of calcarine fissure。parietal 病灶（lesion） 常造成 contralateral inferior quadrantanopia，稱 pie on the floor。",
           "choices": [
             "左眼失明",
             "雙顳側偏盲",
             "右下象限缺損",
             "右上象限缺損"
-          ]
+          ],
+          "id": "cb00bdf0b"
         },
         {
           "type": "card",
-          "title": "V1 位於 calcarine cortex 並保留視網膜地圖",
-          "body": "**一句話／白話**\nprimary visual cortex 沿 occipital lobe 的 calcarine fissure 排列，macula 占很大皮質面積。\n\n**觀念**\nupper bank/cuneus 接收 inferior visual field，lower bank/lingual gyrus 接收 superior visual field。foveal/macular representation 位於 occipital pole 且 cortical magnification 很大；較周邊視野表示較前方。\n\n**考試角度**\n- V1 = primary visual cortex around calcarine fissure\n- macula 位於 occipital pole 且皮質代表區大\n- upper bank 看下視野；lower bank 看上視野\n\n**口訣**\n枕葉把中央視野放大畫，越周邊越往前排。",
+          "title": "初級視覺皮質（V1） 位於 距狀溝周圍皮質（calcarine cortex） 並保留視網膜地圖",
+          "body": "**一句話／白話**\n初級視覺皮質（primary visual cortex） 沿 occipital lobe 的 calcarine fissure 排列，黃斑（macula） 占很大皮質面積。\n\n**觀念**\nupper bank/cuneus 接收 inferior 視野（visual field），lower bank/lingual gyrus 接收 superior 視野。foveal/macular representation 位於 occipital pole 且 cortical magnification 很大；較周邊視野表示較前方。\n\n**考試角度**\n- 初級視覺皮質（V1） = 初級視覺皮質 around calcarine fissure\n- 黃斑 位於 occipital pole 且皮質代表區大\n- upper bank 看下視野；lower bank 看上視野\n\n**口訣**\n枕葉把中央視野放大畫，越周邊越往前排。",
           "keys": [
-            "V1 = primary visual cortex around calcarine fissure",
-            "macula 位於 occipital pole 且皮質代表區大",
+            "初級視覺皮質（V1） = 初級視覺皮質（primary visual cortex） around calcarine fissure",
+            "黃斑（macula） 位於 occipital pole 且皮質代表區大",
             "upper bank 看下視野；lower bank 看上視野"
           ],
           "tip": "口訣：枕葉把中央視野放大畫，越周邊越往前排。"
@@ -485,25 +506,26 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "macular representation 在 V1 最靠近？",
+          "q": "macular representation 在 初級視覺皮質（V1） 最靠近？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "V1 = primary visual cortex around calcarine fissure\n\n正確選項：occipital pole。\nupper bank/cuneus 接收 inferior visual field，lower bank/lingual gyrus 接收 superior visual field。foveal/macular representation 位於 occipital pole 且 cortical magnification 很大；較周邊視野表示較前方。",
+          "explain": "初級視覺皮質（V1） = 初級視覺皮質（primary visual cortex） around calcarine fissure\n\n正確選項：occipital pole。\nupper bank/cuneus 接收 inferior 視野（visual field），lower bank/lingual gyrus 接收 superior 視野（visual field）。foveal/macular representation 位於 occipital pole 且 cortical magnification 很大；較周邊視野表示較前方。",
           "choices": [
-            "brainstem",
-            "optic chiasm",
+            "腦幹（brainstem）",
+            "視交叉（optic chiasm）",
             "occipital pole",
             "frontal pole"
-          ]
+          ],
+          "id": "ce8db0992"
         },
         {
           "type": "example",
-          "title": "範例拆解：V1 位於 calcarine cortex 並保留視網膜地圖",
-          "problem": "macular representation 在 V1 最靠近？\n\nA. brainstem\nB. optic chiasm\nC. occipital pole\nD. frontal pole",
+          "title": "範例拆解：初級視覺皮質（V1） 位於 距狀溝周圍皮質（calcarine cortex） 並保留視網膜地圖",
+          "problem": "macular representation 在 初級視覺皮質（V1） 最靠近？\n\nA. 腦幹（brainstem）\nB. 視交叉（optic chiasm）\nC. occipital pole\nD. frontal pole",
           "steps": [
-            "先確認題目問的主題：V1 位於 calcarine cortex 並保留視網膜地圖",
-            "upper bank/cuneus 接收 inferior visual field，lower bank/lingual gyrus 接收 superior visual field。foveal/macular representation 位於 occipital pole 且 cortical magnification 很大；較周邊視野表示較前方。",
-            "把判斷依據連回題目：V1 = primary visual cortex around calcarine fissure\n\n正確選項：occipital pole。\nupper bank/cuneus 接收 inferior visual field，lower bank/lingual gyrus 接收 superior visual field。foveal/macular representation 位於 occipital pole 且 cortical magnification 很大；較周邊視野表示較前方。"
+            "先確認題目問的主題：初級視覺皮質（V1） 位於 距狀溝周圍皮質（calcarine cortex） 並保留視網膜地圖",
+            "upper bank/cuneus 接收 inferior 視野（visual field），lower bank/lingual gyrus 接收 superior 視野（visual field）。foveal/macular representation 位於 occipital pole 且 cortical magnification 很大；較周邊視野表示較前方。",
+            "把判斷依據連回題目：初級視覺皮質（V1） = 初級視覺皮質（primary visual cortex） around calcarine fissure\n\n正確選項：occipital pole。\nupper bank/cuneus 接收 inferior 視野（visual field），lower bank/lingual gyrus 接收 superior 視野（visual field）。foveal/macular representation 位於 occipital pole 且 cortical magnification 很大；較周邊視野表示較前方。"
           ],
           "answer": "occipital pole"
         },
@@ -517,58 +539,64 @@
           "checks": [
             {
               "kind": "single",
-              "q": "左 parietal optic radiation 病灶最可能造成？",
+              "q": "左 parietal 視放射（optic radiation） 病灶最可能造成？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "parietal route：contralateral inferior field\n\n正確選項：右下象限缺損。\noptic radiation superior division 經 parietal lobe 到 upper bank of calcarine fissure。parietal lesion 常造成 contralateral inferior quadrantanopia，稱 pie on the floor。",
+              "explain": "parietal route：contralateral inferior field\n\n正確選項：右下象限缺損。\n視放射（optic radiation） superior division 經 parietal lobe 到 upper bank of calcarine fissure。parietal 病灶（lesion） 常造成 contralateral inferior quadrantanopia，稱 pie on the floor。",
               "choices": [
                 "左眼失明",
                 "雙顳側偏盲",
                 "右下象限缺損",
                 "右上象限缺損"
-              ]
+              ],
+              "id": "cb00bdf0b"
             },
             {
               "kind": "single",
-              "q": "macular representation 在 V1 最靠近？",
+              "q": "macular representation 在 初級視覺皮質（V1） 最靠近？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "V1 = primary visual cortex around calcarine fissure\n\n正確選項：occipital pole。\nupper bank/cuneus 接收 inferior visual field，lower bank/lingual gyrus 接收 superior visual field。foveal/macular representation 位於 occipital pole 且 cortical magnification 很大；較周邊視野表示較前方。",
+              "explain": "初級視覺皮質（V1） = 初級視覺皮質（primary visual cortex） around calcarine fissure\n\n正確選項：occipital pole。\nupper bank/cuneus 接收 inferior 視野（visual field），lower bank/lingual gyrus 接收 superior 視野（visual field）。foveal/macular representation 位於 occipital pole 且 cortical magnification 很大；較周邊視野表示較前方。",
               "choices": [
-                "brainstem",
-                "optic chiasm",
+                "腦幹（brainstem）",
+                "視交叉（optic chiasm）",
                 "occipital pole",
                 "frontal pole"
-              ]
+              ],
+              "id": "ce8db0992"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "Meyer loop：temporal lobe",
-            "攜帶 contralateral superior visual field",
+            "梅耶氏環（Meyer loop）：顳葉（temporal lobe）",
+            "攜帶 contralateral superior 視野（visual field）",
             "parietal route：contralateral inferior field",
             "到 calcarine upper bank",
-            "V1 = primary visual cortex around calcarine fissure",
-            "macula 位於 occipital pole 且皮質代表區大"
+            "初級視覺皮質（V1） = 初級視覺皮質（primary visual cortex） around calcarine fissure",
+            "黃斑（macula） 位於 occipital pole 且皮質代表區大"
           ],
           "flash": [
             {
-              "front": "Meyer loop 繞 temporal lobe，攜帶上視野",
-              "back": "inferior retinal fibers 先向前繞入 temporal lobe，形成 Meyer loop，代表 contralateral superior visual field。"
+              "front": "梅耶氏環（Meyer loop） 繞 顳葉（temporal lobe），攜帶上視野",
+              "back": "inferior 視網膜的（retinal） fibers 先向前繞入 顳葉（temporal lobe），形成 梅耶氏環（Meyer loop），代表 contralateral superior 視野（visual field）。",
+              "id": "fc00b1e63"
             },
             {
-              "front": "parietal optic radiation 攜帶下視野",
-              "back": "superior retinal fibers 較直接經 parietal lobe 向後，代表 contralateral inferior visual field。"
+              "front": "parietal 視放射（optic radiation） 攜帶下視野",
+              "back": "superior 視網膜的（retinal） fibers 較直接經 parietal lobe 向後，代表 contralateral inferior 視野（visual field）。",
+              "id": "f9d6b30be"
             },
             {
-              "front": "V1 位於 calcarine cortex 並保留視網膜地圖",
-              "back": "primary visual cortex 沿 occipital lobe 的 calcarine fissure 排列，macula 占很大皮質面積。"
+              "front": "初級視覺皮質（V1） 位於 距狀溝周圍皮質（calcarine cortex） 並保留視網膜地圖",
+              "back": "初級視覺皮質（primary visual cortex） 沿 occipital lobe 的 calcarine fissure 排列，黃斑（macula） 占很大皮質面積。",
+              "id": "f2e4d7996"
             },
             {
-              "front": "右 temporal Meyer loop 病灶造成？",
-              "back": "Meyer loop：temporal lobe\n\n正確選項：左上象限缺損。\noptic radiation 的 inferior division 經 temporal lobe Meyer loop 到 lower bank of calcarine fissure。temporal lobe lesion 造成 contralateral superior quadrantanopia，常稱 pie in the sky。"
+              "front": "右 顳側（temporal） 梅耶氏環（Meyer loop） 病灶造成？",
+              "back": "梅耶氏環（Meyer loop）：顳葉（temporal lobe）\n\n正確選項：左上象限缺損。\n視放射（optic radiation） 的 inferior division 經 顳葉（temporal lobe） 梅耶氏環（Meyer loop） 到 lower bank of calcarine fissure。顳葉（temporal lobe） 病灶（lesion） 造成 contralateral superior quadrantanopia，常稱 pie in the sky。",
+              "id": "ff9bee1b6"
             }
           ]
         }
@@ -578,9 +606,9 @@
       "id": "lesion-localization-1",
       "title": "看視野缺損，反推病灶位置",
       "goals": [
-        "解釋chiasm 中央病灶造成 bitemporal hemianopia",
-        "解釋交叉後病灶造成 contralateral homonymous defect",
-        "解釋occipital lesion 可能出現 macular sparing"
+        "解釋視交叉（chiasm） 中央病灶造成 雙顳側偏盲（bitemporal hemianopia）",
+        "解釋交叉後病灶造成 contralateral 同向視野缺損（homonymous defect）",
+        "解釋occipital 病灶（lesion） 可能出現 黃斑保留（macular sparing）"
       ],
       "steps": [
         {
@@ -590,89 +618,92 @@
         },
         {
           "type": "card",
-          "title": "chiasm 中央病灶造成 bitemporal hemianopia",
-          "body": "**一句話／白話**\n中央視交叉壓到交叉中的 nasal retinal fibers，兩眼 temporal visual fields 都掉。\n\n**觀念**\npituitary mass 等可由下方壓迫 optic chiasm 中央，優先影響 crossing nasal fibers。因 nasal retina 看 temporal field，因此造成 bitemporal heteronymous hemianopia。\n\n**考試角度**\n- chiasm central lesion：bitemporal hemianopia\n- 受損纖維：crossing nasal retinal fibers\n- 常聯想到 pituitary region mass\n\n**口訣**\n交叉中央壞，兩眼外側世界不見。",
+          "title": "視交叉（chiasm） 中央病灶造成 雙顳側偏盲（bitemporal hemianopia）",
+          "body": "**一句話／白話**\n中央視交叉壓到交叉中的 鼻側視網膜纖維（nasal retinal fibers），兩眼 顳側（temporal） visual fields 都掉。\n\n**觀念**\n腦下垂體（pituitary） mass 等可由下方壓迫 視交叉（optic chiasm） 中央，優先影響 crossing 鼻側（nasal） fibers。因 鼻側 視網膜（retina） 看 顳側 field，因此造成 bitemporal heteronymous hemianopia。\n\n**考試角度**\n- 視交叉（chiasm） central 病灶（lesion）：雙顳側偏盲（bitemporal hemianopia）\n- 受損纖維：crossing 鼻側視網膜纖維\n- 常聯想到 腦下垂體 region mass\n\n**口訣**\n交叉中央壞，兩眼外側世界不見。",
           "keys": [
-            "chiasm central lesion：bitemporal hemianopia",
-            "受損纖維：crossing nasal retinal fibers",
-            "常聯想到 pituitary region mass"
+            "視交叉（chiasm） central 病灶（lesion）：雙顳側偏盲（bitemporal hemianopia）",
+            "受損纖維：crossing 鼻側視網膜纖維（nasal retinal fibers）",
+            "常聯想到 腦下垂體（pituitary） region mass"
           ],
           "tip": "口訣：交叉中央壞，兩眼外側世界不見。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "bitemporal hemianopia 最典型定位在？",
+          "q": "雙顳側偏盲（bitemporal hemianopia） 最典型定位在？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "chiasm central lesion：bitemporal hemianopia\n\n正確選項：optic chiasm。\npituitary mass 等可由下方壓迫 optic chiasm 中央，優先影響 crossing nasal fibers。因 nasal retina 看 temporal field，因此造成 bitemporal heteronymous hemianopia。",
+          "explain": "視交叉（chiasm） central 病灶（lesion）：雙顳側偏盲（bitemporal hemianopia）\n\n正確選項：視交叉（optic chiasm）。\n腦下垂體（pituitary） mass 等可由下方壓迫 視交叉（optic chiasm） 中央，優先影響 crossing 鼻側（nasal） fibers。因 鼻側（nasal） 視網膜（retina） 看 顳側（temporal） field，因此造成 bitemporal heteronymous hemianopia。",
           "choices": [
-            "right optic tract only",
-            "retina only",
-            "optic nerve",
-            "optic chiasm"
-          ]
+            "right 視束（optic tract） only",
+            "視網膜（retina） only",
+            "視神經（optic nerve）",
+            "視交叉（optic chiasm）"
+          ],
+          "id": "c12d8481a"
         },
         {
           "type": "card",
-          "title": "交叉後病灶造成 contralateral homonymous defect",
-          "body": "**一句話／白話**\noptic tract、LGN、radiation、V1 病灶都會影響兩眼同一側視野。\n\n**觀念**\npost-chiasmal pathways 已依 visual hemifield 整合，因此 unilateral lesion 造成 contralateral homonymous hemianopia 或 quadrantanopia。病灶越靠 posterior，視野缺損常越 congruous。\n\n**考試角度**\n- post-chiasmal lesion → contralateral homonymous defect\n- 越後方通常越 congruous\n- 象限缺損可提示 temporal/parietal radiation\n\n**口訣**\n交叉後不再分眼睛，而是分左右世界。",
+          "title": "交叉後病灶造成 contralateral 同向視野缺損（homonymous defect）",
+          "body": "**一句話／白話**\n視束（optic tract）、外側膝狀體（LGN）、radiation、初級視覺皮質（V1） 病灶都會影響兩眼同一側視野。\n\n**觀念**\npost-chiasmal pathways 已依 visual hemifield 整合，因此 unilateral 病灶（lesion） 造成 contralateral 同向偏盲（homonymous hemianopia） 或 quadrantanopia。病灶越靠 posterior，視野缺損常越 congruous。\n\n**考試角度**\n- post-chiasmal 病灶 → contralateral 同向視野缺損（homonymous defect）\n- 越後方通常越 congruous\n- 象限缺損可提示 顳側（temporal）/parietal radiation\n\n**口訣**\n交叉後不再分眼睛，而是分左右世界。",
           "keys": [
-            "post-chiasmal lesion → contralateral homonymous defect",
+            "post-chiasmal 病灶（lesion） → contralateral 同向視野缺損（homonymous defect）",
             "越後方通常越 congruous",
-            "象限缺損可提示 temporal/parietal radiation"
+            "象限缺損可提示 顳側（temporal）/parietal radiation"
           ],
           "tip": "口訣：交叉後不再分眼睛，而是分左右世界。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "左 optic tract 病灶造成？",
+          "q": "左 視束（optic tract） 病灶造成？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "post-chiasmal lesion → contralateral homonymous defect\n\n正確選項：右同向偏盲。\npost-chiasmal pathways 已依 visual hemifield 整合，因此 unilateral lesion 造成 contralateral homonymous hemianopia 或 quadrantanopia。病灶越靠 posterior，視野缺損常越 congruous。",
+          "explain": "post-chiasmal 病灶（lesion） → contralateral 同向視野缺損（homonymous defect）\n\n正確選項：右同向偏盲。\npost-chiasmal pathways 已依 visual hemifield 整合，因此 unilateral 病灶（lesion） 造成 contralateral 同向偏盲（homonymous hemianopia） 或 quadrantanopia。病灶越靠 posterior，視野缺損常越 congruous。",
           "choices": [
             "左上象限缺損 only",
             "左眼失明",
             "右同向偏盲",
             "雙顳側偏盲"
-          ]
+          ],
+          "id": "c52fe045e"
         },
         {
           "type": "card",
-          "title": "occipital lesion 可能出現 macular sparing",
-          "body": "**一句話／白話**\n枕葉病灶有時保留中央視野，稱 macular sparing。\n\n**觀念**\nmacular cortex representation 很大，且 occipital pole 可能具有 posterior cerebral artery 與 middle cerebral artery 的部分雙重供應，因此某些 vascular occipital lesions 會保留中心視野。\n\n**考試角度**\n- macular sparing 常聯想到 occipital cortex lesion\n- 可能與大皮質代表區及雙重供血有關\n- 不是所有 occipital lesions 都一定保留 macula\n\n**口訣**\n枕葉壞一大片，中央小島有時仍留下。",
+          "title": "occipital 病灶（lesion） 可能出現 黃斑保留（macular sparing）",
+          "body": "**一句話／白話**\n枕葉病灶有時保留中央視野，稱 黃斑保留（macular sparing）。\n\n**觀念**\nmacular 皮質（cortex） representation 很大，且 occipital pole 可能具有 posterior cerebral artery 與 middle cerebral artery 的部分雙重供應，因此某些 vascular occipital lesions 會保留中心視野。\n\n**考試角度**\n- 黃斑保留 常聯想到 occipital 皮質 病灶（lesion）\n- 可能與大皮質代表區及雙重供血有關\n- 不是所有 occipital lesions 都一定保留 黃斑（macula）\n\n**口訣**\n枕葉壞一大片，中央小島有時仍留下。",
           "keys": [
-            "macular sparing 常聯想到 occipital cortex lesion",
+            "黃斑保留（macular sparing） 常聯想到 occipital 皮質（cortex） 病灶（lesion）",
             "可能與大皮質代表區及雙重供血有關",
-            "不是所有 occipital lesions 都一定保留 macula"
+            "不是所有 occipital lesions 都一定保留 黃斑（macula）"
           ],
           "tip": "口訣：枕葉壞一大片，中央小島有時仍留下。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "homonymous hemianopia 合併 macular sparing 最常提示？",
+          "q": "同向偏盲（homonymous hemianopia） 合併 黃斑保留（macular sparing） 最常提示？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "macular sparing 常聯想到 occipital cortex lesion\n\n正確選項：occipital cortex lesion。\nmacular cortex representation 很大，且 occipital pole 可能具有 posterior cerebral artery 與 middle cerebral artery 的部分雙重供應，因此某些 vascular occipital lesions 會保留中心視野。",
+          "explain": "黃斑保留（macular sparing） 常聯想到 occipital 皮質（cortex） 病灶（lesion）\n\n正確選項：occipital 皮質（cortex） 病灶（lesion）。\nmacular 皮質（cortex） representation 很大，且 occipital pole 可能具有 posterior cerebral artery 與 middle cerebral artery 的部分雙重供應，因此某些 vascular occipital lesions 會保留中心視野。",
           "choices": [
-            "occipital cortex lesion",
-            "corneal lesion",
-            "lens opacity",
-            "optic nerve lesion"
-          ]
+            "occipital 皮質（cortex） 病灶（lesion）",
+            "角膜的（corneal） 病灶（lesion）",
+            "透鏡（lens） opacity",
+            "視神經（optic nerve） 病灶（lesion）"
+          ],
+          "id": "c3714bc34"
         },
         {
           "type": "example",
-          "title": "範例拆解：occipital lesion 可能出現 macular sparing",
-          "problem": "homonymous hemianopia 合併 macular sparing 最常提示？\n\nA. occipital cortex lesion\nB. corneal lesion\nC. lens opacity\nD. optic nerve lesion",
+          "title": "範例拆解：occipital 病灶（lesion） 可能出現 黃斑保留（macular sparing）",
+          "problem": "同向偏盲（homonymous hemianopia） 合併 黃斑保留（macular sparing） 最常提示？\n\nA. occipital 皮質（cortex） 病灶（lesion）\nB. 角膜的（corneal） 病灶（lesion）\nC. 透鏡（lens） opacity\nD. 視神經（optic nerve） 病灶（lesion）",
           "steps": [
-            "先確認題目問的主題：occipital lesion 可能出現 macular sparing",
-            "macular cortex representation 很大，且 occipital pole 可能具有 posterior cerebral artery 與 middle cerebral artery 的部分雙重供應，因此某些 vascular occipital lesions 會保留中心視野。",
-            "把判斷依據連回題目：macular sparing 常聯想到 occipital cortex lesion\n\n正確選項：occipital cortex lesion。\nmacular cortex representation 很大，且 occipital pole 可能具有 posterior cerebral artery 與 middle cerebral artery 的部分雙重供應，因此某些 vascular occipital lesions 會保留中心視野。"
+            "先確認題目問的主題：occipital 病灶（lesion） 可能出現 黃斑保留（macular sparing）",
+            "macular 皮質（cortex） representation 很大，且 occipital pole 可能具有 posterior cerebral artery 與 middle cerebral artery 的部分雙重供應，因此某些 vascular occipital lesions 會保留中心視野。",
+            "把判斷依據連回題目：黃斑保留（macular sparing） 常聯想到 occipital 皮質（cortex） 病灶（lesion）\n\n正確選項：occipital 皮質（cortex） 病灶（lesion）。\nmacular 皮質（cortex） representation 很大，且 occipital pole 可能具有 posterior cerebral artery 與 middle cerebral artery 的部分雙重供應，因此某些 vascular occipital lesions 會保留中心視野。"
           ],
-          "answer": "occipital cortex lesion"
+          "answer": "occipital 皮質（cortex） 病灶（lesion）"
         },
         {
           "type": "practice",
@@ -684,58 +715,64 @@
           "checks": [
             {
               "kind": "single",
-              "q": "左 optic tract 病灶造成？",
+              "q": "左 視束（optic tract） 病灶造成？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "post-chiasmal lesion → contralateral homonymous defect\n\n正確選項：右同向偏盲。\npost-chiasmal pathways 已依 visual hemifield 整合，因此 unilateral lesion 造成 contralateral homonymous hemianopia 或 quadrantanopia。病灶越靠 posterior，視野缺損常越 congruous。",
+              "explain": "post-chiasmal 病灶（lesion） → contralateral 同向視野缺損（homonymous defect）\n\n正確選項：右同向偏盲。\npost-chiasmal pathways 已依 visual hemifield 整合，因此 unilateral 病灶（lesion） 造成 contralateral 同向偏盲（homonymous hemianopia） 或 quadrantanopia。病灶越靠 posterior，視野缺損常越 congruous。",
               "choices": [
                 "左上象限缺損 only",
                 "左眼失明",
                 "右同向偏盲",
                 "雙顳側偏盲"
-              ]
+              ],
+              "id": "c52fe045e"
             },
             {
               "kind": "single",
-              "q": "homonymous hemianopia 合併 macular sparing 最常提示？",
+              "q": "同向偏盲（homonymous hemianopia） 合併 黃斑保留（macular sparing） 最常提示？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "macular sparing 常聯想到 occipital cortex lesion\n\n正確選項：occipital cortex lesion。\nmacular cortex representation 很大，且 occipital pole 可能具有 posterior cerebral artery 與 middle cerebral artery 的部分雙重供應，因此某些 vascular occipital lesions 會保留中心視野。",
+              "explain": "黃斑保留（macular sparing） 常聯想到 occipital 皮質（cortex） 病灶（lesion）\n\n正確選項：occipital 皮質（cortex） 病灶（lesion）。\nmacular 皮質（cortex） representation 很大，且 occipital pole 可能具有 posterior cerebral artery 與 middle cerebral artery 的部分雙重供應，因此某些 vascular occipital lesions 會保留中心視野。",
               "choices": [
-                "occipital cortex lesion",
-                "corneal lesion",
-                "lens opacity",
-                "optic nerve lesion"
-              ]
+                "occipital 皮質（cortex） 病灶（lesion）",
+                "角膜的（corneal） 病灶（lesion）",
+                "透鏡（lens） opacity",
+                "視神經（optic nerve） 病灶（lesion）"
+              ],
+              "id": "c3714bc34"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "chiasm central lesion：bitemporal hemianopia",
-            "受損纖維：crossing nasal retinal fibers",
-            "post-chiasmal lesion → contralateral homonymous defect",
+            "視交叉（chiasm） central 病灶（lesion）：雙顳側偏盲（bitemporal hemianopia）",
+            "受損纖維：crossing 鼻側視網膜纖維（nasal retinal fibers）",
+            "post-chiasmal 病灶（lesion） → contralateral 同向視野缺損（homonymous defect）",
             "越後方通常越 congruous",
-            "macular sparing 常聯想到 occipital cortex lesion",
+            "黃斑保留（macular sparing） 常聯想到 occipital 皮質（cortex） 病灶（lesion）",
             "可能與大皮質代表區及雙重供血有關"
           ],
           "flash": [
             {
-              "front": "chiasm 中央病灶造成 bitemporal hemianopia",
-              "back": "中央視交叉壓到交叉中的 nasal retinal fibers，兩眼 temporal visual fields 都掉。"
+              "front": "視交叉（chiasm） 中央病灶造成 雙顳側偏盲（bitemporal hemianopia）",
+              "back": "中央視交叉壓到交叉中的 鼻側視網膜纖維（nasal retinal fibers），兩眼 顳側（temporal） visual fields 都掉。",
+              "id": "fae098ee7"
             },
             {
-              "front": "交叉後病灶造成 contralateral homonymous defect",
-              "back": "optic tract、LGN、radiation、V1 病灶都會影響兩眼同一側視野。"
+              "front": "交叉後病灶造成 contralateral 同向視野缺損（homonymous defect）",
+              "back": "視束（optic tract）、外側膝狀體（LGN）、radiation、初級視覺皮質（V1） 病灶都會影響兩眼同一側視野。",
+              "id": "fceda7236"
             },
             {
-              "front": "occipital lesion 可能出現 macular sparing",
-              "back": "枕葉病灶有時保留中央視野，稱 macular sparing。"
+              "front": "occipital 病灶（lesion） 可能出現 黃斑保留（macular sparing）",
+              "back": "枕葉病灶有時保留中央視野，稱 黃斑保留（macular sparing）。",
+              "id": "f779f99ae"
             },
             {
-              "front": "bitemporal hemianopia 最典型定位在？",
-              "back": "chiasm central lesion：bitemporal hemianopia\n\n正確選項：optic chiasm。\npituitary mass 等可由下方壓迫 optic chiasm 中央，優先影響 crossing nasal fibers。因 nasal retina 看 temporal field，因此造成 bitemporal heteronymous hemianopia。"
+              "front": "雙顳側偏盲（bitemporal hemianopia） 最典型定位在？",
+              "back": "視交叉（chiasm） central 病灶（lesion）：雙顳側偏盲（bitemporal hemianopia）\n\n正確選項：視交叉（optic chiasm）。\n腦下垂體（pituitary） mass 等可由下方壓迫 視交叉（optic chiasm） 中央，優先影響 crossing 鼻側（nasal） fibers。因 鼻側（nasal） 視網膜（retina） 看 顳側（temporal） field，因此造成 bitemporal heteronymous hemianopia。",
+              "id": "f12d8481a"
             }
           ]
         }

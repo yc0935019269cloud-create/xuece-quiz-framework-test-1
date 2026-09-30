@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}
+.w{padding:8px 12px}.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:5px 0}
+button{font:inherit;padding:4px 10px;border:1px solid #b9a784;background:#fff;border-radius:6px;cursor:pointer}
+.chart{display:flex;border:3px solid #333;border-radius:10px;overflow:hidden;max-width:460px;margin:6px auto}
+.half{flex:1;text-align:center;padding:10px 0;font:bold 44px 'Arial',sans-serif;letter-spacing:6px;color:#111;line-height:1.25}
+.g{background:#2fae4a}.r{background:#d7362c}
+.box{background:#fff;border:1px solid #d8cbb0;border-radius:8px;padding:6px 10px;margin-top:6px;line-height:1.55}
+svg{width:100%;height:auto;background:#fff;border:1px solid #d8cbb0;border-radius:8px}
+.note{font-size:14px;color:#6b5a45}.say{font-weight:bold;color:#1d4f9a}
+</style></head><body><div class="w">
+<div class="note">觀察重點：綠光（波長短）焦點在紅光前面。紅邊清楚 → 加 −0.25 D；綠邊清楚 → 加 +0.25 D；終點是兩邊一樣，或「最少負度數讓綠邊稍清楚」。</div>
+<div class="chart"><div class="half g"><span id="gt">E H<br>Z C B</span></div><div class="half r"><span id="rt">H E<br>B C Z</span></div></div>
+<svg id="s" viewBox="0 0 800 120"></svg>
+<div class="row"><b>綜合驗光儀球面：</b><button data-d="-0.25">加 −0.25 D</button><button data-d="0.25">加 +0.25 D</button>
+<span id="lens" style="min-width:90px;font-weight:bold"></span>
+<label><input type="checkbox" id="dim" checked> 暗室（瞳孔較大）</label><button id="np">新病人</button><button id="rev">揭曉答案</button></div>
+<div class="box" id="out"></div>
+<div class="note">模型：以網膜為 0，綠光焦點比黃光前 0.25 D、紅光比黃光後 0.25 D（示意值）；模糊程度與失焦量成正比，瞳孔越大越明顯。假設病人沒有調節（老花或已放鬆），年輕人 over-minus 時可能用調節把影像拉回來。</div>
+</div><script>
+const $=id=>document.getElementById(id);let E=0,L=0,n=0;
+const f=v=>(v>0?'+':v<0?'−':'')+Math.abs(v).toFixed(2);
+function draw(){const k=$('dim').checked?1.35:0.6,R=E-L,y=R,g=y-0.25,r=y+0.25;
+ $('gt').style.filter=`blur(${(Math.abs(g)*6*k).toFixed(1)}px)`;$('rt').style.filter=`blur(${(Math.abs(r)*6*k).toFixed(1)}px)`;
+ $('lens').textContent=f(L)+' DS';
+ const X=d=>400+Math.max(-2.8,Math.min(2.8,d))*130;
+ let s='<line x1="10" y1="60" x2="790" y2="60" stroke="#aaa"/><line x1="400" y1="15" x2="400" y2="105" stroke="#2c8a4a" stroke-width="5"/><text x="406" y="28" font-size="14" fill="#2c8a4a">網膜</text>';
+ s+=`<text x="12" y="22" font-size="14" fill="#6b5a45">← 網膜前</text><text x="788" y="22" font-size="14" text-anchor="end" fill="#6b5a45">網膜後 →</text>`;
+ s+=`<circle cx="${X(g)}" cy="60" r="10" fill="#2fae4a"/><text x="${X(g)}" y="92" font-size="13" text-anchor="middle" fill="#1e7a33">綠</text>`;
+ s+=`<circle cx="${X(r)}" cy="60" r="10" fill="#d7362c"/><text x="${X(r)}" y="92" font-size="13" text-anchor="middle" fill="#a8261e">紅</text>`;$('s').innerHTML=s;
+ const dg=Math.abs(g),dr=Math.abs(r);let say;
+ if(Math.abs(dg-dr)<0.01)say='兩邊一樣清楚';else if(dr<dg)say='紅色那邊比較清楚';else say='綠色那邊比較清楚';
+ let tip=say.startsWith('紅')?'→ 焦點偏前（負度數不夠）：加 −0.25 D 往後推。':say.startsWith('綠')?(R>0&&R<0.2?'→ 綠邊稍清楚：若兩邊一樣做不到，這個「最少負度數讓綠邊清楚」也可當終點。':'→ 焦點偏後（負度數給太多）：加 +0.25 D 往前拉。'):'→ 這就是理想終點。';
+ $('out').innerHTML=`病人說：「<span class="say">${say}</span>」 ${tip}<br>已調整 ${n} 次。`}
+document.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{L=Math.round((L+ +b.dataset.d)*4)/4;n++;draw()});
+$('dim').onchange=draw;
+$('np').onclick=()=>{E=Math.round((Math.random()*6-4.5)*8)/8;L=Math.round((E+(Math.random()<.5?-1:1)*(0.5+Math.floor(Math.random()*3)*0.25))*4)/4;n=0;draw()};
+$('rev').onclick=()=>{draw();$('out').innerHTML+=`<br>答案：這位病人的球面矯正度數約 <b>${(E>0?'+':E<0?'−':'')+Math.abs(E).toFixed(3)} DS</b>；目前鏡片 ${f(L)} DS（${L<E?'比答案偏負＝over-minus':L>E?'比答案偏正＝under-minus':'剛好'}；0.25 D 一格調不到剛好時，取最少負度數讓綠邊稍清楚）。`};
+$('np').onclick();
+</script></body></html>

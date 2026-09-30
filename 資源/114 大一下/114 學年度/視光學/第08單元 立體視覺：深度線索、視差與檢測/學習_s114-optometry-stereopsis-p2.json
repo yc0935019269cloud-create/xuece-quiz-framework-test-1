@@ -34,7 +34,7 @@
         {
           "type": "card",
           "title": "單元路線",
-          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
           "keys": [
             "把本單元的關係串起來，確認易錯条件與方向。"
           ],
@@ -44,25 +44,27 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
-          "answer": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。",
+          "answer": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。"
+          "explain": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
+          "id": "c5f862a5e"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。\n- 把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。\n\n**結論與依據**\n- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。",
+          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。\n- 把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像 把它變成深度。\n- 接著判斷：交叉性 在前、非交叉性 在後，雙眼單視界 上是 零視差。\n- 最後比較：局部 可能被猜中，整體 更依賴真正雙眼視。\n\n**結論與依據**\n- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像 把它變成深度。\n- 接著判斷：交叉性 在前、非交叉性 在後，雙眼單視界 上是 零視差。\n- 最後比較：局部 可能被猜中，整體 更依賴真正雙眼視。",
           "keys": [
-            "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。"
+            "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。",
+          "answer": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：單元路線\n- - 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。\n- 把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。"
+          "explain": "- 先確認題目問的主題：單元路線\n- - 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。\n- 把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
+          "id": "ca401c257"
         },
         {
           "type": "example",
@@ -70,10 +72,10 @@
           "problem": "用自己的話說明「單元路線」，並說出一個判斷依據。",
           "steps": [
             "先確認題目問的主題：單元路線",
-            "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。",
-            "把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。"
+            "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
+            "把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。"
           ],
-          "answer": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。"
+          "answer": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。"
         },
         {
           "type": "practice",
@@ -86,9 +88,10 @@
             {
               "kind": "self",
               "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
-              "answer": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。",
+              "answer": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。"
+              "explain": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
+              "id": "c5f862a5e"
             }
           ]
         },
@@ -97,26 +100,30 @@
           "points": [
             "把本單元的關係串起來，確認易錯条件與方向。",
             "單元路線：把本單元的關係串起來，確認易錯条件與方向。",
-            "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。",
-            "- 先確認題目問的主題：單元路線\n- - 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。\n- 把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。",
-            "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。"
+            "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
+            "- 先確認題目問的主題：單元路線\n- - 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。\n- 把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
+            "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。"
           ],
           "flash": [
             {
               "front": "單元路線",
-              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+              "back": "把本單元的關係串起來，確認易錯条件與方向。",
+              "id": "f4d411324"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：單元路線\n- - 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。\n- 把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。"
+              "back": "- 先確認題目問的主題：單元路線\n- - 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。\n- 把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
+              "id": "fa401c257"
             },
             {
               "front": "用自己的話說明「單元路線」，並說出一個判斷依據。",
-              "back": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。"
+              "back": "- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
+              "id": "f5f862a5e"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：單元路線\n- - 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。\n- 把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 fusion 把它變成深度。\n- 接著判斷：crossed 在前、uncrossed 在後，horopter 上是 zero disparity。\n- 最後比較：local 可能被猜中，global 更依賴真正雙眼視。"
+              "back": "- 先確認題目問的主題：單元路線\n- - 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。\n- 把判斷依據連回題目：- 先分清：單眼深度線索只能猜前後，真正立體視需要雙眼。\n- 再理解：左右眼影像有小差異，大腦用 融像（fusion） 把它變成深度。\n- 接著判斷：交叉性（crossed） 在前、非交叉性（uncrossed） 在後，雙眼單視界（horopter） 上是 零視差（zero disparity）。\n- 最後比較：局部（local） 可能被猜中，整體（global） 更依賴真正雙眼視。",
+              "id": "fa401c257"
             }
           ]
         }
@@ -137,31 +144,32 @@
         {
           "type": "card",
           "title": "判斷依據：立體視覺：深度線索、視差與檢測",
-          "body": "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 fusion。\n",
+          "body": "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 融像（fusion）。\n",
           "keys": [
-            "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 fusion。\n"
+            "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 融像（fusion）。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "真正 stereopsis 最核心需要什麼？",
+          "q": "真正 立體視（stereopsis） 最核心需要什麼？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 fusion。\n",
+          "explain": "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 融像（fusion）。\n",
           "choices": [
             "單眼清晰度即可",
-            "兩眼略不同影像與 fusion",
-            "只有 shading",
+            "兩眼略不同影像與 融像（fusion）",
+            "只有 陰影線索（shading）",
             "只有相對大小線索"
-          ]
+          ],
+          "id": "cdeefca4e"
         },
         {
           "type": "card",
           "title": "判斷依據：立體視覺：深度線索、視差與檢測",
-          "body": "Crossed disparity 代表 target 在注視平面前方。\n\n正確選項：crossed disparity。\n",
+          "body": "交叉視差（Crossed disparity） 代表 目標（target） 在注視平面前方。\n\n正確選項：交叉視差。\n",
           "keys": [
-            "Crossed disparity 代表 target 在注視平面前方。\n\n正確選項：crossed disparity。\n"
+            "交叉視差（Crossed disparity） 代表 目標（target） 在注視平面前方。\n\n正確選項：交叉視差（crossed disparity）。\n"
           ]
         },
         {
@@ -170,46 +178,48 @@
           "q": "視標位於注視平面前方時，通常產生？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Crossed disparity 代表 target 在注視平面前方。\n\n正確選項：crossed disparity。\n",
+          "explain": "交叉視差（Crossed disparity） 代表 目標（target） 在注視平面前方。\n\n正確選項：交叉視差（crossed disparity）。\n",
           "choices": [
-            "crossed disparity",
-            "uncrossed disparity",
-            "zero disparity",
-            "只有 fixation disparity"
-          ]
+            "交叉視差（crossed disparity）",
+            "非交叉視差（uncrossed disparity）",
+            "零視差（zero disparity）",
+            "只有 固視偏差（fixation disparity）"
+          ],
+          "id": "c871e5f10"
         },
         {
           "type": "card",
           "title": "判斷依據：立體視覺：深度線索、視差與檢測",
-          "body": "Global 測驗以 random dots 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 random dots 並需 figure-ground discrimination。\n",
+          "body": "整體（Global） 測驗以 隨機點（random dots） 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 隨機點 並需 圖像背景區分（figure-ground discrimination）。\n",
           "keys": [
-            "Global 測驗以 random dots 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 random dots 並需 figure-ground discrimination。\n"
+            "整體（Global） 測驗以 隨機點（random dots） 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 隨機點（random dots） 並需 圖像背景區分（figure-ground discrimination）。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "哪一項最符合 global stereotest？",
+          "q": "哪一項最符合 整體立體視檢查（global stereotest）？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Global 測驗以 random dots 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 random dots 並需 figure-ground discrimination。\n",
+          "explain": "整體（Global） 測驗以 隨機點（random dots） 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 隨機點（random dots） 並需 圖像背景區分（figure-ground discrimination）。\n",
           "choices": [
             "一定有清楚輪廓可單眼猜",
             "只測角膜曲率",
-            "使用 random dots 並需 figure-ground discrimination",
+            "使用 隨機點（random dots） 並需 圖像背景區分（figure-ground discrimination）",
             "只需單眼觀看"
-          ]
+          ],
+          "id": "c70341cf7"
         },
         {
           "type": "example",
           "title": "回看第一題的判斷",
-          "problem": "真正 stereopsis 最核心需要什麼？",
+          "problem": "真正 立體視（stereopsis） 最核心需要什麼？",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 fusion。\n",
+            "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 融像（fusion）。\n",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "兩眼略不同影像與 fusion"
+          "answer": "兩眼略不同影像與 融像（fusion）"
         },
         {
           "type": "practice",
@@ -217,70 +227,77 @@
           "checks": [
             {
               "kind": "single",
-              "q": "真正 stereopsis 最核心需要什麼？",
+              "q": "真正 立體視（stereopsis） 最核心需要什麼？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 fusion。\n",
+              "explain": "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 融像（fusion）。\n",
               "choices": [
                 "單眼清晰度即可",
-                "兩眼略不同影像與 fusion",
-                "只有 shading",
+                "兩眼略不同影像與 融像（fusion）",
+                "只有 陰影線索（shading）",
                 "只有相對大小線索"
-              ]
+              ],
+              "id": "cdeefca4e"
             },
             {
               "kind": "single",
               "q": "視標位於注視平面前方時，通常產生？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "Crossed disparity 代表 target 在注視平面前方。\n\n正確選項：crossed disparity。\n",
+              "explain": "交叉視差（Crossed disparity） 代表 目標（target） 在注視平面前方。\n\n正確選項：交叉視差（crossed disparity）。\n",
               "choices": [
-                "crossed disparity",
-                "uncrossed disparity",
-                "zero disparity",
-                "只有 fixation disparity"
-              ]
+                "交叉視差（crossed disparity）",
+                "非交叉視差（uncrossed disparity）",
+                "零視差（zero disparity）",
+                "只有 固視偏差（fixation disparity）"
+              ],
+              "id": "c871e5f10"
             },
             {
               "kind": "single",
-              "q": "哪一項最符合 global stereotest？",
+              "q": "哪一項最符合 整體立體視檢查（global stereotest）？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "Global 測驗以 random dots 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 random dots 並需 figure-ground discrimination。\n",
+              "explain": "整體（Global） 測驗以 隨機點（random dots） 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 隨機點（random dots） 並需 圖像背景區分（figure-ground discrimination）。\n",
               "choices": [
                 "一定有清楚輪廓可單眼猜",
                 "只測角膜曲率",
-                "使用 random dots 並需 figure-ground discrimination",
+                "使用 隨機點（random dots） 並需 圖像背景區分（figure-ground discrimination）",
                 "只需單眼觀看"
-              ]
+              ],
+              "id": "c70341cf7"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 fusion。\n",
-            "Crossed disparity 代表 target 在注視平面前方。\n\n正確選項：crossed disparity。\n",
-            "Global 測驗以 random dots 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 random dots 並需 figure-ground discrimination。\n",
-            "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 fusion。\n",
-            "Crossed disparity 代表 target 在注視平面前方。\n\n正確選項：crossed disparity。\n"
+            "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 融像（fusion）。\n",
+            "交叉視差（Crossed disparity） 代表 目標（target） 在注視平面前方。\n\n正確選項：交叉視差（crossed disparity）。\n",
+            "整體（Global） 測驗以 隨機點（random dots） 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 隨機點（random dots） 並需 圖像背景區分（figure-ground discrimination）。\n",
+            "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 融像（fusion）。\n",
+            "交叉視差（Crossed disparity） 代表 目標（target） 在注視平面前方。\n\n正確選項：交叉視差（crossed disparity）。\n"
           ],
           "flash": [
             {
-              "front": "真正 stereopsis 最核心需要什麼？",
-              "back": "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 fusion。\n"
+              "front": "真正 立體視（stereopsis） 最核心需要什麼？",
+              "back": "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 融像（fusion）。\n",
+              "id": "fdeefca4e"
             },
             {
               "front": "視標位於注視平面前方時，通常產生？",
-              "back": "Crossed disparity 代表 target 在注視平面前方。\n\n正確選項：crossed disparity。\n"
+              "back": "交叉視差（Crossed disparity） 代表 目標（target） 在注視平面前方。\n\n正確選項：交叉視差（crossed disparity）。\n",
+              "id": "f871e5f10"
             },
             {
-              "front": "哪一項最符合 global stereotest？",
-              "back": "Global 測驗以 random dots 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 random dots 並需 figure-ground discrimination。\n"
+              "front": "哪一項最符合 整體立體視檢查（global stereotest）？",
+              "back": "整體（Global） 測驗以 隨機點（random dots） 為主，需要較廣泛雙眼神經整合。\n\n正確選項：使用 隨機點（random dots） 並需 圖像背景區分（figure-ground discrimination）。\n",
+              "id": "f70341cf7"
             },
             {
-              "front": "真正 stereopsis 最核心需要什麼？",
-              "back": "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 fusion。\n"
+              "front": "真正 立體視（stereopsis） 最核心需要什麼？",
+              "back": "真正立體視來自兩眼影像視差經大腦融像。\n\n正確選項：兩眼略不同影像與 融像（fusion）。\n",
+              "id": "fdeefca4e"
             }
           ]
         }
@@ -301,9 +318,9 @@
         {
           "type": "card",
           "title": "判斷依據：立體視覺：深度線索、視差與檢測",
-          "body": "Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n",
+          "body": "朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n",
           "keys": [
-            "Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n"
+            "朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n"
           ]
         },
         {
@@ -312,29 +329,31 @@
           "q": "下列哪個測驗不需要偏光或紅綠測試鏡？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n",
+          "explain": "朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n",
           "choices": [
-            "TNO",
-            "Titmus 蒼蠅",
-            "Randot",
-            "Lang stereotest"
-          ]
+            "TNO 立體視覺檢查（TNO）",
+            "提特姆斯（Titmus） 蒼蠅",
+            "隨機點立體視檢查（Randot）",
+            "朗氏立體視檢查（Lang stereotest）"
+          ],
+          "id": "c738de308"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n下列哪個測驗不需要偏光或紅綠測試鏡？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\nLang stereotest",
+          "body": "**情境**\n下列哪個測驗不需要偏光或紅綠測試鏡？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- 朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\n朗氏立體視檢查",
           "keys": [
-            "Lang stereotest"
+            "朗氏立體視檢查（Lang stereotest）"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "Lang stereotest",
+          "answer": "朗氏立體視檢查（Lang stereotest）",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 確認題目問的構造、條件或量。\n- Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n- 將判斷依據連到正確選項。"
+          "explain": "- 確認題目問的構造、條件或量。\n- 朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n- 將判斷依據連到正確選項。",
+          "id": "c9c676160"
         },
         {
           "type": "example",
@@ -342,10 +361,10 @@
           "problem": "下列哪個測驗不需要偏光或紅綠測試鏡？",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n",
+            "朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "Lang stereotest"
+          "answer": "朗氏立體視檢查（Lang stereotest）"
         },
         {
           "type": "practice",
@@ -356,41 +375,46 @@
               "q": "下列哪個測驗不需要偏光或紅綠測試鏡？",
               "answer": 3,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n",
+              "explain": "朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n",
               "choices": [
-                "TNO",
-                "Titmus 蒼蠅",
-                "Randot",
-                "Lang stereotest"
-              ]
+                "TNO 立體視覺檢查（TNO）",
+                "提特姆斯（Titmus） 蒼蠅",
+                "隨機點立體視檢查（Randot）",
+                "朗氏立體視檢查（Lang stereotest）"
+              ],
+              "id": "c738de308"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n",
-            "- 確認題目問的構造、條件或量。\n- Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n- 將判斷依據連到正確選項。",
-            "Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n",
-            "- 確認題目問的構造、條件或量。\n- Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n- 將判斷依據連到正確選項。",
-            "Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n"
+            "朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n",
+            "- 確認題目問的構造、條件或量。\n- 朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n- 將判斷依據連到正確選項。",
+            "朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n",
+            "- 確認題目問的構造、條件或量。\n- 朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n- 將判斷依據連到正確選項。",
+            "朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n"
           ],
           "flash": [
             {
               "front": "下列哪個測驗不需要偏光或紅綠測試鏡？",
-              "back": "Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n"
+              "back": "朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n",
+              "id": "f738de308"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 確認題目問的構造、條件或量。\n- Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n- 將判斷依據連到正確選項。"
+              "back": "- 確認題目問的構造、條件或量。\n- 朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n- 將判斷依據連到正確選項。",
+              "id": "f9c676160"
             },
             {
               "front": "下列哪個測驗不需要偏光或紅綠測試鏡？",
-              "back": "Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n"
+              "back": "朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n",
+              "id": "f738de308"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 確認題目問的構造、條件或量。\n- Lang 與 Frisby 可不戴測試眼鏡。\n\n正確選項：Lang stereotest。\n- 將判斷依據連到正確選項。"
+              "back": "- 確認題目問的構造、條件或量。\n- 朗氏（Lang） 與 弗里斯比（Frisby） 可不戴測試眼鏡。\n\n正確選項：朗氏立體視檢查（Lang stereotest）。\n- 將判斷依據連到正確選項。",
+              "id": "f9c676160"
             }
           ]
         }

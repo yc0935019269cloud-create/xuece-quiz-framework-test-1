@@ -35,10 +35,10 @@
         {
           "type": "card",
           "title": "視覺纖維兵分兩路：意識 vs 反射",
-          "body": "**一句話／白話**\n大部分纖維到外側膝狀體→視覺皮質『看見』；少數在到外側膝狀體前就轉進中腦做反射。\n\n**觀念**\nretina → optic nerve → optic chiasm → optic tract。主路經 lateral geniculate body 到 visual cortex 形成視覺意識；分支經 superior brachium 轉進中腦的 superior colliculus、pretectal area 與 E-W nucleus 做反射，不上大腦皮質。\n\n**考試角度**\n- 意識路徑：retina→optic nerve→chiasm→tract→LGB→visual cortex\n- 反射路徑：在 LGB 前分支轉入中腦 pretectal／E-W\n- 光反射不經外側膝狀體；LGB 是視覺意識的轉接站，不是反射\n\n**口訣**\n看見走外側膝狀體；反射在它之前就轉進中腦。",
+          "body": "**一句話／白話**\n大部分纖維到外側膝狀體→視覺皮質『看見』；少數在到外側膝狀體前就轉進中腦做反射。\n\n**觀念**\n視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract）。主路經 lateral geniculate body 到 視覺皮質（visual cortex） 形成視覺意識；分支經 superior brachium 轉進中腦的 上丘（superior colliculus）、頂蓋前區（pretectal area） 與 艾丁格－威斯特法核（E-W） 核（nucleus） 做反射，不上大腦皮質。\n\n**考試角度**\n- 意識路徑：視網膜→視神經→視交叉（chiasm）→神經束（tract）→LGB→視覺皮質\n- 反射路徑：在 LGB 前分支轉入中腦 pretectal／艾丁格－威斯特法核\n- 光反射不經外側膝狀體；LGB 是視覺意識的轉接站，不是反射\n\n**口訣**\n看見走外側膝狀體；反射在它之前就轉進中腦。",
           "keys": [
-            "意識路徑：retina→optic nerve→chiasm→tract→LGB→visual cortex",
-            "反射路徑：在 LGB 前分支轉入中腦 pretectal／E-W",
+            "意識路徑：視網膜（retina）→視神經（optic nerve）→視交叉（chiasm）→神經束（tract）→LGB→視覺皮質（visual cortex）",
+            "反射路徑：在 LGB 前分支轉入中腦 pretectal／艾丁格－威斯特法核（E-W）",
             "光反射不經外側膝狀體；LGB 是視覺意識的轉接站，不是反射"
           ],
           "tip": "口訣：看見走外側膝狀體；反射在它之前就轉進中腦。"
@@ -49,18 +49,19 @@
           "q": "視覺『意識』主要經過下列何者轉接到大腦皮質？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "意識路徑：retina→optic nerve→chiasm→tract→LGB→visual cortex\n\n正確選項：外側膝狀體。\nretina → optic nerve → optic chiasm → optic tract。主路經 lateral geniculate body 到 visual cortex 形成視覺意識；分支經 superior brachium 轉進中腦的 superior colliculus、pretectal area 與 E-W nucleus 做反射，不上大腦皮質。",
+          "explain": "意識路徑：視網膜（retina）→視神經（optic nerve）→視交叉（chiasm）→神經束（tract）→LGB→視覺皮質（visual cortex）\n\n正確選項：外側膝狀體。\n視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract）。主路經 lateral geniculate body 到 視覺皮質（visual cortex） 形成視覺意識；分支經 superior brachium 轉進中腦的 上丘（superior colliculus）、頂蓋前區（pretectal area） 與 艾丁格－威斯特法核（E-W） 核（nucleus） 做反射，不上大腦皮質。",
           "choices": [
-            "E-W 核",
+            "艾丁格－威斯特法核（E-W） 核",
             "內側膝狀體",
             "外側膝狀體",
             "前頂蓋核"
-          ]
+          ],
+          "id": "c53e48c52"
         },
         {
           "type": "card",
           "title": "腦幹三層反射定位與腦死",
-          "body": "**一句話／白話**\n反射不需意識；腦幹由上到下：中腦管瞳孔對光反射、橋腦管前庭眼動反射、延腦管呼吸心跳。三者全失才算腦死。\n\n**觀念**\n反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary light reflex（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular reflex 與 corneal reflex；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。\n\n**考試角度**\n- 瞳孔對光反射中樞＝中腦\n- 前庭眼動反射中樞＝橋腦\n- 腦死＝延腦＋橋腦＋中腦反射全失，非僅無呼吸心跳\n\n**口訣**\n中腦看瞳孔、橋腦看前庭、延腦看呼吸心跳。",
+          "body": "**一句話／白話**\n反射不需意識；腦幹由上到下：中腦管瞳孔對光反射、橋腦管前庭眼動反射、延腦管呼吸心跳。三者全失才算腦死。\n\n**觀念**\n反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary 光（light） 反射（reflex）（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular 反射 與 角膜的（corneal） 反射；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。\n\n**考試角度**\n- 瞳孔對光反射中樞＝中腦\n- 前庭眼動反射中樞＝橋腦\n- 腦死＝延腦＋橋腦＋中腦反射全失，非僅無呼吸心跳\n\n**口訣**\n中腦看瞳孔、橋腦看前庭、延腦看呼吸心跳。",
           "keys": [
             "瞳孔對光反射中樞＝中腦",
             "前庭眼動反射中樞＝橋腦",
@@ -74,13 +75,14 @@
           "q": "瞳孔對光反射的反射中樞位於？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "瞳孔對光反射中樞＝中腦\n\n正確選項：中腦。\n反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary light reflex（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular reflex 與 corneal reflex；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。",
+          "explain": "瞳孔對光反射中樞＝中腦\n\n正確選項：中腦。\n反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary 光（light） 反射（reflex）（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular 反射（reflex） 與 角膜的（corneal） 反射（reflex）；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。",
           "choices": [
             "橋腦",
             "延腦",
             "視丘",
             "中腦"
-          ]
+          ],
+          "id": "c74b3d788"
         },
         {
           "type": "example",
@@ -88,8 +90,8 @@
           "problem": "瞳孔對光反射的反射中樞位於？\n\nA. 橋腦\nB. 延腦\nC. 視丘\nD. 中腦",
           "steps": [
             "先確認題目問的主題：腦幹三層反射定位與腦死",
-            "反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary light reflex（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular reflex 與 corneal reflex；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。",
-            "把判斷依據連回題目：瞳孔對光反射中樞＝中腦\n\n正確選項：中腦。\n反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary light reflex（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular reflex 與 corneal reflex；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。"
+            "反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary 光（light） 反射（reflex）（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular 反射（reflex） 與 角膜的（corneal） 反射（reflex）；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。",
+            "把判斷依據連回題目：瞳孔對光反射中樞＝中腦\n\n正確選項：中腦。\n反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary 光（light） 反射（reflex）（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular 反射（reflex） 與 角膜的（corneal） 反射（reflex）；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。"
           ],
           "answer": "中腦"
         },
@@ -106,54 +108,60 @@
               "q": "視覺『意識』主要經過下列何者轉接到大腦皮質？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "意識路徑：retina→optic nerve→chiasm→tract→LGB→visual cortex\n\n正確選項：外側膝狀體。\nretina → optic nerve → optic chiasm → optic tract。主路經 lateral geniculate body 到 visual cortex 形成視覺意識；分支經 superior brachium 轉進中腦的 superior colliculus、pretectal area 與 E-W nucleus 做反射，不上大腦皮質。",
+              "explain": "意識路徑：視網膜（retina）→視神經（optic nerve）→視交叉（chiasm）→神經束（tract）→LGB→視覺皮質（visual cortex）\n\n正確選項：外側膝狀體。\n視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract）。主路經 lateral geniculate body 到 視覺皮質（visual cortex） 形成視覺意識；分支經 superior brachium 轉進中腦的 上丘（superior colliculus）、頂蓋前區（pretectal area） 與 艾丁格－威斯特法核（E-W） 核（nucleus） 做反射，不上大腦皮質。",
               "choices": [
-                "E-W 核",
+                "艾丁格－威斯特法核（E-W） 核",
                 "內側膝狀體",
                 "外側膝狀體",
                 "前頂蓋核"
-              ]
+              ],
+              "id": "c53e48c52"
             },
             {
               "kind": "single",
               "q": "瞳孔對光反射的反射中樞位於？",
               "answer": 3,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "瞳孔對光反射中樞＝中腦\n\n正確選項：中腦。\n反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary light reflex（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular reflex 與 corneal reflex；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。",
+              "explain": "瞳孔對光反射中樞＝中腦\n\n正確選項：中腦。\n反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary 光（light） 反射（reflex）（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular 反射（reflex） 與 角膜的（corneal） 反射（reflex）；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。",
               "choices": [
                 "橋腦",
                 "延腦",
                 "視丘",
                 "中腦"
-              ]
+              ],
+              "id": "c74b3d788"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "意識路徑：retina→optic nerve→chiasm→tract→LGB→visual cortex",
-            "反射路徑：在 LGB 前分支轉入中腦 pretectal／E-W",
+            "意識路徑：視網膜（retina）→視神經（optic nerve）→視交叉（chiasm）→神經束（tract）→LGB→視覺皮質（visual cortex）",
+            "反射路徑：在 LGB 前分支轉入中腦 pretectal／艾丁格－威斯特法核（E-W）",
             "瞳孔對光反射中樞＝中腦",
             "前庭眼動反射中樞＝橋腦",
-            "視覺纖維兵分兩路：意識 vs 反射：意識路徑：retina→optic nerve→chiasm→tract→LGB→visual cortex"
+            "視覺纖維兵分兩路：意識 vs 反射：意識路徑：視網膜（retina）→視神經（optic nerve）→視交叉（chiasm）→神經束（tract）→LGB→視覺皮質（visual cortex）"
           ],
           "flash": [
             {
               "front": "視覺纖維兵分兩路：意識 vs 反射",
-              "back": "大部分纖維到外側膝狀體→視覺皮質『看見』；少數在到外側膝狀體前就轉進中腦做反射。"
+              "back": "大部分纖維到外側膝狀體→視覺皮質『看見』；少數在到外側膝狀體前就轉進中腦做反射。",
+              "id": "f4b9d202c"
             },
             {
               "front": "腦幹三層反射定位與腦死",
-              "back": "反射不需意識；腦幹由上到下：中腦管瞳孔對光反射、橋腦管前庭眼動反射、延腦管呼吸心跳。三者全失才算腦死。"
+              "back": "反射不需意識；腦幹由上到下：中腦管瞳孔對光反射、橋腦管前庭眼動反射、延腦管呼吸心跳。三者全失才算腦死。",
+              "id": "fe71d80c8"
             },
             {
               "front": "視覺『意識』主要經過下列何者轉接到大腦皮質？",
-              "back": "意識路徑：retina→optic nerve→chiasm→tract→LGB→visual cortex\n\n正確選項：外側膝狀體。\nretina → optic nerve → optic chiasm → optic tract。主路經 lateral geniculate body 到 visual cortex 形成視覺意識；分支經 superior brachium 轉進中腦的 superior colliculus、pretectal area 與 E-W nucleus 做反射，不上大腦皮質。"
+              "back": "意識路徑：視網膜（retina）→視神經（optic nerve）→視交叉（chiasm）→神經束（tract）→LGB→視覺皮質（visual cortex）\n\n正確選項：外側膝狀體。\n視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract）。主路經 lateral geniculate body 到 視覺皮質（visual cortex） 形成視覺意識；分支經 superior brachium 轉進中腦的 上丘（superior colliculus）、頂蓋前區（pretectal area） 與 艾丁格－威斯特法核（E-W） 核（nucleus） 做反射，不上大腦皮質。",
+              "id": "f53e48c52"
             },
             {
               "front": "瞳孔對光反射的反射中樞位於？",
-              "back": "瞳孔對光反射中樞＝中腦\n\n正確選項：中腦。\n反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary light reflex（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular reflex 與 corneal reflex；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。"
+              "back": "瞳孔對光反射中樞＝中腦\n\n正確選項：中腦。\n反射不經大腦皮質，昏迷病人仍可測。腦幹定位：midbrain ＝ pupillary 光（light） 反射（reflex）（由 CN III／E-W 執行）；pons ＝ vestibulo-ocular 反射（reflex） 與 角膜的（corneal） 反射（reflex）；medulla ＝ 呼吸與心跳中樞。判定腦死須三層功能皆喪失，不是只看有沒有呼吸心跳。",
+              "id": "f74b3d788"
             }
           ]
         }
@@ -165,24 +173,24 @@
       "goals": [
         "解釋二進三出的完整路徑",
         "解釋雙側一致：照一眼，兩眼同縮",
-        "解釋E-W 核 vs 動眼核：副交感 vs 骨骼肌"
+        "解釋艾丁格－威斯特法核（E-W） 核 vs 動眼核：副交感 vs 骨骼肌"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "瞳孔對光反射：二進三出",
-          "body": "二進三出：CN II 進、CN III 出。照一眼，兩眼同縮。\n\n- 先走完整路徑。\n- 再懂雙側一致（consensual）。\n- 最後分 E-W 核與動眼核。"
+          "body": "二進三出：第二對腦神經（CN II） 進、第三對腦神經（CN III） 出。照一眼，兩眼同縮。\n\n- 先走完整路徑。\n- 再懂雙側一致（consensual）。\n- 最後分 艾丁格－威斯特法核（E-W） 核與動眼核。"
         },
         {
           "type": "card",
           "title": "二進三出的完整路徑",
-          "body": "**一句話／白話**\n照光→兩側瞳孔收縮。路徑：視網膜→視神經→視交叉（雙側）→前頂蓋核→後聯合→兩側 E-W 核→動眼神經→睫狀神經節→短睫狀神經→瞳孔括約肌。\n\n**觀念**\nafferent 是 CN II（optic nerve）；中繼在 pretectal nucleus（上丘層），經 posterior commissure 到兩側 E-W nucleus；efferent 是 CN III 副交感：節前纖維 → ciliary ganglion → short ciliary nerves → sphincter pupillae 收縮。\n\n**考試角度**\n- 二進＝CN II 視神經；三出＝CN III 動眼神經\n- 中繼核是 pretectal nucleus，不是外側膝狀體\n- 終點是 sphincter pupillae 收縮→瞳孔縮小\n\n**口訣**\n二進三出，中間轉前頂蓋核，最後 E-W 出去縮瞳。",
+          "body": "**一句話／白話**\n照光→兩側瞳孔收縮。路徑：視網膜→視神經→視交叉（雙側）→前頂蓋核→後聯合→兩側 艾丁格－威斯特法核（E-W） 核→動眼神經→睫狀神經節→短睫狀神經→瞳孔括約肌。\n\n**觀念**\n傳入（afferent） 是 第二對腦神經（CN II）（optic nerve）；中繼在 pretectal 核（nucleus）（上丘層），經 posterior commissure 到兩側 艾丁格－威斯特法核 核；傳出（efferent） 是 第三對腦神經（CN III） 副交感：節前纖維 → 睫狀神經節（ciliary ganglion） → short ciliary nerves → 括約肌（sphincter） pupillae 收縮。\n\n**考試角度**\n- 二進＝第二對腦神經 視神經；三出＝第三對腦神經 動眼神經\n- 中繼核是 pretectal 核，不是外側膝狀體\n- 終點是 括約肌 pupillae 收縮→瞳孔縮小\n\n**口訣**\n二進三出，中間轉前頂蓋核，最後 艾丁格－威斯特法核 出去縮瞳。",
           "keys": [
-            "二進＝CN II 視神經；三出＝CN III 動眼神經",
-            "中繼核是 pretectal nucleus，不是外側膝狀體",
-            "終點是 sphincter pupillae 收縮→瞳孔縮小"
+            "二進＝第二對腦神經（CN II） 視神經；三出＝第三對腦神經（CN III） 動眼神經",
+            "中繼核是 pretectal 核（nucleus），不是外側膝狀體",
+            "終點是 括約肌（sphincter） pupillae 收縮→瞳孔縮小"
           ],
-          "tip": "口訣：二進三出，中間轉前頂蓋核，最後 E-W 出去縮瞳。"
+          "tip": "口訣：二進三出，中間轉前頂蓋核，最後 艾丁格－威斯特法核（E-W） 出去縮瞳。"
         },
         {
           "type": "check",
@@ -190,18 +198,19 @@
           "q": "瞳孔對光反射的『二進三出』指的是哪兩條腦神經？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "二進＝CN II 視神經；三出＝CN III 動眼神經\n\n正確選項：CN II 進、CN III 出。\nafferent 是 CN II（optic nerve）；中繼在 pretectal nucleus（上丘層），經 posterior commissure 到兩側 E-W nucleus；efferent 是 CN III 副交感：節前纖維 → ciliary ganglion → short ciliary nerves → sphincter pupillae 收縮。",
+          "explain": "二進＝第二對腦神經（CN II） 視神經；三出＝第三對腦神經（CN III） 動眼神經\n\n正確選項：第二對腦神經（CN II） 進、第三對腦神經（CN III） 出。\n傳入（afferent） 是 第二對腦神經（CN II）（optic nerve）；中繼在 pretectal 核（nucleus）（上丘層），經 posterior commissure 到兩側 艾丁格－威斯特法核（E-W） 核（nucleus）；傳出（efferent） 是 第三對腦神經（CN III） 副交感：節前纖維 → 睫狀神經節（ciliary ganglion） → short ciliary nerves → 括約肌（sphincter） pupillae 收縮。",
           "choices": [
-            "CN II 進、CN VII 出",
-            "CN V 進、CN VII 出",
-            "CN II 進、CN III 出",
-            "CN III 進、CN II 出"
-          ]
+            "第二對腦神經（CN II） 進、第七對腦神經（CN VII） 出",
+            "第五對腦神經（CN V） 進、第七對腦神經（CN VII） 出",
+            "第二對腦神經（CN II） 進、第三對腦神經（CN III） 出",
+            "第三對腦神經（CN III） 進、第二對腦神經（CN II） 出"
+          ],
+          "id": "ce6146741"
         },
         {
           "type": "card",
           "title": "雙側一致：照一眼，兩眼同縮",
-          "body": "**一句話／白話**\n照一眼，兩眼一起縮。因為每側視網膜都送纖維到兩側視徑，前頂蓋核又經後聯合送到兩側 E-W 核，交叉兩次。\n\n**觀念**\n雙側性有兩個原因：每側視網膜的纖維都進入兩側 optic tract（在 optic chiasm 跨到對側），且 pretectal nucleus 再經 posterior commissure 投射到兩側 E-W nucleus。因此單眼照光會同時引發直接（同眼）與一致性（對眼）瞳孔收縮。\n\n**考試角度**\n- 單眼照光→雙眼瞳孔同時收縮\n- 雙側性來自視交叉與後聯合兩次交叉\n- 臨床分直接反射（同眼）與間接反射（對眼）\n\n**口訣**\n照一眼兩眼縮，因為一路上交叉了兩次。",
+          "body": "**一句話／白話**\n照一眼，兩眼一起縮。因為每側視網膜都送纖維到兩側視徑，前頂蓋核又經後聯合送到兩側 艾丁格－威斯特法核（E-W） 核，交叉兩次。\n\n**觀念**\n雙側性有兩個原因：每側視網膜的纖維都進入兩側 視束（optic tract）（在 optic chiasm 跨到對側），且 pretectal 核（nucleus） 再經 posterior commissure 投射到兩側 艾丁格－威斯特法核 核。因此單眼照光會同時引發直接（同眼）與一致性（對眼）瞳孔收縮。\n\n**考試角度**\n- 單眼照光→雙眼瞳孔同時收縮\n- 雙側性來自視交叉與後聯合兩次交叉\n- 臨床分直接反射（同眼）與間接反射（對眼）\n\n**口訣**\n照一眼兩眼縮，因為一路上交叉了兩次。",
           "keys": [
             "單眼照光→雙眼瞳孔同時收縮",
             "雙側性來自視交叉與後聯合兩次交叉",
@@ -215,24 +224,25 @@
           "q": "單眼照光時，對側未被照光的眼睛瞳孔會？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "單眼照光→雙眼瞳孔同時收縮\n\n正確選項：一起收縮。\n雙側性有兩個原因：每側視網膜的纖維都進入兩側 optic tract（在 optic chiasm 跨到對側），且 pretectal nucleus 再經 posterior commissure 投射到兩側 E-W nucleus。因此單眼照光會同時引發直接（同眼）與一致性（對眼）瞳孔收縮。",
+          "explain": "單眼照光→雙眼瞳孔同時收縮\n\n正確選項：一起收縮。\n雙側性有兩個原因：每側視網膜的纖維都進入兩側 視束（optic tract）（在 optic chiasm 跨到對側），且 pretectal 核（nucleus） 再經 posterior commissure 投射到兩側 艾丁格－威斯特法核（E-W） 核（nucleus）。因此單眼照光會同時引發直接（同眼）與一致性（對眼）瞳孔收縮。",
           "choices": [
             "放大",
             "一起收縮",
             "先放大後收縮",
             "不變"
-          ]
+          ],
+          "id": "ceec726fe"
         },
         {
           "type": "card",
-          "title": "E-W 核 vs 動眼核：副交感 vs 骨骼肌",
-          "body": "**一句話／白話**\n第三對腦神經有兩個核。E-W 核＝副交感→平滑肌（瞳孔括約肌、睫狀肌）；動眼核＝骨骼肌（眼外肌、提上瞼肌）。對光反射只用 E-W 核。\n\n**觀念**\nE-W nucleus 是 CN III 的副交感副核，位中腦、緊鄰 oculomotor nucleus，管平滑肌。副交感腦神經為 3、7、9、10。對光反射只動到 E-W；近反射才會同時用動眼核。\n\n**考試角度**\n- E-W 是 CN III 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）\n- 動眼核：骨骼肌（眼外肌、提上瞼肌）\n- 副交感腦神經＝3、7、9、10\n\n**口訣**\n平滑肌歸 E-W，骨骼肌歸動眼核；兩核都屬第三對。",
+          "title": "艾丁格－威斯特法核（E-W） 核 vs 動眼核：副交感 vs 骨骼肌",
+          "body": "**一句話／白話**\n第三對腦神經有兩個核。艾丁格－威斯特法核（E-W） 核＝副交感→平滑肌（瞳孔括約肌、睫狀肌）；動眼核＝骨骼肌（眼外肌、提上瞼肌）。對光反射只用 艾丁格－威斯特法核 核。\n\n**觀念**\n艾丁格－威斯特法核 核（nucleus） 是 第三對腦神經（CN III） 的副交感副核，位中腦、緊鄰 oculomotor 核，管平滑肌。副交感腦神經為 3、7、9、10。對光反射只動到 艾丁格－威斯特法核；近反射才會同時用動眼核。\n\n**考試角度**\n- 艾丁格－威斯特法核 是 第三對腦神經 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）\n- 動眼核：骨骼肌（眼外肌、提上瞼肌）\n- 副交感腦神經＝3、7、9、10\n\n**口訣**\n平滑肌歸 艾丁格－威斯特法核，骨骼肌歸動眼核；兩核都屬第三對。",
           "keys": [
-            "E-W 是 CN III 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）",
+            "艾丁格－威斯特法核（E-W） 是 第三對腦神經（CN III） 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）",
             "動眼核：骨骼肌（眼外肌、提上瞼肌）",
             "副交感腦神經＝3、7、9、10"
           ],
-          "tip": "口訣：平滑肌歸 E-W，骨骼肌歸動眼核；兩核都屬第三對。"
+          "tip": "口訣：平滑肌歸 艾丁格－威斯特法核（E-W），骨骼肌歸動眼核；兩核都屬第三對。"
         },
         {
           "type": "check",
@@ -240,22 +250,23 @@
           "q": "Edinger-Westphal 核在中腦最鄰近下列何核？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "E-W 是 CN III 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）\n\n正確選項：動眼神經核。\nE-W nucleus 是 CN III 的副交感副核，位中腦、緊鄰 oculomotor nucleus，管平滑肌。副交感腦神經為 3、7、9、10。對光反射只動到 E-W；近反射才會同時用動眼核。",
+          "explain": "艾丁格－威斯特法核（E-W） 是 第三對腦神經（CN III） 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）\n\n正確選項：動眼神經核。\n艾丁格－威斯特法核（E-W） 核（nucleus） 是 第三對腦神經（CN III） 的副交感副核，位中腦、緊鄰 oculomotor 核（nucleus），管平滑肌。副交感腦神經為 3、7、9、10。對光反射只動到 艾丁格－威斯特法核（E-W）；近反射才會同時用動眼核。",
           "choices": [
             "外旋神經核",
             "顏面神經核",
             "動眼神經核",
             "滑車神經核"
-          ]
+          ],
+          "id": "c5bf10416"
         },
         {
           "type": "example",
-          "title": "範例拆解：E-W 核 vs 動眼核：副交感 vs 骨骼肌",
+          "title": "範例拆解：艾丁格－威斯特法核（E-W） 核 vs 動眼核：副交感 vs 骨骼肌",
           "problem": "Edinger-Westphal 核在中腦最鄰近下列何核？\n\nA. 外旋神經核\nB. 顏面神經核\nC. 動眼神經核\nD. 滑車神經核",
           "steps": [
-            "先確認題目問的主題：E-W 核 vs 動眼核：副交感 vs 骨骼肌",
-            "E-W nucleus 是 CN III 的副交感副核，位中腦、緊鄰 oculomotor nucleus，管平滑肌。副交感腦神經為 3、7、9、10。對光反射只動到 E-W；近反射才會同時用動眼核。",
-            "把判斷依據連回題目：E-W 是 CN III 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）\n\n正確選項：動眼神經核。\nE-W nucleus 是 CN III 的副交感副核，位中腦、緊鄰 oculomotor nucleus，管平滑肌。副交感腦神經為 3、7、9、10。對光反射只動到 E-W；近反射才會同時用動眼核。"
+            "先確認題目問的主題：艾丁格－威斯特法核（E-W） 核 vs 動眼核：副交感 vs 骨骼肌",
+            "艾丁格－威斯特法核（E-W） 核（nucleus） 是 第三對腦神經（CN III） 的副交感副核，位中腦、緊鄰 oculomotor 核（nucleus），管平滑肌。副交感腦神經為 3、7、9、10。對光反射只動到 艾丁格－威斯特法核（E-W）；近反射才會同時用動眼核。",
+            "把判斷依據連回題目：艾丁格－威斯特法核（E-W） 是 第三對腦神經（CN III） 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）\n\n正確選項：動眼神經核。\n艾丁格－威斯特法核（E-W） 核（nucleus） 是 第三對腦神經（CN III） 的副交感副核，位中腦、緊鄰 oculomotor 核（nucleus），管平滑肌。副交感腦神經為 3、7、9、10。對光反射只動到 艾丁格－威斯特法核（E-W）；近反射才會同時用動眼核。"
           ],
           "answer": "動眼神經核"
         },
@@ -272,55 +283,61 @@
               "q": "單眼照光時，對側未被照光的眼睛瞳孔會？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "單眼照光→雙眼瞳孔同時收縮\n\n正確選項：一起收縮。\n雙側性有兩個原因：每側視網膜的纖維都進入兩側 optic tract（在 optic chiasm 跨到對側），且 pretectal nucleus 再經 posterior commissure 投射到兩側 E-W nucleus。因此單眼照光會同時引發直接（同眼）與一致性（對眼）瞳孔收縮。",
+              "explain": "單眼照光→雙眼瞳孔同時收縮\n\n正確選項：一起收縮。\n雙側性有兩個原因：每側視網膜的纖維都進入兩側 視束（optic tract）（在 optic chiasm 跨到對側），且 pretectal 核（nucleus） 再經 posterior commissure 投射到兩側 艾丁格－威斯特法核（E-W） 核（nucleus）。因此單眼照光會同時引發直接（同眼）與一致性（對眼）瞳孔收縮。",
               "choices": [
                 "放大",
                 "一起收縮",
                 "先放大後收縮",
                 "不變"
-              ]
+              ],
+              "id": "ceec726fe"
             },
             {
               "kind": "single",
               "q": "Edinger-Westphal 核在中腦最鄰近下列何核？",
               "answer": 2,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "E-W 是 CN III 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）\n\n正確選項：動眼神經核。\nE-W nucleus 是 CN III 的副交感副核，位中腦、緊鄰 oculomotor nucleus，管平滑肌。副交感腦神經為 3、7、9、10。對光反射只動到 E-W；近反射才會同時用動眼核。",
+              "explain": "艾丁格－威斯特法核（E-W） 是 第三對腦神經（CN III） 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）\n\n正確選項：動眼神經核。\n艾丁格－威斯特法核（E-W） 核（nucleus） 是 第三對腦神經（CN III） 的副交感副核，位中腦、緊鄰 oculomotor 核（nucleus），管平滑肌。副交感腦神經為 3、7、9、10。對光反射只動到 艾丁格－威斯特法核（E-W）；近反射才會同時用動眼核。",
               "choices": [
                 "外旋神經核",
                 "顏面神經核",
                 "動眼神經核",
                 "滑車神經核"
-              ]
+              ],
+              "id": "c5bf10416"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "二進＝CN II 視神經；三出＝CN III 動眼神經",
-            "中繼核是 pretectal nucleus，不是外側膝狀體",
+            "二進＝第二對腦神經（CN II） 視神經；三出＝第三對腦神經（CN III） 動眼神經",
+            "中繼核是 pretectal 核（nucleus），不是外側膝狀體",
             "單眼照光→雙眼瞳孔同時收縮",
             "雙側性來自視交叉與後聯合兩次交叉",
-            "E-W 是 CN III 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）",
+            "艾丁格－威斯特法核（E-W） 是 第三對腦神經（CN III） 副核，位中腦、緊鄰動眼核，管平滑肌（括約肌＋睫狀肌）",
             "動眼核：骨骼肌（眼外肌、提上瞼肌）"
           ],
           "flash": [
             {
               "front": "二進三出的完整路徑",
-              "back": "照光→兩側瞳孔收縮。路徑：視網膜→視神經→視交叉（雙側）→前頂蓋核→後聯合→兩側 E-W 核→動眼神經→睫狀神經節→短睫狀神經→瞳孔括約肌。"
+              "back": "照光→兩側瞳孔收縮。路徑：視網膜→視神經→視交叉（雙側）→前頂蓋核→後聯合→兩側 艾丁格－威斯特法核（E-W） 核→動眼神經→睫狀神經節→短睫狀神經→瞳孔括約肌。",
+              "id": "f7e45d631"
             },
             {
               "front": "雙側一致：照一眼，兩眼同縮",
-              "back": "照一眼，兩眼一起縮。因為每側視網膜都送纖維到兩側視徑，前頂蓋核又經後聯合送到兩側 E-W 核，交叉兩次。"
+              "back": "照一眼，兩眼一起縮。因為每側視網膜都送纖維到兩側視徑，前頂蓋核又經後聯合送到兩側 艾丁格－威斯特法核（E-W） 核，交叉兩次。",
+              "id": "f5e06b489"
             },
             {
-              "front": "E-W 核 vs 動眼核：副交感 vs 骨骼肌",
-              "back": "第三對腦神經有兩個核。E-W 核＝副交感→平滑肌（瞳孔括約肌、睫狀肌）；動眼核＝骨骼肌（眼外肌、提上瞼肌）。對光反射只用 E-W 核。"
+              "front": "艾丁格－威斯特法核（E-W） 核 vs 動眼核：副交感 vs 骨骼肌",
+              "back": "第三對腦神經有兩個核。艾丁格－威斯特法核（E-W） 核＝副交感→平滑肌（瞳孔括約肌、睫狀肌）；動眼核＝骨骼肌（眼外肌、提上瞼肌）。對光反射只用 艾丁格－威斯特法核（E-W） 核。",
+              "id": "fa38504c9"
             },
             {
               "front": "瞳孔對光反射的『二進三出』指的是哪兩條腦神經？",
-              "back": "二進＝CN II 視神經；三出＝CN III 動眼神經\n\n正確選項：CN II 進、CN III 出。\nafferent 是 CN II（optic nerve）；中繼在 pretectal nucleus（上丘層），經 posterior commissure 到兩側 E-W nucleus；efferent 是 CN III 副交感：節前纖維 → ciliary ganglion → short ciliary nerves → sphincter pupillae 收縮。"
+              "back": "二進＝第二對腦神經（CN II） 視神經；三出＝第三對腦神經（CN III） 動眼神經\n\n正確選項：第二對腦神經（CN II） 進、第三對腦神經（CN III） 出。\n傳入（afferent） 是 第二對腦神經（CN II）（optic nerve）；中繼在 pretectal 核（nucleus）（上丘層），經 posterior commissure 到兩側 艾丁格－威斯特法核（E-W） 核（nucleus）；傳出（efferent） 是 第三對腦神經（CN III） 副交感：節前纖維 → 睫狀神經節（ciliary ganglion） → short ciliary nerves → 括約肌（sphincter） pupillae 收縮。",
+              "id": "fe6146741"
             }
           ]
         }
@@ -336,14 +353,14 @@
         {
           "type": "intro",
           "title": "瞳孔對光反射：二進三出",
-          "body": "二進三出：CN II 進、CN III 出。照一眼，兩眼同縮。\n\n- 先走完整路徑。\n- 再懂雙側一致（consensual）。\n- 最後分 E-W 核與動眼核。"
+          "body": "二進三出：第二對腦神經（CN II） 進、第三對腦神經（CN III） 出。照一眼，兩眼同縮。\n\n- 先走完整路徑。\n- 再懂雙側一致（consensual）。\n- 最後分 艾丁格－威斯特法核（E-W） 核與動眼核。"
         },
         {
           "type": "card",
           "title": "臨床：中腦病灶讓瞳孔放大固定",
-          "body": "**一句話／白話**\n中腦受壓（腫瘤、鉤回疝）壓到動眼神經／E-W，瞳孔放大固定、對光不縮。屈光配到位卻仍畏光模糊，要警覺腦部病變。\n\n**觀念**\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n\n**考試角度**\n- 瞳孔放大固定＝動眼神經／E-W 受損\n- 對光反射消失→定位中腦\n- 屈光正常卻畏光模糊要排除中腦病變\n\n**口訣**\n縮不起來的大瞳孔，先想中腦壓到第三對神經。",
+          "body": "**一句話／白話**\n中腦受壓（腫瘤、鉤回疝）壓到動眼神經／艾丁格－威斯特法核（E-W），瞳孔放大固定、對光不縮。屈光配到位卻仍畏光模糊，要警覺腦部病變。\n\n**觀念**\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n\n**考試角度**\n- 瞳孔放大固定＝動眼神經／艾丁格－威斯特法核 受損\n- 對光反射消失→定位中腦\n- 屈光正常卻畏光模糊要排除中腦病變\n\n**口訣**\n縮不起來的大瞳孔，先想中腦壓到第三對神經。",
           "keys": [
-            "瞳孔放大固定＝動眼神經／E-W 受損",
+            "瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損",
             "對光反射消失→定位中腦",
             "屈光正常卻畏光模糊要排除中腦病變"
           ],
@@ -355,18 +372,19 @@
           "q": "照光後瞳孔不收縮、放大固定，最該懷疑哪個腦幹部位受損？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "瞳孔放大固定＝動眼神經／E-W 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。",
+          "explain": "瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。",
           "choices": [
             "小腦",
             "延腦",
             "橋腦",
             "中腦"
-          ]
+          ],
+          "id": "c6aa8246a"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n照光後瞳孔不收縮、放大固定，最該懷疑哪個腦幹部位受損？\n\nA. 小腦\nB. 延腦\nC. 橋腦\nD. 中腦\n\n**判斷步驟**\n- 先確認題目問的主題：臨床：中腦病灶讓瞳孔放大固定\n- blown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n- 把判斷依據連回題目：瞳孔放大固定＝動眼神經／E-W 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n\n**結論與依據**\n中腦",
+          "body": "**情境**\n照光後瞳孔不收縮、放大固定，最該懷疑哪個腦幹部位受損？\n\nA. 小腦\nB. 延腦\nC. 橋腦\nD. 中腦\n\n**判斷步驟**\n- 先確認題目問的主題：臨床：中腦病灶讓瞳孔放大固定\n- blown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n- 把判斷依據連回題目：瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n\n**結論與依據**\n中腦",
           "keys": [
             "中腦"
           ]
@@ -377,7 +395,8 @@
           "q": "解釋這個結論所用的條件或判斷依據。",
           "answer": "中腦",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：臨床：中腦病灶讓瞳孔放大固定\n- blown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n- 把判斷依據連回題目：瞳孔放大固定＝動眼神經／E-W 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。"
+          "explain": "- 先確認題目問的主題：臨床：中腦病灶讓瞳孔放大固定\n- blown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n- 把判斷依據連回題目：瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。",
+          "id": "c334fe7f5"
         },
         {
           "type": "example",
@@ -386,7 +405,7 @@
           "steps": [
             "先確認題目問的主題：臨床：中腦病灶讓瞳孔放大固定",
             "blown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。",
-            "把判斷依據連回題目：瞳孔放大固定＝動眼神經／E-W 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。"
+            "把判斷依據連回題目：瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。"
           ],
           "answer": "中腦"
         },
@@ -403,41 +422,46 @@
               "q": "照光後瞳孔不收縮、放大固定，最該懷疑哪個腦幹部位受損？",
               "answer": 3,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "瞳孔放大固定＝動眼神經／E-W 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。",
+              "explain": "瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。",
               "choices": [
                 "小腦",
                 "延腦",
                 "橋腦",
                 "中腦"
-              ]
+              ],
+              "id": "c6aa8246a"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "瞳孔放大固定＝動眼神經／E-W 受損",
+            "瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損",
             "對光反射消失→定位中腦",
-            "臨床：中腦病灶讓瞳孔放大固定：瞳孔放大固定＝動眼神經／E-W 受損",
-            "- 先確認題目問的主題：臨床：中腦病灶讓瞳孔放大固定\n- blown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n- 把判斷依據連回題目：瞳孔放大固定＝動眼神經／E-W 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。",
-            "瞳孔放大固定＝動眼神經／E-W 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。"
+            "臨床：中腦病灶讓瞳孔放大固定：瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損",
+            "- 先確認題目問的主題：臨床：中腦病灶讓瞳孔放大固定\n- blown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n- 把判斷依據連回題目：瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。",
+            "瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。"
           ],
           "flash": [
             {
               "front": "臨床：中腦病灶讓瞳孔放大固定",
-              "back": "中腦受壓（腫瘤、鉤回疝）壓到動眼神經／E-W，瞳孔放大固定、對光不縮。屈光配到位卻仍畏光模糊，要警覺腦部病變。"
+              "back": "中腦受壓（腫瘤、鉤回疝）壓到動眼神經／艾丁格－威斯特法核（E-W），瞳孔放大固定、對光不縮。屈光配到位卻仍畏光模糊，要警覺腦部病變。",
+              "id": "fd187924f"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：臨床：中腦病灶讓瞳孔放大固定\n- blown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n- 把判斷依據連回題目：瞳孔放大固定＝動眼神經／E-W 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。"
+              "back": "- 先確認題目問的主題：臨床：中腦病灶讓瞳孔放大固定\n- blown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n- 把判斷依據連回題目：瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。",
+              "id": "f334fe7f5"
             },
             {
               "front": "照光後瞳孔不收縮、放大固定，最該懷疑哪個腦幹部位受損？",
-              "back": "瞳孔放大固定＝動眼神經／E-W 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。"
+              "back": "瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。",
+              "id": "f6aa8246a"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：臨床：中腦病灶讓瞳孔放大固定\n- blown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n- 把判斷依據連回題目：瞳孔放大固定＝動眼神經／E-W 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。"
+              "back": "- 先確認題目問的主題：臨床：中腦病灶讓瞳孔放大固定\n- blown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。\n- 把判斷依據連回題目：瞳孔放大固定＝動眼神經／艾丁格－威斯特法核（E-W） 受損\n\n正確選項：中腦。\nblown pupil（瞳孔放大固定）代表動眼神經副交感受損；對光反射消失可定位中腦。臨床上瞳孔縮不起來→曝光過度→即使屈光度正常，視力仍模糊；逐字稿的個案最終為中腦腫瘤壓迫。",
+              "id": "f334fe7f5"
             }
           ]
         }
@@ -459,9 +483,9 @@
         {
           "type": "card",
           "title": "近反射三聯：匯聚＋調節＋縮瞳",
-          "body": "**一句話／白話**\n看近同時做三件事：雙眼向內匯聚（內直肌）、水晶體變厚（睫狀肌收縮）、瞳孔縮小（括約肌）。\n\n**觀念**\n近反射三聯：雙眼向內匯聚（medial rectus）、調節（睫狀肌收縮使懸韌帶放鬆、水晶體變厚變凸）、縮瞳（sphincter pupillae）。看近時水晶體變厚，不是變平。\n\n**考試角度**\n- 三聯：convergence＋accommodation（水晶體變厚）＋miosis\n- 看近水晶體變厚變凸，不是變平\n- 睫狀肌收縮→懸韌帶放鬆→水晶體變厚\n\n**口訣**\n看近：眼向內、晶體變厚、瞳孔變小。",
+          "body": "**一句話／白話**\n看近同時做三件事：雙眼向內匯聚（內直肌）、水晶體變厚（睫狀肌收縮）、瞳孔縮小（括約肌）。\n\n**觀念**\n近反射三聯：雙眼向內匯聚（medial rectus）、調節（睫狀肌收縮使懸韌帶放鬆、水晶體變厚變凸）、縮瞳（sphincter pupillae）。看近時水晶體變厚，不是變平。\n\n**考試角度**\n- 三聯：會聚（convergence）＋調節（accommodation）（水晶體變厚）＋縮瞳（miosis）\n- 看近水晶體變厚變凸，不是變平\n- 睫狀肌收縮→懸韌帶放鬆→水晶體變厚\n\n**口訣**\n看近：眼向內、晶體變厚、瞳孔變小。",
           "keys": [
-            "三聯：convergence＋accommodation（水晶體變厚）＋miosis",
+            "三聯：會聚（convergence）＋調節（accommodation）（水晶體變厚）＋縮瞳（miosis）",
             "看近水晶體變厚變凸，不是變平",
             "睫狀肌收縮→懸韌帶放鬆→水晶體變厚"
           ],
@@ -473,20 +497,21 @@
           "q": "有關近物反射，下列敘述何者錯誤？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "三聯：convergence＋accommodation（水晶體變厚）＋miosis\n\n正確選項：水晶體變平。\n近反射三聯：雙眼向內匯聚（medial rectus）、調節（睫狀肌收縮使懸韌帶放鬆、水晶體變厚變凸）、縮瞳（sphincter pupillae）。看近時水晶體變厚，不是變平。",
+          "explain": "三聯：會聚（convergence）＋調節（accommodation）（水晶體變厚）＋縮瞳（miosis）\n\n正確選項：水晶體變平。\n近反射三聯：雙眼向內匯聚（medial rectus）、調節（睫狀肌收縮使懸韌帶放鬆、水晶體變厚變凸）、縮瞳（sphincter pupillae）。看近時水晶體變厚，不是變平。",
           "choices": [
             "調節作用增加",
             "雙眼會聚",
             "瞳孔縮小",
             "水晶體變平"
-          ]
+          ],
+          "id": "c501d0f91"
         },
         {
           "type": "card",
           "title": "兩核分工 + 近反射要經皮質",
-          "body": "**一句話／白話**\n動眼核→內直肌（骨骼肌、匯聚）；E-W 核→睫狀肌＋括約肌（平滑肌）。近反射從視覺皮質下行，會經大腦；對光反射不經皮質。\n\n**觀念**\nnear reflex 路徑：visual cortex（枕葉）→ 經 superior colliculus／pretectal area → oculomotor nucleus（內直肌，骨骼肌）＋ E-W nucleus（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。\n\n**考試角度**\n- 近反射用兩核（動眼核＋E-W）；對光反射只用 E-W\n- 近反射經大腦視覺皮質→昏迷時消失\n- 臨床測中腦反射用對光反射，不用近反射\n\n**口訣**\n近反射兩核且上皮質；對光反射單核不上皮質。",
+          "body": "**一句話／白話**\n動眼核→內直肌（骨骼肌、匯聚）；艾丁格－威斯特法核（E-W） 核→睫狀肌＋括約肌（平滑肌）。近反射從視覺皮質下行，會經大腦；對光反射不經皮質。\n\n**觀念**\nnear 反射（reflex） 路徑：視覺皮質（visual cortex）（枕葉）→ 經 上丘（superior colliculus）／頂蓋前區（pretectal area） → oculomotor 核（nucleus）（內直肌，骨骼肌）＋ 艾丁格－威斯特法核 核（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。\n\n**考試角度**\n- 近反射用兩核（動眼核＋E-W）；對光反射只用 艾丁格－威斯特法核\n- 近反射經大腦視覺皮質→昏迷時消失\n- 臨床測中腦反射用對光反射，不用近反射\n\n**口訣**\n近反射兩核且上皮質；對光反射單核不上皮質。",
           "keys": [
-            "近反射用兩核（動眼核＋E-W）；對光反射只用 E-W",
+            "近反射用兩核（動眼核＋E-W）；對光反射只用 艾丁格－威斯特法核（E-W）",
             "近反射經大腦視覺皮質→昏迷時消失",
             "臨床測中腦反射用對光反射，不用近反射"
           ],
@@ -498,22 +523,23 @@
           "q": "有關調節反射，下列敘述何者錯誤？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "近反射用兩核（動眼核＋E-W）；對光反射只用 E-W\n\n正確選項：節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力。\nnear reflex 路徑：visual cortex（枕葉）→ 經 superior colliculus／pretectal area → oculomotor nucleus（內直肌，骨骼肌）＋ E-W nucleus（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。",
+          "explain": "近反射用兩核（動眼核＋E-W）；對光反射只用 艾丁格－威斯特法核（E-W）\n\n正確選項：節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力。\nnear 反射（reflex） 路徑：視覺皮質（visual cortex）（枕葉）→ 經 上丘（superior colliculus）／頂蓋前區（pretectal area） → oculomotor 核（nucleus）（內直肌，骨骼肌）＋ 艾丁格－威斯特法核（E-W） 核（nucleus）（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。",
           "choices": [
-            "下行纖維與兩側 E-W 核突觸、節前纖維到睫狀神經節",
+            "下行纖維與兩側 艾丁格－威斯特法核（E-W） 核突觸、節前纖維到睫狀神經節",
             "節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力",
             "傳入經視神經、視交叉到枕葉",
             "皮質下行到中腦動眼核使內直肌收縮匯聚"
-          ]
+          ],
+          "id": "ccce4d744"
         },
         {
           "type": "example",
           "title": "範例拆解：兩核分工 + 近反射要經皮質",
-          "problem": "有關調節反射，下列敘述何者錯誤？\n\nA. 下行纖維與兩側 E-W 核突觸、節前纖維到睫狀神經節\nB. 節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力\nC. 傳入經視神經、視交叉到枕葉\nD. 皮質下行到中腦動眼核使內直肌收縮匯聚",
+          "problem": "有關調節反射，下列敘述何者錯誤？\n\nA. 下行纖維與兩側 艾丁格－威斯特法核（E-W） 核突觸、節前纖維到睫狀神經節\nB. 節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力\nC. 傳入經視神經、視交叉到枕葉\nD. 皮質下行到中腦動眼核使內直肌收縮匯聚",
           "steps": [
             "先確認題目問的主題：兩核分工 + 近反射要經皮質",
-            "near reflex 路徑：visual cortex（枕葉）→ 經 superior colliculus／pretectal area → oculomotor nucleus（內直肌，骨骼肌）＋ E-W nucleus（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。",
-            "把判斷依據連回題目：近反射用兩核（動眼核＋E-W）；對光反射只用 E-W\n\n正確選項：節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力。\nnear reflex 路徑：visual cortex（枕葉）→ 經 superior colliculus／pretectal area → oculomotor nucleus（內直肌，骨骼肌）＋ E-W nucleus（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。"
+            "near 反射（reflex） 路徑：視覺皮質（visual cortex）（枕葉）→ 經 上丘（superior colliculus）／頂蓋前區（pretectal area） → oculomotor 核（nucleus）（內直肌，骨骼肌）＋ 艾丁格－威斯特法核（E-W） 核（nucleus）（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。",
+            "把判斷依據連回題目：近反射用兩核（動眼核＋E-W）；對光反射只用 艾丁格－威斯特法核（E-W）\n\n正確選項：節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力。\nnear 反射（reflex） 路徑：視覺皮質（visual cortex）（枕葉）→ 經 上丘（superior colliculus）／頂蓋前區（pretectal area） → oculomotor 核（nucleus）（內直肌，骨骼肌）＋ 艾丁格－威斯特法核（E-W） 核（nucleus）（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。"
           ],
           "answer": "節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力"
         },
@@ -530,54 +556,60 @@
               "q": "有關近物反射，下列敘述何者錯誤？",
               "answer": 3,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "三聯：convergence＋accommodation（水晶體變厚）＋miosis\n\n正確選項：水晶體變平。\n近反射三聯：雙眼向內匯聚（medial rectus）、調節（睫狀肌收縮使懸韌帶放鬆、水晶體變厚變凸）、縮瞳（sphincter pupillae）。看近時水晶體變厚，不是變平。",
+              "explain": "三聯：會聚（convergence）＋調節（accommodation）（水晶體變厚）＋縮瞳（miosis）\n\n正確選項：水晶體變平。\n近反射三聯：雙眼向內匯聚（medial rectus）、調節（睫狀肌收縮使懸韌帶放鬆、水晶體變厚變凸）、縮瞳（sphincter pupillae）。看近時水晶體變厚，不是變平。",
               "choices": [
                 "調節作用增加",
                 "雙眼會聚",
                 "瞳孔縮小",
                 "水晶體變平"
-              ]
+              ],
+              "id": "c501d0f91"
             },
             {
               "kind": "single",
               "q": "有關調節反射，下列敘述何者錯誤？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "近反射用兩核（動眼核＋E-W）；對光反射只用 E-W\n\n正確選項：節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力。\nnear reflex 路徑：visual cortex（枕葉）→ 經 superior colliculus／pretectal area → oculomotor nucleus（內直肌，骨骼肌）＋ E-W nucleus（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。",
+              "explain": "近反射用兩核（動眼核＋E-W）；對光反射只用 艾丁格－威斯特法核（E-W）\n\n正確選項：節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力。\nnear 反射（reflex） 路徑：視覺皮質（visual cortex）（枕葉）→ 經 上丘（superior colliculus）／頂蓋前區（pretectal area） → oculomotor 核（nucleus）（內直肌，骨骼肌）＋ 艾丁格－威斯特法核（E-W） 核（nucleus）（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。",
               "choices": [
-                "下行纖維與兩側 E-W 核突觸、節前纖維到睫狀神經節",
+                "下行纖維與兩側 艾丁格－威斯特法核（E-W） 核突觸、節前纖維到睫狀神經節",
                 "節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力",
                 "傳入經視神經、視交叉到枕葉",
                 "皮質下行到中腦動眼核使內直肌收縮匯聚"
-              ]
+              ],
+              "id": "ccce4d744"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "三聯：convergence＋accommodation（水晶體變厚）＋miosis",
+            "三聯：會聚（convergence）＋調節（accommodation）（水晶體變厚）＋縮瞳（miosis）",
             "看近水晶體變厚變凸，不是變平",
-            "近反射用兩核（動眼核＋E-W）；對光反射只用 E-W",
+            "近反射用兩核（動眼核＋E-W）；對光反射只用 艾丁格－威斯特法核（E-W）",
             "近反射經大腦視覺皮質→昏迷時消失",
-            "近反射三聯：匯聚＋調節＋縮瞳：三聯：convergence＋accommodation（水晶體變厚）＋miosis"
+            "近反射三聯：匯聚＋調節＋縮瞳：三聯：會聚（convergence）＋調節（accommodation）（水晶體變厚）＋縮瞳（miosis）"
           ],
           "flash": [
             {
               "front": "近反射三聯：匯聚＋調節＋縮瞳",
-              "back": "看近同時做三件事：雙眼向內匯聚（內直肌）、水晶體變厚（睫狀肌收縮）、瞳孔縮小（括約肌）。"
+              "back": "看近同時做三件事：雙眼向內匯聚（內直肌）、水晶體變厚（睫狀肌收縮）、瞳孔縮小（括約肌）。",
+              "id": "f156b67d6"
             },
             {
               "front": "兩核分工 + 近反射要經皮質",
-              "back": "動眼核→內直肌（骨骼肌、匯聚）；E-W 核→睫狀肌＋括約肌（平滑肌）。近反射從視覺皮質下行，會經大腦；對光反射不經皮質。"
+              "back": "動眼核→內直肌（骨骼肌、匯聚）；艾丁格－威斯特法核（E-W） 核→睫狀肌＋括約肌（平滑肌）。近反射從視覺皮質下行，會經大腦；對光反射不經皮質。",
+              "id": "fa999bd3d"
             },
             {
               "front": "有關近物反射，下列敘述何者錯誤？",
-              "back": "三聯：convergence＋accommodation（水晶體變厚）＋miosis\n\n正確選項：水晶體變平。\n近反射三聯：雙眼向內匯聚（medial rectus）、調節（睫狀肌收縮使懸韌帶放鬆、水晶體變厚變凸）、縮瞳（sphincter pupillae）。看近時水晶體變厚，不是變平。"
+              "back": "三聯：會聚（convergence）＋調節（accommodation）（水晶體變厚）＋縮瞳（miosis）\n\n正確選項：水晶體變平。\n近反射三聯：雙眼向內匯聚（medial rectus）、調節（睫狀肌收縮使懸韌帶放鬆、水晶體變厚變凸）、縮瞳（sphincter pupillae）。看近時水晶體變厚，不是變平。",
+              "id": "f501d0f91"
             },
             {
               "front": "有關調節反射，下列敘述何者錯誤？",
-              "back": "近反射用兩核（動眼核＋E-W）；對光反射只用 E-W\n\n正確選項：節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力。\nnear reflex 路徑：visual cortex（枕葉）→ 經 superior colliculus／pretectal area → oculomotor nucleus（內直肌，骨骼肌）＋ E-W nucleus（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。"
+              "back": "近反射用兩核（動眼核＋E-W）；對光反射只用 艾丁格－威斯特法核（E-W）\n\n正確選項：節後副交感使睫狀肌放鬆、瞳孔收縮以增加屈光力。\nnear 反射（reflex） 路徑：視覺皮質（visual cortex）（枕葉）→ 經 上丘（superior colliculus）／頂蓋前區（pretectal area） → oculomotor 核（nucleus）（內直肌，骨骼肌）＋ 艾丁格－威斯特法核（E-W） 核（nucleus）（睫狀肌、括約肌，平滑肌→ciliary ganglion→short ciliary nerves）。因為經皮質，昏迷時近反射消失，故臨床測中腦用對光反射，不用近反射。",
+              "id": "fcce4d744"
             }
           ]
         }

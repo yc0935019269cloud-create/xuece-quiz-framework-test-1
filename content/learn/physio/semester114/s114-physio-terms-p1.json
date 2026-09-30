@@ -23,9 +23,9 @@
       "id": "terms-1-1",
       "title": "中英文核心名詞 1",
       "goals": [
-        "解釋ECG／lead",
-        "解釋RA／RV",
-        "解釋LA／LV"
+        "解釋心電圖（ECG）／導程（lead）",
+        "解釋右心房（RA）／右心室（RV）",
+        "解釋左心房（LA）／左心室（LV）"
       ],
       "steps": [
         {
@@ -35,8 +35,8 @@
         },
         {
           "type": "card",
-          "title": "ECG／lead",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**ECG｜ECG**\nElectrocardiogram，心電圖。從體表記錄心臟整體電活動，不是心臟收縮力量。\n\n**lead｜lead**\n導程。像從某個方向拍心臟電活動的攝影機。",
+          "title": "心電圖（ECG）／導程（lead）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**心電圖（ECG）｜心電圖**\nElectrocardiogram，心電圖。從體表記錄心臟整體電活動，不是心臟收縮力量。\n\n**導程（lead）｜導程**\n導程。像從某個方向拍心臟電活動的攝影機。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -45,15 +45,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「ECG／lead」，並說出一個判斷依據。",
-          "answer": "**ECG｜ECG**\nElectrocardiogram，心電圖。從體表記錄心臟整體電活動，不是心臟收縮力量。\n\n**lead｜lead**\n導程。像從某個方向拍心臟電活動的攝影機。",
+          "q": "用自己的話說明「心電圖（ECG）／導程（lead）」，並說出一個判斷依據。",
+          "answer": "**心電圖（ECG）｜心電圖（ECG）**\nElectrocardiogram，心電圖。從體表記錄心臟整體電活動，不是心臟收縮力量。\n\n**導程（lead）｜導程（lead）**\n導程。像從某個方向拍心臟電活動的攝影機。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**ECG｜ECG**\nElectrocardiogram，心電圖。從體表記錄心臟整體電活動，不是心臟收縮力量。\n\n**lead｜lead**\n導程。像從某個方向拍心臟電活動的攝影機。"
+          "explain": "**心電圖（ECG）｜心電圖（ECG）**\nElectrocardiogram，心電圖。從體表記錄心臟整體電活動，不是心臟收縮力量。\n\n**導程（lead）｜導程（lead）**\n導程。像從某個方向拍心臟電活動的攝影機。",
+          "id": "c62ed2ecc"
         },
         {
           "type": "card",
-          "title": "RA／RV",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**RA｜RA**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**RV｜RV**\nRight ventricle，右心室；把血送去肺。",
+          "title": "右心房（RA）／右心室（RV）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**右心房（RA）｜右心房**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**右心室（RV）｜右心室**\nRight ventricle，右心室；把血送去肺。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -62,15 +63,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「RA／RV」，並說出一個判斷依據。",
-          "answer": "**RA｜RA**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**RV｜RV**\nRight ventricle，右心室；把血送去肺。",
+          "q": "用自己的話說明「右心房（RA）／右心室（RV）」，並說出一個判斷依據。",
+          "answer": "**右心房（RA）｜右心房（RA）**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**右心室（RV）｜右心室（RV）**\nRight ventricle，右心室；把血送去肺。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**RA｜RA**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**RV｜RV**\nRight ventricle，右心室；把血送去肺。"
+          "explain": "**右心房（RA）｜右心房（RA）**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**右心室（RV）｜右心室（RV）**\nRight ventricle，右心室；把血送去肺。",
+          "id": "cba6ffb54"
         },
         {
           "type": "card",
-          "title": "LA／LV",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**LA｜LA**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**LV｜LV**\nLeft ventricle，左心室；把血送去全身。",
+          "title": "左心房（LA）／左心室（LV）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**左心房（LA）｜左心房**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**左心室（LV）｜左心室**\nLeft ventricle，左心室；把血送去全身。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -79,21 +81,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「LA／LV」，並說出一個判斷依據。",
-          "answer": "**LA｜LA**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**LV｜LV**\nLeft ventricle，左心室；把血送去全身。",
+          "q": "用自己的話說明「左心房（LA）／左心室（LV）」，並說出一個判斷依據。",
+          "answer": "**左心房（LA）｜左心房（LA）**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**左心室（LV）｜左心室（LV）**\nLeft ventricle，左心室；把血送去全身。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**LA｜LA**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**LV｜LV**\nLeft ventricle，左心室；把血送去全身。"
+          "explain": "**左心房（LA）｜左心房（LA）**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**左心室（LV）｜左心室（LV）**\nLeft ventricle，左心室；把血送去全身。",
+          "id": "c8c6d8b91"
         },
         {
           "type": "example",
-          "title": "範例拆解：LA／LV",
-          "problem": "用自己的話說明「LA／LV」，並說出一個判斷依據。",
+          "title": "範例拆解：左心房（LA）／左心室（LV）",
+          "problem": "用自己的話說明「左心房（LA）／左心室（LV）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：LA／LV",
-            "**LA｜LA**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**LV｜LV**\nLeft ventricle，左心室；把血送去全身。",
-            "把判斷依據連回題目：**LA｜LA**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**LV｜LV**\nLeft ventricle，左心室；把血送去全身。"
+            "先確認題目問的主題：左心房（LA）／左心室（LV）",
+            "**左心房（LA）｜左心房（LA）**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**左心室（LV）｜左心室（LV）**\nLeft ventricle，左心室；把血送去全身。",
+            "把判斷依據連回題目：**左心房（LA）｜左心房（LA）**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**左心室（LV）｜左心室（LV）**\nLeft ventricle，左心室；把血送去全身。"
           ],
-          "answer": "**LA｜LA**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**LV｜LV**\nLeft ventricle，左心室；把血送去全身。"
+          "answer": "**左心房（LA）｜左心房（LA）**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**左心室（LV）｜左心室（LV）**\nLeft ventricle，左心室；把血送去全身。"
         },
         {
           "type": "practice",
@@ -102,17 +105,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「RA／RV」，並說出一個判斷依據。",
-              "answer": "**RA｜RA**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**RV｜RV**\nRight ventricle，右心室；把血送去肺。",
+              "q": "用自己的話說明「右心房（RA）／右心室（RV）」，並說出一個判斷依據。",
+              "answer": "**右心房（RA）｜右心房（RA）**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**右心室（RV）｜右心室（RV）**\nRight ventricle，右心室；把血送去肺。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**RA｜RA**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**RV｜RV**\nRight ventricle，右心室；把血送去肺。"
+              "explain": "**右心房（RA）｜右心房（RA）**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**右心室（RV）｜右心室（RV）**\nRight ventricle，右心室；把血送去肺。",
+              "id": "cba6ffb54"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「LA／LV」，並說出一個判斷依據。",
-              "answer": "**LA｜LA**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**LV｜LV**\nLeft ventricle，左心室；把血送去全身。",
+              "q": "用自己的話說明「左心房（LA）／左心室（LV）」，並說出一個判斷依據。",
+              "answer": "**左心房（LA）｜左心房（LA）**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**左心室（LV）｜左心室（LV）**\nLeft ventricle，左心室；把血送去全身。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**LA｜LA**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**LV｜LV**\nLeft ventricle，左心室；把血送去全身。"
+              "explain": "**左心房（LA）｜左心房（LA）**\nLeft atrium，左心房；收肺回來的含氧血。\n\n**左心室（LV）｜左心室（LV）**\nLeft ventricle，左心室；把血送去全身。",
+              "id": "c8c6d8b91"
             }
           ]
         },
@@ -120,27 +125,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "ECG／lead：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "RA／RV：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**ECG｜ECG**\nElectrocardiogram，心電圖。從體表記錄心臟整體電活動，不是心臟收縮力量。\n\n**lead｜lead**\n導程。像從某個方向拍心臟電活動的攝影機。",
-            "**RA｜RA**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**RV｜RV**\nRight ventricle，右心室；把血送去肺。"
+            "心電圖（ECG）／導程（lead）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "右心房（RA）／右心室（RV）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**心電圖（ECG）｜心電圖（ECG）**\nElectrocardiogram，心電圖。從體表記錄心臟整體電活動，不是心臟收縮力量。\n\n**導程（lead）｜導程（lead）**\n導程。像從某個方向拍心臟電活動的攝影機。",
+            "**右心房（RA）｜右心房（RA）**\nRight atrium，右心房；收全身回來的缺氧血。\n\n**右心室（RV）｜右心室（RV）**\nRight ventricle，右心室；把血送去肺。"
           ],
           "flash": [
             {
-              "front": "ECG／lead",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "心電圖（ECG）／導程（lead）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fe8423a90"
             },
             {
-              "front": "RA／RV",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "右心房（RA）／右心室（RV）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f3d0c764b"
             },
             {
-              "front": "LA／LV",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "左心房（LA）／左心室（LV）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fe1569f6a"
             },
             {
-              "front": "用自己的話說明「ECG／lead」，並說出一個判斷依據。",
-              "back": "**ECG｜ECG**\nElectrocardiogram，心電圖。從體表記錄心臟整體電活動，不是心臟收縮力量。\n\n**lead｜lead**\n導程。像從某個方向拍心臟電活動的攝影機。"
+              "front": "用自己的話說明「心電圖（ECG）／導程（lead）」，並說出一個判斷依據。",
+              "back": "**心電圖（ECG）｜心電圖（ECG）**\nElectrocardiogram，心電圖。從體表記錄心臟整體電活動，不是心臟收縮力量。\n\n**導程（lead）｜導程（lead）**\n導程。像從某個方向拍心臟電活動的攝影機。",
+              "id": "f62ed2ecc"
             }
           ]
         }
@@ -150,9 +159,9 @@
       "id": "terms-2-1",
       "title": "中英文核心名詞 2",
       "goals": [
-        "解釋AV node／SA node",
-        "解釋pacemaker／depolarization",
-        "解釋repolarization／preload"
+        "解釋房室結（AV node）／竇房結（SA node）",
+        "解釋節律器（pacemaker）／去極化（depolarization）",
+        "解釋再極化（repolarization）／前負荷（preload）"
       ],
       "steps": [
         {
@@ -162,8 +171,8 @@
         },
         {
           "type": "card",
-          "title": "AV node／SA node",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**AV node｜AV node**\nAtrioventricular node，房室結；故意讓訊號慢一下，讓心房先把血倒進心室。\n\n**SA node｜SA node**\nSinoatrial node，竇房結；心臟天然的 pacemaker。",
+          "title": "房室結（AV node）／竇房結（SA node）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**房室結（AV node）｜房室結**\nAtrioventricular node，房室結；故意讓訊號慢一下，讓心房先把血倒進心室。\n\n**竇房結（SA node）｜竇房結**\nSinoatrial node，竇房結；心臟天然的 節律器（pacemaker）。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -172,15 +181,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「AV node／SA node」，並說出一個判斷依據。",
-          "answer": "**AV node｜AV node**\nAtrioventricular node，房室結；故意讓訊號慢一下，讓心房先把血倒進心室。\n\n**SA node｜SA node**\nSinoatrial node，竇房結；心臟天然的 pacemaker。",
+          "q": "用自己的話說明「房室結（AV node）／竇房結（SA node）」，並說出一個判斷依據。",
+          "answer": "**房室結（AV node）｜房室結（AV node）**\nAtrioventricular node，房室結；故意讓訊號慢一下，讓心房先把血倒進心室。\n\n**竇房結（SA node）｜竇房結（SA node）**\nSinoatrial node，竇房結；心臟天然的 節律器（pacemaker）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**AV node｜AV node**\nAtrioventricular node，房室結；故意讓訊號慢一下，讓心房先把血倒進心室。\n\n**SA node｜SA node**\nSinoatrial node，竇房結；心臟天然的 pacemaker。"
+          "explain": "**房室結（AV node）｜房室結（AV node）**\nAtrioventricular node，房室結；故意讓訊號慢一下，讓心房先把血倒進心室。\n\n**竇房結（SA node）｜竇房結（SA node）**\nSinoatrial node，竇房結；心臟天然的 節律器（pacemaker）。",
+          "id": "c12375286"
         },
         {
           "type": "card",
-          "title": "pacemaker／depolarization",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**pacemaker｜pacemaker**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**depolarization｜depolarization**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。",
+          "title": "節律器（pacemaker）／去極化（depolarization）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**節律器（pacemaker）｜節律器**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**去極化（depolarization）｜去極化**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -189,15 +199,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「pacemaker／depolarization」，並說出一個判斷依據。",
-          "answer": "**pacemaker｜pacemaker**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**depolarization｜depolarization**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。",
+          "q": "用自己的話說明「節律器（pacemaker）／去極化（depolarization）」，並說出一個判斷依據。",
+          "answer": "**節律器（pacemaker）｜節律器（pacemaker）**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**去極化（depolarization）｜去極化（depolarization）**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**pacemaker｜pacemaker**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**depolarization｜depolarization**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。"
+          "explain": "**節律器（pacemaker）｜節律器（pacemaker）**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**去極化（depolarization）｜去極化（depolarization）**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。",
+          "id": "ccc424cd3"
         },
         {
           "type": "card",
-          "title": "repolarization／preload",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**repolarization｜repolarization**\n再極化；細胞膜電位回到休息狀態。\n\n**preload｜preload**\n前負荷；心室收縮前裝進多少血。",
+          "title": "再極化（repolarization）／前負荷（preload）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**再極化（repolarization）｜再極化**\n再極化；細胞膜電位回到休息狀態。\n\n**前負荷（preload）｜前負荷**\n前負荷；心室收縮前裝進多少血。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -206,21 +217,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「repolarization／preload」，並說出一個判斷依據。",
-          "answer": "**repolarization｜repolarization**\n再極化；細胞膜電位回到休息狀態。\n\n**preload｜preload**\n前負荷；心室收縮前裝進多少血。",
+          "q": "用自己的話說明「再極化（repolarization）／前負荷（preload）」，並說出一個判斷依據。",
+          "answer": "**再極化（repolarization）｜再極化（repolarization）**\n再極化；細胞膜電位回到休息狀態。\n\n**前負荷（preload）｜前負荷（preload）**\n前負荷；心室收縮前裝進多少血。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**repolarization｜repolarization**\n再極化；細胞膜電位回到休息狀態。\n\n**preload｜preload**\n前負荷；心室收縮前裝進多少血。"
+          "explain": "**再極化（repolarization）｜再極化（repolarization）**\n再極化；細胞膜電位回到休息狀態。\n\n**前負荷（preload）｜前負荷（preload）**\n前負荷；心室收縮前裝進多少血。",
+          "id": "cb564d8af"
         },
         {
           "type": "example",
-          "title": "範例拆解：repolarization／preload",
-          "problem": "用自己的話說明「repolarization／preload」，並說出一個判斷依據。",
+          "title": "範例拆解：再極化（repolarization）／前負荷（preload）",
+          "problem": "用自己的話說明「再極化（repolarization）／前負荷（preload）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：repolarization／preload",
-            "**repolarization｜repolarization**\n再極化；細胞膜電位回到休息狀態。\n\n**preload｜preload**\n前負荷；心室收縮前裝進多少血。",
-            "把判斷依據連回題目：**repolarization｜repolarization**\n再極化；細胞膜電位回到休息狀態。\n\n**preload｜preload**\n前負荷；心室收縮前裝進多少血。"
+            "先確認題目問的主題：再極化（repolarization）／前負荷（preload）",
+            "**再極化（repolarization）｜再極化（repolarization）**\n再極化；細胞膜電位回到休息狀態。\n\n**前負荷（preload）｜前負荷（preload）**\n前負荷；心室收縮前裝進多少血。",
+            "把判斷依據連回題目：**再極化（repolarization）｜再極化（repolarization）**\n再極化；細胞膜電位回到休息狀態。\n\n**前負荷（preload）｜前負荷（preload）**\n前負荷；心室收縮前裝進多少血。"
           ],
-          "answer": "**repolarization｜repolarization**\n再極化；細胞膜電位回到休息狀態。\n\n**preload｜preload**\n前負荷；心室收縮前裝進多少血。"
+          "answer": "**再極化（repolarization）｜再極化（repolarization）**\n再極化；細胞膜電位回到休息狀態。\n\n**前負荷（preload）｜前負荷（preload）**\n前負荷；心室收縮前裝進多少血。"
         },
         {
           "type": "practice",
@@ -229,17 +241,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「pacemaker／depolarization」，並說出一個判斷依據。",
-              "answer": "**pacemaker｜pacemaker**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**depolarization｜depolarization**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。",
+              "q": "用自己的話說明「節律器（pacemaker）／去極化（depolarization）」，並說出一個判斷依據。",
+              "answer": "**節律器（pacemaker）｜節律器（pacemaker）**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**去極化（depolarization）｜去極化（depolarization）**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**pacemaker｜pacemaker**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**depolarization｜depolarization**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。"
+              "explain": "**節律器（pacemaker）｜節律器（pacemaker）**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**去極化（depolarization）｜去極化（depolarization）**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。",
+              "id": "ccc424cd3"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「repolarization／preload」，並說出一個判斷依據。",
-              "answer": "**repolarization｜repolarization**\n再極化；細胞膜電位回到休息狀態。\n\n**preload｜preload**\n前負荷；心室收縮前裝進多少血。",
+              "q": "用自己的話說明「再極化（repolarization）／前負荷（preload）」，並說出一個判斷依據。",
+              "answer": "**再極化（repolarization）｜再極化（repolarization）**\n再極化；細胞膜電位回到休息狀態。\n\n**前負荷（preload）｜前負荷（preload）**\n前負荷；心室收縮前裝進多少血。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**repolarization｜repolarization**\n再極化；細胞膜電位回到休息狀態。\n\n**preload｜preload**\n前負荷；心室收縮前裝進多少血。"
+              "explain": "**再極化（repolarization）｜再極化（repolarization）**\n再極化；細胞膜電位回到休息狀態。\n\n**前負荷（preload）｜前負荷（preload）**\n前負荷；心室收縮前裝進多少血。",
+              "id": "cb564d8af"
             }
           ]
         },
@@ -247,27 +261,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "AV node／SA node：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "pacemaker／depolarization：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**AV node｜AV node**\nAtrioventricular node，房室結；故意讓訊號慢一下，讓心房先把血倒進心室。\n\n**SA node｜SA node**\nSinoatrial node，竇房結；心臟天然的 pacemaker。",
-            "**pacemaker｜pacemaker**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**depolarization｜depolarization**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。"
+            "房室結（AV node）／竇房結（SA node）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "節律器（pacemaker）／去極化（depolarization）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**房室結（AV node）｜房室結（AV node）**\nAtrioventricular node，房室結；故意讓訊號慢一下，讓心房先把血倒進心室。\n\n**竇房結（SA node）｜竇房結（SA node）**\nSinoatrial node，竇房結；心臟天然的 節律器（pacemaker）。",
+            "**節律器（pacemaker）｜節律器（pacemaker）**\n節律器；能自己規律發出電訊號的細胞或裝置。\n\n**去極化（depolarization）｜去極化（depolarization）**\n去極化；細胞膜電位變得比較不負，通常代表準備啟動訊號。"
           ],
           "flash": [
             {
-              "front": "AV node／SA node",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "房室結（AV node）／竇房結（SA node）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f0640f1b6"
             },
             {
-              "front": "pacemaker／depolarization",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "節律器（pacemaker）／去極化（depolarization）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f4d01c357"
             },
             {
-              "front": "repolarization／preload",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "再極化（repolarization）／前負荷（preload）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f09b5b618"
             },
             {
-              "front": "用自己的話說明「AV node／SA node」，並說出一個判斷依據。",
-              "back": "**AV node｜AV node**\nAtrioventricular node，房室結；故意讓訊號慢一下，讓心房先把血倒進心室。\n\n**SA node｜SA node**\nSinoatrial node，竇房結；心臟天然的 pacemaker。"
+              "front": "用自己的話說明「房室結（AV node）／竇房結（SA node）」，並說出一個判斷依據。",
+              "back": "**房室結（AV node）｜房室結（AV node）**\nAtrioventricular node，房室結；故意讓訊號慢一下，讓心房先把血倒進心室。\n\n**竇房結（SA node）｜竇房結（SA node）**\nSinoatrial node，竇房結；心臟天然的 節律器（pacemaker）。",
+              "id": "f12375286"
             }
           ]
         }
@@ -277,9 +295,9 @@
       "id": "terms-3-1",
       "title": "中英文核心名詞 3",
       "goals": [
-        "解釋afterload／contractility",
-        "解釋EDV／ESV",
-        "解釋SV／CO"
+        "解釋後負荷（afterload）／收縮力（contractility）",
+        "解釋舒張末期容積（EDV）／收縮末期容積（ESV）",
+        "解釋每搏量（SV）／心輸出量（CO）"
       ],
       "steps": [
         {
@@ -289,8 +307,8 @@
         },
         {
           "type": "card",
-          "title": "afterload／contractility",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**afterload｜afterload**\n後負荷；心室把血推出去時面對的阻力。\n\n**contractility｜contractility**\n收縮力；在相同裝血量下，心肌本身能擠多用力。",
+          "title": "後負荷（afterload）／收縮力（contractility）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**後負荷（afterload）｜後負荷**\n後負荷；心室把血推出去時面對的阻力。\n\n**收縮力（contractility）｜收縮力**\n收縮力；在相同裝血量下，心肌本身能擠多用力。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -299,15 +317,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「afterload／contractility」，並說出一個判斷依據。",
-          "answer": "**afterload｜afterload**\n後負荷；心室把血推出去時面對的阻力。\n\n**contractility｜contractility**\n收縮力；在相同裝血量下，心肌本身能擠多用力。",
+          "q": "用自己的話說明「後負荷（afterload）／收縮力（contractility）」，並說出一個判斷依據。",
+          "answer": "**後負荷（afterload）｜後負荷（afterload）**\n後負荷；心室把血推出去時面對的阻力。\n\n**收縮力（contractility）｜收縮力（contractility）**\n收縮力；在相同裝血量下，心肌本身能擠多用力。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**afterload｜afterload**\n後負荷；心室把血推出去時面對的阻力。\n\n**contractility｜contractility**\n收縮力；在相同裝血量下，心肌本身能擠多用力。"
+          "explain": "**後負荷（afterload）｜後負荷（afterload）**\n後負荷；心室把血推出去時面對的阻力。\n\n**收縮力（contractility）｜收縮力（contractility）**\n收縮力；在相同裝血量下，心肌本身能擠多用力。",
+          "id": "c35ae8a6b"
         },
         {
           "type": "card",
-          "title": "EDV／ESV",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**EDV｜EDV**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**ESV｜ESV**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。",
+          "title": "舒張末期容積（EDV）／收縮末期容積（ESV）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**舒張末期容積（EDV）｜舒張末期容積**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**收縮末期容積（ESV）｜收縮末期容積**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -316,15 +335,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「EDV／ESV」，並說出一個判斷依據。",
-          "answer": "**EDV｜EDV**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**ESV｜ESV**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。",
+          "q": "用自己的話說明「舒張末期容積（EDV）／收縮末期容積（ESV）」，並說出一個判斷依據。",
+          "answer": "**舒張末期容積（EDV）｜舒張末期容積（EDV）**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**收縮末期容積（ESV）｜收縮末期容積（ESV）**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**EDV｜EDV**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**ESV｜ESV**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。"
+          "explain": "**舒張末期容積（EDV）｜舒張末期容積（EDV）**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**收縮末期容積（ESV）｜收縮末期容積（ESV）**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。",
+          "id": "c644c7406"
         },
         {
           "type": "card",
-          "title": "SV／CO",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**SV｜SV**\nStroke volume，每搏量；一次心跳射出的血量，SV = EDV − ESV。\n\n**CO｜CO**\nCardiac output，心輸出量；每分鐘打出的血量，CO = HR × SV。",
+          "title": "每搏量（SV）／心輸出量（CO）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**每搏量（SV）｜每搏量**\n每搏量（Stroke volume），每搏量；一次心跳射出的血量，每搏量 = 舒張末期容積（EDV） − 收縮末期容積（ESV）。\n\n**心輸出量（CO）｜心輸出量**\n心輸出量（Cardiac output），心輸出量；每分鐘打出的血量，心輸出量 = 心率（HR） × 每搏量。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -333,21 +353,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「SV／CO」，並說出一個判斷依據。",
-          "answer": "**SV｜SV**\nStroke volume，每搏量；一次心跳射出的血量，SV = EDV − ESV。\n\n**CO｜CO**\nCardiac output，心輸出量；每分鐘打出的血量，CO = HR × SV。",
+          "q": "用自己的話說明「每搏量（SV）／心輸出量（CO）」，並說出一個判斷依據。",
+          "answer": "**每搏量（SV）｜每搏量（SV）**\n每搏量（Stroke volume），每搏量；一次心跳射出的血量，每搏量（SV） = 舒張末期容積（EDV） − 收縮末期容積（ESV）。\n\n**心輸出量（CO）｜心輸出量（CO）**\n心輸出量（Cardiac output），心輸出量；每分鐘打出的血量，心輸出量（CO） = 心率（HR） × 每搏量（SV）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**SV｜SV**\nStroke volume，每搏量；一次心跳射出的血量，SV = EDV − ESV。\n\n**CO｜CO**\nCardiac output，心輸出量；每分鐘打出的血量，CO = HR × SV。"
+          "explain": "**每搏量（SV）｜每搏量（SV）**\n每搏量（Stroke volume），每搏量；一次心跳射出的血量，每搏量（SV） = 舒張末期容積（EDV） − 收縮末期容積（ESV）。\n\n**心輸出量（CO）｜心輸出量（CO）**\n心輸出量（Cardiac output），心輸出量；每分鐘打出的血量，心輸出量（CO） = 心率（HR） × 每搏量（SV）。",
+          "id": "c2ebacb07"
         },
         {
           "type": "example",
-          "title": "範例拆解：SV／CO",
-          "problem": "用自己的話說明「SV／CO」，並說出一個判斷依據。",
+          "title": "範例拆解：每搏量（SV）／心輸出量（CO）",
+          "problem": "用自己的話說明「每搏量（SV）／心輸出量（CO）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：SV／CO",
-            "**SV｜SV**\nStroke volume，每搏量；一次心跳射出的血量，SV = EDV − ESV。\n\n**CO｜CO**\nCardiac output，心輸出量；每分鐘打出的血量，CO = HR × SV。",
-            "把判斷依據連回題目：**SV｜SV**\nStroke volume，每搏量；一次心跳射出的血量，SV = EDV − ESV。\n\n**CO｜CO**\nCardiac output，心輸出量；每分鐘打出的血量，CO = HR × SV。"
+            "先確認題目問的主題：每搏量（SV）／心輸出量（CO）",
+            "**每搏量（SV）｜每搏量（SV）**\n每搏量（Stroke volume），每搏量；一次心跳射出的血量，每搏量（SV） = 舒張末期容積（EDV） − 收縮末期容積（ESV）。\n\n**心輸出量（CO）｜心輸出量（CO）**\n心輸出量（Cardiac output），心輸出量；每分鐘打出的血量，心輸出量（CO） = 心率（HR） × 每搏量（SV）。",
+            "把判斷依據連回題目：**每搏量（SV）｜每搏量（SV）**\n每搏量（Stroke volume），每搏量；一次心跳射出的血量，每搏量（SV） = 舒張末期容積（EDV） − 收縮末期容積（ESV）。\n\n**心輸出量（CO）｜心輸出量（CO）**\n心輸出量（Cardiac output），心輸出量；每分鐘打出的血量，心輸出量（CO） = 心率（HR） × 每搏量（SV）。"
           ],
-          "answer": "**SV｜SV**\nStroke volume，每搏量；一次心跳射出的血量，SV = EDV − ESV。\n\n**CO｜CO**\nCardiac output，心輸出量；每分鐘打出的血量，CO = HR × SV。"
+          "answer": "**每搏量（SV）｜每搏量（SV）**\n每搏量（Stroke volume），每搏量；一次心跳射出的血量，每搏量（SV） = 舒張末期容積（EDV） − 收縮末期容積（ESV）。\n\n**心輸出量（CO）｜心輸出量（CO）**\n心輸出量（Cardiac output），心輸出量；每分鐘打出的血量，心輸出量（CO） = 心率（HR） × 每搏量（SV）。"
         },
         {
           "type": "practice",
@@ -356,17 +377,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「EDV／ESV」，並說出一個判斷依據。",
-              "answer": "**EDV｜EDV**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**ESV｜ESV**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。",
+              "q": "用自己的話說明「舒張末期容積（EDV）／收縮末期容積（ESV）」，並說出一個判斷依據。",
+              "answer": "**舒張末期容積（EDV）｜舒張末期容積（EDV）**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**收縮末期容積（ESV）｜收縮末期容積（ESV）**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**EDV｜EDV**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**ESV｜ESV**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。"
+              "explain": "**舒張末期容積（EDV）｜舒張末期容積（EDV）**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**收縮末期容積（ESV）｜收縮末期容積（ESV）**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。",
+              "id": "c644c7406"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「SV／CO」，並說出一個判斷依據。",
-              "answer": "**SV｜SV**\nStroke volume，每搏量；一次心跳射出的血量，SV = EDV − ESV。\n\n**CO｜CO**\nCardiac output，心輸出量；每分鐘打出的血量，CO = HR × SV。",
+              "q": "用自己的話說明「每搏量（SV）／心輸出量（CO）」，並說出一個判斷依據。",
+              "answer": "**每搏量（SV）｜每搏量（SV）**\n每搏量（Stroke volume），每搏量；一次心跳射出的血量，每搏量（SV） = 舒張末期容積（EDV） − 收縮末期容積（ESV）。\n\n**心輸出量（CO）｜心輸出量（CO）**\n心輸出量（Cardiac output），心輸出量；每分鐘打出的血量，心輸出量（CO） = 心率（HR） × 每搏量（SV）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**SV｜SV**\nStroke volume，每搏量；一次心跳射出的血量，SV = EDV − ESV。\n\n**CO｜CO**\nCardiac output，心輸出量；每分鐘打出的血量，CO = HR × SV。"
+              "explain": "**每搏量（SV）｜每搏量（SV）**\n每搏量（Stroke volume），每搏量；一次心跳射出的血量，每搏量（SV） = 舒張末期容積（EDV） − 收縮末期容積（ESV）。\n\n**心輸出量（CO）｜心輸出量（CO）**\n心輸出量（Cardiac output），心輸出量；每分鐘打出的血量，心輸出量（CO） = 心率（HR） × 每搏量（SV）。",
+              "id": "c2ebacb07"
             }
           ]
         },
@@ -374,27 +397,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "afterload／contractility：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "EDV／ESV：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**afterload｜afterload**\n後負荷；心室把血推出去時面對的阻力。\n\n**contractility｜contractility**\n收縮力；在相同裝血量下，心肌本身能擠多用力。",
-            "**EDV｜EDV**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**ESV｜ESV**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。"
+            "後負荷（afterload）／收縮力（contractility）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "舒張末期容積（EDV）／收縮末期容積（ESV）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**後負荷（afterload）｜後負荷（afterload）**\n後負荷；心室把血推出去時面對的阻力。\n\n**收縮力（contractility）｜收縮力（contractility）**\n收縮力；在相同裝血量下，心肌本身能擠多用力。",
+            "**舒張末期容積（EDV）｜舒張末期容積（EDV）**\nEnd-diastolic volume，舒張末期容積；心室裝最滿時的血量。\n\n**收縮末期容積（ESV）｜收縮末期容積（ESV）**\nEnd-systolic volume，收縮末期容積；射血後剩下的血量。"
           ],
           "flash": [
             {
-              "front": "afterload／contractility",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "後負荷（afterload）／收縮力（contractility）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f9659c7c4"
             },
             {
-              "front": "EDV／ESV",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "舒張末期容積（EDV）／收縮末期容積（ESV）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f2ff0f6d0"
             },
             {
-              "front": "SV／CO",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "每搏量（SV）／心輸出量（CO）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fef4a34e7"
             },
             {
-              "front": "用自己的話說明「afterload／contractility」，並說出一個判斷依據。",
-              "back": "**afterload｜afterload**\n後負荷；心室把血推出去時面對的阻力。\n\n**contractility｜contractility**\n收縮力；在相同裝血量下，心肌本身能擠多用力。"
+              "front": "用自己的話說明「後負荷（afterload）／收縮力（contractility）」，並說出一個判斷依據。",
+              "back": "**後負荷（afterload）｜後負荷（afterload）**\n後負荷；心室把血推出去時面對的阻力。\n\n**收縮力（contractility）｜收縮力（contractility）**\n收縮力；在相同裝血量下，心肌本身能擠多用力。",
+              "id": "f35ae8a6b"
             }
           ]
         }
@@ -404,9 +431,9 @@
       "id": "terms-4-1",
       "title": "中英文核心名詞 4",
       "goals": [
-        "解釋GFR／RPF",
-        "解釋clearance／nephron",
-        "解釋JGA／RAAS"
+        "解釋腎絲球過濾率（GFR）／腎血漿流量（RPF）",
+        "解釋清除率（clearance）／腎元（nephron）",
+        "解釋腎絲球旁器（JGA）／腎素－血管張力素－醛固酮系統（RAAS）"
       ],
       "steps": [
         {
@@ -416,8 +443,8 @@
         },
         {
           "type": "card",
-          "title": "GFR／RPF",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**GFR｜GFR**\nGlomerular filtration rate，腎絲球過濾率；每分鐘產生多少濾液。\n\n**RPF｜RPF**\nRenal plasma flow，腎血漿流量；每分鐘送到腎臟的血漿量。",
+          "title": "腎絲球過濾率（GFR）／腎血漿流量（RPF）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**腎絲球過濾率（GFR）｜腎絲球過濾率**\nGlomerular 濾過（filtration） rate，腎絲球過濾率；每分鐘產生多少濾液。\n\n**腎血漿流量（RPF）｜腎血漿流量**\nRenal plasma flow，腎血漿流量；每分鐘送到腎臟的血漿量。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -426,15 +453,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「GFR／RPF」，並說出一個判斷依據。",
-          "answer": "**GFR｜GFR**\nGlomerular filtration rate，腎絲球過濾率；每分鐘產生多少濾液。\n\n**RPF｜RPF**\nRenal plasma flow，腎血漿流量；每分鐘送到腎臟的血漿量。",
+          "q": "用自己的話說明「腎絲球過濾率（GFR）／腎血漿流量（RPF）」，並說出一個判斷依據。",
+          "answer": "**腎絲球過濾率（GFR）｜腎絲球過濾率（GFR）**\nGlomerular 濾過（filtration） rate，腎絲球過濾率；每分鐘產生多少濾液。\n\n**腎血漿流量（RPF）｜腎血漿流量（RPF）**\nRenal plasma flow，腎血漿流量；每分鐘送到腎臟的血漿量。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**GFR｜GFR**\nGlomerular filtration rate，腎絲球過濾率；每分鐘產生多少濾液。\n\n**RPF｜RPF**\nRenal plasma flow，腎血漿流量；每分鐘送到腎臟的血漿量。"
+          "explain": "**腎絲球過濾率（GFR）｜腎絲球過濾率（GFR）**\nGlomerular 濾過（filtration） rate，腎絲球過濾率；每分鐘產生多少濾液。\n\n**腎血漿流量（RPF）｜腎血漿流量（RPF）**\nRenal plasma flow，腎血漿流量；每分鐘送到腎臟的血漿量。",
+          "id": "c5e42b845"
         },
         {
           "type": "card",
-          "title": "clearance／nephron",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**clearance｜clearance**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**nephron｜nephron**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。",
+          "title": "清除率（clearance）／腎元（nephron）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**清除率（clearance）｜清除率**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**腎元（nephron）｜腎元**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -443,15 +471,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「clearance／nephron」，並說出一個判斷依據。",
-          "answer": "**clearance｜clearance**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**nephron｜nephron**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。",
+          "q": "用自己的話說明「清除率（clearance）／腎元（nephron）」，並說出一個判斷依據。",
+          "answer": "**清除率（clearance）｜清除率（clearance）**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**腎元（nephron）｜腎元（nephron）**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**clearance｜clearance**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**nephron｜nephron**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。"
+          "explain": "**清除率（clearance）｜清除率（clearance）**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**腎元（nephron）｜腎元（nephron）**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。",
+          "id": "c358886ff"
         },
         {
           "type": "card",
-          "title": "JGA／RAAS",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**JGA｜JGA**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 NaCl，控制 renin。\n\n**RAAS｜RAAS**\nRenin–angiotensin–aldosterone system；低血壓時啟動的保水、保鈉、升壓系統。",
+          "title": "腎絲球旁器（JGA）／腎素－血管張力素－醛固酮系統（RAAS）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**腎絲球旁器（JGA）｜腎絲球旁器**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 氯化鈉（NaCl），控制 腎素（renin）。\n\n**腎素－血管張力素－醛固酮系統（RAAS）｜腎素－血管張力素－醛固酮系統**\n腎素–angiotensin–醛固酮（aldosterone） system；低血壓時啟動的保水、保鈉、升壓系統。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -460,21 +489,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「JGA／RAAS」，並說出一個判斷依據。",
-          "answer": "**JGA｜JGA**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 NaCl，控制 renin。\n\n**RAAS｜RAAS**\nRenin–angiotensin–aldosterone system；低血壓時啟動的保水、保鈉、升壓系統。",
+          "q": "用自己的話說明「腎絲球旁器（JGA）／腎素－血管張力素－醛固酮系統（RAAS）」，並說出一個判斷依據。",
+          "answer": "**腎絲球旁器（JGA）｜腎絲球旁器（JGA）**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 氯化鈉（NaCl），控制 腎素（renin）。\n\n**腎素－血管張力素－醛固酮系統（RAAS）｜腎素－血管張力素－醛固酮系統（RAAS）**\n腎素（Renin）–angiotensin–醛固酮（aldosterone） system；低血壓時啟動的保水、保鈉、升壓系統。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**JGA｜JGA**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 NaCl，控制 renin。\n\n**RAAS｜RAAS**\nRenin–angiotensin–aldosterone system；低血壓時啟動的保水、保鈉、升壓系統。"
+          "explain": "**腎絲球旁器（JGA）｜腎絲球旁器（JGA）**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 氯化鈉（NaCl），控制 腎素（renin）。\n\n**腎素－血管張力素－醛固酮系統（RAAS）｜腎素－血管張力素－醛固酮系統（RAAS）**\n腎素（Renin）–angiotensin–醛固酮（aldosterone） system；低血壓時啟動的保水、保鈉、升壓系統。",
+          "id": "c837ffece"
         },
         {
           "type": "example",
-          "title": "範例拆解：JGA／RAAS",
-          "problem": "用自己的話說明「JGA／RAAS」，並說出一個判斷依據。",
+          "title": "範例拆解：腎絲球旁器（JGA）／腎素－血管張力素－醛固酮系統（RAAS）",
+          "problem": "用自己的話說明「腎絲球旁器（JGA）／腎素－血管張力素－醛固酮系統（RAAS）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：JGA／RAAS",
-            "**JGA｜JGA**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 NaCl，控制 renin。\n\n**RAAS｜RAAS**\nRenin–angiotensin–aldosterone system；低血壓時啟動的保水、保鈉、升壓系統。",
-            "把判斷依據連回題目：**JGA｜JGA**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 NaCl，控制 renin。\n\n**RAAS｜RAAS**\nRenin–angiotensin–aldosterone system；低血壓時啟動的保水、保鈉、升壓系統。"
+            "先確認題目問的主題：腎絲球旁器（JGA）／腎素－血管張力素－醛固酮系統（RAAS）",
+            "**腎絲球旁器（JGA）｜腎絲球旁器（JGA）**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 氯化鈉（NaCl），控制 腎素（renin）。\n\n**腎素－血管張力素－醛固酮系統（RAAS）｜腎素－血管張力素－醛固酮系統（RAAS）**\n腎素（Renin）–angiotensin–醛固酮（aldosterone） system；低血壓時啟動的保水、保鈉、升壓系統。",
+            "把判斷依據連回題目：**腎絲球旁器（JGA）｜腎絲球旁器（JGA）**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 氯化鈉（NaCl），控制 腎素（renin）。\n\n**腎素－血管張力素－醛固酮系統（RAAS）｜腎素－血管張力素－醛固酮系統（RAAS）**\n腎素（Renin）–angiotensin–醛固酮（aldosterone） system；低血壓時啟動的保水、保鈉、升壓系統。"
           ],
-          "answer": "**JGA｜JGA**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 NaCl，控制 renin。\n\n**RAAS｜RAAS**\nRenin–angiotensin–aldosterone system；低血壓時啟動的保水、保鈉、升壓系統。"
+          "answer": "**腎絲球旁器（JGA）｜腎絲球旁器（JGA）**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 氯化鈉（NaCl），控制 腎素（renin）。\n\n**腎素－血管張力素－醛固酮系統（RAAS）｜腎素－血管張力素－醛固酮系統（RAAS）**\n腎素（Renin）–angiotensin–醛固酮（aldosterone） system；低血壓時啟動的保水、保鈉、升壓系統。"
         },
         {
           "type": "practice",
@@ -483,17 +513,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「clearance／nephron」，並說出一個判斷依據。",
-              "answer": "**clearance｜clearance**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**nephron｜nephron**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。",
+              "q": "用自己的話說明「清除率（clearance）／腎元（nephron）」，並說出一個判斷依據。",
+              "answer": "**清除率（clearance）｜清除率（clearance）**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**腎元（nephron）｜腎元（nephron）**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**clearance｜clearance**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**nephron｜nephron**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。"
+              "explain": "**清除率（clearance）｜清除率（clearance）**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**腎元（nephron）｜腎元（nephron）**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。",
+              "id": "c358886ff"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「JGA／RAAS」，並說出一個判斷依據。",
-              "answer": "**JGA｜JGA**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 NaCl，控制 renin。\n\n**RAAS｜RAAS**\nRenin–angiotensin–aldosterone system；低血壓時啟動的保水、保鈉、升壓系統。",
+              "q": "用自己的話說明「腎絲球旁器（JGA）／腎素－血管張力素－醛固酮系統（RAAS）」，並說出一個判斷依據。",
+              "answer": "**腎絲球旁器（JGA）｜腎絲球旁器（JGA）**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 氯化鈉（NaCl），控制 腎素（renin）。\n\n**腎素－血管張力素－醛固酮系統（RAAS）｜腎素－血管張力素－醛固酮系統（RAAS）**\n腎素（Renin）–angiotensin–醛固酮（aldosterone） system；低血壓時啟動的保水、保鈉、升壓系統。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**JGA｜JGA**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 NaCl，控制 renin。\n\n**RAAS｜RAAS**\nRenin–angiotensin–aldosterone system；低血壓時啟動的保水、保鈉、升壓系統。"
+              "explain": "**腎絲球旁器（JGA）｜腎絲球旁器（JGA）**\nJuxtaglomerular apparatus，腎絲球旁器；偵測壓力與 氯化鈉（NaCl），控制 腎素（renin）。\n\n**腎素－血管張力素－醛固酮系統（RAAS）｜腎素－血管張力素－醛固酮系統（RAAS）**\n腎素（Renin）–angiotensin–醛固酮（aldosterone） system；低血壓時啟動的保水、保鈉、升壓系統。",
+              "id": "c837ffece"
             }
           ]
         },
@@ -501,27 +533,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "GFR／RPF：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "clearance／nephron：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**GFR｜GFR**\nGlomerular filtration rate，腎絲球過濾率；每分鐘產生多少濾液。\n\n**RPF｜RPF**\nRenal plasma flow，腎血漿流量；每分鐘送到腎臟的血漿量。",
-            "**clearance｜clearance**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**nephron｜nephron**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。"
+            "腎絲球過濾率（GFR）／腎血漿流量（RPF）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "清除率（clearance）／腎元（nephron）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**腎絲球過濾率（GFR）｜腎絲球過濾率（GFR）**\nGlomerular 濾過（filtration） rate，腎絲球過濾率；每分鐘產生多少濾液。\n\n**腎血漿流量（RPF）｜腎血漿流量（RPF）**\nRenal plasma flow，腎血漿流量；每分鐘送到腎臟的血漿量。",
+            "**清除率（clearance）｜清除率（clearance）**\n清除率；想像每分鐘有多少 mL 血漿被完全清掉某物質。\n\n**腎元（nephron）｜腎元（nephron）**\n腎元；腎臟做過濾、回收、分泌的基本工作單位。"
           ],
           "flash": [
             {
-              "front": "GFR／RPF",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "腎絲球過濾率（GFR）／腎血漿流量（RPF）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f90876ce3"
             },
             {
-              "front": "clearance／nephron",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "清除率（clearance）／腎元（nephron）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f1ad4e421"
             },
             {
-              "front": "JGA／RAAS",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "腎絲球旁器（JGA）／腎素－血管張力素－醛固酮系統（RAAS）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "faf6f8f1e"
             },
             {
-              "front": "用自己的話說明「GFR／RPF」，並說出一個判斷依據。",
-              "back": "**GFR｜GFR**\nGlomerular filtration rate，腎絲球過濾率；每分鐘產生多少濾液。\n\n**RPF｜RPF**\nRenal plasma flow，腎血漿流量；每分鐘送到腎臟的血漿量。"
+              "front": "用自己的話說明「腎絲球過濾率（GFR）／腎血漿流量（RPF）」，並說出一個判斷依據。",
+              "back": "**腎絲球過濾率（GFR）｜腎絲球過濾率（GFR）**\nGlomerular 濾過（filtration） rate，腎絲球過濾率；每分鐘產生多少濾液。\n\n**腎血漿流量（RPF）｜腎血漿流量（RPF）**\nRenal plasma flow，腎血漿流量；每分鐘送到腎臟的血漿量。",
+              "id": "f5e42b845"
             }
           ]
         }
@@ -531,9 +567,9 @@
       "id": "terms-5-1",
       "title": "中英文核心名詞 5",
       "goals": [
-        "解釋renin／Ang II",
-        "解釋aldosterone／CNS",
-        "解釋PNS／afferent"
+        "解釋腎素（renin）／血管張力素 II（Ang II）",
+        "解釋醛固酮（aldosterone）／中樞神經系統（CNS）",
+        "解釋周邊神經系統（PNS）／傳入（afferent）"
       ],
       "steps": [
         {
@@ -543,8 +579,8 @@
         },
         {
           "type": "card",
-          "title": "renin／Ang II",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**renin｜renin**\n腎素；RAAS 的第一個開關，由 JG cells 釋放。\n\n**Ang II｜Ang II**\nAngiotensin II；讓血管收縮、促進 aldosterone，幫忙升血壓。",
+          "title": "腎素（renin）／血管張力素 II（Ang II）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**腎素（renin）｜腎素**\n腎素；腎素－血管張力素－醛固酮系統（RAAS） 的第一個開關，由 腎絲球旁細胞（JG cells） 釋放。\n\n**血管張力素 II（Ang II）｜血管張力素 II**\n血管張力素 II（Angiotensin II）；讓血管收縮、促進 醛固酮（aldosterone），幫忙升血壓。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -553,15 +589,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「renin／Ang II」，並說出一個判斷依據。",
-          "answer": "**renin｜renin**\n腎素；RAAS 的第一個開關，由 JG cells 釋放。\n\n**Ang II｜Ang II**\nAngiotensin II；讓血管收縮、促進 aldosterone，幫忙升血壓。",
+          "q": "用自己的話說明「腎素（renin）／血管張力素 II（Ang II）」，並說出一個判斷依據。",
+          "answer": "**腎素（renin）｜腎素（renin）**\n腎素；腎素－血管張力素－醛固酮系統（RAAS） 的第一個開關，由 腎絲球旁細胞（JG cells） 釋放。\n\n**血管張力素 II（Ang II）｜血管張力素 II（Ang II）**\n血管張力素 II（Angiotensin II）；讓血管收縮、促進 醛固酮（aldosterone），幫忙升血壓。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**renin｜renin**\n腎素；RAAS 的第一個開關，由 JG cells 釋放。\n\n**Ang II｜Ang II**\nAngiotensin II；讓血管收縮、促進 aldosterone，幫忙升血壓。"
+          "explain": "**腎素（renin）｜腎素（renin）**\n腎素；腎素－血管張力素－醛固酮系統（RAAS） 的第一個開關，由 腎絲球旁細胞（JG cells） 釋放。\n\n**血管張力素 II（Ang II）｜血管張力素 II（Ang II）**\n血管張力素 II（Angiotensin II）；讓血管收縮、促進 醛固酮（aldosterone），幫忙升血壓。",
+          "id": "ce6d6a8b3"
         },
         {
           "type": "card",
-          "title": "aldosterone／CNS",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**aldosterone｜aldosterone**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**CNS｜CNS**\nCentral nervous system，中樞神經系統；brain + spinal cord。",
+          "title": "醛固酮（aldosterone）／中樞神經系統（CNS）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**醛固酮（aldosterone）｜醛固酮**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**中樞神經系統（CNS）｜中樞神經系統**\n中樞神經系統（Central nervous system），中樞神經系統；腦（brain） + 脊髓（spinal cord）。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -570,15 +607,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「aldosterone／CNS」，並說出一個判斷依據。",
-          "answer": "**aldosterone｜aldosterone**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**CNS｜CNS**\nCentral nervous system，中樞神經系統；brain + spinal cord。",
+          "q": "用自己的話說明「醛固酮（aldosterone）／中樞神經系統（CNS）」，並說出一個判斷依據。",
+          "answer": "**醛固酮（aldosterone）｜醛固酮（aldosterone）**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**中樞神經系統（CNS）｜中樞神經系統（CNS）**\n中樞神經系統（Central nervous system），中樞神經系統；腦（brain） + 脊髓（spinal cord）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**aldosterone｜aldosterone**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**CNS｜CNS**\nCentral nervous system，中樞神經系統；brain + spinal cord。"
+          "explain": "**醛固酮（aldosterone）｜醛固酮（aldosterone）**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**中樞神經系統（CNS）｜中樞神經系統（CNS）**\n中樞神經系統（Central nervous system），中樞神經系統；腦（brain） + 脊髓（spinal cord）。",
+          "id": "c76aac738"
         },
         {
           "type": "card",
-          "title": "PNS／afferent",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**PNS｜PNS**\nPeripheral nervous system，周邊神經系統；中樞以外的神經部分。\n\n**afferent｜afferent**\n傳入；把感覺資訊送到 CNS。記 A = Arrives。",
+          "title": "周邊神經系統（PNS）／傳入（afferent）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**周邊神經系統（PNS）｜周邊神經系統**\n周邊神經系統（Peripheral nervous system），周邊神經系統；中樞以外的神經部分。\n\n**傳入（afferent）｜傳入**\n傳入；把感覺資訊送到 中樞神經系統（CNS）。記 A = 到達（Arrives）。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -587,21 +625,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「PNS／afferent」，並說出一個判斷依據。",
-          "answer": "**PNS｜PNS**\nPeripheral nervous system，周邊神經系統；中樞以外的神經部分。\n\n**afferent｜afferent**\n傳入；把感覺資訊送到 CNS。記 A = Arrives。",
+          "q": "用自己的話說明「周邊神經系統（PNS）／傳入（afferent）」，並說出一個判斷依據。",
+          "answer": "**周邊神經系統（PNS）｜周邊神經系統（PNS）**\n周邊神經系統（Peripheral nervous system），周邊神經系統；中樞以外的神經部分。\n\n**傳入（afferent）｜傳入（afferent）**\n傳入；把感覺資訊送到 中樞神經系統（CNS）。記 A = 到達（Arrives）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**PNS｜PNS**\nPeripheral nervous system，周邊神經系統；中樞以外的神經部分。\n\n**afferent｜afferent**\n傳入；把感覺資訊送到 CNS。記 A = Arrives。"
+          "explain": "**周邊神經系統（PNS）｜周邊神經系統（PNS）**\n周邊神經系統（Peripheral nervous system），周邊神經系統；中樞以外的神經部分。\n\n**傳入（afferent）｜傳入（afferent）**\n傳入；把感覺資訊送到 中樞神經系統（CNS）。記 A = 到達（Arrives）。",
+          "id": "c3b474d2d"
         },
         {
           "type": "example",
-          "title": "範例拆解：PNS／afferent",
-          "problem": "用自己的話說明「PNS／afferent」，並說出一個判斷依據。",
+          "title": "範例拆解：周邊神經系統（PNS）／傳入（afferent）",
+          "problem": "用自己的話說明「周邊神經系統（PNS）／傳入（afferent）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：PNS／afferent",
-            "**PNS｜PNS**\nPeripheral nervous system，周邊神經系統；中樞以外的神經部分。\n\n**afferent｜afferent**\n傳入；把感覺資訊送到 CNS。記 A = Arrives。",
-            "把判斷依據連回題目：**PNS｜PNS**\nPeripheral nervous system，周邊神經系統；中樞以外的神經部分。\n\n**afferent｜afferent**\n傳入；把感覺資訊送到 CNS。記 A = Arrives。"
+            "先確認題目問的主題：周邊神經系統（PNS）／傳入（afferent）",
+            "**周邊神經系統（PNS）｜周邊神經系統（PNS）**\n周邊神經系統（Peripheral nervous system），周邊神經系統；中樞以外的神經部分。\n\n**傳入（afferent）｜傳入（afferent）**\n傳入；把感覺資訊送到 中樞神經系統（CNS）。記 A = 到達（Arrives）。",
+            "把判斷依據連回題目：**周邊神經系統（PNS）｜周邊神經系統（PNS）**\n周邊神經系統（Peripheral nervous system），周邊神經系統；中樞以外的神經部分。\n\n**傳入（afferent）｜傳入（afferent）**\n傳入；把感覺資訊送到 中樞神經系統（CNS）。記 A = 到達（Arrives）。"
           ],
-          "answer": "**PNS｜PNS**\nPeripheral nervous system，周邊神經系統；中樞以外的神經部分。\n\n**afferent｜afferent**\n傳入；把感覺資訊送到 CNS。記 A = Arrives。"
+          "answer": "**周邊神經系統（PNS）｜周邊神經系統（PNS）**\n周邊神經系統（Peripheral nervous system），周邊神經系統；中樞以外的神經部分。\n\n**傳入（afferent）｜傳入（afferent）**\n傳入；把感覺資訊送到 中樞神經系統（CNS）。記 A = 到達（Arrives）。"
         },
         {
           "type": "practice",
@@ -610,17 +649,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「aldosterone／CNS」，並說出一個判斷依據。",
-              "answer": "**aldosterone｜aldosterone**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**CNS｜CNS**\nCentral nervous system，中樞神經系統；brain + spinal cord。",
+              "q": "用自己的話說明「醛固酮（aldosterone）／中樞神經系統（CNS）」，並說出一個判斷依據。",
+              "answer": "**醛固酮（aldosterone）｜醛固酮（aldosterone）**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**中樞神經系統（CNS）｜中樞神經系統（CNS）**\n中樞神經系統（Central nervous system），中樞神經系統；腦（brain） + 脊髓（spinal cord）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**aldosterone｜aldosterone**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**CNS｜CNS**\nCentral nervous system，中樞神經系統；brain + spinal cord。"
+              "explain": "**醛固酮（aldosterone）｜醛固酮（aldosterone）**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**中樞神經系統（CNS）｜中樞神經系統（CNS）**\n中樞神經系統（Central nervous system），中樞神經系統；腦（brain） + 脊髓（spinal cord）。",
+              "id": "c76aac738"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「PNS／afferent」，並說出一個判斷依據。",
-              "answer": "**PNS｜PNS**\nPeripheral nervous system，周邊神經系統；中樞以外的神經部分。\n\n**afferent｜afferent**\n傳入；把感覺資訊送到 CNS。記 A = Arrives。",
+              "q": "用自己的話說明「周邊神經系統（PNS）／傳入（afferent）」，並說出一個判斷依據。",
+              "answer": "**周邊神經系統（PNS）｜周邊神經系統（PNS）**\n周邊神經系統（Peripheral nervous system），周邊神經系統；中樞以外的神經部分。\n\n**傳入（afferent）｜傳入（afferent）**\n傳入；把感覺資訊送到 中樞神經系統（CNS）。記 A = 到達（Arrives）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**PNS｜PNS**\nPeripheral nervous system，周邊神經系統；中樞以外的神經部分。\n\n**afferent｜afferent**\n傳入；把感覺資訊送到 CNS。記 A = Arrives。"
+              "explain": "**周邊神經系統（PNS）｜周邊神經系統（PNS）**\n周邊神經系統（Peripheral nervous system），周邊神經系統；中樞以外的神經部分。\n\n**傳入（afferent）｜傳入（afferent）**\n傳入；把感覺資訊送到 中樞神經系統（CNS）。記 A = 到達（Arrives）。",
+              "id": "c3b474d2d"
             }
           ]
         },
@@ -628,27 +669,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "renin／Ang II：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "aldosterone／CNS：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**renin｜renin**\n腎素；RAAS 的第一個開關，由 JG cells 釋放。\n\n**Ang II｜Ang II**\nAngiotensin II；讓血管收縮、促進 aldosterone，幫忙升血壓。",
-            "**aldosterone｜aldosterone**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**CNS｜CNS**\nCentral nervous system，中樞神經系統；brain + spinal cord。"
+            "腎素（renin）／血管張力素 II（Ang II）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "醛固酮（aldosterone）／中樞神經系統（CNS）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**腎素（renin）｜腎素（renin）**\n腎素；腎素－血管張力素－醛固酮系統（RAAS） 的第一個開關，由 腎絲球旁細胞（JG cells） 釋放。\n\n**血管張力素 II（Ang II）｜血管張力素 II（Ang II）**\n血管張力素 II（Angiotensin II）；讓血管收縮、促進 醛固酮（aldosterone），幫忙升血壓。",
+            "**醛固酮（aldosterone）｜醛固酮（aldosterone）**\n醛固酮；叫腎臟留 Na⁺、水，並排 K⁺。\n\n**中樞神經系統（CNS）｜中樞神經系統（CNS）**\n中樞神經系統（Central nervous system），中樞神經系統；腦（brain） + 脊髓（spinal cord）。"
           ],
           "flash": [
             {
-              "front": "renin／Ang II",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "腎素（renin）／血管張力素 II（Ang II）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f2412a22f"
             },
             {
-              "front": "aldosterone／CNS",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "醛固酮（aldosterone）／中樞神經系統（CNS）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f6da4e5f1"
             },
             {
-              "front": "PNS／afferent",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "周邊神經系統（PNS）／傳入（afferent）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f20b2ed03"
             },
             {
-              "front": "用自己的話說明「renin／Ang II」，並說出一個判斷依據。",
-              "back": "**renin｜renin**\n腎素；RAAS 的第一個開關，由 JG cells 釋放。\n\n**Ang II｜Ang II**\nAngiotensin II；讓血管收縮、促進 aldosterone，幫忙升血壓。"
+              "front": "用自己的話說明「腎素（renin）／血管張力素 II（Ang II）」，並說出一個判斷依據。",
+              "back": "**腎素（renin）｜腎素（renin）**\n腎素；腎素－血管張力素－醛固酮系統（RAAS） 的第一個開關，由 腎絲球旁細胞（JG cells） 釋放。\n\n**血管張力素 II（Ang II）｜血管張力素 II（Ang II）**\n血管張力素 II（Angiotensin II）；讓血管收縮、促進 醛固酮（aldosterone），幫忙升血壓。",
+              "id": "fe6d6a8b3"
             }
           ]
         }
@@ -658,9 +703,9 @@
       "id": "terms-6-1",
       "title": "中英文核心名詞 6",
       "goals": [
-        "解釋efferent／neuron",
-        "解釋glia／myelin",
-        "解釋action potential／BBB"
+        "解釋傳出（efferent）／神經元（neuron）",
+        "解釋膠質細胞（glia）／髓鞘（myelin）",
+        "解釋動作電位（action potential）／血腦障壁（BBB）"
       ],
       "steps": [
         {
@@ -670,8 +715,8 @@
         },
         {
           "type": "card",
-          "title": "efferent／neuron",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**efferent｜efferent**\n傳出；把命令從 CNS 送出去。記 E = Exits。\n\n**neuron｜neuron**\n神經元；負責接收、處理與傳遞訊號的細胞。",
+          "title": "傳出（efferent）／神經元（neuron）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**傳出（efferent）｜傳出**\n傳出；把命令從 中樞神經系統（CNS） 送出去。記 E = 離開（Exits）。\n\n**神經元（neuron）｜神經元**\n神經元；負責接收、處理與傳遞訊號的細胞。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -680,15 +725,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「efferent／neuron」，並說出一個判斷依據。",
-          "answer": "**efferent｜efferent**\n傳出；把命令從 CNS 送出去。記 E = Exits。\n\n**neuron｜neuron**\n神經元；負責接收、處理與傳遞訊號的細胞。",
+          "q": "用自己的話說明「傳出（efferent）／神經元（neuron）」，並說出一個判斷依據。",
+          "answer": "**傳出（efferent）｜傳出（efferent）**\n傳出；把命令從 中樞神經系統（CNS） 送出去。記 E = 離開（Exits）。\n\n**神經元（neuron）｜神經元（neuron）**\n神經元；負責接收、處理與傳遞訊號的細胞。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**efferent｜efferent**\n傳出；把命令從 CNS 送出去。記 E = Exits。\n\n**neuron｜neuron**\n神經元；負責接收、處理與傳遞訊號的細胞。"
+          "explain": "**傳出（efferent）｜傳出（efferent）**\n傳出；把命令從 中樞神經系統（CNS） 送出去。記 E = 離開（Exits）。\n\n**神經元（neuron）｜神經元（neuron）**\n神經元；負責接收、處理與傳遞訊號的細胞。",
+          "id": "c226765a1"
         },
         {
           "type": "card",
-          "title": "glia／myelin",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**glia｜glia**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**myelin｜myelin**\n髓鞘；包住 axon 的絕緣層，讓訊號跳著跑、跑更快。",
+          "title": "膠質細胞（glia）／髓鞘（myelin）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**膠質細胞（glia）｜膠質細胞**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**髓鞘（myelin）｜髓鞘**\n髓鞘；包住 軸突（axon） 的絕緣層，讓訊號跳著跑、跑更快。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -697,15 +743,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「glia／myelin」，並說出一個判斷依據。",
-          "answer": "**glia｜glia**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**myelin｜myelin**\n髓鞘；包住 axon 的絕緣層，讓訊號跳著跑、跑更快。",
+          "q": "用自己的話說明「膠質細胞（glia）／髓鞘（myelin）」，並說出一個判斷依據。",
+          "answer": "**膠質細胞（glia）｜膠質細胞（glia）**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**髓鞘（myelin）｜髓鞘（myelin）**\n髓鞘；包住 軸突（axon） 的絕緣層，讓訊號跳著跑、跑更快。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**glia｜glia**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**myelin｜myelin**\n髓鞘；包住 axon 的絕緣層，讓訊號跳著跑、跑更快。"
+          "explain": "**膠質細胞（glia）｜膠質細胞（glia）**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**髓鞘（myelin）｜髓鞘（myelin）**\n髓鞘；包住 軸突（axon） 的絕緣層，讓訊號跳著跑、跑更快。",
+          "id": "ccc222781"
         },
         {
           "type": "card",
-          "title": "action potential／BBB",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**action potential｜action potential**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**BBB｜BBB**\nBlood–brain barrier，血腦障壁；保護 CNS、限制許多物質進入。",
+          "title": "動作電位（action potential）／血腦障壁（BBB）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**動作電位（action potential）｜動作電位**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**血腦障壁（BBB）｜血腦障壁**\nBlood–腦（brain） 障壁（barrier），血腦障壁；保護 中樞神經系統（CNS）、限制許多物質進入。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -714,21 +761,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「action potential／BBB」，並說出一個判斷依據。",
-          "answer": "**action potential｜action potential**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**BBB｜BBB**\nBlood–brain barrier，血腦障壁；保護 CNS、限制許多物質進入。",
+          "q": "用自己的話說明「動作電位（action potential）／血腦障壁（BBB）」，並說出一個判斷依據。",
+          "answer": "**動作電位（action potential）｜動作電位（action potential）**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**血腦障壁（BBB）｜血腦障壁（BBB）**\nBlood–腦（brain） 障壁（barrier），血腦障壁；保護 中樞神經系統（CNS）、限制許多物質進入。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**action potential｜action potential**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**BBB｜BBB**\nBlood–brain barrier，血腦障壁；保護 CNS、限制許多物質進入。"
+          "explain": "**動作電位（action potential）｜動作電位（action potential）**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**血腦障壁（BBB）｜血腦障壁（BBB）**\nBlood–腦（brain） 障壁（barrier），血腦障壁；保護 中樞神經系統（CNS）、限制許多物質進入。",
+          "id": "c54f911a4"
         },
         {
           "type": "example",
-          "title": "範例拆解：action potential／BBB",
-          "problem": "用自己的話說明「action potential／BBB」，並說出一個判斷依據。",
+          "title": "範例拆解：動作電位（action potential）／血腦障壁（BBB）",
+          "problem": "用自己的話說明「動作電位（action potential）／血腦障壁（BBB）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：action potential／BBB",
-            "**action potential｜action potential**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**BBB｜BBB**\nBlood–brain barrier，血腦障壁；保護 CNS、限制許多物質進入。",
-            "把判斷依據連回題目：**action potential｜action potential**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**BBB｜BBB**\nBlood–brain barrier，血腦障壁；保護 CNS、限制許多物質進入。"
+            "先確認題目問的主題：動作電位（action potential）／血腦障壁（BBB）",
+            "**動作電位（action potential）｜動作電位（action potential）**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**血腦障壁（BBB）｜血腦障壁（BBB）**\nBlood–腦（brain） 障壁（barrier），血腦障壁；保護 中樞神經系統（CNS）、限制許多物質進入。",
+            "把判斷依據連回題目：**動作電位（action potential）｜動作電位（action potential）**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**血腦障壁（BBB）｜血腦障壁（BBB）**\nBlood–腦（brain） 障壁（barrier），血腦障壁；保護 中樞神經系統（CNS）、限制許多物質進入。"
           ],
-          "answer": "**action potential｜action potential**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**BBB｜BBB**\nBlood–brain barrier，血腦障壁；保護 CNS、限制許多物質進入。"
+          "answer": "**動作電位（action potential）｜動作電位（action potential）**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**血腦障壁（BBB）｜血腦障壁（BBB）**\nBlood–腦（brain） 障壁（barrier），血腦障壁；保護 中樞神經系統（CNS）、限制許多物質進入。"
         },
         {
           "type": "practice",
@@ -737,17 +785,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「glia／myelin」，並說出一個判斷依據。",
-              "answer": "**glia｜glia**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**myelin｜myelin**\n髓鞘；包住 axon 的絕緣層，讓訊號跳著跑、跑更快。",
+              "q": "用自己的話說明「膠質細胞（glia）／髓鞘（myelin）」，並說出一個判斷依據。",
+              "answer": "**膠質細胞（glia）｜膠質細胞（glia）**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**髓鞘（myelin）｜髓鞘（myelin）**\n髓鞘；包住 軸突（axon） 的絕緣層，讓訊號跳著跑、跑更快。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**glia｜glia**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**myelin｜myelin**\n髓鞘；包住 axon 的絕緣層，讓訊號跳著跑、跑更快。"
+              "explain": "**膠質細胞（glia）｜膠質細胞（glia）**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**髓鞘（myelin）｜髓鞘（myelin）**\n髓鞘；包住 軸突（axon） 的絕緣層，讓訊號跳著跑、跑更快。",
+              "id": "ccc222781"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「action potential／BBB」，並說出一個判斷依據。",
-              "answer": "**action potential｜action potential**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**BBB｜BBB**\nBlood–brain barrier，血腦障壁；保護 CNS、限制許多物質進入。",
+              "q": "用自己的話說明「動作電位（action potential）／血腦障壁（BBB）」，並說出一個判斷依據。",
+              "answer": "**動作電位（action potential）｜動作電位（action potential）**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**血腦障壁（BBB）｜血腦障壁（BBB）**\nBlood–腦（brain） 障壁（barrier），血腦障壁；保護 中樞神經系統（CNS）、限制許多物質進入。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**action potential｜action potential**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**BBB｜BBB**\nBlood–brain barrier，血腦障壁；保護 CNS、限制許多物質進入。"
+              "explain": "**動作電位（action potential）｜動作電位（action potential）**\n動作電位；細胞沿膜傳遞的一次全有全無電訊號。\n\n**血腦障壁（BBB）｜血腦障壁（BBB）**\nBlood–腦（brain） 障壁（barrier），血腦障壁；保護 中樞神經系統（CNS）、限制許多物質進入。",
+              "id": "c54f911a4"
             }
           ]
         },
@@ -755,27 +805,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "efferent／neuron：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "glia／myelin：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**efferent｜efferent**\n傳出；把命令從 CNS 送出去。記 E = Exits。\n\n**neuron｜neuron**\n神經元；負責接收、處理與傳遞訊號的細胞。",
-            "**glia｜glia**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**myelin｜myelin**\n髓鞘；包住 axon 的絕緣層，讓訊號跳著跑、跑更快。"
+            "傳出（efferent）／神經元（neuron）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "膠質細胞（glia）／髓鞘（myelin）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**傳出（efferent）｜傳出（efferent）**\n傳出；把命令從 中樞神經系統（CNS） 送出去。記 E = 離開（Exits）。\n\n**神經元（neuron）｜神經元（neuron）**\n神經元；負責接收、處理與傳遞訊號的細胞。",
+            "**膠質細胞（glia）｜膠質細胞（glia）**\n膠質細胞；負責支援、保護、髓鞘、免疫與環境維持。\n\n**髓鞘（myelin）｜髓鞘（myelin）**\n髓鞘；包住 軸突（axon） 的絕緣層，讓訊號跳著跑、跑更快。"
           ],
           "flash": [
             {
-              "front": "efferent／neuron",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "傳出（efferent）／神經元（neuron）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f8023bbd3"
             },
             {
-              "front": "glia／myelin",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "膠質細胞（glia）／髓鞘（myelin）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "ff1971339"
             },
             {
-              "front": "action potential／BBB",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "動作電位（action potential）／血腦障壁（BBB）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "ff7dbb3dd"
             },
             {
-              "front": "用自己的話說明「efferent／neuron」，並說出一個判斷依據。",
-              "back": "**efferent｜efferent**\n傳出；把命令從 CNS 送出去。記 E = Exits。\n\n**neuron｜neuron**\n神經元；負責接收、處理與傳遞訊號的細胞。"
+              "front": "用自己的話說明「傳出（efferent）／神經元（neuron）」，並說出一個判斷依據。",
+              "back": "**傳出（efferent）｜傳出（efferent）**\n傳出；把命令從 中樞神經系統（CNS） 送出去。記 E = 離開（Exits）。\n\n**神經元（neuron）｜神經元（neuron）**\n神經元；負責接收、處理與傳遞訊號的細胞。",
+              "id": "f226765a1"
             }
           ]
         }

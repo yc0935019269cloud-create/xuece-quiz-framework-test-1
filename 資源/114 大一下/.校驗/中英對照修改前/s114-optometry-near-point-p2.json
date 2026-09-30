@@ -1,0 +1,400 @@
+{
+  "schema": "xd-learn/1",
+  "id": "s114-optometry-near-point-p2",
+  "subject": "optometry",
+  "unit": "第09單元 近點調節 NPA 與近點聚合 NPC",
+  "path": [
+    "114 大一下",
+    "114 學年度",
+    "視光學",
+    "第09單元 近點調節 NPA 與近點聚合 NPC"
+  ],
+  "title": "近點調節 NPA 與近點聚合 NPC（2）",
+  "desc": "完整教材拆成概念、即時檢核與實戰；來源：https://frabjous-druid-ff547a.netlify.app/",
+  "level": 2,
+  "minutes": 45,
+  "order": 9,
+  "source": "https://frabjous-druid-ff547a.netlify.app/",
+  "tags": [
+    "近點調節 NPA 與近點聚合 NPC"
+  ],
+  "lessons": [
+    {
+      "id": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "goals": [
+        "解釋單元路線"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "串連、公式與易錯整合",
+          "body": "完整保留單元路線、必考重點與符號條件。"
+        },
+        {
+          "type": "card",
+          "title": "單元路線",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。",
+          "keys": [
+            "把本單元的關係串起來，確認易錯条件與方向。"
+          ],
+          "tip": ""
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "answer": "- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。",
+          "hint": "先說它是什麼，再說作用、條件或因果方向。",
+          "explain": "- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。"
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。\n- 把判斷依據連回題目：- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。\n\n**結論與依據**\n- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。",
+          "keys": [
+            "- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 先確認題目問的主題：單元路線\n- - 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。\n- 把判斷依據連回題目：- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。"
+        },
+        {
+          "type": "example",
+          "title": "範例拆解：單元路線",
+          "problem": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+          "steps": [
+            "先確認題目問的主題：單元路線",
+            "- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。",
+            "把判斷依據連回題目：- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。"
+          ],
+          "answer": "- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：串連、公式與易錯整合",
+          "qids": [
+            "s114-optometry-exam106-u09-opt-q0005",
+            "s114-optometry-exam106-u09-opt-q0009"
+          ],
+          "checks": [
+            {
+              "kind": "self",
+              "q": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "answer": "- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。",
+              "hint": "先說它是什麼，再說作用、條件或因果方向。",
+              "explain": "- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。"
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "把本單元的關係串起來，確認易錯条件與方向。",
+            "單元路線：把本單元的關係串起來，確認易錯条件與方向。",
+            "- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。",
+            "- 先確認題目問的主題：單元路線\n- - 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。\n- 把判斷依據連回題目：- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。",
+            "- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。"
+          ],
+          "flash": [
+            {
+              "front": "單元路線",
+              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。\n- 把判斷依據連回題目：- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。"
+            },
+            {
+              "front": "用自己的話說明「單元路線」，並說出一個判斷依據。",
+              "back": "- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 先確認題目問的主題：單元路線\n- - 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。\n- 把判斷依據連回題目：- 先懂看近：睫狀肌收縮、水晶體變厚，調節力增加。\n- 再算能力：FP 與 NP 決定 AA，年齡用 Hofstetter minimum 判斷。\n- 接著會測 NPA：push-up 找糊、pull-away 找清、minus lens 要加 2.50D。\n- 最後分清 NPC：找 break/recovery，break 大於 9 cm 要警覺。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-1",
+      "title": "整合驗收 1",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：近點調節 NPA 與近點聚合 NPC",
+          "body": "睫狀肌收縮使懸韌帶放鬆，水晶體變厚變圓。\n\n正確選項：變厚變圓、正度數增加。\n",
+          "keys": [
+            "睫狀肌收縮使懸韌帶放鬆，水晶體變厚變圓。\n\n正確選項：變厚變圓、正度數增加。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "看近調節時，水晶體如何改變？",
+          "answer": 1,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "睫狀肌收縮使懸韌帶放鬆，水晶體變厚變圓。\n\n正確選項：變厚變圓、正度數增加。\n",
+          "choices": [
+            "變薄、正度數下降",
+            "變厚變圓、正度數增加",
+            "完全不變",
+            "只改變角膜"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：近點調節 NPA 與近點聚合 NPC",
+          "body": "NPA 找持續模糊；NPC 才找 break。\n\n正確選項：sustained blur。\n",
+          "keys": [
+            "NPA 找持續模糊；NPC 才找 break。\n\n正確選項：sustained blur。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "NPA push-up 的 endpoint 是？",
+          "answer": 2,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "NPA 找持續模糊；NPC 才找 break。\n\n正確選項：sustained blur。\n",
+          "choices": [
+            "break/diplopia",
+            "recovery",
+            "sustained blur",
+            "TTN"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：近點調節 NPA 與近點聚合 NPC",
+          "body": "NPC break 大於 9 cm 視為異常。\n\n正確選項：12 cm。\n",
+          "keys": [
+            "NPC break 大於 9 cm 視為異常。\n\n正確選項：12 cm。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列哪個 NPC break 值屬異常警訊？",
+          "answer": 3,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "NPC break 大於 9 cm 視為異常。\n\n正確選項：12 cm。\n",
+          "choices": [
+            "3 cm",
+            "5 cm",
+            "8 cm",
+            "12 cm"
+          ]
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "看近調節時，水晶體如何改變？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "睫狀肌收縮使懸韌帶放鬆，水晶體變厚變圓。\n\n正確選項：變厚變圓、正度數增加。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "變厚變圓、正度數增加"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "看近調節時，水晶體如何改變？",
+              "answer": 1,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "睫狀肌收縮使懸韌帶放鬆，水晶體變厚變圓。\n\n正確選項：變厚變圓、正度數增加。\n",
+              "choices": [
+                "變薄、正度數下降",
+                "變厚變圓、正度數增加",
+                "完全不變",
+                "只改變角膜"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "NPA push-up 的 endpoint 是？",
+              "answer": 2,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "NPA 找持續模糊；NPC 才找 break。\n\n正確選項：sustained blur。\n",
+              "choices": [
+                "break/diplopia",
+                "recovery",
+                "sustained blur",
+                "TTN"
+              ]
+            },
+            {
+              "kind": "single",
+              "q": "下列哪個 NPC break 值屬異常警訊？",
+              "answer": 3,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "NPC break 大於 9 cm 視為異常。\n\n正確選項：12 cm。\n",
+              "choices": [
+                "3 cm",
+                "5 cm",
+                "8 cm",
+                "12 cm"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "睫狀肌收縮使懸韌帶放鬆，水晶體變厚變圓。\n\n正確選項：變厚變圓、正度數增加。\n",
+            "NPA 找持續模糊；NPC 才找 break。\n\n正確選項：sustained blur。\n",
+            "NPC break 大於 9 cm 視為異常。\n\n正確選項：12 cm。\n",
+            "睫狀肌收縮使懸韌帶放鬆，水晶體變厚變圓。\n\n正確選項：變厚變圓、正度數增加。\n",
+            "NPA 找持續模糊；NPC 才找 break。\n\n正確選項：sustained blur。\n"
+          ],
+          "flash": [
+            {
+              "front": "看近調節時，水晶體如何改變？",
+              "back": "睫狀肌收縮使懸韌帶放鬆，水晶體變厚變圓。\n\n正確選項：變厚變圓、正度數增加。\n"
+            },
+            {
+              "front": "NPA push-up 的 endpoint 是？",
+              "back": "NPA 找持續模糊；NPC 才找 break。\n\n正確選項：sustained blur。\n"
+            },
+            {
+              "front": "下列哪個 NPC break 值屬異常警訊？",
+              "back": "NPC break 大於 9 cm 視為異常。\n\n正確選項：12 cm。\n"
+            },
+            {
+              "front": "看近調節時，水晶體如何改變？",
+              "back": "睫狀肌收縮使懸韌帶放鬆，水晶體變厚變圓。\n\n正確選項：變厚變圓、正度數增加。\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quiz-2",
+      "title": "整合驗收 2",
+      "goals": [
+        "以單元總測驗檢查觀念是否能串連。"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "課末挑戰",
+          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+        },
+        {
+          "type": "card",
+          "title": "判斷依據：近點調節 NPA 與近點聚合 NPC",
+          "body": "|-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n",
+          "keys": [
+            "|-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Minus lens to blur 在 40 cm 加到 -4.00D 持續模糊，AA 為？",
+          "answer": 0,
+          "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+          "explain": "|-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n",
+          "choices": [
+            "6.50D",
+            "4.00D",
+            "2.50D",
+            "1.50D"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "應用：由條件走到結論",
+          "body": "**情境**\nMinus lens to blur 在 40 cm 加到 -4.00D 持續模糊，AA 為？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- |-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\n6.50D",
+          "keys": [
+            "6.50D"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "self",
+          "q": "解釋這個結論所用的條件或判斷依據。",
+          "answer": "6.50D",
+          "hint": "把條件、機制或計算步驟依序串起來。",
+          "explain": "- 確認題目問的構造、條件或量。\n- |-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n- 將判斷依據連到正確選項。"
+        },
+        {
+          "type": "example",
+          "title": "回看第一題的判斷",
+          "problem": "Minus lens to blur 在 40 cm 加到 -4.00D 持續模糊，AA 為？",
+          "steps": [
+            "確認題目問的構造、條件或量。",
+            "|-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n",
+            "將判斷依據連到正確選項。"
+          ],
+          "answer": "6.50D"
+        },
+        {
+          "type": "practice",
+          "title": "正式驗收",
+          "checks": [
+            {
+              "kind": "single",
+              "q": "Minus lens to blur 在 40 cm 加到 -4.00D 持續模糊，AA 為？",
+              "answer": 0,
+              "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
+              "explain": "|-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n",
+              "choices": [
+                "6.50D",
+                "4.00D",
+                "2.50D",
+                "1.50D"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "|-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n",
+            "- 確認題目問的構造、條件或量。\n- |-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n- 將判斷依據連到正確選項。",
+            "|-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n",
+            "- 確認題目問的構造、條件或量。\n- |-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n- 將判斷依據連到正確選項。",
+            "|-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n"
+          ],
+          "flash": [
+            {
+              "front": "Minus lens to blur 在 40 cm 加到 -4.00D 持續模糊，AA 為？",
+              "back": "|-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- |-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n- 將判斷依據連到正確選項。"
+            },
+            {
+              "front": "Minus lens to blur 在 40 cm 加到 -4.00D 持續模糊，AA 為？",
+              "back": "|-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n"
+            },
+            {
+              "front": "解釋這個結論所用的條件或判斷依據。",
+              "back": "- 確認題目問的構造、條件或量。\n- |-4.00| + 2.50 = 6.50D。\n\n正確選項：6.50D。\n- 將判斷依據連到正確選項。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}
+.w{padding:8px 12px}.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0}
+button{font:inherit;padding:4px 9px;border:1px solid #b9a784;background:#fff;border-radius:6px;cursor:pointer}button.on{background:#2e2116;color:#fff}
+.main{display:flex;gap:8px;flex-wrap:wrap}.main>svg{flex:1;min-width:260px;max-width:430px;height:auto;background:#fff;border:1px solid #d8cbb0;border-radius:8px}
+.side{flex:1;min-width:250px}.fields{display:flex;gap:10px;justify-content:center}.fields div{text-align:center;font-weight:bold}.fields svg{width:130px;height:130px}
+.box{background:#fff;border:1px solid #d8cbb0;border-radius:8px;padding:6px 10px;margin-top:6px;line-height:1.55}
+.note{font-size:14px;color:#6b5a45}
+</style></head><body><div class="w">
+<div class="note">觀察重點：視交叉以前的病灶 → 單眼；視交叉 → 雙顳側；視交叉以後 → 雙眼同側（同名性）。越往後，兩眼的缺損越「一致」（congruous）。</div>
+<div class="row"><b>點選病灶：</b><span id="btns"></span><button id="quiz">🎲 看視野猜位置</button></div>
+<div class="main"><svg id="map" viewBox="0 0 400 420"></svg>
+<div class="side"><div class="fields"><div>OS 左眼<svg id="fos" viewBox="0 0 130 130"></svg></div><div>OD 右眼<svg id="fod" viewBox="0 0 130 130"></svg></div></div>
+<div class="box" id="out"></div></div></div>
+<div class="note">視野圖以病人自己的角度畫：左半＝左側視野、上半＝上方視野。視野在網膜上是「左右相反、上下顛倒」的。黑色＝缺損。</div>
+</div><script>
+const $=id=>document.getElementById(id);
+// 缺損以「象限」表示：LU 左上、LD 左下、RU 右上、RD 右下；all 全部；spare 保留黃斑
+const L={
+ A:{n:'左視神經',d:'左眼單眼全盲（monocular vision loss）',os:['all'],od:[],c:'視神經炎、缺血性視神經病變、外傷等',x:130,y:95},
+ B:{n:'視交叉中央',d:'雙顳側半盲（bitemporal hemianopia）：兩眼的顳側（外側）視野缺損',os:['LU','LD'],od:['RU','RD'],c:'腦下垂體腫瘤（由下往上壓迫交叉的鼻側纖維）',x:200,y:150},
+ C:{n:'視交叉左外側',d:'左眼鼻側半盲（缺損在左眼視野的右半）',os:['RU','RD'],od:[],c:'內頸動脈血栓／動脈瘤由外側壓迫左眼不交叉的顳側纖維',x:168,y:152},
+ D:{n:'左視徑',d:'右側同名性半盲（right homonymous hemianopia）',os:['RU','RD'],od:['RU','RD'],c:'視徑病灶；兩眼缺損形狀常不太一致（incongruous）',x:160,y:205},
+ E:{n:'左顳葉 Meyer 環',d:'右上象限盲（right superior quadrantanopia，「pie in the sky」）',os:['RU'],od:['RU'],c:'顳葉病灶（Meyer\'s loop 載送下方網膜＝上方視野的纖維）',x:75,y:275},
+ F:{n:'左頂葉視放射（背側）',d:'右下象限盲（right inferior quadrantanopia）',os:['RD'],od:['RD'],c:'頂葉病灶（背側視放射載送上方網膜＝下方視野的纖維）',x:150,y:300},
+ G:{n:'左枕葉視覺皮質',d:'右側同名性半盲＋黃斑保留（macular sparing）',os:['RU','RD','spare'],od:['RU','RD','spare'],c:'大腦後動脈（PCA）梗塞；黃斑區常有雙重血流而保留',x:175,y:385}};
+function field(svg,q){const c=65,r=58;let g=`<circle cx="${c}" cy="${c}" r="${r}" fill="#fdf0cd" stroke="#e08a14" stroke-width="2"/>`;
+ const arc={LU:[180,270],RU:[270,360],RD:[0,90],LD:[90,180]};
+ if(q.includes('all'))g+=`<circle cx="${c}" cy="${c}" r="${r}" fill="#111"/>`;
+ for(const k of q){if(!arc[k])continue;const[a0,a1]=arc[k].map(a=>a*Math.PI/180);g+=`<path d="M${c},${c} L${c+r*Math.cos(a0)},${c+r*Math.sin(a0)} A${r},${r} 0 0 1 ${c+r*Math.cos(a1)},${c+r*Math.sin(a1)} Z" fill="#111"/>`}
+ if(q.includes('spare'))g+=`<circle cx="${c}" cy="${c}" r="13" fill="#fdf0cd"/>`;
+ g+=`<line x1="${c-r}" y1="${c}" x2="${c+r}" y2="${c}" stroke="#e08a14"/><line x1="${c}" y1="${c-r}" x2="${c}" y2="${c+r}" stroke="#e08a14"/>`;svg.innerHTML=g}
+function map(sel,hide){let g='';
+ g+=`<circle cx="120" cy="45" r="32" fill="#eef3f8" stroke="#333" stroke-width="2"/><circle cx="280" cy="45" r="32" fill="#eef3f8" stroke="#333" stroke-width="2"/>`;
+ g+=`<text x="120" y="50" font-size="14" text-anchor="middle">OS</text><text x="280" y="50" font-size="14" text-anchor="middle">OD</text>`;
+ const B='#1f5fbf',Rd='#d23c30',ln=(p,c)=>`<polyline points="${p}" fill="none" stroke="${c}" stroke-width="4" stroke-linejoin="round"/>`;
+ g+=ln('97,68 185,150 180,205 160,240',B)+ln('130,76 200,150 220,205 240,240',Rd)+ln('303,68 215,150 220,205 240,240',Rd)+ln('270,76 200,150 180,205 160,240',B);
+ g+=`<ellipse cx="200" cy="150" rx="42" ry="14" fill="#ccc" stroke="#333"/><ellipse cx="150" cy="248" rx="22" ry="12" fill="#b59f7c" stroke="#333"/><ellipse cx="250" cy="248" rx="22" ry="12" fill="#b59f7c" stroke="#333"/>`;
+ g+=ln('140,255 80,245 60,300 110,350 185,380',B)+ln('155,260 150,320 190,378',B)+ln('260,255 320,245 340,300 290,350 215,380',Rd)+ln('245,260 250,320 210,378',Rd);
+ g+=`<path d="M150,385 A50,30 0 0 0 250,385 Z" fill="#efc9c9" stroke="#333"/>`;
+ g+=`<text x="200" y="128" font-size="12" text-anchor="middle">視交叉</text><text x="115" y="226" font-size="12">視徑</text><text x="112" y="275" font-size="12">LGN</text><text x="200" y="412" font-size="12" text-anchor="middle">枕葉視覺皮質</text><text x="10" y="300" font-size="12">Meyer 環</text>`;
+ for(const k in L){const p=L[k],on=k===sel;g+=`<g data-k="${k}" style="cursor:pointer"><circle cx="${p.x}" cy="${p.y}" r="13" fill="${on?'#111':'#fff'}" stroke="#111" stroke-width="2"/><text x="${p.x}" y="${p.y+5}" font-size="14" font-weight="bold" text-anchor="middle" fill="${on?'#fff':'#111'}">${hide&&!on?'?':k}</text></g>`}
+ $('map').innerHTML=g;$('map').querySelectorAll('[data-k]').forEach(e=>e.onclick=()=>pick(e.dataset.k))}
+let quiz=null;
+function pick(k){const p=L[k];
+ if(quiz){const ok=k===quiz;$('out').innerHTML=(ok?'✅ 答對！':'❌ 不對，')+`正確位置是 <b>${quiz}：${L[quiz].n}</b>。${L[quiz].d}；常見原因：${L[quiz].c}。`+(ok?'':`（你點的 ${k} 會造成：${p.d}）`);quiz=null;map(k);field($('fos'),L[k].os);field($('fod'),L[k].od);return}
+ map(k);field($('fos'),p.os);field($('fod'),p.od);$('out').innerHTML=`<b>${k}：${p.n}</b><br>${p.d}<br>常見原因：${p.c}`;
+ document.querySelectorAll('#btns button').forEach(b=>b.classList.toggle('on',b.dataset.k===k))}
+$('btns').innerHTML=Object.keys(L).map(k=>`<button data-k="${k}">${k}</button>`).join('');
+document.querySelectorAll('#btns button').forEach(b=>b.onclick=()=>{quiz=null;pick(b.dataset.k)});
+$('quiz').onclick=()=>{const ks=Object.keys(L);quiz=ks[Math.floor(Math.random()*ks.length)];field($('fos'),L[quiz].os);field($('fod'),L[quiz].od);map(null,true);
+ $('out').innerHTML='看上面兩眼的視野，在左邊的路徑圖點出最可能的病灶位置（A～G）。'};
+pick('B');
+</script></body></html>

@@ -23,81 +23,84 @@
       "id": "cns-neuron-2",
       "title": "第 3 站：神經元的結構與分類（2）",
       "goals": [
-        "解釋軸漿運輸：anterograde / retrograde"
+        "解釋軸漿運輸：順向（anterograde） / 逆向（retrograde）"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 3 站：神經元的結構與分類",
-          "body": "認識神經元各部位（動作電位在 axon hillock 起始）、用突起數做結構分類、再看軸漿運輸。\n\n- 先認神經元各部位，特別是 axon hillock＝動作電位起始點。\n- 用『突起數量』做結構分類：uni / bi / pseudouni / multipolar。\n- 功能分類與幾個特殊神經元。\n- 軸漿運輸：順向 / 逆向。"
+          "body": "認識神經元各部位（動作電位在 axon hillock 起始）、用突起數做結構分類、再看軸漿運輸。\n\n- 先認神經元各部位，特別是 軸丘（axon hillock）＝動作電位起始點。\n- 用『突起數量』做結構分類：uni / bi / pseudouni / 多極（multipolar）。\n- 功能分類與幾個特殊神經元。\n- 軸漿運輸：順向 / 逆向。"
         },
         {
           "type": "card",
-          "title": "軸漿運輸：anterograde / retrograde",
-          "body": "**連到前一觀念**\n神經元很長，物質怎麼運送也要會。\n\n**觀念**\n沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n\n**為什麼**\n在不同腦區注射紅、綠 tracer，會沿 retrograde transport 回到本體；若一個神經元同時投射兩區，就同時帶紅綠（看起來黃），藉此判斷迴路連結。\n\n**考試角度**\n- anterograde：cell body → terminal\n- retrograde：terminal → cell body\n- retrograde 常用於 tracer 標定迴路\n\n**英文考句**\n- Anterograde transport: cell body → axon terminal; retrograde transport: axon terminal → cell body.",
+          "title": "軸漿運輸：順向（anterograde） / 逆向（retrograde）",
+          "body": "**連到前一觀念**\n神經元很長，物質怎麼運送也要會。\n\n**觀念**\n沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n\n**為什麼**\n在不同腦區注射紅、綠 tracer，會沿 逆向運輸 回到本體；若一個神經元同時投射兩區，就同時帶紅綠（看起來黃），藉此判斷迴路連結。\n\n**考試角度**\n- 順向（anterograde）：細胞本體（cell body） → terminal\n- 逆向（retrograde）：terminal → 細胞本體\n- 逆向 常用於 tracer 標定迴路\n\n**中文重點＋英文考句**\n- 順向（anterograde）：細胞本體（cell body） → terminal\n- 逆向（retrograde）：terminal → 細胞本體\n- 逆向 常用於 tracer 標定迴路\n\n【英文原文】\n- Anterograde transport: cell body → axon terminal; retrograde transport: axon terminal → cell body.",
           "keys": [
-            "anterograde：cell body → terminal",
-            "retrograde：terminal → cell body",
-            "retrograde 常用於 tracer 標定迴路"
+            "順向（anterograde）：細胞本體（cell body） → terminal",
+            "逆向（retrograde）：terminal → 細胞本體（cell body）",
+            "逆向（retrograde） 常用於 tracer 標定迴路"
           ],
           "tip": ""
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Transport from the axon terminal toward the cell body is called?",
+          "q": "把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\n英文：Transport from the axon terminal toward the cell body is called?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：Retrograde transport。\n沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 axon terminal 往細胞本體運送，稱為？\nchoices：- retrograde transport（逆向）\n- anterograde transport（順向）\n- saltatory conduction\n- axoplasmic synthesis",
+          "explain": "逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：逆向運輸（Retrograde transport）。\n沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\nchoices：- 逆向運輸（retrograde transport）（逆向）\n- 順向運輸（anterograde transport）（順向）\n- 跳躍式傳導（saltatory conduction）\n- axoplasmic synthesis",
           "choices": [
-            "Retrograde transport",
-            "Anterograde transport",
-            "Saltatory conduction",
-            "Axoplasmic synthesis"
-          ]
+            "逆向運輸（retrograde transport）（逆向）\n英文：Retrograde transport",
+            "順向運輸（anterograde transport）（順向）\n英文：Anterograde transport",
+            "跳躍式傳導（saltatory conduction）\n英文：Saltatory conduction",
+            "axoplasmic synthesis\n英文：Axoplasmic synthesis"
+          ],
+          "id": "cec36dd5d"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\nTransport from the axon terminal toward the cell body is called?\n\nA. Retrograde transport\nB. Anterograde transport\nC. Saltatory conduction\nD. Axoplasmic synthesis\n\n**判斷步驟**\n- 先確認題目問的主題：軸漿運輸：anterograde / retrograde\n- 沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：Retrograde transport。\n沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 axon terminal 往細胞本體運送，稱為？\nchoices：- retrograde transport（逆向）\n- anterograde transport（順向）\n- saltatory conduction\n- axoplasmic synthes",
+          "body": "**情境**\n把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？（Transport from the axon terminal toward the cell body is called?）\n\nA. 逆向運輸（Retrograde transport）\nB. 順向運輸（Anterograde transport）\nC. 跳躍式傳導（Saltatory conduction）\nD. Axoplasmic synthesis\n\n**判斷步驟**\n- 先確認題目問的主題：軸漿運輸：順向（anterograde） / 逆向（retrograde）\n- 沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：逆向運輸。\n沿 軸突 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 軸突末端 往細胞本體運送，稱為？\nchoices：- 逆向運輸（逆向）\n- 順向運輸（順向）\n- 跳躍式傳導\n- axoplasmic synthes",
           "keys": [
-            "Retrograde transport"
+            "逆向運輸（retrograde transport）（逆向）\n英文：Retrograde transport"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "Retrograde transport",
+          "answer": "逆向運輸（retrograde transport）（逆向）\n英文：Retrograde transport",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：軸漿運輸：anterograde / retrograde\n- 沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：Retrograde transport。\n沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 axon terminal 往細胞本體運送，稱為？\nchoices：- retrograde transport（逆向）\n- anterograde transport（順向）\n- saltatory conduction\n- axoplasmic synthesis"
+          "explain": "- 先確認題目問的主題：軸漿運輸：順向（anterograde） / 逆向（retrograde）\n- 沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：逆向運輸（Retrograde transport）。\n沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\nchoices：- 逆向運輸（retrograde transport）（逆向）\n- 順向運輸（anterograde transport）（順向）\n- 跳躍式傳導（saltatory conduction）\n- axoplasmic synthesis",
+          "id": "c9372e17a"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "is\n\n**結論與依據**\nRetrograde transport",
+          "body": "is\n\n**結論與依據**\n逆向運輸（Retrograde transport）",
           "keys": [
-            "Retrograde transport"
+            "逆向運輸（retrograde transport）（逆向）\n英文：Retrograde transport"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "Retrograde transport",
+          "answer": "逆向運輸（retrograde transport）（逆向）\n英文：Retrograde transport",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：軸漿運輸：anterograde / retrograde\n- 沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：Retrograde transport。\n沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 axon terminal 往細胞本體運送，稱為？\nchoices：- retrograde transport（逆向）\n- anterograde transport（順向）\n- saltatory conduction\n- axoplasmic synthesis"
+          "explain": "- 先確認題目問的主題：軸漿運輸：順向（anterograde） / 逆向（retrograde）\n- 沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：逆向運輸（Retrograde transport）。\n沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\nchoices：- 逆向運輸（retrograde transport）（逆向）\n- 順向運輸（anterograde transport）（順向）\n- 跳躍式傳導（saltatory conduction）\n- axoplasmic synthesis",
+          "id": "c9372e17a"
         },
         {
           "type": "example",
-          "title": "範例拆解：軸漿運輸：anterograde / retrograde",
-          "problem": "Transport from the axon terminal toward the cell body is called?\n\nA. Retrograde transport\nB. Anterograde transport\nC. Saltatory conduction\nD. Axoplasmic synthesis",
+          "title": "範例拆解：軸漿運輸：順向（anterograde） / 逆向（retrograde）",
+          "problem": "把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？（Transport from the axon terminal toward the cell body is called?）\n\nA. 逆向運輸（Retrograde transport）\nB. 順向運輸（Anterograde transport）\nC. 跳躍式傳導（Saltatory conduction）\nD. Axoplasmic synthesis",
           "steps": [
-            "先確認題目問的主題：軸漿運輸：anterograde / retrograde",
-            "沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。",
-            "把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：Retrograde transport。\n沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 axon terminal 往細胞本體運送，稱為？\nchoices：- retrograde transport（逆向）\n- anterograde transport（順向）\n- saltatory conduction\n- axoplasmic synthesis"
+            "先確認題目問的主題：軸漿運輸：順向（anterograde） / 逆向（retrograde）",
+            "沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。",
+            "把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：逆向運輸（Retrograde transport）。\n沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\nchoices：- 逆向運輸（retrograde transport）（逆向）\n- 順向運輸（anterograde transport）（順向）\n- 跳躍式傳導（saltatory conduction）\n- axoplasmic synthesis"
           ],
-          "answer": "Retrograde transport"
+          "answer": "逆向運輸（retrograde transport）（逆向）\n英文：Retrograde transport"
         },
         {
           "type": "practice",
@@ -109,44 +112,49 @@
           "checks": [
             {
               "kind": "single",
-              "q": "Transport from the axon terminal toward the cell body is called?",
+              "q": "把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\n英文：Transport from the axon terminal toward the cell body is called?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：Retrograde transport。\n沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 axon terminal 往細胞本體運送，稱為？\nchoices：- retrograde transport（逆向）\n- anterograde transport（順向）\n- saltatory conduction\n- axoplasmic synthesis",
+              "explain": "逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：逆向運輸（Retrograde transport）。\n沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\nchoices：- 逆向運輸（retrograde transport）（逆向）\n- 順向運輸（anterograde transport）（順向）\n- 跳躍式傳導（saltatory conduction）\n- axoplasmic synthesis",
               "choices": [
-                "Retrograde transport",
-                "Anterograde transport",
-                "Saltatory conduction",
-                "Axoplasmic synthesis"
-              ]
+                "逆向運輸（retrograde transport）（逆向）\n英文：Retrograde transport",
+                "順向運輸（anterograde transport）（順向）\n英文：Anterograde transport",
+                "跳躍式傳導（saltatory conduction）\n英文：Saltatory conduction",
+                "axoplasmic synthesis\n英文：Axoplasmic synthesis"
+              ],
+              "id": "cec36dd5d"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "anterograde：cell body → terminal",
-            "retrograde：terminal → cell body",
-            "結構：dendrite 接收 → soma → axon hillock（電壓門控 Na 通道多，AP 起始/閾值）→ axon → terminal → synapse。結構分類靠突起數：unipolar/bipolar(視網膜)/pseudounipolar(DRG)/multipolar(中樞)。軸漿運輸：anterograde(本體→末端)、retrograde(末端→本體, 可做 tracer)。",
-            "軸漿運輸：anterograde / retrograde：anterograde：cell body → terminal",
-            "- 先確認題目問的主題：軸漿運輸：anterograde / retrograde\n- 沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：Retrograde transport。\n沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 axon terminal 往細胞本體運送，稱為？\nchoices：- retrograde transport（逆向）\n- anterograde transport（順向）\n- saltatory conduction\n- axoplasmic synthesis"
+            "順向（anterograde）：細胞本體（cell body） → terminal",
+            "逆向（retrograde）：terminal → 細胞本體（cell body）",
+            "結構：dendrite 接收 → soma → 軸丘（axon hillock）（電壓門控 Na 通道多，AP 起始/閾值）→ 軸突（axon） → terminal → synapse。結構分類靠突起數：unipolar/雙極細胞（bipolar）(視網膜)/偽單極（pseudounipolar）(DRG)/多極（multipolar）(中樞)。軸漿運輸：順向（anterograde）(本體→末端)、逆向（retrograde）(末端→本體, 可做 tracer)。",
+            "軸漿運輸：順向（anterograde） / 逆向（retrograde）：順向（anterograde）：細胞本體（cell body） → terminal",
+            "- 先確認題目問的主題：軸漿運輸：順向（anterograde） / 逆向（retrograde）\n- 沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：逆向運輸（Retrograde transport）。\n沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\nchoices：- 逆向運輸（retrograde transport）（逆向）\n- 順向運輸（anterograde transport）（順向）\n- 跳躍式傳導（saltatory conduction）\n- axoplasmic synthesis"
           ],
           "flash": [
             {
-              "front": "軸漿運輸：anterograde / retrograde",
-              "back": "沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。"
+              "front": "軸漿運輸：順向（anterograde） / 逆向（retrograde）",
+              "back": "沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。",
+              "id": "fd5a39640"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：軸漿運輸：anterograde / retrograde\n- 沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：Retrograde transport。\n沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 axon terminal 往細胞本體運送，稱為？\nchoices：- retrograde transport（逆向）\n- anterograde transport（順向）\n- saltatory conduction\n- axoplasmic synthesis"
+              "back": "- 先確認題目問的主題：軸漿運輸：順向（anterograde） / 逆向（retrograde）\n- 沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：逆向運輸（Retrograde transport）。\n沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\nchoices：- 逆向運輸（retrograde transport）（逆向）\n- 順向運輸（anterograde transport）（順向）\n- 跳躍式傳導（saltatory conduction）\n- axoplasmic synthesis",
+              "id": "f9372e17a"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：軸漿運輸：anterograde / retrograde\n- 沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：Retrograde transport。\n沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 axon terminal 往細胞本體運送，稱為？\nchoices：- retrograde transport（逆向）\n- anterograde transport（順向）\n- saltatory conduction\n- axoplasmic synthesis"
+              "back": "- 先確認題目問的主題：軸漿運輸：順向（anterograde） / 逆向（retrograde）\n- 沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n- 把判斷依據連回題目：逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：逆向運輸（Retrograde transport）。\n沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\nchoices：- 逆向運輸（retrograde transport）（逆向）\n- 順向運輸（anterograde transport）（順向）\n- 跳躍式傳導（saltatory conduction）\n- axoplasmic synthesis",
+              "id": "f9372e17a"
             },
             {
-              "front": "Transport from the axon terminal toward the cell body is called?",
-              "back": "逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：Retrograde transport。\n沿 axon 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 retrograde transport 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 axon terminal 往細胞本體運送，稱為？\nchoices：- retrograde transport（逆向）\n- anterograde transport（順向）\n- saltatory conduction\n- axoplasmic synthesis"
+              "front": "把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\n英文：Transport from the axon terminal toward the cell body is called?",
+              "back": "逆向運輸＝末端→本體，常用於 tracer 標定迴路。\n\n正確選項：逆向運輸（Retrograde transport）。\n沿 軸突（axon） 運送物質叫 axonal transport：從本體往末端是 anterograde（順向）；從末端往本體是 retrograde（逆向）。科學上常用 逆向運輸（retrograde transport） 把螢光 tracer 帶回本體來標定神經迴路。\n\n中文對照：question：把物質從 軸突末端（axon terminal） 往細胞本體運送，稱為？\nchoices：- 逆向運輸（retrograde transport）（逆向）\n- 順向運輸（anterograde transport）（順向）\n- 跳躍式傳導（saltatory conduction）\n- axoplasmic synthesis",
+              "id": "fec36dd5d"
             }
           ]
         }
@@ -156,101 +164,104 @@
       "id": "cns-glia-1",
       "title": "第 4 站：膠質細胞與血腦屏障（1）",
       "goals": [
-        "解釋Neuron vs Glia",
-        "解釋Glia 的三大功能：支持、營養、保護",
+        "解釋神經元（Neuron） vs 膠質細胞（Glia）",
+        "解釋膠質細胞（Glia） 的三大功能：支持、營養、保護",
         "解釋中樞 vs 周邊膠質細胞對照"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 4 站：膠質細胞與血腦屏障",
-          "body": "大腦多數其實是膠質細胞；glia 負責支持/營養/保護；中樞與周邊的膠質細胞名稱不同；BBB 控制誰能進中樞。\n\n- neuron vs glia：數量、功能差別。\n- glia 的三大功能：支持、營養、保護。\n- 中樞 vs 周邊膠質細胞對照（看名詞反應中樞/周邊）。\n- 血腦屏障 BBB：保護中樞、控制通透。"
+          "body": "大腦多數其實是膠質細胞；膠質細胞（glia） 負責支持/營養/保護；中樞與周邊的膠質細胞名稱不同；血腦障壁（BBB） 控制誰能進中樞。\n\n- 神經元（neuron） vs 膠質細胞：數量、功能差別。\n- 膠質細胞 的三大功能：支持、營養、保護。\n- 中樞 vs 周邊膠質細胞對照（看名詞反應中樞/周邊）。\n- 血腦屏障 血腦障壁：保護中樞、控制通透。"
         },
         {
           "type": "card",
-          "title": "Neuron vs Glia",
-          "body": "**連到前一觀念**\n大腦裡其實不只有神經元。\n\n**觀念**\n神經組織兩大類細胞：neuron（神經元，數量以億計，功能是 communication 與 integration）與 glia / neuroglia（膠質細胞，數量是 neuron 的好幾倍，功能支持/營養/保護）。註：glia 本身是複數，不必再加 s。\n\n**為什麼**\n大腦大部分其實是膠質細胞。聰明與否不只看神經元數量，更看神經元間連結、溝通效率與膠質支持（如愛因斯坦腦：某些區 glia 較多、胼胝體較厚）。\n\n**考試角度**\n- neuron：communication＋integration（數量以億計）\n- glia：支持/營養/保護（數量是 neuron 數倍）\n- glia 已是複數，不再加 s\n\n**英文考句**\n- Neurons handle communication and integration; glia (neuroglia) provide support, nutrition and protection.\n- Glia outnumber neurons several-fold.",
+          "title": "神經元（Neuron） vs 膠質細胞（Glia）",
+          "body": "**連到前一觀念**\n大腦裡其實不只有神經元。\n\n**觀念**\n神經組織兩大類細胞：神經元（neuron）（神經元，數量以億計，功能是 communication 與 integration）與 膠質細胞（glia） / neuroglia（膠質細胞，數量是 neuron 的好幾倍，功能支持/營養/保護）。註：膠質細胞 本身是複數，不必再加 s。\n\n**為什麼**\n大腦大部分其實是膠質細胞。聰明與否不只看神經元數量，更看神經元間連結、溝通效率與膠質支持（如愛因斯坦腦：某些區 glia 較多、胼胝體較厚）。\n\n**考試角度**\n- 神經元：communication＋整合（integration）（數量以億計）\n- 膠質細胞：支持/營養/保護（數量是 neuron 數倍）\n- 膠質細胞 已是複數，不再加 s\n\n**中文重點＋英文考句**\n- 神經元（neuron）：communication＋整合（integration）（數量以億計）\n- 膠質細胞（glia）：支持/營養/保護（數量是 neuron 數倍）\n- 膠質細胞 已是複數，不再加 s\n\n【英文原文】\n- Neurons handle communication and integration; glia (neuroglia) provide support, nutrition and protection.\n- Glia outnumber neurons several-fold.",
           "keys": [
-            "neuron：communication＋integration（數量以億計）",
-            "glia：支持/營養/保護（數量是 neuron 數倍）",
-            "glia 已是複數，不再加 s"
+            "神經元（neuron）：communication＋整合（integration）（數量以億計）",
+            "膠質細胞（glia）：支持/營養/保護（數量是 neuron 數倍）",
+            "膠質細胞（glia） 已是複數，不再加 s"
           ],
           "tip": ""
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Which statement about neurons and glial cells is correct?",
+          "q": "關於 神經元（neuron） 與 膠質細胞（glia），何者正確？\n英文：Which statement about neurons and glial cells is correct?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "膠質細胞數量遠多於神經元，大腦大部分是 glia。\n\n正確選項：Glial cells outnumber neurons by several times。\n神經組織兩大類細胞：neuron（神經元，數量以億計，功能是 communication 與 integration）與 glia / neuroglia（膠質細胞，數量是 neuron 的好幾倍，功能支持/營養/保護）。註：glia 本身是複數，不必再加 s。\n\n中文對照：question：關於 neuron 與 glia，何者正確？\nchoices：- glia 數量是 neuron 的好幾倍\n- neuron 比 glia 多很多\n- 兩者數量相同\n- glia 不存在於大腦",
+          "explain": "膠質細胞數量遠多於神經元，大腦大部分是 膠質細胞（glia）。\n\n正確選項：膠質細胞（glia） 數量是 神經元（neuron） 的好幾倍（Glial cells outnumber neurons by several times）。\n神經組織兩大類細胞：神經元（neuron）（神經元，數量以億計，功能是 communication 與 integration）與 膠質細胞（glia） / neuroglia（膠質細胞，數量是 neuron 的好幾倍，功能支持/營養/保護）。註：膠質細胞（glia） 本身是複數，不必再加 s。\n\n中文對照：question：關於 神經元（neuron） 與 膠質細胞（glia），何者正確？\nchoices：- 膠質細胞（glia） 數量是 神經元（neuron） 的好幾倍\n- 神經元（neuron） 比 膠質細胞（glia） 多很多\n- 兩者數量相同\n- 膠質細胞（glia） 不存在於大腦",
           "choices": [
-            "Glial cells outnumber neurons by several times",
-            "Neurons greatly outnumber glial cells",
-            "Their numbers are equal",
-            "Glial cells are absent from the brain"
-          ]
+            "膠質細胞（glia） 數量是 神經元（neuron） 的好幾倍\n英文：Glial cells outnumber neurons by several times",
+            "神經元（neuron） 比 膠質細胞（glia） 多很多\n英文：Neurons greatly outnumber glial cells",
+            "兩者數量相同\n英文：Their numbers are equal",
+            "膠質細胞（glia） 不存在於大腦\n英文：Glial cells are absent from the brain"
+          ],
+          "id": "cb2edac0a"
         },
         {
           "type": "card",
-          "title": "Glia 的三大功能：支持、營養、保護",
-          "body": "**連到前一觀念**\n教科書一句『支持/營養/保護』，其實內容很多。\n\n**觀念**\n① 支持：維持神經網路結構穩定；② 營養：神經缺氧/缺養分時，如 astrocyte 提供養分；③ 保護：清除突觸間隙的 neurotransmitter、避免神經過度興奮甚至凋亡。\n\n**為什麼**\n若 neurotransmitter 沒被快速清除/降解，神經會過度興奮（甚至 apoptosis）。除了突觸間隙的酵素，glia 也幫忙清除這些物質來保護神經。\n\n**考試角度**\n- 支持：穩定神經網路結構\n- 營養：astrocyte 在缺養分時供養\n- 保護：清除 neurotransmitter、防過度興奮",
+          "title": "膠質細胞（Glia） 的三大功能：支持、營養、保護",
+          "body": "**連到前一觀念**\n教科書一句『支持/營養/保護』，其實內容很多。\n\n**觀念**\n① 支持：維持神經網路結構穩定；② 營養：神經缺氧/缺養分時，如 星狀膠質細胞（astrocyte） 提供養分；③ 保護：清除突觸間隙的 神經傳導物質（neurotransmitter）、避免神經過度興奮甚至凋亡。\n\n**為什麼**\n若 神經傳導物質 沒被快速清除/降解，神經會過度興奮（甚至 apoptosis）。除了突觸間隙的酵素，膠質細胞（glia） 也幫忙清除這些物質來保護神經。\n\n**考試角度**\n- 支持：穩定神經網路結構\n- 營養：星狀膠質細胞 在缺養分時供養\n- 保護：清除 神經傳導物質、防過度興奮",
           "keys": [
             "支持：穩定神經網路結構",
-            "營養：astrocyte 在缺養分時供養",
-            "保護：清除 neurotransmitter、防過度興奮"
+            "營養：星狀膠質細胞（astrocyte） 在缺養分時供養",
+            "保護：清除 神經傳導物質（neurotransmitter）、防過度興奮"
           ],
           "tip": ""
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Which is an example of the protective function of glial cells?",
+          "q": "膠質細胞『保護』功能的一個例子是？\n英文：Which is an example of the protective function of glial cells?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "glia 幫忙清除 neurotransmitter，避免神經過度興奮。\n\n正確選項：Removing neurotransmitters from the synaptic cleft to prevent overexcitation。\n① 支持：維持神經網路結構穩定；② 營養：神經缺氧/缺養分時，如 astrocyte 提供養分；③ 保護：清除突觸間隙的 neurotransmitter、避免神經過度興奮甚至凋亡。\n\n中文對照：question：膠質細胞『保護』功能的一個例子是？\nchoices：- 清除突觸間隙的神經傳導物、防過度興奮\n- 產生動作電位\n- 收縮做工\n- 分泌荷爾蒙到血液",
+          "explain": "膠質細胞（glia） 幫忙清除 神經傳導物質（neurotransmitter），避免神經過度興奮。\n\n正確選項：清除突觸間隙的神經傳導物、防過度興奮（Removing neurotransmitters from the synaptic cleft to prevent overexcitation）。\n① 支持：維持神經網路結構穩定；② 營養：神經缺氧/缺養分時，如 星狀膠質細胞（astrocyte） 提供養分；③ 保護：清除突觸間隙的 神經傳導物質（neurotransmitter）、避免神經過度興奮甚至凋亡。\n\n中文對照：question：膠質細胞『保護』功能的一個例子是？\nchoices：- 清除突觸間隙的神經傳導物、防過度興奮\n- 產生動作電位\n- 收縮做工\n- 分泌荷爾蒙到血液",
           "choices": [
-            "Removing neurotransmitters from the synaptic cleft to prevent overexcitation",
-            "Generating action potentials",
-            "Contracting to perform work",
-            "Secreting hormones into the blood"
-          ]
+            "清除突觸間隙的神經傳導物、防過度興奮\n英文：Removing neurotransmitters from the synaptic cleft to prevent overexcitation",
+            "產生動作電位\n英文：Generating action potentials",
+            "收縮做工\n英文：Contracting to perform work",
+            "分泌荷爾蒙到血液\n英文：Secreting hormones into the blood"
+          ],
+          "id": "cdb9caa25"
         },
         {
           "type": "card",
           "title": "中樞 vs 周邊膠質細胞對照",
-          "body": "**連到前一觀念**\n同樣功能，中樞和周邊名字不同——考試愛考。\n\n**觀念**\n支持/營養：中樞 astrocyte ↔ 周邊 satellite cell。做髓鞘：中樞 oligodendrocyte ↔ 周邊 Schwann cell。中樞特有：microglia（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。\n\n**為什麼**\n看到 microglia / ependymal / oligodendrocyte / astrocyte → 中樞；看到 Schwann cell / satellite cell → 周邊。astrocyte 也參與形成 BBB。\n\n**考試角度**\n- astrocyte(中樞) ↔ satellite cell(周邊)\n- oligodendrocyte(中樞) ↔ Schwann cell(周邊)：都做髓鞘\n- microglia、ependymal：中樞\n\n**英文考句**\n- Myelin is formed by oligodendrocytes in the CNS and by Schwann cells in the PNS.\n- Astrocyte (CNS) corresponds to the satellite cell (PNS).\n\n**易錯與比較**\noligodendrocyte 與 Schwann cell 都做髓鞘，差別只在中樞 vs 周邊。",
+          "body": "**連到前一觀念**\n同樣功能，中樞和周邊名字不同——考試愛考。\n\n**觀念**\n支持/營養：中樞 星狀膠質細胞（astrocyte） ↔ 周邊 satellite cell。做髓鞘：中樞 寡樹突膠質細胞（oligodendrocyte） ↔ 周邊 許旺氏細胞（Schwann cell）。中樞特有：微膠質細胞（microglia）（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。\n\n**為什麼**\n看到 微膠質細胞 / ependymal / 寡樹突膠質細胞 / 星狀膠質細胞 → 中樞；看到 許旺氏細胞 / satellite cell → 周邊。星狀膠質細胞 也參與形成 血腦障壁（BBB）。\n\n**考試角度**\n- 星狀膠質細胞(中樞) ↔ satellite cell(周邊)\n- 寡樹突膠質細胞(中樞) ↔ 許旺氏細胞(周邊)：都做髓鞘\n- 微膠質細胞、ependymal：中樞\n\n**中文重點＋英文考句**\n- 星狀膠質細胞（astrocyte）(中樞) ↔ satellite cell(周邊)\n- 寡樹突膠質細胞（oligodendrocyte）(中樞) ↔ 許旺氏細胞（Schwann cell）(周邊)：都做髓鞘\n- 微膠質細胞（microglia）、ependymal：中樞\n\n【英文原文】\n- Myelin is formed by oligodendrocytes in the CNS and by Schwann cells in the PNS.\n- Astrocyte (CNS) corresponds to the satellite cell (PNS).\n\n**易錯與比較**\n寡樹突膠質細胞（oligodendrocyte） 與 許旺氏細胞（Schwann cell） 都做髓鞘，差別只在中樞 vs 周邊。",
           "keys": [
-            "astrocyte(中樞) ↔ satellite cell(周邊)",
-            "oligodendrocyte(中樞) ↔ Schwann cell(周邊)：都做髓鞘",
-            "microglia、ependymal：中樞"
+            "星狀膠質細胞（astrocyte）(中樞) ↔ satellite cell(周邊)",
+            "寡樹突膠質細胞（oligodendrocyte）(中樞) ↔ 許旺氏細胞（Schwann cell）(周邊)：都做髓鞘",
+            "微膠質細胞（microglia）、ependymal：中樞"
           ],
-          "tip": "oligodendrocyte 與 Schwann cell 都做髓鞘，差別只在中樞 vs 周邊。"
+          "tip": "寡樹突膠質細胞（oligodendrocyte） 與 許旺氏細胞（Schwann cell） 都做髓鞘，差別只在中樞 vs 周邊。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Which glial cell forms myelin in the peripheral nervous system?",
+          "q": "在周邊神經系統製造髓鞘的膠質細胞是？\n英文：Which glial cell forms myelin in the peripheral nervous system?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "周邊由 Schwann cell、中樞由 oligodendrocyte 製造髓鞘。\n\n正確選項：Schwann cell。\n支持/營養：中樞 astrocyte ↔ 周邊 satellite cell。做髓鞘：中樞 oligodendrocyte ↔ 周邊 Schwann cell。中樞特有：microglia（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。\n\n中文對照：question：在周邊神經系統製造髓鞘的膠質細胞是？\nchoices：- Schwann cell\n- oligodendrocyte\n- astrocyte\n- microglia",
+          "explain": "周邊由 許旺氏細胞（Schwann cell）、中樞由 寡樹突膠質細胞（oligodendrocyte） 製造髓鞘。\n\n正確選項：許旺氏細胞（Schwann cell）。\n支持/營養：中樞 星狀膠質細胞（astrocyte） ↔ 周邊 satellite cell。做髓鞘：中樞 寡樹突膠質細胞（oligodendrocyte） ↔ 周邊 許旺氏細胞（Schwann cell）。中樞特有：微膠質細胞（microglia）（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。\n\n中文對照：question：在周邊神經系統製造髓鞘的膠質細胞是？\nchoices：- 許旺氏細胞（Schwann cell）\n- 寡樹突膠質細胞（oligodendrocyte）\n- 星狀膠質細胞（astrocyte）\n- 微膠質細胞（microglia）",
           "choices": [
-            "Schwann cell",
-            "Oligodendrocyte",
-            "Astrocyte",
-            "Microglia"
-          ]
+            "許旺氏細胞（Schwann cell）\n英文：Schwann cell",
+            "寡樹突膠質細胞（oligodendrocyte）\n英文：Oligodendrocyte",
+            "星狀膠質細胞（astrocyte）\n英文：Astrocyte",
+            "微膠質細胞（microglia）\n英文：Microglia"
+          ],
+          "id": "c46849d3a"
         },
         {
           "type": "example",
           "title": "範例拆解：中樞 vs 周邊膠質細胞對照",
-          "problem": "Which glial cell forms myelin in the peripheral nervous system?\n\nA. Schwann cell\nB. Oligodendrocyte\nC. Astrocyte\nD. Microglia",
+          "problem": "在周邊神經系統製造髓鞘的膠質細胞是？（Which glial cell forms myelin in the peripheral nervous system?）\n\nA. 許旺氏細胞（Schwann cell）\nB. 寡樹突膠質細胞（Oligodendrocyte）\nC. 星狀膠質細胞（Astrocyte）\nD. 微膠質細胞（Microglia）",
           "steps": [
             "先確認題目問的主題：中樞 vs 周邊膠質細胞對照",
-            "支持/營養：中樞 astrocyte ↔ 周邊 satellite cell。做髓鞘：中樞 oligodendrocyte ↔ 周邊 Schwann cell。中樞特有：microglia（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。",
-            "把判斷依據連回題目：周邊由 Schwann cell、中樞由 oligodendrocyte 製造髓鞘。\n\n正確選項：Schwann cell。\n支持/營養：中樞 astrocyte ↔ 周邊 satellite cell。做髓鞘：中樞 oligodendrocyte ↔ 周邊 Schwann cell。中樞特有：microglia（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。\n\n中文對照：question：在周邊神經系統製造髓鞘的膠質細胞是？\nchoices：- Schwann cell\n- oligodendrocyte\n- astrocyte\n- microglia"
+            "支持/營養：中樞 星狀膠質細胞（astrocyte） ↔ 周邊 satellite cell。做髓鞘：中樞 寡樹突膠質細胞（oligodendrocyte） ↔ 周邊 許旺氏細胞（Schwann cell）。中樞特有：微膠質細胞（microglia）（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。",
+            "把判斷依據連回題目：周邊由 許旺氏細胞（Schwann cell）、中樞由 寡樹突膠質細胞（oligodendrocyte） 製造髓鞘。\n\n正確選項：許旺氏細胞（Schwann cell）。\n支持/營養：中樞 星狀膠質細胞（astrocyte） ↔ 周邊 satellite cell。做髓鞘：中樞 寡樹突膠質細胞（oligodendrocyte） ↔ 周邊 許旺氏細胞（Schwann cell）。中樞特有：微膠質細胞（microglia）（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。\n\n中文對照：question：在周邊神經系統製造髓鞘的膠質細胞是？\nchoices：- 許旺氏細胞（Schwann cell）\n- 寡樹突膠質細胞（oligodendrocyte）\n- 星狀膠質細胞（astrocyte）\n- 微膠質細胞（microglia）"
           ],
-          "answer": "Schwann cell"
+          "answer": "許旺氏細胞（Schwann cell）\n英文：Schwann cell"
         },
         {
           "type": "practice",
@@ -262,59 +273,65 @@
           "checks": [
             {
               "kind": "single",
-              "q": "Which is an example of the protective function of glial cells?",
+              "q": "膠質細胞『保護』功能的一個例子是？\n英文：Which is an example of the protective function of glial cells?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "glia 幫忙清除 neurotransmitter，避免神經過度興奮。\n\n正確選項：Removing neurotransmitters from the synaptic cleft to prevent overexcitation。\n① 支持：維持神經網路結構穩定；② 營養：神經缺氧/缺養分時，如 astrocyte 提供養分；③ 保護：清除突觸間隙的 neurotransmitter、避免神經過度興奮甚至凋亡。\n\n中文對照：question：膠質細胞『保護』功能的一個例子是？\nchoices：- 清除突觸間隙的神經傳導物、防過度興奮\n- 產生動作電位\n- 收縮做工\n- 分泌荷爾蒙到血液",
+              "explain": "膠質細胞（glia） 幫忙清除 神經傳導物質（neurotransmitter），避免神經過度興奮。\n\n正確選項：清除突觸間隙的神經傳導物、防過度興奮（Removing neurotransmitters from the synaptic cleft to prevent overexcitation）。\n① 支持：維持神經網路結構穩定；② 營養：神經缺氧/缺養分時，如 星狀膠質細胞（astrocyte） 提供養分；③ 保護：清除突觸間隙的 神經傳導物質（neurotransmitter）、避免神經過度興奮甚至凋亡。\n\n中文對照：question：膠質細胞『保護』功能的一個例子是？\nchoices：- 清除突觸間隙的神經傳導物、防過度興奮\n- 產生動作電位\n- 收縮做工\n- 分泌荷爾蒙到血液",
               "choices": [
-                "Removing neurotransmitters from the synaptic cleft to prevent overexcitation",
-                "Generating action potentials",
-                "Contracting to perform work",
-                "Secreting hormones into the blood"
-              ]
+                "清除突觸間隙的神經傳導物、防過度興奮\n英文：Removing neurotransmitters from the synaptic cleft to prevent overexcitation",
+                "產生動作電位\n英文：Generating action potentials",
+                "收縮做工\n英文：Contracting to perform work",
+                "分泌荷爾蒙到血液\n英文：Secreting hormones into the blood"
+              ],
+              "id": "cdb9caa25"
             },
             {
               "kind": "single",
-              "q": "Which glial cell forms myelin in the peripheral nervous system?",
+              "q": "在周邊神經系統製造髓鞘的膠質細胞是？\n英文：Which glial cell forms myelin in the peripheral nervous system?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "周邊由 Schwann cell、中樞由 oligodendrocyte 製造髓鞘。\n\n正確選項：Schwann cell。\n支持/營養：中樞 astrocyte ↔ 周邊 satellite cell。做髓鞘：中樞 oligodendrocyte ↔ 周邊 Schwann cell。中樞特有：microglia（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。\n\n中文對照：question：在周邊神經系統製造髓鞘的膠質細胞是？\nchoices：- Schwann cell\n- oligodendrocyte\n- astrocyte\n- microglia",
+              "explain": "周邊由 許旺氏細胞（Schwann cell）、中樞由 寡樹突膠質細胞（oligodendrocyte） 製造髓鞘。\n\n正確選項：許旺氏細胞（Schwann cell）。\n支持/營養：中樞 星狀膠質細胞（astrocyte） ↔ 周邊 satellite cell。做髓鞘：中樞 寡樹突膠質細胞（oligodendrocyte） ↔ 周邊 許旺氏細胞（Schwann cell）。中樞特有：微膠質細胞（microglia）（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。\n\n中文對照：question：在周邊神經系統製造髓鞘的膠質細胞是？\nchoices：- 許旺氏細胞（Schwann cell）\n- 寡樹突膠質細胞（oligodendrocyte）\n- 星狀膠質細胞（astrocyte）\n- 微膠質細胞（microglia）",
               "choices": [
-                "Schwann cell",
-                "Oligodendrocyte",
-                "Astrocyte",
-                "Microglia"
-              ]
+                "許旺氏細胞（Schwann cell）\n英文：Schwann cell",
+                "寡樹突膠質細胞（oligodendrocyte）\n英文：Oligodendrocyte",
+                "星狀膠質細胞（astrocyte）\n英文：Astrocyte",
+                "微膠質細胞（microglia）\n英文：Microglia"
+              ],
+              "id": "c46849d3a"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "neuron：communication＋integration（數量以億計）",
-            "glia：支持/營養/保護（數量是 neuron 數倍）",
+            "神經元（neuron）：communication＋整合（integration）（數量以億計）",
+            "膠質細胞（glia）：支持/營養/保護（數量是 neuron 數倍）",
             "支持：穩定神經網路結構",
-            "營養：astrocyte 在缺養分時供養",
-            "astrocyte(中樞) ↔ satellite cell(周邊)",
-            "oligodendrocyte(中樞) ↔ Schwann cell(周邊)：都做髓鞘",
-            "neuron(溝通/整合) vs glia(支持/營養/保護，數量更多) → 中樞 astrocyte↔周邊 satellite、中樞 oligodendrocyte↔周邊 Schwann(都做髓鞘)、microglia/ependymal 屬中樞 → BBB(內皮＋astrocyte)控制誰能進中樞。"
+            "營養：星狀膠質細胞（astrocyte） 在缺養分時供養",
+            "星狀膠質細胞（astrocyte）(中樞) ↔ satellite cell(周邊)",
+            "寡樹突膠質細胞（oligodendrocyte）(中樞) ↔ 許旺氏細胞（Schwann cell）(周邊)：都做髓鞘",
+            "神經元（neuron）(溝通/整合) vs 膠質細胞（glia）(支持/營養/保護，數量更多) → 中樞 星狀膠質細胞（astrocyte）↔周邊 satellite、中樞 寡樹突膠質細胞（oligodendrocyte）↔周邊 Schwann(都做髓鞘)、微膠質細胞（microglia）/ependymal 屬中樞 → 血腦障壁（BBB）(內皮＋astrocyte)控制誰能進中樞。"
           ],
           "flash": [
             {
-              "front": "Neuron vs Glia",
-              "back": "神經組織兩大類細胞：neuron（神經元，數量以億計，功能是 communication 與 integration）與 glia / neuroglia（膠質細胞，數量是 neuron 的好幾倍，功能支持/營養/保護）。註：glia 本身是複數，不必再加 s。"
+              "front": "神經元（Neuron） vs 膠質細胞（Glia）",
+              "back": "神經組織兩大類細胞：神經元（neuron）（神經元，數量以億計，功能是 communication 與 integration）與 膠質細胞（glia） / neuroglia（膠質細胞，數量是 neuron 的好幾倍，功能支持/營養/保護）。註：膠質細胞（glia） 本身是複數，不必再加 s。",
+              "id": "f02e29692"
             },
             {
-              "front": "Glia 的三大功能：支持、營養、保護",
-              "back": "① 支持：維持神經網路結構穩定；② 營養：神經缺氧/缺養分時，如 astrocyte 提供養分；③ 保護：清除突觸間隙的 neurotransmitter、避免神經過度興奮甚至凋亡。"
+              "front": "膠質細胞（Glia） 的三大功能：支持、營養、保護",
+              "back": "① 支持：維持神經網路結構穩定；② 營養：神經缺氧/缺養分時，如 星狀膠質細胞（astrocyte） 提供養分；③ 保護：清除突觸間隙的 神經傳導物質（neurotransmitter）、避免神經過度興奮甚至凋亡。",
+              "id": "fdbf4afc9"
             },
             {
               "front": "中樞 vs 周邊膠質細胞對照",
-              "back": "支持/營養：中樞 astrocyte ↔ 周邊 satellite cell。做髓鞘：中樞 oligodendrocyte ↔ 周邊 Schwann cell。中樞特有：microglia（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。"
+              "back": "支持/營養：中樞 星狀膠質細胞（astrocyte） ↔ 周邊 satellite cell。做髓鞘：中樞 寡樹突膠質細胞（oligodendrocyte） ↔ 周邊 許旺氏細胞（Schwann cell）。中樞特有：微膠質細胞（microglia）（清除/感染，像周邊的 macrophage）、ependymal cell（室管膜）。",
+              "id": "f7468df6c"
             },
             {
-              "front": "Which statement about neurons and glial cells is correct?",
-              "back": "膠質細胞數量遠多於神經元，大腦大部分是 glia。\n\n正確選項：Glial cells outnumber neurons by several times。\n神經組織兩大類細胞：neuron（神經元，數量以億計，功能是 communication 與 integration）與 glia / neuroglia（膠質細胞，數量是 neuron 的好幾倍，功能支持/營養/保護）。註：glia 本身是複數，不必再加 s。\n\n中文對照：question：關於 neuron 與 glia，何者正確？\nchoices：- glia 數量是 neuron 的好幾倍\n- neuron 比 glia 多很多\n- 兩者數量相同\n- glia 不存在於大腦"
+              "front": "關於 神經元（neuron） 與 膠質細胞（glia），何者正確？\n英文：Which statement about neurons and glial cells is correct?",
+              "back": "膠質細胞數量遠多於神經元，大腦大部分是 膠質細胞（glia）。\n\n正確選項：膠質細胞（glia） 數量是 神經元（neuron） 的好幾倍（Glial cells outnumber neurons by several times）。\n神經組織兩大類細胞：神經元（neuron）（神經元，數量以億計，功能是 communication 與 integration）與 膠質細胞（glia） / neuroglia（膠質細胞，數量是 neuron 的好幾倍，功能支持/營養/保護）。註：膠質細胞（glia） 本身是複數，不必再加 s。\n\n中文對照：question：關於 神經元（neuron） 與 膠質細胞（glia），何者正確？\nchoices：- 膠質細胞（glia） 數量是 神經元（neuron） 的好幾倍\n- 神經元（neuron） 比 膠質細胞（glia） 多很多\n- 兩者數量相同\n- 膠質細胞（glia） 不存在於大腦",
+              "id": "fb2edac0a"
             }
           ]
         }
@@ -324,65 +341,67 @@
       "id": "cns-glia-2",
       "title": "第 4 站：膠質細胞與血腦屏障（2）",
       "goals": [
-        "解釋血腦屏障 BBB"
+        "解釋血腦屏障 血腦障壁（BBB）"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 4 站：膠質細胞與血腦屏障",
-          "body": "大腦多數其實是膠質細胞；glia 負責支持/營養/保護；中樞與周邊的膠質細胞名稱不同；BBB 控制誰能進中樞。\n\n- neuron vs glia：數量、功能差別。\n- glia 的三大功能：支持、營養、保護。\n- 中樞 vs 周邊膠質細胞對照（看名詞反應中樞/周邊）。\n- 血腦屏障 BBB：保護中樞、控制通透。"
+          "body": "大腦多數其實是膠質細胞；膠質細胞（glia） 負責支持/營養/保護；中樞與周邊的膠質細胞名稱不同；血腦障壁（BBB） 控制誰能進中樞。\n\n- 神經元（neuron） vs 膠質細胞：數量、功能差別。\n- 膠質細胞 的三大功能：支持、營養、保護。\n- 中樞 vs 周邊膠質細胞對照（看名詞反應中樞/周邊）。\n- 血腦屏障 血腦障壁：保護中樞、控制通透。"
         },
         {
           "type": "card",
-          "title": "血腦屏障 BBB",
-          "body": "**連到前一觀念**\n中樞為什麼能自成一套？因為有一道牆。\n\n**觀念**\n血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n**為什麼**\n很多血中物質不能任意進入中樞（如 serotonin 不能過 BBB，所以吃香蕉不會直接讓你快樂）。下視丘附近因與神經內分泌有關、BBB 較弱。病理時 BBB 變鬆，某些物質才通過。\n\n**考試角度**\n- BBB＝內皮細胞＋astrocyte，控制通透\n- 保護神經、避免亂入物質影響中樞\n- 下視丘區 BBB 較弱（neuroendocrine）\n\n**英文考句**\n- The blood-brain barrier (endothelial cells + astrocytes) controls what can enter the CNS.\n- Serotonin cannot cross the BBB.",
+          "title": "血腦屏障 血腦障壁（BBB）",
+          "body": "**連到前一觀念**\n中樞為什麼能自成一套？因為有一道牆。\n\n**觀念**\n血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n**為什麼**\n很多血中物質不能任意進入中樞（如 serotonin 不能過 BBB，所以吃香蕉不會直接讓你快樂）。下視丘附近因與神經內分泌有關、血腦障壁（BBB） 較弱。病理時 血腦障壁 變鬆，某些物質才通過。\n\n**考試角度**\n- 血腦障壁＝內皮細胞＋星狀膠質細胞，控制通透\n- 保護神經、避免亂入物質影響中樞\n- 下視丘區 血腦障壁 較弱（neuroendocrine）\n\n**中文重點＋英文考句**\n- 血腦障壁（BBB）＝內皮細胞＋星狀膠質細胞（astrocyte），控制通透\n- 保護神經、避免亂入物質影響中樞\n- 下視丘區 血腦障壁 較弱（neuroendocrine）\n\n【英文原文】\n- The blood-brain barrier (endothelial cells + astrocytes) controls what can enter the CNS.\n- Serotonin cannot cross the BBB.",
           "keys": [
-            "BBB＝內皮細胞＋astrocyte，控制通透",
+            "血腦障壁（BBB）＝內皮細胞＋星狀膠質細胞（astrocyte），控制通透",
             "保護神經、避免亂入物質影響中樞",
-            "下視丘區 BBB 較弱（neuroendocrine）"
+            "下視丘區 血腦障壁（BBB） 較弱（neuroendocrine）"
           ],
           "tip": ""
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Which structures primarily form the blood-brain barrier (BBB)?",
+          "q": "血腦屏障 血腦障壁（BBB） 主要由哪些構造組成？\n英文：Which structures primarily form the blood-brain barrier (BBB)?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "BBB 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：Vascular endothelial cells and astrocytes。\n血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 BBB 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與肌肉\n- 紅血球與血漿",
+          "explain": "血腦障壁（BBB） 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：血管內皮細胞與 星狀膠質細胞（astrocyte）（Vascular endothelial cells and astrocytes）。\n血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 血腦障壁（BBB） 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 星狀膠質細胞（astrocyte）\n- 神經元（neuron） 與 許旺氏細胞（Schwann cell）\n- 微膠質細胞（microglia） 與肌肉\n- 紅血球與血漿",
           "choices": [
-            "Vascular endothelial cells and astrocytes",
-            "Neurons and Schwann cells",
-            "Microglia and muscle cells",
-            "Red blood cells and plasma"
-          ]
+            "血管內皮細胞與 星狀膠質細胞（astrocyte）\n英文：Vascular endothelial cells and astrocytes",
+            "神經元（neuron） 與 許旺氏細胞（Schwann cell）\n英文：Neurons and Schwann cells",
+            "微膠質細胞（microglia） 與肌肉\n英文：Microglia and muscle cells",
+            "紅血球與血漿\n英文：Red blood cells and plasma"
+          ],
+          "id": "ce88654bc"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\nWhich structures primarily form the blood-brain barrier (BBB)?\n\nA. Vascular endothelial cells and astrocytes\nB. Neurons and Schwann cells\nC. Microglia and muscle cells\nD. Red blood cells and plasma\n\n**判斷步驟**\n- 先確認題目問的主題：血腦屏障 BBB\n- 血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n- 把判斷依據連回題目：BBB 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：Vascular endothelial cells and astrocytes。\n血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 BBB 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與肌肉\n- 紅血球與血漿\n\n**結論與依據**\nVascular endothelial cells and astrocytes",
+          "body": "**情境**\nWhich structures primarily form the blood-腦（brain） 障壁（barrier） (BBB)?\n\nA. 血管內皮細胞與 星狀膠質細胞（astrocyte）（Vascular endothelial cells and astrocytes）\nB. Neurons and Schwann cells\nC. 微膠質細胞（Microglia） and muscle cells\nD. 紅血球與血漿（Red blood cells and plasma）\n\n**判斷步驟**\n- 先確認題目問的主題：血腦屏障 血腦障壁（BBB）\n- 血腦屏障 blood-腦 障壁（BBB）由血管內皮細胞與 星狀膠質細胞 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n- 把判斷依據連回題目：血腦障壁 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：血管內皮細胞與 星狀膠質細胞（Vascular endothelial cells and astrocytes）。\n血腦屏障 blood-腦 障壁（BBB）由血管內皮細胞與 星狀膠質細胞 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 血腦障壁 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 星狀膠質細胞\n- 神經元（neuron） 與 許旺氏細胞（Schwann cell）\n- 微膠質細胞 與肌肉\n- 紅血球與血漿\n\n**結論與依據**\n血管內皮細胞與 星狀膠質細胞（Vascular endothelial cells and astrocytes）",
           "keys": [
-            "Vascular endothelial cells and astrocytes"
+            "血管內皮細胞與 星狀膠質細胞（astrocyte）\n英文：Vascular endothelial cells and astrocytes"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "Vascular endothelial cells and astrocytes",
+          "answer": "血管內皮細胞與 星狀膠質細胞（astrocyte）\n英文：Vascular endothelial cells and astrocytes",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：血腦屏障 BBB\n- 血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n- 把判斷依據連回題目：BBB 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：Vascular endothelial cells and astrocytes。\n血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 BBB 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與肌肉\n- 紅血球與血漿"
+          "explain": "- 先確認題目問的主題：血腦屏障 血腦障壁（BBB）\n- 血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n- 把判斷依據連回題目：血腦障壁（BBB） 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：血管內皮細胞與 星狀膠質細胞（astrocyte）（Vascular endothelial cells and astrocytes）。\n血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 血腦障壁（BBB） 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 星狀膠質細胞（astrocyte）\n- 神經元（neuron） 與 許旺氏細胞（Schwann cell）\n- 微膠質細胞（microglia） 與肌肉\n- 紅血球與血漿",
+          "id": "ce770bf0f"
         },
         {
           "type": "example",
-          "title": "範例拆解：血腦屏障 BBB",
-          "problem": "Which structures primarily form the blood-brain barrier (BBB)?\n\nA. Vascular endothelial cells and astrocytes\nB. Neurons and Schwann cells\nC. Microglia and muscle cells\nD. Red blood cells and plasma",
+          "title": "範例拆解：血腦屏障 血腦障壁（BBB）",
+          "problem": "Which structures primarily form the blood-腦（brain） 障壁（barrier） (BBB)?\n\nA. 血管內皮細胞與 星狀膠質細胞（astrocyte）（Vascular endothelial cells and astrocytes）\nB. Neurons and Schwann cells\nC. 微膠質細胞（Microglia） and muscle cells\nD. 紅血球與血漿（Red blood cells and plasma）",
           "steps": [
-            "先確認題目問的主題：血腦屏障 BBB",
-            "血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。",
-            "把判斷依據連回題目：BBB 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：Vascular endothelial cells and astrocytes。\n血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 BBB 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與肌肉\n- 紅血球與血漿"
+            "先確認題目問的主題：血腦屏障 血腦障壁（BBB）",
+            "血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。",
+            "把判斷依據連回題目：血腦障壁（BBB） 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：血管內皮細胞與 星狀膠質細胞（astrocyte）（Vascular endothelial cells and astrocytes）。\n血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 血腦障壁（BBB） 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 星狀膠質細胞（astrocyte）\n- 神經元（neuron） 與 許旺氏細胞（Schwann cell）\n- 微膠質細胞（microglia） 與肌肉\n- 紅血球與血漿"
           ],
-          "answer": "Vascular endothelial cells and astrocytes"
+          "answer": "血管內皮細胞與 星狀膠質細胞（astrocyte）\n英文：Vascular endothelial cells and astrocytes"
         },
         {
           "type": "practice",
@@ -394,44 +413,49 @@
           "checks": [
             {
               "kind": "single",
-              "q": "Which structures primarily form the blood-brain barrier (BBB)?",
+              "q": "血腦屏障 血腦障壁（BBB） 主要由哪些構造組成？\n英文：Which structures primarily form the blood-brain barrier (BBB)?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "BBB 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：Vascular endothelial cells and astrocytes。\n血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 BBB 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與肌肉\n- 紅血球與血漿",
+              "explain": "血腦障壁（BBB） 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：血管內皮細胞與 星狀膠質細胞（astrocyte）（Vascular endothelial cells and astrocytes）。\n血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 血腦障壁（BBB） 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 星狀膠質細胞（astrocyte）\n- 神經元（neuron） 與 許旺氏細胞（Schwann cell）\n- 微膠質細胞（microglia） 與肌肉\n- 紅血球與血漿",
               "choices": [
-                "Vascular endothelial cells and astrocytes",
-                "Neurons and Schwann cells",
-                "Microglia and muscle cells",
-                "Red blood cells and plasma"
-              ]
+                "血管內皮細胞與 星狀膠質細胞（astrocyte）\n英文：Vascular endothelial cells and astrocytes",
+                "神經元（neuron） 與 許旺氏細胞（Schwann cell）\n英文：Neurons and Schwann cells",
+                "微膠質細胞（microglia） 與肌肉\n英文：Microglia and muscle cells",
+                "紅血球與血漿\n英文：Red blood cells and plasma"
+              ],
+              "id": "ce88654bc"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "BBB＝內皮細胞＋astrocyte，控制通透",
+            "血腦障壁（BBB）＝內皮細胞＋星狀膠質細胞（astrocyte），控制通透",
             "保護神經、避免亂入物質影響中樞",
-            "neuron(溝通/整合) vs glia(支持/營養/保護，數量更多) → 中樞 astrocyte↔周邊 satellite、中樞 oligodendrocyte↔周邊 Schwann(都做髓鞘)、microglia/ependymal 屬中樞 → BBB(內皮＋astrocyte)控制誰能進中樞。",
-            "血腦屏障 BBB：BBB＝內皮細胞＋astrocyte，控制通透",
-            "BBB 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：Vascular endothelial cells and astrocytes。\n血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 BBB 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與肌肉\n- 紅血球與血漿"
+            "神經元（neuron）(溝通/整合) vs 膠質細胞（glia）(支持/營養/保護，數量更多) → 中樞 星狀膠質細胞（astrocyte）↔周邊 satellite、中樞 寡樹突膠質細胞（oligodendrocyte）↔周邊 Schwann(都做髓鞘)、微膠質細胞（microglia）/ependymal 屬中樞 → 血腦障壁（BBB）(內皮＋astrocyte)控制誰能進中樞。",
+            "血腦屏障 血腦障壁（BBB）：血腦障壁（BBB）＝內皮細胞＋星狀膠質細胞（astrocyte），控制通透",
+            "血腦障壁（BBB） 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：血管內皮細胞與 星狀膠質細胞（astrocyte）（Vascular endothelial cells and astrocytes）。\n血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 血腦障壁（BBB） 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 星狀膠質細胞（astrocyte）\n- 神經元（neuron） 與 許旺氏細胞（Schwann cell）\n- 微膠質細胞（microglia） 與肌肉\n- 紅血球與血漿"
           ],
           "flash": [
             {
-              "front": "血腦屏障 BBB",
-              "back": "血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。"
+              "front": "血腦屏障 血腦障壁（BBB）",
+              "back": "血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。",
+              "id": "fffbbd6ac"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：血腦屏障 BBB\n- 血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n- 把判斷依據連回題目：BBB 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：Vascular endothelial cells and astrocytes。\n血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 BBB 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與肌肉\n- 紅血球與血漿"
+              "back": "- 先確認題目問的主題：血腦屏障 血腦障壁（BBB）\n- 血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n- 把判斷依據連回題目：血腦障壁（BBB） 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：血管內皮細胞與 星狀膠質細胞（astrocyte）（Vascular endothelial cells and astrocytes）。\n血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 血腦障壁（BBB） 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 星狀膠質細胞（astrocyte）\n- 神經元（neuron） 與 許旺氏細胞（Schwann cell）\n- 微膠質細胞（microglia） 與肌肉\n- 紅血球與血漿",
+              "id": "fe770bf0f"
             },
             {
-              "front": "Which structures primarily form the blood-brain barrier (BBB)?",
-              "back": "BBB 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：Vascular endothelial cells and astrocytes。\n血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 BBB 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與肌肉\n- 紅血球與血漿"
+              "front": "血腦屏障 血腦障壁（BBB） 主要由哪些構造組成？\n英文：Which structures primarily form the blood-brain barrier (BBB)?",
+              "back": "血腦障壁（BBB） 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：血管內皮細胞與 星狀膠質細胞（astrocyte）（Vascular endothelial cells and astrocytes）。\n血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 血腦障壁（BBB） 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 星狀膠質細胞（astrocyte）\n- 神經元（neuron） 與 許旺氏細胞（Schwann cell）\n- 微膠質細胞（microglia） 與肌肉\n- 紅血球與血漿",
+              "id": "fe88654bc"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：血腦屏障 BBB\n- 血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n- 把判斷依據連回題目：BBB 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：Vascular endothelial cells and astrocytes。\n血腦屏障 blood-brain barrier（BBB）由血管內皮細胞與 astrocyte 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 BBB 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 astrocyte\n- neuron 與 Schwann cell\n- microglia 與肌肉\n- 紅血球與血漿"
+              "back": "- 先確認題目問的主題：血腦屏障 血腦障壁（BBB）\n- 血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n- 把判斷依據連回題目：血腦障壁（BBB） 由血管內皮與星狀膠質細胞等共同構成，控制中樞通透性。\n\n正確選項：血管內皮細胞與 星狀膠質細胞（astrocyte）（Vascular endothelial cells and astrocytes）。\n血腦屏障 blood-腦（brain） 障壁（barrier）（BBB）由血管內皮細胞與 星狀膠質細胞（astrocyte） 等共同組成，控制誰能進入中樞。它保護易受興奮傷害的神經，正常生理下控制得很嚴。\n\n中文對照：question：血腦屏障 血腦障壁（BBB） 主要由哪些構造組成？\nchoices：- 血管內皮細胞與 星狀膠質細胞（astrocyte）\n- 神經元（neuron） 與 許旺氏細胞（Schwann cell）\n- 微膠質細胞（microglia） 與肌肉\n- 紅血球與血漿",
+              "id": "fe770bf0f"
             }
           ]
         }
@@ -443,45 +467,46 @@
       "goals": [
         "解釋髓鞘與 node of Ranvier：跳躍傳導",
         "解釋灰質 vs 白質（大腦與脊髓相反）",
-        "解釋補充：substantia nigra 與 Parkinson"
+        "解釋補充：黑質（substantia nigra） 與 Parkinson"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 5 站：髓鞘、跳躍傳導與灰白質",
-          "body": "髓鞘讓動作電位在 node of Ranvier 之間跳躍、加速傳導；灰質是細胞本體、白質是有髓軸突，大腦與脊髓內外相反。\n\n- 髓鞘與 node of Ranvier：跳躍傳導加速。\n- 灰質 vs 白質：誰是本體、誰是軸突。\n- 補充：substantia nigra 與 Parkinson。"
+          "body": "髓鞘讓動作電位在 node of Ranvier 之間跳躍、加速傳導；灰質是細胞本體、白質是有髓軸突，大腦與脊髓內外相反。\n\n- 髓鞘與 node of Ranvier：跳躍傳導加速。\n- 灰質 vs 白質：誰是本體、誰是軸突。\n- 補充：黑質（substantia nigra） 與 Parkinson。"
         },
         {
           "type": "card",
           "title": "髓鞘與 node of Ranvier：跳躍傳導",
-          "body": "**連到前一觀念**\n有些軸突包了一層『絕緣皮』，傳得特別快。\n\n**觀念**\n髓鞘 myelin sheath 像一層層包在 axon 外（中樞由 oligodendrocyte、周邊由 Schwann cell 形成）。髓鞘之間的間隔叫 node of Ranvier；動作電位在這些結之間跳躍式傳導（saltatory conduction），讓速度變快。\n\n**為什麼**\n髓鞘是絕緣的，電訊號只能在無髓鞘的 node 處『跳』著重新激發，不必沿整條膜慢慢走，所以快很多。\n\n**考試角度**\n- 髓鞘：中樞 oligodendrocyte／周邊 Schwann cell\n- node of Ranvier：髓鞘間的間隔\n- 跳躍傳導 saltatory conduction → 加速\n\n**英文考句**\n- Action potentials jump between nodes of Ranvier (saltatory conduction), increasing conduction velocity.",
+          "body": "**連到前一觀念**\n有些軸突包了一層『絕緣皮』，傳得特別快。\n\n**觀念**\n髓鞘 （myelin） sheath 像一層層包在 軸突（axon） 外（中樞由 oligodendrocyte、周邊由 Schwann cell 形成）。髓鞘之間的間隔叫 node of Ranvier；動作電位在這些結之間跳躍式傳導（saltatory conduction），讓速度變快。\n\n**為什麼**\n髓鞘是絕緣的，電訊號只能在無髓鞘的 node 處『跳』著重新激發，不必沿整條膜慢慢走，所以快很多。\n\n**考試角度**\n- 髓鞘：中樞 寡樹突膠質細胞（oligodendrocyte）／周邊 許旺氏細胞（Schwann cell）\n- node of Ranvier：髓鞘間的間隔\n- 跳躍傳導 跳躍式傳導（saltatory conduction） → 加速\n\n**中文重點＋英文考句**\n- 髓鞘：中樞 寡樹突膠質細胞（oligodendrocyte）／周邊 許旺氏細胞（Schwann cell）\n- node of Ranvier：髓鞘間的間隔\n- 跳躍傳導 跳躍式傳導（saltatory conduction） → 加速\n\n【英文原文】\n- Action potentials jump between nodes of Ranvier (saltatory conduction), increasing conduction velocity.",
           "keys": [
-            "髓鞘：中樞 oligodendrocyte／周邊 Schwann cell",
+            "髓鞘：中樞 寡樹突膠質細胞（oligodendrocyte）／周邊 許旺氏細胞（Schwann cell）",
             "node of Ranvier：髓鞘間的間隔",
-            "跳躍傳導 saltatory conduction → 加速"
+            "跳躍傳導 跳躍式傳導（saltatory conduction） → 加速"
           ],
           "tip": ""
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "What is the main effect of action potentials jumping between nodes of Ranvier?",
+          "q": "動作電位在 node of Ranvier 之間跳躍傳導，主要效果是？\n英文：What is the main effect of action potentials jumping between nodes of Ranvier?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "跳躍傳導 saltatory conduction 讓有髓軸突傳得更快。\n\n正確選項：Faster conduction。\n髓鞘 myelin sheath 像一層層包在 axon 外（中樞由 oligodendrocyte、周邊由 Schwann cell 形成）。髓鞘之間的間隔叫 node of Ranvier；動作電位在這些結之間跳躍式傳導（saltatory conduction），讓速度變快。\n\n中文對照：question：動作電位在 node of Ranvier 之間跳躍傳導，主要效果是？\nchoices：- 加快傳導速度\n- 減慢傳導\n- 停止傳導\n- 改變方向",
+          "explain": "跳躍傳導 跳躍式傳導（saltatory conduction） 讓有髓軸突傳得更快。\n\n正確選項：Faster conduction。\n髓鞘 （myelin） sheath 像一層層包在 軸突（axon） 外（中樞由 oligodendrocyte、周邊由 Schwann cell 形成）。髓鞘之間的間隔叫 node of Ranvier；動作電位在這些結之間跳躍式傳導（saltatory conduction），讓速度變快。\n\n中文對照：question：動作電位在 node of Ranvier 之間跳躍傳導，主要效果是？\nchoices：- 加快傳導速度\n- 減慢傳導\n- 停止傳導\n- 改變方向",
           "choices": [
-            "Faster conduction",
-            "Slower conduction",
-            "Stopped conduction",
-            "Reversed conduction"
-          ]
+            "加快傳導速度\n英文：Faster conduction",
+            "減慢傳導\n英文：Slower conduction",
+            "停止傳導\n英文：Stopped conduction",
+            "改變方向\n英文：Reversed conduction"
+          ],
+          "id": "cf46909fa"
         },
         {
           "type": "card",
           "title": "灰質 vs 白質（大腦與脊髓相反）",
-          "body": "**連到前一觀念**\n切開中樞會看到灰白兩色，各代表什麼。\n\n**觀念**\n白質 white matter 主要是有髓 axon 走行的地方（髓鞘含大量磷脂、脂質偏白）；灰質 gray matter 主要是 cell body 所在（含細胞核、蛋白等，看起來較灰）。大腦：外灰內白；脊髓：外白內灰。\n\n**為什麼**\n白＝脂質（髓鞘）＝軸突；灰＝細胞本體。大腦皮質在外是灰質、深部纖維是白質；脊髓剛好相反。灰質/白質是中樞神經系統的常用詞。\n\n**考試角度**\n- 白質＝有髓 axon（脂質白）；灰質＝cell body\n- 大腦：外灰內白\n- 脊髓：外白內灰\n\n**英文考句**\n- Gray matter = neuronal cell bodies; white matter = myelinated axons.\n- Cerebrum: gray outside / white inside; spinal cord: the reverse.\n\n**易錯與比較**\n大腦與脊髓的灰白質內外分布剛好相反，別記反。",
+          "body": "**連到前一觀念**\n切開中樞會看到灰白兩色，各代表什麼。\n\n**觀念**\n白質 （white matter） 主要是有髓 軸突（axon） 走行的地方（髓鞘含大量磷脂、脂質偏白）；灰質 （gray matter） 主要是 細胞本體（cell body） 所在（含細胞核、蛋白等，看起來較灰）。大腦：外灰內白；脊髓：外白內灰。\n\n**為什麼**\n白＝脂質（髓鞘）＝軸突；灰＝細胞本體。大腦皮質在外是灰質、深部纖維是白質；脊髓剛好相反。灰質/白質是中樞神經系統的常用詞。\n\n**考試角度**\n- 白質＝有髓 軸突（脂質白）；灰質＝細胞本體\n- 大腦：外灰內白\n- 脊髓：外白內灰\n\n**中文重點＋英文考句**\n- 白質＝有髓 軸突（axon）（脂質白）；灰質＝細胞本體（cell body）\n- 大腦：外灰內白\n- 脊髓：外白內灰\n\n【英文原文】\n- Gray matter = neuronal cell bodies; white matter = myelinated axons.\n- Cerebrum: gray outside / white inside; spinal cord: the reverse.\n\n**易錯與比較**\n大腦與脊髓的灰白質內外分布剛好相反，別記反。",
           "keys": [
-            "白質＝有髓 axon（脂質白）；灰質＝cell body",
+            "白質＝有髓 軸突（axon）（脂質白）；灰質＝細胞本體（cell body）",
             "大腦：外灰內白",
             "脊髓：外白內灰"
           ],
@@ -490,24 +515,25 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "How are gray matter and white matter arranged in the spinal cord?",
+          "q": "脊髓的灰質與白質分布是？\n英文：How are gray matter and white matter arranged in the spinal cord?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "脊髓內灰外白；大腦剛好相反（外灰內白）。\n\n正確選項：Gray matter inside and white matter outside。\n白質 white matter 主要是有髓 axon 走行的地方（髓鞘含大量磷脂、脂質偏白）；灰質 gray matter 主要是 cell body 所在（含細胞核、蛋白等，看起來較灰）。大腦：外灰內白；脊髓：外白內灰。\n\n中文對照：question：脊髓的灰質與白質分布是？\nchoices：- 內灰外白\n- 外灰內白\n- 全部灰質\n- 全部白質",
+          "explain": "脊髓內灰外白；大腦剛好相反（外灰內白）。\n\n正確選項：內灰外白（Gray matter inside and white matter outside）。\n白質 （white matter） 主要是有髓 軸突（axon） 走行的地方（髓鞘含大量磷脂、脂質偏白）；灰質 （gray matter） 主要是 細胞本體（cell body） 所在（含細胞核、蛋白等，看起來較灰）。大腦：外灰內白；脊髓：外白內灰。\n\n中文對照：question：脊髓的灰質與白質分布是？\nchoices：- 內灰外白\n- 外灰內白\n- 全部灰質\n- 全部白質",
           "choices": [
-            "Gray matter inside and white matter outside",
-            "Gray matter outside and white matter inside",
-            "All gray matter",
-            "All white matter"
-          ]
+            "內灰外白\n英文：Gray matter inside and white matter outside",
+            "外灰內白\n英文：Gray matter outside and white matter inside",
+            "全部灰質\n英文：All gray matter",
+            "全部白質\n英文：All white matter"
+          ],
+          "id": "ced3257fd"
         },
         {
           "type": "card",
-          "title": "補充：substantia nigra 與 Parkinson",
-          "body": "**連到前一觀念**\n順帶認一個和『黑』有關、常被問的腦區。\n\n**觀念**\n黑質 substantia nigra 是大腦特定腦區（與灰白質分類不同）。它的 dopamine 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。\n\n**為什麼**\nsubstantia nigra 的多巴胺神經元負責協調運動，退化後運動迴路失衡，出現顫抖、動作遲緩等。\n\n**考試角度**\n- substantia nigra：特定腦區（非灰/白質分類）\n- dopamine 神經元退化 → Parkinson disease\n- 典型表現：顫抖、動作控制問題\n\n**英文考句**\n- Degeneration of dopamine neurons in the substantia nigra causes Parkinson disease.",
+          "title": "補充：黑質（substantia nigra） 與 Parkinson",
+          "body": "**連到前一觀念**\n順帶認一個和『黑』有關、常被問的腦區。\n\n**觀念**\n黑質 （substantia nigra） 是大腦特定腦區（與灰白質分類不同）。它的 多巴胺（dopamine） 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。\n\n**為什麼**\n黑質（substantia nigra） 的多巴胺神經元負責協調運動，退化後運動迴路失衡，出現顫抖、動作遲緩等。\n\n**考試角度**\n- 黑質：特定腦區（非灰/白質分類）\n- 多巴胺 神經元退化 → Parkinson disease\n- 典型表現：顫抖、動作控制問題\n\n**中文重點＋英文考句**\n- 黑質（substantia nigra）：特定腦區（非灰/白質分類）\n- 多巴胺（dopamine） 神經元退化 → Parkinson disease\n- 典型表現：顫抖、動作控制問題\n\n【英文原文】\n- Degeneration of dopamine neurons in the substantia nigra causes Parkinson disease.",
           "keys": [
-            "substantia nigra：特定腦區（非灰/白質分類）",
-            "dopamine 神經元退化 → Parkinson disease",
+            "黑質（substantia nigra）：特定腦區（非灰/白質分類）",
+            "多巴胺（dopamine） 神經元退化 → Parkinson disease",
             "典型表現：顫抖、動作控制問題"
           ],
           "tip": ""
@@ -515,27 +541,28 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "Parkinson disease is associated with degeneration of dopaminergic neurons in which brain region?",
+          "q": "巴金森氏症 Parkinson disease 與哪個腦區的多巴胺神經元退化有關？\n英文：Parkinson disease is associated with degeneration of dopaminergic neurons in which brain region?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "黑質 substantia nigra 的 dopamine 神經元退化 → Parkinson。\n\n正確選項：Substantia nigra。\n黑質 substantia nigra 是大腦特定腦區（與灰白質分類不同）。它的 dopamine 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。\n\n中文對照：question：巴金森氏症 Parkinson disease 與哪個腦區的多巴胺神經元退化有關？\nchoices：- substantia nigra（黑質）\n- hippocampus（海馬）\n- cerebellum（小腦）\n- 白質",
+          "explain": "黑質 （substantia nigra） 的 多巴胺（dopamine） 神經元退化 → Parkinson。\n\n正確選項：黑質（Substantia nigra）。\n黑質 （substantia nigra） 是大腦特定腦區（與灰白質分類不同）。它的 多巴胺（dopamine） 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。\n\n中文對照：question：巴金森氏症 Parkinson disease 與哪個腦區的多巴胺神經元退化有關？\nchoices：- substantia nigra（黑質）\n- 海馬迴（hippocampus）（海馬）\n- cerebellum（小腦）\n- 白質",
           "choices": [
-            "Substantia nigra",
-            "Hippocampus",
-            "Cerebellum",
-            "White matter"
-          ]
+            "substantia nigra（黑質）\n英文：Substantia nigra",
+            "海馬迴（hippocampus）（海馬）\n英文：Hippocampus",
+            "小腦\n英文：Cerebellum",
+            "白質\n英文：White matter"
+          ],
+          "id": "ce0a5a3f7"
         },
         {
           "type": "example",
-          "title": "範例拆解：補充：substantia nigra 與 Parkinson",
-          "problem": "Parkinson disease is associated with degeneration of dopaminergic neurons in which brain region?\n\nA. Substantia nigra\nB. Hippocampus\nC. Cerebellum\nD. White matter",
+          "title": "範例拆解：補充：黑質（substantia nigra） 與 Parkinson",
+          "problem": "巴金森氏症 Parkinson disease 與哪個腦區的多巴胺神經元退化有關？（Parkinson disease is associated with degeneration of dopaminergic neurons in which brain region?）\n\nA. 黑質（Substantia nigra）\nB. 海馬迴（Hippocampus）\nC. Cerebellum\nD. 白質（White matter）",
           "steps": [
-            "先確認題目問的主題：補充：substantia nigra 與 Parkinson",
-            "黑質 substantia nigra 是大腦特定腦區（與灰白質分類不同）。它的 dopamine 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。",
-            "把判斷依據連回題目：黑質 substantia nigra 的 dopamine 神經元退化 → Parkinson。\n\n正確選項：Substantia nigra。\n黑質 substantia nigra 是大腦特定腦區（與灰白質分類不同）。它的 dopamine 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。\n\n中文對照：question：巴金森氏症 Parkinson disease 與哪個腦區的多巴胺神經元退化有關？\nchoices：- substantia nigra（黑質）\n- hippocampus（海馬）\n- cerebellum（小腦）\n- 白質"
+            "先確認題目問的主題：補充：黑質（substantia nigra） 與 Parkinson",
+            "黑質 （substantia nigra） 是大腦特定腦區（與灰白質分類不同）。它的 多巴胺（dopamine） 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。",
+            "把判斷依據連回題目：黑質 （substantia nigra） 的 多巴胺（dopamine） 神經元退化 → Parkinson。\n\n正確選項：黑質（Substantia nigra）。\n黑質 （substantia nigra） 是大腦特定腦區（與灰白質分類不同）。它的 多巴胺（dopamine） 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。\n\n中文對照：question：巴金森氏症 Parkinson disease 與哪個腦區的多巴胺神經元退化有關？\nchoices：- substantia nigra（黑質）\n- 海馬迴（hippocampus）（海馬）\n- cerebellum（小腦）\n- 白質"
           ],
-          "answer": "Substantia nigra"
+          "answer": "substantia nigra（黑質）\n英文：Substantia nigra"
         },
         {
           "type": "practice",
@@ -547,59 +574,65 @@
           "checks": [
             {
               "kind": "single",
-              "q": "How are gray matter and white matter arranged in the spinal cord?",
+              "q": "脊髓的灰質與白質分布是？\n英文：How are gray matter and white matter arranged in the spinal cord?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "脊髓內灰外白；大腦剛好相反（外灰內白）。\n\n正確選項：Gray matter inside and white matter outside。\n白質 white matter 主要是有髓 axon 走行的地方（髓鞘含大量磷脂、脂質偏白）；灰質 gray matter 主要是 cell body 所在（含細胞核、蛋白等，看起來較灰）。大腦：外灰內白；脊髓：外白內灰。\n\n中文對照：question：脊髓的灰質與白質分布是？\nchoices：- 內灰外白\n- 外灰內白\n- 全部灰質\n- 全部白質",
+              "explain": "脊髓內灰外白；大腦剛好相反（外灰內白）。\n\n正確選項：內灰外白（Gray matter inside and white matter outside）。\n白質 （white matter） 主要是有髓 軸突（axon） 走行的地方（髓鞘含大量磷脂、脂質偏白）；灰質 （gray matter） 主要是 細胞本體（cell body） 所在（含細胞核、蛋白等，看起來較灰）。大腦：外灰內白；脊髓：外白內灰。\n\n中文對照：question：脊髓的灰質與白質分布是？\nchoices：- 內灰外白\n- 外灰內白\n- 全部灰質\n- 全部白質",
               "choices": [
-                "Gray matter inside and white matter outside",
-                "Gray matter outside and white matter inside",
-                "All gray matter",
-                "All white matter"
-              ]
+                "內灰外白\n英文：Gray matter inside and white matter outside",
+                "外灰內白\n英文：Gray matter outside and white matter inside",
+                "全部灰質\n英文：All gray matter",
+                "全部白質\n英文：All white matter"
+              ],
+              "id": "ced3257fd"
             },
             {
               "kind": "single",
-              "q": "Parkinson disease is associated with degeneration of dopaminergic neurons in which brain region?",
+              "q": "巴金森氏症 Parkinson disease 與哪個腦區的多巴胺神經元退化有關？\n英文：Parkinson disease is associated with degeneration of dopaminergic neurons in which brain region?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "黑質 substantia nigra 的 dopamine 神經元退化 → Parkinson。\n\n正確選項：Substantia nigra。\n黑質 substantia nigra 是大腦特定腦區（與灰白質分類不同）。它的 dopamine 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。\n\n中文對照：question：巴金森氏症 Parkinson disease 與哪個腦區的多巴胺神經元退化有關？\nchoices：- substantia nigra（黑質）\n- hippocampus（海馬）\n- cerebellum（小腦）\n- 白質",
+              "explain": "黑質 （substantia nigra） 的 多巴胺（dopamine） 神經元退化 → Parkinson。\n\n正確選項：黑質（Substantia nigra）。\n黑質 （substantia nigra） 是大腦特定腦區（與灰白質分類不同）。它的 多巴胺（dopamine） 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。\n\n中文對照：question：巴金森氏症 Parkinson disease 與哪個腦區的多巴胺神經元退化有關？\nchoices：- substantia nigra（黑質）\n- 海馬迴（hippocampus）（海馬）\n- cerebellum（小腦）\n- 白質",
               "choices": [
-                "Substantia nigra",
-                "Hippocampus",
-                "Cerebellum",
-                "White matter"
-              ]
+                "substantia nigra（黑質）\n英文：Substantia nigra",
+                "海馬迴（hippocampus）（海馬）\n英文：Hippocampus",
+                "小腦\n英文：Cerebellum",
+                "白質\n英文：White matter"
+              ],
+              "id": "ce0a5a3f7"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "髓鞘：中樞 oligodendrocyte／周邊 Schwann cell",
+            "髓鞘：中樞 寡樹突膠質細胞（oligodendrocyte）／周邊 許旺氏細胞（Schwann cell）",
             "node of Ranvier：髓鞘間的間隔",
-            "白質＝有髓 axon（脂質白）；灰質＝cell body",
+            "白質＝有髓 軸突（axon）（脂質白）；灰質＝細胞本體（cell body）",
             "大腦：外灰內白",
-            "substantia nigra：特定腦區（非灰/白質分類）",
-            "dopamine 神經元退化 → Parkinson disease",
-            "髓鞘(中樞 oligodendrocyte／周邊 Schwann)＋node of Ranvier → 跳躍傳導加速 → 白質＝有髓 axon(脂質白)、灰質＝cell body → 大腦外灰內白、脊髓相反 → substantia nigra 的 dopamine 神經退化 → Parkinson。"
+            "黑質（substantia nigra）：特定腦區（非灰/白質分類）",
+            "多巴胺（dopamine） 神經元退化 → Parkinson disease",
+            "髓鞘(中樞 oligodendrocyte／周邊 Schwann)＋node of Ranvier → 跳躍傳導加速 → 白質＝有髓 軸突（axon）(脂質白)、灰質＝細胞本體（cell body） → 大腦外灰內白、脊髓相反 → 黑質（substantia nigra） 的 多巴胺（dopamine） 神經退化 → Parkinson。"
           ],
           "flash": [
             {
               "front": "髓鞘與 node of Ranvier：跳躍傳導",
-              "back": "髓鞘 myelin sheath 像一層層包在 axon 外（中樞由 oligodendrocyte、周邊由 Schwann cell 形成）。髓鞘之間的間隔叫 node of Ranvier；動作電位在這些結之間跳躍式傳導（saltatory conduction），讓速度變快。"
+              "back": "髓鞘 （myelin） sheath 像一層層包在 軸突（axon） 外（中樞由 oligodendrocyte、周邊由 Schwann cell 形成）。髓鞘之間的間隔叫 node of Ranvier；動作電位在這些結之間跳躍式傳導（saltatory conduction），讓速度變快。",
+              "id": "fbf73644d"
             },
             {
               "front": "灰質 vs 白質（大腦與脊髓相反）",
-              "back": "白質 white matter 主要是有髓 axon 走行的地方（髓鞘含大量磷脂、脂質偏白）；灰質 gray matter 主要是 cell body 所在（含細胞核、蛋白等，看起來較灰）。大腦：外灰內白；脊髓：外白內灰。"
+              "back": "白質 （white matter） 主要是有髓 軸突（axon） 走行的地方（髓鞘含大量磷脂、脂質偏白）；灰質 （gray matter） 主要是 細胞本體（cell body） 所在（含細胞核、蛋白等，看起來較灰）。大腦：外灰內白；脊髓：外白內灰。",
+              "id": "f4fa47612"
             },
             {
-              "front": "補充：substantia nigra 與 Parkinson",
-              "back": "黑質 substantia nigra 是大腦特定腦區（與灰白質分類不同）。它的 dopamine 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。"
+              "front": "補充：黑質（substantia nigra） 與 Parkinson",
+              "back": "黑質 （substantia nigra） 是大腦特定腦區（與灰白質分類不同）。它的 多巴胺（dopamine） 神經元退化，會造成動作控制問題，即 Parkinson disease（巴金森氏症，典型如顫抖）。",
+              "id": "f207f59eb"
             },
             {
-              "front": "What is the main effect of action potentials jumping between nodes of Ranvier?",
-              "back": "跳躍傳導 saltatory conduction 讓有髓軸突傳得更快。\n\n正確選項：Faster conduction。\n髓鞘 myelin sheath 像一層層包在 axon 外（中樞由 oligodendrocyte、周邊由 Schwann cell 形成）。髓鞘之間的間隔叫 node of Ranvier；動作電位在這些結之間跳躍式傳導（saltatory conduction），讓速度變快。\n\n中文對照：question：動作電位在 node of Ranvier 之間跳躍傳導，主要效果是？\nchoices：- 加快傳導速度\n- 減慢傳導\n- 停止傳導\n- 改變方向"
+              "front": "動作電位在 node of Ranvier 之間跳躍傳導，主要效果是？\n英文：What is the main effect of action potentials jumping between nodes of Ranvier?",
+              "back": "跳躍傳導 跳躍式傳導（saltatory conduction） 讓有髓軸突傳得更快。\n\n正確選項：Faster conduction。\n髓鞘 （myelin） sheath 像一層層包在 軸突（axon） 外（中樞由 oligodendrocyte、周邊由 Schwann cell 形成）。髓鞘之間的間隔叫 node of Ranvier；動作電位在這些結之間跳躍式傳導（saltatory conduction），讓速度變快。\n\n中文對照：question：動作電位在 node of Ranvier 之間跳躍傳導，主要效果是？\nchoices：- 加快傳導速度\n- 減慢傳導\n- 停止傳導\n- 改變方向",
+              "id": "ff46909fa"
             }
           ]
         }
@@ -611,7 +644,7 @@
       "goals": [
         "解釋必記與易錯",
         "解釋急速重點：英文名詞直接考",
-        "解釋急速重點：CNS / PNS 判定"
+        "解釋急速重點：中樞神經系統（CNS） / 周邊神經系統（PNS） 判定"
       ],
       "steps": [
         {
@@ -622,7 +655,7 @@
         {
           "type": "card",
           "title": "必記與易錯",
-          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\nmustKnow：- 三特性：可興奮(能產生 AP)、產生動作電位、調控/溝通(非收縮)。\n- CNS/PNS 鐵律：只要 neuron 任一部分在周邊就算 PNS；全部在中樞才算 CNS。\n- afferent/sensory/input＝周邊→中樞；efferent/motor/output＝中樞→周邊；三功能 sensory→integration→motor。\n- DRG 感覺神經元(本體周邊/terminal 中樞) 與 α motor neuron(本體中樞/axon 周邊) 都歸 PNS；12 對腦神經全 PNS。\n- axon hillock 是 AP 起始點；結構分類 uni/bi(視網膜)/pseudouni(DRG)/multipolar(中樞)。\n- 膠質對照：astrocyte↔satellite、oligodendrocyte↔Schwann(都做髓鞘)、microglia/ependymal 屬中樞；BBB＝內皮＋astrocyte。\n- node of Ranvier 跳躍傳導加速；白質＝有髓 axon、灰質＝cell body；大腦外灰內白、脊髓相反。\ntraps：- 判斷中樞/周邊看『有沒有任一部分在周邊』，不是看細胞本體在哪。\n- afferent(到中樞) 與 efferent(離中樞) 別混。\n- pseudounipolar 看似單極、功能像雙極（DRG）。\n- oligodendrocyte 與 Schwann cell 都做髓鞘，差在中樞 vs 周邊。\n- 灰白質：大腦外灰內白、脊髓外白內灰，別記反。",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\nmustKnow：- 三特性：可興奮(能產生 AP)、產生動作電位、調控/溝通(非收縮)。\n- 中樞神經系統（CNS）/周邊神經系統（PNS） 鐵律：只要 神經元（neuron） 任一部分在周邊就算 周邊神經系統；全部在中樞才算 中樞神經系統。\n- 傳入（afferent）/感覺（sensory）/輸入（input）＝周邊→中樞；傳出（efferent）/運動（motor）/輸出（output）＝中樞→周邊；三功能 感覺→整合（integration）→運動。\n- 背根神經節（DRG） 感覺神經元(本體周邊/terminal 中樞) 與 α 運動神經元（motor neuron）(本體中樞/axon 周邊) 都歸 周邊神經系統；12 對腦神經全 周邊神經系統。\n- 軸丘（axon hillock） 是 動作電位（AP） 起始點；結構分類 uni/bi(視網膜)/pseudouni(DRG)/多極（multipolar）(中樞)。\n- 膠質對照：星狀膠質細胞（astrocyte）↔satellite、寡樹突膠質細胞（oligodendrocyte）↔Schwann(都做髓鞘)、微膠質細胞（microglia）/ependymal 屬中樞；血腦障壁（BBB）＝內皮＋星狀膠質細胞。\n- node of Ranvier 跳躍傳導加速；白質＝有髓 軸突（axon）、灰質＝細胞本體（cell body）；大腦外灰內白、脊髓相反。\ntraps：- 判斷中樞/周邊看『有沒有任一部分在周邊』，不是看細胞本體在哪。\n- 傳入(到中樞) 與 傳出(離中樞) 別混。\n- 偽單極（pseudounipolar） 看似單極、功能像雙極（DRG）。\n- 寡樹突膠質細胞 與 許旺氏細胞（Schwann cell） 都做髓鞘，差在中樞 vs 周邊。\n- 灰白質：大腦外灰內白、脊髓外白內灰，別記反。",
           "keys": [
             "把本單元的關係串起來，確認易錯条件與方向。"
           ],
@@ -632,14 +665,15 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
-          "answer": "mustKnow：- 三特性：可興奮(能產生 AP)、產生動作電位、調控/溝通(非收縮)。\n- CNS/PNS 鐵律：只要 neuron 任一部分在周邊就算 PNS；全部在中樞才算 CNS。\n- afferent/sensory/input＝周邊→中樞；efferent/motor/output＝中樞→周邊；三功能 sensory→integration→motor。\n- DRG 感覺神經元(本體周邊/terminal 中樞) 與 α motor neuron(本體中樞/axon 周邊) 都歸 PNS；12 對腦神經全 PNS。\n- axon hillock 是 AP 起始點；結構分類 uni/bi(視網膜)/pseudouni(DRG)/multipolar(中樞)。\n- 膠質對照：astrocyte↔satellite、oligodendrocyte↔Schwann(都做髓鞘)、microglia/ependymal 屬中樞；BBB＝內皮＋astrocyte。\n- node of Ranvier 跳躍傳導加速；白質＝有髓 axon、灰質＝cell body；大腦外灰內白、脊髓相反。\ntraps：- 判斷中樞/周邊看『有沒有任一部分在周邊』，不是看細胞本體在哪。\n- afferent(到中樞) 與 efferent(離中樞) 別混。\n- pseudounipolar 看似單極、功能像雙極（DRG）。\n- oligodendrocyte 與 Schwann cell 都做髓鞘，差在中樞 vs 周邊。\n- 灰白質：大腦外灰內白、脊髓外白內灰，別記反。",
+          "answer": "mustKnow：- 三特性：可興奮(能產生 AP)、產生動作電位、調控/溝通(非收縮)。\n- 中樞神經系統（CNS）/周邊神經系統（PNS） 鐵律：只要 神經元（neuron） 任一部分在周邊就算 周邊神經系統（PNS）；全部在中樞才算 中樞神經系統（CNS）。\n- 傳入（afferent）/感覺（sensory）/輸入（input）＝周邊→中樞；傳出（efferent）/運動（motor）/輸出（output）＝中樞→周邊；三功能 感覺（sensory）→整合（integration）→運動（motor）。\n- 背根神經節（DRG） 感覺神經元(本體周邊/terminal 中樞) 與 α 運動神經元（motor neuron）(本體中樞/axon 周邊) 都歸 周邊神經系統（PNS）；12 對腦神經全 周邊神經系統（PNS）。\n- 軸丘（axon hillock） 是 動作電位（AP） 起始點；結構分類 uni/bi(視網膜)/pseudouni(DRG)/多極（multipolar）(中樞)。\n- 膠質對照：星狀膠質細胞（astrocyte）↔satellite、寡樹突膠質細胞（oligodendrocyte）↔Schwann(都做髓鞘)、微膠質細胞（microglia）/ependymal 屬中樞；血腦障壁（BBB）＝內皮＋星狀膠質細胞（astrocyte）。\n- node of Ranvier 跳躍傳導加速；白質＝有髓 軸突（axon）、灰質＝細胞本體（cell body）；大腦外灰內白、脊髓相反。\ntraps：- 判斷中樞/周邊看『有沒有任一部分在周邊』，不是看細胞本體在哪。\n- 傳入（afferent）(到中樞) 與 傳出（efferent）(離中樞) 別混。\n- 偽單極（pseudounipolar） 看似單極、功能像雙極（DRG）。\n- 寡樹突膠質細胞（oligodendrocyte） 與 許旺氏細胞（Schwann cell） 都做髓鞘，差在中樞 vs 周邊。\n- 灰白質：大腦外灰內白、脊髓外白內灰，別記反。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "mustKnow：- 三特性：可興奮(能產生 AP)、產生動作電位、調控/溝通(非收縮)。\n- CNS/PNS 鐵律：只要 neuron 任一部分在周邊就算 PNS；全部在中樞才算 CNS。\n- afferent/sensory/input＝周邊→中樞；efferent/motor/output＝中樞→周邊；三功能 sensory→integration→motor。\n- DRG 感覺神經元(本體周邊/terminal 中樞) 與 α motor neuron(本體中樞/axon 周邊) 都歸 PNS；12 對腦神經全 PNS。\n- axon hillock 是 AP 起始點；結構分類 uni/bi(視網膜)/pseudouni(DRG)/multipolar(中樞)。\n- 膠質對照：astrocyte↔satellite、oligodendrocyte↔Schwann(都做髓鞘)、microglia/ependymal 屬中樞；BBB＝內皮＋astrocyte。\n- node of Ranvier 跳躍傳導加速；白質＝有髓 axon、灰質＝cell body；大腦外灰內白、脊髓相反。\ntraps：- 判斷中樞/周邊看『有沒有任一部分在周邊』，不是看細胞本體在哪。\n- afferent(到中樞) 與 efferent(離中樞) 別混。\n- pseudounipolar 看似單極、功能像雙極（DRG）。\n- oligodendrocyte 與 Schwann cell 都做髓鞘，差在中樞 vs 周邊。\n- 灰白質：大腦外灰內白、脊髓外白內灰，別記反。"
+          "explain": "mustKnow：- 三特性：可興奮(能產生 AP)、產生動作電位、調控/溝通(非收縮)。\n- 中樞神經系統（CNS）/周邊神經系統（PNS） 鐵律：只要 神經元（neuron） 任一部分在周邊就算 周邊神經系統（PNS）；全部在中樞才算 中樞神經系統（CNS）。\n- 傳入（afferent）/感覺（sensory）/輸入（input）＝周邊→中樞；傳出（efferent）/運動（motor）/輸出（output）＝中樞→周邊；三功能 感覺（sensory）→整合（integration）→運動（motor）。\n- 背根神經節（DRG） 感覺神經元(本體周邊/terminal 中樞) 與 α 運動神經元（motor neuron）(本體中樞/axon 周邊) 都歸 周邊神經系統（PNS）；12 對腦神經全 周邊神經系統（PNS）。\n- 軸丘（axon hillock） 是 動作電位（AP） 起始點；結構分類 uni/bi(視網膜)/pseudouni(DRG)/多極（multipolar）(中樞)。\n- 膠質對照：星狀膠質細胞（astrocyte）↔satellite、寡樹突膠質細胞（oligodendrocyte）↔Schwann(都做髓鞘)、微膠質細胞（microglia）/ependymal 屬中樞；血腦障壁（BBB）＝內皮＋星狀膠質細胞（astrocyte）。\n- node of Ranvier 跳躍傳導加速；白質＝有髓 軸突（axon）、灰質＝細胞本體（cell body）；大腦外灰內白、脊髓相反。\ntraps：- 判斷中樞/周邊看『有沒有任一部分在周邊』，不是看細胞本體在哪。\n- 傳入（afferent）(到中樞) 與 傳出（efferent）(離中樞) 別混。\n- 偽單極（pseudounipolar） 看似單極、功能像雙極（DRG）。\n- 寡樹突膠質細胞（oligodendrocyte） 與 許旺氏細胞（Schwann cell） 都做髓鞘，差在中樞 vs 周邊。\n- 灰白質：大腦外灰內白、脊髓外白內灰，別記反。",
+          "id": "c7a4e730d"
         },
         {
           "type": "card",
           "title": "急速重點：英文名詞直接考",
-          "body": "**一句話／白話**\n這單元的題目常直接放英文，所以要做到看到字就能知道它是中樞、周邊、傳入還是傳出。\n\n**觀念**\nCNS/PNS、afferent/efferent、somatic/autonomic、cerebrum/cerebellum/brainstem/spinal cord 都要直接認英文。\n\n**易錯與比較**\n不能只認中文。\n\n**口訣**\n英文不是裝飾，是題目本體。",
+          "body": "**一句話／白話**\n這單元的題目常直接放英文，所以要做到看到字就能知道它是中樞、周邊、傳入還是傳出。\n\n**觀念**\n中樞神經系統（CNS）/周邊神經系統（PNS）、傳入（afferent）/傳出（efferent）、體神經（somatic）/自主神經（autonomic）、大腦（cerebrum）/cerebellum/腦幹（brainstem）/脊髓（spinal cord） 都要直接認英文。\n\n**易錯與比較**\n不能只認中文。\n\n**口訣**\n英文不是裝飾，是題目本體。",
           "keys": [
             "這單元的題目常直接放英文，所以要做到看到字就能知道它是中樞、周邊、傳入還是傳出。"
           ],
@@ -649,37 +683,39 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：英文名詞直接考」，並說出一個判斷依據。",
-          "answer": "CNS/PNS、afferent/efferent、somatic/autonomic、cerebrum/cerebellum/brainstem/spinal cord 都要直接認英文。",
+          "answer": "中樞神經系統（CNS）/周邊神經系統（PNS）、傳入（afferent）/傳出（efferent）、體神經（somatic）/自主神經（autonomic）、大腦（cerebrum）/cerebellum/腦幹（brainstem）/脊髓（spinal cord） 都要直接認英文。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "CNS/PNS、afferent/efferent、somatic/autonomic、cerebrum/cerebellum/brainstem/spinal cord 都要直接認英文。"
+          "explain": "中樞神經系統（CNS）/周邊神經系統（PNS）、傳入（afferent）/傳出（efferent）、體神經（somatic）/自主神經（autonomic）、大腦（cerebrum）/cerebellum/腦幹（brainstem）/脊髓（spinal cord） 都要直接認英文。",
+          "id": "cb935c8d9"
         },
         {
           "type": "card",
-          "title": "急速重點：CNS / PNS 判定",
-          "body": "**一句話／白話**\n一條神經只要有部分離開 brain 或 spinal cord，那段就屬於身體外圍的神經系統。\n\n**觀念**\n完全位於 brain 與 spinal cord 內才算 CNS；伸到中樞外的構造屬 PNS。\n\n**易錯與比較**\n常用 cell body 與 axon terminal 位置混淆。\n\n**口訣**\n全程待在中樞才叫中樞。",
+          "title": "急速重點：中樞神經系統（CNS） / 周邊神經系統（PNS） 判定",
+          "body": "**一句話／白話**\n一條神經只要有部分離開 腦（brain） 或 脊髓（spinal cord），那段就屬於身體外圍的神經系統。\n\n**觀念**\n完全位於 腦 與 脊髓 內才算 中樞神經系統（CNS）；伸到中樞外的構造屬 周邊神經系統（PNS）。\n\n**易錯與比較**\n常用 細胞本體（cell body） 與 軸突末端（axon terminal） 位置混淆。\n\n**口訣**\n全程待在中樞才叫中樞。",
           "keys": [
-            "一條神經只要有部分離開 brain 或 spinal cord，那段就屬於身體外圍的神經系統。"
+            "一條神經只要有部分離開 腦（brain） 或 脊髓（spinal cord），那段就屬於身體外圍的神經系統。"
           ],
           "tip": "口訣：全程待在中樞才叫中樞。"
         },
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：CNS / PNS 判定」，並說出一個判斷依據。",
-          "answer": "完全位於 brain 與 spinal cord 內才算 CNS；伸到中樞外的構造屬 PNS。",
+          "q": "用自己的話說明「急速重點：中樞神經系統（CNS） / 周邊神經系統（PNS） 判定」，並說出一個判斷依據。",
+          "answer": "完全位於 腦（brain） 與 脊髓（spinal cord） 內才算 中樞神經系統（CNS）；伸到中樞外的構造屬 周邊神經系統（PNS）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "完全位於 brain 與 spinal cord 內才算 CNS；伸到中樞外的構造屬 PNS。"
+          "explain": "完全位於 腦（brain） 與 脊髓（spinal cord） 內才算 中樞神經系統（CNS）；伸到中樞外的構造屬 周邊神經系統（PNS）。",
+          "id": "c02dd4de5"
         },
         {
           "type": "example",
-          "title": "範例拆解：急速重點：CNS / PNS 判定",
-          "problem": "用自己的話說明「急速重點：CNS / PNS 判定」，並說出一個判斷依據。",
+          "title": "範例拆解：急速重點：中樞神經系統（CNS） / 周邊神經系統（PNS） 判定",
+          "problem": "用自己的話說明「急速重點：中樞神經系統（CNS） / 周邊神經系統（PNS） 判定」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：急速重點：CNS / PNS 判定",
-            "完全位於 brain 與 spinal cord 內才算 CNS；伸到中樞外的構造屬 PNS。",
-            "把判斷依據連回題目：完全位於 brain 與 spinal cord 內才算 CNS；伸到中樞外的構造屬 PNS。"
+            "先確認題目問的主題：急速重點：中樞神經系統（CNS） / 周邊神經系統（PNS） 判定",
+            "完全位於 腦（brain） 與 脊髓（spinal cord） 內才算 中樞神經系統（CNS）；伸到中樞外的構造屬 周邊神經系統（PNS）。",
+            "把判斷依據連回題目：完全位於 腦（brain） 與 脊髓（spinal cord） 內才算 中樞神經系統（CNS）；伸到中樞外的構造屬 周邊神經系統（PNS）。"
           ],
-          "answer": "完全位於 brain 與 spinal cord 內才算 CNS；伸到中樞外的構造屬 PNS。"
+          "answer": "完全位於 腦（brain） 與 脊髓（spinal cord） 內才算 中樞神經系統（CNS）；伸到中樞外的構造屬 周邊神經系統（PNS）。"
         },
         {
           "type": "practice",
@@ -692,16 +728,18 @@
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：英文名詞直接考」，並說出一個判斷依據。",
-              "answer": "CNS/PNS、afferent/efferent、somatic/autonomic、cerebrum/cerebellum/brainstem/spinal cord 都要直接認英文。",
+              "answer": "中樞神經系統（CNS）/周邊神經系統（PNS）、傳入（afferent）/傳出（efferent）、體神經（somatic）/自主神經（autonomic）、大腦（cerebrum）/cerebellum/腦幹（brainstem）/脊髓（spinal cord） 都要直接認英文。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "CNS/PNS、afferent/efferent、somatic/autonomic、cerebrum/cerebellum/brainstem/spinal cord 都要直接認英文。"
+              "explain": "中樞神經系統（CNS）/周邊神經系統（PNS）、傳入（afferent）/傳出（efferent）、體神經（somatic）/自主神經（autonomic）、大腦（cerebrum）/cerebellum/腦幹（brainstem）/脊髓（spinal cord） 都要直接認英文。",
+              "id": "cb935c8d9"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：CNS / PNS 判定」，並說出一個判斷依據。",
-              "answer": "完全位於 brain 與 spinal cord 內才算 CNS；伸到中樞外的構造屬 PNS。",
+              "q": "用自己的話說明「急速重點：中樞神經系統（CNS） / 周邊神經系統（PNS） 判定」，並說出一個判斷依據。",
+              "answer": "完全位於 腦（brain） 與 脊髓（spinal cord） 內才算 中樞神經系統（CNS）；伸到中樞外的構造屬 周邊神經系統（PNS）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "完全位於 brain 與 spinal cord 內才算 CNS；伸到中樞外的構造屬 PNS。"
+              "explain": "完全位於 腦（brain） 與 脊髓（spinal cord） 內才算 中樞神經系統（CNS）；伸到中樞外的構造屬 周邊神經系統（PNS）。",
+              "id": "c02dd4de5"
             }
           ]
         },
@@ -710,26 +748,30 @@
           "points": [
             "把本單元的關係串起來，確認易錯条件與方向。",
             "這單元的題目常直接放英文，所以要做到看到字就能知道它是中樞、周邊、傳入還是傳出。",
-            "一條神經只要有部分離開 brain 或 spinal cord，那段就屬於身體外圍的神經系統。",
+            "一條神經只要有部分離開 腦（brain） 或 脊髓（spinal cord），那段就屬於身體外圍的神經系統。",
             "必記與易錯：把本單元的關係串起來，確認易錯条件與方向。",
             "急速重點：英文名詞直接考：這單元的題目常直接放英文，所以要做到看到字就能知道它是中樞、周邊、傳入還是傳出。"
           ],
           "flash": [
             {
               "front": "必記與易錯",
-              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+              "back": "把本單元的關係串起來，確認易錯条件與方向。",
+              "id": "fd53c0b23"
             },
             {
               "front": "急速重點：英文名詞直接考",
-              "back": "這單元的題目常直接放英文，所以要做到看到字就能知道它是中樞、周邊、傳入還是傳出。"
+              "back": "這單元的題目常直接放英文，所以要做到看到字就能知道它是中樞、周邊、傳入還是傳出。",
+              "id": "f77d19b8f"
             },
             {
-              "front": "急速重點：CNS / PNS 判定",
-              "back": "一條神經只要有部分離開 brain 或 spinal cord，那段就屬於身體外圍的神經系統。"
+              "front": "急速重點：中樞神經系統（CNS） / 周邊神經系統（PNS） 判定",
+              "back": "一條神經只要有部分離開 腦（brain） 或 脊髓（spinal cord），那段就屬於身體外圍的神經系統。",
+              "id": "f9e791805"
             },
             {
               "front": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
-              "back": "mustKnow：- 三特性：可興奮(能產生 AP)、產生動作電位、調控/溝通(非收縮)。\n- CNS/PNS 鐵律：只要 neuron 任一部分在周邊就算 PNS；全部在中樞才算 CNS。\n- afferent/sensory/input＝周邊→中樞；efferent/motor/output＝中樞→周邊；三功能 sensory→integration→motor。\n- DRG 感覺神經元(本體周邊/terminal 中樞) 與 α motor neuron(本體中樞/axon 周邊) 都歸 PNS；12 對腦神經全 PNS。\n- axon hillock 是 AP 起始點；結構分類 uni/bi(視網膜)/pseudouni(DRG)/multipolar(中樞)。\n- 膠質對照：astrocyte↔satellite、oligodendrocyte↔Schwann(都做髓鞘)、microglia/ependymal 屬中樞；BBB＝內皮＋astrocyte。\n- node of Ranvier 跳躍傳導加速；白質＝有髓 axon、灰質＝cell body；大腦外灰內白、脊髓相反。\ntraps：- 判斷中樞/周邊看『有沒有任一部分在周邊』，不是看細胞本體在哪。\n- afferent(到中樞) 與 efferent(離中樞) 別混。\n- pseudounipolar 看似單極、功能像雙極（DRG）。\n- oligodendrocyte 與 Schwann cell 都做髓鞘，差在中樞 vs 周邊。\n- 灰白質：大腦外灰內白、脊髓外白內灰，別記反。"
+              "back": "mustKnow：- 三特性：可興奮(能產生 AP)、產生動作電位、調控/溝通(非收縮)。\n- 中樞神經系統（CNS）/周邊神經系統（PNS） 鐵律：只要 神經元（neuron） 任一部分在周邊就算 周邊神經系統（PNS）；全部在中樞才算 中樞神經系統（CNS）。\n- 傳入（afferent）/感覺（sensory）/輸入（input）＝周邊→中樞；傳出（efferent）/運動（motor）/輸出（output）＝中樞→周邊；三功能 感覺（sensory）→整合（integration）→運動（motor）。\n- 背根神經節（DRG） 感覺神經元(本體周邊/terminal 中樞) 與 α 運動神經元（motor neuron）(本體中樞/axon 周邊) 都歸 周邊神經系統（PNS）；12 對腦神經全 周邊神經系統（PNS）。\n- 軸丘（axon hillock） 是 動作電位（AP） 起始點；結構分類 uni/bi(視網膜)/pseudouni(DRG)/多極（multipolar）(中樞)。\n- 膠質對照：星狀膠質細胞（astrocyte）↔satellite、寡樹突膠質細胞（oligodendrocyte）↔Schwann(都做髓鞘)、微膠質細胞（microglia）/ependymal 屬中樞；血腦障壁（BBB）＝內皮＋星狀膠質細胞（astrocyte）。\n- node of Ranvier 跳躍傳導加速；白質＝有髓 軸突（axon）、灰質＝細胞本體（cell body）；大腦外灰內白、脊髓相反。\ntraps：- 判斷中樞/周邊看『有沒有任一部分在周邊』，不是看細胞本體在哪。\n- 傳入（afferent）(到中樞) 與 傳出（efferent）(離中樞) 別混。\n- 偽單極（pseudounipolar） 看似單極、功能像雙極（DRG）。\n- 寡樹突膠質細胞（oligodendrocyte） 與 許旺氏細胞（Schwann cell） 都做髓鞘，差在中樞 vs 周邊。\n- 灰白質：大腦外灰內白、脊髓外白內灰，別記反。",
+              "id": "f7a4e730d"
             }
           ]
         }

@@ -23,22 +23,22 @@
       "id": "arterial-tree-1",
       "title": "從 internal carotid 到眼球：先抓主幹",
       "goals": [
-        "解釋ophthalmic artery 是眼球主要動脈入口",
-        "解釋central retinal artery 進入視神經再進視網膜",
+        "解釋眼動脈（ophthalmic artery） 是眼球主要動脈入口",
+        "解釋中央視網膜動脈（central retinal artery） 進入視神經再進視網膜",
         "解釋posterior ciliary arteries 是外層與葡萄膜主力"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "從 internal carotid 到眼球：先抓主幹",
-          "body": "大多數眼部血液來自 ophthalmic artery；先抓三個最重要分支。\n\n- 先認 ophthalmic artery。\n- 再認 central retinal artery。\n- 最後分 short/long posterior 與 anterior ciliary arteries。"
+          "body": "大多數眼部血液來自 眼動脈（ophthalmic artery）；先抓三個最重要分支。\n\n- 先認 眼動脈。\n- 再認 中央視網膜動脈（central retinal artery）。\n- 最後分 short/long posterior 與 前睫狀動脈（anterior ciliary arteries）。"
         },
         {
           "type": "card",
-          "title": "ophthalmic artery 是眼球主要動脈入口",
-          "body": "**一句話／白話**\nophthalmic artery 通常由 internal carotid artery 分出，進入 orbit 後供應眼球與周邊構造。\n\n**觀念**\nophthalmic artery 多在 optic canal 與 optic nerve 同行進入 orbit，分出 central retinal、posterior ciliary、lacrimal、muscular、supraorbital 等支。它與 external carotid branches 也有吻合。\n\n**考試角度**\n- ophthalmic artery 通常來自 internal carotid artery\n- 經 optic canal 進入 orbit\n- 分支供應眼球、眼外肌、眼瞼與淚腺等\n\n**口訣**\n內頸動脈送出眼動脈，眼動脈再分工。",
+          "title": "眼動脈（ophthalmic artery） 是眼球主要動脈入口",
+          "body": "**一句話／白話**\n眼動脈（ophthalmic artery） 通常由 內頸動脈（internal carotid artery） 分出，進入 orbit 後供應眼球與周邊構造。\n\n**觀念**\n眼動脈 多在 optic canal 與 視神經（optic nerve） 同行進入 orbit，分出 central 視網膜的（retinal）、posterior ciliary、lacrimal、muscular、supraorbital 等支。它與 external carotid branches 也有吻合。\n\n**考試角度**\n- 眼動脈 通常來自 內頸動脈\n- 經 optic canal 進入 orbit\n- 分支供應眼球、眼外肌、眼瞼與淚腺等\n\n**口訣**\n內頸動脈送出眼動脈，眼動脈再分工。",
           "keys": [
-            "ophthalmic artery 通常來自 internal carotid artery",
+            "眼動脈（ophthalmic artery） 通常來自 內頸動脈（internal carotid artery）",
             "經 optic canal 進入 orbit",
             "分支供應眼球、眼外肌、眼瞼與淚腺等"
           ],
@@ -47,24 +47,25 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "ophthalmic artery 通常是哪條動脈的分支？",
+          "q": "眼動脈（ophthalmic artery） 通常是哪條動脈的分支？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "ophthalmic artery 通常來自 internal carotid artery\n\n正確選項：internal carotid artery。\nophthalmic artery 多在 optic canal 與 optic nerve 同行進入 orbit，分出 central retinal、posterior ciliary、lacrimal、muscular、supraorbital 等支。它與 external carotid branches 也有吻合。",
+          "explain": "眼動脈（ophthalmic artery） 通常來自 內頸動脈（internal carotid artery）\n\n正確選項：內頸動脈（internal carotid artery）。\n眼動脈（ophthalmic artery） 多在 optic canal 與 視神經（optic nerve） 同行進入 orbit，分出 central 視網膜的（retinal）、posterior ciliary、lacrimal、muscular、supraorbital 等支。它與 external carotid branches 也有吻合。",
           "choices": [
-            "facial artery",
+            "顏面動脈（facial artery）",
             "external carotid artery",
-            "internal carotid artery",
+            "內頸動脈（internal carotid artery）",
             "basilar artery"
-          ]
+          ],
+          "id": "cf4f1e5ed"
         },
         {
           "type": "card",
-          "title": "central retinal artery 進入視神經再進視網膜",
-          "body": "**一句話／白話**\ncentral retinal artery 在視神經內前進，最後從 optic disc 出來供應內層視網膜。\n\n**觀念**\ncentral retinal artery 穿入 optic nerve 後於視乳頭分支，形成 superficial 與 deep capillary plexuses，主要供應 inner retina。它屬近似 end-arterial circulation，阻塞會造成急性無痛嚴重視力下降。\n\n**考試角度**\n- 供應 inner retina\n- 沿 optic nerve 進入並從 optic disc 分支\n- 阻塞是 ocular emergency\n\n**口訣**\n中央視網膜動脈走視神經隧道，出乳頭後灑向內層。",
+          "title": "中央視網膜動脈（central retinal artery） 進入視神經再進視網膜",
+          "body": "**一句話／白話**\n中央視網膜動脈（central retinal artery） 在視神經內前進，最後從 視乳頭（optic disc） 出來供應內層視網膜。\n\n**觀念**\n中央視網膜動脈 穿入 視神經（optic nerve） 後於視乳頭分支，形成 superficial 與 deep capillary plexuses，主要供應 內層視網膜（inner retina）。它屬近似 end-arterial circulation，阻塞會造成急性無痛嚴重視力下降。\n\n**考試角度**\n- 供應 內層視網膜\n- 沿 視神經 進入並從 視乳頭 分支\n- 阻塞是 ocular emergency\n\n**口訣**\n中央視網膜動脈走視神經隧道，出乳頭後灑向內層。",
           "keys": [
-            "供應 inner retina",
-            "沿 optic nerve 進入並從 optic disc 分支",
+            "供應 內層視網膜（inner retina）",
+            "沿 視神經（optic nerve） 進入並從 視乳頭（optic disc） 分支",
             "阻塞是 ocular emergency"
           ],
           "tip": "口訣：中央視網膜動脈走視神經隧道，出乳頭後灑向內層。"
@@ -72,23 +73,24 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "central retinal artery 主要供應？",
+          "q": "中央視網膜動脈（central retinal artery） 主要供應？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "供應 inner retina\n\n正確選項：inner retina。\ncentral retinal artery 穿入 optic nerve 後於視乳頭分支，形成 superficial 與 deep capillary plexuses，主要供應 inner retina。它屬近似 end-arterial circulation，阻塞會造成急性無痛嚴重視力下降。",
+          "explain": "供應 內層視網膜（inner retina）\n\n正確選項：內層視網膜（inner retina）。\n中央視網膜動脈（central retinal artery） 穿入 視神經（optic nerve） 後於視乳頭分支，形成 superficial 與 deep capillary plexuses，主要供應 內層視網膜（inner retina）。它屬近似 end-arterial circulation，阻塞會造成急性無痛嚴重視力下降。",
           "choices": [
-            "inner retina",
-            "lens",
-            "corneal epithelium",
-            "outer retina"
-          ]
+            "內層視網膜（inner retina）",
+            "透鏡（lens）",
+            "角膜上皮（corneal epithelium）",
+            "外層視網膜（outer retina）"
+          ],
+          "id": "c8da80902"
         },
         {
           "type": "card",
           "title": "posterior ciliary arteries 是外層與葡萄膜主力",
-          "body": "**一句話／白話**\nshort posterior ciliary arteries 主要養 choroid 與 optic nerve head；long posterior ciliary arteries 向前參與 iris/ciliary body circulation。\n\n**觀念**\n多條 short posterior ciliary arteries 穿 sclera 後供應 choroid，並透過 Zinn-Haller circle 等參與 optic nerve head 供血。兩條 long posterior ciliary arteries 向前走，與 anterior ciliary arteries 形成 iris major arterial circle。\n\n**考試角度**\n- short posterior ciliary：choroid、optic nerve head\n- long posterior ciliary：向前供應 ciliary body/iris\n- major arterial circle 由 long posterior 與 anterior ciliary contributions 形成\n\n**口訣**\n短後睫狀就近灌後面；長後睫狀一路跑到前面。",
+          "body": "**一句話／白話**\n短後睫狀動脈（short posterior ciliary arteries） 主要養 脈絡膜（choroid） 與 視神經（optic nerve） 頭部（head）；長後睫狀動脈（long posterior ciliary arteries） 向前參與 iris/ciliary body circulation。\n\n**觀念**\n多條 短後睫狀動脈 穿 鞏膜（sclera） 後供應 脈絡膜，並透過 Zinn-Haller circle 等參與 視神經 頭部 供血。兩條 長後睫狀動脈 向前走，與 前睫狀動脈（anterior ciliary arteries） 形成 iris major arterial circle。\n\n**考試角度**\n- short posterior ciliary：脈絡膜、視神經 頭部\n- long posterior ciliary：向前供應 ciliary body/iris\n- major arterial circle 由 long posterior 與 anterior ciliary contributions 形成\n\n**口訣**\n短後睫狀就近灌後面；長後睫狀一路跑到前面。",
           "keys": [
-            "short posterior ciliary：choroid、optic nerve head",
+            "short posterior ciliary：脈絡膜（choroid）、視神經（optic nerve） 頭部（head）",
             "long posterior ciliary：向前供應 ciliary body/iris",
             "major arterial circle 由 long posterior 與 anterior ciliary contributions 形成"
           ],
@@ -97,27 +99,28 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "主要供應 choroid 的是？",
+          "q": "主要供應 脈絡膜（choroid） 的是？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "short posterior ciliary：choroid、optic nerve head\n\n正確選項：short posterior ciliary arteries。\n多條 short posterior ciliary arteries 穿 sclera 後供應 choroid，並透過 Zinn-Haller circle 等參與 optic nerve head 供血。兩條 long posterior ciliary arteries 向前走，與 anterior ciliary arteries 形成 iris major arterial circle。",
+          "explain": "short posterior ciliary：脈絡膜（choroid）、視神經（optic nerve） 頭部（head）\n\n正確選項：短後睫狀動脈（short posterior ciliary arteries）。\n多條 短後睫狀動脈（short posterior ciliary arteries） 穿 鞏膜（sclera） 後供應 脈絡膜（choroid），並透過 Zinn-Haller circle 等參與 視神經（optic nerve） 頭部（head） 供血。兩條 長後睫狀動脈（long posterior ciliary arteries） 向前走，與 前睫狀動脈（anterior ciliary arteries） 形成 iris major arterial circle。",
           "choices": [
-            "central retinal artery",
-            "short posterior ciliary arteries",
-            "facial artery",
+            "中央視網膜動脈（central retinal artery）",
+            "短後睫狀動脈（short posterior ciliary arteries）",
+            "顏面動脈（facial artery）",
             "superior ophthalmic vein"
-          ]
+          ],
+          "id": "c891d2d75"
         },
         {
           "type": "example",
           "title": "範例拆解：posterior ciliary arteries 是外層與葡萄膜主力",
-          "problem": "主要供應 choroid 的是？\n\nA. central retinal artery\nB. short posterior ciliary arteries\nC. facial artery\nD. superior ophthalmic vein",
+          "problem": "主要供應 脈絡膜（choroid） 的是？\n\nA. 中央視網膜動脈（central retinal artery）\nB. 短後睫狀動脈（short posterior ciliary arteries）\nC. 顏面動脈（facial artery）\nD. superior ophthalmic vein",
           "steps": [
             "先確認題目問的主題：posterior ciliary arteries 是外層與葡萄膜主力",
-            "多條 short posterior ciliary arteries 穿 sclera 後供應 choroid，並透過 Zinn-Haller circle 等參與 optic nerve head 供血。兩條 long posterior ciliary arteries 向前走，與 anterior ciliary arteries 形成 iris major arterial circle。",
-            "把判斷依據連回題目：short posterior ciliary：choroid、optic nerve head\n\n正確選項：short posterior ciliary arteries。\n多條 short posterior ciliary arteries 穿 sclera 後供應 choroid，並透過 Zinn-Haller circle 等參與 optic nerve head 供血。兩條 long posterior ciliary arteries 向前走，與 anterior ciliary arteries 形成 iris major arterial circle。"
+            "多條 短後睫狀動脈（short posterior ciliary arteries） 穿 鞏膜（sclera） 後供應 脈絡膜（choroid），並透過 Zinn-Haller circle 等參與 視神經（optic nerve） 頭部（head） 供血。兩條 長後睫狀動脈（long posterior ciliary arteries） 向前走，與 前睫狀動脈（anterior ciliary arteries） 形成 iris major arterial circle。",
+            "把判斷依據連回題目：short posterior ciliary：脈絡膜（choroid）、視神經（optic nerve） 頭部（head）\n\n正確選項：短後睫狀動脈（short posterior ciliary arteries）。\n多條 短後睫狀動脈（short posterior ciliary arteries） 穿 鞏膜（sclera） 後供應 脈絡膜（choroid），並透過 Zinn-Haller circle 等參與 視神經（optic nerve） 頭部（head） 供血。兩條 長後睫狀動脈（long posterior ciliary arteries） 向前走，與 前睫狀動脈（anterior ciliary arteries） 形成 iris major arterial circle。"
           ],
-          "answer": "short posterior ciliary arteries"
+          "answer": "短後睫狀動脈（short posterior ciliary arteries）"
         },
         {
           "type": "practice",
@@ -129,58 +132,64 @@
           "checks": [
             {
               "kind": "single",
-              "q": "central retinal artery 主要供應？",
+              "q": "中央視網膜動脈（central retinal artery） 主要供應？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "供應 inner retina\n\n正確選項：inner retina。\ncentral retinal artery 穿入 optic nerve 後於視乳頭分支，形成 superficial 與 deep capillary plexuses，主要供應 inner retina。它屬近似 end-arterial circulation，阻塞會造成急性無痛嚴重視力下降。",
+              "explain": "供應 內層視網膜（inner retina）\n\n正確選項：內層視網膜（inner retina）。\n中央視網膜動脈（central retinal artery） 穿入 視神經（optic nerve） 後於視乳頭分支，形成 superficial 與 deep capillary plexuses，主要供應 內層視網膜（inner retina）。它屬近似 end-arterial circulation，阻塞會造成急性無痛嚴重視力下降。",
               "choices": [
-                "inner retina",
-                "lens",
-                "corneal epithelium",
-                "outer retina"
-              ]
+                "內層視網膜（inner retina）",
+                "透鏡（lens）",
+                "角膜上皮（corneal epithelium）",
+                "外層視網膜（outer retina）"
+              ],
+              "id": "c8da80902"
             },
             {
               "kind": "single",
-              "q": "主要供應 choroid 的是？",
+              "q": "主要供應 脈絡膜（choroid） 的是？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "short posterior ciliary：choroid、optic nerve head\n\n正確選項：short posterior ciliary arteries。\n多條 short posterior ciliary arteries 穿 sclera 後供應 choroid，並透過 Zinn-Haller circle 等參與 optic nerve head 供血。兩條 long posterior ciliary arteries 向前走，與 anterior ciliary arteries 形成 iris major arterial circle。",
+              "explain": "short posterior ciliary：脈絡膜（choroid）、視神經（optic nerve） 頭部（head）\n\n正確選項：短後睫狀動脈（short posterior ciliary arteries）。\n多條 短後睫狀動脈（short posterior ciliary arteries） 穿 鞏膜（sclera） 後供應 脈絡膜（choroid），並透過 Zinn-Haller circle 等參與 視神經（optic nerve） 頭部（head） 供血。兩條 長後睫狀動脈（long posterior ciliary arteries） 向前走，與 前睫狀動脈（anterior ciliary arteries） 形成 iris major arterial circle。",
               "choices": [
-                "central retinal artery",
-                "short posterior ciliary arteries",
-                "facial artery",
+                "中央視網膜動脈（central retinal artery）",
+                "短後睫狀動脈（short posterior ciliary arteries）",
+                "顏面動脈（facial artery）",
                 "superior ophthalmic vein"
-              ]
+              ],
+              "id": "c891d2d75"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "ophthalmic artery 通常來自 internal carotid artery",
+            "眼動脈（ophthalmic artery） 通常來自 內頸動脈（internal carotid artery）",
             "經 optic canal 進入 orbit",
-            "供應 inner retina",
-            "沿 optic nerve 進入並從 optic disc 分支",
-            "short posterior ciliary：choroid、optic nerve head",
+            "供應 內層視網膜（inner retina）",
+            "沿 視神經（optic nerve） 進入並從 視乳頭（optic disc） 分支",
+            "short posterior ciliary：脈絡膜（choroid）、視神經（optic nerve） 頭部（head）",
             "long posterior ciliary：向前供應 ciliary body/iris"
           ],
           "flash": [
             {
-              "front": "ophthalmic artery 是眼球主要動脈入口",
-              "back": "ophthalmic artery 通常由 internal carotid artery 分出，進入 orbit 後供應眼球與周邊構造。"
+              "front": "眼動脈（ophthalmic artery） 是眼球主要動脈入口",
+              "back": "眼動脈（ophthalmic artery） 通常由 內頸動脈（internal carotid artery） 分出，進入 orbit 後供應眼球與周邊構造。",
+              "id": "fc5001c4e"
             },
             {
-              "front": "central retinal artery 進入視神經再進視網膜",
-              "back": "central retinal artery 在視神經內前進，最後從 optic disc 出來供應內層視網膜。"
+              "front": "中央視網膜動脈（central retinal artery） 進入視神經再進視網膜",
+              "back": "中央視網膜動脈（central retinal artery） 在視神經內前進，最後從 視乳頭（optic disc） 出來供應內層視網膜。",
+              "id": "f255909ca"
             },
             {
               "front": "posterior ciliary arteries 是外層與葡萄膜主力",
-              "back": "short posterior ciliary arteries 主要養 choroid 與 optic nerve head；long posterior ciliary arteries 向前參與 iris/ciliary body circulation。"
+              "back": "短後睫狀動脈（short posterior ciliary arteries） 主要養 脈絡膜（choroid） 與 視神經（optic nerve） 頭部（head）；長後睫狀動脈（long posterior ciliary arteries） 向前參與 iris/ciliary body circulation。",
+              "id": "f5cb3c082"
             },
             {
-              "front": "ophthalmic artery 通常是哪條動脈的分支？",
-              "back": "ophthalmic artery 通常來自 internal carotid artery\n\n正確選項：internal carotid artery。\nophthalmic artery 多在 optic canal 與 optic nerve 同行進入 orbit，分出 central retinal、posterior ciliary、lacrimal、muscular、supraorbital 等支。它與 external carotid branches 也有吻合。"
+              "front": "眼動脈（ophthalmic artery） 通常是哪條動脈的分支？",
+              "back": "眼動脈（ophthalmic artery） 通常來自 內頸動脈（internal carotid artery）\n\n正確選項：內頸動脈（internal carotid artery）。\n眼動脈（ophthalmic artery） 多在 optic canal 與 視神經（optic nerve） 同行進入 orbit，分出 central 視網膜的（retinal）、posterior ciliary、lacrimal、muscular、supraorbital 等支。它與 external carotid branches 也有吻合。",
+              "id": "ff4f1e5ed"
             }
           ]
         }
@@ -190,101 +199,104 @@
       "id": "dual-supply-1",
       "title": "內外視網膜的雙重供血",
       "goals": [
-        "解釋inner retina 與 outer retina 各靠不同血流",
-        "解釋foveal avascular zone 沒有 retinal capillary",
+        "解釋內層視網膜（inner retina） 與 外層視網膜（outer retina） 各靠不同血流",
+        "解釋foveal avascular zone 沒有 視網膜的（retinal） capillary",
         "解釋兩道血視網膜障壁對應兩套血流"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "內外視網膜的雙重供血",
-          "body": "內層靠 retinal vessels；外層尤其 photoreceptors 靠 choriocapillaris。\n\n- 先畫供應分界。\n- 再理解 foveal avascular zone。\n- 最後連到障壁與梗塞表現。"
+          "body": "內層靠 視網膜的（retinal） vessels；外層尤其 感光細胞（photoreceptors） 靠 脈絡膜微血管層（choriocapillaris）。\n\n- 先畫供應分界。\n- 再理解 foveal avascular zone。\n- 最後連到障壁與梗塞表現。"
         },
         {
           "type": "card",
-          "title": "inner retina 與 outer retina 各靠不同血流",
-          "body": "**一句話／白話**\ncentral retinal circulation 養內層；choriocapillaris 從外側擴散養 outer retina。\n\n**觀念**\ninner two-thirds of retina 主要由 central retinal artery branches 供應；outer retina，尤其 photoreceptor，主要依賴 choriocapillaris 的氧與養分跨 RPE/Bruch membrane 擴散。\n\n**考試角度**\n- inner retina：central retinal circulation\n- outer retina/photoreceptors：choriocapillaris\n- photoreceptors 高代謝但本身區域無 retinal vessels\n\n**口訣**\n內層吃中央視網膜動脈；外層吃脈絡膜。",
+          "title": "內層視網膜（inner retina） 與 外層視網膜（outer retina） 各靠不同血流",
+          "body": "**一句話／白話**\ncentral 視網膜的（retinal） circulation 養內層；脈絡膜微血管層（choriocapillaris） 從外側擴散養 外層視網膜（outer retina）。\n\n**觀念**\ninner two-thirds of 視網膜（retina） 主要由 中央視網膜動脈（central retinal artery） branches 供應；外層視網膜，尤其 感光細胞（photoreceptor），主要依賴 脈絡膜微血管層 的氧與養分跨 視網膜色素上皮（RPE）/Bruch membrane 擴散。\n\n**考試角度**\n- 內層視網膜（inner retina）：central 視網膜的 circulation\n- 外層視網膜/感光細胞（photoreceptors）：脈絡膜微血管層\n- 感光細胞 高代謝但本身區域無 視網膜的 vessels\n\n**口訣**\n內層吃中央視網膜動脈；外層吃脈絡膜。",
           "keys": [
-            "inner retina：central retinal circulation",
-            "outer retina/photoreceptors：choriocapillaris",
-            "photoreceptors 高代謝但本身區域無 retinal vessels"
+            "內層視網膜（inner retina）：central 視網膜的（retinal） circulation",
+            "外層視網膜（outer retina）/感光細胞（photoreceptors）：脈絡膜微血管層（choriocapillaris）",
+            "感光細胞（photoreceptors） 高代謝但本身區域無 視網膜的（retinal） vessels"
           ],
           "tip": "口訣：內層吃中央視網膜動脈；外層吃脈絡膜。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "photoreceptor 的主要血液供應來自？",
+          "q": "感光細胞（photoreceptor） 的主要血液供應來自？",
           "answer": 2,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "inner retina：central retinal circulation\n\n正確選項：choriocapillaris。\ninner two-thirds of retina 主要由 central retinal artery branches 供應；outer retina，尤其 photoreceptor，主要依賴 choriocapillaris 的氧與養分跨 RPE/Bruch membrane 擴散。",
+          "explain": "內層視網膜（inner retina）：central 視網膜的（retinal） circulation\n\n正確選項：脈絡膜微血管層（choriocapillaris）。\ninner two-thirds of 視網膜（retina） 主要由 中央視網膜動脈（central retinal artery） branches 供應；外層視網膜（outer retina），尤其 感光細胞（photoreceptor），主要依賴 脈絡膜微血管層（choriocapillaris） 的氧與養分跨 視網膜色素上皮（RPE）/Bruch membrane 擴散。",
           "choices": [
-            "vortex vein",
-            "central retinal artery",
-            "choriocapillaris",
-            "lacrimal artery"
-          ]
+            "渦靜脈（vortex vein）",
+            "中央視網膜動脈（central retinal artery）",
+            "脈絡膜微血管層（choriocapillaris）",
+            "淚腺動脈（lacrimal artery）"
+          ],
+          "id": "c063738b1"
         },
         {
           "type": "card",
-          "title": "foveal avascular zone 沒有 retinal capillary",
-          "body": "**一句話／白話**\n中央凹為了讓光線直達 cones，刻意沒有 retinal vessels；它依賴 choroid 從外側供血。\n\n**觀念**\nfoveal avascular zone 減少血管對高解析視覺的遮擋，但也使 foveal photoreceptors 高度依賴 choriocapillaris。臨床影像可觀察此無血管區的形狀與完整性。\n\n**考試角度**\n- FAZ 位於 fovea\n- 無 retinal capillaries 不等於無血液供應\n- 主要依賴 choriocapillaris\n\n**口訣**\n中央凹沒有表面水管，但地下脈絡膜仍在供水。",
+          "title": "foveal avascular zone 沒有 視網膜的（retinal） capillary",
+          "body": "**一句話／白話**\n中央凹為了讓光線直達 錐狀細胞（cones），刻意沒有 視網膜的（retinal） vessels；它依賴 脈絡膜（choroid） 從外側供血。\n\n**觀念**\nfoveal avascular zone 減少血管對高解析視覺的遮擋，但也使 foveal 感光細胞（photoreceptors） 高度依賴 脈絡膜微血管層（choriocapillaris）。臨床影像可觀察此無血管區的形狀與完整性。\n\n**考試角度**\n- FAZ 位於 中央凹（fovea）\n- 無 視網膜的 capillaries 不等於無血液供應\n- 主要依賴 脈絡膜微血管層\n\n**口訣**\n中央凹沒有表面水管，但地下脈絡膜仍在供水。",
           "keys": [
-            "FAZ 位於 fovea",
-            "無 retinal capillaries 不等於無血液供應",
-            "主要依賴 choriocapillaris"
+            "FAZ 位於 中央凹（fovea）",
+            "無 視網膜的（retinal） capillaries 不等於無血液供應",
+            "主要依賴 脈絡膜微血管層（choriocapillaris）"
           ],
           "tip": "口訣：中央凹沒有表面水管，但地下脈絡膜仍在供水。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "foveal avascular zone 的 photoreceptors 主要依賴？",
+          "q": "foveal avascular zone 的 感光細胞（photoreceptors） 主要依賴？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "FAZ 位於 fovea\n\n正確選項：choriocapillaris。\nfoveal avascular zone 減少血管對高解析視覺的遮擋，但也使 foveal photoreceptors 高度依賴 choriocapillaris。臨床影像可觀察此無血管區的形狀與完整性。",
+          "explain": "FAZ 位於 中央凹（fovea）\n\n正確選項：脈絡膜微血管層（choriocapillaris）。\nfoveal avascular zone 減少血管對高解析視覺的遮擋，但也使 foveal 感光細胞（photoreceptors） 高度依賴 脈絡膜微血管層（choriocapillaris）。臨床影像可觀察此無血管區的形狀與完整性。",
           "choices": [
             "aqueous humor",
-            "central retinal vein",
-            "retinal surface vessels",
-            "choriocapillaris"
-          ]
+            "central 視網膜的（retinal） vein",
+            "視網膜的（retinal） surface vessels",
+            "脈絡膜微血管層（choriocapillaris）"
+          ],
+          "id": "ce9a2f007"
         },
         {
           "type": "card",
           "title": "兩道血視網膜障壁對應兩套血流",
-          "body": "**一句話／白話**\nretinal capillary endothelium 是 inner barrier；RPE tight junction 是 outer barrier。\n\n**觀念**\ninner blood-retinal barrier 阻止 retinal circulation 任意滲漏。outer blood-retinal barrier 控制 fenestrated choriocapillaris 與神經視網膜間交換。任一障壁失效都可能造成 retinal edema。\n\n**考試角度**\n- inner barrier：nonfenestrated retinal endothelial tight junction\n- outer barrier：RPE tight junction\n- choriocapillaris 本身 fenestrated\n\n**口訣**\n內門禁在血管；外門禁在 RPE。",
+          "body": "**一句話／白話**\n視網膜的（retinal） capillary endothelium 是 inner 障壁（barrier）；視網膜色素上皮（RPE） 緊密接合（tight junction） 是 outer 障壁。\n\n**觀念**\ninner blood-視網膜的 障壁 阻止 視網膜的 circulation 任意滲漏。outer blood-視網膜的 障壁 控制 fenestrated 脈絡膜微血管層（choriocapillaris） 與神經視網膜間交換。任一障壁失效都可能造成 視網膜的 edema。\n\n**考試角度**\n- inner 障壁：nonfenestrated 視網膜的 endothelial 緊密接合\n- outer 障壁：視網膜色素上皮 緊密接合\n- 脈絡膜微血管層 本身 fenestrated\n\n**口訣**\n內門禁在血管；外門禁在 視網膜色素上皮。",
           "keys": [
-            "inner barrier：nonfenestrated retinal endothelial tight junction",
-            "outer barrier：RPE tight junction",
-            "choriocapillaris 本身 fenestrated"
+            "inner 障壁（barrier）：nonfenestrated 視網膜的（retinal） endothelial 緊密接合（tight junction）",
+            "outer 障壁（barrier）：視網膜色素上皮（RPE） 緊密接合（tight junction）",
+            "脈絡膜微血管層（choriocapillaris） 本身 fenestrated"
           ],
-          "tip": "口訣：內門禁在血管；外門禁在 RPE。"
+          "tip": "口訣：內門禁在血管；外門禁在 視網膜色素上皮（RPE）。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "outer blood-retinal barrier 位於？",
+          "q": "outer blood-視網膜的（retinal） 障壁（barrier） 位於？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "inner barrier：nonfenestrated retinal endothelial tight junction\n\n正確選項：RPE tight junction。\ninner blood-retinal barrier 阻止 retinal circulation 任意滲漏。outer blood-retinal barrier 控制 fenestrated choriocapillaris 與神經視網膜間交換。任一障壁失效都可能造成 retinal edema。",
+          "explain": "inner 障壁（barrier）：nonfenestrated 視網膜的（retinal） endothelial 緊密接合（tight junction）\n\n正確選項：視網膜色素上皮（RPE） 緊密接合（tight junction）。\ninner blood-視網膜的（retinal） 障壁（barrier） 阻止 視網膜的（retinal） circulation 任意滲漏。outer blood-視網膜的（retinal） 障壁（barrier） 控制 fenestrated 脈絡膜微血管層（choriocapillaris） 與神經視網膜間交換。任一障壁失效都可能造成 視網膜的（retinal） edema。",
           "choices": [
-            "retinal artery wall",
-            "RPE tight junction",
-            "sclera",
-            "optic chiasm"
-          ]
+            "視網膜的（retinal） artery wall",
+            "視網膜色素上皮（RPE） 緊密接合（tight junction）",
+            "鞏膜（sclera）",
+            "視交叉（optic chiasm）"
+          ],
+          "id": "ca7e0fa06"
         },
         {
           "type": "example",
           "title": "範例拆解：兩道血視網膜障壁對應兩套血流",
-          "problem": "outer blood-retinal barrier 位於？\n\nA. retinal artery wall\nB. RPE tight junction\nC. sclera\nD. optic chiasm",
+          "problem": "outer blood-視網膜的（retinal） 障壁（barrier） 位於？\n\nA. 視網膜的（retinal） artery wall\nB. 視網膜色素上皮（RPE） 緊密接合（tight junction）\nC. 鞏膜（sclera）\nD. 視交叉（optic chiasm）",
           "steps": [
             "先確認題目問的主題：兩道血視網膜障壁對應兩套血流",
-            "inner blood-retinal barrier 阻止 retinal circulation 任意滲漏。outer blood-retinal barrier 控制 fenestrated choriocapillaris 與神經視網膜間交換。任一障壁失效都可能造成 retinal edema。",
-            "把判斷依據連回題目：inner barrier：nonfenestrated retinal endothelial tight junction\n\n正確選項：RPE tight junction。\ninner blood-retinal barrier 阻止 retinal circulation 任意滲漏。outer blood-retinal barrier 控制 fenestrated choriocapillaris 與神經視網膜間交換。任一障壁失效都可能造成 retinal edema。"
+            "inner blood-視網膜的（retinal） 障壁（barrier） 阻止 視網膜的（retinal） circulation 任意滲漏。outer blood-視網膜的（retinal） 障壁（barrier） 控制 fenestrated 脈絡膜微血管層（choriocapillaris） 與神經視網膜間交換。任一障壁失效都可能造成 視網膜的（retinal） edema。",
+            "把判斷依據連回題目：inner 障壁（barrier）：nonfenestrated 視網膜的（retinal） endothelial 緊密接合（tight junction）\n\n正確選項：視網膜色素上皮（RPE） 緊密接合（tight junction）。\ninner blood-視網膜的（retinal） 障壁（barrier） 阻止 視網膜的（retinal） circulation 任意滲漏。outer blood-視網膜的（retinal） 障壁（barrier） 控制 fenestrated 脈絡膜微血管層（choriocapillaris） 與神經視網膜間交換。任一障壁失效都可能造成 視網膜的（retinal） edema。"
           ],
-          "answer": "RPE tight junction"
+          "answer": "視網膜色素上皮（RPE） 緊密接合（tight junction）"
         },
         {
           "type": "practice",
@@ -296,58 +308,64 @@
           "checks": [
             {
               "kind": "single",
-              "q": "foveal avascular zone 的 photoreceptors 主要依賴？",
+              "q": "foveal avascular zone 的 感光細胞（photoreceptors） 主要依賴？",
               "answer": 3,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "FAZ 位於 fovea\n\n正確選項：choriocapillaris。\nfoveal avascular zone 減少血管對高解析視覺的遮擋，但也使 foveal photoreceptors 高度依賴 choriocapillaris。臨床影像可觀察此無血管區的形狀與完整性。",
+              "explain": "FAZ 位於 中央凹（fovea）\n\n正確選項：脈絡膜微血管層（choriocapillaris）。\nfoveal avascular zone 減少血管對高解析視覺的遮擋，但也使 foveal 感光細胞（photoreceptors） 高度依賴 脈絡膜微血管層（choriocapillaris）。臨床影像可觀察此無血管區的形狀與完整性。",
               "choices": [
                 "aqueous humor",
-                "central retinal vein",
-                "retinal surface vessels",
-                "choriocapillaris"
-              ]
+                "central 視網膜的（retinal） vein",
+                "視網膜的（retinal） surface vessels",
+                "脈絡膜微血管層（choriocapillaris）"
+              ],
+              "id": "ce9a2f007"
             },
             {
               "kind": "single",
-              "q": "outer blood-retinal barrier 位於？",
+              "q": "outer blood-視網膜的（retinal） 障壁（barrier） 位於？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "inner barrier：nonfenestrated retinal endothelial tight junction\n\n正確選項：RPE tight junction。\ninner blood-retinal barrier 阻止 retinal circulation 任意滲漏。outer blood-retinal barrier 控制 fenestrated choriocapillaris 與神經視網膜間交換。任一障壁失效都可能造成 retinal edema。",
+              "explain": "inner 障壁（barrier）：nonfenestrated 視網膜的（retinal） endothelial 緊密接合（tight junction）\n\n正確選項：視網膜色素上皮（RPE） 緊密接合（tight junction）。\ninner blood-視網膜的（retinal） 障壁（barrier） 阻止 視網膜的（retinal） circulation 任意滲漏。outer blood-視網膜的（retinal） 障壁（barrier） 控制 fenestrated 脈絡膜微血管層（choriocapillaris） 與神經視網膜間交換。任一障壁失效都可能造成 視網膜的（retinal） edema。",
               "choices": [
-                "retinal artery wall",
-                "RPE tight junction",
-                "sclera",
-                "optic chiasm"
-              ]
+                "視網膜的（retinal） artery wall",
+                "視網膜色素上皮（RPE） 緊密接合（tight junction）",
+                "鞏膜（sclera）",
+                "視交叉（optic chiasm）"
+              ],
+              "id": "ca7e0fa06"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "inner retina：central retinal circulation",
-            "outer retina/photoreceptors：choriocapillaris",
-            "FAZ 位於 fovea",
-            "無 retinal capillaries 不等於無血液供應",
-            "inner barrier：nonfenestrated retinal endothelial tight junction",
-            "outer barrier：RPE tight junction"
+            "內層視網膜（inner retina）：central 視網膜的（retinal） circulation",
+            "外層視網膜（outer retina）/感光細胞（photoreceptors）：脈絡膜微血管層（choriocapillaris）",
+            "FAZ 位於 中央凹（fovea）",
+            "無 視網膜的（retinal） capillaries 不等於無血液供應",
+            "inner 障壁（barrier）：nonfenestrated 視網膜的（retinal） endothelial 緊密接合（tight junction）",
+            "outer 障壁（barrier）：視網膜色素上皮（RPE） 緊密接合（tight junction）"
           ],
           "flash": [
             {
-              "front": "inner retina 與 outer retina 各靠不同血流",
-              "back": "central retinal circulation 養內層；choriocapillaris 從外側擴散養 outer retina。"
+              "front": "內層視網膜（inner retina） 與 外層視網膜（outer retina） 各靠不同血流",
+              "back": "central 視網膜的（retinal） circulation 養內層；脈絡膜微血管層（choriocapillaris） 從外側擴散養 外層視網膜（outer retina）。",
+              "id": "ffff83408"
             },
             {
-              "front": "foveal avascular zone 沒有 retinal capillary",
-              "back": "中央凹為了讓光線直達 cones，刻意沒有 retinal vessels；它依賴 choroid 從外側供血。"
+              "front": "foveal avascular zone 沒有 視網膜的（retinal） capillary",
+              "back": "中央凹為了讓光線直達 錐狀細胞（cones），刻意沒有 視網膜的（retinal） vessels；它依賴 脈絡膜（choroid） 從外側供血。",
+              "id": "fbc45b0ab"
             },
             {
               "front": "兩道血視網膜障壁對應兩套血流",
-              "back": "retinal capillary endothelium 是 inner barrier；RPE tight junction 是 outer barrier。"
+              "back": "視網膜的（retinal） capillary endothelium 是 inner 障壁（barrier）；視網膜色素上皮（RPE） 緊密接合（tight junction） 是 outer 障壁（barrier）。",
+              "id": "fa16198f9"
             },
             {
-              "front": "photoreceptor 的主要血液供應來自？",
-              "back": "inner retina：central retinal circulation\n\n正確選項：choriocapillaris。\ninner two-thirds of retina 主要由 central retinal artery branches 供應；outer retina，尤其 photoreceptor，主要依賴 choriocapillaris 的氧與養分跨 RPE/Bruch membrane 擴散。"
+              "front": "感光細胞（photoreceptor） 的主要血液供應來自？",
+              "back": "內層視網膜（inner retina）：central 視網膜的（retinal） circulation\n\n正確選項：脈絡膜微血管層（choriocapillaris）。\ninner two-thirds of 視網膜（retina） 主要由 中央視網膜動脈（central retinal artery） branches 供應；外層視網膜（outer retina），尤其 感光細胞（photoreceptor），主要依賴 脈絡膜微血管層（choriocapillaris） 的氧與養分跨 視網膜色素上皮（RPE）/Bruch membrane 擴散。",
+              "id": "f063738b1"
             }
           ]
         }
@@ -357,7 +375,7 @@
       "id": "uveal-anterior-1",
       "title": "葡萄膜、眼前節與眼眶分支",
       "goals": [
-        "解釋choroid 是高流量外層血管床",
+        "解釋脈絡膜（choroid） 是高流量外層血管床",
         "解釋iris major arterial circle 的來源",
         "解釋眼眶分支供應淚腺、眼外肌與眼瞼"
       ],
@@ -365,41 +383,42 @@
         {
           "type": "intro",
           "title": "葡萄膜、眼前節與眼眶分支",
-          "body": "不同分支各有地盤；考題常要求把血管配到構造。\n\n- 先看 choroid。\n- 再看 iris/ciliary body 的大環與小環。\n- 最後補眼瞼、淚腺與眼外肌。"
+          "body": "不同分支各有地盤；考題常要求把血管配到構造。\n\n- 先看 脈絡膜（choroid）。\n- 再看 iris/ciliary body 的大環與小環。\n- 最後補眼瞼、淚腺與眼外肌。"
         },
         {
           "type": "card",
-          "title": "choroid 是高流量外層血管床",
-          "body": "**一句話／白話**\nchoroid 位於 retina 與 sclera 之間，含豐富血管與色素，主要支援 outer retina。\n\n**觀念**\nchoroid 由外向內可概念化為大中血管層、choriocapillaris 與 Bruch membrane。其血流量高，除了供應 photoreceptors，也協助散熱與吸收散射光。\n\n**考試角度**\n- choroid 位於 sclera 內、RPE 外\n- choriocapillaris 靠近 Bruch membrane/RPE\n- 主要供應 outer retina\n\n**口訣**\n脈絡膜像高流量地下水層，貼著感光細胞外側。",
+          "title": "脈絡膜（choroid） 是高流量外層血管床",
+          "body": "**一句話／白話**\n脈絡膜（choroid） 位於 視網膜（retina） 與 鞏膜（sclera） 之間，含豐富血管與色素，主要支援 外層視網膜（outer retina）。\n\n**觀念**\n脈絡膜 由外向內可概念化為大中血管層、脈絡膜微血管層（choriocapillaris） 與 Bruch membrane。其血流量高，除了供應 感光細胞（photoreceptors），也協助散熱與吸收散射光。\n\n**考試角度**\n- 脈絡膜 位於 鞏膜 內、視網膜色素上皮（RPE） 外\n- 脈絡膜微血管層 靠近 Bruch membrane/視網膜色素上皮\n- 主要供應 外層視網膜\n\n**口訣**\n脈絡膜像高流量地下水層，貼著感光細胞外側。",
           "keys": [
-            "choroid 位於 sclera 內、RPE 外",
-            "choriocapillaris 靠近 Bruch membrane/RPE",
-            "主要供應 outer retina"
+            "脈絡膜（choroid） 位於 鞏膜（sclera） 內、視網膜色素上皮（RPE） 外",
+            "脈絡膜微血管層（choriocapillaris） 靠近 Bruch membrane/視網膜色素上皮（RPE）",
+            "主要供應 外層視網膜（outer retina）"
           ],
           "tip": "口訣：脈絡膜像高流量地下水層，貼著感光細胞外側。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "choriocapillaris 最接近哪個構造？",
+          "q": "脈絡膜微血管層（choriocapillaris） 最接近哪個構造？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "choroid 位於 sclera 內、RPE 外\n\n正確選項：RPE/Bruch membrane。\nchoroid 由外向內可概念化為大中血管層、choriocapillaris 與 Bruch membrane。其血流量高，除了供應 photoreceptors，也協助散熱與吸收散射光。",
+          "explain": "脈絡膜（choroid） 位於 鞏膜（sclera） 內、視網膜色素上皮（RPE） 外\n\n正確選項：視網膜色素上皮（RPE）/Bruch membrane。\n脈絡膜（choroid） 由外向內可概念化為大中血管層、脈絡膜微血管層（choriocapillaris） 與 Bruch membrane。其血流量高，除了供應 感光細胞（photoreceptors），也協助散熱與吸收散射光。",
           "choices": [
-            "RPE/Bruch membrane",
-            "lens capsule",
-            "vitreous center",
-            "corneal epithelium"
-          ]
+            "視網膜色素上皮（RPE）/Bruch membrane",
+            "透鏡（lens） capsule",
+            "玻璃體（vitreous） center",
+            "角膜上皮（corneal epithelium）"
+          ],
+          "id": "c9b99191e"
         },
         {
           "type": "card",
           "title": "iris major arterial circle 的來源",
-          "body": "**一句話／白話**\nlong posterior ciliary 與 anterior ciliary arteries 在 ciliary body 附近共同形成 major arterial circle。\n\n**觀念**\nmajor arterial circle of iris 位於 ciliary body/iris root 附近，主要由 long posterior ciliary arteries 與 anterior ciliary arteries 的分支吻合形成，再向 iris 內供血並形成較小血管環。\n\n**考試角度**\n- major circle：long posterior + anterior ciliary arteries\n- 位置靠 iris root/ciliary body\n- 不是 central retinal artery 形成\n\n**口訣**\n長後睫狀從後來，前睫狀從前來，在虹膜根部會師。",
+          "body": "**一句話／白話**\nlong posterior ciliary 與 前睫狀動脈（anterior ciliary arteries） 在 ciliary body 附近共同形成 major arterial circle。\n\n**觀念**\nmajor arterial circle of iris 位於 ciliary body/iris root 附近，主要由 長後睫狀動脈（long posterior ciliary arteries） 與 前睫狀動脈 的分支吻合形成，再向 iris 內供血並形成較小血管環。\n\n**考試角度**\n- major circle：long posterior + 前睫狀動脈\n- 位置靠 iris root/ciliary body\n- 不是 中央視網膜動脈（central retinal artery） 形成\n\n**口訣**\n長後睫狀從後來，前睫狀從前來，在虹膜根部會師。",
           "keys": [
-            "major circle：long posterior + anterior ciliary arteries",
+            "major circle：long posterior + 前睫狀動脈（anterior ciliary arteries）",
             "位置靠 iris root/ciliary body",
-            "不是 central retinal artery 形成"
+            "不是 中央視網膜動脈（central retinal artery） 形成"
           ],
           "tip": "口訣：長後睫狀從後來，前睫狀從前來，在虹膜根部會師。"
         },
@@ -409,21 +428,22 @@
           "q": "iris major arterial circle 主要由哪兩組血管形成？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "major circle：long posterior + anterior ciliary arteries\n\n正確選項：long posterior ciliary + anterior ciliary。\nmajor arterial circle of iris 位於 ciliary body/iris root 附近，主要由 long posterior ciliary arteries 與 anterior ciliary arteries 的分支吻合形成，再向 iris 內供血並形成較小血管環。",
+          "explain": "major circle：long posterior + 前睫狀動脈（anterior ciliary arteries）\n\n正確選項：long posterior ciliary + anterior ciliary。\nmajor arterial circle of iris 位於 ciliary body/iris root 附近，主要由 長後睫狀動脈（long posterior ciliary arteries） 與 前睫狀動脈（anterior ciliary arteries） 的分支吻合形成，再向 iris 內供血並形成較小血管環。",
           "choices": [
             "long posterior ciliary + anterior ciliary",
             "short posterior ciliary + facial",
-            "vortex + retinal vein",
-            "central retinal + lacrimal"
-          ]
+            "vortex + 視網膜的（retinal） vein",
+            "central 視網膜的（retinal） + lacrimal"
+          ],
+          "id": "c24ddc856"
         },
         {
           "type": "card",
           "title": "眼眶分支供應淚腺、眼外肌與眼瞼",
-          "body": "**一句話／白話**\nlacrimal artery 顧淚腺，muscular branches 顧眼外肌；眼瞼則由多條內外側來源形成 arterial arcades。\n\n**觀念**\nophthalmic artery 的 lacrimal branch 供應 lacrimal gland 並參與 lateral eyelid circulation；muscular branches 供應 extraocular muscles，並延續為 anterior ciliary arteries。眼瞼有 marginal/peripheral arcades 與 external carotid 系統吻合。\n\n**考試角度**\n- lacrimal artery：lacrimal gland\n- muscular branches → anterior ciliary arteries\n- 眼瞼血供具有豐富吻合\n\n**口訣**\n淚腺找 lacrimal；眼肌找 muscular；眼瞼看血管弓。",
+          "body": "**一句話／白話**\n淚腺動脈（lacrimal artery） 顧淚腺，muscular branches 顧眼外肌；眼瞼則由多條內外側來源形成 arterial arcades。\n\n**觀念**\n眼動脈（ophthalmic artery） 的 lacrimal branch 供應 淚腺（lacrimal gland） 並參與 lateral eyelid circulation；muscular branches 供應 extraocular muscles，並延續為 前睫狀動脈（anterior ciliary arteries）。眼瞼有 marginal/peripheral arcades 與 external carotid 系統吻合。\n\n**考試角度**\n- 淚腺動脈：淚腺\n- muscular branches → 前睫狀動脈\n- 眼瞼血供具有豐富吻合\n\n**口訣**\n淚腺找 lacrimal；眼肌找 muscular；眼瞼看血管弓。",
           "keys": [
-            "lacrimal artery：lacrimal gland",
-            "muscular branches → anterior ciliary arteries",
+            "淚腺動脈（lacrimal artery）：淚腺（lacrimal gland）",
+            "muscular branches → 前睫狀動脈（anterior ciliary arteries）",
             "眼瞼血供具有豐富吻合"
           ],
           "tip": "口訣：淚腺找 lacrimal；眼肌找 muscular；眼瞼看血管弓。"
@@ -431,25 +451,26 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "anterior ciliary arteries 常由哪類分支延續？",
+          "q": "前睫狀動脈（anterior ciliary arteries） 常由哪類分支延續？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "lacrimal artery：lacrimal gland\n\n正確選項：muscular branches。\nophthalmic artery 的 lacrimal branch 供應 lacrimal gland 並參與 lateral eyelid circulation；muscular branches 供應 extraocular muscles，並延續為 anterior ciliary arteries。眼瞼有 marginal/peripheral arcades 與 external carotid 系統吻合。",
+          "explain": "淚腺動脈（lacrimal artery）：淚腺（lacrimal gland）\n\n正確選項：muscular branches。\n眼動脈（ophthalmic artery） 的 lacrimal branch 供應 淚腺（lacrimal gland） 並參與 lateral eyelid circulation；muscular branches 供應 extraocular muscles，並延續為 前睫狀動脈（anterior ciliary arteries）。眼瞼有 marginal/peripheral arcades 與 external carotid 系統吻合。",
           "choices": [
-            "central retinal artery",
-            "vortex veins",
+            "中央視網膜動脈（central retinal artery）",
+            "渦靜脈（vortex veins）",
             "facial vein",
             "muscular branches"
-          ]
+          ],
+          "id": "cb7baa93d"
         },
         {
           "type": "example",
           "title": "範例拆解：眼眶分支供應淚腺、眼外肌與眼瞼",
-          "problem": "anterior ciliary arteries 常由哪類分支延續？\n\nA. central retinal artery\nB. vortex veins\nC. facial vein\nD. muscular branches",
+          "problem": "前睫狀動脈（anterior ciliary arteries） 常由哪類分支延續？\n\nA. 中央視網膜動脈（central retinal artery）\nB. 渦靜脈（vortex veins）\nC. facial vein\nD. muscular branches",
           "steps": [
             "先確認題目問的主題：眼眶分支供應淚腺、眼外肌與眼瞼",
-            "ophthalmic artery 的 lacrimal branch 供應 lacrimal gland 並參與 lateral eyelid circulation；muscular branches 供應 extraocular muscles，並延續為 anterior ciliary arteries。眼瞼有 marginal/peripheral arcades 與 external carotid 系統吻合。",
-            "把判斷依據連回題目：lacrimal artery：lacrimal gland\n\n正確選項：muscular branches。\nophthalmic artery 的 lacrimal branch 供應 lacrimal gland 並參與 lateral eyelid circulation；muscular branches 供應 extraocular muscles，並延續為 anterior ciliary arteries。眼瞼有 marginal/peripheral arcades 與 external carotid 系統吻合。"
+            "眼動脈（ophthalmic artery） 的 lacrimal branch 供應 淚腺（lacrimal gland） 並參與 lateral eyelid circulation；muscular branches 供應 extraocular muscles，並延續為 前睫狀動脈（anterior ciliary arteries）。眼瞼有 marginal/peripheral arcades 與 external carotid 系統吻合。",
+            "把判斷依據連回題目：淚腺動脈（lacrimal artery）：淚腺（lacrimal gland）\n\n正確選項：muscular branches。\n眼動脈（ophthalmic artery） 的 lacrimal branch 供應 淚腺（lacrimal gland） 並參與 lateral eyelid circulation；muscular branches 供應 extraocular muscles，並延續為 前睫狀動脈（anterior ciliary arteries）。眼瞼有 marginal/peripheral arcades 與 external carotid 系統吻合。"
           ],
           "answer": "muscular branches"
         },
@@ -466,55 +487,61 @@
               "q": "iris major arterial circle 主要由哪兩組血管形成？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "major circle：long posterior + anterior ciliary arteries\n\n正確選項：long posterior ciliary + anterior ciliary。\nmajor arterial circle of iris 位於 ciliary body/iris root 附近，主要由 long posterior ciliary arteries 與 anterior ciliary arteries 的分支吻合形成，再向 iris 內供血並形成較小血管環。",
+              "explain": "major circle：long posterior + 前睫狀動脈（anterior ciliary arteries）\n\n正確選項：long posterior ciliary + anterior ciliary。\nmajor arterial circle of iris 位於 ciliary body/iris root 附近，主要由 長後睫狀動脈（long posterior ciliary arteries） 與 前睫狀動脈（anterior ciliary arteries） 的分支吻合形成，再向 iris 內供血並形成較小血管環。",
               "choices": [
                 "long posterior ciliary + anterior ciliary",
                 "short posterior ciliary + facial",
-                "vortex + retinal vein",
-                "central retinal + lacrimal"
-              ]
+                "vortex + 視網膜的（retinal） vein",
+                "central 視網膜的（retinal） + lacrimal"
+              ],
+              "id": "c24ddc856"
             },
             {
               "kind": "single",
-              "q": "anterior ciliary arteries 常由哪類分支延續？",
+              "q": "前睫狀動脈（anterior ciliary arteries） 常由哪類分支延續？",
               "answer": 3,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "lacrimal artery：lacrimal gland\n\n正確選項：muscular branches。\nophthalmic artery 的 lacrimal branch 供應 lacrimal gland 並參與 lateral eyelid circulation；muscular branches 供應 extraocular muscles，並延續為 anterior ciliary arteries。眼瞼有 marginal/peripheral arcades 與 external carotid 系統吻合。",
+              "explain": "淚腺動脈（lacrimal artery）：淚腺（lacrimal gland）\n\n正確選項：muscular branches。\n眼動脈（ophthalmic artery） 的 lacrimal branch 供應 淚腺（lacrimal gland） 並參與 lateral eyelid circulation；muscular branches 供應 extraocular muscles，並延續為 前睫狀動脈（anterior ciliary arteries）。眼瞼有 marginal/peripheral arcades 與 external carotid 系統吻合。",
               "choices": [
-                "central retinal artery",
-                "vortex veins",
+                "中央視網膜動脈（central retinal artery）",
+                "渦靜脈（vortex veins）",
                 "facial vein",
                 "muscular branches"
-              ]
+              ],
+              "id": "cb7baa93d"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "choroid 位於 sclera 內、RPE 外",
-            "choriocapillaris 靠近 Bruch membrane/RPE",
-            "major circle：long posterior + anterior ciliary arteries",
+            "脈絡膜（choroid） 位於 鞏膜（sclera） 內、視網膜色素上皮（RPE） 外",
+            "脈絡膜微血管層（choriocapillaris） 靠近 Bruch membrane/視網膜色素上皮（RPE）",
+            "major circle：long posterior + 前睫狀動脈（anterior ciliary arteries）",
             "位置靠 iris root/ciliary body",
-            "lacrimal artery：lacrimal gland",
-            "muscular branches → anterior ciliary arteries"
+            "淚腺動脈（lacrimal artery）：淚腺（lacrimal gland）",
+            "muscular branches → 前睫狀動脈（anterior ciliary arteries）"
           ],
           "flash": [
             {
-              "front": "choroid 是高流量外層血管床",
-              "back": "choroid 位於 retina 與 sclera 之間，含豐富血管與色素，主要支援 outer retina。"
+              "front": "脈絡膜（choroid） 是高流量外層血管床",
+              "back": "脈絡膜（choroid） 位於 視網膜（retina） 與 鞏膜（sclera） 之間，含豐富血管與色素，主要支援 外層視網膜（outer retina）。",
+              "id": "fd8fadcd9"
             },
             {
               "front": "iris major arterial circle 的來源",
-              "back": "long posterior ciliary 與 anterior ciliary arteries 在 ciliary body 附近共同形成 major arterial circle。"
+              "back": "long posterior ciliary 與 前睫狀動脈（anterior ciliary arteries） 在 ciliary body 附近共同形成 major arterial circle。",
+              "id": "f3f434014"
             },
             {
               "front": "眼眶分支供應淚腺、眼外肌與眼瞼",
-              "back": "lacrimal artery 顧淚腺，muscular branches 顧眼外肌；眼瞼則由多條內外側來源形成 arterial arcades。"
+              "back": "淚腺動脈（lacrimal artery） 顧淚腺，muscular branches 顧眼外肌；眼瞼則由多條內外側來源形成 arterial arcades。",
+              "id": "f0cb7177d"
             },
             {
-              "front": "choriocapillaris 最接近哪個構造？",
-              "back": "choroid 位於 sclera 內、RPE 外\n\n正確選項：RPE/Bruch membrane。\nchoroid 由外向內可概念化為大中血管層、choriocapillaris 與 Bruch membrane。其血流量高，除了供應 photoreceptors，也協助散熱與吸收散射光。"
+              "front": "脈絡膜微血管層（choriocapillaris） 最接近哪個構造？",
+              "back": "脈絡膜（choroid） 位於 鞏膜（sclera） 內、視網膜色素上皮（RPE） 外\n\n正確選項：視網膜色素上皮（RPE）/Bruch membrane。\n脈絡膜（choroid） 由外向內可概念化為大中血管層、脈絡膜微血管層（choriocapillaris） 與 Bruch membrane。其血流量高，除了供應 感光細胞（photoreceptors），也協助散熱與吸收散射光。",
+              "id": "f9b99191e"
             }
           ]
         }
@@ -524,23 +551,23 @@
       "id": "venous-clinical-1",
       "title": "靜脈回流與臨床急症",
       "goals": [
-        "解釋central retinal vein 回收內層視網膜",
-        "解釋vortex veins 回收 choroid",
-        "解釋ophthalmic veins 連到 cavernous sinus"
+        "解釋central 視網膜的（retinal） vein 回收內層視網膜",
+        "解釋渦靜脈（vortex veins） 回收 脈絡膜（choroid）",
+        "解釋ophthalmic veins 連到 海綿竇（cavernous sinus）"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "靜脈回流與臨床急症",
-          "body": "動脈供應要會，靜脈往哪裡走也要會；阻塞位置決定眼底長相。\n\n- 先分 retinal vein 與 vortex veins。\n- 再看 ophthalmic veins。\n- 最後比較 artery/vein occlusion。"
+          "body": "動脈供應要會，靜脈往哪裡走也要會；阻塞位置決定眼底長相。\n\n- 先分 視網膜的（retinal） vein 與 渦靜脈（vortex veins）。\n- 再看 ophthalmic veins。\n- 最後比較 artery/vein 遮擋（occlusion）。"
         },
         {
           "type": "card",
-          "title": "central retinal vein 回收內層視網膜",
-          "body": "**一句話／白話**\ncentral retinal vein 與 artery 類似，沿 optic nerve 離開，回收 retinal circulation。\n\n**觀念**\ncentral retinal vein 匯集視網膜靜脈血，穿過 lamina cribrosa 並沿 optic nerve 回流，最後多注入 cavernous sinus 或 superior ophthalmic vein。其阻塞可造成廣泛 retinal hemorrhage 與 venous congestion。\n\n**考試角度**\n- central retinal vein 回收 inner retinal circulation\n- 穿過 optic nerve/lamina cribrosa 區域\n- 阻塞常見廣泛出血與靜脈怒張\n\n**口訣**\n中央動脈送進去，中央靜脈沿原路收回來。",
+          "title": "central 視網膜的（retinal） vein 回收內層視網膜",
+          "body": "**一句話／白話**\ncentral 視網膜的（retinal） vein 與 artery 類似，沿 視神經（optic nerve） 離開，回收 視網膜的 circulation。\n\n**觀念**\ncentral 視網膜的 vein 匯集視網膜靜脈血，穿過 lamina cribrosa 並沿 視神經 回流，最後多注入 海綿竇（cavernous sinus） 或 superior ophthalmic vein。其阻塞可造成廣泛 視網膜的 hemorrhage 與 venous congestion。\n\n**考試角度**\n- central 視網膜的 vein 回收 inner 視網膜的 circulation\n- 穿過 視神經/lamina cribrosa 區域\n- 阻塞常見廣泛出血與靜脈怒張\n\n**口訣**\n中央動脈送進去，中央靜脈沿原路收回來。",
           "keys": [
-            "central retinal vein 回收 inner retinal circulation",
-            "穿過 optic nerve/lamina cribrosa 區域",
+            "central 視網膜的（retinal） vein 回收 inner 視網膜的（retinal） circulation",
+            "穿過 視神經（optic nerve）/lamina cribrosa 區域",
             "阻塞常見廣泛出血與靜脈怒張"
           ],
           "tip": "口訣：中央動脈送進去，中央靜脈沿原路收回來。"
@@ -548,48 +575,50 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "central retinal vein occlusion 最典型眼底傾向？",
+          "q": "central 視網膜的（retinal） vein 遮擋（occlusion） 最典型眼底傾向？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "central retinal vein 回收 inner retinal circulation\n\n正確選項：廣泛出血與靜脈怒張。\ncentral retinal vein 匯集視網膜靜脈血，穿過 lamina cribrosa 並沿 optic nerve 回流，最後多注入 cavernous sinus 或 superior ophthalmic vein。其阻塞可造成廣泛 retinal hemorrhage 與 venous congestion。",
+          "explain": "central 視網膜的（retinal） vein 回收 inner 視網膜的（retinal） circulation\n\n正確選項：廣泛出血與靜脈怒張。\ncentral 視網膜的（retinal） vein 匯集視網膜靜脈血，穿過 lamina cribrosa 並沿 視神經（optic nerve） 回流，最後多注入 海綿竇（cavernous sinus） 或 superior ophthalmic vein。其阻塞可造成廣泛 視網膜的（retinal） hemorrhage 與 venous congestion。",
           "choices": [
             "廣泛出血與靜脈怒張",
             "只有 cherry-red spot",
             "完全正常",
             "單純角膜混濁"
-          ]
+          ],
+          "id": "caf5bb00d"
         },
         {
           "type": "card",
-          "title": "vortex veins 回收 choroid",
-          "body": "**一句話／白話**\n多條 vortex veins 從眼球赤道附近離開，主要回收 choroidal circulation。\n\n**觀念**\nvortex veins 又稱 vorticose veins，通常分布於多個象限，穿出 sclera 後流向 ophthalmic veins。它們是 uveal tract，尤其 choroid 的重要靜脈回流路徑。\n\n**考試角度**\n- vortex veins：choroid/uvea drainage\n- 在赤道附近穿出 sclera\n- 不是 inner retinal circulation 的主要回流\n\n**口訣**\n脈絡膜的水從幾個渦旋出口排走。",
+          "title": "渦靜脈（vortex veins） 回收 脈絡膜（choroid）",
+          "body": "**一句話／白話**\n多條 渦靜脈（vortex veins） 從眼球赤道附近離開，主要回收 choroidal circulation。\n\n**觀念**\n渦靜脈 又稱 vorticose veins，通常分布於多個象限，穿出 鞏膜（sclera） 後流向 ophthalmic veins。它們是 葡萄膜（uveal tract），尤其 脈絡膜（choroid） 的重要靜脈回流路徑。\n\n**考試角度**\n- 渦靜脈：脈絡膜/uvea 引流（drainage）\n- 在赤道附近穿出 鞏膜\n- 不是 inner 視網膜的（retinal） circulation 的主要回流\n\n**口訣**\n脈絡膜的水從幾個渦旋出口排走。",
           "keys": [
-            "vortex veins：choroid/uvea drainage",
-            "在赤道附近穿出 sclera",
-            "不是 inner retinal circulation 的主要回流"
+            "渦靜脈（vortex veins）：脈絡膜（choroid）/uvea 引流（drainage）",
+            "在赤道附近穿出 鞏膜（sclera）",
+            "不是 inner 視網膜的（retinal） circulation 的主要回流"
           ],
           "tip": "口訣：脈絡膜的水從幾個渦旋出口排走。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "主要回收 choroid 的靜脈是？",
+          "q": "主要回收 脈絡膜（choroid） 的靜脈是？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "vortex veins：choroid/uvea drainage\n\n正確選項：vortex veins。\nvortex veins 又稱 vorticose veins，通常分布於多個象限，穿出 sclera 後流向 ophthalmic veins。它們是 uveal tract，尤其 choroid 的重要靜脈回流路徑。",
+          "explain": "渦靜脈（vortex veins）：脈絡膜（choroid）/uvea 引流（drainage）\n\n正確選項：渦靜脈（vortex veins）。\n渦靜脈（vortex veins） 又稱 vorticose veins，通常分布於多個象限，穿出 鞏膜（sclera） 後流向 ophthalmic veins。它們是 葡萄膜（uveal tract），尤其 脈絡膜（choroid） 的重要靜脈回流路徑。",
           "choices": [
             "facial vein only",
             "lacrimal vein only",
-            "central retinal vein",
-            "vortex veins"
-          ]
+            "central 視網膜的（retinal） vein",
+            "渦靜脈（vortex veins）"
+          ],
+          "id": "cf1283707"
         },
         {
           "type": "card",
-          "title": "ophthalmic veins 連到 cavernous sinus",
-          "body": "**一句話／白話**\nsuperior/inferior ophthalmic veins 回收 orbit，並與 cavernous sinus 及 facial venous system 相通。\n\n**觀念**\n眼眶靜脈缺乏可靠瓣膜，與 facial vein、pterygoid plexus、cavernous sinus 等有交通，因此感染與壓力變化可能沿交通路徑擴散。\n\n**考試角度**\n- ophthalmic veins 與 cavernous sinus 相通\n- 眼眶靜脈交通豐富\n- 臨床需警覺感染向顱內擴散\n\n**口訣**\n眼眶靜脈像沒有單向門的交流道。",
+          "title": "ophthalmic veins 連到 海綿竇（cavernous sinus）",
+          "body": "**一句話／白話**\nsuperior/inferior ophthalmic veins 回收 orbit，並與 海綿竇（cavernous sinus） 及 facial venous system 相通。\n\n**觀念**\n眼眶靜脈缺乏可靠瓣膜，與 facial vein、pterygoid plexus、海綿竇 等有交通，因此感染與壓力變化可能沿交通路徑擴散。\n\n**考試角度**\n- ophthalmic veins 與 海綿竇 相通\n- 眼眶靜脈交通豐富\n- 臨床需警覺感染向顱內擴散\n\n**口訣**\n眼眶靜脈像沒有單向門的交流道。",
           "keys": [
-            "ophthalmic veins 與 cavernous sinus 相通",
+            "ophthalmic veins 與 海綿竇（cavernous sinus） 相通",
             "眼眶靜脈交通豐富",
             "臨床需警覺感染向顱內擴散"
           ],
@@ -601,24 +630,25 @@
           "q": "眼眶感染可能向顱內擴散，最需注意與哪處的靜脈交通？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "ophthalmic veins 與 cavernous sinus 相通\n\n正確選項：cavernous sinus。\n眼眶靜脈缺乏可靠瓣膜，與 facial vein、pterygoid plexus、cavernous sinus 等有交通，因此感染與壓力變化可能沿交通路徑擴散。",
+          "explain": "ophthalmic veins 與 海綿竇（cavernous sinus） 相通\n\n正確選項：海綿竇（cavernous sinus）。\n眼眶靜脈缺乏可靠瓣膜，與 facial vein、pterygoid plexus、海綿竇（cavernous sinus） 等有交通，因此感染與壓力變化可能沿交通路徑擴散。",
           "choices": [
-            "cavernous sinus",
+            "海綿竇（cavernous sinus）",
             "aortic arch",
             "portal vein",
             "pulmonary vein"
-          ]
+          ],
+          "id": "c0d899f52"
         },
         {
           "type": "example",
-          "title": "範例拆解：ophthalmic veins 連到 cavernous sinus",
-          "problem": "眼眶感染可能向顱內擴散，最需注意與哪處的靜脈交通？\n\nA. cavernous sinus\nB. aortic arch\nC. portal vein\nD. pulmonary vein",
+          "title": "範例拆解：ophthalmic veins 連到 海綿竇（cavernous sinus）",
+          "problem": "眼眶感染可能向顱內擴散，最需注意與哪處的靜脈交通？\n\nA. 海綿竇（cavernous sinus）\nB. aortic arch\nC. portal vein\nD. pulmonary vein",
           "steps": [
-            "先確認題目問的主題：ophthalmic veins 連到 cavernous sinus",
-            "眼眶靜脈缺乏可靠瓣膜，與 facial vein、pterygoid plexus、cavernous sinus 等有交通，因此感染與壓力變化可能沿交通路徑擴散。",
-            "把判斷依據連回題目：ophthalmic veins 與 cavernous sinus 相通\n\n正確選項：cavernous sinus。\n眼眶靜脈缺乏可靠瓣膜，與 facial vein、pterygoid plexus、cavernous sinus 等有交通，因此感染與壓力變化可能沿交通路徑擴散。"
+            "先確認題目問的主題：ophthalmic veins 連到 海綿竇（cavernous sinus）",
+            "眼眶靜脈缺乏可靠瓣膜，與 facial vein、pterygoid plexus、海綿竇（cavernous sinus） 等有交通，因此感染與壓力變化可能沿交通路徑擴散。",
+            "把判斷依據連回題目：ophthalmic veins 與 海綿竇（cavernous sinus） 相通\n\n正確選項：海綿竇（cavernous sinus）。\n眼眶靜脈缺乏可靠瓣膜，與 facial vein、pterygoid plexus、海綿竇（cavernous sinus） 等有交通，因此感染與壓力變化可能沿交通路徑擴散。"
           ],
-          "answer": "cavernous sinus"
+          "answer": "海綿竇（cavernous sinus）"
         },
         {
           "type": "practice",
@@ -630,58 +660,64 @@
           "checks": [
             {
               "kind": "single",
-              "q": "主要回收 choroid 的靜脈是？",
+              "q": "主要回收 脈絡膜（choroid） 的靜脈是？",
               "answer": 3,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "vortex veins：choroid/uvea drainage\n\n正確選項：vortex veins。\nvortex veins 又稱 vorticose veins，通常分布於多個象限，穿出 sclera 後流向 ophthalmic veins。它們是 uveal tract，尤其 choroid 的重要靜脈回流路徑。",
+              "explain": "渦靜脈（vortex veins）：脈絡膜（choroid）/uvea 引流（drainage）\n\n正確選項：渦靜脈（vortex veins）。\n渦靜脈（vortex veins） 又稱 vorticose veins，通常分布於多個象限，穿出 鞏膜（sclera） 後流向 ophthalmic veins。它們是 葡萄膜（uveal tract），尤其 脈絡膜（choroid） 的重要靜脈回流路徑。",
               "choices": [
                 "facial vein only",
                 "lacrimal vein only",
-                "central retinal vein",
-                "vortex veins"
-              ]
+                "central 視網膜的（retinal） vein",
+                "渦靜脈（vortex veins）"
+              ],
+              "id": "cf1283707"
             },
             {
               "kind": "single",
               "q": "眼眶感染可能向顱內擴散，最需注意與哪處的靜脈交通？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "ophthalmic veins 與 cavernous sinus 相通\n\n正確選項：cavernous sinus。\n眼眶靜脈缺乏可靠瓣膜，與 facial vein、pterygoid plexus、cavernous sinus 等有交通，因此感染與壓力變化可能沿交通路徑擴散。",
+              "explain": "ophthalmic veins 與 海綿竇（cavernous sinus） 相通\n\n正確選項：海綿竇（cavernous sinus）。\n眼眶靜脈缺乏可靠瓣膜，與 facial vein、pterygoid plexus、海綿竇（cavernous sinus） 等有交通，因此感染與壓力變化可能沿交通路徑擴散。",
               "choices": [
-                "cavernous sinus",
+                "海綿竇（cavernous sinus）",
                 "aortic arch",
                 "portal vein",
                 "pulmonary vein"
-              ]
+              ],
+              "id": "c0d899f52"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "central retinal vein 回收 inner retinal circulation",
-            "穿過 optic nerve/lamina cribrosa 區域",
-            "vortex veins：choroid/uvea drainage",
-            "在赤道附近穿出 sclera",
-            "ophthalmic veins 與 cavernous sinus 相通",
+            "central 視網膜的（retinal） vein 回收 inner 視網膜的（retinal） circulation",
+            "穿過 視神經（optic nerve）/lamina cribrosa 區域",
+            "渦靜脈（vortex veins）：脈絡膜（choroid）/uvea 引流（drainage）",
+            "在赤道附近穿出 鞏膜（sclera）",
+            "ophthalmic veins 與 海綿竇（cavernous sinus） 相通",
             "眼眶靜脈交通豐富"
           ],
           "flash": [
             {
-              "front": "central retinal vein 回收內層視網膜",
-              "back": "central retinal vein 與 artery 類似，沿 optic nerve 離開，回收 retinal circulation。"
+              "front": "central 視網膜的（retinal） vein 回收內層視網膜",
+              "back": "central 視網膜的（retinal） vein 與 artery 類似，沿 視神經（optic nerve） 離開，回收 視網膜的（retinal） circulation。",
+              "id": "f83877ea6"
             },
             {
-              "front": "vortex veins 回收 choroid",
-              "back": "多條 vortex veins 從眼球赤道附近離開，主要回收 choroidal circulation。"
+              "front": "渦靜脈（vortex veins） 回收 脈絡膜（choroid）",
+              "back": "多條 渦靜脈（vortex veins） 從眼球赤道附近離開，主要回收 choroidal circulation。",
+              "id": "fa4d6c665"
             },
             {
-              "front": "ophthalmic veins 連到 cavernous sinus",
-              "back": "superior/inferior ophthalmic veins 回收 orbit，並與 cavernous sinus 及 facial venous system 相通。"
+              "front": "ophthalmic veins 連到 海綿竇（cavernous sinus）",
+              "back": "superior/inferior ophthalmic veins 回收 orbit，並與 海綿竇（cavernous sinus） 及 facial venous system 相通。",
+              "id": "f163289f2"
             },
             {
-              "front": "central retinal vein occlusion 最典型眼底傾向？",
-              "back": "central retinal vein 回收 inner retinal circulation\n\n正確選項：廣泛出血與靜脈怒張。\ncentral retinal vein 匯集視網膜靜脈血，穿過 lamina cribrosa 並沿 optic nerve 回流，最後多注入 cavernous sinus 或 superior ophthalmic vein。其阻塞可造成廣泛 retinal hemorrhage 與 venous congestion。"
+              "front": "central 視網膜的（retinal） vein 遮擋（occlusion） 最典型眼底傾向？",
+              "back": "central 視網膜的（retinal） vein 回收 inner 視網膜的（retinal） circulation\n\n正確選項：廣泛出血與靜脈怒張。\ncentral 視網膜的（retinal） vein 匯集視網膜靜脈血，穿過 lamina cribrosa 並沿 視神經（optic nerve） 回流，最後多注入 海綿竇（cavernous sinus） 或 superior ophthalmic vein。其阻塞可造成廣泛 視網膜的（retinal） hemorrhage 與 venous congestion。",
+              "id": "faf5bb00d"
             }
           ]
         }

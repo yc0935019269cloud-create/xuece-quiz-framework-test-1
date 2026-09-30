@@ -25,7 +25,7 @@
       "goals": [
         "解釋急速重點：受體位置與訊息",
         "解釋急速重點：甲狀腺素合成",
-        "解釋急速重點：T3、T4、rT3"
+        "解釋急速重點：三碘甲狀腺素（T3）、四碘甲狀腺素（T4）、rT3"
       ],
       "steps": [
         {
@@ -36,9 +36,9 @@
         {
           "type": "card",
           "title": "急速重點：受體位置與訊息",
-          "body": "**一句話／白話**\n不能穿膜的荷爾蒙在門外按 receptor，細胞內再用小分子接力，把訊號放大。\n\n**觀念**\n水溶性用膜受體與 second messenger；脂溶性用 cytosolic/nuclear receptor 調 gene transcription。\n\n**易錯與比較**\nGs↑cAMP；Gi↓cAMP；Gq→PLC→IP₃/DAG→Ca²⁺。\n\n**口訣**\n外面按鈴，裡面傳話。",
+          "body": "**一句話／白話**\n不能穿膜的荷爾蒙在門外按 受體（receptor），細胞內再用小分子接力，把訊號放大。\n\n**觀念**\n水溶性用膜受體與 第二傳訊者（second messenger）；脂溶性用 cytosolic/nuclear 受體 調 基因轉錄（gene transcription）。\n\n**易錯與比較**\nGs↑cAMP；Gi↓cAMP；Gq→PLC→IP₃/DAG→Ca²⁺。\n\n**口訣**\n外面按鈴，裡面傳話。",
           "keys": [
-            "不能穿膜的荷爾蒙在門外按 receptor，細胞內再用小分子接力，把訊號放大。"
+            "不能穿膜的荷爾蒙在門外按 受體（receptor），細胞內再用小分子接力，把訊號放大。"
           ],
           "tip": "口訣：外面按鈴，裡面傳話。"
         },
@@ -46,16 +46,17 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：受體位置與訊息」，並說出一個判斷依據。",
-          "answer": "水溶性用膜受體與 second messenger；脂溶性用 cytosolic/nuclear receptor 調 gene transcription。",
+          "answer": "水溶性用膜受體與 第二傳訊者（second messenger）；脂溶性用 cytosolic/nuclear 受體（receptor） 調 基因轉錄（gene transcription）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "水溶性用膜受體與 second messenger；脂溶性用 cytosolic/nuclear receptor 調 gene transcription。"
+          "explain": "水溶性用膜受體與 第二傳訊者（second messenger）；脂溶性用 cytosolic/nuclear 受體（receptor） 調 基因轉錄（gene transcription）。",
+          "id": "c8849cecb"
         },
         {
           "type": "card",
           "title": "急速重點：甲狀腺素合成",
-          "body": "**一句話／白話**\n先把碘抓進細胞，再送進濾泡中央，接到 tyrosine 上並兩兩配對，最後切下 T3/T4 放進血。\n\n**觀念**\nNIS 攝碘→pendrin 入 colloid→TPO 氧化/organification→MIT/DIT→coupling→thyroglobulin 儲存→endocytosis/proteolysis。\n\n**易錯與比較**\nDIT+DIT=T4；MIT+DIT=T3。\n\n**口訣**\n抓碘 → 黏碘 → 配對 → 剪下。",
+          "body": "**一句話／白話**\n先把碘抓進細胞，再送進濾泡中央，接到 酪胺酸（tyrosine） 上並兩兩配對，最後切下 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 放進血。\n\n**觀念**\n鈉碘同向運輸蛋白（NIS） 攝碘→pendrin 入 colloid→甲狀腺過氧化酶（TPO） 氧化/有機化（organification）→單碘酪胺酸（MIT）/雙碘酪胺酸（DIT）→偶聯（coupling）→thyroglobulin 儲存→endocytosis/proteolysis。\n\n**易錯與比較**\n雙碘酪胺酸+雙碘酪胺酸=四碘甲狀腺素；單碘酪胺酸+雙碘酪胺酸=三碘甲狀腺素。\n\n**口訣**\n抓碘 → 黏碘 → 配對 → 剪下。",
           "keys": [
-            "先把碘抓進細胞，再送進濾泡中央，接到 tyrosine 上並兩兩配對，最後切下 T3/T4 放進血。"
+            "先把碘抓進細胞，再送進濾泡中央，接到 酪胺酸（tyrosine） 上並兩兩配對，最後切下 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 放進血。"
           ],
           "tip": "口訣：抓碘 → 黏碘 → 配對 → 剪下。"
         },
@@ -63,37 +64,39 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：甲狀腺素合成」，並說出一個判斷依據。",
-          "answer": "NIS 攝碘→pendrin 入 colloid→TPO 氧化/organification→MIT/DIT→coupling→thyroglobulin 儲存→endocytosis/proteolysis。",
+          "answer": "鈉碘同向運輸蛋白（NIS） 攝碘→pendrin 入 colloid→甲狀腺過氧化酶（TPO） 氧化/有機化（organification）→單碘酪胺酸（MIT）/雙碘酪胺酸（DIT）→偶聯（coupling）→thyroglobulin 儲存→endocytosis/proteolysis。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "NIS 攝碘→pendrin 入 colloid→TPO 氧化/organification→MIT/DIT→coupling→thyroglobulin 儲存→endocytosis/proteolysis。"
+          "explain": "鈉碘同向運輸蛋白（NIS） 攝碘→pendrin 入 colloid→甲狀腺過氧化酶（TPO） 氧化/有機化（organification）→單碘酪胺酸（MIT）/雙碘酪胺酸（DIT）→偶聯（coupling）→thyroglobulin 儲存→endocytosis/proteolysis。",
+          "id": "cf11e84a2"
         },
         {
           "type": "card",
-          "title": "急速重點：T3、T4、rT3",
-          "body": "**一句話／白話**\n甲狀腺主要放出較多 T4；到了周邊組織，可以轉成較有力的 T3，也能轉成沒作用的版本。\n\n**觀念**\n甲狀腺主要分泌 T4；周邊轉成活性較高 T3 或不活性 rT3；free T3/T4 才具活性。\n\n**易錯與比較**\n判功能不可只看 total hormone。\n\n**口訣**\nT4 多，T3 強。",
+          "title": "急速重點：三碘甲狀腺素（T3）、四碘甲狀腺素（T4）、rT3",
+          "body": "**一句話／白話**\n甲狀腺主要放出較多 四碘甲狀腺素（T4）；到了周邊組織，可以轉成較有力的 三碘甲狀腺素（T3），也能轉成沒作用的版本。\n\n**觀念**\n甲狀腺主要分泌 四碘甲狀腺素；周邊轉成活性較高 三碘甲狀腺素 或不活性 rT3；free 三碘甲狀腺素/四碘甲狀腺素 才具活性。\n\n**易錯與比較**\n判功能不可只看 total 荷爾蒙（hormone）。\n\n**口訣**\n四碘甲狀腺素 多，三碘甲狀腺素 強。",
           "keys": [
-            "甲狀腺主要放出較多 T4；到了周邊組織，可以轉成較有力的 T3，也能轉成沒作用的版本。"
+            "甲狀腺主要放出較多 四碘甲狀腺素（T4）；到了周邊組織，可以轉成較有力的 三碘甲狀腺素（T3），也能轉成沒作用的版本。"
           ],
-          "tip": "口訣：T4 多，T3 強。"
+          "tip": "口訣：四碘甲狀腺素（T4） 多，三碘甲狀腺素（T3） 強。"
         },
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：T3、T4、rT3」，並說出一個判斷依據。",
-          "answer": "甲狀腺主要分泌 T4；周邊轉成活性較高 T3 或不活性 rT3；free T3/T4 才具活性。",
+          "q": "用自己的話說明「急速重點：三碘甲狀腺素（T3）、四碘甲狀腺素（T4）、rT3」，並說出一個判斷依據。",
+          "answer": "甲狀腺主要分泌 四碘甲狀腺素（T4）；周邊轉成活性較高 三碘甲狀腺素（T3） 或不活性 rT3；free 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 才具活性。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "甲狀腺主要分泌 T4；周邊轉成活性較高 T3 或不活性 rT3；free T3/T4 才具活性。"
+          "explain": "甲狀腺主要分泌 四碘甲狀腺素（T4）；周邊轉成活性較高 三碘甲狀腺素（T3） 或不活性 rT3；free 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 才具活性。",
+          "id": "ce80b4b35"
         },
         {
           "type": "example",
-          "title": "範例拆解：急速重點：T3、T4、rT3",
-          "problem": "用自己的話說明「急速重點：T3、T4、rT3」，並說出一個判斷依據。",
+          "title": "範例拆解：急速重點：三碘甲狀腺素（T3）、四碘甲狀腺素（T4）、rT3",
+          "problem": "用自己的話說明「急速重點：三碘甲狀腺素（T3）、四碘甲狀腺素（T4）、rT3」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：急速重點：T3、T4、rT3",
-            "甲狀腺主要分泌 T4；周邊轉成活性較高 T3 或不活性 rT3；free T3/T4 才具活性。",
-            "把判斷依據連回題目：甲狀腺主要分泌 T4；周邊轉成活性較高 T3 或不活性 rT3；free T3/T4 才具活性。"
+            "先確認題目問的主題：急速重點：三碘甲狀腺素（T3）、四碘甲狀腺素（T4）、rT3",
+            "甲狀腺主要分泌 四碘甲狀腺素（T4）；周邊轉成活性較高 三碘甲狀腺素（T3） 或不活性 rT3；free 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 才具活性。",
+            "把判斷依據連回題目：甲狀腺主要分泌 四碘甲狀腺素（T4）；周邊轉成活性較高 三碘甲狀腺素（T3） 或不活性 rT3；free 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 才具活性。"
           ],
-          "answer": "甲狀腺主要分泌 T4；周邊轉成活性較高 T3 或不活性 rT3；free T3/T4 才具活性。"
+          "answer": "甲狀腺主要分泌 四碘甲狀腺素（T4）；周邊轉成活性較高 三碘甲狀腺素（T3） 或不活性 rT3；free 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 才具活性。"
         },
         {
           "type": "practice",
@@ -106,44 +109,50 @@
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：甲狀腺素合成」，並說出一個判斷依據。",
-              "answer": "NIS 攝碘→pendrin 入 colloid→TPO 氧化/organification→MIT/DIT→coupling→thyroglobulin 儲存→endocytosis/proteolysis。",
+              "answer": "鈉碘同向運輸蛋白（NIS） 攝碘→pendrin 入 colloid→甲狀腺過氧化酶（TPO） 氧化/有機化（organification）→單碘酪胺酸（MIT）/雙碘酪胺酸（DIT）→偶聯（coupling）→thyroglobulin 儲存→endocytosis/proteolysis。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "NIS 攝碘→pendrin 入 colloid→TPO 氧化/organification→MIT/DIT→coupling→thyroglobulin 儲存→endocytosis/proteolysis。"
+              "explain": "鈉碘同向運輸蛋白（NIS） 攝碘→pendrin 入 colloid→甲狀腺過氧化酶（TPO） 氧化/有機化（organification）→單碘酪胺酸（MIT）/雙碘酪胺酸（DIT）→偶聯（coupling）→thyroglobulin 儲存→endocytosis/proteolysis。",
+              "id": "cf11e84a2"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：T3、T4、rT3」，並說出一個判斷依據。",
-              "answer": "甲狀腺主要分泌 T4；周邊轉成活性較高 T3 或不活性 rT3；free T3/T4 才具活性。",
+              "q": "用自己的話說明「急速重點：三碘甲狀腺素（T3）、四碘甲狀腺素（T4）、rT3」，並說出一個判斷依據。",
+              "answer": "甲狀腺主要分泌 四碘甲狀腺素（T4）；周邊轉成活性較高 三碘甲狀腺素（T3） 或不活性 rT3；free 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 才具活性。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "甲狀腺主要分泌 T4；周邊轉成活性較高 T3 或不活性 rT3；free T3/T4 才具活性。"
+              "explain": "甲狀腺主要分泌 四碘甲狀腺素（T4）；周邊轉成活性較高 三碘甲狀腺素（T3） 或不活性 rT3；free 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 才具活性。",
+              "id": "ce80b4b35"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "不能穿膜的荷爾蒙在門外按 receptor，細胞內再用小分子接力，把訊號放大。",
-            "先把碘抓進細胞，再送進濾泡中央，接到 tyrosine 上並兩兩配對，最後切下 T3/T4 放進血。",
-            "甲狀腺主要放出較多 T4；到了周邊組織，可以轉成較有力的 T3，也能轉成沒作用的版本。",
-            "急速重點：受體位置與訊息：不能穿膜的荷爾蒙在門外按 receptor，細胞內再用小分子接力，把訊號放大。",
-            "急速重點：甲狀腺素合成：先把碘抓進細胞，再送進濾泡中央，接到 tyrosine 上並兩兩配對，最後切下 T3/T4 放進血。"
+            "不能穿膜的荷爾蒙在門外按 受體（receptor），細胞內再用小分子接力，把訊號放大。",
+            "先把碘抓進細胞，再送進濾泡中央，接到 酪胺酸（tyrosine） 上並兩兩配對，最後切下 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 放進血。",
+            "甲狀腺主要放出較多 四碘甲狀腺素（T4）；到了周邊組織，可以轉成較有力的 三碘甲狀腺素（T3），也能轉成沒作用的版本。",
+            "急速重點：受體位置與訊息：不能穿膜的荷爾蒙在門外按 受體（receptor），細胞內再用小分子接力，把訊號放大。",
+            "急速重點：甲狀腺素合成：先把碘抓進細胞，再送進濾泡中央，接到 酪胺酸（tyrosine） 上並兩兩配對，最後切下 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 放進血。"
           ],
           "flash": [
             {
               "front": "急速重點：受體位置與訊息",
-              "back": "不能穿膜的荷爾蒙在門外按 receptor，細胞內再用小分子接力，把訊號放大。"
+              "back": "不能穿膜的荷爾蒙在門外按 受體（receptor），細胞內再用小分子接力，把訊號放大。",
+              "id": "f6bf232d2"
             },
             {
               "front": "急速重點：甲狀腺素合成",
-              "back": "先把碘抓進細胞，再送進濾泡中央，接到 tyrosine 上並兩兩配對，最後切下 T3/T4 放進血。"
+              "back": "先把碘抓進細胞，再送進濾泡中央，接到 酪胺酸（tyrosine） 上並兩兩配對，最後切下 三碘甲狀腺素（T3）/四碘甲狀腺素（T4） 放進血。",
+              "id": "fb4f45b3e"
             },
             {
-              "front": "急速重點：T3、T4、rT3",
-              "back": "甲狀腺主要放出較多 T4；到了周邊組織，可以轉成較有力的 T3，也能轉成沒作用的版本。"
+              "front": "急速重點：三碘甲狀腺素（T3）、四碘甲狀腺素（T4）、rT3",
+              "back": "甲狀腺主要放出較多 四碘甲狀腺素（T4）；到了周邊組織，可以轉成較有力的 三碘甲狀腺素（T3），也能轉成沒作用的版本。",
+              "id": "f76dba5aa"
             },
             {
               "front": "用自己的話說明「急速重點：受體位置與訊息」，並說出一個判斷依據。",
-              "back": "水溶性用膜受體與 second messenger；脂溶性用 cytosolic/nuclear receptor 調 gene transcription。"
+              "back": "水溶性用膜受體與 第二傳訊者（second messenger）；脂溶性用 cytosolic/nuclear 受體（receptor） 調 基因轉錄（gene transcription）。",
+              "id": "f8849cecb"
             }
           ]
         }
@@ -155,7 +164,7 @@
       "goals": [
         "解釋急速重點：甲狀腺疾病比較",
         "解釋急速重點：血鈣三巨頭",
-        "解釋急速重點：PTH 與骨重塑"
+        "解釋急速重點：副甲狀腺素（PTH） 與骨重塑"
       ],
       "steps": [
         {
@@ -166,7 +175,7 @@
         {
           "type": "card",
           "title": "急速重點：甲狀腺疾病比較",
-          "body": "**一句話／白話**\n甲狀腺自己太旺時，下游荷爾蒙高、上游命令低；原料不足時，下游低、上游會拼命催，腺體可能被催大。\n\n**觀念**\nCretinism：幼兒 TH 不足，生長與智力受損；Graves：T3/T4↑、TSH↓；缺碘 goiter：TH↓、TSH↑。\n\n**易錯與比較**\nGH deficiency 侏儒症通常智力不受損。\n\n**口訣**\n產品多就少催，產品少就猛催。",
+          "body": "**一句話／白話**\n甲狀腺自己太旺時，下游荷爾蒙高、上游命令低；原料不足時，下游低、上游會拼命催，腺體可能被催大。\n\n**觀念**\nCretinism：幼兒 TH 不足，生長與智力受損；Graves：三碘甲狀腺素（T3）/四碘甲狀腺素（T4）↑、甲狀腺刺激素（TSH）↓；缺碘 goiter：TH↓、甲狀腺刺激素↑。\n\n**易錯與比較**\n生長激素（GH） deficiency 侏儒症通常智力不受損。\n\n**口訣**\n產品多就少催，產品少就猛催。",
           "keys": [
             "甲狀腺自己太旺時，下游荷爾蒙高、上游命令低；原料不足時，下游低、上游會拼命催，腺體可能被催大。"
           ],
@@ -176,14 +185,15 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：甲狀腺疾病比較」，並說出一個判斷依據。",
-          "answer": "Cretinism：幼兒 TH 不足，生長與智力受損；Graves：T3/T4↑、TSH↓；缺碘 goiter：TH↓、TSH↑。",
+          "answer": "Cretinism：幼兒 TH 不足，生長與智力受損；Graves：三碘甲狀腺素（T3）/四碘甲狀腺素（T4）↑、甲狀腺刺激素（TSH）↓；缺碘 goiter：TH↓、甲狀腺刺激素（TSH）↑。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "Cretinism：幼兒 TH 不足，生長與智力受損；Graves：T3/T4↑、TSH↓；缺碘 goiter：TH↓、TSH↑。"
+          "explain": "Cretinism：幼兒 TH 不足，生長與智力受損；Graves：三碘甲狀腺素（T3）/四碘甲狀腺素（T4）↑、甲狀腺刺激素（TSH）↓；缺碘 goiter：TH↓、甲狀腺刺激素（TSH）↑。",
+          "id": "ca1bfe46b"
         },
         {
           "type": "card",
           "title": "急速重點：血鈣三巨頭",
-          "body": "**一句話／白話**\n身體會從骨頭借鈣、讓腎臟少丟鈣，並叫腸子多吸收；因為血鈣太低會讓神經肌肉亂放電。\n\n**觀念**\nPTH、active vitamin D 提高血鈣；calcitonin 降低血鈣；低血鈣使神經肌肉興奮性↑。\n\n**易錯與比較**\nPTH 是快速維持血鈣主角。\n\n**口訣**\n先救血，再顧骨。",
+          "body": "**一句話／白話**\n身體會從骨頭借鈣、讓腎臟少丟鈣，並叫腸子多吸收；因為血鈣太低會讓神經肌肉亂放電。\n\n**觀念**\n副甲狀腺素（PTH）、active 維生素 D（vitamin D） 提高血鈣；降鈣素（calcitonin） 降低血鈣；低血鈣使神經肌肉興奮性↑。\n\n**易錯與比較**\n副甲狀腺素 是快速維持血鈣主角。\n\n**口訣**\n先救血，再顧骨。",
           "keys": [
             "身體會從骨頭借鈣、讓腎臟少丟鈣，並叫腸子多吸收；因為血鈣太低會讓神經肌肉亂放電。"
           ],
@@ -193,14 +203,15 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：血鈣三巨頭」，並說出一個判斷依據。",
-          "answer": "PTH、active vitamin D 提高血鈣；calcitonin 降低血鈣；低血鈣使神經肌肉興奮性↑。",
+          "answer": "副甲狀腺素（PTH）、active 維生素 D（vitamin D） 提高血鈣；降鈣素（calcitonin） 降低血鈣；低血鈣使神經肌肉興奮性↑。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "PTH、active vitamin D 提高血鈣；calcitonin 降低血鈣；低血鈣使神經肌肉興奮性↑。"
+          "explain": "副甲狀腺素（PTH）、active 維生素 D（vitamin D） 提高血鈣；降鈣素（calcitonin） 降低血鈣；低血鈣使神經肌肉興奮性↑。",
+          "id": "cc4bc50e2"
         },
         {
           "type": "card",
-          "title": "急速重點：PTH 與骨重塑",
-          "body": "**一句話／白話**\n升血鈣荷爾蒙先告訴造骨細胞，再由造骨細胞叫醒拆骨細胞，讓骨鈣釋出。\n\n**觀念**\nPTH→osteoblast→RANKL↑→活化 osteoclast precursor→bone resorption↑。\n\n**易錯與比較**\nosteoclast 沒有主要 PTH receptor。\n\n**口訣**\n長官不直接找拆除工。",
+          "title": "急速重點：副甲狀腺素（PTH） 與骨重塑",
+          "body": "**一句話／白話**\n升血鈣荷爾蒙先告訴造骨細胞，再由造骨細胞叫醒拆骨細胞，讓骨鈣釋出。\n\n**觀念**\n副甲狀腺素（PTH）→造骨細胞（osteoblast）→核因子 κB 受體活化因子配體（RANKL）↑→活化 蝕骨細胞（osteoclast） precursor→bone resorption↑。\n\n**易錯與比較**\n蝕骨細胞 沒有主要 副甲狀腺素 受體（receptor）。\n\n**口訣**\n長官不直接找拆除工。",
           "keys": [
             "升血鈣荷爾蒙先告訴造骨細胞，再由造骨細胞叫醒拆骨細胞，讓骨鈣釋出。"
           ],
@@ -209,21 +220,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：PTH 與骨重塑」，並說出一個判斷依據。",
-          "answer": "PTH→osteoblast→RANKL↑→活化 osteoclast precursor→bone resorption↑。",
+          "q": "用自己的話說明「急速重點：副甲狀腺素（PTH） 與骨重塑」，並說出一個判斷依據。",
+          "answer": "副甲狀腺素（PTH）→造骨細胞（osteoblast）→核因子 κB 受體活化因子配體（RANKL）↑→活化 蝕骨細胞（osteoclast） precursor→bone resorption↑。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "PTH→osteoblast→RANKL↑→活化 osteoclast precursor→bone resorption↑。"
+          "explain": "副甲狀腺素（PTH）→造骨細胞（osteoblast）→核因子 κB 受體活化因子配體（RANKL）↑→活化 蝕骨細胞（osteoclast） precursor→bone resorption↑。",
+          "id": "c8d06fc7f"
         },
         {
           "type": "example",
-          "title": "範例拆解：急速重點：PTH 與骨重塑",
-          "problem": "用自己的話說明「急速重點：PTH 與骨重塑」，並說出一個判斷依據。",
+          "title": "範例拆解：急速重點：副甲狀腺素（PTH） 與骨重塑",
+          "problem": "用自己的話說明「急速重點：副甲狀腺素（PTH） 與骨重塑」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：急速重點：PTH 與骨重塑",
-            "PTH→osteoblast→RANKL↑→活化 osteoclast precursor→bone resorption↑。",
-            "把判斷依據連回題目：PTH→osteoblast→RANKL↑→活化 osteoclast precursor→bone resorption↑。"
+            "先確認題目問的主題：急速重點：副甲狀腺素（PTH） 與骨重塑",
+            "副甲狀腺素（PTH）→造骨細胞（osteoblast）→核因子 κB 受體活化因子配體（RANKL）↑→活化 蝕骨細胞（osteoclast） precursor→bone resorption↑。",
+            "把判斷依據連回題目：副甲狀腺素（PTH）→造骨細胞（osteoblast）→核因子 κB 受體活化因子配體（RANKL）↑→活化 蝕骨細胞（osteoclast） precursor→bone resorption↑。"
           ],
-          "answer": "PTH→osteoblast→RANKL↑→活化 osteoclast precursor→bone resorption↑。"
+          "answer": "副甲狀腺素（PTH）→造骨細胞（osteoblast）→核因子 κB 受體活化因子配體（RANKL）↑→活化 蝕骨細胞（osteoclast） precursor→bone resorption↑。"
         },
         {
           "type": "practice",
@@ -236,16 +248,18 @@
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：血鈣三巨頭」，並說出一個判斷依據。",
-              "answer": "PTH、active vitamin D 提高血鈣；calcitonin 降低血鈣；低血鈣使神經肌肉興奮性↑。",
+              "answer": "副甲狀腺素（PTH）、active 維生素 D（vitamin D） 提高血鈣；降鈣素（calcitonin） 降低血鈣；低血鈣使神經肌肉興奮性↑。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "PTH、active vitamin D 提高血鈣；calcitonin 降低血鈣；低血鈣使神經肌肉興奮性↑。"
+              "explain": "副甲狀腺素（PTH）、active 維生素 D（vitamin D） 提高血鈣；降鈣素（calcitonin） 降低血鈣；低血鈣使神經肌肉興奮性↑。",
+              "id": "cc4bc50e2"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：PTH 與骨重塑」，並說出一個判斷依據。",
-              "answer": "PTH→osteoblast→RANKL↑→活化 osteoclast precursor→bone resorption↑。",
+              "q": "用自己的話說明「急速重點：副甲狀腺素（PTH） 與骨重塑」，並說出一個判斷依據。",
+              "answer": "副甲狀腺素（PTH）→造骨細胞（osteoblast）→核因子 κB 受體活化因子配體（RANKL）↑→活化 蝕骨細胞（osteoclast） precursor→bone resorption↑。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "PTH→osteoblast→RANKL↑→活化 osteoclast precursor→bone resorption↑。"
+              "explain": "副甲狀腺素（PTH）→造骨細胞（osteoblast）→核因子 κB 受體活化因子配體（RANKL）↑→活化 蝕骨細胞（osteoclast） precursor→bone resorption↑。",
+              "id": "c8d06fc7f"
             }
           ]
         },
@@ -261,19 +275,23 @@
           "flash": [
             {
               "front": "急速重點：甲狀腺疾病比較",
-              "back": "甲狀腺自己太旺時，下游荷爾蒙高、上游命令低；原料不足時，下游低、上游會拼命催，腺體可能被催大。"
+              "back": "甲狀腺自己太旺時，下游荷爾蒙高、上游命令低；原料不足時，下游低、上游會拼命催，腺體可能被催大。",
+              "id": "f24ece797"
             },
             {
               "front": "急速重點：血鈣三巨頭",
-              "back": "身體會從骨頭借鈣、讓腎臟少丟鈣，並叫腸子多吸收；因為血鈣太低會讓神經肌肉亂放電。"
+              "back": "身體會從骨頭借鈣、讓腎臟少丟鈣，並叫腸子多吸收；因為血鈣太低會讓神經肌肉亂放電。",
+              "id": "f1038ebbb"
             },
             {
-              "front": "急速重點：PTH 與骨重塑",
-              "back": "升血鈣荷爾蒙先告訴造骨細胞，再由造骨細胞叫醒拆骨細胞，讓骨鈣釋出。"
+              "front": "急速重點：副甲狀腺素（PTH） 與骨重塑",
+              "back": "升血鈣荷爾蒙先告訴造骨細胞，再由造骨細胞叫醒拆骨細胞，讓骨鈣釋出。",
+              "id": "f1a639f35"
             },
             {
               "front": "用自己的話說明「急速重點：甲狀腺疾病比較」，並說出一個判斷依據。",
-              "back": "Cretinism：幼兒 TH 不足，生長與智力受損；Graves：T3/T4↑、TSH↓；缺碘 goiter：TH↓、TSH↑。"
+              "back": "Cretinism：幼兒 TH 不足，生長與智力受損；Graves：三碘甲狀腺素（T3）/四碘甲狀腺素（T4）↑、甲狀腺刺激素（TSH）↓；缺碘 goiter：TH↓、甲狀腺刺激素（TSH）↑。",
+              "id": "fa1bfe46b"
             }
           ]
         }
@@ -283,9 +301,9 @@
       "id": "review-extra-4",
       "title": "串連、公式與易錯整合（4）",
       "goals": [
-        "解釋急速重點：Vitamin D 活化",
+        "解釋急速重點：維生素 D（Vitamin D） 活化",
         "解釋急速重點：胰島細胞配對",
-        "解釋急速重點：C-peptide 判讀"
+        "解釋急速重點：C 肽（C-peptide） 判讀"
       ],
       "steps": [
         {
@@ -295,7 +313,7 @@
         },
         {
           "type": "card",
-          "title": "急速重點：Vitamin D 活化",
+          "title": "急速重點：維生素 D（Vitamin D） 活化",
           "body": "**一句話／白話**\n皮膚或食物取得原料後，先去肝、再去腎加工，才變成能幫腸子吸收鈣的活性版本。\n\n**觀念**\n皮膚 UVB→肝 25-hydroxylation→腎 1α-hydroxylation（PTH 促進）→calcitriol。\n\n**易錯與比較**\n活性型 1,25-(OH)₂D₃；增加腸道 Ca²⁺/PO₄³⁻吸收。\n\n**口訣**\n皮膚 → 肝 → 腎 → 腸。",
           "keys": [
             "皮膚或食物取得原料後，先去肝、再去腎加工，才變成能幫腸子吸收鈣的活性版本。"
@@ -305,15 +323,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：Vitamin D 活化」，並說出一個判斷依據。",
+          "q": "用自己的話說明「急速重點：維生素 D（Vitamin D） 活化」，並說出一個判斷依據。",
           "answer": "皮膚 UVB→肝 25-hydroxylation→腎 1α-hydroxylation（PTH 促進）→calcitriol。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "皮膚 UVB→肝 25-hydroxylation→腎 1α-hydroxylation（PTH 促進）→calcitriol。"
+          "explain": "皮膚 UVB→肝 25-hydroxylation→腎 1α-hydroxylation（PTH 促進）→calcitriol。",
+          "id": "c36b46a1b"
         },
         {
           "type": "card",
           "title": "急速重點：胰島細胞配對",
-          "body": "**一句話／白話**\n不同細胞各自負責降血糖、升血糖、踩煞車；胰臟同時也會把消化液送進腸道。\n\n**觀念**\nα/A→glucagon；β/B→insulin；δ/D→somatostatin；PP/F→pancreatic polypeptide。\n\n**易錯與比較**\nPancreas 是 endocrine+exocrine 混合腺。\n\n**口訣**\n一邊管血糖，一邊管消化。",
+          "body": "**一句話／白話**\n不同細胞各自負責降血糖、升血糖、踩煞車；胰臟同時也會把消化液送進腸道。\n\n**觀念**\nα/A→升糖素（glucagon）；β/B→胰島素（insulin）；δ/D→somatostatin；PP/F→pancreatic polypeptide。\n\n**易錯與比較**\nPancreas 是 內分泌（endocrine）+exocrine 混合腺。\n\n**口訣**\n一邊管血糖，一邊管消化。",
           "keys": [
             "不同細胞各自負責降血糖、升血糖、踩煞車；胰臟同時也會把消化液送進腸道。"
           ],
@@ -323,37 +342,39 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：胰島細胞配對」，並說出一個判斷依據。",
-          "answer": "α/A→glucagon；β/B→insulin；δ/D→somatostatin；PP/F→pancreatic polypeptide。",
+          "answer": "α/A→升糖素（glucagon）；β/B→胰島素（insulin）；δ/D→somatostatin；PP/F→pancreatic polypeptide。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "α/A→glucagon；β/B→insulin；δ/D→somatostatin；PP/F→pancreatic polypeptide。"
+          "explain": "α/A→升糖素（glucagon）；β/B→胰島素（insulin）；δ/D→somatostatin；PP/F→pancreatic polypeptide。",
+          "id": "c1c03f2d7"
         },
         {
           "type": "card",
-          "title": "急速重點：C-peptide 判讀",
-          "body": "**一句話／白話**\n身體自己製造 insulin 時，會同時放出一塊陪跑碎片；外面打進來的 insulin 沒有它。\n\n**觀念**\nproinsulin→insulin+C-peptide，內源性約1:1釋放；外源 insulin 不含 C-peptide。\n\n**易錯與比較**\n用來估 β-cell 自體分泌。\n\n**口訣**\n有陪跑碎片＝自己做的。",
+          "title": "急速重點：C 肽（C-peptide） 判讀",
+          "body": "**一句話／白話**\n身體自己製造 胰島素（insulin） 時，會同時放出一塊陪跑碎片；外面打進來的 胰島素 沒有它。\n\n**觀念**\n前胰島素（proinsulin）→胰島素+C 肽（C-peptide），內源性約1:1釋放；外源 胰島素 不含 C 肽。\n\n**易錯與比較**\n用來估 β-cell 自體分泌。\n\n**口訣**\n有陪跑碎片＝自己做的。",
           "keys": [
-            "身體自己製造 insulin 時，會同時放出一塊陪跑碎片；外面打進來的 insulin 沒有它。"
+            "身體自己製造 胰島素（insulin） 時，會同時放出一塊陪跑碎片；外面打進來的 胰島素（insulin） 沒有它。"
           ],
           "tip": "口訣：有陪跑碎片＝自己做的。"
         },
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：C-peptide 判讀」，並說出一個判斷依據。",
-          "answer": "proinsulin→insulin+C-peptide，內源性約1:1釋放；外源 insulin 不含 C-peptide。",
+          "q": "用自己的話說明「急速重點：C 肽（C-peptide） 判讀」，並說出一個判斷依據。",
+          "answer": "前胰島素（proinsulin）→胰島素（insulin）+C 肽（C-peptide），內源性約1:1釋放；外源 胰島素（insulin） 不含 C 肽（C-peptide）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "proinsulin→insulin+C-peptide，內源性約1:1釋放；外源 insulin 不含 C-peptide。"
+          "explain": "前胰島素（proinsulin）→胰島素（insulin）+C 肽（C-peptide），內源性約1:1釋放；外源 胰島素（insulin） 不含 C 肽（C-peptide）。",
+          "id": "cde178954"
         },
         {
           "type": "example",
-          "title": "範例拆解：急速重點：C-peptide 判讀",
-          "problem": "用自己的話說明「急速重點：C-peptide 判讀」，並說出一個判斷依據。",
+          "title": "範例拆解：急速重點：C 肽（C-peptide） 判讀",
+          "problem": "用自己的話說明「急速重點：C 肽（C-peptide） 判讀」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：急速重點：C-peptide 判讀",
-            "proinsulin→insulin+C-peptide，內源性約1:1釋放；外源 insulin 不含 C-peptide。",
-            "把判斷依據連回題目：proinsulin→insulin+C-peptide，內源性約1:1釋放；外源 insulin 不含 C-peptide。"
+            "先確認題目問的主題：急速重點：C 肽（C-peptide） 判讀",
+            "前胰島素（proinsulin）→胰島素（insulin）+C 肽（C-peptide），內源性約1:1釋放；外源 胰島素（insulin） 不含 C 肽（C-peptide）。",
+            "把判斷依據連回題目：前胰島素（proinsulin）→胰島素（insulin）+C 肽（C-peptide），內源性約1:1釋放；外源 胰島素（insulin） 不含 C 肽（C-peptide）。"
           ],
-          "answer": "proinsulin→insulin+C-peptide，內源性約1:1釋放；外源 insulin 不含 C-peptide。"
+          "answer": "前胰島素（proinsulin）→胰島素（insulin）+C 肽（C-peptide），內源性約1:1釋放；外源 胰島素（insulin） 不含 C 肽（C-peptide）。"
         },
         {
           "type": "practice",
@@ -366,16 +387,18 @@
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：胰島細胞配對」，並說出一個判斷依據。",
-              "answer": "α/A→glucagon；β/B→insulin；δ/D→somatostatin；PP/F→pancreatic polypeptide。",
+              "answer": "α/A→升糖素（glucagon）；β/B→胰島素（insulin）；δ/D→somatostatin；PP/F→pancreatic polypeptide。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "α/A→glucagon；β/B→insulin；δ/D→somatostatin；PP/F→pancreatic polypeptide。"
+              "explain": "α/A→升糖素（glucagon）；β/B→胰島素（insulin）；δ/D→somatostatin；PP/F→pancreatic polypeptide。",
+              "id": "c1c03f2d7"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：C-peptide 判讀」，並說出一個判斷依據。",
-              "answer": "proinsulin→insulin+C-peptide，內源性約1:1釋放；外源 insulin 不含 C-peptide。",
+              "q": "用自己的話說明「急速重點：C 肽（C-peptide） 判讀」，並說出一個判斷依據。",
+              "answer": "前胰島素（proinsulin）→胰島素（insulin）+C 肽（C-peptide），內源性約1:1釋放；外源 胰島素（insulin） 不含 C 肽（C-peptide）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "proinsulin→insulin+C-peptide，內源性約1:1釋放；外源 insulin 不含 C-peptide。"
+              "explain": "前胰島素（proinsulin）→胰島素（insulin）+C 肽（C-peptide），內源性約1:1釋放；外源 胰島素（insulin） 不含 C 肽（C-peptide）。",
+              "id": "cde178954"
             }
           ]
         },
@@ -384,26 +407,30 @@
           "points": [
             "皮膚或食物取得原料後，先去肝、再去腎加工，才變成能幫腸子吸收鈣的活性版本。",
             "不同細胞各自負責降血糖、升血糖、踩煞車；胰臟同時也會把消化液送進腸道。",
-            "身體自己製造 insulin 時，會同時放出一塊陪跑碎片；外面打進來的 insulin 沒有它。",
-            "急速重點：Vitamin D 活化：皮膚或食物取得原料後，先去肝、再去腎加工，才變成能幫腸子吸收鈣的活性版本。",
+            "身體自己製造 胰島素（insulin） 時，會同時放出一塊陪跑碎片；外面打進來的 胰島素（insulin） 沒有它。",
+            "急速重點：維生素 D（Vitamin D） 活化：皮膚或食物取得原料後，先去肝、再去腎加工，才變成能幫腸子吸收鈣的活性版本。",
             "急速重點：胰島細胞配對：不同細胞各自負責降血糖、升血糖、踩煞車；胰臟同時也會把消化液送進腸道。"
           ],
           "flash": [
             {
-              "front": "急速重點：Vitamin D 活化",
-              "back": "皮膚或食物取得原料後，先去肝、再去腎加工，才變成能幫腸子吸收鈣的活性版本。"
+              "front": "急速重點：維生素 D（Vitamin D） 活化",
+              "back": "皮膚或食物取得原料後，先去肝、再去腎加工，才變成能幫腸子吸收鈣的活性版本。",
+              "id": "f3f03c329"
             },
             {
               "front": "急速重點：胰島細胞配對",
-              "back": "不同細胞各自負責降血糖、升血糖、踩煞車；胰臟同時也會把消化液送進腸道。"
+              "back": "不同細胞各自負責降血糖、升血糖、踩煞車；胰臟同時也會把消化液送進腸道。",
+              "id": "f6d301098"
             },
             {
-              "front": "急速重點：C-peptide 判讀",
-              "back": "身體自己製造 insulin 時，會同時放出一塊陪跑碎片；外面打進來的 insulin 沒有它。"
+              "front": "急速重點：C 肽（C-peptide） 判讀",
+              "back": "身體自己製造 胰島素（insulin） 時，會同時放出一塊陪跑碎片；外面打進來的 胰島素（insulin） 沒有它。",
+              "id": "f32f6f104"
             },
             {
-              "front": "用自己的話說明「急速重點：Vitamin D 活化」，並說出一個判斷依據。",
-              "back": "皮膚 UVB→肝 25-hydroxylation→腎 1α-hydroxylation（PTH 促進）→calcitriol。"
+              "front": "用自己的話說明「急速重點：維生素 D（Vitamin D） 活化」，並說出一個判斷依據。",
+              "back": "皮膚 UVB→肝 25-hydroxylation→腎 1α-hydroxylation（PTH 促進）→calcitriol。",
+              "id": "f36b46a1b"
             }
           ]
         }
@@ -441,14 +468,15 @@
             "核內受體調 DNA、可口服",
             "血中靠蛋白攜帶、t½ 長",
             "前驅物是膽固醇"
-          ]
+          ],
+          "id": "ca7fa2570"
         },
         {
           "type": "card",
           "title": "判斷依據：內分泌系統",
-          "body": "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 cholesterol。\n",
+          "body": "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 （cholesterol）。\n",
           "keys": [
-            "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 cholesterol。\n"
+            "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 （cholesterol）。\n"
           ]
         },
         {
@@ -457,35 +485,37 @@
           "q": "類固醇類荷爾蒙的前驅物是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 cholesterol。\n",
+          "explain": "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 （cholesterol）。\n",
           "choices": [
-            "膽固醇 cholesterol",
-            "pre-pro-hormone",
+            "膽固醇 （cholesterol）",
+            "pre-pro-荷爾蒙（hormone）",
             "酪胺酸",
             "花生四烯酸"
-          ]
+          ],
+          "id": "c425ad6d4"
         },
         {
           "type": "card",
           "title": "判斷依據：內分泌系統",
-          "body": "ADH 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 baroreceptor 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n",
+          "body": "抗利尿激素（ADH） 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 壓力感受器（baroreceptor） 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n",
           "keys": [
-            "ADH 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 baroreceptor 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n"
+            "抗利尿激素（ADH） 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 壓力感受器（baroreceptor） 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "血量明顯下降由哪些 baroreceptor 偵測而使 ADH 上升？",
+          "q": "血量明顯下降由哪些 壓力感受器（baroreceptor） 偵測而使 抗利尿激素（ADH） 上升？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "ADH 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 baroreceptor 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n",
+          "explain": "抗利尿激素（ADH） 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 壓力感受器（baroreceptor） 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n",
           "choices": [
             "頸動脈竇、主動脈弓、左心房",
             "腎絲球、近曲小管",
             "下視丘滲透壓受器",
             "頸動脈體化學受器"
-          ]
+          ],
+          "id": "c5a63d9b4"
         },
         {
           "type": "example",
@@ -513,33 +543,36 @@
                 "核內受體調 DNA、可口服",
                 "血中靠蛋白攜帶、t½ 長",
                 "前驅物是膽固醇"
-              ]
+              ],
+              "id": "ca7fa2570"
             },
             {
               "kind": "single",
               "q": "類固醇類荷爾蒙的前驅物是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 cholesterol。\n",
+              "explain": "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 （cholesterol）。\n",
               "choices": [
-                "膽固醇 cholesterol",
-                "pre-pro-hormone",
+                "膽固醇 （cholesterol）",
+                "pre-pro-荷爾蒙（hormone）",
                 "酪胺酸",
                 "花生四烯酸"
-              ]
+              ],
+              "id": "c425ad6d4"
             },
             {
               "kind": "single",
-              "q": "血量明顯下降由哪些 baroreceptor 偵測而使 ADH 上升？",
+              "q": "血量明顯下降由哪些 壓力感受器（baroreceptor） 偵測而使 抗利尿激素（ADH） 上升？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "ADH 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 baroreceptor 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n",
+              "explain": "抗利尿激素（ADH） 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 壓力感受器（baroreceptor） 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n",
               "choices": [
                 "頸動脈竇、主動脈弓、左心房",
                 "腎絲球、近曲小管",
                 "下視丘滲透壓受器",
                 "頸動脈體化學受器"
-              ]
+              ],
+              "id": "c5a63d9b4"
             }
           ]
         },
@@ -547,27 +580,31 @@
           "type": "recap",
           "points": [
             "蛋白質類水溶：膜受體、二級傳訊、作用快、t½ 短、不可口服。\n\n正確選項：膜受體＋二級傳訊、t½ 短、不可口服。\n",
-            "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 cholesterol。\n",
-            "ADH 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 baroreceptor 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n",
+            "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 （cholesterol）。\n",
+            "抗利尿激素（ADH） 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 壓力感受器（baroreceptor） 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n",
             "蛋白質類水溶：膜受體、二級傳訊、作用快、t½ 短、不可口服。\n\n正確選項：膜受體＋二級傳訊、t½ 短、不可口服。\n",
-            "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 cholesterol。\n"
+            "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 （cholesterol）。\n"
           ],
           "flash": [
             {
               "front": "蛋白質/胜肽類荷爾蒙的特徵是？",
-              "back": "蛋白質類水溶：膜受體、二級傳訊、作用快、t½ 短、不可口服。\n\n正確選項：膜受體＋二級傳訊、t½ 短、不可口服。\n"
+              "back": "蛋白質類水溶：膜受體、二級傳訊、作用快、t½ 短、不可口服。\n\n正確選項：膜受體＋二級傳訊、t½ 短、不可口服。\n",
+              "id": "fa7fa2570"
             },
             {
               "front": "類固醇類荷爾蒙的前驅物是？",
-              "back": "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 cholesterol。\n"
+              "back": "類固醇皆由膽固醇衍生（維生素 D 除外的講法）。\n\n正確選項：膽固醇 （cholesterol）。\n",
+              "id": "f425ad6d4"
             },
             {
-              "front": "血量明顯下降由哪些 baroreceptor 偵測而使 ADH 上升？",
-              "back": "ADH 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 baroreceptor 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n"
+              "front": "血量明顯下降由哪些 壓力感受器（baroreceptor） 偵測而使 抗利尿激素（ADH） 上升？",
+              "back": "抗利尿激素（ADH） 對血量的反應由 carotid sinus、aortic arch、left atrium 三個 壓力感受器（baroreceptor） 偵測。\n\n正確選項：頸動脈竇、主動脈弓、左心房。\n",
+              "id": "f5a63d9b4"
             },
             {
               "front": "蛋白質/胜肽類荷爾蒙的特徵是？",
-              "back": "蛋白質類水溶：膜受體、二級傳訊、作用快、t½ 短、不可口服。\n\n正確選項：膜受體＋二級傳訊、t½ 短、不可口服。\n"
+              "back": "蛋白質類水溶：膜受體、二級傳訊、作用快、t½ 短、不可口服。\n\n正確選項：膜受體＋二級傳訊、t½ 短、不可口服。\n",
+              "id": "fa7fa2570"
             }
           ]
         }
@@ -588,9 +625,9 @@
         {
           "type": "card",
           "title": "判斷依據：內分泌系統",
-          "body": "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 ADH（V2）受體。\n",
+          "body": "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體。\n",
           "keys": [
-            "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 ADH（V2）受體。\n"
+            "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體。\n"
           ]
         },
         {
@@ -599,13 +636,14 @@
           "q": "咖啡因造成利尿的機制是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 ADH（V2）受體。\n",
+          "explain": "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體。\n",
           "choices": [
-            "阻斷腎集尿管的 ADH（V2）受體",
-            "抑制 ADH 分泌",
+            "阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體",
+            "抑制 抗利尿激素（ADH） 分泌",
             "增加醛固酮",
-            "增加 GFR"
-          ]
+            "增加 腎絲球過濾率（GFR）"
+          ],
+          "id": "c5b7c9dd6"
         },
         {
           "type": "card",
@@ -627,29 +665,31 @@
             "腦、腎、心",
             "腎、肺、脾",
             "甲狀腺、腎上腺、性腺"
-          ]
+          ],
+          "id": "c2ceb09cf"
         },
         {
           "type": "card",
           "title": "判斷依據：內分泌系統",
-          "body": "Eicosanoids 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；arachidonic acid（20 碳）。\n",
+          "body": "類二十烷酸（Eicosanoids） 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；花生四烯酸（arachidonic acid）（20 碳）。\n",
           "keys": [
-            "Eicosanoids 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；arachidonic acid（20 碳）。\n"
+            "類二十烷酸（Eicosanoids） 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；花生四烯酸（arachidonic acid）（20 碳）。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Eicosanoids 屬於哪一類、由什麼衍生？",
+          "q": "類二十烷酸（Eicosanoids） 屬於哪一類、由什麼衍生？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Eicosanoids 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；arachidonic acid（20 碳）。\n",
+          "explain": "類二十烷酸（Eicosanoids） 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；花生四烯酸（arachidonic acid）（20 碳）。\n",
           "choices": [
-            "脂溶；arachidonic acid（20 碳）",
+            "脂溶；花生四烯酸（arachidonic acid）（20 碳）",
             "水溶；胺基酸",
             "蛋白質類；多肽",
             "類固醇；膽固醇"
-          ]
+          ],
+          "id": "ce1c87375"
         },
         {
           "type": "example",
@@ -657,10 +697,10 @@
           "problem": "咖啡因造成利尿的機制是？",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 ADH（V2）受體。\n",
+            "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體。\n",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "阻斷腎集尿管的 ADH（V2）受體"
+          "answer": "阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體"
         },
         {
           "type": "practice",
@@ -671,13 +711,14 @@
               "q": "咖啡因造成利尿的機制是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 ADH（V2）受體。\n",
+              "explain": "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體。\n",
               "choices": [
-                "阻斷腎集尿管的 ADH（V2）受體",
-                "抑制 ADH 分泌",
+                "阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體",
+                "抑制 抗利尿激素（ADH） 分泌",
                 "增加醛固酮",
-                "增加 GFR"
-              ]
+                "增加 腎絲球過濾率（GFR）"
+              ],
+              "id": "c5b7c9dd6"
             },
             {
               "kind": "single",
@@ -690,48 +731,54 @@
                 "腦、腎、心",
                 "腎、肺、脾",
                 "甲狀腺、腎上腺、性腺"
-              ]
+              ],
+              "id": "c2ceb09cf"
             },
             {
               "kind": "single",
-              "q": "Eicosanoids 屬於哪一類、由什麼衍生？",
+              "q": "類二十烷酸（Eicosanoids） 屬於哪一類、由什麼衍生？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "Eicosanoids 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；arachidonic acid（20 碳）。\n",
+              "explain": "類二十烷酸（Eicosanoids） 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；花生四烯酸（arachidonic acid）（20 碳）。\n",
               "choices": [
-                "脂溶；arachidonic acid（20 碳）",
+                "脂溶；花生四烯酸（arachidonic acid）（20 碳）",
                 "水溶；胺基酸",
                 "蛋白質類；多肽",
                 "類固醇；膽固醇"
-              ]
+              ],
+              "id": "ce1c87375"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 ADH（V2）受體。\n",
+            "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體。\n",
             "胰島素主要作用於肝、骨骼肌、脂肪組織，促進攝取與儲存。\n\n正確選項：肝、骨骼肌、脂肪組織。\n",
-            "Eicosanoids 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；arachidonic acid（20 碳）。\n",
-            "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 ADH（V2）受體。\n",
+            "類二十烷酸（Eicosanoids） 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；花生四烯酸（arachidonic acid）（20 碳）。\n",
+            "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體。\n",
             "胰島素主要作用於肝、骨骼肌、脂肪組織，促進攝取與儲存。\n\n正確選項：肝、骨骼肌、脂肪組織。\n"
           ],
           "flash": [
             {
               "front": "咖啡因造成利尿的機制是？",
-              "back": "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 ADH（V2）受體。\n"
+              "back": "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體。\n",
+              "id": "f5b7c9dd6"
             },
             {
               "front": "胰島素的三大作用標的是？",
-              "back": "胰島素主要作用於肝、骨骼肌、脂肪組織，促進攝取與儲存。\n\n正確選項：肝、骨骼肌、脂肪組織。\n"
+              "back": "胰島素主要作用於肝、骨骼肌、脂肪組織，促進攝取與儲存。\n\n正確選項：肝、骨骼肌、脂肪組織。\n",
+              "id": "f2ceb09cf"
             },
             {
-              "front": "Eicosanoids 屬於哪一類、由什麼衍生？",
-              "back": "Eicosanoids 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；arachidonic acid（20 碳）。\n"
+              "front": "類二十烷酸（Eicosanoids） 屬於哪一類、由什麼衍生？",
+              "back": "類二十烷酸（Eicosanoids） 是脂溶局部荷爾蒙，由 20 碳的花生四烯酸衍生。\n\n正確選項：脂溶；花生四烯酸（arachidonic acid）（20 碳）。\n",
+              "id": "fe1c87375"
             },
             {
               "front": "咖啡因造成利尿的機制是？",
-              "back": "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 ADH（V2）受體。\n"
+              "back": "咖啡因阻斷 V2 受體（酒精才是抑制 ADH 分泌）。\n\n正確選項：阻斷腎集尿管的 抗利尿激素（ADH）（V2）受體。\n",
+              "id": "f5b7c9dd6"
             }
           ]
         }

@@ -25,22 +25,22 @@
       "goals": [
         "解釋性腺的兩大功能：配子＋性類固醇",
         "解釋★男女對照表：germ / nurse / steroid cell",
-        "解釋性別決定：SRY＝睪丸決定因子（TDF）"
+        "解釋性別決定：Y 染色體性別決定區基因（SRY）＝睪丸決定因子（TDF）"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 1 站：性腺＝配子工廠＋類固醇工廠",
-          "body": "性腺有兩個身分：做配子（精子/卵）的工廠，和做性類固醇的工廠。男女其實一一對應；性別則由 Y 上的 SRY 基因決定。\n\n- 先記性腺的兩大功能：生殖（配子）＋內分泌（類固醇）。\n- 用一張對照表把男女的對應細胞記起來。\n- 再看性別怎麼決定：染色體→性腺→外觀，關鍵在 SRY。"
+          "body": "性腺有兩個身分：做配子（精子/卵）的工廠，和做性類固醇的工廠。男女其實一一對應；性別則由 Y 上的 Y 染色體性別決定區基因（SRY） 基因決定。\n\n- 先記性腺的兩大功能：生殖（配子）＋內分泌（類固醇）。\n- 用一張對照表把男女的對應細胞記起來。\n- 再看性別怎麼決定：染色體→性腺→外觀，關鍵在 Y 染色體性別決定區基因。"
         },
         {
           "type": "card",
           "title": "性腺的兩大功能：配子＋性類固醇",
-          "body": "**連到前一觀念**\n整個生殖系統先從性腺的兩個身分開始。\n\n**觀念**\n性腺（睪丸 / 卵巢）有兩大功能：① 生殖功能——產生並成熟配子（germ cell：精子 / 卵），延續物種；② 內分泌功能——是性類固醇荷爾蒙的工廠（steroid factory）。\n\n**為什麼**\n兩個功能其實是同一個器官分工：一群細胞負責養配子，另一群細胞負責做類固醇。後面所有內容都掛在這兩條功能上。\n\n**考試角度**\n- 生殖功能：germ cell production & maturation\n- 內分泌功能：性類固醇（sex steroid）工廠\n- 睪丸主要 testosterone、卵巢主要 estrogen/progesterone",
+          "body": "**連到前一觀念**\n整個生殖系統先從性腺的兩個身分開始。\n\n**觀念**\n性腺（睪丸 / 卵巢）有兩大功能：① 生殖功能——產生並成熟配子（germ cell：精子 / 卵），延續物種；② 內分泌功能——是性類固醇荷爾蒙的工廠（steroid factory）。\n\n**為什麼**\n兩個功能其實是同一個器官分工：一群細胞負責養配子，另一群細胞負責做類固醇。後面所有內容都掛在這兩條功能上。\n\n**考試角度**\n- 生殖功能：germ cell production & maturation\n- 內分泌功能：性類固醇（sex steroid）工廠\n- 睪丸主要 睪固酮（testosterone）、卵巢主要 雌激素（estrogen）/黃體素（progesterone）",
           "keys": [
             "生殖功能：germ cell production & maturation",
             "內分泌功能：性類固醇（sex steroid）工廠",
-            "睪丸主要 testosterone、卵巢主要 estrogen/progesterone"
+            "睪丸主要 睪固酮（testosterone）、卵巢主要 雌激素（estrogen）/黃體素（progesterone）"
           ],
           "tip": ""
         },
@@ -56,43 +56,45 @@
             "只產生配子",
             "只分泌荷爾蒙",
             "過濾血液"
-          ]
+          ],
+          "id": "c463b65d7"
         },
         {
           "type": "card",
           "title": "★男女對照表：germ / nurse / steroid cell",
-          "body": "**連到前一觀念**\n兩個功能定下後，用一張表把男女對應記牢。\n\n**觀念**\n把生殖器官的功能拆成三種細胞，男女一一對應：配子（germ）、保母細胞（nurse）、做類固醇的細胞（steroid-producing）。睪丸：精子 / Sertoli / Leydig；卵巢：卵 / granulosa / theca＋granulosa。\n\n**為什麼**\n記憶法：保母細胞（nurse）養配子——男的 Sertoli、女的 granulosa；做類固醇的——男的 Leydig、女的 theca（再交給 granulosa 用 aromatase 變雌激素）。這張對應表是後面 two-cell、軸的基礎。\n\n**考試角度**\n- 睪丸：germ＝精子、nurse＝Sertoli cell、steroid＝Leydig cell\n- 卵巢：germ＝卵、nurse＝granulosa cell、steroid＝theca/granulosa cell\n- 對應：Sertoli↔granulosa、Leydig↔theca\n\n**易錯與比較**\nSertoli 與 granulosa 都是『保母細胞』、也都分泌 inhibin；別把保母細胞（養配子）和做類固醇的細胞搞混。",
+          "body": "**連到前一觀念**\n兩個功能定下後，用一張表把男女對應記牢。\n\n**觀念**\n把生殖器官的功能拆成三種細胞，男女一一對應：配子（germ）、保母細胞（nurse）、做類固醇的細胞（steroid-producing）。睪丸：精子 / 塞爾托利氏細胞（Sertoli） / 萊迪氏細胞（Leydig）；卵巢：卵 / 顆粒細胞（granulosa） / 卵泡膜細胞（theca）＋顆粒細胞。\n\n**為什麼**\n記憶法：保母細胞（nurse）養配子——男的 塞爾托利氏細胞、女的 顆粒細胞；做類固醇的——男的 萊迪氏細胞、女的 卵泡膜細胞（再交給 granulosa 用 aromatase 變雌激素）。這張對應表是後面 two-cell、軸的基礎。\n\n**考試角度**\n- 睪丸：germ＝精子、nurse＝塞爾托利氏細胞（Sertoli cell）、steroid＝萊迪氏細胞（Leydig cell）\n- 卵巢：germ＝卵、nurse＝顆粒細胞（granulosa cell）、steroid＝卵泡膜細胞/顆粒細胞\n- 對應：塞爾托利氏細胞↔顆粒細胞、萊迪氏細胞↔卵泡膜細胞\n\n**易錯與比較**\n塞爾托利氏細胞 與 顆粒細胞 都是『保母細胞』、也都分泌 抑制素（inhibin）；別把保母細胞（養配子）和做類固醇的細胞搞混。",
           "keys": [
-            "睪丸：germ＝精子、nurse＝Sertoli cell、steroid＝Leydig cell",
-            "卵巢：germ＝卵、nurse＝granulosa cell、steroid＝theca/granulosa cell",
-            "對應：Sertoli↔granulosa、Leydig↔theca"
+            "睪丸：germ＝精子、nurse＝塞爾托利氏細胞（Sertoli cell）、steroid＝萊迪氏細胞（Leydig cell）",
+            "卵巢：germ＝卵、nurse＝顆粒細胞（granulosa cell）、steroid＝卵泡膜細胞（theca）/顆粒細胞（granulosa cell）",
+            "對應：塞爾托利氏細胞（Sertoli）↔顆粒細胞（granulosa）、萊迪氏細胞（Leydig）↔卵泡膜細胞（theca）"
           ],
-          "tip": "Sertoli 與 granulosa 都是『保母細胞』、也都分泌 inhibin；別把保母細胞（養配子）和做類固醇的細胞搞混。"
+          "tip": "塞爾托利氏細胞（Sertoli） 與 顆粒細胞（granulosa） 都是『保母細胞』、也都分泌 抑制素（inhibin）；別把保母細胞（養配子）和做類固醇的細胞搞混。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "睪丸中相當於卵巢 granulosa cell（保母細胞）的是哪個？",
+          "q": "睪丸中相當於卵巢 顆粒細胞（granulosa cell）（保母細胞）的是哪個？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "保母細胞 nurse cell：男性是 Sertoli、女性是 granulosa（兩者對應、都分泌 inhibin）。\n\n正確選項：Sertoli cell。\n把生殖器官的功能拆成三種細胞，男女一一對應：配子（germ）、保母細胞（nurse）、做類固醇的細胞（steroid-producing）。睪丸：精子 / Sertoli / Leydig；卵巢：卵 / granulosa / theca＋granulosa。",
+          "explain": "保母細胞 nurse cell：男性是 塞爾托利氏細胞（Sertoli）、女性是 顆粒細胞（granulosa）（兩者對應、都分泌 inhibin）。\n\n正確選項：塞爾托利氏細胞（Sertoli cell）。\n把生殖器官的功能拆成三種細胞，男女一一對應：配子（germ）、保母細胞（nurse）、做類固醇的細胞（steroid-producing）。睪丸：精子 / 塞爾托利氏細胞（Sertoli） / 萊迪氏細胞（Leydig）；卵巢：卵 / 顆粒細胞（granulosa） / 卵泡膜細胞（theca）＋顆粒細胞（granulosa）。",
           "choices": [
-            "Sertoli cell",
-            "Leydig cell",
+            "塞爾托利氏細胞（Sertoli cell）",
+            "萊迪氏細胞（Leydig cell）",
             "精原細胞",
             "間質細胞"
-          ]
+          ],
+          "id": "cd2eff3b7"
         },
         {
           "type": "card",
-          "title": "性別決定：SRY＝睪丸決定因子（TDF）",
-          "body": "**連到前一觀念**\n有了性腺，接著看性別怎麼一層層決定。\n\n**觀念**\n人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 SRY 基因（sex-determining region Y）就是睪丸決定因子 TDF，有它就把未分化性腺推向睪丸。\n\n**為什麼**\n有 SRY → 性腺變睪丸 → 分泌睪固酮與 AMH → 往男性外觀走；沒有 SRY → 性腺變卵巢 → 往女性外觀走。所以『有沒有 SRY』是把性腺推成睪丸的關鍵開關。\n\n**考試角度**\n- 三層：genetic → gonadal → phenotypic sex\n- SRY（在 Y 染色體）＝TDF，把性腺推成睪丸\n- 無 SRY → 性腺發育為卵巢\n\n**易錯與比較**\n決定睪丸的是 SRY 這個基因，不是『有 Y 染色體』本身——SRY 缺失/轉位會造成性別與染色體不一致。",
+          "title": "性別決定：Y 染色體性別決定區基因（SRY）＝睪丸決定因子（TDF）",
+          "body": "**連到前一觀念**\n有了性腺，接著看性別怎麼一層層決定。\n\n**觀念**\n人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（sex-determining region Y）就是睪丸決定因子 （TDF），有它就把未分化性腺推向睪丸。\n\n**為什麼**\n有 Y 染色體性別決定區基因 → 性腺變睪丸 → 分泌睪固酮與 抗穆勒氏管激素（AMH） → 往男性外觀走；沒有 Y 染色體性別決定區基因 → 性腺變卵巢 → 往女性外觀走。所以『有沒有 Y 染色體性別決定區基因』是把性腺推成睪丸的關鍵開關。\n\n**考試角度**\n- 三層：genetic → gonadal → phenotypic sex\n- Y 染色體性別決定區基因（在 Y 染色體）＝睪丸決定因子（TDF），把性腺推成睪丸\n- 無 Y 染色體性別決定區基因 → 性腺發育為卵巢\n\n**易錯與比較**\n決定睪丸的是 Y 染色體性別決定區基因 這個基因，不是『有 Y 染色體』本身——Y 染色體性別決定區基因 缺失/轉位會造成性別與染色體不一致。",
           "keys": [
             "三層：genetic → gonadal → phenotypic sex",
-            "SRY（在 Y 染色體）＝TDF，把性腺推成睪丸",
-            "無 SRY → 性腺發育為卵巢"
+            "Y 染色體性別決定區基因（SRY）（在 Y 染色體）＝睪丸決定因子（TDF），把性腺推成睪丸",
+            "無 Y 染色體性別決定區基因（SRY） → 性腺發育為卵巢"
           ],
-          "tip": "決定睪丸的是 SRY 這個基因，不是『有 Y 染色體』本身——SRY 缺失/轉位會造成性別與染色體不一致。"
+          "tip": "決定睪丸的是 Y 染色體性別決定區基因（SRY） 這個基因，不是『有 Y 染色體』本身——Y 染色體性別決定區基因（SRY） 缺失/轉位會造成性別與染色體不一致。"
         },
         {
           "type": "check",
@@ -100,41 +102,43 @@
           "q": "把未分化性腺推向睪丸發育的關鍵是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "SRY（sex-determining region Y）＝睪丸決定因子 TDF，是性腺變睪丸的開關。\n\n正確選項：Y 染色體上的 SRY 基因（TDF）。\n人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 SRY 基因（sex-determining region Y）就是睪丸決定因子 TDF，有它就把未分化性腺推向睪丸。",
+          "explain": "Y 染色體性別決定區基因（SRY）（sex-determining region Y）＝睪丸決定因子 （TDF），是性腺變睪丸的開關。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（TDF）。\n人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（sex-determining region Y）就是睪丸決定因子 （TDF），有它就把未分化性腺推向睪丸。",
           "choices": [
-            "Y 染色體上的 SRY 基因（TDF）",
+            "Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（TDF）",
             "X 染色體數目",
             "雌激素濃度",
-            "FSH"
-          ]
+            "濾泡刺激素（FSH）"
+          ],
+          "id": "cb9b6182d"
         },
         {
           "type": "interactive",
-          "title": "月經週期與 LH 高峰",
+          "title": "月經週期與 黃體生成素（LH） 高峰",
           "task": "用「逐步」走完一次，說明每一步如何造成下一步。",
           "body": "排卵前的持續高雌二醇是正回饋的關鍵例外。",
-          "reference": "早期濾泡期：FSH 支持濾泡發育；雌二醇逐漸上升。\n排卵前正回饋：持續高雌二醇由一般負回饋轉為正回饋，觸發 LH 高峰。\n排卵與黃體期：LH 高峰促進排卵；黃體分泌黃體素及雌二醇，以負回饋抑制上游。\n未懷孕時黃體退化：黃體素與雌二醇下降，子宮內膜脫落；FSH 得以重新上升。",
+          "reference": "早期濾泡期：濾泡刺激素（FSH） 支持濾泡發育；雌二醇逐漸上升。\n排卵前正回饋：持續高雌二醇由一般負回饋轉為正回饋，觸發 黃體生成素（LH） 高峰。\n排卵與黃體期：黃體生成素（LH） 高峰促進排卵；黃體分泌黃體素及雌二醇，以負回饋抑制上游。\n未懷孕時黃體退化：黃體素與雌二醇下降，子宮內膜脫落；濾泡刺激素（FSH） 得以重新上升。",
           "height": 420,
-          "html": "<!doctype html><html lang=\"zh-Hant\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{margin:0;padding:10px;box-sizing:border-box;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}*{box-sizing:border-box}h3{font-size:18px;margin:0 0 8px}.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}label{display:block}.row label{flex:1 1 125px;min-width:0;max-width:180px}input{max-width:150px;width:100%}button{font:inherit;padding:6px 12px;background:#fff;border:1px solid #75644d;border-radius:6px}svg{width:100%;height:160px;background:#fff;border:1px solid #cabfa7}#result,.note{padding:6px;background:#fff1c9;margin-top:6px}small{font-size:14px;display:block;margin-top:6px}@media(max-width:400px){body{padding:8px}.row label{flex-basis:105px}svg{height:110px}h3{font-size:16px}}#stage{font-size:20px}#detail{line-height:1.8;min-height:100px}</style><h3>月經週期與 LH 高峰</h3><div class=\"note\">觀察重點：排卵前的持續高雌二醇是正回饋的關鍵例外。</div><div class=\"row\"><button id=\"play\">播放</button><button id=\"step\">逐步</button><button id=\"reset\">重設</button><span id=\"count\"></span></div><label>過程階段<input aria-label=\"過程階段\" id=\"progress\" type=\"range\" min=\"0\" max=\"3\" value=\"0\"></label><h4 id=\"stage\"></h4><p id=\"detail\"></p><small>此圖呈現事件順序與因果，時間間隔為教學節奏，不代表生理時間或實際解剖距離。</small><script>const stages=[[\"早期濾泡期\", \"FSH 支持濾泡發育；雌二醇逐漸上升。\"], [\"排卵前正回饋\", \"持續高雌二醇由一般負回饋轉為正回饋，觸發 LH 高峰。\"], [\"排卵與黃體期\", \"LH 高峰促進排卵；黃體分泌黃體素及雌二醇，以負回饋抑制上游。\"], [\"未懷孕時黃體退化\", \"黃體素與雌二醇下降，子宮內膜脫落；FSH 得以重新上升。\"]];let index=0,playing=false,last=0;const title=document.getElementById('stage'),body=document.getElementById('detail'),counter=document.getElementById('count'),play=document.getElementById('play');function draw(){title.textContent=(index+1)+'．'+stages[index][0];body.textContent=stages[index][1];counter.textContent=(index+1)+' / '+stages.length;document.getElementById('progress').value=index;}function pause(){playing=false;play.textContent='播放';}play.onclick=()=>{playing=!playing;play.textContent=playing?'暫停':'播放';last=performance.now()};document.getElementById('step').onclick=()=>{pause();index=(index+1)%stages.length;draw()};document.getElementById('reset').onclick=()=>{pause();index=0;draw()};document.getElementById('progress').oninput=e=>{pause();index=Number(e.target.value);draw()};function tick(t){if(playing&&t-last>1800){index=(index+1)%stages.length;last=t;draw()}requestAnimationFrame(tick)}draw();requestAnimationFrame(tick);</script></html>"
+          "html": "<!doctype html><html lang=\"zh-Hant\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style>body{margin:0;padding:10px;box-sizing:border-box;font:15px system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}*{box-sizing:border-box}h3{font-size:18px;margin:0 0 8px}.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}label{display:block}.row label{flex:1 1 125px;min-width:0;max-width:180px}input{max-width:150px;width:100%}button{font:inherit;padding:6px 12px;background:#fff;border:1px solid #75644d;border-radius:6px}svg{width:100%;height:160px;background:#fff;border:1px solid #cabfa7}#result,.note{padding:6px;background:#fff1c9;margin-top:6px}small{font-size:14px;display:block;margin-top:6px}@media(max-width:400px){body{padding:8px}.row label{flex-basis:105px}svg{height:110px}h3{font-size:16px}}#stage{font-size:20px}#detail{line-height:1.8;min-height:100px}</style><h3>月經週期與 黃體生成素（LH） 高峰</h3><div class=\"note\">觀察重點：排卵前的持續高雌二醇是正回饋的關鍵例外。</div><div class=\"row\"><button id=\"play\">播放</button><button id=\"step\">逐步</button><button id=\"reset\">重設</button><span id=\"count\"></span></div><label>過程階段<input aria-label=\"過程階段\" id=\"progress\" type=\"range\" min=\"0\" max=\"3\" value=\"0\"></label><h4 id=\"stage\"></h4><p id=\"detail\"></p><small>此圖呈現事件順序與因果，時間間隔為教學節奏，不代表生理時間或實際解剖距離。</small><script>const stages=[[\"早期濾泡期\", \"濾泡刺激素（FSH） 支持濾泡發育；雌二醇逐漸上升。\"], [\"排卵前正回饋\", \"持續高雌二醇由一般負回饋轉為正回饋，觸發 黃體生成素（LH） 高峰。\"], [\"排卵與黃體期\", \"黃體生成素（LH） 高峰促進排卵；黃體分泌黃體素及雌二醇，以負回饋抑制上游。\"], [\"未懷孕時黃體退化\", \"黃體素與雌二醇下降，子宮內膜脫落；濾泡刺激素（FSH） 得以重新上升。\"]];let index=0,playing=false,last=0;const title=document.getElementById('stage'),body=document.getElementById('detail'),counter=document.getElementById('count'),play=document.getElementById('play');function draw(){title.textContent=(index+1)+'．'+stages[index][0];body.textContent=stages[index][1];counter.textContent=(index+1)+' / '+stages.length;document.getElementById('progress').value=index;}function pause(){playing=false;play.textContent='播放';}play.onclick=()=>{playing=!playing;play.textContent=playing?'暫停':'播放';last=performance.now()};document.getElementById('step').onclick=()=>{pause();index=(index+1)%stages.length;draw()};document.getElementById('reset').onclick=()=>{pause();index=0;draw()};document.getElementById('progress').oninput=e=>{pause();index=Number(e.target.value);draw()};function tick(t){if(playing&&t-last>1800){index=(index+1)%stages.length;last=t;draw()}requestAnimationFrame(tick)}draw();requestAnimationFrame(tick);</script></html>"
         },
         {
           "type": "check",
           "kind": "self",
           "q": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
-          "answer": "早期濾泡期：FSH 支持濾泡發育；雌二醇逐漸上升。\n排卵前正回饋：持續高雌二醇由一般負回饋轉為正回饋，觸發 LH 高峰。\n排卵與黃體期：LH 高峰促進排卵；黃體分泌黃體素及雌二醇，以負回饋抑制上游。\n未懷孕時黃體退化：黃體素與雌二醇下降，子宮內膜脫落；FSH 得以重新上升。",
+          "answer": "早期濾泡期：濾泡刺激素（FSH） 支持濾泡發育；雌二醇逐漸上升。\n排卵前正回饋：持續高雌二醇由一般負回饋轉為正回饋，觸發 黃體生成素（LH） 高峰。\n排卵與黃體期：黃體生成素（LH） 高峰促進排卵；黃體分泌黃體素及雌二醇，以負回饋抑制上游。\n未懷孕時黃體退化：黃體素與雌二醇下降，子宮內膜脫落；濾泡刺激素（FSH） 得以重新上升。",
           "hint": "逐步比較相鄰階段或改變前後，並區分方向與因果。",
-          "explain": "早期濾泡期：FSH 支持濾泡發育；雌二醇逐漸上升。\n排卵前正回饋：持續高雌二醇由一般負回饋轉為正回饋，觸發 LH 高峰。\n排卵與黃體期：LH 高峰促進排卵；黃體分泌黃體素及雌二醇，以負回饋抑制上游。\n未懷孕時黃體退化：黃體素與雌二醇下降，子宮內膜脫落；FSH 得以重新上升。"
+          "explain": "早期濾泡期：濾泡刺激素（FSH） 支持濾泡發育；雌二醇逐漸上升。\n排卵前正回饋：持續高雌二醇由一般負回饋轉為正回饋，觸發 黃體生成素（LH） 高峰。\n排卵與黃體期：黃體生成素（LH） 高峰促進排卵；黃體分泌黃體素及雌二醇，以負回饋抑制上游。\n未懷孕時黃體退化：黃體素與雌二醇下降，子宮內膜脫落；濾泡刺激素（FSH） 得以重新上升。",
+          "id": "ce5994a34"
         },
         {
           "type": "example",
-          "title": "範例拆解：性別決定：SRY＝睪丸決定因子（TDF）",
-          "problem": "把未分化性腺推向睪丸發育的關鍵是？\n\nA. Y 染色體上的 SRY 基因（TDF）\nB. X 染色體數目\nC. 雌激素濃度\nD. FSH",
+          "title": "範例拆解：性別決定：Y 染色體性別決定區基因（SRY）＝睪丸決定因子（TDF）",
+          "problem": "把未分化性腺推向睪丸發育的關鍵是？\n\nA. Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（TDF）\nB. X 染色體數目\nC. 雌激素濃度\nD. 濾泡刺激素（FSH）",
           "steps": [
-            "先確認題目問的主題：性別決定：SRY＝睪丸決定因子（TDF）",
-            "人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 SRY 基因（sex-determining region Y）就是睪丸決定因子 TDF，有它就把未分化性腺推向睪丸。",
-            "把判斷依據連回題目：SRY（sex-determining region Y）＝睪丸決定因子 TDF，是性腺變睪丸的開關。\n\n正確選項：Y 染色體上的 SRY 基因（TDF）。\n人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 SRY 基因（sex-determining region Y）就是睪丸決定因子 TDF，有它就把未分化性腺推向睪丸。"
+            "先確認題目問的主題：性別決定：Y 染色體性別決定區基因（SRY）＝睪丸決定因子（TDF）",
+            "人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（sex-determining region Y）就是睪丸決定因子 （TDF），有它就把未分化性腺推向睪丸。",
+            "把判斷依據連回題目：Y 染色體性別決定區基因（SRY）（sex-determining region Y）＝睪丸決定因子 （TDF），是性腺變睪丸的開關。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（TDF）。\n人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（sex-determining region Y）就是睪丸決定因子 （TDF），有它就把未分化性腺推向睪丸。"
           ],
-          "answer": "Y 染色體上的 SRY 基因（TDF）"
+          "answer": "Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（TDF）"
         },
         {
           "type": "practice",
@@ -146,29 +150,31 @@
           "checks": [
             {
               "kind": "single",
-              "q": "睪丸中相當於卵巢 granulosa cell（保母細胞）的是哪個？",
+              "q": "睪丸中相當於卵巢 顆粒細胞（granulosa cell）（保母細胞）的是哪個？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "保母細胞 nurse cell：男性是 Sertoli、女性是 granulosa（兩者對應、都分泌 inhibin）。\n\n正確選項：Sertoli cell。\n把生殖器官的功能拆成三種細胞，男女一一對應：配子（germ）、保母細胞（nurse）、做類固醇的細胞（steroid-producing）。睪丸：精子 / Sertoli / Leydig；卵巢：卵 / granulosa / theca＋granulosa。",
+              "explain": "保母細胞 nurse cell：男性是 塞爾托利氏細胞（Sertoli）、女性是 顆粒細胞（granulosa）（兩者對應、都分泌 inhibin）。\n\n正確選項：塞爾托利氏細胞（Sertoli cell）。\n把生殖器官的功能拆成三種細胞，男女一一對應：配子（germ）、保母細胞（nurse）、做類固醇的細胞（steroid-producing）。睪丸：精子 / 塞爾托利氏細胞（Sertoli） / 萊迪氏細胞（Leydig）；卵巢：卵 / 顆粒細胞（granulosa） / 卵泡膜細胞（theca）＋顆粒細胞（granulosa）。",
               "choices": [
-                "Sertoli cell",
-                "Leydig cell",
+                "塞爾托利氏細胞（Sertoli cell）",
+                "萊迪氏細胞（Leydig cell）",
                 "精原細胞",
                 "間質細胞"
-              ]
+              ],
+              "id": "cd2eff3b7"
             },
             {
               "kind": "single",
               "q": "把未分化性腺推向睪丸發育的關鍵是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "SRY（sex-determining region Y）＝睪丸決定因子 TDF，是性腺變睪丸的開關。\n\n正確選項：Y 染色體上的 SRY 基因（TDF）。\n人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 SRY 基因（sex-determining region Y）就是睪丸決定因子 TDF，有它就把未分化性腺推向睪丸。",
+              "explain": "Y 染色體性別決定區基因（SRY）（sex-determining region Y）＝睪丸決定因子 （TDF），是性腺變睪丸的開關。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（TDF）。\n人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（sex-determining region Y）就是睪丸決定因子 （TDF），有它就把未分化性腺推向睪丸。",
               "choices": [
-                "Y 染色體上的 SRY 基因（TDF）",
+                "Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（TDF）",
                 "X 染色體數目",
                 "雌激素濃度",
-                "FSH"
-              ]
+                "濾泡刺激素（FSH）"
+              ],
+              "id": "cb9b6182d"
             }
           ]
         },
@@ -177,28 +183,32 @@
           "points": [
             "生殖功能：germ cell production & maturation",
             "內分泌功能：性類固醇（sex steroid）工廠",
-            "睪丸：germ＝精子、nurse＝Sertoli cell、steroid＝Leydig cell",
-            "卵巢：germ＝卵、nurse＝granulosa cell、steroid＝theca/granulosa cell",
+            "睪丸：germ＝精子、nurse＝塞爾托利氏細胞（Sertoli cell）、steroid＝萊迪氏細胞（Leydig cell）",
+            "卵巢：germ＝卵、nurse＝顆粒細胞（granulosa cell）、steroid＝卵泡膜細胞（theca）/顆粒細胞（granulosa cell）",
             "三層：genetic → gonadal → phenotypic sex",
-            "SRY（在 Y 染色體）＝TDF，把性腺推成睪丸",
-            "性腺＝配子廠＋類固醇廠 → 男女一一對應（精子↔卵、Sertoli↔granulosa、Leydig↔theca）→ 性別三關卡：基因→性腺→外觀，由 Y 染色體上的 SRY（TDF）把性腺推成睪丸。"
+            "Y 染色體性別決定區基因（SRY）（在 Y 染色體）＝睪丸決定因子（TDF），把性腺推成睪丸",
+            "性腺＝配子廠＋類固醇廠 → 男女一一對應（精子↔卵、Sertoli↔granulosa、Leydig↔theca）→ 性別三關卡：基因→性腺→外觀，由 Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）把性腺推成睪丸。"
           ],
           "flash": [
             {
               "front": "性腺的兩大功能：配子＋性類固醇",
-              "back": "性腺（睪丸 / 卵巢）有兩大功能：① 生殖功能——產生並成熟配子（germ cell：精子 / 卵），延續物種；② 內分泌功能——是性類固醇荷爾蒙的工廠（steroid factory）。"
+              "back": "性腺（睪丸 / 卵巢）有兩大功能：① 生殖功能——產生並成熟配子（germ cell：精子 / 卵），延續物種；② 內分泌功能——是性類固醇荷爾蒙的工廠（steroid factory）。",
+              "id": "f8b74c075"
             },
             {
               "front": "★男女對照表：germ / nurse / steroid cell",
-              "back": "把生殖器官的功能拆成三種細胞，男女一一對應：配子（germ）、保母細胞（nurse）、做類固醇的細胞（steroid-producing）。睪丸：精子 / Sertoli / Leydig；卵巢：卵 / granulosa / theca＋granulosa。"
+              "back": "把生殖器官的功能拆成三種細胞，男女一一對應：配子（germ）、保母細胞（nurse）、做類固醇的細胞（steroid-producing）。睪丸：精子 / 塞爾托利氏細胞（Sertoli） / 萊迪氏細胞（Leydig）；卵巢：卵 / 顆粒細胞（granulosa） / 卵泡膜細胞（theca）＋顆粒細胞（granulosa）。",
+              "id": "fdcdfe2c4"
             },
             {
-              "front": "性別決定：SRY＝睪丸決定因子（TDF）",
-              "back": "人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 SRY 基因（sex-determining region Y）就是睪丸決定因子 TDF，有它就把未分化性腺推向睪丸。"
+              "front": "性別決定：Y 染色體性別決定區基因（SRY）＝睪丸決定因子（TDF）",
+              "back": "人的性別分三層：染色體性別（genetic）→ 性腺性別（gonadal）→ 外觀性別（phenotypic）。Y 染色體上的 Y 染色體性別決定區基因（SRY） 基因（sex-determining region Y）就是睪丸決定因子 （TDF），有它就把未分化性腺推向睪丸。",
+              "id": "f08737d27"
             },
             {
               "front": "完成剛才的任務後，說明你觀察到的改變或構造關係。",
-              "back": "早期濾泡期：FSH 支持濾泡發育；雌二醇逐漸上升。\n排卵前正回饋：持續高雌二醇由一般負回饋轉為正回饋，觸發 LH 高峰。\n排卵與黃體期：LH 高峰促進排卵；黃體分泌黃體素及雌二醇，以負回饋抑制上游。\n未懷孕時黃體退化：黃體素與雌二醇下降，子宮內膜脫落；FSH 得以重新上升。"
+              "back": "早期濾泡期：濾泡刺激素（FSH） 支持濾泡發育；雌二醇逐漸上升。\n排卵前正回饋：持續高雌二醇由一般負回饋轉為正回饋，觸發 黃體生成素（LH） 高峰。\n排卵與黃體期：黃體生成素（LH） 高峰促進排卵；黃體分泌黃體素及雌二醇，以負回饋抑制上游。\n未懷孕時黃體退化：黃體素與雌二醇下降，子宮內膜脫落；濾泡刺激素（FSH） 得以重新上升。",
+              "id": "fe5994a34"
             }
           ]
         }
@@ -208,8 +218,8 @@
       "id": "repro-gameto-1",
       "title": "第 2 站：精子 vs 卵子生成",
       "goals": [
-        "解釋Spermatogenesis：1 個精原細胞 → 4 個精子",
-        "解釋Oogenesis：1 個卵原細胞 → 1 顆卵，停滯兩次",
+        "解釋精子生成（Spermatogenesis）：1 個精原細胞 → 4 個精子",
+        "解釋卵子生成（Oogenesis）：1 個卵原細胞 → 1 顆卵，停滯兩次",
         "解釋把兩者對照：數量、速度、停滯"
       ],
       "steps": [
@@ -220,10 +230,10 @@
         },
         {
           "type": "card",
-          "title": "Spermatogenesis：1 個精原細胞 → 4 個精子",
-          "body": "**連到前一觀念**\n先看比較單純、連續的精子生成。\n\n**觀念**\n精原細胞 spermatogonium（2n）經有絲分裂與分化 → 初級精母細胞（2n）→ 第一次減數分裂 → 次級精母細胞（1n）→ 第二次減數分裂 → 精細胞 spermatid（1n）→ 精子 spermatozoa。一個精原細胞最後產生 4 個精子，全程約 70-80 天。\n\n**為什麼**\n重點：染色體數 2n→1n 在第一次減數分裂發生；一路分裂下去不暫停，且青春期後終其一生都在進行（所以男性精子源源不絕）。\n\n**考試角度**\n- 路線：spermatogonium(2n)→primary(2n)→secondary(1n)→spermatid→spermatozoa\n- 1 個精原細胞 → 4 個精子；約 70-80 天\n- 青春期後持續一生、不暫停",
+          "title": "精子生成（Spermatogenesis）：1 個精原細胞 → 4 個精子",
+          "body": "**連到前一觀念**\n先看比較單純、連續的精子生成。\n\n**觀念**\n精原細胞 spermatogonium（2n）經有絲分裂與分化 → 初級精母細胞（2n）→ 第一次減數分裂 → 次級精母細胞（1n）→ 第二次減數分裂 → 精細胞 spermatid（1n）→ 精子 spermatozoa。一個精原細胞最後產生 4 個精子，全程約 70-80 天。\n\n**為什麼**\n重點：染色體數 2n→1n 在第一次減數分裂發生；一路分裂下去不暫停，且青春期後終其一生都在進行（所以男性精子源源不絕）。\n\n**考試角度**\n- 路線：spermatogonium(2n)→初級（primary）(2n)→次級（secondary）(1n)→spermatid→spermatozoa\n- 1 個精原細胞 → 4 個精子；約 70-80 天\n- 青春期後持續一生、不暫停",
           "keys": [
-            "路線：spermatogonium(2n)→primary(2n)→secondary(1n)→spermatid→spermatozoa",
+            "路線：spermatogonium(2n)→初級（primary）(2n)→次級（secondary）(1n)→spermatid→spermatozoa",
             "1 個精原細胞 → 4 個精子；約 70-80 天",
             "青春期後持續一生、不暫停"
           ],
@@ -241,18 +251,19 @@
             "1 個",
             "2 個",
             "8 個"
-          ]
+          ],
+          "id": "c3f148da1"
         },
         {
           "type": "card",
-          "title": "Oogenesis：1 個卵原細胞 → 1 顆卵，停滯兩次",
-          "body": "**連到前一觀念**\n對照之下，卵子生成最特別的是『走走停停』。\n\n**觀念**\n卵原細胞 oogonia（2n）在胎兒期就分裂、進入第一次減數分裂並停滯在 prophase I（初級卵母細胞）一直到排卵前才完成；排卵時進到第二次減數分裂、停滯在 metaphase II，要等受精才完成，形成 1 顆卵子 ovum＋極體。\n\n**為什麼**\n兩個關鍵停滯：① 第一次減數分裂停在 prophase I，從出生一路到青春期、排卵前才放行；② 第二次停在 metaphase II，受精才完成。每次分裂把細胞質都留給卵，另一份變極體，所以 1 個卵原細胞只生 1 顆卵。\n\n**考試角度**\n- 1 個卵原細胞 → 1 顆卵＋極體（polar bodies）\n- 第一次減數分裂停滯：prophase I（到排卵前才完成）\n- 第二次減數分裂停滯：metaphase II（到受精才完成）\n\n**易錯與比較**\n卵子是『受精後』才真正完成第二次減數分裂變成卵；沒受精就停在 metaphase II。",
+          "title": "卵子生成（Oogenesis）：1 個卵原細胞 → 1 顆卵，停滯兩次",
+          "body": "**連到前一觀念**\n對照之下，卵子生成最特別的是『走走停停』。\n\n**觀念**\n卵原細胞 oogonia（2n）在胎兒期就分裂、進入第一次減數分裂並停滯在 第一次減數分裂前期（prophase I）（初級卵母細胞）一直到排卵前才完成；排卵時進到第二次減數分裂、停滯在 第二次減數分裂中期（metaphase II），要等受精才完成，形成 1 顆卵子 ovum＋極體。\n\n**為什麼**\n兩個關鍵停滯：① 第一次減數分裂停在 第一次減數分裂前期，從出生一路到青春期、排卵前才放行；② 第二次停在 第二次減數分裂中期，受精才完成。每次分裂把細胞質都留給卵，另一份變極體，所以 1 個卵原細胞只生 1 顆卵。\n\n**考試角度**\n- 1 個卵原細胞 → 1 顆卵＋極體（polar bodies）\n- 第一次減數分裂停滯：第一次減數分裂前期（到排卵前才完成）\n- 第二次減數分裂停滯：第二次減數分裂中期（到受精才完成）\n\n**易錯與比較**\n卵子是『受精後』才真正完成第二次減數分裂變成卵；沒受精就停在 第二次減數分裂中期。",
           "keys": [
             "1 個卵原細胞 → 1 顆卵＋極體（polar bodies）",
-            "第一次減數分裂停滯：prophase I（到排卵前才完成）",
-            "第二次減數分裂停滯：metaphase II（到受精才完成）"
+            "第一次減數分裂停滯：第一次減數分裂前期（prophase I）（到排卵前才完成）",
+            "第二次減數分裂停滯：第二次減數分裂中期（metaphase II）（到受精才完成）"
           ],
-          "tip": "卵子是『受精後』才真正完成第二次減數分裂變成卵；沒受精就停在 metaphase II。"
+          "tip": "卵子是『受精後』才真正完成第二次減數分裂變成卵；沒受精就停在 第二次減數分裂中期（metaphase II）。"
         },
         {
           "type": "check",
@@ -260,13 +271,14 @@
           "q": "卵子生成中，第二次減數分裂停滯在哪一期、何時才完成？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "次級卵母細胞停在 metaphase II，受精才完成第二次減數分裂、變成卵子。\n\n正確選項：metaphase II；受精時。\n卵原細胞 oogonia（2n）在胎兒期就分裂、進入第一次減數分裂並停滯在 prophase I（初級卵母細胞）一直到排卵前才完成；排卵時進到第二次減數分裂、停滯在 metaphase II，要等受精才完成，形成 1 顆卵子 ovum＋極體。",
+          "explain": "次級卵母細胞停在 第二次減數分裂中期（metaphase II），受精才完成第二次減數分裂、變成卵子。\n\n正確選項：第二次減數分裂中期（metaphase II）；受精時。\n卵原細胞 oogonia（2n）在胎兒期就分裂、進入第一次減數分裂並停滯在 第一次減數分裂前期（prophase I）（初級卵母細胞）一直到排卵前才完成；排卵時進到第二次減數分裂、停滯在 第二次減數分裂中期（metaphase II），要等受精才完成，形成 1 顆卵子 ovum＋極體。",
           "choices": [
-            "metaphase II；受精時",
-            "prophase I；排卵時",
+            "第二次減數分裂中期（metaphase II）；受精時",
+            "第一次減數分裂前期（prophase I）；排卵時",
             "anaphase I；青春期",
             "telophase II；月經時"
-          ]
+          ],
+          "id": "c914a5085"
         },
         {
           "type": "card",
@@ -285,13 +297,14 @@
           "q": "關於精子與卵子生成的對照，何者正確？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "精子 1→4、連續無停滯；卵子 1→1＋極體、有 prophase I 與 metaphase II 兩次停滯。\n\n正確選項：精子 1→4 連續、卵子 1→1 且有兩次減數分裂停滯。\n精子：1→4、約 70-80 天、青春期後連續進行、無減數分裂停滯；卵子：1→1（＋極體）、約 28 天週期、出生時數量已定且逐年減少、有兩次減數分裂停滯。",
+          "explain": "精子 1→4、連續無停滯；卵子 1→1＋極體、有 第一次減數分裂前期（prophase I） 與 第二次減數分裂中期（metaphase II） 兩次停滯。\n\n正確選項：精子 1→4 連續、卵子 1→1 且有兩次減數分裂停滯。\n精子：1→4、約 70-80 天、青春期後連續進行、無減數分裂停滯；卵子：1→1（＋極體）、約 28 天週期、出生時數量已定且逐年減少、有兩次減數分裂停滯。",
           "choices": [
             "精子 1→4 連續、卵子 1→1 且有兩次減數分裂停滯",
             "兩者都是 1→4",
             "卵子連續、精子停滯",
             "兩者都無停滯"
-          ]
+          ],
+          "id": "c866f3ba4"
         },
         {
           "type": "example",
@@ -300,7 +313,7 @@
           "steps": [
             "先確認題目問的主題：把兩者對照：數量、速度、停滯",
             "精子：1→4、約 70-80 天、青春期後連續進行、無減數分裂停滯；卵子：1→1（＋極體）、約 28 天週期、出生時數量已定且逐年減少、有兩次減數分裂停滯。",
-            "把判斷依據連回題目：精子 1→4、連續無停滯；卵子 1→1＋極體、有 prophase I 與 metaphase II 兩次停滯。\n\n正確選項：精子 1→4 連續、卵子 1→1 且有兩次減數分裂停滯。\n精子：1→4、約 70-80 天、青春期後連續進行、無減數分裂停滯；卵子：1→1（＋極體）、約 28 天週期、出生時數量已定且逐年減少、有兩次減數分裂停滯。"
+            "把判斷依據連回題目：精子 1→4、連續無停滯；卵子 1→1＋極體、有 第一次減數分裂前期（prophase I） 與 第二次減數分裂中期（metaphase II） 兩次停滯。\n\n正確選項：精子 1→4 連續、卵子 1→1 且有兩次減數分裂停滯。\n精子：1→4、約 70-80 天、青春期後連續進行、無減數分裂停滯；卵子：1→1（＋極體）、約 28 天週期、出生時數量已定且逐年減少、有兩次減數分裂停滯。"
           ],
           "answer": "精子 1→4 連續、卵子 1→1 且有兩次減數分裂停滯"
         },
@@ -317,56 +330,62 @@
               "q": "卵子生成中，第二次減數分裂停滯在哪一期、何時才完成？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "次級卵母細胞停在 metaphase II，受精才完成第二次減數分裂、變成卵子。\n\n正確選項：metaphase II；受精時。\n卵原細胞 oogonia（2n）在胎兒期就分裂、進入第一次減數分裂並停滯在 prophase I（初級卵母細胞）一直到排卵前才完成；排卵時進到第二次減數分裂、停滯在 metaphase II，要等受精才完成，形成 1 顆卵子 ovum＋極體。",
+              "explain": "次級卵母細胞停在 第二次減數分裂中期（metaphase II），受精才完成第二次減數分裂、變成卵子。\n\n正確選項：第二次減數分裂中期（metaphase II）；受精時。\n卵原細胞 oogonia（2n）在胎兒期就分裂、進入第一次減數分裂並停滯在 第一次減數分裂前期（prophase I）（初級卵母細胞）一直到排卵前才完成；排卵時進到第二次減數分裂、停滯在 第二次減數分裂中期（metaphase II），要等受精才完成，形成 1 顆卵子 ovum＋極體。",
               "choices": [
-                "metaphase II；受精時",
-                "prophase I；排卵時",
+                "第二次減數分裂中期（metaphase II）；受精時",
+                "第一次減數分裂前期（prophase I）；排卵時",
                 "anaphase I；青春期",
                 "telophase II；月經時"
-              ]
+              ],
+              "id": "c914a5085"
             },
             {
               "kind": "single",
               "q": "關於精子與卵子生成的對照，何者正確？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "精子 1→4、連續無停滯；卵子 1→1＋極體、有 prophase I 與 metaphase II 兩次停滯。\n\n正確選項：精子 1→4 連續、卵子 1→1 且有兩次減數分裂停滯。\n精子：1→4、約 70-80 天、青春期後連續進行、無減數分裂停滯；卵子：1→1（＋極體）、約 28 天週期、出生時數量已定且逐年減少、有兩次減數分裂停滯。",
+              "explain": "精子 1→4、連續無停滯；卵子 1→1＋極體、有 第一次減數分裂前期（prophase I） 與 第二次減數分裂中期（metaphase II） 兩次停滯。\n\n正確選項：精子 1→4 連續、卵子 1→1 且有兩次減數分裂停滯。\n精子：1→4、約 70-80 天、青春期後連續進行、無減數分裂停滯；卵子：1→1（＋極體）、約 28 天週期、出生時數量已定且逐年減少、有兩次減數分裂停滯。",
               "choices": [
                 "精子 1→4 連續、卵子 1→1 且有兩次減數分裂停滯",
                 "兩者都是 1→4",
                 "卵子連續、精子停滯",
                 "兩者都無停滯"
-              ]
+              ],
+              "id": "c866f3ba4"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "路線：spermatogonium(2n)→primary(2n)→secondary(1n)→spermatid→spermatozoa",
+            "路線：spermatogonium(2n)→初級（primary）(2n)→次級（secondary）(1n)→spermatid→spermatozoa",
             "1 個精原細胞 → 4 個精子；約 70-80 天",
             "1 個卵原細胞 → 1 顆卵＋極體（polar bodies）",
-            "第一次減數分裂停滯：prophase I（到排卵前才完成）",
+            "第一次減數分裂停滯：第一次減數分裂前期（prophase I）（到排卵前才完成）",
             "數量：精子 1→4，卵子 1→1（＋極體）",
             "時間：精子 ~70-80 天連續；卵子 ~28 天週期、數量出生即定",
-            "精子：2n→1n、1→4、70-80 天、連續不斷 ↔ 卵子：1→1＋極體、第一次減數分裂停在 prophase I（到排卵前才完成）、第二次停在 metaphase II（到受精才完成）。"
+            "精子：2n→1n、1→4、70-80 天、連續不斷 ↔ 卵子：1→1＋極體、第一次減數分裂停在 第一次減數分裂前期（prophase I）（到排卵前才完成）、第二次停在 第二次減數分裂中期（metaphase II）（到受精才完成）。"
           ],
           "flash": [
             {
-              "front": "Spermatogenesis：1 個精原細胞 → 4 個精子",
-              "back": "精原細胞 spermatogonium（2n）經有絲分裂與分化 → 初級精母細胞（2n）→ 第一次減數分裂 → 次級精母細胞（1n）→ 第二次減數分裂 → 精細胞 spermatid（1n）→ 精子 spermatozoa。一個精原細胞最後產生 4 個精子，全程約 70-80 天。"
+              "front": "精子生成（Spermatogenesis）：1 個精原細胞 → 4 個精子",
+              "back": "精原細胞 spermatogonium（2n）經有絲分裂與分化 → 初級精母細胞（2n）→ 第一次減數分裂 → 次級精母細胞（1n）→ 第二次減數分裂 → 精細胞 spermatid（1n）→ 精子 spermatozoa。一個精原細胞最後產生 4 個精子，全程約 70-80 天。",
+              "id": "f1e7de720"
             },
             {
-              "front": "Oogenesis：1 個卵原細胞 → 1 顆卵，停滯兩次",
-              "back": "卵原細胞 oogonia（2n）在胎兒期就分裂、進入第一次減數分裂並停滯在 prophase I（初級卵母細胞）一直到排卵前才完成；排卵時進到第二次減數分裂、停滯在 metaphase II，要等受精才完成，形成 1 顆卵子 ovum＋極體。"
+              "front": "卵子生成（Oogenesis）：1 個卵原細胞 → 1 顆卵，停滯兩次",
+              "back": "卵原細胞 oogonia（2n）在胎兒期就分裂、進入第一次減數分裂並停滯在 第一次減數分裂前期（prophase I）（初級卵母細胞）一直到排卵前才完成；排卵時進到第二次減數分裂、停滯在 第二次減數分裂中期（metaphase II），要等受精才完成，形成 1 顆卵子 ovum＋極體。",
+              "id": "f24392df4"
             },
             {
               "front": "把兩者對照：數量、速度、停滯",
-              "back": "精子：1→4、約 70-80 天、青春期後連續進行、無減數分裂停滯；卵子：1→1（＋極體）、約 28 天週期、出生時數量已定且逐年減少、有兩次減數分裂停滯。"
+              "back": "精子：1→4、約 70-80 天、青春期後連續進行、無減數分裂停滯；卵子：1→1（＋極體）、約 28 天週期、出生時數量已定且逐年減少、有兩次減數分裂停滯。",
+              "id": "fe63874c8"
             },
             {
               "front": "一個精原細胞經完整精子生成最後產生幾個精子？",
-              "back": "精子生成 1 個精原細胞 → 4 個精子（與卵子生成 1→1 不同）。\n\n正確選項：4 個。\n精原細胞 spermatogonium（2n）經有絲分裂與分化 → 初級精母細胞（2n）→ 第一次減數分裂 → 次級精母細胞（1n）→ 第二次減數分裂 → 精細胞 spermatid（1n）→ 精子 spermatozoa。一個精原細胞最後產生 4 個精子，全程約 70-80 天。"
+              "back": "精子生成 1 個精原細胞 → 4 個精子（與卵子生成 1→1 不同）。\n\n正確選項：4 個。\n精原細胞 spermatogonium（2n）經有絲分裂與分化 → 初級精母細胞（2n）→ 第一次減數分裂 → 次級精母細胞（1n）→ 第二次減數分裂 → 精細胞 spermatid（1n）→ 精子 spermatozoa。一個精原細胞最後產生 4 個精子，全程約 70-80 天。",
+              "id": "f3f148da1"
             }
           ]
         }
@@ -377,23 +396,23 @@
       "title": "第 3 站：性類固醇的製造與代謝",
       "goals": [
         "解釋Steroidogenesis：膽固醇一路改造，靠酵素換零件",
-        "解釋睪固酮的兩條加工：DHT 與雌激素",
+        "解釋睪固酮的兩條加工：二氫睪固酮（DHT） 與雌激素",
         "解釋雌激素的代謝：E2 → E1 → E3 → 尿"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 3 站：性類固醇的製造與代謝",
-          "body": "所有性類固醇都從膽固醇改造而來，靠幾個酵素換零件；睪固酮可再變更強的 DHT 或變雌激素；雌激素用完代謝成 E1、E3 從尿排掉。\n\n- 先看合成主線：膽固醇 → … → 睪固酮 → 雌激素，認得幾個關鍵酵素。\n- 再看睪固酮的兩條加工：5α-還原酶變 DHT、aromatase 變雌激素。\n- 最後看雌激素怎麼被代謝、排掉（E2/E1/E3）。"
+          "body": "所有性類固醇都從膽固醇改造而來，靠幾個酵素換零件；睪固酮可再變更強的 二氫睪固酮（DHT） 或變雌激素；雌激素用完代謝成 E1、E3 從尿排掉。\n\n- 先看合成主線：膽固醇 → … → 睪固酮 → 雌激素，認得幾個關鍵酵素。\n- 再看睪固酮的兩條加工：5α-還原酶變 二氫睪固酮、芳香環酶（aromatase） 變雌激素。\n- 最後看雌激素怎麼被代謝、排掉（E2/E1/E3）。"
         },
         {
           "type": "card",
           "title": "Steroidogenesis：膽固醇一路改造，靠酵素換零件",
-          "body": "**連到前一觀念**\n性類固醇全部同源，先抓主線與關鍵酵素。\n\n**觀念**\n所有性類固醇都以膽固醇 cholesterol 為原料：cholesterol → pregnenolone → progesterone / 雄性素（androstenedione）→ 睪固酮 testosterone → 雌二醇 estradiol。沿路靠 3β-HSD、17β-HSD、aromatase、5α-reductase 等酵素逐步轉換。\n\n**為什麼**\n把它想成同一台車不斷換零件：每個酵素負責改一個官能基。考點是『誰是原料（膽固醇）』與『關鍵酵素做什麼』，不必背完整結構式。\n\n**考試角度**\n- 原料：cholesterol（所有性類固醇同源）\n- 關鍵酵素：3β-HSD、17β-HSD、aromatase、5α-reductase\n- 主線：→ pregnenolone → … → testosterone → estradiol",
+          "body": "**連到前一觀念**\n性類固醇全部同源，先抓主線與關鍵酵素。\n\n**觀念**\n所有性類固醇都以膽固醇 （cholesterol） 為原料：膽固醇（cholesterol） → pregnenolone → 黃體素（progesterone） / 雄性素（androstenedione）→ 睪固酮 （testosterone） → 雌二醇 （estradiol）。沿路靠 3β-羥基類固醇脫氫酶（HSD）、17β-羥基類固醇脫氫酶、芳香環酶（aromatase）、把（5α-reductase） 等酵素逐步轉換。\n\n**為什麼**\n把它想成同一台車不斷換零件：每個酵素負責改一個官能基。考點是『誰是原料（膽固醇）』與『關鍵酵素做什麼』，不必背完整結構式。\n\n**考試角度**\n- 原料：膽固醇（所有性類固醇同源）\n- 關鍵酵素：3β-羥基類固醇脫氫酶、17β-羥基類固醇脫氫酶、芳香環酶、把\n- 主線：→ pregnenolone → … → 睪固酮（testosterone） → 雌二醇（estradiol）",
           "keys": [
-            "原料：cholesterol（所有性類固醇同源）",
-            "關鍵酵素：3β-HSD、17β-HSD、aromatase、5α-reductase",
-            "主線：→ pregnenolone → … → testosterone → estradiol"
+            "原料：膽固醇（cholesterol）（所有性類固醇同源）",
+            "關鍵酵素：3β-羥基類固醇脫氫酶（HSD）、17β-羥基類固醇脫氫酶（HSD）、芳香環酶（aromatase）、把（5α-reductase）",
+            "主線：→ pregnenolone → … → 睪固酮（testosterone） → 雌二醇（estradiol）"
           ],
           "tip": ""
         },
@@ -403,43 +422,45 @@
           "q": "所有性類固醇荷爾蒙的共同原料是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "睪固酮、雌激素、黃體素等性類固醇全部由膽固醇衍生。\n\n正確選項：膽固醇 cholesterol。\n所有性類固醇都以膽固醇 cholesterol 為原料：cholesterol → pregnenolone → progesterone / 雄性素（androstenedione）→ 睪固酮 testosterone → 雌二醇 estradiol。沿路靠 3β-HSD、17β-HSD、aromatase、5α-reductase 等酵素逐步轉換。",
+          "explain": "睪固酮、雌激素、黃體素等性類固醇全部由膽固醇衍生。\n\n正確選項：膽固醇 （cholesterol）。\n所有性類固醇都以膽固醇 （cholesterol） 為原料：膽固醇（cholesterol） → pregnenolone → 黃體素（progesterone） / 雄性素（androstenedione）→ 睪固酮 （testosterone） → 雌二醇 （estradiol）。沿路靠 3β-羥基類固醇脫氫酶（HSD）、17β-羥基類固醇脫氫酶（HSD）、芳香環酶（aromatase）、把（5α-reductase） 等酵素逐步轉換。",
           "choices": [
-            "膽固醇 cholesterol",
+            "膽固醇 （cholesterol）",
             "酪胺酸",
             "膽鹼",
             "花生四烯酸"
-          ]
+          ],
+          "id": "ca5c1e69e"
         },
         {
           "type": "card",
-          "title": "睪固酮的兩條加工：DHT 與雌激素",
-          "body": "**連到前一觀念**\n睪固酮不是終點，它還能往兩個方向再加工。\n\n**觀念**\n睪固酮 testosterone 可被 5α-還原酶（5α-reductase）轉成更強的 DHT（dihydrotestosterone，作用約強 3 倍，負責男性二級性徵）；也可被芳香酶（aromatase）轉成雌激素（estradiol）。\n\n**為什麼**\n5α-reductase 在毛囊、前列腺等組織把睪固酮放大成 DHT；aromatase 則在卵巢 granulosa cell（及脂肪等）把雄性素變雌激素——這正是 two-cell theory 的關鍵步驟。\n\n**考試角度**\n- 5α-reductase：testosterone → DHT（強約 3 倍、主導二級性徵）\n- aromatase：雄性素 / 睪固酮 → 雌激素（estradiol）\n- DHT 作用組織：毛囊、前列腺等\n\n**易錯與比較**\nDHT 比睪固酮『更強』，不是更弱；抑制 5α-reductase 可治雄性禿/前列腺肥大就是這原理。",
+          "title": "睪固酮的兩條加工：二氫睪固酮（DHT） 與雌激素",
+          "body": "**連到前一觀念**\n睪固酮不是終點，它還能往兩個方向再加工。\n\n**觀念**\n睪固酮 （testosterone） 可被 5α-還原酶（5α-reductase）轉成更強的 二氫睪固酮（DHT）（dihydrotestosterone，作用約強 3 倍，負責男性二級性徵）；也可被芳香酶（aromatase）轉成雌激素（estradiol）。\n\n**為什麼**\n把（5α-reductase） 在毛囊、前列腺等組織把睪固酮放大成 二氫睪固酮；芳香環酶（aromatase） 則在卵巢 顆粒細胞（granulosa cell）（及脂肪等）把雄性素變雌激素——這正是 two-cell theory 的關鍵步驟。\n\n**考試角度**\n- 把：睪固酮（testosterone） → 二氫睪固酮（強約 3 倍、主導二級性徵）\n- 芳香環酶：雄性素 / 睪固酮 → 雌激素（estradiol）\n- 二氫睪固酮 作用組織：毛囊、前列腺等\n\n**易錯與比較**\n二氫睪固酮 比睪固酮『更強』，不是更弱；抑制 把 可治雄性禿/前列腺肥大就是這原理。",
           "keys": [
-            "5α-reductase：testosterone → DHT（強約 3 倍、主導二級性徵）",
-            "aromatase：雄性素 / 睪固酮 → 雌激素（estradiol）",
-            "DHT 作用組織：毛囊、前列腺等"
+            "把（5α-reductase）：睪固酮（testosterone） → 二氫睪固酮（DHT）（強約 3 倍、主導二級性徵）",
+            "芳香環酶（aromatase）：雄性素 / 睪固酮 → 雌激素（estradiol）",
+            "二氫睪固酮（DHT） 作用組織：毛囊、前列腺等"
           ],
-          "tip": "DHT 比睪固酮『更強』，不是更弱；抑制 5α-reductase 可治雄性禿/前列腺肥大就是這原理。"
+          "tip": "二氫睪固酮（DHT） 比睪固酮『更強』，不是更弱；抑制 把（5α-reductase） 可治雄性禿/前列腺肥大就是這原理。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "把睪固酮轉成作用更強的 DHT 的酵素是？",
+          "q": "把睪固酮轉成作用更強的 二氫睪固酮（DHT） 的酵素是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "5α-還原酶把睪固酮變成強約 3 倍的 DHT；aromatase 則把雄性素變雌激素。\n\n正確選項：5α-reductase。\n睪固酮 testosterone 可被 5α-還原酶（5α-reductase）轉成更強的 DHT（dihydrotestosterone，作用約強 3 倍，負責男性二級性徵）；也可被芳香酶（aromatase）轉成雌激素（estradiol）。",
+          "explain": "5α-還原酶把睪固酮變成強約 3 倍的 二氫睪固酮（DHT）；芳香環酶（aromatase） 則把雄性素變雌激素。\n\n正確選項：把（5α-reductase）。\n睪固酮 （testosterone） 可被 5α-還原酶（5α-reductase）轉成更強的 二氫睪固酮（DHT）（dihydrotestosterone，作用約強 3 倍，負責男性二級性徵）；也可被芳香酶（aromatase）轉成雌激素（estradiol）。",
           "choices": [
-            "5α-reductase",
-            "aromatase",
-            "17β-HSD",
-            "3β-HSD"
-          ]
+            "把（5α-reductase）",
+            "芳香環酶（aromatase）",
+            "17β-羥基類固醇脫氫酶（HSD）",
+            "3β-羥基類固醇脫氫酶（HSD）"
+          ],
+          "id": "c6406fcda"
         },
         {
           "type": "card",
           "title": "雌激素的代謝：E2 → E1 → E3 → 尿",
-          "body": "**連到前一觀念**\n做出來的雌激素，最後怎麼被處理掉？\n\n**觀念**\n雌二醇 estradiol（E2）與雌酮 estrone（E1）可經 17β-HSD 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。\n\n**為什麼**\nE2 是活性最強的雌激素，E1、E3 活性較弱。E3 主要在懷孕時大量出現、由尿排掉，所以臨床可測孕婦尿中 E3 來評估胎兒（胎盤-胎兒）狀況。\n\n**考試角度**\n- E2 ⇌ E1（17β-HSD）→ E3 → 尿液排出\n- 活性：E2 > E1 > E3\n- E3 由尿排出（孕期評估用）",
+          "body": "**連到前一觀念**\n做出來的雌激素，最後怎麼被處理掉？\n\n**觀念**\n雌二醇 （estradiol）（E2）與雌酮 estrone（E1）可經 17β-羥基類固醇脫氫酶（HSD） 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。\n\n**為什麼**\nE2 是活性最強的雌激素，E1、E3 活性較弱。E3 主要在懷孕時大量出現、由尿排掉，所以臨床可測孕婦尿中 E3 來評估胎兒（胎盤-胎兒）狀況。\n\n**考試角度**\n- E2 ⇌ E1（17β-HSD）→ E3 → 尿液排出\n- 活性：E2 > E1 > E3\n- E3 由尿排出（孕期評估用）",
           "keys": [
             "E2 ⇌ E1（17β-HSD）→ E3 → 尿液排出",
             "活性：E2 > E1 > E3",
@@ -453,24 +474,25 @@
           "q": "雌二醇(E2)與雌酮(E1)互相轉換靠哪個酵素？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "E2 ⇌ E1 由 17β-HSD 催化；再代謝為 E3 從尿排出。\n\n正確選項：17β-HSD。\n雌二醇 estradiol（E2）與雌酮 estrone（E1）可經 17β-HSD 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。",
+          "explain": "E2 ⇌ E1 由 17β-羥基類固醇脫氫酶（HSD） 催化；再代謝為 E3 從尿排出。\n\n正確選項：17β-羥基類固醇脫氫酶（HSD）。\n雌二醇 （estradiol）（E2）與雌酮 estrone（E1）可經 17β-羥基類固醇脫氫酶（HSD） 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。",
           "choices": [
-            "17β-HSD",
-            "5α-reductase",
-            "aromatase",
-            "3β-HSD"
-          ]
+            "17β-羥基類固醇脫氫酶（HSD）",
+            "把（5α-reductase）",
+            "芳香環酶（aromatase）",
+            "3β-羥基類固醇脫氫酶（HSD）"
+          ],
+          "id": "cc65cf390"
         },
         {
           "type": "example",
           "title": "範例拆解：雌激素的代謝：E2 → E1 → E3 → 尿",
-          "problem": "雌二醇(E2)與雌酮(E1)互相轉換靠哪個酵素？\n\nA. 17β-HSD\nB. 5α-reductase\nC. aromatase\nD. 3β-HSD",
+          "problem": "雌二醇(E2)與雌酮(E1)互相轉換靠哪個酵素？\n\nA. 17β-羥基類固醇脫氫酶（HSD）\nB. 把（5α-reductase）\nC. 芳香環酶（aromatase）\nD. 3β-羥基類固醇脫氫酶（HSD）",
           "steps": [
             "先確認題目問的主題：雌激素的代謝：E2 → E1 → E3 → 尿",
-            "雌二醇 estradiol（E2）與雌酮 estrone（E1）可經 17β-HSD 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。",
-            "把判斷依據連回題目：E2 ⇌ E1 由 17β-HSD 催化；再代謝為 E3 從尿排出。\n\n正確選項：17β-HSD。\n雌二醇 estradiol（E2）與雌酮 estrone（E1）可經 17β-HSD 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。"
+            "雌二醇 （estradiol）（E2）與雌酮 estrone（E1）可經 17β-羥基類固醇脫氫酶（HSD） 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。",
+            "把判斷依據連回題目：E2 ⇌ E1 由 17β-羥基類固醇脫氫酶（HSD） 催化；再代謝為 E3 從尿排出。\n\n正確選項：17β-羥基類固醇脫氫酶（HSD）。\n雌二醇 （estradiol）（E2）與雌酮 estrone（E1）可經 17β-羥基類固醇脫氫酶（HSD） 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。"
           ],
-          "answer": "17β-HSD"
+          "answer": "17β-羥基類固醇脫氫酶（HSD）"
         },
         {
           "type": "practice",
@@ -482,59 +504,65 @@
           "checks": [
             {
               "kind": "single",
-              "q": "把睪固酮轉成作用更強的 DHT 的酵素是？",
+              "q": "把睪固酮轉成作用更強的 二氫睪固酮（DHT） 的酵素是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "5α-還原酶把睪固酮變成強約 3 倍的 DHT；aromatase 則把雄性素變雌激素。\n\n正確選項：5α-reductase。\n睪固酮 testosterone 可被 5α-還原酶（5α-reductase）轉成更強的 DHT（dihydrotestosterone，作用約強 3 倍，負責男性二級性徵）；也可被芳香酶（aromatase）轉成雌激素（estradiol）。",
+              "explain": "5α-還原酶把睪固酮變成強約 3 倍的 二氫睪固酮（DHT）；芳香環酶（aromatase） 則把雄性素變雌激素。\n\n正確選項：把（5α-reductase）。\n睪固酮 （testosterone） 可被 5α-還原酶（5α-reductase）轉成更強的 二氫睪固酮（DHT）（dihydrotestosterone，作用約強 3 倍，負責男性二級性徵）；也可被芳香酶（aromatase）轉成雌激素（estradiol）。",
               "choices": [
-                "5α-reductase",
-                "aromatase",
-                "17β-HSD",
-                "3β-HSD"
-              ]
+                "把（5α-reductase）",
+                "芳香環酶（aromatase）",
+                "17β-羥基類固醇脫氫酶（HSD）",
+                "3β-羥基類固醇脫氫酶（HSD）"
+              ],
+              "id": "c6406fcda"
             },
             {
               "kind": "single",
               "q": "雌二醇(E2)與雌酮(E1)互相轉換靠哪個酵素？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "E2 ⇌ E1 由 17β-HSD 催化；再代謝為 E3 從尿排出。\n\n正確選項：17β-HSD。\n雌二醇 estradiol（E2）與雌酮 estrone（E1）可經 17β-HSD 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。",
+              "explain": "E2 ⇌ E1 由 17β-羥基類固醇脫氫酶（HSD） 催化；再代謝為 E3 從尿排出。\n\n正確選項：17β-羥基類固醇脫氫酶（HSD）。\n雌二醇 （estradiol）（E2）與雌酮 estrone（E1）可經 17β-羥基類固醇脫氫酶（HSD） 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。",
               "choices": [
-                "17β-HSD",
-                "5α-reductase",
-                "aromatase",
-                "3β-HSD"
-              ]
+                "17β-羥基類固醇脫氫酶（HSD）",
+                "把（5α-reductase）",
+                "芳香環酶（aromatase）",
+                "3β-羥基類固醇脫氫酶（HSD）"
+              ],
+              "id": "cc65cf390"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "原料：cholesterol（所有性類固醇同源）",
-            "關鍵酵素：3β-HSD、17β-HSD、aromatase、5α-reductase",
-            "5α-reductase：testosterone → DHT（強約 3 倍、主導二級性徵）",
-            "aromatase：雄性素 / 睪固酮 → 雌激素（estradiol）",
+            "原料：膽固醇（cholesterol）（所有性類固醇同源）",
+            "關鍵酵素：3β-羥基類固醇脫氫酶（HSD）、17β-羥基類固醇脫氫酶（HSD）、芳香環酶（aromatase）、把（5α-reductase）",
+            "把（5α-reductase）：睪固酮（testosterone） → 二氫睪固酮（DHT）（強約 3 倍、主導二級性徵）",
+            "芳香環酶（aromatase）：雄性素 / 睪固酮 → 雌激素（estradiol）",
             "E2 ⇌ E1（17β-HSD）→ E3 → 尿液排出",
             "活性：E2 > E1 > E3",
-            "膽固醇是所有性類固醇的原料 → 酵素（3β-HSD、17β-HSD、aromatase、5α-reductase）一步步改造 → 睪固酮 →(5α-reductase) DHT（強 3 倍）或 →(aromatase) 雌激素 → 雌激素代謝成 E1/E3、E3 從尿排掉。"
+            "膽固醇是所有性類固醇的原料 → 酵素（3β-HSD、17β-HSD、aromatase、5α-reductase）一步步改造 → 睪固酮 →(5α-reductase) 二氫睪固酮（DHT）（強 3 倍）或 →(aromatase) 雌激素 → 雌激素代謝成 E1/E3、E3 從尿排掉。"
           ],
           "flash": [
             {
               "front": "Steroidogenesis：膽固醇一路改造，靠酵素換零件",
-              "back": "所有性類固醇都以膽固醇 cholesterol 為原料：cholesterol → pregnenolone → progesterone / 雄性素（androstenedione）→ 睪固酮 testosterone → 雌二醇 estradiol。沿路靠 3β-HSD、17β-HSD、aromatase、5α-reductase 等酵素逐步轉換。"
+              "back": "所有性類固醇都以膽固醇 （cholesterol） 為原料：膽固醇（cholesterol） → pregnenolone → 黃體素（progesterone） / 雄性素（androstenedione）→ 睪固酮 （testosterone） → 雌二醇 （estradiol）。沿路靠 3β-羥基類固醇脫氫酶（HSD）、17β-羥基類固醇脫氫酶（HSD）、芳香環酶（aromatase）、把（5α-reductase） 等酵素逐步轉換。",
+              "id": "f4187dee6"
             },
             {
-              "front": "睪固酮的兩條加工：DHT 與雌激素",
-              "back": "睪固酮 testosterone 可被 5α-還原酶（5α-reductase）轉成更強的 DHT（dihydrotestosterone，作用約強 3 倍，負責男性二級性徵）；也可被芳香酶（aromatase）轉成雌激素（estradiol）。"
+              "front": "睪固酮的兩條加工：二氫睪固酮（DHT） 與雌激素",
+              "back": "睪固酮 （testosterone） 可被 5α-還原酶（5α-reductase）轉成更強的 二氫睪固酮（DHT）（dihydrotestosterone，作用約強 3 倍，負責男性二級性徵）；也可被芳香酶（aromatase）轉成雌激素（estradiol）。",
+              "id": "f9fad5913"
             },
             {
               "front": "雌激素的代謝：E2 → E1 → E3 → 尿",
-              "back": "雌二醇 estradiol（E2）與雌酮 estrone（E1）可經 17β-HSD 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。"
+              "back": "雌二醇 （estradiol）（E2）與雌酮 estrone（E1）可經 17β-羥基類固醇脫氫酶（HSD） 互相轉換；再進一步代謝成雌三醇 estriol（E3），最後由尿液排出。",
+              "id": "f1f5cfc39"
             },
             {
               "front": "所有性類固醇荷爾蒙的共同原料是？",
-              "back": "睪固酮、雌激素、黃體素等性類固醇全部由膽固醇衍生。\n\n正確選項：膽固醇 cholesterol。\n所有性類固醇都以膽固醇 cholesterol 為原料：cholesterol → pregnenolone → progesterone / 雄性素（androstenedione）→ 睪固酮 testosterone → 雌二醇 estradiol。沿路靠 3β-HSD、17β-HSD、aromatase、5α-reductase 等酵素逐步轉換。"
+              "back": "睪固酮、雌激素、黃體素等性類固醇全部由膽固醇衍生。\n\n正確選項：膽固醇 （cholesterol）。\n所有性類固醇都以膽固醇 （cholesterol） 為原料：膽固醇（cholesterol） → pregnenolone → 黃體素（progesterone） / 雄性素（androstenedione）→ 睪固酮 （testosterone） → 雌二醇 （estradiol）。沿路靠 3β-羥基類固醇脫氫酶（HSD）、17β-羥基類固醇脫氫酶（HSD）、芳香環酶（aromatase）、把（5α-reductase） 等酵素逐步轉換。",
+              "id": "fa5c1e69e"
             }
           ]
         }
@@ -542,53 +570,54 @@
     },
     {
       "id": "repro-axis-1",
-      "title": "第 4 站：HPG/HPO 軸、two-cell 與雌激素正回饋",
+      "title": "第 4 站：下視丘－腦下垂體－性腺軸（HPG）/HPO 軸、two-cell 與雌激素正回饋",
       "goals": [
-        "解釋HPG / HPO 軸：GnRH → LH/FSH → 性腺",
-        "解釋Two-cell theory：theca 做料、granulosa 加工",
-        "解釋唯一的例外：雌激素正回饋 → LH surge → 排卵"
+        "解釋下視丘－腦下垂體－性腺軸（HPG） / HPO 軸：促性腺激素釋放激素（GnRH） → 黃體生成素（LH）/濾泡刺激素（FSH） → 性腺",
+        "解釋Two-cell theory：卵泡膜細胞（theca） 做料、顆粒細胞（granulosa） 加工",
+        "解釋唯一的例外：雌激素正回饋 → 黃體生成素高峰（LH surge） → 排卵"
       ],
       "steps": [
         {
           "type": "intro",
-          "title": "第 4 站：HPG/HPO 軸、two-cell 與雌激素正回饋",
-          "body": "下視丘-腦下垂體-性腺軸用 GnRH→LH/FSH 指揮性腺；卵巢靠 theca＋granulosa 兩種細胞合作做雌激素；雌激素平常負回饋，但持續高就翻成正回饋引發排卵。\n\n- 先看軸的骨架：GnRH → LH/FSH → 性腺，並用 inhibin/activin 微調。\n- 再看卵巢的 two-cell theory：theca 做雄性素、granulosa 變雌激素。\n- 最後記住唯一的例外：雌激素正回饋 → LH surge → 排卵。"
+          "title": "第 4 站：下視丘－腦下垂體－性腺軸（HPG）/HPO 軸、two-cell 與雌激素正回饋",
+          "body": "下視丘-腦下垂體-性腺軸用 促性腺激素釋放激素（GnRH）→黃體生成素（LH）/濾泡刺激素（FSH） 指揮性腺；卵巢靠 卵泡膜細胞（theca）＋顆粒細胞（granulosa） 兩種細胞合作做雌激素；雌激素平常負回饋，但持續高就翻成正回饋引發排卵。\n\n- 先看軸的骨架：促性腺激素釋放激素 → 黃體生成素/濾泡刺激素 → 性腺，並用 抑制素（inhibin）/促進（activin） 微調。\n- 再看卵巢的 two-cell theory：卵泡膜細胞 做雄性素、顆粒細胞 變雌激素。\n- 最後記住唯一的例外：雌激素正回饋 → 黃體生成素高峰（LH surge） → 排卵。"
         },
         {
           "type": "card",
-          "title": "HPG / HPO 軸：GnRH → LH/FSH → 性腺",
-          "body": "**連到前一觀念**\n先把生殖內分泌的指揮鏈搭起來。\n\n**觀念**\n下視丘分泌 GnRH（經門脈血管）→ 腦下垂體前葉分泌 LH 與 FSH（gonadotropin）→ 作用於性腺，刺激性類固醇與配子生成；性腺的產物再回頭抑制下視丘與腦下垂體（負回饋）。inhibin 抑制 FSH、activin 促進。\n\n**為什麼**\n這是典型三級軸＋負回饋：產物多了就回頭關小水龍頭。男性走 HPT（睪丸：Leydig/Sertoli），女性走 HPO（卵巢：theca/granulosa），骨架一樣。\n\n**考試角度**\n- GnRH → LH、FSH → 性腺 → 性類固醇＋配子\n- 多數時候：性類固醇對下視丘/腦下垂體為負回饋\n- inhibin（保母細胞分泌）抑 FSH；activin 促\n\n**易錯與比較**\ninhibin 專門抑制 FSH（名字就有 inhibit）；由 Sertoli/granulosa（保母細胞）分泌。",
+          "title": "下視丘－腦下垂體－性腺軸（HPG） / HPO 軸：促性腺激素釋放激素（GnRH） → 黃體生成素（LH）/濾泡刺激素（FSH） → 性腺",
+          "body": "**連到前一觀念**\n先把生殖內分泌的指揮鏈搭起來。\n\n**觀念**\n下視丘分泌 促性腺激素釋放激素（GnRH）（經門脈血管）→ 腦下垂體前葉分泌 黃體生成素（LH） 與 濾泡刺激素（FSH）（gonadotropin）→ 作用於性腺，刺激性類固醇與配子生成；性腺的產物再回頭抑制下視丘與腦下垂體（負回饋）。抑制素（inhibin） 抑制 濾泡刺激素、促進（activin） 促進。\n\n**為什麼**\n這是典型三級軸＋負回饋：產物多了就回頭關小水龍頭。男性走 HPT（睪丸：Leydig/Sertoli），女性走 HPO（卵巢：theca/granulosa），骨架一樣。\n\n**考試角度**\n- 促性腺激素釋放激素 → 黃體生成素、濾泡刺激素 → 性腺 → 性類固醇＋配子\n- 多數時候：性類固醇對下視丘/腦下垂體為負回饋\n- 抑制素（保母細胞分泌）抑 濾泡刺激素；促進 促\n\n**易錯與比較**\n抑制素 專門抑制 濾泡刺激素（名字就有 inhibit）；由 塞爾托利氏細胞（Sertoli）/顆粒細胞（granulosa）（保母細胞）分泌。",
           "keys": [
-            "GnRH → LH、FSH → 性腺 → 性類固醇＋配子",
+            "促性腺激素釋放激素（GnRH） → 黃體生成素（LH）、濾泡刺激素（FSH） → 性腺 → 性類固醇＋配子",
             "多數時候：性類固醇對下視丘/腦下垂體為負回饋",
-            "inhibin（保母細胞分泌）抑 FSH；activin 促"
+            "抑制素（inhibin）（保母細胞分泌）抑 濾泡刺激素（FSH）；促進（activin） 促"
           ],
-          "tip": "inhibin 專門抑制 FSH（名字就有 inhibit）；由 Sertoli/granulosa（保母細胞）分泌。"
+          "tip": "抑制素（inhibin） 專門抑制 濾泡刺激素（FSH）（名字就有 inhibit）；由 塞爾托利氏細胞（Sertoli）/顆粒細胞（granulosa）（保母細胞）分泌。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "生殖軸中 inhibin 的主要作用是？",
+          "q": "生殖軸中 抑制素（inhibin） 的主要作用是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "inhibin 由保母細胞（Sertoli/granulosa）分泌，主要抑制 FSH。\n\n正確選項：抑制 FSH 分泌。\n下視丘分泌 GnRH（經門脈血管）→ 腦下垂體前葉分泌 LH 與 FSH（gonadotropin）→ 作用於性腺，刺激性類固醇與配子生成；性腺的產物再回頭抑制下視丘與腦下垂體（負回饋）。inhibin 抑制 FSH、activin 促進。",
+          "explain": "抑制素（inhibin） 由保母細胞（Sertoli/granulosa）分泌，主要抑制 濾泡刺激素（FSH）。\n\n正確選項：抑制 濾泡刺激素（FSH） 分泌。\n下視丘分泌 促性腺激素釋放激素（GnRH）（經門脈血管）→ 腦下垂體前葉分泌 黃體生成素（LH） 與 濾泡刺激素（FSH）（gonadotropin）→ 作用於性腺，刺激性類固醇與配子生成；性腺的產物再回頭抑制下視丘與腦下垂體（負回饋）。抑制素（inhibin） 抑制 濾泡刺激素（FSH）、促進（activin） 促進。",
           "choices": [
-            "抑制 FSH 分泌",
-            "刺激 LH 分泌",
-            "刺激 GnRH",
+            "抑制 濾泡刺激素（FSH） 分泌",
+            "刺激 黃體生成素（LH） 分泌",
+            "刺激 促性腺激素釋放激素（GnRH）",
             "刺激排卵"
-          ]
+          ],
+          "id": "ce79c886e"
         },
         {
           "type": "card",
-          "title": "Two-cell theory：theca 做料、granulosa 加工",
-          "body": "**連到前一觀念**\n卵巢做雌激素為什麼要兩種細胞？這是必考。\n\n**觀念**\n卵巢的 two-cell theory：LH 作用於 theca cell，把膽固醇做成雄性素（androgens）；雄性素送進 granulosa cell，由 FSH 誘導的芳香酶 aromatase 轉成雌激素（estrogens）。兩種細胞分工合作才做得出雌激素。\n\n**為什麼**\n記成『一個做半成品、一個加工』：theca（LH）出雄性素半成品 → granulosa（FSH→aromatase）加工成雌激素。對應前面的對照表：theca＝做類固醇的、granulosa＝保母兼加工。\n\n**考試角度**\n- LH → theca cell → androgens（雄性素）\n- androgens → granulosa cell → aromatase → estrogens\n- 需 theca＋granulosa 兩細胞、LH＋FSH 兩激素合作\n\n**易錯與比較**\naromatase 在 granulosa、由 FSH 誘導；雄性素的來源是 theca（LH）。兩細胞兩激素缺一不可。",
+          "title": "Two-cell theory：卵泡膜細胞（theca） 做料、顆粒細胞（granulosa） 加工",
+          "body": "**連到前一觀念**\n卵巢做雌激素為什麼要兩種細胞？這是必考。\n\n**觀念**\n卵巢的 two-cell theory：黃體生成素（LH） 作用於 卵泡膜細胞（theca cell），把膽固醇做成雄性素（androgens）；雄性素送進 顆粒細胞（granulosa cell），由 濾泡刺激素（FSH） 誘導的芳香酶 芳香環酶（aromatase） 轉成雌激素（estrogens）。兩種細胞分工合作才做得出雌激素。\n\n**為什麼**\n記成『一個做半成品、一個加工』：卵泡膜細胞（theca）（LH）出雄性素半成品 → 顆粒細胞（granulosa）（FSH→aromatase）加工成雌激素。對應前面的對照表：卵泡膜細胞＝做類固醇的、顆粒細胞＝保母兼加工。\n\n**考試角度**\n- 黃體生成素 → 卵泡膜細胞 → androgens（雄性素）\n- androgens → 顆粒細胞 → 芳香環酶 → estrogens\n- 需 卵泡膜細胞＋顆粒細胞 兩細胞、黃體生成素＋濾泡刺激素 兩激素合作\n\n**易錯與比較**\n芳香環酶 在 顆粒細胞、由 濾泡刺激素 誘導；雄性素的來源是 卵泡膜細胞（LH）。兩細胞兩激素缺一不可。",
           "keys": [
-            "LH → theca cell → androgens（雄性素）",
-            "androgens → granulosa cell → aromatase → estrogens",
-            "需 theca＋granulosa 兩細胞、LH＋FSH 兩激素合作"
+            "黃體生成素（LH） → 卵泡膜細胞（theca cell） → androgens（雄性素）",
+            "androgens → 顆粒細胞（granulosa cell） → 芳香環酶（aromatase） → estrogens",
+            "需 卵泡膜細胞（theca）＋顆粒細胞（granulosa） 兩細胞、黃體生成素（LH）＋濾泡刺激素（FSH） 兩激素合作"
           ],
-          "tip": "aromatase 在 granulosa、由 FSH 誘導；雄性素的來源是 theca（LH）。兩細胞兩激素缺一不可。"
+          "tip": "芳香環酶（aromatase） 在 顆粒細胞（granulosa）、由 濾泡刺激素（FSH） 誘導；雄性素的來源是 卵泡膜細胞（theca）（LH）。兩細胞兩激素缺一不可。"
         },
         {
           "type": "check",
@@ -596,21 +625,22 @@
           "q": "卵巢 two-cell theory 中，雄性素在哪裡製造、由哪個激素驅動？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "LH→theca 做雄性素；雄性素再到 granulosa 由 FSH 誘導的 aromatase 變雌激素。\n\n正確選項：theca cell；LH。\n卵巢的 two-cell theory：LH 作用於 theca cell，把膽固醇做成雄性素（androgens）；雄性素送進 granulosa cell，由 FSH 誘導的芳香酶 aromatase 轉成雌激素（estrogens）。兩種細胞分工合作才做得出雌激素。",
+          "explain": "黃體生成素（LH）→卵泡膜細胞（theca） 做雄性素；雄性素再到 顆粒細胞（granulosa） 由 濾泡刺激素（FSH） 誘導的 芳香環酶（aromatase） 變雌激素。\n\n正確選項：卵泡膜細胞（theca cell）；黃體生成素（LH）。\n卵巢的 two-cell theory：黃體生成素（LH） 作用於 卵泡膜細胞（theca cell），把膽固醇做成雄性素（androgens）；雄性素送進 顆粒細胞（granulosa cell），由 濾泡刺激素（FSH） 誘導的芳香酶 芳香環酶（aromatase） 轉成雌激素（estrogens）。兩種細胞分工合作才做得出雌激素。",
           "choices": [
-            "theca cell；LH",
-            "granulosa cell；FSH",
-            "theca cell；FSH",
-            "granulosa cell；LH"
-          ]
+            "卵泡膜細胞（theca cell）；黃體生成素（LH）",
+            "顆粒細胞（granulosa cell）；濾泡刺激素（FSH）",
+            "卵泡膜細胞（theca cell）；濾泡刺激素（FSH）",
+            "顆粒細胞（granulosa cell）；黃體生成素（LH）"
+          ],
+          "id": "c767411c0"
         },
         {
           "type": "card",
-          "title": "唯一的例外：雌激素正回饋 → LH surge → 排卵",
-          "body": "**連到前一觀念**\n全部回饋裡，這一個方向相反，是必考陷阱。\n\n**觀念**\n雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 LH 大量爆發（LH surge），進而誘發排卵。\n\n**為什麼**\n濾泡長大 → 雌激素一路升高並維持夠久 → 由負回饋翻成正回饋 → GnRH/LH 衝高 → LH surge → 排卵。這是內分泌裡少數的正回饋例子，務必記住觸發條件是『高且持久（>48hr）』。\n\n**考試角度**\n- 雌激素平常＝負回饋；持續高 >48hr＝正回饋\n- 正回饋 → LH surge → 排卵 ovulation\n- 屬內分泌少見的正回饋（唯一例外）\n\n**易錯與比較**\n同一個雌激素，低/短時是負回饋、高/久（>48hr）才翻成正回饋——別只記『雌激素正回饋』而忘了條件。",
+          "title": "唯一的例外：雌激素正回饋 → 黃體生成素高峰（LH surge） → 排卵",
+          "body": "**連到前一觀念**\n全部回饋裡，這一個方向相反，是必考陷阱。\n\n**觀念**\n雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 黃體生成素（LH） 大量爆發（LH surge），進而誘發排卵。\n\n**為什麼**\n濾泡長大 → 雌激素一路升高並維持夠久 → 由負回饋翻成正回饋 → 促性腺激素釋放激素（GnRH）/黃體生成素 衝高 → 黃體生成素高峰（LH surge） → 排卵。這是內分泌裡少數的正回饋例子，務必記住觸發條件是『高且持久（>48hr）』。\n\n**考試角度**\n- 雌激素平常＝負回饋；持續高 >48hr＝正回饋\n- 正回饋 → 黃體生成素高峰 → 排卵 （ovulation）\n- 屬內分泌少見的正回饋（唯一例外）\n\n**易錯與比較**\n同一個雌激素，低/短時是負回饋、高/久（>48hr）才翻成正回饋——別只記『雌激素正回饋』而忘了條件。",
           "keys": [
             "雌激素平常＝負回饋；持續高 >48hr＝正回饋",
-            "正回饋 → LH surge → 排卵 ovulation",
+            "正回饋 → 黃體生成素高峰（LH surge） → 排卵 （ovulation）",
             "屬內分泌少見的正回饋（唯一例外）"
           ],
           "tip": "同一個雌激素，低/短時是負回饋、高/久（>48hr）才翻成正回饋——別只記『雌激素正回饋』而忘了條件。"
@@ -618,31 +648,32 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "雌激素引發 LH surge（排卵）的條件是？",
+          "q": "雌激素引發 黃體生成素高峰（LH surge）（排卵）的條件是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "雌激素要持續維持高濃度（~>48hr）才從負回饋翻成正回饋，引發 LH surge 與排卵。\n\n正確選項：雌激素持續高濃度（約 >48 小時）。\n雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 LH 大量爆發（LH surge），進而誘發排卵。",
+          "explain": "雌激素要持續維持高濃度（~>48hr）才從負回饋翻成正回饋，引發 黃體生成素高峰（LH surge） 與排卵。\n\n正確選項：雌激素持續高濃度（約 >48 小時）。\n雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 黃體生成素（LH） 大量爆發（LH surge），進而誘發排卵。",
           "choices": [
             "雌激素持續高濃度（約 >48 小時）",
             "雌激素一升高立刻",
             "雌激素下降時",
             "黃體素升高時"
-          ]
+          ],
+          "id": "c66117255"
         },
         {
           "type": "example",
-          "title": "範例拆解：唯一的例外：雌激素正回饋 → LH surge → 排卵",
-          "problem": "雌激素引發 LH surge（排卵）的條件是？\n\nA. 雌激素持續高濃度（約 >48 小時）\nB. 雌激素一升高立刻\nC. 雌激素下降時\nD. 黃體素升高時",
+          "title": "範例拆解：唯一的例外：雌激素正回饋 → 黃體生成素高峰（LH surge） → 排卵",
+          "problem": "雌激素引發 黃體生成素高峰（LH surge）（排卵）的條件是？\n\nA. 雌激素持續高濃度（約 >48 小時）\nB. 雌激素一升高立刻\nC. 雌激素下降時\nD. 黃體素升高時",
           "steps": [
-            "先確認題目問的主題：唯一的例外：雌激素正回饋 → LH surge → 排卵",
-            "雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 LH 大量爆發（LH surge），進而誘發排卵。",
-            "把判斷依據連回題目：雌激素要持續維持高濃度（~>48hr）才從負回饋翻成正回饋，引發 LH surge 與排卵。\n\n正確選項：雌激素持續高濃度（約 >48 小時）。\n雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 LH 大量爆發（LH surge），進而誘發排卵。"
+            "先確認題目問的主題：唯一的例外：雌激素正回饋 → 黃體生成素高峰（LH surge） → 排卵",
+            "雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 黃體生成素（LH） 大量爆發（LH surge），進而誘發排卵。",
+            "把判斷依據連回題目：雌激素要持續維持高濃度（~>48hr）才從負回饋翻成正回饋，引發 黃體生成素高峰（LH surge） 與排卵。\n\n正確選項：雌激素持續高濃度（約 >48 小時）。\n雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 黃體生成素（LH） 大量爆發（LH surge），進而誘發排卵。"
           ],
           "answer": "雌激素持續高濃度（約 >48 小時）"
         },
         {
           "type": "practice",
-          "title": "實戰：第 4 站：HPG/HPO 軸、two-cell 與雌激素正回饋",
+          "title": "實戰：第 4 站：下視丘－腦下垂體－性腺軸（HPG）/HPO 軸、two-cell 與雌激素正回饋",
           "qids": [
             "s114-physio-course114-u17-phys-17-01",
             "s114-physio-course114-u17-phys-17-02"
@@ -653,56 +684,62 @@
               "q": "卵巢 two-cell theory 中，雄性素在哪裡製造、由哪個激素驅動？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "LH→theca 做雄性素；雄性素再到 granulosa 由 FSH 誘導的 aromatase 變雌激素。\n\n正確選項：theca cell；LH。\n卵巢的 two-cell theory：LH 作用於 theca cell，把膽固醇做成雄性素（androgens）；雄性素送進 granulosa cell，由 FSH 誘導的芳香酶 aromatase 轉成雌激素（estrogens）。兩種細胞分工合作才做得出雌激素。",
+              "explain": "黃體生成素（LH）→卵泡膜細胞（theca） 做雄性素；雄性素再到 顆粒細胞（granulosa） 由 濾泡刺激素（FSH） 誘導的 芳香環酶（aromatase） 變雌激素。\n\n正確選項：卵泡膜細胞（theca cell）；黃體生成素（LH）。\n卵巢的 two-cell theory：黃體生成素（LH） 作用於 卵泡膜細胞（theca cell），把膽固醇做成雄性素（androgens）；雄性素送進 顆粒細胞（granulosa cell），由 濾泡刺激素（FSH） 誘導的芳香酶 芳香環酶（aromatase） 轉成雌激素（estrogens）。兩種細胞分工合作才做得出雌激素。",
               "choices": [
-                "theca cell；LH",
-                "granulosa cell；FSH",
-                "theca cell；FSH",
-                "granulosa cell；LH"
-              ]
+                "卵泡膜細胞（theca cell）；黃體生成素（LH）",
+                "顆粒細胞（granulosa cell）；濾泡刺激素（FSH）",
+                "卵泡膜細胞（theca cell）；濾泡刺激素（FSH）",
+                "顆粒細胞（granulosa cell）；黃體生成素（LH）"
+              ],
+              "id": "c767411c0"
             },
             {
               "kind": "single",
-              "q": "雌激素引發 LH surge（排卵）的條件是？",
+              "q": "雌激素引發 黃體生成素高峰（LH surge）（排卵）的條件是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "雌激素要持續維持高濃度（~>48hr）才從負回饋翻成正回饋，引發 LH surge 與排卵。\n\n正確選項：雌激素持續高濃度（約 >48 小時）。\n雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 LH 大量爆發（LH surge），進而誘發排卵。",
+              "explain": "雌激素要持續維持高濃度（~>48hr）才從負回饋翻成正回饋，引發 黃體生成素高峰（LH surge） 與排卵。\n\n正確選項：雌激素持續高濃度（約 >48 小時）。\n雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 黃體生成素（LH） 大量爆發（LH surge），進而誘發排卵。",
               "choices": [
                 "雌激素持續高濃度（約 >48 小時）",
                 "雌激素一升高立刻",
                 "雌激素下降時",
                 "黃體素升高時"
-              ]
+              ],
+              "id": "c66117255"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "GnRH → LH、FSH → 性腺 → 性類固醇＋配子",
+            "促性腺激素釋放激素（GnRH） → 黃體生成素（LH）、濾泡刺激素（FSH） → 性腺 → 性類固醇＋配子",
             "多數時候：性類固醇對下視丘/腦下垂體為負回饋",
-            "LH → theca cell → androgens（雄性素）",
-            "androgens → granulosa cell → aromatase → estrogens",
+            "黃體生成素（LH） → 卵泡膜細胞（theca cell） → androgens（雄性素）",
+            "androgens → 顆粒細胞（granulosa cell） → 芳香環酶（aromatase） → estrogens",
             "雌激素平常＝負回饋；持續高 >48hr＝正回饋",
-            "正回饋 → LH surge → 排卵 ovulation",
-            "GnRH→LH/FSH→性腺（做類固醇＋配子）→ 多數時候負回饋踩煞車 → 卵巢 two-cell：LH→theca→雄性素，FSH→granulosa→aromatase→雌激素 → 雌激素持續高 >48hr 就翻成正回饋 → LH surge → 排卵（唯一例外）。inhibin 抑 FSH、activin 促。"
+            "正回饋 → 黃體生成素高峰（LH surge） → 排卵 （ovulation）",
+            "促性腺激素釋放激素（GnRH）→黃體生成素（LH）/濾泡刺激素（FSH）→性腺（做類固醇＋配子）→ 多數時候負回饋踩煞車 → 卵巢 two-cell：黃體生成素（LH）→卵泡膜細胞（theca）→雄性素，濾泡刺激素（FSH）→顆粒細胞（granulosa）→芳香環酶（aromatase）→雌激素 → 雌激素持續高 >48hr 就翻成正回饋 → 黃體生成素高峰（LH surge） → 排卵（唯一例外）。抑制素（inhibin） 抑 濾泡刺激素（FSH）、促進（activin） 促。"
           ],
           "flash": [
             {
-              "front": "HPG / HPO 軸：GnRH → LH/FSH → 性腺",
-              "back": "下視丘分泌 GnRH（經門脈血管）→ 腦下垂體前葉分泌 LH 與 FSH（gonadotropin）→ 作用於性腺，刺激性類固醇與配子生成；性腺的產物再回頭抑制下視丘與腦下垂體（負回饋）。inhibin 抑制 FSH、activin 促進。"
+              "front": "下視丘－腦下垂體－性腺軸（HPG） / HPO 軸：促性腺激素釋放激素（GnRH） → 黃體生成素（LH）/濾泡刺激素（FSH） → 性腺",
+              "back": "下視丘分泌 促性腺激素釋放激素（GnRH）（經門脈血管）→ 腦下垂體前葉分泌 黃體生成素（LH） 與 濾泡刺激素（FSH）（gonadotropin）→ 作用於性腺，刺激性類固醇與配子生成；性腺的產物再回頭抑制下視丘與腦下垂體（負回饋）。抑制素（inhibin） 抑制 濾泡刺激素（FSH）、促進（activin） 促進。",
+              "id": "f6edfe446"
             },
             {
-              "front": "Two-cell theory：theca 做料、granulosa 加工",
-              "back": "卵巢的 two-cell theory：LH 作用於 theca cell，把膽固醇做成雄性素（androgens）；雄性素送進 granulosa cell，由 FSH 誘導的芳香酶 aromatase 轉成雌激素（estrogens）。兩種細胞分工合作才做得出雌激素。"
+              "front": "Two-cell theory：卵泡膜細胞（theca） 做料、顆粒細胞（granulosa） 加工",
+              "back": "卵巢的 two-cell theory：黃體生成素（LH） 作用於 卵泡膜細胞（theca cell），把膽固醇做成雄性素（androgens）；雄性素送進 顆粒細胞（granulosa cell），由 濾泡刺激素（FSH） 誘導的芳香酶 芳香環酶（aromatase） 轉成雌激素（estrogens）。兩種細胞分工合作才做得出雌激素。",
+              "id": "f525baa31"
             },
             {
-              "front": "唯一的例外：雌激素正回饋 → LH surge → 排卵",
-              "back": "雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 LH 大量爆發（LH surge），進而誘發排卵。"
+              "front": "唯一的例外：雌激素正回饋 → 黃體生成素高峰（LH surge） → 排卵",
+              "back": "雌激素對下視丘/腦下垂體平常是負回饋；但當雌激素持續維持高濃度（約 >48 小時）時，會反轉成正回饋，引發 黃體生成素（LH） 大量爆發（LH surge），進而誘發排卵。",
+              "id": "fcd477f24"
             },
             {
-              "front": "生殖軸中 inhibin 的主要作用是？",
-              "back": "inhibin 由保母細胞（Sertoli/granulosa）分泌，主要抑制 FSH。\n\n正確選項：抑制 FSH 分泌。\n下視丘分泌 GnRH（經門脈血管）→ 腦下垂體前葉分泌 LH 與 FSH（gonadotropin）→ 作用於性腺，刺激性類固醇與配子生成；性腺的產物再回頭抑制下視丘與腦下垂體（負回饋）。inhibin 抑制 FSH、activin 促進。"
+              "front": "生殖軸中 抑制素（inhibin） 的主要作用是？",
+              "back": "抑制素（inhibin） 由保母細胞（Sertoli/granulosa）分泌，主要抑制 濾泡刺激素（FSH）。\n\n正確選項：抑制 濾泡刺激素（FSH） 分泌。\n下視丘分泌 促性腺激素釋放激素（GnRH）（經門脈血管）→ 腦下垂體前葉分泌 黃體生成素（LH） 與 濾泡刺激素（FSH）（gonadotropin）→ 作用於性腺，刺激性類固醇與配子生成；性腺的產物再回頭抑制下視丘與腦下垂體（負回饋）。抑制素（inhibin） 抑制 濾泡刺激素（FSH）、促進（activin） 促進。",
+              "id": "fe79c886e"
             }
           ]
         }
@@ -713,7 +750,7 @@
       "title": "串連、公式與易錯整合（1）",
       "goals": [
         "解釋必記與易錯",
-        "解釋急速重點：Barr body",
+        "解釋急速重點：失活並濃縮的（Barr body）",
         "解釋急速重點：卵子兩次 arrest"
       ],
       "steps": [
@@ -725,7 +762,7 @@
         {
           "type": "card",
           "title": "必記與易錯",
-          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\nmustKnow：- 性腺＝配子工廠＋性類固醇工廠；男女對應：精子↔卵、Sertoli↔granulosa、Leydig↔theca。\n- 性別三關卡 genetic→gonadal→phenotypic；SRY（TDF）把性腺推成睪丸。\n- 精子：2n→1n、1→4、連續；卵子：1→1＋極體、停滯兩次（prophase I 到排卵前、metaphase II 到受精）。\n- 性類固醇皆源自膽固醇；5α-reductase→DHT（強 3 倍）、aromatase→雌激素；E2⇌E1(17β-HSD)→E3→尿。\n- Two-cell：LH→theca→雄性素，FSH→granulosa→aromatase→雌激素。\n- 雌激素持續高 >48hr → 正回饋 → LH surge → 排卵（唯一例外）；inhibin 抑 FSH。\ntraps：- 卵子第二次減數分裂要『受精』才完成（停在 metaphase II）。\n- DHT 比睪固酮更強（約 3 倍），不是更弱。\n- 雌激素正回饋要『高且持久(>48hr)』才成立，平常是負回饋。\n- aromatase 在 granulosa（FSH 誘導）；雄性素來源是 theca（LH）。",
+          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\nmustKnow：- 性腺＝配子工廠＋性類固醇工廠；男女對應：精子↔卵、塞爾托利氏細胞（Sertoli）↔顆粒細胞（granulosa）、萊迪氏細胞（Leydig）↔卵泡膜細胞（theca）。\n- 性別三關卡 genetic→gonadal→phenotypic；Y 染色體性別決定區基因（SRY）（TDF）把性腺推成睪丸。\n- 精子：2n→1n、1→4、連續；卵子：1→1＋極體、停滯兩次（prophase I 到排卵前、metaphase II 到受精）。\n- 性類固醇皆源自膽固醇；把（5α-reductase）→二氫睪固酮（DHT）（強 3 倍）、芳香環酶（aromatase）→雌激素；E2⇌E1(17β-HSD)→E3→尿。\n- Two-cell：黃體生成素（LH）→卵泡膜細胞→雄性素，濾泡刺激素（FSH）→顆粒細胞→芳香環酶→雌激素。\n- 雌激素持續高 >48hr → 正回饋 → 黃體生成素高峰（LH surge） → 排卵（唯一例外）；抑制素（inhibin） 抑 濾泡刺激素。\ntraps：- 卵子第二次減數分裂要『受精』才完成（停在 metaphase II）。\n- 二氫睪固酮 比睪固酮更強（約 3 倍），不是更弱。\n- 雌激素正回饋要『高且持久(>48hr)』才成立，平常是負回饋。\n- 芳香環酶 在 顆粒細胞（FSH 誘導）；雄性素來源是 卵泡膜細胞（LH）。",
           "keys": [
             "把本單元的關係串起來，確認易錯条件與方向。"
           ],
@@ -735,14 +772,15 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
-          "answer": "mustKnow：- 性腺＝配子工廠＋性類固醇工廠；男女對應：精子↔卵、Sertoli↔granulosa、Leydig↔theca。\n- 性別三關卡 genetic→gonadal→phenotypic；SRY（TDF）把性腺推成睪丸。\n- 精子：2n→1n、1→4、連續；卵子：1→1＋極體、停滯兩次（prophase I 到排卵前、metaphase II 到受精）。\n- 性類固醇皆源自膽固醇；5α-reductase→DHT（強 3 倍）、aromatase→雌激素；E2⇌E1(17β-HSD)→E3→尿。\n- Two-cell：LH→theca→雄性素，FSH→granulosa→aromatase→雌激素。\n- 雌激素持續高 >48hr → 正回饋 → LH surge → 排卵（唯一例外）；inhibin 抑 FSH。\ntraps：- 卵子第二次減數分裂要『受精』才完成（停在 metaphase II）。\n- DHT 比睪固酮更強（約 3 倍），不是更弱。\n- 雌激素正回饋要『高且持久(>48hr)』才成立，平常是負回饋。\n- aromatase 在 granulosa（FSH 誘導）；雄性素來源是 theca（LH）。",
+          "answer": "mustKnow：- 性腺＝配子工廠＋性類固醇工廠；男女對應：精子↔卵、塞爾托利氏細胞（Sertoli）↔顆粒細胞（granulosa）、萊迪氏細胞（Leydig）↔卵泡膜細胞（theca）。\n- 性別三關卡 genetic→gonadal→phenotypic；Y 染色體性別決定區基因（SRY）（TDF）把性腺推成睪丸。\n- 精子：2n→1n、1→4、連續；卵子：1→1＋極體、停滯兩次（prophase I 到排卵前、metaphase II 到受精）。\n- 性類固醇皆源自膽固醇；把（5α-reductase）→二氫睪固酮（DHT）（強 3 倍）、芳香環酶（aromatase）→雌激素；E2⇌E1(17β-HSD)→E3→尿。\n- Two-cell：黃體生成素（LH）→卵泡膜細胞（theca）→雄性素，濾泡刺激素（FSH）→顆粒細胞（granulosa）→芳香環酶（aromatase）→雌激素。\n- 雌激素持續高 >48hr → 正回饋 → 黃體生成素高峰（LH surge） → 排卵（唯一例外）；抑制素（inhibin） 抑 濾泡刺激素（FSH）。\ntraps：- 卵子第二次減數分裂要『受精』才完成（停在 metaphase II）。\n- 二氫睪固酮（DHT） 比睪固酮更強（約 3 倍），不是更弱。\n- 雌激素正回饋要『高且持久(>48hr)』才成立，平常是負回饋。\n- 芳香環酶（aromatase） 在 顆粒細胞（granulosa）（FSH 誘導）；雄性素來源是 卵泡膜細胞（theca）（LH）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "mustKnow：- 性腺＝配子工廠＋性類固醇工廠；男女對應：精子↔卵、Sertoli↔granulosa、Leydig↔theca。\n- 性別三關卡 genetic→gonadal→phenotypic；SRY（TDF）把性腺推成睪丸。\n- 精子：2n→1n、1→4、連續；卵子：1→1＋極體、停滯兩次（prophase I 到排卵前、metaphase II 到受精）。\n- 性類固醇皆源自膽固醇；5α-reductase→DHT（強 3 倍）、aromatase→雌激素；E2⇌E1(17β-HSD)→E3→尿。\n- Two-cell：LH→theca→雄性素，FSH→granulosa→aromatase→雌激素。\n- 雌激素持續高 >48hr → 正回饋 → LH surge → 排卵（唯一例外）；inhibin 抑 FSH。\ntraps：- 卵子第二次減數分裂要『受精』才完成（停在 metaphase II）。\n- DHT 比睪固酮更強（約 3 倍），不是更弱。\n- 雌激素正回饋要『高且持久(>48hr)』才成立，平常是負回饋。\n- aromatase 在 granulosa（FSH 誘導）；雄性素來源是 theca（LH）。"
+          "explain": "mustKnow：- 性腺＝配子工廠＋性類固醇工廠；男女對應：精子↔卵、塞爾托利氏細胞（Sertoli）↔顆粒細胞（granulosa）、萊迪氏細胞（Leydig）↔卵泡膜細胞（theca）。\n- 性別三關卡 genetic→gonadal→phenotypic；Y 染色體性別決定區基因（SRY）（TDF）把性腺推成睪丸。\n- 精子：2n→1n、1→4、連續；卵子：1→1＋極體、停滯兩次（prophase I 到排卵前、metaphase II 到受精）。\n- 性類固醇皆源自膽固醇；把（5α-reductase）→二氫睪固酮（DHT）（強 3 倍）、芳香環酶（aromatase）→雌激素；E2⇌E1(17β-HSD)→E3→尿。\n- Two-cell：黃體生成素（LH）→卵泡膜細胞（theca）→雄性素，濾泡刺激素（FSH）→顆粒細胞（granulosa）→芳香環酶（aromatase）→雌激素。\n- 雌激素持續高 >48hr → 正回饋 → 黃體生成素高峰（LH surge） → 排卵（唯一例外）；抑制素（inhibin） 抑 濾泡刺激素（FSH）。\ntraps：- 卵子第二次減數分裂要『受精』才完成（停在 metaphase II）。\n- 二氫睪固酮（DHT） 比睪固酮更強（約 3 倍），不是更弱。\n- 雌激素正回饋要『高且持久(>48hr)』才成立，平常是負回饋。\n- 芳香環酶（aromatase） 在 顆粒細胞（granulosa）（FSH 誘導）；雄性素來源是 卵泡膜細胞（theca）（LH）。",
+          "id": "c3c46cc26"
         },
         {
           "type": "card",
-          "title": "急速重點：Barr body",
-          "body": "**一句話／白話**\n細胞只需要一條 X 工作，多出來的會捲起來休息；所以休息小球的數量是 X 數量減一。\n\n**觀念**\nBarr body 是失活 X chromosome；嗜中性球可見 drumstick appendage。\n\n**易錯與比較**\nBarr body 數=X chromosome 數−1。\n\n**口訣**\nX 有幾條，休息的少一條。",
+          "title": "急速重點：失活並濃縮的（Barr body）",
+          "body": "**一句話／白話**\n細胞只需要一條 X 工作，多出來的會捲起來休息；所以休息小球的數量是 X 數量減一。\n\n**觀念**\n失活並濃縮的（Barr body） 是失活 X chromosome；嗜中性球可見 drumstick appendage。\n\n**易錯與比較**\n失活並濃縮的 數=X chromosome 數−1。\n\n**口訣**\nX 有幾條，休息的少一條。",
           "keys": [
             "細胞只需要一條 X 工作，多出來的會捲起來休息；所以休息小球的數量是 X 數量減一。"
           ],
@@ -751,15 +789,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：Barr body」，並說出一個判斷依據。",
-          "answer": "Barr body 是失活 X chromosome；嗜中性球可見 drumstick appendage。",
+          "q": "用自己的話說明「急速重點：失活並濃縮的（Barr body）」，並說出一個判斷依據。",
+          "answer": "失活並濃縮的（Barr body） 是失活 X chromosome；嗜中性球可見 drumstick appendage。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "Barr body 是失活 X chromosome；嗜中性球可見 drumstick appendage。"
+          "explain": "失活並濃縮的（Barr body） 是失活 X chromosome；嗜中性球可見 drumstick appendage。",
+          "id": "c7be116db"
         },
         {
           "type": "card",
           "title": "急速重點：卵子兩次 arrest",
-          "body": "**一句話／白話**\n女性的卵細胞出生前先停一次；排卵時再停一次，只有真的受精才會把第二次分裂做完。\n\n**觀念**\nprimary oocyte 停 prophase I；排卵時 secondary oocyte 停 metaphase II，受精後才完成 meiosis II。\n\n**易錯與比較**\noogonia mitosis 在出生前停止。\n\n**口訣**\n出生前停一，排卵後停二。",
+          "body": "**一句話／白話**\n女性的卵細胞出生前先停一次；排卵時再停一次，只有真的受精才會把第二次分裂做完。\n\n**觀念**\n初級卵母細胞（primary oocyte） 停 第一次減數分裂前期（prophase I）；排卵時 次級卵母細胞（secondary oocyte） 停 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。\n\n**易錯與比較**\noogonia mitosis 在出生前停止。\n\n**口訣**\n出生前停一，排卵後停二。",
           "keys": [
             "女性的卵細胞出生前先停一次；排卵時再停一次，只有真的受精才會把第二次分裂做完。"
           ],
@@ -769,9 +808,10 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：卵子兩次 arrest」，並說出一個判斷依據。",
-          "answer": "primary oocyte 停 prophase I；排卵時 secondary oocyte 停 metaphase II，受精後才完成 meiosis II。",
+          "answer": "初級卵母細胞（primary oocyte） 停 第一次減數分裂前期（prophase I）；排卵時 次級卵母細胞（secondary oocyte） 停 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "primary oocyte 停 prophase I；排卵時 secondary oocyte 停 metaphase II，受精後才完成 meiosis II。"
+          "explain": "初級卵母細胞（primary oocyte） 停 第一次減數分裂前期（prophase I）；排卵時 次級卵母細胞（secondary oocyte） 停 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。",
+          "id": "c8d6745f3"
         },
         {
           "type": "example",
@@ -779,10 +819,10 @@
           "problem": "用自己的話說明「急速重點：卵子兩次 arrest」，並說出一個判斷依據。",
           "steps": [
             "先確認題目問的主題：急速重點：卵子兩次 arrest",
-            "primary oocyte 停 prophase I；排卵時 secondary oocyte 停 metaphase II，受精後才完成 meiosis II。",
-            "把判斷依據連回題目：primary oocyte 停 prophase I；排卵時 secondary oocyte 停 metaphase II，受精後才完成 meiosis II。"
+            "初級卵母細胞（primary oocyte） 停 第一次減數分裂前期（prophase I）；排卵時 次級卵母細胞（secondary oocyte） 停 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。",
+            "把判斷依據連回題目：初級卵母細胞（primary oocyte） 停 第一次減數分裂前期（prophase I）；排卵時 次級卵母細胞（secondary oocyte） 停 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。"
           ],
-          "answer": "primary oocyte 停 prophase I；排卵時 secondary oocyte 停 metaphase II，受精後才完成 meiosis II。"
+          "answer": "初級卵母細胞（primary oocyte） 停 第一次減數分裂前期（prophase I）；排卵時 次級卵母細胞（secondary oocyte） 停 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。"
         },
         {
           "type": "practice",
@@ -794,17 +834,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：Barr body」，並說出一個判斷依據。",
-              "answer": "Barr body 是失活 X chromosome；嗜中性球可見 drumstick appendage。",
+              "q": "用自己的話說明「急速重點：失活並濃縮的（Barr body）」，並說出一個判斷依據。",
+              "answer": "失活並濃縮的（Barr body） 是失活 X chromosome；嗜中性球可見 drumstick appendage。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "Barr body 是失活 X chromosome；嗜中性球可見 drumstick appendage。"
+              "explain": "失活並濃縮的（Barr body） 是失活 X chromosome；嗜中性球可見 drumstick appendage。",
+              "id": "c7be116db"
             },
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：卵子兩次 arrest」，並說出一個判斷依據。",
-              "answer": "primary oocyte 停 prophase I；排卵時 secondary oocyte 停 metaphase II，受精後才完成 meiosis II。",
+              "answer": "初級卵母細胞（primary oocyte） 停 第一次減數分裂前期（prophase I）；排卵時 次級卵母細胞（secondary oocyte） 停 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "primary oocyte 停 prophase I；排卵時 secondary oocyte 停 metaphase II，受精後才完成 meiosis II。"
+              "explain": "初級卵母細胞（primary oocyte） 停 第一次減數分裂前期（prophase I）；排卵時 次級卵母細胞（secondary oocyte） 停 第二次減數分裂中期（metaphase II），受精後才完成 減數分裂（meiosis） II。",
+              "id": "c8d6745f3"
             }
           ]
         },
@@ -815,24 +857,28 @@
             "細胞只需要一條 X 工作，多出來的會捲起來休息；所以休息小球的數量是 X 數量減一。",
             "女性的卵細胞出生前先停一次；排卵時再停一次，只有真的受精才會把第二次分裂做完。",
             "必記與易錯：把本單元的關係串起來，確認易錯条件與方向。",
-            "急速重點：Barr body：細胞只需要一條 X 工作，多出來的會捲起來休息；所以休息小球的數量是 X 數量減一。"
+            "急速重點：失活並濃縮的（Barr body）：細胞只需要一條 X 工作，多出來的會捲起來休息；所以休息小球的數量是 X 數量減一。"
           ],
           "flash": [
             {
               "front": "必記與易錯",
-              "back": "把本單元的關係串起來，確認易錯条件與方向。"
+              "back": "把本單元的關係串起來，確認易錯条件與方向。",
+              "id": "f44ad9384"
             },
             {
-              "front": "急速重點：Barr body",
-              "back": "細胞只需要一條 X 工作，多出來的會捲起來休息；所以休息小球的數量是 X 數量減一。"
+              "front": "急速重點：失活並濃縮的（Barr body）",
+              "back": "細胞只需要一條 X 工作，多出來的會捲起來休息；所以休息小球的數量是 X 數量減一。",
+              "id": "fcd18ddb2"
             },
             {
               "front": "急速重點：卵子兩次 arrest",
-              "back": "女性的卵細胞出生前先停一次；排卵時再停一次，只有真的受精才會把第二次分裂做完。"
+              "back": "女性的卵細胞出生前先停一次；排卵時再停一次，只有真的受精才會把第二次分裂做完。",
+              "id": "f41bdd8d4"
             },
             {
               "front": "用自己的話說明「必記與易錯」，並說出一個判斷依據。",
-              "back": "mustKnow：- 性腺＝配子工廠＋性類固醇工廠；男女對應：精子↔卵、Sertoli↔granulosa、Leydig↔theca。\n- 性別三關卡 genetic→gonadal→phenotypic；SRY（TDF）把性腺推成睪丸。\n- 精子：2n→1n、1→4、連續；卵子：1→1＋極體、停滯兩次（prophase I 到排卵前、metaphase II 到受精）。\n- 性類固醇皆源自膽固醇；5α-reductase→DHT（強 3 倍）、aromatase→雌激素；E2⇌E1(17β-HSD)→E3→尿。\n- Two-cell：LH→theca→雄性素，FSH→granulosa→aromatase→雌激素。\n- 雌激素持續高 >48hr → 正回饋 → LH surge → 排卵（唯一例外）；inhibin 抑 FSH。\ntraps：- 卵子第二次減數分裂要『受精』才完成（停在 metaphase II）。\n- DHT 比睪固酮更強（約 3 倍），不是更弱。\n- 雌激素正回饋要『高且持久(>48hr)』才成立，平常是負回饋。\n- aromatase 在 granulosa（FSH 誘導）；雄性素來源是 theca（LH）。"
+              "back": "mustKnow：- 性腺＝配子工廠＋性類固醇工廠；男女對應：精子↔卵、塞爾托利氏細胞（Sertoli）↔顆粒細胞（granulosa）、萊迪氏細胞（Leydig）↔卵泡膜細胞（theca）。\n- 性別三關卡 genetic→gonadal→phenotypic；Y 染色體性別決定區基因（SRY）（TDF）把性腺推成睪丸。\n- 精子：2n→1n、1→4、連續；卵子：1→1＋極體、停滯兩次（prophase I 到排卵前、metaphase II 到受精）。\n- 性類固醇皆源自膽固醇；把（5α-reductase）→二氫睪固酮（DHT）（強 3 倍）、芳香環酶（aromatase）→雌激素；E2⇌E1(17β-HSD)→E3→尿。\n- Two-cell：黃體生成素（LH）→卵泡膜細胞（theca）→雄性素，濾泡刺激素（FSH）→顆粒細胞（granulosa）→芳香環酶（aromatase）→雌激素。\n- 雌激素持續高 >48hr → 正回饋 → 黃體生成素高峰（LH surge） → 排卵（唯一例外）；抑制素（inhibin） 抑 濾泡刺激素（FSH）。\ntraps：- 卵子第二次減數分裂要『受精』才完成（停在 metaphase II）。\n- 二氫睪固酮（DHT） 比睪固酮更強（約 3 倍），不是更弱。\n- 雌激素正回饋要『高且持久(>48hr)』才成立，平常是負回饋。\n- 芳香環酶（aromatase） 在 顆粒細胞（granulosa）（FSH 誘導）；雄性素來源是 卵泡膜細胞（theca）（LH）。",
+              "id": "f3c46cc26"
             }
           ]
         }
@@ -842,9 +888,9 @@
       "id": "review-extra-2",
       "title": "串連、公式與易錯整合（2）",
       "goals": [
-        "解釋急速重點：17β-HSD vs 5α-reductase",
+        "解釋急速重點：17β-羥基類固醇脫氫酶（HSD） vs 把（5α-reductase）",
         "解釋急速重點：性腺胚胎來源",
-        "解釋急速重點：男性 HPG axis"
+        "解釋急速重點：男性 下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）"
       ],
       "steps": [
         {
@@ -854,25 +900,26 @@
         },
         {
           "type": "card",
-          "title": "急速重點：17β-HSD vs 5α-reductase",
-          "body": "**一句話／白話**\n性腺裡的酵素幫忙做 testosterone 或 estrogen；另一把酵素在周邊把 testosterone 改成更強的 DHT。\n\n**觀念**\n17β-HSD 在性腺參與形成 testosterone/estradiol；5α-reductase 在周邊把 testosterone→DHT。\n\n**易錯與比較**\nDHT 不是主要在性腺製造。\n\n**口訣**\n性腺製造，周邊強化。",
+          "title": "急速重點：17β-羥基類固醇脫氫酶（HSD） vs 把（5α-reductase）",
+          "body": "**一句話／白話**\n性腺裡的酵素幫忙做 睪固酮（testosterone） 或 雌激素（estrogen）；另一把酵素在周邊把 睪固酮 改成更強的 二氫睪固酮（DHT）。\n\n**觀念**\n17β-羥基類固醇脫氫酶（HSD） 在性腺參與形成 睪固酮/雌二醇（estradiol）；把（5α-reductase） 在周邊把 睪固酮→二氫睪固酮。\n\n**易錯與比較**\n二氫睪固酮 不是主要在性腺製造。\n\n**口訣**\n性腺製造，周邊強化。",
           "keys": [
-            "性腺裡的酵素幫忙做 testosterone 或 estrogen；另一把酵素在周邊把 testosterone 改成更強的 DHT。"
+            "性腺裡的酵素幫忙做 睪固酮（testosterone） 或 雌激素（estrogen）；另一把酵素在周邊把 睪固酮（testosterone） 改成更強的 二氫睪固酮（DHT）。"
           ],
           "tip": "口訣：性腺製造，周邊強化。"
         },
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：17β-HSD vs 5α-reductase」，並說出一個判斷依據。",
-          "answer": "17β-HSD 在性腺參與形成 testosterone/estradiol；5α-reductase 在周邊把 testosterone→DHT。",
+          "q": "用自己的話說明「急速重點：17β-羥基類固醇脫氫酶（HSD） vs 把（5α-reductase）」，並說出一個判斷依據。",
+          "answer": "17β-羥基類固醇脫氫酶（HSD） 在性腺參與形成 睪固酮（testosterone）/雌二醇（estradiol）；把（5α-reductase） 在周邊把 睪固酮（testosterone）→二氫睪固酮（DHT）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "17β-HSD 在性腺參與形成 testosterone/estradiol；5α-reductase 在周邊把 testosterone→DHT。"
+          "explain": "17β-羥基類固醇脫氫酶（HSD） 在性腺參與形成 睪固酮（testosterone）/雌二醇（estradiol）；把（5α-reductase） 在周邊把 睪固酮（testosterone）→二氫睪固酮（DHT）。",
+          "id": "c7de3b6d4"
         },
         {
           "type": "card",
           "title": "急速重點：性腺胚胎來源",
-          "body": "**一句話／白話**\n胚胎早期的性腺有外層和內層；男性主要保留內層，女性主要保留外層。\n\n**觀念**\n男性 testis 主要由 medulla 發展；女性 ovary 主要由 cortex 發展。\n\n**易錯與比較**\n老師明示必考。\n\n**口訣**\n男內、女外。",
+          "body": "**一句話／白話**\n胚胎早期的性腺有外層和內層；男性主要保留內層，女性主要保留外層。\n\n**觀念**\n男性 testis 主要由 medulla 發展；女性 ovary 主要由 皮質（cortex） 發展。\n\n**易錯與比較**\n老師明示必考。\n\n**口訣**\n男內、女外。",
           "keys": [
             "胚胎早期的性腺有外層和內層；男性主要保留內層，女性主要保留外層。"
           ],
@@ -882,37 +929,39 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：性腺胚胎來源」，並說出一個判斷依據。",
-          "answer": "男性 testis 主要由 medulla 發展；女性 ovary 主要由 cortex 發展。",
+          "answer": "男性 testis 主要由 medulla 發展；女性 ovary 主要由 皮質（cortex） 發展。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "男性 testis 主要由 medulla 發展；女性 ovary 主要由 cortex 發展。"
+          "explain": "男性 testis 主要由 medulla 發展；女性 ovary 主要由 皮質（cortex） 發展。",
+          "id": "cd9885395"
         },
         {
           "type": "card",
-          "title": "急速重點：男性 HPG axis",
-          "body": "**一句話／白話**\n上游先放總命令，再分成兩條：一條叫 Leydig 做 testosterone；另一條叫 Sertoli 照顧精子。\n\n**觀念**\nGnRH→LH/FSH；LH→Leydig→testosterone；FSH→Sertoli→spermatogenesis、ABP、inhibin。\n\n**易錯與比較**\nInhibin 主要負回饋 FSH。\n\n**口訣**\nL 做荷爾蒙，S 顧精子。",
+          "title": "急速重點：男性 下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）",
+          "body": "**一句話／白話**\n上游先放總命令，再分成兩條：一條叫 萊迪氏細胞（Leydig） 做 睪固酮（testosterone）；另一條叫 塞爾托利氏細胞（Sertoli） 照顧精子。\n\n**觀念**\n促性腺激素釋放激素（GnRH）→黃體生成素（LH）/濾泡刺激素（FSH）；黃體生成素→萊迪氏細胞→睪固酮；濾泡刺激素→塞爾托利氏細胞→精子生成（spermatogenesis）、雄激素結合蛋白（ABP）、抑制素（inhibin）。\n\n**易錯與比較**\n抑制素 主要負回饋 濾泡刺激素。\n\n**口訣**\nL 做荷爾蒙，S 顧精子。",
           "keys": [
-            "上游先放總命令，再分成兩條：一條叫 Leydig 做 testosterone；另一條叫 Sertoli 照顧精子。"
+            "上游先放總命令，再分成兩條：一條叫 萊迪氏細胞（Leydig） 做 睪固酮（testosterone）；另一條叫 塞爾托利氏細胞（Sertoli） 照顧精子。"
           ],
           "tip": "口訣：L 做荷爾蒙，S 顧精子。"
         },
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：男性 HPG axis」，並說出一個判斷依據。",
-          "answer": "GnRH→LH/FSH；LH→Leydig→testosterone；FSH→Sertoli→spermatogenesis、ABP、inhibin。",
+          "q": "用自己的話說明「急速重點：男性 下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）」，並說出一個判斷依據。",
+          "answer": "促性腺激素釋放激素（GnRH）→黃體生成素（LH）/濾泡刺激素（FSH）；黃體生成素（LH）→萊迪氏細胞（Leydig）→睪固酮（testosterone）；濾泡刺激素（FSH）→塞爾托利氏細胞（Sertoli）→精子生成（spermatogenesis）、雄激素結合蛋白（ABP）、抑制素（inhibin）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "GnRH→LH/FSH；LH→Leydig→testosterone；FSH→Sertoli→spermatogenesis、ABP、inhibin。"
+          "explain": "促性腺激素釋放激素（GnRH）→黃體生成素（LH）/濾泡刺激素（FSH）；黃體生成素（LH）→萊迪氏細胞（Leydig）→睪固酮（testosterone）；濾泡刺激素（FSH）→塞爾托利氏細胞（Sertoli）→精子生成（spermatogenesis）、雄激素結合蛋白（ABP）、抑制素（inhibin）。",
+          "id": "ce3d59f78"
         },
         {
           "type": "example",
-          "title": "範例拆解：急速重點：男性 HPG axis",
-          "problem": "用自己的話說明「急速重點：男性 HPG axis」，並說出一個判斷依據。",
+          "title": "範例拆解：急速重點：男性 下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）",
+          "problem": "用自己的話說明「急速重點：男性 下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：急速重點：男性 HPG axis",
-            "GnRH→LH/FSH；LH→Leydig→testosterone；FSH→Sertoli→spermatogenesis、ABP、inhibin。",
-            "把判斷依據連回題目：GnRH→LH/FSH；LH→Leydig→testosterone；FSH→Sertoli→spermatogenesis、ABP、inhibin。"
+            "先確認題目問的主題：急速重點：男性 下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）",
+            "促性腺激素釋放激素（GnRH）→黃體生成素（LH）/濾泡刺激素（FSH）；黃體生成素（LH）→萊迪氏細胞（Leydig）→睪固酮（testosterone）；濾泡刺激素（FSH）→塞爾托利氏細胞（Sertoli）→精子生成（spermatogenesis）、雄激素結合蛋白（ABP）、抑制素（inhibin）。",
+            "把判斷依據連回題目：促性腺激素釋放激素（GnRH）→黃體生成素（LH）/濾泡刺激素（FSH）；黃體生成素（LH）→萊迪氏細胞（Leydig）→睪固酮（testosterone）；濾泡刺激素（FSH）→塞爾托利氏細胞（Sertoli）→精子生成（spermatogenesis）、雄激素結合蛋白（ABP）、抑制素（inhibin）。"
           ],
-          "answer": "GnRH→LH/FSH；LH→Leydig→testosterone；FSH→Sertoli→spermatogenesis、ABP、inhibin。"
+          "answer": "促性腺激素釋放激素（GnRH）→黃體生成素（LH）/濾泡刺激素（FSH）；黃體生成素（LH）→萊迪氏細胞（Leydig）→睪固酮（testosterone）；濾泡刺激素（FSH）→塞爾托利氏細胞（Sertoli）→精子生成（spermatogenesis）、雄激素結合蛋白（ABP）、抑制素（inhibin）。"
         },
         {
           "type": "practice",
@@ -925,44 +974,50 @@
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：性腺胚胎來源」，並說出一個判斷依據。",
-              "answer": "男性 testis 主要由 medulla 發展；女性 ovary 主要由 cortex 發展。",
+              "answer": "男性 testis 主要由 medulla 發展；女性 ovary 主要由 皮質（cortex） 發展。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "男性 testis 主要由 medulla 發展；女性 ovary 主要由 cortex 發展。"
+              "explain": "男性 testis 主要由 medulla 發展；女性 ovary 主要由 皮質（cortex） 發展。",
+              "id": "cd9885395"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：男性 HPG axis」，並說出一個判斷依據。",
-              "answer": "GnRH→LH/FSH；LH→Leydig→testosterone；FSH→Sertoli→spermatogenesis、ABP、inhibin。",
+              "q": "用自己的話說明「急速重點：男性 下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）」，並說出一個判斷依據。",
+              "answer": "促性腺激素釋放激素（GnRH）→黃體生成素（LH）/濾泡刺激素（FSH）；黃體生成素（LH）→萊迪氏細胞（Leydig）→睪固酮（testosterone）；濾泡刺激素（FSH）→塞爾托利氏細胞（Sertoli）→精子生成（spermatogenesis）、雄激素結合蛋白（ABP）、抑制素（inhibin）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "GnRH→LH/FSH；LH→Leydig→testosterone；FSH→Sertoli→spermatogenesis、ABP、inhibin。"
+              "explain": "促性腺激素釋放激素（GnRH）→黃體生成素（LH）/濾泡刺激素（FSH）；黃體生成素（LH）→萊迪氏細胞（Leydig）→睪固酮（testosterone）；濾泡刺激素（FSH）→塞爾托利氏細胞（Sertoli）→精子生成（spermatogenesis）、雄激素結合蛋白（ABP）、抑制素（inhibin）。",
+              "id": "ce3d59f78"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "性腺裡的酵素幫忙做 testosterone 或 estrogen；另一把酵素在周邊把 testosterone 改成更強的 DHT。",
+            "性腺裡的酵素幫忙做 睪固酮（testosterone） 或 雌激素（estrogen）；另一把酵素在周邊把 睪固酮（testosterone） 改成更強的 二氫睪固酮（DHT）。",
             "胚胎早期的性腺有外層和內層；男性主要保留內層，女性主要保留外層。",
-            "上游先放總命令，再分成兩條：一條叫 Leydig 做 testosterone；另一條叫 Sertoli 照顧精子。",
-            "急速重點：17β-HSD vs 5α-reductase：性腺裡的酵素幫忙做 testosterone 或 estrogen；另一把酵素在周邊把 testosterone 改成更強的 DHT。",
+            "上游先放總命令，再分成兩條：一條叫 萊迪氏細胞（Leydig） 做 睪固酮（testosterone）；另一條叫 塞爾托利氏細胞（Sertoli） 照顧精子。",
+            "急速重點：17β-羥基類固醇脫氫酶（HSD） vs 把（5α-reductase）：性腺裡的酵素幫忙做 睪固酮（testosterone） 或 雌激素（estrogen）；另一把酵素在周邊把 睪固酮（testosterone） 改成更強的 二氫睪固酮（DHT）。",
             "急速重點：性腺胚胎來源：胚胎早期的性腺有外層和內層；男性主要保留內層，女性主要保留外層。"
           ],
           "flash": [
             {
-              "front": "急速重點：17β-HSD vs 5α-reductase",
-              "back": "性腺裡的酵素幫忙做 testosterone 或 estrogen；另一把酵素在周邊把 testosterone 改成更強的 DHT。"
+              "front": "急速重點：17β-羥基類固醇脫氫酶（HSD） vs 把（5α-reductase）",
+              "back": "性腺裡的酵素幫忙做 睪固酮（testosterone） 或 雌激素（estrogen）；另一把酵素在周邊把 睪固酮（testosterone） 改成更強的 二氫睪固酮（DHT）。",
+              "id": "fa1badd15"
             },
             {
               "front": "急速重點：性腺胚胎來源",
-              "back": "胚胎早期的性腺有外層和內層；男性主要保留內層，女性主要保留外層。"
+              "back": "胚胎早期的性腺有外層和內層；男性主要保留內層，女性主要保留外層。",
+              "id": "f5046dee0"
             },
             {
-              "front": "急速重點：男性 HPG axis",
-              "back": "上游先放總命令，再分成兩條：一條叫 Leydig 做 testosterone；另一條叫 Sertoli 照顧精子。"
+              "front": "急速重點：男性 下視丘－腦下垂體－性腺軸（HPG） 軸向（axis）",
+              "back": "上游先放總命令，再分成兩條：一條叫 萊迪氏細胞（Leydig） 做 睪固酮（testosterone）；另一條叫 塞爾托利氏細胞（Sertoli） 照顧精子。",
+              "id": "f2388fe2e"
             },
             {
-              "front": "用自己的話說明「急速重點：17β-HSD vs 5α-reductase」，並說出一個判斷依據。",
-              "back": "17β-HSD 在性腺參與形成 testosterone/estradiol；5α-reductase 在周邊把 testosterone→DHT。"
+              "front": "用自己的話說明「急速重點：17β-羥基類固醇脫氫酶（HSD） vs 把（5α-reductase）」，並說出一個判斷依據。",
+              "back": "17β-羥基類固醇脫氫酶（HSD） 在性腺參與形成 睪固酮（testosterone）/雌二醇（estradiol）；把（5α-reductase） 在周邊把 睪固酮（testosterone）→二氫睪固酮（DHT）。",
+              "id": "f7de3b6d4"
             }
           ]
         }

@@ -23,101 +23,104 @@
       "id": "ss-intro-1",
       "title": "第 1 站：特殊感覺的共同骨架",
       "goals": [
-        "解釋五大特殊感覺與 receptor vs organ",
+        "解釋五大特殊感覺與 受體（receptor） vs organ",
         "解釋適宜刺激 adequate stimulus 與可見光",
-        "解釋換能：receptor potential → action potential"
+        "解釋換能：受器電位（receptor potential） → 動作電位（action potential）"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 1 站：特殊感覺的共同骨架",
-          "body": "五大特殊感覺；感覺受器 vs 感覺器官；任何感覺都要『適宜刺激 → 換能 → receptor potential → 動作電位 → 中樞』。\n\n- 認識五大特殊感覺與 sensory receptor / sensory organ 的差別。\n- 適宜刺激 adequate stimulus 與可見光範圍。\n- 換能與 receptor potential、action potential 的關係。"
+          "body": "五大特殊感覺；感覺受器 vs 感覺器官；任何感覺都要『適宜刺激 → 換能 → 受器電位（receptor potential） → 動作電位 → 中樞』。\n\n- 認識五大特殊感覺與 感覺（sensory） 受體（receptor） / 感覺 organ 的差別。\n- 適宜刺激 adequate stimulus 與可見光範圍。\n- 換能與 受器電位、動作電位（action potential） 的關係。"
         },
         {
           "type": "card",
-          "title": "五大特殊感覺與 receptor vs organ",
-          "body": "**連到前一觀念**\n先把這一單元的範圍與兩個總論名詞定下來。\n\n**觀念**\n特殊感覺有五大類：vision、hearing、equilibrium、olfaction、gustation。形成感覺的構造分兩種：sensory receptor（受器，結構與換能較簡單，如痛/溫/壓/觸）與 sensory organ（器官，結構與換能較複雜，如視/聽/平衡）。\n\n**為什麼**\n比重：視覺約 70%、聽覺約 20%、平衡 <10%、味嗅較少，所以主軸是視覺與聽覺。『特殊』是相對一般體感覺而言，器官與機制比較特別。\n\n**考試角度**\n- 五感：vision、hearing、equilibrium、olfaction、gustation\n- sensory receptor（簡單）：痛/溫/壓/觸\n- sensory organ（複雜）：視/聽/平衡\n\n**英文考句**\n- Special senses: vision, hearing, equilibrium, olfaction, gustation.\n- Sensory receptors are structurally simple (pain/temperature/pressure/touch); sensory organs are complex (vision/hearing/equilibrium).",
+          "title": "五大特殊感覺與 受體（receptor） vs organ",
+          "body": "**連到前一觀念**\n先把這一單元的範圍與兩個總論名詞定下來。\n\n**觀念**\n特殊感覺有五大類：vision、hearing、equilibrium、olfaction、gustation。形成感覺的構造分兩種：感覺（sensory） 受體（receptor）（受器，結構與換能較簡單，如痛/溫/壓/觸）與 感覺 organ（器官，結構與換能較複雜，如視/聽/平衡）。\n\n**為什麼**\n比重：視覺約 70%、聽覺約 20%、平衡 <10%、味嗅較少，所以主軸是視覺與聽覺。『特殊』是相對一般體感覺而言，器官與機制比較特別。\n\n**考試角度**\n- 五感：vision、hearing、equilibrium、olfaction、gustation\n- 感覺 受體（簡單）：痛/溫/壓/觸\n- 感覺 organ（複雜）：視/聽/平衡\n\n**中文重點＋英文考句**\n- 五感：vision、hearing、equilibrium、olfaction、gustation\n- 感覺（sensory） 受體（receptor）（簡單）：痛/溫/壓/觸\n- 感覺 organ（複雜）：視/聽/平衡\n\n【英文原文】\n- Special senses: vision, hearing, equilibrium, olfaction, gustation.\n- Sensory receptors are structurally simple (pain/temperature/pressure/touch); sensory organs are complex (vision/hearing/equilibrium).",
           "keys": [
             "五感：vision、hearing、equilibrium、olfaction、gustation",
-            "sensory receptor（簡單）：痛/溫/壓/觸",
-            "sensory organ（複雜）：視/聽/平衡"
+            "感覺（sensory） 受體（receptor）（簡單）：痛/溫/壓/觸",
+            "感覺（sensory） organ（複雜）：視/聽/平衡"
           ],
           "tip": ""
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Which is a complex sensory organ rather than a simple sensory receptor?",
+          "q": "下列何者屬於 感覺（sensory） organ（感覺器官，結構複雜）而非 感覺（sensory） 受體（receptor）？\n英文：Which is a complex sensory organ rather than a simple sensory receptor?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "視/聽/平衡屬結構複雜的 sensory organ；痛溫壓觸屬 sensory receptor。\n\n正確選項：Vision, hearing, and equilibrium systems。\n特殊感覺有五大類：vision、hearing、equilibrium、olfaction、gustation。形成感覺的構造分兩種：sensory receptor（受器，結構與換能較簡單，如痛/溫/壓/觸）與 sensory organ（器官，結構與換能較複雜，如視/聽/平衡）。\n\n中文對照：question：下列何者屬於 sensory organ（感覺器官，結構複雜）而非 sensory receptor？\nchoices：- 視覺/聽覺/平衡\n- 痛覺\n- 溫度覺\n- 觸覺",
+          "explain": "視/聽/平衡屬結構複雜的 感覺（sensory） organ；痛溫壓觸屬 感覺（sensory） 受體（receptor）。\n\n正確選項：視覺/聽覺/平衡（Vision, hearing, and equilibrium systems）。\n特殊感覺有五大類：vision、hearing、equilibrium、olfaction、gustation。形成感覺的構造分兩種：感覺（sensory） 受體（receptor）（受器，結構與換能較簡單，如痛/溫/壓/觸）與 感覺（sensory） organ（器官，結構與換能較複雜，如視/聽/平衡）。\n\n中文對照：question：下列何者屬於 感覺（sensory） organ（感覺器官，結構複雜）而非 感覺（sensory） 受體（receptor）？\nchoices：- 視覺/聽覺/平衡\n- 痛覺\n- 溫度覺\n- 觸覺",
           "choices": [
-            "Vision, hearing, and equilibrium systems",
-            "Pain receptor",
-            "Temperature receptor",
-            "Touch receptor"
-          ]
+            "視覺/聽覺/平衡\n英文：Vision, hearing, and equilibrium systems",
+            "痛覺\n英文：Pain receptor",
+            "溫度覺\n英文：Temperature receptor",
+            "觸覺\n英文：Touch receptor"
+          ],
+          "id": "c12742a44"
         },
         {
           "type": "card",
           "title": "適宜刺激 adequate stimulus 與可見光",
-          "body": "**連到前一觀念**\n每種感覺只認得『對的刺激』，這是必考名詞解釋。\n\n**觀念**\nAdequate stimulus（適宜刺激）＝能有效刺激特定受器的刺激型態與強度（pattern 與 intensity 都要對）。光不會引發痛覺、不會引發聽覺；視覺需要的是一定波長的電磁波，即可見光 visible light（人類約 370–740 nm）。\n\n**為什麼**\n不同感覺需要不同形式的刺激：聽覺要聲波、視覺要光波。可見光之所以『可見』，是因為它的波長落在 cone 與 rod 感光色素能吸收的範圍內。\n\n**考試角度**\n- adequate stimulus＝對的刺激型態＋強度\n- 光不會引發痛覺/聽覺（型態不對）\n- 可見光 visible light ≈ 370–740 nm\n\n**英文考句**\n- An adequate stimulus is the stimulus type and intensity that effectively activates a specific receptor.\n- Visible light for humans is roughly 370–740 nm.",
+          "body": "**連到前一觀念**\n每種感覺只認得『對的刺激』，這是必考名詞解釋。\n\n**觀念**\nAdequate stimulus（適宜刺激）＝能有效刺激特定受器的刺激型態與強度（pattern 與 intensity 都要對）。光不會引發痛覺、不會引發聽覺；視覺需要的是一定波長的電磁波，即可見光 visible 光（light）（人類約 370–740 nm）。\n\n**為什麼**\n不同感覺需要不同形式的刺激：聽覺要聲波、視覺要光波。可見光之所以『可見』，是因為它的波長落在 錐狀細胞（cone） 與 桿狀細胞（rod） 感光色素能吸收的範圍內。\n\n**考試角度**\n- adequate stimulus＝對的刺激型態＋強度\n- 光不會引發痛覺/聽覺（型態不對）\n- 可見光 visible 光 ≈ 370–740 nm\n\n**中文重點＋英文考句**\n- adequate stimulus＝對的刺激型態＋強度\n- 光不會引發痛覺/聽覺（型態不對）\n- 可見光 visible 光（light） ≈ 370–740 nm\n\n【英文原文】\n- An adequate stimulus is the stimulus type and intensity that effectively activates a specific receptor.\n- Visible light for humans is roughly 370–740 nm.",
           "keys": [
             "adequate stimulus＝對的刺激型態＋強度",
             "光不會引發痛覺/聽覺（型態不對）",
-            "可見光 visible light ≈ 370–740 nm"
+            "可見光 visible 光（light） ≈ 370–740 nm"
           ],
           "tip": ""
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "What is the definition of an adequate stimulus?",
+          "q": "『adequate stimulus（適宜刺激）』的定義是？\n英文：What is the definition of an adequate stimulus?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "適宜刺激＝對該受器有效的刺激型態與強度。\n\n正確選項：The type and intensity of stimulus that effectively activates a specific receptor。\nAdequate stimulus（適宜刺激）＝能有效刺激特定受器的刺激型態與強度（pattern 與 intensity 都要對）。光不會引發痛覺、不會引發聽覺；視覺需要的是一定波長的電磁波，即可見光 visible light（人類約 370–740 nm）。\n\n中文對照：question：『adequate stimulus（適宜刺激）』的定義是？\nchoices：- 能有效刺激特定受器的刺激型態與強度\n- 最強的刺激\n- 最弱的刺激\n- 任何電磁波",
+          "explain": "適宜刺激＝對該受器有效的刺激型態與強度。\n\n正確選項：能有效刺激特定受器的刺激型態與強度（The type and intensity of stimulus that effectively activates a specific receptor）。\nAdequate stimulus（適宜刺激）＝能有效刺激特定受器的刺激型態與強度（pattern 與 intensity 都要對）。光不會引發痛覺、不會引發聽覺；視覺需要的是一定波長的電磁波，即可見光 visible 光（light）（人類約 370–740 nm）。\n\n中文對照：question：『adequate stimulus（適宜刺激）』的定義是？\nchoices：- 能有效刺激特定受器的刺激型態與強度\n- 最強的刺激\n- 最弱的刺激\n- 任何電磁波",
           "choices": [
-            "The type and intensity of stimulus that effectively activates a specific receptor",
-            "The strongest possible stimulus",
-            "The weakest possible stimulus",
-            "Any electromagnetic wave"
-          ]
+            "能有效刺激特定受器的刺激型態與強度\n英文：The type and intensity of stimulus that effectively activates a specific receptor",
+            "最強的刺激\n英文：The strongest possible stimulus",
+            "最弱的刺激\n英文：The weakest possible stimulus",
+            "任何電磁波\n英文：Any electromagnetic wave"
+          ],
+          "id": "cdd7f56b9"
         },
         {
           "type": "card",
-          "title": "換能：receptor potential → action potential",
-          "body": "**連到前一觀念**\n所有感覺都靠同一條骨架運作，先記這條。\n\n**觀念**\n感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 action potential → 傳到中樞整合 → 客觀＋主觀感覺。\n\n**為什麼**\n為什麼要換能？因為只有電訊號/動作電位才能把周邊訊息長距離傳到中樞。receptor potential 只是換能時的局部電位變化，還不是 AP；要過閾值才變成能長傳的 action potential。\n\n**考試角度**\n- 骨架：刺激 → 換能 → receptor potential → AP → 中樞\n- receptor potential＝換能的局部電位（非 AP）\n- 只有 action potential 能長距離傳到中樞\n\n**英文考句**\n- Transduction converts a stimulus into an electrical signal (receptor potential); once threshold is reached, an action potential is generated.\n- Only the action potential can carry the signal over long distances to the CNS.\n\n**易錯與比較**\nreceptor potential ≠ action potential：前者是換能時的局部電位，後者才是能長距離傳的訊號。",
+          "title": "換能：受器電位（receptor potential） → 動作電位（action potential）",
+          "body": "**連到前一觀念**\n所有感覺都靠同一條骨架運作，先記這條。\n\n**觀念**\n感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 動作電位（action potential） → 傳到中樞整合 → 客觀＋主觀感覺。\n\n**為什麼**\n為什麼要換能？因為只有電訊號/動作電位才能把周邊訊息長距離傳到中樞。受器電位（receptor potential） 只是換能時的局部電位變化，還不是 動作電位（AP）；要過閾值才變成能長傳的 動作電位。\n\n**考試角度**\n- 骨架：刺激 → 換能 → 受器電位 → 動作電位 → 中樞\n- 受器電位＝換能的局部電位（非 AP）\n- 只有 動作電位 能長距離傳到中樞\n\n**中文重點＋英文考句**\n- 骨架：刺激 → 換能 → 受器電位（receptor potential） → 動作電位（AP） → 中樞\n- 受器電位＝換能的局部電位（非 AP）\n- 只有 動作電位（action potential） 能長距離傳到中樞\n\n【英文原文】\n- Transduction converts a stimulus into an electrical signal (receptor potential); once threshold is reached, an action potential is generated.\n- Only the action potential can carry the signal over long distances to the CNS.\n\n**易錯與比較**\n受器電位（receptor potential） ≠ 動作電位（action potential）：前者是換能時的局部電位，後者才是能長距離傳的訊號。",
           "keys": [
-            "骨架：刺激 → 換能 → receptor potential → AP → 中樞",
-            "receptor potential＝換能的局部電位（非 AP）",
-            "只有 action potential 能長距離傳到中樞"
+            "骨架：刺激 → 換能 → 受器電位（receptor potential） → 動作電位（AP） → 中樞",
+            "受器電位（receptor potential）＝換能的局部電位（非 AP）",
+            "只有 動作電位（action potential） 能長距離傳到中樞"
           ],
-          "tip": "receptor potential ≠ action potential：前者是換能時的局部電位，後者才是能長距離傳的訊號。"
+          "tip": "受器電位（receptor potential） ≠ 動作電位（action potential）：前者是換能時的局部電位，後者才是能長距離傳的訊號。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "What is the local, subthreshold potential produced during sensory transduction called?",
+          "q": "換能過程中產生、尚未達閾值的局部電位變化稱為？\n英文：What is the local, subthreshold potential produced during sensory transduction called?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "換能先產生 receptor potential，過閾值才形成 action potential。\n\n正確選項：Receptor potential。\n感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 action potential → 傳到中樞整合 → 客觀＋主觀感覺。\n\n中文對照：question：換能過程中產生、尚未達閾值的局部電位變化稱為？\nchoices：- receptor potential\n- action potential\n- resting potential\n- end-plate potential",
+          "explain": "換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（action potential）。\n\n正確選項：受器電位（Receptor potential）。\n感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 動作電位（action potential） → 傳到中樞整合 → 客觀＋主觀感覺。\n\n中文對照：question：換能過程中產生、尚未達閾值的局部電位變化稱為？\nchoices：- 受器電位（receptor potential）\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 終板電位（end-plate potential）",
           "choices": [
-            "Receptor potential",
-            "Action potential",
-            "Resting potential",
-            "End-plate potential"
-          ]
+            "受器電位（receptor potential）\n英文：Receptor potential",
+            "動作電位（action potential）\n英文：Action potential",
+            "靜止膜電位（resting potential）\n英文：Resting potential",
+            "終板電位（end-plate potential）\n英文：End-plate potential"
+          ],
+          "id": "c9d50269b"
         },
         {
           "type": "example",
-          "title": "範例拆解：換能：receptor potential → action potential",
-          "problem": "What is the local, subthreshold potential produced during sensory transduction called?\n\nA. Receptor potential\nB. Action potential\nC. Resting potential\nD. End-plate potential",
+          "title": "範例拆解：換能：受器電位（receptor potential） → 動作電位（action potential）",
+          "problem": "換能過程中產生、尚未達閾值的局部電位變化稱為？（What is the local, subthreshold potential produced during sensory transduction called?）\n\nA. 受器電位（Receptor potential）\nB. 動作電位（Action potential）\nC. 靜止膜電位（Resting potential）\nD. 終板電位（End-plate potential）",
           "steps": [
-            "先確認題目問的主題：換能：receptor potential → action potential",
-            "感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 action potential → 傳到中樞整合 → 客觀＋主觀感覺。",
-            "把判斷依據連回題目：換能先產生 receptor potential，過閾值才形成 action potential。\n\n正確選項：Receptor potential。\n感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 action potential → 傳到中樞整合 → 客觀＋主觀感覺。\n\n中文對照：question：換能過程中產生、尚未達閾值的局部電位變化稱為？\nchoices：- receptor potential\n- action potential\n- resting potential\n- end-plate potential"
+            "先確認題目問的主題：換能：受器電位（receptor potential） → 動作電位（action potential）",
+            "感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 動作電位（action potential） → 傳到中樞整合 → 客觀＋主觀感覺。",
+            "把判斷依據連回題目：換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（action potential）。\n\n正確選項：受器電位（Receptor potential）。\n感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 動作電位（action potential） → 傳到中樞整合 → 客觀＋主觀感覺。\n\n中文對照：question：換能過程中產生、尚未達閾值的局部電位變化稱為？\nchoices：- 受器電位（receptor potential）\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 終板電位（end-plate potential）"
           ],
-          "answer": "Receptor potential"
+          "answer": "受器電位（receptor potential）\n英文：Receptor potential"
         },
         {
           "type": "practice",
@@ -129,29 +132,31 @@
           "checks": [
             {
               "kind": "single",
-              "q": "What is the definition of an adequate stimulus?",
+              "q": "『adequate stimulus（適宜刺激）』的定義是？\n英文：What is the definition of an adequate stimulus?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "適宜刺激＝對該受器有效的刺激型態與強度。\n\n正確選項：The type and intensity of stimulus that effectively activates a specific receptor。\nAdequate stimulus（適宜刺激）＝能有效刺激特定受器的刺激型態與強度（pattern 與 intensity 都要對）。光不會引發痛覺、不會引發聽覺；視覺需要的是一定波長的電磁波，即可見光 visible light（人類約 370–740 nm）。\n\n中文對照：question：『adequate stimulus（適宜刺激）』的定義是？\nchoices：- 能有效刺激特定受器的刺激型態與強度\n- 最強的刺激\n- 最弱的刺激\n- 任何電磁波",
+              "explain": "適宜刺激＝對該受器有效的刺激型態與強度。\n\n正確選項：能有效刺激特定受器的刺激型態與強度（The type and intensity of stimulus that effectively activates a specific receptor）。\nAdequate stimulus（適宜刺激）＝能有效刺激特定受器的刺激型態與強度（pattern 與 intensity 都要對）。光不會引發痛覺、不會引發聽覺；視覺需要的是一定波長的電磁波，即可見光 visible 光（light）（人類約 370–740 nm）。\n\n中文對照：question：『adequate stimulus（適宜刺激）』的定義是？\nchoices：- 能有效刺激特定受器的刺激型態與強度\n- 最強的刺激\n- 最弱的刺激\n- 任何電磁波",
               "choices": [
-                "The type and intensity of stimulus that effectively activates a specific receptor",
-                "The strongest possible stimulus",
-                "The weakest possible stimulus",
-                "Any electromagnetic wave"
-              ]
+                "能有效刺激特定受器的刺激型態與強度\n英文：The type and intensity of stimulus that effectively activates a specific receptor",
+                "最強的刺激\n英文：The strongest possible stimulus",
+                "最弱的刺激\n英文：The weakest possible stimulus",
+                "任何電磁波\n英文：Any electromagnetic wave"
+              ],
+              "id": "cdd7f56b9"
             },
             {
               "kind": "single",
-              "q": "What is the local, subthreshold potential produced during sensory transduction called?",
+              "q": "換能過程中產生、尚未達閾值的局部電位變化稱為？\n英文：What is the local, subthreshold potential produced during sensory transduction called?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "換能先產生 receptor potential，過閾值才形成 action potential。\n\n正確選項：Receptor potential。\n感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 action potential → 傳到中樞整合 → 客觀＋主觀感覺。\n\n中文對照：question：換能過程中產生、尚未達閾值的局部電位變化稱為？\nchoices：- receptor potential\n- action potential\n- resting potential\n- end-plate potential",
+              "explain": "換能先產生 受器電位（receptor potential），過閾值才形成 動作電位（action potential）。\n\n正確選項：受器電位（Receptor potential）。\n感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 動作電位（action potential） → 傳到中樞整合 → 客觀＋主觀感覺。\n\n中文對照：question：換能過程中產生、尚未達閾值的局部電位變化稱為？\nchoices：- 受器電位（receptor potential）\n- 動作電位（action potential）\n- 靜止膜電位（resting potential）\n- 終板電位（end-plate potential）",
               "choices": [
-                "Receptor potential",
-                "Action potential",
-                "Resting potential",
-                "End-plate potential"
-              ]
+                "受器電位（receptor potential）\n英文：Receptor potential",
+                "動作電位（action potential）\n英文：Action potential",
+                "靜止膜電位（resting potential）\n英文：Resting potential",
+                "終板電位（end-plate potential）\n英文：End-plate potential"
+              ],
+              "id": "c9d50269b"
             }
           ]
         },
@@ -159,29 +164,33 @@
           "type": "recap",
           "points": [
             "五感：vision、hearing、equilibrium、olfaction、gustation",
-            "sensory receptor（簡單）：痛/溫/壓/觸",
+            "感覺（sensory） 受體（receptor）（簡單）：痛/溫/壓/觸",
             "adequate stimulus＝對的刺激型態＋強度",
             "光不會引發痛覺/聽覺（型態不對）",
-            "骨架：刺激 → 換能 → receptor potential → AP → 中樞",
-            "receptor potential＝換能的局部電位（非 AP）",
-            "特殊感覺＝視/聽/平衡/嗅/味（視覺 70%、聽覺 20%）→ 感覺受器(簡單)vs 感覺器官(複雜)→ 適宜刺激(對的型態與強度)→ 換能成電 → receptor potential → 過閾值 → action potential 傳中樞。"
+            "骨架：刺激 → 換能 → 受器電位（receptor potential） → 動作電位（AP） → 中樞",
+            "受器電位（receptor potential）＝換能的局部電位（非 AP）",
+            "特殊感覺＝視/聽/平衡/嗅/味（視覺 70%、聽覺 20%）→ 感覺受器(簡單)vs 感覺器官(複雜)→ 適宜刺激(對的型態與強度)→ 換能成電 → 受器電位（receptor potential） → 過閾值 → 動作電位（action potential） 傳中樞。"
           ],
           "flash": [
             {
-              "front": "五大特殊感覺與 receptor vs organ",
-              "back": "特殊感覺有五大類：vision、hearing、equilibrium、olfaction、gustation。形成感覺的構造分兩種：sensory receptor（受器，結構與換能較簡單，如痛/溫/壓/觸）與 sensory organ（器官，結構與換能較複雜，如視/聽/平衡）。"
+              "front": "五大特殊感覺與 受體（receptor） vs organ",
+              "back": "特殊感覺有五大類：vision、hearing、equilibrium、olfaction、gustation。形成感覺的構造分兩種：感覺（sensory） 受體（receptor）（受器，結構與換能較簡單，如痛/溫/壓/觸）與 感覺（sensory） organ（器官，結構與換能較複雜，如視/聽/平衡）。",
+              "id": "fbe792874"
             },
             {
               "front": "適宜刺激 adequate stimulus 與可見光",
-              "back": "Adequate stimulus（適宜刺激）＝能有效刺激特定受器的刺激型態與強度（pattern 與 intensity 都要對）。光不會引發痛覺、不會引發聽覺；視覺需要的是一定波長的電磁波，即可見光 visible light（人類約 370–740 nm）。"
+              "back": "Adequate stimulus（適宜刺激）＝能有效刺激特定受器的刺激型態與強度（pattern 與 intensity 都要對）。光不會引發痛覺、不會引發聽覺；視覺需要的是一定波長的電磁波，即可見光 visible 光（light）（人類約 370–740 nm）。",
+              "id": "f892fc336"
             },
             {
-              "front": "換能：receptor potential → action potential",
-              "back": "感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 action potential → 傳到中樞整合 → 客觀＋主觀感覺。"
+              "front": "換能：受器電位（receptor potential） → 動作電位（action potential）",
+              "back": "感覺形成的共同步驟：適宜刺激 → 感覺器官換能（transduction，把刺激轉成電）→ 產生短暫的 receptor potential（受器電位）→ 達閾值 → 形成 動作電位（action potential） → 傳到中樞整合 → 客觀＋主觀感覺。",
+              "id": "fd8c5e7e4"
             },
             {
-              "front": "Which is a complex sensory organ rather than a simple sensory receptor?",
-              "back": "視/聽/平衡屬結構複雜的 sensory organ；痛溫壓觸屬 sensory receptor。\n\n正確選項：Vision, hearing, and equilibrium systems。\n特殊感覺有五大類：vision、hearing、equilibrium、olfaction、gustation。形成感覺的構造分兩種：sensory receptor（受器，結構與換能較簡單，如痛/溫/壓/觸）與 sensory organ（器官，結構與換能較複雜，如視/聽/平衡）。\n\n中文對照：question：下列何者屬於 sensory organ（感覺器官，結構複雜）而非 sensory receptor？\nchoices：- 視覺/聽覺/平衡\n- 痛覺\n- 溫度覺\n- 觸覺"
+              "front": "下列何者屬於 感覺（sensory） organ（感覺器官，結構複雜）而非 感覺（sensory） 受體（receptor）？\n英文：Which is a complex sensory organ rather than a simple sensory receptor?",
+              "back": "視/聽/平衡屬結構複雜的 感覺（sensory） organ；痛溫壓觸屬 感覺（sensory） 受體（receptor）。\n\n正確選項：視覺/聽覺/平衡（Vision, hearing, and equilibrium systems）。\n特殊感覺有五大類：vision、hearing、equilibrium、olfaction、gustation。形成感覺的構造分兩種：感覺（sensory） 受體（receptor）（受器，結構與換能較簡單，如痛/溫/壓/觸）與 感覺（sensory） organ（器官，結構與換能較複雜，如視/聽/平衡）。\n\n中文對照：question：下列何者屬於 感覺（sensory） organ（感覺器官，結構複雜）而非 感覺（sensory） 受體（receptor）？\nchoices：- 視覺/聽覺/平衡\n- 痛覺\n- 溫度覺\n- 觸覺",
+              "id": "f12742a44"
             }
           ]
         }
@@ -204,7 +213,7 @@
         {
           "type": "card",
           "title": "凸透鏡成像：上下顛倒、左右相反",
-          "body": "**連到前一觀念**\n眼睛是凸透鏡系統，先記成像規則。\n\n**觀念**\n物體經凸透鏡（convex lens）成像後會上下顛倒、左右相反。眼睛也一樣：視網膜上的影像是倒的、左右相反的。\n\n**為什麼**\n物體遠時光近似平行、聚焦在固定點；物體近時聚焦點後移，需要調節透鏡讓影像重新落在視網膜。後面『為什麼看到的世界是正的』會在視覺路徑解釋（靠 cortex 投射對位，不是把影像導正）。\n\n**考試角度**\n- 凸透鏡成像：上下顛倒、左右相反\n- 視網膜影像是倒的\n- 近物聚焦點後移 → 需要調節\n\n**英文考句**\n- A convex lens forms an image that is inverted (upside-down) and reversed (left-right).",
+          "body": "**連到前一觀念**\n眼睛是凸透鏡系統，先記成像規則。\n\n**觀念**\n物體經凸透鏡（convex lens）成像後會上下顛倒、左右相反。眼睛也一樣：視網膜上的影像是倒的、左右相反的。\n\n**為什麼**\n物體遠時光近似平行、聚焦在固定點；物體近時聚焦點後移，需要調節透鏡讓影像重新落在視網膜。後面『為什麼看到的世界是正的』會在視覺路徑解釋（靠 cortex 投射對位，不是把影像導正）。\n\n**考試角度**\n- 凸透鏡成像：上下顛倒、左右相反\n- 視網膜影像是倒的\n- 近物聚焦點後移 → 需要調節\n\n**中文重點＋英文考句**\n- 凸透鏡成像：上下顛倒、左右相反\n- 視網膜影像是倒的\n- 近物聚焦點後移 → 需要調節\n\n【英文原文】\n- A convex lens forms an image that is inverted (upside-down) and reversed (left-right).",
           "keys": [
             "凸透鏡成像：上下顛倒、左右相反",
             "視網膜影像是倒的",
@@ -215,49 +224,51 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "How is an image oriented when a convex lens focuses it on the retina?",
+          "q": "物體經凸透鏡（眼睛）成像在視網膜上，影像方向是？\n英文：How is an image oriented when a convex lens focuses it on the retina?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "凸透鏡成像上下顛倒、左右相反，視網膜影像是倒的。\n\n正確選項：Upside down and left-right reversed。\n物體經凸透鏡（convex lens）成像後會上下顛倒、左右相反。眼睛也一樣：視網膜上的影像是倒的、左右相反的。\n\n中文對照：question：物體經凸透鏡（眼睛）成像在視網膜上，影像方向是？\nchoices：- 上下顛倒、左右相反\n- 完全正立\n- 只有左右相反\n- 只有上下顛倒",
+          "explain": "凸透鏡成像上下顛倒、左右相反，視網膜影像是倒的。\n\n正確選項：上下顛倒、左右相反（Upside down and left-right reversed）。\n物體經凸透鏡（convex lens）成像後會上下顛倒、左右相反。眼睛也一樣：視網膜上的影像是倒的、左右相反的。\n\n中文對照：question：物體經凸透鏡（眼睛）成像在視網膜上，影像方向是？\nchoices：- 上下顛倒、左右相反\n- 完全正立\n- 只有左右相反\n- 只有上下顛倒",
           "choices": [
-            "Upside down and left-right reversed",
-            "Completely upright",
-            "Only left-right reversed",
-            "Only upside down"
-          ]
+            "上下顛倒、左右相反\n英文：Upside down and left-right reversed",
+            "完全正立\n英文：Completely upright",
+            "只有左右相反\n英文：Only left-right reversed",
+            "只有上下顛倒\n英文：Only upside down"
+          ],
+          "id": "c5d375dff"
         },
         {
           "type": "card",
           "title": "眼球折光與晶狀體調節（看近變厚）",
-          "body": "**連到前一觀念**\n光要聚焦在視網膜，靠一連串折光構造，可調的只有一個。\n\n**觀念**\n光從外到內經過：空氣 → 角膜 cornea → 房水 → 晶狀體 lens → 玻璃體 → 視網膜 retina。整個折光系統中，主要能『調節』的是晶狀體：看近物時晶狀體變厚（折光力增加），看遠物時較扁。\n\n**為什麼**\n看近物時，光聚焦點本來會落在視網膜後方；晶狀體變厚、折光力增加，把影像重新拉回視網膜上。看遠物時光近似平行，不需太多調節，晶狀體較扁。\n\n**考試角度**\n- 折光路徑：角膜 → 房水 → 晶狀體 → 玻璃體 → 視網膜\n- 可調節的是 lens（晶狀體）\n- 看近：lens 變厚（折光↑）；看遠：lens 較扁\n\n**英文考句**\n- Accommodation: the lens thickens (increasing refractive power) to focus on near objects, and flattens for distant objects.\n\n**易錯與比較**\n折光最強的單一構造其實是角膜，但能『調節』的是晶狀體；考調節要答 lens。",
+          "body": "**連到前一觀念**\n光要聚焦在視網膜，靠一連串折光構造，可調的只有一個。\n\n**觀念**\n光從外到內經過：空氣 → 角膜 cornea → 房水 → 晶狀體 透鏡（lens） → 玻璃體 → 視網膜 （retina）。整個折光系統中，主要能『調節』的是晶狀體：看近物時晶狀體變厚（折光力增加），看遠物時較扁。\n\n**為什麼**\n看近物時，光聚焦點本來會落在視網膜後方；晶狀體變厚、折光力增加，把影像重新拉回視網膜上。看遠物時光近似平行，不需太多調節，晶狀體較扁。\n\n**考試角度**\n- 折光路徑：角膜 → 房水 → 晶狀體 → 玻璃體 → 視網膜\n- 可調節的是 透鏡（晶狀體）\n- 看近：透鏡 變厚（折光↑）；看遠：透鏡 較扁\n\n**中文重點＋英文考句**\n- 折光路徑：角膜 → 房水 → 晶狀體 → 玻璃體 → 視網膜\n- 可調節的是 透鏡（lens）（晶狀體）\n- 看近：透鏡 變厚（折光↑）；看遠：透鏡 較扁\n\n【英文原文】\n- Accommodation: the lens thickens (increasing refractive power) to focus on near objects, and flattens for distant objects.\n\n**易錯與比較**\n折光最強的單一構造其實是角膜，但能『調節』的是晶狀體；考調節要答 透鏡（lens）。",
           "keys": [
             "折光路徑：角膜 → 房水 → 晶狀體 → 玻璃體 → 視網膜",
-            "可調節的是 lens（晶狀體）",
-            "看近：lens 變厚（折光↑）；看遠：lens 較扁"
+            "可調節的是 透鏡（lens）（晶狀體）",
+            "看近：透鏡（lens） 變厚（折光↑）；看遠：透鏡（lens） 較扁"
           ],
-          "tip": "折光最強的單一構造其實是角膜，但能『調節』的是晶狀體；考調節要答 lens。"
+          "tip": "折光最強的單一構造其實是角膜，但能『調節』的是晶狀體；考調節要答 透鏡（lens）。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "What happens to the lens when focusing on a near object?",
+          "q": "看近物時，晶狀體 透鏡（lens） 會如何變化？\n英文：What happens to the lens when focusing on a near object?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "看近物時 lens 變厚、折光力增加，讓近物影像聚焦在視網膜上。\n\n正確選項：It becomes thicker, increasing refractive power。\n光從外到內經過：空氣 → 角膜 cornea → 房水 → 晶狀體 lens → 玻璃體 → 視網膜 retina。整個折光系統中，主要能『調節』的是晶狀體：看近物時晶狀體變厚（折光力增加），看遠物時較扁。\n\n中文對照：question：看近物時，晶狀體 lens 會如何變化？\nchoices：- 變厚（折光力增加）\n- 變扁\n- 不變\n- 完全消失",
+          "explain": "看近物時 透鏡（lens） 變厚、折光力增加，讓近物影像聚焦在視網膜上。\n\n正確選項：變厚（折光力增加）（It becomes thicker, increasing refractive power）。\n光從外到內經過：空氣 → 角膜 cornea → 房水 → 晶狀體 透鏡（lens） → 玻璃體 → 視網膜 （retina）。整個折光系統中，主要能『調節』的是晶狀體：看近物時晶狀體變厚（折光力增加），看遠物時較扁。\n\n中文對照：question：看近物時，晶狀體 透鏡（lens） 會如何變化？\nchoices：- 變厚（折光力增加）\n- 變扁\n- 不變\n- 完全消失",
           "choices": [
-            "It becomes thicker, increasing refractive power",
-            "It becomes flatter",
-            "It does not change",
-            "It disappears completely"
-          ]
+            "變厚（折光力增加）\n英文：It becomes thicker, increasing refractive power",
+            "變扁\n英文：It becomes flatter",
+            "不變\n英文：It does not change",
+            "完全消失\n英文：It disappears completely"
+          ],
+          "id": "ca032e741"
         },
         {
           "type": "card",
           "title": "看近物的三個反射",
-          "body": "**連到前一觀念**\n看近物時眼睛同時做三件事，常一起考。\n\n**觀念**\n看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ convergence reflex（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。\n\n**為什麼**\n瞳孔縮小：近物不需太多光，縮小可減少邊緣模糊、增加景深。convergence：兩眼往鼻側轉，讓影像落在兩眼的 fovea centralis（中央凹），否則會 diplopia（複視）。\n\n**考試角度**\n- 看近三反射：lens 變厚、瞳孔縮小、convergence\n- convergence：兩眼往鼻側 → 影像落中央凹\n- 做不好 → diplopia（複視）\n\n**英文考句**\n- Near response (accommodation reflex): lens thickening, pupillary constriction, and convergence of the two eyes.\n- Convergence keeps the image on the fovea; failure causes diplopia.",
+          "body": "**連到前一觀念**\n看近物時眼睛同時做三件事，常一起考。\n\n**觀念**\n看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ 會聚（convergence） 反射（reflex）（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。\n\n**為什麼**\n瞳孔縮小：近物不需太多光，縮小可減少邊緣模糊、增加景深。會聚：兩眼往鼻側轉，讓影像落在兩眼的 中央凹（fovea） centralis（中央凹），否則會 diplopia（複視）。\n\n**考試角度**\n- 看近三反射：透鏡（lens） 變厚、瞳孔縮小、會聚\n- 會聚：兩眼往鼻側 → 影像落中央凹\n- 做不好 → diplopia（複視）\n\n**中文重點＋英文考句**\n- 看近三反射：透鏡（lens） 變厚、瞳孔縮小、會聚（convergence）\n- 會聚：兩眼往鼻側 → 影像落中央凹\n- 做不好 → diplopia（複視）\n\n【英文原文】\n- Near response (accommodation reflex): lens thickening, pupillary constriction, and convergence of the two eyes.\n- Convergence keeps the image on the fovea; failure causes diplopia.",
           "keys": [
-            "看近三反射：lens 變厚、瞳孔縮小、convergence",
-            "convergence：兩眼往鼻側 → 影像落中央凹",
+            "看近三反射：透鏡（lens） 變厚、瞳孔縮小、會聚（convergence）",
+            "會聚（convergence）：兩眼往鼻側 → 影像落中央凹",
             "做不好 → diplopia（複視）"
           ],
           "tip": ""
@@ -265,27 +276,28 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "Which does NOT occur during the near response?",
+          "q": "看近物時，下列何者不是會發生的調節？\n英文：Which does NOT occur during the near response?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "看近物瞳孔是『縮小』；放大是看遠/需要更多光時。\n\n正確選項：Pupil dilation。\n看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ convergence reflex（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。\n\n中文對照：question：看近物時，下列何者不是會發生的調節？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼往鼻側聚合(convergence)",
+          "explain": "看近物瞳孔是『縮小』；放大是看遠/需要更多光時。\n\n正確選項：Pupil dilation。\n看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ 會聚（convergence） 反射（reflex）（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。\n\n中文對照：question：看近物時，下列何者不是會發生的調節？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼往鼻側聚合(convergence)",
           "choices": [
-            "Pupil dilation",
-            "Lens thickening",
-            "Pupil constriction",
-            "Convergence of both eyes"
-          ]
+            "瞳孔放大\n英文：Pupil dilation",
+            "晶狀體變厚\n英文：Lens thickening",
+            "瞳孔縮小\n英文：Pupil constriction",
+            "兩眼 會聚（convergence）\n英文：Convergence of both eyes"
+          ],
+          "id": "cfe687e8a"
         },
         {
           "type": "example",
           "title": "範例拆解：看近物的三個反射",
-          "problem": "Which does NOT occur during the near response?\n\nA. Pupil dilation\nB. Lens thickening\nC. Pupil constriction\nD. Convergence of both eyes",
+          "problem": "看近物時，下列何者不是會發生的調節？（Which does NOT occur during the near response?）\n\nA. Pupil dilation\nB. 透鏡（Lens） thickening\nC. Pupil constriction\nD. 會聚（Convergence） of both eyes",
           "steps": [
             "先確認題目問的主題：看近物的三個反射",
-            "看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ convergence reflex（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。",
-            "把判斷依據連回題目：看近物瞳孔是『縮小』；放大是看遠/需要更多光時。\n\n正確選項：Pupil dilation。\n看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ convergence reflex（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。\n\n中文對照：question：看近物時，下列何者不是會發生的調節？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼往鼻側聚合(convergence)"
+            "看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ 會聚（convergence） 反射（reflex）（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。",
+            "把判斷依據連回題目：看近物瞳孔是『縮小』；放大是看遠/需要更多光時。\n\n正確選項：Pupil dilation。\n看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ 會聚（convergence） 反射（reflex）（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。\n\n中文對照：question：看近物時，下列何者不是會發生的調節？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼往鼻側聚合(convergence)"
           ],
-          "answer": "Pupil dilation"
+          "answer": "瞳孔放大\n英文：Pupil dilation"
         },
         {
           "type": "practice",
@@ -297,29 +309,31 @@
           "checks": [
             {
               "kind": "single",
-              "q": "What happens to the lens when focusing on a near object?",
+              "q": "看近物時，晶狀體 透鏡（lens） 會如何變化？\n英文：What happens to the lens when focusing on a near object?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "看近物時 lens 變厚、折光力增加，讓近物影像聚焦在視網膜上。\n\n正確選項：It becomes thicker, increasing refractive power。\n光從外到內經過：空氣 → 角膜 cornea → 房水 → 晶狀體 lens → 玻璃體 → 視網膜 retina。整個折光系統中，主要能『調節』的是晶狀體：看近物時晶狀體變厚（折光力增加），看遠物時較扁。\n\n中文對照：question：看近物時，晶狀體 lens 會如何變化？\nchoices：- 變厚（折光力增加）\n- 變扁\n- 不變\n- 完全消失",
+              "explain": "看近物時 透鏡（lens） 變厚、折光力增加，讓近物影像聚焦在視網膜上。\n\n正確選項：變厚（折光力增加）（It becomes thicker, increasing refractive power）。\n光從外到內經過：空氣 → 角膜 cornea → 房水 → 晶狀體 透鏡（lens） → 玻璃體 → 視網膜 （retina）。整個折光系統中，主要能『調節』的是晶狀體：看近物時晶狀體變厚（折光力增加），看遠物時較扁。\n\n中文對照：question：看近物時，晶狀體 透鏡（lens） 會如何變化？\nchoices：- 變厚（折光力增加）\n- 變扁\n- 不變\n- 完全消失",
               "choices": [
-                "It becomes thicker, increasing refractive power",
-                "It becomes flatter",
-                "It does not change",
-                "It disappears completely"
-              ]
+                "變厚（折光力增加）\n英文：It becomes thicker, increasing refractive power",
+                "變扁\n英文：It becomes flatter",
+                "不變\n英文：It does not change",
+                "完全消失\n英文：It disappears completely"
+              ],
+              "id": "ca032e741"
             },
             {
               "kind": "single",
-              "q": "Which does NOT occur during the near response?",
+              "q": "看近物時，下列何者不是會發生的調節？\n英文：Which does NOT occur during the near response?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "看近物瞳孔是『縮小』；放大是看遠/需要更多光時。\n\n正確選項：Pupil dilation。\n看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ convergence reflex（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。\n\n中文對照：question：看近物時，下列何者不是會發生的調節？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼往鼻側聚合(convergence)",
+              "explain": "看近物瞳孔是『縮小』；放大是看遠/需要更多光時。\n\n正確選項：Pupil dilation。\n看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ 會聚（convergence） 反射（reflex）（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。\n\n中文對照：question：看近物時，下列何者不是會發生的調節？\nchoices：- 瞳孔放大\n- 晶狀體變厚\n- 瞳孔縮小\n- 兩眼往鼻側聚合(convergence)",
               "choices": [
-                "Pupil dilation",
-                "Lens thickening",
-                "Pupil constriction",
-                "Convergence of both eyes"
-              ]
+                "瞳孔放大\n英文：Pupil dilation",
+                "晶狀體變厚\n英文：Lens thickening",
+                "瞳孔縮小\n英文：Pupil constriction",
+                "兩眼 會聚（convergence）\n英文：Convergence of both eyes"
+              ],
+              "id": "cfe687e8a"
             }
           ]
         },
@@ -329,27 +343,31 @@
             "凸透鏡成像：上下顛倒、左右相反",
             "視網膜影像是倒的",
             "折光路徑：角膜 → 房水 → 晶狀體 → 玻璃體 → 視網膜",
-            "可調節的是 lens（晶狀體）",
-            "看近三反射：lens 變厚、瞳孔縮小、convergence",
-            "convergence：兩眼往鼻側 → 影像落中央凹",
-            "凸透鏡成像上下顛倒左右相反 → 折光路徑 角膜/房水/晶狀體/玻璃體，可調的是晶狀體(看近變厚) → 看近三反射：晶狀體變厚＋瞳孔縮小＋convergence → 近點隨年齡變遠＝老花。"
+            "可調節的是 透鏡（lens）（晶狀體）",
+            "看近三反射：透鏡（lens） 變厚、瞳孔縮小、會聚（convergence）",
+            "會聚（convergence）：兩眼往鼻側 → 影像落中央凹",
+            "凸透鏡成像上下顛倒左右相反 → 折光路徑 角膜/房水/晶狀體/玻璃體，可調的是晶狀體(看近變厚) → 看近三反射：晶狀體變厚＋瞳孔縮小＋會聚（convergence） → 近點隨年齡變遠＝老花。"
           ],
           "flash": [
             {
               "front": "凸透鏡成像：上下顛倒、左右相反",
-              "back": "物體經凸透鏡（convex lens）成像後會上下顛倒、左右相反。眼睛也一樣：視網膜上的影像是倒的、左右相反的。"
+              "back": "物體經凸透鏡（convex lens）成像後會上下顛倒、左右相反。眼睛也一樣：視網膜上的影像是倒的、左右相反的。",
+              "id": "f2c6a4cba"
             },
             {
               "front": "眼球折光與晶狀體調節（看近變厚）",
-              "back": "光從外到內經過：空氣 → 角膜 cornea → 房水 → 晶狀體 lens → 玻璃體 → 視網膜 retina。整個折光系統中，主要能『調節』的是晶狀體：看近物時晶狀體變厚（折光力增加），看遠物時較扁。"
+              "back": "光從外到內經過：空氣 → 角膜 cornea → 房水 → 晶狀體 透鏡（lens） → 玻璃體 → 視網膜 （retina）。整個折光系統中，主要能『調節』的是晶狀體：看近物時晶狀體變厚（折光力增加），看遠物時較扁。",
+              "id": "fdba2cc57"
             },
             {
               "front": "看近物的三個反射",
-              "back": "看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ convergence reflex（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。"
+              "back": "看近物時：① 晶狀體變厚（增加折光）；② 瞳孔縮小（pupil constriction）；③ 會聚（convergence） 反射（reflex）（視軸輻輳反射，兩眼往鼻側聚合）。三者讓近物清楚地落在中央凹。",
+              "id": "feaa80f14"
             },
             {
-              "front": "How is an image oriented when a convex lens focuses it on the retina?",
-              "back": "凸透鏡成像上下顛倒、左右相反，視網膜影像是倒的。\n\n正確選項：Upside down and left-right reversed。\n物體經凸透鏡（convex lens）成像後會上下顛倒、左右相反。眼睛也一樣：視網膜上的影像是倒的、左右相反的。\n\n中文對照：question：物體經凸透鏡（眼睛）成像在視網膜上，影像方向是？\nchoices：- 上下顛倒、左右相反\n- 完全正立\n- 只有左右相反\n- 只有上下顛倒"
+              "front": "物體經凸透鏡（眼睛）成像在視網膜上，影像方向是？\n英文：How is an image oriented when a convex lens focuses it on the retina?",
+              "back": "凸透鏡成像上下顛倒、左右相反，視網膜影像是倒的。\n\n正確選項：上下顛倒、左右相反（Upside down and left-right reversed）。\n物體經凸透鏡（convex lens）成像後會上下顛倒、左右相反。眼睛也一樣：視網膜上的影像是倒的、左右相反的。\n\n中文對照：question：物體經凸透鏡（眼睛）成像在視網膜上，影像方向是？\nchoices：- 上下顛倒、左右相反\n- 完全正立\n- 只有左右相反\n- 只有上下顛倒",
+              "id": "f5d375dff"
             }
           ]
         }
@@ -370,54 +388,56 @@
         {
           "type": "card",
           "title": "遠點、近點與老花",
-          "body": "**連到前一觀念**\n把調節能力量化成遠點、近點，再連到老花。\n\n**觀念**\n遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n\n**為什麼**\n近點隨年齡增加：約 10 歲 ~8.3 cm、20 歲 ~10.8 cm，年輕人約 10 cm。老人晶狀體調節力下降、近點變遠，所以看報紙要拿遠。注意是『看清楚』不是『看得到』。\n\n**考試角度**\n- far point＝看清楚的最遠；near point＝最近\n- near point 取決於晶狀體最大調節力\n- 老花 presbyopia：晶狀體變硬 → 近點變遠\n\n**英文考句**\n- Near point = the closest distance at which an object can be seen clearly; it recedes with age (presbyopia).\n\n**易錯與比較**\n測近點是『看清楚』的最近距離，不是『看得到』。",
+          "body": "**連到前一觀念**\n把調節能力量化成遠點、近點，再連到老花。\n\n**觀念**\n遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n\n**為什麼**\n近點隨年齡增加：約 10 歲 ~8.3 cm、20 歲 ~10.8 cm，年輕人約 10 cm。老人晶狀體調節力下降、近點變遠，所以看報紙要拿遠。注意是『看清楚』不是『看得到』。\n\n**考試角度**\n- 遠點（far point）＝看清楚的最遠；近點（near point）＝最近\n- 近點 取決於晶狀體最大調節力\n- 老花 老花眼：晶狀體變硬 → 近點變遠\n\n**中文重點＋英文考句**\n- 遠點（far point）＝看清楚的最遠；近點（near point）＝最近\n- 近點 取決於晶狀體最大調節力\n- 老花 老花眼（presbyopia）：晶狀體變硬 → 近點變遠\n\n【英文原文】\n- Near point = the closest distance at which an object can be seen clearly; it recedes with age (presbyopia).\n\n**易錯與比較**\n測近點是『看清楚』的最近距離，不是『看得到』。",
           "keys": [
-            "far point＝看清楚的最遠；near point＝最近",
-            "near point 取決於晶狀體最大調節力",
-            "老花 presbyopia：晶狀體變硬 → 近點變遠"
+            "遠點（far point）＝看清楚的最遠；近點（near point）＝最近",
+            "近點（near point） 取決於晶狀體最大調節力",
+            "老花 老花眼（presbyopia）：晶狀體變硬 → 近點變遠"
           ],
           "tip": "測近點是『看清楚』的最近距離，不是『看得到』。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "What is the main cause of presbyopia?",
+          "q": "老人家看近物要拿遠（老花 presbyopia），主因是？\n英文：What is the main cause of presbyopia?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：Reduced lens accommodation and a more distant near point。\n遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平",
+          "explain": "年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）。\n遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平",
           "choices": [
-            "Reduced lens accommodation and a more distant near point",
-            "Retinal detachment",
-            "An excessively large pupil",
-            "Flattening of the cornea"
-          ]
+            "晶狀體調節能力下降、近點變遠\n英文：Reduced lens accommodation and a more distant near point",
+            "視網膜剝離\n英文：Retinal detachment",
+            "瞳孔太大\n英文：An excessively large pupil",
+            "角膜變平\n英文：Flattening of the cornea"
+          ],
+          "id": "c764ab000"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\nWhat is the main cause of presbyopia?\n\nA. Reduced lens accommodation and a more distant near point\nB. Retinal detachment\nC. An excessively large pupil\nD. Flattening of the cornea\n\n**判斷步驟**\n- 先確認題目問的主題：遠點、近點與老花\n- 遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n- 把判斷依據連回題目：年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：Reduced lens accommodation and a more distant near point。\n遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平\n\n**結論與依據**\nReduced lens accommodation and a more distant near point",
+          "body": "**情境**\n老人家看近物要拿遠（老花 presbyopia），主因是？（What is the main cause of presbyopia?）\n\nA. 晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）\nB. 視網膜的（Retinal） detachment\nC. An excessively large pupil\nD. Flattening of the cornea\n\n**判斷步驟**\n- 先確認題目問的主題：遠點、近點與老花\n- 遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n- 把判斷依據連回題目：年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）。\n遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平\n\n**結論與依據**\n晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）",
           "keys": [
-            "Reduced lens accommodation and a more distant near point"
+            "晶狀體調節能力下降、近點變遠\n英文：Reduced lens accommodation and a more distant near point"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "Reduced lens accommodation and a more distant near point",
+          "answer": "晶狀體調節能力下降、近點變遠\n英文：Reduced lens accommodation and a more distant near point",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：遠點、近點與老花\n- 遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n- 把判斷依據連回題目：年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：Reduced lens accommodation and a more distant near point。\n遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平"
+          "explain": "- 先確認題目問的主題：遠點、近點與老花\n- 遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n- 把判斷依據連回題目：年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）。\n遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平",
+          "id": "c9ddd7582"
         },
         {
           "type": "example",
           "title": "範例拆解：遠點、近點與老花",
-          "problem": "What is the main cause of presbyopia?\n\nA. Reduced lens accommodation and a more distant near point\nB. Retinal detachment\nC. An excessively large pupil\nD. Flattening of the cornea",
+          "problem": "老人家看近物要拿遠（老花 presbyopia），主因是？（What is the main cause of presbyopia?）\n\nA. 晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）\nB. 視網膜的（Retinal） detachment\nC. An excessively large pupil\nD. Flattening of the cornea",
           "steps": [
             "先確認題目問的主題：遠點、近點與老花",
-            "遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。",
-            "把判斷依據連回題目：年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：Reduced lens accommodation and a more distant near point。\n遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平"
+            "遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。",
+            "把判斷依據連回題目：年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）。\n遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平"
           ],
-          "answer": "Reduced lens accommodation and a more distant near point"
+          "answer": "晶狀體調節能力下降、近點變遠\n英文：Reduced lens accommodation and a more distant near point"
         },
         {
           "type": "practice",
@@ -429,44 +449,49 @@
           "checks": [
             {
               "kind": "single",
-              "q": "What is the main cause of presbyopia?",
+              "q": "老人家看近物要拿遠（老花 presbyopia），主因是？\n英文：What is the main cause of presbyopia?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：Reduced lens accommodation and a more distant near point。\n遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平",
+              "explain": "年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）。\n遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平",
               "choices": [
-                "Reduced lens accommodation and a more distant near point",
-                "Retinal detachment",
-                "An excessively large pupil",
-                "Flattening of the cornea"
-              ]
+                "晶狀體調節能力下降、近點變遠\n英文：Reduced lens accommodation and a more distant near point",
+                "視網膜剝離\n英文：Retinal detachment",
+                "瞳孔太大\n英文：An excessively large pupil",
+                "角膜變平\n英文：Flattening of the cornea"
+              ],
+              "id": "c764ab000"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "far point＝看清楚的最遠；near point＝最近",
-            "near point 取決於晶狀體最大調節力",
-            "凸透鏡成像上下顛倒左右相反 → 折光路徑 角膜/房水/晶狀體/玻璃體，可調的是晶狀體(看近變厚) → 看近三反射：晶狀體變厚＋瞳孔縮小＋convergence → 近點隨年齡變遠＝老花。",
-            "遠點、近點與老花：far point＝看清楚的最遠；near point＝最近",
-            "年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：Reduced lens accommodation and a more distant near point。\n遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平"
+            "遠點（far point）＝看清楚的最遠；近點（near point）＝最近",
+            "近點（near point） 取決於晶狀體最大調節力",
+            "凸透鏡成像上下顛倒左右相反 → 折光路徑 角膜/房水/晶狀體/玻璃體，可調的是晶狀體(看近變厚) → 看近三反射：晶狀體變厚＋瞳孔縮小＋會聚（convergence） → 近點隨年齡變遠＝老花。",
+            "遠點、近點與老花：遠點（far point）＝看清楚的最遠；近點（near point）＝最近",
+            "年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）。\n遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平"
           ],
           "flash": [
             {
               "front": "遠點、近點與老花",
-              "back": "遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。"
+              "back": "遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。",
+              "id": "f1bd9ef79"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：遠點、近點與老花\n- 遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n- 把判斷依據連回題目：年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：Reduced lens accommodation and a more distant near point。\n遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平"
+              "back": "- 先確認題目問的主題：遠點、近點與老花\n- 遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n- 把判斷依據連回題目：年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）。\n遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平",
+              "id": "f9ddd7582"
             },
             {
-              "front": "What is the main cause of presbyopia?",
-              "back": "年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：Reduced lens accommodation and a more distant near point。\n遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平"
+              "front": "老人家看近物要拿遠（老花 presbyopia），主因是？\n英文：What is the main cause of presbyopia?",
+              "back": "年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）。\n遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平",
+              "id": "f764ab000"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：遠點、近點與老花\n- 遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n- 把判斷依據連回題目：年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：Reduced lens accommodation and a more distant near point。\n遠點 far point＝能看清楚的最遠距離；近點 near point＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 presbyopia。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平"
+              "back": "- 先確認題目問的主題：遠點、近點與老花\n- 遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n- 把判斷依據連回題目：年紀大晶狀體變硬、不易變厚，近點變遠 → 老花。\n\n正確選項：晶狀體調節能力下降、近點變遠（Reduced lens accommodation and a more distant near point）。\n遠點 （far point）＝能看清楚的最遠距離；近點 （near point）＝能看清楚的最近距離（取決於晶狀體最大調節能力）。年紀大後晶狀體變硬、不易變厚，近點變遠 → 看近物要拿遠，即老花 老花眼（presbyopia）。\n\n中文對照：question：老人家看近物要拿遠（老花 presbyopia），主因是？\nchoices：- 晶狀體調節能力下降、近點變遠\n- 視網膜剝離\n- 瞳孔太大\n- 角膜變平",
+              "id": "f9ddd7582"
             }
           ]
         }
@@ -476,73 +501,75 @@
       "id": "ss-photo-1",
       "title": "第 3 站：視覺（二）感光換能（最重要）（1）",
       "goals": [
-        "解釋Rod vs Cone：黑白/暗 vs 彩色/明",
-        "解釋Rhodopsin cycle（視紫質循環）",
-        "解釋★Dark current：暗去極化、光超極化（與神經相反）"
+        "解釋桿狀細胞（Rod） vs 錐狀細胞（Cone）：黑白/暗 vs 彩色/明",
+        "解釋視紫質（Rhodopsin） cycle（視紫質循環）",
+        "解釋★暗處（Dark） current：暗去極化、光超極化（與神經相反）"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 3 站：視覺（二）感光換能（最重要）",
-          "body": "視網膜把光換成電。rod（黑白/暗）與 cone（彩色/明）；rhodopsin cycle；dark current 機制讓感光細胞『暗中去極化、光照超極化』——和一般神經相反。\n\n- rod vs cone：色素、分布、系統。\n- rhodopsin cycle（視紫質循環）與維生素 A。\n- ★dark current：暗去極化釋 NT、光超極化減 NT（與神經相反）。\n- 三原色學說與紅綠色盲。"
+          "body": "視網膜把光換成電。桿狀細胞（rod）（黑白/暗）與 錐狀細胞（cone）（彩色/明）；視紫質（rhodopsin） cycle；暗處（dark） current 機制讓感光細胞『暗中去極化、光照超極化』——和一般神經相反。\n\n- 桿狀細胞 vs 錐狀細胞：色素、分布、系統。\n- 視紫質 cycle（視紫質循環）與維生素 A。\n- ★暗處 current：暗去極化釋 NT、光超極化減 NT（與神經相反）。\n- 三原色學說與紅綠色盲。"
         },
         {
           "type": "card",
-          "title": "Rod vs Cone：黑白/暗 vs 彩色/明",
-          "body": "**連到前一觀念**\n感光細胞有兩套，先把對照記起來。\n\n**觀念**\nRod cell：色素 rhodopsin、黑白視覺、對微弱光敏感、分布在視網膜周邊、多對一連結、屬 scotopic（暗光）系統、解析差。Cone cell：三種 photopsin、彩色視覺、集中在中央凹/黃斑、一對一連結、屬 photopic（明光）系統、解析好。\n\n**為什麼**\nrod 多對一 → 把微弱訊號加總放大（暗處看得到但模糊）；cone 一對一 → 精細（中央凹最清楚）。兩者結構都有 outer/inner segment、cell body、synaptic body；outer segment 內有上千層 membrane disk 載感光色素。\n\n**考試角度**\n- Rod：rhodopsin、黑白、周邊、多對一、scotopic\n- Cone：3 photopsin、彩色、中央凹、一對一、photopic\n- rod 對弱光敏感但解析差；cone 解析好\n\n**英文考句**\n- Rods: rhodopsin, scotopic (night) vision, peripheral, high sensitivity, low resolution.\n- Cones: three photopsins, photopic (color) vision, concentrated at the fovea, high resolution.\n\n**易錯與比較**\n中央凹 fovea 以 cone 為主（最清楚、彩色）；周邊以 rod 為主（暗處偵測）。",
+          "title": "桿狀細胞（Rod） vs 錐狀細胞（Cone）：黑白/暗 vs 彩色/明",
+          "body": "**連到前一觀念**\n感光細胞有兩套，先把對照記起來。\n\n**觀念**\n桿狀細胞（Rod） cell：色素 視紫質（rhodopsin）、黑白視覺、對微弱光敏感、分布在視網膜周邊、多對一連結、屬 暗視的（scotopic）（暗光）系統、解析差。錐狀細胞（Cone） cell：三種 photopsin、彩色視覺、集中在中央凹/黃斑、一對一連結、屬 明視的（photopic）（明光）系統、解析好。\n\n**為什麼**\n桿狀細胞 多對一 → 把微弱訊號加總放大（暗處看得到但模糊）；錐狀細胞 一對一 → 精細（中央凹最清楚）。兩者結構都有 outer/inner segment、細胞本體（cell body）、synaptic body；outer segment 內有上千層 membrane disk 載感光色素。\n\n**考試角度**\n- 桿狀細胞：視紫質、黑白、周邊、多對一、暗視的\n- 錐狀細胞：3 photopsin、彩色、中央凹、一對一、明視的\n- 桿狀細胞 對弱光敏感但解析差；錐狀細胞 解析好\n\n**中文重點＋英文考句**\n- 桿狀細胞（Rod）：視紫質（rhodopsin）、黑白、周邊、多對一、暗視的（scotopic）\n- 錐狀細胞（Cone）：3 photopsin、彩色、中央凹、一對一、明視的（photopic）\n- 桿狀細胞 對弱光敏感但解析差；錐狀細胞 解析好\n\n【英文原文】\n- Rods: rhodopsin, scotopic (night) vision, peripheral, high sensitivity, low resolution.\n- Cones: three photopsins, photopic (color) vision, concentrated at the fovea, high resolution.\n\n**易錯與比較**\n中央凹 （fovea） 以 錐狀細胞（cone） 為主（最清楚、彩色）；周邊以 桿狀細胞（rod） 為主（暗處偵測）。",
           "keys": [
-            "Rod：rhodopsin、黑白、周邊、多對一、scotopic",
-            "Cone：3 photopsin、彩色、中央凹、一對一、photopic",
-            "rod 對弱光敏感但解析差；cone 解析好"
+            "桿狀細胞（Rod）：視紫質（rhodopsin）、黑白、周邊、多對一、暗視的（scotopic）",
+            "錐狀細胞（Cone）：3 photopsin、彩色、中央凹、一對一、明視的（photopic）",
+            "桿狀細胞（rod） 對弱光敏感但解析差；錐狀細胞（cone） 解析好"
           ],
-          "tip": "中央凹 fovea 以 cone 為主（最清楚、彩色）；周邊以 rod 為主（暗處偵測）。"
+          "tip": "中央凹 （fovea） 以 錐狀細胞（cone） 為主（最清楚、彩色）；周邊以 桿狀細胞（rod） 為主（暗處偵測）。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Which photoreceptor provides color vision, is concentrated in the fovea, and has high visual acuity?",
+          "q": "負責彩色視覺、集中在中央凹、解析度高的是？\n英文：Which photoreceptor provides color vision, is concentrated in the fovea, and has high visual acuity?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "cone 形成彩色視覺、集中中央凹、一對一連結、解析好。\n\n正確選項：Cone cell。\nRod cell：色素 rhodopsin、黑白視覺、對微弱光敏感、分布在視網膜周邊、多對一連結、屬 scotopic（暗光）系統、解析差。Cone cell：三種 photopsin、彩色視覺、集中在中央凹/黃斑、一對一連結、屬 photopic（明光）系統、解析好。\n\n中文對照：question：負責彩色視覺、集中在中央凹、解析度高的是？\nchoices：- Cone cell（錐細胞）\n- Rod cell（桿細胞）\n- ganglion cell\n- horizontal cell",
+          "explain": "錐狀細胞（cone） 形成彩色視覺、集中中央凹、一對一連結、解析好。\n\n正確選項：錐狀細胞（Cone） cell。\n桿狀細胞（Rod） cell：色素 視紫質（rhodopsin）、黑白視覺、對微弱光敏感、分布在視網膜周邊、多對一連結、屬 暗視的（scotopic）（暗光）系統、解析差。錐狀細胞（Cone） cell：三種 photopsin、彩色視覺、集中在中央凹/黃斑、一對一連結、屬 明視的（photopic）（明光）系統、解析好。\n\n中文對照：question：負責彩色視覺、集中在中央凹、解析度高的是？\nchoices：- 錐狀細胞（Cone） cell（錐細胞）\n- 桿狀細胞（Rod） cell（桿細胞）\n- 神經節細胞（ganglion cell）\n- 水平細胞（horizontal cell）",
           "choices": [
-            "Cone cell",
-            "Rod cell",
-            "Ganglion cell",
-            "Horizontal cell"
-          ]
+            "錐狀細胞（Cone） cell（錐細胞）\n英文：Cone cell",
+            "桿狀細胞（rod） cell\n英文：Rod cell",
+            "ganglion cell（神經節細胞）\n英文：Ganglion cell",
+            "水平細胞（horizontal cell）\n英文：Horizontal cell"
+          ],
+          "id": "cc62e0ebe"
         },
         {
           "type": "card",
-          "title": "Rhodopsin cycle（視紫質循環）",
-          "body": "**連到前一觀念**\n感光色素怎麼被光改變、又怎麼再生？\n\n**觀念**\nRhodopsin（視紫質）＝opsin（視蛋白）＋11-cis retinal（11-順式視黃醛）。暗處兩者結合成 rhodopsin；光照使 rhodopsin 裂解、構型改變，最後分成 opsin＋all-trans retinal。all-trans retinal 再異構回 11-cis retinal，無光下與 opsin 重新結合成 rhodopsin。這個循環需要維生素 A 補充。\n\n**為什麼**\nretinal 在循環中會消耗，靠 vitamin A 補。缺維生素 A → rhodopsin 再生不足 → 暗處視覺變差 → 夜盲。\n\n**考試角度**\n- rhodopsin＝opsin＋11-cis retinal（暗處結合）\n- 光照：rhodopsin → opsin＋all-trans retinal\n- all-trans → 11-cis（異構）→ 重新結合；需 vitamin A\n\n**英文考句**\n- Rhodopsin = opsin + 11-cis retinal. Light converts it to opsin + all-trans retinal; regeneration requires vitamin A.\n- Vitamin A deficiency impairs rhodopsin regeneration → night blindness.",
+          "title": "視紫質（Rhodopsin） cycle（視紫質循環）",
+          "body": "**連到前一觀念**\n感光色素怎麼被光改變、又怎麼再生？\n\n**觀念**\nRhodopsin（視紫質）＝opsin（視蛋白）＋11-cis retinal（11-順式視黃醛）。暗處兩者結合成 視紫質（rhodopsin）；光照使 視紫質 裂解、構型改變，最後分成 視蛋白（opsin）＋全反式視黃醛（all-trans retinal）。全反式視黃醛 再異構回 11-順式視黃醛（11-cis retinal），無光下與 視蛋白 重新結合成 視紫質。這個循環需要維生素 A 補充。\n\n**為什麼**\n視網膜的（retinal） 在循環中會消耗，靠 維生素 A（vitamin A） 補。缺維生素 A → 視紫質 再生不足 → 暗處視覺變差 → 夜盲。\n\n**考試角度**\n- 視紫質＝視蛋白＋11-順式視黃醛（暗處結合）\n- 光照：視紫質 → 視蛋白＋全反式視黃醛\n- all-trans → 11-cis（異構）→ 重新結合；需 維生素 A\n\n**中文重點＋英文考句**\n- 視紫質（rhodopsin）＝視蛋白（opsin）＋11-順式視黃醛（11-cis retinal）（暗處結合）\n- 光照：視紫質 → 視蛋白＋全反式視黃醛（all-trans retinal）\n- all-trans → 11-cis（異構）→ 重新結合；需 維生素 A（vitamin A）\n\n【英文原文】\n- Rhodopsin = opsin + 11-cis retinal. Light converts it to opsin + all-trans retinal; regeneration requires vitamin A.\n- Vitamin A deficiency impairs rhodopsin regeneration → night blindness.",
           "keys": [
-            "rhodopsin＝opsin＋11-cis retinal（暗處結合）",
-            "光照：rhodopsin → opsin＋all-trans retinal",
-            "all-trans → 11-cis（異構）→ 重新結合；需 vitamin A"
+            "視紫質（rhodopsin）＝視蛋白（opsin）＋11-順式視黃醛（11-cis retinal）（暗處結合）",
+            "光照：視紫質（rhodopsin） → 視蛋白（opsin）＋全反式視黃醛（all-trans retinal）",
+            "all-trans → 11-cis（異構）→ 重新結合；需 維生素 A（vitamin A）"
           ],
           "tip": ""
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Vitamin A deficiency impairs rhodopsin regeneration and most commonly causes?",
+          "q": "缺乏維生素 A 影響 視紫質（rhodopsin） 再生，最易造成？\n英文：Vitamin A deficiency impairs rhodopsin regeneration and most commonly causes?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "vit A 不足 → rhodopsin 再生不足 → 暗處(rod)視覺變差 → 夜盲。\n\n正確選項：Night blindness。\nRhodopsin（視紫質）＝opsin（視蛋白）＋11-cis retinal（11-順式視黃醛）。暗處兩者結合成 rhodopsin；光照使 rhodopsin 裂解、構型改變，最後分成 opsin＋all-trans retinal。all-trans retinal 再異構回 11-cis retinal，無光下與 opsin 重新結合成 rhodopsin。這個循環需要維生素 A 補充。\n\n中文對照：question：缺乏維生素 A 影響 rhodopsin 再生，最易造成？\nchoices：- 夜盲（暗處視覺變差）\n- 色盲\n- 青光眼\n- 白內障",
+          "explain": "vit A 不足 → 視紫質（rhodopsin） 再生不足 → 暗處(rod)視覺變差 → 夜盲。\n\n正確選項：Night blindness。\nRhodopsin（視紫質）＝opsin（視蛋白）＋11-cis retinal（11-順式視黃醛）。暗處兩者結合成 視紫質（rhodopsin）；光照使 視紫質（rhodopsin） 裂解、構型改變，最後分成 視蛋白（opsin）＋全反式視黃醛（all-trans retinal）。全反式視黃醛（all-trans retinal） 再異構回 11-順式視黃醛（11-cis retinal），無光下與 視蛋白（opsin） 重新結合成 視紫質（rhodopsin）。這個循環需要維生素 A 補充。\n\n中文對照：question：缺乏維生素 A 影響 視紫質（rhodopsin） 再生，最易造成？\nchoices：- 夜盲（暗處視覺變差）\n- 色盲\n- 青光眼\n- 白內障",
           "choices": [
-            "Night blindness",
-            "Color blindness",
-            "Glaucoma",
-            "Cataract"
-          ]
+            "夜盲（暗處視覺變差）\n英文：Night blindness",
+            "色盲\n英文：Color blindness",
+            "青光眼\n英文：Glaucoma",
+            "白內障\n英文：Cataract"
+          ],
+          "id": "c13f5ab21"
         },
         {
           "type": "card",
-          "title": "★Dark current：暗去極化、光超極化（與神經相反）（1/2）",
-          "body": "**連到前一觀念**\n這是視覺最重要、最常考（簡答十分）的機制。\n\n**觀念**\n感光細胞 outer segment 有 cGMP-gated Na⁺ channel。\n暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。\n光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。\n\n**為什麼**\n和一般神經剛好相反！一般神經：刺激→去極化→放 NT。\n感光細胞：暗(休息)→去極化→放 NT；\n光(被刺激)→超極化→減 NT。\n兩個反轉都是考點。\nNa-K pump 在 inner segment 維持離子梯度（photoreceptor 是最耗能的細胞之一）。\n\n**考試角度**\n- 暗：cGMP 高 → Na 通道開 → 去極化 → 放 NT\n- 光：rhodopsin→transducin→PDE→cGMP↓ → Na 通道關 → 超極化 → 減 NT\n- 與一般神經相反（暗去極化、光超極化）",
+          "title": "★暗處（Dark） current：暗去極化、光超極化（與神經相反）（1/2）",
+          "body": "**連到前一觀念**\n這是視覺最重要、最常考（簡答十分）的機制。\n\n**觀念**\n感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。\n暗中：環鳥苷酸 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。\n光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸 phosphodiesterase → 環鳥苷酸 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。\n\n**為什麼**\n和一般神經剛好相反！一般神經：刺激→去極化→放 NT。\n感光細胞：暗(休息)→去極化→放 NT；\n光(被刺激)→超極化→減 NT。\n兩個反轉都是考點。\nNa-K pump 在 inner segment 維持離子梯度（photoreceptor 是最耗能的細胞之一）。\n\n**考試角度**\n- 暗：環鳥苷酸 高 → Na 通道開 → 去極化 → 放 NT\n- 光：視紫質→轉導蛋白→磷酸二酯酶（PDE）→環鳥苷酸↓ → Na 通道關 → 超極化 → 減 NT\n- 與一般神經相反（暗去極化、光超極化）",
           "keys": [
-            "暗：cGMP 高 → Na 通道開 → 去極化 → 放 NT",
-            "光：rhodopsin→transducin→PDE→cGMP↓ → Na 通道關 → 超極化 → 減 NT",
+            "暗：環鳥苷酸（cGMP） 高 → Na 通道開 → 去極化 → 放 NT",
+            "光：視紫質（rhodopsin）→轉導蛋白（transducin）→磷酸二酯酶（PDE）→環鳥苷酸（cGMP）↓ → Na 通道關 → 超極化 → 減 NT",
             "與一般神經相反（暗去極化、光超極化）"
           ],
           "tip": "感光細胞『被光刺激＝超極化＝減少 NT』，和一般神經完全相反——這正是最愛考的地方。"
@@ -550,21 +577,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「★Dark current：暗去極化、光超極化（與神經相反）」，並說出一個判斷依據。",
-          "answer": "感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。",
+          "q": "用自己的話說明「★暗處（Dark） current：暗去極化、光超極化（與神經相反）」，並說出一個判斷依據。",
+          "answer": "感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。"
+          "explain": "感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。",
+          "id": "c590ee92b"
         },
         {
           "type": "example",
-          "title": "範例拆解：★Dark current：暗去極化、光超極化（與神經相反）",
-          "problem": "用自己的話說明「★Dark current：暗去極化、光超極化（與神經相反）」，並說出一個判斷依據。",
+          "title": "範例拆解：★暗處（Dark） current：暗去極化、光超極化（與神經相反）",
+          "problem": "用自己的話說明「★暗處（Dark） current：暗去極化、光超極化（與神經相反）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：★Dark current：暗去極化、光超極化（與神經相反）",
-            "感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。",
-            "把判斷依據連回題目：感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。"
+            "先確認題目問的主題：★暗處（Dark） current：暗去極化、光超極化（與神經相反）",
+            "感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。",
+            "把判斷依據連回題目：感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。"
           ],
-          "answer": "感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。"
+          "answer": "感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。"
         },
         {
           "type": "practice",
@@ -576,53 +604,59 @@
           "checks": [
             {
               "kind": "single",
-              "q": "Vitamin A deficiency impairs rhodopsin regeneration and most commonly causes?",
+              "q": "缺乏維生素 A 影響 視紫質（rhodopsin） 再生，最易造成？\n英文：Vitamin A deficiency impairs rhodopsin regeneration and most commonly causes?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "vit A 不足 → rhodopsin 再生不足 → 暗處(rod)視覺變差 → 夜盲。\n\n正確選項：Night blindness。\nRhodopsin（視紫質）＝opsin（視蛋白）＋11-cis retinal（11-順式視黃醛）。暗處兩者結合成 rhodopsin；光照使 rhodopsin 裂解、構型改變，最後分成 opsin＋all-trans retinal。all-trans retinal 再異構回 11-cis retinal，無光下與 opsin 重新結合成 rhodopsin。這個循環需要維生素 A 補充。\n\n中文對照：question：缺乏維生素 A 影響 rhodopsin 再生，最易造成？\nchoices：- 夜盲（暗處視覺變差）\n- 色盲\n- 青光眼\n- 白內障",
+              "explain": "vit A 不足 → 視紫質（rhodopsin） 再生不足 → 暗處(rod)視覺變差 → 夜盲。\n\n正確選項：Night blindness。\nRhodopsin（視紫質）＝opsin（視蛋白）＋11-cis retinal（11-順式視黃醛）。暗處兩者結合成 視紫質（rhodopsin）；光照使 視紫質（rhodopsin） 裂解、構型改變，最後分成 視蛋白（opsin）＋全反式視黃醛（all-trans retinal）。全反式視黃醛（all-trans retinal） 再異構回 11-順式視黃醛（11-cis retinal），無光下與 視蛋白（opsin） 重新結合成 視紫質（rhodopsin）。這個循環需要維生素 A 補充。\n\n中文對照：question：缺乏維生素 A 影響 視紫質（rhodopsin） 再生，最易造成？\nchoices：- 夜盲（暗處視覺變差）\n- 色盲\n- 青光眼\n- 白內障",
               "choices": [
-                "Night blindness",
-                "Color blindness",
-                "Glaucoma",
-                "Cataract"
-              ]
+                "夜盲（暗處視覺變差）\n英文：Night blindness",
+                "色盲\n英文：Color blindness",
+                "青光眼\n英文：Glaucoma",
+                "白內障\n英文：Cataract"
+              ],
+              "id": "c13f5ab21"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「★Dark current：暗去極化、光超極化（與神經相反）」，並說出一個判斷依據。",
-              "answer": "感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。",
+              "q": "用自己的話說明「★暗處（Dark） current：暗去極化、光超極化（與神經相反）」，並說出一個判斷依據。",
+              "answer": "感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。"
+              "explain": "感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。",
+              "id": "c590ee92b"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "Rod：rhodopsin、黑白、周邊、多對一、scotopic",
-            "Cone：3 photopsin、彩色、中央凹、一對一、photopic",
-            "rhodopsin＝opsin＋11-cis retinal（暗處結合）",
-            "光照：rhodopsin → opsin＋all-trans retinal",
-            "暗：cGMP 高 → Na 通道開 → 去極化 → 放 NT",
-            "光：rhodopsin→transducin→PDE→cGMP↓ → Na 通道關 → 超極化 → 減 NT",
-            "rod(rhodopsin/黑白/周邊/多對一/scotopic) vs cone(3 photopsin/彩色/中央凹/一對一/photopic) → rhodopsin＝opsin＋11-cis retinal，光照裂解→循環(需 vit A) → dark current：暗時 cGMP 高→Na 通道開→去極化→放 NT；光照→transducin→PDE→cGMP↓→Na 關→超極化→減 NT（與一般神經相反）→ 三原色學說解釋彩色視覺。"
+            "桿狀細胞（Rod）：視紫質（rhodopsin）、黑白、周邊、多對一、暗視的（scotopic）",
+            "錐狀細胞（Cone）：3 photopsin、彩色、中央凹、一對一、明視的（photopic）",
+            "視紫質（rhodopsin）＝視蛋白（opsin）＋11-順式視黃醛（11-cis retinal）（暗處結合）",
+            "光照：視紫質（rhodopsin） → 視蛋白（opsin）＋全反式視黃醛（all-trans retinal）",
+            "暗：環鳥苷酸（cGMP） 高 → Na 通道開 → 去極化 → 放 NT",
+            "光：視紫質（rhodopsin）→轉導蛋白（transducin）→磷酸二酯酶（PDE）→環鳥苷酸（cGMP）↓ → Na 通道關 → 超極化 → 減 NT",
+            "桿狀細胞（rod）(rhodopsin/黑白/周邊/多對一/scotopic) vs 錐狀細胞（cone）(3 photopsin/彩色/中央凹/一對一/photopic) → 視紫質（rhodopsin）＝視蛋白（opsin）＋11-順式視黃醛（11-cis retinal），光照裂解→循環(需 vit A) → 暗處（dark） current：暗時 環鳥苷酸（cGMP） 高→Na 通道開→去極化→放 NT；光照→轉導蛋白（transducin）→磷酸二酯酶（PDE）→環鳥苷酸（cGMP）↓→Na 關→超極化→減 NT（與一般神經相反）→ 三原色學說解釋彩色視覺。"
           ],
           "flash": [
             {
-              "front": "Rod vs Cone：黑白/暗 vs 彩色/明",
-              "back": "Rod cell：色素 rhodopsin、黑白視覺、對微弱光敏感、分布在視網膜周邊、多對一連結、屬 scotopic（暗光）系統、解析差。Cone cell：三種 photopsin、彩色視覺、集中在中央凹/黃斑、一對一連結、屬 photopic（明光）系統、解析好。"
+              "front": "桿狀細胞（Rod） vs 錐狀細胞（Cone）：黑白/暗 vs 彩色/明",
+              "back": "桿狀細胞（Rod） cell：色素 視紫質（rhodopsin）、黑白視覺、對微弱光敏感、分布在視網膜周邊、多對一連結、屬 暗視的（scotopic）（暗光）系統、解析差。錐狀細胞（Cone） cell：三種 photopsin、彩色視覺、集中在中央凹/黃斑、一對一連結、屬 明視的（photopic）（明光）系統、解析好。",
+              "id": "fe51b079a"
             },
             {
-              "front": "Rhodopsin cycle（視紫質循環）",
-              "back": "Rhodopsin（視紫質）＝opsin（視蛋白）＋11-cis retinal（11-順式視黃醛）。暗處兩者結合成 rhodopsin；光照使 rhodopsin 裂解、構型改變，最後分成 opsin＋all-trans retinal。all-trans retinal 再異構回 11-cis retinal，無光下與 opsin 重新結合成 rhodopsin。這個循環需要維生素 A 補充。"
+              "front": "視紫質（Rhodopsin） cycle（視紫質循環）",
+              "back": "Rhodopsin（視紫質）＝opsin（視蛋白）＋11-cis retinal（11-順式視黃醛）。暗處兩者結合成 視紫質（rhodopsin）；光照使 視紫質（rhodopsin） 裂解、構型改變，最後分成 視蛋白（opsin）＋全反式視黃醛（all-trans retinal）。全反式視黃醛（all-trans retinal） 再異構回 11-順式視黃醛（11-cis retinal），無光下與 視蛋白（opsin） 重新結合成 視紫質（rhodopsin）。這個循環需要維生素 A 補充。",
+              "id": "f57dd7297"
             },
             {
-              "front": "★Dark current：暗去極化、光超極化（與神經相反）",
-              "back": "感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。"
+              "front": "★暗處（Dark） current：暗去極化、光超極化（與神經相反）",
+              "back": "感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。",
+              "id": "fbc8239c1"
             },
             {
-              "front": "Which photoreceptor provides color vision, is concentrated in the fovea, and has high visual acuity?",
-              "back": "cone 形成彩色視覺、集中中央凹、一對一連結、解析好。\n\n正確選項：Cone cell。\nRod cell：色素 rhodopsin、黑白視覺、對微弱光敏感、分布在視網膜周邊、多對一連結、屬 scotopic（暗光）系統、解析差。Cone cell：三種 photopsin、彩色視覺、集中在中央凹/黃斑、一對一連結、屬 photopic（明光）系統、解析好。\n\n中文對照：question：負責彩色視覺、集中在中央凹、解析度高的是？\nchoices：- Cone cell（錐細胞）\n- Rod cell（桿細胞）\n- ganglion cell\n- horizontal cell"
+              "front": "負責彩色視覺、集中在中央凹、解析度高的是？\n英文：Which photoreceptor provides color vision, is concentrated in the fovea, and has high visual acuity?",
+              "back": "錐狀細胞（cone） 形成彩色視覺、集中中央凹、一對一連結、解析好。\n\n正確選項：錐狀細胞（Cone） cell。\n桿狀細胞（Rod） cell：色素 視紫質（rhodopsin）、黑白視覺、對微弱光敏感、分布在視網膜周邊、多對一連結、屬 暗視的（scotopic）（暗光）系統、解析差。錐狀細胞（Cone） cell：三種 photopsin、彩色視覺、集中在中央凹/黃斑、一對一連結、屬 明視的（photopic）（明光）系統、解析好。\n\n中文對照：question：負責彩色視覺、集中在中央凹、解析度高的是？\nchoices：- 錐狀細胞（Cone） cell（錐細胞）\n- 桿狀細胞（Rod） cell（桿細胞）\n- 神經節細胞（ganglion cell）\n- 水平細胞（horizontal cell）",
+              "id": "fc62e0ebe"
             }
           ]
         }
@@ -632,22 +666,22 @@
       "id": "ss-photo-2",
       "title": "第 3 站：視覺（二）感光換能（最重要）（2）",
       "goals": [
-        "解釋★Dark current：暗去極化、光超極化（與神經相反）",
+        "解釋★暗處（Dark） current：暗去極化、光超極化（與神經相反）",
         "解釋三原色學說與紅綠色盲"
       ],
       "steps": [
         {
           "type": "intro",
           "title": "第 3 站：視覺（二）感光換能（最重要）",
-          "body": "視網膜把光換成電。rod（黑白/暗）與 cone（彩色/明）；rhodopsin cycle；dark current 機制讓感光細胞『暗中去極化、光照超極化』——和一般神經相反。\n\n- rod vs cone：色素、分布、系統。\n- rhodopsin cycle（視紫質循環）與維生素 A。\n- ★dark current：暗去極化釋 NT、光超極化減 NT（與神經相反）。\n- 三原色學說與紅綠色盲。"
+          "body": "視網膜把光換成電。桿狀細胞（rod）（黑白/暗）與 錐狀細胞（cone）（彩色/明）；視紫質（rhodopsin） cycle；暗處（dark） current 機制讓感光細胞『暗中去極化、光照超極化』——和一般神經相反。\n\n- 桿狀細胞 vs 錐狀細胞：色素、分布、系統。\n- 視紫質 cycle（視紫質循環）與維生素 A。\n- ★暗處 current：暗去極化釋 NT、光超極化減 NT（與神經相反）。\n- 三原色學說與紅綠色盲。"
         },
         {
           "type": "card",
-          "title": "★Dark current：暗去極化、光超極化（與神經相反）（2/2）",
-          "body": "**英文考句**\n- In the dark, high cGMP keeps Na⁺ channels open (dark current) → the photoreceptor is depolarized and releases neurotransmitter.\n- Light activates rhodopsin → transducin → phosphodiesterase → cGMP falls → Na⁺ channels close → the cell hyperpolarizes and releases less neurotransmitter.\n- This is opposite to a typical neuron (which depolarizes and releases more transmitter when stimulated).\n**易錯與比較**\n感光細胞『被光刺激＝超極化＝減少 NT』，和一般神經完全相反——這正是最愛考的地方。",
+          "title": "★暗處（Dark） current：暗去極化、光超極化（與神經相反）（2/2）",
+          "body": "**中文重點＋英文考句**\n\n\n【英文原文】\n- In the dark, high cGMP keeps Na⁺ channels open (dark current) → the photoreceptor is depolarized and releases neurotransmitter.\n- Light activates rhodopsin → transducin → phosphodiesterase → cGMP falls → Na⁺ channels close → the cell hyperpolarizes and releases less neurotransmitter.\n- This is opposite to a typical neuron (which depolarizes and releases more transmitter when stimulated).\n**易錯與比較**\n感光細胞『被光刺激＝超極化＝減少 NT』，和一般神經完全相反——這正是最愛考的地方。",
           "keys": [
-            "暗：cGMP 高 → Na 通道開 → 去極化 → 放 NT",
-            "光：rhodopsin→transducin→PDE→cGMP↓ → Na 通道關 → 超極化 → 減 NT",
+            "暗：環鳥苷酸（cGMP） 高 → Na 通道開 → 去極化 → 放 NT",
+            "光：視紫質（rhodopsin）→轉導蛋白（transducin）→磷酸二酯酶（PDE）→環鳥苷酸（cGMP）↓ → Na 通道關 → 超極化 → 減 NT",
             "與一般神經相反（暗去極化、光超極化）"
           ],
           "tip": "感光細胞『被光刺激＝超極化＝減少 NT』，和一般神經完全相反——這正是最愛考的地方。"
@@ -655,24 +689,25 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "When light strikes a photoreceptor, how do membrane potential and neurotransmitter release change?",
+          "q": "光照射感光細胞時，膜電位與神經傳遞物釋放如何變化？\n英文：When light strikes a photoreceptor, how do membrane potential and neurotransmitter release change?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "光照 → cGMP↓ → Na 通道關 → 超極化 → 減少釋放 NT（與一般神經相反）。\n\n正確選項：Hyperpolarization and decreased release。\n感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。\n\n中文對照：question：光照射感光細胞時，膜電位與神經傳遞物釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 超極化、釋放增加\n- 去極化、釋放減少",
+          "explain": "光照 → 環鳥苷酸（cGMP）↓ → Na 通道關 → 超極化 → 減少釋放 NT（與一般神經相反）。\n\n正確選項：超極化（Hyperpolarization） and decreased release。\n感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。\n\n中文對照：question：光照射感光細胞時，膜電位與神經傳遞物釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 超極化、釋放增加\n- 去極化、釋放減少",
           "choices": [
-            "Hyperpolarization and decreased release",
-            "Depolarization and increased release",
-            "Hyperpolarization and increased release",
-            "Depolarization and decreased release"
-          ]
+            "超極化、釋放減少\n英文：Hyperpolarization and decreased release",
+            "去極化、釋放增加\n英文：Depolarization and increased release",
+            "超極化、釋放增加\n英文：Hyperpolarization and increased release",
+            "去極化、釋放減少\n英文：Depolarization and decreased release"
+          ],
+          "id": "cb7f54ee3"
         },
         {
           "type": "card",
           "title": "三原色學說與紅綠色盲",
-          "body": "**連到前一觀念**\n只有三種 cone，怎麼看到很多顏色？\n\n**觀念**\n三原色學說 trichromatic theory：三種 cone（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red cone 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。\n\n**為什麼**\n例如藍光主要活化 blue cone → 藍色覺；黃色由 green、red cone 接近 1:1 活化 → 黃色覺。因為 green/red 光譜接近，一個出問題另一個常跟著錯，故紅綠色盲最常見（藍色盲較少）。\n\n**考試角度**\n- 三原色學說：3 種 cone 活化比例 → 中樞判色\n- cone 對應藍/綠/紅；rod 色素是 rhodopsin\n- green/red 光譜重疊 → 紅綠色盲常一起\n\n**英文考句**\n- Trichromatic theory: color is perceived from the ratio of activation of the three cone types (blue/green/red).\n- Green and red cone spectra overlap, so red-green color blindness is the most common.",
+          "body": "**連到前一觀念**\n只有三種 錐狀細胞（cone），怎麼看到很多顏色？\n\n**觀念**\n三原色學說 trichromatic theory：三種 錐狀細胞（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red 錐狀細胞 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。\n\n**為什麼**\n例如藍光主要活化 blue 錐狀細胞 → 藍色覺；黃色由 green、red 錐狀細胞 接近 1:1 活化 → 黃色覺。因為 green/red 光譜接近，一個出問題另一個常跟著錯，故紅綠色盲最常見（藍色盲較少）。\n\n**考試角度**\n- 三原色學說：3 種 錐狀細胞 活化比例 → 中樞判色\n- 錐狀細胞 對應藍/綠/紅；桿狀細胞（rod） 色素是 視紫質（rhodopsin）\n- green/red 光譜重疊 → 紅綠色盲常一起\n\n**中文重點＋英文考句**\n- 三原色學說：3 種 錐狀細胞（cone） 活化比例 → 中樞判色\n- 錐狀細胞 對應藍/綠/紅；桿狀細胞（rod） 色素是 視紫質（rhodopsin）\n- green/red 光譜重疊 → 紅綠色盲常一起\n\n【英文原文】\n- Trichromatic theory: color is perceived from the ratio of activation of the three cone types (blue/green/red).\n- Green and red cone spectra overlap, so red-green color blindness is the most common.",
           "keys": [
-            "三原色學說：3 種 cone 活化比例 → 中樞判色",
-            "cone 對應藍/綠/紅；rod 色素是 rhodopsin",
+            "三原色學說：3 種 錐狀細胞（cone） 活化比例 → 中樞判色",
+            "錐狀細胞（cone） 對應藍/綠/紅；桿狀細胞（rod） 色素是 視紫質（rhodopsin）",
             "green/red 光譜重疊 → 紅綠色盲常一起"
           ],
           "tip": ""
@@ -680,27 +715,28 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "Why do red-green color vision defects commonly occur together?",
+          "q": "為什麼臨床上紅綠色盲常一起出現？\n英文：Why do red-green color vision defects commonly occur together?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "green/red cone 光譜接近重疊，一個出問題另一個常跟著錯。\n\n正確選項：Red and green cone absorption spectra overlap substantially。\n三原色學說 trichromatic theory：三種 cone（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red cone 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。\n\n中文對照：question：為什麼臨床上紅綠色盲常一起出現？\nchoices：- green 與 red cone 的吸收光譜重疊大\n- 藍色 cone 太多\n- rod 太敏感\n- 晶狀體變厚",
+          "explain": "green/red 錐狀細胞（cone） 光譜接近重疊，一個出問題另一個常跟著錯。\n\n正確選項：green 與 red 錐狀細胞（cone） 的吸收光譜重疊大（Red and green cone absorption spectra overlap substantially）。\n三原色學說 trichromatic theory：三種 錐狀細胞（cone）（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red 錐狀細胞（cone） 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。\n\n中文對照：question：為什麼臨床上紅綠色盲常一起出現？\nchoices：- green 與 red 錐狀細胞（cone） 的吸收光譜重疊大\n- 藍色 錐狀細胞（cone） 太多\n- 桿狀細胞（rod） 太敏感\n- 晶狀體變厚",
           "choices": [
-            "Red and green cone absorption spectra overlap substantially",
-            "There are too many blue cones",
-            "Rods are excessively sensitive",
-            "The lens becomes thicker"
-          ]
+            "green 與 red 錐狀細胞（cone） 的吸收光譜重疊大\n英文：Red and green cone absorption spectra overlap substantially",
+            "藍色 錐狀細胞（cone） 太多\n英文：There are too many blue cones",
+            "桿狀細胞（rod） 太敏感\n英文：Rods are excessively sensitive",
+            "晶狀體變厚\n英文：The lens becomes thicker"
+          ],
+          "id": "c96954a3d"
         },
         {
           "type": "example",
           "title": "範例拆解：三原色學說與紅綠色盲",
-          "problem": "Why do red-green color vision defects commonly occur together?\n\nA. Red and green cone absorption spectra overlap substantially\nB. There are too many blue cones\nC. Rods are excessively sensitive\nD. The lens becomes thicker",
+          "problem": "為什麼臨床上紅綠色盲常一起出現？（Why do red-green color vision defects commonly occur together?）\n\nA. green 與 red 錐狀細胞（cone） 的吸收光譜重疊大（Red and green cone absorption spectra overlap substantially）\nB. 藍色 錐狀細胞（cone） 太多（There are too many blue cones）\nC. 桿狀細胞（Rods） are excessively sensitive\nD. The 透鏡（lens） becomes thicker",
           "steps": [
             "先確認題目問的主題：三原色學說與紅綠色盲",
-            "三原色學說 trichromatic theory：三種 cone（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red cone 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。",
-            "把判斷依據連回題目：green/red cone 光譜接近重疊，一個出問題另一個常跟著錯。\n\n正確選項：Red and green cone absorption spectra overlap substantially。\n三原色學說 trichromatic theory：三種 cone（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red cone 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。\n\n中文對照：question：為什麼臨床上紅綠色盲常一起出現？\nchoices：- green 與 red cone 的吸收光譜重疊大\n- 藍色 cone 太多\n- rod 太敏感\n- 晶狀體變厚"
+            "三原色學說 trichromatic theory：三種 錐狀細胞（cone）（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red 錐狀細胞（cone） 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。",
+            "把判斷依據連回題目：green/red 錐狀細胞（cone） 光譜接近重疊，一個出問題另一個常跟著錯。\n\n正確選項：green 與 red 錐狀細胞（cone） 的吸收光譜重疊大（Red and green cone absorption spectra overlap substantially）。\n三原色學說 trichromatic theory：三種 錐狀細胞（cone）（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red 錐狀細胞（cone） 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。\n\n中文對照：question：為什麼臨床上紅綠色盲常一起出現？\nchoices：- green 與 red 錐狀細胞（cone） 的吸收光譜重疊大\n- 藍色 錐狀細胞（cone） 太多\n- 桿狀細胞（rod） 太敏感\n- 晶狀體變厚"
           ],
-          "answer": "Red and green cone absorption spectra overlap substantially"
+          "answer": "green 與 red 錐狀細胞（cone） 的吸收光譜重疊大\n英文：Red and green cone absorption spectra overlap substantially"
         },
         {
           "type": "practice",
@@ -712,57 +748,63 @@
           "checks": [
             {
               "kind": "single",
-              "q": "When light strikes a photoreceptor, how do membrane potential and neurotransmitter release change?",
+              "q": "光照射感光細胞時，膜電位與神經傳遞物釋放如何變化？\n英文：When light strikes a photoreceptor, how do membrane potential and neurotransmitter release change?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "光照 → cGMP↓ → Na 通道關 → 超極化 → 減少釋放 NT（與一般神經相反）。\n\n正確選項：Hyperpolarization and decreased release。\n感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。\n\n中文對照：question：光照射感光細胞時，膜電位與神經傳遞物釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 超極化、釋放增加\n- 去極化、釋放減少",
+              "explain": "光照 → 環鳥苷酸（cGMP）↓ → Na 通道關 → 超極化 → 減少釋放 NT（與一般神經相反）。\n\n正確選項：超極化（Hyperpolarization） and decreased release。\n感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。\n\n中文對照：question：光照射感光細胞時，膜電位與神經傳遞物釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 超極化、釋放增加\n- 去極化、釋放減少",
               "choices": [
-                "Hyperpolarization and decreased release",
-                "Depolarization and increased release",
-                "Hyperpolarization and increased release",
-                "Depolarization and decreased release"
-              ]
+                "超極化、釋放減少\n英文：Hyperpolarization and decreased release",
+                "去極化、釋放增加\n英文：Depolarization and increased release",
+                "超極化、釋放增加\n英文：Hyperpolarization and increased release",
+                "去極化、釋放減少\n英文：Depolarization and decreased release"
+              ],
+              "id": "cb7f54ee3"
             },
             {
               "kind": "single",
-              "q": "Why do red-green color vision defects commonly occur together?",
+              "q": "為什麼臨床上紅綠色盲常一起出現？\n英文：Why do red-green color vision defects commonly occur together?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "green/red cone 光譜接近重疊，一個出問題另一個常跟著錯。\n\n正確選項：Red and green cone absorption spectra overlap substantially。\n三原色學說 trichromatic theory：三種 cone（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red cone 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。\n\n中文對照：question：為什麼臨床上紅綠色盲常一起出現？\nchoices：- green 與 red cone 的吸收光譜重疊大\n- 藍色 cone 太多\n- rod 太敏感\n- 晶狀體變厚",
+              "explain": "green/red 錐狀細胞（cone） 光譜接近重疊，一個出問題另一個常跟著錯。\n\n正確選項：green 與 red 錐狀細胞（cone） 的吸收光譜重疊大（Red and green cone absorption spectra overlap substantially）。\n三原色學說 trichromatic theory：三種 錐狀細胞（cone）（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red 錐狀細胞（cone） 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。\n\n中文對照：question：為什麼臨床上紅綠色盲常一起出現？\nchoices：- green 與 red 錐狀細胞（cone） 的吸收光譜重疊大\n- 藍色 錐狀細胞（cone） 太多\n- 桿狀細胞（rod） 太敏感\n- 晶狀體變厚",
               "choices": [
-                "Red and green cone absorption spectra overlap substantially",
-                "There are too many blue cones",
-                "Rods are excessively sensitive",
-                "The lens becomes thicker"
-              ]
+                "green 與 red 錐狀細胞（cone） 的吸收光譜重疊大\n英文：Red and green cone absorption spectra overlap substantially",
+                "藍色 錐狀細胞（cone） 太多\n英文：There are too many blue cones",
+                "桿狀細胞（rod） 太敏感\n英文：Rods are excessively sensitive",
+                "晶狀體變厚\n英文：The lens becomes thicker"
+              ],
+              "id": "c96954a3d"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "暗：cGMP 高 → Na 通道開 → 去極化 → 放 NT",
-            "光：rhodopsin→transducin→PDE→cGMP↓ → Na 通道關 → 超極化 → 減 NT",
-            "三原色學說：3 種 cone 活化比例 → 中樞判色",
-            "cone 對應藍/綠/紅；rod 色素是 rhodopsin",
-            "rod(rhodopsin/黑白/周邊/多對一/scotopic) vs cone(3 photopsin/彩色/中央凹/一對一/photopic) → rhodopsin＝opsin＋11-cis retinal，光照裂解→循環(需 vit A) → dark current：暗時 cGMP 高→Na 通道開→去極化→放 NT；光照→transducin→PDE→cGMP↓→Na 關→超極化→減 NT（與一般神經相反）→ 三原色學說解釋彩色視覺。"
+            "暗：環鳥苷酸（cGMP） 高 → Na 通道開 → 去極化 → 放 NT",
+            "光：視紫質（rhodopsin）→轉導蛋白（transducin）→磷酸二酯酶（PDE）→環鳥苷酸（cGMP）↓ → Na 通道關 → 超極化 → 減 NT",
+            "三原色學說：3 種 錐狀細胞（cone） 活化比例 → 中樞判色",
+            "錐狀細胞（cone） 對應藍/綠/紅；桿狀細胞（rod） 色素是 視紫質（rhodopsin）",
+            "桿狀細胞（rod）(rhodopsin/黑白/周邊/多對一/scotopic) vs 錐狀細胞（cone）(3 photopsin/彩色/中央凹/一對一/photopic) → 視紫質（rhodopsin）＝視蛋白（opsin）＋11-順式視黃醛（11-cis retinal），光照裂解→循環(需 vit A) → 暗處（dark） current：暗時 環鳥苷酸（cGMP） 高→Na 通道開→去極化→放 NT；光照→轉導蛋白（transducin）→磷酸二酯酶（PDE）→環鳥苷酸（cGMP）↓→Na 關→超極化→減 NT（與一般神經相反）→ 三原色學說解釋彩色視覺。"
           ],
           "flash": [
             {
-              "front": "★Dark current：暗去極化、光超極化（與神經相反）",
-              "back": "感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。"
+              "front": "★暗處（Dark） current：暗去極化、光超極化（與神經相反）",
+              "back": "感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。",
+              "id": "faf11c211"
             },
             {
               "front": "三原色學說與紅綠色盲",
-              "back": "三原色學說 trichromatic theory：三種 cone（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red cone 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。"
+              "back": "三原色學說 trichromatic theory：三種 錐狀細胞（cone）（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red 錐狀細胞（cone） 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。",
+              "id": "f58e35c1e"
             },
             {
-              "front": "When light strikes a photoreceptor, how do membrane potential and neurotransmitter release change?",
-              "back": "光照 → cGMP↓ → Na 通道關 → 超極化 → 減少釋放 NT（與一般神經相反）。\n\n正確選項：Hyperpolarization and decreased release。\n感光細胞 outer segment 有 cGMP-gated Na⁺ channel。暗中：cGMP 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：rhodopsin 活化 transducin（G protein）→ 活化 cGMP phosphodiesterase → cGMP 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。\n\n中文對照：question：光照射感光細胞時，膜電位與神經傳遞物釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 超極化、釋放增加\n- 去極化、釋放減少"
+              "front": "光照射感光細胞時，膜電位與神經傳遞物釋放如何變化？\n英文：When light strikes a photoreceptor, how do membrane potential and neurotransmitter release change?",
+              "back": "光照 → 環鳥苷酸（cGMP）↓ → Na 通道關 → 超極化 → 減少釋放 NT（與一般神經相反）。\n\n正確選項：超極化（Hyperpolarization） and decreased release。\n感光細胞 outer segment 有 環鳥苷酸（cGMP）-gated Na⁺ 通道（channel）。暗中：環鳥苷酸（cGMP） 濃度高 → Na 通道開 → Na 內流（dark current）→ 細胞去極化 → 持續釋放神經傳遞物。光照：視紫質（rhodopsin） 活化 轉導蛋白（transducin）（G protein）→ 活化 環鳥苷酸（cGMP） phosphodiesterase → 環鳥苷酸（cGMP） 降解成 5'-GMP → Na 通道關 → 無內流 → 超極化 → 減少釋放神經傳遞物。\n\n中文對照：question：光照射感光細胞時，膜電位與神經傳遞物釋放如何變化？\nchoices：- 超極化、釋放減少\n- 去極化、釋放增加\n- 超極化、釋放增加\n- 去極化、釋放減少",
+              "id": "fb7f54ee3"
             },
             {
-              "front": "Why do red-green color vision defects commonly occur together?",
-              "back": "green/red cone 光譜接近重疊，一個出問題另一個常跟著錯。\n\n正確選項：Red and green cone absorption spectra overlap substantially。\n三原色學說 trichromatic theory：三種 cone（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red cone 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。\n\n中文對照：question：為什麼臨床上紅綠色盲常一起出現？\nchoices：- green 與 red cone 的吸收光譜重疊大\n- 藍色 cone 太多\n- rod 太敏感\n- 晶狀體變厚"
+              "front": "為什麼臨床上紅綠色盲常一起出現？\n英文：Why do red-green color vision defects commonly occur together?",
+              "back": "green/red 錐狀細胞（cone） 光譜接近重疊，一個出問題另一個常跟著錯。\n\n正確選項：green 與 red 錐狀細胞（cone） 的吸收光譜重疊大（Red and green cone absorption spectra overlap substantially）。\n三原色學說 trichromatic theory：三種 錐狀細胞（cone）（藍/綠/紅，對不同波長敏感）被活化的『比例』不同，訊息傳到中樞後判讀成不同顏色（像調水彩）。green 與 red 錐狀細胞（cone） 的吸收光譜重疊很大，所以臨床上紅綠色盲常一起出現。\n\n中文對照：question：為什麼臨床上紅綠色盲常一起出現？\nchoices：- green 與 red 錐狀細胞（cone） 的吸收光譜重疊大\n- 藍色 錐狀細胞（cone） 太多\n- 桿狀細胞（rod） 太敏感\n- 晶狀體變厚",
+              "id": "f96954a3d"
             }
           ]
         }
@@ -780,87 +822,90 @@
         {
           "type": "intro",
           "title": "第 4 站：視覺（三）視網膜迴路與視覺路徑",
-          "body": "視網膜分層與側抑制；視覺路徑鼻側交叉、顳側不交叉，不同位置受損造成不同視野缺損；primary 與 secondary cortex 對應客觀/主觀。\n\n- 視網膜功能分層與 cone 一對一/rod 多對一、lateral inhibition。\n- 視覺路徑：鼻側交叉、顳側不交叉，與病灶判讀。\n- primary（客觀）vs secondary（主觀）視覺皮質。\n- 幾個視覺生理現象（視力/視野/盲點/明暗適應）。"
+          "body": "視網膜分層與側抑制；視覺路徑鼻側交叉、顳側不交叉，不同位置受損造成不同視野缺損；初級（primary） 與 次級（secondary） 皮質（cortex） 對應客觀/主觀。\n\n- 視網膜功能分層與 錐狀細胞（cone） 一對一/桿狀細胞（rod） 多對一、lateral inhibition。\n- 視覺路徑：鼻側交叉、顳側不交叉，與病灶判讀。\n- 初級（客觀）vs 次級（主觀）視覺皮質。\n- 幾個視覺生理現象（視力/視野/盲點/明暗適應）。"
         },
         {
           "type": "card",
           "title": "視網膜分層、連結與側抑制",
-          "body": "**連到前一觀念**\n光換能後，訊號在視網膜怎麼一層層傳？\n\n**觀念**\n視網膜功能分層（光要先穿過內層才到感光層）：pigment layer（色素層，吸光防反射）→ photoreceptor（rod/cone，產生 receptor potential）→ bipolar cell → ganglion cell（其 axon 匯成 optic nerve 送中樞）。另有 horizontal cell、amacrine cell 做橫向調控。\n\n**為什麼**\ncone 多為一對一（精細），rod 多為多對一（把微弱訊號加總放大）。lateral inhibition（側抑制）透過 horizontal cell 抑制旁邊訊號、強化中間，產生對比 contrast（如黑底亮字更清楚）。\n\n**考試角度**\n- 分層：pigment → photoreceptor → bipolar → ganglion\n- ganglion cell 的 axon → optic nerve；horizontal/amacrine 橫向調控\n- lateral inhibition（側抑制）→ 增強對比 contrast\n\n**英文考句**\n- Retinal layers: pigment → photoreceptor (rod/cone) → bipolar cell → ganglion cell (axons form the optic nerve).\n- Lateral inhibition (via horizontal cells) enhances contrast.",
+          "body": "**連到前一觀念**\n光換能後，訊號在視網膜怎麼一層層傳？\n\n**觀念**\n視網膜功能分層（光要先穿過內層才到感光層）：pigment 層（layer）（色素層，吸光防反射）→ 感光細胞（photoreceptor）（rod/cone，產生 receptor potential）→ 雙極細胞（bipolar cell） → 神經節細胞（ganglion cell）（其 axon 匯成 optic nerve 送中樞）。另有 水平細胞（horizontal cell）、無軸突細胞（amacrine cell） 做橫向調控。\n\n**為什麼**\n錐狀細胞（cone） 多為一對一（精細），桿狀細胞（rod） 多為多對一（把微弱訊號加總放大）。lateral inhibition（側抑制）透過 水平細胞 抑制旁邊訊號、強化中間，產生對比 contrast（如黑底亮字更清楚）。\n\n**考試角度**\n- 分層：pigment → 感光細胞 → 雙極細胞（bipolar） → 神經節（ganglion）\n- 神經節細胞 的 軸突（axon） → 視神經（optic nerve）；水平（horizontal）/amacrine 橫向調控\n- lateral inhibition（側抑制）→ 增強對比 contrast",
           "keys": [
-            "分層：pigment → photoreceptor → bipolar → ganglion",
-            "ganglion cell 的 axon → optic nerve；horizontal/amacrine 橫向調控",
+            "分層：pigment → 感光細胞（photoreceptor） → 雙極細胞（bipolar） → 神經節（ganglion）",
+            "神經節細胞（ganglion cell） 的 軸突（axon） → 視神經（optic nerve）；水平（horizontal）/amacrine 橫向調控",
             "lateral inhibition（側抑制）→ 增強對比 contrast"
           ],
-          "tip": ""
+          "tip": "**中文重點＋英文考句**\n- 分層：pigment → 感光細胞（photoreceptor） → 雙極細胞（bipolar） → 神經節（ganglion）\n- 神經節細胞（ganglion cell） 的 軸突（axon） → 視神經（optic nerve）；水平（horizontal）/amacrine 橫向調控\n- lateral inhibition（側抑制）→ 增強對比 contrast\n\n【英文原文】\n- Retinal layers: pigment → photoreceptor (rod/cone) → bipolar cell → ganglion cell (axons form the optic nerve).\n- Lateral inhibition (via horizontal cells) enhances contrast."
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "Which retinal cell sends axons into the optic nerve to carry signals toward the CNS?",
+          "q": "視網膜中 軸突（axon） 匯集成 視神經（optic nerve）、把訊號送往中樞的是哪種細胞？\n英文：Which retinal cell sends axons into the optic nerve to carry signals toward the CNS?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "ganglion cell 的 axon 匯成視神經送中樞。\n\n正確選項：Ganglion cell。\n視網膜功能分層（光要先穿過內層才到感光層）：pigment layer（色素層，吸光防反射）→ photoreceptor（rod/cone，產生 receptor potential）→ bipolar cell → ganglion cell（其 axon 匯成 optic nerve 送中樞）。另有 horizontal cell、amacrine cell 做橫向調控。\n\n中文對照：question：視網膜中 axon 匯集成 optic nerve、把訊號送往中樞的是哪種細胞？\nchoices：- ganglion cell（神經節細胞）\n- bipolar cell\n- rod cell\n- horizontal cell",
+          "explain": "神經節細胞（ganglion cell） 的 軸突（axon） 匯成視神經送中樞。\n\n正確選項：神經節細胞（Ganglion cell）。\n視網膜功能分層（光要先穿過內層才到感光層）：pigment 層（layer）（色素層，吸光防反射）→ 感光細胞（photoreceptor）（rod/cone，產生 receptor potential）→ 雙極細胞（bipolar cell） → 神經節細胞（ganglion cell）（其 axon 匯成 optic nerve 送中樞）。另有 水平細胞（horizontal cell）、無軸突細胞（amacrine cell） 做橫向調控。\n\n中文對照：question：視網膜中 軸突（axon） 匯集成 視神經（optic nerve）、把訊號送往中樞的是哪種細胞？\nchoices：- ganglion cell（神經節細胞）\n- 雙極細胞（bipolar cell）\n- 桿狀細胞（rod） cell\n- 水平細胞（horizontal cell）",
           "choices": [
-            "Ganglion cell",
-            "Bipolar cell",
-            "Rod cell",
-            "Horizontal cell"
-          ]
+            "ganglion cell（神經節細胞）\n英文：Ganglion cell",
+            "雙極細胞（bipolar cell）\n英文：Bipolar cell",
+            "桿狀細胞（rod） cell\n英文：Rod cell",
+            "水平細胞（horizontal cell）\n英文：Horizontal cell"
+          ],
+          "id": "c6bf6415e"
         },
         {
           "type": "card",
           "title": "視覺路徑：鼻側交叉、顳側不交叉＋病灶判讀（1/2）",
-          "body": "**連到前一觀念**\n視野缺損型態能反推病灶位置，這是必考。\n\n**觀念**\n視覺路徑：retina → optic nerve → optic chiasm → optic tract → visual cortex。\n鼻側 nasal retina 的纖維在 optic chiasm 交叉到對側，顳側 temporal retina 的纖維不交叉。\n不同位置受損 → 不同視野缺損。\n\n**為什麼**\n病灶判讀：① optic nerve 受損 → 該眼整側視野全盲；\n② optic chiasm（中間）受損 → 兩眼顳側視野缺損（bitemporal，因兩眼鼻側交叉纖維被切）；\n③ optic tract 受損 → 對側同名偏盲。\n成像上下顛倒左右相反，所以鼻側 retina 對應顳側視野。\n\n**考試角度**\n- 鼻側纖維交叉(optic chiasm)、顳側不交叉\n- optic nerve 損 → 該眼全盲\n- optic chiasm 損 → 兩眼顳側視野缺損；\noptic tract 損 → 對側偏盲",
+          "body": "**連到前一觀念**\n視野缺損型態能反推病灶位置，這是必考。\n\n**觀念**\n視覺路徑：視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract） → 視覺皮質（visual cortex）。\n鼻側 （nasal） 視網膜 的纖維在 視交叉 交叉到對側，顳側 （temporal） 視網膜 的纖維不交叉。\n不同位置受損 → 不同視野缺損。\n\n**為什麼**\n病灶判讀：① 視神經 受損 → 該眼整側視野全盲；\n② 視交叉（中間）受損 → 兩眼顳側視野缺損（bitemporal，因兩眼鼻側交叉纖維被切）；\n③ 視束 受損 → 對側同名偏盲。\n成像上下顛倒左右相反，所以鼻側 視網膜 對應顳側視野。\n\n**考試角度**\n- 鼻側纖維交叉(optic chiasm)、顳側不交叉\n- 視神經 損 → 該眼全盲\n- 視交叉 損 → 兩眼顳側視野缺損；\n視束 損 → 對側偏盲",
           "keys": [
             "鼻側纖維交叉(optic chiasm)、顳側不交叉",
-            "optic nerve 損 → 該眼全盲",
-            "optic chiasm 損 → 兩眼顳側視野缺損；optic tract 損 → 對側偏盲"
+            "視神經（optic nerve） 損 → 該眼全盲",
+            "視交叉（optic chiasm） 損 → 兩眼顳側視野缺損；視束（optic tract） 損 → 對側偏盲"
           ],
-          "tip": "視野缺損與 retina 側別相反（成像上下顛倒左右相反）；optic chiasm 損 → 缺『顳側』視野。"
+          "tip": "視野缺損與 視網膜（retina） 側別相反（成像上下顛倒左右相反）；視交叉（optic chiasm） 損 → 缺『顳側』視野。"
         },
         {
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「視覺路徑：鼻側交叉、顳側不交叉＋病灶判讀」，並說出一個判斷依據。",
-          "answer": "視覺路徑：retina → optic nerve → optic chiasm → optic tract → visual cortex。鼻側 nasal retina 的纖維在 optic chiasm 交叉到對側，顳側 temporal retina 的纖維不交叉。不同位置受損 → 不同視野缺損。",
+          "answer": "視覺路徑：視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract） → 視覺皮質（visual cortex）。鼻側 （nasal） 視網膜（retina） 的纖維在 視交叉（optic chiasm） 交叉到對側，顳側 （temporal） 視網膜（retina） 的纖維不交叉。不同位置受損 → 不同視野缺損。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "視覺路徑：retina → optic nerve → optic chiasm → optic tract → visual cortex。鼻側 nasal retina 的纖維在 optic chiasm 交叉到對側，顳側 temporal retina 的纖維不交叉。不同位置受損 → 不同視野缺損。"
+          "explain": "視覺路徑：視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract） → 視覺皮質（visual cortex）。鼻側 （nasal） 視網膜（retina） 的纖維在 視交叉（optic chiasm） 交叉到對側，顳側 （temporal） 視網膜（retina） 的纖維不交叉。不同位置受損 → 不同視野缺損。",
+          "id": "c1e4f1919"
         },
         {
           "type": "card",
           "title": "視覺路徑：鼻側交叉、顳側不交叉＋病灶判讀（2/2）",
-          "body": "**英文考句**\n- Nasal retinal fibers cross at the optic chiasm; temporal fibers do not.\n- Optic nerve lesion → blindness of that eye; chiasm lesion → bitemporal field loss; optic tract lesion → contralateral homonymous hemianopia.\n**易錯與比較**\n視野缺損與 retina 側別相反（成像上下顛倒左右相反）；\noptic chiasm 損 → 缺『顳側』視野。",
+          "body": "**中文重點＋英文考句**\n\n\n【英文原文】\n- Nasal retinal fibers cross at the optic chiasm; temporal fibers do not.\n- Optic nerve lesion → blindness of that eye; chiasm lesion → bitemporal field loss; optic tract lesion → contralateral homonymous hemianopia.\n**易錯與比較**\n視野缺損與 retina 側別相反（成像上下顛倒左右相反）；\noptic chiasm 損 → 缺『顳側』視野。",
           "keys": [
             "鼻側纖維交叉(optic chiasm)、顳側不交叉",
-            "optic nerve 損 → 該眼全盲",
-            "optic chiasm 損 → 兩眼顳側視野缺損；optic tract 損 → 對側偏盲"
+            "視神經（optic nerve） 損 → 該眼全盲",
+            "視交叉（optic chiasm） 損 → 兩眼顳側視野缺損；視束（optic tract） 損 → 對側偏盲"
           ],
-          "tip": "視野缺損與 retina 側別相反（成像上下顛倒左右相反）；optic chiasm 損 → 缺『顳側』視野。"
+          "tip": "視野缺損與 視網膜（retina） 側別相反（成像上下顛倒左右相反）；視交叉（optic chiasm） 損 → 缺『顳側』視野。"
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "A midline lesion of the optic chiasm most typically causes?",
+          "q": "視交叉（Optic chiasm） 正中受損最典型造成？\n英文：A midline lesion of the optic chiasm most typically causes?",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n視覺路徑：retina → optic nerve → optic chiasm → optic tract → visual cortex。鼻側 nasal retina 的纖維在 optic chiasm 交叉到對側，顳側 temporal retina 的纖維不交叉。不同位置受損 → 不同視野缺損。\n\n中文對照：question：Optic chiasm（視交叉）正中受損，最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 視力完全正常",
+          "explain": "視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n視覺路徑：視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract） → 視覺皮質（visual cortex）。鼻側 （nasal） 視網膜（retina） 的纖維在 視交叉（optic chiasm） 交叉到對側，顳側 （temporal） 視網膜（retina） 的纖維不交叉。不同位置受損 → 不同視野缺損。\n\n中文對照：question：Optic chiasm（視交叉）正中受損，最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 視力完全正常",
           "choices": [
-            "Bitemporal visual field loss",
-            "Complete blindness in one eye",
-            "Contralateral homonymous hemianopia",
-            "Completely normal vision"
-          ]
+            "兩眼顳側視野缺損(bitemporal)\n英文：Bitemporal visual field loss",
+            "單眼全盲\n英文：Complete blindness in one eye",
+            "對側同名偏盲\n英文：Contralateral homonymous hemianopia",
+            "視力完全正常\n英文：Completely normal vision"
+          ],
+          "id": "c785a11ab"
         },
         {
           "type": "example",
           "title": "範例拆解：視覺路徑：鼻側交叉、顳側不交叉＋病灶判讀",
-          "problem": "A midline lesion of the optic chiasm most typically causes?\n\nA. Bitemporal visual field loss\nB. Complete blindness in one eye\nC. Contralateral homonymous hemianopia\nD. Completely normal vision",
+          "problem": "視交叉（Optic chiasm） 正中受損最典型造成？（A midline lesion of the optic chiasm most typically causes?）\n\nA. Bitemporal 視野（visual field） loss\nB. 單眼全盲（Complete blindness in one eye）\nC. Contralateral 同向偏盲（homonymous hemianopia）\nD. Completely normal vision",
           "steps": [
             "先確認題目問的主題：視覺路徑：鼻側交叉、顳側不交叉＋病灶判讀",
-            "視覺路徑：retina → optic nerve → optic chiasm → optic tract → visual cortex。鼻側 nasal retina 的纖維在 optic chiasm 交叉到對側，顳側 temporal retina 的纖維不交叉。不同位置受損 → 不同視野缺損。",
-            "把判斷依據連回題目：chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n視覺路徑：retina → optic nerve → optic chiasm → optic tract → visual cortex。鼻側 nasal retina 的纖維在 optic chiasm 交叉到對側，顳側 temporal retina 的纖維不交叉。不同位置受損 → 不同視野缺損。\n\n中文對照：question：Optic chiasm（視交叉）正中受損，最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 視力完全正常"
+            "視覺路徑：視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract） → 視覺皮質（visual cortex）。鼻側 （nasal） 視網膜（retina） 的纖維在 視交叉（optic chiasm） 交叉到對側，顳側 （temporal） 視網膜（retina） 的纖維不交叉。不同位置受損 → 不同視野缺損。",
+            "把判斷依據連回題目：視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n視覺路徑：視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract） → 視覺皮質（visual cortex）。鼻側 （nasal） 視網膜（retina） 的纖維在 視交叉（optic chiasm） 交叉到對側，顳側 （temporal） 視網膜（retina） 的纖維不交叉。不同位置受損 → 不同視野缺損。\n\n中文對照：question：Optic chiasm（視交叉）正中受損，最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 視力完全正常"
           ],
-          "answer": "Bitemporal visual field loss"
+          "answer": "兩眼顳側視野缺損(bitemporal)\n英文：Bitemporal visual field loss"
         },
         {
           "type": "practice",
@@ -873,50 +918,56 @@
             {
               "kind": "self",
               "q": "用自己的話說明「視覺路徑：鼻側交叉、顳側不交叉＋病灶判讀」，並說出一個判斷依據。",
-              "answer": "視覺路徑：retina → optic nerve → optic chiasm → optic tract → visual cortex。鼻側 nasal retina 的纖維在 optic chiasm 交叉到對側，顳側 temporal retina 的纖維不交叉。不同位置受損 → 不同視野缺損。",
+              "answer": "視覺路徑：視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract） → 視覺皮質（visual cortex）。鼻側 （nasal） 視網膜（retina） 的纖維在 視交叉（optic chiasm） 交叉到對側，顳側 （temporal） 視網膜（retina） 的纖維不交叉。不同位置受損 → 不同視野缺損。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "視覺路徑：retina → optic nerve → optic chiasm → optic tract → visual cortex。鼻側 nasal retina 的纖維在 optic chiasm 交叉到對側，顳側 temporal retina 的纖維不交叉。不同位置受損 → 不同視野缺損。"
+              "explain": "視覺路徑：視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract） → 視覺皮質（visual cortex）。鼻側 （nasal） 視網膜（retina） 的纖維在 視交叉（optic chiasm） 交叉到對側，顳側 （temporal） 視網膜（retina） 的纖維不交叉。不同位置受損 → 不同視野缺損。",
+              "id": "c1e4f1919"
             },
             {
               "kind": "single",
-              "q": "A midline lesion of the optic chiasm most typically causes?",
+              "q": "視交叉（Optic chiasm） 正中受損最典型造成？\n英文：A midline lesion of the optic chiasm most typically causes?",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "chiasm 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal visual field loss。\n視覺路徑：retina → optic nerve → optic chiasm → optic tract → visual cortex。鼻側 nasal retina 的纖維在 optic chiasm 交叉到對側，顳側 temporal retina 的纖維不交叉。不同位置受損 → 不同視野缺損。\n\n中文對照：question：Optic chiasm（視交叉）正中受損，最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 視力完全正常",
+              "explain": "視交叉（chiasm） 切到兩眼鼻側交叉纖維 → 兩眼顳側視野缺損。\n\n正確選項：Bitemporal 視野（visual field） loss。\n視覺路徑：視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract） → 視覺皮質（visual cortex）。鼻側 （nasal） 視網膜（retina） 的纖維在 視交叉（optic chiasm） 交叉到對側，顳側 （temporal） 視網膜（retina） 的纖維不交叉。不同位置受損 → 不同視野缺損。\n\n中文對照：question：Optic chiasm（視交叉）正中受損，最典型造成？\nchoices：- 兩眼顳側視野缺損(bitemporal)\n- 單眼全盲\n- 對側同名偏盲\n- 視力完全正常",
               "choices": [
-                "Bitemporal visual field loss",
-                "Complete blindness in one eye",
-                "Contralateral homonymous hemianopia",
-                "Completely normal vision"
-              ]
+                "兩眼顳側視野缺損(bitemporal)\n英文：Bitemporal visual field loss",
+                "單眼全盲\n英文：Complete blindness in one eye",
+                "對側同名偏盲\n英文：Contralateral homonymous hemianopia",
+                "視力完全正常\n英文：Completely normal vision"
+              ],
+              "id": "c785a11ab"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "分層：pigment → photoreceptor → bipolar → ganglion",
-            "ganglion cell 的 axon → optic nerve；horizontal/amacrine 橫向調控",
+            "分層：pigment → 感光細胞（photoreceptor） → 雙極細胞（bipolar） → 神經節（ganglion）",
+            "神經節細胞（ganglion cell） 的 軸突（axon） → 視神經（optic nerve）；水平（horizontal）/amacrine 橫向調控",
             "鼻側纖維交叉(optic chiasm)、顳側不交叉",
-            "optic nerve 損 → 該眼全盲",
-            "視網膜：pigment→photoreceptor→bipolar→ganglion(＋horizontal/amacrine 橫向調控)；cone 一對一(精細)、rod 多對一(放大)、lateral inhibition 增對比 → 路徑：鼻側交叉(optic chiasm)、顳側不交叉；optic nerve 病灶→該眼全盲、chiasm→兩眼顳側缺損、tract→對側偏盲 → primary cortex 客觀、secondary 主觀(整合記憶)。"
+            "視神經（optic nerve） 損 → 該眼全盲",
+            "視網膜：pigment→感光細胞（photoreceptor）→雙極細胞（bipolar）→神經節（ganglion）(＋horizontal/amacrine 橫向調控)；錐狀細胞（cone） 一對一(精細)、桿狀細胞（rod） 多對一(放大)、lateral inhibition 增對比 → 路徑：鼻側交叉(optic chiasm)、顳側不交叉；視神經（optic nerve） 病灶→該眼全盲、視交叉（chiasm）→兩眼顳側缺損、神經束（tract）→對側偏盲 → 初級（primary） 皮質（cortex） 客觀、次級（secondary） 主觀(整合記憶)。"
           ],
           "flash": [
             {
               "front": "視網膜分層、連結與側抑制",
-              "back": "視網膜功能分層（光要先穿過內層才到感光層）：pigment layer（色素層，吸光防反射）→ photoreceptor（rod/cone，產生 receptor potential）→ bipolar cell → ganglion cell（其 axon 匯成 optic nerve 送中樞）。另有 horizontal cell、amacrine cell 做橫向調控。"
+              "back": "視網膜功能分層（光要先穿過內層才到感光層）：pigment 層（layer）（色素層，吸光防反射）→ 感光細胞（photoreceptor）（rod/cone，產生 receptor potential）→ 雙極細胞（bipolar cell） → 神經節細胞（ganglion cell）（其 axon 匯成 optic nerve 送中樞）。另有 水平細胞（horizontal cell）、無軸突細胞（amacrine cell） 做橫向調控。",
+              "id": "f3901013c"
             },
             {
               "front": "視覺路徑：鼻側交叉、顳側不交叉＋病灶判讀",
-              "back": "視覺路徑：retina → optic nerve → optic chiasm → optic tract → visual cortex。鼻側 nasal retina 的纖維在 optic chiasm 交叉到對側，顳側 temporal retina 的纖維不交叉。不同位置受損 → 不同視野缺損。"
+              "back": "視覺路徑：視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract） → 視覺皮質（visual cortex）。鼻側 （nasal） 視網膜（retina） 的纖維在 視交叉（optic chiasm） 交叉到對側，顳側 （temporal） 視網膜（retina） 的纖維不交叉。不同位置受損 → 不同視野缺損。",
+              "id": "f8ae26d7a"
             },
             {
               "front": "視覺路徑：鼻側交叉、顳側不交叉＋病灶判讀",
-              "back": "視覺路徑：retina → optic nerve → optic chiasm → optic tract → visual cortex。鼻側 nasal retina 的纖維在 optic chiasm 交叉到對側，顳側 temporal retina 的纖維不交叉。不同位置受損 → 不同視野缺損。"
+              "back": "視覺路徑：視網膜（retina） → 視神經（optic nerve） → 視交叉（optic chiasm） → 視束（optic tract） → 視覺皮質（visual cortex）。鼻側 （nasal） 視網膜（retina） 的纖維在 視交叉（optic chiasm） 交叉到對側，顳側 （temporal） 視網膜（retina） 的纖維不交叉。不同位置受損 → 不同視野缺損。",
+              "id": "f8ae26d7a"
             },
             {
-              "front": "Which retinal cell sends axons into the optic nerve to carry signals toward the CNS?",
-              "back": "ganglion cell 的 axon 匯成視神經送中樞。\n\n正確選項：Ganglion cell。\n視網膜功能分層（光要先穿過內層才到感光層）：pigment layer（色素層，吸光防反射）→ photoreceptor（rod/cone，產生 receptor potential）→ bipolar cell → ganglion cell（其 axon 匯成 optic nerve 送中樞）。另有 horizontal cell、amacrine cell 做橫向調控。\n\n中文對照：question：視網膜中 axon 匯集成 optic nerve、把訊號送往中樞的是哪種細胞？\nchoices：- ganglion cell（神經節細胞）\n- bipolar cell\n- rod cell\n- horizontal cell"
+              "front": "視網膜中 軸突（axon） 匯集成 視神經（optic nerve）、把訊號送往中樞的是哪種細胞？\n英文：Which retinal cell sends axons into the optic nerve to carry signals toward the CNS?",
+              "back": "神經節細胞（ganglion cell） 的 軸突（axon） 匯成視神經送中樞。\n\n正確選項：神經節細胞（Ganglion cell）。\n視網膜功能分層（光要先穿過內層才到感光層）：pigment 層（layer）（色素層，吸光防反射）→ 感光細胞（photoreceptor）（rod/cone，產生 receptor potential）→ 雙極細胞（bipolar cell） → 神經節細胞（ganglion cell）（其 axon 匯成 optic nerve 送中樞）。另有 水平細胞（horizontal cell）、無軸突細胞（amacrine cell） 做橫向調控。\n\n中文對照：question：視網膜中 軸突（axon） 匯集成 視神經（optic nerve）、把訊號送往中樞的是哪種細胞？\nchoices：- ganglion cell（神經節細胞）\n- 雙極細胞（bipolar cell）\n- 桿狀細胞（rod） cell\n- 水平細胞（horizontal cell）",
+              "id": "f6bf6415e"
             }
           ]
         }

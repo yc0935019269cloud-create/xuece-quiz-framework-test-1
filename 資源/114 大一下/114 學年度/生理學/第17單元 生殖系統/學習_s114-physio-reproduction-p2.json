@@ -23,8 +23,8 @@
       "id": "review-extra-3",
       "title": "串連、公式與易錯整合（3）",
       "goals": [
-        "解釋急速重點：Sertoli cell",
-        "解釋急速重點：Testosterone 運輸",
+        "解釋急速重點：塞爾托利氏細胞（Sertoli cell）",
+        "解釋急速重點：睪固酮（Testosterone） 運輸",
         "解釋急速重點：Two-cell, two-gonadotropin"
       ],
       "steps": [
@@ -35,44 +35,46 @@
         },
         {
           "type": "card",
-          "title": "急速重點：Sertoli cell",
-          "body": "**一句話／白話**\n它餵養發育中的精子、築起保護牆、留住高濃度 testosterone，還會回報上游不要再催太多。\n\n**觀念**\n支持/營養 germ cell、blood-testis barrier、分泌 ABP/inhibin、協助 spermatogenesis。\n\n**易錯與比較**\nABP 維持管內高 testosterone。\n\n**口訣**\n餵、擋、留、回報。",
+          "title": "急速重點：塞爾托利氏細胞（Sertoli cell）",
+          "body": "**一句話／白話**\n它餵養發育中的精子、築起保護牆、留住高濃度 睪固酮（testosterone），還會回報上游不要再催太多。\n\n**觀念**\n支持/營養 germ cell、血睪屏障（blood-testis barrier）、分泌 雄激素結合蛋白（ABP）/抑制素（inhibin）、協助 精子生成（spermatogenesis）。\n\n**易錯與比較**\n雄激素結合蛋白 維持管內高 睪固酮。\n\n**口訣**\n餵、擋、留、回報。",
           "keys": [
-            "它餵養發育中的精子、築起保護牆、留住高濃度 testosterone，還會回報上游不要再催太多。"
+            "它餵養發育中的精子、築起保護牆、留住高濃度 睪固酮（testosterone），還會回報上游不要再催太多。"
           ],
           "tip": "口訣：餵、擋、留、回報。"
         },
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：Sertoli cell」，並說出一個判斷依據。",
-          "answer": "支持/營養 germ cell、blood-testis barrier、分泌 ABP/inhibin、協助 spermatogenesis。",
+          "q": "用自己的話說明「急速重點：塞爾托利氏細胞（Sertoli cell）」，並說出一個判斷依據。",
+          "answer": "支持/營養 germ cell、血睪屏障（blood-testis barrier）、分泌 雄激素結合蛋白（ABP）/抑制素（inhibin）、協助 精子生成（spermatogenesis）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "支持/營養 germ cell、blood-testis barrier、分泌 ABP/inhibin、協助 spermatogenesis。"
+          "explain": "支持/營養 germ cell、血睪屏障（blood-testis barrier）、分泌 雄激素結合蛋白（ABP）/抑制素（inhibin）、協助 精子生成（spermatogenesis）。",
+          "id": "ce97e4f73"
         },
         {
           "type": "card",
-          "title": "急速重點：Testosterone 運輸",
-          "body": "**一句話／白話**\ntestosterone 在一般血液中搭一種運輸蛋白；進入製造精子的管子後，改由 Sertoli 做的蛋白留住。\n\n**觀念**\n一般血液中主要與 SHBG 結合；seminiferous tubule 內靠 ABP。\n\n**易錯與比較**\n主要 transport protein：SHBG。\n\n**口訣**\n血裡一台，小管另一台。",
+          "title": "急速重點：睪固酮（Testosterone） 運輸",
+          "body": "**一句話／白話**\n睪固酮（testosterone） 在一般血液中搭一種運輸蛋白；進入製造精子的管子後，改由 塞爾托利氏細胞（Sertoli） 做的蛋白留住。\n\n**觀念**\n一般血液中主要與 SHBG 結合；曲細精管（seminiferous tubule） 內靠 雄激素結合蛋白（ABP）。\n\n**易錯與比較**\n主要 transport protein：SHBG。\n\n**口訣**\n血裡一台，小管另一台。",
           "keys": [
-            "testosterone 在一般血液中搭一種運輸蛋白；進入製造精子的管子後，改由 Sertoli 做的蛋白留住。"
+            "睪固酮（testosterone） 在一般血液中搭一種運輸蛋白；進入製造精子的管子後，改由 塞爾托利氏細胞（Sertoli） 做的蛋白留住。"
           ],
           "tip": "口訣：血裡一台，小管另一台。"
         },
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：Testosterone 運輸」，並說出一個判斷依據。",
-          "answer": "一般血液中主要與 SHBG 結合；seminiferous tubule 內靠 ABP。",
+          "q": "用自己的話說明「急速重點：睪固酮（Testosterone） 運輸」，並說出一個判斷依據。",
+          "answer": "一般血液中主要與 SHBG 結合；曲細精管（seminiferous tubule） 內靠 雄激素結合蛋白（ABP）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "一般血液中主要與 SHBG 結合；seminiferous tubule 內靠 ABP。"
+          "explain": "一般血液中主要與 SHBG 結合；曲細精管（seminiferous tubule） 內靠 雄激素結合蛋白（ABP）。",
+          "id": "ca190349f"
         },
         {
           "type": "card",
           "title": "急速重點：Two-cell, two-gonadotropin",
-          "body": "**一句話／白話**\n外層細胞先在 LH 命令下做原料；內層細胞再受 FSH 命令，把原料改成 estrogen。\n\n**觀念**\nLH→theca→androgen；androgen 進 granulosa，FSH 促 aromatase→estrogen。\n\n**易錯與比較**\ntheca 造 androgen；granulosa 造 estrogen。\n\n**口訣**\n外層做原料，內層做成品。",
+          "body": "**一句話／白話**\n外層細胞先在 黃體生成素（LH） 命令下做原料；內層細胞再受 濾泡刺激素（FSH） 命令，把原料改成 雌激素（estrogen）。\n\n**觀念**\n黃體生成素→卵泡膜細胞（theca）→雄激素（androgen）；雄激素 進 顆粒細胞（granulosa），濾泡刺激素 促 芳香環酶（aromatase）→雌激素。\n\n**易錯與比較**\n卵泡膜細胞 造 雄激素；顆粒細胞 造 雌激素。\n\n**口訣**\n外層做原料，內層做成品。",
           "keys": [
-            "外層細胞先在 LH 命令下做原料；內層細胞再受 FSH 命令，把原料改成 estrogen。"
+            "外層細胞先在 黃體生成素（LH） 命令下做原料；內層細胞再受 濾泡刺激素（FSH） 命令，把原料改成 雌激素（estrogen）。"
           ],
           "tip": "口訣：外層做原料，內層做成品。"
         },
@@ -80,9 +82,10 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：Two-cell, two-gonadotropin」，並說出一個判斷依據。",
-          "answer": "LH→theca→androgen；androgen 進 granulosa，FSH 促 aromatase→estrogen。",
+          "answer": "黃體生成素（LH）→卵泡膜細胞（theca）→雄激素（androgen）；雄激素（androgen） 進 顆粒細胞（granulosa），濾泡刺激素（FSH） 促 芳香環酶（aromatase）→雌激素（estrogen）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "LH→theca→androgen；androgen 進 granulosa，FSH 促 aromatase→estrogen。"
+          "explain": "黃體生成素（LH）→卵泡膜細胞（theca）→雄激素（androgen）；雄激素（androgen） 進 顆粒細胞（granulosa），濾泡刺激素（FSH） 促 芳香環酶（aromatase）→雌激素（estrogen）。",
+          "id": "cb7e3b3e5"
         },
         {
           "type": "example",
@@ -90,10 +93,10 @@
           "problem": "用自己的話說明「急速重點：Two-cell, two-gonadotropin」，並說出一個判斷依據。",
           "steps": [
             "先確認題目問的主題：急速重點：Two-cell, two-gonadotropin",
-            "LH→theca→androgen；androgen 進 granulosa，FSH 促 aromatase→estrogen。",
-            "把判斷依據連回題目：LH→theca→androgen；androgen 進 granulosa，FSH 促 aromatase→estrogen。"
+            "黃體生成素（LH）→卵泡膜細胞（theca）→雄激素（androgen）；雄激素（androgen） 進 顆粒細胞（granulosa），濾泡刺激素（FSH） 促 芳香環酶（aromatase）→雌激素（estrogen）。",
+            "把判斷依據連回題目：黃體生成素（LH）→卵泡膜細胞（theca）→雄激素（androgen）；雄激素（androgen） 進 顆粒細胞（granulosa），濾泡刺激素（FSH） 促 芳香環酶（aromatase）→雌激素（estrogen）。"
           ],
-          "answer": "LH→theca→androgen；androgen 進 granulosa，FSH 促 aromatase→estrogen。"
+          "answer": "黃體生成素（LH）→卵泡膜細胞（theca）→雄激素（androgen）；雄激素（androgen） 進 顆粒細胞（granulosa），濾泡刺激素（FSH） 促 芳香環酶（aromatase）→雌激素（estrogen）。"
         },
         {
           "type": "practice",
@@ -105,45 +108,51 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：Testosterone 運輸」，並說出一個判斷依據。",
-              "answer": "一般血液中主要與 SHBG 結合；seminiferous tubule 內靠 ABP。",
+              "q": "用自己的話說明「急速重點：睪固酮（Testosterone） 運輸」，並說出一個判斷依據。",
+              "answer": "一般血液中主要與 SHBG 結合；曲細精管（seminiferous tubule） 內靠 雄激素結合蛋白（ABP）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "一般血液中主要與 SHBG 結合；seminiferous tubule 內靠 ABP。"
+              "explain": "一般血液中主要與 SHBG 結合；曲細精管（seminiferous tubule） 內靠 雄激素結合蛋白（ABP）。",
+              "id": "ca190349f"
             },
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：Two-cell, two-gonadotropin」，並說出一個判斷依據。",
-              "answer": "LH→theca→androgen；androgen 進 granulosa，FSH 促 aromatase→estrogen。",
+              "answer": "黃體生成素（LH）→卵泡膜細胞（theca）→雄激素（androgen）；雄激素（androgen） 進 顆粒細胞（granulosa），濾泡刺激素（FSH） 促 芳香環酶（aromatase）→雌激素（estrogen）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "LH→theca→androgen；androgen 進 granulosa，FSH 促 aromatase→estrogen。"
+              "explain": "黃體生成素（LH）→卵泡膜細胞（theca）→雄激素（androgen）；雄激素（androgen） 進 顆粒細胞（granulosa），濾泡刺激素（FSH） 促 芳香環酶（aromatase）→雌激素（estrogen）。",
+              "id": "cb7e3b3e5"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "它餵養發育中的精子、築起保護牆、留住高濃度 testosterone，還會回報上游不要再催太多。",
-            "testosterone 在一般血液中搭一種運輸蛋白；進入製造精子的管子後，改由 Sertoli 做的蛋白留住。",
-            "外層細胞先在 LH 命令下做原料；內層細胞再受 FSH 命令，把原料改成 estrogen。",
-            "急速重點：Sertoli cell：它餵養發育中的精子、築起保護牆、留住高濃度 testosterone，還會回報上游不要再催太多。",
-            "急速重點：Testosterone 運輸：testosterone 在一般血液中搭一種運輸蛋白；進入製造精子的管子後，改由 Sertoli 做的蛋白留住。"
+            "它餵養發育中的精子、築起保護牆、留住高濃度 睪固酮（testosterone），還會回報上游不要再催太多。",
+            "睪固酮（testosterone） 在一般血液中搭一種運輸蛋白；進入製造精子的管子後，改由 塞爾托利氏細胞（Sertoli） 做的蛋白留住。",
+            "外層細胞先在 黃體生成素（LH） 命令下做原料；內層細胞再受 濾泡刺激素（FSH） 命令，把原料改成 雌激素（estrogen）。",
+            "急速重點：塞爾托利氏細胞（Sertoli cell）：它餵養發育中的精子、築起保護牆、留住高濃度 睪固酮（testosterone），還會回報上游不要再催太多。",
+            "急速重點：睪固酮（Testosterone） 運輸：睪固酮（testosterone） 在一般血液中搭一種運輸蛋白；進入製造精子的管子後，改由 塞爾托利氏細胞（Sertoli） 做的蛋白留住。"
           ],
           "flash": [
             {
-              "front": "急速重點：Sertoli cell",
-              "back": "它餵養發育中的精子、築起保護牆、留住高濃度 testosterone，還會回報上游不要再催太多。"
+              "front": "急速重點：塞爾托利氏細胞（Sertoli cell）",
+              "back": "它餵養發育中的精子、築起保護牆、留住高濃度 睪固酮（testosterone），還會回報上游不要再催太多。",
+              "id": "f9155be92"
             },
             {
-              "front": "急速重點：Testosterone 運輸",
-              "back": "testosterone 在一般血液中搭一種運輸蛋白；進入製造精子的管子後，改由 Sertoli 做的蛋白留住。"
+              "front": "急速重點：睪固酮（Testosterone） 運輸",
+              "back": "睪固酮（testosterone） 在一般血液中搭一種運輸蛋白；進入製造精子的管子後，改由 塞爾托利氏細胞（Sertoli） 做的蛋白留住。",
+              "id": "fccc91426"
             },
             {
               "front": "急速重點：Two-cell, two-gonadotropin",
-              "back": "外層細胞先在 LH 命令下做原料；內層細胞再受 FSH 命令，把原料改成 estrogen。"
+              "back": "外層細胞先在 黃體生成素（LH） 命令下做原料；內層細胞再受 濾泡刺激素（FSH） 命令，把原料改成 雌激素（estrogen）。",
+              "id": "f02f96b8f"
             },
             {
-              "front": "用自己的話說明「急速重點：Sertoli cell」，並說出一個判斷依據。",
-              "back": "支持/營養 germ cell、blood-testis barrier、分泌 ABP/inhibin、協助 spermatogenesis。"
+              "front": "用自己的話說明「急速重點：塞爾托利氏細胞（Sertoli cell）」，並說出一個判斷依據。",
+              "back": "支持/營養 germ cell、血睪屏障（blood-testis barrier）、分泌 雄激素結合蛋白（ABP）/抑制素（inhibin）、協助 精子生成（spermatogenesis）。",
+              "id": "fe97e4f73"
             }
           ]
         }
@@ -154,7 +163,7 @@
       "title": "串連、公式與易錯整合（4）",
       "goals": [
         "解釋急速重點：排卵與週期",
-        "解釋急速重點：hCG 功能"
+        "解釋急速重點：人類絨毛膜促性腺激素（hCG） 功能"
       ],
       "steps": [
         {
@@ -165,7 +174,7 @@
         {
           "type": "card",
           "title": "急速重點：排卵與週期",
-          "body": "**一句話／白話**\n不是每個人都固定在週期第十四天排卵；比較穩的是排卵後大約十四天才來月經。\n\n**觀念**\n排卵約在下一次月經前14天；高 estradiol 正回饋→LH surge→ovulation。\n\n**易錯與比較**\n不是固定週期第14天。\n\n**口訣**\n從下次月經往前倒數。",
+          "body": "**一句話／白話**\n不是每個人都固定在週期第十四天排卵；比較穩的是排卵後大約十四天才來月經。\n\n**觀念**\n排卵約在下一次月經前14天；高 雌二醇（estradiol） 正回饋→黃體生成素高峰（LH surge）→排卵（ovulation）。\n\n**易錯與比較**\n不是固定週期第14天。\n\n**口訣**\n從下次月經往前倒數。",
           "keys": [
             "不是每個人都固定在週期第十四天排卵；比較穩的是排卵後大約十四天才來月經。"
           ],
@@ -175,37 +184,39 @@
           "type": "check",
           "kind": "self",
           "q": "用自己的話說明「急速重點：排卵與週期」，並說出一個判斷依據。",
-          "answer": "排卵約在下一次月經前14天；高 estradiol 正回饋→LH surge→ovulation。",
+          "answer": "排卵約在下一次月經前14天；高 雌二醇（estradiol） 正回饋→黃體生成素高峰（LH surge）→排卵（ovulation）。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "排卵約在下一次月經前14天；高 estradiol 正回饋→LH surge→ovulation。"
+          "explain": "排卵約在下一次月經前14天；高 雌二醇（estradiol） 正回饋→黃體生成素高峰（LH surge）→排卵（ovulation）。",
+          "id": "ccaca7907"
         },
         {
           "type": "card",
-          "title": "急速重點：hCG 功能",
-          "body": "**一句話／白話**\n懷孕初期胎盤還沒完全接手，胚胎先放出類似 LH 的訊號，叫黃體繼續製造 progesterone。\n\n**觀念**\n早期胚胎/胎盤 hCG 類似 LH，維持 corpus luteum 與 progesterone，直到 placenta 接手。\n\n**易錯與比較**\n驗孕測 hCG；排卵試紙測 LH。\n\n**口訣**\n先續約黃體，再由胎盤接班。",
+          "title": "急速重點：人類絨毛膜促性腺激素（hCG） 功能",
+          "body": "**一句話／白話**\n懷孕初期胎盤還沒完全接手，胚胎先放出類似 黃體生成素（LH） 的訊號，叫黃體繼續製造 黃體素（progesterone）。\n\n**觀念**\n早期胚胎/胎盤 人類絨毛膜促性腺激素（hCG） 類似 黃體生成素，維持 黃體（corpus luteum） 與 黃體素，直到 胎盤（placenta） 接手。\n\n**易錯與比較**\n驗孕測 人類絨毛膜促性腺激素；排卵試紙測 黃體生成素。\n\n**口訣**\n先續約黃體，再由胎盤接班。",
           "keys": [
-            "懷孕初期胎盤還沒完全接手，胚胎先放出類似 LH 的訊號，叫黃體繼續製造 progesterone。"
+            "懷孕初期胎盤還沒完全接手，胚胎先放出類似 黃體生成素（LH） 的訊號，叫黃體繼續製造 黃體素（progesterone）。"
           ],
           "tip": "口訣：先續約黃體，再由胎盤接班。"
         },
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「急速重點：hCG 功能」，並說出一個判斷依據。",
-          "answer": "早期胚胎/胎盤 hCG 類似 LH，維持 corpus luteum 與 progesterone，直到 placenta 接手。",
+          "q": "用自己的話說明「急速重點：人類絨毛膜促性腺激素（hCG） 功能」，並說出一個判斷依據。",
+          "answer": "早期胚胎/胎盤 人類絨毛膜促性腺激素（hCG） 類似 黃體生成素（LH），維持 黃體（corpus luteum） 與 黃體素（progesterone），直到 胎盤（placenta） 接手。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "早期胚胎/胎盤 hCG 類似 LH，維持 corpus luteum 與 progesterone，直到 placenta 接手。"
+          "explain": "早期胚胎/胎盤 人類絨毛膜促性腺激素（hCG） 類似 黃體生成素（LH），維持 黃體（corpus luteum） 與 黃體素（progesterone），直到 胎盤（placenta） 接手。",
+          "id": "c702ce667"
         },
         {
           "type": "example",
-          "title": "範例拆解：急速重點：hCG 功能",
-          "problem": "用自己的話說明「急速重點：hCG 功能」，並說出一個判斷依據。",
+          "title": "範例拆解：急速重點：人類絨毛膜促性腺激素（hCG） 功能",
+          "problem": "用自己的話說明「急速重點：人類絨毛膜促性腺激素（hCG） 功能」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：急速重點：hCG 功能",
-            "早期胚胎/胎盤 hCG 類似 LH，維持 corpus luteum 與 progesterone，直到 placenta 接手。",
-            "把判斷依據連回題目：早期胚胎/胎盤 hCG 類似 LH，維持 corpus luteum 與 progesterone，直到 placenta 接手。"
+            "先確認題目問的主題：急速重點：人類絨毛膜促性腺激素（hCG） 功能",
+            "早期胚胎/胎盤 人類絨毛膜促性腺激素（hCG） 類似 黃體生成素（LH），維持 黃體（corpus luteum） 與 黃體素（progesterone），直到 胎盤（placenta） 接手。",
+            "把判斷依據連回題目：早期胚胎/胎盤 人類絨毛膜促性腺激素（hCG） 類似 黃體生成素（LH），維持 黃體（corpus luteum） 與 黃體素（progesterone），直到 胎盤（placenta） 接手。"
           ],
-          "answer": "早期胚胎/胎盤 hCG 類似 LH，維持 corpus luteum 與 progesterone，直到 placenta 接手。"
+          "answer": "早期胚胎/胎盤 人類絨毛膜促性腺激素（hCG） 類似 黃體生成素（LH），維持 黃體（corpus luteum） 與 黃體素（progesterone），直到 胎盤（placenta） 接手。"
         },
         {
           "type": "practice",
@@ -218,16 +229,18 @@
             {
               "kind": "self",
               "q": "用自己的話說明「急速重點：排卵與週期」，並說出一個判斷依據。",
-              "answer": "排卵約在下一次月經前14天；高 estradiol 正回饋→LH surge→ovulation。",
+              "answer": "排卵約在下一次月經前14天；高 雌二醇（estradiol） 正回饋→黃體生成素高峰（LH surge）→排卵（ovulation）。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "排卵約在下一次月經前14天；高 estradiol 正回饋→LH surge→ovulation。"
+              "explain": "排卵約在下一次月經前14天；高 雌二醇（estradiol） 正回饋→黃體生成素高峰（LH surge）→排卵（ovulation）。",
+              "id": "ccaca7907"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「急速重點：hCG 功能」，並說出一個判斷依據。",
-              "answer": "早期胚胎/胎盤 hCG 類似 LH，維持 corpus luteum 與 progesterone，直到 placenta 接手。",
+              "q": "用自己的話說明「急速重點：人類絨毛膜促性腺激素（hCG） 功能」，並說出一個判斷依據。",
+              "answer": "早期胚胎/胎盤 人類絨毛膜促性腺激素（hCG） 類似 黃體生成素（LH），維持 黃體（corpus luteum） 與 黃體素（progesterone），直到 胎盤（placenta） 接手。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "早期胚胎/胎盤 hCG 類似 LH，維持 corpus luteum 與 progesterone，直到 placenta 接手。"
+              "explain": "早期胚胎/胎盤 人類絨毛膜促性腺激素（hCG） 類似 黃體生成素（LH），維持 黃體（corpus luteum） 與 黃體素（progesterone），直到 胎盤（placenta） 接手。",
+              "id": "c702ce667"
             }
           ]
         },
@@ -235,27 +248,31 @@
           "type": "recap",
           "points": [
             "不是每個人都固定在週期第十四天排卵；比較穩的是排卵後大約十四天才來月經。",
-            "懷孕初期胎盤還沒完全接手，胚胎先放出類似 LH 的訊號，叫黃體繼續製造 progesterone。",
+            "懷孕初期胎盤還沒完全接手，胚胎先放出類似 黃體生成素（LH） 的訊號，叫黃體繼續製造 黃體素（progesterone）。",
             "急速重點：排卵與週期：不是每個人都固定在週期第十四天排卵；比較穩的是排卵後大約十四天才來月經。",
-            "急速重點：hCG 功能：懷孕初期胎盤還沒完全接手，胚胎先放出類似 LH 的訊號，叫黃體繼續製造 progesterone。",
-            "排卵約在下一次月經前14天；高 estradiol 正回饋→LH surge→ovulation。"
+            "急速重點：人類絨毛膜促性腺激素（hCG） 功能：懷孕初期胎盤還沒完全接手，胚胎先放出類似 黃體生成素（LH） 的訊號，叫黃體繼續製造 黃體素（progesterone）。",
+            "排卵約在下一次月經前14天；高 雌二醇（estradiol） 正回饋→黃體生成素高峰（LH surge）→排卵（ovulation）。"
           ],
           "flash": [
             {
               "front": "急速重點：排卵與週期",
-              "back": "不是每個人都固定在週期第十四天排卵；比較穩的是排卵後大約十四天才來月經。"
+              "back": "不是每個人都固定在週期第十四天排卵；比較穩的是排卵後大約十四天才來月經。",
+              "id": "f768e094c"
             },
             {
-              "front": "急速重點：hCG 功能",
-              "back": "懷孕初期胎盤還沒完全接手，胚胎先放出類似 LH 的訊號，叫黃體繼續製造 progesterone。"
+              "front": "急速重點：人類絨毛膜促性腺激素（hCG） 功能",
+              "back": "懷孕初期胎盤還沒完全接手，胚胎先放出類似 黃體生成素（LH） 的訊號，叫黃體繼續製造 黃體素（progesterone）。",
+              "id": "ff2a50948"
             },
             {
               "front": "用自己的話說明「急速重點：排卵與週期」，並說出一個判斷依據。",
-              "back": "排卵約在下一次月經前14天；高 estradiol 正回饋→LH surge→ovulation。"
+              "back": "排卵約在下一次月經前14天；高 雌二醇（estradiol） 正回饋→黃體生成素高峰（LH surge）→排卵（ovulation）。",
+              "id": "fcaca7907"
             },
             {
-              "front": "用自己的話說明「急速重點：hCG 功能」，並說出一個判斷依據。",
-              "back": "早期胚胎/胎盤 hCG 類似 LH，維持 corpus luteum 與 progesterone，直到 placenta 接手。"
+              "front": "用自己的話說明「急速重點：人類絨毛膜促性腺激素（hCG） 功能」，並說出一個判斷依據。",
+              "back": "早期胚胎/胎盤 人類絨毛膜促性腺激素（hCG） 類似 黃體生成素（LH），維持 黃體（corpus luteum） 與 黃體素（progesterone），直到 胎盤（placenta） 接手。",
+              "id": "f702ce667"
             }
           ]
         }
@@ -276,9 +293,9 @@
         {
           "type": "card",
           "title": "判斷依據：生殖系統",
-          "body": "Leydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。\n\n正確選項：Leydig cell。\n",
+          "body": "萊迪氏細胞（Leydig cell） 做類固醇（睪固酮）；塞爾托利氏細胞（Sertoli） 是保母細胞。\n\n正確選項：萊迪氏細胞。\n",
           "keys": [
-            "Leydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。\n\n正確選項：Leydig cell。\n"
+            "萊迪氏細胞（Leydig cell） 做類固醇（睪固酮）；塞爾托利氏細胞（Sertoli） 是保母細胞。\n\n正確選項：萊迪氏細胞（Leydig cell）。\n"
           ]
         },
         {
@@ -287,20 +304,21 @@
           "q": "睪丸中製造性類固醇的細胞是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "Leydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。\n\n正確選項：Leydig cell。\n",
+          "explain": "萊迪氏細胞（Leydig cell） 做類固醇（睪固酮）；塞爾托利氏細胞（Sertoli） 是保母細胞。\n\n正確選項：萊迪氏細胞（Leydig cell）。\n",
           "choices": [
-            "Leydig cell",
-            "Sertoli cell",
+            "萊迪氏細胞（Leydig cell）",
+            "塞爾托利氏細胞（Sertoli cell）",
             "精原細胞",
             "支持細胞"
-          ]
+          ],
+          "id": "c120c36bf"
         },
         {
           "type": "card",
           "title": "判斷依據：生殖系統",
-          "body": "初級卵母細胞停在 prophase I，一路到排卵前才完成第一次減數分裂。\n\n正確選項：prophase I（到排卵前才完成）。\n",
+          "body": "初級卵母細胞停在 第一次減數分裂前期（prophase I），一路到排卵前才完成第一次減數分裂。\n\n正確選項：第一次減數分裂前期（到排卵前才完成）。\n",
           "keys": [
-            "初級卵母細胞停在 prophase I，一路到排卵前才完成第一次減數分裂。\n\n正確選項：prophase I（到排卵前才完成）。\n"
+            "初級卵母細胞停在 第一次減數分裂前期（prophase I），一路到排卵前才完成第一次減數分裂。\n\n正確選項：第一次減數分裂前期（prophase I）（到排卵前才完成）。\n"
           ]
         },
         {
@@ -309,13 +327,14 @@
           "q": "卵子生成第一次減數分裂停滯在哪一期？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "初級卵母細胞停在 prophase I，一路到排卵前才完成第一次減數分裂。\n\n正確選項：prophase I（到排卵前才完成）。\n",
+          "explain": "初級卵母細胞停在 第一次減數分裂前期（prophase I），一路到排卵前才完成第一次減數分裂。\n\n正確選項：第一次減數分裂前期（prophase I）（到排卵前才完成）。\n",
           "choices": [
-            "prophase I（到排卵前才完成）",
-            "metaphase II",
+            "第一次減數分裂前期（prophase I）（到排卵前才完成）",
+            "第二次減數分裂中期（metaphase II）",
             "anaphase I",
             "telophase II"
-          ]
+          ],
+          "id": "cb2273e91"
         },
         {
           "type": "card",
@@ -337,7 +356,8 @@
             "各 4 個",
             "各 1 個",
             "精子 1 個、卵 4 個"
-          ]
+          ],
+          "id": "c3fde14bf"
         },
         {
           "type": "example",
@@ -345,10 +365,10 @@
           "problem": "睪丸中製造性類固醇的細胞是？",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "Leydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。\n\n正確選項：Leydig cell。\n",
+            "萊迪氏細胞（Leydig cell） 做類固醇（睪固酮）；塞爾托利氏細胞（Sertoli） 是保母細胞。\n\n正確選項：萊迪氏細胞（Leydig cell）。\n",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "Leydig cell"
+          "answer": "萊迪氏細胞（Leydig cell）"
         },
         {
           "type": "practice",
@@ -359,26 +379,28 @@
               "q": "睪丸中製造性類固醇的細胞是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "Leydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。\n\n正確選項：Leydig cell。\n",
+              "explain": "萊迪氏細胞（Leydig cell） 做類固醇（睪固酮）；塞爾托利氏細胞（Sertoli） 是保母細胞。\n\n正確選項：萊迪氏細胞（Leydig cell）。\n",
               "choices": [
-                "Leydig cell",
-                "Sertoli cell",
+                "萊迪氏細胞（Leydig cell）",
+                "塞爾托利氏細胞（Sertoli cell）",
                 "精原細胞",
                 "支持細胞"
-              ]
+              ],
+              "id": "c120c36bf"
             },
             {
               "kind": "single",
               "q": "卵子生成第一次減數分裂停滯在哪一期？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "初級卵母細胞停在 prophase I，一路到排卵前才完成第一次減數分裂。\n\n正確選項：prophase I（到排卵前才完成）。\n",
+              "explain": "初級卵母細胞停在 第一次減數分裂前期（prophase I），一路到排卵前才完成第一次減數分裂。\n\n正確選項：第一次減數分裂前期（prophase I）（到排卵前才完成）。\n",
               "choices": [
-                "prophase I（到排卵前才完成）",
-                "metaphase II",
+                "第一次減數分裂前期（prophase I）（到排卵前才完成）",
+                "第二次減數分裂中期（metaphase II）",
                 "anaphase I",
                 "telophase II"
-              ]
+              ],
+              "id": "cb2273e91"
             },
             {
               "kind": "single",
@@ -391,35 +413,40 @@
                 "各 4 個",
                 "各 1 個",
                 "精子 1 個、卵 4 個"
-              ]
+              ],
+              "id": "c3fde14bf"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "Leydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。\n\n正確選項：Leydig cell。\n",
-            "初級卵母細胞停在 prophase I，一路到排卵前才完成第一次減數分裂。\n\n正確選項：prophase I（到排卵前才完成）。\n",
+            "萊迪氏細胞（Leydig cell） 做類固醇（睪固酮）；塞爾托利氏細胞（Sertoli） 是保母細胞。\n\n正確選項：萊迪氏細胞（Leydig cell）。\n",
+            "初級卵母細胞停在 第一次減數分裂前期（prophase I），一路到排卵前才完成第一次減數分裂。\n\n正確選項：第一次減數分裂前期（prophase I）（到排卵前才完成）。\n",
             "精子 1→4；卵子 1→1（＋極體）。\n\n正確選項：精子 4 個、卵 1 個。\n",
-            "Leydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。\n\n正確選項：Leydig cell。\n",
-            "初級卵母細胞停在 prophase I，一路到排卵前才完成第一次減數分裂。\n\n正確選項：prophase I（到排卵前才完成）。\n"
+            "萊迪氏細胞（Leydig cell） 做類固醇（睪固酮）；塞爾托利氏細胞（Sertoli） 是保母細胞。\n\n正確選項：萊迪氏細胞（Leydig cell）。\n",
+            "初級卵母細胞停在 第一次減數分裂前期（prophase I），一路到排卵前才完成第一次減數分裂。\n\n正確選項：第一次減數分裂前期（prophase I）（到排卵前才完成）。\n"
           ],
           "flash": [
             {
               "front": "睪丸中製造性類固醇的細胞是？",
-              "back": "Leydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。\n\n正確選項：Leydig cell。\n"
+              "back": "萊迪氏細胞（Leydig cell） 做類固醇（睪固酮）；塞爾托利氏細胞（Sertoli） 是保母細胞。\n\n正確選項：萊迪氏細胞（Leydig cell）。\n",
+              "id": "f120c36bf"
             },
             {
               "front": "卵子生成第一次減數分裂停滯在哪一期？",
-              "back": "初級卵母細胞停在 prophase I，一路到排卵前才完成第一次減數分裂。\n\n正確選項：prophase I（到排卵前才完成）。\n"
+              "back": "初級卵母細胞停在 第一次減數分裂前期（prophase I），一路到排卵前才完成第一次減數分裂。\n\n正確選項：第一次減數分裂前期（prophase I）（到排卵前才完成）。\n",
+              "id": "fb2273e91"
             },
             {
               "front": "一個精原細胞與一個卵原細胞最終各產生幾個配子？",
-              "back": "精子 1→4；卵子 1→1（＋極體）。\n\n正確選項：精子 4 個、卵 1 個。\n"
+              "back": "精子 1→4；卵子 1→1（＋極體）。\n\n正確選項：精子 4 個、卵 1 個。\n",
+              "id": "f3fde14bf"
             },
             {
               "front": "睪丸中製造性類固醇的細胞是？",
-              "back": "Leydig cell 做類固醇（睪固酮）；Sertoli 是保母細胞。\n\n正確選項：Leydig cell。\n"
+              "back": "萊迪氏細胞（Leydig cell） 做類固醇（睪固酮）；塞爾托利氏細胞（Sertoli） 是保母細胞。\n\n正確選項：萊迪氏細胞（Leydig cell）。\n",
+              "id": "f120c36bf"
             }
           ]
         }
@@ -440,53 +467,55 @@
         {
           "type": "card",
           "title": "判斷依據：生殖系統",
-          "body": "5α-還原酶：testosterone→DHT（強約 3 倍）。\n\n正確選項：5α-reductase。\n",
+          "body": "5α-還原酶：睪固酮（testosterone）→二氫睪固酮（DHT）（強約 3 倍）。\n\n正確選項：把（5α-reductase）。\n",
           "keys": [
-            "5α-還原酶：testosterone→DHT（強約 3 倍）。\n\n正確選項：5α-reductase。\n"
+            "5α-還原酶：睪固酮（testosterone）→二氫睪固酮（DHT）（強約 3 倍）。\n\n正確選項：把（5α-reductase）。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "把睪固酮變成作用更強 DHT 的酵素是？",
+          "q": "把睪固酮變成作用更強 二氫睪固酮（DHT） 的酵素是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "5α-還原酶：testosterone→DHT（強約 3 倍）。\n\n正確選項：5α-reductase。\n",
+          "explain": "5α-還原酶：睪固酮（testosterone）→二氫睪固酮（DHT）（強約 3 倍）。\n\n正確選項：把（5α-reductase）。\n",
           "choices": [
-            "5α-reductase",
-            "aromatase",
-            "17β-HSD",
-            "3β-HSD"
-          ]
+            "把（5α-reductase）",
+            "芳香環酶（aromatase）",
+            "17β-羥基類固醇脫氫酶（HSD）",
+            "3β-羥基類固醇脫氫酶（HSD）"
+          ],
+          "id": "c5598741b"
         },
         {
           "type": "card",
           "title": "判斷依據：生殖系統",
-          "body": "aromatase 在 granulosa cell、由 FSH 誘導，把 theca 來的雄性素變雌激素。\n\n正確選項：granulosa cell；FSH。\n",
+          "body": "芳香環酶（aromatase） 在 顆粒細胞（granulosa cell）、由 濾泡刺激素（FSH） 誘導，把 卵泡膜細胞（theca） 來的雄性素變雌激素。\n\n正確選項：顆粒細胞；濾泡刺激素。\n",
           "keys": [
-            "aromatase 在 granulosa cell、由 FSH 誘導，把 theca 來的雄性素變雌激素。\n\n正確選項：granulosa cell；FSH。\n"
+            "芳香環酶（aromatase） 在 顆粒細胞（granulosa cell）、由 濾泡刺激素（FSH） 誘導，把 卵泡膜細胞（theca） 來的雄性素變雌激素。\n\n正確選項：顆粒細胞（granulosa cell）；濾泡刺激素（FSH）。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "卵巢 two-cell theory 中 aromatase 位於哪、由哪個激素誘導？",
+          "q": "卵巢 two-cell theory 中 芳香環酶（aromatase） 位於哪、由哪個激素誘導？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "aromatase 在 granulosa cell、由 FSH 誘導，把 theca 來的雄性素變雌激素。\n\n正確選項：granulosa cell；FSH。\n",
+          "explain": "芳香環酶（aromatase） 在 顆粒細胞（granulosa cell）、由 濾泡刺激素（FSH） 誘導，把 卵泡膜細胞（theca） 來的雄性素變雌激素。\n\n正確選項：顆粒細胞（granulosa cell）；濾泡刺激素（FSH）。\n",
           "choices": [
-            "granulosa cell；FSH",
-            "theca cell；LH",
-            "granulosa cell；LH",
-            "theca cell；FSH"
-          ]
+            "顆粒細胞（granulosa cell）；濾泡刺激素（FSH）",
+            "卵泡膜細胞（theca cell）；黃體生成素（LH）",
+            "顆粒細胞（granulosa cell）；黃體生成素（LH）",
+            "卵泡膜細胞（theca cell）；濾泡刺激素（FSH）"
+          ],
+          "id": "c0377ac7d"
         },
         {
           "type": "card",
           "title": "判斷依據：生殖系統",
-          "body": "雌激素持續高 >48hr 由負回饋翻成正回饋 → LH surge → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n",
+          "body": "雌激素持續高 >48hr 由負回饋翻成正回饋 → 黃體生成素高峰（LH surge） → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n",
           "keys": [
-            "雌激素持續高 >48hr 由負回饋翻成正回饋 → LH surge → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n"
+            "雌激素持續高 >48hr 由負回饋翻成正回饋 → 黃體生成素高峰（LH surge） → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n"
           ]
         },
         {
@@ -495,24 +524,25 @@
           "q": "雌激素引發排卵的回饋性質與條件是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "雌激素持續高 >48hr 由負回饋翻成正回饋 → LH surge → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n",
+          "explain": "雌激素持續高 >48hr 由負回饋翻成正回饋 → 黃體生成素高峰（LH surge） → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n",
           "choices": [
             "正回饋；持續高濃度 >48hr",
             "負回饋；濃度下降",
             "正回饋；一升高立刻",
             "負回饋；持續高濃度"
-          ]
+          ],
+          "id": "c55e90cfd"
         },
         {
           "type": "example",
           "title": "回看第一題的判斷",
-          "problem": "把睪固酮變成作用更強 DHT 的酵素是？",
+          "problem": "把睪固酮變成作用更強 二氫睪固酮（DHT） 的酵素是？",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "5α-還原酶：testosterone→DHT（強約 3 倍）。\n\n正確選項：5α-reductase。\n",
+            "5α-還原酶：睪固酮（testosterone）→二氫睪固酮（DHT）（強約 3 倍）。\n\n正確選項：把（5α-reductase）。\n",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "5α-reductase"
+          "answer": "把（5α-reductase）"
         },
         {
           "type": "practice",
@@ -520,70 +550,77 @@
           "checks": [
             {
               "kind": "single",
-              "q": "把睪固酮變成作用更強 DHT 的酵素是？",
+              "q": "把睪固酮變成作用更強 二氫睪固酮（DHT） 的酵素是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "5α-還原酶：testosterone→DHT（強約 3 倍）。\n\n正確選項：5α-reductase。\n",
+              "explain": "5α-還原酶：睪固酮（testosterone）→二氫睪固酮（DHT）（強約 3 倍）。\n\n正確選項：把（5α-reductase）。\n",
               "choices": [
-                "5α-reductase",
-                "aromatase",
-                "17β-HSD",
-                "3β-HSD"
-              ]
+                "把（5α-reductase）",
+                "芳香環酶（aromatase）",
+                "17β-羥基類固醇脫氫酶（HSD）",
+                "3β-羥基類固醇脫氫酶（HSD）"
+              ],
+              "id": "c5598741b"
             },
             {
               "kind": "single",
-              "q": "卵巢 two-cell theory 中 aromatase 位於哪、由哪個激素誘導？",
+              "q": "卵巢 two-cell theory 中 芳香環酶（aromatase） 位於哪、由哪個激素誘導？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "aromatase 在 granulosa cell、由 FSH 誘導，把 theca 來的雄性素變雌激素。\n\n正確選項：granulosa cell；FSH。\n",
+              "explain": "芳香環酶（aromatase） 在 顆粒細胞（granulosa cell）、由 濾泡刺激素（FSH） 誘導，把 卵泡膜細胞（theca） 來的雄性素變雌激素。\n\n正確選項：顆粒細胞（granulosa cell）；濾泡刺激素（FSH）。\n",
               "choices": [
-                "granulosa cell；FSH",
-                "theca cell；LH",
-                "granulosa cell；LH",
-                "theca cell；FSH"
-              ]
+                "顆粒細胞（granulosa cell）；濾泡刺激素（FSH）",
+                "卵泡膜細胞（theca cell）；黃體生成素（LH）",
+                "顆粒細胞（granulosa cell）；黃體生成素（LH）",
+                "卵泡膜細胞（theca cell）；濾泡刺激素（FSH）"
+              ],
+              "id": "c0377ac7d"
             },
             {
               "kind": "single",
               "q": "雌激素引發排卵的回饋性質與條件是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "雌激素持續高 >48hr 由負回饋翻成正回饋 → LH surge → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n",
+              "explain": "雌激素持續高 >48hr 由負回饋翻成正回饋 → 黃體生成素高峰（LH surge） → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n",
               "choices": [
                 "正回饋；持續高濃度 >48hr",
                 "負回饋；濃度下降",
                 "正回饋；一升高立刻",
                 "負回饋；持續高濃度"
-              ]
+              ],
+              "id": "c55e90cfd"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "5α-還原酶：testosterone→DHT（強約 3 倍）。\n\n正確選項：5α-reductase。\n",
-            "aromatase 在 granulosa cell、由 FSH 誘導，把 theca 來的雄性素變雌激素。\n\n正確選項：granulosa cell；FSH。\n",
-            "雌激素持續高 >48hr 由負回饋翻成正回饋 → LH surge → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n",
-            "5α-還原酶：testosterone→DHT（強約 3 倍）。\n\n正確選項：5α-reductase。\n",
-            "aromatase 在 granulosa cell、由 FSH 誘導，把 theca 來的雄性素變雌激素。\n\n正確選項：granulosa cell；FSH。\n"
+            "5α-還原酶：睪固酮（testosterone）→二氫睪固酮（DHT）（強約 3 倍）。\n\n正確選項：把（5α-reductase）。\n",
+            "芳香環酶（aromatase） 在 顆粒細胞（granulosa cell）、由 濾泡刺激素（FSH） 誘導，把 卵泡膜細胞（theca） 來的雄性素變雌激素。\n\n正確選項：顆粒細胞（granulosa cell）；濾泡刺激素（FSH）。\n",
+            "雌激素持續高 >48hr 由負回饋翻成正回饋 → 黃體生成素高峰（LH surge） → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n",
+            "5α-還原酶：睪固酮（testosterone）→二氫睪固酮（DHT）（強約 3 倍）。\n\n正確選項：把（5α-reductase）。\n",
+            "芳香環酶（aromatase） 在 顆粒細胞（granulosa cell）、由 濾泡刺激素（FSH） 誘導，把 卵泡膜細胞（theca） 來的雄性素變雌激素。\n\n正確選項：顆粒細胞（granulosa cell）；濾泡刺激素（FSH）。\n"
           ],
           "flash": [
             {
-              "front": "把睪固酮變成作用更強 DHT 的酵素是？",
-              "back": "5α-還原酶：testosterone→DHT（強約 3 倍）。\n\n正確選項：5α-reductase。\n"
+              "front": "把睪固酮變成作用更強 二氫睪固酮（DHT） 的酵素是？",
+              "back": "5α-還原酶：睪固酮（testosterone）→二氫睪固酮（DHT）（強約 3 倍）。\n\n正確選項：把（5α-reductase）。\n",
+              "id": "f5598741b"
             },
             {
-              "front": "卵巢 two-cell theory 中 aromatase 位於哪、由哪個激素誘導？",
-              "back": "aromatase 在 granulosa cell、由 FSH 誘導，把 theca 來的雄性素變雌激素。\n\n正確選項：granulosa cell；FSH。\n"
+              "front": "卵巢 two-cell theory 中 芳香環酶（aromatase） 位於哪、由哪個激素誘導？",
+              "back": "芳香環酶（aromatase） 在 顆粒細胞（granulosa cell）、由 濾泡刺激素（FSH） 誘導，把 卵泡膜細胞（theca） 來的雄性素變雌激素。\n\n正確選項：顆粒細胞（granulosa cell）；濾泡刺激素（FSH）。\n",
+              "id": "f0377ac7d"
             },
             {
               "front": "雌激素引發排卵的回饋性質與條件是？",
-              "back": "雌激素持續高 >48hr 由負回饋翻成正回饋 → LH surge → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n"
+              "back": "雌激素持續高 >48hr 由負回饋翻成正回饋 → 黃體生成素高峰（LH surge） → 排卵。\n\n正確選項：正回饋；持續高濃度 >48hr。\n",
+              "id": "f55e90cfd"
             },
             {
-              "front": "把睪固酮變成作用更強 DHT 的酵素是？",
-              "back": "5α-還原酶：testosterone→DHT（強約 3 倍）。\n\n正確選項：5α-reductase。\n"
+              "front": "把睪固酮變成作用更強 二氫睪固酮（DHT） 的酵素是？",
+              "back": "5α-還原酶：睪固酮（testosterone）→二氫睪固酮（DHT）（強約 3 倍）。\n\n正確選項：把（5α-reductase）。\n",
+              "id": "f5598741b"
             }
           ]
         }
@@ -604,9 +641,9 @@
         {
           "type": "card",
           "title": "判斷依據：生殖系統",
-          "body": "SRY＝睪丸決定因子 TDF。\n\n正確選項：Y 染色體上的 SRY（TDF）。\n",
+          "body": "Y 染色體性別決定區基因（SRY）＝睪丸決定因子 （TDF）。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（TDF）。\n",
           "keys": [
-            "SRY＝睪丸決定因子 TDF。\n\n正確選項：Y 染色體上的 SRY（TDF）。\n"
+            "Y 染色體性別決定區基因（SRY）＝睪丸決定因子 （TDF）。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）。\n"
           ]
         },
         {
@@ -615,35 +652,37 @@
           "q": "性別決定中把性腺推成睪丸的是？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "SRY＝睪丸決定因子 TDF。\n\n正確選項：Y 染色體上的 SRY（TDF）。\n",
+          "explain": "Y 染色體性別決定區基因（SRY）＝睪丸決定因子 （TDF）。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）。\n",
           "choices": [
-            "Y 染色體上的 SRY（TDF）",
+            "Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）",
             "X 染色體數目",
             "雌激素",
-            "FSH"
-          ]
+            "濾泡刺激素（FSH）"
+          ],
+          "id": "c779324ff"
         },
         {
           "type": "card",
           "title": "判斷依據：生殖系統",
-          "body": "inhibin 抑制 FSH（activin 則促進）。\n\n正確選項：inhibin。\n",
+          "body": "抑制素（inhibin） 抑制 濾泡刺激素（FSH）（activin 則促進）。\n\n正確選項：抑制素。\n",
           "keys": [
-            "inhibin 抑制 FSH（activin 則促進）。\n\n正確選項：inhibin。\n"
+            "抑制素（inhibin） 抑制 濾泡刺激素（FSH）（activin 則促進）。\n\n正確選項：抑制素（inhibin）。\n"
           ]
         },
         {
           "type": "check",
           "kind": "single",
-          "q": "下列何者由保母細胞（Sertoli/granulosa）分泌、抑制 FSH？",
+          "q": "下列何者由保母細胞（Sertoli/granulosa）分泌、抑制 濾泡刺激素（FSH）？",
           "answer": 0,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "inhibin 抑制 FSH（activin 則促進）。\n\n正確選項：inhibin。\n",
+          "explain": "抑制素（inhibin） 抑制 濾泡刺激素（FSH）（activin 則促進）。\n\n正確選項：抑制素（inhibin）。\n",
           "choices": [
-            "inhibin",
-            "activin",
-            "GnRH",
-            "LH"
-          ]
+            "抑制素（inhibin）",
+            "促進（activin）",
+            "促性腺激素釋放激素（GnRH）",
+            "黃體生成素（LH）"
+          ],
+          "id": "c43d45424"
         },
         {
           "type": "example",
@@ -651,10 +690,10 @@
           "problem": "性別決定中把性腺推成睪丸的是？",
           "steps": [
             "確認題目問的構造、條件或量。",
-            "SRY＝睪丸決定因子 TDF。\n\n正確選項：Y 染色體上的 SRY（TDF）。\n",
+            "Y 染色體性別決定區基因（SRY）＝睪丸決定因子 （TDF）。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）。\n",
             "將判斷依據連到正確選項。"
           ],
-          "answer": "Y 染色體上的 SRY（TDF）"
+          "answer": "Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）"
         },
         {
           "type": "practice",
@@ -665,54 +704,60 @@
               "q": "性別決定中把性腺推成睪丸的是？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "SRY＝睪丸決定因子 TDF。\n\n正確選項：Y 染色體上的 SRY（TDF）。\n",
+              "explain": "Y 染色體性別決定區基因（SRY）＝睪丸決定因子 （TDF）。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）。\n",
               "choices": [
-                "Y 染色體上的 SRY（TDF）",
+                "Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）",
                 "X 染色體數目",
                 "雌激素",
-                "FSH"
-              ]
+                "濾泡刺激素（FSH）"
+              ],
+              "id": "c779324ff"
             },
             {
               "kind": "single",
-              "q": "下列何者由保母細胞（Sertoli/granulosa）分泌、抑制 FSH？",
+              "q": "下列何者由保母細胞（Sertoli/granulosa）分泌、抑制 濾泡刺激素（FSH）？",
               "answer": 0,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "inhibin 抑制 FSH（activin 則促進）。\n\n正確選項：inhibin。\n",
+              "explain": "抑制素（inhibin） 抑制 濾泡刺激素（FSH）（activin 則促進）。\n\n正確選項：抑制素（inhibin）。\n",
               "choices": [
-                "inhibin",
-                "activin",
-                "GnRH",
-                "LH"
-              ]
+                "抑制素（inhibin）",
+                "促進（activin）",
+                "促性腺激素釋放激素（GnRH）",
+                "黃體生成素（LH）"
+              ],
+              "id": "c43d45424"
             }
           ]
         },
         {
           "type": "recap",
           "points": [
-            "SRY＝睪丸決定因子 TDF。\n\n正確選項：Y 染色體上的 SRY（TDF）。\n",
-            "inhibin 抑制 FSH（activin 則促進）。\n\n正確選項：inhibin。\n",
-            "SRY＝睪丸決定因子 TDF。\n\n正確選項：Y 染色體上的 SRY（TDF）。\n",
-            "inhibin 抑制 FSH（activin 則促進）。\n\n正確選項：inhibin。\n",
-            "SRY＝睪丸決定因子 TDF。\n\n正確選項：Y 染色體上的 SRY（TDF）。\n"
+            "Y 染色體性別決定區基因（SRY）＝睪丸決定因子 （TDF）。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）。\n",
+            "抑制素（inhibin） 抑制 濾泡刺激素（FSH）（activin 則促進）。\n\n正確選項：抑制素（inhibin）。\n",
+            "Y 染色體性別決定區基因（SRY）＝睪丸決定因子 （TDF）。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）。\n",
+            "抑制素（inhibin） 抑制 濾泡刺激素（FSH）（activin 則促進）。\n\n正確選項：抑制素（inhibin）。\n",
+            "Y 染色體性別決定區基因（SRY）＝睪丸決定因子 （TDF）。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）。\n"
           ],
           "flash": [
             {
               "front": "性別決定中把性腺推成睪丸的是？",
-              "back": "SRY＝睪丸決定因子 TDF。\n\n正確選項：Y 染色體上的 SRY（TDF）。\n"
+              "back": "Y 染色體性別決定區基因（SRY）＝睪丸決定因子 （TDF）。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）。\n",
+              "id": "f779324ff"
             },
             {
-              "front": "下列何者由保母細胞（Sertoli/granulosa）分泌、抑制 FSH？",
-              "back": "inhibin 抑制 FSH（activin 則促進）。\n\n正確選項：inhibin。\n"
+              "front": "下列何者由保母細胞（Sertoli/granulosa）分泌、抑制 濾泡刺激素（FSH）？",
+              "back": "抑制素（inhibin） 抑制 濾泡刺激素（FSH）（activin 則促進）。\n\n正確選項：抑制素（inhibin）。\n",
+              "id": "f43d45424"
             },
             {
               "front": "性別決定中把性腺推成睪丸的是？",
-              "back": "SRY＝睪丸決定因子 TDF。\n\n正確選項：Y 染色體上的 SRY（TDF）。\n"
+              "back": "Y 染色體性別決定區基因（SRY）＝睪丸決定因子 （TDF）。\n\n正確選項：Y 染色體上的 Y 染色體性別決定區基因（SRY）（TDF）。\n",
+              "id": "f779324ff"
             },
             {
-              "front": "下列何者由保母細胞（Sertoli/granulosa）分泌、抑制 FSH？",
-              "back": "inhibin 抑制 FSH（activin 則促進）。\n\n正確選項：inhibin。\n"
+              "front": "下列何者由保母細胞（Sertoli/granulosa）分泌、抑制 濾泡刺激素（FSH）？",
+              "back": "抑制素（inhibin） 抑制 濾泡刺激素（FSH）（activin 則促進）。\n\n正確選項：抑制素（inhibin）。\n",
+              "id": "f43d45424"
             }
           ]
         }

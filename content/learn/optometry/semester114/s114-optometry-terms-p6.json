@@ -23,9 +23,9 @@
       "id": "terms-31-1",
       "title": "中英文核心名詞 31",
       "goals": [
-        "解釋reference／monocular",
-        "解釋disparity／minutes of arc",
-        "解釋seconds／exo"
+        "解釋參考點（reference）／單眼的（monocular）",
+        "解釋視差（disparity）／分角（minutes of arc）",
+        "解釋秒（seconds）／外向（exo）"
       ],
       "steps": [
         {
@@ -35,8 +35,8 @@
         },
         {
           "type": "card",
-          "title": "reference／monocular",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**reference｜參考點**\n用來比較角度、深度或位置的基準。\n\n**monocular｜單眼的**\n只使用一眼完成的觀看或檢查條件。",
+          "title": "參考點（reference）／單眼的（monocular）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**參考點（reference）｜參考點**\n用來比較角度、深度或位置的基準。\n\n**單眼的（monocular）｜單眼的**\n只使用一眼完成的觀看或檢查條件。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -45,15 +45,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「reference／monocular」，並說出一個判斷依據。",
-          "answer": "**reference｜參考點**\n用來比較角度、深度或位置的基準。\n\n**monocular｜單眼的**\n只使用一眼完成的觀看或檢查條件。",
+          "q": "用自己的話說明「參考點（reference）／單眼的（monocular）」，並說出一個判斷依據。",
+          "answer": "**參考點（reference）｜參考點**\n用來比較角度、深度或位置的基準。\n\n**單眼的（monocular）｜單眼的**\n只使用一眼完成的觀看或檢查條件。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**reference｜參考點**\n用來比較角度、深度或位置的基準。\n\n**monocular｜單眼的**\n只使用一眼完成的觀看或檢查條件。"
+          "explain": "**參考點（reference）｜參考點**\n用來比較角度、深度或位置的基準。\n\n**單眼的（monocular）｜單眼的**\n只使用一眼完成的觀看或檢查條件。",
+          "id": "cbb7f89cf"
         },
         {
           "type": "card",
-          "title": "disparity／minutes of arc",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**disparity｜視差**\n左右眼影像位置或角度的差異。\n\n**minutes of arc｜分角**\n角度單位；固視偏差常以數個分角描述。",
+          "title": "視差（disparity）／分角（minutes of arc）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**視差（disparity）｜視差**\n左右眼影像位置或角度的差異。\n\n**分角（minutes of arc）｜分角**\n角度單位；固視偏差常以數個分角描述。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -62,15 +63,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「disparity／minutes of arc」，並說出一個判斷依據。",
-          "answer": "**disparity｜視差**\n左右眼影像位置或角度的差異。\n\n**minutes of arc｜分角**\n角度單位；固視偏差常以數個分角描述。",
+          "q": "用自己的話說明「視差（disparity）／分角（minutes of arc）」，並說出一個判斷依據。",
+          "answer": "**視差（disparity）｜視差**\n左右眼影像位置或角度的差異。\n\n**分角（minutes of arc）｜分角**\n角度單位；固視偏差常以數個分角描述。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**disparity｜視差**\n左右眼影像位置或角度的差異。\n\n**minutes of arc｜分角**\n角度單位；固視偏差常以數個分角描述。"
+          "explain": "**視差（disparity）｜視差**\n左右眼影像位置或角度的差異。\n\n**分角（minutes of arc）｜分角**\n角度單位；固視偏差常以數個分角描述。",
+          "id": "ced2c826b"
         },
         {
           "type": "card",
-          "title": "seconds／exo",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**seconds｜秒角數值**\n立體視力情境中通常指 seconds of arc。\n\n**exo｜外向**\n表示眼位或固視偏差朝外。",
+          "title": "秒（seconds）／外向（exo）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**秒（seconds）｜秒角數值**\n立體視力情境中通常指 角秒（seconds of arc）。\n\n**外向（exo）｜外向**\n表示眼位或固視偏差朝外。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -79,21 +81,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「seconds／exo」，並說出一個判斷依據。",
-          "answer": "**seconds｜秒角數值**\n立體視力情境中通常指 seconds of arc。\n\n**exo｜外向**\n表示眼位或固視偏差朝外。",
+          "q": "用自己的話說明「秒（seconds）／外向（exo）」，並說出一個判斷依據。",
+          "answer": "**秒（seconds）｜秒角數值**\n立體視力情境中通常指 角秒（seconds of arc）。\n\n**外向（exo）｜外向**\n表示眼位或固視偏差朝外。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**seconds｜秒角數值**\n立體視力情境中通常指 seconds of arc。\n\n**exo｜外向**\n表示眼位或固視偏差朝外。"
+          "explain": "**秒（seconds）｜秒角數值**\n立體視力情境中通常指 角秒（seconds of arc）。\n\n**外向（exo）｜外向**\n表示眼位或固視偏差朝外。",
+          "id": "c980a9192"
         },
         {
           "type": "example",
-          "title": "範例拆解：seconds／exo",
-          "problem": "用自己的話說明「seconds／exo」，並說出一個判斷依據。",
+          "title": "範例拆解：秒（seconds）／外向（exo）",
+          "problem": "用自己的話說明「秒（seconds）／外向（exo）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：seconds／exo",
-            "**seconds｜秒角數值**\n立體視力情境中通常指 seconds of arc。\n\n**exo｜外向**\n表示眼位或固視偏差朝外。",
-            "把判斷依據連回題目：**seconds｜秒角數值**\n立體視力情境中通常指 seconds of arc。\n\n**exo｜外向**\n表示眼位或固視偏差朝外。"
+            "先確認題目問的主題：秒（seconds）／外向（exo）",
+            "**秒（seconds）｜秒角數值**\n立體視力情境中通常指 角秒（seconds of arc）。\n\n**外向（exo）｜外向**\n表示眼位或固視偏差朝外。",
+            "把判斷依據連回題目：**秒（seconds）｜秒角數值**\n立體視力情境中通常指 角秒（seconds of arc）。\n\n**外向（exo）｜外向**\n表示眼位或固視偏差朝外。"
           ],
-          "answer": "**seconds｜秒角數值**\n立體視力情境中通常指 seconds of arc。\n\n**exo｜外向**\n表示眼位或固視偏差朝外。"
+          "answer": "**秒（seconds）｜秒角數值**\n立體視力情境中通常指 角秒（seconds of arc）。\n\n**外向（exo）｜外向**\n表示眼位或固視偏差朝外。"
         },
         {
           "type": "practice",
@@ -102,17 +105,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「disparity／minutes of arc」，並說出一個判斷依據。",
-              "answer": "**disparity｜視差**\n左右眼影像位置或角度的差異。\n\n**minutes of arc｜分角**\n角度單位；固視偏差常以數個分角描述。",
+              "q": "用自己的話說明「視差（disparity）／分角（minutes of arc）」，並說出一個判斷依據。",
+              "answer": "**視差（disparity）｜視差**\n左右眼影像位置或角度的差異。\n\n**分角（minutes of arc）｜分角**\n角度單位；固視偏差常以數個分角描述。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**disparity｜視差**\n左右眼影像位置或角度的差異。\n\n**minutes of arc｜分角**\n角度單位；固視偏差常以數個分角描述。"
+              "explain": "**視差（disparity）｜視差**\n左右眼影像位置或角度的差異。\n\n**分角（minutes of arc）｜分角**\n角度單位；固視偏差常以數個分角描述。",
+              "id": "ced2c826b"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「seconds／exo」，並說出一個判斷依據。",
-              "answer": "**seconds｜秒角數值**\n立體視力情境中通常指 seconds of arc。\n\n**exo｜外向**\n表示眼位或固視偏差朝外。",
+              "q": "用自己的話說明「秒（seconds）／外向（exo）」，並說出一個判斷依據。",
+              "answer": "**秒（seconds）｜秒角數值**\n立體視力情境中通常指 角秒（seconds of arc）。\n\n**外向（exo）｜外向**\n表示眼位或固視偏差朝外。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**seconds｜秒角數值**\n立體視力情境中通常指 seconds of arc。\n\n**exo｜外向**\n表示眼位或固視偏差朝外。"
+              "explain": "**秒（seconds）｜秒角數值**\n立體視力情境中通常指 角秒（seconds of arc）。\n\n**外向（exo）｜外向**\n表示眼位或固視偏差朝外。",
+              "id": "c980a9192"
             }
           ]
         },
@@ -120,27 +125,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "reference／monocular：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "disparity／minutes of arc：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**reference｜參考點**\n用來比較角度、深度或位置的基準。\n\n**monocular｜單眼的**\n只使用一眼完成的觀看或檢查條件。",
-            "**disparity｜視差**\n左右眼影像位置或角度的差異。\n\n**minutes of arc｜分角**\n角度單位；固視偏差常以數個分角描述。"
+            "參考點（reference）／單眼的（monocular）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "視差（disparity）／分角（minutes of arc）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**參考點（reference）｜參考點**\n用來比較角度、深度或位置的基準。\n\n**單眼的（monocular）｜單眼的**\n只使用一眼完成的觀看或檢查條件。",
+            "**視差（disparity）｜視差**\n左右眼影像位置或角度的差異。\n\n**分角（minutes of arc）｜分角**\n角度單位；固視偏差常以數個分角描述。"
           ],
           "flash": [
             {
-              "front": "reference／monocular",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "參考點（reference）／單眼的（monocular）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f243c35ce"
             },
             {
-              "front": "disparity／minutes of arc",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "視差（disparity）／分角（minutes of arc）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fc4338a93"
             },
             {
-              "front": "seconds／exo",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "秒（seconds）／外向（exo）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f6eb3662f"
             },
             {
-              "front": "用自己的話說明「reference／monocular」，並說出一個判斷依據。",
-              "back": "**reference｜參考點**\n用來比較角度、深度或位置的基準。\n\n**monocular｜單眼的**\n只使用一眼完成的觀看或檢查條件。"
+              "front": "用自己的話說明「參考點（reference）／單眼的（monocular）」，並說出一個判斷依據。",
+              "back": "**參考點（reference）｜參考點**\n用來比較角度、深度或位置的基準。\n\n**單眼的（monocular）｜單眼的**\n只使用一眼完成的觀看或檢查條件。",
+              "id": "fbb7f89cf"
             }
           ]
         }
@@ -150,9 +159,9 @@
       "id": "terms-32-1",
       "title": "中英文核心名詞 32",
       "goals": [
-        "解釋eso／underconverge",
-        "解釋amplitude／response",
-        "解釋facility／diopter"
+        "解釋內向（eso）／內聚不足（underconverge）",
+        "解釋幅度（amplitude）／反應（response）",
+        "解釋靈敏度（facility）／屈光度（diopter）"
       ],
       "steps": [
         {
@@ -162,8 +171,8 @@
         },
         {
           "type": "card",
-          "title": "eso／underconverge",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**eso｜內向**\n表示眼位或固視偏差朝內。\n\n**underconverge｜內聚不足**\n兩眼向內聚合的量少於注視需求。",
+          "title": "內向（eso）／內聚不足（underconverge）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**內向（eso）｜內向**\n表示眼位或固視偏差朝內。\n\n**內聚不足（underconverge）｜內聚不足**\n兩眼向內聚合的量少於注視需求。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -172,15 +181,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「eso／underconverge」，並說出一個判斷依據。",
-          "answer": "**eso｜內向**\n表示眼位或固視偏差朝內。\n\n**underconverge｜內聚不足**\n兩眼向內聚合的量少於注視需求。",
+          "q": "用自己的話說明「內向（eso）／內聚不足（underconverge）」，並說出一個判斷依據。",
+          "answer": "**內向（eso）｜內向**\n表示眼位或固視偏差朝內。\n\n**內聚不足（underconverge）｜內聚不足**\n兩眼向內聚合的量少於注視需求。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**eso｜內向**\n表示眼位或固視偏差朝內。\n\n**underconverge｜內聚不足**\n兩眼向內聚合的量少於注視需求。"
+          "explain": "**內向（eso）｜內向**\n表示眼位或固視偏差朝內。\n\n**內聚不足（underconverge）｜內聚不足**\n兩眼向內聚合的量少於注視需求。",
+          "id": "c25bd55f2"
         },
         {
           "type": "card",
-          "title": "amplitude／response",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**amplitude｜幅度**\n調節情境中表示最大可用能力。\n\n**response｜反應準確度**\n調節情境中表示實際反應是否對準需求。",
+          "title": "幅度（amplitude）／反應（response）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**幅度（amplitude）｜幅度**\n調節情境中表示最大可用能力。\n\n**反應（response）｜反應準確度**\n調節情境中表示實際反應是否對準需求。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -189,15 +199,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「amplitude／response」，並說出一個判斷依據。",
-          "answer": "**amplitude｜幅度**\n調節情境中表示最大可用能力。\n\n**response｜反應準確度**\n調節情境中表示實際反應是否對準需求。",
+          "q": "用自己的話說明「幅度（amplitude）／反應（response）」，並說出一個判斷依據。",
+          "answer": "**幅度（amplitude）｜幅度**\n調節情境中表示最大可用能力。\n\n**反應（response）｜反應準確度**\n調節情境中表示實際反應是否對準需求。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**amplitude｜幅度**\n調節情境中表示最大可用能力。\n\n**response｜反應準確度**\n調節情境中表示實際反應是否對準需求。"
+          "explain": "**幅度（amplitude）｜幅度**\n調節情境中表示最大可用能力。\n\n**反應（response）｜反應準確度**\n調節情境中表示實際反應是否對準需求。",
+          "id": "cd4328c1b"
         },
         {
           "type": "card",
-          "title": "facility／diopter",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**facility｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**diopter｜屈光度**\n鏡片與調節能力常用的單位 D。",
+          "title": "靈敏度（facility）／屈光度（diopter）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**靈敏度（facility）｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**屈光度（diopter）｜屈光度**\n鏡片與調節能力常用的單位 D。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -206,21 +217,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「facility／diopter」，並說出一個判斷依據。",
-          "answer": "**facility｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**diopter｜屈光度**\n鏡片與調節能力常用的單位 D。",
+          "q": "用自己的話說明「靈敏度（facility）／屈光度（diopter）」，並說出一個判斷依據。",
+          "answer": "**靈敏度（facility）｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**屈光度（diopter）｜屈光度**\n鏡片與調節能力常用的單位 D。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**facility｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**diopter｜屈光度**\n鏡片與調節能力常用的單位 D。"
+          "explain": "**靈敏度（facility）｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**屈光度（diopter）｜屈光度**\n鏡片與調節能力常用的單位 D。",
+          "id": "c229d036f"
         },
         {
           "type": "example",
-          "title": "範例拆解：facility／diopter",
-          "problem": "用自己的話說明「facility／diopter」，並說出一個判斷依據。",
+          "title": "範例拆解：靈敏度（facility）／屈光度（diopter）",
+          "problem": "用自己的話說明「靈敏度（facility）／屈光度（diopter）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：facility／diopter",
-            "**facility｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**diopter｜屈光度**\n鏡片與調節能力常用的單位 D。",
-            "把判斷依據連回題目：**facility｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**diopter｜屈光度**\n鏡片與調節能力常用的單位 D。"
+            "先確認題目問的主題：靈敏度（facility）／屈光度（diopter）",
+            "**靈敏度（facility）｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**屈光度（diopter）｜屈光度**\n鏡片與調節能力常用的單位 D。",
+            "把判斷依據連回題目：**靈敏度（facility）｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**屈光度（diopter）｜屈光度**\n鏡片與調節能力常用的單位 D。"
           ],
-          "answer": "**facility｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**diopter｜屈光度**\n鏡片與調節能力常用的單位 D。"
+          "answer": "**靈敏度（facility）｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**屈光度（diopter）｜屈光度**\n鏡片與調節能力常用的單位 D。"
         },
         {
           "type": "practice",
@@ -229,17 +241,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「amplitude／response」，並說出一個判斷依據。",
-              "answer": "**amplitude｜幅度**\n調節情境中表示最大可用能力。\n\n**response｜反應準確度**\n調節情境中表示實際反應是否對準需求。",
+              "q": "用自己的話說明「幅度（amplitude）／反應（response）」，並說出一個判斷依據。",
+              "answer": "**幅度（amplitude）｜幅度**\n調節情境中表示最大可用能力。\n\n**反應（response）｜反應準確度**\n調節情境中表示實際反應是否對準需求。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**amplitude｜幅度**\n調節情境中表示最大可用能力。\n\n**response｜反應準確度**\n調節情境中表示實際反應是否對準需求。"
+              "explain": "**幅度（amplitude）｜幅度**\n調節情境中表示最大可用能力。\n\n**反應（response）｜反應準確度**\n調節情境中表示實際反應是否對準需求。",
+              "id": "cd4328c1b"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「facility／diopter」，並說出一個判斷依據。",
-              "answer": "**facility｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**diopter｜屈光度**\n鏡片與調節能力常用的單位 D。",
+              "q": "用自己的話說明「靈敏度（facility）／屈光度（diopter）」，並說出一個判斷依據。",
+              "answer": "**靈敏度（facility）｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**屈光度（diopter）｜屈光度**\n鏡片與調節能力常用的單位 D。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**facility｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**diopter｜屈光度**\n鏡片與調節能力常用的單位 D。"
+              "explain": "**靈敏度（facility）｜靈敏度**\n調節情境中表示遠近焦點切換速度。\n\n**屈光度（diopter）｜屈光度**\n鏡片與調節能力常用的單位 D。",
+              "id": "c229d036f"
             }
           ]
         },
@@ -247,27 +261,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "eso／underconverge：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "amplitude／response：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**eso｜內向**\n表示眼位或固視偏差朝內。\n\n**underconverge｜內聚不足**\n兩眼向內聚合的量少於注視需求。",
-            "**amplitude｜幅度**\n調節情境中表示最大可用能力。\n\n**response｜反應準確度**\n調節情境中表示實際反應是否對準需求。"
+            "內向（eso）／內聚不足（underconverge）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "幅度（amplitude）／反應（response）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**內向（eso）｜內向**\n表示眼位或固視偏差朝內。\n\n**內聚不足（underconverge）｜內聚不足**\n兩眼向內聚合的量少於注視需求。",
+            "**幅度（amplitude）｜幅度**\n調節情境中表示最大可用能力。\n\n**反應（response）｜反應準確度**\n調節情境中表示實際反應是否對準需求。"
           ],
           "flash": [
             {
-              "front": "eso／underconverge",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "內向（eso）／內聚不足（underconverge）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "ff4d01361"
             },
             {
-              "front": "amplitude／response",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "幅度（amplitude）／反應（response）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f2d699478"
             },
             {
-              "front": "facility／diopter",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "靈敏度（facility）／屈光度（diopter）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fac0047da"
             },
             {
-              "front": "用自己的話說明「eso／underconverge」，並說出一個判斷依據。",
-              "back": "**eso｜內向**\n表示眼位或固視偏差朝內。\n\n**underconverge｜內聚不足**\n兩眼向內聚合的量少於注視需求。"
+              "front": "用自己的話說明「內向（eso）／內聚不足（underconverge）」，並說出一個判斷依據。",
+              "back": "**內向（eso）｜內向**\n表示眼位或固視偏差朝內。\n\n**內聚不足（underconverge）｜內聚不足**\n兩眼向內聚合的量少於注視需求。",
+              "id": "f25bd55f2"
             }
           ]
         }
@@ -277,9 +295,9 @@
       "id": "terms-33-1",
       "title": "中英文核心名詞 33",
       "goals": [
-        "解釋age／minimum",
-        "解釋mean／maximum",
-        "解釋focusing ability／diameter"
+        "解釋年齡（age）／最低預期值（minimum）",
+        "解釋平均預期值（mean）／最高預期值（maximum）",
+        "解釋對焦能力（focusing ability）／直徑（diameter）"
       ],
       "steps": [
         {
@@ -289,8 +307,8 @@
         },
         {
           "type": "card",
-          "title": "age／minimum",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**age｜年齡**\n調節幅度最重要的預測因素。\n\n**minimum｜最低預期值**\nHofstetter 公式中臨床判斷調節不足最重要的門檻。",
+          "title": "年齡（age）／最低預期值（minimum）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**年齡（age）｜年齡**\n調節幅度最重要的預測因素。\n\n**最低預期值（minimum）｜最低預期值**\n霍夫斯泰特公式（Hofstetter） 公式中臨床判斷調節不足最重要的門檻。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -299,15 +317,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「age／minimum」，並說出一個判斷依據。",
-          "answer": "**age｜年齡**\n調節幅度最重要的預測因素。\n\n**minimum｜最低預期值**\nHofstetter 公式中臨床判斷調節不足最重要的門檻。",
+          "q": "用自己的話說明「年齡（age）／最低預期值（minimum）」，並說出一個判斷依據。",
+          "answer": "**年齡（age）｜年齡**\n調節幅度最重要的預測因素。\n\n**最低預期值（minimum）｜最低預期值**\n霍夫斯泰特公式（Hofstetter） 公式中臨床判斷調節不足最重要的門檻。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**age｜年齡**\n調節幅度最重要的預測因素。\n\n**minimum｜最低預期值**\nHofstetter 公式中臨床判斷調節不足最重要的門檻。"
+          "explain": "**年齡（age）｜年齡**\n調節幅度最重要的預測因素。\n\n**最低預期值（minimum）｜最低預期值**\n霍夫斯泰特公式（Hofstetter） 公式中臨床判斷調節不足最重要的門檻。",
+          "id": "c524b94e3"
         },
         {
           "type": "card",
-          "title": "mean／maximum",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**mean｜平均預期值**\nHofstetter 公式估計的同年齡平均調節幅度。\n\n**maximum｜最高預期值**\nHofstetter 公式估計的同年齡最高調節幅度。",
+          "title": "平均預期值（mean）／最高預期值（maximum）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**平均預期值（mean）｜平均預期值**\n霍夫斯泰特公式（Hofstetter） 公式估計的同年齡平均調節幅度。\n\n**最高預期值（maximum）｜最高預期值**\n霍夫斯泰特公式 公式估計的同年齡最高調節幅度。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -316,15 +335,16 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「mean／maximum」，並說出一個判斷依據。",
-          "answer": "**mean｜平均預期值**\nHofstetter 公式估計的同年齡平均調節幅度。\n\n**maximum｜最高預期值**\nHofstetter 公式估計的同年齡最高調節幅度。",
+          "q": "用自己的話說明「平均預期值（mean）／最高預期值（maximum）」，並說出一個判斷依據。",
+          "answer": "**平均預期值（mean）｜平均預期值**\n霍夫斯泰特公式（Hofstetter） 公式估計的同年齡平均調節幅度。\n\n**最高預期值（maximum）｜最高預期值**\n霍夫斯泰特公式（Hofstetter） 公式估計的同年齡最高調節幅度。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**mean｜平均預期值**\nHofstetter 公式估計的同年齡平均調節幅度。\n\n**maximum｜最高預期值**\nHofstetter 公式估計的同年齡最高調節幅度。"
+          "explain": "**平均預期值（mean）｜平均預期值**\n霍夫斯泰特公式（Hofstetter） 公式估計的同年齡平均調節幅度。\n\n**最高預期值（maximum）｜最高預期值**\n霍夫斯泰特公式（Hofstetter） 公式估計的同年齡最高調節幅度。",
+          "id": "c4ded992c"
         },
         {
           "type": "card",
-          "title": "focusing ability／diameter",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**focusing ability｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**diameter｜直徑**\n圓形結構的寬度，例如瞳孔大小。",
+          "title": "對焦能力（focusing ability）／直徑（diameter）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**對焦能力（focusing ability）｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**直徑（diameter）｜直徑**\n圓形結構的寬度，例如瞳孔大小。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -333,21 +353,22 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「focusing ability／diameter」，並說出一個判斷依據。",
-          "answer": "**focusing ability｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**diameter｜直徑**\n圓形結構的寬度，例如瞳孔大小。",
+          "q": "用自己的話說明「對焦能力（focusing ability）／直徑（diameter）」，並說出一個判斷依據。",
+          "answer": "**對焦能力（focusing ability）｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**直徑（diameter）｜直徑**\n圓形結構的寬度，例如瞳孔大小。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**focusing ability｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**diameter｜直徑**\n圓形結構的寬度，例如瞳孔大小。"
+          "explain": "**對焦能力（focusing ability）｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**直徑（diameter）｜直徑**\n圓形結構的寬度，例如瞳孔大小。",
+          "id": "c60cb50e7"
         },
         {
           "type": "example",
-          "title": "範例拆解：focusing ability／diameter",
-          "problem": "用自己的話說明「focusing ability／diameter」，並說出一個判斷依據。",
+          "title": "範例拆解：對焦能力（focusing ability）／直徑（diameter）",
+          "problem": "用自己的話說明「對焦能力（focusing ability）／直徑（diameter）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：focusing ability／diameter",
-            "**focusing ability｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**diameter｜直徑**\n圓形結構的寬度，例如瞳孔大小。",
-            "把判斷依據連回題目：**focusing ability｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**diameter｜直徑**\n圓形結構的寬度，例如瞳孔大小。"
+            "先確認題目問的主題：對焦能力（focusing ability）／直徑（diameter）",
+            "**對焦能力（focusing ability）｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**直徑（diameter）｜直徑**\n圓形結構的寬度，例如瞳孔大小。",
+            "把判斷依據連回題目：**對焦能力（focusing ability）｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**直徑（diameter）｜直徑**\n圓形結構的寬度，例如瞳孔大小。"
           ],
-          "answer": "**focusing ability｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**diameter｜直徑**\n圓形結構的寬度，例如瞳孔大小。"
+          "answer": "**對焦能力（focusing ability）｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**直徑（diameter）｜直徑**\n圓形結構的寬度，例如瞳孔大小。"
         },
         {
           "type": "practice",
@@ -356,17 +377,19 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「mean／maximum」，並說出一個判斷依據。",
-              "answer": "**mean｜平均預期值**\nHofstetter 公式估計的同年齡平均調節幅度。\n\n**maximum｜最高預期值**\nHofstetter 公式估計的同年齡最高調節幅度。",
+              "q": "用自己的話說明「平均預期值（mean）／最高預期值（maximum）」，並說出一個判斷依據。",
+              "answer": "**平均預期值（mean）｜平均預期值**\n霍夫斯泰特公式（Hofstetter） 公式估計的同年齡平均調節幅度。\n\n**最高預期值（maximum）｜最高預期值**\n霍夫斯泰特公式（Hofstetter） 公式估計的同年齡最高調節幅度。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**mean｜平均預期值**\nHofstetter 公式估計的同年齡平均調節幅度。\n\n**maximum｜最高預期值**\nHofstetter 公式估計的同年齡最高調節幅度。"
+              "explain": "**平均預期值（mean）｜平均預期值**\n霍夫斯泰特公式（Hofstetter） 公式估計的同年齡平均調節幅度。\n\n**最高預期值（maximum）｜最高預期值**\n霍夫斯泰特公式（Hofstetter） 公式估計的同年齡最高調節幅度。",
+              "id": "c4ded992c"
             },
             {
               "kind": "self",
-              "q": "用自己的話說明「focusing ability／diameter」，並說出一個判斷依據。",
-              "answer": "**focusing ability｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**diameter｜直徑**\n圓形結構的寬度，例如瞳孔大小。",
+              "q": "用自己的話說明「對焦能力（focusing ability）／直徑（diameter）」，並說出一個判斷依據。",
+              "answer": "**對焦能力（focusing ability）｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**直徑（diameter）｜直徑**\n圓形結構的寬度，例如瞳孔大小。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**focusing ability｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**diameter｜直徑**\n圓形結構的寬度，例如瞳孔大小。"
+              "explain": "**對焦能力（focusing ability）｜對焦能力**\n眼睛改變焦點以維持清楚的能力。\n\n**直徑（diameter）｜直徑**\n圓形結構的寬度，例如瞳孔大小。",
+              "id": "c60cb50e7"
             }
           ]
         },
@@ -374,27 +397,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "age／minimum：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "mean／maximum：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**age｜年齡**\n調節幅度最重要的預測因素。\n\n**minimum｜最低預期值**\nHofstetter 公式中臨床判斷調節不足最重要的門檻。",
-            "**mean｜平均預期值**\nHofstetter 公式估計的同年齡平均調節幅度。\n\n**maximum｜最高預期值**\nHofstetter 公式估計的同年齡最高調節幅度。"
+            "年齡（age）／最低預期值（minimum）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "平均預期值（mean）／最高預期值（maximum）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**年齡（age）｜年齡**\n調節幅度最重要的預測因素。\n\n**最低預期值（minimum）｜最低預期值**\n霍夫斯泰特公式（Hofstetter） 公式中臨床判斷調節不足最重要的門檻。",
+            "**平均預期值（mean）｜平均預期值**\n霍夫斯泰特公式（Hofstetter） 公式估計的同年齡平均調節幅度。\n\n**最高預期值（maximum）｜最高預期值**\n霍夫斯泰特公式（Hofstetter） 公式估計的同年齡最高調節幅度。"
           ],
           "flash": [
             {
-              "front": "age／minimum",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "年齡（age）／最低預期值（minimum）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f14818082"
             },
             {
-              "front": "mean／maximum",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "平均預期值（mean）／最高預期值（maximum）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "f377c24f9"
             },
             {
-              "front": "focusing ability／diameter",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "對焦能力（focusing ability）／直徑（diameter）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fae4de715"
             },
             {
-              "front": "用自己的話說明「age／minimum」，並說出一個判斷依據。",
-              "back": "**age｜年齡**\n調節幅度最重要的預測因素。\n\n**minimum｜最低預期值**\nHofstetter 公式中臨床判斷調節不足最重要的門檻。"
+              "front": "用自己的話說明「年齡（age）／最低預期值（minimum）」，並說出一個判斷依據。",
+              "back": "**年齡（age）｜年齡**\n調節幅度最重要的預測因素。\n\n**最低預期值（minimum）｜最低預期值**\n霍夫斯泰特公式（Hofstetter） 公式中臨床判斷調節不足最重要的門檻。",
+              "id": "f524b94e3"
             }
           ]
         }
@@ -404,7 +431,7 @@
       "id": "terms-34-1",
       "title": "中英文核心名詞 34",
       "goals": [
-        "解釋lens／minus"
+        "解釋透鏡（lens）／負度數（minus）"
       ],
       "steps": [
         {
@@ -414,8 +441,8 @@
         },
         {
           "type": "card",
-          "title": "lens／minus",
-          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。",
+          "title": "透鏡（lens）／負度數（minus）",
+          "body": "**一句話／白話**\n把中英文名詞和功能連在一起，避免只會背拼字。\n\n**觀念**\n**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
           "keys": [
             "把中英文名詞和功能連在一起，避免只會背拼字。"
           ],
@@ -424,37 +451,39 @@
         {
           "type": "check",
           "kind": "self",
-          "q": "用自己的話說明「lens／minus」，並說出一個判斷依據。",
-          "answer": "**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。",
+          "q": "用自己的話說明「透鏡（lens）／負度數（minus）」，並說出一個判斷依據。",
+          "answer": "**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
           "hint": "先說它是什麼，再說作用、條件或因果方向。",
-          "explain": "**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。"
+          "explain": "**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
+          "id": "ce2938010"
         },
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n用自己的話說明「lens／minus」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：lens／minus\n- **lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。\n- 把判斷依據連回題目：**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。\n\n**結論與依據**\n**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。",
+          "body": "**情境**\n用自己的話說明「透鏡（lens）／負度數（minus）」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：透鏡／負度數\n- **透鏡｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。\n- 把判斷依據連回題目：**透鏡｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數｜負度數**\n負鏡片的度數方向，負鏡片模糊法 會逐步加入負度數。\n\n**結論與依據**\n**透鏡｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數｜負度數**\n負鏡片的度數方向，負鏡片模糊法 會逐步加入負度數。",
           "keys": [
-            "**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。"
+            "**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。"
           ]
         },
         {
           "type": "check",
           "kind": "self",
           "q": "解釋這個結論所用的條件或判斷依據。",
-          "answer": "**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。",
+          "answer": "**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
           "hint": "把條件、機制或計算步驟依序串起來。",
-          "explain": "- 先確認題目問的主題：lens／minus\n- **lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。\n- 把判斷依據連回題目：**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。"
+          "explain": "- 先確認題目問的主題：透鏡（lens）／負度數（minus）\n- **透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。\n- 把判斷依據連回題目：**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
+          "id": "c74891871"
         },
         {
           "type": "example",
-          "title": "範例拆解：lens／minus",
-          "problem": "用自己的話說明「lens／minus」，並說出一個判斷依據。",
+          "title": "範例拆解：透鏡（lens）／負度數（minus）",
+          "problem": "用自己的話說明「透鏡（lens）／負度數（minus）」，並說出一個判斷依據。",
           "steps": [
-            "先確認題目問的主題：lens／minus",
-            "**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。",
-            "把判斷依據連回題目：**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。"
+            "先確認題目問的主題：透鏡（lens）／負度數（minus）",
+            "**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
+            "把判斷依據連回題目：**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。"
           ],
-          "answer": "**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。"
+          "answer": "**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。"
         },
         {
           "type": "practice",
@@ -463,10 +492,11 @@
           "checks": [
             {
               "kind": "self",
-              "q": "用自己的話說明「lens／minus」，並說出一個判斷依據。",
-              "answer": "**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。",
+              "q": "用自己的話說明「透鏡（lens）／負度數（minus）」，並說出一個判斷依據。",
+              "answer": "**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
               "hint": "先說它是什麼，再說作用、條件或因果方向。",
-              "explain": "**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。"
+              "explain": "**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
+              "id": "ce2938010"
             }
           ]
         },
@@ -474,27 +504,31 @@
           "type": "recap",
           "points": [
             "把中英文名詞和功能連在一起，避免只會背拼字。",
-            "lens／minus：把中英文名詞和功能連在一起，避免只會背拼字。",
-            "**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。",
-            "- 先確認題目問的主題：lens／minus\n- **lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。\n- 把判斷依據連回題目：**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。",
-            "**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。"
+            "透鏡（lens）／負度數（minus）：把中英文名詞和功能連在一起，避免只會背拼字。",
+            "**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
+            "- 先確認題目問的主題：透鏡（lens）／負度數（minus）\n- **透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。\n- 把判斷依據連回題目：**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
+            "**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。"
           ],
           "flash": [
             {
-              "front": "lens／minus",
-              "back": "把中英文名詞和功能連在一起，避免只會背拼字。"
+              "front": "透鏡（lens）／負度數（minus）",
+              "back": "把中英文名詞和功能連在一起，避免只會背拼字。",
+              "id": "fd65263b5"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：lens／minus\n- **lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。\n- 把判斷依據連回題目：**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。"
+              "back": "- 先確認題目問的主題：透鏡（lens）／負度數（minus）\n- **透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。\n- 把判斷依據連回題目：**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
+              "id": "f74891871"
             },
             {
-              "front": "用自己的話說明「lens／minus」，並說出一個判斷依據。",
-              "back": "**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。"
+              "front": "用自己的話說明「透鏡（lens）／負度數（minus）」，並說出一個判斷依據。",
+              "back": "**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
+              "id": "fe2938010"
             },
             {
               "front": "解釋這個結論所用的條件或判斷依據。",
-              "back": "- 先確認題目問的主題：lens／minus\n- **lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。\n- 把判斷依據連回題目：**lens｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**minus｜負度數**\n負鏡片的度數方向，minus lens to blur 會逐步加入負度數。"
+              "back": "- 先確認題目問的主題：透鏡（lens）／負度數（minus）\n- **透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。\n- 把判斷依據連回題目：**透鏡（lens）｜鏡片**\n可改變光線聚散的光學元件；眼內水晶體也是一種透鏡。\n\n**負度數（minus）｜負度數**\n負鏡片的度數方向，負鏡片模糊法（minus lens to blur） 會逐步加入負度數。",
+              "id": "f74891871"
             }
           ]
         }
