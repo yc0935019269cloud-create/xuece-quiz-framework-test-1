@@ -2,10 +2,13 @@
   "schema": "xd-bank/1",
   "set": {
     "id": "cornea-supply-q",
-    "subject": "cornea",
-    "name": "U3 角膜的營養、神經與臨床應用（自編練習）",
-    "order": 3,
-    "source": "依據：The structure and function of cornea（2026）p.43–56"
+    "subject": "eye_ans",
+    "name": "【角膜】U3 角膜的營養、神經與臨床應用（自編練習）",
+    "order": 13,
+    "source": "依據：The structure and function of cornea（2026）p.43–56",
+    "path": [
+      "角膜"
+    ]
   },
   "groups": [
     {

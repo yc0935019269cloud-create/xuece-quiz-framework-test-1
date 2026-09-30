@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fff7df">
+  <title>生理學急速學習・咕咕嘎嘎版</title>
+  <link rel="stylesheet" href="./assets/rapid.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">🐣 生理學急速學習</a>
+    <div class="top-actions">
+      <button id="randomBtn" class="soft">🎲 抽一張</button>
+      <button id="resetBtn" class="soft danger">重設進度</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">PHYSIOLOGY FINAL · BABY SPEEDRUN</p>
+        <h1>把生理學餵成<br><span>一口一口的小粥</span></h1>
+        <p class="hero-copy">先懂「發生什麼事」，再認 English 名詞，最後才背考點。看到虛線 English 名詞可以點，會用中文解釋。</p>
+      </div>
+      <div class="hero-card">
+        <b>急速吃法</b>
+        <ol>
+          <li>先讀「寶寶話」</li>
+          <li>再背「考試話」</li>
+          <li>遮住答案，自己說一次</li>
+        </ol>
+        <div id="progressText" class="progress-text"></div>
+        <div class="progress"><i id="progressBar"></i></div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <div id="unitTabs" class="unit-tabs"></div>
+      <label class="search">🔎 <input id="searchInput" type="search" placeholder="搜 ECG、腎臟、ACh、排卵…"></label>
+      <div class="mode-tabs">
+        <button data-mode="sprint" class="active">⚡ 必考衝刺</button>
+        <button data-mode="library">🧸 全部白話</button>
+        <button data-mode="quiz">🍼 快問快答</button>
+        <button data-mode="glossary">ABC 名詞奶瓶</button>
+      </div>
+    </section>
+
+    <section id="content" class="content" aria-live="polite"></section>
+  </main>
+
+  <dialog id="termDialog" class="term-dialog">
+    <button class="dialog-close" aria-label="關閉">×</button>
+    <p class="eyebrow">名詞翻譯蒟蒻</p>
+    <h2 id="termTitle"></h2>
+    <p id="termMeaning"></p>
+  </dialog>
+
+  <script src="./assets/content.js"></script>
+  <script>window.PHYSIO_RAPID_BASE = window.PHYSIO_CONTENT;</script>
+  <script src="../互動式教學/assets/content.js"></script>
+  <script src="./assets/merge-full-units.js"></script>
+  <script src="./assets/high-yield.js"></script>
+  <script src="./assets/rapid.js"></script>
+</body>
+</html>

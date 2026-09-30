@@ -2,10 +2,13 @@
   "schema": "xd-bank/1",
   "set": {
     "id": "cornea-general-q",
-    "subject": "cornea",
-    "name": "U1 角膜總論：尺寸、屈光與組成（自編練習）",
-    "order": 1,
-    "source": "依據：The structure and function of cornea（2026）p.3–8、49–50"
+    "subject": "eye_ans",
+    "name": "【角膜】U1 角膜總論：尺寸、屈光與組成（自編練習）",
+    "order": 11,
+    "source": "依據：The structure and function of cornea（2026）p.3–8、49–50",
+    "path": [
+      "角膜"
+    ]
   },
   "groups": [],
   "questions": [

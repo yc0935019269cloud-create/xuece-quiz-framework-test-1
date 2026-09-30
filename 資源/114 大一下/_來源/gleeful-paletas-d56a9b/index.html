@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>救救我！基礎光學・一步一步帶你解</title>
+<style>
+  :root{
+    --bg:#0f1820; --bg2:#13212c; --card:#182b38; --card2:#1f3949;
+    --line:#27465a; --ink:#eaf4fb; --dim:#9fc0d4; --accent:#4fd1c5;
+    --accent2:#ffd166; --good:#42d392; --bad:#ff6b81; --pill:#21465b;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,-apple-system,sans-serif;
+    background:radial-gradient(1200px 600px at 10% -10%,#1b3445 0%,var(--bg) 55%) fixed;
+    color:var(--ink); line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:22px 16px 80px}
+  header.top{text-align:center;margin-bottom:18px}
+  header.top .badge{display:inline-block;background:var(--accent);color:#06202a;font-weight:800;
+    padding:3px 12px;border-radius:999px;font-size:13px;letter-spacing:1px}
+  header.top h1{margin:.4em 0 .15em;font-size:clamp(22px,5vw,30px)}
+  header.top p{margin:0;color:var(--dim);font-size:14px}
+  .intro{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;
+    margin:14px 0 18px;color:var(--dim);font-size:14px;box-shadow:var(--shadow)}
+  .intro b{color:var(--accent2)}
+
+  .filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:16px}
+  .filters button{background:var(--pill);color:var(--ink);border:1px solid var(--line);
+    border-radius:999px;padding:7px 15px;font-size:14px;cursor:pointer;transition:.15s}
+  .filters button:hover{transform:translateY(-1px)}
+  .filters button.active{background:var(--accent);color:#06202a;font-weight:800;border-color:var(--accent)}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+  .qcard{background:linear-gradient(160deg,var(--card),var(--bg2));border:1px solid var(--line);
+    border-radius:16px;padding:14px;cursor:pointer;transition:.18s;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .qcard:hover{transform:translateY(-3px);border-color:var(--accent)}
+  .qcard .ch{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.5px}
+  .qcard h3{margin:.3em 0 .25em;font-size:17px}
+  .qcard .hook{color:var(--dim);font-size:13px;min-height:38px}
+  .qcard .go{margin-top:8px;font-size:13px;color:var(--accent2);font-weight:700}
+  .qcard .num{position:absolute;right:10px;top:8px;font-size:40px;font-weight:900;color:#ffffff10}
+
+  /* solver */
+  .overlay{position:fixed;inset:0;background:rgba(4,10,14,.72);backdrop-filter:blur(3px);
+    display:none;align-items:flex-start;justify-content:center;padding:18px;overflow:auto;z-index:50}
+  .overlay.show{display:flex}
+  .solver{background:var(--bg2);border:1px solid var(--line);border-radius:20px;max-width:720px;width:100%;
+    box-shadow:var(--shadow);padding:20px;margin:10px 0 40px}
+  .solver .head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:6px}
+  .solver .head .tag{font-size:12px;color:var(--accent);font-weight:800}
+  .solver .head h2{margin:.15em 0;font-size:20px}
+  .solver .src{font-size:12px;color:var(--dim)}
+  .closeBtn{background:#ffffff14;border:none;color:var(--ink);width:34px;height:34px;border-radius:50%;
+    font-size:18px;cursor:pointer;flex:none}
+  .closeBtn:hover{background:#ffffff28}
+
+  .stem{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent2);
+    border-radius:12px;padding:13px 15px;margin:12px 0;font-size:15.5px}
+  .simple{background:#10303a;border:1px dashed var(--accent);border-radius:12px;padding:11px 14px;
+    margin:10px 0;font-size:14px;color:#cdeef0}
+  .simple b{color:var(--accent2)}
+  .formula{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:12px 15px;margin:10px 0}
+  .formula .lab{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.5px;margin-bottom:3px}
+  .formula .f{font-size:17px;font-weight:700;letter-spacing:.3px}
+
+  .steps{margin:8px 0}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:9px 0;
+    display:flex;gap:11px;align-items:flex-start;animation:pop .25s ease}
+  @keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .step .n{flex:none;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#06202a;
+    font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .step .t{font-size:15px}
+
+  .controls{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 4px}
+  .controls button{flex:1;min-width:120px;border:none;border-radius:12px;padding:12px;font-size:15px;
+    font-weight:800;cursor:pointer;transition:.15s}
+  .btn-next{background:var(--accent);color:#06202a}
+  .btn-next:hover{filter:brightness(1.08)}
+  .btn-back{background:#ffffff14;color:var(--ink)}
+  .btn-back:disabled{opacity:.4;cursor:not-allowed}
+  .progress{height:6px;background:#ffffff14;border-radius:999px;overflow:hidden;margin:6px 0 2px}
+  .progress i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));width:0;transition:.3s}
+
+  .answer{margin-top:14px;display:none}
+  .answer.show{display:block;animation:pop .3s}
+  .answer .lab{font-size:13px;color:var(--accent2);font-weight:800;margin-bottom:8px}
+  .opts{display:grid;gap:9px}
+  .opt{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1.5px solid var(--line);
+    border-radius:12px;padding:11px 13px;cursor:pointer;transition:.15s;font-size:15px;text-align:left;color:var(--ink)}
+  .opt:hover{border-color:var(--accent)}
+  .opt .k{flex:none;width:24px;height:24px;border-radius:7px;background:#ffffff16;font-weight:800;
+    display:flex;align-items:center;justify-content:center;font-size:13px}
+  .opt.correct{border-color:var(--good);background:#143b30}
+  .opt.correct .k{background:var(--good);color:#06241a}
+  .opt.wrong{border-color:var(--bad);background:#3a1620;opacity:.92}
+  .opt.wrong .k{background:var(--bad);color:#2a0a10}
+  .opt .why{font-size:13px;color:var(--dim);margin-top:3px;display:none}
+  .opt.correct .why,.opt.wrong .why{display:block}
+  .opt.correct .why{color:#bdf3d8}
+  .opt.wrong .why{color:#ffc6cf}
+
+  .trap{background:#3a2a12;border:1px solid #6a4d1c;border-radius:12px;padding:11px 14px;margin:14px 0 2px;
+    font-size:14px;color:#ffe1a8;display:none}
+  .trap.show{display:block;animation:pop .3s}
+  .trap b{color:var(--accent2)}
+  .doneTip{text-align:center;color:var(--dim);font-size:13px;margin-top:12px;display:none}
+  .doneTip.show{display:block}
+  footer{text-align:center;color:#5f7e90;font-size:12px;margin-top:30px}
+  @media(max-width:520px){.grid{grid-template-columns:1fr 1fr}.qcard h3{font-size:15px}.qcard .hook{min-height:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="badge">救救我救我救我</span>
+    <h1>基礎光學・一步一步帶你解</h1>
+    <p>每種題型挑一題國考代表題，先抓公式 → 一步步揭開 → 自己選答案對答案</p>
+  </header>
+
+  <div class="intro">
+    這裡有 <b>15 種題型</b> 的代表題（厚透鏡 / 球面屈光不正 / 反射 / 像差）。點任一張卡片，
+    我會像家教一樣 <b>一步一步</b> 陪你算：先看「這題在考什麼」、再「抓出公式」、然後逐步帶數字，
+    最後你自己<b>點選答案</b>對對看。算不出來？就從這裡開始救起來 💪
+  </div>
+
+  <div class="filters" id="filters">
+    <button data-ch="all" class="active">全部</button>
+    <button data-ch="6">六・厚透鏡</button>
+    <button data-ch="7">七・球面屈光不正</button>
+    <button data-ch="8">八・反射</button>
+    <button data-ch="9">九・像差</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <footer>資料來源：驗光師「視覺光學」・驗光生「眼鏡光學概要」歷屆國考（106–114 年）精選代表題</footer>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="solver" id="solver"></div>
+</div>
+
+<script>
+/* ───────── 代表題資料（每種題型一題）───────── */
+const CH = {6:"第六章・厚透鏡",7:"第七章・球面屈光不正",8:"第八章・反射",9:"第九章・像差"};
+const REPS = [
+  { ch:6, type:"單面屈光力 F=(n′−n)/r", src:"114 驗光生・眼鏡光學概要",
+    hook:"基弧 8.3 mm 的隱形眼鏡是幾度？把『半徑』變『度數』。",
+    stem:"硬式隱形眼鏡（折射率 1.3375）的基弧為 8.3 mm，把它的後表面當作單一折射面，其屈光度為何？",
+    simple:"一個彎曲的面就是一個度數。度數 =（兩邊折射率差）÷（半徑，單位公尺）。半徑越彎(越小)，度數越大。",
+    formula:"F =（n′ − n）/ r　（r 一定換成公尺）",
+    steps:[
+      "先找折射率差：角膜弧度慣用 n′=1.3375，外面是空氣 n=1，差 = 0.3375。",
+      "把半徑換單位：8.3 mm = 0.0083 m（這步最常忘！）。",
+      "代入公式：F = 0.3375 ÷ 0.0083。",
+      "算出 F ≈ +40.66 D。"
+    ],
+    opts:["36.11 D","39.22 D","40.66 D","42.33 D"], ans:2,
+    why:{2:"0.3375 ÷ 0.0083 ≈ 40.66，正解。",0:"折射率差取錯（例如用 1.30）才會偏小。",3:"半徑取太小或提早四捨五入會偏大。"},
+    trap:"8.3 mm 要先變 0.0083 m，用 mm 直接除會差 1000 倍；折射率差是 0.3375 不是 0.375。"
+  },
+  { ch:6, type:"簡併（縮減）厚度 t/n", src:"114 驗光生・眼鏡光學概要",
+    hook:"2 mm 厚的玻璃，光走起來等於多厚的空氣？",
+    stem:"一道光線穿透中心厚度 2 mm、折射率 1.523 的鏡片，其簡併（縮減）厚度約為多少？",
+    simple:"光在玻璃裡走得慢，等效路程會變短。把實際厚度『除以折射率』就得到簡併厚度（一定比原本薄）。",
+    formula:"簡併厚度 = 實際厚度 t ÷ 折射率 n",
+    steps:[
+      "確認概念：除以 n（不是乘以 n）。",
+      "代入：2 mm ÷ 1.523。",
+      "得 ≈ 1.31 mm（比 2 mm 薄，合理）。"
+    ],
+    opts:["1.31 mm","1.42 mm","1.51 mm","1.62 mm"], ans:0,
+    why:{0:"2 ÷ 1.523 ≈ 1.31 mm。",3:"算成 2 × 某數或方向相反會偏大。"},
+    trap:"是「除以」n；簡併厚度必定比實際厚度小，若算出比 2 大一定錯。"
+  },
+  { ch:6, type:"後頂點屈光力 Fv", src:"112 驗光師・視覺光學",
+    hook:"前+8、後−3、厚 5mm，實際戴起來幾度？標稱+5 不是答案！",
+    stem:"一透鏡前、後表面屈光力分別為 +8.00 D、−3.00 D，中心厚度 5 mm，折射率 1.6，其後頂點屈光力 Fv 為多少？",
+    simple:"後頂點度數＝把前表面『被厚度放大一點』後，再加上後表面。正透鏡會比標稱(+5)再正一點點。",
+    formula:"Fv = F₁ /（1 −（t/n）·F₁）+ F₂",
+    steps:[
+      "先算簡併厚度 t/n = 0.005 ÷ 1.6 = 0.003125 m。",
+      "算分母：（t/n）·F₁ = 0.003125 × 8 = 0.025，所以分母 = 1 − 0.025 = 0.975。",
+      "前表面被放大：F₁ ÷ 0.975 = 8 ÷ 0.975 = 8.205。",
+      "再加後表面：8.205 +（−3）= +5.205 ≈ +5.20 D。"
+    ],
+    opts:["+4.60 D","+4.80 D","+5.00 D","+5.20 D"], ans:3,
+    why:{3:"8/0.975 − 3 ≈ +5.20 D。",2:"+5.00 是忽略厚度的『標稱度數』，不是後頂點度數。"},
+    trap:"只有 F₁ 要被 (1−(t/n)F₁) 修正，F₂ 直接加；厚度讓正透鏡更正一點。"
+  },
+  { ch:6, type:"等效屈光力 Fe（反求厚度）", src:"113 驗光師・視覺光學",
+    hook:"已知 Fe，倒過來求厚度。公式會用、也要會反解。",
+    stem:"空氣中一雙凸厚透鏡，前表面 +2 D、後表面 +5 D，折射率 1.6，等效屈光力 Fe=+6.875 D，則厚度為何？",
+    simple:"等效屈光力＝兩面相加再被厚度『扣掉一點』。題目給了扣掉多少，我們反推厚度。",
+    formula:"Fe = F₁ + F₂ −（t/n）·F₁·F₂",
+    steps:[
+      "把已知塞進公式：6.875 = 2 + 5 −（t/1.6）×2×5。",
+      "整理：7 − 6.875 = 0.125 =（t/1.6）×10 = 6.25 t。",
+      "解 t：t = 0.125 ÷ 6.25 = 0.02 m = 2 cm。"
+    ],
+    opts:["2 cm","3 cm","4 cm","5 cm"], ans:0,
+    why:{0:"0.125 = 6.25 t → t = 0.02 m = 2 cm。",3:"把 n 漏掉或乘錯會得到偏大的厚度。"},
+    trap:"(t/n) 的 n 用鏡片折射率 1.6；算出 t 是公尺，記得換回 cm。"
+  },
+  { ch:7, type:"遠點計算（簡化眼）", src:"114 驗光生・眼鏡光學概要",
+    hook:"+62D、眼軸 21mm，遠點在眼前還眼後？",
+    stem:"一屈光力 +62.00 D、眼軸長 21 mm 的眼睛，平均折射率 nₑ=1.336，則該眼的遠點位於何處？",
+    simple:"先看『要聚在視網膜需要幾度』，再跟眼睛實際度數比。差出來的就是遠點的聚散度，取倒數就是距離。",
+    formula:"V = nₑ / 軸長；K = V − F；遠點距離 = 1 / K（物空間用 n=1）",
+    steps:[
+      "要落在 21 mm 視網膜需要：V = 1.336 ÷ 0.021 = 63.62 D。",
+      "眼睛只有 +62 D，差 K = 63.62 − 62 = +1.62 D。",
+      "K 為正（會聚）→ 遠點是『虛』的，在角膜後方。",
+      "距離 = 1 ÷ 1.62 ≈ 0.617 m → 角膜後 61.7 cm（此眼為遠視）。"
+    ],
+    opts:["角膜後 50 cm","角膜後 61.7 cm","角膜後 82.5 cm","角膜前無限遠"], ans:1,
+    why:{1:"K=+1.62 D → 角膜後 61.7 cm。",3:"+62 D 不剛好等於正視，所以不是無限遠。"},
+    trap:"正 K → 遠點在眼後（遠視）；負 K 才在眼前（近視）。距離用 n=1。"
+  },
+  { ch:7, type:"軸性屈光不正 → 配鏡", src:"112 驗光師・視覺光學",
+    hook:"21mm、+62D，要配近視鏡還是遠視鏡？幾度？",
+    stem:"某眼眼軸長 21 mm、眼內總屈光力 +62.00 D、平均折射率 1.333，此人需配何種眼鏡及度數？",
+    simple:"算『要聚在視網膜需要幾度』，比眼睛實際度數多就是遠視(配凸鏡)、少就是近視(配凹鏡)。",
+    formula:"V = n / 軸長；缺的度數 = V − F",
+    steps:[
+      "落在 21 mm 需要：V = 1.333 ÷ 0.021 = 63.48 D。",
+      "眼睛只有 +62 D，缺 63.48 − 62 = +1.48 D。",
+      "缺『正』度數＝遠視 → 配遠視（凸）眼鏡 +1.48 D。"
+    ],
+    opts:["近視眼鏡 1.48 D","遠視眼鏡 1.48 D","近視眼鏡 2.48 D","遠視眼鏡 2.48 D"], ans:1,
+    why:{1:"缺 +1.48 D → 遠視鏡。",0:"把正負弄反才會誤判成近視。"},
+    trap:"眼睛太短、度數不夠 → 遠視；n/軸長要用公尺。"
+  },
+  { ch:7, type:"頂點距離換算（框→隱形）", src:"114 驗光生・眼鏡光學概要",
+    hook:"框架 −6.00D 換成隱形眼鏡要幾度？",
+    stem:"甲的近視可用 −6.00 D 框架眼鏡矯正、頂點距離 14 mm。若改以隱形眼鏡矯正，度數約為多少？",
+    simple:"鏡片越靠近眼睛，近視所需的負度數會『變小一點』。用頂點距離公式換算。",
+    formula:"F꜀ₗ = F /（1 − d·F），d = 頂點距離（公尺）",
+    steps:[
+      "d = 14 mm = 0.014 m。",
+      "算分母：1 − 0.014×(−6) = 1 + 0.084 = 1.084。",
+      "F꜀ₗ = −6 ÷ 1.084 = −5.535 ≈ −5.50 D。"
+    ],
+    opts:["−5.00 D","−5.50 D","−6.00 D","−6.50 D"], ans:1,
+    why:{1:"−6 ÷ 1.084 ≈ −5.50 D。",2:"−6.00 是沒換算的框架度數。"},
+    trap:"近視往眼睛靠近 → 度數變小（負得少）；F 帶負號使分母變 1+0.084。"
+  },
+  { ch:7, type:"欠矯反推新處方", src:"109 驗光生・眼鏡光學概要",
+    hook:"舊眼鏡戴不夠，遠點跑出來了，怎麼反推新隱形眼鏡度數？",
+    stem:"柯先生戴 3 年前的 −6.00 DS 眼鏡（頂點距離 15 mm），發現現在左眼遠點在『鏡片前 50 cm』，則左眼隱形眼鏡處方應為何？",
+    simple:"分兩步：①先補上『還沒矯正掉的度數』得到真正眼鏡度數；②再用頂點距離換成隱形眼鏡。",
+    formula:"欠矯量 = −1 / 遠點距離；新眼鏡度 = 舊度 + 欠矯量；F꜀ₗ = F /（1 − d·F）",
+    steps:[
+      "戴 −6 還剩遠點在鏡前 50 cm → 還欠 −1 ÷ 0.5 = −2.00 D。",
+      "真正眼鏡度數 = −6.00 +（−2.00）= −8.00 D。",
+      "換隱形眼鏡：−8 ÷（1 − 0.015×(−8)）= −8 ÷ 1.12 = −7.14 D。",
+      "最接近 −7.25 D。"
+    ],
+    opts:["−5.00 DS","−6.25 DS","−7.25 DS","−8.00 DS"], ans:2,
+    why:{2:"補上欠矯得 −8 D，再換到角膜 ≈ −7.25 D。",3:"−8.00 是眼鏡面度數，還沒換成隱形眼鏡。"},
+    trap:"別只看 −6；要先加上欠矯 −2 D，再做頂點距離換算。"
+  },
+  { ch:8, type:"凹面鏡成像與放大率", src:"114 驗光師・視覺光學",
+    hook:"凹面鏡＋物在焦距內，像是放大還縮小？虛還實？",
+    stem:"空氣中，一實物在凹面鏡（曲率半徑 1 公尺）左側 25 公分，則最後成像的大小、性質為何？",
+    simple:"凹面鏡像放大鏡：物在焦距內 → 像跑到鏡後，變成放大、正立的虛像（像化妝鏡放大臉）。",
+    formula:"f = R/2；1/v + 1/u = 1/f；放大率 m = −v/u",
+    steps:[
+      "焦距 f = R/2 = 100/2 = 50 cm。物在 25 cm，比焦距近（焦距內）。",
+      "1/v = 1/f − 1/u = 1/50 − 1/25 = −1/50 → v = −50 cm（負＝虛像，在鏡後）。",
+      "放大率 m = −v/u = −(−50)/25 = +2（正＝正立、放大 2 倍）。",
+      "結論：2 倍大、正立、虛像。"
+    ],
+    opts:["2 倍大、虛像","0.5 倍大、虛像","2 倍大、實像","0.5 倍大、實像"], ans:0,
+    why:{0:"m = +2、虛像。",3:"物若在焦距外才會是縮小或倒立實像。"},
+    trap:"物在焦距內 → 放大虛像；m 帶正號代表正立。"
+  },
+  { ch:8, type:"反射率 R", src:"112 驗光師・視覺光學",
+    hook:"鏡片泡在水裡反射率剩多少？先由速度求折射率。",
+    stem:"光在某材質行進速度為 2×10⁸ m/s，此材質於『水中』單一面的反射率為何？（空氣中光速 3×10⁸ m/s，水 n=1.333）",
+    simple:"兩邊折射率越接近，反射越少。先用速度求材質折射率，再套反射率公式（分母是相加！）。",
+    formula:"n = c / v；R = [（n₂ − n₁）/（n₂ + n₁）]²",
+    steps:[
+      "材質折射率 n = 3×10⁸ ÷ 2×10⁸ = 1.5。",
+      "在水中：n₁ = 1.333、n₂ = 1.5。",
+      "代入：R = [(1.5−1.333)/(1.5+1.333)]² = (0.167/2.833)²。",
+      "R ≈ (0.059)² ≈ 0.0035 = 0.35%。"
+    ],
+    opts:["3.4%","1.5%","0.35%","0.72%"], ans:2,
+    why:{2:"(0.167/2.833)² ≈ 0.35%。",0:"3.4% 是在『空氣中』(1 vs 1.5) 的反射率。"},
+    trap:"分母是兩折射率『相加』不是相減；先由速度求 n=1.5。"
+  },
+  { ch:8, type:"抗反射膜折射率", src:"113 驗光師・視覺光學",
+    hook:"CR-39 要鍍抗反射膜，膜的折射率是多少？開根號就對了。",
+    stem:"一需鍍抗反射膜的 CR-39 塑膠鏡片（n=1.498），該抗反射薄膜的折射率約為何？",
+    simple:"要讓上下兩面的反射光一樣強而互相抵消，膜的折射率＝鏡片折射率『開根號』。",
+    formula:"n_膜 = √(n_鏡片)",
+    steps:[
+      "套公式：n_膜 = √1.498。",
+      "計算：√1.498 ≈ 1.224。",
+      "答案 ≈ 1.22。"
+    ],
+    opts:["1.22","1.49","2.1","3.2"], ans:0,
+    why:{0:"√1.498 ≈ 1.22。",1:"1.49 是鏡片折射率本身（陷阱），不是膜。"},
+    trap:"是開根號不是取一半；膜厚度則要 1/4 波長（別跟折射率搞混）。"
+  },
+  { ch:8, type:"Purkinje I 影像位置", src:"112 驗光師・視覺光學",
+    hook:"角膜亮點＝凸面鏡反射，像在角膜後幾 mm？",
+    stem:"某光源位於角膜前表面 50 cm 處，角膜前表面半徑 7.80 mm，其 Purkinje I 影像在角膜後幾 mm？",
+    simple:"角膜前表面對反射光就像一面『凸面鏡』。物很遠時，像差不多落在焦點附近，稍微近一點。",
+    formula:"凸面鏡 f = R/2；1/v + 1/u = 1/f（凸面鏡 f 在鏡後）",
+    steps:[
+      "焦距 f = R/2 = 7.8/2 = 3.9 mm（凸面鏡虛焦點，在鏡後）。",
+      "物在 50 cm = 500 mm（很遠但非無限遠）。",
+      "1/v = 1/f − 1/u ≈ 1/(−3.9) − 1/500 → v ≈ −3.87 mm。",
+      "負號＝像在角膜『後方』3.87 mm。"
+    ],
+    opts:["3.90 mm","3.87 mm","3.83 mm","3.75 mm"], ans:1,
+    why:{1:"考慮 50 cm 物距得 3.87 mm。",0:"3.90 是物在無限遠的理想焦距。"},
+    trap:"物不是無限遠 → 略小於焦距 3.9 → 3.87；用凸面鏡計算。"
+  },
+  { ch:8, type:"角膜弧度儀屈光度", src:"109 驗光師・視覺光學",
+    hook:"角膜半徑 7mm 換成度數，用哪個折射率？",
+    stem:"角膜弧度測量儀測得角膜曲率半徑 7 mm，角膜折射率以 1.3375 計算，此角膜屈光度約為？",
+    simple:"角膜弧度儀用 1.3375 這個『調整折射率』把半徑直接換成度數，公式跟單面屈光力一樣。",
+    formula:"F =（n − 1）/ r =（1.3375 − 1）/ r",
+    steps:[
+      "折射率差 = 1.3375 − 1 = 0.3375。",
+      "半徑換單位：7 mm = 0.007 m。",
+      "F = 0.3375 ÷ 0.007 = 48.21 D ≈ 48.2 D。"
+    ],
+    opts:["50.2 D","48.2 D","45.2 D","40.2 D"], ans:1,
+    why:{1:"0.3375 ÷ 0.007 ≈ 48.2 D。",0:"若改用真實角膜 1.376 會偏大到 ≈ 53 D。"},
+    trap:"用的是 1.3375（keratometric index）不是真正角膜 1.376；半徑換公尺。"
+  },
+  { ch:9, type:"阿貝數與色像差", src:"112 驗光生・眼鏡光學概要",
+    hook:"給三個波長折射率，求阿貝數＋色像差。",
+    stem:"一 +10.00 D 鏡片，紅 656 nm 折射率 1.521、藍 486 nm 折射率 1.530、黃 587 nm 折射率 1.523，求阿貝數與（縱向）色像差。",
+    simple:"阿貝數＝黃光的屈光本事 ÷ 藍紅折射率差。色像差＝度數 ÷ 阿貝數。",
+    formula:"V =（n_d − 1）/（n_F − n_C）；色像差 = F / V",
+    steps:[
+      "分子 n_d − 1 = 1.523 − 1 = 0.523（黃光）。",
+      "分母 n_F − n_C = 1.530 − 1.521 = 0.009（藍 − 紅）。",
+      "阿貝數 V = 0.523 ÷ 0.009 = 58.11。",
+      "色像差 = F ÷ V = 10 ÷ 58.11 = 0.17 D。"
+    ],
+    opts:["58.11 及 0.17 D","58.11 及 5.81 D","0.017 及 58.11 D","0.017 及 60.00 D"], ans:0,
+    why:{0:"V=58.11、CA=10/58.11=0.17 D。",1:"5.81 是把 F/V 誤算成 F×0.581 之類。"},
+    trap:"分子要 n_d − 1（記得減 1）；分母是藍減紅；色像差用 F/V。"
+  },
+  { ch:9, type:"橫向色像差（稜鏡）", src:"113 驗光生・眼鏡光學概要",
+    hook:"鏡片偏心 10mm，會有多少色像差稜鏡？",
+    stem:"高度近視戴 −10.00 D 鏡片、阿貝數 36，當鏡片中心偏離視線 10 mm 時，產生多少稜鏡效應的橫向色像差？",
+    simple:"先用 Prentice 算偏心處的稜鏡度，再除以阿貝數就是色像差。",
+    formula:"稜鏡度 = h(cm) × |F|；橫向色像差 = 稜鏡度 / 阿貝數",
+    steps:[
+      "偏心換單位：10 mm = 1.0 cm。",
+      "Prentice 稜鏡度 = 1.0 × 10 = 10 Δ。",
+      "橫向色像差 = 稜鏡度 ÷ 阿貝數 = 10 ÷ 36。",
+      "= 0.277 ≈ 0.27 Δ。"
+    ],
+    opts:["0.27 Δ","0.70 Δ","10.00 Δ","36.00 Δ"], ans:0,
+    why:{0:"10 ÷ 36 ≈ 0.27 Δ。",2:"10 Δ 只是該點稜鏡度，還沒除阿貝數。"},
+    trap:"10 mm 要換 1.0 cm；最後一定要除阿貝數，別把 10 Δ 當答案。"
+  }
+];
+
+/* ───────── 渲染卡片 ───────── */
+const grid = document.getElementById('grid');
+const filters = document.getElementById('filters');
+const overlay = document.getElementById('overlay');
+const solver = document.getElementById('solver');
+let curFilter = 'all';
+
+function renderGrid(){
+  grid.innerHTML = '';
+  REPS.forEach((q,i)=>{
+    if(curFilter!=='all' && String(q.ch)!==curFilter) return;
+    const card = document.createElement('div');
+    card.className = 'qcard';
+    card.innerHTML =
+      `<div class="num">${q.ch}</div>`+
+      `<div class="ch">${CH[q.ch]}</div>`+
+      `<h3>${q.type}</h3>`+
+      `<div class="hook">${q.hook}</div>`+
+      `<div class="go">▶ 一步一步帶我解</div>`;
+    card.onclick = ()=>openSolver(i);
+    grid.appendChild(card);
+  });
+}
+filters.querySelectorAll('button').forEach(b=>{
+  b.onclick = ()=>{
+    filters.querySelectorAll('button').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active'); curFilter = b.dataset.ch; renderGrid();
+  };
+});
+
+/* ───────── 開啟解題 ───────── */
+let stepIdx = 0, curQ = null;
+function openSolver(i){
+  curQ = REPS[i]; stepIdx = 0;
+  solver.innerHTML =
+    `<div class="head">
+       <div>
+         <div class="tag">${CH[curQ.ch]}</div>
+         <h2>${curQ.type}</h2>
+         <div class="src">📄 ${curQ.src}</div>
+       </div>
+       <button class="closeBtn" id="closeBtn">×</button>
+     </div>
+     <div class="stem">${curQ.stem}</div>
+     <div class="simple">💡 <b>這題在考什麼：</b>${curQ.simple}</div>
+     <div class="formula"><div class="lab">先抓出公式</div><div class="f">${curQ.formula}</div></div>
+     <div class="progress"><i id="bar"></i></div>
+     <div class="steps" id="steps"></div>
+     <div class="controls">
+       <button class="btn-back" id="backBtn" disabled>◀ 上一步</button>
+       <button class="btn-next" id="nextBtn">下一步 ▶</button>
+     </div>
+     <div class="answer" id="answer">
+       <div class="lab">🎯 換你選！點一個答案對對看：</div>
+       <div class="opts" id="opts"></div>
+     </div>
+     <div class="trap" id="trap"><b>⚠ 小心陷阱：</b>${curQ.trap}</div>
+     <div class="doneTip" id="doneTip">搞懂了嗎？關掉這題，回去挑戰其他題型 👍</div>`;
+  overlay.classList.add('show');
+  document.getElementById('closeBtn').onclick = closeSolver;
+  document.getElementById('nextBtn').onclick = nextStep;
+  document.getElementById('backBtn').onclick = backStep;
+  renderSteps();
+}
+function renderSteps(){
+  const box = document.getElementById('steps');
+  box.innerHTML = '';
+  for(let s=0;s<stepIdx;s++){
+    const d = document.createElement('div');
+    d.className='step';
+    d.innerHTML = `<div class="n">${s+1}</div><div class="t">${curQ.steps[s]}</div>`;
+    box.appendChild(d);
+  }
+  const total = curQ.steps.length;
+  document.getElementById('bar').style.width = Math.round(stepIdx/total*100)+'%';
+  document.getElementById('backBtn').disabled = stepIdx===0;
+  const nextBtn = document.getElementById('nextBtn');
+  if(stepIdx>=total){
+    nextBtn.style.display='none';
+    revealAnswer();
+  } else {
+    nextBtn.style.display='';
+    nextBtn.textContent = (stepIdx===total-1)? '看最後一步 ▶' : '下一步 ▶';
+  }
+}
+function nextStep(){ if(stepIdx<curQ.steps.length){stepIdx++; renderSteps();} }
+function backStep(){ if(stepIdx>0){stepIdx--;
+  document.getElementById('answer').classList.remove('show');
+  document.getElementById('trap').classList.remove('show');
+  document.getElementById('doneTip').classList.remove('show');
+  document.getElementById('nextBtn').style.display='';
+  renderSteps();} }
+
+function revealAnswer(){
+  const ansBox = document.getElementById('answer');
+  const opts = document.getElementById('opts');
+  if(ansBox.classList.contains('show')) return;
+  opts.innerHTML='';
+  const L=['A','B','C','D'];
+  curQ.opts.forEach((t,i)=>{
+    const o=document.createElement('button');
+    o.className='opt';
+    o.innerHTML=`<div class="k">${L[i]}</div><div><div>${t}</div><div class="why">${(curQ.why&&curQ.why[i])||''}</div></div>`;
+    o.onclick=()=>{
+      document.querySelectorAll('#opts .opt').forEach(x=>{ x.style.pointerEvents='none'; });
+      curQ.opts.forEach((_,j)=>{
+        const el = opts.children[j];
+        if(j===curQ.ans){ el.classList.add('correct'); if(!el.querySelector('.why').textContent) el.querySelector('.why').textContent='正解。'; }
+        else if(j===i){ el.classList.add('wrong'); if(!el.querySelector('.why').textContent) el.querySelector('.why').textContent='再用上面的步驟核對一次數字。'; }
+      });
+      document.getElementById('trap').classList.add('show');
+      document.getElementById('doneTip').classList.add('show');
+    };
+    opts.appendChild(o);
+  });
+  ansBox.classList.add('show');
+}
+function closeSolver(){ overlay.classList.remove('show'); }
+overlay.onclick = (e)=>{ if(e.target===overlay) closeSolver(); };
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeSolver(); });
+
+renderGrid();
+</script>
+</body>
+</html>
