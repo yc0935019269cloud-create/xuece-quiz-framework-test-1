@@ -16,7 +16,12 @@ const FX = (() => {
     return `${w.off ? `<div class="weapon offhand">${ic(w.off, 34)}</div>` : ''}<div class="weapon main ${w.bow ? 'bow' : ''} ${w.big ? 'big' : ''}" ${hd ? '' : 'id="eWeapon"'}>${ic(w.main, w.big ? 54 : 46)}</div>`;
   }
   function heroHD(tile, cls, size) {
+    if (window.HeroAnim && HeroAnim.get(tile)) return '<div class="hero-body hd-hero animated-hero">' + HeroAnim.html(tile, size) + '</div>';
     return `<div class="hero-body anim-bob hd-hero" style="--k:${size / 96}">${hdImg(tile, size)}${weaponHTML(cls, true, size / 96)}</div>`;
+  }
+  function heroBattle(tile, cls, size=112) {
+    if(window.HeroAnim && HeroAnim.get(tile)) return '<div class="hero-body animated-hero">'+HeroAnim.html(tile,size)+'</div>';
+    return '<div class="hero-body anim-bob">'+SP.tile(tile,size)+weaponHTML(cls)+'</div>';
   }
 
   /* ---------------- 共用工具 ---------------- */
@@ -104,26 +109,54 @@ const FX = (() => {
     ranger: {
       '疾射': async () => { heroMove('atk-recoil'); wpn('w-pull', 300); await S(150); SFX.play('miss'); await proj('arrow', 240); sparks(5); SFX.play('hit'); },
       '箭雨': async () => { heroMove('atk-recoil'); wpn('w-pull', 300); await S(120); for (let i = 0; i < 3; i++) { proj('arrow', 420, 60 + i * 15, 'hero', -4 + i * 4); await S(80); } await S(300); sparks(8); SFX.play('hit'); },
-      '穿透箭': async () => { heroMove('atk-recoil'); wpn('w-pull', 420); await S(260); await proj('arrow pierce', 200); burst('#62d66e', 80); shake(); SFX.play('crit'); }
+      '穿透箭': async () => { heroMove('atk-recoil'); wpn('w-pull', 420); await S(260); await proj('arrow pierce', 200); burst('#62d66e', 80); shake(); SFX.play('crit'); },
+      '疾風雙射': async () => { heroMove('atk-recoil', 620); await S(120); proj('arrow', 280, 0, 'hero', -12); await S(140); await proj('arrow pierce', 240, 0, 'hero', 10); sparks(8, '#b9f3c0'); SFX.play('hit'); }
     },
     cleric: {
       '聖光柱': async () => { heroMove('atk-cast'); wpn('w-raise'); await S(180); pillar(); SFX.play('heal'); await S(220); sparks(8, '#fff2b0'); },
       '聖錘擊': async () => { heroMove('atk-dash'); wpn('w-overhead'); await S(200); burst('#ffd84a', 100); sparks(8, '#ffd84a'); SFX.play('hit'); },
-      '神聖光球': async () => { heroMove('atk-cast'); wpn('w-raise'); await S(150); await proj('holy', 420, 20); burst('#fff2b0', 90); SFX.play('crit'); }
+      '神聖光球': async () => { heroMove('atk-cast'); wpn('w-raise'); await S(150); await proj('holy', 420, 20); burst('#fff2b0', 90); SFX.play('crit'); },
+      '星環祝禱': async () => { heroMove('atk-cast', 620); await S(160); proj('holy', 320, 15, 'hero', -12); await S(160); burst('#fff2b0', 75); await S(130); burst('#ffd84a', 120); sparks(12, '#fff2b0'); SFX.play('heal'); }
     },
     berserker: {
       '猛躍重擊': async () => { heroMove('atk-jump', 560); wpn('w-overhead', 560); await S(320); vslash('#ffb0a0'); burst('#ec5454', 110); dust(); shake(true); SFX.play('crit'); },
       '旋風斬': async () => { heroMove('atk-dash', 600); wpn('w-spin', 600); for (let i = 0; i < 3; i++) { await S(110); slash(i * 120, '#ffd0c0', 100); SFX.play('hit'); } },
-      '劈砍': async () => { heroMove('atk-dash'); wpn('w-overhead'); await S(200); vslash('#fff', 20); dust(); shake(); SFX.play('hit'); }
+      '劈砍': async () => { heroMove('atk-dash'); wpn('w-overhead'); await S(200); vslash('#fff', 20); dust(); shake(); SFX.play('hit'); },
+      '裂地橫掃': async () => { heroMove('atk-dash', 650); await S(180); slash(80, '#ffa58c', 120); dust(); await S(180); slash(-20, '#ffd0b5', 100); burst('#ec5454', 80); shake(true); SFX.play('hit'); }
     }
   };
   /* 播放攻擊；回傳招式名稱 */
+  const attackBags = {};
+  function pickAttack(clsId) {
+    const names = Object.keys(ATTACKS[clsId] || ATTACKS.knight);
+    let bag = attackBags[clsId];
+    if (!bag || !bag.length) {
+      bag = names.slice();
+      for (let i=bag.length-1;i>0;i--) { const j=Math.floor(Math.random()*(i+1)); [bag[i],bag[j]]=[bag[j],bag[i]]; }
+      attackBags[clsId]=bag;
+    }
+    return bag.pop();
+  }
+  async function critical(clsId) {
+    const colors={knight:'#cfe3ff',mage:'#c7a5ff',ranger:'#a8f0ba',cleric:'#fff2b0',berserker:'#ff917c'};
+    const color=colors[clsId]||'#ffcf4a';
+    const motion=window.HeroAnim ? HeroAnim.play(hero(),'critical') : Promise.resolve();
+    await S(300);
+    if(clsId==='knight'){slash(-35,color,130);vslash('#fff',35);}
+    else if(clsId==='mage'){bolt();burst(color,155);}
+    else if(clsId==='ranger'){await proj('arrow pierce',170);slash(0,color,120);}
+    else if(clsId==='cleric'){pillar('rgba(255,240,170,.9)');burst(color,150);}
+    else {vslash(color,15);dust();slash(70,'#ffe2bc',150);}
+    flash('rgba(255,245,215,.38)');shake(true);burst(color,140);sparks(12,color);SFX.play('crit');
+    await motion;
+  }
   async function attack(clsId, e) {
     const set = ATTACKS[clsId] || ATTACKS.knight;
     const names = Object.keys(set);
-    const name = U.pick(names);
-    await set[name]();
-    if (e && e.crit) { flash('#fff'); shake(true); burst('#ffcf4a', 140); SFX.play('crit'); }
+    const name = pickAttack(clsId);
+    const motion=window.HeroAnim ? HeroAnim.play(hero(),'attack',names.indexOf(name)) : Promise.resolve();
+    await Promise.all([set[name](), motion]);
+    if (e && e.crit) await critical(clsId);
     return name;
   }
 
@@ -162,5 +195,35 @@ const FX = (() => {
       <div class="theme-name">${th.name}</div>`;
   }
 
-  return { weaponHTML, heroHD, attack, stageBG, themeFor, THEMES, ATTACKS };
+  /* ---------------- 怪物攻擊演出：style 見 monsters.js（預設近身衝撞） ---------------- */
+  function monProj(kind, ms = 360, arc = 0, offY = 0) {
+    const a = pos('mon'), b = pos('hero');
+    const dx = b.x - a.x, dy = b.y - a.y - offY, rot = Math.atan2(dy, dx) * 180 / Math.PI;
+    add(`<div class="fx proj ${kind} ${arc ? 'arc' : ''}" style="left:${a.x}px;top:${a.y + offY}px;--dx:${dx}px;--dy:${dy}px;--arc:${-arc}px;--rot:${rot}deg;animation-duration:${ms}ms"></div>`, ms + 60);
+    return S(ms);
+  }
+  async function monStrike(style) {
+    const m = ent('mon'), caster = () => { cls(m, 'anim-pop', 320); return S(160); };
+    switch (style) {
+      case 'orb': await caster(); await monProj('orb', 340); break;
+      case 'fire': await caster(); await monProj('fireball', 340, 24); break;
+      case 'ink': await caster(); await monProj('ink', 380, 36); break;
+      case 'frost': await caster(); await monProj('shard', 320); break;
+      case 'spore': await caster(); [0, 1, 2].forEach(i => setTimeout(() => monProj('spore', 420, 18 + i * 14, i * 8 - 8), i * 70)); await S(520); break;
+      case 'needle': await caster(); [0, 1, 2].forEach(i => setTimeout(() => monProj('needle', 300, 0, i * 12 - 12), i * 60)); await S(400); break;
+      case 'swarm': await caster(); [0, 1, 2, 3].forEach(i => setTimeout(() => monProj('sting', 380, 10 + i * 8, i * 10 - 15), i * 60)); await S(520); break;
+      case 'zap': {
+        await caster(); const h = pos('hero');
+        add(`<div class="fx bolt" style="left:${h.x - 18}px;top:0;height:${h.y + 10}px"></div>`, 420); flash('rgba(255,248,192,.45)'); await S(240); break;
+      }
+      case 'slam': {
+        cls(m, 'anim-lunge-l', 400); await S(170); const h = pos('hero');
+        for (let i = 0; i < 8; i++) add(`<div class="fx dust" style="left:${h.x + U.rnd(-30, 30)}px;top:${h.bottom - 10}px;--dx:${U.rnd(-70, 70)}px;--dy:${U.rnd(-40, -10)}px"></div>`, 700);
+        shake(); break;
+      }
+      default: cls(m, 'anim-lunge-l', 400); await S(160);
+    }
+  }
+
+  return { weaponHTML, heroHD, heroBattle, attack, critical, pickAttack, monStrike, stageBG, themeFor, THEMES, ATTACKS };
 })();

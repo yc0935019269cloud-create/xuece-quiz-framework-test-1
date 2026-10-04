@@ -3,6 +3,7 @@ const SP = (() => {
   const TILE = id => typeof id === 'string' && id.startsWith('sk:') ? `assets/skins/tile_${id.slice(3)}.png` : `assets/kenney/tiles/tile_${String(id).padStart(4, '0')}.png`;
 
   function tile(id, size = 64, cls = '', style = '') {
+    if (window.HeroAnim && HeroAnim.get(id)) return HeroAnim.html(id, size, cls, style);
     return `<span class="sp ${cls}" style="width:${size}px;height:${size}px;${style}"><img class="px" src="${TILE(id)}" alt=""></span>`;
   }
 
@@ -623,7 +624,7 @@ const SP = (() => {
 
   /* icon: 數字 => kenney tile；字串 => 自繪圖 */
   function icon(ic, size = 32, cls = '', style = '') {
-    if (typeof ic === 'number' || (typeof ic === 'string' && ic.startsWith('sk:'))) return tile(ic, size, cls, style);
+    if (typeof ic === 'number' || (typeof ic === 'string' && (ic.startsWith('sk:') || ic.startsWith('ha:')))) return tile(ic, size, cls, style);
     if (MAPS[ic]) return pix(ic, size, cls, style);
     if (PETMAPS[ic]) return SP.pet(ic, size, cls, style);
     return `<span class="sp ${cls}" style="width:${size}px;height:${size}px;font-size:${Math.round(size * .7)}px;line-height:${size}px;text-align:center;${style}">${ic}</span>`;

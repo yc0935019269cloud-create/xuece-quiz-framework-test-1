@@ -392,6 +392,11 @@ const LEARN_UI = (() => {
       const m = B.boss || B.mon; if (!D.cfg.battle || !m || m.hp <= 0) return;
       let dmg = firstOk ? 10 : 5, crit = false;
       if (firstOk && B.en > 0) { B.en--; dmg = 15; crit = true; }
+      const heroTarget = U.$('#lbHero');
+      const clsId = Store.profile.activeClass;
+      const moveName = FX.pickAttack(clsId);
+      const moveIndex = Object.keys(FX.ATTACKS[clsId]).indexOf(moveName);
+      HeroAnim.play(heroTarget, crit ? 'critical' : 'attack', moveIndex);
       anim('#lbHero', 'anim-lunge'); SFX.play(crit ? 'crit' : 'hit');
       setTimeout(() => {
         m.hp = Math.max(0, m.hp - dmg); anim('#lbMon', 'anim-hurt'); fxText('mon', (crit ? '⚡暴擊 ' : '') + '-' + dmg, crit ? 'crit' : '');
@@ -400,7 +405,7 @@ const LEARN_UI = (() => {
           if (!B.boss) { B.kills++; D.stat.kills++; const bs = Store.profile.bestiary; bs[m.id] = (bs[m.id] || 0) + 1; Store.saveProfile(); say(`擊敗了 ${m.name}！${g ? `（魂晶 +${g}）` : ''}`); SFX.play('kill'); }
           anim('#lbMon', 'anim-die');
         }
-        save(); setTimeout(drawBattle, m.hp <= 0 ? 650 : 250);
+        save(); setTimeout(drawBattle, Math.max(m.hp <= 0 ? 650 : 250, crit ? 700 : 500));
       }, 200);
     }
     U.$('#lpBattle').onclick = () => { D.cfg.battle = !D.cfg.battle; save(); SFX.play('click'); if (D.cfg.battle) { B.seg = -1; enterSeg(); } else drawBattle(); };

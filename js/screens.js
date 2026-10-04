@@ -238,7 +238,7 @@ const Screens = (() => {
           <div class="hill" style="background-image:url(${hillURL()})"></div><div class="ground"></div>
           <div class="camp-obj camp-board" id="cBoard" title="每日任務">${SP.tile(63, 36)}</div>
           <div class="camp-obj camp-fire" id="cFire"><div class="shadow"></div>${PetArt.html('campfire', 70, '', '', null, null, { still: 1 })}<div class="fire-glow"></div></div>
-          <div class="camp-obj camp-hero" id="cHero"><div class="shadow"></div>${FX.heroHD(Store.heroTile(), p.activeClass, 94)}</div>
+          <div class="camp-obj camp-hero" id="cHero"><div class="shadow"></div>${FX.heroHD(Store.heroTile(), p.activeClass, 124)}</div>
           ${pet ? `<div class="camp-obj camp-pet ${tod === 'night' ? 'sleepy' : ''}" id="cPet" style="left:52%"><div class="shadow"></div>${Store.petHTML(p.activePet, 66)}<div class="zzz">z<sup>z</sup></div></div>` : ''}
         </div>
         <div class="camp-bar" id="campBar"></div>
@@ -854,19 +854,25 @@ const Screens = (() => {
   function heroSkinModal(K) {
     const p = P(); p.heroSkin = p.heroSkin || {}; p.ownedHeroSkins = p.ownedHeroSkins || [];
     const list = C.HERO_SKINS[K.id];
-    let tryId = p.heroSkin[K.id] || '';
+    const currentId = () => p.heroSkin[K.id] || '';
+    let tryId = currentId(), group = list.find(x=>x.id===tryId)?.actor ? 'all' : 'classic';
     const owned = id => !id || p.ownedHeroSkins.includes(K.id + ':' + id);
     const m = U.modal({ title: `${K.name}的造型`, body: '<div id="hsk"></div>', onClose: () => classes() });
     const box = U.$('#hsk', m.el);
     function draw() {
       const sk = list.find(x => x.id === tryId) || list[0];
-      const wearing = (p.heroSkin[K.id] || '') === tryId;
+      const wearing = currentId() === tryId;
+      const visible = list.filter(s=>group==='classic' ? !s.actor : s.actor && (group==='all'||s.gender===group));
       box.innerHTML = `<div class="row" style="align-items:flex-start;gap:16px;flex-wrap:wrap">
         <div class="pet-stage big-stage" style="width:170px;height:170px;flex:none">${FX.heroHD(C.skinIcon(sk), K.id, 140)}</div>
         <div class="grow"><b class="gold-t" style="font-size:20px">${sk.name}</b>
           <p class="small-t dim">點選下面的造型可以免費試穿。造型只改變外觀（戰鬥、營地、深淵地圖都會換上），不影響能力。魂晶：<b class="purple-t">${p.gems}</b></p>
-          <div class="row">${wearing ? '<span class="tag ok">穿著中</span>' : owned(tryId) ? '<button class="px-btn gold" id="hwear">換上這套</button>' : `<button class="px-btn purple" id="hbuy" ${p.gems < sk.cost ? 'disabled' : ''}>購買並換上（${sk.cost} 魂晶）</button>`}</div></div></div>
-        <div class="grid g3 mt">${list.map(s => `<button class="px-btn style-opt ${s.id === tryId ? 'sel' : ''}" data-sk="${s.id}">${SP.tile(C.skinIcon(s), 48)}<span>${s.name}<br>${owned(s.id) ? ((p.heroSkin[K.id] || '') === s.id ? '<b class="green-t">穿著中</b>' : '<b class="dim">已擁有</b>') : `<b class="purple-t">${s.cost}</b>`}</span></button>`).join('')}</div>`;
+          <div class="row">${wearing ? '<span class="tag ok">穿著中</span>' : owned(tryId) ? '<button class="px-btn gold" id="hwear">換上這套</button>' : `<button class="px-btn purple" id="hbuy" ${p.gems < sk.cost ? 'disabled' : ''}>購買並換上（${sk.cost} 魂晶）</button>`}</div>
+          ${sk.actor ? '<div class="hero-preview-actions mt"><span class="small-t dim">動畫試看</span><div class="row"><button class="px-btn small" data-hmove="0">攻擊 1</button><button class="px-btn small" data-hmove="1">攻擊 2</button><button class="px-btn small" data-hmove="2">攻擊 3</button><button class="px-btn small" data-hmove="3">攻擊 4</button><button class="px-btn small gold" data-hmove="crit">爆擊</button></div></div>' : ''}</div></div>
+        <div class="row hero-skin-filters mt">${[['all','全部新造型（8）'],['male','男生（4）'],['female','女生（4）'],['classic','經典造型']].map(([id,label])=>`<button class="px-btn small ${id===group?'gold':''}" data-hgroup="${id}">${label}</button>`).join('')}</div>
+        <div class="grid hero-skin-grid mt">${visible.map(s => `<button class="px-btn style-opt ${s.id === tryId ? 'sel' : ''}" data-sk="${s.id}">${SP.tile(C.skinIcon(s), s.actor?72:48)}<span>${s.name}<br>${owned(s.id) ? (currentId() === s.id ? '<b class="green-t">穿著中</b>' : '<b class="dim">已擁有</b>') : `<b class="purple-t">${s.cost}</b>`}</span></button>`).join('')}</div>`;
+      box.querySelectorAll('[data-hgroup]').forEach(b=>b.onclick=()=>{group=b.dataset.hgroup;draw();});
+      box.querySelectorAll('[data-hmove]').forEach(b=>b.onclick=async()=>{b.disabled=true;try{await HeroAnim.play(box.querySelector('.big-stage'),b.dataset.hmove==='crit'?'critical':'attack',Number(b.dataset.hmove)||0);}finally{b.disabled=false;}});
       U.$$('[data-sk]', box).forEach(b => b.onclick = () => { tryId = b.dataset.sk; SFX.play('click'); draw(); });
       const wear = U.$('#hwear', box), buy = U.$('#hbuy', box);
       const apply = () => { p.heroSkin[K.id] = tryId; Store.saveProfile(); SFX.play('level'); U.toast(`${K.name}換上「${sk.name}」！`); draw(); };

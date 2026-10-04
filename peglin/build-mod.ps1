@@ -15,7 +15,7 @@ if (-not $PluginOnly) {
     & $compiler /nologo /target:winexe "/out:$Runtime\Start-PeglinQuiz.exe" /r:System.Web.Extensions.dll /r:System.Windows.Forms.dll /r:System.Drawing.dll "$source\QuizBridge.cs"
     if ($LASTEXITCODE -ne 0) { throw '啟動器編譯失敗（若營地服務正在執行，請先從系統匣結束）' }
 }
-$refs = @('mscorlib','System','System.Core','netstandard','UnityEngine','UnityEngine.CoreModule','UnityEngine.UIModule','UnityEngine.UI','Unity.TextMeshPro','UnityEngine.IMGUIModule','UnityEngine.TextRenderingModule','UnityEngine.ImageConversionModule','UnityEngine.InputLegacyModule','Assembly-CSharp','Assembly-CSharp-firstpass','Newtonsoft.Json') | ForEach-Object { '/r:' + (Join-Path $managed ($_ + '.dll')) }
+$refs = @('mscorlib','System','System.Core','netstandard','UnityEngine','UnityEngine.CoreModule','UnityEngine.UIModule','UnityEngine.UI','Unity.TextMeshPro','UnityEngine.TextCoreFontEngineModule','UnityEngine.IMGUIModule','UnityEngine.TextRenderingModule','UnityEngine.ImageConversionModule','UnityEngine.InputLegacyModule','Assembly-CSharp','Assembly-CSharp-firstpass','Newtonsoft.Json') | ForEach-Object { '/r:' + (Join-Path $managed ($_ + '.dll')) }
 & $compiler /nologo /noconfig /nostdlib /nowarn:1701 /target:library "/out:$game\BepInEx\plugins\Quiz\QuizPlugin.dll" "/r:$core\BepInEx.dll" "/r:$core\0Harmony.dll" @refs "$source\QuizPlugin.cs" "$source\QuizCanvas.cs"
 if ($LASTEXITCODE -ne 0) { throw '刷題模組編譯失敗' }
 Write-Output "編譯完成 → $game"

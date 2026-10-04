@@ -430,6 +430,13 @@ input[type=range]::-moz-range-thumb { width: 14px; height: 18px; background: var
 
 /* ---------- 武器 ---------- */
 .hero-body { position: relative; display: inline-block; }
+.hero-sprite { vertical-align: bottom; flex-shrink: 0; overflow: visible; }
+.hero-sprite canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; }
+.hero-skin-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.hero-skin-grid .style-opt { flex-direction: column; min-height: 125px; justify-content: center; gap: 4px; white-space: normal; }
+.hero-preview-actions .row,.hero-skin-filters { flex-wrap: wrap; gap: 6px; }
+.animated-hero { line-height: 0; }
+@media (max-width:640px) { .hero-skin-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 .weapon { position: absolute; z-index: 3; pointer-events: none; image-rendering: pixelated; }
 .weapon.main { right: -16px; bottom: 22px; transform-origin: 40% 90%; transform: rotate(28deg); }
 .weapon.main.big { right: -24px; bottom: 16px; }
@@ -472,6 +479,10 @@ input[type=range]::-moz-range-thumb { width: 14px; height: 18px; background: var
 .fx.orb { width: 26px; height: 26px; margin: -13px; background: #e3ccff; box-shadow: 0 0 0 4px #b98bff, 0 0 0 8px #7a4fd0, 0 0 26px 10px #b98bff; }
 .fx.holy { width: 22px; height: 22px; margin: -11px; background: #fff; box-shadow: 0 0 0 4px #fff2b0, 0 0 0 8px #ffd84a, 0 0 26px 10px #fff2b0; }
 .fx.shard { width: 12px; height: 12px; margin: -6px; background: #e0fbff; box-shadow: 0 0 0 3px #5fc8e8, 0 0 12px 4px #a8f0ff; clip-path: polygon(0 50%, 60% 0, 100% 50%, 60% 100%); width: 26px; }
+.fx.ink { width: 20px; height: 20px; margin: -10px; background: #2a1f44; box-shadow: 0 0 0 4px #6a4fa8, 0 0 14px 6px #3b2a66; }
+.fx.spore { width: 12px; height: 12px; margin: -6px; background: #c9ff9a; box-shadow: 0 0 0 3px #4f9a4a, 0 0 10px 4px #a8e86a; }
+.fx.needle { width: 30px; height: 3px; margin-top: -1px; background: linear-gradient(90deg, transparent, #cfd6e0 35%, #fff); }
+.fx.sting { width: 9px; height: 9px; margin: -4px; background: #ffd84a; box-shadow: 0 0 0 2px #1b1325; }
 .fx.arrow { width: 38px; height: 4px; margin-top: -2px; background: linear-gradient(90deg, #62d66e 0 18%, #c9a26b 18% 80%, #e8eef5 80%); }
 .fx.arrow.pierce { width: 60px; height: 6px; box-shadow: 0 0 14px 4px #62d66e; background: linear-gradient(90deg, transparent, #9bf08a 30%, #fff 85%); }
 .fx.bolt { width: 36px; z-index: 9; background: linear-gradient(#fff, #fff8c0 60%, #ffd84a); clip-path: polygon(40% 0, 70% 0, 50% 35%, 80% 35%, 30% 100%, 45% 55%, 15% 55%); filter: drop-shadow(0 0 10px #ffd84a); animation: boltA .4s steps(4) forwards; }

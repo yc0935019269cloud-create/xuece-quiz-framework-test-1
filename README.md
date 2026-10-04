@@ -119,6 +119,7 @@ js/ css/                遊戲程式
 | `js/util.js` | `U` 工具（DOM、Markdown、toast、modal、`U.sameAns` 填答比對）、`SKEY`、`APP_TITLE`、懸停提示 |
 | `js/question.js` | `QV`：題目呈現與作答（文字／圖片題、題組、單選多選是非、填答自動批改、自評） |
 | `js/content.js`／`content2.js` | 主題、科目、怪物、特性、首領、遺物、天賦、道具、職業、寵物、事件、成就 |
+| `js/monsters.js` | 怪物擴充包（23 種新怪、手繪 12×12 像素圖、特性 shock/expose/ambush/harden、怪物攻擊演出 `m.fx` → `FX.monStrike`）；新增怪物照此檔格式加 `ART`＋`C.MONSTERS.push` |
 | `js/store.js` | 存檔、題目篩選、作答紀錄、錯題本 |
 | `js/run.js`／`battle.js`／`fx.js` | 遠征規則、戰鬥畫面、攻擊動畫 |
 | `js/screens.js` | 營地、冒險地圖、自由遠征、深淵設定、題庫、錯題本、寵物、圖鑑、統計、設定 |
@@ -156,3 +157,16 @@ js/ css/                遊戲程式
 - `資源/114 大一下/預覽.html` 可直接離線開啟；`.來源` 為網站與舊資料快照、`.校驗` 為覆蓋對照、ID 對照與驗證，導入器會跳過點號目錄。
 - 工具：`semester_sources.py → semester_extract.cjs → semester_convert.py → semester_bilingual.py → semester_preview.py → semester_validate.cjs`，之後 `python tools/build.py --strict --index`。來源已下載時不必重抓。轉換工具只歸檔本次不再使用的 s114 學習檔，保存在 `.校驗/歷次生成/`，不可清除其他使用者檔案。
 - 嚴格建置與實際 importer.scan 均通過；來源逐題完整性、課程節奏、圖檔存在及互動 JS／數值邊界已檢查。不是完整醫學審題認證；需確認事項見資源內 `01_需要確認與修正.md`。
+
+## 角色與動畫（2026-10-04）
+
+- 已實裝 5 個職業各 4 男／4 女，共 40 款內建免費造型；職業本身仍沿用原有解鎖規則。入口：職業殿堂 → 造型，可篩選男生／女生、新造型／經典，並試播攻擊與爆擊。
+- 圖片模型生成的正本：`assets/heroes/*.png`，每人 8 個獨立姿勢（待機、眨眼、4 種攻擊、爆擊蓄力、爆擊重擊），共 320 個姿勢。動畫由這些姿勢加上播放節奏、位移與職業特效組成，不是逐幀影片。
+- `js/heroes.js`：造型註冊、Canvas 姿勢播放器、呼吸／眨眼、攻擊／爆擊；`js/hero-atlas.js`：自動產生的來源範圍、腳底 pivot、共同比例與鄰格遮罩資訊。PNG 正本不經程式改繪。
+- 4 種攻擊使用洗牌袋隨機播放（每袋各出現一次）；`js/fx.js` 中遊俠補疾風雙射、聖女補星環祝禱、狂戰士補裂地橫掃；爆擊各有職業特效。營地、職業殿堂、地圖、戰鬥、結算及學習模式共用角色播放器。
+- 舊造型 ID 與已購造型保留在「經典造型」。沒有已存選擇時顯示各職業第一款新男造型；已有明確選擇時沿用。新造型 cost=0，切換不扣魂晶。
+- 動畫展示頁：`docs/hero-art/preview.html`（可 file://）；提示詞與造型清單：`docs/hero-art/manifest.json`；來源／修正紀錄：`docs/hero-art/generation-log.json`。
+- 重新分析素材：`python tools/hero_atlas.py`（需要 Pillow、NumPy，只寫 metadata，不修改 PNG）；校驗：`docs/hero-art/atlas-check.json`。
+- QA 已通過 40 款換装與保存、320 姿勢非空／差異、160 次普通動畫與 40 次爆擊動畫、5 職業實際答題攻擊、4 招隨機覆盖、390px 手機版及 file:// 載入。結果：`docs/hero-art/qa-report.json`；截圖：`docs/hero-art/screenshots/`。
+- QA 在獨立且用完丟棄的 Edge headless context 內執行，備份／還原該 context 的 localStorage，沒有使用使用者的瀏覽器存檔。測試工具：`tools/check_hero_animations.cjs`、`tools/check_hero_motion.cjs`（Playwright + Edge）；本機可設定 `$env:NODE_PATH='E:\NEWTEST\skull-atlas-3d\node_modules'` 後執行。
+- 本次入口快取版本 v31；腳本順序為 content2 → hero-atlas → heroes → store。不要手改自動產生的 hero-atlas.js，也不要改已用於存檔的 px_<職業>_<m/f><1..4> ID。

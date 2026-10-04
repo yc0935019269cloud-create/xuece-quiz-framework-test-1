@@ -371,7 +371,7 @@ class Run {
       }
     } else if (this.D(2)) hp = Math.round(hp * 1.2);
     const pre = m.secret ? '' : U.pick(C.monPrefix(subj));
-    return { name: (elite ? `【${affix.join('・')}】` : '') + pre + m.name, secret: !!m.secret, sp: m.id, desc: m.desc, tile: m.tile, filter: m.filter || U.pick(C.VARIANT), hp, maxHp: hp, atk, elite, subj, traits, mechs };
+    return { name: (elite ? `【${affix.join('・')}】` : '') + pre + m.name, secret: !!m.secret, sp: m.id, desc: m.desc, fx: m.fx, tile: m.tile, filter: m.filter || U.pick(C.VARIANT), hp, maxHp: hp, atk, elite, subj, traits, mechs };
   }
   hasTrait(k) { const m = this.s.mon; return !!(m && m.traits && m.traits.includes(k)); }
   spawnAbyss() {
@@ -400,6 +400,7 @@ class Run {
   hitMon(d) {
     const s = this.s;
     if (this.hasTrait('armor')) d = Math.max(1, d - 3);
+    if (this.hasTrait('harden')) { d = Math.max(1, d - (s.bf.hard || 0)); s.bf.hard = Math.min(3, (s.bf.hard || 0) + 1); }
     if (this.hasTrait('stoneskin') && (s.bf.stone || 0) < 2) { s.bf.stone = (s.bf.stone || 0) + 1; d = Math.ceil(d / 2); }
     if (s.bf.bshield > 0) { const a = Math.min(s.bf.bshield, d); s.bf.bshield -= a; d -= a; }
     s.mon.hp = Math.max(0, s.mon.hp - d);
@@ -434,7 +435,9 @@ class Run {
       if (s.bf.calm) { mult *= 2; s.bf.calm = false; }
       if (s.bf.smite) { mult *= s.bf.smite; s.bf.smite = 0; ev.push({ t: 'skill', name: '強力一擊' }); }
       const hunter = this.passive('hunter');
-      const crit = Math.random() < p.crit - (this.hasTrait('hex') ? 0.1 : 0) || !!(hunter && mon.hp < mon.maxHp * hunter.val);
+      let crit = Math.random() < p.crit - (this.hasTrait('hex') ? 0.1 : 0) || !!(hunter && mon.hp < mon.maxHp * hunter.val);
+      if (s.bf.numb) { s.bf.numb = false; if (crit) { crit = false; ev.push({ t: 'status', text: '⚡ 麻痺：暴擊失效' }); } }
+      s.bf.exposed = false;
       if (crit) mult *= p.critDmg;
       let dmg = Math.max(1, Math.round(base * mult * (0.9 + Math.random() * 0.2)));
       if (crit && this.hasTrait('fragile')) dmg = Math.round(dmg * 1.5);
@@ -485,6 +488,8 @@ class Run {
       if (this.has('calm')) s.bf.calm = true;
       let dmg = Math.round(this.monAtk() * (0.85 + Math.random() * 0.3) * p.hurtMul);
       if (s.bf.charged && mon.hp > 0) { dmg *= 2; ev.push({ t: 'chargehit' }); }
+      if (this.hasTrait('ambush') && s.bf.turn === 1) { dmg = Math.round(dmg * 1.6); ev.push({ t: 'mstatus', text: '先制攻擊！' }); }
+      if (s.bf.exposed) dmg = Math.round(dmg * 1.3);
       if (res.partial && !this.D(9)) { dmg = Math.round(dmg * 0.5); const pd = this.hitMon(Math.max(1, Math.round(p.atk * p.atkMul * 0.5))); ev.push({ t: 'hit', dmg: pd, crit: false, partial: true }); }
       dmg = Math.max(1, dmg - Math.max(0, p.def - (s.bf.rot || 0)));
       if (s.bf.half) { dmg = Math.max(1, Math.round(dmg * 0.5)); s.bf.half = false; }
@@ -515,6 +520,8 @@ class Run {
         if (this.hasTrait('poison')) { s.bf.poison = 3; ev.push({ t: 'status', text: '中毒！' }); }
         if (this.hasTrait('silence')) { this.skills().forEach(k => { if (k.cd && this.skillOK(k)) s.cd[k.id] = (s.cd[k.id] || 0) + 1; }); ev.push({ t: 'status', text: '技能封印 +1' }); }
         if (this.hasTrait('weaken')) { s.bf.curse = (s.bf.curse || 0) + 1; ev.push({ t: 'status', text: '凝視：攻擊 -1' }); }
+        if (this.hasTrait('shock')) { s.bf.numb = true; ev.push({ t: 'status', text: '⚡ 麻痺：下次無法暴擊' }); }
+        if (this.hasTrait('expose')) { s.bf.exposed = true; ev.push({ t: 'status', text: '🎯 露出破綻：受傷 +30%' }); }
         if (this.hasTrait('chill')) { s.bf.chill = true; ev.push({ t: 'status', text: '❄ 凍傷：下一擊 -30%' }); }
         if (this.hasTrait('scorch')) { s.bf.burnP = 2; ev.push({ t: 'status', text: '🔥 著火了！' }); }
         if (this.hasTrait('rot')) { s.bf.rot = (s.bf.rot || 0) + 1; ev.push({ t: 'status', text: '腐蝕：防禦 -1' }); }

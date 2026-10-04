@@ -132,6 +132,8 @@ const Store = (() => {
   function heroTile(id) {
     const c = id || profile.activeClass, sid = (profile.heroSkin || {})[c];
     const sk = sid && (C.HERO_SKINS[c] || []).find(x => x.id === sid);
+    // 沒買過的付費造型（例如舊存檔殘留）退回預設外觀
+    if (sk && sk.cost && !(profile.ownedHeroSkins || []).includes(c + ':' + sid)) return C.cls(c).tile;
     return sk ? C.skinIcon(sk) : C.cls(c).tile;
   }
 

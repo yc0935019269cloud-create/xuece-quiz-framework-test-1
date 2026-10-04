@@ -1,0 +1,97 @@
+{
+  "actors": 40,
+  "poses": 320,
+  "wardrobe": 40,
+  "classes": [
+    {
+      "cls": "knight",
+      "answerFlow": true,
+      "variants": [
+        "突刺斬",
+        "十字斬",
+        "躍擊",
+        "三連斬"
+      ],
+      "distribution": {
+        "十字斬": 100,
+        "躍擊": 100,
+        "三連斬": 100,
+        "突刺斬": 100
+      }
+    },
+    {
+      "cls": "mage",
+      "answerFlow": true,
+      "variants": [
+        "火球術",
+        "落雷",
+        "冰晶連射",
+        "奧術彈"
+      ],
+      "distribution": {
+        "奧術彈": 100,
+        "冰晶連射": 100,
+        "火球術": 101,
+        "落雷": 99
+      }
+    },
+    {
+      "cls": "ranger",
+      "answerFlow": true,
+      "variants": [
+        "疾射",
+        "箭雨",
+        "穿透箭",
+        "疾風雙射"
+      ],
+      "distribution": {
+        "箭雨": 100,
+        "疾風雙射": 101,
+        "穿透箭": 100,
+        "疾射": 99
+      }
+    },
+    {
+      "cls": "cleric",
+      "answerFlow": true,
+      "variants": [
+        "聖光柱",
+        "聖錘擊",
+        "神聖光球",
+        "星環祝禱"
+      ],
+      "distribution": {
+        "聖錘擊": 100,
+        "星環祝禱": 100,
+        "神聖光球": 101,
+        "聖光柱": 99
+      }
+    },
+    {
+      "cls": "berserker",
+      "answerFlow": true,
+      "variants": [
+        "猛躍重擊",
+        "旋風斬",
+        "劈砍",
+        "裂地橫掃"
+      ],
+      "distribution": {
+        "旋風斬": 100,
+        "劈砍": 100,
+        "裂地橫掃": 101,
+        "猛躍重擊": 99
+      }
+    }
+  ],
+  "errors": [],
+  "offline": true,
+  "mobile": true,
+  "ok": true,
+  "animations": {
+    "normal": 160,
+    "critical": 40,
+    "total": 200,
+    "bad": []
+  }
+}

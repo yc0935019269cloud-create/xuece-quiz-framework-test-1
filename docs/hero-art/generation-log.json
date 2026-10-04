@@ -1,0 +1,486 @@
+{
+  "mode": "built-in image_gen",
+  "initialOutputs": [
+    {
+      "id": "px_knight_m1",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-2157be67-3df7-4e48-a919-b9c2c822d6c4.png",
+      "file": "assets/heroes/knight_m1.png"
+    },
+    {
+      "id": "px_mage_m1",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-5407d060-57b2-43b0-8f74-d2f20cf7942a.png",
+      "file": "assets/heroes/mage_m1.png"
+    },
+    {
+      "id": "px_knight_m2",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-fbaee0ba-351b-4dd9-ba40-921983ac897c.png",
+      "file": "assets/heroes/knight_m2.png"
+    },
+    {
+      "id": "px_knight_m3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-b32f17b2-a973-4232-95ff-c4759bb36b96.png",
+      "file": "assets/heroes/knight_m3.png"
+    },
+    {
+      "id": "px_mage_m4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-b03e0c0e-3b60-4ced-8f57-f63bc78742cd.png",
+      "file": "assets/heroes/mage_m4.png"
+    },
+    {
+      "id": "px_knight_m4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-3bc2b1ca-1c06-42d7-9d03-ff396a03b3bd.png",
+      "file": "assets/heroes/knight_m4.png"
+    },
+    {
+      "id": "px_mage_m2",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-39e1fdd8-f2c8-44bf-9d49-306370ecafca.png",
+      "file": "assets/heroes/mage_m2.png"
+    },
+    {
+      "id": "px_knight_f1",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-deda4f62-1db2-4220-9fcb-c1da928e687a.png",
+      "file": "assets/heroes/knight_f1.png"
+    },
+    {
+      "id": "px_mage_f1",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-0cadad7f-a8c2-476d-bf6d-c2d07d812833.png",
+      "file": "assets/heroes/mage_f1.png"
+    },
+    {
+      "id": "px_knight_f2",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-1ff4bc54-d2d3-431f-b4ef-fc5978e528b5.png",
+      "file": "assets/heroes/knight_f2.png"
+    },
+    {
+      "id": "px_mage_f2",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-dda03db7-5ed9-4738-93f6-ab3a08e4157b.png",
+      "file": "assets/heroes/mage_f2.png"
+    },
+    {
+      "id": "px_mage_f4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-90b45b98-75d6-4802-9155-865022f7e252.png",
+      "file": "assets/heroes/mage_f4.png"
+    },
+    {
+      "id": "px_ranger_m1",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-752953e0-194f-46b3-953e-c7fcbfdba2ae.png",
+      "file": "assets/heroes/ranger_m1.png"
+    },
+    {
+      "id": "px_knight_f3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-1ffebd02-5962-48e1-9edf-e222b4d1ea48.png",
+      "file": "assets/heroes/knight_f3.png"
+    },
+    {
+      "id": "px_mage_m3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-d716c769-6a5f-4b3c-96e9-c11f29ad1c3f.png",
+      "file": "assets/heroes/mage_m3.png"
+    },
+    {
+      "id": "px_mage_f3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-04736e0a-14f0-4ec8-9130-c65a5bf4aa43.png",
+      "file": "assets/heroes/mage_f3.png"
+    },
+    {
+      "id": "px_ranger_m2",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-a704653f-1503-4a29-80a7-e661b92d81a6.png",
+      "file": "assets/heroes/ranger_m2.png"
+    },
+    {
+      "id": "px_ranger_f3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-9687c3fe-16e3-40df-a876-fda0f64f1fe6.png",
+      "file": "assets/heroes/ranger_f3.png"
+    },
+    {
+      "id": "px_ranger_f2",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-a5d6bdf0-f788-40a0-96e3-0f22204bbb79.png",
+      "file": "assets/heroes/ranger_f2.png"
+    },
+    {
+      "id": "px_knight_f4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-2919b1ea-3aae-4d5e-a6b0-1ef89cab174e.png",
+      "file": "assets/heroes/knight_f4.png"
+    },
+    {
+      "id": "px_ranger_m4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-755e687b-a425-4d8c-bc6c-bb9929e3b59a.png",
+      "file": "assets/heroes/ranger_m4.png"
+    },
+    {
+      "id": "px_ranger_m3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-f73818f7-fd4a-45ce-a718-8f2908de7094.png",
+      "file": "assets/heroes/ranger_m3.png"
+    },
+    {
+      "id": "px_ranger_f4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-ec827fd0-2e0e-43e4-8578-a9f325c401ee.png",
+      "file": "assets/heroes/ranger_f4.png"
+    },
+    {
+      "id": "px_cleric_f1",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-1a1ac51b-2c59-4d77-bd23-e529e91a4951.png",
+      "file": "assets/heroes/cleric_f1.png"
+    },
+    {
+      "id": "px_cleric_m1",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-33db4436-9b7c-4ad3-b464-6424ea1e9d29.png",
+      "file": "assets/heroes/cleric_m1.png"
+    },
+    {
+      "id": "px_ranger_f1",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-6a26dc18-2400-453d-9e7a-4a16d0437529.png",
+      "file": "assets/heroes/ranger_f1.png"
+    },
+    {
+      "id": "px_cleric_f3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-f12c1152-c6c4-4fff-b22e-4edb4d2ad1bf.png",
+      "file": "assets/heroes/cleric_f3.png"
+    },
+    {
+      "id": "px_cleric_m2",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-81b41cd6-7989-487e-afc2-4b2e719a809d.png",
+      "file": "assets/heroes/cleric_m2.png"
+    },
+    {
+      "id": "px_cleric_f2",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-8223d0f0-fee2-413d-97d9-6863ea1e7ca8.png",
+      "file": "assets/heroes/cleric_f2.png"
+    },
+    {
+      "id": "px_berserker_m3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-0abee381-d125-426a-a094-bb622f10532a.png",
+      "file": "assets/heroes/berserker_m3.png"
+    },
+    {
+      "id": "px_berserker_m4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-ce0cbc30-bbe8-48b8-9068-93cb568777d7.png",
+      "file": "assets/heroes/berserker_m4.png"
+    },
+    {
+      "id": "px_cleric_f4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-63bbebba-a211-4685-a5a5-8027793e41ed.png",
+      "file": "assets/heroes/cleric_f4.png"
+    },
+    {
+      "id": "px_berserker_m1",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-d1fa36ec-342f-4bc4-8034-c498652d2ef2.png",
+      "file": "assets/heroes/berserker_m1.png"
+    },
+    {
+      "id": "px_berserker_f1",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-7897b723-f0f7-4d58-a928-2875b7ec5467.png",
+      "file": "assets/heroes/berserker_f1.png"
+    },
+    {
+      "id": "px_cleric_m4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-4b69aa59-e8fe-4ee2-8cc2-5db8ac9bcd96.png",
+      "file": "assets/heroes/cleric_m4.png"
+    },
+    {
+      "id": "px_berserker_f3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-2099ff7e-2fb1-43ca-a162-2a73912cd605.png",
+      "file": "assets/heroes/berserker_f3.png"
+    },
+    {
+      "id": "px_berserker_f2",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-def9c2de-fe32-4e79-944a-c991a116bc79.png",
+      "file": "assets/heroes/berserker_f2.png"
+    },
+    {
+      "id": "px_berserker_m2",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-dc8c9065-2913-4d24-b703-ccb057188f51.png",
+      "file": "assets/heroes/berserker_m2.png"
+    },
+    {
+      "id": "px_cleric_m3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-cc1d3175-0a24-4ee4-9df4-067d8626d0d1.png",
+      "file": "assets/heroes/cleric_m3.png"
+    },
+    {
+      "id": "px_berserker_f4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-56c058ff-9acc-4e5e-b5ca-272c03256a04.png",
+      "file": "assets/heroes/berserker_f4.png"
+    }
+  ],
+  "firstRepairs": [
+    {
+      "id": "px_knight_m4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-ad5d9e89-1993-4136-92ca-7340996ac853.png"
+    },
+    {
+      "id": "px_knight_f4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-37865ca0-bb8b-4c47-b481-f7176d803ef7.png"
+    },
+    {
+      "id": "px_ranger_m4",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-a5595e18-68b6-4737-980b-25eb0d631cda.png"
+    },
+    {
+      "id": "px_ranger_f2",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-333ce1d0-e0ce-4ab9-90da-73aac0c4587b.png"
+    },
+    {
+      "id": "px_cleric_m3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-86fe85bb-a7d0-410f-9d46-a25d08601762.png"
+    },
+    {
+      "id": "px_cleric_f3",
+      "src": "C:\\Users\\USER\\.codex\\generated_images\\01a106b7-2d8b-7250-a6f2-284ce68cf7cc\\exec-05d6ba08-b0dc-4060-ba9a-8e39b51b4673.png"
+    }
+  ],
+  "secondRepairIds": [
+    "px_ranger_m3",
+    "px_berserker_f2",
+    "px_ranger_f4",
+    "px_cleric_f4"
+  ],
+  "repairPromptRules": [
+    "All 8 poses must fit within each cell with 20 percent transparent padding, no external effects crossing cells.",
+    "Correct px_cleric_m3 to a short silver-lilac-haired male priest.",
+    "Make px_ranger_m4 a golden brown-haired sun archer in ochre and olive.",
+    "Replace px_ranger_f4 with a dark-green twin-braided female forest guardian, no white flowers.",
+    "Replace px_cleric_f4 with an indigo-haired female orchid priestess, lavender robe and violet crystal staff."
+  ],
+  "finalFiles": [
+    {
+      "id": "px_knight_m1",
+      "file": "assets/heroes/knight_m1.png",
+      "name": "月白誓約",
+      "gender": "male"
+    },
+    {
+      "id": "px_knight_m2",
+      "file": "assets/heroes/knight_m2.png",
+      "name": "薔薇近衛",
+      "gender": "male"
+    },
+    {
+      "id": "px_knight_m3",
+      "file": "assets/heroes/knight_m3.png",
+      "name": "蒼海巡誓",
+      "gender": "male"
+    },
+    {
+      "id": "px_knight_m4",
+      "file": "assets/heroes/knight_m4.png",
+      "name": "琥珀王衛",
+      "gender": "male"
+    },
+    {
+      "id": "px_knight_f1",
+      "file": "assets/heroes/knight_f1.png",
+      "name": "晨曦女騎",
+      "gender": "female"
+    },
+    {
+      "id": "px_knight_f2",
+      "file": "assets/heroes/knight_f2.png",
+      "name": "紫藤劍姬",
+      "gender": "female"
+    },
+    {
+      "id": "px_knight_f3",
+      "file": "assets/heroes/knight_f3.png",
+      "name": "緋櫻守望",
+      "gender": "female"
+    },
+    {
+      "id": "px_knight_f4",
+      "file": "assets/heroes/knight_f4.png",
+      "name": "夜藍劍華",
+      "gender": "female"
+    },
+    {
+      "id": "px_mage_m1",
+      "file": "assets/heroes/mage_m1.png",
+      "name": "星夜魔導",
+      "gender": "male"
+    },
+    {
+      "id": "px_mage_m2",
+      "file": "assets/heroes/mage_m2.png",
+      "name": "霜雪學者",
+      "gender": "male"
+    },
+    {
+      "id": "px_mage_m3",
+      "file": "assets/heroes/mage_m3.png",
+      "name": "翠玉術士",
+      "gender": "male"
+    },
+    {
+      "id": "px_mage_m4",
+      "file": "assets/heroes/mage_m4.png",
+      "name": "暮焰秘法",
+      "gender": "male"
+    },
+    {
+      "id": "px_mage_f1",
+      "file": "assets/heroes/mage_f1.png",
+      "name": "櫻莓魔女",
+      "gender": "female"
+    },
+    {
+      "id": "px_mage_f2",
+      "file": "assets/heroes/mage_f2.png",
+      "name": "紫晶占星",
+      "gender": "female"
+    },
+    {
+      "id": "px_mage_f3",
+      "file": "assets/heroes/mage_f3.png",
+      "name": "薄荷幻術",
+      "gender": "female"
+    },
+    {
+      "id": "px_mage_f4",
+      "file": "assets/heroes/mage_f4.png",
+      "name": "月霜魔女",
+      "gender": "female"
+    },
+    {
+      "id": "px_ranger_m1",
+      "file": "assets/heroes/ranger_m1.png",
+      "name": "森境遊俠",
+      "gender": "male"
+    },
+    {
+      "id": "px_ranger_m2",
+      "file": "assets/heroes/ranger_m2.png",
+      "name": "月影獵手",
+      "gender": "male"
+    },
+    {
+      "id": "px_ranger_m3",
+      "file": "assets/heroes/ranger_m3.png",
+      "name": "白羽風行",
+      "gender": "male"
+    },
+    {
+      "id": "px_ranger_m4",
+      "file": "assets/heroes/ranger_m4.png",
+      "name": "日曜獵弓",
+      "gender": "male"
+    },
+    {
+      "id": "px_ranger_f1",
+      "file": "assets/heroes/ranger_f1.png",
+      "name": "花羽射手",
+      "gender": "female"
+    },
+    {
+      "id": "px_ranger_f2",
+      "file": "assets/heroes/ranger_f2.png",
+      "name": "赤狐斥候",
+      "gender": "female"
+    },
+    {
+      "id": "px_ranger_f3",
+      "file": "assets/heroes/ranger_f3.png",
+      "name": "星蘭追風",
+      "gender": "female"
+    },
+    {
+      "id": "px_ranger_f4",
+      "file": "assets/heroes/ranger_f4.png",
+      "name": "青葉林守",
+      "gender": "female"
+    },
+    {
+      "id": "px_cleric_m1",
+      "file": "assets/heroes/cleric_m1.png",
+      "name": "晨光祭司",
+      "gender": "male"
+    },
+    {
+      "id": "px_cleric_m2",
+      "file": "assets/heroes/cleric_m2.png",
+      "name": "白夜司祭",
+      "gender": "male"
+    },
+    {
+      "id": "px_cleric_m3",
+      "file": "assets/heroes/cleric_m3.png",
+      "name": "月華聖使",
+      "gender": "male"
+    },
+    {
+      "id": "px_cleric_m4",
+      "file": "assets/heroes/cleric_m4.png",
+      "name": "翠庭祝禱",
+      "gender": "male"
+    },
+    {
+      "id": "px_cleric_f1",
+      "file": "assets/heroes/cleric_f1.png",
+      "name": "月鈴聖女",
+      "gender": "female"
+    },
+    {
+      "id": "px_cleric_f2",
+      "file": "assets/heroes/cleric_f2.png",
+      "name": "玫瑰祝禱",
+      "gender": "female"
+    },
+    {
+      "id": "px_cleric_f3",
+      "file": "assets/heroes/cleric_f3.png",
+      "name": "星砂聖歌",
+      "gender": "female"
+    },
+    {
+      "id": "px_cleric_f4",
+      "file": "assets/heroes/cleric_f4.png",
+      "name": "幽蘭祭司",
+      "gender": "female"
+    },
+    {
+      "id": "px_berserker_m1",
+      "file": "assets/heroes/berserker_m1.png",
+      "name": "赤焰戰魂",
+      "gender": "male"
+    },
+    {
+      "id": "px_berserker_m2",
+      "file": "assets/heroes/berserker_m2.png",
+      "name": "冰狼戰將",
+      "gender": "male"
+    },
+    {
+      "id": "px_berserker_m3",
+      "file": "assets/heroes/berserker_m3.png",
+      "name": "雷獅戰豪",
+      "gender": "male"
+    },
+    {
+      "id": "px_berserker_m4",
+      "file": "assets/heroes/berserker_m4.png",
+      "name": "夜曜狂刃",
+      "gender": "male"
+    },
+    {
+      "id": "px_berserker_f1",
+      "file": "assets/heroes/berserker_f1.png",
+      "name": "薔薇戰姬",
+      "gender": "female"
+    },
+    {
+      "id": "px_berserker_f2",
+      "file": "assets/heroes/berserker_f2.png",
+      "name": "雷霆女王",
+      "gender": "female"
+    },
+    {
+      "id": "px_berserker_f3",
+      "file": "assets/heroes/berserker_f3.png",
+      "name": "霜櫻戰姬",
+      "gender": "female"
+    },
+    {
+      "id": "px_berserker_f4",
+      "file": "assets/heroes/berserker_f4.png",
+      "name": "翡翠戰嵐",
+      "gender": "female"
+    }
+  ]
+}

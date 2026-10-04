@@ -218,7 +218,7 @@ const RunUI = (() => {
               <div class="bar"><i id="mHp"></i><span id="mHpT"></span></div>
               <div class="small-t dim"><span id="mAtk">攻擊 ${m.atk}</span> <b id="mState" class="gold-t"></b></div><div class="trait-tags">${mechs}</div></div>
             ${pet ? `<div class="ent pet" id="ePet">${Store.petHTML(s.pet, 70, 'anim-float')}</div>` : ''}
-            <div class="ent hero cls-${s.cls}" id="eHero"><div class="shadow"></div><div class="hero-body anim-bob">${SP.tile(Store.heroTile(s.cls), 96)}${FX.weaponHTML(s.cls)}</div></div>
+            <div class="ent hero cls-${s.cls}" id="eHero"><div class="shadow"></div>${FX.heroBattle(Store.heroTile(s.cls), s.cls, 140)}</div>
             <div class="ent mon" id="eMon"><div class="shadow"></div>${SP.icon(m.tile, m.boss ? 150 : m.elite ? 120 : 104, 'anim-bob2', `filter:${m.filter || 'none'};transform:scaleX(-1)`)}</div>
           </div>
           <div class="skillbar" id="skills"></div>
@@ -304,8 +304,8 @@ const RunUI = (() => {
     set('hSh', Math.min(100, s.shield * 3)); const sw = document.getElementById('hShW'); if (sw) sw.style.visibility = s.shield > 0 ? 'visible' : 'hidden';
     txt('hLv', p.lv);
     txt('mAtk', `攻擊 ${Math.round(R.monAtk())}`);
-    txt('mState', [s.bf.charged && '⚡蓄力中！', s.bf.fuse && '💣引信點燃！', s.bf.guardUp && '🛡舉盾', s.bf.minion > 0 && `僕從×${s.bf.minion}`, s.bf.phase2 && '第二階段', m.traits && m.traits.includes('flee') && `${Math.max(0, 5 - (s.bf.turn || 0))} 題後逃走`].filter(Boolean).join(' '));
-    txt('hState', [s.bf.poison && `☠中毒 ${s.bf.poison}`, s.bf.burnP && `🔥著火 ${s.bf.burnP}`, s.bf.chill && '❄凍傷', s.bf.rot && `防禦 -${s.bf.rot}`].filter(Boolean).join(' '));
+    txt('mState', [s.bf.charged && '⚡蓄力中！', s.bf.fuse && '💣引信點燃！', s.bf.guardUp && '🛡舉盾', s.bf.minion > 0 && `僕從×${s.bf.minion}`, s.bf.hard && `硬化 -${s.bf.hard}`, s.bf.phase2 && '第二階段', m.traits && m.traits.includes('flee') && `${Math.max(0, 5 - (s.bf.turn || 0))} 題後逃走`].filter(Boolean).join(' '));
+    txt('hState', [s.bf.poison && `☠中毒 ${s.bf.poison}`, s.bf.burnP && `🔥著火 ${s.bf.burnP}`, s.bf.chill && '❄凍傷', s.bf.numb && '⚡麻痺', s.bf.exposed && '🎯破綻', s.bf.rot && `防禦 -${s.bf.rot}`].filter(Boolean).join(' '));
     const cb = document.getElementById('combo'); if (cb) cb.textContent = s.combo >= 2 ? `${s.combo} 連擊！` : '';
   }
 
@@ -452,7 +452,7 @@ const RunUI = (() => {
         case 'curse': floatText('hero', '詛咒：攻擊 -2', 'miss'); await U.sleep(250); break;
         case 'bshield': floatText('mon', `結界 +${e.v}`, 'miss'); SFX.play('skill'); updateHud(); await U.sleep(250); break;
         case 'hurt':
-          animEnt('mon', 'anim-lunge-l'); await U.sleep(160);
+          await FX.monStrike(R.s.mon && R.s.mon.fx);
           animEnt('hero', 'anim-hurt'); SFX.play('hurt');
           U.$('#stage')?.classList.remove('flash-red'); void U.$('#stage')?.offsetWidth; U.$('#stage')?.classList.add('flash-red');
           floatText('hero', e.dmg ? '-' + e.dmg : '護盾吸收', e.dmg ? '' : 'miss');

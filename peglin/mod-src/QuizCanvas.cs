@@ -92,6 +92,138 @@ public partial class QuizPlugin
         catch (Exception e) { Logger.LogWarning("找不到遊戲字型，改用預設：" + e.Message); fontProbed = false; }
     }
 
+    // ---------- 缺字替換：遊戲字型沒有的符號換成最接近、而且字型裡有的寫法 ----------
+    // 例：−（數學減號）在像素字型裡是空白，改成全形／半形減號；候選依序嘗試，第一個整串都有字的就用。
+    static readonly Dictionary<char, string[]> GlyphSubs = BuildGlyphSubs();
+    static Dictionary<char, string[]> BuildGlyphSubs()
+    {
+        var d = new Dictionary<char, string[]>();
+        Action<string, string[]> add = delegate(string keys, string[] c) { foreach (char k in keys) d[k] = c; };
+        add("−‐‑‒–", new[] { "-", "－" }); add("－", new[] { "－", "-" });
+        add("—―", new[] { "─", "－－", "--" });
+        add("′’‘", new[] { "’", "'" });
+        add("″“”", new[] { "\"" });
+        add("≈", new[] { "≒", "~" });
+        add("≠", new[] { "≠", "!=" });
+        add("≤", new[] { "≦", "(≤)" });
+        add("≥", new[] { "≧", "(≥)" });
+        add("✓✔⭕✅", new[] { "○", "O" });
+        add("─━", new[] { "─", "—", "-" });
+        add("✗✘❌", new[] { "×", "X" });
+        add("Δ∆", new[] { "Δ", "△", "delta " });
+        add("√", new[] { "√", "sqrt" });
+        add("⇒", new[] { "⇒", "→", "=>" });
+        add("⇌⇄↔", new[] { "⇄", "←→", "<->" });
+        add("∞", new[] { "∞", "無限" });
+        add("⊥", new[] { "⊥", "垂直" });
+        add("∥", new[] { "∥", "//" });
+        add("∝", new[] { "∝", "正比於" });
+        add("⋯…", new[] { "…", "..." });
+        add("·", new[] { "·", "‧", "・", "." });
+        add("µ", new[] { "μ", "u" });
+        add("½", new[] { "1/2" }); add("¼", new[] { "1/4" });
+        add("±", new[] { "±", "+/-" });
+        add("÷", new[] { "÷", "/" });
+        add("★", new[] { "★", "*" });
+        add("△", new[] { "△", "Δ" });
+        add("〈", new[] { "〈", "（" }); add("〉", new[] { "〉", "）" });
+        add("ü", new[] { "ü", "u" }); add("ö", new[] { "ö", "o" }); add("Æ", new[] { "Æ", "AE" });
+        string sub = "₀₁₂₃₄₅₆₇₈₉", sup = "⁰¹²³⁴⁵⁶⁷⁸⁹";
+        for (int i = 0; i < 10; i++) { d[sub[i]] = new[] { sub[i].ToString(), i.ToString() }; d[sup[i]] = new[] { sup[i].ToString(), "^" + i }; }
+        d['⁺'] = new[] { "⁺", "+" }; d['⁻'] = new[] { "⁻", "-" }; d['₊'] = new[] { "+" }; d['₋'] = new[] { "-" };
+        d['ᵢ'] = new[] { "i" }; d['ₓ'] = new[] { "x" }; d['ₗ'] = new[] { "l" }; d['ₑ'] = new[] { "e" }; d['ₙ'] = new[] { "n" };
+        string circled = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
+        for (int i = 0; i < circled.Length; i++) d[circled[i]] = new[] { circled[i].ToString(), "(" + (i + 1) + ")" };
+        d['̄'] = new[] { "" }; // 組合用上橫線：像素字型畫不出來，直接略過
+        return d;
+    }
+    readonly Dictionary<char, bool> hasGlyph = new Dictionary<char, bool>();
+    readonly Dictionary<char, string> glyphFix = new Dictionary<char, string>();
+    bool HasGlyph(char c)
+    {
+        if (gameFont == null || c < 32 || c == ' ') return true;
+        bool ok; if (hasGlyph.TryGetValue(c, out ok)) return ok;
+        // 只問「有沒有這個字」不夠：像素字型的 −（U+2212）有字但字形是空的，畫出來是空白。
+        // 依 TMP 的順序（本身 → 後備字型）找第一個有這個字的字型，再確認字形真的有大小。
+        ok = false;
+        try
+        {
+            if (char.IsWhiteSpace(c)) ok = true;
+            else
+            {
+                var chain = new List<TMP_FontAsset> { gameFont };
+                if (gameFont.fallbackFontAssetTable != null) chain.AddRange(gameFont.fallbackFontAssetTable);
+                if (TMP_Settings.fallbackFontAssets != null) chain.AddRange(TMP_Settings.fallbackFontAssets);
+                foreach (var fa in chain)
+                {
+                    if (fa == null || !fa.HasCharacter(c, false, true)) continue;
+                    TMP_Character tc;
+                    ok = fa.characterLookupTable.TryGetValue(c, out tc) && tc != null && tc.glyph != null && tc.glyph.glyphRect.width > 0 && tc.glyph.metrics.width > 0.01f && tc.glyph.metrics.height > 0.01f;
+                    break;
+                }
+            }
+        }
+        catch (Exception) { ok = true; }
+        hasGlyph[c] = ok; return ok;
+    }
+    string FixChar(char c)
+    {
+        string r; if (glyphFix.TryGetValue(c, out r)) return r;
+        r = null; string[] cands;
+        if (GlyphSubs.TryGetValue(c, out cands))
+            foreach (var cand in cands) { bool all = true; foreach (char x in cand) if (!HasGlyph(x)) { all = false; break; } if (all) { r = cand; break; } }
+        if (r == null)
+        {
+            // 最後一招：Unicode 相容分解（全形→半形、合字拆開…），整串都有字才用
+            string n = c.ToString().Normalize(NormalizationForm.FormKC);
+            bool all = n != c.ToString() && n.Length > 0; foreach (char x in n) if (!HasGlyph(x)) all = false;
+            r = all ? n : c.ToString();
+        }
+        glyphFix[c] = r; return r;
+    }
+    const string SupChars = "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱ", SupPlain = "0123456789+-=()ni";
+    const string SubChars = "₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₒₓₕₖₗₘₙₚₛₜᵢ", SubPlain = "0123456789+-=()aeoxhklmnpsti";
+    // 上標／下標只要有一個字型沒有，就整串一起轉（10⁻⁶ → 10^-6、C₆H₁₂O₆ → C6H12O6），避免一半上標一半不是
+    string ScriptSafe(string s, string chars, string plain, string prefix)
+    {
+        bool need = false; foreach (char c in s) if (chars.IndexOf(c) >= 0 && !HasGlyph(c)) { need = true; break; }
+        if (!need) return s;
+        var b = new StringBuilder(s.Length + 8); bool inRun = false;
+        foreach (char c in s)
+        {
+            int i = chars.IndexOf(c);
+            if (i >= 0) { if (!inRun) b.Append(prefix); b.Append(plain[i]); inRun = true; }
+            else { b.Append(c); inRun = false; }
+        }
+        return b.ToString();
+    }
+    string FontSafe(string s)
+    {
+        if (string.IsNullOrEmpty(s) || gameFont == null) return s;
+        s = ScriptSafe(ScriptSafe(s, SupChars, SupPlain, "^"), SubChars, SubPlain, "");
+        StringBuilder b = null;
+        for (int i = 0; i < s.Length; i++)
+        {
+            char c = s[i];
+            if (c < 128 || char.IsSurrogate(c) || HasGlyph(c)) { if (b != null) b.Append(c); continue; }
+            if (c >= '\uE000' && c <= '\uF8FF') { if (b == null) { b = new StringBuilder(s.Length); b.Append(s, 0, i); } continue; } // 私用區字元：略過
+            if (b == null) { b = new StringBuilder(s.Length + 8); b.Append(s, 0, i); }
+            b.Append(FixChar(c));
+        }
+        return b == null ? s : b.ToString();
+    }
+    // 每份題本檢查一次：記錄哪些字遊戲字型沒有、換成什麼（player.log 的 QUIZ_GLYPHS）
+    string glyphCheckedFor = "";
+    void CheckSessionGlyphs()
+    {
+        if (gameFont == null || session == null || S(session, "id") == glyphCheckedFor) return;
+        glyphCheckedFor = S(session, "id");
+        var seen = new HashSet<char>(); var sb = new StringBuilder();
+        foreach (var q in questions) foreach (char c in q.ToString(Newtonsoft.Json.Formatting.None))
+            if (c >= 128 && !char.IsSurrogate(c) && seen.Add(c) && !HasGlyph(c)) sb.Append(c).Append("→").Append(FixChar(c)).Append(' ');
+        Logger.LogInfo("QUIZ_GLYPHS session=" + glyphCheckedFor + " missing: " + (sb.Length > 0 ? sb.ToString() : "（無）"));
+    }
+
     // ---------- 小工具 ----------
     RectTransform RectUI(string name, Transform parent)
     {
@@ -107,7 +239,7 @@ public partial class QuizPlugin
     {
         var r = RectUI("Text", parent); var t = r.gameObject.AddComponent<TextMeshProUGUI>();
         if (gameFont != null) t.font = gameFont;
-        t.fontSize = size; t.color = color; t.richText = rich; t.text = text ?? "";
+        t.fontSize = size; t.color = color; t.richText = rich; t.text = FontSafe(text ?? "");
         t.enableWordWrapping = true; t.overflowMode = TextOverflowModes.Overflow; t.lineSpacing = 18; t.raycastTarget = false;
         return t;
     }
@@ -163,7 +295,7 @@ public partial class QuizPlugin
     // ---------- 畫布 ----------
     void EnsureCanvas()
     {
-        ProbeFont();
+        ProbeFont(); CheckSessionGlyphs();
         if (quizCanvas != null) return;
         quizCanvas = new GameObject("PeglinQuizCanvas", typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
         var canvas = quizCanvas.GetComponent<Canvas>(); canvas.renderMode = RenderMode.ScreenSpaceOverlay; canvas.sortingOrder = 32760;
@@ -188,10 +320,10 @@ public partial class QuizPlugin
             hudText = Txt(pill, "", 18, gold, true); hudText.alignment = TextAlignmentOptions.Center; hudText.enableWordWrapping = false; Stretch(hudText.rectTransform, 8, 0, 8, 0);
         }
         hudCanvas.SetActive(true);
-        if (Time.unscaledTime < hudFlashUntil && hudFlash.Length > 0) { hudText.text = hudFlash; return; }
-        if (Learn) { hudText.text = "彈珠學習　" + S(session, "label") + "　·　" + (lap > 1 ? "複習第 " + (lap - 1) + " 輪　·　" : "") + correct + "/" + answered + " 答對"; return; }
+        if (Time.unscaledTime < hudFlashUntil && hudFlash.Length > 0) { hudText.text = FontSafe(hudFlash); return; }
+        if (Learn) { hudText.text = FontSafe("彈珠學習　" + S(session, "label") + "　·　" + (lap > 1 ? "複習第 " + (lap - 1) + " 輪　·　" : "") + correct + "/" + answered + " 答對"); return; }
         float next = Multiplier(streak + 1);
-        hudText.text = "彈珠刷題　" + correct + "/" + answered + " 答對　·　連對 " + streak + (next > 1f ? "　·　下一題答對 <color=#ffe08a>×" + next.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture) + "</color>" : "");
+        hudText.text = FontSafe("彈珠刷題　" + correct + "/" + answered + " 答對　·　連對 " + streak + (next > 1f ? "　·　下一題答對 <color=#ffe08a>×" + next.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture) + "</color>" : ""));
     }
 
     // ---------- 主面板 ----------
