@@ -976,3 +976,11 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .pomo-seq { background: var(--bg2); border: 3px solid var(--line); padding: 8px 10px; }
 .seq-row { margin: 4px 0; gap: 6px; }
 .seq-n { width: 24px; text-align: center; color: var(--gold); }
+/* 提示詞：勾選與合併複製 */
+.pr-presets { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 8px 0; }
+.pr-pick { display: flex; gap: 8px; align-items: center; cursor: pointer; min-width: 0; }
+.pr-pick input { width: 18px; height: 18px; flex: none; accent-color: #ffd84a; }
+.pr-bar { position: sticky; bottom: 0; z-index: 20; background: var(--bg1, #241b36); border: 3px solid #ffd84a; padding: 8px 12px; margin-top: 14px; box-shadow: 0 -6px 14px rgba(0,0,0,.45); }
+.pr-bar-row { gap: 10px; flex-wrap: wrap; align-items: center; }
+.pr-opts { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.pr-opts label { display: inline-flex; gap: 4px; align-items: center; cursor: pointer; }

@@ -284,7 +284,7 @@ const LEARN_UI = (() => {
   /* 依關鍵字從題庫抽題：比對考點 tag 與詳解，優先沒做過的 */
   function pickQ(pick, n, subj) {
     const words = (pick.match || []).map(w => w.toLowerCase());
-    let pool = Store.filter({ subjects: pick.subjects || (subj ? [subj] : []), types: pick.types || ['single', 'multi', 'fill'] })
+    let pool = Store.filter({ subjects: pick.subjects || (subj ? [subj] : []), exams: pick.exams, ids: pick.ids, types: pick.types || ['single', 'multi', 'fill'] })
       .filter(q => q.type !== 'open' && words.some(w => (q.tag || '').toLowerCase().includes(w) || (pick.inEx !== false && (q.ex || '').toLowerCase().includes(w))));
     const fresh = pool.filter(q => !Store.qs[q.id]?.a), old = pool.filter(q => Store.qs[q.id]?.a);
     return U.shuffle(fresh).concat(U.shuffle(old)).slice(0, n).map(q => q.id);

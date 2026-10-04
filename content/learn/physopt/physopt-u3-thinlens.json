@@ -2,6 +2,8 @@
  "schema": "xd-learn/1",
  "id": "physopt-u3-thinlens",
  "subject": "physopt",
+ "banks": ["physopt-u3-q"],
+ "prior": ["physopt-u1-q", "physopt-u2-q"],
  "unit": "第三單元 薄透鏡成像",
  "title": "薄透鏡成像：聚散度、焦點與光線圖",
  "desc": "薄透鏡的 V = P + U、F₁／F₂、三條主要光線、正負透鏡對實物與虛物的成像、放大率、對稱點與反求。",

@@ -61,6 +61,44 @@ const IMP = (() => {
     Object.entries(imgs).forEach(([k, b]) => { try { IMGMAP[k] = URL.createObjectURL(b); } catch (e) {} });
     merge(items);
   }
+
+  /* 嚴格連結（規則與 tools/build.py 的 apply_banks／link_picks 完全相同）：單元宣告了 banks（本單元的題本）時，
+     實戰的 pick 只會從這些題本（加上 prior）抽題，而且題目的所有標籤都已在「到這一課為止」的教材或 lesson.teaches 出現過，
+     所以不會抽到別的單元、也不會抽到後面才教的題目。已由 build.py 處理過（pick.ids 已存在）的單元會跳過。 */
+  const nz = s => String(s).normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
+  const SKIP_KEYS = ['pick', 'qids', 'id', 'type', 'kind'];
+  function texts(o, out) {
+    if (Array.isArray(o)) o.forEach(v => texts(v, out));
+    else if (o && typeof o === 'object') { for (const k in o) if (!SKIP_KEYS.includes(k)) texts(o[k], out); }
+    else if (typeof o === 'string') out.push(o);
+    return out;
+  }
+  const tagsOf = q => String(q.tag || '').split(/[、,，]/).map(t => t.trim()).filter(Boolean);
+  function linkPacks(packs, QB) {
+    const byExam = {}; QB.questions.forEach(q => (byExam[q.exam] = byExam[q.exam] || []).push(q));
+    const owner = {}; packs.forEach(p => (p.banks || []).forEach(b => { if (!owner[b]) owner[b] = p; }));
+    const fullCache = {};
+    packs.forEach(p => {
+      if (!Array.isArray(p.banks) || !p.banks.length) return;
+      const allow = p.banks.concat((p.prior || []).filter(x => !p.banks.includes(x)));
+      const cum = [];
+      p.lessons.forEach(l => {
+        texts(l, cum); const blob = nz(cum.join(' '));
+        l.steps.forEach(s => {
+          if (s.type !== 'practice' || !s.pick || (s.pick.ids && !s.pick.auto)) return;   // build.py 算好的不重算；本函式算的（auto）每次載入重算
+          if (!s.pick.exams || s.pick.auto) s.pick.exams = allow.slice();
+          const ids = [];
+          s.pick.exams.forEach(ex => {
+            const o = owner[ex];
+            const eb = (!o || o === p) ? blob : (fullCache[o.id] = fullCache[o.id] || nz(texts(o.lessons, []).join(' ')));
+            (byExam[ex] || []).forEach(q => { if (tagsOf(q).every(t => eb.includes(nz(t)))) ids.push(q.id); });
+          });
+          s.pick.ids = ids; s.pick.auto = true;
+        });
+      });
+    });
+  }
+
   function merge(items) {
     const QB = window.QB, L = window.LEARN || (window.LEARN = { packs: [] });
     items.filter(i => i.kind === 'subjects').forEach(i => i.data.forEach(sj => { if (!C.SUBJECTS[sj.id] || sj.override) C.addSubject(sj); }));
@@ -79,6 +117,7 @@ const IMP = (() => {
       L.packs.push(p);
     });
     L.packs.sort((a, b) => (order.indexOf(a.subject) - order.indexOf(b.subject)) || ((a.order ?? 999) - (b.order ?? 999)) || a.id.localeCompare(b.id));
+    linkPacks(L.packs, QB);
     QB.subjects = order.map(id => C.SUBJECTS[id]);
     Store.reindex(); LEARN_UI.reindex(); Screens.syncSubjects();
   }

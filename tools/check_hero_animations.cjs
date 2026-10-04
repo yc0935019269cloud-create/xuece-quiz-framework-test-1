@@ -12,7 +12,7 @@ const report={actors:0,poses:0,wardrobe:0,classes:[],errors:[],offline:false,mob
  try{
   await page.goto(url);await page.waitForFunction(()=>typeof App!=='undefined'&&typeof Store!=='undefined'&&document.querySelector('.modal-bg'));
   await page.evaluate(async()=>{
-   Store.profile.starterPicked=true;Store.profile.gems=222;
+   Store.profile.starterPicked=true;Store.profile.gems=100000;
    C.CLASSES.forEach(c=>Store.profile.classes[c.id]={lv:1,xp:0});
    Store.profile.ownedHeroSkins=['knight:crimson'];
    SFX.play=()=>{};BGM.play=()=>{};
@@ -22,7 +22,8 @@ const report={actors:0,poses:0,wardrobe:0,classes:[],errors:[],offline:false,mob
    const attack=FX.attack;FX.attack=async(...args)=>{const name=await attack(...args);__attacks.push(name);return name;};
    App.go('classes');
   });
-  const definition=await page.evaluate(()=>HeroAnim.ACTORS.map(a=>({id:a.id,cls:a.cls,gender:a.gender})));
+  const definition=await page.evaluate(()=>HeroAnim.ACTORS.map(a=>({id:a.id,cls:a.cls,gender:a.gender,cost:C.HERO_SKINS[a.cls].find(s=>s.id===a.id).cost||0})));
+  let expectedGems=100000;
   assert.equal(definition.length,40);report.actors=40;
   for(const cls of ['knight','mage','ranger','cleric','berserker']){
    assert.equal(definition.filter(a=>a.cls===cls&&a.gender==='male').length,4);
@@ -37,7 +38,8 @@ const report={actors:0,poses:0,wardrobe:0,classes:[],errors:[],offline:false,mob
     await page.locator('[data-sk="'+a.id+'"]').click();
     const big=page.locator('#hsk .big-stage [data-hero-actor]');assert.equal(await big.getAttribute('data-hero-actor'),a.id);
     if(await page.locator('#hwear').count())await page.locator('#hwear').click();
-    assert.equal(await page.evaluate(()=>Store.profile.gems),222);
+    else if(await page.locator('#hbuy').count()){await page.locator('#hbuy').click();expectedGems-=a.cost;}
+    assert.equal(await page.evaluate(()=>Store.profile.gems),expectedGems);
     assert.equal(await page.evaluate(cls=>Store.heroTile(cls),cls),'ha:'+a.id);
     report.wardrobe++;
    }
@@ -110,7 +112,7 @@ const report={actors:0,poses:0,wardrobe:0,classes:[],errors:[],offline:false,mob
  const offline=await browser.newContext();const op=await offline.newPage();const offlineErrors=[];op.on('pageerror',e=>offlineErrors.push(e.message));
  await op.goto('file:///'+path.join(root,'index.html').replace(/\\/g,'/'));
  await op.waitForFunction(()=>typeof App!=='undefined'&&typeof Store!=='undefined');
- await op.evaluate(()=>{Store.profile.starterPicked=true;App.go('hub');});
+ await op.evaluate(()=>{Store.profile.starterPicked=true;Store.profile.activeClass='knight';Store.profile.heroSkin={knight:'px_knight_m1'};Store.profile.ownedHeroSkins=['knight:px_knight_m1'];App.go('hub');});
  await op.waitForFunction(()=>typeof HeroAnim!=='undefined'&&document.querySelector('#cHero canvas')?.dataset.pose);
  const offlineLoaded=await op.evaluate(async()=>{const results=await Promise.all(HeroAnim.ACTORS.map(a=>HeroAnim.load(a).ready));return results.filter(a=>a.status==='ready').length});
  assert.equal(offlineLoaded,40);assert.deepEqual(offlineErrors,[]);report.offline=true;

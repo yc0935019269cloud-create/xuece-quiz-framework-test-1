@@ -74,6 +74,16 @@ const HeroAnim = (() => {
     const scale = Math.min(146 / referenceH, 156 / (r.scaleW || Math.max(r.w,referenceH * .8)));
     const drawX = 80 - (r.pivotX || r.w / 2) * scale;
     const drawY = 157 - (r.pivotY || r.h) * scale;
+    // 放大角色後仍留住伸出的武器；約束局部晃動，不裁掉圖集內容。
+    const bounds = angle => {
+      const co=Math.cos(angle),si=Math.sin(angle);
+      const corners=[[drawX,drawY],[drawX+r.w*scale,drawY],[drawX,drawY+r.h*scale],[drawX+r.w*scale,drawY+r.h*scale]].map(([px,py])=>[80+(px-80)*co-(py-157)*si,157+(px-80)*si+(py-157)*co]);
+      return {left:Math.min(...corners.map(p=>p[0])),right:Math.max(...corners.map(p=>p[0])),top:Math.min(...corners.map(p=>p[1])),bottom:Math.max(...corners.map(p=>p[1]))};
+    };
+    let edge=bounds(rot);
+    if(edge.right-edge.left>156||edge.bottom-edge.top>156){rot=0;edge=bounds(0);}
+    x=Math.max(2-edge.left,Math.min(x,158-edge.right));
+    y=Math.max(2-edge.top,Math.min(y,158-edge.bottom));
     const key = [frame,x,y,Math.round(rot*100),action && action.kind,Math.round(progress*15)].join('|');
     if (st.last === key) return; st.last = key;
     const ctx = canvas.getContext('2d'); ctx.clearRect(0,0,160,160); ctx.imageSmoothingEnabled = false;

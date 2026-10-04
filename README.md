@@ -12,7 +12,7 @@
 
 ## 零、最快的方法：在遊戲裡完成（不用指令）
 
-1. 營地選「**📋 AI 提示詞**」，複製適合的提示詞（素材→課程、出題與詳解、補詳解、題目轉題庫、找圖與標記、互動動畫、審查修正）。
+1. 營地選「**📋 AI 提示詞**」，複製適合的提示詞（素材→課程、出題與詳解、補詳解、題目轉題庫、找圖與標記、互動動畫、審查修正）。可以**勾選好幾段、一次複製**（也有「新單元全套」等現成組合）。
 2. 開 AI 對話，先上傳素材，再貼提示詞、改最後的【我的設定】。
 3. 把 AI 的輸出（zip 解壓縮、JSON 檔，或整段回覆存成 .md）和圖片放進同一個資料夾。
 4. 營地選「**📥 導入素材**」→ 選那個資料夾 → 確認辨識結果（科目、年份、分類可以改）→ 導入。
@@ -33,6 +33,7 @@
    python tools/build.py
    ```
    有錯誤會列出檔名、第幾題、哪裡錯；照著改或用 `docs/prompts/07_審查修正與連結.md` 請 AI 修。
+   有學習課程時，單元宣告 `banks`（負責的題本）、每課宣告 `teaches`（教了哪些題目標籤），再跑 `python tools/build.py --coverage`：會列出「教材還沒追上題目」的地方（教材沒提到的標籤、符號、孤兒題；題目不降級，補教材），實戰也只會抽「已經教過」的題。見 `docs/格式_學習模式.md` §9。
 5. **雙擊 `index.html`**。
 
 需要 Python 3.8 以上（只用標準函式庫，不必另外安裝套件）。
@@ -160,13 +161,13 @@ js/ css/                遊戲程式
 
 ## 角色與動畫（2026-10-04）
 
-- 已實裝 5 個職業各 4 男／4 女，共 40 款內建免費造型；職業本身仍沿用原有解鎖規則。入口：職業殿堂 → 造型，可篩選男生／女生、新造型／經典，並試播攻擊與爆擊。
+- 已實裝 5 個職業各 4 男／4 女，共 40 款新造型（用魂晶購買）；職業本身仍沿用原有解鎖規則。入口：職業殿堂 → 造型，可篩選男生／女生、新造型／經典，並試播攻擊與爆擊。
 - 圖片模型生成的正本：`assets/heroes/*.png`，每人 8 個獨立姿勢（待機、眨眼、4 種攻擊、爆擊蓄力、爆擊重擊），共 320 個姿勢。動畫由這些姿勢加上播放節奏、位移與職業特效組成，不是逐幀影片。
 - `js/heroes.js`：造型註冊、Canvas 姿勢播放器、呼吸／眨眼、攻擊／爆擊；`js/hero-atlas.js`：自動產生的來源範圍、腳底 pivot、共同比例與鄰格遮罩資訊。PNG 正本不經程式改繪。
 - 4 種攻擊使用洗牌袋隨機播放（每袋各出現一次）；`js/fx.js` 中遊俠補疾風雙射、聖女補星環祝禱、狂戰士補裂地橫掃；爆擊各有職業特效。營地、職業殿堂、地圖、戰鬥、結算及學習模式共用角色播放器。
-- 舊造型 ID 與已購造型保留在「經典造型」。沒有已存選擇時顯示各職業第一款新男造型；已有明確選擇時沿用。新造型 cost=0，切換不扣魂晶。
+- 價格：新造型依款式 1／2／3／4 為 160／180／200／240 魂晶，定價在 `js/heroes.js` 的 `NEW_SKIN_COST`。可免費試穿與試播；新角色預設穿經典預設款，未購買的付費造型會退回預設外觀。舊造型 ID 與已購造型保留在「經典造型」。
 - 動畫展示頁：`docs/hero-art/preview.html`（可 file://）；提示詞與造型清單：`docs/hero-art/manifest.json`；來源／修正紀錄：`docs/hero-art/generation-log.json`。
 - 重新分析素材：`python tools/hero_atlas.py`（需要 Pillow、NumPy，只寫 metadata，不修改 PNG）；校驗：`docs/hero-art/atlas-check.json`。
-- QA 已通過 40 款換装與保存、320 姿勢非空／差異、160 次普通動畫與 40 次爆擊動畫、5 職業實際答題攻擊、4 招隨機覆盖、390px 手機版及 file:// 載入。結果：`docs/hero-art/qa-report.json`；截圖：`docs/hero-art/screenshots/`。
+- QA 已通過 40 款購買扣款、換裝與保存、320 姿勢非空／差異、160 次普通動畫與 40 次爆擊動畫、5 職業實際答題攻擊、4 招隨機覆蓋、390px 手機版及 file:// 載入。結果：`docs/hero-art/qa-report.json`；截圖：`docs/hero-art/screenshots/`。
 - QA 在獨立且用完丟棄的 Edge headless context 內執行，備份／還原該 context 的 localStorage，沒有使用使用者的瀏覽器存檔。測試工具：`tools/check_hero_animations.cjs`、`tools/check_hero_motion.cjs`（Playwright + Edge）；本機可設定 `$env:NODE_PATH='E:\NEWTEST\skull-atlas-3d\node_modules'` 後執行。
-- 本次入口快取版本 v31；腳本順序為 content2 → hero-atlas → heroes → store。不要手改自動產生的 hero-atlas.js，也不要改已用於存檔的 px_<職業>_<m/f><1..4> ID。
+- 改 JS／CSS 後需更新 index.html 與展示頁的快取版本；腳本順序為 content2 → monsters → hero-atlas → heroes → store。不要手改自動產生的 hero-atlas.js，也不要改已用於存檔的 px_<職業>_<m/f><1..4> ID。

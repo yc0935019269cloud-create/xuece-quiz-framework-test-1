@@ -12,6 +12,7 @@
   python tools/build.py --check    只檢查不輸出
   python tools/build.py --strict   學習單元有「節奏警告」也視為失敗
   python tools/build.py --index    另外輸出 content/_index/<科目>.tsv（題目索引，給 AI 挑題連結用）
+  python tools/build.py --coverage 列出「題目有、教材沒教」的明細（單元要宣告 banks，見 docs/格式_學習模式.md §9）
 
 格式規格：docs/格式_題庫.md、docs/格式_學習模式.md
 """
@@ -22,6 +23,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 from datetime import datetime
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -435,7 +437,7 @@ def check_flash(f, where, R):
         R.err(where, 'flash 要有 front 與 back')
 
 
-def validate_pack(pack, Q, subj_ids):
+def validate_pack(pack, Q, subj_ids, exam_ids=()):
     R = Report()
     for k in ('id', 'subject', 'unit', 'title'):
         if not is_str(pack.get(k)):
@@ -448,6 +450,18 @@ def validate_pack(pack, Q, subj_ids):
         pack['path'] = [x.strip() for x in re.split(r'[/›>｜|]', pack['path']) if x.strip()]
     if pack.get('path') is not None and not (isinstance(pack['path'], list) and all(is_str(x) for x in pack['path'])):
         R.err('pack.path', 'path 要是字串陣列，例如 ["高一", "上學期", "第3章 細胞"]')
+    for k in ('banks', 'prior'):
+        v = pack.get(k)
+        if v is None:
+            continue
+        if not (isinstance(v, list) and all(is_str(x) for x in v)):
+            R.err(f'pack.{k}', f'{k} 要是題本 id 的字串陣列')
+        else:
+            for x in v:
+                if x not in exam_ids:
+                    R.err(f'pack.{k}', f'沒有這個題本：{x}')
+    if pack.get('prior') and not pack.get('banks'):
+        R.err('pack.prior', '有 prior 就必須有 banks')
     lessons = pack.get('lessons')
     if not isinstance(lessons, list) or not lessons:
         R.err('pack', '缺少 lessons')
@@ -509,6 +523,9 @@ def validate_pack(pack, Q, subj_ids):
                     for sj in pick.get('subjects') or []:
                         if sj not in subj_ids:
                             R.err(SW + '.pick', f'未知科目 {sj}')
+                    for ex in pick.get('exams') or []:
+                        if ex not in exam_ids:
+                            R.err(SW + '.pick', f'沒有這個題本：{ex}')
                 for ci, c in enumerate(s.get('checks') or []):
                     check_check(c, f'{SW}.checks[{ci}]', R)
                 if not s.get('qids') and not pick and not s.get('checks'):
@@ -558,6 +575,17 @@ def validate_pack(pack, Q, subj_ids):
     return R
 
 
+def apply_banks(pack):
+    """單元宣告了 banks／prior：實戰 pick 沒寫 exams 時，自動限制在這些題本內（不會抽到別的單元的題）。"""
+    if not pack.get('banks'):
+        return
+    allow = list(pack['banks']) + [x for x in pack.get('prior') or [] if x not in pack['banks']]
+    for L in pack['lessons']:
+        for s in L['steps']:
+            if s['type'] == 'practice' and s.get('pick') and not s['pick'].get('exams'):
+                s['pick']['exams'] = allow
+
+
 def assign_ids(pack):
     for L in pack['lessons']:
         base = f'{pack["id"]}/{L["id"]}'
@@ -575,9 +603,162 @@ def assign_ids(pack):
                     f.setdefault('id', 'f' + hid(base, f['front']))
 
 
+
+def _norm_txt(s):
+    s = unicodedata.normalize('NFKC', str(s)).lower()
+    return re.sub(r'[\W_]+', '', s)      # 去掉空白與所有標點（包含 – — ⁻ ＋ 等），只比對文字內容
+
+
+def _collect_text(o, out):
+    """收集單元裡所有「教學文字」；pick／qids 只是連結，不算教過。"""
+    if isinstance(o, dict):
+        for k, v in o.items():
+            if k in ('pick', 'qids', 'id', 'type', 'kind'):
+                continue
+            _collect_text(v, out)
+    elif isinstance(o, list):
+        for v in o:
+            _collect_text(v, out)
+    elif isinstance(o, str):
+        out.append(o)
+
+
+SYM_RE = re.compile(r"[A-Za-zΑ-Ωα-ωμ][A-Za-zΑ-Ωα-ω0-9'′]*")
+SYM_SKIP = {'cm', 'mm', 'nm', 'thz', 'hz', 'ms', 'kg', 'db', 'sd', 'od', 'os', 'ou', 'no', 'vs', 'or', 'and', 'the', 'of',
+            'is', 'in', 'to', 'at', 'on', 'we', 'it', 'if', 'as', 'be', 'by', 'an', 'do', 'ok', 'id', 'ex', 'cf', 'eg', 'ie',
+            'new', 'are', 'due', 'via', 'its', 'for', 'not', 'eye', 'dry', 'arm', 'can', 'has', 'was', 'but', 'use', 'one', 'two', 'all',
+            'with', 'from', 'that', 'this', 'when', 'than'}   # 常見英文單字（引用投影片原句時出現），不算專有名詞
+
+
+def question_tokens(q):
+    """題目（題幹、選項、詳解）裡出現的符號／英文縮寫，例如 Pe、Pv、Newton、JCC。"""
+    text = ' '.join([q.get('stem') or '', ' '.join(q.get('choices') or []), q.get('ex') or ''])
+    text = unicodedata.normalize('NFKC', text)
+    toks = set()
+    for t in SYM_RE.findall(text):
+        tl = t.lower()
+        if len(t) < 2 or tl in SYM_SKIP or re.fullmatch(r'[a-e]', tl):
+            continue
+        if re.fullmatch(r'[a-z]{4,}', tl):
+            continue              # 全小寫的一般英文單字不算專有名詞
+        toks.add(t)
+    return toks
+
+
+def _short(ids):
+    out = [i.split('-q-')[-1] if '-q-' in i else i for i in ids[:8]]
+    return ', '.join(out) + ('…' if len(ids) > 8 else '')
+
+
+
+def _tags_of(q):
+    return [t.strip() for t in re.split(r'[、,，]', q.get('tag') or '') if t.strip()]
+
+
+def link_picks(packs, QB):
+    """嚴格連結：宣告了 banks 的單元，每個 practice.pick 都會得到 pick.ids ——
+       「到這一課為止，題目的所有標籤都已在教材出現過」的題目名單。遊戲只從這份名單抽題，
+       所以不會抽到別的單元、也不會抽到後面幾課才教的題目。"""
+    owner = {}
+    for p in packs:
+        for b in p.get('banks') or []:
+            owner.setdefault(b, p)
+
+    def full_blob(p):
+        out = []
+        _collect_text(p['lessons'], out)
+        return _norm_txt(' '.join(out))
+
+    by_exam = {}
+    for q in QB['questions']:
+        by_exam.setdefault(q['exam'], []).append(q)
+    full_cache = {}
+    for pack in packs:
+        if not pack.get('banks'):
+            continue
+        cum = []
+        for L in pack['lessons']:
+            _collect_text(L, cum)
+            blob = _norm_txt(' '.join(cum))
+            for s in L['steps']:
+                if s['type'] != 'practice' or not s.get('pick'):
+                    continue
+                allow = []
+                for ex in s['pick'].get('exams') or []:
+                    o = owner.get(ex)
+                    if o is None or o is pack:
+                        eb = blob
+                    else:
+                        eb = full_cache.setdefault(o['id'], full_blob(o))
+                    for q in by_exam.get(ex, []):
+                        if all(_norm_txt(t) in eb for t in _tags_of(q)):
+                            allow.append(q['id'])
+                s['pick']['ids'] = allow
+
+
+def check_coverage(packs, QB, args):
+    """學習單元 ⇄ 題本的嚴格連結檢查：只檢查有宣告 banks 的單元。
+       ① 題目標籤在單元教材裡找不到（教材還沒追上題目：補教材，不是降低題目）② 沒有任何一課的實戰連得到的題目
+       ③ 實戰抽題池太小 ④ 題目用到、教材沒提到的符號／縮寫（--coverage 才列出明細）"""
+    detail = '--coverage' in args
+    Qs = {q['id']: q for q in QB['questions']}
+    warns = 0
+    for pack in packs:
+        banks = pack.get('banks')
+        if not banks:
+            continue
+        own = [q for q in QB['questions'] if q['exam'] in banks]
+        text = []
+        _collect_text(pack['lessons'], text)
+        _collect_text([pack.get('title'), pack.get('desc')], text)
+        blob = _norm_txt(' '.join(text))
+        lines = []
+        miss = {}
+        for q in own:
+            for tg in _tags_of(q):
+                if _norm_txt(tg) not in blob:
+                    miss.setdefault(tg, []).append(q['id'])
+        for tg, ids in sorted(miss.items()):
+            lines.append(f'教材沒提到標籤「{tg}」（{len(ids)} 題：{_short(ids)}）')
+        linked = set()
+        for L in pack['lessons']:
+            for s in L['steps']:
+                if s['type'] != 'practice':
+                    continue
+                linked.update(x for x in s.get('qids') or [] if x in Qs)
+                pk = s.get('pick')
+                if pk:
+                    words = [w.lower() for w in pk['match']]
+                    allow = set(pk.get('ids') or [])
+                    pool = [q for q in QB['questions'] if q['id'] in allow and q['type'] in ('single', 'multi', 'fill', 'tf')
+                            and any(w in (q.get('tag') or '').lower() or (pk.get('inEx') is not False and w in (q.get('ex') or '').lower()) for w in words)]
+                    linked.update(q['id'] for q in pool)
+                    if len(pool) < max(2, pk.get('n', 2)):
+                        lines.append(f'{L["id"]} 實戰抽題池只有 {len(pool)} 題（match={pk["match"]}）')
+        orphan = [q['id'] for q in own if q['id'] not in linked and q['type'] != 'open']
+        if orphan:
+            lines.append(f'{len(orphan)} 題沒有任何一課的實戰連得到：{_short(orphan)}')
+        sym = {}
+        for q in own:
+            for t in question_tokens(q):
+                if _norm_txt(t) not in blob:
+                    sym.setdefault(t, []).append(q['id'])
+        if detail and sym:
+            top = sorted(sym.items(), key=lambda kv: -len(kv[1]))
+            lines.append('題目用到、教材沒出現的符號／縮寫：' + '、'.join(f'{t}×{len(v)}' for t, v in top[:80]))
+        elif sym:
+            lines.append(f'另有 {len(sym)} 個符號／縮寫題目有用、教材沒出現（--coverage 看明細）')
+        print(f'{"⚠" if lines else "✔"} 覆蓋檢查 {pack["id"]}（{len(own)} 題）')
+        for ln in lines:
+            print('    ' + ln)
+        warns += len([x for x in lines if not x.startswith('另有')])
+    return warns
+
+
 def build_learn(pj, QB, args):
     subj_ids = [s['id'] for s in pj['subjects']]
     Q = {q['id'] for q in QB['questions']}
+    exam_ids = {e['id'] for e in QB['exams']}
     files = sorted(f for f in glob.glob(os.path.join(CONTENT, 'learn', '**', '*.json'), recursive=True)
                    if not os.path.basename(f).startswith('_'))
     files += [('bundle', f, x) for f, x in BUNDLE[1]]
@@ -595,7 +776,7 @@ def build_learn(pj, QB, args):
             if isinstance(pack, dict) and pack.get('schema') == 'xd-bundle/1':
                 continue
         norm_md(pack)
-        R = validate_pack(pack, Q, subj_ids)
+        R = validate_pack(pack, Q, subj_ids, exam_ids)
         if pack.get('id') in ids:
             R.err('pack.id', f'和 {ids[pack["id"]]} 重複')
         nl = len(pack.get('lessons') or [])
@@ -605,10 +786,16 @@ def build_learn(pj, QB, args):
             bad += 1
             continue
         ids[pack['id']] = rel(f)
+        apply_banks(pack)
         assign_ids(pack)
         packs.append(pack)
     packs.sort(key=lambda p: (subj_ids.index(p['subject']), p.get('order', 999), p['id']))
     print(f'\n學習模式：{len(files)} 個檔案、可用 {len(packs)} 個單元；失敗 {bad}\n')
+    link_picks(packs, QB)
+    cov = check_coverage(packs, QB, args)
+    if cov and '--strict' in args:
+        print(f'覆蓋檢查有 {cov} 項警告（--strict 視為失敗）')
+        bad += 1
     return {'v': 1, 'built': datetime.now().strftime('%Y-%m-%d %H:%M'), 'packs': packs}, bad
 
 
