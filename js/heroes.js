@@ -5,9 +5,30 @@ const HeroAnim = (() => {
   const imageCache = new Map(), states = new WeakMap();
   const get = id => byId[String(id).replace(/^ha:/, '')];
   const timing = { attack: 650, critical: 850 };
+  /* 畫布比角色格子（160×160）多出左右各 32、上方 64 的空間，讓大揮武器的姿勢不被裁掉，
+     這樣才能依角色本身的身高統一大小，而不是被最寬的出招姿勢限制。腳底 pivot 仍在格內 (80,157)。 */
+  const BOX = 160, OX = 32, OY = 64, CW = BOX + OX * 2, CH = BOX + OY;
+  /* 待機身高（畫布像素）。營地裡寵物約 57px／66px 格，勇者 124px 格時此值約為寵物的 1.7 倍。 */
+  const TARGET_H = 128;
+  const scaleCache = new Map();
+  function scaleFor(a, r) {
+    const stored = window.HERO_ATLAS && window.HERO_ATLAS[a.id];
+    if (!stored || !stored.frames || !stored.frames[0]) { const refH = r.scaleH || r.h; return Math.min(146 / refH, 156 / (r.scaleW || Math.max(r.w, refH * .8))); }
+    if (scaleCache.has(a.id)) return scaleCache.get(a.id);
+    const idle = stored.frames[0];
+    // 身高指標：待機姿勢外框高與「像素面積開根號」各佔一半（帽子、長杖、翹髮不會讓角色被縮太多）
+    const metric = idle.h * .5 + Math.sqrt(idle.area) * 1.47 * .5;
+    let scale = TARGET_H / metric;
+    // 安全上限：所有姿勢（含出招）都要放得進擴大後的畫布
+    stored.frames.forEach(f => {
+      const half = Math.max(f.pivotX, f.w - f.pivotX), up = f.pivotY;
+      scale = Math.min(scale, (OX + 80 - 3) / half, (OY + 157 - 3) / up);
+    });
+    scaleCache.set(a.id, scale); return scale;
+  }
   function html(id, size = 96, cls = '', style = '') {
     const a = get(id); if (!a) return '';
-    return '<span class="sp hero-sprite ' + cls.replace(/anim-bob/g,'') + '" data-hero-actor="' + a.id + '" style="width:' + size + 'px;height:' + size + 'px;' + style + '"><canvas width="160" height="160" role="img" aria-label="' + a.name + '"></canvas></span>';
+    return '<span class="sp hero-sprite ' + cls.replace(/anim-bob/g,'') + '" data-hero-actor="' + a.id + '" style="width:' + size + 'px;height:' + size + 'px;' + style + '"><canvas width="'+CW+'" height="'+CH+'" role="img" aria-label="' + a.name + '"></canvas></span>';
   }
   function load(a) {
     if (imageCache.has(a.id)) return imageCache.get(a.id);
@@ -69,9 +90,8 @@ const HeroAnim = (() => {
       y = Math.round(Math.sin(elapsed / 600) * 1.1);
     }
     const r = rect(a,item.image,frame);
-    const referenceH = r.scaleH || r.h;
-    // 素材姿勢共用比例；以腳部 pivot 對齊，保留伸出去的武器和披風。
-    const scale = Math.min(146 / referenceH, 156 / (r.scaleW || Math.max(r.w,referenceH * .8)));
+    // 每個角色依待機身高統一大小（見 scaleFor）；各姿勢共用比例，以腳部 pivot 對齊，保留伸出去的武器和披風。
+    const scale = scaleFor(a, r);
     const drawX = 80 - (r.pivotX || r.w / 2) * scale;
     const drawY = 157 - (r.pivotY || r.h) * scale;
     // 放大角色後仍留住伸出的武器；約束局部晃動，不裁掉圖集內容。
@@ -81,13 +101,13 @@ const HeroAnim = (() => {
       return {left:Math.min(...corners.map(p=>p[0])),right:Math.max(...corners.map(p=>p[0])),top:Math.min(...corners.map(p=>p[1])),bottom:Math.max(...corners.map(p=>p[1]))};
     };
     let edge=bounds(rot);
-    if(edge.right-edge.left>156||edge.bottom-edge.top>156){rot=0;edge=bounds(0);}
-    x=Math.max(2-edge.left,Math.min(x,158-edge.right));
-    y=Math.max(2-edge.top,Math.min(y,158-edge.bottom));
+    if(edge.right-edge.left>CW-4||edge.bottom-edge.top>CH-4){rot=0;edge=bounds(0);}
+    x=Math.max(2-OX-edge.left,Math.min(x,BOX+OX-2-edge.right));
+    y=Math.max(2-OY-edge.top,Math.min(y,BOX-2-edge.bottom));
     const key = [frame,x,y,Math.round(rot*100),action && action.kind,Math.round(progress*15)].join('|');
     if (st.last === key) return; st.last = key;
-    const ctx = canvas.getContext('2d'); ctx.clearRect(0,0,160,160); ctx.imageSmoothingEnabled = false;
-    ctx.save(); ctx.translate(80+x,157+y); ctx.rotate(rot); ctx.translate(-80,-157);
+    const ctx = canvas.getContext('2d'); ctx.clearRect(0,0,CW,CH); ctx.imageSmoothingEnabled = false;
+    ctx.save(); ctx.translate(OX,OY); ctx.translate(80+x,157+y); ctx.rotate(rot); ctx.translate(-80,-157);
     if (action && action.kind === 'critical' && progress < .45) {
       ctx.strokeStyle = a.accent; ctx.lineWidth=2;
       const radius = 15 + Math.round(progress*45); ctx.beginPath();
@@ -117,8 +137,8 @@ const HeroAnim = (() => {
     const canvas=canvasOf(target);if(!canvas)return;
     const a=get(canvas.parentElement.dataset.heroActor);
     return load(a).ready.then(()=>{const st=state(canvas);st.action=null;st.last='';
-      const r=rect(a,load(a).image,index),ctx=canvas.getContext('2d'),scale=Math.min(146/(r.scaleH||r.h),156/(r.scaleW||Math.max(r.w,(r.scaleH||r.h)*.8)));
-      ctx.clearRect(0,0,160,160);ctx.imageSmoothingEnabled=false;paint(ctx,load(a).image,r,80-(r.pivotX||r.w/2)*scale,157-(r.pivotY||r.h)*scale,scale);canvas.dataset.pose=String(index);});
+      const r=rect(a,load(a).image,index),ctx=canvas.getContext('2d'),scale=scaleFor(a,r);
+      ctx.clearRect(0,0,CW,CH);ctx.imageSmoothingEnabled=false;paint(ctx,load(a).image,r,OX+80-(r.pivotX||r.w/2)*scale,OY+157-(r.pivotY||r.h)*scale,scale);canvas.dataset.pose=String(index);});
   }
   setInterval(()=>{
     if(document.hidden)return;

@@ -171,7 +171,8 @@ hr.px { border: 0; border-top: 4px dashed var(--hi); margin: 14px 0; }
 .stage .ent.hero { left: 14%; }
 .stage .ent.pet { left: 3%; bottom: 22px; }
 .stage .ent.mon { right: 14%; }
-.stage .shadow { position: absolute; bottom: -6px; left: 15%; right: 15%; height: 10px; background: rgba(0,0,0,.45); border-radius: 50%; z-index: -1; }
+.stage .ent { line-height: 0; } /* 去掉行高多出的空白，陰影才會貼在腳下 */
+.stage .shadow { position: absolute; bottom: -3px; left: 15%; right: 15%; height: 10px; background: rgba(0,0,0,.45); border-radius: 50%; z-index: -1; }
 .stage .torch { position: absolute; top: 60px; width: 28px; height: 28px; z-index: 1; }
 .stage .torch::after { content: ''; position: absolute; left: 50%; top: 50%; width: 90px; height: 90px; transform: translate(-50%,-50%); background: radial-gradient(circle, rgba(255,170,60,.35), transparent 70%); animation: flicker .6s steps(2) infinite; }
 @keyframes flicker { 50% { opacity: .6; } }
@@ -431,7 +432,8 @@ input[type=range]::-moz-range-thumb { width: 14px; height: 18px; background: var
 /* ---------- 武器 ---------- */
 .hero-body { position: relative; display: inline-block; }
 .hero-sprite { vertical-align: bottom; flex-shrink: 0; overflow: visible; }
-.hero-sprite canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; }
+/* 畫布比格子大（左右各 +20%、上方 +40%），讓出招的武器不被裁掉；腳底仍對齊格子底部 */
+.hero-sprite canvas { display: block; position: absolute; left: -20%; top: -40%; width: 140%; height: 140%; image-rendering: pixelated; pointer-events: none; }
 .hero-skin-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
 .hero-skin-grid .style-opt { flex-direction: column; min-height: 125px; justify-content: center; gap: 4px; white-space: normal; }
 .hero-preview-actions .row,.hero-skin-filters { flex-wrap: wrap; gap: 6px; }
@@ -595,6 +597,8 @@ input[type=range]::-moz-range-thumb { width: 14px; height: 18px; background: var
 .camp .hill { background-color: #4a8a4a; background-size: 115px 58px; background-repeat: repeat; image-rendering: pixelated; box-shadow: inset 0 3px 0 rgba(255,255,255,.12); }
 .camp.tod-night .hill { background-color: #1f3a2f; filter: brightness(.38) saturate(.6) hue-rotate(15deg); }
 .camp.tod-dusk .hill { filter: brightness(.8) sepia(.2); }
+.camp-hero, .camp-pet { line-height: 0; } /* 去掉行高多出的空白，陰影才會貼在腳下 */
+.camp-pet .zzz { line-height: 1; }
 .camp-obj .shadow { position: absolute; left: 12%; right: 12%; bottom: -3px; height: 8px; background: rgba(40,25,20,.28); border-radius: 50%; z-index: -1; }
 .camp-fire .shadow { left: 18%; right: 18%; bottom: 0; }
 .hd-hero .weapon.main { right: calc(-16px * var(--k)); bottom: calc(22px * var(--k)); }
