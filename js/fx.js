@@ -179,8 +179,9 @@ const FX = (() => {
     } else i = Math.min(5, Math.floor((Math.max(1, s.floor) - 1) / 2));
     return THEMES[U.clamp(i, 0, THEMES.length - 1)];
   }
-  function stageBG(run) {
-    const th = themeFor(run);
+  /* theme 可直接指定（學習模式的戰鬥條沒有 run），withName=false 時不顯示場景名稱 */
+  function stageBG(run, theme, withName = true) {
+    const th = theme || themeFor(run);
     const wallDeco = th.deco.map(([t, x]) => `<img class="px wdeco" src="${T(t)}" style="left:calc(${x}% - 32px);filter:${th.wf}">`).join('');
     const back = (th.back || []).map((t, i) => `<img class="px wdeco" src="${T(t)}" style="left:${i * 12.5 + 1}%;top:22px;width:56px;height:56px;filter:${th.ff}">`).join('');
     const props = th.props.map(([t, x]) => `<div class="prop" style="left:calc(${x}% - 22px)">${SP.icon(t, 44)}</div>`).join('');
@@ -192,7 +193,7 @@ const FX = (() => {
       ${th.lava ? '<div class="bg-lava"></div>' : ''}
       <div class="bg-glow" style="background:radial-gradient(ellipse at 50% 30%, ${th.glow}, transparent 70%)"></div>
       <div class="bg-pts">${pts}</div>
-      <div class="theme-name">${th.name}</div>`;
+      ${withName ? `<div class="theme-name">${th.name}</div>` : ''}`;
   }
 
   /* ---------------- 怪物攻擊演出：style 見 monsters.js（預設近身衝撞） ---------------- */
