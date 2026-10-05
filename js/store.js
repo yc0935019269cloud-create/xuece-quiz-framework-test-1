@@ -12,7 +12,7 @@ const Store = (() => {
     relicsUnlocked: C.RELICS.filter(r => !r.locked && !r.boss && !r.secret).map(r => r.id),
     classes: { knight: { lv: 1, xp: 0 } }, activeClass: 'knight', bestiary: {},
     abyss: { maxDiff: 0, clears: 0, runs: 0, bestAct: 0, bossKills: 0, best: {} },
-    pets: {}, activePet: null, starterPicked: false, petNames: {}, petSkin: {}, petAcc: {}, ownedSkins: [], ownedAcc: [], daily: {}, streak: { last: '', n: 0 }, migratedPets: true,
+    pets: {}, activePet: null, starterPicked: false, petNames: {}, petSkin: {}, petAcc: {}, ownedSkins: [], ownedAcc: [], skinVouchers: 0, voucherDate: '', daily: {}, streak: { last: '', n: 0 }, migratedPets: true,
     stats: { runs: 0, wins: 0, answered: 0, correct: 0, bestFloor: 0, kills: 0, bosses: 0, gemsEarned: 0, deaths: 0 },
     stages: {}, created: Date.now()
   });
