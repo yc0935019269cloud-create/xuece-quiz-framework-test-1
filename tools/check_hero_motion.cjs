@@ -1,5 +1,5 @@
 const {chromium}=require('playwright'),fs=require('fs'),path=require('path'),assert=require('assert');
-(async()=>{const browser=await chromium.launch({channel:'msedge',headless:true});const page=await browser.newPage({viewport:{width:1280,height:900}});await page.goto('http://127.0.0.1:8965/docs/hero-art/preview.html');
+(async()=>{const browser=await chromium.launch(process.env.PW_EXE?{executablePath:process.env.PW_EXE,headless:true}:{channel:'msedge',headless:true});const page=await browser.newPage({viewport:{width:1280,height:900}});await page.goto('http://127.0.0.1:8965/docs/hero-art/preview.html');
 const result=await page.evaluate(async()=>{
  await Promise.all(HeroAnim.ACTORS.map(a=>HeroAnim.load(a).ready));
  const host=document.createElement('div');host.style='position:fixed;left:0;top:0;width:1000px;display:grid;grid-template-columns:repeat(10,96px);z-index:500;background:#182036';document.body.appendChild(host);
