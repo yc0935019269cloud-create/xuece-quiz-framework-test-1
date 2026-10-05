@@ -196,6 +196,10 @@ const Screens = (() => {
       scene.appendChild(h); setTimeout(() => h.remove(), 1400);
     }
   }
+  /* 贈送禮物清單：每個 id 每個存檔只能領一次；之後要再送，就在這裡加一筆（id 不可重複） */
+  const GIFTS = [
+    { id: 'skin-voucher-2026-10-05', vouchers: 1, title: '限時贈禮：新造型兌換券 ×1，可任選一款新造型！' }
+  ];
   function hub() {
     clearInterval(campTimer);
     const p = P(), run = Store.loadRun();
@@ -205,6 +209,12 @@ const Screens = (() => {
     const wrongN = Object.values(Store.wrong).filter(w => !w.done).length;
     const D = Store.daily(), streak = Store.touchStreak();
     const GOAL = 20;
+    const pending = GIFTS.filter(g => !(p.giftsClaimed || []).includes(g.id)), vouchers = p.skinVouchers || 0;
+    const giftsHTML = (pending.length || vouchers) ? `<div class="daily mt" id="voucherBox">
+          <div class="row"><b class="gold-t">🎁 禮物</b><span class="grow"></span><span class="small-t">新造型兌換券 <b class="purple-t">${vouchers}</b> 張</span></div>
+          ${pending.map(g => `<div class="small-t">${g.title}</div><div class="row mt" style="justify-content:flex-end"><button class="px-btn small gold" data-gift="${g.id}">領取 ×${g.vouchers}</button></div>`).join('')}
+          ${vouchers ? '<div class="small-t dim">兌換券可任選一款新造型（價值 160～240 魂晶）。</div><div class="row mt" style="justify-content:flex-end"><button class="px-btn small purple" id="voucherUse">選新造型兌換</button></div>' : ''}
+        </div>` : '';
     const tod = timeOfDay();
     const tiles = [
       run && { id: 'continue', icon: 45, t: '繼續遠征', d: run.mode === 'abyss' ? `${run.title}・第 ${run.act} 章・${C.DIFFS[run.diff || 0].name}` : `${run.title}・第 ${run.floor} 層・剩 ${run.queue.length - run.qi} 題`, cls: 'gold' },
@@ -254,13 +264,7 @@ const Screens = (() => {
           <div class="bar" style="height:12px"><i style="width:${U.pct(Math.min(D.answered, GOAL), GOAL)}%;background:var(--gold)"></i></div>
           <div class="row mt" style="justify-content:flex-end">${D.claimed ? '<span class="tag ok">今日獎勵已領取</span>' : `<button class="px-btn small gold" id="claim" ${D.answered >= GOAL ? '' : 'disabled'}>領取 ${10 + Math.min(streak, 7) * 2} 魂晶</button>`}</div>
         </div>
-        <div class="daily mt" id="voucherBox">
-          <div class="row"><b class="gold-t">🎟️ 每日登入禮</b><span class="grow"></span><span class="small-t">兌換券 <b class="purple-t">${p.skinVouchers || 0}</b> 張</span></div>
-          <div class="small-t dim">每天上線可領 1 張新造型兌換券，可任選一款新造型（價值 160～240 魂晶）。</div>
-          <div class="row mt" style="justify-content:flex-end">
-            ${p.voucherDate === D.date ? '<span class="tag ok">今日已領取</span>' : '<button class="px-btn small gold" id="voucherClaim">🎁 領取今日兌換券</button>'}
-            ${(p.skinVouchers || 0) > 0 ? '<button class="px-btn small purple" id="voucherUse">選新造型兌換</button>' : ''}
-          </div>
+        ${giftsHTML}
         </div>
         ${pet ? `<p class="small-t mt">夥伴：<b>${U.esc(Store.petName(p.activePet))}</b>（${pet.kind}）Lv.${pl.lv}<br><span class="dim">${pet.desc(pl.lv)}</span></p>` : ''}
         <hr class="px">
@@ -283,12 +287,14 @@ const Screens = (() => {
     if (claim) claim.onclick = () => {
       const g = 10 + Math.min(streak, 7) * 2; D.claimed = true; p.gems += g; Store.saveProfile(); SFX.play('win'); U.toast(`完成今日目標！獲得 ${g} 魂晶`); hub();
     };
-    const vClaim = U.$('#voucherClaim'), vUse = U.$('#voucherUse');
-    if (vClaim) vClaim.onclick = () => {
-      p.voucherDate = D.date; p.skinVouchers = (p.skinVouchers || 0) + 1; Store.saveProfile();
-      SFX.play('win'); U.toast('獲得「新造型兌換券」×1！快選一款喜歡的造型吧');
+    U.$$('[data-gift]').forEach(b => b.onclick = () => {
+      const g = GIFTS.find(x => x.id === b.dataset.gift);
+      if (!g || (p.giftsClaimed || []).includes(g.id)) return;
+      p.giftsClaimed = (p.giftsClaimed || []).concat(g.id); p.skinVouchers = (p.skinVouchers || 0) + g.vouchers; Store.saveProfile();
+      SFX.play('win'); U.toast(`獲得「新造型兌換券」×${g.vouchers}！快選一款喜歡的造型吧`);
       voucherModal();
-    };
+    });
+    const vUse = U.$('#voucherUse');
     if (vUse) vUse.onclick = () => { SFX.play('click'); voucherModal(); };
     // ---- 互動 ----
     const heroEl = U.$('#cHero'), petEl = U.$('#cPet'), fireEl = U.$('#cFire'), board = U.$('#cBoard');
