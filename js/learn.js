@@ -354,9 +354,19 @@ const LEARN_UI = (() => {
       U.$('#lpBattle').textContent = D.cfg.battle ? '⚔ 戰鬥中' : '🕊 平靜模式';
       if (!D.cfg.battle) return;
       const m = B.boss || B.mon, pet = Store.profile.activePet;
-      lb.innerHTML = `<div class="lb-hud"><span class="lb-hp">${'❤'.repeat(B.hp)}<i>${'❤'.repeat(Math.max(0, B.max - B.hp))}</i></span><span class="lb-en" title="知識能量：讀概念卡、玩互動內容累積；第一次就答對時消耗 1 點造成暴擊">${'⚡'.repeat(B.en)}<i>${'⚡'.repeat(3 - B.en)}</i></span></div>
-        <div class="lb-hero" id="lbHero">${SP.tile(Store.heroTile(), 52, 'anim-bob')}${pet ? `<span class="lb-pet">${Store.petHTML(pet, 34)}</span>` : ''}</div>
-        ${m && m.hp > 0 ? `<div class="lb-mon ${B.boss ? 'boss' : ''}" id="lbMon"><div class="lb-mname">${U.esc(m.name)}</div><div class="bar lb-mbar"><i style="width:${U.pct(m.hp, m.max)}%"></i></div>${SP.icon(m.tile, B.boss ? 68 : 52, 'anim-bob', `filter:${m.filter};transform:scaleX(-1)`)}</div>`
+      // 場景：依課次換（書庫→苔蘚洞窟→冰晶洞窟→石磚地牢），首領用熔岩／虛空；場景只在換主題時重畫，粒子才不會每次出招就重來
+      const th = B.boss ? FX.THEMES[lvIdx % 2 ? 5 : 4] : FX.THEMES[[2, 1, 3, 0][Math.max(0, lvIdx) % 4]];
+      let sc = lb.querySelector('.lb-scene');
+      if (!sc || sc.dataset.th !== th.id) {
+        if (sc) sc.remove();
+        sc = U.h(`<div class="lb-scene theme-${th.id}" data-th="${th.id}">${FX.stageBG(null, th, false)}</div>`);
+        lb.insertBefore(sc, lb.firstChild);
+      }
+      let fg = lb.querySelector('.lb-fg');
+      if (!fg) { fg = document.createElement('div'); fg.className = 'lb-fg'; lb.appendChild(fg); }
+      fg.innerHTML = `<div class="lb-hud"><span class="lb-hp">${'❤'.repeat(B.hp)}<i>${'❤'.repeat(Math.max(0, B.max - B.hp))}</i></span><span class="lb-en" title="知識能量：讀概念卡、玩互動內容累積；第一次就答對時消耗 1 點造成暴擊">${'⚡'.repeat(B.en)}<i>${'⚡'.repeat(3 - B.en)}</i></span></div>
+        <div class="lb-hero" id="lbHero"><span class="lb-hbody"><i class="shadow"></i>${SP.tile(Store.heroTile(), 150, 'anim-bob')}</span>${pet ? `<span class="lb-pet">${Store.petHTML(pet, 54)}</span>` : ''}</div>
+        ${m && m.hp > 0 ? `<div class="lb-mon ${B.boss ? 'boss' : ''}" id="lbMon"><div class="lb-mname">${U.esc(m.name)}</div><div class="bar lb-mbar"><i style="width:${U.pct(m.hp, m.max)}%"></i></div><span class="lb-mbody"><i class="shadow"></i>${SP.icon(m.tile, B.boss ? 136 : m.elite ? 112 : 96, 'anim-bob', `filter:${m.filter};transform:scaleX(-1)`)}</span></div>`
           : `<div class="lb-mon empty small-t dim">${B.kills ? `已擊敗 ${B.kills} 隻` : '四周很安靜…'}</div>`}`;
     }
     function fxText(where, text, cls) {

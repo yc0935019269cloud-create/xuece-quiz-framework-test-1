@@ -5,7 +5,7 @@ const root=path.resolve(__dirname,'..'),out=path.join(root,'docs/hero-art');
 const url=process.env.HERO_TEST_URL||'http://127.0.0.1:8965/index.html';
 const report={actors:0,poses:0,wardrobe:0,classes:[],errors:[],offline:false,mobile:false};
 (async()=>{
- const browser=await chromium.launch({channel:'msedge',headless:true});
+ const browser=await chromium.launch(process.env.PW_EXE?{executablePath:process.env.PW_EXE,headless:true}:{channel:'msedge',headless:true});
  const context=await browser.newContext({viewport:{width:1280,height:900}});
  const page=await context.newPage();page.on('pageerror',e=>report.errors.push(e.message));
  await page.addInitScript(()=>{window.__heroStorageBackup=Object.fromEntries(Object.entries(localStorage));});
@@ -89,7 +89,7 @@ const report={actors:0,poses:0,wardrobe:0,classes:[],errors:[],offline:false,mob
     host.innerHTML=HeroAnim.html(a.id,160);host.dataset.staticHero='1';
     const hashes=[];
     for(let f=0;f<8;f++){
-     await HeroAnim.frame(host,f);const cv=host.querySelector('canvas'),data=cv.getContext('2d').getImageData(0,0,160,160).data;
+     await HeroAnim.frame(host,f);const cv=host.querySelector('canvas'),data=cv.getContext('2d').getImageData(0,0,cv.width,cv.height).data;
      let alpha=0,hash=2166136261;for(let j=0;j<data.length;j++){hash=Math.imul(hash^data[j],16777619)>>>0;if(j%4===3&&data[j]>40)alpha++;}
      if(alpha<300)failed.push(a.id+':'+f+':blank');
      hashes.push(hash);count++;
