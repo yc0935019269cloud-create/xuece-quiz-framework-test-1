@@ -1,0 +1,1000 @@
+{
+ "schema": "xd-learn/1",
+ "id": "physopt-u6-wave",
+ "subject": "physopt",
+ "banks": [
+  "physopt-u6-q"
+ ],
+ "prior": [
+  "physopt-u1-q",
+  "physopt-u2-q"
+ ],
+ "unit": "第六單元 物理光學基礎",
+ "title": "物理光學基礎：簡諧波、干涉與薄膜",
+ "desc": "簡諧波 A、k、ω、φ，波強度與疊加，同調性與條紋可見度，雙狹縫與單狹縫，反射率、反射相位反轉、薄膜干涉與抗反射膜。",
+ "level": 2,
+ "minutes": 90,
+ "order": 6,
+ "source": "第六單元《物理光學基礎》上篇簡報（劉立中老師）與 10/7 上課逐字稿；c = λf、折射率與第一單元重疊的部分只做回顧",
+ "tags": [
+  "簡諧波",
+  "波數",
+  "干涉",
+  "同調性",
+  "雙狹縫干涉",
+  "薄膜干涉",
+  "抗反射膜",
+  "反射率"
+ ],
+ "lessons": [
+  {
+   "id": "l1",
+   "title": "光的波動性：簡諧波的每一項",
+   "goals": [
+    "能說明 y = A sin(kx − ωt + φ) 中 A、k、ω、φ 的意義",
+    "能算 k = 2π/λ、ω = 2πf，並由 ω/k 求波速",
+    "能把路程差換成相位差"
+   ],
+   "teaches": [
+    "簡諧波",
+    "振幅",
+    "波數",
+    "角頻率",
+    "週期",
+    "相位常數",
+    "相位差",
+    "路程差"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "前五單元把光當直線，現在要看它是波",
+     "body": [
+      "前五個單元我們把光當成幾何直線，因為：",
+      "- 光速很快（真空約 3×10⁸ m/s），傳播的時間差可以忽略；",
+      "- 光波長很短（可見光約 400～800 nm），遠小於日常物體。",
+      "",
+      "但干涉、繞射、薄膜的彩色、鏡片抗反射膜……這些都要把光當**波**才解釋得了。",
+      "",
+      "- 這課會學：簡諧波公式 y = A sin(kx − ωt + φ) 的每一項，以及相位差。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "回顧：光在介質中（第一單元已學）",
+     "body": [
+      "> 這張是第一單元的重點複習，細節不重講。",
+      "",
+      "```",
+      "c = λ₀ × f          f = 1/T",
+      "n = c / v = λ₀ / λₙ",
+      "```",
+      "- 光是**電磁橫波**，傳播不需要介質。",
+      "- 進入介質：**速度變慢、波長變短、頻率不變**。",
+      "- 新的寫法 **n = λ₀/λₙ**：介質中的波長 λₙ = λ₀/n（後面薄膜干涉會一直用到）。",
+      "",
+      "**名詞**：折射率 n 較大的叫**光密介質**、較小的叫**光疏介質**。"
+     ],
+     "keys": [
+      "c = λ₀f",
+      "n = c/v = λ₀/λₙ",
+      "頻率不變、波長變短",
+      "光密 n 大、光疏 n 小"
+     ],
+     "flash": {
+      "front": "介質中的波長？",
+      "back": "λₙ = λ₀/n（頻率不變）。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "fill",
+     "q": "真空中波長 600 nm 的光進入 n = 1.50 的玻璃，玻璃中的波長是多少 nm？",
+     "answer": [
+      "400",
+      "400 nm"
+     ],
+     "hint": "n = λ₀/λₙ，移項。",
+     "explain": "λₙ = λ₀/n = 600/1.50 = **400 nm**。頻率不變，所以顏色不變。"
+    },
+    {
+     "type": "card",
+     "title": "振幅 A 與波數 k",
+     "body": [
+      "用最簡單的正弦波代表往 +x 方向傳的光：",
+      "```",
+      "y(x, t) = A sin(kx − ωt + φ)",
+      "```",
+      "**A 振幅**：波在 y 方向的最大值（sin 介於 −1～+1）。對光來說，y 代表**電場（或磁場）**的大小。",
+      "",
+      "**k 波數**（wave number）：sin 裡面要放「角度」，k 把**距離換成相位**——光每走 1 公尺累積多少弧度：",
+      "```",
+      "走半個波長要對應 π：k·(λ/2) = π",
+      "⇒ k = 2π / λ",
+      "```",
+      "一個波長 ↔ 360° ↔ 2π；半個波長 ↔ 180° ↔ π；四分之一波長 ↔ 90° ↔ π/2。"
+     ],
+     "keys": [
+      "y = A sin(kx − ωt + φ)",
+      "A：振幅（電場大小）",
+      "k = 2π/λ：每公尺累積的相位"
+     ],
+     "flash": {
+      "front": "波數 k？",
+      "back": "k = 2π/λ，光每走 1 公尺累積的相位（弧度）。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "波數 k 的物理意義是？",
+     "choices": [
+      "每秒振動幾次",
+      "波峰的高度",
+      "一個波長有幾公尺",
+      "每公尺累積多少相位（弧度）"
+     ],
+     "answer": "D",
+     "hint": "sin 裡面要放角度，k 乘上距離 x 之後變成什麼？",
+     "explain": "k = 2π/λ：把距離換成相位，單位 rad/m。A 是頻率 f；B 是振幅；C 是波長本身。"
+    },
+    {
+     "type": "card",
+     "title": "角頻率 ω 與「為什麼是負號」",
+     "body": [
+      "**ω 角頻率**：把**時間換成相位**——每秒累積多少弧度：",
+      "```",
+      "ω = 2πf = 2π / T",
+      "```",
+      "（推導：x = λ/2 的點經過 T/4 後從 0 變成 1：sin(π − ωT/4) = 1 ⇒ ωT/4 = π/2 ⇒ ω = 2π/T。）",
+      "",
+      "**為什麼 kx 和 ωt 之間是減號？** 往 +x 傳播時，某個振動狀態（例如波峰）滿足 kx − ωt = 常數 → 時間往後走，x 也往後走：振動是**繼承前面四分之一波長位置**的狀態。",
+      "",
+      "由此還能得到波速：",
+      "```",
+      "x = (ω/k)·t + 常數  ⇒  v = ω/k = λf",
+      "```",
+      "y = A sin(kx + ωt) 則是往 **−x** 方向傳。"
+     ],
+     "keys": [
+      "ω = 2πf = 2π/T",
+      "kx − ωt：往 +x 傳",
+      "v = ω/k = λf"
+     ],
+     "flash": {
+      "front": "由 k、ω 求波速？",
+      "back": "v = ω/k。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "某光波 y = 0.2 sin(2.0×10⁷ x − 4.0×10¹⁵ t)（SI 單位）。它在介質中的速度是多少？",
+     "choices": [
+      "2.0×10⁸ m/s",
+      "3.0×10⁸ m/s",
+      "8.0×10²² m/s",
+      "5.0×10⁻⁹ m/s"
+     ],
+     "answer": "A",
+     "hint": "kx − ωt = 常數 ⇒ x 隨時間增加的速率是 ω/k。",
+     "explain": "v = ω/k = 4.0×10¹⁵ / 2.0×10⁷ = **2.0×10⁸ m/s**（所以這個介質 n = 3/2 = 1.5）。C 是相乘；D 是 k/ω。"
+    },
+    {
+     "type": "card",
+     "title": "相位常數 φ 與相位差",
+     "body": [
+      "**φ 相位常數**：決定波的**初始相位**（起始點）。",
+      "",
+      "**例**：紅波從 x = 0 開始，藍波往右錯開 1/4 波長（π/2），其他完全一樣：",
+      "```",
+      "y紅 = A sin(kx − ωt)",
+      "y藍 = A sin(kx − ωt − π/2)",
+      "相位差 Δφ = π/2",
+      "```",
+      "（為什麼藍色是 −π/2？藍波在 x = π/2 的振動要和紅波在 x = 0 的一樣：sin(0 − ωt) = sin(π/2 − ωt − π/2)。）",
+      "",
+      "**路程差 → 相位差**：兩道同頻率的光走的距離差 ΔL，相位就差",
+      "```",
+      "Δφ = k·ΔL = 2π·ΔL / λ",
+      "```",
+      "（在折射率 n 的介質中走 ΔL，要用 λₙ = λ₀/n：Δφ = 2π·n·ΔL/λ₀。）"
+     ],
+     "keys": [
+      "φ：初始相位",
+      "錯開 1/4 波長 ⇔ Δφ = π/2",
+      "Δφ = 2πΔL/λ"
+     ],
+     "flash": {
+      "front": "路程差 ΔL 對應的相位差？",
+      "back": "Δφ = 2π·ΔL/λ（介質中乘 n）。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "fill",
+     "q": "兩道同頻率的光路程差為 1.5λ，相位差是幾 π？（只填數字）",
+     "answer": [
+      "3",
+      "3π"
+     ],
+     "hint": "Δφ = 2π × ΔL/λ。",
+     "explain": "Δφ = 2π × 1.5 = **3π**——奇數倍的 π，下一課會知道這代表破壞性干涉。"
+    },
+    {
+     "type": "example",
+     "title": "從波動方程式讀出光的身分",
+     "problem": "一道光 y = 0.5 sin(1.0×10⁷ x − 3.0×10¹⁵ t)（SI 單位）。求波長、頻率、波速，並判斷它在真空還是介質中。",
+     "steps": [
+      "k = 1.0×10⁷ rad/m → λ = 2π/k = 6.28×10⁻⁷ m = **628 nm**（紅光）。",
+      "ω = 3.0×10¹⁵ rad/s → f = ω/2π = **4.77×10¹⁴ Hz**。",
+      "v = ω/k = 3.0×10¹⁵/1.0×10⁷ = **3.0×10⁸ m/s** → 等於光速 c，所以在**真空**中。",
+      "傳播方向：kx − ωt 為減號 → 往 **+x**。振幅 0.5 只影響強度，不影響 λ、f、v。"
+     ],
+     "answer": "λ = 628 nm、f ≈ 4.77×10¹⁴ Hz、v = 3.0×10⁸ m/s（真空），往 +x 傳。"
+    },
+    {
+     "type": "practice",
+     "title": "實戰：簡諧波",
+     "qids": [],
+     "pick": {
+      "match": [
+       "波長",
+       "簡諧波",
+       "波數",
+       "角頻率",
+       "相位差",
+       "相位常數"
+      ],
+      "subjects": [
+       "physopt"
+      ],
+      "n": 2
+     },
+     "checks": [
+      {
+       "kind": "single",
+       "q": "y = A sin(kx + ωt) 描述的波往哪個方向傳？",
+       "choices": [
+        "+x",
+        "−x",
+        "+y",
+        "不傳播（駐波）"
+       ],
+       "answer": "B",
+       "explain": "kx + ωt = 常數 ⇒ x 隨 t 增加而**減少** → 往 −x 傳。"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "c = λ₀f、n = c/v = λ₀/λₙ；進入介質頻率不變、波長變短。",
+      "y = A sin(kx − ωt + φ)：A 振幅、k = 2π/λ 波數、ω = 2πf 角頻率、φ 相位常數。",
+      "kx − ωt：往 +x 傳；v = ω/k。",
+      "路程差 ΔL ↔ 相位差 Δφ = 2πΔL/λ；錯開 λ/4 ↔ π/2。"
+     ],
+     "flash": [
+      {
+       "front": "k 和 λ 的關係？",
+       "back": "k = 2π/λ。"
+      },
+      {
+       "front": "ω 和 f、T 的關係？",
+       "back": "ω = 2πf = 2π/T。"
+      },
+      {
+       "front": "錯開半個波長的相位差？",
+       "back": "π。"
+      }
+     ],
+     "next": "下一課：兩道波疊在一起會怎樣？——強度與干涉。"
+    }
+   ]
+  },
+  {
+   "id": "l2",
+   "title": "波強度、疊加與干涉",
+   "goals": [
+    "能用 I ∝ A² 與平方反比比較強度",
+    "能寫出 I = I₁ + I₂ + 2√(I₁I₂)cosΔφ 並判斷建設性或破壞性干涉",
+    "能算 Imax 與 Imin"
+   ],
+   "teaches": [
+    "波強度",
+    "強度",
+    "平方反比",
+    "疊加",
+    "干涉",
+    "建設性干涉",
+    "破壞性干涉"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "兩道光加在一起，可能變得更暗",
+     "body": [
+      "直覺上兩盞燈一起開會更亮。但如果兩道光**相位關係固定**，它們疊在一起可能比一道還亮好幾倍，也可能**完全抵消**——這就是干涉。",
+      "",
+      "- 這課會學：波強度、疊加後的強度公式、建設性與破壞性干涉。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "波強度 I ∝ A²",
+     "body": [
+      "**波強度**＝單位面積的功率。點光源發出球面波，功率 P 平均分到球面 4πr²：",
+      "```",
+      "I = P / (4πr²) ∝ A²",
+      "```",
+      "**為什麼和振幅平方成正比？** 光的 y 是電場或磁場，能量來自電場和磁場相乘，兩者都和 A 成正比，所以能量 ∝ A × A。",
+      "",
+      "- **同一個波源、不同距離**（平方反比）：I_b / I_a = (r_a / r_b)²",
+      "- **同距離、不同波源**：I₂ / I₁ = (A₂ / A₁)²",
+      "",
+      "（複習：球體積 4πr³/3、球表面積 4πr²、圓面積 πr²、圓周長 2πr。）"
+     ],
+     "keys": [
+      "I = P/(4πr²) ∝ A²",
+      "距離加倍 → 強度 1/4",
+      "振幅加倍 → 強度 4 倍"
+     ],
+     "flash": {
+      "front": "距離變 3 倍，強度變幾倍？",
+      "back": "1/9（平方反比）。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "同一個點光源，觀察距離從 1 m 變成 3 m，強度變成原來的？",
+     "choices": [
+      "1/3",
+      "1/9",
+      "3 倍",
+      "9 倍"
+     ],
+     "answer": "B",
+     "hint": "球面面積和 r² 成正比。",
+     "explain": "I ∝ 1/r²：(1/3)² = **1/9**。1/3 是忘了平方。"
+    },
+    {
+     "type": "card",
+     "title": "疊加與干涉：I = I₁ + I₂ + 2√(I₁I₂)cosΔφ",
+     "body": [
+      "兩道波同時存在，位移直接相加（**疊加**）：",
+      "```",
+      "y = A₁sin(k₁x − ω₁t + φ₁) + A₂sin(k₂x − ω₂t + φ₂)",
+      "```",
+      "若兩波**同波數、同角頻率**（k₁ = k₂、ω₁ = ω₂），相位差 Δφ = φ₂ − φ₁，疊加後的強度：",
+      "```",
+      "I = I₁ + I₂ + 2√(I₁I₂)·cosΔφ",
+      "```",
+      "最後那一項就是**干涉項**。",
+      "",
+      "| | 條件 | 強度 |",
+      "|---|---|---|",
+      "| **完全建設性干涉** | cosΔφ = 1，Δφ = 2mπ | Imax = (√I₁ + √I₂)² |",
+      "| **完全破壞性干涉** | cosΔφ = −1，Δφ = (2m+1)π | Imin = (√I₁ − √I₂)² |",
+      "",
+      "換成路程差：ΔL = mλ → 建設性；ΔL = (m + ½)λ → 破壞性。"
+     ],
+     "keys": [
+      "I = I₁ + I₂ + 2√(I₁I₂)cosΔφ",
+      "Δφ = 2mπ：建設性",
+      "Δφ = (2m+1)π：破壞性"
+     ],
+     "flash": {
+      "front": "疊加波強度公式？",
+      "back": "I = I₁ + I₂ + 2√(I₁I₂)cosΔφ。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "兩道強度都是 I₀ 的同調光，完全建設性與完全破壞性干涉時的強度分別是？",
+     "choices": [
+      "2I₀、0",
+      "4I₀、I₀",
+      "4I₀、0",
+      "2I₀、I₀"
+     ],
+     "answer": "C",
+     "hint": "先開根號、再加減、最後平方。",
+     "explain": "Imax = (√I₀ + √I₀)² = **4I₀**；Imin = (√I₀ − √I₀)² = **0**。直接把強度相加（2I₀）是「沒有干涉」時的結果。"
+    },
+    {
+     "type": "interactive",
+     "title": "動手玩：兩道波的疊加",
+     "body": "調整兩道波的振幅 A₁、A₂ 與相位差 Δφ，看合成波（黑線）和強度怎麼變。",
+     "task": "①A₁ = A₂ = 1，把 Δφ 從 0 拉到 180°：強度從 4 變到 0。②A₁ = 2、A₂ = 1：破壞性干涉時還剩多少？條紋可見度是多少？③按「讓波跑起來」：相位差固定時，合成波的形狀會不會變？",
+     "height": 480,
+     "html": "<!doctype html><html><head><meta charset=\"utf-8\"><style>\nbody{margin:0;padding:10px;font:15px system-ui,\"Microsoft JhengHei\",sans-serif;background:#fbf7ec;color:#2e2116}\n.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0}\nlabel{display:flex;align-items:center;gap:6px}\ninput[type=range]{width:150px}\ninput[type=number]{width:70px;font:inherit}\nbutton{font:inherit;padding:3px 9px;border:1px solid #b9a57a;background:#fff3d6;border-radius:6px;cursor:pointer}\nsvg{width:100%;height:auto;background:#fff;border:1px solid #d9c9a3;border-radius:8px;margin-top:6px}\n.out{background:#fff;border:1px solid #d9c9a3;border-radius:8px;padding:6px 10px;margin-top:6px;font-family:Consolas,monospace;font-size:14px;white-space:pre-wrap}\n.hl{color:#b23a1f;font-weight:bold}\n</style></head><body>\n<div class=\"row\">\n<label>A₁ <input type=\"range\" id=\"a1\" min=\"0\" max=\"2\" step=\"0.1\" value=\"1\"><span id=\"a1v\"></span></label>\n<label>A₂ <input type=\"range\" id=\"a2\" min=\"0\" max=\"2\" step=\"0.1\" value=\"1\"><span id=\"a2v\"></span></label>\n<label>相位差 Δφ <input type=\"range\" id=\"ph\" min=\"0\" max=\"360\" step=\"5\" value=\"0\"><span id=\"phv\"></span>°</label>\n<button id=\"play\">▶ 讓波跑起來</button>\n</div>\n<svg id=\"sv\" viewBox=\"0 0 760 300\"></svg>\n<div class=\"out\" id=\"out\"></div>\n<script>\nconst $=id=>document.getElementById(id);let t=0,run=false;\n['a1','a2','ph'].forEach(id=>$(id).oninput=draw);\n$('play').onclick=()=>{run=!run;$('play').textContent=run?'⏸ 暫停':'▶ 讓波跑起來';if(run)loop();};\nfunction loop(){if(!run)return;t+=0.06;draw();requestAnimationFrame(loop);}\nfunction draw(){\n const A1=+$('a1').value,A2=+$('a2').value,ph=+$('ph').value*Math.PI/180;\n $('a1v').textContent=A1.toFixed(1);$('a2v').textContent=A2.toFixed(1);$('phv').textContent=$('ph').value;\n const W=760,H=300,N=300,Y=y=>H/2-y*H/9;\n let s='<line x1=\"0\" y1=\"'+H/2+'\" x2=\"'+W+'\" y2=\"'+H/2+'\" stroke=\"#aaa\"/>';\n const curve=(fn,c,w,dash)=>{let p=[];for(let i=0;i<=N;i++){const x=i/N*4*Math.PI;p.push((i/N*W).toFixed(1)+','+Y(fn(x)).toFixed(1));}\n   s+='<polyline fill=\"none\" stroke=\"'+c+'\" stroke-width=\"'+w+'\"'+(dash?' stroke-dasharray=\"5 4\"':'')+' points=\"'+p.join(' ')+'\"/>';};\n curve(x=>A1*Math.sin(x-t),'#1f6fb2',1.5,true);\n curve(x=>A2*Math.sin(x-t+ph),'#e07a1f',1.5,true);\n curve(x=>A1*Math.sin(x-t)+A2*Math.sin(x-t+ph),'#2e2116',3,false);\n s+='<text x=\"8\" y=\"18\" font-size=\"13\" fill=\"#1f6fb2\">y₁（虛線藍）</text><text x=\"120\" y=\"18\" font-size=\"13\" fill=\"#e07a1f\">y₂（虛線橘）</text><text x=\"232\" y=\"18\" font-size=\"13\">y₁ + y₂（黑）</text>';\n $('sv').innerHTML=s;\n const I1=A1*A1,I2=A2*A2,I=I1+I2+2*Math.sqrt(I1*I2)*Math.cos(ph);\n const Imax=(Math.sqrt(I1)+Math.sqrt(I2))**2,Imin=(Math.sqrt(I1)-Math.sqrt(I2))**2;\n const V=(Imax+Imin)>0?(Imax-Imin)/(Imax+Imin):0;\n let k='';const c=Math.cos(ph);if(c>0.999)k='完全建設性干涉';else if(c<-0.999)k='完全破壞性干涉';else k='部分干涉';\n $('out').innerHTML='I₁ = A₁² = '+I1.toFixed(2)+'　I₂ = A₂² = '+I2.toFixed(2)+'\\n'+\n  'I = I₁ + I₂ + 2√(I₁I₂)·cosΔφ = <span class=\"hl\">'+I.toFixed(2)+'</span>（'+k+'）\\n'+\n  'Imax = (√I₁ + √I₂)² = '+Imax.toFixed(2)+'　Imin = (√I₁ − √I₂)² = '+Imin.toFixed(2)+'\\n'+\n  '條紋可見度 V = (Imax − Imin)/(Imax + Imin) = <span class=\"hl\">'+V.toFixed(2)+'</span>';\n}\ndraw();\n</script></body></html>"
+    },
+    {
+     "type": "check",
+     "kind": "fill",
+     "q": "用互動模擬設定 A₁ = 2、A₂ = 1（I₁ = 4、I₂ = 1），完全破壞性干涉時 Imin 是多少？",
+     "answer": [
+      "1"
+     ],
+     "hint": "(√I₁ − √I₂)²。",
+     "explain": "Imin = (√4 − √1)² = (2 − 1)² = **1**；Imax = (2 + 1)² = 9。強度不相等時，破壞性干涉不會完全變暗。"
+    },
+    {
+     "type": "example",
+     "title": "推導疊加波強度（期中考計算題型）",
+     "problem": "已知 y = A₁sinθ + A₂sin(θ + Δφ)（θ = kx − ωt + φ₁），證明 I = I₁ + I₂ + 2√(I₁I₂)cosΔφ。",
+     "steps": [
+      "和角公式 sin(α + β) = sinα cosβ + cosα sinβ：",
+      "y = (A₁ + A₂cosΔφ)·sinθ + (A₂sinΔφ)·cosθ。",
+      "想把它寫成**一個**新的正弦波 y = A sin(θ + δ) = (A cosδ)sinθ + (A sinδ)cosθ，對照係數：",
+      "A cosδ = A₁ + A₂cosΔφ，A sinδ = A₂sinΔφ。",
+      "兩式平方相加（cos²δ + sin²δ = 1）：A² = A₁² + 2A₁A₂cosΔφ + A₂²(cos²Δφ + sin²Δφ) = A₁² + A₂² + 2A₁A₂cosΔφ。",
+      "代入 I ∝ A²（I₁ ∝ A₁²、I₂ ∝ A₂²、A₁A₂ ∝ √(I₁I₂)）：**I = I₁ + I₂ + 2√(I₁I₂)cosΔφ**。"
+     ],
+     "answer": "關鍵三步：和角公式展開 → 對照係數 → 平方相加。"
+    },
+    {
+     "type": "practice",
+     "title": "實戰：強度與干涉",
+     "qids": [],
+     "pick": {
+      "match": [
+       "波強度",
+       "建設性干涉",
+       "破壞性干涉",
+       "干涉"
+      ],
+      "subjects": [
+       "physopt"
+      ],
+      "n": 2
+     },
+     "checks": [
+      {
+       "kind": "single",
+       "q": "兩道強度都是 I₀ 的同調光，相位差 Δφ = π/2，疊加強度為？",
+       "choices": [
+        "0",
+        "I₀",
+        "2I₀",
+        "4I₀"
+       ],
+       "answer": "C",
+       "explain": "cos(π/2) = 0，干涉項消失：I = I₀ + I₀ = **2I₀**。"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "I = P/(4πr²) ∝ A²：距離平方反比、振幅平方正比。",
+      "疊加：同 k、同 ω 時 I = I₁ + I₂ + 2√(I₁I₂)cosΔφ。",
+      "建設性 Δφ = 2mπ（ΔL = mλ）：Imax = (√I₁ + √I₂)²。",
+      "破壞性 Δφ = (2m+1)π（ΔL = (m+½)λ）：Imin = (√I₁ − √I₂)²。",
+      "推導：和角公式 → 對照係數 → 平方相加。"
+     ],
+     "flash": [
+      {
+       "front": "Imax、Imin 公式？",
+       "back": "(√I₁ ± √I₂)²。"
+      },
+      {
+       "front": "Δφ = π/2 時干涉項？",
+       "back": "0（cos90° = 0）。"
+      }
+     ],
+     "next": "下一課：要看到穩定的干涉條紋，光還需要「同調」。"
+    }
+   ]
+  },
+  {
+   "id": "l3",
+   "title": "同調性、雙狹縫干涉與單狹縫繞射",
+   "goals": [
+    "能說明時間同調性與空間同調性",
+    "能算條紋可見度 V",
+    "能用 d sinθ = mλ 與 y = mDλ/d 算雙狹縫條紋，並說明單狹縫寬度與中央亮紋的關係"
+   ],
+   "teaches": [
+    "同調",
+    "同調性",
+    "時間同調性",
+    "空間同調性",
+    "條紋可見度",
+    "雙狹縫干涉",
+    "單狹縫繞射",
+    "繞射",
+    "條紋間距"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "為什麼兩盞普通燈泡看不到干涉？",
+     "body": [
+      "干涉公式裡的 Δφ 如果一直亂跳——一下 0、一下 π——亮紋暗紋就不停交換，平均起來什麼都看不到。",
+      "",
+      "所以要看到干涉，兩道光必須**同調**；最常見的做法是讓**同一道光**分成兩路（雙狹縫、薄膜的上下兩面反射）。",
+      "",
+      "- 這課會學：同調性、條紋可見度、雙狹縫干涉、單狹縫繞射。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "同調性：相位差要固定",
+     "body": [
+      "**同調波**：兩道波的相位差是固定值（Δφ = constant）。同調性越好，相位關係越穩定，**干涉條紋越清楚**。",
+      "",
+      "| | 問的是 | 什麼時候好 |",
+      "|---|---|---|",
+      "| **時間同調性** | 同一道光的相位關係會不會隨時間變 | 光源**頻譜越窄**（越接近單一頻率）越好 |",
+      "| **空間同調性** | 光源不同位置發出的光，彼此相位差穩不穩定 | 光源在空間中**越小**（越接近點光源）越好 |",
+      "",
+      "雷射：頻譜很窄、光束很細 → 兩種同調性都好；白熾燈：頻譜很寬、發光面大 → 都差。"
+     ],
+     "keys": [
+      "同調：Δφ 固定",
+      "時間同調：頻譜越窄越好",
+      "空間同調：光源越小越好"
+     ],
+     "flash": {
+      "front": "時間同調性和什麼有關？",
+      "back": "光源頻譜寬度：越窄（越單色）越好。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "下列哪一個做法最能改善光源的**空間同調性**？",
+     "choices": [
+      "讓光源通過一個很小的針孔",
+      "加一片濾色片讓光更單色",
+      "提高光源功率",
+      "把光源放進水中"
+     ],
+     "answer": "A",
+     "hint": "空間同調性問的是「光源不同位置」。",
+     "explain": "空間同調性和光源**大小**有關，針孔讓光源接近點光源。濾色片讓頻譜變窄，改善的是**時間**同調性。"
+    },
+    {
+     "type": "card",
+     "title": "條紋可見度 V",
+     "body": [
+      "```",
+      "V = (Imax − Imin) / (Imax + Imin)",
+      "```",
+      "- Imax = Imin → **V = 0**：亮暗一樣，完全看不到條紋；",
+      "- Imin = 0 → **V = 1**：條紋最清楚。",
+      "",
+      "代入上一課的 Imax、Imin（完全同調時）：",
+      "```",
+      "V_max = 2√(I₁I₂) / (I₁ + I₂)",
+      "```",
+      "I₁ = I₂ 時 V_max = 1。所以要得到清晰條紋，兩束光除了**同調**，**強度也要接近**。"
+     ],
+     "keys": [
+      "V = (Imax − Imin)/(Imax + Imin)",
+      "V_max = 2√(I₁I₂)/(I₁ + I₂)",
+      "清楚條紋：同調＋強度接近"
+     ],
+     "flash": {
+      "front": "條紋可見度公式？",
+      "back": "V = (Imax − Imin)/(Imax + Imin)。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "fill",
+     "q": "兩道完全同調的光強度 I₁ = 4、I₂ = 1，條紋可見度 V 是多少？",
+     "answer": [
+      "0.8",
+      "4/5",
+      "0.80"
+     ],
+     "hint": "先算 Imax、Imin，或直接用 2√(I₁I₂)/(I₁ + I₂)。",
+     "explain": "Imax = (2 + 1)² = 9、Imin = (2 − 1)² = 1 → V = 8/10 = **0.8**。也可用 2√(4×1)/(4+1) = 4/5。"
+    },
+    {
+     "type": "card",
+     "title": "雙狹縫干涉",
+     "body": [
+      "同調光照到兩條相距 d 的狹縫，兩縫發出的光到屏幕上 P 點的**路程差**：",
+      "```",
+      "r₁ − r₂ = d·sinθ_m = mλ          → P 是亮紋",
+      "                   = (m + ½)λ    → P 是暗紋",
+      "```",
+      "屏幕距離 D 很遠時 tanθ ≈ sinθ = y/D，亮紋位置：",
+      "```",
+      "y_m = m·Dλ / d       （m = 0 是中央亮紋）",
+      "條紋間距 Δy = Dλ / d",
+      "```",
+      "- **狹縫間距 d 越小，亮紋之間越遠**；",
+      "- 波長越長、屏幕越遠，條紋越寬；",
+      "- 整套裝置泡進水裡，λ 變成 λ/n，條紋間距縮小為 1/n。"
+     ],
+     "keys": [
+      "d sinθ = mλ（亮）、(m+½)λ（暗）",
+      "y_m = mDλ/d",
+      "Δy = Dλ/d：d 越小條紋越寬"
+     ],
+     "flash": {
+      "front": "雙狹縫條紋間距？",
+      "back": "Δy = Dλ/d。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "fill",
+     "q": "雙狹縫間距 d = 0.30 mm，屏幕距離 D = 1.5 m，λ = 600 nm。相鄰亮紋間距是多少 mm？",
+     "answer": [
+      "3",
+      "3.0"
+     ],
+     "hint": "全部換成公尺再代 Δy = Dλ/d。",
+     "explain": "Δy = Dλ/d = 1.5 × 600×10⁻⁹ / 0.30×10⁻³ = 3.0×10⁻³ m = **3.0 mm**。"
+    },
+    {
+     "type": "card",
+     "title": "單狹縫繞射",
+     "body": [
+      "只有**一條**寬度 b 的狹縫，光也會在屏幕上形成明暗條紋——狹縫兩端（以及縫內各點）到屏幕的距離不同，彼此干涉，這叫**繞射**。",
+      "",
+      "**標準教科書寫法**：暗紋出現在",
+      "```",
+      "b·sinθ_m = mλ   （m = ±1, ±2, …；m = 0 是中央亮紋的中心）",
+      "中央亮紋寬度 ≈ 2Dλ / b",
+      "```",
+      "**結論**（投影片重點）：**狹縫寬度 b 越小，中間亮紋越寬**——開口越小，光散得越開。",
+      "",
+      "> ⚠ 講義第 43 頁把單狹縫的條件寫成和雙狹縫相同的形式（mλ 亮、(m+½)λ 暗）。單狹縫的 mλ 在標準教科書中對應的是**暗紋**，這裡依標準寫法；這頁老師上課時間不夠還沒講，考前請以老師說明為準。"
+     ],
+     "keys": [
+      "單狹縫暗紋：b sinθ = mλ（m ≠ 0）",
+      "中央亮紋寬 ≈ 2Dλ/b",
+      "縫越窄，中央亮紋越寬"
+     ],
+     "flash": {
+      "front": "單狹縫變窄，中央亮紋？",
+      "back": "變寬（寬度 ≈ 2Dλ/b）。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "把單狹縫的寬度縮小為一半，中央亮紋的寬度會？",
+     "choices": [
+      "變成一半",
+      "不變",
+      "變成兩倍",
+      "變成四倍"
+     ],
+     "answer": "C",
+     "explain": "中央亮紋寬 ≈ 2Dλ/b，b 減半 → 寬度**加倍**。縫越窄，繞射越明顯。"
+    },
+    {
+     "type": "example",
+     "title": "雙狹縫：改變條件看條紋怎麼變",
+     "problem": "雙狹縫 d = 0.25 mm、D = 2.0 m、λ = 500 nm。①求條紋間距；②若 d 改成 0.50 mm？③若整套裝置放進水中（n = 1.33）？④第 2 條亮紋（m = 2）離中央多遠？",
+     "steps": [
+      "① Δy = Dλ/d = 2.0 × 500×10⁻⁹ / 0.25×10⁻³ = **4.0 mm**。",
+      "② d 加倍 → Δy 減半 = **2.0 mm**（間距越大，條紋越密）。",
+      "③ 水中 λ = 500/1.33 = 376 nm → Δy = 4.0/1.33 ≈ **3.0 mm**。",
+      "④ y₂ = 2 × Dλ/d = **8.0 mm**。"
+     ],
+     "answer": "Δy = 4.0 mm；d 加倍 → 2.0 mm；水中 → 3.0 mm；第 2 亮紋在 8.0 mm 處。"
+    },
+    {
+     "type": "practice",
+     "title": "實戰：同調與狹縫",
+     "qids": [],
+     "pick": {
+      "match": [
+       "同調",
+       "條紋可見度",
+       "雙狹縫干涉",
+       "單狹縫繞射",
+       "時間同調性"
+      ],
+      "subjects": [
+       "physopt"
+      ],
+      "n": 2
+     },
+     "checks": [
+      {
+       "kind": "tf",
+       "q": "兩束光只要彼此同調，干涉條紋就一定最清楚（V = 1）。",
+       "answer": false,
+       "explain": "還要強度相等：V_max = 2√(I₁I₂)/(I₁+I₂)，I₁ ≠ I₂ 時小於 1。"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "同調＝相位差固定；時間同調看頻譜寬度（越窄越好），空間同調看光源大小（越小越好）。",
+      "V = (Imax − Imin)/(Imax + Imin)；V_max = 2√(I₁I₂)/(I₁+I₂)，強度相等時最清楚。",
+      "雙狹縫：d sinθ = mλ 亮、(m+½)λ 暗；y_m = mDλ/d；Δy = Dλ/d。",
+      "單狹縫：縫越窄，中央亮紋越寬（≈ 2Dλ/b）。"
+     ],
+     "flash": [
+      {
+       "front": "雙狹縫 d 變小，條紋？",
+       "back": "變寬（Δy = Dλ/d）。"
+      },
+      {
+       "front": "V = 0 代表？",
+       "back": "Imax = Imin，看不到條紋。"
+      }
+     ],
+     "next": "下一課：最貼近視光的干涉——鏡片抗反射膜與薄膜干涉。"
+    }
+   ]
+  },
+  {
+   "id": "l4",
+   "title": "反射率與薄膜干涉：抗反射膜的原理",
+   "goals": [
+    "能用 R = [(n₂ − n₁)/(n₂ + n₁)]² 算垂直入射反射率",
+    "能判斷反射相位反轉次數並寫出薄膜亮紋、暗紋條件",
+    "能算抗反射膜的最小厚度 λ/(4n)"
+   ],
+   "teaches": [
+    "反射率",
+    "光密介質",
+    "光疏介質",
+    "反射相位反轉",
+    "薄膜干涉",
+    "光程差",
+    "抗反射膜",
+    "油膜"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "鏡片鍍膜、肥皂泡、地上的油漬",
+     "body": [
+      "眼鏡店說的「多層鍍膜」減少反光、肥皂泡上流動的彩色、修車廠地上彩色的油漬——都是**薄膜干涉**：膜的上表面和下表面各反射一道光，兩道光互相干涉。",
+      "",
+      "- 這課會學：反射率、反射相位反轉、薄膜干涉條件、抗反射膜厚度。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "垂直入射的反射率",
+     "body": [
+      "光垂直打到兩個介質的介面，反射回去的比例：",
+      "```",
+      "R = [ (n₂ − n₁) / (n₂ + n₁) ]²",
+      "```",
+      "（R 和電場平方有關。）",
+      "",
+      "**例**：",
+      "- 空氣 → 玻璃 1.50：R = (0.5/2.5)² = **4%**；",
+      "- 空氣 → 角膜 1.376：R = (0.376/2.376)² ≈ **2.5%**；",
+      "- 水 1.33 ↔ n = 1.50 的材質：R = (0.17/2.83)² ≈ **0.36%**——兩邊折射率越接近，反射越少。",
+      "",
+      "**易錯**：題目說的是哪兩種介質要看清楚；材質的 n 若給的是光速，先用 n = c/v 換算。"
+     ],
+     "keys": [
+      "R = [(n₂ − n₁)/(n₂ + n₁)]²",
+      "空氣–玻璃 1.5 約 4%",
+      "兩側 n 越接近反射越少"
+     ],
+     "flash": {
+      "front": "空氣–玻璃（n = 1.5）垂直入射反射率？",
+      "back": "約 4%。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "fill",
+     "q": "空氣中垂直照射 n = 1.60 的高折射率鏡片，單一表面反射率約為幾 %？（取到小數第一位）",
+     "answer": [
+      "5.3",
+      "5.33",
+      "5.3%"
+     ],
+     "hint": "(n₂ − n₁)/(n₂ + n₁) 先算，再平方。",
+     "explain": "R = (0.60/2.60)² = 0.0533 = **5.3%**。比 n = 1.5 的鏡片（4%）更反光，所以高折射率鏡片更需要抗反射膜。"
+    },
+    {
+     "type": "card",
+     "title": "反射相位反轉",
+     "body": [
+      "光反射時，相位可能會多一個 π（180°）：",
+      "",
+      "| 反射時 | 相位 |",
+      "|---|---|",
+      "| 從**低 n → 高 n** 的介面反射（光疏打到光密） | **反轉 180°**（多 π） |",
+      "| 從**高 n → 低 n** 的介面反射（光密打到光疏） | **不反轉** |",
+      "",
+      "直覺：像繩子綁在牆上，波撞到「比較硬」的一側會倒過來彈回。",
+      "",
+      "**透射**（折射進去的光）不會有這個反轉。"
+     ],
+     "keys": [
+      "低 n → 高 n 反射：反轉 π",
+      "高 n → 低 n 反射：不反轉",
+      "透射不反轉"
+     ],
+     "flash": {
+      "front": "什麼情況反射相位反轉 180°？",
+      "back": "從低折射率打到高折射率的介面反射時。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "空氣中的肥皂膜（n = 1.33）上下兩個表面的反射，各有沒有相位反轉？",
+     "choices": [
+      "上表面反轉、下表面不反轉",
+      "上表面不反轉、下表面反轉",
+      "兩面都反轉",
+      "兩面都不反轉"
+     ],
+     "answer": "A",
+     "hint": "每一個反射面分別問：光是從低 n 打向高 n 嗎？",
+     "explain": "上表面：空氣 1 → 膜 1.33（低 → 高）→ **反轉**；下表面：膜 1.33 → 空氣 1（高 → 低）→ **不反轉**。共一次反轉。"
+    },
+    {
+     "type": "card",
+     "title": "薄膜干涉的條件",
+     "body": [
+      "膜厚 d、膜折射率 n₂。第一道光在上表面（n₁/n₂）反射，第二道光進膜、在下表面（n₂/n₃）反射再出來。",
+      "",
+      "**多走的距離**：ΔL = AB + BC − AD = 2d/cosθ₂ − 2d·tanθ₂·sinθ₁ ≈ **2d**（近軸：cos ≈ 1，tanθ₂·sinθ₁ 很小）",
+      "```",
+      "路程相位差 Δφ_path = 2π·n₂·(2d)/λ = 4πn₂d/λ",
+      "總相位差 Δφ = 4πn₂d/λ + (π 或 0)",
+      "```",
+      "| | 一次反轉（n₁ < n₂ > n₃，如肥皂膜） | 兩次反轉（n₁ < n₂ < n₃，如鍍膜鏡片） |",
+      "|---|---|---|",
+      "| 反射**亮紋** | 2n₂d = (m + ½)λ | 2n₂d = mλ |",
+      "| 反射**暗紋** | 2n₂d = mλ | 2n₂d = (m + ½)λ |",
+      "",
+      "（兩次反轉時兩個 π 加起來是 2π，等於沒反轉。）"
+     ],
+     "keys": [
+      "光程差 ≈ 2d，相位差 4πn₂d/λ",
+      "反轉次數決定要不要加 π",
+      "一次反轉：2n₂d = (m+½)λ 為亮"
+     ],
+     "flash": {
+      "front": "一次反轉時反射亮紋條件？",
+      "back": "2n₂d = (m + ½)λ。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "肥皂膜（空氣/1.33/空氣）用 600 nm 光照射，要讓反射**最亮**，膜的最小厚度約為？",
+     "choices": [
+      "226 nm",
+      "451 nm",
+      "75 nm",
+      "113 nm"
+     ],
+     "answer": "D",
+     "hint": "先數反轉次數，再選亮紋條件，取最小的 m。",
+     "explain": "一次反轉 → 亮紋 2n₂d = (m + ½)λ，取 m = 0：d = λ/(4n₂) = 600/(4 × 1.33) ≈ **113 nm**。226 nm 是 λ/(2n)（此時反而是暗紋）。"
+    },
+    {
+     "type": "card",
+     "title": "抗反射膜與彩色油膜",
+     "body": [
+      "**抗反射膜**：鏡片（n₃ ≈ 1.5）上鍍一層 n₂ 介於空氣和鏡片之間的膜（例如 MgF₂，n₂ = 1.38）→ 上下兩面**都是低 → 高**，兩次反轉。要讓兩道反射光相消：",
+      "```",
+      "4πn₂d/λ = π  ⇒  d = λ / (4n₂)     （膜中的四分之一波長）",
+      "```",
+      "老師的直覺說法：要差**半個波長**，但光進膜再出來走了**兩趟**，所以膜厚只要**四分之一波長**。",
+      "**例**：λ = 550 nm（人眼最敏感的綠光）、n₂ = 1.38 → d ≈ **100 nm**。",
+      "",
+      "**彩色油膜、肥皂泡**：白光含各種波長，亮紋條件和 λ 成正比，同一個厚度對某些顏色是亮紋、對其他顏色是暗紋 → 看到彩色；厚度或觀看角度一變，顏色就變。",
+      "",
+      "**肥皂膜越來越薄時**：一次反轉，d → 0 時路程差 → 0，只剩 π 的反轉 → 所有顏色都**相消**，膜看起來變**黑**（破掉前的那一刻）。"
+     ],
+     "keys": [
+      "抗反射膜 d = λ/(4n₂)（兩次反轉）",
+      "白光 → 各色亮紋位置不同 → 彩色",
+      "肥皂膜極薄時變黑"
+     ],
+     "flash": {
+      "front": "MgF₂（1.38）抗反射膜，550 nm 的最小厚度？",
+      "back": "λ/(4n₂) ≈ 100 nm。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "fill",
+     "q": "CR-39 鏡片（n = 1.50）鍍 MgF₂ 抗反射膜（n = 1.38），要讓 550 nm 的反射光相消，最小膜厚約幾 nm？（取整數）",
+     "answer": [
+      "100",
+      "99.6",
+      "99.64",
+      "99"
+     ],
+     "hint": "先數反轉次數；兩次反轉時，暗紋要 2n₂d = (m + ½)λ。",
+     "explain": "兩次反轉（1 → 1.38 → 1.50 都是低→高），相消條件 2n₂d = λ/2 → d = 550/(4 × 1.38) ≈ **99.6 nm ≈ 100 nm**。"
+    },
+    {
+     "type": "interactive",
+     "title": "動手玩：薄膜的顏色",
+     "body": "設定三層的折射率與膜厚，看反射光的強度對波長的曲線，以及白光照射下膜的顏色（上方色帶是膜厚 0～1200 nm 的顏色變化）。",
+     "task": "①按「肥皂膜」：把膜厚拉到 0，顏色是什麼？為什麼？②按「抗反射膜」：膜厚約 100 nm 時，綠光（550 nm）附近的反射是不是最低？③把觀察波長和膜厚慢慢改變，找出反射亮紋與暗紋。",
+     "height": 560,
+     "html": "<!doctype html><html><head><meta charset=\"utf-8\"><style>\nbody{margin:0;padding:10px;font:15px system-ui,\"Microsoft JhengHei\",sans-serif;background:#fbf7ec;color:#2e2116}\n.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0}\nlabel{display:flex;align-items:center;gap:6px}\ninput[type=range]{width:150px}\ninput[type=number]{width:70px;font:inherit}\nbutton{font:inherit;padding:3px 9px;border:1px solid #b9a57a;background:#fff3d6;border-radius:6px;cursor:pointer}\nsvg{width:100%;height:auto;background:#fff;border:1px solid #d9c9a3;border-radius:8px;margin-top:6px}\n.out{background:#fff;border:1px solid #d9c9a3;border-radius:8px;padding:6px 10px;margin-top:6px;font-family:Consolas,monospace;font-size:14px;white-space:pre-wrap}\n.hl{color:#b23a1f;font-weight:bold}\n</style></head><body>\n<div class=\"row\">\n<button data-p=\"soap\">肥皂膜（空氣/1.33/空氣）</button><button data-p=\"ar\">抗反射膜（空氣/1.38/1.50）</button><button data-p=\"oil\">油膜（空氣/1.45/水 1.33）</button>\n</div>\n<div class=\"row\">\n<label>n₁ <input type=\"number\" id=\"n1\" step=\"0.01\" value=\"1\"></label>\n<label>n₂（膜）<input type=\"number\" id=\"n2\" step=\"0.01\" value=\"1.33\"></label>\n<label>n₃ <input type=\"number\" id=\"n3\" step=\"0.01\" value=\"1\"></label>\n</div>\n<div class=\"row\">\n<label>膜厚 d <input type=\"range\" id=\"d\" min=\"0\" max=\"1200\" step=\"5\" value=\"300\"><span id=\"dv\"></span> nm</label>\n<label>觀察波長 λ <input type=\"range\" id=\"l\" min=\"400\" max=\"700\" step=\"5\" value=\"550\"><span id=\"lv\"></span> nm</label>\n</div>\n<svg id=\"sv\" viewBox=\"0 0 760 230\"></svg>\n<div class=\"out\" id=\"out\"></div>\n<script>\nconst $=id=>document.getElementById(id);\nconst pre={soap:[1,1.33,1,300],ar:[1,1.38,1.5,100],oil:[1,1.45,1.33,350]};\ndocument.querySelectorAll('button[data-p]').forEach(b=>b.onclick=()=>{const p=pre[b.dataset.p];$('n1').value=p[0];$('n2').value=p[1];$('n3').value=p[2];$('d').value=p[3];draw();});\n['n1','n2','n3','d','l'].forEach(id=>$(id).oninput=draw);\nfunction wl2rgb(w){let r=0,g=0,b=0;\n if(w<440){r=-(w-440)/60;b=1;}else if(w<490){g=(w-440)/50;b=1;}else if(w<510){g=1;b=-(w-510)/20;}\n else if(w<580){r=(w-510)/70;g=1;}else if(w<645){r=1;g=-(w-645)/65;}else{r=1;}\n let a=w<420?0.3+0.7*(w-380)/40:(w>700?0.3+0.7*(780-w)/80:1);return[r*a,g*a,b*a];}\nfunction refl(n1,n2,n3,d,w){const r1=(n1-n2)/(n1+n2),r2=(n2-n3)/(n2+n3),del=4*Math.PI*n2*d/w;return r1*r1+r2*r2+2*r1*r2*Math.cos(del);}\nfunction color(n1,n2,n3,d){let s=[0,0,0],ref=[0,0,0];const r1=Math.abs((n1-n2)/(n1+n2)),r2=Math.abs((n2-n3)/(n2+n3));const Rm=Math.max((r1+r2)**2,1e-6);\n for(let w=380;w<=780;w+=5){const c=wl2rgb(w),R=refl(n1,n2,n3,d,w)/Rm;for(let i=0;i<3;i++){s[i]+=c[i]*R;ref[i]+=c[i];}}\n let c=s.map((x,i)=>Math.min(1,x/ref[i]));const m=(c[0]+c[1]+c[2])/3;c=c.map(x=>Math.max(0,Math.min(1,m+(x-m)*2.6)));\n return 'rgb('+c.map(x=>Math.round(255*x)).join(',')+')';}\nfunction draw(){\n const n1=+$('n1').value,n2=+$('n2').value,n3=+$('n3').value,d=+$('d').value,l=+$('l').value;\n $('dv').textContent=d;$('lv').textContent=l;\n const inv=(n2>n1?1:0)+(n3>n2?1:0);\n const dpath=4*Math.PI*n2*d/l, dtot=dpath+inv*Math.PI;\n let frac=((dtot/(2*Math.PI))%1+1)%1;\n let judge=frac<0.08||frac>0.92?'接近反射亮紋（建設性）':(Math.abs(frac-0.5)<0.08?'接近反射暗紋（破壞性）':'介於亮暗之間');\n const W=760;let s='';\n for(let i=0;i<=152;i++){const dd=i/152*1200;s+='<rect x=\"'+(20+i*4.6)+'\" y=\"10\" width=\"5\" height=\"40\" fill=\"'+color(n1,n2,n3,dd)+'\"/>';}\n const xd=20+d/1200*(152*4.6);s+='<line x1=\"'+xd+'\" y1=\"5\" x2=\"'+xd+'\" y2=\"55\" stroke=\"#000\" stroke-width=\"2\"/>';\n s+='<text x=\"20\" y=\"68\" font-size=\"12\">膜厚 0 nm</text><text x=\"640\" y=\"68\" font-size=\"12\">1200 nm</text><text x=\"300\" y=\"68\" font-size=\"12\">↑ 白光照射時反射光的顏色（隨膜厚變化）</text>';\n // spectrum\n const r1=Math.abs((n1-n2)/(n1+n2)),r2=Math.abs((n2-n3)/(n2+n3));const Rm=Math.max((r1+r2)**2,1e-6);\n let p=[];for(let w=380;w<=750;w+=2){const x=20+(w-380)/370*720,R=refl(n1,n2,n3,d,w)/Rm;p.push(x.toFixed(1)+','+(215-R*130).toFixed(1));}\n for(let w=380;w<=750;w+=10){const c=wl2rgb(w);s+='<rect x=\"'+(20+(w-380)/370*720)+'\" y=\"217\" width=\"20\" height=\"8\" fill=\"rgb('+c.map(x=>Math.round(x*255)).join(',')+')\"/>';}\n s+='<line x1=\"20\" y1=\"215\" x2=\"740\" y2=\"215\" stroke=\"#999\"/><polyline fill=\"none\" stroke=\"#2e2116\" stroke-width=\"2\" points=\"'+p.join(' ')+'\"/>';\n const xl=20+(l-380)/370*720;s+='<line x1=\"'+xl+'\" y1=\"80\" x2=\"'+xl+'\" y2=\"215\" stroke=\"#b23a1f\" stroke-dasharray=\"4 3\"/>';\n s+='<text x=\"24\" y=\"92\" font-size=\"12\">反射強度（相對值）對波長</text>';\n $('sv').innerHTML=s;\n $('out').innerHTML='反射相位反轉次數：'+inv+'（低 n → 高 n 的反射才反轉 180°）\\n'+\n '路程相位差 4πn₂d/λ = '+(dpath/Math.PI).toFixed(2)+'π；加上反轉後總相位差 = '+(dtot/Math.PI).toFixed(2)+'π\\n'+\n 'λ = '+l+' nm：<span class=\"hl\">'+judge+'</span>\\n'+\n '對照：λ/(4n₂) = '+(l/(4*n2)).toFixed(1)+' nm；λ/(2n₂) = '+(l/(2*n2)).toFixed(1)+' nm';\n}\ndraw();\n</script></body></html>"
+    },
+    {
+     "type": "example",
+     "title": "用投影片的三題串起本單元",
+     "problem": "①光在某材質中速度 2×10⁸ m/s，與水（1.33）形成介面，垂直入射反射率？②「在介質中，波長越短所對應的折射率越小」對嗎？③鏡片抗反射膜的厚度應為幾分之幾波長？（112 年、113 年第二次驗光師「視覺光學」，課堂習題演練）",
+     "steps": [
+      "① n = c/v = 3/2 = 1.5；R = [(1.5 − 1.33)/(1.5 + 1.33)]² ≈ **0.35%**。老師提醒：很多人錯在把水當成空氣（會算出 4%）。",
+      "② **錯**。正常色散：波長越短（偏紫）折射率越大、偏折越多；而且折射率越大，介質中波長也越短。",
+      "③ 兩道反射光要差半個波長才相消，光在膜裡來回兩趟 → 膜厚 **1/4 波長**（膜中的波長，d = λ/(4n)）。"
+     ],
+     "answer": "① 0.35%　② 錯（短波長折射率大）　③ 1/4 波長"
+    },
+    {
+     "type": "practice",
+     "title": "實戰：反射率與薄膜",
+     "qids": [],
+     "pick": {
+      "match": [
+       "反射率",
+       "反射相位反轉",
+       "薄膜干涉",
+       "抗反射膜",
+       "光密介質"
+      ],
+      "subjects": [
+       "physopt"
+      ],
+      "n": 2
+     },
+     "checks": [
+      {
+       "kind": "single",
+       "q": "光由光密介質射向光疏介質的介面時，下列何者正確？",
+       "choices": [
+        "反射光相位反轉 180°",
+        "折射光偏向法線",
+        "可能發生全反射",
+        "頻率會改變"
+       ],
+       "answer": "C",
+       "explain": "光密 → 光疏：反射不反轉（A 錯）、折射光**偏離**法線（B 錯）、入射角大於臨界角時全反射（C 對）、頻率永遠不變（D 錯）。"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "R = [(n₂ − n₁)/(n₂ + n₁)]²；空氣–玻璃 1.5 約 4%。",
+      "低 n → 高 n 反射：反轉 π；高 → 低：不反轉。",
+      "薄膜：光程差 ≈ 2d，相位差 4πn₂d/λ（＋反轉的 π）。",
+      "一次反轉：2n₂d = (m+½)λ 亮、mλ 暗；兩次反轉相反。",
+      "抗反射膜 d = λ/(4n₂)；白光照射膜 → 彩色；肥皂膜極薄 → 變黑。"
+     ],
+     "flash": [
+      {
+       "front": "抗反射膜厚度？",
+       "back": "膜中的 1/4 波長：d = λ/(4n₂)。"
+      },
+      {
+       "front": "肥皂膜為什麼會有顏色？",
+       "back": "不同波長的亮紋條件不同，同一厚度某些顏色加強、某些相消。"
+      },
+      {
+       "front": "水與 n = 1.5 材質的反射率？",
+       "back": "約 0.35%。"
+      }
+     ],
+     "next": "第六單元上篇結束。"
+    }
+   ]
+  }
+ ]
+}
