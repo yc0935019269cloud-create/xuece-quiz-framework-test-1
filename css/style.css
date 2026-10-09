@@ -852,6 +852,9 @@ img.plant.unseen { filter: brightness(0) opacity(.35); }
 .flash code { background: #e8dcc0; color: #6b3fb0; padding: 0 4px; }
 /* 複習、筆記、節奏說明 */
 .rv-boxes { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+.rv-scope { border: 2px solid var(--line, #444); padding: 8px 10px; }
+.rv-scope select { max-width: 100%; min-width: 0; flex: 1; }
+.rv-scope label { display: flex; align-items: center; gap: 6px; max-width: 100%; white-space: nowrap; }
 .rv-box { background: var(--bg2); border: 3px solid var(--line); text-align: center; padding: 8px 4px; }
 .rv-box b { display: block; font-size: 26px; color: var(--gold); font-weight: normal; }
 .rv-box small { color: var(--dim); font-size: 12px; }

@@ -900,18 +900,72 @@ const LEARN_UI = (() => {
   }
 
   /* ---------- 複習（間隔重複） ---------- */
+  /* 範圍：科目 → path 各層 → 單元 → 課；cfg.rv = { s 科目, r 範圍（g:科目␁層…／p:單元 id）, l 課 id, mode due|all, n 張數 } */
+  const RSEP = '\u0001';
+  const relPath = p => { const pth = pathOf(p), nm = C.SUBJECTS[p.subject] ? C.SUBJECTS[p.subject].name : ''; return pth[0] === nm || pth[0] === p.subject ? pth.slice(1) : pth; };
   function reviewHome() {
     const body = U.$('#learnBody');
-    const all = Object.keys(D.rev).filter(id => ITEMS[id]);
-    const due = dueList();
-    const boxes = BOX_DAYS.slice(1).map((d, i) => all.filter(id => D.rev[id].box === i + 1).length);
-    const soon = all.filter(id => D.rev[id].due > Date.now() && D.rev[id].due < Date.now() + DAY).length;
-    body.innerHTML = `<div class="row"><div><h3 style="margin:0">今天要複習 <span class="gold-t">${due.length}</span> 張</h3>
+    const cf = D.cfg.rv = Object.assign({ s: 'all', r: '', l: '', mode: 'due', n: 20 }, D.cfg.rv || {});
+    const now = Date.now();
+    const all = Object.keys(D.rev).filter(id => ITEMS[id] && PK[ITEMS[id].p]);
+    const isDue = id => D.rev[id].due <= now;
+    const totalDue = all.filter(isDue).length;
+    const subs = [...new Set(all.map(id => PK[ITEMS[id].p].subject))].filter(s => C.SUBJECTS[s]);
+    if (cf.s !== 'all' && !subs.includes(cf.s)) Object.assign(cf, { s: 'all', r: '', l: '' });
+    const inS = cf.s === 'all' ? all : all.filter(id => PK[ITEMS[id].p].subject === cf.s);
+    const inR = (id, r) => {
+      if (!r) return true;
+      const p = PK[ITEMS[id].p];
+      if (r.startsWith('p:')) return p.id === r.slice(2);
+      const [s, ...g] = r.slice(2).split(RSEP), rp = relPath(p);
+      return p.subject === s && g.every((x, i) => rp[i] === x);
+    };
+    // 範圍選單：依單元原本順序列出 path 各層與單元（只列有複習卡的）
+    const ropts = [];
+    if (cf.s !== 'all') {
+      const seen = new Set(), has = new Set(inS.map(id => ITEMS[id].p));
+      packs.forEach(p => {
+        if (p.subject !== cf.s || !has.has(p.id)) return;
+        const rp = relPath(p);
+        rp.forEach((name, k) => { const v = 'g:' + [cf.s, ...rp.slice(0, k + 1)].join(RSEP); if (!seen.has(v)) { seen.add(v); ropts.push({ v, label: name, d: k, g: 1 }); } });
+        ropts.push({ v: 'p:' + p.id, label: p.title, d: rp.length });
+      });
+    }
+    if (cf.r && !ropts.some(o => o.v === cf.r)) Object.assign(cf, { r: '', l: '' });
+    const inRange = inS.filter(id => inR(id, cf.r));
+    const lpack = cf.r.startsWith('p:') ? PK[cf.r.slice(2)] : null;
+    const lopts = lpack ? lpack.lessons.filter(l => inRange.some(id => ITEMS[id].l === l.id)) : [];
+    if (cf.l && !lopts.some(l => l.id === cf.l)) cf.l = '';
+    const scope = cf.l ? inRange.filter(id => ITEMS[id].l === cf.l) : inRange;
+    const sDue = scope.filter(isDue);
+    const pool = cf.mode === 'due' ? sDue : U.shuffle(sDue).concat(U.shuffle(scope.filter(id => !isDue(id))).sort((a, b) => D.rev[a].box - D.rev[b].box));
+    const take = cf.n ? Math.min(cf.n, pool.length) : pool.length;
+    const cnt = ids => `到期 ${ids.filter(isDue).length}／共 ${ids.length}`;
+    const boxes = BOX_DAYS.slice(1).map((d, i) => scope.filter(id => D.rev[id].box === i + 1).length);
+    const soon = scope.filter(id => D.rev[id].due > now && D.rev[id].due < now + DAY).length;
+    const narrowed = cf.s !== 'all' || cf.r || cf.l;
+    body.innerHTML = `<div class="row"><div><h3 style="margin:0">今天要複習 <span class="gold-t">${totalDue}</span> 張${narrowed ? `<span class="dim small-t">（此範圍到期 ${sDue.length} 張）</span>` : ''}</h3>
         <div class="dim small-t">答錯的檢核題會立刻進來；完成一課後，記憶卡隔天開始出現。答對就升一盒、間隔拉長，答錯回第 1 盒。</div></div>
-        <span class="grow"></span><button class="px-btn gold big" id="rvGo" ${due.length ? '' : 'disabled'}>開始複習 ▶</button></div>
+        <span class="grow"></span><button class="px-btn gold big" id="rvGo" ${take ? '' : 'disabled'}>開始複習${take ? `（${take} 張）` : ''} ▶</button></div>
+      <div class="rv-scope mt">
+        <div class="row">${[['all', '全部科目']].concat(subs.map(x => [x, C.SUBJECTS[x].name])).map(([v, l]) => `<span class="chip ${cf.s === v ? 'on' : ''}" data-rvs="${v}">${l}</span>`).join('')}</div>
+        <div class="row mt">
+          <label class="small-t">範圍 <select class="px-in" id="rvR" ${cf.s === 'all' ? 'disabled' : ''}><option value="">${cf.s === 'all' ? '先選科目再縮小範圍' : `整個科目（${cnt(inS)}）`}</option>${ropts.map(o => `<option value="${U.esc(o.v)}" ${cf.r === o.v ? 'selected' : ''}>${'　'.repeat(o.d)}${o.g ? '📁 ' : '📘 '}${U.esc(o.label)}（${cnt(inS.filter(id => inR(id, o.v)))}）</option>`).join('')}</select></label>
+          ${lopts.length ? `<label class="small-t">課 <select class="px-in" id="rvL"><option value="">整個單元（${cnt(inRange)}）</option>${lopts.map(l => `<option value="${U.esc(l.id)}" ${cf.l === l.id ? 'selected' : ''}>${U.esc(l.title)}（${cnt(inRange.filter(id => ITEMS[id].l === l.id))}）</option>`).join('')}</select></label>` : ''}
+        </div>
+        <div class="row mt"><span class="small-t">卡片</span>${[['due', '只複習到期的'], ['all', '全部（提前複習）']].map(([v, l]) => `<span class="chip ${cf.mode === v ? 'on' : ''}" data-rvm="${v}">${l}</span>`).join('')}
+          <span class="small-t" style="margin-left:12px">一次</span>${[10, 20, 50, 0].map(v => `<span class="chip ${cf.n === v ? 'on' : ''}" data-rvn="${v}">${v || '不限'}</span>`).join('')}</div>
+        ${cf.mode === 'all' ? '<div class="dim small-t">提前複習：到期的先出；還沒到期的卡答對不會升盒（不打亂排程），答錯照樣回第 1 盒。</div>' : ''}
+      </div>
       <div class="rv-boxes mt">${boxes.map((n, i) => `<div class="rv-box"><b>${n}</b><small>第 ${i + 1} 盒<br>${BOX_DAYS[i + 1]} 天後</small></div>`).join('')}</div>
-      <p class="dim small-t">共 ${all.length} 張・24 小時內還會到期 ${soon} 張・累計複習 ${D.stat.reviews} 次</p>`;
-    U.$('#rvGo').onclick = () => reviewRun(U.shuffle(due).slice(0, 20));
+      <p class="dim small-t">${narrowed ? '此範圍' : '全部'}共 ${scope.length} 張・24 小時內還會到期 ${soon} 張・累計複習 ${D.stat.reviews} 次</p>`;
+    const re = () => { save(); reviewHome(); };
+    U.$$('[data-rvs]', body).forEach(c => c.onclick = () => { SFX.play('click'); Object.assign(cf, { s: c.dataset.rvs, r: '', l: '' }); re(); });
+    U.$$('[data-rvm]', body).forEach(c => c.onclick = () => { SFX.play('click'); cf.mode = c.dataset.rvm; re(); });
+    U.$$('[data-rvn]', body).forEach(c => c.onclick = () => { SFX.play('click'); cf.n = +c.dataset.rvn; re(); });
+    U.$('#rvR').onchange = e => { cf.r = e.target.value; cf.l = ''; re(); };
+    const ls = U.$('#rvL'); if (ls) ls.onchange = e => { cf.l = e.target.value; re(); };
+    U.$('#rvGo').onclick = () => reviewRun(U.shuffle(pool.slice(0, take)));
   }
   function reviewRun(ids) {
     cleanup();
@@ -939,7 +993,8 @@ const LEARN_UI = (() => {
       const body = U.$('#lpBody'); body._key = null;
       next.disabled = true;
       const from = `<div class="dim small-t">${C.SUBJECTS[p.subject].name}・${U.esc(p.title)}・${U.esc(l ? l.title : '')}　<span class="tag">第 ${D.rev[id].box} 盒</span></div>`;
-      const after = ok => { gradeRev(id, ok); D.stat.reviews++; if (ok) right++; save(); next.disabled = false; next.focus(); };
+      const early = D.rev[id].due > Date.now(); // 提前複習：答對不升盒，答錯照樣回第 1 盒
+      const after = ok => { if (early && ok) D.rev[id].n++; else gradeRev(id, ok); D.stat.reviews++; if (ok) right++; save(); next.disabled = false; next.focus(); };
       next.onclick = () => { SFX.play('click'); i++; show(); };
       if (it.k === 'flash') {
         body.className = 'lp-body t-card';
@@ -949,7 +1004,7 @@ const LEARN_UI = (() => {
         const flip = () => {
           fc.classList.add('flip'); SFX.play('click');
           row.innerHTML = '<button class="px-btn red" id="fcNo">✘ 忘了（1）</button><button class="px-btn green" id="fcYes">✔ 記得（2）</button>';
-          const fin = ok => { row.innerHTML = `<span class="${ok ? 'green-t' : 'red-t'}">${ok ? '升一盒！' : '回到第 1 盒，明天再見。'}</span>`; SFX.play(ok ? 'correct' : 'wrong'); after(ok); body._key = null; };
+          const fin = ok => { row.innerHTML = `<span class="${ok ? 'green-t' : 'red-t'}">${ok ? (early ? '記得！（提前複習，排程不變）' : '升一盒！') : '回到第 1 盒，明天再見。'}</span>`; SFX.play(ok ? 'correct' : 'wrong'); after(ok); body._key = null; };
           U.$('#fcYes').onclick = () => fin(true); U.$('#fcNo').onclick = () => fin(false);
           body._key = e => { if (e.key === '1') { fin(false); return true; } if (e.key === '2') { fin(true); return true; } return false; };
         };
