@@ -263,7 +263,7 @@ const LEARN_UI = (() => {
       <div class="col mt">${p.lessons.map((l, i) => {
         const st = D.les[lkey(p, l)] || {};
         const inProg = st.i > 0 && st.i < l.steps.length;
-        const state = inProg ? `<span class="tag">進行中 ${st.i}/${l.steps.length}</span>` : st.done ? `<span class="gold-t">${stars(st.best || 0)}</span>` : '<span class="tag">未開始</span>';
+        const state = inProg ? `<span class="tag">進行中 ${st.i}/${l.steps.length}</span>` : st.done ? `<span class="gold-t">${st.rank ? `<i class="lrank r-${st.rank}">${st.rank}</i>` : ''}${stars(st.best || 0)}</span>` : '<span class="tag">未開始</span>';
         return `<div class="lles ${st.done ? 'done' : ''}">
           <div class="lles-n">${i + 1}</div>
           <div class="grow"><b>${U.esc(l.title)}</b>
@@ -325,9 +325,13 @@ const LEARN_UI = (() => {
     document.addEventListener('keydown', keyH);
     const R = st.run;
     const ready = (label) => { next.disabled = false; if (label) next.textContent = label; };
-    const tally = (firstOk) => { R.n++; if (firstOk) R.ok++; D.stat.checks++; if (firstOk) D.stat.right++; save(); };
+    const tally = (firstOk) => { R.n++; if (firstOk) R.ok++; D.stat.checks++; if (firstOk) D.stat.right++; battleItem(firstOk); save(); };
 
-    /* ===== 學習戰鬥：每段（概念卡＋它的檢核題）一隻怪物；讀概念卡累積知識能量；課末魔王 ===== */
+    /* ===== 學習戰鬥：每段（概念卡＋它的檢核題）一隻怪物；課末魔王 =====
+     * 回饋設計：答對用和遠征相同的職業招式特效；第一次就答對累積連擊（傷害加成、音高上升、每 4 連擊夥伴追擊、每 5 連擊 +⚡）；
+     * 讀概念卡／玩互動累積 ⚡，集滿 3 點由玩家決定何時放「必殺技」；怪物有特性與意圖（蓄力／硬殼／寶藏怪會逃跑）；
+     * 連擊打得快會提早打倒怪物 → 本段還有題目就出現增援，整段零失誤清場掉寶箱；魔王半血進入第二階段；課末給 S／A／B／C 評等。
+     * 倒下不影響學習進度（夥伴扶起、連擊歸零、評等最高 B）。 */
     const BOUND = ['intro', 'card', 'example', 'interactive', 'practice', 'recap'];
     const segOf = [], segItems = [];
     l.steps.forEach((x, i) => {
@@ -338,23 +342,44 @@ const LEARN_UI = (() => {
       if (x.type === 'diagram' && x.mode !== 'explore') segItems[k] += Math.min(5, (x.points || []).length);
       if (x.type === 'practice') segItems[k] += (x.qids || []).length + (x.checks || []).length + (x.pick ? (x.pick.n || 2) : 0);
     });
-    R.bt = R.bt || { hp: 5, max: 5, en: 0, seg: -1, mon: null, kills: 0, falls: 0, gems: 0, seen: [] };
+    R.bt = Object.assign({ hp: 5, max: 5, en: 0, seg: -1, mon: null, kills: 0, falls: 0, gems: 0, seen: [], combo: 0, maxCombo: 0, segUsed: 0, segWrong: 0, chests: 0, ults: 0, shield: 0 }, R.bt || {});
     const B = R.bt;
     const lb = U.$('#lbStage');
     const lvIdx = p.lessons.indexOf(l);
+    const clsId = Store.profile.activeClass || 'knight';
+    const ULT = {
+      knight: { name: '聖劍・守護', dmg: () => 35, desc: '造成 35 傷害，並擋下下一次反擊' },
+      mage: { name: '隕星術', dmg: () => 45, desc: '造成 45 傷害' },
+      ranger: { name: '流星三連', dmg: () => 36, desc: '造成 36 傷害，連擊 +2' },
+      cleric: { name: '聖光審判', dmg: () => 30, desc: '造成 30 傷害，回復 2 ❤' },
+      berserker: { name: '血怒斬', dmg: () => 25 + (B.max - B.hp) * 8, desc: '造成 25＋每失去 1 ❤ 再 +8 的傷害' }
+    }[clsId] || { name: '必殺技', dmg: () => 35, desc: '造成 35 傷害' };
+    const TRAIT = {
+      charge: { name: '蓄力', desc: '每答 2 題蓄力一次：蓄力時答錯受 2 點傷害；答對則「破防」傷害 ×1.5' },
+      shell: { name: '硬殼', desc: '硬殼在時普通攻擊只有 6 成傷害；暴擊或必殺技可以打碎硬殼' },
+      treasure: { name: '寶藏怪', desc: '幾題後就會逃走！趕快打倒牠拿 3 魂晶' }
+    };
+    const monAt = () => { const m = B.boss || B.mon; return m && m.hp > 0 ? m : null; };
+
     function newMon(elite, items) {
       const tier = U.clamp((p.level || 2) - 1 + Math.floor(lvIdx / 2) + (elite ? 1 : 0), 0, 4);
       const pool = C.MONSTERS.filter(m => !m.secret && m.tier <= tier && m.tier >= tier - 1);
       const m = U.pick(pool.length ? pool : C.MONSTERS.filter(x => !x.secret));
       const hp = Math.max(10, items * 10);
-      return { id: m.id, name: (elite ? '【精英】' : '') + U.pick(C.monPrefix(p.subject)) + m.name, tile: m.tile, filter: m.filter || U.pick(C.VARIANT), hp, max: hp, elite: !!elite };
+      const treasure = !elite && items >= 2 && Math.random() < 0.12;
+      const trait = treasure ? 'treasure' : elite ? U.pick(['charge', 'shell']) : U.pick([null, null, 'charge', 'shell']);
+      return {
+        id: m.id, name: treasure ? '✨寶藏' + m.name : (elite ? '【精英】' : '') + U.pick(C.monPrefix(p.subject)) + m.name,
+        tile: m.tile, filter: treasure ? 'sepia(1) saturate(4) hue-rotate(5deg) brightness(1.15)' : (m.filter || U.pick(C.VARIANT)), fx: m.fx,
+        hp, max: hp, elite: !!elite, trait, shell: trait === 'shell', charged: false, cnt: 0, left: treasure ? Math.max(2, Math.min(4, items)) : 0
+      };
     }
+
+    /* ---------- 畫面：場景只在換主題時重畫；勇者只建一次（出招動畫才不會被打斷）；怪物區與 HUD 分開更新 ---------- */
     function drawBattle() {
       lb.style.display = D.cfg.battle ? '' : 'none';
       U.$('#lpBattle').textContent = D.cfg.battle ? '⚔ 戰鬥中' : '🕊 平靜模式';
       if (!D.cfg.battle) return;
-      const m = B.boss || B.mon, pet = Store.profile.activePet;
-      // 場景：依課次換（書庫→苔蘚洞窟→冰晶洞窟→石磚地牢），首領用熔岩／虛空；場景只在換主題時重畫，粒子才不會每次出招就重來
       const th = B.boss ? FX.THEMES[lvIdx % 2 ? 5 : 4] : FX.THEMES[[2, 1, 3, 0][Math.max(0, lvIdx) % 4]];
       let sc = lb.querySelector('.lb-scene');
       if (!sc || sc.dataset.th !== th.id) {
@@ -362,62 +387,249 @@ const LEARN_UI = (() => {
         sc = U.h(`<div class="lb-scene theme-${th.id}" data-th="${th.id}">${FX.stageBG(null, th, false)}</div>`);
         lb.insertBefore(sc, lb.firstChild);
       }
-      let fg = lb.querySelector('.lb-fg');
-      if (!fg) { fg = document.createElement('div'); fg.className = 'lb-fg'; lb.appendChild(fg); }
-      fg.innerHTML = `<div class="lb-hud"><span class="lb-hp">${'❤'.repeat(B.hp)}<i>${'❤'.repeat(Math.max(0, B.max - B.hp))}</i></span><span class="lb-en" title="知識能量：讀概念卡、玩互動內容累積；第一次就答對時消耗 1 點造成暴擊">${'⚡'.repeat(B.en)}<i>${'⚡'.repeat(3 - B.en)}</i></span></div>
-        <div class="lb-hero" id="lbHero"><span class="lb-hbody"><i class="shadow"></i>${SP.tile(Store.heroTile(), 150, 'anim-bob')}</span>${pet ? `<span class="lb-pet">${Store.petHTML(pet, 54)}</span>` : ''}</div>
-        ${m && m.hp > 0 ? `<div class="lb-mon ${B.boss ? 'boss' : ''}" id="lbMon"><div class="lb-mname">${U.esc(m.name)}</div><div class="bar lb-mbar"><i style="width:${U.pct(m.hp, m.max)}%"></i></div><span class="lb-mbody"><i class="shadow"></i>${SP.icon(m.tile, B.boss ? 136 : m.elite ? 112 : 96, 'anim-bob', `filter:${m.filter};transform:scaleX(-1)`)}</span></div>`
-          : `<div class="lb-mon empty small-t dim">${B.kills ? `已擊敗 ${B.kills} 隻` : '四周很安靜…'}</div>`}`;
+      if (!lb.querySelector('.lb-fg')) {
+        const pet = Store.profile.activePet;
+        lb.appendChild(U.h(`<div class="lb-fg">
+          <div class="lb-hud"><span class="lb-hp" id="lbHp"></span><span class="lb-en" id="lbEn" title="知識能量：讀概念卡、玩互動、每 5 連擊各 +1；集滿 3 點可以放必殺技"></span></div>
+          <button class="lb-ult" id="lbUlt" title="${U.esc(ULT.name)}：${U.esc(ULT.desc)}">⚡ 必殺技</button>
+          <div class="lb-combo" id="lbCombo"></div>
+          <div class="lb-hero" id="lbHero"><span class="lb-hbody" id="lbHeroBody"><i class="shadow"></i>${SP.tile(Store.heroTile(), 150, 'anim-bob')}</span>${pet ? `<span class="lb-pet" id="lbPet">${Store.petHTML(pet, 54)}</span>` : ''}</div>
+          <div id="lbMonWrap"></div></div>`));
+        U.$('#lbUlt').onclick = ult;
+      }
+      hud(); drawMon();
+    }
+    function hud() {
+      const hp = U.$('#lbHp'); if (!hp) return;
+      hp.innerHTML = `${'❤'.repeat(Math.max(0, B.hp))}<i>${'❤'.repeat(Math.max(0, B.max - B.hp))}</i>${B.shield ? ' 🛡' : ''}`;
+      U.$('#lbEn').innerHTML = `${'⚡'.repeat(B.en)}<i>${'⚡'.repeat(3 - B.en)}</i>`;
+      const u = U.$('#lbUlt'); u.classList.toggle('ready', B.en >= 3 && !!monAt()); u.disabled = !(B.en >= 3 && monAt());
+      const cb = U.$('#lbCombo');
+      [['on', B.combo >= 2], ['t1', B.combo >= 3 && B.combo < 6], ['t2', B.combo >= 6 && B.combo < 10], ['t3', B.combo >= 10]].forEach(([c, v]) => cb.classList.toggle(c, v));
+      cb.innerHTML = B.combo >= 2 ? `<b>${B.combo}</b><small>連擊</small><em>×${(1 + 0.15 * Math.min(B.combo - 1, 8)).toFixed(2)}</em>` : '';
+    }
+    function intentOf(m) {
+      if (B.boss && m.enraged) return '<span class="lb-int red">🔥 暴怒：每題都在蓄力</span>';
+      if (m.charged) return '<span class="lb-int red">⚡ 蓄力中！答對可破防</span>';
+      if (m.trait === 'shell' && m.shell) return '<span class="lb-int">🛡 硬殼</span>';
+      if (m.trait === 'treasure') return `<span class="lb-int gold">💰 ${m.left} 題後逃走</span>`;
+      if (m.trait === 'charge') return `<span class="lb-int">⏳ 再 ${2 - (m.cnt % 2)} 題蓄力</span>`;
+      return '';
+    }
+    function drawMon() {
+      const w = U.$('#lbMonWrap'); if (!w) return;
+      const m = monAt();
+      if (m) {
+        const key = m.name + '|' + m.max;
+        if (w.dataset.k !== key || !U.$('#lbMon')) {
+          w.dataset.k = key;
+          w.innerHTML = `<div class="lb-mon ${B.boss ? 'boss' : ''} ${m.trait ? 'tr-' + m.trait : ''}" id="lbMon" ${m.trait ? `title="${U.esc(TRAIT[m.trait].name)}：${U.esc(TRAIT[m.trait].desc)}"` : ''}>
+            <div class="lb-intent" id="lbInt"></div><div class="lb-mname">${U.esc(m.name)}</div><div class="bar lb-mbar"><i id="lbMbar"></i></div>
+            <span class="lb-mbody" id="lbMonBody"><i class="shadow"></i>${SP.icon(m.tile, B.boss ? 136 : m.elite ? 112 : 96, 'anim-bob', `filter:${m.filter};transform:scaleX(-1)`)}</span></div>`;
+          const el = U.$('#lbMon'); el.classList.add('anim-pop');
+        }
+        U.$('#lbMbar').style.width = U.pct(m.hp, m.max) + '%';
+        U.$('#lbInt').innerHTML = intentOf(m);
+        U.$('#lbMon').classList.toggle('charged', !!(m.charged || m.enraged));
+      } else if (B.chest) {
+        if (w.dataset.k !== 'chest') {
+          w.dataset.k = 'chest';
+          w.innerHTML = `<button class="lb-chest" id="lbChest" title="完美清場的寶箱，點開它！"><span class="lb-mname gold-t">完美清場！</span>${SP.icon(C.NODES.treasure.icon, 64, 'anim-bob')}</button>`;
+          U.$('#lbChest').onclick = openChest;
+        }
+      } else {
+        w.dataset.k = 'empty';
+        w.innerHTML = `<div class="lb-mon empty small-t dim">${B.kills ? `已擊敗 ${B.kills} 隻` : '四周很安靜…'}</div>`;
+      }
+      hud();
     }
     function fxText(where, text, cls) {
-      const el = U.$(where === 'mon' ? '#lbMon' : '#lbHero'); if (!el) return;
-      const d = U.h(`<div class="dmg ${cls || ''}" style="left:${el.offsetLeft + el.offsetWidth / 2 - 20}px;top:${el.offsetTop + 10}px">${text}</div>`);
+      const el = U.$(where === 'mon' ? '#lbMonBody' : where === 'pet' ? '#lbPet' : '#lbHeroBody'); if (!el) return;
+      const a = lb.getBoundingClientRect(), b = el.getBoundingClientRect();
+      const d = U.h(`<div class="dmg ${cls || ''}" style="left:${b.left - a.left + b.width / 2 - 24}px;top:${Math.max(4, b.top - a.top + 4)}px">${text}</div>`);
       lb.appendChild(d); setTimeout(() => d.remove(), 1000);
     }
+    function banner(text, cls) {
+      const d = U.h(`<div class="lb-banner ${cls || ''}">${text}</div>`);
+      lb.appendChild(d); setTimeout(() => d.remove(), 1300);
+    }
     const anim = (sel, c) => { const el = U.$(sel); if (el) { el.classList.remove(c); void el.offsetWidth; el.classList.add(c); } };
+    function gemFly(n) {
+      const from = U.$('#lbMonBody') || U.$('#lbChest'); if (!from) return;
+      const a = lb.getBoundingClientRect(), b = from.getBoundingClientRect();
+      const x = b.left - a.left + b.width / 2, y = b.top - a.top + b.height / 2;   // 從怪物身上噴出，飛向左上角的 HUD
+      for (let i = 0; i < Math.min(n, 6); i++) {
+        const g = U.h(`<i class="lb-gem" style="left:${x}px;top:${y}px;--dx:${U.rnd(-40, 40)}px;--tx:${30 - x}px;--ty:${14 - y}px;animation-delay:${i * 90}ms"></i>`);
+        lb.appendChild(g); setTimeout(() => g.remove(), 1100 + i * 90);
+      }
+      setTimeout(() => SFX.play('coin'), 350);
+    }
+
     function enterSeg() {
       if (!D.cfg.battle) return;
       const k = segOf[st.i];
       if (B.seg === k) return drawBattle();
-      if (B.mon && B.mon.hp > 0) say(`${B.mon.name} 趁機溜走了…`);
-      B.seg = k; B.mon = null;
+      if (B.chest) collectChest(true);
+      const m = B.mon;
+      if (m && m.hp > 0) say(m.trait === 'treasure' ? `${m.name} 帶著寶藏溜走了…` : `${m.name} 趁機溜走了…`);
+      B.seg = k; B.mon = null; B.segUsed = 0; B.segWrong = 0;
       const t = l.steps[st.i].type;
-      if (segItems[k] > 0 && t !== 'practice') { B.mon = newMon(false, segItems[k]); setTimeout(() => say(`前方出現了 ${B.mon.name}！讀懂觀念再迎戰！`), 400); }
+      if (segItems[k] > 0 && t !== 'practice') {
+        B.mon = newMon(false, segItems[k]);
+        const mm = B.mon;
+        setTimeout(() => say(mm.trait === 'treasure' ? `是寶藏怪 ${mm.name}！${mm.left} 題內打倒牠！` : mm.trait ? `前方出現了 ${mm.name}（${TRAIT[mm.trait].name}）！` : `前方出現了 ${mm.name}！讀懂觀念再迎戰！`), 400);
+      }
       save(); drawBattle();
     }
-    function gainEnergy(why) {
+    function addEnergy(n, why) {
+      if (B.en >= 3) return;
+      B.en = Math.min(3, B.en + n); anim('#lbHeroBody', 'anim-cast'); fxText('hero', `⚡+${n}${why ? ' ' + why : ''}`, 'heal');
+      if (B.en >= 3) { SFX.play('skill'); setTimeout(() => say(`⚡ 能量滿了！可以放「${ULT.name}」！`), 300); }
+      hud();
+    }
+    function gainEnergy() {
       if (!D.cfg.battle || B.seen.includes(st.i)) return;
-      B.seen.push(st.i);
-      if (B.en < 3) { B.en++; drawBattle(); anim('#lbHero', 'anim-cast'); fxText('hero', '⚡+1', 'heal'); }
+      B.seen.push(st.i); addEnergy(1); save();
+    }
+    /* 每一題結束（第一次作答的結果確定後）：記錄本段用掉的題數，怪物意圖前進一格 */
+    function battleItem(firstOk) {
+      if (!D.cfg.battle) return;
+      B.segUsed++; if (!firstOk) B.segWrong++;
+      setTimeout(tickMon, 0);   // 等這一題的攻擊／反擊結算完再前進
+    }
+    function tickMon() {
+      const m = monAt(); if (!m) return;
+      if (B.boss) { if (m.enraged && !m.charged) { m.charged = true; } drawMon(); return save(); }
+      m.cnt++;
+      if (m.trait === 'charge' && !m.charged && m.cnt % 2 === 0) { m.charged = true; setTimeout(() => { SFX.play('skill'); fxText('mon', '⚡蓄力', 'crit'); }, 900); }
+      if (m.trait === 'treasure' && --m.left <= 0) {
+        setTimeout(() => { if (m.hp <= 0 || B.mon !== m) return; anim('#lbMon', 'anim-flee'); say(`${m.name} 帶著寶藏逃走了！下次要打快一點！`); SFX.play('miss'); m.hp = 0; m.fled = true; save(); setTimeout(() => afterKill(m), 600); }, 900);
+      }
+      setTimeout(drawMon, 950); save();
+    }
+
+    /* ---------- 攻擊 ---------- */
+    function onRightHit(firstOk) {
+      const m = monAt(); if (!D.cfg.battle || !m) return;
+      if (firstOk) { B.combo++; B.maxCombo = Math.max(B.maxCombo, B.combo); }
+      const mult = firstOk ? 1 + 0.15 * Math.min(B.combo - 1, 8) : 1;
+      const crit = firstOk && Math.random() < 0.08 + 0.03 * Math.min(B.combo, 8) + (clsId === 'ranger' ? 0.1 : 0);
+      let dmg = (firstOk ? 10 : 5) * mult * (crit ? 1.6 : 1), tags = [];
+      if (m.charged && firstOk) { dmg *= 1.5; m.charged = false; tags.push('破防！'); }
+      if (m.shell) { if (crit) { m.shell = false; tags.push('殼碎了！'); } else dmg *= 0.6; }
+      dmg = Math.max(1, Math.round(dmg));
+      const before = m.hp;
+      m.hp = Math.max(0, m.hp - dmg);
+      const afterMain = m.hp;
+      const petHit = firstOk && B.combo >= 4 && B.combo % 4 === 0 && m.hp > 0 && !!U.$('#lbPet');
+      if (petHit) m.hp = Math.max(0, m.hp - 6);
+      const rage = enrage(m);
+      const killed = m.hp <= 0, overkill = killed && (crit || dmg - before >= 8);
+      if (firstOk && B.combo % 5 === 0) setTimeout(() => addEnergy(1, `${B.combo}連擊`), 700);
       save();
+      // 演出（狀態已經算好，下面只負責畫面）
+      hud();
+      if (firstOk && B.combo >= 2) { SFX.combo(B.combo); anim('#lbCombo', 'pop'); }
+      (async () => {
+        await FX.attack(clsId, { crit: false });
+        if (crit) { lb.classList.add('hitstop'); await FX.critical(clsId); lb.classList.remove('hitstop'); }
+        anim('#lbMonBody', 'anim-hurt'); anim('#lbMon', 'flash-w');
+        fxText('mon', (crit ? '暴擊 ' : '') + '-' + dmg, crit ? 'crit' : '');
+        tags.forEach((t, i) => setTimeout(() => banner(t, 'gold'), i * 250));
+        if (U.$('#lbMbar')) U.$('#lbMbar').style.width = U.pct(afterMain, m.max) + '%';
+        if (petHit) {
+          await U.sleep(260); anim('#lbPet', 'anim-lunge'); SFX.play('pet');
+          await U.sleep(180); anim('#lbMonBody', 'anim-hurt'); fxText('mon', '夥伴追擊 -6', 'heal');
+        }
+        if (rage) rageFx();
+        if (killed) kill(m, overkill); else drawMon();
+      })();
     }
     function onWrongHit() {
-      const m = B.boss || B.mon; if (!D.cfg.battle || !m || m.hp <= 0) return;
-      anim('#lbMon', 'anim-lunge-l'); setTimeout(() => { anim('#lbHero', 'anim-hurt'); lb.classList.remove('shake'); void lb.offsetWidth; lb.classList.add('shake'); }, 180);
-      B.hp--; B.hurt = (B.hurt || 0) + 1; fxText('hero', '-1❤', '');
-      if (B.hp <= 0) { B.falls++; B.hp = B.max; setTimeout(() => { say('你倒下了……夥伴把你扶起來：「沒關係，再來一次！」'); drawBattle(); }, 500); }
-      save(); setTimeout(drawBattle, 450);
+      const m = monAt(); if (!D.cfg.battle || !m) return;
+      const lost = B.combo;
+      B.combo = 0;
+      let dmg = m.charged ? 2 : 1; const wasCharged = m.charged; m.charged = false;
+      const blocked = B.shield > 0; if (blocked) { B.shield = 0; dmg = 0; }
+      B.hp -= dmg; if (dmg) B.hurt = (B.hurt || 0) + 1;
+      let fell = false;
+      if (B.hp <= 0) { B.falls++; B.hp = B.max; fell = true; }
+      save();
+      hud();
+      if (lost >= 3) banner(`${lost} 連擊中斷`, 'dim');
+      (async () => {
+        await FX.monStrike(m.fx);
+        if (blocked) { fxText('hero', '🛡 格擋！', 'miss'); SFX.play('miss'); return drawMon(); }
+        anim('#lbHeroBody', 'anim-hurt'); lb.classList.remove('shake', 'hurtflash'); void lb.offsetWidth; lb.classList.add('shake', 'hurtflash');
+        SFX.play('hurt'); fxText('hero', `-${dmg}❤` + (wasCharged ? ' 蓄力一擊！' : ''), '');
+        if (fell) setTimeout(() => { say('你倒下了……夥伴把你扶起來：「沒關係，再來一次！」'); SFX.play('heal'); }, 450);
+        drawMon();
+      })();
     }
-    function onRightHit(firstOk) {
-      const m = B.boss || B.mon; if (!D.cfg.battle || !m || m.hp <= 0) return;
-      let dmg = firstOk ? 10 : 5, crit = false;
-      if (firstOk && B.en > 0) { B.en--; dmg = 15; crit = true; }
-      const heroTarget = U.$('#lbHero');
-      const clsId = Store.profile.activeClass;
-      const moveName = FX.pickAttack(clsId);
-      const moveIndex = Object.keys(FX.ATTACKS[clsId]).indexOf(moveName);
-      HeroAnim.play(heroTarget, crit ? 'critical' : 'attack', moveIndex);
-      anim('#lbHero', 'anim-lunge'); SFX.play(crit ? 'crit' : 'hit');
-      setTimeout(() => {
-        m.hp = Math.max(0, m.hp - dmg); anim('#lbMon', 'anim-hurt'); fxText('mon', (crit ? '⚡暴擊 ' : '') + '-' + dmg, crit ? 'crit' : '');
-        if (m.hp <= 0) {
-          const g = B.boss ? 0 : m.elite ? 2 : 1; B.gems += g;
-          if (!B.boss) { B.kills++; D.stat.kills++; const bs = Store.profile.bestiary; bs[m.id] = (bs[m.id] || 0) + 1; Store.saveProfile(); say(`擊敗了 ${m.name}！${g ? `（魂晶 +${g}）` : ''}`); SFX.play('kill'); }
-          anim('#lbMon', 'anim-die');
-        }
-        save(); setTimeout(drawBattle, Math.max(m.hp <= 0 ? 650 : 250, crit ? 700 : 500));
-      }, 200);
+    function ult() {
+      const m = monAt(); if (!m || B.en < 3) return;
+      B.en = 0; B.ults++;
+      let dmg = ULT.dmg();
+      const tags = [];
+      if (m.shell) { m.shell = false; tags.push('殼碎了！'); }
+      if (m.charged) { m.charged = false; tags.push('打斷蓄力！'); }
+      const before = m.hp; m.hp = Math.max(0, m.hp - dmg);
+      if (clsId === 'knight') B.shield = 1;
+      if (clsId === 'cleric') B.hp = Math.min(B.max, B.hp + 2);
+      if (clsId === 'ranger') { B.combo += 2; B.maxCombo = Math.max(B.maxCombo, B.combo); }
+      const killed = m.hp <= 0, rage = enrage(m);
+      save(); hud();
+      banner(`⚡ ${ULT.name}`, 'ult'); say(`「${ULT.name}」！`);
+      (async () => {
+        lb.classList.add('hitstop'); await FX.critical(clsId); lb.classList.remove('hitstop');
+        anim('#lbMonBody', 'anim-hurt'); fxText('mon', '必殺 -' + dmg, 'crit');
+        tags.forEach((t, i) => setTimeout(() => banner(t, 'gold'), 300 + i * 250));
+        if (clsId === 'cleric') fxText('hero', '+2❤', 'heal');
+        if (clsId === 'knight') fxText('hero', '🛡 守護', 'heal');
+        if (rage) rageFx();
+        if (killed) kill(m, dmg - before >= 8); else drawMon();
+      })();
     }
+    /* 魔王半血以下進入第二階段：之後每題都在蓄力 */
+    function enrage(m) {
+      if (!B.boss || m.enraged || m.hp <= 0 || m.hp > m.max / 2) return false;
+      m.enraged = true; m.charged = true; save(); return true;
+    }
+    function rageFx() { banner('👑 魔王暴怒！第二階段', 'red'); SFX.play('boss'); say('魔王暴怒了！之後答錯會受 2 點傷害，答對可以破防！'); lb.classList.add('rage'); }
+    function kill(m, overkill) {
+      if (m.dead) return; m.dead = true;
+      anim('#lbMon', 'anim-die'); SFX.play('kill');
+      if (B.boss) return setTimeout(drawMon, 700);   // 魔王的獎勵在 endBoss 結算
+      let g = m.trait === 'treasure' ? 3 : m.elite ? 2 : 1;
+      if (overkill) { g++; setTimeout(() => banner('OVERKILL！ 魂晶 +1', 'gold'), 200); }
+      B.gems += g; B.kills++; D.stat.kills++;
+      const bs = Store.profile.bestiary; bs[m.id] = (bs[m.id] || 0) + 1; Store.saveProfile();
+      gemFly(g);
+      say(`擊敗了 ${m.name}！（魂晶 +${g}）`);
+      save();
+      setTimeout(() => afterKill(m), 750);
+    }
+    /* 怪物倒下或逃走後：本段還有題目 → 增援；整段零失誤清場 → 寶箱 */
+    function afterKill(m) {
+      if (B.boss || !D.cfg.battle || B.mon !== m) return drawMon();   // 已經換段（玩家先按了繼續）就不再補怪
+      const k = B.seg, left = (segItems[k] || 0) - B.segUsed;
+      if (left > 0) {
+        B.mon = newMon(l.steps[st.i] && l.steps[st.i].type === 'practice', left);
+        if (B.mon.trait === 'treasure') B.mon.left = Math.max(2, Math.min(left, 3));
+        banner('增援出現！', 'red'); say(`${B.mon.name} 衝了過來！`);
+      } else if (!B.segWrong && B.segUsed > 0 && !m.fled) {
+        B.chest = true; B.mon = null; SFX.play('open');
+      }
+      save(); drawMon();
+    }
+    function openChest() {
+      if (!B.chest) return;
+      const g = 1 + (Math.random() < 0.35 ? 1 : 0);
+      gemFly(g); B.gems += g; B.chests++; B.chest = false;
+      anim('#lbChest', 'anim-pop'); SFX.play('open'); banner(`寶箱：魂晶 +${g}`, 'gold');
+      save(); setTimeout(drawMon, 500);
+    }
+    function collectChest(silent) { if (!B.chest) return; B.gems += 1; B.chests++; B.chest = false; if (!silent) drawMon(); else U.toast('自動收下寶箱：魂晶 +1'); }
     U.$('#lpBattle').onclick = () => { D.cfg.battle = !D.cfg.battle; save(); SFX.play('click'); if (D.cfg.battle) { B.seg = -1; enterSeg(); } else drawBattle(); };
 
     function step() {
@@ -516,8 +728,9 @@ const LEARN_UI = (() => {
       if (!D.cfg.battle || pool.length < 2 || B.bossDone) return finish();
       const qs = U.shuffle(pool).slice(0, Math.min(5, Math.max(3, Math.ceil(pool.length / 2))));
       const th = C.bossTheme(p.subject), bd = U.pick(C.BOSS_DEFS[th]);
-      B.mon = null; B.boss = { name: bd.name, tile: bd.tile, filter: bd.filter, hp: qs.length * 10, max: qs.length * 10, line: bd.line };
-      drawBattle(); SFX.play('boss');
+      if (B.chest) collectChest(true);
+      B.mon = null; B.boss = { name: bd.name, tile: bd.tile, filter: bd.filter, fx: bd.fx, hp: qs.length * 12, max: qs.length * 12, line: bd.line };
+      drawBattle(); SFX.play('boss'); banner(`👑 課末魔王 ${U.esc(bd.name)}`, 'red');
       U.$$('#lpPips i').forEach(x => x.classList.add('on'));
       const body = U.$('#lpBody'); let k = 0, right = 0;
       body.className = 'lp-body t-boss';
@@ -529,17 +742,17 @@ const LEARN_UI = (() => {
         const box = body.querySelector('.lc'), c = qs[k];
         next.disabled = true; next.textContent = '下一擊 ▶';
         next.onclick = () => { SFX.play('click'); k++; one(); };
-        renderCheck(box, c, { allowHint: false, onWrong: onWrongHit, onDone: (firstOk, ok) => { if (ok) { right++; onRightHit(true); } else addRev(c.id, true); save(); ready(k >= qs.length - 1 || B.boss.hp <= 10 && ok ? '結算 ▶' : '下一擊 ▶'); next.focus(); } });
+        renderCheck(box, c, { allowHint: false, onWrong: onWrongHit, onDone: (firstOk, ok) => { if (ok) { right++; onRightHit(firstOk); } else addRev(c.id, true); setTimeout(tickMon, 0); save(); ready(k >= qs.length - 1 || B.boss.hp <= 0 ? '結算 ▶' : '下一擊 ▶'); next.focus(); } });
         body._key = e => box._key ? box._key(e) : false;
       };
       const endBoss = () => {
         cleanupQ();
-        const win = B.boss.hp <= 0; B.bossDone = true; B.bossWin = win;
+        const win = B.boss.hp <= 0; B.bossDone = true; B.bossWin = win; lb.classList.remove('rage');
         if (win) { B.gems += 4; D.stat.bosses++; const bs = Store.profile.bestiary; bs['boss:' + B.boss.name] = (bs['boss:' + B.boss.name] || 0) + 1; Store.saveProfile(); }
         save();
         body.innerHTML = `<div class="center"><h3>${win ? `👑 擊敗魔王「${U.esc(B.boss.name)}」！` : `魔王「${U.esc(B.boss.name)}」撤退了…`}</h3><p>${win ? '這課的觀念你已經掌握了！魂晶 +4' : '答錯的題目已放進複習盒，下次再來挑戰。'}</p></div>`;
         say(win ? '太帥了！魔王被打倒了！' : '差一點！下次一定可以！');
-        if (win) SFX.play('win');
+        if (win) { SFX.play('win'); banner('👑 討伐成功！', 'gold'); }
         next.disabled = false; next.textContent = '完成本課 ✔'; next.onclick = () => { SFX.play('click'); finish(); };
       };
       say(`課末魔王「${bd.name}」出現了！`);
@@ -552,7 +765,15 @@ const LEARN_UI = (() => {
       const star = acc >= 0.9 ? 3 : acc >= 0.7 ? 2 : 1;
       const first = !st.done;
       const bt = R.bt || {};
-      const gain = (first ? 3 + star * 2 : (star > (st.best || 0) ? (star - (st.best || 0)) * 2 : 0)) + (bt.gems || 0);
+      // 戰鬥評等：S＝90% 以上第一次答對＋沒倒下＋（有魔王就要討伐成功）＋連擊夠長；倒下最高 B
+      const RK = ['C', 'B', 'A', 'S'];
+      const rank = bt.seg === undefined || !D.cfg.battle ? '' :
+        acc >= 0.9 && !bt.falls && (!bt.bossDone || bt.bossWin) && (bt.maxCombo || 0) >= Math.min(5, R.n) ? 'S' :
+        acc >= 0.75 && !bt.falls ? 'A' : acc >= 0.5 ? 'B' : 'C';
+      const rankGem = rank === 'S' ? 3 : rank === 'A' ? 1 : 0;
+      const newBestRank = rank && RK.indexOf(rank) > RK.indexOf(st.rank || '');
+      if (newBestRank) st.rank = rank;
+      const gain = (first ? 3 + star * 2 : (star > (st.best || 0) ? (star - (st.best || 0)) * 2 : 0)) + (bt.gems || 0) + rankGem;
       st.done = (st.done || 0) + 1; st.best = Math.max(st.best || 0, star); st.last = Date.now(); st.run = null; st.i = 0;
       D.stat.lessons++;
       l.steps.forEach(s => { if (s.type === 'card' && s.flash) addRev(s.flash.id); if (s.type === 'recap') (s.flash || []).forEach(f => addRev(f.id)); });
@@ -565,10 +786,11 @@ const LEARN_UI = (() => {
       const mins = Math.max(1, Math.round((Date.now() - (R.t0 || Date.now())) / 60000));
       scr().innerHTML = `<div class="panel learn lp-done center">
         <h2>🎉 完成「${U.esc(l.title)}」</h2>
+        ${rank ? `<div class="lp-rank r-${rank}"><b>${rank}</b><small>${newBestRank ? '新紀錄！' : '戰鬥評等'}</small></div>` : ''}
         <div class="lp-stars">${stars(star).split('').map((c, i) => `<span style="animation-delay:${i * .25}s" class="${c === '★' ? 'on' : ''}">${c}</span>`).join('')}</div>
         <p>第一次就答對 <b class="gold-t">${R.ok}</b> / ${R.n} 題（${U.pct(R.ok, R.n)}%）・用時約 ${mins} 分鐘</p>
-        ${bt.seg !== undefined && (bt.kills || bt.bossDone) ? `<p>⚔ 擊敗怪物 ${bt.kills || 0} 隻${bt.bossDone ? `・課末魔王 ${bt.bossWin ? '<b class="gold-t">討伐成功</b>' : '撤退'}` : ''}${bt.falls ? `・倒下 ${bt.falls} 次` : bt.hurt ? `・受傷 ${bt.hurt} 次` : '・<b class="green-t">無傷通關</b>'}</p>` : ''}
-        <p>${gain ? `獲得 <b class="purple-t">${gain}</b> 魂晶・` : ''}帳號經驗 +${first ? 25 : 8}${ups ? '・<b class="gold-t">帳號升級！</b>' : ''}</p>
+        ${bt.seg !== undefined && (bt.kills || bt.bossDone) ? `<p>⚔ 擊敗怪物 ${bt.kills || 0} 隻${bt.maxCombo >= 2 ? `・最高 <b class="gold-t">${bt.maxCombo}</b> 連擊` : ''}${bt.chests ? `・寶箱 ${bt.chests} 個` : ''}${bt.bossDone ? `・課末魔王 ${bt.bossWin ? '<b class="gold-t">討伐成功</b>' : '撤退'}` : ''}${bt.falls ? `・倒下 ${bt.falls} 次` : bt.hurt ? `・受傷 ${bt.hurt} 次` : '・<b class="green-t">無傷通關</b>'}</p>` : ''}
+        <p>${gain ? `獲得 <b class="purple-t">${gain}</b> 魂晶${rankGem ? `（評等 ${rank} 加成 +${rankGem}）` : ''}・` : ''}帳號經驗 +${first ? 25 : 8}${ups ? '・<b class="gold-t">帳號升級！</b>' : ''}</p>
         <p class="dim small-t">答錯的檢核題與本課記憶卡已放進「🔁 複習」。</p>
         <div class="row mt" style="justify-content:center">
           <button class="px-btn" id="dBack">回單元</button>
@@ -779,7 +1001,7 @@ const LEARN_UI = (() => {
         .map(([t, d], i) => `<div class="lg-row"><i class="lg-ic t-${t}">${STEP[t].ic}</i><div><b>${STEP[t].name}</b>${t === 'card' ? '<span class="tag">重複 2～4 次</span>' : t === 'check' ? '<span class="tag">緊跟在每張概念卡後</span>' : ''}<br><span class="dim small-t">${d}</span></div></div>${i === 0 ? '' : ''}`).join('')}</div>
       <div class="lpips big mt">${['intro', 'card', 'check', 'card', 'check', 'check', 'card', 'check', 'example', 'practice', 'recap'].map(t => `<i class="t-${t}"></i>`).join('')}</div>
       <p class="dim small-t">▲ 一課的樣子：導入 → (概念 → 檢核) × N → 範例 → 實戰 → 回顧。每課約 10～20 分鐘，中途離開會自動存進度。</p>
-      <h3 class="mt">⚔ 學習戰鬥</h3><p class="small-t">每一段（概念卡＋它後面的檢核題）會出現一隻怪物：<b>讀概念卡、玩互動內容</b>會累積 ⚡知識能量；<b>第一次就答對</b>造成傷害（有能量時消耗 1 點變暴擊），答錯會被反擊扣 ❤。實戰關卡出現精英怪；整課最後有<b>課末魔王</b>，從本課題目抽 3～5 題不給提示的總複習。倒下也沒關係，夥伴會扶你起來，學習進度不受影響。不想戰鬥可以按右上角切換成「🕊 平靜模式」。</p>
+      <h3 class="mt">⚔ 學習戰鬥</h3><p class="small-t">每一段（概念卡＋它後面的檢核題）會出現怪物。<b>答對</b>就用職業招式攻擊；<b>第一次就答對</b>會累積連擊，連擊越高傷害越高、越容易暴擊，每 4 連擊夥伴會追擊、每 5 連擊 +⚡。<b>讀概念卡、玩互動內容</b>也會累積 ⚡，集滿 3 點就能按「⚡ 必殺技」放職業大招。怪物可能有特性：<b>蓄力</b>（答錯受 2 點傷害、答對可破防）、<b>硬殼</b>（暴擊或必殺技才打得碎）、<b>寶藏怪</b>（幾題後逃走，快打倒牠）。打得快會有增援，整段零失誤會掉寶箱。整課最後有<b>課末魔王</b>（半血後暴怒），課末依正確率、連擊與是否倒下給 S／A／B／C 評等。倒下也沒關係，夥伴會扶你起來，學習進度不受影響。不想戰鬥可以按右上角切換成「🕊 平靜模式」。</p>
       <h3 class="mt">星星怎麼算？</h3><p class="small-t">看「第一次就答對」的比例：90% 以上 ★★★、70% 以上 ★★、其他 ★。第一次完成一課給魂晶，之後拿到更高星數會補差額。</p>`;
   }
 
