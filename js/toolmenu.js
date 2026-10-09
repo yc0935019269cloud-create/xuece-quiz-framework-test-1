@@ -1,4 +1,4 @@
-/* 頂部「多功能」按鈕：把雲端同步、計算機、計算紙、音樂／音量收進同一個選單，點了才展開。
+/* 頂部「多功能」按鈕與快速靜音按鈕：把雲端同步、計算機、計算紙、音樂／音量收進同一個選單，點了才展開。
  * 原本的按鈕（#cloudMini、#calcMini、#padMini、#btnSound）原封不動搬進選單，所以各模組更新按鈕狀態的程式照常運作。
  * 載入順序：cloud.js、pad.js 之後（等它們的按鈕建好再收進來）。 */
 (() => {
@@ -54,6 +54,15 @@
     res.insertBefore(btn, pomo ? pomo.nextSibling : res.querySelector('.res'));
     document.body.appendChild(menu);
     btn.onclick = toggle;
+    // 快速靜音：放在 ☰ 旁邊，一鍵切換全部聲音（背景音樂、音效、環境音）
+    const mute = U.h('<button class="px-btn small" id="muteBtn"></button>');
+    const paint = () => { const m = VOL.get('muted'); mute.textContent = m ? '🔇' : '🔊'; mute.classList.toggle('muted', m); mute.setAttribute('aria-label', m ? '解除靜音' : '靜音'); };
+    mute.onclick = () => {
+      VOL.set('muted', !VOL.get('muted')); App.refreshTop();
+      const cb = document.querySelector('#volPop [data-mute]'); if (cb) cb.checked = VOL.get('muted');
+    };
+    VOL.on(paint); paint();
+    res.insertBefore(mute, btn.nextSibling);
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !menu.hidden) close(); });
     addEventListener('resize', () => { if (!menu.hidden) anchor(menu); });
   }

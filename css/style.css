@@ -1123,3 +1123,5 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .pad-foot { margin-top: 4px; }
 .pad-grip { position: absolute; right: 2px; bottom: 2px; width: 14px; height: 14px; cursor: nwse-resize; touch-action: none; background: linear-gradient(135deg, transparent 50%, var(--hi) 50%); }
 @media (max-width: 640px) { .pad { top: 52px; right: 8px; left: 8px; width: auto; height: calc(100vh - 70px); } .pad-tools button { height: 34px; } }
+#muteBtn { font-size: 13px; padding: 2px 8px; min-width: 34px; }
+#muteBtn.muted { background: #8a3038; }
