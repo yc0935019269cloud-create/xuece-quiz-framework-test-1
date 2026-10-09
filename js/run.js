@@ -88,6 +88,11 @@ class Run {
     const pool = C.RELICS.filter(r => !r.boss && Store.profile.relicsUnlocked.includes(r.id) && !this.has(r.id) && (!rar || r.rar >= rar));
     return pool.length ? U.pick(pool) : null;
   }
+  /* 寶箱：從已解鎖、尚未擁有的遺物中挑 n 件（不重複） */
+  relicChoices(n) {
+    const pool = C.RELICS.filter(r => !r.boss && !r.secret && Store.profile.relicsUnlocked.includes(r.id) && !this.has(r.id));
+    return U.pickN(pool, n).map(r => r.id);
+  }
   bossRelicChoices() {
     const pool = C.RELICS.filter(r => r.boss && !this.has(r.id));
     return U.pickN(pool, 3).map(r => r.id);
@@ -346,6 +351,8 @@ class Run {
     if (this.has('dragonheart')) s.shield += 12;
     if (this.p.startShield) s.shield += this.p.startShield;
     if (this.has('lantern')) this.heal(5);
+    if (this.has('lampheart')) this.heal(3);
+    if (this.has('towerbell')) s.shield += Math.round(this.p.maxHp * 0.15);
     s.phase = 'battle'; s.curQ = null;
     this.save();
     return mon;
@@ -430,12 +437,18 @@ class Run {
       let base = Math.max(1, p.atk - (s.bf.curse || 0)) * p.atkMul * (s.bf.elixir ? 1.5 : 1) * (1 + (s.bf.rage || 0));
       if (p.fury) base *= 1 + p.fury * Math.floor((1 - p.hp / p.maxHp) * 10);
       if (p.arcane && q.type !== 'single') base *= 1 + p.arcane;
+      if (this.has('lastlamp') && p.hp < p.maxHp * 0.5) base *= 1.35;
       let mult = 1 + Math.min(s.combo, p.comboCap) * 0.1 * (this.has('bracer') ? 2 : 1);
       if (this.has('quill') && q.type !== 'single') mult *= 1.6;
       if (s.bf.calm) { mult *= 2; s.bf.calm = false; }
       if (s.bf.smite) { mult *= s.bf.smite; s.bf.smite = 0; ev.push({ t: 'skill', name: '強力一擊' }); }
+      if (this.has('match') && !s.bf.match) { s.bf.match = true; mult *= 1.5; }
+      if (this.has('bell') && s.bf.charged) mult *= 1.8;
+      if (this.has('lens') && (mon.elite || mon.boss)) mult *= 1.2;
+      s.bf.okN = (s.bf.okN || 0) + 1;
       const hunter = this.passive('hunter');
-      let crit = Math.random() < p.crit - (this.hasTrait('hex') ? 0.1 : 0) || !!(hunter && mon.hp < mon.maxHp * hunter.val);
+      const critRate = p.crit - (this.hasTrait('hex') ? 0.1 : 0) + (this.has('medal7') ? 0.05 * Math.min(s.combo, p.comboCap) : 0);
+      let crit = Math.random() < critRate || !!(hunter && mon.hp < mon.maxHp * hunter.val) || (this.has('pendulum') && s.bf.okN % 4 === 0);
       if (s.bf.numb) { s.bf.numb = false; if (crit) { crit = false; ev.push({ t: 'status', text: '⚡ 麻痺：暴擊失效' }); } }
       s.bf.exposed = false;
       if (crit) mult *= p.critDmg;
@@ -445,6 +458,7 @@ class Run {
       if (this.hasMech('fortify') && s.combo < 3) dmg = Math.max(1, Math.round(dmg * 0.7));
       if (s.bf.minion > 0) { dmg = Math.max(1, Math.round(dmg * 0.5)); s.bf.minion--; ev.push({ t: 'mstatus', text: '僕從擋下一半！' }); }
       s.combo++;
+      if (this.has('sliderule') && q.type !== 'single') s.combo++;
       let dealt = 0;
       if (this.hasTrait('dodge') && Math.random() < 0.25) ev.push({ t: 'mdodge' });
       else if (s.bf.guardUp) { s.bf.guardUp = false; ev.push({ t: 'mstatus', text: '格擋！傷害無效' }); }
@@ -462,6 +476,10 @@ class Run {
       if (this.has('mjolnir') && mon.hp > 0 && Math.random() < 0.3) {
         const d2 = this.hitMon(Math.max(1, Math.round(base * 0.6))); ev.push({ t: 'extra', dmg: d2, why: '雷神之鎚' });
       }
+      if (this.has('inkfeather') && mon.hp > 0 && Math.random() < 0.15) {
+        const d2 = this.hitMon(Math.max(1, Math.round(base * 0.8))); ev.push({ t: 'extra', dmg: d2, why: '墨染羽毛' });
+      }
+      if (this.has('redpen') && mon.hp > 0) { s.bf.atk0 = s.bf.atk0 || mon.atk; if (mon.atk > Math.ceil(s.bf.atk0 / 2)) mon.atk--; }
       if (this.petIs('dog') && mon.hp > 0 && Math.random() < (15 + this.petLv() * 3) / 100) {
         const bd = this.hitMon(Math.max(1, Math.round(base * 0.4))); ev.push({ t: 'pet', kind: 'bite', dmg: bd });
       }
@@ -472,7 +490,7 @@ class Run {
       if (ex && mon.hp > 0 && mon.hp <= mon.maxHp * (mon.boss ? ex.val * 0.6 : ex.val)) {
         mon.hp = 0; ev.push({ t: 'execute' });
       }
-      let h = p.regen + (this.has('fang') ? 2 : 0);
+      let h = p.regen + (this.has('fang') ? 2 : 0) + (this.has('lastlamp') ? 3 : 0);
       if (this.has('cloak')) h += Math.round(dealt * 0.15);
       if (this.petIs('fairy')) h += 1 + Math.floor(this.petLv() / 2);
       if (h) { const v = this.heal(h); if (v) ev.push({ t: 'heal', v }); }
@@ -486,6 +504,7 @@ class Run {
       s.combo = 0;
       s.bf.smite = 0; s.bf.double = false; s.bf.leech = 0;
       if (this.has('calm')) s.bf.calm = true;
+      if (this.has('oldnotes')) s.shield += 4;
       let dmg = Math.round(this.monAtk() * (0.85 + Math.random() * 0.3) * p.hurtMul);
       if (s.bf.charged && mon.hp > 0) { dmg *= 2; ev.push({ t: 'chargehit' }); }
       if (this.hasTrait('ambush') && s.bf.turn === 1) { dmg = Math.round(dmg * 1.6); ev.push({ t: 'mstatus', text: '先制攻擊！' }); }
@@ -504,9 +523,11 @@ class Run {
         const d = Math.max(1, Math.round(dmg * k));
         if (s.bf.freeze) { ev.push({ t: 'block', why: '時間凍結' }); continue; }
         if (this.has('hourglass') && !s.bf.hourglass) { s.bf.hourglass = true; ev.push({ t: 'block', why: '時之沙漏' }); continue; }
+        if (this.has('shell') && Math.random() < 0.2) { ev.push({ t: 'block', why: '墨潮貝殼' }); continue; }
         if (s.bf.dodgeNext || Math.random() < dodge) { ev.push({ t: 'dodge' }); continue; }
         if (this.petIs('cat') && Math.random() < (10 + this.petLv() * 3) / 100) { ev.push({ t: 'block', why: Store.petName('cat') + '撒嬌', pet: true }); continue; }
         let taken = d;
+        if (this.has('omamori') && p.hp < p.maxHp * 0.3) taken = Math.max(1, Math.round(taken * 0.7));
         if (s.shield > 0) { const a = Math.min(s.shield, taken); s.shield -= a; taken -= a; }
         p.hp = Math.max(0, p.hp - taken); totalTaken += taken;
         ev.push({ t: 'hurt', dmg: taken, raw: d });
@@ -531,10 +552,10 @@ class Run {
     }
     // 怪物特性（每題）
     if (mon.hp > 0) {
-      if (s.bf.poison > 0 && p.hp > 0) { const pd = 2 + Math.floor(this.depth() / 5); p.hp = Math.max(0, p.hp - pd); s.bf.poison--; ev.push({ t: 'poison', dmg: pd }); }
+      if (s.bf.poison > 0 && p.hp > 0) { const pd = Math.max(1, Math.round((2 + Math.floor(this.depth() / 5)) * (this.has('cork') ? 0.5 : 1))); p.hp = Math.max(0, p.hp - pd); s.bf.poison--; ev.push({ t: 'poison', dmg: pd }); }
       if (this.hasTrait('heal') && s.bf.turn % 3 === 0) { const v = Math.round(mon.maxHp * 0.1); mon.hp = Math.min(mon.maxHp, mon.hp + v); ev.push({ t: 'mheal', v, why: '再生' }); }
       if (this.hasTrait('charge')) { if (s.bf.charged) s.bf.charged = false; else if (s.bf.turn % 3 === 2) { s.bf.charged = true; ev.push({ t: 'charging' }); } }
-      if (s.bf.burnP > 0 && p.hp > 0) { const bd = 2 + Math.floor(this.depth() / 4); p.hp = Math.max(0, p.hp - bd); s.bf.burnP--; ev.push({ t: 'burn', dmg: bd }); }
+      if (s.bf.burnP > 0 && p.hp > 0) { const bd = Math.max(1, Math.round((2 + Math.floor(this.depth() / 4)) * (this.has('cork') ? 0.5 : 1))); p.hp = Math.max(0, p.hp - bd); s.bf.burnP--; ev.push({ t: 'burn', dmg: bd }); }
       if (this.hasTrait('bloat') && s.bf.turn % 2 === 0) { s.bf.bloat = (s.bf.bloat || 0) + 1; ev.push({ t: 'mstatus', text: '膨脹！攻擊 +10%' }); }
       if (this.hasTrait('guard') && s.bf.turn % 3 === 0) { s.bf.guardUp = true; ev.push({ t: 'mstatus', text: '🛡 舉起了盾' }); }
       if (this.hasTrait('split') && !s.bf.split && mon.hp < mon.maxHp * 0.5) { s.bf.split = true; const v = Math.round(mon.maxHp * 0.2); mon.hp = Math.min(mon.maxHp, mon.hp + v); ev.push({ t: 'mheal', v, why: '分裂' }); }
@@ -560,6 +581,7 @@ class Run {
         p.hp = Math.max(0, p.hp - d); ev.push({ t: 'judge', dmg: d });
       } else if (this.hasMech('countdown') && s.bf.turn % 6 === 5) ev.push({ t: 'mstatus', text: '⚖ 審判即將降臨！' });
     }
+    if (this.has('inkheart') && p.hp > 1) p.hp--;
     // 逃跑：第 5 題結束仍存活
     if (mon.hp > 0 && p.hp > 0 && this.hasTrait('flee') && s.bf.turn >= 5) { s.bf.fled = true; s.phase = this.remaining <= 1 ? 'out' : 'after'; ev.push({ t: 'flee' }); }
     if (!this.abyss) s.qi++;
@@ -595,7 +617,10 @@ class Run {
     if (ups) ev.push({ t: 'level', lv: this.p.lv, skills: this.newSkillNames(before) });
     let h = this.p.killHeal * this.p.maxHp;
     if (this.petIs('fairy')) h += this.petLv() * 2;
+    if (this.has('wick')) h += 6;
     if (h) this.heal(h);
+    if (this.has('blankpage')) this.tickCooldowns();
+    if (this.has('letter') && s.stats.kills % 3 === 0) { this.addItem('potion_s'); ev.push({ t: 'status', text: '未寄出的信：小回復藥 +1' }); }
     if (this.petIs('rat') && !mon.boss && Math.random() < (12 + this.petLv() * 3) / 100) {
       const it = U.pick(['potion_s', 'potion_s', 'shield', 'elim', 'bomb', 'elixir']); this.addItem(it); ev.push({ t: 'petfind', item: it });
     }

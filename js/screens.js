@@ -690,16 +690,16 @@ const Screens = (() => {
     C.RELICS.forEach(r => {
       if (r.secret) {
         const seen = (p.relicsSeen || []).includes(r.id);
-        rl.appendChild(U.h(`<div class="panel dark choice-card rar-4" style="width:auto;cursor:default"><div class="row">${SP.icon(seen ? r.icon : 'question', 44, '', seen ? '' : 'filter:brightness(0) opacity(.5)')}<div class="grow"><b>${seen ? r.name : '？？？'}</b> <span class="small-t" style="color:var(--pink,#ff9fbf)">隱藏遺物</span><div class="small-t">${seen ? r.desc : '只能在深淵的特殊事件中取得'}</div></div></div></div>`));
+        rl.appendChild(U.h(`<div class="panel dark choice-card rar-4" style="width:auto;cursor:default"><div class="row">${SP.icon(seen ? r.icon : 'question', 44, '', seen ? '' : 'filter:brightness(0) opacity(.5)')}<div class="grow"><b>${seen ? r.name : '？？？'}</b> <span class="small-t" style="color:var(--pink,#ff9fbf)">隱藏遺物</span><div class="small-t">${seen ? r.desc : '只能在深淵的特殊事件中取得'}</div>${seen && r.story ? `<div class="relic-story">${r.story}</div>` : ''}</div></div></div>`));
         return;
       }
       if (r.boss) {
-        rl.appendChild(U.h(`<div class="panel dark choice-card rar-4" style="width:auto;cursor:default"><div class="row">${SP.icon(r.icon, 44)}<div class="grow"><b>${r.name}</b> <span class="small-t" style="color:var(--orange)">首領遺物</span><div class="small-t">${r.desc}</div></div></div><div class="small-t dim mt">深淵遠征擊敗首領後三選一</div></div>`));
+        rl.appendChild(U.h(`<div class="panel dark choice-card rar-4" style="width:auto;cursor:default"><div class="row">${SP.icon(r.icon, 44)}<div class="grow"><b>${r.name}</b> <span class="small-t" style="color:var(--orange)">首領遺物</span><div class="small-t">${r.desc}</div>${true && r.story ? `<div class="relic-story">${r.story}</div>` : ''}</div></div><div class="small-t dim mt">深淵遠征擊敗首領後三選一</div></div>`));
         return;
       }
       const un = p.relicsUnlocked.includes(r.id);
       const card = U.h(`<div class="panel dark choice-card rar-${r.rar + 1}" style="width:auto;cursor:default"><div class="row">${SP.icon(r.icon, 44, '', un ? '' : 'filter:brightness(0) opacity(.6)')}
-        <div class="grow"><b>${r.name}</b> <span class="small-t dim">${['', '普通', '稀有', '傳說'][r.rar]}</span><div class="small-t">${r.desc}</div></div></div></div>`);
+        <div class="grow"><b>${r.name}</b> <span class="small-t dim">${['', '普通', '稀有', '傳說'][r.rar]}</span><div class="small-t">${r.desc}</div>${true && r.story ? `<div class="relic-story">${r.story}</div>` : ''}</div></div></div>`);
       if (!un) {
         const b = U.h(`<button class="px-btn purple small mt" ${p.gems < r.cost ? 'disabled' : ''}>解鎖（${r.cost} 魂晶）</button>`);
         b.onclick = () => { p.gems -= r.cost; p.relicsUnlocked.push(r.id); Store.saveProfile(); SFX.play('level'); U.toast(`解鎖遺物「${r.name}」`); relics(); };
@@ -951,6 +951,7 @@ const Screens = (() => {
       const tags = (m.traits || []).map(k => `<span class="tag" title="${C.TRAITS[k].desc}">${C.TRAITS[k].name}</span>`).concat((m.mechs || []).map(k => `<span class="tag ng" title="${C.MECHS[k].desc}">${C.MECHS[k].name}</span>`));
       return `<div class="panel dark"><div class="row">${SP.icon(hide ? 'question' : m.tile, 56, seen ? 'anim-bob' : '', (m.filter ? `filter:${m.filter}` : '') + (seen ? '' : ';filter:brightness(0) opacity(.5)'))}
           <div class="grow"><b class="gold-t">${seen ? m.name : '？？？'}</b> <span class="small-t dim">${seen ? `擊敗 ${seen} 次` : '尚未擊敗'}</span>
+          ${seen && m.lore ? `<div class="mon-lore">${m.lore}</div>` : ''}
           <div class="small-t">${seen ? m.desc : hide ? '傳說在普通戰鬥中偶爾會出現……' : '擊敗後解鎖說明'}</div>
           <div>${hide ? '<span class="tag">？</span>' : tags.length ? tags.join('') : '<span class="tag">普通</span>'}</div>
           ${seen ? `<div class="small-t dim">${(m.traits || []).map(k => `${C.TRAITS[k].name}：${C.TRAITS[k].desc}`).concat((m.mechs || []).map(k => `${C.MECHS[k].name}：${C.MECHS[k].desc}`)).join('；')}</div>` : ''}</div></div></div>`;
@@ -964,10 +965,10 @@ const Screens = (() => {
       <h3 class="mt">各主題首領</h3><p class="dim small-t">每個科目屬於一個區域主題；每一章有兩位候選首領，進入深淵時隨機登場。</p><div class="grid g2">${Object.entries(C.BOSS_DEFS).map(([sj, arr]) => arr.slice().sort((a, b) => a.act - b.act).map(b => {
         const k = B['boss:' + b.name];
         return `<div class="panel dark"><div class="row">${SP.icon(b.tile, 56, k ? 'anim-bob' : '', `filter:${k ? b.filter : 'brightness(0) opacity(.5)'}`)}<div class="grow"><b class="red-t">${b.name}</b> <span class="small-t dim">${C.THEMES[sj].region}・第 ${b.act} 章${k ? `・擊敗 ${k} 次` : ''}</span>
-          <div class="small-t"><span class="tag ng">${C.MECHS[b.mech].name}</span>${C.MECHS[b.mech].desc}</div>${k ? `<div class="small-t gold-t">「${U.esc(b.line)}」</div>` : ''}</div></div></div>`;
+          <div class="small-t"><span class="tag ng">${C.MECHS[b.mech].name}</span>${C.MECHS[b.mech].desc}</div>${k ? `<div class="small-t gold-t">「${U.esc(b.line)}」</div>${b.lore ? `<div class="mon-lore">${b.lore}</div>` : ''}` : ''}</div></div></div>`;
       }).join('')).join('')}</div>
       <h3 class="mt">隱藏首領</h3><div class="panel dark"><div class="row">${SP.icon(sk ? sb.tile : 'question', 56, sk ? 'anim-bob' : '', sk ? `filter:${sb.filter}` : 'filter:brightness(0) opacity(.5)')}<div class="grow"><b class="red-t">${sk ? sb.name : '？？？'}</b>
-        <div class="small-t">${sk ? `${sb.mechs.map(k => `<span class="tag ng">${C.MECHS[k].name}</span>`).join('')}「${U.esc(sb.line)}」・擊敗 ${sk} 次` : '據說只有在深淵中表現極為出色的人，才會看見那道裂縫……'}</div></div></div></div></div>`;
+        <div class="small-t">${sk ? `${sb.mechs.map(k => `<span class="tag ng">${C.MECHS[k].name}</span>`).join('')}「${U.esc(sb.line)}」・擊敗 ${sk} 次${sb.lore ? `<div class="mon-lore">${sb.lore}</div>` : ''}` : '據說只有在深淵中表現極為出色的人，才會看見那道裂縫……'}</div></div></div></div></div>`;
   }
 
   /* ---------- 背景音樂設定：依場景／全部同一首／歌單循環 ---------- */

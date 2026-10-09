@@ -14,14 +14,22 @@ const Store = (() => {
     abyss: { maxDiff: 0, clears: 0, runs: 0, bestAct: 0, bossKills: 0, best: {} },
     pets: {}, activePet: null, starterPicked: false, petNames: {}, petSkin: {}, petAcc: {}, ownedSkins: [], ownedAcc: [], skinVouchers: 0, giftsClaimed: [], daily: {}, streak: { last: '', n: 0 }, migratedPets: true,
     stats: { runs: 0, wins: 0, answered: 0, correct: 0, bestFloor: 0, kills: 0, bosses: 0, gemsEarned: 0, deaths: 0 },
-    stages: {}, created: Date.now()
+    stages: {}, relicsVer: 2, created: Date.now()
   });
-  let profile = Object.assign(defProfile(), load(K.profile, {}));
+  const rawProfile = load(K.profile, {});
+  let profile = Object.assign(defProfile(), rawProfile);
   profile.abyss = Object.assign(defProfile().abyss, profile.abyss || {});
   profile.classes = profile.classes || { knight: { lv: 1, xp: 0 } }; profile.activeClass = profile.activeClass || 'knight'; profile.bestiary = profile.bestiary || {};
   ['petNames', 'petSkin', 'petAcc', 'daily'].forEach(k => { profile[k] = profile[k] || {}; });
   ['ownedSkins', 'ownedAcc', 'giftsClaimed'].forEach(k => { profile[k] = profile[k] || []; });
   profile.streak = profile.streak || { last: '', n: 0 };
+  // 新版加入的免費遺物（since 2）：舊存檔（含匯入、雲端下載的舊存檔）補進已解鎖清單
+  function migrateRelics(raw, prof) {
+    if (!raw.relicsUnlocked || (raw.relicsVer || 1) >= 2) return;
+    C.RELICS.filter(r => r.since === 2 && !r.locked && !r.boss && !r.secret && !prof.relicsUnlocked.includes(r.id)).forEach(r => prof.relicsUnlocked.push(r.id));
+    prof.relicsVer = 2;
+  }
+  migrateRelics(rawProfile, profile);
   if (!profile.migratedPets) { // 舊版的 cat 是招財貓
     if (profile.pets.cat) { profile.pets.luckycat = profile.pets.cat; delete profile.pets.cat; if (profile.activePet === 'cat') profile.activePet = 'luckycat'; }
     profile.migratedPets = true;
@@ -156,7 +164,7 @@ const Store = (() => {
   function importAll(txt) {
     const d = JSON.parse(txt);
     if (!d.profile) throw new Error('格式不符');
-    profile = Object.assign(defProfile(), d.profile); qs = d.qs || {}; wrong = d.wrong || {}; settings = Object.assign(settings, d.settings || {});
+    profile = Object.assign(defProfile(), d.profile); migrateRelics(d.profile, profile); qs = d.qs || {}; wrong = d.wrong || {}; settings = Object.assign(settings, d.settings || {});
     save(K.profile, profile); saveQs(); saveWrong(); save(K.set, settings); saveRun(d.run || null); if (d.pomo) save(SKEY('pomo'), d.pomo); if (d.learn) save(SKEY('learn'), d.learn);
     if (d.peglin && typeof PEGLIN !== 'undefined') PEGLIN.importData(d.peglin);
   }

@@ -1082,3 +1082,44 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 #cloudMini.cloud-err { color: var(--red); }
 .px-input { background: var(--bg2); color: var(--text); border: 3px solid var(--line); box-shadow: inset 0 0 0 2px var(--hi); padding: 6px 10px; outline: none; max-width: 100%; }
 .px-input:focus { box-shadow: inset 0 0 0 2px var(--gold); }
+
+/* 營地：人物與寵物在信箱、花盆前面 */
+.camp-hero, .camp-pet { z-index: 3; }
+
+/* 遺物故事、怪物圖鑑介紹（js/world.js） */
+.relic-story { font-size: 12px; color: var(--dim); font-style: italic; line-height: 1.5; margin: 6px 0 0; border-left: 3px solid var(--hi); padding-left: 8px; }
+.choice-card .relic-story { text-align: left; }
+.mon-lore { font-size: 12px; color: #c9b8a0; font-style: italic; line-height: 1.5; margin: 3px 0; }
+
+/* 多功能選單（js/toolmenu.js） */
+#toolBtn { font-size: 14px; padding: 2px 9px; min-width: 34px; }
+#toolBtn.on { background: var(--gold); color: #1b1424; text-shadow: none; }
+#toolMenu { position: fixed; right: 12px; top: 58px; z-index: 61; padding: 6px; min-width: 200px; animation: fadein .12s; }
+#toolMenu[hidden] { display: none; }
+.tm-row { display: flex; align-items: center; gap: 10px; padding: 4px 6px; cursor: pointer; }
+.tm-row:hover { background: var(--panel2); }
+.tm-row .px-btn { min-width: 40px; }
+.tm-label { white-space: nowrap; }
+@media (max-width: 640px) { #toolMenu { top: 52px; right: 8px; } }
+
+/* 計算紙（js/pad.js） */
+#padMini { font-size: 13px; padding: 2px 8px; min-width: 34px; }
+#padMini.on, #calcMini.on { background: var(--gold); }
+.pad { position: fixed; top: 64px; right: 12px; z-index: 59; width: min(560px, calc(100vw - 16px)); height: min(480px, calc(100vh - 80px)); display: flex; flex-direction: column; background: var(--panel); border: 4px solid var(--line); box-shadow: inset 0 0 0 3px var(--hi), 0 8px 18px rgba(0,0,0,.55); padding: 6px 8px 8px; outline: none; }
+.pad[hidden] { display: none; }
+.pad-head { display: flex; align-items: center; justify-content: space-between; color: var(--gold); text-shadow: 1px 1px 0 #000; cursor: move; touch-action: none; user-select: none; padding: 2px 0 6px; }
+.pad-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-bottom: 6px; }
+.pad-tools button { min-width: 32px; height: 30px; background: var(--panel2); color: var(--text); border: 2px solid var(--line); cursor: pointer; font-size: 14px; display: inline-flex; align-items: center; justify-content: center; padding: 0 6px; }
+.pad-tools button.on { box-shadow: inset 0 0 0 2px var(--gold); background: #4a3d63; }
+.pad-tools button i { display: block; background: var(--text); border-radius: 50%; }
+.pad-tools .pad-c { background: var(--c); min-width: 26px; }
+.pad-tools .pad-c.on { box-shadow: inset 0 0 0 2px #fff, 0 0 0 2px var(--gold); }
+.pad-tools .pad-palm:not(.on) { opacity: .5; }
+.pad-sep { width: 2px; height: 22px; background: var(--hi); margin: 0 2px; }
+.pad-paper { position: relative; flex: 1; min-height: 120px; background: var(--paper); border: 3px solid var(--line); overflow: hidden;
+  background-image: linear-gradient(#d9e6f3 1px, transparent 1px), linear-gradient(90deg, #d9e6f3 1px, transparent 1px); background-size: 24px 24px; }
+.pad-paper canvas { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; }
+.pad-txt { position: absolute; z-index: 2; background: rgba(255,255,255,.85); border: 2px dashed var(--hi); padding: 1px 3px; resize: none; overflow: hidden; outline: none; font-family: "Cubic 11", "Microsoft JhengHei", sans-serif; line-height: 1.25; }
+.pad-foot { margin-top: 4px; }
+.pad-grip { position: absolute; right: 2px; bottom: 2px; width: 14px; height: 14px; cursor: nwse-resize; touch-action: none; background: linear-gradient(135deg, transparent 50%, var(--hi) 50%); }
+@media (max-width: 640px) { .pad { top: 52px; right: 8px; left: 8px; width: auto; height: calc(100vh - 70px); } .pad-tools button { height: 34px; } }

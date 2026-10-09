@@ -341,7 +341,7 @@ const C = (() => {
     {
       id: 'chest', title: '上鎖的寶箱', icon: 89, text: '角落擺著一只沉甸甸的寶箱，鎖孔有點鬆動。',
       choices: [
-        { label: '撬開它', run: R => { if (U.chance(0.25)) { R.s.pendingMimic = true; return '寶箱張開血盆大口——是寶箱怪！'; } const g = R.gainGold(U.rnd(25, 45), true); return `獲得 ${g} 金幣！`; } },
+        { label: '撬開它', run: R => { if (U.chance(0.25)) { R.s.pendingMimic = true; return '寶箱張開血盆大口——是寶箱怪！'; } const r = R.randomRelic(); if (r) { R.addRelic(r.id); return `寶箱裡躺著一件遺物——獲得「${r.name}」！`; } R.addItem('potion_l'); return '寶箱裡只剩一瓶大回復藥。'; } },
         { label: '離開', run: () => '你決定不冒險。' }
       ]
     },

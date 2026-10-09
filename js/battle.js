@@ -328,6 +328,7 @@ const RunUI = (() => {
     let el = 0;
     if (q.type === 'single' && R.has('owlglass')) el++;
     if (q.type === 'single' && R.has('tome')) el++;
+    if (q.type === 'single' && R.has('answersheet') && Math.random() < 0.35) el++;
     if (R.petIs('owl') && Math.random() < (15 + R.petLv() * 4) / 100) { el++; setTimeout(() => { animEnt('pet', 'anim-cast'); U.toast('咕咕幫你刪去了一個錯誤選項！'); }, 300); }
     if (el) ctl.eliminate(el);
     renderSkills();
@@ -509,7 +510,7 @@ const RunUI = (() => {
     event: { name: '神秘事件', icon: 'question', desc: '未知的遭遇，可能是機會也可能是陷阱' },
     camp: { name: '篝火', icon: 'campfire', desc: '休息回血、鍛鍊或複習錯題' },
     shop: { name: '行商', icon: 86, desc: '用金幣購買補給與戰鬥加成' },
-    treasure: { name: '寶箱', icon: 89, desc: '可能藏著金幣與道具' },
+    treasure: { name: '寶箱', icon: 89, desc: '藏著遺物，三選一' },
     onward: { name: '繼續前進', icon: 45, desc: '不停留，拾取少量金幣' },
     elite: { name: '精英巢穴', icon: 64, desc: '下一戰遇到精英怪，擊敗必掉遺物' }
   };
@@ -545,7 +546,7 @@ const RunUI = (() => {
       const d = c.kind === 'talent' ? C.talent(c.id) : C.relic(c.id);
       const card = U.h(`<div class="panel choice-card rar-${c.kind === 'relic' ? d.rar + 1 : 1}">
         <div class="row">${SP.icon(d.icon, 48)}<div><div class="kind">${c.kind === 'talent' ? '天賦（可疊加）' : '遺物'}</div><b>${d.name}</b></div></div>
-        <p>${d.desc}</p></div>`);
+        <p>${d.desc}</p>${c.kind === 'relic' && d.story ? `<p class="relic-story">${d.story}</p>` : ''}</div>`);
       card.onclick = () => {
         SFX.play('level');
         c.kind === 'talent' ? R.addTalent(c.id) : R.addRelic(c.id);
@@ -567,7 +568,7 @@ const RunUI = (() => {
     const bc = U.$('#bc', main);
     s.bossChoice.forEach(id => {
       const d = C.relic(id);
-      const card = U.h(`<div class="panel choice-card rar-4"><div class="row">${SP.icon(d.icon, 52, 'anim-float')}<div><div class="kind">首領遺物</div><b>${d.name}</b></div></div><p>${d.desc}</p></div>`);
+      const card = U.h(`<div class="panel choice-card rar-4"><div class="row">${SP.icon(d.icon, 52, 'anim-float')}<div><div class="kind">首領遺物</div><b>${d.name}</b></div></div><p>${d.desc}</p>${d.story ? `<p class="relic-story">${d.story}</p>` : ''}</div>`);
       card.onclick = () => { SFX.play('level'); R.addRelic(id); U.toast(`獲得首領遺物「${d.name}」`); done(); };
       bc.appendChild(card);
     });
@@ -643,7 +644,7 @@ const RunUI = (() => {
 
   function camp() {
     const s = R.s, p = R.p;
-    const heal = Math.round(p.maxHp * 0.3 * (R.has('ember') ? 1.5 : 1) * (R.D(4) ? 0.5 : 1));
+    const heal = Math.round(p.maxHp * 0.3 * (R.has('ember') ? 1.5 : 1) * (R.has('blanket') ? 1.3 : 1) * (R.D(4) ? 0.5 : 1));
     const main = frame(`<div class="panel center"><h2>篝火</h2>${SP.pix('campfire', 110)}<p class="dim">溫暖的火光讓人安心。你只能選擇一件事：</p><div class="col" id="cc" style="align-items:center"></div><div id="cm"></div></div>`);
     const box = U.$('#cc', main), msg = U.$('#cm', main);
     if (s.campDone) { msg.appendChild(nextFloorBtn()); return; }
@@ -704,21 +705,31 @@ const RunUI = (() => {
     main.firstElementChild.appendChild(nextFloorBtn(R.abyss ? '離開商店，回到地圖 ▶' : '離開商店，前往下一層 ▶'));
   }
 
+  /* 寶箱：打開後從 3 件遺物中選 1 件（鏽蝕的鑰匙：4 選 1）；沒有可拿的遺物時改給道具 */
   function treasure() {
     const s = R.s;
-    const main = frame(`<div class="panel center"><h2>寶箱</h2><div id="tc">${SP.tile(89, 110, 'anim-bob')}</div><div id="tm"></div></div>`);
+    const main = frame(`<div class="panel center"><h2>寶箱</h2><div id="tc">${SP.tile(s.treasure || s.treasureOpts ? 90 : 89, 110, 'anim-bob')}</div><div id="tm"></div></div>`);
     const tm = U.$('#tm', main);
+    const finish = msg => { s.treasure = msg; s.treasureOpts = null; R.save(); refreshSide(false); treasure(); };
     if (s.treasure) { tm.innerHTML = `<p class="gold-t">${s.treasure}</p>`; tm.appendChild(nextFloorBtn()); return; }
+    if (s.treasureOpts) {
+      tm.innerHTML = `<p class="dim">寶箱裡躺著幾件遺物，只能帶走一件：</p><div class="doors" id="tco"></div><button class="px-btn small mt" id="tskip">都不拿</button>`;
+      s.treasureOpts.forEach(id => {
+        const d = C.relic(id);
+        const card = U.h(`<div class="panel choice-card rar-${d.rar + 1}"><div class="row">${SP.icon(d.icon, 48, 'anim-float')}<div><div class="kind">遺物・${['', '普通', '稀有', '傳說'][d.rar] || ''}</div><b>${d.name}</b></div></div><p>${d.desc}</p>${d.story ? `<p class="relic-story">${d.story}</p>` : ''}</div>`);
+        card.onclick = () => { SFX.play('level'); R.addRelic(id); finish(`獲得遺物「${d.name}」！`); };
+        U.$('#tco', tm).appendChild(card);
+      });
+      U.$('#tskip', tm).onclick = () => finish('你闔上了寶箱。');
+      return;
+    }
     const b = U.h('<button class="px-btn gold big">打開寶箱</button>');
     b.onclick = () => {
-      SFX.play('open'); SFX.play('coin');
-      U.$('#tc').innerHTML = SP.tile(90, 110, 'anim-pop');
-      const g = R.gainGold(U.rnd(20, 40) + (R.abyss ? s.act * 10 : 0), true);
-      let msg = `獲得 ${g} 金幣`;
-      if (U.chance(0.6)) { const id = U.pick(['potion_s', 'potion_s', 'elixir', 'shield', 'elim', 'bomb', 'skip', 'potion_l']); R.addItem(id); msg += `、${C.ITEMS[id].name}`; }
-      if (U.chance(R.abyss ? 0.3 : 0.12)) { const r = R.randomRelic(); if (r) { R.addRelic(r.id); msg += `，以及遺物「${r.name}」！`; } }
-      s.treasure = msg; R.save(); refreshSide(false);
-      tm.innerHTML = `<p class="gold-t">${msg}</p>`; tm.appendChild(nextFloorBtn());
+      SFX.play('open');
+      const opts = R.relicChoices(R.has('rustkey') ? 4 : 3);
+      if (opts.length) { s.treasureOpts = opts; R.save(); return treasure(); }
+      const id = U.pick(['potion_l', 'elixir', 'shield', 'elim', 'bomb', 'skip']); R.addItem(id);
+      finish(`寶箱裡的遺物都被你拿光了……只找到「${C.ITEMS[id].name}」。`);
     };
     tm.appendChild(b);
   }
