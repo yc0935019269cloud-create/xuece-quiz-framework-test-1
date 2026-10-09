@@ -9,10 +9,21 @@
     ['btnSound', '音樂與音量']
   ];
   let btn, menu;
+  const PANELS = { calcMini: 'calcPanel', padMini: 'padPanel', btnSound: 'volPop' };
+  /* 把浮動視窗放在 ☰ 正下方、右緣對齊按鈕（超出畫面就往內收）；使用者拖曳過的視窗保持原位 */
+  function anchor(el) {
+    if (!el || !btn) return;
+    if (el.dataset.anchor && el.style.left && el.style.left !== el.dataset.anchor) return;
+    const r = btn.getBoundingClientRect(), w = el.offsetWidth;
+    const left = Math.round(Math.max(8, Math.min(r.right - w, innerWidth - w - 8)));
+    el.style.left = left + 'px'; el.style.right = 'auto'; el.style.top = Math.round(r.bottom + 6) + 'px';
+    el.dataset.anchor = el.style.left;
+  }
   function close() { if (menu) menu.hidden = true; if (btn) btn.classList.remove('on'); }
   function toggle() {
     const show = menu.hidden;
     menu.hidden = !show; btn.classList.toggle('on', show);
+    if (show) anchor(menu);
     if (show) setTimeout(() => document.addEventListener('pointerdown', function out(e) {
       if (!menu.contains(e.target) && e.target !== btn) close();
       if (menu.hidden || !menu.contains(e.target)) document.removeEventListener('pointerdown', out);
@@ -34,6 +45,8 @@
       row.addEventListener('click', e => {
         if (e.target !== b) b.click();
         if (id !== 'btnSound') close(); else menu.hidden = true;   // 音量面板自己會開，選單收起
+        const pn = document.getElementById(PANELS[id]);
+        if (pn && !pn.hidden && innerWidth > 640) anchor(pn);   // 手機版維持原本的全寬排版
       });
       menu.appendChild(row);
     });
@@ -42,6 +55,7 @@
     document.body.appendChild(menu);
     btn.onclick = toggle;
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !menu.hidden) close(); });
+    addEventListener('resize', () => { if (!menu.hidden) anchor(menu); });
   }
   document.addEventListener('DOMContentLoaded', () => setTimeout(mount, 0));
 })();
