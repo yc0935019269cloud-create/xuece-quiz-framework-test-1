@@ -25,8 +25,10 @@ const FX = (() => {
   }
 
   /* ---------------- 共用工具 ---------------- */
-  const stage = () => document.getElementById('stage');
-  function ent(who) { return document.getElementById(who === 'hero' ? 'eHero' : who === 'mon' ? 'eMon' : 'ePet'); }
+  // 正式戰鬥用 #stage；學習模式的戰鬥條 #lbStage 也共用同一套招式特效
+  const stage = () => document.getElementById('stage') || document.getElementById('lbStage');
+  const ENT = { hero: ['eHero', 'lbHeroBody'], mon: ['eMon', 'lbMonBody'], pet: ['ePet', 'lbPet'] };
+  function ent(who) { const [a, b] = ENT[who] || ENT.pet; return document.getElementById(a) || document.getElementById(b); }
   function pos(who) {
     const st = stage(), e = ent(who); if (!st || !e) return { x: 0, y: 0, w: 0, h: 0 };
     const a = st.getBoundingClientRect(), b = e.getBoundingClientRect();

@@ -90,7 +90,9 @@ const SFX = (() => {
     for (let i = 0; i < times; i++) ch.f(v, i * (ch.len + 0.4));
   }
   function toggle() { VOL.set('muted', !VOL.get('muted')); return !VOL.get('muted'); }
-  return { play, chime, CHIMES, toggle, get on() { return !VOL.get('muted'); } };
+  /* 連擊音效：連擊越高音越高（半音一階，最多升一個八度） */
+  function combo(n) { const f = 523 * Math.pow(2, Math.min(n - 2, 12) / 12); tone(f, .07, 'square', .05); tone(f * 1.5, .1, 'square', .045, 0, .06); }
+  return { play, combo, chime, CHIMES, toggle, get on() { return !VOL.get('muted'); } };
 })();
 
 /* 音量混音：iOS Safari 的 audio.volume 是唯讀（永遠 1），滑桿除了 0 以外都一樣大聲。
