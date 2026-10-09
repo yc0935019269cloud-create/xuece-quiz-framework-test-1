@@ -994,3 +994,54 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .pr-bar-row { gap: 10px; flex-wrap: wrap; align-items: center; }
 .pr-opts { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
 .pr-opts label { display: inline-flex; gap: 4px; align-items: center; cursor: pointer; }
+
+/* ===== 學習模式戰鬥回饋（js/learn.js）：連擊、必殺技、怪物意圖、寶箱、橫幅、評等 ===== */
+.lb-combo { position: absolute; left: 50%; top: 8px; transform: translateX(-50%); z-index: 6; text-align: center; line-height: 1; pointer-events: none; text-shadow: 2px 2px 0 #000; opacity: 0; transition: opacity .2s; }
+.lb-combo.on { opacity: 1; }
+.lb-combo b { font-size: 34px; color: #fff; display: block; }
+.lb-combo small { font-size: 13px; color: #fff; letter-spacing: 2px; }
+.lb-combo em { display: block; font-style: normal; font-size: 12px; color: var(--dim); margin-top: 2px; }
+.lb-combo.t1 b { color: var(--gold); }
+.lb-combo.t2 b { color: var(--orange); font-size: 40px; text-shadow: 2px 2px 0 #000, 0 0 12px rgba(255,154,61,.8); }
+.lb-combo.t3 b { color: #ff7ad9; font-size: 46px; text-shadow: 2px 2px 0 #000, 0 0 16px rgba(255,122,217,.9); animation: comboGlow .6s steps(3) infinite alternate; }
+.lb-combo.pop b { animation: comboPop .28s steps(4); }
+@keyframes comboPop { 0% { transform: scale(1.7); } 60% { transform: scale(.9); } 100% { transform: scale(1); } }
+@keyframes comboGlow { to { filter: brightness(1.35) hue-rotate(25deg); } }
+.lb-ult { position: absolute; left: 8px; top: 34px; z-index: 6; font-size: 13px; padding: 3px 10px; border: 3px solid var(--line); background: #3b2f52; color: var(--dim); cursor: not-allowed; opacity: .55; text-shadow: 1px 1px 0 #000; }
+.lb-ult.ready { opacity: 1; cursor: pointer; color: #1b1424; text-shadow: none; background: var(--gold); box-shadow: 0 0 0 2px #fff6c8, 0 0 16px 4px rgba(255,207,74,.75); animation: ultPulse .8s steps(4) infinite alternate; }
+@keyframes ultPulse { to { box-shadow: 0 0 0 2px #fff6c8, 0 0 26px 8px rgba(255,207,74,.95); transform: translateY(-1px); } }
+.lb-intent { min-height: 18px; }
+.lb-int { font-size: 12px; padding: 0 6px; background: rgba(10,6,16,.7); border: 2px solid var(--hi); color: var(--text); white-space: nowrap; line-height: 1.4; display: inline-block; }
+.lb-int.red { border-color: #ec5454; color: #ffb4b4; animation: ultPulse .5s steps(3) infinite alternate; box-shadow: none; }
+.lb-int.gold { border-color: var(--gold); color: var(--gold); }
+.lb-mon.charged .lb-mbody { filter: drop-shadow(0 0 6px #ff5a5a) drop-shadow(0 0 12px rgba(255,90,90,.6)); }
+.lb-mon.tr-shell .lb-mbody::after { content: '🛡'; position: absolute; right: -6px; top: 0; font-size: 18px; line-height: 1; }
+.lb-mon.tr-treasure .lb-mname { color: var(--gold); }
+.lb-mon.flash-w .lb-mbody { animation: flashW .18s steps(2); }
+@keyframes flashW { 50% { filter: brightness(3) saturate(0); } }
+.anim-flee { animation: flee .6s steps(5) forwards; }
+@keyframes flee { to { transform: translateX(160px); opacity: 0; } }
+.lb-chest { position: absolute; right: 14%; bottom: 18px; z-index: 4; background: none; border: 0; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 4px; filter: drop-shadow(0 0 10px rgba(255,207,74,.7)); }
+.lb-chest:hover { filter: drop-shadow(0 0 16px rgba(255,207,74,1)) brightness(1.1); }
+.lb-gem { position: absolute; z-index: 7; width: 12px; height: 12px; background: var(--purple); transform: rotate(45deg); opacity: 0; box-shadow: inset -3px -3px 0 #7a4fd0, inset 2px 2px 0 #e3ccff, 0 0 8px #b98bff; animation: gemFly 1s ease-in forwards; pointer-events: none; }
+@keyframes gemFly { 0% { transform: translate(0,0) rotate(45deg) scale(.4); opacity: 0; } 20% { transform: translate(var(--dx), -40px) rotate(45deg) scale(1.2); opacity: 1; } 100% { transform: translate(var(--tx), var(--ty)) rotate(45deg) scale(.6); opacity: .2; } }
+.lb-banner { position: absolute; left: 50%; top: 42%; z-index: 9; transform: translate(-50%, -50%); font-size: 24px; white-space: nowrap; padding: 4px 16px; background: rgba(10,6,16,.78); border: 3px solid var(--hi); color: #fff; text-shadow: 2px 2px 0 #000; pointer-events: none; animation: bannerA 1.3s steps(8) forwards; }
+.lb-banner.gold { color: var(--gold); border-color: var(--gold); }
+.lb-banner.red { color: #ffb4b4; border-color: #ec5454; }
+.lb-banner.dim { color: var(--dim); font-size: 18px; top: 30%; }
+.lb-banner.ult { color: #1b1424; background: var(--gold); border-color: #fff6c8; font-size: 28px; text-shadow: none; top: 30%; }
+@keyframes bannerA { 0% { transform: translate(-50%, -50%) scale(1.6); opacity: 0; } 15% { transform: translate(-50%, -50%) scale(1); opacity: 1; } 80% { opacity: 1; } 100% { transform: translate(-50%, -80%); opacity: 0; } }
+.lb.hurtflash::before { content: ''; position: absolute; inset: 0; z-index: 8; pointer-events: none; background: rgba(236,84,84,.35); animation: flashA .3s steps(2) forwards; }
+.lb.hitstop .lb-mbody, .lb.hitstop .lb-hbody { animation-play-state: paused; }
+.lb.rage .lb-scene { filter: saturate(1.4) hue-rotate(-12deg) brightness(.9); }
+.lb.rage { border-color: #7a1f26; }
+.lp-rank { display: inline-flex; flex-direction: column; align-items: center; margin: 4px auto 8px; padding: 4px 18px; border: 4px solid var(--line); background: var(--bg2); animation: rankStamp .5s steps(5) both; }
+.lp-rank b { font-size: 56px; line-height: 1; text-shadow: 3px 3px 0 #000; }
+.lp-rank small { font-size: 12px; color: var(--dim); }
+.lp-rank.r-S b, .lrank.r-S { color: #ff7ad9; } .lp-rank.r-S { box-shadow: 0 0 0 3px #ff7ad9, 0 0 24px 6px rgba(255,122,217,.6); }
+.lp-rank.r-A b, .lrank.r-A { color: var(--gold); } .lp-rank.r-A { box-shadow: 0 0 0 3px var(--gold); }
+.lp-rank.r-B b, .lrank.r-B { color: var(--blue); }
+.lp-rank.r-C b, .lrank.r-C { color: var(--dim); }
+@keyframes rankStamp { 0% { transform: scale(3) rotate(-12deg); opacity: 0; } 60% { transform: scale(.9) rotate(3deg); opacity: 1; } 100% { transform: none; } }
+.lrank { font-style: normal; font-weight: bold; margin-right: 6px; text-shadow: 1px 1px 0 #000; }
+@media (max-width: 640px) { .lb-combo b { font-size: 26px; } .lb-combo.t2 b { font-size: 30px; } .lb-combo.t3 b { font-size: 34px; } .lb-banner { font-size: 18px; } .lb-ult { top: 30px; font-size: 12px; } .lb-chest { right: 6%; zoom: .8; } }
