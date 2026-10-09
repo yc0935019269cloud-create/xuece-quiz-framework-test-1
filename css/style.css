@@ -995,6 +995,34 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .pr-opts { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
 .pr-opts label { display: inline-flex; gap: 4px; align-items: center; cursor: pointer; }
 
+/* ===== 科學計算機（js/calc.js）：頂部 🧮 開關的浮動視窗 ===== */
+#calcMini { font-size: 13px; padding: 2px 8px; min-width: 34px; }
+#calcMini.on { background: #2c5fa8; }
+.calc { position: fixed; top: 64px; right: 12px; z-index: 60; width: min(320px, calc(100vw - 16px)); background: var(--panel); border: 4px solid var(--line); box-shadow: inset 0 0 0 3px var(--hi), 0 8px 18px rgba(0,0,0,.55); padding: 6px 8px 8px; outline: none; }
+.calc[hidden] { display: none; }
+.calc-head { display: flex; align-items: center; justify-content: space-between; color: var(--gold); text-shadow: 1px 1px 0 #000; cursor: move; touch-action: none; user-select: none; padding: 2px 0 6px; }
+.calc-x { background: none; border: 0; color: var(--dim); cursor: pointer; font-size: 16px; padding: 0 4px; }
+.calc-x:hover { color: var(--text); }
+.calc-hist { max-height: 76px; overflow-y: auto; font-size: 12px; background: var(--bg2); border: 2px solid var(--line); padding: 2px 6px; margin-bottom: 4px; }
+.calc-hist > div { display: flex; justify-content: space-between; gap: 8px; cursor: pointer; padding: 1px 0; }
+.calc-hist > div:hover { color: var(--gold); }
+.calc-hist span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--dim); }
+.calc-hist i { font-style: normal; font-size: 10px; margin-left: 4px; color: var(--hi); }
+.calc-hist b { font-weight: normal; white-space: nowrap; }
+.calc-in { width: 100%; box-sizing: border-box; background: var(--paper); color: #1b1424; border: 3px solid var(--line); padding: 6px 8px; font-size: 18px; text-align: right; }
+.calc-out { min-height: 24px; text-align: right; font-size: 18px; color: var(--gold); padding: 2px 4px; word-break: break-all; }
+.calc-out.err { color: var(--red); font-size: 14px; }
+.calc-keys { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
+.calc-keys button { background: var(--panel2); color: var(--text); border: 2px solid var(--line); box-shadow: inset -2px -2px 0 rgba(0,0,0,.35), inset 2px 2px 0 rgba(255,255,255,.15); padding: 6px 0; cursor: pointer; font-size: 14px; text-shadow: 1px 1px 0 #000; }
+.calc-keys button:hover { filter: brightness(1.18); }
+.calc-keys button:active { transform: translateY(1px); box-shadow: inset 2px 2px 0 rgba(0,0,0,.35); }
+.calc-keys button sup { font-size: 9px; }
+.calc-keys .num { background: #4a3d63; font-size: 16px; }
+.calc-keys .op { background: #3a4f7a; font-size: 16px; }
+.calc-keys .del { background: #8a3038; }
+.calc-keys .eq { background: #b8860b; font-size: 16px; }
+.calc-keys [data-ck="2nd"].on { background: #c9433c; }
+@media (max-width: 640px) { .calc { top: 52px; right: 8px; } .calc-keys button { padding: 8px 0; } }
 /* ===== 學習模式戰鬥回饋（js/learn.js）：連擊、必殺技、怪物意圖、寶箱、橫幅、評等 ===== */
 .lb-combo { position: absolute; left: 50%; top: 8px; transform: translateX(-50%); z-index: 6; text-align: center; line-height: 1; pointer-events: none; text-shadow: 2px 2px 0 #000; opacity: 0; transition: opacity .2s; }
 .lb-combo.on { opacity: 1; }
