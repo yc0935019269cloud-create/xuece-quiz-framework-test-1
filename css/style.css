@@ -1073,3 +1073,12 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 @keyframes rankStamp { 0% { transform: scale(3) rotate(-12deg); opacity: 0; } 60% { transform: scale(.9) rotate(3deg); opacity: 1; } 100% { transform: none; } }
 .lrank { font-style: normal; font-weight: bold; margin-right: 6px; text-shadow: 1px 1px 0 #000; }
 @media (max-width: 640px) { .lb-combo b { font-size: 26px; } .lb-combo.t2 b { font-size: 30px; } .lb-combo.t3 b { font-size: 34px; } .lb-banner { font-size: 18px; } .lb-ult { top: 30px; font-size: 12px; } .lb-chest { right: 6%; zoom: .8; } }
+
+/* 雲端同步（js/cloud.js） */
+#cloudMini { font-size: 13px; padding: 2px 8px; min-width: 34px; }
+#cloudMini.cloud-off { opacity: .6; }
+#cloudMini.cloud-ok { color: var(--green); }
+#cloudMini.cloud-busy { color: var(--gold); }
+#cloudMini.cloud-err { color: var(--red); }
+.px-input { background: var(--bg2); color: var(--text); border: 3px solid var(--line); box-shadow: inset 0 0 0 2px var(--hi); padding: 6px 10px; outline: none; max-width: 100%; }
+.px-input:focus { box-shadow: inset 0 0 0 2px var(--gold); }

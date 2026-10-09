@@ -1049,8 +1049,9 @@ const Screens = (() => {
       <hr class="px"><h3>音量</h3><div id="volbox"></div>
       <hr class="px"><h3 id="musicbox">背景音樂</h3><div id="musicset"></div>
       <hr class="px">
-      <h3>存檔</h3><p class="dim small-t">進度自動存在這台電腦的瀏覽器中。換電腦或清除瀏覽資料前，請先匯出備份。</p>
+      <h3>存檔</h3><p class="dim small-t">進度自動存在這台電腦的瀏覽器中。換電腦或清除瀏覽資料前，請先匯出備份，或登入下方的雲端同步。</p>
       <div class="row"><button class="px-btn blue" id="ex">匯出存檔</button><label class="px-btn">匯入存檔<input type="file" id="im" accept=".json" hidden></label><button class="px-btn red" id="rs">重置全部進度</button></div>
+      <hr class="px"><h3>☁ 雲端同步</h3><div id="cloudBox"></div>
       <hr class="px"><h3>操作說明</h3>
       <p class="small-t">・選擇題可用鍵盤 <span class="kbd">A</span>–<span class="kbd">J</span> 或 <span class="kbd">1</span>–<span class="kbd">5</span> 作答，<span class="kbd">Enter</span> 確認/繼續。<br>・答對＝攻擊怪物，連續答對有連擊加成；答錯＝怪物反擊。多選題部分正確會造成擦傷並承受一半反擊。<br>・每清除 3 層可從天賦或遺物中擇一強化；擊敗怪物後可選擇事件、篝火、行商、寶箱等岔路。<br>・結算獲得魂晶，可在「永久強化」「遺物圖鑑」「寵物小屋」使用。</p>
       <hr class="px"><p class="small-t dim">素材：Kenney Tiny Dungeon（CC0）、俐方體11號 Cubic 11（OFL）、背景音樂含 OpenGameArt 上的 CC0 鋼琴／吉他曲，以及使用者自行提供的歌曲（僅供個人使用，清單見 assets/music/CREDITS.txt）。題庫：${U.esc(APP_TITLE)}（${window.QB.questions.length} 題，建置於 ${window.QB.built || '—'}）。</p></div>`;
@@ -1058,6 +1059,7 @@ const Screens = (() => {
     U.$('#s2').onchange = e => { st.confirmSingle = e.target.checked; Store.saveSettings(); };
     U.$('#volbox').appendChild(volumeControls());
     musicSettings(U.$('#musicset'));
+    if (typeof CLOUD !== 'undefined') CLOUD.panel(U.$('#cloudBox'));
     U.$('#ex').onclick = () => {
       const blob = new Blob([Store.exportAll()], { type: 'application/json' });
       const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
