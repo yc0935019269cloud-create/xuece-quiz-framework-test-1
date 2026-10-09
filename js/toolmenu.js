@@ -25,7 +25,7 @@
       const p = document.createElement('button'); p.className = 'px-btn small'; p.id = 'padMini'; p.textContent = '📝'; p.title = '計算紙';
       p.onclick = () => PAD.toggle(); res.appendChild(p);
     }
-    btn = U.h('<button class="px-btn small" id="toolBtn" title="多功能：雲端同步、計算機、計算紙、音樂">☰</button>');
+    btn = U.h('<button class="px-btn small" id="toolBtn" aria-label="多功能">☰</button>');
     menu = U.h('<div id="toolMenu" class="panel" hidden></div>');
     ITEMS.forEach(([id, label]) => {
       const b = document.getElementById(id); if (!b) return;
