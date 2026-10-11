@@ -10,11 +10,11 @@
  ],
  "unit": "第二單元 反射與折射介面",
  "title": "反射與折射介面：司乃耳定律到球面屈光力",
- "desc": "法線與角度、反射與平面鏡、司乃耳定律、全反射、近軸近似、聚散度公式、平面與球面折射介面。",
+ "desc": "慢慢學版：每課只講一件事，先用生活例子理解，再寫成公式。法線與反射、平面鏡、折射方向、司乃耳定律、全反射、近軸近似、聚散度公式與視深、球面折射介面、簡化眼。",
  "level": 2,
- "minutes": 94,
+ "minutes": 160,
  "order": 2,
- "source": "課堂簡報「第二單元 反射與折射介面」（劉立中，2026/09/16）；本單元無上課逐字稿，數值例依簡報與 Keating 教科書補充",
+ "source": "課堂簡報「第二單元 反射與折射介面」（劉立中，2026/09/16）；本單元無上課逐字稿，數值例依簡報與 Keating 教科書補充；2026-10-11 改寫為小步慢教版（11 課，每課一個主題；補直覺說明與 2 個互動）",
  "tags": [
   "反射",
   "司乃耳定律",
@@ -30,47 +30,89 @@
  "lessons": [
   {
    "id": "l1",
-   "title": "反射：法線、角度與平面鏡",
+   "title": "角度從法線量：入射角與反射定律",
    "goals": [
-    "能由法線判讀入射角與反射角",
-    "能用「平行分量不變、垂直分量反向」說明反射定律",
-    "能說出平面鏡成像的性質與橫向放大率 m 的正負意義"
+    "會畫法線，並由法線判讀入射角、反射角",
+    "會把「和介面的夾角」換成「和法線的夾角」",
+    "能用「平行分量不變、垂直分量反向」說明反射定律"
+   ],
+   "teaches": [
+    "法線",
+    "反射"
    ],
    "steps": [
     {
      "type": "intro",
-     "title": "角度要從哪裡量？",
+     "title": "光碰到東西了：先學怎麼量角度",
      "body": [
-      "上一單元的回家作業：手電筒從側面幾乎看不到光路，要靠空氣中的**水霧、灰塵**讓光**散射**才看得到。",
+      "上一單元的回家作業：手電筒的光路從側面幾乎看不到，要靠空氣中的**水霧、灰塵**把光**散射**出來才看得到。",
       "",
-      "這一單元開始，光要「碰到東西」了：遇到介面會**反射**、會**折射**。第一件事是約定：**所有角度都從法線量起**。",
+      "這一單元開始，光要「碰到東西」了：遇到介面會**反射**、會**折射**。",
       "",
-      "- 這課會學：法線與介面、入射角與反射角、反射定律、漫射、平面鏡成像與橫向放大率。"
+      "> 第一件事是約定：**所有角度都從法線量起**——這一課就專心把這件事練熟。"
      ]
     },
     {
      "type": "card",
-     "title": "角度從法線開始",
+     "title": "法線：垂直於介面的那條假想線",
      "body": [
-      "**法線**：通過入射點、**垂直於介面**的假想線。",
+      "**法線**：通過入射點、**垂直於介面**的假想線（畫成虛線）。",
       "",
-      "| 名稱 | 定義（都從法線量起） |",
+      "所有角度都從法線量：",
+      "| 名稱 | 定義 |",
       "|---|---|",
-      "| 入射角 θ₁ | 入射光與法線的夾角 |",
-      "| 反射角 | 反射光與法線的夾角 |",
-      "| 折射角 θ₂ | 折射光與法線的夾角 |",
+      "| 入射角 θ₁ | 入射光與**法線**的夾角 |",
+      "| 反射角 | 反射光與**法線**的夾角 |",
+      "| 折射角 θ₂ | 折射光與**法線**的夾角 |",
       "",
-      "**易錯（國考陷阱）**：題目若說「入射方向和**介面**呈 30°」，入射角是 **90° − 30° = 60°**，不是 30°。",
+      "**為什麼不從介面量？** 因為介面可以是彎的（球面），但法線在每一點都定得出來；而且光的物理（司乃耳定律）用的就是和法線的夾角。",
       "",
-      "**連結**：球面介面上每一點的法線都通過**曲率中心 C**（本單元第 4 課）。"
+      "**垂直入射**：光沿著法線打進來 → 入射角 = **0°**（不是 90°）。"
      ],
      "keys": [
       "法線 ⊥ 介面",
       "入射角、反射角、折射角都從法線量",
-      "和介面夾 30° → 入射角 60°"
+      "垂直入射＝入射角 0°"
      ],
-     "img": "img/physopt-u2/angles-normal.png",
-     "img_source": "課堂簡報第二單元投影片 6",
+     "flash": {
+      "front": "入射角怎麼量？",
+      "back": "入射光與法線的夾角。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "光**垂直**打在玻璃表面上，入射角是多少？",
+     "choices": [
+      "0°",
+      "90°",
+      "45°",
+      "180°"
+     ],
+     "answer": "A",
+     "hint": "垂直入射時，光和法線是什麼關係？",
+     "explain": "垂直入射＝光沿著法線走，和法線的夾角是 **0°**。90° 是光和**介面**的夾角——這正是最常見的陷阱。"
+    },
+    {
+     "type": "card",
+     "title": "最常見的陷阱：題目給的是「和介面的夾角」",
+     "body": [
+      "法線和介面互相垂直，所以：",
+      "```",
+      "入射角 = 90° − （光和介面的夾角）",
+      "```",
+      "**例**：",
+      "- 光和水面夾 30° → 入射角 = 90° − 30° = **60°**",
+      "- 光和鏡面夾 25° → 入射角 = **65°**",
+      "- 光和介面夾 90°（垂直）→ 入射角 = **0°**",
+      "",
+      "**做題習慣**：讀到角度先問「這是和**誰**的夾角？」，畫出法線再換算。"
+     ],
+     "keys": [
+      "入射角 = 90° − 和介面的夾角",
+      "先畫法線再換算",
+      "讀題先問：和誰的夾角？"
+     ],
      "flash": {
       "front": "光和介面夾 25°，入射角是多少？",
       "back": "90° − 25° = 65°（角度從法線量）。"
@@ -125,31 +167,106 @@
      "explain": "漫射時每一條光線在它所碰到的小面上仍然遵守「反射角 = 入射角」，只是粗糙表面各處的法線方向不同，反射光才散向四面八方。"
     },
     {
-     "type": "card",
-     "title": "平面鏡成像與橫向放大率",
+     "type": "example",
+     "title": "入射方向與介面夾角的換算",
+     "problem": "一束光由空氣射向水面，入射方向與水面夾 30°。求入射角與反射角；反射光和入射光之間的夾角是多少？",
+     "steps": [
+      "角度從法線量：入射角 = 90° − 30° = **60°**。",
+      "反射定律：反射角 = 入射角 = **60°**。",
+      "入射光與反射光分居法線兩側，夾角 = 60° + 60° = **120°**。"
+     ],
+     "answer": "入射角 60°、反射角 60°、兩光線夾 120°；關鍵是先把「與介面的夾角」換成「與法線的夾角」。"
+    },
+    {
+     "type": "practice",
+     "title": "實戰：法線與反射",
+     "qids": [],
+     "pick": {
+      "match": [
+       "反射",
+       "法線"
+      ],
+      "subjects": [
+       "physopt"
+      ],
+      "n": 2
+     },
+     "checks": [
+      {
+       "kind": "fill",
+       "q": "光與平面鏡鏡面夾 20°，反射角為多少度？（只填數字）",
+       "answer": [
+        "70",
+        "70°"
+       ],
+       "explain": "入射角 = 90° − 20° = 70°，反射角 = 入射角 = **70°**。"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "法線 ⊥ 介面；入射角、反射角、折射角都從法線量。",
+      "入射角 = 90° − 和介面的夾角；垂直入射＝ 0°。",
+      "反射定律：反射角 = 入射角；平行介面的分量不變、垂直介面的分量等量反向。",
+      "漫射：粗糙表面各處法線不同，仍遵守反射定律。"
+     ],
+     "flash": [
+      {
+       "front": "漫射的原因？",
+       "back": "表面粗糙，各小面法線方向不同。"
+      },
+      {
+       "front": "入射方向與介面夾 30°，入射角？",
+       "back": "60°。"
+      }
+     ],
+     "next": "下一課：鏡子裡的像——平面鏡成像與橫向放大率。"
+    }
+   ]
+  },
+  {
+   "id": "l1b",
+   "title": "平面鏡成像與橫向放大率",
+   "goals": [
+    "能說出平面鏡成像的性質（虛像、正立、等大、左右相反）",
+    "知道虛像是反射光往回延長得到的",
+    "能用 m = I/O 判斷正立倒立與大小"
+   ],
+   "teaches": [
+    "平面鏡",
+    "橫向放大率"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "鏡子裡的你在哪裡？",
      "body": [
-      "**平面鏡成像的性質**：像位於**鏡後**，**正立、等大、左右相反**的**虛像**（反射光的反向延長線交在鏡後）。像距和物距**大小相同**。",
+      "照鏡子時，鏡子裡的你好像站在鏡子**後面**——但鏡子後面明明是牆壁。",
       "",
-      "**橫向放大率**：",
+      "這一課用反射定律解釋：為什麼像在鏡後、為什麼是正立等大、為什麼左右相反。最後學一個以後每個單元都會用的工具：**橫向放大率 m**。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "為什麼像在鏡子後面？",
+     "body": [
+      "從物體上一點發出的光打到鏡子，照反射定律反射回來。",
       "",
-      "```",
-      "m = 像高 I / 物高 O",
-      "m > 0：正立；m < 0：倒立；|m| > 1 放大、|m| < 1 縮小",
-      "平面鏡：m = +1",
-      "```",
+      "反射光其實是**散開**的（發散），進入你的眼睛。眼睛不知道光被反射過，只會沿著光**直線往回延長**——這些延長線交在鏡子**後面**的一點，你就覺得物體在那裡。",
       "",
-      "**簡報的符號約定**：像高、物高**向上為正、向下為負**；物距與像距**向左為負、向右為正**（光由左向右時）。",
-      "",
-      "**易錯**：「左右相反」不是倒立。倒立是上下顛倒（m < 0）；平面鏡 m = +1 是正立等大。"
+      "- 光**沒有真的**到鏡子後面 → 這是**虛像**（不能用屏幕接到）。",
+      "- 往回延長的線畫**虛線**。",
+      "- 用幾何可以證明：像到鏡面的距離 = 物到鏡面的距離。"
      ],
      "keys": [
-      "平面鏡：正立、等大、左右相反的虛像",
-      "m = I/O",
-      "m > 0 正立、m < 0 倒立"
+      "反射光往回延長交在鏡後",
+      "光沒真的過去 → 虛像",
+      "像距大小 = 物距"
      ],
      "flash": {
-      "front": "平面鏡的橫向放大率？",
-      "back": "m = +1（正立、等大）。"
+      "front": "平面鏡的像為什麼是虛像？",
+      "back": "反射光沒有真的到鏡後，是眼睛把反射光往回延長看到的。"
      }
     },
     {
@@ -166,25 +283,65 @@
      "explain": "平面鏡成**正立、等大、左右相反的虛像**，像在鏡後，像距大小與物距相同（2 m），m = +1。A 錯：平面鏡不成倒立實像；B 錯：大小不變、距離也相同；D 錯：光沒有真的到鏡後，是虛像。"
     },
     {
-     "type": "example",
-     "title": "入射方向與介面夾角的換算",
-     "problem": "一束光由空氣射向水面，入射方向與水面夾 30°。求入射角與反射角；反射光和入射光之間的夾角是多少？",
-     "steps": [
-      "角度從法線量：入射角 = 90° − 30° = **60°**。",
-      "反射定律：反射角 = 入射角 = **60°**。",
-      "入射光與反射光分居法線兩側，夾角 = 60° + 60° = **120°**。"
+     "type": "card",
+     "title": "平面鏡的四個性質與橫向放大率 m",
+     "body": [
+      "**平面鏡成像**：**虛像**、**正立**、**等大**、**左右相反**，像在鏡後，像距大小 = 物距。",
+      "",
+      "**橫向放大率**（之後每個單元都會用）：",
+      "```",
+      "m = 像高 I ÷ 物高 O",
+      "```",
+      "- **正負**：m > 0 正立；m < 0 倒立（上下顛倒）",
+      "- **大小**：|m| > 1 放大；|m| < 1 縮小；|m| = 1 等大",
+      "- 平面鏡：**m = +1**",
+      "",
+      "**簡報的符號約定**：像高、物高向上為正、向下為負；距離向左為負、向右為正（光由左向右時）。",
+      "",
+      "**易錯**：「左右相反」不是倒立。倒立是**上下**顛倒（m < 0）。"
      ],
-     "answer": "入射角 60°、反射角 60°、兩光線夾 120°；關鍵是先把「與介面的夾角」換成「與法線的夾角」。"
+     "keys": [
+      "平面鏡：虛像、正立、等大、左右相反",
+      "m = I/O",
+      "m > 0 正立、m < 0 倒立；平面鏡 m = +1"
+     ],
+     "flash": {
+      "front": "平面鏡的橫向放大率？",
+      "back": "m = +1（正立、等大）。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "某光學系統的橫向放大率 m = −2。像的性質？",
+     "choices": [
+      "倒立、放大 2 倍",
+      "正立、放大 2 倍",
+      "倒立、縮小一半",
+      "正立、縮小一半"
+     ],
+     "answer": "A",
+     "hint": "負號代表方向、數字代表大小。",
+     "explain": "m < 0 → **倒立**；|m| = 2 → **放大 2 倍**。負號不是「變小」的意思。"
+    },
+    {
+     "type": "example",
+     "title": "走向鏡子，像怎麼動？",
+     "problem": "一個人站在平面鏡前 3 m，然後往鏡子走近 1 m。①走之前，像在哪裡？人和像相距多遠？②走之後呢？③像的大小有沒有變？",
+     "steps": [
+      "**走之前**：人距鏡 3 m → 像在鏡**後** 3 m；人和像相距 3 + 3 = **6 m**。",
+      "**走之後**：人距鏡 2 m → 像在鏡後 2 m；人和像相距 **4 m**（人走 1 m，像也往鏡子靠近 1 m，兩者靠近 2 m）。",
+      "**大小**：平面鏡 m = +1，像一直和人**一樣大**。覺得「變大」只是因為距離變近，看起來的角度變大了。"
+     ],
+     "answer": "①鏡後 3 m，相距 6 m；②鏡後 2 m，相距 4 m；③大小不變（m = +1）。"
     },
     {
      "type": "practice",
-     "title": "實戰：反射",
+     "title": "實戰：平面鏡與放大率",
      "qids": [],
      "pick": {
       "match": [
-       "反射",
        "平面鏡",
-       "法線",
        "橫向放大率"
       ],
       "subjects": [
@@ -205,36 +362,18 @@
        ],
        "answer": "ACD",
        "explain": "A、C、D 對。B 錯：平面鏡是虛像，反射光沒有真的會聚在鏡後。E 錯：左右相反不是倒立，m = +1 表示正立。"
-      },
-      {
-       "kind": "fill",
-       "q": "光與平面鏡鏡面夾 20°，反射角為多少度？（只填數字）",
-       "answer": [
-        "70",
-        "70°"
-       ],
-       "explain": "入射角 = 90° − 20° = 70°，反射角 = 入射角 = **70°**。"
       }
      ]
     },
     {
      "type": "recap",
      "points": [
-      "法線 ⊥ 介面；入射角、反射角、折射角都從法線量。",
-      "反射定律：反射角 = 入射角；平行介面的分量不變、垂直介面的分量等量反向。",
-      "漫射：粗糙表面各處法線不同，仍遵守反射定律；靠微粒漫射才能從側面看到光路。",
-      "平面鏡：正立、等大、左右相反的虛像，像在鏡後，像距大小 = 物距。",
-      "m = I/O；m > 0 正立、m < 0 倒立；平面鏡 m = +1。"
+      "平面鏡：反射光往回延長交在鏡後 → 虛像。",
+      "性質：虛像、正立、等大、左右相反；像距大小 = 物距。",
+      "m = I/O；m > 0 正立、m < 0 倒立；|m| 是大小；平面鏡 m = +1。",
+      "左右相反不是倒立。"
      ],
      "flash": [
-      {
-       "front": "入射角怎麼量？",
-       "back": "入射光與法線的夾角。"
-      },
-      {
-       "front": "漫射的原因？",
-       "back": "表面粗糙，各小面法線方向不同。"
-      },
       {
        "front": "平面鏡成像的四個性質？",
        "back": "虛像、正立、等大、左右相反（像在鏡後）。"
@@ -244,17 +383,21 @@
        "back": "像相對物倒立。"
       }
      ],
-     "next": "下一課：光穿過介面時轉多少？司乃耳定律與全反射。"
+     "next": "下一課：光穿過介面時會轉彎——折射。"
     }
    ]
   },
   {
    "id": "l2",
-   "title": "折射：司乃耳定律與全反射",
+   "title": "折射：光為什麼會轉彎",
    "goals": [
+    "能說明折射的原因：不同介質中光速不同",
     "能判斷光從快到慢偏向法線、從慢到快偏離法線",
-    "能用司乃耳定律 n₁ sin θ₁ = n₂ sin θ₂ 計算折射角",
-    "能說出全反射的兩個條件並計算臨界角"
+    "能解釋水中筷子為什麼看起來變淺"
+   ],
+   "teaches": [
+    "折射",
+    "視深"
    ],
    "steps": [
     {
@@ -267,6 +410,43 @@
       "",
       "- 這課會學：折射方向的判斷（車輪比喻）、司乃耳定律、全反射與臨界角。"
      ]
+    },
+    {
+     "type": "card",
+     "title": "折射的原因：光在不同介質裡速度不同",
+     "body": [
+      "光在真空最快；進入玻璃、水這些介質會**變慢**。描述「變慢多少」的數字就是**折射率**：",
+      "```",
+      "n = 真空光速 ÷ 介質中光速",
+      "```",
+      "- 空氣 n ≈ 1.00、水 1.33、玻璃約 1.5",
+      "- **n 越大，光越慢**",
+      "",
+      "光斜斜地進入另一種介質時，波前的一側先進去、先變速，另一側還在原介質——兩側速度不同，整個波前就**轉彎**了。這就是**折射**。"
+     ],
+     "keys": [
+      "n = 真空光速 ÷ 介質中光速",
+      "n 越大，光越慢",
+      "波前兩側速度不同 → 轉彎"
+     ],
+     "flash": {
+      "front": "折射率越大代表什麼？",
+      "back": "光在該介質中越慢。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "光在某介質中的速度是真空的 2/3。這個介質的折射率是？",
+     "choices": [
+      "1.5",
+      "0.67",
+      "2.0",
+      "1.0"
+     ],
+     "answer": "A",
+     "hint": "n = 真空光速 ÷ 介質中光速。",
+     "explain": "n = 1 ÷ (2/3) = **1.5**（大約是玻璃）。0.67 是把比例倒過來——折射率不會小於 1。"
     },
     {
      "type": "card",
@@ -306,6 +486,121 @@
      "answer": "D",
      "hint": "先判斷光變快還是變慢。",
      "explain": "空氣 → 玻璃是 n 小 → n 大（變慢），折射光**偏向法線**，θ₂ < θ₁。A 是玻璃 → 空氣的情形；C 只有垂直入射或兩邊 n 相同時成立；B 全反射只會發生在 n 大 → n 小。"
+    },
+    {
+     "type": "card",
+     "title": "水中的筷子為什麼看起來變淺？",
+     "body": [
+      "水中筷子上的一點發出光，光從**水（慢）→ 空氣（快）**，所以出水時**偏離法線**，往水面方向倒。",
+      "",
+      "眼睛不知道光轉過彎，只會沿著進眼睛的光**直線往回延長**——延長線交在比實際**淺**的地方。",
+      "",
+      "```",
+      "眼睛看到的位置（虛像）：比實際淺",
+      "實際位置：比較深",
+      "```",
+      "所以泳池看起來比實際淺、筷子看起來往上折。",
+      "",
+      "**注意**：這是**虛像**（光沒有真的從那一點出來），而且從正上方看時，視深 ≈ 實際深度 ÷ 1.33（第 7 課會算）。"
+     ],
+     "keys": [
+      "水→空氣：偏離法線",
+      "眼睛沿直線往回延長 → 看到較淺的虛像",
+      "泳池看起來比較淺"
+     ],
+     "flash": {
+      "front": "水中筷子看起來變深還是變淺？",
+      "back": "變淺（虛像上移）。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "從岸上看水池底，水池看起來比實際深度？",
+     "choices": [
+      "比較淺",
+      "比較深",
+      "一樣深",
+      "看不到池底"
+     ],
+     "answer": "A",
+     "hint": "光從水到空氣是偏向還是偏離法線？眼睛往回延長的線會交在哪裡？",
+     "explain": "光出水偏離法線，眼睛沿折射光往回延長，交點比實際位置淺 → 水池看起來**比較淺**。所以看起來淺的水池也要小心。"
+    },
+    {
+     "type": "example",
+     "title": "判斷三種情形的折射方向",
+     "problem": "光斜斜地從①空氣進入水 ②水進入空氣 ③空氣進入玻璃。分別判斷光是偏向還是偏離法線。",
+     "steps": [
+      "**① 空氣 → 水**：n 從 1.00 變 1.33，光變慢 → **偏向法線**（折射角 < 入射角）。",
+      "**② 水 → 空氣**：n 從 1.33 變 1.00，光變快 → **偏離法線**（折射角 > 入射角）。",
+      "**③ 空氣 → 玻璃**：n 變大，光變慢 → **偏向法線**。",
+      "**口訣**：進入 n 大的（變慢）就往法線靠；進入 n 小的（變快）就離開法線。"
+     ],
+     "answer": "①偏向 ②偏離 ③偏向。"
+    },
+    {
+     "type": "practice",
+     "title": "實戰：折射方向",
+     "qids": [],
+     "pick": {
+      "match": [
+       "折射",
+       "視深"
+      ],
+      "subjects": [
+       "physopt"
+      ],
+      "n": 2
+     },
+     "checks": [
+      {
+       "kind": "tf",
+       "q": "光垂直射入玻璃時，因為速度改變，方向也一定會改變。",
+       "answer": false,
+       "explain": "垂直入射時波前兩側**同時**變速，所以方向**不變**，只有速度改變。"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "n = 真空光速 ÷ 介質中光速；n 越大光越慢。",
+      "波前兩側速度不同 → 折射（轉彎）。",
+      "n 小 → n 大（變慢）：偏向法線；n 大 → n 小（變快）：偏離法線；垂直入射不偏折。",
+      "水中物體看起來變淺：光出水偏離法線，眼睛沿反向延長線看到虛像。"
+     ],
+     "flash": [
+      {
+       "front": "光從水斜射進空氣，折射光偏向還是偏離法線？",
+       "back": "偏離法線（從慢到快、n 大到 n 小）。"
+      }
+     ],
+     "next": "下一課：轉多少？用司乃耳定律算出來。"
+    }
+   ]
+  },
+  {
+   "id": "l2b",
+   "title": "司乃耳定律：轉多少角度",
+   "goals": [
+    "能寫出司乃耳定律 n₁ sin θ₁ = n₂ sin θ₂",
+    "能依步驟算出折射角並檢查方向"
+   ],
+   "teaches": [
+    "司乃耳定律"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "轉彎轉多少？",
+     "body": [
+      "上一課知道光往哪邊轉；這一課要算出**轉多少度**。",
+      "",
+      "答案是一條很對稱的式子：**司乃耳定律**。每一邊都是「折射率 × sin（角度）」，而且角度一律從法線量。",
+      "",
+      "> 先背式子，再練三個步驟：畫法線 → 代入 → 檢查方向。"
+     ]
     },
     {
      "type": "card",
@@ -355,37 +650,172 @@
     },
     {
      "type": "card",
-     "title": "全反射與臨界角",
+     "title": "用司乃耳定律算折射角：三個步驟",
      "body": [
-      "**全反射**：光從**高折射率**射向**低折射率**介質時，若入射角夠大，光完全被反射回原介質，**沒有折射光**。",
+      "**① 畫法線**，把題目的角度換成「和法線的夾角」。",
       "",
-      "**發生全反射的兩個條件**：",
-      "1. **介質**：光必須從**折射率高（光速慢）進入折射率低（光速快）**。",
+      "**② 代入公式**，先求 sin θ₂：",
+      "```",
+      "sin θ₂ = n₁ sin θ₁ ÷ n₂",
+      "```",
+      "**③ 取反正弦**得到 θ₂，再**檢查方向**：進入 n 大的介質，θ₂ 要比 θ₁ 小；反之則大。",
+      "",
+      "**例**：空氣（n₁ = 1）以入射角 30° 射入水（n₂ = 1.33）：",
+      "```",
+      "sin θ₂ = 1 × sin 30° ÷ 1.33 = 0.5 ÷ 1.33 = 0.376",
+      "θ₂ = sin⁻¹(0.376) ≈ 22.1°",
+      "```",
+      "22.1° < 30°，偏向法線 ✓。",
+      "",
+      "**易錯**：sin 的計算記得計算機要在**度（DEG）**模式。"
+     ],
+     "keys": [
+      "① 畫法線換角度 ② sin θ₂ = n₁sinθ₁/n₂ ③ 取反正弦並檢查",
+      "進入大 n：θ₂ < θ₁",
+      "計算機用 DEG 模式"
+     ],
+     "flash": {
+      "front": "空氣以 30° 射入水（1.33），折射角？",
+      "back": "約 22.1°。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "fill",
+     "q": "光由空氣以入射角 45° 射入折射率 1.50 的玻璃，折射角約為多少度？（取到整數）",
+     "answer": [
+      "28",
+      "28°",
+      "28.1"
+     ],
+     "hint": "sin 45° ≈ 0.707；sin θ₂ = 0.707 ÷ 1.50。",
+     "explain": "sin θ₂ = 0.707 / 1.50 = 0.471 → θ₂ ≈ **28°**，比 45° 小，偏向法線 ✓。"
+    },
+    {
+     "type": "interactive",
+     "title": "動手玩：司乃耳定律與全反射",
+     "body": "調整兩側折射率與入射角，觀察折射光的方向；按「玻璃→空氣」試試全反射。",
+     "task": "選「水→空氣」，把入射角慢慢加大，找出折射光消失的角度，並和畫面上顯示的臨界角比較。",
+     "height": 560,
+     "html": "<!doctype html><html><head><meta charset=\"utf-8\"><style>\nbody{margin:0;padding:10px;font:15px system-ui,\"Microsoft JhengHei\",sans-serif;background:#fbf7ec;color:#2e2116}\n.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:5px 0}\nsvg{width:100%;height:auto;border:1px solid #d8cfb8;border-radius:8px}\n.big{font-size:18px;font-weight:bold;color:#8a3b12}\n.note{background:#fff3cf;padding:6px 10px;border-radius:6px}\nbutton{font:inherit;padding:3px 10px;border-radius:6px;border:1px solid #b9a77f;background:#fff}\ninput[type=range]{width:200px}\n.small{font-size:14px;color:#6b5a45}\n</style></head><body>\n<div class=\"note\">觀察重點：角度一律從法線量起。進入較大 n 的介質 → 偏向法線；進入較小 n 的介質 → 偏離法線，入射角 ≥ 臨界角時全反射。</div>\n<svg id=\"s\" viewBox=\"0 0 800 340\"></svg>\n<div class=\"row\">\n<label>上方 n₁ <input id=\"n1\" type=\"range\" min=\"1\" max=\"2\" step=\"0.01\" value=\"1\"> <b id=\"n1v\"></b></label>\n<label>下方 n₂ <input id=\"n2\" type=\"range\" min=\"1\" max=\"2\" step=\"0.01\" value=\"1.33\"> <b id=\"n2v\"></b></label>\n</div>\n<div class=\"row\"><label>入射角 θ₁ <input id=\"a\" type=\"range\" min=\"0\" max=\"89\" value=\"40\"> <b id=\"av\"></b></label>\n<button data-p=\"1,1.33\">空氣→水</button><button data-p=\"1.33,1\">水→空氣</button><button data-p=\"1.5,1\">玻璃→空氣</button><button data-p=\"1,1.5\">空氣→玻璃</button></div>\n<div class=\"big\" id=\"out\"></div>\n<div id=\"msg\"></div>\n<div class=\"small\">公式：n₁ sin θ₁ = n₂ sin θ₂；臨界角 sin θc = n₂ / n₁（只在 n₁ &gt; n₂ 時存在）；近軸：n₁θ₁ ≈ n₂θ₂</div>\n<script>\nfunction $(i){return document.getElementById(i)}\nvar R=Math.PI/180;\nfunction ar(x1,y1,x2,y2,c,w){var mx=(x1+x2)/2,my=(y1+y2)/2,a=Math.atan2(y2-y1,x2-x1),L=9;\nreturn '<line x1=\"'+x1+'\" y1=\"'+y1+'\" x2=\"'+x2+'\" y2=\"'+y2+'\" stroke=\"'+c+'\" stroke-width=\"'+w+'\"/><polygon fill=\"'+c+'\" points=\"'+(mx+L*Math.cos(a))+','+(my+L*Math.sin(a))+' '+(mx-L*Math.cos(a)+5*Math.sin(a))+','+(my-L*Math.sin(a)-5*Math.cos(a))+' '+(mx-L*Math.cos(a)-5*Math.sin(a))+','+(my-L*Math.sin(a)+5*Math.cos(a))+'\"/>';}\nfunction draw(){\nvar n1=+$('n1').value,n2=+$('n2').value,t1=+$('a').value,ox=400,oy=170,L=190,o='';\n$('n1v').textContent=n1.toFixed(2);$('n2v').textContent=n2.toFixed(2);$('av').textContent=t1+'°';\nfunction shade(v){var k=Math.round(255-(v-1)*120);return 'rgb('+k+','+(k+5>255?255:k+5)+',255)'}\no+='<rect x=\"0\" y=\"0\" width=\"800\" height=\"170\" fill=\"'+shade(n1)+'\"/><rect x=\"0\" y=\"170\" width=\"800\" height=\"170\" fill=\"'+shade(n2)+'\"/>';\no+='<line x1=\"0\" y1=\"170\" x2=\"800\" y2=\"170\" stroke=\"#444\" stroke-width=\"2\"/>';\no+='<line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"340\" stroke=\"#555\" stroke-dasharray=\"6 5\"/><text x=\"408\" y=\"18\" font-size=\"14\">法線</text><text x=\"700\" y=\"162\" font-size=\"14\">介面</text>';\no+='<text x=\"12\" y=\"24\" font-size=\"15\">n₁ = '+n1.toFixed(2)+'</text><text x=\"12\" y=\"330\" font-size=\"15\">n₂ = '+n2.toFixed(2)+'</text>';\nvar s1=Math.sin(t1*R),sx=ox-L*s1,sy=oy-L*Math.cos(t1*R),x=n1*s1/n2,tir=x>1;\no+=ar(sx,sy,ox,oy,'#c0392b',3);\no+=ar(ox,oy,ox+L*s1,oy-L*Math.cos(t1*R),'#e08a00',tir?3:1.5);\nvar msg='',t2;\nif(!tir){t2=Math.asin(x)/R;o+=ar(ox,oy,ox+L*Math.sin(t2*R),oy+L*Math.cos(t2*R),'#1d6fb8',3);\n o+='<text x=\"'+(ox+12+60*Math.sin(t2*R))+'\" y=\"'+(oy+70)+'\" font-size=\"14\" fill=\"#1d6fb8\">θ₂</text>';}\no+='<text x=\"'+(ox-30-50*s1)+'\" y=\"'+(oy-60)+'\" font-size=\"14\" fill=\"#c0392b\">θ₁</text>';\n$('s').innerHTML=o;\nvar tc=n1>n2?Math.asin(n2/n1)/R:null;\nif(tir){$('out').textContent='θ₁ = '+t1+'°：全反射！（沒有折射光）';msg='n₁ sinθ₁ / n₂ = '+x.toFixed(3)+' > 1，找不到折射角。';}\nelse{$('out').textContent='θ₁ = '+t1+'°　→　θ₂ = '+t2.toFixed(1)+'°';\n msg=n2>n1?'進入較大折射率（較慢）的介質：折射光偏向法線（θ₂ < θ₁）。':(n2<n1?'進入較小折射率（較快）的介質：折射光偏離法線（θ₂ > θ₁）。':'折射率相同：不偏折。');\n if(t1>0){var p=n1*t1/n2;msg+='　近軸近似 θ₂ ≈ n₁θ₁/n₂ = '+p.toFixed(1)+'°（誤差 '+Math.abs(p-t2).toFixed(1)+'°）';}}\nif(tc!==null)msg+='　臨界角 θc = '+tc.toFixed(1)+'°';else msg+='　（n₁ ≤ n₂：不會全反射）';\n$('msg').textContent=msg;}\n['n1','n2','a'].forEach(function(i){$(i).oninput=draw});\ndocument.querySelectorAll('button').forEach(function(b){b.onclick=function(){var p=b.dataset.p.split(',');$('n1').value=p[0];$('n2').value=p[1];draw();}});\ndraw();\n</script></body></html>"
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "在互動中選「空氣→玻璃」，把入射角從 10° 慢慢調到 80°。折射角會怎樣？",
+     "choices": [
+      "一直比入射角小，而且最大也到不了 90°",
+      "一直比入射角大",
+      "到某個角度後消失（全反射）",
+      "永遠等於入射角"
+     ],
+     "answer": "A",
+     "hint": "空氣 → 玻璃是從 n 小到 n 大。",
+     "explain": "進入 n 大的介質，θ₂ 永遠比 θ₁ 小；即使 θ₁ 接近 90°，sin θ₂ 最多 1/1.5，θ₂ 最大約 41.8°。所以**從空氣進玻璃不可能全反射**。"
+    },
+    {
+     "type": "example",
+     "title": "司乃耳定律完整計算",
+     "problem": "一束光由真空射入折射率 1.5 的介質，入射方向與介面夾 30°。求入射角與折射角；若光反過來由介質射向真空，臨界角是多少？（改編自劉立中自創題庫）",
+     "steps": [
+      "入射角從法線量：90° − 30° = **60°**。",
+      "司乃耳定律：1 × sin 60° = 1.5 × sin θ₂ → sin θ₂ = 0.866/1.5 = 0.577。",
+      "θ₂ = sin⁻¹(0.577) ≈ **35.3°**；比 60° 小，偏向法線，合理。",
+      "反向（介質 → 真空）：sin θc = 1/1.5 = 0.667 → θc ≈ **41.8°**。"
+     ],
+     "answer": "入射角 60°、折射角約 35.3°、反向臨界角約 41.8°；關鍵是角度一律從法線量。"
+    },
+    {
+     "type": "practice",
+     "title": "實戰：司乃耳定律",
+     "qids": [],
+     "pick": {
+      "match": [
+       "司乃耳定律",
+       "折射"
+      ],
+      "subjects": [
+       "physopt"
+      ],
+      "n": 2
+     },
+     "checks": [
+      {
+       "kind": "fill",
+       "q": "光由空氣以入射角 30° 射入折射率 1.33 的水，折射角約為多少度？（取到小數第一位）",
+       "answer": [
+        "22.1",
+        "22.08",
+        "22"
+       ],
+       "explain": "sin θ₂ = 0.5/1.33 = 0.376 → θ₂ ≈ **22.1°**。"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "司乃耳定律：n₁ sin θ₁ = n₂ sin θ₂（角度從法線量）。",
+      "步驟：畫法線換角度 → sin θ₂ = n₁ sin θ₁ / n₂ → 取反正弦 → 檢查方向。",
+      "進入 n 大的介質，θ₂ < θ₁；從空氣進玻璃不可能全反射。"
+     ],
+     "flash": [
+      {
+       "front": "司乃耳定律？",
+       "back": "n₁ sin θ₁ = n₂ sin θ₂（角度從法線量）。"
+      }
+     ],
+     "next": "下一課：從慢到快、角度又太大時，光會出不去——全反射。"
+    }
+   ]
+  },
+  {
+   "id": "l2c",
+   "title": "全反射與臨界角",
+   "goals": [
+    "能說出全反射的兩個條件",
+    "能用 sin θc = n₂/n₁ 計算臨界角"
+   ],
+   "teaches": [
+    "全反射",
+    "臨界角"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "光被「關」在水裡",
+     "body": [
+      "潛水時從水底往上看，斜斜的方向看出去，水面像一面**鏡子**——你看不到外面，只看到水底的倒影。",
+      "",
+      "這是因為光從水射向空氣時，如果角度太斜，**一點都出不去**，全部反射回水裡。這叫**全反射**。",
+      "",
+      "光纖能把光送到很遠的地方，用的就是全反射。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "全反射：光一點都出不去",
+     "body": [
+      "**從慢到快**（n 大 → n 小）時，折射光偏離法線，折射角比入射角大。",
+      "",
+      "入射角越來越大 → 折射角也越來越大 → 某一刻折射角到了 **90°**（折射光貼著介面走）。",
+      "",
+      "再大下去，折射光**無處可去** → 光**全部反射**回原介質 → **全反射**。",
+      "",
+      "**兩個條件**（缺一不可）：",
+      "1. **介質**：從**折射率高**（光慢）射向**折射率低**（光快）。",
       "2. **角度**：入射角**大於或等於臨界角**。",
       "",
-      "**臨界角 θc**：折射角剛好 90°（折射光貼著介面走）時的入射角。",
-      "",
-      "```",
-      "n₁ sin θc = n₂ sin 90°  ⇒  sin θc = n₂ / n₁（n₁ > n₂）",
-      "```",
-      "",
-      "| 由 → 到 | 臨界角 |",
-      "|---|---|",
-      "| 水（1.33）→ 空氣 | sin⁻¹(1/1.33) ≈ 48.8° |",
-      "| 玻璃（1.5）→ 空氣 | sin⁻¹(1/1.5) ≈ 41.8° |",
-      "",
-      "**應用**：光纖、稜鏡反射。"
+      "**一句話**：從空氣射向水，再斜都不會全反射；從水射向空氣，夠斜就會。"
      ],
      "keys": [
       "條件①：高 n → 低 n",
       "條件②：入射角 ≥ 臨界角",
-      "sin θc = n₂/n₁"
+      "全反射時沒有折射光"
      ],
-     "img": "img/physopt-u2/critical-angle.png",
-     "img_source": "課堂簡報第二單元投影片 20（臨界角照片）",
      "flash": {
-      "front": "玻璃（n = 1.5）到空氣的臨界角？",
-      "back": "sin θc = 1/1.5，θc ≈ 41.8°。"
+      "front": "全反射的兩個條件？",
+      "back": "高 n → 低 n；入射角 ≥ 臨界角。"
      }
     },
     {
@@ -403,12 +833,31 @@
      "explain": "全反射必須從**高 n 到低 n**，所以 A 介質折射率要比 B **高**——A 敘述不符合。\nB 符合：A 的 n 較高，光在 A 中較慢。C 符合：入射角 ≥ 臨界角。D 符合：全反射時沒有折射光。"
     },
     {
-     "type": "interactive",
-     "title": "動手玩：司乃耳定律與全反射",
-     "body": "調整兩側折射率與入射角，觀察折射光的方向；按「玻璃→空氣」試試全反射。",
-     "task": "選「水→空氣」，把入射角慢慢加大，找出折射光消失的角度，並和畫面上顯示的臨界角比較。",
-     "height": 560,
-     "html": "<!doctype html><html><head><meta charset=\"utf-8\"><style>\nbody{margin:0;padding:10px;font:15px system-ui,\"Microsoft JhengHei\",sans-serif;background:#fbf7ec;color:#2e2116}\n.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:5px 0}\nsvg{width:100%;height:auto;border:1px solid #d8cfb8;border-radius:8px}\n.big{font-size:18px;font-weight:bold;color:#8a3b12}\n.note{background:#fff3cf;padding:6px 10px;border-radius:6px}\nbutton{font:inherit;padding:3px 10px;border-radius:6px;border:1px solid #b9a77f;background:#fff}\ninput[type=range]{width:200px}\n.small{font-size:14px;color:#6b5a45}\n</style></head><body>\n<div class=\"note\">觀察重點：角度一律從法線量起。進入較大 n 的介質 → 偏向法線；進入較小 n 的介質 → 偏離法線，入射角 ≥ 臨界角時全反射。</div>\n<svg id=\"s\" viewBox=\"0 0 800 340\"></svg>\n<div class=\"row\">\n<label>上方 n₁ <input id=\"n1\" type=\"range\" min=\"1\" max=\"2\" step=\"0.01\" value=\"1\"> <b id=\"n1v\"></b></label>\n<label>下方 n₂ <input id=\"n2\" type=\"range\" min=\"1\" max=\"2\" step=\"0.01\" value=\"1.33\"> <b id=\"n2v\"></b></label>\n</div>\n<div class=\"row\"><label>入射角 θ₁ <input id=\"a\" type=\"range\" min=\"0\" max=\"89\" value=\"40\"> <b id=\"av\"></b></label>\n<button data-p=\"1,1.33\">空氣→水</button><button data-p=\"1.33,1\">水→空氣</button><button data-p=\"1.5,1\">玻璃→空氣</button><button data-p=\"1,1.5\">空氣→玻璃</button></div>\n<div class=\"big\" id=\"out\"></div>\n<div id=\"msg\"></div>\n<div class=\"small\">公式：n₁ sin θ₁ = n₂ sin θ₂；臨界角 sin θc = n₂ / n₁（只在 n₁ &gt; n₂ 時存在）；近軸：n₁θ₁ ≈ n₂θ₂</div>\n<script>\nfunction $(i){return document.getElementById(i)}\nvar R=Math.PI/180;\nfunction ar(x1,y1,x2,y2,c,w){var mx=(x1+x2)/2,my=(y1+y2)/2,a=Math.atan2(y2-y1,x2-x1),L=9;\nreturn '<line x1=\"'+x1+'\" y1=\"'+y1+'\" x2=\"'+x2+'\" y2=\"'+y2+'\" stroke=\"'+c+'\" stroke-width=\"'+w+'\"/><polygon fill=\"'+c+'\" points=\"'+(mx+L*Math.cos(a))+','+(my+L*Math.sin(a))+' '+(mx-L*Math.cos(a)+5*Math.sin(a))+','+(my-L*Math.sin(a)-5*Math.cos(a))+' '+(mx-L*Math.cos(a)-5*Math.sin(a))+','+(my-L*Math.sin(a)+5*Math.cos(a))+'\"/>';}\nfunction draw(){\nvar n1=+$('n1').value,n2=+$('n2').value,t1=+$('a').value,ox=400,oy=170,L=190,o='';\n$('n1v').textContent=n1.toFixed(2);$('n2v').textContent=n2.toFixed(2);$('av').textContent=t1+'°';\nfunction shade(v){var k=Math.round(255-(v-1)*120);return 'rgb('+k+','+(k+5>255?255:k+5)+',255)'}\no+='<rect x=\"0\" y=\"0\" width=\"800\" height=\"170\" fill=\"'+shade(n1)+'\"/><rect x=\"0\" y=\"170\" width=\"800\" height=\"170\" fill=\"'+shade(n2)+'\"/>';\no+='<line x1=\"0\" y1=\"170\" x2=\"800\" y2=\"170\" stroke=\"#444\" stroke-width=\"2\"/>';\no+='<line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"340\" stroke=\"#555\" stroke-dasharray=\"6 5\"/><text x=\"408\" y=\"18\" font-size=\"14\">法線</text><text x=\"700\" y=\"162\" font-size=\"14\">介面</text>';\no+='<text x=\"12\" y=\"24\" font-size=\"15\">n₁ = '+n1.toFixed(2)+'</text><text x=\"12\" y=\"330\" font-size=\"15\">n₂ = '+n2.toFixed(2)+'</text>';\nvar s1=Math.sin(t1*R),sx=ox-L*s1,sy=oy-L*Math.cos(t1*R),x=n1*s1/n2,tir=x>1;\no+=ar(sx,sy,ox,oy,'#c0392b',3);\no+=ar(ox,oy,ox+L*s1,oy-L*Math.cos(t1*R),'#e08a00',tir?3:1.5);\nvar msg='',t2;\nif(!tir){t2=Math.asin(x)/R;o+=ar(ox,oy,ox+L*Math.sin(t2*R),oy+L*Math.cos(t2*R),'#1d6fb8',3);\n o+='<text x=\"'+(ox+12+60*Math.sin(t2*R))+'\" y=\"'+(oy+70)+'\" font-size=\"14\" fill=\"#1d6fb8\">θ₂</text>';}\no+='<text x=\"'+(ox-30-50*s1)+'\" y=\"'+(oy-60)+'\" font-size=\"14\" fill=\"#c0392b\">θ₁</text>';\n$('s').innerHTML=o;\nvar tc=n1>n2?Math.asin(n2/n1)/R:null;\nif(tir){$('out').textContent='θ₁ = '+t1+'°：全反射！（沒有折射光）';msg='n₁ sinθ₁ / n₂ = '+x.toFixed(3)+' > 1，找不到折射角。';}\nelse{$('out').textContent='θ₁ = '+t1+'°　→　θ₂ = '+t2.toFixed(1)+'°';\n msg=n2>n1?'進入較大折射率（較慢）的介質：折射光偏向法線（θ₂ < θ₁）。':(n2<n1?'進入較小折射率（較快）的介質：折射光偏離法線（θ₂ > θ₁）。':'折射率相同：不偏折。');\n if(t1>0){var p=n1*t1/n2;msg+='　近軸近似 θ₂ ≈ n₁θ₁/n₂ = '+p.toFixed(1)+'°（誤差 '+Math.abs(p-t2).toFixed(1)+'°）';}}\nif(tc!==null)msg+='　臨界角 θc = '+tc.toFixed(1)+'°';else msg+='　（n₁ ≤ n₂：不會全反射）';\n$('msg').textContent=msg;}\n['n1','n2','a'].forEach(function(i){$(i).oninput=draw});\ndocument.querySelectorAll('button').forEach(function(b){b.onclick=function(){var p=b.dataset.p.split(',');$('n1').value=p[0];$('n2').value=p[1];draw();}});\ndraw();\n</script></body></html>"
+     "type": "card",
+     "title": "臨界角：折射角剛好 90° 的那個入射角",
+     "body": [
+      "把「折射角 = 90°」代進司乃耳定律（sin 90° = 1）：",
+      "```",
+      "n₁ sin θc = n₂ × 1",
+      "sin θc = n₂ / n₁     （n₁ > n₂）",
+      "```",
+      "| 由 → 到 | 臨界角 |",
+      "|---|---|",
+      "| 水（1.33）→ 空氣 | sin⁻¹(1/1.33) ≈ **48.8°** |",
+      "| 玻璃（1.5）→ 空氣 | sin⁻¹(1/1.5) ≈ **41.8°** |",
+      "| 折射率 2.0 → 空氣 | sin⁻¹(0.5) = **30°** |",
+      "",
+      "**規律**：兩邊折射率差越大，臨界角越小，越容易全反射（鑽石 n ≈ 2.4，臨界角只有約 24.6°，所以特別閃亮）。"
+     ],
+     "keys": [
+      "sin θc = n₂/n₁",
+      "水→空氣 ≈ 48.8°、玻璃→空氣 ≈ 41.8°",
+      "n 差越大，臨界角越小"
+     ],
+     "flash": {
+      "front": "玻璃（n = 1.5）到空氣的臨界角？",
+      "back": "sin θc = 1/1.5，θc ≈ 41.8°。"
+     }
     },
     {
      "type": "check",
@@ -424,16 +873,37 @@
      "explain": "臨界角 θc = sin⁻¹(1/1.33) ≈ 48.8°；入射角 50° > 48.8°，且由高 n 到低 n → **全反射**。檢查：1.33 × sin 50° = 1.02 > 1，找不到折射角。"
     },
     {
-     "type": "example",
-     "title": "司乃耳定律完整計算",
-     "problem": "一束光由真空射入折射率 1.5 的介質，入射方向與介面夾 30°。求入射角與折射角；若光反過來由介質射向真空，臨界角是多少？（改編自劉立中自創題庫）",
-     "steps": [
-      "入射角從法線量：90° − 30° = **60°**。",
-      "司乃耳定律：1 × sin 60° = 1.5 × sin θ₂ → sin θ₂ = 0.866/1.5 = 0.577。",
-      "θ₂ = sin⁻¹(0.577) ≈ **35.3°**；比 60° 小，偏向法線，合理。",
-      "反向（介質 → 真空）：sin θc = 1/1.5 = 0.667 → θc ≈ **41.8°**。"
+     "type": "interactive",
+     "title": "動手玩：找出臨界角",
+     "body": "調整兩側折射率與入射角，觀察折射光的方向；按「玻璃→空氣」試試全反射。",
+     "task": "選「水→空氣」，把入射角慢慢加大，找出折射光消失的角度，並和畫面上顯示的臨界角比較。",
+     "height": 560,
+     "html": "<!doctype html><html><head><meta charset=\"utf-8\"><style>\nbody{margin:0;padding:10px;font:15px system-ui,\"Microsoft JhengHei\",sans-serif;background:#fbf7ec;color:#2e2116}\n.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:5px 0}\nsvg{width:100%;height:auto;border:1px solid #d8cfb8;border-radius:8px}\n.big{font-size:18px;font-weight:bold;color:#8a3b12}\n.note{background:#fff3cf;padding:6px 10px;border-radius:6px}\nbutton{font:inherit;padding:3px 10px;border-radius:6px;border:1px solid #b9a77f;background:#fff}\ninput[type=range]{width:200px}\n.small{font-size:14px;color:#6b5a45}\n</style></head><body>\n<div class=\"note\">觀察重點：角度一律從法線量起。進入較大 n 的介質 → 偏向法線；進入較小 n 的介質 → 偏離法線，入射角 ≥ 臨界角時全反射。</div>\n<svg id=\"s\" viewBox=\"0 0 800 340\"></svg>\n<div class=\"row\">\n<label>上方 n₁ <input id=\"n1\" type=\"range\" min=\"1\" max=\"2\" step=\"0.01\" value=\"1\"> <b id=\"n1v\"></b></label>\n<label>下方 n₂ <input id=\"n2\" type=\"range\" min=\"1\" max=\"2\" step=\"0.01\" value=\"1.33\"> <b id=\"n2v\"></b></label>\n</div>\n<div class=\"row\"><label>入射角 θ₁ <input id=\"a\" type=\"range\" min=\"0\" max=\"89\" value=\"40\"> <b id=\"av\"></b></label>\n<button data-p=\"1,1.33\">空氣→水</button><button data-p=\"1.33,1\">水→空氣</button><button data-p=\"1.5,1\">玻璃→空氣</button><button data-p=\"1,1.5\">空氣→玻璃</button></div>\n<div class=\"big\" id=\"out\"></div>\n<div id=\"msg\"></div>\n<div class=\"small\">公式：n₁ sin θ₁ = n₂ sin θ₂；臨界角 sin θc = n₂ / n₁（只在 n₁ &gt; n₂ 時存在）；近軸：n₁θ₁ ≈ n₂θ₂</div>\n<script>\nfunction $(i){return document.getElementById(i)}\nvar R=Math.PI/180;\nfunction ar(x1,y1,x2,y2,c,w){var mx=(x1+x2)/2,my=(y1+y2)/2,a=Math.atan2(y2-y1,x2-x1),L=9;\nreturn '<line x1=\"'+x1+'\" y1=\"'+y1+'\" x2=\"'+x2+'\" y2=\"'+y2+'\" stroke=\"'+c+'\" stroke-width=\"'+w+'\"/><polygon fill=\"'+c+'\" points=\"'+(mx+L*Math.cos(a))+','+(my+L*Math.sin(a))+' '+(mx-L*Math.cos(a)+5*Math.sin(a))+','+(my-L*Math.sin(a)-5*Math.cos(a))+' '+(mx-L*Math.cos(a)-5*Math.sin(a))+','+(my-L*Math.sin(a)+5*Math.cos(a))+'\"/>';}\nfunction draw(){\nvar n1=+$('n1').value,n2=+$('n2').value,t1=+$('a').value,ox=400,oy=170,L=190,o='';\n$('n1v').textContent=n1.toFixed(2);$('n2v').textContent=n2.toFixed(2);$('av').textContent=t1+'°';\nfunction shade(v){var k=Math.round(255-(v-1)*120);return 'rgb('+k+','+(k+5>255?255:k+5)+',255)'}\no+='<rect x=\"0\" y=\"0\" width=\"800\" height=\"170\" fill=\"'+shade(n1)+'\"/><rect x=\"0\" y=\"170\" width=\"800\" height=\"170\" fill=\"'+shade(n2)+'\"/>';\no+='<line x1=\"0\" y1=\"170\" x2=\"800\" y2=\"170\" stroke=\"#444\" stroke-width=\"2\"/>';\no+='<line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"340\" stroke=\"#555\" stroke-dasharray=\"6 5\"/><text x=\"408\" y=\"18\" font-size=\"14\">法線</text><text x=\"700\" y=\"162\" font-size=\"14\">介面</text>';\no+='<text x=\"12\" y=\"24\" font-size=\"15\">n₁ = '+n1.toFixed(2)+'</text><text x=\"12\" y=\"330\" font-size=\"15\">n₂ = '+n2.toFixed(2)+'</text>';\nvar s1=Math.sin(t1*R),sx=ox-L*s1,sy=oy-L*Math.cos(t1*R),x=n1*s1/n2,tir=x>1;\no+=ar(sx,sy,ox,oy,'#c0392b',3);\no+=ar(ox,oy,ox+L*s1,oy-L*Math.cos(t1*R),'#e08a00',tir?3:1.5);\nvar msg='',t2;\nif(!tir){t2=Math.asin(x)/R;o+=ar(ox,oy,ox+L*Math.sin(t2*R),oy+L*Math.cos(t2*R),'#1d6fb8',3);\n o+='<text x=\"'+(ox+12+60*Math.sin(t2*R))+'\" y=\"'+(oy+70)+'\" font-size=\"14\" fill=\"#1d6fb8\">θ₂</text>';}\no+='<text x=\"'+(ox-30-50*s1)+'\" y=\"'+(oy-60)+'\" font-size=\"14\" fill=\"#c0392b\">θ₁</text>';\n$('s').innerHTML=o;\nvar tc=n1>n2?Math.asin(n2/n1)/R:null;\nif(tir){$('out').textContent='θ₁ = '+t1+'°：全反射！（沒有折射光）';msg='n₁ sinθ₁ / n₂ = '+x.toFixed(3)+' > 1，找不到折射角。';}\nelse{$('out').textContent='θ₁ = '+t1+'°　→　θ₂ = '+t2.toFixed(1)+'°';\n msg=n2>n1?'進入較大折射率（較慢）的介質：折射光偏向法線（θ₂ < θ₁）。':(n2<n1?'進入較小折射率（較快）的介質：折射光偏離法線（θ₂ > θ₁）。':'折射率相同：不偏折。');\n if(t1>0){var p=n1*t1/n2;msg+='　近軸近似 θ₂ ≈ n₁θ₁/n₂ = '+p.toFixed(1)+'°（誤差 '+Math.abs(p-t2).toFixed(1)+'°）';}}\nif(tc!==null)msg+='　臨界角 θc = '+tc.toFixed(1)+'°';else msg+='　（n₁ ≤ n₂：不會全反射）';\n$('msg').textContent=msg;}\n['n1','n2','a'].forEach(function(i){$(i).oninput=draw});\ndocument.querySelectorAll('button').forEach(function(b){b.onclick=function(){var p=b.dataset.p.split(',');$('n1').value=p[0];$('n2').value=p[1];draw();}});\ndraw();\n</script></body></html>"
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "（接互動）選「玻璃→空氣」，入射角調到 45°，畫面上會看到什麼？",
+     "choices": [
+      "只剩反射光，沒有折射光",
+      "折射光偏向法線",
+      "折射光剛好貼著介面",
+      "光直直穿過"
      ],
-     "answer": "入射角 60°、折射角約 35.3°、反向臨界角約 41.8°；關鍵是角度一律從法線量。"
+     "answer": "A",
+     "hint": "玻璃→空氣的臨界角約 41.8°，45° 比它大還是小？",
+     "explain": "45° > 41.8°，而且是高 n → 低 n → **全反射**：只剩反射光。（1.5 × sin 45° = 1.06 > 1，找不到折射角。）"
+    },
+    {
+     "type": "example",
+     "title": "臨界角的完整判斷",
+     "problem": "光在折射率 1.50 的玻璃中，射向玻璃與空氣的介面。①臨界角是多少？②入射角 30° 會怎樣？③入射角 60° 會怎樣？",
+     "steps": [
+      "**① 臨界角**：sin θc = 1/1.50 = 0.667 → θc ≈ **41.8°**。",
+      "**② 30°**：小於 41.8° → 會折射。sin θ₂ = 1.50 × sin 30° = 0.75 → θ₂ ≈ **48.6°**（比 30° 大，偏離法線 ✓）。",
+      "**③ 60°**：大於 41.8° → **全反射**。檢查：1.50 × sin 60° = 1.30 > 1，sin 不可能大於 1，所以沒有折射光。"
+     ],
+     "answer": "θc ≈ 41.8°；30° 時折射角約 48.6°；60° 時全反射。"
     },
     {
      "type": "practice",
@@ -509,11 +979,14 @@
   },
   {
    "id": "l3",
-   "title": "近軸近似、聚散度公式與平面介面",
+   "title": "近軸近似：角度很小時，三角函數可以拿掉",
    "goals": [
-    "能說明小角度近似 sin θ ≈ tan θ ≈ θ（弧度）與近軸光線",
-    "能用 V = P + U 描述光學系統對聚散度的影響",
-    "能用平面介面計算視深（水中物體、平板玻璃）"
+    "能說明小角度近似 sin θ ≈ tan θ ≈ θ（弧度）",
+    "知道近軸光線的意思，並寫出近軸的司乃耳定律"
+   ],
+   "teaches": [
+    "近軸",
+    "小角度近似"
    ],
    "steps": [
     {
@@ -529,30 +1002,25 @@
     },
     {
      "type": "card",
-     "title": "小角度近似：先理解再刪掉",
+     "title": "小角度近似：三個長度幾乎一樣",
      "body": [
-      "**弧度的意義**：半徑 r 的圓上，圓心角 θ（弧度）對應的弧長 = rθ。",
+      "在半徑 1 的圓上，角度 θ（**弧度**）對應三段長度：",
+      "- **弧長** = θ",
+      "- **對邊（垂直高度）** = sin θ",
+      "- **切線長** = tan θ",
       "",
-      "**角度很小時**，弧長、對邊（垂直高度）和切線長幾乎一樣長，所以：",
-      "",
+      "角度很小時，這三段**幾乎一樣長**：",
       "```",
-      "sin θ ≈ tan θ ≈ θ（θ 以弧度計）",
+      "sin θ ≈ tan θ ≈ θ    （θ 用弧度）",
       "```",
+      "**有多準？** 10° = 0.1745 rad，sin 10° = 0.1736、tan 10° = 0.1763，誤差大約 1%。角度越大，誤差越大。",
       "",
-      "**近軸光線**：靠近光軸、與光軸夾角很小的光線。在近軸條件下，司乃耳定律簡化為：",
-      "",
-      "```",
-      "n₁ θ₁ ≈ n₂ θ₂",
-      "```",
-      "",
-      "**有多準？** 10° = 0.1745 rad，sin 10° = 0.1736、tan 10° = 0.1763，誤差不到 1%。角度越大誤差越大（可在上一課的互動裡看到近軸近似與真值的差距）。",
-      "",
-      "**連結**：本課程的透鏡、厚透鏡、眼球模型，都在近軸光學（一階光學）的範圍內。"
+      "**易錯**：一定要用**弧度**。把「10」直接當 θ 代進去就完全錯了。（換算：弧度 = 度 × π/180）"
      ],
      "keys": [
-      "sin θ ≈ tan θ ≈ θ（弧度，θ 小）",
-      "近軸司乃耳：n₁θ₁ ≈ n₂θ₂",
-      "透鏡公式都建立在近軸近似上"
+      "sin θ ≈ tan θ ≈ θ（弧度、角度小）",
+      "弧度 = 度 × π/180",
+      "角度越大誤差越大"
      ],
      "flash": {
       "front": "小角度近似？",
@@ -565,6 +1033,142 @@
      "q": "小角度近似 sin θ ≈ θ 中的 θ 必須以「度」為單位代入。",
      "answer": false,
      "explain": "必須用**弧度**。例如 5° = 0.0873 rad，sin 5° = 0.0872；若直接用 5 代入就完全錯了。"
+    },
+    {
+     "type": "interactive",
+     "title": "動手玩：小角度近似有多準？",
+     "body": "拉動角度，看紅色弧長、藍色 sin θ、綠色 tan θ 三段長度，以及它們和 θ（弧度）差多少。",
+     "task": "①角度 5°：三段長度幾乎重疊嗎？誤差多少？②慢慢拉到 20°、30°：tan θ 的誤差什麼時候超過 5%？③想想看：為什麼透鏡公式只適用於「靠近光軸」的光？",
+     "height": 450,
+     "html": "<!doctype html><html><head><meta charset=\"utf-8\"><style>\nbody{margin:0;padding:10px;font:15px system-ui,\"Microsoft JhengHei\",sans-serif;background:#fbf7ec;color:#2e2116}\n.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0}\nlabel{display:flex;align-items:center;gap:6px}\ninput[type=range]{width:170px}\ninput[type=number]{width:70px;font:inherit}\nbutton{font:inherit;padding:3px 9px;border:1px solid #b9a57a;background:#fff3d6;border-radius:6px;cursor:pointer}\nsvg{width:100%;height:auto;background:#fff;border:1px solid #d9c9a3;border-radius:8px;margin-top:6px}\n.out{background:#fff;border:1px solid #d9c9a3;border-radius:8px;padding:6px 10px;margin-top:6px;font-family:Consolas,monospace;font-size:14px;white-space:pre-wrap}\n.hl{color:#b23a1f;font-weight:bold}.ok{color:#1d7a3a;font-weight:bold}.note{color:#7a6a50;font-size:13px}\n\ntable.t{border-collapse:collapse;margin-top:6px;font-size:14px}\ntable.t td{border:1px solid #d9c9a3;padding:3px 9px;background:#fff;text-align:right}\n</style></head><body>\n<div class=\"row\"><label>角度 θ <input type=\"range\" id=\"a\" min=\"1\" max=\"60\" step=\"1\" value=\"10\"> <b id=\"av\"></b>°</label></div>\n<svg id=\"sv\" viewBox=\"0 0 760 270\"></svg>\n<table class=\"t\" id=\"tb\"></table>\n<div class=\"out\" id=\"out\"></div>\n<script>\nconst $=id=>document.getElementById(id);\n$('a').oninput=draw;\nfunction draw(){\n const d=+$('a').value,t=d*Math.PI/180,s=Math.sin(t),tn=Math.tan(t);$('av').textContent=d;\n const ox=40,oy=250,R=320,X=x=>ox+x*R,Y=y=>oy-y*R;\n let g='<line x1=\"'+ox+'\" y1=\"'+oy+'\" x2=\"'+X(1.25)+'\" y2=\"'+oy+'\" stroke=\"#999\"/>';\n g+='<path d=\"M'+X(1)+' '+oy+' A'+R+' '+R+' 0 0 0 '+X(Math.cos(t))+' '+Y(s)+'\" fill=\"none\" stroke=\"#d1495b\" stroke-width=\"5\"/>';\n g+='<line x1=\"'+ox+'\" y1=\"'+oy+'\" x2=\"'+X(1)+'\" y2=\"'+Y(tn)+'\" stroke=\"#555\" stroke-width=\"1.5\"/>';\n g+='<line x1=\"'+X(Math.cos(t))+'\" y1=\"'+oy+'\" x2=\"'+X(Math.cos(t))+'\" y2=\"'+Y(s)+'\" stroke=\"#1f6fb2\" stroke-width=\"4\"/>';\n g+='<line x1=\"'+X(1)+'\" y1=\"'+oy+'\" x2=\"'+X(1)+'\" y2=\"'+Y(tn)+'\" stroke=\"#1d7a3a\" stroke-width=\"4\"/>';\n g+='<text x=\"'+(X(1)+8)+'\" y=\"'+(Y(tn/2)+4)+'\" font-size=\"14\" fill=\"#1d7a3a\">tan θ</text>';\n g+='<text x=\"'+(X(Math.cos(t))-52)+'\" y=\"'+(Y(s/2)+4)+'\" font-size=\"14\" fill=\"#1f6fb2\">sin θ</text>';\n g+='<text x=\"'+(X(1)+8)+'\" y=\"'+(Y(s)-10)+'\" font-size=\"14\" fill=\"#d1495b\">弧長 θ</text>';\n g+='<text x=\"'+(ox+18)+'\" y=\"'+(oy-6)+'\" font-size=\"13\">θ</text><text x=\"'+(X(0.5))+'\" y=\"'+(oy+18)+'\" font-size=\"13\">半徑 = 1</text>';\n $('sv').innerHTML=g;\n const e=x=>((x-t)/t*100).toFixed(2)+'%';\n $('tb').innerHTML='<tr><td>θ（弧度）</td><td>'+t.toFixed(4)+'</td><td>—</td></tr><tr><td>sin θ</td><td>'+s.toFixed(4)+'</td><td>差 '+e(s)+'</td></tr><tr><td>tan θ</td><td>'+tn.toFixed(4)+'</td><td>差 '+e(tn)+'</td></tr>';\n $('out').innerHTML=Math.abs(tn-t)/t<0.02?'<span class=\"ok\">誤差在 2% 以內：sin θ ≈ tan θ ≈ θ 可以放心用（近軸）。</span>':Math.abs(tn-t)/t<0.05?'誤差 2～5%：近似開始不太準了。':'<span class=\"hl\">誤差超過 5%：角度太大，不能用近軸近似。</span>';}\ndraw();\n</script></body></html>"
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "（接互動）角度從 5° 增加到 30°，小角度近似的誤差會？",
+     "choices": [
+      "越來越大",
+      "越來越小",
+      "一直是 0",
+      "先變大再變小"
+     ],
+     "answer": "A",
+     "hint": "看 tan θ 和 θ 的差距怎麼變。",
+     "explain": "角度越大，sin θ、tan θ 和 θ 的差距越大：5° 時 tan 誤差約 0.25%，30° 時已超過 10%。所以近軸近似只適用於小角度。"
+    },
+    {
+     "type": "card",
+     "title": "近軸光線與近軸司乃耳定律",
+     "body": [
+      "**近軸光線**：靠近光軸、和光軸夾角很小的光線。在近軸條件下，sin θ 可以換成 θ，司乃耳定律變成乘法：",
+      "```",
+      "n₁ θ₁ ≈ n₂ θ₂",
+      "```",
+      "**易錯**：折射率要配**同一側**的角度——是 n₁ 配 θ₁、n₂ 配 θ₂，不要寫成 n₁θ₂ ≈ n₂θ₁。",
+      "",
+      "**為什麼重要？** 本課程所有的透鏡公式（V = P + U、厚透鏡、眼球模型）都是在近軸近似下推出來的，這叫**近軸光學**（一階光學）。",
+      "",
+      "老師：**先理解，再刪掉**——知道三角函數是怎麼被近似掉的，就不怕公式了。"
+     ],
+     "keys": [
+      "近軸：靠近光軸、角度小",
+      "n₁θ₁ ≈ n₂θ₂（同側配對）",
+      "透鏡公式都建立在近軸近似上"
+     ],
+     "flash": {
+      "front": "近軸司乃耳定律？",
+      "back": "n₁θ₁ ≈ n₂θ₂。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "近軸條件下，司乃耳定律可以寫成？",
+     "choices": [
+      "n₁θ₁ ≈ n₂θ₂",
+      "n₁θ₂ ≈ n₂θ₁",
+      "θ₁ ≈ θ₂",
+      "n₁ + θ₁ ≈ n₂ + θ₂"
+     ],
+     "answer": "A",
+     "hint": "把 sin θ 換成 θ，其他不動。",
+     "explain": "n₁ sin θ₁ = n₂ sin θ₂ → **n₁θ₁ ≈ n₂θ₂**。B 把折射率和角度配錯邊；C 只有兩邊折射率一樣時才成立。"
+    },
+    {
+     "type": "example",
+     "title": "近軸算一次折射角",
+     "problem": "光由空氣以入射角 6° 射入 n = 1.5 的玻璃。①用近軸公式估算折射角。②和司乃耳定律的真值比較。",
+     "steps": [
+      "**換弧度**：6° = 6 × π/180 ≈ **0.1047 rad**。",
+      "**近軸**：θ₂ ≈ n₁θ₁/n₂ = 0.1047/1.5 = **0.0698 rad ≈ 4.00°**。",
+      "**真值**：sin θ₂ = sin 6°/1.5 = 0.1045/1.5 = 0.0697 → θ₂ ≈ **3.996°**。",
+      "**比較**：差不到 0.01°——角度小時，近軸近似非常準。"
+     ],
+     "answer": "近軸 ≈ 4.00°，真值 ≈ 3.996°，幾乎一樣。"
+    },
+    {
+     "type": "practice",
+     "title": "實戰：近軸近似",
+     "qids": [],
+     "pick": {
+      "match": [
+       "近軸",
+       "小角度近似"
+      ],
+      "subjects": [
+       "physopt"
+      ],
+      "n": 2
+     },
+     "checks": [
+      {
+       "kind": "tf",
+       "q": "小角度近似 sin θ ≈ θ 中，θ 必須以「度」為單位代入。",
+       "answer": false,
+       "explain": "必須用**弧度**。例如 5° = 0.0873 rad，sin 5° = 0.0872；若直接用 5 代入就完全錯了。"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "小角度（弧度）：sin θ ≈ tan θ ≈ θ；角度越大誤差越大。",
+      "近軸光線：靠近光軸、與光軸夾角小。",
+      "近軸司乃耳定律：n₁θ₁ ≈ n₂θ₂（同側配對）。",
+      "透鏡公式都建立在近軸近似上。"
+     ],
+     "flash": [
+      {
+       "front": "近軸司乃耳定律？",
+       "back": "n₁θ₁ ≈ n₂θ₂。"
+      }
+     ],
+     "next": "下一課：聚散度公式 V = P + U，以及平面介面的視深。"
+    }
+   ]
+  },
+  {
+   "id": "l3b",
+   "title": "聚散度公式與平面介面：視深怎麼算",
+   "goals": [
+    "能用 V = P + U 描述光學系統對聚散度的影響",
+    "能用平面介面（P = 0）計算水中物體、平板玻璃的視深"
+   ],
+   "teaches": [
+    "聚散度公式",
+    "平面介面"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "光學系統是一台「加法器」",
+     "body": [
+      "第一單元學過聚散度：描述光束有多會聚或多發散。這一課學一條貫穿整門課的公式：",
+      "",
+      "> **出去的聚散度 ＝ 系統的屈光力 ＋ 進來的聚散度**",
+      "",
+      "然後用它來算一個生活例子：從水面上看下去，東西看起來在多深的地方。"
+     ]
     },
     {
      "type": "card",
@@ -743,11 +1347,18 @@
   },
   {
    "id": "l4",
-   "title": "球面折射介面：屈光力、焦距與成像",
+   "title": "球面折射介面（上）：幾何與正負號",
    "goals": [
-    "能指出球面介面的頂點、曲率中心、曲率半徑，並依光行進方向判斷正負號",
-    "能用 P = (n₂ − n₁)/r 計算表面屈光力",
-    "能用 U = n₁/u、V = P + U、V = n₂/v 求成像位置與焦距"
+    "能指出球面介面的頂點、曲率中心、曲率半徑",
+    "知道球面上每一點的法線都通過曲率中心",
+    "能依光行進方向判斷曲率半徑、物距、像距的正負"
+   ],
+   "teaches": [
+    "球面折射",
+    "頂點",
+    "曲率半徑",
+    "正負號",
+    "弧高"
    ],
    "steps": [
     {
@@ -776,7 +1387,7 @@
       "1. **物距、像距、焦距都由頂點 A 算起**。",
       "2. **球面上每一點的法線都通過 C**——所以在入射點 Q 畫法線，就是連 Q 與 C。",
       "",
-      "**弧高 s 與半高 y**：鏡片邊緣到光軸的高度 y，與表面在該處「凹進去的深度」s，近軸時 s ≈ y²/(2r)。表面越彎（r 越小），同樣直徑下 s 越大。"
+      "**弧高（sag）s 與半高 y**：鏡片邊緣到光軸的高度 y，與表面在該處「凹進去的深度」s，近軸時 s ≈ y²/(2r)。表面越彎（r 越小），同樣直徑下 s 越大。"
      ],
      "keys": [
       "距離都從頂點 A 量",
@@ -917,35 +1528,113 @@
      "explain": "r 從頂點 A 量到曲率中心 C；C 在左方，與光行進方向相反 → r = **−20 cm**。A 只看距離沒看方向；C 把半徑當成焦距或直徑的一半。"
     },
     {
-     "type": "card",
-     "title": "表面屈光力與焦距",
+     "type": "example",
+     "title": "同一個面，光從不同方向來",
+     "problem": "一個球面的曲率中心 C 在頂點 A 右方 10 cm。①光由左向右時，r 是多少？②光改成由右向左時，r 變成多少？③凸面一定填正號嗎？",
+     "steps": [
+      "**① 光由左向右**：從 A 走到 C 是**向右**，和光同方向 → r = **+10 cm**。",
+      "**② 光由右向左**：從 A 走到 C 仍是向右，但現在光往左走 → 方向相反 → r = **−10 cm**。",
+      "**③** 對左來的光，這個面是凸面（往左鼓）；對右來的光，它是凹面。所以「凸」或「凹」要看**光從哪邊來**，正負號更是要看 **A→C 和光的方向**。",
+      "**結論**：不要只看形狀填正負號，每次都問「從頂點走到球心，和光同向嗎？」"
+     ],
+     "answer": "①+10 cm ②−10 cm ③不一定，要看光的方向。"
+    },
+    {
+     "type": "practice",
+     "title": "實戰：球面幾何與正負號",
+     "qids": [],
+     "pick": {
+      "match": [
+       "曲率半徑",
+       "正負號",
+       "球面折射"
+      ],
+      "subjects": [
+       "physopt"
+      ],
+      "n": 2
+     },
+     "checks": [
+      {
+       "kind": "single",
+       "q": "光由左向右。一球面的曲率中心位於頂點右方 15 cm，下列何者正確？",
+       "choices": [
+        "r = +15 cm，這個面對入射光是凸面",
+        "r = −15 cm，凹面",
+        "r = +15 cm，凹面",
+        "r = −15 cm，凸面"
+       ],
+       "answer": "A",
+       "explain": "C 在右 → A→C 與光同向 → r = **+15 cm**；球心在右邊，表面往左（迎光）鼓出 → 對入射光是**凸面**。"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "球面介面：頂點 A、曲率中心 C、曲率半徑 r（A → C）、光軸；距離都從頂點量。",
+      "球面上每一點的法線都通過 C；弧高（sag）s ≈ y²/(2r)。",
+      "正負號：與光行進方向同向為正（r、u、v 都是）。",
+      "凸凹要看光從哪邊來；同一面反方向入射時 r 變號。"
+     ],
+     "flash": [
+      {
+       "front": "曲率半徑正負怎麼判斷？",
+       "back": "C 在頂點的光行進方向那側為正。"
+      }
+     ],
+     "next": "下一課：彎曲的介面有了屈光力——P = (n₂ − n₁)/r。"
+    }
+   ]
+  },
+  {
+   "id": "l4b",
+   "title": "球面折射介面（下）：屈光力、焦距與成像",
+   "goals": [
+    "能用 P = (n₂ − n₁)/r 計算表面屈光力",
+    "能用 f₂ = n₂/P、f₁ = −n₁/P 算焦距",
+    "能用 U = n₁/u、V = P + U、V = n₂/v 求成像位置"
+   ],
+   "teaches": [
+    "屈光力",
+    "焦距",
+    "成像"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "彎曲的介面，就是一片「半個透鏡」",
      "body": [
-      "**表面屈光力**：",
+      "眼鏡片、隱形眼鏡、角膜，都是**彎曲的折射面**。平面介面的屈光力是 0；把它彎成球面，就有了屈光力。",
       "",
+      "這一課的三件事都只是把前面學的組合起來：",
+      "1. 算出這個面的屈光力 P",
+      "2. 算出兩個焦距",
+      "3. 用 V = P + U 算成像——**記得兩邊的折射率不一樣**"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "表面屈光力 P = (n₂ − n₁)/r",
+     "body": [
+      "介面彎成球面，就能讓平行光會聚或發散，也就是有了**屈光力**：",
       "```",
-      "P = (n₂ − n₁) / r   （r 用公尺，P 單位 D）",
+      "P = (n₂ − n₁) / r    （r 用公尺，P 單位 D）",
       "n₁：入射側折射率；n₂：出射側折射率",
       "```",
+      "**兩個直覺**：",
+      "- **折射率差越大**，轉彎越多 → |P| 越大。",
+      "- **越彎**（|r| 越小）→ |P| 越大。平面 r = ∞ → P = 0（上一課的平面介面）。",
       "",
-      "**成像計算**（聚散度三式）：",
+      "**例 1**：空氣 → 玻璃（1.50），凸面 r = +10 cm：P = (1.50 − 1)/0.10 = **+5.00 D**（會聚面）。",
+      "**例 2**：n₁ = 1.5 → n₂ = 1.7，r = −10 cm：P = (1.7 − 1.5)/(−0.10) = **−2.00 D**（發散面）。",
       "",
-      "```",
-      "U = n₁ / u     V = P + U     V = n₂ / v",
-      "```",
-      "",
-      "**焦距**（都由頂點量起）：",
-      "- 第二焦距 f₂：平行光入射（U = 0）後會聚的位置：**f₂ = n₂ / P**；",
-      "- 第一焦距 f₁：讓出射光平行（V = 0）的物點位置：**f₁ = −n₁ / P**。",
-      "- 因為兩側 n 不同，**|f₁| ≠ |f₂|**。",
-      "",
-      "**P > 0 會聚表面、P < 0 發散表面**。",
-      "",
-      "**例**：n₁ = 1.5 → n₂ = 1.7，r = −10 cm：P = (1.7 − 1.5)/(−0.1) = **−2.00 D**（發散表面）。"
+      "**P > 0 會聚表面、P < 0 發散表面**。"
      ],
      "keys": [
       "P = (n₂ − n₁)/r",
-      "U = n₁/u、V = P + U、V = n₂/v",
-      "f₂ = n₂/P、f₁ = −n₁/P"
+      "折射率差大、越彎 → |P| 大",
+      "P > 0 會聚、P < 0 發散"
      ],
      "flash": {
       "front": "球面折射面屈光力公式？",
@@ -965,6 +1654,47 @@
      "answer": "A",
      "hint": "先確認 n₁、n₂ 誰是入射側，r 換成公尺。",
      "explain": "P = (n₂ − n₁)/r = (1.7 − 1.5)/(−0.10 m) = **−2.00 D**。\nB 忽略 r 的負號；C 是把 (1.7 + 1.5)/0.1 相加；D 用公分代入。"
+    },
+    {
+     "type": "card",
+     "title": "焦距與成像：兩邊折射率不一樣",
+     "body": [
+      "**成像三式**（距離都從頂點量）：",
+      "```",
+      "U = n₁ / u    V = P + U    V = n₂ / v",
+      "```",
+      "注意 U 用**入射側** n₁、V 用**出射側** n₂。",
+      "",
+      "**兩個焦距**：",
+      "- 第二焦距（平行光進來，聚在哪）：**f₂ = n₂ / P**",
+      "- 第一焦距（物放哪，出去才平行）：**f₁ = −n₁ / P**",
+      "- 兩邊 n 不同 → **|f₁| ≠ |f₂|**",
+      "",
+      "**例**：空氣 → 玻璃（1.50），P = +5.00 D：f₂ = 1.50/5 = **+30 cm**（玻璃裡）、f₁ = −1/5 = **−20 cm**（空氣裡）。"
+     ],
+     "keys": [
+      "U = n₁/u、V = P + U、V = n₂/v",
+      "f₂ = n₂/P、f₁ = −n₁/P",
+      "兩側 n 不同 → |f₁| ≠ |f₂|"
+     ],
+     "flash": {
+      "front": "球面介面的 f₂？",
+      "back": "f₂ = n₂/P（由頂點量）。"
+     }
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "空氣進入 n = 1.50 的玻璃，表面屈光力 P = +5.00 D。第一焦距 f₁ 與第二焦距 f₂ 為何？",
+     "choices": [
+      "f₁ = −20 cm、f₂ = +30 cm",
+      "f₁ = −20 cm、f₂ = +20 cm",
+      "f₁ = −30 cm、f₂ = +30 cm",
+      "f₁ = +20 cm、f₂ = −30 cm"
+     ],
+     "answer": "A",
+     "hint": "f₂ 用出射側 n₂ = 1.50，f₁ 用入射側 n₁ = 1。",
+     "explain": "f₂ = 1.50/5 = 0.30 m = **+30 cm**；f₁ = −1/5 = **−20 cm**。兩邊折射率不同，所以兩個焦距不一樣長。"
     },
     {
      "type": "example",
@@ -1054,17 +1784,15 @@
   },
   {
    "id": "l5",
-   "title": "進階：簡化眼——把眼睛當成一個球面折射面",
+   "title": "進階：簡化眼（上）——眼睛的遠點",
    "goals": [
     "建立簡化眼並算出屈光力與焦距",
-    "用 V = P + U 求遠點、軸性屈光不正的矯正度數",
-    "算出看近需要的調節"
+    "用 V = P + U 由眼軸長求遠點，判斷近視、正視、遠視"
    ],
    "teaches": [
     "簡化眼",
     "遠點",
-    "軸性屈光不正",
-    "調節需求"
+    "軸性屈光不正"
    ],
    "steps": [
     {
@@ -1155,6 +1883,114 @@
      ],
      "hint": "先算 V = n/ℓ，再 U = V − P，最後 u = 1/U（取絕對值換成 cm）。",
      "explain": "V = 1.333/0.0240 = 55.54 D；U = 55.54 − 60 = −4.46 D；|u| = 1/4.46 = 0.2243 m ≈ **22.4 cm**。"
+    },
+    {
+     "type": "interactive",
+     "title": "動手玩：眼軸長和近視、遠視",
+     "body": "拉動眼軸長（角膜到視網膜的距離），看平行光聚在視網膜前、上或後，以及需要多少度的矯正鏡。",
+     "task": "①眼軸長 22.2 mm：是正視眼嗎？②拉到 24 mm：遠點在哪裡？③拉到 21 mm：要用正透鏡還是負透鏡？",
+     "height": 470,
+     "html": "<!doctype html><html><head><meta charset=\"utf-8\"><style>\nbody{margin:0;padding:10px;font:15px system-ui,\"Microsoft JhengHei\",sans-serif;background:#fbf7ec;color:#2e2116}\n.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:4px 0}\nlabel{display:flex;align-items:center;gap:6px}\ninput[type=range]{width:170px}\ninput[type=number]{width:70px;font:inherit}\nbutton{font:inherit;padding:3px 9px;border:1px solid #b9a57a;background:#fff3d6;border-radius:6px;cursor:pointer}\nsvg{width:100%;height:auto;background:#fff;border:1px solid #d9c9a3;border-radius:8px;margin-top:6px}\n.out{background:#fff;border:1px solid #d9c9a3;border-radius:8px;padding:6px 10px;margin-top:6px;font-family:Consolas,monospace;font-size:14px;white-space:pre-wrap}\n.hl{color:#b23a1f;font-weight:bold}.ok{color:#1d7a3a;font-weight:bold}.note{color:#7a6a50;font-size:13px}\n</style></head><body>\n<div class=\"row\"><label>眼軸長 ℓ <input type=\"range\" id=\"l\" min=\"20\" max=\"28\" step=\"0.5\" value=\"24\"> <b id=\"lv\"></b> mm</label></div>\n<div class=\"row\"><label>眼睛屈光力 P <input type=\"range\" id=\"p\" min=\"56\" max=\"64\" step=\"0.5\" value=\"60\"> <b id=\"pv\"></b> D</label><span class=\"note\">眼內 n = 1.333（簡化眼）</span></div>\n<svg id=\"sv\" viewBox=\"0 0 760 240\"></svg>\n<div class=\"out\" id=\"out\"></div>\n<script>\nconst $=id=>document.getElementById(id);\n['l','p'].forEach(id=>$(id).oninput=draw);\nconst sg=x=>(x>0?'+':x<0?'−':'')+Math.abs(x).toFixed(2);\nfunction draw(){\n const l=+$('l').value,P=+$('p').value,n=1.333;$('lv').textContent=l;$('pv').textContent=P;\n const f2=n/P*1000,V=n/(l/1000),U=V-P;\n const ax=280,mm=14,Y0=120;\n let s='<line x1=\"0\" y1=\"'+Y0+'\" x2=\"760\" y2=\"'+Y0+'\" stroke=\"#bbb\" stroke-dasharray=\"5 4\"/>';\n s+='<ellipse cx=\"'+(ax+l*mm/2)+'\" cy=\"'+Y0+'\" rx=\"'+(l*mm/2+6)+'\" ry=\"95\" fill=\"#eef6fb\" stroke=\"#7a9cc0\"/>';\n s+='<path d=\"M'+ax+' 40 Q'+(ax-28)+' '+Y0+' '+ax+' 200\" fill=\"none\" stroke=\"#1f6fb2\" stroke-width=\"4\"/>';\n const xr=ax+l*mm,xf=ax+f2*mm;\n s+='<line x1=\"'+xr+'\" y1=\"40\" x2=\"'+xr+'\" y2=\"200\" stroke=\"#b2321f\" stroke-width=\"4\"/><text x=\"'+(xr-20)+'\" y=\"215\" font-size=\"13\" fill=\"#b2321f\">視網膜</text>';\n s+='<circle cx=\"'+xf+'\" cy=\"'+Y0+'\" r=\"5\" fill=\"#1d7a3a\"/><text x=\"'+(xf-10)+'\" y=\"'+(Y0-10)+'\" font-size=\"13\" fill=\"#1d7a3a\">F₂</text>';\n [-50,50].forEach(h=>{s+='<line x1=\"20\" y1=\"'+(Y0-h)+'\" x2=\"'+ax+'\" y2=\"'+(Y0-h)+'\" stroke=\"#d1495b\" stroke-width=\"2\"/>';\n  const k=h/(xf-ax);const xe=Math.max(xr,xf)+20;s+='<line x1=\"'+ax+'\" y1=\"'+(Y0-h)+'\" x2=\"'+xe+'\" y2=\"'+(Y0-(h-k*(xe-ax)))+'\" stroke=\"#d1495b\" stroke-width=\"2\"/>';});\n $('sv').innerHTML=s+'<text x=\"20\" y=\"20\" font-size=\"12\" fill=\"#7a6a50\">平行光（來自無限遠）進入眼睛</text>';\n let o='F₂ 在角膜後 f₂ = n/P = '+f2.toFixed(1)+' mm；視網膜在 '+l.toFixed(1)+' mm\\n';\n o+='要在視網膜成像，眼內需要 V = n/ℓ = '+V.toFixed(2)+' D\\n入射需要 U = V − P = <span class=\"hl\">'+sg(U)+' D</span>\\n';\n if(Math.abs(U)<0.13) o+='<span class=\"ok\">正視眼</span>：平行光剛好聚在視網膜上，遠點在無限遠，不需要矯正。';\n else if(U<0) o+='<span class=\"hl\">近視</span>：平行光聚在視網膜前方。遠點在眼前 '+(100/-U).toFixed(1)+' cm；矯正鏡（貼近眼睛）約 '+sg(Math.round(U*4)/4)+' D（負透鏡）。';\n else o+='<span class=\"hl\">遠視</span>：平行光還沒聚好就到視網膜。遠點是眼後 '+(100/U).toFixed(1)+' cm 的虛物；矯正鏡約 '+sg(Math.round(U*4)/4)+' D（正透鏡）。';\n $('out').innerHTML=o;}\ndraw();\n</script></body></html>"
+    },
+    {
+     "type": "check",
+     "kind": "single",
+     "q": "（接互動）眼軸長從 22.2 mm 拉長到 25 mm（屈光力不變），眼睛會變成？",
+     "choices": [
+      "近視，遠點在眼前有限距離",
+      "遠視，需要正透鏡",
+      "還是正視",
+      "看不到任何東西"
+     ],
+     "answer": "A",
+     "hint": "眼軸變長，視網膜跑到 F₂ 的前面還是後面？",
+     "explain": "眼軸變長 → 視網膜在 F₂ 後方 → 平行光聚在視網膜**前方** → **近視**：U = 1.333/0.025 − 60 = −6.68 D，遠點在眼前約 15 cm。"
+    },
+    {
+     "type": "example",
+     "title": "遠視眼的遠點在眼睛後面？",
+     "problem": "簡化眼（P = +60.0 D，n = 1.333），眼軸長 21.0 mm。求遠點，並說明它的意思。",
+     "steps": [
+      "**眼內需要的聚散度**：V = n/ℓ = 1.333/0.0210 = **+63.48 D**。",
+      "**入射需要的聚散度**：U = V − P = 63.48 − 60 = **+3.48 D**——正的，代表進來的光要**已經在會聚**。",
+      "**遠點**：u = 1/U = +0.287 m → 在**眼後** 28.7 cm，是一個**虛物**。",
+      "**意思**：只有「朝眼後 28.7 cm 會聚」的光才能剛好聚在視網膜上。遠方來的平行光不夠會聚 → 看遠也模糊，必須自己調節或戴**正透鏡**。",
+      "**對照**：近視的遠點在眼前（實物）、遠視的遠點在眼後（虛物）、正視在無限遠。",
+      "**名稱**：像這樣眼睛屈光力正常（+60 D）、只是眼軸太長或太短造成的，叫**軸性屈光不正**：眼軸太長→軸性近視、太短→軸性遠視。"
+     ],
+     "answer": "遠點在眼後 28.7 cm（虛物）；要用約 +3.50 D 的正透鏡矯正。"
+    },
+    {
+     "type": "practice",
+     "title": "實戰：簡化眼與遠點",
+     "qids": [],
+     "pick": {
+      "match": [
+       "簡化眼",
+       "遠點",
+       "軸性屈光不正"
+      ],
+      "subjects": [
+       "physopt"
+      ],
+      "n": 2
+     },
+     "checks": [
+      {
+       "kind": "single",
+       "q": "簡化眼（P = +60.0 D，n = 1.333），眼軸長 23.0 mm，遠點大約在哪裡？",
+       "choices": [
+        "眼前約 49 cm",
+        "眼前約 22 cm",
+        "無限遠",
+        "眼後約 49 cm"
+       ],
+       "answer": "A",
+       "explain": "V = 1.333/0.023 = 57.96 D；U = 57.96 − 60 = −2.04 D（負 → 近視）；|u| = 1/2.04 ≈ 0.49 m → 遠點在眼前約 **49 cm**。眼軸只比正視長 0.8 mm，就有約 −2 D 的近視。"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "簡化眼：n = 1.333、r = 5.55 mm、P ≈ +60 D、f₂ ≈ 22.2 mm（視網膜在 F₂＝正視）；是教學近似。",
+      "遠點：V = n/ℓ → U = V − P → u = 1/U。",
+      "近視：遠點在眼前（U < 0）；正視：遠點在無限遠；遠視：遠點是眼後的虛物（U > 0）。"
+     ],
+     "flash": [
+      {
+       "front": "簡化眼的 P、f₂？",
+       "back": "P ≈ +60 D，f₂ = n/P ≈ 22.2 mm。"
+      }
+     ],
+     "next": "下一課：怎麼矯正，以及看近時眼睛要多出力（調節）。"
+    }
+   ]
+  },
+  {
+   "id": "l5b",
+   "title": "進階：簡化眼（下）——矯正與調節",
+   "goals": [
+    "用 V = P + U 求軸性屈光不正的矯正度數",
+    "算出看近需要的調節"
+   ],
+   "teaches": [
+    "軸性屈光不正",
+    "調節需求"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "矯正鏡在做什麼？看近時眼睛在做什麼？",
+     "body": [
+      "上一課算出：近視眼的遠點在眼前、遠視眼的遠點在眼後。",
+      "",
+      "這一課回答兩個臨床問題：",
+      "1. **矯正鏡要幾度？**——讓無限遠的光，看起來像是從遠點來的。",
+      "2. **看近要多出多少力？**——近物的光是發散的，眼睛要加大屈光力（調節）。",
+      "",
+      "> 兩個答案都只是 V = P + U 的移項。"
+     ]
     },
     {
      "type": "card",
