@@ -170,7 +170,7 @@ const LEARN_UI = (() => {
       items.forEach(b => b.onclick = () => {
         if (locked) return; SFX.play('click');
         order.push(Number(b.dataset.i)); b.disabled = true; draw();
-        if (order.length === c.items.length) setTimeout(() => { order.every((x, i) => x === i) ? finish(true, () => { seq.querySelectorAll('.lc-seqi').forEach(x => x.classList.add('good')); ans.querySelector('.lc-pool').remove(); ans.querySelector('.lc-undo').remove(); }) : wrong(show); }, 150);
+        if (order.length === c.items.length) setTimeout(() => { if (locked || order.length !== c.items.length) return; order.every((x, i) => x === i) ? finish(true, () => { seq.querySelectorAll('.lc-seqi').forEach(x => x.classList.add('good')); ans.querySelector('.lc-pool').remove(); ans.querySelector('.lc-undo').remove(); }) : wrong(show); }, 150);
       });
       ans.querySelector('.lc-undo').onclick = () => { if (!locked) reset(); };
       draw();
@@ -691,7 +691,7 @@ const LEARN_UI = (() => {
           save();
         }
         if (!pk.items.length) { body.innerHTML = head + '<p class="dim">（這個實戰找不到可用的題目，先跳過）</p>'; ready(); return; }
-        if (D.cfg.battle && !B.mon && !pk.fought) { B.mon = newMon(true, pk.items.length); pk.fought = true; save(); drawBattle(); setTimeout(() => say(`精英怪 ${B.mon.name} 擋住了去路！`), 300); }
+        if (D.cfg.battle && !B.mon && !pk.fought) { B.mon = newMon(true, pk.items.length); pk.fought = true; save(); drawBattle(); const eliteName = B.mon.name; setTimeout(() => say(`精英怪 ${eliteName} 擋住了去路！`), 300); }
         sub();
         function sub() {
           cleanupQ();
