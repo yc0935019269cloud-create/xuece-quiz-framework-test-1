@@ -282,10 +282,13 @@ const LEARN_UI = (() => {
   }
 
   /* 依關鍵字從題庫抽題：比對考點 tag 與詳解，優先沒做過的 */
+  /* 「承上題／同上題」要接著前一題才看得懂，學習模式是單題抽出來的，所以不出這種題（遠征照常） */
+  const FOLLOW_RE = /^\s*(【[^】]*】\s*)?(承上|承前|續上|接上|同上|延續上)/;
+  const followUp = id => { const q = Store.Q[id]; return !!q && FOLLOW_RE.test(q.stem || ''); };
   function pickQ(pick, n, subj) {
     const words = (pick.match || []).map(w => w.toLowerCase());
     let pool = Store.filter({ subjects: pick.subjects || (subj ? [subj] : []), exams: pick.exams, ids: pick.ids, types: pick.types || ['single', 'multi', 'fill'] })
-      .filter(q => q.type !== 'open' && words.some(w => (q.tag || '').toLowerCase().includes(w) || (pick.inEx !== false && (q.ex || '').toLowerCase().includes(w))));
+      .filter(q => q.type !== 'open' && !followUp(q.id) && words.some(w => (q.tag || '').toLowerCase().includes(w) || (pick.inEx !== false && (q.ex || '').toLowerCase().includes(w))));
     const fresh = pool.filter(q => !Store.qs[q.id]?.a), old = pool.filter(q => Store.qs[q.id]?.a);
     return U.shuffle(fresh).concat(U.shuffle(old)).slice(0, n).map(q => q.id);
   }
@@ -684,8 +687,10 @@ const LEARN_UI = (() => {
         body._key = e => { if (e.key === 'Enter' && document.body.contains(nb)) { reveal(); return true; } return false; };
       } else if (s.type === 'practice') {
         const pk = R.pk[st.i] || (R.pk[st.i] = { items: [] });
+        // 舊進度裡還沒做到的承上題拿掉
+        if (pk.items.length) pk.items = pk.items.filter((x, i) => i <= (R.sub || 0) || !x.q || !followUp(x.q));
         if (!pk.items.length) {
-          (s.qids || []).filter(q => Store.Q[q]).forEach(q => pk.items.push({ q }));
+          (s.qids || []).filter(q => Store.Q[q] && !followUp(q)).forEach(q => pk.items.push({ q }));
           if (s.pick) pickQ(s.pick, s.pick.n || 2, p.subject).filter(q => !pk.items.some(x => x.q === q)).forEach(q => pk.items.push({ q }));
           (s.checks || []).forEach((c, i) => pk.items.push({ c: i }));
           save();

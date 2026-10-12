@@ -167,10 +167,12 @@ const PEGLIN = (() => {
       default: return { ...base, type: 'open', hint: '', ans: joinMd(c.answer) }; // self 自評
     }
   }
+  // 「承上題」單獨抽出來看不懂，學習時不出（與 learn.js 相同規則）
+  const FOLLOW_RE = /^\s*(【[^】]*】\s*)?(承上|承前|續上|接上|同上|延續上)/;
   function pickBank(pick, n, subj) {
     const words = (pick.match || []).map(w => w.toLowerCase());
     const list = Store.filter({ subjects: pick.subjects || (subj ? [subj] : []), types: pick.types || ['single', 'multi', 'fill'] })
-      .filter(q => q.type !== 'open' && words.some(w => (q.tag || '').toLowerCase().includes(w) || (pick.inEx !== false && (q.ex || '').toLowerCase().includes(w))));
+      .filter(q => q.type !== 'open' && !FOLLOW_RE.test(q.stem || '') && words.some(w => (q.tag || '').toLowerCase().includes(w) || (pick.inEx !== false && (q.ex || '').toLowerCase().includes(w))));
     const fresh = list.filter(q => !Store.qs[q.id]?.a), old = list.filter(q => Store.qs[q.id]?.a);
     return U.shuffle(fresh).concat(U.shuffle(old)).slice(0, n);
   }
@@ -182,7 +184,7 @@ const PEGLIN = (() => {
       else if (s.type === 'check') out.push(checkItem(s, paths));
       else if (s.type === 'example') read('範例', s.title || '範例', joinMd(s.problem), { exSteps: (s.steps || []).map(joinMd), exAnswer: joinMd(s.answer || '') });
       else if (s.type === 'practice') {
-        const bank = (s.qids || []).map(id => Store.Q[id]).filter(Boolean).concat(s.pick ? pickBank(s.pick, s.pick.n || 2, p.subject) : []);
+        const bank = (s.qids || []).map(id => Store.Q[id]).filter(q => q && !FOLLOW_RE.test(q.stem || '')).concat(s.pick ? pickBank(s.pick, s.pick.n || 2, p.subject) : []);
         bank.forEach(q => out.push(bankItem(q, paths)));
         (s.checks || []).forEach(c => out.push(checkItem(c, paths)));
       }
