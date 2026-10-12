@@ -40,6 +40,8 @@ const Screens = (() => {
     const m = /第\s*([0-9]+|[一二三四五六七八九十]+)(?:\s*[-–~～]\s*[0-9一二三四五六七八九十]+)?\s*(單元|章|節|課|回|次)/.exec(name) || /^\s*(\d+)/.exec(name);
     return m ? cnNum(m[1]) : null;
   }
+  /* 國考年份：path 裡的「106 年國考」「106 年」（不含「114 學年度」這類課程資料） */
+  const yearOf = e => { for (const x of e.path || []) { const m = /^\s*(\d{2,3})\s*年(國考)?\s*$/.exec(String(x)); if (m) return Number(m[1]); } return null; };
   const treeIds = n => [...n.sets.map(s => s.e.id), ...[...n.kids.values()].flatMap(treeIds)];
   /* 題本挑選器（自由遠征、深淵遠征）：依分類樹收合，每層可一鍵全選；state.exams 空陣列＝全部。
    * 回傳重畫函式；科目改變時呼叫它。展開狀態在這次畫面內記住。 */
@@ -54,15 +56,23 @@ const Screens = (() => {
       const pick = ids => { const on = ids.filter(id => sel.has(id)).length;
         return `<span class="dim small-t">${on ? `已選 ${on}／` : ''}${ids.length} 本</span><span class="grow"></span><button class="px-btn small" data-pick="${ids.join(',')}">${on === ids.length ? '取消' : '全選'}</button>`; };
       const chips = sets => `<div class="st-sets">${sets.map(({ e, leaf }) => `<span class="chip ${sel.has(e.id) ? 'on' : ''}" data-v="${e.id}" title="${U.esc(QV.exLabel(e))}">${U.esc(leaf)} <small class="dim">${e.count}</small></span>`).join('')}</div>`;
-      const node = (n, sj, depth) => { const k = sj + n.key;
+      // 依年份一次選：點「106 年」＝勾選這個範圍內所有 106 年國考的題本（全部已選時再點＝取消）
+      const yearRow = (ex, label) => {
+        const by = new Map(); ex.forEach(e => { const y = yearOf(e); if (y != null) (by.get(y) || by.set(y, []).get(y)).push(e.id); });
+        if (!by.size) return '';
+        return `<div class="st-years"><span class="dim small-t">${label}</span>${[...by.keys()].sort((a, b) => a - b).map(y => { const ids = by.get(y), on = ids.filter(id => sel.has(id)).length;
+          return `<span class="chip ${on === ids.length ? 'on' : on ? 'part' : ''}" data-pick="${ids.join(',')}" title="${ids.length} 本題本">${y} 年</span>`; }).join('')}</div>`;
+      };
+      const node = (n, sj, depth, top) => { const k = sj + n.key;
         return `<details class="stree" data-key="${U.esc(k)}" ${(open[k] ?? depth === 0) ? 'open' : ''}><summary><span class="st-name">${U.esc(n.name)}</span>${pick(treeIds(n))}</summary>
-          <div class="st-body">${[...n.kids.values()].map(c => node(c, sj, depth + 1)).join('')}${n.sets.length ? chips(n.sets) : ''}</div></details>`; };
+          <div class="st-body">${top ? yearRow(SETS.filter(e => e.subj === sj), '依年份：') : ''}${[...n.kids.values()].map(c => node(c, sj, depth + 1)).join('')}${n.sets.length ? chips(n.sets) : ''}</div></details>`; };
       const html = sjs.map(sj => {
         const ex = SETS.filter(e => e.subj === sj); if (!ex.length) return '';
         const t = setTree(ex); t.name = C.SUBJECTS[sj].name;
-        return node(t, sj, sjs.length > 1 ? 1 : 0);   // 選多科時各科先收起來
+        return node(t, sj, sjs.length > 1 ? 1 : 0, true);   // 選多科時各科先收起來
       }).join('');
-      box.innerHTML = html ? `<div class="stree-wrap">${html}</div>` : '<span class="dim small-t">（先選科目）</span>';
+      const allYears = sjs.length > 1 ? yearRow(SETS.filter(e => sjs.includes(e.subj)), '所有科目依年份：') : '';
+      box.innerHTML = html ? `<div class="stree-wrap">${allYears}${html}</div>` : '<span class="dim small-t">（先選科目）</span>';
     };
     box.addEventListener('toggle', e => { if (e.target.dataset && e.target.dataset.key) open[e.target.dataset.key] = e.target.open; }, true);
     box.onclick = ev => {
