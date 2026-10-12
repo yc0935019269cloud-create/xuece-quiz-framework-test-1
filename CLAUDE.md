@@ -161,7 +161,7 @@
 
 ## 計算紙手寫手感與小工具視窗縮放（2026-10-12）
 
-- `js/pad.js`：書寫時只補畫新線段（requestAnimationFrame），不再每次整張重畫；畫布用 `desynchronized` 低延遲模式；觸控筆壓力做平滑。整個計算紙禁止選取文字（CSS user-select＋攔 selectstart／dblclick／contextmenu），快速連寫不會反白；觸控筆橡皮擦端（button 5）直接擦除。逐段畫與整張重畫的結果已逐像素比對一致。
+- `js/pad.js`：書寫時只補畫新線段（requestAnimationFrame），不再每次整張重畫；畫布用 `desynchronized` 低延遲模式；觸控筆壓力做平滑。整個計算紙禁止選取文字（CSS user-select＋攔 selectstart／dblclick／contextmenu），快速連寫不會反白；觸控筆橡皮擦端（button 5）直接擦除。逐段畫與整張重畫的結果已逐像素比對一致。寫字時（落筆到收筆後 0.7 秒）`<html>` 加 `pad-ink`：整頁禁止選取並清掉既有反白，canvas 的 touchstart 對觸控筆 preventDefault（iPad Safari 的雙擊選字、長按由 touch 事件觸發，否則會反白紙外的「繼續」按鈕）。
 - `U.grip(panel, {key, minW, minH, apply, reset})`（`js/util.js`）：計算機、計算紙、AI 助教右下角的調整大小把手；放大碰到螢幕邊緣時視窗會往左上挪；大小記在 localStorage `winsize`（不進存檔），雙擊把手恢復；手機寬度不顯示。計算機用 CSS 變數 `--k` 等比例縮放（按鍵、字一起變）。
 
 ## 檢核題不可寫「承上題」（2026-10-12）

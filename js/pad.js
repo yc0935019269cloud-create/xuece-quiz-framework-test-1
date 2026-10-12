@@ -76,6 +76,7 @@ const PAD = (() => {
     if (e.pointerType === 'touch' && penSeen && D.palm) return;     // 防手掌：用過觸控筆後，手指不畫
     e.preventDefault();                                             // 先擋掉預設動作（選取文字、拖曳）再判斷
     if (drawing) return;                                            // 已經在寫了（另一根手指／手掌），不理
+    inking(true);
     const eraserEnd = e.pointerType === 'pen' && (e.button === 5 || (e.buttons & 32));   // 觸控筆的橡皮擦端
     if (e.button > 0 && !eraserEnd) return;
     if (tool === 'text' && !eraserEnd) return placeText(e);
@@ -101,7 +102,17 @@ const PAD = (() => {
     if (raf) { cancelAnimationFrame(raf); raf = 0; }
     paintLive(); style(ctx, drawing); tail(ctx, drawing);
     delete drawing.id; D.items.push(drawing); drawing = null; drawnTo = 0; save();
+    inking(false);
   }
+  /* 寫字時整頁都不准選取：iPad 上觸控筆快速點寫會被當成雙擊／長按，去反白紙外面的按鈕文字（例如「繼續」） */
+  let inkT = 0;
+  const unselect = () => { const sel = getSelection && getSelection(); if (sel && sel.rangeCount && !(txtIn && txtIn.contains(sel.anchorNode))) sel.removeAllRanges(); };
+  function inking(on) {
+    clearTimeout(inkT);
+    if (on) { document.documentElement.classList.add('pad-ink'); unselect(); }
+    else { unselect(); inkT = setTimeout(() => { document.documentElement.classList.remove('pad-ink'); unselect(); }, 700); }
+  }
+  document.addEventListener('selectstart', e => { if (document.documentElement.classList.contains('pad-ink') && e.target !== txtIn) e.preventDefault(); }, true);
   /* 文字工具：在點的位置出現輸入框，Enter 換行、點別處或按「完成」寫上去 */
   function placeText(e) {
     commitText();
@@ -139,6 +150,8 @@ const PAD = (() => {
     ['contextmenu', 'dblclick', 'dragstart'].forEach(t => cv.addEventListener(t, e => e.preventDefault()));
     cv.addEventListener('pointerdown', onDown); cv.addEventListener('pointermove', onMove);
     cv.addEventListener('pointerup', onUp); cv.addEventListener('pointercancel', onUp);
+    // iOS Safari 的雙擊選字、長按放大鏡由 touch 事件觸發，pointer 的 preventDefault 擋不住；觸控筆（與沒開防手掌時的手指）在這裡擋
+    cv.addEventListener('touchstart', e => { if (tool === 'text') return; if ([...e.changedTouches].some(t => t.touchType === 'stylus') || !(penSeen && D.palm)) e.preventDefault(); }, { passive: false });
     txtIn.oninput = autosize;
     txtIn.onblur = () => setTimeout(commitText, 0);
     U.$$('[data-tool]', panel).forEach(b => b.onclick = () => { commitText(); tool = b.dataset.tool; sync(); });
