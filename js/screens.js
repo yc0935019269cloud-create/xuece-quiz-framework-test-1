@@ -5,8 +5,6 @@ const Screens = (() => {
   const MAIN_SUBJ = Object.keys(C.SUBJECTS);
   const syncSubjects = () => { MAIN_SUBJ.length = 0; MAIN_SUBJ.push(...Object.keys(C.SUBJECTS)); };
   const SETS = window.QB.exams;
-  /* 題本（章節／試卷）篩選 chips：只列出目前選到的科目 */
-  const setChips = (subjects, sel) => chipGroup(SETS.filter(e => !subjects.length || subjects.includes(e.subj)).map(e => [e.id, QV.exLabel(e)]), sel);
 
   /* ---------- 題本樹：依 set.path 分層（自由遠征、冒險地圖共用） ----------
    * path 裡和科目同名的層級省略；「106 年國考」「114 學年度」這類來源層放到最後，當成題本按鈕的名稱，
@@ -27,18 +25,31 @@ const Screens = (() => {
       dirs.forEach(d => { if (!n.kids.has(d)) n.kids.set(d, mk(d, n.key + '/' + d)); n = n.kids.get(d); });
       n.sets.push({ e, leaf });
     });
+    // 同層的「第一單元／第06單元／106 年」依數字排，避免照讀檔順序變成一、三、二、五、四（有任何一個沒有數字就維持原順序）
+    const sortN = (arr, name) => { const ks = arr.map(x => ordNum(name(x))); if (ks.every(k => k != null)) return arr.map((x, i) => [x, ks[i], i]).sort((a, b) => a[1] - b[1] || a[2] - b[2]).map(a => a[0]); return arr; };
+    const sortTree = n => { n.kids = new Map(sortN([...n.kids.entries()], ([k]) => k)); n.sets = sortN(n.sets, s => s.leaf); n.kids.forEach(sortTree); };
+    sortTree(root);
     // 只有一個子層、本身沒有題本的層級併成「A › B」，少點一層
     const squash = n => { n.kids.forEach(squash); if (n !== root) while (!n.sets.length && n.kids.size === 1) { const k = [...n.kids.values()][0]; n.name += ' › ' + k.name; n.key = k.key; n.kids = k.kids; n.sets = k.sets; } };
     squash(root);
     return root;
   }
+  const CN = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9 };
+  const cnNum = t => { if (/^\d+$/.test(t)) return Number(t); const i = t.indexOf('十'); if (i < 0) return CN[t] ?? null; return (i ? CN[t[i - 1]] : 1) * 10 + (CN[t[i + 1]] || 0); };
+  function ordNum(name) {
+    const m = /第\s*([0-9]+|[一二三四五六七八九十]+)(?:\s*[-–~～]\s*[0-9一二三四五六七八九十]+)?\s*(單元|章|節|課|回|次)/.exec(name) || /^\s*(\d+)/.exec(name);
+    return m ? cnNum(m[1]) : null;
+  }
   const treeIds = n => [...n.sets.map(s => s.e.id), ...[...n.kids.values()].flatMap(treeIds)];
   /* 題本挑選器（自由遠征、深淵遠征）：依分類樹收合，每層可一鍵全選；state.exams 空陣列＝全部。
    * 回傳重畫函式；科目改變時呼叫它。展開狀態在這次畫面內記住。 */
-  function setPicker(box, state, onChange) {
+  function setPicker(box, state, onChange, opts = {}) {
     const open = {};
+    // opts.allIfNone：科目沒選＝全部科目（題庫頁），各科先收起來
+    const subjs = () => state.subjects.length || !opts.allIfNone ? state.subjects : MAIN_SUBJ.filter(sj => SETS.some(e => e.subj === sj));
     const draw = () => {
-      state.exams = state.exams.filter(id => Store.EX[id] && state.subjects.includes(Store.EX[id].subj));
+      const sjs = subjs();
+      state.exams = state.exams.filter(id => Store.EX[id] && sjs.includes(Store.EX[id].subj));
       const sel = new Set(state.exams);
       const pick = ids => { const on = ids.filter(id => sel.has(id)).length;
         return `<span class="dim small-t">${on ? `已選 ${on}／` : ''}${ids.length} 本</span><span class="grow"></span><button class="px-btn small" data-pick="${ids.join(',')}">${on === ids.length ? '取消' : '全選'}</button>`; };
@@ -46,10 +57,10 @@ const Screens = (() => {
       const node = (n, sj, depth) => { const k = sj + n.key;
         return `<details class="stree" data-key="${U.esc(k)}" ${(open[k] ?? depth === 0) ? 'open' : ''}><summary><span class="st-name">${U.esc(n.name)}</span>${pick(treeIds(n))}</summary>
           <div class="st-body">${[...n.kids.values()].map(c => node(c, sj, depth + 1)).join('')}${n.sets.length ? chips(n.sets) : ''}</div></details>`; };
-      const html = state.subjects.map(sj => {
+      const html = sjs.map(sj => {
         const ex = SETS.filter(e => e.subj === sj); if (!ex.length) return '';
         const t = setTree(ex); t.name = C.SUBJECTS[sj].name;
-        return node(t, sj, state.subjects.length > 1 ? 1 : 0);   // 選多科時各科先收起來
+        return node(t, sj, sjs.length > 1 ? 1 : 0);   // 選多科時各科先收起來
       }).join('');
       box.innerHTML = html ? `<div class="stree-wrap">${html}</div>` : '<span class="dim small-t">（先選科目）</span>';
     };
@@ -216,28 +227,30 @@ const Screens = (() => {
           ${vouchers ? '<div class="small-t dim">兌換券可任選一款新造型（價值 160～240 魂晶）。</div><div class="row mt" style="justify-content:flex-end"><button class="px-btn small purple" id="voucherUse">選新造型兌換</button></div>' : ''}
         </div>` : '';
     const tod = timeOfDay();
+    // 營地選單依功能分區（每區一個標題，按鈕照常排列）
+    const MENU_GROUPS = [['study', '📚 讀書與刷題'], ['adv', '⚔️ 冒險'], ['peg', '⚪ 彈珠（Peglin）'], ['col', '🧙 角色與收藏'], ['tool', '🛠 工具與設定']];
     const tiles = [
-      run && { id: 'continue', icon: 45, t: '繼續遠征', d: run.mode === 'abyss' ? `${run.title}・第 ${run.act} 章・${C.DIFFS[run.diff || 0].name}` : `${run.title}・第 ${run.floor} 層・剩 ${run.queue.length - run.qi} 題`, cls: 'gold' },
-      { id: 'abyss', icon: 110, t: '深淵遠征', d: `三章地圖長冒險・各科首領・已解鎖 ${C.DIFFS[p.abyss.maxDiff].name}`, cls: 'purple' },
-      { id: 'learn', icon: '📘', t: '學習模式', d: LEARN_UI.tileDesc(), cls: 'blue' },
-      { id: 'import', icon: '📥', t: '導入素材', d: IMP.tileDesc(), cls: 'green' },
-      { id: 'prompts', icon: '📋', t: 'AI 提示詞', d: '複製提示詞：素材→課程、出題、補詳解、轉格式、找圖標記' },
-      { id: 'map', icon: 57, t: '冒險地圖', d: '依科目與題本挑戰各區域地牢' },
-      { id: 'free', icon: 105, t: '自由遠征', d: '自選科目、題本、題型、數量與作答狀態' },
-      { id: 'peglin', icon: '⚪', t: '彈珠刷題', d: 'Peglin 原版戰鬥・一題一球（需本機啟動器）' },
-      { id: 'peglinLearn', icon: '📘', t: '彈珠學習', d: 'Peglin 原版戰鬥・讀一張卡打一顆球（需本機啟動器）' },
-      { id: 'pomo', icon: '🍅', t: '番茄鐘', d: `今天 🍅 ${POMO.data.log.filter(l => new Date(l.t).toDateString() === new Date().toDateString()).length} 顆・專注花園 ${POMO.data.garden.length} 株` },
-      { id: 'wrongrun', icon: 64, t: '錯題重刷', d: `以錯題本出征（${wrongN} 題未掌握）` },
-      { id: 'bank', icon: 63, t: '題庫', d: `瀏覽 ${window.QB.questions.length} 題，直接作答看詳解` },
-      { id: 'wrong', icon: 65, t: '錯題本', d: '自動收錄錯題，篩選、重刷、標記掌握' },
-      { id: 'classes', icon: C.cls(p.activeClass).tile, t: '職業殿堂', d: `目前：${C.cls(p.activeClass).name} Lv.${(p.classes[p.activeClass] || { lv: 1 }).lv}・切換/解鎖職業` },
-      { id: 'pets', icon: 'heart', t: '寵物小屋', d: '培養夥伴、買造型與配件' },
-      { id: 'upg', icon: 74, t: '永久強化', d: '用魂晶提升能力' },
-      { id: 'relics', icon: 91, t: '遺物圖鑑', d: '解鎖更強的遺物' },
-      { id: 'bestiary', icon: 'eye', t: '怪物圖鑑', d: `怪物 ${C.MONSTERS.filter(m => !m.secret).length} 種、首領 ${Object.values(C.BOSS_DEFS).flat().length} 位` },
-      { id: 'ach', icon: 32, t: '成就與收藏', d: `成就 ${Object.keys(p.ach || {}).length}/${C.ACH.length}・魚類圖鑑・隱藏配件` },
-      { id: 'char', icon: 100, t: '統計', d: '各科命中率與冒險紀錄' },
-      { id: 'settings', icon: 7, t: '設定與存檔', d: '匯出/匯入存檔、作答偏好' }
+      run && { id: 'continue', g: 'adv', icon: 45, t: '繼續遠征', d: run.mode === 'abyss' ? `${run.title}・第 ${run.act} 章・${C.DIFFS[run.diff || 0].name}` : `${run.title}・第 ${run.floor} 層・剩 ${run.queue.length - run.qi} 題`, cls: 'gold' },
+      { id: 'abyss', g: 'adv', icon: 110, t: '深淵遠征', d: `三章地圖長冒險・各科首領・已解鎖 ${C.DIFFS[p.abyss.maxDiff].name}`, cls: 'purple' },
+      { id: 'learn', g: 'study', icon: '📘', t: '學習模式', d: LEARN_UI.tileDesc(), cls: 'blue' },
+      { id: 'import', g: 'tool', icon: '📥', t: '導入素材', d: IMP.tileDesc(), cls: 'green' },
+      { id: 'prompts', g: 'tool', icon: '📋', t: 'AI 提示詞', d: '複製提示詞：素材→課程、出題、補詳解、轉格式、找圖標記' },
+      { id: 'map', g: 'adv', icon: 57, t: '冒險地圖', d: '依科目與題本挑戰各區域地牢' },
+      { id: 'free', g: 'adv', icon: 105, t: '自由遠征', d: '自選科目、題本、題型、數量與作答狀態' },
+      { id: 'peglin', g: 'peg', icon: '⚪', t: '彈珠刷題', d: 'Peglin 原版戰鬥・一題一球（需本機啟動器）' },
+      { id: 'peglinLearn', g: 'peg', icon: '📘', t: '彈珠學習', d: 'Peglin 原版戰鬥・讀一張卡打一顆球（需本機啟動器）' },
+      { id: 'bank', g: 'study', icon: 63, t: '題庫', d: `瀏覽 ${window.QB.questions.length} 題，直接作答看詳解` },
+      { id: 'wrong', g: 'study', icon: 65, t: '錯題本', d: '自動收錄錯題，篩選、重刷、標記掌握' },
+      { id: 'wrongrun', g: 'study', icon: 64, t: '錯題重刷', d: `以錯題本出征（${wrongN} 題未掌握）` },
+      { id: 'pomo', g: 'study', icon: '🍅', t: '番茄鐘', d: `今天 🍅 ${POMO.data.log.filter(l => new Date(l.t).toDateString() === new Date().toDateString()).length} 顆・專注花園 ${POMO.data.garden.length} 株` },
+      { id: 'classes', g: 'col', icon: C.cls(p.activeClass).tile, t: '職業殿堂', d: `目前：${C.cls(p.activeClass).name} Lv.${(p.classes[p.activeClass] || { lv: 1 }).lv}・切換/解鎖職業` },
+      { id: 'pets', g: 'col', icon: 'heart', t: '寵物小屋', d: '培養夥伴、買造型與配件' },
+      { id: 'upg', g: 'col', icon: 74, t: '永久強化', d: '用魂晶提升能力' },
+      { id: 'relics', g: 'col', icon: 91, t: '遺物圖鑑', d: '解鎖更強的遺物' },
+      { id: 'bestiary', g: 'col', icon: 'eye', t: '怪物圖鑑', d: `怪物 ${C.MONSTERS.filter(m => !m.secret).length} 種、首領 ${Object.values(C.BOSS_DEFS).flat().length} 位` },
+      { id: 'ach', g: 'col', icon: 32, t: '成就與收藏', d: `成就 ${Object.keys(p.ach || {}).length}/${C.ACH.length}・魚類圖鑑・隱藏配件` },
+      { id: 'char', g: 'tool', icon: 100, t: '統計', d: '各科命中率與冒險紀錄' },
+      { id: 'settings', g: 'tool', icon: 7, t: '設定與存檔', d: '匯出/匯入存檔、作答偏好' }
     ].filter(Boolean);
     let stars = '';
     if (tod === 'night') for (let i = 0; i < 24; i++) stars += `<i class="star" style="left:${U.rnd(0, 100)}%;top:${U.rnd(0, 55)}%;animation-delay:-${U.rnd(0, 30) / 10}s"></i>`;
@@ -273,7 +286,8 @@ const Screens = (() => {
         <div class="stat-line"><span>遠征 / 通關</span><b>${p.stats.runs} / ${p.stats.wins}</b></div>
         <div class="stat-line"><span>錯題未掌握</span><b class="red-t">${wrongN}</b></div>
       </div>
-      <div class="menu-grid">${tiles.map(t => `<button class="px-btn menu-tile ${t.cls || ''}" data-go="${t.id}">${SP.icon(t.icon, 48)}<span><b>${t.t}</b><small>${t.d}</small></span></button>`).join('')}</div>
+      <div class="menu-groups">${MENU_GROUPS.map(([g, name]) => { const ts = tiles.filter(t => t.g === g); return ts.length ? `<section class="menu-sec"><h3 class="menu-sec-h">${name}</h3>
+        <div class="menu-grid">${ts.map(t => `<button class="px-btn menu-tile ${t.cls || ''}" data-go="${t.id}">${SP.icon(t.icon, 48)}<span><b>${t.t}</b><small>${t.d}</small></span></button>`).join('')}</div></section>` : ''; }).join('')}</div>
     </div>`;
     U.$$('[data-go]').forEach(b => b.onclick = () => {
       SFX.play('click');
@@ -474,9 +488,8 @@ const Screens = (() => {
       U.$$('[data-p]', pg).forEach(b => b.onclick = () => { state.page += Number(b.dataset.p); draw(); window.scrollTo(0, 0); });
     };
     const upd = () => { state.page = 0; draw(); };
-    const drawSets = () => { if (state.subjects.length) state.exams = state.exams.filter(id => state.subjects.includes(Store.EX[id].subj)); U.$('#fy').innerHTML = setChips(state.subjects, state.exams); bindChips(scr(), '#fy', state, 'exams', true, upd); };
+    const drawSets = setPicker(U.$('#fy'), state, upd, { allIfNone: true });
     bindChips(scr(), '#fsj', state, 'subjects', true, () => { drawSets(); upd(); });
-    drawSets();
     bindChips(scr(), '#ft', state, 'types', true, upd);
     bindChips(scr(), '#fs', state, 'status', false, upd);
     let tmr; U.$('#fq').oninput = e => { clearTimeout(tmr); tmr = setTimeout(() => { state.search = e.target.value; upd(); }, 250); };
