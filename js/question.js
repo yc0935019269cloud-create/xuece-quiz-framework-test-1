@@ -39,7 +39,7 @@ const QV = (() => {
     const ex = Store.EX[q.exam];
     return `<div class="explain">
       <div class="row"><b class="gold-t">正確答案：${U.esc(q.ans)}</b>${q.tag ? `<span class="tag">考點：${U.esc(q.tag)}</span>` : ''}<span class="grow"></span>
-      ${ex.pdf ? `<a class="px-btn small" href="${encodeURI(ex.pdf)}" target="_blank">開啟原始資料</a>` : ''}</div>
+      ${ex.pdf ? `<a class="px-btn small" href="${encodeURI(ex.pdf)}" target="_blank">開啟原始資料</a>` : ''}${typeof AI !== 'undefined' ? `<button class="px-btn small" data-askai="${U.esc(q.id)}" title="把這題附給 AI 助教">💬 問 AI</button>` : ''}</div>
       ${q.ex ? U.md(q.ex) : '<p class="dim">此題暫無詳解。</p>'}
       ${ex.source ? `<p class="dim small-t">來源：${U.esc(ex.source)}</p>` : ''}${window.QB.meta && QB.meta.disclaimer ? `<p class="dim small-t">※ ${U.esc(QB.meta.disclaimer)}</p>` : ''}</div>`;
   }

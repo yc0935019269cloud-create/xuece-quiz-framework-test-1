@@ -150,3 +150,10 @@
 - 第二單元：5 課 → 11 課，新增「小角度近似」與「簡化眼眼軸長」兩個互動；同時補上教材缺的 sag、n₁θ₂ 寫法說明，原本的符號覆蓋警告消失。
 - 第一單元：4 課 → 8 課，新增「波前與光線」互動（點光源／會聚／平行，看光線垂直波前、箭頭決定會聚發散）。
 - 五個單元合計 59 課、14 個新互動；用自動作答把 59 課從頭走到尾（含題庫題、圖解測驗、課末魔王）都沒有錯誤。過程中修了 `js/learn.js` 兩個原本就有的小競態：精英怪台詞延遲 0.3 秒時怪物已被打倒會讀到 null；排序題 150 ms 評分延遲內按「重排」會重複評分。產生腳本不在 repo 裡；之後直接改 `content/learn/physopt/*.json`。
+
+## AI 助教（2026-10-12）
+
+- `js/ai.js`：浮動聊天視窗（營地「AI 助教」、☰ 選單、題目詳解的「💬 問 AI」→ `data-askai`）。本機 BM25（中文雙字詞）從題庫＋學習卡找參考資料，回答附 [n] 出處（點了開題目或課程）；🔎 查證查維基百科（中／英，先找同名條目）與 PubMed，可再請 AI 對照。對話只存在記憶體。載入順序：pad.js → ai.js → toolmenu.js。
+- 後端：`supabase/ai-setup.sql`（`ai_allow` 白名單、`ai_usage` 每日用量、`ai_status`／`ai_take`，RLS 無 policy）＋ `supabase/functions/ai-chat/index.ts`（Edge Function，只用 fetch；依序 Google → Groq → OpenRouter → NVIDIA，成功才扣次數）。設定與管理：`docs/AI助教設定.md`。
+- **金鑰只能放 Supabase Secrets**（GEMINI／GROQ／OPENROUTER／NVIDIA_API_KEY），絕對不要寫進 repo 或網頁；模型清單在函式的 `CHAIN`。OpenAI 金鑰沒有額度，未使用。
+- 已測：函式（Node 載入＋真實 AI 服務、模擬資料庫）的未登入／白名單／額度／備援／全部失敗不扣次數；SQL（PGlite）的權限與重複執行；網頁端（模擬 Supabase）登入、附題提問、追問、查證、對照、手機版。尚未在真的 Supabase 專案部署測試。

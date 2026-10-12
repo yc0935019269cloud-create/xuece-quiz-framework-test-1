@@ -252,6 +252,7 @@ const Screens = (() => {
       { id: 'bank', g: 'study', icon: 63, t: '題庫', d: `瀏覽 ${window.QB.questions.length} 題，直接作答看詳解` },
       { id: 'wrong', g: 'study', icon: 65, t: '錯題本', d: '自動收錄錯題，篩選、重刷、標記掌握' },
       { id: 'wrongrun', g: 'study', icon: 64, t: '錯題重刷', d: `以錯題本出征（${wrongN} 題未掌握）` },
+      { id: 'ai', g: 'study', icon: '💬', t: 'AI 助教', d: '問觀念、問題目，回答附題庫與教材出處' },
       { id: 'pomo', g: 'study', icon: '🍅', t: '番茄鐘', d: `今天 🍅 ${POMO.data.log.filter(l => new Date(l.t).toDateString() === new Date().toDateString()).length} 顆・專注花園 ${POMO.data.garden.length} 株` },
       { id: 'classes', g: 'col', icon: C.cls(p.activeClass).tile, t: '職業殿堂', d: `目前：${C.cls(p.activeClass).name} Lv.${(p.classes[p.activeClass] || { lv: 1 }).lv}・切換/解鎖職業` },
       { id: 'pets', g: 'col', icon: 'heart', t: '寵物小屋', d: '培養夥伴、買造型與配件' },
@@ -304,6 +305,7 @@ const Screens = (() => {
       const g = b.dataset.go;
       if (g === 'continue') App.go('run', new Run(Store.loadRun()));
       else if (g === 'wrongrun') wrongRunModal();
+      else if (g === 'ai') AI.open();
       else App.go(g);
     });
     U.$$('[data-tod]').forEach(b => b.onclick = () => { Store.settings.campTime = b.dataset.tod; Store.saveSettings(); SFX.play('click'); hub(); });

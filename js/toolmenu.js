@@ -1,15 +1,16 @@
 /* 頂部「多功能」按鈕與快速靜音按鈕：把雲端同步、計算機、計算紙、音樂／音量收進同一個選單，點了才展開。
  * 原本的按鈕（#cloudMini、#calcMini、#padMini、#btnSound）原封不動搬進選單，所以各模組更新按鈕狀態的程式照常運作。
- * 載入順序：cloud.js、pad.js 之後（等它們的按鈕建好再收進來）。 */
+ * 載入順序：cloud.js、pad.js、ai.js 之後（等它們的按鈕建好再收進來）。 */
 (() => {
   const ITEMS = [
+    ['aiMini', 'AI 助教'],
     ['cloudMini', '雲端同步／登入'],
     ['calcMini', '科學計算機'],
     ['padMini', '計算紙'],
     ['btnSound', '音樂與音量']
   ];
   let btn, menu;
-  const PANELS = { calcMini: 'calcPanel', padMini: 'padPanel', btnSound: 'volPop' };
+  const PANELS = { calcMini: 'calcPanel', padMini: 'padPanel', btnSound: 'volPop', aiMini: 'aiPanel' };
   /* 把浮動視窗放在 ☰ 正下方、右緣對齊按鈕（超出畫面就往內收）；使用者拖曳過的視窗保持原位 */
   function anchor(el) {
     if (!el || !btn) return;

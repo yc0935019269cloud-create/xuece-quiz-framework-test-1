@@ -1,3 +1,9 @@
 # 彈珠刷題的個人作答紀錄、錯題本與學習備份（只存在本機，不上傳 GitHub）
 peglin/紀錄/
 tools/__pycache__/
+# Supabase CLI 暫存與任何本機金鑰檔（AI 助教的金鑰只放在 Supabase Secrets）
+supabase/.temp/
+supabase/.branches/
+.env
+.env.*
+*.env

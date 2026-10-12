@@ -277,5 +277,5 @@ const CLOUD = (() => {
   });
   document.addEventListener('DOMContentLoaded', () => setTimeout(init, 0));
 
-  return { open, panel, sync, get signedIn() { return !!M.sess; } };
+  return { open, panel, sync, cfg, token, get signedIn() { return !!M.sess; }, get email() { return M.sess ? M.sess.email : ''; } };
 })();
