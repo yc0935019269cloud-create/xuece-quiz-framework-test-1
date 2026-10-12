@@ -1030,21 +1030,64 @@ const LEARN_UI = (() => {
     show();
   }
 
-  /* ---------- 知識筆記：讀過的概念卡 ---------- */
+  /* ---------- 知識筆記：讀過的概念卡 ----------
+   * 科目 → path 各層 → 單元 → 課 → 卡片，和課程列表同一套樹；可篩科目、搜尋卡片內容（只列出命中的卡）。
+   * 課的卡片在展開時才產生，避免一次畫上百課。展開狀態記在 D.cfg.open（"n:" 開頭）。 */
+  let noteSubj = 'all', noteQ = '';
+  const noteText = s => [s.title, s.body, ...(s.keys || []), ...(s.points || []).map(x => typeof x === 'string' ? x : [x.name, x.desc].join(' '))].join(' ').toLowerCase();
+  function noteCard(p, l, s) {
+    return s.type === 'card' ? `<div class="lnote-card"><h4>📘 ${U.esc(s.title)}</h4>${imgsHTML(s.img, s.img_source || s.source)}${md(s.body)}${(s.keys || []).length ? `<div class="lp-keys"><ul>${s.keys.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : ''}</div>`
+      : s.type === 'diagram' ? `<div class="lnote-card"><h4>🔍 ${U.esc(s.title || '圖解')}</h4><div class="dg-wrap small"><img src="${U.esc(U.img(s.img))}" alt="">${s.points.map((pt, i) => { const o = ((D.pins || {})[`${p.id}/${l.id}/${l.steps.indexOf(s)}`] || {})[i] || [pt.x, pt.y]; return o[0] == null ? '' : `<span class="dg-pin" style="left:${o[0]}%;top:${o[1]}%">${i + 1}</span>`; }).join('')}</div><ol class="small-t">${s.points.map(pt => `<li><b>${U.esc(pt.name)}</b>${pt.desc ? '：' + inl(pt.desc) : ''}</li>`).join('')}</ol></div>`
+      : `<div class="lnote-card"><h4>⭐ 本課重點</h4><ol>${s.points.map(x => `<li>${inl(x)}</li>`).join('')}</ol></div>`;
+  }
   function notes() {
     const body = U.$('#learnBody');
-    const blocks = [];
-    packs.forEach(p => p.lessons.forEach(l => {
+    const all = [];
+    packs.forEach(p => { if (!C.SUBJECTS[p.subject]) return; p.lessons.forEach(l => {
       const st = D.les[lkey(p, l)] || {};
       const reach = st.done ? l.steps.length : (st.i || 0);
       const cards = l.steps.filter((s, i) => i < reach && (s.type === 'card' || s.type === 'recap' || s.type === 'diagram'));
-      if (cards.length) blocks.push({ p, l, cards });
-    }));
-    if (!blocks.length) { body.innerHTML = '<p class="dim">上過的概念卡和重點整理會收在這裡，隨時可以回來翻。先去上一課吧！</p>'; return; }
-    body.innerHTML = blocks.map(({ p, l, cards }) => `<details class="lnote"><summary><span class="tag" style="border-color:${C.SUBJECTS[p.subject].color}">${C.SUBJECTS[p.subject].name}</span> ${U.esc(p.title)}・<b>${U.esc(l.title)}</b> <span class="dim small-t">（${cards.length}）</span></summary>
-      ${cards.map(s => s.type === 'card' ? `<div class="lnote-card"><h4>📘 ${U.esc(s.title)}</h4>${imgsHTML(s.img, s.img_source || s.source)}${md(s.body)}${(s.keys || []).length ? `<div class="lp-keys"><ul>${s.keys.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : ''}</div>`
-        : s.type === 'diagram' ? `<div class="lnote-card"><h4>🔍 ${U.esc(s.title || '圖解')}</h4><div class="dg-wrap small"><img src="${U.esc(U.img(s.img))}" alt="">${s.points.map((pt, i) => { const o = ((D.pins || {})[`${p.id}/${l.id}/${l.steps.indexOf(s)}`] || {})[i] || [pt.x, pt.y]; return o[0] == null ? '' : `<span class="dg-pin" style="left:${o[0]}%;top:${o[1]}%">${i + 1}</span>`; }).join('')}</div><ol class="small-t">${s.points.map(pt => `<li><b>${U.esc(pt.name)}</b>${pt.desc ? '：' + inl(pt.desc) : ''}</li>`).join('')}</ol></div>`
-        : `<div class="lnote-card"><h4>⭐ 本課重點</h4><ol>${s.points.map(x => `<li>${inl(x)}</li>`).join('')}</ol></div>`).join('')}</details>`).join('');
+      if (cards.length) all.push({ p, l, cards });
+    }); });
+    if (!all.length) { body.innerHTML = '<p class="dim">上過的概念卡和重點整理會收在這裡，隨時可以回來翻。先去上一課吧！</p>'; return; }
+    const subs = [...new Set(all.map(x => x.p.subject))];
+    if (noteSubj !== 'all' && !subs.includes(noteSubj)) noteSubj = 'all';
+    const kw = noteQ.trim().toLowerCase();
+    const list = all.filter(x => noteSubj === 'all' || x.p.subject === noteSubj)
+      .map(x => kw ? { ...x, cards: x.cards.filter(s => noteText(s).includes(kw) || x.l.title.toLowerCase().includes(kw) || x.p.title.toLowerCase().includes(kw)) } : x)
+      .filter(x => x.cards.length);
+    const nCards = list.reduce((a, x) => a + x.cards.length, 0);
+    // 樹：科目 → path → 單元(pack) → 課
+    const tree = [];
+    list.forEach(x => {
+      const p = x.p; let sNode = tree.find(n => n.s === p.subject); if (!sNode) tree.push(sNode = { s: p.subject, kids: [], packs: [] });
+      const pth = pathOf(p), nm = C.SUBJECTS[p.subject].name;
+      let node = sNode; pth.filter(x => x !== nm && x !== p.subject).forEach(name => { let k = node.kids.find(y => y.name === name); if (!k) node.kids.push(k = { name, kids: [], packs: [] }); node = k; });
+      let pk = node.packs.find(y => y.p === p); if (!pk) node.packs.push(pk = { p, les: [] }); pk.les.push(x);
+    });
+    const count = n => n.packs.reduce((a, pk) => a + pk.les.reduce((b, x) => b + x.cards.length, 0), 0) + n.kids.reduce((a, c) => a + count(c), 0);
+    const LES = {}; let li = 0;
+    const isOpen = (k, dflt) => kw ? true : (D.cfg.open[k] ?? dflt);
+    const lesNode = (x, k) => { const id = 'n' + (li++); LES[id] = x; const kk = k + '/' + x.l.id, op = isOpen(kk, false);
+      return `<details class="ltree lnote-les" data-k="${U.esc(kk)}" data-les="${id}" ${op ? 'open' : ''}><summary><span class="ltree-n">${U.esc(x.l.title)}</span><span class="grow"></span><span class="dim small-t">${x.cards.length} 張</span></summary><div class="ltree-in">${op ? x.cards.map(s => noteCard(x.p, x.l, s)).join('') : ''}</div></details>`; };
+    const packNode = (pk, k) => { const kk = k + '/#' + pk.p.id, n = pk.les.reduce((a, x) => a + x.cards.length, 0);
+      return `<details class="ltree lnote-pack" data-k="${U.esc(kk)}" ${isOpen(kk, false) ? 'open' : ''}><summary><span class="ltree-n">📗 ${U.esc(pk.p.title)}</span><span class="grow"></span><span class="dim small-t">${pk.les.length} 課・${n} 張</span></summary><div class="ltree-in">${pk.les.map(x => lesNode(x, kk)).join('')}</div></details>`; };
+    const dirNode = (n, key, depth) => { let k = key + '/' + n.name;
+      while (n.kids.length === 1 && !n.packs.length) { const c = n.kids[0]; k += '/' + c.name; n = { name: n.name + ' › ' + c.name, kids: c.kids, packs: c.packs }; }   // 只有一個子層就併成「A › B」
+      return `<details class="ltree d${depth}" data-k="${U.esc(k)}" ${isOpen(k, depth < 1) ? 'open' : ''}><summary><span class="ltree-n">${U.esc(n.name)}</span><span class="grow"></span><span class="dim small-t">${count(n)} 張</span></summary>
+        <div class="ltree-in">${n.kids.map(c => dirNode(c, k, depth + 1)).join('')}${!n.kids.length && n.packs.length === 1 ? n.packs[0].les.map(x => lesNode(x, k + '/#' + n.packs[0].p.id)).join('') : n.packs.map(pk => packNode(pk, k)).join('')}</div></details>`; };   // 這層只有一個單元時直接列課，少一層
+    body.innerHTML = `<div class="row">${[['all', '全部']].concat(subs.map(x => [x, C.SUBJECTS[x].name])).map(([v, l]) => `<span class="chip ${noteSubj === v ? 'on' : ''}" data-nf="${v}">${l}</span>`).join('')}
+        <span class="grow"></span><input class="px-in" id="nSearch" placeholder="搜尋筆記內容（例：Horner、頂點距離）" value="${U.esc(noteQ)}" style="width:min(260px,100%)"></div>
+      <div class="row small-t mt"><span class="dim">${kw ? `找到 <b class="gold-t">${nCards}</b> 張卡（${list.length} 課）` : `${list.length} 課・${nCards} 張卡`}</span><span class="grow"></span>${kw ? '' : '<button class="px-btn small" id="nOpenAll">全部展開</button><button class="px-btn small" id="nCloseAll">全部收合</button>'}</div>
+      ${tree.map(sn => { const S = C.SUBJECTS[sn.s]; return `<h3 class="mt ltree-subj" style="color:${S.color}">${U.esc(S.name)} <span class="dim small-t">${count(sn)} 張</span></h3>
+        ${sn.kids.map(c => dirNode(c, 'n:' + sn.s, 0)).join('')}${sn.packs.map(pk => packNode(pk, 'n:' + sn.s)).join('')}`; }).join('') || '<p class="dim">找不到符合的筆記。</p>'}`;
+    const fill = d => { const x = LES[d.dataset.les]; const inn = d.querySelector('.ltree-in'); if (x && !inn.childElementCount) inn.innerHTML = x.cards.map(s => noteCard(x.p, x.l, s)).join(''); };
+    U.$$('details.ltree', body).forEach(d => d.addEventListener('toggle', e => { if (e.target !== d) return; if (d.open && d.dataset.les) fill(d); if (!kw) { D.cfg.open[d.dataset.k] = d.open; save(); } }));
+    U.$$('[data-nf]', body).forEach(c => c.onclick = () => { noteSubj = c.dataset.nf; SFX.play('click'); notes(); });
+    const setAll = on => { U.$$('details.ltree', body).forEach(d => { if (!(on && d.dataset.les)) D.cfg.open[d.dataset.k] = on; }); save(); notes(); };   // 全部展開只展到「課」這層，卡片點開才顯示
+    const oa = U.$('#nOpenAll'); if (oa) oa.onclick = () => { SFX.play('click'); setAll(true); };
+    const ca = U.$('#nCloseAll'); if (ca) ca.onclick = () => { SFX.play('click'); setAll(false); };
+    let tmr; U.$('#nSearch').oninput = e => { clearTimeout(tmr); tmr = setTimeout(() => { noteQ = e.target.value; notes(); const i = U.$('#nSearch'); if (i) { i.focus(); i.setSelectionRange(i.value.length, i.value.length); } }, 300); };
   }
 
   /* ---------- 學習節奏說明 ---------- */
