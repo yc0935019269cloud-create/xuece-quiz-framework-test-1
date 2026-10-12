@@ -149,7 +149,40 @@ const U = (() => {
     return false;
   }
   const img = p => IMGMAP[p] || p;
-  return { img, sameAns, $, $$, esc, h, rnd, chance, pick, shuffle, pickN, clamp, sleep, pct, md, toast, modal, confirm };
+
+  /* 浮動小工具視窗（計算機、計算紙、AI 助教）右下角的調整大小把手。
+   * opt：{ key, minW, minH, apply(w, h), reset() }；大小記在 localStorage 'winsize'（每台裝置各自記，不進存檔）。
+   * 雙擊把手恢復預設大小；手機寬度（≤640px）不顯示把手、也不套用記住的大小。 */
+  function grip(panel, opt) {
+    const K = 'winsize', g = h('<i class="win-grip" title="拖曳調整大小（雙擊恢復）"></i>');
+    const all = () => { try { return JSON.parse(localStorage.getItem(K) || '{}'); } catch (e) { return {}; } };
+    const put = v => { try { const a = all(); if (v) a[opt.key] = v; else delete a[opt.key]; localStorage.setItem(K, JSON.stringify(a)); } catch (e) {} };
+    panel.appendChild(g);
+    const small = () => innerWidth <= 640;
+    const saved = all()[opt.key];
+    if (saved && !small()) opt.apply(clamp(saved.w, opt.minW, innerWidth - 8), clamp(saved.h, opt.minH, innerHeight - 8));   // 換到小螢幕時不超出畫面
+    g.addEventListener('pointerdown', e => {
+      e.preventDefault(); e.stopPropagation();
+      const r = panel.getBoundingClientRect(), ox = e.clientX, oy = e.clientY;
+      // 改用左上角定位，往右下拖就是往右下長（原本可能是靠右或靠下定位）
+      Object.assign(panel.style, { left: r.left + 'px', top: r.top + 'px', right: 'auto', bottom: 'auto' });
+      try { g.setPointerCapture(e.pointerId); } catch (err) {}
+      let last = null;
+      // 放大碰到螢幕邊緣時，視窗往左／往上挪（貼在右邊的視窗也能放大）
+      const move = ev => {
+        const w = clamp(r.width + ev.clientX - ox, opt.minW, innerWidth - 8), hh = clamp(r.height + ev.clientY - oy, opt.minH, innerHeight - 8);
+        panel.style.left = Math.max(4, Math.min(r.left, innerWidth - 4 - w)) + 'px';
+        panel.style.top = Math.max(4, Math.min(r.top, innerHeight - 4 - hh)) + 'px';
+        last = [w, hh]; opt.apply(w, hh);
+        const b = panel.getBoundingClientRect();   // 等比例放大（計算機）實際高度可能超出畫面，往上挪
+        if (b.bottom > innerHeight - 4) panel.style.top = Math.max(4, innerHeight - 4 - b.height) + 'px';
+      };
+      const up = () => { g.removeEventListener('pointermove', move); g.removeEventListener('pointerup', up); g.removeEventListener('pointercancel', up); if (last) put({ w: Math.round(last[0]), h: Math.round(last[1]) }); };
+      g.addEventListener('pointermove', move); g.addEventListener('pointerup', up); g.addEventListener('pointercancel', up);
+    });
+    g.addEventListener('dblclick', e => { e.preventDefault(); put(null); opt.reset(); });
+  }
+  return { img, sameAns, $, $$, esc, h, rnd, chance, pick, shuffle, pickN, clamp, sleep, pct, md, toast, modal, confirm, grip };
 })();
 
 /* 懸停提示：有 data-tip 或 title 的元素，滑鼠移上去立即顯示像素風提示框（手機點一下顯示） */

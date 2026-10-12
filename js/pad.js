@@ -1,13 +1,14 @@
 /* 計算紙：浮動視窗，可手寫（滑鼠／手指／觸控筆，觸控筆有壓力感應）、打字（文字工具點一下就輸入）、橡皮擦、復原、清空。
  * - 筆跡存成向量（不是圖片），視窗縮放後重畫不失真；內容存在 localStorage SKEY('pad')（不進存檔、不同步）。
- * - 防手掌誤觸：用過觸控筆之後，手指只能捲動不能畫（可在工具列切換）。
+ * - 防手掌誤觸：用過觸控筆之後，手指只能捲動不能畫（可在工具列切換）。觸控筆的橡皮擦端直接當橡皮擦。
+ * - 書寫時只畫新增的線段（配合畫面更新頻率），不整張重畫；畫布用低延遲模式。整個視窗禁止選取文字，快速連寫不會反白。
  * - 視窗內的按鍵不會觸發作答快捷鍵；Esc 關閉。 */
 const PAD = (() => {
   const KEY = SKEY('pad');
   const COLORS = ['#1b1424', '#d23c3c', '#2f6fd0', '#2f8f3b'];
   const SIZES = [2, 4, 8];
   let D = load();
-  let panel, cv, ctx, txtIn, tool = 'pen', color = COLORS[0], size = 1, drawing = null, penSeen = false, saveT = 0;
+  let panel, cv, ctx, txtIn, tool = 'pen', color = COLORS[0], size = 1, drawing = null, penSeen = false, saveT = 0, drawnTo = 0, raf = 0;
   function load() {
     try { const d = JSON.parse(localStorage.getItem(KEY) || 'null'); if (d && Array.isArray(d.items)) return d; } catch (e) {}
     return { items: [], palm: true };
@@ -21,17 +22,34 @@ const PAD = (() => {
   }
 
   /* ---------- 繪製 ---------- */
-  function strokePath(g, it) {
-    const P = it.pts; if (!P.length) return;
+  function style(g, it) {
     g.globalCompositeOperation = it.t === 'erase' ? 'destination-out' : 'source-over';
     g.strokeStyle = it.c || '#000'; g.fillStyle = it.c || '#000'; g.lineCap = g.lineJoin = 'round';
-    if (P.length === 1) { g.beginPath(); g.arc(P[0][0], P[0][1], wOf(it, P[0]) / 2, 0, Math.PI * 2); g.fill(); return; }
-    for (let i = 1; i < P.length; i++) {        // 每段依壓力決定粗細，中點二次曲線讓線條平滑
-      const a = P[i - 1], b = P[i], m0 = i > 1 ? mid(P[i - 2], a) : a, m1 = mid(a, b);
-      g.lineWidth = wOf(it, b); g.beginPath(); g.moveTo(m0[0], m0[1]); g.quadraticCurveTo(a[0], a[1], m1[0], m1[1]); g.stroke();
-    }
+  }
+  const dot = (g, it) => { const P0 = it.pts[0]; g.beginPath(); g.arc(P0[0], P0[1], wOf(it, P0) / 2, 0, Math.PI * 2); g.fill(); };
+  // 第 i 段（i ≥ 1）：依該點壓力決定粗細，用中點二次曲線讓線條平滑
+  function seg(g, it, i) {
+    const P = it.pts, a = P[i - 1], b = P[i], m0 = i > 1 ? mid(P[i - 2], a) : a, m1 = mid(a, b);
+    g.lineWidth = wOf(it, b); g.beginPath(); g.moveTo(m0[0], m0[1]); g.quadraticCurveTo(a[0], a[1], m1[0], m1[1]); g.stroke();
+  }
+  function tail(g, it) {
+    const P = it.pts; if (P.length < 2) return;
     const L = P[P.length - 1], M = mid(P[P.length - 2], L);
-    g.beginPath(); g.moveTo(M[0], M[1]); g.lineTo(L[0], L[1]); g.stroke();
+    g.lineWidth = wOf(it, L); g.beginPath(); g.moveTo(M[0], M[1]); g.lineTo(L[0], L[1]); g.stroke();
+  }
+  function strokePath(g, it) {
+    const P = it.pts; if (!P.length) return;
+    style(g, it);
+    if (P.length === 1) return dot(g, it);
+    for (let i = 1; i < P.length; i++) seg(g, it, i);
+    tail(g, it);
+  }
+  /* 書寫中：只補畫還沒畫的線段（一個畫面更新畫一次） */
+  function paintLive() {
+    raf = 0; if (!drawing) return;
+    style(ctx, drawing);
+    for (let i = Math.max(1, drawnTo); i < drawing.pts.length; i++) seg(ctx, drawing, i);
+    drawnTo = Math.max(drawnTo, drawing.pts.length);
   }
   const mid = (a, b) => [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2];
   const wOf = (it, p) => it.t === 'erase' ? it.w * 4 : it.w * (it.pen ? 0.35 + (p[2] ?? 0.5) * 1.3 : 1);
@@ -48,7 +66,7 @@ const PAD = (() => {
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, r.width, r.height);
     D.items.forEach(it => it.t === 'text' ? drawText(ctx, it) : strokePath(ctx, it));
-    if (drawing) strokePath(ctx, drawing);
+    if (drawing) { strokePath(ctx, drawing); drawnTo = drawing.pts.length; }
   }
 
   /* ---------- 輸入 ---------- */
@@ -56,24 +74,33 @@ const PAD = (() => {
   function onDown(e) {
     if (e.pointerType === 'pen') penSeen = true;
     if (e.pointerType === 'touch' && penSeen && D.palm) return;     // 防手掌：用過觸控筆後，手指不畫
-    if (e.button > 0) return;
-    e.preventDefault();
-    if (tool === 'text') return placeText(e);
+    e.preventDefault();                                             // 先擋掉預設動作（選取文字、拖曳）再判斷
+    if (drawing) return;                                            // 已經在寫了（另一根手指／手掌），不理
+    const eraserEnd = e.pointerType === 'pen' && (e.button === 5 || (e.buttons & 32));   // 觸控筆的橡皮擦端
+    if (e.button > 0 && !eraserEnd) return;
+    if (tool === 'text' && !eraserEnd) return placeText(e);
     commitText();
     try { cv.setPointerCapture(e.pointerId); } catch (err) {}
-    drawing = { t: tool === 'erase' ? 'erase' : 'pen', c: color, w: SIZES[size], pen: e.pointerType === 'pen', pts: [pos(e)], id: e.pointerId };
-    redraw();
+    drawing = { t: tool === 'erase' || eraserEnd ? 'erase' : 'pen', c: color, w: SIZES[size], pen: e.pointerType === 'pen', pts: [pos(e)], id: e.pointerId };
+    style(ctx, drawing); dot(ctx, drawing); drawnTo = 1;
   }
   function onMove(e) {
     if (!drawing || e.pointerId !== drawing.id) return;
     e.preventDefault();
     const evs = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
-    (evs.length ? evs : [e]).forEach(ev => { const p = pos(ev), L = drawing.pts[drawing.pts.length - 1]; if (Math.hypot(p[0] - L[0], p[1] - L[1]) >= 1) drawing.pts.push(p); });
-    redraw();
+    (evs.length ? evs : [e]).forEach(ev => {
+      const p = pos(ev), L = drawing.pts[drawing.pts.length - 1];
+      if (Math.hypot(p[0] - L[0], p[1] - L[1]) < 0.8) return;
+      if (drawing.pen) p[2] = Math.round((L[2] * 0.6 + p[2] * 0.4) * 100) / 100;   // 壓力平滑，粗細不會忽大忽小
+      drawing.pts.push(p);
+    });
+    if (!raf) raf = requestAnimationFrame(paintLive);
   }
   function onUp(e) {
     if (!drawing || e.pointerId !== drawing.id) return;
-    delete drawing.id; D.items.push(drawing); drawing = null; save(); redraw();
+    if (raf) { cancelAnimationFrame(raf); raf = 0; }
+    paintLive(); style(ctx, drawing); tail(ctx, drawing);
+    delete drawing.id; D.items.push(drawing); drawing = null; drawnTo = 0; save();
   }
   /* 文字工具：在點的位置出現輸入框，Enter 換行、點別處或按「完成」寫上去 */
   function placeText(e) {
@@ -104,10 +131,12 @@ const PAD = (() => {
       </div>
       <div class="pad-paper"><canvas></canvas><textarea class="pad-txt" hidden rows="1" spellcheck="false" placeholder="輸入文字…"></textarea></div>
       <div class="pad-foot dim small-t">手寫或選 Aa 打字・觸控筆有壓力感應</div>
-      <i class="pad-grip" title="拖曳調整大小"></i>
     </div>`);
     document.body.appendChild(panel);
-    cv = U.$('canvas', panel); ctx = cv.getContext('2d'); txtIn = U.$('.pad-txt', panel);
+    cv = U.$('canvas', panel); ctx = cv.getContext('2d', { desynchronized: true }) || cv.getContext('2d'); txtIn = U.$('.pad-txt', panel);
+    // 快速連寫時瀏覽器會當成雙擊／長按去選取文字或開選單：整個視窗都擋掉（打字框除外）
+    panel.addEventListener('selectstart', e => { if (e.target !== txtIn) e.preventDefault(); });
+    ['contextmenu', 'dblclick', 'dragstart'].forEach(t => cv.addEventListener(t, e => e.preventDefault()));
     cv.addEventListener('pointerdown', onDown); cv.addEventListener('pointermove', onMove);
     cv.addEventListener('pointerup', onUp); cv.addEventListener('pointercancel', onUp);
     txtIn.oninput = autosize;
@@ -124,9 +153,9 @@ const PAD = (() => {
       if (e.key === 'Escape') { if (!txtIn.hidden) { txtIn.value = ''; txtIn.hidden = true; } else toggle(); }
       else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z' && e.target !== txtIn) { e.preventDefault(); undo(); }
     });
-    // 拖曳標題列移動、右下角調整大小
+    // 拖曳標題列移動；右下角把手調整大小（U.grip）
     drag(U.$('.pad-head', panel), (r, dx, dy, ev) => { panel.style.left = U.clamp(ev.clientX - dx, 0, innerWidth - r.width) + 'px'; panel.style.top = U.clamp(ev.clientY - dy, 0, innerHeight - 40) + 'px'; panel.style.right = 'auto'; });
-    drag(U.$('.pad-grip', panel), (r, dx, dy, ev) => { panel.style.width = U.clamp(ev.clientX - r.left + (r.width - dx), 260, innerWidth - r.left - 4) + 'px'; panel.style.height = U.clamp(ev.clientY - r.top + (r.height - dy), 240, innerHeight - r.top - 4) + 'px'; redraw(); });
+    U.grip(panel, { key: 'pad', minW: 260, minH: 240, apply: (w, h) => { panel.style.width = w + 'px'; panel.style.height = h + 'px'; }, reset: () => { panel.style.width = panel.style.height = ''; } });
     new ResizeObserver(() => redraw()).observe(U.$('.pad-paper', panel));
     sync();
   }

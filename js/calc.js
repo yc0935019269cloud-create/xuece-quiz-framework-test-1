@@ -243,6 +243,8 @@ const Calc = (() => {
       };
       head.onpointerup = () => { head.onpointermove = head.onpointerup = null; };
     };
+    // 右下角把手：等比例放大縮小（按鍵、字一起變大）
+    U.grip(panel, { key: 'calc', minW: 260, minH: 0, apply: w => panel.style.setProperty('--k', (w / 320).toFixed(3)), reset: () => panel.style.removeProperty('--k') });
     relabel(); renderHist();
   }
   function toggle() {
