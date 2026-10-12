@@ -27,8 +27,16 @@ const U = (() => {
   const pct = (a, b) => b ? Math.round(a * 100 / b) : 0;
 
   /* 迷你 Markdown：標題、粗體、行內碼、表格、清單、引用、段落 */
+  /* 矩陣：[a b ; c d]（列用分號、元素用逗號或空白）畫成兩行的方括號矩陣 */
+  function matrix(m, body) {
+    const rows = body.split(';').map(r => r.trim()).map(r => r.includes(',') ? r.split(',').map(x => x.trim()) : r.split(/\s+/));
+    const n = rows[0].length;
+    if (rows.length < 2 || n < 2 || n > 4 || rows.some(r => r.length !== n || r.some(x => !x || x.length > 24))) return m;
+    return `<span class="mtx" style="--n:${n}">${rows.map(r => r.map(x => `<span>${x}</span>`).join('')).join('')}</span>`;
+  }
   function inline(s) {
     s = esc(s);
+    s = s.replace(/\[([^\[\];\n]+(?:;[^\[\];\n]+)+)\]/g, matrix);
     s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
     s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
     s = s.replace(/(^|[^*])\*([^*\s][^*]*)\*/g, '$1<em>$2</em>');

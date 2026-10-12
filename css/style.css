@@ -1173,3 +1173,8 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .aip-in { display: flex; gap: 6px; margin-top: 6px; }
 .aip-in textarea { flex: 1; min-width: 0; resize: none; background: var(--paper); color: #1b1424; border: 3px solid var(--line); padding: 6px 8px; font: inherit; font-size: 15px; }
 @media (max-width: 640px) { .aip { left: 0 !important; right: 0; top: auto !important; bottom: 0; width: 100vw !important; height: min(78vh, calc(100vh - 56px)) !important; box-sizing: border-box; } }
+
+/* 行內矩陣 [a b ; c d]（U.md） */
+.mtx { display: inline-grid; grid-template-columns: repeat(var(--n), auto); column-gap: .8em; row-gap: .05em; vertical-align: middle; margin: .15em .25em; padding: 0 .45em; line-height: 1.25; text-align: center; border-left: 2px solid currentColor; border-right: 2px solid currentColor; position: relative; }
+.mtx::before, .mtx::after { content: ""; position: absolute; top: 0; bottom: 0; width: .3em; border-top: 2px solid currentColor; border-bottom: 2px solid currentColor; }
+.mtx::before { left: -2px; } .mtx::after { right: -2px; }
