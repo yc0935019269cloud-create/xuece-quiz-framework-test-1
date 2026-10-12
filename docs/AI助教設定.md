@@ -8,26 +8,29 @@ AI 助教是遊戲裡的聊天視窗（營地「AI 助教」、頂部 ☰ 選單
 網頁（GitHub Page，公開）          Supabase（你的專案）                  AI 服務
 ───────────────────────          ───────────────────────────          ─────────
 登入憑證 ＋ 問題  ──────────▶  ai-chat 轉送程式                    Google Gemini
-（沒有任何 AI 金鑰）              1. ai_status：已登入？在白名單？      → Groq
-                                     今天還有次數？                    → OpenRouter
+（沒有任何 AI 金鑰）              1. ai_status：已登入？被停用？        → Groq
+                                     （有設上限才檢查次數）            → OpenRouter
                                   2. 用 Secrets 裡的金鑰依序呼叫  ───▶ → NVIDIA
-                ◀──────────────  3. 成功才 ai_take 扣一次
+                ◀──────────────  3. 成功才 ai_take 記一次
 ```
 
 - **金鑰只放在 Supabase 的 Secrets**，不在 repo、不在網頁原始碼、也不會傳到瀏覽器。
-- **白名單**：只有 `ai_allow` 表裡的信箱能用。任何人都能用信箱登入，但不在名單上的人一律被擋。名單只能在 Supabase 後台改，網頁讀不到。
-- **每人每日上限**（預設 30 次，台灣時間 0 點重置）。失敗的請求不扣次數。
+- **需要登入**（信箱驗證碼）才能用；轉送程式不會對沒登入的請求呼叫 AI。
+- **預設不限次數、不需要白名單**：登入的人都能用。萬一有人濫用，在 `ai_limits` 表對那個信箱設 `daily_limit`（每天上限，台灣時間 0 點重置）或 `blocked = true`（停用），不用改程式。這張表只能在 Supabase 後台改，網頁讀不到。
+- 失敗的請求不記次數。所有用量記在 `ai_usage`，方便查看。
 - **只用固定的免費模型**：模型清單寫在轉送程式裡，網頁無法指定或改成付費模型。
 - 單次回答長度、對話長度、附帶資料長度都有上限。
-- 隨時可以停用：把某人從 `ai_allow` 刪掉，或刪除 `ai-chat` 函式。
+- 隨時可以停用：對某人設 `blocked`，或刪除 `ai-chat` 函式（全部停用）。
+- **注意**：因為不限次數，免費額度是所有使用者共用的；Google 金鑰所在的 Cloud 專案**不要綁定付款**（只用免費方案），否則被大量使用時可能產生費用。
 
 ## 第一次設定（只做一次）
 
 需要先完成雲端同步的設定（`docs/雲端同步設定.md`），AI 助教用同一個 Supabase 專案與同一套信箱登入。
 
-### 1. 建立白名單與用量表
+### 1. 建立個別設定與用量表
 
 Supabase 後台 → **SQL Editor** → New query → 貼上 `supabase/ai-setup.sql` 的全部內容 → **Run**。重複執行沒關係。
+（建立 `ai_limits` 個別設定表、`ai_usage` 用量表與兩個資料庫函式。）
 
 ### 2. 部署轉送程式
 
@@ -62,30 +65,26 @@ npx supabase functions deploy ai-chat --project-ref <你的 project ref> --no-ve
 
 沒填的服務會自動略過。CLI 也可以用 `npx supabase secrets set --project-ref <ref> --env-file <檔案>`（檔案不要放在 repo 裡）。
 
-### 4. 加入可以使用的人
+### 4. 開始使用
 
-後台 → **Table Editor** → `ai_allow` → Insert row：`email` 填對方登入用的信箱，`daily_limit` 填每天次數。或在 SQL Editor 執行：
-
-```sql
-insert into public.ai_allow (email, daily_limit, note) values
-  ('someone@gmail.com', 30, '朋友')
-on conflict (email) do update set daily_limit = excluded.daily_limit;
-```
-
-對方打開網頁 → ☰ → 雲端同步／登入（信箱驗證碼）→ 就能使用 AI 助教。
+不用加白名單：對方打開網頁 → ☰ → 雲端同步／登入（信箱驗證碼）→ 就能使用 AI 助教。
 
 ## 日常管理
 
-- **調整次數**：改 `ai_allow.daily_limit`。
-- **看用量**：Table Editor → `ai_usage`（每人每天一列）。
-- **停用某人**：刪掉他在 `ai_allow` 的那一列。
+- **看用量**：Table Editor → `ai_usage`（每人每天一列；`user_id` 對應 Authentication → Users）。
+- **限制某人**：Table Editor → `ai_limits` → Insert row：`email` 填他的信箱、`daily_limit` 填每天次數。或在 SQL Editor：
+  ```sql
+  insert into public.ai_limits (email, daily_limit, note) values ('someone@gmail.com', 20, '限制')
+  on conflict (email) do update set daily_limit = excluded.daily_limit;
+  ```
+- **停用某人**：同一列把 `blocked` 設為 true；刪掉那一列就恢復不限次數。
 - **換服務順序或模型**：改 `supabase/functions/ai-chat/index.ts` 最上面的 `CHAIN`，重新部署。目前順序：Google（gemini-3.5-flash → gemini-2.5-flash → gemini-3.5-flash-lite）→ Groq（qwen3.8-27b → gpt-oss-120b）→ OpenRouter（nemotron-3-ultra → gemma-4-31b → openrouter/free）→ NVIDIA（glm-5.3-flash → nemotron-3-super）。
 - **免費模型會變動**：某個模型下架時，回答會自動改用下一個；想換掉就改 `CHAIN`。
 
 ## 常見問題
 
 - **「雲端專案還沒有建立 AI 助教」**：第 1 步的 SQL 還沒執行。
-- **「還沒有開通 AI 助教」**：登入的信箱不在 `ai_allow`（大小寫不影響）。
+- **「AI 助教已被停用」**：那個信箱在 `ai_limits` 被設為 blocked（信箱大小寫不影響）。
 - **「所有 AI 服務都暫時無法回答」**：每家都忙或額度用完；這次不扣次數。點訊息裡的「詳細」可以看到每家的錯誤原因。
 - **瀏覽器顯示 CORS 錯誤**：第 2 步的 JWT 驗證沒有關掉，或函式名稱不是 `ai-chat`。
 - **金鑰外流的疑慮**：到各服務網站重新產生金鑰，再更新 Secrets 即可；網頁與 repo 不用改。

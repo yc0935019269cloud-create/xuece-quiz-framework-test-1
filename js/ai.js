@@ -1,7 +1,7 @@
 /* AI 助教：浮動聊天視窗（頂部 ☰ 選單、營地「AI 助教」、題目詳解旁的「💬 問 AI」都能開）。
  * - 問題先在本機題庫與學習教材裡找最相關的段落（中文雙字詞 BM25），連同問題送給 AI，回答附 [1][2] 出處，點了可以開題目或課程。
  * - AI 走雲端同步同一個 Supabase 專案的轉送程式（supabase/functions/ai-chat）：金鑰只在 Supabase，網頁只送登入憑證。
- *   需要登入（信箱驗證碼）而且信箱在白名單裡；每人每天有次數上限。說明：docs/AI助教設定.md
+ *   需要登入（信箱驗證碼）；預設不限次數，管理員可以在後台對個別帳號設上限或停用。說明：docs/AI助教設定.md
  * - 🔎 查證：用 AI 回答最後附的關鍵字查維基百科與 PubMed（網頁直接查，不扣次數），可以再請 AI 對照（扣 1 次）。
  * - 對話只存在這次開啟的記憶體裡，不進存檔、不同步。 */
 const AI = (() => {
@@ -22,7 +22,7 @@ const AI = (() => {
       const j = await r.json().catch(() => null);
       if (r.status === 404) S.st = { reason: 'nosetup' };
       else if (!r.ok || !j) S.st = { reason: 'err', msg: (j && j.message) || 'HTTP ' + r.status };
-      else S.st = j.allowed ? j : { reason: j.reason || 'not_allowed', email: j.email };
+      else S.st = j.allowed ? j : { reason: j.reason || 'blocked', email: j.email };
     } catch (e) { S.st = { reason: 'err', msg: e.message }; }
     paintStatus();
   }
@@ -30,9 +30,9 @@ const AI = (() => {
     if (!stEl) return;
     const st = S.st || {};
     let h;
-    if (st.allowed) h = `今天還可以問 <b class="gold-t">${st.remaining}</b> / ${st.limit} 次<span class="dim">・${U.esc(CLOUD.email || '')}</span>`;
+    if (st.allowed) h = (st.limit == null ? `<span class="dim">不限次數・今天問了 ${st.used || 0} 次</span>` : `今天還可以問 <b class="gold-t">${st.remaining}</b> / ${st.limit} 次`) + `<span class="dim">・${U.esc(CLOUD.email || '')}</span>`;
     else if (st.reason === 'login') h = `登入後就能使用（和雲端同步同一個帳號）<button class="px-btn small blue" data-ai="login">登入</button>`;
-    else if (st.reason === 'not_allowed') h = `<span class="red-t">這個帳號（${U.esc(st.email || CLOUD.email || '')}）還沒有開通 AI 助教。</span><span class="dim">請管理員把信箱加進白名單。</span>`;
+    else if (st.reason === 'blocked') h = `<span class="red-t">這個帳號（${U.esc(st.email || CLOUD.email || '')}）的 AI 助教已被停用。</span>`;
     else if (st.reason === 'nocfg') h = '<span class="dim">這個網頁還沒有設定雲端專案，無法使用 AI 助教。</span>';
     else if (st.reason === 'nosetup') h = '<span class="dim">雲端專案還沒有建立 AI 助教（見 docs/AI助教設定.md）。</span>';
     else if (st.reason === 'err') h = `<span class="red-t">讀取狀態失敗：${U.esc(st.msg || '')}</span>`;
@@ -139,7 +139,7 @@ const AI = (() => {
     if (!text || S.busy) return;
     const c = cfg();
     if (!c || !CLOUD.signedIn) { await refreshStatus(); U.toast('請先登入雲端帳號'); return; }
-    if (S.st && S.st.allowed === undefined && S.st.reason === 'not_allowed') { U.toast('這個帳號還沒有開通 AI 助教'); return; }
+    if (S.st && S.st.reason === 'blocked') { U.toast('這個帳號的 AI 助教已被停用'); return; }
     const q = opt.noCtx || !S.q ? null : Store.Q[S.q];
     // 附了題目時，以題幹與考點為主去找參考資料（問句裡的「為什麼答案是」不參與檢索）
     const refs = opt.noCtx ? [] : search(q ? `${plain(q.stem)}\n${q.tag || ''}\n${q.tag || ''}\n${text}` : text, q && Store.EX[q.exam] && Store.EX[q.exam].subj, q && q.id);
@@ -161,14 +161,14 @@ const AI = (() => {
         body: JSON.stringify({ system: SYSTEM(), messages: [...hist, { role: 'user', content: full }] }) });
       const j = await r.json().catch(() => ({}));
       if (!r.ok) {
-        const msg = { login: '登入已過期，請重新登入。', not_allowed: `這個帳號（${j.email || CLOUD.email || ''}）還沒有開通 AI 助教，請管理員把信箱加進白名單。`, quota: `今天的 ${j.limit || ''} 次已經用完，明天（台灣時間 0 點）會重置。`,
+        const msg = { login: '登入已過期，請重新登入。', blocked: `這個帳號（${j.email || CLOUD.email || ''}）的 AI 助教已被停用。`, quota: `今天的 ${j.limit || ''} 次已經用完，明天（台灣時間 0 點）會重置。`,
           all_failed: '所有 AI 服務都暫時無法回答（可能都在忙或額度用完），這次不扣次數，請稍後再試。', bad_request: '問題或附帶內容太長，請縮短後再試。' }[j.error] || `發生錯誤（HTTP ${r.status}）。`;
         Object.assign(pending, { pending: false, err: true, text: msg, detail: j.tried });
-        if (j.error === 'login' || j.error === 'not_allowed' || j.error === 'quota') refreshStatus();
+        if (j.error === 'login' || j.error === 'blocked' || j.error === 'quota') refreshStatus();
       } else {
         const { text: body, kw } = splitKw(String(j.text || ''));
         Object.assign(pending, { pending: false, text: body, kw, refs, provider: j.provider, model: j.model, truncated: j.truncated, q: q && q.id, ask: text });
-        if (S.st && S.st.allowed) { S.st.remaining = j.remaining; S.st.limit = j.limit || S.st.limit; paintStatus(); }
+        if (S.st && S.st.allowed) { S.st.remaining = j.remaining; S.st.limit = j.limit; if (j.used != null) S.st.used = j.used; paintStatus(); }
       }
     } catch (e) {
       Object.assign(pending, { pending: false, err: true, text: '連不上 AI 服務：' + e.message });

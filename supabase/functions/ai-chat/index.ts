@@ -2,8 +2,9 @@
  *
  * - 金鑰只放在 Supabase → Edge Functions → Secrets：GEMINI_API_KEY、GROQ_API_KEY、OPENROUTER_API_KEY、NVIDIA_API_KEY。
  *   網頁、repo 都沒有金鑰；網頁只送「登入憑證＋問題」過來。
- * - 每次請求：資料庫函式 ai_status 確認「已登入、在白名單、今天還有次數」→ 依序嘗試 Google → Groq → OpenRouter → NVIDIA
- *   （同一家內也依序換模型）→ 成功才呼叫 ai_take 扣一次 → 回傳答案與實際使用的服務／模型。
+ * - 每次請求：資料庫函式 ai_status 確認「已登入、沒被停用、（有設上限的話）今天還有次數」→ 依序嘗試 Google → Groq → OpenRouter → NVIDIA
+ *   （同一家內也依序換模型）→ 成功才呼叫 ai_take 記一次 → 回傳答案與實際使用的服務／模型。
+ *   預設不限次數；只有在 ai_limits 表裡設了 daily_limit 的人才有上限。
  * - 只會用下方 CHAIN 裡的模型（都是免費額度可用的），網頁無法指定模型或關掉限制。
  * - 只用標準 fetch，沒有其他套件；Supabase 後台的網頁編輯器可以直接貼上部署。 */
 
@@ -114,13 +115,13 @@ export async function handle(req: Request, env: Record<string, string>): Promise
   const msgs = clean(body);
   if (!msgs) return json(400, { error: 'bad_request' });
 
-  // 1. 登入、白名單、今日次數
+  // 1. 登入、是否停用、今日次數（沒設上限＝不限）
   const st = await rpc(env, req, 'ai_status');
   if (st.status === 401 || st.status === 403) return json(401, { error: 'login' });
   if (!st.ok || !st.data) return json(500, { error: 'db', detail: st.data && (st.data.message || st.data.hint) });
   const s = st.data;
-  if (!s.allowed) return json(s.reason === 'login' ? 401 : 403, { error: s.reason || 'not_allowed', email: s.email });
-  if (s.remaining <= 0) return json(429, { error: 'quota', limit: s.limit });
+  if (!s.allowed) return json(s.reason === 'login' ? 401 : 403, { error: s.reason || 'blocked', email: s.email });
+  if (s.limit != null && s.remaining <= 0) return json(429, { error: 'quota', limit: s.limit });
 
   // 2. 依序嘗試各家模型
   const deadline = Date.now() + LIMITS.total;
@@ -132,10 +133,11 @@ export async function handle(req: Request, env: Record<string, string>): Promise
       if (deadline - Date.now() < 4000) break;
       try {
         const out = await callOne(p, model, key, msgs, deadline);
-        // 3. 成功才扣次數
+        // 3. 成功才記一次
         const tk = await rpc(env, req, 'ai_take');
-        const left = tk.ok && tk.data && typeof tk.data.remaining === 'number' ? tk.data.remaining : Math.max(s.remaining - 1, 0);
-        return json(200, { text: out.text, provider: p.name, model: out.model, truncated: out.truncated, remaining: left, limit: s.limit, tried });
+        const t = tk.ok && tk.data ? tk.data : {};
+        return json(200, { text: out.text, provider: p.name, model: out.model, truncated: out.truncated,
+          used: t.used ?? null, limit: s.limit ?? null, remaining: s.limit == null ? null : (t.remaining ?? Math.max(s.remaining - 1, 0)), tried });
       } catch (e) {
         tried.push(`${p.name} ${model}：${(e as Error).message}`);
         if ((e as any).badKey) break;
