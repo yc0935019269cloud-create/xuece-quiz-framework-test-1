@@ -1164,6 +1164,11 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .ai-vi a { color: var(--gold); }
 .aip-ctx { display: flex; align-items: center; gap: 6px; padding: 3px 6px; margin-top: 6px; background: rgba(0,0,0,.18); border: 2px dashed var(--hi); }
 .aip-ctx span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.aip-page { display: flex; align-items: center; gap: 6px; margin-top: 6px; }
+.aip-page button { flex: none; }
+.aip-page span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.aip-ctx[hidden], .aip-page[hidden] { display: none; }
+.ai-pg { font-size: 12px; margin-top: 2px; white-space: normal; }
 .aip-in { display: flex; gap: 6px; margin-top: 6px; }
 .aip-in textarea { flex: 1; min-width: 0; resize: none; background: var(--paper); color: #1b1424; border: 3px solid var(--line); padding: 6px 8px; font: inherit; font-size: 15px; }
 @media (max-width: 640px) { .aip { left: 0 !important; right: 0; top: auto !important; bottom: 0; width: 100vw !important; height: min(78vh, calc(100vh - 56px)) !important; box-sizing: border-box; } }
