@@ -156,9 +156,15 @@
 - `js/ai.js`：浮動聊天視窗（營地「AI 助教」、☰ 選單、題目詳解的「💬 問 AI」→ `data-askai`）。本機 BM25（中文雙字詞）從題庫＋學習卡找參考資料，回答附 [n] 出處（點了開題目或課程）；🔎 查證查維基百科（中／英，先找同名條目）與 PubMed，可再請 AI 對照。對話只存在記憶體。載入順序：pad.js → ai.js → toolmenu.js。
 - 後端：`supabase/ai-setup.sql`（`ai_limits` 個別設定（預設空＝登入就能用、不限次數；可對信箱設 daily_limit 或 blocked）、`ai_usage` 每日用量、`ai_status`／`ai_take`，RLS 無 policy）＋ `supabase/functions/ai-chat/index.ts`（Edge Function，只用 fetch；依序 Google → Groq → OpenRouter → NVIDIA，成功才扣次數）。設定與管理：`docs/AI助教設定.md`。
 - **金鑰只能放 Supabase Secrets**（GEMINI／GROQ／OPENROUTER／NVIDIA_API_KEY），絕對不要寫進 repo 或網頁；模型清單在函式的 `CHAIN`。OpenAI 金鑰沒有額度，未使用。
+- 學習模式：課程裡打開 AI 視窗會出現「✨ 把這頁講得更好懂」（使用者要求只做這一顆按鈕）。內容來自 `js/learn.js` 的 `LEARN_UI.pageCtx()`（目前這一步的文字、檢核題含答案、題目頁再附前面最近的概念卡；圖片與互動動畫只附文字），換頁或作答時發 `learnpage` 事件更新按鈕。還沒作答的題目會標「學生還沒作答」，系統提示要求 AI 不直接給答案。追問時歷史訊息帶著那一頁的內容。
 - 已測：函式（Node 載入＋真實 AI 服務、模擬資料庫）的未登入／停用／個別上限／不限次數／備援／全部失敗不扣次數；SQL（PGlite）的權限與重複執行；網頁端（模擬 Supabase）登入、附題提問、追問、查證、對照、手機版。尚未在真的 Supabase 專案部署測試。
 
 ## 計算紙手寫手感與小工具視窗縮放（2026-10-12）
 
 - `js/pad.js`：書寫時只補畫新線段（requestAnimationFrame），不再每次整張重畫；畫布用 `desynchronized` 低延遲模式；觸控筆壓力做平滑。整個計算紙禁止選取文字（CSS user-select＋攔 selectstart／dblclick／contextmenu），快速連寫不會反白；觸控筆橡皮擦端（button 5）直接擦除。逐段畫與整張重畫的結果已逐像素比對一致。
 - `U.grip(panel, {key, minW, minH, apply, reset})`（`js/util.js`）：計算機、計算紙、AI 助教右下角的調整大小把手；放大碰到螢幕邊緣時視窗會往左上挪；大小記在 localStorage `winsize`（不進存檔），雙擊把手恢復；手機寬度不顯示。計算機用 CSS 變數 `--k` 等比例縮放（按鍵、字一起變）。
+
+## 檢核題不可寫「承上題」（2026-10-12）
+
+- 學習模式的檢核題會被複習盒、課末魔王單獨抽出來，題目必須自己看得懂：用到的數據寫進題目，不要寫「承上例／上題」。已改 `physopt-u4` l6b（頂點物距成像）與 `physopt-u2` l4b 實戰（角膜面 f₂）兩題，答案與選項不變。
+- `tools/build.py` 對 q 含「承上／上題／上例／前例／前一題」的檢核題發警告（`--strict` 失敗）。`js/learn.js` 的 `ctxDep`：這類題目與「完成剛才的任務後…」（114 大一下互動後的自評題）只在課程原位置出現，不進複習盒、不給課末魔王抽。題庫的承上題原本就不進學習模式（`followUp`）。

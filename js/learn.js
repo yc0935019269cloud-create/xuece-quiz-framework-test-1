@@ -22,14 +22,17 @@ const LEARN_UI = (() => {
   const lkey = (p, l) => p.id + '/' + l.id;
 
   /* ---------- 複習項目索引：check 與 flash 的 id → 內容 ---------- */
+  /* 要接著前一步才看得懂的檢核題（承上例、上題、剛才的任務…）只在課程裡原本的位置出現，不進複習盒、不給課末魔王抽 */
+  const CTX_RE = /^\s*(【[^】]*】\s*)?(承上|承前|續上|接上|同上|延續上)|(^|[^以])上一?[題例]|前一?例|前一題|剛才的任務|剛剛的任務/;
+  const ctxDep = c => CTX_RE.test(String(c.q || ''));
   const ITEMS = {};
   /* 建立索引（啟動時與「導入素材」合併後都會呼叫） */
   function reindex() {
     packs.forEach(p => { PK[p.id] = p; });
     packs.forEach(p => p.lessons.forEach(l => l.steps.forEach(s => {
       const where = { p: p.id, l: l.id };
-      if (s.type === 'check') ITEMS[s.id] = Object.assign({ k: 'check', c: s }, where);
-      if (s.type === 'practice') (s.checks || []).forEach(c => { ITEMS[c.id] = Object.assign({ k: 'check', c }, where); });
+      if (s.type === 'check' && !ctxDep(s)) ITEMS[s.id] = Object.assign({ k: 'check', c: s }, where);
+      if (s.type === 'practice') (s.checks || []).forEach(c => { if (!ctxDep(c)) ITEMS[c.id] = Object.assign({ k: 'check', c }, where); });
       if (s.type === 'card' && s.flash) ITEMS[s.flash.id] = Object.assign({ k: 'flash', c: s.flash }, where);
       if (s.type === 'recap') (s.flash || []).forEach(f => { ITEMS[f.id] = Object.assign({ k: 'flash', c: f }, where); });
     })));
@@ -74,6 +77,92 @@ const LEARN_UI = (() => {
   const imgList = v => (Array.isArray(v) ? v : v ? [v] : []);
   const imgsHTML = (v, src) => imgList(v).map(x => `<img class="lp-img" src="${U.esc(U.img(x))}" alt="">`).join('') + (src ? `<div class="lp-src">圖片來源：${inl(src)}</div>` : '');
 
+  const KIND = { single: '單選', multi: '多選（可選多個）', tf: '是非', fill: '填答', order: '排序', self: '自評' };
+
+  /* ---------- 給 AI 助教的「目前學習頁面」（js/ai.js 的「把這頁講得更好懂」讀取） ----------
+   * cur 是課程播放器的即時狀態；換頁、作答後發出 learnpage 事件，讓 AI 視窗更新按鈕。 */
+  let cur = null;   // { p, l, st, el, boss: { c, k, n } | { end: true } | null, done, shown }
+  const pageMoved = patch => { if (cur && patch) Object.assign(cur, patch); document.dispatchEvent(new Event('learnpage')); };
+  const ABC = i => String.fromCharCode(65 + i);
+  function checkText(c) {
+    const key = c.kind === 'single' ? `${ABC(c.answer)}. ${c.choices[c.answer]}` : c.kind === 'multi' ? [].concat(c.answer).map(i => `${ABC(i)}. ${c.choices[i]}`).join('；')
+      : c.kind === 'tf' ? (c.answer ? '對' : '錯') : c.kind === 'fill' ? [].concat(c.answer).join(' ／ ') : c.kind === 'order' ? c.items.join(' → ') : c.answer;
+    return [`題型：${KIND[c.kind]}`, `題目：${c.q}`, ...(c.kind === 'single' || c.kind === 'multi' ? c.choices.map((t, i) => `${ABC(i)}. ${t}`) : []),
+      `${c.kind === 'order' ? '正確順序' : c.kind === 'self' ? '參考答案' : '正確答案'}：${key}`, c.hint ? '提示：' + c.hint : '', c.explain ? '解說：' + c.explain : ''].filter(Boolean).join('\n');
+  }
+  const cut = (s, n) => (s = String(s || '')).length > n ? s.slice(0, n) + '…' : s;
+  function stepText(s, shown) {
+    const L = [];
+    const pt = x => typeof x === 'string' ? x : `${x.name}${x.desc ? '：' + x.desc : ''}`;
+    if (s.type === 'intro') L.push(`標題：${s.title || ''}`, s.body || '');
+    else if (s.type === 'card') {
+      L.push(`標題：${s.title}`, s.body || '');
+      if ((s.keys || []).length) L.push('重點：\n' + s.keys.map(k => '- ' + k).join('\n'));
+      if (s.tip) L.push('小提醒：' + s.tip);
+      if (imgList(s.img).length) L.push('（這張卡有圖片，AI 看不到）');
+    } else if (s.type === 'example') {
+      L.push(`標題：${s.title || '範例'}`, '題目：' + s.problem, ...s.steps.map((x, i) => `第 ${i + 1} 步：${x}`));
+      if (s.answer) L.push('結論：' + s.answer);
+      if (shown < s.steps.length) L.push(`（學生目前展開到第 ${shown} / ${s.steps.length} 步）`);
+    } else if (s.type === 'interactive') {
+      L.push(`標題：${s.title || '動手玩'}`, s.body || '', s.task ? '任務：' + s.task : '');
+      const words = String(s.html || '').replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+      if (words) L.push('互動畫面上的文字：' + cut(words, 600));
+      L.push('（這是互動動畫，AI 看不到畫面）');
+    } else if (s.type === 'diagram') {
+      L.push(`標題：${s.title || '看圖認識'}`, s.body || '', '圖上的標記：\n' + (s.points || []).map((x, i) => `${i + 1}. ${pt(x)}`).join('\n'), '（AI 看不到圖片）');
+    } else if (s.type === 'recap') {
+      L.push('本課重點：\n' + s.points.map((x, i) => `${i + 1}. ${x}`).join('\n'));
+      if ((s.flash || []).length) L.push('記憶卡：\n' + s.flash.map(f => `- ${f.front} → ${f.back}`).join('\n'));
+    } else if (s.type === 'check') L.push(checkText(s));
+    return L.filter(Boolean).join('\n');
+  }
+  /* 回傳 { label, text, qid, todo, query, subj, skip }；不在課程裡回傳 null。
+   * qid：實戰的題庫題（題目由 ai.js 附上）；todo：這題學生還沒作答；skip：檢索參考資料時略過的教材卡（頁面本身已經附上） */
+  function pageCtx() {
+    if (!cur || !document.body.contains(cur.el)) return null;
+    const { p, l, st } = cur, R = st.run || {}, n = l.steps.length;
+    const sid = i => `${p.id}/${l.id}/${i}`;
+    const head = [`單元：${p.title}`, `課程：${l.title}（第 ${p.lessons.indexOf(l) + 1} / ${p.lessons.length} 課）`];
+    if ((l.goals || []).length) head.push('本課目標：' + l.goals.join('；'));
+    const out = { qid: null, todo: false, subj: p.subject, skip: [] };
+    let what, body, bg = null;
+    if (cur.boss && cur.boss.c) {
+      out.label = `${l.title}・課末魔王 第 ${cur.boss.k + 1} / ${cur.boss.n} 題`;
+      what = '課末魔王總複習題（不給提示）'; body = checkText(cur.boss.c); out.todo = !cur.done; out.query = cur.boss.c.q;
+    } else if (cur.boss || st.i >= n) {
+      out.label = `${l.title}・課末`;
+      const rc = l.steps.find(x => x.type === 'recap');
+      what = '課程結尾'; body = rc ? stepText(rc) : ''; out.query = l.title + '\n' + (l.goals || []).join('\n');
+    } else {
+      const s = l.steps[st.i];
+      const title = s.type === 'practice' ? s.title : s.type === 'check' ? '' : s.title;
+      out.label = `${l.title}・第 ${st.i + 1} / ${n} 步 ${STEP[s.type].name}${title ? `「${title}」` : ''}`;
+      what = `第 ${st.i + 1} / ${n} 步：${STEP[s.type].name}`;
+      if (s.type === 'practice') {
+        const pk = (R.pk || {})[st.i] || { items: [] }, it = pk.items[R.sub || 0];
+        what += `「${s.title || '實戰'}」第 ${(R.sub || 0) + 1} / ${pk.items.length} 題`;
+        if (it && it.q) { out.qid = it.q; body = '（題庫題，題目附在【目前在看的題目】）'; }
+        else if (it) body = checkText(s.checks[it.c]);
+        out.todo = !!it && !cur.done;
+      } else {
+        body = stepText(s, cur.shown || 0);
+        if (s.type === 'check') out.todo = !cur.done;
+        if (s.type === 'card' || s.type === 'recap' || s.type === 'diagram') out.skip.push(sid(st.i));
+      }
+      out.query = [s.title, s.q, s.problem, ...(s.keys || []), ...(s.points || []).map(x => typeof x === 'string' ? x : x.name)].filter(Boolean).join('\n') || l.title;
+      // 題目頁附上前面最近的一張概念卡或範例，AI 才知道這題在考剛剛學的哪個觀念
+      if (s.type === 'check' || s.type === 'practice') {
+        for (let i = st.i - 1; i >= 0; i--) {
+          const x = l.steps[i];
+          if (x.type === 'card' || x.type === 'example') { bg = `【這題前面的${STEP[x.type].name}】\n${cut(stepText(x, Infinity), 1500)}`; out.skip.push(sid(i)); out.query += '\n' + (x.title || ''); break; }
+        }
+      }
+    }
+    out.text = `【目前的學習頁面】\n${head.join('\n')}\n目前位置：${what}\n${cut(body, 3500)}${bg ? '\n\n' + bg : ''}`;
+    return out;
+  }
+
   /* ---------- 通用檢核題（課程、實戰自編題、複習共用） ----------
    * opts: { onDone(firstOk), allowHint=true }
    */
@@ -82,8 +171,7 @@ const LEARN_UI = (() => {
     let tries = 0, locked = false;
     box.innerHTML = `<div class="lc-q">${md(c.q)}</div><div class="lc-ans"></div><div class="lc-fb"></div>`;
     const ans = box.querySelector('.lc-ans'), fb = box.querySelector('.lc-fb');
-    const kindName = { single: '單選', multi: '多選（可選多個）', tf: '是非', fill: '填答', order: '排序', self: '自評' }[c.kind];
-    box.insertAdjacentHTML('afterbegin', `<div class="lc-kind">${kindName}</div>`);
+    box.insertAdjacentHTML('afterbegin', `<div class="lc-kind">${KIND[c.kind]}</div>`);
 
     function wrong(show) {
       tries++;
@@ -299,6 +387,7 @@ const LEARN_UI = (() => {
   function cleanup() {
     cleanupQ();
     if (keyH) { document.removeEventListener('keydown', keyH); keyH = null; }
+    if (cur) { cur = null; pageMoved(); }
   }
   function play(p, l, restart) {
     cleanup();
@@ -317,6 +406,7 @@ const LEARN_UI = (() => {
       <div class="lp-body" id="lpBody"></div>
       <div class="lp-foot">${petBox()}<span class="grow"></span><button class="px-btn gold big" id="lpNext" disabled>繼續 ▶</button></div></div>`;
     U.$('#lpExit').onclick = () => { SFX.play('click'); cleanup(); save(); packView(p); };
+    cur = { p, l, st, el: U.$('#lpBody'), boss: null, done: false, shown: 0 };
     const next = U.$('#lpNext');
     keyH = e => {
       if (document.querySelector('.modal-bg') || !document.body.contains(next)) return;
@@ -650,6 +740,7 @@ const LEARN_UI = (() => {
       window.scrollTo(0, 0);
       enterSeg();
       if (s.type === 'card' || s.type === 'interactive') gainEnergy();
+      pageMoved({ boss: null, done: false, shown: 0 });
 
       if (s.type === 'intro') {
         body.innerHTML = head + `<h3>${U.esc(s.title || l.title)}</h3>${md(s.body)}` +
@@ -663,7 +754,7 @@ const LEARN_UI = (() => {
       } else if (s.type === 'check') {
         body.innerHTML = head + '<div class="lc"></div>';
         const box = body.querySelector('.lc');
-        renderCheck(box, s, { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(s.id, true); save(); ready(); next.focus(); } });
+        renderCheck(box, s, { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(s.id, true); save(); ready(); next.focus(); pageMoved({ done: true }); } });
         body._key = e => box._key ? box._key(e) : false;
       } else if (s.type === 'diagram') {
         renderDiagram(body, head, s, `${p.id}/${l.id}/${st.i}`, {
@@ -679,7 +770,7 @@ const LEARN_UI = (() => {
           <div class="row" style="justify-content:center"><button class="px-btn blue" id="exNext">💡 看第 1 步</button><button class="px-btn small" id="exAll">全部展開</button></div>`;
         const box = body.querySelector('.lp-steps'), nb = U.$('#exNext'), ab = U.$('#exAll');
         const reveal = () => {
-          if (shown < s.steps.length) { box.insertAdjacentHTML('beforeend', `<div class="lp-step"><b>${shown + 1}</b><div>${md(s.steps[shown])}</div></div>`); shown++; SFX.play('click'); }
+          if (shown < s.steps.length) { box.insertAdjacentHTML('beforeend', `<div class="lp-step"><b>${shown + 1}</b><div>${md(s.steps[shown])}</div></div>`); shown++; cur && (cur.shown = shown); SFX.play('click'); }
           if (shown < s.steps.length) nb.textContent = `💡 看第 ${shown + 1} 步`;
           else { nb.parentElement.remove(); if (s.answer) box.insertAdjacentHTML('beforeend', `<div class="lp-exans">✅ ${md(s.answer)}</div>`); ready(); next.focus(); }
         };
@@ -704,16 +795,17 @@ const LEARN_UI = (() => {
           body.innerHTML = head + `<div class="row"><b>${U.esc(s.title || '實戰')}</b><span class="grow"></span><span class="tag">第 ${R.sub + 1} / ${pk.items.length} 題</span>${it.q ? '<span class="tag gold-t">題庫題</span>' : ''}</div><div class="lp-q mt"></div>`;
           const box = body.querySelector('.lp-q');
           say(it.q ? U.pick(LINES.practice) : '這題是自編的練習題！');
+          pageMoved({ done: false });
           next.disabled = true;
           next.textContent = last ? (st.i === l.steps.length - 1 ? '完成本課 ✔' : '繼續 ▶') : '下一題 ▶';
           next.onclick = () => { SFX.play('click'); if (!last) { R.sub++; save(); sub(); } else { st.i++; R.sub = 0; save(); if (st.i >= l.steps.length) bossOrFinish(); else step(); } };
           if (it.q) {
             const q = Store.Q[it.q];
-            ctl = QV.render(box, q, { mode: 'learn', onAnswer: res => { Store.record(q.id, res.ok); SFX.play(res.ok ? 'correct' : 'wrong'); say(res.ok ? U.pick(LINES.ok) : '這題已經收進錯題本，之後可以重刷。'); tally(res.ok); if (res.ok) onRightHit(true); else onWrongHit(); ready(); } });
+            ctl = QV.render(box, q, { mode: 'learn', onAnswer: res => { Store.record(q.id, res.ok); SFX.play(res.ok ? 'correct' : 'wrong'); say(res.ok ? U.pick(LINES.ok) : '這題已經收進錯題本，之後可以重刷。'); tally(res.ok); if (res.ok) onRightHit(true); else onWrongHit(); ready(); pageMoved({ done: true }); } });
             body._key = null;
           } else {
             const c = s.checks[it.c];
-            renderCheck(box, c, { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(c.id, true); save(); ready(); next.focus(); } });
+            renderCheck(box, c, { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(c.id, true); save(); ready(); next.focus(); pageMoved({ done: true }); } });
             body._key = e => box._key ? box._key(e) : false;
           }
         }
@@ -730,6 +822,7 @@ const LEARN_UI = (() => {
     function bossOrFinish() {
       const pool = [];
       l.steps.forEach(x => { if (x.type === 'check') pool.push(x); if (x.type === 'practice') (x.checks || []).forEach(c => pool.push(c)); });
+      for (let i = pool.length - 1; i >= 0; i--) if (ctxDep(pool[i])) pool.splice(i, 1);
       if (!D.cfg.battle || pool.length < 2 || B.bossDone) return finish();
       const qs = U.shuffle(pool).slice(0, Math.min(5, Math.max(3, Math.ceil(pool.length / 2))));
       const th = C.bossTheme(p.subject), bd = U.pick(C.BOSS_DEFS[th]);
@@ -745,14 +838,16 @@ const LEARN_UI = (() => {
         U.$('#lpCnt').textContent = `魔王戰 ${k + 1} / ${qs.length}`;
         body.innerHTML = `<div class="lp-type">👑 課末魔王</div>${k === 0 ? `<p class="lb-line">「${U.esc(B.boss.line)}」</p>` : ''}<div class="dim small-t">總複習：不給提示，答對就攻擊魔王！</div><div class="lc mt"></div>`;
         const box = body.querySelector('.lc'), c = qs[k];
+        pageMoved({ boss: { c, k, n: qs.length }, done: false });
         next.disabled = true; next.textContent = '下一擊 ▶';
         next.onclick = () => { SFX.play('click'); k++; one(); };
-        renderCheck(box, c, { allowHint: false, onWrong: onWrongHit, onDone: (firstOk, ok) => { if (ok) { right++; onRightHit(firstOk); } else addRev(c.id, true); setTimeout(tickMon, 0); save(); ready(k >= qs.length - 1 || B.boss.hp <= 0 ? '結算 ▶' : '下一擊 ▶'); next.focus(); } });
+        renderCheck(box, c, { allowHint: false, onWrong: onWrongHit, onDone: (firstOk, ok) => { if (ok) { right++; onRightHit(firstOk); } else addRev(c.id, true); setTimeout(tickMon, 0); save(); ready(k >= qs.length - 1 || B.boss.hp <= 0 ? '結算 ▶' : '下一擊 ▶'); next.focus(); pageMoved({ done: true }); } });
         body._key = e => box._key ? box._key(e) : false;
       };
       const endBoss = () => {
         cleanupQ();
         const win = B.boss.hp <= 0; B.bossDone = true; B.bossWin = win; lb.classList.remove('rage');
+        pageMoved({ boss: { end: true } });
         if (win) { B.gems += 4; D.stat.bosses++; const bs = Store.profile.bestiary; bs['boss:' + B.boss.name] = (bs['boss:' + B.boss.name] || 0) + 1; Store.saveProfile(); }
         save();
         body.innerHTML = `<div class="center"><h3>${win ? `👑 擊敗魔王「${U.esc(B.boss.name)}」！` : `魔王「${U.esc(B.boss.name)}」撤退了…`}</h3><p>${win ? '這課的觀念你已經掌握了！魂晶 +4' : '答錯的題目已放進複習盒，下次再來挑戰。'}</p></div>`;
@@ -1136,5 +1231,5 @@ const LEARN_UI = (() => {
     return true;
   }
 
-  return { reindex, screen, tileDesc, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, get packs() { return packs; } };
+  return { reindex, screen, tileDesc, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, pageCtx, get packs() { return packs; } };
 })();

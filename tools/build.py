@@ -430,6 +430,11 @@ def check_check(c, where, R):
             R.err(where, 'self 的 answer 要是參考答案文字')
     if not is_str(c.get('explain')) and kind != 'self':
         R.warn(where, '沒有 explain（答完後的解說），建議補上')
+    if is_str(c.get('q')) and FOLLOW_Q.search(c['q']):
+        R.warn(where, '檢核題要單獨看得懂：不要寫「承上例／上題」，把需要的數據寫進題目（複習盒與課末魔王會單獨出題）')
+
+
+FOLLOW_Q = re.compile(r'^\s*(【[^】]*】\s*)?(承上|承前|續上|接上|同上|延續上)|(^|[^以])上一?[題例]|前一?例|前一題')
 
 
 def check_flash(f, where, R):

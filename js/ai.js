@@ -2,12 +2,13 @@
  * - 問題先在本機題庫與學習教材裡找最相關的段落（中文雙字詞 BM25），連同問題送給 AI，回答附 [1][2] 出處，點了可以開題目或課程。
  * - AI 走雲端同步同一個 Supabase 專案的轉送程式（supabase/functions/ai-chat）：金鑰只在 Supabase，網頁只送登入憑證。
  *   需要登入（信箱驗證碼）；預設不限次數，管理員可以在後台對個別帳號設上限或停用。說明：docs/AI助教設定.md
+ * - 在學習模式的課程裡，視窗會出現「✨ 把這頁講得更好懂」：把目前這一步（概念卡、範例、檢核題…，見 learn.js 的 pageCtx）附給 AI 重新講解。
  * - 🔎 查證：用 AI 回答最後附的關鍵字查維基百科與 PubMed（網頁直接查，不扣次數），可以再請 AI 對照（扣 1 次）。
  * - 對話只存在這次開啟的記憶體裡，不進存檔、不同步。 */
 const AI = (() => {
   const MAX_CTX = 5200, PER_DOC = 700, TOP = 6, HISTORY = 6;
   const S = { msgs: [], q: null, busy: false, st: null, stErr: '' };
-  let panel = null, list, inp, sendBtn, stEl, ctxEl;
+  let panel = null, list, inp, sendBtn, stEl, ctxEl, pageEl;
 
   /* ---------- 連線 ---------- */
   const cfg = () => (typeof CLOUD !== 'undefined' && CLOUD.cfg && CLOUD.cfg()) || null;
@@ -63,10 +64,10 @@ const AI = (() => {
         text: [plain(q.stem), ch, `答案：${q.ans}`, q.ex ? '詳解：' + plain(q.ex) : '', q.tag ? '考點：' + q.tag : ''].filter(Boolean).join('\n') });
     });
     const packs = typeof LEARN_UI !== 'undefined' ? LEARN_UI.packs : [];
-    packs.forEach(p => p.lessons.forEach(l => l.steps.forEach(s => {
+    packs.forEach(p => p.lessons.forEach(l => l.steps.forEach((s, si) => {
       if (s.type !== 'card' && s.type !== 'recap' && s.type !== 'diagram') return;
       const pts = (s.points || []).map(x => typeof x === 'string' ? x : `${x.name}${x.desc ? '：' + x.desc : ''}`);
-      docs.push({ k: 'card', pack: p.id, subj: p.subject, title: `${p.title}・${l.title}${s.title ? '・' + s.title : s.type === 'recap' ? '・本課重點' : ''}`,
+      docs.push({ k: 'card', pack: p.id, sid: `${p.id}/${l.id}/${si}`, subj: p.subject, title: `${p.title}・${l.title}${s.title ? '・' + s.title : s.type === 'recap' ? '・本課重點' : ''}`,
         text: [s.title, plain(s.body), ...(s.keys || []).map(plain), ...pts.map(plain)].filter(Boolean).join('\n') });
     })));
     const post = new Map(), len = [];
@@ -78,7 +79,8 @@ const AI = (() => {
     });
     KB = { docs, post, len, avg: len.reduce((a, b) => a + b, 0) / Math.max(1, len.length), packN: packs.length };
   }
-  function search(query, subj, skipId) {
+  function search(query, subj, skip) {
+    if (!(skip instanceof Set)) skip = new Set(skip ? [skip] : []);
     // 學習單元可能稍後才載入（導入素材在 IndexedDB），數量變了就重建
     if (!KB || KB.packN !== (typeof LEARN_UI !== 'undefined' ? LEARN_UI.packs.length : 0)) buildKB();
     const qt = [...new Set(qterms(query))], N = KB.docs.length, sc = new Float64Array(N);
@@ -88,7 +90,7 @@ const AI = (() => {
       for (let i = 0; i < a.length; i += 2) { const d = a[i], f = a[i + 1]; sc[d] += idf * f * 2.2 / (f + 1.2 * (0.25 + 0.75 * KB.len[d] / KB.avg)); }
     });
     const idx = [];
-    for (let i = 0; i < N; i++) if (sc[i] > 0 && !(skipId && KB.docs[i].id === skipId)) idx.push(i);
+    for (let i = 0; i < N; i++) if (sc[i] > 0 && !skip.has(KB.docs[i].id) && !skip.has(KB.docs[i].sid)) idx.push(i);
     if (subj) idx.forEach(i => { if (KB.docs[i].subj === subj) sc[i] *= 1.3; });
     idx.sort((a, b) => sc[b] - sc[a]);
     // 教材卡最多 3 筆排前面（講觀念），其餘給題庫題（講考法）
@@ -113,12 +115,23 @@ const AI = (() => {
 4. 計算題寫出公式、代入過程與單位，一步一步算，注意正負號慣例。
 5. 不要用 LaTeX 或 $ 符號；公式用一般文字寫，例如 P = P₁ + P₂、V = U + P、f = 1/P。
 6. 要好懂：先一句話講結論，再分點說明，需要時舉生活例子；精簡，不要重抄題目。
-7. 回答最後另起一行，照這個格式輸出查證用關鍵字（學生看不到這行）：
+7. 如果附了【目前的學習頁面】，那是學生在學習模式正在看的畫面，「這頁」「這題」指的就是它。請你「講得更好懂」時，不要只是換句話說：先用一句話講重點並給一個生活比喻，再拆成很小的步驟（一步只做一件事），最後點出容易搞錯的地方；名詞、數值、正負號慣例要和頁面一致。頁面上的圖片和互動動畫你看不到，需要時請學生描述。
+8. 標示「學生還沒作答」的題目：除非學生明確要答案，否則只講需要的觀念和思考方向，不要說出正確答案，也不要一路排除到只剩一個選項。
+9. 回答最後另起一行，照這個格式輸出查證用關鍵字（學生看不到這行）：
 查證關鍵字：中文關鍵字1, 中文關鍵字2｜English keyword 1, English keyword 2`;
-  function qBlock(q) {
+  const TODO = '※ 學生還沒作答這題：除非學生明確要答案，否則不要說出正確答案。';
+  function qBlock(q, todo) {
     const ex = Store.EX[q.exam];
     const ch = (q.choices || []).map((c, i) => `${QV.labelOf(q, i)}. ${plain(c)}`).join('\n');
-    return `【目前在看的題目】（${ex ? QV.exLabel(ex) : ''}・第 ${q.n} 題）\n${plain(q.stem)}\n${ch}\n正確答案：${q.ans}${q.ex ? '\n題庫詳解：' + plain(q.ex) : ''}`;
+    return `【目前在看的題目】（${ex ? QV.exLabel(ex) : ''}・第 ${q.n} 題）\n${plain(q.stem)}\n${ch}\n正確答案：${q.ans}${q.ex ? '\n題庫詳解：' + plain(q.ex) : ''}${todo ? '\n' + TODO : ''}`;
+  }
+  /* 學習模式目前的頁面（不在課程裡就是 null） */
+  const page = () => (typeof LEARN_UI !== 'undefined' && LEARN_UI.pageCtx && LEARN_UI.pageCtx()) || null;
+  const EASY = '請把這一頁講得更好懂：先用一句話說重點、舉一個生活比喻，再一步一步慢慢解釋，最後提醒我容易搞錯的地方。';
+  const EASY_Q = '這題我還沒作答，請把這題要用到的觀念講得更好懂，告訴我該怎麼想，但先不要告訴我答案。';
+  function askPage() {
+    const pg = page(); if (!pg) { U.toast('請先打開學習模式的課程'); return; }
+    send(pg.todo ? EASY_Q : EASY, { page: pg, show: '✨ 把這頁講得更好懂' });
   }
   // 萬一還是寫了 LaTeX（$...$），轉成一般文字
   const SUB = '₀₁₂₃₄₅₆₇₈₉';
@@ -140,11 +153,17 @@ const AI = (() => {
     const c = cfg();
     if (!c || !CLOUD.signedIn) { await refreshStatus(); U.toast('請先登入雲端帳號'); return; }
     if (S.st && S.st.reason === 'blocked') { U.toast('這個帳號的 AI 助教已被停用'); return; }
-    const q = opt.noCtx || !S.q ? null : Store.Q[S.q];
-    // 附了題目時，以題幹與考點為主去找參考資料（問句裡的「為什麼答案是」不參與檢索）
-    const refs = opt.noCtx ? [] : search(q ? `${plain(q.stem)}\n${q.tag || ''}\n${q.tag || ''}\n${text}` : text, q && Store.EX[q.exam] && Store.EX[q.exam].subj, q && q.id);
+    const pg = opt.page || null;
+    // 附上的題目：手動附的那題，加上學習頁面正在做的題庫題（同一題只附一次）
+    const qs = opt.noCtx ? [] : [...new Set([S.q, pg && pg.qid].filter(Boolean))].map(id => Store.Q[id]).filter(Boolean);
+    const q = qs[0] || null;
+    // 附了題目時，以題幹與考點為主去找參考資料（問句裡的「為什麼答案是」不參與檢索）；附了學習頁面時以頁面內容為主，並略過頁面本身那張卡
+    const subj = pg ? pg.subj : q && Store.EX[q.exam] && Store.EX[q.exam].subj;
+    const query = [pg && pg.query, ...qs.map(x => `${plain(x.stem)}\n${x.tag || ''}\n${x.tag || ''}`), pg ? '' : text].filter(Boolean).join('\n');
+    const refs = opt.noCtx ? [] : search(query, subj, new Set([...qs.map(x => x.id), ...(pg ? pg.skip : [])]));
     const ref = refs.length ? '【參考資料】\n' + refs.map((r, i) => `[${i + 1}]（${r.k === 'q' ? '題庫' : '教材'}｜${r.title}）\n${r.text}`).join('\n\n') + '\n\n' : '';
-    const full = (opt.raw ? text : `${ref}${q ? qBlock(q) + '\n\n' : ''}【問題】\n${text}`);
+    const pgText = pg ? plain(pg.text) + (pg.todo && !pg.qid ? '\n' + TODO : '') + '\n\n' : '';
+    const full = (opt.raw ? text : `${ref}${pgText}${qs.map(x => qBlock(x, pg && pg.todo && x.id === pg.qid) + '\n\n').join('')}【問題】\n${text}`);
     // 之前的對話（只帶成功的一問一答，問題不含參考資料，省字數）
     let hist = [];
     for (let i = 0; i < S.msgs.length - 1; i++) {
@@ -152,7 +171,7 @@ const AI = (() => {
       if (u.role === 'user' && a.role === 'assistant' && !a.err && !a.pending) { hist.push({ role: 'user', content: u.plain }, { role: 'assistant', content: a.text }); i++; }
     }
     hist = hist.slice(-HISTORY);
-    S.msgs.push({ role: 'user', show: opt.show || text, plain: text, q: q && q.id });
+    S.msgs.push({ role: 'user', show: opt.show || text, plain: pg ? `${pgText}【問題】\n${text}` : text, q: q && q.id, pageLabel: pg && pg.label });
     const pending = { role: 'assistant', pending: true, t0: Date.now() };
     S.msgs.push(pending); S.busy = true; draw();
     try {
@@ -231,7 +250,7 @@ const AI = (() => {
   /* ---------- 畫面 ---------- */
   const cite = (html, n) => html.replace(/\[(\d{1,2})\]/g, (s, k) => +k >= 1 && +k <= n ? `<a class="ai-cite" data-ref="${k}">[${k}]</a>` : s);
   function msgHTML(m, i) {
-    if (m.role === 'user') return `<div class="ai-msg me"><div class="ai-bub">${U.esc(m.show)}</div></div>`;
+    if (m.role === 'user') return `<div class="ai-msg me"><div class="ai-bub">${U.esc(m.show)}${m.pageLabel ? `<div class="ai-pg dim">📖 ${U.esc(m.pageLabel)}</div>` : ''}</div></div>`;
     if (m.pending) return `<div class="ai-msg bot"><div class="ai-bub dim">思考中…<span class="ai-sec" data-t0="${m.t0}"></span><br><small>忙碌時會自動換下一個 AI 服務</small></div></div>`;
     if (m.err) return `<div class="ai-msg bot"><div class="ai-bub err">${U.esc(m.text)}${m.detail && m.detail.length ? `<details class="small-t"><summary>詳細</summary>${m.detail.map(U.esc).join('<br>')}</details>` : ''}</div></div>`;
     const refs = m.refs || [];
@@ -259,7 +278,17 @@ const AI = (() => {
     const q = S.q && Store.Q[S.q];
     ctxEl.hidden = !q;
     if (q) { const ex = Store.EX[q.exam]; ctxEl.innerHTML = `<span>📎 一起附上：${U.esc(ex ? QV.exLabel(ex).replace(/^【[^】]*】\s*/, '') : '')}・第 ${U.esc(q.n)} 題</span><button class="ai-x" data-act="unq" title="不附這題">✕</button>`; }
+    drawPage();
   }
+  /* 「把這頁講得更好懂」：只在學習模式的課程裡出現，換頁時跟著更新 */
+  function drawPage() {
+    if (!panel) return;
+    const pg = page();
+    pageEl.hidden = !pg;
+    if (!pg) return;
+    pageEl.innerHTML = `<button class="px-btn small blue" data-act="page" ${S.busy ? 'disabled' : ''}>✨ 把這頁講得更好懂</button><span class="dim" title="${U.esc(pg.label)}">📖 ${U.esc(pg.label)}</span>`;
+  }
+  document.addEventListener('learnpage', () => { if (panel && !panel.hidden) drawPage(); });
   setInterval(() => { if (panel && !panel.hidden) U.$$('.ai-sec', panel).forEach(e => { e.textContent = `（${Math.round((Date.now() - +e.dataset.t0) / 1000)} 秒）`; }); }, 1000);
 
   function openRef(m, k) {
@@ -273,10 +302,11 @@ const AI = (() => {
       <div class="aip-st small-t"></div>
       <div class="aip-list"></div>
       <div class="aip-ctx small-t" hidden></div>
+      <div class="aip-page small-t" hidden></div>
       <div class="aip-in"><textarea rows="2" placeholder="輸入問題（Enter 送出，Shift+Enter 換行）"></textarea><button class="px-btn gold" data-act="send">送出</button></div>
     </div>`);
     document.body.appendChild(panel);
-    list = U.$('.aip-list', panel); inp = U.$('textarea', panel); sendBtn = U.$('[data-act="send"]', panel); stEl = U.$('.aip-st', panel); ctxEl = U.$('.aip-ctx', panel);
+    list = U.$('.aip-list', panel); inp = U.$('textarea', panel); sendBtn = U.$('[data-act="send"]', panel); stEl = U.$('.aip-st', panel); ctxEl = U.$('.aip-ctx', panel); pageEl = U.$('.aip-page', panel);
     panel.addEventListener('click', e => {
       const a = e.target.closest('[data-act],[data-ai],[data-ref]'); if (!a) return;
       const mEl = a.closest('[data-i]'), m = mEl && S.msgs[+mEl.dataset.i];
@@ -284,6 +314,7 @@ const AI = (() => {
       if (a.dataset.ai === 'login') return CLOUD.open();
       switch (a.dataset.act) {
         case 'send': return go();
+        case 'page': return askPage();
         case 'close': return toggle(false);
         case 'new': S.msgs = []; S.q = null; draw(); return;
         case 'unq': S.q = null; draw(); return;
@@ -340,5 +371,5 @@ const AI = (() => {
   }
   mountMini();
 
-  return { open: () => toggle(true), toggle, askAbout, search };
+  return { open: () => toggle(true), toggle, askAbout, askPage, search };
 })();
