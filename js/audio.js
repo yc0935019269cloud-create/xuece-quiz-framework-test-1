@@ -47,6 +47,26 @@ const HAPTIC = (() => {
       t += ms + (k % 2 === 0 && ms >= 35 ? 45 : 0);
     });
   }
+  /* iOS 26 之後網頁用程式切換開關不會震，只有「手指真的撥到開關」才會震。
+   * 所以在 iPhone／iPad 上，把透明的原生開關疊在作答按鈕上：點答案＝撥到開關＝系統震一下（強弱無法控制）。
+   * 開關在按鈕裡面，click 會冒泡到按鈕，原本的作答程式照常執行。 */
+  const TAP_SEL = '.opt, .lc-opt, .lc-confirm, .lc-item, .lb-ult, [data-hapt-test]';
+  function armTap(root) {
+    if (!iOS) return;
+    (root.matches && root.matches(TAP_SEL) ? [root] : []).concat([...(root.querySelectorAll ? root.querySelectorAll(TAP_SEL) : [])]).forEach(b => {
+      if (b.querySelector(':scope > .hap-sw')) return;
+      const i = document.createElement('input'); i.type = 'checkbox'; i.setAttribute('switch', ''); i.className = 'hap-sw'; i.tabIndex = -1; i.setAttribute('aria-hidden', 'true');
+      b.classList.add('hap-host'); b.appendChild(i);
+    });
+  }
+  if (iOS) {
+    const start = () => {
+      document.documentElement.classList.toggle('hap-off', !on);
+      armTap(document.body);
+      new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.nodeType === 1) armTap(n); }))).observe(document.body, { childList: true, subtree: true });
+    };
+    if (document.body) start(); else document.addEventListener('DOMContentLoaded', start);
+  }
   // 依音效決定震動（只有戰鬥相關的音效）
   const BY_SFX = {
     hit: 18, fire: 28, crit: [45, 35, 70], hurt: [70, 40, 35], kill: [25, 40, 90],
@@ -58,7 +78,7 @@ const HAPTIC = (() => {
     // iOS 版本（Safari 與 iPhone 上的 Chrome 都是 WebKit）；18 以前沒有觸覺回饋
     iosVer: (() => { const m = navigator.userAgent.match(/OS (\d+)_\d+(?:_\d+)? like Mac/); return iOS ? (m ? +m[1] : 0) : null; })(),
     test() { const was = on; on = true; busyUntil = 0; buzz([60, 80, 60, 80, 120]); on = was; },
-    get on() { return on; }, set(v) { on = !!v; try { localStorage.setItem(K, on ? '1' : '0'); } catch (e) {} if (on) buzz(30); }
+    get on() { return on; }, set(v) { on = !!v; try { localStorage.setItem(K, on ? '1' : '0'); } catch (e) {} document.documentElement.classList.toggle('hap-off', !on); if (on) buzz(30); }
   };
 })();
 
