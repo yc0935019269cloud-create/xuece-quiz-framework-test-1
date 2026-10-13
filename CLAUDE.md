@@ -180,7 +180,7 @@
 
 ## iPhone 觸覺改用透明原生開關（2026-10-13）
 
-- 使用者 iPhone（iOS 27）實測：程式切換開關（`HAPTIC.buzz` 的 label.click 方式）不會震，手指直接撥 `<input type=checkbox switch>` 會震。所以在 iOS 上 `HAPTIC.armTap` 用 MutationObserver 把透明原生開關（`.hap-sw`，opacity .011、蓋滿按鈕）放進作答按鈕（`.opt`、`.lc-opt`、`.lc-confirm`、`.lc-item`、`.lb-ult`、測試震動）；click 冒泡到按鈕，作答照常。iOS 只能在點擊當下震一下、無法依招式分強弱；Android 仍用 `navigator.vibrate` 分強弱。關閉戰鬥震動時 `<html>.hap-off` 隱藏開關。
+- 使用者 iPhone（iOS 27）實測：程式切換開關（`HAPTIC.buzz` 的 label.click 方式）不會震，手指直接撥 `<input type=checkbox switch>` 會震。所以在 iOS 上 `HAPTIC.armTap` 用 MutationObserver 把透明原生開關（`.hap-sw`，opacity .011、蓋滿按鈕）放進**所有 `<button>`**（含計算機、計算紙、選單；按鈕文字被換掉時 observer 會補回；靜態定位的按鈕才改成 relative；點完開關會 blur）。因為按鈕裡多了 input，判斷「點的是不是這顆按鈕」要用 `btn.contains(e.target)` 而不是 `e.target === btn`（toolmenu 已改）。Android 則是任何按鈕點擊輕震 8ms；click 冒泡到按鈕，作答照常。iOS 只能在點擊當下震一下、無法依招式分強弱；Android 仍用 `navigator.vibrate` 分強弱。關閉戰鬥震動時 `<html>.hap-off` 隱藏開關。
 - 多功能選單：手機（≤ 640）貼齊畫面右邊（right 8px），電腦對齊 ☰ 右緣。
 - 作答衝擊 `FX.impact(kind)`（`js/fx.js`；kind：hit／combo／kill／crit／ult／hurt／heavy）：iPhone 只能在點擊當下震一下，所以把打擊感集中在作答瞬間——場景定格（`.impact-stop`，暫停場景內非 `.fx` 動畫）、閃光、晃動、低頻音效（`SFX` 新增 thump／boom／oof，hit、crit 也加了低頻層）、較重的衝擊在整個畫面邊緣閃光暈（`.impact-vig`，戰鬥條被捲出畫面時也看得到）。學習模式在 `onRightHit`／`onWrongHit`／`ult`、遠征在 `battle.js` 的 `onAnswer`（`R.resolve` 之後、播放招式之前）呼叫；招式動畫照舊隨後播放。
 - AI 助教視窗：拖曳標題列可自由移動（手機也可以）。手機拖過之後加 `.free`，不再貼底（寬 100vw−16px、高沿用 `--mh`），雙擊標題列回到原位。

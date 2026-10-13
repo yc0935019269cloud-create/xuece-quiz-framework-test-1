@@ -50,22 +50,35 @@ const HAPTIC = (() => {
   /* iOS 26 之後網頁用程式切換開關不會震，只有「手指真的撥到開關」才會震。
    * 所以在 iPhone／iPad 上，把透明的原生開關疊在作答按鈕上：點答案＝撥到開關＝系統震一下（強弱無法控制）。
    * 開關在按鈕裡面，click 會冒泡到按鈕，原本的作答程式照常執行。 */
-  const TAP_SEL = '.opt, .lc-opt, .lc-confirm, .lc-item, .lb-ult, [data-hapt-test]';
+  // 所有按鈕（含計算機、計算紙、選單）都有觸覺回饋
+  const TAP_SEL = 'button';
+  function arm(b) {
+    if (b.querySelector(':scope > .hap-sw')) return;
+    if (getComputedStyle(b).position === 'static') b.style.position = 'relative';   // 開關要蓋在按鈕上；原本就是 absolute／fixed 的按鈕不動
+    const i = document.createElement('input'); i.type = 'checkbox'; i.setAttribute('switch', ''); i.className = 'hap-sw'; i.tabIndex = -1; i.setAttribute('aria-hidden', 'true');
+    b.appendChild(i);
+  }
   function armTap(root) {
-    if (!iOS) return;
-    (root.matches && root.matches(TAP_SEL) ? [root] : []).concat([...(root.querySelectorAll ? root.querySelectorAll(TAP_SEL) : [])]).forEach(b => {
-      if (b.querySelector(':scope > .hap-sw')) return;
-      const i = document.createElement('input'); i.type = 'checkbox'; i.setAttribute('switch', ''); i.className = 'hap-sw'; i.tabIndex = -1; i.setAttribute('aria-hidden', 'true');
-      b.classList.add('hap-host'); b.appendChild(i);
-    });
+    if (!iOS || !root || root.nodeType !== 1) return;
+    if (root.matches(TAP_SEL)) arm(root);
+    root.querySelectorAll(TAP_SEL).forEach(arm);
   }
   if (iOS) {
     const start = () => {
       document.documentElement.classList.toggle('hap-off', !on);
       armTap(document.body);
-      new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.nodeType === 1) armTap(n); }))).observe(document.body, { childList: true, subtree: true });
+      new MutationObserver(ms => ms.forEach(m => {
+        m.addedNodes.forEach(armTap);
+        // 按鈕文字被 textContent／innerHTML 換掉時開關也會被清掉，補回去
+        const t = m.target.nodeType === 1 && m.target.closest(TAP_SEL); if (t) arm(t);
+      })).observe(document.body, { childList: true, subtree: true });
+      // 點完把焦點從開關移走，鍵盤快捷鍵（作答、Enter 繼續）才不會以為焦點在輸入框
+      document.addEventListener('click', e => { if (e.target.classList && e.target.classList.contains('hap-sw')) setTimeout(() => e.target.blur(), 0); }, true);
     };
     if (document.body) start(); else document.addEventListener('DOMContentLoaded', start);
+  } else if (canVibrate) {
+    // Android：按任何按鈕都輕震一下（戰鬥裡較強的震動會優先，不會被這一下蓋掉）
+    document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('button'); if (b && !b.disabled) buzz(8); });
   }
   // 依音效決定震動（只有戰鬥相關的音效）
   const BY_SFX = {
