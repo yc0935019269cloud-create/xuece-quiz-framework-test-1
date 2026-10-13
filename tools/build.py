@@ -536,6 +536,16 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
             for k in ('warmup', 'derivation'):
                 if formula.get(k) is not None and not is_str(formula[k]):
                     R.err(FW, f'{k} 要是字串')
+            if 'relatedQuestions' in formula:
+                ids = formula['relatedQuestions']
+                if not isinstance(ids, list) or not all(is_str(qid) for qid in ids) or len(ids) != len(set(ids)):
+                    R.err(FW, 'relatedQuestions 要是不重複的題目 id 字串陣列')
+                else:
+                    missing = [qid for qid in ids if qid not in Q]
+                    if missing:
+                        R.err(FW, f'相關題不存在：{", ".join(missing)}')
+            if formula.get('relatedHint') is not None and not is_str(formula['relatedHint']):
+                R.err(FW, 'relatedHint 要是字串')
     lessons = pack.get('lessons')
     if not isinstance(lessons, list) or not lessons:
         R.err('pack', '缺少 lessons')

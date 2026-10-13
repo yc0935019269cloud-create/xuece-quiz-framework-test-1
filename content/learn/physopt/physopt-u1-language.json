@@ -131,7 +131,10 @@
      "pitfall": "nm 要乘 10⁻⁹ 換成 m，不能直接把 600 代進去。不同顏色的光在真空中速度相同，主要差在頻率。",
      "id": "f01",
      "warmup": "1. 先拿慢速的波練乘法：一個波長 2 m，每秒振動 3 次。\n2. 每秒走的距離 = 2 × 3 = 6 m。\n3. 所以波速是 6 m/s。這是算式示範，**不是光的真實速度**。",
-     "derivation": "一個波峰走過一個波長，等於完成一次振動。每秒振動 f 次，所以一秒走的路就是 λ × f；這是「速度＝每步距離 × 每秒步數」。"
+     "derivation": "一個波峰走過一個波長，等於完成一次振動。每秒振動 f 次，所以一秒走的路就是 λ × f；這是「速度＝每步距離 × 每秒步數」。",
+     "relatedQuestions": [
+      "physopt-u1-q-18"
+     ]
     },
     {
      "name": "頻率與週期互為倒數",
@@ -146,7 +149,11 @@
      "pitfall": "THz 是 10¹² Hz。f 和第六單元的角頻率 ω 不相同：ω 還要乘 2π。",
      "id": "f02",
      "warmup": "1. 一次振動花 T = 0.5 秒。\n2. 1 秒能做 1 ÷ 0.5 = 2 次。\n3. 所以 f = 2 Hz；反過來 T = 1 ÷ 2 = 0.5 秒。",
-     "derivation": "若每次要花半秒，一秒就能做兩次。一次花越久，一秒完成的次數越少，所以是倒數關係。"
+     "derivation": "若每次要花半秒，一秒就能做兩次。一次花越久，一秒完成的次數越少，所以是倒數關係。",
+     "relatedQuestions": [
+      "physopt-u1-q-18"
+     ],
+     "relatedHint": "延伸練習：這題先求頻率，再用 T = 1/f 換成週期；題目本身沒有直接問週期。"
     },
     {
      "name": "折射率：光在介質中慢了幾倍",
@@ -161,7 +168,33 @@
      "pitfall": "n = c/v，不是 v/c。本課程的 n 為可見光透明介質的近似，不把「n 必定大於 1」當成所有頻率、所有材料的普遍定律。",
      "id": "f03",
      "warmup": "1. 假設真空速度算成 3 份，介質內只有 2 份。\n2. n = 3 ÷ 2 = 1.5。\n3. 已知 n = 1.5，介質速度就用真空速度 ÷ 1.5。這裡的「份」只用來理解比值。",
-     "derivation": "n = 1.5 表示真空中的光速是介質內的 1.5 倍，介質內的速度只剩 c/1.5。對本課程透明介質，n 越大通常光越慢。"
+     "derivation": "n = 1.5 表示真空中的光速是介質內的 1.5 倍，介質內的速度只剩 c/1.5。對本課程透明介質，n 越大通常光越慢。",
+     "relatedQuestions": [
+      "physopt-exam-u1-106-sp-7",
+      "physopt-exam-u1-106-sp-17",
+      "physopt-exam-u1-106-st-21",
+      "physopt-exam-u1-106-st-22",
+      "physopt-exam-u1-107-sp-9",
+      "physopt-exam-u1-107-st-21",
+      "physopt-exam-u1-107-vt-9",
+      "physopt-exam-u1-107-vt-35",
+      "physopt-exam-u1-108-sp-11",
+      "physopt-exam-u1-108-vh-22",
+      "physopt-exam-u1-109-vh-34",
+      "physopt-exam-u1-109-vh-46",
+      "physopt-exam-u1-110-vh-8",
+      "physopt-exam-u1-111-sp-15",
+      "physopt-exam-u1-111-vh-11",
+      "physopt-exam-u1-111-vh-34",
+      "physopt-exam-u1-112-sp-12",
+      "physopt-exam-u1-113-sp-15",
+      "physopt-exam-u1-113-vh-14",
+      "physopt-exam-u1-113-vh-36",
+      "physopt-exam-u1-114-sp-12",
+      "physopt-exam-u1-114-sp-22",
+      "physopt-exam-u1-114-vh-11",
+      "physopt-u1-q-17"
+     ]
     },
     {
      "name": "換介質：頻率保留，波長跟著速度變",
@@ -176,7 +209,11 @@
      "pitfall": "介質內的 400 nm 不表示這束光突然變成另一種真空頻率的顏色；比較顏色時不要把介質內波長當成真空波長。",
      "id": "f04",
      "warmup": "1. 真空波長 λ₀ = 600 nm，n = 1.5。\n2. 介質波長 = 600 ÷ 1.5 = 400 nm。\n3. 是波長變短，**頻率沒有換掉**。",
-     "derivation": "交界面兩邊必須跟上同一個振動節奏，因此頻率不變。光進入較高 n 的介質後速度變慢，同一週期走得較短，波長就縮短。"
+     "derivation": "交界面兩邊必須跟上同一個振動節奏，因此頻率不變。光進入較高 n 的介質後速度變慢，同一週期走得較短，波長就縮短。",
+     "relatedQuestions": [
+      "physopt-u1-q-16",
+      "physopt-u1-q-19"
+     ]
     },
     {
      "name": "聚散度：折射率 ÷ 有方向的距離",
@@ -191,7 +228,29 @@
      "pitfall": "這裡的 P 是光束聚散度；後面透鏡式的 P 是元件屈光力。不要只見字母相同就當成同一個物理量。",
      "id": "f05",
      "warmup": "1. 空氣中 n = 1，會聚點在前方 0.5 m。\n2. P = 1 ÷ 0.5 = +2 D。\n3. 若會聚點改成前方 0.25 m，P = +4 D：終點更近，會聚更強。",
-     "derivation": "會聚點越近，光束越快聚在一起，聚散度絕對值越大。發散光的來源在光後方，所以 q 為負；會聚點在前方，所以 q 為正。相同 q 下，介質 n 也決定聚散度大小。"
+     "derivation": "會聚點越近，光束越快聚在一起，聚散度絕對值越大。發散光的來源在光後方，所以 q 為負；會聚點在前方，所以 q 為正。相同 q 下，介質 n 也決定聚散度大小。",
+     "relatedQuestions": [
+      "physopt-teacher-u1-2",
+      "physopt-teacher-u1-4",
+      "physopt-teacher-u1-5",
+      "physopt-exam-u1-107-st-21",
+      "physopt-exam-u1-108-st-23",
+      "physopt-exam-u1-108-vh-21",
+      "physopt-exam-u1-108-vh-22",
+      "physopt-exam-u1-111-vh-19",
+      "physopt-exam-u1-114-sp-26",
+      "physopt-exam-u1-114-vh-25",
+      "physopt-u1-q-6",
+      "physopt-u1-q-7",
+      "physopt-u1-q-8",
+      "physopt-u1-q-9",
+      "physopt-u1-q-20",
+      "physopt-u1-q-21",
+      "physopt-u1-q-22",
+      "physopt-u1-q-23",
+      "physopt-u1-q-25",
+      "physopt-u1-q-29"
+     ]
     },
     {
      "name": "物聚散度與像聚散度：同一規則分兩側",
@@ -206,7 +265,24 @@
      "pitfall": "實物與實像的距離符號不相同：典型實物 u < 0、實像 v > 0。進入第四單元後，不能省略「從哪個面量」。",
      "id": "f06",
      "warmup": "1. 物在空氣中透鏡前 0.5 m，所以 u = −0.5 m。\n2. U = 1 ÷ (−0.5) = −2 D，表示進來的光在發散。\n3. 像若在後方 0.25 m，V = 1 ÷ 0.25 = +4 D，表示出去的光會聚成實像。",
-     "derivation": "U、V 都是 n/距離，只是分別站在元件前後看。U < 0 是由實物發散而來；U > 0 是朝虛物會聚。V > 0 是會聚到實像；V < 0 是虛像。"
+     "derivation": "U、V 都是 n/距離，只是分別站在元件前後看。U < 0 是由實物發散而來；U > 0 是朝虛物會聚。V > 0 是會聚到實像；V < 0 是虛像。",
+     "relatedQuestions": [
+      "physopt-teacher-u1-3",
+      "physopt-teacher-u1-5",
+      "physopt-exam-u1-107-st-1",
+      "physopt-exam-u1-107-st-21",
+      "physopt-exam-u1-107-vh-50",
+      "physopt-exam-u1-108-st-23",
+      "physopt-exam-u1-108-vh-21",
+      "physopt-exam-u1-108-vh-22",
+      "physopt-exam-u1-111-vh-19",
+      "physopt-exam-u1-114-sp-26",
+      "physopt-exam-u1-114-vh-25",
+      "physopt-u1-q-10",
+      "physopt-u1-q-11",
+      "physopt-u1-q-27",
+      "physopt-u1-q-29"
+     ]
     }
    ],
    "recap": "先用 c = λ₀f 和 n = c/v 算光的波動參數，再用 n/有向距離描述光束。U、V 是進出兩側的聚散度；第二、三單元會用 V = P + U 把元件的屈光力接進來。",

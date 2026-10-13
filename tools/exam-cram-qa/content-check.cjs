@@ -2,7 +2,7 @@ const fs=require('fs'),vm=require('vm'),cp=require('child_process'),assert=requi
 const load=text=>{const c={window:{}};vm.runInNewContext(text,c);return c.window.LEARN;};
 const current=load(fs.readFileSync('data/learn.js','utf8')),previous=load(cp.execFileSync('git',['show','HEAD:data/learn.js'],{encoding:'utf8',maxBuffer:16e6}));
 const hash=v=>crypto.createHash('sha256').update(JSON.stringify(v)).digest('hex');
-const withoutCram=p=>{p=JSON.parse(JSON.stringify(p));if(p.notes)p.notes=p.notes.filter(n=>n.kind!=='exam-cram');return p;};
+const withoutCram=p=>{p=JSON.parse(JSON.stringify(p));if(p.notes)p.notes=p.notes.filter(n=>n.kind!=='exam-cram');for(const n of p.notes||[])for(const f of n.formulas||[]){delete f.relatedQuestions;delete f.relatedHint;}return p;};
 assert.equal(hash(Array.from(current.packs,withoutCram)),hash(Array.from(previous.packs,withoutCram)),'Courses, original formula summaries and progress IDs must be unchanged');
 const evidence=JSON.parse(fs.readFileSync('output/playwright/exam-cram-evidence.json','utf8'));
 assert.equal(evidence.curatedQuestionCount,421);assert.equal(evidence.archiveQuestionCount,1300);assert.equal(evidence.archivePapers.length,26);

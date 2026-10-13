@@ -1167,11 +1167,13 @@ const LEARN_UI = (() => {
   let noteSubj = 'all', noteQ = '';
   const noteText = s => [s.title, s.body, ...(s.keys || []), ...(s.points || []).map(x => typeof x === 'string' ? x : [x.name, x.desc].join(' '))].join(' ').toLowerCase();
   const formulaText = n => [n.title, n.intro, n.conventions, n.recap, n.source, n.reminders, ...(n.items || []).flatMap(f => [f.name, ...(f.equations || []), f.use, f.tip]), ...(n.formulas || []).flatMap(f => [f.name, ...(f.equations || []), f.symbols, f.intuition, f.warmup, f.derivation, f.memory, f.example, f.pitfall])].join(' ').toLowerCase();
-  const relatedIds = item => [...new Set(Array.isArray(item.evidence?.questionIds) ? item.evidence.questionIds : [])].filter(id => typeof id === 'string' && Store.Q[id]);
-  function relatedQuestions(item) {
+  const relatedIds = item => [...new Set(Array.isArray(item.relatedQuestions) ? item.relatedQuestions : Array.isArray(item.evidence?.questionIds) ? item.evidence.questionIds : [])].filter(id => typeof id === 'string' && Store.Q[id]);
+  const relatedSource = q => Store.EX[q.exam]?.name.startsWith('【老師課堂題】') ? 'teacher' : Store.EX[q.exam]?.name.startsWith('【國考') ? 'exam' : 'practice';
+  function relatedQuestions(item, type = 'cram') {
     const ids = relatedIds(item);
     if (!ids.length) return '';
-    return `<details class="cram-related" data-related-ids="${U.esc(JSON.stringify(ids))}"><summary>相關題（${ids.length}）— 點此展開</summary><div class="cram-related-list"></div></details>`;
+    const teachers = ids.filter(id => relatedSource(Store.Q[id]) === 'teacher').length;
+    return `<details class="note-related ${type}-related" data-related-ids="${U.esc(JSON.stringify(ids))}"><summary>相關題（${ids.length}${teachers ? `；老師講義 ${teachers}` : ''}）— 點此展開</summary>${item.relatedHint ? `<p class="dim small-t">${U.esc(item.relatedHint)}</p>` : ''}<div class="cram-related-list"></div></details>`;
   }
   function examCramNote(p, n, key, isOpen) {
     const k = key + '/@' + n.id;
@@ -1190,7 +1192,7 @@ const LEARN_UI = (() => {
         <ol class="formula-index">${n.formulas.map(f => `<li><a href="#${U.esc(p.id + '-' + n.id + '-' + f.id)}" data-formula-jump><span>${U.esc(f.name)}</span><span class="formula-equations">${f.equations.map(eq => `<code>${U.esc(eq)}</code>`).join('')}</span></a></li>`).join('')}</ol>
         <div class="formula-conventions"><h4>代公式前先統一符號</h4>${md(n.conventions)}</div><h4>逐條理解與記憶</h4><p class="dim small-t">點公式列表可跳到對應講解；點下方標題可展開或收合。</p>
         ${n.formulas.map(f => `<details class="formula-explanation" id="${U.esc(p.id + '-' + n.id + '-' + f.id)}"><summary>${U.esc(f.name)}<span class="formula-equations">${f.equations.map(eq => `<code>${U.esc(eq)}</code>`).join('')}</span></summary>
-          <div class="formula-body"><h5>先用生活畫面理解</h5>${md(f.intuition)}<h5>公式裡的字母是誰</h5>${md(f.symbols)}${f.warmup ? `<h5>先用簡單數字練一次</h5>${md(f.warmup)}` : ''}<h5>套到這個單元的例子</h5>${md(f.example)}${f.derivation ? `<details class="formula-logic"><summary>想再懂多一點：公式怎麼來的</summary>${md(f.derivation)}</details>` : ''}<h5>一行記法</h5>${md(f.memory)}<h5>最容易弄錯的地方</h5>${md(f.pitfall)}</div></details>`).join('')}
+          <div class="formula-body"><h5>先用生活畫面理解</h5>${md(f.intuition)}<h5>公式裡的字母是誰</h5>${md(f.symbols)}${f.warmup ? `<h5>先用簡單數字練一次</h5>${md(f.warmup)}` : ''}<h5>套到這個單元的例子</h5>${md(f.example)}${f.derivation ? `<details class="formula-logic"><summary>想再懂多一點：公式怎麼來的</summary>${md(f.derivation)}</details>` : ''}<h5>一行記法</h5>${md(f.memory)}<h5>最容易弄錯的地方</h5>${md(f.pitfall)}${relatedQuestions(f, 'formula')}</div></details>`).join('')}
         <div class="formula-conventions"><h4>整個單元怎麼串起來</h4>${md(n.recap)}</div>
         ${(n.references || []).length ? `<p class="dim small-t">核對來源：${n.references.filter(r => /^https:\/\//.test(r.url)).map(r => `<a href="${U.esc(r.url)}" target="_blank" rel="noopener noreferrer">${U.esc(r.title)}</a>`).join('、')}。符號沿用本課程。</p>` : ''}</div></details>`;
   }
@@ -1248,7 +1250,7 @@ const LEARN_UI = (() => {
       ${tree.map(sn => { const S = C.SUBJECTS[sn.s]; return `<h3 class="mt ltree-subj" style="color:${S.color}">${U.esc(S.name)} <span class="dim small-t">${count(sn)} 則筆記</span></h3>
         ${sn.kids.map(c => dirNode(c, 'n:' + sn.s, 0)).join('')}${sn.packs.map(pk => packNode(pk, 'n:' + sn.s)).join('')}`; }).join('') || '<p class="dim">找不到符合的筆記。</p>'}`;
     const fill = d => { const x = LES[d.dataset.les]; const inn = d.querySelector('.ltree-in'); if (x && !inn.childElementCount) inn.innerHTML = x.cards.map(s => noteCard(x.p, x.l, s)).join(''); };
-    U.$$('.cram-related', body).forEach(d => d.addEventListener('toggle', () => {
+    U.$$('.note-related', body).forEach(d => d.addEventListener('toggle', () => {
       const list = d.querySelector('.cram-related-list');
       if (!d.open || list.childElementCount) return;
       list.innerHTML = JSON.parse(d.dataset.relatedIds).map(id => {
@@ -1256,7 +1258,8 @@ const LEARN_UI = (() => {
         if (!q || !ex) return '<p class="dim small-t">此題尚未載入，請先導入對應題本。</p>';
         const title = QV.exLabel(ex) + '・第 ' + q.n + ' 題';
         const snippet = String(q.stem || '圖片題').replace(/【[^】]*】\s*/, '').replace(/\s+/g, ' ').slice(0, 100);
-        return `<button type="button" class="cram-question-link" data-related-q="${U.esc(id)}"><span>${U.esc(title)}</span><span class="dim small-t">${U.esc(snippet)}</span></button>`;
+        const source = relatedSource(q), label = { teacher: '老師講義', exam: '國考題', practice: '單元練習' }[source];
+        return `<button type="button" class="cram-question-link" data-related-q="${U.esc(id)}" data-related-source="${source}"><span><b class="tag">${label}</b> ${U.esc(title)}</span><span class="dim small-t">${U.esc(snippet)}</span></button>`;
       }).join('');
     }));
     body.onclick = e => { const link = e.target.closest('[data-related-q]'); if (link && body.contains(link)) { const q = Store.Q[link.dataset.relatedQ]; if (q) QV.previewModal(q); } };

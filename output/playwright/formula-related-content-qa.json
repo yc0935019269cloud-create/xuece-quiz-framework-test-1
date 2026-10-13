@@ -1,0 +1,412 @@
+{
+  "result": "passed",
+  "formulaGroups": 50,
+  "links": 632,
+  "uniqueQuestions": 495,
+  "teacherQuestions": 67,
+  "unchangedPacks": 97,
+  "unitSixUnchanged": true,
+  "questionContentUnchanged": true,
+  "groups": [
+    {
+      "pack": "physopt-u1-language",
+      "formula": "f01",
+      "links": 1,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u1-language",
+      "formula": "f02",
+      "links": 1,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u1-language",
+      "formula": "f03",
+      "links": 24,
+      "teacher": 0,
+      "exam": 23,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u1-language",
+      "formula": "f04",
+      "links": 2,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 2
+    },
+    {
+      "pack": "physopt-u1-language",
+      "formula": "f05",
+      "links": 20,
+      "teacher": 3,
+      "exam": 7,
+      "practice": 10
+    },
+    {
+      "pack": "physopt-u1-language",
+      "formula": "f06",
+      "links": 15,
+      "teacher": 2,
+      "exam": 9,
+      "practice": 4
+    },
+    {
+      "pack": "physopt-u2-interface",
+      "formula": "f01",
+      "links": 5,
+      "teacher": 1,
+      "exam": 1,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u2-interface",
+      "formula": "f02",
+      "links": 23,
+      "teacher": 2,
+      "exam": 18,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u2-interface",
+      "formula": "f03",
+      "links": 16,
+      "teacher": 1,
+      "exam": 12,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u2-interface",
+      "formula": "f04",
+      "links": 2,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 2
+    },
+    {
+      "pack": "physopt-u2-interface",
+      "formula": "f05",
+      "links": 29,
+      "teacher": 1,
+      "exam": 25,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u2-interface",
+      "formula": "f06",
+      "links": 14,
+      "teacher": 1,
+      "exam": 9,
+      "practice": 4
+    },
+    {
+      "pack": "physopt-u2-interface",
+      "formula": "f07",
+      "links": 8,
+      "teacher": 1,
+      "exam": 3,
+      "practice": 4
+    },
+    {
+      "pack": "physopt-u2-interface",
+      "formula": "f08",
+      "links": 4,
+      "teacher": 0,
+      "exam": 3,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u2-interface",
+      "formula": "f09",
+      "links": 5,
+      "teacher": 0,
+      "exam": 4,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u2-interface",
+      "formula": "f10",
+      "links": 4,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 4
+    },
+    {
+      "pack": "physopt-u2-interface",
+      "formula": "f11",
+      "links": 1,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u3-thinlens",
+      "formula": "f01",
+      "links": 60,
+      "teacher": 13,
+      "exam": 32,
+      "practice": 15
+    },
+    {
+      "pack": "physopt-u3-thinlens",
+      "formula": "f02",
+      "links": 40,
+      "teacher": 5,
+      "exam": 32,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u3-thinlens",
+      "formula": "f03",
+      "links": 23,
+      "teacher": 4,
+      "exam": 14,
+      "practice": 5
+    },
+    {
+      "pack": "physopt-u3-thinlens",
+      "formula": "f04",
+      "links": 28,
+      "teacher": 11,
+      "exam": 9,
+      "practice": 8
+    },
+    {
+      "pack": "physopt-u3-thinlens",
+      "formula": "f05",
+      "links": 19,
+      "teacher": 6,
+      "exam": 5,
+      "practice": 8
+    },
+    {
+      "pack": "physopt-u3-thinlens",
+      "formula": "f06",
+      "links": 11,
+      "teacher": 2,
+      "exam": 8,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u3-thinlens",
+      "formula": "f07",
+      "links": 8,
+      "teacher": 3,
+      "exam": 2,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f01",
+      "links": 7,
+      "teacher": 1,
+      "exam": 6,
+      "practice": 0
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f02",
+      "links": 9,
+      "teacher": 4,
+      "exam": 1,
+      "practice": 4
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f03",
+      "links": 28,
+      "teacher": 3,
+      "exam": 20,
+      "practice": 5
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f04",
+      "links": 26,
+      "teacher": 5,
+      "exam": 14,
+      "practice": 7
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f05",
+      "links": 5,
+      "teacher": 2,
+      "exam": 0,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f06",
+      "links": 7,
+      "teacher": 3,
+      "exam": 0,
+      "practice": 4
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f07",
+      "links": 10,
+      "teacher": 5,
+      "exam": 0,
+      "practice": 5
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f08",
+      "links": 2,
+      "teacher": 1,
+      "exam": 0,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f09",
+      "links": 5,
+      "teacher": 1,
+      "exam": 1,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f10",
+      "links": 5,
+      "teacher": 1,
+      "exam": 2,
+      "practice": 2
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f11",
+      "links": 52,
+      "teacher": 0,
+      "exam": 48,
+      "practice": 4
+    },
+    {
+      "pack": "physopt-u4-thicklens",
+      "formula": "f12",
+      "links": 1,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f01",
+      "links": 3,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f02",
+      "links": 1,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f03",
+      "links": 2,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 2
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f04",
+      "links": 4,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 4
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f05",
+      "links": 13,
+      "teacher": 3,
+      "exam": 4,
+      "practice": 6
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f06",
+      "links": 12,
+      "teacher": 1,
+      "exam": 8,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f07",
+      "links": 7,
+      "teacher": 2,
+      "exam": 1,
+      "practice": 4
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f08",
+      "links": 3,
+      "teacher": 0,
+      "exam": 0,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f09",
+      "links": 12,
+      "teacher": 2,
+      "exam": 6,
+      "practice": 4
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f10",
+      "links": 10,
+      "teacher": 1,
+      "exam": 6,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f11",
+      "links": 34,
+      "teacher": 1,
+      "exam": 30,
+      "practice": 3
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f12",
+      "links": 4,
+      "teacher": 0,
+      "exam": 3,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f13",
+      "links": 2,
+      "teacher": 0,
+      "exam": 1,
+      "practice": 1
+    },
+    {
+      "pack": "physopt-u5-matrix",
+      "formula": "f14",
+      "links": 5,
+      "teacher": 0,
+      "exam": 4,
+      "practice": 1
+    }
+  ]
+}

@@ -223,3 +223,10 @@ js/ css/                遊戲程式
 - 依使用者 iPad 截圖修正相關題閱讀視窗；同題 physopt-exam-u5-107-sp-49 在舊版外層捲動後標題 top −65px、關閉鍵 −73px，可重現標題被裁掉。QV.previewModal 改用 U.modal 的 contained 選項，只讓內容區捲動、標題與關閉鍵固定，VisualViewport 同步可見高度／偏移，背景固定並保存原捲動位置。
 - 關閉還原 body／html 原 inline styles 與清單位置；巢狀鎖定計數、重複關閉保護、observer 外部移除清理。App.go 用 U.clearModals 清掉閱讀視窗後再切頁，避免離開後頁面仍鎖定。一般視窗維持原佈局，題庫和第六單元內容未改；index.html 所有快取版本 v93。
 - QA：Edge iPad 路徑與桌機各 25 項（同題長詳解、橫直轉向、390px、可見視窗收縮／偏移 fixture、關閉／Esc／巢狀／切頁／外部移除）、原相關題 iPad 路徑 73 項回歸通過；全 JS 語法與嚴格建置檢查通過。獨立 context 還原 localStorage，HTTP 模擬，未做實機 iPadOS／Safari 或本輪 file:// 驗證。工具 tools/modal-viewport-qa/，結果與截圖 output/playwright/modal-viewport-*。
+
+## 公式統整相關題（2026-10-13，v94）
+
+- 使用者指定「學習模式 → 知識筆記 → 公式統整」，先做第一～五單元。50 組公式新增 relatedQuestions，632 次連結、495 題不重複題目，其中 67 題為老師講義原題；31 組公式有老師講義題。排序以老師講義優先，再國考、單元練習，列表標明來源。第六單元完整內容與相關題狀態未改。
+- js/learn.js 共用 note-related 收合／延後建立列表，保留考前必看的 cram-related 與新增 formula-related，各自預設收合，不隨全部展開。沿用 v93 的固定標題與關閉鍵閱讀視窗。原公式講解與課程流程不變，內容正本在五個 content/learn/physopt JSON，data/learn.js 由 build 生成。
+- 依現有題目逐組核對，規則在 tools/formula-related-qa/link.py；沒有老師原題可配的公式用單元練習。第一單元週期搭配頻率換算作延伸，relatedHint 明確說明題目本身沒有問週期。build 檢查 relatedQuestions 的不重複／存在性，importer 保留連結，舊筆記缺少欄位依相同公式 id 補入內建連結，明確 [] 可清空。
+- QA：97 個單元（排除新增連結欄位）與原公式講解／進度 id 不變，整個第六單元與題庫完整性一致；原 58 項數值驗算、Edge iPad 路徑 192 項與桌機 192 項、全 JS 語法與嚴格建置檢查通過。獨立 context 還原 localStorage、移除匯入 fixture；HTTP／Edge 模擬，沒有實機 iPadOS 或本輪 file://／雲端往返驗證。工具 tools/formula-related-qa/，報告／截圖 output/playwright/formula-related-*。

@@ -240,7 +240,14 @@
      "pitfall": "65° 的反射角不等於入射光與反射光兩條有向光線之間的所有可能夾角；先釐清題目量的是哪一個角。",
      "id": "f01",
      "warmup": "1. 光和鏡面夾 30°。\n2. 入射角 = 90° − 30° = 60°。\n3. 反射角也等於 60°，因為兩個角都是從法線量。",
-     "derivation": "法線和介面垂直，兩種量角方式正好差一個互餘角。反射前後和法線的夾角相等，因此垂直照進去就是 0° 入射。"
+     "derivation": "法線和介面垂直，兩種量角方式正好差一個互餘角。反射前後和法線的夾角相等，因此垂直照進去就是 0° 入射。",
+     "relatedQuestions": [
+      "physopt-teacher-u2-1",
+      "physopt-exam-u2-113-sp-11",
+      "physopt-u2-q-6",
+      "physopt-u2-q-7",
+      "physopt-u2-q-29"
+     ]
     },
     {
      "name": "司乃耳定律：同側 n 配同側角",
@@ -255,7 +262,32 @@
      "pitfall": "sin⁻¹ 表示反正弦，不是 1/sin。若算出 sinθ₂ > 1，不是計算機壞了，要檢查是否超過全反射臨界條件。",
      "id": "f02",
      "warmup": "1. 空氣 n₁ = 1，玻璃 n₂ = 2，入射角 30°。\n2. sin30° = 0.5，所以 sinθ₂ = 1 × 0.5 ÷ 2 = 0.25。\n3. 取反正弦，θ₂ ≈ 14.48°，比原來小，確實靠近法線。",
-     "derivation": "進入高 n 的介質，光較慢、折射角較小，方向靠近法線。進入低 n 的介質，折射角較大，方向遠離法線。公式中的 n 大，就要配較小的 sinθ 才能平衡。"
+     "derivation": "進入高 n 的介質，光較慢、折射角較小，方向靠近法線。進入低 n 的介質，折射角較大，方向遠離法線。公式中的 n 大，就要配較小的 sinθ 才能平衡。",
+     "relatedQuestions": [
+      "physopt-teacher-u2-1",
+      "physopt-teacher-u2-2",
+      "physopt-exam-u2-106-sp-6",
+      "physopt-exam-u2-106-st-31",
+      "physopt-exam-u2-107-sp-10",
+      "physopt-exam-u2-107-sp-12",
+      "physopt-exam-u2-107-vt-1",
+      "physopt-exam-u2-107-vt-15",
+      "physopt-exam-u2-109-sp-10",
+      "physopt-exam-u2-109-vh-9",
+      "physopt-exam-u2-110-sp-14",
+      "physopt-exam-u2-110-vh-13",
+      "physopt-exam-u2-111-sp-13",
+      "physopt-exam-u2-112-sp-9",
+      "physopt-exam-u2-112-vh-18",
+      "physopt-exam-u2-113-sp-11",
+      "physopt-exam-u2-113-sp-18",
+      "physopt-exam-u2-113-vh-15",
+      "physopt-exam-u2-114-sp-16",
+      "physopt-exam-u2-114-vh-16",
+      "physopt-u2-q-10",
+      "physopt-u2-q-12",
+      "physopt-u2-q-17"
+     ]
     },
     {
      "name": "臨界角與全反射",
@@ -270,7 +302,25 @@
      "pitfall": "嚴格區分：θ₁ = θc 是掠射的臨界邊界；θ₁ > θc 才是超臨界全反射。低 n → 高 n 沒有這種全反射。",
      "id": "f03",
      "warmup": "1. 由 n₁ = 2 的介質射向 n₂ = 1。\n2. sinθc = 1 ÷ 2 = 0.5，所以 θc = 30°。\n3. 入射 40° 超過 30°，會全反射；入射 20° 則不會。",
-     "derivation": "把 Snell 定律的 θ₂ 換成 90°，sin90° = 1，就只剩 n₁sinθc = n₂。再增大入射角，已找不到真實折射角，便進入全反射。"
+     "derivation": "把 Snell 定律的 θ₂ 換成 90°，sin90° = 1，就只剩 n₁sinθc = n₂。再增大入射角，已找不到真實折射角，便進入全反射。",
+     "relatedQuestions": [
+      "physopt-teacher-u2-3",
+      "physopt-exam-u2-106-sp-8",
+      "physopt-exam-u2-106-vt-11",
+      "physopt-exam-u2-107-sp-12",
+      "physopt-exam-u2-107-sp-20",
+      "physopt-exam-u2-107-vt-15",
+      "physopt-exam-u2-108-vh-9",
+      "physopt-exam-u2-108-vt-18",
+      "physopt-exam-u2-109-vh-22",
+      "physopt-exam-u2-111-sp-12",
+      "physopt-exam-u2-111-sp-14",
+      "physopt-exam-u2-112-sp-11",
+      "physopt-exam-u2-112-vh-9",
+      "physopt-u2-q-13",
+      "physopt-u2-q-14",
+      "physopt-u2-q-15"
+     ]
     },
     {
      "name": "小角度與近軸 Snell",
@@ -286,7 +336,11 @@
      "pitfall": "10° 的弧度是約 0.1745，不能把數字 10 當成 sin10° 的近似值。角度大時要回到完整 Snell 定律。",
      "id": "f04",
      "warmup": "1. 取小角 θ = 0.01 rad。\n2. sinθ 約 0.01，tanθ 也約 0.01。\n3. n₁ = 1、n₂ = 2 時，θ₂ ≈ 0.01 ÷ 2 = 0.005 rad。",
-     "derivation": "很小的弧、對邊和切線長幾乎一樣，於是三角函數可以用角度本身代替。把 Snell 的 sinθ 換成 θ，就得到比較好算的線性式。"
+     "derivation": "很小的弧、對邊和切線長幾乎一樣，於是三角函數可以用角度本身代替。把 Snell 的 sinθ 換成 θ，就得到比較好算的線性式。",
+     "relatedQuestions": [
+      "physopt-u2-q-16",
+      "physopt-u2-q-17"
+     ]
     },
     {
      "name": "球面屈光力：折射率差 ÷ 半徑",
@@ -300,7 +354,38 @@
      "pitfall": "r = +10 cm 要換成 +0.10 m。第二面可能同時有負折射率差與負半徑，負除負仍是正屈光力。",
      "id": "f05",
      "warmup": "1. n₁ = 1、n₂ = 1.5，r = +0.5 m。\n2. 先算後減前：1.5 − 1 = 0.5。\n3. P = 0.5 ÷ 0.5 = +1 D。半徑縮成 0.25 m，P 變成 +2 D。",
-     "derivation": "折射率差讓光轉彎，曲面彎曲使不同高度的光向不同方向折。曲率越大（|r| 越小），每單位高度的折轉越強，所以 |P| 越大。"
+     "derivation": "折射率差讓光轉彎，曲面彎曲使不同高度的光向不同方向折。曲率越大（|r| 越小），每單位高度的折轉越強，所以 |P| 越大。",
+     "relatedQuestions": [
+      "physopt-teacher-u2-5",
+      "physopt-exam-u2-107-sp-21",
+      "physopt-exam-u2-107-st-17",
+      "physopt-exam-u2-107-vh-2",
+      "physopt-exam-u2-108-st-2",
+      "physopt-exam-u2-108-st-18",
+      "physopt-exam-u2-108-st-30",
+      "physopt-exam-u2-108-vt-21",
+      "physopt-exam-u2-108-vt-36",
+      "physopt-exam-u2-108-vt-38",
+      "physopt-exam-u2-109-sp-28",
+      "physopt-exam-u2-109-st-20",
+      "physopt-exam-u2-109-st-21",
+      "physopt-exam-u2-109-vh-37",
+      "physopt-exam-u2-109-vt-16",
+      "physopt-exam-u2-109-vt-18",
+      "physopt-exam-u2-109-vt-25",
+      "physopt-exam-u2-110-sp-3",
+      "physopt-exam-u2-110-sp-26",
+      "physopt-exam-u2-110-sp-35",
+      "physopt-exam-u2-111-vh-31",
+      "physopt-exam-u2-112-sp-49",
+      "physopt-exam-u2-112-vh-10",
+      "physopt-exam-u2-113-sp-9",
+      "physopt-exam-u2-113-vh-35",
+      "physopt-exam-u2-114-sp-27",
+      "physopt-u2-q-23",
+      "physopt-u2-q-24",
+      "physopt-u2-q-27"
+     ]
     },
     {
      "name": "介面成像：先 U，再 V，再像距",
@@ -316,7 +401,23 @@
      "pitfall": "算像距用 n₂，不是把任何介面都套 v = 1/V。V = 0 表示像在無限遠，不做一般的除以零運算。",
      "id": "f06",
      "warmup": "1. 進來 U = −2 D，介面提供 P = +5 D。\n2. 出去 V = −2 + 5 = +3 D。\n3. 若像方 n₂ = 1.5，像距 v = 1.5 ÷ 3 = +0.5 m。",
-     "derivation": "介面把原有的聚散度再加上 P。知道出射光有多會聚，就知道它還要走多遠才到像點，因此用 v = n₂/V 還原距離。"
+     "derivation": "介面把原有的聚散度再加上 P。知道出射光有多會聚，就知道它還要走多遠才到像點，因此用 v = n₂/V 還原距離。",
+     "relatedQuestions": [
+      "physopt-teacher-u2-6",
+      "physopt-exam-u2-107-vh-15",
+      "physopt-exam-u2-107-vh-16",
+      "physopt-exam-u2-107-vh-21",
+      "physopt-exam-u2-107-vt-3",
+      "physopt-exam-u2-108-sp-13",
+      "physopt-exam-u2-109-sp-30",
+      "physopt-exam-u2-109-vh-10",
+      "physopt-exam-u2-112-sp-6",
+      "physopt-exam-u2-112-sp-21",
+      "physopt-u2-q-18",
+      "physopt-u2-q-19",
+      "physopt-u2-q-22",
+      "physopt-u2-q-26"
+     ]
     },
     {
      "name": "平面介面：視深縮放，大小不變",
@@ -333,7 +434,17 @@
      "pitfall": "這是近法線、近軸視深。明顯斜看時，完整幾何更複雜；也不要把「P = 0」誤解成完全沒有折射。",
      "id": "f07",
      "warmup": "1. 物在 n = 2 的介質內，實際深度 20 cm。\n2. 從空氣 n = 1 看，視深 = 20 × 1 ÷ 2。\n3. 結果是 10 cm，看起來只剩原來一半深。",
-     "derivation": "平面沒有球面屈光力，卻仍會改變光速與幾何角度。相同聚散度用另一個 n 換回距離，就得到不同像距。高 n 內的東西從低 n 看，通常顯得較淺。"
+     "derivation": "平面沒有球面屈光力，卻仍會改變光速與幾何角度。相同聚散度用另一個 n 換回距離，就得到不同像距。高 n 內的東西從低 n 看，通常顯得較淺。",
+     "relatedQuestions": [
+      "physopt-teacher-u2-4",
+      "physopt-exam-u2-107-vh-10",
+      "physopt-exam-u2-108-vh-23",
+      "physopt-exam-u2-108-vt-10",
+      "physopt-u2-q-11",
+      "physopt-u2-q-20",
+      "physopt-u2-q-21",
+      "physopt-u2-q-30"
+     ]
     },
     {
      "name": "兩側焦距：同一 P，分別配兩側 n",
@@ -348,7 +459,13 @@
      "pitfall": "別把 f₂ = −f₁ 當成所有系統都成立；只有兩側折射率相同時，它們的大小才相同。",
      "id": "f08",
      "warmup": "1. P = +2 D，前方 n₁ = 1、後方 n₂ = 1.5。\n2. f₁ = −1 ÷ 2 = −0.5 m。\n3. f₂ = 1.5 ÷ 2 = +0.75 m。前後用的 n 不同，所以不一樣長。",
-     "derivation": "求 F₂ 時 U = 0，所以 V = P；求 F₁ 時 V = 0，所以 U = −P。再套 n/距離，就得到一前一後兩個焦距。"
+     "derivation": "求 F₂ 時 U = 0，所以 V = P；求 F₁ 時 V = 0，所以 U = −P。再套 n/距離，就得到一前一後兩個焦距。",
+     "relatedQuestions": [
+      "physopt-exam-u2-108-st-19",
+      "physopt-exam-u2-109-vt-16",
+      "physopt-exam-u2-113-sp-9",
+      "physopt-u2-q-25"
+     ]
     },
     {
      "name": "弧高：同樣口徑下，半徑越小越彎",
@@ -362,7 +479,14 @@
      "pitfall": "這裡算的是正的弧高大小；若要寫有向面形座標，另依表面方向帶符號。y 是半口徑，不是整個直徑。",
      "id": "f09",
      "warmup": "1. 半口徑 y = 1 cm，半徑大小 10 cm。\n2. s ≈ 1 × 1 ÷ (2 × 10) = 0.05 cm。\n3. y 若變 2 cm，s ≈ 4 ÷ 20 = 0.20 cm，變四倍。",
-     "derivation": "球面邊緣偏離頂點切平面的距離，由圓的幾何得到。y 越大，弧高以平方增加；半徑越大，球面越接近平面。"
+     "derivation": "球面邊緣偏離頂點切平面的距離，由圓的幾何得到。y 越大，弧高以平方增加；半徑越大，球面越接近平面。",
+     "relatedQuestions": [
+      "physopt-exam-u2-108-sp-22",
+      "physopt-exam-u2-108-vt-13",
+      "physopt-exam-u2-110-sp-26",
+      "physopt-exam-u2-114-sp-24",
+      "physopt-u2-q-28"
+     ]
     },
     {
      "name": "簡化眼：從視網膜反推遠點與矯正",
@@ -379,7 +503,13 @@
      "pitfall": "這是簡化眼教學估計，不是個人處方測量。實際眼鏡離眼有距離時，要接第四單元的頂點距離換算；不能把 ℓ 當成所有眼模型的同一段距離。",
      "id": "f10",
      "warmup": "1. 假設視網膜要求 V = +55 D，眼睛本身 P = +60 D。\n2. 所需入射 U = 55 − 60 = −5 D。\n3. 因為眼睛多了 5 D，貼近眼的教學矯正模型用 −5 D 抵消。",
-     "derivation": "視網膜位置固定，決定需要的 V。眼睛本身若太強，需要負的 U 抵消；若太弱，需要正的 U 補上。看遠時矯正鏡先提供這份 U。"
+     "derivation": "視網膜位置固定，決定需要的 V。眼睛本身若太強，需要負的 U 抵消；若太弱，需要正的 U 補上。看遠時矯正鏡先提供這份 U。",
+     "relatedQuestions": [
+      "physopt-u2-q-31",
+      "physopt-u2-q-32",
+      "physopt-u2-q-34",
+      "physopt-u2-q-35"
+     ]
     },
     {
      "name": "調節：近物的發散度要由眼睛補回來",
@@ -395,7 +525,10 @@
      "pitfall": "未矯正屈光不正、實際頂點距離與眼模型會改變需求。不要把 1/a 不分條件套在每個人身上。",
      "id": "f11",
      "warmup": "1. 正視眼看 0.5 m 遠的物，近物入射 U = −2 D。\n2. 為保持同一個 V，眼睛要額外補 +2 D。\n3. 調節 A 約 2 D；看 0.25 m 就需要約 4 D。",
-     "derivation": "近物送來發散光，U 為負。視網膜要的 V 不變，就得提高眼睛屈光力。越近的物，發散越強，需要的調節越大。"
+     "derivation": "近物送來發散光，U 為負。視網膜要的 V 不變，就得提高眼睛屈光力。越近的物，發散越強，需要的調節越大。",
+     "relatedQuestions": [
+      "physopt-u2-q-33"
+     ]
     }
    ],
    "recap": "角度題先畫法線，用 Snell 算；成像題在近軸條件下先求 P，再依 U → V → v 算。平面是 P = 0 的特例；焦點是 U = 0 或 V = 0 的特例；簡化眼則把像固定在視網膜，再反推所需入射光。",

@@ -217,7 +217,16 @@
      "pitfall": "第二面的折射率差要用 1 − 1.5，不是再用 1.5 − 1。半徑由各自頂點指向球心。",
      "id": "f01",
      "warmup": "1. 空氣 1 → 玻璃 1.5，r₁ = +0.5 m：P₁ = (1.5−1)/0.5 = +1 D。\n2. 玻璃 1.5 → 空氣 1，r₂ = −0.5 m。\n3. P₂ = (1−1.5)/(−0.5) = +1 D。兩個負號相除，得到正。",
-     "derivation": "兩面都在折射，只是第二面常從玻璃回空氣，折射率差會變負。曲率半徑也有方向，因此不能只看其中一個負號判斷力量。"
+     "derivation": "兩面都在折射，只是第二面常從玻璃回空氣，折射率差會變負。曲率半徑也有方向，因此不能只看其中一個負號判斷力量。",
+     "relatedQuestions": [
+      "physopt-teacher-u4-1",
+      "physopt-exam-u4-106-vh-5",
+      "physopt-exam-u4-106-vt-19",
+      "physopt-exam-u4-107-vh-34",
+      "physopt-exam-u4-108-vh-35",
+      "physopt-exam-u4-111-vh-32",
+      "physopt-exam-u4-111-vh-35"
+     ]
     },
     {
      "name": "約化厚度與聚散度傳遞",
@@ -233,7 +242,18 @@
      "pitfall": "同介質實際會聚距離是 n/V₁，1/V₁ 是約化距離。若分母越過零，代表走過焦點，不能再說會聚一直變強。",
      "id": "f02",
      "warmup": "1. V₁ = +5 D，約化剩距離 = 1/5 = 0.20 m。\n2. 走過 d̄ = 0.10 m，剩下 0.20 − 0.10 = 0.10 m。\n3. U₂ = 1/0.10 = +10 D。這段例子用約化距離，並且還沒走過焦點。",
-     "derivation": "先把 V₁ 換成約化會聚距離 1/V₁，減去走過的 d̄，再取倒數：U₂ = 1/(1/V₁ − d̄)。會聚光在到焦點前越走越會聚；發散光越走越平。"
+     "derivation": "先把 V₁ 換成約化會聚距離 1/V₁，減去走過的 d̄，再取倒數：U₂ = 1/(1/V₁ − d̄)。會聚光在到焦點前越走越會聚；發散光越走越平。",
+     "relatedQuestions": [
+      "physopt-teacher-u4-2",
+      "physopt-teacher-u4-3",
+      "physopt-teacher-u4-4",
+      "physopt-teacher-u4-21",
+      "physopt-exam-u4-114-sp-15",
+      "physopt-u4-q-2",
+      "physopt-u4-q-3",
+      "physopt-u4-q-4",
+      "physopt-u4-q-32"
+     ]
     },
     {
      "name": "等效屈光力：加兩面，再扣厚度項",
@@ -247,7 +267,37 @@
      "pitfall": "不是所有厚透鏡都因為變厚而等效力變弱，要看 P₁P₂ 的正負。d → 0 時應回到 P₁ + P₂。",
      "id": "f03",
      "warmup": "1. P₁ = +2 D、P₂ = +3 D、d̄ = 0.1 m。\n2. 先加兩面：2 + 3 = 5。\n3. 再扣厚度修正：0.1 × 2 × 3 = 0.6，Pe = 5 − 0.6 = +4.4 D。",
-     "derivation": "第一面已把光線折轉；走過厚度後，光在第二面碰到的高度改變，所以第二面的作用不再是單純加上 P₂。這份高度改變帶出乘積修正項。"
+     "derivation": "第一面已把光線折轉；走過厚度後，光在第二面碰到的高度改變，所以第二面的作用不再是單純加上 P₂。這份高度改變帶出乘積修正項。",
+     "relatedQuestions": [
+      "physopt-teacher-u4-5",
+      "physopt-teacher-u4-6",
+      "physopt-teacher-u4-20",
+      "physopt-exam-u4-106-vh-5",
+      "physopt-exam-u4-106-vh-17",
+      "physopt-exam-u4-107-vt-10",
+      "physopt-exam-u4-108-sp-21",
+      "physopt-exam-u4-108-st-20",
+      "physopt-exam-u4-108-vt-16",
+      "physopt-exam-u4-108-vt-25",
+      "physopt-exam-u4-109-vh-12",
+      "physopt-exam-u4-109-vh-27",
+      "physopt-exam-u4-109-vt-21",
+      "physopt-exam-u4-110-sp-20",
+      "physopt-exam-u4-110-sp-39",
+      "physopt-exam-u4-110-vh-2",
+      "physopt-exam-u4-110-vh-36",
+      "physopt-exam-u4-111-sp-21",
+      "physopt-exam-u4-111-vh-17",
+      "physopt-exam-u4-112-sp-13",
+      "physopt-exam-u4-112-vh-6",
+      "physopt-exam-u4-112-vh-26",
+      "physopt-exam-u4-113-vh-21",
+      "physopt-u4-q-5",
+      "physopt-u4-q-9",
+      "physopt-u4-q-10",
+      "physopt-u4-q-11",
+      "physopt-u4-q-12"
+     ]
     },
     {
      "name": "頂點屈光力：後面除第一面，前面除第二面",
@@ -263,7 +313,35 @@
      "pitfall": "不能把眼鏡後頂點度數 Pv 當成 Pe 使用所有成像式。平行入射時逐面追跡算到的 V₂ 應等於 Pv，可拿來驗算。",
      "id": "f04",
      "warmup": "1. 假設 Pe = 6 D、d̄P₁ = 0.2、d̄P₂ = 0.1。\n2. Pv = 6 ÷ (1−0.2) = 7.5 D。\n3. Pf = 6 ÷ (1−0.1) ≈ 6.667 D。分母要配正確的面。",
-     "derivation": "Pv 把平行光經第一面後再走一段的效果算进去，因此分母含 P₁。Pf 反過來考慮由後側中和的條件，分母含 P₂。它們與 Pe 不同，是因量起點不同。"
+     "derivation": "Pv 把平行光經第一面後再走一段的效果算进去，因此分母含 P₁。Pf 反過來考慮由後側中和的條件，分母含 P₂。它們與 Pe 不同，是因量起點不同。",
+     "relatedQuestions": [
+      "physopt-teacher-u4-4",
+      "physopt-teacher-u4-7",
+      "physopt-teacher-u4-8",
+      "physopt-teacher-u4-20",
+      "physopt-teacher-u4-21",
+      "physopt-exam-u4-107-vt-10",
+      "physopt-exam-u4-108-sp-21",
+      "physopt-exam-u4-108-vh-6",
+      "physopt-exam-u4-108-vt-16",
+      "physopt-exam-u4-108-vt-25",
+      "physopt-exam-u4-109-sp-37",
+      "physopt-exam-u4-109-vh-27",
+      "physopt-exam-u4-109-vt-21",
+      "physopt-exam-u4-110-sp-39",
+      "physopt-exam-u4-111-sp-21",
+      "physopt-exam-u4-111-vh-17",
+      "physopt-exam-u4-112-sp-13",
+      "physopt-exam-u4-112-sp-23",
+      "physopt-exam-u4-112-vh-26",
+      "physopt-u4-q-6",
+      "physopt-u4-q-7",
+      "physopt-u4-q-8",
+      "physopt-u4-q-10",
+      "physopt-u4-q-13",
+      "physopt-u4-q-34",
+      "physopt-u4-q-35"
+     ]
     },
     {
      "name": "四個焦距：力量與量距起點配對",
@@ -278,7 +356,14 @@
      "pitfall": "不要把 Pe、Pv、Pf 看成同一個 P。兩側 n 不同時，物方焦距和像方焦距也不會一樣長。",
      "id": "f05",
      "warmup": "1. 像方在空氣 nᵢ = 1，Pe = 4 D → f₂ = 1/4 = 0.25 m。\n2. 同系統 Pv = 5 D → fb = 1/5 = 0.20 m。\n3. 同一個焦點的兩段距離不同，是因為量起點不同。",
-     "derivation": "同一個焦點可以從玻璃表面量，也可以從主平面量。量起點改變，距離就改變，相應的屈光力也要跟著換。"
+     "derivation": "同一個焦點可以從玻璃表面量，也可以從主平面量。量起點改變，距離就改變，相應的屈光力也要跟著換。",
+     "relatedQuestions": [
+      "physopt-teacher-u4-9",
+      "physopt-teacher-u4-10",
+      "physopt-u4-q-14",
+      "physopt-u4-q-15",
+      "physopt-u4-q-33"
+     ]
     },
     {
      "name": "主平面定位：到同一焦點的距離相減",
@@ -293,7 +378,16 @@
      "pitfall": "主平面是等效幾何位置，可以在鏡片外。負號要翻譯成「從哪個頂點往前多少」，不能只寫一個數字。",
      "id": "f06",
      "warmup": "1. 後頂點到焦點 fb = +8 cm。\n2. H₂ 到焦點 f₂ = +10 cm。\n3. 後頂點到 H₂ = 8 − 10 = −2 cm，表示 H₂ 在後頂點前方 2 cm。",
-     "derivation": "ff 與 f₁ 都終止在 F₁，兩段路的差就是兩個起點的差。像方同理，fb − f₂ 得到後頂點和 H₂ 的相對位置。"
+     "derivation": "ff 與 f₁ 都終止在 F₁，兩段路的差就是兩個起點的差。像方同理，fb − f₂ 得到後頂點和 H₂ 的相對位置。",
+     "relatedQuestions": [
+      "physopt-teacher-u4-11",
+      "physopt-teacher-u4-12",
+      "physopt-teacher-u4-22",
+      "physopt-u4-q-16",
+      "physopt-u4-q-17",
+      "physopt-u4-q-18",
+      "physopt-u4-q-19"
+     ]
     },
     {
      "name": "高斯成像與放大率",
@@ -308,7 +402,19 @@
      "pitfall": "不能直接用題目給的前頂點物距當 uH₁。也不能在兩側 n 不同時只用 vH₂/uH₁。",
      "id": "f07",
      "warmup": "1. 空氣中 uH₁ = −0.5 m → U = −2 D。\n2. Pe = +4 D → V = 4 − 2 = +2 D。\n3. vH₂ = +0.5 m，m = −2/2 = −1：像從 H₂ 往後 50 cm，等大倒立。",
-     "derivation": "找到主平面後，厚系統可像薄透鏡一樣做 U → V → v。但物方與像方起點分成 H₁、H₂，而且不同 n 的放大率需要保留折射率比。"
+     "derivation": "找到主平面後，厚系統可像薄透鏡一樣做 U → V → v。但物方與像方起點分成 H₁、H₂，而且不同 n 的放大率需要保留折射率比。",
+     "relatedQuestions": [
+      "physopt-teacher-u4-14",
+      "physopt-teacher-u4-15",
+      "physopt-teacher-u4-16",
+      "physopt-teacher-u4-18",
+      "physopt-teacher-u4-23",
+      "physopt-u4-q-21",
+      "physopt-u4-q-22",
+      "physopt-u4-q-27",
+      "physopt-u4-q-28",
+      "physopt-u4-q-29"
+     ]
     },
     {
      "name": "頂點與主平面的距離換算",
@@ -323,7 +429,11 @@
      "pitfall": "位移與距離一定要帶符號。把 H₁ 前移 1 cm 直接寫成 +1 cm，會讓扣距方向反過來。",
      "id": "f08",
      "warmup": "1. 物相對前頂點在 −30 cm，H₁ 在 −1 cm。\n2. 物相對 H₁：−30 − (−1) = −29 cm。\n3. H₂ 相對後頂點在 −2 cm，像離 H₂ +25 cm → 像相對後頂點在 +23 cm。",
-     "derivation": "用座標想：物的位置扣掉 H₁ 的位置，就是物相對 H₁ 的距離；求像的實際位置時，從後頂點先走到 H₂，再走到像。"
+     "derivation": "用座標想：物的位置扣掉 H₁ 的位置，就是物相對 H₁ 的距離；求像的實際位置時，從後頂點先走到 H₂，再走到像。",
+     "relatedQuestions": [
+      "physopt-teacher-u4-23",
+      "physopt-u4-q-29"
+     ]
     },
     {
      "name": "節點位移與視網膜像高",
@@ -338,7 +448,14 @@
      "pitfall": "θ 不能用度數直接乘距離。N₂到視網膜約 16.7 mm 是特定簡化模型與成像條件，不是每隻眼固定常數。",
      "id": "f09",
      "warmup": "1. nᵢ − n₀ = 0.3，Pe = 60 D。\n2. 主點到節點 = 0.3 ÷ 60 = 0.005 m = 5 mm。\n3. 若兩側 n 相同，差就是 0，節點便和主點重合。",
-     "derivation": "主平面管的是高度對應，節點管的是方向角度對應。兩側折射率相同時，節點與主點重合；不同時要有一段位移，才能讓入射與出射方向一致。"
+     "derivation": "主平面管的是高度對應，節點管的是方向角度對應。兩側折射率相同時，節點與主點重合；不同時要有一段位移，才能讓入射與出射方向一致。",
+     "relatedQuestions": [
+      "physopt-teacher-u4-17",
+      "physopt-exam-u4-106-vh-11",
+      "physopt-u4-q-23",
+      "physopt-u4-q-24",
+      "physopt-u4-q-25"
+     ]
     },
     {
      "name": "Newton 方程：題目從焦點量時使用",
@@ -353,7 +470,14 @@
      "pitfall": "不要把 x = −30 cm 誤當 uH₁。此例 uH₁ = −50 cm，像距 vH₂ = +33.33 cm。",
      "id": "f10",
      "warmup": "1. f₁ = −10 cm、f₂ = +10 cm，所以 f₁f₂ = −100 cm²。\n2. 物離 F₁ 的有向距離 x = −20 cm。\n3. x′ = −100 ÷ (−20) = +5 cm，表示像在 F₂ 後方 5 cm。",
-     "derivation": "原本高斯式從主平面量。把 uH₁ = f₁ + x、vH₂ = f₂ + x′ 代進去，就能把成像寫成兩段焦外距離的乘積。"
+     "derivation": "原本高斯式從主平面量。把 uH₁ = f₁ + x、vH₂ = f₂ + x′ 代進去，就能把成像寫成兩段焦外距離的乘積。",
+     "relatedQuestions": [
+      "physopt-teacher-u4-24",
+      "physopt-exam-u4-106-vh-8",
+      "physopt-exam-u4-109-st-24",
+      "physopt-u4-q-30",
+      "physopt-u4-q-31"
+     ]
     },
     {
      "name": "頂點距離：眼鏡與隱形眼鏡等效換算",
@@ -368,7 +492,61 @@
      "pitfall": "12 mm = 0.012 m，不是 12。這是光學等效計算，實際隱形眼鏡處方還須考慮配適等因素，不能只用換算值自行決定。",
      "id": "f11",
      "warmup": "1. 眼鏡 Fs = −5 D、d = 0.02 m。\n2. 分母 = 1 − 0.02×(−5) = 1.1。\n3. Fc = −5 ÷ 1.1 ≈ −4.545 D；負鏡片移近角膜後，等效度數絕對值減小。",
-     "derivation": "眼鏡先改變平行光的聚散度，光還要在空氣走 d 才到角膜。把同一個會聚或發散點改從角膜量，就是一次聚散度傳遞。"
+     "derivation": "眼鏡先改變平行光的聚散度，光還要在空氣走 d 才到角膜。把同一個會聚或發散點改從角膜量，就是一次聚散度傳遞。",
+     "relatedQuestions": [
+      "physopt-exam-u4-106-sp-18",
+      "physopt-exam-u4-106-sp-19",
+      "physopt-exam-u4-106-sp-49",
+      "physopt-exam-u4-106-st-1",
+      "physopt-exam-u4-106-vh-16",
+      "physopt-exam-u4-106-vt-27",
+      "physopt-exam-u4-106-vt-33",
+      "physopt-exam-u4-106-vt-39",
+      "physopt-exam-u4-107-sp-15",
+      "physopt-exam-u4-107-sp-17",
+      "physopt-exam-u4-107-sp-19",
+      "physopt-exam-u4-107-st-10",
+      "physopt-exam-u4-107-vt-6",
+      "physopt-exam-u4-107-vt-23",
+      "physopt-exam-u4-108-sp-6",
+      "physopt-exam-u4-108-sp-7",
+      "physopt-exam-u4-108-sp-17",
+      "physopt-exam-u4-108-st-27",
+      "physopt-exam-u4-108-vt-8",
+      "physopt-exam-u4-108-vt-35",
+      "physopt-exam-u4-109-sp-21",
+      "physopt-exam-u4-109-st-17",
+      "physopt-exam-u4-109-st-25",
+      "physopt-exam-u4-109-st-36",
+      "physopt-exam-u4-109-vh-3",
+      "physopt-exam-u4-109-vh-5",
+      "physopt-exam-u4-109-vt-9",
+      "physopt-exam-u4-109-vt-13",
+      "physopt-exam-u4-109-vt-14",
+      "physopt-exam-u4-109-vt-27",
+      "physopt-exam-u4-110-sp-12",
+      "physopt-exam-u4-110-vh-5",
+      "physopt-exam-u4-110-vh-23",
+      "physopt-exam-u4-111-sp-7",
+      "physopt-exam-u4-111-sp-22",
+      "physopt-exam-u4-111-sp-26",
+      "physopt-exam-u4-111-vh-12",
+      "physopt-exam-u4-112-sp-15",
+      "physopt-exam-u4-112-vh-1",
+      "physopt-exam-u4-112-vh-2",
+      "physopt-exam-u4-112-vh-13",
+      "physopt-exam-u4-112-vh-49",
+      "physopt-exam-u4-113-sp-4",
+      "physopt-exam-u4-113-sp-6",
+      "physopt-exam-u4-113-sp-21",
+      "physopt-exam-u4-113-sp-42",
+      "physopt-exam-u4-114-sp-13",
+      "physopt-exam-u4-114-vh-44",
+      "physopt-u4-q-36",
+      "physopt-u4-q-38",
+      "physopt-u4-q-39",
+      "physopt-u4-q-40"
+     ]
     },
     {
      "name": "散光頂點換算：兩個主子午線分開算",
@@ -384,7 +562,10 @@
      "pitfall": "實際可選度數的取位要等兩個子午線都算完再處理。不要先把中間值取位，或只對 C = −2 單獨做頂點換算。",
      "id": "f12",
      "warmup": "1. 處方 S = −4 D、C = −2 D：軸向 −4 D，垂直方向 −6 D。\n2. d = 0.02 m：各算 Fc，得到 −4/1.08 ≈ −3.704 D、−6/1.12 ≈ −5.357 D。\n3. 新柱鏡 = −5.357 − (−3.704) ≈ −1.653 D，最後才依題目要求取位。",
-     "derivation": "兩個方向的總度數不同，頂點距離又是非線性換算，所以不能只把球鏡換一次、柱鏡原樣照抄。先換兩個總力量，再重組處方。"
+     "derivation": "兩個方向的總度數不同，頂點距離又是非線性換算，所以不能只把球鏡換一次、柱鏡原樣照抄。先換兩個總力量，再重組處方。",
+     "relatedQuestions": [
+      "physopt-u4-q-37"
+     ]
     }
    ],
    "recap": "逐面追跡是底層規則：面上加屈光力、介質內傳遞聚散度。Pe 把系統濃縮到主平面，Pv/Pf 把焦點改由表面量。成像時先把頂點距離換成主平面距離；題目從焦點給距離則用 Newton。眼鏡頂點換算也是同一個傳遞式在空氣中的應用。",

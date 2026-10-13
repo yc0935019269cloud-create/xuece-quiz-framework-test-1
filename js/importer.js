@@ -119,6 +119,10 @@ const IMP = (() => {
         const defaults = L.packs[k].notes || [];
         if (p.notes === undefined && defaults.length) p.notes = defaults;
         else if (Array.isArray(p.notes) && p.notes.length) p.notes = p.notes.concat(defaults.filter(n => !p.notes.some(x => x.id === n.id)));
+        (p.notes || []).forEach(n => (n.formulas || []).forEach(f => {
+          const source = defaults.find(x => x.id === n.id)?.formulas?.find(x => x.id === f.id);
+          if (f.relatedQuestions === undefined && source?.relatedQuestions) { f.relatedQuestions = source.relatedQuestions; if (f.relatedHint === undefined && source.relatedHint) f.relatedHint = source.relatedHint; }
+        }));
         L.packs.splice(k, 1);
       }
       L.packs.push(p);
@@ -346,6 +350,8 @@ const IMP = (() => {
           fids.add(f.id);
           ['name', 'symbols', 'intuition', 'memory', 'example', 'pitfall', 'warmup', 'derivation'].forEach(k => { f[k] = str(f[k]); });
           f.equations = (Array.isArray(f.equations) ? f.equations : []).map(str).filter(Boolean);
+          if (f.relatedQuestions !== undefined) f.relatedQuestions = [...new Set((Array.isArray(f.relatedQuestions) ? f.relatedQuestions : []).map(str).filter(Boolean))];
+          if (f.relatedHint !== undefined) f.relatedHint = str(f.relatedHint);
           return f.equations.length && ['name', 'symbols', 'intuition', 'memory', 'example', 'pitfall'].every(k => f[k]);
         });
         n.references = (Array.isArray(n.references) ? n.references : []).filter(r => r && str(r.title) && /^https:\/\//.test(str(r.url))).map(r => ({ title: str(r.title), url: str(r.url) }));

@@ -272,7 +272,12 @@
      "pitfall": "h = 0 的光軸光線不能用這個比值算聚散度。q 是折合角，θ = q/n 才是實際角度。",
      "id": "f01",
      "warmup": "1. 光在軸上方 h = +0.01 m，方向 q = −0.02，正在往下。\n2. V = −(−0.02)/0.01 = +2 D。\n3. 上方光往下靠近光軸，因此算成正的會聚度很合理。",
-     "derivation": "在光軸上方 h > 0，往下的光 θ < 0 會靠近光軸，因此 −q/h 為正。若上方光也往上走，q 與 h 同號，便是發散的負聚散度。"
+     "derivation": "在光軸上方 h > 0，往下的光 θ < 0 會靠近光軸，因此 −q/h 為正。若上方光也往上走，q 與 h 同號，便是發散的負聚散度。",
+     "relatedQuestions": [
+      "physopt-u5-q-1",
+      "physopt-u5-q-2",
+      "physopt-u5-q-3"
+     ]
     },
     {
      "name": "平移積木：方向不變、高度改變",
@@ -288,7 +293,10 @@
      "pitfall": "玻璃內走 10 cm、n = 1.5，左下角要放 0.10/1.5，不是直接放 0.10。",
      "id": "f02",
      "warmup": "1. 空氣中 h₁ = 1 cm = 0.01 m、q₁ = 0.1。\n2. 往前走 d̄ = 0.1 m，高度增加 0.1×0.1 = 0.01 m。\n3. h₂ = 0.02 m = 2 cm，q₂ 仍是 0.1。",
-     "derivation": "直線走路不會轉向，所以 q 不變。高度變化等於斜率 θ 乘距離 d；用 θ = q/n 換掉後，就變成 d̄q。"
+     "derivation": "直線走路不會轉向，所以 q 不變。高度變化等於斜率 θ 乘距離 d；用 θ = q/n 換掉後，就變成 d̄q。",
+     "relatedQuestions": [
+      "physopt-u5-q-5"
+     ]
     },
     {
      "name": "折射積木：高度不變、方向改變",
@@ -303,7 +311,11 @@
      "pitfall": "不要把 +P 寫進右上角，否則正透鏡會把上方光往外折，變成發散。",
      "id": "f03",
      "warmup": "1. 平行光 q₁ = 0，在 h₁ = +0.01 m 碰到 +2 D 透鏡。\n2. q₂ = 0 − 2×0.01 = −0.02。\n3. 上方的光開始往下走，但高度仍是 0.01 m。",
-     "derivation": "高度不變，但透鏡給光線一個依高度而變的偏折。正 P 對上方 h > 0 的光減去正量，使光往光軸彎；對下方光則往上彎。"
+     "derivation": "高度不變，但透鏡給光線一個依高度而變的偏折。正 P 對上方 h > 0 的光減去正量，使光往光軸彎；對下方光則往上彎。",
+     "relatedQuestions": [
+      "physopt-u5-q-6",
+      "physopt-u5-q-9"
+     ]
     },
     {
      "name": "系統矩陣與驗算",
@@ -319,7 +331,13 @@
      "pitfall": "順序不能交換。det = 1 不保證順序或每格都對；若用未折合的 θ 向量，行列式規則也要隨慣例調整。",
      "id": "f04",
      "warmup": "1. 先做第一步 r新 = M₁r。\n2. 再做第二步 r最後 = M₂r新。\n3. 把第一式放進第二式，就得到 r最後 = M₂M₁r。",
-     "derivation": "光先進第一台機器，再進第二台，所以代入後第二台包在外面：M₂(M₁r)。行列式為 1 是這些近軸折合角積木的共同性質，可用來抓算術錯誤。"
+     "derivation": "光先進第一台機器，再進第二台，所以代入後第二台包在外面：M₂(M₁r)。行列式為 1 是這些近軸折合角積木的共同性質，可用來抓算術錯誤。",
+     "relatedQuestions": [
+      "physopt-u5-q-4",
+      "physopt-u5-q-7",
+      "physopt-u5-q-8",
+      "physopt-u5-q-37"
+     ]
     },
     {
      "name": "厚透鏡矩陣與三種屈光力",
@@ -335,7 +353,22 @@
      "pitfall": "不能把用 [h,q] 排列的書中 Pe = −C 混進來。本課程是 [q,h]，所以 Pe = −B。",
      "id": "f05",
      "warmup": "1. 先找右上 B = −8，得 Pe = −B = +8 D。\n2. 若右下 D = 0.8，後頂點力 Pv = 8/0.8 = +10 D。\n3. 若左上 A = 1，前頂點力 Pn = 8/1 = +8 D。",
-     "derivation": "平行入射 q₁ = 0 → 出射 q₂ = Bh₁、h₂ = Dh₁，所以 V = −B/D。平行出射 q₂ = 0，反解入射 U = B/A，中和力取相反數 −B/A。"
+     "derivation": "平行入射 q₁ = 0 → 出射 q₂ = Bh₁、h₂ = Dh₁，所以 V = −B/D。平行出射 q₂ = 0，反解入射 U = B/A，中和力取相反數 −B/A。",
+     "relatedQuestions": [
+      "physopt-teacher-u5-2",
+      "physopt-teacher-u5-3",
+      "physopt-teacher-u5-4",
+      "physopt-exam-u5-106-sp-32",
+      "physopt-exam-u5-107-sp-13",
+      "physopt-exam-u5-107-vh-9",
+      "physopt-exam-u5-108-vt-23",
+      "physopt-u5-q-11",
+      "physopt-u5-q-12",
+      "physopt-u5-q-13",
+      "physopt-u5-q-14",
+      "physopt-u5-q-15",
+      "physopt-u5-q-37"
+     ]
     },
     {
      "name": "矩陣成像：像面不受出發角度影響",
@@ -351,7 +384,21 @@
      "pitfall": "先檢查輸入矩陣是否有效。x 是約化距離；像方不是空氣時，要乘 n像 才得到實際距離。A = 0 時要另外分析，不直接除以零。",
      "id": "f06",
      "warmup": "1. 第二行是 h₂ = Cq₁ + Dh₁。\n2. 讓 C = 0，出發方向 q₁ 不管怎麼變，h₂ 都不變。\n3. 剩下 h₂ = Dh₁，所以像高是物高的 D 倍。",
-     "derivation": "同一物點可射出很多不同 q₁ 的光。若最後高度還依 q₁ 改變，就沒聚到同一點。令 C = 0，像高只跟物高有關，比例就是 D。"
+     "derivation": "同一物點可射出很多不同 q₁ 的光。若最後高度還依 q₁ 改變，就沒聚到同一點。令 C = 0，像高只跟物高有關，比例就是 D。",
+     "relatedQuestions": [
+      "physopt-teacher-u5-1",
+      "physopt-exam-u5-106-vh-15",
+      "physopt-exam-u5-107-sp-13",
+      "physopt-exam-u5-107-vh-4",
+      "physopt-exam-u5-108-vh-5",
+      "physopt-exam-u5-109-vt-15",
+      "physopt-exam-u5-109-vt-22",
+      "physopt-exam-u5-114-sp-7",
+      "physopt-exam-u5-114-vh-7",
+      "physopt-u5-q-10",
+      "physopt-u5-q-16",
+      "physopt-u5-q-17"
+     ]
     },
     {
      "name": "孔徑光闌與瞳的大小",
@@ -366,7 +413,16 @@
      "pitfall": "算入射瞳時光由光闌往物方走，符號方向要隨這次成像重新設定。不能直接把實體光闌的大小與距離跨透鏡硬比。",
      "id": "f07",
      "warmup": "1. 孔徑半徑 5 mm、離物點 100 mm。\n2. tanθ = 5/100 = 0.05。\n3. 若另一個孔半徑 10 mm、距離 400 mm，tanθ = 0.025，反而是第二個孔的張角更小。",
-     "derivation": "限制亮度的是對軸上物點張角最小的開口，不一定是實體直徑最小的孔。若中間有透鏡，要比較物點看到的光闌像；入射瞳與出射瞳是從兩邊看到的孔徑光闌像。"
+     "derivation": "限制亮度的是對軸上物點張角最小的開口，不一定是實體直徑最小的孔。若中間有透鏡，要比較物點看到的光闌像；入射瞳與出射瞳是從兩邊看到的孔徑光闌像。",
+     "relatedQuestions": [
+      "physopt-teacher-u5-5",
+      "physopt-teacher-u5-6",
+      "physopt-exam-u5-112-vh-5",
+      "physopt-u5-q-18",
+      "physopt-u5-q-19",
+      "physopt-u5-q-20",
+      "physopt-u5-q-21"
+     ]
     },
     {
      "name": "視場：先算半角，再乘二",
@@ -380,7 +436,12 @@
      "pitfall": "不要把直徑直接當半徑，或算出半角後忘記乘二。光闌、瞳、窗的像面位置都要先算對。",
      "id": "f08",
      "warmup": "1. 窗直徑 20 mm、距入射瞳中心 100 mm。\n2. 半角 = tan⁻¹(10/100) ≈ 5.71°。\n3. 全角 = 2×5.71° ≈ 11.42°。",
-     "derivation": "半個窗寬與距離形成直角三角形，先求一側能看到的角度；左右對稱的全視角就是兩倍。孔徑管光束粗細，視場光闌管能看到的物體範圍。"
+     "derivation": "半個窗寬與距離形成直角三角形，先求一側能看到的角度；左右對稱的全視角就是兩倍。孔徑管光束粗細，視場光闌管能看到的物體範圍。",
+     "relatedQuestions": [
+      "physopt-u5-q-23",
+      "physopt-u5-q-24",
+      "physopt-u5-q-25"
+     ]
     },
     {
      "name": "望遠鏡：無焦條件與管長",
@@ -395,7 +456,21 @@
      "pitfall": "限定看遠、無焦、薄元件間隔；有限物距或厚元件時要改用相應主平面與矩陣。Pe = 0 不代表系統沒有任何放大作用。",
      "id": "f09",
      "warmup": "1. 物鏡焦距 30 cm，正目鏡焦距 10 cm。\n2. 管長 = 30 + 10 = 40 cm。\n3. 若目鏡焦距是 −10 cm，管長 = 30 − 10 = 20 cm。",
-     "derivation": "物鏡把遠物的光聚向後焦點；目鏡必須把那個像當成自己的前焦點物，才能重新送出平行光。因此兩焦點重合，鏡間距離是兩個焦距相加。"
+     "derivation": "物鏡把遠物的光聚向後焦點；目鏡必須把那個像當成自己的前焦點物，才能重新送出平行光。因此兩焦點重合，鏡間距離是兩個焦距相加。",
+     "relatedQuestions": [
+      "physopt-teacher-u5-7",
+      "physopt-teacher-u5-8",
+      "physopt-exam-u5-106-sp-9",
+      "physopt-exam-u5-106-vh-43",
+      "physopt-exam-u5-106-vt-5",
+      "physopt-exam-u5-108-vh-8",
+      "physopt-exam-u5-108-vh-18",
+      "physopt-exam-u5-111-vh-48",
+      "physopt-u5-q-26",
+      "physopt-u5-q-27",
+      "physopt-u5-q-28",
+      "physopt-u5-q-29"
+     ]
     },
     {
      "name": "望遠鏡角放大率",
@@ -409,7 +484,19 @@
      "pitfall": "焦距可以同用 mm，因為是比值。不要用遠處無限像距去硬算有限的 m = v/u。",
      "id": "f10",
      "warmup": "1. 物鏡焦距 100 mm，目鏡焦距 25 mm。\n2. mθ = −100/25 = −4。\n3. 大小看起來是 4 倍，負號表示方向倒立。",
-     "derivation": "物鏡焦距越長，同一入射角在中間像面形成的像越大；目鏡焦距越短，同一中間像向眼睛張開的角越大。"
+     "derivation": "物鏡焦距越長，同一入射角在中間像面形成的像越大；目鏡焦距越短，同一中間像向眼睛張開的角越大。",
+     "relatedQuestions": [
+      "physopt-teacher-u5-8",
+      "physopt-exam-u5-106-sp-9",
+      "physopt-exam-u5-106-vh-43",
+      "physopt-exam-u5-106-vt-5",
+      "physopt-exam-u5-108-vh-8",
+      "physopt-exam-u5-108-vh-18",
+      "physopt-exam-u5-111-vh-48",
+      "physopt-u5-q-26",
+      "physopt-u5-q-27",
+      "physopt-u5-q-28"
+     ]
     },
     {
      "name": "薄稜鏡偏折與稜鏡度",
@@ -424,7 +511,43 @@
      "pitfall": "100δ 的 δ 要用 rad，不能直接把 2° 代成 200Δ。實際光偏向基底，眼睛看到的物像偏向頂端。",
      "id": "f11",
      "warmup": "1. 光點在 100 cm 外，偏移 2 cm。\n2. Z = 100×2/100 = 2Δ。\n3. 若同樣偏移 2 cm，牆改在 200 cm 外，Z 就是 1Δ。",
-     "derivation": "稜鏡兩面共同給光一個向基底的偏折。稜鏡度則不直接用角度，而是量一公尺外橫移幾公分：tanδ = 偏移/距離。"
+     "derivation": "稜鏡兩面共同給光一個向基底的偏折。稜鏡度則不直接用角度，而是量一公尺外橫移幾公分：tanδ = 偏移/距離。",
+     "relatedQuestions": [
+      "physopt-teacher-u5-9",
+      "physopt-exam-u5-106-st-15",
+      "physopt-exam-u5-106-vh-46",
+      "physopt-exam-u5-106-vt-26",
+      "physopt-exam-u5-107-sp-29",
+      "physopt-exam-u5-107-st-29",
+      "physopt-exam-u5-107-vh-19",
+      "physopt-exam-u5-107-vh-31",
+      "physopt-exam-u5-108-sp-19",
+      "physopt-exam-u5-108-sp-43",
+      "physopt-exam-u5-108-st-17",
+      "physopt-exam-u5-108-vh-31",
+      "physopt-exam-u5-108-vt-29",
+      "physopt-exam-u5-109-sp-45",
+      "physopt-exam-u5-109-vh-32",
+      "physopt-exam-u5-109-vt-28",
+      "physopt-exam-u5-109-vt-29",
+      "physopt-exam-u5-109-vt-33",
+      "physopt-exam-u5-109-vt-34",
+      "physopt-exam-u5-110-sp-38",
+      "physopt-exam-u5-110-vh-25",
+      "physopt-exam-u5-110-vh-29",
+      "physopt-exam-u5-111-sp-50",
+      "physopt-exam-u5-111-vh-24",
+      "physopt-exam-u5-111-vh-25",
+      "physopt-exam-u5-111-vh-27",
+      "physopt-exam-u5-111-vh-30",
+      "physopt-exam-u5-112-vh-31",
+      "physopt-exam-u5-113-sp-41",
+      "physopt-exam-u5-113-vh-29",
+      "physopt-exam-u5-114-vh-26",
+      "physopt-u5-q-30",
+      "physopt-u5-q-31",
+      "physopt-u5-q-32"
+     ]
     },
     {
      "name": "稜鏡分量與合成",
@@ -440,7 +563,13 @@
      "pitfall": "只用 tan⁻¹(Zy/Zx) 會丟失象限，Zx = 0 也不能直接相除。先明定方向基準，不能只加大小。",
      "id": "f12",
      "warmup": "1. 水平分量 3Δ、垂直分量 4Δ。\n2. 合成大小 = √(3²+4²) = √25 = 5Δ。\n3. 方向再用兩個分量的正負與角度決定。",
-     "derivation": "稜鏡效應是有方向的位移，把斜方向拆成水平、垂直，才能跟其他稜鏡相加。合成大小是直角三角形的斜邊。"
+     "derivation": "稜鏡效應是有方向的位移，把斜方向拆成水平、垂直，才能跟其他稜鏡相加。合成大小是直角三角形的斜邊。",
+     "relatedQuestions": [
+      "physopt-exam-u5-109-vt-29",
+      "physopt-exam-u5-112-vh-31",
+      "physopt-exam-u5-114-vh-26",
+      "physopt-u5-q-35"
+     ]
     },
     {
      "name": "厚度差產生的稜鏡：三式串起來",
@@ -455,7 +584,11 @@
      "pitfall": "D鏡片 是直徑，不是屈光度。g 和直徑可以同用 mm，不能一個 mm、一個 cm。",
      "id": "f13",
      "warmup": "1. 厚度差 g = 1 mm、直徑 D鏡片 = 50 mm，先算 g/D = 0.02。\n2. 空氣中 n = 1.5，偏折角約 (1.5−1)×0.02 = 0.01 rad。\n3. 稜鏡度約 100×0.01 = 1Δ。",
-     "derivation": "厚度差除以直徑給出楔角斜率；小角度時斜率等於弧度。再依稜鏡偏折 δ ≈ (n−1)A，最後換成 Z ≈ 100δ。"
+     "derivation": "厚度差除以直徑給出楔角斜率；小角度時斜率等於弧度。再依稜鏡偏折 δ ≈ (n−1)A，最後換成 Z ≈ 100δ。",
+     "relatedQuestions": [
+      "physopt-exam-u5-111-sp-46",
+      "physopt-u5-q-33"
+     ]
     },
     {
      "name": "近看時的稜鏡效益",
@@ -470,7 +603,14 @@
      "pitfall": "先確認題目 L 與 l 的量距定義，不要把 l 一律當成鏡片到角膜的頂點距離；它們的參考點不同。",
      "id": "f14",
      "warmup": "1. 物到稜鏡 L = 20 cm，稜鏡到眼旋轉中心 l = 5 cm。\n2. 效益 η = 20/(20+5) = 0.8，即 80%。\n3. 標稱 5Δ，在這個模型下有效量約 5×0.8 = 4Δ。",
-     "derivation": "近物的幾何視線會讓鏡片的稜鏡效果打折。物越遠，L 相對 l 越大，比值越接近 1；鏡片越貼近眼旋轉中心，也越接近完整標稱效果。"
+     "derivation": "近物的幾何視線會讓鏡片的稜鏡效果打折。物越遠，L 相對 l 越大，比值越接近 1；鏡片越貼近眼旋轉中心，也越接近完整標稱效果。",
+     "relatedQuestions": [
+      "physopt-exam-u5-107-vh-19",
+      "physopt-exam-u5-109-st-49",
+      "physopt-exam-u5-109-vh-11",
+      "physopt-exam-u5-112-sp-5",
+      "physopt-u5-q-34"
+     ]
     }
    ],
    "recap": "矩陣只是在同時記錄方向和高度：路上改高度、面上改方向，先發生的放右邊。找像看 C = 0，找無焦看 B = 0。光闌題把開口當成物來成像；望遠鏡把兩焦點接起來；稜鏡則給光一個幾乎與入射高度無關的固定偏折。",
