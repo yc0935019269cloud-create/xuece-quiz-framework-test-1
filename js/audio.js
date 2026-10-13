@@ -55,6 +55,9 @@ const HAPTIC = (() => {
   const sfx = name => { if (BY_SFX[name] != null) buzz(BY_SFX[name]); };
   return {
     buzz, sfx, supported: canVibrate || iOS,
+    // iOS 版本（Safari 與 iPhone 上的 Chrome 都是 WebKit）；18 以前沒有觸覺回饋
+    iosVer: (() => { const m = navigator.userAgent.match(/OS (\d+)_\d+(?:_\d+)? like Mac/); return iOS ? (m ? +m[1] : 0) : null; })(),
+    test() { const was = on; on = true; busyUntil = 0; buzz([60, 80, 60, 80, 120]); on = was; },
     get on() { return on; }, set(v) { on = !!v; try { localStorage.setItem(K, on ? '1' : '0'); } catch (e) {} if (on) buzz(30); }
   };
 })();

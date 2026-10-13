@@ -764,7 +764,8 @@ const Screens = (() => {
     const box = U.h(`<div class="vol col">
       ${[['master', '總音量'], ['music', '背景音樂'], ['sfx', '音效']].map(([k, l]) => `<label class="volrow"><span>${l}</span><input type="range" min="0" max="100" step="1" data-k="${k}" value="${Math.round(VOL.get(k) * 100)}"><b>${Math.round(VOL.get(k) * 100)}</b></label>`).join('')}
       <label class="row"><input type="checkbox" data-mute ${VOL.get('muted') ? 'checked' : ''}> 全部靜音</label>
-      ${HAPTIC.supported ? `<label class="row"><input type="checkbox" data-haptic ${HAPTIC.on ? 'checked' : ''}> 戰鬥震動</label>` : ''}
+      ${HAPTIC.supported ? `<div class="row"><label class="row"><input type="checkbox" data-haptic ${HAPTIC.on ? 'checked' : ''}> 戰鬥震動</label><button class="px-btn small" data-hapt-test>測試震動</button></div>
+      ${HAPTIC.iosVer != null && HAPTIC.iosVer > 0 && HAPTIC.iosVer < 18 ? `<p class="dim small-t">你的 iOS 是 ${HAPTIC.iosVer} 版，網頁震動需要 iOS 18 以上。</p>` : HAPTIC.iosVer != null ? '<p class="dim small-t">iPhone 需要 iOS 18 以上，並開啟「設定 → 聲音與觸覺 → 系統觸覺回饋」；iPad 沒有震動馬達。</p>' : ''}` : '<p class="dim small-t">這個瀏覽器不支援震動。</p>'}
       <div class="row now-playing"><span class="small-t">♪ <span data-track>${BGM.track}</span></span><span class="grow"></span>
         <button class="px-btn small" data-bgm="-1" title="上一首">⏮</button><button class="px-btn small" data-bgm="1" title="下一首">⏭</button><button class="px-btn small" data-bgm="set">🎵 音樂設定</button></div>
       <hr class="px" style="margin:6px 0"><b class="gold-t">白噪音</b>
@@ -779,6 +780,7 @@ const Screens = (() => {
     });
     box.querySelector('[data-mute]').onchange = e => { VOL.set('muted', e.target.checked); App.refreshTop(); };
     const hp = box.querySelector('[data-haptic]'); if (hp) hp.onchange = e => HAPTIC.set(e.target.checked);
+    const ht = box.querySelector('[data-hapt-test]'); if (ht) ht.onclick = () => HAPTIC.test();
     U.$$('[data-bgm]', box).forEach(b => b.onclick = e => {
       e.preventDefault();
       if (b.dataset.bgm === 'set') { App.go('settings'); setTimeout(() => U.$('#musicbox')?.scrollIntoView({ block: 'start' }), 50); return; }
