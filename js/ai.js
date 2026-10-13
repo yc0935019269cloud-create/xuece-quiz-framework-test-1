@@ -332,17 +332,22 @@ const AI = (() => {
     });
     U.grip(panel, { key: 'ai', minW: 300, minH: 320, mobileH: true, apply: (w, h) => { panel.style.width = w + 'px'; panel.style.height = h + 'px'; }, reset: () => { panel.style.width = panel.style.height = ''; } });
     const head = U.$('.aip-head', panel);
+    // 拖曳標題列移動（手機也可以：拖過之後就不再貼底，雙擊標題列回到原位）
     head.onpointerdown = e => {
-      if (e.target.closest('button') || matchMedia('(max-width: 640px)').matches) return;
+      if (e.target.closest('button')) return;
+      e.preventDefault();
       const r = panel.getBoundingClientRect(), dx = e.clientX - r.left, dy = e.clientY - r.top;
-      head.setPointerCapture(e.pointerId);
+      try { head.setPointerCapture(e.pointerId); } catch (err) {}
       head.onpointermove = ev => {
-        panel.style.left = U.clamp(ev.clientX - dx, 0, innerWidth - r.width) + 'px';
+        if (!panel.classList.contains('free')) { panel.classList.add('free'); if (innerWidth <= 640) panel.style.setProperty('--mh', Math.min(r.height, innerHeight - 60) + 'px'); }
+        const w = panel.getBoundingClientRect().width;
+        panel.style.left = U.clamp(ev.clientX - dx, 0, Math.max(0, innerWidth - w)) + 'px';
         panel.style.top = U.clamp(ev.clientY - dy, 0, innerHeight - 40) + 'px';
         panel.style.right = 'auto'; panel.style.bottom = 'auto';
       };
-      head.onpointerup = () => { head.onpointermove = head.onpointerup = null; };
+      head.onpointerup = head.onpointercancel = () => { head.onpointermove = head.onpointerup = head.onpointercancel = null; };
     };
+    head.ondblclick = e => { if (e.target.closest('button')) return; panel.classList.remove('free'); panel.style.left = panel.style.top = panel.style.right = panel.style.bottom = ''; };
     draw();
   }
   function toggle(show) {

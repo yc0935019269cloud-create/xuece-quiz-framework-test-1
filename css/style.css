@@ -1172,8 +1172,9 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .ai-pg { font-size: 12px; margin-top: 2px; white-space: normal; }
 .aip-in { display: flex; gap: 6px; margin-top: 6px; }
 .aip-in textarea { flex: 1; min-width: 0; resize: none; background: var(--paper); color: #1b1424; border: 3px solid var(--line); padding: 6px 8px; font: inherit; font-size: 15px; }
-@media (max-width: 640px) { .aip { left: 0 !important; right: 0; top: auto !important; bottom: 0; width: 100vw !important; height: var(--mh, min(78vh, calc(100vh - 56px))) !important; box-sizing: border-box; }
-  .aip .win-grip { top: 0; bottom: auto; left: 50%; right: auto; width: 64px; height: 18px; margin-left: -32px; cursor: ns-resize; background: linear-gradient(var(--hi), var(--hi)) center 5px / 44px 3px no-repeat, linear-gradient(var(--hi), var(--hi)) center 11px / 44px 3px no-repeat; } }
+@media (max-width: 640px) { .aip:not(.free) { left: 0 !important; right: 0; top: auto !important; bottom: 0; width: 100vw !important; height: var(--mh, min(78vh, calc(100vh - 56px))) !important; box-sizing: border-box; }
+  .aip.free { width: calc(100vw - 16px) !important; height: var(--mh, 60vh) !important; box-sizing: border-box; }
+  .aip:not(.free) .win-grip { top: 0; bottom: auto; left: 50%; right: auto; width: 64px; height: 18px; margin-left: -32px; cursor: ns-resize; background: linear-gradient(var(--hi), var(--hi)) center 5px / 44px 3px no-repeat, linear-gradient(var(--hi), var(--hi)) center 11px / 44px 3px no-repeat; } }
 
 /* 行內矩陣 [a b ; c d]（U.md） */
 .mtx { display: inline-grid; grid-template-columns: repeat(var(--n), auto); column-gap: .8em; row-gap: .05em; vertical-align: middle; margin: .15em .25em; padding: 0 .45em; line-height: 1.25; text-align: center; border-left: 2px solid currentColor; border-right: 2px solid currentColor; position: relative; }
