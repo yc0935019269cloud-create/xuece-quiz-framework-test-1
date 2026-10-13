@@ -21,6 +21,7 @@ const VOL = (() => {
 const HAPTIC = (() => {
   const K = 'haptic';
   let on = true; try { on = localStorage.getItem(K) !== '0'; } catch (e) {}
+  let busyUntil = 0, busyWeight = 0;
   const canVibrate = typeof navigator !== 'undefined' && typeof navigator.vibrate === 'function';
   const iOS = /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   function tick() {
@@ -34,6 +35,10 @@ const HAPTIC = (() => {
   function buzz(pattern) {
     if (!on) return;
     const p = [].concat(pattern);
+    // 較強的震動還沒播完時，較弱的不要蓋掉它（例如作答當下的暴擊震動，不被稍後動畫裡的普通命中打斷）
+    const now = Date.now(), weight = p.reduce((a, ms, k) => a + (k % 2 ? 0 : ms), 0);
+    if (now < busyUntil && weight < busyWeight) return;
+    busyUntil = now + p.reduce((a, b) => a + b, 0); busyWeight = weight;
     if (canVibrate) { try { navigator.vibrate(p); } catch (e) {} return; }
     if (!iOS) return;
     let t = 0;

@@ -620,6 +620,8 @@ const LEARN_UI = (() => {
       const killed = m.hp <= 0, overkill = killed && (crit || dmg - before >= 8);
       if (firstOk && B.combo % 5 === 0) setTimeout(() => addEnergy(1, `${B.combo}連擊`), 700);
       save();
+      // 震動在作答當下就送出（iPhone／iPad 的觸覺要在點擊當下觸發才有效）；強弱：普通 < 連擊 < 破防／打倒 < 暴擊
+      HAPTIC.buzz(crit ? [70, 30, 70, 30, 140] : killed ? [40, 40, 100] : tags.length ? [60, 30, 60] : B.combo >= 5 ? [35, 30, 35] : B.combo >= 2 ? 30 : 18);
       // 演出（狀態已經算好，下面只負責畫面）
       hud();
       if (firstOk && B.combo >= 2) { SFX.combo(B.combo); anim('#lbCombo', 'pop'); }
@@ -648,6 +650,7 @@ const LEARN_UI = (() => {
       let fell = false;
       if (B.hp <= 0) { B.falls++; B.hp = B.max; fell = true; }
       save();
+      HAPTIC.buzz(blocked ? 10 : fell ? [120, 50, 120, 50, 160] : wasCharged ? [90, 40, 90] : [55, 40, 25]);   // 被打：格擋最輕、蓄力一擊與倒下最重
       hud();
       if (lost >= 3) banner(`${lost} 連擊中斷`, 'dim');
       (async () => {
@@ -667,6 +670,7 @@ const LEARN_UI = (() => {
       if (m.shell) { m.shell = false; tags.push('殼碎了！'); }
       if (m.charged) { m.charged = false; tags.push('打斷蓄力！'); }
       const before = m.hp; m.hp = Math.max(0, m.hp - dmg);
+      HAPTIC.buzz([50, 30, 50, 30, 50, 30, 180]);   // 必殺技：最長最重
       if (clsId === 'knight') B.shield = 1;
       if (clsId === 'cleric') B.hp = Math.min(B.max, B.hp + 2);
       if (clsId === 'ranger') { B.combo += 2; B.maxCombo = Math.max(B.maxCombo, B.combo); }
