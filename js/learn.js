@@ -404,7 +404,7 @@ const LEARN_UI = (() => {
       <div class="lb" id="lbStage" style="--sc:${S.color}"></div>
       <div class="lpips" id="lpPips">${l.steps.map((s, i) => `<i class="t-${s.type}" data-i="${i}" data-tip="${i + 1}. ${STEP[s.type].name}"></i>`).join('')}</div>
       <div class="lp-body" id="lpBody"></div>
-      <div class="lp-foot">${petBox()}<span class="grow"></span><button class="px-btn" id="lpPrev" hidden title="回上一頁（看過的頁面可以點上方色條直接跳）">◀ 上一頁</button><button class="px-btn gold big" id="lpNext" disabled>繼續 ▶</button></div></div>`;
+      <div class="lp-foot">${petBox()}<span class="grow"></span><button class="px-btn lp-prev" id="lpPrev" hidden title="回上一頁（看過的頁面可以點上方色條直接跳）" aria-label="上一頁"><span class="lp-prev-ic">‹</span><span class="lp-prev-tx">上一頁</span></button><button class="px-btn gold big" id="lpNext" disabled>繼續 ▶</button></div></div>`;
     U.$('#lpExit').onclick = () => { SFX.play('click'); cleanup(); save(); packView(p); };
     cur = { p, l, st, el: U.$('#lpBody'), boss: null, done: false, shown: 0 };
     const next = U.$('#lpNext');
