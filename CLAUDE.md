@@ -229,3 +229,9 @@
 - 使用者指定學習模式的知識筆記，且第六單元先不做。第一～第五單元「考前必看」20 組公式新增預設收合的相關題連結，共 378 次連結（343 題不重複題目），使用既有 evidence.questionIds 與 Store.Q；第六單元不新增連結，不改題庫或生成資料。
 - `js/learn.js` 的 `.cram-related` 是獨立 details，展開才載入列表，不跟筆記全部展開／搜尋自動展開，重載回到收合。點連結呼叫 `QV.previewModal`（js/question.js），完整顯示題幹、文字選項、圖片／題組與答案詳解，不呼叫 render 或 Store.record。Esc／關閉回到連結，Tab 留在視窗內，事件相容 iOS hap-sw 子 input。
 - QA：Edge iPad 路徑 73 項、桌機 93 項（含 390px）、全部 JS 語法與嚴格內容檢查通過；全部來源連結有效，逐組實測開關與詳解，閱讀不改作答／錯題／學習紀錄／獎勵。一次性 context 備份還原 localStorage；HTTP 測試，未做實機 iPad 或本輪 file:// 測試。工具與重跑方式：tools/exam-related-qa/；摘要與截圖：output/playwright/exam-related-*。
+
+## 平板知識筆記題目視窗捲動修正（2026-10-13，v93）
+
+- 依使用者 iPad 截圖修正相關題閱讀視窗；同題 physopt-exam-u5-107-sp-49 在舊版外層捲動後標題 top −65px、關閉鍵 −73px，可重現標題被裁掉。QV.previewModal 改用 U.modal 的 contained 選項，只讓內容區捲動、標題與關閉鍵固定，VisualViewport 同步可見高度／偏移，背景固定並保存原捲動位置。
+- 關閉還原 body／html 原 inline styles 與清單位置；巢狀鎖定計數、重複關閉保護、observer 外部移除清理。App.go 用 U.clearModals 清掉閱讀視窗後再切頁，避免離開後頁面仍鎖定。一般視窗維持原佈局，題庫和第六單元內容未改；index.html 所有快取版本 v93。
+- QA：Edge iPad 路徑與桌機各 25 項（同題長詳解、橫直轉向、390px、可見視窗收縮／偏移 fixture、關閉／Esc／巢狀／切頁／外部移除）、原相關題 iPad 路徑 73 項回歸通過；全 JS 語法與嚴格建置檢查通過。獨立 context 還原 localStorage，HTTP 模擬，未做實機 iPadOS／Safari 或本輪 file:// 驗證。工具 tools/modal-viewport-qa/，結果與截圖 output/playwright/modal-viewport-*。

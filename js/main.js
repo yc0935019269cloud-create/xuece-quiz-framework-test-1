@@ -10,7 +10,7 @@ const App = (() => {
   function go(name, arg) {
     RunUI.stopTimer && RunUI.stopTimer();
     typeof LEARN_UI !== 'undefined' && LEARN_UI.leave();
-    U.$('#modalRoot').innerHTML = '';
+    U.clearModals();
     closeVol();
     U.$('#topTitle').textContent = TITLES[name] || APP_TITLE;
     window.scrollTo(0, 0);

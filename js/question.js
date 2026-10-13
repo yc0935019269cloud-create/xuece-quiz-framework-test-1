@@ -230,7 +230,7 @@ const QV = (() => {
   // 純閱讀：直接看選項、答案與詳解，不呼叫 render／Store.record。
   function previewModal(q) {
     const opener = document.activeElement;
-    const m = U.modal({ title: '相關題目與詳解', body: `<div class="qwrap">${metaHTML(q)}${bodyHTML(q, true)}${explainHTML(q)}</div>`,
+    const m = U.modal({ title: '相關題目與詳解', contained: true, body: `<div class="qwrap">${metaHTML(q)}${bodyHTML(q, true)}${explainHTML(q)}</div>`,
       onClose: () => { document.removeEventListener('keydown', onKey); if (opener?.isConnected) opener.focus({ preventScroll: true }); } });
     m.el.classList.add('qpreview-modal');
     m.el.setAttribute('role', 'dialog'); m.el.setAttribute('aria-modal', 'true'); m.el.setAttribute('aria-label', '相關題目與詳解'); m.el.tabIndex = -1;

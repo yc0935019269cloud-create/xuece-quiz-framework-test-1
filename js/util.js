@@ -93,18 +93,60 @@ const U = (() => {
     setTimeout(() => t.remove(), ms || 2600);
   }
 
-  /* modal({title, body(html|node), buttons:[{label, cls, onClick, close}], narrow, closable}) */
+  let scrollLocks = 0, scrollSnapshot;
+  const containedModals = new Set();
+  function lockPageScroll() {
+    if (scrollLocks++ === 0) {
+      const props = [[document.body, ['position', 'top', 'left', 'width', 'overflow']], [document.documentElement, ['overflow', 'scroll-behavior']]];
+      scrollSnapshot = { x: scrollX, y: scrollY, styles: props.flatMap(([el, names]) => names.map(name => [el, name, el.style.getPropertyValue(name), el.style.getPropertyPriority(name)])) };
+      document.documentElement.style.setProperty('scroll-behavior', 'auto');
+      document.documentElement.style.setProperty('overflow', 'hidden');
+      Object.assign(document.body.style, { position: 'fixed', top: -scrollSnapshot.y + 'px', left: -scrollSnapshot.x + 'px', width: '100%', overflow: 'hidden' });
+    }
+    let released = false;
+    return () => {
+      if (released) return; released = true;
+      if (--scrollLocks) return;
+      const snapshot = scrollSnapshot; scrollSnapshot = null;
+      snapshot.styles.filter(([, name]) => name !== 'scroll-behavior').forEach(([el, name, value, priority]) => value ? el.style.setProperty(name, value, priority) : el.style.removeProperty(name));
+      window.scrollTo(snapshot.x, snapshot.y);
+      const [el, name, value, priority] = snapshot.styles.find(([, name]) => name === 'scroll-behavior');
+      value ? el.style.setProperty(name, value, priority) : el.style.removeProperty(name);
+    };
+  }
+  function containModal(bg, close) {
+    const unlock = lockPageScroll(), viewport = window.visualViewport, root = $('#modalRoot');
+    const fit = () => {
+      const v = viewport;
+      Object.assign(bg.style, { top: (v?.offsetTop || 0) + 'px', left: (v?.offsetLeft || 0) + 'px', width: (v?.width || innerWidth) + 'px', height: (v?.height || innerHeight) + 'px' });
+    };
+    const observer = new MutationObserver(() => { if (!bg.isConnected) close(); });
+    observer.observe(root, { childList: true });
+    containedModals.add(close);
+    window.addEventListener('resize', fit); viewport?.addEventListener('resize', fit); viewport?.addEventListener('scroll', fit); fit();
+    return () => {
+      observer.disconnect(); containedModals.delete(close);
+      window.removeEventListener('resize', fit); viewport?.removeEventListener('resize', fit); viewport?.removeEventListener('scroll', fit); unlock();
+    };
+  }
+  function clearModals() { [...containedModals].forEach(close => close()); $('#modalRoot').replaceChildren(); }
+
+  /* modal({title, body(html|node), buttons:[{label, cls, onClick, close}], narrow, closable, contained}) */
   function modal(opt) {
-    const bg = h(`<div class="modal-bg"><div class="modal panel ${opt.narrow ? 'narrow' : ''}"></div></div>`);
+    const bg = h(`<div class="modal-bg ${opt.contained ? 'modal-contained' : ''}"><div class="modal panel ${opt.narrow ? 'narrow' : ''}"></div></div>`);
     const box = bg.firstElementChild;
-    if (opt.title) box.appendChild(h(`<h2>${opt.title}</h2>`));
+    const header = opt.contained ? h('<div class="modal-header"></div>') : box;
+    if (opt.contained) box.appendChild(header);
+    if (opt.title) header.appendChild(h(`<h2>${opt.title}</h2>`));
     const body = document.createElement('div');
+    if (opt.contained) body.className = 'modal-scroll';
     if (typeof opt.body === 'string') body.innerHTML = opt.body; else if (opt.body) body.appendChild(opt.body);
     box.appendChild(body);
-    const close = () => { bg.remove(); opt.onClose && opt.onClose(); };
+    let cleanup = () => {}, closed = false;
+    const close = () => { if (closed) return; closed = true; cleanup(); bg.remove(); opt.onClose && opt.onClose(); };
     if (opt.closable !== false) {
-      const x = h(`<button class="px-btn small close">✕</button>`);
-      x.onclick = close; box.appendChild(x);
+      const x = h(`<button class="px-btn small close" aria-label="關閉視窗">✕</button>`);
+      x.onclick = close; header.appendChild(x);
       bg.addEventListener('mousedown', e => { if (e.target === bg) close(); });
     }
     if (opt.buttons && opt.buttons.length) {
@@ -117,6 +159,7 @@ const U = (() => {
       box.appendChild(row);
     }
     $('#modalRoot').appendChild(bg);
+    if (opt.contained) cleanup = containModal(bg, close);
     return { el: box, body, close };
   }
   function confirm(title, msg) {
@@ -208,7 +251,7 @@ const U = (() => {
     });
     g.addEventListener('dblclick', e => { e.preventDefault(); put(null); panel.style.removeProperty('--mh'); opt.reset(); });
   }
-  return { img, sameAns, $, $$, esc, h, rnd, chance, pick, shuffle, pickN, clamp, sleep, pct, md, toast, modal, confirm, grip };
+  return { img, sameAns, $, $$, esc, h, rnd, chance, pick, shuffle, pickN, clamp, sleep, pct, md, toast, modal, clearModals, confirm, grip };
 })();
 
 /* 懸停提示：有 data-tip 或 title 的元素，滑鼠移上去立即顯示像素風提示框（手機點一下顯示） */
