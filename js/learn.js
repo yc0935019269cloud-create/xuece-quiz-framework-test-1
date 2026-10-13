@@ -402,9 +402,9 @@ const LEARN_UI = (() => {
         <div class="grow lp-title"><small>${U.esc(p.title)}</small><b>${U.esc(l.title)}</b></div>
         <button class="px-btn small" id="lpBattle" title="戰鬥模式：答對攻擊、答錯被反擊（不影響學習進度）">${D.cfg.battle ? '⚔ 戰鬥中' : '🕊 平靜模式'}</button><span class="lp-cnt" id="lpCnt"></span></div>
       <div class="lb" id="lbStage" style="--sc:${S.color}"></div>
-      <div class="lpips" id="lpPips">${l.steps.map((s, i) => `<i class="t-${s.type}" data-tip="${i + 1}. ${STEP[s.type].name}"></i>`).join('')}</div>
+      <div class="lpips" id="lpPips">${l.steps.map((s, i) => `<i class="t-${s.type}" data-i="${i}" data-tip="${i + 1}. ${STEP[s.type].name}"></i>`).join('')}</div>
       <div class="lp-body" id="lpBody"></div>
-      <div class="lp-foot">${petBox()}<span class="grow"></span><button class="px-btn gold big" id="lpNext" disabled>繼續 ▶</button></div></div>`;
+      <div class="lp-foot">${petBox()}<span class="grow"></span><button class="px-btn" id="lpPrev" hidden title="回上一頁（看過的頁面可以點上方色條直接跳）">◀ 上一頁</button><button class="px-btn gold big" id="lpNext" disabled>繼續 ▶</button></div></div>`;
     U.$('#lpExit').onclick = () => { SFX.play('click'); cleanup(); save(); packView(p); };
     cur = { p, l, st, el: U.$('#lpBody'), boss: null, done: false, shown: 0 };
     const next = U.$('#lpNext');
@@ -417,6 +417,25 @@ const LEARN_UI = (() => {
     };
     document.addEventListener('keydown', keyH);
     const R = st.run;
+    /* 回上一頁／跳頁：R.far＝目前做到的最遠一步。回到看過的頁面是「回顧」：可以重看、重答，但不計分、不打怪、不進複習盒；
+     * 回到最遠那一步時，實戰會接著原本做到的那一題（R.farSub）。 */
+    R.far = Math.max(R.far || 0, st.i);
+    let inBoss = false;
+    const prev = U.$('#lpPrev');
+    function goTo(i) {
+      if (inBoss || i < 0 || i > R.far || i === st.i || i >= l.steps.length) return;
+      if (st.i === R.far) R.farSub = R.sub;
+      st.i = i; R.sub = i === R.far ? (R.farSub || 0) : 0; save(); SFX.play('click'); step();
+    }
+    function advance() {
+      if (st.i === R.far) R.farSub = 0;
+      st.i++;
+      if (st.i > R.far) { R.far = st.i; R.farSub = 0; }
+      R.sub = st.i === R.far ? (R.farSub || 0) : 0;
+      save(); if (st.i >= l.steps.length) bossOrFinish(); else step();
+    }
+    prev.onclick = () => goTo(st.i - 1);
+    U.$$('#lpPips i').forEach(x => x.onclick = () => goTo(+x.dataset.i));
     const ready = (label) => { next.disabled = false; if (label) next.textContent = label; };
     const tally = (firstOk) => { R.n++; if (firstOk) R.ok++; D.stat.checks++; if (firstOk) D.stat.right++; battleItem(firstOk); save(); };
 
@@ -736,16 +755,18 @@ const LEARN_UI = (() => {
       cleanupQ();
       const s = l.steps[st.i];
       U.$('#lpCnt').textContent = `${st.i + 1} / ${l.steps.length}`;
-      U.$$('#lpPips i').forEach((x, i) => { x.classList.toggle('on', i < st.i); x.classList.toggle('cur', i === st.i); });
+      const review = st.i < R.far;
+      U.$$('#lpPips i').forEach((x, i) => { x.classList.toggle('on', i < st.i); x.classList.toggle('cur', i === st.i); x.classList.toggle('seen', i <= R.far && i !== st.i); });
+      prev.hidden = st.i === 0;
       const body = U.$('#lpBody');
       body._key = null;
       body.className = 'lp-body t-' + s.type;
       next.disabled = true; next.textContent = st.i === l.steps.length - 1 ? '完成本課 ✔' : '繼續 ▶';
-      next.onclick = () => { SFX.play('click'); st.i++; R.sub = 0; save(); if (st.i >= l.steps.length) bossOrFinish(); else step(); };
-      if (s.type !== 'practice') say(U.pick(LINES[s.type]));
-      const head = `<div class="lp-type">${STEP[s.type].ic} ${STEP[s.type].name}</div>`;
+      next.onclick = () => { SFX.play('click'); advance(); };
+      if (s.type !== 'practice') say(review ? '回顧一下～看完按「繼續」往下。' : U.pick(LINES[s.type]));
+      const head = `<div class="lp-type">${STEP[s.type].ic} ${STEP[s.type].name}</div>${review ? '<span class="tag lp-rv">🔁 回顧中・作答不計分</span>' : ''}`;
       window.scrollTo(0, 0);
-      enterSeg();
+      if (!review) enterSeg();
       if (s.type === 'card' || s.type === 'interactive') gainEnergy();
       pageMoved({ boss: null, done: false, shown: 0 });
 
@@ -761,10 +782,11 @@ const LEARN_UI = (() => {
       } else if (s.type === 'check') {
         body.innerHTML = head + '<div class="lc"></div>';
         const box = body.querySelector('.lc');
-        renderCheck(box, s, { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(s.id, true); save(); ready(); next.focus(); pageMoved({ done: true }); } });
+        renderCheck(box, s, review ? { onDone: () => { ready(); pageMoved({ done: true }); } }
+          : { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(s.id, true); save(); ready(); next.focus(); pageMoved({ done: true }); } });
         body._key = e => box._key ? box._key(e) : false;
       } else if (s.type === 'diagram') {
-        renderDiagram(body, head, s, `${p.id}/${l.id}/${st.i}`, {
+        renderDiagram(body, head, s, `${p.id}/${l.id}/${st.i}`, review ? { onItem: () => {}, onWrong: () => {}, onDone: () => ready() } : {
           onItem: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); },
           onWrong: onWrongHit, onDone: () => { save(); ready(); next.focus(); }
         });
@@ -803,16 +825,16 @@ const LEARN_UI = (() => {
           const box = body.querySelector('.lp-q');
           say(it.q ? U.pick(LINES.practice) : '這題是自編的練習題！');
           pageMoved({ done: false });
-          next.disabled = true;
+          next.disabled = !review;
           next.textContent = last ? (st.i === l.steps.length - 1 ? '完成本課 ✔' : '繼續 ▶') : '下一題 ▶';
-          next.onclick = () => { SFX.play('click'); if (!last) { R.sub++; save(); sub(); } else { st.i++; R.sub = 0; save(); if (st.i >= l.steps.length) bossOrFinish(); else step(); } };
+          next.onclick = () => { SFX.play('click'); if (!last) { R.sub++; save(); sub(); } else advance(); };
           if (it.q) {
             const q = Store.Q[it.q];
-            ctl = QV.render(box, q, { mode: 'learn', onAnswer: res => { Store.record(q.id, res.ok); SFX.play(res.ok ? 'correct' : 'wrong'); say(res.ok ? U.pick(LINES.ok) : '這題已經收進錯題本，之後可以重刷。'); tally(res.ok); if (res.ok) onRightHit(true); else onWrongHit(); ready(); pageMoved({ done: true }); } });
+            ctl = QV.render(box, q, { mode: 'learn', onAnswer: res => { if (review) { SFX.play(res.ok ? 'correct' : 'wrong'); ready(); return; } Store.record(q.id, res.ok); SFX.play(res.ok ? 'correct' : 'wrong'); say(res.ok ? U.pick(LINES.ok) : '這題已經收進錯題本，之後可以重刷。'); tally(res.ok); if (res.ok) onRightHit(true); else onWrongHit(); ready(); pageMoved({ done: true }); } });
             body._key = null;
           } else {
             const c = s.checks[it.c];
-            renderCheck(box, c, { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(c.id, true); save(); ready(); next.focus(); pageMoved({ done: true }); } });
+            renderCheck(box, c, review ? { onDone: () => ready() } : { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(c.id, true); save(); ready(); next.focus(); pageMoved({ done: true }); } });
             body._key = e => box._key ? box._key(e) : false;
           }
         }
@@ -823,6 +845,7 @@ const LEARN_UI = (() => {
         U.$$('.flash', body).forEach(f => f.onclick = () => { f.classList.toggle('flip'); SFX.play('click'); });
         ready('完成本課 ✔');
       }
+      if (review) next.disabled = false;   // 回顧的頁面隨時可以往下
     }
 
     /* 課末魔王：從本課的檢核題抽 3～5 題，不給提示 */
@@ -830,6 +853,7 @@ const LEARN_UI = (() => {
       const pool = [];
       l.steps.forEach(x => { if (x.type === 'check') pool.push(x); if (x.type === 'practice') (x.checks || []).forEach(c => pool.push(c)); });
       for (let i = pool.length - 1; i >= 0; i--) if (ctxDep(pool[i])) pool.splice(i, 1);
+      inBoss = true; prev.hidden = true;
       if (!D.cfg.battle || pool.length < 2 || B.bossDone) return finish();
       const qs = U.shuffle(pool).slice(0, Math.min(5, Math.max(3, Math.ceil(pool.length / 2))));
       const th = C.bossTheme(p.subject), bd = U.pick(C.BOSS_DEFS[th]);
