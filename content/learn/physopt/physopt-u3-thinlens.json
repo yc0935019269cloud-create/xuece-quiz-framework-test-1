@@ -27,6 +27,241 @@
  ],
  "notes": [
   {
+   "id": "exam-cram",
+   "kind": "exam-cram",
+   "title": "考前必看",
+   "intro": "先記這幾個：公式、什麼時候用、最容易錯在哪裡。想看原理與例子，再往下看「公式統整」。",
+   "items": [
+    {
+     "id": "maker",
+     "name": "薄透鏡兩面力量相加",
+     "equations": [
+      "P = P₁+P₂ = (n−1)(1/r₁−1/r₂)"
+     ],
+     "use": "空氣中薄鏡：由兩面半徑求度數或材質 n。",
+     "tip": "r₁、r₂ 都有方向；典型雙凸鏡 r₁正、r₂負；半徑用 m。",
+     "evidence": {
+      "count": 39,
+      "questionIds": [
+       "physopt-exam-u3-106-sp-22",
+       "physopt-exam-u3-106-st-9",
+       "physopt-exam-u3-106-vh-10",
+       "physopt-exam-u3-106-vh-20",
+       "physopt-exam-u3-106-vt-17",
+       "physopt-exam-u3-106-vt-38",
+       "physopt-exam-u3-107-st-11",
+       "physopt-exam-u3-107-st-15",
+       "physopt-exam-u3-107-vh-11",
+       "physopt-exam-u3-107-vh-17",
+       "physopt-exam-u3-107-vh-25",
+       "physopt-exam-u3-107-vt-14",
+       "physopt-exam-u3-107-vt-50",
+       "physopt-exam-u3-108-sp-14",
+       "physopt-exam-u3-108-sp-29",
+       "physopt-exam-u3-108-vh-2",
+       "physopt-exam-u3-108-vh-15",
+       "physopt-exam-u3-108-vh-26",
+       "physopt-exam-u3-108-vt-17",
+       "physopt-exam-u3-109-st-11",
+       "physopt-exam-u3-109-st-27",
+       "physopt-exam-u3-109-vt-1",
+       "physopt-exam-u3-109-vt-8",
+       "physopt-exam-u3-109-vt-17",
+       "physopt-exam-u3-109-vt-24",
+       "physopt-exam-u3-110-sp-16",
+       "physopt-exam-u3-110-sp-19",
+       "physopt-exam-u3-110-sp-32",
+       "physopt-exam-u3-110-vh-14",
+       "physopt-exam-u3-111-sp-24",
+       "physopt-exam-u3-111-sp-28",
+       "physopt-exam-u3-111-vh-10",
+       "physopt-exam-u3-111-vh-23",
+       "physopt-exam-u3-111-vh-36",
+       "physopt-exam-u3-112-sp-19",
+       "physopt-exam-u3-112-sp-24",
+       "physopt-exam-u3-113-vh-12",
+       "physopt-exam-u3-113-vh-20",
+       "physopt-exam-u3-114-sp-8"
+      ],
+      "years": [
+       106,
+       107,
+       108,
+       109,
+       110,
+       111,
+       112,
+       113,
+       114
+      ]
+     }
+    },
+    {
+     "id": "imaging",
+     "name": "薄透鏡成像三步",
+     "equations": [
+      "U = 1/u → V = P+U → v = 1/V"
+     ],
+     "use": "求像距、實像／虛像，或反求透鏡。",
+     "tip": "空氣且距離用 m；V>0 實像，V<0 虛像，V=0 像在無限遠。",
+     "evidence": {
+      "count": 32,
+      "questionIds": [
+       "physopt-exam-u3-106-sp-3",
+       "physopt-exam-u3-106-st-18",
+       "physopt-exam-u3-106-st-26",
+       "physopt-exam-u3-106-st-28",
+       "physopt-exam-u3-106-st-32",
+       "physopt-exam-u3-106-vt-1",
+       "physopt-exam-u3-106-vt-36",
+       "physopt-exam-u3-107-sp-8",
+       "physopt-exam-u3-107-sp-22",
+       "physopt-exam-u3-107-st-9",
+       "physopt-exam-u3-107-st-12",
+       "physopt-exam-u3-107-vh-24",
+       "physopt-exam-u3-107-vt-8",
+       "physopt-exam-u3-107-vt-19",
+       "physopt-exam-u3-108-st-1",
+       "physopt-exam-u3-108-st-8",
+       "physopt-exam-u3-108-st-22",
+       "physopt-exam-u3-108-vh-3",
+       "physopt-exam-u3-108-vh-7",
+       "physopt-exam-u3-108-vt-9",
+       "physopt-exam-u3-109-sp-5",
+       "physopt-exam-u3-109-sp-12",
+       "physopt-exam-u3-109-st-6",
+       "physopt-exam-u3-109-st-28",
+       "physopt-exam-u3-109-vh-6",
+       "physopt-exam-u3-109-vh-26",
+       "physopt-exam-u3-109-vt-11",
+       "physopt-exam-u3-110-sp-10",
+       "physopt-exam-u3-111-sp-18",
+       "physopt-exam-u3-111-sp-20",
+       "physopt-exam-u3-111-vh-15",
+       "physopt-exam-u3-113-sp-12"
+      ],
+      "years": [
+       106,
+       107,
+       108,
+       109,
+       110,
+       111,
+       113
+      ]
+     }
+    },
+    {
+     "id": "focus",
+     "name": "焦距與屈光力",
+     "equations": [
+      "f₂ = 1/P、f₁ = −1/P",
+      "f₂(cm) = 100/P(D)"
+     ],
+     "use": "度數換焦距、找前後焦點。",
+     "tip": "空氣中才直接用 1/P；正負號保留位置資訊。",
+     "evidence": {
+      "count": 14,
+      "questionIds": [
+       "physopt-exam-u3-107-sp-14",
+       "physopt-exam-u3-107-st-14",
+       "physopt-exam-u3-107-st-16",
+       "physopt-exam-u3-107-vh-18",
+       "physopt-exam-u3-107-vh-26",
+       "physopt-exam-u3-108-st-14",
+       "physopt-exam-u3-108-st-16",
+       "physopt-exam-u3-108-vt-3",
+       "physopt-exam-u3-109-vh-18",
+       "physopt-exam-u3-111-sp-23",
+       "physopt-exam-u3-112-sp-16",
+       "physopt-exam-u3-113-sp-20",
+       "physopt-exam-u3-113-vh-2",
+       "physopt-exam-u3-114-sp-8"
+      ],
+      "years": [
+       107,
+       108,
+       109,
+       111,
+       112,
+       113,
+       114
+      ]
+     }
+    },
+    {
+     "id": "magnification",
+     "name": "放大率",
+     "equations": [
+      "m = U/V = v/u、I = mO"
+     ],
+     "use": "判斷像的正倒、大小或算像高。",
+     "tip": "m<0 倒立；|m|>1 放大。v/u 這一形式限兩側 n 相同。",
+     "evidence": {
+      "count": 9,
+      "questionIds": [
+       "physopt-exam-u3-106-sp-3",
+       "physopt-exam-u3-106-vt-1",
+       "physopt-exam-u3-107-st-12",
+       "physopt-exam-u3-108-vh-7",
+       "physopt-exam-u3-109-sp-13",
+       "physopt-exam-u3-109-vt-11",
+       "physopt-exam-u3-110-vh-16",
+       "physopt-exam-u3-111-sp-18",
+       "physopt-exam-u3-111-vh-7"
+      ],
+      "years": [
+       106,
+       107,
+       108,
+       109,
+       110,
+       111
+      ]
+     }
+    },
+    {
+     "id": "twice-focus",
+     "name": "等大倒像：對稱點",
+     "equations": [
+      "u = 2f₁、v = 2f₂、m = −1"
+     ],
+     "use": "題目說「等大倒立」就想到兩倍焦距。",
+     "tip": "兩側同介質；負鏡也有對稱點，但可能是虛物、虛像。",
+     "evidence": {
+      "count": 8,
+      "questionIds": [
+       "physopt-exam-u3-106-st-26",
+       "physopt-exam-u3-106-vt-36",
+       "physopt-exam-u3-107-vh-24",
+       "physopt-exam-u3-108-vh-3",
+       "physopt-exam-u3-109-vh-6",
+       "physopt-exam-u3-110-sp-10",
+       "physopt-exam-u3-111-vh-5",
+       "physopt-exam-u3-113-sp-12"
+      ],
+      "years": [
+       106,
+       107,
+       108,
+       109,
+       110,
+       111,
+       113
+      ]
+     }
+    }
+   ],
+   "reminders": "**先判再算**：正負號 → 公尺 → U→V→v → m；中間少取位，最後才四捨五入。",
+   "source": "依 106～114 年已收錄的 421 題國考選題整理；相關題依考點標記統計，含觀念題。",
+   "references": [
+    {
+     "title": "考選部歷年試題",
+     "url": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+    }
+   ]
+  },
+  {
    "intro": "不用一次背完。先看公式清單，挑一組點開：**生活畫面 → 簡單數字 → 正式例子 → 一行記法**。\n\n薄透鏡的成像不用背成一大堆互不相干的情況。核心只有 V = P + U；焦點、放大鏡、負透鏡與對稱點，都是這個式子的不同結果。",
    "conventions": "- 本整理的數值例採空氣中薄透鏡：n = 1，距離從透鏡平面量。\n- 光由左往右：u < 0 通常是前方實物，u > 0 是後方虛物；v > 0 是後方實像，v < 0 是前方虛像。\n- P 用 D，u、v、f 用 m；若距離寫 cm，要在分子使用 100。\n- m 是有符號的橫向放大率，不是單純大小比。",
    "formulas": [

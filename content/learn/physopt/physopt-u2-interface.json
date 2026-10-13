@@ -29,6 +29,201 @@
  ],
  "notes": [
   {
+   "id": "exam-cram",
+   "kind": "exam-cram",
+   "title": "考前必看",
+   "intro": "先記這幾個：公式、什麼時候用、最容易錯在哪裡。想看原理與例子，再往下看「公式統整」。",
+   "items": [
+    {
+     "id": "surface",
+     "name": "球面介面屈光力＋成像",
+     "equations": [
+      "P = (n₂−n₁)/r",
+      "U = n₁/u → V = P+U → v = n₂/V"
+     ],
+     "use": "給折射率、半徑求力量，或再算像在哪裡。",
+     "tip": "後 n 減前 n；r 用 m、朝光前進的球心為正。",
+     "evidence": {
+      "count": 34,
+      "questionIds": [
+       "physopt-exam-u2-107-sp-21",
+       "physopt-exam-u2-107-st-17",
+       "physopt-exam-u2-107-vh-2",
+       "physopt-exam-u2-107-vh-15",
+       "physopt-exam-u2-107-vh-16",
+       "physopt-exam-u2-107-vh-21",
+       "physopt-exam-u2-107-vt-3",
+       "physopt-exam-u2-108-sp-13",
+       "physopt-exam-u2-108-st-2",
+       "physopt-exam-u2-108-st-18",
+       "physopt-exam-u2-108-st-30",
+       "physopt-exam-u2-108-vt-21",
+       "physopt-exam-u2-108-vt-36",
+       "physopt-exam-u2-108-vt-38",
+       "physopt-exam-u2-109-sp-28",
+       "physopt-exam-u2-109-sp-30",
+       "physopt-exam-u2-109-st-20",
+       "physopt-exam-u2-109-st-21",
+       "physopt-exam-u2-109-vh-10",
+       "physopt-exam-u2-109-vh-37",
+       "physopt-exam-u2-109-vt-16",
+       "physopt-exam-u2-109-vt-18",
+       "physopt-exam-u2-109-vt-25",
+       "physopt-exam-u2-110-sp-3",
+       "physopt-exam-u2-110-sp-26",
+       "physopt-exam-u2-110-sp-35",
+       "physopt-exam-u2-111-vh-31",
+       "physopt-exam-u2-112-sp-6",
+       "physopt-exam-u2-112-sp-21",
+       "physopt-exam-u2-112-sp-49",
+       "physopt-exam-u2-112-vh-10",
+       "physopt-exam-u2-113-sp-9",
+       "physopt-exam-u2-113-vh-35",
+       "physopt-exam-u2-114-sp-27"
+      ],
+      "years": [
+       107,
+       108,
+       109,
+       110,
+       111,
+       112,
+       113,
+       114
+      ]
+     }
+    },
+    {
+     "id": "snell",
+     "name": "Snell 定律",
+     "equations": [
+      "n₁sinθ₁ = n₂sinθ₂"
+     ],
+     "use": "求折射角或未知折射率。",
+     "tip": "角度從法線量；與介面夾角 α 要先換成 90°−α。",
+     "evidence": {
+      "count": 18,
+      "questionIds": [
+       "physopt-exam-u2-106-sp-6",
+       "physopt-exam-u2-106-st-31",
+       "physopt-exam-u2-107-sp-10",
+       "physopt-exam-u2-107-sp-12",
+       "physopt-exam-u2-107-vt-1",
+       "physopt-exam-u2-107-vt-15",
+       "physopt-exam-u2-109-sp-10",
+       "physopt-exam-u2-109-vh-9",
+       "physopt-exam-u2-110-sp-14",
+       "physopt-exam-u2-110-vh-13",
+       "physopt-exam-u2-111-sp-13",
+       "physopt-exam-u2-112-sp-9",
+       "physopt-exam-u2-112-vh-18",
+       "physopt-exam-u2-113-sp-11",
+       "physopt-exam-u2-113-sp-18",
+       "physopt-exam-u2-113-vh-15",
+       "physopt-exam-u2-114-sp-16",
+       "physopt-exam-u2-114-vh-16"
+      ],
+      "years": [
+       106,
+       107,
+       109,
+       110,
+       111,
+       112,
+       113,
+       114
+      ]
+     }
+    },
+    {
+     "id": "critical",
+     "name": "全反射與臨界角",
+     "equations": [
+      "θc = sin⁻¹(n低/n高)"
+     ],
+     "use": "找臨界角、判斷是否全反射。",
+     "tip": "只限高 n→低 n；超過 θc 才全反射，等於時是掠射邊界。",
+     "evidence": {
+      "count": 12,
+      "questionIds": [
+       "physopt-exam-u2-106-sp-8",
+       "physopt-exam-u2-106-vt-11",
+       "physopt-exam-u2-107-sp-12",
+       "physopt-exam-u2-107-sp-20",
+       "physopt-exam-u2-107-vt-15",
+       "physopt-exam-u2-108-vh-9",
+       "physopt-exam-u2-108-vt-18",
+       "physopt-exam-u2-109-vh-22",
+       "physopt-exam-u2-111-sp-12",
+       "physopt-exam-u2-111-sp-14",
+       "physopt-exam-u2-112-sp-11",
+       "physopt-exam-u2-112-vh-9"
+      ],
+      "years": [
+       106,
+       107,
+       108,
+       109,
+       111,
+       112
+      ]
+     }
+    },
+    {
+     "id": "sag",
+     "name": "弧高近似",
+     "equations": [
+      "s ≈ y²/(2|r|)"
+     ],
+     "use": "由口徑與半徑估表面深度或厚度差。",
+     "tip": "y 是半口徑，不是直徑；各長度同單位，且 y≪|r|。",
+     "evidence": {
+      "count": 4,
+      "questionIds": [
+       "physopt-exam-u2-108-sp-22",
+       "physopt-exam-u2-108-vt-13",
+       "physopt-exam-u2-110-sp-26",
+       "physopt-exam-u2-114-sp-24"
+      ],
+      "years": [
+       108,
+       110,
+       114
+      ]
+     }
+    },
+    {
+     "id": "depth",
+     "name": "視深",
+     "equations": [
+      "視深 ≈ 實深 × n觀察側/n物體側"
+     ],
+     "use": "算水中物體看起來多深。",
+     "tip": "接近法線看才用此近似；從空氣看水底通常變淺。",
+     "evidence": {
+      "count": 3,
+      "questionIds": [
+       "physopt-exam-u2-107-vh-10",
+       "physopt-exam-u2-108-vh-23",
+       "physopt-exam-u2-108-vt-10"
+      ],
+      "years": [
+       107,
+       108
+      ]
+     }
+    }
+   ],
+   "reminders": "**解題順序**：角度題先畫法線；成像題先 P，再 U→V→v。",
+   "source": "依 106～114 年已收錄的 421 題國考選題整理；相關題依考點標記統計，含觀念題。",
+   "references": [
+    {
+     "title": "考選部歷年試題",
+     "url": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+    }
+   ]
+  },
+  {
    "intro": "不用一次背完。先看公式清單，挑一組點開：**生活畫面 → 簡單數字 → 正式例子 → 一行記法**。\n\n本單元的主線是「先量對角度 → 算轉彎 → 在近軸條件下改用聚散度」。角度公式與距離公式不是兩套互不相干的東西；它們描述的是同一次折射。",
    "conventions": "- 入射角、反射角、折射角都從法線量。若題目給和介面的夾角，要先取互餘角。\n- n₁ 是入射側，n₂ 是出射側；r 由頂點指向曲率中心，和光前進方向相同為正。\n- u、v、r 用 m，屈光力 P 用 D。球面介面的距離從頂點量。\n- 近軸近似要求小角度，直接以 θ 代 sinθ 或 tanθ 時，θ 必須用弧度。",
    "formulas": [

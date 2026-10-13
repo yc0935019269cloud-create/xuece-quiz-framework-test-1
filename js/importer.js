@@ -115,7 +115,12 @@ const IMP = (() => {
       const p = i.data; if (!C.SUBJECTS[p.subject]) C.addSubject({ id: p.subject, name: p.subject, theme: 'mix' });
       const k = L.packs.findIndex(x => x.id === p.id);
       // 舊導入檔沒有單元筆記時，保留新版內建的統整；明確 notes: [] 則照導入檔取代。
-      if (k >= 0) { if (p.notes === undefined && L.packs[k].notes) p.notes = L.packs[k].notes; L.packs.splice(k, 1); }
+      if (k >= 0) {
+        const defaults = L.packs[k].notes || [];
+        if (p.notes === undefined && defaults.length) p.notes = defaults;
+        else if (Array.isArray(p.notes) && p.notes.length) p.notes = p.notes.concat(defaults.filter(n => !p.notes.some(x => x.id === n.id)));
+        L.packs.splice(k, 1);
+      }
       L.packs.push(p);
     });
     L.packs.sort((a, b) => (order.indexOf(a.subject) - order.indexOf(b.subject)) || ((a.order ?? 999) - (b.order ?? 999)) || a.id.localeCompare(b.id));
@@ -318,8 +323,21 @@ const IMP = (() => {
       const ids = new Set();
       if (!Array.isArray(p.notes)) { W.push('單元 notes 不是陣列，已略過'); p.notes = []; }
       p.notes = p.notes.filter(n => {
-        if (!n || n.kind !== 'formula-summary' || !/^[a-z0-9][a-z0-9-]*$/.test(n.id || '') || ids.has(n.id)) { W.push('單元筆記格式或 id 不符，已略過'); return false; }
+        if (!n || !['formula-summary', 'exam-cram'].includes(n.kind) || !/^[a-z0-9][a-z0-9-]*$/.test(n.id || '') || ids.has(n.id)) { W.push('單元筆記格式或 id 不符，已略過'); return false; }
         ids.add(n.id);
+        if (n.kind === 'exam-cram') {
+          ['title', 'intro', 'source', 'reminders'].forEach(k => { n[k] = str(n[k]); });
+          const itemIds = new Set();
+          n.items = (Array.isArray(n.items) ? n.items : []).filter(item => {
+            if (!item || !/^[a-z0-9][a-z0-9-]*$/.test(item.id || '') || itemIds.has(item.id)) return false;
+            itemIds.add(item.id); ['name', 'use', 'tip'].forEach(k => { item[k] = str(item[k]); });
+            item.equations = (Array.isArray(item.equations) ? item.equations : []).map(str).filter(Boolean);
+            return item.name && item.use && item.tip && item.equations.length;
+          });
+          n.references = (Array.isArray(n.references) ? n.references : []).filter(r => r && str(r.title) && /^https:\/\//.test(str(r.url))).map(r => ({ title: str(r.title), url: str(r.url) }));
+          if (!n.title || !n.intro || !n.items.length) { W.push('考前必看缺少完整重點，已略過'); return false; }
+          return true;
+        }
         ['title', 'intro', 'conventions', 'recap'].forEach(k => { n[k] = str(n[k]); });
         if (!n.title || !n.intro || !n.conventions || !n.recap) { W.push('公式統整缺少說明，已略過'); return false; }
         const fids = new Set();

@@ -1166,7 +1166,16 @@ const LEARN_UI = (() => {
    * 課的卡片在展開時才產生，避免一次畫上百課。展開狀態記在 D.cfg.open（"n:" 開頭）。 */
   let noteSubj = 'all', noteQ = '';
   const noteText = s => [s.title, s.body, ...(s.keys || []), ...(s.points || []).map(x => typeof x === 'string' ? x : [x.name, x.desc].join(' '))].join(' ').toLowerCase();
-  const formulaText = n => [n.title, n.intro, n.conventions, n.recap, ...(n.formulas || []).flatMap(f => [f.name, ...(f.equations || []), f.symbols, f.intuition, f.warmup, f.derivation, f.memory, f.example, f.pitfall])].join(' ').toLowerCase();
+  const formulaText = n => [n.title, n.intro, n.conventions, n.recap, n.source, n.reminders, ...(n.items || []).flatMap(f => [f.name, ...(f.equations || []), f.use, f.tip]), ...(n.formulas || []).flatMap(f => [f.name, ...(f.equations || []), f.symbols, f.intuition, f.warmup, f.derivation, f.memory, f.example, f.pitfall])].join(' ').toLowerCase();
+  function examCramNote(p, n, key, isOpen) {
+    const k = key + '/@' + n.id;
+    return `<details class="ltree lnote-cram" data-k="${U.esc(k)}" data-cram-pack="${U.esc(p.id)}" ${isOpen(k, false) ? 'open' : ''}>
+      <summary><span class="ltree-n">${U.esc(n.title)}</span><span class="grow"></span><span class="dim small-t">${n.items.length} 個重點</span></summary>
+      <div class="ltree-in exam-cram">${md(n.intro)}${n.items.map((item, i) => `<article class="cram-item"><div class="cram-head"><h4>${i + 1}. ${U.esc(item.name)}</h4>${item.evidence?.count ? `<span class="dim small-t">相關題 ${U.esc(item.evidence.count)}</span>` : ''}</div>
+        <div class="formula-equations">${item.equations.map(eq => `<code>${U.esc(eq)}</code>`).join('')}</div><p><b>用在：</b>${U.esc(item.use)}</p><p><b>別錯：</b>${U.esc(item.tip)}</p></article>`).join('')}
+        ${n.reminders ? `<div class="cram-reminders">${md(n.reminders)}</div>` : ''}${n.source ? `<p class="dim small-t">${U.esc(n.source)}</p>` : ''}
+        ${(n.references || []).length ? `<p class="dim small-t">${n.references.filter(r => /^https:\/\//.test(r.url)).map(r => `<a href="${U.esc(r.url)}" target="_blank" rel="noopener noreferrer">${U.esc(r.title)}</a>`).join('、')}</p>` : ''}</div></details>`;
+  }
   function formulaNote(p, n, key, isOpen) {
     const k = key + '/@' + n.id;
     return `<details class="ltree lnote-summary" data-k="${U.esc(k)}" data-formula-pack="${U.esc(p.id)}" ${isOpen(k, false) ? 'open' : ''}>
@@ -1193,7 +1202,7 @@ const LEARN_UI = (() => {
       const cards = l.steps.filter((s, i) => i < reach && (s.type === 'card' || s.type === 'recap' || s.type === 'diagram'));
       if (cards.length) all.push({ p, l, cards });
     }); });
-    const summaries = packs.filter(p => C.SUBJECTS[p.subject]).flatMap(p => (p.notes || []).filter(n => n.kind === 'formula-summary' && n.formulas?.length).map(n => ({ p, n })));
+    const summaries = packs.filter(p => C.SUBJECTS[p.subject]).flatMap(p => (p.notes || []).filter(n => (n.kind === 'formula-summary' && n.formulas?.length) || (n.kind === 'exam-cram' && n.items?.length)).map(n => ({ p, n })));
     if (!all.length && !summaries.length) { body.innerHTML = '<p class="dim">上過的概念卡和重點整理會收在這裡，隨時可以回來翻。先去上一課吧！</p>'; return; }
     const subs = [...new Set([...all, ...summaries].map(x => x.p.subject))];
     if (noteSubj !== 'all' && !subs.includes(noteSubj)) noteSubj = 'all';
@@ -1203,6 +1212,7 @@ const LEARN_UI = (() => {
       .filter(x => x.cards.length);
     const nCards = list.reduce((a, x) => a + x.cards.length, 0);
     const noteList = summaries.filter(x => (noteSubj === 'all' || x.p.subject === noteSubj) && (!kw || formulaText(x.n).includes(kw) || x.p.title.toLowerCase().includes(kw)));
+    const nFormulas = noteList.filter(x => x.n.kind === 'formula-summary').length, nCrams = noteList.length - nFormulas;
     // 樹：科目 → path → 單元(pack) → 課
     const tree = [];
     function addPack(p) {
@@ -1218,7 +1228,7 @@ const LEARN_UI = (() => {
     const isOpen = (k, dflt) => kw ? true : (D.cfg.open[k] ?? dflt);
     const lesNode = (x, k) => { const id = 'n' + (li++); LES[id] = x; const kk = k + '/' + x.l.id, op = isOpen(kk, false);
       return `<details class="ltree lnote-les" data-k="${U.esc(kk)}" data-les="${id}" ${op ? 'open' : ''}><summary><span class="ltree-n">${U.esc(x.l.title)}</span><span class="grow"></span><span class="dim small-t">${x.cards.length} 張</span></summary><div class="ltree-in">${op ? x.cards.map(s => noteCard(x.p, x.l, s)).join('') : ''}</div></details>`; };
-    const packContents = (pk, k) => pk.notes.map(n => formulaNote(pk.p, n, k, isOpen)).join('') + pk.les.map(x => lesNode(x, k)).join('');
+    const packContents = (pk, k) => pk.notes.filter(n => n.kind === 'exam-cram').map(n => examCramNote(pk.p, n, k, isOpen)).join('') + pk.notes.filter(n => n.kind === 'formula-summary').map(n => formulaNote(pk.p, n, k, isOpen)).join('') + pk.les.map(x => lesNode(x, k)).join('');
     const packNode = (pk, k) => { const kk = k + '/#' + pk.p.id, n = pk.les.reduce((a, x) => a + x.cards.length, 0);
       return `<details class="ltree lnote-pack" data-k="${U.esc(kk)}" ${isOpen(kk, false) ? 'open' : ''}><summary><span class="ltree-n">📗 ${U.esc(pk.p.title)}</span><span class="grow"></span><span class="dim small-t">${pk.les.length} 課・${n} 張${pk.notes.length ? `・${pk.notes.length} 份統整` : ''}</span></summary><div class="ltree-in">${packContents(pk, kk)}</div></details>`; };
     const dirNode = (n, key, depth) => { let k = key + '/' + n.name;
@@ -1227,9 +1237,9 @@ const LEARN_UI = (() => {
         <div class="ltree-in">${n.kids.map(c => dirNode(c, k, depth + 1)).join('')}${!n.kids.length && n.packs.length === 1 ? packContents(n.packs[0], k + '/#' + n.packs[0].p.id) : n.packs.map(pk => packNode(pk, k)).join('')}</div></details>`; };   // 這層只有一個單元時直接列課，少一層
     body.innerHTML = `<div class="row">${[['all', '全部']].concat(subs.map(x => [x, C.SUBJECTS[x].name])).map(([v, l]) => `<span class="chip ${noteSubj === v ? 'on' : ''}" data-nf="${v}">${l}</span>`).join('')}
         <span class="grow"></span><input class="px-in" id="nSearch" placeholder="搜尋筆記內容（例：Horner、頂點距離）" value="${U.esc(noteQ)}" style="width:min(260px,100%)"></div>
-      <div class="row small-t mt"><span class="dim">${kw ? `找到 <b class="gold-t">${nCards}</b> 張卡（${list.length} 課）` : `${list.length} 課・${nCards} 張卡`}${noteList.length ? `・${noteList.length} 份公式統整` : ''}</span><span class="grow"></span>${kw ? '' : '<button class="px-btn small" id="nOpenAll">全部展開</button><button class="px-btn small" id="nCloseAll">全部收合</button>'}</div>
-      ${noteList.length ? '<p class="dim small-t">公式統整可隨時查閱；課程概念卡仍依學習進度收錄。</p>' : ''}
-      ${tree.map(sn => { const S = C.SUBJECTS[sn.s]; return `<h3 class="mt ltree-subj" style="color:${S.color}">${U.esc(S.name)} <span class="dim small-t">${count(sn)} 張</span></h3>
+      <div class="row small-t mt"><span class="dim">${kw ? `找到 <b class="gold-t">${nCards}</b> 張卡（${list.length} 課）` : `${list.length} 課・${nCards} 張卡`}${nCrams ? `・${nCrams} 份考前必看` : ''}${nFormulas ? `・${nFormulas} 份公式統整` : ''}</span><span class="grow"></span>${kw ? '' : '<button class="px-btn small" id="nOpenAll">全部展開</button><button class="px-btn small" id="nCloseAll">全部收合</button>'}</div>
+      ${noteList.length ? '<p class="dim small-t">考前必看與公式統整可隨時查閱；課程概念卡仍依學習進度收錄。</p>' : ''}
+      ${tree.map(sn => { const S = C.SUBJECTS[sn.s]; return `<h3 class="mt ltree-subj" style="color:${S.color}">${U.esc(S.name)} <span class="dim small-t">${count(sn)} 則筆記</span></h3>
         ${sn.kids.map(c => dirNode(c, 'n:' + sn.s, 0)).join('')}${sn.packs.map(pk => packNode(pk, 'n:' + sn.s)).join('')}`; }).join('') || '<p class="dim">找不到符合的筆記。</p>'}`;
     const fill = d => { const x = LES[d.dataset.les]; const inn = d.querySelector('.ltree-in'); if (x && !inn.childElementCount) inn.innerHTML = x.cards.map(s => noteCard(x.p, x.l, s)).join(''); };
     U.$$('[data-formula-jump]', body).forEach(a => a.onclick = e => { e.preventDefault(); const target = document.getElementById(a.getAttribute('href').slice(1)); if (target) { target.open = true; target.scrollIntoView({ block: 'start' }); target.querySelector('summary').focus({ preventScroll: true }); } });

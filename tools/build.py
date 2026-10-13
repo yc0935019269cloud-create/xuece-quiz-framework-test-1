@@ -474,14 +474,44 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
     note_ids = set()
     for ni, note in enumerate(notes):
         NW = f'notes[{ni}]'
-        if not isinstance(note, dict) or note.get('kind') != 'formula-summary':
-            R.err(NW, '筆記 kind 目前支援 formula-summary')
+        if not isinstance(note, dict) or note.get('kind') not in ('formula-summary', 'exam-cram'):
+            R.err(NW, '筆記 kind 支援 formula-summary、exam-cram')
             continue
         if not isinstance(note.get('id'), str) or not re.fullmatch(r'[a-z0-9][a-z0-9-]*', note['id']) or note['id'] in note_ids:
             R.err(NW, '筆記 id 必須是唯一的小寫英數與 -')
         else:
             note_ids.add(note['id'])
-        for k in ('title', 'intro', 'conventions', 'recap'):
+        for k in ('title', 'intro'):
+            if not is_str(note.get(k)):
+                R.err(NW, f'缺少 {k}')
+        refs = note.get('references', [])
+        if not isinstance(refs, list) or not all(isinstance(r, dict) and is_str(r.get('title')) and str(r.get('url', '')).startswith('https://') for r in refs):
+            R.err(NW, 'references 要是含 title、https url 的物件陣列')
+        if note['kind'] == 'exam-cram':
+            for k in ('source', 'reminders'):
+                if note.get(k) is not None and not is_str(note[k]):
+                    R.err(NW, f'{k} 要是字串')
+            items = note.get('items')
+            if not isinstance(items, list) or not items:
+                R.err(NW, '考前必看需要非空 items 陣列')
+                continue
+            item_ids = set()
+            for ii, item in enumerate(items):
+                IW = f'{NW}.items[{ii}]'
+                if not isinstance(item, dict):
+                    R.err(IW, '重點必須是物件')
+                    continue
+                if not isinstance(item.get('id'), str) or not re.fullmatch(r'[a-z0-9][a-z0-9-]*', item['id']) or item['id'] in item_ids:
+                    R.err(IW, '重點 id 必須是筆記內唯一的小寫英數與 -')
+                else:
+                    item_ids.add(item['id'])
+                for k in ('name', 'use', 'tip'):
+                    if not is_str(item.get(k)):
+                        R.err(IW, f'缺少 {k}')
+                if not isinstance(item.get('equations'), list) or not item['equations'] or not all(is_str(e) for e in item['equations']):
+                    R.err(IW, 'equations 要是非空字串陣列')
+            continue
+        for k in ('conventions', 'recap'):
             if not is_str(note.get(k)):
                 R.err(NW, f'缺少 {k}')
         formulas = note.get('formulas')
@@ -506,9 +536,6 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
             for k in ('warmup', 'derivation'):
                 if formula.get(k) is not None and not is_str(formula[k]):
                     R.err(FW, f'{k} 要是字串')
-        refs = note.get('references', [])
-        if not isinstance(refs, list) or not all(isinstance(r, dict) and is_str(r.get('title')) and str(r.get('url', '')).startswith('https://') for r in refs):
-            R.err(NW, 'references 要是含 title、https url 的物件陣列')
     lessons = pack.get('lessons')
     if not isinstance(lessons, list) or not lessons:
         R.err('pack', '缺少 lessons')

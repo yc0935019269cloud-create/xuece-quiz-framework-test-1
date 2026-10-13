@@ -7,13 +7,13 @@ async page => {
     check(await page.locator('.lnote-summary').count()===6,'All six unit summaries are available without completed lessons');
     check(await page.locator('.lnote-les').count()===0,'Unread lesson cards are not marked learned by adding summaries');
     check(await page.locator('.formula-logic').count()===62&&await page.evaluate(()=>[...document.querySelectorAll('.formula-logic')].every(d=>!d.open)),'Deeper derivations are separate from the beginner explanation and closed initially');
-    check(await page.evaluate(()=>[...document.querySelectorAll('.lnote-summary')].every(d=>d.parentElement.firstElementChild===d)),'Formula summary is first inside each unit');
+    check(await page.evaluate(()=>[...document.querySelectorAll('.lnote-summary')].every(d=>d.parentElement.firstElementChild===d||d.previousElementSibling?.classList.contains('lnote-cram'))),'Formula summary follows only the exam priorities inside each unit');
     const before=await page.evaluate(()=>JSON.stringify({les:LEARN_UI.exportData().les,rev:LEARN_UI.exportData().rev,stat:LEARN_UI.exportData().stat}));
     const units=await page.locator('.lnote-summary').evaluateAll(ds=>ds.map(d=>d.dataset.formulaPack));
     for(const id of units){
       const note=page.locator('[data-formula-pack="'+id+'"]');
       await click(note.locator(':scope > summary')); await snap();
-      const expected=await page.evaluate(id=>LEARN_UI.packs.find(p=>p.id===id).notes[0].formulas.length,id);
+      const expected=await page.evaluate(id=>LEARN_UI.packs.find(p=>p.id===id).notes.find(n=>n.kind==='formula-summary').formulas.length,id);
       check(await note.locator('.formula-index li').count()===expected&&await note.locator('.formula-explanation').count()===expected,'Formula index and explanation coverage: '+id);
       await click(note.locator('[data-formula-jump]').first()); await snap();
       const detail=note.locator('.formula-explanation').first();
@@ -37,7 +37,7 @@ async page => {
       App.go('learn',{tab:'notes'});
     }); await snap();
     check(await page.locator('.lnote-les').count()===2,'Previously learned notes remain accessible alongside formula summaries');
-    check(await page.evaluate(()=>[...document.querySelectorAll('.lnote-summary')].every(d=>d.parentElement.firstElementChild===d)),'Summary remains above earned lesson cards');
+    check(await page.evaluate(()=>[...document.querySelectorAll('.lnote-summary')].every(d=>d.parentElement.firstElementChild===d||d.previousElementSibling?.classList.contains('lnote-cram'))),'Summary remains above earned lesson cards');
     await click(page.locator('[data-nf="eye_ans"]')); await snap();
     check(await page.locator('.lnote-summary').count()===0&&await page.locator('.lnote-les').count()===1,'Other subjects retain their existing notes and filter');
     await click(page.locator('[data-nf="physopt"]')); await snap();
@@ -63,7 +63,8 @@ async page => {
       const pack=structuredClone(LEARN_UI.packs.find(p=>p.id==='physopt-u1-language'));
       const file=new File([JSON.stringify(pack)],'physopt-u1.json',{type:'application/json'});
       const result=await IMP.scan([file]);
-      return {bad:result.bad.length,n:result.packs[0]?.pack.notes?.[0]?.formulas.length,warmup:result.packs[0]?.pack.notes?.[0]?.formulas[0]?.warmup};
+      const note=result.packs[0]?.pack.notes?.find(n=>n.kind==='formula-summary');
+      return {bad:result.bad.length,n:note?.formulas.length,warmup:note?.formulas[0]?.warmup};
     });
     check(imported.bad===0&&imported.n===6&&imported.warmup.includes('6 m/s'),'Importer preserves formula notes and numeric warmups');
     const legacyImport=await page.evaluate(async()=>{
@@ -72,7 +73,7 @@ async page => {
       const write=data=>new Promise((resolve,reject)=>{const t=db.transaction('items','readwrite');t.objectStore('items').put({id:'learn:'+original.id,kind:'learn',data});t.oncomplete=resolve;t.onerror=()=>reject(t.error);});
       try{
         const old=structuredClone(original);delete old.notes;await write(old);await IMP.load();
-        const kept=LEARN_UI.packs.find(p=>p.id===original.id).notes?.[0]?.formulas.length===6;
+        const kept=LEARN_UI.packs.find(p=>p.id===original.id).notes?.find(n=>n.kind==='formula-summary')?.formulas.length===6;
         await write({...old,notes:[]});await IMP.load();
         const cleared=LEARN_UI.packs.find(p=>p.id===original.id).notes.length===0;
         await write(original);await IMP.load();return {kept,cleared};

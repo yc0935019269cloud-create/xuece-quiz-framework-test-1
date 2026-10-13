@@ -32,6 +32,230 @@
  ],
  "notes": [
   {
+   "id": "exam-cram",
+   "kind": "exam-cram",
+   "title": "考前必看",
+   "intro": "先記這幾個：公式、什麼時候用、最容易錯在哪裡。想看原理與例子，再往下看「公式統整」。",
+   "items": [
+    {
+     "id": "prentice",
+     "name": "Prentice 規則：偏心稜鏡",
+     "equations": [
+      "Z(Δ) = c(cm) × |F(D)|"
+     ],
+     "use": "球面鏡片（或主子午線）偏心，算誘發稜鏡大小或偏心距。",
+     "tip": "c 用 cm，5 mm=0.5 cm；正鏡基底朝光學中心，負鏡朝外。",
+     "evidence": {
+      "count": 43,
+      "questionIds": [
+       "physopt-exam-u5-106-sp-24",
+       "physopt-exam-u5-106-sp-26",
+       "physopt-exam-u5-106-sp-48",
+       "physopt-exam-u5-106-st-16",
+       "physopt-exam-u5-106-vh-29",
+       "physopt-exam-u5-106-vh-30",
+       "physopt-exam-u5-106-vt-14",
+       "physopt-exam-u5-106-vt-23",
+       "physopt-exam-u5-106-vt-24",
+       "physopt-exam-u5-107-sp-30",
+       "physopt-exam-u5-107-sp-49",
+       "physopt-exam-u5-107-vh-27",
+       "physopt-exam-u5-107-vh-41",
+       "physopt-exam-u5-107-vt-25",
+       "physopt-exam-u5-107-vt-29",
+       "physopt-exam-u5-108-sp-44",
+       "physopt-exam-u5-108-sp-46",
+       "physopt-exam-u5-108-sp-50",
+       "physopt-exam-u5-108-st-29",
+       "physopt-exam-u5-108-st-43",
+       "physopt-exam-u5-108-vh-30",
+       "physopt-exam-u5-108-vh-32",
+       "physopt-exam-u5-108-vh-45",
+       "physopt-exam-u5-108-vt-34",
+       "physopt-exam-u5-109-sp-43",
+       "physopt-exam-u5-109-st-43",
+       "physopt-exam-u5-109-st-44",
+       "physopt-exam-u5-109-vh-32",
+       "physopt-exam-u5-109-vh-33",
+       "physopt-exam-u5-110-sp-42",
+       "physopt-exam-u5-110-sp-43",
+       "physopt-exam-u5-110-vh-24",
+       "physopt-exam-u5-110-vh-27",
+       "physopt-exam-u5-110-vh-28",
+       "physopt-exam-u5-110-vh-37",
+       "physopt-exam-u5-111-sp-48",
+       "physopt-exam-u5-111-vh-26",
+       "physopt-exam-u5-111-vh-27",
+       "physopt-exam-u5-112-sp-45",
+       "physopt-exam-u5-112-vh-14",
+       "physopt-exam-u5-112-vh-32",
+       "physopt-exam-u5-114-vh-27",
+       "physopt-exam-u5-114-vh-28"
+      ],
+      "years": [
+       106,
+       107,
+       108,
+       109,
+       110,
+       111,
+       112,
+       114
+      ]
+     }
+    },
+    {
+     "id": "prism",
+     "name": "稜鏡度與薄稜鏡偏折",
+     "equations": [
+      "Z = 100×偏移/距離 = 100tanδ",
+      "空氣中：δ ≈ (n−1)A頂角"
+     ],
+     "use": "由光點偏移求 Δ，或由材質與小頂角求偏折。",
+     "tip": "偏移、距離同單位；用 Z≈100δ 時 δ 須為 rad。光偏基底，像偏頂端。",
+     "evidence": {
+      "count": 30,
+      "questionIds": [
+       "physopt-exam-u5-106-st-15",
+       "physopt-exam-u5-106-vh-46",
+       "physopt-exam-u5-106-vt-26",
+       "physopt-exam-u5-107-sp-29",
+       "physopt-exam-u5-107-st-29",
+       "physopt-exam-u5-107-vh-19",
+       "physopt-exam-u5-107-vh-31",
+       "physopt-exam-u5-108-sp-19",
+       "physopt-exam-u5-108-sp-43",
+       "physopt-exam-u5-108-st-17",
+       "physopt-exam-u5-108-vh-31",
+       "physopt-exam-u5-108-vt-29",
+       "physopt-exam-u5-109-sp-45",
+       "physopt-exam-u5-109-vh-32",
+       "physopt-exam-u5-109-vt-28",
+       "physopt-exam-u5-109-vt-29",
+       "physopt-exam-u5-109-vt-33",
+       "physopt-exam-u5-109-vt-34",
+       "physopt-exam-u5-110-sp-38",
+       "physopt-exam-u5-110-vh-25",
+       "physopt-exam-u5-110-vh-29",
+       "physopt-exam-u5-111-sp-50",
+       "physopt-exam-u5-111-vh-24",
+       "physopt-exam-u5-111-vh-25",
+       "physopt-exam-u5-111-vh-27",
+       "physopt-exam-u5-111-vh-30",
+       "physopt-exam-u5-112-vh-31",
+       "physopt-exam-u5-113-sp-41",
+       "physopt-exam-u5-113-vh-29",
+       "physopt-exam-u5-114-vh-26"
+      ],
+      "years": [
+       106,
+       107,
+       108,
+       109,
+       110,
+       111,
+       112,
+       113,
+       114
+      ]
+     }
+    },
+    {
+     "id": "lens-pair",
+     "name": "兩片鏡成像：中間先傳遞",
+     "equations": [
+      "V₁ = P₁+U₁ → U₂ = V₁/(1−dV₁)",
+      "V₂ = P₂+U₂ → v₂ = 1/V₂"
+     ],
+     "use": "空氣中兩片鏡隔一段距離，問最後像的位置。",
+     "tip": "d 用 m；第二片的物不一定是實物。像距由第二片量，不是由第一片量。",
+     "evidence": {
+      "count": 11,
+      "questionIds": [
+       "physopt-exam-u5-106-sp-32",
+       "physopt-exam-u5-106-vh-15",
+       "physopt-exam-u5-107-sp-13",
+       "physopt-exam-u5-107-vh-4",
+       "physopt-exam-u5-107-vh-9",
+       "physopt-exam-u5-108-vh-5",
+       "physopt-exam-u5-108-vt-23",
+       "physopt-exam-u5-109-vt-15",
+       "physopt-exam-u5-109-vt-22",
+       "physopt-exam-u5-114-sp-7",
+       "physopt-exam-u5-114-vh-7"
+      ],
+      "years": [
+       106,
+       107,
+       108,
+       109,
+       114
+      ]
+     }
+    },
+    {
+     "id": "telescope",
+     "name": "望遠鏡管長與角倍率",
+     "equations": [
+      "d = f物+f目、mθ = −f物/f目"
+     ],
+     "use": "薄鏡、空氣中，望遠鏡調成看遠的無焦系統。",
+     "tip": "目鏡焦距帶正負號；正目鏡倒立、負目鏡正立。",
+     "evidence": {
+      "count": 6,
+      "questionIds": [
+       "physopt-exam-u5-106-sp-9",
+       "physopt-exam-u5-106-vh-43",
+       "physopt-exam-u5-106-vt-5",
+       "physopt-exam-u5-108-vh-8",
+       "physopt-exam-u5-108-vh-18",
+       "physopt-exam-u5-111-vh-48"
+      ],
+      "years": [
+       106,
+       108,
+       111
+      ]
+     }
+    },
+    {
+     "id": "components",
+     "name": "斜向稜鏡：先拆，再加",
+     "equations": [
+      "Zx = Zcosφ、Zy = Zsinφ",
+      "各分量相加；Z合 = √[(ΣZx)²+(ΣZy)²]"
+     ],
+     "use": "給斜向或兩個不同方向的稜鏡，求分量／合成。",
+     "tip": "φ 從指定正水平方向量；分量帶正負，不能直接把兩個 Δ 大小相加。",
+     "evidence": {
+      "count": 3,
+      "questionIds": [
+       "physopt-exam-u5-109-vt-29",
+       "physopt-exam-u5-112-vh-31",
+       "physopt-exam-u5-114-vh-26"
+      ],
+      "years": [
+       109,
+       112,
+       114
+      ]
+     }
+    }
+   ],
+   "reminders": "**單位最容易丟分**：成像距離用 m；Prentice 偏心用 cm；稜鏡度 Δ 不等於鏡片度數 D。",
+   "source": "依 106～114 年已收錄的 421 題國考選題整理；相關題依考點標記統計，含觀念題。",
+   "references": [
+    {
+     "title": "考選部歷年試題",
+     "url": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+    },
+    {
+     "title": "AAO：Prentice 規則",
+     "url": "https://eyewiki.aao.org/Lensometry"
+    }
+   ]
+  },
+  {
    "intro": "不用一次背完。先看公式清單，挑一組點開：**生活畫面 → 簡單數字 → 正式例子 → 一行記法**。\n\n這個單元把光線變成兩個數字，再用矩陣記錄一路怎麼變。先掌握向量排列與兩塊基本積木，後面的透鏡組、光闌、望遠鏡與稜鏡就有共同的解題路徑。",
    "conventions": "- 本課程固定向量 r = [q, h]ᵀ：上面 q = nθ，下面 h。有些書用 [h, nθ]，矩陣格子會不同，不能直接搬公式。\n- h、d 用 m，θ 用 rad，P 用 D。此處 q 是折合角，不是第一單元的距離 q。\n- S = [A B; C D] 中 D 是矩陣係數，不是屈光度單位。\n- T(x) 的 x 是約化距離：一般 x = 實際距離/n；在空氣中數值才等於實際公尺。\n- Pe、Pv 與第四單元相同；Pn = Pf。稜鏡度 Δ 與屈光度 D 是不同單位。\n- 矩陣寫成 [A, B; C, D]：逗號分左右兩格，分號分上、下兩排。A 左上、B 右上、C 左下、D 右下。",
    "formulas": [

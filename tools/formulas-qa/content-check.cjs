@@ -8,7 +8,7 @@ const clean = p => {const clone=JSON.parse(JSON.stringify(p));delete clone.notes
 const digest = packs => crypto.createHash('sha256').update(JSON.stringify(packs.map(clean))).digest('hex');
 assert.equal(digest(context.window.LEARN.packs),digest(oldContext.window.LEARN.packs),'Existing courses, linked pools and progress IDs must remain identical');
 const checks = [], near = (value,expected,msg,tolerance=1e-6) => {assert.ok(Math.abs(value-expected)<=tolerance,msg);checks.push(msg);};
-const summaries = context.window.LEARN.packs.filter(p=>p.subject==='physopt').map(p=>p.notes[0]);
+const summaries = context.window.LEARN.packs.filter(p=>p.subject==='physopt').map(p=>p.notes.find(n=>n.kind==='formula-summary'));
 assert.equal(summaries.length,6);
 assert.equal(summaries.reduce((n,s)=>n+s.formulas.length,0),62);
 assert.ok(summaries.every(n=>n.title==='公式統整'&&n.formulas.every(f=>f.warmup&&f.intuition&&f.symbols&&f.memory&&f.example&&f.pitfall)));

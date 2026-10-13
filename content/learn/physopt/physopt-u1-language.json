@@ -22,6 +22,99 @@
  ],
  "notes": [
   {
+   "id": "exam-cram",
+   "kind": "exam-cram",
+   "title": "考前必看",
+   "intro": "先記這幾個：公式、什麼時候用、最容易錯在哪裡。想看原理與例子，再往下看「公式統整」。",
+   "items": [
+    {
+     "id": "index",
+     "name": "折射率與光速",
+     "equations": [
+      "n = c/v、v = c/n",
+      "λ介質 = λ₀/n"
+     ],
+     "use": "給光速求 n；換介質求波長。",
+     "tip": "n 越大，光速與波長越小；跨靜止介面頻率不變。",
+     "evidence": {
+      "count": 23,
+      "questionIds": [
+       "physopt-exam-u1-106-sp-7",
+       "physopt-exam-u1-106-sp-17",
+       "physopt-exam-u1-106-st-21",
+       "physopt-exam-u1-106-st-22",
+       "physopt-exam-u1-107-sp-9",
+       "physopt-exam-u1-107-st-21",
+       "physopt-exam-u1-107-vt-9",
+       "physopt-exam-u1-107-vt-35",
+       "physopt-exam-u1-108-sp-11",
+       "physopt-exam-u1-108-vh-22",
+       "physopt-exam-u1-109-vh-34",
+       "physopt-exam-u1-109-vh-46",
+       "physopt-exam-u1-110-vh-8",
+       "physopt-exam-u1-111-sp-15",
+       "physopt-exam-u1-111-vh-11",
+       "physopt-exam-u1-111-vh-34",
+       "physopt-exam-u1-112-sp-12",
+       "physopt-exam-u1-113-sp-15",
+       "physopt-exam-u1-113-vh-14",
+       "physopt-exam-u1-113-vh-36",
+       "physopt-exam-u1-114-sp-12",
+       "physopt-exam-u1-114-sp-22",
+       "physopt-exam-u1-114-vh-11"
+      ],
+      "years": [
+       106,
+       107,
+       108,
+       109,
+       110,
+       111,
+       112,
+       113,
+       114
+      ]
+     }
+    },
+    {
+     "id": "vergence",
+     "name": "聚散度與真、虛物像",
+     "equations": [
+      "聚散度 = n/有向距離(m)",
+      "U = n物/u、V = n像/v"
+     ],
+     "use": "把物距、像距換成光的會聚／發散程度。",
+     "tip": "典型實物 U<0、實像 V>0；先判方向，再做除法。",
+     "evidence": {
+      "count": 7,
+      "questionIds": [
+       "physopt-exam-u1-107-st-21",
+       "physopt-exam-u1-108-st-23",
+       "physopt-exam-u1-108-vh-21",
+       "physopt-exam-u1-108-vh-22",
+       "physopt-exam-u1-111-vh-19",
+       "physopt-exam-u1-114-sp-26",
+       "physopt-exam-u1-114-vh-25"
+      ],
+      "years": [
+       107,
+       108,
+       111,
+       114
+      ]
+     }
+    }
+   ],
+   "reminders": "**最後記兩句**：發散負、會聚正；D 的距離要用 m。",
+   "source": "依 106～114 年已收錄的 421 題國考選題整理；相關題依考點標記統計，含觀念題。",
+   "references": [
+    {
+     "title": "考選部歷年試題",
+     "url": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+    }
+   ]
+  },
+  {
    "intro": "不用一次背完。先看公式清單，挑一組點開：**生活畫面 → 簡單數字 → 正式例子 → 一行記法**。\n\n這個單元先建立兩種語言：用「速度、波長、頻率」描述光的波動；用「聚散度」描述光有多會聚或發散。先認識下面六組公式，再把它們接成一條線。",
    "conventions": "- c 是真空光速，約 3 × 10⁸ m/s；v 是介質內的光速。\n- λ₀ 是真空波長，λₙ 是介質內波長；f 是頻率，T 是週期。\n- 聚散度 P、U、V 用 D（m⁻¹）；距離 q、u、v 用公尺。注意：同一個 v 在波動式是光速，在成像式是像距，要看上下文。\n- 以光由左往右為例，位置相對參考面向右為正、向左為負；會聚度為正、發散度為負。",
    "formulas": [

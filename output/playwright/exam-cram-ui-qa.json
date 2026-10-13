@@ -1,0 +1,73 @@
+{
+  "ipad": {
+    "result": "passed",
+    "checks": 26,
+    "details": [
+      "Six exam sections coexist with six original formula summaries",
+      "Every exam section comes directly before formula summary",
+      "Counts distinguish quick exam notes from full summaries",
+      "Formula and short use/trap rows: physopt-u1-language",
+      "Exam basis and sample range remain visible: physopt-u1-language",
+      "Formula and short use/trap rows: physopt-u2-interface",
+      "Exam basis and sample range remain visible: physopt-u2-interface",
+      "Formula and short use/trap rows: physopt-u3-thinlens",
+      "Exam basis and sample range remain visible: physopt-u3-thinlens",
+      "Formula and short use/trap rows: physopt-u4-thicklens",
+      "Exam basis and sample range remain visible: physopt-u4-thicklens",
+      "Formula and short use/trap rows: physopt-u5-matrix",
+      "Exam basis and sample range remain visible: physopt-u5-matrix",
+      "Formula and short use/trap rows: physopt-u6-wave",
+      "Exam basis and sample range remain visible: physopt-u6-wave",
+      "Reading quick exam notes does not advance progress or rewards",
+      "Search finds the newly prioritized Prentice formula",
+      "Title search shows only the six concise exam sections",
+      "Expand all handles both note types",
+      "Collapse all works for exam notes",
+      "390px concise exam formulas have no horizontal overflow",
+      "Importer keeps concise exam rows",
+      "Version 90 imported notes receive the missing new exam section",
+      "Explicit empty imported notes still clear all notes",
+      "Both note types persist after reload",
+      "No JavaScript errors in exam notes flow"
+    ],
+    "iosPath": true
+  },
+  "desktop": {
+    "result": "passed",
+    "checks": 26,
+    "details": [
+      "Six exam sections coexist with six original formula summaries",
+      "Every exam section comes directly before formula summary",
+      "Counts distinguish quick exam notes from full summaries",
+      "Formula and short use/trap rows: physopt-u1-language",
+      "Exam basis and sample range remain visible: physopt-u1-language",
+      "Formula and short use/trap rows: physopt-u2-interface",
+      "Exam basis and sample range remain visible: physopt-u2-interface",
+      "Formula and short use/trap rows: physopt-u3-thinlens",
+      "Exam basis and sample range remain visible: physopt-u3-thinlens",
+      "Formula and short use/trap rows: physopt-u4-thicklens",
+      "Exam basis and sample range remain visible: physopt-u4-thicklens",
+      "Formula and short use/trap rows: physopt-u5-matrix",
+      "Exam basis and sample range remain visible: physopt-u5-matrix",
+      "Formula and short use/trap rows: physopt-u6-wave",
+      "Exam basis and sample range remain visible: physopt-u6-wave",
+      "Reading quick exam notes does not advance progress or rewards",
+      "Search finds the newly prioritized Prentice formula",
+      "Title search shows only the six concise exam sections",
+      "Expand all handles both note types",
+      "Collapse all works for exam notes",
+      "390px concise exam formulas have no horizontal overflow",
+      "Importer keeps concise exam rows",
+      "Version 90 imported notes receive the missing new exam section",
+      "Explicit empty imported notes still clear all notes",
+      "Both note types persist after reload",
+      "No JavaScript errors in exam notes flow"
+    ],
+    "iosPath": false
+  },
+  "limitations": [
+    "Edge desktop and iPad path emulation over HTTP",
+    "No physical iPad, file:// or student reading study",
+    "Test context localStorage restored and import fixture removed"
+  ]
+}

@@ -29,6 +29,178 @@
  ],
  "notes": [
   {
+   "id": "exam-cram",
+   "kind": "exam-cram",
+   "title": "考前必看",
+   "intro": "先記這幾個：公式、什麼時候用、最容易錯在哪裡。想看原理與例子，再往下看「公式統整」。",
+   "items": [
+    {
+     "id": "vertex-distance",
+     "name": "頂點距離換算：優先記",
+     "equations": [
+      "F新 = F舊/(1−ΔdF舊)",
+      "眼鏡→角膜：Fc = Fs/(1−dFs)"
+     ],
+     "use": "鏡片靠近眼睛、眼鏡換隱形眼鏡的光學等效度數。",
+     "tip": "Δd 向眼睛移近為正、用 m；12 mm=0.012 m。散光拆兩子午線算。",
+     "evidence": {
+      "count": 48,
+      "questionIds": [
+       "physopt-exam-u4-106-sp-18",
+       "physopt-exam-u4-106-sp-19",
+       "physopt-exam-u4-106-sp-49",
+       "physopt-exam-u4-106-st-1",
+       "physopt-exam-u4-106-vh-16",
+       "physopt-exam-u4-106-vt-27",
+       "physopt-exam-u4-106-vt-33",
+       "physopt-exam-u4-106-vt-39",
+       "physopt-exam-u4-107-sp-15",
+       "physopt-exam-u4-107-sp-17",
+       "physopt-exam-u4-107-sp-19",
+       "physopt-exam-u4-107-st-10",
+       "physopt-exam-u4-107-vt-6",
+       "physopt-exam-u4-107-vt-23",
+       "physopt-exam-u4-108-sp-6",
+       "physopt-exam-u4-108-sp-7",
+       "physopt-exam-u4-108-sp-17",
+       "physopt-exam-u4-108-st-27",
+       "physopt-exam-u4-108-vt-8",
+       "physopt-exam-u4-108-vt-35",
+       "physopt-exam-u4-109-sp-21",
+       "physopt-exam-u4-109-st-17",
+       "physopt-exam-u4-109-st-25",
+       "physopt-exam-u4-109-st-36",
+       "physopt-exam-u4-109-vh-3",
+       "physopt-exam-u4-109-vh-5",
+       "physopt-exam-u4-109-vt-9",
+       "physopt-exam-u4-109-vt-13",
+       "physopt-exam-u4-109-vt-14",
+       "physopt-exam-u4-109-vt-27",
+       "physopt-exam-u4-110-sp-12",
+       "physopt-exam-u4-110-vh-5",
+       "physopt-exam-u4-110-vh-23",
+       "physopt-exam-u4-111-sp-7",
+       "physopt-exam-u4-111-sp-22",
+       "physopt-exam-u4-111-sp-26",
+       "physopt-exam-u4-111-vh-12",
+       "physopt-exam-u4-112-sp-15",
+       "physopt-exam-u4-112-vh-1",
+       "physopt-exam-u4-112-vh-2",
+       "physopt-exam-u4-112-vh-13",
+       "physopt-exam-u4-112-vh-49",
+       "physopt-exam-u4-113-sp-4",
+       "physopt-exam-u4-113-sp-6",
+       "physopt-exam-u4-113-sp-21",
+       "physopt-exam-u4-113-sp-42",
+       "physopt-exam-u4-114-sp-13",
+       "physopt-exam-u4-114-vh-44"
+      ],
+      "years": [
+       106,
+       107,
+       108,
+       109,
+       110,
+       111,
+       112,
+       113,
+       114
+      ]
+     }
+    },
+    {
+     "id": "equivalent",
+     "name": "厚透鏡等效屈光力",
+     "equations": [
+      "d̄ = d/n",
+      "Pe = P₁+P₂−d̄P₁P₂"
+     ],
+     "use": "兩表面間有厚度時，求整個系統的等效力。",
+     "tip": "不要只相加；先判兩面力量正負。Pe 的參考位置是主平面。",
+     "evidence": {
+      "count": 20,
+      "questionIds": [
+       "physopt-exam-u4-106-vh-5",
+       "physopt-exam-u4-106-vh-17",
+       "physopt-exam-u4-107-vt-10",
+       "physopt-exam-u4-108-sp-21",
+       "physopt-exam-u4-108-st-20",
+       "physopt-exam-u4-108-vt-16",
+       "physopt-exam-u4-108-vt-25",
+       "physopt-exam-u4-109-vh-12",
+       "physopt-exam-u4-109-vh-27",
+       "physopt-exam-u4-109-vt-21",
+       "physopt-exam-u4-110-sp-20",
+       "physopt-exam-u4-110-sp-39",
+       "physopt-exam-u4-110-vh-2",
+       "physopt-exam-u4-110-vh-36",
+       "physopt-exam-u4-111-sp-21",
+       "physopt-exam-u4-111-vh-17",
+       "physopt-exam-u4-112-sp-13",
+       "physopt-exam-u4-112-vh-6",
+       "physopt-exam-u4-112-vh-26",
+       "physopt-exam-u4-113-vh-21"
+      ],
+      "years": [
+       106,
+       107,
+       108,
+       109,
+       110,
+       111,
+       112,
+       113
+      ]
+     }
+    },
+    {
+     "id": "vertex-power",
+     "name": "前、後頂點屈光力",
+     "equations": [
+      "Pv = Pe/(1−d̄P₁)",
+      "Pf = Pe/(1−d̄P₂)"
+     ],
+     "use": "題目明講後頂點力、前頂點力或中和力。",
+     "tip": "後頂點分母用 P₁，前頂點用 P₂；不能把 Pv 當 Pe。",
+     "evidence": {
+      "count": 14,
+      "questionIds": [
+       "physopt-exam-u4-107-vt-10",
+       "physopt-exam-u4-108-sp-21",
+       "physopt-exam-u4-108-vh-6",
+       "physopt-exam-u4-108-vt-16",
+       "physopt-exam-u4-108-vt-25",
+       "physopt-exam-u4-109-sp-37",
+       "physopt-exam-u4-109-vh-27",
+       "physopt-exam-u4-109-vt-21",
+       "physopt-exam-u4-110-sp-39",
+       "physopt-exam-u4-111-sp-21",
+       "physopt-exam-u4-111-vh-17",
+       "physopt-exam-u4-112-sp-13",
+       "physopt-exam-u4-112-sp-23",
+       "physopt-exam-u4-112-vh-26"
+      ],
+      "years": [
+       107,
+       108,
+       109,
+       110,
+       111,
+       112
+      ]
+     }
+    }
+   ],
+   "reminders": "**力量配起點**：Pe 配主平面、Pv 配後頂點、Pf 配前頂點。",
+   "source": "依 106～114 年已收錄的 421 題國考選題整理；相關題依考點標記統計，含觀念題。",
+   "references": [
+    {
+     "title": "考選部歷年試題",
+     "url": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+    }
+   ]
+  },
+  {
    "intro": "不用一次背完。先看公式清單，挑一組點開：**生活畫面 → 簡單數字 → 正式例子 → 一行記法**。\n\n厚透鏡比薄透鏡多的關鍵，是光在兩個面之間真的走了一段路。先掌握逐面追跡，再把整片鏡片濃縮成 Pe、Pv、Pf 和主平面；每一個數字都要配對正確的參考面。",
    "conventions": "- n₀、n、nᵢ 分別是前方介質、鏡片內、後方介質折射率。\n- d 是中心厚度，d̄ = d/n；r₁、r₂ 有符號，所有計算距離用 m。\n- Pe 配主平面；Pv 配後頂點 Lb；Pf 配前頂點 L₁。第五單元的 Pn 就是這裡的 Pf。\n- H₁、H₂ 是主點；N₁、N₂ 是節點；所有位置沿光前進方向為正。Pe = 0 或式子分母為 0 的退化情況，不直接套有限焦距公式。",
    "formulas": [

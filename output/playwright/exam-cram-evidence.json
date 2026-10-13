@@ -1,0 +1,918 @@
+{
+  "scope": "第一～五單元：106～114 年已收錄的期中範圍國考選題；第六單元：同年份兩科完整原卷",
+  "curatedQuestionCount": 421,
+  "families": {
+    "u1:index": {
+      "count": 23,
+      "questionIds": [
+        "physopt-exam-u1-106-sp-7",
+        "physopt-exam-u1-106-sp-17",
+        "physopt-exam-u1-106-st-21",
+        "physopt-exam-u1-106-st-22",
+        "physopt-exam-u1-107-sp-9",
+        "physopt-exam-u1-107-st-21",
+        "physopt-exam-u1-107-vt-9",
+        "physopt-exam-u1-107-vt-35",
+        "physopt-exam-u1-108-sp-11",
+        "physopt-exam-u1-108-vh-22",
+        "physopt-exam-u1-109-vh-34",
+        "physopt-exam-u1-109-vh-46",
+        "physopt-exam-u1-110-vh-8",
+        "physopt-exam-u1-111-sp-15",
+        "physopt-exam-u1-111-vh-11",
+        "physopt-exam-u1-111-vh-34",
+        "physopt-exam-u1-112-sp-12",
+        "physopt-exam-u1-113-sp-15",
+        "physopt-exam-u1-113-vh-14",
+        "physopt-exam-u1-113-vh-36",
+        "physopt-exam-u1-114-sp-12",
+        "physopt-exam-u1-114-sp-22",
+        "physopt-exam-u1-114-vh-11"
+      ],
+      "years": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "matchTags": [
+        "折射率",
+        "光速"
+      ]
+    },
+    "u1:vergence": {
+      "count": 7,
+      "questionIds": [
+        "physopt-exam-u1-107-st-21",
+        "physopt-exam-u1-108-st-23",
+        "physopt-exam-u1-108-vh-21",
+        "physopt-exam-u1-108-vh-22",
+        "physopt-exam-u1-111-vh-19",
+        "physopt-exam-u1-114-sp-26",
+        "physopt-exam-u1-114-vh-25"
+      ],
+      "years": [
+        107,
+        108,
+        111,
+        114
+      ],
+      "matchTags": [
+        "聚散度"
+      ]
+    },
+    "u2:surface": {
+      "count": 34,
+      "questionIds": [
+        "physopt-exam-u2-107-sp-21",
+        "physopt-exam-u2-107-st-17",
+        "physopt-exam-u2-107-vh-2",
+        "physopt-exam-u2-107-vh-15",
+        "physopt-exam-u2-107-vh-16",
+        "physopt-exam-u2-107-vh-21",
+        "physopt-exam-u2-107-vt-3",
+        "physopt-exam-u2-108-sp-13",
+        "physopt-exam-u2-108-st-2",
+        "physopt-exam-u2-108-st-18",
+        "physopt-exam-u2-108-st-30",
+        "physopt-exam-u2-108-vt-21",
+        "physopt-exam-u2-108-vt-36",
+        "physopt-exam-u2-108-vt-38",
+        "physopt-exam-u2-109-sp-28",
+        "physopt-exam-u2-109-sp-30",
+        "physopt-exam-u2-109-st-20",
+        "physopt-exam-u2-109-st-21",
+        "physopt-exam-u2-109-vh-10",
+        "physopt-exam-u2-109-vh-37",
+        "physopt-exam-u2-109-vt-16",
+        "physopt-exam-u2-109-vt-18",
+        "physopt-exam-u2-109-vt-25",
+        "physopt-exam-u2-110-sp-3",
+        "physopt-exam-u2-110-sp-26",
+        "physopt-exam-u2-110-sp-35",
+        "physopt-exam-u2-111-vh-31",
+        "physopt-exam-u2-112-sp-6",
+        "physopt-exam-u2-112-sp-21",
+        "physopt-exam-u2-112-sp-49",
+        "physopt-exam-u2-112-vh-10",
+        "physopt-exam-u2-113-sp-9",
+        "physopt-exam-u2-113-vh-35",
+        "physopt-exam-u2-114-sp-27"
+      ],
+      "years": [
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "matchTags": [
+        "表面屈光力",
+        "球面折射"
+      ]
+    },
+    "u2:snell": {
+      "count": 18,
+      "questionIds": [
+        "physopt-exam-u2-106-sp-6",
+        "physopt-exam-u2-106-st-31",
+        "physopt-exam-u2-107-sp-10",
+        "physopt-exam-u2-107-sp-12",
+        "physopt-exam-u2-107-vt-1",
+        "physopt-exam-u2-107-vt-15",
+        "physopt-exam-u2-109-sp-10",
+        "physopt-exam-u2-109-vh-9",
+        "physopt-exam-u2-110-sp-14",
+        "physopt-exam-u2-110-vh-13",
+        "physopt-exam-u2-111-sp-13",
+        "physopt-exam-u2-112-sp-9",
+        "physopt-exam-u2-112-vh-18",
+        "physopt-exam-u2-113-sp-11",
+        "physopt-exam-u2-113-sp-18",
+        "physopt-exam-u2-113-vh-15",
+        "physopt-exam-u2-114-sp-16",
+        "physopt-exam-u2-114-vh-16"
+      ],
+      "years": [
+        106,
+        107,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "matchTags": [
+        "司乃耳定律"
+      ]
+    },
+    "u2:critical": {
+      "count": 12,
+      "questionIds": [
+        "physopt-exam-u2-106-sp-8",
+        "physopt-exam-u2-106-vt-11",
+        "physopt-exam-u2-107-sp-12",
+        "physopt-exam-u2-107-sp-20",
+        "physopt-exam-u2-107-vt-15",
+        "physopt-exam-u2-108-vh-9",
+        "physopt-exam-u2-108-vt-18",
+        "physopt-exam-u2-109-vh-22",
+        "physopt-exam-u2-111-sp-12",
+        "physopt-exam-u2-111-sp-14",
+        "physopt-exam-u2-112-sp-11",
+        "physopt-exam-u2-112-vh-9"
+      ],
+      "years": [
+        106,
+        107,
+        108,
+        109,
+        111,
+        112
+      ],
+      "matchTags": [
+        "全反射",
+        "臨界角"
+      ]
+    },
+    "u2:sag": {
+      "count": 4,
+      "questionIds": [
+        "physopt-exam-u2-108-sp-22",
+        "physopt-exam-u2-108-vt-13",
+        "physopt-exam-u2-110-sp-26",
+        "physopt-exam-u2-114-sp-24"
+      ],
+      "years": [
+        108,
+        110,
+        114
+      ],
+      "matchTags": [
+        "弧高"
+      ]
+    },
+    "u2:depth": {
+      "count": 3,
+      "questionIds": [
+        "physopt-exam-u2-107-vh-10",
+        "physopt-exam-u2-108-vh-23",
+        "physopt-exam-u2-108-vt-10"
+      ],
+      "years": [
+        107,
+        108
+      ],
+      "matchTags": [
+        "視深"
+      ]
+    },
+    "u3:maker": {
+      "count": 39,
+      "questionIds": [
+        "physopt-exam-u3-106-sp-22",
+        "physopt-exam-u3-106-st-9",
+        "physopt-exam-u3-106-vh-10",
+        "physopt-exam-u3-106-vh-20",
+        "physopt-exam-u3-106-vt-17",
+        "physopt-exam-u3-106-vt-38",
+        "physopt-exam-u3-107-st-11",
+        "physopt-exam-u3-107-st-15",
+        "physopt-exam-u3-107-vh-11",
+        "physopt-exam-u3-107-vh-17",
+        "physopt-exam-u3-107-vh-25",
+        "physopt-exam-u3-107-vt-14",
+        "physopt-exam-u3-107-vt-50",
+        "physopt-exam-u3-108-sp-14",
+        "physopt-exam-u3-108-sp-29",
+        "physopt-exam-u3-108-vh-2",
+        "physopt-exam-u3-108-vh-15",
+        "physopt-exam-u3-108-vh-26",
+        "physopt-exam-u3-108-vt-17",
+        "physopt-exam-u3-109-st-11",
+        "physopt-exam-u3-109-st-27",
+        "physopt-exam-u3-109-vt-1",
+        "physopt-exam-u3-109-vt-8",
+        "physopt-exam-u3-109-vt-17",
+        "physopt-exam-u3-109-vt-24",
+        "physopt-exam-u3-110-sp-16",
+        "physopt-exam-u3-110-sp-19",
+        "physopt-exam-u3-110-sp-32",
+        "physopt-exam-u3-110-vh-14",
+        "physopt-exam-u3-111-sp-24",
+        "physopt-exam-u3-111-sp-28",
+        "physopt-exam-u3-111-vh-10",
+        "physopt-exam-u3-111-vh-23",
+        "physopt-exam-u3-111-vh-36",
+        "physopt-exam-u3-112-sp-19",
+        "physopt-exam-u3-112-sp-24",
+        "physopt-exam-u3-113-vh-12",
+        "physopt-exam-u3-113-vh-20",
+        "physopt-exam-u3-114-sp-8"
+      ],
+      "years": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "matchTags": [
+        "表面屈光力"
+      ]
+    },
+    "u3:imaging": {
+      "count": 32,
+      "questionIds": [
+        "physopt-exam-u3-106-sp-3",
+        "physopt-exam-u3-106-st-18",
+        "physopt-exam-u3-106-st-26",
+        "physopt-exam-u3-106-st-28",
+        "physopt-exam-u3-106-st-32",
+        "physopt-exam-u3-106-vt-1",
+        "physopt-exam-u3-106-vt-36",
+        "physopt-exam-u3-107-sp-8",
+        "physopt-exam-u3-107-sp-22",
+        "physopt-exam-u3-107-st-9",
+        "physopt-exam-u3-107-st-12",
+        "physopt-exam-u3-107-vh-24",
+        "physopt-exam-u3-107-vt-8",
+        "physopt-exam-u3-107-vt-19",
+        "physopt-exam-u3-108-st-1",
+        "physopt-exam-u3-108-st-8",
+        "physopt-exam-u3-108-st-22",
+        "physopt-exam-u3-108-vh-3",
+        "physopt-exam-u3-108-vh-7",
+        "physopt-exam-u3-108-vt-9",
+        "physopt-exam-u3-109-sp-5",
+        "physopt-exam-u3-109-sp-12",
+        "physopt-exam-u3-109-st-6",
+        "physopt-exam-u3-109-st-28",
+        "physopt-exam-u3-109-vh-6",
+        "physopt-exam-u3-109-vh-26",
+        "physopt-exam-u3-109-vt-11",
+        "physopt-exam-u3-110-sp-10",
+        "physopt-exam-u3-111-sp-18",
+        "physopt-exam-u3-111-sp-20",
+        "physopt-exam-u3-111-vh-15",
+        "physopt-exam-u3-113-sp-12"
+      ],
+      "years": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        113
+      ],
+      "matchTags": [
+        "薄透鏡成像"
+      ]
+    },
+    "u3:focus": {
+      "count": 14,
+      "questionIds": [
+        "physopt-exam-u3-107-sp-14",
+        "physopt-exam-u3-107-st-14",
+        "physopt-exam-u3-107-st-16",
+        "physopt-exam-u3-107-vh-18",
+        "physopt-exam-u3-107-vh-26",
+        "physopt-exam-u3-108-st-14",
+        "physopt-exam-u3-108-st-16",
+        "physopt-exam-u3-108-vt-3",
+        "physopt-exam-u3-109-vh-18",
+        "physopt-exam-u3-111-sp-23",
+        "physopt-exam-u3-112-sp-16",
+        "physopt-exam-u3-113-sp-20",
+        "physopt-exam-u3-113-vh-2",
+        "physopt-exam-u3-114-sp-8"
+      ],
+      "years": [
+        107,
+        108,
+        109,
+        111,
+        112,
+        113,
+        114
+      ],
+      "matchTags": [
+        "焦距",
+        "焦點"
+      ]
+    },
+    "u3:magnification": {
+      "count": 9,
+      "questionIds": [
+        "physopt-exam-u3-106-sp-3",
+        "physopt-exam-u3-106-vt-1",
+        "physopt-exam-u3-107-st-12",
+        "physopt-exam-u3-108-vh-7",
+        "physopt-exam-u3-109-sp-13",
+        "physopt-exam-u3-109-vt-11",
+        "physopt-exam-u3-110-vh-16",
+        "physopt-exam-u3-111-sp-18",
+        "physopt-exam-u3-111-vh-7"
+      ],
+      "years": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111
+      ],
+      "matchTags": [
+        "橫向放大率"
+      ]
+    },
+    "u3:twice-focus": {
+      "count": 8,
+      "questionIds": [
+        "physopt-exam-u3-106-st-26",
+        "physopt-exam-u3-106-vt-36",
+        "physopt-exam-u3-107-vh-24",
+        "physopt-exam-u3-108-vh-3",
+        "physopt-exam-u3-109-vh-6",
+        "physopt-exam-u3-110-sp-10",
+        "physopt-exam-u3-111-vh-5",
+        "physopt-exam-u3-113-sp-12"
+      ],
+      "years": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        113
+      ],
+      "matchTags": [
+        "對稱點"
+      ]
+    },
+    "u4:vertex-distance": {
+      "count": 48,
+      "questionIds": [
+        "physopt-exam-u4-106-sp-18",
+        "physopt-exam-u4-106-sp-19",
+        "physopt-exam-u4-106-sp-49",
+        "physopt-exam-u4-106-st-1",
+        "physopt-exam-u4-106-vh-16",
+        "physopt-exam-u4-106-vt-27",
+        "physopt-exam-u4-106-vt-33",
+        "physopt-exam-u4-106-vt-39",
+        "physopt-exam-u4-107-sp-15",
+        "physopt-exam-u4-107-sp-17",
+        "physopt-exam-u4-107-sp-19",
+        "physopt-exam-u4-107-st-10",
+        "physopt-exam-u4-107-vt-6",
+        "physopt-exam-u4-107-vt-23",
+        "physopt-exam-u4-108-sp-6",
+        "physopt-exam-u4-108-sp-7",
+        "physopt-exam-u4-108-sp-17",
+        "physopt-exam-u4-108-st-27",
+        "physopt-exam-u4-108-vt-8",
+        "physopt-exam-u4-108-vt-35",
+        "physopt-exam-u4-109-sp-21",
+        "physopt-exam-u4-109-st-17",
+        "physopt-exam-u4-109-st-25",
+        "physopt-exam-u4-109-st-36",
+        "physopt-exam-u4-109-vh-3",
+        "physopt-exam-u4-109-vh-5",
+        "physopt-exam-u4-109-vt-9",
+        "physopt-exam-u4-109-vt-13",
+        "physopt-exam-u4-109-vt-14",
+        "physopt-exam-u4-109-vt-27",
+        "physopt-exam-u4-110-sp-12",
+        "physopt-exam-u4-110-vh-5",
+        "physopt-exam-u4-110-vh-23",
+        "physopt-exam-u4-111-sp-7",
+        "physopt-exam-u4-111-sp-22",
+        "physopt-exam-u4-111-sp-26",
+        "physopt-exam-u4-111-vh-12",
+        "physopt-exam-u4-112-sp-15",
+        "physopt-exam-u4-112-vh-1",
+        "physopt-exam-u4-112-vh-2",
+        "physopt-exam-u4-112-vh-13",
+        "physopt-exam-u4-112-vh-49",
+        "physopt-exam-u4-113-sp-4",
+        "physopt-exam-u4-113-sp-6",
+        "physopt-exam-u4-113-sp-21",
+        "physopt-exam-u4-113-sp-42",
+        "physopt-exam-u4-114-sp-13",
+        "physopt-exam-u4-114-vh-44"
+      ],
+      "years": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "matchTags": [
+        "頂點距離"
+      ]
+    },
+    "u4:equivalent": {
+      "count": 20,
+      "questionIds": [
+        "physopt-exam-u4-106-vh-5",
+        "physopt-exam-u4-106-vh-17",
+        "physopt-exam-u4-107-vt-10",
+        "physopt-exam-u4-108-sp-21",
+        "physopt-exam-u4-108-st-20",
+        "physopt-exam-u4-108-vt-16",
+        "physopt-exam-u4-108-vt-25",
+        "physopt-exam-u4-109-vh-12",
+        "physopt-exam-u4-109-vh-27",
+        "physopt-exam-u4-109-vt-21",
+        "physopt-exam-u4-110-sp-20",
+        "physopt-exam-u4-110-sp-39",
+        "physopt-exam-u4-110-vh-2",
+        "physopt-exam-u4-110-vh-36",
+        "physopt-exam-u4-111-sp-21",
+        "physopt-exam-u4-111-vh-17",
+        "physopt-exam-u4-112-sp-13",
+        "physopt-exam-u4-112-vh-6",
+        "physopt-exam-u4-112-vh-26",
+        "physopt-exam-u4-113-vh-21"
+      ],
+      "years": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113
+      ],
+      "matchTags": [
+        "厚透鏡",
+        "等效屈光力"
+      ]
+    },
+    "u4:vertex-power": {
+      "count": 14,
+      "questionIds": [
+        "physopt-exam-u4-107-vt-10",
+        "physopt-exam-u4-108-sp-21",
+        "physopt-exam-u4-108-vh-6",
+        "physopt-exam-u4-108-vt-16",
+        "physopt-exam-u4-108-vt-25",
+        "physopt-exam-u4-109-sp-37",
+        "physopt-exam-u4-109-vh-27",
+        "physopt-exam-u4-109-vt-21",
+        "physopt-exam-u4-110-sp-39",
+        "physopt-exam-u4-111-sp-21",
+        "physopt-exam-u4-111-vh-17",
+        "physopt-exam-u4-112-sp-13",
+        "physopt-exam-u4-112-sp-23",
+        "physopt-exam-u4-112-vh-26"
+      ],
+      "years": [
+        107,
+        108,
+        109,
+        110,
+        111,
+        112
+      ],
+      "matchTags": [
+        "後頂點屈光力",
+        "前頂點屈光力",
+        "中和屈光力"
+      ]
+    },
+    "u5:prentice": {
+      "count": 43,
+      "questionIds": [
+        "physopt-exam-u5-106-sp-24",
+        "physopt-exam-u5-106-sp-26",
+        "physopt-exam-u5-106-sp-48",
+        "physopt-exam-u5-106-st-16",
+        "physopt-exam-u5-106-vh-29",
+        "physopt-exam-u5-106-vh-30",
+        "physopt-exam-u5-106-vt-14",
+        "physopt-exam-u5-106-vt-23",
+        "physopt-exam-u5-106-vt-24",
+        "physopt-exam-u5-107-sp-30",
+        "physopt-exam-u5-107-sp-49",
+        "physopt-exam-u5-107-vh-27",
+        "physopt-exam-u5-107-vh-41",
+        "physopt-exam-u5-107-vt-25",
+        "physopt-exam-u5-107-vt-29",
+        "physopt-exam-u5-108-sp-44",
+        "physopt-exam-u5-108-sp-46",
+        "physopt-exam-u5-108-sp-50",
+        "physopt-exam-u5-108-st-29",
+        "physopt-exam-u5-108-st-43",
+        "physopt-exam-u5-108-vh-30",
+        "physopt-exam-u5-108-vh-32",
+        "physopt-exam-u5-108-vh-45",
+        "physopt-exam-u5-108-vt-34",
+        "physopt-exam-u5-109-sp-43",
+        "physopt-exam-u5-109-st-43",
+        "physopt-exam-u5-109-st-44",
+        "physopt-exam-u5-109-vh-32",
+        "physopt-exam-u5-109-vh-33",
+        "physopt-exam-u5-110-sp-42",
+        "physopt-exam-u5-110-sp-43",
+        "physopt-exam-u5-110-vh-24",
+        "physopt-exam-u5-110-vh-27",
+        "physopt-exam-u5-110-vh-28",
+        "physopt-exam-u5-110-vh-37",
+        "physopt-exam-u5-111-sp-48",
+        "physopt-exam-u5-111-vh-26",
+        "physopt-exam-u5-111-vh-27",
+        "physopt-exam-u5-112-sp-45",
+        "physopt-exam-u5-112-vh-14",
+        "physopt-exam-u5-112-vh-32",
+        "physopt-exam-u5-114-vh-27",
+        "physopt-exam-u5-114-vh-28"
+      ],
+      "years": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        114
+      ],
+      "matchTags": [
+        "Prentice 規則"
+      ]
+    },
+    "u5:prism": {
+      "count": 30,
+      "questionIds": [
+        "physopt-exam-u5-106-st-15",
+        "physopt-exam-u5-106-vh-46",
+        "physopt-exam-u5-106-vt-26",
+        "physopt-exam-u5-107-sp-29",
+        "physopt-exam-u5-107-st-29",
+        "physopt-exam-u5-107-vh-19",
+        "physopt-exam-u5-107-vh-31",
+        "physopt-exam-u5-108-sp-19",
+        "physopt-exam-u5-108-sp-43",
+        "physopt-exam-u5-108-st-17",
+        "physopt-exam-u5-108-vh-31",
+        "physopt-exam-u5-108-vt-29",
+        "physopt-exam-u5-109-sp-45",
+        "physopt-exam-u5-109-vh-32",
+        "physopt-exam-u5-109-vt-28",
+        "physopt-exam-u5-109-vt-29",
+        "physopt-exam-u5-109-vt-33",
+        "physopt-exam-u5-109-vt-34",
+        "physopt-exam-u5-110-sp-38",
+        "physopt-exam-u5-110-vh-25",
+        "physopt-exam-u5-110-vh-29",
+        "physopt-exam-u5-111-sp-50",
+        "physopt-exam-u5-111-vh-24",
+        "physopt-exam-u5-111-vh-25",
+        "physopt-exam-u5-111-vh-27",
+        "physopt-exam-u5-111-vh-30",
+        "physopt-exam-u5-112-vh-31",
+        "physopt-exam-u5-113-sp-41",
+        "physopt-exam-u5-113-vh-29",
+        "physopt-exam-u5-114-vh-26"
+      ],
+      "years": [
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "matchTags": [
+        "稜鏡度",
+        "偏折角"
+      ]
+    },
+    "u5:lens-pair": {
+      "count": 11,
+      "questionIds": [
+        "physopt-exam-u5-106-sp-32",
+        "physopt-exam-u5-106-vh-15",
+        "physopt-exam-u5-107-sp-13",
+        "physopt-exam-u5-107-vh-4",
+        "physopt-exam-u5-107-vh-9",
+        "physopt-exam-u5-108-vh-5",
+        "physopt-exam-u5-108-vt-23",
+        "physopt-exam-u5-109-vt-15",
+        "physopt-exam-u5-109-vt-22",
+        "physopt-exam-u5-114-sp-7",
+        "physopt-exam-u5-114-vh-7"
+      ],
+      "years": [
+        106,
+        107,
+        108,
+        109,
+        114
+      ],
+      "matchTags": [
+        "透鏡組"
+      ]
+    },
+    "u5:telescope": {
+      "count": 6,
+      "questionIds": [
+        "physopt-exam-u5-106-sp-9",
+        "physopt-exam-u5-106-vh-43",
+        "physopt-exam-u5-106-vt-5",
+        "physopt-exam-u5-108-vh-8",
+        "physopt-exam-u5-108-vh-18",
+        "physopt-exam-u5-111-vh-48"
+      ],
+      "years": [
+        106,
+        108,
+        111
+      ],
+      "matchTags": [
+        "伽利略望遠鏡",
+        "克卜勒望遠鏡",
+        "望遠鏡",
+        "角放大率",
+        "管長"
+      ]
+    },
+    "u5:components": {
+      "count": 3,
+      "questionIds": [
+        "physopt-exam-u5-109-vt-29",
+        "physopt-exam-u5-112-vh-31",
+        "physopt-exam-u5-114-vh-26"
+      ],
+      "years": [
+        109,
+        112,
+        114
+      ],
+      "matchTags": [
+        "合成稜鏡"
+      ]
+    }
+  },
+  "archiveQuestionCount": 1300,
+  "archivePapers": [
+    {
+      "file": "驗光師/視覺光學/106年驗光師特考.pdf",
+      "year": 106,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/106年驗光師高考.pdf",
+      "year": 106,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/107年驗光師特考.pdf",
+      "year": 107,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/107年驗光師高考.pdf",
+      "year": 107,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/108年驗光師特考.pdf",
+      "year": 108,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/108年驗光師高考.pdf",
+      "year": 108,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/109年驗光師特考.pdf",
+      "year": 109,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/109年驗光師高考.pdf",
+      "year": 109,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/110年驗光師高考.pdf",
+      "year": 110,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/111年驗光師高考.pdf",
+      "year": 111,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/112年驗光師高考.pdf",
+      "year": 112,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/113年驗光師高考.pdf",
+      "year": 113,
+      "count": 50
+    },
+    {
+      "file": "驗光師/視覺光學/114年驗光師高考.pdf",
+      "year": 114,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/106年驗光生普考.pdf",
+      "year": 106,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/106年驗光生特考.pdf",
+      "year": 106,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/107年驗光生普考.pdf",
+      "year": 107,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/107年驗光生特考.pdf",
+      "year": 107,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/108年驗光生普考.pdf",
+      "year": 108,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/108年驗光生特考.pdf",
+      "year": 108,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/109年驗光生普考.pdf",
+      "year": 109,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/109年驗光生特考.pdf",
+      "year": 109,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/110年驗光生普考.pdf",
+      "year": 110,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/111年驗光生普考.pdf",
+      "year": 111,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/112年驗光生普考.pdf",
+      "year": 112,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/113年驗光生普考.pdf",
+      "year": 113,
+      "count": 50
+    },
+    {
+      "file": "驗光生/眼鏡光學概要/114年驗光生普考.pdf",
+      "year": 114,
+      "count": 50
+    }
+  ],
+  "waveFamilies": {
+    "reflection": {
+      "count": 5,
+      "questionIds": [
+        "驗光師/視覺光學/107年驗光師高考.pdf#13",
+        "驗光師/視覺光學/109年驗光師特考.pdf#47",
+        "驗光師/視覺光學/111年驗光師高考.pdf#8",
+        "驗光師/視覺光學/112年驗光師高考.pdf#8",
+        "驗光師/視覺光學/113年驗光師高考.pdf#13"
+      ],
+      "years": [
+        107,
+        109,
+        111,
+        112,
+        113
+      ],
+      "pattern": "反射率|reflectance"
+    },
+    "film": {
+      "count": 14,
+      "questionIds": [
+        "驗光師/視覺光學/108年驗光師高考.pdf#10",
+        "驗光師/視覺光學/109年驗光師高考.pdf#40",
+        "驗光師/視覺光學/109年驗光師高考.pdf#45",
+        "驗光師/視覺光學/111年驗光師高考.pdf#9",
+        "驗光師/視覺光學/112年驗光師高考.pdf#20",
+        "驗光師/視覺光學/113年驗光師高考.pdf#48",
+        "驗光師/視覺光學/113年驗光師高考.pdf#49",
+        "驗光生/眼鏡光學概要/107年驗光生普考.pdf#43",
+        "驗光生/眼鏡光學概要/107年驗光生特考.pdf#34",
+        "驗光生/眼鏡光學概要/108年驗光生普考.pdf#32",
+        "驗光生/眼鏡光學概要/109年驗光生特考.pdf#31",
+        "驗光生/眼鏡光學概要/110年驗光生普考.pdf#31",
+        "驗光生/眼鏡光學概要/114年驗光生普考.pdf#18",
+        "驗光生/眼鏡光學概要/114年驗光生普考.pdf#37"
+      ],
+      "years": [
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "pattern": "抗反射|減反射|不反射膜|防反射|反射鍍|(?<!角)膜厚|(?<!角)膜.*四分之|薄膜|anti.reflect|quarter.wave"
+    },
+    "slit": {
+      "count": 0,
+      "questionIds": [],
+      "years": [],
+      "pattern": "狹縫|狹缝|雙縫|雙狹|單狹|single.slit|double.slit"
+    },
+    "phase": {
+      "count": 0,
+      "questionIds": [],
+      "years": [],
+      "pattern": "相位差|振幅|建設性干涉|破壞性干涉|波數|角頻率"
+    }
+  }
+}

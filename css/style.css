@@ -339,6 +339,14 @@ details.passage .pbody { max-height: 55vh; overflow: auto; border-bottom: 3px da
 .formula-body h5 { font-size: 15px; margin: 12px 0 4px; color: var(--gold); }
 .formula-logic { margin-top: 12px; padding: 8px; background: var(--bg2); border: 1px solid var(--hi); }
 .formula-logic > summary { cursor: pointer; color: var(--gold); }
+.lnote-cram { border-left-color: var(--orange) !important; }
+.lnote-cram > summary .ltree-n { color: var(--orange); }
+.exam-cram { min-width: 0; }
+.cram-item { border: 2px solid var(--hi); padding: 10px; margin: 10px 0; overflow-wrap: anywhere; }
+.cram-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.cram-head h4 { flex: 1; margin: 0; min-width: 0; color: var(--gold); }
+.cram-item p { margin: 6px 0; font-size: 15px; }
+.cram-reminders { border-top: 2px dashed var(--hi); margin-top: 10px; padding-top: 6px; }
 .formula-summary .md { overflow-x: auto; overflow-wrap: anywhere; }
 .bank-toggle:focus-visible, .bank-practice:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 .bank-explanation .explain { max-height: none; overflow: visible; padding: 12px; }
