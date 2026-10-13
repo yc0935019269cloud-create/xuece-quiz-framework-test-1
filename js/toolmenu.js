@@ -24,7 +24,8 @@
   function place() {
     const bar = document.getElementById('topbar'); if (!bar || !btn) return;
     const br = bar.getBoundingClientRect(), r = btn.getBoundingClientRect();
-    const right = Math.max(4, Math.min(br.right - r.right, br.width - menu.offsetWidth - 4));
+    // 手機（寬 ≤ 640）：選單貼齊畫面右邊；電腦：對齊 ☰ 右緣
+    const right = innerWidth <= 640 ? 8 : Math.max(4, Math.min(br.right - r.right, br.width - menu.offsetWidth - 4));
     Object.assign(menu.style, { left: 'auto', right: Math.round(right) + 'px', top: 'calc(100% + 2px)' });
   }
   function close() { if (menu) menu.hidden = true; if (btn) btn.classList.remove('on'); }

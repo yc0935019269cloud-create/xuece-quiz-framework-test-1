@@ -177,3 +177,8 @@
 
 - `U.grip` 的 `mobileH`：手機直式（寬 ≤ 640）時計算紙、AI 助教是滿版寬，把手只調高度（CSS 變數 `--mh`）；AI 助教貼底，把手在上緣中間、往上拉變高。計算機在手機上也能等比例縮放。手機與電腦的大小分開記（`winsize` 的 key 與 key_m），轉向時自動換用。
 - `HAPTIC`（`js/audio.js`）：`SFX.play` 的戰鬥音效對應不同震動（hit 輕、fire、crit、hurt、kill、boss 最重），`FX` 的 shake／shake(true) 與職業爆擊另有更強的節奏。Android 用 `navigator.vibrate`（長短＝強弱）；iOS Safari 沒有 vibrate，用 iOS 18 的 `<input type=checkbox switch>` 觸覺，一段一下、強的多下（無法調強弱、iOS 18 以前不會震）。音量面板「戰鬥震動」開關，存 localStorage `haptic`。學習模式戰鬥在作答當下（點擊同一刻）由 `onRightHit`／`onWrongHit`／`ult` 直接呼叫 `HAPTIC.buzz`：普通 < 連擊 < 破防／打倒 < 暴擊 < 必殺技；被打：格擋最輕、蓄力一擊與倒下最重（iOS 觸覺必須在點擊當下觸發）。`buzz` 不讓較弱的震動打斷還在播的較強震動。音量面板有「測試震動」按鈕，並依 UA 判斷 iOS 版本（iPhone 上的 Chrome 也是 WebKit、同樣沒有 vibrate）顯示提示；iPad 沒有震動馬達。
+
+## iPhone 觸覺改用透明原生開關（2026-10-13）
+
+- 使用者 iPhone（iOS 27）實測：程式切換開關（`HAPTIC.buzz` 的 label.click 方式）不會震，手指直接撥 `<input type=checkbox switch>` 會震。所以在 iOS 上 `HAPTIC.armTap` 用 MutationObserver 把透明原生開關（`.hap-sw`，opacity .011、蓋滿按鈕）放進作答按鈕（`.opt`、`.lc-opt`、`.lc-confirm`、`.lc-item`、`.lb-ult`、測試震動）；click 冒泡到按鈕，作答照常。iOS 只能在點擊當下震一下、無法依招式分強弱；Android 仍用 `navigator.vibrate` 分強弱。關閉戰鬥震動時 `<html>.hap-off` 隱藏開關。
+- 多功能選單：手機（≤ 640）貼齊畫面右邊（right 8px），電腦對齊 ☰ 右緣。
