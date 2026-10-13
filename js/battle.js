@@ -357,6 +357,10 @@ const RunUI = (() => {
     busy = true;
     SFX.play(res.ok ? 'correct' : 'wrong');
     const ev = R.resolve(q, res);
+    // 作答當下的衝擊（定格＋閃光＋低頻＋震動）；招式動畫隨後播放
+    const hit = ev.find(e => e.t === 'hit'), hurt = ev.find(e => e.t === 'hurt');
+    if (hit) FX.impact(hit.crit ? 'crit' : ev.some(e => e.t === 'kill') ? 'kill' : 'hit');
+    else if (hurt) FX.impact(hurt.dmg ? (ev.some(e => e.t === 'chargehit') || R.s.phase === 'dead' ? 'heavy' : 'hurt') : 'hit');
     await playEvents(ev);
     updateHud(); refreshSide(true); renderSkills();
     busy = false;

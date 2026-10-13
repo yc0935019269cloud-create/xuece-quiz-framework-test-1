@@ -1184,3 +1184,8 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .hap-host { position: relative; }
 .hap-sw { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; opacity: .011; z-index: 5; cursor: pointer; }
 .hap-off .hap-sw, :disabled > .hap-sw { display: none; }
+
+/* 作答衝擊的畫面定格（FX.impact）：場景內的動畫暫停一瞬間 */
+.impact-stop :not(.fx) { animation-play-state: paused !important; }
+.impact-vig { position: fixed; inset: 0; z-index: 70; pointer-events: none; box-shadow: inset 0 0 60px 14px var(--c); animation: vigA .45s ease-out forwards; }
+@keyframes vigA { from { opacity: 1; } to { opacity: 0; } }
