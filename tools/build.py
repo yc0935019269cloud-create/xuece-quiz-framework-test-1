@@ -467,6 +467,48 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
                     R.err(f'pack.{k}', f'沒有這個題本：{x}')
     if pack.get('prior') and not pack.get('banks'):
         R.err('pack.prior', '有 prior 就必須有 banks')
+    notes = pack.get('notes', [])
+    if not isinstance(notes, list):
+        R.err('pack.notes', 'notes 要是陣列')
+        notes = []
+    note_ids = set()
+    for ni, note in enumerate(notes):
+        NW = f'notes[{ni}]'
+        if not isinstance(note, dict) or note.get('kind') != 'formula-summary':
+            R.err(NW, '筆記 kind 目前支援 formula-summary')
+            continue
+        if not isinstance(note.get('id'), str) or not re.fullmatch(r'[a-z0-9][a-z0-9-]*', note['id']) or note['id'] in note_ids:
+            R.err(NW, '筆記 id 必須是唯一的小寫英數與 -')
+        else:
+            note_ids.add(note['id'])
+        for k in ('title', 'intro', 'conventions', 'recap'):
+            if not is_str(note.get(k)):
+                R.err(NW, f'缺少 {k}')
+        formulas = note.get('formulas')
+        if not isinstance(formulas, list) or not formulas:
+            R.err(NW, '需要非空 formulas 陣列')
+            continue
+        formula_ids = set()
+        for fi, formula in enumerate(formulas):
+            FW = f'{NW}.formulas[{fi}]'
+            if not isinstance(formula, dict):
+                R.err(FW, '公式必須是物件')
+                continue
+            if not isinstance(formula.get('id'), str) or not re.fullmatch(r'[a-z0-9][a-z0-9-]*', formula['id']) or formula['id'] in formula_ids:
+                R.err(FW, '公式 id 必須是筆記內唯一的小寫英數與 -')
+            else:
+                formula_ids.add(formula['id'])
+            for k in ('name', 'symbols', 'intuition', 'memory', 'example', 'pitfall'):
+                if not is_str(formula.get(k)):
+                    R.err(FW, f'缺少 {k}')
+            if not isinstance(formula.get('equations'), list) or not formula['equations'] or not all(is_str(e) for e in formula['equations']):
+                R.err(FW, 'equations 要是非空字串陣列')
+            for k in ('warmup', 'derivation'):
+                if formula.get(k) is not None and not is_str(formula[k]):
+                    R.err(FW, f'{k} 要是字串')
+        refs = note.get('references', [])
+        if not isinstance(refs, list) or not all(isinstance(r, dict) and is_str(r.get('title')) and str(r.get('url', '')).startswith('https://') for r in refs):
+            R.err(NW, 'references 要是含 title、https url 的物件陣列')
     lessons = pack.get('lessons')
     if not isinstance(lessons, list) or not lessons:
         R.err('pack', '缺少 lessons')

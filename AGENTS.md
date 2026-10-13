@@ -132,3 +132,10 @@
 - 收藏加入 `exportAll/importAll/resetAll`，既有雲端／備份流程會一起攜帶；舊備份缺少 favorites 時保留本機收藏，含 favorites 的新版備份完整取代（含空收藏）。跨裝置請使用新版網站，沒有另改雲端 SQL 或同步衝突規則。
 - 限時遠征的計時扣除 `FAV_UI.pausedTime()`；資料夾視窗接收焦點，避免 Enter 重複啟動底下按鈕，QV 原本的 modal 快捷鍵防護仍有效。所有按鈕事件相容上游 iOS `.hap-sw` 子 input，勿改成只認 e.target 等於 button。
 - 測試：Edge iPad 路徑 39 項、桌機 38 項（含 390px）通過，全 JS 解析與 `build.py --check --strict` exit 0；原有符號覆蓋提醒仍在。工具／界限：`tools/favorites-qa/README.md`，摘要／截圖：`output/playwright/favorites-*`。測試 context 的 localStorage 已還原；此輪用 HTTP，沒有實機 iPad、file:// 或使用者帳號雲端往返測試。
+## 生理光學公式統整（2026-10-13，v90）
+
+- 六個 `content/learn/physopt/` 單元各有 `notes` → `formula-summary`，顯示在知識筆記該單元最上方，不用先完成課程。共 62 組公式（139 行公式），先列公式清單，可點選跳到講解；每組含生活畫面、符號、簡單數字分步練習、正式例子、記法、易錯處，進階推導另行收合。第六單元仍標期中考不考。
+- `js/learn.js` 的 `formulaNote()` 和 notes() 渲染與搜尋（包含 warmup／derivation），不新增 lesson／step／複習卡，不改 earned-card gating；既有課程、pick.ids 與進度 ID 經比對 97 個單元完全相同。欄位規格見 `docs/格式_學習模式.md` §3-A，生成的 data/learn.js 勿手改；notes 不視為 teaches 覆蓋。
+- `tools/build.py` 檢查 notes 格式與 ID，`js/importer.js` 保留完整筆記；舊導入單元沒 notes 時保留內建新筆記，明確 notes: [] 可清空。修正原掃描把學習單元的 banks（題本 ID）誤認為 bundle 的情況；仍使用原導入、備份與雲端進度流程。
+- 內容沿用課程左負右正、Pe/Pv/Pf/Pn 與向量 [q,h]，另對照 OpenStax／KrakenOS。特別釐清臨界角邊界、約化距離 d/n 與光程 nd、像面 C=0 與無焦 B=0、單縫整數暗紋、膜反射相位與振幅匹配；沒有更動原課程字句。核對來源在各統整底部。
+- QA：58 項數值驗算、Edge iPad 路徑 40 項、桌機 40 項通過（含 390px）；嚴格建置 exit 0，原有符號覆蓋提醒仍在。工具 `tools/formulas-qa/`，摘要與截圖 `output/playwright/formulas-*`。獨立 context 已還原 localStorage 並移除導入 fixture；此輪使用 HTTP，沒有實機 iPad／file://／真實國中生閱讀理解測試。

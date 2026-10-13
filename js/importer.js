@@ -113,7 +113,9 @@ const IMP = (() => {
     QB.exams.sort((a, b) => (order.indexOf(a.subj) - order.indexOf(b.subj)) || ((a.order ?? 999) - (b.order ?? 999)) || String(a.year || '').localeCompare(String(b.year || '')) || a.id.localeCompare(b.id));
     items.filter(i => i.kind === 'learn').forEach(i => {
       const p = i.data; if (!C.SUBJECTS[p.subject]) C.addSubject({ id: p.subject, name: p.subject, theme: 'mix' });
-      const k = L.packs.findIndex(x => x.id === p.id); if (k >= 0) L.packs.splice(k, 1);
+      const k = L.packs.findIndex(x => x.id === p.id);
+      // 舊導入檔沒有單元筆記時，保留新版內建的統整；明確 notes: [] 則照導入檔取代。
+      if (k >= 0) { if (p.notes === undefined && L.packs[k].notes) p.notes = L.packs[k].notes; L.packs.splice(k, 1); }
       L.packs.push(p);
     });
     L.packs.sort((a, b) => (order.indexOf(a.subject) - order.indexOf(b.subject)) || ((a.order ?? 999) - (b.order ?? 999)) || a.id.localeCompare(b.id));
@@ -312,6 +314,27 @@ const IMP = (() => {
     p.path = path.map(String).filter(Boolean).slice(0, 5);
     p.unit = p.unit || p.path[p.path.length - 1] || p.title;
     ['desc', 'source'].forEach(k => { if (p[k] !== undefined) p[k] = str(p[k]); });
+    if (p.notes !== undefined) {
+      const ids = new Set();
+      if (!Array.isArray(p.notes)) { W.push('單元 notes 不是陣列，已略過'); p.notes = []; }
+      p.notes = p.notes.filter(n => {
+        if (!n || n.kind !== 'formula-summary' || !/^[a-z0-9][a-z0-9-]*$/.test(n.id || '') || ids.has(n.id)) { W.push('單元筆記格式或 id 不符，已略過'); return false; }
+        ids.add(n.id);
+        ['title', 'intro', 'conventions', 'recap'].forEach(k => { n[k] = str(n[k]); });
+        if (!n.title || !n.intro || !n.conventions || !n.recap) { W.push('公式統整缺少說明，已略過'); return false; }
+        const fids = new Set();
+        n.formulas = (Array.isArray(n.formulas) ? n.formulas : []).filter(f => {
+          if (!f || !/^[a-z0-9][a-z0-9-]*$/.test(f.id || '') || fids.has(f.id)) return false;
+          fids.add(f.id);
+          ['name', 'symbols', 'intuition', 'memory', 'example', 'pitfall', 'warmup', 'derivation'].forEach(k => { f[k] = str(f[k]); });
+          f.equations = (Array.isArray(f.equations) ? f.equations : []).map(str).filter(Boolean);
+          return f.equations.length && ['name', 'symbols', 'intuition', 'memory', 'example', 'pitfall'].every(k => f[k]);
+        });
+        n.references = (Array.isArray(n.references) ? n.references : []).filter(r => r && str(r.title) && /^https:\/\//.test(str(r.url))).map(r => ({ title: str(r.title), url: str(r.url) }));
+        if (!n.formulas.length) { W.push('公式統整沒有完整公式，已略過'); return false; }
+        return true;
+      });
+    }
     const lessons = Array.isArray(p.lessons) ? p.lessons : [];
     const outL = [];
     lessons.forEach((l, li) => {
@@ -435,6 +458,8 @@ const IMP = (() => {
         else push(d, { questions: o });
         return;
       }
+      // 學習單元的 banks 是題本 ID 清單，不能誤判成 bundle 裡的題本物件。
+      if (o && (o.lessons || o.schema === 'xd-learn/1')) { push(d, o); return; }
       if (o && (o.schema === 'xd-bundle/1' || o.sets || o.packs || o.banks)) {
         if (o.subjects) push(d, { subjects: o.subjects, _cfg: true });
         (o.sets || o.banks || []).forEach(x => push(d, x)); (o.packs || o.learn || []).forEach(x => push(d, x));
