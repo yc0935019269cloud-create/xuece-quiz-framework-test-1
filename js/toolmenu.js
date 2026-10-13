@@ -20,11 +20,18 @@
     el.style.left = left + 'px'; el.style.right = 'auto'; el.style.top = Math.round(r.bottom + 6) + 'px';
     el.dataset.anchor = el.style.left;
   }
+  /* 選單掛在頂部列裡（頂部列是 sticky），用相對位置對齊 ☰ 的右緣：捲動、iPhone 網址列收合時都跟著頂部列走，不會跑掉 */
+  function place() {
+    const bar = document.getElementById('topbar'); if (!bar || !btn) return;
+    const br = bar.getBoundingClientRect(), r = btn.getBoundingClientRect();
+    const right = Math.max(4, Math.min(br.right - r.right, br.width - menu.offsetWidth - 4));
+    Object.assign(menu.style, { left: 'auto', right: Math.round(right) + 'px', top: 'calc(100% + 2px)' });
+  }
   function close() { if (menu) menu.hidden = true; if (btn) btn.classList.remove('on'); }
   function toggle() {
     const show = menu.hidden;
     menu.hidden = !show; btn.classList.toggle('on', show);
-    if (show) anchor(menu);
+    if (show) place();
     if (show) setTimeout(() => document.addEventListener('pointerdown', function out(e) {
       if (!menu.contains(e.target) && e.target !== btn) close();
       if (menu.hidden || !menu.contains(e.target)) document.removeEventListener('pointerdown', out);
@@ -53,7 +60,7 @@
     });
     const pomo = document.getElementById('pomoMini');
     res.insertBefore(btn, pomo ? pomo.nextSibling : res.querySelector('.res'));
-    document.body.appendChild(menu);
+    (document.getElementById('topbar') || document.body).appendChild(menu);
     btn.onclick = toggle;
     // 快速靜音：放在 ☰ 旁邊，一鍵切換全部聲音（背景音樂、音效、環境音）
     const mute = U.h('<button class="px-btn small" id="muteBtn"></button>');
@@ -65,7 +72,7 @@
     VOL.on(paint); paint();
     res.insertBefore(mute, btn.nextSibling);
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !menu.hidden) close(); });
-    addEventListener('resize', () => { if (!menu.hidden) anchor(menu); });
+    addEventListener('resize', () => { if (!menu.hidden) place(); });
   }
   document.addEventListener('DOMContentLoaded', () => setTimeout(mount, 0));
 })();
