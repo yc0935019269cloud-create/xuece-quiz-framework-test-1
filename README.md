@@ -78,6 +78,7 @@ js/ css/                遊戲程式
 - **學習戰鬥**：每段一隻怪物，讀概念卡累積能量、第一次答對造成傷害、答錯被反擊；實戰有精英怪、課末有魔王總複習。可切換平靜模式。
 - **📥 導入素材**、**📋 AI 提示詞**：見上方「零」。
 - **題庫**：列表直接顯示完整題幹、選項與圖片；點題目或選項可展開／收合詳解，按「練習此題」進行作答。**錯題本**（連續答對 2 次畢業）、**統計**。
+- **題目收藏**：遠征與練習中按「☆ 收藏」即可保存；「收藏資料夾」可把一題放進多個資料夾。普通題庫的「收藏」篩選可找全部收藏、未分類或指定資料夾，並用篩選結果出征；「管理資料夾」可新增、改名與刪除（刪除資料夾會保留收藏題目）。限時遠征整理資料夾時暫停倒數。
 - 職業 5 種、寵物 9 隻、營地互動、成就、番茄鐘與專注花園、背景音樂與白噪音。
 - **番茄鐘循環**：標準循環（專注／短休息／長休息長度、每幾輪長休息、總輪數或無限）或自訂順序（任意排列專注與休息段落、重複幾次或無限）；可分別設定「專注後自動休息」「短休息後自動繼續」「長休息後自動繼續」，沒自動的地方會停在「下一段」讓你開始、跳過或結束循環。
 - 鍵盤：A–J／1–5 作答，Enter 確認／繼續。
@@ -99,7 +100,7 @@ js/ css/                遊戲程式
 ## 技術原則
 - 純 HTML／CSS／JS，無建置、無框架、無 CDN；必須能用 `file://` 開（不用 ES modules、不用 fetch；資料以 `data/*.js` 的全域變數提供）。
 - 改 JS／CSS 後把 `index.html` 所有 `?v=N` 加一（避免快取）。
-- 腳本順序：`data/bank.js → data/learn.js → data/prompts.js → util → sprites → pets → audio → content → content2 → store → secrets → question → run → fx → battle → screens → camp → pomo → learn → importer → prompts_ui → main`。`main.js` 的 `init` 會先 `await IMP.load()` 再畫營地。
+- 腳本順序：`data/bank.js → data/learn.js → data/prompts.js → util → sprites → pets → audio → content → content2 → store → favorites → secrets → question → run → fx → battle → screens → camp → pomo → learn → importer → prompts_ui → main`。`main.js` 的 `init` 會先 `await IMP.load()` 再畫營地。
 
 ## 與學測版的差異（框架化改了什麼）
 | 項目 | 做法 |
@@ -189,3 +190,11 @@ js/ css/                遊戲程式
 
 - 已把上述題庫卡片／iPad 音訊修正合併到 `origin/main` 的 v87（`cafa319`）；新版的觸覺回饋、戰鬥打擊演出、可拖曳小工具與學習模式上一頁／跳頁功能保留。所有入口快取參數統一為 v88。
 - 合併後重跑 iPad 音訊路徑 19 項與題庫／原生觸覺開關相容性 9 項通過；所有 JS 語法及 `python tools/build.py --check --strict` 通過。內容的 5 個符號覆蓋提醒是上游既有資料，建置輸入與上游一致。
+
+## 題目收藏與資料夾（2026-10-13，v89）
+
+- `js/favorites.js`（Store 之後、question 之前載入）提供共用收藏按鈕、資料夾視窗與管理入口；`QV.metaHTML` 讓遠征／題庫練習／真實題庫的學習實戰可收藏，題庫卡片也有相同控制。資料夾名稱需轉義；一題可以放多個資料夾，未分類可直接收藏，刪除資料夾保留題目與其他分類。
+- `Store.favorites` 存在 `SKEY('favorites')`，形狀 `{folders:[{id,name}],items:{qid:{folders:[folderId],at}}}`。收藏不改作答／錯題紀錄；保留尚未載入的導入題目 ID。`Store.filter` 支援 `favorites: all/saved/unfiled` 與 `favoriteFolder`，題庫篩選可和原科目／題本／狀態共同使用，出征沿用同一結果。
+- 收藏加入 `exportAll/importAll/resetAll`，既有雲端／備份流程會一起攜帶；舊備份缺少 favorites 時保留本機收藏，含 favorites 的新版備份完整取代（含空收藏）。跨裝置請使用新版網站，沒有另改雲端 SQL 或同步衝突規則。
+- 限時遠征的計時扣除 `FAV_UI.pausedTime()`；資料夾視窗接收焦點，避免 Enter 重複啟動底下按鈕，QV 原本的 modal 快捷鍵防護仍有效。所有按鈕事件相容上游 iOS `.hap-sw` 子 input，勿改成只認 e.target 等於 button。
+- 測試：Edge iPad 路徑 39 項、桌機 38 項（含 390px）通過，全 JS 解析與 `build.py --check --strict` exit 0；原有符號覆蓋提醒仍在。工具／界限：`tools/favorites-qa/README.md`，摘要／截圖：`output/playwright/favorites-*`。測試 context 的 localStorage 已還原；此輪用 HTTP，沒有實機 iPad、file:// 或使用者帳號雲端往返測試。

@@ -1,6 +1,6 @@
 /* 存檔：localStorage 自動儲存（角色成長、作答紀錄、錯題、遠征進度） */
 const Store = (() => {
-  const K = { profile: SKEY('profile'), qs: SKEY('qstats'), wrong: SKEY('wrong'), run: SKEY('run'), set: SKEY('settings') };
+  const K = { profile: SKEY('profile'), qs: SKEY('qstats'), wrong: SKEY('wrong'), run: SKEY('run'), set: SKEY('settings'), favorites: SKEY('favorites') };
   function load(k, def) {
     try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : def; } catch (e) { return def; }
   }
@@ -37,6 +37,20 @@ const Store = (() => {
   let qs = load(K.qs, {});
   let wrong = load(K.wrong, {});
   let settings = Object.assign({ autoExplain: true, confirmSingle: false }, load(K.set, {}));
+  // 保留尚未載入的導入題目 ID；收藏不改動作答與錯題紀錄。
+  function normalizeFavorites(raw) {
+    const folders = [], items = Object.create(null), ids = new Set();
+    (Array.isArray(raw?.folders) ? raw.folders : []).forEach(f => {
+      if (!f || typeof f.id !== 'string' || !f.id || ids.has(f.id) || typeof f.name !== 'string' || !f.name.trim()) return;
+      ids.add(f.id); folders.push({ id: f.id, name: f.name.trim().slice(0, 50) });
+    });
+    if (raw?.items && typeof raw.items === 'object' && !Array.isArray(raw.items)) Object.entries(raw.items).forEach(([id, item]) => {
+      if (!id || !item || typeof item !== 'object') return;
+      items[id] = { folders: [...new Set((Array.isArray(item.folders) ? item.folders : []).filter(fid => ids.has(fid)))], at: Number.isFinite(item.at) ? item.at : 0 };
+    });
+    return { folders, items };
+  }
+  let favorites = normalizeFavorites(load(K.favorites, null));
 
   const Q = {}; // id -> question
   const EX = {}; // id -> exam
@@ -50,6 +64,44 @@ const Store = (() => {
   function saveProfile() { save(K.profile, profile); UI_refreshTop && UI_refreshTop(); }
   function saveQs() { save(K.qs, qs); }
   function saveWrong() { save(K.wrong, wrong); }
+  function saveFavorites() { save(K.favorites, favorites); document.dispatchEvent(new Event('favoriteschange')); }
+  function isFavorite(id) { return Object.hasOwn(favorites.items, id); }
+  function setFavorite(id, on) {
+    if (!Q[id]) return;
+    if (on) { if (!isFavorite(id)) favorites.items[id] = { folders: [], at: Date.now() }; }
+    else delete favorites.items[id];
+    saveFavorites();
+  }
+  function setFavoriteFolders(id, folders) {
+    if (!Q[id]) return;
+    const valid = new Set(favorites.folders.map(f => f.id));
+    favorites.items[id] = { folders: [...new Set(folders.filter(fid => valid.has(fid)))], at: favorites.items[id]?.at || Date.now() };
+    saveFavorites();
+  }
+  function folderName(name, except) {
+    name = String(name || '').trim();
+    if (!name) throw new Error('請輸入資料夾名稱');
+    if (name.length > 50) throw new Error('資料夾名稱最多 50 個字');
+    if (favorites.folders.some(f => f.id !== except && f.name === name)) throw new Error('已有同名資料夾');
+    return name;
+  }
+  function createFavoriteFolder(name) {
+    name = folderName(name);
+    const id = 'f_' + (globalThis.crypto?.randomUUID?.() || Date.now().toString(36) + '_' + Math.random().toString(36).slice(2));
+    favorites.folders.push({ id, name }); saveFavorites(); return id;
+  }
+  function renameFavoriteFolder(id, name) {
+    const f = favorites.folders.find(f => f.id === id); if (!f) return;
+    f.name = folderName(name, id); saveFavorites();
+  }
+  function deleteFavoriteFolder(id) {
+    favorites.folders = favorites.folders.filter(f => f.id !== id);
+    Object.values(favorites.items).forEach(item => { item.folders = item.folders.filter(fid => fid !== id); });
+    saveFavorites();
+  }
+  function favoriteCount(folder) {
+    return Object.entries(favorites.items).filter(([id, item]) => Q[id] && (folder === undefined || (folder === null ? !item.folders.length : item.folders.includes(folder)))).length;
+  }
 
   /* 作答紀錄 */
   function record(qid, ok) {
@@ -81,6 +133,10 @@ const Store = (() => {
     if (opt.subjects && opt.subjects.length) { const s = new Set(opt.subjects); list = list.filter(q => s.has(EX[q.exam].subj)); }
     if (opt.years && opt.years.length) { const s = new Set(opt.years.map(Number)); list = list.filter(q => s.has(EX[q.exam].year)); }
     if (opt.types && opt.types.length) { const s = new Set(opt.types); list = list.filter(q => s.has(q.type)); }
+    if (opt.favorites === 'saved' || opt.favorites === 'unfiled' || opt.favoriteFolder) list = list.filter(q => {
+      const item = favorites.items[q.id];
+      return item && (!opt.favoriteFolder || item.folders.includes(opt.favoriteFolder)) && (opt.favorites !== 'unfiled' || !item.folders.length);
+    });
     const st = opt.status || 'all';
     if (st === 'new') list = list.filter(q => !qs[q.id]?.a);
     else if (st === 'wrong') list = list.filter(q => qs[q.id]?.w > 0);
@@ -159,12 +215,14 @@ const Store = (() => {
   function loadRun() { return load(K.run, null); }
 
   function exportAll() {
-    return JSON.stringify({ v: 1, project: (window.QB.meta || {}).id, profile, qs, wrong, settings, run: loadRun(), pomo: typeof POMO !== 'undefined' ? POMO.exportData() : null, learn: typeof LEARN_UI !== 'undefined' ? LEARN_UI.exportData() : null, peglin: typeof PEGLIN !== 'undefined' ? PEGLIN.exportData() : null, at: new Date().toISOString() });
+    return JSON.stringify({ v: 1, project: (window.QB.meta || {}).id, profile, qs, wrong, settings, favorites, run: loadRun(), pomo: typeof POMO !== 'undefined' ? POMO.exportData() : null, learn: typeof LEARN_UI !== 'undefined' ? LEARN_UI.exportData() : null, peglin: typeof PEGLIN !== 'undefined' ? PEGLIN.exportData() : null, at: new Date().toISOString() });
   }
   function importAll(txt) {
     const d = JSON.parse(txt);
     if (!d.profile) throw new Error('格式不符');
     profile = Object.assign(defProfile(), d.profile); migrateRelics(d.profile, profile); qs = d.qs || {}; wrong = d.wrong || {}; settings = Object.assign(settings, d.settings || {});
+    // 舊備份沒有收藏欄位時保留本機收藏；新版備份（包括空收藏）則完整還原。
+    if (Object.hasOwn(d, 'favorites')) { favorites = normalizeFavorites(d.favorites); saveFavorites(); }
     save(K.profile, profile); saveQs(); saveWrong(); save(K.set, settings); saveRun(d.run || null); if (d.pomo) save(SKEY('pomo'), d.pomo); if (d.learn) save(SKEY('learn'), d.learn);
     if (d.peglin && typeof PEGLIN !== 'undefined') PEGLIN.importData(d.peglin);
   }
@@ -173,7 +231,8 @@ const Store = (() => {
 
   let UI_refreshTop = null;
   return {
-    get profile() { return profile; }, get qs() { return qs; }, get wrong() { return wrong; }, get settings() { return settings; },
+    get profile() { return profile; }, get qs() { return qs; }, get wrong() { return wrong; }, get settings() { return settings; }, get favorites() { return favorites; },
+    isFavorite, setFavorite, setFavoriteFolders, createFavoriteFolder, renameFavoriteFolder, deleteFavoriteFolder, favoriteCount,
     Q, EX, reindex, addClassXp, heroTile, daily, touchStreak, petName, petHTML, record, status, filter, examStats, addGems, addAccXp, accNeed, upg, petXp, saveProfile, saveWrong, saveRun, loadRun,
     exportAll, importAll, resetAll, saveSettings,
     onTop(fn) { UI_refreshTop = fn; }

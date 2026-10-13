@@ -309,6 +309,20 @@ details.passage .pbody { max-height: 55vh; overflow: auto; border-bottom: 3px da
 .qpreview-text .md p { margin: 0; }
 .qpreview-note { color: #6b4a1f; font-size: 14px; margin: 10px 8px 4px; }
 .bank-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+.fav-controls { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; min-width: 0; }
+.qmeta > .fav-controls { flex-basis: 100%; margin-top: 4px; }
+.fav-label, .fav-question { overflow-wrap: anywhere; }
+.fav-label { max-width: 260px; }
+.fav-filter { max-width: min(380px, 100%); }
+.fav-create { display: flex; gap: 8px; flex-wrap: wrap; }
+.fav-create .px-in { flex: 1; width: 180px; min-width: 0; }
+.fav-error:empty { display: none; }
+.fav-name { width: 100%; }
+.fav-folder-list { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+.fav-folder-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; border: 2px solid var(--line); padding: 8px; }
+.fav-folder-name { display: flex; flex: 1; min-width: 120px; gap: 10px; align-items: center; overflow-wrap: anywhere; }
+.fav-folder-name input { flex: none; width: 20px; height: 20px; accent-color: var(--gold); }
+.fav-folder-actions { display: flex; gap: 6px; }
 .bank-toggle:focus-visible, .bank-practice:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
 .bank-explanation .explain { max-height: none; overflow: visible; padding: 12px; }
 .bank-explanation .md { overflow-x: auto; overflow-wrap: anywhere; }

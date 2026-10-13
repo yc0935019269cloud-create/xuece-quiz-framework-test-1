@@ -476,7 +476,7 @@ const Screens = (() => {
 
   /* ---------- 題庫 ---------- */
   function bank(init) {
-    const state = Object.assign({ subjects: [], exams: [], types: [], status: 'all', search: '', page: 0 }, init || {});
+    const state = Object.assign({ subjects: [], exams: [], types: [], status: 'all', search: '', page: 0, favorites: 'all', favoriteFolder: '' }, init || {});
     const expanded = new Set();
     scr().innerHTML = `<div class="panel"><h2>題庫</h2>
       <div class="filters">
@@ -484,6 +484,7 @@ const Screens = (() => {
         <div class="frow"><label>題本</label><span id="fy"></span></div>
         <div class="frow"><label>題型</label><span id="ft">${chipGroup(TYPES, state.types)}</span></div>
         <div class="frow"><label>狀態</label><span id="fs">${chipGroup(STATUS, [state.status], false)}</span></div>
+        <div class="frow"><label for="ff">收藏</label><select class="px-in fav-filter" id="ff" aria-label="收藏篩選"></select><button class="px-btn small" data-fav-manage>管理資料夾</button></div>
         <div class="frow"><label>搜尋</label><input class="px-in" id="fq" placeholder="題目、標籤或詳解的關鍵字" style="width:min(380px,100%)"></div>
       </div>
       <div class="row mt"><span id="cnt" class="gold-t"></span><span class="grow"></span><button class="px-btn small gold" id="runit">用這些題目出征</button></div>
@@ -498,7 +499,7 @@ const Screens = (() => {
           <span class="tag">第 ${U.esc(q.n)} 題</span><span class="tag ${q.type}">${QV.typeName(q)}</span>${q.label ? `<span class="tag">${U.esc(q.label)}</span>` : ''}
           ${w ? `<span class="small-t ${w.done ? 'green-t' : 'red-t'}">${w.done ? '（錯題已掌握）' : `（錯 ${w.n} 次）`}</span>` : ''}</div><div class="bank-status">${stTag}</div></div>
         <div class="bank-preview">${QV.previewHTML(q)}</div>
-        <div class="bank-actions"><button class="px-btn small bank-toggle" aria-expanded="false" aria-controls="bank-ex-${U.esc(q.id)}">▸ 展開詳解</button><span class="grow"></span><button class="px-btn small bank-practice">練習此題</button></div>
+        <div class="bank-actions"><button class="px-btn small bank-toggle" aria-expanded="false" aria-controls="bank-ex-${U.esc(q.id)}">▸ 展開詳解</button>${FAV_UI.controls(q)}<span class="grow"></span><button class="px-btn small bank-practice">練習此題</button></div>
         <div class="bank-explanation" id="bank-ex-${U.esc(q.id)}" hidden></div></article>`);
       const toggle = row.querySelector('.bank-toggle'), explanation = row.querySelector('.bank-explanation');
       function reveal(open) {
@@ -530,6 +531,19 @@ const Screens = (() => {
       U.$$('[data-p]', pg).forEach(b => b.onclick = () => { state.page += Number(b.dataset.p); draw(); window.scrollTo(0, 0); });
     };
     const upd = () => { state.page = 0; draw(); };
+    const favoritesPicker = U.$('#ff');
+    function drawFavorites() {
+      if (state.favoriteFolder && !Store.favorites.folders.some(f => f.id === state.favoriteFolder)) { state.favoriteFolder = ''; state.favorites = 'saved'; }
+      favoritesPicker.innerHTML = `<option value="all">全部題目</option><option value="saved">★ 全部收藏（${Store.favoriteCount()}）</option><option value="unfiled">未分類（${Store.favoriteCount(null)}）</option>` + Store.favorites.folders.map(f => `<option value="folder:${U.esc(f.id)}">${U.esc(f.name)}（${Store.favoriteCount(f.id)}）</option>`).join('');
+      favoritesPicker.value = state.favoriteFolder ? 'folder:' + state.favoriteFolder : state.favorites;
+    }
+    favoritesPicker.onchange = () => {
+      const val = favoritesPicker.value;
+      state.favoriteFolder = val.startsWith('folder:') ? val.slice(7) : '';
+      state.favorites = state.favoriteFolder ? 'saved' : val; upd();
+    };
+    FAV_UI.watch(favoritesPicker, () => { drawFavorites(); draw(); });
+    drawFavorites();
     const drawSets = setPicker(U.$('#fy'), state, upd, { allIfNone: true });
     bindChips(scr(), '#fsj', state, 'subjects', true, () => { drawSets(); upd(); });
     bindChips(scr(), '#ft', state, 'types', true, upd);

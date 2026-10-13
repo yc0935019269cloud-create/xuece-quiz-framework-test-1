@@ -338,9 +338,9 @@ const RunUI = (() => {
     if (lim) {
       const tb = U.h(`<div class="timer"><i></i><span></span></div>`);
       panel.prepend(tb);
-      const t0 = Date.now();
+      const t0 = Date.now(), paused0 = FAV_UI.pausedTime();
       const tick = () => {
-        const left = Math.max(0, lim - (Date.now() - t0) / 1000);
+        const left = Math.max(0, lim - (Date.now() - t0 - (FAV_UI.pausedTime() - paused0)) / 1000);
         tb.firstElementChild.style.width = (left / lim * 100) + '%';
         tb.lastElementChild.textContent = `⌛ ${Math.ceil(left)} 秒`;
         tb.classList.toggle('low', left < 10);

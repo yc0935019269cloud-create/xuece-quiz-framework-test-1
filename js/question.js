@@ -19,7 +19,7 @@ const QV = (() => {
     const stTag = st === 'new' ? '' : st === 'right' ? '<span class="tag ok">答對過</span>' : '<span class="tag ng">上次答錯</span>';
     return `<div class="qmeta"><span class="tag" style="border-color:${subjColor(ex)}">${U.esc(exLabel(ex))}</span>
       <span class="tag">第 ${U.esc(q.n)} 題</span><span class="tag ${q.type}">${typeName(q)}</span>
-      ${stTag}</div>`;
+      ${stTag}${FAV_UI.controls(q)}</div>`;
   }
 
   function bodyHTML(q, withChoices = false) {
