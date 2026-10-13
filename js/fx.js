@@ -93,6 +93,30 @@ const FX = (() => {
   }
   function wpn(c, ms = 450) { cls(weapon(), c, ms + 50); }
 
+  /* ---------------- 作答當下的衝擊（iPhone 只會在點擊那一刻震一下，所以打擊感集中在這一刻） ----------------
+   * kind：hit 普通／combo 連擊／kill 打倒、破防／crit 暴擊／ult 必殺技／hurt 被打／heavy 蓄力一擊或倒下
+   * 畫面定格（hit-stop）＋閃光＋晃動＋低頻音效；opt.buzz=false 時不另外送 Android 震動（呼叫端自己送） */
+  const IMPACT = {
+    hit: { stop: 50, shake: 0, flash: 'rgba(255,255,255,.18)', sfx: 'thump', buzz: 20 },
+    combo: { stop: 80, shake: 1, flash: 'rgba(255,255,255,.28)', sfx: 'thump', buzz: [30, 25, 30] },
+    kill: { vig: 'rgba(255,220,120,.45)', stop: 120, shake: 1, flash: 'rgba(255,240,200,.38)', sfx: 'boom', buzz: [40, 40, 100] },
+    crit: { vig: 'rgba(255,200,80,.7)', stop: 160, shake: 2, flash: 'rgba(255,230,150,.5)', sfx: 'boom', buzz: [70, 30, 70, 30, 140] },
+    ult: { vig: 'rgba(255,230,120,.85)', stop: 220, shake: 2, flash: 'rgba(255,240,170,.6)', sfx: 'boom', buzz: [50, 30, 50, 30, 50, 30, 180] },
+    hurt: { vig: 'rgba(236,60,60,.45)', stop: 70, shake: 1, flash: 'rgba(236,84,84,.3)', sfx: 'oof', buzz: [55, 40, 25] },
+    heavy: { vig: 'rgba(220,30,30,.75)', stop: 140, shake: 2, flash: 'rgba(236,60,60,.45)', sfx: 'boom', buzz: [90, 40, 90] }
+  };
+  function impact(kind, opt = {}) {
+    const k = IMPACT[kind]; const st = stage(); if (!k || !st) return;
+    st.classList.add('impact-stop'); setTimeout(() => st.classList.remove('impact-stop'), k.stop);
+    add(`<div class="fx flash" style="background:${k.flash}"></div>`, 300);
+    if (k.shake) cls(st, k.shake > 1 ? 'shake-big' : 'shake', 420);
+    if (kind === 'crit' || kind === 'ult') sparks(10, '#ffe08a');
+    // 手機上戰鬥條常被捲到畫面外：較重的衝擊在整個畫面邊緣閃一下光暈
+    if (k.vig) { const v = document.createElement('div'); v.className = 'impact-vig'; v.style.setProperty('--c', k.vig); document.body.appendChild(v); setTimeout(() => v.remove(), 450); }
+    SFX.play(k.sfx);
+    if (opt.buzz !== false) HAPTIC.buzz(k.buzz);
+  }
+
   /* ---------------- 各職業攻擊（多種隨機） ---------------- */
   const S = ms => U.sleep(ms);
   const ATTACKS = {
@@ -228,5 +252,5 @@ const FX = (() => {
     }
   }
 
-  return { weaponHTML, heroHD, heroBattle, attack, critical, pickAttack, monStrike, stageBG, themeFor, THEMES, ATTACKS };
+  return { weaponHTML, heroHD, heroBattle, attack, critical, pickAttack, monStrike, stageBG, themeFor, THEMES, ATTACKS, impact };
 })();

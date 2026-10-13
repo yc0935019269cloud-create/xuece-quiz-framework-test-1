@@ -69,7 +69,7 @@ const HAPTIC = (() => {
   }
   // 依音效決定震動（只有戰鬥相關的音效）
   const BY_SFX = {
-    hit: 18, fire: 28, crit: [45, 35, 70], hurt: [70, 40, 35], kill: [25, 40, 90],
+    hit: 18, fire: 28, thump: 25, boom: [60, 30, 120], oof: [50, 30, 30], crit: [45, 35, 70], hurt: [70, 40, 35], kill: [25, 40, 90],
     boss: [90, 60, 140], skill: [15, 30, 15, 30, 40], heal: [8, 60, 8]
   };
   const sfx = name => { if (BY_SFX[name] != null) buzz(BY_SFX[name]); };
@@ -112,8 +112,12 @@ const SFX = (() => {
   }
   const lib = {
     click: () => tone(660, .05, 'square', .04),
-    hit: () => { noise(.12, .12); tone(220, .12, 'square', .06, -120); },
-    crit: () => { noise(.18, .16); tone(880, .1, 'square', .07); tone(1320, .15, 'square', .06, 0, .08); },
+    hit: () => { noise(.12, .12); tone(220, .12, 'square', .06, -120); tone(130, .14, 'sine', .14, -80); },
+    crit: () => { noise(.18, .16); tone(880, .1, 'square', .07); tone(1320, .15, 'square', .06, 0, .08); tone(110, .4, 'sine', .22, -75); },
+    // 打擊重量：低頻「咚」（作答當下的衝擊）、「轟」（暴擊、必殺技、打倒）、被打的悶響
+    thump: () => { tone(150, .16, 'sine', .2, -100); noise(.05, .07); },
+    boom: () => { tone(120, .5, 'sine', .3, -88); tone(75, .45, 'triangle', .18, -40); noise(.3, .14); },
+    oof: () => { tone(105, .22, 'sine', .22, -60); tone(70, .2, 'sawtooth', .05, -25); noise(.08, .06); },
     hurt: () => { tone(160, .25, 'sawtooth', .09, -90); noise(.1, .08); },
     miss: () => tone(300, .15, 'triangle', .06, -150),
     correct: () => { tone(660, .08, 'square', .06); tone(990, .12, 'square', .06, 0, .08); },
