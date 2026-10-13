@@ -172,3 +172,8 @@
 ## 行內矩陣顯示（2026-10-13）
 
 - `U.md` 的 `inline()` 會把 `[a b ; c d]`（列用分號，元素用空白或逗號，2～4 欄、各列欄數相同）畫成方括號矩陣（`.mtx`，CSS grid）。程式碼區塊內不轉換，`[1]` 這類引用不受影響。教材與題目照舊用這個寫法即可。
+
+## 手機直式調整視窗大小、戰鬥震動（2026-10-13）
+
+- `U.grip` 的 `mobileH`：手機直式（寬 ≤ 640）時計算紙、AI 助教是滿版寬，把手只調高度（CSS 變數 `--mh`）；AI 助教貼底，把手在上緣中間、往上拉變高。計算機在手機上也能等比例縮放。手機與電腦的大小分開記（`winsize` 的 key 與 key_m），轉向時自動換用。
+- `HAPTIC`（`js/audio.js`）：`SFX.play` 的戰鬥音效對應不同震動（hit 輕、fire、crit、hurt、kill、boss 最重），`FX` 的 shake／shake(true) 與職業爆擊另有更強的節奏。Android 用 `navigator.vibrate`（長短＝強弱）；iOS Safari 沒有 vibrate，用 iOS 18 的 `<input type=checkbox switch>` 觸覺，一段一下、強的多下（無法調強弱、iOS 18 以前不會震）。音量面板「戰鬥震動」開關，存 localStorage `haptic`。

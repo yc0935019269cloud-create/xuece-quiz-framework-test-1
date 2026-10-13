@@ -330,7 +330,7 @@ const AI = (() => {
       if (e.key === 'Escape') toggle(false);
       else if (e.key === 'Enter' && !e.shiftKey && !e.isComposing && e.target === inp) { e.preventDefault(); go(); }
     });
-    U.grip(panel, { key: 'ai', minW: 300, minH: 320, apply: (w, h) => { panel.style.width = w + 'px'; panel.style.height = h + 'px'; }, reset: () => { panel.style.width = panel.style.height = ''; } });
+    U.grip(panel, { key: 'ai', minW: 300, minH: 320, mobileH: true, apply: (w, h) => { panel.style.width = w + 'px'; panel.style.height = h + 'px'; }, reset: () => { panel.style.width = panel.style.height = ''; } });
     const head = U.$('.aip-head', panel);
     head.onpointerdown = e => {
       if (e.target.closest('button') || matchMedia('(max-width: 640px)').matches) return;

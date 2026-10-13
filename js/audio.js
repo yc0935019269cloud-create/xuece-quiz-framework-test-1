@@ -14,6 +14,46 @@ const VOL = (() => {
   };
 })();
 
+/* 戰鬥震動：不同招式不同強度。
+ * Android（Chrome 等）用 navigator.vibrate，時間長短＝強弱；iPhone／iPad 的 Safari 不支援 vibrate，
+ * 改用 iOS 18 起的「開關型核取方塊」觸覺回饋：每一段震動是一下輕觸，強的招式用連續多下表現（iOS 無法調強弱）。
+ * 開關記在 localStorage 'haptic'（預設開，不進存檔）；在音量面板切換。 */
+const HAPTIC = (() => {
+  const K = 'haptic';
+  let on = true; try { on = localStorage.getItem(K) !== '0'; } catch (e) {}
+  const canVibrate = typeof navigator !== 'undefined' && typeof navigator.vibrate === 'function';
+  const iOS = /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  function tick() {
+    try {
+      const l = document.createElement('label'); l.ariaHidden = 'true'; l.style.display = 'none';
+      const i = document.createElement('input'); i.type = 'checkbox'; i.setAttribute('switch', '');
+      l.appendChild(i); document.head.appendChild(l); l.click(); l.remove();
+    } catch (e) {}
+  }
+  // pattern：[震, 停, 震, 停…]（毫秒）；強度＝震動長度
+  function buzz(pattern) {
+    if (!on) return;
+    const p = [].concat(pattern);
+    if (canVibrate) { try { navigator.vibrate(p); } catch (e) {} return; }
+    if (!iOS) return;
+    let t = 0;
+    p.forEach((ms, k) => {
+      if (k % 2 === 0) { const n = ms >= 60 ? 3 : ms >= 35 ? 2 : 1; for (let j = 0; j < n; j++) setTimeout(tick, t + j * 45); }
+      t += ms + (k % 2 === 0 && ms >= 35 ? 45 : 0);
+    });
+  }
+  // 依音效決定震動（只有戰鬥相關的音效）
+  const BY_SFX = {
+    hit: 18, fire: 28, crit: [45, 35, 70], hurt: [70, 40, 35], kill: [25, 40, 90],
+    boss: [90, 60, 140], skill: [15, 30, 15, 30, 40], heal: [8, 60, 8]
+  };
+  const sfx = name => { if (BY_SFX[name] != null) buzz(BY_SFX[name]); };
+  return {
+    buzz, sfx, supported: canVibrate || iOS,
+    get on() { return on; }, set(v) { on = !!v; try { localStorage.setItem(K, on ? '1' : '0'); } catch (e) {} if (on) buzz(30); }
+  };
+})();
+
 const SFX = (() => {
   let ctx = null;
   function ac() {
@@ -63,7 +103,7 @@ const SFX = (() => {
     tick: () => tone(1500, .03, 'square', .03),
     boss: () => { tone(110, .6, 'sawtooth', .1, -40); noise(.5, .1, .1); }
   };
-  function play(name) { try { lib[name] && lib[name](); } catch (e) {} }
+  function play(name) { try { lib[name] && lib[name](); } catch (e) {} HAPTIC.sfx(name); }
   /* 番茄鐘提示音：音量只受總音量與靜音影響（不受音效音量影響），可指定音量與重複次數 */
   function bell(freq, t0, dur, vol, type = 'sine') {
     const c = ac(); if (!c) return;
