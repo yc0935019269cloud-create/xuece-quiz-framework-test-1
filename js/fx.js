@@ -45,7 +45,7 @@ const FX = (() => {
   }
   const hero = () => ent('hero');
   const weapon = () => document.getElementById('eWeapon');
-  function shake(big) { cls(stage(), big ? 'shake-big' : 'shake', 400); }
+  function shake(big) { cls(stage(), big ? 'shake-big' : 'shake', 400); HAPTIC.buzz(big ? [80, 30, 110] : 45); }
   function flash(color = '#fff') { add(`<div class="fx flash" style="background:${color}"></div>`, 300); }
   function slash(angle = 0, color = '#fff', size = 90, dx = 0, dy = 0) {
     const m = pos('mon');
@@ -149,7 +149,7 @@ const FX = (() => {
     else if(clsId==='ranger'){await proj('arrow pierce',170);slash(0,color,120);}
     else if(clsId==='cleric'){pillar('rgba(255,240,170,.9)');burst(color,150);}
     else {vslash(color,15);dust();slash(70,'#ffe2bc',150);}
-    flash('rgba(255,245,215,.38)');shake(true);burst(color,140);sparks(12,color);SFX.play('crit');
+    flash('rgba(255,245,215,.38)');shake(true);burst(color,140);sparks(12,color);SFX.play('crit');HAPTIC.buzz([60,30,60,30,140]);   // 爆擊最強
     await motion;
   }
   async function attack(clsId, e) {

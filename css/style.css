@@ -1029,7 +1029,7 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .calc-keys .del { background: #8a3038; }
 .calc-keys .eq { background: #b8860b; font-size: calc(16px * var(--k)); }
 .calc-keys [data-ck="2nd"].on { background: #c9433c; }
-@media (max-width: 640px) { .calc { --k: 1 !important; top: 52px; right: 8px; } .calc-keys button { padding: 8px 0; } }
+@media (max-width: 640px) { .calc { top: 52px; right: 8px; } .calc-keys button { padding: 8px 0; } }
 /* ===== 學習模式戰鬥回饋（js/learn.js）：連擊、必殺技、怪物意圖、寶箱、橫幅、評等 ===== */
 .lb-combo { position: absolute; left: 50%; top: 8px; transform: translateX(-50%); z-index: 6; text-align: center; line-height: 1; pointer-events: none; text-shadow: 2px 2px 0 #000; opacity: 0; transition: opacity .2s; }
 .lb-combo.on { opacity: 1; }
@@ -1136,7 +1136,7 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
   background: linear-gradient(135deg, transparent 0 46%, var(--hi) 46% 56%, transparent 56% 66%, var(--hi) 66% 76%, transparent 76%); }
 .win-grip:hover { background: linear-gradient(135deg, transparent 0 46%, var(--gold) 46% 56%, transparent 56% 66%, var(--gold) 66% 76%, transparent 76%); }
 .calc { padding-bottom: 14px; }
-@media (max-width: 640px) { .pad { top: 52px; right: 8px; left: 8px; width: auto !important; height: calc(100vh - 70px) !important; } .pad-tools button { height: 34px; } .win-grip { display: none; } }
+@media (max-width: 640px) { .pad { top: 52px; right: 8px; left: 8px; width: auto !important; height: var(--mh, calc(100vh - 70px)) !important; } .pad-tools button { height: 34px; } .win-grip { width: 28px; height: 28px; } }
 #muteBtn { font-size: 13px; padding: 2px 8px; min-width: 34px; }
 #muteBtn.muted { background: #8a3038; }
 /* ===== AI 助教（js/ai.js）：浮動聊天視窗 ===== */
@@ -1172,7 +1172,8 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .ai-pg { font-size: 12px; margin-top: 2px; white-space: normal; }
 .aip-in { display: flex; gap: 6px; margin-top: 6px; }
 .aip-in textarea { flex: 1; min-width: 0; resize: none; background: var(--paper); color: #1b1424; border: 3px solid var(--line); padding: 6px 8px; font: inherit; font-size: 15px; }
-@media (max-width: 640px) { .aip { left: 0 !important; right: 0; top: auto !important; bottom: 0; width: 100vw !important; height: min(78vh, calc(100vh - 56px)) !important; box-sizing: border-box; } }
+@media (max-width: 640px) { .aip { left: 0 !important; right: 0; top: auto !important; bottom: 0; width: 100vw !important; height: var(--mh, min(78vh, calc(100vh - 56px))) !important; box-sizing: border-box; }
+  .aip .win-grip { top: 0; bottom: auto; left: 50%; right: auto; width: 64px; height: 18px; margin-left: -32px; cursor: ns-resize; background: linear-gradient(var(--hi), var(--hi)) center 5px / 44px 3px no-repeat, linear-gradient(var(--hi), var(--hi)) center 11px / 44px 3px no-repeat; } }
 
 /* 行內矩陣 [a b ; c d]（U.md） */
 .mtx { display: inline-grid; grid-template-columns: repeat(var(--n), auto); column-gap: .8em; row-gap: .05em; vertical-align: middle; margin: .15em .25em; padding: 0 .45em; line-height: 1.25; text-align: center; border-left: 2px solid currentColor; border-right: 2px solid currentColor; position: relative; }

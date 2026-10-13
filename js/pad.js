@@ -168,7 +168,7 @@ const PAD = (() => {
     });
     // 拖曳標題列移動；右下角把手調整大小（U.grip）
     drag(U.$('.pad-head', panel), (r, dx, dy, ev) => { panel.style.left = U.clamp(ev.clientX - dx, 0, innerWidth - r.width) + 'px'; panel.style.top = U.clamp(ev.clientY - dy, 0, innerHeight - 40) + 'px'; panel.style.right = 'auto'; });
-    U.grip(panel, { key: 'pad', minW: 260, minH: 240, apply: (w, h) => { panel.style.width = w + 'px'; panel.style.height = h + 'px'; }, reset: () => { panel.style.width = panel.style.height = ''; } });
+    U.grip(panel, { key: 'pad', minW: 260, minH: 240, mobileH: true, apply: (w, h) => { panel.style.width = w + 'px'; panel.style.height = h + 'px'; }, reset: () => { panel.style.width = panel.style.height = ''; } });
     new ResizeObserver(() => redraw()).observe(U.$('.pad-paper', panel));
     sync();
   }
