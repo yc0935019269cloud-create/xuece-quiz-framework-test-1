@@ -1189,3 +1189,10 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .impact-stop :not(.fx) { animation-play-state: paused !important; }
 .impact-vig { position: fixed; inset: 0; z-index: 70; pointer-events: none; box-shadow: inset 0 0 60px 14px var(--c); animation: vigA .45s ease-out forwards; }
 @keyframes vigA { from { opacity: 1; } to { opacity: 0; } }
+
+/* 學習模式：回上一頁／點色條跳到看過的頁面 */
+#lpPips i { position: relative; }
+#lpPips i.seen { cursor: pointer; }
+#lpPips i.seen::after { content: ''; position: absolute; inset: -8px -1px; }
+#lpPips i.seen:hover { opacity: .9; outline: 2px solid var(--gold); }
+.lp-rv { margin-left: 6px; color: var(--gold); }
