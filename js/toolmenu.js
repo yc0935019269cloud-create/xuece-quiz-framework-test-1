@@ -34,7 +34,7 @@
     menu.hidden = !show; btn.classList.toggle('on', show);
     if (show) place();
     if (show) setTimeout(() => document.addEventListener('pointerdown', function out(e) {
-      if (!menu.contains(e.target) && e.target !== btn) close();
+      if (!menu.contains(e.target) && !btn.contains(e.target)) close();
       if (menu.hidden || !menu.contains(e.target)) document.removeEventListener('pointerdown', out);
     }), 0);
   }
@@ -52,7 +52,7 @@
       const row = U.h(`<div class="tm-row"><span class="tm-label">${label}</span></div>`);
       row.insertBefore(b, row.firstChild);
       row.addEventListener('click', e => {
-        if (e.target !== b) b.click();
+        if (!b.contains(e.target)) b.click();
         if (id !== 'btnSound') close(); else menu.hidden = true;   // 音量面板自己會開，選單收起
         const pn = document.getElementById(PANELS[id]);
         if (pn && !pn.hidden && innerWidth > 640) anchor(pn);   // 手機版維持原本的全寬排版
