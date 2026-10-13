@@ -227,6 +227,28 @@ const QV = (() => {
     };
   }
 
+  // 純閱讀：直接看選項、答案與詳解，不呼叫 render／Store.record。
+  function previewModal(q) {
+    const opener = document.activeElement;
+    const m = U.modal({ title: '相關題目與詳解', body: `<div class="qwrap">${metaHTML(q)}${bodyHTML(q, true)}${explainHTML(q)}</div>`,
+      onClose: () => { document.removeEventListener('keydown', onKey); if (opener?.isConnected) opener.focus({ preventScroll: true }); } });
+    m.el.classList.add('qpreview-modal');
+    m.el.setAttribute('role', 'dialog'); m.el.setAttribute('aria-modal', 'true'); m.el.setAttribute('aria-label', '相關題目與詳解'); m.el.tabIndex = -1;
+    function onKey(e) {
+      if (document.querySelector('#modalRoot > .modal-bg:last-child') !== m.el.parentElement) return;
+      if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); m.close(); }
+      if (e.key === 'Tab') {
+        const focusable = [...m.el.querySelectorAll('button, a[href], input, summary, [tabindex="0"]')].filter(el => !el.disabled && !el.classList.contains('hap-sw') && el.getClientRects().length);
+        const first = focusable[0], last = focusable[focusable.length - 1];
+        if (!first) { e.preventDefault(); m.el.focus(); }
+        else if (e.shiftKey && (document.activeElement === first || document.activeElement === m.el)) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && (document.activeElement === last || document.activeElement === m.el)) { e.preventDefault(); first.focus(); }
+      }
+    }
+    document.addEventListener('keydown', onKey); m.el.focus({ preventScroll: true });
+    return m;
+  }
+
   /* 題庫/錯題：單題練習視窗 */
   function practiceModal(q, onDone) {
     const m = U.modal({ title: '題目練習', body: '<div class="qwrap"></div>', onClose: () => { ctl.destroy(); onDone && onDone(); } });
@@ -242,5 +264,5 @@ const QV = (() => {
     return m;
   }
 
-  return { render, practiceModal, explainHTML, previewHTML: q => bodyHTML(q, true), TYPE_NAME, typeName, exLabel, labelOf };
+  return { render, practiceModal, previewModal, explainHTML, previewHTML: q => bodyHTML(q, true), TYPE_NAME, typeName, exLabel, labelOf };
 })();

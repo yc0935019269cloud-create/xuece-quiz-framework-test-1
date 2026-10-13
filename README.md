@@ -211,3 +211,9 @@ js/ css/                遊戲程式
 - 第一～五單元依已收錄 421 題的考點標籤篩選；第六單元另核對 106～114 年《視覺光學》《眼鏡光學概要》26 份原卷（1,300 題）的題幹，以反射率／抗反射膜為重點。相關題包含觀念題，不是該算式的直接命題次數；樣本止於 114 年，勿改寫成最新考題排名或必考。單狹縫／相位保留在完整統整，第六單元仍標期中考不考。
 - 內容正本仍在 `content/learn/physopt/`，勿手改 `data/learn.js`。`js/learn.js` 支援兩類筆記的排序、展開與搜尋；build／importer 檢查新欄位。非空舊匯入 notes 補上缺少的內建筆記 id，同 id 自訂内容保留，明確 notes: [] 可清空。格式見 `docs/格式_學習模式.md` §3-A。
 - QA：六單元 22 項來源統計核對、97 個原單元與原公式筆記完整性、原 58 項數值驗算、Edge iPad 路徑 26 項與桌機 26 項（含 390px）通過。工具 `tools/exam-cram-qa/`，摘要／證據／截圖 `output/playwright/exam-cram-*`。一次性 context 還原 localStorage、移除匯入 fixture；本次使用 HTTP，沒有實機 iPad／file://／真實考生閱讀測試。快取版本 v91。
+
+## 知識筆記相關題懸浮視窗（2026-10-13，v92）
+
+- 使用者指定學習模式的知識筆記，且第六單元先不做。第一～第五單元「考前必看」20 組公式新增預設收合的相關題連結，共 378 次連結（343 題不重複題目），使用既有 evidence.questionIds 與 Store.Q；第六單元不新增連結，不改題庫或生成資料。
+- `js/learn.js` 的 `.cram-related` 是獨立 details，展開才載入列表，不跟筆記全部展開／搜尋自動展開，重載回到收合。點連結呼叫 `QV.previewModal`（js/question.js），完整顯示題幹、文字選項、圖片／題組與答案詳解，不呼叫 render 或 Store.record。Esc／關閉回到連結，Tab 留在視窗內，事件相容 iOS hap-sw 子 input。
+- QA：Edge iPad 路徑 73 項、桌機 93 項（含 390px）、全部 JS 語法與嚴格內容檢查通過；全部來源連結有效，逐組實測開關與詳解，閱讀不改作答／錯題／學習紀錄／獎勵。一次性 context 備份還原 localStorage；HTTP 測試，未做實機 iPad 或本輪 file:// 測試。工具與重跑方式：tools/exam-related-qa/；摘要與截圖：output/playwright/exam-related-*。

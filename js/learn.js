@@ -1167,12 +1167,18 @@ const LEARN_UI = (() => {
   let noteSubj = 'all', noteQ = '';
   const noteText = s => [s.title, s.body, ...(s.keys || []), ...(s.points || []).map(x => typeof x === 'string' ? x : [x.name, x.desc].join(' '))].join(' ').toLowerCase();
   const formulaText = n => [n.title, n.intro, n.conventions, n.recap, n.source, n.reminders, ...(n.items || []).flatMap(f => [f.name, ...(f.equations || []), f.use, f.tip]), ...(n.formulas || []).flatMap(f => [f.name, ...(f.equations || []), f.symbols, f.intuition, f.warmup, f.derivation, f.memory, f.example, f.pitfall])].join(' ').toLowerCase();
+  const relatedIds = item => [...new Set(Array.isArray(item.evidence?.questionIds) ? item.evidence.questionIds : [])].filter(id => typeof id === 'string' && Store.Q[id]);
+  function relatedQuestions(item) {
+    const ids = relatedIds(item);
+    if (!ids.length) return '';
+    return `<details class="cram-related" data-related-ids="${U.esc(JSON.stringify(ids))}"><summary>相關題（${ids.length}）— 點此展開</summary><div class="cram-related-list"></div></details>`;
+  }
   function examCramNote(p, n, key, isOpen) {
     const k = key + '/@' + n.id;
     return `<details class="ltree lnote-cram" data-k="${U.esc(k)}" data-cram-pack="${U.esc(p.id)}" ${isOpen(k, false) ? 'open' : ''}>
       <summary><span class="ltree-n">${U.esc(n.title)}</span><span class="grow"></span><span class="dim small-t">${n.items.length} 個重點</span></summary>
       <div class="ltree-in exam-cram">${md(n.intro)}${n.items.map((item, i) => `<article class="cram-item"><div class="cram-head"><h4>${i + 1}. ${U.esc(item.name)}</h4>${item.evidence?.count ? `<span class="dim small-t">相關題 ${U.esc(item.evidence.count)}</span>` : ''}</div>
-        <div class="formula-equations">${item.equations.map(eq => `<code>${U.esc(eq)}</code>`).join('')}</div><p><b>用在：</b>${U.esc(item.use)}</p><p><b>別錯：</b>${U.esc(item.tip)}</p></article>`).join('')}
+        <div class="formula-equations">${item.equations.map(eq => `<code>${U.esc(eq)}</code>`).join('')}</div><p><b>用在：</b>${U.esc(item.use)}</p><p><b>別錯：</b>${U.esc(item.tip)}</p>${relatedQuestions(item)}</article>`).join('')}
         ${n.reminders ? `<div class="cram-reminders">${md(n.reminders)}</div>` : ''}${n.source ? `<p class="dim small-t">${U.esc(n.source)}</p>` : ''}
         ${(n.references || []).length ? `<p class="dim small-t">${n.references.filter(r => /^https:\/\//.test(r.url)).map(r => `<a href="${U.esc(r.url)}" target="_blank" rel="noopener noreferrer">${U.esc(r.title)}</a>`).join('、')}</p>` : ''}</div></details>`;
   }
@@ -1242,6 +1248,18 @@ const LEARN_UI = (() => {
       ${tree.map(sn => { const S = C.SUBJECTS[sn.s]; return `<h3 class="mt ltree-subj" style="color:${S.color}">${U.esc(S.name)} <span class="dim small-t">${count(sn)} 則筆記</span></h3>
         ${sn.kids.map(c => dirNode(c, 'n:' + sn.s, 0)).join('')}${sn.packs.map(pk => packNode(pk, 'n:' + sn.s)).join('')}`; }).join('') || '<p class="dim">找不到符合的筆記。</p>'}`;
     const fill = d => { const x = LES[d.dataset.les]; const inn = d.querySelector('.ltree-in'); if (x && !inn.childElementCount) inn.innerHTML = x.cards.map(s => noteCard(x.p, x.l, s)).join(''); };
+    U.$$('.cram-related', body).forEach(d => d.addEventListener('toggle', () => {
+      const list = d.querySelector('.cram-related-list');
+      if (!d.open || list.childElementCount) return;
+      list.innerHTML = JSON.parse(d.dataset.relatedIds).map(id => {
+        const q = Store.Q[id], ex = q && Store.EX[q.exam];
+        if (!q || !ex) return '<p class="dim small-t">此題尚未載入，請先導入對應題本。</p>';
+        const title = QV.exLabel(ex) + '・第 ' + q.n + ' 題';
+        const snippet = String(q.stem || '圖片題').replace(/【[^】]*】\s*/, '').replace(/\s+/g, ' ').slice(0, 100);
+        return `<button type="button" class="cram-question-link" data-related-q="${U.esc(id)}"><span>${U.esc(title)}</span><span class="dim small-t">${U.esc(snippet)}</span></button>`;
+      }).join('');
+    }));
+    body.onclick = e => { const link = e.target.closest('[data-related-q]'); if (link && body.contains(link)) { const q = Store.Q[link.dataset.relatedQ]; if (q) QV.previewModal(q); } };
     U.$$('[data-formula-jump]', body).forEach(a => a.onclick = e => { e.preventDefault(); const target = document.getElementById(a.getAttribute('href').slice(1)); if (target) { target.open = true; target.scrollIntoView({ block: 'start' }); target.querySelector('summary').focus({ preventScroll: true }); } });
     U.$$('details.ltree', body).forEach(d => d.addEventListener('toggle', e => { if (e.target !== d) return; if (d.open && d.dataset.les) fill(d); if (!kw) { D.cfg.open[d.dataset.k] = d.open; save(); } }));
     U.$$('[data-nf]', body).forEach(c => c.onclick = () => { noteSubj = c.dataset.nf; SFX.play('click'); notes(); });
