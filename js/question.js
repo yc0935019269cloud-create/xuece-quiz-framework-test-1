@@ -22,7 +22,7 @@ const QV = (() => {
       ${stTag}</div>`;
   }
 
-  function bodyHTML(q) {
+  function bodyHTML(q, withChoices = false) {
     let html = '<div class="qbox">';
     if (q.group && window.QB.groups[q.group]) {
       const g = window.QB.groups[q.group];
@@ -31,6 +31,13 @@ const QV = (() => {
     if (q.stem) html += `<div class="qtext">${U.md(q.stem)}</div>`;
     if (q.imgs.length) html += q.imgs.map((s, i) => imgHTML(s, i === 0 ? q.marks : null)).join('');
     if (!q.stem && !q.imgs.length) html += `<div class="qprompt">請依上方題組內容，作答<b>第 ${q.n} 題</b>${q.opts > 5 ? `（選項 A–${String.fromCharCode(64 + q.opts)}）` : ''}</div>`;
+    if (withChoices && (q.type === 'single' || q.type === 'multi')) {
+      if (q.choices) {
+        html += `<div class="qtext qpreview-choices" aria-label="選項">${q.choices.map((text, i) => `<div class="qpreview-choice">${q.tf ? '' : `<b class="qpreview-label">${U.esc(labelOf(q, i))}</b>`}<div class="qpreview-text">${U.md(text)}</div></div>`).join('')}</div>`;
+      } else {
+        html += '<p class="qpreview-note">選項請見題目圖片。</p>';
+      }
+    }
     html += '</div>';
     return html;
   }
@@ -235,5 +242,5 @@ const QV = (() => {
     return m;
   }
 
-  return { render, practiceModal, explainHTML, TYPE_NAME, typeName, exLabel, labelOf };
+  return { render, practiceModal, explainHTML, previewHTML: q => bodyHTML(q, true), TYPE_NAME, typeName, exLabel, labelOf };
 })();

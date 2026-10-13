@@ -289,6 +289,38 @@ details.passage .pbody { max-height: 55vh; overflow: auto; border-bottom: 3px da
 .qrow:hover { border-color: var(--gold); }
 .qrow .thumb { height: 34px; overflow: hidden; background: var(--paper); }
 .qrow .thumb img { width: 100%; object-fit: cover; object-position: top; }
+/* 題庫直接閱讀題幹與選項，詳解在原卡片展開。 */
+.bank-list { gap: 16px; }
+.bank-card { min-width: 0; border: 3px solid var(--line); background: var(--bg2); padding: 12px; }
+.bank-card:hover, .bank-card.is-open { border-color: var(--gold); }
+.bank-head { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 10px; }
+.bank-head .qmeta { flex: 1; min-width: 0; margin: 0; }
+.bank-head .tag { overflow-wrap: anywhere; }
+.bank-status { flex: none; }
+.bank-preview { cursor: pointer; }
+.bank-preview .qbox { min-width: 0; }
+.bank-preview .qtext { overflow-wrap: anywhere; }
+.bank-preview .qtext .md { overflow-x: auto; }
+.bank-preview .passage .pbody { max-height: none; }
+.qpreview-choices { display: flex; flex-direction: column; gap: 6px; border-top: 2px solid #d9ccaa; margin-top: 10px; padding-top: 12px !important; }
+.qpreview-choice { display: flex; gap: 10px; align-items: baseline; }
+.qpreview-label { flex: none; width: 28px; color: #6b4a1f; font-weight: normal; }
+.qpreview-text { flex: 1; min-width: 0; }
+.qpreview-text .md p { margin: 0; }
+.qpreview-note { color: #6b4a1f; font-size: 14px; margin: 10px 8px 4px; }
+.bank-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+.bank-toggle:focus-visible, .bank-practice:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.bank-explanation .explain { max-height: none; overflow: visible; padding: 12px; }
+.bank-explanation .md { overflow-x: auto; overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+  .bank-card { padding: 8px; }
+  .bank-head { flex-wrap: wrap; }
+  .bank-head .qmeta { flex-basis: 100%; }
+  .bank-preview .qbox { padding: 6px; }
+  .bank-preview .qtext { padding-left: 4px; padding-right: 4px; font-size: 16px; }
+  .bank-explanation .explain { padding: 8px; }
+  .bank-explanation .explain > .row { overflow-wrap: anywhere; }
+}
 .filters { display: flex; flex-direction: column; gap: 4px; }
 .filters .frow { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
 .filters .frow > label { width: 64px; flex: none; color: var(--gold); font-size: 14px; }

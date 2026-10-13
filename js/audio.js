@@ -95,13 +95,81 @@ const HAPTIC = (() => {
   };
 })();
 
-const SFX = (() => {
+const VOL_OK = (() => { try { const p = new Audio(); p.volume = 0.5; return Math.abs(p.volume - 0.5) < 0.01; } catch (e) { return false; } })();
+const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+/* 同一個輸出裝置／AudioContext：不要讓 iPad 在媒體混音與音效之間重新啟動不同引擎。
+ * 使用裝置的預設 sampleRate，不硬指定 44.1/48 kHz，也不靠改播放速度補償音調。 */
+const AUDIO_ENGINE = (() => {
   let ctx = null;
+  const listeners = [], pending = new WeakMap();
+  let resuming = null, resumeTimer = null, lastTime = -1, stalled = 0, lastRecovery = 0, gestureNow = false;
+  function session() {
+    try { if (navigator.audioSession && navigator.audioSession.type !== 'playback') navigator.audioSession.type = 'playback'; } catch (e) {}
+  }
+  function notify() { listeners.forEach(({ wake }) => wake()); }
+  function resume(repair = false, gesture = false) {
+    if (!ctx || ctx.state === 'closed' || (ctx.state === 'running' && !repair) || (resuming && !gesture)) return;
+    const c = ctx;
+    // Safari 的 interrupted 有時只呼叫 resume 不會恢復，先 suspend 再 resume。
+    // 兩個呼叫都留在手勢事件內，不等 suspend 的 Promise，以免失去 iOS 的播放授權。
+    let p;
+    try { if (repair || c.state === 'interrupted') c.suspend().catch(() => {}); p = c.resume(); } catch (e) { return; }
+    resuming = p;
+    clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(() => { if (resuming === p) resuming = null; }, 1500);
+    p.catch(() => {}).finally(() => {
+      if (resuming === p) { resuming = null; clearTimeout(resumeTimer); }
+    });
+  }
   function ac() {
-    if (!ctx) { try { ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { return null; } }
-    if (ctx.state === 'suspended') ctx.resume();
+    if (!ctx) {
+      session();
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return null;
+      try { ctx = new AC({ latencyHint: IS_IOS ? 'playback' : 'interactive' }); } catch (e) { try { ctx = new AC(); } catch (err) { return null; } }
+      ctx.addEventListener('statechange', () => { if (ctx.state === 'running') { stalled = 0; notify(); } });
+    }
+    resume();
     return ctx;
   }
+  function prepare(el) {
+    el.preload = 'auto'; el.defaultPlaybackRate = 1; el.playbackRate = 1;
+    el.preservesPitch = true; el.webkitPreservesPitch = true;
+  }
+  function play(el) {
+    const prev = pending.get(el);
+    if (prev && prev.src === el.src && !gestureNow) return prev.promise;
+    if (el.playbackRate !== 1) el.playbackRate = 1;
+    const op = { src: el.src };
+    try { op.promise = Promise.resolve(el.play()).then(() => true, () => false); } catch (e) { return Promise.resolve(false); }
+    pending.set(el, op);
+    const timer = setTimeout(() => { if (pending.get(el) === op) pending.delete(el); }, 2000);
+    op.promise.then(() => { clearTimeout(timer); if (pending.get(el) === op) pending.delete(el); });
+    return op.promise;
+  }
+  function wake(e) {
+    gestureNow = !!(e && e.isTrusted && /^(pointerdown|pointerup|touchend|click|keydown)$/.test(e.type));
+    try { session(); if (ctx) resume(false, gestureNow); notify(); } finally { gestureNow = false; }
+  }
+  ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown'].forEach(ev => document.addEventListener(ev, wake, true));
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) wake(); });
+  window.addEventListener('pageshow', wake);
+  window.addEventListener('focus', wake);
+  if (IS_IOS) setInterval(() => {
+    if (document.hidden || !ctx || !listeners.some(({ wanted }) => wanted())) { stalled = 0; lastTime = -1; return; }
+    if (ctx.state !== 'running') wake();
+    else if (ctx.currentTime === lastTime) {
+      if (++stalled >= 2 && Date.now() - lastRecovery > 5000) { lastRecovery = Date.now(); stalled = 0; resume(true); }
+    } else { stalled = 0; notify(); }
+    lastTime = ctx.currentTime;
+  }, 1000);
+  return { ac, play, prepare, wake, onWake: (wake, wanted) => listeners.push({ wake, wanted }),
+    status: () => ({ state: ctx ? ctx.state : 'idle', sampleRate: ctx ? ctx.sampleRate : null }) };
+})();
+
+const SFX = (() => {
+  const ac = AUDIO_ENGINE.ac;
   function tone(freq, dur, type = 'square', vol = 0.08, slide = 0, delay = 0) {
     const k = VOL.sfx(); if (!k) return;
     const c = ac(); if (!c) return;
@@ -183,39 +251,28 @@ const SFX = (() => {
 /* 音量混音：iOS Safari 的 audio.volume 是唯讀（永遠 1），滑桿除了 0 以外都一樣大聲。
  * 偵測到不能調音量時，把 <audio> 接到 Web Audio 的 GainNode，用 gain 控制音量。
  * 只在 http(s) 啟用：file:// 下 createMediaElementSource 會被當成跨來源而變成無聲；能調 volume 的裝置完全不走這裡。 */
-const VOL_OK = (() => { try { const p = new Audio(); p.volume = 0.5; return Math.abs(p.volume - 0.5) < 0.01; } catch (e) { return false; } })();
-// 新版 iOS 可能會「回報」設定的 volume 卻不套用，所以只靠讀回值判斷不可靠 → 另外直接認 iPhone／iPad（含偽裝成 Mac 的 iPadOS）
-const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 const MIX = (() => {
   const http = /^https?:$/.test(location.protocol);
   const need = (IS_IOS || !VOL_OK) && http;
-  let ctx = null;
   const gains = new Map();
-  function ac() {
-    if (!ctx) { try { ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { return null; } }
-    if (ctx.state !== 'running') ctx.resume().catch(() => {});
-    return ctx;
-  }
   /* 必須在使用者點擊（解鎖）之後呼叫，AudioContext 才會是 running */
   function attach(el) {
     if (!need || gains.has(el)) return;
-    const c = ac(); if (!c) return;
+    const c = AUDIO_ENGINE.ac(); if (!c) return;
     try { const s = c.createMediaElementSource(el), g = c.createGain(); g.gain.value = 0; s.connect(g); g.connect(c.destination); gains.set(el, g); } catch (e) {}
   }
   function setVol(el, v) { const g = gains.get(el); if (g) g.gain.value = v; else el.volume = v; }
   const ok = el => gains.has(el) || (VOL_OK && !IS_IOS);   // 這個元素的音量能不能真的被控制
-  // iOS 只在 touchend／click 這類手勢裡允許啟動 AudioContext；被來電、切 App 中斷後也要重新 resume
-  ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown'].forEach(ev => document.addEventListener(ev, () => { if (ctx && ctx.state !== 'running') ctx.resume().catch(() => {}); }, true));
-  document.addEventListener('visibilitychange', () => { if (!document.hidden && ctx && ctx.state !== 'running') ctx.resume().catch(() => {}); });
   function info() {
-    if (need) return gains.size ? `Web Audio 音量控制（${ctx ? ctx.state : '—'}）` : 'Web Audio 音量控制（點一下畫面後啟用）';
+    if (need) return gains.size ? `Web Audio 音量控制（${AUDIO_ENGINE.status().state}）` : 'Web Audio 音量控制（點一下畫面後啟用）';
     if (IS_IOS || !VOL_OK) return http ? '無法調整音量' : '無法調整音量（用檔案開啟；請改用網址開啟）';
     return '瀏覽器原生音量';
   }
   return { need, attach, setVol, ok, info };
 })();
 
-/* 背景音樂：兩個 <audio> 交叉淡入淡出，第一次點擊畫面後才開始播放（瀏覽器自動播放限制）
+/* 背景音樂：桌機用兩個 <audio> 交叉淡入淡出；iOS 重用一個播放器，減少解碼器／輸出路徑切換。
+ * 第一次點擊畫面後才開始播放（瀏覽器自動播放限制）。
  * 三種模式（存在 xd_audio.bgm）：
  *   scene：依場景播放（每個場景可指定一首，或「從歌單隨機」）
  *   one：  所有場景同一首，切換畫面不中斷
@@ -271,8 +328,12 @@ const BGM = (() => {
   }
   function setCfg(patch) { VOL.set('bgm', Object.assign(cfg(), patch)); apply(true); }
 
-  const a = [new Audio(), new Audio()];
-  a.forEach(x => { x.loop = true; x.preload = 'auto'; x.volume = 0; x.addEventListener('ended', () => { if (x === a[cur]) onEnded(); }); });
+  const a = IS_IOS ? [new Audio()] : [new Audio(), new Audio()];
+  a.forEach(x => {
+    AUDIO_ENGINE.prepare(x); x.loop = true; x.volume = 0;
+    x.addEventListener('ended', () => { if (x === a[cur]) onEnded(); });
+    x.addEventListener('canplay', () => { if (x === a[cur] && unlocked && target() > 0 && x.paused) AUDIO_ENGINE.play(x); });
+  });
   // iOS 不能讀回 volume 判斷淡出完成（否則舊曲永遠不會暫停），所以另外記錄「邏輯音量」lv，
   // 實際音量交給 MIX.setVol（iOS 走 GainNode）。完全無法控制音量時，切歌／靜音改成直接暫停。
   const lv = [0, 0];
@@ -304,12 +365,13 @@ const BGM = (() => {
   }
   function set(id, loop) {
     if (!TRACKS[id]) return;
-    if (id === curName) { a[cur].loop = loop; if (unlocked && target() > 0 && a[cur].paused) a[cur].play().catch(() => {}); return; }
+    if (id === curName) { a[cur].loop = loop; if (unlocked && target() > 0 && a[cur].paused) AUDIO_ENGINE.play(a[cur]); return; }
     curName = id;
-    cur = 1 - cur;
+    cur = a.length === 1 ? 0 : 1 - cur;
     const x = a[cur];
+    if (a.length === 1) x.pause();
     x.loop = loop; x.src = TRACKS[id].src; x.currentTime = 0; MIX.setVol(x, 0); lv[cur] = 0;
-    if (unlocked && target() > 0) x.play().catch(() => {});
+    if (unlocked && target() > 0) AUDIO_ENGINE.play(x);
     fade();
     notify();
   }
@@ -343,30 +405,38 @@ const BGM = (() => {
     listIdx = c.shuffle ? c.list.indexOf(pickRandom(c.list, curName)) : (c.list.indexOf(curName) + dir + c.list.length) % c.list.length;
     set(c.list[listIdx], false);
   }
-  function onEnded() { if (cfg().mode === 'list' && !preview) next(1); else { a[cur].currentTime = 0; a[cur].play().catch(() => {}); } }
+  function onEnded() { if (cfg().mode === 'list' && !preview) next(1); else { a[cur].currentTime = 0; if (target() > 0) AUDIO_ENGINE.play(a[cur]); } }
   function listen(id) { preview = true; set(id, true); }
   const subs = [];
   function notify() { document.querySelectorAll('[data-track]').forEach(e => { e.textContent = curName ? TRACKS[curName].name : '—'; }); subs.forEach(f => f()); }
   function unlock() {
     if (unlocked) return; unlocked = true;
     a.forEach(MIX.attach);
-    if (curName && target() > 0) a[cur].play().catch(() => {});
+    if (curName && target() > 0) AUDIO_ENGINE.play(a[cur]);
     fade();
   }
-  ['pointerdown', 'keydown'].forEach(ev => document.addEventListener(ev, unlock, { once: false, capture: true }));
+  ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown'].forEach(ev => document.addEventListener(ev, unlock, true));
+  AUDIO_ENGINE.onWake(() => {
+    if (!unlocked) return;
+    a.forEach(MIX.attach);
+    if (curName && target() > 0 && a[cur].paused) AUDIO_ENGINE.play(a[cur]);
+    fade();
+  }, () => unlocked && !!curName && target() > 0);
   VOL.on(() => {
-    if (target() > 0 && unlocked && a[cur].paused && curName) a[cur].play().catch(() => {});
+    if (target() > 0 && unlocked && a[cur].paused && curName) AUDIO_ENGINE.play(a[cur]);
     fade();
   });
   return {
-    hold(on) { held = !!on; if (!held && unlocked && curName && a[cur].paused) a[cur].play().catch(() => {}); fade(); },
+    hold(on) { held = !!on; if (!held && unlocked && curName && a[cur].paused) AUDIO_ENGINE.play(a[cur]); fade(); },
     override(id) { ovr = id && TRACKS[id] ? id : null; apply(true); },
     play, next, listen, cfg, setCfg, apply, TRACKS, SCENES, KIND, DEF, onChange: f => subs.push(f),
-    get track() { return curName ? TRACKS[curName].name : '—'; }, get current() { return curName; }, get scene() { return curScene; }
+    get track() { return curName ? TRACKS[curName].name : '—'; }, get current() { return curName; }, get scene() { return curScene; },
+    status: () => ({ playing: !!curName && !a[cur].paused, rate: a[cur].playbackRate, t: a[cur].currentTime, players: a.length })
   };
 })();
 
-/* 白噪音：雨聲／海浪／水流／柴火，可同時混合，各自調音量；兩個 <audio> 交疊淡入淡出做無縫循環 */
+/* 白噪音：iOS 網址播放用短音檔的 AudioBuffer 連續循環，避免每圈重新 play／seek 與 JS 計時器斷音。
+ * 桌機／本機檔案保留媒體播放器，只有下一段確實播放成功才淡出上一段。 */
 const AMB = (() => {
   const TYPES = {
     rain: { name: '雨聲', icon: '🌧', src: 'assets/ambient/rain.mp3' },
@@ -383,50 +453,117 @@ const AMB = (() => {
     { name: '暴風雨', v: { rain: 0.9, waves: 0.4 } }
   ];
   const P = {};
+  const useBuffer = IS_IOS && /^https?:$/.test(location.protocol), failed = new Set();
   let unlocked = false;
   const vol = k => VOL.get('muted') ? 0 : VOL.get('master') * VOL.get('amb') * (VOL.get('amb_' + k) || 0);
+  // 把尾端與開頭的 2.4 秒預先交疊；迴圈由音訊執行緒處理，主執行緒卡住也不會漏播下一圈。
+  function seamless(c, b) {
+    const n = Math.min(Math.round(b.sampleRate * 2.4), Math.floor(b.length / 4));
+    if (!n) return b;
+    const out = c.createBuffer(b.numberOfChannels, b.length - n, b.sampleRate);
+    for (let ch = 0; ch < b.numberOfChannels; ch++) {
+      const src = b.getChannelData(ch), dst = out.getChannelData(ch), tail = b.length - 2 * n;
+      dst.set(src.subarray(n, b.length - n));
+      for (let i = 0; i < n; i++) { const r = i / (n - 1 || 1); dst[tail + i] = src[b.length - n + i] * (1 - r) + src[i] * r; }
+    }
+    return out;
+  }
+  const position = o => o.buffer ? (o.offset + (o.source ? o.ctx.currentTime - o.startedAt : 0)) % o.buffer.duration : 0;
+  function stopBuffer(o) {
+    if (!o.source) return;
+    o.offset = position(o);
+    const s = o.source; o.source = null;
+    try { s.stop(); } catch (e) {} s.disconnect();
+  }
+  function refreshBuffer(k, o, v) {
+    if (!v) { stopBuffer(o); o.gain.gain.value = 0; return; }
+    if (!o.buffer) return;
+    if (o.level !== v) {
+      o.gain.gain.cancelScheduledValues(o.ctx.currentTime);
+      o.gain.gain.setTargetAtTime(Math.min(1, v), o.ctx.currentTime, 0.03); o.level = v;
+    }
+    if (o.source) return;
+    const s = o.ctx.createBufferSource();
+    s.buffer = o.buffer; s.loop = true; s.playbackRate.value = 1;
+    s.connect(o.gain); o.source = s; o.startedAt = o.ctx.currentTime;
+    s.addEventListener('ended', () => { if (o.source === s) o.source = null; s.disconnect(); });
+    s.start(0, o.offset);
+  }
   function ensure(k) {
     if (P[k]) return P[k];
-    const o = { a: [new Audio(TYPES[k].src), new Audio(TYPES[k].src)], cur: 0, fading: false };
+    if (useBuffer && !failed.has(k)) {
+      const c = AUDIO_ENGINE.ac();
+      if (c) {
+        const o = { ctx: c, buffer: null, source: null, gain: c.createGain(), level: 0, offset: 0, startedAt: 0 };
+        P[k] = o; o.gain.gain.value = 0; o.gain.connect(c.destination);
+        o.loading = fetch(TYPES[k].src).then(r => { if (!r.ok) throw new Error('Ambient HTTP ' + r.status); return r.arrayBuffer(); })
+          .then(data => c.decodeAudioData(data)).then(b => { o.buffer = seamless(c, b); refresh(); })
+          .catch(() => { o.gain.disconnect(); failed.add(k); if (P[k] === o) { delete P[k]; refresh(); } });
+        return o;
+      }
+      failed.add(k);
+    }
+    const o = { a: IS_IOS ? [new Audio(TYPES[k].src)] : [new Audio(TYPES[k].src), new Audio(TYPES[k].src)], cur: 0, fading: false, timer: null, seq: 0, retryAfter: 0 };
     o.a.forEach((x, i) => {
-      x.preload = 'auto'; x.volume = 0; MIX.attach(x); MIX.setVol(x, 0);   // ensure 只在解鎖後呼叫
+      AUDIO_ENGINE.prepare(x); x.loop = true; x.volume = 0; MIX.attach(x); MIX.setVol(x, 0);
       x.addEventListener('timeupdate', () => {
-        if (i !== o.cur || o.fading || !x.duration) return;
+        if (o.a.length < 2 || i !== o.cur || o.fading || !Number.isFinite(x.duration) || Date.now() < o.retryAfter || vol(k) <= 0) return;
         if (x.duration - x.currentTime < 2.5) crossfade(k);
       });
-      x.addEventListener('ended', () => { if (i === o.cur && vol(k) > 0) { x.currentTime = 0; x.play().catch(() => {}); } });
+      x.addEventListener('canplay', () => { if (i === o.cur && !o.fading && unlocked && vol(k) > 0 && x.paused) AUDIO_ENGINE.play(x); });
+      x.addEventListener('ended', () => { if (i === o.cur && vol(k) > 0) { x.currentTime = 0; AUDIO_ENGINE.play(x); } });
     });
     return (P[k] = o);
   }
+  function cancelFade(o) { o.seq++; clearInterval(o.timer); o.timer = null; o.fading = false; }
   function crossfade(k) {
-    const o = P[k]; o.fading = true;
+    const o = P[k]; if (!o || o.fading || vol(k) <= 0) return;
+    o.fading = true;
+    const seq = ++o.seq;
     const from = o.a[o.cur], to = o.a[1 - o.cur];
-    to.currentTime = 0; MIX.setVol(to, 0); to.play().catch(() => {});
-    o.cur = 1 - o.cur;
-    const t0 = Date.now();
-    const iv = setInterval(() => {
-      const r = Math.min(1, (Date.now() - t0) / 2400), v = vol(k);
-      MIX.setVol(to, Math.min(1, v * r)); MIX.setVol(from, Math.min(1, v * (1 - r)));
-      if (r >= 1) { clearInterval(iv); from.pause(); o.fading = false; }
-    }, 60);
+    to.currentTime = 0; MIX.setVol(to, 0);
+    AUDIO_ENGINE.play(to).then(ok => {
+      if (seq !== o.seq || vol(k) <= 0) { if (vol(k) <= 0 || (!o.fading && to !== o.a[o.cur])) to.pause(); return; }
+      if (!ok) { o.fading = false; o.retryAfter = Date.now() + 2000; MIX.setVol(from, Math.min(1, vol(k))); return; }
+      o.cur = 1 - o.cur;
+      const t0 = Date.now();
+      o.timer = setInterval(() => {
+        if (seq !== o.seq) return;
+        const r = Math.min(1, (Date.now() - t0) / 2400), v = vol(k);
+        MIX.setVol(to, Math.min(1, v * r)); MIX.setVol(from, Math.min(1, v * (1 - r)));
+        if (r >= 1) { clearInterval(o.timer); o.timer = null; from.pause(); o.fading = false; }
+      }, 60);
+    });
   }
   function refresh() {
     Object.keys(TYPES).forEach(k => {
       const v = vol(k);
       if (v > 0) {
         if (!unlocked) return;
-        const o = ensure(k), x = o.a[o.cur];
+        const o = ensure(k);
+        if (!o.a) { refreshBuffer(k, o, v); return; }
+        const x = o.a[o.cur];
         if (!o.fading) MIX.setVol(x, Math.min(1, v));
-        if (x.paused) x.play().catch(() => {});
-      } else if (P[k]) P[k].a.forEach(x => x.pause());
+        if (x.paused) AUDIO_ENGINE.play(x);
+      } else if (P[k]) {
+        const o = P[k];
+        if (!o.a) { refreshBuffer(k, o, 0); o.level = 0; }
+        else { cancelFade(o); o.a.forEach(x => { x.pause(); MIX.setVol(x, 0); }); }
+      }
     });
   }
   function unlock() { if (!unlocked) { unlocked = true; refresh(); } }
-  ['pointerdown', 'keydown'].forEach(ev => document.addEventListener(ev, unlock, true));
+  ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown'].forEach(ev => document.addEventListener(ev, unlock, true));
+  AUDIO_ENGINE.onWake(() => { if (unlocked) refresh(); }, () => unlocked && Object.keys(TYPES).some(k => vol(k) > 0));
   VOL.on(refresh);
   function applyPreset(i) { const pr = PRESETS[i]; Object.keys(TYPES).forEach(k => VOL.set('amb_' + k, pr.v[k] || 0)); }
   function active() { return Object.keys(TYPES).filter(k => (VOL.get('amb_' + k) || 0) > 0); }
-  function status() { return Object.fromEntries(Object.entries(P).map(([k, o]) => [k, { playing: !o.a[o.cur].paused, t: +o.a[o.cur].currentTime.toFixed(1), vol: +o.a[o.cur].volume.toFixed(2) }])); }
-  function _seek(k, t) { if (P[k]) P[k].a[P[k].cur].currentTime = t; }
+  function status() { return Object.fromEntries(Object.entries(P).map(([k, o]) => [k, o.a ? { backend: 'media', playing: !o.a[o.cur].paused, t: +o.a[o.cur].currentTime.toFixed(1), vol: vol(k) } :
+    { backend: 'buffer', playing: !!o.source && o.ctx.state === 'running', loading: !o.buffer, t: +position(o).toFixed(1), duration: o.buffer ? o.buffer.duration : 0, vol: vol(k) }])); }
+  function _seek(k, t) {
+    const o = P[k]; if (!o) return;
+    if (o.a) o.a[o.cur].currentTime = t;
+    else if (o.buffer) { stopBuffer(o); o.offset = Math.max(0, t) % o.buffer.duration; refresh(); }
+  }
   return { TYPES, PRESETS, refresh, applyPreset, active, status, _seek };
 })();

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-13",
+  "version": 74,
+  "browser": "Microsoft Edge headless, Playwright CLI, disposable context",
+  "url": "file:///E:/NEWTEST/新刷題庫框架 - TEST 1/index.html",
+  "result": "passed",
+  "questionPreviewsChecked": 2629,
+  "interactionChecksPassed": 46,
+  "mobileViewport": { "width": 390, "height": 844 },
+  "coverage": [
+    "Single, multiple-choice, true/false, fill, open-response, images and grouped questions",
+    "Original image loads through file://; image marks remain visible",
+    "Inline expand/collapse through stem, options and keyboard",
+    "Explanation text and drag text selection keep the card open",
+    "Browsing does not alter answer records",
+    "Pagination retains expansion state",
+    "Numeric labels, Markdown and multiline choices",
+    "Subject, type, status, keyword/ID filters and empty state",
+    "Practice modal, answer recording and filtered-list refresh",
+    "Selected expedition question count",
+    "Existing wrong-answer notebook rows and practice",
+    "390px card widths, including image and open-response questions",
+    "No browser JavaScript errors",
+    "Test localStorage backed up and restored"
+  ],
+  "localBridge": "The unavailable local Peglin status endpoint was stubbed with HTTP 200 and ok:false during interaction checks; no game bridge behavior was evaluated.",
+  "screenshots": ["bank-card-desktop.png", "bank-card-mobile.png", "bank-card-image.png"]
+}

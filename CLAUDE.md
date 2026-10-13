@@ -188,3 +188,17 @@
 ## 學習模式回上一頁／跳頁（2026-10-13）
 
 - 課程播放器底部「◀ 上一頁」，上方色條（`#lpPips`）看過的格子可以點、直接跳頁（只能跳到做過的最遠一步 `R.far` 以內）。回到看過的頁面是「回顧」（顯示「🔁 回顧中・作答不計分」）：可以重看、重答，但不 tally、不打怪、不進複習盒、不換戰鬥段落，「繼續」隨時可按。回到最遠那一步時，實戰會接著原本做到的那一題（`R.farSub`）。課末魔王開始後不能回頁。
+
+## 題庫直接閱讀（2026-10-13，v74）
+
+- `js/screens.js` 的 `bank()` 改為完整題目卡片：題幹、文字選項與完整圖片直接顯示；點題目／選項或按鈕在原卡片展開／收合詳解，每頁 30 題，分頁後保留展開狀態。
+- `QV.previewHTML(q)` 在 `js/question.js`，共用原本的題幹／圖片／題組呈現，選項為靜態文字；閱覽不記作答。「練習此題」沿用 `QV.practiceModal`，關閉後重畫篩選結果以更新紀錄與數量。錯題本沿用 `qrow()`；樣式在 `css/style.css` 的 lists 段。
+- Playwright CLI＋Edge 獨立 context 的 file:// 驗證通過：2,629 題預覽、46 項互動檢查及 390px 手機版，測試存檔已還原；摘要和截圖在 `output/playwright/`。只改介面時不用重建 `data/`。
+
+## iPad 音訊播放修正（2026-10-13，v75）
+
+- `js/audio.js` 的 `AUDIO_ENGINE` 共用一個 AudioContext，使用裝置預設 sampleRate、播放 session、手勢重試與中斷／停滯恢復；SFX 與 MIX 都從它取 context。iOS 的 BGM 重用單一媒體播放器，不調速補償音高；桌機 BGM 沿用兩個播放器淡入淡出。
+- iOS http(s) 的 AMB 用按需解碼的短環境音 buffer，首尾預先交疊 2.4 秒，再由 AudioBufferSourceNode.loop 循環。不要用 JS 計時器反覆 play／seek 取代它，也不要把長 BGM 解碼成 AudioBuffer。解碼失敗降回單一媒體循環播放器；桌機 AMB 只有下一段 play 成功後才換 cur／淡出，靜音時取消過期計時器。
+- Edge 真實 Web Audio 的 iPad／iPhone 路徑模擬各 19 項、桌機 8 項、解碼失敗 fallback 4 項通過。工具／重跑說明：`tools/audio-qa/`；摘要：`output/playwright/audio-qa.json`。Windows WebKit 沒有 AudioContext，**未做實機 iPad 音訊或音高驗證**；勿把路徑模擬說成已確認 iPadOS／Chrome 的實際輸出。網址版需部署才生效。
+
+- 發布合併版本為 **v88**：以 `origin/main` 的 v87（`cafa319`）為基底，保留 HAPTIC、低頻打擊音效與新版學習返回／跳頁功能。合併後 iPad 音訊 19 項、題庫／原生觸覺開關 9 項及全 JS／內容驗證通過。相容性工具為 `tools/audio-qa/check-bank.cjs`，摘要為 `output/playwright/merge-qa.json`。

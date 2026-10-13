@@ -477,6 +477,7 @@ const Screens = (() => {
   /* ---------- 題庫 ---------- */
   function bank(init) {
     const state = Object.assign({ subjects: [], exams: [], types: [], status: 'all', search: '', page: 0 }, init || {});
+    const expanded = new Set();
     scr().innerHTML = `<div class="panel"><h2>題庫</h2>
       <div class="filters">
         <div class="frow"><label>科目</label><span id="fsj">${chipGroup(Object.keys(C.SUBJECTS).map(s => [s, C.SUBJECTS[s].name]), state.subjects)}</span></div>
@@ -486,15 +487,44 @@ const Screens = (() => {
         <div class="frow"><label>搜尋</label><input class="px-in" id="fq" placeholder="題目、標籤或詳解的關鍵字" style="width:min(380px,100%)"></div>
       </div>
       <div class="row mt"><span id="cnt" class="gold-t"></span><span class="grow"></span><button class="px-btn small gold" id="runit">用這些題目出征</button></div>
-      <div class="qlist mt" id="ql"></div><div class="pager" id="pg"></div></div>`;
+      <p class="dim small-t">點題目或選項可展開／收合詳解；想作答時按「練習此題」。</p>
+      <div class="qlist bank-list mt" id="ql"></div><div class="pager" id="pg"></div></div>`;
     const PER = 30;
+    function card(q) {
+      const ex = Store.EX[q.exam], st = Store.qs[q.id], w = Store.wrong[q.id];
+      const stTag = !st ? '<span class="tag">未作答</span>' : st.last ? `<span class="tag ok">✔ ${st.c}/${st.a}</span>` : `<span class="tag ng">✘ ${st.c}/${st.a}</span>`;
+      const row = U.h(`<article class="bank-card" data-qid="${U.esc(q.id)}">
+        <div class="bank-head"><div class="qmeta"><span class="tag" style="border-color:${(C.SUBJECTS[ex.subj] || {}).color || '#888'}">${U.esc(QV.exLabel(ex))}</span>
+          <span class="tag">第 ${U.esc(q.n)} 題</span><span class="tag ${q.type}">${QV.typeName(q)}</span>${q.label ? `<span class="tag">${U.esc(q.label)}</span>` : ''}
+          ${w ? `<span class="small-t ${w.done ? 'green-t' : 'red-t'}">${w.done ? '（錯題已掌握）' : `（錯 ${w.n} 次）`}</span>` : ''}</div><div class="bank-status">${stTag}</div></div>
+        <div class="bank-preview">${QV.previewHTML(q)}</div>
+        <div class="bank-actions"><button class="px-btn small bank-toggle" aria-expanded="false" aria-controls="bank-ex-${U.esc(q.id)}">▸ 展開詳解</button><span class="grow"></span><button class="px-btn small bank-practice">練習此題</button></div>
+        <div class="bank-explanation" id="bank-ex-${U.esc(q.id)}" hidden></div></article>`);
+      const toggle = row.querySelector('.bank-toggle'), explanation = row.querySelector('.bank-explanation');
+      function reveal(open) {
+        if (open && !explanation.hasChildNodes()) explanation.innerHTML = QV.explainHTML(q);
+        explanation.hidden = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.textContent = open ? '▾ 收合詳解' : '▸ 展開詳解';
+        row.classList.toggle('is-open', open);
+        if (open) expanded.add(q.id); else expanded.delete(q.id);
+      }
+      toggle.onclick = () => reveal(explanation.hidden);
+      row.querySelector('.bank-practice').onclick = () => QV.practiceModal(q, draw);
+      row.onclick = e => {
+        if (e.target.closest('button, a, input, textarea, select, summary, label, [contenteditable], .bank-explanation') || window.getSelection()?.toString()) return;
+        reveal(explanation.hidden);
+      };
+      if (expanded.has(q.id)) reveal(true);
+      return row;
+    }
     const draw = () => {
       const list = Store.filter(state);
       U.$('#cnt').textContent = `共 ${list.length} 題`;
       const pages = Math.max(1, Math.ceil(list.length / PER));
       state.page = U.clamp(state.page, 0, pages - 1);
-      const ql = U.$('#ql'); ql.innerHTML = '';
-      list.slice(state.page * PER, state.page * PER + PER).forEach(q => ql.appendChild(qrow(q)));
+      const ql = U.$('#ql'); ql.innerHTML = list.length ? '' : '<p class="dim center">沒有符合篩選條件的題目。</p>';
+      list.slice(state.page * PER, state.page * PER + PER).forEach(q => ql.appendChild(card(q)));
       const pg = U.$('#pg');
       pg.innerHTML = `<button class="px-btn small" ${state.page ? '' : 'disabled'} data-p="-1">◀</button><span>${state.page + 1} / ${pages}</span><button class="px-btn small" ${state.page < pages - 1 ? '' : 'disabled'} data-p="1">▶</button>`;
       U.$$('[data-p]', pg).forEach(b => b.onclick = () => { state.page += Number(b.dataset.p); draw(); window.scrollTo(0, 0); });
@@ -774,7 +804,7 @@ const Screens = (() => {
       <label class="volrow"><span>白噪音總量</span><input type="range" min="0" max="100" step="1" data-k="amb" value="${Math.round(VOL.get('amb') * 100)}"><b>${Math.round(VOL.get('amb') * 100)}</b></label>
       ${Object.entries(AMB.TYPES).map(([k, t]) => `<label class="volrow amb"><span>${t.icon} ${t.name}</span><input type="range" min="0" max="100" step="1" data-k="amb_${k}" value="${Math.round((VOL.get('amb_' + k) || 0) * 100)}"><b>${Math.round((VOL.get('amb_' + k) || 0) * 100) || '關'}</b></label>`).join('')}
       <div class="small-t dim">可以同時混合多種聲音，拉到 0 即關閉（CC0 實錄環境音）</div>
-      <div class="small-t dim">音量控制方式：${U.esc(MIX.info())}${IS_IOS ? '（iPhone 側邊靜音鍵開啟時會沒有聲音）' : ''}</div></div>`);
+      <div class="small-t dim">音量控制方式：${U.esc(MIX.info())}${IS_IOS && !navigator.audioSession ? '（iPhone 側邊靜音鍵開啟時會沒有聲音）' : ''}</div></div>`);
     U.$$('input[type=range]', box).forEach(r => {
       r.oninput = () => { VOL.set(r.dataset.k, r.value / 100); r.nextElementSibling.textContent = (r.dataset.k.startsWith('amb_') && +r.value === 0) ? '關' : r.value; };
       r.onchange = () => SFX.play('coin');
