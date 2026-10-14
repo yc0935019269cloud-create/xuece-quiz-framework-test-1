@@ -1,0 +1,210 @@
+{
+ "checks": [
+  {
+   "name": "optom2-u2-msr 存在",
+   "pass": true
+  },
+  {
+   "name": "optom2-u2-msr：每張概念卡都有國考重點（35 張）",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "optom2-u2-msr：每張概念卡都有示範",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "optom2-u2-msr：知識筆記 exam-cram + formula-summary",
+   "pass": true,
+   "extra": [
+    "exam-cram",
+    "formula-summary"
+   ]
+  },
+  {
+   "name": "optom2-u2-msr：所有 practice 抽題池非空",
+   "pass": true,
+   "extra": {
+    "practice": 10,
+    "pooled": 10
+   }
+  },
+  {
+   "name": "optom2-u3-vf 存在",
+   "pass": true
+  },
+  {
+   "name": "optom2-u3-vf：每張概念卡都有國考重點（33 張）",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "optom2-u3-vf：每張概念卡都有示範",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "optom2-u3-vf：知識筆記 exam-cram + formula-summary",
+   "pass": true,
+   "extra": [
+    "exam-cram",
+    "formula-summary"
+   ]
+  },
+  {
+   "name": "optom2-u3-vf：所有 practice 抽題池非空",
+   "pass": true,
+   "extra": {
+    "practice": 10,
+    "pooled": 10
+   }
+  },
+  {
+   "name": "optom2-u4-bb 存在",
+   "pass": true
+  },
+  {
+   "name": "optom2-u4-bb：每張概念卡都有國考重點（22 張）",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "optom2-u4-bb：每張概念卡都有示範",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "optom2-u4-bb：知識筆記 exam-cram + formula-summary",
+   "pass": true,
+   "extra": [
+    "exam-cram",
+    "formula-summary"
+   ]
+  },
+  {
+   "name": "optom2-u4-bb：所有 practice 抽題池非空",
+   "pass": true,
+   "extra": {
+    "practice": 7,
+    "pooled": 7
+   }
+  },
+  {
+   "name": "國考題 227 題載入",
+   "pass": true,
+   "extra": {
+    "n": 227,
+    "noEx": 0,
+    "sets": 61
+   }
+  },
+  {
+   "name": "國考題每題都有詳解",
+   "pass": true,
+   "extra": {
+    "n": 227,
+    "noEx": 0,
+    "sets": 61
+   }
+  },
+  {
+   "name": "抽樣 16 張概念卡實際渲染出「🎯 國考重點」與「✏️ 示範」",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "optom2-u2-msr：國考總演練實際出題（抽題池 225 題）",
+   "pass": true,
+   "extra": "【112 年第二次專技高考・驗光師《視光學》 第 22 題】用傑克森交叉圓柱鏡檢測法（Jackson Cross Cyl"
+  },
+  {
+   "name": "optom2-u3-vf：國考總演練實際出題（抽題池 78 題）",
+   "pass": true,
+   "extra": "【108 年特種考試・驗光師《低視力學》 第 41 題】皮質性失明（cortical blindness）所傷害的腦部位"
+  },
+  {
+   "name": "optom2-u4-bb：國考總演練實際出題（抽題池 63 題）",
+   "pass": true,
+   "extra": "【109 年特種考試・驗光生《驗光學概要》 第 38 題】關於雙眼自覺式驗光（binocular subjective "
+  },
+  {
+   "name": "知識筆記頁可開啟",
+   "pass": true,
+   "extra": {
+    "summaries": 9,
+    "text": true
+   }
+  },
+  {
+   "name": "optom2-u2-msr：筆記頁有「考前必看」",
+   "pass": true
+  },
+  {
+   "name": "optom2-u2-msr：考前必看至少 8 個重點且多數附相關題",
+   "pass": true,
+   "extra": {
+    "items": 12,
+    "related": 12
+   }
+  },
+  {
+   "name": "optom2-u2-msr：考前必看的相關題可開啟唯讀題目視窗",
+   "pass": true,
+   "extra": "optom2-exam-u2-106-vt-2"
+  },
+  {
+   "name": "optom2-u2-msr：筆記頁有「公式統整」",
+   "pass": true
+  },
+  {
+   "name": "optom2-u3-vf：筆記頁有「考前必看」",
+   "pass": true
+  },
+  {
+   "name": "optom2-u3-vf：考前必看至少 8 個重點且多數附相關題",
+   "pass": true,
+   "extra": {
+    "items": 9,
+    "related": 9
+   }
+  },
+  {
+   "name": "optom2-u3-vf：考前必看的相關題可開啟唯讀題目視窗",
+   "pass": true,
+   "extra": "optom2-exam-u3-107-st-15"
+  },
+  {
+   "name": "optom2-u3-vf：筆記頁有「公式統整」",
+   "pass": true
+  },
+  {
+   "name": "optom2-u4-bb：筆記頁有「考前必看」",
+   "pass": true
+  },
+  {
+   "name": "optom2-u4-bb：考前必看至少 8 個重點且多數附相關題",
+   "pass": true,
+   "extra": {
+    "items": 8,
+    "related": 8
+   }
+  },
+  {
+   "name": "optom2-u4-bb：考前必看的相關題可開啟唯讀題目視窗",
+   "pass": true,
+   "extra": "optom2-exam-u4-106-vh-24"
+  },
+  {
+   "name": "optom2-u4-bb：筆記頁有「公式統整」",
+   "pass": true
+  },
+  {
+   "name": "沒有頁面錯誤",
+   "pass": true,
+   "extra": []
+  }
+ ],
+ "errors": [],
+ "errorsCount": 0
+}

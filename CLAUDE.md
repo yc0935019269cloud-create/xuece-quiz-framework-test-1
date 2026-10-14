@@ -242,3 +242,14 @@
 - js/learn.js 共用 note-related 收合／延後建立列表，保留考前必看的 cram-related 與新增 formula-related，各自預設收合，不隨全部展開。沿用 v93 的固定標題與關閉鍵閱讀視窗。原公式講解與課程流程不變，內容正本在五個 content/learn/physopt JSON，data/learn.js 由 build 生成。
 - 依現有題目逐組核對，規則在 tools/formula-related-qa/link.py；沒有老師原題可配的公式用單元練習。第一單元週期搭配頻率換算作延伸，relatedHint 明確說明題目本身沒有問週期。build 檢查 relatedQuestions 的不重複／存在性，importer 保留連結，舊筆記缺少欄位依相同公式 id 補入內建連結，明確 [] 可清空。
 - QA：97 個單元（排除新增連結欄位）與原公式講解／進度 id 不變，整個第六單元與題庫完整性一致；原 58 項數值驗算、Edge iPad 路徑 192 項與桌機 192 項、全 JS 語法與嚴格建置檢查通過。獨立 context 還原 localStorage、移除匯入 fixture；HTTP／Edge 模擬，沒有實機 iPadOS 或本輪 file://／雲端往返驗證。工具 tools/formula-related-qa/，報告／截圖 output/playwright/formula-related-*。
+
+## 視光學二：雙眼平衡、國考題與國考重點（2026-10-14，v95）
+
+- 來源：使用者的 `E:\學習\大二上\視光學`（講義 PDF＋上課錄音：`3-binocular+balance_f26.pdf`、`vf lab lecture`、10/14 三段錄音）。錄音用 Turbo 轉錄再做前後文校訂（校訂逐字稿在該資料夾的 `逐字稿\校訂逐字稿`，含「待確認片段」；原始音檔已搬到 `已處理音檔`）。老師簡報與國考標準答案有出入時（例如第二次 MPMVA 要不要用紅綠），卡片的國考重點會註明，考試以題目為準。
+- 新單元 `content/learn/optometry/optom2/optom2-u4-bb.json`（雙眼平衡，7 課）與自編題本 `optom2-u4-q`（26 題）；第 2、3 單元補上課（u2 l9 鐘面圖／針孔／裂孔板／散光分類／檢查距離、l10 國考總演練；u3 l9 檢查前準備／Amsler／法定視障、l10 國考總演練）。
+- **國考題**：`content/bank/optometry/optom2/exam/`，61 個題本、227 題（u2 164、u3 26、u4 37；題號 id 形如 `optom2-exam-u<單元>-<年>-<vh|vt|sp|st|lh|lt>-<題號>`），來源為 `E:\學習\驗光師國考題` 的驗光師《視光學》《低視力學》與驗光生《驗光學概要》（106～114 年；114 年驗光生普考 PDF 只有答案頁，未納入）。答案取自每份 PDF 的標準答案頁；詳解為自編。三個單元的 `banks` 都掛了對應國考題本，所以 build 的覆蓋檢查會要求教材追上國考題（目前只剩既有的 `LV` 符號提醒）。
+- **概念卡新欄位**：`exam`（🎯 國考重點，字串陣列）與 `demo`（✏️ 示範），`js/learn.js` 的 `examDemoHTML`、`css/style.css` 的 `.lp-exam/.lp-demo`、`tools/build.py` 檢查；規格見 `docs/格式_學習模式.md`。u2～u4 每張概念卡都有，QA 會驗證。
+- **知識筆記**：u2～u4 各有 `exam-cram`（考前必看，附 evidence 連結題目）與 `formula-summary`（公式／規則統整，附 relatedQuestions）；題數是「相關題數」，不是必考保證。
+- 老師講義內容不重複做：u1～u3 原本就涵蓋 MSR 與視野的簡報（含 FDT、VR、微視野），錄音裡重複的內容沒有再做一次；錄音新增的內容（Risley 稜鏡、垂直稜鏡分離細節、bracketing、雙眼驗光等）都在 u4。
+- 檢查工具：`tools/optom2-qa/check.cjs`（Playwright＋Edge 一次性 headless context：資料完整性、國考題載入與詳解、抽樣渲染、知識筆記頁；先設 `$env:NODE_PATH='E:\NEWTEST\skull-atlas-3d\node_modules'`）；PDF 解析器 `tools/optom2-gen/parse_exam.py`（要加新年份國考題時用；**內容正本在 content/，不要重跑舊生成流程覆蓋詳解**）。
+- 測試狀態：嚴格建置 exit 0、QA 35/35（file:// 開 index.html，含知識筆記相關題視窗）；沒有實機 iPad 驗證、沒有醫學審稿；國考題詳解與卡片重點依標準教科書與課堂簡報自編，數值（如紅綠焦點差 0.44～0.50 D）屬常用參考值。

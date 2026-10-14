@@ -1,0 +1,71 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "optom2-exam-u3-109-lh",
+  "subject": "optometry",
+  "name": "【國考・第03單元】109 年第二次專技高考・驗光師《低視力學》",
+  "path": [
+   "115 大二上",
+   "視光學二",
+   "國考題（視光學二範圍）",
+   "第03單元 視野檢查",
+   "109 年"
+  ],
+  "year": 109,
+  "order": 3635,
+  "source": "考選部 109 年第二次專技高考・驗光師《低視力學》 試題與標準答案（依視光學二單眼自覺式驗光／視野／雙眼平衡範圍挑選）；詳解為自編"
+ },
+ "questions": [
+  {
+   "n": 9,
+   "type": "single",
+   "stem": "【109 年第二次專技高考・驗光師《低視力學》 第 9 題】\n\n下列何者不屬於常見的周邊視野檢查？",
+   "choices": [
+    "對坐視野篩檢（confrontation visual field testing）",
+    "正切視野屏幕（tangent screen）",
+    "Goldmann 視野計（Goldmann perimeter）",
+    "弧形視野計（arc perimeter）"
+   ],
+   "answer": "B",
+   "explain": [
+    "**考點**：掛布式（正切）視野 tangent screen 檢查範圍約**中心 30 度**，屬於中心視野檢查，不算周邊視野。",
+    "- 對坐視野、Goldmann 視野計、弧形視野計（arc perimeter）都能測到周邊。",
+    "",
+    "**出處**：109 年第二次專技高考・驗光師《低視力學》 第 9 題。"
+   ],
+   "tags": [
+    "國考題",
+    "視野",
+    "掛布式視野",
+    "視野檢查方式"
+   ],
+   "level": 2
+  },
+  {
+   "n": 45,
+   "type": "single",
+   "stem": "【109 年第二次專技高考・驗光師《低視力學》 第 45 題】\n\n有關視野（visual field）檢查之結果，下列何者不是檢查品質之參考指標？",
+   "choices": [
+    "固視遺漏（fixation loss）",
+    "偽陽性（false positive）",
+    "偽陰性（false negative）",
+    "平均差（mean deviation）"
+   ],
+   "answer": "D",
+   "explain": [
+    "**考點**：Humphrey 報告的**可靠度指標**：固視遺失（fixation loss）、偽陽性、偽陰性。",
+    "- 平均差（MD）是**整體指標**，反映視野山丘整體高度和正常相比差多少，不是檢查品質指標。",
+    "**易錯**：先看可靠度，再看整體指標。",
+    "",
+    "**出處**：109 年第二次專技高考・驗光師《低視力學》 第 45 題。"
+   ],
+   "tags": [
+    "國考題",
+    "視野",
+    "Humphrey",
+    "可靠度指標"
+   ],
+   "level": 2
+  }
+ ]
+}

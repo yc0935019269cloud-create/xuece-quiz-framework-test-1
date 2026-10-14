@@ -881,6 +881,12 @@ img.plant.unseen { filter: brightness(0) opacity(.35); }
 .lp-goals, .lp-keys { background: rgba(79,168,255,.1); border: 3px dashed var(--blue); padding: 8px 12px; margin-top: 12px; }
 .lp-goals { border-color: var(--gold); background: rgba(255,207,74,.08); }
 .lp-keys ul, .lp-goals ul { margin: 4px 0 0; padding-left: 22px; }
+.lp-exam, .lp-demo { margin-top: 12px; padding: 8px 12px; }
+.lp-exam { background: rgba(255,207,74,.12); border: 3px dashed var(--gold); }
+.lp-exam ul { margin: 4px 0 0; padding-left: 22px; }
+.lp-demo { background: rgba(98,214,110,.10); border-left: 4px solid var(--green); }
+.lp-demo > b { display: block; margin-bottom: 2px; }
+.lp-demo p, .lp-exam p { margin: 4px 0; }
 .lp-tip { margin-top: 10px; padding: 6px 10px; background: rgba(185,139,255,.12); border-left: 4px solid var(--purple); font-size: 15px; }
 .lp-foot { display: flex; align-items: flex-end; gap: 10px; margin-top: 12px; }
 .lp-pet { display: flex; align-items: flex-end; gap: 6px; min-height: 48px; }

@@ -1,0 +1,46 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "optom2-exam-u4-108-vh",
+  "subject": "optometry",
+  "name": "【國考・第04單元】108 年第二次專技高考・驗光師《視光學》",
+  "path": [
+   "115 大二上",
+   "視光學二",
+   "國考題（視光學二範圍）",
+   "第04單元 雙眼平衡",
+   "108 年"
+  ],
+  "year": 108,
+  "order": 3849,
+  "source": "考選部 108 年第二次專技高考・驗光師《視光學》 試題與標準答案（依視光學二單眼自覺式驗光／視野／雙眼平衡範圍挑選）；詳解為自編"
+ },
+ "questions": [
+  {
+   "n": 22,
+   "type": "single",
+   "stem": "【108 年第二次專技高考・驗光師《視光學》 第 22 題】\n\n下列何種雙眼平衡的檢查方法，兩眼的影像是完全分離？",
+   "choices": [
+    "連續交替遮蓋法（successive alternate occlusion）",
+    "隔板法／TIB 法（septum/Turville's infinity balance）",
+    "偏光立體影像法（Polaroid/vectograph）",
+    "漢佛萊斯法（Humphriss method）"
+   ],
+   "answer": "A",
+   "explain": [
+    "**考點**：交替遮蓋（successive alternate occlusion）一次只讓一眼看，兩眼影像**完全分離**，沒有融像、也沒有周邊融像鎖。",
+    "- B、C、D 都還保有某種程度的融像（隔板、偏光、Humphriss）。",
+    "- 缺點：比較是在單眼狀態下做，不適合遠視、屈光不等、眼球震顫。",
+    "",
+    "**出處**：108 年第二次專技高考・驗光師《視光學》 第 22 題。"
+   ],
+   "tags": [
+    "國考題",
+    "交替遮蓋",
+    "融像",
+    "雙眼平衡"
+   ],
+   "level": 1
+  }
+ ]
+}

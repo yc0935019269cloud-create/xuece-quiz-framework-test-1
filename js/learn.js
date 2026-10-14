@@ -777,6 +777,7 @@ const LEARN_UI = (() => {
       } else if (s.type === 'card') {
         body.innerHTML = head + `<h3>${U.esc(s.title)}</h3>${imgsHTML(s.img, s.img_source || s.source)}${md(s.body)}` +
           ((s.keys || []).length ? `<div class="lp-keys"><b>📌 重點</b><ul>${s.keys.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : '') +
+          examDemoHTML(s) +
           (s.tip ? `<div class="lp-tip">🐾 ${inl(s.tip)}</div>` : '');
         ready();
       } else if (s.type === 'check') {
@@ -1165,7 +1166,7 @@ const LEARN_UI = (() => {
    * 科目 → path 各層 → 單元 → 課 → 卡片，和課程列表同一套樹；可篩科目、搜尋卡片內容（只列出命中的卡）。
    * 課的卡片在展開時才產生，避免一次畫上百課。展開狀態記在 D.cfg.open（"n:" 開頭）。 */
   let noteSubj = 'all', noteQ = '';
-  const noteText = s => [s.title, s.body, ...(s.keys || []), ...(s.points || []).map(x => typeof x === 'string' ? x : [x.name, x.desc].join(' '))].join(' ').toLowerCase();
+  const noteText = s => [s.title, s.body, ...(s.keys || []), ...(s.exam || []), s.demo, ...(s.points || []).map(x => typeof x === 'string' ? x : [x.name, x.desc].join(' '))].join(' ').toLowerCase();
   const formulaText = n => [n.title, n.intro, n.conventions, n.recap, n.source, n.reminders, ...(n.items || []).flatMap(f => [f.name, ...(f.equations || []), f.use, f.tip]), ...(n.formulas || []).flatMap(f => [f.name, ...(f.equations || []), f.symbols, f.intuition, f.warmup, f.derivation, f.memory, f.example, f.pitfall])].join(' ').toLowerCase();
   const relatedIds = item => [...new Set(Array.isArray(item.relatedQuestions) ? item.relatedQuestions : Array.isArray(item.evidence?.questionIds) ? item.evidence.questionIds : [])].filter(id => typeof id === 'string' && Store.Q[id]);
   const relatedSource = q => Store.EX[q.exam]?.name.startsWith('【老師課堂題】') ? 'teacher' : Store.EX[q.exam]?.name.startsWith('【國考') ? 'exam' : 'practice';
@@ -1196,8 +1197,13 @@ const LEARN_UI = (() => {
         <div class="formula-conventions"><h4>整個單元怎麼串起來</h4>${md(n.recap)}</div>
         ${(n.references || []).length ? `<p class="dim small-t">核對來源：${n.references.filter(r => /^https:\/\//.test(r.url)).map(r => `<a href="${U.esc(r.url)}" target="_blank" rel="noopener noreferrer">${U.esc(r.title)}</a>`).join('、')}。符號沿用本課程。</p>` : ''}</div></details>`;
   }
+  /* 概念卡的「國考重點」與「示範」：兩者都是選填，寫在同一張卡裡，學習時與筆記頁都會顯示 */
+  function examDemoHTML(s) {
+    return ((s.exam || []).length ? `<div class="lp-exam"><b>🎯 國考重點</b><ul>${s.exam.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : '') +
+      (s.demo ? `<div class="lp-demo"><b>✏️ 示範</b>${md(s.demo)}</div>` : '');
+  }
   function noteCard(p, l, s) {
-    return s.type === 'card' ? `<div class="lnote-card"><h4>📘 ${U.esc(s.title)}</h4>${imgsHTML(s.img, s.img_source || s.source)}${md(s.body)}${(s.keys || []).length ? `<div class="lp-keys"><ul>${s.keys.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : ''}</div>`
+    return s.type === 'card' ? `<div class="lnote-card"><h4>📘 ${U.esc(s.title)}</h4>${imgsHTML(s.img, s.img_source || s.source)}${md(s.body)}${(s.keys || []).length ? `<div class="lp-keys"><ul>${s.keys.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : ''}${examDemoHTML(s)}</div>`
       : s.type === 'diagram' ? `<div class="lnote-card"><h4>🔍 ${U.esc(s.title || '圖解')}</h4><div class="dg-wrap small"><img src="${U.esc(U.img(s.img))}" alt="">${s.points.map((pt, i) => { const o = ((D.pins || {})[`${p.id}/${l.id}/${l.steps.indexOf(s)}`] || {})[i] || [pt.x, pt.y]; return o[0] == null ? '' : `<span class="dg-pin" style="left:${o[0]}%;top:${o[1]}%">${i + 1}</span>`; }).join('')}</div><ol class="small-t">${s.points.map(pt => `<li><b>${U.esc(pt.name)}</b>${pt.desc ? '：' + inl(pt.desc) : ''}</li>`).join('')}</ol></div>`
       : `<div class="lnote-card"><h4>⭐ 本課重點</h4><ol>${s.points.map(x => `<li>${inl(x)}</li>`).join('')}</ol></div>`;
   }

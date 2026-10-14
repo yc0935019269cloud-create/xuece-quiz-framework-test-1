@@ -1,0 +1,49 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "optom2-exam-u4-113-vh",
+  "subject": "optometry",
+  "name": "【國考・第04單元】113 年第二次專技高考・驗光師《視光學》",
+  "path": [
+   "115 大二上",
+   "視光學二",
+   "國考題（視光學二範圍）",
+   "第04單元 雙眼平衡",
+   "113 年"
+  ],
+  "year": 113,
+  "order": 3858,
+  "source": "考選部 113 年第二次專技高考・驗光師《視光學》 試題與標準答案（依視光學二單眼自覺式驗光／視野／雙眼平衡範圍挑選）；詳解為自編"
+ },
+ "questions": [
+  {
+   "n": 22,
+   "type": "single",
+   "stem": "【113 年第二次專技高考・驗光師《視光學》 第 22 題】\n\n下列何者不是在自覺式驗光時可以達到雙眼視覺（binocularity）的方法？",
+   "choices": [
+    "Humphriss 心理性中隔法（Humphriss Psychological Septum）",
+    "Turville 鏡像法（Turville mirror technique）",
+    "Morgan 投射中隔法（Morgan projected septum method）",
+    "矢量圖卡（Vectographic Cards）"
+   ],
+   "answer": "D",
+   "explain": [
+    "**考點**：自覺式驗光時能讓兩眼同時使用（保有雙眼視覺）的做法。",
+    "- A Humphriss 心理性中隔：兩眼同開，一眼看測試視標、另一眼被霧視，靠大腦中隔。",
+    "- B Turville 鏡像法、C Morgan 投射中隔法：用實體或投射的中隔，讓兩眼各看一半視標，仍保有雙眼融像。",
+    "- 官方答案 D（矢量圖卡）被歸為不是這一類。題目用詞較模糊，臨場以「Humphriss／Turville／Morgan＝中隔類」記憶即可。",
+    "",
+    "**出處**：113 年第二次專技高考・驗光師《視光學》 第 22 題。"
+   ],
+   "tags": [
+    "國考題",
+    "雙眼驗光",
+    "Humphriss",
+    "隔板法",
+    "偏光",
+    "雙眼平衡"
+   ],
+   "level": 3
+  }
+ ]
+}

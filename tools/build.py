@@ -33,7 +33,7 @@ THEMES = ['lit', 'lang', 'math', 'calc', 'hist', 'sci', 'mix']
 QTYPES = ['single', 'multi', 'tf', 'fill', 'open']
 STEP_TYPES = ['intro', 'card', 'check', 'example', 'practice', 'recap', 'diagram', 'interactive']
 CHECK_KINDS = ['single', 'multi', 'tf', 'fill', 'order', 'self']
-MD_FIELDS = ['body', 'q', 'hint', 'explain', 'problem', 'tip', 'front', 'back', 'desc', 'stem', 'text', 'task', 'html']
+MD_FIELDS = ['body', 'q', 'hint', 'explain', 'problem', 'tip', 'front', 'back', 'desc', 'stem', 'text', 'task', 'html', 'demo']
 ID_RE = r'[A-Za-z0-9][A-Za-z0-9_-]*'
 
 
@@ -581,6 +581,12 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
                     R.warn(SW, '概念卡超過 900 字，建議拆成兩張卡（中間插一題檢核）')
                 if s.get('flash') is not None:
                     check_flash(s['flash'], SW + '.flash', R)
+                if t == 'card':
+                    ex = s.get('exam')
+                    if ex is not None and (not isinstance(ex, list) or not ex or not all(is_str(x) for x in ex)):
+                        R.err(SW, 'exam（國考重點）必須是非空的字串陣列')
+                    if s.get('demo') is not None and not is_str(s.get('demo')):
+                        R.err(SW, 'demo（示範）必須是字串')
                 for im in (s['img'] if isinstance(s.get('img'), list) else [s['img']] if s.get('img') else []):
                     if not re.match(r'^(https?:|data:)', im) and not os.path.exists(os.path.join(ROOT, im)):
                         R.warn(SW, f'找不到圖片 {im}')
