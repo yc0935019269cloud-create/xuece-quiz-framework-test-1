@@ -948,8 +948,34 @@ const LEARN_UI = (() => {
       <div class="dg"><div class="dg-wrap" id="dgWrap"><img src="${U.esc(U.img(s.img))}" alt="">${pts.map((pt, i) => `<button class="dg-pin" data-i="${i}" style="left:${pt.x}%;top:${pt.y}%">${i + 1}</button>`).join('')}</div>
       <div class="dg-side" id="dgSide"></div></div>${s.source ? `<div class="lp-src">圖片來源：${inl(s.source)}</div>` : ''}`;
     const side = U.$('#dgSide'), pins = U.$$('.dg-pin', body), wrap = U.$('#dgWrap');
-    const place = () => pins.forEach((b, i) => { const ok = pts[i].x != null && !isNaN(pts[i].x); b.style.display = ok ? '' : 'none'; if (ok) { b.style.left = pts[i].x + '%'; b.style.top = pts[i].y + '%'; } });
+    /* 標記點太靠近時（手機版圖片只有 300px 寬）：縮小圓點並把重疊的點稍微推開，只改畫面位置、不改資料 */
+    const spread = () => {
+      const img = wrap.querySelector('img'), r = img && img.getBoundingClientRect();
+      if (!r || !r.width) return;
+      const pin = r.width < 420 ? 20 : 24, P = [];
+      wrap.style.setProperty('--pin', pin + 'px');
+      pins.forEach((b, i) => { if (pts[i].x != null && !isNaN(pts[i].x)) P.push({ b, ox: pts[i].x / 100 * r.width, oy: pts[i].y / 100 * r.height, x: pts[i].x / 100 * r.width, y: pts[i].y / 100 * r.height }); });
+      for (let it = 0; it < 40; it++) {
+        let moved = false;
+        for (let a = 0; a < P.length; a++) for (let c = a + 1; c < P.length; c++) {
+          let dx = P[c].x - P[a].x, dy = P[c].y - P[a].y, d = Math.hypot(dx, dy);
+          if (d >= pin - 2) continue;
+          if (d < 0.01) { dx = 1; dy = 0; d = 1; }
+          const k = (pin - 2 - d) / 2 / d;
+          P[a].x -= dx * k; P[a].y -= dy * k; P[c].x += dx * k; P[c].y += dy * k; moved = true;
+        }
+        P.forEach(p => { // 最多離原位 14px，且留在圖內
+          const ddx = p.x - p.ox, ddy = p.y - p.oy, dd = Math.hypot(ddx, ddy);
+          if (dd > 14) { p.x = p.ox + ddx / dd * 14; p.y = p.oy + ddy / dd * 14; }
+          p.x = Math.min(Math.max(p.x, pin / 2), r.width - pin / 2); p.y = Math.min(Math.max(p.y, pin / 2), r.height - pin / 2);
+        });
+        if (!moved) break;
+      }
+      P.forEach(p => { p.b.style.left = (p.x / r.width * 100) + '%'; p.b.style.top = (p.y / r.height * 100) + '%'; });
+    };
+    const place = () => { pins.forEach((b, i) => { const ok = pts[i].x != null && !isNaN(pts[i].x); b.style.display = ok ? '' : 'none'; if (ok) { b.style.left = pts[i].x + '%'; b.style.top = pts[i].y + '%'; } }); spread(); };
     place();
+    { const im = wrap.querySelector('img'); if (im) { im.addEventListener('load', spread); if (window.ResizeObserver) new ResizeObserver(spread).observe(wrap); } }
     /* 標記位置設定：AI 沒給座標、或位置不準時，依序點圖上的正確位置（存在這台電腦） */
     const setup = (list, then) => {
       let k = 0;

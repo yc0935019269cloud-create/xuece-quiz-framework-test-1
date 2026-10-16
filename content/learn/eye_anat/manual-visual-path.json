@@ -1,0 +1,850 @@
+{
+  "schema": "xd-learn/1",
+  "id": "manual-visual-path",
+  "subject": "eye_anat",
+  "unit": "視覺路徑：眼後段、視神經與視網膜",
+  "title": "【期中範圍】視覺路徑前半段：眼底、視神經盤與視神經分段、視網膜十層（手冊第 5 頁）",
+  "desc": "手冊第 5 頁前半：視神經四段與篩板前後區、視網膜中央動脈、感光細胞→雙極細胞→神經節細胞三級神經元；配合既有「視覺路徑」課程（視交叉到枕葉）與腦幹單元的大腦外側面一起讀。",
+  "level": 2,
+  "minutes": 50,
+  "order": 3,
+  "source": "《新實驗手冊-01.pdf》全 11 頁名詞；上課逐字稿（40 秒看圖跑台、顱孔與腦神經順序、LR₆SO₄ 等老師強調重點）；圖片來源見各圖說明（開放授權圖，已加標記點）。",
+  "tags": [
+    "視覺路徑",
+    "視神經",
+    "視網膜",
+    "看圖辨識"
+  ],
+  "path": [
+    "眼解剖實驗",
+    "實驗手冊圖鑑",
+    "★ 期中範圍：骨質眼窩・血管系統・視覺路徑・腦幹與神經",
+    "第 5 頁　視覺路徑"
+  ],
+  "lessons": [
+    {
+      "id": "l3",
+      "title": "眼後段：玻璃體、視網膜、黃斑與視神經盤",
+      "goals": [
+        "認出眼後段 12 個名詞",
+        "能看眼底照片說出黃斑、視神經盤、血管"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "眼後段：玻璃體以後",
+          "body": [
+            "眼後段包含**玻璃體、視網膜、脈絡膜、視神經**。臨床用眼底鏡／眼底照相看到的是視網膜表面，所以第一張圖直接用眼底照片。"
+          ]
+        },
+        {
+          "type": "diagram",
+          "title": "正常右眼眼底：黃斑、視神經盤與血管",
+          "body": "眼底鏡看到的右眼視網膜：右側（鼻側）有明亮的視神經盤，血管從這裡向四面散開；中央偏左（顳側）較暗處是黃斑部。",
+          "img": "img/eye-anat-manual/fundus_od.jpg",
+          "source": "Mikael Häggström.\n\nWhen using this image in external works, it may be cited as:\nHäggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）；加標記點",
+          "mode": "both",
+          "points": [
+            {
+              "name": "視神經盤 optic disc",
+              "desc": "視神經與視網膜中央血管進出的地方，橘黃色圓盤，沒有感光細胞（盲點）。　記法：在鼻側",
+              "x": 80.5,
+              "y": 56
+            },
+            {
+              "name": "視杯 optic cup",
+              "desc": "視神經盤中央較亮的凹陷；杯盤比正常約小於 0.3。",
+              "x": 84,
+              "y": 48.5
+            },
+            {
+              "name": "黃斑部 macula",
+              "desc": "視網膜後極部（直徑約 5.5 mm）、顳側，富含錐細胞；眼底看起來較暗。",
+              "x": 42.5,
+              "y": 54
+            },
+            {
+              "name": "小窩（中央小凹） fovea",
+              "desc": "黃斑部正中央的小凹陷，視力最好；只有錐細胞，沒有視網膜血管。　記法：看圖最暗的小點",
+              "x": 50,
+              "y": 50
+            },
+            {
+              "name": "視網膜中央動脈（分支） central retinal artery",
+              "desc": "從視神經盤分出顳上、顳下、鼻上、鼻下四大分支；動脈較細、顏色較亮。",
+              "x": 80,
+              "y": 38
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "title": "眼底照片怎麼看？",
+          "body": [
+            "| 構造 | 外觀 | 重點 |",
+            "|---|---|---|",
+            "| **視神經盤** | **明亮的橘黃色圓盤**，血管由此出入 | 在**鼻側**；沒有感光細胞＝盲點；直徑約 1.5 mm |",
+            "| **視杯** | 盤中央較亮的凹陷 | 杯／盤比正常 < 0.3；青光眼變大 |",
+            "| **黃斑部** | 後極部**較暗**的圓區，直徑約 5.5 mm | 在視神經盤的**顳側**；錐細胞密度高 |",
+            "| **小窩（中央小凹）** | 黃斑正中央最暗的小點 | 只有錐細胞、**無血管**（脈絡膜供血）；視力最好 |",
+            "| **視網膜中央動脈／靜脈** | 從視神經盤分出的血管 | 四大分支：顳上、顳下、鼻上、鼻下；**靜脈較粗較暗** |",
+            "",
+            "**黃斑 vs 小窩**：黃斑部（macula lutea）是直徑 5.5 mm 的區域，小窩（fovea）是它中央的 1.5 mm 凹陷，最中心的 0.35 mm 叫 foveola。"
+          ],
+          "keys": [
+            "視神經盤在鼻側；黃斑在顳側",
+            "小窩無血管、全是錐細胞",
+            "視杯在盤中央"
+          ],
+          "exam": [
+            "**視神經盤**（106 師高 11、108 生特 10、109 生特 12）：中央生理性凹陷、ISNT；**黃斑與小窩**（109 師特 15、110 師高 13）；**錐細胞聚集在黃斑**（106 師特 25）。",
+            "**中心視網膜動脈**（113 師高 14、114 師高 22）。"
+          ],
+          "demo": [
+            "**示範**：「中央小凹沒有神經節細胞、沒有桿細胞」——小窩幾乎只有錐細胞，神經節細胞被推到旁邊（所以像個凹洞）。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "眼底照片中，明亮的橘黃色圓盤（血管由此出入）是？",
+          "choices": [
+            "黃斑部",
+            "視神經盤",
+            "小窩",
+            "鋸齒緣"
+          ],
+          "answer": "B",
+          "hint": "血管的入口與出口。",
+          "explain": "視神經盤是視神經與視網膜中央血管出入的位置，在鼻側。"
+        },
+        {
+          "type": "diagram",
+          "title": "視神經盤與視神經分段（示意圖，已塗去文字）",
+          "body": "視神經頭縱切：上方是視網膜、脈絡膜、鞏膜三層；神經纖維束穿過鞏膜篩板往下形成視神經，外面包著腦膜（硬腦膜、蛛網膜、軟腦膜）。",
+          "img": "img/eye-anat-manual/onh_diag_m.jpg",
+          "source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點",
+          "mode": "both",
+          "points": [
+            {
+              "name": "視網膜 retina",
+              "desc": "最上面的多層結構（神經纖維層向中央匯集）。",
+              "x": 8,
+              "y": 25
+            },
+            {
+              "name": "脈絡膜 choroid",
+              "desc": "視網膜下方的血管層。",
+              "x": 9,
+              "y": 30.5
+            },
+            {
+              "name": "鞏膜 sclera",
+              "desc": "最外層白色纖維層，神經由此穿出。",
+              "x": 8,
+              "y": 36
+            },
+            {
+              "name": "篩板前區 prelaminar region",
+              "desc": "神經纖維在鞏膜篩板之前（視神經盤表面）的一段；無髓鞘，血供來自睫狀後短動脈與辛氏環。　記法：篩板前＝視神經盤",
+              "x": 55,
+              "y": 25
+            },
+            {
+              "name": "鞏膜篩板 lamina cribrosa",
+              "desc": "鞏膜上許多篩孔，讓神經纖維穿出；由此開始有髓鞘。",
+              "x": 51,
+              "y": 30.5
+            },
+            {
+              "name": "篩板後區 retrolaminar region",
+              "desc": "篩板之後到進入視神經鞘之間的一段，有髓鞘、被腦膜包覆。",
+              "x": 57,
+              "y": 48
+            },
+            {
+              "name": "視神經血管環（Zinn–Haller） circle of Zinn-Haller",
+              "desc": "睫狀後短動脈在視神經周圍鞏膜內吻合形成的動脈環，供應視神經盤。",
+              "x": 27,
+              "y": 40.5
+            },
+            {
+              "name": "視網膜中央動脈 central retinal artery",
+              "desc": "走在視神經中央（偏紅色），供應內層視網膜。",
+              "x": 48.5,
+              "y": 70
+            },
+            {
+              "name": "視網膜中央靜脈 central retinal vein",
+              "desc": "與動脈同行（偏藍色）出眼球。",
+              "x": 47,
+              "y": 66
+            },
+            {
+              "name": "睫狀後動脈 posterior ciliary artery",
+              "desc": "在視神經兩側穿鞏膜（短動脈分支）。",
+              "x": 17.5,
+              "y": 68
+            },
+            {
+              "name": "軟腦膜 pia mater",
+              "desc": "緊貼神經表面的最內層腦膜（紫色）。",
+              "x": 31,
+              "y": 44
+            },
+            {
+              "name": "蛛網膜 arachnoid",
+              "desc": "中間層腦膜（淺藍色蛛網膜下腔外緣）。",
+              "x": 27.5,
+              "y": 56
+            },
+            {
+              "name": "硬腦膜 dura mater",
+              "desc": "最外層厚腦膜，與鞏膜相續。",
+              "x": 28,
+              "y": 66
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "title": "視神經盤構造：篩板前、篩板、篩板後與視神經分段",
+          "body": [
+            "視神經（長約 5 cm）分四段：**眼內段（盤）**、**眶內段**（最長）、**管內段**、**顱內段**。眼內段又依鞏膜篩板分：",
+            "- **篩板前區（prelaminar）**：視神經盤表面，纖維沒有髓鞘。",
+            "- **篩板區（laminar）**：穿過鞏膜篩板（lamina cribrosa）的小孔。",
+            "- **篩板後區（retrolaminar）**：之後有髓鞘，外面包硬膜、蛛網膜、軟膜。",
+            "",
+            "血供：篩板前＆篩板區 ← 睫狀後短動脈（Zinn–Haller 環）；篩板後 ← 軟腦膜血管＋眼動脈分支；中央視網膜動脈穿入視神經中央。"
+          ],
+          "keys": [
+            "篩板前→篩板→篩板後",
+            "髓鞘從篩板後才有",
+            "Zinn–Haller 環供應篩板區"
+          ],
+          "exam": [
+            "109 生特 12、114 師高 15、106 師高 15、113 生普 12（髓鞘、血供、最長段）；見血液供應單元。"
+          ],
+          "demo": [
+            "**示範**：「眼內部視神經盤的神經具有髓鞘」✗；篩板前**無**髓鞘。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "視神經纖維在哪個位置開始有髓鞘？",
+          "choices": [
+            "視神經盤表面（篩板前）",
+            "鞏膜篩板之後",
+            "視網膜神經纖維層",
+            "視交叉"
+          ],
+          "answer": "B",
+          "hint": "穿過篩板之後。",
+          "explain": "視神經在穿出鞏膜篩板後才有髓鞘，所以眼內段最細。"
+        },
+        {
+          "type": "example",
+          "title": "把標記點走一遍：黃斑部",
+          "problem": "在「正常右眼眼底：黃斑、視神經盤與血管」這張圖裡，描述『視網膜後極部（直徑約 5.5 mm）、顳側，富含錐細胞；眼底看起來較暗。』指的是哪個構造？",
+          "steps": [
+            "先看圖的視角：圖上方／左右是哪裡。",
+            "再用描述中的位置與特徵，在圖上找出那個構造。",
+            "最後把中文名與英文名一起寫出：黃斑部　macula。"
+          ],
+          "answer": "黃斑部（macula）。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：眼底與視神經盤",
+          "checks": [],
+          "qids": [
+            "eyelab-manual-visual-1",
+            "eyelab-manual-visual-2",
+            "eyelab-manual-visual-3",
+            "eyelab-manual-visual-4",
+            "eyelab-manual-visual-5",
+            "eyelab-manual-visual-6",
+            "eyelab-manual-visual-7",
+            "eyelab-manual-visual-8",
+            "eyelab-manual-visual-9",
+            "eyelab-manual-visual-10",
+            "eyelab-manual-visual-11",
+            "eyelab-manual-visual-12",
+            "eyelab-manual-visual-13",
+            "eyelab-manual-visual-14",
+            "eyelab-manual-visual-15",
+            "eyelab-manual-visual-16",
+            "eyelab-manual-visual-17",
+            "eyelab-manual-visual-18"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "眼底：視神經盤（鼻側、盲點）、黃斑（顳側）、小窩（無血管、全錐細胞）。",
+            "視神經盤：篩板前（無髓鞘）→ 篩板 → 篩板後（有髓鞘、有腦膜）。"
+          ],
+          "flash": [
+            {
+              "front": "小窩有什麼特色？",
+              "back": "無血管、只有錐細胞、視力最好。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l5",
+      "title": "視網膜組織切片：十層與細胞",
+      "goals": [
+        "看圖說出視網膜十層順序（中英文）",
+        "認出雙極、神經節、水平、穆勒氏細胞與桿錐細胞"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "視網膜十層：光先穿過內層、才到感光細胞",
+          "body": [
+            "切片圖上方靠玻璃體（內），下方靠脈絡膜（外）；光從上往下**穿過全部內層**，最後才到最下面的感光細胞。"
+          ]
+        },
+        {
+          "type": "diagram",
+          "title": "視網膜十層與細胞（示意圖，已塗去縮寫）",
+          "body": "視網膜垂直切面：圖上方是玻璃體側（光先經過這邊），圖下方是脈絡膜側。光要穿過內層細胞才到最下面的感光細胞。",
+          "img": "img/eye-anat-manual/retina_diag_m.jpg",
+          "source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點",
+          "mode": "both",
+          "points": [
+            {
+              "name": "內限制膜 inner limiting membrane",
+              "desc": "視網膜最內（最靠玻璃體）的界膜，由穆勒氏細胞的終足形成。",
+              "x": 33,
+              "y": 2.2
+            },
+            {
+              "name": "神經纖維層 nerve fiber layer",
+              "desc": "神經節細胞的軸突往視神經盤匯集的一層。",
+              "x": 32,
+              "y": 5.6
+            },
+            {
+              "name": "神經節細胞層 ganglion cell layer",
+              "desc": "神經節細胞的細胞體；軸突形成視神經。",
+              "x": 26,
+              "y": 13.5
+            },
+            {
+              "name": "內網狀層 inner plexiform layer",
+              "desc": "雙極細胞、無軸突細胞與神經節細胞的突觸層。",
+              "x": 23,
+              "y": 25
+            },
+            {
+              "name": "內顆粒層 inner nuclear layer",
+              "desc": "雙極、水平、無軸突細胞與穆勒氏細胞的細胞核所在。",
+              "x": 23,
+              "y": 37
+            },
+            {
+              "name": "外網狀層 outer plexiform layer",
+              "desc": "感光細胞與雙極、水平細胞的突觸層。",
+              "x": 23,
+              "y": 48
+            },
+            {
+              "name": "外顆粒層 outer nuclear layer",
+              "desc": "桿、錐感光細胞的細胞核所在。",
+              "x": 21,
+              "y": 59.5
+            },
+            {
+              "name": "外限制膜 outer limiting membrane",
+              "desc": "穆勒氏細胞與感光細胞間的連結帶（不是真正的膜）。",
+              "x": 25,
+              "y": 73
+            },
+            {
+              "name": "色素上皮細胞層 retinal pigment epithelium",
+              "desc": "單層六角形含黑色素細胞，支持、吞噬感光細胞外節，構成外血液視網膜屏障。",
+              "x": 41,
+              "y": 88
+            },
+            {
+              "name": "布魯赫氏膜 Bruch’s membrane",
+              "desc": "RPE 與脈絡膜微血管之間的五層薄膜。",
+              "x": 41,
+              "y": 92.5
+            },
+            {
+              "name": "脈絡膜 choroid",
+              "desc": "含豐富血管的色素層，供應外層視網膜。",
+              "x": 41,
+              "y": 96.5
+            },
+            {
+              "name": "無軸突細胞 amacrine cell",
+              "desc": "橘色小細胞，在內網狀層邊緣，調節雙極與神經節細胞之間的訊號（側向抑制）。",
+              "x": 33.5,
+              "y": 28
+            },
+            {
+              "name": "感光細胞層 photoreceptor layer",
+              "desc": "桿、錐感光細胞的內節與外節所在的一層（外限制膜之外、色素上皮之內）。",
+              "x": 29,
+              "y": 79
+            },
+            {
+              "name": "感光細胞 photoreceptor",
+              "desc": "桿細胞與錐細胞的總稱；把光轉成電訊號。",
+              "x": 29,
+              "y": 68
+            },
+            {
+              "name": "神經節細胞 ganglion cell",
+              "desc": "圖右上方的粉紅細胞：軸突形成視神經。",
+              "x": 63,
+              "y": 12
+            },
+            {
+              "name": "雙極細胞 bipolar cell",
+              "desc": "連接感光細胞與神經節細胞的黃色細胞。",
+              "x": 63,
+              "y": 35
+            },
+            {
+              "name": "穆勒氏細胞 Müller cell",
+              "desc": "貫穿整層視網膜的綠色支持膠細胞。",
+              "x": 55.5,
+              "y": 42
+            },
+            {
+              "name": "水平細胞 horizontal cell",
+              "desc": "外網狀層的橘色細胞，橫向連接感光細胞（側抑制）。",
+              "x": 50,
+              "y": 46
+            },
+            {
+              "name": "錐狀細胞 cone cell",
+              "desc": "紅色感光細胞，負責色覺與高解析度（黃斑密度高）。",
+              "x": 63,
+              "y": 66
+            },
+            {
+              "name": "桿狀細胞 rod cell",
+              "desc": "紫色感光細胞，負責暗視覺（周邊視網膜）。",
+              "x": 48,
+              "y": 64
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "title": "十層順序與細胞（由外到內，手冊順序）",
+          "body": [
+            "| # | 層 | 英文縮寫 | 內容 |",
+            "|---|---|---|---|",
+            "| 1 | 色素上皮細胞層 | RPE | 單層，含黑色素；外 BRB |",
+            "| 2 | 感光細胞層 | — | 桿（暗視）、錐（色覺）的內外節 |",
+            "| 3 | 外限制膜 | ELM | 穆勒氏細胞與感光細胞間的連結帶 |",
+            "| 4 | 外顆粒層 | ONL | 感光細胞的細胞核 |",
+            "| 5 | 外網狀層 | OPL | 感光細胞—雙極／水平細胞的突觸 |",
+            "| 6 | 內顆粒層 | INL | 雙極、水平、無軸突、穆勒氏細胞的核 |",
+            "| 7 | 內網狀層 | IPL | 雙極—無軸突—神經節細胞的突觸 |",
+            "| 8 | 神經節細胞層 | GCL | 神經節細胞的核 |",
+            "| 9 | 神經纖維層 | NFL | 神經節細胞軸突 |",
+            "| 10 | 內限制膜 | ILM | 穆勒氏細胞終足形成 |",
+            "",
+            "**七種細胞**：感光細胞（桿、錐）、色素上皮、雙極、水平、無軸突、穆勒氏、神經節。**三級神經元**：感光細胞 → 雙極細胞 → 神經節細胞。"
+          ],
+          "keys": [
+            "RPE→感光→ELM→ONL→OPL→INL→IPL→GCL→NFL→ILM",
+            "三級神經元：感光→雙極→神經節",
+            "內核層：雙極、水平、無軸突、穆勒氏"
+          ],
+          "exam": [
+            "**老師上課**：視網膜 10 層 7 種細胞要會；血供外層（感光＋RPE）靠脈絡膜、內層靠中央動脈；詳見血液供應單元。",
+            "**國考**：106 師特 24、107 師高 15、106 師特 23（RPE 與 BRB、六角形細胞、內核層）；107 生普、111 師高 15（RPE 功能）。"
+          ],
+          "demo": [
+            "**示範**：「細胞核主要在內核層的是？」→ 雙極、水平、無軸突、穆勒氏；感光細胞核在外顆粒層。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "order",
+          "q": "請依「由外（脈絡膜側）到內（玻璃體側）」排列視網膜 10 層：",
+          "items": [
+            "色素上皮細胞層",
+            "感光細胞層",
+            "外限制膜",
+            "外顆粒層",
+            "外網狀層",
+            "內顆粒層",
+            "內網狀層",
+            "神經節細胞層",
+            "神經纖維層",
+            "內限制膜"
+          ],
+          "hint": "RPE 最外，ILM 最內。",
+          "explain": "RPE → 感光細胞 → ELM → ONL → OPL → INL → IPL → GCL → NFL → ILM。"
+        },
+        {
+          "type": "example",
+          "title": "把標記點走一遍：神經節細胞層",
+          "problem": "在「視網膜十層與細胞（示意圖，已塗去縮寫）」這張圖裡，描述『神經節細胞的細胞體；軸突形成視神經。』指的是哪個構造？",
+          "steps": [
+            "先看圖的視角：圖上方／左右是哪裡。",
+            "再用描述中的位置與特徵，在圖上找出那個構造。",
+            "最後把中文名與英文名一起寫出：神經節細胞層　ganglion cell layer。"
+          ],
+          "answer": "神經節細胞層（ganglion cell layer）。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：視網膜切片",
+          "checks": [],
+          "qids": [
+            "eyelab-manual-visual-19",
+            "eyelab-manual-visual-20",
+            "eyelab-manual-visual-21",
+            "eyelab-manual-visual-22",
+            "eyelab-manual-visual-23",
+            "eyelab-manual-visual-24",
+            "eyelab-manual-visual-25",
+            "eyelab-manual-visual-26",
+            "eyelab-manual-visual-27",
+            "eyelab-manual-visual-28",
+            "eyelab-manual-visual-29",
+            "eyelab-manual-visual-30",
+            "eyelab-manual-visual-31",
+            "eyelab-manual-visual-32",
+            "eyelab-manual-visual-33",
+            "eyelab-manual-visual-34",
+            "eyelab-manual-visual-35",
+            "eyelab-manual-visual-36",
+            "eyelab-manual-visual-37",
+            "eyelab-manual-visual-38"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "由外到內：RPE、感光、ELM、ONL、OPL、INL、IPL、GCL、NFL、ILM。",
+            "七種細胞；三級神經元：感光 → 雙極 → 神經節；穆勒氏細胞貫穿全層。"
+          ],
+          "flash": [
+            {
+              "front": "內顆粒層的細胞核屬於哪些細胞？",
+              "back": "雙極、水平、無軸突、穆勒氏細胞。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l6",
+      "title": "大腦外側面：中央溝、外側溝與視覺皮質在哪裡",
+      "goals": [
+        "在大腦外側面認出四個腦葉、中央溝與外側溝",
+        "說出視覺皮質（BA17）在枕葉的位置",
+        "把視放射上、下兩束放到頂葉與顳葉"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "視覺路徑的終點：從外側看大腦",
+          "body": [
+            "視覺路徑最後會走到**枕葉**。為了知道「枕葉在哪、視放射經過哪些腦葉」，先在大腦**外側面**把基本的溝與葉認清楚：**中央溝**與**外側溝**是兩條最重要的路標。"
+          ]
+        },
+        {
+          "type": "diagram",
+          "title": "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+          "body": "真實的人腦標本，從左側看（圖左＝前方、額葉）：**中央溝**把額葉與頂葉分開，前面的腦回是中央前回（運動）、後面是中央後回（感覺）；**外側溝**把顳葉從上方的額葉與頂葉分開；最後方是枕葉，視覺皮質（BA17）主要在枕葉內側面，從外側只看得到枕極。",
+          "img": "img/eye-anat-manual/beal_lat.jpg",
+          "source": "John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本）",
+          "mode": "both",
+          "points": [
+            {
+              "name": "中央溝 central sulcus",
+              "desc": "分隔額葉與頂葉的深溝；前方是運動皮質、後方是體感覺皮質。　記法：額葉／頂葉的分界",
+              "x": 46.5,
+              "y": 30
+            },
+            {
+              "name": "外側溝 lateral sulcus",
+              "desc": "分隔顳葉與額葉、頂葉的深溝（也叫 Sylvius 裂）。　記法：顳葉在它下面",
+              "x": 50,
+              "y": 59.5
+            },
+            {
+              "name": "額葉 frontal lobe",
+              "desc": "中央溝之前、外側溝之上；運動、語言（左側 Broca 區）、執行功能。",
+              "x": 22,
+              "y": 40
+            },
+            {
+              "name": "頂葉 parietal lobe",
+              "desc": "中央溝之後、枕葉之前；體感覺、空間處理；視放射上束（Baum 環）經過頂葉。　記法：視放射上束走頂葉 → 下視野",
+              "x": 62,
+              "y": 30
+            },
+            {
+              "name": "顳葉 temporal lobe",
+              "desc": "外側溝下方；聽覺、記憶、語言理解；視放射下束（Meyer 環）繞過側腦室下角進入顳葉。　記法：Meyer 環 → 上視野",
+              "x": 50,
+              "y": 75
+            },
+            {
+              "name": "枕葉 occipital lobe",
+              "desc": "最後方的腦葉；初級視覺皮質（BA17）所在。　記法：視覺中樞",
+              "x": 88,
+              "y": 50
+            },
+            {
+              "name": "中央前回 precentral gyrus",
+              "desc": "中央溝前面的腦回，初級運動皮質（BA4）。　記法：前＝動",
+              "x": 38,
+              "y": 52
+            },
+            {
+              "name": "中央後回 postcentral gyrus",
+              "desc": "中央溝後面的腦回，初級體感覺皮質（BA3、1、2）。　記法：後＝感覺",
+              "x": 48,
+              "y": 56
+            },
+            {
+              "name": "頂枕溝 parieto-occipital sulcus",
+              "desc": "主要在內側面，分隔頂葉與枕葉；在外側面只是上緣的一個小缺口。",
+              "x": 86,
+              "y": 24
+            },
+            {
+              "name": "枕前切跡 preoccipital notch",
+              "desc": "枕葉前下緣的小凹，與頂枕溝的連線是枕葉與頂、顳葉的人為分界。",
+              "x": 83,
+              "y": 74
+            },
+            {
+              "name": "枕極 occipital pole",
+              "desc": "枕葉最後端；黃斑區的視覺皮質代表區延伸到這裡。",
+              "x": 97,
+              "y": 55
+            },
+            {
+              "name": "顳極 temporal pole",
+              "desc": "顳葉最前端。",
+              "x": 27,
+              "y": 81
+            },
+            {
+              "name": "額極 frontal pole",
+              "desc": "額葉最前端。",
+              "x": 4,
+              "y": 47
+            }
+          ]
+        },
+        {
+          "type": "diagram",
+          "title": "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+          "body": "真實的人腦標本，從下內側看（圖左＝後方、枕葉）：枕葉內側面有兩條重要的溝——**頂枕溝**（分開楔前葉與楔葉）與**距狀溝**（初級視覺皮質 BA17 就沿著它的上下緣）；距狀溝**上方是楔葉（對側下視野）、下方是舌回（對側上視野）**。",
+          "img": "img/eye-anat-manual/beal_med.jpg",
+          "source": "John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本）",
+          "mode": "both",
+          "points": [
+            {
+              "name": "距狀溝 calcarine sulcus",
+              "desc": "枕葉內側面的水平深溝；初級視覺皮質（BA17／紋狀皮質）沿著它的上下兩側分布。　記法：V1 在距狀溝兩側",
+              "x": 9,
+              "y": 42
+            },
+            {
+              "name": "頂枕溝 parieto-occipital sulcus",
+              "desc": "內側面分隔楔前葉（頂葉）與楔葉（枕葉）的斜溝，與距狀溝在前方會合成 Y 形。",
+              "x": 15,
+              "y": 29
+            },
+            {
+              "name": "楔葉 cuneus",
+              "desc": "位於頂枕溝與距狀溝之間的三角區，在距狀溝上方；接收對側下視野。　記法：楔葉＝下視野",
+              "x": 9,
+              "y": 31
+            },
+            {
+              "name": "舌回 lingual gyrus",
+              "desc": "距狀溝下方的腦回（內側枕顳回後部）；接收對側上視野。　記法：舌回＝上視野",
+              "x": 11,
+              "y": 48
+            },
+            {
+              "name": "楔前葉 precuneus",
+              "desc": "頂葉內側面，在頂枕溝之前。",
+              "x": 22,
+              "y": 24
+            },
+            {
+              "name": "旁中央小葉 paracentral lobule",
+              "desc": "中央溝延伸到內側面的位置，管下肢運動與感覺。",
+              "x": 49,
+              "y": 5
+            },
+            {
+              "name": "扣帶回 cingulate gyrus",
+              "desc": "環繞胼胝體的腦回。",
+              "x": 38,
+              "y": 32
+            },
+            {
+              "name": "胼胝體壓部 splenium of corpus callosum",
+              "desc": "胼胝體最後方的膨大處。",
+              "x": 33,
+              "y": 43
+            },
+            {
+              "name": "胼胝體膝部 genu of corpus callosum",
+              "desc": "胼胝體最前方彎曲處。",
+              "x": 74,
+              "y": 43
+            },
+            {
+              "name": "海馬旁回 parahippocampal gyrus",
+              "desc": "顳葉內側面；前端彎成鉤。",
+              "x": 47,
+              "y": 72
+            },
+            {
+              "name": "丘腦 thalamus",
+              "desc": "間腦大部，感覺的中繼站（含外側膝狀體）。",
+              "x": 48,
+              "y": 52
+            },
+            {
+              "name": "側腦室 lateral ventricle",
+              "desc": "胼胝體下方的腦室。",
+              "x": 62,
+              "y": 43
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "title": "外側面的路標：兩條溝、四個葉",
+          "body": [
+            "- **中央溝**：從頭頂往前下斜走，**分隔額葉（前）與頂葉（後）**；前方的帶＝**中央前回（運動 BA4）**，後方的帶＝**中央後回（體感覺 BA3、1、2）**。",
+            "- **外側溝（Sylvius 裂）**：**分隔顳葉（下）與額葉、頂葉（上）**。",
+            "- **枕葉**在最後方；**頂枕溝**主要在內側面，外側面只看到一個小缺口。",
+            "- **內側面（第二張真實標本）**：枕葉內側有**頂枕溝**（分開楔前葉與楔葉）與**距狀溝**；距狀溝**上方是楔葉、下方是舌回**，初級視覺皮質（BA17）就沿著距狀溝上下兩側分布。",
+            "- **視覺皮質（初級視覺皮質 BA17／紋狀皮質）** 在**枕葉內側面的距狀溝兩側**，只有**枕極**一小塊露在外側面；黃斑的代表區位在枕極，面積特別大。",
+            "",
+            "**視放射的走法（對應腦葉）**：",
+            "| 束 | 經過 | 傳導的視野 | 終點 |",
+            "|---|---|---|---|",
+            "| **Meyer 環（下束）** | 繞過側腦室下角 → **顳葉** | **對側上視野** | 距狀溝**下方（舌回）** |",
+            "| **Baum 環（上束）** | 直接往後走 → **頂葉** | **對側下視野** | 距狀溝**上方（楔葉）** |",
+            "",
+            "**所以**：顳葉病灶 → **對側上象限盲**（「pie in the sky」）；頂葉病灶 → **對側下象限盲**。"
+          ],
+          "keys": [
+            "中央溝：額葉／頂葉；外側溝：顳葉與上方",
+            "BA17 在距狀溝兩側，枕極＝黃斑",
+            "Meyer（顳葉）→上視野→舌回；Baum（頂葉）→下視野→楔葉"
+          ],
+          "exam": [
+            "**老師／手冊第 5 頁**：中央溝、頂枕溝、距狀溝、視覺皮質；Meyer 下／Baum 上；舌回→上視野、楔葉→下視野；BA17 紋狀皮質。"
+          ],
+          "demo": [
+            "**示範**：右顳葉腫瘤、視野缺損在**左上**象限 → Meyer 環受損。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "分隔額葉與頂葉的是哪條溝？",
+          "choices": [
+            "外側溝",
+            "中央溝",
+            "距狀溝",
+            "頂枕溝"
+          ],
+          "answer": "B",
+          "hint": "從頭頂往前下斜走。",
+          "explain": "中央溝分隔額葉與頂葉；外側溝分隔顳葉與額、頂葉；距狀溝在枕葉內側面。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "顳葉的視放射纖維（Meyer 環）受損，視野缺損最可能是？",
+          "choices": [
+            "對側上象限盲",
+            "對側下象限盲",
+            "同側偏盲",
+            "雙顳側偏盲"
+          ],
+          "answer": "A",
+          "hint": "顳葉＝下束＝上視野。",
+          "explain": "Meyer 環攜帶對側上視野，所以顳葉病灶造成對側上象限盲（pie in the sky）。"
+        },
+        {
+          "type": "example",
+          "title": "把標記點走一遍：額葉",
+          "problem": "在「大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝」這張圖裡，描述『中央溝之前、外側溝之上；運動、語言（左側 Broca 區）、執行功能。』指的是哪個構造？",
+          "steps": [
+            "先看圖的視角：圖上方／左右是哪裡。",
+            "再用描述中的位置與特徵，在圖上找出那個構造。",
+            "最後把中文名與英文名一起寫出：額葉　frontal lobe。"
+          ],
+          "answer": "額葉（frontal lobe）。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：大腦外側面與內側面",
+          "checks": [],
+          "qids": [
+            "eyelab-manual-visual-39",
+            "eyelab-manual-visual-40",
+            "eyelab-manual-visual-41",
+            "eyelab-manual-visual-42",
+            "eyelab-manual-visual-43",
+            "eyelab-manual-visual-44",
+            "eyelab-manual-visual-45",
+            "eyelab-manual-visual-46",
+            "eyelab-manual-visual-47",
+            "eyelab-manual-visual-48",
+            "eyelab-manual-visual-49",
+            "eyelab-manual-visual-50",
+            "eyelab-manual-visual-51",
+            "eyelab-manual-visual-52",
+            "eyelab-manual-visual-53",
+            "eyelab-manual-visual-54",
+            "eyelab-manual-visual-55",
+            "eyelab-manual-visual-56",
+            "eyelab-manual-visual-57",
+            "eyelab-manual-visual-58",
+            "eyelab-manual-visual-59",
+            "eyelab-manual-visual-60",
+            "eyelab-manual-visual-61",
+            "eyelab-manual-visual-62",
+            "eyelab-manual-visual-63"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "中央溝：額葉／頂葉；外側溝：顳葉在下。",
+            "BA17：枕葉內側距狀溝兩側（舌回＝上視野、楔葉＝下視野），枕極＝黃斑代表區。",
+            "Meyer（顳葉、下束）→對側上視野；Baum（頂葉、上束）→對側下視野。"
+          ],
+          "flash": [
+            {
+              "front": "Meyer 環經過哪個腦葉、傳導哪個視野？",
+              "back": "顳葉；對側上視野（病灶 → 對側上象限盲）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

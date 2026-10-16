@@ -1,0 +1,442 @@
+{
+  "schema": "xd-learn/1",
+  "id": "manual-cranial-vent",
+  "subject": "eye_anat",
+  "unit": "顱神經與腦室",
+  "title": "【選讀・非期中範圍】12 對顱神經與腦室系統（手冊第 9、11 頁）",
+  "desc": "12 對顱神經的名稱、順序、出腦幹位置與顱孔；腦室系統與腦脊髓液流向。顱孔與神經的對照另在期中範圍的「骨質眼窩」單元以顱底內面圖再練一次。",
+  "level": 2,
+  "minutes": 50,
+  "order": 3,
+  "source": "《新實驗手冊-01.pdf》全 11 頁名詞；上課逐字稿（40 秒看圖跑台、顱孔與腦神經順序、LR₆SO₄ 等老師強調重點）；圖片來源見各圖說明（開放授權圖，已加標記點）。",
+  "tags": [
+    "顱神經",
+    "腦室",
+    "看圖辨識"
+  ],
+  "path": [
+    "眼解剖實驗",
+    "實驗手冊圖鑑",
+    "選讀（非期中範圍）",
+    "第 9、11 頁　腦室與顱神經"
+  ],
+  "lessons": [
+    {
+      "id": "l2",
+      "title": "12 對顱神經：名稱、順序、出口與顱孔",
+      "goals": [
+        "由上而下背出 12 對顱神經（中英文）",
+        "說出眼相關顱神經的功能與通過的顱孔"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "老師：十二對不要「一個一個記」，要一組一組記",
+          "body": [
+            "老師的原話：「12 對腦神經你一個一個記先輸一半，我們是**一次全部記**。」要看標本時，從**前到後、由上而下**順序認：嗅（I）、視（II）、動眼（III）、滑車（IV）、三叉（V）、外旋（VI）、顏面（VII）、前庭耳蝸（VIII）、舌咽（IX）、迷走（X）、副（XI）、舌下（XII）。"
+          ]
+        },
+        {
+          "type": "diagram",
+          "title": "12 對顱神經（腦底面示意圖，已塗去波蘭文標籤）",
+          "body": "把腦翻過來看底面（圖上＝前方）：最前面是嗅球與嗅神經，往後依序是視交叉、動眼、滑車、三叉、外旋、顏面、前庭耳蝸、舌咽、迷走、副、舌下神經。這個順序就是 I～XII。",
+          "img": "img/eye-anat-manual/cn_pl_m.jpg",
+          "source": "OpenStax，Wikimedia Commons「1320 The Cranial Nerves pl.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:1320_The_Cranial_Nerves_pl.jpg）；已塗去波蘭文標籤並加標記點",
+          "mode": "both",
+          "points": [
+            {
+              "name": "嗅神經（CN I） olfactory nerve",
+              "desc": "最前面的黃色嗅球與嗅徑（嗅神經穿過篩孔進入嗅球）。　記法：I 篩孔",
+              "x": 49.5,
+              "y": 17
+            },
+            {
+              "name": "視神經（CN II） optic nerve",
+              "desc": "視交叉前方粗黃色神經；穿視神經管。　記法：II 視神經管",
+              "x": 54,
+              "y": 37
+            },
+            {
+              "name": "動眼神經（CN III） oculomotor nerve",
+              "desc": "視交叉後方、中腦腹面（腳間窩）發出。　記法：III 眶上裂",
+              "x": 49,
+              "y": 47.5
+            },
+            {
+              "name": "滑車神經（CN IV） trochlear nerve",
+              "desc": "中腦側面細小的神經（從背面繞到腹側）。　記法：IV 眶上裂",
+              "x": 48,
+              "y": 51
+            },
+            {
+              "name": "三叉神經（CN V） trigeminal nerve",
+              "desc": "橋腦側面最粗的神經根，向前分出三個分支。　記法：V1 眶上裂、V2 圓孔、V3 卵圓孔",
+              "x": 56,
+              "y": 60
+            },
+            {
+              "name": "外旋（外展）神經（CN VI） abducens nerve",
+              "desc": "橋延溝正中、錐體上方出腦幹。　記法：VI 眶上裂",
+              "x": 49,
+              "y": 64.5
+            },
+            {
+              "name": "顏面神經（CN VII） facial nerve",
+              "desc": "橋延溝外側前面的神經。　記法：VII 內聽道",
+              "x": 56,
+              "y": 66.5
+            },
+            {
+              "name": "前庭耳蝸神經（CN VIII） vestibulocochlear nerve",
+              "desc": "橋延溝外側、在顏面神經後方。　記法：VIII 內聽道（VII、VIII 靠在一起）",
+              "x": 47,
+              "y": 69
+            },
+            {
+              "name": "舌咽神經（CN IX） glossopharyngeal nerve",
+              "desc": "橄欖後溝最上方的根絲。　記法：IX、X、XI 頸靜脈孔",
+              "x": 56,
+              "y": 73
+            },
+            {
+              "name": "迷走神經（CN X） vagus nerve",
+              "desc": "橄欖後溝中段的根絲，往下走向頸胸腹。",
+              "x": 57,
+              "y": 79
+            },
+            {
+              "name": "副神經（CN XI） spinal accessory nerve",
+              "desc": "延腦下部到脊髓上段的根絲，匯合後上行入顱再經頸靜脈孔出。",
+              "x": 47,
+              "y": 87
+            },
+            {
+              "name": "舌下神經（CN XII） hypoglossal nerve",
+              "desc": "錐體與橄欖之間（前外側溝）的根絲，經舌下神經管出顱。　記法：XII 舌下神經管（單獨一個）",
+              "x": 47,
+              "y": 77
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "title": "十二對顱神經總表",
+          "body": [
+            "| 編號 | 名稱 | 英文 | 功能 | 顱孔 |",
+            "|---|---|---|---|---|",
+            "| I | 嗅神經 | olfactory | 嗅覺（特殊感覺） | **篩孔**（篩板） |",
+            "| II | 視神經 | optic | 視覺 | **視神經管** |",
+            "| III | 動眼神經 | oculomotor | 眼外肌、提上眼瞼、瞳孔與睫狀肌（副交感） | **眶上裂** |",
+            "| IV | 滑車神經 | trochlear | 上斜肌 | **眶上裂** |",
+            "| V | 三叉神經 | trigeminal | 臉感覺、咀嚼 | V1 **眶上裂**、V2 **圓孔**、V3 **卵圓孔** |",
+            "| VI | 外旋神經 | abducens | 外直肌 | **眶上裂** |",
+            "| VII | 顏面神經 | facial | 表情肌、淚腺／唾液腺、舌前 2/3 味覺 | **內聽道**（→顏面神經管→莖乳孔） |",
+            "| VIII | 前庭耳蝸神經 | vestibulocochlear | 聽覺、平衡 | **內聽道** |",
+            "| IX | 舌咽神經 | glossopharyngeal | 舌後 1/3 味覺、咽、腮腺 | **頸靜脈孔** |",
+            "| X | 迷走神經 | vagus | 內臟（心、肺、腸）、喉 | **頸靜脈孔** |",
+            "| XI | 副神經 | accessory | 斜方肌、胸鎖乳突肌 | **頸靜脈孔** |",
+            "| XII | 舌下神經 | hypoglossal | 舌肌 | **舌下神經管** |"
+          ],
+          "keys": [
+            "II 視神經管；I 篩孔；III、IV、V1、VI 眶上裂",
+            "V2 圓孔、V3 卵圓孔、棘孔＝中腦膜動脈",
+            "VII、VIII 內聽道；IX、X、XI 頸靜脈孔；XII 舌下神經管"
+          ],
+          "exam": [
+            "**老師課堂（顱孔依腦神經順序記）**：篩孔＝I；視神經孔＝II（還有眼動脈、交感）；眶上裂＝III、IV、V1、VI；圓孔＝V2；卵圓孔＝V3；棘孔＝中腦膜動脈；內聽道＝VII、VIII；頸靜脈孔＝IX、X、XI；舌下神經孔＝XII。",
+            "**國考**：114 師高 3、108 生特 23、110 生普 4、113 生普 6、107 師高 3、110 生普 16（眶上裂與視神經管）。"
+          ],
+          "demo": [
+            "**示範**：「下列哪條神經不經眶上裂？」→ 視神經（走視神經管）、顏面神經。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "order",
+          "q": "請依編號由 I 到 XII 排列這些顱神經（至少前六對）：",
+          "items": [
+            "嗅神經",
+            "視神經",
+            "動眼神經",
+            "滑車神經",
+            "三叉神經",
+            "外旋神經"
+          ],
+          "hint": "I 嗅、II 視、III 動眼、IV 滑車、V 三叉、VI 外旋。",
+          "explain": "口訣：嗅視動滑三外顏聽舌迷副舌下（嗅視動眼滑車三叉外旋顏面聽、舌咽迷走副舌下）。"
+        },
+        {
+          "type": "card",
+          "title": "顱神經在腦幹的出口與記憶技巧",
+          "body": [
+            "- **出腦幹的順序（腹面）**：視神經（II）→ 腳間窩出 **III** →（IV 從背面出）→ 橋腦側面出 **V** → 橋延溝出 **VI、VII、VIII** → 橄欖後溝出 **IX、X、XI** → 前外側溝出 **XII**。",
+            "- **VII、VIII 靠在一起**（都走內聽道）；**IX、X、XI 走在一起**（都走頸靜脈孔）；**XII 自己一組**（舌下神經管）。",
+            "- **眼眶四條**：III、IV、V1、VI（眶上裂）；**視神經走視神經管**。",
+            "- **老師提醒**：模型常把視神經孔做錯——視神經孔通過視神經、**眼動脈**、**交感神經纖維**；橋延溝外側看到三根：前面兩根是 VII（運動根＋中間神經感覺根），後面一根是 VIII。",
+            "- **三叉神經只有一根**，三個分支在**三叉神經節**才分出。"
+          ],
+          "keys": [
+            "VII、VIII 靠在一起；IX、X、XI 一組；XII 一個",
+            "眼眶四條：III、IV、V1、VI",
+            "三叉神經在神經節才分三支"
+          ],
+          "exam": [
+            "**老師**：「國考也會從這邊考。你要看得出來，千萬不要一個一個去記。」「視神經孔還穿過交感神經。」",
+            "**題目**：110 師高 19、106 生特 16、106 師高 28（眼無關：I；與運動無關：II；閉眼是 VII）。"
+          ],
+          "demo": [
+            "**示範**：「橄欖後溝出來的三條神經」→ IX、X、XI；它們都從頸靜脈孔離開顱腔。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "multi",
+          "q": "下列哪些顱神經通過「眶上裂」？（多選）",
+          "choices": [
+            "動眼神經（III）",
+            "滑車神經（IV）",
+            "眼神經（V1）",
+            "視神經（II）",
+            "外旋神經（VI）"
+          ],
+          "answer": "ABCE",
+          "hint": "視神經走視神經管。",
+          "explain": "眶上裂：III、IV、V1、VI（＋眼靜脈）；視神經走視神經管。"
+        },
+        {
+          "type": "example",
+          "title": "把老師的課堂題走一遍：病人第三、四、五之一、六對腦神經都有症狀，病灶在哪個孔？",
+          "problem": "複視、眼瞼下垂、額頭麻木、眼球運動全受限，四對腦神經（III、IV、V1、VI）同時受影響，最可能的位置是？",
+          "steps": [
+            "這四對神經有共同的「出口」：都走**眶上裂**（V1 眼神經、III、IV、VI）。",
+            "它們再往後一起經過**海綿竇**（外側壁 III、IV、V1、V2；竇腔內 VI）。",
+            "所以病灶在眶上裂或海綿竇（如頸動脈海綿竇瘻管、Tolosa–Hunt 症候群）。"
+          ],
+          "answer": "眶上裂／海綿竇。老師：「眶上裂有第三、四、五之一跟六。」"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：顱神經",
+          "checks": [
+            {
+              "kind": "fill",
+              "q": "支配外直肌的是第幾對腦神經？（阿拉伯數字或羅馬數字都可）",
+              "answer": [
+                "6",
+                "VI",
+                "六"
+              ],
+              "hint": "LR₆SO₄",
+              "explain": "外直肌（LR）← 第六對外旋神經（VI）。"
+            },
+            {
+              "kind": "fill",
+              "q": "三叉神經第三分支（V3）通過哪一個顱孔？",
+              "answer": [
+                "卵圓孔",
+                "foramen ovale",
+                "ovale"
+              ],
+              "hint": "圓孔 V2、卵圓孔 V3。",
+              "explain": "V1 眶上裂、V2 圓孔、V3 卵圓孔。"
+            }
+          ],
+          "qids": [
+            "eyelab-manual-cn-vent-1",
+            "eyelab-manual-cn-vent-2",
+            "eyelab-manual-cn-vent-3",
+            "eyelab-manual-cn-vent-4",
+            "eyelab-manual-cn-vent-5",
+            "eyelab-manual-cn-vent-6",
+            "eyelab-manual-cn-vent-7",
+            "eyelab-manual-cn-vent-8",
+            "eyelab-manual-cn-vent-9",
+            "eyelab-manual-cn-vent-10",
+            "eyelab-manual-cn-vent-11",
+            "eyelab-manual-cn-vent-12"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "I 篩孔、II 視神經管、III IV V1 VI 眶上裂、V2 圓孔、V3 卵圓孔、VII VIII 內聽道、IX X XI 頸靜脈孔、XII 舌下神經管。",
+            "出腦幹：III 腳間窩；VI、VII、VIII 橋延溝；IX、X、XI 橄欖後溝；XII 前外側溝。"
+          ],
+          "flash": [
+            {
+              "front": "頸靜脈孔通過哪三對腦神經？",
+              "back": "IX、X、XI。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "腦室系統與腦脊髓液",
+      "goals": [
+        "依序說出腦室、孔道與導水管（中英文）",
+        "看圖認出側腦室、第三、第四腦室與孔道"
+      ],
+      "steps": [
+        {
+          "type": "intro",
+          "title": "腦室：腦裡面的「水管系統」",
+          "body": [
+            "腦脊髓液（CSF）在腦室中產生（脈絡叢），流經孔道後進入蛛網膜下腔。手冊第 9 頁的 8 個名詞就是這條路上的站。"
+          ]
+        },
+        {
+          "type": "diagram",
+          "title": "腦室系統（左側面觀，BodyParts3D 渲染）",
+          "body": "把腦半透明化，從左側看：前方在圖左。腦室像一串彼此相連的管腔：兩個側腦室（C 形）→ 室間孔 → 第三腦室 → 大腦導水管 → 第四腦室 → 脊髓中央管。",
+          "img": "img/eye-anat-manual/vent_left.jpg",
+          "source": "BodyParts3D[1] by DBCLS.，Wikimedia Commons「Human ventricular system - left side view.png」，CC BY-SA 2.1 jp（https://commons.wikimedia.org/wiki/File:Human_ventricular_system_-_left_side_view.png）；加標記點",
+          "mode": "both",
+          "points": [
+            {
+              "name": "側腦室 lateral ventricle",
+              "desc": "大腦半球內左右各一的 C 形腔室，分前角（圖左）、體部、後角（圖右尖端）、下角（往下往前的顳角）。　記法：左右各一，共兩個",
+              "x": 38,
+              "y": 35
+            },
+            {
+              "name": "側腦室後角 posterior horn of lateral ventricle",
+              "desc": "側腦室往枕葉的細長尖角（視放射在它外側）。",
+              "x": 75.5,
+              "y": 43.5
+            },
+            {
+              "name": "側腦室下角 inferior horn of lateral ventricle",
+              "desc": "往下、往前進入顳葉的一角（Meyer 環繞過它前方）。",
+              "x": 45,
+              "y": 48
+            },
+            {
+              "name": "室間孔（Monro） interventricular foramen",
+              "desc": "側腦室與第三腦室相通的小孔。",
+              "x": 42,
+              "y": 36.5
+            },
+            {
+              "name": "第三腦室 third ventricle",
+              "desc": "兩側丘腦之間的窄腔（圖中央有孔是丘腦間黏合）。",
+              "x": 51,
+              "y": 40
+            },
+            {
+              "name": "大腦導水管（Sylvius） cerebral aqueduct",
+              "desc": "穿過中腦、連接第三與第四腦室的細管。",
+              "x": 58,
+              "y": 52
+            },
+            {
+              "name": "第四腦室 fourth ventricle",
+              "desc": "橋腦、延腦與小腦之間的菱形腔，出口有一個正中孔、兩個外側孔。",
+              "x": 60.5,
+              "y": 59
+            },
+            {
+              "name": "脊髓中央管 central canal",
+              "desc": "第四腦室往下延續進入脊髓的細管。",
+              "x": 63.5,
+              "y": 74
+            },
+            {
+              "name": "外側孔（Luschka） lateral aperture",
+              "desc": "第四腦室兩側的小孔，腦脊液由此流入蛛網膜下腔。",
+              "x": 64.5,
+              "y": 64.5
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "title": "腦室系統與 CSF 流向",
+          "body": [
+            "**側腦室（左、右）**→ **室間孔（Monro）** → **第三腦室** → **大腦導水管（Sylvius）** → **第四腦室** → **正中孔（Magendie）＋左右外側孔（Luschka）** → **蛛網膜下腔** →（蛛網膜絨毛）→ 上矢狀竇。",
+            "",
+            "| 構造 | 重點 |",
+            "|---|---|",
+            "| **側腦室** | 兩個 C 形；前角、體、後角、下角 |",
+            "| **室間孔（Monro）** | 側腦室→第三腦室；左右各一個 |",
+            "| **第三腦室** | 兩丘腦間，**視交叉**在它的前下方 |",
+            "| **大腦導水管（Sylvius）** | 穿中腦；阻塞→**水腦（腦積水）** |",
+            "| **第四腦室** | 橋腦、延腦與小腦間 |",
+            "| **正中孔（Magendie）** | 第四腦室後下方，**1 個** |",
+            "| **外側孔（Luschka）** | 第四腦室兩側，**2 個** |",
+            "| **蛛網膜下腔** | 蛛網膜與軟腦膜之間；裝腦脊髓液 |",
+            "",
+            "**口訣**：側、室間、三、導水管、四、正中＋外側孔、蛛網膜下腔。"
+          ],
+          "keys": [
+            "側→室間孔（Monro）→三→導水管（Sylvius）→四→正中孔（Magendie）、外側孔（Luschka）→蛛網膜下腔",
+            "導水管阻塞→水腦"
+          ],
+          "exam": [
+            "手冊第 9 頁名詞；腦脊髓液路徑為神經解剖基本題，**視覺路徑相關**：視放射繞過側腦室下角（Meyer 環、老師：「繞過那個大池塘」）。"
+          ],
+          "demo": [
+            "**示範**：問「連接第三與第四腦室的細管」→ 大腦導水管（Sylvius）。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "order",
+          "q": "請依腦脊髓液流向排列：",
+          "items": [
+            "側腦室",
+            "室間孔（Monro）",
+            "第三腦室",
+            "大腦導水管（Sylvius）",
+            "第四腦室",
+            "正中孔與外側孔",
+            "蛛網膜下腔"
+          ],
+          "hint": "由前往後、由上往下。",
+          "explain": "側腦室 → 室間孔 → 第三腦室 → 導水管 → 第四腦室 → 正中孔／外側孔 → 蛛網膜下腔。"
+        },
+        {
+          "type": "example",
+          "title": "把標記點走一遍：側腦室下角",
+          "problem": "在「腦室系統（左側面觀，BodyParts3D 渲染）」這張圖裡，描述『往下、往前進入顳葉的一角（Meyer 環繞過它前方）。』指的是哪個構造？",
+          "steps": [
+            "先看圖的視角：圖上方／左右是哪裡。",
+            "再用描述中的位置與特徵，在圖上找出那個構造。",
+            "最後把中文名與英文名一起寫出：側腦室下角　inferior horn of lateral ventricle。"
+          ],
+          "answer": "側腦室下角（inferior horn of lateral ventricle）。"
+        },
+        {
+          "type": "practice",
+          "title": "實戰：腦室系統",
+          "checks": [],
+          "qids": [
+            "eyelab-manual-cn-vent-13",
+            "eyelab-manual-cn-vent-14",
+            "eyelab-manual-cn-vent-15",
+            "eyelab-manual-cn-vent-16",
+            "eyelab-manual-cn-vent-17",
+            "eyelab-manual-cn-vent-18",
+            "eyelab-manual-cn-vent-19",
+            "eyelab-manual-cn-vent-20",
+            "eyelab-manual-cn-vent-21"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "側→室間孔→三→導水管→四→正中孔＋外側孔→蛛網膜下腔。",
+            "Monro 連側與三；Sylvius 連三與四；Magendie 正中、Luschka 外側。"
+          ],
+          "flash": [
+            {
+              "front": "Magendie 與 Luschka 孔的位置？",
+              "back": "Magendie：第四腦室正中孔；Luschka：兩側外側孔。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

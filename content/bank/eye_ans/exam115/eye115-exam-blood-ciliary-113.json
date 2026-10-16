@@ -1,0 +1,43 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eye115-exam-blood-ciliary-113",
+  "subject": "eye_ans",
+  "name": "【國考・睫狀動脈系統與視神經血供】113 年（眼解剖生理學歷屆題）",
+  "path": [
+   "115 大二上",
+   "113 年國考",
+   "眼解剖生理學",
+   "睫狀動脈系統與視神經血供"
+  ],
+  "year": 113,
+  "order": 5097,
+  "source": "考選部 113 年驗光師（高考／特考）《眼球解剖生理學與倫理法規》、驗光生（普考／特考）《眼球構造與倫理法規概要》 試題與標準答案（依眼解剖生理學課程自主神經／角膜／血液供應範圍挑選）；詳解為自編"
+ },
+ "questions": [
+  {
+   "n": 24,
+   "type": "single",
+   "stem": "【113 年第二次專技高考・驗光師《眼球解剖生理學與倫理法規》 第 24 題】\n\n有關眼循環系統之敘述，下列何者錯誤？",
+   "choices": [
+    "眼球赤道後方的脈絡膜之血管供應主要來自短後睫狀動脈（short posterior ciliary artery）",
+    "睫狀體（ciliary body）的血液供應主要來自長後睫狀動脈（long posterior ciliary artery）",
+    "虹膜大動脈環（major arterial circle of the iris）是由前睫動脈（anterior ciliary artery）與長後睫狀動脈匯集而成，位於虹膜根部（iris root）",
+    "虹膜小血管環（minor vascular circle of the iris）位於虹彩，是虹彩動脈與靜脈的吻合處（anastomoses）"
+   ],
+   "answer": "C",
+   "explain": [
+    "**考點**：C 錯：**虹膜大動脈環（major arterial circle）在睫狀體（的前部）**，不是虹膜根部／虹膜；它由**前睫狀動脈＋睫狀後長動脈**匯合而成。",
+    "- A 對：赤道後脈絡膜 ← 睫狀後短動脈；B 對：睫狀體 ← 睫狀後長動脈；D 對：虹膜小血管環在虹膜的蜷縮輪（collarette）。",
+    "",
+    "**出處**：113 年第二次專技高考・驗光師《眼球解剖生理學與倫理法規》 第 24 題。"
+   ],
+   "tags": [
+    "國考題",
+    "虹膜大動脈環",
+    "睫狀後長動脈"
+   ],
+   "level": 3
+  }
+ ]
+}

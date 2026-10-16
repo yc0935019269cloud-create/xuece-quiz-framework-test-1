@@ -1,0 +1,899 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-manual-orbit",
+  "subject": "eye_anat",
+  "name": "【手冊圖鑑・期中】骨質眼窩與顱底孔洞看圖",
+  "path": [
+   "眼解剖實驗",
+   "實驗手冊圖鑑",
+   "★ 期中範圍：骨質眼窩・血管系統・視覺路徑・腦幹與神經",
+   "第 1 頁　骨質眼窩"
+  ],
+  "order": 101,
+  "source": "《新實驗手冊-01.pdf》全 11 頁名詞；上課逐字稿（40 秒看圖跑台、顱孔與腦神經順序、LR₆SO₄ 等老師強調重點）；圖片來源見各圖說明（開放授權圖，已加標記點）。"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "額骨 / frontal bone",
+   "accept": [
+    "額骨 / frontal bone"
+   ],
+   "explain": [
+    "**額骨（frontal bone）**",
+    "- 構成眼眶上壁（前方），上緣就是眶上緣；眶上孔（切跡）、滑車窩、淚腺窩都在額骨。",
+    "- 記法：上壁：額骨＋蝶骨小翼",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "額骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 47,
+     "y": 7,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眶上緣（眉弓） / supraorbital margin",
+   "accept": [
+    "眶上緣（眉弓） / supraorbital margin",
+    "眶上緣（眉弓） / supraorbital ridge",
+    "眶上緣（眉弓） / supraorbital rim",
+    "眶上緣 / supraorbital margin",
+    "眶上緣 / supraorbital ridge",
+    "眶上緣 / supraorbital rim",
+    "眉弓 / supraorbital margin",
+    "眉弓 / supraorbital ridge",
+    "眉弓 / supraorbital rim",
+    "眶上緣 / supraorbital margin",
+    "眶上緣 / supraorbital ridge",
+    "眶上緣 / supraorbital rim",
+    "眉弓 / supraorbital margin",
+    "眉弓 / supraorbital ridge",
+    "眉弓 / supraorbital rim"
+   ],
+   "explain": [
+    "**眶上緣（眉弓）（supraorbital margin）**",
+    "- 眼眶上方額骨的骨嵴，下方就是眉毛；也叫眉弓／supraorbital ridge。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "眶上緣（眉弓）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 47,
+     "y": 17,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眶上孔 / supraorbital foramen",
+   "accept": [
+    "眶上孔 / supraorbital foramen",
+    "眶上孔 / supraorbital notch"
+   ],
+   "explain": [
+    "**眶上孔（supraorbital foramen）**",
+    "- 眶上緣內 1/3 的孔（或切跡），眶上神經（V1 額神經分支）與眶上動脈通過。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "眶上孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 56,
+     "y": 12,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "蝶骨 / sphenoid bone",
+   "accept": [
+    "蝶骨 / sphenoid bone"
+   ],
+   "explain": [
+    "**蝶骨（sphenoid bone）**",
+    "- 眼眶後部的骨（小翼＋大翼＋體部），視神經管與眶上裂都在它上面。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "蝶骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 53,
+     "y": 37,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視神經管 / optic canal",
+   "accept": [
+    "視神經管 / optic canal",
+    "視神經管 / optic foramen",
+    "視神經孔 / optic canal",
+    "視神經孔 / optic foramen"
+   ],
+   "explain": [
+    "**視神經管（optic canal）**",
+    "- 蝶骨小翼根部的短管，通過視神經（II）與眼動脈（＋交感）。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "視神經管"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 62,
+     "y": 40,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上眼窩裂 / superior orbital fissure",
+   "accept": [
+    "上眼窩裂 / superior orbital fissure",
+    "上眼窩裂 / superior orbital fissure",
+    "眶上裂 / superior orbital fissure",
+    "眶上裂 / superior orbital fissure"
+   ],
+   "explain": [
+    "**上眼窩裂（superior orbital fissure）**",
+    "- 蝶骨小翼與大翼之間的裂縫，通過 III、IV、V1、VI 與眼靜脈。",
+    "- 記法：在小翼與大翼「之間」",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "上眼窩裂"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 62,
+     "y": 45,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "顴骨 / zygomatic bone",
+   "accept": [
+    "顴骨 / zygomatic bone",
+    "顴骨 / zygoma bone",
+    "顴骨 / zygoma",
+    "顴骨 / malar bone"
+   ],
+   "explain": [
+    "**顴骨（zygomatic bone）**",
+    "- 構成眼眶外側壁（前方）與下壁一部分。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "顴骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 41,
+     "y": 66,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上頷骨 / maxilla",
+   "accept": [
+    "上頷骨 / maxilla",
+    "上頷骨 / maxilla bone"
+   ],
+   "explain": [
+    "**上頷骨（maxilla）**",
+    "- 構成眼眶下壁與內側壁一部分；下方是上頷竇。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "上頷骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 56,
+     "y": 57,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眶下孔 / infraorbital foramen",
+   "accept": [
+    "眶下孔 / infraorbital foramen"
+   ],
+   "explain": [
+    "**眶下孔（infraorbital foramen）**",
+    "- 上頷骨在眶下緣下方的孔，眶下神經（V2）通過；是臉部，不是眼眶內。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "眶下孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 56,
+     "y": 73,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "鼻骨 / nasal bone",
+   "accept": [
+    "鼻骨 / nasal bone"
+   ],
+   "explain": [
+    "**鼻骨（nasal bone）**",
+    "- 鼻梁的骨，在眼眶內側前方。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "鼻骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 70,
+     "y": 31,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "淚骨 / lacrimal bone",
+   "accept": [
+    "淚骨 / lacrimal bone",
+    "淚骨 / lacrimal"
+   ],
+   "explain": [
+    "**淚骨（lacrimal bone）**",
+    "- 內側壁前部的小薄骨，與上頷骨共同形成淚窩。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "淚骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 67,
+     "y": 39,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "篩骨 / ethmoid bone",
+   "accept": [
+    "篩骨 / ethmoid bone",
+    "篩骨 / ethmoid"
+   ],
+   "explain": [
+    "**篩骨（ethmoid bone）**",
+    "- 內側壁最大的一塊（紙樣板），非常薄，緊鄰篩竇。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "篩骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 66,
+     "y": 45.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "淚窩 / lacrimal fossa",
+   "accept": [
+    "淚窩 / lacrimal fossa",
+    "淚窩 / fossa for lacrimal sac"
+   ],
+   "explain": [
+    "**淚窩（lacrimal fossa）**",
+    "- 淚骨＋上頷骨（前淚嵴與後淚嵴）圍成的凹槽，淚囊在裡面。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "淚窩"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 65.5,
+     "y": 52.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "顎骨（腭骨） / palatine bone",
+   "accept": [
+    "顎骨（腭骨） / palatine bone",
+    "顎骨（腭骨） / palatine",
+    "腭骨 / palatine bone",
+    "腭骨 / palatine",
+    "顎骨 / palatine bone",
+    "顎骨 / palatine",
+    "顎骨 / palatine bone",
+    "顎骨 / palatine",
+    "腭骨 / palatine bone",
+    "腭骨 / palatine"
+   ],
+   "explain": [
+    "**顎骨（腭骨）（palatine bone）**",
+    "- 眼眶下壁最後面的小三角，是眼眶七骨中最小的一塊。",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "骨性眼眶（前面觀，標籤已塗去）：七塊骨與孔裂",
+    "顎骨（腭骨）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/openstax_orbit_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 60,
+     "y": 51,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "雞冠 / crista galli",
+   "accept": [
+    "雞冠 / crista galli",
+    "雞冠 / crista galli"
+   ],
+   "explain": [
+    "**雞冠（crista galli）**",
+    "- 篩骨在中線向上的三角形骨嵴，大腦鐮前端的附著處。",
+    "- 記法：前顱窩正中",
+    "（圖：Didier Descouens，Wikimedia Commons「Crane4.png」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Crane4.png）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "顱底內面（真實顱骨標本，從上往下看）：三個顱窩與主要孔洞",
+    "雞冠"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/crane4.jpg"
+   ],
+   "marks": [
+    {
+     "x": 48,
+     "y": 13.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "篩板 / cribriform plate",
+   "accept": [
+    "篩板 / cribriform plate",
+    "篩板 / cribriform"
+   ],
+   "explain": [
+    "**篩板（cribriform plate）**",
+    "- 雞冠兩側的薄篩狀骨板，是鼻腔頂，有許多小孔供嗅神經（CN I）穿過。",
+    "（圖：Didier Descouens，Wikimedia Commons「Crane4.png」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Crane4.png）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "顱底內面（真實顱骨標本，從上往下看）：三個顱窩與主要孔洞",
+    "篩板"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/crane4.jpg"
+   ],
+   "marks": [
+    {
+     "x": 46.3,
+     "y": 22,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "蝶鞍 / sella turcica",
+   "accept": [
+    "蝶鞍 / sella turcica",
+    "蝶鞍 / hypophyseal fossa",
+    "蝶鞍 / pituitary fossa",
+    "腦下腺窩 / sella turcica",
+    "腦下腺窩 / hypophyseal fossa",
+    "腦下腺窩 / pituitary fossa",
+    "腦下垂體窩 / sella turcica",
+    "腦下垂體窩 / hypophyseal fossa",
+    "腦下垂體窩 / pituitary fossa"
+   ],
+   "explain": [
+    "**蝶鞍（sella turcica）**",
+    "- 蝶骨體上的凹陷，容納腦下垂體；視交叉在它的上方、前方。",
+    "- 記法：視交叉在腦下垂體上方",
+    "（圖：Didier Descouens，Wikimedia Commons「Crane4.png」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Crane4.png）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "顱底內面（真實顱骨標本，從上往下看）：三個顱窩與主要孔洞",
+    "蝶鞍"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/crane4.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 42,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "卵圓孔 / foramen ovale",
+   "accept": [
+    "卵圓孔 / foramen ovale",
+    "卵圓孔 / ovale"
+   ],
+   "explain": [
+    "**卵圓孔（foramen ovale）**",
+    "- 蝶骨大翼後外側較大的卵圓形孔，通過三叉神經第三支 V3（下頷神經）。",
+    "- 記法：V3：卵圓（三）",
+    "（圖：Didier Descouens，Wikimedia Commons「Crane4.png」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Crane4.png）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "顱底內面（真實顱骨標本，從上往下看）：三個顱窩與主要孔洞",
+    "卵圓孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/crane4.jpg"
+   ],
+   "marks": [
+    {
+     "x": 34.6,
+     "y": 47.3,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "枕骨大孔 / foramen magnum",
+   "accept": [
+    "枕骨大孔 / foramen magnum",
+    "枕骨大孔 / magnum"
+   ],
+   "explain": [
+    "**枕骨大孔（foramen magnum）**",
+    "- 顱底最大的孔，通過延腦／脊髓交界、椎動脈、副神經脊髓根。",
+    "（圖：Didier Descouens，Wikimedia Commons「Crane4.png」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Crane4.png）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "顱底內面（真實顱骨標本，從上往下看）：三個顱窩與主要孔洞",
+    "枕骨大孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/crane4.jpg"
+   ],
+   "marks": [
+    {
+     "x": 48,
+     "y": 72,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "前顱窩 / anterior cranial fossa",
+   "accept": [
+    "前顱窩 / anterior cranial fossa",
+    "前顱窩 / anterior fossa"
+   ],
+   "explain": [
+    "**前顱窩（anterior cranial fossa）**",
+    "- 最前面最淺的窩，容納額葉；底是額骨眶板、篩板與蝶骨小翼。",
+    "（圖：Didier Descouens，Wikimedia Commons「Crane4.png」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Crane4.png）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "顱底內面（真實顱骨標本，從上往下看）：三個顱窩與主要孔洞",
+    "前顱窩"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/crane4.jpg"
+   ],
+   "marks": [
+    {
+     "x": 30,
+     "y": 18,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "中顱窩 / middle cranial fossa",
+   "accept": [
+    "中顱窩 / middle cranial fossa",
+    "中顱窩 / middle fossa"
+   ],
+   "explain": [
+    "**中顱窩（middle cranial fossa）**",
+    "- 左右各一，容納顳葉；有視神經管、眶上裂、圓孔、卵圓孔、棘孔、破裂孔。",
+    "（圖：Didier Descouens，Wikimedia Commons「Crane4.png」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Crane4.png）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "顱底內面（真實顱骨標本，從上往下看）：三個顱窩與主要孔洞",
+    "中顱窩"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/crane4.jpg"
+   ],
+   "marks": [
+    {
+     "x": 18,
+     "y": 48,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "後顱窩 / posterior cranial fossa",
+   "accept": [
+    "後顱窩 / posterior cranial fossa",
+    "後顱窩 / posterior fossa"
+   ],
+   "explain": [
+    "**後顱窩（posterior cranial fossa）**",
+    "- 最後最深的窩，容納小腦、橋腦與延腦；有內耳道、頸靜脈孔、舌下神經管、枕骨大孔。",
+    "（圖：Didier Descouens，Wikimedia Commons「Crane4.png」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Crane4.png）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "顱底內面（真實顱骨標本，從上往下看）：三個顱窩與主要孔洞",
+    "後顱窩"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/crane4.jpg"
+   ],
+   "marks": [
+    {
+     "x": 30,
+     "y": 76,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視神經管 / optic canal",
+   "accept": [
+    "視神經管 / optic canal",
+    "視神經管 / optic foramen",
+    "視神經孔 / optic canal",
+    "視神經孔 / optic foramen"
+   ],
+   "explain": [
+    "**視神經管（optic canal）**",
+    "- 蝶骨小翼根部的短管，通過視神經（II）與眼動脈。",
+    "- 記法：II＋眼動脈",
+    "（圖：Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）；取右側半張、已塗去原圖縮寫標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中顱窩的孔洞（真實顱骨近拍）：視神經管、眶上裂、圓孔、卵圓孔、棘孔",
+    "視神經管"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/mcf_B_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 28.4,
+     "y": 24.3,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眶上裂 / superior orbital fissure",
+   "accept": [
+    "眶上裂 / superior orbital fissure",
+    "眶上裂 / superior orbital fissure",
+    "上眼窩裂 / superior orbital fissure",
+    "上眼窩裂 / superior orbital fissure"
+   ],
+   "explain": [
+    "**眶上裂（superior orbital fissure）**",
+    "- 蝶骨小翼與大翼之間的長裂縫，通過 III、IV、V1、VI 與眼靜脈。",
+    "- 記法：III、IV、V1、VI",
+    "（圖：Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）；取右側半張、已塗去原圖縮寫標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中顱窩的孔洞（真實顱骨近拍）：視神經管、眶上裂、圓孔、卵圓孔、棘孔",
+    "眶上裂"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/mcf_B_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 71,
+     "y": 33,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "圓孔 / foramen rotundum",
+   "accept": [
+    "圓孔 / foramen rotundum",
+    "圓孔 / rotundum"
+   ],
+   "explain": [
+    "**圓孔（foramen rotundum）**",
+    "- 蝶骨大翼上的圓形小孔，通過三叉神經第二支 V2（上頷神經）。",
+    "- 記法：V2：圓（二）",
+    "（圖：Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）；取右側半張、已塗去原圖縮寫標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中顱窩的孔洞（真實顱骨近拍）：視神經管、眶上裂、圓孔、卵圓孔、棘孔",
+    "圓孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/mcf_B_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 73,
+     "y": 47,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "卵圓孔 / foramen ovale",
+   "accept": [
+    "卵圓孔 / foramen ovale",
+    "卵圓孔 / ovale"
+   ],
+   "explain": [
+    "**卵圓孔（foramen ovale）**",
+    "- 蝶骨大翼後外側較大的卵圓形孔，通過三叉神經第三支 V3（下頷神經）。",
+    "- 記法：V3：卵圓（三）",
+    "（圖：Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）；取右側半張、已塗去原圖縮寫標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中顱窩的孔洞（真實顱骨近拍）：視神經管、眶上裂、圓孔、卵圓孔、棘孔",
+    "卵圓孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/mcf_B_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 80.6,
+     "y": 73,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "棘孔 / foramen spinosum",
+   "accept": [
+    "棘孔 / foramen spinosum",
+    "棘孔 / spinosum"
+   ],
+   "explain": [
+    "**棘孔（foramen spinosum）**",
+    "- 卵圓孔後外側的小孔，通過中腦膜動脈（上頷動脈分支）。",
+    "- 記法：棘孔→中腦膜動脈",
+    "（圖：Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）；取右側半張、已塗去原圖縮寫標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中顱窩的孔洞（真實顱骨近拍）：視神經管、眶上裂、圓孔、卵圓孔、棘孔",
+    "棘孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/mcf_B_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 88.5,
+     "y": 82.3,
+     "label": "1"
+    }
+   ]
+  }
+ ]
+}

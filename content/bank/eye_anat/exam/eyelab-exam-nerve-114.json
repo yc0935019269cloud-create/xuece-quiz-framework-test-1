@@ -1,0 +1,45 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-exam-nerve-114",
+  "subject": "eye_anat",
+  "name": "【國考・視神經】114 年（眼解剖生理學歷屆題）",
+  "path": [
+   "眼解剖實驗",
+   "國考題（眼外肌、眼眶、視神經）",
+   "視神經",
+   "114 年"
+  ],
+  "year": 114,
+  "order": 328,
+  "source": "考選部 114 年驗光師／驗光生《眼球解剖生理學》類科 試題與標準答案（依眼解剖實驗課範圍：眼外肌／眼眶／視神經挑選）；詳解為自編"
+ },
+ "questions": [
+  {
+   "n": 15,
+   "type": "single",
+   "stem": "【114 年第二次專技高考・驗光師《眼球解剖生理學與倫理法規》 第 15 題】\n\n下列與視神經相關之敘述，何者錯誤？",
+   "choices": [
+    "視神經盤（optic canal）的血液支配主要來自後睫動脈分支（branches of posterior ciliary arteries）",
+    "眼眶內視神經遠端（intraorbital optic nerve; distal part）的血液支配主要來自中心網膜動脈神經內分支（intraneural branches of central retinal artery）",
+    "眼眶內視神經近端（intraorbital optic nerve; proximal part）的血液支配主要來自軟腦膜血管與眼動脈分支（pial vessels and branches of ophthalmic artery）",
+    "顱內視神經（intracrainal optic nerve）的血液支配主要來自中大腦動脈（middle cerebral artery）"
+   ],
+   "answer": "D",
+   "explain": [
+    "**考點**：視神經各段血供：",
+    "- 眼內（乳頭／篩板區）← **睫狀後動脈**分支（A，題中「視神經盤（optic canal）」是筆誤）。",
+    "- 眶內：近端（靠眼球）← 軟腦膜血管＋眼動脈分支（C）；遠端 ← **中央視網膜動脈**的神經內分支（B）。",
+    "- 顱內 ← **頸內動脈、前大腦動脈、眼動脈**的軟腦膜分支，**不是大腦中動脈**（D 錯）。",
+    "",
+    "**出處**：114 年第二次專技高考・驗光師《眼球解剖生理學與倫理法規》 第 15 題。"
+   ],
+   "tags": [
+    "國考題",
+    "視神經血液供應",
+    "視神經四段"
+   ],
+   "level": 3
+  }
+ ]
+}

@@ -1036,7 +1036,7 @@ details.ltree.d0 > summary .ltree-n { color: var(--gold); font-size: 18px; }
 .dg-wrap img { display: block; max-width: 100%; max-height: 62vh; }
 .dg-wrap.small img { max-height: 280px; }
 .dg-wrap.setting { cursor: crosshair; outline: 3px dashed var(--gold); }
-.dg-pin { position: absolute; transform: translate(-50%, -50%); width: 26px; height: 26px; border-radius: 50%; border: 2px solid #fff; background: #2c5fa8; color: #fff; font: inherit; font-size: 13px; line-height: 20px; padding: 0; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.6); z-index: 2; }
+.dg-pin { position: absolute; transform: translate(-50%, -50%); width: var(--pin, 26px); height: var(--pin, 26px); border-radius: 50%; border: 2px solid #fff; background: #2c5fa8; color: #fff; font: inherit; font-size: calc(var(--pin, 26px) * .5); line-height: calc(var(--pin, 26px) - 6px); padding: 0; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.6); z-index: 2; }
 .dg-pin:hover, .dg-pin.on { background: var(--gold); color: #120c18; transform: translate(-50%, -50%) scale(1.2); }
 .dg-pin.good { background: #2f8f3b; transform: translate(-50%, -50%) scale(1.25); }
 .dg-pin.bad { background: #a8323a; animation: lcShake .3s steps(4); }

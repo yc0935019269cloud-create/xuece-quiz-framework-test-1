@@ -1,0 +1,1144 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-manual-eom-lid",
+  "subject": "eye_anat",
+  "name": "【手冊圖鑑・選讀】眼外肌、眼瞼與淚器看圖",
+  "path": [
+   "眼解剖實驗",
+   "實驗手冊圖鑑",
+   "選讀（非期中範圍）",
+   "第 2、10 頁　眼瞼、眼外肌與淚器"
+  ],
+  "order": 201,
+  "source": "《新實驗手冊-01.pdf》全 11 頁名詞；上課逐字稿（40 秒看圖跑台、顱孔與腦神經順序、LR₆SO₄ 等老師強調重點）；圖片來源見各圖說明（開放授權圖，已加標記點）。"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上直肌 / superior rectus",
+   "accept": [
+    "上直肌 / superior rectus"
+   ],
+   "explain": [
+    "**上直肌（superior rectus）**",
+    "- 止端在眼球上方，像扇子；作用以上轉為主（也內旋、內收）。神經：動眼神經上支。",
+    "- 記法：上轉",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶外側面觀",
+    "上直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 33,
+     "y": 24,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "提上眼瞼肌 / levator palpebrae superioris",
+   "accept": [
+    "提上眼瞼肌 / levator palpebrae superioris"
+   ],
+   "explain": [
+    "**提上眼瞼肌（levator palpebrae superioris）**",
+    "- 在上直肌的「上面」，往前延伸成腱膜進入上眼瞼，負責抬起眼瞼。神經：動眼神經上支。",
+    "- 記法：睜眼，在 SR 上方",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶外側面觀",
+    "提上眼瞼肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 36,
+     "y": 15.2,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上斜肌 / superior oblique",
+   "accept": [
+    "上斜肌 / superior oblique"
+   ],
+   "explain": [
+    "**上斜肌（superior oblique）**",
+    "- 從眶尖出發，肌腱穿過額骨上的滑車再折返止於眼球上方後外側；作用：內旋、下轉、外展。神經：滑車神經。",
+    "- 記法：SO₄",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶外側面觀",
+    "上斜肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 46,
+     "y": 16.8,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "滑車 / trochlea",
+   "accept": [
+    "滑車 / trochlea",
+    "滑車（滑車窩） / trochlea"
+   ],
+   "explain": [
+    "**滑車（trochlea）**",
+    "- 額骨內上方的纖維軟骨環，讓上斜肌肌腱改變方向。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶外側面觀",
+    "滑車"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 25,
+     "y": 10.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外直肌 / lateral rectus",
+   "accept": [
+    "外直肌 / lateral rectus"
+   ],
+   "explain": [
+    "**外直肌（lateral rectus）**",
+    "- 圖中是外直肌切斷後留在眼球上的止端；作用：外展。神經：外旋神經（VI）。",
+    "- 記法：LR₆",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶外側面觀",
+    "外直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 30,
+     "y": 40,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "內直肌 / medial rectus",
+   "accept": [
+    "內直肌 / medial rectus"
+   ],
+   "explain": [
+    "**內直肌（medial rectus）**",
+    "- 在視神經的內側（從外側看被視神經擋住一部分）；作用：內收；神經：動眼神經下支。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶外側面觀",
+    "內直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 53,
+     "y": 37,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "下直肌 / inferior rectus",
+   "accept": [
+    "下直肌 / inferior rectus"
+   ],
+   "explain": [
+    "**下直肌（inferior rectus）**",
+    "- 走在視神經與眶底之間，止端在眼球下方；作用：下轉（也外旋、內收）。神經：動眼神經下支。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶外側面觀",
+    "下直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 47,
+     "y": 56,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "下斜肌 / inferior oblique",
+   "accept": [
+    "下斜肌 / inferior oblique"
+   ],
+   "explain": [
+    "**下斜肌（inferior oblique）**",
+    "- 唯一起自眶底前內側的眼外肌（上頷骨），斜向繞過眼球下方，止於眼球後外側；作用：外旋、上轉、外展。神經：動眼神經下支。",
+    "- 記法：唯一不在眶尖起始",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶外側面觀",
+    "下斜肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 33,
+     "y": 56.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "辛氏環（總腱環） / annulus of Zinn",
+   "accept": [
+    "辛氏環（總腱環） / annulus of Zinn",
+    "辛氏環（總腱環） / common tendinous ring",
+    "辛氏環 / annulus of Zinn",
+    "辛氏環 / common tendinous ring",
+    "總腱環 / annulus of Zinn",
+    "總腱環 / common tendinous ring",
+    "辛氏環 / annulus of Zinn",
+    "辛氏環 / common tendinous ring",
+    "總腱環 / annulus of Zinn",
+    "總腱環 / common tendinous ring"
+   ],
+   "explain": [
+    "**辛氏環（總腱環）（annulus of Zinn）**",
+    "- 眶尖的纖維環，四條直肌與提上眼瞼肌（及上斜肌的一部分起點）由此出發；視神經、動眼神經、外旋神經、鼻睫神經從環中間穿過。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶外側面觀",
+    "辛氏環（總腱環）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 70.3,
+     "y": 39.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視神經 / optic nerve",
+   "accept": [
+    "視神經 / optic nerve"
+   ],
+   "explain": [
+    "**視神經（optic nerve）**",
+    "- 黃色粗幹，從眼球後極往後穿過總腱環入視神經管。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶外側面觀",
+    "視神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 55,
+     "y": 43.7,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "睫狀神經節 / ciliary ganglion",
+   "accept": [
+    "睫狀神經節 / ciliary ganglion"
+   ],
+   "explain": [
+    "**睫狀神經節（ciliary ganglion）**",
+    "- 位於視神經外側、外直肌與視神經之間（眼肌錐內）的小神經節，副交感在此換元，發出睫狀短神經。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶外側面觀",
+    "睫狀神經節"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 46.7,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上直肌 / superior rectus",
+   "accept": [
+    "上直肌 / superior rectus"
+   ],
+   "explain": [
+    "**上直肌（superior rectus）**",
+    "- 向上延伸到眼球上方。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶前面觀（肌肉圍繞視神經）",
+    "上直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_ant2.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 26,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "下直肌 / inferior rectus",
+   "accept": [
+    "下直肌 / inferior rectus"
+   ],
+   "explain": [
+    "**下直肌（inferior rectus）**",
+    "- 向下延伸到眼球下方；下方還有下斜肌的肌腹。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶前面觀（肌肉圍繞視神經）",
+    "下直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_ant2.jpg"
+   ],
+   "marks": [
+    {
+     "x": 51,
+     "y": 66,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外直肌 / lateral rectus",
+   "accept": [
+    "外直肌 / lateral rectus"
+   ],
+   "explain": [
+    "**外直肌（lateral rectus）**",
+    "- 圖左側＝外側；只有外直肌由外旋神經（VI）支配。",
+    "- 記法：LR₆",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶前面觀（肌肉圍繞視神經）",
+    "外直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_ant2.jpg"
+   ],
+   "marks": [
+    {
+     "x": 37,
+     "y": 47,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "內直肌 / medial rectus",
+   "accept": [
+    "內直肌 / medial rectus"
+   ],
+   "explain": [
+    "**內直肌（medial rectus）**",
+    "- 圖右側＝鼻側；眼外肌中最粗壯，止點離角膜緣最近（5.5 mm）。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶前面觀（肌肉圍繞視神經）",
+    "內直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_ant2.jpg"
+   ],
+   "marks": [
+    {
+     "x": 68,
+     "y": 48,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上斜肌 / superior oblique",
+   "accept": [
+    "上斜肌 / superior oblique"
+   ],
+   "explain": [
+    "**上斜肌（superior oblique）**",
+    "- 深色肌肉往右上方走向滑車；肌腱穿過滑車後折返。",
+    "- 記法：SO₄",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶前面觀（肌肉圍繞視神經）",
+    "上斜肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_ant2.jpg"
+   ],
+   "marks": [
+    {
+     "x": 65,
+     "y": 24,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "下斜肌 / inferior oblique",
+   "accept": [
+    "下斜肌 / inferior oblique"
+   ],
+   "explain": [
+    "**下斜肌（inferior oblique）**",
+    "- 從眼眶下緣（上頷骨）出發，斜著往後外側繞過眼球下方。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶前面觀（肌肉圍繞視神經）",
+    "下斜肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_ant2.jpg"
+   ],
+   "marks": [
+    {
+     "x": 62,
+     "y": 77,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "提上眼瞼肌 / levator palpebrae superioris",
+   "accept": [
+    "提上眼瞼肌 / levator palpebrae superioris",
+    "提上眼瞼肌（切斷） / levator palpebrae superioris"
+   ],
+   "explain": [
+    "**提上眼瞼肌（levator palpebrae superioris）**",
+    "- 圖上方被切斷的紅色肌腱（在上直肌上面）。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶前面觀（肌肉圍繞視神經）",
+    "提上眼瞼肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_ant2.jpg"
+   ],
+   "marks": [
+    {
+     "x": 49,
+     "y": 15,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視神經 / optic nerve",
+   "accept": [
+    "視神經 / optic nerve"
+   ],
+   "explain": [
+    "**視神經（optic nerve）**",
+    "- 中央黃色圓形斷面。",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼外肌：右眼眶前面觀（肌肉圍繞視神經）",
+    "視神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/orb_ant2.jpg"
+   ],
+   "marks": [
+    {
+     "x": 55,
+     "y": 44.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "皮膚 / skin",
+   "accept": [
+    "皮膚 / skin",
+    "皮膚 / skin of eyelid",
+    "眼瞼皮膚 / skin",
+    "眼瞼皮膚 / skin of eyelid"
+   ],
+   "explain": [
+    "**皮膚（skin）**",
+    "- 眼瞼皮膚很薄，表皮下幾乎沒有皮下脂肪。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點（圖上英文字母為原圖圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "上眼瞼矢狀切面（Gray／Waldeyer 組織圖）：皮膚、眼輪匝肌、瞼板與瞼板腺",
+    "皮膚"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray893.jpg"
+   ],
+   "marks": [
+    {
+     "x": 7,
+     "y": 52,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眼輪匝肌 / orbicularis oculi",
+   "accept": [
+    "眼輪匝肌 / orbicularis oculi",
+    "眼輪匝肌 / orbicularis"
+   ],
+   "explain": [
+    "**眼輪匝肌（orbicularis oculi）**",
+    "- 環繞眼瞼的閉眼肌（顏面神經 VII）；屬於前瞼（皮膚＋眼輪匝肌）。",
+    "- 記法：前瞼＝皮膚＋眼輪匝肌",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點（圖上英文字母為原圖圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "上眼瞼矢狀切面（Gray／Waldeyer 組織圖）：皮膚、眼輪匝肌、瞼板與瞼板腺",
+    "眼輪匝肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray893.jpg"
+   ],
+   "marks": [
+    {
+     "x": 45,
+     "y": 40,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眼輪匝肌邊緣束 / marginal fasciculus of orbicularis",
+   "accept": [
+    "眼輪匝肌邊緣束 / marginal fasciculus of orbicularis",
+    "眼輪匝肌邊緣束 / ciliary bundle",
+    "眼輪匝肌邊緣束 / muscle of Riolan",
+    "Riolan 肌 / marginal fasciculus of orbicularis",
+    "Riolan 肌 / ciliary bundle",
+    "Riolan 肌 / muscle of Riolan",
+    "睫毛束 / marginal fasciculus of orbicularis",
+    "睫毛束 / ciliary bundle",
+    "睫毛束 / muscle of Riolan"
+   ],
+   "explain": [
+    "**眼輪匝肌邊緣束（marginal fasciculus of orbicularis）**",
+    "- 靠近眼瞼緣的一束眼輪匝肌（又稱睫毛束、Riolan 肌）。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點（圖上英文字母為原圖圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "上眼瞼矢狀切面（Gray／Waldeyer 組織圖）：皮膚、眼輪匝肌、瞼板與瞼板腺",
+    "眼輪匝肌邊緣束"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray893.jpg"
+   ],
+   "marks": [
+    {
+     "x": 70,
+     "y": 88,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "提上眼瞼肌 / levator palpebrae",
+   "accept": [
+    "提上眼瞼肌 / levator palpebrae",
+    "提上眼瞼肌 / levator palpebrae superioris",
+    "提上眼瞼肌 / levator",
+    "提上瞼肌 / levator palpebrae",
+    "提上瞼肌 / levator palpebrae superioris",
+    "提上瞼肌 / levator"
+   ],
+   "explain": [
+    "**提上眼瞼肌（levator palpebrae）**",
+    "- 上方的肌肉與腱膜（動眼神經 III），往下附著瞼板前面。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點（圖上英文字母為原圖圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "上眼瞼矢狀切面（Gray／Waldeyer 組織圖）：皮膚、眼輪匝肌、瞼板與瞼板腺",
+    "提上眼瞼肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray893.jpg"
+   ],
+   "marks": [
+    {
+     "x": 77,
+     "y": 8,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "結膜 / conjunctiva",
+   "accept": [
+    "結膜 / conjunctiva",
+    "結膜 / palpebral conjunctiva",
+    "瞼結膜 / conjunctiva",
+    "瞼結膜 / palpebral conjunctiva"
+   ],
+   "explain": [
+    "**結膜（conjunctiva）**",
+    "- 襯在瞼板後面的薄黏膜（瞼結膜）。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點（圖上英文字母為原圖圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "上眼瞼矢狀切面（Gray／Waldeyer 組織圖）：皮膚、眼輪匝肌、瞼板與瞼板腺",
+    "結膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray893.jpg"
+   ],
+   "marks": [
+    {
+     "x": 87,
+     "y": 50,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "瞼板 / tarsus",
+   "accept": [
+    "瞼板 / tarsus",
+    "瞼板 / tarsal plate",
+    "瞼板 / tarsus",
+    "瞼板 / tarsal plate"
+   ],
+   "explain": [
+    "**瞼板（tarsus）**",
+    "- 緻密纖維板，撐住眼瞼的形狀；內含瞼板腺。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點（圖上英文字母為原圖圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "上眼瞼矢狀切面（Gray／Waldeyer 組織圖）：皮膚、眼輪匝肌、瞼板與瞼板腺",
+    "瞼板"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray893.jpg"
+   ],
+   "marks": [
+    {
+     "x": 80,
+     "y": 57,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "瞼板腺 / tarsal gland",
+   "accept": [
+    "瞼板腺 / tarsal gland",
+    "瞼板腺 / Meibomian gland",
+    "瞼板腺 / meibomian gland",
+    "麥氏腺 / tarsal gland",
+    "麥氏腺 / Meibomian gland",
+    "麥氏腺 / meibomian gland"
+   ],
+   "explain": [
+    "**瞼板腺（tarsal gland）**",
+    "- 瞼板內縱向排列的皮脂腺（Meibomian 腺），開口在眼瞼緣，分泌脂質（淚膜最外層）。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點（圖上英文字母為原圖圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "上眼瞼矢狀切面（Gray／Waldeyer 組織圖）：皮膚、眼輪匝肌、瞼板與瞼板腺",
+    "瞼板腺"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray893.jpg"
+   ],
+   "marks": [
+    {
+     "x": 75,
+     "y": 65,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "皮脂腺（Zeis 腺） / sebaceous gland",
+   "accept": [
+    "皮脂腺（Zeis 腺） / sebaceous gland",
+    "皮脂腺（Zeis 腺） / gland of Zeis",
+    "皮脂腺（Zeis 腺） / Zeis gland",
+    "Zeis 腺 / sebaceous gland",
+    "Zeis 腺 / gland of Zeis",
+    "Zeis 腺 / Zeis gland",
+    "皮脂腺 / sebaceous gland",
+    "皮脂腺 / gland of Zeis",
+    "皮脂腺 / Zeis gland",
+    "皮脂腺 / sebaceous gland",
+    "皮脂腺 / gland of Zeis",
+    "皮脂腺 / Zeis gland",
+    "Zeis 腺 / sebaceous gland",
+    "Zeis 腺 / gland of Zeis",
+    "Zeis 腺 / Zeis gland"
+   ],
+   "explain": [
+    "**皮脂腺（Zeis 腺）（sebaceous gland）**",
+    "- 附在睫毛毛囊的皮脂腺。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點（圖上英文字母為原圖圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "上眼瞼矢狀切面（Gray／Waldeyer 組織圖）：皮膚、眼輪匝肌、瞼板與瞼板腺",
+    "皮脂腺（Zeis 腺）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray893.jpg"
+   ],
+   "marks": [
+    {
+     "x": 56,
+     "y": 85,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "睫毛 / eyelashes",
+   "accept": [
+    "睫毛 / eyelashes",
+    "睫毛 / eyelash",
+    "睫毛 / cilia"
+   ],
+   "explain": [
+    "**睫毛（eyelashes）**",
+    "- 從眼瞼緣長出的粗毛。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點（圖上英文字母為原圖圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "上眼瞼矢狀切面（Gray／Waldeyer 組織圖）：皮膚、眼輪匝肌、瞼板與瞼板腺",
+    "睫毛"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray893.jpg"
+   ],
+   "marks": [
+    {
+     "x": 22,
+     "y": 82,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "汗腺（Moll 腺） / sweat glands",
+   "accept": [
+    "汗腺（Moll 腺） / sweat glands",
+    "汗腺（Moll 腺） / sweat gland",
+    "汗腺（Moll 腺） / gland of Moll",
+    "汗腺（Moll 腺） / Moll gland",
+    "Moll 腺 / sweat glands",
+    "Moll 腺 / sweat gland",
+    "Moll 腺 / gland of Moll",
+    "Moll 腺 / Moll gland",
+    "汗腺 / sweat glands",
+    "汗腺 / sweat gland",
+    "汗腺 / gland of Moll",
+    "汗腺 / Moll gland",
+    "汗腺 / sweat glands",
+    "汗腺 / sweat gland",
+    "汗腺 / gland of Moll",
+    "汗腺 / Moll gland",
+    "Moll 腺 / sweat glands",
+    "Moll 腺 / sweat gland",
+    "Moll 腺 / gland of Moll",
+    "Moll 腺 / Moll gland"
+   ],
+   "explain": [
+    "**汗腺（Moll 腺）（sweat glands）**",
+    "- 皮膚汗腺，睫毛根附近的特化汗腺叫 Moll 腺。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點（圖上英文字母為原圖圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "上眼瞼矢狀切面（Gray／Waldeyer 組織圖）：皮膚、眼輪匝肌、瞼板與瞼板腺",
+    "汗腺（Moll 腺）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray893.jpg"
+   ],
+   "marks": [
+    {
+     "x": 25,
+     "y": 12,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "後瞼板腺 / posterior tarsal glands",
+   "accept": [
+    "後瞼板腺 / posterior tarsal glands",
+    "後瞼板腺 / accessory lacrimal glands",
+    "後瞼板腺 / glands of Krause",
+    "後瞼板腺 / glands of Wolfring",
+    "副淚腺 / posterior tarsal glands",
+    "副淚腺 / accessory lacrimal glands",
+    "副淚腺 / glands of Krause",
+    "副淚腺 / glands of Wolfring",
+    "Krause 腺 / posterior tarsal glands",
+    "Krause 腺 / accessory lacrimal glands",
+    "Krause 腺 / glands of Krause",
+    "Krause 腺 / glands of Wolfring",
+    "Wolfring 腺 / posterior tarsal glands",
+    "Wolfring 腺 / accessory lacrimal glands",
+    "Wolfring 腺 / glands of Krause",
+    "Wolfring 腺 / glands of Wolfring"
+   ],
+   "explain": [
+    "**後瞼板腺（posterior tarsal glands）**",
+    "- 瞼板上緣的小腺體（Krause 腺／Wolfring 腺，副淚腺）。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點（圖上英文字母為原圖圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "上眼瞼矢狀切面（Gray／Waldeyer 組織圖）：皮膚、眼輪匝肌、瞼板與瞼板腺",
+    "後瞼板腺"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray893.jpg"
+   ],
+   "marks": [
+    {
+     "x": 80,
+     "y": 26,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "淚點 / lacrimal punctum",
+   "accept": [
+    "淚點 / lacrimal punctum",
+    "淚點 / punctum lacrimale",
+    "淚點 / lacrimal puncta"
+   ],
+   "explain": [
+    "**淚點（lacrimal punctum）**",
+    "- 上眼瞼緣內側的小孔（另一個在下眼瞼）。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray1205.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray1205.png）；已塗去原圖標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "內眼角與眼瞼：淚點、半月皺襞、淚阜、瞼板腺開口",
+    "淚點"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray1205_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 46.5,
+     "y": 44,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "半月皺襞 / plica semilunaris",
+   "accept": [
+    "半月皺襞 / plica semilunaris"
+   ],
+   "explain": [
+    "**半月皺襞（plica semilunaris）**",
+    "- 內眼角結膜形成的半月形皺褶（人類殘留的瞬膜）。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray1205.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray1205.png）；已塗去原圖標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "內眼角與眼瞼：淚點、半月皺襞、淚阜、瞼板腺開口",
+    "半月皺襞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray1205_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 46,
+     "y": 48.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "淚阜 / caruncle",
+   "accept": [
+    "淚阜 / caruncle",
+    "淚阜 / caruncula",
+    "淚阜 / lacrimal caruncle"
+   ],
+   "explain": [
+    "**淚阜（caruncle）**",
+    "- 內眼角粉紅色的小肉丘，含皮脂腺與汗腺。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray1205.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray1205.png）；已塗去原圖標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "內眼角與眼瞼：淚點、半月皺襞、淚阜、瞼板腺開口",
+    "淚阜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray1205_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 45,
+     "y": 53.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "瞼板腺 / Meibomian gland",
+   "accept": [
+    "瞼板腺 / Meibomian gland",
+    "瞼板腺 / openings of tarsal glands",
+    "瞼板腺 / tarsal gland",
+    "瞼板腺開口 / Meibomian gland",
+    "瞼板腺開口 / openings of tarsal glands",
+    "瞼板腺開口 / tarsal gland"
+   ],
+   "explain": [
+    "**瞼板腺（Meibomian gland）**",
+    "- 瞼板內的皮脂腺，開口排成一列在眼瞼緣（睫毛後方），分泌脂質（淚膜最外層）。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray1205.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray1205.png）；已塗去原圖標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "內眼角與眼瞼：淚點、半月皺襞、淚阜、瞼板腺開口",
+    "瞼板腺"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray1205_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 49,
+     "y": 64,
+     "label": "1"
+    }
+   ]
+  }
+ ]
+}

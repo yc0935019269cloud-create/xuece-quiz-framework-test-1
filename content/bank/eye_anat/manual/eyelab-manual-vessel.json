@@ -1,0 +1,1989 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-manual-vessel",
+  "subject": "eye_anat",
+  "name": "【手冊圖鑑・期中】血管系統看圖",
+  "path": [
+   "眼解剖實驗",
+   "實驗手冊圖鑑",
+   "★ 期中範圍：骨質眼窩・血管系統・視覺路徑・腦幹與神經",
+   "第 4 頁　血管系統"
+  ],
+  "order": 102,
+  "source": "《新實驗手冊-01.pdf》全 11 頁名詞；上課逐字稿（40 秒看圖跑台、顱孔與腦神經順序、LR₆SO₄ 等老師強調重點）；圖片來源見各圖說明（開放授權圖，已加標記點）。"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "頸內動脈 / internal carotid artery",
+   "accept": [
+    "頸內動脈 / internal carotid artery"
+   ],
+   "explain": [
+    "**頸內動脈（internal carotid artery）**",
+    "- 進入顱腔後在視交叉兩側的斷面（深紅圓圈），分出眼動脈、前／中大腦動脈與後交通動脈。",
+    "- 記法：眼睛的血先從這裡出發",
+    "（圖：Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底動脈（Willis 環）：下面觀",
+    "頸內動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/servier_brain_art_inf.jpg"
+   ],
+   "marks": [
+    {
+     "x": 44.3,
+     "y": 35.6,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "前大腦動脈 / anterior cerebral artery",
+   "accept": [
+    "前大腦動脈 / anterior cerebral artery"
+   ],
+   "explain": [
+    "**前大腦動脈（anterior cerebral artery）**",
+    "- 由頸內動脈向前、向上沿大腦縱裂走的小動脈；供應大腦內側面。",
+    "（圖：Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底動脈（Willis 環）：下面觀",
+    "前大腦動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/servier_brain_art_inf.jpg"
+   ],
+   "marks": [
+    {
+     "x": 46.8,
+     "y": 29.0,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "前交通動脈 / anterior communicating artery",
+   "accept": [
+    "前交通動脈 / anterior communicating artery"
+   ],
+   "explain": [
+    "**前交通動脈（anterior communicating artery）**",
+    "- 連接左右前大腦動脈的短血管，是 Willis 環最前面的一段；不是頸內動脈的分支。",
+    "- 記法：「前」前面、橫著連左右",
+    "（圖：Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底動脈（Willis 環）：下面觀",
+    "前交通動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/servier_brain_art_inf.jpg"
+   ],
+   "marks": [
+    {
+     "x": 49.0,
+     "y": 31.4,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "大腦中動脈 / middle cerebral artery",
+   "accept": [
+    "大腦中動脈 / middle cerebral artery"
+   ],
+   "explain": [
+    "**大腦中動脈（middle cerebral artery）**",
+    "- 頸內動脈延伸最大的終末分支，走向外側（外側裂），供應大腦外側面。",
+    "（圖：Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底動脈（Willis 環）：下面觀",
+    "大腦中動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/servier_brain_art_inf.jpg"
+   ],
+   "marks": [
+    {
+     "x": 40.2,
+     "y": 37.8,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "後交通動脈 / posterior communicating artery",
+   "accept": [
+    "後交通動脈 / posterior communicating artery"
+   ],
+   "explain": [
+    "**後交通動脈（posterior communicating artery）**",
+    "- 由頸內動脈向後連到後大腦動脈，把前循環與後循環接起來。",
+    "（圖：Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底動脈（Willis 環）：下面觀",
+    "後交通動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/servier_brain_art_inf.jpg"
+   ],
+   "marks": [
+    {
+     "x": 45.4,
+     "y": 41.2,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "大腦後動脈 / posterior cerebral artery",
+   "accept": [
+    "大腦後動脈 / posterior cerebral artery"
+   ],
+   "explain": [
+    "**大腦後動脈（posterior cerebral artery）**",
+    "- 基底動脈在中腦前方分成兩條，繞過大腦腳往後走，供應枕葉（視覺皮質）。",
+    "- 記法：枕葉＝視覺，所以 PCA 阻塞會偏盲",
+    "（圖：Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底動脈（Willis 環）：下面觀",
+    "大腦後動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/servier_brain_art_inf.jpg"
+   ],
+   "marks": [
+    {
+     "x": 39.0,
+     "y": 47.0,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "中腦 / midbrain",
+   "accept": [
+    "中腦 / midbrain"
+   ],
+   "explain": [
+    "**中腦（midbrain）**",
+    "- 腦幹最上段，在橋腦與間腦之間；有上丘、下丘與動眼、滑車神經核。",
+    "- 記法：中腦：III、IV",
+    "（圖：Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦幹（下面觀）：中腦、橋腦、延腦",
+    "中腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/servier_brain_art_inf.jpg"
+   ],
+   "marks": [
+    {
+     "x": 49.0,
+     "y": 43.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋腦 / pons",
+   "accept": [
+    "橋腦 / pons"
+   ],
+   "explain": [
+    "**橋腦（pons）**",
+    "- 腦幹中段，下面有粗大的橫向纖維隆起（像「橋」）；基底動脈走在中央溝裡。",
+    "- 記法：橋腦：V、VI、VII、VIII",
+    "（圖：Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦幹（下面觀）：中腦、橋腦、延腦",
+    "橋腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/servier_brain_art_inf.jpg"
+   ],
+   "marks": [
+    {
+     "x": 49.0,
+     "y": 53.0,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "延腦 / medulla",
+   "accept": [
+    "延腦 / medulla"
+   ],
+   "explain": [
+    "**延腦（medulla）**",
+    "- 腦幹最下段，向下接脊髓；腹面有兩條錐體。",
+    "- 記法：延腦：IX、X、XI、XII",
+    "（圖：Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦幹（下面觀）：中腦、橋腦、延腦",
+    "延腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/servier_brain_art_inf.jpg"
+   ],
+   "marks": [
+    {
+     "x": 49.0,
+     "y": 72.0,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "基底動脈 / basilar artery",
+   "accept": [
+    "基底動脈 / basilar artery"
+   ],
+   "explain": [
+    "**基底動脈（basilar artery）**",
+    "- 左右椎動脈會合而成，沿橋腦腹面中央往上，在中腦前方分成左右大腦後動脈。",
+    "（圖：Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦幹（下面觀）：中腦、橋腦、延腦",
+    "基底動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/servier_brain_art_inf.jpg"
+   ],
+   "marks": [
+    {
+     "x": 49.0,
+     "y": 60.0,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "椎動脈 / vertebral artery",
+   "accept": [
+    "椎動脈 / vertebral artery"
+   ],
+   "explain": [
+    "**椎動脈（vertebral artery）**",
+    "- 經枕骨大孔進入顱腔，在延腦前面會合成基底動脈。",
+    "（圖：Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦幹（下面觀）：中腦、橋腦、延腦",
+    "椎動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/servier_brain_art_inf.jpg"
+   ],
+   "marks": [
+    {
+     "x": 46.2,
+     "y": 79.0,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "頸內動脈 / internal carotid artery",
+   "accept": [
+    "頸內動脈 / internal carotid artery"
+   ],
+   "explain": [
+    "**頸內動脈（internal carotid artery）**",
+    "- 圖左的粗大紅色血管，進顱後分出眼動脈。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼動脈與眼眶內分支（側面示意圖，標籤已塗去）",
+    "頸內動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/oc_blood_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 25,
+     "y": 37,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眼動脈 / ophthalmic artery",
+   "accept": [
+    "眼動脈 / ophthalmic artery"
+   ],
+   "explain": [
+    "**眼動脈（ophthalmic artery）**",
+    "- 由頸內動脈分出、沿視神經外下方經視神經管入眼眶的第一條大分支。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼動脈與眼眶內分支（側面示意圖，標籤已塗去）",
+    "眼動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/oc_blood_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 30,
+     "y": 71,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視網膜中央動脈 / central retinal artery",
+   "accept": [
+    "視網膜中央動脈 / central retinal artery",
+    "視網膜中央動脈 / central retinal artery",
+    "視網膜中心動脈 / central retinal artery",
+    "視網膜中心動脈 / central retinal artery",
+    "中央視網膜動脈 / central retinal artery",
+    "中央視網膜動脈 / central retinal artery"
+   ],
+   "explain": [
+    "**視網膜中央動脈（central retinal artery）**",
+    "- 眼動脈分支，從視神經下方約 1 cm 處穿入視神經，走在神經中央，到視神經盤分叉供應內層視網膜。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼動脈與眼眶內分支（側面示意圖，標籤已塗去）",
+    "視網膜中央動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/oc_blood_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 46,
+     "y": 64,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "睫狀後動脈 / posterior ciliary artery",
+   "accept": [
+    "睫狀後動脈 / posterior ciliary artery",
+    "睫狀後動脈 / posterior ciliary arteries",
+    "睫狀後動脈 / short posterior ciliary artery",
+    "睫狀後短動脈 / posterior ciliary artery",
+    "睫狀後短動脈 / posterior ciliary arteries",
+    "睫狀後短動脈 / short posterior ciliary artery",
+    "睫狀後長動脈 / posterior ciliary artery",
+    "睫狀後長動脈 / posterior ciliary arteries",
+    "睫狀後長動脈 / short posterior ciliary artery"
+   ],
+   "explain": [
+    "**睫狀後動脈（posterior ciliary artery）**",
+    "- 沿視神經周圍分出多條，穿鞏膜入眼球，供應脈絡膜與視神經盤（短）、睫狀體與虹膜（長）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼動脈與眼眶內分支（側面示意圖，標籤已塗去）",
+    "睫狀後動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/oc_blood_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 58,
+     "y": 56,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "淚動脈 / lacrimal artery",
+   "accept": [
+    "淚動脈 / lacrimal artery",
+    "淚動脈 / lacrimal artery"
+   ],
+   "explain": [
+    "**淚動脈（lacrimal artery）**",
+    "- 沿眶外側壁、外直肌上緣走向淚腺，分出外側瞼動脈。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼動脈與眼眶內分支（側面示意圖，標籤已塗去）",
+    "淚動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/oc_blood_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 77,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外側瞼動脈 / lateral palpebral artery",
+   "accept": [
+    "外側瞼動脈 / lateral palpebral artery",
+    "外側瞼動脈 / lateral palpebral"
+   ],
+   "explain": [
+    "**外側瞼動脈（lateral palpebral artery）**",
+    "- 淚動脈的終末支，供應外側眼瞼，與內側瞼動脈吻合成瞼動脈弓。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼動脈與眼眶內分支（側面示意圖，標籤已塗去）",
+    "外側瞼動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/oc_blood_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 79,
+     "y": 92,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眶上動脈 / supraorbital artery",
+   "accept": [
+    "眶上動脈 / supraorbital artery"
+   ],
+   "explain": [
+    "**眶上動脈（supraorbital artery）**",
+    "- 沿提上眼瞼肌上方經眶上孔（切跡）到前額。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼動脈與眼眶內分支（側面示意圖，標籤已塗去）",
+    "眶上動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/oc_blood_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 76,
+     "y": 45.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "滑車上動脈 / supratrochlear artery",
+   "accept": [
+    "滑車上動脈 / supratrochlear artery",
+    "滑車上動脈 / frontal artery"
+   ],
+   "explain": [
+    "**滑車上動脈（supratrochlear artery）**",
+    "- 經眶上緣內側、滑車上方到額部（又稱額動脈）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼動脈與眼眶內分支（側面示意圖，標籤已塗去）",
+    "滑車上動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/oc_blood_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 79,
+     "y": 35.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "鼻背動脈 / dorsal nasal artery",
+   "accept": [
+    "鼻背動脈 / dorsal nasal artery",
+    "鼻背動脈 / nasal dorsal artery",
+    "鼻背動脈 / nasofrontal artery",
+    "鼻額動脈 / dorsal nasal artery",
+    "鼻額動脈 / nasal dorsal artery",
+    "鼻額動脈 / nasofrontal artery"
+   ],
+   "explain": [
+    "**鼻背動脈（dorsal nasal artery）**",
+    "- 眼動脈終末支之一，從內眼角上方出眼眶到鼻背；與面動脈的眼角動脈吻合。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼動脈與眼眶內分支（側面示意圖，標籤已塗去）",
+    "鼻背動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/oc_blood_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 74,
+     "y": 31,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "鞏膜篩板 / lamina cribrosa",
+   "accept": [
+    "鞏膜篩板 / lamina cribrosa"
+   ],
+   "explain": [
+    "**鞏膜篩板（lamina cribrosa）**",
+    "- 視神經穿出鞏膜處的篩狀板（睫狀後短動脈在周圍進入）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼動脈與眼眶內分支（側面示意圖，標籤已塗去）",
+    "鞏膜篩板"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/oc_blood_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 62,
+     "y": 67,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外直肌 / lateral rectus",
+   "accept": [
+    "外直肌 / lateral rectus"
+   ],
+   "explain": [
+    "**外直肌（lateral rectus）**",
+    "- 圖中眼球旁的肌肉（外直肌）；眼外肌的血管來自眼動脈的外側肌動脈。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼動脈與眼眶內分支（側面示意圖，標籤已塗去）",
+    "外直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/oc_blood_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 79,
+     "y": 60,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視交叉 / optic chiasm",
+   "accept": [
+    "視交叉 / optic chiasm"
+   ],
+   "explain": [
+    "**視交叉（optic chiasm）**",
+    "- 在腦下垂體的正上方；垂體腫瘤往上壓 → 雙顳側偏盲。",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "海綿竇（冠狀切面示意圖，已塗去文字標籤）",
+    "視交叉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cavsinus_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 49,
+     "y": 28,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "腦下垂體 / pituitary gland",
+   "accept": [
+    "腦下垂體 / pituitary gland",
+    "腦下垂體 / hypophysis"
+   ],
+   "explain": [
+    "**腦下垂體（pituitary gland）**",
+    "- 坐在蝶鞍裡，位在視交叉下方。",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "海綿竇（冠狀切面示意圖，已塗去文字標籤）",
+    "腦下垂體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cavsinus_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 49.5,
+     "y": 42,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "蝶鞍 / sella turcica",
+   "accept": [
+    "蝶鞍 / sella turcica"
+   ],
+   "explain": [
+    "**蝶鞍（sella turcica）**",
+    "- 蝶骨體上方的馬鞍狀凹陷，腦下垂體的位置。",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "海綿竇（冠狀切面示意圖，已塗去文字標籤）",
+    "蝶鞍"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cavsinus_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 52,
+     "y": 50.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "頸內動脈 / internal carotid artery",
+   "accept": [
+    "頸內動脈 / internal carotid artery"
+   ],
+   "explain": [
+    "**頸內動脈（internal carotid artery）**",
+    "- 穿過海綿竇腔（大紅圈），周圍有交感神經叢。",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "海綿竇（冠狀切面示意圖，已塗去文字標籤）",
+    "頸內動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cavsinus_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 37,
+     "y": 41,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "海綿竇 / cavernous sinus",
+   "accept": [
+    "海綿竇 / cavernous sinus"
+   ],
+   "explain": [
+    "**海綿竇（cavernous sinus）**",
+    "- 蝶鞍兩側由許多靜脈小腔組成的竇；眼靜脈流入此處。",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "海綿竇（冠狀切面示意圖，已塗去文字標籤）",
+    "海綿竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cavsinus_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 32,
+     "y": 59,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "動眼神經 / oculomotor nerve",
+   "accept": [
+    "動眼神經 / oculomotor nerve"
+   ],
+   "explain": [
+    "**動眼神經（oculomotor nerve）**",
+    "- 海綿竇外側壁最上面（CN III）。",
+    "- 記法：外側壁由上而下：III、IV、V1、V2",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "海綿竇（冠狀切面示意圖，已塗去文字標籤）",
+    "動眼神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cavsinus_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 32.5,
+     "y": 34.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "滑車神經 / trochlear nerve",
+   "accept": [
+    "滑車神經 / trochlear nerve"
+   ],
+   "explain": [
+    "**滑車神經（trochlear nerve）**",
+    "- 外側壁第二個（CN IV）。",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "海綿竇（冠狀切面示意圖，已塗去文字標籤）",
+    "滑車神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cavsinus_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 34,
+     "y": 38.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眼神經 / ophthalmic nerve",
+   "accept": [
+    "眼神經 / ophthalmic nerve"
+   ],
+   "explain": [
+    "**眼神經（ophthalmic nerve）**",
+    "- 三叉神經第一支 V1（CN V₁），在外側壁。",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "海綿竇（冠狀切面示意圖，已塗去文字標籤）",
+    "眼神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cavsinus_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 31.5,
+     "y": 49.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上頷神經 / maxillary nerve",
+   "accept": [
+    "上頷神經 / maxillary nerve"
+   ],
+   "explain": [
+    "**上頷神經（maxillary nerve）**",
+    "- 三叉神經第二支 V2（CN V₂），在外側壁最下面；之後走圓孔出顱。",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "海綿竇（冠狀切面示意圖，已塗去文字標籤）",
+    "上頷神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cavsinus_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 29.5,
+     "y": 54.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外旋神經 / abducens nerve",
+   "accept": [
+    "外旋神經 / abducens nerve",
+    "外旋神經 / abducent nerve"
+   ],
+   "explain": [
+    "**外旋神經（abducens nerve）**",
+    "- 唯一「游離在竇腔內、緊貼頸內動脈外側」的神經（CN VI）。",
+    "- 記法：外旋神經在竇腔內，其他在外側壁",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "海綿竇（冠狀切面示意圖，已塗去文字標籤）",
+    "外旋神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cavsinus_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 35.5,
+     "y": 44,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "蝶竇 / sphenoid sinus",
+   "accept": [
+    "蝶竇 / sphenoid sinus"
+   ],
+   "explain": [
+    "**蝶竇（sphenoid sinus）**",
+    "- 在海綿竇與腦下垂體的下方，經蝶竇可做垂體手術。",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "海綿竇（冠狀切面示意圖，已塗去文字標籤）",
+    "蝶竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cavsinus_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 40,
+     "y": 68.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上眼靜脈 / superior ophthalmic vein",
+   "accept": [
+    "上眼靜脈 / superior ophthalmic vein"
+   ],
+   "explain": [
+    "**上眼靜脈（superior ophthalmic vein）**",
+    "- 收集視網膜（中央視網膜靜脈）、眼球、眼外肌與額部的血，穿過眶上裂入海綿竇。",
+    "- 記法：上靜脈走上裂",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）；已塗去原圖標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼靜脈：上、下眼靜脈流向海綿竇（側面觀，已塗去標籤）",
+    "上眼靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray572_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 45,
+     "y": 34,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "下眼靜脈 / inferior ophthalmic vein",
+   "accept": [
+    "下眼靜脈 / inferior ophthalmic vein"
+   ],
+   "explain": [
+    "**下眼靜脈（inferior ophthalmic vein）**",
+    "- 收集眼眶下部的血，入海綿竇或翼狀靜脈叢。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）；已塗去原圖標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼靜脈：上、下眼靜脈流向海綿竇（側面觀，已塗去標籤）",
+    "下眼靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray572_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 35,
+     "y": 56,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "海綿竇 / cavernous sinus",
+   "accept": [
+    "海綿竇 / cavernous sinus"
+   ],
+   "explain": [
+    "**海綿竇（cavernous sinus）**",
+    "- 眼靜脈後方匯入的顱內靜脈竇。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）；已塗去原圖標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼靜脈：上、下眼靜脈流向海綿竇（側面觀，已塗去標籤）",
+    "海綿竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray572_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 17,
+     "y": 58,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "威利氏環 / circle of Willis",
+   "accept": [
+    "威利氏環 / circle of Willis",
+    "威利氏環 / cerebral arterial circle",
+    "威利氏環 / arterial circle of Willis",
+    "威利氏環 / Willis circle",
+    "大腦動脈環 / circle of Willis",
+    "大腦動脈環 / cerebral arterial circle",
+    "大腦動脈環 / arterial circle of Willis",
+    "大腦動脈環 / Willis circle",
+    "Willis 環 / circle of Willis",
+    "Willis 環 / cerebral arterial circle",
+    "Willis 環 / arterial circle of Willis",
+    "Willis 環 / Willis circle",
+    "腦動脈環 / circle of Willis",
+    "腦動脈環 / cerebral arterial circle",
+    "腦動脈環 / arterial circle of Willis",
+    "腦動脈環 / Willis circle"
+   ],
+   "explain": [
+    "**威利氏環（circle of Willis）**",
+    "- 由前交通、前大腦、頸內、後交通、後大腦動脈圍成的動脈環（標本上被血管與垂體柄遮住一部分）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底面血管（真實腦標本）：威利氏環、頸內動脈、基底動脈與椎動脈",
+    "威利氏環"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_base.jpg"
+   ],
+   "marks": [
+    {
+     "x": 43,
+     "y": 20,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 38,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "頸內動脈 / internal carotid artery",
+   "accept": [
+    "頸內動脈 / internal carotid artery",
+    "頸內動脈 / arteria carotis interna",
+    "頸內動脈 / ICA"
+   ],
+   "explain": [
+    "**頸內動脈（internal carotid artery）**",
+    "- 出海綿竇後在視交叉旁的粗管，分出眼動脈、後交通動脈、前脈絡叢動脈後分成前、中大腦動脈。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底面血管（真實腦標本）：威利氏環、頸內動脈、基底動脈與椎動脈",
+    "頸內動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_base.jpg"
+   ],
+   "marks": [
+    {
+     "x": 59,
+     "y": 11,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "基底動脈 / basilar artery",
+   "accept": [
+    "基底動脈 / basilar artery",
+    "基底動脈 / arteria basilaris",
+    "基底動脈 / basilar a"
+   ],
+   "explain": [
+    "**基底動脈（basilar artery）**",
+    "- 左右椎動脈匯合而成，走在橋腦腹面正中，頂端分成兩條大腦後動脈。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底面血管（真實腦標本）：威利氏環、頸內動脈、基底動脈與椎動脈",
+    "基底動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_base.jpg"
+   ],
+   "marks": [
+    {
+     "x": 47,
+     "y": 44,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 40,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "椎動脈 / vertebral artery",
+   "accept": [
+    "椎動脈 / vertebral artery",
+    "椎動脈 / arteria vertebralis",
+    "椎動脈 / vertebral a"
+   ],
+   "explain": [
+    "**椎動脈（vertebral artery）**",
+    "- 經枕骨大孔入顱，在橋延交界匯合成基底動脈。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底面血管（真實腦標本）：威利氏環、頸內動脈、基底動脈與椎動脈",
+    "椎動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_base.jpg"
+   ],
+   "marks": [
+    {
+     "x": 33,
+     "y": 72,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 41,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋腦 / pons",
+   "accept": [
+    "橋腦 / pons",
+    "橋腦 / pons"
+   ],
+   "explain": [
+    "**橋腦（pons）**",
+    "- 基底動脈走過的腦幹腹面膨大部分。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底面血管（真實腦標本）：威利氏環、頸內動脈、基底動脈與椎動脈",
+    "橋腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_base.jpg"
+   ],
+   "marks": [
+    {
+     "x": 27,
+     "y": 52,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 42,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "小腦 / cerebellum",
+   "accept": [
+    "小腦 / cerebellum",
+    "小腦 / cerebellum"
+   ],
+   "explain": [
+    "**小腦（cerebellum）**",
+    "- 橋腦後方的大塊構造。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "腦底面血管（真實腦標本）：威利氏環、頸內動脈、基底動脈與椎動脈",
+    "小腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_base.jpg"
+   ],
+   "marks": [
+    {
+     "x": 77,
+     "y": 83,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 43,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眶上動脈與靜脈 / supraorbital artery and vein",
+   "accept": [
+    "眶上動脈與靜脈 / supraorbital artery and vein",
+    "眶上動脈與靜脈 / supraorbital artery",
+    "眶上動脈與靜脈 / supraorbital vein",
+    "眶上動脈 / supraorbital artery and vein",
+    "眶上動脈 / supraorbital artery",
+    "眶上動脈 / supraorbital vein",
+    "眶上靜脈 / supraorbital artery and vein",
+    "眶上靜脈 / supraorbital artery",
+    "眶上靜脈 / supraorbital vein"
+   ],
+   "explain": [
+    "**眶上動脈與靜脈（supraorbital artery and vein）**",
+    "- 眼動脈分支，隨眶上神經穿出眶上孔，供應前額與上眼瞼。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點（原圖數字為圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼瞼與眼眶周圍的血管（Gray 解剖圖，前面觀；數字為原圖編號）",
+    "眶上動脈與靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray515.jpg"
+   ],
+   "marks": [
+    {
+     "x": 68,
+     "y": 32,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 44,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "鼻背動脈 / nasal artery",
+   "accept": [
+    "鼻背動脈 / nasal artery",
+    "鼻背動脈 / dorsal nasal artery",
+    "鼻動脈 / nasal artery",
+    "鼻動脈 / dorsal nasal artery"
+   ],
+   "explain": [
+    "**鼻背動脈（nasal artery）**",
+    "- 眼動脈的終末分支，從內眼角上方穿出，沿鼻背下行，與眼角動脈吻合。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點（原圖數字為圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼瞼與眼眶周圍的血管（Gray 解剖圖，前面觀；數字為原圖編號）",
+    "鼻背動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray515.jpg"
+   ],
+   "marks": [
+    {
+     "x": 76,
+     "y": 40,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 45,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眼角動脈 / angular artery",
+   "accept": [
+    "眼角動脈 / angular artery",
+    "眼角動脈 / angular a"
+   ],
+   "explain": [
+    "**眼角動脈（angular artery）**",
+    "- 顏面動脈（外頸動脈系統）的終末分支，沿鼻旁上行到內眼角。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點（原圖數字為圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼瞼與眼眶周圍的血管（Gray 解剖圖，前面觀；數字為原圖編號）",
+    "眼角動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray515.jpg"
+   ],
+   "marks": [
+    {
+     "x": 82,
+     "y": 51,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 46,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眼角靜脈 / angular vein",
+   "accept": [
+    "眼角靜脈 / angular vein",
+    "眼角靜脈 / angular v"
+   ],
+   "explain": [
+    "**眼角靜脈（angular vein）**",
+    "- 顏面靜脈的起始，在內眼角與眼上靜脈相通；臉部感染可經此進入海綿竇。",
+    "- 記法：危險三角",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點（原圖數字為圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼瞼與眼眶周圍的血管（Gray 解剖圖，前面觀；數字為原圖編號）",
+    "眼角靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray515.jpg"
+   ],
+   "marks": [
+    {
+     "x": 84,
+     "y": 57,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 47,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "顏面動脈 / facial artery",
+   "accept": [
+    "顏面動脈 / facial artery",
+    "顏面動脈 / external maxillary artery",
+    "面動脈 / facial artery",
+    "面動脈 / external maxillary artery"
+   ],
+   "explain": [
+    "**顏面動脈（facial artery）**",
+    "- 外頸動脈的分支，從下頷骨前下緣上到臉部，終末成為眼角動脈。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點（原圖數字為圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼瞼與眼眶周圍的血管（Gray 解剖圖，前面觀；數字為原圖編號）",
+    "顏面動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray515.jpg"
+   ],
+   "marks": [
+    {
+     "x": 68,
+     "y": 95,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 48,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "顏面靜脈 / facial vein",
+   "accept": [
+    "顏面靜脈 / facial vein",
+    "顏面靜脈 / anterior facial vein"
+   ],
+   "explain": [
+    "**顏面靜脈（facial vein）**",
+    "- 臉部的主要淺靜脈，往上延續為眼角靜脈。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點（原圖數字為圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼瞼與眼眶周圍的血管（Gray 解剖圖，前面觀；數字為原圖編號）",
+    "顏面靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray515.jpg"
+   ],
+   "marks": [
+    {
+     "x": 62,
+     "y": 95,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 49,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眶下動脈 / suborbital artery",
+   "accept": [
+    "眶下動脈 / suborbital artery",
+    "眶下動脈 / infraorbital artery",
+    "眶下動脈 / suborbital a",
+    "眶下動脈 / suborbital artery",
+    "眶下動脈 / infraorbital artery",
+    "眶下動脈 / suborbital a"
+   ],
+   "explain": [
+    "**眶下動脈（suborbital artery）**",
+    "- 上頷動脈分支，與眶下神經一起從眶下孔穿出到臉頰。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點（原圖數字為圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼瞼與眼眶周圍的血管（Gray 解剖圖，前面觀；數字為原圖編號）",
+    "眶下動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray515.jpg"
+   ],
+   "marks": [
+    {
+     "x": 55,
+     "y": 91,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 50,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "淚動脈 / lacrimal artery",
+   "accept": [
+    "淚動脈 / lacrimal artery",
+    "淚動脈 / lacrimal a"
+   ],
+   "explain": [
+    "**淚動脈（lacrimal artery）**",
+    "- 眼動脈分支，供應淚腺，再分出外側瞼動脈。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點（原圖數字為圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼瞼與眼眶周圍的血管（Gray 解剖圖，前面觀；數字為原圖編號）",
+    "淚動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray515.jpg"
+   ],
+   "marks": [
+    {
+     "x": 34,
+     "y": 40,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 51,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上瞼動脈 / superior palpebral artery",
+   "accept": [
+    "上瞼動脈 / superior palpebral artery",
+    "上瞼動脈 / superior palpebral arch",
+    "上瞼動脈 / superior palpebral a",
+    "上瞼動脈弓 / superior palpebral artery",
+    "上瞼動脈弓 / superior palpebral arch",
+    "上瞼動脈弓 / superior palpebral a"
+   ],
+   "explain": [
+    "**上瞼動脈（superior palpebral artery）**",
+    "- 在上眼瞼瞼板前形成動脈弓，由內側瞼動脈與外側瞼動脈吻合而成。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點（原圖數字為圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼瞼與眼眶周圍的血管（Gray 解剖圖，前面觀；數字為原圖編號）",
+    "上瞼動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray515.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 58,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 52,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "下瞼動脈 / inferior palpebral artery",
+   "accept": [
+    "下瞼動脈 / inferior palpebral artery",
+    "下瞼動脈 / inferior palpebral arch",
+    "下瞼動脈 / inferior palpebral a",
+    "下瞼動脈弓 / inferior palpebral artery",
+    "下瞼動脈弓 / inferior palpebral arch",
+    "下瞼動脈弓 / inferior palpebral a"
+   ],
+   "explain": [
+    "**下瞼動脈（inferior palpebral artery）**",
+    "- 下眼瞼的動脈弓。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點（原圖數字為圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼瞼與眼眶周圍的血管（Gray 解剖圖，前面觀；數字為原圖編號）",
+    "下瞼動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray515.jpg"
+   ],
+   "marks": [
+    {
+     "x": 46,
+     "y": 67,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 53,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "顳淺動脈前支 / anterior branch of the superficial temporal artery",
+   "accept": [
+    "顳淺動脈前支 / anterior branch of the superficial temporal artery",
+    "顳淺動脈前支 / anterior branch of superficial temporal artery",
+    "顳淺動脈 / anterior branch of the superficial temporal artery",
+    "顳淺動脈 / anterior branch of superficial temporal artery"
+   ],
+   "explain": [
+    "**顳淺動脈前支（anterior branch of the superficial temporal artery）**",
+    "- 外頸動脈終末支之一，在眼眶外側與淚動脈、上瞼動脈有吻合。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點（原圖數字為圖說編號，不含名稱））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼瞼與眼眶周圍的血管（Gray 解剖圖，前面觀；數字為原圖編號）",
+    "顳淺動脈前支"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray515.jpg"
+   ],
+   "marks": [
+    {
+     "x": 6,
+     "y": 62,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 54,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "淚腺神經 / lacrimal nerve",
+   "accept": [
+    "淚腺神經 / lacrimal nerve",
+    "淚腺神經 / lacrimal n"
+   ],
+   "explain": [
+    "**淚腺神經（lacrimal nerve）**",
+    "- V1 的分支，感覺外上眼瞼與淚腺附近皮膚，並攜帶淚腺的副交感纖維。",
+    "- 記法：V1：淚腺、額、鼻睫",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）；已塗去英文標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "頭面部感覺神經分布（Gray 解剖圖，已塗去標籤）：三叉神經眼支、上頷支、下頷支各個終末分支",
+    "淚腺神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray784_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 33.3,
+     "y": 15,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 55,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "滑車上神經 / supratrochlear nerve",
+   "accept": [
+    "滑車上神經 / supratrochlear nerve",
+    "滑車上神經 / supratrochlear n"
+   ],
+   "explain": [
+    "**滑車上神經（supratrochlear nerve）**",
+    "- 額神經（V1）內側支，在眶緣內上方穿出，感覺內上眼瞼與前額內側。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）；已塗去英文標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "頭面部感覺神經分布（Gray 解剖圖，已塗去標籤）：三叉神經眼支、上頷支、下頷支各個終末分支",
+    "滑車上神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray784_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 37,
+     "y": 28,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 56,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眶上神經 / supraorbital nerve",
+   "accept": [
+    "眶上神經 / supraorbital nerve",
+    "眶上神經 / supraorbital n"
+   ],
+   "explain": [
+    "**眶上神經（supraorbital nerve）**",
+    "- 額神經（V1）外側支，從眶上孔／切跡穿出，感覺前額與頭皮前部。",
+    "- 記法：眶上孔",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）；已塗去英文標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "頭面部感覺神經分布（Gray 解剖圖，已塗去標籤）：三叉神經眼支、上頷支、下頷支各個終末分支",
+    "眶上神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray784_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 38.3,
+     "y": 31.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 57,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "滑車下神經 / infratrochlear nerve",
+   "accept": [
+    "滑車下神經 / infratrochlear nerve",
+    "滑車下神經 / infratrochlear n"
+   ],
+   "explain": [
+    "**滑車下神經（infratrochlear nerve）**",
+    "- 鼻睫神經（V1）的終末支，感覺內眼角、淚囊與鼻根。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）；已塗去英文標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "頭面部感覺神經分布（Gray 解剖圖，已塗去標籤）：三叉神經眼支、上頷支、下頷支各個終末分支",
+    "滑車下神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray784_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 35.8,
+     "y": 44,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 58,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外鼻神經 / nasal nerve",
+   "accept": [
+    "外鼻神經 / nasal nerve",
+    "外鼻神經 / external nasal nerve",
+    "外鼻神經 / nasal n",
+    "鼻神經 / nasal nerve",
+    "鼻神經 / external nasal nerve",
+    "鼻神經 / nasal n"
+   ],
+   "explain": [
+    "**外鼻神經（nasal nerve）**",
+    "- 鼻睫神經 → 前篩神經的終末支，感覺鼻尖與鼻翼皮膚。",
+    "- 記法：鼻尖有水泡 → Hutchinson 徵象",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）；已塗去英文標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "頭面部感覺神經分布（Gray 解剖圖，已塗去標籤）：三叉神經眼支、上頷支、下頷支各個終末分支",
+    "外鼻神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray784_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 29.6,
+     "y": 52,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 59,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眶下神經 / infraorbital nerve",
+   "accept": [
+    "眶下神經 / infraorbital nerve",
+    "眶下神經 / infraorbital n"
+   ],
+   "explain": [
+    "**眶下神經（infraorbital nerve）**",
+    "- 上頷神經（V2）的終末支，從眶下孔穿出，感覺下眼瞼、臉頰與上唇。",
+    "- 記法：V2 的終末；眶下孔",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）；已塗去英文標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "頭面部感覺神經分布（Gray 解剖圖，已塗去標籤）：三叉神經眼支、上頷支、下頷支各個終末分支",
+    "眶下神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray784_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 34.6,
+     "y": 55,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 60,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "頰神經 / buccal nerve",
+   "accept": [
+    "頰神經 / buccal nerve",
+    "頰神經 / buccal n"
+   ],
+   "explain": [
+    "**頰神經（buccal nerve）**",
+    "- 下頷神經（V3）的分支，感覺頰黏膜與臉頰皮膚。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）；已塗去英文標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "頭面部感覺神經分布（Gray 解剖圖，已塗去標籤）：三叉神經眼支、上頷支、下頷支各個終末分支",
+    "頰神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray784_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 42,
+     "y": 64.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 61,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "頦神經 / mental nerve",
+   "accept": [
+    "頦神經 / mental nerve",
+    "頦神經 / mental n"
+   ],
+   "explain": [
+    "**頦神經（mental nerve）**",
+    "- 下頷神經（V3）的下齒槽神經終末支，從頦孔穿出，感覺下唇與下巴。",
+    "- 記法：V3；頦孔",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）；已塗去英文標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "頭面部感覺神經分布（Gray 解剖圖，已塗去標籤）：三叉神經眼支、上頷支、下頷支各個終末分支",
+    "頦神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray784_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 34.6,
+     "y": 80,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 62,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "耳顳神經 / auriculotemporal nerve",
+   "accept": [
+    "耳顳神經 / auriculotemporal nerve",
+    "耳顳神經 / auriculo-temporal nerve",
+    "耳顳神經 / auriculotemporal n"
+   ],
+   "explain": [
+    "**耳顳神經（auriculotemporal nerve）**",
+    "- 下頷神經（V3）的分支，感覺耳前、顳部皮膚。",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）；已塗去英文標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "頭面部感覺神經分布（Gray 解剖圖，已塗去標籤）：三叉神經眼支、上頷支、下頷支各個終末分支",
+    "耳顳神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/gray784_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 61.7,
+     "y": 55,
+     "label": "1"
+    }
+   ]
+  }
+ ]
+}

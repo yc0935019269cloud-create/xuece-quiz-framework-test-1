@@ -1,0 +1,2087 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-manual-visual",
+  "subject": "eye_anat",
+  "name": "【手冊圖鑑・期中】視覺路徑（視神經、視網膜、視覺皮質）看圖",
+  "path": [
+   "眼解剖實驗",
+   "實驗手冊圖鑑",
+   "★ 期中範圍：骨質眼窩・血管系統・視覺路徑・腦幹與神經",
+   "第 5 頁　視覺路徑"
+  ],
+  "order": 103,
+  "source": "《新實驗手冊-01.pdf》全 11 頁名詞；上課逐字稿（40 秒看圖跑台、顱孔與腦神經順序、LR₆SO₄ 等老師強調重點）；圖片來源見各圖說明（開放授權圖，已加標記點）。"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視神經盤 / optic disc",
+   "accept": [
+    "視神經盤 / optic disc",
+    "視神經盤 / blind spot",
+    "視神經盤 / optic nerve head",
+    "盲點 / optic disc",
+    "盲點 / blind spot",
+    "盲點 / optic nerve head",
+    "視神經乳頭 / optic disc",
+    "視神經乳頭 / blind spot",
+    "視神經乳頭 / optic nerve head"
+   ],
+   "explain": [
+    "**視神經盤（optic disc）**",
+    "- 視神經與視網膜中央血管進出的地方，橘黃色圓盤，沒有感光細胞（盲點）。",
+    "- 記法：在鼻側",
+    "（圖：Mikael Häggström.\n\nWhen using this image in external works, it may be cited as:\nHäggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "正常右眼眼底：黃斑、視神經盤與血管",
+    "視神經盤"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/fundus_od.jpg"
+   ],
+   "marks": [
+    {
+     "x": 80.5,
+     "y": 56,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視杯 / optic cup",
+   "accept": [
+    "視杯 / optic cup",
+    "視杯 / cup",
+    "視杯 / physiologic cup"
+   ],
+   "explain": [
+    "**視杯（optic cup）**",
+    "- 視神經盤中央較亮的凹陷；杯盤比正常約小於 0.3。",
+    "（圖：Mikael Häggström.\n\nWhen using this image in external works, it may be cited as:\nHäggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "正常右眼眼底：黃斑、視神經盤與血管",
+    "視杯"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/fundus_od.jpg"
+   ],
+   "marks": [
+    {
+     "x": 84,
+     "y": 48.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "黃斑部 / macula",
+   "accept": [
+    "黃斑部 / macula",
+    "黃斑部 / macula lutea",
+    "黃斑 / macula",
+    "黃斑 / macula lutea",
+    "黃斑區 / macula",
+    "黃斑區 / macula lutea"
+   ],
+   "explain": [
+    "**黃斑部（macula）**",
+    "- 視網膜後極部（直徑約 5.5 mm）、顳側，富含錐細胞；眼底看起來較暗。",
+    "（圖：Mikael Häggström.\n\nWhen using this image in external works, it may be cited as:\nHäggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "正常右眼眼底：黃斑、視神經盤與血管",
+    "黃斑部"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/fundus_od.jpg"
+   ],
+   "marks": [
+    {
+     "x": 42.5,
+     "y": 54,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "小窩（中央小凹） / fovea",
+   "accept": [
+    "小窩（中央小凹） / fovea",
+    "中央小凹 / fovea",
+    "小窩 / fovea",
+    "小窩 / fovea",
+    "中央小凹 / fovea"
+   ],
+   "explain": [
+    "**小窩（中央小凹）（fovea）**",
+    "- 黃斑部正中央的小凹陷，視力最好；只有錐細胞，沒有視網膜血管。",
+    "- 記法：看圖最暗的小點",
+    "（圖：Mikael Häggström.\n\nWhen using this image in external works, it may be cited as:\nHäggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "正常右眼眼底：黃斑、視神經盤與血管",
+    "小窩（中央小凹）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/fundus_od.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 50,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視網膜中央動脈（分支） / central retinal artery",
+   "accept": [
+    "視網膜中央動脈（分支） / central retinal artery",
+    "視網膜中央動脈（分支） / central retinal artery branch",
+    "視網膜中央動脈 / central retinal artery",
+    "視網膜中央動脈 / central retinal artery branch",
+    "視網膜中央動脈 / central retinal artery",
+    "視網膜中央動脈 / central retinal artery branch",
+    "分支 / central retinal artery",
+    "分支 / central retinal artery branch"
+   ],
+   "explain": [
+    "**視網膜中央動脈（分支）（central retinal artery）**",
+    "- 從視神經盤分出顳上、顳下、鼻上、鼻下四大分支；動脈較細、顏色較亮。",
+    "（圖：Mikael Häggström.\n\nWhen using this image in external works, it may be cited as:\nHäggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "正常右眼眼底：黃斑、視神經盤與血管",
+    "視網膜中央動脈（分支）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/fundus_od.jpg"
+   ],
+   "marks": [
+    {
+     "x": 80,
+     "y": 38,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視網膜 / retina",
+   "accept": [
+    "視網膜 / retina"
+   ],
+   "explain": [
+    "**視網膜（retina）**",
+    "- 最上面的多層結構（神經纖維層向中央匯集）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "視網膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 8,
+     "y": 25,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "脈絡膜 / choroid",
+   "accept": [
+    "脈絡膜 / choroid"
+   ],
+   "explain": [
+    "**脈絡膜（choroid）**",
+    "- 視網膜下方的血管層。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "脈絡膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 9,
+     "y": 30.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "鞏膜 / sclera",
+   "accept": [
+    "鞏膜 / sclera"
+   ],
+   "explain": [
+    "**鞏膜（sclera）**",
+    "- 最外層白色纖維層，神經由此穿出。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "鞏膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 8,
+     "y": 36,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "篩板前區 / prelaminar region",
+   "accept": [
+    "篩板前區 / prelaminar region",
+    "篩板前區 / pre laminar region",
+    "篩板前區 / prelaminar"
+   ],
+   "explain": [
+    "**篩板前區（prelaminar region）**",
+    "- 神經纖維在鞏膜篩板之前（視神經盤表面）的一段；無髓鞘，血供來自睫狀後短動脈與辛氏環。",
+    "- 記法：篩板前＝視神經盤",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "篩板前區"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 55,
+     "y": 25,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "鞏膜篩板 / lamina cribrosa",
+   "accept": [
+    "鞏膜篩板 / lamina cribrosa",
+    "鞏膜篩板 / lamina cribrosa sclerae",
+    "篩板 / lamina cribrosa",
+    "篩板 / lamina cribrosa sclerae"
+   ],
+   "explain": [
+    "**鞏膜篩板（lamina cribrosa）**",
+    "- 鞏膜上許多篩孔，讓神經纖維穿出；由此開始有髓鞘。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "鞏膜篩板"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 51,
+     "y": 30.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "篩板後區 / retrolaminar region",
+   "accept": [
+    "篩板後區 / retrolaminar region",
+    "篩板後區 / retrolaminar",
+    "篩板後區 / retro laminar region"
+   ],
+   "explain": [
+    "**篩板後區（retrolaminar region）**",
+    "- 篩板之後到進入視神經鞘之間的一段，有髓鞘、被腦膜包覆。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "篩板後區"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 57,
+     "y": 48,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視神經血管環（Zinn–Haller） / circle of Zinn-Haller",
+   "accept": [
+    "視神經血管環（Zinn–Haller） / circle of Zinn-Haller",
+    "視神經血管環（Zinn–Haller） / circle of Zinn",
+    "視神經血管環（Zinn–Haller） / circle of Haller",
+    "視神經血管環（Zinn–Haller） / Zinn-Haller",
+    "辛氏環 / circle of Zinn-Haller",
+    "辛氏環 / circle of Zinn",
+    "辛氏環 / circle of Haller",
+    "辛氏環 / Zinn-Haller",
+    "Zinn–Haller 動脈環 / circle of Zinn-Haller",
+    "Zinn–Haller 動脈環 / circle of Zinn",
+    "Zinn–Haller 動脈環 / circle of Haller",
+    "Zinn–Haller 動脈環 / Zinn-Haller",
+    "視神經血管環 / circle of Zinn-Haller",
+    "視神經血管環 / circle of Zinn",
+    "視神經血管環 / circle of Haller",
+    "視神經血管環 / Zinn-Haller",
+    "Zinn–Haller / circle of Zinn-Haller",
+    "Zinn–Haller / circle of Zinn",
+    "Zinn–Haller / circle of Haller",
+    "Zinn–Haller / Zinn-Haller"
+   ],
+   "explain": [
+    "**視神經血管環（Zinn–Haller）（circle of Zinn-Haller）**",
+    "- 睫狀後短動脈在視神經周圍鞏膜內吻合形成的動脈環，供應視神經盤。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "視神經血管環（Zinn–Haller）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 27,
+     "y": 40.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視網膜中央動脈 / central retinal artery",
+   "accept": [
+    "視網膜中央動脈 / central retinal artery",
+    "視網膜中央動脈 / central retinal vessels"
+   ],
+   "explain": [
+    "**視網膜中央動脈（central retinal artery）**",
+    "- 走在視神經中央（偏紅色），供應內層視網膜。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "視網膜中央動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 48.5,
+     "y": 70,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視網膜中央靜脈 / central retinal vein",
+   "accept": [
+    "視網膜中央靜脈 / central retinal vein"
+   ],
+   "explain": [
+    "**視網膜中央靜脈（central retinal vein）**",
+    "- 與動脈同行（偏藍色）出眼球。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "視網膜中央靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 47,
+     "y": 66,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "睫狀後動脈 / posterior ciliary artery",
+   "accept": [
+    "睫狀後動脈 / posterior ciliary artery",
+    "睫狀後動脈 / short posterior ciliary artery",
+    "睫狀後短動脈 / posterior ciliary artery",
+    "睫狀後短動脈 / short posterior ciliary artery"
+   ],
+   "explain": [
+    "**睫狀後動脈（posterior ciliary artery）**",
+    "- 在視神經兩側穿鞏膜（短動脈分支）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "睫狀後動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 17.5,
+     "y": 68,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "軟腦膜 / pia mater",
+   "accept": [
+    "軟腦膜 / pia mater",
+    "軟腦膜 / pia"
+   ],
+   "explain": [
+    "**軟腦膜（pia mater）**",
+    "- 緊貼神經表面的最內層腦膜（紫色）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "軟腦膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 31,
+     "y": 44,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "蛛網膜 / arachnoid",
+   "accept": [
+    "蛛網膜 / arachnoid",
+    "蛛網膜 / arachnoid mater"
+   ],
+   "explain": [
+    "**蛛網膜（arachnoid）**",
+    "- 中間層腦膜（淺藍色蛛網膜下腔外緣）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "蛛網膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 27.5,
+     "y": 56,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "硬腦膜 / dura mater",
+   "accept": [
+    "硬腦膜 / dura mater",
+    "硬腦膜 / dura"
+   ],
+   "explain": [
+    "**硬腦膜（dura mater）**",
+    "- 最外層厚腦膜，與鞏膜相續。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視神經盤與視神經分段（示意圖，已塗去文字）",
+    "硬腦膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/onh_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 28,
+     "y": 66,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "內限制膜 / inner limiting membrane",
+   "accept": [
+    "內限制膜 / inner limiting membrane",
+    "內限制膜 / ILM"
+   ],
+   "explain": [
+    "**內限制膜（inner limiting membrane）**",
+    "- 視網膜最內（最靠玻璃體）的界膜，由穆勒氏細胞的終足形成。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "內限制膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 33,
+     "y": 2.2,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "神經纖維層 / nerve fiber layer",
+   "accept": [
+    "神經纖維層 / nerve fiber layer",
+    "神經纖維層 / retinal nerve fiber layer",
+    "神經纖維層 / RNFL"
+   ],
+   "explain": [
+    "**神經纖維層（nerve fiber layer）**",
+    "- 神經節細胞的軸突往視神經盤匯集的一層。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "神經纖維層"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 32,
+     "y": 5.6,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "神經節細胞層 / ganglion cell layer",
+   "accept": [
+    "神經節細胞層 / ganglion cell layer",
+    "神經節細胞層 / GCL"
+   ],
+   "explain": [
+    "**神經節細胞層（ganglion cell layer）**",
+    "- 神經節細胞的細胞體；軸突形成視神經。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "神經節細胞層"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 26,
+     "y": 13.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "內網狀層 / inner plexiform layer",
+   "accept": [
+    "內網狀層 / inner plexiform layer",
+    "內網狀層 / IPL"
+   ],
+   "explain": [
+    "**內網狀層（inner plexiform layer）**",
+    "- 雙極細胞、無軸突細胞與神經節細胞的突觸層。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "內網狀層"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 23,
+     "y": 25,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "內顆粒層 / inner nuclear layer",
+   "accept": [
+    "內顆粒層 / inner nuclear layer",
+    "內顆粒層 / INL"
+   ],
+   "explain": [
+    "**內顆粒層（inner nuclear layer）**",
+    "- 雙極、水平、無軸突細胞與穆勒氏細胞的細胞核所在。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "內顆粒層"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 23,
+     "y": 37,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外網狀層 / outer plexiform layer",
+   "accept": [
+    "外網狀層 / outer plexiform layer",
+    "外網狀層 / OPL"
+   ],
+   "explain": [
+    "**外網狀層（outer plexiform layer）**",
+    "- 感光細胞與雙極、水平細胞的突觸層。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "外網狀層"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 23,
+     "y": 48,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外顆粒層 / outer nuclear layer",
+   "accept": [
+    "外顆粒層 / outer nuclear layer",
+    "外顆粒層 / ONL"
+   ],
+   "explain": [
+    "**外顆粒層（outer nuclear layer）**",
+    "- 桿、錐感光細胞的細胞核所在。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "外顆粒層"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 21,
+     "y": 59.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外限制膜 / outer limiting membrane",
+   "accept": [
+    "外限制膜 / outer limiting membrane",
+    "外限制膜 / ELM"
+   ],
+   "explain": [
+    "**外限制膜（outer limiting membrane）**",
+    "- 穆勒氏細胞與感光細胞間的連結帶（不是真正的膜）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "外限制膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 25,
+     "y": 73,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "色素上皮細胞層 / retinal pigment epithelium",
+   "accept": [
+    "色素上皮細胞層 / retinal pigment epithelium",
+    "色素上皮細胞層 / pigment epithelium",
+    "色素上皮細胞層 / RPE",
+    "視網膜色素上皮 / retinal pigment epithelium",
+    "視網膜色素上皮 / pigment epithelium",
+    "視網膜色素上皮 / RPE"
+   ],
+   "explain": [
+    "**色素上皮細胞層（retinal pigment epithelium）**",
+    "- 單層六角形含黑色素細胞，支持、吞噬感光細胞外節，構成外血液視網膜屏障。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "色素上皮細胞層"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 41,
+     "y": 88,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "布魯赫氏膜 / Bruch’s membrane",
+   "accept": [
+    "布魯赫氏膜 / Bruch’s membrane",
+    "布魯赫氏膜 / Bruch membrane"
+   ],
+   "explain": [
+    "**布魯赫氏膜（Bruch’s membrane）**",
+    "- RPE 與脈絡膜微血管之間的五層薄膜。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "布魯赫氏膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 41,
+     "y": 92.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "脈絡膜 / choroid",
+   "accept": [
+    "脈絡膜 / choroid"
+   ],
+   "explain": [
+    "**脈絡膜（choroid）**",
+    "- 含豐富血管的色素層，供應外層視網膜。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "脈絡膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 41,
+     "y": 96.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "無軸突細胞 / amacrine cell",
+   "accept": [
+    "無軸突細胞 / amacrine cell",
+    "無軸突細胞 / amacrine cells"
+   ],
+   "explain": [
+    "**無軸突細胞（amacrine cell）**",
+    "- 橘色小細胞，在內網狀層邊緣，調節雙極與神經節細胞之間的訊號（側向抑制）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "無軸突細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 33.5,
+     "y": 28,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "感光細胞層 / photoreceptor layer",
+   "accept": [
+    "感光細胞層 / photoreceptor layer",
+    "感光細胞層 / photoreceptor layer",
+    "感光細胞層 / layer of rods and cones"
+   ],
+   "explain": [
+    "**感光細胞層（photoreceptor layer）**",
+    "- 桿、錐感光細胞的內節與外節所在的一層（外限制膜之外、色素上皮之內）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "感光細胞層"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 29,
+     "y": 79,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "感光細胞 / photoreceptor",
+   "accept": [
+    "感光細胞 / photoreceptor",
+    "感光細胞 / photoreceptors",
+    "視桿視錐細胞 / photoreceptor",
+    "視桿視錐細胞 / photoreceptors"
+   ],
+   "explain": [
+    "**感光細胞（photoreceptor）**",
+    "- 桿細胞與錐細胞的總稱；把光轉成電訊號。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "感光細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 29,
+     "y": 68,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "神經節細胞 / ganglion cell",
+   "accept": [
+    "神經節細胞 / ganglion cell",
+    "神經節細胞 / retinal ganglion cell"
+   ],
+   "explain": [
+    "**神經節細胞（ganglion cell）**",
+    "- 圖右上方的粉紅細胞：軸突形成視神經。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "神經節細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 63,
+     "y": 12,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "雙極細胞 / bipolar cell",
+   "accept": [
+    "雙極細胞 / bipolar cell",
+    "雙極細胞 / bipolar cells"
+   ],
+   "explain": [
+    "**雙極細胞（bipolar cell）**",
+    "- 連接感光細胞與神經節細胞的黃色細胞。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "雙極細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 63,
+     "y": 35,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "穆勒氏細胞 / Müller cell",
+   "accept": [
+    "穆勒氏細胞 / Müller cell",
+    "穆勒氏細胞 / Muller cell",
+    "穆勒氏細胞 / Müller cells"
+   ],
+   "explain": [
+    "**穆勒氏細胞（Müller cell）**",
+    "- 貫穿整層視網膜的綠色支持膠細胞。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "穆勒氏細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 55.5,
+     "y": 42,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "水平細胞 / horizontal cell",
+   "accept": [
+    "水平細胞 / horizontal cell",
+    "水平細胞 / horizontal cells"
+   ],
+   "explain": [
+    "**水平細胞（horizontal cell）**",
+    "- 外網狀層的橘色細胞，橫向連接感光細胞（側抑制）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "水平細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 46,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "錐狀細胞 / cone cell",
+   "accept": [
+    "錐狀細胞 / cone cell",
+    "錐狀細胞 / cone",
+    "錐狀細胞 / cones"
+   ],
+   "explain": [
+    "**錐狀細胞（cone cell）**",
+    "- 紅色感光細胞，負責色覺與高解析度（黃斑密度高）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "錐狀細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 63,
+     "y": 66,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 38,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "桿狀細胞 / rod cell",
+   "accept": [
+    "桿狀細胞 / rod cell",
+    "桿狀細胞 / rod",
+    "桿狀細胞 / rods"
+   ],
+   "explain": [
+    "**桿狀細胞（rod cell）**",
+    "- 紫色感光細胞，負責暗視覺（周邊視網膜）。",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；已塗去文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "視網膜十層與細胞（示意圖，已塗去縮寫）",
+    "桿狀細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/retina_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 48,
+     "y": 64,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "中央溝 / central sulcus",
+   "accept": [
+    "中央溝 / central sulcus",
+    "中央溝 / sulcus centralis",
+    "中央溝 / central fissure",
+    "中央溝 / Rolandic fissure",
+    "羅蘭多氏溝 / central sulcus",
+    "羅蘭多氏溝 / sulcus centralis",
+    "羅蘭多氏溝 / central fissure",
+    "羅蘭多氏溝 / Rolandic fissure"
+   ],
+   "explain": [
+    "**中央溝（central sulcus）**",
+    "- 分隔額葉與頂葉的深溝；前方是運動皮質、後方是體感覺皮質。",
+    "- 記法：額葉／頂葉的分界",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "中央溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 46.5,
+     "y": 30,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 40,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外側溝 / lateral sulcus",
+   "accept": [
+    "外側溝 / lateral sulcus",
+    "外側溝 / sulcus lateralis",
+    "外側溝 / lateral fissure",
+    "外側溝 / Sylvian fissure",
+    "外側裂 / lateral sulcus",
+    "外側裂 / sulcus lateralis",
+    "外側裂 / lateral fissure",
+    "外側裂 / Sylvian fissure",
+    "大腦外側裂 / lateral sulcus",
+    "大腦外側裂 / sulcus lateralis",
+    "大腦外側裂 / lateral fissure",
+    "大腦外側裂 / Sylvian fissure",
+    "Sylvius 裂 / lateral sulcus",
+    "Sylvius 裂 / sulcus lateralis",
+    "Sylvius 裂 / lateral fissure",
+    "Sylvius 裂 / Sylvian fissure"
+   ],
+   "explain": [
+    "**外側溝（lateral sulcus）**",
+    "- 分隔顳葉與額葉、頂葉的深溝（也叫 Sylvius 裂）。",
+    "- 記法：顳葉在它下面",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "外側溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 59.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 41,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "額葉 / frontal lobe",
+   "accept": [
+    "額葉 / frontal lobe",
+    "額葉 / lobus frontalis",
+    "額葉 / frontal"
+   ],
+   "explain": [
+    "**額葉（frontal lobe）**",
+    "- 中央溝之前、外側溝之上；運動、語言（左側 Broca 區）、執行功能。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "額葉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 22,
+     "y": 40,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 42,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "頂葉 / parietal lobe",
+   "accept": [
+    "頂葉 / parietal lobe",
+    "頂葉 / lobus parietalis",
+    "頂葉 / parietal"
+   ],
+   "explain": [
+    "**頂葉（parietal lobe）**",
+    "- 中央溝之後、枕葉之前；體感覺、空間處理；視放射上束（Baum 環）經過頂葉。",
+    "- 記法：視放射上束走頂葉 → 下視野",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "頂葉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 62,
+     "y": 30,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 43,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "顳葉 / temporal lobe",
+   "accept": [
+    "顳葉 / temporal lobe",
+    "顳葉 / lobus temporalis",
+    "顳葉 / temporal"
+   ],
+   "explain": [
+    "**顳葉（temporal lobe）**",
+    "- 外側溝下方；聽覺、記憶、語言理解；視放射下束（Meyer 環）繞過側腦室下角進入顳葉。",
+    "- 記法：Meyer 環 → 上視野",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "顳葉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 75,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 44,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "枕葉 / occipital lobe",
+   "accept": [
+    "枕葉 / occipital lobe",
+    "枕葉 / lobus occipitalis",
+    "枕葉 / occipital"
+   ],
+   "explain": [
+    "**枕葉（occipital lobe）**",
+    "- 最後方的腦葉；初級視覺皮質（BA17）所在。",
+    "- 記法：視覺中樞",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "枕葉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 88,
+     "y": 50,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 45,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "中央前回 / precentral gyrus",
+   "accept": [
+    "中央前回 / precentral gyrus",
+    "中央前回 / gyrus praecentralis",
+    "中央前回 / precentral"
+   ],
+   "explain": [
+    "**中央前回（precentral gyrus）**",
+    "- 中央溝前面的腦回，初級運動皮質（BA4）。",
+    "- 記法：前＝動",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "中央前回"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 38,
+     "y": 52,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 46,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "中央後回 / postcentral gyrus",
+   "accept": [
+    "中央後回 / postcentral gyrus",
+    "中央後回 / gyrus postcentralis",
+    "中央後回 / postcentral"
+   ],
+   "explain": [
+    "**中央後回（postcentral gyrus）**",
+    "- 中央溝後面的腦回，初級體感覺皮質（BA3、1、2）。",
+    "- 記法：後＝感覺",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "中央後回"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 48,
+     "y": 56,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 47,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "頂枕溝 / parieto-occipital sulcus",
+   "accept": [
+    "頂枕溝 / parieto-occipital sulcus",
+    "頂枕溝 / sulcus parietooccipitalis",
+    "頂枕溝 / parietooccipital sulcus",
+    "頂枕溝 / parieto-occipital fissure",
+    "頂枕裂 / parieto-occipital sulcus",
+    "頂枕裂 / sulcus parietooccipitalis",
+    "頂枕裂 / parietooccipital sulcus",
+    "頂枕裂 / parieto-occipital fissure"
+   ],
+   "explain": [
+    "**頂枕溝（parieto-occipital sulcus）**",
+    "- 主要在內側面，分隔頂葉與枕葉；在外側面只是上緣的一個小缺口。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "頂枕溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 86,
+     "y": 24,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 48,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "枕前切跡 / preoccipital notch",
+   "accept": [
+    "枕前切跡 / preoccipital notch",
+    "枕前切跡 / incisura praeoccipitalis",
+    "枕前切跡 / preoccipital incisure",
+    "枕前切痕 / preoccipital notch",
+    "枕前切痕 / incisura praeoccipitalis",
+    "枕前切痕 / preoccipital incisure"
+   ],
+   "explain": [
+    "**枕前切跡（preoccipital notch）**",
+    "- 枕葉前下緣的小凹，與頂枕溝的連線是枕葉與頂、顳葉的人為分界。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "枕前切跡"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 83,
+     "y": 74,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 49,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "枕極 / occipital pole",
+   "accept": [
+    "枕極 / occipital pole",
+    "枕極 / polus occipitalis"
+   ],
+   "explain": [
+    "**枕極（occipital pole）**",
+    "- 枕葉最後端；黃斑區的視覺皮質代表區延伸到這裡。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "枕極"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 97,
+     "y": 55,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 50,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "顳極 / temporal pole",
+   "accept": [
+    "顳極 / temporal pole",
+    "顳極 / polus temporalis"
+   ],
+   "explain": [
+    "**顳極（temporal pole）**",
+    "- 顳葉最前端。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "顳極"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 27,
+     "y": 81,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 51,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "額極 / frontal pole",
+   "accept": [
+    "額極 / frontal pole",
+    "額極 / polus frontalis"
+   ],
+   "explain": [
+    "**額極（frontal pole）**",
+    "- 額葉最前端。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦外側面（真實腦標本，左半球）：腦葉、中央溝、外側溝",
+    "額極"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_lat.jpg"
+   ],
+   "marks": [
+    {
+     "x": 4,
+     "y": 47,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 52,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "距狀溝 / calcarine sulcus",
+   "accept": [
+    "距狀溝 / calcarine sulcus",
+    "距狀溝 / sulcus calcarinus",
+    "距狀溝 / calcarine fissure",
+    "距狀裂 / calcarine sulcus",
+    "距狀裂 / sulcus calcarinus",
+    "距狀裂 / calcarine fissure"
+   ],
+   "explain": [
+    "**距狀溝（calcarine sulcus）**",
+    "- 枕葉內側面的水平深溝；初級視覺皮質（BA17／紋狀皮質）沿著它的上下兩側分布。",
+    "- 記法：V1 在距狀溝兩側",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "距狀溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 9,
+     "y": 42,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 53,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "頂枕溝 / parieto-occipital sulcus",
+   "accept": [
+    "頂枕溝 / parieto-occipital sulcus",
+    "頂枕溝 / sulcus parietooccipitalis",
+    "頂枕溝 / parietooccipital sulcus",
+    "頂枕裂 / parieto-occipital sulcus",
+    "頂枕裂 / sulcus parietooccipitalis",
+    "頂枕裂 / parietooccipital sulcus"
+   ],
+   "explain": [
+    "**頂枕溝（parieto-occipital sulcus）**",
+    "- 內側面分隔楔前葉（頂葉）與楔葉（枕葉）的斜溝，與距狀溝在前方會合成 Y 形。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "頂枕溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 15,
+     "y": 29,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 54,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "楔葉 / cuneus",
+   "accept": [
+    "楔葉 / cuneus",
+    "楔葉 / cuneus gyrus"
+   ],
+   "explain": [
+    "**楔葉（cuneus）**",
+    "- 位於頂枕溝與距狀溝之間的三角區，在距狀溝上方；接收對側下視野。",
+    "- 記法：楔葉＝下視野",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "楔葉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 9,
+     "y": 31,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 55,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "舌回 / lingual gyrus",
+   "accept": [
+    "舌回 / lingual gyrus",
+    "舌回 / gyrus occipitotemporalis medialis",
+    "舌回 / medial occipitotemporal gyrus",
+    "舌回 / lingual",
+    "內側枕顳回 / lingual gyrus",
+    "內側枕顳回 / gyrus occipitotemporalis medialis",
+    "內側枕顳回 / medial occipitotemporal gyrus",
+    "內側枕顳回 / lingual"
+   ],
+   "explain": [
+    "**舌回（lingual gyrus）**",
+    "- 距狀溝下方的腦回（內側枕顳回後部）；接收對側上視野。",
+    "- 記法：舌回＝上視野",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "舌回"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 11,
+     "y": 48,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 56,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "楔前葉 / precuneus",
+   "accept": [
+    "楔前葉 / precuneus",
+    "楔前葉 / precuneus gyrus"
+   ],
+   "explain": [
+    "**楔前葉（precuneus）**",
+    "- 頂葉內側面，在頂枕溝之前。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "楔前葉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 22,
+     "y": 24,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 57,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "旁中央小葉 / paracentral lobule",
+   "accept": [
+    "旁中央小葉 / paracentral lobule",
+    "旁中央小葉 / lobulus paracentralis"
+   ],
+   "explain": [
+    "**旁中央小葉（paracentral lobule）**",
+    "- 中央溝延伸到內側面的位置，管下肢運動與感覺。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "旁中央小葉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 49,
+     "y": 5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 58,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "扣帶回 / cingulate gyrus",
+   "accept": [
+    "扣帶回 / cingulate gyrus",
+    "扣帶回 / gyrus cinguli"
+   ],
+   "explain": [
+    "**扣帶回（cingulate gyrus）**",
+    "- 環繞胼胝體的腦回。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "扣帶回"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 38,
+     "y": 32,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 59,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "胼胝體壓部 / splenium of corpus callosum",
+   "accept": [
+    "胼胝體壓部 / splenium of corpus callosum",
+    "胼胝體壓部 / corpus callosum splenium",
+    "胼胝體壓部 / splenium"
+   ],
+   "explain": [
+    "**胼胝體壓部（splenium of corpus callosum）**",
+    "- 胼胝體最後方的膨大處。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "胼胝體壓部"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 33,
+     "y": 43,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 60,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "胼胝體膝部 / genu of corpus callosum",
+   "accept": [
+    "胼胝體膝部 / genu of corpus callosum",
+    "胼胝體膝部 / corpus callosum genu",
+    "胼胝體膝部 / genu"
+   ],
+   "explain": [
+    "**胼胝體膝部（genu of corpus callosum）**",
+    "- 胼胝體最前方彎曲處。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "胼胝體膝部"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 74,
+     "y": 43,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 61,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "海馬旁回 / parahippocampal gyrus",
+   "accept": [
+    "海馬旁回 / parahippocampal gyrus",
+    "海馬旁回 / gyrus parahippocampalis"
+   ],
+   "explain": [
+    "**海馬旁回（parahippocampal gyrus）**",
+    "- 顳葉內側面；前端彎成鉤。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "海馬旁回"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 47,
+     "y": 72,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 62,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "丘腦 / thalamus",
+   "accept": [
+    "丘腦 / thalamus",
+    "丘腦 / thalami"
+   ],
+   "explain": [
+    "**丘腦（thalamus）**",
+    "- 間腦大部，感覺的中繼站（含外側膝狀體）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "丘腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 48,
+     "y": 52,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 63,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "側腦室 / lateral ventricle",
+   "accept": [
+    "側腦室 / lateral ventricle",
+    "側腦室 / ventriculus lateralis"
+   ],
+   "explain": [
+    "**側腦室（lateral ventricle）**",
+    "- 胼胝體下方的腦室。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）；加標記點（原圖未標示的版本））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "大腦內側面（真實腦標本）：距狀溝、頂枕溝、楔葉與舌回",
+    "側腦室"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/beal_med.jpg"
+   ],
+   "marks": [
+    {
+     "x": 62,
+     "y": 43,
+     "label": "1"
+    }
+   ]
+  }
+ ]
+}

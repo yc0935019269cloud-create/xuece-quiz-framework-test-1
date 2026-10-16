@@ -1,0 +1,1279 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-manual-eye",
+  "subject": "eye_anat",
+  "name": "【手冊圖鑑・選讀】眼球構造與組織切片看圖",
+  "path": [
+   "眼解剖實驗",
+   "實驗手冊圖鑑",
+   "選讀（非期中範圍）",
+   "第 3、6、7 頁　眼球構造與組織切片"
+  ],
+  "order": 202,
+  "source": "《新實驗手冊-01.pdf》全 11 頁名詞；上課逐字稿（40 秒看圖跑台、顱孔與腦神經順序、LR₆SO₄ 等老師強調重點）；圖片來源見各圖說明（開放授權圖，已加標記點）。"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "角膜 / cornea",
+   "accept": [
+    "角膜 / cornea"
+   ],
+   "explain": [
+    "**角膜（cornea）**",
+    "- 眼球最前方透明的圓頂，負責約三分之二的屈光力；無血管。",
+    "（圖：Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球水平切面（示意圖，無文字標籤）",
+    "角膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_unl.jpg"
+   ],
+   "marks": [
+    {
+     "x": 55,
+     "y": 11,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "鞏膜 / sclera",
+   "accept": [
+    "鞏膜 / sclera"
+   ],
+   "explain": [
+    "**鞏膜（sclera）**",
+    "- 眼球壁最外層的白色纖維層，維持眼球形狀；與角膜銜接處是輪部。",
+    "- 記法：白、硬、最外",
+    "（圖：Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球水平切面（示意圖，無文字標籤）",
+    "鞏膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_unl.jpg"
+   ],
+   "marks": [
+    {
+     "x": 20.5,
+     "y": 48,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "脈絡膜 / choroid",
+   "accept": [
+    "脈絡膜 / choroid"
+   ],
+   "explain": [
+    "**脈絡膜（choroid）**",
+    "- 葡萄膜最後面的一段，血管與色素豐富，供應外層視網膜。（圖中的粉紅色層）",
+    "（圖：Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球水平切面（示意圖，無文字標籤）",
+    "脈絡膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_unl.jpg"
+   ],
+   "marks": [
+    {
+     "x": 23,
+     "y": 52,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視網膜 / retina",
+   "accept": [
+    "視網膜 / retina",
+    "視網膜 / neural layer",
+    "視網膜 / neurosensory retina",
+    "神經層 / retina",
+    "神經層 / neural layer",
+    "神經層 / neurosensory retina",
+    "神經視網膜 / retina",
+    "神經視網膜 / neural layer",
+    "神經視網膜 / neurosensory retina"
+   ],
+   "explain": [
+    "**視網膜（retina）**",
+    "- 最內層的神經層，把光轉成神經訊號。（圖中的黃色層）",
+    "（圖：Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球水平切面（示意圖，無文字標籤）",
+    "視網膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_unl.jpg"
+   ],
+   "marks": [
+    {
+     "x": 23.7,
+     "y": 56,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "虹膜 / iris",
+   "accept": [
+    "虹膜 / iris"
+   ],
+   "explain": [
+    "**虹膜（iris）**",
+    "- 位於角膜與水晶體之間的色素盤，中央是瞳孔；括約肌（副交感）縮瞳、擴張肌（交感）散瞳。",
+    "（圖：Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球水平切面（示意圖，無文字標籤）",
+    "虹膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_unl.jpg"
+   ],
+   "marks": [
+    {
+     "x": 47,
+     "y": 16,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "睫狀體 / ciliary body",
+   "accept": [
+    "睫狀體 / ciliary body"
+   ],
+   "explain": [
+    "**睫狀體（ciliary body）**",
+    "- 葡萄膜中間的一段（虹膜後方），含睫狀肌（調節）與睫狀突（分泌房水）。",
+    "（圖：Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球水平切面（示意圖，無文字標籤）",
+    "睫狀體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_unl.jpg"
+   ],
+   "marks": [
+    {
+     "x": 38.5,
+     "y": 19,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "水晶體 / crystalline lens",
+   "accept": [
+    "水晶體 / crystalline lens",
+    "水晶體 / lens"
+   ],
+   "explain": [
+    "**水晶體（crystalline lens）**",
+    "- 雙凸透明體，懸在虹膜後面，靠懸韌帶連在睫狀體；負責調節。",
+    "（圖：Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球水平切面（示意圖，無文字標籤）",
+    "水晶體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_unl.jpg"
+   ],
+   "marks": [
+    {
+     "x": 53,
+     "y": 21.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "玻璃體 / vitreous gel",
+   "accept": [
+    "玻璃體 / vitreous gel",
+    "玻璃體 / vitreous",
+    "玻璃體 / vitreous body"
+   ],
+   "explain": [
+    "**玻璃體（vitreous gel）**",
+    "- 占眼球約 4/5 體積的透明膠體，在水晶體與視網膜之間。",
+    "（圖：Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球水平切面（示意圖，無文字標籤）",
+    "玻璃體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_unl.jpg"
+   ],
+   "marks": [
+    {
+     "x": 60,
+     "y": 48,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視神經 / optic nerve",
+   "accept": [
+    "視神經 / optic nerve"
+   ],
+   "explain": [
+    "**視神經（optic nerve）**",
+    "- 視網膜神經節細胞的軸突集束，從眼球後極往後穿出。",
+    "（圖：Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球水平切面（示意圖，無文字標籤）",
+    "視神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_unl.jpg"
+   ],
+   "marks": [
+    {
+     "x": 28.5,
+     "y": 85,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視神經盤 / optic disc",
+   "accept": [
+    "視神經盤 / optic disc",
+    "視神經盤 / blind spot",
+    "視神經盤 / optic nerve head",
+    "盲點 / optic disc",
+    "盲點 / blind spot",
+    "盲點 / optic nerve head",
+    "視神經乳頭 / optic disc",
+    "視神經乳頭 / blind spot",
+    "視神經乳頭 / optic nerve head"
+   ],
+   "explain": [
+    "**視神經盤（optic disc）**",
+    "- 視神經離開眼球的位置，沒有感光細胞，所以是生理盲點。",
+    "（圖：Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球水平切面（示意圖，無文字標籤）",
+    "視神經盤"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_unl.jpg"
+   ],
+   "marks": [
+    {
+     "x": 37.5,
+     "y": 71.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "小窩（中央小凹） / fovea",
+   "accept": [
+    "小窩（中央小凹） / fovea",
+    "中央小凹 / fovea",
+    "小窩 / fovea",
+    "小窩 / fovea",
+    "中央小凹 / fovea"
+   ],
+   "explain": [
+    "**小窩（中央小凹）（fovea）**",
+    "- 黃斑部中央的凹陷，視力最敏銳；只有錐細胞、沒有血管。",
+    "（圖：Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球水平切面（示意圖，無文字標籤）",
+    "小窩（中央小凹）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_unl.jpg"
+   ],
+   "marks": [
+    {
+     "x": 54,
+     "y": 75.3,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "角膜 / cornea",
+   "accept": [
+    "角膜 / cornea"
+   ],
+   "explain": [
+    "**角膜（cornea）**",
+    "- 透明的圓頂，圖右側的灰白色厚殼。",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "角膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 63.6,
+     "y": 52.2,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "前房 / anterior chamber",
+   "accept": [
+    "前房 / anterior chamber"
+   ],
+   "explain": [
+    "**前房（anterior chamber）**",
+    "- 角膜與虹膜之間充滿房水的空間。",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "前房"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 58,
+     "y": 44,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "後房 / posterior chamber",
+   "accept": [
+    "後房 / posterior chamber"
+   ],
+   "explain": [
+    "**後房（posterior chamber）**",
+    "- 虹膜與水晶體／懸韌帶之間的窄縫；房水由睫狀突分泌後先進後房，再經瞳孔入前房。",
+    "- 記法：房水：睫狀突 → 後房 → 瞳孔 → 前房 → 小樑網",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "後房"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 36.4,
+     "y": 49,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "虹膜 / iris",
+   "accept": [
+    "虹膜 / iris"
+   ],
+   "explain": [
+    "**虹膜（iris）**",
+    "- 前房與後房之間的色素盤。",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "虹膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 44,
+     "y": 57.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "水晶體 / crystalline lens",
+   "accept": [
+    "水晶體 / crystalline lens",
+    "水晶體 / lens"
+   ],
+   "explain": [
+    "**水晶體（crystalline lens）**",
+    "- 圖左上方的大圓盤透鏡。",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "水晶體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 31,
+     "y": 22,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "睫狀體 / ciliary body",
+   "accept": [
+    "睫狀體 / ciliary body"
+   ],
+   "explain": [
+    "**睫狀體（ciliary body）**",
+    "- 虹膜根部後方的三角形組織，含睫狀突（指狀突起）與睫狀肌。",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "睫狀體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 29,
+     "y": 71.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "薛氏管 / canal of Schlemm",
+   "accept": [
+    "薛氏管 / canal of Schlemm",
+    "薛氏管 / Schlemm canal",
+    "薛氏管 / scleral venous sinus",
+    "鞏膜靜脈竇 / canal of Schlemm",
+    "鞏膜靜脈竇 / Schlemm canal",
+    "鞏膜靜脈竇 / scleral venous sinus"
+   ],
+   "explain": [
+    "**薛氏管（canal of Schlemm）**",
+    "- 隅角處的小環形靜脈管（圖中紫色小管），房水經小樑網流入此處；也稱鞏膜靜脈竇。",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "薛氏管"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 46.2,
+     "y": 75.3,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "皺褶部 / pars plicata",
+   "accept": [
+    "皺褶部 / pars plicata",
+    "皺褶部 / pars plicata"
+   ],
+   "explain": [
+    "**皺褶部（pars plicata）**",
+    "- 睫狀體前 1/3，表面有許多指狀的睫狀突（圖中睫狀體上方起伏處）。",
+    "- 記法：有突起＝皺褶部",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "皺褶部"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 30,
+     "y": 67,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "扁平部 / pars plana",
+   "accept": [
+    "扁平部 / pars plana",
+    "扁平部 / pars plana"
+   ],
+   "explain": [
+    "**扁平部（pars plana）**",
+    "- 睫狀體後 2/3，表面平坦、連到鋸齒緣；玻璃體手術的進入位置。",
+    "- 記法：平坦＝扁平部",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "扁平部"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 25,
+     "y": 82,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "小樑網 / trabecular meshwork",
+   "accept": [
+    "小樑網 / trabecular meshwork",
+    "小樑網 / trabecular meshwork",
+    "小樑網 / trabecular tissue",
+    "小梁網 / trabecular meshwork",
+    "小梁網 / trabecular meshwork",
+    "小梁網 / trabecular tissue"
+   ],
+   "explain": [
+    "**小樑網（trabecular meshwork）**",
+    "- 隅角處的網狀組織（薛氏管內側），房水由此流向薛氏管。",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "小樑網"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 44.2,
+     "y": 73.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "睫狀肌 / ciliary muscle",
+   "accept": [
+    "睫狀肌 / ciliary muscle"
+   ],
+   "explain": [
+    "**睫狀肌（ciliary muscle）**",
+    "- 睫狀體內的平滑肌（圖中暗紅色扇形纖維）；收縮 → 懸韌帶放鬆 → 水晶體變厚（調節）。副交感（III）支配。",
+    "- 記法：看近：收縮",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "睫狀肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 31,
+     "y": 86,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "鋸齒緣 / ora serrata",
+   "accept": [
+    "鋸齒緣 / ora serrata"
+   ],
+   "explain": [
+    "**鋸齒緣（ora serrata）**",
+    "- 視網膜與睫狀體交界的鋸齒狀邊緣；視網膜感光部分到此為止。",
+    "（圖：BruceBlaus. When using this image in external sources it can be cited as:\n\nBlausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "眼球前段切面：房水路徑、睫狀體與隅角",
+    "鋸齒緣"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/blausen_sect_mask.jpg"
+   ],
+   "marks": [
+    {
+     "x": 23.5,
+     "y": 76.8,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "瞼結膜 / palpebral conjunctiva",
+   "accept": [
+    "瞼結膜 / palpebral conjunctiva"
+   ],
+   "explain": [
+    "**瞼結膜（palpebral conjunctiva）**",
+    "- 襯在眼瞼內面的結膜（粉紅色帶），與球結膜在穹隆處相連。",
+    "（圖：Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "活體眼睛前面觀（眼瞼翻開）：結膜、輪部、虹膜",
+    "瞼結膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_ant_photo.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 43,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "球結膜 / bulbar conjunctiva",
+   "accept": [
+    "球結膜 / bulbar conjunctiva"
+   ],
+   "explain": [
+    "**球結膜（bulbar conjunctiva）**",
+    "- 覆蓋鞏膜前方的薄透明黏膜，有細小血管；充血時眼睛變紅。",
+    "（圖：Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "活體眼睛前面觀（眼瞼翻開）：結膜、輪部、虹膜",
+    "球結膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_ant_photo.jpg"
+   ],
+   "marks": [
+    {
+     "x": 28,
+     "y": 57,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "鞏膜 / sclera",
+   "accept": [
+    "鞏膜 / sclera"
+   ],
+   "explain": [
+    "**鞏膜（sclera）**",
+    "- 「眼白」；透過球結膜可看到白色的鞏膜。",
+    "（圖：Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "活體眼睛前面觀（眼瞼翻開）：結膜、輪部、虹膜",
+    "鞏膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_ant_photo.jpg"
+   ],
+   "marks": [
+    {
+     "x": 24,
+     "y": 64,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "角膜輪部 / limbus",
+   "accept": [
+    "角膜輪部 / limbus",
+    "輪部 / limbus"
+   ],
+   "explain": [
+    "**角膜輪部（limbus）**",
+    "- 角膜與鞏膜（球結膜）的交界，是角膜上皮幹細胞的所在。",
+    "（圖：Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "活體眼睛前面觀（眼瞼翻開）：結膜、輪部、虹膜",
+    "角膜輪部"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_ant_photo.jpg"
+   ],
+   "marks": [
+    {
+     "x": 39,
+     "y": 58,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "虹膜 / iris",
+   "accept": [
+    "虹膜 / iris"
+   ],
+   "explain": [
+    "**虹膜（iris）**",
+    "- 棕色的色素盤，有放射狀紋路。",
+    "（圖：Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "活體眼睛前面觀（眼瞼翻開）：結膜、輪部、虹膜",
+    "虹膜"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_ant_photo.jpg"
+   ],
+   "marks": [
+    {
+     "x": 42,
+     "y": 70,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "虹膜瞳孔區 / pupillary zone",
+   "accept": [
+    "虹膜瞳孔區 / pupillary zone"
+   ],
+   "explain": [
+    "**虹膜瞳孔區（pupillary zone）**",
+    "- 虹膜靠近瞳孔邊緣的內圈（瞳孔緣至蜷縮輪），括約肌在這一圈。",
+    "（圖：Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "活體眼睛前面觀（眼瞼翻開）：結膜、輪部、虹膜",
+    "虹膜瞳孔區"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_ant_photo.jpg"
+   ],
+   "marks": [
+    {
+     "x": 55,
+     "y": 69,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "眼瞼 / eyelid",
+   "accept": [
+    "眼瞼 / eyelid"
+   ],
+   "explain": [
+    "**眼瞼（eyelid）**",
+    "- 下眼瞼；上眼瞼的睫毛在圖上方。",
+    "（圖：Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）；加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "活體眼睛前面觀（眼瞼翻開）：結膜、輪部、虹膜",
+    "眼瞼"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/eye_ant_photo.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 86,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "角膜上皮 / corneal epithelium",
+   "accept": [
+    "角膜上皮 / corneal epithelium",
+    "角膜上皮 / epithelium",
+    "上皮 / corneal epithelium",
+    "上皮 / epithelium"
+   ],
+   "explain": [
+    "**角膜上皮（corneal epithelium）**",
+    "- 角膜最前面的非角質化複層鱗狀上皮（約 5～7 層，約 50 μm）。",
+    "（圖：Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）；已裁去圖例、塗去縮寫並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "角膜五層（組織示意圖，已塗去層名縮寫）",
+    "角膜上皮"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cornea_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 15,
+     "y": 9,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "表層細胞 / superficial cell",
+   "accept": [
+    "表層細胞 / superficial cell",
+    "表層細胞 / squamous cell",
+    "扁平細胞 / superficial cell",
+    "扁平細胞 / squamous cell"
+   ],
+   "explain": [
+    "**表層細胞（superficial cell）**",
+    "- 上皮最表面 2～3 層扁平鱗狀細胞，表面有微絨毛、微皺褶，幫助淚膜附著。",
+    "- 記法：上皮由外到內：表層 → 翼狀 → 基底",
+    "（圖：Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）；已裁去圖例、塗去縮寫並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "角膜五層（組織示意圖，已塗去層名縮寫）",
+    "表層細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cornea_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 2.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "翼狀細胞 / wing cell",
+   "accept": [
+    "翼狀細胞 / wing cell"
+   ],
+   "explain": [
+    "**翼狀細胞（wing cell）**",
+    "- 上皮中間 2～3 層，形狀像翅膀，細胞間靠橋粒連結。",
+    "（圖：Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）；已裁去圖例、塗去縮寫並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "角膜五層（組織示意圖，已塗去層名縮寫）",
+    "翼狀細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cornea_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 8.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "基底細胞 / basal cell",
+   "accept": [
+    "基底細胞 / basal cell"
+   ],
+   "explain": [
+    "**基底細胞（basal cell）**",
+    "- 上皮最深的一層柱狀細胞，會分裂補充；靠半橋粒釘在基底膜上；幹細胞在輪部。",
+    "（圖：Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）；已裁去圖例、塗去縮寫並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "角膜五層（組織示意圖，已塗去層名縮寫）",
+    "基底細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cornea_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 29,
+     "y": 14.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "前彈力層（鮑曼氏層） / Bowman’s layer",
+   "accept": [
+    "前彈力層（鮑曼氏層） / Bowman’s layer",
+    "前彈力層（鮑曼氏層） / Bowman layer",
+    "前彈力層（鮑曼氏層） / Bowman membrane",
+    "鮑曼氏層 / Bowman’s layer",
+    "鮑曼氏層 / Bowman layer",
+    "鮑曼氏層 / Bowman membrane",
+    "前彈力層 / Bowman’s layer",
+    "前彈力層 / Bowman layer",
+    "前彈力層 / Bowman membrane",
+    "鮑曼氏膜 / Bowman’s layer",
+    "鮑曼氏膜 / Bowman layer",
+    "鮑曼氏膜 / Bowman membrane",
+    "前彈力層 / Bowman’s layer",
+    "前彈力層 / Bowman layer",
+    "前彈力層 / Bowman membrane",
+    "鮑曼氏層 / Bowman’s layer",
+    "鮑曼氏層 / Bowman layer",
+    "鮑曼氏層 / Bowman membrane"
+   ],
+   "explain": [
+    "**前彈力層（鮑曼氏層）（Bowman’s layer）**",
+    "- 上皮基底膜下方無細胞的膠原緻密層，受傷不再生。",
+    "（圖：Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）；已裁去圖例、塗去縮寫並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "角膜五層（組織示意圖，已塗去層名縮寫）",
+    "前彈力層（鮑曼氏層）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cornea_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 19,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "角膜基質層 / corneal stroma",
+   "accept": [
+    "角膜基質層 / corneal stroma",
+    "角膜基質層 / stroma",
+    "基質層 / corneal stroma",
+    "基質層 / stroma",
+    "角膜基質 / corneal stroma",
+    "角膜基質 / stroma"
+   ],
+   "explain": [
+    "**角膜基質層（corneal stroma）**",
+    "- 占角膜厚度約 90%，I 型膠原板層規則排列（透明的關鍵），散布角質細胞。",
+    "（圖：Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）；已裁去圖例、塗去縮寫並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "角膜五層（組織示意圖，已塗去層名縮寫）",
+    "角膜基質層"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cornea_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 30,
+     "y": 44,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "角質細胞 / keratocyte",
+   "accept": [
+    "角質細胞 / keratocyte",
+    "角質細胞 / corneal keratocyte"
+   ],
+   "explain": [
+    "**角質細胞（keratocyte）**",
+    "- 基質裡的藍色梭形細胞，負責維持膠原；約占基質體積 2～3%。",
+    "（圖：Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）；已裁去圖例、塗去縮寫並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "角膜五層（組織示意圖，已塗去層名縮寫）",
+    "角質細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cornea_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 63,
+     "y": 29,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 38,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "後彈力層（德士密氏膜） / Descemet’s membrane",
+   "accept": [
+    "後彈力層（德士密氏膜） / Descemet’s membrane",
+    "後彈力層（德士密氏膜） / Descemet membrane",
+    "德士密氏膜 / Descemet’s membrane",
+    "德士密氏膜 / Descemet membrane",
+    "後彈力層 / Descemet’s membrane",
+    "後彈力層 / Descemet membrane",
+    "德式密氏膜 / Descemet’s membrane",
+    "德式密氏膜 / Descemet membrane",
+    "後彈力層 / Descemet’s membrane",
+    "後彈力層 / Descemet membrane",
+    "德士密氏膜 / Descemet’s membrane",
+    "德士密氏膜 / Descemet membrane"
+   ],
+   "explain": [
+    "**後彈力層（德士密氏膜）（Descemet’s membrane）**",
+    "- 內皮的基底膜，無細胞，隨年齡增厚。",
+    "（圖：Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）；已裁去圖例、塗去縮寫並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "角膜五層（組織示意圖，已塗去層名縮寫）",
+    "後彈力層（德士密氏膜）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cornea_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 92.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "角膜內皮 / corneal endothelium",
+   "accept": [
+    "角膜內皮 / corneal endothelium",
+    "角膜內皮 / endothelium",
+    "角膜內皮 / endothelial layer",
+    "內皮 / corneal endothelium",
+    "內皮 / endothelium",
+    "內皮 / endothelial layer",
+    "內皮細胞 / corneal endothelium",
+    "內皮細胞 / endothelium",
+    "內皮細胞 / endothelial layer"
+   ],
+   "explain": [
+    "**角膜內皮（corneal endothelium）**",
+    "- 後面單層六角形細胞，幫浦把水抽出基質；不能再生。",
+    "（圖：Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）；已裁去圖例、塗去縮寫並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "角膜五層（組織示意圖，已塗去層名縮寫）",
+    "角膜內皮"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/cornea_diag_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 97,
+     "label": "1"
+    }
+   ]
+  }
+ ]
+}

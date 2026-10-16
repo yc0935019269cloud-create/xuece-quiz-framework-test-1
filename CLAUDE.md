@@ -265,3 +265,12 @@
 - 生成腳本在 `E:\NEWTEST\y1_work\`（不在 repo）：`gen_banks.py`（題本）、`u1.py～u3.py`＋`notes.py`／`notes2.py`＋`build_units.py`（新單元）、`rev_s114.py`＋`apply_rev.py`（第04～09單元複習課，append 到 p2）、`rev_optom2.py`（視光學二）。內容正本是 `content/`，之後直接改 JSON；重跑腳本會覆寫同名課。
 - 檢查：`tools/s114-qa/check.cjs`（101 項：新單元與複習課資料、題本路徑、抽題池、渲染、知識筆記相關題視窗、390px）、`sweep.cjs`（新單元與各複習課共 312 步逐步渲染）、`shots.cjs`（截圖到 `output/playwright/s114-*.png`）；`tools/optom2-qa/check.cjs` 35／35 仍通過。先設 `$env:NODE_PATH='E:\NEWTEST\skull-atlas-3d\node_modules'`。嚴格建置 exit 0。
 - 限制：沒有醫學審稿，也沒有實機 iPad 或 file:// 以外環境的測試；程式碼區塊（```）在 390px 手機寬度會橫向捲動（沿用原有樣式）；數值（頂點距離換算、Hofstetter、近用 PD 估算的 27 mm 等）屬常用參考值，以老師講義／題目指定為準。
+
+## 眼解剖國考題、血液供應與實驗手冊圖鑑（2026-10-16，v97）
+
+- 眼解剖（115 大二上）：國考題 `content/bank/eye_ans/exam115/`（81 本）、`content/bank/eye_anat/exam/`（16 本，id `eye115-exam-<單元>-<年>-<題型*100+題號>`）；新單元 `content/learn/eye_ans/blood/`（眼球血液供應 3 單元）；8 個既有單元新增「國考重點複習」課與卡片 `exam` 欄，隨堂考題本 `eye-quiz-blood-supply`。學習內容原則同前：題目不降級，教材追上題目。
+- **實驗手冊圖鑑**：`content/learn/eye_anat/manual-*.json`（7 單元）＋`content/bank/eye_anat/manual/`（7 題本、319 題看圖填寫，題幹只顯示紅圈編號）＋圖檔 `img/eye-anat-manual/`。**使用者明確要求：不要用自繪示意圖，要真實圖片**（考試用真實標本／切片圖）。現用圖：Beal 博士（LSU）人腦標本照片（外側面、內側面、腦底血管）、Sobotta 腦幹 Weigert 染色切片（已塗去文字標籤）、真實顱骨照片（Crane4、中顱窩近拍）、Gray／Sobotta 解剖圖、眼底與視網膜組織照片等；來源與授權在每個圖解步驟的「圖片來源」。仍有幾張是專業插畫（Servier、OpenStax、Gray 示意），若使用者要求再換。
+- **期中範圍**（使用者 2026-10-16 說明）＝手冊第 1 頁骨質眼窩、第 4 頁血管系統、第 5 頁視覺路徑、第 8 頁腦幹與神經。路徑分兩層：`眼解剖實驗 → 實驗手冊圖鑑 → ★ 期中範圍…`（4 單元）與 `…→ 選讀（非期中範圍）`（眼瞼眼外肌淚器、眼球組織切片、顱神經與腦室）。期中範圍名詞已全部有圖（滑車下動脈、睫狀前靜脈在 Gray 動脈圖上只標伴行方向的大致位置、探索用）；選讀仍缺：晶體切面（晶體課已移除）、葡萄膜肌肉、瞼韌帶等。使用者說專業插畫或模型圖也可以。圖與名詞對照：`docs/實驗手冊圖鑑對照.md`。
+- `js/learn.js` 的 `renderDiagram`：標記點太近時縮小圓點並把重疊的點最多推開 14px（只改畫面，不改資料）；CSS 變數 `--pin`。
+- 圖片與標記點產生流程在專案外 `E:\NEWTEST\eye_work\`（`figs_m*.py` 定義圖與標記點、`mask2.py` 塗標籤、`build_manual.py` 產生題本與單元、`overlay.py` 疊圖檢查）；內容正本是 `content/`，重跑 build_manual 會覆寫 manual-* 檔。
+- QA：`tools/eye115-qa/`（血液供應與複習課渲染）、`tools/manual-qa/check.cjs`（7 單元 265 步渲染、41 張圖解、319 題資料與圖檔、桌機與 390px，結果 0 問題）、`shots.cjs`（截圖到 output/playwright/manual-*.png）。需 `NODE_PATH=E:\NEWTEST\skull-atlas-3d\node_modules`。**沒有醫學審稿，標記點為依標本與原圖標籤人工定位（標本照片上細小構造如前脈絡叢動脈、E-W 核只標大致方向並設為不出題）；未做實機 iPad 測試。**

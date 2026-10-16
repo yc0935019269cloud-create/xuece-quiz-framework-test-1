@@ -1,0 +1,2509 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-manual-brain",
+  "subject": "eye_anat",
+  "name": "【手冊圖鑑・期中】腦幹與神經看圖",
+  "path": [
+   "眼解剖實驗",
+   "實驗手冊圖鑑",
+   "★ 期中範圍：骨質眼窩・血管系統・視覺路徑・腦幹與神經",
+   "第 8 頁　腦幹與神經"
+  ],
+  "order": 104,
+  "source": "《新實驗手冊-01.pdf》全 11 頁名詞；上課逐字稿（40 秒看圖跑台、顱孔與腦神經順序、LR₆SO₄ 等老師強調重點）；圖片來源見各圖說明（開放授權圖，已加標記點）。"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視神經 / optic nerve",
+   "accept": [
+    "視神經 / optic nerve"
+   ],
+   "explain": [
+    "**視神經（optic nerve）**",
+    "- CN II，進入視交叉前的粗柱。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "視神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 5.6,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視交叉 / optic chiasm",
+   "accept": [
+    "視交叉 / optic chiasm",
+    "視交叉 / chiasma opticum"
+   ],
+   "explain": [
+    "**視交叉（optic chiasm）**",
+    "- 兩條視神經交會成 X 形的位置，在腦下垂體上方。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "視交叉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 61.8,
+     "y": 8.9,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "視徑 / optic tract",
+   "accept": [
+    "視徑 / optic tract",
+    "視徑 / optic tract"
+   ],
+   "explain": [
+    "**視徑（optic tract）**",
+    "- 視交叉之後往後外側走向外側膝狀體。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "視徑"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 75.2,
+     "y": 13.1,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "漏斗（垂體柄） / infundibulum",
+   "accept": [
+    "漏斗（垂體柄） / infundibulum",
+    "漏斗（垂體柄） / pituitary stalk",
+    "漏斗（垂體柄） / infundibulum of hypophysis",
+    "垂體柄 / infundibulum",
+    "垂體柄 / pituitary stalk",
+    "垂體柄 / infundibulum of hypophysis",
+    "腦下垂體柄 / infundibulum",
+    "腦下垂體柄 / pituitary stalk",
+    "腦下垂體柄 / infundibulum of hypophysis",
+    "漏斗 / infundibulum",
+    "漏斗 / pituitary stalk",
+    "漏斗 / infundibulum of hypophysis",
+    "垂體柄 / infundibulum",
+    "垂體柄 / pituitary stalk",
+    "垂體柄 / infundibulum of hypophysis"
+   ],
+   "explain": [
+    "**漏斗（垂體柄）（infundibulum）**",
+    "- 連接下視丘與腦下垂體的柄；視交叉的正後方。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "漏斗（垂體柄）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 62.2,
+     "y": 13.1,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "乳頭體 / mammillary body",
+   "accept": [
+    "乳頭體 / mammillary body",
+    "乳頭體 / mammillary bodies",
+    "乳頭體 / corpora mamillaria",
+    "乳頭體 / mammillary body",
+    "乳頭體 / mammillary bodies",
+    "乳頭體 / corpora mamillaria"
+   ],
+   "explain": [
+    "**乳頭體（mammillary body）**",
+    "- 下視丘後方一對圓形隆起。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "乳頭體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 58.6,
+     "y": 18.2,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "腳間窩 / interpeduncular fossa",
+   "accept": [
+    "腳間窩 / interpeduncular fossa",
+    "腳間窩 / fossa interpeduncularis"
+   ],
+   "explain": [
+    "**腳間窩（interpeduncular fossa）**",
+    "- 兩側大腦腳之間的凹陷，動眼神經（CN III）從這裡出來。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "腳間窩"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 57.2,
+     "y": 22.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋腦 / pons",
+   "accept": [
+    "橋腦 / pons"
+   ],
+   "explain": [
+    "**橋腦（pons）**",
+    "- 腦幹中段，腹面有粗大橫向纖維形成的隆起。",
+    "- 記法：橋腦：V、VI、VII、VIII",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "橋腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 42.1,
+     "y": 36.1,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "基底溝 / basilar sulcus",
+   "accept": [
+    "基底溝 / basilar sulcus",
+    "基底溝 / sulcus basilaris",
+    "基底溝 / basilar groove"
+   ],
+   "explain": [
+    "**基底溝（basilar sulcus）**",
+    "- 橋腦腹面正中的淺溝，基底動脈走在裡面。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "基底溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50.2,
+     "y": 44.2,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋延溝（下橋腦溝） / inferior pontine sulcus",
+   "accept": [
+    "橋延溝（下橋腦溝） / inferior pontine sulcus",
+    "橋延溝（下橋腦溝） / pontomedullary sulcus",
+    "橋延溝（下橋腦溝） / sulcus pontinus inferior",
+    "橋延溝 / inferior pontine sulcus",
+    "橋延溝 / pontomedullary sulcus",
+    "橋延溝 / sulcus pontinus inferior",
+    "下橋腦溝 / inferior pontine sulcus",
+    "下橋腦溝 / pontomedullary sulcus",
+    "下橋腦溝 / sulcus pontinus inferior",
+    "橋延溝 / inferior pontine sulcus",
+    "橋延溝 / pontomedullary sulcus",
+    "橋延溝 / sulcus pontinus inferior",
+    "下橋腦溝 / inferior pontine sulcus",
+    "下橋腦溝 / pontomedullary sulcus",
+    "下橋腦溝 / sulcus pontinus inferior"
+   ],
+   "explain": [
+    "**橋延溝（下橋腦溝）（inferior pontine sulcus）**",
+    "- 橋腦與延腦的交界溝；CN VI、VII、VIII 在這裡出腦幹。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "橋延溝（下橋腦溝）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 40.2,
+     "y": 57,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "錐體 / pyramid",
+   "accept": [
+    "錐體 / pyramid",
+    "錐體 / medullary pyramid",
+    "錐體 / pyramis medullae oblongatae"
+   ],
+   "explain": [
+    "**錐體（pyramid）**",
+    "- 延腦腹面正中兩側的縱向隆起（皮質脊髓徑）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "錐體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 42.1,
+     "y": 65.1,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "前正中裂 / anterior median fissure",
+   "accept": [
+    "前正中裂 / anterior median fissure",
+    "前正中裂 / fissura mediana anterior",
+    "前正中裂 / anterior medial fissure"
+   ],
+   "explain": [
+    "**前正中裂（anterior median fissure）**",
+    "- 兩個錐體之間的深溝。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "前正中裂"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 49,
+     "y": 69.8,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "前外側溝 / anterolateral sulcus",
+   "accept": [
+    "前外側溝 / anterolateral sulcus",
+    "前外側溝 / preolivary sulcus",
+    "前外側溝 / sulcus anterolateralis",
+    "橄欖前溝 / anterolateral sulcus",
+    "橄欖前溝 / preolivary sulcus",
+    "橄欖前溝 / sulcus anterolateralis"
+   ],
+   "explain": [
+    "**前外側溝（anterolateral sulcus）**",
+    "- 錐體與橄欖之間（又稱橄欖前溝），舌下神經（CN XII）根絲由此出來。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "前外側溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 60.5,
+     "y": 68.4,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橄欖 / olive",
+   "accept": [
+    "橄欖 / olive",
+    "橄欖 / oliva",
+    "橄欖 / inferior olive"
+   ],
+   "explain": [
+    "**橄欖（olive）**",
+    "- 延腦外側的橢圓隆起（內有下橄欖核）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "橄欖"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 63.2,
+     "y": 65.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橄欖後溝 / retro-olivary sulcus",
+   "accept": [
+    "橄欖後溝 / retro-olivary sulcus",
+    "橄欖後溝 / postolivary sulcus",
+    "橄欖後溝 / sulcus retroolivaris",
+    "後橄欖溝 / retro-olivary sulcus",
+    "後橄欖溝 / postolivary sulcus",
+    "後橄欖溝 / sulcus retroolivaris"
+   ],
+   "explain": [
+    "**橄欖後溝（retro-olivary sulcus）**",
+    "- 橄欖後方，舌咽（IX）、迷走（X）神經根絲由此出來。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "橄欖後溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 67.2,
+     "y": 62.7,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "第四腦室脈絡叢 / choroid plexus of fourth ventricle",
+   "accept": [
+    "第四腦室脈絡叢 / choroid plexus of fourth ventricle",
+    "第四腦室脈絡叢 / plexus choroideus ventriculi quarti",
+    "第四腦室脈絡叢 / choroid plexus",
+    "脈絡叢 / choroid plexus of fourth ventricle",
+    "脈絡叢 / plexus choroideus ventriculi quarti",
+    "脈絡叢 / choroid plexus"
+   ],
+   "explain": [
+    "**第四腦室脈絡叢（choroid plexus of fourth ventricle）**",
+    "- 從第四腦室外側孔（Luschka）伸出的脈絡叢小簇。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "第四腦室脈絡叢"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 75.9,
+     "y": 59.1,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "錐體交叉 / decussation of pyramids",
+   "accept": [
+    "錐體交叉 / decussation of pyramids",
+    "錐體交叉 / pyramidal decussation",
+    "錐體交叉 / decussatio pyramidum"
+   ],
+   "explain": [
+    "**錐體交叉（decussation of pyramids）**",
+    "- 延腦與脊髓交界處，皮質脊髓徑 80～90% 交叉到對側。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "錐體交叉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 47.8,
+     "y": 86,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "三叉神經 / trigeminal nerve",
+   "accept": [
+    "三叉神經 / trigeminal nerve",
+    "三叉神經 / CN V",
+    "三叉神經 / trigeminal",
+    "三叉神經（CN V） / trigeminal nerve",
+    "三叉神經（CN V） / CN V",
+    "三叉神經（CN V） / trigeminal"
+   ],
+   "explain": [
+    "**三叉神經（trigeminal nerve）**",
+    "- 橋腦側面粗大的神經根（CN V，圖右側的粗根）；感覺根較大、運動根較小。",
+    "- 記法：橋腦側面最粗的一根",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "三叉神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 83,
+     "y": 44,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "顏面神經 / facial nerve",
+   "accept": [
+    "顏面神經 / facial nerve",
+    "顏面神經 / CN VII",
+    "顏面神經 / facial",
+    "顏面神經（CN VII） / facial nerve",
+    "顏面神經（CN VII） / CN VII",
+    "顏面神經（CN VII） / facial"
+   ],
+   "explain": [
+    "**顏面神經（facial nerve）**",
+    "- 橋延溝外側前面的神經（CN VII），旁邊較後面的是前庭耳蝸神經。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "顏面神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 76.5,
+     "y": 51.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "前庭耳蝸神經 / vestibulocochlear nerve",
+   "accept": [
+    "前庭耳蝸神經 / vestibulocochlear nerve",
+    "前庭耳蝸神經 / CN VIII",
+    "前庭耳蝸神經 / vestibulocochlear",
+    "前庭耳蝸神經（CN VIII） / vestibulocochlear nerve",
+    "前庭耳蝸神經（CN VIII） / CN VIII",
+    "前庭耳蝸神經（CN VIII） / vestibulocochlear",
+    "聽神經 / vestibulocochlear nerve",
+    "聽神經 / CN VIII",
+    "聽神經 / vestibulocochlear"
+   ],
+   "explain": [
+    "**前庭耳蝸神經（vestibulocochlear nerve）**",
+    "- 橋延溝外側、在顏面神經後方（CN VIII）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "前庭耳蝸神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 80,
+     "y": 54.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "前穿質 / anterior perforated substance",
+   "accept": [
+    "前穿質 / anterior perforated substance",
+    "前穿質 / substantia perforata anterior"
+   ],
+   "explain": [
+    "**前穿質（anterior perforated substance）**",
+    "- 視徑外側、嗅徑後方多孔的區域（豆紋動脈穿入處）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "前穿質"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 85.2,
+     "y": 11.7,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "嗅徑 / olfactory tract",
+   "accept": [
+    "嗅徑 / olfactory tract",
+    "嗅徑 / tractus olfactorius"
+   ],
+   "explain": [
+    "**嗅徑（olfactory tract）**",
+    "- 額葉底面往後走向前穿質的細長條（CN I 的中樞部分）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹標本（下面觀）：視神經、視交叉到延腦",
+    "嗅徑"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_ant.jpg"
+   ],
+   "marks": [
+    {
+     "x": 86.2,
+     "y": 3.1,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "丘腦 / thalamus",
+   "accept": [
+    "丘腦 / thalamus",
+    "丘腦 / thalami",
+    "丘腦 / pulvinar thalami",
+    "丘腦 / Pulvinar",
+    "丘腦枕 / thalamus",
+    "丘腦枕 / thalami",
+    "丘腦枕 / pulvinar thalami",
+    "丘腦枕 / Pulvinar"
+   ],
+   "explain": [
+    "**丘腦（thalamus）**",
+    "- 間腦的大部分；圖上是丘腦枕（後方大隆起）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "丘腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 68.3,
+     "y": 15.3,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "第三腦室 / third ventricle",
+   "accept": [
+    "第三腦室 / third ventricle",
+    "第三腦室 / ventriculus tertius"
+   ],
+   "explain": [
+    "**第三腦室（third ventricle）**",
+    "- 兩側丘腦之間的窄縫（圖中暗紅色開口）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "第三腦室"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 48.7,
+     "y": 17.3,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "松果體柄 / stalk of pineal gland",
+   "accept": [
+    "松果體柄 / stalk of pineal gland",
+    "松果體柄 / pineal stalk",
+    "松果體柄 / pineal gland"
+   ],
+   "explain": [
+    "**松果體柄（stalk of pineal gland）**",
+    "- 連到松果體的細柄（松果體已被拿掉）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "松果體柄"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 47.1,
+     "y": 24.1,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上丘 / superior colliculus",
+   "accept": [
+    "上丘 / superior colliculus",
+    "上丘 / superior colliculi",
+    "上丘 / colliculus superior"
+   ],
+   "explain": [
+    "**上丘（superior colliculus）**",
+    "- 頂蓋前面一對隆起，管視覺反射與眼球快速運動；與動眼神經（III）鄰近。",
+    "- 記法：上丘＝視覺",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "上丘"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 58.6,
+     "y": 30,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "下丘 / inferior colliculus",
+   "accept": [
+    "下丘 / inferior colliculus",
+    "下丘 / inferior colliculi",
+    "下丘 / colliculus inferior"
+   ],
+   "explain": [
+    "**下丘（inferior colliculus）**",
+    "- 頂蓋後面一對隆起，管聽覺傳導。",
+    "- 記法：下丘＝聽覺",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "下丘"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 59.8,
+     "y": 37.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上丘臂 / brachium of superior colliculus",
+   "accept": [
+    "上丘臂 / brachium of superior colliculus",
+    "上丘臂 / brachium colliculi superioris"
+   ],
+   "explain": [
+    "**上丘臂（brachium of superior colliculus）**",
+    "- 連到外側膝狀體的纖維帶。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "上丘臂"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 63.2,
+     "y": 26.3,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "下丘臂 / brachium of inferior colliculus",
+   "accept": [
+    "下丘臂 / brachium of inferior colliculus",
+    "下丘臂 / brachium colliculi inferioris"
+   ],
+   "explain": [
+    "**下丘臂（brachium of inferior colliculus）**",
+    "- 連到內側膝狀體的纖維帶。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "下丘臂"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 67.5,
+     "y": 32.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "內側膝狀體 / medial geniculate body",
+   "accept": [
+    "內側膝狀體 / medial geniculate body",
+    "內側膝狀體 / corpus geniculatum mediale",
+    "內側膝狀體 / medial geniculate nucleus"
+   ],
+   "explain": [
+    "**內側膝狀體（medial geniculate body）**",
+    "- 聽覺的丘腦中繼站。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "內側膝狀體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 72.8,
+     "y": 26,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上小腦腳 / superior cerebellar peduncle",
+   "accept": [
+    "上小腦腳 / superior cerebellar peduncle",
+    "上小腦腳 / pedunculus cerebellaris superior"
+   ],
+   "explain": [
+    "**上小腦腳（superior cerebellar peduncle）**",
+    "- 連接中腦與小腦（主要是傳出）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "上小腦腳"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 62.5,
+     "y": 58.3,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "下小腦腳 / inferior cerebellar peduncle",
+   "accept": [
+    "下小腦腳 / inferior cerebellar peduncle",
+    "下小腦腳 / pedunculus cerebellaris inferior",
+    "下小腦腳 / restiform body"
+   ],
+   "explain": [
+    "**下小腦腳（inferior cerebellar peduncle）**",
+    "- 連接延腦與小腦。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "下小腦腳"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 72.1,
+     "y": 63.9,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "中小腦腳 / middle cerebellar peduncle",
+   "accept": [
+    "中小腦腳 / middle cerebellar peduncle",
+    "中小腦腳 / pedunculus cerebellaris medius",
+    "中小腦腳 / brachium pontis"
+   ],
+   "explain": [
+    "**中小腦腳（middle cerebellar peduncle）**",
+    "- 連接橋腦與小腦，是三條裡最粗的。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "中小腦腳"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 84,
+     "y": 60,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "正中溝 / median sulcus",
+   "accept": [
+    "正中溝 / median sulcus",
+    "正中溝 / sulcus medianus",
+    "正中溝 / median sulcus of fourth ventricle"
+   ],
+   "explain": [
+    "**正中溝（median sulcus）**",
+    "- 第四腦室底（菱形窩）正中的溝。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "正中溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 51.8,
+     "y": 59.2,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "中腦 / midbrain",
+   "accept": [
+    "中腦 / midbrain",
+    "中腦 / mesencephalon"
+   ],
+   "explain": [
+    "**中腦（midbrain）**",
+    "- 腦幹最上段（標本中兩條藍線的上段）；背面有上丘、下丘（頂蓋）。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "中腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 40,
+     "y": 35,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋腦 / pons",
+   "accept": [
+    "橋腦 / pons"
+   ],
+   "explain": [
+    "**橋腦（pons）**",
+    "- 腦幹中段（兩條藍線之間）；背面是第四腦室的上半部，兩側連接中小腦腳。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "橋腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 37,
+     "y": 60,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "延腦 / medulla",
+   "accept": [
+    "延腦 / medulla",
+    "延腦 / medulla oblongata"
+   ],
+   "explain": [
+    "**延腦（medulla）**",
+    "- 腦幹最下段（下方藍線以下），向下接脊髓。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "延腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 50,
+     "y": 88,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "頂蓋 / tectum",
+   "accept": [
+    "頂蓋 / tectum",
+    "頂蓋 / quadrigeminal plate",
+    "頂蓋 / tectum of midbrain"
+   ],
+   "explain": [
+    "**頂蓋（tectum）**",
+    "- 中腦背面，由上丘＋下丘（四疊體）組成。",
+    "（圖：John A Beal, PhD \n\nDep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點（編號對照原作者說明））"
+   ],
+   "tags": [
+    "看圖辨識",
+    "人腦幹與丘腦標本（後面觀）：丘、頂蓋、小腦腳",
+    "頂蓋"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/bs_post.jpg"
+   ],
+   "marks": [
+    {
+     "x": 59,
+     "y": 33.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 38,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上丘（核） / superior colliculus",
+   "accept": [
+    "上丘（核） / superior colliculus",
+    "上丘（核） / nucleus of superior colliculus",
+    "上丘（核） / superior colliculi",
+    "上丘 / superior colliculus",
+    "上丘 / nucleus of superior colliculus",
+    "上丘 / superior colliculi",
+    "上丘核 / superior colliculus",
+    "上丘核 / nucleus of superior colliculus",
+    "上丘核 / superior colliculi",
+    "上丘 / superior colliculus",
+    "上丘 / nucleus of superior colliculus",
+    "上丘 / superior colliculi",
+    "核 / superior colliculus",
+    "核 / nucleus of superior colliculus",
+    "核 / superior colliculi"
+   ],
+   "explain": [
+    "**上丘（核）（superior colliculus）**",
+    "- 中腦頂蓋背側的隆起；與視反射（轉頭看向光源）有關。",
+    "- 記法：上丘＝視覺；下丘＝聽覺",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（上丘水平，Weigert 髓鞘染色切片）：動眼神經核與動眼神經根",
+    "上丘（核）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo651_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 46,
+     "y": 13,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "中腦導水管 / cerebral aqueduct",
+   "accept": [
+    "中腦導水管 / cerebral aqueduct",
+    "中腦導水管 / aqueduct of cerebrum",
+    "中腦導水管 / aqueduct of Sylvius",
+    "中腦導水管 / mesencephalic aqueduct",
+    "大腦導水管 / cerebral aqueduct",
+    "大腦導水管 / aqueduct of cerebrum",
+    "大腦導水管 / aqueduct of Sylvius",
+    "大腦導水管 / mesencephalic aqueduct",
+    "導水管 / cerebral aqueduct",
+    "導水管 / aqueduct of cerebrum",
+    "導水管 / aqueduct of Sylvius",
+    "導水管 / mesencephalic aqueduct"
+   ],
+   "explain": [
+    "**中腦導水管（cerebral aqueduct）**",
+    "- 中線的小腔，連接第三與第四腦室。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（上丘水平，Weigert 髓鞘染色切片）：動眼神經核與動眼神經根",
+    "中腦導水管"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo651_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 68,
+     "y": 25.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 40,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "導水管周圍灰質 / central gray stratum",
+   "accept": [
+    "導水管周圍灰質 / central gray stratum",
+    "導水管周圍灰質 / periaqueductal gray",
+    "導水管周圍灰質 / central gray",
+    "導水管周圍灰質 / PAG",
+    "中央灰質 / central gray stratum",
+    "中央灰質 / periaqueductal gray",
+    "中央灰質 / central gray",
+    "中央灰質 / PAG",
+    "中腦導水管周圍灰質 / central gray stratum",
+    "中腦導水管周圍灰質 / periaqueductal gray",
+    "中腦導水管周圍灰質 / central gray",
+    "中腦導水管周圍灰質 / PAG"
+   ],
+   "explain": [
+    "**導水管周圍灰質（central gray stratum）**",
+    "- 包圍導水管的灰質層（periaqueductal gray）。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（上丘水平，Weigert 髓鞘染色切片）：動眼神經核與動眼神經根",
+    "導水管周圍灰質"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo651_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 73,
+     "y": 22.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 41,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "動眼神經核 / nucleus of oculomotor nerve",
+   "accept": [
+    "動眼神經核 / nucleus of oculomotor nerve",
+    "動眼神經核 / oculomotor nucleus",
+    "動眼神經核 / CN III nucleus"
+   ],
+   "explain": [
+    "**動眼神經核（nucleus of oculomotor nerve）**",
+    "- 導水管腹側、上丘水平的神經核（圖上標示 III）；發出 CN III 的運動纖維。",
+    "- 記法：上丘水平",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（上丘水平，Weigert 髓鞘染色切片）：動眼神經核與動眼神經根",
+    "動眼神經核"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo651_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 73,
+     "y": 39.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 42,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "內側縱束 / medial longitudinal fasciculus",
+   "accept": [
+    "內側縱束 / medial longitudinal fasciculus",
+    "內側縱束 / MLF",
+    "內側縱束 / medial longitudinal fascicle"
+   ],
+   "explain": [
+    "**內側縱束（medial longitudinal fasciculus）**",
+    "- 緊貼動眼神經核腹側的縱向纖維束，連接 III、IV、VI 核，協調兩眼共軛運動。",
+    "- 記法：MLF 病灶 → 核間性眼肌麻痺",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（上丘水平，Weigert 髓鞘染色切片）：動眼神經核與動眼神經根",
+    "內側縱束"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo651_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 73.5,
+     "y": 44.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 43,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "動眼神經根絲 / root filaments of oculomotor nerve",
+   "accept": [
+    "動眼神經根絲 / root filaments of oculomotor nerve",
+    "動眼神經根絲 / oculomotor nerve rootlets",
+    "動眼神經根絲 / oculomotor nerve fibers",
+    "動眼神經纖維 / root filaments of oculomotor nerve",
+    "動眼神經纖維 / oculomotor nerve rootlets",
+    "動眼神經纖維 / oculomotor nerve fibers"
+   ],
+   "explain": [
+    "**動眼神經根絲（root filaments of oculomotor nerve）**",
+    "- 由核向腹側穿過被蓋的纖維束。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（上丘水平，Weigert 髓鞘染色切片）：動眼神經核與動眼神經根",
+    "動眼神經根絲"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo651_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 73.5,
+     "y": 57,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 44,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "腳間窩 / interpeduncular fossa",
+   "accept": [
+    "腳間窩 / interpeduncular fossa",
+    "腳間窩 / interpeduncular fossa"
+   ],
+   "explain": [
+    "**腳間窩（interpeduncular fossa）**",
+    "- 兩個大腦腳之間的凹陷，動眼神經由此穿出。",
+    "- 記法：CN III 出口",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（上丘水平，Weigert 髓鞘染色切片）：動眼神經核與動眼神經根",
+    "腳間窩"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo651_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 71.5,
+     "y": 70,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 45,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "動眼神經根 / root of oculomotor nerve",
+   "accept": [
+    "動眼神經根 / root of oculomotor nerve",
+    "動眼神經根 / oculomotor nerve root"
+   ],
+   "explain": [
+    "**動眼神經根（root of oculomotor nerve）**",
+    "- 纖維束離開腦幹的部分（接近腳間窩）。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（上丘水平，Weigert 髓鞘染色切片）：動眼神經核與動眼神經根",
+    "動眼神經根"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo651_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 63,
+     "y": 77,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 46,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "紅核 / red nucleus",
+   "accept": [
+    "紅核 / red nucleus",
+    "紅核 / red nucleus of tegmentum",
+    "紅核 / nucleus ruber"
+   ],
+   "explain": [
+    "**紅核（red nucleus）**",
+    "- 被蓋中央的圓形顆粒狀核團；動眼神經纖維從它的內側穿過。",
+    "- 記法：動眼神經穿過紅核內側",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（上丘水平，Weigert 髓鞘染色切片）：動眼神經核與動眼神經根",
+    "紅核"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo651_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 56,
+     "y": 52,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 47,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "大腦腳底 / base of peduncle",
+   "accept": [
+    "大腦腳底 / base of peduncle",
+    "大腦腳底 / basis pedunculi",
+    "大腦腳底 / crus cerebri",
+    "大腦腳底 / cerebral peduncle",
+    "大腦腳 / base of peduncle",
+    "大腦腳 / basis pedunculi",
+    "大腦腳 / crus cerebri",
+    "大腦腳 / cerebral peduncle",
+    "腦腳底 / base of peduncle",
+    "腦腳底 / basis pedunculi",
+    "腦腳底 / crus cerebri",
+    "腦腳底 / cerebral peduncle"
+   ],
+   "explain": [
+    "**大腦腳底（base of peduncle）**",
+    "- 腹外側深色的大纖維束（皮質脊髓、皮質腦幹纖維）。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（上丘水平，Weigert 髓鞘染色切片）：動眼神經核與動眼神經根",
+    "大腦腳底"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo651_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 25,
+     "y": 86,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 48,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "內側蹄系 / medial lemniscus",
+   "accept": [
+    "內側蹄系 / medial lemniscus",
+    "內側蹄系 / medial lemniscus (tegmentum)",
+    "內側蹄系（被蓋） / medial lemniscus",
+    "內側蹄系（被蓋） / medial lemniscus (tegmentum)",
+    "內側丘系 / medial lemniscus",
+    "內側丘系 / medial lemniscus (tegmentum)"
+   ],
+   "explain": [
+    "**內側蹄系（medial lemniscus）**",
+    "- 被蓋外側的上行感覺纖維。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（上丘水平，Weigert 髓鞘染色切片）：動眼神經核與動眼神經根",
+    "內側蹄系"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo651_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 35,
+     "y": 37,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 49,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "下丘（核） / nucleus of inferior colliculus",
+   "accept": [
+    "下丘（核） / nucleus of inferior colliculus",
+    "下丘（核） / inferior colliculus",
+    "下丘（核） / inferior colliculi",
+    "下丘 / nucleus of inferior colliculus",
+    "下丘 / inferior colliculus",
+    "下丘 / inferior colliculi",
+    "下丘核 / nucleus of inferior colliculus",
+    "下丘核 / inferior colliculus",
+    "下丘核 / inferior colliculi",
+    "下丘 / nucleus of inferior colliculus",
+    "下丘 / inferior colliculus",
+    "下丘 / inferior colliculi",
+    "核 / nucleus of inferior colliculus",
+    "核 / inferior colliculus",
+    "核 / inferior colliculi"
+   ],
+   "explain": [
+    "**下丘（核）（nucleus of inferior colliculus）**",
+    "- 中腦頂蓋背側的隆起，聽覺傳導路徑的中繼站。",
+    "- 記法：上看、下聽",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "下丘（核）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 54,
+     "y": 13,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 50,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "導水管周圍灰質 / central gray stratum",
+   "accept": [
+    "導水管周圍灰質 / central gray stratum",
+    "導水管周圍灰質 / periaqueductal gray",
+    "導水管周圍灰質 / central gray",
+    "中央灰質 / central gray stratum",
+    "中央灰質 / periaqueductal gray",
+    "中央灰質 / central gray"
+   ],
+   "explain": [
+    "**導水管周圍灰質（central gray stratum）**",
+    "- 包圍導水管的灰質。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "導水管周圍灰質"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 65,
+     "y": 20,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 51,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "中腦導水管 / cerebral aqueduct",
+   "accept": [
+    "中腦導水管 / cerebral aqueduct",
+    "中腦導水管 / aqueduct of cerebrum",
+    "中腦導水管 / aqueduct of Sylvius",
+    "大腦導水管 / cerebral aqueduct",
+    "大腦導水管 / aqueduct of cerebrum",
+    "大腦導水管 / aqueduct of Sylvius",
+    "導水管 / cerebral aqueduct",
+    "導水管 / aqueduct of cerebrum",
+    "導水管 / aqueduct of Sylvius"
+   ],
+   "explain": [
+    "**中腦導水管（cerebral aqueduct）**",
+    "- 連接第三與第四腦室。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "中腦導水管"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 67,
+     "y": 23,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 52,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "滑車神經核 / nucleus of trochlear nerve",
+   "accept": [
+    "滑車神經核 / nucleus of trochlear nerve",
+    "滑車神經核 / trochlear nucleus",
+    "滑車神經核 / CN IV nucleus"
+   ],
+   "explain": [
+    "**滑車神經核（nucleus of trochlear nerve）**",
+    "- 導水管腹側、下丘水平；纖維繞過導水管往背側、交叉後從腦幹背面出來，支配對側上斜肌。",
+    "- 記法：下丘水平；支配對側 SO",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "滑車神經核"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 65.5,
+     "y": 32.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 53,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "內側縱束 / medial longitudinal fasciculus",
+   "accept": [
+    "內側縱束 / medial longitudinal fasciculus",
+    "內側縱束 / MLF"
+   ],
+   "explain": [
+    "**內側縱束（medial longitudinal fasciculus）**",
+    "- 緊貼滑車核腹側的縱向纖維束。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "內側縱束"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 73,
+     "y": 35.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 54,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "上小腦腳交叉 / decussation of brachia conjunctiva",
+   "accept": [
+    "上小腦腳交叉 / decussation of brachia conjunctiva",
+    "上小腦腳交叉 / decussation of superior cerebellar peduncles",
+    "上小腦腳交叉 / decussation of brachium conjunctivum",
+    "結合臂交叉 / decussation of brachia conjunctiva",
+    "結合臂交叉 / decussation of superior cerebellar peduncles",
+    "結合臂交叉 / decussation of brachium conjunctivum",
+    "上小腦腳交叉 / decussation of brachia conjunctiva",
+    "上小腦腳交叉 / decussation of superior cerebellar peduncles",
+    "上小腦腳交叉 / decussation of brachium conjunctivum"
+   ],
+   "explain": [
+    "**上小腦腳交叉（decussation of brachia conjunctiva）**",
+    "- 被蓋中央，兩側上小腦腳（結合臂）纖維在此交叉走向對側紅核。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "上小腦腳交叉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 71,
+     "y": 44.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 55,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外側蹄系 / lateral lemniscus",
+   "accept": [
+    "外側蹄系 / lateral lemniscus",
+    "外側蹄系 / lateral lemniscus"
+   ],
+   "explain": [
+    "**外側蹄系（lateral lemniscus）**",
+    "- 聽覺上行纖維，走向下丘。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "外側蹄系"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 38,
+     "y": 36,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 56,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "三叉神經中腦降根 / descending mesencephalic root of trigeminal nerve",
+   "accept": [
+    "三叉神經中腦降根 / descending mesencephalic root of trigeminal nerve",
+    "三叉神經中腦降根 / mesencephalic root of trigeminal nerve",
+    "三叉神經中腦降根 / descending mesencephalic root of trigeminal"
+   ],
+   "explain": [
+    "**三叉神經中腦降根（descending mesencephalic root of trigeminal nerve）**",
+    "- 三叉神經本體覺纖維，在導水管灰質外側下行。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "三叉神經中腦降根"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 45,
+     "y": 26,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 57,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "黑質 / substantia nigra",
+   "accept": [
+    "黑質 / substantia nigra",
+    "黑質 / substantia nigra"
+   ],
+   "explain": [
+    "**黑質（substantia nigra）**",
+    "- 大腦腳底與被蓋之間的色素核團（髓鞘染色下呈淺色帶）。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "黑質"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 44,
+     "y": 64.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 58,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "腳間窩 / interpeduncular fossa",
+   "accept": [
+    "腳間窩 / interpeduncular fossa",
+    "腳間窩 / interpeduncular fossa"
+   ],
+   "explain": [
+    "**腳間窩（interpeduncular fossa）**",
+    "- 兩個大腦腳之間的凹陷。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "腳間窩"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 69,
+     "y": 66.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 59,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "大腦腳底 / base of peduncle",
+   "accept": [
+    "大腦腳底 / base of peduncle",
+    "大腦腳底 / basis pedunculi",
+    "大腦腳底 / crus cerebri",
+    "大腦腳底 / cerebral peduncle",
+    "大腦腳 / base of peduncle",
+    "大腦腳 / basis pedunculi",
+    "大腦腳 / crus cerebri",
+    "大腦腳 / cerebral peduncle",
+    "腦腳底 / base of peduncle",
+    "腦腳底 / basis pedunculi",
+    "腦腳底 / crus cerebri",
+    "腦腳底 / cerebral peduncle"
+   ],
+   "explain": [
+    "**大腦腳底（base of peduncle）**",
+    "- 腹側大纖維束。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "大腦腳底"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 19,
+     "y": 79,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 60,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋腦淺纖維 / superficial fibers of pons",
+   "accept": [
+    "橋腦淺纖維 / superficial fibers of pons",
+    "橋腦淺纖維 / superficial fibres of pons"
+   ],
+   "explain": [
+    "**橋腦淺纖維（superficial fibers of pons）**",
+    "- 橋腦腹側表面的橫行纖維（切面下緣）。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "中腦橫切（下丘水平，Weigert 染色切片）：滑車神經核與上小腦腳交叉",
+    "橋腦淺纖維"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo652_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 65,
+     "y": 89,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 61,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "外旋神經核 / nucleus of abducent nerve",
+   "accept": [
+    "外旋神經核 / nucleus of abducent nerve",
+    "外旋神經核 / abducens nucleus",
+    "外旋神經核 / abducent nucleus",
+    "外旋神經核 / CN VI nucleus",
+    "外展神經核 / nucleus of abducent nerve",
+    "外展神經核 / abducens nucleus",
+    "外展神經核 / abducent nucleus",
+    "外展神經核 / CN VI nucleus"
+   ],
+   "explain": [
+    "**外旋神經核（nucleus of abducent nerve）**",
+    "- 位於顏面丘深面；支配同側外直肌，並有中間神經元經 MLF 到對側動眼核。",
+    "- 記法：LR₆",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "外旋神經核"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 53.5,
+     "y": 19,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 62,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "顏面丘 / facial colliculus",
+   "accept": [
+    "顏面丘 / facial colliculus",
+    "顏面丘 / facial colliculi"
+   ],
+   "explain": [
+    "**顏面丘（facial colliculus）**",
+    "- 第四腦室底靠中線的隆起，由顏面神經纖維繞過外旋神經核形成。",
+    "- 記法：顏面丘＝VII 纖維繞 VI 核",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "顏面丘"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 57.5,
+     "y": 17.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 63,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "顏面神經膝 / genu of root of facial nerve",
+   "accept": [
+    "顏面神經膝 / genu of root of facial nerve",
+    "顏面神經膝 / genu of facial nerve",
+    "顏面神經膝 / internal genu of facial nerve",
+    "顏面神經膝 / facial genu",
+    "顏面神經內膝 / genu of root of facial nerve",
+    "顏面神經內膝 / genu of facial nerve",
+    "顏面神經內膝 / internal genu of facial nerve",
+    "顏面神經內膝 / facial genu"
+   ],
+   "explain": [
+    "**顏面神經膝（genu of root of facial nerve）**",
+    "- 顏面神經纖維繞過外旋神經核的彎折處。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "顏面神經膝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 63,
+     "y": 20.5,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 64,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "顏面神經核 / nucleus of facial nerve",
+   "accept": [
+    "顏面神經核 / nucleus of facial nerve",
+    "顏面神經核 / facial nucleus",
+    "顏面神經核 / facial motor nucleus",
+    "面神經核 / nucleus of facial nerve",
+    "面神經核 / facial nucleus",
+    "面神經核 / facial motor nucleus"
+   ],
+   "explain": [
+    "**顏面神經核（nucleus of facial nerve）**",
+    "- 橋腦被蓋腹外側的運動核，發出的纖維往背內走、繞過外旋核。",
+    "- 記法：表情肌",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "顏面神經核"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 31,
+     "y": 26,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 65,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "網狀結構 / reticular formation",
+   "accept": [
+    "網狀結構 / reticular formation",
+    "網狀結構 / reticular formation"
+   ],
+   "explain": [
+    "**網狀結構（reticular formation）**",
+    "- 被蓋中的網狀灰質。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "網狀結構"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 66,
+     "y": 34,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 66,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "內側蹄系 / medial lemniscus",
+   "accept": [
+    "內側蹄系 / medial lemniscus",
+    "內側蹄系 / medial lemniscus",
+    "內側丘系 / medial lemniscus",
+    "內側丘系 / medial lemniscus"
+   ],
+   "explain": [
+    "**內側蹄系（medial lemniscus）**",
+    "- 橫向、靠近中線的上行感覺纖維。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "內側蹄系"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 65,
+     "y": 43,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 67,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "斜方體 / trapezoid body",
+   "accept": [
+    "斜方體 / trapezoid body",
+    "斜方體 / trapezoid body",
+    "梯形體 / trapezoid body",
+    "梯形體 / trapezoid body"
+   ],
+   "explain": [
+    "**斜方體（trapezoid body）**",
+    "- 橋腦被蓋腹側的橫行聽覺纖維。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "斜方體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 63,
+     "y": 52,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 68,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋腦縫 / raphe of pons",
+   "accept": [
+    "橋腦縫 / raphe of pons",
+    "橋腦縫 / raphe of pons"
+   ],
+   "explain": [
+    "**橋腦縫（raphe of pons）**",
+    "- 橋腦基底部中線的縫。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "橋腦縫"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 63,
+     "y": 62,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 69,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋核 / pons nuclei",
+   "accept": [
+    "橋核 / pons nuclei",
+    "橋核 / pontine nuclei",
+    "橋核 / nuclei pontis",
+    "腦橋核 / pons nuclei",
+    "腦橋核 / pontine nuclei",
+    "腦橋核 / nuclei pontis"
+   ],
+   "explain": [
+    "**橋核（pons nuclei）**",
+    "- 橋腦基底部內的灰質團，傳遞皮質到小腦的訊息。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "橋核"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 68,
+     "y": 72,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 70,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋腦基底溝 / basilar sulcus",
+   "accept": [
+    "橋腦基底溝 / basilar sulcus",
+    "橋腦基底溝 / basilar groove",
+    "橋腦基底溝 / sulcus basilaris"
+   ],
+   "explain": [
+    "**橋腦基底溝（basilar sulcus）**",
+    "- 橋腦腹側正中的溝，基底動脈走在其中。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "橋腦基底溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 60,
+     "y": 95,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 71,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋臂（中小腦腳） / brachium of pons",
+   "accept": [
+    "橋臂（中小腦腳） / brachium of pons",
+    "橋臂（中小腦腳） / middle cerebellar peduncle",
+    "橋臂（中小腦腳） / brachium pontis",
+    "中小腦腳 / brachium of pons",
+    "中小腦腳 / middle cerebellar peduncle",
+    "中小腦腳 / brachium pontis",
+    "橋臂 / brachium of pons",
+    "橋臂 / middle cerebellar peduncle",
+    "橋臂 / brachium pontis",
+    "橋臂 / brachium of pons",
+    "橋臂 / middle cerebellar peduncle",
+    "橋臂 / brachium pontis",
+    "中小腦腳 / brachium of pons",
+    "中小腦腳 / middle cerebellar peduncle",
+    "中小腦腳 / brachium pontis"
+   ],
+   "explain": [
+    "**橋臂（中小腦腳）（brachium of pons）**",
+    "- 橋腦橫向纖維形成的粗大纖維束，通往小腦。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "橋臂（中小腦腳）"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 10,
+     "y": 69,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 72,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋腦淺纖維 / superficial fibers of pons",
+   "accept": [
+    "橋腦淺纖維 / superficial fibers of pons",
+    "橋腦淺纖維 / superficial fibres of pons"
+   ],
+   "explain": [
+    "**橋腦淺纖維（superficial fibers of pons）**",
+    "- 橋腦腹側表面的橫行纖維。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "橋腦淺纖維"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 23,
+     "y": 83,
+     "label": "1"
+    }
+   ]
+  },
+  {
+   "n": 73,
+   "type": "fill",
+   "stem": "看圖：標記點（編號 1）所指構造的中文名與英文名是什麼？（中文與英文都要寫）",
+   "answer": "橋腦縱纖維 / longitudinal fibers of pons",
+   "accept": [
+    "橋腦縱纖維 / longitudinal fibers of pons",
+    "橋腦縱纖維 / longitudinal fibres of pons",
+    "橋腦縱纖維 / pyramidal fibers of pons",
+    "橋腦縱纖維 / longitudinal (pyramidal) fibers of pons",
+    "錐體纖維 / longitudinal fibers of pons",
+    "錐體纖維 / longitudinal fibres of pons",
+    "錐體纖維 / pyramidal fibers of pons",
+    "錐體纖維 / longitudinal (pyramidal) fibers of pons"
+   ],
+   "explain": [
+    "**橋腦縱纖維（longitudinal fibers of pons）**",
+    "- 穿過橋腦基底部的縱行纖維（錐體束）。",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；已塗去原圖文字標籤並加標記點）"
+   ],
+   "tags": [
+    "看圖辨識",
+    "橋腦橫切（顏面丘水平，Weigert 染色切片）：外旋神經核與顏面神經",
+    "橋腦縱纖維"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-anat-manual/sobo668_m.jpg"
+   ],
+   "marks": [
+    {
+     "x": 36,
+     "y": 92,
+     "label": "1"
+    }
+   ]
+  }
+ ]
+}

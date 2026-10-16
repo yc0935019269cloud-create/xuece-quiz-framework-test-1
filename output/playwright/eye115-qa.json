@@ -1,0 +1,449 @@
+{
+ "checks": [
+  {
+   "name": "眼解剖國考題載入（eye115 共 230）",
+   "pass": true,
+   "extra": {
+    "e": 230,
+    "l": 52,
+    "quiz": 29,
+    "noEx": 0,
+    "noAns": 0
+   }
+  },
+  {
+   "name": "實驗用國考補充題載入（eyelab 共 52）",
+   "pass": true,
+   "extra": {
+    "e": 230,
+    "l": 52,
+    "quiz": 29,
+    "noEx": 0,
+    "noAns": 0
+   }
+  },
+  {
+   "name": "國考題每題都有詳解",
+   "pass": true,
+   "extra": {
+    "e": 230,
+    "l": 52,
+    "quiz": 29,
+    "noEx": 0,
+    "noAns": 0
+   }
+  },
+  {
+   "name": "老師隨堂考 29 題仍在",
+   "pass": true,
+   "extra": {
+    "e": 230,
+    "l": 52,
+    "quiz": 29,
+    "noEx": 0,
+    "noAns": 0
+   }
+  },
+  {
+   "name": "ans-basics 存在",
+   "pass": true
+  },
+  {
+   "name": "ans-basics：有「國考重點複習」課",
+   "pass": true,
+   "extra": 1
+  },
+  {
+   "name": "ans-basics：複習課每張概念卡都有 🎯 與 ✏️",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "ans-basics：全部概念卡都有國考重點",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "ans-basics：考前必看 ≥ 2 個重點",
+   "pass": true,
+   "extra": 3
+  },
+  {
+   "name": "ans-basics：複習課實戰抽題池非空",
+   "pass": true,
+   "extra": {
+    "pr": 1,
+    "pooled": 1
+   }
+  },
+  {
+   "name": "ans-pathways 存在",
+   "pass": true
+  },
+  {
+   "name": "ans-pathways：有「國考重點複習」課",
+   "pass": true,
+   "extra": 1
+  },
+  {
+   "name": "ans-pathways：複習課每張概念卡都有 🎯 與 ✏️",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "ans-pathways：全部概念卡都有國考重點",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "ans-pathways：考前必看 ≥ 2 個重點",
+   "pass": true,
+   "extra": 5
+  },
+  {
+   "name": "ans-pathways：複習課實戰抽題池非空",
+   "pass": true,
+   "extra": {
+    "pr": 1,
+    "pooled": 1
+   }
+  },
+  {
+   "name": "ans-trigeminal 存在",
+   "pass": true
+  },
+  {
+   "name": "ans-trigeminal：有「國考重點複習」課",
+   "pass": true,
+   "extra": 1
+  },
+  {
+   "name": "ans-trigeminal：複習課每張概念卡都有 🎯 與 ✏️",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "ans-trigeminal：全部概念卡都有國考重點",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "ans-trigeminal：考前必看 ≥ 2 個重點",
+   "pass": true,
+   "extra": 3
+  },
+  {
+   "name": "ans-trigeminal：複習課實戰抽題池非空",
+   "pass": true,
+   "extra": {
+    "pr": 1,
+    "pooled": 1
+   }
+  },
+  {
+   "name": "ans-reflex 存在",
+   "pass": true
+  },
+  {
+   "name": "ans-reflex：有「國考重點複習」課",
+   "pass": true,
+   "extra": 1
+  },
+  {
+   "name": "ans-reflex：複習課每張概念卡都有 🎯 與 ✏️",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "ans-reflex：全部概念卡都有國考重點",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "ans-reflex：考前必看 ≥ 2 個重點",
+   "pass": true,
+   "extra": 3
+  },
+  {
+   "name": "ans-reflex：複習課實戰抽題池非空",
+   "pass": true,
+   "extra": {
+    "pr": 1,
+    "pooled": 1
+   }
+  },
+  {
+   "name": "ans-clinical 存在",
+   "pass": true
+  },
+  {
+   "name": "ans-clinical：有「國考重點複習」課",
+   "pass": true,
+   "extra": 2
+  },
+  {
+   "name": "ans-clinical：複習課每張概念卡都有 🎯 與 ✏️",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "ans-clinical：全部概念卡都有國考重點",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "ans-clinical：考前必看 ≥ 2 個重點",
+   "pass": true,
+   "extra": 4
+  },
+  {
+   "name": "ans-clinical：複習課實戰抽題池非空",
+   "pass": true,
+   "extra": {
+    "pr": 2,
+    "pooled": 2
+   }
+  },
+  {
+   "name": "cornea-general 存在",
+   "pass": true
+  },
+  {
+   "name": "cornea-general：有「國考重點複習」課",
+   "pass": true,
+   "extra": 1
+  },
+  {
+   "name": "cornea-general：複習課每張概念卡都有 🎯 與 ✏️",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "cornea-general：全部概念卡都有國考重點",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "cornea-general：考前必看 ≥ 2 個重點",
+   "pass": true,
+   "extra": 2
+  },
+  {
+   "name": "cornea-general：複習課實戰抽題池非空",
+   "pass": true,
+   "extra": {
+    "pr": 1,
+    "pooled": 1
+   }
+  },
+  {
+   "name": "cornea-layers 存在",
+   "pass": true
+  },
+  {
+   "name": "cornea-layers：有「國考重點複習」課",
+   "pass": true,
+   "extra": 1
+  },
+  {
+   "name": "cornea-layers：複習課每張概念卡都有 🎯 與 ✏️",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "cornea-layers：全部概念卡都有國考重點",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "cornea-layers：考前必看 ≥ 2 個重點",
+   "pass": true,
+   "extra": 5
+  },
+  {
+   "name": "cornea-layers：複習課實戰抽題池非空",
+   "pass": true,
+   "extra": {
+    "pr": 1,
+    "pooled": 1
+   }
+  },
+  {
+   "name": "cornea-supply 存在",
+   "pass": true
+  },
+  {
+   "name": "cornea-supply：有「國考重點複習」課",
+   "pass": true,
+   "extra": 1
+  },
+  {
+   "name": "cornea-supply：複習課每張概念卡都有 🎯 與 ✏️",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "cornea-supply：全部概念卡都有國考重點",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "cornea-supply：考前必看 ≥ 2 個重點",
+   "pass": true,
+   "extra": 3
+  },
+  {
+   "name": "cornea-supply：複習課實戰抽題池非空",
+   "pass": true,
+   "extra": {
+    "pr": 1,
+    "pooled": 1
+   }
+  },
+  {
+   "name": "blood-vessels 存在",
+   "pass": true
+  },
+  {
+   "name": "blood-vessels：有「國考重點複習」課",
+   "pass": true,
+   "extra": 1
+  },
+  {
+   "name": "blood-vessels：複習課每張概念卡都有 🎯 與 ✏️",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "blood-vessels：全部概念卡都有國考重點",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "blood-vessels：考前必看 ≥ 2 個重點",
+   "pass": true,
+   "extra": 4
+  },
+  {
+   "name": "blood-vessels：複習課實戰抽題池非空",
+   "pass": true,
+   "extra": {
+    "pr": 1,
+    "pooled": 1
+   }
+  },
+  {
+   "name": "blood-ciliary 存在",
+   "pass": true
+  },
+  {
+   "name": "blood-ciliary：有「國考重點複習」課",
+   "pass": true,
+   "extra": 1
+  },
+  {
+   "name": "blood-ciliary：複習課每張概念卡都有 🎯 與 ✏️",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "blood-ciliary：全部概念卡都有國考重點",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "blood-ciliary：考前必看 ≥ 2 個重點",
+   "pass": true,
+   "extra": 6
+  },
+  {
+   "name": "blood-ciliary：複習課實戰抽題池非空",
+   "pass": true,
+   "extra": {
+    "pr": 1,
+    "pooled": 1
+   }
+  },
+  {
+   "name": "blood-retina 存在",
+   "pass": true
+  },
+  {
+   "name": "blood-retina：有「國考重點複習」課",
+   "pass": true,
+   "extra": 1
+  },
+  {
+   "name": "blood-retina：複習課每張概念卡都有 🎯 與 ✏️",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "blood-retina：全部概念卡都有國考重點",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "blood-retina：考前必看 ≥ 2 個重點",
+   "pass": true,
+   "extra": 5
+  },
+  {
+   "name": "blood-retina：複習課實戰抽題池非空",
+   "pass": true,
+   "extra": {
+    "pr": 1,
+    "pooled": 1
+   }
+  },
+  {
+   "name": "cornea-layers：筆記頁有考前必看",
+   "pass": true
+  },
+  {
+   "name": "cornea-layers：考前必看附相關題",
+   "pass": true,
+   "extra": 5
+  },
+  {
+   "name": "cornea-layers：相關題可開啟唯讀題目視窗",
+   "pass": true,
+   "extra": "eye115-exam-cornea-layers-114-8"
+  },
+  {
+   "name": "blood-ciliary：筆記頁有考前必看",
+   "pass": true
+  },
+  {
+   "name": "blood-ciliary：考前必看附相關題",
+   "pass": true,
+   "extra": 6
+  },
+  {
+   "name": "blood-ciliary：相關題可開啟唯讀題目視窗",
+   "pass": true,
+   "extra": "eye115-exam-blood-ciliary-109-316"
+  },
+  {
+   "name": "ans-reflex：筆記頁有考前必看",
+   "pass": true
+  },
+  {
+   "name": "ans-reflex：考前必看附相關題",
+   "pass": true,
+   "extra": 3
+  },
+  {
+   "name": "ans-reflex：相關題可開啟唯讀題目視窗",
+   "pass": true,
+   "extra": "eye115-exam-ans-reflex-106-4"
+  },
+  {
+   "name": "沒有頁面錯誤",
+   "pass": true,
+   "extra": []
+  }
+ ],
+ "errors": [],
+ "errorsCount": 0
+}
