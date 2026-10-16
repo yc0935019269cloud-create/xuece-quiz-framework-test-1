@@ -29,7 +29,7 @@ const ok = (name, pass, extra) => { out.checks.push({ name, pass: !!pass, extra 
     const p = LEARN_UI.packs.find(x => x.id === id);
     if (!p) return { id, missing: true };
     const cards = [];
-    p.lessons.forEach(l => l.steps.forEach(s => { if (s.type === 'card') cards.push({ lesson: l.id, title: s.title, exam: (s.exam || []).length, demo: !!s.demo }); }));
+    p.lessons.forEach(l => l.steps.forEach((s, i) => { if (s.type === 'card') { const nx = l.steps[i + 1]; const own = (s.exam || []).length > 0 && !!s.demo; const nextOk = !!nx && nx.type === 'card' && (nx.exam || []).length > 0 && !!nx.demo; cards.push({ lesson: l.id, title: s.title, exam: own || nextOk ? 1 : 0, demo: own || nextOk, own }); } }));
     const practice = p.lessons.flatMap(l => l.steps.filter(s => s.type === 'practice'));
     const pooled = practice.filter(s => s.pick && (s.pick.ids || []).length > 0).length;
     return { id, lessons: p.lessons.length, cards, notes: (p.notes || []).map(n => n.kind), practice: practice.length, pooled, banks: (p.banks || []).length };
@@ -55,7 +55,7 @@ const ok = (name, pass, extra) => { out.checks.push({ name, pass: !!pass, extra 
   // 3. 實際渲染：在一次性 context 中設定進度，直接打開某一步
   const keyLearn = await page.evaluate(() => SKEY('learn'));
   const targets = [];
-  data.forEach(d => { if (d.missing) return; d.cards.forEach((c, i) => { if (i % 6 === 0) targets.push({ pack: d.id, lesson: c.lesson, title: c.title }); }); });
+  data.forEach(d => { if (d.missing) return; d.cards.filter(c => c.own).forEach((c, i) => { if (i % 6 === 0) targets.push({ pack: d.id, lesson: c.lesson, title: c.title }); }); });
   let rendered = 0, renderFail = [];
   for (const t of targets) {
     const idx = await page.evaluate(({ pack, lesson, title }) => {
