@@ -37,11 +37,13 @@
           "type": "card",
           "title": "傳統三層與現代雙相模型",
           "body": [
-            "> 三層模型有助考試辨認来源，實際水與黏蛋白呈漸變混合。",
+            "> 三層模型方便考試辨認「來源」，但實際上水和黏蛋白是**漸漸混在一起**的。",
             "",
-            "傳統教學依序分脂質層、水液層、黏液層；現代 TFOS 模型強調表面脂質層與下方水液黏蛋白相，眼表另有膜結合黏蛋白醣萼。",
+            "傳統教法：**脂質層、水液層、黏液層**三層。",
             "",
-            "兩種是描述尺度不同，不代表考試分泌來源失效。"
+            "現代（TFOS）模型：表面是**脂質層**，下面是**水液加黏蛋白**混合的一相；眼表還有**膜結合黏蛋白**形成的醣萼。",
+            "",
+            "兩種只是用不同尺度描述，**不代表考試的「分泌來源」失效**。"
           ]
         },
         {
@@ -61,17 +63,12 @@
         },
         {
           "type": "card",
-          "title": "應用：由條件走到結論",
+          "title": "看題目、找依據",
           "body": [
-            "**情境**",
-            "現代模型中，水液與可溶黏蛋白的關係為何？",
+            "**題目**",
+            "現代模型中，水液與可溶性黏蛋白的關係是？",
             "",
-            "A. 完全互不接觸",
-            "B. 呈漸變混合相",
-            "C. 都由瞼板腺分泌",
-            "D. 都只由杯狀細胞分泌",
-            "",
-            "**結論**",
+            "**答案**",
             "呈漸變混合相"
           ]
         },
@@ -169,10 +166,9 @@
         },
         {
           "type": "card",
-          "title": "判斷依據：淚膜構造",
-          "body": "瞼板腺（meibomian glands） 是 脂質層（lipid layer） 的主要來源。\n\n正確選項：脂質層。\n",
-          "keys": [
-            "瞼板腺（meibomian glands） 是 脂質層（lipid layer） 的主要來源。\n\n正確選項：脂質層（lipid layer）。\n"
+          "title": "為什麼這樣判斷？",
+          "body": [
+            "**瞼板腺**是**脂質層**的主要來源。"
           ]
         },
         {
@@ -192,10 +188,9 @@
         },
         {
           "type": "card",
-          "title": "判斷依據：淚膜構造",
-          "body": "conjunctival goblet cells 主要分泌 黏蛋白（mucin）。\n\n正確選項：secreted 黏蛋白。\n",
-          "keys": [
-            "conjunctival goblet cells 主要分泌 黏蛋白（mucin）。\n\n正確選項：secreted 黏蛋白（mucin）。\n"
+          "title": "為什麼這樣判斷？",
+          "body": [
+            "結膜的**杯狀細胞**主要分泌**黏蛋白（黏液）**。"
           ]
         },
         {
@@ -215,8 +210,10 @@
         },
         {
           "type": "card",
-          "title": "判斷依據：淚膜構造",
-          "body": "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN 初級視覺皮質（V1）。\n"
+          "title": "為什麼這樣判斷？",
+          "body": [
+            "眼表的感覺主要由**三叉神經的眼神經（V1）**傳入。"
+          ]
         },
         {
           "type": "check",
@@ -224,12 +221,12 @@
           "q": "反射性流淚的感覺傳入主要走？",
           "answer": 3,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN 初級視覺皮質（V1）。\n",
+          "explain": "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN V1（眼神經）。\n",
           "choices": [
             "第二對腦神經（CN II）",
             "CN VI",
             "CN XII",
-            "CN 初級視覺皮質（V1）"
+            "CN V1（眼神經）"
           ],
           "id": "c391a2719"
         },
@@ -281,12 +278,12 @@
               "q": "反射性流淚的感覺傳入主要走？",
               "answer": 3,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN 初級視覺皮質（V1）。\n",
+              "explain": "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN V1（眼神經）。\n",
               "choices": [
                 "第二對腦神經（CN II）",
                 "CN VI",
                 "CN XII",
-                "CN 初級視覺皮質（V1）"
+                "CN V1（眼神經）"
               ],
               "id": "c391a2719"
             }
@@ -297,7 +294,7 @@
           "points": [
             "瞼板腺（meibomian glands） 是 脂質層（lipid layer） 的主要來源。\n\n正確選項：脂質層（lipid layer）。\n",
             "conjunctival goblet cells 主要分泌 黏蛋白（mucin）。\n\n正確選項：secreted 黏蛋白（mucin）。\n",
-            "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN 初級視覺皮質（V1）。\n",
+            "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN V1（眼神經）。\n",
             "瞼板腺（meibomian glands） 是 脂質層（lipid layer） 的主要來源。\n\n正確選項：脂質層（lipid layer）。\n",
             "conjunctival goblet cells 主要分泌 黏蛋白（mucin）。\n\n正確選項：secreted 黏蛋白（mucin）。\n"
           ],
@@ -314,7 +311,7 @@
             },
             {
               "front": "反射性流淚的感覺傳入主要走？",
-              "back": "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN 初級視覺皮質（V1）。\n",
+              "back": "眼表感覺主要由 trigeminal ophthalmic division 傳入。\n\n正確選項：CN V1（眼神經）。\n",
               "id": "f391a2719"
             },
             {
@@ -342,10 +339,9 @@
         },
         {
           "type": "card",
-          "title": "判斷依據：淚膜構造",
-          "body": "鼻淚管（nasolacrimal duct） 開口於 下鼻道（inferior meatus）。\n\n正確選項：下鼻道。\n",
-          "keys": [
-            "鼻淚管（nasolacrimal duct） 開口於 下鼻道（inferior meatus）。\n\n正確選項：下鼻道（inferior meatus）。\n"
+          "title": "為什麼這樣判斷？",
+          "body": [
+            "**鼻淚管**開口在**下鼻道**。"
           ]
         },
         {
@@ -365,12 +361,12 @@
         },
         {
           "type": "card",
-          "title": "應用：由條件走到結論",
+          "title": "看題目、找依據",
           "body": [
-            "**情境**",
-            "淚液最後流入鼻腔哪裡？",
+            "**題目**",
+            "淚液最後流進鼻腔的哪裡？",
             "",
-            "**結論**",
+            "**答案**",
             "下鼻道"
           ]
         },

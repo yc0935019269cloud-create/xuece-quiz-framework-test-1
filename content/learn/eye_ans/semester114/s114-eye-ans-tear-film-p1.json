@@ -37,25 +37,25 @@
         },
         {
           "type": "card",
-          "title": "脂質層（lipid layer） 減少蒸發並穩定表面",
+          "title": "淚膜最外層：薄薄的「油封」",
           "body": [
-            "> 最外層脂質像薄薄油封，主要由 瞼板腺（meibomian glands） 提供。",
+            "淚膜像一杯水加油：**最外面浮著一層薄油**，這就是**脂質層**。",
             "",
-            "脂質層（lipid layer） 位於 空氣（air）-tear interface，主要由 瞼板腺（meibomian gland） 分泌，含極性與非極性脂質。",
-            "",
-            "它減少 蒸發（evaporation）、降低表面張力並改善眨眼後淚膜穩定。"
+            "- 主要由**瞼板腺**分泌",
+            "- 位在**空氣和淚膜**的交界",
+            "- 作用：**減少蒸發**、降低表面張力、讓眨眼後的淚膜更穩定"
           ]
         },
         {
           "type": "card",
-          "title": "重點整理｜脂質層（lipid layer） 減少蒸發並穩定…",
+          "title": "重點整理｜淚膜最外層：薄薄的「油封」",
           "body": [
-            "**口訣**：最外面薄油封，防止水太快蒸發。"
+            "**口訣**：最外面的薄油封，防止水太快蒸發。"
           ],
           "exam": [
             "主要來源：瞼板腺",
-            "主要功能：減少 蒸發",
-            "瞼板腺 dysfunction 可造成 evaporative dry eye"
+            "主要功能：減少蒸發",
+            "瞼板腺功能不良會造成蒸發過強型乾眼"
           ]
         },
         {
@@ -75,25 +75,28 @@
         },
         {
           "type": "card",
-          "title": "水液層（aqueous layer） 提供水分、養分與防禦",
+          "title": "淚膜中間層：水液層，最厚的一層",
           "body": [
-            "> 水液層占主要體積，沖洗眼表並攜帶溶菌酶、抗體與營養。",
+            "**水液層**佔淚膜的**大部分體積**，作用很多：",
             "",
-            "水液成分（aqueous component） 主要來自 main 淚腺（lacrimal gland） 與 副淚腺（accessory lacrimal glands）。",
+            "- **沖洗**眼睛表面",
+            "- **潤滑**",
+            "- 帶著**溶菌酶、抗體**等，幫忙**抗菌**",
+            "- 提供**養分**給沒有血管的角膜",
             "",
-            "它含 electrolytes、proteins、lysozyme、lactoferrin、immunoglobulins 等，協助潤滑、抗菌與供應 avascular cornea。"
+            "它主要來自**主淚腺**和**副淚腺**。"
           ]
         },
         {
           "type": "card",
-          "title": "重點整理｜水液層（aqueous layer） 提供水分、…",
+          "title": "重點整理｜淚膜中間層：水液層，最厚的一層",
           "body": [
             "**口訣**：中間水層是清潔水、營養液，也是防禦液。"
           ],
           "exam": [
-            "來源：main/副淚腺",
-            "功能：潤滑、沖洗、抗菌、供應 cornea",
-            "分泌不足造成 aqueous-deficient dry eye"
+            "來源：主淚腺與副淚腺",
+            "功能：潤滑、沖洗、抗菌、供應角膜養分",
+            "分泌不足造成水液缺乏型乾眼"
           ]
         },
         {
@@ -113,25 +116,25 @@
         },
         {
           "type": "card",
-          "title": "黏蛋白（mucin） 讓疏水角膜表面能被水鋪平",
+          "title": "最內層：黏液，像底漆",
           "body": [
-            "> 黏液像底漆，讓水液能均勻貼在角膜上。",
+            "角膜表面其實**不愛水**（疏水），水滴上去會縮成一顆顆。",
             "",
-            "secreted mucins 主要由 conjunctival goblet cells 提供；membrane-associated mucins 來自 ocular surface epithelium。",
+            "**黏液（黏蛋白 mucin）**就像**底漆**：它讓角膜表面變得**會吸水**，水液層才能**均勻鋪開**。",
             "",
-            "它們把原本較 hydrophobic 的 epithelial surface 轉為 wettable surface，並捕捉 debris。"
+            "它由**結膜的杯狀細胞**和**眼表上皮細胞**製造，還能捕捉髒東西。"
           ]
         },
         {
           "type": "card",
-          "title": "重點整理｜黏蛋白（mucin） 讓疏水角膜表面能被水鋪平",
+          "title": "重點整理｜最內層：黏液，像底漆",
           "body": [
-            "**口訣**：黏液是底漆，沒有它，水會縮成一顆顆而鋪不開。"
+            "**口訣**：黏液是底漆；沒有它，水就會縮成一顆顆，鋪不開。"
           ],
           "exam": [
-            "goblet cells 分泌 secreted 黏蛋白（mucin）",
-            "epithelial membrane 黏蛋白 形成 醣萼（glycocalyx）",
-            "黏蛋白 缺乏會造成 wetting defect"
+            "杯狀細胞分泌可溶性黏蛋白",
+            "上皮細胞膜上的黏蛋白形成醣萼（glycocalyx）",
+            "黏蛋白缺乏會造成潤濕不良"
           ]
         },
         {
@@ -287,7 +290,7 @@
       "title": "淚液從哪裡來，神經如何控制",
       "goals": [
         "解釋主淚腺與副淚腺分工",
-        "解釋淚液反射弧：CN 初級視覺皮質（V1） 感覺進，第七對腦神經（CN VII） 副交感出",
+        "解釋淚液反射弧：CN V1（眼神經） 感覺進，第七對腦神經（CN VII） 副交感出",
         "解釋淚液成分不只水與鹽"
       ],
       "steps": [
@@ -300,25 +303,27 @@
         },
         {
           "type": "card",
-          "title": "主淚腺與副淚腺分工",
+          "title": "大淚腺 vs 小副淚腺：一個備援、一個日常",
           "body": [
-            "> main 淚腺（lacrimal gland） 特別參與反射性大量分泌；Krause/Wolfring accessory glands 支持基礎水液。",
+            "**主淚腺**（在眼眶外上方，分眶部、瞼部）：",
+            "- 負責**反射性**的**大量**流淚（例如被洋蔥辣到）",
             "",
-            "淚腺 位於 superolateral orbit，分 orbital 與 palpebral lobes。",
+            "**副淚腺**（克勞斯腺、沃夫林腺，在穹窿與瞼板邊）：",
+            "- 負責**日常**的**基礎**水液分泌",
             "",
-            "副淚腺（accessory lacrimal glands） of Krause and Wolfring 分布於 conjunctival fornix/tarsal region，參與 basal aqueous 分泌（secretion）。"
+            "兩者都主要貢獻**水液層**。"
           ]
         },
         {
           "type": "card",
-          "title": "重點整理｜主淚腺與副淚腺分工",
+          "title": "重點整理｜大淚腺 vs 小副淚腺：一個備援、一個日常",
           "body": [
-            "**口訣**：大淚腺負責大量支援，小副淚腺維持日常底量。"
+            "**口訣**：大淚腺負責大量支援；小副淚腺維持日常底量。"
           ],
           "exam": [
-            "main 淚腺 位於 superolateral orbit",
-            "Krause/Wolfring 是 副淚腺",
-            "兩者都主要貢獻 水液成分（aqueous component）"
+            "主淚腺位於眼眶外上方",
+            "克勞斯腺與沃夫林腺是副淚腺",
+            "兩者都主要貢獻水液成分"
           ]
         },
         {
@@ -338,23 +343,24 @@
         },
         {
           "type": "card",
-          "title": "淚液反射弧：CN 初級視覺皮質（V1） 感覺進，第七對腦神經（CN VII） 副交感出",
+          "title": "流淚反射：五進七出",
           "body": [
-            "> 眼表受刺激後由 trigeminal 傳入（afferent） 回報，再由 facial 副交感路徑（parasympathetic pathway） 叫淚腺分泌。",
+            "眼睛被刺激（例如砂子、辣味）會**反射性流淚**：",
             "",
-            "角膜的（corneal）/conjunctival sensation 經 ophthalmic division of 三叉神經（trigeminal nerve） 傳入 腦幹（brainstem）；副交感輸出隨 顏面神經（facial nerve） 經 greater petrosal nerve，到 pterygopalatine 神經節（ganglion） 換站，再到 淚腺（lacrimal gland）。"
+            "1. **感覺傳入**：角膜、結膜的感覺 → **三叉神經的眼神經（V1）** → 腦幹",
+            "2. **分泌傳出**：**面神經（第七對）的副交感** → 大淺岩神經 → **翼顎神經節**換站 → **淚腺**"
           ]
         },
         {
           "type": "card",
-          "title": "重點整理｜淚液反射弧：CN 初級視覺皮質（V1） 感覺進，…",
+          "title": "重點整理｜流淚反射：五進七出",
           "body": [
-            "**口訣**：感覺五進、分泌七出，中途翼腭神經節換站。"
+            "**口訣**：感覺五進、分泌七出，中途在翼顎神經節換站。"
           ],
           "exam": [
-            "傳入：CN 初級視覺皮質（V1）",
-            "傳出（efferent） 副交感神經（parasympathetic）：第七對腦神經（CN VII） → greater petrosal → pterygopalatine 神經節",
-            "刺激眼表可引發 反射（reflex） tearing"
+            "傳入：三叉神經的眼神經（V1）",
+            "傳出：面神經副交感 → 大淺岩神經 → 翼顎神經節 → 淚腺",
+            "刺激眼表可以引發反射性流淚"
           ]
         },
         {
@@ -363,10 +369,10 @@
           "q": "反射性流淚的主要感覺傳入是？",
           "answer": 1,
           "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-          "explain": "傳入（afferent）：CN 初級視覺皮質（V1）\n\n正確選項：CN 初級視覺皮質（V1）。\n角膜的（corneal）/conjunctival sensation 經 ophthalmic division of 三叉神經（trigeminal nerve） 傳入 腦幹（brainstem）；副交感輸出隨 顏面神經（facial nerve） 經 greater petrosal nerve，到 pterygopalatine 神經節（ganglion） 換站，再到 淚腺（lacrimal gland）。",
+          "explain": "傳入（afferent）：CN V1（眼神經）\n\n正確選項：CN V1（眼神經）。\n角膜的（corneal）/conjunctival sensation 經 ophthalmic division of 三叉神經（trigeminal nerve） 傳入 腦幹（brainstem）；副交感輸出隨 顏面神經（facial nerve） 經 greater petrosal nerve，到 pterygopalatine 神經節（ganglion） 換站，再到 淚腺（lacrimal gland）。",
           "choices": [
             "第二對腦神經（CN II）",
-            "CN 初級視覺皮質（V1）",
+            "CN V1（眼神經）",
             "第七對腦神經（CN VII） 運動（motor）",
             "CN XII"
           ],
@@ -374,25 +380,27 @@
         },
         {
           "type": "card",
-          "title": "淚液成分不只水與鹽",
+          "title": "眼淚不是白開水，是會防守的清潔液",
           "body": [
-            "> 淚液同時是防禦液，含 antimicrobial proteins 與 immunoglobulins。",
+            "眼淚裡除了水和鹽，還有很多**防守成員**：",
             "",
-            "tear fluid 中可見 lysozyme、lactoferrin、lipocalin、secretory IgA 等。",
+            "- **溶菌酶、乳鐵蛋白**：幫忙殺菌",
+            "- **脂質運載蛋白**",
+            "- **分泌型 IgA**：黏膜的抗體",
             "",
-            "正常 pH、osmolarity 與蛋白平衡對 epithelial health 與抗菌防禦重要；發炎與過敏可改變成分。"
+            "正常的酸鹼度、滲透壓和蛋白質比例，對眼表健康很重要；**發炎、過敏**會改變眼淚的成分。"
           ]
         },
         {
           "type": "card",
-          "title": "重點整理｜淚液成分不只水與鹽",
+          "title": "重點整理｜眼淚不是白開水，是會防守的清潔液",
           "body": [
             "**口訣**：淚水不是白開水，是會防守的營養清潔液。"
           ],
           "exam": [
-            "lysozyme/lactoferrin 參與抗菌",
-            "secretory IgA 參與黏膜免疫",
-            "tear composition 會隨疾病改變"
+            "溶菌酶與乳鐵蛋白參與抗菌",
+            "分泌型 IgA 參與黏膜免疫",
+            "淚液成分會隨疾病改變"
           ]
         },
         {
@@ -434,10 +442,10 @@
               "q": "反射性流淚的主要感覺傳入是？",
               "answer": 1,
               "hint": "先辨認題目要比較的構造、機制或物理量；確認方向、條件與單位。",
-              "explain": "傳入（afferent）：CN 初級視覺皮質（V1）\n\n正確選項：CN 初級視覺皮質（V1）。\n角膜的（corneal）/conjunctival sensation 經 ophthalmic division of 三叉神經（trigeminal nerve） 傳入 腦幹（brainstem）；副交感輸出隨 顏面神經（facial nerve） 經 greater petrosal nerve，到 pterygopalatine 神經節（ganglion） 換站，再到 淚腺（lacrimal gland）。",
+              "explain": "傳入（afferent）：CN V1（眼神經）\n\n正確選項：CN V1（眼神經）。\n角膜的（corneal）/conjunctival sensation 經 ophthalmic division of 三叉神經（trigeminal nerve） 傳入 腦幹（brainstem）；副交感輸出隨 顏面神經（facial nerve） 經 greater petrosal nerve，到 pterygopalatine 神經節（ganglion） 換站，再到 淚腺（lacrimal gland）。",
               "choices": [
                 "第二對腦神經（CN II）",
-                "CN 初級視覺皮質（V1）",
+                "CN V1（眼神經）",
                 "第七對腦神經（CN VII） 運動（motor）",
                 "CN XII"
               ],
@@ -464,7 +472,7 @@
           "points": [
             "main 淚腺（lacrimal gland） 位於 superolateral orbit",
             "Krause/Wolfring 是 副淚腺（accessory lacrimal glands）",
-            "傳入（afferent）：CN 初級視覺皮質（V1）",
+            "傳入（afferent）：CN V1（眼神經）",
             "傳出（efferent） 副交感神經（parasympathetic）：第七對腦神經（CN VII） → greater petrosal → pterygopalatine 神經節（ganglion）",
             "lysozyme/lactoferrin 參與抗菌",
             "secretory IgA 參與黏膜免疫"
@@ -476,7 +484,7 @@
               "id": "fcf79135d"
             },
             {
-              "front": "淚液反射弧：CN 初級視覺皮質（V1） 感覺進，第七對腦神經（CN VII） 副交感出",
+              "front": "淚液反射弧：CN V1（眼神經） 感覺進，第七對腦神經（CN VII） 副交感出",
               "back": "眼表受刺激後由 trigeminal 傳入（afferent） 回報，再由 facial 副交感路徑（parasympathetic pathway） 叫淚腺分泌。",
               "id": "f773fe07d"
             },
@@ -512,23 +520,26 @@
         },
         {
           "type": "card",
-          "title": "眨眼把淚膜重新鋪平",
+          "title": "眨眼：像雨刷一樣把淚膜重新鋪平",
           "body": [
-            "> 上眼瞼像雨刷，每次眨眼將淚液向眼表鋪展並重新整理脂質層。",
+            "每次眨眼，**上眼瞼像雨刷**，做了幾件事：",
             "",
-            "blink 將 淚膜（tear film） redistributed over cornea/結膜（conjunctiva），促進 meibomian lipid spreading，移除 debris，並把多餘淚液推向 medial tear meniscus 與 puncta。"
+            "- 把淚膜**重新鋪**在角膜和結膜上",
+            "- 幫忙**油脂鋪開**",
+            "- **清掉髒東西**",
+            "- 把多餘的淚液**推向內眼角**，送到淚點排走"
           ]
         },
         {
           "type": "card",
-          "title": "重點整理｜眨眼把淚膜重新鋪平",
+          "title": "重點整理｜眨眼：像雨刷一樣把淚膜重新鋪平",
           "body": [
-            "**口訣**：眨眼不是關燈，是重新鋪一層光學膜。"
+            "**口訣**：眨眼不是關燈，而是重新鋪一層光學膜。"
           ],
           "exam": [
-            "blink 重新鋪展與穩定 淚膜",
-            "協助 lipid spreading",
-            "將淚液推向內眥 引流（drainage） system"
+            "眨眼重新鋪展並穩定淚膜",
+            "協助脂質層鋪開",
+            "把淚液推向內眥的引流系統"
           ]
         },
         {
@@ -548,27 +559,28 @@
         },
         {
           "type": "card",
-          "title": "蒸發與 tear breakup 讓視力忽清忽糊",
+          "title": "淚膜破了，視力就忽清忽糊",
           "body": [
-            "> 眨眼後淚膜逐漸不穩，出現 dry spot 時角膜前表面不再平滑，視覺品質下降。",
+            "兩次眨眼之間，淚膜會慢慢**變薄**：蒸發、表面張力和局部缺陷都會讓它**破掉**。",
             "",
-            "兩次眨眼之間，蒸發（evaporation）、surface tension 與局部缺陷會讓淚膜變薄並 breakup。",
+            "淚膜一破，出現**乾點**，角膜前面這層「光學鏡面」就不平了，視力變差、**忽清忽糊**。",
             "",
-            "lipid deficiency 增加蒸發；黏蛋白（mucin）/wetting defect 會造成局部不易鋪展。",
+            "- **油不足** → 蒸發變多",
+            "- **黏液不足** → 局部鋪不開",
             "",
-            "淚膜破裂時間（tear breakup time） 用來評估穩定性。"
+            "用**淚膜破裂時間（TBUT）**來評估淚膜穩不穩。"
           ]
         },
         {
           "type": "card",
-          "title": "重點整理｜蒸發與 tear breakup 讓視力忽清忽糊",
+          "title": "重點整理｜淚膜破了，視力就忽清忽糊",
           "body": [
             "**口訣**：淚膜一破，眼睛的第一片鏡片就不平了。"
           ],
           "exam": [
-            "short 淚膜破裂時間（TBUT） 代表 淚膜（tear film） instability",
-            "lipid deficiency 常增加 蒸發",
-            "breakup 可造成 fluctuating vision"
+            "TBUT 短代表淚膜不穩定",
+            "脂質不足常增加蒸發",
+            "淚膜破裂可造成視力波動"
           ]
         },
         {
@@ -588,25 +600,25 @@
         },
         {
           "type": "card",
-          "title": "引流（drainage） 路徑一路走向鼻腔",
+          "title": "眼淚的出口：一路走向鼻腔",
           "body": [
-            "> 淚液從 puncta 進 canaliculi，再到 淚囊（lacrimal sac）、鼻淚管（nasolacrimal duct），最後流入 下鼻道（inferior meatus）。",
+            "淚水用完後的出口路線：",
             "",
-            "正常 引流（drainage） 依序為 upper/lower puncta → canaliculi → common 淚小管（canaliculus） → 淚囊 → 鼻淚管 → 下鼻道。",
+            "**淚點（上下各一）→ 淚小管 → 總淚小管 → 淚囊 → 鼻淚管 → 下鼻道**",
             "",
-            "眨眼與 orbicularis action 協助 lacrimal pump。"
+            "眨眼時眼輪匝肌會把淚囊拉開、淚小管擠扁，像**小幫浦**一樣把淚水吸進去。"
           ]
         },
         {
           "type": "card",
-          "title": "重點整理｜引流（drainage） 路徑一路走向鼻腔",
+          "title": "重點整理｜眼淚的出口：一路走向鼻腔",
           "body": [
             "**口訣**：淚點進、小管走、淚囊收、鼻淚管下、下鼻道出。"
           ],
           "exam": [
-            "最後開口：inferior 鼻側（nasal） meatus",
-            "淚囊 在 鼻淚管 上游",
-            "阻塞可造成 epiphora"
+            "最後的開口：下鼻道",
+            "淚囊在鼻淚管的上游",
+            "阻塞會造成溢淚（epiphora）"
           ]
         },
         {
@@ -724,11 +736,13 @@
         },
         {
           "type": "card",
-          "title": "單元路線",
+          "title": "這個單元的學習路線",
           "body": [
-            "- 先認脂質、水液、黏液三種功能。",
-            "- 再把每種成分配到分泌來源。",
-            "- 最後用眨眼、蒸發與 引流（drainage） 理解乾眼。"
+            "**這個單元的學習路線**",
+            "",
+            "1. 先認淚膜的三層：**油（脂質層）、水（水液層）、黏液**，各有什麼功能。",
+            "2. 再把每一層配到**分泌的來源**。",
+            "3. 最後用**眨眼、蒸發、引流**來理解**乾眼**。"
           ]
         },
         {
@@ -742,15 +756,13 @@
         },
         {
           "type": "card",
-          "title": "應用：由條件走到結論",
+          "title": "試著用自己的話說一遍",
           "body": [
-            "**情境**",
-            "用自己的話說明「單元路線」，並說出一個判斷依據。",
+            "**試著做做看**",
             "",
-            "**結論**",
-            "- 先認脂質、水液、黏液三種功能。",
-            "- 再把每種成分配到分泌來源。",
-            "- 最後用眨眼、蒸發與 引流 理解乾眼。"
+            "用自己的話，把上面幾步說一遍，再說出一個判斷依據。",
+            "",
+            "說得出來，就代表你懂了。"
           ]
         },
         {

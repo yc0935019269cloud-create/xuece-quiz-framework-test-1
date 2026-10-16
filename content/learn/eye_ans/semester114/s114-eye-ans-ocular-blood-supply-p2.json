@@ -35,11 +35,13 @@
         },
         {
           "type": "card",
-          "title": "單元路線",
+          "title": "這個單元的學習路線",
           "body": [
-            "- 先找到 眼動脈（ophthalmic artery） 的來源。",
-            "- 再把分支依供應區域分組。",
-            "- 最後用雙重供血與靜脈回流解釋臨床病灶。"
+            "**這個單元的學習路線**",
+            "",
+            "1. 先找到**眼動脈的來源**（內頸動脈）。",
+            "2. 再把分支依**供應的區域**分組（視網膜、脈絡膜、虹膜、淚腺、眼外肌…）。",
+            "3. 最後用**雙重供血**與**靜脈回流**，解釋臨床上的病灶。"
           ]
         },
         {
@@ -53,15 +55,13 @@
         },
         {
           "type": "card",
-          "title": "應用：由條件走到結論",
+          "title": "試著用自己的話說一遍",
           "body": [
-            "**情境**",
-            "用自己的話說明「單元路線」，並說出一個判斷依據。",
+            "**試著做做看**",
             "",
-            "**結論**",
-            "- 先找到 眼動脈 的來源。",
-            "- 再把分支依供應區域分組。",
-            "- 最後用雙重供血與靜脈回流解釋臨床病灶。"
+            "用自己的話，把上面幾步說一遍，再說出一個判斷依據。",
+            "",
+            "說得出來，就代表你懂了。"
           ]
         },
         {
@@ -152,10 +152,9 @@
         },
         {
           "type": "card",
-          "title": "判斷依據：眼球構造血液供給",
-          "body": "外層視網膜（outer retina） 尤其 感光細胞（photoreceptors） 依賴 脈絡膜微血管層（choriocapillaris）。\n\n正確選項：脈絡膜微血管層。\n",
-          "keys": [
-            "外層視網膜（outer retina） 尤其 感光細胞（photoreceptors） 依賴 脈絡膜微血管層（choriocapillaris）。\n\n正確選項：脈絡膜微血管層（choriocapillaris）。\n"
+          "title": "為什麼這樣判斷？",
+          "body": [
+            "**外層視網膜（尤其感光細胞）**靠**脈絡膜微血管層**。"
           ]
         },
         {
@@ -175,10 +174,9 @@
         },
         {
           "type": "card",
-          "title": "判斷依據：眼球構造血液供給",
-          "body": "短後睫狀動脈（short posterior ciliary arteries） 供應 脈絡膜（choroid） 並參與 視神經（optic nerve） 頭部（head） 供血。\n\n正確選項：脈絡膜 與 視神經 頭部。\n",
-          "keys": [
-            "短後睫狀動脈（short posterior ciliary arteries） 供應 脈絡膜（choroid） 並參與 視神經（optic nerve） 頭部（head） 供血。\n\n正確選項：脈絡膜（choroid） 與 視神經（optic nerve） 頭部（head）。\n"
+          "title": "為什麼這樣判斷？",
+          "body": [
+            "**短後睫狀動脈**供應**脈絡膜**，也參與**視神經頭**的供血。"
           ]
         },
         {
@@ -198,10 +196,9 @@
         },
         {
           "type": "card",
-          "title": "判斷依據：眼球構造血液供給",
-          "body": "渦靜脈（vortex veins） 是 uveal/choroidal 引流（drainage） 主力。\n\n正確選項：渦靜脈。\n",
-          "keys": [
-            "渦靜脈（vortex veins） 是 uveal/choroidal 引流（drainage） 主力。\n\n正確選項：渦靜脈（vortex veins）。\n"
+          "title": "為什麼這樣判斷？",
+          "body": [
+            "**渦靜脈**是**脈絡膜（葡萄膜）**的主要引流。"
           ]
         },
         {
@@ -328,8 +325,10 @@
         },
         {
           "type": "card",
-          "title": "判斷依據：眼球構造血液供給",
-          "body": "中央視網膜動脈（central retinal artery） 遮擋（occlusion） 會急性嚴重視力下降，需緊急處理。\n\n正確選項：ocular emergency。\n"
+          "title": "為什麼這樣判斷？",
+          "body": [
+            "**中央視網膜動脈阻塞**會突然嚴重失明，是**眼科急症**，要緊急處理。"
+          ]
         },
         {
           "type": "check",
@@ -348,13 +347,13 @@
         },
         {
           "type": "card",
-          "title": "應用：由條件走到結論",
+          "title": "看題目、找依據",
           "body": [
-            "**情境**",
-            "中央視網膜動脈（central retinal artery） 遮擋（occlusion） 是什麼性質？",
+            "**題目**",
+            "中央視網膜動脈阻塞，是什麼性質的問題？",
             "",
-            "**結論**",
-            "ocular emergency"
+            "**答案**",
+            "眼科急症（突然、無痛的嚴重視力下降）"
           ]
         },
         {
