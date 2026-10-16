@@ -1,0 +1,789 @@
+{
+ "checks": [
+  {
+   "name": "s114-optometry-va-sph 存在",
+   "pass": true
+  },
+  {
+   "name": "s114-optometry-va-sph：路徑為 114 大一下 → 114 學年度 → 視光學 → 單元",
+   "pass": true,
+   "extra": [
+    "114 大一下",
+    "114 學年度",
+    "視光學",
+    "第01單元 視力與球面屈光不正"
+   ]
+  },
+  {
+   "name": "s114-optometry-va-sph：每張概念卡有國考重點與示範（22 張）",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-va-sph：知識筆記 exam-cram + formula-summary",
+   "pass": true,
+   "extra": [
+    "exam-cram",
+    "formula-summary"
+   ]
+  },
+  {
+   "name": "s114-optometry-va-sph：所有 practice 都有題目來源",
+   "pass": true,
+   "extra": {
+    "practice": 8,
+    "pooled": 8
+   }
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx 存在",
+   "pass": true
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：路徑為 114 大一下 → 114 學年度 → 視光學 → 單元",
+   "pass": true,
+   "extra": [
+    "114 大一下",
+    "114 學年度",
+    "視光學",
+    "第02單元 散光與處方書寫"
+   ]
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：每張概念卡有國考重點與示範（21 張）",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：知識筆記 exam-cram + formula-summary",
+   "pass": true,
+   "extra": [
+    "exam-cram",
+    "formula-summary"
+   ]
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：所有 practice 都有題目來源",
+   "pass": true,
+   "extra": {
+    "practice": 7,
+    "pooled": 7
+   }
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro 存在",
+   "pass": true
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：路徑為 114 大一下 → 114 學年度 → 視光學 → 單元",
+   "pass": true,
+   "extra": [
+    "114 大一下",
+    "114 學年度",
+    "視光學",
+    "第03單元 視網膜檢影入門"
+   ]
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：每張概念卡有國考重點與示範（15 張）",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：知識筆記 exam-cram + formula-summary",
+   "pass": true,
+   "extra": [
+    "exam-cram",
+    "formula-summary"
+   ]
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：所有 practice 都有題目來源",
+   "pass": true,
+   "extra": {
+    "practice": 5,
+    "pooled": 5
+   }
+  },
+  {
+   "name": "第01～03單元國考題 138 題載入",
+   "pass": true,
+   "extra": {
+    "n": 138,
+    "noEx": 0,
+    "sets": 23,
+    "badPath": [],
+    "o2n": 61,
+    "o2bad": []
+   }
+  },
+  {
+   "name": "新國考題每題都有詳解",
+   "pass": true,
+   "extra": {
+    "n": 138,
+    "noEx": 0,
+    "sets": 23,
+    "badPath": [],
+    "o2n": 61,
+    "o2bad": []
+   }
+  },
+  {
+   "name": "新國考題本路徑為「114 大一下 → ○○ 年國考 → 視光學 → 單元」",
+   "pass": true,
+   "extra": {
+    "n": 138,
+    "noEx": 0,
+    "sets": 23,
+    "badPath": [],
+    "o2n": 61,
+    "o2bad": []
+   }
+  },
+  {
+   "name": "視光學二國考題本路徑改為「115 大二上 → ○○ 年國考 → 視光學二 → 單元」（61 本）",
+   "pass": true,
+   "extra": {
+    "n": 138,
+    "noEx": 0,
+    "sets": 23,
+    "badPath": [],
+    "o2n": 61,
+    "o2bad": []
+   }
+  },
+  {
+   "name": "s114-optometry-va-sph：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-va-sph",
+    "title": "國考重點複習：視力與屈光不正最常考的 6 個考點",
+    "steps": 10,
+    "cards": 3,
+    "examples": 1,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-va-sph：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-va-sph",
+    "title": "國考重點複習：視力與屈光不正最常考的 6 個考點",
+    "steps": 10,
+    "cards": 3,
+    "examples": 1,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-va-sph：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-astigmatism-rx",
+    "title": "國考重點複習：散光與處方書寫最常考的 6 個考點",
+    "steps": 12,
+    "cards": 4,
+    "examples": 1,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-astigmatism-rx",
+    "title": "國考重點複習：散光與處方書寫最常考的 6 個考點",
+    "steps": 12,
+    "cards": 4,
+    "examples": 1,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-retinoscopy-intro",
+    "title": "國考重點複習：視網膜檢影最常考的 4 個考點",
+    "steps": 10,
+    "cards": 3,
+    "examples": 1,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-retinoscopy-intro",
+    "title": "國考重點複習：視網膜檢影最常考的 4 個考點",
+    "steps": 10,
+    "cards": 3,
+    "examples": 1,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-pd-lensometry-p2：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-pd-lensometry-p2",
+    "title": "國考重點複習：稜鏡度、Prentice 法則與焦度計",
+    "steps": 14,
+    "cards": 4,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-pd-lensometry-p2：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-pd-lensometry-p2",
+    "title": "國考重點複習：稜鏡度、Prentice 法則與焦度計",
+    "steps": 14,
+    "cards": 4,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-pd-lensometry-p2：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-objective-refraction-p2：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-objective-refraction-p2",
+    "title": "國考重點複習：檢影處方計算與動向判讀",
+    "steps": 14,
+    "cards": 4,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-objective-refraction-p2：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-objective-refraction-p2",
+    "title": "國考重點複習：檢影處方計算與動向判讀",
+    "steps": 14,
+    "cards": 4,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-objective-refraction-p2：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-keratometry-p2：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-keratometry-p2",
+    "title": "國考重點複習：K 值、角膜散光與殘餘散光",
+    "steps": 13,
+    "cards": 4,
+    "examples": 2,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-keratometry-p2：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-keratometry-p2",
+    "title": "國考重點複習：K 值、角膜散光與殘餘散光",
+    "steps": 13,
+    "cards": 4,
+    "examples": 2,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-keratometry-p2：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-pupil-response-p2：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-pupil-response-p2",
+    "title": "國考重點複習：瞳孔光反射路徑、RAPD 與藥理",
+    "steps": 11,
+    "cards": 3,
+    "examples": 2,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-pupil-response-p2：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-pupil-response-p2",
+    "title": "國考重點複習：瞳孔光反射路徑、RAPD 與藥理",
+    "steps": 11,
+    "cards": 3,
+    "examples": 2,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-pupil-response-p2：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-stereopsis-p2：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-stereopsis-p2",
+    "title": "國考重點複習：立體視的條件、測驗比較與判讀",
+    "steps": 11,
+    "cards": 3,
+    "examples": 2,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-stereopsis-p2：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-stereopsis-p2",
+    "title": "國考重點複習：立體視的條件、測驗比較與判讀",
+    "steps": 11,
+    "cards": 3,
+    "examples": 2,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-stereopsis-p2：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-near-point-p2：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-near-point-p2",
+    "title": "國考重點複習：調節幅度、半幅加入度與 NPC",
+    "steps": 14,
+    "cards": 4,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-near-point-p2：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "s114-optometry-near-point-p2",
+    "title": "國考重點複習：調節幅度、半幅加入度與 NPC",
+    "steps": 14,
+    "cards": 4,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "s114-optometry-near-point-p2：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "optom2-u1-intro：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "optom2-u1-intro",
+    "title": "國考重點複習：驗光流程順序與視光學一高頻考點速查",
+    "steps": 9,
+    "cards": 2,
+    "examples": 2,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "optom2-u1-intro：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "optom2-u1-intro",
+    "title": "國考重點複習：驗光流程順序與視光學一高頻考點速查",
+    "steps": 9,
+    "cards": 2,
+    "examples": 2,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "optom2-u1-intro：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "optom2-u2-msr：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "optom2-u2-msr",
+    "title": "國考重點複習：高頻考點與解題策略",
+    "steps": 10,
+    "cards": 2,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "optom2-u2-msr：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "optom2-u2-msr",
+    "title": "國考重點複習：高頻考點與解題策略",
+    "steps": 10,
+    "cards": 2,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "optom2-u2-msr：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "optom2-u3-vf：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "optom2-u3-vf",
+    "title": "國考重點複習：視野題怎麼讀？",
+    "steps": 10,
+    "cards": 2,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "optom2-u3-vf：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "optom2-u3-vf",
+    "title": "國考重點複習：視野題怎麼讀？",
+    "steps": 10,
+    "cards": 2,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "optom2-u3-vf：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "optom2-u4-bb：有「國考重點複習」課",
+   "pass": true,
+   "extra": {
+    "id": "optom2-u4-bb",
+    "title": "國考重點複習：雙眼平衡題怎麼拿分？",
+    "steps": 10,
+    "cards": 2,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "optom2-u4-bb：複習課有考點卡與例題講解",
+   "pass": true,
+   "extra": {
+    "id": "optom2-u4-bb",
+    "title": "國考重點複習：雙眼平衡題怎麼拿分？",
+    "steps": 10,
+    "cards": 2,
+    "examples": 3,
+    "cardsOk": true,
+    "unresolved": []
+   }
+  },
+  {
+   "name": "optom2-u4-bb：複習課實戰題目都存在",
+   "pass": true,
+   "extra": []
+  },
+  {
+   "name": "s114-optometry-va-sph：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-va-sph：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-pd-lensometry-p2：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-pd-lensometry-p2：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-objective-refraction-p2：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-objective-refraction-p2：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-keratometry-p2：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-keratometry-p2：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-pupil-response-p2：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-pupil-response-p2：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-stereopsis-p2：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-stereopsis-p2：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-near-point-p2：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-near-point-p2：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "optom2-u1-intro：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "optom2-u1-intro：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "optom2-u2-msr：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "optom2-u2-msr：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "optom2-u3-vf：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "optom2-u3-vf：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "optom2-u4-bb：複習課的概念卡（國考重點＋示範）可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "optom2-u4-bb：複習課的例題講解可渲染",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "s114-optometry-va-sph：國考總演練實際出題（抽題池 66 題）",
+   "pass": true,
+   "extra": {
+    "li": 7,
+    "lid": "l8",
+    "si": 8,
+    "pool": 66
+   }
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：國考總演練實際出題（抽題池 58 題）",
+   "pass": true,
+   "extra": {
+    "li": 6,
+    "lid": "l7",
+    "si": 10,
+    "pool": 58
+   }
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：國考總演練實際出題（抽題池 14 題）",
+   "pass": true,
+   "extra": {
+    "li": 4,
+    "lid": "l5",
+    "si": 8,
+    "pool": 14
+   }
+  },
+  {
+   "name": "s114-optometry-va-sph：筆記頁有「考前必看」",
+   "pass": true
+  },
+  {
+   "name": "s114-optometry-va-sph：考前必看有相關題連結",
+   "pass": true,
+   "extra": 11
+  },
+  {
+   "name": "s114-optometry-va-sph：相關題可開啟唯讀題目視窗",
+   "pass": true,
+   "extra": "s114-optometry-exam106-u01-vt-op-39"
+  },
+  {
+   "name": "s114-optometry-va-sph：筆記頁有「公式統整」",
+   "pass": true
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：筆記頁有「考前必看」",
+   "pass": true
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：考前必看有相關題連結",
+   "pass": true,
+   "extra": 9
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：相關題可開啟唯讀題目視窗",
+   "pass": true,
+   "extra": "s114-optometry-exam106-u02-vt-op-3"
+  },
+  {
+   "name": "s114-optometry-astigmatism-rx：筆記頁有「公式統整」",
+   "pass": true
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：筆記頁有「考前必看」",
+   "pass": true
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：考前必看有相關題連結",
+   "pass": true,
+   "extra": 6
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：相關題可開啟唯讀題目視窗",
+   "pass": true,
+   "extra": "s114-optometry-exam108-u03-vt-op-17"
+  },
+  {
+   "name": "s114-optometry-retinoscopy-intro：筆記頁有「公式統整」",
+   "pass": true
+  },
+  {
+   "name": "手機寬度（390px）沒有橫向捲動",
+   "pass": true,
+   "extra": {
+    "sw": 390,
+    "iw": 390
+   }
+  },
+  {
+   "name": "沒有頁面錯誤",
+   "pass": true,
+   "extra": []
+  }
+ ],
+ "errors": [],
+ "errorsCount": 0
+}
