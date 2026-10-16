@@ -15,7 +15,7 @@
    ]
   },
   {
-   "name": "s114-optometry-va-sph：每張概念卡有國考重點與示範（22 張）",
+   "name": "s114-optometry-va-sph：每張概念卡有國考重點與示範（44 張）",
    "pass": true,
    "extra": []
   },
@@ -50,7 +50,7 @@
    ]
   },
   {
-   "name": "s114-optometry-astigmatism-rx：每張概念卡有國考重點與示範（21 張）",
+   "name": "s114-optometry-astigmatism-rx：每張概念卡有國考重點與示範（42 張）",
    "pass": true,
    "extra": []
   },
@@ -85,7 +85,7 @@
    ]
   },
   {
-   "name": "s114-optometry-retinoscopy-intro：每張概念卡有國考重點與示範（15 張）",
+   "name": "s114-optometry-retinoscopy-intro：每張概念卡有國考重點與示範（30 張）",
    "pass": true,
    "extra": []
   },
@@ -159,8 +159,8 @@
    "extra": {
     "id": "s114-optometry-va-sph",
     "title": "國考重點複習：視力與屈光不正最常考的 6 個考點",
-    "steps": 10,
-    "cards": 3,
+    "steps": 13,
+    "cards": 6,
     "examples": 1,
     "cardsOk": true,
     "unresolved": []
@@ -172,8 +172,8 @@
    "extra": {
     "id": "s114-optometry-va-sph",
     "title": "國考重點複習：視力與屈光不正最常考的 6 個考點",
-    "steps": 10,
-    "cards": 3,
+    "steps": 13,
+    "cards": 6,
     "examples": 1,
     "cardsOk": true,
     "unresolved": []
@@ -190,8 +190,8 @@
    "extra": {
     "id": "s114-optometry-astigmatism-rx",
     "title": "國考重點複習：散光與處方書寫最常考的 6 個考點",
-    "steps": 12,
-    "cards": 4,
+    "steps": 16,
+    "cards": 8,
     "examples": 1,
     "cardsOk": true,
     "unresolved": []
@@ -203,8 +203,8 @@
    "extra": {
     "id": "s114-optometry-astigmatism-rx",
     "title": "國考重點複習：散光與處方書寫最常考的 6 個考點",
-    "steps": 12,
-    "cards": 4,
+    "steps": 16,
+    "cards": 8,
     "examples": 1,
     "cardsOk": true,
     "unresolved": []
@@ -221,8 +221,8 @@
    "extra": {
     "id": "s114-optometry-retinoscopy-intro",
     "title": "國考重點複習：視網膜檢影最常考的 4 個考點",
-    "steps": 10,
-    "cards": 3,
+    "steps": 13,
+    "cards": 6,
     "examples": 1,
     "cardsOk": true,
     "unresolved": []
@@ -234,8 +234,8 @@
    "extra": {
     "id": "s114-optometry-retinoscopy-intro",
     "title": "國考重點複習：視網膜檢影最常考的 4 個考點",
-    "steps": 10,
-    "cards": 3,
+    "steps": 13,
+    "cards": 6,
     "examples": 1,
     "cardsOk": true,
     "unresolved": []
@@ -692,7 +692,7 @@
    "extra": {
     "li": 7,
     "lid": "l8",
-    "si": 8,
+    "si": 11,
     "pool": 66
    }
   },
@@ -702,7 +702,7 @@
    "extra": {
     "li": 6,
     "lid": "l7",
-    "si": 10,
+    "si": 14,
     "pool": 58
    }
   },
@@ -712,7 +712,7 @@
    "extra": {
     "li": 4,
     "lid": "l5",
-    "si": 8,
+    "si": 11,
     "pool": 14
    }
   },

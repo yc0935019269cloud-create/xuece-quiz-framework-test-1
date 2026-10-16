@@ -35,7 +35,7 @@ const ok = (name, pass, extra) => { out.checks.push({ name, pass: !!pass, extra 
     const p = LEARN_UI.packs.find(x => x.id === id);
     if (!p) return { id, missing: true };
     const cards = [];
-    p.lessons.forEach(l => l.steps.forEach(s => { if (s.type === 'card') cards.push({ lesson: l.id, title: s.title, exam: (s.exam || []).length, demo: !!s.demo }); }));
+    p.lessons.forEach(l => l.steps.forEach((s, i) => { if (s.type === 'card') { const nx = l.steps[i + 1]; const own = (s.exam || []).length > 0 && !!s.demo; const nextOk = !!nx && nx.type === 'card' && (nx.exam || []).length > 0 && !!nx.demo; cards.push({ lesson: l.id, title: s.title, exam: own || nextOk ? 1 : 0, demo: own || nextOk }); } }));
     const practice = p.lessons.flatMap(l => l.steps.filter(s => s.type === 'practice'));
     const pooled = practice.filter(s => (s.qids || []).length || (s.pick && (s.pick.ids || []).length)).length;
     return { id, lessons: p.lessons.length, cards, notes: (p.notes || []).map(n => n.kind), practice: practice.length, pooled, banks: (p.banks || []).length, path: p.path };
@@ -69,11 +69,11 @@ const ok = (name, pass, extra) => { out.checks.push({ name, pass: !!pass, extra 
     if (!p) return { id, missing: true };
     const l = REVIEW[id] ? p.lessons.find(x => x.id === REVIEW[id]) : p.lessons[p.lessons.length - 1];
     if (!l) return { id, nolesson: true };
-    const cards = l.steps.filter(s => s.type === 'card');
+    const cards = l.steps.filter((s, i) => s.type === 'card').map((s, _) => { const i = l.steps.indexOf(s); const nx = l.steps[i + 1]; const own = (s.exam || []).length > 0 && !!s.demo; const nextOk = !!nx && nx.type === 'card' && (nx.exam || []).length > 0 && !!nx.demo; return Object.assign({}, s, { _ok: own || nextOk }); });
     const unresolved = [];
     l.steps.filter(s => s.type === 'practice').forEach(s => (s.qids || []).forEach(q => { if (!Store.Q[q]) unresolved.push(q); }));
     return { id, title: l.title, steps: l.steps.length, cards: cards.length, examples: l.steps.filter(s => s.type === 'example').length,
-      cardsOk: cards.every(c => (c.exam || []).length && c.demo), unresolved };
+      cardsOk: cards.every(c => c._ok), unresolved };
   }), REVIEW);
   for (const r of rev) {
     ok(`${r.id}：有「國考重點複習」課`, !r.missing && !r.nolesson && /國考重點複習/.test(r.title || ''), r);
@@ -89,7 +89,7 @@ const ok = (name, pass, extra) => { out.checks.push({ name, pass: !!pass, extra 
       const p = LEARN_UI.packs.find(x => x.id === id);
       const li = lid ? p.lessons.findIndex(x => x.id === lid) : p.lessons.length - 1;
       const l = p.lessons[li];
-      return { li, lid: l.id, ci: l.steps.findIndex(s => s.type === 'card'), ei: l.steps.findIndex(s => s.type === 'example') };
+      return { li, lid: l.id, ci: l.steps.findIndex(s => s.type === 'card' && (s.exam || []).length), ei: l.steps.findIndex(s => s.type === 'example') };
     }, { id, lid: REVIEW[id] });
     for (const [kind, idx] of [['card', info.ci], ['example', info.ei]]) {
       await page.evaluate(({ k, id, info, idx }) => { const D = JSON.parse(localStorage.getItem(k) || 'null') || { les: {}, rev: {}, cfg: { battle: false, open: {} }, last: null, stat: {} }; D.les[id + '/' + info.lid] = { i: idx, done: 0, best: 0, run: { ok: 0, n: 0, sub: 0, pk: {}, t0: Date.now() } }; localStorage.setItem(k, JSON.stringify(D)); }, { k: keyLearn, id, info, idx });

@@ -274,3 +274,9 @@
 - `js/learn.js` 的 `renderDiagram`：標記點太近時縮小圓點並把重疊的點最多推開 14px（只改畫面，不改資料）；CSS 變數 `--pin`。
 - 圖片與標記點產生流程在專案外 `E:\NEWTEST\eye_work\`（`figs_m*.py` 定義圖與標記點、`mask2.py` 塗標籤、`build_manual.py` 產生題本與單元、`overlay.py` 疊圖檢查）；內容正本是 `content/`，重跑 build_manual 會覆寫 manual-* 檔。
 - QA：`tools/eye115-qa/`（血液供應與複習課渲染）、`tools/manual-qa/check.cjs`（7 單元 265 步渲染、41 張圖解、319 題資料與圖檔、桌機與 390px，結果 0 問題）、`shots.cjs`（截圖到 output/playwright/manual-*.png）。需 `NODE_PATH=E:\NEWTEST\skull-atlas-3d\node_modules`。**沒有醫學審稿，標記點為依標本與原圖標籤人工定位（標本照片上細小構造如前脈絡叢動脈、E-W 核只標大致方向並設為不出題）；未做實機 iPad 測試。**
+
+## 視光學第 01～03 單元易讀版（2026-10-16，v98）
+
+- 使用者覺得字太密、希望國中生也能完全理解，並提議「學兩頁再進一次題目」。`s114-optometry-va-sph`／`astigmatism-rx`／`retinoscopy-intro` 共 58 張概念卡都拆成兩頁一組：A＝白話概念（生活比喻、短句、`keys`），B＝數字／表格＋🎯國考重點＋✏️示範；課程 intro 也縮短。題目、檢核題、practice、筆記、`teaches` 都沒動，覆蓋檢查仍全過。
+- `tools/build.py` 節奏規則改為：一或兩張連續 card 後接 check 即可，連續 3 張以上才警告；「一課 N 組概念卡」以組計算。`tools/s114-qa/check.cjs` 改成「卡片自己或下一頁有 exam＋demo」即通過（101/101、sweep 370 步 0 錯誤）。手機版課程標題列改成標題獨占一行（`.lp-head`，v98）。
+- 之後新單元請照這個寫法；視光學二（optom2）與 s114 第 04～09 單元、其他科目尚未改成兩頁版。

@@ -651,15 +651,23 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
             R.warn(W, '節奏：第一步建議是 intro（導入）')
         if types[-1] != 'recap':
             R.warn(W, '節奏：最後一步建議是 recap（回顧）')
+        # 概念卡可以兩頁一組（例如「白話概念」＋「數字與範例」），但一組之後要有 check；連續超過兩張卡會警告
+        runs = []
         for i, t in enumerate(types):
-            if t == 'card' and (i + 1 >= len(types) or types[i + 1] != 'check'):
-                R.warn(f'{W}.steps[{i}]', '節奏：每張 card 後面應緊接至少一題 check')
+            if t == 'card':
+                if runs and runs[-1][1] == i - 1: runs[-1][1] = i
+                else: runs.append([i, i])
+        for a, b in runs:
+            if b - a + 1 > 2:
+                R.warn(f'{W}.steps[{a}]', '節奏：連續 3 張以上概念卡，建議拆開並在中間放 check')
+            elif b + 1 >= len(types) or types[b + 1] != 'check':
+                R.warn(f'{W}.steps[{b}]', '節奏：每組 card（一或兩頁）後面應緊接至少一題 check')
         if 'example' not in types:
             R.warn(W, '節奏：建議至少一個 example（範例拆解）')
         if 'practice' not in types:
             R.warn(W, '節奏：建議至少一個 practice（實戰）')
-        if types.count('card') > 5:
-            R.warn(W, f'一課有 {types.count("card")} 張概念卡，建議 2～4 張')
+        if len(runs) > 5:
+            R.warn(W, f'一課有 {len(runs)} 組概念卡，建議 2～4 組')
         if not 6 <= len(types) <= 22:
             R.warn(W, f'一課有 {len(types)} 步，建議 8～18 步')
     return R
