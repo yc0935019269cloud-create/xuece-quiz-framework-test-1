@@ -29,16 +29,18 @@
         {
           "type": "intro",
           "title": "串連、公式與易錯整合",
-          "body": "完整保留單元路線、必考重點與符號條件。"
+          "body": [
+            "完整保留單元路線、必考重點與符號條件。"
+          ]
         },
         {
           "type": "card",
           "title": "單元路線",
-          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先把 視網膜（retina） 與 視野（visual field） 對應翻正。\n- 再跟著 視神經（optic nerve） → 視交叉（chiasm） → 神經束（tract） → 外側膝狀體（LGN） → radiation → 皮質（cortex）。\n- 最後用視野缺損反推病灶。",
-          "keys": [
-            "把本單元的關係串起來，確認易錯条件與方向。"
-          ],
-          "tip": ""
+          "body": [
+            "- 先把 視網膜（retina） 與 視野（visual field） 對應翻正。",
+            "- 再跟著 視神經（optic nerve） → 視交叉（chiasm） → 神經束（tract） → 外側膝狀體（LGN） → radiation → 皮質（cortex）。",
+            "- 最後用視野缺損反推病灶。"
+          ]
         },
         {
           "type": "check",
@@ -52,9 +54,14 @@
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先把 視網膜（retina） 與 視野（visual field） 對應翻正。\n- 再跟著 視神經（optic nerve） → 視交叉（chiasm） → 神經束（tract） → 外側膝狀體（LGN） → radiation → 皮質（cortex）。\n- 最後用視野缺損反推病灶。\n- 把判斷依據連回題目：- 先把 視網膜 與 視野 對應翻正。\n- 再跟著 視神經 → 視交叉 → 神經束 → 外側膝狀體 → radiation → 皮質。\n- 最後用視野缺損反推病灶。\n\n**結論與依據**\n- 先把 視網膜 與 視野 對應翻正。\n- 再跟著 視神經 → 視交叉 → 神經束 → 外側膝狀體 → radiation → 皮質。\n- 最後用視野缺損反推病灶。",
-          "keys": [
-            "- 先把 視網膜（retina） 與 視野（visual field） 對應翻正。\n- 再跟著 視神經（optic nerve） → 視交叉（chiasm） → 神經束（tract） → 外側膝狀體（LGN） → radiation → 皮質（cortex）。\n- 最後用視野缺損反推病灶。"
+          "body": [
+            "**情境**",
+            "用自己的話說明「單元路線」，並說出一個判斷依據。",
+            "",
+            "**結論**",
+            "- 先把 視網膜 與 視野 對應翻正。",
+            "- 再跟著 視神經 → 視交叉 → 神經束 → 外側膝狀體 → radiation → 皮質。",
+            "- 最後用視野缺損反推病灶。"
           ]
         },
         {
@@ -139,7 +146,9 @@
         {
           "type": "intro",
           "title": "課末挑戰",
-          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          "body": [
+            "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          ]
         },
         {
           "type": "card",
@@ -167,10 +176,7 @@
         {
           "type": "card",
           "title": "判斷依據：中樞視覺路徑",
-          "body": "梅耶氏環（Meyer loop） 攜帶對側上視野。\n\n正確選項：左上象限。\n",
-          "keys": [
-            "梅耶氏環（Meyer loop） 攜帶對側上視野。\n\n正確選項：左上象限。\n"
-          ]
+          "body": "梅耶氏環（Meyer loop） 攜帶對側上視野。\n\n正確選項：左上象限。\n"
         },
         {
           "type": "check",
@@ -190,10 +196,7 @@
         {
           "type": "card",
           "title": "判斷依據：中樞視覺路徑",
-          "body": "中央 視交叉（chiasm） 病灶傷到交叉中的 鼻側視網膜纖維（nasal retinal fibers）。\n\n正確選項：視交叉（optic chiasm）。\n",
-          "keys": [
-            "中央 視交叉（chiasm） 病灶傷到交叉中的 鼻側視網膜纖維（nasal retinal fibers）。\n\n正確選項：視交叉（optic chiasm）。\n"
-          ]
+          "body": "中央 視交叉（chiasm） 病灶傷到交叉中的 鼻側視網膜纖維（nasal retinal fibers）。\n\n正確選項：視交叉（optic chiasm）。\n"
         },
         {
           "type": "check",
@@ -313,15 +316,14 @@
         {
           "type": "intro",
           "title": "課末挑戰",
-          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          "body": [
+            "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          ]
         },
         {
           "type": "card",
           "title": "判斷依據：中樞視覺路徑",
-          "body": "交叉後路徑已依半視野整合。\n\n正確選項：對側 同向視野缺損（homonymous defect）。\n",
-          "keys": [
-            "交叉後路徑已依半視野整合。\n\n正確選項：對側 同向視野缺損（homonymous defect）。\n"
-          ]
+          "body": "交叉後路徑已依半視野整合。\n\n正確選項：對側 同向視野缺損（homonymous defect）。\n"
         },
         {
           "type": "check",
@@ -341,9 +343,12 @@
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n交叉後單側病灶共同特徵？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- 交叉後路徑已依半視野整合。\n\n正確選項：對側 同向視野缺損（homonymous defect）。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\n對側 同向視野缺損",
-          "keys": [
-            "對側 同向視野缺損（homonymous defect）"
+          "body": [
+            "**情境**",
+            "交叉後單側病灶共同特徵？",
+            "",
+            "**結論**",
+            "對側 同向視野缺損"
           ]
         },
         {

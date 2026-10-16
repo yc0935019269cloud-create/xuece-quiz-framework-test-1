@@ -31,18 +31,32 @@
         {
           "type": "intro",
           "title": "三層模型：油、水、黏著底漆",
-          "body": "傳統三層模型好記，但實際 aqueous 與 黏蛋白（mucin） 會形成漸變混合。\n\n- 先看最外脂質層。\n- 再看中間水液。\n- 最後看 黏蛋白 如何讓角膜表面親水。"
+          "body": [
+            "傳統三層模型好記，但實際 aqueous 與 黏蛋白（mucin） 會形成漸變混合。\n\n- 先看最外脂質層。\n- 再看中間水液。\n- 最後看 黏蛋白 如何讓角膜表面親水。"
+          ]
         },
         {
           "type": "card",
           "title": "脂質層（lipid layer） 減少蒸發並穩定表面",
-          "body": "**一句話／白話**\n最外層脂質像薄薄油封，主要由 瞼板腺（meibomian glands） 提供。\n\n**觀念**\n脂質層（lipid layer） 位於 空氣（air）-tear interface，主要由 瞼板腺（meibomian gland） 分泌，含極性與非極性脂質。它減少 蒸發（evaporation）、降低表面張力並改善眨眼後淚膜穩定。\n\n**考試角度**\n- 主要來源：瞼板腺\n- 主要功能：減少 蒸發\n- 瞼板腺 dysfunction 可造成 evaporative dry eye\n\n**口訣**\n最外面薄油封，防止水太快蒸發。",
-          "keys": [
-            "主要來源：瞼板腺（meibomian glands）",
-            "主要功能：減少 蒸發（evaporation）",
-            "瞼板腺（meibomian gland） dysfunction 可造成 evaporative dry eye"
+          "body": [
+            "> 最外層脂質像薄薄油封，主要由 瞼板腺（meibomian glands） 提供。",
+            "",
+            "脂質層（lipid layer） 位於 空氣（air）-tear interface，主要由 瞼板腺（meibomian gland） 分泌，含極性與非極性脂質。",
+            "",
+            "它減少 蒸發（evaporation）、降低表面張力並改善眨眼後淚膜穩定。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜脂質層（lipid layer） 減少蒸發並穩定…",
+          "body": [
+            "**口訣**：最外面薄油封，防止水太快蒸發。"
           ],
-          "tip": "口訣：最外面薄油封，防止水太快蒸發。"
+          "exam": [
+            "主要來源：瞼板腺",
+            "主要功能：減少 蒸發",
+            "瞼板腺 dysfunction 可造成 evaporative dry eye"
+          ]
         },
         {
           "type": "check",
@@ -62,13 +76,25 @@
         {
           "type": "card",
           "title": "水液層（aqueous layer） 提供水分、養分與防禦",
-          "body": "**一句話／白話**\n水液層占主要體積，沖洗眼表並攜帶溶菌酶、抗體與營養。\n\n**觀念**\n水液成分（aqueous component） 主要來自 main 淚腺（lacrimal gland） 與 副淚腺（accessory lacrimal glands）。它含 electrolytes、proteins、lysozyme、lactoferrin、immunoglobulins 等，協助潤滑、抗菌與供應 avascular cornea。\n\n**考試角度**\n- 來源：main/副淚腺\n- 功能：潤滑、沖洗、抗菌、供應 cornea\n- 分泌不足造成 aqueous-deficient dry eye\n\n**口訣**\n中間水層是清潔水、營養液，也是防禦液。",
-          "keys": [
-            "來源：main/副淚腺（accessory lacrimal glands）",
+          "body": [
+            "> 水液層占主要體積，沖洗眼表並攜帶溶菌酶、抗體與營養。",
+            "",
+            "水液成分（aqueous component） 主要來自 main 淚腺（lacrimal gland） 與 副淚腺（accessory lacrimal glands）。",
+            "",
+            "它含 electrolytes、proteins、lysozyme、lactoferrin、immunoglobulins 等，協助潤滑、抗菌與供應 avascular cornea。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜水液層（aqueous layer） 提供水分、…",
+          "body": [
+            "**口訣**：中間水層是清潔水、營養液，也是防禦液。"
+          ],
+          "exam": [
+            "來源：main/副淚腺",
             "功能：潤滑、沖洗、抗菌、供應 cornea",
             "分泌不足造成 aqueous-deficient dry eye"
-          ],
-          "tip": "口訣：中間水層是清潔水、營養液，也是防禦液。"
+          ]
         },
         {
           "type": "check",
@@ -88,13 +114,25 @@
         {
           "type": "card",
           "title": "黏蛋白（mucin） 讓疏水角膜表面能被水鋪平",
-          "body": "**一句話／白話**\n黏液像底漆，讓水液能均勻貼在角膜上。\n\n**觀念**\nsecreted mucins 主要由 conjunctival goblet cells 提供；membrane-associated mucins 來自 ocular surface epithelium。它們把原本較 hydrophobic 的 epithelial surface 轉為 wettable surface，並捕捉 debris。\n\n**考試角度**\n- goblet cells 分泌 secreted 黏蛋白（mucin）\n- epithelial membrane 黏蛋白 形成 醣萼（glycocalyx）\n- 黏蛋白 缺乏會造成 wetting defect\n\n**口訣**\n黏液是底漆，沒有它，水會縮成一顆顆而鋪不開。",
-          "keys": [
-            "goblet cells 分泌 secreted 黏蛋白（mucin）",
-            "epithelial membrane 黏蛋白（mucin） 形成 醣萼（glycocalyx）",
-            "黏蛋白（mucin） 缺乏會造成 wetting defect"
+          "body": [
+            "> 黏液像底漆，讓水液能均勻貼在角膜上。",
+            "",
+            "secreted mucins 主要由 conjunctival goblet cells 提供；membrane-associated mucins 來自 ocular surface epithelium。",
+            "",
+            "它們把原本較 hydrophobic 的 epithelial surface 轉為 wettable surface，並捕捉 debris。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜黏蛋白（mucin） 讓疏水角膜表面能被水鋪平",
+          "body": [
+            "**口訣**：黏液是底漆，沒有它，水會縮成一顆顆而鋪不開。"
           ],
-          "tip": "口訣：黏液是底漆，沒有它，水會縮成一顆顆而鋪不開。"
+          "exam": [
+            "goblet cells 分泌 secreted 黏蛋白（mucin）",
+            "epithelial membrane 黏蛋白 形成 醣萼（glycocalyx）",
+            "黏蛋白 缺乏會造成 wetting defect"
+          ]
         },
         {
           "type": "check",
@@ -256,18 +294,32 @@
         {
           "type": "intro",
           "title": "淚液從哪裡來，神經如何控制",
-          "body": "來源要配對；反射性流淚則是感覺輸入與副交感輸出的迴路。\n\n- 先配對 glands 與成分。\n- 再看 basal/反射（reflex） 分泌（secretion）。\n- 最後走一遍 lacrimal 反射 arc。"
+          "body": [
+            "來源要配對；反射性流淚則是感覺輸入與副交感輸出的迴路。\n\n- 先配對 glands 與成分。\n- 再看 basal/反射（reflex） 分泌（secretion）。\n- 最後走一遍 lacrimal 反射 arc。"
+          ]
         },
         {
           "type": "card",
           "title": "主淚腺與副淚腺分工",
-          "body": "**一句話／白話**\nmain 淚腺（lacrimal gland） 特別參與反射性大量分泌；Krause/Wolfring accessory glands 支持基礎水液。\n\n**觀念**\n淚腺 位於 superolateral orbit，分 orbital 與 palpebral lobes。副淚腺（accessory lacrimal glands） of Krause and Wolfring 分布於 conjunctival fornix/tarsal region，參與 basal aqueous 分泌（secretion）。\n\n**考試角度**\n- main 淚腺 位於 superolateral orbit\n- Krause/Wolfring 是 副淚腺\n- 兩者都主要貢獻 水液成分（aqueous component）\n\n**口訣**\n大淚腺負責大量支援，小副淚腺維持日常底量。",
-          "keys": [
-            "main 淚腺（lacrimal gland） 位於 superolateral orbit",
-            "Krause/Wolfring 是 副淚腺（accessory lacrimal glands）",
-            "兩者都主要貢獻 水液成分（aqueous component）"
+          "body": [
+            "> main 淚腺（lacrimal gland） 特別參與反射性大量分泌；Krause/Wolfring accessory glands 支持基礎水液。",
+            "",
+            "淚腺 位於 superolateral orbit，分 orbital 與 palpebral lobes。",
+            "",
+            "副淚腺（accessory lacrimal glands） of Krause and Wolfring 分布於 conjunctival fornix/tarsal region，參與 basal aqueous 分泌（secretion）。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜主淚腺與副淚腺分工",
+          "body": [
+            "**口訣**：大淚腺負責大量支援，小副淚腺維持日常底量。"
           ],
-          "tip": "口訣：大淚腺負責大量支援，小副淚腺維持日常底量。"
+          "exam": [
+            "main 淚腺 位於 superolateral orbit",
+            "Krause/Wolfring 是 副淚腺",
+            "兩者都主要貢獻 水液成分（aqueous component）"
+          ]
         },
         {
           "type": "check",
@@ -287,13 +339,23 @@
         {
           "type": "card",
           "title": "淚液反射弧：CN 初級視覺皮質（V1） 感覺進，第七對腦神經（CN VII） 副交感出",
-          "body": "**一句話／白話**\n眼表受刺激後由 trigeminal 傳入（afferent） 回報，再由 facial 副交感路徑（parasympathetic pathway） 叫淚腺分泌。\n\n**觀念**\n角膜的（corneal）/conjunctival sensation 經 ophthalmic division of 三叉神經（trigeminal nerve） 傳入 腦幹（brainstem）；副交感輸出隨 顏面神經（facial nerve） 經 greater petrosal nerve，到 pterygopalatine 神經節（ganglion） 換站，再到 淚腺（lacrimal gland）。\n\n**考試角度**\n- 傳入：CN 初級視覺皮質（V1）\n- 傳出（efferent） 副交感神經（parasympathetic）：第七對腦神經（CN VII） → greater petrosal → pterygopalatine 神經節\n- 刺激眼表可引發 反射（reflex） tearing\n\n**口訣**\n感覺五進、分泌七出，中途翼腭神經節換站。",
-          "keys": [
-            "傳入（afferent）：CN 初級視覺皮質（V1）",
-            "傳出（efferent） 副交感神經（parasympathetic）：第七對腦神經（CN VII） → greater petrosal → pterygopalatine 神經節（ganglion）",
-            "刺激眼表可引發 反射（reflex） tearing"
+          "body": [
+            "> 眼表受刺激後由 trigeminal 傳入（afferent） 回報，再由 facial 副交感路徑（parasympathetic pathway） 叫淚腺分泌。",
+            "",
+            "角膜的（corneal）/conjunctival sensation 經 ophthalmic division of 三叉神經（trigeminal nerve） 傳入 腦幹（brainstem）；副交感輸出隨 顏面神經（facial nerve） 經 greater petrosal nerve，到 pterygopalatine 神經節（ganglion） 換站，再到 淚腺（lacrimal gland）。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜淚液反射弧：CN 初級視覺皮質（V1） 感覺進，…",
+          "body": [
+            "**口訣**：感覺五進、分泌七出，中途翼腭神經節換站。"
           ],
-          "tip": "口訣：感覺五進、分泌七出，中途翼腭神經節換站。"
+          "exam": [
+            "傳入：CN 初級視覺皮質（V1）",
+            "傳出（efferent） 副交感神經（parasympathetic）：第七對腦神經（CN VII） → greater petrosal → pterygopalatine 神經節",
+            "刺激眼表可引發 反射（reflex） tearing"
+          ]
         },
         {
           "type": "check",
@@ -313,13 +375,25 @@
         {
           "type": "card",
           "title": "淚液成分不只水與鹽",
-          "body": "**一句話／白話**\n淚液同時是防禦液，含 antimicrobial proteins 與 immunoglobulins。\n\n**觀念**\ntear fluid 中可見 lysozyme、lactoferrin、lipocalin、secretory IgA 等。正常 pH、osmolarity 與蛋白平衡對 epithelial health 與抗菌防禦重要；發炎與過敏可改變成分。\n\n**考試角度**\n- lysozyme/lactoferrin 參與抗菌\n- secretory IgA 參與黏膜免疫\n- tear composition 會隨疾病改變\n\n**口訣**\n淚水不是白開水，是會防守的營養清潔液。",
-          "keys": [
+          "body": [
+            "> 淚液同時是防禦液，含 antimicrobial proteins 與 immunoglobulins。",
+            "",
+            "tear fluid 中可見 lysozyme、lactoferrin、lipocalin、secretory IgA 等。",
+            "",
+            "正常 pH、osmolarity 與蛋白平衡對 epithelial health 與抗菌防禦重要；發炎與過敏可改變成分。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜淚液成分不只水與鹽",
+          "body": [
+            "**口訣**：淚水不是白開水，是會防守的營養清潔液。"
+          ],
+          "exam": [
             "lysozyme/lactoferrin 參與抗菌",
             "secretory IgA 參與黏膜免疫",
             "tear composition 會隨疾病改變"
-          ],
-          "tip": "口訣：淚水不是白開水，是會防守的營養清潔液。"
+          ]
         },
         {
           "type": "check",
@@ -432,18 +506,30 @@
         {
           "type": "intro",
           "title": "眨眼後的淚膜生命週期",
-          "body": "每次眨眼都在重新鋪膜；兩次眨眼間淚膜逐漸變薄、蒸發並可能破裂。\n\n- 先看分泌與鋪展。\n- 再看保持、蒸發與破裂。\n- 最後走 引流（drainage） 路徑。"
+          "body": [
+            "每次眨眼都在重新鋪膜；兩次眨眼間淚膜逐漸變薄、蒸發並可能破裂。\n\n- 先看分泌與鋪展。\n- 再看保持、蒸發與破裂。\n- 最後走 引流（drainage） 路徑。"
+          ]
         },
         {
           "type": "card",
           "title": "眨眼把淚膜重新鋪平",
-          "body": "**一句話／白話**\n上眼瞼像雨刷，每次眨眼將淚液向眼表鋪展並重新整理脂質層。\n\n**觀念**\nblink 將 淚膜（tear film） redistributed over cornea/結膜（conjunctiva），促進 meibomian lipid spreading，移除 debris，並把多餘淚液推向 medial tear meniscus 與 puncta。\n\n**考試角度**\n- blink 重新鋪展與穩定 淚膜\n- 協助 lipid spreading\n- 將淚液推向內眥 引流（drainage） system\n\n**口訣**\n眨眼不是關燈，是重新鋪一層光學膜。",
-          "keys": [
-            "blink 重新鋪展與穩定 淚膜（tear film）",
+          "body": [
+            "> 上眼瞼像雨刷，每次眨眼將淚液向眼表鋪展並重新整理脂質層。",
+            "",
+            "blink 將 淚膜（tear film） redistributed over cornea/結膜（conjunctiva），促進 meibomian lipid spreading，移除 debris，並把多餘淚液推向 medial tear meniscus 與 puncta。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜眨眼把淚膜重新鋪平",
+          "body": [
+            "**口訣**：眨眼不是關燈，是重新鋪一層光學膜。"
+          ],
+          "exam": [
+            "blink 重新鋪展與穩定 淚膜",
             "協助 lipid spreading",
             "將淚液推向內眥 引流（drainage） system"
-          ],
-          "tip": "口訣：眨眼不是關燈，是重新鋪一層光學膜。"
+          ]
         },
         {
           "type": "check",
@@ -463,13 +549,27 @@
         {
           "type": "card",
           "title": "蒸發與 tear breakup 讓視力忽清忽糊",
-          "body": "**一句話／白話**\n眨眼後淚膜逐漸不穩，出現 dry spot 時角膜前表面不再平滑，視覺品質下降。\n\n**觀念**\n兩次眨眼之間，蒸發（evaporation）、surface tension 與局部缺陷會讓淚膜變薄並 breakup。lipid deficiency 增加蒸發；黏蛋白（mucin）/wetting defect 會造成局部不易鋪展。淚膜破裂時間（tear breakup time） 用來評估穩定性。\n\n**考試角度**\n- short 淚膜破裂時間（TBUT） 代表 淚膜（tear film） instability\n- lipid deficiency 常增加 蒸發\n- breakup 可造成 fluctuating vision\n\n**口訣**\n淚膜一破，眼睛的第一片鏡片就不平了。",
-          "keys": [
-            "short 淚膜破裂時間（TBUT） 代表 淚膜（tear film） instability",
-            "lipid deficiency 常增加 蒸發（evaporation）",
-            "breakup 可造成 fluctuating vision"
+          "body": [
+            "> 眨眼後淚膜逐漸不穩，出現 dry spot 時角膜前表面不再平滑，視覺品質下降。",
+            "",
+            "兩次眨眼之間，蒸發（evaporation）、surface tension 與局部缺陷會讓淚膜變薄並 breakup。",
+            "",
+            "lipid deficiency 增加蒸發；黏蛋白（mucin）/wetting defect 會造成局部不易鋪展。",
+            "",
+            "淚膜破裂時間（tear breakup time） 用來評估穩定性。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜蒸發與 tear breakup 讓視力忽清忽糊",
+          "body": [
+            "**口訣**：淚膜一破，眼睛的第一片鏡片就不平了。"
           ],
-          "tip": "口訣：淚膜一破，眼睛的第一片鏡片就不平了。"
+          "exam": [
+            "short 淚膜破裂時間（TBUT） 代表 淚膜（tear film） instability",
+            "lipid deficiency 常增加 蒸發",
+            "breakup 可造成 fluctuating vision"
+          ]
         },
         {
           "type": "check",
@@ -489,13 +589,25 @@
         {
           "type": "card",
           "title": "引流（drainage） 路徑一路走向鼻腔",
-          "body": "**一句話／白話**\n淚液從 puncta 進 canaliculi，再到 淚囊（lacrimal sac）、鼻淚管（nasolacrimal duct），最後流入 下鼻道（inferior meatus）。\n\n**觀念**\n正常 引流（drainage） 依序為 upper/lower puncta → canaliculi → common 淚小管（canaliculus） → 淚囊 → 鼻淚管 → 下鼻道。眨眼與 orbicularis action 協助 lacrimal pump。\n\n**考試角度**\n- 最後開口：inferior 鼻側（nasal） meatus\n- 淚囊 在 鼻淚管 上游\n- 阻塞可造成 epiphora\n\n**口訣**\n淚點進、小管走、淚囊收、鼻淚管下、下鼻道出。",
-          "keys": [
-            "最後開口：inferior 鼻側（nasal） meatus",
-            "淚囊（lacrimal sac） 在 鼻淚管（nasolacrimal duct） 上游",
-            "阻塞可造成 epiphora"
+          "body": [
+            "> 淚液從 puncta 進 canaliculi，再到 淚囊（lacrimal sac）、鼻淚管（nasolacrimal duct），最後流入 下鼻道（inferior meatus）。",
+            "",
+            "正常 引流（drainage） 依序為 upper/lower puncta → canaliculi → common 淚小管（canaliculus） → 淚囊 → 鼻淚管 → 下鼻道。",
+            "",
+            "眨眼與 orbicularis action 協助 lacrimal pump。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜引流（drainage） 路徑一路走向鼻腔",
+          "body": [
+            "**口訣**：淚點進、小管走、淚囊收、鼻淚管下、下鼻道出。"
           ],
-          "tip": "口訣：淚點進、小管走、淚囊收、鼻淚管下、下鼻道出。"
+          "exam": [
+            "最後開口：inferior 鼻側（nasal） meatus",
+            "淚囊 在 鼻淚管 上游",
+            "阻塞可造成 epiphora"
+          ]
         },
         {
           "type": "check",
@@ -606,16 +718,18 @@
         {
           "type": "intro",
           "title": "串連、公式與易錯整合",
-          "body": "完整保留單元路線、必考重點與符號條件。"
+          "body": [
+            "完整保留單元路線、必考重點與符號條件。"
+          ]
         },
         {
           "type": "card",
           "title": "單元路線",
-          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先認脂質、水液、黏液三種功能。\n- 再把每種成分配到分泌來源。\n- 最後用眨眼、蒸發與 引流（drainage） 理解乾眼。",
-          "keys": [
-            "把本單元的關係串起來，確認易錯条件與方向。"
-          ],
-          "tip": ""
+          "body": [
+            "- 先認脂質、水液、黏液三種功能。",
+            "- 再把每種成分配到分泌來源。",
+            "- 最後用眨眼、蒸發與 引流（drainage） 理解乾眼。"
+          ]
         },
         {
           "type": "check",
@@ -629,9 +743,14 @@
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先認脂質、水液、黏液三種功能。\n- 再把每種成分配到分泌來源。\n- 最後用眨眼、蒸發與 引流（drainage） 理解乾眼。\n- 把判斷依據連回題目：- 先認脂質、水液、黏液三種功能。\n- 再把每種成分配到分泌來源。\n- 最後用眨眼、蒸發與 引流 理解乾眼。\n\n**結論與依據**\n- 先認脂質、水液、黏液三種功能。\n- 再把每種成分配到分泌來源。\n- 最後用眨眼、蒸發與 引流 理解乾眼。",
-          "keys": [
-            "- 先認脂質、水液、黏液三種功能。\n- 再把每種成分配到分泌來源。\n- 最後用眨眼、蒸發與 引流（drainage） 理解乾眼。"
+          "body": [
+            "**情境**",
+            "用自己的話說明「單元路線」，並說出一個判斷依據。",
+            "",
+            "**結論**",
+            "- 先認脂質、水液、黏液三種功能。",
+            "- 再把每種成分配到分泌來源。",
+            "- 最後用眨眼、蒸發與 引流 理解乾眼。"
           ]
         },
         {

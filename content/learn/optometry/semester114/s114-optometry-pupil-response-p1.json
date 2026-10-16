@@ -31,18 +31,32 @@
         {
           "type": "intro",
           "title": "正常瞳孔與大小判讀",
-          "body": "瞳孔是虹膜中央孔洞，控制入眼光量；正常應圓形、兩眼相近，並受年齡、光照、情緒與近反射影響。\n\n- 先定義 縮瞳（miosis）、散瞳（mydriasis）、瞳孔不等大（anisocoria）。\n- 再比較亮暗環境差異。\n- 最後把近反應三聯記熟。"
+          "body": [
+            "瞳孔是虹膜中央孔洞，控制入眼光量；正常應圓形、兩眼相近，並受年齡、光照、情緒與近反射影響。\n\n- 先定義 縮瞳（miosis）、散瞳（mydriasis）、瞳孔不等大（anisocoria）。\n- 再比較亮暗環境差異。\n- 最後把近反應三聯記熟。"
+          ]
         },
         {
           "type": "card",
           "title": "正常大小、縮瞳（miosis） 與 散瞳（mydriasis）",
-          "body": "**一句話／白話**\n瞳孔大小是縮瞳與散瞳力量的平衡，會隨光線、距離、藥物與神經狀態改變。\n\n**觀念**\n正常瞳孔可約 1-8 mm，室內常約 3-5 mm。小於約 3 mm 可稱 縮瞳（miosis）；大於約 7 mm 可稱 散瞳（mydriasis）。\n\n**重點**\n- 亮光與副交感使縮瞳\n- 暗處與交感使散瞳\n- 老人瞳孔常較小\n\n**考試角度**\n- 亮光與副交感使縮瞳\n- 暗處與交感使散瞳\n- 老人瞳孔常較小\n\n**口訣**\n小於約 3 mm 想 縮瞳，大於約 7 mm 想 散瞳。",
-          "keys": [
+          "body": [
+            "> 瞳孔大小是縮瞳與散瞳力量的平衡，會隨光線、距離、藥物與神經狀態改變。",
+            "",
+            "正常瞳孔可約 1-8 mm，室內常約 3-5 mm。",
+            "",
+            "小於約 3 mm 可稱 縮瞳（miosis）；大於約 7 mm 可稱 散瞳（mydriasis）。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜正常大小、縮瞳（miosis） 與 散瞳（myd…",
+          "body": [
+            "**口訣**：小於約 3 mm 想 縮瞳，大於約 7 mm 想 散瞳。"
+          ],
+          "exam": [
             "亮光與副交感使縮瞳",
             "暗處與交感使散瞳",
             "老人瞳孔常較小"
-          ],
-          "tip": "口訣：小於約 3 mm 想 縮瞳（miosis），大於約 7 mm 想 散瞳（mydriasis）。"
+          ]
         },
         {
           "type": "check",
@@ -62,13 +76,25 @@
         {
           "type": "card",
           "title": "生理性 瞳孔不等大（anisocoria）",
-          "body": "**一句話／白話**\n生理性瞳孔不等大通常差距小、亮暗都差不多，不會伴隨明顯神經學症狀。\n\n**觀念**\n約少數正常人可有生理性 瞳孔不等大（anisocoria）。關鍵是亮室與暗室兩眼差異大致相同；若暗室差更多，常指向小瞳孔那側散瞳障礙。\n\n**重點**\n- 亮暗差一樣：較可能生理性\n- 暗室差更多：小瞳孔側可能交感問題\n- 亮室差更多：大瞳孔側可能副交感問題\n\n**考試角度**\n- 亮暗差一樣：較可能生理性\n- 暗室差更多：小瞳孔側可能交感問題\n- 亮室差更多：大瞳孔側可能副交感問題\n\n**口訣**\n差小又穩定，多半生理；亮暗放大差距才找病灶。",
-          "keys": [
+          "body": [
+            "> 生理性瞳孔不等大通常差距小、亮暗都差不多，不會伴隨明顯神經學症狀。",
+            "",
+            "約少數正常人可有生理性 瞳孔不等大（anisocoria）。",
+            "",
+            "關鍵是亮室與暗室兩眼差異大致相同；若暗室差更多，常指向小瞳孔那側散瞳障礙。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜生理性 瞳孔不等大（anisocoria）",
+          "body": [
+            "**口訣**：差小又穩定，多半生理；亮暗放大差距才找病灶。"
+          ],
+          "exam": [
             "亮暗差一樣：較可能生理性",
             "暗室差更多：小瞳孔側可能交感問題",
             "亮室差更多：大瞳孔側可能副交感問題"
-          ],
-          "tip": "口訣：差小又穩定，多半生理；亮暗放大差距才找病灶。"
+          ]
         },
         {
           "type": "check",
@@ -88,13 +114,23 @@
         {
           "type": "card",
           "title": "近反應三聯（near triad）：調節、內聚、縮瞳",
-          "body": "**一句話／白話**\n看近物時，眼睛要同時增加晶狀體屈光力、兩眼內聚、瞳孔縮小，才能讓近物清楚。\n\n**觀念**\n近距離反射也稱 近反應三聯（near triad） 或 near synkinesis，包含 調節（accommodation）、會聚（convergence） 與 縮瞳（miosis），三者會連動。\n\n**重點**\n- 看近：睫狀肌收縮、水晶體變胖\n- 雙眼內聚\n- 瞳孔縮小\n\n**考試角度**\n- 看近：睫狀肌收縮、水晶體變胖\n- 雙眼內聚\n- 瞳孔縮小\n\n**口訣**\n近反應三件套：調節、會聚、縮瞳。",
-          "keys": [
+          "body": [
+            "> 看近物時，眼睛要同時增加晶狀體屈光力、兩眼內聚、瞳孔縮小，才能讓近物清楚。",
+            "",
+            "近距離反射也稱 近反應三聯（near triad） 或 near synkinesis，包含 調節（accommodation）、會聚（convergence） 與 縮瞳（miosis），三者會連動。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜近反應三聯（near triad）：調節、內聚、…",
+          "body": [
+            "**口訣**：近反應三件套：調節、會聚、縮瞳。"
+          ],
+          "exam": [
             "看近：睫狀肌收縮、水晶體變胖",
             "雙眼內聚",
             "瞳孔縮小"
-          ],
-          "tip": "口訣：近反應三件套：調節（accommodation）、會聚（convergence）、縮瞳（miosis）。"
+          ]
         },
         {
           "type": "check",
@@ -225,18 +261,32 @@
         {
           "type": "intro",
           "title": "光反射路徑與 相對傳入性瞳孔缺損（RAPD）",
-          "body": "光反射需 傳入（afferent） 視網膜（retina）/第二對腦神經（CN II） 與 傳出（efferent） 第三對腦神經（CN III）/副交感路徑完整；交替遮光檢查（swinging flashlight test） 可抓 relative 傳入 pupillary defect。\n\n- 先畫出 direct/consensual 共同路徑。\n- 再用 swinging flashlight 找 相對傳入性瞳孔缺損（RAPD）。\n- 最後分辨光反射與近反應。"
+          "body": [
+            "光反射需 傳入（afferent） 視網膜（retina）/第二對腦神經（CN II） 與 傳出（efferent） 第三對腦神經（CN III）/副交感路徑完整；交替遮光檢查（swinging flashlight test） 可抓 relative 傳入 pupillary defect。\n\n- 先畫出 direct/consensual 共同路徑。\n- 再用 swinging flashlight 找 相對傳入性瞳孔缺損（RAPD）。\n- 最後分辨光反射與近反應。"
+          ]
         },
         {
           "type": "card",
           "title": "direct 與 間接光反射（consensual response）",
-          "body": "**一句話／白話**\n光照一眼時，同眼縮瞳是 直接光反射（direct response），對眼同步縮瞳是 間接光反射（consensual response）。\n\n**觀念**\n照一眼時，同眼縮瞳稱 直接光反射，對側縮瞳稱 間接光反射。正常兩者應相近，因 pretectal/EW 核路徑有雙側投射。\n\n**重點**\n- 傳入（afferent）：視網膜（retina） → 視神經（optic nerve） → 頂蓋前區（pretectal area）\n- 傳出（efferent）：EW 核（nucleus） → 第三對腦神經（CN III） → 睫狀神經節（ciliary ganglion） → 括約肌（sphincter）\n- 同眼與對側都會縮\n\n**考試角度**\n- 傳入：視網膜 → 視神經 → 頂蓋前區\n- 傳出：EW 核 → 第三對腦神經 → 睫狀神經節 → 括約肌\n- 同眼與對側都會縮\n\n**口訣**\n一眼受光，兩眼都縮；同眼 direct，對眼 consensual。",
-          "keys": [
-            "傳入（afferent）：視網膜（retina） → 視神經（optic nerve） → 頂蓋前區（pretectal area）",
-            "傳出（efferent）：EW 核（nucleus） → 第三對腦神經（CN III） → 睫狀神經節（ciliary ganglion） → 括約肌（sphincter）",
-            "同眼與對側都會縮"
+          "body": [
+            "> 光照一眼時，同眼縮瞳是 直接光反射（direct response），對眼同步縮瞳是 間接光反射（consensual response）。",
+            "",
+            "照一眼時，同眼縮瞳稱 直接光反射，對側縮瞳稱 間接光反射。",
+            "",
+            "正常兩者應相近，因 pretectal/EW 核路徑有雙側投射。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜direct 與 間接光反射（consensua…",
+          "body": [
+            "**口訣**：一眼受光，兩眼都縮；同眼 direct，對眼 consensual。"
           ],
-          "tip": "口訣：一眼受光，兩眼都縮；同眼 direct，對眼 consensual。"
+          "exam": [
+            "傳入：視網膜 → 視神經 → 頂蓋前區",
+            "傳出：EW 核 → 第三對腦神經 → 睫狀神經節 → 括約肌",
+            "同眼與對側都會縮"
+          ]
         },
         {
           "type": "check",
@@ -256,13 +306,25 @@
         {
           "type": "card",
           "title": "交替遮光檢查（swinging flashlight test） 與 相對傳入性瞳孔缺損（RAPD）",
-          "body": "**一句話／白話**\n交替照光比較兩眼傳入訊號；照到 相對傳入性瞳孔缺損（RAPD） 眼時，中樞收到的光變少，兩眼會相對放大。\n\n**觀念**\n左右眼交替照光。若光移到病眼時兩眼反而相對放大，表示該眼傳入訊號較弱，稱 相對傳入性瞳孔缺損 或 馬庫斯－岡氏瞳孔（Marcus Gunn pupil）。\n\n**重點**\n- 相對傳入性瞳孔缺損 是 傳入（afferent） defect\n- 角膜、水晶體、屈光不正造成的視力差通常不造成 相對傳入性瞳孔缺損\n- 可用 中和（neutral） density filter 量化\n\n**考試角度**\n- 相對傳入性瞳孔缺損 是 傳入 defect\n- 角膜、水晶體、屈光不正造成的視力差通常不造成 相對傳入性瞳孔缺損\n- 可用 中和 density filter 量化\n\n**口訣**\n相對傳入性瞳孔缺損 是 傳入 defect，不是瞳孔括約肌壞掉。",
-          "keys": [
-            "相對傳入性瞳孔缺損（RAPD） 是 傳入（afferent） defect",
-            "角膜、水晶體、屈光不正造成的視力差通常不造成 相對傳入性瞳孔缺損（RAPD）",
-            "可用 中和（neutral） density filter 量化"
+          "body": [
+            "> 交替照光比較兩眼傳入訊號；照到 相對傳入性瞳孔缺損（RAPD） 眼時，中樞收到的光變少，兩眼會相對放大。",
+            "",
+            "左右眼交替照光。",
+            "",
+            "若光移到病眼時兩眼反而相對放大，表示該眼傳入訊號較弱，稱 相對傳入性瞳孔缺損 或 馬庫斯－岡氏瞳孔（Marcus Gunn pupil）。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜交替遮光檢查（swinging flashlig…",
+          "body": [
+            "**口訣**：相對傳入性瞳孔缺損 是 傳入 defect，不是瞳孔括約肌壞掉。"
           ],
-          "tip": "口訣：相對傳入性瞳孔缺損（RAPD） 是 傳入（afferent） defect，不是瞳孔括約肌壞掉。"
+          "exam": [
+            "相對傳入性瞳孔缺損 是 傳入 defect",
+            "角膜、水晶體、屈光不正造成的視力差通常不造成 相對傳入性瞳孔缺損",
+            "可用 中和 density filter 量化"
+          ]
         },
         {
           "type": "check",
@@ -282,13 +344,25 @@
         {
           "type": "card",
           "title": "光近分離（light-near dissociation）",
-          "body": "**一句話／白話**\n光近分離是光反射弱，但看近縮瞳保留，代表光反射路徑和近反應路徑受影響不同。\n\n**觀念**\n正常對光反應與近反應量及速度相近。若光反應差但看近縮瞳保留或更強，稱 光近分離（light-near dissociation）/聯合（association），常見於副交感路徑某些病變。\n\n**重點**\n- 光反應弱\n- 近反應相對保留\n- 艾迪氏強直性瞳孔（Adie's tonic pupil）、阿蓋爾－羅伯遜氏瞳孔（Argyll Robertson pupil） 皆可見\n\n**考試角度**\n- 光反應弱\n- 近反應相對保留\n- 艾迪氏強直性瞳孔、阿蓋爾－羅伯遜氏瞳孔 皆可見\n\n**口訣**\n光（Light） 差、near 好；想到 艾迪氏（Adie）、阿蓋爾氏（Argyll）。",
-          "keys": [
+          "body": [
+            "> 光近分離是光反射弱，但看近縮瞳保留，代表光反射路徑和近反應路徑受影響不同。",
+            "",
+            "正常對光反應與近反應量及速度相近。",
+            "",
+            "若光反應差但看近縮瞳保留或更強，稱 光近分離（light-near dissociation）/聯合（association），常見於副交感路徑某些病變。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜光近分離（light-near dissocia…",
+          "body": [
+            "**口訣**：光（Light） 差、near 好；想到 艾迪氏（Adie）、阿蓋爾氏（Argyll）。"
+          ],
+          "exam": [
             "光反應弱",
             "近反應相對保留",
-            "艾迪氏強直性瞳孔（Adie's tonic pupil）、阿蓋爾－羅伯遜氏瞳孔（Argyll Robertson pupil） 皆可見"
-          ],
-          "tip": "口訣：光（Light） 差、near 好；想到 艾迪氏（Adie）、阿蓋爾氏（Argyll）。"
+            "艾迪氏強直性瞳孔、阿蓋爾－羅伯遜氏瞳孔 皆可見"
+          ]
         },
         {
           "type": "check",
@@ -401,18 +475,32 @@
         {
           "type": "intro",
           "title": "副交感相關異常：第三對腦神經（CN III）、艾迪氏（Adie）、阿蓋爾－羅伯遜氏（Argyll Robertson）",
-          "body": "副交感路徑控制 括約肌（sphincter） 與縮瞳。不同層次病變會造成大瞳孔、光反應差、近反應保留或藥物超敏感。\n\n- 先看 第三對腦神經（CN III） 傳出路。\n- 再比較 艾迪氏（Adie） 與 阿蓋爾氏（Argyll） 的光近分離。\n- 最後用反應速度與藥物敏感性分開。"
+          "body": [
+            "副交感路徑控制 括約肌（sphincter） 與縮瞳。不同層次病變會造成大瞳孔、光反應差、近反應保留或藥物超敏感。\n\n- 先看 第三對腦神經（CN III） 傳出路。\n- 再比較 艾迪氏（Adie） 與 阿蓋爾氏（Argyll） 的光近分離。\n- 最後用反應速度與藥物敏感性分開。"
+          ]
         },
         {
           "type": "card",
           "title": "第三對腦神經麻痺（CN III palsy） 與瞳孔/眼位",
-          "body": "**一句話／白話**\n第三對腦神經同時管部分眼外肌、提上瞼與副交感縮瞳，因此病變可能同時出現眼位、眼瞼、瞳孔問題。\n\n**觀念**\n第三腦神經控制多條眼外肌、提上瞼肌與副交感縮瞳路徑。缺損可見眼瞼下垂、眼球外斜/外下偏，以及瞳孔散大或光反應差。\n\n**重點**\n- 第三對腦神經（CN III） 控制多數眼外肌\n- levator palpebrae 受影響會 眼瞼下垂（ptosis）\n- 副交感纖維受影響會大瞳孔\n\n**考試角度**\n- 第三對腦神經 控制多數眼外肌\n- levator palpebrae 受影響會 眼瞼下垂\n- 副交感纖維受影響會大瞳孔\n\n**口訣**\n第三對腦神經：眼歪、眼瞼下垂、大瞳孔要一起看。",
-          "keys": [
-            "第三對腦神經（CN III） 控制多數眼外肌",
-            "levator palpebrae 受影響會 眼瞼下垂（ptosis）",
-            "副交感纖維受影響會大瞳孔"
+          "body": [
+            "> 第三對腦神經同時管部分眼外肌、提上瞼與副交感縮瞳，因此病變可能同時出現眼位、眼瞼、瞳孔問題。",
+            "",
+            "第三腦神經控制多條眼外肌、提上瞼肌與副交感縮瞳路徑。",
+            "",
+            "缺損可見眼瞼下垂、眼球外斜/外下偏，以及瞳孔散大或光反應差。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜第三對腦神經麻痺（CN III palsy） 與…",
+          "body": [
+            "**口訣**：第三對腦神經：眼歪、眼瞼下垂、大瞳孔要一起看。"
           ],
-          "tip": "口訣：第三對腦神經（CN III）：眼歪、眼瞼下垂（ptosis）、大瞳孔要一起看。"
+          "exam": [
+            "第三對腦神經 控制多數眼外肌",
+            "levator palpebrae 受影響會 眼瞼下垂",
+            "副交感纖維受影響會大瞳孔"
+          ]
         },
         {
           "type": "check",
@@ -432,13 +520,25 @@
         {
           "type": "card",
           "title": "艾迪氏強直性瞳孔（Adie's tonic pupil）",
-          "body": "**一句話／白話**\n艾迪氏（Adie） 常是大瞳孔、光反應差、近反應慢，且因去神經後超敏感而對稀釋 匹羅卡品（pilocarpine） 特別敏感。\n\n**觀念**\n艾迪氏強直性瞳孔（Adie's tonic pupil） 常與 睫狀神經節（ciliary ganglion） 或 節後（postganglionic） fibers 缺損有關。病眼大、光反應差；看近可慢慢縮，回看遠也慢慢放大，呈 tonic slow 反應（response）。\n\n**重點**\n- 常見 光近分離（light-near dissociation）\n- 近反應可保留但慢\n- 低濃度 匹羅卡品 可因 去神經後超敏感（denervation supersensitivity） 強烈縮瞳\n\n**考試角度**\n- 常見 光近分離\n- 近反應可保留但慢\n- 低濃度 匹羅卡品 可因 去神經後超敏感 強烈縮瞳\n\n**口訣**\n艾迪氏 = 大、慢、稀釋 匹羅卡品 會縮。",
-          "keys": [
-            "常見 光近分離（light-near dissociation）",
-            "近反應可保留但慢",
-            "低濃度 匹羅卡品（pilocarpine） 可因 去神經後超敏感（denervation supersensitivity） 強烈縮瞳"
+          "body": [
+            "> 艾迪氏（Adie） 常是大瞳孔、光反應差、近反應慢，且因去神經後超敏感而對稀釋 匹羅卡品（pilocarpine） 特別敏感。",
+            "",
+            "艾迪氏強直性瞳孔（Adie's tonic pupil） 常與 睫狀神經節（ciliary ganglion） 或 節後（postganglionic） fibers 缺損有關。",
+            "",
+            "病眼大、光反應差；看近可慢慢縮，回看遠也慢慢放大，呈 tonic slow 反應（response）。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜艾迪氏強直性瞳孔（Adie's tonic pu…",
+          "body": [
+            "**口訣**：艾迪氏 = 大、慢、稀釋 匹羅卡品 會縮。"
           ],
-          "tip": "口訣：艾迪氏（Adie） = 大、慢、稀釋 匹羅卡品（pilocarpine） 會縮。"
+          "exam": [
+            "常見 光近分離",
+            "近反應可保留但慢",
+            "低濃度 匹羅卡品 可因 去神經後超敏感 強烈縮瞳"
+          ]
         },
         {
           "type": "check",
@@ -458,13 +558,25 @@
         {
           "type": "card",
           "title": "阿蓋爾－羅伯遜氏瞳孔（Argyll Robertson pupil）",
-          "body": "**一句話／白話**\n阿蓋爾－羅伯遜氏瞳孔（Argyll Robertson pupil） 通常小而不規則，光反射差但近反應保留，經典上和神經梅毒相關。\n\n**觀念**\n常與 神經梅毒（neurosyphilis）、長期糖尿病或酒精中毒等相關。典型為雙側小瞳孔，對光 direct/consensual 反應差或無，但近反應快速保留。\n\n**重點**\n- 病灶常牽涉中腦/EW 核（nucleus） 區域\n- 兩眼都可受影響\n- 小瞳孔且 光近分離（light-near dissociation）\n\n**考試角度**\n- 病灶常牽涉中腦/EW 核 區域\n- 兩眼都可受影響\n- 小瞳孔且 光近分離\n\n**口訣**\n抗反射鍍膜（AR） pupil：accommodates 淚膜破裂時間（but） does not react。",
-          "keys": [
-            "病灶常牽涉中腦/EW 核（nucleus） 區域",
-            "兩眼都可受影響",
-            "小瞳孔且 光近分離（light-near dissociation）"
+          "body": [
+            "> 阿蓋爾－羅伯遜氏瞳孔（Argyll Robertson pupil） 通常小而不規則，光反射差但近反應保留，經典上和神經梅毒相關。",
+            "",
+            "常與 神經梅毒（neurosyphilis）、長期糖尿病或酒精中毒等相關。",
+            "",
+            "典型為雙側小瞳孔，對光 direct/consensual 反應差或無，但近反應快速保留。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜阿蓋爾－羅伯遜氏瞳孔（Argyll Robert…",
+          "body": [
+            "**口訣**：抗反射鍍膜（AR） pupil：accommodates 淚膜破裂時間（but） does not react。"
           ],
-          "tip": "口訣：抗反射鍍膜（AR） pupil：accommodates 淚膜破裂時間（but） does not react。"
+          "exam": [
+            "病灶常牽涉中腦/EW 核 區域",
+            "兩眼都可受影響",
+            "小瞳孔且 光近分離"
+          ]
         },
         {
           "type": "check",
@@ -577,18 +689,30 @@
         {
           "type": "intro",
           "title": "交感路徑與 霍納氏症候群（Horner syndrome）",
-          "body": "交感路徑控制 dilator muscle、穆勒氏肌（Müller muscle） 與汗腺。霍納氏症候群（Horner syndrome） 以 眼瞼下垂（ptosis）、縮瞳（miosis）、無汗（anhidrosis） 與 散瞳遲滯（dilation lag） 為核心。\n\n- 先走完三階交感路徑。\n- 再背 霍納氏（Horner） 三個 osis。\n- 最後用 散瞳遲滯 與藥物做定位。"
+          "body": [
+            "交感路徑控制 dilator muscle、穆勒氏肌（Müller muscle） 與汗腺。霍納氏症候群（Horner syndrome） 以 眼瞼下垂（ptosis）、縮瞳（miosis）、無汗（anhidrosis） 與 散瞳遲滯（dilation lag） 為核心。\n\n- 先走完三階交感路徑。\n- 再背 霍納氏（Horner） 三個 osis。\n- 最後用 散瞳遲滯 與藥物做定位。"
+          ]
         },
         {
           "type": "card",
           "title": "交感路徑與三階神經元",
-          "body": "**一句話／白話**\n交感散瞳路徑從中樞下行到肺尖附近，再到頸上神經節，最後沿眼部神經到瞳孔擴大肌。\n\n**觀念**\n交感路徑從下視丘到脊髓，再經肺尖/頸上交感神經節，最後沿三叉神經/長睫狀神經到眼球 dilator muscle，也支配 穆勒氏肌（Müller muscle） 與額頭汗腺。\n\n**重點**\n- 一階：中樞到脊髓\n- 二階：脊髓經肺尖到 上頸神經節（superior cervical ganglion）\n- 三階：沿 carotid/三叉路徑進眼\n\n**考試角度**\n- 一階：中樞到脊髓\n- 二階：脊髓經肺尖到 上頸神經節\n- 三階：沿 carotid/三叉路徑進眼\n\n**口訣**\n霍納氏（Horner） 定位看三階：central、節前（preganglionic）、節後（postganglionic）。",
-          "keys": [
-            "一階：中樞到脊髓",
-            "二階：脊髓經肺尖到 上頸神經節（superior cervical ganglion）",
-            "三階：沿 carotid/三叉路徑進眼"
+          "body": [
+            "> 交感散瞳路徑從中樞下行到肺尖附近，再到頸上神經節，最後沿眼部神經到瞳孔擴大肌。",
+            "",
+            "交感路徑從下視丘到脊髓，再經肺尖/頸上交感神經節，最後沿三叉神經/長睫狀神經到眼球 dilator muscle，也支配 穆勒氏肌（Müller muscle） 與額頭汗腺。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜交感路徑與三階神經元",
+          "body": [
+            "**口訣**：霍納氏（Horner） 定位看三階：central、節前（preganglionic）、節後（postganglionic）。"
           ],
-          "tip": "口訣：霍納氏（Horner） 定位看三階：central、節前（preganglionic）、節後（postganglionic）。"
+          "exam": [
+            "一階：中樞到脊髓",
+            "二階：脊髓經肺尖到 上頸神經節",
+            "三階：沿 carotid/三叉路徑進眼"
+          ]
         },
         {
           "type": "check",
@@ -608,13 +732,25 @@
         {
           "type": "card",
           "title": "三個 osis：眼瞼下垂（ptosis）、縮瞳（miosis）、無汗（anhidrosis）",
-          "body": "**一句話／白話**\n霍納氏症候群（Horner syndrome） 是交感路徑受損，所以會小瞳孔、輕微眼瞼下垂，可能合併同側無汗。\n\n**觀念**\n霍納氏症候群 典型三徵為 眼瞼下垂（ptosis） 眼瞼下垂、縮瞳（miosis） 縮瞳、無汗（anhidrosis） 無汗。上下眼瞼受影響可讓眼睛看似內陷，稱 false enophthalmos。\n\n**重點**\n- 眼瞼下垂：穆勒氏肌（Müller muscle） 交感支配差\n- 縮瞳：dilator muscle 不能正常散瞳\n- 無汗：額頭汗腺交感受損\n\n**考試角度**\n- 眼瞼下垂：穆勒氏肌 交感支配差\n- 縮瞳：dilator muscle 不能正常散瞳\n- 無汗：額頭汗腺交感受損\n\n**口訣**\n三個 osis：眼瞼下垂、縮瞳、無汗。",
-          "keys": [
-            "眼瞼下垂（ptosis）：穆勒氏肌（Müller muscle） 交感支配差",
-            "縮瞳（miosis）：dilator muscle 不能正常散瞳",
-            "無汗（anhidrosis）：額頭汗腺交感受損"
+          "body": [
+            "> 霍納氏症候群（Horner syndrome） 是交感路徑受損，所以會小瞳孔、輕微眼瞼下垂，可能合併同側無汗。",
+            "",
+            "霍納氏症候群 典型三徵為 眼瞼下垂（ptosis） 眼瞼下垂、縮瞳（miosis） 縮瞳、無汗（anhidrosis） 無汗。",
+            "",
+            "上下眼瞼受影響可讓眼睛看似內陷，稱 false enophthalmos。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜三個 osis：眼瞼下垂（ptosis）、縮瞳（…",
+          "body": [
+            "**口訣**：三個 osis：眼瞼下垂、縮瞳、無汗。"
           ],
-          "tip": "口訣：三個 osis：眼瞼下垂（ptosis）、縮瞳（miosis）、無汗（anhidrosis）。"
+          "exam": [
+            "眼瞼下垂：穆勒氏肌 交感支配差",
+            "縮瞳：dilator muscle 不能正常散瞳",
+            "無汗：額頭汗腺交感受損"
+          ]
         },
         {
           "type": "check",
@@ -634,13 +770,27 @@
         {
           "type": "card",
           "title": "散瞳遲滯（dilation lag） 與藥物鑑別",
-          "body": "**一句話／白話**\n霍納氏（Horner） 患側暗處散瞳較慢，藥物測試可利用 正腎上腺素（norepinephrine） 釋放或再吸收機轉幫助定位。\n\n**觀念**\n霍納氏 病側在暗室散瞳慢，5 秒時 瞳孔不等大（anisocoria） 最大，12 秒後可能較接近。古柯鹼（cocaine） 正常會抑制 正腎上腺素（NE） 回收使散瞳；霍納氏 病眼反應差。羥安非他命（hydroxyamphetamine） 可協助分辨一/二階與三階病灶。\n\n**重點**\n- 古柯鹼：阻斷 正腎上腺素 reuptake，正常眼散大\n- 霍納氏 病眼 正腎上腺素 不足，古柯鹼 反應差\n- 羥安非他命 促進三階神經釋放 正腎上腺素\n\n**考試角度**\n- 古柯鹼：阻斷 正腎上腺素 reuptake，正常眼散大\n- 霍納氏 病眼 正腎上腺素 不足，古柯鹼 反應差\n- 羥安非他命 促進三階神經釋放 正腎上腺素\n\n**口訣**\n暗處看 調節落後（lag）；古柯鹼 確認，羥安非他命 幫定位。",
-          "keys": [
-            "古柯鹼（cocaine）：阻斷 正腎上腺素（NE） reuptake，正常眼散大",
-            "霍納氏（Horner） 病眼 正腎上腺素（NE） 不足，古柯鹼（cocaine） 反應差",
-            "羥安非他命（hydroxyamphetamine） 促進三階神經釋放 正腎上腺素（NE）"
+          "body": [
+            "> 霍納氏（Horner） 患側暗處散瞳較慢，藥物測試可利用 正腎上腺素（norepinephrine） 釋放或再吸收機轉幫助定位。",
+            "",
+            "霍納氏 病側在暗室散瞳慢，5 秒時 瞳孔不等大（anisocoria） 最大，12 秒後可能較接近。",
+            "",
+            "古柯鹼（cocaine） 正常會抑制 正腎上腺素（NE） 回收使散瞳；霍納氏 病眼反應差。",
+            "",
+            "羥安非他命（hydroxyamphetamine） 可協助分辨一/二階與三階病灶。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜散瞳遲滯（dilation lag） 與藥物鑑別",
+          "body": [
+            "**口訣**：暗處看 調節落後（lag）；古柯鹼 確認，羥安非他命 幫定位。"
           ],
-          "tip": "口訣：暗處看 調節落後（lag）；古柯鹼（cocaine） 確認，羥安非他命（hydroxyamphetamine） 幫定位。"
+          "exam": [
+            "古柯鹼：阻斷 正腎上腺素 reuptake，正常眼散大",
+            "霍納氏 病眼 正腎上腺素 不足，古柯鹼 反應差",
+            "羥安非他命 促進三階神經釋放 正腎上腺素"
+          ]
         },
         {
           "type": "check",

@@ -31,18 +31,32 @@
         {
           "type": "intro",
           "title": "先看整張地圖：視網膜在哪裡",
-          "body": "先定位，十層才不會背成一串沒有意義的名字。\n\n- 先分內側與外側。\n- 再分神經視網膜與 視網膜色素上皮（RPE）。\n- 最後認四個重要地標。"
+          "body": [
+            "先定位，十層才不會背成一串沒有意義的名字。\n\n- 先分內側與外側。\n- 再分神經視網膜與 視網膜色素上皮（RPE）。\n- 最後認四個重要地標。"
+          ]
         },
         {
           "type": "card",
           "title": "視網膜是倒裝的感光電路板",
-          "body": "**一句話／白話**\n光從玻璃體側進入，穿過神經層後才到 感光細胞（photoreceptor）；神經訊號則反方向回到 神經節細胞（ganglion cell）。\n\n**觀念**\n視網膜內側面向 玻璃體（vitreous），外側貼近 脈絡膜（choroid）。光線方向是 玻璃體 → 感光細胞；訊號方向是 感光細胞 → 雙極細胞（bipolar cell） → 神經節細胞 → 視神經（optic nerve）。\n\n**考試角度**\n- 光線與神經訊號方向相反\n- 外側 感光細胞 靠近 脈絡膜 取得高代謝需求\n- 神經節細胞 軸突（axon） 位於最內側並匯成視神經\n\n**口訣**\n光往外、訊號往內；最後從 視神經 出門。",
-          "keys": [
-            "光線與神經訊號方向相反",
-            "外側 感光細胞（photoreceptor） 靠近 脈絡膜（choroid） 取得高代謝需求",
-            "神經節細胞（ganglion cell） 軸突（axon） 位於最內側並匯成視神經"
+          "body": [
+            "> 光從玻璃體側進入，穿過神經層後才到 感光細胞（photoreceptor）；神經訊號則反方向回到 神經節細胞（ganglion cell）。",
+            "",
+            "視網膜內側面向 玻璃體（vitreous），外側貼近 脈絡膜（choroid）。",
+            "",
+            "光線方向是 玻璃體 → 感光細胞；訊號方向是 感光細胞 → 雙極細胞（bipolar cell） → 神經節細胞 → 視神經（optic nerve）。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜視網膜是倒裝的感光電路板",
+          "body": [
+            "**口訣**：光往外、訊號往內；最後從 視神經 出門。"
           ],
-          "tip": "口訣：光往外、訊號往內；最後從 視神經（optic nerve） 出門。"
+          "exam": [
+            "光線與神經訊號方向相反",
+            "外側 感光細胞 靠近 脈絡膜 取得高代謝需求",
+            "神經節細胞 軸突（axon） 位於最內側並匯成視神經"
+          ]
         },
         {
           "type": "check",
@@ -62,13 +76,25 @@
         {
           "type": "card",
           "title": "神經視網膜與 視網膜色素上皮（RPE） 是兩大部分",
-          "body": "**一句話／白話**\nneurosensory 視網膜（retina） 負責收光與傳訊；視網膜的（retinal） pigment epithelium 負責照顧感光細胞。\n\n**觀念**\nneurosensory 視網膜 包含 感光細胞（photoreceptor）、雙極細胞（bipolar）、神經節（ganglion） 與橫向調節細胞。視網膜色素上皮（RPE） 是單層色素上皮，吸收散射光、參與視循環、吞噬外節盤膜並形成外血視網膜障壁。\n\n**考試角度**\n- 視網膜色素上皮 是單層細胞，不是神經視網膜十層中的神經元\n- 視網膜色素上皮 與 感光細胞 外節緊密合作\n- 視網膜剝離常是神經視網膜與 視網膜色素上皮 分開\n\n**口訣**\n神經視網膜負責看，視網膜色素上皮 負責養、清、擋光。",
-          "keys": [
-            "視網膜色素上皮（RPE） 是單層細胞，不是神經視網膜十層中的神經元",
-            "視網膜色素上皮（RPE） 與 感光細胞（photoreceptor） 外節緊密合作",
-            "視網膜剝離常是神經視網膜與 視網膜色素上皮（RPE） 分開"
+          "body": [
+            "> neurosensory 視網膜（retina） 負責收光與傳訊；視網膜的（retinal） pigment epithelium 負責照顧感光細胞。",
+            "",
+            "neurosensory 視網膜 包含 感光細胞（photoreceptor）、雙極細胞（bipolar）、神經節（ganglion） 與橫向調節細胞。",
+            "",
+            "視網膜色素上皮（RPE） 是單層色素上皮，吸收散射光、參與視循環、吞噬外節盤膜並形成外血視網膜障壁。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜神經視網膜與 視網膜色素上皮（RPE） 是兩大部…",
+          "body": [
+            "**口訣**：神經視網膜負責看，視網膜色素上皮 負責養、清、擋光。"
           ],
-          "tip": "口訣：神經視網膜負責看，視網膜色素上皮（RPE） 負責養、清、擋光。"
+          "exam": [
+            "視網膜色素上皮 是單層細胞，不是神經視網膜十層中的神經元",
+            "視網膜色素上皮 與 感光細胞 外節緊密合作",
+            "視網膜剝離常是神經視網膜與 視網膜色素上皮 分開"
+          ]
         },
         {
           "type": "check",
@@ -88,13 +114,27 @@
         {
           "type": "card",
           "title": "四個必認地標",
-          "body": "**一句話／白話**\n視乳頭（optic disc） 是出口、黃斑（macula） 是精細視覺區、中央凹（fovea） 是最精細中心、鋸齒緣（ora serrata） 是前方終點。\n\n**觀念**\n視乳頭 沒有 感光細胞（photoreceptor），因此形成生理盲點。黃斑 lutea 富含黃色色素並負責中央視覺；中央的 中央凹 centralis 與 中央小凹（foveola） 專門提供最高視力。鋸齒緣 是感光視網膜向前終止處。\n\n**考試角度**\n- 視乳頭 無 桿狀細胞（rods） 與 錐狀細胞（cones）\n- 中央小凹 是最高視力中心\n- 鋸齒緣 是神經視網膜前緣\n\n**口訣**\n出口盲、黃斑細、中央凹最細、鋸齒緣到此為止。",
-          "keys": [
-            "視乳頭（optic disc） 無 桿狀細胞（rods） 與 錐狀細胞（cones）",
-            "中央小凹（foveola） 是最高視力中心",
-            "鋸齒緣（ora serrata） 是神經視網膜前緣"
+          "body": [
+            "> 視乳頭（optic disc） 是出口、黃斑（macula） 是精細視覺區、中央凹（fovea） 是最精細中心、鋸齒緣（ora serrata） 是前方終點。",
+            "",
+            "視乳頭 沒有 感光細胞（photoreceptor），因此形成生理盲點。",
+            "",
+            "黃斑 lutea 富含黃色色素並負責中央視覺；中央的 中央凹 centralis 與 中央小凹（foveola） 專門提供最高視力。",
+            "",
+            "鋸齒緣 是感光視網膜向前終止處。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜四個必認地標",
+          "body": [
+            "**口訣**：出口盲、黃斑細、中央凹最細、鋸齒緣到此為止。"
           ],
-          "tip": "口訣：出口盲、黃斑細、中央凹最細、鋸齒緣到此為止。"
+          "exam": [
+            "視乳頭 無 桿狀細胞（rods） 與 錐狀細胞（cones）",
+            "中央小凹 是最高視力中心",
+            "鋸齒緣 是神經視網膜前緣"
+          ]
         },
         {
           "type": "check",
@@ -286,18 +326,30 @@
         {
           "type": "intro",
           "title": "十層不是死背：把它分成四種東西",
-          "body": "十層其實只是細胞本體、突觸區、邊界膜與感光/視網膜色素上皮（RPE） 結構交錯排列。\n\n- 從 玻璃體（vitreous） 側往 脈絡膜（choroid） 側讀。\n- 先抓細胞核在哪三層。\n- 再抓兩個 plexiform 層（layer） 是誰和誰接線。"
+          "body": [
+            "十層其實只是細胞本體、突觸區、邊界膜與感光/視網膜色素上皮（RPE） 結構交錯排列。\n\n- 從 玻璃體（vitreous） 側往 脈絡膜（choroid） 側讀。\n- 先抓細胞核在哪三層。\n- 再抓兩個 plexiform 層（layer） 是誰和誰接線。"
+          ]
         },
         {
           "type": "card",
           "title": "十層由內往外的順序",
-          "body": "**一句話／白話**\n從玻璃體到脈絡膜：內界膜（ILM）、神經纖維層（NFL）、神經節細胞層（GCL）、內網狀層（IPL）、內核層（INL）、外網狀層（OPL）、外核層（ONL）、外界膜（ELM）、感光細胞（photoreceptor）、視網膜色素上皮（RPE）。\n\n**觀念**\n內到外順序為 internal limiting membrane、nerve fiber 層（layer）、神經節細胞（ganglion cell） 層、inner plexiform 層、inner nuclear 層、outer plexiform 層、outer nuclear 層、external limiting membrane、桿狀細胞（rod）/錐狀細胞（cone） 層、視網膜色素上皮。\n\n**考試角度**\n- 題目若問靠 玻璃體（vitreous） 最近是 內界膜\n- 靠 脈絡膜（choroid） 最近是 視網膜色素上皮\n- 不要把 inner/outer 依光線方向判斷；依眼球中心遠近判斷\n\n**口訣**\n內膜、纖維、節、內網、內核、外網、外核、外膜、感光、色素。",
-          "keys": [
-            "題目若問靠 玻璃體（vitreous） 最近是 內界膜（ILM）",
-            "靠 脈絡膜（choroid） 最近是 視網膜色素上皮（RPE）",
-            "不要把 inner/outer 依光線方向判斷；依眼球中心遠近判斷"
+          "body": [
+            "> 從玻璃體到脈絡膜：內界膜（ILM）、神經纖維層（NFL）、神經節細胞層（GCL）、內網狀層（IPL）、內核層（INL）、外網狀層（OPL）、外核層（ONL）、外界膜（ELM）、感光細胞（photoreceptor）、視網膜色素上皮（RPE）。",
+            "",
+            "內到外順序為 internal limiting membrane、nerve fiber 層（layer）、神經節細胞（ganglion cell） 層、inner plexiform 層、inner nuclear 層、outer plexiform 層、outer nuclear 層、external limiting membrane、桿狀細胞（rod）/錐狀細胞（cone） 層、視網膜色素上皮。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜十層由內往外的順序",
+          "body": [
+            "**口訣**：內膜、纖維、節、內網、內核、外網、外核、外膜、感光、色素。"
           ],
-          "tip": "口訣：內膜、纖維、節、內網、內核、外網、外核、外膜、感光、色素。"
+          "exam": [
+            "題目若問靠 玻璃體（vitreous） 最近是 內界膜",
+            "靠 脈絡膜（choroid） 最近是 視網膜色素上皮",
+            "不要把 inner/outer 依光線方向判斷；依眼球中心遠近判斷"
+          ]
         },
         {
           "type": "check",
@@ -317,13 +369,27 @@
         {
           "type": "card",
           "title": "三個 nuclear 層（layer） 裝的是誰的細胞核",
-          "body": "**一句話／白話**\n神經節細胞層（GCL） 放 神經節細胞（ganglion cell） 核；內核層（INL） 放中間調節細胞核；外核層（ONL） 放 感光細胞（photoreceptor） 核。\n\n**觀念**\n神經節細胞 層（layer） 主要含 神經節細胞 bodies。inner nuclear 層 含 雙極細胞（bipolar）、水平（horizontal）、amacrine 與 穆勒氏細胞（Müller cell） 細胞核（nuclei）。outer nuclear 層 含 桿狀細胞（rods） 與 錐狀細胞（cones） 的細胞核。\n\n**考試角度**\n- 內核層 細胞種類最多\n- 外核層 是 感光細胞 細胞核，不是外節\n- 穆勒氏細胞 核位於 內核層\n\n**口訣**\n節細胞核在 神經節細胞層；中間四兄弟在 內核層；感光核在 外核層。",
-          "keys": [
-            "內核層（INL） 細胞種類最多",
-            "外核層（ONL） 是 感光細胞（photoreceptor） 細胞核（nuclei），不是外節",
-            "穆勒氏細胞（Müller cell） 核位於 內核層（INL）"
+          "body": [
+            "> 神經節細胞層（GCL） 放 神經節細胞（ganglion cell） 核；內核層（INL） 放中間調節細胞核；外核層（ONL） 放 感光細胞（photoreceptor） 核。",
+            "",
+            "神經節細胞 層（layer） 主要含 神經節細胞 bodies。",
+            "",
+            "inner nuclear 層 含 雙極細胞（bipolar）、水平（horizontal）、amacrine 與 穆勒氏細胞（Müller cell） 細胞核（nuclei）。",
+            "",
+            "outer nuclear 層 含 桿狀細胞（rods） 與 錐狀細胞（cones） 的細胞核。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜三個 nuclear 層（layer） 裝的是誰…",
+          "body": [
+            "**口訣**：節細胞核在 神經節細胞層；中間四兄弟在 內核層；感光核在 外核層。"
           ],
-          "tip": "口訣：節細胞核在 神經節細胞層（GCL）；中間四兄弟在 內核層（INL）；感光核在 外核層（ONL）。"
+          "exam": [
+            "內核層 細胞種類最多",
+            "外核層 是 感光細胞 細胞核，不是外節",
+            "穆勒氏細胞 核位於 內核層"
+          ]
         },
         {
           "type": "check",
@@ -343,13 +409,25 @@
         {
           "type": "card",
           "title": "兩個 plexiform 層（layer） 是接線區",
-          "body": "**一句話／白話**\n外網狀層（OPL） 是 感光細胞（photoreceptor） 接 雙極細胞（bipolar）/水平（horizontal）；內網狀層（IPL） 是 雙極細胞 接 神經節（ganglion）/amacrine。\n\n**觀念**\nouter plexiform 層（layer） 位於 感光細胞 細胞核（nuclei） 與 inner nuclear 層 之間，進行第一站突觸。inner plexiform 層 位於 inner nuclear 層 與 神經節細胞（ganglion cell） 層 之間，進行第二站突觸與複雜調節。\n\n**考試角度**\n- 外網狀層：感光細胞 → 雙極細胞，水平 橫向調節\n- 內網狀層：雙極細胞 → 神經節，amacrine 調節\n- plexiform 層 主要看突觸與神經突起，不是細胞核\n\n**口訣**\n外網接感光；內網接節細胞。",
-          "keys": [
-            "外網狀層（OPL）：感光細胞（photoreceptor） → 雙極細胞（bipolar），水平（horizontal） 橫向調節",
-            "內網狀層（IPL）：雙極細胞（bipolar） → 神經節（ganglion），amacrine 調節",
-            "plexiform 層（layer） 主要看突觸與神經突起，不是細胞核"
+          "body": [
+            "> 外網狀層（OPL） 是 感光細胞（photoreceptor） 接 雙極細胞（bipolar）/水平（horizontal）；內網狀層（IPL） 是 雙極細胞 接 神經節（ganglion）/amacrine。",
+            "",
+            "outer plexiform 層（layer） 位於 感光細胞 細胞核（nuclei） 與 inner nuclear 層 之間，進行第一站突觸。",
+            "",
+            "inner plexiform 層 位於 inner nuclear 層 與 神經節細胞（ganglion cell） 層 之間，進行第二站突觸與複雜調節。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜兩個 plexiform 層（layer） 是接…",
+          "body": [
+            "**口訣**：外網接感光；內網接節細胞。"
           ],
-          "tip": "口訣：外網接感光；內網接節細胞。"
+          "exam": [
+            "外網狀層：感光細胞 → 雙極細胞，水平 橫向調節",
+            "內網狀層：雙極細胞 → 神經節，amacrine 調節",
+            "plexiform 層 主要看突觸與神經突起，不是細胞核"
+          ]
         },
         {
           "type": "check",
@@ -462,18 +540,32 @@
         {
           "type": "intro",
           "title": "支架、邊界與屏障",
-          "body": "穆勒氏細胞（Müller cell） 像一根貫穿全層的支柱；兩道血視網膜障壁則維持神經環境穩定。\n\n- 先認 穆勒氏細胞 跨越全層。\n- 再分 內界膜（ILM）/外界膜（ELM）。\n- 最後分 inner/outer blood-視網膜的（retinal） 障壁（barrier）。"
+          "body": [
+            "穆勒氏細胞（Müller cell） 像一根貫穿全層的支柱；兩道血視網膜障壁則維持神經環境穩定。\n\n- 先認 穆勒氏細胞 跨越全層。\n- 再分 內界膜（ILM）/外界膜（ELM）。\n- 最後分 inner/outer blood-視網膜的（retinal） 障壁（barrier）。"
+          ]
         },
         {
           "type": "card",
           "title": "穆勒氏細胞（Müller cell） 是視網膜的全層管家",
-          "body": "**一句話／白話**\n穆勒氏細胞（Müller cell） 從內到外跨過幾乎整個視網膜，提供支撐並調節離子與代謝。\n\n**觀念**\n穆勒氏（Müller） 膠質細胞（glia） 的內足形成 內界膜（ILM） 的重要部分，外側連接形成 外界膜（ELM）。它協助維持 extracellular potassium、回收 神經傳導物質（neurotransmitter）、提供代謝支持並引導光線。\n\n**考試角度**\n- 穆勒氏細胞 核位於 內核層（INL）\n- 內足靠 內界膜，外側 junction 參與 外界膜\n- 穆勒氏細胞 不是傳遞影像的主要神經元\n\n**口訣**\n穆勒氏 像從地板撐到天花板的管家柱。",
-          "keys": [
-            "穆勒氏細胞（Müller cell） 核位於 內核層（INL）",
-            "內足靠 內界膜（ILM），外側 junction 參與 外界膜（ELM）",
-            "穆勒氏細胞（Müller cell） 不是傳遞影像的主要神經元"
+          "body": [
+            "> 穆勒氏細胞（Müller cell） 從內到外跨過幾乎整個視網膜，提供支撐並調節離子與代謝。",
+            "",
+            "穆勒氏（Müller） 膠質細胞（glia） 的內足形成 內界膜（ILM） 的重要部分，外側連接形成 外界膜（ELM）。",
+            "",
+            "它協助維持 extracellular potassium、回收 神經傳導物質（neurotransmitter）、提供代謝支持並引導光線。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜穆勒氏細胞（Müller cell） 是視網膜的…",
+          "body": [
+            "**口訣**：穆勒氏 像從地板撐到天花板的管家柱。"
           ],
-          "tip": "口訣：穆勒氏（Müller） 像從地板撐到天花板的管家柱。"
+          "exam": [
+            "穆勒氏細胞 核位於 內核層（INL）",
+            "內足靠 內界膜，外側 junction 參與 外界膜",
+            "穆勒氏細胞 不是傳遞影像的主要神經元"
+          ]
         },
         {
           "type": "check",
@@ -493,13 +585,25 @@
         {
           "type": "card",
           "title": "內界膜（ILM） 是基底膜，外界膜（ELM） 是細胞連接帶",
-          "body": "**一句話／白話**\n內界膜（ILM） 是鄰接 穆勒氏（Müller） 細胞內足的基底膜；外界膜（ELM） 是 穆勒氏 與感光細胞的 adherens junction 帶。兩者組成不同。\n\n**觀念**\ninternal limiting membrane 是視網膜與 玻璃體（vitreous） 的界面，主要與 穆勒氏細胞（Müller cell） endfeet 及 basement membrane 有關。external limiting membrane 是 穆勒氏細胞 與 感光細胞（photoreceptor） 之間的 adherens junction 帶。\n\n**考試角度**\n- 內界膜 是最內層\n- 外界膜 位於 感光細胞 細胞核（nuclei） 與 inner segments 之間\n- 外界膜 是 junctional line，不是完全封閉的膜\n\n**口訣**\n內界膜 在玻璃體邊；外界膜 在感光細胞腰間。",
-          "keys": [
-            "內界膜（ILM） 是最內層",
-            "外界膜（ELM） 位於 感光細胞（photoreceptor） 細胞核（nuclei） 與 inner segments 之間",
-            "外界膜（ELM） 是 junctional line，不是完全封閉的膜"
+          "body": [
+            "> 內界膜（ILM） 是鄰接 穆勒氏（Müller） 細胞內足的基底膜；外界膜（ELM） 是 穆勒氏 與感光細胞的 adherens junction 帶。兩者組成不同。",
+            "",
+            "internal limiting membrane 是視網膜與 玻璃體（vitreous） 的界面，主要與 穆勒氏細胞（Müller cell） endfeet 及 basement membrane 有關。",
+            "",
+            "external limiting membrane 是 穆勒氏細胞 與 感光細胞（photoreceptor） 之間的 adherens junction 帶。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜內界膜（ILM） 是基底膜，外界膜（ELM） 是…",
+          "body": [
+            "**口訣**：內界膜 在玻璃體邊；外界膜 在感光細胞腰間。"
           ],
-          "tip": "口訣：內界膜（ILM） 在玻璃體邊；外界膜（ELM） 在感光細胞腰間。"
+          "exam": [
+            "內界膜 是最內層",
+            "外界膜 位於 感光細胞 細胞核（nuclei） 與 inner segments 之間",
+            "外界膜 是 junctional line，不是完全封閉的膜"
+          ]
         },
         {
           "type": "check",
@@ -519,13 +623,25 @@
         {
           "type": "card",
           "title": "內外血視網膜障壁",
-          "body": "**一句話／白話**\ninner 障壁（barrier） 靠 視網膜的（retinal） capillary；outer 障壁 靠 視網膜色素上皮（RPE） 緊密接合（tight junction）。\n\n**觀念**\ninner blood-視網膜的 障壁 由 視網膜的 vascular endothelial 緊密接合 維持。outer blood-視網膜的 障壁 由 視網膜色素上皮 緊密接合 維持，控制 脈絡膜（choroid） 與 感光細胞（photoreceptor） 間交換。\n\n**考試角度**\n- inner 障壁 = 視網膜的 vascular endothelium\n- outer 障壁 = 視網膜色素上皮\n- 障壁破壞會造成滲漏與 視網膜的 edema\n\n**口訣**\n內障壁看血管內皮；外障壁看 視網膜色素上皮。",
-          "keys": [
-            "inner 障壁（barrier） = 視網膜的（retinal） vascular endothelium",
-            "outer 障壁（barrier） = 視網膜色素上皮（RPE）",
-            "障壁破壞會造成滲漏與 視網膜的（retinal） edema"
+          "body": [
+            "> inner 障壁（barrier） 靠 視網膜的（retinal） capillary；outer 障壁 靠 視網膜色素上皮（RPE） 緊密接合（tight junction）。",
+            "",
+            "inner blood-視網膜的 障壁 由 視網膜的 vascular endothelial 緊密接合 維持。",
+            "",
+            "outer blood-視網膜的 障壁 由 視網膜色素上皮 緊密接合 維持，控制 脈絡膜（choroid） 與 感光細胞（photoreceptor） 間交換。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜內外血視網膜障壁",
+          "body": [
+            "**口訣**：內障壁看血管內皮；外障壁看 視網膜色素上皮。"
           ],
-          "tip": "口訣：內障壁看血管內皮；外障壁看 視網膜色素上皮（RPE）。"
+          "exam": [
+            "inner 障壁 = 視網膜的 vascular endothelium",
+            "outer 障壁 = 視網膜色素上皮",
+            "障壁破壞會造成滲漏與 視網膜的 edema"
+          ]
         },
         {
           "type": "check",
@@ -638,18 +754,30 @@
         {
           "type": "intro",
           "title": "不同區域為什麼長得不一樣",
-          "body": "視網膜會依任務改造層次：中央凹為視力讓路，周邊為感光與範圍服務。\n\n- 先看中央凹移開內層。\n- 再比較 桿狀細胞（rods）/錐狀細胞（cones） 分布。\n- 最後連到臨床病灶。"
+          "body": [
+            "視網膜會依任務改造層次：中央凹為視力讓路，周邊為感光與範圍服務。\n\n- 先看中央凹移開內層。\n- 再比較 桿狀細胞（rods）/錐狀細胞（cones） 分布。\n- 最後連到臨床病灶。"
+          ]
         },
         {
           "type": "card",
           "title": "中央凹（fovea） 把內層推開來提高解析度",
-          "body": "**一句話／白話**\n中央凹把內側神經層向旁邊移開，讓光更直接到 錐狀細胞（cones）。\n\n**觀念**\n中央凹（fovea） centralis 中內側層變薄，中央小凹（foveola） 中 神經節細胞（ganglion cell） 層（layer） 幾乎缺如，主要是細長 錐狀細胞，且沒有 視網膜的（retinal） vessels 穿過中央，降低光散射並提高 spatial resolution。\n\n**考試角度**\n- 中央小凹 無 桿狀細胞（rods）\n- 中央凹無血管區減少遮擋\n- 錐狀細胞（cone） 與 神經節（ganglion） 路徑（pathway） 低會聚，解析度高\n\n**口訣**\n中央凹為了看最細，把擋路的人和血管都請開。",
-          "keys": [
-            "中央小凹（foveola） 無 桿狀細胞（rods）",
+          "body": [
+            "> 中央凹把內側神經層向旁邊移開，讓光更直接到 錐狀細胞（cones）。",
+            "",
+            "中央凹（fovea） centralis 中內側層變薄，中央小凹（foveola） 中 神經節細胞（ganglion cell） 層（layer） 幾乎缺如，主要是細長 錐狀細胞，且沒有 視網膜的（retinal） vessels 穿過中央，降低光散射並提高 spatial resolution。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜中央凹（fovea） 把內層推開來提高解析度",
+          "body": [
+            "**口訣**：中央凹為了看最細，把擋路的人和血管都請開。"
+          ],
+          "exam": [
+            "中央小凹 無 桿狀細胞（rods）",
             "中央凹無血管區減少遮擋",
             "錐狀細胞（cone） 與 神經節（ganglion） 路徑（pathway） 低會聚，解析度高"
-          ],
-          "tip": "口訣：中央凹為了看最細，把擋路的人和血管都請開。"
+          ]
         },
         {
           "type": "check",
@@ -669,13 +797,25 @@
         {
           "type": "card",
           "title": "桿狀細胞（rod） 與 錐狀細胞（cone） 的分布不同",
-          "body": "**一句話／白話**\n錐狀細胞（cones） 在 中央凹（fovea） 最密；桿狀細胞（rods） 在周邊較多，負責暗處與周邊偵測。\n\n**觀念**\n錐狀細胞 提供高解析度與色覺，中央凹密度最高。桿狀細胞 對弱光敏感、無色覺，中央凹缺如，在周邊視網膜占優勢；視乳頭（optic disc） 則兩者皆無。\n\n**考試角度**\n- 中央小凹（foveola）：錐狀細胞 only\n- peripheral 視網膜（retina）：桿狀細胞 predominance\n- 視乳頭：no 感光細胞（photoreceptors）\n\n**口訣**\n中央用 錐狀細胞（cone） 看細節；周邊用 桿狀細胞（rod） 抓黑暗與動靜。",
-          "keys": [
-            "中央小凹（foveola）：錐狀細胞（cones） only",
-            "peripheral 視網膜（retina）：桿狀細胞（rods） predominance",
-            "視乳頭（optic disc）：no 感光細胞（photoreceptors）"
+          "body": [
+            "> 錐狀細胞（cones） 在 中央凹（fovea） 最密；桿狀細胞（rods） 在周邊較多，負責暗處與周邊偵測。",
+            "",
+            "錐狀細胞 提供高解析度與色覺，中央凹密度最高。",
+            "",
+            "桿狀細胞 對弱光敏感、無色覺，中央凹缺如，在周邊視網膜占優勢；視乳頭（optic disc） 則兩者皆無。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜桿狀細胞（rod） 與 錐狀細胞（cone） 的…",
+          "body": [
+            "**口訣**：中央用 錐狀細胞（cone） 看細節；周邊用 桿狀細胞（rod） 抓黑暗與動靜。"
           ],
-          "tip": "口訣：中央用 錐狀細胞（cone） 看細節；周邊用 桿狀細胞（rod） 抓黑暗與動靜。"
+          "exam": [
+            "中央小凹（foveola）：錐狀細胞 only",
+            "peripheral 視網膜（retina）：桿狀細胞 predominance",
+            "視乳頭：no 感光細胞（photoreceptors）"
+          ]
         },
         {
           "type": "check",
@@ -695,13 +835,25 @@
         {
           "type": "card",
           "title": "區域結構能預測症狀",
-          "body": "**一句話／白話**\n病灶在哪裡，缺掉的視覺功能就不同。\n\n**觀念**\nmacular 病灶（lesion） 常造成 central scotoma 與閱讀困難；peripheral 視網膜的（retinal） 病灶 先影響周邊視野；視乳頭（optic disc） swelling 或 視神經（optic nerve） 病灶 影響所有離眼訊號。結構定位是理解臨床表現的捷徑。\n\n**考試角度**\n- 黃斑（macula） 病灶先傷精細中央視覺\n- 周邊視網膜病灶可先有夜盲或周邊缺損\n- 視乳頭是 軸突（axons） 出口\n\n**口訣**\n中央壞看不細；周邊壞看不廣；出口壞整路受影響。",
-          "keys": [
+          "body": [
+            "> 病灶在哪裡，缺掉的視覺功能就不同。",
+            "",
+            "macular 病灶（lesion） 常造成 central scotoma 與閱讀困難；peripheral 視網膜的（retinal） 病灶 先影響周邊視野；視乳頭（optic disc） swelling 或 視神經（optic nerve） 病灶 影響所有離眼訊號。",
+            "",
+            "結構定位是理解臨床表現的捷徑。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜區域結構能預測症狀",
+          "body": [
+            "**口訣**：中央壞看不細；周邊壞看不廣；出口壞整路受影響。"
+          ],
+          "exam": [
             "黃斑（macula） 病灶先傷精細中央視覺",
             "周邊視網膜病灶可先有夜盲或周邊缺損",
             "視乳頭是 軸突（axons） 出口"
-          ],
-          "tip": "口訣：中央壞看不細；周邊壞看不廣；出口壞整路受影響。"
+          ]
         },
         {
           "type": "check",

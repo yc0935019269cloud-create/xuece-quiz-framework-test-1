@@ -31,18 +31,30 @@
         {
           "type": "intro",
           "title": "直向主路徑：三站把光變成輸出",
-          "body": "最簡單的主線是 感光細胞（photoreceptor） → 雙極細胞（bipolar） → 神經節（ganglion）。\n\n- 先看暗處 感光細胞 狀態。\n- 再看光來時怎麼變。\n- 最後看 神經節細胞（ganglion cell） 如何輸出 動作電位（action potential）。"
+          "body": [
+            "最簡單的主線是 感光細胞（photoreceptor） → 雙極細胞（bipolar） → 神經節（ganglion）。\n\n- 先看暗處 感光細胞 狀態。\n- 再看光來時怎麼變。\n- 最後看 神經節細胞（ganglion cell） 如何輸出 動作電位（action potential）。"
+          ]
         },
         {
           "type": "card",
           "title": "主路徑只有三站",
-          "body": "**一句話／白話**\n感光細胞（photoreceptor） 收光，雙極細胞（bipolar cell） 中繼，神經節細胞（ganglion cell） 把結果送入 視神經（optic nerve）。\n\n**觀念**\n桿狀細胞（rods） 與 錐狀細胞（cones） 將光轉為 漸變電位（graded potential）；雙極細胞（bipolar） cells 依受體不同形成 ON/OFF 路徑（pathway）；神經節（ganglion） cells 是視網膜主要產生 動作電位（action potential） 的輸出神經元，其 軸突（axons） 組成 視神經。\n\n**考試角度**\n- 感光細胞 與 雙極細胞 多用 漸變電位\n- 神經節細胞 產生 動作電位\n- 視神經 由 神經節細胞 軸突 組成\n\n**口訣**\n感光收、雙極接、節細胞送。",
-          "keys": [
-            "感光細胞（photoreceptor） 與 雙極細胞（bipolar） 多用 漸變電位（graded potential）",
-            "神經節細胞（ganglion cell） 產生 動作電位（action potential）",
-            "視神經（optic nerve） 由 神經節細胞（ganglion cell） 軸突（axons） 組成"
+          "body": [
+            "> 感光細胞（photoreceptor） 收光，雙極細胞（bipolar cell） 中繼，神經節細胞（ganglion cell） 把結果送入 視神經（optic nerve）。",
+            "",
+            "桿狀細胞（rods） 與 錐狀細胞（cones） 將光轉為 漸變電位（graded potential）；雙極細胞（bipolar） cells 依受體不同形成 ON/OFF 路徑（pathway）；神經節（ganglion） cells 是視網膜主要產生 動作電位（action potential） 的輸出神經元，其 軸突（axons） 組成 視神經。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜主路徑只有三站",
+          "body": [
+            "**口訣**：感光收、雙極接、節細胞送。"
           ],
-          "tip": "口訣：感光收、雙極接、節細胞送。"
+          "exam": [
+            "感光細胞 與 雙極細胞 多用 漸變電位",
+            "神經節細胞 產生 動作電位",
+            "視神經 由 神經節細胞 軸突 組成"
+          ]
         },
         {
           "type": "check",
@@ -62,13 +74,25 @@
         {
           "type": "card",
           "title": "暗處 感光細胞（photoreceptor） 反而去極化",
-          "body": "**一句話／白話**\n黑暗時 環鳥苷酸（cGMP） 門開著，感光細胞（photoreceptor） depolarized 並持續釋放 麩胺酸（glutamate）。\n\n**觀念**\n暗處 環鳥苷酸-gated cation 通道（channels） 開啟形成 暗處（dark） current，感光細胞 約維持在較去極化狀態並持續釋放 麩胺酸。光來後啟動 感光換能（phototransduction），環鳥苷酸 降低、通道關閉、細胞 hyperpolarized、麩胺酸 減少。\n\n**考試角度**\n- 暗處 = depolarized + 麩胺酸 high\n- 光（light） = hyperpolarized + 麩胺酸 low\n- 感光細胞 對光的直接反應不是 動作電位（action potential）\n\n**口訣**\n感光細胞很反直覺：黑暗很吵，亮光安靜。",
-          "keys": [
-            "暗處（dark） = depolarized + 麩胺酸（glutamate） high",
-            "光（light） = hyperpolarized + 麩胺酸（glutamate） low",
-            "感光細胞（photoreceptor） 對光的直接反應不是 動作電位（action potential）"
+          "body": [
+            "> 黑暗時 環鳥苷酸（cGMP） 門開著，感光細胞（photoreceptor） depolarized 並持續釋放 麩胺酸（glutamate）。",
+            "",
+            "暗處 環鳥苷酸-gated cation 通道（channels） 開啟形成 暗處（dark） current，感光細胞 約維持在較去極化狀態並持續釋放 麩胺酸。",
+            "",
+            "光來後啟動 感光換能（phototransduction），環鳥苷酸 降低、通道關閉、細胞 hyperpolarized、麩胺酸 減少。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜暗處 感光細胞（photoreceptor） 反…",
+          "body": [
+            "**口訣**：感光細胞很反直覺：黑暗很吵，亮光安靜。"
           ],
-          "tip": "口訣：感光細胞很反直覺：黑暗很吵，亮光安靜。"
+          "exam": [
+            "暗處 = depolarized + 麩胺酸 high",
+            "光（light） = hyperpolarized + 麩胺酸 low",
+            "感光細胞 對光的直接反應不是 動作電位（action potential）"
+          ]
         },
         {
           "type": "check",
@@ -88,13 +112,25 @@
         {
           "type": "card",
           "title": "神經節細胞（ganglion cell） 是最後輸出端",
-          "body": "**一句話／白話**\n所有眼內運算最後都要轉成 神經節細胞（ganglion cell） 放電頻率，才能沿視神經離開。\n\n**觀念**\n神經節細胞 整合 雙極細胞（bipolar） 與 amacrine 輸入（input），將局部亮暗、對比、顏色或動態資訊編碼成 動作電位（action potential） frequency。不同 神經節細胞 類型具有不同 感受野（receptive field） 與功能。\n\n**考試角度**\n- 神經節細胞 軸突（axons） 形成 神經纖維層（NFL） 與 視神經（optic nerve）\n- 輸出以 spike frequency 編碼\n- 神經節細胞 並非只做被動中繼\n\n**口訣**\n眼內算完，節細胞用放電把答案送出去。",
-          "keys": [
-            "神經節細胞（ganglion cell） 軸突（axons） 形成 神經纖維層（NFL） 與 視神經（optic nerve）",
-            "輸出以 spike frequency 編碼",
-            "神經節細胞（ganglion cell） 並非只做被動中繼"
+          "body": [
+            "> 所有眼內運算最後都要轉成 神經節細胞（ganglion cell） 放電頻率，才能沿視神經離開。",
+            "",
+            "神經節細胞 整合 雙極細胞（bipolar） 與 amacrine 輸入（input），將局部亮暗、對比、顏色或動態資訊編碼成 動作電位（action potential） frequency。",
+            "",
+            "不同 神經節細胞 類型具有不同 感受野（receptive field） 與功能。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜神經節細胞（ganglion cell） 是最後…",
+          "body": [
+            "**口訣**：眼內算完，節細胞用放電把答案送出去。"
           ],
-          "tip": "口訣：眼內算完，節細胞用放電把答案送出去。"
+          "exam": [
+            "神經節細胞 軸突（axons） 形成 神經纖維層（NFL） 與 視神經（optic nerve）",
+            "輸出以 spike frequency 編碼",
+            "神經節細胞 並非只做被動中繼"
+          ]
         },
         {
           "type": "check",
@@ -225,18 +261,32 @@
         {
           "type": "intro",
           "title": "桿狀細胞（rod）、錐狀細胞（cone） 與會聚：敏感度換解析度",
-          "body": "會聚越多越敏感，但越難知道光到底落在哪一個點。\n\n- 先比較 桿狀細胞（rod）/錐狀細胞（cone） 功能。\n- 再看 會聚（convergence）。\n- 最後連到中央與周邊視覺。"
+          "body": [
+            "會聚越多越敏感，但越難知道光到底落在哪一個點。\n\n- 先比較 桿狀細胞（rod）/錐狀細胞（cone） 功能。\n- 再看 會聚（convergence）。\n- 最後連到中央與周邊視覺。"
+          ]
         },
         {
           "type": "card",
           "title": "桿狀細胞（rods） 專長弱光，錐狀細胞（cones） 專長細節與色彩",
-          "body": "**一句話／白話**\n桿狀細胞（rod） 很敏感但不辨色；錐狀細胞（cone） 需要較亮光，卻能看細節與顏色。\n\n**觀念**\n桿狀細胞（rods） 主要參與 暗視的（scotopic） vision，對弱光敏感、反應較慢且飽和較早。錐狀細胞（cones） 參與 明視的（photopic） vision，提供高 acuity 與 color vision；S/M/L 錐狀細胞 對不同波段最敏感。\n\n**考試角度**\n- 桿狀細胞：高 sensitivity、低 acuity、無色覺\n- 錐狀細胞：較低 sensitivity、高 acuity、有色覺\n- 暗處看東西常用周邊視網膜較有效\n\n**口訣**\n桿狀細胞 看暗不看色；錐狀細胞 看細又看色。",
-          "keys": [
-            "桿狀細胞（rod）：高 sensitivity、低 acuity、無色覺",
-            "錐狀細胞（cone）：較低 sensitivity、高 acuity、有色覺",
-            "暗處看東西常用周邊視網膜較有效"
+          "body": [
+            "> 桿狀細胞（rod） 很敏感但不辨色；錐狀細胞（cone） 需要較亮光，卻能看細節與顏色。",
+            "",
+            "桿狀細胞（rods） 主要參與 暗視的（scotopic） vision，對弱光敏感、反應較慢且飽和較早。",
+            "",
+            "錐狀細胞（cones） 參與 明視的（photopic） vision，提供高 acuity 與 color vision；S/M/L 錐狀細胞 對不同波段最敏感。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜桿狀細胞（rods） 專長弱光，錐狀細胞（con…",
+          "body": [
+            "**口訣**：桿狀細胞 看暗不看色；錐狀細胞 看細又看色。"
           ],
-          "tip": "口訣：桿狀細胞（rod） 看暗不看色；錐狀細胞（cone） 看細又看色。"
+          "exam": [
+            "桿狀細胞：高 sensitivity、低 acuity、無色覺",
+            "錐狀細胞：較低 sensitivity、高 acuity、有色覺",
+            "暗處看東西常用周邊視網膜較有效"
+          ]
         },
         {
           "type": "check",
@@ -256,13 +306,25 @@
         {
           "type": "card",
           "title": "會聚（convergence） 是敏感度與解析度的交換",
-          "body": "**一句話／白話**\n很多 感光細胞（photoreceptors） 共用一條輸出，容易抓到微弱光，但無法精準定位。\n\n**觀念**\n周邊 桿狀細胞（rods） 常高度 會聚（convergence） 到 雙極細胞（bipolar）/神經節（ganglion） 路徑（pathway），可進行 spatial summation 增加 sensitivity，但降低 spatial resolution。foveal 錐狀細胞（cones） 接近一對一路徑，定位精準但需要較強光。\n\n**考試角度**\n- high 會聚 → high sensitivity, low acuity\n- low 會聚 → high acuity\n- 中央凹（fovea） 低會聚；周邊 桿狀細胞（rod） 路徑 高會聚\n\n**口訣**\n多人一起按警鈴：容易聽見，但不知道是誰按的。",
-          "keys": [
-            "high 會聚（convergence） → high sensitivity, low acuity",
-            "low 會聚（convergence） → high acuity",
-            "中央凹（fovea） 低會聚；周邊 桿狀細胞（rod） 路徑（pathway） 高會聚"
+          "body": [
+            "> 很多 感光細胞（photoreceptors） 共用一條輸出，容易抓到微弱光，但無法精準定位。",
+            "",
+            "周邊 桿狀細胞（rods） 常高度 會聚（convergence） 到 雙極細胞（bipolar）/神經節（ganglion） 路徑（pathway），可進行 spatial summation 增加 sensitivity，但降低 spatial resolution。",
+            "",
+            "foveal 錐狀細胞（cones） 接近一對一路徑，定位精準但需要較強光。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜會聚（convergence） 是敏感度與解析度…",
+          "body": [
+            "**口訣**：多人一起按警鈴：容易聽見，但不知道是誰按的。"
           ],
-          "tip": "口訣：多人一起按警鈴：容易聽見，但不知道是誰按的。"
+          "exam": [
+            "high 會聚 → high sensitivity, low acuity",
+            "low 會聚 → high acuity",
+            "中央凹（fovea） 低會聚；周邊 桿狀細胞（rod） 路徑 高會聚"
+          ]
         },
         {
           "type": "check",
@@ -282,13 +344,25 @@
         {
           "type": "card",
           "title": "三種 錐狀細胞（cone） 建立色覺",
-          "body": "**一句話／白話**\n大腦比較 S、M、L 錐狀細胞（cone） 的相對反應，而不是每個 錐狀細胞 單獨看出一種固定顏色。\n\n**觀念**\nS、M、L 錐狀細胞（cones） 對短、中、長波長有不同但重疊的 sensitivity curves。顏色知覺來自不同 錐狀細胞 outputs 的比較；單一 錐狀細胞 的放電無法獨立決定波長。\n\n**考試角度**\n- 三種 錐狀細胞 sensitivity curve 會重疊\n- 色覺依相對反應比較\n- 桿狀細胞（rod） 不提供正常三色覺\n\n**口訣**\n顏色不是一盞燈，是三盞燈亮度比例。",
-          "keys": [
-            "三種 錐狀細胞（cone） sensitivity curve 會重疊",
+          "body": [
+            "> 大腦比較 S、M、L 錐狀細胞（cone） 的相對反應，而不是每個 錐狀細胞 單獨看出一種固定顏色。",
+            "",
+            "S、M、L 錐狀細胞（cones） 對短、中、長波長有不同但重疊的 sensitivity curves。",
+            "",
+            "顏色知覺來自不同 錐狀細胞 outputs 的比較；單一 錐狀細胞 的放電無法獨立決定波長。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜三種 錐狀細胞（cone） 建立色覺",
+          "body": [
+            "**口訣**：顏色不是一盞燈，是三盞燈亮度比例。"
+          ],
+          "exam": [
+            "三種 錐狀細胞 sensitivity curve 會重疊",
             "色覺依相對反應比較",
             "桿狀細胞（rod） 不提供正常三色覺"
-          ],
-          "tip": "口訣：顏色不是一盞燈，是三盞燈亮度比例。"
+          ]
         },
         {
           "type": "check",
@@ -401,18 +475,32 @@
         {
           "type": "intro",
           "title": "ON/OFF 與橫向調節：視網膜如何抓邊界",
-          "body": "視網膜不是回報總亮度，而是特別在意哪裡變亮、哪裡變暗、哪裡有邊界。\n\n- 先分 ON 與 OFF 型雙極細胞（OFF bipolar）。\n- 再看 center-surround。\n- 最後認 水平（horizontal）/amacrine 的分工。"
+          "body": [
+            "視網膜不是回報總亮度，而是特別在意哪裡變亮、哪裡變暗、哪裡有邊界。\n\n- 先分 ON 與 OFF 型雙極細胞（OFF bipolar）。\n- 再看 center-surround。\n- 最後認 水平（horizontal）/amacrine 的分工。"
+          ]
         },
         {
           "type": "card",
           "title": "ON 與 OFF 型雙極細胞（OFF bipolar） 對同一個 麩胺酸（glutamate） 說不同語言",
-          "body": "**一句話／白話**\n光讓 麩胺酸（glutamate） 下降；ON 型雙極細胞（ON bipolar） 因此開心去極化，OFF 型雙極細胞（OFF bipolar） 則超極化。\n\n**觀念**\nON 型雙極細胞 表現 sign-inverting mGluR6 路徑（pathway）：黑暗 麩胺酸 抑制它，光照時解除抑制而 depolarize。OFF 型雙極細胞 透過 ionotropic 受體（receptor） 保留符號：麩胺酸 下降時 超極化（hyperpolarize）。\n\n**考試角度**\n- 光（light）：ON 型雙極細胞 depolarizes\n- 光：OFF 型雙極細胞 hyperpolarizes\n- ON/OFF 分流從 雙極細胞（bipolar cell） 開始\n\n**口訣**\n光來：ON 開、OFF 關。",
-          "keys": [
-            "光（light）：ON 型雙極細胞（ON bipolar） depolarizes",
-            "光（light）：OFF 型雙極細胞（OFF bipolar） hyperpolarizes",
-            "ON/OFF 分流從 雙極細胞（bipolar cell） 開始"
+          "body": [
+            "> 光讓 麩胺酸（glutamate） 下降；ON 型雙極細胞（ON bipolar） 因此開心去極化，OFF 型雙極細胞（OFF bipolar） 則超極化。",
+            "",
+            "ON 型雙極細胞 表現 sign-inverting mGluR6 路徑（pathway）：黑暗 麩胺酸 抑制它，光照時解除抑制而 depolarize。",
+            "",
+            "OFF 型雙極細胞 透過 ionotropic 受體（receptor） 保留符號：麩胺酸 下降時 超極化（hyperpolarize）。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜ON 與 OFF 型雙極細胞（OFF bipol…",
+          "body": [
+            "**口訣**：光來：ON 開、OFF 關。"
           ],
-          "tip": "口訣：光來：ON 開、OFF 關。"
+          "exam": [
+            "光（light）：ON 型雙極細胞 depolarizes",
+            "光：OFF 型雙極細胞 hyperpolarizes",
+            "ON/OFF 分流從 雙極細胞（bipolar cell） 開始"
+          ]
         },
         {
           "type": "check",
@@ -432,13 +520,25 @@
         {
           "type": "card",
           "title": "center-surround 感受野（receptive field） 強化對比",
-          "body": "**一句話／白話**\n中心與周邊反向反應，讓 神經節細胞（ganglion cell） 特別容易發現邊界，而不是均勻亮面。\n\n**觀念**\nON-center/OFF-surround cell 對中心變亮最興奮，但周邊亮會抑制；OFF-center/ON-surround 相反。均勻照亮中心與周邊時，兩者效果部分抵消，因此對 contrast edge 最敏感。\n\n**考試角度**\n- center 與 surround 拮抗\n- 均勻光反應小於局部對比\n- 功能是邊界與 contrast enhancement\n\n**口訣**\n視網膜愛抓明暗交界，不愛報告一整片均勻亮。",
-          "keys": [
+          "body": [
+            "> 中心與周邊反向反應，讓 神經節細胞（ganglion cell） 特別容易發現邊界，而不是均勻亮面。",
+            "",
+            "ON-center/OFF-surround cell 對中心變亮最興奮，但周邊亮會抑制；OFF-center/ON-surround 相反。",
+            "",
+            "均勻照亮中心與周邊時，兩者效果部分抵消，因此對 contrast edge 最敏感。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜center-surround 感受野（rece…",
+          "body": [
+            "**口訣**：視網膜愛抓明暗交界，不愛報告一整片均勻亮。"
+          ],
+          "exam": [
             "center 與 surround 拮抗",
             "均勻光反應小於局部對比",
             "功能是邊界與 contrast enhancement"
-          ],
-          "tip": "口訣：視網膜愛抓明暗交界，不愛報告一整片均勻亮。"
+          ]
         },
         {
           "type": "check",
@@ -458,13 +558,25 @@
         {
           "type": "card",
           "title": "水平（horizontal） 與 amacrine 做不同層次的側向運算",
-          "body": "**一句話／白話**\n水平細胞（horizontal cell） 主要在 外網狀層（OPL） 比較空間鄰居；無軸突細胞（amacrine cell） 主要在 內網狀層（IPL） 調節時間、動態與複雜訊號。\n\n**觀念**\n水平（horizontal） cells 連接 感光細胞（photoreceptor） 與 雙極細胞（bipolar） 周邊，建立 lateral inhibition 與 surround。amacrine cells 在 雙極細胞-神經節（ganglion） junction 參與 顳側（temporal） filtering、motion、桿狀細胞（rod） 路徑（pathway） 與多種抑制調節。\n\n**考試角度**\n- 水平細胞：外網狀層、空間側抑制\n- 無軸突細胞：內網狀層、時間與動態調節\n- 兩者都不是視神經主要輸出\n\n**口訣**\n水平 管旁邊；amacrine 管時機與動態。",
-          "keys": [
-            "水平細胞（horizontal cell）：外網狀層（OPL）、空間側抑制",
-            "無軸突細胞（amacrine cell）：內網狀層（IPL）、時間與動態調節",
-            "兩者都不是視神經主要輸出"
+          "body": [
+            "> 水平細胞（horizontal cell） 主要在 外網狀層（OPL） 比較空間鄰居；無軸突細胞（amacrine cell） 主要在 內網狀層（IPL） 調節時間、動態與複雜訊號。",
+            "",
+            "水平（horizontal） cells 連接 感光細胞（photoreceptor） 與 雙極細胞（bipolar） 周邊，建立 lateral inhibition 與 surround。",
+            "",
+            "amacrine cells 在 雙極細胞-神經節（ganglion） junction 參與 顳側（temporal） filtering、motion、桿狀細胞（rod） 路徑（pathway） 與多種抑制調節。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜水平（horizontal） 與 amacrin…",
+          "body": [
+            "**口訣**：水平 管旁邊；amacrine 管時機與動態。"
           ],
-          "tip": "口訣：水平（horizontal） 管旁邊；amacrine 管時機與動態。"
+          "exam": [
+            "水平細胞：外網狀層、空間側抑制",
+            "無軸突細胞：內網狀層、時間與動態調節",
+            "兩者都不是視神經主要輸出"
+          ]
         },
         {
           "type": "check",
@@ -575,16 +687,18 @@
         {
           "type": "intro",
           "title": "串連、公式與易錯整合",
-          "body": "完整保留單元路線、必考重點與符號條件。"
+          "body": [
+            "完整保留單元路線、必考重點與符號條件。"
+          ]
         },
         {
           "type": "card",
           "title": "單元路線",
-          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先抓直向主路徑。\n- 再理解 桿狀細胞（rod）/錐狀細胞（cone） 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。",
-          "keys": [
-            "把本單元的關係串起來，確認易錯条件與方向。"
-          ],
-          "tip": ""
+          "body": [
+            "- 先抓直向主路徑。",
+            "- 再理解 桿狀細胞（rod）/錐狀細胞（cone） 與會聚。",
+            "- 最後看 ON/OFF 與橫向調節如何強化對比。"
+          ]
         },
         {
           "type": "check",
@@ -598,9 +712,14 @@
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先抓直向主路徑。\n- 再理解 桿狀細胞（rod）/錐狀細胞（cone） 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。\n- 把判斷依據連回題目：- 先抓直向主路徑。\n- 再理解 桿狀細胞/錐狀細胞 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。\n\n**結論與依據**\n- 先抓直向主路徑。\n- 再理解 桿狀細胞/錐狀細胞 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。",
-          "keys": [
-            "- 先抓直向主路徑。\n- 再理解 桿狀細胞（rod）/錐狀細胞（cone） 與會聚。\n- 最後看 ON/OFF 與橫向調節如何強化對比。"
+          "body": [
+            "**情境**",
+            "用自己的話說明「單元路線」，並說出一個判斷依據。",
+            "",
+            "**結論**",
+            "- 先抓直向主路徑。",
+            "- 再理解 桿狀細胞/錐狀細胞 與會聚。",
+            "- 最後看 ON/OFF 與橫向調節如何強化對比。"
           ]
         },
         {
@@ -685,15 +804,14 @@
         {
           "type": "intro",
           "title": "課末挑戰",
-          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          "body": [
+            "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          ]
         },
         {
           "type": "card",
           "title": "判斷依據：視網膜與神經傳遞",
-          "body": "光使 感光細胞（photoreceptor） 超極化（hyperpolarize），麩胺酸（glutamate） release 減少。\n\n正確選項：減少。\n",
-          "keys": [
-            "光使 感光細胞（photoreceptor） 超極化（hyperpolarize），麩胺酸（glutamate） release 減少。\n\n正確選項：減少。\n"
-          ]
+          "body": "光使 感光細胞（photoreceptor） 超極化（hyperpolarize），麩胺酸（glutamate） release 減少。\n\n正確選項：減少。\n"
         },
         {
           "type": "check",
@@ -713,10 +831,7 @@
         {
           "type": "card",
           "title": "判斷依據：視網膜與神經傳遞",
-          "body": "多個輸入匯在一起會降低定位精度。\n\n正確選項：解析度下降。\n",
-          "keys": [
-            "多個輸入匯在一起會降低定位精度。\n\n正確選項：解析度下降。\n"
-          ]
+          "body": "多個輸入匯在一起會降低定位精度。\n\n正確選項：解析度下降。\n"
         },
         {
           "type": "check",
@@ -736,10 +851,7 @@
         {
           "type": "card",
           "title": "判斷依據：視網膜與神經傳遞",
-          "body": "ON-center 對中心亮刺激最興奮。\n\n正確選項：中心亮、周邊暗。\n",
-          "keys": [
-            "ON-center 對中心亮刺激最興奮。\n\n正確選項：中心亮、周邊暗。\n"
-          ]
+          "body": "ON-center 對中心亮刺激最興奮。\n\n正確選項：中心亮、周邊暗。\n"
         },
         {
           "type": "check",
@@ -859,7 +971,9 @@
         {
           "type": "intro",
           "title": "課末挑戰",
-          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          "body": [
+            "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          ]
         },
         {
           "type": "card",
@@ -887,9 +1001,12 @@
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n無軸突細胞（amacrine cell） 的主要突觸活動區是？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- 無軸突細胞 主要在 內網狀層（IPL） 調節 雙極細胞（bipolar）-神經節（ganglion） 傳遞。\n\n正確選項：內網狀層。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\n內網狀層",
-          "keys": [
-            "內網狀層（IPL）"
+          "body": [
+            "**情境**",
+            "無軸突細胞（amacrine cell） 的主要突觸活動區是？",
+            "",
+            "**結論**",
+            "內網狀層"
           ]
         },
         {

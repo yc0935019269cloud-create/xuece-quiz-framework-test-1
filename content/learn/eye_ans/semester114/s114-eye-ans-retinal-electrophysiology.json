@@ -31,18 +31,32 @@
         {
           "type": "intro",
           "title": "光轉換：光如何讓 感光細胞（photoreceptor） 安靜",
-          "body": "光啟動 視紫質（rhodopsin）/轉導蛋白（transducin）/磷酸二酯酶（PDE），讓 環鳥苷酸（cGMP） 降低並關閉通道。\n\n- 先比較暗與亮。\n- 再記 cascade。\n- 最後連到膜電位與 神經傳導物質（neurotransmitter）。"
+          "body": [
+            "光啟動 視紫質（rhodopsin）/轉導蛋白（transducin）/磷酸二酯酶（PDE），讓 環鳥苷酸（cGMP） 降低並關閉通道。\n\n- 先比較暗與亮。\n- 再記 cascade。\n- 最後連到膜電位與 神經傳導物質（neurotransmitter）。"
+          ]
         },
         {
           "type": "card",
           "title": "暗電流維持去極化",
-          "body": "**一句話／白話**\n暗處 環鳥苷酸（cGMP） 高，cation 通道（channel） 開啟，感光細胞（photoreceptor） 去極化並持續釋放 麩胺酸（glutamate）。\n\n**觀念**\n外節 環鳥苷酸-gated 通道（channels） 在暗處開啟，Na+ 與 Ca2+ 流入；內節 K+ 外流，形成 暗處（dark） current。感光細胞 因此保持相對 depolarized。\n\n**考試角度**\n- 暗處：環鳥苷酸 high、通道 open\n- 暗處 current 主要涉及外節陽離子流入\n- 暗處 麩胺酸 release high\n\n**口訣**\n黑暗讓門開著，感光細胞一直說話。",
-          "keys": [
-            "暗處（dark）：環鳥苷酸（cGMP） high、通道（channel） open",
-            "暗處（dark） current 主要涉及外節陽離子流入",
-            "暗處 麩胺酸（glutamate） release high"
+          "body": [
+            "> 暗處 環鳥苷酸（cGMP） 高，cation 通道（channel） 開啟，感光細胞（photoreceptor） 去極化並持續釋放 麩胺酸（glutamate）。",
+            "",
+            "外節 環鳥苷酸-gated 通道（channels） 在暗處開啟，Na+ 與 Ca2+ 流入；內節 K+ 外流，形成 暗處（dark） current。",
+            "",
+            "感光細胞 因此保持相對 depolarized。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜暗電流維持去極化",
+          "body": [
+            "**口訣**：黑暗讓門開著，感光細胞一直說話。"
           ],
-          "tip": "口訣：黑暗讓門開著，感光細胞一直說話。"
+          "exam": [
+            "暗處：環鳥苷酸 high、通道 open",
+            "暗處 current 主要涉及外節陽離子流入",
+            "暗處 麩胺酸 release high"
+          ]
         },
         {
           "type": "check",
@@ -62,13 +76,23 @@
         {
           "type": "card",
           "title": "光轉換 cascade 關閉通道",
-          "body": "**一句話／白話**\n光依序啟動 視紫質（rhodopsin）、轉導蛋白（transducin）、磷酸二酯酶（PDE），使 環鳥苷酸（cGMP） 下降。\n\n**觀念**\nphoton 將 11-順式視黃醛（11-cis retinal） 轉為 全反式視黃醛（all-trans retinal），啟動 視紫質；視紫質 活化 轉導蛋白，轉導蛋白 活化 phosphodiesterase，磷酸二酯酶 分解 環鳥苷酸，使 cation 通道（channels） 關閉。\n\n**考試角度**\n- 順序：視紫質 → 轉導蛋白 → 磷酸二酯酶 → 環鳥苷酸↓\n- 11-順式視黃醛 轉為 全反式視黃醛\n- 訊號級聯具有 amplification\n\n**口訣**\n光打 R，R 叫 T，T 叫 磷酸二酯酶，把 環鳥苷酸 清掉。",
-          "keys": [
-            "順序：視紫質（rhodopsin） → 轉導蛋白（transducin） → 磷酸二酯酶（PDE） → 環鳥苷酸（cGMP）↓",
-            "11-順式視黃醛（11-cis retinal） 轉為 全反式視黃醛（all-trans retinal）",
-            "訊號級聯具有 amplification"
+          "body": [
+            "> 光依序啟動 視紫質（rhodopsin）、轉導蛋白（transducin）、磷酸二酯酶（PDE），使 環鳥苷酸（cGMP） 下降。",
+            "",
+            "photon 將 11-順式視黃醛（11-cis retinal） 轉為 全反式視黃醛（all-trans retinal），啟動 視紫質；視紫質 活化 轉導蛋白，轉導蛋白 活化 phosphodiesterase，磷酸二酯酶 分解 環鳥苷酸，使 cation 通道（channels） 關閉。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜光轉換 cascade 關閉通道",
+          "body": [
+            "**口訣**：光打 R，R 叫 T，T 叫 磷酸二酯酶，把 環鳥苷酸 清掉。"
           ],
-          "tip": "口訣：光打 R，R 叫 T，T 叫 磷酸二酯酶（PDE），把 環鳥苷酸（cGMP） 清掉。"
+          "exam": [
+            "順序：視紫質 → 轉導蛋白 → 磷酸二酯酶 → 環鳥苷酸↓",
+            "11-順式視黃醛 轉為 全反式視黃醛",
+            "訊號級聯具有 amplification"
+          ]
         },
         {
           "type": "check",
@@ -88,13 +112,25 @@
         {
           "type": "card",
           "title": "光使 感光細胞（photoreceptor） 超極化",
-          "body": "**一句話／白話**\n通道關閉後陽離子流入減少，感光細胞（photoreceptor） 超極化（hyperpolarize），麩胺酸（glutamate） release 下降。\n\n**觀念**\n光反應與一般感覺受器常見的去極化不同。感光細胞 在光下變得更負，這個 graded 超極化（hyperpolarization） 再透過 麩胺酸 減少傳給 ON/OFF 型雙極細胞（OFF bipolar） pathways。\n\n**考試角度**\n- 光（light）：超極化\n- 光：麩胺酸 release decreases\n- 反應是 漸變電位（graded potential）\n\n**口訣**\n光越亮，感光細胞越安靜。",
-          "keys": [
-            "光（light）：超極化（hyperpolarization）",
-            "光（light）：麩胺酸（glutamate） release decreases",
-            "反應是 漸變電位（graded potential）"
+          "body": [
+            "> 通道關閉後陽離子流入減少，感光細胞（photoreceptor） 超極化（hyperpolarize），麩胺酸（glutamate） release 下降。",
+            "",
+            "光反應與一般感覺受器常見的去極化不同。",
+            "",
+            "感光細胞 在光下變得更負，這個 graded 超極化（hyperpolarization） 再透過 麩胺酸 減少傳給 ON/OFF 型雙極細胞（OFF bipolar） pathways。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜光使 感光細胞（photoreceptor） 超…",
+          "body": [
+            "**口訣**：光越亮，感光細胞越安靜。"
           ],
-          "tip": "口訣：光越亮，感光細胞越安靜。"
+          "exam": [
+            "光（light）：超極化",
+            "光：麩胺酸 release decreases",
+            "反應是 漸變電位（graded potential）"
+          ]
         },
         {
           "type": "check",
@@ -207,18 +243,32 @@
         {
           "type": "intro",
           "title": "視網膜電位圖（ERG） 基本波：先看向下，再看向上",
-          "body": "a 波（a-wave） 先向下、b 波（b-wave） 再向上；來源要用細胞群理解。\n\n- 先認波形方向。\n- 再配對主要細胞來源。\n- 最後看波形改變代表哪層出問題。"
+          "body": [
+            "a 波（a-wave） 先向下、b 波（b-wave） 再向上；來源要用細胞群理解。\n\n- 先認波形方向。\n- 再配對主要細胞來源。\n- 最後看波形改變代表哪層出問題。"
+          ]
         },
         {
           "type": "card",
           "title": "a 波（a-wave） 主要反映 感光細胞（photoreceptor）",
-          "body": "**一句話／白話**\n閃光後第一個向下的負波是 a 波（a-wave），主要來自 桿狀細胞（rods）/錐狀細胞（cones） 的光反應。\n\n**觀念**\na 波 是早期負向 deflection，主要反映 感光細胞（photoreceptor） outer 視網膜的（retinal） 反應（response）。若 感光細胞 廣泛受損，a 波 幅度（amplitude） 會下降。\n\n**考試角度**\n- a 波：先出現、負向\n- 主要來源：感光細胞\n- outer 視網膜的 disease 可降低 a 波\n\n**口訣**\na = 第一個向下，想感光細胞先接光。",
-          "keys": [
-            "a 波（a-wave）：先出現、負向",
-            "主要來源：感光細胞（photoreceptor）",
-            "outer 視網膜的（retinal） disease 可降低 a 波（a-wave）"
+          "body": [
+            "> 閃光後第一個向下的負波是 a 波（a-wave），主要來自 桿狀細胞（rods）/錐狀細胞（cones） 的光反應。",
+            "",
+            "a 波 是早期負向 deflection，主要反映 感光細胞（photoreceptor） outer 視網膜的（retinal） 反應（response）。",
+            "",
+            "若 感光細胞 廣泛受損，a 波 幅度（amplitude） 會下降。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜a 波（a-wave） 主要反映 感光細胞（ph…",
+          "body": [
+            "**口訣**：a = 第一個向下，想感光細胞先接光。"
           ],
-          "tip": "口訣：a = 第一個向下，想感光細胞先接光。"
+          "exam": [
+            "a 波：先出現、負向",
+            "主要來源：感光細胞",
+            "outer 視網膜的 disease 可降低 a 波"
+          ]
         },
         {
           "type": "check",
@@ -238,13 +288,25 @@
         {
           "type": "card",
           "title": "b 波（b-wave） 主要反映 inner 視網膜的（retinal） 雙極細胞（bipolar）/穆勒氏（Müller） activity",
-          "body": "**一句話／白話**\na 波（a-wave） 後的大向上波是 b 波（b-wave），主要與 ON 型雙極細胞（ON bipolar） 與 穆勒氏細胞（Müller cell） 相關。\n\n**觀念**\nb 波 是明顯正向波，主要由 inner 視網膜的（retinal） activity 產生，常以 ON 型雙極細胞 cell 反應（response） 與 穆勒氏細胞 potassium currents 解釋。若 b 波 顯著下降而 a 波 相對保留，提示 感光細胞（photoreceptor） 後方傳遞異常。\n\n**考試角度**\n- b 波：a 波 後的正向大波\n- 主要與 ON 型雙極細胞/穆勒氏細胞 activity 有關\n- a 保留、b 降低稱 電負型反應（electronegative pattern）\n\n**口訣**\nb = big upward wave，想到 雙極細胞（bipolar）。",
-          "keys": [
-            "b 波（b-wave）：a 波（a-wave） 後的正向大波",
-            "主要與 ON 型雙極細胞（ON bipolar）/穆勒氏細胞（Müller cell） activity 有關",
-            "a 保留、b 降低稱 電負型反應（electronegative pattern）"
+          "body": [
+            "> a 波（a-wave） 後的大向上波是 b 波（b-wave），主要與 ON 型雙極細胞（ON bipolar） 與 穆勒氏細胞（Müller cell） 相關。",
+            "",
+            "b 波 是明顯正向波，主要由 inner 視網膜的（retinal） activity 產生，常以 ON 型雙極細胞 cell 反應（response） 與 穆勒氏細胞 potassium currents 解釋。",
+            "",
+            "若 b 波 顯著下降而 a 波 相對保留，提示 感光細胞（photoreceptor） 後方傳遞異常。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜b 波（b-wave） 主要反映 inner 視…",
+          "body": [
+            "**口訣**：b = big upward wave，想到 雙極細胞（bipolar）。"
           ],
-          "tip": "口訣：b = big upward wave，想到 雙極細胞（bipolar）。"
+          "exam": [
+            "b 波：a 波 後的正向大波",
+            "主要與 ON 型雙極細胞/穆勒氏細胞 activity 有關",
+            "a 保留、b 降低稱 電負型反應（electronegative pattern）"
+          ]
         },
         {
           "type": "check",
@@ -264,13 +326,25 @@
         {
           "type": "card",
           "title": "c 波（c-wave） 與慢電位",
-          "body": "**一句話／白話**\nc 波（c-wave） 是較慢的正向變化，和 視網膜色素上皮（RPE） 與 穆勒氏細胞（Müller cell） 對離子環境的反應有關。\n\n**觀念**\nc 波 出現較晚，主要與 視網膜色素上皮 apical membrane 反應（response） 及 穆勒氏細胞 slow component 有關。臨床常規 視網膜電位圖（ERG） 最常聚焦 a/b waves，但考題可能用 c 波 連到 視網膜色素上皮。\n\n**考試角度**\n- c 波 較慢\n- 主要聯想到 視網膜色素上皮\n- 不要把 c 波 當 視神經（optic nerve） 動作電位（action potential）\n\n**口訣**\nc 比較慢，想到照顧外層的 視網膜色素上皮。",
-          "keys": [
-            "c 波（c-wave） 較慢",
-            "主要聯想到 視網膜色素上皮（RPE）",
-            "不要把 c 波（c-wave） 當 視神經（optic nerve） 動作電位（action potential）"
+          "body": [
+            "> c 波（c-wave） 是較慢的正向變化，和 視網膜色素上皮（RPE） 與 穆勒氏細胞（Müller cell） 對離子環境的反應有關。",
+            "",
+            "c 波 出現較晚，主要與 視網膜色素上皮 apical membrane 反應（response） 及 穆勒氏細胞 slow component 有關。",
+            "",
+            "臨床常規 視網膜電位圖（ERG） 最常聚焦 a/b waves，但考題可能用 c 波 連到 視網膜色素上皮。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜c 波（c-wave） 與慢電位",
+          "body": [
+            "**口訣**：c 比較慢，想到照顧外層的 視網膜色素上皮。"
           ],
-          "tip": "口訣：c 比較慢，想到照顧外層的 視網膜色素上皮（RPE）。"
+          "exam": [
+            "c 波 較慢",
+            "主要聯想到 視網膜色素上皮",
+            "不要把 c 波 當 視神經（optic nerve） 動作電位（action potential）"
+          ]
         },
         {
           "type": "check",
@@ -383,18 +457,32 @@
         {
           "type": "intro",
           "title": "怎麼讀 視網膜電位圖（ERG）：先問測誰，再看哪個波壞",
-          "body": "全場 視網膜電位圖（ERG） 看整體，局部中央病灶可能需要不同測法；適應狀態決定 桿狀細胞（rods） 或 錐狀細胞（cones） 誰主導。\n\n- 先分 暗處（dark）-adapted 與 光（light）-adapted。\n- 再分 全視野（full-field） 與 focal/多焦鏡片（multifocal）。\n- 最後用波形定位。"
+          "body": [
+            "全場 視網膜電位圖（ERG） 看整體，局部中央病灶可能需要不同測法；適應狀態決定 桿狀細胞（rods） 或 錐狀細胞（cones） 誰主導。\n\n- 先分 暗處（dark）-adapted 與 光（light）-adapted。\n- 再分 全視野（full-field） 與 focal/多焦鏡片（multifocal）。\n- 最後用波形定位。"
+          ]
         },
         {
           "type": "card",
           "title": "暗處（dark）-adapted 視網膜電位圖（ERG） 偏重 桿狀細胞（rod） system",
-          "body": "**一句話／白話**\n暗適應後 桿狀細胞（rods） 恢復敏感，適合測 暗視的（scotopic） 視網膜的（retinal） function。\n\n**觀念**\n暗處（dark）-adapted testing 使用不同閃光強度分離 桿狀細胞（rod）-dominant 與 combined 桿狀細胞-錐狀細胞（cone） responses。因 桿狀細胞 在弱光下主導，因此可偵測廣泛 桿狀細胞 system dysfunction。\n\n**考試角度**\n- 暗處-adapted = 暗視的/桿狀細胞-dominant\n- 需要足夠暗適應時間\n- 桿狀細胞-錐狀細胞 dystrophy 常有明顯異常\n\n**口訣**\n暗室叫 桿狀細胞 上班。",
-          "keys": [
-            "暗處（dark）-adapted = 暗視的（scotopic）/桿狀細胞（rod）-dominant",
-            "需要足夠暗適應時間",
-            "桿狀細胞（rod）-錐狀細胞（cone） dystrophy 常有明顯異常"
+          "body": [
+            "> 暗適應後 桿狀細胞（rods） 恢復敏感，適合測 暗視的（scotopic） 視網膜的（retinal） function。",
+            "",
+            "暗處（dark）-adapted testing 使用不同閃光強度分離 桿狀細胞（rod）-dominant 與 combined 桿狀細胞-錐狀細胞（cone） responses。",
+            "",
+            "因 桿狀細胞 在弱光下主導，因此可偵測廣泛 桿狀細胞 system dysfunction。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜暗處（dark）-adapted 視網膜電位圖（…",
+          "body": [
+            "**口訣**：暗室叫 桿狀細胞 上班。"
           ],
-          "tip": "口訣：暗室叫 桿狀細胞（rod） 上班。"
+          "exam": [
+            "暗處-adapted = 暗視的/桿狀細胞-dominant",
+            "需要足夠暗適應時間",
+            "桿狀細胞-錐狀細胞 dystrophy 常有明顯異常"
+          ]
         },
         {
           "type": "check",
@@ -414,13 +502,25 @@
         {
           "type": "card",
           "title": "光（light）-adapted 與 flicker 偏重 錐狀細胞（cone） system",
-          "body": "**一句話／白話**\n背景亮光壓低 桿狀細胞（rods），錐狀細胞（cone） 反應（response） 與快速 flicker 就更容易被單獨觀察。\n\n**觀念**\n明視的（photopic） 視網膜電位圖（ERG） 在 光（light）-adapted background 下測 錐狀細胞 system。30-Hz flicker 速度太快，桿狀細胞 無法有效追隨，因此主要反映 錐狀細胞 路徑（pathway）。\n\n**考試角度**\n- 光-adapted = 錐狀細胞-dominant\n- 30-Hz flicker 主要測 錐狀細胞 路徑\n- 錐狀細胞 dysfunction 會影響 明視的/flicker responses\n\n**口訣**\n亮背景讓 桿狀細胞（rod） 下班；快閃只剩 錐狀細胞 跟得上。",
-          "keys": [
-            "光（light）-adapted = 錐狀細胞（cone）-dominant",
-            "30-Hz flicker 主要測 錐狀細胞（cone） 路徑（pathway）",
-            "錐狀細胞（cone） dysfunction 會影響 明視的（photopic）/flicker responses"
+          "body": [
+            "> 背景亮光壓低 桿狀細胞（rods），錐狀細胞（cone） 反應（response） 與快速 flicker 就更容易被單獨觀察。",
+            "",
+            "明視的（photopic） 視網膜電位圖（ERG） 在 光（light）-adapted background 下測 錐狀細胞 system。",
+            "",
+            "30-Hz flicker 速度太快，桿狀細胞 無法有效追隨，因此主要反映 錐狀細胞 路徑（pathway）。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜光（light）-adapted 與 flick…",
+          "body": [
+            "**口訣**：亮背景讓 桿狀細胞（rod） 下班；快閃只剩 錐狀細胞 跟得上。"
           ],
-          "tip": "口訣：亮背景讓 桿狀細胞（rod） 下班；快閃只剩 錐狀細胞（cone） 跟得上。"
+          "exam": [
+            "光-adapted = 錐狀細胞-dominant",
+            "30-Hz flicker 主要測 錐狀細胞 路徑",
+            "錐狀細胞 dysfunction 會影響 明視的/flicker responses"
+          ]
         },
         {
           "type": "check",
@@ -440,13 +540,25 @@
         {
           "type": "card",
           "title": "全視野（full-field） 視網膜電位圖（ERG） 正常不代表 黃斑（macula） 一定正常",
-          "body": "**一句話／白話**\n全場 視網膜電位圖（ERG） 是整張視網膜總和，小範圍 macular 病灶（lesion） 可能被大量正常周邊訊號淹沒。\n\n**觀念**\n全視野（full-field） 視網膜電位圖 適合偵測 diffuse 視網膜的（retinal） dysfunction，但對局限 foveal/macular 病灶 可能不敏感。多焦鏡片（multifocal） 視網膜電位圖 可建立不同 視網膜的 locations 的局部反應地圖，pattern 視網膜電位圖 則較關聯 神經節（ganglion）/macular function。\n\n**考試角度**\n- 全視野 視網膜電位圖 看整體\n- mfERG 看局部地圖\n- 局部 macular disease 可有近正常 全視野 視網膜電位圖\n\n**口訣**\n全場像全班平均，小範圍壞掉可能被平均掉。",
-          "keys": [
-            "全視野（full-field） 視網膜電位圖（ERG） 看整體",
-            "mfERG 看局部地圖",
-            "局部 macular disease 可有近正常 全視野（full-field） 視網膜電位圖（ERG）"
+          "body": [
+            "> 全場 視網膜電位圖（ERG） 是整張視網膜總和，小範圍 macular 病灶（lesion） 可能被大量正常周邊訊號淹沒。",
+            "",
+            "全視野（full-field） 視網膜電位圖 適合偵測 diffuse 視網膜的（retinal） dysfunction，但對局限 foveal/macular 病灶 可能不敏感。",
+            "",
+            "多焦鏡片（multifocal） 視網膜電位圖 可建立不同 視網膜的 locations 的局部反應地圖，pattern 視網膜電位圖 則較關聯 神經節（ganglion）/macular function。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "重點整理｜全視野（full-field） 視網膜電位圖（E…",
+          "body": [
+            "**口訣**：全場像全班平均，小範圍壞掉可能被平均掉。"
           ],
-          "tip": "口訣：全場像全班平均，小範圍壞掉可能被平均掉。"
+          "exam": [
+            "全視野 視網膜電位圖 看整體",
+            "mfERG 看局部地圖",
+            "局部 macular disease 可有近正常 全視野 視網膜電位圖"
+          ]
         },
         {
           "type": "check",
@@ -557,16 +669,18 @@
         {
           "type": "intro",
           "title": "串連、公式與易錯整合",
-          "body": "完整保留單元路線、必考重點與符號條件。"
+          "body": [
+            "完整保留單元路線、必考重點與符號條件。"
+          ]
         },
         {
           "type": "card",
           "title": "單元路線",
-          "body": "**一句話／白話**\n把本單元的關係串起來，確認易錯条件與方向。\n\n**觀念**\n- 先懂 感光換能（phototransduction）。\n- 再認 a、b、c wave 的來源。\n- 最後用 暗處（dark）/明適應（light adaptation） 與不同 視網膜電位圖（ERG） 類型定位病變。",
-          "keys": [
-            "把本單元的關係串起來，確認易錯条件與方向。"
-          ],
-          "tip": ""
+          "body": [
+            "- 先懂 感光換能（phototransduction）。",
+            "- 再認 a、b、c wave 的來源。",
+            "- 最後用 暗處（dark）/明適應（light adaptation） 與不同 視網膜電位圖（ERG） 類型定位病變。"
+          ]
         },
         {
           "type": "check",
@@ -580,9 +694,14 @@
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\n用自己的話說明「單元路線」，並說出一個判斷依據。\n\n**判斷步驟**\n- 先確認題目問的主題：單元路線\n- - 先懂 感光換能（phototransduction）。\n- 再認 a、b、c wave 的來源。\n- 最後用 暗處（dark）/明適應（light adaptation） 與不同 視網膜電位圖（ERG） 類型定位病變。\n- 把判斷依據連回題目：- 先懂 感光換能。\n- 再認 a、b、c wave 的來源。\n- 最後用 暗處/明適應 與不同 視網膜電位圖 類型定位病變。\n\n**結論與依據**\n- 先懂 感光換能。\n- 再認 a、b、c wave 的來源。\n- 最後用 暗處/明適應 與不同 視網膜電位圖 類型定位病變。",
-          "keys": [
-            "- 先懂 感光換能（phototransduction）。\n- 再認 a、b、c wave 的來源。\n- 最後用 暗處（dark）/明適應（light adaptation） 與不同 視網膜電位圖（ERG） 類型定位病變。"
+          "body": [
+            "**情境**",
+            "用自己的話說明「單元路線」，並說出一個判斷依據。",
+            "",
+            "**結論**",
+            "- 先懂 感光換能。",
+            "- 再認 a、b、c wave 的來源。",
+            "- 最後用 暗處/明適應 與不同 視網膜電位圖 類型定位病變。"
           ]
         },
         {
@@ -667,7 +786,9 @@
         {
           "type": "intro",
           "title": "課末挑戰",
-          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          "body": [
+            "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          ]
         },
         {
           "type": "card",
@@ -841,15 +962,14 @@
         {
           "type": "intro",
           "title": "課末挑戰",
-          "body": "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          "body": [
+            "先整理判斷依據，再用另一輪實戰確認能否獨立作答。"
+          ]
         },
         {
           "type": "card",
           "title": "判斷依據：視網膜與眼電位",
-          "body": "這種波形提示 感光細胞（photoreceptor） 後的傳遞異常。\n\n正確選項：電負型反應（electronegative pattern）。\n",
-          "keys": [
-            "這種波形提示 感光細胞（photoreceptor） 後的傳遞異常。\n\n正確選項：電負型反應（electronegative pattern）。\n"
-          ]
+          "body": "這種波形提示 感光細胞（photoreceptor） 後的傳遞異常。\n\n正確選項：電負型反應（electronegative pattern）。\n"
         },
         {
           "type": "check",
@@ -869,9 +989,12 @@
         {
           "type": "card",
           "title": "應用：由條件走到結論",
-          "body": "**情境**\na 波（a-wave） 保留、b 波（b-wave） 低下最適合描述？\n\n**判斷步驟**\n- 確認題目問的構造、條件或量。\n- 這種波形提示 感光細胞（photoreceptor） 後的傳遞異常。\n\n正確選項：電負型反應（electronegative pattern）。\n- 將判斷依據連到正確選項。\n\n**結論與依據**\n電負型反應",
-          "keys": [
-            "電負型反應（electronegative pattern）"
+          "body": [
+            "**情境**",
+            "a 波（a-wave） 保留、b 波（b-wave） 低下最適合描述？",
+            "",
+            "**結論**",
+            "電負型反應"
           ]
         },
         {
