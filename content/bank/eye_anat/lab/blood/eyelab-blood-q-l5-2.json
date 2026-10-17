@@ -1,0 +1,239 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-blood-q-l5-2",
+  "subject": "eye_anat",
+  "name": "【跑台】眼瞼與眶周血管（Gray）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・血液供應",
+   "頸外動脈與眼瞼血管"
+  ],
+  "order": 341,
+  "source": "《眼球的血液供應與網膜血管構造與功能》講義；《新實驗手冊-01.pdf》第 4 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "眶周血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眼角動脈 / angular artery",
+   "accept": [
+    "眼角動脈 / angular artery"
+   ],
+   "explain": [
+    "**眼角動脈　angular artery**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "眼角動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q058.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "眶周血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眼角靜脈 / angular vein",
+   "accept": [
+    "眼角靜脈 / angular vein"
+   ],
+   "explain": [
+    "**眼角靜脈　angular vein**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "眼角靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q059.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "眶周血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "顏面動脈 / facial artery",
+   "accept": [
+    "顏面動脈 / facial artery"
+   ],
+   "explain": [
+    "**顏面動脈　facial artery**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "顏面動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q097.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "眶周血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "顏面靜脈 / facial vein",
+   "accept": [
+    "顏面靜脈 / facial vein"
+   ],
+   "explain": [
+    "**顏面靜脈　facial vein**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "顏面靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q060.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "眶周血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眶下動脈 / infraorbital artery",
+   "accept": [
+    "眶下動脈 / infraorbital artery",
+    "眶下動脈 / suborbital artery",
+    "下眼窩動脈 / infraorbital artery",
+    "下眼窩動脈 / suborbital artery"
+   ],
+   "explain": [
+    "**眶下動脈　infraorbital artery**",
+    "也可以寫：下眼窩動脈、suborbital artery",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "眶下動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q061.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "眶周血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "淚動脈 / lacrimal artery",
+   "accept": [
+    "淚動脈 / lacrimal artery"
+   ],
+   "explain": [
+    "**淚動脈　lacrimal artery**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "淚動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q062.jpg"
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "眶周血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上瞼動脈弓 / superior palpebral arcade",
+   "accept": [
+    "上瞼動脈弓 / superior palpebral arcade",
+    "上瞼動脈弓 / superior palpebral artery"
+   ],
+   "explain": [
+    "**上瞼動脈弓　superior palpebral arcade**",
+    "也可以寫：superior palpebral artery",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "上瞼動脈弓"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q063.jpg"
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "眶周血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "下瞼動脈弓 / inferior palpebral arcade",
+   "accept": [
+    "下瞼動脈弓 / inferior palpebral arcade",
+    "下瞼動脈弓 / inferior palpebral artery"
+   ],
+   "explain": [
+    "**下瞼動脈弓　inferior palpebral arcade**",
+    "也可以寫：inferior palpebral artery",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "下瞼動脈弓"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q064.jpg"
+   ]
+  },
+  {
+   "n": 9,
+   "type": "fill",
+   "stem": "眶周血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "鼻背動脈 / dorsal nasal artery",
+   "accept": [
+    "鼻背動脈 / dorsal nasal artery",
+    "鼻背動脈 / nasal artery",
+    "鼻背動脈 / nasofrontal artery",
+    "鼻額動脈 / dorsal nasal artery",
+    "鼻額動脈 / nasal artery",
+    "鼻額動脈 / nasofrontal artery"
+   ],
+   "explain": [
+    "**鼻背動脈　dorsal nasal artery**",
+    "也可以寫：鼻額動脈、nasal artery、nasofrontal artery",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "鼻背動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q065.jpg"
+   ]
+  }
+ ]
+}

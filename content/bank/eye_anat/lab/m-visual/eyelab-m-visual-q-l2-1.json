@@ -1,0 +1,98 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-visual-q-l2-1",
+  "subject": "eye_anat",
+  "name": "【跑台】視網膜分層示意圖",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・視覺路徑",
+   "視網膜三種細胞"
+  ],
+  "order": 1410,
+  "source": "《新實驗手冊-01.pdf》第 5 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "視網膜分層：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "感光細胞 / photoreceptor",
+   "accept": [
+    "感光細胞 / photoreceptor",
+    "感光細胞 / photoreceptor cell",
+    "感光細胞 / photoreceptors"
+   ],
+   "explain": [
+    "**感光細胞　photoreceptor**",
+    "最外層（靠脈絡膜）",
+    "也可以寫：photoreceptor cell、photoreceptors",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 5 頁：視覺路徑",
+    "視網膜三種細胞",
+    "感光細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-visual/q008.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "視網膜分層：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "雙極細胞 / bipolar cell",
+   "accept": [
+    "雙極細胞 / bipolar cell",
+    "雙極細胞 / bipolar cells"
+   ],
+   "explain": [
+    "**雙極細胞　bipolar cell**",
+    "中間",
+    "也可以寫：bipolar cells",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 5 頁：視覺路徑",
+    "視網膜三種細胞",
+    "雙極細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-visual/q009.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "視網膜分層：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "神經節細胞 / ganglion cell",
+   "accept": [
+    "神經節細胞 / ganglion cell",
+    "神經節細胞 / ganglion cells",
+    "神經節細胞 / retinal ganglion cell"
+   ],
+   "explain": [
+    "**神經節細胞　ganglion cell**",
+    "最內層（靠玻璃體）",
+    "也可以寫：ganglion cells、retinal ganglion cell",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 5 頁：視覺路徑",
+    "視網膜三種細胞",
+    "神經節細胞"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-visual/q010.jpg"
+   ]
+  }
+ ]
+}

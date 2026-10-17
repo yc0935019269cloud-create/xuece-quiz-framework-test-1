@@ -1,0 +1,199 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-brain-q-l1-1",
+  "subject": "eye_anat",
+  "name": "【跑台】腦幹與丘腦（後面觀）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・腦幹與神經",
+   "腦幹外觀"
+  ],
+  "order": 1500,
+  "source": "《新實驗手冊-01.pdf》第 8 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "腦幹後面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "中腦 / midbrain",
+   "accept": [
+    "中腦 / midbrain",
+    "中腦 / mesencephalon"
+   ],
+   "explain": [
+    "**中腦　midbrain**",
+    "也可以寫：mesencephalon",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "腦幹外觀",
+    "中腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q001.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "腦幹後面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "橋腦 / pons",
+   "accept": [
+    "橋腦 / pons",
+    "腦橋 / pons"
+   ],
+   "explain": [
+    "**橋腦　pons**",
+    "也可以寫：腦橋",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "腦幹外觀",
+    "橋腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q002.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "腦幹後面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "延腦 / medulla oblongata",
+   "accept": [
+    "延腦 / medulla oblongata",
+    "延腦 / medulla",
+    "延髓 / medulla oblongata",
+    "延髓 / medulla"
+   ],
+   "explain": [
+    "**延腦　medulla oblongata**",
+    "也可以寫：延髓、medulla",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "腦幹外觀",
+    "延腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q003.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "腦幹後面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "丘腦 / thalamus",
+   "accept": [
+    "丘腦 / thalamus",
+    "丘腦 / thalami",
+    "視丘 / thalamus",
+    "視丘 / thalami"
+   ],
+   "explain": [
+    "**丘腦　thalamus**",
+    "也可以寫：視丘、thalami",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "腦幹外觀",
+    "丘腦"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q004.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "腦幹後面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上丘 / superior colliculus",
+   "accept": [
+    "上丘 / superior colliculus",
+    "上丘 / superior colliculi"
+   ],
+   "explain": [
+    "**上丘　superior colliculus**",
+    "也可以寫：superior colliculi",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "腦幹外觀",
+    "上丘"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q005.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "腦幹後面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "下丘 / inferior colliculus",
+   "accept": [
+    "下丘 / inferior colliculus",
+    "下丘 / inferior colliculi"
+   ],
+   "explain": [
+    "**下丘　inferior colliculus**",
+    "也可以寫：inferior colliculi",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "腦幹外觀",
+    "下丘"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q006.jpg"
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "腦幹後面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "頂蓋 / tectum",
+   "accept": [
+    "頂蓋 / tectum",
+    "頂蓋 / tectum of midbrain",
+    "中腦頂蓋 / tectum",
+    "中腦頂蓋 / tectum of midbrain"
+   ],
+   "explain": [
+    "**頂蓋　tectum**",
+    "也可以寫：中腦頂蓋、tectum of midbrain",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "腦幹外觀",
+    "頂蓋"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q007.jpg"
+   ]
+  }
+ ]
+}

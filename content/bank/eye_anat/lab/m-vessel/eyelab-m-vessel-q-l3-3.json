@@ -1,0 +1,189 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-vessel-q-l3-3",
+  "subject": "eye_anat",
+  "name": "【跑台】眼底：視網膜中央動脈四大分支",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・血管系統",
+   "眼球的血管：睫狀動脈、辛氏環、眼底"
+  ],
+  "order": 1322,
+  "source": "《新實驗手冊-01.pdf》第 4 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "眼底：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視神經盤 / optic disc",
+   "accept": [
+    "視神經盤 / optic disc",
+    "視神經盤 / optic disk",
+    "視神經盤 / optic papilla",
+    "視神經盤 / optic nerve head",
+    "視乳突 / optic disc",
+    "視乳突 / optic disk",
+    "視乳突 / optic papilla",
+    "視乳突 / optic nerve head",
+    "視神經乳頭 / optic disc",
+    "視神經乳頭 / optic disk",
+    "視神經乳頭 / optic papilla",
+    "視神經乳頭 / optic nerve head",
+    "視盤 / optic disc",
+    "視盤 / optic disk",
+    "視盤 / optic papilla",
+    "視盤 / optic nerve head"
+   ],
+   "explain": [
+    "**視神經盤　optic disc**",
+    "也可以寫：視乳突、視神經乳頭、視盤、optic disk、optic papilla、optic nerve head",
+    "（圖：Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "視神經盤"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q034.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "眼底：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "顳上動脈 / superior temporal arteriole",
+   "accept": [
+    "顳上動脈 / superior temporal arteriole",
+    "顳上動脈 / superior temporal artery",
+    "顳上動脈 / superior temporal branch"
+   ],
+   "explain": [
+    "**顳上動脈　superior temporal arteriole**",
+    "也可以寫：superior temporal artery、superior temporal branch",
+    "（圖：Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "顳上動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q035.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "眼底：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "顳下動脈 / inferior temporal arteriole",
+   "accept": [
+    "顳下動脈 / inferior temporal arteriole",
+    "顳下動脈 / inferior temporal artery",
+    "顳下動脈 / inferior temporal branch"
+   ],
+   "explain": [
+    "**顳下動脈　inferior temporal arteriole**",
+    "也可以寫：inferior temporal artery、inferior temporal branch",
+    "（圖：Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "顳下動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q036.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "眼底：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "鼻上動脈 / superior nasal arteriole",
+   "accept": [
+    "鼻上動脈 / superior nasal arteriole",
+    "鼻上動脈 / superior nasal artery",
+    "鼻上動脈 / superior nasal branch"
+   ],
+   "explain": [
+    "**鼻上動脈　superior nasal arteriole**",
+    "也可以寫：superior nasal artery、superior nasal branch",
+    "（圖：Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "鼻上動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q037.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "眼底：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "鼻下動脈 / inferior nasal arteriole",
+   "accept": [
+    "鼻下動脈 / inferior nasal arteriole",
+    "鼻下動脈 / inferior nasal artery",
+    "鼻下動脈 / inferior nasal branch"
+   ],
+   "explain": [
+    "**鼻下動脈　inferior nasal arteriole**",
+    "也可以寫：inferior nasal artery、inferior nasal branch",
+    "（圖：Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "鼻下動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q038.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "眼底：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "黃斑部 / macula",
+   "accept": [
+    "黃斑部 / macula",
+    "黃斑部 / macula lutea",
+    "黃斑 / macula",
+    "黃斑 / macula lutea"
+   ],
+   "explain": [
+    "**黃斑部　macula**",
+    "沒有中央動脈分支",
+    "也可以寫：黃斑、macula lutea",
+    "（圖：Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "黃斑部"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q039.jpg"
+   ]
+  }
+ ]
+}

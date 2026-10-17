@@ -1,0 +1,46 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-vp-q-l1-4",
+  "subject": "eye_anat",
+  "name": "【跑台】顱骨（中顱窩）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・視覺路徑",
+   "視神經：眼球到視交叉"
+  ],
+  "order": 103,
+  "source": "《2.視覺路徑+標號-02.pdf》第 10–13 頁；《眼解剖實驗.pdf》上課照片；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "顱骨：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視神經管 / optic canal",
+   "accept": [
+    "視神經管 / optic canal",
+    "視神經管 / optic foramen",
+    "視神經孔 / optic canal",
+    "視神經孔 / optic foramen"
+   ],
+   "explain": [
+    "**視神經管　optic canal**",
+    "管內段；視神經＋眼動脈",
+    "也可以寫：視神經孔、optic foramen",
+    "（圖：Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "視神經：眼球到視交叉",
+    "視神經管"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q009.jpg"
+   ]
+  }
+ ]
+}

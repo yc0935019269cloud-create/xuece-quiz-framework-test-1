@@ -1,0 +1,3022 @@
+{
+ "schema": "xd-learn/1",
+ "id": "eyelab-blood",
+ "subject": "eye_anat",
+ "style": "atlas",
+ "unit": "眼球的血液供應",
+ "title": "眼球的血液供應",
+ "desc": "圖鑑式：腦底動脈、眼動脈分支、睫狀動脈與辛氏環、靜脈與海綿竇、頸外動脈；附老師講義原圖對照；最後是總圖總表。",
+ "level": 2,
+ "minutes": 40,
+ "order": 3,
+ "source": "《眼球的血液供應與網膜血管構造與功能》講義；《新實驗手冊-01.pdf》第 4 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源",
+ "tags": [
+  "血液供應",
+  "跑台"
+ ],
+ "path": [
+  "眼解剖實驗",
+  "實驗課（依老師講義）",
+  "血液供應"
+ ],
+ "lessons": [
+  {
+   "id": "l1",
+   "title": "腦底動脈（威利氏環）",
+   "goals": [
+    "找到並寫出：頸內動脈、大腦前動脈、前交通動脈、大腦中動脈、後交通動脈、大腦後動脈、基底動脈、椎動脈、威利氏環、前脈絡叢動脈"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "腦底動脈（威利氏環）",
+     "body": [
+      "頸內動脈分出：眼動脈、大腦前動脈、大腦中動脈、前脈絡叢動脈；椎動脈 → 基底動脈 → 大腦後動脈；前、後交通動脈把它們連成威利氏環。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "腦底動脈（下面觀）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
+     "source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "頸內動脈 internal carotid artery",
+       "desc": "",
+       "x": 44.3,
+       "y": 35.6
+      },
+      {
+       "name": "大腦前動脈 anterior cerebral artery",
+       "desc": "",
+       "x": 46.8,
+       "y": 29.0
+      },
+      {
+       "name": "前交通動脈 anterior communicating artery",
+       "desc": "",
+       "x": 49.0,
+       "y": 31.4
+      },
+      {
+       "name": "大腦中動脈 middle cerebral artery",
+       "desc": "",
+       "x": 40.2,
+       "y": 37.8
+      },
+      {
+       "name": "後交通動脈 posterior communicating artery",
+       "desc": "",
+       "x": 45.4,
+       "y": 41.2
+      },
+      {
+       "name": "大腦後動脈 posterior cerebral artery",
+       "desc": "",
+       "x": 39.0,
+       "y": 47.0
+      },
+      {
+       "name": "基底動脈 basilar artery",
+       "desc": "",
+       "x": 49.0,
+       "y": 60.0
+      },
+      {
+       "name": "椎動脈 vertebral artery",
+       "desc": "",
+       "x": 46.2,
+       "y": 79.0
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "真實腦標本（腦底血管）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/beal_base.jpg",
+     "source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "威利氏環 circle of Willis",
+       "desc": "",
+       "x": 43,
+       "y": 20
+      },
+      {
+       "name": "頸內動脈 internal carotid artery",
+       "desc": "",
+       "x": 59,
+       "y": 11
+      },
+      {
+       "name": "基底動脈 basilar artery",
+       "desc": "",
+       "x": 47,
+       "y": 44
+      },
+      {
+       "name": "椎動脈 vertebral artery",
+       "desc": "",
+       "x": 33,
+       "y": 72
+      },
+      {
+       "name": "前脈絡叢動脈 anterior choroidal artery",
+       "desc": "大致位置；沿視束走",
+       "x": 63,
+       "y": 14
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "講義原圖｜威利氏環",
+     "body": [
+      "老師講義（有原標籤，對照用）。"
+     ],
+     "img": "img/eye-lab-private/base/blood_slide03.jpg",
+     "img_source": "老師講義《眼球的血液供應與網膜血管構造與功能》第 3 張投影片"
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "頸內動脈",
+        "內頸動脈"
+       ],
+       "en": [
+        "internal carotid artery"
+       ],
+       "img": "img/eye-lab/blood/q001.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：i… c… a…",
+       "explain": "頸內動脈 internal carotid artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "大腦前動脈",
+        "前大腦動脈"
+       ],
+       "en": [
+        "anterior cerebral artery"
+       ],
+       "img": "img/eye-lab/blood/q002.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：a… c… a…",
+       "explain": "大腦前動脈 anterior cerebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前交通動脈"
+       ],
+       "en": [
+        "anterior communicating artery"
+       ],
+       "img": "img/eye-lab/blood/q003.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：a… c… a…",
+       "explain": "前交通動脈 anterior communicating artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "大腦中動脈",
+        "中大腦動脈"
+       ],
+       "en": [
+        "middle cerebral artery"
+       ],
+       "img": "img/eye-lab/blood/q004.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：m… c… a…",
+       "explain": "大腦中動脈 middle cerebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "後交通動脈"
+       ],
+       "en": [
+        "posterior communicating artery"
+       ],
+       "img": "img/eye-lab/blood/q005.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：p… c… a…",
+       "explain": "後交通動脈 posterior communicating artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "大腦後動脈",
+        "後大腦動脈"
+       ],
+       "en": [
+        "posterior cerebral artery"
+       ],
+       "img": "img/eye-lab/blood/q006.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：p… c… a…",
+       "explain": "大腦後動脈 posterior cerebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "基底動脈"
+       ],
+       "en": [
+        "basilar artery"
+       ],
+       "img": "img/eye-lab/blood/q007.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：b… a…",
+       "explain": "基底動脈 basilar artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "椎動脈"
+       ],
+       "en": [
+        "vertebral artery"
+       ],
+       "img": "img/eye-lab/blood/q008.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：v… a…",
+       "explain": "椎動脈 vertebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底標本：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "威利氏環",
+        "Willis 環",
+        "大腦動脈環"
+       ],
+       "en": [
+        "circle of Willis",
+        "cerebral arterial circle"
+       ],
+       "img": "img/eye-lab/blood/q009.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：c… o… W…",
+       "explain": "威利氏環 circle of Willis"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底標本：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前脈絡叢動脈",
+        "前脈絡動脈"
+       ],
+       "en": [
+        "anterior choroidal artery"
+       ],
+       "img": "img/eye-lab/blood/q010.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：a… c… a…",
+       "explain": "前脈絡叢動脈 anterior choroidal artery"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "頸內動脈 internal carotid artery、大腦前動脈 anterior cerebral artery、前交通動脈 anterior communicating artery、大腦中動脈 middle cerebral artery、後交通動脈 posterior communicating artery、大腦後動脈 posterior cerebral artery",
+      "基底動脈 basilar artery、椎動脈 vertebral artery、威利氏環 circle of Willis、前脈絡叢動脈 anterior choroidal artery"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l2",
+   "title": "眼動脈與眼眶分支",
+   "goals": [
+    "找到並寫出：頸內動脈、眼動脈、視網膜中央動脈、睫狀動脈、淚動脈、外瞼動脈、眶上動脈、滑車上動脈、鼻背動脈、肌動脈、前篩動脈、後篩動脈、內瞼動脈、滑車下動脈"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "眼動脈與眼眶分支",
+     "body": [
+      "眼動脈（頸內動脈分支）經視神經管進眼眶，分出：視網膜中央動脈、睫狀動脈、淚動脈、肌動脈、眶上、前後篩、滑車上下、鼻背、內側瞼動脈。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "眼動脈側面圖",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/oc_blood_m.jpg",
+     "source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "頸內動脈 internal carotid artery",
+       "desc": "",
+       "x": 25,
+       "y": 37
+      },
+      {
+       "name": "眼動脈 ophthalmic artery",
+       "desc": "",
+       "x": 30,
+       "y": 71
+      },
+      {
+       "name": "視網膜中央動脈 central retinal artery",
+       "desc": "",
+       "x": 46,
+       "y": 64
+      },
+      {
+       "name": "睫狀動脈 ciliary artery",
+       "desc": "",
+       "x": 58,
+       "y": 56
+      },
+      {
+       "name": "淚動脈 lacrimal artery",
+       "desc": "",
+       "x": 50,
+       "y": 77
+      },
+      {
+       "name": "外瞼動脈 lateral palpebral artery",
+       "desc": "",
+       "x": 79,
+       "y": 92
+      },
+      {
+       "name": "眶上動脈 supraorbital artery",
+       "desc": "",
+       "x": 76,
+       "y": 45.5
+      },
+      {
+       "name": "滑車上動脈 supratrochlear artery",
+       "desc": "",
+       "x": 79,
+       "y": 35.5
+      },
+      {
+       "name": "鼻背動脈 dorsal nasal artery",
+       "desc": "",
+       "x": 74,
+       "y": 31
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "眼動脈分支（上面觀，Gray）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/gray514.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "眼動脈 ophthalmic artery",
+       "desc": "",
+       "x": 51,
+       "y": 78
+      },
+      {
+       "name": "肌動脈 muscular artery",
+       "desc": "",
+       "x": 44,
+       "y": 71
+      },
+      {
+       "name": "淚動脈 lacrimal artery",
+       "desc": "",
+       "x": 56,
+       "y": 66
+      },
+      {
+       "name": "前篩動脈 anterior ethmoidal artery",
+       "desc": "",
+       "x": 32,
+       "y": 40
+      },
+      {
+       "name": "後篩動脈 posterior ethmoidal artery",
+       "desc": "",
+       "x": 32,
+       "y": 56
+      },
+      {
+       "name": "眶上動脈 supraorbital artery",
+       "desc": "",
+       "x": 64,
+       "y": 12
+      },
+      {
+       "name": "滑車上動脈 supratrochlear artery",
+       "desc": "",
+       "x": 46,
+       "y": 12
+      },
+      {
+       "name": "內瞼動脈 medial palpebral artery",
+       "desc": "",
+       "x": 52,
+       "y": 14
+      },
+      {
+       "name": "鼻背動脈 dorsal nasal artery",
+       "desc": "",
+       "x": 37,
+       "y": 15
+      },
+      {
+       "name": "滑車下動脈 infratrochlear artery",
+       "desc": "",
+       "x": 43,
+       "y": 22
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "講義原圖｜眼眶的動脈",
+     "body": [
+      "老師講義（有原標籤，對照用）。"
+     ],
+     "img": "img/eye-lab-private/base/blood_slide09.jpg",
+     "img_source": "老師講義《眼球的血液供應與網膜血管構造與功能》第 9 張投影片"
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "頸內動脈",
+        "內頸動脈"
+       ],
+       "en": [
+        "internal carotid artery"
+       ],
+       "img": "img/eye-lab/blood/q011.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… c… a…",
+       "explain": "頸內動脈 internal carotid artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼動脈"
+       ],
+       "en": [
+        "ophthalmic artery"
+       ],
+       "img": "img/eye-lab/blood/q012.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：o… a…",
+       "explain": "眼動脈 ophthalmic artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視網膜中央動脈",
+        "中央視網膜動脈",
+        "視網膜中心動脈"
+       ],
+       "en": [
+        "central retinal artery",
+        "central artery of retina"
+       ],
+       "img": "img/eye-lab/blood/q013.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… r… a…",
+       "explain": "視網膜中央動脈 central retinal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀動脈"
+       ],
+       "en": [
+        "ciliary artery",
+        "ciliary arteries"
+       ],
+       "img": "img/eye-lab/blood/q014.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… a…",
+       "explain": "睫狀動脈 ciliary artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚動脈"
+       ],
+       "en": [
+        "lacrimal artery"
+       ],
+       "img": "img/eye-lab/blood/q015.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… a…",
+       "explain": "淚動脈 lacrimal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外瞼動脈",
+        "外側瞼動脈"
+       ],
+       "en": [
+        "lateral palpebral artery"
+       ],
+       "img": "img/eye-lab/blood/q016.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… p… a…",
+       "explain": "外瞼動脈 lateral palpebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶上動脈",
+        "上眼窩動脈"
+       ],
+       "en": [
+        "supraorbital artery"
+       ],
+       "img": "img/eye-lab/blood/q017.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… a…",
+       "explain": "眶上動脈 supraorbital artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車上動脈",
+        "額動脈"
+       ],
+       "en": [
+        "supratrochlear artery",
+        "frontal artery"
+       ],
+       "img": "img/eye-lab/blood/q018.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… a…",
+       "explain": "滑車上動脈 supratrochlear artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻背動脈",
+        "鼻額動脈"
+       ],
+       "en": [
+        "dorsal nasal artery",
+        "nasal artery",
+        "nasofrontal artery"
+       ],
+       "img": "img/eye-lab/blood/q019.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：d… n… a…",
+       "explain": "鼻背動脈 dorsal nasal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 眼動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "肌動脈",
+        "內肌動脈",
+        "外肌動脈"
+       ],
+       "en": [
+        "muscular artery",
+        "medial muscular artery",
+        "lateral muscular artery"
+       ],
+       "img": "img/eye-lab/blood/q020.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… a…",
+       "explain": "肌動脈 muscular artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 眼動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前篩動脈"
+       ],
+       "en": [
+        "anterior ethmoidal artery",
+        "anterior ethmoid artery"
+       ],
+       "img": "img/eye-lab/blood/q021.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… e… a…",
+       "explain": "前篩動脈 anterior ethmoidal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 眼動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "後篩動脈"
+       ],
+       "en": [
+        "posterior ethmoidal artery",
+        "posterior ethmoid artery"
+       ],
+       "img": "img/eye-lab/blood/q022.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）（紅圈為本題標記）",
+       "hint": "英文開頭：p… e… a…",
+       "explain": "後篩動脈 posterior ethmoidal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 眼動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "內瞼動脈",
+        "內側瞼動脈"
+       ],
+       "en": [
+        "medial palpebral artery"
+       ],
+       "img": "img/eye-lab/blood/q023.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… p… a…",
+       "explain": "內瞼動脈 medial palpebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 眼動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車下動脈"
+       ],
+       "en": [
+        "infratrochlear artery"
+       ],
+       "img": "img/eye-lab/blood/q024.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… a…",
+       "explain": "滑車下動脈 infratrochlear artery"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "頸內動脈 internal carotid artery、眼動脈 ophthalmic artery、視網膜中央動脈 central retinal artery、睫狀動脈 ciliary artery、淚動脈 lacrimal artery、外瞼動脈 lateral palpebral artery",
+      "眶上動脈 supraorbital artery、滑車上動脈 supratrochlear artery、鼻背動脈 dorsal nasal artery、肌動脈 muscular artery、前篩動脈 anterior ethmoidal artery、後篩動脈 posterior ethmoidal artery",
+      "內瞼動脈 medial palpebral artery、滑車下動脈 infratrochlear artery"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l3",
+   "title": "眼球的血管：睫狀動脈、辛氏環、眼底",
+   "goals": [
+    "找到並寫出：睫狀後短動脈、睫狀後長動脈、睫狀前動脈、睫狀前靜脈、虹膜大動脈環、視網膜中央動脈、視網膜中央靜脈、視神經血管環、脈絡膜、視神經盤、顳上動脈、顳下動脈、鼻上動脈、鼻下動脈、黃斑部、渦靜脈"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "眼球的血管：睫狀動脈、辛氏環、眼底",
+     "body": [
+      "睫狀後長動脈 → 睫狀體、虹膜；睫狀後短動脈 → 脈絡膜、視神經盤（辛氏環）；睫狀前動脈來自肌動脈；視網膜中央動脈在視神經盤分成顳上、顳下、鼻上、鼻下四支；渦靜脈收集脈絡膜的血。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "睫狀動脈（Gray）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/gray873.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "睫狀後短動脈 short posterior ciliary artery",
+       "desc": "",
+       "x": 26,
+       "y": 52
+      },
+      {
+       "name": "睫狀後長動脈 long posterior ciliary artery",
+       "desc": "",
+       "x": 58,
+       "y": 43.5
+      },
+      {
+       "name": "睫狀前動脈 anterior ciliary artery",
+       "desc": "",
+       "x": 68.5,
+       "y": 12
+      },
+      {
+       "name": "睫狀前靜脈 anterior ciliary vein",
+       "desc": "",
+       "x": 66,
+       "y": 16
+      },
+      {
+       "name": "虹膜大動脈環 major arterial circle of iris",
+       "desc": "",
+       "x": 77,
+       "y": 45
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "視神經盤剖面：血管",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/onh_diag_m.jpg",
+     "source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "視網膜中央動脈 central retinal artery",
+       "desc": "",
+       "x": 48.5,
+       "y": 70
+      },
+      {
+       "name": "視網膜中央靜脈 central retinal vein",
+       "desc": "",
+       "x": 47,
+       "y": 66
+      },
+      {
+       "name": "視神經血管環 circle of Zinn-Haller",
+       "desc": "圍繞視神經盤",
+       "x": 27,
+       "y": 40.5
+      },
+      {
+       "name": "睫狀後短動脈 short posterior ciliary artery",
+       "desc": "",
+       "x": 17.5,
+       "y": 68
+      },
+      {
+       "name": "脈絡膜 choroid",
+       "desc": "",
+       "x": 9,
+       "y": 30.5
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "眼底：視網膜中央動脈四大分支",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/fundus_od.jpg",
+     "source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "視神經盤 optic disc",
+       "desc": "",
+       "x": 80.5,
+       "y": 56
+      },
+      {
+       "name": "顳上動脈 superior temporal arteriole",
+       "desc": "",
+       "x": 64.84,
+       "y": 25.78
+      },
+      {
+       "name": "顳下動脈 inferior temporal arteriole",
+       "desc": "",
+       "x": 68.75,
+       "y": 68.75
+      },
+      {
+       "name": "鼻上動脈 superior nasal arteriole",
+       "desc": "",
+       "x": 86.72,
+       "y": 34.38
+      },
+      {
+       "name": "鼻下動脈 inferior nasal arteriole",
+       "desc": "",
+       "x": 86.72,
+       "y": 64.84
+      },
+      {
+       "name": "黃斑部 macula",
+       "desc": "沒有中央動脈分支",
+       "x": 42.5,
+       "y": 54
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "渦靜脈（Gray，眼球後面觀）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/gray874.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray874.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray874.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "渦靜脈 vortex vein",
+       "desc": "赤道後方",
+       "x": 49,
+       "y": 20.5
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "講義原圖｜辛氏環",
+     "body": [
+      "老師講義（有原標籤，對照用）。"
+     ],
+     "img": "img/eye-lab-private/base/blood_slide18.jpg",
+     "img_source": "老師講義《眼球的血液供應與網膜血管構造與功能》第 18 張投影片"
+    },
+    {
+     "type": "card",
+     "title": "講義原圖｜視網膜中央動脈分支",
+     "body": [
+      "老師講義（有原標籤，對照用）。"
+     ],
+     "img": "img/eye-lab-private/base/blood_slide14.jpg",
+     "img_source": "老師講義《眼球的血液供應與網膜血管構造與功能》第 14 張投影片"
+    },
+    {
+     "type": "card",
+     "title": "講義原圖｜渦靜脈",
+     "body": [
+      "老師講義（有原標籤，對照用）。"
+     ],
+     "img": "img/eye-lab-private/base/blood_slide24.jpg",
+     "img_source": "老師講義《眼球的血液供應與網膜血管構造與功能》第 24 張投影片"
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀後短動脈",
+        "後短睫狀動脈"
+       ],
+       "en": [
+        "short posterior ciliary artery"
+       ],
+       "img": "img/eye-lab/blood/q025.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… p… c… a…",
+       "explain": "睫狀後短動脈 short posterior ciliary artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀後長動脈",
+        "後長睫狀動脈"
+       ],
+       "en": [
+        "long posterior ciliary artery"
+       ],
+       "img": "img/eye-lab/blood/q026.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… p… c… a…",
+       "explain": "睫狀後長動脈 long posterior ciliary artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀前動脈",
+        "前睫狀動脈"
+       ],
+       "en": [
+        "anterior ciliary artery"
+       ],
+       "img": "img/eye-lab/blood/q027.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… c… a…",
+       "explain": "睫狀前動脈 anterior ciliary artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀前靜脈",
+        "前睫狀靜脈"
+       ],
+       "en": [
+        "anterior ciliary vein"
+       ],
+       "img": "img/eye-lab/blood/q028.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… c… v…",
+       "explain": "睫狀前靜脈 anterior ciliary vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "虹膜大動脈環"
+       ],
+       "en": [
+        "major arterial circle of iris",
+        "major arterial circle"
+       ],
+       "img": "img/eye-lab/blood/q029.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… a… c… o… i…",
+       "explain": "虹膜大動脈環 major arterial circle of iris"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視網膜中央動脈",
+        "中央視網膜動脈",
+        "視網膜中心動脈"
+       ],
+       "en": [
+        "central retinal artery",
+        "central artery of retina"
+       ],
+       "img": "img/eye-lab/blood/q030.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… r… a…",
+       "explain": "視網膜中央動脈 central retinal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視網膜中央靜脈",
+        "中央視網膜靜脈"
+       ],
+       "en": [
+        "central retinal vein"
+       ],
+       "img": "img/eye-lab/blood/q031.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… r… v…",
+       "explain": "視網膜中央靜脈 central retinal vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經血管環",
+        "辛氏環（血管）",
+        "Zinn-Haller 環",
+        "辛哈氏環"
+       ],
+       "en": [
+        "circle of Zinn-Haller",
+        "circle of Zinn",
+        "circle of Haller"
+       ],
+       "img": "img/eye-lab/blood/q032.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… o… Z… H…",
+       "explain": "視神經血管環 circle of Zinn-Haller"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "脈絡膜"
+       ],
+       "en": [
+        "choroid"
+       ],
+       "img": "img/eye-lab/blood/q033.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c…",
+       "explain": "脈絡膜 choroid"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經盤",
+        "視乳突",
+        "視神經乳頭",
+        "視盤"
+       ],
+       "en": [
+        "optic disc",
+        "optic disk",
+        "optic papilla",
+        "optic nerve head"
+       ],
+       "img": "img/eye-lab/blood/q034.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：o… d…",
+       "explain": "視神經盤 optic disc"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顳上動脈"
+       ],
+       "en": [
+        "superior temporal arteriole",
+        "superior temporal artery",
+        "superior temporal branch"
+       ],
+       "img": "img/eye-lab/blood/q035.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… t… a…",
+       "explain": "顳上動脈 superior temporal arteriole"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顳下動脈"
+       ],
+       "en": [
+        "inferior temporal arteriole",
+        "inferior temporal artery",
+        "inferior temporal branch"
+       ],
+       "img": "img/eye-lab/blood/q036.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… t… a…",
+       "explain": "顳下動脈 inferior temporal arteriole"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻上動脈"
+       ],
+       "en": [
+        "superior nasal arteriole",
+        "superior nasal artery",
+        "superior nasal branch"
+       ],
+       "img": "img/eye-lab/blood/q037.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… n… a…",
+       "explain": "鼻上動脈 superior nasal arteriole"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻下動脈"
+       ],
+       "en": [
+        "inferior nasal arteriole",
+        "inferior nasal artery",
+        "inferior nasal branch"
+       ],
+       "img": "img/eye-lab/blood/q038.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… n… a…",
+       "explain": "鼻下動脈 inferior nasal arteriole"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "黃斑部",
+        "黃斑"
+       ],
+       "en": [
+        "macula",
+        "macula lutea"
+       ],
+       "img": "img/eye-lab/blood/q039.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：m…",
+       "explain": "黃斑部 macula"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼球後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "渦靜脈",
+        "螺旋靜脈"
+       ],
+       "en": [
+        "vortex vein",
+        "vorticose vein"
+       ],
+       "img": "img/eye-lab/blood/q040.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray874.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray874.png）（紅圈為本題標記）",
+       "hint": "英文開頭：v… v…",
+       "explain": "渦靜脈 vortex vein"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "睫狀後短動脈 short posterior ciliary artery、睫狀後長動脈 long posterior ciliary artery、睫狀前動脈 anterior ciliary artery、睫狀前靜脈 anterior ciliary vein、虹膜大動脈環 major arterial circle of iris、視網膜中央動脈 central retinal artery",
+      "視網膜中央靜脈 central retinal vein、視神經血管環 circle of Zinn-Haller、脈絡膜 choroid、視神經盤 optic disc、顳上動脈 superior temporal arteriole、顳下動脈 inferior temporal arteriole",
+      "鼻上動脈 superior nasal arteriole、鼻下動脈 inferior nasal arteriole、黃斑部 macula、渦靜脈 vortex vein"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l4",
+   "title": "靜脈與海綿竇",
+   "goals": [
+    "找到並寫出：上眼靜脈、下眼靜脈、海綿竇、頸內動脈、動眼神經、滑車神經、眼神經、外旋神經、腦下垂體、蝶竇、眼動脈、渦靜脈、中腦膜動脈"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "靜脈與海綿竇",
+     "body": [
+      "上、下眼靜脈 → 經眶上裂 → 海綿竇；海綿竇在蝶鞍兩側，裡面有頸內動脈、III、IV、V1、V2、VI。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "眼靜脈側面觀",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/gray572_m.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "上眼靜脈 superior ophthalmic vein",
+       "desc": "",
+       "x": 45,
+       "y": 34
+      },
+      {
+       "name": "下眼靜脈 inferior ophthalmic vein",
+       "desc": "",
+       "x": 35,
+       "y": 56
+      },
+      {
+       "name": "海綿竇 cavernous sinus",
+       "desc": "",
+       "x": 17,
+       "y": 58
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "海綿竇冠狀切面",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/cavsinus_m.jpg",
+     "source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "海綿竇 cavernous sinus",
+       "desc": "",
+       "x": 32,
+       "y": 59
+      },
+      {
+       "name": "頸內動脈 internal carotid artery",
+       "desc": "",
+       "x": 37,
+       "y": 41
+      },
+      {
+       "name": "動眼神經 oculomotor nerve",
+       "desc": "",
+       "x": 32.5,
+       "y": 34.5
+      },
+      {
+       "name": "滑車神經 trochlear nerve",
+       "desc": "",
+       "x": 34,
+       "y": 38.5
+      },
+      {
+       "name": "眼神經 ophthalmic nerve",
+       "desc": "",
+       "x": 31.5,
+       "y": 49.5
+      },
+      {
+       "name": "外旋神經 abducens nerve",
+       "desc": "",
+       "x": 35.5,
+       "y": 44
+      },
+      {
+       "name": "腦下垂體 pituitary gland",
+       "desc": "",
+       "x": 49.5,
+       "y": 42
+      },
+      {
+       "name": "蝶竇 sphenoidal sinus",
+       "desc": "",
+       "x": 40,
+       "y": 68.5
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "顱底內面血管（Sobotta）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/sobo679.jpg",
+     "source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 679.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_679.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "眼動脈 ophthalmic artery",
+       "desc": "",
+       "x": 38,
+       "y": 28
+      },
+      {
+       "name": "上眼靜脈 superior ophthalmic vein",
+       "desc": "",
+       "x": 40,
+       "y": 31
+      },
+      {
+       "name": "渦靜脈 vortex vein",
+       "desc": "",
+       "x": 33,
+       "y": 18
+      },
+      {
+       "name": "海綿竇 cavernous sinus",
+       "desc": "",
+       "x": 41,
+       "y": 46
+      },
+      {
+       "name": "中腦膜動脈 middle meningeal artery",
+       "desc": "經棘孔",
+       "x": 77,
+       "y": 43
+      }
+     ]
+    },
+    {
+     "type": "card",
+     "title": "講義原圖｜靜脈回流",
+     "body": [
+      "老師講義（有原標籤，對照用）。"
+     ],
+     "img": "img/eye-lab-private/base/blood_slide23.jpg",
+     "img_source": "老師講義《眼球的血液供應與網膜血管構造與功能》第 23 張投影片"
+    },
+    {
+     "type": "card",
+     "title": "講義原圖｜海綿竇",
+     "body": [
+      "老師講義（有原標籤，對照用）。"
+     ],
+     "img": "img/eye-lab-private/base/blood_slide26.jpg",
+     "img_source": "老師講義《眼球的血液供應與網膜血管構造與功能》第 26 張投影片"
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼靜脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上眼靜脈",
+        "眼上靜脈"
+       ],
+       "en": [
+        "superior ophthalmic vein"
+       ],
+       "img": "img/eye-lab/blood/q041.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… o… v…",
+       "explain": "上眼靜脈 superior ophthalmic vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼靜脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "下眼靜脈",
+        "眼下靜脈"
+       ],
+       "en": [
+        "inferior ophthalmic vein"
+       ],
+       "img": "img/eye-lab/blood/q042.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… o… v…",
+       "explain": "下眼靜脈 inferior ophthalmic vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼靜脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "海綿竇"
+       ],
+       "en": [
+        "cavernous sinus"
+       ],
+       "img": "img/eye-lab/blood/q043.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… s…",
+       "explain": "海綿竇 cavernous sinus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "頸內動脈",
+        "內頸動脈"
+       ],
+       "en": [
+        "internal carotid artery"
+       ],
+       "img": "img/eye-lab/blood/q044.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… c… a…",
+       "explain": "頸內動脈 internal carotid artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "動眼神經"
+       ],
+       "en": [
+        "oculomotor nerve",
+        "CN III"
+       ],
+       "img": "img/eye-lab/blood/q045.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：o… n…",
+       "explain": "動眼神經 oculomotor nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車神經"
+       ],
+       "en": [
+        "trochlear nerve",
+        "CN IV"
+       ],
+       "img": "img/eye-lab/blood/q046.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：t… n…",
+       "explain": "滑車神經 trochlear nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼神經",
+        "眼支"
+       ],
+       "en": [
+        "ophthalmic nerve",
+        "V1"
+       ],
+       "img": "img/eye-lab/blood/q047.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：o… n…",
+       "explain": "眼神經 ophthalmic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外旋神經",
+        "外展神經"
+       ],
+       "en": [
+        "abducens nerve",
+        "abducent nerve",
+        "CN VI"
+       ],
+       "img": "img/eye-lab/blood/q048.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：a… n…",
+       "explain": "外旋神經 abducens nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "腦下垂體",
+        "腦垂體",
+        "垂體"
+       ],
+       "en": [
+        "pituitary gland",
+        "pituitary",
+        "hypophysis"
+       ],
+       "img": "img/eye-lab/blood/q049.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：p… g…",
+       "explain": "腦下垂體 pituitary gland"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶竇"
+       ],
+       "en": [
+        "sphenoidal sinus",
+        "sphenoid sinus"
+       ],
+       "img": "img/eye-lab/blood/q050.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… s…",
+       "explain": "蝶竇 sphenoidal sinus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "顱底血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼動脈"
+       ],
+       "en": [
+        "ophthalmic artery"
+       ],
+       "img": "img/eye-lab/blood/q051.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 679.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_679.png）（紅圈為本題標記）",
+       "hint": "英文開頭：o… a…",
+       "explain": "眼動脈 ophthalmic artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "顱底血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "渦靜脈",
+        "螺旋靜脈"
+       ],
+       "en": [
+        "vortex vein",
+        "vorticose vein"
+       ],
+       "img": "img/eye-lab/blood/q052.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 679.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_679.png）（紅圈為本題標記）",
+       "hint": "英文開頭：v… v…",
+       "explain": "渦靜脈 vortex vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "顱底血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "中腦膜動脈",
+        "網膜中動脈"
+       ],
+       "en": [
+        "middle meningeal artery"
+       ],
+       "img": "img/eye-lab/blood/q053.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 679.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_679.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… m… a…",
+       "explain": "中腦膜動脈 middle meningeal artery"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "上眼靜脈 superior ophthalmic vein、下眼靜脈 inferior ophthalmic vein、海綿竇 cavernous sinus、頸內動脈 internal carotid artery、動眼神經 oculomotor nerve、滑車神經 trochlear nerve",
+      "眼神經 ophthalmic nerve、外旋神經 abducens nerve、腦下垂體 pituitary gland、蝶竇 sphenoidal sinus、眼動脈 ophthalmic artery、渦靜脈 vortex vein",
+      "中腦膜動脈 middle meningeal artery"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l5",
+   "title": "頸外動脈與眼瞼血管",
+   "goals": [
+    "找到並寫出：頸外動脈、上頷動脈、顏面動脈、淺顳動脈、眼角動脈、眼角靜脈、顏面靜脈、眶下動脈、淚動脈、上瞼動脈弓、下瞼動脈弓、鼻背動脈"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "頸外動脈與眼瞼血管",
+     "body": [
+      "頸外動脈 → 顏面動脈（終末＝眼角動脈）、上頷動脈（分出中腦膜動脈、眶下動脈）、淺顳動脈；眼角靜脈連通顏面靜脈與眼靜脈（危險三角）。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "頸外動脈與分支",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/eca.jpg",
+     "source": "Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "頸外動脈 external carotid artery",
+       "desc": "",
+       "x": 41.5,
+       "y": 62
+      },
+      {
+       "name": "上頷動脈 maxillary artery",
+       "desc": "",
+       "x": 38.5,
+       "y": 22.5
+      },
+      {
+       "name": "顏面動脈 facial artery",
+       "desc": "",
+       "x": 45,
+       "y": 40
+      },
+      {
+       "name": "淺顳動脈 superficial temporal artery",
+       "desc": "",
+       "x": 33.5,
+       "y": 14.5
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "眼瞼與眶周血管（Gray）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/gray515.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "眼角動脈 angular artery",
+       "desc": "",
+       "x": 82,
+       "y": 51
+      },
+      {
+       "name": "眼角靜脈 angular vein",
+       "desc": "",
+       "x": 84,
+       "y": 57
+      },
+      {
+       "name": "顏面動脈 facial artery",
+       "desc": "",
+       "x": 68,
+       "y": 95
+      },
+      {
+       "name": "顏面靜脈 facial vein",
+       "desc": "",
+       "x": 62,
+       "y": 95
+      },
+      {
+       "name": "眶下動脈 infraorbital artery",
+       "desc": "",
+       "x": 55,
+       "y": 91
+      },
+      {
+       "name": "淚動脈 lacrimal artery",
+       "desc": "",
+       "x": 34,
+       "y": 40
+      },
+      {
+       "name": "上瞼動脈弓 superior palpebral arcade",
+       "desc": "",
+       "x": 50,
+       "y": 58
+      },
+      {
+       "name": "下瞼動脈弓 inferior palpebral arcade",
+       "desc": "",
+       "x": 46,
+       "y": 67
+      },
+      {
+       "name": "鼻背動脈 dorsal nasal artery",
+       "desc": "",
+       "x": 76,
+       "y": 40
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頸外動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "頸外動脈",
+        "外頸動脈"
+       ],
+       "en": [
+        "external carotid artery"
+       ],
+       "img": "img/eye-lab/blood/q054.jpg",
+       "img_source": "Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png）（紅圈為本題標記）",
+       "hint": "英文開頭：e… c… a…",
+       "explain": "頸外動脈 external carotid artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頸外動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上頷動脈",
+        "頷動脈",
+        "上頜動脈"
+       ],
+       "en": [
+        "maxillary artery"
+       ],
+       "img": "img/eye-lab/blood/q055.jpg",
+       "img_source": "Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… a…",
+       "explain": "上頷動脈 maxillary artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頸外動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顏面動脈"
+       ],
+       "en": [
+        "facial artery"
+       ],
+       "img": "img/eye-lab/blood/q056.jpg",
+       "img_source": "Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png）（紅圈為本題標記）",
+       "hint": "英文開頭：f… a…",
+       "explain": "顏面動脈 facial artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頸外動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淺顳動脈",
+        "顳淺動脈"
+       ],
+       "en": [
+        "superficial temporal artery"
+       ],
+       "img": "img/eye-lab/blood/q057.jpg",
+       "img_source": "Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… t… a…",
+       "explain": "淺顳動脈 superficial temporal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼角動脈"
+       ],
+       "en": [
+        "angular artery"
+       ],
+       "img": "img/eye-lab/blood/q058.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… a…",
+       "explain": "眼角動脈 angular artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼角靜脈"
+       ],
+       "en": [
+        "angular vein"
+       ],
+       "img": "img/eye-lab/blood/q059.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… v…",
+       "explain": "眼角靜脈 angular vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顏面靜脈"
+       ],
+       "en": [
+        "facial vein"
+       ],
+       "img": "img/eye-lab/blood/q060.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：f… v…",
+       "explain": "顏面靜脈 facial vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶下動脈",
+        "下眼窩動脈"
+       ],
+       "en": [
+        "infraorbital artery",
+        "suborbital artery"
+       ],
+       "img": "img/eye-lab/blood/q061.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… a…",
+       "explain": "眶下動脈 infraorbital artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚動脈"
+       ],
+       "en": [
+        "lacrimal artery"
+       ],
+       "img": "img/eye-lab/blood/q062.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… a…",
+       "explain": "淚動脈 lacrimal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上瞼動脈弓"
+       ],
+       "en": [
+        "superior palpebral arcade",
+        "superior palpebral artery"
+       ],
+       "img": "img/eye-lab/blood/q063.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… p… a…",
+       "explain": "上瞼動脈弓 superior palpebral arcade"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "下瞼動脈弓"
+       ],
+       "en": [
+        "inferior palpebral arcade",
+        "inferior palpebral artery"
+       ],
+       "img": "img/eye-lab/blood/q064.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… p… a…",
+       "explain": "下瞼動脈弓 inferior palpebral arcade"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻背動脈",
+        "鼻額動脈"
+       ],
+       "en": [
+        "dorsal nasal artery",
+        "nasal artery",
+        "nasofrontal artery"
+       ],
+       "img": "img/eye-lab/blood/q065.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：d… n… a…",
+       "explain": "鼻背動脈 dorsal nasal artery"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "頸外動脈 external carotid artery、上頷動脈 maxillary artery、顏面動脈 facial artery、淺顳動脈 superficial temporal artery、眼角動脈 angular artery、眼角靜脈 angular vein",
+      "顏面靜脈 facial vein、眶下動脈 infraorbital artery、淚動脈 lacrimal artery、上瞼動脈弓 superior palpebral arcade、下瞼動脈弓 inferior palpebral arcade、鼻背動脈 dorsal nasal artery"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "review",
+   "title": "總複習：總圖＋總表",
+   "goals": [
+    "所有點位看過一次、寫過一次"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "總複習",
+     "body": [
+      "先看總圖（所有點位都標好名稱），再看總表；最後跑台模擬：看紅圈寫中文＋英文（每個點位一題）。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "總圖｜腦底動脈（威利氏環）",
+     "body": [
+      "腦底動脈（下面觀）、真實腦標本（腦底血管）"
+     ],
+     "img": [
+      "img/eye-lab/blood/f066.jpg",
+      "img/eye-lab/blood/f067.jpg",
+      "img/eye-lab/blood/f068.jpg"
+     ],
+     "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總圖｜眼動脈與眼眶分支",
+     "body": [
+      "眼動脈側面圖、眼動脈分支（上面觀，Gray）"
+     ],
+     "img": [
+      "img/eye-lab/blood/f069.jpg",
+      "img/eye-lab/blood/f070.jpg",
+      "img/eye-lab/blood/f071.jpg",
+      "img/eye-lab/blood/f072.jpg"
+     ],
+     "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總圖｜眼球的血管：睫狀動脈、辛氏環、眼底",
+     "body": [
+      "睫狀動脈（Gray）、視神經盤剖面：血管、眼底：視網膜中央動脈四大分支、渦靜脈（Gray，眼球後面觀）"
+     ],
+     "img": [
+      "img/eye-lab/blood/f073.jpg",
+      "img/eye-lab/blood/f074.jpg",
+      "img/eye-lab/blood/f075.jpg",
+      "img/eye-lab/blood/f076.jpg",
+      "img/eye-lab/blood/f077.jpg"
+     ],
+     "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）；Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）；Henry Vandyke Carter，Wikimedia Commons「Gray874.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray874.png）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總圖｜靜脈與海綿竇",
+     "body": [
+      "眼靜脈側面觀、海綿竇冠狀切面、顱底內面血管（Sobotta）"
+     ],
+     "img": [
+      "img/eye-lab/blood/f078.jpg",
+      "img/eye-lab/blood/f079.jpg",
+      "img/eye-lab/blood/f080.jpg",
+      "img/eye-lab/blood/f081.jpg"
+     ],
+     "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）；Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 679.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_679.png）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總圖｜頸外動脈與眼瞼血管",
+     "body": [
+      "頸外動脈與分支、眼瞼與眶周血管（Gray）"
+     ],
+     "img": [
+      "img/eye-lab/blood/f082.jpg",
+      "img/eye-lab/blood/f083.jpg",
+      "img/eye-lab/blood/f084.jpg"
+     ],
+     "img_source": "Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png）；Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總表",
+     "body": [
+      "**腦底動脈（威利氏環）**",
+      "- **頸內動脈** internal carotid artery",
+      "- **大腦前動脈** anterior cerebral artery",
+      "- **前交通動脈** anterior communicating artery",
+      "- **大腦中動脈** middle cerebral artery",
+      "- **後交通動脈** posterior communicating artery",
+      "- **大腦後動脈** posterior cerebral artery",
+      "- **基底動脈** basilar artery",
+      "- **椎動脈** vertebral artery",
+      "- **威利氏環** circle of Willis",
+      "- **前脈絡叢動脈** anterior choroidal artery：大致位置；沿視束走",
+      "",
+      "**眼動脈與眼眶分支**",
+      "- **頸內動脈** internal carotid artery",
+      "- **眼動脈** ophthalmic artery",
+      "- **視網膜中央動脈** central retinal artery",
+      "- **睫狀動脈** ciliary artery",
+      "- **淚動脈** lacrimal artery",
+      "- **外瞼動脈** lateral palpebral artery",
+      "- **眶上動脈** supraorbital artery",
+      "- **滑車上動脈** supratrochlear artery",
+      "- **鼻背動脈** dorsal nasal artery",
+      "- **肌動脈** muscular artery",
+      "- **前篩動脈** anterior ethmoidal artery",
+      "- **後篩動脈** posterior ethmoidal artery",
+      "- **內瞼動脈** medial palpebral artery",
+      "- **滑車下動脈** infratrochlear artery",
+      "",
+      "**眼球的血管：睫狀動脈、辛氏環、眼底**",
+      "- **睫狀後短動脈** short posterior ciliary artery",
+      "- **睫狀後長動脈** long posterior ciliary artery",
+      "- **睫狀前動脈** anterior ciliary artery",
+      "- **睫狀前靜脈** anterior ciliary vein",
+      "- **虹膜大動脈環** major arterial circle of iris",
+      "- **視網膜中央動脈** central retinal artery",
+      "- **視網膜中央靜脈** central retinal vein",
+      "- **視神經血管環** circle of Zinn-Haller：圍繞視神經盤",
+      "- **脈絡膜** choroid",
+      "- **視神經盤** optic disc",
+      "- **顳上動脈** superior temporal arteriole",
+      "- **顳下動脈** inferior temporal arteriole",
+      "- **鼻上動脈** superior nasal arteriole",
+      "- **鼻下動脈** inferior nasal arteriole",
+      "- **黃斑部** macula：沒有中央動脈分支",
+      "- **渦靜脈** vortex vein：赤道後方",
+      "",
+      "**靜脈與海綿竇**",
+      "- **上眼靜脈** superior ophthalmic vein",
+      "- **下眼靜脈** inferior ophthalmic vein",
+      "- **海綿竇** cavernous sinus",
+      "- **頸內動脈** internal carotid artery",
+      "- **動眼神經** oculomotor nerve",
+      "- **滑車神經** trochlear nerve",
+      "- **眼神經** ophthalmic nerve",
+      "- **外旋神經** abducens nerve",
+      "- **腦下垂體** pituitary gland",
+      "- **蝶竇** sphenoidal sinus",
+      "- **眼動脈** ophthalmic artery",
+      "- **渦靜脈** vortex vein",
+      "- **中腦膜動脈** middle meningeal artery：經棘孔",
+      "",
+      "**頸外動脈與眼瞼血管**",
+      "- **頸外動脈** external carotid artery",
+      "- **上頷動脈** maxillary artery",
+      "- **顏面動脈** facial artery",
+      "- **淺顳動脈** superficial temporal artery",
+      "- **眼角動脈** angular artery",
+      "- **眼角靜脈** angular vein",
+      "- **顏面靜脈** facial vein",
+      "- **眶下動脈** infraorbital artery",
+      "- **淚動脈** lacrimal artery",
+      "- **上瞼動脈弓** superior palpebral arcade",
+      "- **下瞼動脈弓** inferior palpebral arcade",
+      "- **鼻背動脈** dorsal nasal artery",
+      ""
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "跑台模擬：看紅圈寫中文＋英文",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "頸內動脈",
+        "內頸動脈"
+       ],
+       "en": [
+        "internal carotid artery"
+       ],
+       "img": "img/eye-lab/blood/q001.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：i… c… a…",
+       "explain": "頸內動脈 internal carotid artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "大腦前動脈",
+        "前大腦動脈"
+       ],
+       "en": [
+        "anterior cerebral artery"
+       ],
+       "img": "img/eye-lab/blood/q002.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：a… c… a…",
+       "explain": "大腦前動脈 anterior cerebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前交通動脈"
+       ],
+       "en": [
+        "anterior communicating artery"
+       ],
+       "img": "img/eye-lab/blood/q003.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：a… c… a…",
+       "explain": "前交通動脈 anterior communicating artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "大腦中動脈",
+        "中大腦動脈"
+       ],
+       "en": [
+        "middle cerebral artery"
+       ],
+       "img": "img/eye-lab/blood/q004.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：m… c… a…",
+       "explain": "大腦中動脈 middle cerebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "後交通動脈"
+       ],
+       "en": [
+        "posterior communicating artery"
+       ],
+       "img": "img/eye-lab/blood/q005.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：p… c… a…",
+       "explain": "後交通動脈 posterior communicating artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "大腦後動脈",
+        "後大腦動脈"
+       ],
+       "en": [
+        "posterior cerebral artery"
+       ],
+       "img": "img/eye-lab/blood/q006.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：p… c… a…",
+       "explain": "大腦後動脈 posterior cerebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "基底動脈"
+       ],
+       "en": [
+        "basilar artery"
+       ],
+       "img": "img/eye-lab/blood/q007.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：b… a…",
+       "explain": "基底動脈 basilar artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底動脈：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "椎動脈"
+       ],
+       "en": [
+        "vertebral artery"
+       ],
+       "img": "img/eye-lab/blood/q008.jpg",
+       "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）（紅圈為本題標記）",
+       "hint": "英文開頭：v… a…",
+       "explain": "椎動脈 vertebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底標本：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "威利氏環",
+        "Willis 環",
+        "大腦動脈環"
+       ],
+       "en": [
+        "circle of Willis",
+        "cerebral arterial circle"
+       ],
+       "img": "img/eye-lab/blood/q009.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：c… o… W…",
+       "explain": "威利氏環 circle of Willis"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底標本：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前脈絡叢動脈",
+        "前脈絡動脈"
+       ],
+       "en": [
+        "anterior choroidal artery"
+       ],
+       "img": "img/eye-lab/blood/q010.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：a… c… a…",
+       "explain": "前脈絡叢動脈 anterior choroidal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼動脈"
+       ],
+       "en": [
+        "ophthalmic artery"
+       ],
+       "img": "img/eye-lab/blood/q012.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：o… a…",
+       "explain": "眼動脈 ophthalmic artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視網膜中央動脈",
+        "中央視網膜動脈",
+        "視網膜中心動脈"
+       ],
+       "en": [
+        "central retinal artery",
+        "central artery of retina"
+       ],
+       "img": "img/eye-lab/blood/q013.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… r… a…",
+       "explain": "視網膜中央動脈 central retinal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀動脈"
+       ],
+       "en": [
+        "ciliary artery",
+        "ciliary arteries"
+       ],
+       "img": "img/eye-lab/blood/q014.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… a…",
+       "explain": "睫狀動脈 ciliary artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚動脈"
+       ],
+       "en": [
+        "lacrimal artery"
+       ],
+       "img": "img/eye-lab/blood/q015.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… a…",
+       "explain": "淚動脈 lacrimal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外瞼動脈",
+        "外側瞼動脈"
+       ],
+       "en": [
+        "lateral palpebral artery"
+       ],
+       "img": "img/eye-lab/blood/q016.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… p… a…",
+       "explain": "外瞼動脈 lateral palpebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶上動脈",
+        "上眼窩動脈"
+       ],
+       "en": [
+        "supraorbital artery"
+       ],
+       "img": "img/eye-lab/blood/q017.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… a…",
+       "explain": "眶上動脈 supraorbital artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車上動脈",
+        "額動脈"
+       ],
+       "en": [
+        "supratrochlear artery",
+        "frontal artery"
+       ],
+       "img": "img/eye-lab/blood/q018.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… a…",
+       "explain": "滑車上動脈 supratrochlear artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼動脈側面圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻背動脈",
+        "鼻額動脈"
+       ],
+       "en": [
+        "dorsal nasal artery",
+        "nasal artery",
+        "nasofrontal artery"
+       ],
+       "img": "img/eye-lab/blood/q019.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（紅圈為本題標記）",
+       "hint": "英文開頭：d… n… a…",
+       "explain": "鼻背動脈 dorsal nasal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 眼動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "肌動脈",
+        "內肌動脈",
+        "外肌動脈"
+       ],
+       "en": [
+        "muscular artery",
+        "medial muscular artery",
+        "lateral muscular artery"
+       ],
+       "img": "img/eye-lab/blood/q020.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… a…",
+       "explain": "肌動脈 muscular artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 眼動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前篩動脈"
+       ],
+       "en": [
+        "anterior ethmoidal artery",
+        "anterior ethmoid artery"
+       ],
+       "img": "img/eye-lab/blood/q021.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… e… a…",
+       "explain": "前篩動脈 anterior ethmoidal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 眼動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "後篩動脈"
+       ],
+       "en": [
+        "posterior ethmoidal artery",
+        "posterior ethmoid artery"
+       ],
+       "img": "img/eye-lab/blood/q022.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）（紅圈為本題標記）",
+       "hint": "英文開頭：p… e… a…",
+       "explain": "後篩動脈 posterior ethmoidal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 眼動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "內瞼動脈",
+        "內側瞼動脈"
+       ],
+       "en": [
+        "medial palpebral artery"
+       ],
+       "img": "img/eye-lab/blood/q023.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… p… a…",
+       "explain": "內瞼動脈 medial palpebral artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 眼動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車下動脈"
+       ],
+       "en": [
+        "infratrochlear artery"
+       ],
+       "img": "img/eye-lab/blood/q024.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… a…",
+       "explain": "滑車下動脈 infratrochlear artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀後短動脈",
+        "後短睫狀動脈"
+       ],
+       "en": [
+        "short posterior ciliary artery"
+       ],
+       "img": "img/eye-lab/blood/q025.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… p… c… a…",
+       "explain": "睫狀後短動脈 short posterior ciliary artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀後長動脈",
+        "後長睫狀動脈"
+       ],
+       "en": [
+        "long posterior ciliary artery"
+       ],
+       "img": "img/eye-lab/blood/q026.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… p… c… a…",
+       "explain": "睫狀後長動脈 long posterior ciliary artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀前動脈",
+        "前睫狀動脈"
+       ],
+       "en": [
+        "anterior ciliary artery"
+       ],
+       "img": "img/eye-lab/blood/q027.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… c… a…",
+       "explain": "睫狀前動脈 anterior ciliary artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀前靜脈",
+        "前睫狀靜脈"
+       ],
+       "en": [
+        "anterior ciliary vein"
+       ],
+       "img": "img/eye-lab/blood/q028.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… c… v…",
+       "explain": "睫狀前靜脈 anterior ciliary vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "虹膜大動脈環"
+       ],
+       "en": [
+        "major arterial circle of iris",
+        "major arterial circle"
+       ],
+       "img": "img/eye-lab/blood/q029.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… a… c… o… i…",
+       "explain": "虹膜大動脈環 major arterial circle of iris"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視網膜中央靜脈",
+        "中央視網膜靜脈"
+       ],
+       "en": [
+        "central retinal vein"
+       ],
+       "img": "img/eye-lab/blood/q031.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… r… v…",
+       "explain": "視網膜中央靜脈 central retinal vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經血管環",
+        "辛氏環（血管）",
+        "Zinn-Haller 環",
+        "辛哈氏環"
+       ],
+       "en": [
+        "circle of Zinn-Haller",
+        "circle of Zinn",
+        "circle of Haller"
+       ],
+       "img": "img/eye-lab/blood/q032.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… o… Z… H…",
+       "explain": "視神經血管環 circle of Zinn-Haller"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "脈絡膜"
+       ],
+       "en": [
+        "choroid"
+       ],
+       "img": "img/eye-lab/blood/q033.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c…",
+       "explain": "脈絡膜 choroid"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經盤",
+        "視乳突",
+        "視神經乳頭",
+        "視盤"
+       ],
+       "en": [
+        "optic disc",
+        "optic disk",
+        "optic papilla",
+        "optic nerve head"
+       ],
+       "img": "img/eye-lab/blood/q034.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：o… d…",
+       "explain": "視神經盤 optic disc"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顳上動脈"
+       ],
+       "en": [
+        "superior temporal arteriole",
+        "superior temporal artery",
+        "superior temporal branch"
+       ],
+       "img": "img/eye-lab/blood/q035.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… t… a…",
+       "explain": "顳上動脈 superior temporal arteriole"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顳下動脈"
+       ],
+       "en": [
+        "inferior temporal arteriole",
+        "inferior temporal artery",
+        "inferior temporal branch"
+       ],
+       "img": "img/eye-lab/blood/q036.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… t… a…",
+       "explain": "顳下動脈 inferior temporal arteriole"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻上動脈"
+       ],
+       "en": [
+        "superior nasal arteriole",
+        "superior nasal artery",
+        "superior nasal branch"
+       ],
+       "img": "img/eye-lab/blood/q037.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… n… a…",
+       "explain": "鼻上動脈 superior nasal arteriole"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻下動脈"
+       ],
+       "en": [
+        "inferior nasal arteriole",
+        "inferior nasal artery",
+        "inferior nasal branch"
+       ],
+       "img": "img/eye-lab/blood/q038.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… n… a…",
+       "explain": "鼻下動脈 inferior nasal arteriole"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼底：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "黃斑部",
+        "黃斑"
+       ],
+       "en": [
+        "macula",
+        "macula lutea"
+       ],
+       "img": "img/eye-lab/blood/q039.jpg",
+       "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：m…",
+       "explain": "黃斑部 macula"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼球後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "渦靜脈",
+        "螺旋靜脈"
+       ],
+       "en": [
+        "vortex vein",
+        "vorticose vein"
+       ],
+       "img": "img/eye-lab/blood/q040.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray874.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray874.png）（紅圈為本題標記）",
+       "hint": "英文開頭：v… v…",
+       "explain": "渦靜脈 vortex vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼靜脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上眼靜脈",
+        "眼上靜脈"
+       ],
+       "en": [
+        "superior ophthalmic vein"
+       ],
+       "img": "img/eye-lab/blood/q041.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… o… v…",
+       "explain": "上眼靜脈 superior ophthalmic vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼靜脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "下眼靜脈",
+        "眼下靜脈"
+       ],
+       "en": [
+        "inferior ophthalmic vein"
+       ],
+       "img": "img/eye-lab/blood/q042.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… o… v…",
+       "explain": "下眼靜脈 inferior ophthalmic vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼靜脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "海綿竇"
+       ],
+       "en": [
+        "cavernous sinus"
+       ],
+       "img": "img/eye-lab/blood/q043.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… s…",
+       "explain": "海綿竇 cavernous sinus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "動眼神經"
+       ],
+       "en": [
+        "oculomotor nerve",
+        "CN III"
+       ],
+       "img": "img/eye-lab/blood/q045.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：o… n…",
+       "explain": "動眼神經 oculomotor nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車神經"
+       ],
+       "en": [
+        "trochlear nerve",
+        "CN IV"
+       ],
+       "img": "img/eye-lab/blood/q046.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：t… n…",
+       "explain": "滑車神經 trochlear nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼神經",
+        "眼支"
+       ],
+       "en": [
+        "ophthalmic nerve",
+        "V1"
+       ],
+       "img": "img/eye-lab/blood/q047.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：o… n…",
+       "explain": "眼神經 ophthalmic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外旋神經",
+        "外展神經"
+       ],
+       "en": [
+        "abducens nerve",
+        "abducent nerve",
+        "CN VI"
+       ],
+       "img": "img/eye-lab/blood/q048.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：a… n…",
+       "explain": "外旋神經 abducens nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "腦下垂體",
+        "腦垂體",
+        "垂體"
+       ],
+       "en": [
+        "pituitary gland",
+        "pituitary",
+        "hypophysis"
+       ],
+       "img": "img/eye-lab/blood/q049.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：p… g…",
+       "explain": "腦下垂體 pituitary gland"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "海綿竇切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶竇"
+       ],
+       "en": [
+        "sphenoidal sinus",
+        "sphenoid sinus"
+       ],
+       "img": "img/eye-lab/blood/q050.jpg",
+       "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… s…",
+       "explain": "蝶竇 sphenoidal sinus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "顱底血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "中腦膜動脈",
+        "網膜中動脈"
+       ],
+       "en": [
+        "middle meningeal artery"
+       ],
+       "img": "img/eye-lab/blood/q053.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 679.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_679.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… m… a…",
+       "explain": "中腦膜動脈 middle meningeal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頸外動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "頸外動脈",
+        "外頸動脈"
+       ],
+       "en": [
+        "external carotid artery"
+       ],
+       "img": "img/eye-lab/blood/q054.jpg",
+       "img_source": "Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png）（紅圈為本題標記）",
+       "hint": "英文開頭：e… c… a…",
+       "explain": "頸外動脈 external carotid artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頸外動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上頷動脈",
+        "頷動脈",
+        "上頜動脈"
+       ],
+       "en": [
+        "maxillary artery"
+       ],
+       "img": "img/eye-lab/blood/q055.jpg",
+       "img_source": "Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… a…",
+       "explain": "上頷動脈 maxillary artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頸外動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顏面動脈"
+       ],
+       "en": [
+        "facial artery"
+       ],
+       "img": "img/eye-lab/blood/q056.jpg",
+       "img_source": "Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png）（紅圈為本題標記）",
+       "hint": "英文開頭：f… a…",
+       "explain": "顏面動脈 facial artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頸外動脈圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淺顳動脈",
+        "顳淺動脈"
+       ],
+       "en": [
+        "superficial temporal artery"
+       ],
+       "img": "img/eye-lab/blood/q057.jpg",
+       "img_source": "Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… t… a…",
+       "explain": "淺顳動脈 superficial temporal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼角動脈"
+       ],
+       "en": [
+        "angular artery"
+       ],
+       "img": "img/eye-lab/blood/q058.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… a…",
+       "explain": "眼角動脈 angular artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼角靜脈"
+       ],
+       "en": [
+        "angular vein"
+       ],
+       "img": "img/eye-lab/blood/q059.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… v…",
+       "explain": "眼角靜脈 angular vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顏面靜脈"
+       ],
+       "en": [
+        "facial vein"
+       ],
+       "img": "img/eye-lab/blood/q060.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：f… v…",
+       "explain": "顏面靜脈 facial vein"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶下動脈",
+        "下眼窩動脈"
+       ],
+       "en": [
+        "infraorbital artery",
+        "suborbital artery"
+       ],
+       "img": "img/eye-lab/blood/q061.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… a…",
+       "explain": "眶下動脈 infraorbital artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上瞼動脈弓"
+       ],
+       "en": [
+        "superior palpebral arcade",
+        "superior palpebral artery"
+       ],
+       "img": "img/eye-lab/blood/q063.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… p… a…",
+       "explain": "上瞼動脈弓 superior palpebral arcade"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眶周血管：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "下瞼動脈弓"
+       ],
+       "en": [
+        "inferior palpebral arcade",
+        "inferior palpebral artery"
+       ],
+       "img": "img/eye-lab/blood/q064.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… p… a…",
+       "explain": "下瞼動脈弓 inferior palpebral arcade"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "共 58 個點位；錯的回到該課的圖再點一次"
+     ]
+    }
+   ]
+  }
+ ]
+}

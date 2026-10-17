@@ -1,0 +1,70 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-visual-q-l3-2",
+  "subject": "eye_anat",
+  "name": "【跑台】老師講義矢狀切面",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・視覺路徑",
+   "視交叉到視覺皮質"
+  ],
+  "order": 1421,
+  "source": "《新實驗手冊-01.pdf》第 5 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "矢狀切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "頂枕溝 / parieto-occipital sulcus",
+   "accept": [
+    "頂枕溝 / parieto-occipital sulcus",
+    "頂枕溝 / parietooccipital sulcus"
+   ],
+   "explain": [
+    "**頂枕溝　parieto-occipital sulcus**",
+    "也可以寫：parietooccipital sulcus",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 5 頁：視覺路徑",
+    "視交叉到視覺皮質",
+    "頂枕溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-visual/q019.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "矢狀切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "距狀溝 / calcarine sulcus",
+   "accept": [
+    "距狀溝 / calcarine sulcus",
+    "距狀溝 / calcarine fissure",
+    "禽距溝 / calcarine sulcus",
+    "禽距溝 / calcarine fissure"
+   ],
+   "explain": [
+    "**距狀溝　calcarine sulcus**",
+    "也可以寫：禽距溝、calcarine fissure",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 5 頁：視覺路徑",
+    "視交叉到視覺皮質",
+    "距狀溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-visual/q020.jpg"
+   ]
+  }
+ ]
+}

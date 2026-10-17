@@ -1,0 +1,120 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-vp-q-l3-3",
+  "subject": "eye_anat",
+  "name": "【跑台】大腦內側面",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・視覺路徑",
+   "矢狀切面與枕葉"
+  ],
+  "order": 122,
+  "source": "《2.視覺路徑+標號-02.pdf》第 10–13 頁；《眼解剖實驗.pdf》上課照片；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "大腦內側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "距狀溝 / calcarine sulcus",
+   "accept": [
+    "距狀溝 / calcarine sulcus",
+    "距狀溝 / calcarine fissure",
+    "禽距溝 / calcarine sulcus",
+    "禽距溝 / calcarine fissure"
+   ],
+   "explain": [
+    "**距狀溝　calcarine sulcus**",
+    "也可以寫：禽距溝、calcarine fissure",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "距狀溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q067.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "大腦內側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "頂枕溝 / parieto-occipital sulcus",
+   "accept": [
+    "頂枕溝 / parieto-occipital sulcus",
+    "頂枕溝 / parietooccipital sulcus"
+   ],
+   "explain": [
+    "**頂枕溝　parieto-occipital sulcus**",
+    "也可以寫：parietooccipital sulcus",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "頂枕溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q068.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "大腦內側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "楔葉 / cuneus",
+   "accept": [
+    "楔葉 / cuneus",
+    "楔狀葉 / cuneus"
+   ],
+   "explain": [
+    "**楔葉　cuneus**",
+    "兩溝之間",
+    "也可以寫：楔狀葉",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "楔葉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q069.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "大腦內側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "舌回 / lingual gyrus",
+   "accept": [
+    "舌回 / lingual gyrus"
+   ],
+   "explain": [
+    "**舌回　lingual gyrus**",
+    "距狀溝下方",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "舌回"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q070.jpg"
+   ]
+  }
+ ]
+}

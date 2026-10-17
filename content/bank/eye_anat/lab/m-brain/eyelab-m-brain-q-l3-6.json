@@ -1,0 +1,64 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-brain-q-l3-6",
+  "subject": "eye_anat",
+  "name": "【跑台】頭面部感覺神經（Gray）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・腦幹與神經",
+   "神經節與眼眶神經"
+  ],
+  "order": 1525,
+  "source": "《新實驗手冊-01.pdf》第 8 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "頭面部神經：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "滑車上神經 / supratrochlear nerve",
+   "accept": [
+    "滑車上神經 / supratrochlear nerve"
+   ],
+   "explain": [
+    "**滑車上神經　supratrochlear nerve**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "滑車上神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q026.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "頭面部神經：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "滑車下神經 / infratrochlear nerve",
+   "accept": [
+    "滑車下神經 / infratrochlear nerve"
+   ],
+   "explain": [
+    "**滑車下神經　infratrochlear nerve**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "滑車下神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q027.jpg"
+   ]
+  }
+ ]
+}

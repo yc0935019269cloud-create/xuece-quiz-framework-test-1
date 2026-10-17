@@ -32,7 +32,7 @@ CONTENT = os.path.join(ROOT, 'content')
 THEMES = ['lit', 'lang', 'math', 'calc', 'hist', 'sci', 'mix']
 QTYPES = ['single', 'multi', 'tf', 'fill', 'open']
 STEP_TYPES = ['intro', 'card', 'check', 'example', 'practice', 'recap', 'diagram', 'interactive']
-CHECK_KINDS = ['single', 'multi', 'tf', 'fill', 'order', 'self']
+CHECK_KINDS = ['single', 'multi', 'tf', 'fill', 'order', 'self', 'name']
 MD_FIELDS = ['body', 'q', 'hint', 'explain', 'problem', 'tip', 'front', 'back', 'desc', 'stem', 'text', 'task', 'html', 'demo']
 ID_RE = r'[A-Za-z0-9][A-Za-z0-9_-]*'
 
@@ -424,6 +424,14 @@ def check_check(c, where, R):
         it = c.get('items')
         if not isinstance(it, list) or len(it) < 3 or not all(is_str(x) for x in it) or len(set(it)) != len(it):
             R.err(where, 'order 需要 items（依正確順序、至少 3 項、不重複）')
+    elif kind == 'name':
+        for k in ('zh', 'en'):
+            v = c.get(k)
+            if isinstance(v, str): v = c[k] = [v]
+            if not isinstance(v, list) or not v or not all(is_str(x) for x in v):
+                R.err(where, f'name 需要 {k}（可接受的{"中文" if k == "zh" else "英文"}名稱，字串或陣列）')
+        if not c.get('img'):
+            R.warn(where, 'name（看圖寫名稱）建議附 img：把構造圈起來的圖')
     elif kind == 'self':
         ans = c['answer'] = join_md(ans)
         if not is_str(ans):
@@ -577,7 +585,7 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
                     R.err(SW, f'{t} 需要 body')
                 if t == 'card' and not is_str(s.get('title')):
                     R.err(SW, 'card 需要 title')
-                if t == 'card' and len(s.get('body') or '') > 900:
+                if t == 'card' and len(s.get('body') or '') > 900 and pack.get('style') != 'atlas':
                     R.warn(SW, '概念卡超過 900 字，建議拆成兩張卡（中間插一題檢核）')
                 if s.get('flash') is not None:
                     check_flash(s['flash'], SW + '.flash', R)
@@ -647,6 +655,8 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
                     R.err(SW, 'recap 需要 points（重點陣列）')
                 for fi, f in enumerate(s.get('flash') or []):
                     check_flash(f, f'{SW}.flash[{fi}]', R)
+        if pack.get('style') == 'atlas':   # 圖鑑式單元：以看圖為主，不套用卡片／檢核題／範例的節奏建議
+            continue
         if types[0] != 'intro':
             R.warn(W, '節奏：第一步建議是 intro（導入）')
         if types[-1] != 'recap':
@@ -952,6 +962,36 @@ def build_prompts():
     write_js(os.path.join(ROOT, 'data', 'prompts.js'), 'PROMPTS', {'v': 1, 'files': files})
 
 
+def build_glossary():
+    """content/glossary/*.json（xd-glossary/1）：學習頁面上可點開看字源的解剖名詞。"""
+    out, bad, seen = [], 0, {}
+    for f in sorted(glob.glob(os.path.join(CONTENT, 'glossary', '*.json'))):
+        try:
+            g = json.load(open(f, encoding='utf-8'))
+        except json.JSONDecodeError as e:
+            print(f'✘ {rel(f)}\n    JSON 格式錯誤：第 {e.lineno} 行：{e.msg}'); bad += 1; continue
+        errs = []
+        for i, e in enumerate(g.get('entries') or []):
+            w = f'entries[{i}]'
+            if not is_str(e.get('id')) or not is_str(e.get('zh')) or not is_str(e.get('en')):
+                errs.append(f'{w} 需要 id、zh、en'); continue
+            if e['id'] in seen:
+                errs.append(f'{w} id 重複：{e["id"]}（{seen[e["id"]]}）'); continue
+            m = [x for x in e.get('match') or [] if is_str(x)]
+            if not m:
+                errs.append(f'{w} 需要 match（會被變成可點文字的寫法）'); continue
+            seen[e['id']] = rel(f)
+            out.append({'id': e['id'], 'match': m, 'zh': e['zh'], 'en': e['en'],
+                        'parts': [p for p in e.get('parts') or [] if isinstance(p, list) and len(p) == 2],
+                        'note': e.get('note') or '', 'rel': e.get('rel') or ''})
+        if errs:
+            bad += 1
+            print(f'✘ {rel(f)}'); [print('    ' + x) for x in errs]
+        else:
+            print(f'✔ {rel(f)}  〔名詞字源〕{len(g.get("entries") or [])} 個')
+    return out, bad
+
+
 def main():
     global BUNDLE
     args = set(sys.argv[1:])
@@ -963,6 +1003,8 @@ def main():
     print()
     QB, b1 = build_bank(pj, args)
     LEARN, b2 = build_learn(pj, QB, args)
+    LEARN['glossary'], b3 = build_glossary()
+    b2 = b2 or b3
     if '--index' in args:
         write_index(QB)
     if '--check' not in args:

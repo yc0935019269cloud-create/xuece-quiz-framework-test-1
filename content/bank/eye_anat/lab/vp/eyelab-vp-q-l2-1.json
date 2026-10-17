@@ -1,0 +1,179 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-vp-q-l2-1",
+  "subject": "eye_anat",
+  "name": "【跑台】總圖（腦的下面觀）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・視覺路徑",
+   "水平切面（標本 60）"
+  ],
+  "order": 110,
+  "source": "《2.視覺路徑+標號-02.pdf》第 10–13 頁；《眼解剖實驗.pdf》上課照片；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "總圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視神經 / optic nerve",
+   "accept": [
+    "視神經 / optic nerve"
+   ],
+   "explain": [
+    "**視神經　optic nerve**",
+    "（圖：Servier Medical Art「Optical pathways」，CC BY 4.0（https://smart.servier.com/smart_image/optical-pathways/））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "視神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q013.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "總圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視交叉 / optic chiasm",
+   "accept": [
+    "視交叉 / optic chiasm",
+    "視交叉 / optic chiasma"
+   ],
+   "explain": [
+    "**視交叉　optic chiasm**",
+    "也可以寫：optic chiasma",
+    "（圖：Servier Medical Art「Optical pathways」，CC BY 4.0（https://smart.servier.com/smart_image/optical-pathways/））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "視交叉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q014.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "總圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視束 / optic tract",
+   "accept": [
+    "視束 / optic tract",
+    "視徑 / optic tract"
+   ],
+   "explain": [
+    "**視束　optic tract**",
+    "也可以寫：視徑",
+    "（圖：Servier Medical Art「Optical pathways」，CC BY 4.0（https://smart.servier.com/smart_image/optical-pathways/））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "視束"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q015.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "總圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "外側膝狀體 / lateral geniculate body",
+   "accept": [
+    "外側膝狀體 / lateral geniculate body",
+    "外側膝狀體 / lateral geniculate nucleus",
+    "外側膝狀體 / lateral geniculate nuclei",
+    "外側膝狀體 / LGN",
+    "外側膝狀體 / LGB",
+    "外側膝狀體核 / lateral geniculate body",
+    "外側膝狀體核 / lateral geniculate nucleus",
+    "外側膝狀體核 / lateral geniculate nuclei",
+    "外側膝狀體核 / LGN",
+    "外側膝狀體核 / LGB",
+    "外側膝狀核 / lateral geniculate body",
+    "外側膝狀核 / lateral geniculate nucleus",
+    "外側膝狀核 / lateral geniculate nuclei",
+    "外側膝狀核 / LGN",
+    "外側膝狀核 / LGB"
+   ],
+   "explain": [
+    "**外側膝狀體　lateral geniculate body**",
+    "也可以寫：外側膝狀體核、外側膝狀核、lateral geniculate nucleus、lateral geniculate nuclei、LGN、LGB",
+    "（圖：Servier Medical Art「Optical pathways」，CC BY 4.0（https://smart.servier.com/smart_image/optical-pathways/））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "外側膝狀體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q016.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "總圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視放射 / optic radiation",
+   "accept": [
+    "視放射 / optic radiation",
+    "視放射 / optic radiations"
+   ],
+   "explain": [
+    "**視放射　optic radiation**",
+    "也可以寫：optic radiations",
+    "（圖：Servier Medical Art「Optical pathways」，CC BY 4.0（https://smart.servier.com/smart_image/optical-pathways/））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "視放射"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q017.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "總圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視覺皮質 / visual cortex",
+   "accept": [
+    "視覺皮質 / visual cortex",
+    "視皮質 / visual cortex"
+   ],
+   "explain": [
+    "**視覺皮質　visual cortex**",
+    "也可以寫：視皮質",
+    "（圖：Servier Medical Art「Optical pathways」，CC BY 4.0（https://smart.servier.com/smart_image/optical-pathways/））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "視覺皮質"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q018.jpg"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-brain-q-l3-1",
+  "subject": "eye_anat",
+  "name": "【跑台】睫狀神經節（示意圖）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・腦幹與神經",
+   "神經節與眼眶神經"
+  ],
+  "order": 1520,
+  "source": "《新實驗手冊-01.pdf》第 8 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "睫狀神經節圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "睫狀神經節 / ciliary ganglion",
+   "accept": [
+    "睫狀神經節 / ciliary ganglion"
+   ],
+   "explain": [
+    "**睫狀神經節　ciliary ganglion**",
+    "（圖：The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "睫狀神經節"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q014.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "睫狀神經節圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "睫狀短神經 / short ciliary nerve",
+   "accept": [
+    "睫狀短神經 / short ciliary nerve",
+    "睫狀短神經 / short ciliary nerves",
+    "短睫狀神經 / short ciliary nerve",
+    "短睫狀神經 / short ciliary nerves"
+   ],
+   "explain": [
+    "**睫狀短神經　short ciliary nerve**",
+    "也可以寫：短睫狀神經、short ciliary nerves",
+    "（圖：The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "睫狀短神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q015.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "睫狀神經節圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "睫狀長神經 / long ciliary nerve",
+   "accept": [
+    "睫狀長神經 / long ciliary nerve",
+    "睫狀長神經 / long ciliary nerves",
+    "長睫狀神經 / long ciliary nerve",
+    "長睫狀神經 / long ciliary nerves"
+   ],
+   "explain": [
+    "**睫狀長神經　long ciliary nerve**",
+    "也可以寫：長睫狀神經、long ciliary nerves",
+    "（圖：The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "睫狀長神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q016.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "睫狀神經節圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "鼻睫神經 / nasociliary nerve",
+   "accept": [
+    "鼻睫神經 / nasociliary nerve"
+   ],
+   "explain": [
+    "**鼻睫神經　nasociliary nerve**",
+    "（圖：The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "鼻睫神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q017.jpg"
+   ]
+  }
+ ]
+}

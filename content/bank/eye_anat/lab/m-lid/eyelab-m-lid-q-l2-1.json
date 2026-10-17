@@ -1,0 +1,207 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-lid-q-l2-1",
+  "subject": "eye_anat",
+  "name": "【跑台】上眼瞼矢狀切面（Gray）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・眼瞼與眼外肌",
+   "眼瞼"
+  ],
+  "order": 1210,
+  "source": "《新實驗手冊-01.pdf》第 2 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "上眼瞼切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "前瞼 / anterior lamella",
+   "accept": [
+    "前瞼 / anterior lamella"
+   ],
+   "explain": [
+    "**前瞼　anterior lamella**",
+    "皮膚＋眼輪匝肌",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼瞼",
+    "前瞼"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q010.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "上眼瞼切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "後瞼 / posterior lamella",
+   "accept": [
+    "後瞼 / posterior lamella"
+   ],
+   "explain": [
+    "**後瞼　posterior lamella**",
+    "瞼板＋結膜",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼瞼",
+    "後瞼"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q011.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "上眼瞼切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眼輪匝肌 / orbicularis oculi",
+   "accept": [
+    "眼輪匝肌 / orbicularis oculi",
+    "眼輪匝肌 / orbicularis oculi muscle"
+   ],
+   "explain": [
+    "**眼輪匝肌　orbicularis oculi**",
+    "也可以寫：orbicularis oculi muscle",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼瞼",
+    "眼輪匝肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q012.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "上眼瞼切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "提上眼瞼肌 / levator palpebrae superioris",
+   "accept": [
+    "提上眼瞼肌 / levator palpebrae superioris",
+    "提上眼瞼肌 / levator palpebrae superioris muscle",
+    "提上眼瞼肌 / levator palpebrae"
+   ],
+   "explain": [
+    "**提上眼瞼肌　levator palpebrae superioris**",
+    "也可以寫：levator palpebrae superioris muscle、levator palpebrae",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼瞼",
+    "提上眼瞼肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q013.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "上眼瞼切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "瞼板 / tarsal plate",
+   "accept": [
+    "瞼板 / tarsal plate",
+    "瞼板 / tarsus"
+   ],
+   "explain": [
+    "**瞼板　tarsal plate**",
+    "也可以寫：tarsus",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼瞼",
+    "瞼板"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q014.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "上眼瞼切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "瞼板腺 / Meibomian gland",
+   "accept": [
+    "瞼板腺 / Meibomian gland",
+    "瞼板腺 / meibomian gland",
+    "瞼板腺 / tarsal gland",
+    "麥氏腺 / Meibomian gland",
+    "麥氏腺 / meibomian gland",
+    "麥氏腺 / tarsal gland"
+   ],
+   "explain": [
+    "**瞼板腺　Meibomian gland**",
+    "也可以寫：麥氏腺、meibomian gland、tarsal gland",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼瞼",
+    "瞼板腺"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q015.jpg"
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "上眼瞼切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "穆勒氏肌 / Müller muscle",
+   "accept": [
+    "穆勒氏肌 / Müller muscle",
+    "穆勒氏肌 / Muller muscle",
+    "穆勒氏肌 / Müller's muscle",
+    "穆勒氏肌 / superior tarsal muscle",
+    "上瞼板肌 / Müller muscle",
+    "上瞼板肌 / Muller muscle",
+    "上瞼板肌 / Müller's muscle",
+    "上瞼板肌 / superior tarsal muscle",
+    "Müller 肌 / Müller muscle",
+    "Müller 肌 / Muller muscle",
+    "Müller 肌 / Müller's muscle",
+    "Müller 肌 / superior tarsal muscle"
+   ],
+   "explain": [
+    "**穆勒氏肌　Müller muscle**",
+    "大致位置：提上眼瞼肌下方、連到瞼板上緣",
+    "也可以寫：上瞼板肌、Müller 肌、Muller muscle、Müller's muscle、superior tarsal muscle",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼瞼",
+    "穆勒氏肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q016.jpg"
+   ]
+  }
+ ]
+}

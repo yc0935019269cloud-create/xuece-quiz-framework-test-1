@@ -1,0 +1,70 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-brain-q-l3-5",
+  "subject": "eye_anat",
+  "name": "【跑台】骨性眼眶：篩神經",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・腦幹與神經",
+   "神經節與眼眶神經"
+  ],
+  "order": 1524,
+  "source": "《新實驗手冊-01.pdf》第 8 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "前篩神經 / anterior ethmoidal nerve",
+   "accept": [
+    "前篩神經 / anterior ethmoidal nerve",
+    "前篩神經 / anterior ethmoid nerve"
+   ],
+   "explain": [
+    "**前篩神經　anterior ethmoidal nerve**",
+    "經前篩孔",
+    "也可以寫：anterior ethmoid nerve",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "前篩神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q024.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "後篩神經 / posterior ethmoidal nerve",
+   "accept": [
+    "後篩神經 / posterior ethmoidal nerve",
+    "後篩神經 / posterior ethmoid nerve"
+   ],
+   "explain": [
+    "**後篩神經　posterior ethmoidal nerve**",
+    "經後篩孔",
+    "也可以寫：posterior ethmoid nerve",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "後篩神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q025.jpg"
+   ]
+  }
+ ]
+}

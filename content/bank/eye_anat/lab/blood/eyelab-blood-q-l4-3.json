@@ -1,0 +1,142 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-blood-q-l4-3",
+  "subject": "eye_anat",
+  "name": "【跑台】顱底內面血管（Sobotta）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・血液供應",
+   "靜脈與海綿竇"
+  ],
+  "order": 332,
+  "source": "《眼球的血液供應與網膜血管構造與功能》講義；《新實驗手冊-01.pdf》第 4 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "顱底血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眼動脈 / ophthalmic artery",
+   "accept": [
+    "眼動脈 / ophthalmic artery"
+   ],
+   "explain": [
+    "**眼動脈　ophthalmic artery**",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 679.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_679.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "靜脈與海綿竇",
+    "眼動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q051.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "顱底血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上眼靜脈 / superior ophthalmic vein",
+   "accept": [
+    "上眼靜脈 / superior ophthalmic vein",
+    "眼上靜脈 / superior ophthalmic vein"
+   ],
+   "explain": [
+    "**上眼靜脈　superior ophthalmic vein**",
+    "也可以寫：眼上靜脈",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 679.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_679.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "靜脈與海綿竇",
+    "上眼靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q095.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "顱底血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "渦靜脈 / vortex vein",
+   "accept": [
+    "渦靜脈 / vortex vein",
+    "渦靜脈 / vorticose vein",
+    "螺旋靜脈 / vortex vein",
+    "螺旋靜脈 / vorticose vein"
+   ],
+   "explain": [
+    "**渦靜脈　vortex vein**",
+    "也可以寫：螺旋靜脈、vorticose vein",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 679.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_679.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "靜脈與海綿竇",
+    "渦靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q052.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "顱底血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "海綿竇 / cavernous sinus",
+   "accept": [
+    "海綿竇 / cavernous sinus"
+   ],
+   "explain": [
+    "**海綿竇　cavernous sinus**",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 679.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_679.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "靜脈與海綿竇",
+    "海綿竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q096.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "顱底血管：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "中腦膜動脈 / middle meningeal artery",
+   "accept": [
+    "中腦膜動脈 / middle meningeal artery",
+    "網膜中動脈 / middle meningeal artery"
+   ],
+   "explain": [
+    "**中腦膜動脈　middle meningeal artery**",
+    "經棘孔",
+    "也可以寫：網膜中動脈",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 679.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_679.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "靜脈與海綿竇",
+    "中腦膜動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q053.jpg"
+   ]
+  }
+ ]
+}

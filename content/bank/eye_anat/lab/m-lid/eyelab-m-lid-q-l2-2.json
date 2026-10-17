@@ -1,0 +1,96 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-lid-q-l2-2",
+  "subject": "eye_anat",
+  "name": "【跑台】眼瞼前面觀（皮膚與眼輪匝肌已移除，Gray）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・眼瞼與眼外肌",
+   "眼瞼"
+  ],
+  "order": 1211,
+  "source": "《新實驗手冊-01.pdf》第 2 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "眼瞼前面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "瞼板 / tarsal plate",
+   "accept": [
+    "瞼板 / tarsal plate",
+    "瞼板 / tarsus"
+   ],
+   "explain": [
+    "**瞼板　tarsal plate**",
+    "上瞼板",
+    "也可以寫：tarsus",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray894.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray894.png）；已塗去原圖英文標籤）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼瞼",
+    "瞼板"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q035.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "眼瞼前面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "外側瞼韌帶 / lateral palpebral ligament",
+   "accept": [
+    "外側瞼韌帶 / lateral palpebral ligament",
+    "外側瞼韌帶 / lateral canthal tendon",
+    "外側瞼韌帶 / lateral palpebral raphe"
+   ],
+   "explain": [
+    "**外側瞼韌帶　lateral palpebral ligament**",
+    "也可以寫：lateral canthal tendon、lateral palpebral raphe",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray894.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray894.png）；已塗去原圖英文標籤）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼瞼",
+    "外側瞼韌帶"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q017.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "眼瞼前面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "內側瞼韌帶 / medial palpebral ligament",
+   "accept": [
+    "內側瞼韌帶 / medial palpebral ligament",
+    "內側瞼韌帶 / medial canthal tendon"
+   ],
+   "explain": [
+    "**內側瞼韌帶　medial palpebral ligament**",
+    "跨在淚囊前方",
+    "也可以寫：medial canthal tendon",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray894.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray894.png）；已塗去原圖英文標籤）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼瞼",
+    "內側瞼韌帶"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q018.jpg"
+   ]
+  }
+ ]
+}

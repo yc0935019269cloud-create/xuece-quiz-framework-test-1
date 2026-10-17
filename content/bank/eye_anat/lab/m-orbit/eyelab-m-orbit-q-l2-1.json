@@ -1,0 +1,341 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-orbit-q-l2-1",
+  "subject": "eye_anat",
+  "name": "【跑台】骨性眼眶前面觀",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・骨質眼窩",
+   "孔、裂、窩"
+  ],
+  "order": 1110,
+  "source": "《新實驗手冊-01.pdf》第 1 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眶上孔 / supraorbital foramen",
+   "accept": [
+    "眶上孔 / supraorbital foramen",
+    "眶上孔 / supraorbital notch",
+    "眶上切跡 / supraorbital foramen",
+    "眶上切跡 / supraorbital notch"
+   ],
+   "explain": [
+    "**眶上孔　supraorbital foramen**",
+    "也可以寫：眶上切跡、supraorbital notch",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "眶上孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q012.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眶下孔 / infraorbital foramen",
+   "accept": [
+    "眶下孔 / infraorbital foramen"
+   ],
+   "explain": [
+    "**眶下孔　infraorbital foramen**",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "眶下孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q013.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眉弓 / supraorbital ridge",
+   "accept": [
+    "眉弓 / supraorbital ridge",
+    "眉弓 / supraorbital margin",
+    "眉弓 / superciliary arch",
+    "眶上緣 / supraorbital ridge",
+    "眶上緣 / supraorbital margin",
+    "眶上緣 / superciliary arch"
+   ],
+   "explain": [
+    "**眉弓　supraorbital ridge**",
+    "也可以寫：眶上緣、supraorbital margin、superciliary arch",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "眉弓"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q014.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "滑車窩 / trochlear fossa",
+   "accept": [
+    "滑車窩 / trochlear fossa",
+    "滑車窩 / trochlear fovea"
+   ],
+   "explain": [
+    "**滑車窩　trochlear fossa**",
+    "也可以寫：trochlear fovea",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "滑車窩"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q015.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "淚腺窩 / lacrimal gland fossa",
+   "accept": [
+    "淚腺窩 / lacrimal gland fossa",
+    "淚腺窩 / fossa for lacrimal gland"
+   ],
+   "explain": [
+    "**淚腺窩　lacrimal gland fossa**",
+    "也可以寫：fossa for lacrimal gland",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "淚腺窩"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q016.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眶下裂 / inferior orbital fissure",
+   "accept": [
+    "眶下裂 / inferior orbital fissure",
+    "眶下裂 / IOF",
+    "下眼窩裂 / inferior orbital fissure",
+    "下眼窩裂 / IOF"
+   ],
+   "explain": [
+    "**眶下裂　inferior orbital fissure**",
+    "也可以寫：下眼窩裂、IOF",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "眶下裂"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q017.jpg"
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "淚窩 / lacrimal fossa",
+   "accept": [
+    "淚窩 / lacrimal fossa",
+    "淚窩 / fossa for lacrimal sac",
+    "淚窩 / lacrimal sac fossa",
+    "淚囊窩 / lacrimal fossa",
+    "淚囊窩 / fossa for lacrimal sac",
+    "淚囊窩 / lacrimal sac fossa"
+   ],
+   "explain": [
+    "**淚窩　lacrimal fossa**",
+    "也可以寫：淚囊窩、fossa for lacrimal sac、lacrimal sac fossa",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "淚窩"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q018.jpg"
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "前篩孔 / anterior ethmoidal foramen",
+   "accept": [
+    "前篩孔 / anterior ethmoidal foramen",
+    "前篩孔 / anterior ethmoid foramen"
+   ],
+   "explain": [
+    "**前篩孔　anterior ethmoidal foramen**",
+    "也可以寫：anterior ethmoid foramen",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "前篩孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q019.jpg"
+   ]
+  },
+  {
+   "n": 9,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "後篩孔 / posterior ethmoidal foramen",
+   "accept": [
+    "後篩孔 / posterior ethmoidal foramen",
+    "後篩孔 / posterior ethmoid foramen"
+   ],
+   "explain": [
+    "**後篩孔　posterior ethmoidal foramen**",
+    "也可以寫：posterior ethmoid foramen",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "後篩孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q020.jpg"
+   ]
+  },
+  {
+   "n": 10,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視神經管 / optic canal",
+   "accept": [
+    "視神經管 / optic canal",
+    "視神經管 / optic foramen",
+    "視神經孔 / optic canal",
+    "視神經孔 / optic foramen"
+   ],
+   "explain": [
+    "**視神經管　optic canal**",
+    "也可以寫：視神經孔、optic foramen",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "視神經管"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q021.jpg"
+   ]
+  },
+  {
+   "n": 11,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眶上裂 / superior orbital fissure",
+   "accept": [
+    "眶上裂 / superior orbital fissure",
+    "眶上裂 / SOF",
+    "上眼窩裂 / superior orbital fissure",
+    "上眼窩裂 / SOF",
+    "上眼窩縫 / superior orbital fissure",
+    "上眼窩縫 / SOF"
+   ],
+   "explain": [
+    "**眶上裂　superior orbital fissure**",
+    "也可以寫：上眼窩裂、上眼窩縫、SOF",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "眶上裂"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q022.jpg"
+   ]
+  },
+  {
+   "n": 12,
+   "type": "fill",
+   "stem": "骨性眼眶：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "外側結節 / lateral orbital tubercle",
+   "accept": [
+    "外側結節 / lateral orbital tubercle",
+    "外側結節 / lateral tubercle",
+    "外側結節 / Whitnall's tubercle",
+    "眶外側結節 / lateral orbital tubercle",
+    "眶外側結節 / lateral tubercle",
+    "眶外側結節 / Whitnall's tubercle",
+    "Whitnall 結節 / lateral orbital tubercle",
+    "Whitnall 結節 / lateral tubercle",
+    "Whitnall 結節 / Whitnall's tubercle"
+   ],
+   "explain": [
+    "**外側結節　lateral orbital tubercle**",
+    "也可以寫：眶外側結節、Whitnall 結節、lateral tubercle、Whitnall's tubercle",
+    "（圖：OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "外側結節"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q023.jpg"
+   ]
+  }
+ ]
+}

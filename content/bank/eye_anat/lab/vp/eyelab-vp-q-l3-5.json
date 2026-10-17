@@ -1,0 +1,72 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-vp-q-l3-5",
+  "subject": "eye_anat",
+  "name": "【跑台】大腦上面觀",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・視覺路徑",
+   "矢狀切面與枕葉"
+  ],
+  "order": 124,
+  "source": "《2.視覺路徑+標號-02.pdf》第 10–13 頁；《眼解剖實驗.pdf》上課照片；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "大腦上面觀：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "大腦縱裂 / longitudinal cerebral fissure",
+   "accept": [
+    "大腦縱裂 / longitudinal cerebral fissure",
+    "大腦縱裂 / longitudinal fissure",
+    "縱裂 / longitudinal cerebral fissure",
+    "縱裂 / longitudinal fissure"
+   ],
+   "explain": [
+    "**大腦縱裂　longitudinal cerebral fissure**",
+    "中間的深縫",
+    "也可以寫：縱裂、longitudinal fissure",
+    "（圖：Servier Medical Art「Brain, superior view」（Cerveau_02），CC BY 4.0（https://smart.servier.com/））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "大腦縱裂"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q036.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "大腦上面觀：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "大腦半球 / cerebral hemisphere",
+   "accept": [
+    "大腦半球 / cerebral hemisphere",
+    "大腦半球 / hemisphere"
+   ],
+   "explain": [
+    "**大腦半球　cerebral hemisphere**",
+    "縱裂兩側",
+    "也可以寫：hemisphere",
+    "（圖：Servier Medical Art「Brain, superior view」（Cerveau_02），CC BY 4.0（https://smart.servier.com/））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "大腦半球"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q037.jpg"
+   ]
+  }
+ ]
+}

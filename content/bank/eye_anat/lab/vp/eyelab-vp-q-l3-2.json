@@ -1,0 +1,109 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-vp-q-l3-2",
+  "subject": "eye_anat",
+  "name": "【跑台】老師講義放大圖：距狀溝附近",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・視覺路徑",
+   "矢狀切面與枕葉"
+  ],
+  "order": 121,
+  "source": "《2.視覺路徑+標號-02.pdf》第 10–13 頁；《眼解剖實驗.pdf》上課照片；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "枕葉放大：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "初級視覺皮質 / primary visual cortex",
+   "accept": [
+    "初級視覺皮質 / primary visual cortex",
+    "初級視覺皮質 / striate cortex",
+    "紋狀皮質 / primary visual cortex",
+    "紋狀皮質 / striate cortex"
+   ],
+   "explain": [
+    "**初級視覺皮質　primary visual cortex**",
+    "距狀溝兩岸",
+    "也可以寫：紋狀皮質、striate cortex",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12 頁右上放大圖（枕葉距狀溝附近）；已移除講義箭頭）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "初級視覺皮質"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q029.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "枕葉放大：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "Gennari 線 / line of Gennari",
+   "accept": [
+    "Gennari 線 / line of Gennari",
+    "Gennari 線 / stria of Gennari",
+    "Gennari 線 / Gennari line",
+    "Gennari線 / line of Gennari",
+    "Gennari線 / stria of Gennari",
+    "Gennari線 / Gennari line",
+    "詹納里紋 / line of Gennari",
+    "詹納里紋 / stria of Gennari",
+    "詹納里紋 / Gennari line",
+    "條紋 / line of Gennari",
+    "條紋 / stria of Gennari",
+    "條紋 / Gennari line"
+   ],
+   "explain": [
+    "**Gennari 線　line of Gennari**",
+    "皮質裡的細白線",
+    "也可以寫：Gennari線、詹納里紋、條紋、stria of Gennari、Gennari line",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12 頁右上放大圖（枕葉距狀溝附近）；已移除講義箭頭）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "Gennari 線"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q030.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "枕葉放大：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "距狀溝 / calcarine sulcus",
+   "accept": [
+    "距狀溝 / calcarine sulcus",
+    "距狀溝 / calcarine fissure",
+    "禽距溝 / calcarine sulcus",
+    "禽距溝 / calcarine fissure"
+   ],
+   "explain": [
+    "**距狀溝　calcarine sulcus**",
+    "也可以寫：禽距溝、calcarine fissure",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12 頁右上放大圖（枕葉距狀溝附近）；已移除講義箭頭）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "距狀溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q066.jpg"
+   ]
+  }
+ ]
+}

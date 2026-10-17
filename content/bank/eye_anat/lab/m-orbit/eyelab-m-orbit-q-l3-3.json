@@ -1,0 +1,41 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-orbit-q-l3-3",
+  "subject": "eye_anat",
+  "name": "【跑台】上課標本：水平切面",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・骨質眼窩",
+   "副鼻竇"
+  ],
+  "order": 1122,
+  "source": "《新實驗手冊-01.pdf》第 1 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "上課標本：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上頷竇 / maxillary sinus",
+   "accept": [
+    "上頷竇 / maxillary sinus"
+   ],
+   "explain": [
+    "**上頷竇　maxillary sinus**",
+    "（圖：上課投影片照片（《眼解剖實驗.pdf》第 21 頁：8. 鼻淚管、9. 上頷竇；水平切面標本）；已移除箭頭）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "副鼻竇",
+    "上頷竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-orbit/q048.jpg"
+   ]
+  }
+ ]
+}

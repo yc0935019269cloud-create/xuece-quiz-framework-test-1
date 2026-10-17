@@ -1,0 +1,74 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-brain-q-l2-3",
+  "subject": "eye_anat",
+  "name": "【跑台】橋腦橫切",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・腦幹與神經",
+   "腦幹切片：神經核"
+  ],
+  "order": 1512,
+  "source": "《新實驗手冊-01.pdf》第 8 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "橋腦切片：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "外旋神經核 / abducens nucleus",
+   "accept": [
+    "外旋神經核 / abducens nucleus",
+    "外旋神經核 / abducent nucleus",
+    "外旋神經核 / nucleus of abducent nerve",
+    "外旋神經核 / nucleus of abducens nerve",
+    "外展神經核 / abducens nucleus",
+    "外展神經核 / abducent nucleus",
+    "外展神經核 / nucleus of abducent nerve",
+    "外展神經核 / nucleus of abducens nerve"
+   ],
+   "explain": [
+    "**外旋神經核　abducens nucleus**",
+    "也可以寫：外展神經核、abducent nucleus、nucleus of abducent nerve、nucleus of abducens nerve",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "腦幹切片：神經核",
+    "外旋神經核"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q012.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "橋腦切片：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "顏面神經核 / facial nucleus",
+   "accept": [
+    "顏面神經核 / facial nucleus",
+    "顏面神經核 / nucleus of facial nerve"
+   ],
+   "explain": [
+    "**顏面神經核　facial nucleus**",
+    "也可以寫：nucleus of facial nerve",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "腦幹切片：神經核",
+    "顏面神經核"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q013.jpg"
+   ]
+  }
+ ]
+}

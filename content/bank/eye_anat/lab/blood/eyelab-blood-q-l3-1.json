@@ -1,0 +1,143 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-blood-q-l3-1",
+  "subject": "eye_anat",
+  "name": "【跑台】睫狀動脈（Gray）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・血液供應",
+   "眼球的血管：睫狀動脈、辛氏環、眼底"
+  ],
+  "order": 320,
+  "source": "《眼球的血液供應與網膜血管構造與功能》講義；《新實驗手冊-01.pdf》第 4 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "睫狀動脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "睫狀後短動脈 / short posterior ciliary artery",
+   "accept": [
+    "睫狀後短動脈 / short posterior ciliary artery",
+    "後短睫狀動脈 / short posterior ciliary artery"
+   ],
+   "explain": [
+    "**睫狀後短動脈　short posterior ciliary artery**",
+    "也可以寫：後短睫狀動脈",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "睫狀後短動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q025.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "睫狀動脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "睫狀後長動脈 / long posterior ciliary artery",
+   "accept": [
+    "睫狀後長動脈 / long posterior ciliary artery",
+    "後長睫狀動脈 / long posterior ciliary artery"
+   ],
+   "explain": [
+    "**睫狀後長動脈　long posterior ciliary artery**",
+    "也可以寫：後長睫狀動脈",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "睫狀後長動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q026.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "睫狀動脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "睫狀前動脈 / anterior ciliary artery",
+   "accept": [
+    "睫狀前動脈 / anterior ciliary artery",
+    "前睫狀動脈 / anterior ciliary artery"
+   ],
+   "explain": [
+    "**睫狀前動脈　anterior ciliary artery**",
+    "也可以寫：前睫狀動脈",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "睫狀前動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q027.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "睫狀動脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "睫狀前靜脈 / anterior ciliary vein",
+   "accept": [
+    "睫狀前靜脈 / anterior ciliary vein",
+    "前睫狀靜脈 / anterior ciliary vein"
+   ],
+   "explain": [
+    "**睫狀前靜脈　anterior ciliary vein**",
+    "也可以寫：前睫狀靜脈",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "睫狀前靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q028.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "睫狀動脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "虹膜大動脈環 / major arterial circle of iris",
+   "accept": [
+    "虹膜大動脈環 / major arterial circle of iris",
+    "虹膜大動脈環 / major arterial circle"
+   ],
+   "explain": [
+    "**虹膜大動脈環　major arterial circle of iris**",
+    "也可以寫：major arterial circle",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "虹膜大動脈環"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q029.jpg"
+   ]
+  }
+ ]
+}

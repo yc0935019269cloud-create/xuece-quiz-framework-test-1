@@ -1,0 +1,42 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-vp-q-l3-6",
+  "subject": "eye_anat",
+  "name": "【跑台】腦室系統",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・視覺路徑",
+   "矢狀切面與枕葉"
+  ],
+  "order": 125,
+  "source": "《2.視覺路徑+標號-02.pdf》第 10–13 頁；《眼解剖實驗.pdf》上課照片；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "腦室：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "側腦室 / lateral ventricle",
+   "accept": [
+    "側腦室 / lateral ventricle"
+   ],
+   "explain": [
+    "**側腦室　lateral ventricle**",
+    "半球裡的 C 形空腔",
+    "（圖：BodyParts3D[1] by DBCLS.，Wikimedia Commons「Human ventricular system - left side view.png」，CC BY-SA 2.1 jp（https://commons.wikimedia.org/wiki/File:Human_ventricular_system_-_left_side_view.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "側腦室"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q038.jpg"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-vp-q-l1-2",
+  "subject": "eye_anat",
+  "name": "【跑台】眼底照",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・視覺路徑",
+   "視神經：眼球到視交叉"
+  ],
+  "order": 101,
+  "source": "《2.視覺路徑+標號-02.pdf》第 10–13 頁；《眼解剖實驗.pdf》上課照片；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "眼底：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視神經盤 / optic disc",
+   "accept": [
+    "視神經盤 / optic disc",
+    "視神經盤 / optic disk",
+    "視神經盤 / optic papilla",
+    "視神經盤 / optic nerve head",
+    "視乳突 / optic disc",
+    "視乳突 / optic disk",
+    "視乳突 / optic papilla",
+    "視乳突 / optic nerve head",
+    "視神經乳頭 / optic disc",
+    "視神經乳頭 / optic disk",
+    "視神經乳頭 / optic papilla",
+    "視神經乳頭 / optic nerve head",
+    "視盤 / optic disc",
+    "視盤 / optic disk",
+    "視盤 / optic papilla",
+    "視盤 / optic nerve head"
+   ],
+   "explain": [
+    "**視神經盤　optic disc**",
+    "橘黃圓盤；沒有感光細胞＝生理盲點",
+    "也可以寫：視乳突、視神經乳頭、視盤、optic disk、optic papilla、optic nerve head",
+    "（圖：Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "視神經：眼球到視交叉",
+    "視神經盤"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q058.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "眼底：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "黃斑部 / macula",
+   "accept": [
+    "黃斑部 / macula",
+    "黃斑部 / macula lutea",
+    "黃斑 / macula",
+    "黃斑 / macula lutea"
+   ],
+   "explain": [
+    "**黃斑部　macula**",
+    "視神經盤的顳側",
+    "也可以寫：黃斑、macula lutea",
+    "（圖：Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "視神經：眼球到視交叉",
+    "黃斑部"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q004.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "眼底：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "中央小凹 / fovea",
+   "accept": [
+    "中央小凹 / fovea",
+    "中央小凹 / fovea centralis",
+    "小窩 / fovea",
+    "小窩 / fovea centralis",
+    "中心小凹 / fovea",
+    "中心小凹 / fovea centralis"
+   ],
+   "explain": [
+    "**中央小凹　fovea**",
+    "黃斑正中央",
+    "也可以寫：小窩、中心小凹、fovea centralis",
+    "（圖：Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "視神經：眼球到視交叉",
+    "中央小凹"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/vp/q005.jpg"
+   ]
+  }
+ ]
+}

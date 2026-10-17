@@ -1,0 +1,66 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-orbit-q-l3-2",
+  "subject": "eye_anat",
+  "name": "【跑台】鼻腔矢狀面",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・骨質眼窩",
+   "副鼻竇"
+  ],
+  "order": 1121,
+  "source": "《新實驗手冊-01.pdf》第 1 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "鼻腔矢狀面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "額竇 / frontal sinus",
+   "accept": [
+    "額竇 / frontal sinus"
+   ],
+   "explain": [
+    "**額竇　frontal sinus**",
+    "（圖：Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "副鼻竇",
+    "額竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q026.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "鼻腔矢狀面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "蝶竇 / sphenoidal sinus",
+   "accept": [
+    "蝶竇 / sphenoidal sinus",
+    "蝶竇 / sphenoid sinus"
+   ],
+   "explain": [
+    "**蝶竇　sphenoidal sinus**",
+    "也可以寫：sphenoid sinus",
+    "（圖：Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "副鼻竇",
+    "蝶竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q027.jpg"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-blood-q-l3-4",
+  "subject": "eye_anat",
+  "name": "【跑台】渦靜脈（Gray，眼球後面觀）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・血液供應",
+   "眼球的血管：睫狀動脈、辛氏環、眼底"
+  ],
+  "order": 323,
+  "source": "《眼球的血液供應與網膜血管構造與功能》講義；《新實驗手冊-01.pdf》第 4 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "眼球後面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "渦靜脈 / vortex vein",
+   "accept": [
+    "渦靜脈 / vortex vein",
+    "渦靜脈 / vorticose vein",
+    "螺旋靜脈 / vortex vein",
+    "螺旋靜脈 / vorticose vein"
+   ],
+   "explain": [
+    "**渦靜脈　vortex vein**",
+    "赤道後方",
+    "也可以寫：螺旋靜脈、vorticose vein",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray874.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray874.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼球的血管：睫狀動脈、辛氏環、眼底",
+    "渦靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q040.jpg"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-lid-q-l2-3",
+  "subject": "eye_anat",
+  "name": "【跑台】活體眼睛",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・眼瞼與眼外肌",
+   "眼瞼"
+  ],
+  "order": 1212,
+  "source": "《新實驗手冊-01.pdf》第 2 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "活體眼睛：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眼瞼 / eyelid",
+   "accept": [
+    "眼瞼 / eyelid",
+    "眼瞼 / palpebra"
+   ],
+   "explain": [
+    "**眼瞼　eyelid**",
+    "也可以寫：palpebra",
+    "（圖：Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼瞼",
+    "眼瞼"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q019.jpg"
+   ]
+  }
+ ]
+}

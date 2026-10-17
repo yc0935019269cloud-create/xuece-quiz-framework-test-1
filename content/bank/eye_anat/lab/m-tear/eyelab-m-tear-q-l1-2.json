@@ -1,0 +1,42 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-tear-q-l1-2",
+  "subject": "eye_anat",
+  "name": "【跑台】上課標本：水平切面（8. 鼻淚管）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・淚液系統",
+   "淚器與神經"
+  ],
+  "order": 1601,
+  "source": "《新實驗手冊-01.pdf》第 10 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "上課標本：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "鼻淚管 / nasolacrimal duct",
+   "accept": [
+    "鼻淚管 / nasolacrimal duct"
+   ],
+   "explain": [
+    "**鼻淚管　nasolacrimal duct**",
+    "老師投影片 8",
+    "（圖：上課投影片照片（《眼解剖實驗.pdf》第 21 頁：8. 鼻淚管、9. 上頷竇；水平切面標本）；已移除箭頭）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 10 頁：淚液系統",
+    "淚器與神經",
+    "鼻淚管"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-tear/q010.jpg"
+   ]
+  }
+ ]
+}

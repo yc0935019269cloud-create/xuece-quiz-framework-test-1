@@ -1,0 +1,337 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-orbit-q-l4-2",
+  "subject": "eye_anat",
+  "name": "【跑台】圖譜第 2 頁：頭骨左側觀",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・骨質眼窩",
+   "頭骨底面與側面"
+  ],
+  "order": 231,
+  "source": "《1.骨質眼窩+圖譜+2026-01.pdf》第 1–8 頁；《新實驗手冊-01.pdf》第 1 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "鱗狀縫 / squamous suture",
+   "accept": [
+    "鱗狀縫 / squamous suture"
+   ],
+   "explain": [
+    "**鱗狀縫　squamous suture**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "鱗狀縫"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q061.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "蝶骨大翼 / greater wing of sphenoid bone",
+   "accept": [
+    "蝶骨大翼 / greater wing of sphenoid bone",
+    "蝶骨大翼 / greater wing of sphenoid",
+    "蝶骨大翼 / greater sphenoid wing",
+    "蝶骨大翼 / greater wing"
+   ],
+   "explain": [
+    "**蝶骨大翼　greater wing of sphenoid bone**",
+    "也可以寫：greater wing of sphenoid、greater sphenoid wing、greater wing",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "蝶骨大翼"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q062.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "淚骨 / lacrimal bone",
+   "accept": [
+    "淚骨 / lacrimal bone"
+   ],
+   "explain": [
+    "**淚骨　lacrimal bone**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "淚骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q063.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "篩骨 / ethmoid bone",
+   "accept": [
+    "篩骨 / ethmoid bone",
+    "篩骨 / ethmoid"
+   ],
+   "explain": [
+    "**篩骨　ethmoid bone**",
+    "也可以寫：ethmoid",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "篩骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q064.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眶下孔 / infraorbital foramen",
+   "accept": [
+    "眶下孔 / infraorbital foramen"
+   ],
+   "explain": [
+    "**眶下孔　infraorbital foramen**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "眶下孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q065.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上頷骨 / maxilla",
+   "accept": [
+    "上頷骨 / maxilla",
+    "上頷骨 / maxillary bone",
+    "上頜骨 / maxilla",
+    "上頜骨 / maxillary bone",
+    "上顎骨 / maxilla",
+    "上顎骨 / maxillary bone"
+   ],
+   "explain": [
+    "**上頷骨　maxilla**",
+    "也可以寫：上頜骨、上顎骨、maxillary bone",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "上頷骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q066.jpg"
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "下頷窩 / mandibular fossa",
+   "accept": [
+    "下頷窩 / mandibular fossa",
+    "下頜窩 / mandibular fossa"
+   ],
+   "explain": [
+    "**下頷窩　mandibular fossa**",
+    "也可以寫：下頜窩",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "下頷窩"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q067.jpg"
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "外耳道 / external acoustic meatus",
+   "accept": [
+    "外耳道 / external acoustic meatus",
+    "外耳道 / external auditory meatus"
+   ],
+   "explain": [
+    "**外耳道　external acoustic meatus**",
+    "也可以寫：external auditory meatus",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "外耳道"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q068.jpg"
+   ]
+  },
+  {
+   "n": 9,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "枕骨 / occipital bone",
+   "accept": [
+    "枕骨 / occipital bone"
+   ],
+   "explain": [
+    "**枕骨　occipital bone**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "枕骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q069.jpg"
+   ]
+  },
+  {
+   "n": 10,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "乳突 / mastoid process",
+   "accept": [
+    "乳突 / mastoid process"
+   ],
+   "explain": [
+    "**乳突　mastoid process**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "乳突"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q137.jpg"
+   ]
+  },
+  {
+   "n": 11,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "莖突 / styloid process",
+   "accept": [
+    "莖突 / styloid process"
+   ],
+   "explain": [
+    "**莖突　styloid process**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "莖突"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q138.jpg"
+   ]
+  },
+  {
+   "n": 12,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "顳骨顴突 / zygomatic process of temporal bone",
+   "accept": [
+    "顳骨顴突 / zygomatic process of temporal bone",
+    "顳骨顴突 / zygomatic process"
+   ],
+   "explain": [
+    "**顳骨顴突　zygomatic process of temporal bone**",
+    "也可以寫：zygomatic process",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "顳骨顴突"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q139.jpg"
+   ]
+  },
+  {
+   "n": 13,
+   "type": "fill",
+   "stem": "頭骨側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "顴骨顳突 / temporal process of zygomatic bone",
+   "accept": [
+    "顴骨顳突 / temporal process of zygomatic bone",
+    "顴骨顳突 / temporal process"
+   ],
+   "explain": [
+    "**顴骨顳突　temporal process of zygomatic bone**",
+    "也可以寫：temporal process",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 2 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭骨底面與側面",
+    "顴骨顳突"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q140.jpg"
+   ]
+  }
+ ]
+}

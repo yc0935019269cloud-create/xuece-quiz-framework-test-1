@@ -1,0 +1,91 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-vessel-q-l4-1",
+  "subject": "eye_anat",
+  "name": "【跑台】眼靜脈側面觀",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・血管系統",
+   "靜脈與海綿竇"
+  ],
+  "order": 1330,
+  "source": "《新實驗手冊-01.pdf》第 4 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "眼靜脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上眼靜脈 / superior ophthalmic vein",
+   "accept": [
+    "上眼靜脈 / superior ophthalmic vein",
+    "眼上靜脈 / superior ophthalmic vein"
+   ],
+   "explain": [
+    "**上眼靜脈　superior ophthalmic vein**",
+    "也可以寫：眼上靜脈",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "靜脈與海綿竇",
+    "上眼靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q041.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "眼靜脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "下眼靜脈 / inferior ophthalmic vein",
+   "accept": [
+    "下眼靜脈 / inferior ophthalmic vein",
+    "眼下靜脈 / inferior ophthalmic vein"
+   ],
+   "explain": [
+    "**下眼靜脈　inferior ophthalmic vein**",
+    "也可以寫：眼下靜脈",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "靜脈與海綿竇",
+    "下眼靜脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q042.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "眼靜脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "海綿竇 / cavernous sinus",
+   "accept": [
+    "海綿竇 / cavernous sinus"
+   ],
+   "explain": [
+    "**海綿竇　cavernous sinus**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "靜脈與海綿竇",
+    "海綿竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q043.jpg"
+   ]
+  }
+ ]
+}

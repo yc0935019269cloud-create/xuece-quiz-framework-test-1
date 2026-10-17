@@ -1,0 +1,231 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-vp-q-l3-1",
+  "subject": "eye_anat",
+  "name": "【跑台】老師講義正中矢狀切面",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・視覺路徑",
+   "矢狀切面與枕葉"
+  ],
+  "order": 120,
+  "source": "《2.視覺路徑+標號-02.pdf》第 10–13 頁；《眼解剖實驗.pdf》上課照片；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "矢狀切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視交叉 / optic chiasm",
+   "accept": [
+    "視交叉 / optic chiasm",
+    "視交叉 / optic chiasma"
+   ],
+   "explain": [
+    "**視交叉　optic chiasm**",
+    "腦下垂體正上方",
+    "也可以寫：optic chiasma",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "視交叉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q021.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "矢狀切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "腦下垂體 / pituitary gland",
+   "accept": [
+    "腦下垂體 / pituitary gland",
+    "腦下垂體 / pituitary",
+    "腦下垂體 / hypophysis",
+    "腦垂體 / pituitary gland",
+    "腦垂體 / pituitary",
+    "腦垂體 / hypophysis",
+    "垂體 / pituitary gland",
+    "垂體 / pituitary",
+    "垂體 / hypophysis"
+   ],
+   "explain": [
+    "**腦下垂體　pituitary gland**",
+    "蝶鞍裡的小球",
+    "也可以寫：腦垂體、垂體、pituitary、hypophysis",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "腦下垂體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q022.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "矢狀切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "蝶鞍 / sella turcica",
+   "accept": [
+    "蝶鞍 / sella turcica"
+   ],
+   "explain": [
+    "**蝶鞍　sella turcica**",
+    "托住腦下垂體的骨凹槽",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "蝶鞍"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q023.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "矢狀切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "蝶竇 / sphenoidal sinus",
+   "accept": [
+    "蝶竇 / sphenoidal sinus",
+    "蝶竇 / sphenoid sinus"
+   ],
+   "explain": [
+    "**蝶竇　sphenoidal sinus**",
+    "蝶鞍正下方的空腔（標本 14 號）",
+    "也可以寫：sphenoid sinus",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "蝶竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q024.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "矢狀切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "頂枕溝 / parieto-occipital sulcus",
+   "accept": [
+    "頂枕溝 / parieto-occipital sulcus",
+    "頂枕溝 / parietooccipital sulcus"
+   ],
+   "explain": [
+    "**頂枕溝　parieto-occipital sulcus**",
+    "枕葉內側往上斜",
+    "也可以寫：parietooccipital sulcus",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "頂枕溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q025.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "矢狀切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "距狀溝 / calcarine sulcus",
+   "accept": [
+    "距狀溝 / calcarine sulcus",
+    "距狀溝 / calcarine fissure",
+    "禽距溝 / calcarine sulcus",
+    "禽距溝 / calcarine fissure"
+   ],
+   "explain": [
+    "**距狀溝　calcarine sulcus**",
+    "枕葉內側前後走",
+    "也可以寫：禽距溝、calcarine fissure",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "距狀溝"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q026.jpg"
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "矢狀切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "楔葉 / cuneus",
+   "accept": [
+    "楔葉 / cuneus",
+    "楔狀葉 / cuneus"
+   ],
+   "explain": [
+    "**楔葉　cuneus**",
+    "兩溝之間（大致位置）",
+    "也可以寫：楔狀葉",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "楔葉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q027.jpg"
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "矢狀切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "舌回 / lingual gyrus",
+   "accept": [
+    "舌回 / lingual gyrus"
+   ],
+   "explain": [
+    "**舌回　lingual gyrus**",
+    "距狀溝下方（大致位置）",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "矢狀切面與枕葉",
+    "舌回"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q028.jpg"
+   ]
+  }
+ ]
+}

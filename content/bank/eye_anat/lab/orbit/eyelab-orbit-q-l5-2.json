@@ -1,0 +1,110 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-orbit-q-l5-2",
+  "subject": "eye_anat",
+  "name": "【跑台】圖譜第 6 頁：頭骨上面觀",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・骨質眼窩",
+   "頭頂、後面、鼻腔與鼻竇"
+  ],
+  "order": 241,
+  "source": "《1.骨質眼窩+圖譜+2026-01.pdf》第 1–8 頁；《新實驗手冊-01.pdf》第 1 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "頭骨上面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "矢狀縫 / sagittal suture",
+   "accept": [
+    "矢狀縫 / sagittal suture"
+   ],
+   "explain": [
+    "**矢狀縫　sagittal suture**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 6 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭頂、後面、鼻腔與鼻竇",
+    "矢狀縫"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q141.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "頭骨上面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "冠狀縫 / coronal suture",
+   "accept": [
+    "冠狀縫 / coronal suture"
+   ],
+   "explain": [
+    "**冠狀縫　coronal suture**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 6 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭頂、後面、鼻腔與鼻竇",
+    "冠狀縫"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q080.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "頭骨上面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "頂骨 / parietal bone",
+   "accept": [
+    "頂骨 / parietal bone"
+   ],
+   "explain": [
+    "**頂骨　parietal bone**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 6 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭頂、後面、鼻腔與鼻竇",
+    "頂骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q142.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "頭骨上面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "額骨 / frontal bone",
+   "accept": [
+    "額骨 / frontal bone"
+   ],
+   "explain": [
+    "**額骨　frontal bone**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 6 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭頂、後面、鼻腔與鼻竇",
+    "額骨"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/orbit/q081.jpg"
+   ]
+  }
+ ]
+}

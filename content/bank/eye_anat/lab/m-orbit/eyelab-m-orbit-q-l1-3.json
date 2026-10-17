@@ -1,0 +1,95 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-orbit-q-l1-3",
+  "subject": "eye_anat",
+  "name": "【跑台】蝶骨上面觀",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・骨質眼窩",
+   "眼眶的骨"
+  ],
+  "order": 1102,
+  "source": "《新實驗手冊-01.pdf》第 1 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "蝶骨：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "蝶骨小翼 / lesser wing of sphenoid bone",
+   "accept": [
+    "蝶骨小翼 / lesser wing of sphenoid bone",
+    "蝶骨小翼 / lesser wing of sphenoid",
+    "蝶骨小翼 / lesser sphenoid wing",
+    "蝶骨小翼 / lesser wing"
+   ],
+   "explain": [
+    "**蝶骨小翼　lesser wing of sphenoid bone**",
+    "也可以寫：lesser wing of sphenoid、lesser sphenoid wing、lesser wing",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 8 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "眼眶的骨",
+    "蝶骨小翼"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-orbit/q042.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "蝶骨：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "蝶骨大翼 / greater wing of sphenoid bone",
+   "accept": [
+    "蝶骨大翼 / greater wing of sphenoid bone",
+    "蝶骨大翼 / greater wing of sphenoid",
+    "蝶骨大翼 / greater sphenoid wing",
+    "蝶骨大翼 / greater wing"
+   ],
+   "explain": [
+    "**蝶骨大翼　greater wing of sphenoid bone**",
+    "也可以寫：greater wing of sphenoid、greater sphenoid wing、greater wing",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 8 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "眼眶的骨",
+    "蝶骨大翼"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-orbit/q043.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "蝶骨：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "蝶鞍 / sella turcica",
+   "accept": [
+    "蝶鞍 / sella turcica"
+   ],
+   "explain": [
+    "**蝶鞍　sella turcica**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 8 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "眼眶的骨",
+    "蝶鞍"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-orbit/q011.jpg"
+   ]
+  }
+ ]
+}

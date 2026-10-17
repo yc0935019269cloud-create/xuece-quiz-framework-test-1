@@ -1,0 +1,1660 @@
+{
+ "schema": "xd-glossary/1",
+ "id": "eye-anatomy",
+ "title": "眼解剖名詞字源",
+ "entries": [
+  {
+   "id": "optic",
+   "match": [
+    "optic"
+   ],
+   "zh": "視覺的",
+   "en": "optic",
+   "parts": [
+    [
+     "optic",
+     "希臘 optikos「跟視覺有關的」；op- ＝看（同字根：optometry 視光學、optician 配鏡師）"
+    ]
+   ],
+   "note": "英文解剖名詞看到 optic，中文幾乎都以「視」開頭：optic nerve 視神經、optic chiasm 視交叉、optic tract 視束、optic radiation 視放射。",
+   "rel": ""
+  },
+  {
+   "id": "retina",
+   "match": [
+    "視網膜",
+    "retina"
+   ],
+   "zh": "視網膜",
+   "en": "retina",
+   "parts": [
+    [
+     "retina",
+     "中世紀拉丁文，多半認為來自 rete「網子」——古人看到它表面的血管像一張網"
+    ]
+   ],
+   "note": "眼球最內層、接收光的神經組織；感光細胞把光變成神經訊號。",
+   "rel": "訊號由神經節細胞的軸突集合成視神經離開眼球。"
+  },
+  {
+   "id": "nasal-retina",
+   "match": [
+    "鼻側視網膜",
+    "nasal retina"
+   ],
+   "zh": "鼻側視網膜",
+   "en": "nasal retina",
+   "parts": [
+    [
+     "nasal",
+     "拉丁 nasus「鼻子」"
+    ],
+    [
+     "retina",
+     "網膜"
+    ]
+   ],
+   "note": "靠鼻子那一半的視網膜，負責看外側（顳側）的視野。",
+   "rel": "纖維在視交叉交叉到對側 → 腦下垂體腫瘤壓視交叉會傷到它（雙顳側偏盲）。"
+  },
+  {
+   "id": "temporal-retina",
+   "match": [
+    "顳側視網膜",
+    "temporal retina"
+   ],
+   "zh": "顳側視網膜",
+   "en": "temporal retina",
+   "parts": [
+    [
+     "temporal",
+     "拉丁 tempus「時間」→ 太陽穴（最早長白髮、透露年紀的地方）"
+    ],
+    [
+     "retina",
+     "網膜"
+    ]
+   ],
+   "note": "靠耳朵那一半的視網膜，負責看內側（鼻側）的視野；纖維不交叉、留在同側。",
+   "rel": ""
+  },
+  {
+   "id": "macula",
+   "match": [
+    "黃斑部",
+    "黃斑",
+    "macula"
+   ],
+   "zh": "黃斑部",
+   "en": "macula (lutea)",
+   "parts": [
+    [
+     "macula",
+     "拉丁「斑點」"
+    ],
+    [
+     "lutea",
+     "拉丁「黃色的」→ 黃斑"
+    ]
+   ],
+   "note": "視網膜後極、顳側的一塊區域，錐細胞最多，負責清楚的中心視力。",
+   "rel": "在視神經盤的顳側；正中央是中央小凹。"
+  },
+  {
+   "id": "fovea",
+   "match": [
+    "中央小凹",
+    "小窩",
+    "fovea"
+   ],
+   "zh": "中央小凹",
+   "en": "fovea",
+   "parts": [
+    [
+     "fovea",
+     "拉丁「小坑、小凹洞」"
+    ]
+   ],
+   "note": "黃斑正中央的小凹，只有錐細胞、沒有視網膜血管，視力最好。",
+   "rel": ""
+  },
+  {
+   "id": "optic-nerve",
+   "match": [
+    "視神經",
+    "optic nerve",
+    "CN II"
+   ],
+   "zh": "視神經（第 II 對腦神經）",
+   "en": "optic nerve",
+   "parts": [
+    [
+     "optic",
+     "視覺的（希臘 optikos）"
+    ],
+    [
+     "nerve",
+     "拉丁 nervus「筋、腱」——古人把白色的神經和肌腱看成同一類"
+    ]
+   ],
+   "note": "把視網膜的訊號送往腦的第 II 對腦神經；其實是腦的延伸（中樞神經），外面包著腦膜。",
+   "rel": "從視神經盤出發，經視神經管進顱內，到視交叉為止；分眼內、眶內、管內、顱內四段。"
+  },
+  {
+   "id": "optic-disc",
+   "match": [
+    "視神經盤",
+    "optic disc",
+    "optic disk"
+   ],
+   "zh": "視神經盤",
+   "en": "optic disc",
+   "parts": [
+    [
+     "optic",
+     "視覺的"
+    ],
+    [
+     "disc",
+     "希臘 diskos「圓盤」（同字根：disk 光碟）"
+    ]
+   ],
+   "note": "眼底看到的明亮橘黃色圓盤，視網膜所有神經纖維在這裡集合、穿出眼球。沒有感光細胞 → 生理盲點。",
+   "rel": "同一個地方從切面看像小突起，所以也叫視乳突（optic papilla）；視網膜中央動脈、靜脈從這裡進出。"
+  },
+  {
+   "id": "optic-papilla",
+   "match": [
+    "視乳突",
+    "optic papilla",
+    "papilla"
+   ],
+   "zh": "視乳突",
+   "en": "optic papilla",
+   "parts": [
+    [
+     "papilla",
+     "拉丁「小乳頭、小突起」→ 乳突"
+    ]
+   ],
+   "note": "就是視神經盤：從切面看，神經離開眼球處稍微突起，所以叫「乳突」。",
+   "rel": "腦壓升高時這裡會腫起來＝視乳突水腫（papilledema）。"
+  },
+  {
+   "id": "blind-spot",
+   "match": [
+    "生理盲點",
+    "盲點",
+    "blind spot",
+    "physiological blind spot"
+   ],
+   "zh": "生理盲點",
+   "en": "physiological blind spot",
+   "parts": [
+    [
+     "physiological",
+     "希臘 physis（自然）＋ logos（學問）→ 生理的、正常就有的"
+    ],
+    [
+     "blind spot",
+     "看不見的點"
+    ]
+   ],
+   "note": "視野中看不到的一小塊（離中心約 15°、在顳側），因為對應的視神經盤沒有感光細胞。",
+   "rel": "盤是構造，盲點是視野區域，兩者別混用。"
+  },
+  {
+   "id": "intraocular",
+   "match": [
+    "眼內段",
+    "intraocular segment",
+    "intraocular"
+   ],
+   "zh": "視神經眼內段",
+   "en": "intraocular segment",
+   "parts": [
+    [
+     "intra-",
+     "拉丁「在…裡面」"
+    ],
+    [
+     "ocular",
+     "拉丁 oculus「眼睛」（同字根：binocular 雙眼的）"
+    ]
+   ],
+   "note": "視神經在眼球壁裡的一小段，約 1 mm，就是視神經盤；篩板前沒有髓鞘。",
+   "rel": ""
+  },
+  {
+   "id": "intraorbital",
+   "match": [
+    "眶內段",
+    "眼窩內段",
+    "intraorbital segment",
+    "intraorbital"
+   ],
+   "zh": "視神經眶內段（眼窩內段）",
+   "en": "intraorbital segment",
+   "parts": [
+    [
+     "intra-",
+     "在…裡面"
+    ],
+    [
+     "orbital",
+     "拉丁 orbita「車輪壓出的軌道、圓圈」→ 眼眶（圓圓的骨窩）"
+    ]
+   ],
+   "note": "眼球後面到視神經管口，約 25 mm，四段中最長；彎曲有餘裕，眼球轉動不會拉扯。",
+   "rel": ""
+  },
+  {
+   "id": "intracanalicular",
+   "match": [
+    "管內段",
+    "intracanalicular segment",
+    "intracanalicular"
+   ],
+   "zh": "視神經管內段",
+   "en": "intracanalicular segment",
+   "parts": [
+    [
+     "intra-",
+     "在…裡面"
+    ],
+    [
+     "canal",
+     "拉丁 canalis「管子、水道」"
+    ],
+    [
+     "-icular",
+     "「小的」→ 小管的"
+    ]
+   ],
+   "note": "躺在視神經管裡的一段，約 4–10 mm；被骨頭固定，頭部外傷時最容易受傷。",
+   "rel": ""
+  },
+  {
+   "id": "intracranial",
+   "match": [
+    "顱內段",
+    "intracranial segment",
+    "intracranial"
+   ],
+   "zh": "視神經顱內段",
+   "en": "intracranial segment",
+   "parts": [
+    [
+     "intra-",
+     "在…裡面"
+    ],
+    [
+     "cranial",
+     "希臘 kranion「頭顱」"
+    ]
+   ],
+   "note": "出了視神經管到視交叉之前，約 10 mm。",
+   "rel": "下方靠近蝶鞍與腦下垂體，旁邊是頸內動脈。"
+  },
+  {
+   "id": "optic-canal",
+   "match": [
+    "視神經管",
+    "視神經孔",
+    "optic canal",
+    "optic foramen"
+   ],
+   "zh": "視神經管（視神經孔）",
+   "en": "optic canal",
+   "parts": [
+    [
+     "optic",
+     "視覺的"
+    ],
+    [
+     "canal",
+     "拉丁 canalis「管子」；foramen＝拉丁「孔、洞」"
+    ]
+   ],
+   "note": "蝶骨小翼上的一條骨管，連通眼眶與顱內。",
+   "rel": "通過：視神經＋眼動脈。"
+  },
+  {
+   "id": "lamina-cribrosa",
+   "match": [
+    "篩板",
+    "lamina cribrosa"
+   ],
+   "zh": "（鞏膜）篩板",
+   "en": "lamina cribrosa",
+   "parts": [
+    [
+     "lamina",
+     "拉丁「薄片、薄板」"
+    ],
+    [
+     "cribrosa",
+     "拉丁 cribrum「篩子」→ 有很多小洞的"
+    ]
+   ],
+   "note": "鞏膜在視神經穿出處的一片多孔薄板，神經纖維從小洞穿出。",
+   "rel": "篩板前的纖維沒有髓鞘、篩板後才有 → 球後的視神經變粗；青光眼時篩板會被壓凹。"
+  },
+  {
+   "id": "myelin",
+   "match": [
+    "髓鞘",
+    "myelin sheath",
+    "myelin"
+   ],
+   "zh": "髓鞘",
+   "en": "myelin sheath",
+   "parts": [
+    [
+     "myelin",
+     "希臘 myelos「骨髓」——最早在骨髓般白亮的神經組織中發現"
+    ],
+    [
+     "sheath",
+     "英文「刀鞘、外套」"
+    ]
+   ],
+   "note": "包在軸突外面的脂質「絕緣膠帶」，讓訊號跳躍式傳導、比較快；有髓鞘的部分看起來是白色（白質）。",
+   "rel": ""
+  },
+  {
+   "id": "meninges",
+   "match": [
+    "腦膜",
+    "meninges"
+   ],
+   "zh": "腦膜",
+   "en": "meninges",
+   "parts": [
+    [
+     "meninx",
+     "希臘「膜」"
+    ]
+   ],
+   "note": "包住腦和脊髓的三層膜：硬腦膜、蛛網膜、軟腦膜；也一路延伸包住視神經。",
+   "rel": ""
+  },
+  {
+   "id": "dura",
+   "match": [
+    "硬腦膜",
+    "dura mater"
+   ],
+   "zh": "硬腦膜",
+   "en": "dura mater",
+   "parts": [
+    [
+     "dura",
+     "拉丁「硬的」（同字根：durable 耐用的）"
+    ],
+    [
+     "mater",
+     "拉丁「母親」——中世紀從阿拉伯醫學翻譯而來，把包住腦的膜稱作「母親」"
+    ]
+   ],
+   "note": "三層腦膜最外面、最厚最硬的一層；延伸包住視神經形成視神經鞘。",
+   "rel": "上課投影片「2. 硬腦膜」就是指視神經外面那一圈。"
+  },
+  {
+   "id": "arachnoid",
+   "match": [
+    "蛛網膜",
+    "arachnoid"
+   ],
+   "zh": "蛛網膜",
+   "en": "arachnoid mater",
+   "parts": [
+    [
+     "arachne",
+     "希臘「蜘蛛」"
+    ],
+    [
+     "-oid",
+     "「像…的」"
+    ]
+   ],
+   "note": "中間層，下面的腔隙有細絲連著，看起來像蜘蛛網；腦脊髓液在它下面流。",
+   "rel": ""
+  },
+  {
+   "id": "pia",
+   "match": [
+    "軟腦膜",
+    "pia mater"
+   ],
+   "zh": "軟腦膜",
+   "en": "pia mater",
+   "parts": [
+    [
+     "pia",
+     "拉丁「溫柔的、虔誠的」"
+    ],
+    [
+     "mater",
+     "母親"
+    ]
+   ],
+   "note": "最內層、最薄，緊貼腦和視神經表面。",
+   "rel": ""
+  },
+  {
+   "id": "chiasm",
+   "match": [
+    "視交叉",
+    "optic chiasm",
+    "chiasm",
+    "chiasma"
+   ],
+   "zh": "視交叉",
+   "en": "optic chiasm",
+   "parts": [
+    [
+     "optic",
+     "視覺的"
+    ],
+    [
+     "chiasm",
+     "希臘 chiasma「交叉擺成 X」，來自希臘字母 χ（chi）"
+    ]
+   ],
+   "note": "兩條視神經會合成 X 形的地方；鼻側視網膜纖維在這裡交叉到對側，顳側不交叉。",
+   "rel": "正下方是腦下垂體（在蝶鞍裡）；壓到中間 → 雙顳側偏盲。"
+  },
+  {
+   "id": "optic-tract",
+   "match": [
+    "視束",
+    "視徑",
+    "optic tract"
+   ],
+   "zh": "視束（視徑）",
+   "en": "optic tract",
+   "parts": [
+    [
+     "optic",
+     "視覺的"
+    ],
+    [
+     "tract",
+     "拉丁 tractus「拉出來的一條路」（同字根：tractor 拖拉機）→ 一束同方向走的纖維"
+    ]
+   ],
+   "note": "視交叉之後的纖維束：帶著兩眼、同一半邊視野的纖維，往後外繞過大腦腳。",
+   "rel": "終點是外側膝狀體；少部分分出去到上丘／頂蓋前區做反射。老師講義寫「視徑」。"
+  },
+  {
+   "id": "lgn",
+   "match": [
+    "外側膝狀體核",
+    "外側膝狀體",
+    "外側膝狀核",
+    "lateral geniculate body",
+    "lateral geniculate nucleus",
+    "lateral geniculate nuclei",
+    "LGN"
+   ],
+   "zh": "外側膝狀體",
+   "en": "lateral geniculate body／nucleus (LGN)",
+   "parts": [
+    [
+     "lateral",
+     "拉丁 latus「側邊」→ 外側"
+    ],
+    [
+     "geniculate",
+     "拉丁 genu「膝蓋」＋ -culum「小」→ 彎得像膝蓋（同字根：genuflect 屈膝）"
+    ],
+    [
+     "body／nucleus",
+     "體／核（細胞聚集處）"
+    ]
+   ],
+   "note": "視丘裡的視覺轉運站，切面有 6 層、彎成膝蓋狀；視束在這裡換神經元，再由視放射送到枕葉。",
+   "rel": "血液：前脈絡叢動脈＋大腦後動脈分支。旁邊的內側膝狀體管聽覺。"
+  },
+  {
+   "id": "mgn",
+   "match": [
+    "內側膝狀體",
+    "medial geniculate body"
+   ],
+   "zh": "內側膝狀體",
+   "en": "medial geniculate body",
+   "parts": [
+    [
+     "medial",
+     "拉丁 medius「中間」→ 內側"
+    ],
+    [
+     "geniculate",
+     "像膝蓋"
+    ]
+   ],
+   "note": "視丘裡的聽覺轉運站（不是視覺），容易和外側膝狀體搞混。",
+   "rel": ""
+  },
+  {
+   "id": "thalamus",
+   "match": [
+    "丘腦",
+    "視丘",
+    "thalamus"
+   ],
+   "zh": "丘腦（視丘）",
+   "en": "thalamus",
+   "parts": [
+    [
+     "thalamus",
+     "希臘 thalamos「內室、臥房」——深藏在大腦中央"
+    ]
+   ],
+   "note": "大腦深處的感覺轉運中心；外側膝狀體就是它的一部分。",
+   "rel": "舊稱 thalamus opticus（視丘），因為早期認為它和視覺關係密切。"
+  },
+  {
+   "id": "sc",
+   "match": [
+    "上丘",
+    "superior colliculus",
+    "superior colliculi"
+   ],
+   "zh": "上丘",
+   "en": "superior colliculus",
+   "parts": [
+    [
+     "superior",
+     "拉丁「上面的」"
+    ],
+    [
+     "colliculus",
+     "拉丁 collis「山丘」＋ -culus「小」→ 小山丘"
+    ]
+   ],
+   "note": "中腦背面上方那對小隆起，負責視覺反射（眼睛轉向突然出現的東西）。",
+   "rel": "「上視下聽」：下丘管聽覺。視束少部分纖維經上丘臂到這附近的頂蓋前區做瞳孔對光反射。"
+  },
+  {
+   "id": "ic",
+   "match": [
+    "下丘",
+    "inferior colliculus",
+    "inferior colliculi"
+   ],
+   "zh": "下丘",
+   "en": "inferior colliculus",
+   "parts": [
+    [
+     "inferior",
+     "拉丁「下面的」"
+    ],
+    [
+     "colliculus",
+     "小山丘"
+    ]
+   ],
+   "note": "中腦背面下方那對小隆起，聽覺路徑的轉運站。",
+   "rel": ""
+  },
+  {
+   "id": "pretectal",
+   "match": [
+    "頂蓋前核",
+    "頂蓋前區",
+    "pretectal nucleus",
+    "pretectal"
+   ],
+   "zh": "頂蓋前核",
+   "en": "pretectal nucleus",
+   "parts": [
+    [
+     "pre-",
+     "「前面」"
+    ],
+    [
+     "tectum",
+     "拉丁「屋頂」→ 中腦背面的頂蓋"
+    ]
+   ],
+   "note": "在上丘前方，瞳孔對光反射的中繼站：接收視束纖維，再送到兩側 E-W 核。",
+   "rel": ""
+  },
+  {
+   "id": "ew",
+   "match": [
+    "E-W 核",
+    "EW 核",
+    "Edinger–Westphal nucleus",
+    "Edinger-Westphal nucleus",
+    "Edinger–Westphal"
+   ],
+   "zh": "E-W 核（愛丁格–魏斯法爾核）",
+   "en": "Edinger–Westphal nucleus",
+   "parts": [
+    [
+     "Edinger",
+     "德國神經解剖學家 Ludwig Edinger"
+    ],
+    [
+     "Westphal",
+     "德國神經科醫師 Carl Westphal"
+    ]
+   ],
+   "note": "中腦裡動眼神經的副交感核：管縮瞳（瞳孔括約肌）與調節（睫狀肌）。",
+   "rel": "緊貼動眼神經核；纖維隨 CN III 到睫狀神經節換元。"
+  },
+  {
+   "id": "cn3",
+   "match": [
+    "動眼神經",
+    "oculomotor nerve",
+    "CN III"
+   ],
+   "zh": "動眼神經（第 III 對腦神經）",
+   "en": "oculomotor nerve",
+   "parts": [
+    [
+     "oculo-",
+     "拉丁 oculus「眼睛」"
+    ],
+    [
+     "motor",
+     "拉丁「使…動的」→ 讓眼睛動"
+    ]
+   ],
+   "note": "支配大部分眼外肌（上直、下直、內直、下斜）與提上眼瞼肌，並帶副交感纖維去縮瞳與調節。",
+   "rel": ""
+  },
+  {
+   "id": "ciliary-ganglion",
+   "match": [
+    "睫狀神經節",
+    "ciliary ganglion"
+   ],
+   "zh": "睫狀神經節",
+   "en": "ciliary ganglion",
+   "parts": [
+    [
+     "ciliary",
+     "拉丁 cilium「睫毛」——睫狀突一排排像睫毛"
+    ],
+    [
+     "ganglion",
+     "希臘「腫塊、結」→ 神經節（神經細胞聚成的小結）"
+    ]
+   ],
+   "note": "眼眶內的副交感神經節：E-W 核來的纖維在這裡換元，再經睫狀短神經到瞳孔括約肌與睫狀肌。",
+   "rel": ""
+  },
+  {
+   "id": "ciliary-muscle",
+   "match": [
+    "睫狀肌",
+    "ciliary muscle"
+   ],
+   "zh": "睫狀肌",
+   "en": "ciliary muscle",
+   "parts": [
+    [
+     "ciliary",
+     "睫毛狀的"
+    ],
+    [
+     "muscle",
+     "拉丁 musculus「小老鼠」——肌肉收縮時像皮下有小老鼠在動"
+    ]
+   ],
+   "note": "睫狀體裡的平滑肌；收縮 → 懸韌帶放鬆 → 水晶體變厚 → 看近（調節）。",
+   "rel": ""
+  },
+  {
+   "id": "sphincter",
+   "match": [
+    "瞳孔括約肌",
+    "pupillary sphincter",
+    "sphincter pupillae"
+   ],
+   "zh": "瞳孔括約肌",
+   "en": "sphincter pupillae",
+   "parts": [
+    [
+     "sphincter",
+     "希臘 sphinkter「綁緊的帶子」→ 環狀、收緊的肌肉"
+    ],
+    [
+     "pupillae",
+     "瞳孔的"
+    ]
+   ],
+   "note": "虹膜裡環狀的平滑肌，收縮 → 瞳孔縮小；由副交感（CN III）支配。",
+   "rel": ""
+  },
+  {
+   "id": "pupil",
+   "match": [
+    "瞳孔",
+    "pupil"
+   ],
+   "zh": "瞳孔",
+   "en": "pupil",
+   "parts": [
+    [
+     "pupil",
+     "拉丁 pupilla「小娃娃」——看著別人的瞳孔，會看到自己縮小的倒影"
+    ]
+   ],
+   "note": "虹膜中央的開口，大小由括約肌與擴大肌控制。",
+   "rel": ""
+  },
+  {
+   "id": "medial-rectus",
+   "match": [
+    "內直肌",
+    "medial rectus"
+   ],
+   "zh": "內直肌",
+   "en": "medial rectus",
+   "parts": [
+    [
+     "medial",
+     "內側"
+    ],
+    [
+     "rectus",
+     "拉丁「直的」"
+    ]
+   ],
+   "note": "讓眼球往內（往鼻側）轉；看近時兩眼內直肌一起收縮＝內聚。由動眼神經支配。",
+   "rel": ""
+  },
+  {
+   "id": "pituitary",
+   "match": [
+    "腦下垂體",
+    "pituitary gland",
+    "pituitary",
+    "hypophysis"
+   ],
+   "zh": "腦下垂體",
+   "en": "pituitary gland（hypophysis）",
+   "parts": [
+    [
+     "pituitary",
+     "拉丁 pituita「黏液」——古人以為它分泌鼻涕流到鼻腔"
+    ],
+    [
+     "hypophysis",
+     "希臘 hypo-（下）＋ physis（生長）→ 長在下面 → 下垂體"
+    ]
+   ],
+   "note": "內分泌的總司令，坐在蝶鞍裡，以漏斗（垂體柄）連到下視丘。",
+   "rel": "位在視交叉正下方：腫瘤往上長 → 壓視交叉中間 → 雙顳側偏盲。"
+  },
+  {
+   "id": "sella",
+   "match": [
+    "蝶鞍",
+    "sella turcica"
+   ],
+   "zh": "蝶鞍",
+   "en": "sella turcica",
+   "parts": [
+    [
+     "sella",
+     "拉丁「馬鞍、椅子」"
+    ],
+    [
+     "turcica",
+     "拉丁「土耳其的」→ 土耳其馬鞍（前後高、中間凹）"
+    ]
+   ],
+   "note": "蝶骨體上方的凹槽，托住腦下垂體。",
+   "rel": "在蝶骨上，所以中文叫「蝶」鞍；下面是蝶竇。"
+  },
+  {
+   "id": "sphenoid",
+   "match": [
+    "蝶骨",
+    "sphenoid"
+   ],
+   "zh": "蝶骨",
+   "en": "sphenoid bone",
+   "parts": [
+    [
+     "sphen",
+     "希臘「楔子」"
+    ],
+    [
+     "-oid",
+     "像…的 → 像楔子一樣卡在顱底中央"
+    ]
+   ],
+   "note": "顱底中央的骨頭；中文叫「蝶」是因為從前面看像展翅的蝴蝶（大翼、小翼）。",
+   "rel": "上面有蝶鞍、視神經管（小翼）；眶上裂在大小翼之間。"
+  },
+  {
+   "id": "infundibulum",
+   "match": [
+    "漏斗",
+    "垂體柄",
+    "infundibulum"
+   ],
+   "zh": "漏斗（垂體柄）",
+   "en": "infundibulum",
+   "parts": [
+    [
+     "infundibulum",
+     "拉丁「漏斗」（in-＋fundere 倒進去）"
+    ]
+   ],
+   "note": "連接下視丘與腦下垂體的柄，就在視交叉後方。",
+   "rel": ""
+  },
+  {
+   "id": "mammillary",
+   "match": [
+    "乳頭體",
+    "mammillary body"
+   ],
+   "zh": "乳頭體",
+   "en": "mammillary body",
+   "parts": [
+    [
+     "mammillary",
+     "拉丁 mamilla「小乳頭」"
+    ]
+   ],
+   "note": "下視丘底面一對小圓突，在漏斗後方；看腦底面時是找視交叉的路標之一。",
+   "rel": ""
+  },
+  {
+   "id": "bitemporal",
+   "match": [
+    "雙顳側偏盲",
+    "bitemporal hemianopia",
+    "bitemporal hemianopsia"
+   ],
+   "zh": "雙顳側偏盲",
+   "en": "bitemporal hemianopia",
+   "parts": [
+    [
+     "bi-",
+     "兩個"
+    ],
+    [
+     "temporal",
+     "顳側（太陽穴那側）"
+    ],
+    [
+     "hemi-",
+     "一半"
+    ],
+    [
+     "an-",
+     "沒有"
+    ],
+    [
+     "-opia",
+     "希臘 ops「眼、視力」"
+    ]
+   ],
+   "note": "兩眼的外側（顳側）半邊視野都看不到。",
+   "rel": "視交叉中間被壓（典型是腦下垂體腫瘤），交叉的鼻側纖維受傷。"
+  },
+  {
+   "id": "quadrantanopia",
+   "match": [
+    "象限盲",
+    "上象限盲",
+    "下象限盲",
+    "quadrantanopia",
+    "quadrantanopsia"
+   ],
+   "zh": "象限盲",
+   "en": "quadrantanopia",
+   "parts": [
+    [
+     "quadrant",
+     "拉丁 quadrans「四分之一」"
+    ],
+    [
+     "an- ＋ -opia",
+     "看不到"
+    ]
+   ],
+   "note": "視野四分之一看不到。",
+   "rel": "顳葉（梅氏環）受傷 → 對側上象限（pie in the sky）；頂葉（鮑氏環）受傷 → 對側下象限（pie on the floor）。"
+  },
+  {
+   "id": "hemianopia",
+   "match": [
+    "同向偏盲",
+    "homonymous hemianopia",
+    "hemianopia"
+   ],
+   "zh": "偏盲",
+   "en": "hemianopia",
+   "parts": [
+    [
+     "hemi-",
+     "一半"
+    ],
+    [
+     "an-",
+     "沒有"
+    ],
+    [
+     "-opia",
+     "視力"
+    ]
+   ],
+   "note": "半邊視野看不到。視交叉之後的病灶 → 對側同向偏盲（兩眼同一邊）。",
+   "rel": ""
+  },
+  {
+   "id": "radiation",
+   "match": [
+    "視放射",
+    "optic radiation",
+    "optic radiations"
+   ],
+   "zh": "視放射",
+   "en": "optic radiation",
+   "parts": [
+    [
+     "optic",
+     "視覺的"
+    ],
+    [
+     "radiation",
+     "拉丁 radiare「放出光芒」（同字根：radio、radius）→ 像光芒一樣散開"
+    ]
+   ],
+   "note": "從外側膝狀體散開到枕葉視覺皮質的纖維（白質）。",
+   "rel": "下半路繞進顳葉＝梅氏環；上半路經頂葉＝鮑氏環；緊貼側腦室外側壁。"
+  },
+  {
+   "id": "meyer",
+   "match": [
+    "梅氏環",
+    "Meyer's loop",
+    "Meyer’s loop",
+    "Meyer loop"
+   ],
+   "zh": "梅氏環",
+   "en": "Meyer's loop",
+   "parts": [
+    [
+     "Meyer",
+     "人名：瑞士裔美國精神科醫師 Adolf Meyer → 音譯「梅」"
+    ],
+    [
+     "loop",
+     "環、迴圈"
+    ]
+   ],
+   "note": "視放射的下方纖維先往前繞進顳葉（繞過側腦室下角），再往後走。帶下方視網膜 → 上方視野。",
+   "rel": "顳葉受傷 → 對側上象限盲（pie in the sky）。"
+  },
+  {
+   "id": "baum",
+   "match": [
+    "鮑氏環",
+    "Baum's loop",
+    "Baum’s loop"
+   ],
+   "zh": "鮑氏環",
+   "en": "Baum's loop",
+   "parts": [
+    [
+     "Baum",
+     "人名 → 音譯「鮑」"
+    ],
+    [
+     "loop",
+     "環、迴圈"
+    ]
+   ],
+   "note": "視放射的上方纖維，較直接地經過頂葉到枕葉。帶上方視網膜 → 下方視野。",
+   "rel": "頂葉受傷 → 對側下象限盲（pie on the floor）。"
+  },
+  {
+   "id": "lv",
+   "match": [
+    "側腦室",
+    "lateral ventricle",
+    "lateral ventricles"
+   ],
+   "zh": "側腦室",
+   "en": "lateral ventricle",
+   "parts": [
+    [
+     "lateral",
+     "外側（左右各一）"
+    ],
+    [
+     "ventricle",
+     "拉丁 ventriculus「小肚子」（venter 肚子）→ 腦裡裝腦脊髓液的「室」"
+    ]
+   ],
+   "note": "大腦半球裡 C 形的空腔，有前角、後角（枕角）、下角（顳角）。",
+   "rel": "視放射貼著它的外側壁往後走；梅氏環繞過下角上方。"
+  },
+  {
+   "id": "cortex",
+   "match": [
+    "皮質",
+    "cortex"
+   ],
+   "zh": "皮質",
+   "en": "cortex",
+   "parts": [
+    [
+     "cortex",
+     "拉丁「樹皮」→ 大腦最外層"
+    ]
+   ],
+   "note": "大腦表層的灰質，神經細胞本體聚集處。",
+   "rel": ""
+  },
+  {
+   "id": "vc",
+   "match": [
+    "視覺皮質",
+    "visual cortex"
+   ],
+   "zh": "視覺皮質",
+   "en": "visual cortex",
+   "parts": [
+    [
+     "visual",
+     "拉丁 visus「看」（同字根：vision、visible）"
+    ],
+    [
+     "cortex",
+     "樹皮 → 大腦表層"
+    ]
+   ],
+   "note": "枕葉處理視覺的皮質，包括初級視覺皮質（V1）與周圍的視覺聯合皮質。",
+   "rel": ""
+  },
+  {
+   "id": "v1",
+   "match": [
+    "初級視覺皮質",
+    "primary visual cortex"
+   ],
+   "zh": "初級視覺皮質（V1）",
+   "en": "primary visual cortex",
+   "parts": [
+    [
+     "primary",
+     "拉丁 primus「第一」→ 第一個接收"
+    ],
+    [
+     "V1",
+     "visual area 1 視覺第一區"
+    ]
+   ],
+   "note": "最先接收視放射的皮質，在枕葉內側距狀溝的上下兩岸；處理亮暗、邊緣、方向。",
+   "rel": "別名：紋狀皮質、Brodmann 17 區；招牌是 Gennari 線。黃斑對應在枕極，佔很大面積。"
+  },
+  {
+   "id": "striate",
+   "match": [
+    "紋狀皮質",
+    "striate cortex"
+   ],
+   "zh": "紋狀皮質",
+   "en": "striate cortex",
+   "parts": [
+    [
+     "striate",
+     "拉丁 striatus「有條紋的」"
+    ]
+   ],
+   "note": "初級視覺皮質的別名：切開看得到一條白線（Gennari 線）所以叫「紋狀」。",
+   "rel": ""
+  },
+  {
+   "id": "area17",
+   "match": [
+    "17 區",
+    "第17區",
+    "Brodmann 17",
+    "Brodmann area 17",
+    "area 17"
+   ],
+   "zh": "Brodmann 第 17 區",
+   "en": "Brodmann area 17",
+   "parts": [
+    [
+     "Brodmann",
+     "德國神經學家 Korbinian Brodmann，1909 年依顯微構造把大腦皮質編成 52 區"
+    ]
+   ],
+   "note": "就是初級視覺皮質（V1）。周圍的 18、19 區是視覺聯合皮質。",
+   "rel": ""
+  },
+  {
+   "id": "vac",
+   "match": [
+    "視覺聯合皮質",
+    "visual association cortex"
+   ],
+   "zh": "視覺聯合皮質",
+   "en": "visual association cortex",
+   "parts": [
+    [
+     "association",
+     "拉丁 associare「結合、聯合」"
+    ]
+   ],
+   "note": "V1 周圍的高階視覺區（Brodmann 18、19 區），把形狀、顏色、動作組合起來「認出」東西；近反射也要用到它。",
+   "rel": ""
+  },
+  {
+   "id": "gennari",
+   "match": [
+    "Gennari 線",
+    "Gennari線",
+    "詹納里紋",
+    "line of Gennari",
+    "stria of Gennari",
+    "Gennari"
+   ],
+   "zh": "Gennari 線",
+   "en": "line／stria of Gennari",
+   "parts": [
+    [
+     "Gennari",
+     "義大利醫學生 Francesco Gennari，1776 年在切片上第一個看到"
+    ],
+    [
+     "stria",
+     "拉丁「條紋」"
+    ]
+   ],
+   "note": "初級視覺皮質第 4 層裡一條肉眼可見的白線（有髓鞘的纖維），讓這區看起來有條紋。",
+   "rel": "有這條線 → 就是紋狀皮質（V1）。"
+  },
+  {
+   "id": "gray",
+   "match": [
+    "灰質",
+    "gray matter",
+    "grey matter"
+   ],
+   "zh": "灰質",
+   "en": "gray matter",
+   "parts": [
+    [
+     "gray matter",
+     "神經細胞本體多、髓鞘少 → 顏色偏灰"
+    ]
+   ],
+   "note": "大腦表層皮質與深部神經核；相對的「白質」是有髓鞘的纖維（例如視放射）。",
+   "rel": ""
+  },
+  {
+   "id": "white",
+   "match": [
+    "白質",
+    "white matter"
+   ],
+   "zh": "白質",
+   "en": "white matter",
+   "parts": [
+    [
+     "white matter",
+     "有髓鞘的神經纖維聚集 → 白色"
+    ]
+   ],
+   "note": "大腦內部的纖維束，例如視放射。",
+   "rel": ""
+  },
+  {
+   "id": "calcarine",
+   "match": [
+    "距狀溝",
+    "禽距溝",
+    "calcarine sulcus",
+    "calcarine fissure",
+    "calcarine"
+   ],
+   "zh": "距狀溝（禽距溝）",
+   "en": "calcarine sulcus",
+   "parts": [
+    [
+     "calcar",
+     "拉丁「距」——公雞腳後面的尖刺；這條溝在側腦室後角壓出的隆起叫「禽距 calcar avis」"
+    ],
+    [
+     "sulcus",
+     "拉丁「犁出來的溝」"
+    ]
+   ],
+   "note": "枕葉內側、前後走向的深溝，初級視覺皮質排在它的上下兩岸。",
+   "rel": "上岸楔葉、下岸舌回；前端和頂枕溝會合成 Y 字形。"
+  },
+  {
+   "id": "pos",
+   "match": [
+    "頂枕溝",
+    "parieto-occipital sulcus",
+    "parietooccipital sulcus"
+   ],
+   "zh": "頂枕溝",
+   "en": "parieto-occipital sulcus",
+   "parts": [
+    [
+     "parieto-",
+     "拉丁 paries「牆」→ 頂（頭的牆）"
+    ],
+    [
+     "occipital",
+     "枕（後腦勺）"
+    ],
+    [
+     "sulcus",
+     "溝"
+    ]
+   ],
+   "note": "大腦內側面分開頂葉與枕葉的斜溝。",
+   "rel": "和距狀溝之間夾著楔葉。"
+  },
+  {
+   "id": "cuneus",
+   "match": [
+    "楔葉",
+    "楔狀葉",
+    "cuneus"
+   ],
+   "zh": "楔葉（楔狀葉）",
+   "en": "cuneus",
+   "parts": [
+    [
+     "cuneus",
+     "拉丁「楔子」（同字根：cuneiform 楔形文字）"
+    ]
+   ],
+   "note": "夾在頂枕溝與距狀溝之間的三角形腦回（像楔子）。",
+   "rel": "屬於距狀溝上岸 → 收上方視網膜、管下方視野。"
+  },
+  {
+   "id": "lingual",
+   "match": [
+    "舌回",
+    "lingual gyrus"
+   ],
+   "zh": "舌回",
+   "en": "lingual gyrus",
+   "parts": [
+    [
+     "lingual",
+     "拉丁 lingua「舌頭」（同字根：language、bilingual）"
+    ],
+    [
+     "gyrus",
+     "希臘 gyros「圓圈」→ 腦表面隆起的皺褶＝回"
+    ]
+   ],
+   "note": "距狀溝下方、長得像舌頭的腦回。",
+   "rel": "距狀溝下岸 → 收下方視網膜、管上方視野。"
+  },
+  {
+   "id": "gyrus",
+   "match": [
+    "腦回",
+    "gyrus",
+    "gyri"
+   ],
+   "zh": "回（腦回）",
+   "en": "gyrus",
+   "parts": [
+    [
+     "gyrus",
+     "希臘 gyros「圓圈」→ 凸起的皺褶"
+    ]
+   ],
+   "note": "大腦表面凸起的皺褶；凹下去的叫溝（sulcus）。",
+   "rel": ""
+  },
+  {
+   "id": "sulcus",
+   "match": [
+    "sulcus",
+    "sulci"
+   ],
+   "zh": "溝",
+   "en": "sulcus",
+   "parts": [
+    [
+     "sulcus",
+     "拉丁「犁出來的溝」"
+    ]
+   ],
+   "note": "大腦表面凹下去的線；比較深的叫裂（fissure）。",
+   "rel": ""
+  },
+  {
+   "id": "fissure",
+   "match": [
+    "fissure"
+   ],
+   "zh": "裂",
+   "en": "fissure",
+   "parts": [
+    [
+     "fissure",
+     "拉丁 findere「劈開」"
+    ]
+   ],
+   "note": "比溝更深的縫，例如大腦縱裂、外側裂。",
+   "rel": ""
+  },
+  {
+   "id": "lobe",
+   "match": [
+    "lobe",
+    "腦葉"
+   ],
+   "zh": "葉（腦葉）",
+   "en": "lobe",
+   "parts": [
+    [
+     "lobe",
+     "希臘 lobos「圓垂下來的一塊」（同字根：earlobe 耳垂）"
+    ]
+   ],
+   "note": "大腦依位置分成額葉、頂葉、顳葉、枕葉等。",
+   "rel": ""
+  },
+  {
+   "id": "occipital",
+   "match": [
+    "枕葉",
+    "occipital lobe"
+   ],
+   "zh": "枕葉",
+   "en": "occipital lobe",
+   "parts": [
+    [
+     "occipital",
+     "拉丁 occiput：ob-（後面）＋ caput（頭）→ 後腦勺，躺下時枕著的地方"
+    ]
+   ],
+   "note": "大腦最後面的葉，視覺皮質所在。",
+   "rel": "內側有距狀溝、頂枕溝、楔葉、舌回；血液主要來自大腦後動脈。"
+  },
+  {
+   "id": "parietal",
+   "match": [
+    "頂葉",
+    "parietal lobe"
+   ],
+   "zh": "頂葉",
+   "en": "parietal lobe",
+   "parts": [
+    [
+     "parietal",
+     "拉丁 paries「牆壁」→ 頭顱的牆，在頭頂"
+    ]
+   ],
+   "note": "中央溝後方、頭頂的葉，管身體感覺。",
+   "rel": "鮑氏環經過這裡 → 受傷造成對側下象限盲。"
+  },
+  {
+   "id": "temporal",
+   "match": [
+    "顳葉",
+    "temporal lobe"
+   ],
+   "zh": "顳葉",
+   "en": "temporal lobe",
+   "parts": [
+    [
+     "temporal",
+     "拉丁 tempus「時間」→ 太陽穴（最早長白髮、透露年紀）"
+    ]
+   ],
+   "note": "太陽穴內側、外側溝下方的葉，管聽覺與記憶。",
+   "rel": "梅氏環繞進這裡 → 受傷造成對側上象限盲。"
+  },
+  {
+   "id": "frontal",
+   "match": [
+    "額葉",
+    "frontal lobe"
+   ],
+   "zh": "額葉",
+   "en": "frontal lobe",
+   "parts": [
+    [
+     "frontal",
+     "拉丁 frons「額頭」"
+    ]
+   ],
+   "note": "最前面的葉，管計畫、運動；額葉眼區控制眼球隨意運動。",
+   "rel": ""
+  },
+  {
+   "id": "central-sulcus",
+   "match": [
+    "中央溝",
+    "central sulcus"
+   ],
+   "zh": "中央溝",
+   "en": "central sulcus",
+   "parts": [
+    [
+     "central",
+     "中央"
+    ],
+    [
+     "sulcus",
+     "溝"
+    ]
+   ],
+   "note": "大腦外側面上下走向的溝，分開額葉（前）與頂葉（後）。",
+   "rel": "舊稱 Rolando 溝。"
+  },
+  {
+   "id": "lateral-sulcus",
+   "match": [
+    "外側溝",
+    "lateral sulcus",
+    "外側裂"
+   ],
+   "zh": "外側溝",
+   "en": "lateral sulcus",
+   "parts": [
+    [
+     "lateral",
+     "外側"
+    ],
+    [
+     "sulcus",
+     "溝"
+    ]
+   ],
+   "note": "大腦外側面的深溝，把顳葉和上面的額葉、頂葉分開。舊稱 Sylvius 裂。",
+   "rel": ""
+  },
+  {
+   "id": "longitudinal",
+   "match": [
+    "大腦縱裂",
+    "longitudinal cerebral fissure",
+    "longitudinal fissure"
+   ],
+   "zh": "大腦縱裂",
+   "en": "longitudinal cerebral fissure",
+   "parts": [
+    [
+     "longitudinal",
+     "拉丁 longitudo「長度」→ 前後縱向"
+    ],
+    [
+     "fissure",
+     "拉丁 findere「劈開」→ 比溝深的裂"
+    ]
+   ],
+   "note": "從前到後把左右大腦半球分開的深縫。",
+   "rel": "初級視覺皮質就在縫的兩旁（半球內側面）。"
+  },
+  {
+   "id": "hemisphere",
+   "match": [
+    "大腦半球",
+    "cerebral hemisphere",
+    "hemisphere"
+   ],
+   "zh": "大腦半球",
+   "en": "cerebral hemisphere",
+   "parts": [
+    [
+     "hemi-",
+     "一半"
+    ],
+    [
+     "sphere",
+     "希臘 sphaira「球」"
+    ],
+    [
+     "cerebral",
+     "拉丁 cerebrum「大腦」"
+    ]
+   ],
+   "note": "大腦被縱裂分成的左右兩半；一側半球處理對側的視野。",
+   "rel": ""
+  },
+  {
+   "id": "midbrain",
+   "match": [
+    "中腦",
+    "midbrain",
+    "mesencephalon"
+   ],
+   "zh": "中腦",
+   "en": "midbrain（mesencephalon）",
+   "parts": [
+    [
+     "mes-",
+     "希臘 mesos「中間」"
+    ],
+    [
+     "encephalon",
+     "希臘「頭裡面的東西」→ 腦"
+    ]
+   ],
+   "note": "腦幹最上段；背面有上丘、下丘，裡面有動眼神經核與 E-W 核。",
+   "rel": "水平切面標本上那個中間有小洞（中腦導水管）的圓形斷面就是它。"
+  },
+  {
+   "id": "plr",
+   "match": [
+    "瞳孔對光反射",
+    "對光反射",
+    "pupillary light reflex",
+    "light reflex"
+   ],
+   "zh": "瞳孔對光反射",
+   "en": "pupillary light reflex",
+   "parts": [
+    [
+     "pupillary",
+     "瞳孔的"
+    ],
+    [
+     "reflex",
+     "拉丁 reflectere「彎回去」→ 訊號進來後自動彎回去產生反應"
+    ]
+   ],
+   "note": "照光 → 瞳孔縮小；照一眼兩眼都縮（直接＋間接反應）。",
+   "rel": "路徑：視神經 → 視束 → 頂蓋前核 → 兩側 E-W 核 → CN III → 睫狀神經節 → 瞳孔括約肌；不經 LGN、不經枕葉。"
+  },
+  {
+   "id": "near-reflex",
+   "match": [
+    "近反射",
+    "近反應三聯",
+    "near reflex",
+    "near triad"
+   ],
+   "zh": "近反射（近反應三聯）",
+   "en": "near reflex",
+   "parts": [
+    [
+     "near",
+     "近"
+    ],
+    [
+     "triad",
+     "希臘 trias「三個一組」"
+    ]
+   ],
+   "note": "看近物時同時發生：內聚＋調節＋縮瞳。",
+   "rel": "要先經過視覺皮質判斷影像模糊，再到中腦。"
+  },
+  {
+   "id": "accommodation",
+   "match": [
+    "調節",
+    "accommodation"
+   ],
+   "zh": "調節",
+   "en": "accommodation",
+   "parts": [
+    [
+     "accommodation",
+     "拉丁 accommodare「使適合」→ 讓焦距適合近物"
+    ]
+   ],
+   "note": "睫狀肌收縮、水晶體變厚，對焦近物。",
+   "rel": ""
+  },
+  {
+   "id": "convergence",
+   "match": [
+    "內聚",
+    "convergence"
+   ],
+   "zh": "內聚（集合）",
+   "en": "convergence",
+   "parts": [
+    [
+     "con-",
+     "一起"
+    ],
+    [
+     "vergere",
+     "拉丁「轉向」"
+    ]
+   ],
+   "note": "兩眼一起往內轉看近物，靠內直肌。",
+   "rel": ""
+  },
+  {
+   "id": "miosis",
+   "match": [
+    "縮瞳",
+    "miosis"
+   ],
+   "zh": "縮瞳",
+   "en": "miosis",
+   "parts": [
+    [
+     "miosis",
+     "希臘 meiosis「變小」"
+    ]
+   ],
+   "note": "瞳孔縮小；相反是散瞳（mydriasis）。",
+   "rel": ""
+  }
+ ]
+}

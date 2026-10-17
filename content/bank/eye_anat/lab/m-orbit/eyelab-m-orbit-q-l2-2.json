@@ -1,0 +1,124 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-orbit-q-l2-2",
+  "subject": "eye_anat",
+  "name": "【跑台】頭骨前面觀",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・骨質眼窩",
+   "孔、裂、窩"
+  ],
+  "order": 1111,
+  "source": "《新實驗手冊-01.pdf》第 1 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "頭骨前面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眶上孔 / supraorbital foramen",
+   "accept": [
+    "眶上孔 / supraorbital foramen",
+    "眶上孔 / supraorbital notch",
+    "眶上切跡 / supraorbital foramen",
+    "眶上切跡 / supraorbital notch"
+   ],
+   "explain": [
+    "**眶上孔　supraorbital foramen**",
+    "也可以寫：眶上切跡、supraorbital notch",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "眶上孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-orbit/q044.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "頭骨前面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眶下孔 / infraorbital foramen",
+   "accept": [
+    "眶下孔 / infraorbital foramen"
+   ],
+   "explain": [
+    "**眶下孔　infraorbital foramen**",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "眶下孔"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-orbit/q045.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "頭骨前面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眶上裂 / superior orbital fissure",
+   "accept": [
+    "眶上裂 / superior orbital fissure",
+    "眶上裂 / SOF",
+    "上眼窩裂 / superior orbital fissure",
+    "上眼窩裂 / SOF",
+    "上眼窩縫 / superior orbital fissure",
+    "上眼窩縫 / SOF"
+   ],
+   "explain": [
+    "**眶上裂　superior orbital fissure**",
+    "也可以寫：上眼窩裂、上眼窩縫、SOF",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "眶上裂"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-orbit/q046.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "頭骨前面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眶下裂 / inferior orbital fissure",
+   "accept": [
+    "眶下裂 / inferior orbital fissure",
+    "眶下裂 / IOF",
+    "下眼窩裂 / inferior orbital fissure",
+    "下眼窩裂 / IOF"
+   ],
+   "explain": [
+    "**眶下裂　inferior orbital fissure**",
+    "也可以寫：下眼窩裂、IOF",
+    "（圖：老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "孔、裂、窩",
+    "眶下裂"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-orbit/q047.jpg"
+   ]
+  }
+ ]
+}

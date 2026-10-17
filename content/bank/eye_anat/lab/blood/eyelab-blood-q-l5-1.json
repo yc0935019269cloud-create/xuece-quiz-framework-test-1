@@ -1,0 +1,117 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-blood-q-l5-1",
+  "subject": "eye_anat",
+  "name": "【跑台】頸外動脈與分支",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・血液供應",
+   "頸外動脈與眼瞼血管"
+  ],
+  "order": 340,
+  "source": "《眼球的血液供應與網膜血管構造與功能》講義；《新實驗手冊-01.pdf》第 4 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "頸外動脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "頸外動脈 / external carotid artery",
+   "accept": [
+    "頸外動脈 / external carotid artery",
+    "外頸動脈 / external carotid artery"
+   ],
+   "explain": [
+    "**頸外動脈　external carotid artery**",
+    "也可以寫：外頸動脈",
+    "（圖：Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "頸外動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q054.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "頸外動脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上頷動脈 / maxillary artery",
+   "accept": [
+    "上頷動脈 / maxillary artery",
+    "頷動脈 / maxillary artery",
+    "上頜動脈 / maxillary artery"
+   ],
+   "explain": [
+    "**上頷動脈　maxillary artery**",
+    "也可以寫：頷動脈、上頜動脈",
+    "（圖：Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "上頷動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q055.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "頸外動脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "顏面動脈 / facial artery",
+   "accept": [
+    "顏面動脈 / facial artery"
+   ],
+   "explain": [
+    "**顏面動脈　facial artery**",
+    "（圖：Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "顏面動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q056.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "頸外動脈圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "淺顳動脈 / superficial temporal artery",
+   "accept": [
+    "淺顳動脈 / superficial temporal artery",
+    "顳淺動脈 / superficial temporal artery"
+   ],
+   "explain": [
+    "**淺顳動脈　superficial temporal artery**",
+    "也可以寫：顳淺動脈",
+    "（圖：Mikael Häggström. When using this image in external works, it may be cited as:  Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「External carotid artery.png」，Public domain（https://commons.wikimedia.org/wiki/File:External_carotid_artery.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "頸外動脈與眼瞼血管",
+    "淺顳動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q057.jpg"
+   ]
+  }
+ ]
+}

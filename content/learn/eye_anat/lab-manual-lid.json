@@ -1,0 +1,989 @@
+{
+ "schema": "xd-learn/1",
+ "id": "eyelab-m-lid",
+ "subject": "eye_anat",
+ "style": "atlas",
+ "unit": "手冊第 2 頁：眼瞼與眼外肌",
+ "title": "手冊第 2 頁：眼瞼與眼外肌",
+ "desc": "《新實驗手冊》第 2 頁全部名詞：六條眼外肌、提上眼瞼肌、辛氏環、眼瞼構造。",
+ "level": 2,
+ "minutes": 40,
+ "order": 12,
+ "source": "《新實驗手冊-01.pdf》第 2 頁；開放授權圖見各圖來源",
+ "tags": [
+  "實驗手冊",
+  "眼外肌",
+  "眼瞼"
+ ],
+ "path": [
+  "眼解剖實驗",
+  "實驗手冊名詞（考試範圍）",
+  "第 2 頁　眼瞼與眼外肌"
+ ],
+ "lessons": [
+  {
+   "id": "l1",
+   "title": "眼外肌與辛氏環",
+   "goals": [
+    "找到並寫出：上直肌、提上眼瞼肌、上斜肌、滑車、外直肌、內直肌、下直肌、下斜肌、辛氏環"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "眼外肌與辛氏環",
+     "body": [
+      "四直肌（上、下、內、外）從辛氏環（總腱環）出發；上斜肌繞過滑車；下斜肌從眶底前方起始；提上眼瞼肌在上直肌上面。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "右眼眶外側面觀",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/orb_lat.jpg",
+     "source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "上直肌 superior rectus",
+       "desc": "",
+       "x": 33,
+       "y": 24
+      },
+      {
+       "name": "提上眼瞼肌 levator palpebrae superioris",
+       "desc": "",
+       "x": 36,
+       "y": 15.2
+      },
+      {
+       "name": "上斜肌 superior oblique",
+       "desc": "",
+       "x": 46,
+       "y": 16.8
+      },
+      {
+       "name": "滑車 trochlea",
+       "desc": "",
+       "x": 25,
+       "y": 10.5
+      },
+      {
+       "name": "外直肌 lateral rectus",
+       "desc": "",
+       "x": 30,
+       "y": 40
+      },
+      {
+       "name": "內直肌 medial rectus",
+       "desc": "",
+       "x": 53,
+       "y": 37
+      },
+      {
+       "name": "下直肌 inferior rectus",
+       "desc": "",
+       "x": 47,
+       "y": 56
+      },
+      {
+       "name": "下斜肌 inferior oblique",
+       "desc": "",
+       "x": 33,
+       "y": 56.5
+      },
+      {
+       "name": "辛氏環 annulus of Zinn",
+       "desc": "",
+       "x": 70.3,
+       "y": 39.5
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "右眼眶前面觀",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/orb_ant2.jpg",
+     "source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "上直肌 superior rectus",
+       "desc": "",
+       "x": 50,
+       "y": 26
+      },
+      {
+       "name": "下直肌 inferior rectus",
+       "desc": "",
+       "x": 51,
+       "y": 66
+      },
+      {
+       "name": "外直肌 lateral rectus",
+       "desc": "",
+       "x": 37,
+       "y": 47
+      },
+      {
+       "name": "內直肌 medial rectus",
+       "desc": "",
+       "x": 68,
+       "y": 48
+      },
+      {
+       "name": "上斜肌 superior oblique",
+       "desc": "",
+       "x": 65,
+       "y": 24
+      },
+      {
+       "name": "下斜肌 inferior oblique",
+       "desc": "",
+       "x": 62,
+       "y": 77
+      },
+      {
+       "name": "提上眼瞼肌 levator palpebrae superioris",
+       "desc": "",
+       "x": 49,
+       "y": 15
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上直肌"
+       ],
+       "en": [
+        "superior rectus",
+        "superior rectus muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q001.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… r…",
+       "explain": "上直肌 superior rectus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "提上眼瞼肌"
+       ],
+       "en": [
+        "levator palpebrae superioris",
+        "levator palpebrae superioris muscle",
+        "levator palpebrae"
+       ],
+       "img": "img/eye-lab/m-lid/q002.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：l… p… s…",
+       "explain": "提上眼瞼肌 levator palpebrae superioris"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上斜肌"
+       ],
+       "en": [
+        "superior oblique",
+        "superior oblique muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q003.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… o…",
+       "explain": "上斜肌 superior oblique"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車"
+       ],
+       "en": [
+        "trochlea"
+       ],
+       "img": "img/eye-lab/m-lid/q004.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：t…",
+       "explain": "滑車 trochlea"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外直肌"
+       ],
+       "en": [
+        "lateral rectus",
+        "lateral rectus muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q005.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：l… r…",
+       "explain": "外直肌 lateral rectus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "內直肌"
+       ],
+       "en": [
+        "medial rectus",
+        "medial rectus muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q006.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：m… r…",
+       "explain": "內直肌 medial rectus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "下直肌"
+       ],
+       "en": [
+        "inferior rectus",
+        "inferior rectus muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q007.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… r…",
+       "explain": "下直肌 inferior rectus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "下斜肌"
+       ],
+       "en": [
+        "inferior oblique",
+        "inferior oblique muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q008.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… o…",
+       "explain": "下斜肌 inferior oblique"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "辛氏環",
+        "總腱環",
+        "Zinn 氏環"
+       ],
+       "en": [
+        "annulus of Zinn",
+        "common tendinous ring",
+        "anulus of Zinn"
+       ],
+       "img": "img/eye-lab/m-lid/q009.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：a… o… Z…",
+       "explain": "辛氏環 annulus of Zinn"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "上直肌 superior rectus、提上眼瞼肌 levator palpebrae superioris、上斜肌 superior oblique、滑車 trochlea、外直肌 lateral rectus、內直肌 medial rectus",
+      "下直肌 inferior rectus、下斜肌 inferior oblique、辛氏環 annulus of Zinn"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l2",
+   "title": "眼瞼",
+   "goals": [
+    "找到並寫出：前瞼、後瞼、眼輪匝肌、提上眼瞼肌、瞼板、瞼板腺、穆勒氏肌、外側瞼韌帶、內側瞼韌帶、眼瞼"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "眼瞼",
+     "body": [
+      "眼瞼以灰線分成前瞼（皮膚＋眼輪匝肌）與後瞼（瞼板＋瞼結膜）；瞼板裡有瞼板腺；提上眼瞼肌下方的平滑肌＝穆勒氏肌；內、外側瞼韌帶把瞼板綁在眶緣。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "上眼瞼矢狀切面（Gray）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/gray893.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "前瞼 anterior lamella",
+       "desc": "皮膚＋眼輪匝肌",
+       "x": 36.7,
+       "y": 39.3
+      },
+      {
+       "name": "後瞼 posterior lamella",
+       "desc": "瞼板＋結膜",
+       "x": 80,
+       "y": 26
+      },
+      {
+       "name": "眼輪匝肌 orbicularis oculi",
+       "desc": "",
+       "x": 45,
+       "y": 40
+      },
+      {
+       "name": "提上眼瞼肌 levator palpebrae superioris",
+       "desc": "",
+       "x": 77,
+       "y": 8
+      },
+      {
+       "name": "瞼板 tarsal plate",
+       "desc": "",
+       "x": 80,
+       "y": 57
+      },
+      {
+       "name": "瞼板腺 Meibomian gland",
+       "desc": "",
+       "x": 75,
+       "y": 65
+      },
+      {
+       "name": "穆勒氏肌 Müller muscle",
+       "desc": "大致位置：提上眼瞼肌下方、連到瞼板上緣",
+       "x": 82.8,
+       "y": 12.9
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "眼瞼前面觀（皮膚與眼輪匝肌已移除，Gray）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab/base/gray894.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray894.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray894.png）；已塗去原圖英文標籤；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "瞼板 tarsal plate",
+       "desc": "上瞼板",
+       "x": 44.17,
+       "y": 42.9
+      },
+      {
+       "name": "外側瞼韌帶 lateral palpebral ligament",
+       "desc": "",
+       "x": 26.67,
+       "y": 55.62
+      },
+      {
+       "name": "內側瞼韌帶 medial palpebral ligament",
+       "desc": "跨在淚囊前方",
+       "x": 64.17,
+       "y": 56.21
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "活體眼睛",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/eye_ant_photo.jpg",
+     "source": "Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "眼瞼 eyelid",
+       "desc": "",
+       "x": 50,
+       "y": 86
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前瞼"
+       ],
+       "en": [
+        "anterior lamella"
+       ],
+       "img": "img/eye-lab/m-lid/q010.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… l…",
+       "explain": "前瞼 anterior lamella"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "後瞼"
+       ],
+       "en": [
+        "posterior lamella"
+       ],
+       "img": "img/eye-lab/m-lid/q011.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：p… l…",
+       "explain": "後瞼 posterior lamella"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼輪匝肌"
+       ],
+       "en": [
+        "orbicularis oculi",
+        "orbicularis oculi muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q012.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：o… o…",
+       "explain": "眼輪匝肌 orbicularis oculi"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "提上眼瞼肌"
+       ],
+       "en": [
+        "levator palpebrae superioris",
+        "levator palpebrae superioris muscle",
+        "levator palpebrae"
+       ],
+       "img": "img/eye-lab/m-lid/q013.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… p… s…",
+       "explain": "提上眼瞼肌 levator palpebrae superioris"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "瞼板"
+       ],
+       "en": [
+        "tarsal plate",
+        "tarsus"
+       ],
+       "img": "img/eye-lab/m-lid/q014.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：t… p…",
+       "explain": "瞼板 tarsal plate"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "瞼板腺",
+        "麥氏腺"
+       ],
+       "en": [
+        "Meibomian gland",
+        "meibomian gland",
+        "tarsal gland"
+       ],
+       "img": "img/eye-lab/m-lid/q015.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：M… g…",
+       "explain": "瞼板腺 Meibomian gland"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "穆勒氏肌",
+        "上瞼板肌",
+        "Müller 肌"
+       ],
+       "en": [
+        "Müller muscle",
+        "Muller muscle",
+        "Müller's muscle",
+        "superior tarsal muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q016.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：M… m…",
+       "explain": "穆勒氏肌 Müller muscle"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼瞼前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外側瞼韌帶"
+       ],
+       "en": [
+        "lateral palpebral ligament",
+        "lateral canthal tendon",
+        "lateral palpebral raphe"
+       ],
+       "img": "img/eye-lab/m-lid/q017.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray894.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray894.png）；已塗去原圖英文標籤（紅圈為本題標記）",
+       "hint": "英文開頭：l… p… l…",
+       "explain": "外側瞼韌帶 lateral palpebral ligament"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼瞼前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "內側瞼韌帶"
+       ],
+       "en": [
+        "medial palpebral ligament",
+        "medial canthal tendon"
+       ],
+       "img": "img/eye-lab/m-lid/q018.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray894.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray894.png）；已塗去原圖英文標籤（紅圈為本題標記）",
+       "hint": "英文開頭：m… p… l…",
+       "explain": "內側瞼韌帶 medial palpebral ligament"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "活體眼睛：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼瞼"
+       ],
+       "en": [
+        "eyelid",
+        "palpebra"
+       ],
+       "img": "img/eye-lab/m-lid/q019.jpg",
+       "img_source": "Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：e…",
+       "explain": "眼瞼 eyelid"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "前瞼 anterior lamella、後瞼 posterior lamella、眼輪匝肌 orbicularis oculi、提上眼瞼肌 levator palpebrae superioris、瞼板 tarsal plate、瞼板腺 Meibomian gland",
+      "穆勒氏肌 Müller muscle、外側瞼韌帶 lateral palpebral ligament、內側瞼韌帶 medial palpebral ligament、眼瞼 eyelid"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "review",
+   "title": "總複習：總圖＋總表",
+   "goals": [
+    "所有點位看過一次、寫過一次"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "總複習",
+     "body": [
+      "先看總圖（所有點位都標好名稱），再看總表；最後跑台模擬：看紅圈寫中文＋英文（每個點位一題）。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "總圖｜眼外肌與辛氏環",
+     "body": [
+      "右眼眶外側面觀、右眼眶前面觀"
+     ],
+     "img": [
+      "img/eye-lab/m-lid/f020.jpg",
+      "img/eye-lab/m-lid/f021.jpg",
+      "img/eye-lab/m-lid/f022.jpg",
+      "img/eye-lab/m-lid/f023.jpg"
+     ],
+     "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總圖｜眼瞼",
+     "body": [
+      "上眼瞼矢狀切面（Gray）、眼瞼前面觀（皮膚與眼輪匝肌已移除，Gray）、活體眼睛"
+     ],
+     "img": [
+      "img/eye-lab/m-lid/f024.jpg",
+      "img/eye-lab/m-lid/f025.jpg",
+      "img/eye-lab/m-lid/f026.jpg",
+      "img/eye-lab/m-lid/f027.jpg"
+     ],
+     "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）；Henry Vandyke Carter，Wikimedia Commons「Gray894.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray894.png）；已塗去原圖英文標籤；Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總表",
+     "body": [
+      "**眼外肌與辛氏環**",
+      "- **上直肌** superior rectus",
+      "- **提上眼瞼肌** levator palpebrae superioris",
+      "- **上斜肌** superior oblique",
+      "- **滑車** trochlea",
+      "- **外直肌** lateral rectus",
+      "- **內直肌** medial rectus",
+      "- **下直肌** inferior rectus",
+      "- **下斜肌** inferior oblique",
+      "- **辛氏環** annulus of Zinn",
+      "",
+      "**眼瞼**",
+      "- **前瞼** anterior lamella：皮膚＋眼輪匝肌",
+      "- **後瞼** posterior lamella：瞼板＋結膜",
+      "- **眼輪匝肌** orbicularis oculi",
+      "- **提上眼瞼肌** levator palpebrae superioris",
+      "- **瞼板** tarsal plate",
+      "- **瞼板腺** Meibomian gland",
+      "- **穆勒氏肌** Müller muscle：大致位置：提上眼瞼肌下方、連到瞼板上緣",
+      "- **外側瞼韌帶** lateral palpebral ligament",
+      "- **內側瞼韌帶** medial palpebral ligament：跨在淚囊前方",
+      "- **眼瞼** eyelid",
+      ""
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "跑台模擬：看紅圈寫中文＋英文",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上直肌"
+       ],
+       "en": [
+        "superior rectus",
+        "superior rectus muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q001.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… r…",
+       "explain": "上直肌 superior rectus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "提上眼瞼肌"
+       ],
+       "en": [
+        "levator palpebrae superioris",
+        "levator palpebrae superioris muscle",
+        "levator palpebrae"
+       ],
+       "img": "img/eye-lab/m-lid/q002.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：l… p… s…",
+       "explain": "提上眼瞼肌 levator palpebrae superioris"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上斜肌"
+       ],
+       "en": [
+        "superior oblique",
+        "superior oblique muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q003.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… o…",
+       "explain": "上斜肌 superior oblique"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車"
+       ],
+       "en": [
+        "trochlea"
+       ],
+       "img": "img/eye-lab/m-lid/q004.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：t…",
+       "explain": "滑車 trochlea"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外直肌"
+       ],
+       "en": [
+        "lateral rectus",
+        "lateral rectus muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q005.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：l… r…",
+       "explain": "外直肌 lateral rectus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "內直肌"
+       ],
+       "en": [
+        "medial rectus",
+        "medial rectus muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q006.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：m… r…",
+       "explain": "內直肌 medial rectus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "下直肌"
+       ],
+       "en": [
+        "inferior rectus",
+        "inferior rectus muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q007.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… r…",
+       "explain": "下直肌 inferior rectus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "下斜肌"
+       ],
+       "en": [
+        "inferior oblique",
+        "inferior oblique muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q008.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… o…",
+       "explain": "下斜肌 inferior oblique"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "辛氏環",
+        "總腱環",
+        "Zinn 氏環"
+       ],
+       "en": [
+        "annulus of Zinn",
+        "common tendinous ring",
+        "anulus of Zinn"
+       ],
+       "img": "img/eye-lab/m-lid/q009.jpg",
+       "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：a… o… Z…",
+       "explain": "辛氏環 annulus of Zinn"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前瞼"
+       ],
+       "en": [
+        "anterior lamella"
+       ],
+       "img": "img/eye-lab/m-lid/q010.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… l…",
+       "explain": "前瞼 anterior lamella"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "後瞼"
+       ],
+       "en": [
+        "posterior lamella"
+       ],
+       "img": "img/eye-lab/m-lid/q011.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：p… l…",
+       "explain": "後瞼 posterior lamella"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼輪匝肌"
+       ],
+       "en": [
+        "orbicularis oculi",
+        "orbicularis oculi muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q012.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：o… o…",
+       "explain": "眼輪匝肌 orbicularis oculi"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "瞼板"
+       ],
+       "en": [
+        "tarsal plate",
+        "tarsus"
+       ],
+       "img": "img/eye-lab/m-lid/q014.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：t… p…",
+       "explain": "瞼板 tarsal plate"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "瞼板腺",
+        "麥氏腺"
+       ],
+       "en": [
+        "Meibomian gland",
+        "meibomian gland",
+        "tarsal gland"
+       ],
+       "img": "img/eye-lab/m-lid/q015.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：M… g…",
+       "explain": "瞼板腺 Meibomian gland"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "上眼瞼切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "穆勒氏肌",
+        "上瞼板肌",
+        "Müller 肌"
+       ],
+       "en": [
+        "Müller muscle",
+        "Muller muscle",
+        "Müller's muscle",
+        "superior tarsal muscle"
+       ],
+       "img": "img/eye-lab/m-lid/q016.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（紅圈為本題標記）",
+       "hint": "英文開頭：M… m…",
+       "explain": "穆勒氏肌 Müller muscle"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼瞼前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外側瞼韌帶"
+       ],
+       "en": [
+        "lateral palpebral ligament",
+        "lateral canthal tendon",
+        "lateral palpebral raphe"
+       ],
+       "img": "img/eye-lab/m-lid/q017.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray894.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray894.png）；已塗去原圖英文標籤（紅圈為本題標記）",
+       "hint": "英文開頭：l… p… l…",
+       "explain": "外側瞼韌帶 lateral palpebral ligament"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼瞼前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "內側瞼韌帶"
+       ],
+       "en": [
+        "medial palpebral ligament",
+        "medial canthal tendon"
+       ],
+       "img": "img/eye-lab/m-lid/q018.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray894.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray894.png）；已塗去原圖英文標籤（紅圈為本題標記）",
+       "hint": "英文開頭：m… p… l…",
+       "explain": "內側瞼韌帶 medial palpebral ligament"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "活體眼睛：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼瞼"
+       ],
+       "en": [
+        "eyelid",
+        "palpebra"
+       ],
+       "img": "img/eye-lab/m-lid/q019.jpg",
+       "img_source": "Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：e…",
+       "explain": "眼瞼 eyelid"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "共 18 個點位；錯的回到該課的圖再點一次"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-orbit-q-l3-1",
+  "subject": "eye_anat",
+  "name": "【跑台】冠狀面 CT",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・骨質眼窩",
+   "副鼻竇"
+  ],
+  "order": 1120,
+  "source": "《新實驗手冊-01.pdf》第 1 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "冠狀面 CT：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上頷竇 / maxillary sinus",
+   "accept": [
+    "上頷竇 / maxillary sinus"
+   ],
+   "explain": [
+    "**上頷竇　maxillary sinus**",
+    "眼眶下方",
+    "（圖：）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "副鼻竇",
+    "上頷竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q024.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "冠狀面 CT：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "篩竇 / ethmoidal sinus",
+   "accept": [
+    "篩竇 / ethmoidal sinus",
+    "篩竇 / ethmoid sinus",
+    "篩竇 / ethmoidal air cells",
+    "篩氣室 / ethmoidal sinus",
+    "篩氣室 / ethmoid sinus",
+    "篩氣室 / ethmoidal air cells"
+   ],
+   "explain": [
+    "**篩竇　ethmoidal sinus**",
+    "眼眶內側",
+    "也可以寫：篩氣室、ethmoid sinus、ethmoidal air cells",
+    "（圖：）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "副鼻竇",
+    "篩竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-orbit/q025.jpg"
+   ]
+  }
+ ]
+}

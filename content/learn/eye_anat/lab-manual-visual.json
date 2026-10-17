@@ -1,0 +1,1123 @@
+{
+ "schema": "xd-learn/1",
+ "id": "eyelab-m-visual",
+ "subject": "eye_anat",
+ "style": "atlas",
+ "unit": "手冊第 5 頁：視覺路徑",
+ "title": "手冊第 5 頁：視覺路徑",
+ "desc": "《新實驗手冊》第 5 頁全部名詞：視神經分段、視網膜三種細胞、視交叉到視覺皮質、三條溝。",
+ "level": 2,
+ "minutes": 40,
+ "order": 14,
+ "source": "《新實驗手冊-01.pdf》第 5 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源",
+ "tags": [
+  "實驗手冊",
+  "視覺路徑"
+ ],
+ "path": [
+  "眼解剖實驗",
+  "實驗手冊名詞（考試範圍）",
+  "第 5 頁　視覺路徑"
+ ],
+ "lessons": [
+  {
+   "id": "l1",
+   "title": "視神經分段",
+   "goals": [
+    "找到並寫出：篩板前區、篩板後區、視網膜中央動脈、視神經眶內段、視神經管內段、視神經顱內段、視交叉"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "視神經分段",
+     "body": [
+      "手冊：篩板前區、篩板後區、眶內段、管內段、顱內段；視網膜中心動脈。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "視神經盤剖面",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/onh_diag_m.jpg",
+     "source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "篩板前區 prelaminar region",
+       "desc": "無髓鞘",
+       "x": 55,
+       "y": 25
+      },
+      {
+       "name": "篩板後區 retrolaminar region",
+       "desc": "有髓鞘",
+       "x": 57,
+       "y": 48
+      },
+      {
+       "name": "視網膜中央動脈 central retinal artery",
+       "desc": "",
+       "x": 48.5,
+       "y": 70
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "上課標本：眼眶切面",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab-private/base/orbit_section.jpg",
+     "source": "上課投影片照片（《眼解剖實驗.pdf》第 23–24 頁：1. 視乳突、2. 硬腦膜；眼眶水平切面標本）；已移除箭頭（標記點依老師講義／圖譜位置）",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "視神經眶內段 intraorbital part of optic nerve",
+       "desc": "",
+       "x": 45.16,
+       "y": 66.22
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "顱骨：視神經管",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/mcf_B_m.jpg",
+     "source": "Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "視神經管內段 intracanalicular part of optic nerve",
+       "desc": "管內段躺在這條骨管裡",
+       "x": 28.4,
+       "y": 24.3
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "腦底面標本",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/bs_ant.jpg",
+     "source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "視神經顱內段 intracranial part of optic nerve",
+       "desc": "出了視神經管到視交叉",
+       "x": 50,
+       "y": 5.6
+      },
+      {
+       "name": "視交叉 optic chiasm",
+       "desc": "",
+       "x": 61.8,
+       "y": 8.9
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "眼底",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/fundus_od.jpg",
+     "source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "視網膜中央動脈 central retinal artery",
+       "desc": "從視神經盤分出",
+       "x": 80,
+       "y": 38
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "篩板前區"
+       ],
+       "en": [
+        "prelaminar region",
+        "prelaminar part"
+       ],
+       "img": "img/eye-lab/m-visual/q001.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：p… r…",
+       "explain": "篩板前區 prelaminar region"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "篩板後區"
+       ],
+       "en": [
+        "retrolaminar region",
+        "retrolaminar part"
+       ],
+       "img": "img/eye-lab/m-visual/q002.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：r… r…",
+       "explain": "篩板後區 retrolaminar region"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視網膜中央動脈",
+        "中央視網膜動脈",
+        "視網膜中心動脈"
+       ],
+       "en": [
+        "central retinal artery",
+        "central artery of retina"
+       ],
+       "img": "img/eye-lab/m-visual/q003.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… r… a…",
+       "explain": "視網膜中央動脈 central retinal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經眶內段",
+        "眶內段",
+        "視神經眼窩內段"
+       ],
+       "en": [
+        "intraorbital part of optic nerve",
+        "intraorbital segment of optic nerve",
+        "intraorbital part",
+        "intraorbital segment"
+       ],
+       "img": "img/eye-lab-private/m-visual/q004.jpg",
+       "img_source": "上課投影片照片（《眼解剖實驗.pdf》第 23–24 頁：1. 視乳突、2. 硬腦膜；眼眶水平切面標本）；已移除箭頭（紅圈為本題標記）",
+       "hint": "英文開頭：i… p… o… o… n…",
+       "explain": "視神經眶內段 intraorbital part of optic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "顱骨：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經管內段",
+        "管內段"
+       ],
+       "en": [
+        "intracanalicular part of optic nerve",
+        "intracanalicular segment",
+        "intracanalicular part"
+       ],
+       "img": "img/eye-lab/m-visual/q005.jpg",
+       "img_source": "Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… p… o… o… n…",
+       "explain": "視神經管內段 intracanalicular part of optic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經顱內段",
+        "顱內段"
+       ],
+       "en": [
+        "intracranial part of optic nerve",
+        "intracranial segment",
+        "intracranial part"
+       ],
+       "img": "img/eye-lab/m-visual/q006.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：i… p… o… o… n…",
+       "explain": "視神經顱內段 intracranial part of optic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視交叉"
+       ],
+       "en": [
+        "optic chiasm",
+        "optic chiasma"
+       ],
+       "img": "img/eye-lab/m-visual/q007.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：o… c…",
+       "explain": "視交叉 optic chiasm"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "篩板前區 prelaminar region、篩板後區 retrolaminar region、視網膜中央動脈 central retinal artery、視神經眶內段 intraorbital part of optic nerve、視神經管內段 intracanalicular part of optic nerve、視神經顱內段 intracranial part of optic nerve",
+      "視交叉 optic chiasm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l2",
+   "title": "視網膜三種細胞",
+   "goals": [
+    "找到並寫出：感光細胞、雙極細胞、神經節細胞"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "視網膜三種細胞",
+     "body": [
+      "手冊：感光細胞 → 雙極細胞 → 神經節細胞（軸突集合成視神經）。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "視網膜分層示意圖",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/retina_diag_m.jpg",
+     "source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "感光細胞 photoreceptor",
+       "desc": "最外層（靠脈絡膜）",
+       "x": 29,
+       "y": 68
+      },
+      {
+       "name": "雙極細胞 bipolar cell",
+       "desc": "中間",
+       "x": 63,
+       "y": 35
+      },
+      {
+       "name": "神經節細胞 ganglion cell",
+       "desc": "最內層（靠玻璃體）",
+       "x": 63,
+       "y": 12
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視網膜分層：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "感光細胞"
+       ],
+       "en": [
+        "photoreceptor",
+        "photoreceptor cell",
+        "photoreceptors"
+       ],
+       "img": "img/eye-lab/m-visual/q008.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（紅圈為本題標記）",
+       "hint": "英文開頭：p…",
+       "explain": "感光細胞 photoreceptor"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視網膜分層：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "雙極細胞"
+       ],
+       "en": [
+        "bipolar cell",
+        "bipolar cells"
+       ],
+       "img": "img/eye-lab/m-visual/q009.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（紅圈為本題標記）",
+       "hint": "英文開頭：b… c…",
+       "explain": "雙極細胞 bipolar cell"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視網膜分層：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "神經節細胞"
+       ],
+       "en": [
+        "ganglion cell",
+        "ganglion cells",
+        "retinal ganglion cell"
+       ],
+       "img": "img/eye-lab/m-visual/q010.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（紅圈為本題標記）",
+       "hint": "英文開頭：g… c…",
+       "explain": "神經節細胞 ganglion cell"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "感光細胞 photoreceptor、雙極細胞 bipolar cell、神經節細胞 ganglion cell"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l3",
+   "title": "視交叉到視覺皮質",
+   "goals": [
+    "找到並寫出：視神經、視交叉、視束、外側膝狀體、梅氏環、視放射、鮑氏環、視覺皮質、頂枕溝、距狀溝、中央溝"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "視交叉到視覺皮質",
+     "body": [
+      "手冊：視神經、視交叉、視徑、外側膝狀體核、視放射、梅氏環、鮑氏環、視覺皮質、距狀溝、中央溝、頂枕溝。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "老師講義標本 60",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab-private/base/horiz60.jpg",
+     "source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（標記點依老師講義／圖譜位置）",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "視神經 optic nerve",
+       "desc": "",
+       "x": 48.25,
+       "y": 27.08
+      },
+      {
+       "name": "視交叉 optic chiasm",
+       "desc": "",
+       "x": 44.11,
+       "y": 34.72
+      },
+      {
+       "name": "視束 optic tract",
+       "desc": "",
+       "x": 50.0,
+       "y": 40.0
+      },
+      {
+       "name": "外側膝狀體 lateral geniculate body",
+       "desc": "",
+       "x": 64.66,
+       "y": 57.53
+      },
+      {
+       "name": "梅氏環 Meyer's loop",
+       "desc": "",
+       "x": 19.3,
+       "y": 40.9
+      },
+      {
+       "name": "視放射 optic radiation",
+       "desc": "",
+       "x": 21.3,
+       "y": 44.94
+      },
+      {
+       "name": "鮑氏環 Baum's loop",
+       "desc": "",
+       "x": 22.93,
+       "y": 47.87
+      },
+      {
+       "name": "視覺皮質 visual cortex",
+       "desc": "",
+       "x": 74.94,
+       "y": 91.8
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "老師講義矢狀切面",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab-private/base/sagittal.jpg",
+     "source": "老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記（標記點依老師講義／圖譜位置）",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "頂枕溝 parieto-occipital sulcus",
+       "desc": "",
+       "x": 17.58,
+       "y": 45.88
+      },
+      {
+       "name": "距狀溝 calcarine sulcus",
+       "desc": "",
+       "x": 17.58,
+       "y": 64.89
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "大腦外側面",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/beal_lat.jpg",
+     "source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "中央溝 central sulcus",
+       "desc": "",
+       "x": 46.5,
+       "y": 30
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經"
+       ],
+       "en": [
+        "optic nerve"
+       ],
+       "img": "img/eye-lab-private/m-visual/q011.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：o… n…",
+       "explain": "視神經 optic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視交叉"
+       ],
+       "en": [
+        "optic chiasm",
+        "optic chiasma"
+       ],
+       "img": "img/eye-lab-private/m-visual/q012.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：o… c…",
+       "explain": "視交叉 optic chiasm"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視束",
+        "視徑"
+       ],
+       "en": [
+        "optic tract"
+       ],
+       "img": "img/eye-lab-private/m-visual/q013.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：o… t…",
+       "explain": "視束 optic tract"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外側膝狀體",
+        "外側膝狀體核",
+        "外側膝狀核"
+       ],
+       "en": [
+        "lateral geniculate body",
+        "lateral geniculate nucleus",
+        "lateral geniculate nuclei",
+        "LGN",
+        "LGB"
+       ],
+       "img": "img/eye-lab-private/m-visual/q014.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：l… g… b…",
+       "explain": "外側膝狀體 lateral geniculate body"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "梅氏環"
+       ],
+       "en": [
+        "Meyer's loop",
+        "Meyers loop",
+        "Meyer loop"
+       ],
+       "img": "img/eye-lab-private/m-visual/q015.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：M… l…",
+       "explain": "梅氏環 Meyer's loop"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視放射"
+       ],
+       "en": [
+        "optic radiation",
+        "optic radiations"
+       ],
+       "img": "img/eye-lab-private/m-visual/q016.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：o… r…",
+       "explain": "視放射 optic radiation"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鮑氏環"
+       ],
+       "en": [
+        "Baum's loop",
+        "Baums loop",
+        "Baum loop"
+       ],
+       "img": "img/eye-lab-private/m-visual/q017.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：B… l…",
+       "explain": "鮑氏環 Baum's loop"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視覺皮質",
+        "視皮質"
+       ],
+       "en": [
+        "visual cortex"
+       ],
+       "img": "img/eye-lab-private/m-visual/q018.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：v… c…",
+       "explain": "視覺皮質 visual cortex"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "矢狀切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "頂枕溝"
+       ],
+       "en": [
+        "parieto-occipital sulcus",
+        "parietooccipital sulcus"
+       ],
+       "img": "img/eye-lab-private/m-visual/q019.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：p… o… s…",
+       "explain": "頂枕溝 parieto-occipital sulcus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "矢狀切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "距狀溝",
+        "禽距溝"
+       ],
+       "en": [
+        "calcarine sulcus",
+        "calcarine fissure"
+       ],
+       "img": "img/eye-lab-private/m-visual/q020.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：c… s…",
+       "explain": "距狀溝 calcarine sulcus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "大腦外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "中央溝"
+       ],
+       "en": [
+        "central sulcus"
+       ],
+       "img": "img/eye-lab/m-visual/q021.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：c… s…",
+       "explain": "中央溝 central sulcus"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "視神經 optic nerve、視交叉 optic chiasm、視束 optic tract、外側膝狀體 lateral geniculate body、梅氏環 Meyer's loop、視放射 optic radiation",
+      "鮑氏環 Baum's loop、視覺皮質 visual cortex、頂枕溝 parieto-occipital sulcus、距狀溝 calcarine sulcus、中央溝 central sulcus"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "review",
+   "title": "總複習：總圖＋總表",
+   "goals": [
+    "所有點位看過一次、寫過一次"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "總複習",
+     "body": [
+      "先看總圖（所有點位都標好名稱），再看總表；最後跑台模擬：看紅圈寫中文＋英文（每個點位一題）。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "總圖｜視神經分段",
+     "body": [
+      "視神經盤剖面、上課標本：眼眶切面、顱骨：視神經管、腦底面標本、眼底"
+     ],
+     "img": [
+      "img/eye-lab/m-visual/f022.jpg",
+      "img/eye-lab-private/m-visual/f023.jpg",
+      "img/eye-lab/m-visual/f024.jpg",
+      "img/eye-lab/m-visual/f025.jpg",
+      "img/eye-lab/m-visual/f026.jpg"
+     ],
+     "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）；上課投影片照片（《眼解剖實驗.pdf》第 23–24 頁：1. 視乳突、2. 硬腦膜；眼眶水平切面標本）；已移除箭頭；Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）；John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總圖｜視網膜三種細胞",
+     "body": [
+      "視網膜分層示意圖"
+     ],
+     "img": "img/eye-lab/m-visual/f027.jpg",
+     "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總圖｜視交叉到視覺皮質",
+     "body": [
+      "老師講義標本 60、老師講義矢狀切面、大腦外側面"
+     ],
+     "img": [
+      "img/eye-lab-private/m-visual/f028.jpg",
+      "img/eye-lab-private/m-visual/f029.jpg",
+      "img/eye-lab-private/m-visual/f030.jpg",
+      "img/eye-lab/m-visual/f031.jpg"
+     ],
+     "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記；老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記；John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總表",
+     "body": [
+      "**視神經分段**",
+      "- **篩板前區** prelaminar region：無髓鞘",
+      "- **篩板後區** retrolaminar region：有髓鞘",
+      "- **視網膜中央動脈** central retinal artery",
+      "- **視神經眶內段** intraorbital part of optic nerve",
+      "- **視神經管內段** intracanalicular part of optic nerve：管內段躺在這條骨管裡",
+      "- **視神經顱內段** intracranial part of optic nerve：出了視神經管到視交叉",
+      "- **視交叉** optic chiasm",
+      "",
+      "**視網膜三種細胞**",
+      "- **感光細胞** photoreceptor：最外層（靠脈絡膜）",
+      "- **雙極細胞** bipolar cell：中間",
+      "- **神經節細胞** ganglion cell：最內層（靠玻璃體）",
+      "",
+      "**視交叉到視覺皮質**",
+      "- **視神經** optic nerve",
+      "- **視交叉** optic chiasm",
+      "- **視束** optic tract",
+      "- **外側膝狀體** lateral geniculate body",
+      "- **梅氏環** Meyer's loop",
+      "- **視放射** optic radiation",
+      "- **鮑氏環** Baum's loop",
+      "- **視覺皮質** visual cortex",
+      "- **頂枕溝** parieto-occipital sulcus",
+      "- **距狀溝** calcarine sulcus",
+      "- **中央溝** central sulcus",
+      ""
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "跑台模擬：看紅圈寫中文＋英文",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "篩板前區"
+       ],
+       "en": [
+        "prelaminar region",
+        "prelaminar part"
+       ],
+       "img": "img/eye-lab/m-visual/q001.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：p… r…",
+       "explain": "篩板前區 prelaminar region"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "篩板後區"
+       ],
+       "en": [
+        "retrolaminar region",
+        "retrolaminar part"
+       ],
+       "img": "img/eye-lab/m-visual/q002.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：r… r…",
+       "explain": "篩板後區 retrolaminar region"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視神經盤剖面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視網膜中央動脈",
+        "中央視網膜動脈",
+        "視網膜中心動脈"
+       ],
+       "en": [
+        "central retinal artery",
+        "central artery of retina"
+       ],
+       "img": "img/eye-lab/m-visual/q003.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… r… a…",
+       "explain": "視網膜中央動脈 central retinal artery"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經眶內段",
+        "眶內段",
+        "視神經眼窩內段"
+       ],
+       "en": [
+        "intraorbital part of optic nerve",
+        "intraorbital segment of optic nerve",
+        "intraorbital part",
+        "intraorbital segment"
+       ],
+       "img": "img/eye-lab-private/m-visual/q004.jpg",
+       "img_source": "上課投影片照片（《眼解剖實驗.pdf》第 23–24 頁：1. 視乳突、2. 硬腦膜；眼眶水平切面標本）；已移除箭頭（紅圈為本題標記）",
+       "hint": "英文開頭：i… p… o… o… n…",
+       "explain": "視神經眶內段 intraorbital part of optic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "顱骨：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經管內段",
+        "管內段"
+       ],
+       "en": [
+        "intracanalicular part of optic nerve",
+        "intracanalicular segment",
+        "intracanalicular part"
+       ],
+       "img": "img/eye-lab/m-visual/q005.jpg",
+       "img_source": "Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… p… o… o… n…",
+       "explain": "視神經管內段 intracanalicular part of optic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經顱內段",
+        "顱內段"
+       ],
+       "en": [
+        "intracranial part of optic nerve",
+        "intracranial segment",
+        "intracranial part"
+       ],
+       "img": "img/eye-lab/m-visual/q006.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：i… p… o… o… n…",
+       "explain": "視神經顱內段 intracranial part of optic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視交叉"
+       ],
+       "en": [
+        "optic chiasm",
+        "optic chiasma"
+       ],
+       "img": "img/eye-lab/m-visual/q007.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：o… c…",
+       "explain": "視交叉 optic chiasm"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視網膜分層：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "感光細胞"
+       ],
+       "en": [
+        "photoreceptor",
+        "photoreceptor cell",
+        "photoreceptors"
+       ],
+       "img": "img/eye-lab/m-visual/q008.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（紅圈為本題標記）",
+       "hint": "英文開頭：p…",
+       "explain": "感光細胞 photoreceptor"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視網膜分層：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "雙極細胞"
+       ],
+       "en": [
+        "bipolar cell",
+        "bipolar cells"
+       ],
+       "img": "img/eye-lab/m-visual/q009.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（紅圈為本題標記）",
+       "hint": "英文開頭：b… c…",
+       "explain": "雙極細胞 bipolar cell"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "視網膜分層：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "神經節細胞"
+       ],
+       "en": [
+        "ganglion cell",
+        "ganglion cells",
+        "retinal ganglion cell"
+       ],
+       "img": "img/eye-lab/m-visual/q010.jpg",
+       "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（紅圈為本題標記）",
+       "hint": "英文開頭：g… c…",
+       "explain": "神經節細胞 ganglion cell"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經"
+       ],
+       "en": [
+        "optic nerve"
+       ],
+       "img": "img/eye-lab-private/m-visual/q011.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：o… n…",
+       "explain": "視神經 optic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視束",
+        "視徑"
+       ],
+       "en": [
+        "optic tract"
+       ],
+       "img": "img/eye-lab-private/m-visual/q013.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：o… t…",
+       "explain": "視束 optic tract"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外側膝狀體",
+        "外側膝狀體核",
+        "外側膝狀核"
+       ],
+       "en": [
+        "lateral geniculate body",
+        "lateral geniculate nucleus",
+        "lateral geniculate nuclei",
+        "LGN",
+        "LGB"
+       ],
+       "img": "img/eye-lab-private/m-visual/q014.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：l… g… b…",
+       "explain": "外側膝狀體 lateral geniculate body"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "梅氏環"
+       ],
+       "en": [
+        "Meyer's loop",
+        "Meyers loop",
+        "Meyer loop"
+       ],
+       "img": "img/eye-lab-private/m-visual/q015.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：M… l…",
+       "explain": "梅氏環 Meyer's loop"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視放射"
+       ],
+       "en": [
+        "optic radiation",
+        "optic radiations"
+       ],
+       "img": "img/eye-lab-private/m-visual/q016.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：o… r…",
+       "explain": "視放射 optic radiation"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鮑氏環"
+       ],
+       "en": [
+        "Baum's loop",
+        "Baums loop",
+        "Baum loop"
+       ],
+       "img": "img/eye-lab-private/m-visual/q017.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：B… l…",
+       "explain": "鮑氏環 Baum's loop"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "標本 60：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視覺皮質",
+        "視皮質"
+       ],
+       "en": [
+        "visual cortex"
+       ],
+       "img": "img/eye-lab-private/m-visual/q018.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：v… c…",
+       "explain": "視覺皮質 visual cortex"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "矢狀切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "頂枕溝"
+       ],
+       "en": [
+        "parieto-occipital sulcus",
+        "parietooccipital sulcus"
+       ],
+       "img": "img/eye-lab-private/m-visual/q019.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：p… o… s…",
+       "explain": "頂枕溝 parieto-occipital sulcus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "矢狀切面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "距狀溝",
+        "禽距溝"
+       ],
+       "en": [
+        "calcarine sulcus",
+        "calcarine fissure"
+       ],
+       "img": "img/eye-lab-private/m-visual/q020.jpg",
+       "img_source": "老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記（紅圈為本題標記）",
+       "hint": "英文開頭：c… s…",
+       "explain": "距狀溝 calcarine sulcus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "大腦外側面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "中央溝"
+       ],
+       "en": [
+        "central sulcus"
+       ],
+       "img": "img/eye-lab/m-visual/q021.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：c… s…",
+       "explain": "中央溝 central sulcus"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "共 20 個點位；錯的回到該課的圖再點一次"
+     ]
+    }
+   ]
+  }
+ ]
+}

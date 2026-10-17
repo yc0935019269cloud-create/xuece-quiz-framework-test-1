@@ -1,0 +1,99 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-visual-q-l1-1",
+  "subject": "eye_anat",
+  "name": "【跑台】視神經盤剖面",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・視覺路徑",
+   "視神經分段"
+  ],
+  "order": 1400,
+  "source": "《新實驗手冊-01.pdf》第 5 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "視神經盤剖面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "篩板前區 / prelaminar region",
+   "accept": [
+    "篩板前區 / prelaminar region",
+    "篩板前區 / prelaminar part"
+   ],
+   "explain": [
+    "**篩板前區　prelaminar region**",
+    "無髓鞘",
+    "也可以寫：prelaminar part",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 5 頁：視覺路徑",
+    "視神經分段",
+    "篩板前區"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-visual/q001.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "視神經盤剖面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "篩板後區 / retrolaminar region",
+   "accept": [
+    "篩板後區 / retrolaminar region",
+    "篩板後區 / retrolaminar part"
+   ],
+   "explain": [
+    "**篩板後區　retrolaminar region**",
+    "有髓鞘",
+    "也可以寫：retrolaminar part",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 5 頁：視覺路徑",
+    "視神經分段",
+    "篩板後區"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-visual/q002.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "視神經盤剖面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視網膜中央動脈 / central retinal artery",
+   "accept": [
+    "視網膜中央動脈 / central retinal artery",
+    "視網膜中央動脈 / central artery of retina",
+    "中央視網膜動脈 / central retinal artery",
+    "中央視網膜動脈 / central artery of retina",
+    "視網膜中心動脈 / central retinal artery",
+    "視網膜中心動脈 / central artery of retina"
+   ],
+   "explain": [
+    "**視網膜中央動脈　central retinal artery**",
+    "也可以寫：中央視網膜動脈、視網膜中心動脈、central artery of retina",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 5 頁：視覺路徑",
+    "視神經分段",
+    "視網膜中央動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-visual/q003.jpg"
+   ]
+  }
+ ]
+}

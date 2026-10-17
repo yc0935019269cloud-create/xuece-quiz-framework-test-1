@@ -1,0 +1,249 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-lid-q-l1-1",
+  "subject": "eye_anat",
+  "name": "【跑台】右眼眶外側面觀",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・眼瞼與眼外肌",
+   "眼外肌與辛氏環"
+  ],
+  "order": 1200,
+  "source": "《新實驗手冊-01.pdf》第 2 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "眼眶外側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上直肌 / superior rectus",
+   "accept": [
+    "上直肌 / superior rectus",
+    "上直肌 / superior rectus muscle"
+   ],
+   "explain": [
+    "**上直肌　superior rectus**",
+    "也可以寫：superior rectus muscle",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼外肌與辛氏環",
+    "上直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q001.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "眼眶外側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "提上眼瞼肌 / levator palpebrae superioris",
+   "accept": [
+    "提上眼瞼肌 / levator palpebrae superioris",
+    "提上眼瞼肌 / levator palpebrae superioris muscle",
+    "提上眼瞼肌 / levator palpebrae"
+   ],
+   "explain": [
+    "**提上眼瞼肌　levator palpebrae superioris**",
+    "也可以寫：levator palpebrae superioris muscle、levator palpebrae",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼外肌與辛氏環",
+    "提上眼瞼肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q002.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "眼眶外側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上斜肌 / superior oblique",
+   "accept": [
+    "上斜肌 / superior oblique",
+    "上斜肌 / superior oblique muscle"
+   ],
+   "explain": [
+    "**上斜肌　superior oblique**",
+    "也可以寫：superior oblique muscle",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼外肌與辛氏環",
+    "上斜肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q003.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "眼眶外側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "滑車 / trochlea",
+   "accept": [
+    "滑車 / trochlea"
+   ],
+   "explain": [
+    "**滑車　trochlea**",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼外肌與辛氏環",
+    "滑車"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q004.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "眼眶外側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "外直肌 / lateral rectus",
+   "accept": [
+    "外直肌 / lateral rectus",
+    "外直肌 / lateral rectus muscle"
+   ],
+   "explain": [
+    "**外直肌　lateral rectus**",
+    "也可以寫：lateral rectus muscle",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼外肌與辛氏環",
+    "外直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q005.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "眼眶外側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "內直肌 / medial rectus",
+   "accept": [
+    "內直肌 / medial rectus",
+    "內直肌 / medial rectus muscle"
+   ],
+   "explain": [
+    "**內直肌　medial rectus**",
+    "也可以寫：medial rectus muscle",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼外肌與辛氏環",
+    "內直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q006.jpg"
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "眼眶外側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "下直肌 / inferior rectus",
+   "accept": [
+    "下直肌 / inferior rectus",
+    "下直肌 / inferior rectus muscle"
+   ],
+   "explain": [
+    "**下直肌　inferior rectus**",
+    "也可以寫：inferior rectus muscle",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼外肌與辛氏環",
+    "下直肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q007.jpg"
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "眼眶外側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "下斜肌 / inferior oblique",
+   "accept": [
+    "下斜肌 / inferior oblique",
+    "下斜肌 / inferior oblique muscle"
+   ],
+   "explain": [
+    "**下斜肌　inferior oblique**",
+    "也可以寫：inferior oblique muscle",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼外肌與辛氏環",
+    "下斜肌"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q008.jpg"
+   ]
+  },
+  {
+   "n": 9,
+   "type": "fill",
+   "stem": "眼眶外側面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "辛氏環 / annulus of Zinn",
+   "accept": [
+    "辛氏環 / annulus of Zinn",
+    "辛氏環 / common tendinous ring",
+    "辛氏環 / anulus of Zinn",
+    "總腱環 / annulus of Zinn",
+    "總腱環 / common tendinous ring",
+    "總腱環 / anulus of Zinn",
+    "Zinn 氏環 / annulus of Zinn",
+    "Zinn 氏環 / common tendinous ring",
+    "Zinn 氏環 / anulus of Zinn"
+   ],
+   "explain": [
+    "**辛氏環　annulus of Zinn**",
+    "也可以寫：總腱環、Zinn 氏環、common tendinous ring、anulus of Zinn",
+    "（圖：Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 2 頁：眼瞼與眼外肌",
+    "眼外肌與辛氏環",
+    "辛氏環"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-lid/q009.jpg"
+   ]
+  }
+ ]
+}

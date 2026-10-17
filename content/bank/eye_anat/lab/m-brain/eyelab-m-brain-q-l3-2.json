@@ -1,0 +1,68 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-brain-q-l3-2",
+  "subject": "eye_anat",
+  "name": "【跑台】上頸神經節與翼顎神經節（Gray）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・腦幹與神經",
+   "神經節與眼眶神經"
+  ],
+  "order": 1521,
+  "source": "《新實驗手冊-01.pdf》第 8 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "Gray 神經節圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上頸神經節 / superior cervical ganglion",
+   "accept": [
+    "上頸神經節 / superior cervical ganglion"
+   ],
+   "explain": [
+    "**上頸神經節　superior cervical ganglion**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "上頸神經節"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q018.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "Gray 神經節圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "翼顎神經節 / pterygopalatine ganglion",
+   "accept": [
+    "翼顎神經節 / pterygopalatine ganglion",
+    "翼顎神經節 / sphenopalatine ganglion",
+    "蝶顎神經節 / pterygopalatine ganglion",
+    "蝶顎神經節 / sphenopalatine ganglion"
+   ],
+   "explain": [
+    "**翼顎神經節　pterygopalatine ganglion**",
+    "也可以寫：蝶顎神經節、sphenopalatine ganglion",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "翼顎神經節"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q019.jpg"
+   ]
+  }
+ ]
+}

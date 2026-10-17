@@ -1,0 +1,239 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-vp-q-l2-2",
+  "subject": "eye_anat",
+  "name": "【跑台】老師講義標本 60",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・視覺路徑",
+   "水平切面（標本 60）"
+  ],
+  "order": 111,
+  "source": "《2.視覺路徑+標號-02.pdf》第 10–13 頁；《眼解剖實驗.pdf》上課照片；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "標本 60：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視神經 / optic nerve",
+   "accept": [
+    "視神經 / optic nerve"
+   ],
+   "explain": [
+    "**視神經　optic nerve**",
+    "最前面",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "視神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q060.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "標本 60：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視交叉 / optic chiasm",
+   "accept": [
+    "視交叉 / optic chiasm",
+    "視交叉 / optic chiasma"
+   ],
+   "explain": [
+    "**視交叉　optic chiasm**",
+    "X 形",
+    "也可以寫：optic chiasma",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "視交叉"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q061.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "標本 60：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視束 / optic tract",
+   "accept": [
+    "視束 / optic tract",
+    "視徑 / optic tract"
+   ],
+   "explain": [
+    "**視束　optic tract**",
+    "視交叉後往後外",
+    "也可以寫：視徑",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "視束"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q062.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "標本 60：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "外側膝狀體 / lateral geniculate body",
+   "accept": [
+    "外側膝狀體 / lateral geniculate body",
+    "外側膝狀體 / lateral geniculate nucleus",
+    "外側膝狀體 / lateral geniculate nuclei",
+    "外側膝狀體 / LGN",
+    "外側膝狀體 / LGB",
+    "外側膝狀體核 / lateral geniculate body",
+    "外側膝狀體核 / lateral geniculate nucleus",
+    "外側膝狀體核 / lateral geniculate nuclei",
+    "外側膝狀體核 / LGN",
+    "外側膝狀體核 / LGB",
+    "外側膝狀核 / lateral geniculate body",
+    "外側膝狀核 / lateral geniculate nucleus",
+    "外側膝狀核 / lateral geniculate nuclei",
+    "外側膝狀核 / LGN",
+    "外側膝狀核 / LGB"
+   ],
+   "explain": [
+    "**外側膝狀體　lateral geniculate body**",
+    "視束終點",
+    "也可以寫：外側膝狀體核、外側膝狀核、lateral geniculate nucleus、lateral geniculate nuclei、LGN、LGB",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "外側膝狀體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q063.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "標本 60：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "梅氏環 / Meyer's loop",
+   "accept": [
+    "梅氏環 / Meyer's loop",
+    "梅氏環 / Meyers loop",
+    "梅氏環 / Meyer loop"
+   ],
+   "explain": [
+    "**梅氏環　Meyer's loop**",
+    "視放射往前繞進顳葉",
+    "也可以寫：Meyers loop、Meyer loop",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "梅氏環"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q019.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "標本 60：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視放射 / optic radiation",
+   "accept": [
+    "視放射 / optic radiation",
+    "視放射 / optic radiations"
+   ],
+   "explain": [
+    "**視放射　optic radiation**",
+    "往後散開的白色纖維",
+    "也可以寫：optic radiations",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "視放射"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q064.jpg"
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "標本 60：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "鮑氏環 / Baum's loop",
+   "accept": [
+    "鮑氏環 / Baum's loop",
+    "鮑氏環 / Baums loop",
+    "鮑氏環 / Baum loop"
+   ],
+   "explain": [
+    "**鮑氏環　Baum's loop**",
+    "經頂葉的上方纖維",
+    "也可以寫：Baums loop、Baum loop",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "鮑氏環"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q020.jpg"
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "標本 60：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視覺皮質 / visual cortex",
+   "accept": [
+    "視覺皮質 / visual cortex",
+    "視皮質 / visual cortex"
+   ],
+   "explain": [
+    "**視覺皮質　visual cortex**",
+    "枕葉",
+    "也可以寫：視皮質",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 11 頁標本照（水平切面，標本 60）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "視覺路徑：從視神經盤到枕葉",
+    "水平切面（標本 60）",
+    "視覺皮質"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/vp/q065.jpg"
+   ]
+  }
+ ]
+}

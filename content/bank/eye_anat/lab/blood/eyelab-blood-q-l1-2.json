@@ -1,0 +1,144 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-blood-q-l1-2",
+  "subject": "eye_anat",
+  "name": "【跑台】真實腦標本（腦底血管）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・血液供應",
+   "腦底動脈（威利氏環）"
+  ],
+  "order": 301,
+  "source": "《眼球的血液供應與網膜血管構造與功能》講義；《新實驗手冊-01.pdf》第 4 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "腦底標本：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "威利氏環 / circle of Willis",
+   "accept": [
+    "威利氏環 / circle of Willis",
+    "威利氏環 / cerebral arterial circle",
+    "Willis 環 / circle of Willis",
+    "Willis 環 / cerebral arterial circle",
+    "大腦動脈環 / circle of Willis",
+    "大腦動脈環 / cerebral arterial circle"
+   ],
+   "explain": [
+    "**威利氏環　circle of Willis**",
+    "也可以寫：Willis 環、大腦動脈環、cerebral arterial circle",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "腦底動脈（威利氏環）",
+    "威利氏環"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q009.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "腦底標本：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "頸內動脈 / internal carotid artery",
+   "accept": [
+    "頸內動脈 / internal carotid artery",
+    "內頸動脈 / internal carotid artery"
+   ],
+   "explain": [
+    "**頸內動脈　internal carotid artery**",
+    "也可以寫：內頸動脈",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "腦底動脈（威利氏環）",
+    "頸內動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q085.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "腦底標本：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "基底動脈 / basilar artery",
+   "accept": [
+    "基底動脈 / basilar artery"
+   ],
+   "explain": [
+    "**基底動脈　basilar artery**",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "腦底動脈（威利氏環）",
+    "基底動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q086.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "腦底標本：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "椎動脈 / vertebral artery",
+   "accept": [
+    "椎動脈 / vertebral artery"
+   ],
+   "explain": [
+    "**椎動脈　vertebral artery**",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "腦底動脈（威利氏環）",
+    "椎動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q087.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "腦底標本：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "前脈絡叢動脈 / anterior choroidal artery",
+   "accept": [
+    "前脈絡叢動脈 / anterior choroidal artery",
+    "前脈絡動脈 / anterior choroidal artery"
+   ],
+   "explain": [
+    "**前脈絡叢動脈　anterior choroidal artery**",
+    "大致位置；沿視束走",
+    "也可以寫：前脈絡動脈",
+    "（圖：John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "腦底動脈（威利氏環）",
+    "前脈絡叢動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q010.jpg"
+   ]
+  }
+ ]
+}

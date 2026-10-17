@@ -1,0 +1,43 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-brain-q-l2-2",
+  "subject": "eye_anat",
+  "name": "【跑台】中腦橫切（下丘高度）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・腦幹與神經",
+   "腦幹切片：神經核"
+  ],
+  "order": 1511,
+  "source": "《新實驗手冊-01.pdf》第 8 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "中腦切片：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "滑車神經核 / trochlear nucleus",
+   "accept": [
+    "滑車神經核 / trochlear nucleus",
+    "滑車神經核 / nucleus of trochlear nerve"
+   ],
+   "explain": [
+    "**滑車神經核　trochlear nucleus**",
+    "也可以寫：nucleus of trochlear nerve",
+    "（圖：Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "腦幹切片：神經核",
+    "滑車神經核"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q011.jpg"
+   ]
+  }
+ ]
+}

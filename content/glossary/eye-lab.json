@@ -1,0 +1,3584 @@
+{
+ "schema": "xd-glossary/1",
+ "id": "eye-lab",
+ "title": "眼解剖實驗名詞字源",
+ "entries": [
+  {
+   "id": "lab-frontal",
+   "match": [
+    "額骨",
+    "frontal bone"
+   ],
+   "zh": "額骨",
+   "en": "frontal bone",
+   "parts": [
+    [
+     "frontal",
+     "拉丁 frons「額頭」"
+    ]
+   ],
+   "note": "眼眶上壁（眶頂）主要的骨。",
+   "rel": ""
+  },
+  {
+   "id": "lab-sphenoid",
+   "match": [
+    "sphenoid bone"
+   ],
+   "zh": "蝶骨",
+   "en": "sphenoid bone",
+   "parts": [
+    [
+     "sphen-",
+     "希臘「楔子」"
+    ],
+    [
+     "-oid",
+     "像…的"
+    ]
+   ],
+   "note": "顱底中央；從前面看像展翅的蝴蝶（大翼、小翼）→ 中文「蝶」骨。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lesser",
+   "match": [
+    "蝶骨小翼",
+    "lesser wing of sphenoid bone",
+    "lesser wing of sphenoid",
+    "lesser sphenoid wing",
+    "lesser wing"
+   ],
+   "zh": "蝶骨小翼",
+   "en": "lesser wing of sphenoid bone",
+   "parts": [
+    [
+     "lesser",
+     "較小的"
+    ],
+    [
+     "wing",
+     "翼"
+    ]
+   ],
+   "note": "眼眶頂後部；上面有視神經管。",
+   "rel": ""
+  },
+  {
+   "id": "lab-greater",
+   "match": [
+    "蝶骨大翼",
+    "greater wing of sphenoid bone",
+    "greater wing of sphenoid",
+    "greater sphenoid wing",
+    "greater wing"
+   ],
+   "zh": "蝶骨大翼",
+   "en": "greater wing of sphenoid bone",
+   "parts": [
+    [
+     "greater",
+     "較大的"
+    ],
+    [
+     "wing",
+     "翼"
+    ]
+   ],
+   "note": "眼眶外側壁後部；大小翼之間是眶上裂。",
+   "rel": ""
+  },
+  {
+   "id": "lab-sph-body",
+   "match": [
+    "蝶骨體",
+    "body of sphenoid bone",
+    "body of sphenoid",
+    "sphenoid body"
+   ],
+   "zh": "蝶骨體",
+   "en": "body of sphenoid bone",
+   "parts": [
+    [
+     "body",
+     "體（中央方塊）"
+    ]
+   ],
+   "note": "蝶骨中央的方塊，上面是蝶鞍，裡面是蝶竇。",
+   "rel": ""
+  },
+  {
+   "id": "lab-zygomatic",
+   "match": [
+    "顴骨",
+    "zygomatic bone",
+    "zygoma"
+   ],
+   "zh": "顴骨",
+   "en": "zygomatic bone",
+   "parts": [
+    [
+     "zygoma",
+     "希臘「軛、連接棒」——顴弓像一根把臉和頭連起來的橫棒"
+    ]
+   ],
+   "note": "臉頰骨；眼眶外側壁與下壁的前部。",
+   "rel": ""
+  },
+  {
+   "id": "lab-maxilla",
+   "match": [
+    "上頷骨",
+    "上頜骨",
+    "上顎骨",
+    "maxilla",
+    "maxillary bone"
+   ],
+   "zh": "上頷骨",
+   "en": "maxilla",
+   "parts": [
+    [
+     "maxilla",
+     "拉丁「顎骨」"
+    ]
+   ],
+   "note": "眼眶下壁（眶底）主要的骨；裡面是上頷竇。",
+   "rel": ""
+  },
+  {
+   "id": "lab-palatine",
+   "match": [
+    "腭骨",
+    "顎骨",
+    "palatine bone"
+   ],
+   "zh": "腭骨",
+   "en": "palatine bone",
+   "parts": [
+    [
+     "palatine",
+     "拉丁 palatum「上顎」"
+    ]
+   ],
+   "note": "眼眶下壁最後方的一小塊（眶突）；主要在硬腭後部。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lacrimal",
+   "match": [
+    "淚骨",
+    "lacrimal bone"
+   ],
+   "zh": "淚骨",
+   "en": "lacrimal bone",
+   "parts": [
+    [
+     "lacrimal",
+     "拉丁 lacrima「眼淚」"
+    ]
+   ],
+   "note": "眼眶內側壁前部，最小最薄的骨；有淚囊窩。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ethmoid",
+   "match": [
+    "篩骨",
+    "ethmoid bone",
+    "ethmoid"
+   ],
+   "zh": "篩骨",
+   "en": "ethmoid bone",
+   "parts": [
+    [
+     "ethmos",
+     "希臘「篩子」"
+    ],
+    [
+     "-oid",
+     "像…的"
+    ]
+   ],
+   "note": "眼眶內側壁中部（紙板）；上方的篩板有很多小孔（嗅神經通過）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-nasal-bone",
+   "match": [
+    "鼻骨",
+    "nasal bone"
+   ],
+   "zh": "鼻骨",
+   "en": "nasal bone",
+   "parts": [
+    [
+     "nasal",
+     "拉丁 nasus「鼻」"
+    ]
+   ],
+   "note": "鼻樑上的一對小骨。",
+   "rel": ""
+  },
+  {
+   "id": "lab-temporal-bone",
+   "match": [
+    "顳骨",
+    "temporal bone"
+   ],
+   "zh": "顳骨",
+   "en": "temporal bone",
+   "parts": [
+    [
+     "temporal",
+     "拉丁 tempus「時間」→ 太陽穴"
+    ]
+   ],
+   "note": "頭側面，有外耳道、乳突、莖突。",
+   "rel": ""
+  },
+  {
+   "id": "lab-occipital-bone",
+   "match": [
+    "枕骨",
+    "occipital bone"
+   ],
+   "zh": "枕骨",
+   "en": "occipital bone",
+   "parts": [
+    [
+     "occiput",
+     "ob（後）＋caput（頭）→ 後腦勺"
+    ]
+   ],
+   "note": "顱骨最後方，有枕骨大孔。",
+   "rel": ""
+  },
+  {
+   "id": "lab-parietal-bone",
+   "match": [
+    "頂骨",
+    "parietal bone"
+   ],
+   "zh": "頂骨",
+   "en": "parietal bone",
+   "parts": [
+    [
+     "parietal",
+     "拉丁 paries「牆」"
+    ]
+   ],
+   "note": "頭頂兩側的一對骨。",
+   "rel": ""
+  },
+  {
+   "id": "lab-mandible",
+   "match": [
+    "下頷骨",
+    "下頜骨",
+    "下顎骨",
+    "mandible"
+   ],
+   "zh": "下頷骨",
+   "en": "mandible",
+   "parts": [
+    [
+     "mandere",
+     "拉丁「咀嚼」"
+    ]
+   ],
+   "note": "下巴的骨，唯一能動的顱骨。",
+   "rel": ""
+  },
+  {
+   "id": "lab-vomer",
+   "match": [
+    "犁骨",
+    "vomer"
+   ],
+   "zh": "犁骨",
+   "en": "vomer",
+   "parts": [
+    [
+     "vomer",
+     "拉丁「犁頭」"
+    ]
+   ],
+   "note": "鼻中隔後下部的薄骨，形狀像犁頭。",
+   "rel": ""
+  },
+  {
+   "id": "lab-perp-plate",
+   "match": [
+    "篩骨垂直板",
+    "perpendicular plate of ethmoid",
+    "perpendicular plate"
+   ],
+   "zh": "篩骨垂直板",
+   "en": "perpendicular plate of ethmoid",
+   "parts": [
+    [
+     "perpendicular",
+     "垂直的"
+    ],
+    [
+     "plate",
+     "板"
+    ]
+   ],
+   "note": "鼻中隔上部的骨（屬篩骨）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-mid-concha",
+   "match": [
+    "中鼻甲",
+    "middle nasal concha",
+    "middle concha"
+   ],
+   "zh": "中鼻甲",
+   "en": "middle nasal concha",
+   "parts": [
+    [
+     "concha",
+     "拉丁「貝殼」"
+    ]
+   ],
+   "note": "鼻腔外側壁捲曲的骨片（屬篩骨）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-inf-concha",
+   "match": [
+    "下鼻甲",
+    "inferior nasal concha",
+    "inferior concha"
+   ],
+   "zh": "下鼻甲",
+   "en": "inferior nasal concha",
+   "parts": [
+    [
+     "concha",
+     "貝殼"
+    ]
+   ],
+   "note": "鼻腔外側壁最下面的捲片，是獨立的骨。",
+   "rel": ""
+  },
+  {
+   "id": "lab-supraorb-for",
+   "match": [
+    "眶上孔",
+    "眶上切跡",
+    "supraorbital foramen",
+    "supraorbital notch"
+   ],
+   "zh": "眶上孔",
+   "en": "supraorbital foramen",
+   "parts": [
+    [
+     "supra-",
+     "上"
+    ],
+    [
+     "orbita",
+     "拉丁「車輪軌道、圓圈」→ 眼眶"
+    ],
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ]
+   ],
+   "note": "眶上緣內側 1/3 的孔；眶上神經、血管穿出。",
+   "rel": ""
+  },
+  {
+   "id": "lab-infraorb-for",
+   "match": [
+    "眶下孔",
+    "infraorbital foramen"
+   ],
+   "zh": "眶下孔",
+   "en": "infraorbital foramen",
+   "parts": [
+    [
+     "infra-",
+     "下"
+    ],
+    [
+     "orbita",
+     "拉丁「車輪軌道、圓圈」→ 眼眶"
+    ],
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ]
+   ],
+   "note": "眶下緣下方、上頷骨上的孔；眶下神經、血管穿出。",
+   "rel": ""
+  },
+  {
+   "id": "lab-sof",
+   "match": [
+    "眶上裂",
+    "上眼窩裂",
+    "上眼窩縫",
+    "superior orbital fissure",
+    "SOF"
+   ],
+   "zh": "眶上裂",
+   "en": "superior orbital fissure",
+   "parts": [
+    [
+     "superior",
+     "上"
+    ],
+    [
+     "orbita",
+     "拉丁「車輪軌道、圓圈」→ 眼眶"
+    ],
+    [
+     "fissure",
+     "拉丁 findere「裂開」→ 裂縫"
+    ]
+   ],
+   "note": "蝶骨大翼與小翼之間；III、IV、V1、VI 與上眼靜脈通過。",
+   "rel": ""
+  },
+  {
+   "id": "lab-iof",
+   "match": [
+    "眶下裂",
+    "下眼窩裂",
+    "inferior orbital fissure",
+    "IOF"
+   ],
+   "zh": "眶下裂",
+   "en": "inferior orbital fissure",
+   "parts": [
+    [
+     "inferior",
+     "下"
+    ],
+    [
+     "orbita",
+     "拉丁「車輪軌道、圓圈」→ 眼眶"
+    ],
+    [
+     "fissure",
+     "拉丁 findere「裂開」→ 裂縫"
+    ]
+   ],
+   "note": "眼眶外下壁之間的裂縫（蝶骨大翼與上頷骨之間）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-supraorb-ridge",
+   "match": [
+    "眉弓",
+    "眶上緣",
+    "supraorbital ridge",
+    "supraorbital margin",
+    "superciliary arch"
+   ],
+   "zh": "眉弓",
+   "en": "supraorbital ridge",
+   "parts": [
+    [
+     "supra-",
+     "上"
+    ],
+    [
+     "ridge",
+     "隆起的稜"
+    ]
+   ],
+   "note": "眼眶上緣隆起、長眉毛的地方。",
+   "rel": ""
+  },
+  {
+   "id": "lab-trochlear-fossa",
+   "match": [
+    "滑車窩",
+    "trochlear fossa",
+    "trochlear fovea"
+   ],
+   "zh": "滑車窩",
+   "en": "trochlear fossa",
+   "parts": [
+    [
+     "trochlea",
+     "拉丁「滑輪」"
+    ],
+    [
+     "fossa",
+     "拉丁「溝、坑」"
+    ]
+   ],
+   "note": "眶頂內前方的小凹，上斜肌的滑車附著處。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lac-gland-fossa",
+   "match": [
+    "淚腺窩",
+    "lacrimal gland fossa",
+    "fossa for lacrimal gland"
+   ],
+   "zh": "淚腺窩",
+   "en": "lacrimal gland fossa",
+   "parts": [
+    [
+     "lacrimal",
+     "眼淚"
+    ],
+    [
+     "fossa",
+     "窩"
+    ]
+   ],
+   "note": "眶頂外前方（額骨）的凹窩，淚腺躺在這裡。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lac-fossa",
+   "match": [
+    "淚窩",
+    "淚囊窩",
+    "lacrimal fossa",
+    "fossa for lacrimal sac",
+    "lacrimal sac fossa"
+   ],
+   "zh": "淚窩",
+   "en": "lacrimal fossa",
+   "parts": [
+    [
+     "lacrimal",
+     "眼淚"
+    ],
+    [
+     "fossa",
+     "窩"
+    ]
+   ],
+   "note": "眼眶內側壁前方的凹槽（淚骨＋上頷骨），淚囊在這裡，往下接鼻淚管。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ant-eth-for",
+   "match": [
+    "前篩孔",
+    "anterior ethmoidal foramen",
+    "anterior ethmoid foramen"
+   ],
+   "zh": "前篩孔",
+   "en": "anterior ethmoidal foramen",
+   "parts": [
+    [
+     "anterior",
+     "前"
+    ],
+    [
+     "ethmoid",
+     "篩骨"
+    ],
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ]
+   ],
+   "note": "眼眶內側壁額篩縫上的前孔；前篩動脈、神經通過。",
+   "rel": ""
+  },
+  {
+   "id": "lab-post-eth-for",
+   "match": [
+    "後篩孔",
+    "posterior ethmoidal foramen",
+    "posterior ethmoid foramen"
+   ],
+   "zh": "後篩孔",
+   "en": "posterior ethmoidal foramen",
+   "parts": [
+    [
+     "posterior",
+     "後"
+    ],
+    [
+     "ethmoid",
+     "篩骨"
+    ],
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ]
+   ],
+   "note": "前篩孔後方的孔；後篩動脈、神經通過。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lat-tubercle",
+   "match": [
+    "外側結節",
+    "眶外側結節",
+    "Whitnall 結節",
+    "lateral orbital tubercle",
+    "lateral tubercle",
+    "Whitnall's tubercle"
+   ],
+   "zh": "外側結節",
+   "en": "lateral orbital tubercle",
+   "parts": [
+    [
+     "tubercle",
+     "拉丁 tuberculum「小突起」"
+    ]
+   ],
+   "note": "眶外側緣內面（顴骨）的小隆起，外側瞼韌帶附著處。",
+   "rel": ""
+  },
+  {
+   "id": "lab-cribriform",
+   "match": [
+    "cribriform plate"
+   ],
+   "zh": "篩板",
+   "en": "cribriform plate",
+   "parts": [
+    [
+     "cribrum",
+     "拉丁「篩子」"
+    ],
+    [
+     "plate",
+     "板"
+    ]
+   ],
+   "note": "篩骨在前顱窩的水平板，布滿小孔。",
+   "rel": ""
+  },
+  {
+   "id": "lab-olf-for",
+   "match": [
+    "嗅孔",
+    "篩孔",
+    "olfactory foramina",
+    "cribriform foramina"
+   ],
+   "zh": "嗅孔",
+   "en": "olfactory foramina",
+   "parts": [
+    [
+     "olfactory",
+     "拉丁 olfacere「聞」"
+    ],
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ]
+   ],
+   "note": "篩板上的小孔；嗅神經（CN I）穿過。",
+   "rel": ""
+  },
+  {
+   "id": "lab-crista",
+   "match": [
+    "雞冠",
+    "crista galli"
+   ],
+   "zh": "雞冠",
+   "en": "crista galli",
+   "parts": [
+    [
+     "crista",
+     "拉丁「雞冠、冠」"
+    ],
+    [
+     "galli",
+     "公雞的"
+    ]
+   ],
+   "note": "篩板正中往上突的骨稜，大腦鐮附著。",
+   "rel": ""
+  },
+  {
+   "id": "lab-rotundum",
+   "match": [
+    "圓孔",
+    "foramen rotundum"
+   ],
+   "zh": "圓孔",
+   "en": "foramen rotundum",
+   "parts": [
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ],
+    [
+     "rotundum",
+     "圓的"
+    ]
+   ],
+   "note": "中顱窩、眶上裂下方；上頷神經 V2 通過。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ovale",
+   "match": [
+    "卵圓孔",
+    "foramen ovale"
+   ],
+   "zh": "卵圓孔",
+   "en": "foramen ovale",
+   "parts": [
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ],
+    [
+     "ovale",
+     "卵形的"
+    ]
+   ],
+   "note": "圓孔後外方；下頷神經 V3 通過。",
+   "rel": ""
+  },
+  {
+   "id": "lab-spinosum",
+   "match": [
+    "棘孔",
+    "foramen spinosum"
+   ],
+   "zh": "棘孔",
+   "en": "foramen spinosum",
+   "parts": [
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ],
+    [
+     "spinosum",
+     "有刺的（旁邊有蝶骨棘）"
+    ]
+   ],
+   "note": "卵圓孔後外方的小孔；中腦膜動脈通過。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lacerum",
+   "match": [
+    "破裂孔",
+    "foramen lacerum"
+   ],
+   "zh": "破裂孔",
+   "en": "foramen lacerum",
+   "parts": [
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ],
+    [
+     "lacerum",
+     "撕裂的"
+    ]
+   ],
+   "note": "蝶骨、顳骨岩部、枕骨交界的不規則孔（活體被軟骨封住）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-iam",
+   "match": [
+    "內耳道",
+    "內聽道",
+    "internal acoustic meatus",
+    "internal auditory meatus"
+   ],
+   "zh": "內耳道",
+   "en": "internal acoustic meatus",
+   "parts": [
+    [
+     "internal",
+     "內"
+    ],
+    [
+     "acoustic",
+     "聽覺的"
+    ],
+    [
+     "meatus",
+     "拉丁「通道」"
+    ]
+   ],
+   "note": "顳骨岩部後面；顏面神經 VII 與前庭耳蝸神經 VIII 進入。",
+   "rel": ""
+  },
+  {
+   "id": "lab-jugular-for",
+   "match": [
+    "頸靜脈孔",
+    "jugular foramen"
+   ],
+   "zh": "頸靜脈孔",
+   "en": "jugular foramen",
+   "parts": [
+    [
+     "jugular",
+     "拉丁 jugulum「頸」"
+    ],
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ]
+   ],
+   "note": "後顱窩；舌咽 IX、迷走 X、副神經 XI 與內頸靜脈通過。",
+   "rel": ""
+  },
+  {
+   "id": "lab-hypoglossal-can",
+   "match": [
+    "舌下神經管",
+    "舌下神經孔",
+    "舌下神經道",
+    "hypoglossal canal"
+   ],
+   "zh": "舌下神經管",
+   "en": "hypoglossal canal",
+   "parts": [
+    [
+     "hypo-",
+     "下"
+    ],
+    [
+     "glossa",
+     "希臘「舌」"
+    ],
+    [
+     "canal",
+     "拉丁 canalis「管子」"
+    ]
+   ],
+   "note": "枕骨大孔前外側；舌下神經 XII 通過。",
+   "rel": ""
+  },
+  {
+   "id": "lab-magnum",
+   "match": [
+    "枕骨大孔",
+    "foramen magnum"
+   ],
+   "zh": "枕骨大孔",
+   "en": "foramen magnum",
+   "parts": [
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ],
+    [
+     "magnum",
+     "大的"
+    ]
+   ],
+   "note": "枕骨上最大的孔；延腦與脊髓在這裡相接。",
+   "rel": ""
+  },
+  {
+   "id": "lab-carotid-can",
+   "match": [
+    "頸動脈管",
+    "carotid canal"
+   ],
+   "zh": "頸動脈管",
+   "en": "carotid canal",
+   "parts": [
+    [
+     "carotid",
+     "希臘 karoun「使昏迷」（壓迫它會昏倒）"
+    ],
+    [
+     "canal",
+     "拉丁 canalis「管子」"
+    ]
+   ],
+   "note": "顳骨岩部的管道；頸內動脈進入顱內。",
+   "rel": ""
+  },
+  {
+   "id": "lab-stylomastoid",
+   "match": [
+    "莖乳孔",
+    "stylomastoid foramen"
+   ],
+   "zh": "莖乳孔",
+   "en": "stylomastoid foramen",
+   "parts": [
+    [
+     "stylo-",
+     "莖"
+    ],
+    [
+     "mastoid",
+     "乳突"
+    ],
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ]
+   ],
+   "note": "莖突與乳突之間；顏面神經出顱。",
+   "rel": ""
+  },
+  {
+   "id": "lab-styloid",
+   "match": [
+    "莖突",
+    "styloid process"
+   ],
+   "zh": "莖突",
+   "en": "styloid process",
+   "parts": [
+    [
+     "stylos",
+     "希臘「筆、柱」"
+    ],
+    [
+     "process",
+     "拉丁 processus「往外伸出」→ 突起"
+    ]
+   ],
+   "note": "外耳道下方細長的突起。",
+   "rel": ""
+  },
+  {
+   "id": "lab-mastoid",
+   "match": [
+    "乳突",
+    "mastoid process"
+   ],
+   "zh": "乳突",
+   "en": "mastoid process",
+   "parts": [
+    [
+     "mastos",
+     "希臘「乳房」"
+    ],
+    [
+     "process",
+     "拉丁 processus「往外伸出」→ 突起"
+    ]
+   ],
+   "note": "耳朵後下方的圓突。",
+   "rel": ""
+  },
+  {
+   "id": "lab-eam",
+   "match": [
+    "外耳道",
+    "external acoustic meatus",
+    "external auditory meatus"
+   ],
+   "zh": "外耳道",
+   "en": "external acoustic meatus",
+   "parts": [
+    [
+     "external",
+     "外"
+    ],
+    [
+     "acoustic",
+     "聽覺的"
+    ],
+    [
+     "meatus",
+     "通道"
+    ]
+   ],
+   "note": "耳洞，通到中耳。",
+   "rel": ""
+  },
+  {
+   "id": "lab-mand-fossa",
+   "match": [
+    "下頷窩",
+    "下頜窩",
+    "mandibular fossa"
+   ],
+   "zh": "下頷窩",
+   "en": "mandibular fossa",
+   "parts": [
+    [
+     "mandible",
+     "下頷骨"
+    ],
+    [
+     "fossa",
+     "窩"
+    ]
+   ],
+   "note": "外耳道前方的凹窩，下頷骨髁突在此形成顳頷關節。",
+   "rel": ""
+  },
+  {
+   "id": "lab-zyg-proc-temp",
+   "match": [
+    "顳骨顴突",
+    "zygomatic process of temporal bone",
+    "zygomatic process"
+   ],
+   "zh": "顳骨顴突",
+   "en": "zygomatic process of temporal bone",
+   "parts": [
+    [
+     "zygomatic",
+     "顴"
+    ],
+    [
+     "process",
+     "拉丁 processus「往外伸出」→ 突起"
+    ]
+   ],
+   "note": "顳骨往前伸的突起，構成顴弓後段。",
+   "rel": ""
+  },
+  {
+   "id": "lab-temp-proc-zyg",
+   "match": [
+    "顴骨顳突",
+    "temporal process of zygomatic bone",
+    "temporal process"
+   ],
+   "zh": "顴骨顳突",
+   "en": "temporal process of zygomatic bone",
+   "parts": [
+    [
+     "temporal",
+     "顳"
+    ],
+    [
+     "process",
+     "拉丁 processus「往外伸出」→ 突起"
+    ]
+   ],
+   "note": "顴骨往後伸的突起，構成顴弓前段。",
+   "rel": ""
+  },
+  {
+   "id": "lab-occ-condyle",
+   "match": [
+    "枕髁",
+    "occipital condyle"
+   ],
+   "zh": "枕髁",
+   "en": "occipital condyle",
+   "parts": [
+    [
+     "condyle",
+     "希臘 kondylos「指節」→ 圓形關節面"
+    ]
+   ],
+   "note": "枕骨大孔兩側的關節面，和第一頸椎相接。",
+   "rel": ""
+  },
+  {
+   "id": "lab-incisive",
+   "match": [
+    "門齒孔",
+    "incisive foramen",
+    "incisive fossa"
+   ],
+   "zh": "門齒孔",
+   "en": "incisive foramen",
+   "parts": [
+    [
+     "incisive",
+     "門牙的"
+    ],
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ]
+   ],
+   "note": "硬腭最前方、門牙後面的孔。",
+   "rel": ""
+  },
+  {
+   "id": "lab-palatine-proc",
+   "match": [
+    "上頷骨腭突",
+    "palatine process of maxilla",
+    "palatine process"
+   ],
+   "zh": "上頷骨腭突",
+   "en": "palatine process of maxilla",
+   "parts": [
+    [
+     "palatine",
+     "上顎的"
+    ],
+    [
+     "process",
+     "拉丁 processus「往外伸出」→ 突起"
+    ]
+   ],
+   "note": "硬腭前 3/4。",
+   "rel": ""
+  },
+  {
+   "id": "lab-horiz-plate",
+   "match": [
+    "腭骨水平板",
+    "horizontal plate of palatine bone",
+    "horizontal plate"
+   ],
+   "zh": "腭骨水平板",
+   "en": "horizontal plate of palatine bone",
+   "parts": [
+    [
+     "horizontal",
+     "水平的"
+    ],
+    [
+     "plate",
+     "板"
+    ]
+   ],
+   "note": "硬腭後 1/4。",
+   "rel": ""
+  },
+  {
+   "id": "lab-squamous-sut",
+   "match": [
+    "鱗狀縫",
+    "squamous suture"
+   ],
+   "zh": "鱗狀縫",
+   "en": "squamous suture",
+   "parts": [
+    [
+     "squama",
+     "拉丁「魚鱗」"
+    ],
+    [
+     "suture",
+     "拉丁 sutura「縫線」→ 骨與骨之間的縫"
+    ]
+   ],
+   "note": "顳骨鱗部與頂骨之間的弧形縫。",
+   "rel": ""
+  },
+  {
+   "id": "lab-sagittal-sut",
+   "match": [
+    "矢狀縫",
+    "sagittal suture"
+   ],
+   "zh": "矢狀縫",
+   "en": "sagittal suture",
+   "parts": [
+    [
+     "sagitta",
+     "拉丁「箭」"
+    ],
+    [
+     "suture",
+     "拉丁 sutura「縫線」→ 骨與骨之間的縫"
+    ]
+   ],
+   "note": "頭頂正中、左右頂骨之間的縫（像一支往前射的箭）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-coronal-sut",
+   "match": [
+    "冠狀縫",
+    "coronal suture"
+   ],
+   "zh": "冠狀縫",
+   "en": "coronal suture",
+   "parts": [
+    [
+     "corona",
+     "拉丁「冠」"
+    ],
+    [
+     "suture",
+     "拉丁 sutura「縫線」→ 骨與骨之間的縫"
+    ]
+   ],
+   "note": "額骨與頂骨之間，左右橫跨頭頂（戴皇冠的位置）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lambdoid-sut",
+   "match": [
+    "人字縫",
+    "lambdoid suture"
+   ],
+   "zh": "人字縫",
+   "en": "lambdoid suture",
+   "parts": [
+    [
+     "lambda",
+     "希臘字母 λ（像「人」字）"
+    ],
+    [
+     "suture",
+     "拉丁 sutura「縫線」→ 骨與骨之間的縫"
+    ]
+   ],
+   "note": "頂骨與枕骨之間。",
+   "rel": ""
+  },
+  {
+   "id": "lab-eop",
+   "match": [
+    "枕外隆凸",
+    "枕外粗隆",
+    "external occipital protuberance"
+   ],
+   "zh": "枕外隆凸",
+   "en": "external occipital protuberance",
+   "parts": [
+    [
+     "protuberance",
+     "拉丁「腫起」"
+    ]
+   ],
+   "note": "後腦勺正中摸得到的隆起。",
+   "rel": ""
+  },
+  {
+   "id": "lab-parietal-for",
+   "match": [
+    "頂孔",
+    "parietal foramen",
+    "parietal foramina"
+   ],
+   "zh": "頂孔",
+   "en": "parietal foramen",
+   "parts": [
+    [
+     "parietal",
+     "頂"
+    ],
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ]
+   ],
+   "note": "矢狀縫兩旁的小孔（導靜脈通過）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-mand-for",
+   "match": [
+    "下頷孔",
+    "下頜孔",
+    "mandibular foramen"
+   ],
+   "zh": "下頷孔",
+   "en": "mandibular foramen",
+   "parts": [
+    [
+     "mandible",
+     "下頷骨"
+    ],
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ]
+   ],
+   "note": "下頷枝內面的孔；下齒槽神經、血管進入。",
+   "rel": ""
+  },
+  {
+   "id": "lab-mental-for",
+   "match": [
+    "頦孔",
+    "mental foramen"
+   ],
+   "zh": "頦孔",
+   "en": "mental foramen",
+   "parts": [
+    [
+     "mentum",
+     "拉丁「下巴」"
+    ],
+    [
+     "foramen",
+     "拉丁「孔、洞」（複數 foramina）"
+    ]
+   ],
+   "note": "下巴兩側的孔；頦神經穿出。",
+   "rel": ""
+  },
+  {
+   "id": "lab-maxillary-sinus",
+   "match": [
+    "上頷竇",
+    "maxillary sinus"
+   ],
+   "zh": "上頷竇",
+   "en": "maxillary sinus",
+   "parts": [
+    [
+     "maxilla",
+     "上頷骨"
+    ],
+    [
+     "sinus",
+     "拉丁「彎曲、空腔」"
+    ]
+   ],
+   "note": "眼眶正下方、最大的副鼻竇；眶底骨折時眶內組織會掉進來。",
+   "rel": ""
+  },
+  {
+   "id": "lab-frontal-sinus",
+   "match": [
+    "額竇",
+    "frontal sinus"
+   ],
+   "zh": "額竇",
+   "en": "frontal sinus",
+   "parts": [
+    [
+     "frontal",
+     "額"
+    ],
+    [
+     "sinus",
+     "空腔"
+    ]
+   ],
+   "note": "眼眶上方、額骨裡的空腔。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ethmoid-sinus",
+   "match": [
+    "篩竇",
+    "篩氣室",
+    "ethmoidal sinus",
+    "ethmoid sinus",
+    "ethmoidal air cells"
+   ],
+   "zh": "篩竇",
+   "en": "ethmoidal sinus",
+   "parts": [
+    [
+     "ethmoid",
+     "篩骨"
+    ],
+    [
+     "sinus",
+     "空腔"
+    ]
+   ],
+   "note": "眼眶內側、篩骨裡一格一格的小氣室。",
+   "rel": ""
+  },
+  {
+   "id": "lab-sphenoid-sinus",
+   "match": [
+    "蝶竇",
+    "sphenoidal sinus",
+    "sphenoid sinus"
+   ],
+   "zh": "蝶竇",
+   "en": "sphenoidal sinus",
+   "parts": [
+    [
+     "sphenoid",
+     "蝶骨"
+    ],
+    [
+     "sinus",
+     "空腔"
+    ]
+   ],
+   "note": "蝶骨體裡的空腔，在蝶鞍正下方。",
+   "rel": ""
+  },
+  {
+   "id": "lab-sr",
+   "match": [
+    "上直肌",
+    "superior rectus",
+    "superior rectus muscle"
+   ],
+   "zh": "上直肌",
+   "en": "superior rectus",
+   "parts": [
+    [
+     "superior",
+     "上"
+    ],
+    [
+     "rectus",
+     "拉丁「直的」"
+    ]
+   ],
+   "note": "眼球上方；眼往上（動眼神經上支）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ir",
+   "match": [
+    "下直肌",
+    "inferior rectus",
+    "inferior rectus muscle"
+   ],
+   "zh": "下直肌",
+   "en": "inferior rectus",
+   "parts": [
+    [
+     "inferior",
+     "下"
+    ],
+    [
+     "rectus",
+     "直的"
+    ]
+   ],
+   "note": "眼球下方；眼往下（動眼神經下支）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-mr",
+   "match": [
+    "medial rectus muscle"
+   ],
+   "zh": "內直肌",
+   "en": "medial rectus",
+   "parts": [
+    [
+     "medial",
+     "內側"
+    ],
+    [
+     "rectus",
+     "直的"
+    ]
+   ],
+   "note": "眼球內側；眼往內（動眼神經下支）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lr",
+   "match": [
+    "外直肌",
+    "lateral rectus",
+    "lateral rectus muscle"
+   ],
+   "zh": "外直肌",
+   "en": "lateral rectus",
+   "parts": [
+    [
+     "lateral",
+     "外側"
+    ],
+    [
+     "rectus",
+     "直的"
+    ]
+   ],
+   "note": "眼球外側；眼往外（外旋神經 VI：LR6）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-so",
+   "match": [
+    "上斜肌",
+    "superior oblique",
+    "superior oblique muscle"
+   ],
+   "zh": "上斜肌",
+   "en": "superior oblique",
+   "parts": [
+    [
+     "oblique",
+     "拉丁 obliquus「斜的」"
+    ]
+   ],
+   "note": "繞過滑車再往後外附著（滑車神經 IV：SO4）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-io",
+   "match": [
+    "下斜肌",
+    "inferior oblique",
+    "inferior oblique muscle"
+   ],
+   "zh": "下斜肌",
+   "en": "inferior oblique",
+   "parts": [
+    [
+     "inferior",
+     "下"
+    ],
+    [
+     "oblique",
+     "斜的"
+    ]
+   ],
+   "note": "唯一從眼眶前下方（上頷骨）起始的眼外肌。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lps",
+   "match": [
+    "提上眼瞼肌",
+    "levator palpebrae superioris",
+    "levator palpebrae superioris muscle",
+    "levator palpebrae"
+   ],
+   "zh": "提上眼瞼肌",
+   "en": "levator palpebrae superioris",
+   "parts": [
+    [
+     "levator",
+     "拉丁 levare「舉起」"
+    ],
+    [
+     "palpebrae",
+     "拉丁 palpebra「眼瞼」"
+    ],
+    [
+     "superioris",
+     "上面的"
+    ]
+   ],
+   "note": "把上眼瞼往上提（動眼神經）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-oo",
+   "match": [
+    "眼輪匝肌",
+    "orbicularis oculi",
+    "orbicularis oculi muscle"
+   ],
+   "zh": "眼輪匝肌",
+   "en": "orbicularis oculi",
+   "parts": [
+    [
+     "orbicularis",
+     "拉丁 orbiculus「小圓圈」"
+    ],
+    [
+     "oculi",
+     "眼的"
+    ]
+   ],
+   "note": "環繞眼睛的環形肌，閉眼（顏面神經 VII）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-zinn",
+   "match": [
+    "辛氏環",
+    "總腱環",
+    "Zinn 氏環",
+    "annulus of Zinn",
+    "common tendinous ring",
+    "anulus of Zinn"
+   ],
+   "zh": "辛氏環",
+   "en": "annulus of Zinn",
+   "parts": [
+    [
+     "annulus",
+     "拉丁「小環」"
+    ],
+    [
+     "Zinn",
+     "德國解剖學家 Johann Zinn"
+    ]
+   ],
+   "note": "四條直肌共同的起點，圍著視神經管與眶上裂中段。",
+   "rel": ""
+  },
+  {
+   "id": "lab-trochlea",
+   "match": [
+    "滑車",
+    "trochlea"
+   ],
+   "zh": "滑車",
+   "en": "trochlea",
+   "parts": [
+    [
+     "trochlea",
+     "拉丁「滑輪」"
+    ]
+   ],
+   "note": "眶內上角的軟骨小環，上斜肌肌腱從這裡轉彎。",
+   "rel": ""
+  },
+  {
+   "id": "lab-eyelid",
+   "match": [
+    "眼瞼",
+    "eyelid",
+    "palpebra"
+   ],
+   "zh": "眼瞼",
+   "en": "eyelid",
+   "parts": [
+    [
+     "palpebra",
+     "拉丁「眼瞼」"
+    ]
+   ],
+   "note": "保護眼球的皮膚皺褶，分前瞼與後瞼。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ant-lamella",
+   "match": [
+    "前瞼",
+    "anterior lamella"
+   ],
+   "zh": "前瞼",
+   "en": "anterior lamella",
+   "parts": [
+    [
+     "anterior",
+     "前"
+    ],
+    [
+     "lamella",
+     "拉丁「小薄片」"
+    ]
+   ],
+   "note": "眼瞼前層：皮膚＋眼輪匝肌（灰線之前）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-post-lamella",
+   "match": [
+    "後瞼",
+    "posterior lamella"
+   ],
+   "zh": "後瞼",
+   "en": "posterior lamella",
+   "parts": [
+    [
+     "posterior",
+     "後"
+    ],
+    [
+     "lamella",
+     "小薄片"
+    ]
+   ],
+   "note": "眼瞼後層：瞼板＋瞼結膜（灰線之後）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-tarsus",
+   "match": [
+    "瞼板",
+    "tarsal plate",
+    "tarsus"
+   ],
+   "zh": "瞼板",
+   "en": "tarsal plate",
+   "parts": [
+    [
+     "tarsus",
+     "希臘 tarsos「平板、編織的墊子」"
+    ]
+   ],
+   "note": "眼瞼裡的緻密結締組織板，撐住眼瞼形狀，裡面有瞼板腺。",
+   "rel": ""
+  },
+  {
+   "id": "lab-muller",
+   "match": [
+    "穆勒氏肌",
+    "上瞼板肌",
+    "Müller 肌",
+    "Müller muscle",
+    "Muller muscle",
+    "Müller's muscle",
+    "superior tarsal muscle"
+   ],
+   "zh": "穆勒氏肌",
+   "en": "Müller muscle",
+   "parts": [
+    [
+     "Müller",
+     "德國解剖學家 Heinrich Müller"
+    ],
+    [
+     "tarsal",
+     "瞼板的"
+    ]
+   ],
+   "note": "提上眼瞼肌下方的平滑肌，連到瞼板上緣；交感神經支配（Horner 時眼瞼輕微下垂）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lat-palp-lig",
+   "match": [
+    "外側瞼韌帶",
+    "lateral palpebral ligament",
+    "lateral canthal tendon",
+    "lateral palpebral raphe"
+   ],
+   "zh": "外側瞼韌帶",
+   "en": "lateral palpebral ligament",
+   "parts": [
+    [
+     "lateral",
+     "外側"
+    ],
+    [
+     "palpebral",
+     "眼瞼的"
+    ],
+    [
+     "ligament",
+     "拉丁 ligare「綁」"
+    ]
+   ],
+   "note": "把上下瞼板外端綁到眶外側結節。",
+   "rel": ""
+  },
+  {
+   "id": "lab-med-palp-lig",
+   "match": [
+    "內側瞼韌帶",
+    "medial palpebral ligament",
+    "medial canthal tendon"
+   ],
+   "zh": "內側瞼韌帶",
+   "en": "medial palpebral ligament",
+   "parts": [
+    [
+     "medial",
+     "內側"
+    ],
+    [
+     "palpebral",
+     "眼瞼的"
+    ],
+    [
+     "ligament",
+     "韌帶"
+    ]
+   ],
+   "note": "把上下瞼板內端綁到上頷骨額突，跨在淚囊前方。",
+   "rel": ""
+  },
+  {
+   "id": "lab-meibomian",
+   "match": [
+    "瞼板腺",
+    "麥氏腺",
+    "Meibomian gland",
+    "meibomian gland",
+    "tarsal gland"
+   ],
+   "zh": "瞼板腺",
+   "en": "Meibomian gland",
+   "parts": [
+    [
+     "Meibom",
+     "德國醫師 Heinrich Meibom"
+    ]
+   ],
+   "note": "瞼板裡直排的皮脂腺，分泌淚膜的油層。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lac-gland",
+   "match": [
+    "淚腺",
+    "lacrimal gland"
+   ],
+   "zh": "淚腺",
+   "en": "lacrimal gland",
+   "parts": [
+    [
+     "lacrimal",
+     "眼淚"
+    ],
+    [
+     "gland",
+     "拉丁 glans「橡實」→ 腺"
+    ]
+   ],
+   "note": "眼眶外上方的淚腺窩，製造眼淚。",
+   "rel": ""
+  },
+  {
+   "id": "lab-punctum",
+   "match": [
+    "淚點",
+    "lacrimal punctum",
+    "lacrimal puncta",
+    "punctum"
+   ],
+   "zh": "淚點",
+   "en": "lacrimal punctum",
+   "parts": [
+    [
+     "punctum",
+     "拉丁「小點」"
+    ]
+   ],
+   "note": "上下眼瞼內側邊緣的小孔，眼淚從這裡流進去。",
+   "rel": ""
+  },
+  {
+   "id": "lab-canaliculus",
+   "match": [
+    "淚小管",
+    "lacrimal canaliculus",
+    "lacrimal canaliculi",
+    "canaliculus"
+   ],
+   "zh": "淚小管",
+   "en": "lacrimal canaliculus",
+   "parts": [
+    [
+     "canaliculus",
+     "拉丁「小管」"
+    ]
+   ],
+   "note": "淚點到淚囊之間的細管。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lac-sac",
+   "match": [
+    "淚囊",
+    "lacrimal sac"
+   ],
+   "zh": "淚囊",
+   "en": "lacrimal sac",
+   "parts": [
+    [
+     "sac",
+     "囊、袋子"
+    ]
+   ],
+   "note": "內眼角淚窩裡的囊，往下接鼻淚管。",
+   "rel": ""
+  },
+  {
+   "id": "lab-nld",
+   "match": [
+    "鼻淚管",
+    "nasolacrimal duct"
+   ],
+   "zh": "鼻淚管",
+   "en": "nasolacrimal duct",
+   "parts": [
+    [
+     "naso-",
+     "鼻"
+    ],
+    [
+     "lacrimal",
+     "眼淚"
+    ],
+    [
+     "duct",
+     "拉丁 ducere「引導」→ 管"
+    ]
+   ],
+   "note": "淚囊往下通到下鼻道的管子。",
+   "rel": ""
+  },
+  {
+   "id": "lab-scg",
+   "match": [
+    "上頸神經節",
+    "superior cervical ganglion"
+   ],
+   "zh": "上頸神經節",
+   "en": "superior cervical ganglion",
+   "parts": [
+    [
+     "cervical",
+     "拉丁 cervix「頸」"
+    ],
+    [
+     "ganglion",
+     "希臘「結」"
+    ]
+   ],
+   "note": "頸部交感神經鏈最上面的節；交感纖維到眼（瞳孔擴大、穆勒氏肌、淚腺血管）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ppg",
+   "match": [
+    "翼顎神經節",
+    "蝶顎神經節",
+    "pterygopalatine ganglion",
+    "sphenopalatine ganglion"
+   ],
+   "zh": "翼顎神經節",
+   "en": "pterygopalatine ganglion",
+   "parts": [
+    [
+     "pteryg-",
+     "希臘「翅膀」（翼突）"
+    ],
+    [
+     "palatine",
+     "上顎"
+    ]
+   ],
+   "note": "副交感神經節：顏面神經來的纖維在這裡換元，再到淚腺。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ica",
+   "match": [
+    "頸內動脈",
+    "內頸動脈",
+    "internal carotid artery"
+   ],
+   "zh": "頸內動脈",
+   "en": "internal carotid artery",
+   "parts": [
+    [
+     "internal",
+     "內"
+    ],
+    [
+     "carotid",
+     "希臘 karoun「使昏迷」"
+    ],
+    [
+     "artery",
+     "希臘 arteria「氣管、動脈」（古人以為動脈裡裝空氣）"
+    ]
+   ],
+   "note": "供應腦與眼；在顱內分出眼動脈、前大腦、中大腦、前脈絡叢動脈等。",
+   "rel": ""
+  },
+  {
+   "id": "lab-eca",
+   "match": [
+    "頸外動脈",
+    "外頸動脈",
+    "external carotid artery"
+   ],
+   "zh": "頸外動脈",
+   "en": "external carotid artery",
+   "parts": [
+    [
+     "external",
+     "外"
+    ],
+    [
+     "carotid",
+     "頸動脈"
+    ]
+   ],
+   "note": "供應臉、頭皮；分出顏面動脈、上頷動脈、淺顳動脈。",
+   "rel": ""
+  },
+  {
+   "id": "lab-aca",
+   "match": [
+    "大腦前動脈",
+    "前大腦動脈",
+    "anterior cerebral artery"
+   ],
+   "zh": "大腦前動脈",
+   "en": "anterior cerebral artery",
+   "parts": [
+    [
+     "anterior",
+     "前"
+    ],
+    [
+     "cerebral",
+     "拉丁 cerebrum「大腦」"
+    ],
+    [
+     "artery",
+     "希臘 arteria「氣管、動脈」（古人以為動脈裡裝空氣）"
+    ]
+   ],
+   "note": "大腦內側面。",
+   "rel": ""
+  },
+  {
+   "id": "lab-mca",
+   "match": [
+    "大腦中動脈",
+    "中大腦動脈",
+    "middle cerebral artery"
+   ],
+   "zh": "大腦中動脈",
+   "en": "middle cerebral artery",
+   "parts": [
+    [
+     "middle",
+     "中"
+    ],
+    [
+     "cerebral",
+     "大腦的"
+    ]
+   ],
+   "note": "大腦外側面。",
+   "rel": ""
+  },
+  {
+   "id": "lab-pca",
+   "match": [
+    "大腦後動脈",
+    "後大腦動脈",
+    "posterior cerebral artery"
+   ],
+   "zh": "大腦後動脈",
+   "en": "posterior cerebral artery",
+   "parts": [
+    [
+     "posterior",
+     "後"
+    ],
+    [
+     "cerebral",
+     "大腦的"
+    ]
+   ],
+   "note": "枕葉（視覺皮質）的主要血液；來自基底動脈。",
+   "rel": ""
+  },
+  {
+   "id": "lab-acom",
+   "match": [
+    "前交通動脈",
+    "anterior communicating artery"
+   ],
+   "zh": "前交通動脈",
+   "en": "anterior communicating artery",
+   "parts": [
+    [
+     "communicating",
+     "拉丁 communicare「連通」"
+    ]
+   ],
+   "note": "連接左右大腦前動脈（不是頸內動脈的分支）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-pcom",
+   "match": [
+    "後交通動脈",
+    "posterior communicating artery"
+   ],
+   "zh": "後交通動脈",
+   "en": "posterior communicating artery",
+   "parts": [
+    [
+     "posterior",
+     "後"
+    ],
+    [
+     "communicating",
+     "連通"
+    ]
+   ],
+   "note": "連接頸內動脈與大腦後動脈。",
+   "rel": ""
+  },
+  {
+   "id": "lab-achor",
+   "match": [
+    "前脈絡叢動脈",
+    "前脈絡動脈",
+    "anterior choroidal artery"
+   ],
+   "zh": "前脈絡叢動脈",
+   "en": "anterior choroidal artery",
+   "parts": [
+    [
+     "choroid",
+     "希臘 chorion「膜」＋-oid → 脈絡叢"
+    ]
+   ],
+   "note": "頸內動脈分支，沿視束走，供應視束、外側膝狀體。",
+   "rel": ""
+  },
+  {
+   "id": "lab-basilar",
+   "match": [
+    "基底動脈",
+    "basilar artery"
+   ],
+   "zh": "基底動脈",
+   "en": "basilar artery",
+   "parts": [
+    [
+     "basilar",
+     "基底的（在腦幹底面）"
+    ]
+   ],
+   "note": "兩條椎動脈合成，最後分成兩條大腦後動脈。",
+   "rel": ""
+  },
+  {
+   "id": "lab-vertebral",
+   "match": [
+    "椎動脈",
+    "vertebral artery"
+   ],
+   "zh": "椎動脈",
+   "en": "vertebral artery",
+   "parts": [
+    [
+     "vertebra",
+     "拉丁「脊椎骨」"
+    ]
+   ],
+   "note": "穿過頸椎進顱內，合成基底動脈。",
+   "rel": ""
+  },
+  {
+   "id": "lab-willis",
+   "match": [
+    "威利氏環",
+    "Willis 環",
+    "大腦動脈環",
+    "circle of Willis",
+    "cerebral arterial circle"
+   ],
+   "zh": "威利氏環",
+   "en": "circle of Willis",
+   "parts": [
+    [
+     "Willis",
+     "英國醫師 Thomas Willis"
+    ]
+   ],
+   "note": "腦底的動脈環：前後交通動脈把頸內動脈與基底動脈系統連起來。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ophth-a",
+   "match": [
+    "眼動脈",
+    "ophthalmic artery"
+   ],
+   "zh": "眼動脈",
+   "en": "ophthalmic artery",
+   "parts": [
+    [
+     "ophthalmos",
+     "希臘「眼」"
+    ],
+    [
+     "artery",
+     "希臘 arteria「氣管、動脈」（古人以為動脈裡裝空氣）"
+    ]
+   ],
+   "note": "頸內動脈第一個大分支，經視神經管進眼眶，供應眼與眼眶。",
+   "rel": ""
+  },
+  {
+   "id": "lab-cra",
+   "match": [
+    "視網膜中央動脈",
+    "中央視網膜動脈",
+    "視網膜中心動脈",
+    "central retinal artery",
+    "central artery of retina"
+   ],
+   "zh": "視網膜中央動脈",
+   "en": "central retinal artery",
+   "parts": [
+    [
+     "central",
+     "中央"
+    ],
+    [
+     "retinal",
+     "視網膜的"
+    ]
+   ],
+   "note": "眼動脈分支，從下方進入視神經中央，在視神經盤分支到內層視網膜。",
+   "rel": ""
+  },
+  {
+   "id": "lab-crv",
+   "match": [
+    "視網膜中央靜脈",
+    "中央視網膜靜脈",
+    "central retinal vein"
+   ],
+   "zh": "視網膜中央靜脈",
+   "en": "central retinal vein",
+   "parts": [
+    [
+     "central",
+     "中央"
+    ],
+    [
+     "vein",
+     "拉丁 vena「血管、靜脈」"
+    ]
+   ],
+   "note": "伴著視網膜中央動脈離開眼球，流到上眼靜脈或海綿竇。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ciliary-a",
+   "match": [
+    "睫狀動脈",
+    "ciliary artery",
+    "ciliary arteries"
+   ],
+   "zh": "睫狀動脈",
+   "en": "ciliary artery",
+   "parts": [
+    [
+     "ciliary",
+     "拉丁 cilium「睫毛」"
+    ],
+    [
+     "artery",
+     "希臘 arteria「氣管、動脈」（古人以為動脈裡裝空氣）"
+    ]
+   ],
+   "note": "睫狀後長、後短、前睫狀動脈的總稱，供應葡萄膜與視神經盤。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lpca",
+   "match": [
+    "睫狀後長動脈",
+    "後長睫狀動脈",
+    "long posterior ciliary artery"
+   ],
+   "zh": "睫狀後長動脈",
+   "en": "long posterior ciliary artery",
+   "parts": [
+    [
+     "long",
+     "長"
+    ],
+    [
+     "posterior",
+     "後"
+    ],
+    [
+     "ciliary",
+     "睫狀"
+    ]
+   ],
+   "note": "左右各一條，在鞏膜與脈絡膜之間往前走，到睫狀體與虹膜。",
+   "rel": ""
+  },
+  {
+   "id": "lab-spca",
+   "match": [
+    "睫狀後短動脈",
+    "後短睫狀動脈",
+    "short posterior ciliary artery"
+   ],
+   "zh": "睫狀後短動脈",
+   "en": "short posterior ciliary artery",
+   "parts": [
+    [
+     "short",
+     "短"
+    ],
+    [
+     "posterior",
+     "後"
+    ]
+   ],
+   "note": "十幾條，在視神經周圍穿鞏膜，供應脈絡膜與視神經盤（辛氏環）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-aca-cil",
+   "match": [
+    "睫狀前動脈",
+    "前睫狀動脈",
+    "anterior ciliary artery"
+   ],
+   "zh": "睫狀前動脈",
+   "en": "anterior ciliary artery",
+   "parts": [
+    [
+     "anterior",
+     "前"
+    ],
+    [
+     "ciliary",
+     "睫狀"
+    ]
+   ],
+   "note": "來自直肌的肌動脈，在角膜緣附近穿鞏膜。",
+   "rel": ""
+  },
+  {
+   "id": "lab-zinn-haller",
+   "match": [
+    "視神經血管環",
+    "辛氏環（血管）",
+    "Zinn-Haller 環",
+    "辛哈氏環",
+    "circle of Zinn-Haller",
+    "circle of Zinn",
+    "circle of Haller"
+   ],
+   "zh": "視神經血管環",
+   "en": "circle of Zinn-Haller",
+   "parts": [
+    [
+     "Zinn",
+     "Johann Zinn"
+    ],
+    [
+     "Haller",
+     "Albrecht von Haller"
+    ]
+   ],
+   "note": "後短睫狀動脈在視神經盤周圍吻合成的小動脈環。",
+   "rel": ""
+  },
+  {
+   "id": "lab-cilioretinal",
+   "match": [
+    "睫狀視網膜動脈",
+    "cilioretinal artery"
+   ],
+   "zh": "睫狀視網膜動脈",
+   "en": "cilioretinal artery",
+   "parts": [
+    [
+     "cilio-",
+     "睫狀"
+    ],
+    [
+     "retinal",
+     "視網膜"
+    ]
+   ],
+   "note": "來自後短睫狀動脈，從視神經盤顳側緣穿出供應黃斑（10–33% 的人有）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-muscular-a",
+   "match": [
+    "肌動脈",
+    "內肌動脈",
+    "外肌動脈",
+    "muscular artery",
+    "medial muscular artery",
+    "lateral muscular artery"
+   ],
+   "zh": "肌動脈",
+   "en": "muscular artery",
+   "parts": [
+    [
+     "muscular",
+     "肌肉的"
+    ]
+   ],
+   "note": "眼動脈到眼外肌的分支，延伸成睫狀前動脈。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lac-a",
+   "match": [
+    "淚動脈",
+    "lacrimal artery"
+   ],
+   "zh": "淚動脈",
+   "en": "lacrimal artery",
+   "parts": [
+    [
+     "lacrimal",
+     "眼淚"
+    ]
+   ],
+   "note": "眼動脈分支，沿外直肌上緣到淚腺。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lat-palp-a",
+   "match": [
+    "外瞼動脈",
+    "外側瞼動脈",
+    "lateral palpebral artery"
+   ],
+   "zh": "外瞼動脈",
+   "en": "lateral palpebral artery",
+   "parts": [
+    [
+     "lateral",
+     "外側"
+    ],
+    [
+     "palpebral",
+     "眼瞼的"
+    ]
+   ],
+   "note": "淚動脈的分支，到上下眼瞼外側。",
+   "rel": ""
+  },
+  {
+   "id": "lab-med-palp-a",
+   "match": [
+    "內瞼動脈",
+    "內側瞼動脈",
+    "medial palpebral artery"
+   ],
+   "zh": "內瞼動脈",
+   "en": "medial palpebral artery",
+   "parts": [
+    [
+     "medial",
+     "內側"
+    ],
+    [
+     "palpebral",
+     "眼瞼的"
+    ]
+   ],
+   "note": "眼動脈分支，到上下眼瞼內側。",
+   "rel": ""
+  },
+  {
+   "id": "lab-supraorb-a",
+   "match": [
+    "眶上動脈",
+    "上眼窩動脈",
+    "supraorbital artery"
+   ],
+   "zh": "眶上動脈",
+   "en": "supraorbital artery",
+   "parts": [
+    [
+     "supra-",
+     "上"
+    ],
+    [
+     "orbita",
+     "拉丁「車輪軌道、圓圈」→ 眼眶"
+    ]
+   ],
+   "note": "眼動脈分支，從眶上孔出到額頭。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ant-eth-a",
+   "match": [
+    "前篩動脈",
+    "anterior ethmoidal artery",
+    "anterior ethmoid artery"
+   ],
+   "zh": "前篩動脈",
+   "en": "anterior ethmoidal artery",
+   "parts": [
+    [
+     "anterior",
+     "前"
+    ],
+    [
+     "ethmoid",
+     "篩骨"
+    ]
+   ],
+   "note": "經前篩孔到鼻腔與前顱窩。",
+   "rel": ""
+  },
+  {
+   "id": "lab-post-eth-a",
+   "match": [
+    "後篩動脈",
+    "posterior ethmoidal artery",
+    "posterior ethmoid artery"
+   ],
+   "zh": "後篩動脈",
+   "en": "posterior ethmoidal artery",
+   "parts": [
+    [
+     "posterior",
+     "後"
+    ],
+    [
+     "ethmoid",
+     "篩骨"
+    ]
+   ],
+   "note": "經後篩孔到後篩竇與鼻腔。",
+   "rel": ""
+  },
+  {
+   "id": "lab-supratroch-a",
+   "match": [
+    "滑車上動脈",
+    "額動脈",
+    "supratrochlear artery",
+    "frontal artery"
+   ],
+   "zh": "滑車上動脈",
+   "en": "supratrochlear artery",
+   "parts": [
+    [
+     "supra-",
+     "上"
+    ],
+    [
+     "trochlea",
+     "滑車"
+    ]
+   ],
+   "note": "眼動脈終末支之一，在滑車上方出眼眶到額頭。",
+   "rel": ""
+  },
+  {
+   "id": "lab-infratroch-a",
+   "match": [
+    "滑車下動脈",
+    "infratrochlear artery"
+   ],
+   "zh": "滑車下動脈",
+   "en": "infratrochlear artery",
+   "parts": [
+    [
+     "infra-",
+     "下"
+    ],
+    [
+     "trochlea",
+     "滑車"
+    ]
+   ],
+   "note": "滑車下方出眼眶的小分支。",
+   "rel": ""
+  },
+  {
+   "id": "lab-dorsal-nasal-a",
+   "match": [
+    "鼻背動脈",
+    "鼻額動脈",
+    "dorsal nasal artery",
+    "nasal artery",
+    "nasofrontal artery"
+   ],
+   "zh": "鼻背動脈",
+   "en": "dorsal nasal artery",
+   "parts": [
+    [
+     "dorsal",
+     "背側"
+    ],
+    [
+     "nasal",
+     "鼻"
+    ]
+   ],
+   "note": "眼動脈終末支，到鼻樑；與顏面動脈的眼角動脈吻合。",
+   "rel": ""
+  },
+  {
+   "id": "lab-mma",
+   "match": [
+    "中腦膜動脈",
+    "網膜中動脈",
+    "middle meningeal artery"
+   ],
+   "zh": "中腦膜動脈",
+   "en": "middle meningeal artery",
+   "parts": [
+    [
+     "meningeal",
+     "腦膜的（希臘 meninx）"
+    ]
+   ],
+   "note": "上頷動脈分支，經棘孔進顱內供應硬腦膜。",
+   "rel": ""
+  },
+  {
+   "id": "lab-maxillary-a",
+   "match": [
+    "上頷動脈",
+    "頷動脈",
+    "上頜動脈",
+    "maxillary artery"
+   ],
+   "zh": "上頷動脈",
+   "en": "maxillary artery",
+   "parts": [
+    [
+     "maxilla",
+     "上頷"
+    ]
+   ],
+   "note": "頸外動脈終末支，分出中腦膜動脈、眶下動脈。",
+   "rel": ""
+  },
+  {
+   "id": "lab-infraorb-a",
+   "match": [
+    "眶下動脈",
+    "下眼窩動脈",
+    "infraorbital artery",
+    "suborbital artery"
+   ],
+   "zh": "眶下動脈",
+   "en": "infraorbital artery",
+   "parts": [
+    [
+     "infra-",
+     "下"
+    ],
+    [
+     "orbita",
+     "拉丁「車輪軌道、圓圈」→ 眼眶"
+    ]
+   ],
+   "note": "上頷動脈分支，經眶下裂、眶下孔到臉頰（屬頸外系統）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-angular-a",
+   "match": [
+    "眼角動脈",
+    "angular artery"
+   ],
+   "zh": "眼角動脈",
+   "en": "angular artery",
+   "parts": [
+    [
+     "angular",
+     "拉丁 angulus「角」→ 內眼角"
+    ]
+   ],
+   "note": "顏面動脈的終末支，在內眼角與眼動脈系統吻合（屬頸外系統）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-facial-a",
+   "match": [
+    "顏面動脈",
+    "facial artery"
+   ],
+   "zh": "顏面動脈",
+   "en": "facial artery",
+   "parts": [
+    [
+     "facial",
+     "臉的"
+    ]
+   ],
+   "note": "頸外動脈分支，終末成眼角動脈。",
+   "rel": ""
+  },
+  {
+   "id": "lab-sta",
+   "match": [
+    "淺顳動脈",
+    "顳淺動脈",
+    "superficial temporal artery"
+   ],
+   "zh": "淺顳動脈",
+   "en": "superficial temporal artery",
+   "parts": [
+    [
+     "superficial",
+     "淺"
+    ],
+    [
+     "temporal",
+     "顳"
+    ]
+   ],
+   "note": "頸外動脈終末支，在耳前摸得到脈搏。",
+   "rel": ""
+  },
+  {
+   "id": "lab-sup-palp-a",
+   "match": [
+    "上瞼動脈弓",
+    "superior palpebral arcade",
+    "superior palpebral artery"
+   ],
+   "zh": "上瞼動脈弓",
+   "en": "superior palpebral arcade",
+   "parts": [
+    [
+     "palpebral",
+     "眼瞼的"
+    ],
+    [
+     "arcade",
+     "拱形"
+    ]
+   ],
+   "note": "內外瞼動脈在上眼瞼吻合成的動脈弓。",
+   "rel": ""
+  },
+  {
+   "id": "lab-inf-palp-a",
+   "match": [
+    "下瞼動脈弓",
+    "inferior palpebral arcade",
+    "inferior palpebral artery"
+   ],
+   "zh": "下瞼動脈弓",
+   "en": "inferior palpebral arcade",
+   "parts": [
+    [
+     "palpebral",
+     "眼瞼的"
+    ]
+   ],
+   "note": "下眼瞼的動脈弓。",
+   "rel": ""
+  },
+  {
+   "id": "lab-major-circle",
+   "match": [
+    "虹膜大動脈環",
+    "major arterial circle of iris",
+    "major arterial circle"
+   ],
+   "zh": "虹膜大動脈環",
+   "en": "major arterial circle of iris",
+   "parts": [
+    [
+     "major",
+     "大"
+    ],
+    [
+     "circle",
+     "環"
+    ]
+   ],
+   "note": "睫狀體前部、虹膜根部的動脈環（後長＋前睫狀動脈）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-vortex",
+   "match": [
+    "渦靜脈",
+    "螺旋靜脈",
+    "vortex vein",
+    "vorticose vein"
+   ],
+   "zh": "渦靜脈",
+   "en": "vortex vein",
+   "parts": [
+    [
+     "vortex",
+     "拉丁「漩渦」"
+    ]
+   ],
+   "note": "脈絡膜的出口，4–8 條，在赤道後方斜穿鞏膜。",
+   "rel": ""
+  },
+  {
+   "id": "lab-aciv",
+   "match": [
+    "睫狀前靜脈",
+    "前睫狀靜脈",
+    "anterior ciliary vein"
+   ],
+   "zh": "睫狀前靜脈",
+   "en": "anterior ciliary vein",
+   "parts": [
+    [
+     "anterior",
+     "前"
+    ],
+    [
+     "ciliary",
+     "睫狀"
+    ]
+   ],
+   "note": "伴著睫狀前動脈，收集眼前段的血。",
+   "rel": ""
+  },
+  {
+   "id": "lab-angular-v",
+   "match": [
+    "眼角靜脈",
+    "angular vein"
+   ],
+   "zh": "眼角靜脈",
+   "en": "angular vein",
+   "parts": [
+    [
+     "angular",
+     "角"
+    ]
+   ],
+   "note": "內眼角的靜脈；連通顏面靜脈與上眼靜脈（危險三角）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-facial-v",
+   "match": [
+    "顏面靜脈",
+    "facial vein"
+   ],
+   "zh": "顏面靜脈",
+   "en": "facial vein",
+   "parts": [
+    [
+     "facial",
+     "臉的"
+    ]
+   ],
+   "note": "臉部的主要靜脈，沒有瓣膜。",
+   "rel": ""
+  },
+  {
+   "id": "lab-sov",
+   "match": [
+    "上眼靜脈",
+    "眼上靜脈",
+    "superior ophthalmic vein"
+   ],
+   "zh": "上眼靜脈",
+   "en": "superior ophthalmic vein",
+   "parts": [
+    [
+     "superior",
+     "上"
+    ],
+    [
+     "ophthalmic",
+     "眼的"
+    ],
+    [
+     "vein",
+     "拉丁 vena「血管、靜脈」"
+    ]
+   ],
+   "note": "眼眶主要靜脈，經眶上裂到海綿竇。",
+   "rel": ""
+  },
+  {
+   "id": "lab-iov",
+   "match": [
+    "下眼靜脈",
+    "眼下靜脈",
+    "inferior ophthalmic vein"
+   ],
+   "zh": "下眼靜脈",
+   "en": "inferior ophthalmic vein",
+   "parts": [
+    [
+     "inferior",
+     "下"
+    ],
+    [
+     "ophthalmic",
+     "眼的"
+    ]
+   ],
+   "note": "眼眶下部的靜脈，到海綿竇或翼狀靜脈叢。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ophth-v",
+   "match": [
+    "眼靜脈",
+    "ophthalmic vein",
+    "ophthalmic veins"
+   ],
+   "zh": "眼靜脈",
+   "en": "ophthalmic vein",
+   "parts": [
+    [
+     "ophthalmic",
+     "眼的"
+    ],
+    [
+     "vein",
+     "拉丁 vena「血管、靜脈」"
+    ]
+   ],
+   "note": "上、下眼靜脈的總稱，最後都到海綿竇。",
+   "rel": ""
+  },
+  {
+   "id": "lab-cav",
+   "match": [
+    "海綿竇",
+    "cavernous sinus"
+   ],
+   "zh": "海綿竇",
+   "en": "cavernous sinus",
+   "parts": [
+    [
+     "cavernous",
+     "拉丁 caverna「洞穴」→ 像海綿一樣有很多空腔"
+    ],
+    [
+     "sinus",
+     "腔、竇"
+    ]
+   ],
+   "note": "蝶鞍兩側的靜脈竇；頸內動脈、III、IV、V1、V2、VI 經過。",
+   "rel": ""
+  },
+  {
+   "id": "lab-choroid",
+   "match": [
+    "脈絡膜",
+    "choroid"
+   ],
+   "zh": "脈絡膜",
+   "en": "choroid",
+   "parts": [
+    [
+     "chorion",
+     "希臘「膜」"
+    ],
+    [
+     "-oid",
+     "像…的"
+    ]
+   ],
+   "note": "視網膜與鞏膜之間富含血管的層（葡萄膜後段）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-sta-ret",
+   "match": [
+    "顳上動脈",
+    "superior temporal arteriole",
+    "superior temporal artery",
+    "superior temporal branch"
+   ],
+   "zh": "顳上動脈",
+   "en": "superior temporal arteriole",
+   "parts": [
+    [
+     "superior",
+     "上"
+    ],
+    [
+     "temporal",
+     "顳側"
+    ]
+   ],
+   "note": "視網膜中央動脈往顳上方的分支。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ita-ret",
+   "match": [
+    "顳下動脈",
+    "inferior temporal arteriole",
+    "inferior temporal artery",
+    "inferior temporal branch"
+   ],
+   "zh": "顳下動脈",
+   "en": "inferior temporal arteriole",
+   "parts": [
+    [
+     "inferior",
+     "下"
+    ],
+    [
+     "temporal",
+     "顳側"
+    ]
+   ],
+   "note": "往顳下方的分支。",
+   "rel": ""
+  },
+  {
+   "id": "lab-sna-ret",
+   "match": [
+    "鼻上動脈",
+    "superior nasal arteriole",
+    "superior nasal artery",
+    "superior nasal branch"
+   ],
+   "zh": "鼻上動脈",
+   "en": "superior nasal arteriole",
+   "parts": [
+    [
+     "superior",
+     "上"
+    ],
+    [
+     "nasal",
+     "鼻側"
+    ]
+   ],
+   "note": "往鼻上方的分支。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ina-ret",
+   "match": [
+    "鼻下動脈",
+    "inferior nasal arteriole",
+    "inferior nasal artery",
+    "inferior nasal branch"
+   ],
+   "zh": "鼻下動脈",
+   "en": "inferior nasal arteriole",
+   "parts": [
+    [
+     "inferior",
+     "下"
+    ],
+    [
+     "nasal",
+     "鼻側"
+    ]
+   ],
+   "note": "往鼻下方的分支。",
+   "rel": ""
+  },
+  {
+   "id": "lab-prelam",
+   "match": [
+    "篩板前區",
+    "prelaminar region",
+    "prelaminar part"
+   ],
+   "zh": "篩板前區",
+   "en": "prelaminar region",
+   "parts": [
+    [
+     "pre-",
+     "前"
+    ],
+    [
+     "lamina",
+     "篩板"
+    ]
+   ],
+   "note": "視神經盤篩板之前的部分：纖維無髓鞘。",
+   "rel": ""
+  },
+  {
+   "id": "lab-retrolam",
+   "match": [
+    "篩板後區",
+    "retrolaminar region",
+    "retrolaminar part"
+   ],
+   "zh": "篩板後區",
+   "en": "retrolaminar region",
+   "parts": [
+    [
+     "retro-",
+     "後"
+    ],
+    [
+     "lamina",
+     "篩板"
+    ]
+   ],
+   "note": "篩板之後：纖維開始有髓鞘，視神經變粗。",
+   "rel": ""
+  },
+  {
+   "id": "lab-photoreceptor",
+   "match": [
+    "感光細胞",
+    "photoreceptor",
+    "photoreceptor cell",
+    "photoreceptors"
+   ],
+   "zh": "感光細胞",
+   "en": "photoreceptor",
+   "parts": [
+    [
+     "photo-",
+     "希臘「光」"
+    ],
+    [
+     "receptor",
+     "接收者"
+    ]
+   ],
+   "note": "桿細胞與錐細胞，把光變成神經訊號（視網膜最外層的神經細胞）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-bipolar",
+   "match": [
+    "雙極細胞",
+    "bipolar cell",
+    "bipolar cells"
+   ],
+   "zh": "雙極細胞",
+   "en": "bipolar cell",
+   "parts": [
+    [
+     "bi-",
+     "兩"
+    ],
+    [
+     "polar",
+     "極"
+    ]
+   ],
+   "note": "兩端各一個突起，把感光細胞的訊號傳給神經節細胞（內顆粒層）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ganglion-cell",
+   "match": [
+    "神經節細胞",
+    "ganglion cell",
+    "ganglion cells",
+    "retinal ganglion cell"
+   ],
+   "zh": "神經節細胞",
+   "en": "ganglion cell",
+   "parts": [
+    [
+     "ganglion",
+     "希臘「結」"
+    ]
+   ],
+   "note": "視網膜最內層的神經元，軸突集合成視神經。",
+   "rel": ""
+  },
+  {
+   "id": "lab-pons",
+   "match": [
+    "橋腦",
+    "腦橋",
+    "pons"
+   ],
+   "zh": "橋腦",
+   "en": "pons",
+   "parts": [
+    [
+     "pons",
+     "拉丁「橋」"
+    ]
+   ],
+   "note": "腦幹中段，像一座橋把小腦兩側連起來；有外旋神經核、顏面神經核。",
+   "rel": ""
+  },
+  {
+   "id": "lab-medulla",
+   "match": [
+    "延腦",
+    "延髓",
+    "medulla oblongata",
+    "medulla"
+   ],
+   "zh": "延腦",
+   "en": "medulla oblongata",
+   "parts": [
+    [
+     "medulla",
+     "拉丁「髓」"
+    ],
+    [
+     "oblongata",
+     "拉長的"
+    ]
+   ],
+   "note": "腦幹最下段，接脊髓；管呼吸心跳。",
+   "rel": ""
+  },
+  {
+   "id": "lab-tectum",
+   "match": [
+    "頂蓋",
+    "中腦頂蓋",
+    "tectum",
+    "tectum of midbrain"
+   ],
+   "zh": "頂蓋",
+   "en": "tectum",
+   "parts": [
+    [
+     "tectum",
+     "拉丁「屋頂」"
+    ]
+   ],
+   "note": "中腦背面（上丘＋下丘）像屋頂的部分。",
+   "rel": ""
+  },
+  {
+   "id": "lab-cn3-nuc",
+   "match": [
+    "動眼神經核",
+    "動眼核",
+    "oculomotor nucleus",
+    "nucleus of oculomotor nerve"
+   ],
+   "zh": "動眼神經核",
+   "en": "oculomotor nucleus",
+   "parts": [
+    [
+     "oculo-",
+     "眼"
+    ],
+    [
+     "motor",
+     "動"
+    ]
+   ],
+   "note": "中腦上丘高度、導水管前方；支配大部分眼外肌。",
+   "rel": ""
+  },
+  {
+   "id": "lab-cn4-nuc",
+   "match": [
+    "滑車神經核",
+    "trochlear nucleus",
+    "nucleus of trochlear nerve"
+   ],
+   "zh": "滑車神經核",
+   "en": "trochlear nucleus",
+   "parts": [
+    [
+     "trochlea",
+     "滑輪（上斜肌）"
+    ]
+   ],
+   "note": "中腦下丘高度；纖維交叉後從腦幹背面出來。",
+   "rel": ""
+  },
+  {
+   "id": "lab-cn6-nuc",
+   "match": [
+    "外旋神經核",
+    "外展神經核",
+    "abducens nucleus",
+    "abducent nucleus",
+    "nucleus of abducent nerve",
+    "nucleus of abducens nerve"
+   ],
+   "zh": "外旋神經核",
+   "en": "abducens nucleus",
+   "parts": [
+    [
+     "abducens",
+     "拉丁 abducere「拉開」→ 眼往外"
+    ]
+   ],
+   "note": "橋腦、顏面丘深面；支配外直肌。",
+   "rel": ""
+  },
+  {
+   "id": "lab-cn7-nuc",
+   "match": [
+    "顏面神經核",
+    "facial nucleus",
+    "nucleus of facial nerve"
+   ],
+   "zh": "顏面神經核",
+   "en": "facial nucleus",
+   "parts": [
+    [
+     "facial",
+     "臉的"
+    ]
+   ],
+   "note": "橋腦；纖維繞過外旋神經核（顏面神經膝）支配表情肌、眼輪匝肌。",
+   "rel": ""
+  },
+  {
+   "id": "lab-mlf",
+   "match": [
+    "內側縱束",
+    "medial longitudinal fasciculus",
+    "MLF"
+   ],
+   "zh": "內側縱束",
+   "en": "medial longitudinal fasciculus",
+   "parts": [
+    [
+     "medial",
+     "內側"
+    ],
+    [
+     "longitudinal",
+     "縱向"
+    ],
+    [
+     "fasciculus",
+     "拉丁「小束」"
+    ]
+   ],
+   "note": "連接 III、IV、VI 神經核的纖維束，讓兩眼一起動。",
+   "rel": ""
+  },
+  {
+   "id": "lab-short-cil-n",
+   "match": [
+    "睫狀短神經",
+    "短睫狀神經",
+    "short ciliary nerve",
+    "short ciliary nerves"
+   ],
+   "zh": "睫狀短神經",
+   "en": "short ciliary nerve",
+   "parts": [
+    [
+     "short",
+     "短"
+    ],
+    [
+     "ciliary",
+     "睫狀"
+    ]
+   ],
+   "note": "從睫狀神經節出發，帶副交感（縮瞳、調節）與感覺、交感纖維進眼球。",
+   "rel": ""
+  },
+  {
+   "id": "lab-long-cil-n",
+   "match": [
+    "睫狀長神經",
+    "長睫狀神經",
+    "long ciliary nerve",
+    "long ciliary nerves"
+   ],
+   "zh": "睫狀長神經",
+   "en": "long ciliary nerve",
+   "parts": [
+    [
+     "long",
+     "長"
+    ]
+   ],
+   "note": "直接從鼻睫神經分出（不經睫狀神經節），帶交感（散瞳）與角膜感覺。",
+   "rel": ""
+  },
+  {
+   "id": "lab-ant-eth-n",
+   "match": [
+    "前篩神經",
+    "anterior ethmoidal nerve",
+    "anterior ethmoid nerve"
+   ],
+   "zh": "前篩神經",
+   "en": "anterior ethmoidal nerve",
+   "parts": [
+    [
+     "anterior",
+     "前"
+    ],
+    [
+     "ethmoid",
+     "篩骨"
+    ]
+   ],
+   "note": "鼻睫神經分支，經前篩孔。",
+   "rel": ""
+  },
+  {
+   "id": "lab-post-eth-n",
+   "match": [
+    "後篩神經",
+    "posterior ethmoidal nerve",
+    "posterior ethmoid nerve"
+   ],
+   "zh": "後篩神經",
+   "en": "posterior ethmoidal nerve",
+   "parts": [
+    [
+     "posterior",
+     "後"
+    ],
+    [
+     "ethmoid",
+     "篩骨"
+    ]
+   ],
+   "note": "鼻睫神經分支，經後篩孔。",
+   "rel": ""
+  },
+  {
+   "id": "lab-supratroch-n",
+   "match": [
+    "滑車上神經",
+    "supratrochlear nerve"
+   ],
+   "zh": "滑車上神經",
+   "en": "supratrochlear nerve",
+   "parts": [
+    [
+     "supra-",
+     "上"
+    ],
+    [
+     "trochlea",
+     "滑車"
+    ]
+   ],
+   "note": "額神經分支，到額頭內側。",
+   "rel": ""
+  },
+  {
+   "id": "lab-infratroch-n",
+   "match": [
+    "滑車下神經",
+    "infratrochlear nerve"
+   ],
+   "zh": "滑車下神經",
+   "en": "infratrochlear nerve",
+   "parts": [
+    [
+     "infra-",
+     "下"
+    ],
+    [
+     "trochlea",
+     "滑車"
+    ]
+   ],
+   "note": "鼻睫神經終末支，到內眼角與鼻樑。",
+   "rel": ""
+  },
+  {
+   "id": "lab-cn5",
+   "match": [
+    "三叉神經",
+    "trigeminal nerve",
+    "CN V"
+   ],
+   "zh": "三叉神經",
+   "en": "trigeminal nerve",
+   "parts": [
+    [
+     "tri-",
+     "三"
+    ],
+    [
+     "geminus",
+     "雙胞胎 → 三胞胎（三個分支）"
+    ]
+   ],
+   "note": "第 V 對腦神經：眼神經 V1、上頷神經 V2、下頷神經 V3。",
+   "rel": ""
+  },
+  {
+   "id": "lab-v1n",
+   "match": [
+    "眼神經",
+    "眼支",
+    "ophthalmic nerve"
+   ],
+   "zh": "眼神經",
+   "en": "ophthalmic nerve",
+   "parts": [
+    [
+     "ophthalmic",
+     "眼的"
+    ]
+   ],
+   "note": "三叉神經第一支，經眶上裂；分成額、淚腺、鼻睫神經。",
+   "rel": ""
+  },
+  {
+   "id": "lab-nasocil",
+   "match": [
+    "鼻睫神經",
+    "nasociliary nerve"
+   ],
+   "zh": "鼻睫神經",
+   "en": "nasociliary nerve",
+   "parts": [
+    [
+     "naso-",
+     "鼻"
+    ],
+    [
+     "ciliary",
+     "睫狀"
+    ]
+   ],
+   "note": "V1 分支，往眼球與鼻；分出長睫狀神經、篩神經、滑車下神經。",
+   "rel": ""
+  },
+  {
+   "id": "lab-lac-n",
+   "match": [
+    "淚腺神經",
+    "淚神經",
+    "lacrimal nerve"
+   ],
+   "zh": "淚腺神經",
+   "en": "lacrimal nerve",
+   "parts": [
+    [
+     "lacrimal",
+     "眼淚"
+    ]
+   ],
+   "note": "V1 分支，往淚腺方向（外上方）。",
+   "rel": ""
+  },
+  {
+   "id": "lab-frontal-n",
+   "match": [
+    "額神經",
+    "frontal nerve"
+   ],
+   "zh": "額神經",
+   "en": "frontal nerve",
+   "parts": [
+    [
+     "frontal",
+     "額"
+    ]
+   ],
+   "note": "V1 最大的分支，沿眶頂往前，分成眶上、滑車上神經。",
+   "rel": ""
+  },
+  {
+   "id": "lab-cn4",
+   "match": [
+    "滑車神經",
+    "trochlear nerve",
+    "CN IV"
+   ],
+   "zh": "滑車神經",
+   "en": "trochlear nerve",
+   "parts": [
+    [
+     "trochlea",
+     "滑輪"
+    ]
+   ],
+   "note": "第 IV 對腦神經，支配上斜肌。",
+   "rel": ""
+  },
+  {
+   "id": "lab-cn6",
+   "match": [
+    "外旋神經",
+    "外展神經",
+    "abducens nerve",
+    "abducent nerve",
+    "CN VI"
+   ],
+   "zh": "外旋神經",
+   "en": "abducens nerve",
+   "parts": [
+    [
+     "abducens",
+     "拉開 → 眼往外"
+    ]
+   ],
+   "note": "第 VI 對腦神經，支配外直肌。",
+   "rel": ""
+  }
+ ]
+}

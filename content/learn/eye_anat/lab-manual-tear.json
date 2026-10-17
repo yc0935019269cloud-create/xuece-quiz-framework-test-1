@@ -1,0 +1,367 @@
+{
+ "schema": "xd-learn/1",
+ "id": "eyelab-m-tear",
+ "subject": "eye_anat",
+ "style": "atlas",
+ "unit": "手冊第 10 頁：淚液系統",
+ "title": "手冊第 10 頁：淚液系統",
+ "desc": "《新實驗手冊》第 10 頁全部名詞：淚腺、淚點、淚小管、淚囊、鼻淚管、上頸神經節。",
+ "level": 2,
+ "minutes": 40,
+ "order": 16,
+ "source": "《新實驗手冊-01.pdf》第 10 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源",
+ "tags": [
+  "實驗手冊",
+  "淚器"
+ ],
+ "path": [
+  "眼解剖實驗",
+  "實驗手冊名詞（考試範圍）",
+  "第 10 頁　淚液系統"
+ ],
+ "lessons": [
+  {
+   "id": "l1",
+   "title": "淚器與神經",
+   "goals": [
+    "找到並寫出：淚腺、淚點、淚小管、淚囊、鼻淚管、上頸神經節"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "淚器與神經",
+     "body": [
+      "眼淚：淚腺（外上方）→ 眼表 → 淚點 → 淚小管 → 淚囊 → 鼻淚管 → 下鼻道。神經路徑含上頸神經節（交感）。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "淚器（Gray）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/gray896.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "淚腺 lacrimal gland",
+       "desc": "",
+       "x": 17,
+       "y": 13
+      },
+      {
+       "name": "淚點 lacrimal punctum",
+       "desc": "",
+       "x": 72,
+       "y": 43
+      },
+      {
+       "name": "淚小管 lacrimal canaliculus",
+       "desc": "",
+       "x": 79,
+       "y": 46
+      },
+      {
+       "name": "淚囊 lacrimal sac",
+       "desc": "",
+       "x": 92,
+       "y": 38
+      },
+      {
+       "name": "鼻淚管 nasolacrimal duct",
+       "desc": "",
+       "x": 90,
+       "y": 70
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "上課標本：水平切面（8. 鼻淚管）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab-private/base/class_nasal_section.jpg",
+     "source": "上課投影片照片（《眼解剖實驗.pdf》第 21 頁：8. 鼻淚管、9. 上頷竇；水平切面標本）；已移除箭頭（標記點依老師講義／圖譜位置）",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "鼻淚管 nasolacrimal duct",
+       "desc": "老師投影片 8",
+       "x": 45.39,
+       "y": 21.99
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "上頸神經節（Gray）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/gray779.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "上頸神經節 superior cervical ganglion",
+       "desc": "",
+       "x": 70,
+       "y": 86
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "淚器圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚腺"
+       ],
+       "en": [
+        "lacrimal gland"
+       ],
+       "img": "img/eye-lab/m-tear/q001.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… g…",
+       "explain": "淚腺 lacrimal gland"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "淚器圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚點"
+       ],
+       "en": [
+        "lacrimal punctum",
+        "lacrimal puncta",
+        "punctum"
+       ],
+       "img": "img/eye-lab/m-tear/q002.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… p…",
+       "explain": "淚點 lacrimal punctum"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "淚器圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚小管"
+       ],
+       "en": [
+        "lacrimal canaliculus",
+        "lacrimal canaliculi",
+        "canaliculus"
+       ],
+       "img": "img/eye-lab/m-tear/q003.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… c…",
+       "explain": "淚小管 lacrimal canaliculus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "淚器圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚囊"
+       ],
+       "en": [
+        "lacrimal sac"
+       ],
+       "img": "img/eye-lab/m-tear/q004.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… s…",
+       "explain": "淚囊 lacrimal sac"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "淚器圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻淚管"
+       ],
+       "en": [
+        "nasolacrimal duct"
+       ],
+       "img": "img/eye-lab/m-tear/q005.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（紅圈為本題標記）",
+       "hint": "英文開頭：n… d…",
+       "explain": "鼻淚管 nasolacrimal duct"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上頸神經節"
+       ],
+       "en": [
+        "superior cervical ganglion"
+       ],
+       "img": "img/eye-lab/m-tear/q006.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… c… g…",
+       "explain": "上頸神經節 superior cervical ganglion"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "淚腺 lacrimal gland、淚點 lacrimal punctum、淚小管 lacrimal canaliculus、淚囊 lacrimal sac、鼻淚管 nasolacrimal duct、上頸神經節 superior cervical ganglion"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "review",
+   "title": "總複習：總圖＋總表",
+   "goals": [
+    "所有點位看過一次、寫過一次"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "總複習",
+     "body": [
+      "先看總圖（所有點位都標好名稱），再看總表；最後跑台模擬：看紅圈寫中文＋英文（每個點位一題）。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "總圖｜淚器與神經",
+     "body": [
+      "淚器（Gray）、上課標本：水平切面（8. 鼻淚管）、上頸神經節（Gray）"
+     ],
+     "img": [
+      "img/eye-lab/m-tear/f007.jpg",
+      "img/eye-lab-private/m-tear/f008.jpg",
+      "img/eye-lab/m-tear/f009.jpg"
+     ],
+     "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）；上課投影片照片（《眼解剖實驗.pdf》第 21 頁：8. 鼻淚管、9. 上頷竇；水平切面標本）；已移除箭頭；Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總表",
+     "body": [
+      "**淚器與神經**",
+      "- **淚腺** lacrimal gland",
+      "- **淚點** lacrimal punctum",
+      "- **淚小管** lacrimal canaliculus",
+      "- **淚囊** lacrimal sac",
+      "- **鼻淚管** nasolacrimal duct",
+      "- **上頸神經節** superior cervical ganglion",
+      ""
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "跑台模擬：看紅圈寫中文＋英文",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "淚器圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚腺"
+       ],
+       "en": [
+        "lacrimal gland"
+       ],
+       "img": "img/eye-lab/m-tear/q001.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… g…",
+       "explain": "淚腺 lacrimal gland"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "淚器圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚點"
+       ],
+       "en": [
+        "lacrimal punctum",
+        "lacrimal puncta",
+        "punctum"
+       ],
+       "img": "img/eye-lab/m-tear/q002.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… p…",
+       "explain": "淚點 lacrimal punctum"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "淚器圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚小管"
+       ],
+       "en": [
+        "lacrimal canaliculus",
+        "lacrimal canaliculi",
+        "canaliculus"
+       ],
+       "img": "img/eye-lab/m-tear/q003.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… c…",
+       "explain": "淚小管 lacrimal canaliculus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "淚器圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚囊"
+       ],
+       "en": [
+        "lacrimal sac"
+       ],
+       "img": "img/eye-lab/m-tear/q004.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… s…",
+       "explain": "淚囊 lacrimal sac"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "淚器圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻淚管"
+       ],
+       "en": [
+        "nasolacrimal duct"
+       ],
+       "img": "img/eye-lab/m-tear/q005.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（紅圈為本題標記）",
+       "hint": "英文開頭：n… d…",
+       "explain": "鼻淚管 nasolacrimal duct"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上頸神經節"
+       ],
+       "en": [
+        "superior cervical ganglion"
+       ],
+       "img": "img/eye-lab/m-tear/q006.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… c… g…",
+       "explain": "上頸神經節 superior cervical ganglion"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "共 6 個點位；錯的回到該課的圖再點一次"
+     ]
+    }
+   ]
+  }
+ ]
+}

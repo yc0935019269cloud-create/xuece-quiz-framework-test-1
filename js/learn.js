@@ -77,7 +77,7 @@ const LEARN_UI = (() => {
   const imgList = v => (Array.isArray(v) ? v : v ? [v] : []);
   const imgsHTML = (v, src) => imgList(v).map(x => `<img class="lp-img" src="${U.esc(U.img(x))}" alt="">`).join('') + (src ? `<div class="lp-src">圖片來源：${inl(src)}</div>` : '');
 
-  const KIND = { single: '單選', multi: '多選（可選多個）', tf: '是非', fill: '填答', order: '排序', self: '自評' };
+  const KIND = { single: '單選', multi: '多選（可選多個）', tf: '是非', fill: '填答', order: '排序', self: '自評', name: '寫出中文＋英文名稱' };
 
   /* ---------- 給 AI 助教的「目前學習頁面」（js/ai.js 的「把這頁講得更好懂」讀取） ----------
    * cur 是課程播放器的即時狀態；換頁、作答後發出 learnpage 事件，讓 AI 視窗更新按鈕。 */
@@ -86,7 +86,7 @@ const LEARN_UI = (() => {
   const ABC = i => String.fromCharCode(65 + i);
   function checkText(c) {
     const key = c.kind === 'single' ? `${ABC(c.answer)}. ${c.choices[c.answer]}` : c.kind === 'multi' ? [].concat(c.answer).map(i => `${ABC(i)}. ${c.choices[i]}`).join('；')
-      : c.kind === 'tf' ? (c.answer ? '對' : '錯') : c.kind === 'fill' ? [].concat(c.answer).join(' ／ ') : c.kind === 'order' ? c.items.join(' → ') : c.answer;
+      : c.kind === 'tf' ? (c.answer ? '對' : '錯') : c.kind === 'fill' ? [].concat(c.answer).join(' ／ ') : c.kind === 'order' ? c.items.join(' → ') : c.kind === 'name' ? `${c.zh[0]} ／ ${c.en[0]}` : c.answer;
     return [`題型：${KIND[c.kind]}`, `題目：${c.q}`, ...(c.kind === 'single' || c.kind === 'multi' ? c.choices.map((t, i) => `${ABC(i)}. ${t}`) : []),
       `${c.kind === 'order' ? '正確順序' : c.kind === 'self' ? '參考答案' : '正確答案'}：${key}`, c.hint ? '提示：' + c.hint : '', c.explain ? '解說：' + c.explain : ''].filter(Boolean).join('\n');
   }
@@ -169,7 +169,7 @@ const LEARN_UI = (() => {
   function renderCheck(box, c, opts = {}) {
     const allowHint = opts.allowHint !== false;
     let tries = 0, locked = false;
-    box.innerHTML = `<div class="lc-q">${md(c.q)}</div><div class="lc-ans"></div><div class="lc-fb"></div>`;
+    box.innerHTML = `<div class="lc-q">${md(c.q)}</div>${imgList(c.img).length ? `<div class="lc-img">${imgsHTML(c.img, c.img_source)}</div>` : ''}<div class="lc-ans"></div><div class="lc-fb"></div>`;
     const ans = box.querySelector('.lc-ans'), fb = box.querySelector('.lc-fb');
     box.insertAdjacentHTML('afterbegin', `<div class="lc-kind">${KIND[c.kind]}</div>`);
 
@@ -262,6 +262,29 @@ const LEARN_UI = (() => {
       });
       ans.querySelector('.lc-undo').onclick = () => { if (!locked) reset(); };
       draw();
+    } else if (c.kind === 'name') {
+      // 看圖寫名稱：中文、英文各一格；大小寫、空白、連字號、撇號不計較，c.zh／c.en 是所有可接受的寫法
+      const norm = v => String(v || '').toLowerCase().normalize('NFKC').replace(/[\s\-‐–—'’`·・.,，、()（）]/g, '').replace(/^the/, '');
+      const okOf = (v, list) => list.some(a => norm(a) === norm(v));
+      ans.innerHTML = `<div class="lc-name"><label><span>中文</span><input class="px-in lc-in" data-k="zh" autocomplete="off" placeholder="中文名稱"></label>
+        <label><span>English</span><input class="px-in lc-in" data-k="en" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="English name"></label>
+        <div class="row" style="justify-content:center"><button class="px-btn small lc-giveup">看答案</button><button class="px-btn gold lc-send">送出 ⏎</button></div></div>`;
+      const zi = ans.querySelector('[data-k="zh"]'), ei = ans.querySelector('[data-k="en"]'), sb = ans.querySelector('.lc-send'), gb = ans.querySelector('.lc-giveup');
+      const show = () => { [zi, ei, sb, gb].forEach(x => x.disabled = true);
+        ans.insertAdjacentHTML('beforeend', `<div class="lc-key">正確答案：<b class="gold-t">${U.esc(c.zh[0])}</b>　<b class="gold-t" lang="en">${U.esc(c.en[0])}</b>${c.zh.length > 1 || c.en.length > 1 ? `<div class="dim small-t">也可以寫：${U.esc([...c.zh.slice(1), ...c.en.slice(1)].join('、'))}</div>` : ''}</div>`); };
+      const go = () => {
+        if (locked) return;
+        if (!zi.value.trim() && !ei.value.trim()) { U.toast('請先寫名稱'); return; }
+        const okZ = okOf(zi.value, c.zh), okE = okOf(ei.value, c.en);
+        zi.classList.toggle('ok', okZ); zi.classList.toggle('ng', !okZ); ei.classList.toggle('ok', okE); ei.classList.toggle('ng', !okE);
+        if (okZ && okE) finish(true, () => { [zi, ei, sb, gb].forEach(x => x.disabled = true); });
+        else { tries = Math.max(tries, c.hint ? 0 : 1); wrong(show); }
+      };
+      reset = () => { (zi.classList.contains('ng') ? zi : ei).select(); };
+      sb.onclick = go;
+      gb.onclick = () => { if (locked) return; tries = 1; finish(false, show); };
+      [zi, ei].forEach(x => x.onkeydown = e => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); if (x === zi && !ei.value.trim()) ei.focus(); else go(); } });
+      setTimeout(() => zi.focus(), 50);
     } else { // self
       ans.innerHTML = `<div class="col" style="align-items:center"><textarea class="px-in lc-ta" rows="3" placeholder="（選填）先寫下你的想法"></textarea><button class="px-btn gold">揭曉參考答案</button></div>`;
       ans.querySelector('button').onclick = () => {

@@ -1,0 +1,1370 @@
+{
+ "schema": "xd-learn/1",
+ "id": "eyelab-m-brain",
+ "subject": "eye_anat",
+ "style": "atlas",
+ "unit": "手冊第 8 頁：腦幹與神經",
+ "title": "手冊第 8 頁：腦幹與神經",
+ "desc": "《新實驗手冊》第 8 頁全部名詞：腦幹、神經核、神經節、睫狀神經、三叉神經眼支分支。",
+ "level": 2,
+ "minutes": 40,
+ "order": 15,
+ "source": "《新實驗手冊-01.pdf》第 8 頁；開放授權圖見各圖來源",
+ "tags": [
+  "實驗手冊",
+  "腦幹",
+  "神經"
+ ],
+ "path": [
+  "眼解剖實驗",
+  "實驗手冊名詞（考試範圍）",
+  "第 8 頁　腦幹與神經"
+ ],
+ "lessons": [
+  {
+   "id": "l1",
+   "title": "腦幹外觀",
+   "goals": [
+    "找到並寫出：中腦、橋腦、延腦、丘腦、上丘、下丘、頂蓋"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "腦幹外觀",
+     "body": [
+      "手冊：中腦、橋腦、延腦、丘腦、上丘、下丘、頂蓋。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "腦幹與丘腦（後面觀）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/bs_post.jpg",
+     "source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "中腦 midbrain",
+       "desc": "",
+       "x": 40,
+       "y": 35
+      },
+      {
+       "name": "橋腦 pons",
+       "desc": "",
+       "x": 37,
+       "y": 60
+      },
+      {
+       "name": "延腦 medulla oblongata",
+       "desc": "",
+       "x": 50,
+       "y": 88
+      },
+      {
+       "name": "丘腦 thalamus",
+       "desc": "",
+       "x": 68.3,
+       "y": 15.3
+      },
+      {
+       "name": "上丘 superior colliculus",
+       "desc": "",
+       "x": 58.6,
+       "y": 30
+      },
+      {
+       "name": "下丘 inferior colliculus",
+       "desc": "",
+       "x": 59.8,
+       "y": 37.5
+      },
+      {
+       "name": "頂蓋 tectum",
+       "desc": "",
+       "x": 59,
+       "y": 33.5
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "中腦"
+       ],
+       "en": [
+        "midbrain",
+        "mesencephalon"
+       ],
+       "img": "img/eye-lab/m-brain/q001.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：m…",
+       "explain": "中腦 midbrain"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "橋腦",
+        "腦橋"
+       ],
+       "en": [
+        "pons"
+       ],
+       "img": "img/eye-lab/m-brain/q002.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：p…",
+       "explain": "橋腦 pons"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "延腦",
+        "延髓"
+       ],
+       "en": [
+        "medulla oblongata",
+        "medulla"
+       ],
+       "img": "img/eye-lab/m-brain/q003.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：m… o…",
+       "explain": "延腦 medulla oblongata"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "丘腦",
+        "視丘"
+       ],
+       "en": [
+        "thalamus",
+        "thalami"
+       ],
+       "img": "img/eye-lab/m-brain/q004.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：t…",
+       "explain": "丘腦 thalamus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上丘"
+       ],
+       "en": [
+        "superior colliculus",
+        "superior colliculi"
+       ],
+       "img": "img/eye-lab/m-brain/q005.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：s… c…",
+       "explain": "上丘 superior colliculus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "下丘"
+       ],
+       "en": [
+        "inferior colliculus",
+        "inferior colliculi"
+       ],
+       "img": "img/eye-lab/m-brain/q006.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：i… c…",
+       "explain": "下丘 inferior colliculus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "頂蓋",
+        "中腦頂蓋"
+       ],
+       "en": [
+        "tectum",
+        "tectum of midbrain"
+       ],
+       "img": "img/eye-lab/m-brain/q007.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：t…",
+       "explain": "頂蓋 tectum"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "中腦 midbrain、橋腦 pons、延腦 medulla oblongata、丘腦 thalamus、上丘 superior colliculus、下丘 inferior colliculus",
+      "頂蓋 tectum"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l2",
+   "title": "腦幹切片：神經核",
+   "goals": [
+    "找到並寫出：動眼神經核、E-W 核、內側縱束、滑車神經核、外旋神經核、顏面神經核"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "腦幹切片：神經核",
+     "body": [
+      "手冊：動眼核、EW 核、內側縱束（中腦上丘高度）；滑車神經核（下丘高度）；外旋神經核、顏面神經核（橋腦）。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "中腦橫切（上丘高度）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/sobo651_m.jpg",
+     "source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "動眼神經核 oculomotor nucleus",
+       "desc": "",
+       "x": 73,
+       "y": 39.5
+      },
+      {
+       "name": "E-W 核 Edinger-Westphal nucleus",
+       "desc": "緊貼動眼神經核",
+       "x": 72.5,
+       "y": 37
+      },
+      {
+       "name": "內側縱束 medial longitudinal fasciculus",
+       "desc": "",
+       "x": 73.5,
+       "y": 44.5
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "中腦橫切（下丘高度）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/sobo652_m.jpg",
+     "source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "滑車神經核 trochlear nucleus",
+       "desc": "",
+       "x": 65.5,
+       "y": 32.5
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "橋腦橫切",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/sobo668_m.jpg",
+     "source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "外旋神經核 abducens nucleus",
+       "desc": "",
+       "x": 53.5,
+       "y": 19
+      },
+      {
+       "name": "顏面神經核 facial nucleus",
+       "desc": "",
+       "x": 31,
+       "y": 26
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "中腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "動眼神經核",
+        "動眼核"
+       ],
+       "en": [
+        "oculomotor nucleus",
+        "nucleus of oculomotor nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q008.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（紅圈為本題標記）",
+       "hint": "英文開頭：o… n…",
+       "explain": "動眼神經核 oculomotor nucleus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "中腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "E-W 核",
+        "EW 核",
+        "愛丁格–魏斯法爾核",
+        "EW核"
+       ],
+       "en": [
+        "Edinger-Westphal nucleus",
+        "Edinger–Westphal nucleus",
+        "EW nucleus"
+       ],
+       "img": "img/eye-lab/m-brain/q009.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（紅圈為本題標記）",
+       "hint": "英文開頭：E… W… n…",
+       "explain": "E-W 核 Edinger-Westphal nucleus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "中腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "內側縱束"
+       ],
+       "en": [
+        "medial longitudinal fasciculus",
+        "MLF"
+       ],
+       "img": "img/eye-lab/m-brain/q010.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… l… f…",
+       "explain": "內側縱束 medial longitudinal fasciculus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "中腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車神經核"
+       ],
+       "en": [
+        "trochlear nucleus",
+        "nucleus of trochlear nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q011.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）（紅圈為本題標記）",
+       "hint": "英文開頭：t… n…",
+       "explain": "滑車神經核 trochlear nucleus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "橋腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外旋神經核",
+        "外展神經核"
+       ],
+       "en": [
+        "abducens nucleus",
+        "abducent nucleus",
+        "nucleus of abducent nerve",
+        "nucleus of abducens nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q012.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… n…",
+       "explain": "外旋神經核 abducens nucleus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "橋腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顏面神經核"
+       ],
+       "en": [
+        "facial nucleus",
+        "nucleus of facial nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q013.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（紅圈為本題標記）",
+       "hint": "英文開頭：f… n…",
+       "explain": "顏面神經核 facial nucleus"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "動眼神經核 oculomotor nucleus、E-W 核 Edinger-Westphal nucleus、內側縱束 medial longitudinal fasciculus、滑車神經核 trochlear nucleus、外旋神經核 abducens nucleus、顏面神經核 facial nucleus"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l3",
+   "title": "神經節與眼眶神經",
+   "goals": [
+    "找到並寫出：睫狀神經節、睫狀短神經、睫狀長神經、鼻睫神經、上頸神經節、翼顎神經節、三叉神經、眼神經、淚腺神經、額神經、前篩神經、後篩神經、滑車上神經、滑車下神經"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "神經節與眼眶神經",
+     "body": [
+      "手冊：睫狀神經節、上頸神經節、翼顎神經節；睫狀短／長神經；三叉神經 → 眼神經 → 鼻睫神經、淚腺神經、額神經；前後篩神經；滑車上／下神經。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "睫狀神經節（示意圖）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/cil_paths.jpg",
+     "source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "睫狀神經節 ciliary ganglion",
+       "desc": "",
+       "x": 54,
+       "y": 55
+      },
+      {
+       "name": "睫狀短神經 short ciliary nerve",
+       "desc": "",
+       "x": 72,
+       "y": 63
+      },
+      {
+       "name": "睫狀長神經 long ciliary nerve",
+       "desc": "",
+       "x": 72,
+       "y": 41
+      },
+      {
+       "name": "鼻睫神經 nasociliary nerve",
+       "desc": "",
+       "x": 45,
+       "y": 39
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "上頸神經節與翼顎神經節（Gray）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/gray779.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "上頸神經節 superior cervical ganglion",
+       "desc": "",
+       "x": 70,
+       "y": 86
+      },
+      {
+       "name": "翼顎神經節 pterygopalatine ganglion",
+       "desc": "",
+       "x": 53,
+       "y": 46
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "腦底面標本",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/bs_ant.jpg",
+     "source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "三叉神經 trigeminal nerve",
+       "desc": "",
+       "x": 83,
+       "y": 44
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "眼眶內神經（Gray）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/gray777.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "眼神經 ophthalmic nerve",
+       "desc": "",
+       "x": 38,
+       "y": 47
+      },
+      {
+       "name": "鼻睫神經 nasociliary nerve",
+       "desc": "",
+       "x": 52,
+       "y": 44
+      },
+      {
+       "name": "淚腺神經 lacrimal nerve",
+       "desc": "",
+       "x": 80,
+       "y": 38
+      },
+      {
+       "name": "額神經 frontal nerve",
+       "desc": "",
+       "x": 47,
+       "y": 38
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "骨性眼眶：篩神經",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/openstax_orbit_m.jpg",
+     "source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "前篩神經 anterior ethmoidal nerve",
+       "desc": "經前篩孔",
+       "x": 67,
+       "y": 31.5
+      },
+      {
+       "name": "後篩神經 posterior ethmoidal nerve",
+       "desc": "經後篩孔",
+       "x": 64,
+       "y": 41
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "頭面部感覺神經（Gray）",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/gray784_m.jpg",
+     "source": "Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "滑車上神經 supratrochlear nerve",
+       "desc": "",
+       "x": 37,
+       "y": 28
+      },
+      {
+       "name": "滑車下神經 infratrochlear nerve",
+       "desc": "",
+       "x": 35.8,
+       "y": 44
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀神經節"
+       ],
+       "en": [
+        "ciliary ganglion"
+       ],
+       "img": "img/eye-lab/m-brain/q014.jpg",
+       "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… g…",
+       "explain": "睫狀神經節 ciliary ganglion"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀短神經",
+        "短睫狀神經"
+       ],
+       "en": [
+        "short ciliary nerve",
+        "short ciliary nerves"
+       ],
+       "img": "img/eye-lab/m-brain/q015.jpg",
+       "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… c… n…",
+       "explain": "睫狀短神經 short ciliary nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀長神經",
+        "長睫狀神經"
+       ],
+       "en": [
+        "long ciliary nerve",
+        "long ciliary nerves"
+       ],
+       "img": "img/eye-lab/m-brain/q016.jpg",
+       "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… c… n…",
+       "explain": "睫狀長神經 long ciliary nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻睫神經"
+       ],
+       "en": [
+        "nasociliary nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q017.jpg",
+       "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（紅圈為本題標記）",
+       "hint": "英文開頭：n… n…",
+       "explain": "鼻睫神經 nasociliary nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上頸神經節"
+       ],
+       "en": [
+        "superior cervical ganglion"
+       ],
+       "img": "img/eye-lab/m-brain/q018.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… c… g…",
+       "explain": "上頸神經節 superior cervical ganglion"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "翼顎神經節",
+        "蝶顎神經節"
+       ],
+       "en": [
+        "pterygopalatine ganglion",
+        "sphenopalatine ganglion"
+       ],
+       "img": "img/eye-lab/m-brain/q019.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）（紅圈為本題標記）",
+       "hint": "英文開頭：p… g…",
+       "explain": "翼顎神經節 pterygopalatine ganglion"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "三叉神經"
+       ],
+       "en": [
+        "trigeminal nerve",
+        "CN V"
+       ],
+       "img": "img/eye-lab/m-brain/q020.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：t… n…",
+       "explain": "三叉神經 trigeminal nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶神經圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼神經",
+        "眼支"
+       ],
+       "en": [
+        "ophthalmic nerve",
+        "V1"
+       ],
+       "img": "img/eye-lab/m-brain/q021.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（紅圈為本題標記）",
+       "hint": "英文開頭：o… n…",
+       "explain": "眼神經 ophthalmic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶神經圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚腺神經",
+        "淚神經"
+       ],
+       "en": [
+        "lacrimal nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q022.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… n…",
+       "explain": "淚腺神經 lacrimal nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶神經圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "額神經"
+       ],
+       "en": [
+        "frontal nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q023.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（紅圈為本題標記）",
+       "hint": "英文開頭：f… n…",
+       "explain": "額神經 frontal nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前篩神經"
+       ],
+       "en": [
+        "anterior ethmoidal nerve",
+        "anterior ethmoid nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q024.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：a… e… n…",
+       "explain": "前篩神經 anterior ethmoidal nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "後篩神經"
+       ],
+       "en": [
+        "posterior ethmoidal nerve",
+        "posterior ethmoid nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q025.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：p… e… n…",
+       "explain": "後篩神經 posterior ethmoidal nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭面部神經：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車上神經"
+       ],
+       "en": [
+        "supratrochlear nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q026.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… n…",
+       "explain": "滑車上神經 supratrochlear nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭面部神經：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車下神經"
+       ],
+       "en": [
+        "infratrochlear nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q027.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… n…",
+       "explain": "滑車下神經 infratrochlear nerve"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "睫狀神經節 ciliary ganglion、睫狀短神經 short ciliary nerve、睫狀長神經 long ciliary nerve、鼻睫神經 nasociliary nerve、上頸神經節 superior cervical ganglion、翼顎神經節 pterygopalatine ganglion",
+      "三叉神經 trigeminal nerve、眼神經 ophthalmic nerve、淚腺神經 lacrimal nerve、額神經 frontal nerve、前篩神經 anterior ethmoidal nerve、後篩神經 posterior ethmoidal nerve",
+      "滑車上神經 supratrochlear nerve、滑車下神經 infratrochlear nerve"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "review",
+   "title": "總複習：總圖＋總表",
+   "goals": [
+    "所有點位看過一次、寫過一次"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "總複習",
+     "body": [
+      "先看總圖（所有點位都標好名稱），再看總表；最後跑台模擬：看紅圈寫中文＋英文（每個點位一題）。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "總圖｜腦幹外觀",
+     "body": [
+      "腦幹與丘腦（後面觀）"
+     ],
+     "img": [
+      "img/eye-lab/m-brain/f028.jpg",
+      "img/eye-lab/m-brain/f029.jpg"
+     ],
+     "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總圖｜腦幹切片：神經核",
+     "body": [
+      "中腦橫切（上丘高度）、中腦橫切（下丘高度）、橋腦橫切"
+     ],
+     "img": [
+      "img/eye-lab/m-brain/f030.jpg",
+      "img/eye-lab/m-brain/f031.jpg",
+      "img/eye-lab/m-brain/f032.jpg"
+     ],
+     "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總圖｜神經節與眼眶神經",
+     "body": [
+      "睫狀神經節（示意圖）、上頸神經節與翼顎神經節（Gray）、腦底面標本、眼眶內神經（Gray）、骨性眼眶：篩神經、頭面部感覺神經（Gray）"
+     ],
+     "img": [
+      "img/eye-lab/m-brain/f033.jpg",
+      "img/eye-lab/m-brain/f034.jpg",
+      "img/eye-lab/m-brain/f035.jpg",
+      "img/eye-lab/m-brain/f036.jpg",
+      "img/eye-lab/m-brain/f037.jpg",
+      "img/eye-lab/m-brain/f038.jpg"
+     ],
+     "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）；Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）；John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）；OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總表",
+     "body": [
+      "**腦幹外觀**",
+      "- **中腦** midbrain",
+      "- **橋腦** pons",
+      "- **延腦** medulla oblongata",
+      "- **丘腦** thalamus",
+      "- **上丘** superior colliculus",
+      "- **下丘** inferior colliculus",
+      "- **頂蓋** tectum",
+      "",
+      "**腦幹切片：神經核**",
+      "- **動眼神經核** oculomotor nucleus",
+      "- **E-W 核** Edinger-Westphal nucleus：緊貼動眼神經核",
+      "- **內側縱束** medial longitudinal fasciculus",
+      "- **滑車神經核** trochlear nucleus",
+      "- **外旋神經核** abducens nucleus",
+      "- **顏面神經核** facial nucleus",
+      "",
+      "**神經節與眼眶神經**",
+      "- **睫狀神經節** ciliary ganglion",
+      "- **睫狀短神經** short ciliary nerve",
+      "- **睫狀長神經** long ciliary nerve",
+      "- **鼻睫神經** nasociliary nerve",
+      "- **上頸神經節** superior cervical ganglion",
+      "- **翼顎神經節** pterygopalatine ganglion",
+      "- **三叉神經** trigeminal nerve",
+      "- **眼神經** ophthalmic nerve",
+      "- **淚腺神經** lacrimal nerve",
+      "- **額神經** frontal nerve",
+      "- **前篩神經** anterior ethmoidal nerve：經前篩孔",
+      "- **後篩神經** posterior ethmoidal nerve：經後篩孔",
+      "- **滑車上神經** supratrochlear nerve",
+      "- **滑車下神經** infratrochlear nerve",
+      ""
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "跑台模擬：看紅圈寫中文＋英文",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "中腦"
+       ],
+       "en": [
+        "midbrain",
+        "mesencephalon"
+       ],
+       "img": "img/eye-lab/m-brain/q001.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：m…",
+       "explain": "中腦 midbrain"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "橋腦",
+        "腦橋"
+       ],
+       "en": [
+        "pons"
+       ],
+       "img": "img/eye-lab/m-brain/q002.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：p…",
+       "explain": "橋腦 pons"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "延腦",
+        "延髓"
+       ],
+       "en": [
+        "medulla oblongata",
+        "medulla"
+       ],
+       "img": "img/eye-lab/m-brain/q003.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：m… o…",
+       "explain": "延腦 medulla oblongata"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "丘腦",
+        "視丘"
+       ],
+       "en": [
+        "thalamus",
+        "thalami"
+       ],
+       "img": "img/eye-lab/m-brain/q004.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：t…",
+       "explain": "丘腦 thalamus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上丘"
+       ],
+       "en": [
+        "superior colliculus",
+        "superior colliculi"
+       ],
+       "img": "img/eye-lab/m-brain/q005.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：s… c…",
+       "explain": "上丘 superior colliculus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "下丘"
+       ],
+       "en": [
+        "inferior colliculus",
+        "inferior colliculi"
+       ],
+       "img": "img/eye-lab/m-brain/q006.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：i… c…",
+       "explain": "下丘 inferior colliculus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦幹後面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "頂蓋",
+        "中腦頂蓋"
+       ],
+       "en": [
+        "tectum",
+        "tectum of midbrain"
+       ],
+       "img": "img/eye-lab/m-brain/q007.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：t…",
+       "explain": "頂蓋 tectum"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "中腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "動眼神經核",
+        "動眼核"
+       ],
+       "en": [
+        "oculomotor nucleus",
+        "nucleus of oculomotor nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q008.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（紅圈為本題標記）",
+       "hint": "英文開頭：o… n…",
+       "explain": "動眼神經核 oculomotor nucleus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "中腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "E-W 核",
+        "EW 核",
+        "愛丁格–魏斯法爾核",
+        "EW核"
+       ],
+       "en": [
+        "Edinger-Westphal nucleus",
+        "Edinger–Westphal nucleus",
+        "EW nucleus"
+       ],
+       "img": "img/eye-lab/m-brain/q009.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（紅圈為本題標記）",
+       "hint": "英文開頭：E… W… n…",
+       "explain": "E-W 核 Edinger-Westphal nucleus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "中腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "內側縱束"
+       ],
+       "en": [
+        "medial longitudinal fasciculus",
+        "MLF"
+       ],
+       "img": "img/eye-lab/m-brain/q010.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（紅圈為本題標記）",
+       "hint": "英文開頭：m… l… f…",
+       "explain": "內側縱束 medial longitudinal fasciculus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "中腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車神經核"
+       ],
+       "en": [
+        "trochlear nucleus",
+        "nucleus of trochlear nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q011.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）（紅圈為本題標記）",
+       "hint": "英文開頭：t… n…",
+       "explain": "滑車神經核 trochlear nucleus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "橋腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外旋神經核",
+        "外展神經核"
+       ],
+       "en": [
+        "abducens nucleus",
+        "abducent nucleus",
+        "nucleus of abducent nerve",
+        "nucleus of abducens nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q012.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（紅圈為本題標記）",
+       "hint": "英文開頭：a… n…",
+       "explain": "外旋神經核 abducens nucleus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "橋腦切片：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顏面神經核"
+       ],
+       "en": [
+        "facial nucleus",
+        "nucleus of facial nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q013.jpg",
+       "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（紅圈為本題標記）",
+       "hint": "英文開頭：f… n…",
+       "explain": "顏面神經核 facial nucleus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀神經節"
+       ],
+       "en": [
+        "ciliary ganglion"
+       ],
+       "img": "img/eye-lab/m-brain/q014.jpg",
+       "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（紅圈為本題標記）",
+       "hint": "英文開頭：c… g…",
+       "explain": "睫狀神經節 ciliary ganglion"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀短神經",
+        "短睫狀神經"
+       ],
+       "en": [
+        "short ciliary nerve",
+        "short ciliary nerves"
+       ],
+       "img": "img/eye-lab/m-brain/q015.jpg",
+       "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… c… n…",
+       "explain": "睫狀短神經 short ciliary nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "睫狀長神經",
+        "長睫狀神經"
+       ],
+       "en": [
+        "long ciliary nerve",
+        "long ciliary nerves"
+       ],
+       "img": "img/eye-lab/m-brain/q016.jpg",
+       "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… c… n…",
+       "explain": "睫狀長神經 long ciliary nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "睫狀神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻睫神經"
+       ],
+       "en": [
+        "nasociliary nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q017.jpg",
+       "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（紅圈為本題標記）",
+       "hint": "英文開頭：n… n…",
+       "explain": "鼻睫神經 nasociliary nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上頸神經節"
+       ],
+       "en": [
+        "superior cervical ganglion"
+       ],
+       "img": "img/eye-lab/m-brain/q018.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… c… g…",
+       "explain": "上頸神經節 superior cervical ganglion"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "Gray 神經節圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "翼顎神經節",
+        "蝶顎神經節"
+       ],
+       "en": [
+        "pterygopalatine ganglion",
+        "sphenopalatine ganglion"
+       ],
+       "img": "img/eye-lab/m-brain/q019.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）（紅圈為本題標記）",
+       "hint": "英文開頭：p… g…",
+       "explain": "翼顎神經節 pterygopalatine ganglion"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "腦底面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "三叉神經"
+       ],
+       "en": [
+        "trigeminal nerve",
+        "CN V"
+       ],
+       "img": "img/eye-lab/m-brain/q020.jpg",
+       "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）（紅圈為本題標記）",
+       "hint": "英文開頭：t… n…",
+       "explain": "三叉神經 trigeminal nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶神經圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眼神經",
+        "眼支"
+       ],
+       "en": [
+        "ophthalmic nerve",
+        "V1"
+       ],
+       "img": "img/eye-lab/m-brain/q021.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（紅圈為本題標記）",
+       "hint": "英文開頭：o… n…",
+       "explain": "眼神經 ophthalmic nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶神經圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚腺神經",
+        "淚神經"
+       ],
+       "en": [
+        "lacrimal nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q022.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（紅圈為本題標記）",
+       "hint": "英文開頭：l… n…",
+       "explain": "淚腺神經 lacrimal nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶神經圖：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "額神經"
+       ],
+       "en": [
+        "frontal nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q023.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（紅圈為本題標記）",
+       "hint": "英文開頭：f… n…",
+       "explain": "額神經 frontal nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前篩神經"
+       ],
+       "en": [
+        "anterior ethmoidal nerve",
+        "anterior ethmoid nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q024.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：a… e… n…",
+       "explain": "前篩神經 anterior ethmoidal nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "後篩神經"
+       ],
+       "en": [
+        "posterior ethmoidal nerve",
+        "posterior ethmoid nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q025.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：p… e… n…",
+       "explain": "後篩神經 posterior ethmoidal nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭面部神經：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車上神經"
+       ],
+       "en": [
+        "supratrochlear nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q026.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）（紅圈為本題標記）",
+       "hint": "英文開頭：s… n…",
+       "explain": "滑車上神經 supratrochlear nerve"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭面部神經：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車下神經"
+       ],
+       "en": [
+        "infratrochlear nerve"
+       ],
+       "img": "img/eye-lab/m-brain/q027.jpg",
+       "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）（紅圈為本題標記）",
+       "hint": "英文開頭：i… n…",
+       "explain": "滑車下神經 infratrochlear nerve"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "共 27 個點位；錯的回到該課的圖再點一次"
+     ]
+    }
+   ]
+  }
+ ]
+}

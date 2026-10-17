@@ -1,0 +1,1421 @@
+{
+ "schema": "xd-learn/1",
+ "id": "eyelab-m-orbit",
+ "subject": "eye_anat",
+ "style": "atlas",
+ "unit": "手冊第 1 頁：骨質眼窩",
+ "title": "手冊第 1 頁：骨質眼窩",
+ "desc": "《新實驗手冊》第 1 頁全部名詞：眼眶骨、孔裂窩、副鼻竇。",
+ "level": 2,
+ "minutes": 40,
+ "order": 11,
+ "source": "《新實驗手冊-01.pdf》第 1 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源",
+ "tags": [
+  "實驗手冊",
+  "骨質眼窩"
+ ],
+ "path": [
+  "眼解剖實驗",
+  "實驗手冊名詞（考試範圍）",
+  "第 1 頁　骨質眼窩"
+ ],
+ "lessons": [
+  {
+   "id": "l1",
+   "title": "眼眶的骨",
+   "goals": [
+    "找到並寫出：鼻骨、淚骨、額骨、篩骨、蝶骨、顴骨、上頷骨、蝶骨小翼、蝶骨大翼、腭骨、蝶鞍"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "眼眶的骨",
+     "body": [
+      "手冊：鼻骨、淚骨、額骨、篩骨、蝶骨（大翼、小翼、蝶鞍）、顴骨、顎骨、上頷骨。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "頭骨前面觀",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab-private/base/atlas_p01.jpg",
+     "source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（標記點依老師講義／圖譜位置）",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "鼻骨 nasal bone",
+       "desc": "",
+       "x": 49.07,
+       "y": 36.76
+      },
+      {
+       "name": "淚骨 lacrimal bone",
+       "desc": "",
+       "x": 40.11,
+       "y": 40.57
+      },
+      {
+       "name": "額骨 frontal bone",
+       "desc": "",
+       "x": 46.98,
+       "y": 7.41
+      },
+      {
+       "name": "篩骨 ethmoid bone",
+       "desc": "",
+       "x": 38.66,
+       "y": 38.87
+      },
+      {
+       "name": "蝶骨 sphenoid bone",
+       "desc": "",
+       "x": 23.97,
+       "y": 38.45
+      },
+      {
+       "name": "顴骨 zygomatic bone",
+       "desc": "",
+       "x": 10.18,
+       "y": 46.02
+      },
+      {
+       "name": "上頷骨 maxilla",
+       "desc": "",
+       "x": 75.5,
+       "y": 52.76
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "眼眶模型",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab-private/base/atlas_p07.jpg",
+     "source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 7 頁照片；標記點依圖譜引線位置（標記點依老師講義／圖譜位置）",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "蝶骨小翼 lesser wing of sphenoid bone",
+       "desc": "",
+       "x": 47.46,
+       "y": 50.0
+      },
+      {
+       "name": "蝶骨大翼 greater wing of sphenoid bone",
+       "desc": "",
+       "x": 62.13,
+       "y": 54.89
+      },
+      {
+       "name": "腭骨 palatine bone",
+       "desc": "",
+       "x": 47.46,
+       "y": 57.76
+      },
+      {
+       "name": "淚骨 lacrimal bone",
+       "desc": "",
+       "x": 33.49,
+       "y": 62.72
+      },
+      {
+       "name": "篩骨 ethmoid bone",
+       "desc": "",
+       "x": 35.74,
+       "y": 52.66
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "蝶骨上面觀",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab-private/base/atlas_p08.jpg",
+     "source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 8 頁照片；標記點依圖譜引線位置（標記點依老師講義／圖譜位置）",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "蝶骨小翼 lesser wing of sphenoid bone",
+       "desc": "",
+       "x": 69.45,
+       "y": 24.03
+      },
+      {
+       "name": "蝶骨大翼 greater wing of sphenoid bone",
+       "desc": "",
+       "x": 84.47,
+       "y": 37.57
+      },
+      {
+       "name": "蝶鞍 sella turcica",
+       "desc": "",
+       "x": 52.25,
+       "y": 45.65
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻骨"
+       ],
+       "en": [
+        "nasal bone"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q001.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：n… b…",
+       "explain": "鼻骨 nasal bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚骨"
+       ],
+       "en": [
+        "lacrimal bone"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q002.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：l… b…",
+       "explain": "淚骨 lacrimal bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "額骨"
+       ],
+       "en": [
+        "frontal bone"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q003.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：f… b…",
+       "explain": "額骨 frontal bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "篩骨"
+       ],
+       "en": [
+        "ethmoid bone",
+        "ethmoid"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q004.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：e… b…",
+       "explain": "篩骨 ethmoid bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶骨"
+       ],
+       "en": [
+        "sphenoid bone",
+        "sphenoid"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q005.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：s… b…",
+       "explain": "蝶骨 sphenoid bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顴骨"
+       ],
+       "en": [
+        "zygomatic bone",
+        "zygoma"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q006.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：z… b…",
+       "explain": "顴骨 zygomatic bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上頷骨",
+        "上頜骨",
+        "上顎骨"
+       ],
+       "en": [
+        "maxilla",
+        "maxillary bone"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q007.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：m…",
+       "explain": "上頷骨 maxilla"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶模型：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶骨小翼"
+       ],
+       "en": [
+        "lesser wing of sphenoid bone",
+        "lesser wing of sphenoid",
+        "lesser sphenoid wing",
+        "lesser wing"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q008.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 7 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：l… w… o… s… b…",
+       "explain": "蝶骨小翼 lesser wing of sphenoid bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶模型：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶骨大翼"
+       ],
+       "en": [
+        "greater wing of sphenoid bone",
+        "greater wing of sphenoid",
+        "greater sphenoid wing",
+        "greater wing"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q009.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 7 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：g… w… o… s… b…",
+       "explain": "蝶骨大翼 greater wing of sphenoid bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶模型：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "腭骨",
+        "顎骨"
+       ],
+       "en": [
+        "palatine bone"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q010.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 7 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：p… b…",
+       "explain": "腭骨 palatine bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "蝶骨：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶鞍"
+       ],
+       "en": [
+        "sella turcica"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q011.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 8 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：s… t…",
+       "explain": "蝶鞍 sella turcica"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "鼻骨 nasal bone、淚骨 lacrimal bone、額骨 frontal bone、篩骨 ethmoid bone、蝶骨 sphenoid bone、顴骨 zygomatic bone",
+      "上頷骨 maxilla、蝶骨小翼 lesser wing of sphenoid bone、蝶骨大翼 greater wing of sphenoid bone、腭骨 palatine bone、蝶鞍 sella turcica"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l2",
+   "title": "孔、裂、窩",
+   "goals": [
+    "找到並寫出：眶上孔、眶下孔、眉弓、滑車窩、淚腺窩、眶下裂、淚窩、前篩孔、後篩孔、視神經管、眶上裂、外側結節"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "孔、裂、窩",
+     "body": [
+      "手冊：眶上孔、眶下孔、眉弓、滑車窩、淚腺窩、下眼窩裂、淚窩、前篩孔、後篩孔、視神經管、上眼窩縫（眶上裂）、外側結節。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "骨性眼眶前面觀",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/openstax_orbit_m.jpg",
+     "source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "眶上孔 supraorbital foramen",
+       "desc": "",
+       "x": 56,
+       "y": 12
+      },
+      {
+       "name": "眶下孔 infraorbital foramen",
+       "desc": "",
+       "x": 56,
+       "y": 73
+      },
+      {
+       "name": "眉弓 supraorbital ridge",
+       "desc": "",
+       "x": 47,
+       "y": 17
+      },
+      {
+       "name": "滑車窩 trochlear fossa",
+       "desc": "",
+       "x": 68,
+       "y": 23
+      },
+      {
+       "name": "淚腺窩 lacrimal gland fossa",
+       "desc": "",
+       "x": 40,
+       "y": 22
+      },
+      {
+       "name": "眶下裂 inferior orbital fissure",
+       "desc": "",
+       "x": 50,
+       "y": 60
+      },
+      {
+       "name": "淚窩 lacrimal fossa",
+       "desc": "",
+       "x": 65.5,
+       "y": 52.5
+      },
+      {
+       "name": "前篩孔 anterior ethmoidal foramen",
+       "desc": "",
+       "x": 67,
+       "y": 34
+      },
+      {
+       "name": "後篩孔 posterior ethmoidal foramen",
+       "desc": "",
+       "x": 64,
+       "y": 38
+      },
+      {
+       "name": "視神經管 optic canal",
+       "desc": "",
+       "x": 62,
+       "y": 40
+      },
+      {
+       "name": "眶上裂 superior orbital fissure",
+       "desc": "",
+       "x": 62,
+       "y": 45
+      },
+      {
+       "name": "外側結節 lateral orbital tubercle",
+       "desc": "",
+       "x": 37,
+       "y": 55
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "頭骨前面觀",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab-private/base/atlas_p01.jpg",
+     "source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（標記點依老師講義／圖譜位置）",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "眶上孔 supraorbital foramen",
+       "desc": "",
+       "x": 68.45,
+       "y": 26.76
+      },
+      {
+       "name": "眶下孔 infraorbital foramen",
+       "desc": "",
+       "x": 71.47,
+       "y": 51.66
+      },
+      {
+       "name": "眶上裂 superior orbital fissure",
+       "desc": "",
+       "x": 64.71,
+       "y": 39.21
+      },
+      {
+       "name": "眶下裂 inferior orbital fissure",
+       "desc": "",
+       "x": 76.36,
+       "y": 46.3
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶上孔",
+        "眶上切跡"
+       ],
+       "en": [
+        "supraorbital foramen",
+        "supraorbital notch"
+       ],
+       "img": "img/eye-lab/m-orbit/q012.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… f…",
+       "explain": "眶上孔 supraorbital foramen"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶下孔"
+       ],
+       "en": [
+        "infraorbital foramen"
+       ],
+       "img": "img/eye-lab/m-orbit/q013.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… f…",
+       "explain": "眶下孔 infraorbital foramen"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眉弓",
+        "眶上緣"
+       ],
+       "en": [
+        "supraorbital ridge",
+        "supraorbital margin",
+        "superciliary arch"
+       ],
+       "img": "img/eye-lab/m-orbit/q014.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… r…",
+       "explain": "眉弓 supraorbital ridge"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車窩"
+       ],
+       "en": [
+        "trochlear fossa",
+        "trochlear fovea"
+       ],
+       "img": "img/eye-lab/m-orbit/q015.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：t… f…",
+       "explain": "滑車窩 trochlear fossa"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚腺窩"
+       ],
+       "en": [
+        "lacrimal gland fossa",
+        "fossa for lacrimal gland"
+       ],
+       "img": "img/eye-lab/m-orbit/q016.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：l… g… f…",
+       "explain": "淚腺窩 lacrimal gland fossa"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶下裂",
+        "下眼窩裂"
+       ],
+       "en": [
+        "inferior orbital fissure",
+        "IOF"
+       ],
+       "img": "img/eye-lab/m-orbit/q017.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… o… f…",
+       "explain": "眶下裂 inferior orbital fissure"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚窩",
+        "淚囊窩"
+       ],
+       "en": [
+        "lacrimal fossa",
+        "fossa for lacrimal sac",
+        "lacrimal sac fossa"
+       ],
+       "img": "img/eye-lab/m-orbit/q018.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：l… f…",
+       "explain": "淚窩 lacrimal fossa"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前篩孔"
+       ],
+       "en": [
+        "anterior ethmoidal foramen",
+        "anterior ethmoid foramen"
+       ],
+       "img": "img/eye-lab/m-orbit/q019.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：a… e… f…",
+       "explain": "前篩孔 anterior ethmoidal foramen"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "後篩孔"
+       ],
+       "en": [
+        "posterior ethmoidal foramen",
+        "posterior ethmoid foramen"
+       ],
+       "img": "img/eye-lab/m-orbit/q020.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：p… e… f…",
+       "explain": "後篩孔 posterior ethmoidal foramen"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經管",
+        "視神經孔"
+       ],
+       "en": [
+        "optic canal",
+        "optic foramen"
+       ],
+       "img": "img/eye-lab/m-orbit/q021.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：o… c…",
+       "explain": "視神經管 optic canal"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶上裂",
+        "上眼窩裂",
+        "上眼窩縫"
+       ],
+       "en": [
+        "superior orbital fissure",
+        "SOF"
+       ],
+       "img": "img/eye-lab/m-orbit/q022.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… o… f…",
+       "explain": "眶上裂 superior orbital fissure"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外側結節",
+        "眶外側結節",
+        "Whitnall 結節"
+       ],
+       "en": [
+        "lateral orbital tubercle",
+        "lateral tubercle",
+        "Whitnall's tubercle"
+       ],
+       "img": "img/eye-lab/m-orbit/q023.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：l… o… t…",
+       "explain": "外側結節 lateral orbital tubercle"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "眶上孔 supraorbital foramen、眶下孔 infraorbital foramen、眉弓 supraorbital ridge、滑車窩 trochlear fossa、淚腺窩 lacrimal gland fossa、眶下裂 inferior orbital fissure",
+      "淚窩 lacrimal fossa、前篩孔 anterior ethmoidal foramen、後篩孔 posterior ethmoidal foramen、視神經管 optic canal、眶上裂 superior orbital fissure、外側結節 lateral orbital tubercle"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "l3",
+   "title": "副鼻竇",
+   "goals": [
+    "找到並寫出：上頷竇、篩竇、額竇、蝶竇"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "副鼻竇",
+     "body": [
+      "手冊：上頷竇、額竇、篩竇、蝶竇。"
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "冠狀面 CT",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-anat-manual/ct_omc.jpg",
+     "source": "；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "上頷竇 maxillary sinus",
+       "desc": "眼眶下方",
+       "x": 17.58,
+       "y": 74.27
+      },
+      {
+       "name": "篩竇 ethmoidal sinus",
+       "desc": "眼眶內側",
+       "x": 37.93,
+       "y": 19.86
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "鼻腔矢狀面",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab/base/nasal_sagittal.jpg",
+     "source": "Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤；加標記點",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "額竇 frontal sinus",
+       "desc": "",
+       "x": 41.15,
+       "y": 29.68
+      },
+      {
+       "name": "蝶竇 sphenoidal sinus",
+       "desc": "",
+       "x": 62.5,
+       "y": 44.06
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "上課標本：水平切面",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab-private/base/class_nasal_section.jpg",
+     "source": "上課投影片照片（《眼解剖實驗.pdf》第 21 頁：8. 鼻淚管、9. 上頷竇；水平切面標本）；已移除箭頭（標記點依老師講義／圖譜位置）",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "上頷竇 maxillary sinus",
+       "desc": "",
+       "x": 66.62,
+       "y": 36.55
+      }
+     ]
+    },
+    {
+     "type": "diagram",
+     "title": "矢狀切面標本",
+     "body": "點圖上的數字或名稱，看它在哪裡；按「遮住名稱」可以自我測驗。",
+     "img": "img/eye-lab-private/base/sagittal.jpg",
+     "source": "老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記（標記點依老師講義／圖譜位置）",
+     "mode": "explore",
+     "points": [
+      {
+       "name": "蝶竇 sphenoidal sinus",
+       "desc": "",
+       "x": 60.1,
+       "y": 61.44
+      }
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "看圖寫名稱",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "冠狀面 CT：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上頷竇"
+       ],
+       "en": [
+        "maxillary sinus"
+       ],
+       "img": "img/eye-lab/m-orbit/q024.jpg",
+       "img_source": "（紅圈為本題標記）",
+       "hint": "英文開頭：m… s…",
+       "explain": "上頷竇 maxillary sinus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "冠狀面 CT：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "篩竇",
+        "篩氣室"
+       ],
+       "en": [
+        "ethmoidal sinus",
+        "ethmoid sinus",
+        "ethmoidal air cells"
+       ],
+       "img": "img/eye-lab/m-orbit/q025.jpg",
+       "img_source": "（紅圈為本題標記）",
+       "hint": "英文開頭：e… s…",
+       "explain": "篩竇 ethmoidal sinus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "鼻腔矢狀面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "額竇"
+       ],
+       "en": [
+        "frontal sinus"
+       ],
+       "img": "img/eye-lab/m-orbit/q026.jpg",
+       "img_source": "Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤（紅圈為本題標記）",
+       "hint": "英文開頭：f… s…",
+       "explain": "額竇 frontal sinus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "鼻腔矢狀面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶竇"
+       ],
+       "en": [
+        "sphenoidal sinus",
+        "sphenoid sinus"
+       ],
+       "img": "img/eye-lab/m-orbit/q027.jpg",
+       "img_source": "Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤（紅圈為本題標記）",
+       "hint": "英文開頭：s… s…",
+       "explain": "蝶竇 sphenoidal sinus"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "上頷竇 maxillary sinus、篩竇 ethmoidal sinus、額竇 frontal sinus、蝶竇 sphenoidal sinus"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "review",
+   "title": "總複習：總圖＋總表",
+   "goals": [
+    "所有點位看過一次、寫過一次"
+   ],
+   "steps": [
+    {
+     "type": "intro",
+     "title": "總複習",
+     "body": [
+      "先看總圖（所有點位都標好名稱），再看總表；最後跑台模擬：看紅圈寫中文＋英文（每個點位一題）。"
+     ]
+    },
+    {
+     "type": "card",
+     "title": "總圖｜眼眶的骨",
+     "body": [
+      "頭骨前面觀、眼眶模型、蝶骨上面觀"
+     ],
+     "img": [
+      "img/eye-lab-private/m-orbit/f028.jpg",
+      "img/eye-lab-private/m-orbit/f029.jpg",
+      "img/eye-lab-private/m-orbit/f030.jpg",
+      "img/eye-lab-private/m-orbit/f031.jpg"
+     ],
+     "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置；老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 7 頁照片；標記點依圖譜引線位置；老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 8 頁照片；標記點依圖譜引線位置（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總圖｜孔、裂、窩",
+     "body": [
+      "骨性眼眶前面觀、頭骨前面觀"
+     ],
+     "img": [
+      "img/eye-lab/m-orbit/f032.jpg",
+      "img/eye-lab/m-orbit/f033.jpg",
+      "img/eye-lab/m-orbit/f034.jpg",
+      "img/eye-lab-private/m-orbit/f035.jpg"
+     ],
+     "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）；老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總圖｜副鼻竇",
+     "body": [
+      "冠狀面 CT、鼻腔矢狀面、上課標本：水平切面、矢狀切面標本"
+     ],
+     "img": [
+      "img/eye-lab/m-orbit/f036.jpg",
+      "img/eye-lab/m-orbit/f037.jpg",
+      "img/eye-lab-private/m-orbit/f038.jpg",
+      "img/eye-lab-private/m-orbit/f039.jpg"
+     ],
+     "img_source": "；Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤；上課投影片照片（《眼解剖實驗.pdf》第 21 頁：8. 鼻淚管、9. 上頷竇；水平切面標本）；已移除箭頭；老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記（紅色編號與中英文標籤為本課加註）"
+    },
+    {
+     "type": "card",
+     "title": "總表",
+     "body": [
+      "**眼眶的骨**",
+      "- **鼻骨** nasal bone",
+      "- **淚骨** lacrimal bone",
+      "- **額骨** frontal bone",
+      "- **篩骨** ethmoid bone",
+      "- **蝶骨** sphenoid bone",
+      "- **顴骨** zygomatic bone",
+      "- **上頷骨** maxilla",
+      "- **蝶骨小翼** lesser wing of sphenoid bone",
+      "- **蝶骨大翼** greater wing of sphenoid bone",
+      "- **腭骨** palatine bone",
+      "- **蝶鞍** sella turcica",
+      "",
+      "**孔、裂、窩**",
+      "- **眶上孔** supraorbital foramen",
+      "- **眶下孔** infraorbital foramen",
+      "- **眉弓** supraorbital ridge",
+      "- **滑車窩** trochlear fossa",
+      "- **淚腺窩** lacrimal gland fossa",
+      "- **眶下裂** inferior orbital fissure",
+      "- **淚窩** lacrimal fossa",
+      "- **前篩孔** anterior ethmoidal foramen",
+      "- **後篩孔** posterior ethmoidal foramen",
+      "- **視神經管** optic canal",
+      "- **眶上裂** superior orbital fissure",
+      "- **外側結節** lateral orbital tubercle",
+      "",
+      "**副鼻竇**",
+      "- **上頷竇** maxillary sinus：眼眶下方",
+      "- **篩竇** ethmoidal sinus：眼眶內側",
+      "- **額竇** frontal sinus",
+      "- **蝶竇** sphenoidal sinus",
+      ""
+     ]
+    },
+    {
+     "type": "practice",
+     "title": "跑台模擬：看紅圈寫中文＋英文",
+     "checks": [
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "鼻骨"
+       ],
+       "en": [
+        "nasal bone"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q001.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：n… b…",
+       "explain": "鼻骨 nasal bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚骨"
+       ],
+       "en": [
+        "lacrimal bone"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q002.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：l… b…",
+       "explain": "淚骨 lacrimal bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "額骨"
+       ],
+       "en": [
+        "frontal bone"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q003.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：f… b…",
+       "explain": "額骨 frontal bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "篩骨"
+       ],
+       "en": [
+        "ethmoid bone",
+        "ethmoid"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q004.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：e… b…",
+       "explain": "篩骨 ethmoid bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶骨"
+       ],
+       "en": [
+        "sphenoid bone",
+        "sphenoid"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q005.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：s… b…",
+       "explain": "蝶骨 sphenoid bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "顴骨"
+       ],
+       "en": [
+        "zygomatic bone",
+        "zygoma"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q006.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：z… b…",
+       "explain": "顴骨 zygomatic bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "頭骨前面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上頷骨",
+        "上頜骨",
+        "上顎骨"
+       ],
+       "en": [
+        "maxilla",
+        "maxillary bone"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q007.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 1 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：m…",
+       "explain": "上頷骨 maxilla"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶模型：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶骨小翼"
+       ],
+       "en": [
+        "lesser wing of sphenoid bone",
+        "lesser wing of sphenoid",
+        "lesser sphenoid wing",
+        "lesser wing"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q008.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 7 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：l… w… o… s… b…",
+       "explain": "蝶骨小翼 lesser wing of sphenoid bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶模型：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶骨大翼"
+       ],
+       "en": [
+        "greater wing of sphenoid bone",
+        "greater wing of sphenoid",
+        "greater sphenoid wing",
+        "greater wing"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q009.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 7 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：g… w… o… s… b…",
+       "explain": "蝶骨大翼 greater wing of sphenoid bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "眼眶模型：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "腭骨",
+        "顎骨"
+       ],
+       "en": [
+        "palatine bone"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q010.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 7 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：p… b…",
+       "explain": "腭骨 palatine bone"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "蝶骨：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶鞍"
+       ],
+       "en": [
+        "sella turcica"
+       ],
+       "img": "img/eye-lab-private/m-orbit/q011.jpg",
+       "img_source": "老師講義《1.骨質眼窩+圖譜》（解剖學圖譜 Atlas of the Human Body）第 8 頁照片；標記點依圖譜引線位置（紅圈為本題標記）",
+       "hint": "英文開頭：s… t…",
+       "explain": "蝶鞍 sella turcica"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶上孔",
+        "眶上切跡"
+       ],
+       "en": [
+        "supraorbital foramen",
+        "supraorbital notch"
+       ],
+       "img": "img/eye-lab/m-orbit/q012.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… f…",
+       "explain": "眶上孔 supraorbital foramen"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶下孔"
+       ],
+       "en": [
+        "infraorbital foramen"
+       ],
+       "img": "img/eye-lab/m-orbit/q013.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… f…",
+       "explain": "眶下孔 infraorbital foramen"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眉弓",
+        "眶上緣"
+       ],
+       "en": [
+        "supraorbital ridge",
+        "supraorbital margin",
+        "superciliary arch"
+       ],
+       "img": "img/eye-lab/m-orbit/q014.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… r…",
+       "explain": "眉弓 supraorbital ridge"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "滑車窩"
+       ],
+       "en": [
+        "trochlear fossa",
+        "trochlear fovea"
+       ],
+       "img": "img/eye-lab/m-orbit/q015.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：t… f…",
+       "explain": "滑車窩 trochlear fossa"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚腺窩"
+       ],
+       "en": [
+        "lacrimal gland fossa",
+        "fossa for lacrimal gland"
+       ],
+       "img": "img/eye-lab/m-orbit/q016.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：l… g… f…",
+       "explain": "淚腺窩 lacrimal gland fossa"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶下裂",
+        "下眼窩裂"
+       ],
+       "en": [
+        "inferior orbital fissure",
+        "IOF"
+       ],
+       "img": "img/eye-lab/m-orbit/q017.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：i… o… f…",
+       "explain": "眶下裂 inferior orbital fissure"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "淚窩",
+        "淚囊窩"
+       ],
+       "en": [
+        "lacrimal fossa",
+        "fossa for lacrimal sac",
+        "lacrimal sac fossa"
+       ],
+       "img": "img/eye-lab/m-orbit/q018.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：l… f…",
+       "explain": "淚窩 lacrimal fossa"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "前篩孔"
+       ],
+       "en": [
+        "anterior ethmoidal foramen",
+        "anterior ethmoid foramen"
+       ],
+       "img": "img/eye-lab/m-orbit/q019.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：a… e… f…",
+       "explain": "前篩孔 anterior ethmoidal foramen"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "後篩孔"
+       ],
+       "en": [
+        "posterior ethmoidal foramen",
+        "posterior ethmoid foramen"
+       ],
+       "img": "img/eye-lab/m-orbit/q020.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：p… e… f…",
+       "explain": "後篩孔 posterior ethmoidal foramen"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "視神經管",
+        "視神經孔"
+       ],
+       "en": [
+        "optic canal",
+        "optic foramen"
+       ],
+       "img": "img/eye-lab/m-orbit/q021.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：o… c…",
+       "explain": "視神經管 optic canal"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "眶上裂",
+        "上眼窩裂",
+        "上眼窩縫"
+       ],
+       "en": [
+        "superior orbital fissure",
+        "SOF"
+       ],
+       "img": "img/eye-lab/m-orbit/q022.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：s… o… f…",
+       "explain": "眶上裂 superior orbital fissure"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "骨性眼眶：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "外側結節",
+        "眶外側結節",
+        "Whitnall 結節"
+       ],
+       "en": [
+        "lateral orbital tubercle",
+        "lateral tubercle",
+        "Whitnall's tubercle"
+       ],
+       "img": "img/eye-lab/m-orbit/q023.jpg",
+       "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（紅圈為本題標記）",
+       "hint": "英文開頭：l… o… t…",
+       "explain": "外側結節 lateral orbital tubercle"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "冠狀面 CT：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "上頷竇"
+       ],
+       "en": [
+        "maxillary sinus"
+       ],
+       "img": "img/eye-lab/m-orbit/q024.jpg",
+       "img_source": "（紅圈為本題標記）",
+       "hint": "英文開頭：m… s…",
+       "explain": "上頷竇 maxillary sinus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "冠狀面 CT：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "篩竇",
+        "篩氣室"
+       ],
+       "en": [
+        "ethmoidal sinus",
+        "ethmoid sinus",
+        "ethmoidal air cells"
+       ],
+       "img": "img/eye-lab/m-orbit/q025.jpg",
+       "img_source": "（紅圈為本題標記）",
+       "hint": "英文開頭：e… s…",
+       "explain": "篩竇 ethmoidal sinus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "鼻腔矢狀面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "額竇"
+       ],
+       "en": [
+        "frontal sinus"
+       ],
+       "img": "img/eye-lab/m-orbit/q026.jpg",
+       "img_source": "Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤（紅圈為本題標記）",
+       "hint": "英文開頭：f… s…",
+       "explain": "額竇 frontal sinus"
+      },
+      {
+       "type": "check",
+       "kind": "name",
+       "q": "鼻腔矢狀面：紅圈是什麼？寫出中文與英文。",
+       "zh": [
+        "蝶竇"
+       ],
+       "en": [
+        "sphenoidal sinus",
+        "sphenoid sinus"
+       ],
+       "img": "img/eye-lab/m-orbit/q027.jpg",
+       "img_source": "Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤（紅圈為本題標記）",
+       "hint": "英文開頭：s… s…",
+       "explain": "蝶竇 sphenoidal sinus"
+      }
+     ]
+    },
+    {
+     "type": "recap",
+     "points": [
+      "共 27 個點位；錯的回到該課的圖再點一次"
+     ]
+    }
+   ]
+  }
+ ]
+}

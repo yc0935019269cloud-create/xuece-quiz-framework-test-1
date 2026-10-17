@@ -1,0 +1,229 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-vessel-q-l4-2",
+  "subject": "eye_anat",
+  "name": "【跑台】海綿竇冠狀切面",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・血管系統",
+   "靜脈與海綿竇"
+  ],
+  "order": 1331,
+  "source": "《新實驗手冊-01.pdf》第 4 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "海綿竇切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "海綿竇 / cavernous sinus",
+   "accept": [
+    "海綿竇 / cavernous sinus"
+   ],
+   "explain": [
+    "**海綿竇　cavernous sinus**",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "靜脈與海綿竇",
+    "海綿竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q094.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "海綿竇切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "頸內動脈 / internal carotid artery",
+   "accept": [
+    "頸內動脈 / internal carotid artery",
+    "內頸動脈 / internal carotid artery"
+   ],
+   "explain": [
+    "**頸內動脈　internal carotid artery**",
+    "也可以寫：內頸動脈",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "靜脈與海綿竇",
+    "頸內動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q044.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "海綿竇切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "動眼神經 / oculomotor nerve",
+   "accept": [
+    "動眼神經 / oculomotor nerve",
+    "動眼神經 / CN III"
+   ],
+   "explain": [
+    "**動眼神經　oculomotor nerve**",
+    "也可以寫：CN III",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "靜脈與海綿竇",
+    "動眼神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q045.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "海綿竇切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "滑車神經 / trochlear nerve",
+   "accept": [
+    "滑車神經 / trochlear nerve",
+    "滑車神經 / CN IV"
+   ],
+   "explain": [
+    "**滑車神經　trochlear nerve**",
+    "也可以寫：CN IV",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "靜脈與海綿竇",
+    "滑車神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q046.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "海綿竇切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眼神經 / ophthalmic nerve",
+   "accept": [
+    "眼神經 / ophthalmic nerve",
+    "眼神經 / V1",
+    "眼支 / ophthalmic nerve",
+    "眼支 / V1"
+   ],
+   "explain": [
+    "**眼神經　ophthalmic nerve**",
+    "也可以寫：眼支、V1",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "靜脈與海綿竇",
+    "眼神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q047.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "海綿竇切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "外旋神經 / abducens nerve",
+   "accept": [
+    "外旋神經 / abducens nerve",
+    "外旋神經 / abducent nerve",
+    "外旋神經 / CN VI",
+    "外展神經 / abducens nerve",
+    "外展神經 / abducent nerve",
+    "外展神經 / CN VI"
+   ],
+   "explain": [
+    "**外旋神經　abducens nerve**",
+    "也可以寫：外展神經、abducent nerve、CN VI",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "靜脈與海綿竇",
+    "外旋神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q048.jpg"
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "海綿竇切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "腦下垂體 / pituitary gland",
+   "accept": [
+    "腦下垂體 / pituitary gland",
+    "腦下垂體 / pituitary",
+    "腦下垂體 / hypophysis",
+    "腦垂體 / pituitary gland",
+    "腦垂體 / pituitary",
+    "腦垂體 / hypophysis",
+    "垂體 / pituitary gland",
+    "垂體 / pituitary",
+    "垂體 / hypophysis"
+   ],
+   "explain": [
+    "**腦下垂體　pituitary gland**",
+    "也可以寫：腦垂體、垂體、pituitary、hypophysis",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "靜脈與海綿竇",
+    "腦下垂體"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q049.jpg"
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "海綿竇切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "蝶竇 / sphenoidal sinus",
+   "accept": [
+    "蝶竇 / sphenoidal sinus",
+    "蝶竇 / sphenoid sinus"
+   ],
+   "explain": [
+    "**蝶竇　sphenoidal sinus**",
+    "也可以寫：sphenoid sinus",
+    "（圖：Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 4 頁：血管系統",
+    "靜脈與海綿竇",
+    "蝶竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-vessel/q050.jpg"
+   ]
+  }
+ ]
+}

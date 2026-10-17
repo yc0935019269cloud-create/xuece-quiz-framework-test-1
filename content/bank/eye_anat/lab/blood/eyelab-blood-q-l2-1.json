@@ -1,0 +1,249 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-blood-q-l2-1",
+  "subject": "eye_anat",
+  "name": "【跑台】眼動脈側面圖",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・血液供應",
+   "眼動脈與眼眶分支"
+  ],
+  "order": 310,
+  "source": "《眼球的血液供應與網膜血管構造與功能》講義；《新實驗手冊-01.pdf》第 4 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "眼動脈側面圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "頸內動脈 / internal carotid artery",
+   "accept": [
+    "頸內動脈 / internal carotid artery",
+    "內頸動脈 / internal carotid artery"
+   ],
+   "explain": [
+    "**頸內動脈　internal carotid artery**",
+    "也可以寫：內頸動脈",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼動脈與眼眶分支",
+    "頸內動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q011.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "眼動脈側面圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眼動脈 / ophthalmic artery",
+   "accept": [
+    "眼動脈 / ophthalmic artery"
+   ],
+   "explain": [
+    "**眼動脈　ophthalmic artery**",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼動脈與眼眶分支",
+    "眼動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q012.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "眼動脈側面圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "視網膜中央動脈 / central retinal artery",
+   "accept": [
+    "視網膜中央動脈 / central retinal artery",
+    "視網膜中央動脈 / central artery of retina",
+    "中央視網膜動脈 / central retinal artery",
+    "中央視網膜動脈 / central artery of retina",
+    "視網膜中心動脈 / central retinal artery",
+    "視網膜中心動脈 / central artery of retina"
+   ],
+   "explain": [
+    "**視網膜中央動脈　central retinal artery**",
+    "也可以寫：中央視網膜動脈、視網膜中心動脈、central artery of retina",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼動脈與眼眶分支",
+    "視網膜中央動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q013.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "眼動脈側面圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "睫狀動脈 / ciliary artery",
+   "accept": [
+    "睫狀動脈 / ciliary artery",
+    "睫狀動脈 / ciliary arteries"
+   ],
+   "explain": [
+    "**睫狀動脈　ciliary artery**",
+    "也可以寫：ciliary arteries",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼動脈與眼眶分支",
+    "睫狀動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q014.jpg"
+   ]
+  },
+  {
+   "n": 5,
+   "type": "fill",
+   "stem": "眼動脈側面圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "淚動脈 / lacrimal artery",
+   "accept": [
+    "淚動脈 / lacrimal artery"
+   ],
+   "explain": [
+    "**淚動脈　lacrimal artery**",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼動脈與眼眶分支",
+    "淚動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q015.jpg"
+   ]
+  },
+  {
+   "n": 6,
+   "type": "fill",
+   "stem": "眼動脈側面圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "外瞼動脈 / lateral palpebral artery",
+   "accept": [
+    "外瞼動脈 / lateral palpebral artery",
+    "外側瞼動脈 / lateral palpebral artery"
+   ],
+   "explain": [
+    "**外瞼動脈　lateral palpebral artery**",
+    "也可以寫：外側瞼動脈",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼動脈與眼眶分支",
+    "外瞼動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q016.jpg"
+   ]
+  },
+  {
+   "n": 7,
+   "type": "fill",
+   "stem": "眼動脈側面圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眶上動脈 / supraorbital artery",
+   "accept": [
+    "眶上動脈 / supraorbital artery",
+    "上眼窩動脈 / supraorbital artery"
+   ],
+   "explain": [
+    "**眶上動脈　supraorbital artery**",
+    "也可以寫：上眼窩動脈",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼動脈與眼眶分支",
+    "眶上動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q017.jpg"
+   ]
+  },
+  {
+   "n": 8,
+   "type": "fill",
+   "stem": "眼動脈側面圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "滑車上動脈 / supratrochlear artery",
+   "accept": [
+    "滑車上動脈 / supratrochlear artery",
+    "滑車上動脈 / frontal artery",
+    "額動脈 / supratrochlear artery",
+    "額動脈 / frontal artery"
+   ],
+   "explain": [
+    "**滑車上動脈　supratrochlear artery**",
+    "也可以寫：額動脈、frontal artery",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼動脈與眼眶分支",
+    "滑車上動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q018.jpg"
+   ]
+  },
+  {
+   "n": 9,
+   "type": "fill",
+   "stem": "眼動脈側面圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "鼻背動脈 / dorsal nasal artery",
+   "accept": [
+    "鼻背動脈 / dorsal nasal artery",
+    "鼻背動脈 / nasal artery",
+    "鼻背動脈 / nasofrontal artery",
+    "鼻額動脈 / dorsal nasal artery",
+    "鼻額動脈 / nasal artery",
+    "鼻額動脈 / nasofrontal artery"
+   ],
+   "explain": [
+    "**鼻背動脈　dorsal nasal artery**",
+    "也可以寫：鼻額動脈、nasal artery、nasofrontal artery",
+    "（圖：Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "眼球的血液供應",
+    "眼動脈與眼眶分支",
+    "鼻背動脈"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/blood/q019.jpg"
+   ]
+  }
+ ]
+}

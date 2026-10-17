@@ -1,0 +1,41 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-tear-q-l1-3",
+  "subject": "eye_anat",
+  "name": "【跑台】上頸神經節（Gray）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・淚液系統",
+   "淚器與神經"
+  ],
+  "order": 1602,
+  "source": "《新實驗手冊-01.pdf》第 10 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "Gray 神經節圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "上頸神經節 / superior cervical ganglion",
+   "accept": [
+    "上頸神經節 / superior cervical ganglion"
+   ],
+   "explain": [
+    "**上頸神經節　superior cervical ganglion**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 10 頁：淚液系統",
+    "淚器與神經",
+    "上頸神經節"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-tear/q006.jpg"
+   ]
+  }
+ ]
+}

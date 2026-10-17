@@ -1,0 +1,43 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-orbit-q-l3-4",
+  "subject": "eye_anat",
+  "name": "【跑台】矢狀切面標本",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・骨質眼窩",
+   "副鼻竇"
+  ],
+  "order": 1123,
+  "source": "《新實驗手冊-01.pdf》第 1 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "矢狀切面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "蝶竇 / sphenoidal sinus",
+   "accept": [
+    "蝶竇 / sphenoidal sinus",
+    "蝶竇 / sphenoid sinus"
+   ],
+   "explain": [
+    "**蝶竇　sphenoidal sinus**",
+    "也可以寫：sphenoid sinus",
+    "（圖：老師講義《2.視覺路徑+標號-02.pdf》第 12、13 頁標本照（正中矢狀切面）；已移除講義箭頭、改用本課標記）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 1 頁：骨質眼窩",
+    "副鼻竇",
+    "蝶竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab-private/m-orbit/q049.jpg"
+   ]
+  }
+ ]
+}

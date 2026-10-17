@@ -291,3 +291,21 @@
 - `css/style.css` 的 `.lp-src` 加 `overflow-wrap:anywhere`（長網址來源在手機會撐出橫向捲動）；index.html 快取版本 v99。
 - 產生流程在專案外 `E:\NEWTEST\eye_work\`：`annot.py`（標標籤）、`fig_specs.py`／`fig_specs2.py`／`fig_specs3.py`（每張圖標哪些名稱、哪張卡配哪些圖；新圖的標記點用原圖像素座標）、`render_figs.py`（產圖）、`apply_figs.py`（寫入卡片，可重跑）。圖上標記位置沿用圖鑑人工標點（前脈絡叢動脈等細小構造標「大致位置」）；新增的 Gray193 顱底孔洞、Gray188／190、CT 的位置是對照原圖手動定位，已做一輪逐張檢視的自我審稿（2026-10-17：Gray188 顱骨側面的顴弓、外耳道、乳突、莖突位置依放大格線校正；Gray193 孔洞、Gray190 前面觀、CT 與其餘沿用圖鑑標點的圖未發現重大錯位），仍非專業審稿。
 - QA：`tools/figs-qa/check.cjs`（125 張配圖卡×桌機／390px 共 250 次渲染：圖載入、張數、說明、來源、無橫向捲動；結果 0 問題，截圖 `output/playwright/figs-ica-*.png`）、`tools/manual-qa/check.cjs` 103 項、`tools/eye115-qa/check.cjs` 80/80、`sweep.cjs` 173 步 0 錯誤；嚴格建置通過。沒有實機 iPad 測試。
+
+## 眼解剖實驗：圖鑑式學習單元＋跑台題庫（2026-10-18，v102）——**以後眼解剖實驗課做學習單元一律照這個形式**
+
+- **使用者要的形式**（跑台考：看標本認位置、寫中英文）：
+  - 每課＝幾張「可點的圖」（`diagram` 的 `mode: "explore"`：點數字或名稱看中英文與一句話位置，可「遮住名稱」自我測驗）＋「看圖寫名稱」題（`check` 的 `kind: "name"`：紅圈圖、中文英文兩格）。文字極簡：intro 一兩句、不要長篇解說、不要選擇題、不要每張卡都出題。
+  - **每個單元最後一課＝總複習**：所有圖的完整標註總圖（每張最多 5 個標籤、點太多就拆成幾張，必須涵蓋全部點位）、總表（依課分組：中文、English、一句話位置）、每個點位一題。
+  - **不考的點不要放**（使用者說過：漏斗（垂體柄）、乳頭體、蛛網膜、軟腦膜不考）。點位範圍依老師講義、《新實驗手冊-01.pdf》與逐字稿《會考的.html》。
+  - 名詞可點開看字源（`js/glossary.js`；字典 `content/glossary/eye-anatomy.json`、`eye-lab.json`）。
+  - **題庫**：每個點位一張紅圈圖（圖上方印「紅圈是什麼？請寫出中文與英文名稱 / What is circled? Name it in Chinese and English.」），`fill` 題、答案「中文 / English」（accept 列出所有別名組合；中英文都要寫才算對），**每張圖一個題本**，路徑 `眼解剖實驗 → 跑台看圖題（每個點位一題） → <單元> → <課>`，讓使用者勾選範圍。
+- 單元（`content/learn/eye_anat/lab-*.json`，`style: "atlas"`，build 對 atlas 單元不做節奏／卡片長度警告）：
+  - 實驗課（依老師講義）：`lab-visual-path`（講義《2.視覺路徑》10–13 頁）、`lab-orbit`（《1.骨質眼窩+圖譜》1–8 頁，點位由 PDF 引線末端自動換算）、`lab-blood`（血液供應講義，附講義原圖對照卡）。
+  - 實驗手冊名詞（考試範圍）：`lab-manual-{orbit,lid,vessel,visual,brain,tear}`（手冊第 1、2、4、5、8、10 頁）。
+  - 題庫 `content/bank/eye_anat/lab/<slug>/`：92 個題本、447 題。
+- **圖片版權**：老師講義、圖譜、上課照片放 `img/eye-lab-private/`（`.gitignore`，repo 是公開的，不上傳；本機 file:// 正常，網址版這些圖會缺）。開放授權圖放 `img/eye-lab/`。
+- **產生器**（專案外 `E:\NEWTEST\eye_work\atlas\`，重跑會整個覆寫上述單元、題庫與圖）：`names.py`（名稱表：中文／英文可接受寫法＋字源）、`bases_all.py`（底圖與點位）、`core.py`（`build(spec)`：課、總複習、題庫）、`build_all.py`（各單元 spec；最後輸出 `content/glossary/eye-lab.json`）。新單元：在 `bases_all.py` 登錄底圖點位、`names.py` 加名稱、`build_all.py` 加一個 spec，執行 `python -X utf8 E:/NEWTEST/eye_work/atlas/build_all.py` → `python tools/build.py --strict --index`。圖譜 PDF 的引線點位用 `E:\NEWTEST\eye_work\orb\extract.py` 取得。
+- 新題型與功能：`js/learn.js` 的 `kind: "name"`、檢核題可附 `img`；`js/glossary.js`；規格 `docs/格式_學習模式.md` §8.9、§8.10。
+- QA：`tools/eyelab-qa/check.cjs <unitId>`（每步渲染、圖載入、題目圖、名詞小視窗、桌機＋390px；9 個單元皆 0 問題）、`name-test.cjs`（寫名稱題互動）、`bank-test.cjs`（題庫載入、圖檔、判分）。
+- 限制：點位為人工／自動定位，無專業審稿；部分 Gray 解剖圖本身印有英文標籤（例如眼動脈分支、睫狀動脈圖），看圖題在這些圖上英文會被原圖提示；楔葉、舌回、穆勒氏肌、前脈絡叢動脈、眼底四大分支為大致位置；沒有實機 iPad 測試。

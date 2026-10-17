@@ -1,0 +1,118 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-orbit-q-l5-4",
+  "subject": "eye_anat",
+  "name": "【跑台】鼻腔矢狀面（示意圖）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "實驗課・骨質眼窩",
+   "頭頂、後面、鼻腔與鼻竇"
+  ],
+  "order": 243,
+  "source": "《1.骨質眼窩+圖譜+2026-01.pdf》第 1–8 頁；《新實驗手冊-01.pdf》第 1 頁；老師講義與上課照片（本機私有圖，不上傳）；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "鼻腔矢狀面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "額竇 / frontal sinus",
+   "accept": [
+    "額竇 / frontal sinus"
+   ],
+   "explain": [
+    "**額竇　frontal sinus**",
+    "額骨裡",
+    "（圖：Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭頂、後面、鼻腔與鼻竇",
+    "額竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/orbit/q087.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "鼻腔矢狀面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "蝶竇 / sphenoidal sinus",
+   "accept": [
+    "蝶竇 / sphenoidal sinus",
+    "蝶竇 / sphenoid sinus"
+   ],
+   "explain": [
+    "**蝶竇　sphenoidal sinus**",
+    "蝶骨體裡",
+    "也可以寫：sphenoid sinus",
+    "（圖：Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭頂、後面、鼻腔與鼻竇",
+    "蝶竇"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/orbit/q088.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "鼻腔矢狀面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "中鼻甲 / middle nasal concha",
+   "accept": [
+    "中鼻甲 / middle nasal concha",
+    "中鼻甲 / middle concha"
+   ],
+   "explain": [
+    "**中鼻甲　middle nasal concha**",
+    "也可以寫：middle concha",
+    "（圖：Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭頂、後面、鼻腔與鼻竇",
+    "中鼻甲"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/orbit/q144.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "鼻腔矢狀面：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "下鼻甲 / inferior nasal concha",
+   "accept": [
+    "下鼻甲 / inferior nasal concha",
+    "下鼻甲 / inferior concha"
+   ],
+   "explain": [
+    "**下鼻甲　inferior nasal concha**",
+    "也可以寫：inferior concha",
+    "（圖：Wikimedia Commons「Illu nose nasal cavities.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Illu_nose_nasal_cavities.png）；已塗去原圖法文標籤）"
+   ],
+   "tags": [
+    "跑台看圖",
+    "骨質眼窩：眼眶七骨、孔裂與顱底",
+    "頭頂、後面、鼻腔與鼻竇",
+    "下鼻甲"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/orbit/q145.jpg"
+   ]
+  }
+ ]
+}

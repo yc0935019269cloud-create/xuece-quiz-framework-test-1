@@ -1,0 +1,116 @@
+{
+ "schema": "xd-bank/1",
+ "set": {
+  "id": "eyelab-m-brain-q-l3-4",
+  "subject": "eye_anat",
+  "name": "【跑台】眼眶內神經（Gray）",
+  "path": [
+   "眼解剖實驗",
+   "跑台看圖題（每個點位一題）",
+   "手冊・腦幹與神經",
+   "神經節與眼眶神經"
+  ],
+  "order": 1523,
+  "source": "《新實驗手冊-01.pdf》第 8 頁；開放授權圖見各圖來源"
+ },
+ "questions": [
+  {
+   "n": 1,
+   "type": "fill",
+   "stem": "眼眶神經圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "眼神經 / ophthalmic nerve",
+   "accept": [
+    "眼神經 / ophthalmic nerve",
+    "眼神經 / V1",
+    "眼支 / ophthalmic nerve",
+    "眼支 / V1"
+   ],
+   "explain": [
+    "**眼神經　ophthalmic nerve**",
+    "也可以寫：眼支、V1",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "眼神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q021.jpg"
+   ]
+  },
+  {
+   "n": 2,
+   "type": "fill",
+   "stem": "眼眶神經圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "鼻睫神經 / nasociliary nerve",
+   "accept": [
+    "鼻睫神經 / nasociliary nerve"
+   ],
+   "explain": [
+    "**鼻睫神經　nasociliary nerve**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "鼻睫神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q039.jpg"
+   ]
+  },
+  {
+   "n": 3,
+   "type": "fill",
+   "stem": "眼眶神經圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "淚腺神經 / lacrimal nerve",
+   "accept": [
+    "淚腺神經 / lacrimal nerve",
+    "淚神經 / lacrimal nerve"
+   ],
+   "explain": [
+    "**淚腺神經　lacrimal nerve**",
+    "也可以寫：淚神經",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "淚腺神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q022.jpg"
+   ]
+  },
+  {
+   "n": 4,
+   "type": "fill",
+   "stem": "眼眶神經圖：紅圈是什麼？寫出中文與英文名稱（例：視神經 optic nerve）。",
+   "answer": "額神經 / frontal nerve",
+   "accept": [
+    "額神經 / frontal nerve"
+   ],
+   "explain": [
+    "**額神經　frontal nerve**",
+    "（圖：Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png））"
+   ],
+   "tags": [
+    "跑台看圖",
+    "手冊第 8 頁：腦幹與神經",
+    "神經節與眼眶神經",
+    "額神經"
+   ],
+   "level": 2,
+   "img": [
+    "img/eye-lab/m-brain/q023.jpg"
+   ]
+  }
+ ]
+}
