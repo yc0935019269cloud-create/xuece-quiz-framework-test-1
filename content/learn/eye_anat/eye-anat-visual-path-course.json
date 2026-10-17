@@ -39,6 +39,8 @@
           "type": "card",
           "title": "視覺主路徑順序",
           "body": [
+            "> 🖼️ **看圖**：真實腦標本（腦底面）：視神經 → 視交叉 → 視徑",
+            "",
             "先背這條主幹：",
             "",
             "```",
@@ -60,7 +62,9 @@
             "front": "視交叉之後的構造叫什麼？",
             "back": "視束 optic tract。"
           },
-          "tip": "看題目說在交叉「之後」，找 tract。"
+          "tip": "看題目說在交叉「之後」，找 tract。",
+          "img": "img/eye-anat-fig/bs_chiasm.jpg",
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -81,6 +85,8 @@
           "type": "card",
           "title": "五個構造的辨認線索",
           "body": [
+            "> 🖼️ **看圖**：視交叉的位置：正好在垂體柄（漏斗）前方",
+            "",
             "- 視神經 optic nerve：眼球通往顱內、視交叉之前。",
             "- 視交叉 optic chiasm：兩側視神經在此相接，部分纖維交叉。",
             "- 視束 optic tract：視交叉後向外後方走。",
@@ -96,7 +102,9 @@
             "front": "LGN 的全名是什麼？",
             "back": "外側膝狀體 lateral geniculate nucleus；亦可見 lateral geniculate body。"
           },
-          "tip": "Lateral 是外側，geniculate 是膝狀。"
+          "tip": "Lateral 是外側，geniculate 是膝狀。",
+          "img": "img/eye-anat-fig/bs_chiasm2.jpg",
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -237,6 +245,8 @@
           "type": "card",
           "title": "視神經四段",
           "body": [
+            "> 🖼️ **看圖**：視神經的構造（眼內段到眶內段）",
+            "",
             "逐字稿明確提醒視神經分成四段；本課用常見解剖分段詞：",
             "| 中文 | English |",
             "|---|---|",
@@ -255,7 +265,9 @@
             "front": "視神經通過視神經管的部分叫什麼？",
             "back": "管內段 intracanalicular segment。"
           },
-          "tip": "依位置選段：在 canal 裡就是管內段。"
+          "tip": "依位置選段：在 canal 裡就是管內段。",
+          "img": "img/eye-anat-fig/onh_four.jpg",
+          "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -274,6 +286,8 @@
           "type": "card",
           "title": "視放射分成顳葉與頂葉路徑",
           "body": [
+            "> 🖼️ **看圖**：大腦外側面（真實標本）：視放射經過顳葉與頂葉到枕葉",
+            "",
             "外側膝狀體之後的視放射 optic radiation 不只是一條直線：",
             "- 下方纖維向前繞入顳葉，形成 **Meyer’s loop（梅氏環）**。",
             "- 上方纖維沿較直接的頂葉路徑，投影片標示 **Baum’s loop（鮑氏環）**。",
@@ -289,7 +303,9 @@
             "front": "Meyer’s loop 位於視放射的哪一段走向？",
             "back": "下方纖維向前繞入顳葉形成 Meyer’s loop。"
           },
-          "tip": "記住「梅氏環繞進顳葉」。"
+          "tip": "記住「梅氏環繞進顳葉」。",
+          "img": "img/eye-anat-fig/beal_lat.jpg",
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -309,6 +325,8 @@
           "type": "card",
           "title": "視放射病灶與象限視野",
           "body": [
+            "> 🖼️ **看圖**：大腦外側面（真實標本）：視放射經過顳葉與頂葉到枕葉",
+            "",
             "- 顳葉 Meyer 環受損：典型是**對側同向上象限盲**，常用口訣 pie in the sky。",
             "- 頂葉視放射受損：較典型是**對側同向下象限盲**，pie on the floor。",
             "- 左右側由對側視野缺損呈現；先判病灶側，再判上／下象限。",
@@ -323,7 +341,9 @@
             "front": "右側 Meyer 環受損，典型是哪一側視野象限缺損？",
             "back": "左側同向上象限視野缺損。"
           },
-          "tip": "病灶在右側，視野缺損在左側；Meyer 環對應上象限。"
+          "tip": "病灶在右側，視野缺損在左側；Meyer 環對應上象限。",
+          "img": "img/eye-anat-fig/beal_lat.jpg",
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -424,6 +444,8 @@
           "type": "card",
           "title": "枕葉內側的兩條溝",
           "body": [
+            "> 🖼️ **看圖**：大腦內側面（真實標本）：距狀溝與頂枕溝，初級視覺皮質在距狀溝周圍",
+            "",
             "- 距狀溝 calcarine sulcus：位於枕葉內側面；初級視覺皮質分布在周圍。",
             "- 頂枕溝 parieto-occipital sulcus：協助分辨頂葉與枕葉的交界。",
             "- 初級視覺皮質 primary visual cortex 位於枕葉內側、距狀溝附近。"
@@ -436,7 +458,9 @@
             "front": "初級視覺皮質主要靠近哪條溝？",
             "back": "距狀溝 calcarine sulcus。"
           },
-          "tip": "不是中央溝；要在枕葉內側找。"
+          "tip": "不是中央溝；要在枕葉內側找。",
+          "img": "img/eye-anat-fig/beal_calc.jpg",
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -453,6 +477,8 @@
           "type": "card",
           "title": "Gennari 線與紋狀皮質",
           "body": [
+            "> 🖼️ **看圖**：大腦內側面（真實標本）：距狀溝與頂枕溝，初級視覺皮質在距狀溝周圍",
+            "",
             "初級視覺皮質 primary visual cortex 可見一條明顯白色髓鞘紋路，稱 **Gennari 線（line of Gennari）**。",
             "",
             "因為這條線呈條紋外觀，初級視覺皮質又稱 **紋狀皮質（striate cortex）**。視覺聯合皮質 visual association cortex 位於初級區周邊，負責更高階的視覺辨識。"
@@ -465,7 +491,9 @@
             "front": "「紋狀皮質」英文怎麼寫？",
             "back": "striate cortex。"
           },
-          "tip": "striate 指有條紋狀外觀。"
+          "tip": "striate 指有條紋狀外觀。",
+          "img": "img/eye-anat-fig/beal_calc.jpg",
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -485,6 +513,8 @@
           "type": "card",
           "title": "視交叉與腦下垂體的上下關係",
           "body": [
+            "> 🖼️ **看圖**：視交叉的位置：正好在垂體柄（漏斗）前方；視交叉在腦下垂體正上方",
+            "",
             "視交叉 optic chiasm 位於腦下垂體 pituitary gland 上方；腦下垂體位於蝶鞍 sella turcica 的垂體窩。",
             "",
             "腦下垂體腫瘤若向上生長壓迫視交叉，可影響交叉處的鼻側視網膜纖維，典型造成雙顳側偏盲 bitemporal hemianopia。"
@@ -497,7 +527,12 @@
             "front": "腦下垂體腫瘤向上壓迫視交叉，典型視野缺損是什麼？",
             "back": "雙顳側偏盲 bitemporal hemianopia。"
           },
-          "tip": "視交叉受壓會影響兩眼鼻側視網膜交叉纖維。"
+          "tip": "視交叉受壓會影響兩眼鼻側視網膜交叉纖維。",
+          "img": [
+            "img/eye-anat-fig/bs_chiasm2.jpg",
+            "img/eye-anat-fig/cavsinus_chiasm.jpg"
+          ],
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -599,6 +634,8 @@
           "type": "card",
           "title": "頸內動脈與逐字稿補充分支",
           "body": [
+            "> 🖼️ **看圖**：腦底動脈環（Willis 環）；真實腦標本（腦底面）：頸內動脈與前脈絡叢動脈",
+            "",
             "逐字稿列出的頸內動脈 internal carotid artery 相關分支：",
             "- 前大腦動脈 anterior cerebral artery（ACA）",
             "- 中大腦動脈 middle cerebral artery（MCA）",
@@ -615,7 +652,12 @@
             "front": "逐字稿指出原講義漏掉哪個頸內動脈分支？",
             "back": "前脈絡叢動脈 anterior choroidal artery。"
           },
-          "tip": "不是前交通動脈；注意 anterior choroidal 的完整名稱。"
+          "tip": "不是前交通動脈；注意 anterior choroidal 的完整名稱。",
+          "img": [
+            "img/eye-anat-fig/ica_circle2.jpg",
+            "img/eye-anat-fig/ica_choroidal.jpg"
+          ],
+          "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -631,6 +673,8 @@
           "type": "card",
           "title": "腦底循環圖的主要標記",
           "body": [
+            "> 🖼️ **看圖**：腦底動脈環（Willis 環）；真實腦標本（腦底面）：頸內動脈系統與椎—基底動脈系統",
+            "",
             "圖譜中應看得出以下名稱：",
             "- 頸內動脈 internal carotid artery；前大腦動脈 anterior cerebral artery；中大腦動脈 middle cerebral artery。",
             "- 前交通動脈 anterior communicating artery；後交通動脈 posterior communicating artery。",
@@ -648,7 +692,12 @@
             "front": "椎動脈向上匯合後形成什麼動脈？",
             "back": "基底動脈 basilar artery。"
           },
-          "tip": "從左右椎動脈往中線匯合來記。"
+          "tip": "從左右椎動脈往中線匯合來記。",
+          "img": [
+            "img/eye-anat-fig/ica_circle2.jpg",
+            "img/eye-anat-fig/ica_basilar.jpg"
+          ],
+          "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -666,6 +715,8 @@
           "type": "card",
           "title": "近反應三聯徵與圖上的標記",
           "body": [
+            "> 🖼️ **看圖**：睫狀神經節：近反應的副交感纖維經它到睫狀肌與瞳孔括約肌",
+            "",
             "看近物時的近反應三聯徵：",
             "1. **集合 convergence**：雙眼內轉，內直肌 medial rectus muscle 收縮。",
             "2. **調節 accommodation**：睫狀肌 ciliary muscle 收縮，晶狀體變厚以增加屈光力。",
@@ -681,7 +732,9 @@
             "front": "近反應中，哪一塊肌肉收縮使兩眼集合？",
             "back": "內直肌 medial rectus muscle。"
           },
-          "tip": "集合是雙眼內轉，不是外直肌收縮。"
+          "tip": "集合是雙眼內轉，不是外直肌收縮。",
+          "img": "img/eye-anat-fig/near_ciliary.jpg",
+          "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",

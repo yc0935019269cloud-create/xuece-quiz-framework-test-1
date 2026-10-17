@@ -38,6 +38,8 @@
           "type": "card",
           "title": "眼眶七骨總表",
           "body": [
+            "> 🖼️ **看圖**：眼眶七塊骨（前面觀）",
+            "",
             "眼眶由七塊骨構成：",
             "| 中文 | English |",
             "|---|---|",
@@ -58,7 +60,9 @@
           "flash": {
             "front": "眼眶由幾塊骨頭構成？",
             "back": "七塊：額骨 frontal bone、蝶骨 sphenoid bone、顴骨 zygomatic bone、上頜骨 maxilla、腭骨 palatine bone、篩骨 ethmoid bone、淚骨 lacrimal bone。"
-          }
+          },
+          "img": "img/eye-anat-fig/orbit7.jpg",
+          "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -241,6 +245,8 @@
           "type": "card",
           "title": "眼眶四壁的骨頭組成",
           "body": [
+            "> 🖼️ **看圖**：四面壁各由哪些骨組成",
+            "",
             "依課堂逐字稿整理：",
             "| 眼眶壁 | 骨頭 |",
             "|---|---|",
@@ -259,7 +265,9 @@
             "front": "眼眶上壁由哪兩個骨性部分構成？",
             "back": "額骨 frontal bone 與蝶骨小翼 lesser wing of sphenoid。"
           },
-          "tip": "不要把蝶骨大翼放進上壁。"
+          "tip": "不要把蝶骨大翼放進上壁。",
+          "img": "img/eye-anat-fig/orbit_walls.jpg",
+          "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -276,6 +284,8 @@
           "type": "card",
           "title": "蝶骨兩翼與眶上裂",
           "body": [
+            "> 🖼️ **看圖**：蝶骨兩翼與眶上裂、視神經管、眶下裂",
+            "",
             "蝶骨 sphenoid bone 的小翼 lesser wing 與大翼 greater wing 是同一骨的不同部分。**眶上裂 superior orbital fissure 位於兩翼之間**，不是「在小翼上」也不是「在大翼上」。",
             "",
             "視神經管 optic canal 位在眼眶後端尖部附近；眶上裂在其旁側。眶下裂 inferior orbital fissure 位於眼眶後下方。"
@@ -288,7 +298,9 @@
             "front": "眶上裂的中文英文名稱及位置如何完整表達？",
             "back": "眶上裂 / superior orbital fissure；位於蝶骨小翼與大翼之間。"
           },
-          "tip": "記住是「兩翼之間」，不是其中一翼上。"
+          "tip": "記住是「兩翼之間」，不是其中一翼上。",
+          "img": "img/eye-anat-fig/orbit_fissures.jpg",
+          "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -308,6 +320,8 @@
           "type": "card",
           "title": "三個易混名稱：孔、管、裂",
           "body": [
+            "> 🖼️ **看圖**：孔、管、裂的位置",
+            "",
             "- 視神經管 optic canal：視神經與眼動脈通過，靠眼眶後尖端。",
             "- 眶上裂 superior orbital fissure：CN III、IV、V1、VI 通過，位於蝶骨兩翼之間。",
             "- 眶下裂 inferior orbital fissure：位於眼眶後下方；本次逐字稿沒有列通過物，先熟悉辨名與位置。",
@@ -322,7 +336,9 @@
             "front": "視神經與眼動脈共同通過哪個構造？",
             "back": "視神經管 optic canal。"
           },
-          "tip": "不是視束 optic tract；視束在視交叉後方。"
+          "tip": "不是視束 optic tract；視束在視交叉後方。",
+          "img": "img/eye-anat-fig/orbit_holes.jpg",
+          "img_source": "OpenStax College，Wikimedia Commons「713 Bones Forming Orbit.jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:713_Bones_Forming_Orbit.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -424,6 +440,8 @@
           "type": "card",
           "title": "從 CN I 到 CN VI：前段顱孔",
           "body": [
+            "> 🖼️ **看圖**：顱底內面（真實顱骨）：篩板與雞冠；真實顱骨（中顱窩近拍）：視神經管與眶上裂",
+            "",
             "| 孔洞 | 通過物 |",
             "|---|---|",
             "| 篩孔 olfactory foramina | 嗅神經 CN I |",
@@ -440,7 +458,12 @@
             "front": "哪個孔洞通過 CN II？",
             "back": "視神經管 optic canal。"
           },
-          "tip": "按神經編號找：CN II 是視神經。"
+          "tip": "按神經編號找：CN II 是視神經。",
+          "img": [
+            "img/eye-anat-fig/crane_a.jpg",
+            "img/eye-anat-fig/mcf_a.jpg"
+          ],
+          "img_source": "Didier Descouens，Wikimedia Commons「Crane4.png」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Crane4.png）；Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -458,6 +481,8 @@
           "type": "card",
           "title": "CN V 分支：圓孔與卵圓孔",
           "body": [
+            "> 🖼️ **看圖**：三叉神經三條分支各走哪個孔",
+            "",
             "三叉神經 CN V 的三個分支按位置記：",
             "- 眼神經 V1：經眶上裂 superior orbital fissure。",
             "- 上頜神經 V2：經圓孔 foramen rotundum。",
@@ -473,7 +498,9 @@
             "front": "第五對腦神經第二支 V2 通過哪個孔？",
             "back": "圓孔 foramen rotundum。"
           },
-          "tip": "口訣「V2 圓、V3 卵」。"
+          "tip": "口訣「V2 圓、V3 卵」。",
+          "img": "img/eye-anat-fig/mcf_v.jpg",
+          "img_source": "Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -493,6 +520,8 @@
           "type": "card",
           "title": "CN VII 到 CN XII：後段顱孔",
           "body": [
+            "> 🖼️ **看圖**：顱底內面（左半，Gray 圖）：後段與中段的孔洞",
+            "",
             "| 孔洞 | 通過物 |",
             "|---|---|",
             "| 內耳道 internal acoustic meatus | CN VII、CN VIII |",
@@ -510,7 +539,9 @@
             "front": "CN IX、X、XI 一起對應哪個孔洞？",
             "back": "頸靜脈孔 jugular foramen。"
           },
-          "tip": "把 IX、X、XI 當一組記。"
+          "tip": "把 IX、X、XI 當一組記。",
+          "img": "img/eye-anat-fig/skull_post_foramina.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray193.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray193.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -615,6 +646,8 @@
           "type": "card",
           "title": "眼眶周圍的鼻腔與上顎標誌",
           "body": [
+            "> 🖼️ **看圖**：顱骨前面觀：鼻骨、鼻腔、下鼻甲、上頷骨",
+            "",
             "| 中文 | English |",
             "|---|---|",
             "| 鼻骨 | nasal bone |",
@@ -637,7 +670,9 @@
             "front": "構成硬顎後部的是哪個骨性部分？",
             "back": "腭骨水平板 horizontal plate of palatine bone。"
           },
-          "tip": "硬顎前部是上頜骨腭突，後部是腭骨水平板。"
+          "tip": "硬顎前部是上頜骨腭突，後部是腭骨水平板。",
+          "img": "img/eye-anat-fig/skull_front_nasal.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray190.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray190.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -657,6 +692,8 @@
           "type": "card",
           "title": "顱底與顳骨、枕骨標誌",
           "body": [
+            "> 🖼️ **看圖**：顱底內面（真實顱骨）",
+            "",
             "圖譜常見名稱成對記：",
             "- 雞冠 crista galli；篩板 cribriform plate；嗅孔 olfactory foramina。",
             "- 蝶鞍 sella turcica；腦下垂體窩 hypophyseal fossa。",
@@ -673,7 +710,9 @@
             "front": "顱底篩骨中，哪個構造有嗅神經絲通過的小孔？",
             "back": "篩板 cribriform plate 上的嗅孔 olfactory foramina。"
           },
-          "tip": "區分骨板（plate）和板上的小孔（foramina）。"
+          "tip": "區分骨板（plate）和板上的小孔（foramina）。",
+          "img": "img/eye-anat-fig/crane_base.jpg",
+          "img_source": "Didier Descouens，Wikimedia Commons「Crane4.png」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Crane4.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -689,6 +728,8 @@
           "type": "card",
           "title": "眼眶與副鼻竇：用方向記骨折鄰近",
           "body": [
+            "> 🖼️ **看圖**：真實斷層（冠狀面 CT）：眼眶下方是上頷竇、內側是篩竇；額竇與蝶竇在更前、更後的切面",
+            "",
             "| 方位 | 鄰近副鼻竇 |",
             "|---|---|",
             "| 眼眶上方 | 額竇 frontal sinus |",
@@ -706,7 +747,9 @@
             "front": "眶底骨折最直接鄰近哪個副鼻竇？",
             "back": "上頜竇 maxillary sinus。"
           },
-          "tip": "先用方向定位：眶底在下方。"
+          "tip": "先用方向定位：眶底在下方。",
+          "img": "img/eye-anat-fig/ct_sinus.jpg",
+          "img_source": "Mikael Häggström 等，Wikimedia Commons「CT of the ostiomeatal complex, coronal plane, no annotations.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:CT_of_the_ostiomeatal_complex,_coronal_plane,_no_annotations.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -807,6 +850,8 @@
           "type": "card",
           "title": "鼻腔中線與鼻甲",
           "body": [
+            "> 🖼️ **看圖**：真實斷層（冠狀面 CT）：鼻中隔把鼻腔分成左右，鼻甲從外側壁突出",
+            "",
             "- 鼻骨 nasal bone。",
             "- 鼻中隔 nasal septum 的骨性部分包括鋤骨 vomer 與篩骨垂直板 perpendicular plate of ethmoid。",
             "- 中鼻甲 middle nasal concha 屬篩骨 ethmoid；下鼻甲 inferior nasal concha 是獨立骨。",
@@ -820,7 +865,9 @@
           "flash": {
             "front": "中鼻甲與下鼻甲的骨性來源？",
             "back": "中鼻甲 middle nasal concha 屬篩骨；下鼻甲 inferior nasal concha 是獨立骨。"
-          }
+          },
+          "img": "img/eye-anat-fig/ct_septum.jpg",
+          "img_source": "Mikael Häggström 等，Wikimedia Commons「CT of the ostiomeatal complex, coronal plane, no annotations.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:CT_of_the_ostiomeatal_complex,_coronal_plane,_no_annotations.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -840,6 +887,8 @@
           "type": "card",
           "title": "顱頂顱縫與枕骨標誌",
           "body": [
+            "> 🖼️ **看圖**：顱骨側面觀：顱縫與頂骨、顳骨",
+            "",
             "| 名稱 | English | 位置提示 |",
             "|---|---|---|",
             "| 頂骨 | parietal bone | 顱頂側上方 |",
@@ -859,7 +908,9 @@
           "flash": {
             "front": "冠狀縫、矢狀縫、人字縫各位於哪裡？",
             "back": "冠狀縫 coronal suture：額骨與頂骨間；矢狀縫 sagittal suture：左右頂骨間；人字縫 lambdoid suture：頂骨與枕骨間。"
-          }
+          },
+          "img": "img/eye-anat-fig/skull_sutures.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray188.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray188.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -877,6 +928,8 @@
           "type": "card",
           "title": "下頜骨與顳骨的圖譜標誌",
           "body": [
+            "> 🖼️ **看圖**：顱骨側面觀：下頜骨、顳骨的標誌",
+            "",
             "- 下頜骨 mandible：標示下頜孔 mandibular foramen、頦孔 mental foramen。",
             "- 顳骨 temporal bone：標示乳突 mastoid process、莖突 styloid process、鼓部 tympanic part、外耳道 external acoustic meatus、下頜窩 mandibular fossa、關節結節 articular tubercle。",
             "- 顴弓 zygomatic arch 由顳骨顴突 zygomatic process of temporal bone 與顴骨顳突 temporal process of zygomatic bone 形成。",
@@ -890,7 +943,9 @@
           "flash": {
             "front": "顴弓由哪兩個骨性突起形成？",
             "back": "顳骨顴突 zygomatic process of temporal bone＋顴骨顳突 temporal process of zygomatic bone。"
-          }
+          },
+          "img": "img/eye-anat-fig/skull_temporal.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray188.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray188.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",

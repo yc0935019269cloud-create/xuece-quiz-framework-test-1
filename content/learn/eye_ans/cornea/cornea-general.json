@@ -46,6 +46,8 @@
           "type": "card",
           "title": "角膜在哪裡？長什麼樣子？",
           "body": [
+            "> 🖼️ **看圖**：眼球水平切面：角膜在最前面，後面連著鞏膜；活體眼睛：角膜輪部（角膜 ↔ 結膜的交界）",
+            "",
             "- 位在眼球最前方，覆蓋**虹膜、瞳孔和前房**。",
             "- 是眼球**外層纖維膜**的**前 1/6**（後 5/6 是鞏膜）。",
             "- **透明、無血管**。",
@@ -62,7 +64,12 @@
           },
           "exam": [
             "**考法**：角膜占纖維層前 1/6（106 師高 21）；屈光力約 2/3、表面不規則 → 散光（108 師特 7）。"
-          ]
+          ],
+          "img": [
+            "img/eye-anat-fig/cornea_eye.jpg",
+            "img/eye-anat-fig/cornea_limbus.jpg"
+          ],
+          "img_source": "Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -82,6 +89,8 @@
           "type": "card",
           "title": "前表面 vs 後表面的尺寸",
           "body": [
+            "> 🖼️ **看圖**：眼球前段：角膜覆蓋前房、虹膜與瞳孔",
+            "",
             "| | 前表面 | 後表面 |",
             "|---|---|---|",
             "| 形狀 | **橢圓形** | **圓形** |",
@@ -103,7 +112,9 @@
           },
           "exam": [
             "**考法**：前、後表面的尺寸與曲率；**2～3 歲達成人大小**（111 師高 2）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/cornea_ant.jpg",
+          "img_source": "BruceBlaus. When using this image in external sources it can be cited as:  Blausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -123,6 +134,8 @@
           "type": "card",
           "title": "厚度、折射率與屈光力",
           "body": [
+            "> 🖼️ **看圖**：角膜五層（由外到內）",
+            "",
             "- **厚度**：中央 **0.5–0.6 mm**、周邊 **1.2 mm** → **中央薄、周邊厚**",
             "- **折射率**：**1.376**（約 1.38）",
             "- **屈光力**：",
@@ -148,7 +161,9 @@
           },
           "exam": [
             "**考法**：中央厚度 520～550 μm、**中央薄而陡**、扁長形 Q 為負（109 生特 5、111 師高 8、113 師高 8）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/cornea_5.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -263,6 +278,8 @@
           "type": "card",
           "title": "角膜的化學組成",
           "body": [
+            "> 🖼️ **看圖**：角膜五層（由外到內）",
+            "",
             "| 成分 | 比例 |",
             "|---|---|",
             "| **水** | **78%** |",
@@ -283,7 +300,9 @@
           },
           "exam": [
             "**考法**：I 型膠原、糖胺聚醣以硫酸角質素最多；與鞏膜比較（106 師特 14、108 師高 6、108 生特 6、113 生普 8）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/cornea_5.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -346,6 +365,8 @@
           "type": "card",
           "title": "圓錐角膜的臨床徵象",
           "body": [
+            "> 🖼️ **看圖**：基質：夾在前彈力層與後彈力層之間，細胞是角質細胞",
+            "",
             "- **角膜頂點變薄**、**Bowman 層結疤**",
             "- **Vogt's striae**：基質深層的垂直應力紋，**壓迫眼球時會消失**",
             "- **Fleischer ring**：在錐底周圍的**上皮**累積一圈**鐵沉積**",
@@ -365,7 +386,9 @@
           },
           "exam": [
             "**考法**：圓錐角膜的徵象（Munson、Fleischer ring…）多半在眼病學考；解剖課只需知道**中央變薄、錐狀前凸**。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/cornea_stroma.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -461,6 +484,8 @@
           "type": "card",
           "title": "形狀：扁長形，中央薄而陡",
           "body": [
+            "> 🖼️ **看圖**：眼球水平切面：角膜在最前面，後面連著鞏膜",
+            "",
             "- 正常角膜是**扁長形（prolate）**：中央陡、周邊平，**Q 值為負**（約 −0.2～−0.3）；扁圓形（oblate）Q 值為正（如近視雷射後）。",
             "- **中央較薄、屈度較陡**；周邊較厚、較平（中央約 520～550 μm，周邊約 700 μm）。",
             "- 嬰兒角膜約 **2～3 歲**就接近成人大小。",
@@ -476,7 +501,9 @@
           ],
           "demo": [
             "**示範**：「扁長形，Q 值為負」＝正常；「扁圓形，Q 值為正」＝術後或病變。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/cornea_eye.jpg",
+          "img_source": "Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -496,6 +523,8 @@
           "type": "card",
           "title": "成分：I 型膠原與糖胺聚醣",
           "body": [
+            "> 🖼️ **看圖**：基質：夾在前彈力層與後彈力層之間，細胞是角質細胞",
+            "",
             "- 角膜基質約 **200～250 層**板層，以 **I 型膠原纖維**為主（鞏膜也是 I 型，差在排列）。",
             "- **糖胺聚醣（GAG）** 以 **硫酸角質素（keratan sulfate）** 最多，其次硫酸軟骨素、硫酸皮膚素。",
             "- 角膜與鞏膜：**成分相同、排列不同**——角膜規則（透明），鞏膜不規則（不透明）；差異還有纖維直徑與含水量。"
@@ -510,7 +539,9 @@
           ],
           "demo": [
             "**示範**：「角膜與鞏膜組成皆含彈性纖維」錯；「兩者主要組成分相同」對。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/cornea_stroma.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",

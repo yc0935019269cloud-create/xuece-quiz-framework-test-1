@@ -62,6 +62,8 @@
           "type": "card",
           "title": "三條睫狀動脈的分工",
           "body": [
+            "> 🖼️ **看圖**：三條睫狀動脈（Gray 圖）",
+            "",
             "| 血管 | 路線 | 供應 |",
             "|---|---|---|",
             "| **前睫狀動脈** | 眼外肌（直肌）的肌動脈延伸，穿鞏膜進入眼球 | **眼前段**：輪部血管叢、結膜、鞏膜、睫狀體、虹膜大動脈環 |",
@@ -86,7 +88,9 @@
           "flash": {
             "front": "短、長睫狀後動脈各供應哪裡？",
             "back": "後短 → 後極脈絡膜、視神經盤；後長 → 睫狀體、虹膜。"
-          }
+          },
+          "img": "img/eye-anat-fig/ciliary_all.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -106,6 +110,8 @@
           "type": "card",
           "title": "虹膜大動脈環與小環",
           "body": [
+            "> 🖼️ **看圖**：虹膜大動脈環由前睫狀動脈與後長睫狀動脈匯成",
+            "",
             "- **虹膜大動脈環（major arterial circle）**：位在**睫狀體**（前部、虹膜根部附近），由**前睫狀動脈 ＋ 後長睫狀動脈**的分支匯合而成。虹膜與睫狀突的血液幾乎都從這裡分出去。",
             "- **虹膜小動脈環（minor circle）**：在虹膜的**蜷縮輪（collarette）**附近，是虹膜動脈與靜脈的吻合處。",
             "",
@@ -126,7 +132,9 @@
           "flash": {
             "front": "虹膜大動脈環由哪兩種血管組成？",
             "back": "前睫狀動脈 ＋ 後長睫狀動脈（位置在睫狀體）。"
-          }
+          },
+          "img": "img/eye-anat-fig/ciliary_circle.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -146,6 +154,8 @@
           "type": "card",
           "title": "眼外肌血管與眼前節缺血",
           "body": [
+            "> 🖼️ **看圖**：四條直肌（前面觀）：前睫狀動脈就從肌肉的血管延伸出來",
+            "",
             "前睫狀動脈來自**眼外肌（直肌）的肌動脈**，穿過直肌止端進入眼球。",
             "- 每條直肌通常有 **2 條**前睫狀動脈；**外直肌只有 1 條**。",
             "- 斜視手術一次切斷**多條直肌（≥3 條）** → 眼前段血液不足 → **眼前節缺血（anterior segment ischemia）**。",
@@ -163,7 +173,9 @@
           ],
           "demo": [
             "**示範**：上直肌＋下直肌＋內直肌三條一起手術 → 風險比只動 1～2 條高很多；若再加外直肌（只有一條血管）更要小心。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/rectus.jpg",
+          "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -274,6 +286,8 @@
           "type": "card",
           "title": "辛氏環（Circle of Zinn–Haller）與視神經盤",
           "body": [
+            "> 🖼️ **看圖**：辛氏環圍繞視神經盤，由後短睫狀動脈分支組成",
+            "",
             "**位置**：圍繞視神經盤、在鞏膜內的小動脈環。",
             "**組成**：由**後短睫狀動脈**的分支吻合而成。",
             "**功能**：主要供應**視神經盤（篩板前、篩板區）的血液**——也就是視神經「眼球內段」。",
@@ -296,7 +310,9 @@
           "flash": {
             "front": "AION 的缺血血管？",
             "back": "後短睫狀動脈／辛氏環（供應視神經盤）。"
-          }
+          },
+          "img": "img/eye-anat-fig/zinn.jpg",
+          "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -316,6 +332,8 @@
           "type": "card",
           "title": "睫狀視網膜動脈（cilioretinal artery）",
           "body": [
+            "> 🖼️ **看圖**：眼底：睫狀視網膜動脈從視神經盤顳側緣穿出，供應黃斑",
+            "",
             "- **來源**：**後短睫狀動脈**（所以「睫狀」，但它供應**視網膜**）。",
             "- **比例**：只有約 **10～33%** 的人有（醫學系不考，視光國考會考）。",
             "- **位置**：從視神經盤**顳側邊緣**單獨穿出（約 90% 朝顳側），不是中央動脈的分支。",
@@ -334,7 +352,9 @@
           ],
           "demo": [
             "**示範**：視網膜中央動脈阻塞，視力只剩中心一小塊 → 這個人可能有睫狀視網膜動脈。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/fundus_cilio.jpg",
+          "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -354,6 +374,8 @@
           "type": "card",
           "title": "視神經四段：長度與血供",
           "body": [
+            "> 🖼️ **看圖**：視神經盤與視神經分段",
+            "",
             "| 分段 | 長度 | 血液供應 |",
             "|---|---|---|",
             "| **眼內段**（視神經盤） | 約 1 mm（最短、最細，**無髓鞘**） | 後短睫狀動脈（辛氏環）、視網膜小動脈 |",
@@ -376,7 +398,9 @@
           "demo": [
             "**示範**：「視神經最長的是顱內段」錯；正解是**眶內段**，它呈 S 形，讓眼球轉動時神經不被拉扯。",
             "**示範**：視神經的血液「僅由中央視網膜動脈供應」錯——還有短後睫狀動脈、軟腦膜血管與眼動脈分支。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/onh_segments.jpg",
+          "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -482,6 +506,8 @@
           "type": "card",
           "title": "三個一定要背的配對",
           "body": [
+            "> 🖼️ **看圖**：三條睫狀動脈（Gray 圖）",
+            "",
             "| 問法 | 答案 | 理由 |",
             "|---|---|---|",
             "| 供應**赤道後方脈絡膜** | **後短**睫狀動脈 | 短 → 留在後面 |",
@@ -506,7 +532,9 @@
           "flash": {
             "front": "睫狀動脈題的畫掉法？",
             "back": "短＝留後面（脈絡膜、視神經盤、視網膜）；長／前＝往前（虹膜、睫狀體、眼前段）。"
-          }
+          },
+          "img": "img/eye-anat-fig/ciliary_all.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -526,6 +554,8 @@
           "type": "card",
           "title": "視神經與視神經盤題：四個常見陷阱",
           "body": [
+            "> 🖼️ **看圖**：視神經盤附近的血管與篩板",
+            "",
             "1. **最長的是哪一段**？眶內段（不是顱內段）。",
             "2. **血液只由中央視網膜動脈供應**？錯——還有後短睫狀動脈、軟腦膜血管、眼動脈、頸內動脈分支。",
             "3. **盲點的原因**？視神經盤**沒有感光細胞**（不是「沒有視網膜組織」那種籠統說法）。",
@@ -542,7 +572,9 @@
           ],
           "demo": [
             "**示範**：「眼內部分視神經盤的神經具有髓鞘」→ 錯，答案是篩板前**沒有**髓鞘。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/onh_short.jpg",
+          "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Diagram showing the components of the optic nerve.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Diagram_showing_the_components_of_the_optic_nerve.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",

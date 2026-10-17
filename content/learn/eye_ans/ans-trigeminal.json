@@ -50,6 +50,8 @@
           "type": "card",
           "title": "三叉神經（CN V）的三個分支",
           "body": [
+            "> 🖼️ **看圖**：臉上的感覺地圖：V1（眶上）、V2（眶下）、V3（頦、頰）",
+            "",
             "三叉神經是 12 對腦神經中**最粗、最大**的一對，因為有三個分支才叫「三叉」：",
             "",
             "| 分支 | 方向 | 性質 | 與眼睛的關係 |",
@@ -71,7 +73,9 @@
           },
           "exam": [
             "**考法**：V1、V2、V3 的分區與角膜、眼瞼、結膜感覺（108 師高 31、110 生普 21、109 生特 6、108 生普 22）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/v_skin.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -99,6 +103,8 @@
           "type": "card",
           "title": "V1 的三個分支：淚腺、額、鼻睫",
           "body": [
+            "> 🖼️ **看圖**：V1 眼神經分成額、淚腺、鼻睫三支",
+            "",
             "眼神經（V1）再分成三支：",
             "",
             "| 分支 | 往哪裡走 | 有沒有進眼球 |",
@@ -122,7 +128,9 @@
           },
           "exam": [
             "**考法**：V1 的三分支：淚腺神經、額神經、鼻睫神經；**鼻睫神經**帶角膜與睫狀體感覺（109 師特 31、112 師高 8）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/v1_branch.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -269,6 +277,8 @@
           "type": "card",
           "title": "視神經管（視神經孔）",
           "body": [
+            "> 🖼️ **看圖**：真實顱骨：視神經管與眶上裂的位置",
+            "",
             "通過**視神經管**的構造至少要記兩個：",
             "1. **視神經**（CN II）",
             "2. **眼動脈**（ophthalmic artery，內頸動脈的分支）",
@@ -288,7 +298,9 @@
           },
           "exam": [
             "**考法**：視神經管＝視神經＋眼動脈（＋交感）（107 師高 3、110 生普 16、108 師高 3）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/ofc_canal.jpg",
+          "img_source": "Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -308,6 +320,8 @@
           "type": "card",
           "title": "上眶裂與總腱環",
           "body": [
+            "> 🖼️ **看圖**：穿過眶上裂的神經：III、IV、V1、VI；視神經管、眶上裂、圓孔",
+            "",
             "**上眶裂**通過：**CN III、IV、V1（的分支）、VI**。",
             "",
             "**總腱環**（common tendinous ring）是四條直肌的共同起點，上眶裂的神經有的走環內、有的走環外：",
@@ -331,7 +345,12 @@
           },
           "exam": [
             "**考法**：眶上裂：III、IV、V1、VI；總腱環內「鼻動外」（114 師高 3、114 師高 5、110 生普 4、111 生普 15、113 生普 6）。"
-          ]
+          ],
+          "img": [
+            "img/eye-anat-fig/sof_nerves.jpg",
+            "img/eye-anat-fig/canals3.jpg"
+          ],
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）；Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -359,6 +378,8 @@
           "type": "card",
           "title": "長、短睫狀神經各帶什麼纖維？",
           "body": [
+            "> 🖼️ **看圖**：長、短睫狀神經：看有沒有經過睫狀神經節",
+            "",
             "**命名邏輯：**",
             "- 經過**睫狀神經節**之後才出發、離眼球近 → **短睫狀神經**",
             "- 沒經過睫狀神經節、直接從鼻睫神經分出 → **長睫狀神經**",
@@ -382,7 +403,9 @@
           },
           "exam": [
             "**考法**：長、短睫狀神經各帶什麼：長睫狀＝感覺＋交感（直達）；短睫狀＝經睫狀神經節，帶副交感＋感覺（109 師特 31）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/cil_short.jpg",
+          "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -490,6 +513,8 @@
           "type": "card",
           "title": "三叉神經：感覺地圖與疾病",
           "body": [
+            "> 🖼️ **看圖**：臉上的感覺地圖：V1（眶上）、V2（眶下）、V3（頦、頰）",
+            "",
             "| 分支 | 眼周感覺 | 通道 |",
             "|---|---|---|",
             "| **V1 眼神經** | 眼球（角膜）、**上眼瞼**、淚腺、額頭、鼻背、鼻尖 | **眶上裂** |",
@@ -518,7 +543,9 @@
           "flash": {
             "front": "Hutchinson 徵象是什麼？",
             "back": "鼻尖的帶狀疱疹疹；表示鼻睫神經受累，眼睛被侵犯風險高。"
-          }
+          },
+          "img": "img/eye-anat-fig/v_skin.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -538,6 +565,8 @@
           "type": "card",
           "title": "眶上裂、總腱環、視神經管：內外口訣",
           "body": [
+            "> 🖼️ **看圖**：視神經管、眶上裂、圓孔",
+            "",
             "- **視神經管**：視神經（II）＋**眼動脈**＋交感纖維。",
             "- **眶上裂**：**III、IV、V1、VI**＋眼靜脈（**視神經不走這裡**；**V2** 走圓孔、**VII** 不進眼眶）。",
             "",
@@ -565,7 +594,9 @@
           "flash": {
             "front": "總腱環內／外口訣？",
             "back": "內：鼻動外（鼻睫、動眼、外旋）；外：額淚滑（額神經、淚腺神經、滑車）。"
-          }
+          },
+          "img": "img/eye-anat-fig/canals3.jpg",
+          "img_source": "Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",

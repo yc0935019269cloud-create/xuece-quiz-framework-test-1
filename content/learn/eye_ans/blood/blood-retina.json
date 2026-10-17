@@ -59,6 +59,8 @@
           "type": "card",
           "title": "視網膜十層與七種細胞",
           "body": [
+            "> 🖼️ **看圖**：視網膜十層（由外到內）",
+            "",
             "由外（脈絡膜側）到內（玻璃體側）共 **10 層**：",
             "1. 色素上皮層（RPE）　2. 感光細胞層（桿、錐）　3. 外界膜　4. 外核層　5. 外叢狀層　6. 內核層　7. 內叢狀層　8. 神經節細胞層　9. 神經纖維層　10. 內界膜",
             "",
@@ -76,7 +78,9 @@
           ],
           "demo": [
             "**示範**：RPE 是第 **1** 層、神經節細胞是第 **8** 層、神經纖維層是第 **9** 層、內界膜第 **10** 層。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/retina10.jpg",
+          "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -96,6 +100,8 @@
           "type": "card",
           "title": "兩套血供的分工（本課重點）",
           "body": [
+            "> 🖼️ **看圖**：外層靠脈絡膜、內層靠中央動脈：看是哪幾層",
+            "",
             "| 血供 | 供應的細胞（層） | 區域 |",
             "|---|---|---|",
             "| **脈絡膜微血管（絨毛毛細血管）** | **感光細胞 ＋ 色素上皮細胞**（第 1～4 層，外 1/3） | **外層視網膜** |",
@@ -123,7 +129,9 @@
           "flash": {
             "front": "脈絡膜微血管供應哪兩種細胞？",
             "back": "感光細胞與色素上皮細胞（外層視網膜）。"
-          }
+          },
+          "img": "img/eye-anat-fig/retina_supply.jpg",
+          "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -143,6 +151,8 @@
           "type": "card",
           "title": "中央動脈：路徑、分支、阻塞",
           "body": [
+            "> 🖼️ **看圖**：正常眼底：中央動脈從視神經盤分出；中心小凹沒有血管",
+            "",
             "**中央視網膜動脈（CRA）**：眼動脈的分支，約在眼球後 1 cm 處**從下方進入視神經**，走在神經中央，在視神經盤穿出，分成**顳上、顳下、鼻上、鼻下**四條主要分支（外加黃斑上下小分支；但黃斑中心沒有）。",
             "",
             "| | **CRAO（動脈阻塞）** | **CRVO（靜脈阻塞）** |",
@@ -165,7 +175,9 @@
           ],
           "demo": [
             "**示範**：突然單眼失明、眼底蒼白＋黃斑一點紅 → CRAO；眼底四個象限都是火焰狀出血 → CRVO。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/fundus_cra.jpg",
+          "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -272,6 +284,8 @@
           "type": "card",
           "title": "脈絡膜的構造與血流",
           "body": [
+            "> 🖼️ **看圖**：眼球壁縱切：視網膜、脈絡膜、鞏膜的上下順序",
+            "",
             "**脈絡膜屬於葡萄膜**（虹膜＋睫狀體＋脈絡膜，三者連在一起，是眼球中層、富含血管與色素）。",
             "",
             "由內（靠視網膜）而外：**Bruch 膜 → 脈絡膜微血管層（絨毛毛細血管）→ 中血管層（Sattler）→ 大血管層（Haller）→ 脈絡膜上腔 → 鞏膜**。",
@@ -302,7 +316,9 @@
           ],
           "demo": [
             "**示範**：「脈絡膜血管內皮間有緊密連接，保護眼球」錯——緊密連接在 **RPE**，脈絡膜微血管是有窗孔的。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/choroid_layers.jpg",
+          "img_source": "Gray Anatomy 1918，Wikimedia Commons「Gray877 rotated.jpg」，Public domain（https://commons.wikimedia.org/wiki/File:Gray877_rotated.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -322,6 +338,8 @@
           "type": "card",
           "title": "血液視網膜屏障（BRB）",
           "body": [
+            "> 🖼️ **看圖**：血液視網膜屏障的位置：RPE（外）與視網膜血管（內）",
+            "",
             "視網膜與血液之間的「過濾站」，防止血液中的大分子、免疫細胞隨便進入視網膜：",
             "",
             "| | **內層 BRB** | **外層 BRB** |",
@@ -342,7 +360,9 @@
           ],
           "demo": [
             "**示範**：「視網膜血管內皮」不屬於**外** BRB（113 師高 16）——它是內 BRB；外 BRB 看 RPE。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/brb.jpg",
+          "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -362,6 +382,8 @@
           "type": "card",
           "title": "疾病對應：內層病 vs 外層病",
           "body": [
+            "> 🖼️ **看圖**：黃斑與視神經盤的位置",
+            "",
             "| 血供 | 疾病 | 記法 |",
             "|---|---|---|",
             "| **內層視網膜（視網膜循環）** | **糖尿病視網膜病變**、**視網膜靜脈阻塞** | 血管病（動靜脈、微血管） |",
@@ -382,7 +404,9 @@
           ],
           "demo": [
             "**示範**：AMD → 重點是「黃斑」→ 黃斑只有感光細胞＋RPE → 靠脈絡膜 → **外層**病。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/fundus_macula.jpg",
+          "img_source": "Mikael Häggström.  When using this image in external works, it may be cited as: Häggström, Mikael (2014). \"Medical galle，Wikimedia Commons「Fundus photograph of normal right eye.jpg」，CC0（https://commons.wikimedia.org/wiki/File:Fundus_photograph_of_normal_right_eye.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -496,6 +520,8 @@
           "type": "card",
           "title": "視網膜血供速查表",
           "body": [
+            "> 🖼️ **看圖**：哪些細胞歸脈絡膜、哪些歸中央動脈",
+            "",
             "| 題型 | 答案 |",
             "|---|---|",
             "| 中央動脈**不**供應的細胞 | **感光細胞、RPE** |",
@@ -520,7 +546,9 @@
           "flash": {
             "front": "視網膜血供二分法？",
             "back": "感光＋RPE（外 1/3）← 脈絡膜；其餘（內 2/3）← 中央動脈。"
-          }
+          },
+          "img": "img/eye-anat-fig/retina_short.jpg",
+          "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -540,6 +568,8 @@
           "type": "card",
           "title": "脈絡膜與 BRB 題速查",
           "body": [
+            "> 🖼️ **看圖**：Bruch 膜、脈絡膜、RPE、穆勒氏細胞",
+            "",
             "- **脈絡膜錯誤選項常見**：位於視網膜「內層」✗、微血管有緊密連接 ✗、氧氣消耗 50% ✗、血管大小一致 ✗、自主神經來自視神經 ✗、脈絡膜與葡萄膜不同 ✗。",
             "- **脈絡膜正確**：葡萄膜一部分、富含血管與黑色素、有窗孔、部分自我調控、受自主神經支配、微血管層與視網膜隔 Bruch 膜、黃斑下最厚、高度近視變薄、玻璃體不由脈絡膜單獨供應。",
             "- **BRB**：內＝血管內皮＋pericyte＋穆勒氏＋星狀細胞；外＝RPE 緊密連接；穆勒氏細胞貫穿全層。"
@@ -553,7 +583,9 @@
           ],
           "demo": [
             "**示範**：看到「緊密連接」想到 **RPE**；看到「有窗孔」想到**脈絡膜微血管**。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/retina_brb2.jpg",
+          "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Layers of the retina.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Layers_of_the_retina.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",

@@ -283,3 +283,11 @@
 - **s114 視光學第 04～09 單元（p1／p2）、中英文名詞單元與 114 眼解剖生理（`eye_ans/semester114` 共 16 單元）也已改成兩頁一組**，但這批是**模板化內容的自動重排**（`eye_work/apply_auto.py`），不是逐張改寫：「一句話／白話」＋「觀念」→ 第一頁（引言＋逐句分行、編號列點），「口訣／公式」＋「考試角度」→ 第二頁（🎯 國考重點）；機器重複的「應用：由條件走到結論」只留情境與結論、名詞卡去掉罐頭句、有 exam＋demo 的考點卡拆成「內容」與「考試怎麼出」兩頁；修正字詞替換錯誤（「same direction 近用加入度」→「相加」）。覆蓋檢查不變、嚴格建置通過，`tools/s114-qa/sweep-all.cjs` 1,920 步 0 錯誤。內容本身仍是原本措辭，若要「用國中生講法重寫」要像視光學二那樣逐卡手寫（`read_*.py` 規格）。
 - 之後新單元請照這個寫法；physio、basic_optics 與眼解剖實驗以外的 114 單元尚未改成兩頁版。
 - **第二輪白話手寫（2026-10-17）**：上面自動重排的 s114 視光學 p1／p2（keratometry、near-point、objective-refraction、pd-lensometry、pupil-response、stereopsis）與 114 眼解剖生理（adnexa、central-visual-pathway、ocular-blood-supply、retina-layers、retinal-electrophysiology、retinal-transmission、tear-film、visual-reflexes）的主要概念卡已逐卡改寫成國中生也懂的講法（生活比喻、少英文、先一句話再細節；規格在專案外 `eye_work/rw_*.py`、`apply_rw.py`）。機器模板的「單元路線」「應用：由條件走到結論」「判斷依據」小卡改成 3～4 步白話學習路線、「試著用自己的話說一遍」與一兩句理由（`small_data.py`／`apply_small.py`）。修正翻譯錯誤：眼神經 V1 曾被譯成「初級視覺皮質」。名詞單元（terms）與 physio、basic_optics 未動。嚴格建置與覆蓋檢查通過；無醫學審稿、無實機 iPad 測試。
+
+## 學習卡配圖：講到構造就附真實圖（2026-10-17，v99）
+
+- 起因：使用者問「眼解剖學習有沒有在講到結構時附圖例？例如內頸動脈四條分支」。查出手冊圖鑑 `manual-*` 7 單元本來就有圖解，但**眼球血液供應 3 單元、自主神經／腦神經 4 單元（ans-clinical／pathways／reflex／trigeminal）、角膜 3 單元、舊的眼眶骨與視覺路徑兩個課程的講解卡沒有圖**。已補 125 張講解卡（blood-vessels／ciliary／retina、eye-anat-orbit-course、visual-path-course、ans-*、cornea-*）。ans-basics（神經系統總論、藥物表）、cornea 的疾病／組成表等抽象卡與 114 大一下單元**沒有補圖**。
+- 做法：卡片用既有的 `img`（字串或陣列）＋`img_source`，本批圖放 `img/eye-anat-fig/<key>.jpg`，是把圖鑑現有的真實圖片（腦標本、顱骨、Gray 解剖圖、切片、眼底照等；新增 Gray188／190／193 顱骨圖與 Häggström 副鼻竇冠狀 CT）**燒上中文名稱＋紅色編號**的版本；卡片內文最前面加一行「🖼️ 看圖：…」說明。原圖（無標籤）仍給圖鑑題本用，不受影響。
+- `css/style.css` 的 `.lp-src` 加 `overflow-wrap:anywhere`（長網址來源在手機會撐出橫向捲動）；index.html 快取版本 v99。
+- 產生流程在專案外 `E:\NEWTEST\eye_work\`：`annot.py`（標標籤）、`fig_specs.py`／`fig_specs2.py`／`fig_specs3.py`（每張圖標哪些名稱、哪張卡配哪些圖；新圖的標記點用原圖像素座標）、`render_figs.py`（產圖）、`apply_figs.py`（寫入卡片，可重跑）。圖上標記位置沿用圖鑑人工標點（前脈絡叢動脈等細小構造標「大致位置」）；新增的 Gray193 顱底孔洞、Gray188／190、CT 的位置是對照原圖手動定位，尚未經專業審稿。
+- QA：`tools/figs-qa/check.cjs`（125 張配圖卡×桌機／390px 共 250 次渲染：圖載入、張數、說明、來源、無橫向捲動；結果 0 問題，截圖 `output/playwright/figs-ica-*.png`）、`tools/manual-qa/check.cjs` 103 項、`tools/eye115-qa/check.cjs` 80/80、`sweep.cjs` 173 步 0 錯誤；嚴格建置通過。沒有實機 iPad 測試。

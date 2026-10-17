@@ -65,6 +65,8 @@
           "type": "card",
           "title": "頸內動脈的四條分支（和眼睛最有關）",
           "body": [
+            "> 🖼️ **看圖**：腦底動脈（下面觀）：頸內動脈的分支去哪裡；真實腦標本（腦底面）：頸內動脈與前脈絡叢動脈；側面看：眼動脈從頸內動脈分出，進入眼眶",
+            "",
             "頸內動脈進入顱腔後，**和視覺最有關的四個分支**：",
             "",
             "| 分支 | 去哪裡 |",
@@ -94,7 +96,13 @@
           "flash": {
             "front": "內頸動脈在顱內和視覺最有關的四個分支？",
             "back": "眼動脈、前大腦動脈、中大腦動脈、前脈絡叢動脈。"
-          }
+          },
+          "img": [
+            "img/eye-anat-fig/ica_circle.jpg",
+            "img/eye-anat-fig/ica_choroidal.jpg",
+            "img/eye-anat-fig/ica_ophth.jpg"
+          ],
+          "img_source": "Servier Medical Art（smart.servier.com），CC BY 4.0（腦動脈下面觀，原圖無文字標籤）；John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human base of brain blood supply.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_base_of_brain_blood_supply.JPG）；Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -114,6 +122,8 @@
           "type": "card",
           "title": "眼動脈的分支：記住兩個「例外」",
           "body": [
+            "> 🖼️ **看圖**：眼動脈在眼眶內的分支；眼動脈送血給眼球（視網膜中央動脈、睫狀後動脈）與眼眶",
+            "",
             "眼動脈經視神經管入眼眶後，分出下面這些血管（**幾乎全部都是內頸動脈系統**）：",
             "",
             "| 供應 | 分支 |",
@@ -147,7 +157,12 @@
           "flash": {
             "front": "眼動脈分支的兩個例外？",
             "back": "眼角動脈（來自顏面動脈）、眶下動脈（來自上頷動脈），都是外頸動脈系統。"
-          }
+          },
+          "img": [
+            "img/eye-anat-fig/ophth_branches.jpg",
+            "img/eye-anat-fig/ophth_eye.jpg"
+          ],
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray514.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray514.png）；Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -167,6 +182,8 @@
           "type": "card",
           "title": "頸動脈狹窄、眼動脈瘤與影像檢查",
           "body": [
+            "> 🖼️ **看圖**：栓子路線：頸內動脈 → 眼動脈 → 視網膜中央動脈",
+            "",
             "**暫時性黑矇（amaurosis fugax）**：像一塊黑布突然拉下來、幾分鐘後又恢復。原因多是**頸動脈**（總頸動脈、內頸動脈）上的斑塊或栓子飛進**眼動脈 → 視網膜中央動脈**造成短暫缺血。**外頸動脈**不供應眼球，所以不是。",
             "",
             "**眼動脈瘤**多長在眼動脈剛從內頸動脈分出的位置（顱內、靠近視神經），會壓迫同側視神經 → **單眼**視力或視野受損。",
@@ -196,7 +213,9 @@
           "flash": {
             "front": "哪些檢查看顱內視覺路徑的血管？",
             "back": "CTA、MRA（FA 看視網膜、ICG 看脈絡膜，都只拍得到眼底）。"
-          }
+          },
+          "img": "img/eye-anat-fig/amaurosis.jpg",
+          "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -309,6 +328,8 @@
           "type": "card",
           "title": "眼靜脈：上、下眼靜脈 → 海綿竇",
           "body": [
+            "> 🖼️ **看圖**：上、下眼靜脈流向海綿竇",
+            "",
             "眼部靜脈的主幹有兩條：",
             "- **上眼靜脈（SOV）**：收集視網膜、眼球、眼外肌與額部的血，經**眶上裂**入海綿竇。",
             "- **下眼靜脈（IOV）**：收集眼眶下部的血，入海綿竇或**翼狀靜脈叢**。",
@@ -328,7 +349,9 @@
           ],
           "demo": [
             "**示範**：選項「中央視網膜靜脈 → 眼上靜脈 → 視神經孔 → 海綿竇」錯在**視神經孔**——眼上靜脈走的是**眶上裂**（視神經孔走的是視神經與眼動脈）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/oph_veins.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -348,6 +371,8 @@
           "type": "card",
           "title": "渦靜脈：脈絡膜的出口",
           "body": [
+            "> 🖼️ **看圖**：渦靜脈：脈絡膜血液離開眼球的出口（後面觀）",
+            "",
             "**渦靜脈（vortex vein）** 是脈絡膜血液回流的主要通道：",
             "- 收集**脈絡膜、睫狀體、虹膜**的靜脈血。",
             "- 數量約 **4～8 條**（約 65% 的人是 4 或 5 條），在**赤道後方**斜穿鞏膜離開眼球。",
@@ -365,7 +390,9 @@
           ],
           "demo": [
             "**示範**：選項「上、下眼靜脈 → 渦靜脈 → 海綿竇」順序顛倒——渦靜脈是從眼球「出來」的第一步，不是眼眶裡的下游。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/vortex.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray874.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray874.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -385,6 +412,8 @@
           "type": "card",
           "title": "海綿竇與「危險三角」",
           "body": [
+            "> 🖼️ **看圖**：海綿竇冠狀切面：誰在竇腔裡、誰貼在外側壁；危險三角：顏面靜脈 → 眼角靜脈 → 眼靜脈（沒有瓣膜）",
+            "",
             "**海綿竇**位在蝶鞍（腦下垂體）兩側，像充滿血的海綿。裡面與旁邊有：",
             "- **竇腔中央**：**頸內動脈**、**外旋神經（VI）**。",
             "- **外側壁（由上而下）**：**動眼神經（III）、滑車神經（IV）、眼神經（V1）、上頷神經（V2）**。",
@@ -407,7 +436,12 @@
           "demo": [
             "**示範**：鼻翼旁長痘痘被擠壓 → 發燒、眼瞼腫、複視 → 想到**海綿竇血栓**（III、IV、VI 受影響）。",
             "**示範**：海綿竇病灶 + 外直肌還能動 → 先想外側壁（III、IV、V1、V2 受影響，VI 較晚）。"
-          ]
+          ],
+          "img": [
+            "img/eye-anat-fig/cavsinus.jpg",
+            "img/eye-anat-fig/danger_tri.jpg"
+          ],
+          "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -512,6 +546,8 @@
           "type": "card",
           "title": "動脈題三步驟：先分系統、再看方向、最後想臨床",
           "body": [
+            "> 🖼️ **看圖**：側面看：眼動脈從頸內動脈分出，進入眼眶；兩個例外：眼角動脈、眶下動脈屬外頸動脈系統",
+            "",
             "| 步驟 | 怎麼做 |",
             "|---|---|",
             "| ① 分系統 | 眼睛的血**全部來自頸內動脈**；只有**眼角動脈、眶下動脈**屬外頸 |",
@@ -536,7 +572,12 @@
           "flash": {
             "front": "動脈題第一步？",
             "back": "先分內頸或外頸：眼睛的血全來自內頸，只有眼角動脈、眶下動脈是外頸。"
-          }
+          },
+          "img": [
+            "img/eye-anat-fig/ica_ophth.jpg",
+            "img/eye-anat-fig/ext_exceptions.jpg"
+          ],
+          "img_source": "Firoz, M.; Shome, N.; Wong, N.; Jonnalagadda, P.; Tunga, H.; Shafiee, A.; Shafiee, A.; Bobba, S.; Kooner, K.S.，Wikimedia Commons「Ocular blood supply.png」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Ocular_blood_supply.png）；Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -556,6 +597,8 @@
           "type": "card",
           "title": "靜脈與海綿竇速查",
           "body": [
+            "> 🖼️ **看圖**：上、下眼靜脈流向海綿竇；渦靜脈：脈絡膜血液離開眼球的出口（後面觀）",
+            "",
             "| 主題 | 一句話 |",
             "|---|---|",
             "| 中央視網膜靜脈 | → 眼上靜脈 → **眶上裂** → 海綿竇 |",
@@ -575,7 +618,12 @@
           ],
           "demo": [
             "**示範**：「頸動脈海綿竇瘻管」會出現眼球突出、結膜充血水腫、複視（III、IV、VI）、額頭麻（V1）；但**下巴**的感覺（V3）不受影響。"
-          ]
+          ],
+          "img": [
+            "img/eye-anat-fig/oph_veins.jpg",
+            "img/eye-anat-fig/vortex.jpg"
+          ],
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray572.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray572.png）；Henry Vandyke Carter，Wikimedia Commons「Gray874.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray874.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -595,6 +643,8 @@
           "type": "card",
           "title": "眼瞼、結膜、眼外肌：血從哪裡來？",
           "body": [
+            "> 🖼️ **看圖**：眼瞼的血管：眼動脈系統與顏面動脈系統；四條直肌（前面觀）：前睫狀動脈就從肌肉的血管延伸出來",
+            "",
             "| 構造 | 主要血供 |",
             "|---|---|",
             "| **眼瞼** | 內頸＋外頸：眼動脈的**淚動脈（外側瞼動脈）**、內側瞼動脈；外頸的**顏面動脈（眼角動脈）** |",
@@ -613,7 +663,12 @@
           ],
           "demo": [
             "**示範**：「眼外肌血管進入眼球供應前段 → 同時開多條直肌有前房缺血風險」是**對**的；「眼外肌由睫狀後動脈供應」是**錯**的。"
-          ]
+          ],
+          "img": [
+            "img/eye-anat-fig/lid_vessels.jpg",
+            "img/eye-anat-fig/rectus.jpg"
+          ],
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray515.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray515.png）；Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",

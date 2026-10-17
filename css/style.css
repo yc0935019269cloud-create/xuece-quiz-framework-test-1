@@ -1001,7 +1001,7 @@ img.plant.unseen { filter: brightness(0) opacity(.35); }
 
 /* ---------- 學習模式：新步驟顏色 ---------- */
 .t-diagram { --pc: #ff8a5c; } .t-interactive { --pc: #c6e36a; } .t-boss { --pc: #ec5454; }
-.lp-src { font-size: 12px; color: var(--dim); text-align: center; margin-top: -4px; }
+.lp-src { font-size: 12px; color: var(--dim); text-align: center; margin-top: -4px; overflow-wrap: anywhere; line-height: 1.5; }
 .lcont { background: rgba(255,207,74,.08); border: 3px dashed var(--gold); padding: 8px 12px; }
 /* 課程樹 */
 .ltree-subj { margin-bottom: 6px; }

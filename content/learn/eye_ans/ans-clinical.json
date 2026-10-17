@@ -54,6 +54,8 @@
           "type": "card",
           "title": "與眼睛相關的腦神經",
           "body": [
+            "> 🖼️ **看圖**：腦底面看與眼睛有關的腦神經：II、III、IV、V、VI、VII",
+            "",
             "| 類別 | 腦神經 |",
             "|---|---|",
             "| CNS 的延伸 | I 嗅神經、**II 視神經** |",
@@ -76,7 +78,9 @@
           },
           "exam": [
             "**考法**：與眼睛相關的腦神經：II（視）、III、IV、VI（動眼運動）、V（感覺）、VII（閉眼、淚腺）；**I 嗅神經與眼無關**（106 生特 16、110 師高 19、106 師高 28）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/cn_eye.jpg",
+          "img_source": "OpenStax，Wikimedia Commons「1320 The Cranial Nerves pl.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:1320_The_Cranial_Nerves_pl.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -96,6 +100,8 @@
           "type": "card",
           "title": "12 對腦神經與腦幹三段",
           "body": [
+            "> 🖼️ **看圖**：12 對腦神經（腦底面）",
+            "",
             "I 嗅、II 視、III 動眼、IV 滑車、V 三叉、VI 外旋、VII 顏面、VIII 前庭耳蝸、IX 舌咽、X 迷走、XI 副、XII 舌下。",
             "",
             "| 腦幹 | 腦神經 |",
@@ -118,7 +124,9 @@
           },
           "exam": [
             "**考法**：12 對腦神經的功能對應：第七對負責**表情與閉眼**，第五對負責**感覺與咀嚼**（106 師高 28）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/cn_all.jpg",
+          "img_source": "OpenStax，Wikimedia Commons「1320 The Cranial Nerves pl.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:1320_The_Cranial_Nerves_pl.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -138,6 +146,8 @@
           "type": "card",
           "title": "神經核的位置：中腦與橋腦",
           "body": [
+            "> 🖼️ **看圖**：中腦橫切（上丘水平，真實切片）：動眼神經核、E-W 核與內側縱束；中腦橫切（下丘水平，真實切片）：滑車神經核；橋腦橫切（顏面丘水平，真實切片）：外旋神經核與顏面神經",
+            "",
             "| 腦幹 | 神經核 | 性質 |",
             "|---|---|---|",
             "| **中腦** | **Edinger-Westphal 核** | 副交感（縮瞳、調節） |",
@@ -161,7 +171,13 @@
           },
           "exam": [
             "**考法**：**III、IV 核在中腦；VI 核在橋腦**；E-W 核是 III 的副核，不是 IV 的（106 師高 5）；**VI＋VII 同時麻痺 → 橋腦**（107 師特 35）。"
-          ]
+          ],
+          "img": [
+            "img/eye-anat-fig/nuc_mid.jpg",
+            "img/eye-anat-fig/nuc_iv.jpg",
+            "img/eye-anat-fig/nuc_vi.jpg"
+          ],
+          "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -186,6 +202,8 @@
           "type": "card",
           "title": "內側縱束（MLF）：視、聽不分家",
           "body": [
+            "> 🖼️ **看圖**：內側縱束（MLF）緊貼動眼神經核的腹側（中腦切片）",
+            "",
             "**內側縱束**（medial longitudinal fasciculus, MLF）：",
             "- 位置：靠近中線、腦幹背側（在舌下神經核的腹內側），從中腦一路延伸到延腦。",
             "- 由**上行**與**下行**纖維組成。",
@@ -205,7 +223,9 @@
           },
           "exam": [
             "**考法**：雙眼共軛運動（向左看）＝右內直肌（III）＋左外直肌（VI），靠 **MLF** 協調（112 師高 30）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/mlf.jpg",
+          "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -233,6 +253,8 @@
           "type": "card",
           "title": "腦幹切面判讀",
           "body": [
+            "> 🖼️ **看圖**：中腦橫切（上丘水平，真實切片）：動眼神經核、E-W 核與內側縱束；中腦橫切（下丘水平，真實切片）：滑車神經核；橋腦橫切（顏面丘水平，真實切片）：外旋神經核與顏面神經",
+            "",
             "| 切面層級 | 可以找到的眼相關構造 |",
             "|---|---|",
             "| **上丘／下丘交界**（中腦上段） | **動眼神經核、E-W 核**、MLF、動眼神經、紅核、黑質 |",
@@ -253,7 +275,13 @@
           },
           "exam": [
             "**考法**：腦幹切面判讀題（40 秒看圖）：中腦有 III、IV 核與上、下丘；橋腦有 V、VI、VII 核；腦神經依序從腦幹出來（見實驗課腦神經單元）。"
-          ]
+          ],
+          "img": [
+            "img/eye-anat-fig/nuc_mid.jpg",
+            "img/eye-anat-fig/nuc_iv.jpg",
+            "img/eye-anat-fig/nuc_vi.jpg"
+          ],
+          "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -438,6 +466,8 @@
           "type": "card",
           "title": "阿迪氏瞳孔（Adie's pupil）",
           "body": [
+            "> 🖼️ **看圖**：睫狀神經節與三種纖維",
+            "",
             "**損傷：副交感神經病變**（常在睫狀神經節或短睫狀神經）",
             "",
             "**症狀：**",
@@ -459,7 +489,9 @@
           },
           "exam": [
             "**考法**：Adie 瞳孔（睫狀神經節受損）＝單眼瞳孔大、光反射弱、近反射慢收；常考「睫狀神經節」的性質（副交感換元，**眼肌錐內**）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/cil_ganglion.jpg",
+          "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -473,6 +505,8 @@
           "type": "card",
           "title": "第三對腦神經麻痺（Oculomotor nerve palsy）",
           "body": [
+            "> 🖼️ **看圖**：眼眶內的神經：動眼神經分成上支與下支",
+            "",
             "**損傷：動眼神經**（同時影響副交感與軀體運動纖維）",
             "",
             "**症狀：**",
@@ -498,7 +532,9 @@
           },
           "exam": [
             "**考法**：III 麻痺（108 師特 31、109 師高 32、107 生普 23、109 生特 22）：眼瞼下垂、外下偏、瞳孔放大；**壓迫 → 瞳孔受累；糖尿病 → 迴避**（109 師高 33）。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/nerve3.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -720,6 +756,8 @@
           "type": "card",
           "title": "動眼神經的病灶：神經幹、睫狀神經節，瞳孔表現不一樣",
           "body": [
+            "> 🖼️ **看圖**：眼眶內的神經：動眼神經分成上支與下支；睫狀神經節與三種纖維",
+            "",
             "CN III 同時帶**軀體運動**（四條眼外肌＋提上眼瞼肌）與**副交感**（括約肌、睫狀肌）。壞在不同位置，表現不同：",
             "",
             "| 病灶位置 | 眼外肌／眼瞼 | 瞳孔 | 例子 |",
@@ -743,7 +781,12 @@
           },
           "exam": [
             "**考法**：III 神經幹（壓迫）瞳孔受累、微血管缺血瞳孔迴避（109 師高 33）；睫狀神經節病灶 → 瞳孔異常但眼外肌正常。"
-          ]
+          ],
+          "img": [
+            "img/eye-anat-fig/nerve3.jpg",
+            "img/eye-anat-fig/cil_ganglion.jpg"
+          ],
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）；The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -888,6 +931,8 @@
           "type": "card",
           "title": "眼外肌的神經支配：LR₆SO₄ 與「對側」",
           "body": [
+            "> 🖼️ **看圖**：眼外肌與滑車（外側面）：LR₆ 外直肌、SO₄ 上斜肌，其餘 III",
+            "",
             "| 肌肉 | 神經 | 備註 |",
             "|---|---|---|",
             "| 外直肌（LR） | **VI 外旋（外展）神經** | 同側 |",
@@ -916,7 +961,9 @@
           "flash": {
             "front": "哪些眼外肌由對側核支配？",
             "back": "上直肌（III 核）與上斜肌（IV 核）。"
-          }
+          },
+          "img": "img/eye-anat-fig/eom_nerves.jpg",
+          "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -936,6 +983,8 @@
           "type": "card",
           "title": "第三對腦神經（動眼神經）麻痺",
           "body": [
+            "> 🖼️ **看圖**：眼眶內的神經：動眼神經分成上支與下支",
+            "",
             "| 症狀 | 原因 |",
             "|---|---|",
             "| **眼瞼下垂（ptosis）** | 提上眼瞼肌 |",
@@ -961,7 +1010,9 @@
           "demo": [
             "**示範**：右 III 麻痺 → 向左看時右眼不能內收 → **向左看複視**（113 生普 22）。",
             "**示範**：糖尿病血管病變造成的 III 麻痺，瞳孔可能「還縮得動」。"
-          ]
+          ],
+          "img": "img/eye-anat-fig/nerve3.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -1069,6 +1120,8 @@
           "type": "card",
           "title": "第四對腦神經（滑車神經）麻痺",
           "body": [
+            "> 🖼️ **看圖**：上斜肌繞過滑車（IV 滑車神經支配）；中腦橫切（下丘水平，真實切片）：滑車神經核",
+            "",
             "**滑車神經的特色**：唯一從腦**背側**出來、**交叉**到對側上斜肌、行程**最長**（易因頭部外傷受傷）、**軸突最少**（最細）。",
             "",
             "**IV 麻痺（上斜肌無力）**：",
@@ -1093,7 +1146,12 @@
           "flash": {
             "front": "IV 麻痺的代償頭位？",
             "back": "頭歪向健側肩膀。"
-          }
+          },
+          "img": [
+            "img/eye-anat-fig/so_trochlea.jpg",
+            "img/eye-anat-fig/nuc_iv.jpg"
+          ],
+          "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -1113,6 +1171,8 @@
           "type": "card",
           "title": "第六對腦神經（外旋神經）麻痺、海綿竇與眼心反射",
           "body": [
+            "> 🖼️ **看圖**：海綿竇裡：外旋神經在竇腔中央、貼著頸內動脈；橋腦橫切（顏面丘水平，真實切片）：外旋神經核與顏面神經",
+            "",
             "**VI 麻痺**：外直肌無力 → **內斜視**、**水平複視**（向患側看最明顯）、頭轉向患側、外直肌可萎縮。",
             "- **常見原因**：腦壓升高、聽神經瘤、顱底骨折、鼻咽癌、海綿竇病變（行程長）；**後交通動脈瘤壓的是 III**，不是 VI。",
             "- **核病灶**（橋腦）：顏面神經纖維繞過 VI 核 → 常合併 **VII 麻痺**；纖維束病灶 → **對側**肢體偏癱。",
@@ -1137,7 +1197,12 @@
           "flash": {
             "front": "眼心反射的傳入／傳出？",
             "back": "傳入三叉神經 V；傳出迷走神經 X。"
-          }
+          },
+          "img": [
+            "img/eye-anat-fig/cav_vi.jpg",
+            "img/eye-anat-fig/nuc_vi.jpg"
+          ],
+          "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
