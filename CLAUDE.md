@@ -304,7 +304,7 @@
   - 實驗課（依老師講義）：`lab-visual-path`（講義《2.視覺路徑》10–13 頁）、`lab-orbit`（《1.骨質眼窩+圖譜》1–8 頁，點位由 PDF 引線末端自動換算）、`lab-blood`（血液供應講義，附講義原圖對照卡）。
   - 實驗手冊名詞（考試範圍）：`lab-manual-{orbit,lid,vessel,visual,brain,tear}`（手冊第 1、2、4、5、8、10 頁）。
   - 題庫 `content/bank/eye_anat/lab/<slug>/`：92 個題本、447 題。
-- **圖片版權**：老師講義、圖譜、上課照片放 `img/eye-lab-private/`（`.gitignore`，repo 是公開的，不上傳；本機 file:// 正常，網址版這些圖會缺）。開放授權圖放 `img/eye-lab/`。
+- **圖片**：老師講義、圖譜、上課照片放 `img/eye-lab-private/`，開放授權圖放 `img/eye-lab/`。使用者 2026-10-18 同意兩者都上傳到公開 repo（資料夾名稱沿用，已不在 .gitignore）。
 - **產生器**（專案外 `E:\NEWTEST\eye_work\atlas\`，重跑會整個覆寫上述單元、題庫與圖）：`names.py`（名稱表：中文／英文可接受寫法＋字源）、`bases_all.py`（底圖與點位）、`core.py`（`build(spec)`：課、總複習、題庫）、`build_all.py`（各單元 spec；最後輸出 `content/glossary/eye-lab.json`）。新單元：在 `bases_all.py` 登錄底圖點位、`names.py` 加名稱、`build_all.py` 加一個 spec，執行 `python -X utf8 E:/NEWTEST/eye_work/atlas/build_all.py` → `python tools/build.py --strict --index`。圖譜 PDF 的引線點位用 `E:\NEWTEST\eye_work\orb\extract.py` 取得。
 - 新題型與功能：`js/learn.js` 的 `kind: "name"`、檢核題可附 `img`；`js/glossary.js`；規格 `docs/格式_學習模式.md` §8.9、§8.10。
 - QA：`tools/eyelab-qa/check.cjs <unitId>`（每步渲染、圖載入、題目圖、名詞小視窗、桌機＋390px；9 個單元皆 0 問題）、`name-test.cjs`（寫名稱題互動）、`bank-test.cjs`（題庫載入、圖檔、判分）。
