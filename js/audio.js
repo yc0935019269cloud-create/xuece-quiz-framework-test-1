@@ -339,7 +339,8 @@ const BGM = (() => {
   const lv = [0, 0];
   let cur = 0, curName = null, unlocked = false, fadeT = null, curScene = 'hub', shufPick = {}, listIdx = 0, preview = false;
   let held = false, ovr = null; // held：番茄鐘專注時暫停音樂；ovr：番茄鐘專注時指定的曲目
-  function target() { return held ? 0 : VOL.music(); }
+  let duckN = 0; // duckN：念單詞發音時暫時調小聲（不暫停），用計數器防止連點時提早恢復
+  function target() { return held ? 0 : VOL.music() * (duckN > 0 ? 0.25 : 1); }
   function fade() {
     clearInterval(fadeT);
     if (!MIX.ok(a[cur])) {
@@ -431,6 +432,7 @@ const BGM = (() => {
   });
   return {
     hold(on) { held = !!on; if (!held && unlocked && curName && a[cur].paused) AUDIO_ENGINE.play(a[cur]); fade(); },
+    duck(on) { duckN = Math.max(0, duckN + (on ? 1 : -1)); fade(); },
     override(id) { ovr = id && TRACKS[id] ? id : null; apply(true); },
     play, next, listen, cfg, setCfg, apply, TRACKS, SCENES, KIND, DEF, onChange: f => subs.push(f),
     get track() { return curName ? TRACKS[curName].name : '—'; }, get current() { return curName; }, get scene() { return curScene; },
