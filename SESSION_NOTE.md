@@ -52,7 +52,7 @@
 
 ## 第二輪完善（2026-10-18，v115）
 
-- 逐單元截概念頁檢查（，只截 intro／card、桌機寬）。
+- 逐單元截概念頁檢查（`node tools/learn-redo/shot_cards.cjs <unitId> [lessonId…]`，只截 intro／card、桌機寬，輸出 output/playwright/rv-*.png）。
 - Markdown 清單支援一層縮排子清單；🎯／✏️ 框內開頭重複的「考法：」「示範：」不再顯示；同頁 2～3 張圖在桌機並排；Horner 三階改成一張表。
 - 1,010 步掃描 0 問題、eye115-qa 80/80。
 
