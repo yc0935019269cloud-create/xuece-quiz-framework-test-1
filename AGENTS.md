@@ -164,3 +164,13 @@
 - js/learn.js 共用 note-related 收合／延後建立列表，保留考前必看的 cram-related 與新增 formula-related，各自預設收合，不隨全部展開。沿用 v93 的固定標題與關閉鍵閱讀視窗。原公式講解與課程流程不變，內容正本在五個 content/learn/physopt JSON，data/learn.js 由 build 生成。
 - 依現有題目逐組核對，規則在 tools/formula-related-qa/link.py；沒有老師原題可配的公式用單元練習。第一單元週期搭配頻率換算作延伸，relatedHint 明確說明題目本身沒有問週期。build 檢查 relatedQuestions 的不重複／存在性，importer 保留連結，舊筆記缺少欄位依相同公式 id 補入內建連結，明確 [] 可清空。
 - QA：97 個單元（排除新增連結欄位）與原公式講解／進度 id 不變，整個第六單元與題庫完整性一致；原 58 項數值驗算、Edge iPad 路徑 192 項與桌機 192 項、全 JS 語法與嚴格建置檢查通過。獨立 context 還原 localStorage、移除匯入 fixture；HTTP／Edge 模擬，沒有實機 iPadOS 或本輪 file://／雲端往返驗證。工具 tools/formula-related-qa/，報告／截圖 output/playwright/formula-related-*。
+
+## 視光學二易讀版（2026-10-18，v117）
+
+- 範圍限MSR／視野／雙眼平衡共27課，已依使用者認可的JCC第四版逐課改寫。先具體畫面→命名→原因／操作→數字；短表格、固定配色、一頁一個重點；概念可連續多頁，不強制每卡接題。勿用舊的每卡exam＋demo規則回退版型。
+- 接手先讀 `SESSION_NOTE_OPTOMETRY.md`、`docs/視光學_易讀版改寫方法.md`、`tools/learn-redo/optometry-progress.json`；歷史試作在 `docs/視光學_易讀版試作.md`。本次27課均完成並驗證，不再等待試作核准。
+- 正本仍為content的三個optom2-u2/u3/u4 JSON；逐課手寫腳本在tools/learn-redo的msr_l*（l4另用optom2_jcc_l4.py）、vf_l*、bb_l*，基準22cfdff。重跑指定課後需跑optometry_corrections.py，防止已修正的0 dB、微視野學習效應等舊文字回流，再build。
+- 原課ID、97題檢核題幹、172張卡片正面與原範例／實戰／出處保留；必要的題解、卡背和1個多選選項更正有逐欄紀錄，答案仍ACD。MD／PD、±0.37取位、紅綠版本限制等區分見方法文件。原講義20/200散光<4.00的疑點保留待確認。
+- 表格CSS僅套三單元；js/learn.js播放器外框用data-pack／data-lesson定位，快取v117。data由build產生，不手改。進行中的舊頁序可能變，建議回課頭重讀；未清除存檔。
+- 正式QA：27課來源／出處／進度鍵核對；Edge file:// 1000／390px實際逐頁1260次、194判分、66例題展開、44圖、6抽題／6導航，0問題；JCC另有62渲染與互動狀態驗算。測試context備份還原localStorage，非實機iPad或醫學審稿。可攜JSON報告在docs/optometry-readability/。
+- 舊sweep.cjs只改localStorage而未reload，不能用舊計數當逐頁證據；本次已加reload＋頁碼核對。新readability.cjs每課reload後實際按跳頁色條，驗證每頁類型、頁碼和判分。原optom2-qa/check.cjs的每卡exam＋demo約束已過時。

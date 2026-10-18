@@ -97,6 +97,8 @@ js/ css/                遊戲程式
 
 # 開發交接（給接手的 AI／開發者）
 
+- **視光學易讀版（v117）**：MSR／視野／雙眼平衡共27課依使用者認可的JCC第四版逐課改寫。先有具體畫面、再命名、再操作、最後計算；短表格與固定配色，概念可連續多頁。進度在 [SESSION_NOTE_OPTOMETRY.md](SESSION_NOTE_OPTOMETRY.md) 與 `tools/learn-redo/optometry-progress.json`；接手先讀 [改寫方法](docs/視光學_易讀版改寫方法.md)，不要重跑舊匯入器覆蓋教材。
+
 ## 技術原則
 - 純 HTML／CSS／JS，無建置、無框架、無 CDN；必須能用 `file://` 開（不用 ES modules、不用 fetch；資料以 `data/*.js` 的全域變數提供）。
 - 改 JS／CSS 後把 `index.html` 所有 `?v=N` 加一（避免快取）。

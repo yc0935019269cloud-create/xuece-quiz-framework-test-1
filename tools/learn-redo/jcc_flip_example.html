@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>同一個亮點：原本、JCC 翻面前、JCC 翻面後</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f8fc;color:#17283d;font:15px/1.55 system-ui,"Microsoft JhengHei",sans-serif}main{max-width:650px;margin:auto;padding:12px}
+.buttons{display:flex;gap:6px}button{flex:1;min-width:0;background:white;color:#23496e;border:2px solid #b7c7dc;border-radius:7px;padding:8px 2px;font:inherit;font-weight:700;cursor:pointer}
+button[aria-pressed=true]{color:white;background:#245dc0;border-color:#245dc0}button:focus-visible{outline:3px solid #d78a13;outline-offset:2px}
+.screen{background:white;border:1px solid #d5e1f0;border-radius:8px;margin:10px 0}.screen p{margin:7px 8px 0;text-align:center;font-size:13px;color:#435971}.screen svg{display:block;width:100%;height:115px}
+table{border-collapse:collapse;width:100%;font-size:14px}td{border:1px solid #c9d7e7;padding:6px 8px}td:first-child{white-space:nowrap;color:#245dc0;font-weight:700;width:35%}
+.result{margin:10px 0 5px;padding:8px 10px;background:#e7eef9;border-left:4px solid #245dc0}.result strong{display:block}.result span{font-size:14px}small{display:block;font-size:12px;color:#55657a;margin-top:6px}
+</style>
+<main>
+<div class="buttons" role="group" aria-label="比較同一眼睛的三個狀態">
+<button type="button" data-jcc-state="original" aria-pressed="true">原本</button>
+<button type="button" data-jcc-state="cancel" aria-pressed="false">翻面前</button>
+<button type="button" data-jcc-state="reinforce" aria-pressed="false">翻面後</button>
+</div>
+<div class="screen">
+<p>同一顆小燈，在視網膜上形成的光斑</p>
+<svg viewBox="0 0 300 115" role="img" aria-labelledby="imageTitle">
+<title id="imageTitle">原本的圓形模糊光斑</title>
+<circle id="blurCircle" cx="150" cy="57" r="30" fill="#3375d1" opacity=".75"/>
+</svg>
+</div>
+<table aria-label="兩個收光方向的剩餘偏差"><tbody>
+<tr><td>上下收光</td><td id="up">仍多 0.50 D</td></tr>
+<tr><td>左右收光</td><td id="side">仍少 0.50 D</td></tr>
+</tbody></table>
+<div class="result" aria-live="polite"><strong id="equation">剩餘散光：0.50 ＋ 0.50＝1.00 D</strong><span id="explanation">原本的狀況；先記住這個光斑的大小。</span></div>
+<small>三種狀態都看同一個亮點，並用相同比例放大光斑；只改 JCC 的擺法。</small>
+</main>
+<script>
+// Ideal paraxial eye, target power 60 D, fixed pupil radius 3 mm.
+// Original meridional powers are 60.50 D vertically and 59.50 D horizontally.
+// At the fixed retinal plane z=1/60 m, pupil footprint radii are R*abs(1-F/60).
+// All three states preserve mean power 60 D, so the footprints are circles.
+// A single scale (1200 px/mm) is used: original 30 px, cancellation 15 px, reinforcement 45 px.
+const target=60,pupil=3,scale=1200;
+const states={
+original:{v:60.5,h:59.5,label:'原本',explain:'還沒放 JCC；先記住這個光斑的大小。'},
+cancel:{v:60.25,h:59.75,label:'翻面前：抵消一部分',explain:'多的減一點、少的加一點；散光減少，小圓光斑縮小，較清楚。'},
+reinforce:{v:60.75,h:59.25,label:'翻面後：加重',explain:'多的又加、少的又減；散光變大，小圓光斑變大，較模糊。'}
+};
+function show(key){
+ const s=states[key],above=s.v-target,below=target-s.h,gap=s.v-s.h;
+ const radius=pupil*Math.abs(1-s.v/target)*scale;
+ document.querySelector('#blurCircle').setAttribute('r',radius);
+ document.querySelector('#imageTitle').textContent=s.label+'：同一個亮點的圓形模糊光斑';
+ document.querySelector('#up').textContent='仍多 '+above.toFixed(2)+' D';
+ document.querySelector('#side').textContent='仍少 '+below.toFixed(2)+' D';
+ document.querySelector('#equation').textContent='剩餘散光：'+above.toFixed(2)+' ＋ '+below.toFixed(2)+'＝'+gap.toFixed(2)+' D';
+ document.querySelector('#explanation').textContent=s.explain;
+ document.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.jccState===key)));
+}
+document.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>show(b.dataset.jccState)));
+show('original');
+</script>
+</html>

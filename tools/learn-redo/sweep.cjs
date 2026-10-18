@@ -16,14 +16,20 @@ const LEAK = /\[\[img\]\]|^\s*:::|\{[obgrpy]:|\[!(big|tip|warn|why|key|note|exam
     page.on('pageerror', e => errs.push(`${mode} ${String(e)}`));
     await page.goto(URL);
     await page.waitForFunction(() => typeof App !== 'undefined' && document.querySelector('#screen .panel'));
+    const backup = await page.evaluate(() => Object.fromEntries(Object.entries(localStorage)));
     const key = await page.evaluate(() => SKEY('learn'));
     for (const unit of UNITS) {
       const plan = await page.evaluate(id => { const p = LEARN_UI.packs.find(x => x.id === id); return p && p.lessons.map((l, li) => ({ li, lid: l.id, n: l.steps.length, t: l.steps.map(s => s.type) })); }, unit);
       if (!plan) { problems.push('找不到單元 ' + unit); continue; }
       for (const L of plan) for (let si = 0; si < L.n; si++) {
         await page.evaluate(({ k, id, lid, si }) => { const D = { les: {}, rev: {}, cfg: { battle: false, open: {} }, last: null, stat: {} }; D.les[id + '/' + lid] = { i: si, done: 0, best: 0, run: { ok: 0, n: 0, sub: 0, pk: {}, t0: Date.now() } }; localStorage.setItem(k, JSON.stringify(D)); }, { k: key, id: unit, lid: L.lid, si });
-        await page.evaluate(id => App.go('learn', { pack: id }), unit);
+        // D是LEARN_UI內的快取，寫localStorage後一定要reload才能載入指定頁。
+        await page.reload();
+        await page.waitForFunction(() => typeof App !== 'undefined' && document.querySelector('#screen .panel'));
+        await page.evaluate(id => { VOL.set('muted', true); App.go('learn', { pack: id }); }, unit);
         await page.click(`[data-play="${L.li}"]`);
+        const count = await page.locator('#lpCnt').innerText();
+        if (count !== `${si + 1} / ${L.n}`) throw new Error(`指定頁未載入：${unit}/${L.lid}#${si}，實際${count}`);
         await page.waitForTimeout(L.t[si] === 'card' ? 250 : 80);
         const r = await page.evaluate(() => {
           const body = document.querySelector('#lpBody'); const imgs = [...document.querySelectorAll('#lpBody img.lp-img')];
@@ -37,10 +43,12 @@ const LEAK = /\[\[img\]\]|^\s*:::|\{[obgrpy]:|\[!(big|tip|warn|why|key|note|exam
         if (r.sw > 1) problems.push(`${tag} 橫向捲動 ${r.sw}px`);
       }
     }
+    await page.evaluate(backup => { localStorage.clear(); for (const [k,v] of Object.entries(backup)) localStorage.setItem(k,v); }, backup);
     await ctx.close();
   }
   console.log(JSON.stringify({ steps: n, problems: problems.length, errors: errs.length }));
   if (problems.length) console.log(problems.slice(0, 40).join('\n'));
   if (errs.length) console.log(errs.slice(0, 10).join('\n'));
   await b.close();
+  if (problems.length || errs.length) process.exitCode = 1;
 })();

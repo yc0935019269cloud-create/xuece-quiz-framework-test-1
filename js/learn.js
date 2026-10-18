@@ -432,7 +432,7 @@ const LEARN_UI = (() => {
     D.last = { p: p.id, l: l.id };
     save();
     const S = C.SUBJECTS[p.subject];
-    scr().innerHTML = `<div class="panel learn lp" style="--sc:${S.color}">
+    scr().innerHTML = `<div class="panel learn lp" data-pack="${U.esc(p.id)}" data-lesson="${U.esc(l.id)}" style="--sc:${S.color}">
       <div class="row lp-head"><button class="px-btn small" id="lpExit" title="進度會自動保存">✕ 離開</button>
         <div class="grow lp-title"><small>${U.esc(p.title)}</small><b>${U.esc(l.title)}</b></div>
         <button class="px-btn small" id="lpBattle" title="戰鬥模式：答對攻擊、答錯被反擊（不影響學習進度）">${D.cfg.battle ? '⚔ 戰鬥中' : '🕊 平靜模式'}</button><span class="lp-cnt" id="lpCnt"></span></div>

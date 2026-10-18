@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>同一個亮點，接在不同深度</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f8fc;color:#18263a;font:16px/1.55 system-ui,"Microsoft JhengHei",sans-serif}
+main{max-width:650px;margin:auto;padding:12px}h2{font-size:18px;margin:0 0 8px}.row{display:flex;gap:6px}
+button{flex:1;min-width:0;padding:9px 3px;background:white;border:2px solid #b7c7dc;border-radius:8px;font:inherit;font-weight:700;color:#26486d;cursor:pointer}
+button[aria-pressed=true]{background:#215fc0;border-color:#215fc0;color:white}button:focus-visible{outline:3px solid #db8113;outline-offset:2px}
+.spot{margin-top:10px;background:white;border:1px solid #d7e1ef;border-radius:10px}.spot svg{display:block;width:100%;height:145px}
+.caption{text-align:center;font-size:14px;color:#53647b;margin:-8px 0 8px}.explain{border-left:4px solid #215fc0;padding:8px 10px;margin:10px 0 0;background:#eaf1fb}
+.explain strong{display:block}small{display:block;color:#5e6a79;font-size:12px;margin-top:8px}
+</style>
+<main>
+<div class="row" role="group" aria-label="選擇接光深度">
+  <button type="button" data-position="0" aria-pressed="true">① 前方</button>
+  <button type="button" data-position="1" aria-pressed="false">② 中間</button>
+  <button type="button" data-position="2" aria-pressed="false">③ 後方</button>
+</div>
+<div class="spot">
+  <svg viewBox="0 0 340 145" role="img" aria-labelledby="spotTitle">
+    <title id="spotTitle">前方：光斑是一條直線</title>
+    <defs><filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="1.3"/></filter></defs>
+    <ellipse id="halo" cx="170" cy="70" rx="1.2" ry="50.667" fill="#3375d1" opacity=".35" filter="url(#soft)"/>
+    <ellipse id="spot" cx="170" cy="70" rx="1.2" ry="50.667" fill="#2765bd"/>
+  </svg>
+</div>
+<div class="explain" aria-live="polite"><strong id="heading">① 前方：一條直線 │</strong><span id="explanation">左右已集中，上下還沒集中；一個小亮點被拉成直線。</span></div>
+<small>依序點三個位置，留意「一個亮點」變出的形狀。圖形已放大，並非眼球的實際尺寸。</small>
+</main>
+<script>
+// Paraxial thin-lens model, uniformly illuminated circular pupil.
+// Focal distances fx=80, fy=120; at screen z, radii are R*|1-z/fx| and R*|1-z/fy|.
+// The dioptric midpoint is z=2*fx*fy/(fx+fy)=96: equal radii, a circular blur patch.
+// Radii are not normalized between states; only line visibility is clamped at 1.2 px.
+const fx=80,fy=120,R=40,SCALE=3.8;
+const positions=[
+  {z:fx,title:'① 前方：一條直線 │',text:'左右已集中，上下還沒集中；一個小亮點被拉成直線。'},
+  {z:2*fx*fy/(fx+fy),title:'② 中間：圓形光斑 ○',text:'左右、上下都還散開一些，但寬度一樣。這是折衷的小圓，還沒有變成清楚的小點。'},
+  {z:fy,title:'③ 後方：一條橫線 ─',text:'上下集中好了，左右方向的光卻又散開；同一個小亮點變成橫線。'}
+];
+function show(i){
+  const p=positions[i];
+  const rx=Math.max(1.2,R*Math.abs(1-p.z/fx)*SCALE);
+  const ry=Math.max(1.2,R*Math.abs(1-p.z/fy)*SCALE);
+  for(const id of ['spot','halo']){const e=document.getElementById(id);e.setAttribute('rx',rx);e.setAttribute('ry',ry)}
+  document.getElementById('spotTitle').textContent=p.title;
+  document.getElementById('heading').textContent=p.title;
+  document.getElementById('explanation').textContent=p.text;
+  document.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.position)===i)));
+}
+document.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>show(Number(b.dataset.position))));
+show(0);
+</script>
+</html>

@@ -318,3 +318,13 @@
 - 課程內容腳本 `tools/learn-redo/blood_retina_l1.py`（舊版檢核題、記憶卡、範例、實戰從 git `7a517e7` 取，可重跑）；之後直接改 JSON 也可以。檢核題文字沒改，複習盒紀錄保留。
 - 其他改動：概念卡「📌 重點」「🎯 國考重點」框改成實線左邊框（全站）；名詞字源底線變淡；圖片在桌機最高 72vh；`tools/figs-qa/check.cjs` 接受 `.co-big` 當看圖說明；截圖工具 `tools/learn-redo/shot.cjs <unit> <lesson> [prefix]`；整體檢查 `tools/learn-redo/sweep.cjs`；教材圖片可點擊放大（`.img-zoom`，手機可左右拖、雙指縮放）；`::: cols o b` 可指定欄色。
 - 發現：`content/bank/eye_ans/exam115` 等國考題本的題號 2xx／3xx 題幹多標成「驗光師」，但至少 113-211、113-216 實際出自 113 驗光生普考（PDF 已核對）；尚未全面修正。
+
+## 視光學二易讀版（2026-10-18，v117）
+
+- 範圍限MSR／視野／雙眼平衡共27課，已依使用者認可的JCC第四版逐課改寫。先具體畫面→命名→原因／操作→數字；短表格、固定配色、一頁一個重點；概念可連續多頁，不強制每卡接題。勿用舊的每卡exam＋demo規則回退版型。
+- 接手先讀 `SESSION_NOTE_OPTOMETRY.md`、`docs/視光學_易讀版改寫方法.md`、`tools/learn-redo/optometry-progress.json`；歷史試作在 `docs/視光學_易讀版試作.md`。本次27課均完成並驗證，不再等待試作核准。
+- 正本仍為content的三個optom2-u2/u3/u4 JSON；逐課手寫腳本在tools/learn-redo的msr_l*（l4另用optom2_jcc_l4.py）、vf_l*、bb_l*，基準22cfdff。重跑指定課後需跑optometry_corrections.py，防止已修正的0 dB、微視野學習效應等舊文字回流，再build。
+- 原課ID、97題檢核題幹、172張卡片正面與原範例／實戰／出處保留；必要的題解、卡背和1個多選選項更正有逐欄紀錄，答案仍ACD。MD／PD、±0.37取位、紅綠版本限制等區分見方法文件。原講義20/200散光<4.00的疑點保留待確認。
+- 表格CSS僅套三單元；js/learn.js播放器外框用data-pack／data-lesson定位，快取v117。data由build產生，不手改。進行中的舊頁序可能變，建議回課頭重讀；未清除存檔。
+- 正式QA：27課來源／出處／進度鍵核對；Edge file:// 1000／390px實際逐頁1260次、194判分、66例題展開、44圖、6抽題／6導航，0問題；JCC另有62渲染與互動狀態驗算。測試context備份還原localStorage，非實機iPad或醫學審稿。可攜JSON報告在docs/optometry-readability/。
+- 舊sweep.cjs只改localStorage而未reload，不能用舊計數當逐頁證據；本次已加reload＋頁碼核對。新readability.cjs每課reload後實際按跳頁色條，驗證每頁類型、頁碼和判分。原optom2-qa/check.cjs的每卡exam＋demo約束已過時。

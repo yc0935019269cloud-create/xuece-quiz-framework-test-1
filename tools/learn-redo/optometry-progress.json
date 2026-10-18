@@ -1,0 +1,261 @@
+{
+  "updated": "2026-10-18",
+  "approved_sample": "optom2-u2-msr/l4",
+  "push_authorized": true,
+  "lessons": [
+    {
+      "unit": "optom2-u2-msr",
+      "lesson": "l1",
+      "title": "驗光流程總覽與綜合驗光儀",
+      "status": "完成並驗證",
+      "steps": 22,
+      "checks": 3,
+      "flashcards": 7
+    },
+    {
+      "unit": "optom2-u2-msr",
+      "lesson": "l2",
+      "title": "最佳球面：等效球鏡度、散光間距與 MPMVA",
+      "status": "完成並驗證",
+      "steps": 30,
+      "checks": 5,
+      "flashcards": 9
+    },
+    {
+      "unit": "optom2-u2-msr",
+      "lesson": "l3",
+      "title": "找散光的方法與 JCC 鏡片",
+      "status": "完成並驗證",
+      "steps": 27,
+      "checks": 4,
+      "flashcards": 9
+    },
+    {
+      "unit": "optom2-u2-msr",
+      "lesson": "l4",
+      "title": "JCC 的原理、擺位與視標",
+      "status": "完成並驗證",
+      "steps": 31,
+      "checks": 4,
+      "flashcards": 8
+    },
+    {
+      "unit": "optom2-u2-msr",
+      "lesson": "l5",
+      "title": "JCC 步驟 a、b：粗略軸度與粗略度數",
+      "status": "完成並驗證",
+      "steps": 24,
+      "checks": 4,
+      "flashcards": 8
+    },
+    {
+      "unit": "optom2-u2-msr",
+      "lesson": "l6",
+      "title": "JCC 步驟 c、d 與檢影後的 JCC",
+      "status": "完成並驗證",
+      "steps": 22,
+      "checks": 4,
+      "flashcards": 7
+    },
+    {
+      "unit": "optom2-u2-msr",
+      "lesson": "l7",
+      "title": "初始球面、紅綠測試、微調球面與試鏡架驗光",
+      "status": "完成並驗證",
+      "steps": 30,
+      "checks": 5,
+      "flashcards": 9
+    },
+    {
+      "unit": "optom2-u2-msr",
+      "lesson": "l8",
+      "title": "進階：處方轉換、主子午線與散光分類",
+      "status": "完成並驗證",
+      "steps": 19,
+      "checks": 3,
+      "flashcards": 6
+    },
+    {
+      "unit": "optom2-u2-msr",
+      "lesson": "l9",
+      "title": "補強：鐘面圖、針孔、裂孔板、散光軸分類與檢查距離",
+      "status": "完成並驗證",
+      "steps": 30,
+      "checks": 5,
+      "flashcards": 6
+    },
+    {
+      "unit": "optom2-u2-msr",
+      "lesson": "l10",
+      "title": "國考重點複習：高頻考點與解題策略",
+      "status": "完成並驗證",
+      "steps": 17,
+      "checks": 2,
+      "flashcards": 3
+    },
+    {
+      "unit": "optom2-u3-vf",
+      "lesson": "l1",
+      "title": "為什麼要測視野：範圍、象限與視野山丘",
+      "status": "完成並驗證",
+      "steps": 26,
+      "checks": 4,
+      "flashcards": 8
+    },
+    {
+      "unit": "optom2-u3-vf",
+      "lesson": "l2",
+      "title": "對坐視野檢查（Confrontational VF）",
+      "status": "完成並驗證",
+      "steps": 19,
+      "checks": 3,
+      "flashcards": 7
+    },
+    {
+      "unit": "optom2-u3-vf",
+      "lesson": "l3",
+      "title": "掛布式、弧形與 Goldmann 視野計",
+      "status": "完成並驗證",
+      "steps": 24,
+      "checks": 4,
+      "flashcards": 8
+    },
+    {
+      "unit": "optom2-u3-vf",
+      "lesson": "l4",
+      "title": "標準自動視野計（SAP）與 Humphrey 判讀",
+      "status": "完成並驗證",
+      "steps": 26,
+      "checks": 5,
+      "flashcards": 8
+    },
+    {
+      "unit": "optom2-u3-vf",
+      "lesson": "l5",
+      "title": "新型視野檢查：FDT、VR 頭戴式與微視野",
+      "status": "完成並驗證",
+      "steps": 24,
+      "checks": 4,
+      "flashcards": 8
+    },
+    {
+      "unit": "optom2-u3-vf",
+      "lesson": "l6",
+      "title": "視野缺損的型態",
+      "status": "完成並驗證",
+      "steps": 19,
+      "checks": 3,
+      "flashcards": 7
+    },
+    {
+      "unit": "optom2-u3-vf",
+      "lesson": "l7",
+      "title": "視覺路徑與視野缺損定位",
+      "status": "完成並驗證",
+      "steps": 22,
+      "checks": 4,
+      "flashcards": 8
+    },
+    {
+      "unit": "optom2-u3-vf",
+      "lesson": "l8",
+      "title": "進階：Humphrey 可靠度、整體指標與追蹤",
+      "status": "完成並驗證",
+      "steps": 20,
+      "checks": 4,
+      "flashcards": 6
+    },
+    {
+      "unit": "optom2-u3-vf",
+      "lesson": "l9",
+      "title": "補強：檢查前的準備、Amsler 方格表與法定視障",
+      "status": "完成並驗證",
+      "steps": 21,
+      "checks": 3,
+      "flashcards": 4
+    },
+    {
+      "unit": "optom2-u3-vf",
+      "lesson": "l10",
+      "title": "國考重點複習：視野題怎麼讀？",
+      "status": "完成並驗證",
+      "steps": 16,
+      "checks": 2,
+      "flashcards": 3
+    },
+    {
+      "unit": "optom2-u4-bb",
+      "lesson": "l1",
+      "title": "雙眼平衡是什麼？為什麼要做？",
+      "status": "完成並驗證",
+      "steps": 23,
+      "checks": 3,
+      "flashcards": 5
+    },
+    {
+      "unit": "optom2-u4-bb",
+      "lesson": "l2",
+      "title": "平衡方法地圖：霧視骨架與四大類方法",
+      "status": "完成並驗證",
+      "steps": 23,
+      "checks": 3,
+      "flashcards": 5
+    },
+    {
+      "unit": "optom2-u4-bb",
+      "lesson": "l3",
+      "title": "垂直稜鏡分離法：最常用的平衡法",
+      "status": "完成並驗證",
+      "steps": 27,
+      "checks": 4,
+      "flashcards": 6
+    },
+    {
+      "unit": "optom2-u4-bb",
+      "lesson": "l4",
+      "title": "交替遮蓋、Humphriss 與稜鏡分離紅綠",
+      "status": "完成並驗證",
+      "steps": 29,
+      "checks": 4,
+      "flashcards": 6
+    },
+    {
+      "unit": "optom2-u4-bb",
+      "lesson": "l5",
+      "title": "雙眼驗光（Binocular Refraction）",
+      "status": "完成並驗證",
+      "steps": 20,
+      "checks": 3,
+      "flashcards": 4
+    },
+    {
+      "unit": "optom2-u4-bb",
+      "lesson": "l6",
+      "title": "怎麼選方法？串起完整驗光流程",
+      "status": "完成並驗證",
+      "steps": 22,
+      "checks": 3,
+      "flashcards": 4
+    },
+    {
+      "unit": "optom2-u4-bb",
+      "lesson": "l7",
+      "title": "國考重點複習：雙眼平衡題怎麼拿分？",
+      "status": "完成並驗證",
+      "steps": 17,
+      "checks": 2,
+      "flashcards": 3
+    }
+  ],
+  "validation": {
+    "build": "python tools/build.py --strict: exit 0",
+    "rendered": 1260,
+    "graded": 194,
+    "issues": 0,
+    "widths": [
+      1000,
+      390
+    ],
+    "scope": "file:// Edge；非實機iPad／真人理解測試"
+  }
+}
