@@ -1320,6 +1320,8 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .gl-h { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin-bottom: 6px; }
 .gl-h b { color: var(--gold); font-size: 16px; }
 .gl-en { font-family: Georgia, "Times New Roman", serif; font-size: 15px; color: #e8dcff; }
+.gl-play { border: 1px solid var(--line); background: rgba(255,255,255,.06); color: var(--text); border-radius: 999px; width: 26px; height: 26px; line-height: 1; font-size: 13px; cursor: pointer; padding: 0; display: inline-flex; align-items: center; justify-content: center; }
+.gl-play:hover { background: rgba(255,255,255,.14); }
 .gl-parts { display: grid; gap: 4px; margin: 6px 0; }
 .gl-part { display: grid; grid-template-columns: auto 1fr; gap: 8px; align-items: start; }
 .gl-w { font-family: Georgia, "Times New Roman", serif; font-weight: 700; color: var(--bg); background: var(--gold); padding: 0 6px; border-radius: 3px; white-space: nowrap; }

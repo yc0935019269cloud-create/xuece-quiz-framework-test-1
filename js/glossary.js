@@ -60,6 +60,16 @@ const GLOSS = (() => {
 
   function close() { if (pop) { pop.remove(); pop = null; } if (curEl) { curEl.classList.remove('on'); curEl = null; } }
 
+  function speak(text) {
+    if (!text || !('speechSynthesis' in window)) return;
+    try {
+      speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'en-US';
+      speechSynthesis.speak(u);
+    } catch (err) {}
+  }
+
   function open(el) {
     const e = find(el.dataset.g);
     if (!e) return;
@@ -68,7 +78,9 @@ const GLOSS = (() => {
     curEl = el; el.classList.add('on');
     pop = document.createElement('div');
     pop.className = 'gl-pop'; pop.setAttribute('role', 'dialog');
-    pop.innerHTML = `<div class="gl-h"><b>${esc(e.zh)}</b><span class="gl-en">${esc(e.en)}</span></div>` +
+    pop.innerHTML = `<div class="gl-h"><b>${esc(e.zh)}</b><span class="gl-en">${esc(e.en)}</span>` +
+      (('speechSynthesis' in window) ? `<button type="button" class="gl-play" data-text="${esc(e.en)}" aria-label="播放發音" title="播放發音">🔊</button>` : '') +
+      `</div>` +
       (e.parts.length ? `<div class="gl-parts">${e.parts.map(([a, b]) => `<div class="gl-part"><span class="gl-w">${esc(a)}</span><span>${esc(b)}</span></div>`).join('')}</div>` : '') +
       (e.note ? `<div class="gl-note">${esc(e.note)}</div>` : '') +
       (e.rel ? `<div class="gl-rel">🔗 ${esc(e.rel)}</div>` : '');
@@ -92,6 +104,8 @@ const GLOSS = (() => {
 
   // 點名詞開、點別處關；鍵盤 Enter／空白鍵也能開
   document.addEventListener('click', ev => {
+    const play = ev.target.closest && ev.target.closest('.gl-play');
+    if (play) { ev.preventDefault(); ev.stopPropagation(); speak(play.dataset.text); return; }
     const el = ev.target.closest && ev.target.closest('.gl');
     if (el) { ev.preventDefault(); ev.stopPropagation(); open(el); return; }
     if (pop && !pop.contains(ev.target)) close();
