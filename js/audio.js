@@ -343,10 +343,13 @@ const BGM = (() => {
   function fade() {
     clearInterval(fadeT);
     if (!MIX.ok(a[cur])) {
-      // 無法調音量：不做淡入淡出，非目前曲目與音量為 0 時直接暫停
+      // 無法確定音量能不能調：不做淡入淡出，但還是試著直接寫 volume——
+      // 真的唯讀的裝置寫了沒作用（不影響原本行為），但如果其實可以寫、只是 GainNode 沒接成功，
+      // 至少不會卡在建立 <audio> 當下設的 volume=0 永遠無聲。
       const t = target();
       a.forEach((x, i) => {
         lv[i] = i === cur ? t : 0;
+        try { x.volume = lv[i]; } catch (e) {}
         if (lv[i] <= 0.001 && !x.paused) x.pause();
       });
       return;
