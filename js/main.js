@@ -7,7 +7,13 @@ const App = (() => {
     U.$('#resLv').textContent = Store.profile.accLv;
     U.$('#btnSound').textContent = VOL.get('muted') ? '🔇' : (AMB.active().length ? '♪' + AMB.active().map(k => AMB.TYPES[k].icon).join('') : '♪');
   }
-  function go(name, arg) {
+  // 上一頁：記錄離開的畫面，按「↩」回去；'run'（遠征中）不記錄，避免回到已結束/過期的場次物件
+  let hist = [], curEntry = null;
+  function go(name, arg, opts) {
+    const fromBack = !!(opts && opts.fromBack);
+    if (!fromBack && curEntry && curEntry.name !== 'run' && (curEntry.name !== name || curEntry.arg !== arg)) hist.push(curEntry);
+    curEntry = { name, arg };
+    const btnBack = U.$('#btnBack'); if (btnBack) btnBack.disabled = !hist.length;
     RunUI.stopTimer && RunUI.stopTimer();
     typeof LEARN_UI !== 'undefined' && LEARN_UI.leave();
     U.clearModals();
@@ -40,6 +46,11 @@ const App = (() => {
       default: return Screens.hub();
     }
   }
+  function back() {
+    if (!hist.length) return;
+    const prev = hist.pop();
+    go(prev.name, prev.arg, { fromBack: true });
+  }
   /* 頂部音量彈窗 */
   function closeVol() { const v = U.$('#volPop'); if (v) v.remove(); }
   function toggleVol() {
@@ -57,11 +68,12 @@ const App = (() => {
     if (!window.QB.questions.length && !(window.LEARN.packs || []).length) U.toast('題庫還是空的：按營地的「📥 導入素材」，或把檔案放進 content/ 再執行 python tools/build.py', 7000);
     Store.onTop(refreshTop);
     U.$('#btnHome').onclick = () => { if (window.CUR) window.CUR.save(); window.CUR = null; go('hub'); };
+    U.$('#btnBack').onclick = () => { if (window.CUR) window.CUR.save(); back(); };
     U.$('#btnSound').onclick = toggleVol;
     U.$('#btnSound').title = '音量設定';
     document.title = APP_TITLE;
     go(location.hash === '#peglin' ? 'peglin' : location.hash === '#peglin-learn' ? 'peglinLearn' : 'hub');
   }
   document.addEventListener('DOMContentLoaded', init);
-  return { go, refreshTop };
+  return { go, back, refreshTop };
 })();
