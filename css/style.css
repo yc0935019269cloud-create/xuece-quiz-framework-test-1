@@ -1379,3 +1379,8 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .img-zoom-in { flex: 1; overflow: auto; -webkit-overflow-scrolling: touch; touch-action: pan-x pan-y pinch-zoom; display: flex; align-items: center; justify-content: safe center; padding: 50px 10px 10px; }
 .img-zoom-in img { display: block; background: var(--paper); max-height: calc(100vh - 70px); max-width: calc(100vw - 20px); width: auto; }
 @media (max-width: 640px) { .img-zoom-in { align-items: flex-start; } .img-zoom-in img { max-height: none; max-width: none; width: max(100vw, 900px); } }
+.md li > ul, .md li > ol { margin: 2px 0 4px; }
+.hl strong, .hl b { color: inherit; }
+/* 同一頁兩張以上的圖：桌機並排 */
+@media (min-width: 700px) { .lp-imgs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; align-items: center; } .lp-imgs .lp-img { margin: 4px 0; max-height: 46vh; width: 100%; object-fit: contain; } }
+@media (min-width: 700px) { .lp-imgs:has(> .lp-img:nth-child(3)) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

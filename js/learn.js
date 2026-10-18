@@ -76,7 +76,7 @@ const LEARN_UI = (() => {
     diagram: ['先點點看每個標記，認識一下～', '看圖認位置，最後要考喔！'], interactive: ['動手玩玩看，觀察會發生什麼！', '拉拉看、按按看～']
   };
   const imgList = v => (Array.isArray(v) ? v : v ? [v] : []);
-  const imgsHTML = (v, src) => imgList(v).map(x => `<img class="lp-img" src="${U.esc(U.img(x))}" alt="" title="點圖放大">`).join('') + (src ? `<div class="lp-src">圖片來源：${inl(src)}</div>` : '');
+  const imgsHTML = (v, src) => { const L = imgList(v), h = L.map(x => `<img class="lp-img" src="${U.esc(U.img(x))}" alt="" title="點圖放大">`).join(''); return (L.length > 1 ? `<div class="lp-imgs">${h}</div>` : h) + (src ? `<div class="lp-src">圖片來源：${inl(src)}</div>` : ''); };
   // 點教材圖片放大（手機上標籤太小時可以放大、左右拖動、雙指縮放）；點 ✕、背景或按 Esc 關閉
   document.addEventListener('click', e => {
     const im = e.target.closest && e.target.closest('img.lp-img');
@@ -1264,9 +1264,11 @@ const LEARN_UI = (() => {
     const pics = imgsHTML(s.img, s.img_source || s.source), parts = String(s.body || '').split(/^[ \t]*\[\[img\]\][ \t]*$/m);
     return parts.length > 1 ? md(parts[0]) + pics + md(parts.slice(1).join('\n')) : pics + md(s.body);
   }
+  // 框的標題已經寫了「國考重點／示範」，內文開頭重複的「**考法**：」「**示範**：」不再顯示
+  const dropLead = (t, w) => String(t).replace(new RegExp(`^(\\*\\*)?${w}(\\*\\*)?[:：]\\s*`, 'gm'), '');
   function examDemoHTML(s) {
-    return ((s.exam || []).length ? `<div class="lp-exam"><b>🎯 國考重點</b><ul>${s.exam.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : '') +
-      (s.demo ? `<div class="lp-demo"><b>✏️ 示範</b>${md(s.demo)}</div>` : '');
+    return ((s.exam || []).length ? `<div class="lp-exam"><b>🎯 國考重點</b><ul>${s.exam.map(k => `<li>${inl(dropLead(k, '考法'))}</li>`).join('')}</ul></div>` : '') +
+      (s.demo ? `<div class="lp-demo"><b>✏️ 示範</b>${md(dropLead(s.demo, '示範'))}</div>` : '');
   }
   function noteCard(p, l, s) {
     return s.type === 'card' ? `<div class="lnote-card"><h4>📘 ${U.esc(s.title)}</h4>${cardBody(s)}${(s.keys || []).length ? `<div class="lp-keys"><ul>${s.keys.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : ''}${examDemoHTML(s)}</div>`

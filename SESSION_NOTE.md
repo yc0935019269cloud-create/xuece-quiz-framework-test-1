@@ -11,7 +11,7 @@
 - **使用者 2026-10-18 更新：不要每課截圖、圖片沿用現有的不要大量重做，先把文字處理好、快速往下做。**
 - 改寫時若拿掉了考卷用的英文或別名，`--coverage` 會出現「題目用到、教材沒出現的符號」或孤兒題：把那個寫法補回教材（例：Müller's muscle）。
 - 每課改完：`python tools/build.py --strict`（exit 0）→ 截圖 `node tools/learn-redo/shot.cjs <unit> <lesson> <prefix>` 逐張看 → `node tools/eye115-qa/check.cjs` 與 `sweep.cjs` → 更新下表。
-- 改了 JS／CSS 才需要把 index.html `?v=N` 加一（目前 v112）。
+- 改了 JS／CSS 才需要把 index.html `?v=N` 加一（目前 v115）。
 
 ### 進度（✅ 完成、⬜ 未做）
 
@@ -49,6 +49,12 @@
 - `node tools/learn-redo/sweep.cjs`：11 單元每一步桌機＋390px 共 1,010 次渲染，0 問題（無頁面錯誤、無空白、無排版語法外露、圖都有載入、手機無橫向捲動）。
 - `node tools/eye115-qa/check.cjs` 80/80；`node tools/figs-qa/check.cjs` 256 項 0 問題。
 - 沒有逐張截圖人工檢查（使用者要求快速做過去）；只有血液供應三個單元有逐頁看過截圖。
+
+## 第二輪完善（2026-10-18，v115）
+
+- 逐單元截概念頁檢查（，只截 intro／card、桌機寬）。
+- Markdown 清單支援一層縮排子清單；🎯／✏️ 框內開頭重複的「考法：」「示範：」不再顯示；同頁 2～3 張圖在桌機並排；Horner 三階改成一張表。
+- 1,010 步掃描 0 問題、eye115-qa 80/80。
 
 ## 接手者可以做的
 

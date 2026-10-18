@@ -88,10 +88,16 @@ const U = (() => {
       }
       if (/^\s*([-*+]|\d+[.)])\s+/.test(l)) {
         const ordered = /^\s*\d+[.)]/.test(l);
-        let items = [];
-        while (i < lines.length && /^\s*([-*+]|\d+[.)])\s+/.test(lines[i])) { items.push(lines[i].replace(/^\s*([-*+]|\d+[.)])\s+/, '')); i++; }
+        // 縮排 2 格以上的項目當成上一項的子清單（一層）
+        const base = l.match(/^\s*/)[0].length, items = [];
+        while (i < lines.length && /^\s*([-*+]|\d+[.)])\s+/.test(lines[i])) {
+          const ind = lines[i].match(/^\s*/)[0].length, txt = lines[i].replace(/^\s*([-*+]|\d+[.)])\s+/, '');
+          if (ind >= base + 2 && items.length) (items[items.length - 1].sub ||= { ol: /^\s*\d+[.)]/.test(lines[i]), list: [] }).list.push(txt);
+          else items.push({ txt });
+          i++;
+        }
         const tg = ordered ? 'ol' : 'ul';
-        out += `<${tg}>` + items.map(x => `<li>${inline(x)}</li>`).join('') + `</${tg}>`; continue;
+        out += `<${tg}>` + items.map(x => `<li>${inline(x.txt)}${x.sub ? `<${x.sub.ol ? 'ol' : 'ul'}>${x.sub.list.map(y => `<li>${inline(y)}</li>`).join('')}</${x.sub.ol ? 'ol' : 'ul'}>` : ''}</li>`).join('') + `</${tg}>`; continue;
       }
       if (/^\s*```/.test(l)) {
         i++; let b = [];
