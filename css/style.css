@@ -1281,7 +1281,7 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .mtx::before { left: -2px; } .mtx::after { right: -2px; }
 
 /* iOS 觸覺：疊在作答按鈕上的透明原生開關（js/audio.js 的 HAPTIC.armTap） */
-.hap-sw { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; opacity: .011; z-index: 5; cursor: pointer; }
+.hap-sw { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; opacity: .011; z-index: 5; cursor: pointer; touch-action: pan-y; }
 .hap-off .hap-sw, :disabled > .hap-sw { display: none; }
 
 /* 作答衝擊的畫面定格（FX.impact）：場景內的動畫暫停一瞬間 */
