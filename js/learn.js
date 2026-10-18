@@ -417,12 +417,46 @@ const LEARN_UI = (() => {
   }
 
   /* ---------- 課程播放器 ---------- */
-  let ctl = null, keyH = null;
+  let ctl = null, keyH = null, unpinBattle = null, refreshBattlePin = null;
   function cleanupQ() { if (ctl) { ctl.destroy(); ctl = null; } } // 只拆題目（QV 的鍵盤監聽）
   function cleanup() {
     cleanupQ();
+    if (unpinBattle) { unpinBattle(); unpinBattle = null; refreshBattlePin = null; }
     if (keyH) { document.removeEventListener('keydown', keyH); keyH = null; }
     if (cur) { cur = null; pageMoved(); }
+  }
+  function pinBattle() {
+    const wrap = U.$('#lpBattlePin'), anchor = U.$('#lpBattleAnchor'), spacer = U.$('#lpBattleSpacer'), stage = U.$('#lbStage'), topbar = U.$('#topbar');
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      if (!wrap.isConnected) return;
+      const visible = stage.style.display !== 'none';
+      wrap.hidden = !visible;
+      if (!visible) { wrap.classList.remove('compact'); spacer.style.height = '0px'; return; }
+      const top = topbar ? topbar.getBoundingClientRect().height : 0;
+      wrap.style.top = `${top}px`;
+      const on = wrap.classList.contains('compact');
+      const start = anchor.getBoundingClientRect().top + scrollY;
+      const compact = on ? scrollY > 24 : scrollY > Math.max(24, start - top + 30);
+      // Measure both sizes on resize too. Preserve flow height so the text does
+      // not jump when the existing animated scene shrinks; never clone/redraw it.
+      wrap.classList.remove('compact');
+      const full = wrap.offsetHeight;
+      wrap.classList.toggle('compact', compact);
+      spacer.style.height = compact ? `${full - wrap.offsetHeight}px` : '0px';
+    };
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    const ro = window.ResizeObserver && topbar ? new ResizeObserver(schedule) : null;
+    if (ro) ro.observe(topbar);
+    refreshBattlePin = schedule;
+    unpinBattle = () => {
+      window.removeEventListener('scroll', schedule); window.removeEventListener('resize', schedule);
+      if (ro) ro.disconnect(); if (frame) cancelAnimationFrame(frame);
+    };
+    update();
   }
   function play(p, l, restart) {
     cleanup();
@@ -436,7 +470,9 @@ const LEARN_UI = (() => {
       <div class="row lp-head"><button class="px-btn small" id="lpExit" title="進度會自動保存">✕ 離開</button>
         <div class="grow lp-title"><small>${U.esc(p.title)}</small><b>${U.esc(l.title)}</b></div>
         <button class="px-btn small" id="lpBattle" title="戰鬥模式：答對攻擊、答錯被反擊（不影響學習進度）">${D.cfg.battle ? '⚔ 戰鬥中' : '🕊 平靜模式'}</button><span class="lp-cnt" id="lpCnt"></span></div>
-      <div class="lb" id="lbStage" style="--sc:${S.color}"></div>
+      <div id="lpBattleAnchor" aria-hidden="true"></div>
+      <div class="lp-battle-pin" id="lpBattlePin"><div class="lb" id="lbStage" style="--sc:${S.color}"></div></div>
+      <div id="lpBattleSpacer" aria-hidden="true"></div>
       <div class="lpips" id="lpPips">${l.steps.map((s, i) => `<i class="t-${s.type}" data-i="${i}" data-tip="${i + 1}. ${STEP[s.type].name}"></i>`).join('')}</div>
       <div class="lp-body" id="lpBody"></div>
       <div class="lp-foot">${petBox()}<span class="grow"></span><button class="px-btn lp-prev" id="lpPrev" hidden title="回上一頁（看過的頁面可以點上方色條直接跳）" aria-label="上一頁"><span class="lp-prev-ic">‹</span><span class="lp-prev-tx">上一頁</span></button><button class="px-btn gold big" id="lpNext" disabled>繼續 ▶</button></div></div>`;
@@ -525,6 +561,7 @@ const LEARN_UI = (() => {
     /* ---------- 畫面：場景只在換主題時重畫；勇者只建一次（出招動畫才不會被打斷）；怪物區與 HUD 分開更新 ---------- */
     function drawBattle() {
       lb.style.display = D.cfg.battle ? '' : 'none';
+      if (refreshBattlePin) refreshBattlePin();
       U.$('#lpBattle').textContent = D.cfg.battle ? '⚔ 戰鬥中' : '🕊 平靜模式';
       if (!D.cfg.battle) return;
       const th = B.boss ? FX.THEMES[lvIdx % 2 ? 5 : 4] : FX.THEMES[[2, 1, 3, 0][Math.max(0, lvIdx) % 4]];
@@ -969,6 +1006,7 @@ const LEARN_UI = (() => {
     }
     drawBattle();
     step();
+    pinBattle();
   }
 
   /* ---------- 圖解：標記點探索＋點選辨識測驗 ----------

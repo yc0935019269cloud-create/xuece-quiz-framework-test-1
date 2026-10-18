@@ -1039,6 +1039,25 @@ details.ltree.d0 > summary .ltree-n { color: var(--gold); font-size: 18px; }
 .lb .dmg { font-size: 22px; z-index: 6; } .lb .dmg.crit { font-size: 26px; }
 .lb-line { color: var(--gold); text-align: center; font-size: 18px; }
 @media (max-width: 640px) { .lb { height: 168px; } .lb-hero { left: 5%; zoom: .78; } .lb-mon { right: 4%; zoom: .78; } .lb-scene .bg-wall { height: 60px; } }
+/* Keep the same live learning battle visible while reading lower down. */
+.lp-battle-pin { position: sticky; z-index: 15; display: flow-root; background: var(--panel); padding-bottom: 6px; box-shadow: 0 8px 12px -6px rgba(0,0,0,.6); }
+.lp-battle-pin[hidden] { display: none; }
+.lp-battle-pin.compact .lb { height: 136px; }
+.lp-battle-pin.compact .lb-hero { zoom: .62; bottom: 10px; left: 8%; }
+.lp-battle-pin.compact .lb-mon { zoom: .68; bottom: 10px; right: 8%; }
+.lp-battle-pin.compact .lb-scene .bg-props { display: none; }
+.lp-battle-pin.compact .lb-ult { top: auto; bottom: 5px; left: 50%; transform: translateX(-50%); }
+.lp-battle-pin.compact .lb-combo b { font-size: 24px; }
+@media (max-width: 640px) {
+  .lp-battle-pin.compact .lb { height: 114px; }
+  .lp-battle-pin.compact .lb-hero { zoom: .5; left: 4%; }
+  .lp-battle-pin.compact .lb-mon { zoom: .55; right: 4%; }
+  .lp-battle-pin.compact .lb-hud { font-size: 12px; gap: 6px; left: 4px; }
+  .lp-battle-pin.compact .lb-combo { top: 5px; }
+  .lp-battle-pin.compact .lb-combo b { font-size: 20px; }
+  .lp-battle-pin.compact .lb-combo small, .lp-battle-pin.compact .lb-combo em { font-size: 10px; }
+  .lp-battle-pin.compact .lb-ult { font-size: 11px; }
+}
 /* 圖解 */
 .dg { display: grid; grid-template-columns: minmax(0, 3fr) minmax(220px, 2fr); gap: 12px; margin-top: 8px; align-items: start; }
 .dg-wrap { position: relative; width: fit-content; max-width: 100%; margin: 0 auto; background: var(--paper); border: 3px solid var(--line); line-height: 0; }

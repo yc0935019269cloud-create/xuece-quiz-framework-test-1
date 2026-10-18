@@ -182,3 +182,9 @@
 - 保留原32檢核題幹、33記憶卡正面與考題來源；其他正課逐欄比對不變。更正logMAR計分條件、遠點符號／AA、NPC非單項確診與角膜假設指數等，逐欄前後文在`s114-review-corrections.json`。總演練限本單元國考題本。
 - 表格CSS只擴至上述九堂複習，快取v124，未改播放器JS或存檔格式；舊進行中頁序可能不同，可回課頭重讀。
 - 驗證：18項數值；Edge file:// 1000／390px實際逐頁470次、64判分、36範例展開、6互動狀態、18抽題池／18導航，0問題；strict build通過。一次性context備份還原localStorage；非實機iPad、真人理解測試或完整專業審稿。可攜報告在`docs/s114-review-readability/`。
+
+## 學習戰鬥畫面捲動縮小（2026-10-18，v125）
+
+- `js/learn.js`的`pinBattle()`讓課程戰鬥條捲動後縮小固定於topbar下方；同一角色Canvas與場景繼續出招，不複製或重建動畫。回頂恢復原尺寸，平靜模式連佔位一起收起。
+- `.lp-battle-pin`使用sticky，`lpBattleSpacer`補縮小差額，避免教材跳動；rAF節流、ResizeObserver追蹤工具列高度，離課／切頁清理監聽。桌機212→136px、手機168→114px；只改學習播放器，正式遠征不動。
+- Edge file://桌機／390px共30項通過，含2次真實答題觸發攻擊、捲動前後教材位移0、旋轉寬度、平靜切換、離課重進與同Canvas保存。工具`tools/learn-battle-pin-qa/check.cjs`，報告`docs/learn-battle-pin/qa.json`；一次性context備份還原localStorage，未做實機iPad測試。
