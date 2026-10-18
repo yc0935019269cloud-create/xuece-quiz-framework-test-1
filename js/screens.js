@@ -266,6 +266,8 @@ const Screens = (() => {
       { id: 'wrongrun', g: 'study', icon: 64, t: '錯題重刷', d: `以錯題本出征（${wrongN} 題未掌握）` },
       { id: 'ai', g: 'study', icon: '💬', t: 'AI 助教', d: '問觀念、問題目，回答附題庫與教材出處' },
       { id: 'pomo', g: 'study', icon: '🍅', t: '番茄鐘', d: `今天 🍅 ${POMO.data.log.filter(l => new Date(l.t).toDateString() === new Date().toDateString()).length} 顆・專注花園 ${POMO.data.garden.length} 株` },
+      { id: 'ext-brain3d', g: 'study', icon: '🧠', t: '腦與視覺路徑 3D', d: '視覺路徑・腦底血管・深部構造 3D 解剖圖譜（外部網站，開新分頁）', url: 'https://yc0935019269cloud-create.github.io/anatomy-3d-atlas/brain-visual-atlas-3d/%E8%85%A6%E8%88%87%E8%A6%96%E8%A6%BA%E8%B7%AF%E5%BE%913D.html' },
+      { id: 'ext-refraction', g: 'study', icon: '🩺', t: '視光室（第一人稱驗光）', d: '第一人稱診間模擬，練習完整驗光流程（外部網站，開新分頁）', url: 'https://yc0935019269cloud-create.github.io/Mvmpa5555/' },
       { id: 'classes', g: 'col', icon: C.cls(p.activeClass).tile, t: '職業殿堂', d: `目前：${C.cls(p.activeClass).name} Lv.${(p.classes[p.activeClass] || { lv: 1 }).lv}・切換/解鎖職業` },
       { id: 'pets', g: 'col', icon: 'heart', t: '寵物小屋', d: '培養夥伴、買造型與配件' },
       { id: 'upg', g: 'col', icon: 74, t: '永久強化', d: '用魂晶提升能力' },
@@ -310,10 +312,12 @@ const Screens = (() => {
         <div class="stat-line"><span>錯題未掌握</span><b class="red-t">${wrongN}</b></div>
       </div>
       <div class="menu-groups">${MENU_GROUPS.map(([g, name]) => { const ts = tiles.filter(t => t.g === g); return ts.length ? `<section class="menu-sec"><h3 class="menu-sec-h">${name}</h3>
-        <div class="menu-grid">${ts.map(t => `<button class="px-btn menu-tile ${t.cls || ''}" data-go="${t.id}">${SP.icon(t.icon, 48)}<span><b>${t.t}</b><small>${t.d}</small></span></button>`).join('')}</div></section>` : ''; }).join('')}</div>
+        <div class="menu-grid">${ts.map(t => `<button class="px-btn menu-tile ${t.cls || ''}" data-go="${t.id}"${t.url ? ` data-url="${U.esc(t.url)}"` : ''}>${SP.icon(t.icon, 48)}<span><b>${t.t}</b><small>${t.d}</small></span></button>`).join('')}</div></section>` : ''; }).join('')}</div>
     </div>`;
     U.$$('[data-go]').forEach(b => b.onclick = () => {
       SFX.play('click');
+      const url = b.dataset.url;
+      if (url) { window.open(url, '_blank', 'noopener'); return; }
       const g = b.dataset.go;
       if (g === 'continue') App.go('run', new Run(Store.loadRun()));
       else if (g === 'wrongrun') wrongRunModal();

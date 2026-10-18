@@ -60,14 +60,24 @@ const GLOSS = (() => {
 
   function close() { if (pop) { pop.remove(); pop = null; } if (curEl) { curEl.classList.remove('on'); curEl = null; } }
 
+  // iOS：念單詞跟背景音樂共用音訊 session，兩個同時開會讓發音念到一半被切斷、音樂之後也不會自己恢復，
+  // 所以念之前用既有的 BGM.hold（番茄鐘專注模式同一套）暫停音樂、念完或出錯再恢復；用計數器防止連點時提早恢復。
+  let holdN = 0;
+  function duck() { if (typeof BGM !== 'undefined') { if (!holdN) BGM.hold(true); holdN++; } }
+  function unduck() { if (typeof BGM !== 'undefined') { holdN = Math.max(0, holdN - 1); if (!holdN) BGM.hold(false); } }
   function speak(text) {
     if (!text || !('speechSynthesis' in window)) return;
     try {
       speechSynthesis.cancel();
+      duck();
+      let released = false;
+      const release = () => { if (released) return; released = true; unduck(); };
       const u = new SpeechSynthesisUtterance(text);
       u.lang = 'en-US';
+      u.onend = release; u.onerror = release;
       speechSynthesis.speak(u);
-    } catch (err) {}
+      setTimeout(release, 8000); // 保險：萬一事件沒觸發，音樂不會一直被卡住
+    } catch (err) { unduck(); }
   }
 
   function open(el) {
