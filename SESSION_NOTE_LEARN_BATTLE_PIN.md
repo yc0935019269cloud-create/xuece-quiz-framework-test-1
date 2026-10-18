@@ -6,4 +6,4 @@
 
 驗證：Edge file:// 1000／390px共30項、2次答題觸發攻擊，教材位移0px；報告docs/learn-battle-pin/qa.json。測試fixture延長題目以驗證捲動位置，未做實機iPad。
 
-只提交這項介面的JS、CSS、快取與文件。大一下正課仍在進行：本機SESSION_NOTE_OPTOMETRY_S114_COURSES.md與tools/learn-redo/s114-course-progress.json；目前第01單元7課已改寫、待完整驗證，其他52課未做。這些未完成教材與data不混入本次UI發布。推送後接續正課任務，不重做九堂總複習。
+只提交這項介面的JS、CSS、快取與文件。大一下正課仍在進行：本機SESSION_NOTE_OPTOMETRY_S114_COURSES.md與tools/learn-redo/s114-course-progress.json；插入任務當時第01單元7課已改寫、其餘52課未做；後續59課現已完成，最新狀態見正課Session Note。這些未完成教材與data不混入本次UI發布。推送後接續正課任務，不重做九堂總複習。

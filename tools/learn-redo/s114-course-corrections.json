@@ -1,0 +1,1477 @@
+[
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l2",
+    "path": [
+      "lessons",
+      1,
+      "steps",
+      2,
+      "body",
+      4
+    ],
+    "before": "所以你的視力只有正常人的**一半**。",
+    "after": "所以小數視力為**0.5**，需要的細節角是參考值2倍；不表示整體視覺功能只剩一半。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l3",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      2,
+      "body",
+      0
+    ],
+    "before": "logMAR 視力表每一行有 **5 個字**，每個字值 **0.02**。",
+    "after": "本課採標準每行5字、行差0.10的logMAR表，所以每字值**0.02 logMAR**；其他設計須按該表規則。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l3",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      10,
+      "body",
+      0
+    ],
+    "before": "Snellen 視力表（0.1～1.5 那種）的規則：",
+    "after": "本課小數標示視力表採下列逐行通過規則；不同表與研究計分規定可不同："
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      2,
+      "body",
+      4
+    ],
+    "before": "- 變清楚了 → 問題在**屈光**（度數還沒配準），可以再用鏡片改善",
+    "after": "- 變清楚了 → 支持有**可矯正屈光因素**，仍需驗光確認；不保證完全沒有眼病"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      2,
+      "body",
+      5
+    ],
+    "before": "- 沒變清楚、反而更糟 → 可能是**眼睛有病**（如弱視、黃斑部病變），要轉給眼科醫師",
+    "after": "- 沒變清楚、反而更糟 → 可能眼病、孔沒對準、太暗、已達最佳或其他因素，需按情況進一步評估"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      4,
+      "body",
+      2
+    ],
+    "before": "- 進步 ≠ 一定能 100% 矯正，只代表還有屈光問題",
+    "after": "- 進步支持有可矯正因素，不保證能100%矯正或排除眼病"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      18,
+      "body",
+      2
+    ],
+    "before": "> 把屈光問題都排除之後，這隻眼睛**至少**能看到 0.6。",
+    "after": "> 在這次針孔、距離、照明與矯正條件下，這隻眼睛讀到**0.6**；並非已完全排除屈光因素。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      18,
+      "body",
+      4
+    ],
+    "before": "它在回答：「這隻眼睛的結構和神經，**最少**能看多好？」",
+    "after": "它記錄本次透過針孔的表現，不能單靠它定義結構或神經功能的上下限。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      20,
+      "body",
+      0
+    ],
+    "before": "- 病人要先戴著**最佳矯正**，針孔才有意義",
+    "after": "- 針孔可配裸視或矯正後視力使用，需記清楚原矯正條件；不以它代替正式驗光"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      20,
+      "body",
+      2
+    ],
+    "before": "- 針孔是診斷小工具：分辨「屈光問題」與「眼睛有病」",
+    "after": "- 針孔提供屈光因素的輔助線索，不能獨立將屈光問題與眼病完全二分"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l5",
+    "path": [
+      "lessons",
+      4,
+      "steps",
+      12,
+      "body",
+      0
+    ],
+    "before": "- 遠視眼的遠點在視網膜**後方**（虛的）",
+    "after": "- 遠視眼的物方遠點在眼後，為**虛遠點**；別把它當眼內的網膜後成像焦點"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l6",
+    "path": [
+      "lessons",
+      5,
+      "steps",
+      4,
+      "body",
+      3
+    ],
+    "before": "- 矯正鏡片和屈光異常**符號相反**：近視用 (−)、遠視用 (+)",
+    "after": "- 矯正鏡片：近視用(−)、遠視用(+)；若R定義為剩餘屈光誤差，它也採近視負、遠視正。別混用「收光過強／不足」的另套符號"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l6",
+    "path": [
+      "lessons",
+      5,
+      "steps",
+      12,
+      "body",
+      1
+    ],
+    "before": "正視眼眼軸 L = n ÷ F = 1.333 ÷ 60 = 22.22 mm",
+    "after": "簡化眼主平面到網膜距離 L = n/F = 1.333/60 = 0.02222 m = 22.22 mm"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l7",
+    "path": [
+      "lessons",
+      6,
+      "steps",
+      4,
+      "body",
+      5
+    ],
+    "before": "年紀越大，隱性、機能遠視會慢慢變成顯性。",
+    "after": "年齡增加、調節減少時，隱性部分可變成顯性；顯性裡的機能部分可轉成絕對，兩種轉變不可混為同一項。"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l2",
+    "path": [
+      "lessons",
+      1,
+      "steps",
+      2,
+      "body",
+      2
+    ],
+    "before": "**不規則散光**：形狀歪七扭八（兩個方向**不垂直**），像被壓壞的球。原因多半是**眼睛受傷或生病**：外傷、角膜疤痕、**圓錐角膜**、**翼狀胬肉**，或是手術後的併發症。",
+    "after": "**不規則散光**：形狀歪七扭八（各位置曲率或方向不一致，難用單一規則球柱鏡完整描述），像被壓壞的球。原因多半是**眼睛受傷或生病**：外傷、角膜疤痕、**圓錐角膜**、**翼狀胬肉**，或是手術後的併發症。"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l2",
+    "path": [
+      "lessons",
+      1,
+      "steps",
+      4,
+      "body",
+      2
+    ],
+    "before": "| 主子午線 | 差 **90°** | **不**垂直 |",
+    "after": "| 主子午線 | 差 **90°** | 各區不一致，不以不垂直一項定義 |"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l3",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      9,
+      "body",
+      4
+    ],
+    "before": "兩條焦線**正中間**的最小錯亂圓（COLC）離視網膜最近。",
+    "after": "最小錯亂圓（COLC）在兩方向屈光度中點；混合型不保證它恰在網膜上，還要看等效屈光狀態。"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l3",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      11,
+      "body",
+      1
+    ],
+    "before": "- **混合性、近視型**：調節只會把其中一條更往前，**沒有幫助**",
+    "after": "- 調節使整組焦線往前移，不能消除兩方向差；混合型是否改善取決於原COLC位置，近視型通常不能靠增加調節改善"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      18,
+      "body",
+      5
+    ],
+    "before": "- 近視：眼球屈光度 (+)、**矯正鏡 (−)**",
+    "after": "- 近視：講義「收光過強」另標(+)，非整眼總力量或R的定義、**矯正鏡 (−)**"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      18,
+      "body",
+      6
+    ],
+    "before": "- 遠視：眼球屈光度 (−)、**矯正鏡 (+)**",
+    "after": "- 遠視：講義「收光不足」另標(−)，非整眼總力量或R的定義、**矯正鏡 (+)**"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l5",
+    "path": [
+      "lessons",
+      4,
+      "steps",
+      10,
+      "body",
+      4
+    ],
+    "before": "它就是**最小錯亂圓（COLC）的度數**（兩條焦線正中間）。軸度不用算。",
+    "after": "它對應兩主方向屈光度的平均、即COLC的球面近似；不是兩焦線距離的算術中點。軸度不用算。"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      2,
+      "body",
+      4
+    ],
+    "before": "**什麼時候一定要用？**",
+    "after": "**哪些情況尤其有幫助？**"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      2,
+      "body",
+      7
+    ],
+    "before": "- 懷疑**裝病**",
+    "after": "- 主觀回答與表現不一致時，提供客觀屈光參考；不能單靠檢影判裝病"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      11,
+      "body",
+      0
+    ],
+    "before": "**構造**：套筒（sleeve）、光源與反射鏡（condensing lens）、旋鈕與電阻器、觀察孔（observer aperture）。",
+    "after": "**構造**：套筒（sleeve）、光源與集光透鏡（condensing lens）、旋鈕與電阻器、觀察孔（observer aperture）。"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      11,
+      "body",
+      4
+    ],
+    "before": "- **套筒向下（平面鏡）**；套筒向上（凹面鏡）→ 反射光動向會**相反**",
+    "after": "- **課堂機型套筒向下（平面鏡效應）**；套筒向上（凹面鏡）→ 反射光動向會**相反**"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      18,
+      "body",
+      1
+    ],
+    "before": "- 可以讓病人戴著**輔助鏡（工作鏡）**做檢影，就不用再減工作鏡片",
+    "after": "- 可以讓病人戴著**輔助鏡（工作鏡）**做檢影，若記錄已排除這片工作鏡才不再扣；若記毛值包含它，仍需扣一次"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      18,
+      "body",
+      2
+    ],
+    "before": "- **檢查者**盡量用**最長的工作距離**（越遠越準）",
+    "after": "- 選擇能固定、清楚觀察且不妨礙病人注視的工作距離；不是無條件越遠越準"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l2",
+    "path": [
+      "lessons",
+      1,
+      "steps",
+      4,
+      "body",
+      7
+    ],
+    "before": "- 每個人手臂長度不同，WD 也不同；**越長越準**",
+    "after": "- 每個人手臂長度不同，WD 也不同；距離需穩定並配合正確補償，不是無條件越長越準"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l2",
+    "path": [
+      "lessons",
+      1,
+      "steps",
+      11,
+      "body",
+      4
+    ],
+    "before": "**如果病人戴輔助鏡（WL）做檢影**，結果已經包含 WL，**不必再減**。",
+    "after": "**如果病人戴輔助鏡（WL）做檢影**，若讀值已排除另外放的WL，**不再扣**；若記全部鏡片毛值包含WL，仍扣一次。"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l2",
+    "path": [
+      "lessons",
+      1,
+      "steps",
+      18,
+      "body",
+      4
+    ],
+    "before": "若檢影時病人戴的是**輔助鏡 WL**，就不用扣 WL。",
+    "after": "若讀值已排除另放的輔助鏡WL，才不再扣；含WL毛值仍需扣一次。"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l3",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      4,
+      "body",
+      6
+    ],
+    "before": "| 順動 | FP > WD | 遠視、正視、近視 < WL | **正** |",
+    "after": "| 順動 | 近視實FP在檢查者外側；正視無限遠、遠視為虛遠點另論 | 遠視、正視、近視 < WL | **正** |"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l3",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      16,
+      "body",
+      5
+    ],
+    "before": "這和檢影的「順動加正、逆動加負」是同一套邏輯。",
+    "after": "這是在平移鏡片看物像，和掃檢影光看眼底回光是不同任務；不要把兩套順逆動口訣直接互換。"
+  },
+  {
+    "unit": "s114-optometry-retinoscopy-intro",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      4,
+      "body",
+      0
+    ],
+    "before": "- **中央順動、周邊逆動** → **球面像差**（剪刀樣反射）",
+    "after": "- 中央與周邊動向不同可與球面像差相關；**剪刀樣反射**也常與不規則角膜／晶體散光有關，不能一概等同球面像差"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "lensometer-structure-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      2,
+      "body",
+      6
+    ],
+    "before": "- 多焦鏡片「看近」那一塊加了幾度（**近用加入度 ADD**）",
+    "after": "- 多焦鏡片近區比遠區多加幾D（**近用加入度 ADD**）"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "lensometer-structure-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      6,
+      "explain"
+    ],
+    "before": "逐字稿強調單焦鏡片通常背面靠 鏡片靠座（lens stop），因此讀的是後頂點度數。\n\n正確選項：後頂點度數 後頂點屈光力（back vertex power）。\n單焦鏡片測後頂點度數；多焦鏡片近用區測前頂點度數。焦度計也能找光學中心、測柱鏡/軸度、測稜鏡量與標記 最大正鏡至最佳視力（MRP）。",
+    "after": "逐字稿強調單焦鏡片通常背面靠 鏡片靠座（lens stop），因此讀的是後頂點度數。\n\n正確選項：後頂點度數 後頂點屈光力（back vertex power）。\n單焦鏡片測後頂點度數；多焦鏡片近用區測前頂點度數。焦度計也能找光學中心、測柱鏡/軸度、測稜鏡量與標記 主要參考點（MRP，major reference point）。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "multifocal-prism-1",
+    "path": [
+      "lessons",
+      2,
+      "title"
+    ],
+    "before": "多焦鏡片、稜鏡與 最大正鏡至最佳視力（MRP）",
+    "after": "多焦鏡片、稜鏡與主要參考點（MRP）"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "multifocal-prism-1",
+    "path": [
+      "lessons",
+      2,
+      "goals",
+      2
+    ],
+    "before": "解釋最大正鏡至最佳視力（MRP） 不等於 光學中心（OC） 時會產生稜鏡效果",
+    "after": "解釋主要參考點（MRP，major reference point） 不等於 光學中心（OC） 時會產生稜鏡效果"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "multifocal-prism-1",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      0,
+      "title"
+    ],
+    "before": "多焦鏡片、稜鏡與 最大正鏡至最佳視力（MRP）",
+    "after": "多焦鏡片、稜鏡與主要參考點（MRP）"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "multifocal-prism-1",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      0,
+      "body",
+      0
+    ],
+    "before": "多焦鏡片要確認遠/近用區與 近用加入度（ADD）；稜鏡測量重點在 基底部（base） direction、最大正鏡至最佳視力（MRP） 位置與 焦度計/驗度儀（lensometer） 目標（target） 在 分劃板（reticle） 上的偏移。\n\n- 先分遠用與近用測量方向。\n- 再理解 稜鏡（prism） 基底部/頂端（apex） 與影像位移。\n- 最後對齊 最大正鏡至最佳視力、光學中心（OC）、瞳距（PD），避免誘發稜鏡。",
+    "after": "多焦鏡片要確認遠/近用區與 近用加入度（ADD）；稜鏡測量重點在 基底部（base） direction、主要參考點（MRP，major reference point） 位置與 焦度計/驗度儀（lensometer） 目標（target） 在 分劃板（reticle） 上的偏移。\n\n- 先分遠用與近用測量方向。\n- 再理解 稜鏡（prism） 基底部/頂端（apex） 與影像位移。\n- 最後對齊 最大正鏡至最佳視力、光學中心（OC）、瞳距（PD），避免誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "multifocal-prism-1",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      2,
+      "body",
+      3
+    ],
+    "before": "- **看近的部分**：要把鏡片**翻過來**，讓**正面**貼著鏡片靠座，才能量到正確的**近用加入度（ADD）**",
+    "after": "- **量ADD的前頂點法**：把前面貼靠座，遠區與近區都用此前頂點法讀，再相減；不能前後頂點讀值混減"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "multifocal-prism-1",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      14,
+      "body",
+      3
+    ],
+    "before": "- **稜鏡參考點（MRP）**：處方有稜鏡時，稜鏡度數要在這個點量",
+    "after": "- **主要參考點（MRP，major reference point）**：處方有稜鏡時，稜鏡度數要在這個點量"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "multifocal-prism-1",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      19,
+      "title"
+    ],
+    "before": "範例拆解：最大正鏡至最佳視力（MRP） 不等於 光學中心（OC） 時會產生稜鏡效果",
+    "after": "範例拆解：主要參考點（MRP，major reference point） 不等於 光學中心（OC） 時會產生稜鏡效果"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "multifocal-prism-1",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      19,
+      "steps",
+      0
+    ],
+    "before": "先確認題目問的主題：最大正鏡至最佳視力（MRP） 不等於 光學中心（OC） 時會產生稜鏡效果",
+    "after": "先確認題目問的主題：主要參考點（MRP，major reference point） 不等於 光學中心（OC） 時會產生稜鏡效果"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "multifocal-prism-1",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      20,
+      "title"
+    ],
+    "before": "實戰：多焦鏡片、稜鏡與 最大正鏡至最佳視力（MRP）",
+    "after": "實戰：多焦鏡片、稜鏡與主要參考點（MRP）"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "multifocal-prism-1",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      21,
+      "points",
+      4
+    ],
+    "before": "最大正鏡至最佳視力（MRP） 是 prescribed 稜鏡（prism） 的參考點",
+    "after": "主要參考點（MRP，major reference point） 是 prescribed 稜鏡（prism） 的參考點"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "multifocal-prism-1",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      21,
+      "flash",
+      2,
+      "back"
+    ],
+    "before": "眼睛沒有通過鏡片光心時，就等於透過一個稜鏡在看，所以 瞳距（PD）、雙眼光心距離（DBOC）、光學中心（OC）/最大正鏡至最佳視力（MRP） 必須對齊。",
+    "after": "眼睛沒有通過鏡片光心時，就等於透過一個稜鏡在看，所以 瞳距（PD）、雙眼光心距離（DBOC）、光學中心（OC）/主要參考點（MRP，major reference point） 必須對齊。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "prentice-1",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      6,
+      "explain"
+    ],
+    "before": "雙眼光心距離（DBOC） 比 瞳距（PD） 大 10 mm，單眼差 5 mm = 0.5 cm；0.5×4=2Δ。負鏡外移相當 BI。\n\n正確選項：2Δ BI each。\nP 是稜鏡度 稜鏡（prism） 屈光度（diopter）；d 是光學中心到視線/最大正鏡至最佳視力（MRP） 的距離，單位必須是 cm；F 是鏡片度數的絕對量。",
+    "after": "雙眼光心距離（DBOC） 比 瞳距（PD） 大 10 mm，單眼差 5 mm = 0.5 cm；0.5×4=2Δ。負鏡外移相當 BI。\n\n正確選項：2Δ BI each。\nP 是稜鏡度 稜鏡（prism） 屈光度（diopter）；d 是光學中心到視線/主要參考點（MRP，major reference point） 的距離，單位必須是 cm；F 是鏡片度數的絕對量。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p1",
+    "lesson": "prentice-1",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      21,
+      "flash",
+      3,
+      "back"
+    ],
+    "before": "雙眼光心距離（DBOC） 比 瞳距（PD） 大 10 mm，單眼差 5 mm = 0.5 cm；0.5×4=2Δ。負鏡外移相當 BI。\n\n正確選項：2Δ BI each。\nP 是稜鏡度 稜鏡（prism） 屈光度（diopter）；d 是光學中心到視線/最大正鏡至最佳視力（MRP） 的距離，單位必須是 cm；F 是鏡片度數的絕對量。",
+    "after": "雙眼光心距離（DBOC） 比 瞳距（PD） 大 10 mm，單眼差 5 mm = 0.5 cm；0.5×4=2Δ。負鏡外移相當 BI。\n\n正確選項：2Δ BI each。\nP 是稜鏡度 稜鏡（prism） 屈光度（diopter）；d 是光學中心到視線/主要參考點（MRP，major reference point） 的距離，單位必須是 cm；F 是鏡片度數的絕對量。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      2,
+      "body",
+      4
+    ],
+    "before": "3. 接著處理多焦與稜鏡：看**前頂點／後頂點**、**光學中心（OC）**、**稜鏡參考點（MRP）**、稜鏡的底朝哪。",
+    "after": "3. 接著處理多焦與稜鏡：看**前頂點／後頂點**、**光學中心（OC）**、**主要參考點（MRP，major reference point）**、稜鏡的底朝哪。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      3,
+      "answer"
+    ],
+    "before": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      3,
+      "explain"
+    ],
+    "before": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      4,
+      "body",
+      4
+    ],
+    "before": "說得出來，就代表你懂了。",
+    "after": "說完再用數字或例題驗算，確認不是只背句子。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      5,
+      "answer"
+    ],
+    "before": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      5,
+      "explain"
+    ],
+    "before": "- 先確認題目問的主題：單元路線\n- - 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。\n- 把判斷依據連回題目：- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先確認題目問的主題：單元路線\n- - 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。\n- 把判斷依據連回題目：- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      6,
+      "steps",
+      1
+    ],
+    "before": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      6,
+      "steps",
+      2
+    ],
+    "before": "把判斷依據連回題目：- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "把判斷依據連回題目：- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      6,
+      "answer"
+    ],
+    "before": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      7,
+      "checks",
+      0,
+      "answer"
+    ],
+    "before": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      7,
+      "checks",
+      0,
+      "explain"
+    ],
+    "before": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      8,
+      "points",
+      2
+    ],
+    "before": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      8,
+      "points",
+      3
+    ],
+    "before": "- 先確認題目問的主題：單元路線\n- - 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。\n- 把判斷依據連回題目：- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先確認題目問的主題：單元路線\n- - 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。\n- 把判斷依據連回題目：- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      8,
+      "points",
+      4
+    ],
+    "before": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      8,
+      "flash",
+      1,
+      "back"
+    ],
+    "before": "- 先確認題目問的主題：單元路線\n- - 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。\n- 把判斷依據連回題目：- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先確認題目問的主題：單元路線\n- - 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。\n- 把判斷依據連回題目：- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      8,
+      "flash",
+      2,
+      "back"
+    ],
+    "before": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      8,
+      "flash",
+      3,
+      "back"
+    ],
+    "before": "- 先確認題目問的主題：單元路線\n- - 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。\n- 把判斷依據連回題目：- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、最大正鏡至最佳視力（MRP）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。",
+    "after": "- 先確認題目問的主題：單元路線\n- - 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。\n- 把判斷依據連回題目：- 先看焦度計怎麼把模糊 目標（target） 變清楚，理解「清楚位置 = 度數」。\n- 再分球面與散光：球面兩線一起清楚，散光要分兩條主經線。\n- 接著處理多焦與稜鏡：看前/後頂點、光學中心（OC）、主要參考點（MRP，major reference point）、基底部（base） direction。\n- 最後用 普倫提斯法則（Prentice's rule） 把 瞳距（PD）、雙眼光心距離（DBOC）、度數轉成誘發稜鏡。"
+  },
+  {
+    "unit": "s114-optometry-pd-lensometry-p2",
+    "lesson": "quiz-1",
+    "path": [
+      "lessons",
+      1,
+      "steps",
+      2,
+      "body",
+      0
+    ],
+    "before": "多焦鏡片**看近的部分**要**翻面**，量**前頂點度數**。",
+    "after": "課堂前頂點法量ADD時翻面，遠區和近區都量前頂點度數再相減。"
+  },
+  {
+    "unit": "s114-optometry-objective-refraction-p1",
+    "lesson": "setup-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      14,
+      "body",
+      2
+    ],
+    "before": "- 套筒**向下**（sleeve down）：光比較**發散**，這叫**平面鏡效應** ← 初學先學這個",
+    "after": "- 課堂機型套筒**向下**（sleeve down）：光比較**發散**，這叫**平面鏡效應** ← 初學先學這個"
+  },
+  {
+    "unit": "s114-optometry-objective-refraction-p1",
+    "lesson": "phoropter-cylinder-1",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      8,
+      "body",
+      8
+    ],
+    "before": "三條平行，才可以開始中和。第一個方向做完，三者一起轉 **90 度**，再做第二個方向。",
+    "after": "先對齊光帶與回光；負柱鏡補第二方向時軸可與該次光帶平行。轉光帶觀察90°外的方向，不代表已定好的柱鏡軸任何時候都要跟轉。"
+  },
+  {
+    "unit": "s114-optometry-objective-refraction-p1",
+    "lesson": "review-cases-1",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      2,
+      "body",
+      2
+    ],
+    "before": "- **已經戴了**（例如「戴上相當於 57 cm 的輔助鏡」）→ 工作距離已補償，**不要再扣**",
+    "after": "- **另放WL且讀值已排除它**→不要再扣；若題目記的是包含WL的毛值，仍需扣一次"
+  },
+  {
+    "unit": "s114-optometry-objective-refraction-p1",
+    "lesson": "review-cases-1",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      2,
+      "body",
+      3
+    ],
+    "before": "- **沒有戴** → 才用「檢影結果 − 工作距離鏡片」",
+    "after": "- **毛值包含全部中和力量**→用毛值−工作距離鏡片；先辨讀值的定義"
+  },
+  {
+    "unit": "s114-optometry-objective-refraction-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      4,
+      "body",
+      4
+    ],
+    "before": "說得出來，就代表你懂了。",
+    "after": "說完再用數字或例題驗算，確認不是只背句子。"
+  },
+  {
+    "unit": "s114-optometry-objective-refraction-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      6,
+      "body",
+      4
+    ],
+    "before": "說得出來，就代表你懂了。",
+    "after": "說完再用數字或例題驗算，確認不是只背句子。"
+  },
+  {
+    "unit": "s114-optometry-objective-refraction-p2",
+    "lesson": "quiz-1",
+    "path": [
+      "lessons",
+      1,
+      "steps",
+      4,
+      "body",
+      0
+    ],
+    "before": "第二個方向的焦線在視網膜**前面**時，會看到**逆動**。",
+    "after": "課堂先用球鏡中和較正方向後，第二方向若需更負，在固定工作距離的平面鏡效應下可見逆動；判動向要看合成系統遠點相對檢影鏡，而非只看焦線是否在網膜前。"
+  },
+  {
+    "unit": "s114-optometry-objective-refraction-p2",
+    "lesson": "quiz-2",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      2,
+      "body",
+      0
+    ],
+    "before": "光帶、反射光、驗光儀的軸，**三條平行**才是正確的主要方向。",
+    "after": "光帶、反射光、驗光儀的軸，在課堂負柱鏡補第二方向的步驟，三者平行是對準線索；回查時光帶可轉、已定柱鏡軸不任意跟轉。"
+  },
+  {
+    "unit": "s114-optometry-keratometry-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      4,
+      "body",
+      4
+    ],
+    "before": "說得出來，就代表你懂了。",
+    "after": "說完再用數字或例題驗算，確認不是只背句子。"
+  },
+  {
+    "unit": "s114-optometry-pupil-response-p1",
+    "lesson": "normal-pupil-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      8,
+      "body",
+      3
+    ],
+    "before": "- 兩種光線下，**差距差不多** → 多半是**生理性**，不用擔心",
+    "after": "- 兩種光線下，**差距差不多** → 可能是生理性，但仍需結合新舊病史、症狀與其他瞳孔反應"
+  },
+  {
+    "unit": "s114-optometry-pupil-response-p1",
+    "lesson": "parasympathetic-disorders-1",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      2,
+      "body",
+      6
+    ],
+    "before": "所以它壞掉，會同時出現：",
+    "after": "受累範圍不同，可能出現以下組合；瞳孔也可能保留："
+  },
+  {
+    "unit": "s114-optometry-pupil-response-p1",
+    "lesson": "sympathetic-horner-1",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      2,
+      "body",
+      4
+    ],
+    "before": "3. **第三階**：沿著**頸動脈**、三叉神經分支進到眼睛 → 瞳孔開大肌（也管穆勒氏肌與額頭汗腺）",
+    "after": "3. **第三階**：沿著**頸動脈**、三叉神經分支進到眼睛 → 瞳孔開大肌（也供應穆勒氏肌；汗腺的分支伴行與無汗範圍另依病灶位置）"
+  },
+  {
+    "unit": "s114-optometry-pupil-response-p1",
+    "lesson": "sympathetic-horner-1",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      8,
+      "body",
+      0
+    ],
+    "before": "**交感神經**路徑受傷，就是**霍納氏症候群**。三個典型表現（英文都以 -osis 結尾）：",
+    "after": "**交感神經**路徑受傷，就是**霍納氏症候群**。三個典型表現（並不是三字都以-osis結尾）："
+  },
+  {
+    "unit": "s114-optometry-pupil-response-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      2,
+      "body",
+      3
+    ],
+    "before": "2. 再分清**直接與間接光反射**，也就是傳入路徑和傳出路徑。",
+    "after": "2. 再分清**直接與間接光反射**，但直接／間接是按照光眼命名；每一種都需要傳入與傳出路徑。"
+  },
+  {
+    "unit": "s114-optometry-pupil-response-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      4,
+      "body",
+      4
+    ],
+    "before": "說得出來，就代表你懂了。",
+    "after": "說完再用數字或例題驗算，確認不是只背句子。"
+  },
+  {
+    "unit": "s114-optometry-pupil-response-p2",
+    "lesson": "quiz-2",
+    "path": [
+      "lessons",
+      2,
+      "steps",
+      2,
+      "body",
+      0
+    ],
+    "before": "典型的光近分離：**小瞳孔、對光差、看近反應還在**。",
+    "after": "AR的典型組合是小瞳孔、對光差、近反應保留；光近分離本身不限定小瞳孔。"
+  },
+  {
+    "unit": "s114-optometry-stereopsis-p1",
+    "lesson": "binocular-stereopsis-1",
+    "path": [
+      "lessons",
+      1,
+      "steps",
+      8,
+      "body",
+      2
+    ],
+    "before": "- **雙眼單視界（horopter）**：和這個點**同一個深度**的那條線。線上的東西，在兩眼的位置剛好**對得上**（零視差），看起來和注視點一樣遠。",
+    "after": "- **雙眼單視界（horopter）**：使物像落在兩眼對應網膜位置、零視差的空間軌跡；不簡單等於所有與注視點同距離的點或一張平面。"
+  },
+  {
+    "unit": "s114-optometry-stereopsis-p1",
+    "lesson": "stereo-tests-1",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      2,
+      "body",
+      3
+    ],
+    "before": "- **整體測驗**：在**亂點**裡找圖案（隨機點）。沒有單眼線索，**一定要靠兩眼一起合作**才找得到",
+    "after": "- **整體測驗**：在**亂點**裡找圖案（隨機點）。設計上減少單眼線索，要靠雙眼視差抽出形狀；仍需防版本或操作提供額外線索"
+  },
+  {
+    "unit": "s114-optometry-stereopsis-p1",
+    "lesson": "stereo-tests-1",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      8,
+      "body",
+      4
+    ],
+    "before": "- **不用戴眼鏡**：**Frisby**、**Lang**（適合不肯戴測試鏡的小朋友）",
+    "after": "- **不用特殊分圖眼鏡**：**Frisby**、**Lang**（仍按需要戴矯正鏡）（適合不肯戴測試鏡的小朋友）"
+  },
+  {
+    "unit": "s114-optometry-stereopsis-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      4,
+      "body",
+      4
+    ],
+    "before": "說得出來，就代表你懂了。",
+    "after": "說完再用數字或例題驗算，確認不是只背句子。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p1",
+    "lesson": "accommodation-basics-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      14,
+      "body",
+      5
+    ],
+    "before": "兩點之間就是「清楚範圍」。**調節幅度（AA）＝近點的度數 − 遠點的度數**。",
+    "after": "兩點之間就是「清楚範圍」。統一R為剩餘屈光誤差（近視負、遠視正）：**AA＝1/NPA(m)＋R**；若用兩點聚散度相減，必須另定義符號，不能混算。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p1",
+    "lesson": "amplitude-interpretation-1",
+    "path": [
+      "lessons",
+      1,
+      "steps",
+      2,
+      "body",
+      6
+    ],
+    "before": "你量到的調節幅度，如果**比最低值還低**，才要懷疑調節不足。",
+    "after": "你量到的調節幅度，如果低於參考下限是調節不足線索，還要結合測法、症狀與其他檢查。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p2",
+    "lesson": "review-extra-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      4,
+      "body",
+      4
+    ],
+    "before": "說得出來，就代表你懂了。",
+    "after": "說完再用數字或例題驗算，確認不是只背句子。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p2",
+    "lesson": "quiz-1",
+    "path": [
+      "lessons",
+      1,
+      "steps",
+      6,
+      "body",
+      0
+    ],
+    "before": "集合近點的破裂點**大於 9 cm** 算異常（所以 12 cm 是異常）。",
+    "after": "集合近點的依本課題型以破裂點**>9cm判偏遠**；標準依測法與族群，不能單項確診CI（所以 12 cm 是異常）。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l5",
+    "path": [
+      "lessons",
+      4,
+      "steps",
+      2,
+      "body",
+      5
+    ],
+    "before": "- **看遠糊、看近清楚**",
+    "after": "- 看遠較模糊；看近是否清楚仍要在該眼可對焦範圍內，不是任何近距離都清楚"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      3,
+      "body",
+      0
+    ],
+    "before": "普通的鏡片像**一顆圓圓的球**：每個方向彎度一樣，光會聚成**一個點**。",
+    "after": "普通的鏡片像**一顆圓圓的球**：每個方向彎度一樣，理想近軸模型下，光會聚成**一個點**。"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      18,
+      "body",
+      5
+    ],
+    "before": "中間那個**最小的圓**叫**最小錯亂圓**（COLC），是這團光裡**最清楚**的地方。",
+    "after": "屈光度中點的圓形光斑叫**最小錯亂圓（COLC）**，是較好的折衷；它仍是模糊光斑，不是兩焦線已合成清晰點。"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      20,
+      "body",
+      0
+    ],
+    "before": "- COLC 位在兩條焦線的**正中間**",
+    "after": "- COLC位於兩主方向**屈光度的中點**，不是焦線距離的算術中點"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      20,
+      "body",
+      3
+    ],
+    "before": "- 矯正散光的目標之一，就是把 COLC 放到視網膜上",
+    "after": "- 球面部分可把COLC移近網膜；完整散光矯正還需柱鏡使兩主方向一起對焦"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      22,
+      "body",
+      0
+    ],
+    "before": "**例子**：前焦線在網膜前 +0.50 D 處、後焦線在網膜後 +0.50 D 處 → COLC 在**正中間 = 視網膜上**，等於混合性散光 ±0.50。",
+    "after": "**例子**：前焦線在網膜前 +0.50 D 處、後焦線在網膜後 +0.50 D 處 → 若兩方向剩餘屈光度為等量反號，COLC可在**屈光度中點＝網膜上**；不是焦線距離的算術中點，等於混合性散光 ±0.50。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      18,
+      "flash",
+      "back"
+    ],
+    "before": "屈光矯正後至少可到 0.6。",
+    "after": "本次針孔條件下讀到0.6，可作光學改善潛力線索；不保證正式矯正一定達到此值。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      19,
+      "body",
+      0
+    ],
+    "before": "> [!big] PH 0.6 = 屈光矯正後至少能到 0.6",
+    "after": "> [!big] PH 0.6＝本次針孔視力0.6；是改善潛力線索，不是最終處方視力保證"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      21,
+      "body",
+      0
+    ],
+    "before": "針孔視力 PH：0.6 → 屈光矯正後**至少**可矯正視力到 0.6（113 生普 17）。",
+    "after": "原題PH0.6用作可矯正潛力線索；實測針孔0.6仍受孔徑、對準與照明影響，不保證正式矯正一定到0.6（113 生普 17）。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      23,
+      "explain"
+    ],
+    "before": "屈光矯正後**至少**可達 0.6（C）。",
+    "after": "本題以理想針孔估可矯正潛力，選項C最符合原題意圖；實務PH0.6只記本次針孔結果，不能保證正式矯正必達0.6，也不能單憑它排除眼病。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "lesson": "l4",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      26,
+      "points",
+      1
+    ],
+    "before": "進步 → 屈光問題；一樣或更差 → 屈光以外；PH 0.6 ＝ 矯正後至少 0.6。",
+    "after": "PH改善支持可矯正屈光因素；未改善還要查對準、照明、孔徑及其他原因。PH0.6記本次結果，不是正式矯正必達值。"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      18,
+      "flash",
+      "back"
+    ],
+    "before": "兩焦線正中間（散光間距內最小的圓）。",
+    "after": "兩主方向屈光度中點的圓形光斑，位於散光間距內；不是焦線距離的算術中點。"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      19,
+      "keys",
+      0
+    ],
+    "before": "最小錯亂圓 COLC 在兩焦線正中間",
+    "after": "最小錯亂圓COLC位於兩方向屈光度中點，非距離算術中點"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      23,
+      "explain"
+    ],
+    "before": "兩條焦線正中間最小的圓＝**最小錯亂圓（COLC）**（C）。",
+    "after": "兩方向屈光度中點的圓形模糊光斑＝**最小錯亂圓（COLC）**（C）；不是眼內器官，也不是把兩焦線距離直接平均。"
+  },
+  {
+    "unit": "s114-optometry-astigmatism-rx",
+    "lesson": "l1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      26,
+      "flash",
+      1,
+      "back"
+    ],
+    "before": "兩條焦線正中間。",
+    "after": "兩主方向屈光度中點；不等於兩焦線距離的算術中點。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p1",
+    "lesson": "accommodation-basics-1",
+    "path": [
+      "lessons",
+      0,
+      "steps",
+      15,
+      "body",
+      1
+    ],
+    "before": "調節幅度（AA）＝ 近點（D）− 遠點（D）",
+    "after": "本課R採近視負、遠視正：AA＝1/NPA(m)＋R；若另用近遠點聚散度相減，需先定義兩者符號"
+  }
+]

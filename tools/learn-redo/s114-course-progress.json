@@ -1,0 +1,839 @@
+{
+  "baseline": "a183a4605d7d17398dbbb4cc7ac51d4c165b562e",
+  "scope": "01～09正課含串連／整合驗收；不含九堂總複習及99名詞",
+  "lessons": [
+    {
+      "number": "01",
+      "unit": "s114-optometry-va-sph",
+      "lesson": "l1",
+      "title": "視力到底在量什麼？MAR 與 5 分角視標",
+      "status": "已驗證",
+      "steps": 28,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "01",
+      "unit": "s114-optometry-va-sph",
+      "lesson": "l2",
+      "title": "視力的各種寫法與換算（Snellen、小數、logMAR）",
+      "status": "已驗證",
+      "steps": 27,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "01",
+      "unit": "s114-optometry-va-sph",
+      "lesson": "l3",
+      "title": "logMAR 計分與視力記錄",
+      "status": "已驗證",
+      "steps": 20,
+      "bridges": 2,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "01",
+      "unit": "s114-optometry-va-sph",
+      "lesson": "l4",
+      "title": "針孔視力：分辨屈光問題還是眼睛有病",
+      "status": "已驗證",
+      "steps": 27,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "01",
+      "unit": "s114-optometry-va-sph",
+      "lesson": "l5",
+      "title": "正視、近視、遠視：光聚在哪裡？怎麼矯正？",
+      "status": "已驗證",
+      "steps": 28,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "01",
+      "unit": "s114-optometry-va-sph",
+      "lesson": "l6",
+      "title": "軸性與屈光性、簡化眼與眼睛的發育",
+      "status": "已驗證",
+      "steps": 27,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "01",
+      "unit": "s114-optometry-va-sph",
+      "lesson": "l7",
+      "title": "遠視的臨床分類：全、顯性、隱性、絕對、機能",
+      "status": "已驗證",
+      "steps": 18,
+      "bridges": 2,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "02",
+      "unit": "s114-optometry-astigmatism-rx",
+      "lesson": "l1",
+      "title": "散光是什麼？一個點變成兩條線",
+      "status": "已驗證",
+      "steps": 27,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "02",
+      "unit": "s114-optometry-astigmatism-rx",
+      "lesson": "l2",
+      "title": "規則散光與不規則散光：順規、逆規、斜散光",
+      "status": "已驗證",
+      "steps": 27,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "02",
+      "unit": "s114-optometry-astigmatism-rx",
+      "lesson": "l3",
+      "title": "散光的五種類型：單純、複合、混合",
+      "status": "已驗證",
+      "steps": 26,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "02",
+      "unit": "s114-optometry-astigmatism-rx",
+      "lesson": "l4",
+      "title": "處方怎麼寫？球面、柱面、球柱與光十字",
+      "status": "已驗證",
+      "steps": 25,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "02",
+      "unit": "s114-optometry-astigmatism-rx",
+      "lesson": "l5",
+      "title": "正負散轉換與等效球鏡度",
+      "status": "已驗證",
+      "steps": 27,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "02",
+      "unit": "s114-optometry-astigmatism-rx",
+      "lesson": "l6",
+      "title": "散光從哪裡來？角膜散光、圓錐角膜與翼狀胬肉",
+      "status": "已驗證",
+      "steps": 19,
+      "bridges": 2,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "03",
+      "unit": "s114-optometry-retinoscopy-intro",
+      "lesson": "l1",
+      "title": "視網膜檢影是什麼？用途、器材與檢查環境",
+      "status": "已驗證",
+      "steps": 25,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "03",
+      "unit": "s114-optometry-retinoscopy-intro",
+      "lesson": "l2",
+      "title": "工作距離與工作鏡片：為什麼要減 WL",
+      "status": "已驗證",
+      "steps": 25,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "03",
+      "unit": "s114-optometry-retinoscopy-intro",
+      "lesson": "l3",
+      "title": "三種反射光：中和、逆動、順動",
+      "status": "已驗證",
+      "steps": 25,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "03",
+      "unit": "s114-optometry-retinoscopy-intro",
+      "lesson": "l4",
+      "title": "反射光的特性與散光的中和流程",
+      "status": "已驗證",
+      "steps": 26,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "04",
+      "unit": "s114-optometry-pd-lensometry-p1",
+      "lesson": "lensometer-structure-1",
+      "title": "焦度計 焦度計/驗度儀（Lensometer）：儀器、歸零與鏡片測量",
+      "status": "已驗證",
+      "steps": 24,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "04",
+      "unit": "s114-optometry-pd-lensometry-p1",
+      "lesson": "single-cylinder-1",
+      "title": "單焦與散光鏡片測量",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "04",
+      "unit": "s114-optometry-pd-lensometry-p1",
+      "lesson": "multifocal-prism-1",
+      "title": "多焦鏡片、稜鏡與 最大正鏡至最佳視力（MRP）",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "04",
+      "unit": "s114-optometry-pd-lensometry-p1",
+      "lesson": "prentice-1",
+      "title": "普倫提斯法則（Prentice's rule） 與計算題",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "04",
+      "unit": "s114-optometry-pd-lensometry-p2",
+      "lesson": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "status": "已驗證",
+      "steps": 9,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "04",
+      "unit": "s114-optometry-pd-lensometry-p2",
+      "lesson": "quiz-1",
+      "title": "整合驗收 1",
+      "status": "已驗證",
+      "steps": 11,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "04",
+      "unit": "s114-optometry-pd-lensometry-p2",
+      "lesson": "quiz-2",
+      "title": "整合驗收 2",
+      "status": "已驗證",
+      "steps": 9,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "05",
+      "unit": "s114-optometry-objective-refraction-p1",
+      "lesson": "setup-1",
+      "title": "檢影 setup 與工作距離",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "05",
+      "unit": "s114-optometry-objective-refraction-p1",
+      "lesson": "motion-neutral-1",
+      "title": "with/逆動（against motion） 與中和",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "05",
+      "unit": "s114-optometry-objective-refraction-p1",
+      "lesson": "phoropter-cylinder-1",
+      "title": "綜合驗光儀與柱鏡/軸位",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "05",
+      "unit": "s114-optometry-objective-refraction-p1",
+      "lesson": "review-cases-1",
+      "title": "檢影題型總整理",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "05",
+      "unit": "s114-optometry-objective-refraction-p2",
+      "lesson": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "status": "已驗證",
+      "steps": 12,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "05",
+      "unit": "s114-optometry-objective-refraction-p2",
+      "lesson": "quiz-1",
+      "title": "整合驗收 1",
+      "status": "已驗證",
+      "steps": 11,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "05",
+      "unit": "s114-optometry-objective-refraction-p2",
+      "lesson": "quiz-2",
+      "title": "整合驗收 2",
+      "status": "已驗證",
+      "steps": 9,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "06",
+      "unit": "s114-optometry-keratometry-p1",
+      "lesson": "corneal-optics-1",
+      "title": "角膜光學與 K 值意義",
+      "status": "已驗證",
+      "steps": 24,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "06",
+      "unit": "s114-optometry-keratometry-p1",
+      "lesson": "keratometer-method-1",
+      "title": "角膜曲率儀（Keratometer） 原理與記錄",
+      "status": "已驗證",
+      "steps": 20,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "06",
+      "unit": "s114-optometry-keratometry-p1",
+      "lesson": "astigmatism-javal-1",
+      "title": "角膜散光、順規散光（WTR）/逆規散光（ATR） 與 賈瓦爾氏法則（Javal's rule）",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "06",
+      "unit": "s114-optometry-keratometry-p1",
+      "lesson": "topography-1",
+      "title": "角膜地圖 地形圖（Topography）",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "06",
+      "unit": "s114-optometry-keratometry-p2",
+      "lesson": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "status": "已驗證",
+      "steps": 9,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "06",
+      "unit": "s114-optometry-keratometry-p2",
+      "lesson": "quiz-1",
+      "title": "整合驗收 1",
+      "status": "已驗證",
+      "steps": 11,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "06",
+      "unit": "s114-optometry-keratometry-p2",
+      "lesson": "quiz-2",
+      "title": "整合驗收 2",
+      "status": "已驗證",
+      "steps": 9,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "07",
+      "unit": "s114-optometry-pupil-response-p1",
+      "lesson": "normal-pupil-1",
+      "title": "正常瞳孔與大小判讀",
+      "status": "已驗證",
+      "steps": 24,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "07",
+      "unit": "s114-optometry-pupil-response-p1",
+      "lesson": "reflex-pathway-1",
+      "title": "光反射路徑與 相對傳入性瞳孔缺損（RAPD）",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "07",
+      "unit": "s114-optometry-pupil-response-p1",
+      "lesson": "parasympathetic-disorders-1",
+      "title": "副交感相關異常：第三對腦神經（CN III）、艾迪氏（Adie）、阿蓋爾－羅伯遜氏（Argyll Robertson）",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "07",
+      "unit": "s114-optometry-pupil-response-p1",
+      "lesson": "sympathetic-horner-1",
+      "title": "交感路徑與 霍納氏症候群（Horner syndrome）",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "07",
+      "unit": "s114-optometry-pupil-response-p2",
+      "lesson": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "status": "已驗證",
+      "steps": 9,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "07",
+      "unit": "s114-optometry-pupil-response-p2",
+      "lesson": "quiz-1",
+      "title": "整合驗收 1",
+      "status": "已驗證",
+      "steps": 11,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "07",
+      "unit": "s114-optometry-pupil-response-p2",
+      "lesson": "quiz-2",
+      "title": "整合驗收 2",
+      "status": "已驗證",
+      "steps": 9,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "08",
+      "unit": "s114-optometry-stereopsis-p1",
+      "lesson": "depth-cues-1",
+      "title": "單眼也能猜距離，但不是真正立體視",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "08",
+      "unit": "s114-optometry-stereopsis-p1",
+      "lesson": "binocular-stereopsis-1",
+      "title": "雙眼把兩張不同照片合成深度",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "08",
+      "unit": "s114-optometry-stereopsis-p1",
+      "lesson": "disparity-development-1",
+      "title": "視差不只一種，發展時間也會考",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "08",
+      "unit": "s114-optometry-stereopsis-p1",
+      "lesson": "stereo-tests-1",
+      "title": "立體視檢查：先分 局部（local） 與 整體（global）",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "08",
+      "unit": "s114-optometry-stereopsis-p2",
+      "lesson": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "status": "已驗證",
+      "steps": 9,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "08",
+      "unit": "s114-optometry-stereopsis-p2",
+      "lesson": "quiz-1",
+      "title": "整合驗收 1",
+      "status": "已驗證",
+      "steps": 11,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "08",
+      "unit": "s114-optometry-stereopsis-p2",
+      "lesson": "quiz-2",
+      "title": "整合驗收 2",
+      "status": "已驗證",
+      "steps": 9,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "09",
+      "unit": "s114-optometry-near-point-p1",
+      "lesson": "accommodation-basics-1",
+      "title": "調節：把水晶體變厚，讓近物重新清楚",
+      "status": "已驗證",
+      "steps": 24,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "09",
+      "unit": "s114-optometry-near-point-p1",
+      "lesson": "amplitude-interpretation-1",
+      "title": "調節幅度：先看年齡，再判斷是不是異常",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "09",
+      "unit": "s114-optometry-near-point-p1",
+      "lesson": "npa-methods-1",
+      "title": "調節近點（NPA） 與三種調節幅度測法",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "09",
+      "unit": "s114-optometry-near-point-p1",
+      "lesson": "npc-1",
+      "title": "集合近點（NPC）：兩眼最多能往內聚到哪裡",
+      "status": "已驗證",
+      "steps": 22,
+      "bridges": 3,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "09",
+      "unit": "s114-optometry-near-point-p2",
+      "lesson": "review-extra-1",
+      "title": "串連、公式與易錯整合",
+      "status": "已驗證",
+      "steps": 9,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "09",
+      "unit": "s114-optometry-near-point-p2",
+      "lesson": "quiz-1",
+      "title": "整合驗收 1",
+      "status": "已驗證",
+      "steps": 11,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    },
+    {
+      "number": "09",
+      "unit": "s114-optometry-near-point-p2",
+      "lesson": "quiz-2",
+      "title": "整合驗收 2",
+      "status": "已驗證",
+      "steps": 9,
+      "bridges": 1,
+      "qaWidths": [
+        1000,
+        390
+      ],
+      "qa": "docs/s114-course-readability/qa.json"
+    }
+  ],
+  "verification": {
+    "cache": 126,
+    "verified": "2026-10-18",
+    "audit": "docs/s114-course-readability/audit.json",
+    "qa": "docs/s114-course-readability/qa.json",
+    "uiRegression": "docs/learn-battle-pin/qa.json"
+  }
+}

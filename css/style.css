@@ -1406,27 +1406,27 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 @media (min-width: 700px) { .lp-imgs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; align-items: center; } .lp-imgs .lp-img { margin: 4px 0; max-height: 46vh; width: 100%; object-fit: contain; } }
 @media (min-width: 700px) { .lp-imgs:has(> .lp-img:nth-child(3)) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
-/* 視光學二第2～4單元＋114大一下九堂總複習易讀版：避免手機表格首欄被擠成直排。 */
-.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"][data-lesson="exam-review"], [data-pack="s114-optometry-va-sph"][data-lesson="l8"], [data-pack="s114-optometry-astigmatism-rx"][data-lesson="l7"], [data-pack="s114-optometry-retinoscopy-intro"][data-lesson="l5"]) .md table {
+/* 視光學二第2～4單元＋114大一下01～09易讀版：避免手機表格首欄被擠成直排。 */
+.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"]:not([data-pack^="s114-optometry-terms-"])) .md table {
   width: 100%;
   max-width: 100%;
   margin: 14px 0;
   line-height: 1.6;
 }
-.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"][data-lesson="exam-review"], [data-pack="s114-optometry-va-sph"][data-lesson="l8"], [data-pack="s114-optometry-astigmatism-rx"][data-lesson="l7"], [data-pack="s114-optometry-retinoscopy-intro"][data-lesson="l5"]) .md th,
-.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"][data-lesson="exam-review"], [data-pack="s114-optometry-va-sph"][data-lesson="l8"], [data-pack="s114-optometry-astigmatism-rx"][data-lesson="l7"], [data-pack="s114-optometry-retinoscopy-intro"][data-lesson="l5"]) .md td {
+.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"]:not([data-pack^="s114-optometry-terms-"])) .md th,
+.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"]:not([data-pack^="s114-optometry-terms-"])) .md td {
   padding: 7px 9px;
   border: 1px solid #584c70;
   vertical-align: top;
   overflow-wrap: anywhere;
 }
-.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"][data-lesson="exam-review"], [data-pack="s114-optometry-va-sph"][data-lesson="l8"], [data-pack="s114-optometry-astigmatism-rx"][data-lesson="l7"], [data-pack="s114-optometry-retinoscopy-intro"][data-lesson="l5"]) .md tr > :first-child {
+.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"]:not([data-pack^="s114-optometry-terms-"])) .md tr > :first-child {
   min-width: 5.4em;
 }
-.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"][data-lesson="exam-review"], [data-pack="s114-optometry-va-sph"][data-lesson="l8"], [data-pack="s114-optometry-astigmatism-rx"][data-lesson="l7"], [data-pack="s114-optometry-retinoscopy-intro"][data-lesson="l5"]) .md th {
+.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"]:not([data-pack^="s114-optometry-terms-"])) .md th {
   background: rgba(108, 196, 255, .08);
   text-align: left;
 }
-.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"][data-lesson="exam-review"], [data-pack="s114-optometry-va-sph"][data-lesson="l8"], [data-pack="s114-optometry-astigmatism-rx"][data-lesson="l7"], [data-pack="s114-optometry-retinoscopy-intro"][data-lesson="l5"]) .md tr:nth-child(even) td {
+.lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"]:not([data-pack^="s114-optometry-terms-"])) .md tr:nth-child(even) td {
   background: rgba(255, 255, 255, .025);
 }

@@ -342,3 +342,11 @@
 - `js/learn.js`的`pinBattle()`讓課程戰鬥條捲動後縮小固定於topbar下方；同一角色Canvas與場景繼續出招，不複製或重建動畫。回頂恢復原尺寸，平靜模式連佔位一起收起。
 - `.lp-battle-pin`使用sticky，`lpBattleSpacer`補縮小差額，避免教材跳動；rAF節流、ResizeObserver追蹤工具列高度，離課／切頁清理監聽。桌機212→136px、手機168→114px；只改學習播放器，正式遠征不動。
 - Edge file://桌機／390px共30項通過，含2次真實答題觸發攻擊、捲動前後教材位移0、旋轉寬度、平靜切換、離課重進與同Canvas保存。工具`tools/learn-battle-pin-qa/check.cjs`，報告`docs/learn-battle-pin/qa.json`；一次性context備份還原localStorage，未做實機iPad測試。
+
+## 視光學大一下59堂正課易讀版（2026-10-18，v126）
+
+- 範圍：01～09的41主要教學＋18串連／整合驗收，共59課。逐課補138頁手寫白話橋梁，先具體對象→命名→原因／操作→數字，短表格與金色重點，再分頁閱讀原完整正文、考點和示範；不新增一堆檢核。
+- 保留原167檢核題幹、250記憶卡及進度ID，其他正課欄位、九堂總複習、99名詞與其他科目不動。106處必要更正有before／after／path，PH、COLC、AA、MRP、工作鏡與瞳孔機制等同步改正文、題解與卡背，勿把舊錯誤加回。
+- 接手先讀SESSION_NOTE_OPTOMETRY_S114_COURSES.md、docs/視光學大一下_正課易讀版.md及tools/learn-redo/s114-course-progress.json。腳本s114_course_01.py～09.py與s114_course_integrations.py，基準a183a46；重跑後須再跑s114_course_corrections.py、build與QA，不重跑舊匯入器。每課更新Session Note；未驗證不能標完成。
+- CSS僅擴到大一下01～09；概念可連續多頁，pace free。散光首課加已驗證的光斑互動，其餘4個原互動保留。v125學習戰鬥固定縮小功能保留；舊進行中頁序可能變，可回課頭重讀，未清除存檔。
+- QA：嚴格建置、17數值、原正文／考點／題／卡／編譯ID與其他pack比對通過；Edge file:// 1000／390px實際2276頁、288單選判分、46自評流程、118範例／118實戰／118導航、28互動狀態，0問題。戰鬥固定縮小30項回歸通過。報告docs/s114-course-readability/；獨立context備份還原localStorage，未做實機iPad、真人理解測試或完整專業審稿。
