@@ -174,3 +174,11 @@
 - 表格CSS僅套三單元；js/learn.js播放器外框用data-pack／data-lesson定位，快取v117。data由build產生，不手改。進行中的舊頁序可能變，建議回課頭重讀；未清除存檔。
 - 正式QA：27課來源／出處／進度鍵核對；Edge file:// 1000／390px實際逐頁1260次、194判分、66例題展開、44圖、6抽題／6導航，0問題；JCC另有62渲染與互動狀態驗算。測試context備份還原localStorage，非實機iPad或醫學審稿。可攜JSON報告在docs/optometry-readability/。
 - 舊sweep.cjs只改localStorage而未reload，不能用舊計數當逐頁證據；本次已加reload＋頁碼核對。新readability.cjs每課reload後實際按跳頁色條，驗證每頁類型、頁碼和判分。原optom2-qa/check.cjs的每卡exam＋demo約束已過時。
+
+## 視光學大一下：九堂總複習（2026-10-18，v124）
+
+- 本次只改114大一下第01～09單元各一堂最後的「國考重點複習」，共9課，均已改寫與驗證；其他正課、99名詞和已完成的大二上27課不動。沿用JCC認可版的具體對象→名詞→原因／操作→數字，短表格、固定配色、自由概念頁節奏。
+- 接手讀`SESSION_NOTE_OPTOMETRY_S114_REVIEW.md`、`docs/視光學大一下_總複習改寫.md`、`tools/learn-redo/s114-review-progress.json`。逐課腳本`s114_review_01.py`～`09.py`的基準為a72883c；重跑後先執行`s114_review_corrections.py`，再build和QA，避免13處舊文錯誤回流。
+- 保留原32檢核題幹、33記憶卡正面與考題來源；其他正課逐欄比對不變。更正logMAR計分條件、遠點符號／AA、NPC非單項確診與角膜假設指數等，逐欄前後文在`s114-review-corrections.json`。總演練限本單元國考題本。
+- 表格CSS只擴至上述九堂複習，快取v124，未改播放器JS或存檔格式；舊進行中頁序可能不同，可回課頭重讀。
+- 驗證：18項數值；Edge file:// 1000／390px實際逐頁470次、64判分、36範例展開、6互動狀態、18抽題池／18導航，0問題；strict build通過。一次性context備份還原localStorage；非實機iPad、真人理解測試或完整專業審稿。可攜報告在`docs/s114-review-readability/`。

@@ -232,3 +232,11 @@ js/ css/                遊戲程式
 - js/learn.js 共用 note-related 收合／延後建立列表，保留考前必看的 cram-related 與新增 formula-related，各自預設收合，不隨全部展開。沿用 v93 的固定標題與關閉鍵閱讀視窗。原公式講解與課程流程不變，內容正本在五個 content/learn/physopt JSON，data/learn.js 由 build 生成。
 - 依現有題目逐組核對，規則在 tools/formula-related-qa/link.py；沒有老師原題可配的公式用單元練習。第一單元週期搭配頻率換算作延伸，relatedHint 明確說明題目本身沒有問週期。build 檢查 relatedQuestions 的不重複／存在性，importer 保留連結，舊筆記缺少欄位依相同公式 id 補入內建連結，明確 [] 可清空。
 - QA：97 個單元（排除新增連結欄位）與原公式講解／進度 id 不變，整個第六單元與題庫完整性一致；原 58 項數值驗算、Edge iPad 路徑 192 項與桌機 192 項、全 JS 語法與嚴格建置檢查通過。獨立 context 還原 localStorage、移除匯入 fixture；HTTP／Edge 模擬，沒有實機 iPadOS 或本輪 file://／雲端往返驗證。工具 tools/formula-related-qa/，報告／截圖 output/playwright/formula-related-*。
+
+## 視光學大一下：九堂總複習（2026-10-18，v124）
+
+- 本次只改114大一下第01～09單元各一堂最後的「國考重點複習」，共9課，均已改寫與驗證；其他正課、99名詞和已完成的大二上27課不動。沿用JCC認可版的具體對象→名詞→原因／操作→數字，短表格、固定配色、自由概念頁節奏。
+- 接手讀`SESSION_NOTE_OPTOMETRY_S114_REVIEW.md`、`docs/視光學大一下_總複習改寫.md`、`tools/learn-redo/s114-review-progress.json`。逐課腳本`s114_review_01.py`～`09.py`的基準為a72883c；重跑後先執行`s114_review_corrections.py`，再build和QA，避免13處舊文錯誤回流。
+- 保留原32檢核題幹、33記憶卡正面與考題來源；其他正課逐欄比對不變。更正logMAR計分條件、遠點符號／AA、NPC非單項確診與角膜假設指數等，逐欄前後文在`s114-review-corrections.json`。總演練限本單元國考題本。
+- 表格CSS只擴至上述九堂複習，快取v124，未改播放器JS或存檔格式；舊進行中頁序可能不同，可回課頭重讀。
+- 驗證：18項數值；Edge file:// 1000／390px實際逐頁470次、64判分、36範例展開、6互動狀態、18抽題池／18導航，0問題；strict build通過。一次性context備份還原localStorage；非實機iPad、真人理解測試或完整專業審稿。可攜報告在`docs/s114-review-readability/`。

@@ -1,0 +1,215 @@
+{
+  "rendered": 470,
+  "graded": 64,
+  "examples": 36,
+  "images": 0,
+  "interactiveStates": 6,
+  "pools": [
+    {
+      "width": 1000,
+      "id": "s114-optometry-va-sph",
+      "pool": 66
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-astigmatism-rx",
+      "pool": 58
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-retinoscopy-intro",
+      "pool": 14
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-pd-lensometry-p2",
+      "pool": 72
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-objective-refraction-p2",
+      "pool": 95
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-keratometry-p2",
+      "pool": 55
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-pupil-response-p2",
+      "pool": 27
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-stereopsis-p2",
+      "pool": 11
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-near-point-p2",
+      "pool": 138
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-va-sph",
+      "pool": 66
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-astigmatism-rx",
+      "pool": 58
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-retinoscopy-intro",
+      "pool": 14
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-pd-lensometry-p2",
+      "pool": 72
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-objective-refraction-p2",
+      "pool": 95
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-keratometry-p2",
+      "pool": 55
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-pupil-response-p2",
+      "pool": 27
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-stereopsis-p2",
+      "pool": 11
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-near-point-p2",
+      "pool": 138
+    }
+  ],
+  "navigation": 18,
+  "issues": [],
+  "widths": [
+    1000,
+    390
+  ],
+  "lessons": [
+    {
+      "width": 1000,
+      "id": "s114-optometry-va-sph",
+      "lid": "l8",
+      "steps": 23
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-astigmatism-rx",
+      "lid": "l7",
+      "steps": 26
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-retinoscopy-intro",
+      "lid": "l5",
+      "steps": 20
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-pd-lensometry-p2",
+      "lid": "exam-review",
+      "steps": 29
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-objective-refraction-p2",
+      "lid": "exam-review",
+      "steps": 31
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-keratometry-p2",
+      "lid": "exam-review",
+      "steps": 28
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-pupil-response-p2",
+      "lid": "exam-review",
+      "steps": 23
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-stereopsis-p2",
+      "lid": "exam-review",
+      "steps": 23
+    },
+    {
+      "width": 1000,
+      "id": "s114-optometry-near-point-p2",
+      "lid": "exam-review",
+      "steps": 32
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-va-sph",
+      "lid": "l8",
+      "steps": 23
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-astigmatism-rx",
+      "lid": "l7",
+      "steps": 26
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-retinoscopy-intro",
+      "lid": "l5",
+      "steps": 20
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-pd-lensometry-p2",
+      "lid": "exam-review",
+      "steps": 29
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-objective-refraction-p2",
+      "lid": "exam-review",
+      "steps": 31
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-keratometry-p2",
+      "lid": "exam-review",
+      "steps": 28
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-pupil-response-p2",
+      "lid": "exam-review",
+      "steps": 23
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-stereopsis-p2",
+      "lid": "exam-review",
+      "steps": 23
+    },
+    {
+      "width": 390,
+      "id": "s114-optometry-near-point-p2",
+      "lid": "exam-review",
+      "steps": 32
+    }
+  ]
+}

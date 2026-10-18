@@ -1,0 +1,101 @@
+{
+  "baseline": "a72883ca00ed1ba3ecb958c5ab5d89f4f120d5dd",
+  "scope": "114大一下視光學01～09各一堂總複習；不含其他正課／99名詞",
+  "lessons": [
+    {
+      "number": "01",
+      "unit": "s114-optometry-va-sph",
+      "lesson": "l8",
+      "title": "國考重點複習：視力與屈光不正最常考的 6 個考點",
+      "status": "已完成；內容審計與桌機／390px實際逐頁驗證通過",
+      "steps": 23,
+      "verified": "2026-10-18",
+      "qa": "docs/s114-review-readability/qa.json"
+    },
+    {
+      "number": "02",
+      "unit": "s114-optometry-astigmatism-rx",
+      "lesson": "l7",
+      "title": "國考重點複習：散光與處方書寫最常考的 6 個考點",
+      "status": "已完成；內容審計與桌機／390px實際逐頁驗證通過",
+      "steps": 26,
+      "verified": "2026-10-18",
+      "qa": "docs/s114-review-readability/qa.json"
+    },
+    {
+      "number": "03",
+      "unit": "s114-optometry-retinoscopy-intro",
+      "lesson": "l5",
+      "title": "國考重點複習：視網膜檢影最常考的 4 個考點",
+      "status": "已完成；內容審計與桌機／390px實際逐頁驗證通過",
+      "steps": 20,
+      "verified": "2026-10-18",
+      "qa": "docs/s114-review-readability/qa.json"
+    },
+    {
+      "number": "04",
+      "unit": "s114-optometry-pd-lensometry-p2",
+      "lesson": "exam-review",
+      "title": "國考重點複習：稜鏡度、Prentice 法則與焦度計",
+      "status": "已完成；內容審計與桌機／390px實際逐頁驗證通過",
+      "steps": 29,
+      "verified": "2026-10-18",
+      "qa": "docs/s114-review-readability/qa.json"
+    },
+    {
+      "number": "05",
+      "unit": "s114-optometry-objective-refraction-p2",
+      "lesson": "exam-review",
+      "title": "國考重點複習：檢影處方計算與動向判讀",
+      "status": "已完成；內容審計與桌機／390px實際逐頁驗證通過",
+      "steps": 31,
+      "verified": "2026-10-18",
+      "qa": "docs/s114-review-readability/qa.json"
+    },
+    {
+      "number": "06",
+      "unit": "s114-optometry-keratometry-p2",
+      "lesson": "exam-review",
+      "title": "國考重點複習：K 值、角膜散光與殘餘散光",
+      "status": "已完成；內容審計與桌機／390px實際逐頁驗證通過",
+      "steps": 28,
+      "verified": "2026-10-18",
+      "qa": "docs/s114-review-readability/qa.json"
+    },
+    {
+      "number": "07",
+      "unit": "s114-optometry-pupil-response-p2",
+      "lesson": "exam-review",
+      "title": "國考重點複習：瞳孔光反射路徑、RAPD 與藥理",
+      "status": "已完成；內容審計與桌機／390px實際逐頁驗證通過",
+      "steps": 23,
+      "verified": "2026-10-18",
+      "qa": "docs/s114-review-readability/qa.json"
+    },
+    {
+      "number": "08",
+      "unit": "s114-optometry-stereopsis-p2",
+      "lesson": "exam-review",
+      "title": "國考重點複習：立體視的條件、測驗比較與判讀",
+      "status": "已完成；內容審計與桌機／390px實際逐頁驗證通過",
+      "steps": 23,
+      "verified": "2026-10-18",
+      "qa": "docs/s114-review-readability/qa.json"
+    },
+    {
+      "number": "09",
+      "unit": "s114-optometry-near-point-p2",
+      "lesson": "exam-review",
+      "title": "國考重點複習：調節幅度、半幅加入度與 NPC",
+      "status": "已完成；內容審計與桌機／390px實際逐頁驗證通過",
+      "steps": 32,
+      "verified": "2026-10-18",
+      "qa": "docs/s114-review-readability/qa.json"
+    }
+  ],
+  "verification": {
+    "audit": "docs/s114-review-readability/audit.json",
+    "qa": "docs/s114-review-readability/qa.json",
+    "cache": 124
+  }
+}

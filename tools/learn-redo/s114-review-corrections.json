@@ -1,0 +1,166 @@
+[
+  {
+    "unit": "s114-optometry-va-sph",
+    "path": [
+      "lessons",
+      7,
+      "steps",
+      4,
+      "exam",
+      0
+    ],
+    "before": "**換算題**：0.1→logMAR 1.0；6/60→1.0；0.5→0.3；6/30→0.2、5、0.7（106 師特 39；106 生特 7；112 師高 33；108 生普 8）。",
+    "after": "**換算題**：小數0.1→logMAR1.0；Snellen6/60→logMAR1.0；小數0.5→logMAR約0.3；Snellen6/30→小數0.2、MAR5′、logMAR約0.7（106 師特 39；106 生特 7；112 師高 33；108 生普 8）。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "path": [
+      "lessons",
+      7,
+      "steps",
+      6,
+      "demo",
+      1
+    ],
+    "before": "**例子 2**：0.5 全對、0.4 行對 3 個 → 0.5 − 0.06 = **0.44**。",
+    "after": "**例子2**：標準五字logMAR表，logMAR 0.50行全對，0.40行再對3字 →0.50−3×0.02＝**0.44 logMAR**。這不是小數視力0.5。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "path": [
+      "lessons",
+      7,
+      "steps",
+      7,
+      "explain"
+    ],
+    "before": "0.50 − 0.04 = **0.46**（B）。",
+    "after": "題目0.50與0.40是logMAR行值；標準五字表每字0.02，0.50−2×0.02＝**0.46 logMAR**（B），不是小數視力0.46。"
+  },
+  {
+    "unit": "s114-optometry-va-sph",
+    "path": [
+      "lessons",
+      7,
+      "steps",
+      19,
+      "explain"
+    ],
+    "before": "針孔用來分辨**屈光問題 vs 病理問題**（B）。孔太小會繞射；照度降低；景深增加。",
+    "after": "B是選項中最合適：針孔提供屈光因素與其他原因的區分線索，並非單靠有無改善就確診。孔太小會繞射、照度降低，容忍失焦範圍增加。"
+  },
+  {
+    "unit": "s114-optometry-keratometry-p2",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      6,
+      "explain"
+    ],
+    "before": "K = 337.5 ÷ 7.50 = **45.00 D**（C）。",
+    "after": "K＝337.5/7.50＝**45.00 D**（C）。題目的1.3375指K換算假設指數，不是真實角膜材料折射率。"
+  },
+  {
+    "unit": "s114-optometry-pupil-response-p2",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      6,
+      "demo",
+      1
+    ],
+    "before": "**例子**：大腦枕葉皮質受損 → 看不見，但瞳孔光反射仍然正常。",
+    "after": "**例子**：雙側廣泛枕葉視覺皮質受損可致皮質性失明；若光反射通道完好，光反射仍可保留。單側受損不等於兩眼全盲。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p2",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      8,
+      "explain"
+    ],
+    "before": "近點 5.00 D − 遠點 (−2.00 D) = **7.00 D**（C）。",
+    "after": "用本課一致定義R：眼後50 cm虛遠點→R＝＋2.00 D遠視；近點眼前20 cm需求5.00 D，所以AA＝5＋2＝**7.00 D**（C）。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p2",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      26,
+      "explain"
+    ],
+    "before": "破裂點太遠（15 cm 就複視）→ **內聚力不足（convergence insufficiency）**（A）。",
+    "after": "在這組選項A最合適：15 cm已破裂，支持集合能力不足的線索；正式診斷仍須結合症狀、眼位、近距離正融像聚散等，不能只靠NPC單項確診。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p2",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      27,
+      "steps",
+      0
+    ],
+    "before": "眼後 50 cm 的遠點 → 虛遠點，相當於 **+2.00 D 遠視**（遠點屈光力 −2.00 D）。",
+    "after": "眼後50 cm虛遠點，對應本課R＝**＋2.00 D遠視**。不要把另一套「看近需求」符號混進R。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p2",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      27,
+      "steps",
+      1
+    ],
+    "before": "眼前 20 cm 的近點 → 需要 **5.00 D**。",
+    "after": "眼前20 cm相對正視的看近需求為1/0.20＝**5.00 D**；此遠視眼還要先補R＋2.00 D。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p2",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      27,
+      "steps",
+      2
+    ],
+    "before": "AA = 近點度數 − 遠點度數 = 5.00 − (−2.00) = **7.00 D**。",
+    "after": "AA＝1/NPA＋R＝5.00＋2.00＝**7.00 D**；等於看遠先用2 D，再加5 D看近。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p2",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      31,
+      "points",
+      0
+    ],
+    "before": "AA = 近點度數 − 遠點度數（遠點在眼後要加）；近視 −D 近點 1/(AA + D)、遠視 +D 近點 1/(AA − D)。",
+    "after": "統一R近視負、遠視正：AA＝1/NPA（m）＋R；NPA＝1/(AA−R)。近視−D→1/(AA＋D)，遠視＋D→1/(AA−D)，以眼前實近點且分母正為條件。"
+  },
+  {
+    "unit": "s114-optometry-near-point-p2",
+    "path": [
+      "lessons",
+      3,
+      "steps",
+      31,
+      "points",
+      2
+    ],
+    "before": "NPC：恢復點比破裂點遠、15 cm 複視＝內聚不足；push-up 受主觀影響；測 AA 要戴遠距離矯正。",
+    "after": "NPC記break／recovery，恢復通常較遠。15 cm破裂是集合不足線索，需配其他檢查。Push-up受主觀與視標變大影響；測AA戴遠用最佳矯正。"
+  }
+]
