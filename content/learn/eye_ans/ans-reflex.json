@@ -42,42 +42,43 @@
       "steps": [
         {
           "type": "intro",
-          "title": "拿筆燈照一眼，另一眼也跟著縮",
+          "title": "照右眼，左眼也縮",
           "body": [
-            "驗光師檢查時，用筆燈照病人的右眼，右眼瞳孔縮小；奇怪的是，沒被照到的左眼也一起縮了。",
+            "> [!big] 光反射的訊號在中腦會**送到兩邊**，所以照一眼、兩眼一起縮。",
             "",
-            "這是因為瞳孔光反射的訊號在中腦**兩側都有送到**。"
+            "驗光師用筆燈照右眼，右眼瞳孔縮小；沒被照到的左眼也跟著縮。這一課先認識瞳孔的兩條肌肉，再走一遍光反射的路。"
           ]
         },
         {
           "type": "card",
           "title": "虹膜上控制瞳孔的兩條肌肉",
           "body": [
-            "> 🖼️ **看圖**：活體眼睛：虹膜與瞳孔",
+            "> [!big] {g:括約肌＝環狀＝副交感＝縮瞳}；{r:擴張肌＝輻射狀＝交感＝散瞳}。兩條都是**平滑肌**。",
             "",
-            "虹膜上的肌肉**都是平滑肌**，由自主神經控制：",
-            "",
-            "| 肌肉 | 形狀 | 支配 | 收縮結果 | 什麼時候 |",
-            "|---|---|---|---|---|",
-            "| **瞳孔括約肌** | **環狀**（circular） | **副交感** | 瞳孔縮小 | 強光 |",
-            "| **瞳孔擴張肌** | **輻射狀**（radial） | **交感** | 瞳孔放大 | 暗光 |",
-            "",
-            "記法：環狀肌一收，像束口袋拉緊 → 洞變小；輻射狀肌一收，把邊緣往外拉 → 洞變大。"
+            "[[img]]",
+            "::: cols g r",
+            "### 瞳孔括約肌",
+            "- **環狀**（circular），靠瞳孔邊緣",
+            "- **副交感**（CN III）",
+            "- 收縮 → 瞳孔縮小（強光）",
+            "|||",
+            "### 瞳孔擴張肌",
+            "- **輻射狀**（radial）",
+            "- **交感**",
+            "- 收縮 → 瞳孔放大（暗光）",
+            ":::",
+            "> [!tip] 記法",
+            "> 環狀肌一收，像束口袋拉緊 → 洞變小；輻射狀肌一收，把邊緣往外拉 → 洞變大。"
           ],
-          "keys": [
-            "括約肌＝環狀＝副交感＝縮瞳",
-            "擴張肌＝輻射狀＝交感＝散瞳",
-            "兩者都是平滑肌"
-          ],
-          "flash": {
-            "front": "瞳孔括約肌的形狀與支配神經？",
-            "back": "環狀肌，副交感神經（CN III）支配"
-          },
           "exam": [
             "**考法**：括約肌＝副交感（III）、擴張肌＝交感，位置：括約肌靠瞳孔邊緣（108 師特 1、109 生特 18、108 生普 9）。"
           ],
           "img": "img/eye-anat-fig/iris_photo.jpg",
-          "img_source": "Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "瞳孔括約肌的形狀與支配神經？",
+            "back": "環狀肌，副交感神經（CN III）支配"
+          }
         },
         {
           "type": "check",
@@ -97,28 +98,20 @@
           "type": "card",
           "title": "瞳孔光反射的路徑",
           "body": [
-            "> 🖼️ **看圖**：光反射的傳入路徑（腦底面標本）：視神經 → 視交叉 → 視徑；E-W 核（縮瞳核）緊貼動眼神經核",
+            "> [!big] 光反射在中腦的**前頂蓋區**就轉走了，**不經過視覺皮質**：它是腦幹層級的反射。",
             "",
-            "```",
-            "光線 → 視網膜",
-            "  → 視神經 → 視交叉 → 視徑（optic tract）",
-            "  → 中腦「前頂蓋區神經核」（pretectal nucleus）",
-            "  → 兩側 E-W 核（縮瞳核）",
-            "  → CN III → 睫狀神經節",
-            "  → 短睫狀神經 → 瞳孔括約肌收縮",
-            "```",
-            "",
-            "重點：光反射的訊號在**前頂蓋區**就轉走了，**不經過視覺皮質**。它是一個**腦幹層級**的反射。"
+            "[[img]]",
+            "::: flow",
+            "光 → 視網膜",
+            "{b:視神經 → 視交叉 → 視徑}",
+            "**前頂蓋區**（中腦）",
+            "**兩側** E-W 核",
+            "{g:CN III → 睫狀神經節 → 短睫狀神經}",
+            "瞳孔括約肌收縮",
+            ":::",
+            "> [!tip] 口訣：二進三出",
+            "> CN **II** 傳入、CN **III** 傳出。"
           ],
-          "keys": [
-            "前頂蓋區 → E-W 核是關鍵轉接",
-            "不經過大腦視覺皮質",
-            "傳出：CN III 副交感"
-          ],
-          "flash": {
-            "front": "瞳孔光反射在中腦的哪個區域轉接到 E-W 核？",
-            "back": "前頂蓋區（pretectal area／pretectal nucleus）"
-          },
           "exam": [
             "**考法**：光反射路徑與錯誤選項（106 師高 4、111 師高 27、108 生普 14、114 生普 18）：中樞在**中腦**（106 師特 33）。"
           ],
@@ -126,7 +119,11 @@
             "img/eye-anat-fig/light_path.jpg",
             "img/eye-anat-fig/pupil_nuc.jpg"
           ],
-          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "瞳孔光反射在中腦的哪個區域轉接到 E-W 核？",
+            "back": "前頂蓋區（pretectal area／pretectal nucleus）"
+          }
         },
         {
           "type": "check",
@@ -153,33 +150,26 @@
         },
         {
           "type": "card",
-          "title": "單眼照光，兩眼都縮：直接與間接反應",
+          "title": "直接反應與間接反應",
           "body": [
-            "> 🖼️ **看圖**：光反射的傳入路徑（腦底面標本）：視神經 → 視交叉 → 視徑",
+            "> [!big] 照一眼：被照的眼縮＝**直接反應**；沒被照的眼也縮＝**間接（同感）反應**。",
             "",
-            "- **直接光反應（direct）**：被照光的那一眼瞳孔縮小。",
-            "- **間接／同感光反應（consensual）**：沒照光的另一眼也縮小。",
+            "[[img]]",
+            "**為什麼兩眼都縮？** 有兩個地方讓訊號跑到兩邊：",
+            "1. **視交叉**：單眼的訊號分到兩側視徑。",
+            "2. **後連合**（posterior commissure）：前頂蓋區把訊號送到**兩側 E-W 核**。",
             "",
-            "**為什麼？**",
-            "1. 單側視網膜的訊號，經視交叉分到**兩側視徑**。",
-            "2. 前頂蓋區的神經核又把訊號送到**兩側 E-W 核**（經後聯合 posterior commissure 交叉）。",
-            "",
-            "所以正常情況下，照一眼時**兩眼瞳孔同時、同等縮小**。"
+            "正常情況下，照一眼時**兩眼瞳孔同時、同等縮小**。"
           ],
-          "keys": [
-            "直接反應：照光眼縮",
-            "間接（同感）反應：對側眼也縮",
-            "原因：視交叉＋前頂蓋區送到兩側 E-W 核"
-          ],
-          "flash": {
-            "front": "單眼照光時，另一眼的瞳孔反應叫什麼？",
-            "back": "間接（同感）光反應（consensual light reflex）"
-          },
           "exam": [
             "**考法**：單眼照光雙眼縮 ＝ 直接＋間接反應，頂蓋前核連到**雙側** E-W 核（112 生普 13）。"
           ],
           "img": "img/eye-anat-fig/light_path.jpg",
-          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "單眼照光時，另一眼的瞳孔反應叫什麼？",
+            "back": "間接（同感）光反應（consensual light reflex）"
+          }
         },
         {
           "type": "check",
@@ -197,35 +187,34 @@
         },
         {
           "type": "card",
-          "title": "光反射路徑的細節與臨床用途",
+          "title": "光反射的細節與臨床用途",
           "body": [
-            "> 🖼️ **看圖**：視徑一小部分纖維經上丘臂，到上丘旁的前頂蓋區（後面觀標本）",
+            "> [!big] 視徑的纖維**大部分去外側膝狀體**（看見東西），**少部分去前頂蓋核**（光反射）。",
             "",
-            "**訊號分流**：視徑的纖維**絕大部分（70% 以上）**到**外側膝狀體（LGN）**→ 大腦產生視覺；**少部分**經**上丘臂**（superior brachium）到上丘附近的**前頂蓋核**。",
-            "- 旁邊的**內側膝狀體（MGN）**負責**聽覺**，和視覺無關。",
-            "- 大腦導水管在中腦；上丘在上、下丘在下。",
+            "[[img]]",
+            "::: cols p g",
+            "### 大部分（70% 以上）",
+            "- 到**外側膝狀體（LGN）**",
+            "- → 大腦，產生視覺",
+            "|||",
+            "### 少部分",
+            "- 經**上丘臂**到上丘附近的**前頂蓋核**",
+            "- → 光反射",
+            ":::",
+            "- 旁邊的**內側膝狀體（MGN）**負責**聽覺**，和視覺無關。大腦導水管在中腦；上丘在上、下丘在下。",
             "",
-            "**兩個交叉到雙側的地方**：① **視交叉** ② 前頂蓋核經**後連合**（posterior commissure）到對側 E-W 核。",
-            "",
-            "口訣：**二進三出**（CN II 傳入、CN III 傳出）。",
-            "",
-            "**臨床**：光反射中樞在**中腦**、**不經大腦皮質** → 病人**昏迷**時仍可檢查，是評估腦幹功能、檢查生命徵象的重要工具。先用反射定位病灶，再安排影像（如 CT），避免不必要的輻射。"
+            "> [!key] 為什麼昏迷病人要查光反射？",
+            "> 光反射中樞在**中腦**、不經大腦皮質 → 昏迷時仍可檢查，是評估腦幹功能的重要工具。先用反射定位病灶，再安排影像（如 CT），避免不必要的輻射。"
           ],
-          "keys": [
-            "大部分到 LGN（視覺）、少部分到前頂蓋核（反射）",
-            "兩處交叉：視交叉＋後連合",
-            "昏迷病人查光反射，不查近物反射"
-          ],
-          "tip": "MGN（內側膝狀體）是聽覺；視光系要記的是 LGN（外側膝狀體）。",
-          "flash": {
-            "front": "光反射有哪兩個地方讓訊號到達雙側？",
-            "back": "視交叉，以及前頂蓋核經後連合（posterior commissure）"
-          },
           "exam": [
             "**考法**：光反射傳入走視神經、傳出走動眼神經（109 師特 27）；視覺皮質病變：雙眼瞳孔反射仍正常（108 師高 19）。"
           ],
           "img": "img/eye-anat-fig/brachium.jpg",
-          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem-thalamus posterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem-thalamus_posterior_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "光反射有哪兩個地方讓訊號到達雙側？",
+            "back": "視交叉，以及前頂蓋核經後連合（posterior commissure）"
+          }
         },
         {
           "type": "check",
@@ -317,7 +306,8 @@
       ],
       "teaches": [
         "間接光反應"
-      ]
+      ],
+      "pace": "free"
     },
     {
       "id": "l2",
@@ -330,41 +320,29 @@
       "steps": [
         {
           "type": "intro",
-          "title": "把筆慢慢移到鼻尖",
+          "title": "看近時，三件事一起發生",
           "body": [
-            "請同學盯著筆尖，慢慢把筆移近鼻子。你會看到他的兩眼往內轉（鬥雞眼）、瞳孔變小；你看不到的是，他的水晶體也正在變厚。",
+            "> [!big] 看近時：**調節**（水晶體變厚）＋**集合**（兩眼內轉）＋**縮瞳**，合稱**近物反射**。",
             "",
-            "這三件事一起發生，叫做**近物反射**。"
+            "請同學盯著筆尖，慢慢移近鼻子：兩眼往內轉（鬥雞眼）、瞳孔變小；看不到的是水晶體也在變厚。"
           ]
         },
         {
           "type": "card",
-          "title": "近反應三聯徵（Near triad）：ACM",
+          "title": "近反應三聯徵：ACM",
           "body": [
-            "> 🖼️ **看圖**：近反應：兩眼內直肌收縮、向內轉（前面觀）；調節：睫狀肌收縮 → 水晶體變厚；瞳孔括約肌在虹膜",
+            "> [!big] **A**ccommodation 調節（睫狀肌）＋**C**onvergence 集合（內直肌）＋**M**iosis 縮瞳（括約肌）。",
             "",
-            "從看遠突然看近時，同時發生三個反應：",
-            "",
+            "[[img]]",
             "| 反應 | 肌肉 | 變化 | 目的 |",
             "|---|---|---|---|",
-            "| **A**ccommodation 調節 | **睫狀肌** | 收縮 → 懸韌帶放鬆 → 水晶體變凸 | 增加屈光力，近物成像清楚 |",
-            "| **C**onvergence 集合 | **內直肌** | 雙眼內轉 | 視線集中在近物，影像落在中心窩 |",
-            "| **M**iosis 縮瞳 | **瞳孔括約肌** | 瞳孔縮小 | 減少周邊光線與像差、增加景深 |",
+            "| **A** 調節 | **睫狀肌** | 收縮 → 懸韌帶放鬆 → 水晶體變凸 | 增加屈光力，近物看清楚 |",
+            "| **C** 集合 | **內直肌** | 雙眼內轉 | 影像落在中心窩 |",
+            "| **M** 縮瞳 | **瞳孔括約肌** | 瞳孔縮小 | 減少周邊光與像差、增加景深 |",
             "",
-            "```",
-            "瞳孔光反射 = 只有縮瞳（Miosis only）",
-            "近物反射   = 調節 + 集合 + 縮瞳（ACM）",
-            "```"
+            "> [!key] 一句話比較",
+            "> 光反射＝**只有縮瞳**；近物反射＝**調節＋集合＋縮瞳**。"
           ],
-          "keys": [
-            "A 調節：睫狀肌",
-            "C 集合：內直肌",
-            "M 縮瞳：瞳孔括約肌"
-          ],
-          "flash": {
-            "front": "近物反射三聯徵（ACM）是哪三個？",
-            "back": "調節（Accommodation）、集合（Convergence）、縮瞳（Miosis）"
-          },
           "exam": [
             "**考法**：近反應三聯徵＝調節＋內聚＋縮瞳；**開散不是**（114 師高 25、110 生普 7）。"
           ],
@@ -372,7 +350,11 @@
             "img/eye-anat-fig/near_rect.jpg",
             "img/eye-anat-fig/accom.jpg"
           ],
-          "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）；BruceBlaus. When using this image in external sources it can be cited as:  Blausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Eye orbit anterior.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Eye_orbit_anterior.jpg）；BruceBlaus. When using this image in external sources it can be cited as:  Blausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "近物反射三聯徵（ACM）是哪三個？",
+            "back": "調節（Accommodation）、集合（Convergence）、縮瞳（Miosis）"
+          }
         },
         {
           "type": "check",
@@ -404,36 +386,37 @@
         },
         {
           "type": "card",
-          "title": "近物反射的路徑",
+          "title": "近物反射的路徑：要經過大腦皮質",
           "body": [
-            "> 🖼️ **看圖**：大腦內側面（真實標本）：距狀溝與頂枕溝，初級視覺皮質在距狀溝周圍",
+            "> [!big] 近物反射**必須經過視覺皮質**，再分兩路：**動眼核**（集合）、**E-W 核**（調節＋縮瞳）。",
             "",
-            "```",
-            "模糊的視網膜影像 → 視神經 → 視交叉 → 視徑",
-            "  → 外側膝狀體（LGB，視丘）→ 視放射",
-            "  → 初級視覺皮質（area 17，枕葉）→ 視覺聯合區（18、19）",
-            "  ├→ area 8（額葉眼區）→ 動眼核（體運動）→ 內直肌 → 集合",
-            "  └→ 上丘／前頂蓋區 → E-W 核 → 睫狀神經節 → 短睫狀神經",
-            "        → 睫狀肌（調節）＋ 瞳孔括約肌（縮瞳）",
-            "```",
-            "",
-            "- **E-W 核**：經睫狀神經節、短睫狀神經 → 睫狀肌收縮（水晶體變厚）、括約肌收縮（縮瞳）。",
-            "- **動眼核**：經 CN III → 內直肌收縮 → 眼球內轉，影像落在黃斑部。"
+            "[[img]]",
+            "::: flow",
+            "模糊的視網膜影像",
+            "{b:視神經 → 視交叉 → 視徑 → 外側膝狀體 → 視放射}",
+            "{p:初級視覺皮質（17 區）→ 聯合區（18、19）}",
+            ":::",
+            "::: cols y g",
+            "### 往動眼核（軀體）",
+            "- 經 **8 區（額葉眼區）**",
+            "- → CN III → **內直肌**",
+            "- → **集合**",
+            "|||",
+            "### 往 E-W 核（副交感）",
+            "- 經上丘／前頂蓋區",
+            "- → 睫狀神經節 → 短睫狀神經",
+            "- → **睫狀肌（調節）＋括約肌（縮瞳）**",
+            ":::"
           ],
-          "keys": [
-            "必須經過視覺皮質（17、18、19 區）",
-            "E-W 核 → 調節＋縮瞳",
-            "動眼核 → 內直肌 → 集合"
-          ],
-          "flash": {
-            "front": "近物反射中，E-W 核與動眼核各負責什麼？",
-            "back": "E-W 核：睫狀肌（調節）＋括約肌（縮瞳）；動眼核：內直肌（集合）"
-          },
           "exam": [
             "**考法**：近反射路徑：視皮質 → 額葉 → 動眼神經核／E-W 核（110 師高 26、109 師高 12）。"
           ],
           "img": "img/eye-anat-fig/beal_calc.jpg",
-          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain inferior-medial view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_inferior-medial_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "近物反射中，E-W 核與動眼核各負責什麼？",
+            "back": "E-W 核：睫狀肌（調節）＋括約肌（縮瞳）；動眼核：內直肌（集合）"
+          }
         },
         {
           "type": "check",
@@ -447,35 +430,30 @@
           "type": "card",
           "title": "近物反射用到的大腦分區",
           "body": [
-            "> 🖼️ **看圖**：大腦外側面（真實標本）：視放射經過顳葉與頂葉到枕葉",
+            "> [!big] 看東西在**枕葉**（17、18、19 區）；管眼球運動的**額葉眼區**是 **8 區**。",
             "",
+            "[[img]]",
             "| 區域 | 位置 | 功能 |",
             "|---|---|---|",
             "| **17 區** | **枕葉** | 初級視覺皮質 |",
             "| **18、19 區** | **枕葉** | 視覺聯合區 |",
-            "| **8 區**（額葉眼動區 frontal eye field） | **額葉** | 眼球運動控制 → 參與集合 |",
+            "| **8 區**（額葉眼區 frontal eye field） | **額葉** | 眼球運動 → 參與集合 |",
             "",
-            "記法：以**中央溝**為界，**前方偏運動、後方偏感覺**。",
-            "- 視覺是感覺 → 在後面的**枕葉**",
-            "- 眼動區管運動 → 在前面的**額葉**",
+            "> [!tip] 記法",
+            "> 以**中央溝**為界：前方偏**運動**（額葉 8 區）、後方偏**感覺**（枕葉視覺）。",
             "",
-            "近物反射有**兩個輸出**：動眼神經核 → 內直肌（骨骼肌）；E-W 核 → 括約肌、睫狀肌（平滑肌）。老師說近物反射「這幾年每年都會出一題以上」。"
+            "> [!note] 老師說",
+            "> 8 區打了星號（國考考過）；近物反射「這幾年每年都會出一題以上」。"
           ],
-          "keys": [
-            "17 區初級視覺、18／19 視覺聯合：枕葉",
-            "8 區額葉眼動區：額葉",
-            "中央溝前運動、後感覺"
-          ],
-          "tip": "老師把 8 區打了星號：國考考過。",
-          "flash": {
-            "front": "額葉眼動區（frontal eye field）是第幾區？在哪一葉？",
-            "back": "第 8 區，在額葉"
-          },
           "exam": [
             "**考法**：近反射用到視覺皮質與額葉眼區；光反射則不用皮質。"
           ],
           "img": "img/eye-anat-fig/beal_lat.jpg",
-          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brain lateral view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brain_lateral_view.JPG）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "額葉眼動區（frontal eye field）是第幾區？在哪一葉？",
+            "back": "第 8 區，在額葉"
+          }
         },
         {
           "type": "check",
@@ -493,30 +471,34 @@
         },
         {
           "type": "card",
-          "title": "兩種反射大比較",
+          "title": "光反射 vs 近物反射",
           "body": [
-            "| | 瞳孔光反射 | 近物反射 |",
-            "|---|---|---|",
-            "| 刺激 | 光線 | 注視近物（影像模糊） |",
-            "| 反應 | 只有縮瞳 | 調節＋集合＋縮瞳 |",
-            "| 中樞轉接 | **前頂蓋區** → E-W 核 | **視覺皮質** → 上丘／前頂蓋區 → E-W 核＋動眼核 |",
-            "| 大腦皮質 | **不需要** | **需要** |",
-            "| 傳出 | CN III 副交感 | CN III 副交感＋CN III 軀體運動 |",
+            "> [!big] 光反射**不用皮質**、只縮瞳；近物反射**要皮質**、三件事一起做。",
             "",
-            "因為兩條路在中腦前的位置不同，所以臨床上可能出現「光反射壞了、近物反射還在」的**光–近分離**（下一單元的 Adie 瞳孔）。"
+            "::: cols b p",
+            "### 瞳孔光反射",
+            "- 刺激：光線",
+            "- 反應：**只有縮瞳**",
+            "- 轉接：**前頂蓋區** → E-W 核",
+            "- 大腦皮質：**不需要**",
+            "- 傳出：CN III 副交感",
+            "|||",
+            "### 近物反射",
+            "- 刺激：注視近物（影像模糊）",
+            "- 反應：**調節＋集合＋縮瞳**",
+            "- 轉接：**視覺皮質** → 上丘／前頂蓋區 → E-W 核＋動眼核",
+            "- 大腦皮質：**需要**",
+            "- 傳出：CN III 副交感＋軀體運動",
+            ":::",
+            "兩條路在中腦前的位置不同 → 可能出現「光反射壞、近物反射在」的**光–近分離**（如 Adie 瞳孔）。"
           ],
-          "keys": [
-            "光反射：前頂蓋區、不需皮質",
-            "近物反射：需皮質、多了調節與集合",
-            "路徑不同 → 可能出現光–近分離"
+          "exam": [
+            "**考法**：光反射 vs 近反射的比較（107 師特 26、109 師特 27、110 師高 25）。"
           ],
           "flash": {
             "front": "光反射和近物反射，哪一個需要大腦皮質參與？",
             "back": "近物反射"
-          },
-          "exam": [
-            "**考法**：光反射 vs 近反射的比較（107 師特 26、109 師特 27、110 師高 25）。"
-          ]
+          }
         },
         {
           "type": "check",
@@ -597,7 +579,8 @@
           ],
           "next": "下一課：瞳孔怎麼「放大」？驚嚇、疼痛時的交感路徑。"
         }
-      ]
+      ],
+      "pace": "free"
     },
     {
       "id": "l3",
@@ -610,37 +593,28 @@
       "steps": [
         {
           "type": "intro",
-          "title": "嚇一跳，瞳孔就變大",
+          "title": "被嚇到，瞳孔也會放大",
           "body": [
-            "被突然嚇到、劇烈疼痛時，就算光線沒變，瞳孔也會放大。",
-            "",
-            "這次的指令不是從眼睛來的，而是從掌管情緒的**杏仁核**和**下視丘**發出來的。"
+            "> [!big] 驚嚇、劇痛時，指令來自掌管情緒的**杏仁核**和**下視丘**，直接啟動{r:交感}，不經過眼睛。"
           ]
         },
         {
           "type": "card",
-          "title": "瞳孔放大的觸發",
+          "title": "什麼時候瞳孔會放大？",
           "body": [
-            "瞳孔放大（mydriasis）主要在兩種情況：",
-            "1. **暗光**：需要更多光進入眼睛。",
-            "2. **嚴重疼痛、強烈情緒**（驚嚇、恐懼），甚至死亡時。",
+            "> [!big] **暗光**、**劇痛**、**強烈情緒**（驚嚇、恐懼）→ 散瞳；情緒散瞳**不經由視神經**。",
             "",
-            "情緒引起的散瞳**不經由視神經**調控，是由大腦的情緒中樞直接啟動交感神經。",
-            "",
-            "同時，支配括約肌的**副交感被抑制**，兩者一起讓瞳孔放大。"
+            "- 暗光：需要更多光進眼睛。",
+            "- 嚴重疼痛、驚嚇、恐懼，甚至死亡時。",
+            "- 機制：{r:交感興奮}（擴張肌收縮）＋{g:副交感被抑制}（括約肌放鬆），兩者一起讓瞳孔放大。"
           ],
-          "keys": [
-            "暗光、疼痛、驚嚇 → 散瞳",
-            "情緒散瞳不經由視神經",
-            "交感興奮＋副交感抑制"
+          "exam": [
+            "**考法**：暗處、害怕、疼痛 → 瞳孔放大（106 生特 34、106 生普 20、110 生普 18）。"
           ],
           "flash": {
             "front": "受驚嚇時瞳孔放大，需不需要經由視神經？",
             "back": "不需要；由杏仁核與下視丘啟動交感路徑"
-          },
-          "exam": [
-            "**考法**：暗處、害怕、疼痛 → 瞳孔放大（106 生特 34、106 生普 20、110 生普 18）。"
-          ]
+          }
         },
         {
           "type": "check",
@@ -660,29 +634,23 @@
           "type": "card",
           "title": "瞳孔放大的路徑",
           "body": [
-            "```",
-            "杏仁核（amygdala）＋ 下視丘（hypothalamus）",
-            "  → 脊髓中外側細胞柱（intermediolateral cell column）",
-            "  → 上頸神經節（superior cervical ganglion）",
-            "  → 節後纖維走頸動脈叢（carotid plexus）",
-            "  → 虹膜上的瞳孔擴張肌收縮",
-            "  → 瞳孔擴大",
-            "```",
+            "> [!big] 後半段和眼部交感路徑一樣，只是上面多了指揮中心：**杏仁核＋下視丘**。",
             "",
-            "後半段和上一單元學的交感路徑完全一樣，只是多了**起點上方的指揮中心**：杏仁核與下視丘。"
+            "::: flow",
+            "杏仁核（amygdala）＋下視丘（hypothalamus）",
+            "脊髓中外側細胞柱（T1–T2）",
+            "{r:上頸神經節}",
+            "{r:頸動脈叢}（沿頸內動脈）",
+            "瞳孔擴張肌收縮 → 散瞳",
+            ":::"
           ],
-          "keys": [
-            "杏仁核、下視丘是上游",
-            "→ IML → SCG → 頸動脈叢 → 擴張肌",
-            "後半段＝眼部交感路徑"
+          "exam": [
+            "**考法**：瞳孔放大路徑：下視丘 → 脊髓 T1～T2 → 上頸神經節 → 擴張肌（108 生普 19）。"
           ],
           "flash": {
             "front": "情緒引起瞳孔放大的上游中樞？",
             "back": "杏仁核（amygdala）與下視丘（hypothalamus）"
-          },
-          "exam": [
-            "**考法**：瞳孔放大路徑：下視丘 → 脊髓 T1～T2 → 上頸神經節 → 擴張肌（108 生普 19）。"
-          ]
+          }
         },
         {
           "type": "check",
@@ -768,7 +736,8 @@
             }
           ]
         }
-      ]
+      ],
+      "pace": "free"
     },
     {
       "id": "l4",
@@ -787,46 +756,38 @@
       "steps": [
         {
           "type": "intro",
-          "title": "一次筆燈檢查，四個格子",
+          "title": "照一眼、看兩眼：拆出問題在哪一半",
           "body": [
-            "驗光師照一眼，同時看**兩眼**的反應：被照的眼（直接反應）和沒被照的眼（間接反應）。",
+            "> [!big] 光反射是一條來回的路：{b:傳入}（感光）＋{g:傳出}（縮瞳）。看兩眼的反應就能分出是哪一半壞了。",
             "",
-            "這四格結果，就能拆出問題在「**傳入**」還是「**傳出**」。如果傳入只壞一半，四格表看不出來，還有一招：**搖擺手電筒**。",
+            "- 完全壞 → 用**四格表**判讀。",
+            "- 只壞一半 → 用**搖擺手電筒**（RAPD）。",
+            "- 光照不縮、看近會縮 → **光–近分離**。",
             "",
-            "最後一個謎團：為什麼有些病人光照不縮、看近卻會縮（光–近分離）？它能幫你把病灶再縮小一段。",
-            "",
-            "補充說明：本課是依標準教科書補充的進階內容（不是上課講義原文），細節請以課本與授課老師為準。"
+            "> [!note] 補充說明",
+            "> 本課依標準教科書補充（不是上課講義原文），細節以課本與授課老師為準。"
           ]
         },
         {
           "type": "card",
-          "title": "光反射是一條「來回」的路：傳入＋傳出",
+          "title": "光反射：傳入＋傳出",
           "body": [
-            "> 🖼️ **看圖**：光反射的傳入路徑（腦底面標本）：視神經 → 視交叉 → 視徑；E-W 核（縮瞳核）緊貼動眼神經核",
+            "> [!big] {b:傳入}看**被照的眼**；{g:傳出}看**瞳孔自己**。",
             "",
-            "光反射分成兩半：",
+            "[[img]]",
+            "::: cols b g",
+            "### 傳入（感光 → 中腦）",
+            "- 視網膜 → 視神經（CN II）→ 視交叉 → 視徑 → 前頂蓋區",
+            "|||",
+            "### 傳出（中腦 → 括約肌）",
+            "- E-W 核 → CN III → 睫狀神經節 → 短睫狀神經 → 括約肌",
+            ":::",
+            "前頂蓋區會送到**兩側** E-W 核。",
             "",
-            "- **傳入**（感光 → 中腦）：視網膜 → 視神經（CN II）→ 視交叉 → 視徑 → 前頂蓋區。",
-            "- **傳出**（中腦 → 括約肌）：E-W 核 → CN III → 睫狀神經節 → 短睫狀神經 → 瞳孔括約肌。",
-            "",
-            "前頂蓋區會把訊號送到**兩側** E-W 核，所以：",
-            "",
-            "- 傳入端看**被照的眼**：這隻眼的「感光＋傳送」正不正常。",
-            "- 傳出端看**瞳孔自己**：這隻眼的括約肌與神經能不能執行。",
-            "",
-            "**判讀口訣**",
-            "1. 某隻眼**不管照哪一眼都不縮** → 這隻眼的**傳出**壞了。",
-            "2. **照某一眼時兩眼都不縮**（照另一眼時兩眼都縮）→ 被照的那隻眼**傳入**壞了。"
+            "> [!key] 判讀口訣",
+            "> 1. 某隻眼**不管照哪一眼都不縮** → 這隻眼的**傳出**壞了。",
+            "> 2. **照某一眼時兩眼都不縮**（照另一眼兩眼都縮）→ 被照那隻眼的**傳入**壞了。"
           ],
-          "keys": [
-            "不管照誰都不縮的那隻眼＝傳出壞",
-            "照某眼時兩眼都不縮＝該眼傳入壞",
-            "傳入看被照的眼、傳出看自己的瞳孔"
-          ],
-          "flash": {
-            "front": "照右眼時兩眼都不縮、照左眼時兩眼都縮，問題在哪？",
-            "back": "右眼的傳入端（視網膜／視神經）"
-          },
           "exam": [
             "**考法**：傳入 vs 傳出缺損的光反射表現；視徑／枕葉病變的瞳孔（108 師高 19、108 生普 9）。"
           ],
@@ -834,7 +795,11 @@
             "img/eye-anat-fig/light_path.jpg",
             "img/eye-anat-fig/pupil_nuc.jpg"
           ],
-          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "John A Beal, PhD   Dep't. of Cellular Biology & Anatomy, Louisiana State University Health Sciences Center Shreveport，Wikimedia Commons「Human brainstem anterior view.JPG」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Human_brainstem_anterior_view.JPG）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "照右眼時兩眼都不縮、照左眼時兩眼都縮，問題在哪？",
+            "back": "右眼的傳入端（視網膜／視神經）"
+          }
         },
         {
           "type": "check",
@@ -852,30 +817,25 @@
         },
         {
           "type": "card",
-          "title": "四格判讀表：把口訣畫成表",
+          "title": "四格判讀表",
           "body": [
+            "> [!big] **傳出壞**：壞眼永遠不縮、瞳孔不等大；**傳入壞**：照壞眼兩眼都不縮、瞳孔仍等大。",
+            "",
             "| 情況 | 照右眼：右／左 | 照左眼：右／左 |",
             "|---|---|---|",
             "| 正常 | 縮／縮 | 縮／縮 |",
-            "| 右眼傳入完全壞 | 不縮／不縮 | 縮／縮 |",
-            "| 右眼傳出壞（如右 CN III 麻痺） | 不縮／縮 | 不縮／縮 |",
-            "| 左眼傳入完全壞 | 縮／縮 | 不縮／不縮 |",
-            "| 左眼傳出壞 | 縮／不縮 | 縮／不縮 |",
-            "",
-            "- **傳出壞**：壞的那隻眼瞳孔一直不縮，通常會**瞳孔不等大**（壞的那隻較大）。",
-            "- **傳入完全壞**：兩眼的傳出都正常，所以**不會**造成瞳孔不等大；只是「照壞眼」時兩眼都沒反應。"
+            "| {b:右眼傳入完全壞} | 不縮／不縮 | 縮／縮 |",
+            "| {g:右眼傳出壞}（如右 CN III 麻痺） | 不縮／縮 | 不縮／縮 |",
+            "| {b:左眼傳入完全壞} | 縮／縮 | 不縮／不縮 |",
+            "| {g:左眼傳出壞} | 縮／不縮 | 縮／不縮 |"
           ],
-          "keys": [
-            "傳出壞：壞眼永遠不縮，瞳孔不等大",
-            "傳入壞：照壞眼兩眼都不縮，瞳孔仍等大"
+          "exam": [
+            "**考法**：「RAPD」是視光臨床判讀題，國考多半問傳入／傳出判斷。"
           ],
           "flash": {
             "front": "單側傳入完全受損，兩眼瞳孔會不等大嗎？",
             "back": "不會；兩眼傳出都正常，只是照壞眼時兩眼都沒反應"
-          },
-          "exam": [
-            "**考法**：「RAPD」是視光臨床判讀題，國考多半問傳入／傳出判斷。"
-          ]
+          }
         },
         {
           "type": "check",
@@ -893,31 +853,32 @@
         },
         {
           "type": "card",
-          "title": "RAPD（相對性傳入瞳孔缺損）：傳入只壞「一半」怎麼查",
+          "title": "RAPD：傳入只壞「一半」怎麼查",
           "body": [
-            "傳入**沒有完全壞，只是變弱**（視神經炎、兩眼不對稱的青光眼、大範圍視網膜剝離），照光時兩眼**都還會縮**，四格表看不出來。這時用**搖擺手電筒測試**比較兩眼的「傳入強度」：",
+            "> [!big] **搖擺手電筒**：光移到某眼時瞳孔反而**放大** → 該眼傳入較弱（RAPD）。",
             "",
-            "1. 在偏暗環境，筆燈從**正常眼**移到**患眼**，停約 3 秒，再換回。",
-            "2. 光到患眼時，這一眼送進中腦的訊號比剛才弱，兩眼瞳孔反而**放大**——因為兩側 E-W 核接收的是兩眼訊號的**總和**，總輸入下降了。",
-            "3. 光回到正常眼，兩眼瞳孔又縮小。",
+            "傳入沒有完全壞、只是變弱（視神經炎、兩眼不對稱的青光眼、大範圍視網膜剝離），兩眼照光都還會縮，四格表看不出來。",
             "",
-            "- 光移到某眼時瞳孔**放大** → 該眼有 **RAPD**（傳入較弱）。",
+            "::: flow",
+            "偏暗環境，筆燈照正常眼約 3 秒",
+            "移到患眼",
+            "送進中腦的總訊號變弱",
+            "兩眼瞳孔**放大**",
+            ":::",
+            "- 原因：兩側 E-W 核接收的是兩眼傳入的**總和**。",
             "- 正常人只有小幅收縮再放大（hippus），不是 RAPD。",
-            "- RAPD **不造成**瞳孔不等大；一般的白內障、屈光不正不會造成 RAPD。"
+            "- RAPD **不造成**瞳孔不等大；一般的白內障、屈光不正不會造成 RAPD。",
+            "",
+            "> [!tip] 一句話分清",
+            "> RAPD＝兩眼傳入「**強度不一樣**」；四格表異常＝傳入或傳出「**完全壞**」。"
           ],
-          "keys": [
-            "搖擺手電筒：光移到某眼時瞳孔放大 → 該眼 RAPD",
-            "原因：兩側 E-W 核接收兩眼傳入的總和",
-            "RAPD 不造成瞳孔不等大"
+          "exam": [
+            "**考法**：RAPD（擺動光試驗）＝傳入路徑單側缺損。"
           ],
-          "tip": "RAPD＝兩眼傳入「強度不一樣」；四格表異常＝傳入或傳出「完全壞」。",
           "flash": {
             "front": "搖擺手電筒測試時，光移到某眼瞳孔反而放大，代表什麼？",
             "back": "該眼有 RAPD（相對性傳入瞳孔缺損，傳入較弱）"
-          },
-          "exam": [
-            "**考法**：RAPD（擺動光試驗）＝傳入路徑單側缺損。"
-          ]
+          }
         },
         {
           "type": "check",
@@ -945,29 +906,24 @@
           "type": "card",
           "title": "光–近分離：光反射壞、近反射保留",
           "body": [
-            "光反射經**前頂蓋區**；近物反射走**皮質**，再從另一條路到 E-W 核。所以病灶若只擋掉光反射那條路，近反射可以保留 → **光–近分離**（light–near dissociation）：",
+            "> [!big] 光反射走**前頂蓋區**、近反射走**皮質**：病灶只擋到光反射那條路 → 光照不縮、看近會縮。",
             "",
             "| 原因 | 病灶位置 | 瞳孔特徵 |",
             "|---|---|---|",
-            "| **Adie 瞳孔** | 睫狀神經節／短睫狀神經（去神經後纖維錯向再生） | 單側散瞳；光反射遲鈍；看近**緩慢**收縮、放鬆後**緩慢**放大 |",
-            "| **Argyll Robertson 瞳孔** | 中腦背側、前頂蓋區附近；典型為神經梅毒 | 雙側**小**而不規則；光反射消失、近反射正常 |",
-            "| **背側中腦症候群** | 中腦背側（前頂蓋區） | 瞳孔偏大；光反射差、近反射較好，常合併上視受限 |",
+            "| **Adie 瞳孔** | 睫狀神經節／短睫狀神經（去神經後纖維錯向再生） | **單側散瞳**；光反射遲鈍；看近**緩慢**收縮、放鬆後**緩慢**放大 |",
+            "| **Argyll Robertson 瞳孔** | 中腦背側、前頂蓋區附近；典型為**神經梅毒** | **雙側小而不規則**；光反射消失、近反射正常 |",
+            "| **背側中腦症候群** | 中腦背側（前頂蓋區） | 瞳孔偏大；光反射差、近反射較好，常合併**上視受限** |",
             "",
             "- 光–近分離要在檢查的「**近反應**」步驟才發現。",
-            "- 它和 RAPD 不同：光–近分離是「光反射與近反射**不一致**」；RAPD 是「兩眼傳入強度不一致」。"
+            "- 和 RAPD 不同：光–近分離是「光反射與近反射不一致」。"
           ],
-          "keys": [
-            "光反射走前頂蓋區；近反射走皮質 → 才可能分離",
-            "Adie：單側散瞳、緩慢收縮；Argyll Robertson：雙側小、不規則",
-            "光–近分離 ≠ RAPD"
+          "exam": [
+            "**考法**：光－近分離（光反射壞、近反射保留）的病灶位置題（頂蓋前區）。"
           ],
           "flash": {
             "front": "Argyll Robertson 瞳孔的特徵？",
             "back": "雙側小而不規則；光反射消失、近反射正常（光–近分離），典型見於神經梅毒"
-          },
-          "exam": [
-            "**考法**：光－近分離（光反射壞、近反射保留）的病灶位置題（頂蓋前區）。"
-          ]
+          }
         },
         {
           "type": "check",
@@ -1076,7 +1032,8 @@
           ],
           "next": "回到前面的單元複習路徑，再試著做最難的病灶定位題。"
         }
-      ]
+      ],
+      "pace": "free"
     },
     {
       "id": "l5",
@@ -1088,22 +1045,18 @@
       "steps": [
         {
           "type": "intro",
-          "title": "瞳孔與調節題：背三條路徑、一張藥物表",
+          "title": "三件事：光反射、近反射、瞳孔藥物",
           "body": [
-            "本課整理三件事：",
-            "- **光反射**路徑與四級神經元；",
-            "- **近反射／調節**的機制與老花；",
-            "- **瞳孔藥物**（散瞳劑／縮瞳劑）與房水引流。"
+            "> [!big] 本課三張速查：**光反射四級神經元**、**近反射與調節**、**瞳孔藥物與房水**。"
           ]
         },
         {
           "type": "card",
-          "title": "光反射：四級神經元",
+          "title": "速查一：光反射的四級神經元",
           "body": [
-            "> 🖼️ **看圖**：E-W 核（縮瞳核）緊貼動眼神經核；睫狀神經節與三種纖維",
+            "> [!big] 第二級最常考：**頂蓋前核 ↔ 雙側 E-W 核**。中樞在**中腦**，不經 LGN、視皮質。",
             "",
-            "視網膜 → 視神經 → 視徑 → **頂蓋前核** → **雙側 E-W 核** → 動眼神經 → **睫狀神經節** → **短睫狀神經** → **虹膜括約肌**收縮。",
-            "",
+            "[[img]]",
             "| 級數 | 連接 |",
             "|---|---|",
             "| 第 1 級（感覺） | 視網膜 → 頂蓋前核 |",
@@ -1111,29 +1064,25 @@
             "| 第 3 級（節前運動） | E-W 核 → 睫狀神經節 |",
             "| 第 4 級（節後運動） | 睫狀神經節 → 虹膜括約肌 |",
             "",
-            "**不經過**：外側膝狀體、視覺皮質、下視丘（傳入只用到視神經與頂蓋前核）。單眼照光兩眼都縮（直接＋間接反應）是因為頂蓋前核連到**雙側** E-W 核。中樞在**中腦**。"
-          ],
-          "keys": [
-            "頂蓋前核 → 雙側 E-W 核",
-            "中樞在中腦",
-            "不經 LGN、視皮質"
+            "> [!warn] 不經過",
+            "> 外側膝狀體、視覺皮質、下視丘。單眼照光兩眼都縮，是因為頂蓋前核連到**雙側** E-W 核。"
           ],
           "exam": [
             "**光反射順序／級數**（111 師高 27、108 生普 14、111 生普 18、114 生普 18）；**中樞在中腦**（106 師特 33）；**與光反射有關的神經**：II 與 III（109 師特 27）。",
             "**路徑錯誤選項**：「依序經睫狀神經節、**交感**神經」錯（106 師高 4）；「不包含外側膝狀體」（112 生普 13、114 生普 16）。"
           ],
+          "img": [
+            "img/eye-anat-fig/pupil_nuc.jpg",
+            "img/eye-anat-fig/cil_ganglion.jpg"
+          ],
+          "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "demo": [
             "**示範**：問「光反射第三級傳導」→ 節前**運動**（E-W 核 → 睫狀神經節）；不是「節前感覺」。"
           ],
           "flash": {
             "front": "光反射第二級神經元連接？",
             "back": "頂蓋前核與雙側 E-W 核。"
-          },
-          "img": [
-            "img/eye-anat-fig/pupil_nuc.jpg",
-            "img/eye-anat-fig/cil_ganglion.jpg"
-          ],
-          "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          }
         },
         {
           "type": "check",
@@ -1151,28 +1100,36 @@
         },
         {
           "type": "card",
-          "title": "近反射與調節：三聯徵、睫狀肌與老花",
+          "title": "速查二：近反射與調節",
           "body": [
-            "> 🖼️ **看圖**：調節：睫狀肌收縮 → 水晶體變厚；瞳孔括約肌在虹膜",
+            "> [!big] 看近：**睫狀肌收縮 → 懸韌帶放鬆 → 水晶體變厚**。錯誤選項幾乎都是把「收縮／放鬆」說反。",
             "",
-            "**近反射三聯徵**：**調節（accommodation）＋內聚（convergence）＋縮瞳**。**開散（divergence）不是近反射**。",
+            "[[img]]",
+            "- **三聯徵**：調節＋內聚＋縮瞳；**開散（divergence）不是**。",
+            "- **路徑**：視皮質 → 額葉眼區 → 動眼神經核（內聚）與 **E-W 核** → 睫狀神經節 → 短睫狀神經 → 睫狀肌（調節）＋括約肌（縮瞳）。",
             "",
-            "**路徑**：視皮質 → 額葉眼區 → 動眼神經核（**內聚**）與 **E-W 核** → 睫狀神經節 → 短睫狀神經 → **睫狀肌收縮**（調節）＋ 括約肌收縮（縮瞳）。",
-            "",
-            "**調節的機制**：副交感（ACh）→ **睫狀肌收縮** → **懸韌帶放鬆** → 水晶體**變厚** → 屈光力↑。看遠相反（睫狀肌放鬆、懸韌帶緊）。",
-            "**睫狀肌**有三種平滑肌纖維：縱向（Brücke）、放射（斜向）、環狀（Müller，和眼瞼的 Müller's muscle 穆勒氏肌不同）；**睫狀突**位在睫狀體皺褶部、分泌房水。角膜與虹膜的**感覺**走三叉神經眼支（V1），不屬於反射的運動路徑。",
-            "**調節幅度**隨年齡**遞減** → 約 40 歲出現**老花**。水晶體、懸韌帶、睫狀肌參與調節，**角膜不參與**。"
-          ],
-          "keys": [
-            "近反射＝調節＋內聚＋縮瞳",
-            "睫狀肌收縮 → 懸韌帶放鬆 → 水晶體變厚",
-            "老花：調節幅度遞減"
+            "::: cols g b",
+            "### 看近",
+            "- 睫狀肌**收縮**（副交感 ACh）",
+            "- 懸韌帶**放鬆**",
+            "- 水晶體**變厚**、屈光力↑",
+            "|||",
+            "### 看遠",
+            "- 睫狀肌**放鬆**",
+            "- 懸韌帶**拉緊**",
+            "- 水晶體變薄",
+            ":::",
+            "- **睫狀肌**三種平滑肌纖維：縱向（Brücke）、放射（斜向）、環狀（Müller，和眼瞼的 Müller's muscle 穆勒氏肌**不同**）。**睫狀突**在睫狀體皺褶部、分泌房水。",
+            "- 角膜與虹膜的**感覺**走三叉神經眼支（V1），不屬於反射的運動路徑。",
+            "- **調節幅度**隨年齡遞減 → 約 40 歲出現**老花**。水晶體、懸韌帶、睫狀肌參與調節，**角膜不參與**。"
           ],
           "exam": [
             "**調節機制**（106 師高 2、108 師高 12、109 師高 20、111 師高 11、112 師高 11、106 生普 4、106 生特 1、111 生普 9）：選項常把「睫狀肌／懸韌帶」收縮放鬆說反。",
             "**近反射成員**（114 師高 25、110 生普 7）；**調節反射路徑**（110 師高 26、109 師高 12）；**調節幅度與老化**（106 生特 12）。",
             "**睫狀肌三種纖維**（106 師特 1）；**不參與調節**：角膜（110 生普 17）；**E-W 核使睫狀肌收縮**（107 生特 21）。"
           ],
+          "img": "img/eye-anat-fig/accom.jpg",
+          "img_source": "BruceBlaus. When using this image in external sources it can be cited as:  Blausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "demo": [
             "**示範**：「睫狀肌收縮 → 懸韌帶**收縮**」錯，應是**放鬆**；「水晶體變薄」也錯，應是變厚。",
             "**示範**：看近時「隅角變寬」不屬近反射表現（看近時前房變淺）。"
@@ -1180,9 +1137,7 @@
           "flash": {
             "front": "近反射三聯徵？",
             "back": "調節、內聚、縮瞳（開散不是）。"
-          },
-          "img": "img/eye-anat-fig/accom.jpg",
-          "img_source": "BruceBlaus. When using this image in external sources it can be cited as:  Blausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          }
         },
         {
           "type": "check",
@@ -1200,33 +1155,30 @@
         },
         {
           "type": "card",
-          "title": "瞳孔藥物與房水引流",
+          "title": "速查三：瞳孔藥物與房水引流",
           "body": [
-            "> 🖼️ **看圖**：房水從睫狀體 → 後房 → 前房 → 小樑網 → 薛氏管",
+            "> [!big] **Pilocarpine 是縮瞳劑**（不能散瞳）；它讓睫狀肌收縮、拉開小樑網 → 房水排出↑、眼壓↓。",
             "",
+            "[[img]]",
             "| 藥物 | 作用 | 結果 |",
             "|---|---|---|",
-            "| **散瞳劑**：tropicamide、atropine（抗膽鹼） | 阻斷副交感 | 散瞳、**麻痺調節** |",
-            "| **散瞳劑**：phenylephrine、cocaine（擬交感） | 增強交感 | 散瞳 |",
-            "| **縮瞳劑**：pilocarpine（毛果芸香鹼，擬副交感） | 刺激括約肌、睫狀肌 | **縮瞳**、**房水引流↑** |",
+            "| {g:散瞳劑：tropicamide、atropine}（抗膽鹼） | 阻斷副交感 | 散瞳、**麻痺調節** |",
+            "| {r:散瞳劑：phenylephrine、cocaine}（擬交感） | 增強交感 | 散瞳 |",
+            "| {g:縮瞳劑：pilocarpine}（毛果芸香鹼，擬副交感） | 刺激括約肌、睫狀肌 | **縮瞳**、**房水引流↑** |",
             "",
-            "**房水引流**：副交感使睫狀肌收縮 → 拉開**小樑網** → 房水排出增加 → **眼壓下降**（所以 pilocarpine 可治青光眼）。**隅角**是前房周邊，房水經此離開。"
-          ],
-          "keys": [
-            "pilocarpine 是縮瞳劑",
-            "抗膽鹼 → 散瞳＋麻痺調節",
-            "副交感 → 房水引流↑"
+            "- **房水引流**：副交感 → 睫狀肌收縮 → 拉開**小樑網** → 房水排出增加 → **眼壓下降**（所以 pilocarpine 可治青光眼）。",
+            "- **隅角**是前房周邊，房水從這裡離開；看近時前房變淺，「隅角變寬」不是近反射的表現。"
           ],
           "exam": [
             "**散瞳劑／縮瞳劑**：Pilocarpine **不能**散瞳（113 師高 27；113 師高 27）。",
             "**副交感與房水引流**（109 師特 26）。",
             "**縮瞳的原因**（106 生普 20）。"
           ],
+          "img": "img/eye-anat-fig/drain.jpg",
+          "img_source": "BruceBlaus. When using this image in external sources it can be cited as:  Blausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "demo": [
             "**示範**：四個藥 tropicamide、atropine、pilocarpine、cocaine，問哪個無法散瞳 → pilocarpine。"
-          ],
-          "img": "img/eye-anat-fig/drain.jpg",
-          "img_source": "BruceBlaus. When using this image in external sources it can be cited as:  Blausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          ]
         },
         {
           "type": "check",
@@ -1320,7 +1272,8 @@
         "調節幅度",
         "隅角",
         "頂蓋前核"
-      ]
+      ],
+      "pace": "free"
     }
   ],
   "path": [

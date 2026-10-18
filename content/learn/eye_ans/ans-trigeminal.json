@@ -39,43 +39,38 @@
       "steps": [
         {
           "type": "intro",
-          "title": "不用背密密麻麻的小神經",
+          "title": "用「方向」解題，不用背整條路徑",
           "body": [
-            "老師上課一再強調：國考問「交感神經經由哪一條神經到達睫狀體與瞳孔擴大肌」，不用背整條路徑。",
+            "> [!big] 只要知道 V1 的三條分支**各往哪裡走**，國考的神經題就能直接選出答案。",
             "",
-            "只要知道三叉神經眼分支的三條神經**各自往哪裡走**，就能直接選出答案。"
+            "老師上課一再強調：問「交感神經經由哪一條神經到達睫狀體與瞳孔擴大肌」，不用背整條路徑。"
           ]
         },
         {
           "type": "card",
           "title": "三叉神經（CN V）的三個分支",
           "body": [
-            "> 🖼️ **看圖**：臉上的感覺地圖：V1（眶上）、V2（眶下）、V3（頦、頰）",
+            "> [!big] 三叉神經是**最粗**的腦神經：{o:V1}、{b:V2} **純感覺**；{p:V3} 感覺＋運動。",
             "",
-            "三叉神經是 12 對腦神經中**最粗、最大**的一對，因為有三個分支才叫「三叉」：",
-            "",
-            "| 分支 | 方向 | 性質 | 與眼睛的關係 |",
+            "[[img]]",
+            "| 分支 | 方向 | 性質 | 和眼睛的關係 |",
             "|---|---|---|---|",
-            "| **V1 眼神經**（ophthalmic n.） | 往眼睛 | **純感覺** | 眼球、角膜、**上眼皮** |",
-            "| **V2 上頷神經**（maxillary n.） | 往上頷 | **純感覺** | **下眼皮** |",
-            "| **V3 下頷神經**（mandibular n.） | 往下頷 | **感覺＋運動** | 與眼球無直接關係 |",
+            "| {o:V1 眼神經}（ophthalmic n.） | 往眼睛 | **純感覺** | 眼球、角膜、**上眼皮** |",
+            "| {b:V2 上頷神經}（maxillary n.） | 往上頷 | **純感覺** | **下眼皮** |",
+            "| {p:V3 下頷神經}（mandibular n.） | 往下頷 | **感覺＋運動** | 和眼球無直接關係 |",
             "",
-            "三叉神經本身是感覺神經，但走著走著會有其他神經纖維（例如交感、CN VII 的副交感）混進它的分支裡一起走。"
+            "> [!note] 搭便車",
+            "> 三叉神經本身是感覺神經，但交感、CN VII 的副交感纖維會混進它的分支裡一起走。"
           ],
-          "keys": [
-            "V1、V2 純感覺；V3 感覺＋運動",
-            "上眼皮 V1、下眼皮 V2",
-            "三叉神經是最粗的腦神經"
-          ],
-          "flash": {
-            "front": "三叉神經哪一個分支同時有感覺與運動？",
-            "back": "V3 下頷神經（V1、V2 是純感覺）"
-          },
           "exam": [
             "**考法**：V1、V2、V3 的分區與角膜、眼瞼、結膜感覺（108 師高 31、110 生普 21、109 生特 6、108 生普 22）。"
           ],
           "img": "img/eye-anat-fig/v_skin.jpg",
-          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "三叉神經哪一個分支同時有感覺與運動？",
+            "back": "V3 下頷神經（V1、V2 是純感覺）"
+          }
         },
         {
           "type": "check",
@@ -103,34 +98,39 @@
           "type": "card",
           "title": "V1 的三個分支：淚腺、額、鼻睫",
           "body": [
-            "> 🖼️ **看圖**：V1 眼神經分成額、淚腺、鼻睫三支",
+            "> [!big] V1 分三支，**只有鼻睫神經進眼球**。",
             "",
-            "眼神經（V1）再分成三支：",
+            "[[img]]",
+            "::: cols y y g",
+            "### 淚腺神經",
+            "- lacrimal n.",
+            "- 往**淚腺**附近",
+            "- 不進眼球",
+            "|||",
+            "### 額神經",
+            "- frontal n.",
+            "- 往**額頭**（和上眼瞼）",
+            "- 不進眼球",
+            "|||",
+            "### 鼻睫神經",
+            "- nasociliary n.",
+            "- 往**眼球**",
+            "- 分出長、短睫狀神經",
+            ":::",
+            "所以**角膜的感覺**、{r:交感}纖維要到**睫狀體與瞳孔擴大肌**，都走**鼻睫神經**。",
             "",
-            "| 分支 | 往哪裡走 | 有沒有進眼球 |",
-            "|---|---|---|",
-            "| **淚腺神經**（lacrimal n.） | 往**淚腺**附近 | ✘ |",
-            "| **額神經**（frontal n.） | 往**額頭**（與上眼瞼）的感覺 | ✘ |",
-            "| **鼻睫神經**（nasociliary n.） | 往**眼球** | ✔ |",
-            "",
-            "- 只有**鼻睫神經**會分出長、短睫狀神經，進到眼球裡。",
-            "- 所以**角膜的感覺**、交感纖維要到**睫狀體與瞳孔擴大肌**，都走**鼻睫神經**。"
+            "> [!tip] 老師說",
+            "> 鼻睫神經「考過好多次」，是送分題：不要用背的，用**方向**判斷。"
           ],
-          "keys": [
-            "淚腺神經 → 淚腺；額神經 → 額頭",
-            "鼻睫神經 → 眼球",
-            "角膜感覺＝鼻睫神經"
-          ],
-          "tip": "老師說鼻睫神經「考過好多次」，是送分題，不要用背的，用「方向」判斷。",
-          "flash": {
-            "front": "V1 三個分支中，哪一支往眼球走？",
-            "back": "鼻睫神經（nasociliary nerve）"
-          },
           "exam": [
             "**考法**：V1 的三分支：淚腺神經、額神經、鼻睫神經；**鼻睫神經**帶角膜與睫狀體感覺（109 師特 31、112 師高 8）。"
           ],
           "img": "img/eye-anat-fig/v1_branch.jpg",
-          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "V1 三個分支中，哪一支往眼球走？",
+            "back": "鼻睫神經（nasociliary nerve）"
+          }
         },
         {
           "type": "check",
@@ -150,24 +150,23 @@
           "type": "card",
           "title": "用「方向」解國考題",
           "body": [
-            "**解題步驟：**",
-            "1. 題目問的目標構造在哪裡？（睫狀體、瞳孔括約肌、瞳孔擴大肌、角膜 → 都在**眼球**）",
-            "2. V1 三支中誰往眼球走？→ **鼻睫神經**",
-            "3. 答案就出來了，不需要背完整的交感路徑。",
+            "> [!big] 先問**目標在哪裡**，再找**往那個方向走**的分支。",
             "",
-            "同樣的邏輯：題目問「淚腺」相關 → 淚腺神經；問「額頭皮膚」→ 額神經。"
+            "::: flow",
+            "目標在哪？（睫狀體、瞳孔肌、角膜 → 都在眼球）",
+            "V1 三支誰往眼球走？",
+            "**鼻睫神經**",
+            ":::",
+            "- 問「淚腺」相關 → 淚腺神經；問「額頭皮膚」→ 額神經。",
+            "- 三叉神經**只管感覺**：眼瞼的**運動**不是它。"
           ],
-          "keys": [
-            "先找目標構造的位置",
-            "再找往那個方向走的分支"
+          "exam": [
+            "**考法**：用「方向」解國考題：三叉神經只管**感覺**，眼瞼運動不是它（111 生普 4）。"
           ],
           "flash": {
             "front": "交感纖維到睫狀體與瞳孔擴大肌，搭 V1 的哪一條分支？",
             "back": "鼻睫神經"
-          },
-          "exam": [
-            "**考法**：用「方向」解國考題：三叉神經只管**感覺**，眼瞼運動不是它（111 生普 4）。"
-          ]
+          }
         },
         {
           "type": "check",
@@ -253,7 +252,8 @@
         "眼瞼感覺",
         "眼神經分支",
         "角膜神經"
-      ]
+      ],
+      "pace": "free"
     },
     {
       "id": "l2",
@@ -266,41 +266,39 @@
       "steps": [
         {
           "type": "intro",
-          "title": "「下列何者**不是**通過視神經孔的構造？」",
+          "title": "神經從哪些洞進眼眶？",
           "body": [
-            "老師說這題國考考過。只記得「視神經孔裡有視神經」是不夠的。",
+            "> [!big] 兩個洞要分清楚：**視神經管**走視神經＋眼動脈；**上眶裂**走 III、IV、V1、VI。",
             "",
-            "這課把神經進入眼眶的幾個通道，和交感、副交感各自跟誰一起走，一次整理清楚。"
+            "老師說這題國考考過，只記得「視神經孔裡有視神經」是不夠的。這課也整理{r:交感}、{g:副交感}各自跟誰一起走。"
           ]
         },
         {
           "type": "card",
           "title": "視神經管（視神經孔）",
           "body": [
-            "> 🖼️ **看圖**：真實顱骨：視神經管與眶上裂的位置",
+            "> [!big] 視神經管至少記兩個：**視神經（CN II）**＋**眼動脈**；{r:交感}纖維也沿著眼動脈進來。",
             "",
-            "通過**視神經管**的構造至少要記兩個：",
-            "1. **視神經**（CN II）",
-            "2. **眼動脈**（ophthalmic artery，內頸動脈的分支）",
-            "",
-            "**交感纖維**沿著內頸動脈 → **眼動脈**的外圍進入眼眶。",
-            "",
-            "**副交感纖維不是**沿著眼動脈走，而是跟著 **CN III** 走，CN III 經過的是**上眶裂**。"
+            "[[img]]",
+            "::: cols r g",
+            "### 交感：跟血管走",
+            "- 沿頸內動脈 → **眼動脈**外圍",
+            "- 經**視神經管**入眶",
+            "|||",
+            "### 副交感：跟 CN III 走",
+            "- **不是**沿眼動脈",
+            "- CN III 走的是**上眶裂**",
+            ":::"
           ],
-          "keys": [
-            "視神經管：視神經＋眼動脈",
-            "交感沿眼動脈入眶",
-            "副交感跟 CN III 走上眶裂"
-          ],
-          "flash": {
-            "front": "通過視神經管的兩個主要構造？",
-            "back": "視神經（CN II）與眼動脈"
-          },
           "exam": [
             "**考法**：視神經管＝視神經＋眼動脈（＋交感）（107 師高 3、110 生普 16、108 師高 3）。"
           ],
           "img": "img/eye-anat-fig/ofc_canal.jpg",
-          "img_source": "Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "通過視神經管的兩個主要構造？",
+            "back": "視神經（CN II）與眼動脈"
+          }
         },
         {
           "type": "check",
@@ -318,31 +316,26 @@
         },
         {
           "type": "card",
-          "title": "上眶裂與總腱環",
+          "title": "上眶裂與總腱環：誰在圈內、誰在圈外",
           "body": [
-            "> 🖼️ **看圖**：穿過眶上裂的神經：III、IV、V1、VI；視神經管、眶上裂、圓孔",
+            "> [!big] 上眶裂走 **III、IV、V1、VI**；**要進眼球的走總腱環內**（鼻睫神經），不進眼球的走環外。",
             "",
-            "**上眶裂**通過：**CN III、IV、V1（的分支）、VI**。",
+            "[[img]]",
+            "**總腱環**（common tendinous ring，也叫 Zinn 腱環）是四條直肌的共同起點。",
             "",
-            "**總腱環**（common tendinous ring）是四條直肌的共同起點，上眶裂的神經有的走環內、有的走環外：",
-            "",
-            "| 總腱環**內** | 總腱環**外** |",
-            "|---|---|",
-            "| **鼻睫神經**（V1，往眼球） | **淚腺神經**、**額神經**（V1） |",
-            "| 動眼神經（上、下分支）、外旋神經 | **滑車神經（CN IV）** |",
-            "",
-            "記法：**要進眼球的，走環內**（鼻睫神經）；V1 中不進眼球的兩支走環外。"
+            "::: cols g y",
+            "### 總腱環內",
+            "- **鼻睫神經**（V1，往眼球）",
+            "- 動眼神經（上、下分支）",
+            "- 外旋神經（VI）",
+            "|||",
+            "### 總腱環外",
+            "- **淚腺神經**、**額神經**（V1）",
+            "- **滑車神經（IV）**",
+            ":::",
+            "> [!warn] 模型做錯",
+            "> 實驗室有些模型把滑車神經做在總腱環**裡面**，那是錯的！"
           ],
-          "keys": [
-            "上眶裂：III、IV、V1、VI",
-            "鼻睫神經走總腱環內",
-            "滑車、淚腺、額神經走總腱環外"
-          ],
-          "tip": "老師提醒：實驗室有些模型把滑車神經做在總腱環**裡面**，那是錯的！",
-          "flash": {
-            "front": "滑車神經走在總腱環之內還是之外？",
-            "back": "之外（有些實驗室模型做錯）"
-          },
           "exam": [
             "**考法**：眶上裂：III、IV、V1、VI；總腱環內「鼻動外」（114 師高 3、114 師高 5、110 生普 4、111 生普 15、113 生普 6）。"
           ],
@@ -350,7 +343,11 @@
             "img/eye-anat-fig/sof_nerves.jpg",
             "img/eye-anat-fig/canals3.jpg"
           ],
-          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）；Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）；Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "滑車神經走在總腱環之內還是之外？",
+            "back": "之外（有些實驗室模型做錯）"
+          }
         },
         {
           "type": "check",
@@ -376,36 +373,29 @@
         },
         {
           "type": "card",
-          "title": "長、短睫狀神經各帶什麼纖維？",
+          "title": "長、短睫狀神經各帶什麼？",
           "body": [
-            "> 🖼️ **看圖**：長、短睫狀神經：看有沒有經過睫狀神經節",
+            "> [!big] **經過睫狀神經節**的是**短**睫狀神經（帶{g:副交感}）；直接從鼻睫神經分出的是**長**睫狀神經（沒有副交感）。",
             "",
-            "**命名邏輯：**",
-            "- 經過**睫狀神經節**之後才出發、離眼球近 → **短睫狀神經**",
-            "- 沒經過睫狀神經節、直接從鼻睫神經分出 → **長睫狀神經**",
-            "",
+            "[[img]]",
             "| 纖維 | 短睫狀神經 | 長睫狀神經 |",
             "|---|---|---|",
-            "| 副交感節後（CN III） | ✔（在睫狀神經節換元） | ✘ |",
-            "| 交感節後 | ✔（穿過睫狀神經節，不換元） | ✔ |",
-            "| 感覺（V1 鼻睫神經） | ✔ | ✔ |",
+            "| {g:副交感節後}（CN III） | ✔（在睫狀神經節換元） | ✘ |",
+            "| {r:交感節後} | ✔（穿過睫狀神經節，不換元） | ✔ |",
+            "| {b:感覺}（V1 鼻睫神經） | ✔ | ✔ |",
             "",
-            "交感在**上頸神經節**已經換完元，睫狀神經節對它只是路過，所以長、短兩條都可以走。"
+            "> [!why] 為什麼交感長短都能走？",
+            "> 交感在**上頸神經節**已經換完元，睫狀神經節對它只是路過。"
           ],
-          "keys": [
-            "副交感只走短睫狀神經",
-            "交感長、短都可以走",
-            "長睫狀神經沒有副交感節後纖維"
-          ],
-          "flash": {
-            "front": "長睫狀神經裡有沒有副交感節後纖維？為什麼？",
-            "back": "沒有；長睫狀神經不經睫狀神經節，副交感必須在睫狀神經節換元後走短睫狀神經"
-          },
           "exam": [
             "**考法**：長、短睫狀神經各帶什麼：長睫狀＝感覺＋交感（直達）；短睫狀＝經睫狀神經節，帶副交感＋感覺（109 師特 31）。"
           ],
           "img": "img/eye-anat-fig/cil_short.jpg",
-          "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "長睫狀神經裡有沒有副交感節後纖維？為什麼？",
+            "back": "沒有；長睫狀神經不經睫狀神經節，副交感必須在睫狀神經節換元後走短睫狀神經"
+          }
         },
         {
           "type": "check",
@@ -490,7 +480,8 @@
       "teaches": [
         "副交感神經",
         "眼眶通道"
-      ]
+      ],
+      "pace": "free"
     },
     {
       "id": "l3",
@@ -502,50 +493,51 @@
       "steps": [
         {
           "type": "intro",
-          "title": "三叉神經與眼眶通道題：兩張地圖就夠",
+          "title": "兩張地圖：感覺地圖＋通道地圖",
           "body": [
-            "這類題只有兩張地圖要記熟：",
-            "- **感覺地圖**：V1、V2、V3 各管哪裡；",
-            "- **通道地圖**：眶上裂與總腱環的「內外」口訣。"
+            "> [!big] 這類題只要兩張地圖：**V1、V2、V3 各管哪裡**；**眶上裂與總腱環的內外**。"
           ]
         },
         {
           "type": "card",
-          "title": "三叉神經：感覺地圖與疾病",
+          "title": "速查一：三叉神經的感覺地圖與疾病",
           "body": [
-            "> 🖼️ **看圖**：臉上的感覺地圖：V1（眶上）、V2（眶下）、V3（頦、頰）",
+            "> [!big] {o:V1：上眼瞼、角膜、淚腺、額頭、鼻背鼻尖}；{b:V2：下眼瞼、臉頰、上唇}；{p:V3：下巴、咀嚼}。",
             "",
+            "[[img]]",
             "| 分支 | 眼周感覺 | 通道 |",
             "|---|---|---|",
-            "| **V1 眼神經** | 眼球（角膜）、**上眼瞼**、淚腺、額頭、鼻背、鼻尖 | **眶上裂** |",
-            "| **V2 上頷神經** | **下眼瞼**、臉頰、上唇；結膜部分 | 圓孔（不入眼眶，眶下神經從眶下裂入） |",
-            "| **V3 下頷神經** | 下巴、下唇；咀嚼運動 | 卵圓孔 |",
+            "| {o:V1 眼神經} | 眼球（角膜）、**上眼瞼**、淚腺、額頭、鼻背、鼻尖 | **眶上裂** |",
+            "| {b:V2 上頷神經} | **下眼瞼**、臉頰、上唇；結膜部分 | 圓孔（眶下神經從眶下裂入） |",
+            "| {p:V3 下頷神經} | 下巴、下唇；咀嚼運動 | 卵圓孔 |",
             "",
-            "三個分支在**三叉神經節（半月神經節）**才分開。**結膜感覺**：V1（上）、V2（下）。**淚腺反射（淚水）**的傳入是 V1、V2。",
+            "- 三個分支在**三叉神經節（半月神經節）**才分開。**結膜感覺**：V1（上）、V2（下）。**淚水反射**的傳入是 V1、V2。",
             "",
-            "**臨床**：",
-            "- **三叉神經痛（tic douloureux）**：像觸電，多為**血管壓迫神經根**；最常見 **V2**（其次 V3），**V1 最少**，可同時影響多個區域。",
-            "- **帶狀疱疹**：沿 V1 → 眼部感染風險；鼻尖有疹（**Hutchinson 徵象**，鼻睫神經）→ 眼睛受累風險高。"
-          ],
-          "keys": [
-            "V1：上眼瞼、角膜、淚腺；V2：下眼瞼",
-            "三叉神經痛多 V2、少 V1",
-            "鼻尖疹 → 眼睛風險↑"
+            "::: cols r r",
+            "### 三叉神經痛（tic douloureux）",
+            "- 像觸電；多為**血管壓迫神經根**",
+            "- 最常見 **V2**（其次 V3），**V1 最少**",
+            "- 可同時影響多個區域",
+            "|||",
+            "### 帶狀疱疹",
+            "- 沿 V1 → 眼部感染風險",
+            "- 鼻尖有疹＝**Hutchinson 徵象**（鼻睫神經）→ 眼睛受累風險高",
+            ":::"
           ],
           "exam": [
             "**V1 的感覺**：眼球、上眼瞼、淚腺（下眼瞼不是）（108 師高 31、110 生普 21）。",
             "**三叉神經痛**：多 V2、可多區（109 師高 10、110 生普 23）；**帶狀疱疹** → V1（106 生特 33）。",
             "**三叉神經節三區**（108 生普 22）；**結膜感覺 ← V**（109 生特 6）；**眼神經分支**（109 師特 31）。"
           ],
+          "img": "img/eye-anat-fig/v_skin.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "demo": [
             "**示範**：「三叉神經痛只可能影響單一區域」錯；「最常見於 V1」也錯（V2 最常、V1 最少）。"
           ],
           "flash": {
             "front": "Hutchinson 徵象是什麼？",
             "back": "鼻尖的帶狀疱疹疹；表示鼻睫神經受累，眼睛被侵犯風險高。"
-          },
-          "img": "img/eye-anat-fig/v_skin.jpg",
-          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray784.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray784.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          }
         },
         {
           "type": "check",
@@ -563,24 +555,31 @@
         },
         {
           "type": "card",
-          "title": "眶上裂、總腱環、視神經管：內外口訣",
+          "title": "速查二：眶上裂、總腱環、視神經管",
           "body": [
-            "> 🖼️ **看圖**：視神經管、眶上裂、圓孔",
+            "> [!big] 環內「**鼻動外**」（鼻睫、動眼、外旋）；環外「**額淚滑**」（額、淚腺、滑車）。",
             "",
+            "[[img]]",
             "- **視神經管**：視神經（II）＋**眼動脈**＋交感纖維。",
-            "- **眶上裂**：**III、IV、V1、VI**＋眼靜脈（**視神經不走這裡**；**V2** 走圓孔、**VII** 不進眼眶）。",
+            "- **眶上裂**：**III、IV、V1、VI**＋眼靜脈。**視神經不走這裡**；**V2** 走圓孔；**VII** 不進眼眶。",
             "",
-            "眶上裂中被**總腱環（辛氏環）** 分成裡外：",
-            "- **環內**：**動眼神經（III）、外旋神經（VI）、鼻睫神經**（還有視神經）。→ 口訣「**鼻動外**」。",
-            "- **環外**：**滑車神經（IV）、額神經、淚腺神經**。→ 口訣「**額淚滑**」。",
+            "::: cols g y",
+            "### 環內：鼻動外",
+            "- **鼻睫神經**",
+            "- **動眼神經（III）**",
+            "- **外旋神經（VI）**",
+            "- （還有視神經）",
+            "|||",
+            "### 環外：額淚滑",
+            "- **額神經**",
+            "- **淚腺神經**",
+            "- **滑車神經（IV）**",
+            ":::",
+            "- **眼外肌起點**：四條直肌附著總腱環；上斜肌起自眶尖；**下斜肌起自眶底前內側，不起自總腱環**。",
+            "- **眼眶神經**：運動 III、IV、VI；感覺 V1、V2；自主＝交感＋副交感。**視神經是感覺神經，不是運動神經**。",
             "",
-            "**眼外肌起點**：四條直肌附著總腱環；上斜肌起自眶尖；**下斜肌**起自眶底前內側，**不起自總腱環**（所以「通過總腱環」的題目不會有它）。",
-            "**眼眶神經**：運動 III、IV、VI；感覺 V1、V2；自主＝交感＋副交感。**視神經是感覺神經，不是運動神經**。"
-          ],
-          "keys": [
-            "眶上裂：III、IV、V1、VI",
-            "環內「鼻動外」；環外「額淚滑」",
-            "下斜肌不起自總腱環"
+            "> [!warn] 名字很像",
+            "> 舊講義有時把總腱環叫「辛氏環」（Zinn 腱環）；血液供應單元的**辛氏環（Zinn–Haller）**是視神經盤旁的**動脈環**，兩個不一樣。"
           ],
           "exam": [
             "**總腱環內／外**：114 師高 5、109 生特 15、111 生普 15、113 師高 32、106 生普 2、107 生特 24（環內：鼻睫、III、VI；環外：IV）。",
@@ -588,15 +587,15 @@
             "**視神經管**：107 師高 3、110 生普 16、108 師高 3。",
             "**眼眶神經**：114 生普 23。"
           ],
+          "img": "img/eye-anat-fig/canals3.jpg",
+          "img_source": "Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "demo": [
             "**示範**：「穿過總腱環的神經？①顏面 ②鼻睫 ③外展 ④淚腺 ⑤滑車 ⑥動眼」→ 鼻睫、外展、動眼 ＝ ②③⑥。"
           ],
           "flash": {
             "front": "總腱環內／外口訣？",
             "back": "內：鼻動外（鼻睫、動眼、外旋）；外：額淚滑（額神經、淚腺神經、滑車）。"
-          },
-          "img": "img/eye-anat-fig/canals3.jpg",
-          "img_source": "Bryan Edwards,  Joy MH Wang,  Joe Iwanaga,  Marios Loukas,  R. Shane Tubbs，Wikimedia Commons「Cranial nerve foramina within middle cranial fossa.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Cranial_nerve_foramina_within_middle_cranial_fossa.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          }
         },
         {
           "type": "check",
@@ -687,7 +686,8 @@
         "眶上裂",
         "眼眶神經",
         "結膜感覺"
-      ]
+      ],
+      "pace": "free"
     }
   ],
   "path": [

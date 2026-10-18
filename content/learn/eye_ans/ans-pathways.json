@@ -39,39 +39,40 @@
       "steps": [
         {
           "type": "intro",
-          "title": "為什麼「胸部」的神經能讓瞳孔放大？",
+          "title": "交感路徑：從胸段脊髓繞一大圈到眼睛",
           "body": [
-            "支配瞳孔擴大的交感神經，起點竟然在**胸段脊髓**。它要繞一大圈：往上爬到頸部、跟著頸動脈進入顱內，最後才抵達眼睛。",
+            "> [!big] 讓瞳孔放大的{r:交感}神經，起點在**胸段脊髓**：先爬到頸部，再跟著頸動脈進顱，最後才到眼睛。",
             "",
-            "這條路很長，但只要用對方法讀，就不會背錯。"
+            "路很長，但用同一個模板讀，就不會背錯。"
           ]
         },
         {
           "type": "card",
           "title": "讀路徑的四個問題",
           "body": [
-            "每一條自主神經路徑，都問這四件事：",
+            "> [!big] 每一條自主神經路徑都問四件事：**從哪來 → 在哪換 → 走哪條 → 做什麼**。",
             "",
             "1. **Where does it start?** 神經從哪裡來？（神經核／脊髓段）",
             "2. **Where does it synapse?** 在哪一個神經節換元？",
             "3. **How does it travel?** 透過哪一條神經到達眼睛？",
-            "4. **What does it do?** 最後產生什麼生理作用？",
+            "4. **What does it do?** 最後產生什麼作用？",
             "",
-            "```",
-            "神經來源 → 神經節 → 神經路徑 → 作用器官 → 生理反應 → 臨床表現",
-            "```"
+            "::: flow",
+            "神經來源",
+            "神經節",
+            "神經路徑",
+            "作用器官",
+            "生理反應",
+            "臨床表現",
+            ":::"
           ],
-          "keys": [
-            "起點 → 換元處 → 行經神經 → 作用",
-            "每條路徑都用同一個模板背"
+          "exam": [
+            "**考法**：讀路徑要問四件事：起點、換元站、沿著誰走、終點（108 生普 19、108 師高 26、108 師高 22）。"
           ],
           "flash": {
             "front": "讀自主神經路徑的四個問題？",
             "back": "從哪裡來？在哪個神經節換元？走哪條神經到眼睛？產生什麼作用？"
-          },
-          "exam": [
-            "**考法**：讀路徑要問四件事：起點、換元站、沿著誰走、終點（108 生普 19、108 師高 26、108 師高 22）。"
-          ]
+          }
         },
         {
           "type": "check",
@@ -88,30 +89,29 @@
         },
         {
           "type": "card",
-          "title": "交感路徑（上）：脊髓到上頸神經節",
+          "title": "交感路徑（上段）：脊髓 → 上頸神經節",
           "body": [
-            "> 🖼️ **看圖**：上頸神經節：交感節後纖維由此出發",
+            "> [!big] {r:交感}從脊髓 **T1–T2** 出發，沿交感鏈往上，在**上頸神經節**換元。",
             "",
-            "1. **起點**：脊髓 **T1–T2** 的**中外側細胞柱**（intermediolateral cell column, IML，就是側角）",
-            "2. 發出**節前纖維**，進入**交感鏈**（sympathetic chain）往上走",
-            "3. 在**上頸神經節**（superior cervical ganglion, SCG）**換元**",
-            "",
-            "換元之後才是**節後纖維**。所以眼部交感的「神經節」是**上頸神經節**，不是睫狀神經節。"
+            "[[img]]",
+            "::: flow",
+            "T1–T2 中外側細胞柱（IML，側角）",
+            "{r:節前纖維}",
+            "交感鏈往上",
+            "**上頸神經節**（SCG）換元",
+            ":::",
+            "> [!warn] 不是睫狀神經節",
+            "> 眼部交感的換元站是**上頸神經節**；睫狀神經節是副交感的。"
           ],
-          "keys": [
-            "起點：T1–T2 中外側細胞柱",
-            "沿交感鏈上行",
-            "換元：上頸神經節"
-          ],
-          "flash": {
-            "front": "眼部交感神經的節前纖維在哪裡換元？",
-            "back": "上頸神經節（superior cervical ganglion）"
-          },
           "exam": [
             "**考法**：交感路徑上段：脊髓 T1～T2 → **上頸神經節**（108 生普 19、108 師高 26）；穆勒氏肌與瞳孔擴張肌都是交感節後纖維（107 師高 28、109 生特 3）。"
           ],
           "img": "img/eye-anat-fig/iml_hint.jpg",
-          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "眼部交感神經的節前纖維在哪裡換元？",
+            "back": "上頸神經節（superior cervical ganglion）"
+          }
         },
         {
           "type": "check",
@@ -129,33 +129,29 @@
         },
         {
           "type": "card",
-          "title": "交感路徑（下）：頸動脈叢到眼睛",
+          "title": "交感路徑（下段）：頸動脈叢 → 眼睛",
           "body": [
-            "> 🖼️ **看圖**：交感節後纖維沿頸內動脈 → 眼神經 → 鼻睫神經進入眼眶；交感纖維進眼眶的路線（示意圖）",
+            "> [!big] 節後纖維**沿頸內動脈**進顱，經**鼻睫神經**，再由**長、短睫狀神經**進眼球。",
             "",
-            "4. 節後纖維**沿著內頸動脈**形成**頸動脈叢**（carotid plexus），進入顱內",
-            "5. 經過**鼻睫神經**（nasociliary nerve，V1 的分支）",
-            "6. 經由**長、短睫狀神經**（long and short ciliary nerves）進入眼球",
-            "",
-            "**支配的構造與作用：**",
+            "[[img]]",
+            "::: flow",
+            "上頸神經節",
+            "{r:節後纖維}沿頸內動脈（頸動脈叢）",
+            "鼻睫神經（V1 的分支）",
+            "長、短睫狀神經",
+            "眼球",
+            ":::",
+            "**支配的構造：**",
             "- **瞳孔擴張肌**：收縮 → **散瞳**",
-            "- **睫狀血管、淚腺**",
             "- **眼瞼平滑肌（Müller 肌）**：維持眼瞼張力",
-            "- 血管：**收縮**、調節血管張力",
+            "- **睫狀血管、淚腺**；血管**收縮**、調節血管張力",
             "",
-            "**臨床連結**：這條路徑上任何一處受損（頸部手術或外傷、肺尖腫瘤、頸動脈剝離…）→ 交感失能 → **Horner 症候群**：Müller 肌無力 → **輕度**眼瞼下垂；擴張肌無力 → **縮瞳**（詳見「腦幹神經核與臨床表現」單元）。"
+            "> [!key] 路過、不換元",
+            "> 交感纖維經過睫狀神經節時**只是路過**，不換元。",
+            "",
+            "> [!note] 臨床：Horner 症候群",
+            "> 這條路上任一處受損（頸部手術或外傷、肺尖腫瘤、頸動脈剝離…）→ Müller 肌無力 → **輕度**眼瞼下垂；擴張肌無力 → **縮瞳**。"
           ],
-          "keys": [
-            "沿內頸動脈（頸動脈叢）入顱",
-            "經鼻睫神經 → 長、短睫狀神經",
-            "擴張肌、Müller 肌、血管",
-            "路徑受損 → Horner 症候群：輕度下垂＋縮瞳"
-          ],
-          "tip": "交感纖維經過睫狀神經節時**只是路過、不換元**。",
-          "flash": {
-            "front": "交感纖維經過哪一條 V1 分支到達睫狀體和瞳孔擴張肌？",
-            "back": "鼻睫神經（nasociliary nerve），再經長、短睫狀神經"
-          },
           "exam": [
             "**考法**：交感下段：頸內動脈叢 → 眼動脈／眼神經 → 長、短睫狀神經 → 擴張肌（108 師高 22）；**交感經鼻睫神經到睫狀體與瞳孔擴張肌**（114 師高 26）；交感纖維隨眼動脈走**視神經管**（107 師高 3）。"
           ],
@@ -163,7 +159,11 @@
             "img/eye-anat-fig/sym_orbit.jpg",
             "img/eye-anat-fig/horner_orbit.jpg"
           ],
-          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）；The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）；The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "交感纖維經過哪一條 V1 分支到達睫狀體和瞳孔擴張肌？",
+            "back": "鼻睫神經（nasociliary nerve），再經長、短睫狀神經"
+          }
         },
         {
           "type": "check",
@@ -262,7 +262,8 @@
       ],
       "teaches": [
         "Horner症候群"
-      ]
+      ],
+      "pace": "free"
     },
     {
       "id": "l2",
@@ -275,38 +276,30 @@
       "steps": [
         {
           "type": "intro",
-          "title": "看手機時，眼睛裡有兩條肌肉在出力",
+          "title": "看近時瞳孔變小：都靠動眼神經",
           "body": [
-            "低頭看手機，瞳孔會變小，水晶體也會變凸好對焦。這兩件事都靠同一條神經：**動眼神經（CN III）**的副交感纖維。",
-            "",
-            "CN III 還身兼另一份工作：轉動眼球、撐開上眼瞼。"
+            "> [!big] 縮瞳和看近（調節）都靠**動眼神經（CN III）**的{g:副交感}纖維；CN III 同時還轉眼球、撐開上眼瞼。"
           ]
         },
         {
           "type": "card",
           "title": "副交感起點：E-W 核",
           "body": [
-            "> 🖼️ **看圖**：E-W 核（縮瞳核）緊貼動眼神經核",
+            "> [!big] {g:副交感}從**中腦的 E-W 核**出發（又叫**縮瞳核**），節前纖維跟著 **CN III** 走。",
             "",
-            "- **起點**：**Edinger-Westphal 核（E-W 核）**，位在**中腦**，又稱**縮瞳核**。",
-            "- 節前纖維**跟著動眼神經（CN III）**離開中腦、進入眼眶。",
-            "",
-            "E-W 核就在**動眼神經核**旁邊。動眼神經核負責軀體運動（眼外肌），E-W 核負責副交感（眼內肌）。"
+            "[[img]]",
+            "- **E-W 核**（Edinger-Westphal nucleus）緊貼在**動眼神經核**旁邊。",
+            "- 動眼神經核 → 眼外肌（軀體運動）；E-W 核 → 眼內肌（副交感）。"
           ],
-          "keys": [
-            "E-W 核在中腦，是副交感起點",
-            "節前纖維走 CN III",
-            "E-W 核＝縮瞳核"
-          ],
-          "flash": {
-            "front": "眼部副交感（縮瞳、調節）的起點神經核？位置？",
-            "back": "Edinger-Westphal 核，位於中腦"
-          },
           "exam": [
             "**考法**：副交感起點是 **E-W 核**（III 的副核）（106 師高 5、107 生特 21、111 生普 18）。"
           ],
           "img": "img/eye-anat-fig/pupil_nuc.jpg",
-          "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "眼部副交感（縮瞳、調節）的起點神經核？位置？",
+            "back": "Edinger-Westphal 核，位於中腦"
+          }
         },
         {
           "type": "check",
@@ -326,32 +319,34 @@
           "type": "card",
           "title": "換元與作用：睫狀神經節 → 短睫狀神經",
           "body": [
-            "> 🖼️ **看圖**：睫狀神經節與三種纖維",
+            "> [!big] 在**睫狀神經節**換元，節後走**短睫狀神經**，讓**括約肌**縮瞳、**睫狀肌**調節。",
             "",
-            "```",
-            "E-W 核 →（CN III，節前）→ 睫狀神經節【換元】→（短睫狀神經，節後）→ 眼內肌",
-            "```",
-            "",
-            "**作用的兩條肌肉：**",
-            "1. **瞳孔括約肌**（sphincter pupillae）：收縮 → 瞳孔縮小（**縮瞳 miosis**）",
-            "2. **睫狀肌**（ciliary muscle）：收縮 → 看近物、水晶體變凸 → **調節（accommodation）**",
-            "",
-            "副交感節後纖維走的是**短**睫狀神經。"
+            "[[img]]",
+            "::: flow",
+            "E-W 核",
+            "{g:CN III（節前）}",
+            "**睫狀神經節**換元",
+            "{g:短睫狀神經（節後）}",
+            "眼內肌",
+            ":::",
+            "::: cols g g",
+            "### 瞳孔括約肌",
+            "- 收縮 → 瞳孔縮小（**縮瞳 miosis**）",
+            "|||",
+            "### 睫狀肌",
+            "- 收縮 → 水晶體變凸、看近（**調節 accommodation**）",
+            ":::",
+            "圖上：{r:紅＝交感}、{g:綠＝副交感}、{b:藍＝感覺}；只有綠色在睫狀神經節換元。"
           ],
-          "keys": [
-            "在睫狀神經節換元",
-            "節後走短睫狀神經",
-            "括約肌 → 縮瞳；睫狀肌 → 調節"
-          ],
-          "flash": {
-            "front": "CN III 副交感在哪裡換元？節後走哪條神經？",
-            "back": "睫狀神經節換元；節後走短睫狀神經"
-          },
           "exam": [
             "**考法**：換元站＝**睫狀神經節**（眼肌錐內）；節後纖維走**短睫狀神經**，不是視神經（109 生普 18、113 生普 15、108 師高 22）。"
           ],
           "img": "img/eye-anat-fig/cil_ganglion.jpg",
-          "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "CN III 副交感在哪裡換元？節後走哪條神經？",
+            "back": "睫狀神經節換元；節後走短睫狀神經"
+          }
         },
         {
           "type": "check",
@@ -379,31 +374,30 @@
           "type": "card",
           "title": "CN III 的兩種功能",
           "body": [
-            "> 🖼️ **看圖**：眼眶內的神經：動眼神經分成上支與下支",
+            "> [!big] CN III 管**四條眼外肌＋提上眼瞼肌**（軀體），也管**括約肌＋睫狀肌**（副交感）。",
             "",
-            "**1. 軀體運動（控制骨骼肌的隨意運動）**",
-            "- 四條眼外肌：**上直肌、下直肌、內直肌、下斜肌**",
-            "- **提上眼瞼肌**（levator palpebrae superioris）",
-            "",
-            "**2. 副交感運動**",
-            "- **瞳孔括約肌、睫狀肌**",
-            "",
-            "記法：眼外肌六條中，**外直肌 = CN VI（LR₆）、上斜肌 = CN IV（SO₄）**，其餘都歸 CN III。"
+            "[[img]]",
+            "::: cols b g",
+            "### 軀體運動（骨骼肌，隨意）",
+            "- **上直肌、下直肌、內直肌、下斜肌**",
+            "- **提上眼瞼肌**",
+            "|||",
+            "### 副交感（平滑肌，不隨意）",
+            "- **瞳孔括約肌**",
+            "- **睫狀肌**",
+            ":::",
+            "> [!tip] 記法 LR₆ SO₄",
+            "> 外直肌＝CN VI、上斜肌＝CN IV，其餘都歸 CN III。"
           ],
-          "keys": [
-            "軀體：上直、下直、內直、下斜＋提上眼瞼肌",
-            "副交感：括約肌、睫狀肌",
-            "LR₆ SO₄，其餘 III"
-          ],
-          "flash": {
-            "front": "CN III 支配哪四條眼外肌？",
-            "back": "上直肌、下直肌、內直肌、下斜肌（加上提上眼瞼肌）"
-          },
           "exam": [
             "**考法**：III 的兩種功能：骨骼肌運動（眼外肌、提上眼瞼肌）＋副交感（瞳孔、睫狀肌）（107 生特 9、112 師高 22、112 生普 32）。"
           ],
           "img": "img/eye-anat-fig/nerve3.jpg",
-          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "CN III 支配哪四條眼外肌？",
+            "back": "上直肌、下直肌、內直肌、下斜肌（加上提上眼瞼肌）"
+          }
         },
         {
           "type": "check",
@@ -426,30 +420,28 @@
         },
         {
           "type": "card",
-          "title": "CN III 的兩個神經核與上、下分支",
+          "title": "CN III 的兩個核與上、下分支",
           "body": [
-            "> 🖼️ **看圖**：中腦橫切（上丘水平，真實切片）：動眼神經核、E-W 核與內側縱束；眼眶內的神經：動眼神經分成上支與下支",
+            "> [!big] 只有 CN III 有**兩個核**；進眼眶後分上、下支，{g:副交感纖維跟著下支}走。",
             "",
+            "[[img]]",
             "**兩個神經核（都在中腦上丘層級）：**",
-            "- **動眼神經核**（oculomotor nucleus）→ 支配**骨骼肌**（眼外肌、提上眼瞼肌）",
-            "- **E-W 核**（又稱副動眼神經核 accessory oculomotor nucleus）→ 副交感，支配**平滑肌**（括約肌、睫狀肌）",
+            "- **動眼神經核** → 骨骼肌（眼外肌、提上眼瞼肌）",
+            "- **E-W 核**（副動眼神經核）→ 平滑肌（括約肌、睫狀肌）",
+            "- 滑車神經、外旋神經各只有**一個**運動核（只管一條肌肉）。",
             "",
-            "滑車神經、外旋神經各只有**一個**主要運動核（只管一條骨骼肌），只有 CN III 有兩個核。",
-            "",
-            "**CN III 進眼眶後分成上、下分支：**",
-            "- **下分支**：下直肌、內直肌、下斜肌；**副交感纖維也跟著下分支**走到睫狀神經節",
-            "- 上分支：往上走（上直肌、提上眼瞼肌）"
+            "::: cols y g",
+            "### 上分支",
+            "- 上直肌",
+            "- 提上眼瞼肌",
+            "|||",
+            "### 下分支",
+            "- 下直肌、內直肌、下斜肌",
+            "- **副交感纖維**也在這一支 → 睫狀神經節",
+            ":::",
+            "> [!warn] 老師提醒",
+            "> 有課本圖把動眼神經核與 E-W 核位置畫反，也有圖把短睫狀神經標錯、把 CN III 起點畫錯（CN III、IV 都從中腦出來），不要只背圖。"
           ],
-          "keys": [
-            "動眼神經核→骨骼肌；E-W 核→平滑肌",
-            "只有 CN III 有兩個核",
-            "副交感纖維跟著下分支走"
-          ],
-          "tip": "老師提醒：有課本圖把動眼神經核與 E-W 核的位置畫反，也有圖把短睫狀神經標錯、把 CN III 的起點畫錯（CN III、IV 都從中腦出來）。不要只背圖。",
-          "flash": {
-            "front": "CN III 的副交感纖維跟著上分支還是下分支走？",
-            "back": "下分支（下直肌、內直肌、下斜肌那一支），再到睫狀神經節"
-          },
           "exam": [
             "**考法**：III 核分上、下支；**副交感併入下支**（109 生普 23、112 生普 22、107 師特 33）。"
           ],
@@ -457,7 +449,11 @@
             "img/eye-anat-fig/nuc_mid.jpg",
             "img/eye-anat-fig/nerve3.jpg"
           ],
-          "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 651.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_651.png）；Henry Vandyke Carter，Wikimedia Commons「Gray777.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray777.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "CN III 的副交感纖維跟著上分支還是下分支走？",
+            "back": "下分支（下直肌、內直肌、下斜肌那一支），再到睫狀神經節"
+          }
         },
         {
           "type": "check",
@@ -545,7 +541,8 @@
       "teaches": [
         "腦幹神經核",
         "副交感神經"
-      ]
+      ],
+      "pace": "free"
     },
     {
       "id": "l3",
@@ -558,40 +555,38 @@
       "steps": [
         {
           "type": "intro",
-          "title": "眼淚是誰叫你流的？",
+          "title": "淚腺的命令其實來自顏面神經",
           "body": [
-            "淚腺在眼眶外上方，看起來跟三叉神經 V1 的淚腺神經最近。但真正下令分泌眼淚的副交感纖維，其實來自**顏面神經（CN VII）**，要繞過翼腭神經節、「搭便車」才到得了淚腺。"
+            "> [!big] 下令分泌眼淚的{g:副交感}纖維來自**顏面神經（CN VII）**，不是旁邊的三叉神經。",
+            "",
+            "淚腺在眼眶外上方，看起來和 V1 的淚腺神經最近；但 CN VII 的纖維要繞過翼腭神經節，「搭便車」才到得了淚腺。"
           ]
         },
         {
           "type": "card",
           "title": "顏面神經（CN VII）的四種功能",
           "body": [
-            "> 🖼️ **看圖**：橋腦橫切（顏面丘水平，真實切片）：外旋神經核與顏面神經",
+            "> [!big] CN VII 四件事：**表情肌**、**淚腺與唾液腺**、**舌前 2/3 味覺**、**耳周感覺**。",
             "",
+            "[[img]]",
             "| 功能 | 纖維成分 | 作用 |",
             "|---|---|---|",
-            "| ① 運動 | 鰓弓運動（branchial motor） | 控制**表情肌**、鐙骨肌、莖突舌骨肌、二腹肌後腹 |",
-            "| ② 副交感 | 內臟運動（visceral motor） | 控制**淚腺**及部分**唾液腺**分泌 |",
-            "| ③ 味覺 | 特殊內臟傳入 | 傳遞**舌前 2/3** 的味覺 |",
-            "| ④ 一般感覺 | 軀體感覺 | 少部分外耳、耳道及耳周皮膚的感覺 |",
+            "| ① 運動 | 鰓弓運動 | **表情肌**、鐙骨肌、莖突舌骨肌、二腹肌後腹 |",
+            "| ② {g:副交感} | 內臟運動 | **淚腺**及部分**唾液腺** |",
+            "| ③ 味覺 | 特殊內臟傳入 | **舌前 2/3** |",
+            "| ④ 一般感覺 | 軀體感覺 | 少部分外耳、耳道及耳周皮膚 |",
             "",
-            "CN VII 的副交感起點是**上唾液核**（superior salivatory nucleus），位在**橋腦**。"
+            "CN VII 副交感的起點：**上唾液核**（superior salivatory nucleus），在**橋腦**。"
           ],
-          "keys": [
-            "運動：表情肌",
-            "副交感：淚腺、唾液腺",
-            "味覺：舌前 2/3"
-          ],
-          "flash": {
-            "front": "顏面神經的副交感纖維支配哪些腺體？",
-            "back": "淚腺及部分唾液腺（下頷下腺、舌下腺）"
-          },
           "exam": [
             "**考法**：顏面神經的功能：閉眼、表情、淚腺／鼻腺的副交感、舌前 2/3 味覺（111 生普 24、111 生普 22、113 生普 23）。"
           ],
           "img": "img/eye-anat-fig/nuc_vi.jpg",
-          "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "顏面神經的副交感纖維支配哪些腺體？",
+            "back": "淚腺及部分唾液腺（下頷下腺、舌下腺）"
+          }
         },
         {
           "type": "check",
@@ -611,31 +606,32 @@
           "type": "card",
           "title": "CN VII 的細節：閉眼與唾液腺",
           "body": [
-            "> 🖼️ **看圖**：上眼瞼矢狀切面：誰開眼（提上眼瞼肌）、誰閉眼（眼輪匝肌）",
+            "> [!big] **閉眼**靠 CN VII（眼輪匝肌）；**腮腺不歸 CN VII**，歸 CN IX。",
             "",
-            "- **運動**：顏面表情肌，包括負責**閉眼**的**眼輪匝肌**（orbicularis oculi）。",
-            "  → 對照：**睜眼**靠提上眼瞼肌（CN III）與 Müller 肌（交感）。",
-            "- **副交感**：淚腺，以及唾液腺中的**下頷下腺、舌下腺**。",
-            "  - **腮腺（耳下腺）不是 CN VII**，它的副交感來自 **CN IX**。",
-            "- **特殊感覺**：舌前 2/3 味覺；另有**外耳道**一部分皮膚的感覺。",
-            "- CN VII 從**橋腦**出來。",
+            "[[img]]",
+            "::: cols y g",
+            "### 開眼 vs 閉眼",
+            "- **閉眼**：眼輪匝肌 ← **CN VII**",
+            "- **睜眼**：提上眼瞼肌 ← CN III；Müller 肌 ← 交感",
+            "|||",
+            "### 唾液腺的副交感",
+            "- 下頷下腺、舌下腺 ← **CN VII**",
+            "- **腮腺（耳下腺）← CN IX**",
+            ":::",
+            "- 特殊感覺：舌前 2/3 味覺；另有**外耳道**一部分皮膚的感覺。CN VII 從**橋腦**出來。",
             "",
-            "老師提醒：有張課本圖把腮腺畫成 CN VII 支配，那是錯的。顏面神經「這幾年連續考了好多次」。"
+            "> [!warn] 老師提醒",
+            "> 有張課本圖把腮腺畫成 CN VII 支配，那是錯的。顏面神經「這幾年連續考了好多次」。"
           ],
-          "keys": [
-            "閉眼：眼輪匝肌（CN VII）",
-            "下頷下腺、舌下腺：CN VII；腮腺：CN IX",
-            "CN VII 從橋腦出來"
-          ],
-          "flash": {
-            "front": "腮腺（耳下腺）的副交感來自哪一對腦神經？",
-            "back": "CN IX 舌咽神經（不是 CN VII）"
-          },
           "exam": [
             "**考法**：顏面神經麻痺 → 兔眼、外翻、閉眼不全（114 生普 21、108 師高 32、111 師高 32）。"
           ],
           "img": "img/eye-anat-fig/lid_sag.jpg",
-          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "腮腺（耳下腺）的副交感來自哪一對腦神經？",
+            "back": "CN IX 舌咽神經（不是 CN VII）"
+          }
         },
         {
           "type": "check",
@@ -667,33 +663,23 @@
         },
         {
           "type": "card",
-          "title": "淚腺的副交感路徑",
+          "title": "淚腺的副交感路徑：搭便車",
           "body": [
-            "> 🖼️ **看圖**：淚腺副交感路徑：顏面神經 → 大淺岩神經 → 翼管神經 → 翼顎神經節；淚腺與淚液排出路徑",
+            "> [!big] CN VII → 大岩神經 → 翼管神經 → **翼腭神經節換元** → 搭 V2、V1 的便車 → 淚腺。",
             "",
-            "```",
+            "[[img]]",
+            "::: flow",
             "CN VII（上唾液核）",
-            "  → 大岩神經（greater petrosal n.，節前）",
-            "     ＋ 深岩神經（deep petrosal n.，交感）合併",
-            "  → 翼管神經（Vidian nerve）",
-            "  → 翼腭神經節【副交感換元】",
-            "  → 節後纖維搭 V₂ 的顴神經（zygomatic n.）",
-            "  → 轉入 V₁ 的淚腺神經（lacrimal n.）",
-            "  → 淚腺：增加淚液分泌",
-            "```",
-            "",
-            "**CN VII 是淚腺副交感神經的來源**；V₁、V₂ 只是節後纖維「搭便車」的路線，**不是來源**。"
+            "{g:大岩神經（節前）}＋深岩神經（{r:交感}）",
+            "翼管神經（Vidian nerve）",
+            "**翼腭神經節**換元",
+            "V2 的顴神經",
+            "V1 的淚腺神經",
+            "淚腺：分泌",
+            ":::",
+            "> [!warn] 陷阱",
+            "> **CN VII 才是來源**；V₁、V₂ 只是節後纖維搭便車的路線。「V₁／V₂ 是淚腺副交感神經來源」都是錯的。"
           ],
-          "keys": [
-            "大岩神經＋深岩神經 → 翼管神經",
-            "翼腭神經節換元",
-            "V₂ 顴神經 → V₁ 淚腺神經 → 淚腺"
-          ],
-          "tip": "考題常設陷阱：「V₁ 是淚腺副交感神經來源」✗、「V₂ 是淚腺副交感神經來源」✗。",
-          "flash": {
-            "front": "淚腺副交感纖維在哪個神經節換元？",
-            "back": "翼腭神經節（pterygopalatine ganglion，又稱蝶腭神經節）"
-          },
           "exam": [
             "**考法**：淚腺副交感：顏面神經 → 大淺岩神經 → 翼顎神經節 → 淚腺神經（V1）（113 生普 18、113 師高 26、107 師高 26）。"
           ],
@@ -701,7 +687,11 @@
             "img/eye-anat-fig/tear_path.jpg",
             "img/eye-anat-fig/tear_gland.jpg"
           ],
-          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）；Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）；Henry Vandyke Carter，Wikimedia Commons「Gray896.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray896.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "淚腺副交感纖維在哪個神經節換元？",
+            "back": "翼腭神經節（pterygopalatine ganglion，又稱蝶腭神經節）"
+          }
         },
         {
           "type": "check",
@@ -730,25 +720,26 @@
           "type": "card",
           "title": "眼球血管的自主神經",
           "body": [
-            "| 神經 | 主要作用 | 對眼球血管的意義 |",
-            "|---|---|---|",
-            "| **交感** | **血管收縮**、調節血管張力 | ↓ 血管管徑、調節部分眼部血流 |",
-            "| **副交感** | 血管舒張作用**較有限**、具區域性調節 | 影響部分眼部血流 |",
+            "> [!big] {r:交感}讓眼球血管**收縮**；{g:副交感}的舒張作用**有限**、只做區域性調節。",
             "",
-            "眼球血管主要來自**眼動脈**（內頸動脈的分支），分出視網膜中央動脈、睫狀後長／短動脈、淚腺動脈等。"
+            "::: cols r g",
+            "### 交感",
+            "- **血管收縮**、調節血管張力",
+            "- ↓ 血管管徑",
+            "|||",
+            "### 副交感",
+            "- 舒張作用**較有限**",
+            "- 區域性調節部分眼部血流",
+            ":::",
+            "眼球的血管來自**眼動脈**（內頸動脈的分支）：視網膜中央動脈、睫狀後長／短動脈、淚腺動脈等。"
           ],
-          "keys": [
-            "交感：血管收縮",
-            "副交感：舒張作用有限、區域性",
-            "眼動脈來自內頸動脈"
+          "exam": [
+            "**考法**：脈絡膜的自主神經（交感、副交感）與感覺神經：由長、短睫狀神經支配；**不是來自視神經**（107 生普 14、111 師高 14）。"
           ],
           "flash": {
             "front": "交感神經對眼球血管的主要作用？",
             "back": "血管收縮，使管徑變小、調節血管張力"
-          },
-          "exam": [
-            "**考法**：脈絡膜的自主神經（交感、副交感）與感覺神經：由長、短睫狀神經支配；**不是來自視神經**（107 生普 14、111 師高 14）。"
-          ]
+          }
         },
         {
           "type": "check",
@@ -823,7 +814,8 @@
             }
           ]
         }
-      ]
+      ],
+      "pace": "free"
     },
     {
       "id": "l4",
@@ -835,12 +827,9 @@
       "steps": [
         {
           "type": "intro",
-          "title": "自主神經路徑題：認得「換元站」就贏一半",
+          "title": "路徑題的關鍵：三個換元站",
           "body": [
-            "路徑題的關鍵是三個**換元站（神經節）**：",
-            "- **睫狀神經節**：副交感（虹膜括約肌、睫狀肌）換元；",
-            "- **上頸神經節（頸上神經節）**：交感（瞳孔擴張肌、穆勒氏肌）；",
-            "- **翼顎神經節**：副交感（淚腺）。",
+            "> [!big] 記住三個神經節：**睫狀神經節**（{g:副交感}）、**上頸神經節**（{r:交感}）、**翼顎神經節**（{g:淚腺副交感}）。",
             "",
             "本課再補上國考愛考的**眼瞼神經支配**與**顏面神經麻痺**。"
           ]
@@ -849,21 +838,17 @@
           "type": "card",
           "title": "三個神經節：誰在哪裡換元？",
           "body": [
-            "> 🖼️ **看圖**：睫狀神經節與三種纖維；上頸神經節（交感）與翼顎神經節（副交感）的位置",
+            "> [!big] 三個目標、三個換元站：括約肌／睫狀肌 → **睫狀神經節**；擴張肌／Müller 肌 → **上頸神經節**；淚腺 → **翼顎神經節**。",
             "",
+            "[[img]]",
             "| 目標 | 起點 → 換元站 → 路上 |",
             "|---|---|",
-            "| **瞳孔括約肌、睫狀肌**（副交感） | E-W 核 → 動眼神經 → **睫狀神經節**（在眼眶內的**眼肌錐**） → **短睫狀神經** |",
-            "| **瞳孔擴張肌、穆勒氏肌**（交感） | 脊髓 T1～T2 → **上頸神經節** → 頸內動脈叢 → 眼動脈／眼神經分支 → 長、短睫狀神經 |",
-            "| **淚腺**（副交感） | 顏面神經（上泌涎核）→ 大淺岩神經 → **翼顎神經節** → 搭**眼神經（V1）的淚腺神經** |",
+            "| {g:瞳孔括約肌、睫狀肌} | E-W 核 → 動眼神經 → **睫狀神經節**（眼眶內**眼肌錐**）→ **短睫狀神經** |",
+            "| {r:瞳孔擴張肌、穆勒氏肌} | 脊髓 T1～T2 → **上頸神經節** → 頸內動脈叢 → 眼動脈／眼神經分支 → 長、短睫狀神經 |",
+            "| {g:淚腺} | 顏面神經（上泌涎核）→ 大淺岩神經 → **翼顎神經節** → 搭 **V1 的淚腺神經** |",
             "",
-            "**睫狀神經節**只有**副交感**在這裡換元；交感與感覺纖維只是「路過」。",
-            "**虹膜的神經**：括約肌由副交感（經睫狀神經節、短睫狀神經），擴張肌由交感；**脈絡膜**也有長、短睫狀神經與自主神經分布；**鞏膜**沒有副交感支配。"
-          ],
-          "keys": [
-            "睫狀神經節：副交感換元，在眼肌錐內",
-            "上頸神經節：交感",
-            "翼顎神經節：淚腺副交感"
+            "- **睫狀神經節**只有**副交感**換元；交感與感覺纖維只是路過。",
+            "- **虹膜**：括約肌 ← 副交感（短睫狀神經）；擴張肌 ← 交感。**脈絡膜**也有長、短睫狀神經與自主神經。**鞏膜**沒有副交感支配。"
           ],
           "exam": [
             "**睫狀神經節**：位於眼肌錐內、只有副交感換元（109 生普 18、113 生普 15）。",
@@ -873,6 +858,11 @@
             "**脈絡膜神經**：長、短睫狀神經直接支配；自主神經不來自視神經（111 師高 14、107 生普 14）。",
             "**不受副交感支配**：鞏膜（110 師高 25）。"
           ],
+          "img": [
+            "img/eye-anat-fig/cil_ganglion.jpg",
+            "img/eye-anat-fig/sym_ganglia.jpg"
+          ],
+          "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）；Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "demo": [
             "**示範**：「副交感在睫狀神經節突觸後，節後纖維透過**視神經**傳到眼球」錯 → 節後纖維走**短睫狀神經**。",
             "**示範**：淚腺的副交感**不是**經睫狀神經節，是經**翼顎神經節**。"
@@ -880,12 +870,7 @@
           "flash": {
             "front": "淚腺的副交感換元站？",
             "back": "翼顎神經節（顏面神經 → 大淺岩神經）。"
-          },
-          "img": [
-            "img/eye-anat-fig/cil_ganglion.jpg",
-            "img/eye-anat-fig/sym_ganglia.jpg"
-          ],
-          "img_source": "The original uploader was Btarski at English Wikipedia.，Wikimedia Commons「Ciliary ganglion pathways.png」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Ciliary_ganglion_pathways.png）；Henry Vandyke Carter，Wikimedia Commons「Gray779.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray779.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          }
         },
         {
           "type": "check",
@@ -905,23 +890,20 @@
           "type": "card",
           "title": "眼瞼：誰開、誰閉、誰感覺？",
           "body": [
-            "> 🖼️ **看圖**：上眼瞼矢狀切面：誰開眼（提上眼瞼肌）、誰閉眼（眼輪匝肌）",
+            "> [!big] **開**：CN III＋{r:交感}（Müller 肌）；**閉**：CN VII；三叉神經**只管感覺**。",
             "",
+            "[[img]]",
             "| 功能 | 神經 |",
             "|---|---|",
-            "| **張眼（骨骼肌）**：提上眼瞼肌 | **動眼神經（III）** |",
-            "| **張眼（平滑肌）**：**穆勒氏肌（Müller's muscle）** | **交感**（上頸神經節）→ 受損：輕度眼瞼下垂（Horner） |",
-            "| **閉眼**：眼輪匝肌 | **顏面神經（VII）** |",
+            "| 張眼（骨骼肌）：提上眼瞼肌 | **動眼神經（III）** |",
+            "| 張眼（平滑肌）：**穆勒氏肌**（Müller's muscle） | {r:**交感**}（上頸神經節）→ 受損：輕度下垂（Horner） |",
+            "| 閉眼：眼輪匝肌 | **顏面神經（VII）** |",
             "| 眼瞼皮膚感覺 | **V1**（上瞼）、V2（下瞼） |",
             "",
-            "同一組神經還管兩種反射：**眨眼反射**（傳入 V，傳出 VII）、**淚水反射**（傳入 V，傳出 VII 副交感）。",
-            "**顏面神經麻痺（貝爾氏麻痺 Bell's palsy）**：眼輪匝肌無力 → **眼瞼閉合不全（兔眼）**、下眼瞼外翻、角膜暴露。**眼球運動與瞳孔不受影響**。",
-            "**張眼 vs 閉眼**：lid 的運動 ＝ III（開）＋ 交感（開）＋ VII（閉）；**V 不管眼瞼運動**。"
-          ],
-          "keys": [
-            "開眼：III＋交感（穆勒氏肌）",
-            "閉眼：VII",
-            "三叉神經只管眼瞼感覺"
+            "- 兩個反射：**眨眼反射**（傳入 V、傳出 VII）、**淚水反射**（傳入 V、傳出 VII 副交感）。",
+            "",
+            "> [!key] 顏面神經麻痺（貝爾氏麻痺 Bell's palsy）",
+            "> 眼輪匝肌無力 → **眼瞼閉合不全（兔眼）**、下眼瞼外翻、角膜暴露；**眼球運動與瞳孔不受影響**。"
           ],
           "exam": [
             "**眼瞼神經支配**（107 師特 5、108 生普 8、108 師高 5、111 生普 4）：提上眼瞼肌 ← III；眼輪匝肌 ← VII；穆勒氏肌 ← 交感；三叉神經**不是**眼瞼運動神經。",
@@ -929,6 +911,8 @@
             "**顏面神經麻痺** → 兔眼、外翻，不影響眼球運動（114 生普 21、108 師高 32）；**閉眼命令** ← VII（111 師高 32、109 生普 3）。",
             "**穆勒氏肌與交感**（109 生特 3、112 師高 26、107 師高 28、111 師高 26）。"
           ],
+          "img": "img/eye-anat-fig/lid_sag.jpg",
+          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "demo": [
             "**示範**：「提上眼瞼肌的平滑肌部分由上頸神經節的交感**節後**纖維支配」✓（節後，不是節前）。",
             "**示範**：長期眼瞼閉合不全 → 角膜暴露受傷 → 要檢查的是**第七對**（114 師高 29）。"
@@ -936,9 +920,7 @@
           "flash": {
             "front": "眼瞼：誰開誰閉？",
             "back": "III＋交感（穆勒氏肌）開；VII（眼輪匝肌）閉；V 只管感覺。"
-          },
-          "img": "img/eye-anat-fig/lid_sag.jpg",
-          "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray893.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray893.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          }
         },
         {
           "type": "check",
@@ -1040,7 +1022,8 @@
         "顏面神經麻痺",
         "兔眼",
         "鞏膜"
-      ]
+      ],
+      "pace": "free"
     }
   ],
   "path": [

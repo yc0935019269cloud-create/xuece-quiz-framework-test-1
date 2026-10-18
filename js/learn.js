@@ -15,6 +15,7 @@ const LEARN_UI = (() => {
   /* ---------- 存檔 xd_learn ---------- */
   const blank = () => ({ les: {}, rev: {}, cfg: { battle: true, open: {} }, last: null, stat: { lessons: 0, checks: 0, right: 0, reviews: 0, kills: 0, bosses: 0 } });
   let D = load();
+  D.cfg.open = {};   // 每次開啟遊戲，課程與筆記的樹狀清單一律從全部收合開始（本次使用中的展開狀態仍會保留）
   function load() {
     try { const d = JSON.parse(localStorage.getItem(KEY) || '{}'); const b = blank(); return Object.assign(b, d, { stat: Object.assign(b.stat, d.stat || {}), cfg: Object.assign(b.cfg, d.cfg || {}) }); } catch (e) { return blank(); }
   }
@@ -75,7 +76,18 @@ const LEARN_UI = (() => {
     diagram: ['先點點看每個標記，認識一下～', '看圖認位置，最後要考喔！'], interactive: ['動手玩玩看，觀察會發生什麼！', '拉拉看、按按看～']
   };
   const imgList = v => (Array.isArray(v) ? v : v ? [v] : []);
-  const imgsHTML = (v, src) => imgList(v).map(x => `<img class="lp-img" src="${U.esc(U.img(x))}" alt="">`).join('') + (src ? `<div class="lp-src">圖片來源：${inl(src)}</div>` : '');
+  const imgsHTML = (v, src) => imgList(v).map(x => `<img class="lp-img" src="${U.esc(U.img(x))}" alt="" title="點圖放大">`).join('') + (src ? `<div class="lp-src">圖片來源：${inl(src)}</div>` : '');
+  // 點教材圖片放大（手機上標籤太小時可以放大、左右拖動、雙指縮放）；點 ✕、背景或按 Esc 關閉
+  document.addEventListener('click', e => {
+    const im = e.target.closest && e.target.closest('img.lp-img');
+    if (!im) return;
+    const box = U.h(`<div class="img-zoom" role="dialog" aria-label="放大圖片"><button class="px-btn small img-zoom-x" aria-label="關閉">✕</button><div class="img-zoom-in"><img src="${U.esc(im.getAttribute('src'))}" alt=""></div></div>`);
+    const close = () => { box.remove(); document.removeEventListener('keydown', key, true); };
+    const key = ev => { if (ev.key === 'Escape') { ev.stopPropagation(); close(); } };
+    box.addEventListener('click', ev => { if (ev.target === box || ev.target.closest('.img-zoom-x') || ev.target.classList.contains('img-zoom-in')) close(); });
+    document.addEventListener('keydown', key, true);
+    document.body.appendChild(box);
+  });
 
   const KIND = { single: '單選', multi: '多選（可選多個）', tf: '是非', fill: '填答', order: '排序', self: '自評', name: '寫出中文＋英文名稱' };
 
@@ -340,7 +352,7 @@ const LEARN_UI = (() => {
         <div class="bar" style="height:10px"><i style="width:${U.pct(pr.done, pr.total)}%;background:var(--green)"></i></div></button>`;
     };
     const renderNode = (n, key, depth) => {
-      const st = stat(n), k = key + '/' + n.name, open = kw || (D.cfg.open[k] ?? depth < 1);
+      const st = stat(n), k = key + '/' + n.name, open = kw || (D.cfg.open[k] ?? false);
       return `<details class="ltree d${depth}" data-k="${U.esc(k)}" ${open ? 'open' : ''}><summary><span class="ltree-n">${U.esc(n.name)}</span><span class="grow"></span><span class="dim small-t">${st.d}/${st.t} 課</span><span class="ltree-bar"><i style="width:${U.pct(st.d, st.t)}%"></i></span></summary>
         <div class="ltree-in">${n.kids.map(c => renderNode(c, k, depth + 1)).join('')}${n.packs.length ? `<div class="grid g2">${n.packs.map(packCard).join('')}</div>` : ''}</div></details>`;
     };
@@ -798,7 +810,7 @@ const LEARN_UI = (() => {
           ((l.goals || []).length ? `<div class="lp-goals"><b>🎯 這課學完你會：</b><ul>${l.goals.map(g => `<li>${inl(g)}</li>`).join('')}</ul></div>` : '');
         ready('開始 ▶');
       } else if (s.type === 'card') {
-        body.innerHTML = head + `<h3>${U.esc(s.title)}</h3>${imgsHTML(s.img, s.img_source || s.source)}${md(s.body)}` +
+        body.innerHTML = head + `<h3>${U.esc(s.title)}</h3>${cardBody(s)}` +
           ((s.keys || []).length ? `<div class="lp-keys"><b>📌 重點</b><ul>${s.keys.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : '') +
           examDemoHTML(s) +
           (s.tip ? `<div class="lp-tip">🐾 ${inl(s.tip)}</div>` : '');
@@ -1247,12 +1259,17 @@ const LEARN_UI = (() => {
         ${(n.references || []).length ? `<p class="dim small-t">核對來源：${n.references.filter(r => /^https:\/\//.test(r.url)).map(r => `<a href="${U.esc(r.url)}" target="_blank" rel="noopener noreferrer">${U.esc(r.title)}</a>`).join('、')}。符號沿用本課程。</p>` : ''}</div></details>`;
   }
   /* 概念卡的「國考重點」與「示範」：兩者都是選填，寫在同一張卡裡，學習時與筆記頁都會顯示 */
+  // 卡片內文：body 裡單獨一行 [[img]] 時，圖片放在那個位置（先讀一句話再看圖）；沒有就照舊放最上面
+  function cardBody(s) {
+    const pics = imgsHTML(s.img, s.img_source || s.source), parts = String(s.body || '').split(/^[ \t]*\[\[img\]\][ \t]*$/m);
+    return parts.length > 1 ? md(parts[0]) + pics + md(parts.slice(1).join('\n')) : pics + md(s.body);
+  }
   function examDemoHTML(s) {
     return ((s.exam || []).length ? `<div class="lp-exam"><b>🎯 國考重點</b><ul>${s.exam.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : '') +
       (s.demo ? `<div class="lp-demo"><b>✏️ 示範</b>${md(s.demo)}</div>` : '');
   }
   function noteCard(p, l, s) {
-    return s.type === 'card' ? `<div class="lnote-card"><h4>📘 ${U.esc(s.title)}</h4>${imgsHTML(s.img, s.img_source || s.source)}${md(s.body)}${(s.keys || []).length ? `<div class="lp-keys"><ul>${s.keys.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : ''}${examDemoHTML(s)}</div>`
+    return s.type === 'card' ? `<div class="lnote-card"><h4>📘 ${U.esc(s.title)}</h4>${cardBody(s)}${(s.keys || []).length ? `<div class="lp-keys"><ul>${s.keys.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : ''}${examDemoHTML(s)}</div>`
       : s.type === 'diagram' ? `<div class="lnote-card"><h4>🔍 ${U.esc(s.title || '圖解')}</h4><div class="dg-wrap small"><img src="${U.esc(U.img(s.img))}" alt="">${s.points.map((pt, i) => { const o = ((D.pins || {})[`${p.id}/${l.id}/${l.steps.indexOf(s)}`] || {})[i] || [pt.x, pt.y]; return o[0] == null ? '' : `<span class="dg-pin" style="left:${o[0]}%;top:${o[1]}%">${i + 1}</span>`; }).join('')}</div><ol class="small-t">${s.points.map(pt => `<li><b>${U.esc(pt.name)}</b>${pt.desc ? '：' + inl(pt.desc) : ''}</li>`).join('')}</ol></div>`
       : `<div class="lnote-card"><h4>⭐ 本課重點</h4><ol>${s.points.map(x => `<li>${inl(x)}</li>`).join('')}</ol></div>`;
   }
@@ -1296,7 +1313,7 @@ const LEARN_UI = (() => {
       return `<details class="ltree lnote-pack" data-k="${U.esc(kk)}" ${isOpen(kk, false) ? 'open' : ''}><summary><span class="ltree-n">📗 ${U.esc(pk.p.title)}</span><span class="grow"></span><span class="dim small-t">${pk.les.length} 課・${n} 張${pk.notes.length ? `・${pk.notes.length} 份統整` : ''}</span></summary><div class="ltree-in">${packContents(pk, kk)}</div></details>`; };
     const dirNode = (n, key, depth) => { let k = key + '/' + n.name;
       while (n.kids.length === 1 && !n.packs.length) { const c = n.kids[0]; k += '/' + c.name; n = { name: n.name + ' › ' + c.name, kids: c.kids, packs: c.packs }; }   // 只有一個子層就併成「A › B」
-      return `<details class="ltree d${depth}" data-k="${U.esc(k)}" ${isOpen(k, depth < 1) ? 'open' : ''}><summary><span class="ltree-n">${U.esc(n.name)}</span><span class="grow"></span><span class="dim small-t">${count(n)} 張</span></summary>
+      return `<details class="ltree d${depth}" data-k="${U.esc(k)}" ${isOpen(k, false) ? 'open' : ''}><summary><span class="ltree-n">${U.esc(n.name)}</span><span class="grow"></span><span class="dim small-t">${count(n)} 張</span></summary>
         <div class="ltree-in">${n.kids.map(c => dirNode(c, k, depth + 1)).join('')}${!n.kids.length && n.packs.length === 1 ? packContents(n.packs[0], k + '/#' + n.packs[0].p.id) : n.packs.map(pk => packNode(pk, k)).join('')}</div></details>`; };   // 這層只有一個單元時直接列課，少一層
     body.innerHTML = `<div class="row">${[['all', '全部']].concat(subs.map(x => [x, C.SUBJECTS[x].name])).map(([v, l]) => `<span class="chip ${noteSubj === v ? 'on' : ''}" data-nf="${v}">${l}</span>`).join('')}
         <span class="grow"></span><input class="px-in" id="nSearch" placeholder="搜尋筆記內容（例：Horner、頂點距離）" value="${U.esc(noteQ)}" style="width:min(260px,100%)"></div>

@@ -661,6 +661,11 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
             R.warn(W, '節奏：第一步建議是 intro（導入）')
         if types[-1] != 'recap':
             R.warn(W, '節奏：最後一步建議是 recap（回顧）')
+        # pace: "free"（2026-10-18）：不套用「卡片後面要接檢核題」與步數建議——概念頁可以連續多頁，練習集中放
+        if L.get('pace') == 'free':
+            if 'practice' not in types and 'check' not in types:
+                R.warn(W, '節奏：pace free 的課也至少要有一些 check 或 practice')
+            continue
         # 概念卡可以兩頁一組（例如「白話概念」＋「數字與範例」），但一組之後要有 check；連續超過兩張卡會警告
         runs = []
         for i, t in enumerate(types):

@@ -35,33 +35,21 @@
       "steps": [
         {
           "type": "intro",
-          "title": "一片只有 0.5 mm 的「錶面玻璃」",
+          "title": "角膜：眼睛最前面的窗戶",
           "body": [
-            "角膜是眼睛最前面那片透明的「窗戶」。它薄到中央只有約 0.5 mm，卻負責了全眼大約 3/4 的屈光力。",
-            "",
-            "所以近視雷射只要削掉一點點厚度，就能改變度數。先把角膜的基本數字記起來。"
+            "> [!big] 角膜中央只有約 **0.5 mm** 厚，卻負責全眼**大部分的屈光力**：所以近視雷射削掉一點點，度數就變了。"
           ]
         },
         {
           "type": "card",
           "title": "角膜在哪裡？長什麼樣子？",
           "body": [
-            "> 🖼️ **看圖**：眼球水平切面：角膜在最前面，後面連著鞏膜；活體眼睛：角膜輪部（角膜 ↔ 結膜的交界）",
+            "> [!big] 角膜＝眼球外層纖維膜的**前 1/6**（後 5/6 是鞏膜）；**透明、無血管**，像一片**錶面玻璃**。",
             "",
-            "- 位在眼球最前方，覆蓋**虹膜、瞳孔和前房**。",
-            "- 是眼球**外層纖維膜**的**前 1/6**（後 5/6 是鞏膜）。",
-            "- **透明、無血管**。",
-            "- 外表面**光滑凸出**、內表面**凹入**，形狀像一片小小的**錶面玻璃**（watch glass）。"
+            "[[img]]",
+            "- 在眼球最前方，蓋住**虹膜、瞳孔和前房**。",
+            "- 外表面**光滑凸出**、內表面**凹入**（watch glass）。"
           ],
-          "keys": [
-            "外層纖維膜的前 1/6",
-            "透明、無血管",
-            "外凸內凹，像錶面玻璃"
-          ],
-          "flash": {
-            "front": "角膜佔眼球外層纖維膜的多少？",
-            "back": "前 1/6（後 5/6 是鞏膜）"
-          },
           "exam": [
             "**考法**：角膜占纖維層前 1/6（106 師高 21）；屈光力約 2/3、表面不規則 → 散光（108 師特 7）。"
           ],
@@ -69,7 +57,11 @@
             "img/eye-anat-fig/cornea_eye.jpg",
             "img/eye-anat-fig/cornea_limbus.jpg"
           ],
-          "img_source": "Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）；Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "角膜佔眼球外層纖維膜的多少？",
+            "back": "前 1/6（後 5/6 是鞏膜）"
+          }
         },
         {
           "type": "check",
@@ -87,34 +79,34 @@
         },
         {
           "type": "card",
-          "title": "前表面 vs 後表面的尺寸",
+          "title": "前表面 vs 後表面",
           "body": [
-            "> 🖼️ **看圖**：眼球前段：角膜覆蓋前房、虹膜與瞳孔",
+            "> [!big] {o:前表面是橢圓}（水平 11.7、垂直 10.6 mm）；{b:後表面是圓}（11.7 mm）。後表面**比較彎**。",
             "",
-            "| | 前表面 | 後表面 |",
-            "|---|---|---|",
-            "| 形狀 | **橢圓形** | **圓形** |",
-            "| 水平直徑 | **11.7 mm** | 11.7 mm |",
-            "| 垂直直徑 | **10.6 mm** | 11.7 mm |",
-            "| 曲率半徑 | **7.8 mm** | **6.5 mm** |",
-            "",
-            "- 從正面看，前表面**水平比垂直寬**（上下被鞏膜蓋住比較多）。",
-            "- 後表面曲率半徑較小 → **比較彎**。"
+            "[[img]]",
+            "::: cols o b",
+            "### 前表面",
+            "- 形狀：**橢圓**",
+            "- 水平 **11.7 mm**、垂直 **10.6 mm**",
+            "- 曲率半徑 **7.8 mm**",
+            "|||",
+            "### 後表面",
+            "- 形狀：**圓**",
+            "- 11.7 × 11.7 mm",
+            "- 曲率半徑 **6.5 mm**（較小 → 較彎）",
+            ":::",
+            "> [!why] 為什麼前表面水平比垂直寬？",
+            "> 上下被鞏膜蓋住比較多。"
           ],
-          "keys": [
-            "前表面橢圓：水平 11.7、垂直 10.6 mm",
-            "後表面圓形：11.7 × 11.7 mm",
-            "曲率半徑：前 7.8、後 6.5 mm"
-          ],
-          "flash": {
-            "front": "角膜前、後表面的曲率半徑？",
-            "back": "前表面 7.8 mm；後表面 6.5 mm"
-          },
           "exam": [
             "**考法**：前、後表面的尺寸與曲率；**2～3 歲達成人大小**（111 師高 2）。"
           ],
           "img": "img/eye-anat-fig/cornea_ant.jpg",
-          "img_source": "BruceBlaus. When using this image in external sources it can be cited as:  Blausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "BruceBlaus. When using this image in external sources it can be cited as:  Blausen.com staff (2014). \"Medical gallery of，Wikimedia Commons「Blausen 0390 EyeAnatomy Sectional.png」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "角膜前、後表面的曲率半徑？",
+            "back": "前表面 7.8 mm；後表面 6.5 mm"
+          }
         },
         {
           "type": "check",
@@ -134,36 +126,35 @@
           "type": "card",
           "title": "厚度、折射率與屈光力",
           "body": [
-            "> 🖼️ **看圖**：角膜五層（由外到內）",
+            "> [!big] **中央薄、周邊厚**；折射率 **1.376**；屈光力 {o:+48} ＋ {b:−5} ＝ **+43 D**。",
             "",
-            "- **厚度**：中央 **0.5–0.6 mm**、周邊 **1.2 mm** → **中央薄、周邊厚**",
-            "- **折射率**：**1.376**（約 1.38）",
-            "- **屈光力**：",
+            "[[img]]",
+            "- **厚度**：中央 **0.5–0.6 mm**；周邊較厚（講義寫約 **1.2 mm**；國考選項常用的數字是中央 520～550 μm、周邊約 700 μm，重點都是「**周邊比中央厚**」）。",
+            "- **折射率**：**1.376**（約 1.38）。",
+            "- **形狀**：長橢球形（prolate）：**中央較陡、周邊較平**，是非球面光學系統。",
             "",
-            "```",
-            "前表面 +48 D ＋ 後表面 −5 D ＝ 總屈光力 +43 D",
-            "約佔全眼總屈光力的 3/4（中文教材寫約 70%）",
-            "```",
+            "::: flow",
+            "{o:前表面 +48 D}",
+            "{b:後表面 −5 D}",
+            "**總共 +43 D**",
+            ":::",
+            "- 約占全眼屈光力的 **2/3～3/4**（講義寫 3/4、中文教材寫約 70%、國考選項寫 2/3）。",
             "",
-            "- **形狀**：長橢球形（prolate）——**中央較陡、周邊較平**，形成非球面光學系統。",
+            "> [!why] 為什麼後表面是負的？",
+            "> 光從角膜（1.376）進入折射率**較低**的房水。",
             "",
-            "後表面是**負**屈光力，因為光從角膜（1.376）進入折射率較低的房水。"
+            "> [!warn] 易錯",
+            "> 角膜是「**中央薄、周邊厚**」，不是中央最厚。"
           ],
-          "keys": [
-            "中央 0.5–0.6 mm、周邊 1.2 mm",
-            "折射率 1.376",
-            "+48 − 5 = +43 D，約全眼 3/4"
-          ],
-          "tip": "易錯：角膜是「中央薄、周邊厚」，不是中央最厚。",
-          "flash": {
-            "front": "角膜總屈光力是多少？怎麼來的？",
-            "back": "+43 D＝前表面 +48 D＋後表面 −5 D，約佔全眼 3/4"
-          },
           "exam": [
             "**考法**：中央厚度 520～550 μm、**中央薄而陡**、扁長形 Q 為負（109 生特 5、111 師高 8、113 師高 8）。"
           ],
           "img": "img/eye-anat-fig/cornea_5.jpg",
-          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "角膜總屈光力是多少？怎麼來的？",
+            "back": "+43 D＝前表面 +48 D＋後表面 −5 D，約佔全眼 3/4"
+          }
         },
         {
           "type": "check",
@@ -254,7 +245,8 @@
         "角膜形狀",
         "角膜厚度",
         "屈光手術"
-      ]
+      ],
+      "pace": "free"
     },
     {
       "id": "l2",
@@ -267,42 +259,36 @@
       "steps": [
         {
           "type": "intro",
-          "title": "角膜幾乎是「水做的」",
+          "title": "八成是水，卻一點都不混濁",
           "body": [
-            "角膜將近八成是水，卻一點都不混濁。它的透明靠的是膠原纖維排得非常整齊。",
-            "",
-            "如果纖維排列亂掉、基質變薄，角膜就會像被吹脹的氣球一樣往前凸——這就是**圓錐角膜**。"
+            "> [!big] 角膜的透明靠**膠原纖維排得很整齊**；排列亂掉、基質變薄 → 角膜往前凸成**圓錐角膜**。"
           ]
         },
         {
           "type": "card",
           "title": "角膜的化學組成",
           "body": [
-            "> 🖼️ **看圖**：角膜五層（由外到內）",
+            "> [!big] **水 78%**、**膠原 15%**（I 型為主）、其他蛋白 5%、**黏多醣 2%**（硫酸角質素最多）。",
             "",
+            "[[img]]",
             "| 成分 | 比例 |",
             "|---|---|",
             "| **水** | **78%** |",
-            "| **膠原蛋白** | **15%**（主要是 I、V、VI 型，**以 I 型為主**） |",
+            "| **膠原蛋白** | **15%**（I、V、VI 型，**以 I 型為主**） |",
             "| 其他蛋白質 | 5% |",
             "| **黏多醣**（硫酸角質素、硫酸軟骨素、硫酸皮膚素） | 2% |",
             "",
-            "黏多醣現在多稱為**醣胺聚醣（GAG）**，其中**硫酸角質素**在角膜中含量最高。"
+            "- 黏多醣現在多稱為**醣胺聚醣（GAG）**；其中**硫酸角質素**含量最高。"
           ],
-          "keys": [
-            "水 78%",
-            "膠原 15%（I 型為主）",
-            "黏多醣 2%，硫酸角質素最多"
-          ],
-          "flash": {
-            "front": "角膜含水量約多少？膠原蛋白以哪一型為主？",
-            "back": "水約 78%；膠原以 I 型為主（另有 V、VI 型）"
-          },
           "exam": [
             "**考法**：I 型膠原、糖胺聚醣以硫酸角質素最多；與鞏膜比較（106 師特 14、108 師高 6、108 生特 6、113 生普 8）。"
           ],
           "img": "img/eye-anat-fig/cornea_5.jpg",
-          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "角膜含水量約多少？膠原蛋白以哪一型為主？",
+            "back": "水約 78%；膠原以 I 型為主（另有 V、VI 型）"
+          }
         },
         {
           "type": "check",
@@ -320,26 +306,23 @@
         },
         {
           "type": "card",
-          "title": "圓錐角膜（Keratoconus）是什麼？",
+          "title": "圓錐角膜（Keratoconus）",
           "body": [
-            "- 角膜**逐漸變陡**，最常發生在**中央偏下方**。",
-            "- 病因**多重**；招牌病理是**基質變薄**與**層板排列紊亂**（disorganized lamellae）。",
-            "- **原發**：先天性",
-            "- **續發**：外傷、春季角結膜炎（VKC）、唐氏症之後",
-            "- **揉眼睛**和圓錐角膜的發生**高度相關**。"
+            "> [!big] 角膜**逐漸變陡、變薄**，常在**中央偏下**；和**揉眼睛**高度相關。",
+            "",
+            "- 招牌病理：**基質變薄**＋**層板排列紊亂**（disorganized lamellae）。",
+            "- 病因**多重**：",
+            "  - **原發**：先天性",
+            "  - **續發**：外傷、春季角結膜炎（VKC）、唐氏症之後",
+            "- 角膜錐狀前凸 → **不規則散光**。"
           ],
-          "keys": [
-            "進行性變陡，常在中央偏下",
-            "基質變薄＋層板紊亂",
-            "揉眼高度相關"
+          "exam": [
+            "**考法**：圓錐角膜（keratoconus）：角膜變薄、前凸 → 不規則散光；國考偏臨床題，常與異位性皮膚炎、過敏性結膜炎相關（109 生普 28）。"
           ],
           "flash": {
             "front": "圓錐角膜的招牌病理變化？",
             "back": "基質變薄（stromal thinning）與層板排列紊亂"
-          },
-          "exam": [
-            "**考法**：圓錐角膜（keratoconus）：角膜變薄、前凸 → 不規則散光；國考偏臨床題，常與異位性皮膚炎、過敏性結膜炎相關（109 生普 28）。"
-          ]
+          }
         },
         {
           "type": "check",
@@ -363,32 +346,32 @@
         },
         {
           "type": "card",
-          "title": "圓錐角膜的臨床徵象",
+          "title": "圓錐角膜的四個徵象",
           "body": [
-            "> 🖼️ **看圖**：基質：夾在前彈力層與後彈力層之間，細胞是角質細胞",
+            "> [!big] **Vogt 紋**（深基質應力紋）、**Fleischer 環**（上皮鐵環）、**Munson 徵象**（往下看下眼瞼凸出）、頂點變薄。",
             "",
-            "- **角膜頂點變薄**、**Bowman 層結疤**",
-            "- **Vogt's striae**：基質深層的垂直應力紋，**壓迫眼球時會消失**",
-            "- **Fleischer ring**：在錐底周圍的**上皮**累積一圈**鐵沉積**",
-            "- **Munson's sign**：病人**往下看時下眼瞼被頂出**一個 V 形突起",
+            "[[img]]",
+            "| 徵象 | 是什麼 |",
+            "|---|---|",
+            "| 頂點變薄、Bowman 層結疤 | 錐頂的變化 |",
+            "| **Vogt's striae** | 基質深層的垂直應力紋，**壓迫眼球時會消失** |",
+            "| **Fleischer ring** | 錐底周圍**上皮**累積一圈**鐵** |",
+            "| **Munson's sign** | 病人**往下看**時下眼瞼被頂出 **V 形**突起 |",
             "",
-            "嚴重時 Descemet 膜被撐破 → **急性角膜水腫（hydrops）**（後面 DM 單元會再遇到）。"
+            "- 嚴重時 Descemet 膜被撐破 → **急性角膜水腫（hydrops）**（Descemet 膜那一課會再遇到）。",
+            "",
+            "> [!warn] 不要混",
+            "> Fleischer ring 是**鐵**；Wilson 病的 Kayser-Fleischer ring 是**銅**。"
           ],
-          "keys": [
-            "Vogt striae：深基質應力紋，壓眼球會消失",
-            "Fleischer ring：錐底上皮的鐵環",
-            "Munson sign：往下看下眼瞼凸出"
-          ],
-          "tip": "Fleischer ring 是**鐵**；角膜上的**銅**環是 Wilson 病的 Kayser-Fleischer ring，不要混。",
-          "flash": {
-            "front": "Fleischer ring 是什麼沉積？在哪一層？",
-            "back": "鐵沉積，在錐底周圍的角膜上皮"
-          },
           "exam": [
             "**考法**：圓錐角膜的徵象（Munson、Fleischer ring…）多半在眼病學考；解剖課只需知道**中央變薄、錐狀前凸**。"
           ],
           "img": "img/eye-anat-fig/cornea_stroma.jpg",
-          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "Fleischer ring 是什麼沉積？在哪一層？",
+            "back": "鐵沉積，在錐底周圍的角膜上皮"
+          }
         },
         {
           "type": "check",
@@ -464,7 +447,8 @@
       ],
       "teaches": [
         "角膜組成"
-      ]
+      ],
+      "pace": "free"
     },
     {
       "id": "l3",
@@ -475,35 +459,39 @@
       "steps": [
         {
           "type": "intro",
-          "title": "角膜總論題：形狀、厚度與成分",
+          "title": "角膜總論：三個固定考點",
           "body": [
-            "角膜總論的國考題不多，但都很固定：**形狀（Q 值）**、**中央厚度與曲度**、**膠原成分與糖胺聚醣**。"
+            "> [!big] 國考題不多但很固定：**形狀（Q 值）**、**中央厚度與曲度**、**膠原與糖胺聚醣**。"
           ]
         },
         {
           "type": "card",
-          "title": "形狀：扁長形，中央薄而陡",
+          "title": "速查一：形狀與厚度",
           "body": [
-            "> 🖼️ **看圖**：眼球水平切面：角膜在最前面，後面連著鞏膜",
+            "> [!big] 正常角膜是**扁長形（prolate）**：中央陡、周邊平，**Q 值為負**；**中央薄、周邊厚**。",
             "",
-            "- 正常角膜是**扁長形（prolate）**：中央陡、周邊平，**Q 值為負**（約 −0.2～−0.3）；扁圓形（oblate）Q 值為正（如近視雷射後）。",
-            "- **中央較薄、屈度較陡**；周邊較厚、較平（中央約 520～550 μm，周邊約 700 μm）。",
+            "[[img]]",
+            "::: cols g r",
+            "### 扁長形 prolate（正常）",
+            "- 中央陡、周邊平",
+            "- **Q 值為負**（約 −0.2～−0.3）",
+            "|||",
+            "### 扁圓形 oblate",
+            "- **Q 值為正**",
+            "- 例：近視雷射後",
+            ":::",
+            "- **厚度**：中央約 520～550 μm（較薄、較陡）；周邊約 700 μm（較厚、較平）。",
             "- 嬰兒角膜約 **2～3 歲**就接近成人大小。",
-            "- 角膜約負責全眼屈光力的 **2/3**；表面不規則會造成**散光**。"
-          ],
-          "keys": [
-            "正常：扁長形、Q 為負",
-            "中央薄、陡；周邊厚、平",
-            "2～3 歲接近成人大小"
+            "- 角膜約負責全眼屈光力的 **2/3**；表面不規則 → **散光**。"
           ],
           "exam": [
             "**Q 值**（111 師高 8）；**中央薄而陡**（109 生特 5）；**2～3 歲**（111 師高 2）；**屈光力與散光**（108 師特 7）。"
           ],
+          "img": "img/eye-anat-fig/cornea_eye.jpg",
+          "img_source": "Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "demo": [
             "**示範**：「扁長形，Q 值為負」＝正常；「扁圓形，Q 值為正」＝術後或病變。"
-          ],
-          "img": "img/eye-anat-fig/cornea_eye.jpg",
-          "img_source": "Andrewmeyerson，Wikimedia Commons「Human Eye Transverse Cut Unlabeled.jpg」，CC BY-SA 3.0（https://commons.wikimedia.org/wiki/File:Human_Eye_Transverse_Cut_Unlabeled.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          ]
         },
         {
           "type": "check",
@@ -521,27 +509,33 @@
         },
         {
           "type": "card",
-          "title": "成分：I 型膠原與糖胺聚醣",
+          "title": "速查二：I 型膠原與糖胺聚醣",
           "body": [
-            "> 🖼️ **看圖**：基質：夾在前彈力層與後彈力層之間，細胞是角質細胞",
+            "> [!big] 基質以 **I 型膠原**為主；糖胺聚醣以**硫酸角質素**最多。角膜和鞏膜**成分相同、排列不同**。",
             "",
-            "- 角膜基質約 **200～250 層**板層，以 **I 型膠原纖維**為主（鞏膜也是 I 型，差在排列）。",
-            "- **糖胺聚醣（GAG）** 以 **硫酸角質素（keratan sulfate）** 最多，其次硫酸軟骨素、硫酸皮膚素。",
-            "- 角膜與鞏膜：**成分相同、排列不同**——角膜規則（透明），鞏膜不規則（不透明）；差異還有纖維直徑與含水量。"
-          ],
-          "keys": [
-            "I 型膠原",
-            "硫酸角質素（keratan sulfate）最多",
-            "角膜與鞏膜：成分同、排列不同"
+            "[[img]]",
+            "- 基質約 **200～250 層**板層。",
+            "- 糖胺聚醣（GAG）：**硫酸角質素（keratan sulfate）** > 硫酸軟骨素、硫酸皮膚素。",
+            "",
+            "::: cols b y",
+            "### 角膜",
+            "- I 型膠原",
+            "- 排列**規則** → 透明",
+            "|||",
+            "### 鞏膜",
+            "- 也是 I 型膠原",
+            "- 排列**不規則** → 不透明",
+            "- 纖維直徑、含水量也不同",
+            ":::"
           ],
           "exam": [
             "**膠原型別**（106 師特 14）；**GAG**（108 師高 6）；**角膜 vs 鞏膜**（108 生特 6、113 生普 8）。"
           ],
+          "img": "img/eye-anat-fig/cornea_stroma.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "demo": [
             "**示範**：「角膜與鞏膜組成皆含彈性纖維」錯；「兩者主要組成分相同」對。"
-          ],
-          "img": "img/eye-anat-fig/cornea_stroma.jpg",
-          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+          ]
         },
         {
           "type": "check",
@@ -612,7 +606,8 @@
         "Q值",
         "糖胺聚醣",
         "角膜尺寸"
-      ]
+      ],
+      "pace": "free"
     }
   ],
   "path": [

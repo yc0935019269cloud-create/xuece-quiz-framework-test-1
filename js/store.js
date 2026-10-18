@@ -125,13 +125,14 @@ const Store = (() => {
   }
 
   /* 題目篩選 */
+  const examYear = e => { if (e.year != null && e.year !== '') return Number(e.year); for (const x of e.path || []) { const m = /^\s*(\d{2,3})\s*年(國考)?\s*$/.exec(String(x)); if (m) return Number(m[1]); } return null; };
   function filter(opt) {
     // opt: {subjects:[], years:[], exams:[], types:[], status:'all'|'new'|'wrong'|'right'|'unmastered'|'wrongbook', search, ids}
     let list = window.QB.questions;
     if (opt.ids) { const set = new Set(opt.ids); list = list.filter(q => set.has(q.id)); }
     if (opt.exams && opt.exams.length) { const s = new Set(opt.exams); list = list.filter(q => s.has(q.exam)); }
     if (opt.subjects && opt.subjects.length) { const s = new Set(opt.subjects); list = list.filter(q => s.has(EX[q.exam].subj)); }
-    if (opt.years && opt.years.length) { const s = new Set(opt.years.map(Number)); list = list.filter(q => s.has(EX[q.exam].year)); }
+    if (opt.years && opt.years.length) { const s = new Set(opt.years.map(Number)); list = list.filter(q => s.has(examYear(EX[q.exam]))); }
     if (opt.types && opt.types.length) { const s = new Set(opt.types); list = list.filter(q => s.has(q.type)); }
     if (opt.favorites === 'saved' || opt.favorites === 'unfiled' || opt.favoriteFolder) list = list.filter(q => {
       const item = favorites.items[q.id];
@@ -193,8 +194,11 @@ const Store = (() => {
     const acc = accId === undefined ? profile.petAcc[id] : accId;
     return SP.pet(id, size, cls, style, sk ? sk.pal : null, acc || null);
   }
+  // 沒有設定過造型時：騎士預設穿「薔薇近衛」（免費）；明確選過經典預設款（空字串）則照舊
+  const DEFAULT_SKIN = { knight: 'px_knight_m2' };
+  function heroSkinId(c) { const v = (profile.heroSkin || {})[c]; return v === undefined ? (DEFAULT_SKIN[c] || '') : v; }
   function heroTile(id) {
-    const c = id || profile.activeClass, sid = (profile.heroSkin || {})[c];
+    const c = id || profile.activeClass, sid = heroSkinId(c);
     const sk = sid && (C.HERO_SKINS[c] || []).find(x => x.id === sid);
     // 沒買過的付費造型（例如舊存檔殘留）退回預設外觀
     if (sk && sk.cost && !(profile.ownedHeroSkins || []).includes(c + ':' + sid)) return C.cls(c).tile;
@@ -233,7 +237,7 @@ const Store = (() => {
   return {
     get profile() { return profile; }, get qs() { return qs; }, get wrong() { return wrong; }, get settings() { return settings; }, get favorites() { return favorites; },
     isFavorite, setFavorite, setFavoriteFolders, createFavoriteFolder, renameFavoriteFolder, deleteFavoriteFolder, favoriteCount,
-    Q, EX, reindex, addClassXp, heroTile, daily, touchStreak, petName, petHTML, record, status, filter, examStats, addGems, addAccXp, accNeed, upg, petXp, saveProfile, saveWrong, saveRun, loadRun,
+    Q, EX, reindex, addClassXp, heroTile, heroSkinId, daily, touchStreak, petName, petHTML, record, status, filter, examStats, addGems, addAccXp, accNeed, upg, petXp, saveProfile, saveWrong, saveRun, loadRun,
     exportAll, importAll, resetAll, saveSettings,
     onTop(fn) { UI_refreshTop = fn; }
   };

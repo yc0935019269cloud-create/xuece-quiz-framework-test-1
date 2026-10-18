@@ -1,5 +1,5 @@
 // 學習卡配圖 QA：眼球血液供應 3 單元＋眼眶骨／視覺路徑 2 課程的講解卡，每張配圖卡渲染後檢查
-//   圖檔存在並載入、張數正確、有「看圖」說明、有圖片來源、桌機與 390px 沒有橫向捲動；另存內頸動脈四分支卡的截圖。
+//   圖檔存在並載入、張數正確、有「看圖」說明（或新版排版的「一句話」提示框 .co-big）、有圖片來源、桌機與 390px 沒有橫向捲動；另存內頸動脈四分支卡的截圖。
 // 執行：$env:NODE_PATH='E:\NEWTEST\skull-atlas-3d\node_modules'; node tools/figs-qa/check.cjs
 const { chromium } = require('playwright');
 const fs = require('fs');
@@ -40,7 +40,7 @@ const problems = []; let checked = 0;
           await page.waitForTimeout(250);
           const info = await page.evaluate(() => {
             const imgs = [...document.querySelectorAll('#lpBody .lp-img')];
-            return { n: imgs.length, loaded: imgs.every(i => i.complete && i.naturalWidth > 0), cap: !!document.querySelector('#lpBody blockquote'), src: !!document.querySelector('#lpBody .lp-src'), sw: document.querySelector('#lpBody pre') ? 0 : document.documentElement.scrollWidth, iw: window.innerWidth, minW: Math.min(...imgs.map(i => i.getBoundingClientRect().width)) };
+            return { n: imgs.length, loaded: imgs.every(i => i.complete && i.naturalWidth > 0), cap: !!document.querySelector('#lpBody blockquote, #lpBody .co-big'), src: !!document.querySelector('#lpBody .lp-src'), sw: document.querySelector('#lpBody pre') ? 0 : document.documentElement.scrollWidth, iw: window.innerWidth, minW: Math.min(...imgs.map(i => i.getBoundingClientRect().width)) };
           });
           checked++;
           if (info.n !== c.n) problems.push(`${tag} 圖張數 ${info.n}/${c.n}`);

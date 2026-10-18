@@ -47,11 +47,14 @@ const Screens = (() => {
    * 回傳重畫函式；科目改變時呼叫它。展開狀態在這次畫面內記住。 */
   function setPicker(box, state, onChange, opts = {}) {
     const open = {};
+    if (!state.years) state.years = [];   // 年份是篩選條件：和科目取交集，再在範圍內挑題本
     // opts.allIfNone：科目沒選＝全部科目（題庫頁），各科先收起來
     const subjs = () => state.subjects.length || !opts.allIfNone ? state.subjects : MAIN_SUBJ.filter(sj => SETS.some(e => e.subj === sj));
     const draw = () => {
       const sjs = subjs();
-      state.exams = state.exams.filter(id => Store.EX[id] && sjs.includes(Store.EX[id].subj));
+      const yset = new Set(state.years);
+      const inYear = e => !yset.size || yset.has(yearOf(e));
+      state.exams = state.exams.filter(id => Store.EX[id] && sjs.includes(Store.EX[id].subj) && inYear(Store.EX[id]));
       const sel = new Set(state.exams);
       const pick = ids => { const on = ids.filter(id => sel.has(id)).length;
         return `<span class="dim small-t">${on ? `已選 ${on}／` : ''}${ids.length} 本</span><span class="grow"></span><button class="px-btn small" data-pick="${ids.join(',')}">${on === ids.length ? '取消' : '全選'}</button>`; };
@@ -60,24 +63,33 @@ const Screens = (() => {
       const yearRow = (ex, label) => {
         const by = new Map(); ex.forEach(e => { const y = yearOf(e); if (y != null) (by.get(y) || by.set(y, []).get(y)).push(e.id); });
         if (!by.size) return '';
-        return `<div class="st-years"><span class="dim small-t">${label}</span>${[...by.keys()].sort((a, b) => a - b).map(y => { const ids = by.get(y), on = ids.filter(id => sel.has(id)).length;
-          return `<span class="chip ${on === ids.length ? 'on' : on ? 'part' : ''}" data-pick="${ids.join(',')}" title="${ids.length} 本題本">${y} 年</span>`; }).join('')}</div>`;
+        return `<div class="st-years st-years-top"><div class="st-ylab">📅 年份 <span class="dim small-t">${label}</span></div><div class="st-ychips">${[...by.keys()].sort((a, b) => a - b).map(y => `<span class="chip ${yset.has(y) ? 'on' : ''}" data-year="${y}" title="${by.get(y).length} 本題本">${y} 年</span>`).join('')}${yset.size ? '<span class="chip" data-year="clear">清除年份</span>' : ''}</div></div>`;
       };
       const node = (n, sj, depth, top) => { const k = sj + n.key;
         return `<details class="stree" data-key="${U.esc(k)}" ${(open[k] ?? depth === 0) ? 'open' : ''}><summary><span class="st-name">${U.esc(n.name)}</span>${pick(treeIds(n))}</summary>
-          <div class="st-body">${top ? yearRow(SETS.filter(e => e.subj === sj), '依年份：') : ''}${[...n.kids.values()].map(c => node(c, sj, depth + 1)).join('')}${n.sets.length ? chips(n.sets) : ''}</div></details>`; };
+          <div class="st-body">${[...n.kids.values()].map(c => node(c, sj, depth + 1)).join('')}${n.sets.length ? chips(n.sets) : ''}</div></details>`; };
       const html = sjs.map(sj => {
-        const ex = SETS.filter(e => e.subj === sj); if (!ex.length) return '';
+        const ex = SETS.filter(e => e.subj === sj && inYear(e)); if (!ex.length) return '';
         const t = setTree(ex); t.name = C.SUBJECTS[sj].name;
         return node(t, sj, sjs.length > 1 ? 1 : 0, true);   // 選多科時各科先收起來
       }).join('');
-      const allYears = sjs.length > 1 ? yearRow(SETS.filter(e => sjs.includes(e.subj)), '所有科目依年份：') : '';
-      box.innerHTML = html ? `<div class="stree-wrap">${allYears}${html}</div>` : '<span class="dim small-t">（先選科目）</span>';
+      const allYears = yearRow(SETS.filter(e => sjs.includes(e.subj)), '可複選；只留這些年，沒選＝全部');
+      const clr = state.exams.length ? `<div class="st-years"><span class="chip" data-clear="1">取消全部已選題本（${state.exams.length}）</span></div>` : '';
+      box.innerHTML = html ? `<div class="stree-wrap">${allYears}${clr}${html}</div>` : '<span class="dim small-t">（先選科目）</span>';
     };
     box.addEventListener('toggle', e => { if (e.target.dataset && e.target.dataset.key) open[e.target.dataset.key] = e.target.open; }, true);
     box.onclick = ev => {
-      const b = ev.target.closest('[data-pick]'), c = ev.target.closest('.chip[data-v]');
-      if (b) {
+      const b = ev.target.closest('[data-pick]'), c = ev.target.closest('.chip[data-v]'), yr = ev.target.closest('[data-year]'), cl = ev.target.closest('[data-clear]');
+      if (yr) {
+        const v = yr.dataset.year;
+        // 已經整組（全選）的資料夾，改年份後自動連同新年份的題本一起選，不用重按全選
+        const groups = ys => { const ye = new Set(ys), out = new Map(), walk = (n, sj) => { out.set(sj + n.key, treeIds(n)); n.kids.forEach(k => walk(k, sj)); };
+          subjs().forEach(sj => { const ex = SETS.filter(e => e.subj === sj && (!ye.size || ye.has(yearOf(e)))); if (ex.length) walk(setTree(ex), sj); }); return out; };
+        const before = groups(state.years), full = [...before].filter(([, ids]) => ids.length && ids.every(id => state.exams.includes(id))).map(([k]) => k);
+        if (v === 'clear') state.years = []; else { const y = Number(v), i = state.years.indexOf(y); i >= 0 ? state.years.splice(i, 1) : state.years.push(y); }
+        if (full.length) { const add = new Set(state.exams), after = groups(state.years); full.forEach(k => (after.get(k) || []).forEach(id => add.add(id))); state.exams = [...add]; }
+      } else if (cl) state.exams = [];
+      else if (b) {
         ev.preventDefault(); ev.stopPropagation();
         const ids = b.dataset.pick.split(','), all = ids.every(id => state.exams.includes(id));
         state.exams = all ? state.exams.filter(id => !ids.includes(id)) : [...new Set(state.exams.concat(ids))];
@@ -885,7 +897,7 @@ const Screens = (() => {
       U.$('#bl').innerHTML = effSubj().map(x => `<div class="small-t mb"><b style="color:${C.SUBJECTS[x].color}">${C.SUBJECTS[x].name}</b>：${C.themeOf(x) === 'mix' ? '<span class="dim">綜合主題：首領從所有主題隨機登場</span>' : C.BOSS_DEFS[C.themeOf(x)].map((b, i) => `${i + 1}章 ${b.name}<span class="tag ng">${C.MECHS[b.mech].name}</span>`).join(' ')}</div>`).join('') || '<span class="dim">請選擇科目</span>';
     };
     const upd = () => {
-      const n = Store.filter({ subjects: state.subjects, exams: state.exams, types: state.types }).filter(q => state.types.includes('open') || q.type !== 'open').length;
+      const n = Store.filter({ subjects: state.subjects, exams: state.exams, years: state.years, types: state.types }).filter(q => state.types.includes('open') || q.type !== 'open').length;
       U.$('#cnt').textContent = `題池：${n} 題${state.exams.length ? `（已選 ${state.exams.length} 本題本）` : '（範圍不選＝所選科目全部題本）'}。冒險中會持續抽題、不限題數；首領戰只出該首領科目的題目。`; drawBoss();
     };
     const drawSets = setPicker(U.$('#fy'), state, upd);
@@ -900,7 +912,7 @@ const Screens = (() => {
       if (!subs.length) { U.toast('選的題本不在已選的科目裡'); return; }
       p.abyssCfg = { subjects: state.subjects.slice(), exams: state.exams.slice(), types: state.types.slice(), pref: state.pref, diff: state.diff }; Store.saveProfile();
       const names = (state.subjects.length === MAIN_SUBJ.length && MAIN_SUBJ.length > 1 && !state.exams.length ? '全科' : subs.map(x => C.SUBJECTS[x].name).join('・')) + (state.exams.length ? `・${state.exams.length} 本` : '');
-      startRun({ mode: 'abyss', title: `深淵遠征（${names}）`, subjects: subs, exams: state.exams.slice(), types: state.types.slice(), pref: state.pref, diff: state.diff });
+      startRun({ mode: 'abyss', title: `深淵遠征（${names}）`, subjects: subs, exams: state.exams.slice(), years: (state.years || []).slice(), types: state.types.slice(), pref: state.pref, diff: state.diff });
     };
   }
 
@@ -949,9 +961,9 @@ const Screens = (() => {
   function heroSkinModal(K) {
     const p = P(); p.heroSkin = p.heroSkin || {}; p.ownedHeroSkins = p.ownedHeroSkins || [];
     const list = C.HERO_SKINS[K.id];
-    const currentId = () => p.heroSkin[K.id] || '';
+    const currentId = () => Store.heroSkinId(K.id) || '';
     let tryId = currentId(), group = list.find(x=>x.id===tryId)?.actor ? 'all' : 'classic';
-    const owned = id => !id || p.ownedHeroSkins.includes(K.id + ':' + id);
+    const owned = id => !id || !(list.find(x => x.id === id) || {}).cost || p.ownedHeroSkins.includes(K.id + ':' + id);
     const m = U.modal({ title: `${K.name}的造型`, body: '<div id="hsk"></div>', onClose: () => classes() });
     const box = U.$('#hsk', m.el);
     function draw() {

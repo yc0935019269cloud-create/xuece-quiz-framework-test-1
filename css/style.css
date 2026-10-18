@@ -1312,7 +1312,7 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 }
 
 /* ---------- 名詞字源小視窗（js/glossary.js） ---------- */
-.gl { cursor: pointer; border-bottom: 1px dashed var(--purple); text-decoration: none; border-radius: 2px; transition: background .15s; }
+.gl { cursor: pointer; border-bottom: 1px dotted rgba(185, 139, 255, .55); text-decoration: none; border-radius: 2px; transition: background .15s; }
 .gl:hover, .gl:focus-visible, .gl.on { background: rgba(185, 139, 255, .22); outline: none; }
 .gl-pop { position: fixed; z-index: 9000; background: var(--panel); color: var(--text); border: 3px solid var(--line); box-shadow: 0 0 0 2px var(--purple), 0 10px 28px rgba(0,0,0,.55);
   padding: 10px 12px; font-size: 14px; line-height: 1.6; max-height: 70vh; overflow: auto; border-radius: 4px; animation: glIn .12s ease-out; }
@@ -1325,3 +1325,57 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .gl-w { font-family: Georgia, "Times New Roman", serif; font-weight: 700; color: var(--bg); background: var(--gold); padding: 0 6px; border-radius: 3px; white-space: nowrap; }
 .gl-note { margin-top: 6px; }
 .gl-rel { margin-top: 6px; color: var(--dim); font-size: 13px; }
+.st-years-top{display:block;margin:0 0 10px;padding:8px 10px;background:rgba(255,255,255,.04);border-left:3px solid var(--gold,#f2c14e);border-radius:4px}
+.st-ylab{font-weight:700;margin-bottom:6px}
+.st-ychips{display:flex;flex-wrap:wrap;gap:6px}
+
+/* ---------- 教材排版元件（2026-10-18）：一句話、提示框、並排比較、流程、上色 ---------- */
+.md mark { background: rgba(255,207,74,.28); color: #fff3c4; padding: 0 3px; border-radius: 2px; }
+.hl { font-weight: 700; }
+.hl-o { color: #ffad5c; } .hl-b { color: #6cc4ff; } .hl-g { color: #7fe08a; } .hl-r { color: #ff7a7a; } .hl-p { color: #c9a6ff; } .hl-y { color: var(--gold); }
+.co { margin: 12px 0; padding: 8px 14px; border-left: 5px solid var(--hi); background: rgba(255,255,255,.04); }
+.co .md p, .co .md ul, .co .md ol { margin: 3px 0; }
+.co-h { font-weight: 700; margin-bottom: 2px; color: var(--text); }
+.co-big { border: 0; border-left: 6px solid var(--gold); background: linear-gradient(90deg, rgba(255,207,74,.16), rgba(255,207,74,0) 85%); font-size: 1.12em; padding: 10px 16px; }
+.co-big .co-h { font-size: 1.12em; color: var(--gold); }
+.co-tip { border-left-color: var(--green); background: rgba(98,214,110,.08); } .co-tip .co-h { color: #9cf0a5; }
+.co-warn { border-left-color: var(--red); background: rgba(236,84,84,.09); } .co-warn .co-h { color: #ff9a9a; }
+.co-why { border-left-color: var(--purple); background: rgba(185,139,255,.09); } .co-why .co-h { color: #d4bbff; }
+.co-exam { border-left-color: var(--gold); background: rgba(255,207,74,.08); } .co-exam .co-h { color: var(--gold); }
+.co-note { border-left-color: var(--dim); } .co-note .co-h { color: var(--dim); }
+.co-key { border-left-color: var(--blue); background: rgba(79,168,255,.09); } .co-key .co-h { color: #9fd0ff; }
+.md-cols { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 10px; margin: 12px 0; }
+.md-col { background: var(--panel); border: 3px solid var(--line); border-top: 5px solid var(--hi); padding: 6px 12px; min-width: 0; }
+.md-col:nth-child(1) { border-top-color: #ffad5c; } .md-col:nth-child(2) { border-top-color: #6cc4ff; } .md-col:nth-child(3) { border-top-color: #7fe08a; }
+.md-col h2, .md-col h3, .md-col h4 { margin: 2px 0 4px; font-size: 1.05em; }
+.md-col:nth-child(1) :is(h2, h3, h4) { color: #ffad5c; } .md-col:nth-child(2) :is(h2, h3, h4) { color: #6cc4ff; } .md-col:nth-child(3) :is(h2, h3, h4) { color: #7fe08a; }
+.md-col ul { padding-left: 18px; }
+.md-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 12px 0; }
+.md-fstep { background: var(--panel); border: 3px solid var(--line); padding: 3px 10px; line-height: 1.5; }
+.md-farr { color: var(--gold); }
+.lp-body .md > p { max-width: 46em; }
+@media (max-width: 640px) {
+  .md-cols { grid-template-columns: 1fr; }
+  .co-big { font-size: 1.05em; }
+}
+@media (min-width: 700px) { .lp-body .lp-img { max-height: 72vh; } }
+/* 概念卡下方三個框：改成和提示框一致的實線左邊框，少一點雜訊 */
+.lp-keys { border: 0; border-left: 5px solid var(--blue); background: rgba(79,168,255,.08); }
+.lp-exam { border: 0; border-left: 5px solid var(--gold); background: rgba(255,207,74,.08); }
+.lp-keys > b, .lp-exam > b { display: block; margin-bottom: 2px; }
+.lp-keys ul, .lp-exam ul { margin-top: 0; }
+.co-tip { border-left-color: #4fd1c5; background: rgba(79,209,197,.08); } .co-tip .co-h { color: #8ff0e6; }
+/* ::: cols b o：指定每一欄的顏色（和 {b:}{o:} 文字配色一致） */
+.md-col.c-o { border-top-color: #ffad5c !important; } .md-col.c-o :is(h2, h3, h4) { color: #ffad5c !important; }
+.md-col.c-b { border-top-color: #6cc4ff !important; } .md-col.c-b :is(h2, h3, h4) { color: #6cc4ff !important; }
+.md-col.c-g { border-top-color: #7fe08a !important; } .md-col.c-g :is(h2, h3, h4) { color: #7fe08a !important; }
+.md-col.c-r { border-top-color: #ff7a7a !important; } .md-col.c-r :is(h2, h3, h4) { color: #ff7a7a !important; }
+.md-col.c-p { border-top-color: #c9a6ff !important; } .md-col.c-p :is(h2, h3, h4) { color: #c9a6ff !important; }
+.md-col.c-y { border-top-color: var(--gold) !important; } .md-col.c-y :is(h2, h3, h4) { color: var(--gold) !important; }
+/* 教材圖片點擊放大 */
+.lp-img { cursor: zoom-in; }
+.img-zoom { position: fixed; inset: 0; z-index: 9500; background: rgba(10, 6, 16, .94); display: flex; flex-direction: column; }
+.img-zoom-x { position: absolute; top: 10px; right: 10px; z-index: 2; }
+.img-zoom-in { flex: 1; overflow: auto; -webkit-overflow-scrolling: touch; touch-action: pan-x pan-y pinch-zoom; display: flex; align-items: center; justify-content: safe center; padding: 50px 10px 10px; }
+.img-zoom-in img { display: block; background: var(--paper); max-height: calc(100vh - 70px); max-width: calc(100vw - 20px); width: auto; }
+@media (max-width: 640px) { .img-zoom-in { align-items: flex-start; } .img-zoom-in img { max-height: none; max-width: none; width: max(100vw, 900px); } }

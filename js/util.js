@@ -40,8 +40,12 @@ const U = (() => {
     s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
     s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
     s = s.replace(/(^|[^*])\*([^*\s][^*]*)\*/g, '$1<em>$2</em>');
+    // ==重點== 螢光標記；{o:文字} 上色（o 橘、b 藍、g 綠、r 紅、p 紫、y 金），整段教材用同一種顏色代表同一件事
+    s = s.replace(/(^|[^=])==([^=\s<](?:[^=<]*[^=\s<])?)==(?!=)/g, '$1<mark>$2</mark>');
+    s = s.replace(/\{([obgrpy]):([^{}]+)\}/g, '<span class="hl hl-$1">$2</span>');
     return s;
   }
+  const CALLOUT = { big: '', tip: '💡 記法', warn: '⚠️ 陷阱', why: '🤔 為什麼', exam: '🎯 國考這樣考', note: '📎 補充', key: '📌 一定要記' };
   function md(src) {
     const lines = String(src || '').replace(/\r/g, '').split('\n');
     let out = '', i = 0;
@@ -62,6 +66,21 @@ const U = (() => {
         });
         out += t + '</table>'; continue;
       }
+      // ::: cols（欄位用 ||| 分開）／ ::: flow（每行一站，畫成箭頭流程）／ ::: 結尾
+      if ((m = l.match(/^\s*:::\s*(cols|flow)((?:\s+[obgrpy])*)\s*$/))) {
+        const kind = m[1], tint = m[2].trim().split(/\s+/).filter(Boolean), b = []; i++;
+        while (i < lines.length && !/^\s*:::\s*$/.test(lines[i])) { b.push(lines[i]); i++; }
+        i++;
+        if (kind === 'flow') out += `<div class="md-flow">${b.filter(x => x.trim()).map(x => `<span class="md-fstep">${inline(x.trim().replace(/^[-*]\s+/, ''))}</span>`).join('<span class="md-farr">➜</span>')}</div>`;
+        else { const cols = [[]]; b.forEach(x => /^\s*\|\|\|\s*$/.test(x) ? cols.push([]) : cols[cols.length - 1].push(x)); out += `<div class="md-cols" style="--n:${cols.length}">${cols.map((c, k) => `<div class="md-col${tint[k] ? ' c-' + tint[k] : ''}">${md(c.join('\n'))}</div>`).join('')}</div>`; }
+        continue;
+      }
+      // > [!tip] 標題（可省略）：彩色提示框，框內可用清單、表格
+      if ((m = l.match(/^\s*>\s*\[!(\w+)\]\s*(.*)$/)) && m[1] in CALLOUT) {
+        const kind = m[1], title = m[2] || CALLOUT[kind], b = []; i++;
+        while (i < lines.length && /^\s*>/.test(lines[i])) { b.push(lines[i].replace(/^\s*>\s?/, '')); i++; }
+        out += `<div class="co co-${kind}">${title ? `<div class="co-h">${inline(title)}</div>` : ''}${b.length ? md(b.join('\n')) : ''}</div>`; continue;
+      }
       if (/^\s*>/.test(l)) {
         let b = [];
         while (i < lines.length && /^\s*>/.test(lines[i])) { b.push(lines[i].replace(/^\s*>\s?/, '')); i++; }
@@ -81,7 +100,7 @@ const U = (() => {
       }
       if (/^\s*(---|\*\*\*)\s*$/.test(l)) { out += '<hr class="px">'; i++; continue; }
       let p = [];
-      while (i < lines.length && lines[i].trim() && !/^(#{1,6}\s|\s*\||\s*>|\s*([-*+]|\d+[.)])\s+|\s*```)/.test(lines[i])) { p.push(lines[i]); i++; }
+      while (i < lines.length && lines[i].trim() && !/^(#{1,6}\s|\s*\||\s*>|\s*([-*+]|\d+[.)])\s+|\s*```|\s*:::)/.test(lines[i])) { p.push(lines[i]); i++; }
       out += `<p>${p.map(inline).join('<br>')}</p>`;
     }
     return `<div class="md">${out}</div>`;

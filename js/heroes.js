@@ -158,7 +158,7 @@ window.HeroAnim=HeroAnim;
   const legacySkinIcon=C.skinIcon;
   C.skinIcon=sk=>sk.actor?'ha:'+sk.actor:legacySkinIcon(sk);
   C.CLASSES.forEach(k=>{
-    const additions=HeroAnim.ACTORS.filter(a=>a.cls===k.id).map(a=>({id:a.id,name:a.name,actor:a.id,gender:a.gender,cost:NEW_SKIN_COST[Number(a.id.slice(-1))-1]}));
+    const additions=HeroAnim.ACTORS.filter(a=>a.cls===k.id).map(a=>({id:a.id,name:a.name,actor:a.id,gender:a.gender,cost:a.id==='px_knight_m2'?0:NEW_SKIN_COST[Number(a.id.slice(-1))-1]}));
     C.HERO_SKINS[k.id]=C.HERO_SKINS[k.id].concat(additions);
   });
 }
