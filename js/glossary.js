@@ -147,5 +147,5 @@ const GLOSS = (() => {
   const start = () => mo.observe(document.body, { childList: true, subtree: true });
   if (document.body) start(); else addEventListener('DOMContentLoaded', start);
 
-  return { scan, close, open };
+  return { scan, close, open, speak };
 })();

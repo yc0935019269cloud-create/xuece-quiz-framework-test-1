@@ -1081,6 +1081,14 @@ details.ltree.d0 > summary .ltree-n { color: var(--gold); font-size: 18px; }
 .knowledge-star-icon:hover { color: var(--gold); background: rgba(255,207,74,.1); }
 .knowledge-star-icon:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .knowledge-term-heading { display: flex; align-items: center; gap: 6px; }
+.knowledge-term-heading b { min-width: 0; overflow-wrap: anywhere; }
+.dg-pronounce { flex: none; border: 0; background: transparent; color: inherit; cursor: pointer; font-size: 18px; min-width: 32px; min-height: 32px; }
+.dg-pronounce:focus-visible { outline: 2px solid var(--gold); }
+.atlas-review-picker { display: flex; align-items: center; gap: 10px; margin: 10px 0 16px; }
+.atlas-review-picker select { flex: 1; min-width: 0; max-width: 100%; }
+.atlas-review-static { margin-top: 18px; padding-top: 12px; border-top: 2px solid var(--line); }
+.atlas-review-static > summary { color: var(--gold); cursor: pointer; margin-bottom: 12px; }
+@media (max-width: 600px) { .atlas-review-picker { flex-direction: column; align-items: stretch; } }
 .knowledge-filters { align-items: flex-end; }
 .knowledge-filters label { display: flex; flex-direction: column; gap: 5px; min-width: 0; max-width: 100%; }
 .knowledge-filters select { max-width: 100%; width: 100%; }

@@ -1,0 +1,2094 @@
+{
+  "checks": [
+    {
+      "name": "eye-anat-orbit-course.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "eye-anat-orbit-course.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "eye-anat-visual-path-course.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "eye-anat-visual-path-course.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "lab-blood.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "lab-blood.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-brain.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-brain.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-lid.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-lid.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-orbit.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-orbit.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-tear.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-tear.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-vessel.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-vessel.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-visual.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "lab-manual-visual.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "lab-orbit.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "lab-orbit.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "lab-visual-path.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "lab-visual-path.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "manual-brain-nerve.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "manual-brain-nerve.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "manual-cranial-vent.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "manual-cranial-vent.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "manual-eye.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "manual-eye.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "manual-lid-eom.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "manual-lid-eom.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "manual-orbit-bones.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "manual-orbit-bones.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "manual-vessel.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "manual-vessel.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "manual-visual-path.json keeps all lesson IDs and step indices",
+      "ok": true
+    },
+    {
+      "name": "manual-visual-path.json keeps check and answer definitions",
+      "ok": true
+    },
+    {
+      "name": "desktop three teacher units",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 3 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 3 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 3 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 3 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 4 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 4 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 4 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 figure 4 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜視神經：眼球到視交叉 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop Baum is posterior and visibly separated",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜水平切面（標本 60） next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 3 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 3 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 3 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 3 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 4 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 4 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 4 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 4 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 5 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 5 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 5 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 5 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 6 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 6 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 6 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 figure 6 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-vp 總圖｜矢狀切面與枕葉 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶七骨 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜眼眶的孔、裂、窩 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜顱底內面（顱窩） interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜顱底內面（顱窩） static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜顱底內面（顱窩） AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜顱底內面（顱窩） figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜顱底內面（顱窩） figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜顱底內面（顱窩） figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜顱底內面（顱窩） figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜顱底內面（顱窩） original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜顱底內面（顱窩） next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭骨底面與側面 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 3 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 3 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 3 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 3 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 4 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 4 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 4 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 4 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 5 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 5 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 5 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 5 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 6 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 6 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 6 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 6 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜腦底動脈（威利氏環） next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼動脈與眼眶分支 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 3 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 3 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 3 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 3 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜靜脈與海綿竇 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "desktop eyelab-blood 總圖｜頸外動脈與眼瞼血管 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "desktop only three top-level categories in requested order",
+      "ok": true
+    },
+    {
+      "name": "desktop legacy imported paths also stay under Other",
+      "ok": true
+    },
+    {
+      "name": "desktop no page errors",
+      "ok": true
+    },
+    {
+      "name": "desktop storage restored",
+      "ok": true
+    },
+    {
+      "name": "mobile three teacher units",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 3 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 3 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 3 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 3 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 4 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 4 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 4 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 figure 4 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜視神經：眼球到視交叉 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile Baum is posterior and visibly separated",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜水平切面（標本 60） next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 3 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 3 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 3 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 3 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 4 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 4 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 4 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 4 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 5 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 5 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 5 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 5 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 6 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 6 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 6 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 figure 6 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-vp 總圖｜矢狀切面與枕葉 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶七骨 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜眼眶的孔、裂、窩 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜顱底內面（顱窩） interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜顱底內面（顱窩） static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜顱底內面（顱窩） AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜顱底內面（顱窩） figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜顱底內面（顱窩） figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜顱底內面（顱窩） figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜顱底內面（顱窩） figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜顱底內面（顱窩） original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜顱底內面（顱窩） next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭骨底面與側面 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 3 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 3 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 3 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 3 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 4 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 4 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 4 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 4 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 5 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 5 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 5 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 5 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 6 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 6 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 6 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 figure 6 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-orbit 總圖｜頭頂、後面、鼻腔與鼻竇 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜腦底動脈（威利氏環） next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼動脈與眼眶分支 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 3 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 3 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 3 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 figure 3 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜眼球的血管：睫狀動脈、辛氏環、眼底 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 2 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 2 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 2 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 figure 2 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜靜脈與海綿竇 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 interactive viewer and original summary preserved",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 static summaries start collapsed",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 AI receives visible interactive image only",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 0 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 0 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 0 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 0 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 1 correct image and all points",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 1 pronunciation dispatch",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 1 star maps to original lesson",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 figure 1 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 original annotated figures expand",
+      "ok": true
+    },
+    {
+      "name": "mobile eyelab-blood 總圖｜頸外動脈與眼瞼血管 next page remains available",
+      "ok": true
+    },
+    {
+      "name": "mobile only three top-level categories in requested order",
+      "ok": true
+    },
+    {
+      "name": "mobile legacy imported paths also stay under Other",
+      "ok": true
+    },
+    {
+      "name": "mobile no page errors",
+      "ok": true
+    },
+    {
+      "name": "mobile storage restored",
+      "ok": true
+    }
+  ],
+  "problems": [],
+  "figures": 86
+}

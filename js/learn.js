@@ -205,7 +205,7 @@ const LEARN_UI = (() => {
     return L.filter(Boolean).join('\n');
   }
   function pageImages(el) {
-    return [...el.querySelectorAll('img')].filter(im => im.getClientRects().length && (im.currentSrc || im.getAttribute('src'))).map(im => ({
+    return [...el.querySelectorAll('img')].filter(im => !im.closest('details:not([open]), [hidden]') && im.getClientRects().length && (im.currentSrc || im.getAttribute('src'))).map(im => ({
       src: im.currentSrc || im.src,
       label: im.alt || im.closest('.lnote-card')?.querySelector('h4')?.innerText || '本頁圖片',
       pins: [...im.parentElement.querySelectorAll(':scope > .dg-pin, :scope > .qmark')].filter(pin => pin.getClientRects().length).map(pin => ({ x: parseFloat(pin.style.left), y: parseFloat(pin.style.top), label: pin.textContent.trim() })).filter(pin => Number.isFinite(pin.x) && Number.isFinite(pin.y))
@@ -417,7 +417,17 @@ const LEARN_UI = (() => {
     ({ courses, review: reviewHome, notes, guide })[tab]();
   }
 
-  const pathOf = p => (p.path && p.path.length ? p.path : [p.unit || '其他']);
+  const pathOf = p => {
+    const path = p.path && p.path.length ? p.path : [p.unit || '其他'];
+    if (p.subject !== 'eye_anat') return path;
+    const name = C.SUBJECTS[p.subject]?.name || '眼解剖實驗';
+    const relative = path[0] === name || path[0] === p.subject ? path.slice(1) : path;
+    return ['實驗課（依老師講義）', '實驗手冊名詞（考試範圍）', '其他'].includes(relative[0]) ? path : [name, '其他', ...relative];
+  };
+  const sortLabBranches = tree => {
+    const lab = tree.find(x => x.s === 'eye_anat'), order = ['實驗課（依老師講義）', '實驗手冊名詞（考試範圍）', '其他'];
+    if (lab) lab.kids.sort((a, b) => (order.includes(a.name) ? order.indexOf(a.name) : 3) - (order.includes(b.name) ? order.indexOf(b.name) : 3));
+  };
   let searchQ = '';
   function courses() {
     const body = U.$('#learnBody');
@@ -438,6 +448,7 @@ const LEARN_UI = (() => {
       let node = sNode; (pth[0] === nm || pth[0] === p.subject ? pth.slice(1) : pth).forEach(name => { let k = node.kids.find(x => x.name === name); if (!k) node.kids.push(k = { name, kids: [], packs: [] }); node = k; });
       node.packs.push(p);
     });
+    sortLabBranches(tree);
     const stat = node => { let d = 0, t = 0; const walk = n => { n.packs.forEach(p => { const pr = packProgress(p); d += pr.done; t += pr.total; }); n.kids.forEach(walk); }; walk(node); return { d, t }; };
     const packCard = p => {
       const pr = packProgress(p), best = p.lessons.reduce((a, l) => a + ((D.les[lkey(p, l)] || {}).best || 0), 0);
@@ -943,10 +954,24 @@ const LEARN_UI = (() => {
           ((l.goals || []).length ? `<div class="lp-goals"><b>🎯 這課學完你會：</b><ul>${l.goals.map(g => `<li>${inl(g)}</li>`).join('')}</ul></div>` : '');
         ready('開始 ▶');
       } else if (s.type === 'card') {
-        body.innerHTML = head + `<h3>${U.esc(s.title)}</h3>${cardBody(s)}` +
+        const atlasLesson = l.id === 'review' && (p.path || []).includes('實驗課（依老師講義）') && s.title.startsWith('總圖｜')
+          ? p.lessons.find(x => x.id !== 'review' && x.title === s.title.slice(3)) : null;
+        const atlasFigures = atlasLesson ? atlasLesson.steps.map((s, si) => ({ s, si })).filter(x => x.s.type === 'diagram') : [];
+        body.innerHTML = head + `<h3>${U.esc(s.title)}</h3>${atlasFigures.length ? `<section class="atlas-review"><h4>互動圖：點名稱、聽發音</h4><label class="atlas-review-picker">選擇圖片 <select class="px-in" id="atlasReviewSelect">${atlasFigures.map((x, i) => `<option value="${i}">${U.esc(x.s.title || '圖解')}</option>`).join('')}</select></label><div id="atlasReviewDiagram"></div></section><details class="atlas-review-static"><summary>展開完整標註總圖（${imgList(s.img).length} 張）</summary>${cardBody(s)}</details>` : cardBody(s)}` +
           ((s.keys || []).length ? `<div class="lp-keys"><b>📌 重點</b><ul>${s.keys.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : '') +
           examDemoHTML(s) +
           (s.tip ? `<div class="lp-tip">🐾 ${inl(s.tip)}</div>` : '');
+        if (atlasFigures.length) {
+          const target = U.$('#atlasReviewDiagram');
+          const draw = () => {
+            const { s: figure, si } = atlasFigures[+U.$('#atlasReviewSelect').value];
+            target.dataset.diagramContext = JSON.stringify([p.id, atlasLesson.id, si]);
+            renderDiagram(target, '', { ...figure, mode: 'explore' }, `${p.id}/${atlasLesson.id}/${si}`, { onItem() {}, onWrong() {}, onDone() {} });
+            if (typeof GLOSS !== 'undefined') GLOSS.scan(target);
+          };
+          U.$('#atlasReviewSelect').onchange = draw;
+          draw();
+        }
         ready();
       } else if (s.type === 'check') {
         body.innerHTML = head + '<div class="lc"></div>';
@@ -1173,7 +1198,14 @@ const LEARN_UI = (() => {
       side.innerHTML = `<div class="dg-info" id="dgInfo"><span class="dim">點圖上的數字（或下面的名稱）看說明</span></div>
         <ol class="dg-list">${pts.map((pt, i) => `<li data-i="${i}"><span class="dg-name ${hide ? 'hid' : ''}">${U.esc(pt.name)}</span></li>`).join('')}</ol>
         <div class="row"><button class="px-btn small" id="dgHide">${hide ? '顯示名稱' : '遮住名稱（自我測驗）'}</button><button class="px-btn small" id="dgFix" title="標記位置不準時，可以自己修正">📍 調整標記</button>${mode !== 'explore' ? '<button class="px-btn gold" id="dgQuiz">🎯 開始辨識測驗</button>' : ''}</div>`;
-      const show = i => { pins.forEach((b, j) => b.classList.toggle('on', j === i)); U.$$('.dg-list li', side).forEach((li, j) => li.classList.toggle('on', j === i)); U.$('#dgInfo').innerHTML = `<div class="knowledge-term-heading"><b class="gold-t">${i + 1}. ${U.esc(pts[i].name)}</b>${pointStar(pts[i])}</div>${pts[i].desc ? md(pts[i].desc) : ''}`; SFX.play('click'); };
+      const show = i => {
+        pins.forEach((b, j) => b.classList.toggle('on', j === i)); U.$$('.dg-list li', side).forEach((li, j) => li.classList.toggle('on', j === i));
+        const english = pts[i].name.match(/[A-Za-z].*$/)?.[0];
+        U.$('#dgInfo').innerHTML = `<div class="knowledge-term-heading"><b class="gold-t">${i + 1}. ${U.esc(pts[i].name)}</b>${pointStar(pts[i])}${english && 'speechSynthesis' in window ? `<button type="button" class="dg-pronounce" aria-label="播放 ${U.esc(english)} 發音" title="播放英文發音">🔊</button>` : ''}</div>${pts[i].desc ? md(pts[i].desc) : ''}`;
+        const voice = side.querySelector('.dg-pronounce');
+        if (voice) voice.onclick = () => { if (typeof GLOSS !== 'undefined') GLOSS.speak(english); };
+        SFX.play('click');
+      };
       pins.forEach(b => b.onclick = () => show(+b.dataset.i));
       U.$$('.dg-list li', side).forEach(li => li.onclick = e => { if (!e.target.closest('[data-knowledge-star]')) show(+li.dataset.i); });
       U.$('#dgHide').onclick = () => { hide = !hide; explore(); };
@@ -1467,6 +1499,7 @@ const LEARN_UI = (() => {
     }
     noteList.forEach(x => addPack(x.p).notes.push(x.n));
     list.forEach(x => addPack(x.p).les.push(x));
+    sortLabBranches(tree);
     const count = n => n.packs.reduce((a, pk) => a + pk.notes.length + pk.les.reduce((b, x) => b + x.cards.length, 0), 0) + n.kids.reduce((a, c) => a + count(c), 0);
     const LES = {}; let li = 0;
     const isOpen = (k, dflt) => kw ? true : (D.cfg.open[k] ?? dflt);

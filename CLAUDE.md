@@ -368,3 +368,12 @@
 - 名稱判分補「短後睫狀動脈／後短睫狀動脈／睫狀後短動脈」與長血管對應三種寫法；課內name.zh、跑台accept、字源match及專案外`E:\NEWTEST\eye_work\atlas\names.py`同步。維持中英文都要正確，不做任意字序模糊比對。正本content已build，題號／主要答案／英文不變。
 - 後端21項、瀏覽器40項（桌機／手機HTTP＋桌機file://）、別名18項及原星號72項回歸通過；fixture沒有真實模型醫學品質或實機iPad驗證。工具與界限：`tools/ai-vision-qa/README.md`，結果／截圖：`output/playwright/ai-vision-*`與`ciliary-alias-*`。
 - 星號依使用者追加要求改為：清單不放收藏按鈕，點名稱／編號打開說明後才出現小☆；點字源名詞視窗也有小星星（js/glossary.js），優先收藏目前圖解的該點，保留對應原圖。收藏區以小★取消收藏。
+
+## 實驗課總複習互動圖／其他分類／鮑氏環（2026-10-20，v129）
+
+- 老師講義三單元的總複習「總圖｜原課名」改為先看互動圖：下拉切圖、點標記／名稱、喇叭念英文、小星星、遮住名稱與調整標記；完整標註圖可展開、原總表保留。`js/learn.js` 依總圖標題匹配來源課，共用renderDiagram，GLOSS.speak對外供喇叭使用；星號及pins仍對應原課原圖。
+- 只改現有卡片的呈現，課程ID／步驟索引／問題與答案不變，不會重排既有學習進度。改課名須同步總圖標題。互動圖共43張，三單元皆有。
+- 眼解剖實驗學習目錄保留「實驗課（依老師講義）」「實驗手冊名詞（考試範圍）」，其餘9個單元收進「其他」。content.path同步，課程／知識筆記入口順序一致；題庫分類未改。
+- 標本60的鮑氏環往後移至(23.81%,58.43%)，與梅氏環(19.3%,40.9%)拉開；兩個圖解、總圖、課內題、跑台題同步，4張註記圖加-baum-v2檔名避快取。底圖不改，來源座標E:\NEWTEST\eye_work\vp\bases.py已更新。
+- Edge file://桌機與390px手機86次切圖、522項通過；原星號72項回歸通過，strict build與JS語法通過。獨立context已還原localStorage；發音只驗證speechSynthesis事件，未實機iPad或人耳評估。
+- 接手與重跑方式：tools/eyelab-qa/REVIEW_ATLAS.md；小範圍更新腳本update_review_atlas.py（不要重跑整套圖鑑產生器覆寫content）；報告與截圖output/playwright/review-atlas-*。
