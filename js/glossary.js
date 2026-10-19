@@ -84,7 +84,7 @@ const GLOSS = (() => {
     curEl = el; el.classList.add('on');
     pop = document.createElement('div');
     pop.className = 'gl-pop'; pop.setAttribute('role', 'dialog');
-    pop.innerHTML = `<div class="gl-h"><b>${esc(e.zh)}</b><span class="gl-en">${esc(e.en)}</span>` +
+    pop.innerHTML = `<div class="gl-h"><b>${esc(e.zh)}</b>${typeof LEARN_UI !== 'undefined' ? LEARN_UI.glossStar(e, el) : ''}<span class="gl-en">${esc(e.en)}</span>` +
       (('speechSynthesis' in window) ? `<button type="button" class="gl-play" data-text="${esc(e.en)}" aria-label="播放發音" title="播放發音">🔊</button>` : '') +
       `</div>` +
       (e.parts.length ? `<div class="gl-parts">${e.parts.map(([a, b]) => `<div class="gl-part"><span class="gl-w">${esc(a)}</span><span>${esc(b)}</span></div>`).join('')}</div>` : '') +

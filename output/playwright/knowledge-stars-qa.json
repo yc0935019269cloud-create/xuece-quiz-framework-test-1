@@ -5,7 +5,11 @@
       "ok": true
     },
     {
-      "name": "desktop each diagram point has star",
+      "name": "desktop names list stays uncluttered",
+      "ok": true
+    },
+    {
+      "name": "desktop opening term reveals one small star",
       "ok": true
     },
     {
@@ -25,7 +29,19 @@
       "ok": true
     },
     {
+      "name": "desktop glossary popup also has small star",
+      "ok": true
+    },
+    {
+      "name": "desktop popup toggle updates term star",
+      "ok": true
+    },
+    {
       "name": "desktop hidden names keep stars",
+      "ok": true
+    },
+    {
+      "name": "desktop same term uses currently opened figure",
       "ok": true
     },
     {
@@ -133,7 +149,11 @@
       "ok": true
     },
     {
-      "name": "mobile each diagram point has star",
+      "name": "mobile names list stays uncluttered",
+      "ok": true
+    },
+    {
+      "name": "mobile opening term reveals one small star",
       "ok": true
     },
     {
@@ -153,7 +173,19 @@
       "ok": true
     },
     {
+      "name": "mobile glossary popup also has small star",
+      "ok": true
+    },
+    {
+      "name": "mobile popup toggle updates term star",
+      "ok": true
+    },
+    {
       "name": "mobile hidden names keep stars",
+      "ok": true
+    },
+    {
+      "name": "mobile same term uses currently opened figure",
       "ok": true
     },
     {

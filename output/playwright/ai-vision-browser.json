@@ -1,0 +1,165 @@
+{
+  "checks": [
+    {
+      "name": "desktop-http ordinary question automatically includes pixels",
+      "ok": true
+    },
+    {
+      "name": "desktop-http current text and point mapping included",
+      "ok": true
+    },
+    {
+      "name": "desktop-http no obsolete cannot see picture prompt",
+      "ok": true
+    },
+    {
+      "name": "desktop-http student sees attachment count",
+      "ok": true
+    },
+    {
+      "name": "desktop-http encoded image retains usable resolution",
+      "ok": true
+    },
+    {
+      "name": "desktop-http follow-up keeps current image",
+      "ok": true
+    },
+    {
+      "name": "desktop-http explain-page action remains multimodal",
+      "ok": true
+    },
+    {
+      "name": "desktop-http knowledge notes include selected original image",
+      "ok": true
+    },
+    {
+      "name": "desktop-http explicit vision unavailable message",
+      "ok": true
+    },
+    {
+      "name": "desktop-http outside learning stays text only",
+      "ok": true
+    },
+    {
+      "name": "desktop-http image read failure does not silently send text",
+      "ok": true
+    },
+    {
+      "name": "desktop-http no page errors",
+      "ok": true
+    },
+    {
+      "name": "desktop-http storage restored",
+      "ok": true
+    },
+    {
+      "name": "mobile-http ordinary question automatically includes pixels",
+      "ok": true
+    },
+    {
+      "name": "mobile-http current text and point mapping included",
+      "ok": true
+    },
+    {
+      "name": "mobile-http no obsolete cannot see picture prompt",
+      "ok": true
+    },
+    {
+      "name": "mobile-http student sees attachment count",
+      "ok": true
+    },
+    {
+      "name": "mobile-http encoded image retains usable resolution",
+      "ok": true
+    },
+    {
+      "name": "mobile-http follow-up keeps current image",
+      "ok": true
+    },
+    {
+      "name": "mobile-http explain-page action remains multimodal",
+      "ok": true
+    },
+    {
+      "name": "mobile-http knowledge notes include selected original image",
+      "ok": true
+    },
+    {
+      "name": "mobile-http explicit vision unavailable message",
+      "ok": true
+    },
+    {
+      "name": "mobile-http outside learning stays text only",
+      "ok": true
+    },
+    {
+      "name": "mobile-http image read failure does not silently send text",
+      "ok": true
+    },
+    {
+      "name": "mobile-http no page errors",
+      "ok": true
+    },
+    {
+      "name": "mobile-http storage restored",
+      "ok": true
+    },
+    {
+      "name": "desktop-file ordinary question automatically includes pixels",
+      "ok": true
+    },
+    {
+      "name": "desktop-file current text and point mapping included",
+      "ok": true
+    },
+    {
+      "name": "desktop-file no obsolete cannot see picture prompt",
+      "ok": true
+    },
+    {
+      "name": "desktop-file student sees attachment count",
+      "ok": true
+    },
+    {
+      "name": "desktop-file encoded image retains usable resolution",
+      "ok": true
+    },
+    {
+      "name": "desktop-file follow-up keeps current image",
+      "ok": true
+    },
+    {
+      "name": "desktop-file explain-page action remains multimodal",
+      "ok": true
+    },
+    {
+      "name": "desktop-file file canvas fallback uses configured hosted copy",
+      "ok": true
+    },
+    {
+      "name": "desktop-file knowledge notes include selected original image",
+      "ok": true
+    },
+    {
+      "name": "desktop-file explicit vision unavailable message",
+      "ok": true
+    },
+    {
+      "name": "desktop-file outside learning stays text only",
+      "ok": true
+    },
+    {
+      "name": "desktop-file image read failure does not silently send text",
+      "ok": true
+    },
+    {
+      "name": "desktop-file no page errors",
+      "ok": true
+    },
+    {
+      "name": "desktop-file storage restored",
+      "ok": true
+    }
+  ],
+  "problems": []
+}

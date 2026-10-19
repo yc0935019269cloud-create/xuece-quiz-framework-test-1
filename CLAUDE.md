@@ -359,3 +359,12 @@
 - `js/learn.js` 的 `D.starred` 儲存內容參照與時間，隨既有 `Store.exportAll/importAll` 的 learn 欄位保存；不與普通題庫的 `Store.favorites` 混用，不改作答、獎勵或複習排程。缺少導入來源時暫不顯示，但保留參照。`js/question.js` 新增可選 onReveal 回呼供學習自評題使用。
 - Edge file:// 桌機1100px／手機390px共64項通過，含保存／備份往返、原圖與調整點位、篩選／搜尋、分頁、鍵盤及零頁面錯誤；獨立context的localStorage已還原。JS語法、git diff --check及 `python tools/build.py --check --strict` 通過；既有5個縮寫覆蓋提醒保留。未做實機iPad或真實雲端往返。
 - QA與重跑方式：`tools/knowledge-qa/README.md`；結果／截圖：`output/playwright/knowledge-stars-*`。
+## AI 助教當頁圖文＋睫狀動脈別名（2026-10-19，v128）
+
+- `LEARN_UI.pageCtx()` 附當頁可見文字與圖片描述；課程與知識筆記的一般提問自動帶入，不必只按一鍵講解。`js/ai.js` 在瀏覽器把圖轉成像素（JPEG，最大2048px）並疊上畫面中的編號位置；每次至多8張，失敗明說，不靜默漏圖。互動iframe沒有即時截圖。
+- 本機file://受畫布限制時，從`CLOUD_CFG.assets`的已發布網站取同路徑圖片，HTTP(S)仍用當前網站圖片；未發布的本機導入圖可能無法讀取。圖片只存在請求內，對話記憶不累存base64；文字歷史過長時先移除最舊的完整問答。
+- 後端`supabase/functions/ai-chat/index.ts`接受驗證過的JPEG/PNG/WebP data URL與文字，分開限制圖／文字大小。含圖只走明確支援視覺的Google Gemini與OpenRouter Gemma 4免費模型；禁止靜默丟圖轉純文字，全部失敗不扣次數。原文字鏈、登入與用量檢查保留。
+- Supabase `ai-chat`已部署version 3（ACTIVE，沿用原verify_jwt=false及函式內登入檢查）；正式端點OPTIONS 204、未登入POST 401。沒有以真實學生帳號驗證模型辨圖品質。
+- 名稱判分補「短後睫狀動脈／後短睫狀動脈／睫狀後短動脈」與長血管對應三種寫法；課內name.zh、跑台accept、字源match及專案外`E:\NEWTEST\eye_work\atlas\names.py`同步。維持中英文都要正確，不做任意字序模糊比對。正本content已build，題號／主要答案／英文不變。
+- 後端21項、瀏覽器40項（桌機／手機HTTP＋桌機file://）、別名18項及原星號72項回歸通過；fixture沒有真實模型醫學品質或實機iPad驗證。工具與界限：`tools/ai-vision-qa/README.md`，結果／截圖：`output/playwright/ai-vision-*`與`ciliary-alias-*`。
+- 星號依使用者追加要求改為：清單不放收藏按鈕，點名稱／編號打開說明後才出現小☆；點字源名詞視窗也有小星星（js/glossary.js），優先收藏目前圖解的該點，保留對應原圖。收藏區以小★取消收藏。

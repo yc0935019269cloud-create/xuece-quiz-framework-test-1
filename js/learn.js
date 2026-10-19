@@ -49,9 +49,30 @@ const LEARN_UI = (() => {
   function starButton(r) {
     if (!r) return '';
     const on = isStarred(r), term = r.kind === 'term';
+    if (term) return `<button type="button" class="knowledge-star knowledge-star-icon ${on ? 'gold' : ''}" data-knowledge-star="${U.esc(JSON.stringify(r))}" aria-pressed="${on}" aria-label="${on ? '取消星號' : '加星號'}：${U.esc(r.name)}" title="${on ? '取消星號' : '加星號，收進知識筆記'}">${on ? '★' : '☆'}</button>`;
     return `<button type="button" class="px-btn small knowledge-star ${on ? 'gold' : ''}" data-knowledge-star="${U.esc(JSON.stringify(r))}" aria-pressed="${on}">${on ? (term ? '★ 已加星號' : '★ 已加入知識比較') : (term ? '☆ 加星號' : '☆ 加入知識比較')}</button>`;
   }
   const termRef = (p, l, s, pt) => ({ kind: 'term', p: p.id, l: l.id, img: s.img, name: pt.name });
+  function glossStar(entry, el) {
+    const norm = s => String(s || '').normalize('NFKC').toLowerCase().replace(/[\s\-‐–—'’·・.,，、()（）]/g, '');
+    const names = new Set([entry.zh, entry.en, ...(entry.match || [])].map(norm));
+    const matches = pt => { const parts = String(pt.name).match(/^([^A-Za-z]*)(.*)$/); return parts && (names.has(norm(parts[1])) || names.has(norm(parts[2]))); };
+    const host = el.closest('[data-diagram-context]');
+    let candidates = [];
+    if (host) {
+      const [pid, lid, si] = JSON.parse(host.dataset.diagramContext), p = PK[pid], l = p?.lessons.find(l => l.id === lid), s = l?.steps[si];
+      if (s?.type === 'diagram') candidates.push({ p, l, s });
+    } else if (cur && document.body.contains(cur.el)) {
+      candidates = cur.p.lessons.flatMap(l => l.steps.filter(s => s.type === 'diagram').map(s => ({ p: cur.p, l, s }))).sort((a, b) => Number(b.l === cur.l) - Number(a.l === cur.l));
+      const s = cur.l.steps[cur.st.i];
+      if (s?.type === 'diagram') candidates.unshift({ p: cur.p, l: cur.l, s });
+    }
+    for (const { p, l, s } of candidates) {
+      const pt = s.points.find(matches);
+      if (pt) return starButton(termRef(p, l, s, pt));
+    }
+    return '';
+  }
   function questionStar(box, q, p, l) {
     if (!box.querySelector('.knowledge-answer-action')) box.insertAdjacentHTML('beforeend', `<div class="knowledge-answer-action mt">${starButton({ kind: 'question', p: p.id, l: l.id, id: q.id })}</div>`);
   }
@@ -87,9 +108,12 @@ const LEARN_UI = (() => {
       const ref = JSON.parse(el.dataset.knowledgeStar);
       if (starKey(ref) !== key) return;
       const replacement = U.h(starButton(ref));
-      el.classList.toggle('gold', on); el.setAttribute('aria-pressed', String(on)); el.innerHTML = replacement.innerHTML;
+      el.className = replacement.className; el.setAttribute('aria-pressed', String(on)); el.innerHTML = replacement.innerHTML;
+      if (replacement.hasAttribute('aria-label')) el.setAttribute('aria-label', replacement.getAttribute('aria-label'));
+      if (replacement.title) { el.title = replacement.title; el.dataset.tip = replacement.title; }
     });
     if (b.closest('.knowledge-collection')) notes();
+    else if (b.closest('.gl-pop') && tab === 'notes' && U.$('#learnBody')) { GLOSS.close(); notes(); }
   });
   function addRev(id, dueNow) {
     if (!ITEMS[id]) return;
@@ -163,7 +187,6 @@ const LEARN_UI = (() => {
       L.push(`標題：${s.title}`, s.body || '');
       if ((s.keys || []).length) L.push('重點：\n' + s.keys.map(k => '- ' + k).join('\n'));
       if (s.tip) L.push('小提醒：' + s.tip);
-      if (imgList(s.img).length) L.push('（這張卡有圖片，AI 看不到）');
     } else if (s.type === 'example') {
       L.push(`標題：${s.title || '範例'}`, '題目：' + s.problem, ...s.steps.map((x, i) => `第 ${i + 1} 步：${x}`));
       if (s.answer) L.push('結論：' + s.answer);
@@ -174,17 +197,29 @@ const LEARN_UI = (() => {
       if (words) L.push('互動畫面上的文字：' + cut(words, 600));
       L.push('（這是互動動畫，AI 看不到畫面）');
     } else if (s.type === 'diagram') {
-      L.push(`標題：${s.title || '看圖認識'}`, s.body || '', '圖上的標記：\n' + (s.points || []).map((x, i) => `${i + 1}. ${pt(x)}`).join('\n'), '（AI 看不到圖片）');
+      L.push(`標題：${s.title || '看圖認識'}`, s.body || '', '圖上的標記：\n' + (s.points || []).map((x, i) => `${i + 1}. ${pt(x)}`).join('\n'));
     } else if (s.type === 'recap') {
       L.push('本課重點：\n' + s.points.map((x, i) => `${i + 1}. ${x}`).join('\n'));
       if ((s.flash || []).length) L.push('記憶卡：\n' + s.flash.map(f => `- ${f.front} → ${f.back}`).join('\n'));
     } else if (s.type === 'check') L.push(checkText(s));
     return L.filter(Boolean).join('\n');
   }
-  /* 回傳 { label, text, qid, todo, query, subj, skip }；不在課程裡回傳 null。
+  function pageImages(el) {
+    return [...el.querySelectorAll('img')].filter(im => im.getClientRects().length && (im.currentSrc || im.getAttribute('src'))).map(im => ({
+      src: im.currentSrc || im.src,
+      label: im.alt || im.closest('.lnote-card')?.querySelector('h4')?.innerText || '本頁圖片',
+      pins: [...im.parentElement.querySelectorAll(':scope > .dg-pin, :scope > .qmark')].filter(pin => pin.getClientRects().length).map(pin => ({ x: parseFloat(pin.style.left), y: parseFloat(pin.style.top), label: pin.textContent.trim() })).filter(pin => Number.isFinite(pin.x) && Number.isFinite(pin.y))
+    }));
+  }
+  /* 回傳 { label, text, images, qid, todo, query, subj, skip }；不在課程／知識筆記裡回傳 null。
    * qid：實戰的題庫題（題目由 ai.js 附上）；todo：這題學生還沒作答；skip：檢索參考資料時略過的教材卡（頁面本身已經附上） */
   function pageCtx() {
-    if (!cur || !document.body.contains(cur.el)) return null;
+    if (!cur || !document.body.contains(cur.el)) {
+      const el = tab === 'notes' && U.$('#learnBody');
+      if (!el) return null;
+      const text = cut(el.innerText, 14000);
+      return { label: '知識筆記（目前篩選與展開內容）', text: '【目前的學習頁面】\n知識筆記\n' + text, images: pageImages(el), qid: null, todo: false, subj: noteSubj === 'all' ? null : noteSubj, skip: [], query: noteQ || text.slice(0, 1600) };
+    }
     const { p, l, st } = cur, R = st.run || {}, n = l.steps.length;
     const sid = i => `${p.id}/${l.id}/${i}`;
     const head = [`單元：${p.title}`, `課程：${l.title}（第 ${p.lessons.indexOf(l) + 1} / ${p.lessons.length} 課）`];
@@ -224,6 +259,8 @@ const LEARN_UI = (() => {
       }
     }
     out.text = `【目前的學習頁面】\n${head.join('\n')}\n目前位置：${what}\n${cut(body, 3500)}${bg ? '\n\n' + bg : ''}`;
+    out.text += '\n\n【畫面上目前顯示的文字】\n' + cut(cur.el.innerText, 9000);
+    out.images = pageImages(cur.el);
     return out;
   }
 
@@ -1134,9 +1171,9 @@ const LEARN_UI = (() => {
     let hide = false;
     const explore = () => {
       side.innerHTML = `<div class="dg-info" id="dgInfo"><span class="dim">點圖上的數字（或下面的名稱）看說明</span></div>
-        <ol class="dg-list">${pts.map((pt, i) => `<li data-i="${i}"><span class="dg-name ${hide ? 'hid' : ''}">${U.esc(pt.name)}</span> ${pointStar(pt)}</li>`).join('')}</ol>
+        <ol class="dg-list">${pts.map((pt, i) => `<li data-i="${i}"><span class="dg-name ${hide ? 'hid' : ''}">${U.esc(pt.name)}</span></li>`).join('')}</ol>
         <div class="row"><button class="px-btn small" id="dgHide">${hide ? '顯示名稱' : '遮住名稱（自我測驗）'}</button><button class="px-btn small" id="dgFix" title="標記位置不準時，可以自己修正">📍 調整標記</button>${mode !== 'explore' ? '<button class="px-btn gold" id="dgQuiz">🎯 開始辨識測驗</button>' : ''}</div>`;
-      const show = i => { pins.forEach((b, j) => b.classList.toggle('on', j === i)); U.$$('.dg-list li', side).forEach((li, j) => li.classList.toggle('on', j === i)); U.$('#dgInfo').innerHTML = `<b class="gold-t">${i + 1}. ${U.esc(pts[i].name)}</b>${pts[i].desc ? md(pts[i].desc) : ''}`; SFX.play('click'); };
+      const show = i => { pins.forEach((b, j) => b.classList.toggle('on', j === i)); U.$$('.dg-list li', side).forEach((li, j) => li.classList.toggle('on', j === i)); U.$('#dgInfo').innerHTML = `<div class="knowledge-term-heading"><b class="gold-t">${i + 1}. ${U.esc(pts[i].name)}</b>${pointStar(pts[i])}</div>${pts[i].desc ? md(pts[i].desc) : ''}`; SFX.play('click'); };
       pins.forEach(b => b.onclick = () => show(+b.dataset.i));
       U.$$('.dg-list li', side).forEach(li => li.onclick = e => { if (!e.target.closest('[data-knowledge-star]')) show(+li.dataset.i); });
       U.$('#dgHide').onclick = () => { hide = !hide; explore(); };
@@ -1372,7 +1409,7 @@ const LEARN_UI = (() => {
   }
   function noteCard(p, l, s) {
     return s.type === 'card' ? `<div class="lnote-card"><h4>📘 ${U.esc(s.title)}</h4>${cardBody(s)}${(s.keys || []).length ? `<div class="lp-keys"><ul>${s.keys.map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : ''}${examDemoHTML(s)}</div>`
-      : s.type === 'diagram' ? `<div class="lnote-card"><h4>🔍 ${U.esc(s.title || '圖解')}</h4><div class="dg-wrap small"><img src="${U.esc(U.img(s.img))}" alt="">${s.points.map((pt, i) => { const o = ((D.pins || {})[`${p.id}/${l.id}/${l.steps.indexOf(s)}`] || {})[i] || [pt.x, pt.y]; return o[0] == null ? '' : `<span class="dg-pin" style="left:${o[0]}%;top:${o[1]}%">${i + 1}</span>`; }).join('')}</div><ol class="small-t">${s.points.map(pt => `<li><b>${U.esc(pt.name)}</b> ${starButton(termRef(p, l, s, pt))}${pt.desc ? '：' + inl(pt.desc) : ''}</li>`).join('')}</ol></div>`
+      : s.type === 'diagram' ? `<div class="lnote-card" data-diagram-context="${U.esc(JSON.stringify([p.id, l.id, l.steps.indexOf(s)]))}"><h4>🔍 ${U.esc(s.title || '圖解')}</h4><div class="dg-wrap small"><img src="${U.esc(U.img(s.img))}" alt="">${s.points.map((pt, i) => { const o = ((D.pins || {})[`${p.id}/${l.id}/${l.steps.indexOf(s)}`] || {})[i] || [pt.x, pt.y]; return o[0] == null ? '' : `<span class="dg-pin" style="left:${o[0]}%;top:${o[1]}%">${i + 1}</span>`; }).join('')}</div><ol class="small-t">${s.points.map(pt => `<li><b>${U.esc(pt.name)}</b>${pt.desc ? '：' + inl(pt.desc) : ''}</li>`).join('')}</ol></div>`
       : `<div class="lnote-card"><h4>⭐ 本課重點</h4><ol>${s.points.map(x => `<li>${inl(x)}</li>`).join('')}</ol></div>`;
   }
   let knowledgeUnit = '', knowledgeType = 'all', knowledgePage = 0;
@@ -1388,7 +1425,7 @@ const LEARN_UI = (() => {
       const answer = c.kind === 'name' ? `${c.zh[0]} ／ ${c.en[0]}` : c.kind === 'single' ? c.choices[c.answer] : c.kind === 'multi' ? c.answer.map(i => c.choices[i]).join(' ／ ') : c.kind === 'tf' ? (c.answer ? '對' : '錯') : c.kind === 'order' ? c.items.join(' → ') : [].concat(c.answer).join(' ／ ');
       content = `<h4>${inl(c.q)}</h4>${imgsHTML(c.img, c.img_source)}${c.choices ? `<ol>${c.choices.map(t => `<li>${inl(t)}</li>`).join('')}</ol>` : ''}<div class="knowledge-answer"><b class="gold-t">正確答案</b>${md(answer)}${c.explain ? md(c.explain) : ''}</div>`;
     }
-    return `<article class="lnote-card knowledge-card"><div class="row"><span class="tag">${r.kind === 'term' ? '解剖名稱' : '題目答案'}</span><span class="grow"></span>${starButton(r)}</div><p class="dim small-t">${U.esc(p.title)} › ${U.esc(l.title)}</p>${content}</article>`;
+    return `<article class="lnote-card knowledge-card" ${s ? `data-diagram-context="${U.esc(JSON.stringify([p.id, l.id, l.steps.indexOf(s)]))}"` : ''}><div class="row"><span class="tag">${r.kind === 'term' ? '解剖名稱' : '題目答案'}</span><span class="grow"></span>${starButton(r)}</div><p class="dim small-t">${U.esc(p.title)} › ${U.esc(l.title)}</p>${content}</article>`;
   }
   function knowledgeSection(all, kw) {
     const scoped = all.filter(x => noteSubj === 'all' || x.p.subject === noteSubj);
@@ -1398,7 +1435,7 @@ const LEARN_UI = (() => {
     const pages = Math.max(1, Math.ceil(list.length / 20));
     knowledgePage = Math.min(knowledgePage, pages - 1);
     const terms = scoped.filter(x => x.r.kind === 'term').length;
-    return `<section class="knowledge-collection panel dark mt" aria-label="星號收藏與知識比較"><h3>★ 星號收藏・知識比較</h3><p class="dim small-t">${terms} 個名稱・${scoped.length - terms} 題答案。圖解名稱旁可加星號；練習題看過答案後可加入比較。</p><div class="row knowledge-filters"><label>單元 <select class="px-in" id="knowledgeUnit"><option value="">全部已加星號的單元</option>${units.map(p => `<option value="${U.esc(p.id)}" ${knowledgeUnit === p.id ? 'selected' : ''}>${U.esc(C.SUBJECTS[p.subject].name + ' › ' + p.title)}</option>`).join('')}</select></label><label>內容 <select class="px-in" id="knowledgeType">${[['all', '全部'], ['term', '解剖名稱與原圖'], ['answer', '題目答案']].map(([v, t]) => `<option value="${v}" ${knowledgeType === v ? 'selected' : ''}>${t}</option>`).join('')}</select></label></div><p class="dim small-t" aria-live="polite">符合 ${list.length} 筆${list.length > 20 ? `・第 ${knowledgePage + 1} / ${pages} 頁` : ''}</p><div class="knowledge-grid">${list.slice(knowledgePage * 20, (knowledgePage + 1) * 20).map(knowledgeCard).join('') || `<p class="dim">${scoped.length ? '這個篩選下沒有星號項目。' : '還沒有星號收藏。遇到不熟的名稱，按旁邊的「☆ 加星號」就會連同原圖收在這裡；練習題可在看答案後按「☆ 加入知識比較」。'}</p>`}</div>${pages > 1 ? `<div class="row mt"><button class="px-btn small" id="knowledgePrev" ${knowledgePage ? '' : 'disabled'}>上一頁</button><span>${knowledgePage + 1} / ${pages}</span><button class="px-btn small" id="knowledgeNext" ${knowledgePage < pages - 1 ? '' : 'disabled'}>下一頁</button></div>` : ''}</section>`;
+    return `<section class="knowledge-collection panel dark mt" aria-label="星號收藏與知識比較"><h3>★ 星號收藏・知識比較</h3><p class="dim small-t">${terms} 個名稱・${scoped.length - terms} 題答案。點開名稱後按小星星收藏；練習題看過答案後可加入比較。</p><div class="row knowledge-filters"><label>單元 <select class="px-in" id="knowledgeUnit"><option value="">全部已加星號的單元</option>${units.map(p => `<option value="${U.esc(p.id)}" ${knowledgeUnit === p.id ? 'selected' : ''}>${U.esc(C.SUBJECTS[p.subject].name + ' › ' + p.title)}</option>`).join('')}</select></label><label>內容 <select class="px-in" id="knowledgeType">${[['all', '全部'], ['term', '解剖名稱與原圖'], ['answer', '題目答案']].map(([v, t]) => `<option value="${v}" ${knowledgeType === v ? 'selected' : ''}>${t}</option>`).join('')}</select></label></div><p class="dim small-t" aria-live="polite">符合 ${list.length} 筆${list.length > 20 ? `・第 ${knowledgePage + 1} / ${pages} 頁` : ''}</p><div class="knowledge-grid">${list.slice(knowledgePage * 20, (knowledgePage + 1) * 20).map(knowledgeCard).join('') || `<p class="dim">${scoped.length ? '這個篩選下沒有星號項目。' : '還沒有星號收藏。遇到不熟的名稱，點開名詞後按「☆」，就會連同原圖收在這裡；練習題可在看答案後按「☆ 加入知識比較」。'}</p>`}</div>${pages > 1 ? `<div class="row mt"><button class="px-btn small" id="knowledgePrev" ${knowledgePage ? '' : 'disabled'}>上一頁</button><span>${knowledgePage + 1} / ${pages}</span><button class="px-btn small" id="knowledgeNext" ${knowledgePage < pages - 1 ? '' : 'disabled'}>下一頁</button></div>` : ''}</section>`;
   }
   function notes() {
     const body = U.$('#learnBody');
@@ -1518,5 +1555,5 @@ const LEARN_UI = (() => {
     return true;
   }
 
-  return { reindex, screen, tileDesc, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, pageCtx, get packs() { return packs; } };
+  return { reindex, screen, tileDesc, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, pageCtx, glossStar, get packs() { return packs; } };
 })();

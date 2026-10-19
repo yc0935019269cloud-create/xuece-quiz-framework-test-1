@@ -2,7 +2,11 @@
 
 AI 助教是遊戲裡的聊天視窗（營地「AI 助教」、頂部 ☰ 選單、題目詳解旁的「💬 問 AI」）。它會先在本機的題庫與學習教材裡找相關段落，連同問題送給 AI，回答附 [1][2] 出處；🔎 查證會查維基百科與 PubMed。
 
-在學習模式的課程裡打開時，視窗下方會出現「✨ 把這頁講得更好懂」：把目前這一步的內容（概念卡、範例、檢核題、實戰題…）附給 AI 重新講解，扣 1 次。還沒作答的題目，AI 只講觀念和思考方向、不直接給答案。
+在學習模式的課程或知識筆記裡，一般提問就會自動附上當頁文字與圖片；視窗會顯示本頁的附圖張數。「✨ 把這頁講得更好懂」也使用相同圖文。圖解／題圖會保留畫面上的編號及位置，AI 可對照圖片與名稱說明。還沒作答的題目，AI 只講觀念和思考方向、不直接給答案。
+
+圖片先在瀏覽器轉為 JPEG，最長邊不超過 2048px，每次最多 8 張；不傳本機檔案路徑。`file://` 若受畫布存取限制，改讀 `js/cloud-config.js` 的 `assets` 公開網站副本；新導入而尚未發布的本機圖片可能無法讀取，此時會明確顯示錯誤，不會假裝已看圖。HTTP(S) 使用當前網站的圖片。互動 iframe／動畫僅提供其文字，不包含即時動畫截圖。
+
+含圖時只嘗試 Google Gemini 與 OpenRouter 的 `google/gemma-4-31b-it:free` 視覺模型，保留原圖文後再備援；不可把圖片丟掉後降成純文字服務。視覺服務都失敗時回覆明確錯誤，不扣次數。文字提問仍沿用原有完整服務鏈。標準格式依 [Gemini OpenAI compatibility](https://ai.google.dev/gemini-api/docs/openai) 與 [Gemma 4 31B 模型說明](https://openrouter.ai/google/gemma-4-31b-it:free)。
 
 ## 安全設計
 
@@ -92,6 +96,10 @@ npx supabase functions deploy ai-chat --project-ref <你的 project ref> --no-ve
 - **金鑰外流的疑慮**：到各服務網站重新產生金鑰，再更新 Secrets 即可；網頁與 repo 不用改。
 
 ## 測試
+
+- 2026-10-19：後端多模態／登入／上限／備援／用量 21 項、桌機與手機 HTTP＋桌機 file:// 圖文傳送 40 項通過。影像像素與編號已檢視；瀏覽器測試使用模擬雲端與模型回應，未驗證真實模型對解剖圖的解讀品質。
+- Supabase `ai-chat` 已部署為 version 3、ACTIVE；正式端點 OPTIONS 204／未登入 POST 401 已驗證。未使用真實學生帳號做圖文對話。
+- 工具與界限：`tools/ai-vision-qa/README.md`。
 
 - 轉送程式可以在 Node 24 直接載入（`handle(request, env)`，只用標準 fetch），用假的資料庫函式搭配真的 AI 服務測試。
 - 本機開發時，`localStorage.ai_endpoint` 可以把網頁指到別的轉送程式網址。

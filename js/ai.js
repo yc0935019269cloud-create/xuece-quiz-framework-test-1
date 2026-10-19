@@ -2,7 +2,7 @@
  * - 問題先在本機題庫與學習教材裡找最相關的段落（中文雙字詞 BM25），連同問題送給 AI，回答附 [1][2] 出處，點了可以開題目或課程。
  * - AI 走雲端同步同一個 Supabase 專案的轉送程式（supabase/functions/ai-chat）：金鑰只在 Supabase，網頁只送登入憑證。
  *   需要登入（信箱驗證碼）；預設不限次數，管理員可以在後台對個別帳號設上限或停用。說明：docs/AI助教設定.md
- * - 在學習模式的課程裡，視窗會出現「✨ 把這頁講得更好懂」：把目前這一步（概念卡、範例、檢核題…，見 learn.js 的 pageCtx）附給 AI 重新講解。
+ * - 在課程與知識筆記中提問會自動附當頁圖文；「✨ 把這頁講得更好懂」沿用同一份 pageCtx 與圖片像素。
  * - 🔎 查證：用 AI 回答最後附的關鍵字查維基百科與 PubMed（網頁直接查，不扣次數），可以再請 AI 對照（扣 1 次）。
  * - 對話只存在這次開啟的記憶體裡，不進存檔、不同步。 */
 const AI = (() => {
@@ -115,7 +115,7 @@ const AI = (() => {
 4. 計算題寫出公式、代入過程與單位，一步一步算，注意正負號慣例。
 5. 不要用 LaTeX 或 $ 符號；公式用一般文字寫，例如 P = P₁ + P₂、V = U + P、f = 1/P。
 6. 要好懂：先一句話講結論，再分點說明，需要時舉生活例子；精簡，不要重抄題目。
-7. 如果附了【目前的學習頁面】，那是學生在學習模式正在看的畫面，「這頁」「這題」指的就是它。請你「講得更好懂」時，不要只是換句話說：先用一句話講重點並給一個生活比喻，再拆成很小的步驟（一步只做一件事），最後點出容易搞錯的地方；名詞、數值、正負號慣例要和頁面一致。頁面上的圖片和互動動畫你看不到，需要時請學生描述。
+7. 如果附了【目前的學習頁面】，「這頁」「這題」指的就是它。附圖是該頁的真實圖片，包含顯示中的編號標記；請結合圖像、編號對照與頁面文字回答構造位置、方向及關係。看不清楚時明說，不能只按名稱猜圖；沒有附圖時不要聲稱已看過圖片。互動動畫未附即時截圖時，你只能讀取其文字說明。請你「講得更好懂」時，先一句話講重點，再拆成很小的步驟，點出容易搞錯的地方；名詞、數值、正負號慣例要和頁面一致。
 8. 標示「學生還沒作答」的題目：除非學生明確要答案，否則只講需要的觀念和思考方向，不要說出正確答案，也不要一路排除到只剩一個選項。
 9. 回答最後另起一行，照這個格式輸出查證用關鍵字（學生看不到這行）：
 查證關鍵字：中文關鍵字1, 中文關鍵字2｜English keyword 1, English keyword 2`;
@@ -127,6 +127,49 @@ const AI = (() => {
   }
   /* 學習模式目前的頁面（不在課程裡就是 null） */
   const page = () => (typeof LEARN_UI !== 'undefined' && LEARN_UI.pageCtx && LEARN_UI.pageCtx()) || null;
+  // 送像素而非本機路徑；畫布保留底圖，另外繪上頁面目前顯示的編號。
+  async function imagePart(item) {
+    const render = src => new Promise((resolve, reject) => {
+      const im = new Image(), timer = setTimeout(() => { im.src = ''; reject(new Error('圖片讀取逾時')); }, 12000);
+      if (!src.startsWith('file:')) im.crossOrigin = 'anonymous';
+      im.onload = () => {
+        clearTimeout(timer);
+        try {
+          const scale = Math.min(1, 2048 / Math.max(im.naturalWidth, im.naturalHeight));
+          const canvas = document.createElement('canvas');
+          canvas.width = Math.max(1, Math.round(im.naturalWidth * scale)); canvas.height = Math.max(1, Math.round(im.naturalHeight * scale));
+          const ctx = canvas.getContext('2d');
+          ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, canvas.width, canvas.height); ctx.drawImage(im, 0, 0, canvas.width, canvas.height);
+          const radius = Math.max(11, Math.round(Math.min(canvas.width, canvas.height) / 45));
+          for (const pin of item.pins || []) {
+            const x = pin.x / 100 * canvas.width, y = pin.y / 100 * canvas.height;
+            ctx.beginPath(); ctx.arc(x, y, radius, 0, Math.PI * 2); ctx.fillStyle = '#ffcf4a'; ctx.fill(); ctx.strokeStyle = '#d44836'; ctx.lineWidth = Math.max(2, radius / 6); ctx.stroke();
+            ctx.fillStyle = '#21190d'; ctx.font = `bold ${radius}px sans-serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(pin.label, x, y, radius * 1.8);
+          }
+          let url = canvas.toDataURL('image/jpeg', .9);
+          if (url.length > 2100000) url = canvas.toDataURL('image/jpeg', .7);
+          if (url.length > 2100000) throw new Error('圖片太大，請先縮小圖片');
+          resolve({ type: 'image_url', image_url: { url } });
+        } catch (e) { reject(e); }
+      };
+      im.onerror = () => { clearTimeout(timer); reject(new Error('無法讀取圖片')); };
+      im.src = src;
+    });
+    try { return await render(item.src); }
+    catch (e) {
+      const base = new URL('.', location.href).href, assets = window.CLOUD_CFG?.assets;
+      if (location.protocol === 'file:' && assets && item.src.startsWith(base)) return render(new URL(item.src.slice(base.length), assets).href);
+      throw e;
+    }
+  }
+  async function pageContent(full, pg) {
+    const images = pg?.images || [];
+    if (!images.length) return full;
+    if (images.length > 8) throw new Error('這頁超過 8 張圖片，請先用單元篩選或收合部分筆記，再提問。');
+    const parts = await Promise.all(images.map(imagePart));
+    if (parts.reduce((n, x) => n + x.image_url.url.length, 0) > 7800000) throw new Error('這頁圖片總量太大，請先收合部分筆記，再提問。');
+    return [{ type: 'text', text: full + '\n\n【本次附圖】\n' + images.map((im, i) => `圖 ${i + 1}：${im.label}${im.pins?.length ? '；編號位置：' + im.pins.map(p => `${p.label}（距左${p.x.toFixed(1)}%、距上${p.y.toFixed(1)}%）`).join('、') : ''}`).join('\n') }, ...parts];
+  }
   const EASY = '請把這一頁講得更好懂：先用一句話說重點、舉一個生活比喻，再一步一步慢慢解釋，最後提醒我容易搞錯的地方。';
   const EASY_Q = '這題我還沒作答，請把這題要用到的觀念講得更好懂，告訴我該怎麼想，但先不要告訴我答案。';
   function askPage() {
@@ -153,9 +196,9 @@ const AI = (() => {
     const c = cfg();
     if (!c || !CLOUD.signedIn) { await refreshStatus(); U.toast('請先登入雲端帳號'); return; }
     if (S.st && S.st.reason === 'blocked') { U.toast('這個帳號的 AI 助教已被停用'); return; }
-    const pg = opt.page || null;
+    const pg = opt.noCtx ? null : (opt.page || page());
     // 附上的題目：手動附的那題，加上學習頁面正在做的題庫題（同一題只附一次）
-    const qs = opt.noCtx ? [] : [...new Set([S.q, pg && pg.qid].filter(Boolean))].map(id => Store.Q[id]).filter(Boolean);
+    const qs = opt.noCtx ? [] : [...new Set([pg && pg.qid, S.q].filter(Boolean))].map(id => Store.Q[id]).filter(Boolean);
     const q = qs[0] || null;
     // 附了題目時，以題幹與考點為主去找參考資料（問句裡的「為什麼答案是」不參與檢索）；附了學習頁面時以頁面內容為主，並略過頁面本身那張卡
     const subj = pg ? pg.subj : q && Store.EX[q.exam] && Store.EX[q.exam].subj;
@@ -171,17 +214,22 @@ const AI = (() => {
       if (u.role === 'user' && a.role === 'assistant' && !a.err && !a.pending) { hist.push({ role: 'user', content: u.plain }, { role: 'assistant', content: a.text }); i++; }
     }
     hist = hist.slice(-HISTORY);
-    S.msgs.push({ role: 'user', show: opt.show || text, plain: pg ? `${pgText}【問題】\n${text}` : text, q: q && q.id, pageLabel: pg && pg.label });
+    const userMsg = { role: 'user', show: opt.show || text, plain: pg ? `${pgText}【問題】\n${text}` : text, q: q && q.id, pageLabel: pg && pg.label, imageCount: 0 };
+    S.msgs.push(userMsg);
     const pending = { role: 'assistant', pending: true, t0: Date.now() };
     S.msgs.push(pending); S.busy = true; draw();
     try {
+      const content = await pageContent(full, pg);
+      userMsg.imageCount = pg?.images?.length || 0;
+      const currentChars = typeof content === 'string' ? content.length : content.reduce((n, part) => n + (part.text?.length || 0), 0);
+      while (hist.length && hist.reduce((n, m) => n + m.content.length, 0) + currentChars + SYSTEM().length > 39500) hist.splice(0, 2);
       const tk = await CLOUD.token();
       const r = await fetch(endpoint(c), { method: 'POST', headers: { apikey: c.key, Authorization: 'Bearer ' + tk, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ system: SYSTEM(), messages: [...hist, { role: 'user', content: full }] }) });
+        body: JSON.stringify({ system: SYSTEM(), messages: [...hist, { role: 'user', content }] }) });
       const j = await r.json().catch(() => ({}));
       if (!r.ok) {
         const msg = { login: '登入已過期，請重新登入。', blocked: `這個帳號（${j.email || CLOUD.email || ''}）的 AI 助教已被停用。`, quota: `今天的 ${j.limit || ''} 次已經用完，明天（台灣時間 0 點）會重置。`,
-          all_failed: '所有 AI 服務都暫時無法回答（可能都在忙或額度用完），這次不扣次數，請稍後再試。', bad_request: '問題或附帶內容太長，請縮短後再試。' }[j.error] || `發生錯誤（HTTP ${r.status}）。`;
+          vision_unavailable: '能看圖的 AI 服務目前無法回答，這次不扣次數，請稍後再試。', all_failed: '所有 AI 服務都暫時無法回答（可能都在忙或額度用完），這次不扣次數，請稍後再試。', bad_request: '問題或附帶圖文超過上限或格式不符，請縮小範圍後再試。' }[j.error] || `發生錯誤（HTTP ${r.status}）。`;
         Object.assign(pending, { pending: false, err: true, text: msg, detail: j.tried });
         if (j.error === 'login' || j.error === 'blocked' || j.error === 'quota') refreshStatus();
       } else {
@@ -190,7 +238,7 @@ const AI = (() => {
         if (S.st && S.st.allowed) { S.st.remaining = j.remaining; S.st.limit = j.limit; if (j.used != null) S.st.used = j.used; paintStatus(); }
       }
     } catch (e) {
-      Object.assign(pending, { pending: false, err: true, text: '連不上 AI 服務：' + e.message });
+      Object.assign(pending, { pending: false, err: true, text: '這次未送出或連線未完成：' + e.message });
     }
     S.busy = false; draw();
   }
@@ -250,7 +298,7 @@ const AI = (() => {
   /* ---------- 畫面 ---------- */
   const cite = (html, n) => html.replace(/\[(\d{1,2})\]/g, (s, k) => +k >= 1 && +k <= n ? `<a class="ai-cite" data-ref="${k}">[${k}]</a>` : s);
   function msgHTML(m, i) {
-    if (m.role === 'user') return `<div class="ai-msg me"><div class="ai-bub">${U.esc(m.show)}${m.pageLabel ? `<div class="ai-pg dim">📖 ${U.esc(m.pageLabel)}</div>` : ''}</div></div>`;
+    if (m.role === 'user') return `<div class="ai-msg me"><div class="ai-bub">${U.esc(m.show)}${m.pageLabel ? `<div class="ai-pg dim">📖 ${U.esc(m.pageLabel)}${m.imageCount ? `・附 ${m.imageCount} 張圖片` : '・附文字'}</div>` : ''}</div></div>`;
     if (m.pending) return `<div class="ai-msg bot"><div class="ai-bub dim">思考中…<span class="ai-sec" data-t0="${m.t0}"></span><br><small>忙碌時會自動換下一個 AI 服務</small></div></div>`;
     if (m.err) return `<div class="ai-msg bot"><div class="ai-bub err">${U.esc(m.text)}${m.detail && m.detail.length ? `<details class="small-t"><summary>詳細</summary>${m.detail.map(U.esc).join('<br>')}</details>` : ''}</div></div>`;
     const refs = m.refs || [];
@@ -286,7 +334,7 @@ const AI = (() => {
     const pg = page();
     pageEl.hidden = !pg;
     if (!pg) return;
-    pageEl.innerHTML = `<button class="px-btn small blue" data-act="page" ${S.busy ? 'disabled' : ''}>✨ 把這頁講得更好懂</button><span class="dim" title="${U.esc(pg.label)}">📖 ${U.esc(pg.label)}</span>`;
+    pageEl.innerHTML = `<button class="px-btn small blue" data-act="page" ${S.busy ? 'disabled' : ''}>✨ 把這頁講得更好懂</button><span class="dim" title="${U.esc(pg.label)}">📖 ${U.esc(pg.label)}・提問會附本頁文字${pg.images?.length ? `與 ${pg.images.length} 張圖` : ''}</span>`;
   }
   document.addEventListener('learnpage', () => { if (panel && !panel.hidden) drawPage(); });
   setInterval(() => { if (panel && !panel.hidden) U.$$('.ai-sec', panel).forEach(e => { e.textContent = `（${Math.round((Date.now() - +e.dataset.t0) / 1000)} 秒）`; }); }, 1000);

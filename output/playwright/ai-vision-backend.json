@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "name": "unauthenticated rejected without upstream calls",
+      "ok": true
+    },
+    {
+      "name": "multimodal request accepted",
+      "ok": true
+    },
+    {
+      "name": "pixel bytes reach provider unchanged",
+      "ok": true
+    },
+    {
+      "name": "usage charged exactly once after success",
+      "ok": true
+    },
+    {
+      "name": "vision fallback succeeds",
+      "ok": true
+    },
+    {
+      "name": "vision never sent to text-only providers",
+      "ok": true
+    },
+    {
+      "name": "router receives original images",
+      "ok": true
+    },
+    {
+      "name": "no vision service returns explicit failure",
+      "ok": true
+    },
+    {
+      "name": "no vision service does not charge",
+      "ok": true
+    },
+    {
+      "name": "all vision failures preserve images and do not charge",
+      "ok": true
+    },
+    {
+      "name": "blocked account cannot call vision",
+      "ok": true
+    },
+    {
+      "name": "quota applies to vision",
+      "ok": true
+    },
+    {
+      "name": "reject local path before upstream",
+      "ok": true
+    },
+    {
+      "name": "reject remote URL before upstream",
+      "ok": true
+    },
+    {
+      "name": "reject SVG before upstream",
+      "ok": true
+    },
+    {
+      "name": "reject fake image before upstream",
+      "ok": true
+    },
+    {
+      "name": "image count bound enforced",
+      "ok": true
+    },
+    {
+      "name": "text budget enforced independently of images",
+      "ok": true
+    },
+    {
+      "name": "original text fallback unchanged",
+      "ok": true
+    },
+    {
+      "name": "assistant image injection rejected",
+      "ok": true
+    },
+    {
+      "name": "browser JPEG encoding accepted",
+      "ok": true
+    }
+  ],
+  "problems": []
+}

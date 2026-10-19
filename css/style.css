@@ -1076,6 +1076,11 @@ details.ltree.d0 > summary .ltree-n { color: var(--gold); font-size: 18px; }
 .dg-list li.on { background: rgba(255,207,74,.18); }
 .dg-list .knowledge-star { margin: 3px 0; vertical-align: middle; }
 .knowledge-star { white-space: normal; }
+.knowledge-star-icon { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 30px; height: 30px; padding: 0; border: 0; background: transparent; color: var(--dim); font: 24px/1 sans-serif; cursor: pointer; }
+.knowledge-star-icon.gold { color: var(--gold); }
+.knowledge-star-icon:hover { color: var(--gold); background: rgba(255,207,74,.1); }
+.knowledge-star-icon:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.knowledge-term-heading { display: flex; align-items: center; gap: 6px; }
 .knowledge-filters { align-items: flex-end; }
 .knowledge-filters label { display: flex; flex-direction: column; gap: 5px; min-width: 0; max-width: 100%; }
 .knowledge-filters select { max-width: 100%; width: 100%; }
