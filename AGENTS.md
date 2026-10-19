@@ -196,3 +196,12 @@
 - 接手先讀SESSION_NOTE_OPTOMETRY_S114_COURSES.md、docs/視光學大一下_正課易讀版.md及tools/learn-redo/s114-course-progress.json。腳本s114_course_01.py～09.py與s114_course_integrations.py，基準a183a46；重跑後須再跑s114_course_corrections.py、build與QA，不重跑舊匯入器。每課更新Session Note；未驗證不能標完成。
 - CSS僅擴到大一下01～09；概念可連續多頁，pace free。散光首課加已驗證的光斑互動，其餘4個原互動保留。v125學習戰鬥固定縮小功能保留；舊進行中頁序可能變，可回課頭重讀，未清除存檔。
 - QA：嚴格建置、17數值、原正文／考點／題／卡／編譯ID與其他pack比對通過；Edge file:// 1000／390px實際2276頁、288單選判分、46自評流程、118範例／118實戰／118導航、28互動狀態，0問題。戰鬥固定縮小30項回歸通過。報告docs/s114-course-readability/；獨立context備份還原localStorage，未做實機iPad、真人理解測試或完整專業審稿。
+
+## 星號收藏與知識比較（2026-10-19，v127）
+
+- 學習圖解的每個名稱、知識筆記中已讀圖解的每個名稱都可個別加星號；以單元／課／原圖／名稱識別，保留原圖、來源及該點編號，沿用使用者調整過的 pins。原始內容與點位不改。
+- 學習檢核、自編練習、魔王題與複習題在答案揭曉後可「加入知識比較」；題庫實戰也支援，保留題圖、選項、正解與詳解。自評題揭曉後即可加星號，無須先自評。
+- 學習模式 → 知識筆記 →「★ 星號收藏・知識比較」可依科目、單元、名稱／答案與搜尋篩選。桌機雙欄、手機單欄，每頁20筆。收藏立即可查，不受課程完成門檻限制；一般概念卡收錄規則照舊。
+- `js/learn.js` 的 `D.starred` 儲存內容參照與時間，隨既有 `Store.exportAll/importAll` 的 learn 欄位保存；不與普通題庫的 `Store.favorites` 混用，不改作答、獎勵或複習排程。缺少導入來源時暫不顯示，但保留參照。`js/question.js` 新增可選 onReveal 回呼供學習自評題使用。
+- Edge file:// 桌機1100px／手機390px共64項通過，含保存／備份往返、原圖與調整點位、篩選／搜尋、分頁、鍵盤及零頁面錯誤；獨立context的localStorage已還原。JS語法、git diff --check及 `python tools/build.py --check --strict` 通過；既有5個縮寫覆蓋提醒保留。未做實機iPad或真實雲端往返。
+- QA與重跑方式：`tools/knowledge-qa/README.md`；結果／截圖：`output/playwright/knowledge-stars-*`。

@@ -1,0 +1,261 @@
+{
+  "checks": [
+    {
+      "name": "desktop empty collection visible",
+      "ok": true
+    },
+    {
+      "name": "desktop each diagram point has star",
+      "ok": true
+    },
+    {
+      "name": "desktop term saved",
+      "ok": true
+    },
+    {
+      "name": "desktop term click updates state",
+      "ok": true
+    },
+    {
+      "name": "desktop keyboard toggle stays on page",
+      "ok": true
+    },
+    {
+      "name": "desktop star does not change grades rewards or review",
+      "ok": true
+    },
+    {
+      "name": "desktop hidden names keep stars",
+      "ok": true
+    },
+    {
+      "name": "desktop stars visible before lesson completion",
+      "ok": true
+    },
+    {
+      "name": "desktop unit filter",
+      "ok": true
+    },
+    {
+      "name": "desktop matching original image",
+      "ok": true
+    },
+    {
+      "name": "desktop original point position",
+      "ok": true
+    },
+    {
+      "name": "desktop search starred name",
+      "ok": true
+    },
+    {
+      "name": "desktop answer not starred before reveal",
+      "ok": true
+    },
+    {
+      "name": "desktop revealed answer saved",
+      "ok": true
+    },
+    {
+      "name": "desktop answer filter and complete bilingual answer",
+      "ok": true
+    },
+    {
+      "name": "desktop answer keeps question image",
+      "ok": true
+    },
+    {
+      "name": "desktop bank practice saved",
+      "ok": true
+    },
+    {
+      "name": "desktop mixed collection",
+      "ok": true
+    },
+    {
+      "name": "desktop no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "desktop subject filter lab",
+      "ok": true
+    },
+    {
+      "name": "desktop subject filter theory",
+      "ok": true
+    },
+    {
+      "name": "desktop backup includes stars",
+      "ok": true
+    },
+    {
+      "name": "desktop reload persists collection",
+      "ok": true
+    },
+    {
+      "name": "desktop remove one star updates collection",
+      "ok": true
+    },
+    {
+      "name": "desktop backup import restores stars",
+      "ok": true
+    },
+    {
+      "name": "desktop collection respects adjusted pins",
+      "ok": true
+    },
+    {
+      "name": "desktop unavailable imported source is safe",
+      "ok": true
+    },
+    {
+      "name": "desktop large collection paginated",
+      "ok": true
+    },
+    {
+      "name": "desktop second page complete",
+      "ok": true
+    },
+    {
+      "name": "desktop previous page",
+      "ok": true
+    },
+    {
+      "name": "desktop no page errors",
+      "ok": true
+    },
+    {
+      "name": "desktop storage restored",
+      "ok": true
+    },
+    {
+      "name": "mobile empty collection visible",
+      "ok": true
+    },
+    {
+      "name": "mobile each diagram point has star",
+      "ok": true
+    },
+    {
+      "name": "mobile term saved",
+      "ok": true
+    },
+    {
+      "name": "mobile term click updates state",
+      "ok": true
+    },
+    {
+      "name": "mobile keyboard toggle stays on page",
+      "ok": true
+    },
+    {
+      "name": "mobile star does not change grades rewards or review",
+      "ok": true
+    },
+    {
+      "name": "mobile hidden names keep stars",
+      "ok": true
+    },
+    {
+      "name": "mobile stars visible before lesson completion",
+      "ok": true
+    },
+    {
+      "name": "mobile unit filter",
+      "ok": true
+    },
+    {
+      "name": "mobile matching original image",
+      "ok": true
+    },
+    {
+      "name": "mobile original point position",
+      "ok": true
+    },
+    {
+      "name": "mobile search starred name",
+      "ok": true
+    },
+    {
+      "name": "mobile answer not starred before reveal",
+      "ok": true
+    },
+    {
+      "name": "mobile revealed answer saved",
+      "ok": true
+    },
+    {
+      "name": "mobile answer filter and complete bilingual answer",
+      "ok": true
+    },
+    {
+      "name": "mobile answer keeps question image",
+      "ok": true
+    },
+    {
+      "name": "mobile bank practice saved",
+      "ok": true
+    },
+    {
+      "name": "mobile mixed collection",
+      "ok": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "mobile subject filter lab",
+      "ok": true
+    },
+    {
+      "name": "mobile subject filter theory",
+      "ok": true
+    },
+    {
+      "name": "mobile backup includes stars",
+      "ok": true
+    },
+    {
+      "name": "mobile reload persists collection",
+      "ok": true
+    },
+    {
+      "name": "mobile remove one star updates collection",
+      "ok": true
+    },
+    {
+      "name": "mobile backup import restores stars",
+      "ok": true
+    },
+    {
+      "name": "mobile collection respects adjusted pins",
+      "ok": true
+    },
+    {
+      "name": "mobile unavailable imported source is safe",
+      "ok": true
+    },
+    {
+      "name": "mobile large collection paginated",
+      "ok": true
+    },
+    {
+      "name": "mobile second page complete",
+      "ok": true
+    },
+    {
+      "name": "mobile previous page",
+      "ok": true
+    },
+    {
+      "name": "mobile no page errors",
+      "ok": true
+    },
+    {
+      "name": "mobile storage restored",
+      "ok": true
+    }
+  ],
+  "problems": []
+}

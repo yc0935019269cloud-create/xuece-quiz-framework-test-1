@@ -159,6 +159,7 @@ const QV = (() => {
         wrap.innerHTML = `<div class="explain" style="width:100%"><b class="gold-t">參考答案：${U.esc(q.ans)}</b>${mine ? `<br>你的答案：${U.esc(mine)}` : ''}${U.md(q.ex)}</div>
           <div class="row mt"><button class="px-btn green big">我答對了</button><button class="px-btn red big">我答錯了</button></div>`;
         const [yes, no] = wrap.querySelectorAll('.row button');
+        opts.onReveal && opts.onReveal();
         const done = ok => { wrap.querySelector('.row').remove(); locked = false; picked = new Set(); finishSelf(ok); };
         yes.onclick = () => done(true); no.onclick = () => done(false);
       };
