@@ -106,6 +106,19 @@ const Screens = (() => {
   const STATUS = [['all', '全部'], ['new', '未作答'], ['wrong', '曾答錯'], ['lastwrong', '上次答錯'], ['unmastered', '未答對過'], ['right', '答對過']];
 
   /* ---------- 開始遠征 ---------- */
+  /* 出題順序（自由遠征）：smart＝先出「沒作答過＋錯題」並隨機穿插（錯題權重 3 倍），寫對過的排在後面；
+     new／wrong＝未作答／錯題排前面；其他＝完全隨機。用加權隨機排序（-ln(u)/w），題組以第一題判斷。 */
+  function prefOrder(units, pref) {
+    if (!pref || pref === 'rand') return U.shuffle(units);
+    const isWrong = id => (Store.wrong[id] && !Store.wrong[id].done) || (Store.qs[id]?.a && !Store.qs[id].last);
+    const isNew = id => !Store.qs[id]?.a;
+    return units.map(u => {
+      const id = u[0], w = isWrong(id), n = isNew(id);
+      const tier = pref === 'smart' ? (w || n ? 0 : 1) : pref === 'new' ? (n ? 0 : 1) : (w ? 0 : 1);
+      const weight = pref === 'smart' && w ? 3 : 1;
+      return [u, tier, -Math.log(Math.random() || 1e-9) / weight];
+    }).sort((a, b) => a[1] - b[1] || a[2] - b[2]).map(x => x[0]);
+  }
   function buildQueue(cfg) {
     let pool = cfg.ids ? Store.filter({ ids: cfg.ids, types: cfg.types }) : Store.filter(cfg);
     if (!(cfg.types || []).includes('open')) pool = pool.filter(q => q.type !== 'open');
@@ -114,7 +127,7 @@ const Screens = (() => {
       if (q.group) { if (!seen[q.group]) { seen[q.group] = []; units.push(seen[q.group]); } seen[q.group].push(q.id); }
       else units.push([q.id]);
     });
-    const order = cfg.ordered ? units : U.shuffle(units);
+    const order = cfg.ordered ? units : prefOrder(units, cfg.pref);
     const out = [];
     for (const u of order) { for (const id of u) { if (out.length < cfg.count) out.push(id); } if (out.length >= cfg.count) break; }
     return out;
@@ -464,13 +477,14 @@ const Screens = (() => {
 
   /* ---------- 自由遠征 ---------- */
   function free() {
-    const state = { subjects: MAIN_SUBJ.slice(), exams: [], types: ['single', 'multi', 'fill'], status: 'all', count: '20' };
+    const state = { subjects: MAIN_SUBJ.slice(), exams: [], types: ['single', 'multi', 'fill'], status: 'all', count: '20', pref: 'smart' };
     scr().innerHTML = `<div class="panel" style="max-width:860px;margin:0 auto"><h2>自由遠征</h2>
       <div class="filters">
         <div class="frow"><label>科目</label><span id="fsj">${chipGroup(MAIN_SUBJ.map(s => [s, C.SUBJECTS[s].name]), state.subjects)}</span></div>
         <div class="frow"><label>題本</label><span id="fy"></span></div>
         <div class="frow"><label>題型</label><span id="ft">${chipGroup(TYPES, state.types)}</span></div>
         <div class="frow"><label>星號</label><span id="fstar"><span class="chip ${state.starOnly ? 'on' : ''}" data-v="star">★ 只出星號部位的題目</span></span><span class="small-t dim" style="margin-left:6px">學習模式已加星號 ${typeof LEARN_UI !== 'undefined' ? LEARN_UI.starredTermCount() : 0} 個部位</span></div>
+        <div class="frow"><label>出題</label><span id="fp">${chipGroup([['smart', '未作答＋錯題優先'], ['rand', '隨機'], ['new', '未作答優先'], ['wrong', '錯題優先']], [state.pref], false)}</span></div>
         <div class="frow"><label>狀態</label><span id="fs">${chipGroup(STATUS, [state.status], false)}</span></div>
         <div class="frow"><label>題數</label><span id="fc">${chipGroup([['10', '10'], ['15', '15'], ['20', '20'], ['30', '30'], ['50', '50'], ['9999', '全部']], [state.count], false)}</span>
           <input class="px-in" id="fcn" type="number" min="3" max="500" placeholder="自訂" style="width:90px"></div>
@@ -485,6 +499,7 @@ const Screens = (() => {
     bindChips(scr(), '#ft', state, 'types', true, upd);
     bindStar(state, upd);
     bindChips(scr(), '#fs', state, 'status', false, upd);
+    bindChips(scr(), '#fp', state, 'pref', false);
     bindChips(scr(), '#fc', state, 'count', false, () => { U.$('#fcn').value = ''; upd(); });
     U.$('#fcn').oninput = e => { if (e.target.value) { state.count = String(U.clamp(Number(e.target.value), 1, 999)); U.$$('#fc .chip').forEach(c => c.classList.remove('on')); upd(); } };
     upd();
