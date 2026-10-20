@@ -392,3 +392,4 @@
 
 - 遠征／題庫／冒險地圖的題本樹由 `set.path` 與 `set.order` 決定。眼解剖實驗 117 本已改成和學習模式目錄同一套：`實驗課（依老師講義）→ 視覺路徑／骨質眼窩／血液供應 → 各課`、`實驗手冊名詞（考試範圍）→ 第 N 頁… → 各課`、`其他 →（舊課程題本、實驗手冊圖鑑、國考題）`。只改 path／order，題本 id 與題目不動，進度不受影響。
 - 腳本 `tools/eyelab-qa/bank_tree.py`（依 `content/learn/eye_anat/*.json` 的 path、order、課名對應）。**重跑專案外圖鑑產生器（`E:\NEWTEST\eye_work\atlas\build_all.py`）會把跑台題本 path 改回舊的「跑台看圖題」，之後要再跑一次 bank_tree.py**，再 `python tools/build.py --strict`。
+- 題池 0 題的題型提示（v137）：眼解剖實驗跑台題都是「填答」，題型只勾單選時題池會是 0。`js/screens.js` 的 `typeHint`：深淵遠征與自由遠征在題池為 0、但所選題本有未勾的題型時，顯示「這些題本的題目是「填答」題…」與一鍵「勾選「填答」」按鈕。
