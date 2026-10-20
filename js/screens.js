@@ -147,6 +147,17 @@ const Screens = (() => {
       if (state.starOnly && !(typeof LEARN_UI !== 'undefined' && LEARN_UI.starredQids().size)) U.toast('還沒有加星號的部位：到學習模式的圖解點名稱旁的 ☆ 加星號', 4000);
     };
   }
+  /* 題池是 0、但選的題本其實有別的題型（例如眼解剖實驗跑台題都是填答）：在題數說明後面提示，並給一顆「一鍵勾選」 */
+  function typeHint(cntEl, base, state, chipSel, upd) {
+    const all = Store.filter(Object.assign({}, base, { types: TYPES.map(t => t[0]) }));
+    const miss = TYPES.filter(([t]) => !state.types.includes(t) && all.some(q => q.type === t));
+    if (!miss.length) return;
+    const names = miss.map(([, n]) => `「${n}」`).join('、');
+    const b = U.h(`<button class="px-btn small gold" style="margin-left:6px">勾選${names}</button>`);
+    cntEl.appendChild(U.h(`<span class="small-t" style="display:block;color:var(--text)">這些題本的題目是${names}題，題型要勾選才會出題。</span>`));
+    b.onclick = () => { miss.forEach(([t]) => { state.types.push(t); const c = U.$(`${chipSel} .chip[data-v="${t}"]`); if (c) c.classList.add('on'); }); SFX.play('click'); upd(); };
+    cntEl.lastChild.appendChild(b);
+  }
   function bindChips(root, sel, state, key, multi = true, onChange) {
     U.$$(sel + ' .chip', root).forEach(c => c.onclick = () => {
       const v = isNaN(c.dataset.v) || key === 'status' || key === 'count' || key === 'exams' ? c.dataset.v : Number(c.dataset.v);
@@ -467,7 +478,7 @@ const Screens = (() => {
       <p id="cnt" class="gold-t"></p>
       <p class="dim small-t">提示：題數越多，樓層越深、首領越強，獎勵也越多。題本不選＝全部。沒有標準答案的填答／非選題採「揭曉後自評」。</p>
       <div class="row"><button class="px-btn gold big" id="go">出發遠征！</button></div></div>`;
-    const upd = () => { const n = Store.filter(state).filter(q => state.types.includes('open') || q.type !== 'open').length; U.$('#cnt').textContent = `符合條件：${n} 題（將出 ${Math.min(n, Number(state.count))} 題）`; };
+    const upd = () => { const n = Store.filter(state).filter(q => state.types.includes('open') || q.type !== 'open').length; U.$('#cnt').textContent = `符合條件：${n} 題（將出 ${Math.min(n, Number(state.count))} 題）`; if (!n) typeHint(U.$('#cnt'), state, state, '#ft', upd); };
     const drawSets = setPicker(U.$('#fy'), state, upd);
     bindChips(scr(), '#fsj', state, 'subjects', true, () => { drawSets(); upd(); });
     drawSets();
@@ -914,6 +925,7 @@ const Screens = (() => {
     const upd = () => {
       const n = Store.filter({ subjects: state.subjects, exams: state.exams, years: state.years, types: state.types, starOnly: state.starOnly }).filter(q => state.types.includes('open') || q.type !== 'open').length;
       U.$('#cnt').textContent = `題池：${n} 題${state.exams.length ? `（已選 ${state.exams.length} 本題本）` : '（範圍不選＝所選科目全部題本）'}。冒險中會持續抽題、不限題數；首領戰只出該首領科目的題目。`; drawBoss();
+      if (!n) typeHint(U.$('#cnt'), { subjects: state.subjects, exams: state.exams, years: state.years, starOnly: state.starOnly }, state, '#ft', upd);
     };
     const drawSets = setPicker(U.$('#fy'), state, upd);
     bindChips(scr(), '#fsj', state, 'subjects', true, () => { drawSets(); upd(); });
