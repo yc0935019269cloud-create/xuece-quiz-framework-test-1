@@ -533,33 +533,44 @@ const LEARN_UI = (() => {
   }
   function pinBattle() {
     const wrap = U.$('#lpBattlePin'), anchor = U.$('#lpBattleAnchor'), spacer = U.$('#lpBattleSpacer'), stage = U.$('#lbStage'), topbar = U.$('#topbar');
-    let frame = 0;
+    // 手機／平板捲動時不能每一格都改動 sticky 元素（以前每格都先拿掉 compact 量高度再加回去，
+    // iOS／Android 的慣性捲動會因此抽搐）。現在只在「狀態真的改變」或「寬度改變」時才寫入 DOM。
+    let frame = 0, fullH = 0, width = innerWidth, curTop = -1, needMeasure = true;
+    const measure = () => {
+      const on = wrap.classList.contains('compact');
+      if (on) wrap.classList.remove('compact');
+      fullH = wrap.offsetHeight;
+      if (on) { wrap.classList.add('compact'); spacer.style.height = `${fullH - wrap.offsetHeight}px`; }
+      needMeasure = false;
+    };
     const update = () => {
       frame = 0;
       if (!wrap.isConnected) return;
       const visible = stage.style.display !== 'none';
-      wrap.hidden = !visible;
-      if (!visible) { wrap.classList.remove('compact'); spacer.style.height = '0px'; return; }
-      const top = topbar ? topbar.getBoundingClientRect().height : 0;
-      wrap.style.top = `${top}px`;
+      if (wrap.hidden === visible) { wrap.hidden = !visible; needMeasure = true; }
+      if (!visible) { if (wrap.classList.contains('compact')) wrap.classList.remove('compact'); spacer.style.height = '0px'; return; }
+      const top = topbar ? Math.round(topbar.getBoundingClientRect().height) : 0;
+      if (top !== curTop) { curTop = top; wrap.style.top = `${top}px`; }
+      if (needMeasure) measure();
       const on = wrap.classList.contains('compact');
       const start = anchor.getBoundingClientRect().top + scrollY;
-      const compact = on ? scrollY > 24 : scrollY > Math.max(24, start - top + 30);
-      // Measure both sizes on resize too. Preserve flow height so the text does
-      // not jump when the existing animated scene shrinks; never clone/redraw it.
-      wrap.classList.remove('compact');
-      const full = wrap.offsetHeight;
+      // 進入／離開用不同門檻（相差 60px），慣性回彈時不會來回切換
+      const onAt = Math.max(40, start - top + 30), offAt = Math.max(8, onAt - 60);
+      const compact = on ? scrollY > offAt : scrollY > onAt;
+      if (compact === on) return;
       wrap.classList.toggle('compact', compact);
-      spacer.style.height = compact ? `${full - wrap.offsetHeight}px` : '0px';
+      spacer.style.height = compact ? `${fullH - wrap.offsetHeight}px` : '0px';
     };
     const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
+    // 手機網址列收合只改變高度；寬度改變才需要重新量戰鬥條高度
+    const onResize = () => { if (innerWidth !== width) { width = innerWidth; needMeasure = true; } schedule(); };
     window.addEventListener('scroll', schedule, { passive: true });
-    window.addEventListener('resize', schedule);
+    window.addEventListener('resize', onResize);
     const ro = window.ResizeObserver && topbar ? new ResizeObserver(schedule) : null;
     if (ro) ro.observe(topbar);
-    refreshBattlePin = schedule;
+    refreshBattlePin = schedule; // 戰鬥條高度由 CSS 固定，出招重畫不必重量
     unpinBattle = () => {
-      window.removeEventListener('scroll', schedule); window.removeEventListener('resize', schedule);
+      window.removeEventListener('scroll', schedule); window.removeEventListener('resize', onResize);
       if (ro) ro.disconnect(); if (frame) cancelAnimationFrame(frame);
     };
     update();
