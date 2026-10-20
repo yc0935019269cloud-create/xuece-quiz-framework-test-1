@@ -60,11 +60,11 @@ const GLOSS = (() => {
 
   function close() { if (pop) { pop.remove(); pop = null; } if (curEl) { curEl.classList.remove('on'); curEl = null; } }
 
-  // 念英文：iPhone／iPad 的 speechSynthesis 會被「靜音開關」消音，而且 cancel() 後立刻 speak() 常常被吞掉，
-  // 所以 iOS 先用 <audio> 播線上語音（走媒體音量，靜音開關不影響）；失敗再退回 speechSynthesis。
-  // 其他裝置先用 speechSynthesis（有英文語音才用），沒聲音（1.5 秒內沒開始）或出錯就改播線上語音。
+  // 念英文：依序試 ① 專案內預先下載的發音檔 assets/tts/<slug>.mp3（tools/tts/gen.py 產生，離線也能播）
+  // ② Google 翻譯語音 ③ 有道 → 都失敗才用瀏覽器內建 speechSynthesis。
+  // 用 <audio> 播放：走媒體音量，iPhone 靜音開關不影響（speechSynthesis 在 iOS 會被靜音開關消音）。
+  // 全程重用同一個 <audio>：iOS 只要第一次在點擊中播放過，之後換 src 也能播。
   // 念的時候背景音樂暫時調小聲（BGM.duck 用計數器，連點不會提早恢復）。
-  const IOS = typeof IS_IOS !== 'undefined' ? IS_IOS : /iPad|iPhone|iPod/.test(navigator.userAgent);
   const hasTTS = 'speechSynthesis' in window;
   let player = null, voice = null, seq = 0;
   const pickVoice = () => {
@@ -73,55 +73,50 @@ const GLOSS = (() => {
     voice = vs.find(v => /en[-_]US/i.test(v.lang) && v.localService) || vs.find(v => /en[-_]US/i.test(v.lang)) || vs[0] || null;
   };
   if (hasTTS) { pickVoice(); try { speechSynthesis.addEventListener('voiceschanged', pickVoice); } catch (e) {} }
-  // 線上語音來源（依序嘗試）：Google 翻譯語音、有道詞典
-  const TTS_SRC = [
-    q => 'https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=en-US&q=' + q,
-    q => 'https://dict.youdao.com/dictvoice?type=2&audio=' + q
+  // slug 規則要和 tools/tts/gen.py 一致
+  const ttsSlug = t => t.trim().toLowerCase().replace(/\s+/g, ' ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80);
+  const SOURCES = [
+    t => 'assets/tts/' + ttsSlug(t) + '.mp3',
+    t => 'https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=en-US&q=' + encodeURIComponent(t.slice(0, 180)),
+    t => 'https://dict.youdao.com/dictvoice?type=2&audio=' + encodeURIComponent(t.slice(0, 180))
   ];
   function speak(text) {
     text = String(text || '').replace(/\s+/g, ' ').trim();
     if (!text) return;
-    let released = false, done = false;
     const id = ++seq, live = () => id === seq; // 被下一次播放打斷的舊請求不再改播備援
+    let released = false;
     if (typeof BGM !== 'undefined') BGM.duck(true);
     const release = () => { if (released) return; released = true; if (typeof BGM !== 'undefined') BGM.duck(false); };
     setTimeout(release, 8000); // 保險：萬一事件沒觸發，音樂不會一直被卡住
-    const stopAll = () => {
-      if (player) { try { player.pause(); } catch (e) {} player = null; }
-      if (hasTTS && (speechSynthesis.speaking || speechSynthesis.pending)) { try { speechSynthesis.cancel(); } catch (e) {} }
-    };
-    const viaAudio = (onFail, k = 0) => {
-      let over = false; // 同一次嘗試的 error 事件與 play() 失敗只處理一次
-      const next = toTTS => {
-        if (over || done) return; over = true;
-        if (!live()) return release();
-        if (!toTTS && k + 1 < TTS_SRC.length) viaAudio(onFail, k + 1); else if (onFail) onFail(); else release();
-      };
-      try {
-        const a = new Audio(TTS_SRC[k](encodeURIComponent(text.slice(0, 180)))); player = a;
-        a.onended = () => { over = done = true; release(); };
-        a.onerror = () => { if (player === a) player = null; next(); };
-        const p = a.play();
-        if (p && p.catch) p.catch(err => { if (player === a) player = null; next(err && err.name === 'NotAllowedError'); });
-      } catch (e) { next(); }
-    };
-    const viaTTS = onFail => {
-      if (!hasTTS) return (onFail && live()) ? onFail() : release();
+    if (hasTTS && (speechSynthesis.speaking || speechSynthesis.pending)) { try { speechSynthesis.cancel(); } catch (e) {} }
+    const viaTTS = () => {
+      if (!hasTTS || !live()) return release();
       try {
         if (speechSynthesis.paused) speechSynthesis.resume();
         const u = new SpeechSynthesisUtterance(text);
         u.lang = 'en-US'; if (voice) u.voice = voice; u.rate = 0.9;
-        let started = false;
-        u.onstart = () => { started = true; };
-        u.onend = () => { done = true; release(); };
-        u.onerror = () => { if (!done && onFail && live()) { done = true; onFail(); } else release(); };
+        u.onend = release; u.onerror = release;
         speechSynthesis.speak(u);
-        if (onFail) setTimeout(() => { if (!started && !done && live()) { done = true; try { speechSynthesis.cancel(); } catch (e) {} onFail(); } }, 1500);
-      } catch (e) { (onFail && live()) ? onFail() : release(); }
+      } catch (e) { release(); }
     };
-    stopAll();
-    if (IOS || !hasTTS || !voice) viaAudio(hasTTS ? () => viaTTS() : null);
-    else viaTTS(() => viaAudio());
+    if (!player) { try { player = new Audio(); player.preload = 'auto'; } catch (e) { player = null; } }
+    if (!player) return viaTTS();
+    const a = player;
+    try { a.pause(); } catch (e) {}
+    const tryAt = k => {
+      if (!live()) return;
+      if (k >= SOURCES.length) return viaTTS();
+      let over = false;
+      const next = () => { if (over || !live()) return; over = true; tryAt(k + 1); };
+      a.onended = () => { if (!live()) return; over = true; release(); };
+      a.onerror = next;
+      a.src = SOURCES[k](text);
+      try {
+        const p = a.play();
+        if (p && p.catch) p.catch(err => { if (err && err.name === 'AbortError') return; next(); });
+      } catch (e) { next(); }
+    };
+    tryAt(0);
   }
 
   function open(el) {
