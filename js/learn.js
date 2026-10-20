@@ -76,6 +76,28 @@ const LEARN_UI = (() => {
   function questionStar(box, q, p, l) {
     if (!box.querySelector('.knowledge-answer-action')) box.insertAdjacentHTML('beforeend', `<div class="knowledge-answer-action mt">${starButton({ kind: 'question', p: p.id, l: l.id, id: q.id })}</div>`);
   }
+  /* 遠征「只出星號部位相關題」：加星號的題目本身＋加星號的圖解名稱對應到的題庫題
+     （答案／可接受答案的中文或英文和名稱相同，或題目標籤剛好是這個中文名稱；只找同一科目）。 */
+  function starredQids() {
+    const out = new Set(), norm = x => String(x || '').normalize('NFKC').toLowerCase().replace(/[\s\-‐–—'’·・.,，、()（）]/g, '');
+    const want = {};   // subject → Set(名稱)
+    Object.values(D.starred || {}).forEach(r => {
+      if (r.kind === 'question' && Store.Q[r.id]) out.add(r.id);
+      if (r.kind !== 'term') return;
+      const p = PK[r.p]; if (!p) return;
+      const m = String(r.name).match(/^([^A-Za-z]*)(.*)$/) || [];
+      const set = want[p.subject] || (want[p.subject] = new Set());
+      [m[1], m[2]].map(norm).filter(Boolean).forEach(x => set.add(x));
+    });
+    const subs = Object.keys(want); if (!subs.length) return out;
+    window.QB.questions.forEach(q => {
+      const set = want[(Store.EX[q.exam] || {}).subj]; if (!set) return;
+      const names = [q.ans, ...(q.accept || [])].flatMap(a => String(a || '').split('/')).concat(String(q.tag || '').split('、')).map(norm);
+      if (names.some(x => x && set.has(x))) out.add(q.id);
+    });
+    return out;
+  }
+  const starredTermCount = () => Object.values(D.starred || {}).filter(r => r.kind === 'term').length;
   function starredItems() {
     return Object.values(D.starred || {}).map(r => {
       const p = PK[r.p], l = p?.lessons.find(x => x.id === r.l);
@@ -1599,5 +1621,5 @@ const LEARN_UI = (() => {
     return true;
   }
 
-  return { reindex, screen, tileDesc, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, pageCtx, glossStar, get packs() { return packs; } };
+  return { starredQids, starredTermCount, reindex, screen, tileDesc, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, pageCtx, glossStar, get packs() { return packs; } };
 })();

@@ -122,7 +122,7 @@ const Screens = (() => {
   async function startRun(cfg) {
     let ids = null;
     if (cfg.mode === 'abyss') {
-      const n = Store.filter({ subjects: cfg.subjects, exams: cfg.exams, types: cfg.types }).filter(q => cfg.types.includes('open') || q.type !== 'open').length;
+      const n = Store.filter({ subjects: cfg.subjects, exams: cfg.exams, types: cfg.types, starOnly: cfg.starOnly }).filter(q => cfg.types.includes('open') || q.type !== 'open').length;
       if (!n) { U.toast('沒有符合條件的題目，請放寬篩選'); return; }
     } else {
       ids = buildQueue(cfg);
@@ -138,6 +138,25 @@ const Screens = (() => {
 
   function chipGroup(list, selected, multi = true) {
     return list.map(([v, l]) => `<span class="chip ${selected.includes(v) ? 'on' : ''}" data-v="${v}">${l}</span>`).join('');
+  }
+  /* 「★ 只出星號部位的題目」開關（自由遠征、深淵遠征） */
+  function bindStar(state, upd) {
+    const c = U.$('#fstar .chip'); if (!c) return;
+    c.onclick = () => {
+      state.starOnly = !state.starOnly; c.classList.toggle('on', state.starOnly); SFX.play('click'); upd();
+      if (state.starOnly && !(typeof LEARN_UI !== 'undefined' && LEARN_UI.starredQids().size)) U.toast('還沒有加星號的部位：到學習模式的圖解點名稱旁的 ☆ 加星號', 4000);
+    };
+  }
+  /* 題池是 0、但選的題本其實有別的題型（例如眼解剖實驗跑台題都是填答）：在題數說明後面提示，並給一顆「一鍵勾選」 */
+  function typeHint(cntEl, base, state, chipSel, upd) {
+    const all = Store.filter(Object.assign({}, base, { types: TYPES.map(t => t[0]) }));
+    const miss = TYPES.filter(([t]) => !state.types.includes(t) && all.some(q => q.type === t));
+    if (!miss.length) return;
+    const names = miss.map(([, n]) => `「${n}」`).join('、');
+    const b = U.h(`<button class="px-btn small gold" style="margin-left:6px">勾選${names}</button>`);
+    cntEl.appendChild(U.h(`<span class="small-t" style="display:block;color:var(--text)">這些題本的題目是${names}題，題型要勾選才會出題。</span>`));
+    b.onclick = () => { miss.forEach(([t]) => { state.types.push(t); const c = U.$(`${chipSel} .chip[data-v="${t}"]`); if (c) c.classList.add('on'); }); SFX.play('click'); upd(); };
+    cntEl.lastChild.appendChild(b);
   }
   function bindChips(root, sel, state, key, multi = true, onChange) {
     U.$$(sel + ' .chip', root).forEach(c => c.onclick = () => {
@@ -451,6 +470,7 @@ const Screens = (() => {
         <div class="frow"><label>科目</label><span id="fsj">${chipGroup(MAIN_SUBJ.map(s => [s, C.SUBJECTS[s].name]), state.subjects)}</span></div>
         <div class="frow"><label>題本</label><span id="fy"></span></div>
         <div class="frow"><label>題型</label><span id="ft">${chipGroup(TYPES, state.types)}</span></div>
+        <div class="frow"><label>星號</label><span id="fstar"><span class="chip ${state.starOnly ? 'on' : ''}" data-v="star">★ 只出星號部位的題目</span></span><span class="small-t dim" style="margin-left:6px">學習模式已加星號 ${typeof LEARN_UI !== 'undefined' ? LEARN_UI.starredTermCount() : 0} 個部位</span></div>
         <div class="frow"><label>狀態</label><span id="fs">${chipGroup(STATUS, [state.status], false)}</span></div>
         <div class="frow"><label>題數</label><span id="fc">${chipGroup([['10', '10'], ['15', '15'], ['20', '20'], ['30', '30'], ['50', '50'], ['9999', '全部']], [state.count], false)}</span>
           <input class="px-in" id="fcn" type="number" min="3" max="500" placeholder="自訂" style="width:90px"></div>
@@ -458,11 +478,12 @@ const Screens = (() => {
       <p id="cnt" class="gold-t"></p>
       <p class="dim small-t">提示：題數越多，樓層越深、首領越強，獎勵也越多。題本不選＝全部。沒有標準答案的填答／非選題採「揭曉後自評」。</p>
       <div class="row"><button class="px-btn gold big" id="go">出發遠征！</button></div></div>`;
-    const upd = () => { const n = Store.filter(state).filter(q => state.types.includes('open') || q.type !== 'open').length; U.$('#cnt').textContent = `符合條件：${n} 題（將出 ${Math.min(n, Number(state.count))} 題）`; };
+    const upd = () => { const n = Store.filter(state).filter(q => state.types.includes('open') || q.type !== 'open').length; U.$('#cnt').textContent = `符合條件：${n} 題（將出 ${Math.min(n, Number(state.count))} 題）`; if (!n) typeHint(U.$('#cnt'), state, state, '#ft', upd); };
     const drawSets = setPicker(U.$('#fy'), state, upd);
     bindChips(scr(), '#fsj', state, 'subjects', true, () => { drawSets(); upd(); });
     drawSets();
     bindChips(scr(), '#ft', state, 'types', true, upd);
+    bindStar(state, upd);
     bindChips(scr(), '#fs', state, 'status', false, upd);
     bindChips(scr(), '#fc', state, 'count', false, () => { U.$('#fcn').value = ''; upd(); });
     U.$('#fcn').oninput = e => { if (e.target.value) { state.count = String(U.clamp(Number(e.target.value), 1, 999)); U.$$('#fc .chip').forEach(c => c.classList.remove('on')); upd(); } };
@@ -859,7 +880,7 @@ const Screens = (() => {
   function abyss() {
     const p = P(), A = p.abyss;
     const last = p.abyssCfg || {};
-    const state = { subjects: (last.subjects || MAIN_SUBJ.slice()).filter(x => C.SUBJECTS[x]), exams: (last.exams || []).filter(id => Store.EX[id]), types: last.types || ['single', 'multi', 'fill'], pref: last.pref || 'rand', diff: Math.min(last.diff ?? A.maxDiff, A.maxDiff) };
+    const state = { subjects: (last.subjects || MAIN_SUBJ.slice()).filter(x => C.SUBJECTS[x]), exams: (last.exams || []).filter(id => Store.EX[id]), types: last.types || ['single', 'multi', 'fill'], pref: last.pref2 ? last.pref : 'smart', starOnly: !!last.starOnly, diff: Math.min(last.diff ?? A.maxDiff, A.maxDiff) };
     // 有選題本時，只有這些題本所屬的科目會登場（首領也只出這些科目）
     const effSubj = () => state.exams.length ? state.subjects.filter(x => state.exams.some(id => Store.EX[id].subj === x)) : state.subjects;
     scr().innerHTML = `<div class="abyss-grid">
@@ -869,7 +890,8 @@ const Screens = (() => {
           <div class="frow"><label>科目</label><span id="fsj">${chipGroup(MAIN_SUBJ.map(x => [x, C.SUBJECTS[x].name]), state.subjects)}</span></div>
           <div class="frow"><label>範圍</label><span id="fy"></span></div>
           <div class="frow"><label>題型</label><span id="ft">${chipGroup(TYPES, state.types)}</span></div>
-          <div class="frow"><label>出題</label><span id="fp">${chipGroup([['rand', '隨機'], ['new', '未作答優先'], ['wrong', '錯題優先']], [state.pref], false)}</span></div>
+          <div class="frow"><label>星號</label><span id="fstar"><span class="chip ${state.starOnly ? 'on' : ''}" data-v="star">★ 只出星號部位的題目</span></span><span class="small-t dim" style="margin-left:6px">學習模式已加星號 ${typeof LEARN_UI !== 'undefined' ? LEARN_UI.starredTermCount() : 0} 個部位</span></div>
+          <div class="frow"><label>出題</label><span id="fp">${chipGroup([['smart', '未作答＋錯題優先'], ['rand', '隨機'], ['new', '未作答優先'], ['wrong', '錯題優先']], [state.pref], false)}</span></div>
         </div>
         <p id="cnt" class="gold-t small-t"></p>
         <h3 class="mt">試煉等級（效果累加）</h3>
@@ -901,12 +923,14 @@ const Screens = (() => {
       U.$('#bl').innerHTML = effSubj().map(x => `<div class="small-t mb"><b style="color:${C.SUBJECTS[x].color}">${C.SUBJECTS[x].name}</b>：${C.themeOf(x) === 'mix' ? '<span class="dim">綜合主題：首領從所有主題隨機登場</span>' : C.BOSS_DEFS[C.themeOf(x)].map((b, i) => `${i + 1}章 ${b.name}<span class="tag ng">${C.MECHS[b.mech].name}</span>`).join(' ')}</div>`).join('') || '<span class="dim">請選擇科目</span>';
     };
     const upd = () => {
-      const n = Store.filter({ subjects: state.subjects, exams: state.exams, years: state.years, types: state.types }).filter(q => state.types.includes('open') || q.type !== 'open').length;
+      const n = Store.filter({ subjects: state.subjects, exams: state.exams, years: state.years, types: state.types, starOnly: state.starOnly }).filter(q => state.types.includes('open') || q.type !== 'open').length;
       U.$('#cnt').textContent = `題池：${n} 題${state.exams.length ? `（已選 ${state.exams.length} 本題本）` : '（範圍不選＝所選科目全部題本）'}。冒險中會持續抽題、不限題數；首領戰只出該首領科目的題目。`; drawBoss();
+      if (!n) typeHint(U.$('#cnt'), { subjects: state.subjects, exams: state.exams, years: state.years, starOnly: state.starOnly }, state, '#ft', upd);
     };
     const drawSets = setPicker(U.$('#fy'), state, upd);
     bindChips(scr(), '#fsj', state, 'subjects', true, () => { drawSets(); upd(); });
     bindChips(scr(), '#ft', state, 'types', true, upd);
+    bindStar(state, upd);
     bindChips(scr(), '#fp', state, 'pref', false);
     drawDiffs(); upd();
     U.$('#chcls').onclick = () => App.go('classes');
@@ -914,9 +938,9 @@ const Screens = (() => {
       if (!state.subjects.length || !state.types.length) { U.toast('科目、題型至少各選一項'); return; }
       const subs = effSubj();
       if (!subs.length) { U.toast('選的題本不在已選的科目裡'); return; }
-      p.abyssCfg = { subjects: state.subjects.slice(), exams: state.exams.slice(), types: state.types.slice(), pref: state.pref, diff: state.diff }; Store.saveProfile();
+      p.abyssCfg = { subjects: state.subjects.slice(), exams: state.exams.slice(), types: state.types.slice(), pref: state.pref, pref2: true, diff: state.diff, starOnly: !!state.starOnly }; Store.saveProfile();
       const names = (state.subjects.length === MAIN_SUBJ.length && MAIN_SUBJ.length > 1 && !state.exams.length ? '全科' : subs.map(x => C.SUBJECTS[x].name).join('・')) + (state.exams.length ? `・${state.exams.length} 本` : '');
-      startRun({ mode: 'abyss', title: `深淵遠征（${names}）`, subjects: subs, exams: state.exams.slice(), years: (state.years || []).slice(), types: state.types.slice(), pref: state.pref, diff: state.diff });
+      startRun({ mode: 'abyss', title: `深淵遠征（${names}）`, subjects: subs, exams: state.exams.slice(), years: (state.years || []).slice(), types: state.types.slice(), pref: state.pref, diff: state.diff, starOnly: !!state.starOnly });
     };
   }
 
