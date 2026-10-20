@@ -1212,7 +1212,7 @@ const LEARN_UI = (() => {
       const show = i => {
         pins.forEach((b, j) => b.classList.toggle('on', j === i)); U.$$('.dg-list li', side).forEach((li, j) => li.classList.toggle('on', j === i));
         const english = pts[i].name.match(/[A-Za-z].*$/)?.[0];
-        U.$('#dgInfo').innerHTML = `<div class="knowledge-term-heading"><b class="gold-t">${i + 1}. ${U.esc(pts[i].name)}</b>${pointStar(pts[i])}${english && 'speechSynthesis' in window ? `<button type="button" class="dg-pronounce" aria-label="播放 ${U.esc(english)} 發音" title="播放英文發音">🔊</button>` : ''}</div>${pts[i].desc ? md(pts[i].desc) : ''}`;
+        U.$('#dgInfo').innerHTML = `<div class="knowledge-term-heading"><b class="gold-t">${i + 1}. ${U.esc(pts[i].name)}</b>${pointStar(pts[i])}${english ? `<button type="button" class="dg-pronounce" aria-label="播放 ${U.esc(english)} 發音" title="播放英文發音">🔊</button>` : ''}</div>${pts[i].desc ? md(pts[i].desc) : ''}`;
         const voice = side.querySelector('.dg-pronounce');
         if (voice) voice.onclick = () => { if (typeof GLOSS !== 'undefined') GLOSS.speak(english); };
         SFX.play('click');
