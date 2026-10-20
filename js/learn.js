@@ -78,7 +78,7 @@ const LEARN_UI = (() => {
   }
   /* 遠征「只出星號部位相關題」：加星號的題目本身＋加星號的圖解名稱對應到的題庫題
      （答案／可接受答案的中文或英文和名稱相同，或題目標籤剛好是這個中文名稱；只找同一科目）。 */
-  function starredQids() {
+  function starredQids(mode) {   // mode 'exact'：只要答案就是這個部位的題；其他：連標籤相同的相關題也算
     const out = new Set(), norm = x => String(x || '').normalize('NFKC').toLowerCase().replace(/[\s\-‐–—'’·・.,，、()（）]/g, '');
     const want = {};   // subject → Set(名稱)
     Object.values(D.starred || {}).forEach(r => {
@@ -92,7 +92,7 @@ const LEARN_UI = (() => {
     const subs = Object.keys(want); if (!subs.length) return out;
     window.QB.questions.forEach(q => {
       const set = want[(Store.EX[q.exam] || {}).subj]; if (!set) return;
-      const names = [q.ans, ...(q.accept || [])].flatMap(a => String(a || '').split('/')).concat(String(q.tag || '').split('、')).map(norm);
+      const names = [q.ans, ...(q.accept || [])].flatMap(a => String(a || '').split('/')).concat(mode === 'exact' ? [] : String(q.tag || '').split('、')).map(norm);
       if (names.some(x => x && set.has(x))) out.add(q.id);
     });
     return out;
