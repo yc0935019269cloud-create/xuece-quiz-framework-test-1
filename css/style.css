@@ -1064,7 +1064,9 @@ details.ltree.d0 > summary .ltree-n { color: var(--gold); font-size: 18px; }
 .dg-wrap img { display: block; max-width: 100%; max-height: 62vh; }
 .dg-wrap.small img { max-height: 280px; }
 .dg-wrap.setting { cursor: crosshair; outline: 3px dashed var(--gold); }
-.dg-pin { position: absolute; transform: translate(-50%, -50%); width: var(--pin, 26px); height: var(--pin, 26px); border-radius: 50%; border: 2px solid #fff; background: #2c5fa8; color: #fff; font: inherit; font-size: calc(var(--pin, 26px) * .5); line-height: calc(var(--pin, 26px) - 6px); padding: 0; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.6); z-index: 2; }
+.dg-pin { position: absolute; transform: translate(-50%, -50%); width: var(--pin, 18px); height: var(--pin, 18px); border-radius: 50%; border: 1.5px solid #fff; background: #2c5fa8; color: #fff; font: inherit; font-size: calc(var(--pin, 18px) * .62); line-height: calc(var(--pin, 18px) - 3px); padding: 0; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,.6); z-index: 2; }
+.dg-pin::before { content: ''; position: absolute; inset: calc(min(0px, (26px - var(--pin, 18px)) / -2)); border-radius: 50%; } /* 圓圈小但手指仍有約 26px 可點 */
+.dg-pin-demo { display: inline-block; width: var(--pin); height: var(--pin); border-radius: 50%; border: 1.5px solid #fff; background: #2c5fa8; color: #fff; font-size: calc(var(--pin) * .62); line-height: calc(var(--pin) - 3px); text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.6); }
 .dg-pin:hover, .dg-pin.on { background: var(--gold); color: #120c18; transform: translate(-50%, -50%) scale(1.2); }
 .dg-pin.good { background: #2f8f3b; transform: translate(-50%, -50%) scale(1.25); }
 .dg-pin.bad { background: #a8323a; animation: lcShake .3s steps(4); }
