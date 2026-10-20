@@ -7,7 +7,8 @@
     ['cloudMini', '雲端同步／登入'],
     ['calcMini', '科學計算機'],
     ['padMini', '計算紙'],
-    ['btnSound', '音樂與音量']
+    ['btnSound', '音樂與音量'],
+    ['setMini', '設定與存檔']
   ];
   let btn, menu;
   const PANELS = { calcMini: 'calcPanel', padMini: 'padPanel', btnSound: 'volPop', aiMini: 'aiPanel' };
@@ -44,6 +45,11 @@
     if (!document.getElementById('padMini')) {
       const p = document.createElement('button'); p.className = 'px-btn small'; p.id = 'padMini'; p.textContent = '📝'; p.title = '計算紙';
       p.onclick = () => PAD.toggle(); res.appendChild(p);
+    }
+    // 設定按鈕：和頂部 ⌂ 一樣先保存進行中的遠征（之後可在營地「繼續遠征」接著打）
+    if (!document.getElementById('setMini')) {
+      const g = document.createElement('button'); g.className = 'px-btn small'; g.id = 'setMini'; g.textContent = '⚙'; g.title = '設定與存檔';
+      g.onclick = () => { if (window.CUR) window.CUR.save(); window.CUR = null; App.go('settings'); }; res.appendChild(g);
     }
     btn = U.h('<button class="px-btn small" id="toolBtn" aria-label="多功能">☰</button>');
     menu = U.h('<div id="toolMenu" class="panel" hidden></div>');
