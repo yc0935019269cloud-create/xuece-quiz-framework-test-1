@@ -394,3 +394,4 @@
 - 腳本 `tools/eyelab-qa/bank_tree.py`（依 `content/learn/eye_anat/*.json` 的 path、order、課名對應）。**重跑專案外圖鑑產生器（`E:\NEWTEST\eye_work\atlas\build_all.py`）會把跑台題本 path 改回舊的「跑台看圖題」，之後要再跑一次 bank_tree.py**，再 `python tools/build.py --strict`。
 - 題池 0 題的題型提示（v137）：眼解剖實驗跑台題都是「填答」，題型只勾單選時題池會是 0。`js/screens.js` 的 `typeHint`：深淵遠征與自由遠征在題池為 0、但所選題本有未勾的題型時，顯示「這些題本的題目是「填答」題…」與一鍵「勾選「填答」」按鈕。
 - 遠征「★ 只出星號部位的題目」（v138）：自由遠征與深淵遠征的「星號」開關。`LEARN_UI.starredQids()` 把學習模式加星號的圖解名稱，對到同一科目題庫裡答案／可接受答案（中文或英文，`/` 分開）或標籤剛好是該名稱的題目，再加上直接加星號的題目；`Store.filter({starOnly:true})` 以這份清單篩選，可和題本範圍、題型同時使用（交集）。深淵在冒險中每次抽題也套用（`run.js` 傳 `starOnly`），設定記在 `profile.abyssCfg.starOnly`；首領戰仍用原本的首領題池。
+- 深淵遠征「出題」預設改成「未作答＋錯題優先」（`pref: 'smart'`，v139）：`run.js` 的 `drawQuestion` 先從沒作答過＋錯題（錯題本未畢業或上次答錯）裡隨機抽，單題來看錯題機率約為未作答的 3 倍；兩種都抽完才出寫對過的題。「隨機」仍是另一個選項。舊存檔的 `abyssCfg` 沒有 `pref2` 時一律改用新預設（使用者要求），之後選過就記住。

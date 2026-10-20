@@ -880,7 +880,7 @@ const Screens = (() => {
   function abyss() {
     const p = P(), A = p.abyss;
     const last = p.abyssCfg || {};
-    const state = { subjects: (last.subjects || MAIN_SUBJ.slice()).filter(x => C.SUBJECTS[x]), exams: (last.exams || []).filter(id => Store.EX[id]), types: last.types || ['single', 'multi', 'fill'], pref: last.pref || 'rand', starOnly: !!last.starOnly, diff: Math.min(last.diff ?? A.maxDiff, A.maxDiff) };
+    const state = { subjects: (last.subjects || MAIN_SUBJ.slice()).filter(x => C.SUBJECTS[x]), exams: (last.exams || []).filter(id => Store.EX[id]), types: last.types || ['single', 'multi', 'fill'], pref: last.pref2 ? last.pref : 'smart', starOnly: !!last.starOnly, diff: Math.min(last.diff ?? A.maxDiff, A.maxDiff) };
     // 有選題本時，只有這些題本所屬的科目會登場（首領也只出這些科目）
     const effSubj = () => state.exams.length ? state.subjects.filter(x => state.exams.some(id => Store.EX[id].subj === x)) : state.subjects;
     scr().innerHTML = `<div class="abyss-grid">
@@ -891,7 +891,7 @@ const Screens = (() => {
           <div class="frow"><label>範圍</label><span id="fy"></span></div>
           <div class="frow"><label>題型</label><span id="ft">${chipGroup(TYPES, state.types)}</span></div>
           <div class="frow"><label>星號</label><span id="fstar"><span class="chip ${state.starOnly ? 'on' : ''}" data-v="star">★ 只出星號部位的題目</span></span><span class="small-t dim" style="margin-left:6px">學習模式已加星號 ${typeof LEARN_UI !== 'undefined' ? LEARN_UI.starredTermCount() : 0} 個部位</span></div>
-          <div class="frow"><label>出題</label><span id="fp">${chipGroup([['rand', '隨機'], ['new', '未作答優先'], ['wrong', '錯題優先']], [state.pref], false)}</span></div>
+          <div class="frow"><label>出題</label><span id="fp">${chipGroup([['smart', '未作答＋錯題優先'], ['rand', '隨機'], ['new', '未作答優先'], ['wrong', '錯題優先']], [state.pref], false)}</span></div>
         </div>
         <p id="cnt" class="gold-t small-t"></p>
         <h3 class="mt">試煉等級（效果累加）</h3>
@@ -938,7 +938,7 @@ const Screens = (() => {
       if (!state.subjects.length || !state.types.length) { U.toast('科目、題型至少各選一項'); return; }
       const subs = effSubj();
       if (!subs.length) { U.toast('選的題本不在已選的科目裡'); return; }
-      p.abyssCfg = { subjects: state.subjects.slice(), exams: state.exams.slice(), types: state.types.slice(), pref: state.pref, diff: state.diff, starOnly: !!state.starOnly }; Store.saveProfile();
+      p.abyssCfg = { subjects: state.subjects.slice(), exams: state.exams.slice(), types: state.types.slice(), pref: state.pref, pref2: true, diff: state.diff, starOnly: !!state.starOnly }; Store.saveProfile();
       const names = (state.subjects.length === MAIN_SUBJ.length && MAIN_SUBJ.length > 1 && !state.exams.length ? '全科' : subs.map(x => C.SUBJECTS[x].name).join('・')) + (state.exams.length ? `・${state.exams.length} 本` : '');
       startRun({ mode: 'abyss', title: `深淵遠征（${names}）`, subjects: subs, exams: state.exams.slice(), years: (state.years || []).slice(), types: state.types.slice(), pref: state.pref, diff: state.diff, starOnly: !!state.starOnly });
     };
