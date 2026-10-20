@@ -112,12 +112,20 @@ const Screens = (() => {
     if (!pref || pref === 'rand') return U.shuffle(units);
     const isWrong = id => (Store.wrong[id] && !Store.wrong[id].done) || (Store.qs[id]?.a && !Store.qs[id].last);
     const isNew = id => !Store.qs[id]?.a;
-    return units.map(u => {
+    // smart：權重見 Store.smartWeight（錯題 3、沒答過 1、部位已在別題答過 0.3、寫對過 0＝排最後）；
+    // 同一部位在這一場裡也只讓第一題保持原權重，其餘同部位的題往後排，避免同一個構造連續出現
+    const seen = pref === 'smart' ? Store.partsAnswered() : null;
+    const keyed = units.map(u => {
       const id = u[0], w = isWrong(id), n = isNew(id);
-      const tier = pref === 'smart' ? (w || n ? 0 : 1) : pref === 'new' ? (n ? 0 : 1) : (w ? 0 : 1);
-      const weight = pref === 'smart' && w ? 3 : 1;
-      return [u, tier, -Math.log(Math.random() || 1e-9) / weight];
-    }).sort((a, b) => a[1] - b[1] || a[2] - b[2]).map(x => x[0]);
+      const sw = pref === 'smart' ? Store.smartWeight(id, seen) : 1;
+      const tier = pref === 'smart' ? (sw > 0 ? 0 : 1) : pref === 'new' ? (n ? 0 : 1) : (w ? 0 : 1);
+      return [u, tier, -Math.log(Math.random() || 1e-9) / (sw || 1), Store.partKey(Store.Q[id])];
+    }).sort((a, b) => a[1] - b[1] || a[2] - b[2]);
+    if (pref !== 'smart') return keyed.map(x => x[0]);
+    const first = [], later = [], used = new Set();
+    keyed.forEach(x => { if (x[1] === 0 && used.has(x[3])) later.push(x); else { used.add(x[3]); first.push(x); } });
+    const rest = first.filter(x => x[1] === 1);
+    return first.filter(x => x[1] === 0).concat(later, rest).map(x => x[0]);
   }
   function buildQueue(cfg) {
     let pool = cfg.ids ? Store.filter({ ids: cfg.ids, types: cfg.types }) : Store.filter(cfg);
