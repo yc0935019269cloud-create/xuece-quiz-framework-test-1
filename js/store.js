@@ -148,7 +148,7 @@ const Store = (() => {
     if (opt.subjects && opt.subjects.length) { const s = new Set(opt.subjects); list = list.filter(q => s.has(EX[q.exam].subj)); }
     if (opt.years && opt.years.length) { const s = new Set(opt.years.map(Number)); list = list.filter(q => s.has(examYear(EX[q.exam]))); }
     if (opt.types && opt.types.length) { const s = new Set(opt.types); list = list.filter(q => s.has(q.type)); }
-    if (opt.starOnly && typeof LEARN_UI !== 'undefined') { const s = LEARN_UI.starredQids(); list = list.filter(q => s.has(q.id)); }   // 只出學習模式加星號的部位／題目
+    if (opt.starOnly && typeof LEARN_UI !== 'undefined') { const s = LEARN_UI.starredQids(opt.starOnly === 'exact' ? 'exact' : 'related'); list = list.filter(q => s.has(q.id)); }   // 只出學習模式加星號的部位／題目
     if (opt.favorites === 'saved' || opt.favorites === 'unfiled' || opt.favoriteFolder) list = list.filter(q => {
       const item = favorites.items[q.id];
       return item && (!opt.favoriteFolder || item.folders.includes(opt.favoriteFolder)) && (opt.favorites !== 'unfiled' || !item.folders.length);
