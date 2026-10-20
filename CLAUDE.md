@@ -392,3 +392,4 @@
 
 - 遠征／題庫／冒險地圖的題本樹由 `set.path` 與 `set.order` 決定。眼解剖實驗 117 本已改成和學習模式目錄同一套：`實驗課（依老師講義）→ 視覺路徑／骨質眼窩／血液供應 → 各課`、`實驗手冊名詞（考試範圍）→ 第 N 頁… → 各課`、`其他 →（舊課程題本、實驗手冊圖鑑、國考題）`。只改 path／order，題本 id 與題目不動，進度不受影響。
 - 腳本 `tools/eyelab-qa/bank_tree.py`（依 `content/learn/eye_anat/*.json` 的 path、order、課名對應）。**重跑專案外圖鑑產生器（`E:\NEWTEST\eye_work\atlas\build_all.py`）會把跑台題本 path 改回舊的「跑台看圖題」，之後要再跑一次 bank_tree.py**，再 `python tools/build.py --strict`。
+- 遠征「★ 只出星號部位的題目」（v138）：自由遠征與深淵遠征的「星號」開關。`LEARN_UI.starredQids()` 把學習模式加星號的圖解名稱，對到同一科目題庫裡答案／可接受答案（中文或英文，`/` 分開）或標籤剛好是該名稱的題目，再加上直接加星號的題目；`Store.filter({starOnly:true})` 以這份清單篩選，可和題本範圍、題型同時使用（交集）。深淵在冒險中每次抽題也套用（`run.js` 傳 `starOnly`），設定記在 `profile.abyssCfg.starOnly`；首領戰仍用原本的首領題池。
