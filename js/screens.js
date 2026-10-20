@@ -1153,7 +1153,7 @@ const Screens = (() => {
     U.$('#s1').onchange = e => { st.autoExplain = e.target.checked; Store.saveSettings(); };
     U.$('#s2').onchange = e => { st.confirmSingle = e.target.checked; Store.saveSettings(); };
     const pinIn = U.$('#sPin'), pinDemo = U.$('#sPinDemo');
-    const setPin = v => { st.pinSize = v; pinIn.value = v; pinDemo.style.setProperty('--pin', v + 'px'); Store.saveSettings(); };
+    const setPin = v => { st.pinSize = v; pinIn.value = v; pinDemo.style.setProperty('--pin', v + 'px'); document.documentElement.style.setProperty('--pin-base', v + 'px'); Store.saveSettings(); };
     pinIn.oninput = e => setPin(+e.target.value);
     U.$('#sPinReset').onclick = () => { setPin(18); SFX.play('click'); };
     U.$('#volbox').appendChild(volumeControls());
