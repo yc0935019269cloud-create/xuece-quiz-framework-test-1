@@ -1159,7 +1159,7 @@ const LEARN_UI = (() => {
     const spread = () => {
       const img = wrap.querySelector('img'), r = img && img.getBoundingClientRect();
       if (!r || !r.width) return;
-      const pin = r.width < 420 ? 15 : 18, P = []; // 圓圈縮小，少遮住標本；點擊範圍另由 ::before 放大
+      const base = Store.settings.pinSize || 18, pin = r.width < 420 ? Math.max(8, Math.round(base * .83)) : base, P = []; // 大小可在「設定」調整；點擊範圍另由 ::before 放大
       wrap.style.setProperty('--pin', pin + 'px');
       pins.forEach((b, i) => { if (pts[i].x != null && !isNaN(pts[i].x)) P.push({ b, ox: pts[i].x / 100 * r.width, oy: pts[i].y / 100 * r.height, x: pts[i].x / 100 * r.width, y: pts[i].y / 100 * r.height }); });
       for (let it = 0; it < 40; it++) {

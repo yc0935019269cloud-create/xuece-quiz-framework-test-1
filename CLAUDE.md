@@ -377,3 +377,6 @@
 - 標本60的鮑氏環往後移至(23.81%,58.43%)，與梅氏環(19.3%,40.9%)拉開；兩個圖解、總圖、課內題、跑台題同步，4張註記圖加-baum-v2檔名避快取。底圖不改，來源座標E:\NEWTEST\eye_work\vp\bases.py已更新。
 - Edge file://桌機與390px手機86次切圖、522項通過；原星號72項回歸通過，strict build與JS語法通過。獨立context已還原localStorage；發音只驗證speechSynthesis事件，未實機iPad或人耳評估。
 - 接手與重跑方式：tools/eyelab-qa/REVIEW_ATLAS.md；小範圍更新腳本update_review_atlas.py（不要重跑整套圖鑑產生器覆寫content）；報告與截圖output/playwright/review-atlas-*。
+## 圖解標記大小可調（2026-10-20，v132）
+
+- 學習圖解（`renderDiagram` 的 `.dg-pin`）預設改小：電腦 18px、手機（圖寬 < 420）自動 ×0.83。設定頁「學習圖解的標記圓圈大小」滑桿 8～26px，存 `Store.settings.pinSize`（跟著存檔／雲端），旁邊有即時預覽與「預設」。`.dg-pin::before` 把點擊範圍補到約 26px，圓圈再小也好點。

@@ -1137,6 +1137,10 @@ const Screens = (() => {
     scr().innerHTML = `<div class="panel" style="max-width:720px;margin:0 auto"><h2>設定與存檔</h2>
       <label class="row"><input type="checkbox" id="s1" ${st.autoExplain ? 'checked' : ''}> 答對後也自動展開詳解</label>
       <label class="row mt"><input type="checkbox" id="s2" ${st.confirmSingle ? 'checked' : ''}> 單選題需按「確認作答」才送出（避免誤觸）</label>
+      <div class="row mt" style="align-items:center;gap:10px;flex-wrap:wrap">學習圖解的標記圓圈大小
+        <input type="range" id="sPin" min="8" max="26" step="1" value="${st.pinSize || 18}" style="flex:1;min-width:140px">
+        <span class="dg-pin-demo" id="sPinDemo" style="--pin:${st.pinSize || 18}px">3</span><button class="px-btn small" id="sPinReset">預設</button></div>
+      <p class="dim small-t" style="margin-top:2px">圓圈太大擋到構造就調小；手機上會再自動小一點。點擊範圍不受影響。</p>
       <hr class="px"><h3>音量</h3><div id="volbox"></div>
       <hr class="px"><h3 id="musicbox">背景音樂</h3><div id="musicset"></div>
       <hr class="px">
@@ -1148,6 +1152,10 @@ const Screens = (() => {
       <hr class="px"><p class="small-t dim">素材：Kenney Tiny Dungeon（CC0）、俐方體11號 Cubic 11（OFL）、背景音樂含 OpenGameArt 上的 CC0 鋼琴／吉他曲，以及使用者自行提供的歌曲（僅供個人使用，清單見 assets/music/CREDITS.txt）。題庫：${U.esc(APP_TITLE)}（${window.QB.questions.length} 題，建置於 ${window.QB.built || '—'}）。</p></div>`;
     U.$('#s1').onchange = e => { st.autoExplain = e.target.checked; Store.saveSettings(); };
     U.$('#s2').onchange = e => { st.confirmSingle = e.target.checked; Store.saveSettings(); };
+    const pinIn = U.$('#sPin'), pinDemo = U.$('#sPinDemo');
+    const setPin = v => { st.pinSize = v; pinIn.value = v; pinDemo.style.setProperty('--pin', v + 'px'); Store.saveSettings(); };
+    pinIn.oninput = e => setPin(+e.target.value);
+    U.$('#sPinReset').onclick = () => { setPin(18); SFX.play('click'); };
     U.$('#volbox').appendChild(volumeControls());
     musicSettings(U.$('#musicset'));
     if (typeof CLOUD !== 'undefined') CLOUD.panel(U.$('#cloudBox'));
