@@ -133,6 +133,28 @@ const QV = (() => {
       if (q.type === 'multi') ans.insertAdjacentHTML('afterbegin', '<div class="dim small-t" style="flex-basis:100%;text-align:center">多選題：可選多個，選好後按「確認作答」</div>');
       if (q.choices && !q.tf) ans.classList.add('txt');
     } else if (q.type === 'fill' && q.accept) {
+      /* 看圖寫名稱（答案都寫成「中文 / English」）：分成中文、英文兩格，兩格都對才算對 */
+      const pairs = q.accept.map(a => String(a).split('/').map(x => x.trim())).filter(x => x.length === 2 && x[0] && x[1]);
+      if (pairs.length && pairs.length === q.accept.length) {
+        const wrap2 = U.h(`<div class="col" style="width:100%;align-items:center;gap:6px">
+          <input class="px-in fill-in" data-part="zh" style="width:min(320px,100%);font-size:18px" placeholder="中文名稱" autocomplete="off" lang="zh-Hant">
+          <input class="px-in fill-in" data-part="en" style="width:min(320px,100%);font-size:18px" placeholder="English name" autocomplete="off" autocapitalize="off" spellcheck="false" lang="en">
+          <button class="px-btn gold">送出 ⏎</button></div>`);
+        const [zi, ei] = wrap2.querySelectorAll('input'), sb2 = wrap2.querySelector('button');
+        const send2 = () => {
+          if (locked) return;
+          const z = zi.value.trim(), e = ei.value.trim();
+          if (!z || !e) { U.toast(!z ? '請寫中文名稱' : '請寫英文名稱'); (!z ? zi : ei).focus(); return; }
+          const ok = pairs.some(([pz, pe]) => U.sameAns(z, pz) && U.sameAns(e, pe));
+          zi.disabled = ei.disabled = sb2.disabled = true;
+          finishFill(ok, `${z} / ${e}`);
+        };
+        sb2.onclick = send2;
+        zi.onkeydown = ev => { if (ev.key === 'Enter') { ev.preventDefault(); ev.stopPropagation(); ei.focus(); } };
+        ei.onkeydown = ev => { if (ev.key === 'Enter') { ev.preventDefault(); ev.stopPropagation(); send2(); } };
+        ans.appendChild(wrap2);
+        setTimeout(() => zi.focus(), 60);
+      } else {
       /* 有標準答案的填答題：自動批改 */
       const wrap = U.h(`<div class="col" style="width:100%;align-items:center"><div class="row" style="justify-content:center">
         <input class="px-in fill-in" style="width:min(320px,100%);font-size:18px" placeholder="輸入答案後按 Enter" autocomplete="off"><button class="px-btn gold">送出 ⏎</button></div></div>`);
@@ -148,6 +170,7 @@ const QV = (() => {
       inp.onkeydown = e => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); send(); } };
       ans.appendChild(wrap);
       setTimeout(() => inp.focus(), 60);
+      }
     } else {
       const wrap = U.h(`<div class="col" style="width:100%;align-items:center">
         <div class="dim small-t">${q.type === 'fill' ? '填答題：先在紙上或下方寫出答案，再揭曉自評。' : '非選擇題：先寫下作答要點，再對照詳解自評。'}</div>
