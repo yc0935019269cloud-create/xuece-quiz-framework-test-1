@@ -67,6 +67,7 @@ const App = (() => {
     try { await IMP.load(); } catch (e) { console.warn('導入素材載入失敗', e); }
     if (!window.QB.questions.length && !(window.LEARN.packs || []).length) U.toast('題庫還是空的：按營地的「📥 導入素材」，或把檔案放進 content/ 再執行 python tools/build.py', 7000);
     Store.onTop(refreshTop);
+    document.documentElement.style.setProperty('--pin-base', (Store.settings.pinSize || 18) + 'px'); // 圖解標記大小（設定頁可調），知識筆記等也套用
     U.$('#btnHome').onclick = () => { if (window.CUR) window.CUR.save(); window.CUR = null; go('hub'); };
     U.$('#btnBack').onclick = () => { if (window.CUR) window.CUR.save(); back(); };
     U.$('#btnSound').onclick = toggleVol;

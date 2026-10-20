@@ -385,3 +385,4 @@
 ## 英文發音按鈕修正（2026-10-20，v134）
 
 - `js/glossary.js` 的 `GLOSS.speak`（圖解 🔊、字源視窗 🔊 共用）：iPhone／iPad 先用 `<audio>` 播線上語音（媒體音量，不受靜音開關影響；speechSynthesis 在 iOS 會被靜音開關消音，cancel 後立即 speak 也常被吞），依序 Google 翻譯語音（translate.googleapis.com，client=gtx）→ 有道 dictvoice → speechSynthesis。其他裝置先用 speechSynthesis（指定英文語音），1.5 秒沒開始或出錯改播線上語音。被下一次點擊打斷的舊請求不會再改播備援；按鈕不再因瀏覽器沒有 speechSynthesis 而隱藏。線上語音需要網路，兩個來源都是非官方端點，可能失效。
+- 圖解標記大小同步到知識筆記（v135）：`main.js` 開機與設定滑桿把 `Store.settings.pinSize` 寫到 `:root` 的 `--pin-base`；`.dg-pin` 沒有 `--pin`（未經 renderDiagram 的 spread）時用 `--pin-base × --pin-k`（手機 .83），所以知識筆記、收藏區等的標記也跟設定一樣大。`.knowledge-pin` 外圈紅框 3→2px。

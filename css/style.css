@@ -1064,8 +1064,8 @@ details.ltree.d0 > summary .ltree-n { color: var(--gold); font-size: 18px; }
 .dg-wrap img { display: block; max-width: 100%; max-height: 62vh; }
 .dg-wrap.small img { max-height: 280px; }
 .dg-wrap.setting { cursor: crosshair; outline: 3px dashed var(--gold); }
-.dg-pin { position: absolute; transform: translate(-50%, -50%); width: var(--pin, 18px); height: var(--pin, 18px); border-radius: 50%; border: 1.5px solid #fff; background: #2c5fa8; color: #fff; font: inherit; font-size: calc(var(--pin, 18px) * .62); line-height: calc(var(--pin, 18px) - 3px); padding: 0; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,.6); z-index: 2; }
-.dg-pin::before { content: ''; position: absolute; inset: calc(min(0px, (26px - var(--pin, 18px)) / -2)); border-radius: 50%; } /* 圓圈小但手指仍有約 26px 可點 */
+.dg-pin { position: absolute; transform: translate(-50%, -50%); width: var(--pin, calc(var(--pin-base, 18px) * var(--pin-k, 1))); height: var(--pin, calc(var(--pin-base, 18px) * var(--pin-k, 1))); border-radius: 50%; border: 1.5px solid #fff; background: #2c5fa8; color: #fff; font: inherit; font-size: calc(var(--pin, calc(var(--pin-base, 18px) * var(--pin-k, 1))) * .62); line-height: calc(var(--pin, calc(var(--pin-base, 18px) * var(--pin-k, 1))) - 3px); padding: 0; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,.6); z-index: 2; }
+.dg-pin::before { content: ''; position: absolute; inset: calc(min(0px, (26px - var(--pin, calc(var(--pin-base, 18px) * var(--pin-k, 1)))) / -2)); border-radius: 50%; } /* 圓圈小但手指仍有約 26px 可點 */
 .dg-pin-demo { display: inline-block; width: var(--pin); height: var(--pin); border-radius: 50%; border: 1.5px solid #fff; background: #2c5fa8; color: #fff; font-size: calc(var(--pin) * .62); line-height: calc(var(--pin) - 3px); text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.6); }
 .dg-pin:hover, .dg-pin.on { background: var(--gold); color: #120c18; transform: translate(-50%, -50%) scale(1.2); }
 .dg-pin.good { background: #2f8f3b; transform: translate(-50%, -50%) scale(1.25); }
@@ -1101,7 +1101,9 @@ details.ltree.d0 > summary .ltree-n { color: var(--gold); font-size: 18px; }
 .knowledge-card .lp-src { overflow-wrap: anywhere; }
 .knowledge-image { max-width: 100%; }
 .knowledge-image img { max-height: 420px; max-width: 100%; }
-.knowledge-pin { background: var(--gold); color: #24190d; box-shadow: 0 0 0 3px #d44836; pointer-events: none; }
+.knowledge-pin { background: var(--gold); color: #24190d; box-shadow: 0 0 0 2px #d44836; pointer-events: none; }
+/* 知識筆記等沒有經過 spread() 的圖解標記：大小跟設定同步（--pin-base 由 App 依 Store.settings.pinSize 設定），手機 ×0.83 */
+@media (max-width: 640px) { :root { --pin-k: .83; } }
 .knowledge-answer { border-top: 2px solid var(--line); margin-top: 12px; padding-top: 12px; }
 @media (max-width: 760px) {
   .knowledge-grid { grid-template-columns: minmax(0, 1fr); }
