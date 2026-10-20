@@ -126,6 +126,20 @@ const Store = (() => {
 
   /* 題目篩選 */
   const examYear = e => { if (e.year != null && e.year !== '') return Number(e.year); for (const x of e.path || []) { const m = /^\s*(\d{2,3})\s*年(國考)?\s*$/.exec(String(x)); if (m) return Number(m[1]); } return null; };
+  /* 「部位」：看圖寫名稱的填答題（答案寫成「中文 / English」）以中文名稱為同一部位，
+     同一部位可能出現在好幾張圖、好幾個題本；其他題目各自算一個。出題權重用：答過的部位權重下降。 */
+  const partNorm = s => String(s || '').normalize('NFKC').toLowerCase().replace(/[\s\-‐–—'’·・.,，、()（）]/g, '');
+  function partKey(q) {
+    if (q && q.type === 'fill' && typeof q.ans === 'string' && q.ans.includes('/')) { const k = partNorm(q.ans.split('/')[0]); if (k) return 'p:' + k; }
+    return 'q:' + (q ? q.id : '');
+  }
+  function partsAnswered() { const s = new Set(); Object.keys(qs).forEach(id => { if (qs[id]?.a && Q[id]) s.add(partKey(Q[id])); }); return s; }
+  /* 「未作答＋錯題優先」的單題權重：錯題 3；沒作答過的題 1，但它的部位已經在別題答過就降成 0.3；寫對過的 0（排在最後） */
+  function smartWeight(id, seen) {
+    if ((wrong[id] && !wrong[id].done) || (qs[id]?.a && !qs[id].last)) return 3;
+    if (!qs[id]?.a) return seen && seen.has(partKey(Q[id])) ? 0.3 : 1;
+    return 0;
+  }
   function filter(opt) {
     // opt: {subjects:[], years:[], exams:[], types:[], status:'all'|'new'|'wrong'|'right'|'unmastered'|'wrongbook', search, ids}
     let list = window.QB.questions;
@@ -238,7 +252,7 @@ const Store = (() => {
   return {
     get profile() { return profile; }, get qs() { return qs; }, get wrong() { return wrong; }, get settings() { return settings; }, get favorites() { return favorites; },
     isFavorite, setFavorite, setFavoriteFolders, createFavoriteFolder, renameFavoriteFolder, deleteFavoriteFolder, favoriteCount,
-    Q, EX, reindex, addClassXp, heroTile, heroSkinId, daily, touchStreak, petName, petHTML, record, status, filter, examStats, addGems, addAccXp, accNeed, upg, petXp, saveProfile, saveWrong, saveRun, loadRun,
+    Q, EX, partKey, partsAnswered, smartWeight, reindex, addClassXp, heroTile, heroSkinId, daily, touchStreak, petName, petHTML, record, status, filter, examStats, addGems, addAccXp, accNeed, upg, petXp, saveProfile, saveWrong, saveRun, loadRun,
     exportAll, importAll, resetAll, saveSettings,
     onTop(fn) { UI_refreshTop = fn; }
   };

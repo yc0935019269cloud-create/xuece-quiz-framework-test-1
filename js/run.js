@@ -162,10 +162,10 @@ class Run {
     }
     const pref = s.cfg.pref || 'rand';
     // 預設：先從「沒作答過＋錯題」裡隨機抽（錯題機率約 3 倍），這兩種都出完才出寫對過的題
+    // 同一部位（同名構造在不同圖）已經答過的，權重降成 0.3，讓完全沒答過的部位先出
     if (pref === 'smart') {
-      const isWrong = q => (Store.wrong[q.id] && !Store.wrong[q.id].done) || (Store.qs[q.id]?.a && !Store.qs[q.id].last);
-      const wr = cands.filter(isWrong), nw = cands.filter(q => !Store.qs[q.id]?.a);
-      if (wr.length || nw.length) cands = U.chance(wr.length * 3 / (wr.length * 3 + nw.length)) ? wr : nw;
+      const seen = Store.partsAnswered(), w = cands.map(q => Store.smartWeight(q.id, seen)), tot = w.reduce((a, b) => a + b, 0);
+      if (tot > 0) { let r = Math.random() * tot, k = 0; while (k < w.length - 1 && (r -= w[k]) > 0) k++; if (!w[k]) k = w.reduce((m, x, i) => (x ? i : m), 0); cands = [cands[k]]; }
     }
     if (pref === 'new') { const c2 = cands.filter(q => !Store.qs[q.id]?.a); if (c2.length && U.chance(0.8)) cands = c2; }
     if (pref === 'wrong') { const c2 = cands.filter(q => Store.wrong[q.id] && !Store.wrong[q.id].done || (Store.qs[q.id]?.a && !Store.qs[q.id].last)); if (c2.length && U.chance(0.7)) cands = c2; }
