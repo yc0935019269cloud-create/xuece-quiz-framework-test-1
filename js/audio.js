@@ -63,6 +63,57 @@ const HAPTIC = (() => {
     if (root.matches(TAP_SEL)) arm(root);
     root.querySelectorAll(TAP_SEL).forEach(arm);
   }
+  /* 手機：手指按在按鈕上開始滑動時，當成「捲動」而不是「點按鈕」。
+   * ① 任何裝置：手指移動超過 10px 的這一次觸控，放開後的 click 一律擋掉（不會誤點進去）。
+   * ② iOS：按鈕上疊了原生開關（.hap-sw），從開關上開始滑時 Safari 可能不捲動頁面；
+   *    偵測到頁面沒有自己捲動時，由程式跟著手指捲動最近的可捲動區塊，放開後帶一點慣性。 */
+  const scrollerOf = el => {
+    for (let n = el && el.parentElement; n && n !== document.body; n = n.parentElement) {
+      const oy = getComputedStyle(n).overflowY;
+      if ((oy === 'auto' || oy === 'scroll') && n.scrollHeight > n.clientHeight + 1) return n;
+    }
+    return document.scrollingElement || document.documentElement;
+  };
+  let drag = null, eatClickUntil = 0, glide = 0;
+  document.addEventListener('touchstart', e => {
+    cancelAnimationFrame(glide); eatClickUntil = 0;   // 新的觸控開始：上一次滑動沒有產生 click，就不要擋到這一次
+    if (e.touches.length !== 1) { drag = null; return; }
+    const tc = e.touches[0], sw = e.target.classList && e.target.classList.contains('hap-sw');
+    drag = { x: tc.clientX, y: tc.clientY, ly: tc.clientY, lt: e.timeStamp, v: 0, moved: false, sw, sc: sw ? scrollerOf(e.target) : null, top: null, native: false };
+  }, { capture: true, passive: true });
+  document.addEventListener('touchmove', e => {
+    if (!drag || e.touches.length !== 1) return;
+    const tc = e.touches[0];
+    if (!drag.moved && Math.hypot(tc.clientX - drag.x, tc.clientY - drag.y) > 10) drag.moved = true;
+    if (drag.moved && drag.sw && !drag.native) {
+      const sc = drag.sc;
+      if (drag.top === null) drag.top = sc.scrollTop;   // 第一步先觀察：瀏覽器有沒有自己捲
+      else if (Math.abs(sc.scrollTop - drag.top) > 1) drag.native = true;   // 瀏覽器自己在捲，就不插手
+      else {
+        const dy = drag.ly - tc.clientY, dt = Math.max(1, e.timeStamp - drag.lt);
+        sc.scrollTop += dy; drag.top = sc.scrollTop;
+        drag.v = 0.8 * (dy / dt) + 0.2 * drag.v;
+      }
+    }
+    drag.ly = tc.clientY; drag.lt = e.timeStamp;
+  }, { capture: true, passive: true });
+  const endDrag = () => {
+    if (!drag) return;
+    if (drag.moved) {
+      eatClickUntil = performance.now() + 400;
+      if (drag.sw && !drag.native && Math.abs(drag.v) > 0.05) {
+        const sc = drag.sc; let v = drag.v * 16, last = performance.now();
+        const step = now => { const dt = Math.min(48, now - last) / 16; last = now; sc.scrollTop += v * dt; v *= Math.pow(0.95, dt); if (Math.abs(v) > 0.3) glide = requestAnimationFrame(step); };
+        glide = requestAnimationFrame(step);
+      }
+    }
+    drag = null;
+  };
+  document.addEventListener('touchend', endDrag, { capture: true, passive: true });
+  document.addEventListener('touchcancel', endDrag, { capture: true, passive: true });
+  window.addEventListener('click', e => {
+    if (performance.now() < eatClickUntil) { eatClickUntil = 0; e.preventDefault(); e.stopPropagation(); e.stopImmediatePropagation(); }
+  }, true);
   if (iOS) {
     const start = () => {
       document.documentElement.classList.toggle('hap-off', !on);
