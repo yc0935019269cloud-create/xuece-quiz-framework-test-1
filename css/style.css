@@ -1465,3 +1465,30 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .lp:is([data-pack="optom2-u2-msr"], [data-pack="optom2-u3-vf"], [data-pack="optom2-u4-bb"], [data-pack^="s114-optometry-"]:not([data-pack^="s114-optometry-terms-"])) .md tr:nth-child(even) td {
   background: rgba(255, 255, 255, .025);
 }
+
+/* ---- 學習：字母卡牆（letters 步驟，例如韓文子音母音） ---- */
+.kl-g { margin: 14px 0; }
+.kl-g h4 { margin: 0 0 4px; }
+.kl-gd { font-size: 14px; opacity: .8; margin-bottom: 6px; }
+.kl-gd p { margin: 0; }
+.kl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 8px; }
+.kl-t { position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 4px 8px; background: #fffaf0; border: 3px solid var(--line); cursor: pointer; font: inherit; color: #2e2116; }
+.kl-t b { font-size: 34px; line-height: 1.1; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
+.kl-t small { font-size: 12px; opacity: .7; }
+.kl-t:hover, .kl-t:focus-visible { border-color: var(--sc, #4fa8ff); transform: translateY(-2px); }
+.kl-t.seen::after { content: '✓'; position: absolute; top: 2px; right: 5px; font-size: 11px; color: #3a9a4a; }
+.kl-modal { max-width: 560px; }
+.kl-dh { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+.kl-big { font-size: 72px; line-height: 1; min-width: 84px; text-align: center; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
+.kl-nm { font-size: 22px; font-weight: 700; }
+.kl-zy { font-size: 15px; margin: 2px 0; }
+.kl-zy b { font-size: 18px; color: var(--gold, #ffd84a); }
+.kl-say { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 10px; }
+.kl-say .px-btn { display: inline-flex; align-items: baseline; gap: 6px; }
+.kl-say span { font-size: 18px; }
+.kl-say small { opacity: .75; }
+.kl-img { display: block; width: 100%; max-width: 380px; margin: 4px auto 8px; border: 3px solid var(--line); }
+.kl-desc table { font-size: 14px; }
+.kl-ex { margin: 8px 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.kl-nav { justify-content: space-between; align-items: center; margin-top: 10px; }
+@media (max-width: 640px) { .kl-grid { grid-template-columns: repeat(auto-fill, minmax(62px, 1fr)); gap: 6px; } .kl-t b { font-size: 28px; } .kl-big { font-size: 56px; min-width: 64px; } }

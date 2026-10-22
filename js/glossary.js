@@ -80,7 +80,15 @@ const GLOSS = (() => {
     t => 'https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=en-US&q=' + encodeURIComponent(t.slice(0, 180)),
     t => 'https://dict.youdao.com/dictvoice?type=2&audio=' + encodeURIComponent(t.slice(0, 180))
   ];
-  function speak(text) {
+  // 其他語言（opt.lang，例如 'ko'）：assets/tts/<lang>/<每個字的 Unicode 十六進位，用 - 連接>.mp3（tools/tts/gen_lang.py）→ Google 翻譯語音
+  const hexSlug = t => [...t.trim()].map(c => c.codePointAt(0).toString(16)).join('-').slice(0, 120);
+  const sourcesFor = lang => [
+    t => `assets/tts/${lang}/${hexSlug(t)}.mp3`,
+    t => `https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=${lang}&q=` + encodeURIComponent(t.slice(0, 180))
+  ];
+  function speak(text, opt) {
+    const lang = opt && opt.lang && !/^en\b/i.test(opt.lang) ? String(opt.lang).replace(/[^a-zA-Z-]/g, '') : '';
+    const SRC = lang ? sourcesFor(lang) : SOURCES;
     text = String(text || '').replace(/\s+/g, ' ').trim();
     if (!text) return;
     const id = ++seq, live = () => id === seq; // 被下一次播放打斷的舊請求不再改播備援
@@ -94,7 +102,7 @@ const GLOSS = (() => {
       try {
         if (speechSynthesis.paused) speechSynthesis.resume();
         const u = new SpeechSynthesisUtterance(text);
-        u.lang = 'en-US'; if (voice) u.voice = voice; u.rate = 0.9;
+        u.lang = lang || 'en-US'; if (voice && !lang) u.voice = voice; u.rate = 0.9;
         u.onend = release; u.onerror = release;
         speechSynthesis.speak(u);
       } catch (e) { release(); }
@@ -105,12 +113,12 @@ const GLOSS = (() => {
     try { a.pause(); } catch (e) {}
     const tryAt = k => {
       if (!live()) return;
-      if (k >= SOURCES.length) return viaTTS();
+      if (k >= SRC.length) return viaTTS();
       let over = false;
       const next = () => { if (over || !live()) return; over = true; tryAt(k + 1); };
       a.onended = () => { if (!live()) return; over = true; release(); };
       a.onerror = next;
-      a.src = SOURCES[k](text);
+      a.src = SRC[k](text);
       try {
         const p = a.play();
         if (p && p.catch) p.catch(err => { if (err && err.name === 'AbortError') return; next(); });
