@@ -277,7 +277,15 @@ const Screens = (() => {
   function hub() {
     clearInterval(campTimer);
     const p = P(), run = Store.loadRun();
-    if (!p.starterPicked) { scr().innerHTML = '<div class="panel center">…</div>'; return starterModal(); }
+    if (!p.starterPicked) {
+      // 第一次進入：選夥伴視窗後面先顯示營地（調暗），不要一片黑
+      scr().innerHTML = `<div class="panel camp-wrap starter-bg" aria-hidden="true"><div class="camp tod-${timeOfDay()}" style="--ground:url(${groundURL()})">
+        <div class="sky"><div class="celestial"></div><div class="cloud c1"></div><div class="cloud c2"></div></div>
+        <div class="hill" style="background-image:url(${hillURL()})"></div><div class="ground"></div>
+        <div class="camp-obj camp-fire"><div class="shadow"></div>${PetArt.html('campfire', 70, '', '', null, null, { still: 1 })}<div class="fire-glow"></div></div>
+        <div class="camp-obj camp-hero"><div class="shadow"></div>${FX.heroHD(Store.heroTile(), p.activeClass, 124)}</div></div></div>`;
+      return starterModal();
+    }
     const pet = C.pet(p.activePet), pl = p.pets[p.activePet];
     const acc = U.pct(p.stats.correct, p.stats.answered);
     const wrongN = Object.values(Store.wrong).filter(w => !w.done).length;
@@ -294,21 +302,21 @@ const Screens = (() => {
     const MENU_GROUPS = [['study', '📚 讀書與刷題'], ['adv', '⚔️ 冒險'], ['peg', '⚪ 彈珠（Peglin）'], ['col', '🧙 角色與收藏'], ['tool', '🛠 工具與設定']];
     const tiles = [
       run && { id: 'continue', g: 'adv', icon: 45, t: '繼續遠征', d: run.mode === 'abyss' ? `${run.title}・第 ${run.act} 章・${C.DIFFS[run.diff || 0].name}` : `${run.title}・第 ${run.floor} 層・剩 ${run.queue.length - run.qi} 題`, cls: 'gold' },
-      { id: 'abyss', g: 'adv', icon: 110, t: '深淵遠征', d: `三章地圖長冒險・各科首領・已解鎖 ${C.DIFFS[p.abyss.maxDiff].name}`, cls: 'purple' },
-      { id: 'learn', g: 'study', icon: '📘', t: '學習模式', d: LEARN_UI.tileDesc(), cls: 'blue' },
-      { id: 'import', g: 'tool', icon: '📥', t: '導入素材', d: IMP.tileDesc(), cls: 'green' },
-      { id: 'prompts', g: 'tool', icon: '📋', t: 'AI 提示詞', d: '複製提示詞：素材→課程、出題、補詳解、轉格式、找圖標記' },
+      { id: 'abyss', g: 'adv', icon: 110, t: '深淵遠征', d: `三章長冒險・已解鎖 ${C.DIFFS[p.abyss.maxDiff].name}`, cls: 'purple' },
+      { id: 'learn', g: 'study', icon: 66, t: '學習模式', d: LEARN_UI.tileDesc(), cls: 'blue' },
+      { id: 'import', g: 'tool', icon: 89, t: '導入素材', d: IMP.tileDesc(), cls: 'green' },
+      { id: 'prompts', g: 'tool', icon: 'question', t: 'AI 提示詞', d: '素材轉課程、出題、補詳解' },
       { id: 'map', g: 'adv', icon: 57, t: '冒險地圖', d: '依科目與題本挑戰各區域地牢' },
-      { id: 'free', g: 'adv', icon: 105, t: '自由遠征', d: '自選科目、題本、題型、數量與作答狀態' },
-      { id: 'peglin', g: 'peg', icon: '⚪', t: '彈珠刷題', d: 'Peglin 原版戰鬥・一題一球（需本機啟動器）' },
-      { id: 'peglinLearn', g: 'peg', icon: '📘', t: '彈珠學習', d: 'Peglin 原版戰鬥・讀一張卡打一顆球（需本機啟動器）' },
+      { id: 'free', g: 'adv', icon: 105, t: '自由遠征', d: '自選科目、題本與題數' },
+      { id: 'peglin', g: 'peg', icon: 'coin', t: '彈珠刷題', d: '一題一球（需本機啟動器）' },
+      { id: 'peglinLearn', g: 'peg', icon: 66, t: '彈珠學習', d: '讀一張卡打一顆球（需本機啟動器）' },
       { id: 'bank', g: 'study', icon: 63, t: '題庫', d: `瀏覽 ${window.QB.questions.length} 題，直接作答看詳解` },
-      { id: 'wrong', g: 'study', icon: 65, t: '錯題本', d: '自動收錄錯題，篩選、重刷、標記掌握' },
+      { id: 'wrong', g: 'study', icon: 65, t: '錯題本', d: '自動收錄錯題、標記掌握' },
       { id: 'wrongrun', g: 'study', icon: 64, t: '錯題重刷', d: `以錯題本出征（${wrongN} 題未掌握）` },
-      { id: 'ai', g: 'study', icon: '💬', t: 'AI 助教', d: '問觀念、問題目，回答附題庫與教材出處' },
-      { id: 'pomo', g: 'study', icon: '🍅', t: '番茄鐘', d: `今天 🍅 ${POMO.data.log.filter(l => new Date(l.t).toDateString() === new Date().toDateString()).length} 顆・專注花園 ${POMO.data.garden.length} 株` },
-      { id: 'ext-brain3d', g: 'study', icon: '🧠', t: '腦與視覺路徑 3D', d: '視覺路徑・腦底血管・深部構造 3D 解剖圖譜（外部網站，開新分頁）', url: 'https://yc0935019269cloud-create.github.io/anatomy-3d-atlas/brain-visual-atlas-3d/%E8%85%A6%E8%88%87%E8%A6%96%E8%A6%BA%E8%B7%AF%E5%BE%913D.html' },
-      { id: 'ext-refraction', g: 'study', icon: '🩺', t: '視光室（第一人稱驗光）', d: '第一人稱診間模擬，練習完整驗光流程（外部網站，開新分頁）', url: 'https://yc0935019269cloud-create.github.io/Mvmpa5555/' },
+      { id: 'ai', g: 'study', icon: 84, t: 'AI 助教', d: '問觀念、問題目，附出處' },
+      { id: 'pomo', g: 'study', icon: 115, t: '番茄鐘', d: `今天 🍅 ${POMO.data.log.filter(l => new Date(l.t).toDateString() === new Date().toDateString()).length} 顆・專注花園 ${POMO.data.garden.length} 株` },
+      { id: 'ext-brain3d', g: 'study', icon: 'eye', t: '腦與視覺路徑 3D', d: '3D 解剖圖譜・開新分頁 ↗', url: 'https://yc0935019269cloud-create.github.io/anatomy-3d-atlas/brain-visual-atlas-3d/%E8%85%A6%E8%88%87%E8%A6%96%E8%A6%BA%E8%B7%AF%E5%BE%913D.html' },
+      { id: 'ext-refraction', g: 'study', icon: 102, t: '視光室', d: '第一人稱驗光練習・開新分頁 ↗', url: 'https://yc0935019269cloud-create.github.io/Mvmpa5555/' },
       { id: 'classes', g: 'col', icon: C.cls(p.activeClass).tile, t: '職業殿堂', d: `目前：${C.cls(p.activeClass).name} Lv.${(p.classes[p.activeClass] || { lv: 1 }).lv}・切換/解鎖職業` },
       { id: 'pets', g: 'col', icon: 'heart', t: '寵物小屋', d: '培養夥伴、買造型與配件' },
       { id: 'upg', g: 'col', icon: 74, t: '永久強化', d: '用魂晶提升能力' },
@@ -320,8 +328,17 @@ const Screens = (() => {
     ].filter(Boolean);
     let stars = '';
     if (tod === 'night') for (let i = 0; i < 24; i++) stars += `<i class="star" style="left:${U.rnd(0, 100)}%;top:${U.rnd(0, 55)}%;animation-delay:-${U.rnd(0, 30) / 10}s"></i>`;
-    scr().innerHTML = `<div class="panel camp-wrap">
-        <div class="row" style="justify-content:space-between;align-items:baseline"><h2 style="margin:0">冒險者營地</h2><span class="small-t dim">點點看夥伴、勇者、篝火、信箱、花盆和池塘吧！${(Store.settings.campTime || 'auto') === 'auto' ? '（時段：依現在時間）' : ''}</span></div>
+    const lastL = LEARN_UI.lastInfo && LEARN_UI.lastInfo();
+    const folded = !!Store.settings.campFolded;
+    const quick = `<div class="quick-row">
+        ${lastL ? `<button class="px-btn gold qr-main" data-quick="resume"><span>▶</span><span><b>繼續上次的課</b><small>${U.esc(lastL.pack)}・${U.esc(lastL.lesson)}</small></span></button>`
+          : `<button class="px-btn blue qr-main" data-quick="learn"><span>▶</span><span><b>開始學習</b><small>${U.esc(LEARN_UI.tileDesc())}</small></span></button>`}
+        ${run ? '<button class="px-btn" data-quick="continue">⚔ 繼續遠征</button>' : ''}
+        <button class="px-btn" data-quick="bank">📚 題庫</button>
+        <button class="px-btn" data-quick="wrongrun">🔁 錯題重刷${wrongN ? `（${wrongN}）` : ''}</button>
+      </div>`;
+    scr().innerHTML = `${quick}<div class="panel camp-wrap ${folded ? 'folded' : ''}">
+        <div class="camp-head"><h2 style="margin:0">冒險者營地</h2><span class="small-t dim camp-hint">點點看夥伴、勇者、篝火、信箱、花盆和池塘吧！${(Store.settings.campTime || 'auto') === 'auto' ? '（時段：依現在時間）' : ''}</span><span class="grow"></span><button class="px-btn small" id="campFold" aria-expanded="${!folded}">${folded ? '▸ 展開營地' : '▾ 收起營地'}</button></div>
         <div class="camp tod-${tod}" id="camp" style="--ground:url(${groundURL()})">
           <div class="sky">${stars}<div class="celestial"></div><div class="cloud c1"></div><div class="cloud c2"></div></div>
           <div class="hill" style="background-image:url(${hillURL()})"></div><div class="ground"></div>
@@ -344,7 +361,6 @@ const Screens = (() => {
           <div class="row mt" style="justify-content:flex-end">${D.claimed ? '<span class="tag ok">今日獎勵已領取</span>' : `<button class="px-btn small gold" id="claim" ${D.answered >= GOAL ? '' : 'disabled'}>領取 ${10 + Math.min(streak, 7) * 2} 魂晶</button>`}</div>
         </div>
         ${giftsHTML}
-        </div>
         ${pet ? `<p class="small-t mt">夥伴：<b>${U.esc(Store.petName(p.activePet))}</b>（${pet.kind}）Lv.${pl.lv}<br><span class="dim">${pet.desc(pl.lv)}</span></p>` : ''}
         <hr class="px">
         <div class="stat-line"><span>魂晶</span><b class="purple-t">${p.gems}</b></div>
@@ -366,6 +382,19 @@ const Screens = (() => {
       else App.go(g);
     });
     U.$$('[data-tod]').forEach(b => b.onclick = () => { Store.settings.campTime = b.dataset.tod; Store.saveSettings(); SFX.play('click'); hub(); });
+    U.$$('[data-quick]').forEach(b => b.onclick = () => {
+      SFX.play('click');
+      const g = b.dataset.quick;
+      if (g === 'resume') App.go('learn', { resume: true });
+      else if (g === 'continue') App.go('run', new Run(Store.loadRun()));
+      else if (g === 'wrongrun') wrongRunModal();
+      else App.go(g);
+    });
+    U.$('#campFold').onclick = () => {
+      Store.settings.campFolded = !Store.settings.campFolded; Store.saveSettings(); SFX.play('click');
+      const w = U.$('.camp-wrap'), f = !!Store.settings.campFolded;
+      w.classList.toggle('folded', f); const b = U.$('#campFold'); b.textContent = f ? '▸ 展開營地' : '▾ 收起營地'; b.setAttribute('aria-expanded', String(!f));
+    };
     const claim = U.$('#claim');
     if (claim) claim.onclick = () => {
       const g = 10 + Math.min(streak, 7) * 2; D.claimed = true; p.gems += g; Store.saveProfile(); SFX.play('win'); U.toast(`完成今日目標！獲得 ${g} 魂晶`); hub();
@@ -539,8 +568,10 @@ const Screens = (() => {
   function bank(init) {
     const state = Object.assign({ subjects: [], exams: [], types: [], status: 'all', search: '', page: 0, favorites: 'all', favoriteFolder: '' }, init || {});
     const expanded = new Set();
+    let fOpen = true; try { fOpen = localStorage.getItem('bankFilters') !== '0'; } catch (e) {}
     scr().innerHTML = `<div class="panel"><h2>題庫</h2>
-      <div class="filters">
+      <div class="bank-bar"><button class="px-btn small" id="fToggle" aria-expanded="${fOpen}" aria-controls="bankFilters">${fOpen ? '▾ 收起篩選' : '▸ 篩選'}</button><span class="bank-sum" id="fsum"></span><span id="cnt" class="gold-t"></span><button class="px-btn small gold" id="runit">用這些題目出征</button></div>
+      <div class="filters mt${fOpen ? '' : ' folded'}" id="bankFilters">
         <div class="frow"><label>科目</label><span id="fsj">${chipGroup(Object.keys(C.SUBJECTS).map(s => [s, C.SUBJECTS[s].name]), state.subjects)}</span></div>
         <div class="frow"><label>題本</label><span id="fy"></span></div>
         <div class="frow"><label>題型</label><span id="ft">${chipGroup(TYPES, state.types)}</span></div>
@@ -548,8 +579,7 @@ const Screens = (() => {
         <div class="frow"><label for="ff">收藏</label><select class="px-in fav-filter" id="ff" aria-label="收藏篩選"></select><button class="px-btn small" data-fav-manage>管理資料夾</button></div>
         <div class="frow"><label>搜尋</label><input class="px-in" id="fq" placeholder="題目、標籤或詳解的關鍵字" style="width:min(380px,100%)"></div>
       </div>
-      <div class="row mt"><span id="cnt" class="gold-t"></span><span class="grow"></span><button class="px-btn small gold" id="runit">用這些題目出征</button></div>
-      <p class="dim small-t">點題目或選項可展開／收合詳解；想作答時按「練習此題」。</p>
+      <p class="dim small-t mt">點題目或選項可展開／收合詳解；想作答時按「練習此題」。</p>
       <div class="qlist bank-list mt" id="ql"></div><div class="pager" id="pg"></div></div>`;
     const PER = 30;
     function card(q) {
@@ -583,6 +613,14 @@ const Screens = (() => {
     const draw = () => {
       const list = Store.filter(state);
       U.$('#cnt').textContent = `共 ${list.length} 題`;
+      const sum = [state.subjects.length ? state.subjects.map(k => (C.SUBJECTS[k] || {}).name || k).join('、') : '全部科目'];
+      if ((state.years || []).length) sum.push(state.years.join('、') + ' 年');
+      if (state.exams.length) sum.push(`${state.exams.length} 本題本`);
+      if (state.types.length) sum.push(state.types.map(t => (TYPES.find(x => x[0] === t) || [, t])[1]).join('、'));
+      if (state.status !== 'all') sum.push((STATUS.find(x => x[0] === state.status) || [, state.status])[1]);
+      if (state.favorites !== 'all') sum.push('收藏');
+      if (state.search) sum.push(`「${state.search}」`);
+      U.$('#fsum').textContent = sum.join('・');
       const pages = Math.max(1, Math.ceil(list.length / PER));
       state.page = U.clamp(state.page, 0, pages - 1);
       const ql = U.$('#ql'); ql.innerHTML = list.length ? '' : '<p class="dim center">沒有符合篩選條件的題目。</p>';
@@ -592,6 +630,12 @@ const Screens = (() => {
       U.$$('[data-p]', pg).forEach(b => b.onclick = () => { state.page += Number(b.dataset.p); draw(); window.scrollTo(0, 0); });
     };
     const upd = () => { state.page = 0; draw(); };
+    U.$('#fToggle').onclick = () => {
+      const f = U.$('#bankFilters'), open = f.classList.toggle('folded') === false, b = U.$('#fToggle');
+      b.textContent = open ? '▾ 收起篩選' : '▸ 篩選'; b.setAttribute('aria-expanded', String(open));
+      try { localStorage.setItem('bankFilters', open ? '1' : '0'); } catch (e) {}
+      if (open) { const y = f.getBoundingClientRect().top + scrollY - (U.$('#topbar').offsetHeight + U.$('.bank-bar').offsetHeight + 8); if (y < scrollY) window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' }); }
+    };
     const favoritesPicker = U.$('#ff');
     function drawFavorites() {
       if (state.favoriteFolder && !Store.favorites.folders.some(f => f.id === state.favoriteFolder)) { state.favoriteFolder = ''; state.favorites = 'saved'; }

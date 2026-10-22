@@ -1492,3 +1492,93 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .kl-ex { margin: 8px 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .kl-nav { justify-content: space-between; align-items: center; margin-top: 10px; }
 @media (max-width: 640px) { .kl-grid { grid-template-columns: repeat(auto-fill, minmax(62px, 1fr)); gap: 6px; } .kl-t b { font-size: 28px; } .kl-big { font-size: 56px; min-width: 64px; } }
+
+/* ===== 介面優化（2026-10-22）：閱讀字型、課程固定導覽、營地快捷、題庫篩選摘要、閱讀模式 ===== */
+:root { --kai: "DFKai-SB", "BiauKai", "標楷體", "Kaiti TC", "TW-Kai", "LXGW WenKai TC", "KaiTi", "STKaiti", serif; }
+[hidden] { display: none !important; }
+
+/* 課程正文、題目、選項、詳解：標楷體（標題、按鈕、標籤維持像素字） */
+.lp-body, .lc-q, .lc-opt > span, .lc-ex, .lp-exans, .lc-hint,
+.qbox .qtext, .qpreview-text, .answers .opt.txt > span, .explain, .bank-explanation,
+.lnote-card .md, .formula-body, .lnotes .md, .qpreview-modal .explain {
+  font-family: var(--kai); -webkit-font-smoothing: antialiased; letter-spacing: .02em;
+}
+.lp-body { font-size: 18px; line-height: 1.8; }
+.lp-body h3, .lp-body h4, .lp-body .lp-type, .lp-body .tag, .lp-body .px-btn:not(.lc-opt), .lp-body .lc-kind,
+.lp-body .lc-opt > b, .lp-body .co-h, .lp-body summary { font-family: 'Cubic11', 'Microsoft JhengHei', 'PingFang TC', sans-serif; -webkit-font-smoothing: none; letter-spacing: 0; }
+.lc-q { font-size: 20px; line-height: 1.7; }
+.lc-opt > span, .answers .opt.txt > span { font-size: 18px; line-height: 1.6; text-shadow: none; }
+.qbox .qtext { font-size: 19px; }
+.explain, .bank-explanation { font-size: 17px; line-height: 1.8; }
+
+/* 課程底部導覽固定在畫面下方：長頁面不必捲到底才能按「繼續」 */
+.lp-foot { position: sticky; bottom: 0; z-index: 8; margin: 12px -16px -16px; padding: 10px 16px max(10px, env(safe-area-inset-bottom));
+  background: linear-gradient(to bottom, rgba(45,35,64,0), var(--panel) 18px); }
+.lp-keyhint { font-size: 12px; color: var(--dim); align-self: center; white-space: nowrap; }
+@media (hover: none) { .lp-keyhint { display: none; } }
+
+/* 圖片：像掛在牆上的圖，減少白底刺眼 */
+.lp-img, .qbox img.qimg { border: 4px solid var(--line); box-shadow: 0 0 0 2px var(--hi), 0 8px 18px rgba(0,0,0,.45); border-radius: 3px; }
+.lp-img { background: #f3efe6; }
+
+/* 題卡紙張調暗一點、外框變細 */
+:root { --paper: #f1ead9; }
+.qbox { box-shadow: inset 0 0 0 2px #d9ccaa; }
+
+/* 顏色與外框收斂：只有主要動作上色，次要容器用細線 */
+.menu-tile.purple, .menu-tile.green { --c: var(--panel2); }
+details.ltree { border-left-width: 3px; border-left-color: rgba(90,74,120,.6); }
+details.ltree.d0 { border-left-color: var(--sc, var(--gold)); }
+.ltree-in > .grid.g2, .learn .grid.g2 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.menu-tile small { color: #c3b6d6; }
+
+/* 營地：最上方快捷列、可收起的營地場景、版面修正 */
+.quick-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+.quick-row .px-btn { display: inline-flex; align-items: center; gap: 8px; }
+.quick-row .qr-main { flex: 1 1 260px; text-align: left; }
+.quick-row .qr-main small { display: block; font-size: 12px; color: #fff3c4; opacity: .9; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.camp-wrap.folded .camp, .camp-wrap.folded .camp-bar, .camp-wrap.folded .tod-pick, .camp-wrap.folded .camp-hint { display: none; }
+.camp-wrap.folded { padding: 10px 16px; }
+.camp-head { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.hub .hero-card { align-self: start; text-align: left; }
+.hub .hero-card .stat-line { text-align: left; }
+@media (max-width: 860px) { .hub .menu-groups { order: -1; } }
+
+/* 第一次進入：選夥伴時背景顯示營地 */
+.starter-bg { filter: brightness(.55) saturate(.8); pointer-events: none; }
+
+/* 頂部列：手機上標題縮成省略號，等級徽章收起 */
+#topTitle { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 480px) {
+  #topbar { gap: 6px; padding: 6px 8px; }
+  #topTitle { font-size: 16px; letter-spacing: 0; }
+  #topRes { gap: 6px; }
+  #topRes .res:has(.ico.lv) { display: none; }
+  #topbar .px-btn.small { padding: 2px 7px; }
+}
+
+/* 題庫：篩選收合摘要列固定在上方 */
+.bank-bar { position: sticky; top: var(--topbar-h, 52px); z-index: 7; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  background: var(--panel); margin: 0 -16px; padding: 8px 16px; border-bottom: 3px solid var(--line); }
+.bank-bar .bank-sum { flex: 1 1 220px; min-width: 0; font-size: 13px; color: var(--dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.filters.folded { display: none; }
+
+/* 閱讀模式：課程正文改成米色紙張底，戰鬥條與外框維持遊戲風 */
+html.read-light .lp-body {
+  --text: #2e2116; --dim: #6b5a4a; --gold: #8a5a00; --bg2: #f4ecd8; --panel: #ebe1c8; --panel2: #e2d4b2; --line: #b9a57a; --hi: #c9b88f;
+  --red: #b3262e; --green: #2b7a35; --blue: #1f5fa8; --purple: #6b3fb0; --orange: #b45a00;
+  background: #f4ecd8; color: #2e2116; border-color: #b9a57a;
+}
+html.read-light .lp-body h3, html.read-light .lp-body .px-btn, html.read-light .lp-body .lc-opt > span { text-shadow: none; }
+html.read-light .lp-body .px-btn { color: #2e2116; }
+html.read-light .lp-body .lc-opt.correct, html.read-light .lp-body .lc-opt.wrong, html.read-light .lp-body .lc-opt.picked { color: #fff; }
+html.read-light .lp-body .lc-opt.correct > span, html.read-light .lp-body .lc-opt.wrong > span, html.read-light .lp-body .lc-opt.picked > span { color: #fff; }
+html.read-light .lp-body .hl-o { color: #b45a00; } html.read-light .lp-body .hl-b { color: #1f5fa8; } html.read-light .lp-body .hl-g { color: #2b7a35; }
+html.read-light .lp-body .hl-r { color: #b3262e; } html.read-light .lp-body .hl-p { color: #6b3fb0; } html.read-light .lp-body .hl-y { color: #8a5a00; }
+html.read-light .lp-body .co-tip .co-h { color: #1f7a70; } html.read-light .lp-body .co-warn .co-h { color: #b3262e; } html.read-light .lp-body .co-why .co-h { color: #6b3fb0; }
+html.read-light .lp-body .co-key .co-h { color: #1f5fa8; } html.read-light .lp-body .co-big { background: linear-gradient(90deg, rgba(138,90,0,.12), rgba(138,90,0,0) 85%); }
+html.read-light .lp-body .md pre { background: #efe6cf; color: #3b2a1a; border-color: #c9b88f; }
+html.read-light .lp-body .md code { background: #e8dcc0; color: #6b3fb0; }
+html.read-light .lp-body .md td, html.read-light .lp-body .md th { border-color: #c9b88f; }
+html.read-light .lp-body .lp-type { color: #120c18; }
+html.read-light .lp-foot { background: linear-gradient(to bottom, rgba(45,35,64,0), var(--panel) 18px); }

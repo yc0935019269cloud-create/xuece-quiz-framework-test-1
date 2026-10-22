@@ -70,6 +70,8 @@ const App = (() => {
     document.documentElement.style.setProperty('--pin-base', (Store.settings.pinSize || 18) + 'px'); // 圖解標記大小（設定頁可調），知識筆記等也套用
     U.$('#btnHome').onclick = () => { if (window.CUR) window.CUR.save(); window.CUR = null; go('hub'); };
     U.$('#btnBack').onclick = () => { if (window.CUR) window.CUR.save(); back(); };
+    const tb = U.$('#topbar'), setTbH = () => document.documentElement.style.setProperty('--topbar-h', tb.offsetHeight + 'px');
+    setTbH(); if (window.ResizeObserver) new ResizeObserver(setTbH).observe(tb);
     U.$('#btnSound').onclick = toggleVol;
     U.$('#btnSound').title = '音量設定';
     document.title = APP_TITLE;

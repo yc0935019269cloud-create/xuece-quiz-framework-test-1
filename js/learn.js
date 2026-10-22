@@ -193,6 +193,30 @@ const LEARN_UI = (() => {
    * cur 是課程播放器的即時狀態；換頁、作答後發出 learnpage 事件，讓 AI 視窗更新按鈕。 */
   let cur = null;   // { p, l, st, el, boss: { c, k, n } | { end: true } | null, done, shown }
   const pageMoved = patch => { if (cur && patch) Object.assign(cur, patch); document.dispatchEvent(new Event('learnpage')); };
+  // 作答後焦點移到「繼續」但不讓瀏覽器自動捲動（以前會把題目推到戰鬥條底下）；
+  // 只在詳解超出畫面時才往下捲，而且題目開頭不會被頂部列和戰鬥條蓋住。
+  function focusNext() {
+    const nb = document.getElementById('lpNext'); if (!nb) return;
+    nb.focus({ preventScroll: true });
+    const body = document.getElementById('lpBody'); if (!body) return;
+    const foot = document.querySelector('.lp-foot'), pin = document.getElementById('lpBattlePin'), tb = document.getElementById('topbar');
+    const over = body.getBoundingClientRect().bottom - (innerHeight - (foot ? foot.offsetHeight : 0) - 8);
+    if (over <= 0) return;
+    const top = (tb ? tb.offsetHeight : 0) + (pin && !pin.hidden ? pin.offsetHeight : 0) + 8;
+    const q = body.querySelector('.lc-q, .qbox, .qtext') || body;
+    const dy = Math.min(over, q.getBoundingClientRect().top - top);
+    if (dy > 4) scrollBy({ top: dy, behavior: 'smooth' });
+  }
+  // 閱讀模式（正文米色紙張底）：個人偏好，存在這台裝置
+  const readLight = () => { try { return localStorage.getItem('readLight') === '1'; } catch (e) { return false; } };
+  const applyRead = () => document.documentElement.classList.toggle('read-light', readLight());
+  applyRead();
+  document.addEventListener('click', e => {
+    const b = e.target.closest && e.target.closest('[data-read-toggle]'); if (!b) return;
+    try { localStorage.setItem('readLight', readLight() ? '0' : '1'); } catch (err) {}
+    applyRead();
+    document.querySelectorAll('[data-read-toggle]').forEach(x => { x.textContent = readLight() ? '🌙 深色' : '📖 閱讀模式'; });
+  });
   const ABC = i => String.fromCharCode(65 + i);
   function checkText(c) {
     const key = c.kind === 'single' ? `${ABC(c.answer)}. ${c.choices[c.answer]}` : c.kind === 'multi' ? [].concat(c.answer).map(i => `${ABC(i)}. ${c.choices[i]}`).join('；')
@@ -430,7 +454,10 @@ const LEARN_UI = (() => {
   }
   /* ---------- 主畫面 ---------- */
   let tab = 'courses', subjF = 'all';
+  const lastLesson = () => { const pk = D.last && PK[D.last.p], l = pk && pk.lessons.find(x => x.id === D.last.l); return l ? { pk, l } : null; };
+  function lastInfo() { const x = lastLesson(); return x ? { pack: x.pk.title, lesson: x.l.title } : null; }
   function screen(arg) {
+    if (arg && arg.resume && lastLesson()) { const x = lastLesson(); return play(x.pk, x.l); }
     if (arg && arg.pack && PK[arg.pack]) return packView(PK[arg.pack]);
     if (arg && arg.tab) tab = arg.tab;
     const due = dueList().length;
@@ -611,13 +638,13 @@ const LEARN_UI = (() => {
     scr().innerHTML = `<div class="panel learn lp" data-pack="${U.esc(p.id)}" data-lesson="${U.esc(l.id)}" style="--sc:${S.color}">
       <div class="row lp-head"><button class="px-btn small" id="lpExit" title="進度會自動保存">✕ 離開</button>
         <div class="grow lp-title"><small>${U.esc(p.title)}</small><b>${U.esc(l.title)}</b></div>
-        <button class="px-btn small" id="lpBattle"${p.calm ? ' hidden' : ''} title="戰鬥模式：答對攻擊、答錯被反擊（不影響學習進度）">${BON() ? '⚔ 戰鬥中' : '🕊 平靜模式'}</button><span class="lp-cnt" id="lpCnt"></span></div>
+        <button class="px-btn small" id="lpBattle"${p.calm ? ' hidden' : ''} title="戰鬥模式：答對攻擊、答錯被反擊（不影響學習進度）">${BON() ? '⚔ 戰鬥中' : '🕊 平靜模式'}</button><button class="px-btn small" data-read-toggle title="閱讀模式：正文改成米色紙張底，長時間閱讀比較舒服">${readLight() ? '🌙 深色' : '📖 閱讀模式'}</button><span class="lp-cnt" id="lpCnt"></span></div>
       <div id="lpBattleAnchor" aria-hidden="true"></div>
       <div class="lp-battle-pin" id="lpBattlePin"><div class="lb" id="lbStage" style="--sc:${S.color}"></div></div>
       <div id="lpBattleSpacer" aria-hidden="true"></div>
       <div class="lpips" id="lpPips">${l.steps.map((s, i) => `<i class="t-${s.type}" data-i="${i}" data-tip="${i + 1}. ${STEP[s.type].name}"></i>`).join('')}</div>
       <div class="lp-body" id="lpBody"></div>
-      <div class="lp-foot">${petBox()}<span class="grow"></span><button class="px-btn lp-prev" id="lpPrev" hidden title="回上一頁（看過的頁面可以點上方色條直接跳）" aria-label="上一頁"><span class="lp-prev-ic">‹</span><span class="lp-prev-tx">上一頁</span></button><button class="px-btn gold big" id="lpNext" disabled>繼續 ▶</button></div></div>`;
+      <div class="lp-foot">${petBox()}<span class="grow"></span><button class="px-btn lp-prev" id="lpPrev" hidden title="回上一頁（看過的頁面可以點上方色條直接跳）" aria-label="上一頁"><span class="lp-prev-ic">‹</span><span class="lp-prev-tx">上一頁</span></button><span class="lp-keyhint">Enter ↵ 繼續</span><button class="px-btn gold big" id="lpNext" disabled>繼續 ▶</button></div></div>`;
     U.$('#lpExit').onclick = () => { SFX.play('click'); cleanup(); save(); packView(p); };
     cur = { p, l, st, el: U.$('#lpBody'), boss: null, done: false, shown: 0 };
     const next = U.$('#lpNext');
@@ -650,6 +677,24 @@ const LEARN_UI = (() => {
     }
     prev.onclick = () => goTo(st.i - 1);
     U.$$('#lpPips i').forEach(x => x.onclick = () => goTo(+x.dataset.i));
+    // 手機／平板：在正文上左滑＝繼續、右滑＝上一頁。圖、互動、表格、輸入框等本身可拖曳或可橫向捲動的地方不觸發。
+    {
+      const bodyEl = U.$('#lpBody'); let sx = 0, sy = 0, st0 = 0, ok = false;
+      const NOSWIPE = '.img-zoom, .dg, .lp-diagram, iframe, canvas, svg, table, pre, input, textarea, select, .lc-seq, .lc-pool, .lp-imgs, [data-noswipe]';
+      const scrollsX = el => { for (let n = el; n && n !== bodyEl; n = n.parentElement) if (n.scrollWidth > n.clientWidth + 2 && /(auto|scroll)/.test(getComputedStyle(n).overflowX)) return true; return false; };
+      bodyEl.addEventListener('touchstart', e => {
+        const t = e.touches[0]; ok = e.touches.length === 1 && !e.target.closest(NOSWIPE) && !scrollsX(e.target);
+        sx = t.clientX; sy = t.clientY; st0 = Date.now();
+      }, { passive: true });
+      bodyEl.addEventListener('touchend', e => {
+        if (!ok) return; ok = false;
+        const t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;
+        if (Date.now() - st0 > 700 || Math.abs(dx) < 70 || Math.abs(dy) > Math.abs(dx) * 0.5) return;
+        if (window.getSelection && String(window.getSelection())) return;
+        if (dx < 0 && !next.disabled) next.click();
+        else if (dx > 0 && !prev.hidden) prev.click();
+      }, { passive: true });
+    }
     const ready = (label) => { next.disabled = false; if (label) next.textContent = label; };
     const tally = (firstOk) => { R.n++; if (firstOk) R.ok++; D.stat.checks++; if (firstOk) D.stat.right++; battleItem(firstOk); save(); };
 
@@ -1013,12 +1058,12 @@ const LEARN_UI = (() => {
         body.innerHTML = head + '<div class="lc"></div>';
         const box = body.querySelector('.lc');
         renderCheck(box, s, review ? { onDone: () => { ready(); pageMoved({ done: true }); } }
-          : { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(s.id, true); save(); ready(); next.focus(); pageMoved({ done: true }); } });
+          : { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(s.id, true); save(); ready(); focusNext(); pageMoved({ done: true }); } });
         body._key = e => box._key ? box._key(e) : false;
       } else if (s.type === 'diagram') {
         renderDiagram(body, head, s, `${p.id}/${l.id}/${st.i}`, review ? { onItem: () => {}, onWrong: () => {}, onDone: () => ready() } : {
           onItem: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); },
-          onWrong: onWrongHit, onDone: () => { save(); ready(); next.focus(); }
+          onWrong: onWrongHit, onDone: () => { save(); ready(); focusNext(); }
         });
       } else if (s.type === 'interactive') {
         renderInteractive(body, head, s);
@@ -1034,7 +1079,7 @@ const LEARN_UI = (() => {
         const reveal = () => {
           if (shown < s.steps.length) { box.insertAdjacentHTML('beforeend', `<div class="lp-step"><b>${shown + 1}</b><div>${md(s.steps[shown])}</div></div>`); shown++; cur && (cur.shown = shown); SFX.play('click'); }
           if (shown < s.steps.length) nb.textContent = `💡 看第 ${shown + 1} 步`;
-          else { nb.parentElement.remove(); if (s.answer) box.insertAdjacentHTML('beforeend', `<div class="lp-exans">✅ ${md(s.answer)}</div>`); ready(); next.focus(); }
+          else { nb.parentElement.remove(); if (s.answer) box.insertAdjacentHTML('beforeend', `<div class="lp-exans">✅ ${md(s.answer)}</div>`); ready(); focusNext(); }
         };
         nb.onclick = reveal; ab.onclick = () => { while (shown < s.steps.length) reveal(); };
         body._key = e => { if (e.key === 'Enter' && document.body.contains(nb)) { reveal(); return true; } return false; };
@@ -1067,7 +1112,7 @@ const LEARN_UI = (() => {
             body._key = null;
           } else {
             const c = s.checks[it.c];
-            renderCheck(box, c, review ? { onDone: () => ready() } : { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(c.id, true); save(); ready(); next.focus(); pageMoved({ done: true }); } });
+            renderCheck(box, c, review ? { onDone: () => ready() } : { onWrong: onWrongHit, onDone: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); if (!firstOk) addRev(c.id, true); save(); ready(); focusNext(); pageMoved({ done: true }); } });
             body._key = e => box._key ? box._key(e) : false;
           }
         }
@@ -1105,7 +1150,7 @@ const LEARN_UI = (() => {
         pageMoved({ boss: { c, k, n: qs.length }, done: false });
         next.disabled = true; next.textContent = '下一擊 ▶';
         next.onclick = () => { SFX.play('click'); k++; one(); };
-        renderCheck(box, c, { allowHint: false, onWrong: onWrongHit, onDone: (firstOk, ok) => { if (ok) { right++; onRightHit(firstOk); } else addRev(c.id, true); setTimeout(tickMon, 0); save(); ready(k >= qs.length - 1 || B.boss.hp <= 0 ? '結算 ▶' : '下一擊 ▶'); next.focus(); pageMoved({ done: true }); } });
+        renderCheck(box, c, { allowHint: false, onWrong: onWrongHit, onDone: (firstOk, ok) => { if (ok) { right++; onRightHit(firstOk); } else addRev(c.id, true); setTimeout(tickMon, 0); save(); ready(k >= qs.length - 1 || B.boss.hp <= 0 ? '結算 ▶' : '下一擊 ▶'); focusNext(); pageMoved({ done: true }); } });
         body._key = e => box._key ? box._key(e) : false;
       };
       const endBoss = () => {
@@ -1408,7 +1453,7 @@ const LEARN_UI = (() => {
     cleanup();
     let i = 0, right = 0;
     scr().innerHTML = `<div class="panel learn lp">
-      <div class="row lp-head"><button class="px-btn small" id="lpExit">✕ 結束</button><div class="grow lp-title"><b>複習</b></div><span class="lp-cnt" id="lpCnt"></span></div>
+      <div class="row lp-head"><button class="px-btn small" id="lpExit">✕ 結束</button><div class="grow lp-title"><b>複習</b></div><button class="px-btn small" data-read-toggle title="閱讀模式：正文改成米色紙張底，長時間閱讀比較舒服">${readLight() ? '🌙 深色' : '📖 閱讀模式'}</button><span class="lp-cnt" id="lpCnt"></span></div>
       <div class="bar" style="height:10px"><i id="rvBar" style="width:0;background:var(--green)"></i></div>
       <div class="lp-body" id="lpBody"></div>
       <div class="lp-foot">${petBox()}<span class="grow"></span><button class="px-btn gold big" id="lpNext" disabled>下一張 ▶</button></div></div>`;
@@ -1432,7 +1477,7 @@ const LEARN_UI = (() => {
       next.disabled = true;
       const from = `<div class="dim small-t">${C.SUBJECTS[p.subject].name}・${U.esc(p.title)}・${U.esc(l ? l.title : '')}　<span class="tag">第 ${D.rev[id].box} 盒</span></div>`;
       const early = D.rev[id].due > Date.now(); // 提前複習：答對不升盒，答錯照樣回第 1 盒
-      const after = ok => { if (early && ok) D.rev[id].n++; else gradeRev(id, ok); D.stat.reviews++; if (ok) right++; save(); next.disabled = false; next.focus(); };
+      const after = ok => { if (early && ok) D.rev[id].n++; else gradeRev(id, ok); D.stat.reviews++; if (ok) right++; save(); next.disabled = false; focusNext(); };
       next.onclick = () => { SFX.play('click'); i++; show(); };
       if (it.k === 'flash') {
         body.className = 'lp-body t-card';
@@ -1664,5 +1709,5 @@ const LEARN_UI = (() => {
     return true;
   }
 
-  return { starredQids, starredTermCount, reindex, screen, tileDesc, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, pageCtx, glossStar, get packs() { return packs; } };
+  return { starredQids, starredTermCount, reindex, screen, tileDesc, lastInfo, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, pageCtx, glossStar, get packs() { return packs; } };
 })();

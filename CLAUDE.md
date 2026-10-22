@@ -415,3 +415,14 @@
 - 使用者回報：手機上手指從按鈕上開始往上／下滑，常滑不動、還會點進那顆按鈕。原因主要是 iOS 疊在所有按鈕上的透明原生開關（`.hap-sw`）會吃掉手勢。
 - `js/audio.js`（HAPTIC 內）：任何裝置一次觸控移動超過 10px，放開後的 click 在 400ms 內一律擋掉（window capture；下一次 touchstart 會清除）。從 `.hap-sw` 開始的滑動，先看瀏覽器有沒有自己捲；沒有的話由程式跟著手指捲最近的可捲動區塊，放開後有慣性。瀏覽器自己會捲時不插手。
 - 測試（Chromium 模擬 iPhone 13／Pixel 7 觸控）：從按鈕開始滑會捲動、不會點進去；原地輕點照常點進去；把開關設成 `touch-action:none` 模擬 Safari 擋捲動時，程式捲動也正常。**沒有 iPhone 實機測試**。
+
+## 介面流暢度與美感優化（2026-10-22，v147）
+
+- 課程正文、檢核題、題庫題目／選項、詳解改用標楷體（`--kai` 字型堆疊：DFKai-SB／BiauKai／標楷體…，沒有系統楷體的裝置如 iPad 用 Google Fonts「LXGW WenKai TC」補；離線時退回 serif）。標題、按鈕、標籤、提示框標題維持像素字 Cubic11。規則在 `css/style.css` 最後一段。
+- 課程播放器：底部「上一頁／繼續」固定在畫面下方（`.lp-foot` sticky）；桌機顯示「Enter ↵ 繼續」提示；手機在正文左滑＝繼續、右滑＝上一頁（圖、互動、表格、輸入框、可橫向捲動區不觸發）。作答後改用 `focusNext()`（`js/learn.js`）：焦點移到繼續但不讓瀏覽器自動捲，只在詳解超出畫面時捲動，題目開頭不會被戰鬥條蓋住。全站加 `[hidden]{display:none !important}`（原本 `.lp-prev` 的 display 蓋掉 hidden，第一頁也出現上一頁）。
+- 閱讀模式：課程標題列「📖 閱讀模式」切換 `<html>.read-light`，正文改米色紙張底（只覆寫 `.lp-body` 內的 CSS 變數與 hl-*／co-* 顏色），存在 localStorage `readLight`（不進存檔）。
+- 營地：最上方快捷列（繼續上次的課／開始學習、繼續遠征、題庫、錯題重刷）；`LEARN_UI.lastInfo()` 與 `App.go('learn', { resume: true })` 直接接著上次的課。營地場景可收起（`Store.settings.campFolded`）。修正 hub HTML 少關一層造成統計擠到右欄、選單跑到格線外；860px 以下選單排在統計前面。功能磚 emoji 圖示換成像素圖（學習模式＝羊皮紙 66、AI＝賢者 84、番茄鐘＝紅藥水 115、提示詞＝question、導入＝寶箱 89、3D 圖譜＝eye、視光室＝102），說明文字縮短；深淵遠征／導入素材不再另外上色。第一次選夥伴時背景顯示調暗的營地。
+- 題庫：篩選區可收起，上方固定摘要列（目前條件、題數、出征按鈕），收合狀態存 localStorage `bankFilters`；固定位置用 `--topbar-h`（main.js 以 ResizeObserver 更新）。
+- 視覺：課程圖片加深色外框與陰影、底色改米白；題卡紙張 `--paper` 調暗為 #f1ead9；學習目錄左邊條變細、單元卡片撐滿寬度。手機（≤480px）頂部標題可省略、等級徽章收起。
+- 沒做：延後載入 `data/learn.js`（6.7 MB，gzip 約 1.2 MB，之後有快取）；學習模組、匯入器、AI、字典、營地都在啟動時讀它，改動風險高，暫不處理。
+- QA：獨立 headless Edge（HTTP，1100px 與 390px 觸控）35 項通過（含 Enter 與左滑換頁、作答後題目可見、閱讀模式、題庫摘要列、營地收起、無頁面錯誤）；`tools/learn-battle-pin-qa/check.cjs` 30 項回歸通過。沒有實機 iPad 測試；標楷體在 iPad 上是用 LXGW WenKai 替代，需連網。
