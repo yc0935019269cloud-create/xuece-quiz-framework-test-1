@@ -1481,6 +1481,8 @@ select.px-in.small { padding: 0 4px; font-size: 13px; }
 .kl-dh { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
 .kl-big { font-size: 72px; line-height: 1; min-width: 84px; text-align: center; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
 .kl-nm { font-size: 22px; font-weight: 700; }
+.kl-zy { font-size: 15px; margin: 2px 0; }
+.kl-zy b { font-size: 18px; color: var(--gold, #ffd84a); }
 .kl-say { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 10px; }
 .kl-say .px-btn { display: inline-flex; align-items: baseline; gap: 6px; }
 .kl-say span { font-size: 18px; }

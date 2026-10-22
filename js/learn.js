@@ -1315,7 +1315,7 @@ const LEARN_UI = (() => {
       const draw = () => {
         const { g, x } = all[k];
         seen.add(k); const tile = body.querySelector(`.kl-t[data-k="${k}"]`); if (tile) tile.classList.add('seen');
-        m.body.innerHTML = `<div class="kl-d"><div class="kl-dh"><b class="kl-big" lang="${U.esc(s.lang || '')}">${U.esc(x.ch)}</b><div><div class="kl-nm">${U.esc(x.name || '')}${x.roman ? ` <span class="dim">${U.esc(x.roman)}</span>` : ''}</div><div class="dim small-t">${U.esc(g.name)}</div></div></div>
+        m.body.innerHTML = `<div class="kl-d"><div class="kl-dh"><b class="kl-big" lang="${U.esc(s.lang || '')}">${U.esc(x.ch)}</b><div><div class="kl-nm">${U.esc(x.name || '')}</div>${x.roman ? `<div class="kl-zy">近似音 <b>${U.esc(x.roman)}</b></div>` : ''}<div class="dim small-t">${U.esc(g.name)}</div></div></div>
           <div class="kl-say">${(x.say || []).map((v, i) => `<button class="px-btn small blue" data-say="${i}">🔊 ${U.esc(v.label)}<span lang="${U.esc(s.lang || '')}">${U.esc(v.t)}</span>${v.roman ? `<small>${U.esc(v.roman)}</small>` : ''}</button>`).join('')}</div>
           ${x.img ? `<img class="kl-img" src="${U.esc(U.img(x.img))}" alt="${U.esc(x.ch + ' 的字形由來')}">` : ''}
           <div class="kl-desc">${md(x.desc || '')}</div>
