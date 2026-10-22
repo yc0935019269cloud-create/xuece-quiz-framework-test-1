@@ -169,7 +169,10 @@ const PAD = (() => {
     // 拖曳標題列移動；右下角把手調整大小（U.grip）
     drag(U.$('.pad-head', panel), (r, dx, dy, ev) => { panel.style.left = U.clamp(ev.clientX - dx, 0, innerWidth - r.width) + 'px'; panel.style.top = U.clamp(ev.clientY - dy, 0, innerHeight - 40) + 'px'; panel.style.right = 'auto'; });
     U.grip(panel, { key: 'pad', minW: 260, minH: 240, mobileH: true, apply: (w, h) => { panel.style.width = w + 'px'; panel.style.height = h + 'px'; }, reset: () => { panel.style.width = panel.style.height = ''; } });
-    new ResizeObserver(() => redraw()).observe(U.$('.pad-paper', panel));
+    // 調整大小時不要每一格都重配畫布、重畫全部筆跡（很耗時）：先固定畫布原尺寸，放開後再重畫一次
+    panel.addEventListener('winresizestart', () => { const r = cv.getBoundingClientRect(); cv.style.setProperty('--cvw', r.width + 'px'); cv.style.setProperty('--cvh', r.height + 'px'); });
+    panel.addEventListener('winresizeend', () => redraw());
+    new ResizeObserver(() => { if (!panel.classList.contains('win-resizing')) redraw(); }).observe(U.$('.pad-paper', panel));
     sync();
   }
   function drag(handle, fn) {

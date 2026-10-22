@@ -1582,3 +1582,11 @@ html.read-light .lp-body .md code { background: #e8dcc0; color: #6b3fb0; }
 html.read-light .lp-body .md td, html.read-light .lp-body .md th { border-color: #c9b88f; }
 html.read-light .lp-body .lp-type { color: #120c18; }
 html.read-light .lp-foot { background: linear-gradient(to bottom, rgba(45,35,64,0), var(--panel) 18px); }
+
+/* 小工具縮放（計算機、計算紙、AI 助教）：拖曳中不做動畫、不選字，計算紙畫布先固定原尺寸；觸控把手可按範圍加大 */
+.win-resizing, .win-resizing * { transition: none !important; user-select: none !important; -webkit-user-select: none !important; }
+.win-resizing iframe { pointer-events: none; }
+.pad.win-resizing .pad-paper canvas { right: auto; bottom: auto; width: var(--cvw, 100%); height: var(--cvh, 100%); }
+.win-grip::after { content: ''; position: absolute; inset: -10px; }
+@media (hover: none) { .win-grip::after { inset: -16px; } }
+html:has(.win-resizing) { cursor: nwse-resize; }

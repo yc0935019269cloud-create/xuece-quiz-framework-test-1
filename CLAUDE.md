@@ -426,3 +426,9 @@
 - 視覺：課程圖片加深色外框與陰影、底色改米白；題卡紙張 `--paper` 調暗為 #f1ead9；學習目錄左邊條變細、單元卡片撐滿寬度。手機（≤480px）頂部標題可省略、等級徽章收起。
 - 沒做：延後載入 `data/learn.js`（6.7 MB，gzip 約 1.2 MB，之後有快取）；學習模組、匯入器、AI、字典、營地都在啟動時讀它，改動風險高，暫不處理。
 - QA：獨立 headless Edge（HTTP，1100px 與 390px 觸控）35 項通過（含 Enter 與左滑換頁、作答後題目可見、閱讀模式、題庫摘要列、營地收起、無頁面錯誤）；`tools/learn-battle-pin-qa/check.cjs` 30 項回歸通過。沒有實機 iPad 測試；標楷體在 iPad 上是用 LXGW WenKai 替代，需連網。
+
+## 小工具縮放更流暢（2026-10-22，v148）
+
+- `U.grip`（`js/util.js`）：pointermove 只記最新位置，每個畫面更新（requestAnimationFrame）套用一次；拖曳中面板加 `.win-resizing`（關掉動畫與選字、iframe 不吃事件），並發出 `winresizestart`／`winresizeend` 事件。只有計算機（minH 0、等比例縮放）才在拖曳中量實際高度。
+- 計算紙（`js/pad.js`）：拖曳時畫布固定在原尺寸（CSS 變數 `--cvw`／`--cvh`），不再每格重配畫布、重畫全部筆跡；放開後重畫一次。觸控時把手可按範圍加大（`.win-grip::after`）。
+- QA（headless Edge 1200px）：計算機、計算紙、AI 助教拖曳時每格 p95 17 ms（60 fps），尺寸正確保存、計算紙筆跡保留，無頁面錯誤。手機直式只調高度的路徑邏輯沒改，未另做實機測試。

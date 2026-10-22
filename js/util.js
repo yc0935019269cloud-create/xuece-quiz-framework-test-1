@@ -254,10 +254,10 @@ const U = (() => {
       e.preventDefault(); e.stopPropagation();
       const r = panel.getBoundingClientRect(), ox = e.clientX, oy = e.clientY;
       try { g.setPointerCapture(e.pointerId); } catch (err) {}
-      let last = null, move;
+      let last = null, move, pending = null, raf = 0;
       if (small() && opt.mobileH) {
         const fromBottom = r.bottom >= innerHeight - 2;   // 貼在底部的視窗：往上拉變高
-        move = ev => { const hh = fromBottom ? r.height - (ev.clientY - oy) : r.height + (ev.clientY - oy); setH(hh); last = [r.width, panel.getBoundingClientRect().height]; };
+        move = ev => { const hh = fromBottom ? r.height - (ev.clientY - oy) : r.height + (ev.clientY - oy); setH(hh); last = [r.width, clamp(hh, opt.minH || 200, innerHeight - 60)]; };
       } else {
         // 改用左上角定位，往右下拖就是往右下長（原本可能是靠右或靠下定位）
         Object.assign(panel.style, { left: r.left + 'px', top: r.top + 'px', right: 'auto', bottom: 'auto' });
@@ -267,12 +267,25 @@ const U = (() => {
           panel.style.left = Math.max(4, Math.min(r.left, innerWidth - 4 - w)) + 'px';
           panel.style.top = Math.max(4, Math.min(r.top, innerHeight - 4 - hh)) + 'px';
           last = [w, hh]; opt.apply(w, hh);
-          const b = panel.getBoundingClientRect();   // 等比例放大（計算機）實際高度可能超出畫面，往上挪
-          if (b.bottom > innerHeight - 4) panel.style.top = Math.max(4, innerHeight - 4 - b.height) + 'px';
+          if (opt.minH === 0) {   // 等比例放大（計算機）實際高度由內容決定，可能超出畫面，往上挪
+            const b = panel.getBoundingClientRect();
+            if (b.bottom > innerHeight - 4) panel.style.top = Math.max(4, innerHeight - 4 - b.height) + 'px';
+          }
         };
       }
-      const up = () => { g.removeEventListener('pointermove', move); g.removeEventListener('pointerup', up); g.removeEventListener('pointercancel', up); if (last) put({ w: Math.round(last[0]), h: Math.round(last[1]) }); };
-      g.addEventListener('pointermove', move); g.addEventListener('pointerup', up); g.addEventListener('pointercancel', up);
+      // 每個畫面更新只套用一次最新位置（pointermove 一秒可能上百次，逐次改大小會讓版面一直重排而卡頓）
+      const frame = () => { raf = 0; if (pending) { const ev = pending; pending = null; move(ev); } };
+      const onMove = ev => { pending = ev; if (!raf) raf = requestAnimationFrame(frame); };
+      panel.classList.add('win-resizing');
+      panel.dispatchEvent(new CustomEvent('winresizestart'));
+      const up = () => {
+        g.removeEventListener('pointermove', onMove); g.removeEventListener('pointerup', up); g.removeEventListener('pointercancel', up);
+        if (raf) { cancelAnimationFrame(raf); raf = 0; } if (pending) { move(pending); pending = null; }
+        panel.classList.remove('win-resizing');
+        panel.dispatchEvent(new CustomEvent('winresizeend'));
+        if (last) put({ w: Math.round(last[0]), h: Math.round(last[1]) });
+      };
+      g.addEventListener('pointermove', onMove); g.addEventListener('pointerup', up); g.addEventListener('pointercancel', up);
     });
     g.addEventListener('dblclick', e => { e.preventDefault(); put(null); panel.style.removeProperty('--mh'); opt.reset(); });
   }
