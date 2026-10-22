@@ -399,3 +399,12 @@
 - 同部位降權（v141）：`Store.partKey(q)`＝看圖寫名稱填答題（答案「中文 / English」）以中文名當部位，其他題各自一個；`Store.smartWeight`：錯題 3、沒作答 1、沒作答但同部位已在別題答過 0.3、寫對過 0。深淵 `drawQuestion` 依此權重抽（每抽一次重算，所以這一場剛答過的部位也會馬上降權）；自由遠征 `prefOrder` 依此加權排序，並把同一場裡重複的部位排在所有「第一次出現的部位」之後，寫對過的最後。
 - 看圖寫名稱題分兩格（v142）：`js/question.js` 的填答題，若每個 accept 都是「中文 / English」，就顯示「中文名稱」「English name」兩格（中文格 Enter 跳英文格、英文格 Enter 送出），兩格都要對才算對（任一組 accept 的中文與英文都用 `U.sameAns` 比對）；遠征、題庫練習、學習實戰共用。其他填答題維持一格。
 - 星號篩選分兩種（v143）：「★ 只刷星號部位本身」（`starOnly:'exact'`，只收答案就是該部位的題，例如各張圖上問頸內動脈的看圖題）與「★ 星號部位＋相關題」（`'related'`，再加標籤相同的題；舊設定 `true` 視為 related）。兩個 chip 互斥、再按一次關閉。`LEARN_UI.starredQids(mode)`。
+
+## 韓文：字母單元（2026-10-22，v144）
+
+- 新科目 `korean`（韓文，theme lang，`content/project.json`）與單元 `content/learn/korean/hangul-letters.json`：6 課（字形原理 4 張卡、基本子音 14、雙子音 5、基本母音 10、複合母音 11、全部 40 個一覽）。使用者要求「像眼解剖實驗那樣點開、聽發音、看字形由來，不要練習題、不被學習框架鎖住」。
+- 新步驟類型 `letters`（`js/learn.js` 的 `renderLetters`、`tools/build.py` 檢查、`css/style.css` 的 `.kl-*`）：`{type:'letters', lang:'ko', title, body, groups:[{name, desc, items:[{ch, name, roman, say:[{label,t,roman}], desc, img?, ex:{w,roman,zh}}]}]}`。點字母開視窗並自動念第一個 say，可聽名稱／收尾／例字，◀ ▶ 或方向鍵換字，不計分、不進複習盒。
+- 單元層級 `calm: true`：這個單元不顯示戰鬥條與戰鬥切換（`play()` 內的 `BON()`），不改使用者的全域戰鬥設定。
+- 發音：`GLOSS.speak(text, {lang:'ko'})` 先播 `assets/tts/ko/<每個字 Unicode 十六進位用 - 連接>.mp3`（109 個，約 900 KB，Google 翻譯語音合成），沒有檔案才連 Google 線上語音，最後 speechSynthesis。新增字詞後執行 `python tools/tts/gen_lang.py`（只下載缺的）。
+- 示意圖 `img/korean/*.svg`（側面發音器官：ㄱ 舌根擋喉、ㄴ 舌尖貼齦、ㅁ 口、ㅅ 齒、ㅇ 喉；天地人母音）是自繪示意圖，依《訓民正音》解例本制字原理；發音說明以現代首爾標準語、羅馬拼音用 2000 年國語羅馬字表記法。
+- QA：`tools/korean-qa/check.cjs`（桌機＋390px，6 課逐步、40 字母逐一開啟、發音請求都走本機音檔、圖載入、無橫向捲動、calm 無戰鬥條、無頁面錯誤；262 項通過）。沒有實機 iPhone 播放測試。

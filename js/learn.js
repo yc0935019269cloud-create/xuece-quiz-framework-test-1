@@ -4,7 +4,7 @@ const LEARN_UI = (() => {
   const STEP = {
     intro: { ic: '🚪', name: '導入' }, card: { ic: '📘', name: '概念' }, check: { ic: '❓', name: '檢核' },
     example: { ic: '🧩', name: '範例' }, practice: { ic: '⚔', name: '實戰' }, recap: { ic: '⭐', name: '回顧' },
-    diagram: { ic: '🔍', name: '圖解' }, interactive: { ic: '🎮', name: '互動' }
+    diagram: { ic: '🔍', name: '圖解' }, interactive: { ic: '🎮', name: '互動' }, letters: { ic: '🔤', name: '字母' }
   };
   const LEVEL = ['', '基礎', '標準', '進階'];
   const BOX_DAYS = [0, 1, 2, 4, 7, 15, 30]; // 複習盒：答對升一盒，答錯回第 1 盒
@@ -171,7 +171,7 @@ const LEARN_UI = (() => {
     check: ['換你試試看！', '剛剛學的，馬上用用看。'], example: ['先自己想一下，再看下一步。', '一步一步拆開來看～'],
     practice: ['上戰場！這是題庫裡的題目。', '實戰時間到！'], recap: ['快完成了，最後整理一下重點！'],
     ok: ['答對了！好厲害！', '完全正確✨', '就是這樣！'], ng: ['沒關係，看提示再試一次。', '差一點點！'], reveal: ['這題放進複習盒了，之後再挑戰。'],
-    diagram: ['先點點看每個標記，認識一下～', '看圖認位置，最後要考喔！'], interactive: ['動手玩玩看，觀察會發生什麼！', '拉拉看、按按看～']
+    diagram: ['先點點看每個標記，認識一下～', '看圖認位置，最後要考喔！'], interactive: ['動手玩玩看，觀察會發生什麼！', '拉拉看、按按看～'], letters: ['點一個字母聽聽看！', '慢慢點，聽發音、看由來～']
   };
   const imgList = v => (Array.isArray(v) ? v : v ? [v] : []);
   const imgsHTML = (v, src) => { const L = imgList(v), h = L.map(x => `<img class="lp-img" src="${U.esc(U.img(x))}" alt="" title="點圖放大">`).join(''); return (L.length > 1 ? `<div class="lp-imgs">${h}</div>` : h) + (src ? `<div class="lp-src">圖片來源：${inl(src)}</div>` : ''); };
@@ -218,6 +218,8 @@ const LEARN_UI = (() => {
       const words = String(s.html || '').replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
       if (words) L.push('互動畫面上的文字：' + cut(words, 600));
       L.push('（這是互動動畫，AI 看不到畫面）');
+    } else if (s.type === 'letters') {
+      L.push(`標題：${s.title || '字母'}`, s.body || '', ...(s.groups || []).map(g => `【${g.name}】\n` + g.items.map(x => `${x.ch}（${[x.name, x.roman].filter(Boolean).join('，')}）：${x.desc || ''}`).join('\n')));
     } else if (s.type === 'diagram') {
       L.push(`標題：${s.title || '看圖認識'}`, s.body || '', '圖上的標記：\n' + (s.points || []).map((x, i) => `${i + 1}. ${pt(x)}`).join('\n'));
     } else if (s.type === 'recap') {
@@ -600,6 +602,7 @@ const LEARN_UI = (() => {
   function play(p, l, restart) {
     cleanup();
     const key = lkey(p, l);
+    const BON = () => D.cfg.battle && !p.calm;   // calm 單元（例如韓文字母）不顯示戰鬥條
     const st = D.les[key] || (D.les[key] = { i: 0, done: 0, best: 0 });
     if (restart || !st.run || st.i >= l.steps.length) { st.i = 0; st.run = { ok: 0, n: 0, sub: 0, pk: {}, t0: Date.now() }; }
     D.last = { p: p.id, l: l.id };
@@ -608,7 +611,7 @@ const LEARN_UI = (() => {
     scr().innerHTML = `<div class="panel learn lp" data-pack="${U.esc(p.id)}" data-lesson="${U.esc(l.id)}" style="--sc:${S.color}">
       <div class="row lp-head"><button class="px-btn small" id="lpExit" title="進度會自動保存">✕ 離開</button>
         <div class="grow lp-title"><small>${U.esc(p.title)}</small><b>${U.esc(l.title)}</b></div>
-        <button class="px-btn small" id="lpBattle" title="戰鬥模式：答對攻擊、答錯被反擊（不影響學習進度）">${D.cfg.battle ? '⚔ 戰鬥中' : '🕊 平靜模式'}</button><span class="lp-cnt" id="lpCnt"></span></div>
+        <button class="px-btn small" id="lpBattle"${p.calm ? ' hidden' : ''} title="戰鬥模式：答對攻擊、答錯被反擊（不影響學習進度）">${BON() ? '⚔ 戰鬥中' : '🕊 平靜模式'}</button><span class="lp-cnt" id="lpCnt"></span></div>
       <div id="lpBattleAnchor" aria-hidden="true"></div>
       <div class="lp-battle-pin" id="lpBattlePin"><div class="lb" id="lbStage" style="--sc:${S.color}"></div></div>
       <div id="lpBattleSpacer" aria-hidden="true"></div>
@@ -700,10 +703,10 @@ const LEARN_UI = (() => {
 
     /* ---------- 畫面：場景只在換主題時重畫；勇者只建一次（出招動畫才不會被打斷）；怪物區與 HUD 分開更新 ---------- */
     function drawBattle() {
-      lb.style.display = D.cfg.battle ? '' : 'none';
+      lb.style.display = BON() ? '' : 'none';
       if (refreshBattlePin) refreshBattlePin();
-      U.$('#lpBattle').textContent = D.cfg.battle ? '⚔ 戰鬥中' : '🕊 平靜模式';
-      if (!D.cfg.battle) return;
+      U.$('#lpBattle').textContent = BON() ? '⚔ 戰鬥中' : '🕊 平靜模式';
+      if (!BON()) return;
       const th = B.boss ? FX.THEMES[lvIdx % 2 ? 5 : 4] : FX.THEMES[[2, 1, 3, 0][Math.max(0, lvIdx) % 4]];
       let sc = lb.querySelector('.lb-scene');
       if (!sc || sc.dataset.th !== th.id) {
@@ -790,7 +793,7 @@ const LEARN_UI = (() => {
     }
 
     function enterSeg() {
-      if (!D.cfg.battle) return;
+      if (!BON()) return;
       const k = segOf[st.i];
       if (B.seg === k) return drawBattle();
       if (B.chest) collectChest(true);
@@ -812,12 +815,12 @@ const LEARN_UI = (() => {
       hud();
     }
     function gainEnergy() {
-      if (!D.cfg.battle || B.seen.includes(st.i)) return;
+      if (!BON() || B.seen.includes(st.i)) return;
       B.seen.push(st.i); addEnergy(1); save();
     }
     /* 每一題結束（第一次作答的結果確定後）：記錄本段用掉的題數，怪物意圖前進一格 */
     function battleItem(firstOk) {
-      if (!D.cfg.battle) return;
+      if (!BON()) return;
       B.segUsed++; if (!firstOk) B.segWrong++;
       setTimeout(tickMon, 0);   // 等這一題的攻擊／反擊結算完再前進
     }
@@ -834,7 +837,7 @@ const LEARN_UI = (() => {
 
     /* ---------- 攻擊 ---------- */
     function onRightHit(firstOk) {
-      const m = monAt(); if (!D.cfg.battle || !m) return;
+      const m = monAt(); if (!BON() || !m) return;
       if (firstOk) { B.combo++; B.maxCombo = Math.max(B.maxCombo, B.combo); }
       const mult = firstOk ? 1 + 0.15 * Math.min(B.combo - 1, 8) : 1;
       const crit = firstOk && Math.random() < 0.08 + 0.03 * Math.min(B.combo, 8) + (clsId === 'ranger' ? 0.1 : 0);
@@ -873,7 +876,7 @@ const LEARN_UI = (() => {
       })();
     }
     function onWrongHit() {
-      const m = monAt(); if (!D.cfg.battle || !m) return;
+      const m = monAt(); if (!BON() || !m) return;
       const lost = B.combo;
       B.combo = 0;
       let dmg = m.charged ? 2 : 1; const wasCharged = m.charged; m.charged = false;
@@ -942,7 +945,7 @@ const LEARN_UI = (() => {
     }
     /* 怪物倒下或逃走後：本段還有題目 → 增援；整段零失誤清場 → 寶箱 */
     function afterKill(m) {
-      if (B.boss || !D.cfg.battle || B.mon !== m) return drawMon();   // 已經換段（玩家先按了繼續）就不再補怪
+      if (B.boss || !BON() || B.mon !== m) return drawMon();   // 已經換段（玩家先按了繼續）就不再補怪
       const k = B.seg, left = (segItems[k] || 0) - B.segUsed;
       if (left > 0) {
         B.mon = newMon(l.steps[st.i] && l.steps[st.i].type === 'practice', left);
@@ -961,7 +964,7 @@ const LEARN_UI = (() => {
       save(); setTimeout(drawMon, 500);
     }
     function collectChest(silent) { if (!B.chest) return; B.gems += 1; B.chests++; B.chest = false; if (!silent) drawMon(); else U.toast('自動收下寶箱：魂晶 +1'); }
-    U.$('#lpBattle').onclick = () => { D.cfg.battle = !D.cfg.battle; save(); SFX.play('click'); if (D.cfg.battle) { B.seg = -1; enterSeg(); } else drawBattle(); };
+    U.$('#lpBattle').onclick = () => { D.cfg.battle = !D.cfg.battle; save(); SFX.play('click'); if (BON()) { B.seg = -1; enterSeg(); } else drawBattle(); };
 
     function step() {
       cleanupQ();
@@ -1020,6 +1023,9 @@ const LEARN_UI = (() => {
       } else if (s.type === 'interactive') {
         renderInteractive(body, head, s);
         ready();
+      } else if (s.type === 'letters') {
+        renderLetters(body, head, s);
+        ready();
       } else if (s.type === 'example') {
         let shown = 0;
         body.innerHTML = head + `<h3>${U.esc(s.title || '範例')}</h3><div class="lp-prob">${md(s.problem)}</div><div class="lp-steps"></div>
@@ -1043,7 +1049,7 @@ const LEARN_UI = (() => {
           save();
         }
         if (!pk.items.length) { body.innerHTML = head + '<p class="dim">（這個實戰找不到可用的題目，先跳過）</p>'; ready(); return; }
-        if (D.cfg.battle && !B.mon && !pk.fought) { B.mon = newMon(true, pk.items.length); pk.fought = true; save(); drawBattle(); const eliteName = B.mon.name; setTimeout(() => say(`精英怪 ${eliteName} 擋住了去路！`), 300); }
+        if (BON() && !B.mon && !pk.fought) { B.mon = newMon(true, pk.items.length); pk.fought = true; save(); drawBattle(); const eliteName = B.mon.name; setTimeout(() => say(`精英怪 ${eliteName} 擋住了去路！`), 300); }
         sub();
         function sub() {
           cleanupQ();
@@ -1081,7 +1087,7 @@ const LEARN_UI = (() => {
       l.steps.forEach(x => { if (x.type === 'check') pool.push(x); if (x.type === 'practice') (x.checks || []).forEach(c => pool.push(c)); });
       for (let i = pool.length - 1; i >= 0; i--) if (ctxDep(pool[i])) pool.splice(i, 1);
       inBoss = true; prev.hidden = true;
-      if (!D.cfg.battle || pool.length < 2 || B.bossDone) return finish();
+      if (!BON() || pool.length < 2 || B.bossDone) return finish();
       const qs = U.shuffle(pool).slice(0, Math.min(5, Math.max(3, Math.ceil(pool.length / 2))));
       const th = C.bossTheme(p.subject), bd = U.pick(C.BOSS_DEFS[th]);
       if (B.chest) collectChest(true);
@@ -1125,7 +1131,7 @@ const LEARN_UI = (() => {
       const bt = R.bt || {};
       // 戰鬥評等：S＝90% 以上第一次答對＋沒倒下＋（有魔王就要討伐成功）＋連擊夠長；倒下最高 B
       const RK = ['C', 'B', 'A', 'S'];
-      const rank = bt.seg === undefined || !D.cfg.battle ? '' :
+      const rank = bt.seg === undefined || !BON() ? '' :
         acc >= 0.9 && !bt.falls && (!bt.bossDone || bt.bossWin) && (bt.maxCombo || 0) >= Math.min(5, R.n) ? 'S' :
         acc >= 0.75 && !bt.falls ? 'A' : acc >= 0.5 ? 'B' : 'C';
       const rankGem = rank === 'S' ? 3 : rank === 'A' ? 1 : 0;
@@ -1291,6 +1297,43 @@ const LEARN_UI = (() => {
       const m = U.modal({ title: s.title || '互動內容', body: '<iframe class="lp-iframe big" sandbox="allow-scripts"></iframe>' });
       m.el.classList.add('wide'); m.body.querySelector('iframe').srcdoc = doc;
     };
+  }
+
+  /* ---------- 字母卡牆：點一個字母 → 念發音、看字形由來（不計分，自由瀏覽；例如韓文子音母音） ---------- */
+  function renderLetters(body, head, s) {
+    const all = [];
+    (s.groups || []).forEach((g, gi) => g.items.forEach((x, ii) => all.push({ g, gi, x })));
+    const seen = new Set();
+    body.innerHTML = head + `<h3>${U.esc(s.title || '字母')}</h3>${s.body ? md(s.body) : ''}` +
+      (s.groups || []).map((g, gi) => `<section class="kl-g"><h4>${U.esc(g.name)}</h4>${g.desc ? `<div class="kl-gd">${md(g.desc)}</div>` : ''}<div class="kl-grid">${g.items.map(x => {
+        const k = all.findIndex(a => a.x === x);
+        return `<button class="kl-t" data-k="${k}"><b lang="${U.esc(s.lang || '')}">${U.esc(x.ch)}</b><small>${U.esc(x.roman || '')}</small></button>`;
+      }).join('')}</div></section>`).join('');
+    const say = (t, auto) => { if (typeof GLOSS !== 'undefined' && t) GLOSS.speak(t, { lang: s.lang || 'en' }); else if (!auto) U.toast('這台裝置沒辦法播放聲音'); };
+    const open = k => {
+      let m = null;
+      const draw = () => {
+        const { g, x } = all[k];
+        seen.add(k); const tile = body.querySelector(`.kl-t[data-k="${k}"]`); if (tile) tile.classList.add('seen');
+        m.body.innerHTML = `<div class="kl-d"><div class="kl-dh"><b class="kl-big" lang="${U.esc(s.lang || '')}">${U.esc(x.ch)}</b><div><div class="kl-nm">${U.esc(x.name || '')}${x.roman ? ` <span class="dim">${U.esc(x.roman)}</span>` : ''}</div><div class="dim small-t">${U.esc(g.name)}</div></div></div>
+          <div class="kl-say">${(x.say || []).map((v, i) => `<button class="px-btn small blue" data-say="${i}">🔊 ${U.esc(v.label)}<span lang="${U.esc(s.lang || '')}">${U.esc(v.t)}</span>${v.roman ? `<small>${U.esc(v.roman)}</small>` : ''}</button>`).join('')}</div>
+          ${x.img ? `<img class="kl-img" src="${U.esc(U.img(x.img))}" alt="${U.esc(x.ch + ' 的字形由來')}">` : ''}
+          <div class="kl-desc">${md(x.desc || '')}</div>
+          ${x.ex ? `<div class="kl-ex"><b>例字</b> <button class="px-btn small" data-ex>🔊 <span lang="${U.esc(s.lang || '')}">${U.esc(x.ex.w)}</span></button> <span class="dim">${U.esc(x.ex.roman || '')}</span> ${U.esc(x.ex.zh || '')}</div>` : ''}
+          <div class="row kl-nav"><button class="px-btn small" data-nav="-1"${k ? '' : ' disabled'}>◀ 上一個</button><span class="dim small-t">${k + 1} / ${all.length}</span><button class="px-btn small" data-nav="1"${k < all.length - 1 ? '' : ' disabled'}>下一個 ▶</button></div></div>`;
+        m.body.querySelectorAll('[data-say]').forEach(b => { b.onclick = () => say(x.say[+b.dataset.say].t); });
+        const ex = m.body.querySelector('[data-ex]'); if (ex) ex.onclick = () => say(x.ex.w);
+        m.body.querySelectorAll('[data-nav]').forEach(b => { b.onclick = () => go(+b.dataset.nav); });
+        if ((x.say || []).length) say(x.say[0].t, true);
+      };
+      const go = d => { const n = k + d; if (n < 0 || n >= all.length) return; k = n; draw(); };
+      const onKey = e => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { go(e.key === 'ArrowRight' ? 1 : -1); e.preventDefault(); e.stopPropagation(); } };
+      m = U.modal({ title: U.esc(s.title || '字母'), body: '', onClose: () => document.removeEventListener('keydown', onKey, true) });
+      m.el.classList.add('kl-modal');
+      document.addEventListener('keydown', onKey, true);
+      draw();
+    };
+    body.querySelectorAll('.kl-t').forEach(b => { b.onclick = () => open(+b.dataset.k); });
   }
 
   /* ---------- 複習（間隔重複） ---------- */

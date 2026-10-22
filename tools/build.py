@@ -31,7 +31,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT = os.path.join(ROOT, 'content')
 THEMES = ['lit', 'lang', 'math', 'calc', 'hist', 'sci', 'mix']
 QTYPES = ['single', 'multi', 'tf', 'fill', 'open']
-STEP_TYPES = ['intro', 'card', 'check', 'example', 'practice', 'recap', 'diagram', 'interactive']
+STEP_TYPES = ['intro', 'card', 'check', 'example', 'practice', 'recap', 'diagram', 'interactive', 'letters']
 CHECK_KINDS = ['single', 'multi', 'tf', 'fill', 'order', 'self', 'name']
 MD_FIELDS = ['body', 'q', 'hint', 'explain', 'problem', 'tip', 'front', 'back', 'desc', 'stem', 'text', 'task', 'html', 'demo']
 ID_RE = r'[A-Za-z0-9][A-Za-z0-9_-]*'
@@ -650,6 +650,18 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
                     R.err(SW, 'interactive 需要 html')
                 elif re.search(r'<script[^>]+src=|<link[^>]+href=["\']https?:', s['html'], re.I):
                     R.warn(SW, '互動內容引用了外部檔案，離線時會失效（請改成全部內嵌）')
+            elif t == 'letters':
+                gs = s.get('groups')
+                if not isinstance(gs, list) or not gs or not all(isinstance(g, dict) and is_str(g.get('name')) and isinstance(g.get('items'), list) and g['items'] for g in gs):
+                    R.err(SW, 'letters 需要 groups（每組有 name 與 items）')
+                else:
+                    for g in gs:
+                        for x in g['items']:
+                            if not isinstance(x, dict) or not is_str(x.get('ch')):
+                                R.err(SW, 'letters 的每個 item 需要 ch'); continue
+                            x['desc'] = join_md(x.get('desc') or '')
+                            if x.get('img') and not re.match(r'^(https?:|data:)', x['img']) and not os.path.exists(os.path.join(ROOT, x['img'])):
+                                R.warn(SW, f'找不到圖片 {x["img"]}')
             elif t == 'recap':
                 if not isinstance(s.get('points'), list) or not s['points']:
                     R.err(SW, 'recap 需要 points（重點陣列）')
