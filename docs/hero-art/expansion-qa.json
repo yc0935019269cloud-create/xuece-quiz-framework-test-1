@@ -1,0 +1,146 @@
+{
+  "actors": 128,
+  "poses": 1024,
+  "wardrobe": 128,
+  "classes": [
+    {
+      "cls": "knight",
+      "answerFlow": true,
+      "variants": [
+        "突刺斬",
+        "十字斬",
+        "躍擊",
+        "三連斬"
+      ],
+      "distribution": {
+        "三連斬": 100,
+        "躍擊": 100,
+        "十字斬": 101,
+        "突刺斬": 99
+      }
+    },
+    {
+      "cls": "mage",
+      "answerFlow": true,
+      "variants": [
+        "火球術",
+        "落雷",
+        "冰晶連射",
+        "奧術彈"
+      ],
+      "distribution": {
+        "冰晶連射": 100,
+        "奧術彈": 101,
+        "火球術": 100,
+        "落雷": 99
+      }
+    },
+    {
+      "cls": "ranger",
+      "answerFlow": true,
+      "variants": [
+        "疾射",
+        "箭雨",
+        "穿透箭",
+        "疾風雙射"
+      ],
+      "distribution": {
+        "疾射": 100,
+        "穿透箭": 100,
+        "箭雨": 101,
+        "疾風雙射": 99
+      }
+    },
+    {
+      "cls": "cleric",
+      "answerFlow": true,
+      "variants": [
+        "聖光柱",
+        "聖錘擊",
+        "神聖光球",
+        "星環祝禱"
+      ],
+      "distribution": {
+        "神聖光球": 100,
+        "聖錘擊": 101,
+        "星環祝禱": 100,
+        "聖光柱": 99
+      }
+    },
+    {
+      "cls": "berserker",
+      "answerFlow": true,
+      "variants": [
+        "猛躍重擊",
+        "旋風斬",
+        "劈砍",
+        "裂地橫掃"
+      ],
+      "distribution": {
+        "猛躍重擊": 100,
+        "裂地橫掃": 100,
+        "旋風斬": 100,
+        "劈砍": 100
+      }
+    },
+    {
+      "cls": "assassin",
+      "answerFlow": true,
+      "variants": [
+        "影步突刺",
+        "雙刃交叉",
+        "旋身連斬",
+        "躍影落刃"
+      ],
+      "distribution": {
+        "旋身連斬": 100,
+        "躍影落刃": 100,
+        "雙刃交叉": 100,
+        "影步突刺": 100
+      }
+    },
+    {
+      "cls": "monk",
+      "answerFlow": true,
+      "variants": [
+        "破風直拳",
+        "連環雙掌",
+        "旋身掃腿",
+        "騰空震地"
+      ],
+      "distribution": {
+        "旋身掃腿": 100,
+        "騰空震地": 100,
+        "破風直拳": 100,
+        "連環雙掌": 100
+      }
+    },
+    {
+      "cls": "bard",
+      "answerFlow": true,
+      "variants": [
+        "撥弦音刃",
+        "雙聲和弦",
+        "迴旋樂句",
+        "共鳴終章"
+      ],
+      "distribution": {
+        "迴旋樂句": 100,
+        "共鳴終章": 100,
+        "雙聲和弦": 100,
+        "撥弦音刃": 100
+      }
+    }
+  ],
+  "errors": [],
+  "offline": true,
+  "mobile": true,
+  "cacheLimit": 24,
+  "ok": true,
+  "animations": {
+    "normal": 512,
+    "critical": 128,
+    "total": 640,
+    "bad": []
+  }
+}

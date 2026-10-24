@@ -432,3 +432,16 @@
 - `U.grip`（`js/util.js`）：pointermove 只記最新位置，每個畫面更新（requestAnimationFrame）套用一次；拖曳中面板加 `.win-resizing`（關掉動畫與選字、iframe 不吃事件），並發出 `winresizestart`／`winresizeend` 事件。只有計算機（minH 0、等比例縮放）才在拖曳中量實際高度。
 - 計算紙（`js/pad.js`）：拖曳時畫布固定在原尺寸（CSS 變數 `--cvw`／`--cvh`），不再每格重配畫布、重畫全部筆跡；放開後重畫一次。觸控時把手可按範圍加大（`.win-grip::after`）。
 - QA（headless Edge 1200px）：計算機、計算紙、AI 助教拖曳時每格 p95 17 ms（60 fps），尺寸正確保存、計算紙筆跡保留，無頁面錯誤。手機直式只調高度的路徑邏輯沒改，未另做實機測試。
+
+
+## 新職業與第二批造型（2026-10-24，v149）
+
+- 新增影刃 `assassin`、武僧 `monk`、吟遊詩人 `bard`，各男／女 8 款；原五職業各追加男／女 4 款（`m5..m8`／`f5..f8`）。合計 **128 款圖集造型，1,024 個原繪姿勢**，其中 88 款本次新增。每款待機／眨眼／四招／爆擊蓄力與重擊，由共用播放器組成動畫；PNG 正本未程式改繪。
+- 新職業解鎖費 140／150／160 魂晶；各職業 `m1`／`f1` 造型免費，預設穿 `m1`。`js/store.js` 管預設，`js/heroes.js` 管售價：原款價格不變，5～8 款為 200／220／240／260。保留舊造型 ID、已購造型與騎士免費薔薇近衛；不重設存檔、不另送禮物。兌換券排除所有免費款，衣櫃計數依實際清單。
+- 能力／15 技能在 `js/content.js`、`js/run.js`：影刃滿血先手與閃避，武僧連擊護盾，吟遊詩人第四次答對增傷與治療。`js/fx.js` 各四招與爆擊；`js/learn.js` 沿用既有課程流程，補新職業被動與各自的能量必殺技。
+- 圖片快取保留最近 24 張，另保護畫面內／出招中的角色，避免瀏覽衣櫃後一直持有 128 張已解碼圖集。`HeroAnim.cacheSize/cacheLimit` 可唯讀檢查；靜態姿勢與播放共用 2px 畫布邊界。
+- 產製與接手：[SESSION_NOTE_HERO_EXPANSION.md](SESSION_NOTE_HERO_EXPANSION.md)。設計／每款完整提示詞：`docs/hero-art/expansion-old-actors.json`、`expansion-new-actors.json`；生成與修正原路徑在同目錄的 expansion generation logs／`generation-old/`／`generation-root/`。原先 40 張 PNG 的 Git blob 比對完全相同。
+- 圖集正本仍在 `assets/heroes/`。`python tools/sync_hero_expansion.py` 合併 128 款 registry／manifest，之後 `python tools/hero_atlas.py` 生成 metadata；不要手改 hero-atlas.js。`--allow-missing` 只供產製中準備 registry，不能當完成檢查。舊版固定 40 款的 QA 工具不適用本版，改用 `check_hero_expansion*.cjs`。
+- 展示頁 `docs/hero-art/preview.html` 可 file://，按職業切換 16 款並試播；快取 v149。驗證與界限見交接文件及 `docs/hero-art/expansion-*-qa.json`。Edge 的 file:// 畫布受來源規則限制，像素讀取在 HTTP 驗證，離線流程另測；沒有實機 iPad 或真實帳號雲端往返驗證。
+
+- 本版正式 QA：88 新圖集／128 atlas、1,024 姿勢、128 購買換裝、8 職業實際答題、640 次動畫、154 項 1000／390px 路線／存檔、32 支 JS 與 strict check 全通過。摘要 `docs/hero-art/expansion-qa-summary.json`；獨立 context 的 localStorage 已還原。

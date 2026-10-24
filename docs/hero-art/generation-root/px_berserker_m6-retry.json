@@ -1,0 +1,7 @@
+{
+  "id": "px_berserker_m6",
+  "prompt": "Edit the referenced character animation atlas. Preserve the moss-green-haired male stone berserker identity, stone armor, rugged sword and same art direction, with eight distinct poses idle, blink, four distinct attacks, criticalCharge and criticalImpact, exactly four columns and two rows. Correct the layout: the sword and effects of bottom row pose2 currently touch bottom row pose3. Draw all8 full-body sprites SMALLER, with20 percent transparent empty margin around each complete sprite including weapon/effects in its individual cell. All eight characters MUST be disconnected, no touching neighboring sprite, no particle or sword crossing any cell boundary. Keep critical effects tiny and compact and remove floating rocks. Keep consistent baseline and same outfit all8. Genuine transparent background and generous safe margins.",
+  "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-d04580b0-e696-4a51-b3a1-839f0b67d2d8.png",
+  "src": "assets/heroes/berserker_m6.png",
+  "retry": true
+}

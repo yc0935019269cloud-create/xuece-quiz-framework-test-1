@@ -6,12 +6,17 @@ const FX = (() => {
     mage: { main: 129 },
     ranger: { main: 'bow', bow: true },
     cleric: { main: 130 },
-    berserker: { main: 118, big: true }
+    berserker: { main: 118, big: true },
+    assassin: { main: 105, off: 105 },
+    monk: { unarmed: true },
+    bard: { lyre: true }
   };
   /* hd=true：使用 Scale2x 放大後的細緻版圖（造型不變、像素點變小），營地用 */
   const hdImg = (ic, size) => `<span class="sp" style="width:${size}px;height:${size}px"><img class="px" src="${typeof ic === 'string' && ic.startsWith('sk:') ? 'assets/skins/hd/tile_' + ic.slice(3) : 'assets/kenney/hd/' + (typeof ic === 'number' ? 'tile_' + String(ic).padStart(4, '0') : ic)}.png?v=2" alt=""></span>`;
   function weaponHTML(cls, hd, k = 1) {
     const w = WEAPONS[cls] || WEAPONS.knight;
+    if (w.unarmed) return '';
+    if (w.lyre) return `<div class="weapon main" ${hd ? '' : 'id="eWeapon"'}><svg width="${Math.round(46*k)}" height="${Math.round(46*k)}" viewBox="0 0 46 46" aria-hidden="true"><path d="M10 7 Q4 29 16 34 L30 34 Q42 29 36 7 M9 11 H37 M16 13 V31 M23 13 V31 M30 13 V31 M14 36 H32" fill="none" stroke="#e8bc66" stroke-width="3" stroke-linecap="round"/></svg></div>`;
     const ic = (i, s) => hd ? hdImg(i, Math.round(s * k)) : SP.icon(i, s);
     return `${w.off ? `<div class="weapon offhand">${ic(w.off, 34)}</div>` : ''}<div class="weapon main ${w.bow ? 'bow' : ''} ${w.big ? 'big' : ''}" ${hd ? '' : 'id="eWeapon"'}>${ic(w.main, w.big ? 54 : 46)}</div>`;
   }
@@ -93,6 +98,19 @@ const FX = (() => {
   }
   function wpn(c, ms = 450) { cls(weapon(), c, ms + 50); }
 
+  // 音符與拳風使用短暫 DOM 粒子；不依賴額外圖檔，file:// 也能播放。
+  async function musicNote(note = '♪', offY = 0, ms = 320, color = '#7edfcf') {
+    const a = pos('hero'), b = pos('mon');
+    const e = add(`<span class="fx" style="left:${a.x}px;top:${a.y+offY}px;font-size:30px;font-weight:bold;color:${color};text-shadow:0 0 10px ${color}">${note}</span>`, ms + 80);
+    if (e && e.animate) e.animate([{ transform: 'translate(0,0) rotate(-15deg)', opacity: 1 }, { transform: `translate(${b.x-a.x}px,${b.y-a.y-offY}px) rotate(20deg)`, opacity: 0.4 }], { duration: ms, easing: 'ease-in' });
+    await U.sleep(ms);
+  }
+  function palmWave(size = 80, color = '#ffbd75') {
+    const m = pos('mon');
+    const e = add(`<span class="fx" style="left:${m.x-size/2}px;top:${m.y-size/2}px;width:${size}px;height:${size}px;border:4px solid ${color};border-radius:50%;box-shadow:0 0 16px ${color},inset 0 0 10px ${color}"></span>`, 420);
+    if (e && e.animate) e.animate([{ transform: 'scale(.2)', opacity: 1 }, { transform: 'scale(1.4)', opacity: 0 }], { duration: 420, easing: 'ease-out' });
+  }
+
   /* ---------------- 作答當下的衝擊（iPhone 只會在點擊那一刻震一下，所以打擊感集中在這一刻） ----------------
    * kind：hit 普通／combo 連擊／kill 打倒、破防／crit 暴擊／ult 必殺技／hurt 被打／heavy 蓄力一擊或倒下
    * 畫面定格（hit-stop）＋閃光＋晃動＋低頻音效；opt.buzz=false 時不另外送 Android 震動（呼叫端自己送） */
@@ -151,6 +169,24 @@ const FX = (() => {
       '裂地橫掃': async () => { heroMove('atk-dash', 650); await S(180); slash(80, '#ffa58c', 120); dust(); await S(180); slash(-20, '#ffd0b5', 100); burst('#ec5454', 80); shake(true); SFX.play('hit'); }
     }
   };
+  ATTACKS.assassin = {
+    '影步突刺': async () => { heroMove('atk-dash', 420); wpn('w-swing', 220); await S(130); vslash('#c6a3ff', -45); sparks(5, '#b89aff'); SFX.play('hit'); },
+    '雙刃交叉': async () => { heroMove('atk-dash', 520); await S(150); slash(-45, '#d8baff', 78); await S(80); slash(45, '#aef1ee', 78); SFX.play('hit'); },
+    '旋身連斬': async () => { heroMove('atk-dash', 570); wpn('w-spin', 450); for (const a of [-60, 15, 80]) { await S(100); slash(a, '#b89aff', 72); } sparks(8, '#d8baff'); SFX.play('hit'); },
+    '躍影落刃': async () => { heroMove('atk-jump', 560); await S(290); vslash('#d8baff', 24); vslash('#aef1ee', -24); burst('#b89aff', 70); SFX.play('crit'); }
+  };
+  ATTACKS.monk = {
+    '破風直拳': async () => { heroMove('atk-dash', 400); await S(150); palmWave(64); sparks(5, '#ffe1ad'); SFX.play('hit'); },
+    '連環雙掌': async () => { heroMove('atk-dash', 560); await S(140); palmWave(60); SFX.play('hit'); await S(150); palmWave(92, '#ffe1ad'); SFX.play('hit'); },
+    '旋身掃腿': async () => { heroMove('atk-dash', 580); await S(220); slash(75, '#ffbd75', 110); dust(); palmWave(75); SFX.play('hit'); },
+    '騰空震地': async () => { heroMove('atk-jump', 570); await S(300); palmWave(112, '#ffe1ad'); dust(); shake(); SFX.play('crit'); }
+  };
+  ATTACKS.bard = {
+    '撥弦音刃': async () => { heroMove('atk-cast', 480); wpn('w-raise'); await S(120); await musicNote('♪'); slash(25, '#7edfcf', 70); SFX.play('hit'); },
+    '雙聲和弦': async () => { heroMove('atk-cast', 620); await S(100); musicNote('♫', -16, 300); await S(120); await musicNote('♪', 16, 300, '#ffe1ad'); burst('#7edfcf', 84); SFX.play('heal'); },
+    '迴旋樂句': async () => { heroMove('atk-recoil', 620); await S(100); for (const o of [-18, 0, 18]) { musicNote('♪', o, 270); await S(90); } await S(190); sparks(9, '#7edfcf'); SFX.play('hit'); },
+    '共鳴終章': async () => { heroMove('atk-cast', 620); wpn('w-raise'); await S(200); await musicNote('♫', -8, 250, '#ffe1ad'); palmWave(112, '#7edfcf'); burst('#ffe1ad', 88); SFX.play('crit'); }
+  };
   /* 播放攻擊；回傳招式名稱 */
   const attackBags = {};
   function pickAttack(clsId) {
@@ -164,7 +200,7 @@ const FX = (() => {
     return bag.pop();
   }
   async function critical(clsId) {
-    const colors={knight:'#cfe3ff',mage:'#c7a5ff',ranger:'#a8f0ba',cleric:'#fff2b0',berserker:'#ff917c'};
+    const colors={knight:'#cfe3ff',mage:'#c7a5ff',ranger:'#a8f0ba',cleric:'#fff2b0',berserker:'#ff917c',assassin:'#c6a3ff',monk:'#ffbd75',bard:'#7edfcf'};
     const color=colors[clsId]||'#ffcf4a';
     const motion=window.HeroAnim ? HeroAnim.play(hero(),'critical') : Promise.resolve();
     await S(300);
@@ -172,6 +208,9 @@ const FX = (() => {
     else if(clsId==='mage'){bolt();burst(color,155);}
     else if(clsId==='ranger'){await proj('arrow pierce',170);slash(0,color,120);}
     else if(clsId==='cleric'){pillar('rgba(255,240,170,.9)');burst(color,150);}
+    else if(clsId==='assassin'){for(const a of [-60,60,-20,20]){slash(a,color,100);await S(65);}vslash('#e7fff9',-35);}
+    else if(clsId==='monk'){palmWave(90,color);await S(120);palmWave(140,'#ffe1ad');dust();}
+    else if(clsId==='bard'){for(const [i,n] of ['♪','♫','♪'].entries()){musicNote(n,(i-1)*20,230,color);await S(70);}await S(150);palmWave(140,color);}
     else {vslash(color,15);dust();slash(70,'#ffe2bc',150);}
     flash('rgba(255,245,215,.38)');shake(true);burst(color,140);sparks(12,color);SFX.play('crit');HAPTIC.buzz([60,30,60,30,140]);   // 爆擊最強
     await motion;

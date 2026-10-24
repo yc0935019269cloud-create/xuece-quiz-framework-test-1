@@ -1,0 +1,702 @@
+{
+  "actors": 128,
+  "minIdleHeight": {
+    "id": "px_cleric_f7",
+    "idleHeight": 120.3,
+    "metric": 128.0
+  },
+  "maxIdleHeight": {
+    "id": "px_monk_f6",
+    "idleHeight": 140.8,
+    "metric": 128.0
+  },
+  "limitedByCanvas": [
+    {
+      "id": "px_berserker_m7",
+      "idleHeight": 121.8,
+      "metric": 122.9
+    },
+    {
+      "id": "px_bard_m4",
+      "idleHeight": 122.6,
+      "metric": 115.5
+    },
+    {
+      "id": "px_assassin_f5",
+      "idleHeight": 123.6,
+      "metric": 113.6
+    },
+    {
+      "id": "px_bard_m3",
+      "idleHeight": 124.8,
+      "metric": 117.5
+    },
+    {
+      "id": "px_assassin_f2",
+      "idleHeight": 125.2,
+      "metric": 115.2
+    },
+    {
+      "id": "px_berserker_f5",
+      "idleHeight": 126.2,
+      "metric": 125.6
+    },
+    {
+      "id": "px_berserker_m5",
+      "idleHeight": 128.6,
+      "metric": 124.6
+    },
+    {
+      "id": "px_assassin_m8",
+      "idleHeight": 129.0,
+      "metric": 122.8
+    },
+    {
+      "id": "px_assassin_m5",
+      "idleHeight": 134.8,
+      "metric": 127.1
+    }
+  ],
+  "actorsByHeight": [
+    {
+      "id": "px_cleric_f7",
+      "idleHeight": 120.3,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_m8",
+      "idleHeight": 121.4,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_f4",
+      "idleHeight": 121.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_m7",
+      "idleHeight": 121.8,
+      "metric": 122.9
+    },
+    {
+      "id": "px_mage_f1",
+      "idleHeight": 122.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_f4",
+      "idleHeight": 122.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_f6",
+      "idleHeight": 122.2,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_f2",
+      "idleHeight": 122.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_m4",
+      "idleHeight": 122.6,
+      "metric": 115.5
+    },
+    {
+      "id": "px_berserker_f4",
+      "idleHeight": 122.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_f6",
+      "idleHeight": 123.1,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_f2",
+      "idleHeight": 123.1,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_f2",
+      "idleHeight": 123.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_f5",
+      "idleHeight": 123.6,
+      "metric": 113.6
+    },
+    {
+      "id": "px_mage_f4",
+      "idleHeight": 123.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_f3",
+      "idleHeight": 123.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_m2",
+      "idleHeight": 123.8,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_f7",
+      "idleHeight": 123.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_f3",
+      "idleHeight": 124.3,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_f5",
+      "idleHeight": 124.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_f8",
+      "idleHeight": 124.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_m8",
+      "idleHeight": 124.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_f7",
+      "idleHeight": 124.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_m3",
+      "idleHeight": 124.8,
+      "metric": 117.5
+    },
+    {
+      "id": "px_knight_f8",
+      "idleHeight": 124.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_f3",
+      "idleHeight": 125.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_m5",
+      "idleHeight": 125.1,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_f7",
+      "idleHeight": 125.1,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_m7",
+      "idleHeight": 125.1,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_f5",
+      "idleHeight": 125.2,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_f2",
+      "idleHeight": 125.2,
+      "metric": 115.2
+    },
+    {
+      "id": "px_cleric_f1",
+      "idleHeight": 125.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_m6",
+      "idleHeight": 125.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_f6",
+      "idleHeight": 125.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_m4",
+      "idleHeight": 125.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_f3",
+      "idleHeight": 126.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_f5",
+      "idleHeight": 126.2,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_m1",
+      "idleHeight": 126.2,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_f5",
+      "idleHeight": 126.2,
+      "metric": 125.6
+    },
+    {
+      "id": "px_mage_f8",
+      "idleHeight": 126.4,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_f3",
+      "idleHeight": 126.4,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_m3",
+      "idleHeight": 126.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_m4",
+      "idleHeight": 126.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_m4",
+      "idleHeight": 126.8,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_m7",
+      "idleHeight": 126.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_m6",
+      "idleHeight": 127.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_m8",
+      "idleHeight": 127.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_m1",
+      "idleHeight": 127.2,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_m6",
+      "idleHeight": 127.2,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_f1",
+      "idleHeight": 127.4,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_m7",
+      "idleHeight": 127.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_f5",
+      "idleHeight": 127.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_f1",
+      "idleHeight": 127.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_m3",
+      "idleHeight": 127.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_m4",
+      "idleHeight": 127.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_f8",
+      "idleHeight": 127.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_m5",
+      "idleHeight": 127.8,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_m5",
+      "idleHeight": 127.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_m3",
+      "idleHeight": 128.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_m3",
+      "idleHeight": 128.1,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_m3",
+      "idleHeight": 128.1,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_f4",
+      "idleHeight": 128.4,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_f7",
+      "idleHeight": 128.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_m8",
+      "idleHeight": 128.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_f2",
+      "idleHeight": 128.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_m5",
+      "idleHeight": 128.6,
+      "metric": 124.6
+    },
+    {
+      "id": "px_bard_f2",
+      "idleHeight": 128.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_f6",
+      "idleHeight": 128.8,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_m1",
+      "idleHeight": 128.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_m8",
+      "idleHeight": 128.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_f1",
+      "idleHeight": 128.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_m1",
+      "idleHeight": 129.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_m8",
+      "idleHeight": 129.0,
+      "metric": 122.8
+    },
+    {
+      "id": "px_bard_m6",
+      "idleHeight": 129.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_m1",
+      "idleHeight": 129.3,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_f6",
+      "idleHeight": 129.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_f3",
+      "idleHeight": 129.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_m6",
+      "idleHeight": 129.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_m5",
+      "idleHeight": 129.8,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_m2",
+      "idleHeight": 129.8,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_m2",
+      "idleHeight": 129.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_f2",
+      "idleHeight": 130.3,
+      "metric": 128.0
+    },
+    {
+      "id": "px_cleric_m2",
+      "idleHeight": 130.3,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_m6",
+      "idleHeight": 130.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_berserker_f8",
+      "idleHeight": 130.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_m8",
+      "idleHeight": 131.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_mage_m2",
+      "idleHeight": 131.1,
+      "metric": 128.0
+    },
+    {
+      "id": "px_knight_m2",
+      "idleHeight": 131.3,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_f8",
+      "idleHeight": 131.4,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_m4",
+      "idleHeight": 131.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_m4",
+      "idleHeight": 131.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_ranger_m7",
+      "idleHeight": 131.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_m2",
+      "idleHeight": 131.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_m5",
+      "idleHeight": 131.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_m1",
+      "idleHeight": 132.2,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_m7",
+      "idleHeight": 132.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_f7",
+      "idleHeight": 133.4,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_f6",
+      "idleHeight": 134.3,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_f7",
+      "idleHeight": 134.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_m7",
+      "idleHeight": 134.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_f6",
+      "idleHeight": 134.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_m1",
+      "idleHeight": 134.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_m2",
+      "idleHeight": 134.6,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_m5",
+      "idleHeight": 134.8,
+      "metric": 127.1
+    },
+    {
+      "id": "px_assassin_f1",
+      "idleHeight": 134.8,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_f4",
+      "idleHeight": 134.8,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_m3",
+      "idleHeight": 135.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_f7",
+      "idleHeight": 135.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_f1",
+      "idleHeight": 135.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_f5",
+      "idleHeight": 135.5,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_f3",
+      "idleHeight": 135.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_m8",
+      "idleHeight": 135.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_f4",
+      "idleHeight": 136.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_f8",
+      "idleHeight": 136.4,
+      "metric": 128.0
+    },
+    {
+      "id": "px_bard_m7",
+      "idleHeight": 136.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_f2",
+      "idleHeight": 137.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_m6",
+      "idleHeight": 137.1,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_f8",
+      "idleHeight": 137.4,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_m4",
+      "idleHeight": 137.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_assassin_m6",
+      "idleHeight": 138.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_f1",
+      "idleHeight": 138.8,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_f4",
+      "idleHeight": 138.9,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_f5",
+      "idleHeight": 139.1,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_m5",
+      "idleHeight": 139.2,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_m3",
+      "idleHeight": 139.7,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_m1",
+      "idleHeight": 140.0,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_f3",
+      "idleHeight": 140.1,
+      "metric": 128.0
+    },
+    {
+      "id": "px_monk_f6",
+      "idleHeight": 140.8,
+      "metric": 128.0
+    }
+  ]
+}

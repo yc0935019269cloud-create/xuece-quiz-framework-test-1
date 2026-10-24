@@ -1,0 +1,15 @@
+{
+  "id": "px_mage_f7",
+  "cls": "mage",
+  "gender": "female",
+  "name": "珊瑚幻歌",
+  "src": "assets/heroes/mage_f7.png",
+  "file": "mage_f7.png",
+  "accent": "#f4aca5",
+  "desc": "female sea mage with coral pink twin buns, seafoam and pearl robe, shell hair ornament and coral branching staff",
+  "prompt": "Use case: stylized-concept. Corrected isolated sprite atlas. Preserve this reference character identity exactly: chibi female sea mage, coral pink twin bun curls, shell/coral hair ornaments, pearl and seafoam robe, coral staff. Keep high-detail crisp pixel-art. CRITICAL all eight full-body sprites are 30% SMALLER than reference and strictly isolated in a FOUR COLUMNS TWO ROWS grid. Each entire sprite, hair staff and effect, occupies ONLY central60% WIDTH and70% HEIGHT of its cell, with at least20% transparent left/right margins. Nothing can touch or cross another sprite. NO sweeping water rings, NO wide waves, NO diffuse glow. Magic effects are tiny compact blue dots directly beside staff head only. Top row neutral idle, same idle eyesclosed blink, staff forward cast, one hand forward cast. Bottom row staff overhead cast, low staff pointing cast, spellbook charge, forward finishing cast with tiny star sparkle. Same outfit and scale, feet entirely visible, all face right threequarter. Genuine alpha transparent background everywhere around sprites, no scene, shadow, ground, haze, labels, text or gridlines.",
+  "tool": "built-in image_gen.imagegen",
+  "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-b8aa2325-21ef-40d5-a2bf-5e54c7dcdfff.png",
+  "replaces": "px_mage_f7.json; original kept at generatedPath in that log",
+  "reason": "broad water effect connected neighboring sprites"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "px_cleric_f6",
+  "cls": "cleric",
+  "gender": "female",
+  "name": "海珠祝禱",
+  "src": "assets/heroes/cleric_f6.png",
+  "file": "cleric_f6.png",
+  "accent": "#b0e5db",
+  "desc": "female maritime cleric with blue short wavy hair, pale turquoise hood, pearl-trimmed white robe, shell-headed staff and small prayer book",
+  "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female maritime cleric with blue short wavy hair, pale turquoise hood, pearl-trimmed white robe, shell-headed staff and small prayer book. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+  "tool": "built-in image_gen.imagegen",
+  "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-88501b01-46ec-4c27-90a3-8315efc690d9.png"
+}

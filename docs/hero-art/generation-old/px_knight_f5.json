@@ -1,0 +1,13 @@
+{
+  "id": "px_knight_f5",
+  "cls": "knight",
+  "gender": "female",
+  "name": "翠羽誓劍",
+  "src": "assets/heroes/knight_f5.png",
+  "file": "knight_f5.png",
+  "accent": "#91cdaf",
+  "desc": "female knight with short emerald bob, silver feather-shaped armor, dark green cape, leaf shield and slim longsword",
+  "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female knight with short emerald bob, silver feather-shaped armor, dark green cape, leaf shield and slim longsword. ",
+  "tool": "built-in image_gen.imagegen",
+  "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-c822fa01-f52c-40bc-b82d-966d25a89832.png"
+}

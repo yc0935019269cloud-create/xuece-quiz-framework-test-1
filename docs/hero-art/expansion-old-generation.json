@@ -1,0 +1,1200 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "reference": "assets/heroes/knight_m2.png",
+  "summary": {
+    "actors": 40,
+    "saved": 40,
+    "documented": 40
+  },
+  "actors": [
+    {
+      "id": "px_knight_m5",
+      "cls": "knight",
+      "gender": "male",
+      "name": "風隼領衛",
+      "src": "assets/heroes/knight_m5.png",
+      "file": "knight_m5.png",
+      "accent": "#c8e0ee",
+      "desc": "male knight with ash-blond swept short hair, ivory and navy falcon-shaped plate armor, split blue tabard, angular kite shield and a long silver sword",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male knight with ash-blond swept short hair, ivory and navy falcon-shaped plate armor, split blue tabard, angular kite shield and a long silver sword. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_knight_m5",
+          "cls": "knight",
+          "gender": "male",
+          "name": "風隼領衛",
+          "src": "assets/heroes/knight_m5.png",
+          "file": "knight_m5.png",
+          "accent": "#c8e0ee",
+          "desc": "male knight with ash-blond swept short hair, ivory and navy falcon-shaped plate armor, split blue tabard, angular kite shield and a long silver sword",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male knight with ash-blond swept short hair, ivory and navy falcon-shaped plate armor, split blue tabard, angular kite shield and a long silver sword. ",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-9459b480-8a37-4396-a1bd-d940a7c6caef.png",
+          "log": "docs\\hero-art\\generation-old\\px_knight_m5.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-9459b480-8a37-4396-a1bd-d940a7c6caef.png"
+    },
+    {
+      "id": "px_knight_m6",
+      "cls": "knight",
+      "gender": "male",
+      "name": "赤砂劍誓",
+      "src": "assets/heroes/knight_m6.png",
+      "file": "knight_m6.png",
+      "accent": "#e3b56c",
+      "desc": "male desert knight with dark brown tied-back hair, bronze lamellar over cream tunic, red sash, small round shield and broad curved sword",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male desert knight with dark brown tied-back hair, bronze lamellar over cream tunic, red sash, small round shield and broad curved sword. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_knight_m6",
+          "cls": "knight",
+          "gender": "male",
+          "name": "赤砂劍誓",
+          "src": "assets/heroes/knight_m6.png",
+          "file": "knight_m6.png",
+          "accent": "#e3b56c",
+          "desc": "male desert knight with dark brown tied-back hair, bronze lamellar over cream tunic, red sash, small round shield and broad curved sword",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male desert knight with dark brown tied-back hair, bronze lamellar over cream tunic, red sash, small round shield and broad curved sword. ",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-11e3fd01-0f80-4474-a9a5-fa5dd802dfe8.png",
+          "log": "docs\\hero-art\\generation-old\\px_knight_m6.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-11e3fd01-0f80-4474-a9a5-fa5dd802dfe8.png"
+    },
+    {
+      "id": "px_knight_m7",
+      "cls": "knight",
+      "gender": "male",
+      "name": "霜鐵城衛",
+      "src": "assets/heroes/knight_m7.png",
+      "file": "knight_m7.png",
+      "accent": "#8bd5ed",
+      "desc": "male ice knight with white cropped hair, heavy slate armor with teal crystal shoulder pieces, fur collar, massive rectangular shield and ice-edged longsword",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male ice knight with white cropped hair, heavy slate armor with teal crystal shoulder pieces, fur collar, massive rectangular shield and ice-edged longsword. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_knight_m7",
+          "cls": "knight",
+          "gender": "male",
+          "name": "霜鐵城衛",
+          "src": "assets/heroes/knight_m7.png",
+          "file": "knight_m7.png",
+          "accent": "#8bd5ed",
+          "desc": "male ice knight with white cropped hair, heavy slate armor with teal crystal shoulder pieces, fur collar, massive rectangular shield and ice-edged longsword",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male ice knight with white cropped hair, heavy slate armor with teal crystal shoulder pieces, fur collar, massive rectangular shield and ice-edged longsword. ",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-a477b551-93b6-4fd6-9810-39a2487be356.png",
+          "log": "docs\\hero-art\\generation-old\\px_knight_m7.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-a477b551-93b6-4fd6-9810-39a2487be356.png"
+    },
+    {
+      "id": "px_knight_m8",
+      "cls": "knight",
+      "gender": "male",
+      "name": "星辰王侍",
+      "src": "assets/heroes/knight_m8.png",
+      "file": "knight_m8.png",
+      "accent": "#b7adff",
+      "desc": "male royal knight with long violet hair in low ponytail, elegant midnight armor with star motifs, white cape, violet shield and needle-point rapier",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male royal knight with long violet hair in low ponytail, elegant midnight armor with star motifs, white cape, violet shield and needle-point rapier. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_knight_m8",
+          "cls": "knight",
+          "gender": "male",
+          "name": "星辰王侍",
+          "src": "assets/heroes/knight_m8.png",
+          "file": "knight_m8.png",
+          "accent": "#b7adff",
+          "desc": "male royal knight with long violet hair in low ponytail, elegant midnight armor with star motifs, white cape, violet shield and needle-point rapier",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male royal knight with long violet hair in low ponytail, elegant midnight armor with star motifs, white cape, violet shield and needle-point rapier. ",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-d4c71b37-e03f-4c82-85f8-7ac5563ef5c4.png",
+          "log": "docs\\hero-art\\generation-old\\px_knight_m8.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-d4c71b37-e03f-4c82-85f8-7ac5563ef5c4.png"
+    },
+    {
+      "id": "px_knight_f5",
+      "cls": "knight",
+      "gender": "female",
+      "name": "翠羽誓劍",
+      "src": "assets/heroes/knight_f5.png",
+      "file": "knight_f5.png",
+      "accent": "#91cdaf",
+      "desc": "female knight with short emerald bob, silver feather-shaped armor, dark green cape, leaf shield and slim longsword",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female knight with short emerald bob, silver feather-shaped armor, dark green cape, leaf shield and slim longsword. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_knight_f5",
+          "cls": "knight",
+          "gender": "female",
+          "name": "翠羽誓劍",
+          "src": "assets/heroes/knight_f5.png",
+          "file": "knight_f5.png",
+          "accent": "#91cdaf",
+          "desc": "female knight with short emerald bob, silver feather-shaped armor, dark green cape, leaf shield and slim longsword",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female knight with short emerald bob, silver feather-shaped armor, dark green cape, leaf shield and slim longsword. ",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-c822fa01-f52c-40bc-b82d-966d25a89832.png",
+          "log": "docs\\hero-art\\generation-old\\px_knight_f5.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-c822fa01-f52c-40bc-b82d-966d25a89832.png"
+    },
+    {
+      "id": "px_knight_f6",
+      "cls": "knight",
+      "gender": "female",
+      "name": "沙月女衛",
+      "src": "assets/heroes/knight_f6.png",
+      "file": "knight_f6.png",
+      "accent": "#eac79a",
+      "desc": "female desert knight with long sandy braid, bronze plate over white layered desert cloth, crescent shield and curved saber",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female desert knight with long sandy braid, bronze plate over white layered desert cloth, crescent shield and curved saber. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_knight_f6",
+          "cls": "knight",
+          "gender": "female",
+          "name": "沙月女衛",
+          "src": "assets/heroes/knight_f6.png",
+          "file": "knight_f6.png",
+          "accent": "#eac79a",
+          "desc": "female desert knight with long sandy braid, bronze plate over white layered desert cloth, crescent shield and curved saber",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female desert knight with long sandy braid, bronze plate over white layered desert cloth, crescent shield and curved saber. ",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-29c03e07-a7e3-47b1-8777-ead06aa50a75.png",
+          "log": "docs\\hero-art\\generation-old\\px_knight_f6.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-29c03e07-a7e3-47b1-8777-ead06aa50a75.png"
+    },
+    {
+      "id": "px_knight_f7",
+      "cls": "knight",
+      "gender": "female",
+      "name": "霜蘭劍衛",
+      "src": "assets/heroes/knight_f7.png",
+      "file": "knight_f7.png",
+      "accent": "#a3d9ee",
+      "desc": "female frost knight with blue-white twin braids, pale blue full armor with fur shoulders, crystal kite shield and glowing ice sword",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female frost knight with blue-white twin braids, pale blue full armor with fur shoulders, crystal kite shield and glowing ice sword. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_knight_f7",
+          "cls": "knight",
+          "gender": "female",
+          "name": "霜蘭劍衛",
+          "src": "assets/heroes/knight_f7.png",
+          "file": "knight_f7.png",
+          "accent": "#a3d9ee",
+          "desc": "female frost knight with blue-white twin braids, pale blue full armor with fur shoulders, crystal kite shield and glowing ice sword",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female frost knight with blue-white twin braids, pale blue full armor with fur shoulders, crystal kite shield and glowing ice sword. ",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-4c87ae1f-1e81-429d-abf9-6e33b06d374e.png",
+          "log": "docs\\hero-art\\generation-old\\px_knight_f7.json"
+        },
+        {
+          "id": "px_knight_f7",
+          "cls": "knight",
+          "gender": "female",
+          "name": "霜蘭劍衛",
+          "src": "assets/heroes/knight_f7.png",
+          "file": "knight_f7.png",
+          "accent": "#a3d9ee",
+          "desc": "female frost knight with blue-white twin braids, pale blue full armor with fur shoulders, crystal kite shield and glowing ice sword",
+          "prompt": "Use case: stylized-concept. Create a corrected production sprite atlas using reference image solely for exact character identity, blue-white twin braids, fur shoulders, icy silver armor and blue crystal sword/shield. CRITICAL LAYOUT: all eight chibi full-body sprites MUST BE AT LEAST 25% SMALLER THAN REFERENCE, placed on a 4-column 2-row regular grid. Every sprite, including all hair, cape, sword and effects, fits inside only the CENTRAL 60% WIDTH and 70% HEIGHT of its own cell, leaving at least 20% completely transparent padding on every left/right cell edge. Absolutely NO contacting or overlapping adjacent sprites. No background, no shadow, no ground, NO broad glow or haze: true alpha transparency. Top row idle, eyes closed blink, diagonal sword slash, forward short sword thrust. Bottom row overhead sword swing, low short sword sweep, crouched charge, finishing thrust with very small ice shards. Every actor faces right in 3/4, consistent outfit and same scale. Crisp high-detail chibi pixel-art style. Transparent PNG, no text or gridlines. Sprite layout and isolation more important than large characters.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-d67b93a1-fa2b-4557-9902-b154083ddfa2.png",
+          "replaces": "px_knight_f7.json; previous original kept at generatedPath in that log",
+          "reason": "bottom row neighboring poses joined into one alpha component",
+          "log": "docs\\hero-art\\generation-old\\px_knight_f7-correction.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-d67b93a1-fa2b-4557-9902-b154083ddfa2.png"
+    },
+    {
+      "id": "px_knight_f8",
+      "cls": "knight",
+      "gender": "female",
+      "name": "曜金女爵",
+      "src": "assets/heroes/knight_f8.png",
+      "file": "knight_f8.png",
+      "accent": "#ffd58c",
+      "desc": "female golden knight with curly auburn ponytail, ivory-gold armor, short burgundy skirt armor, sun shield and broad gold-hilt sword",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female golden knight with curly auburn ponytail, ivory-gold armor, short burgundy skirt armor, sun shield and broad gold-hilt sword. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_knight_f8",
+          "cls": "knight",
+          "gender": "female",
+          "name": "曜金女爵",
+          "src": "assets/heroes/knight_f8.png",
+          "file": "knight_f8.png",
+          "accent": "#ffd58c",
+          "desc": "female golden knight with curly auburn ponytail, ivory-gold armor, short burgundy skirt armor, sun shield and broad gold-hilt sword",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female golden knight with curly auburn ponytail, ivory-gold armor, short burgundy skirt armor, sun shield and broad gold-hilt sword. ",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:/Users/USER/.codex/generated_images/01a16e39-aea1-7612-b15c-7d8f01fbb0a7/exec-d5bae53a-ffd1-4d55-b440-0f46cfd78f38.png",
+          "pathVerification": "SHA256 matches workspace original",
+          "log": "docs\\hero-art\\generation-old\\px_knight_f8.json"
+        }
+      ],
+      "currentGeneratedPath": "C:/Users/USER/.codex/generated_images/01a16e39-aea1-7612-b15c-7d8f01fbb0a7/exec-d5bae53a-ffd1-4d55-b440-0f46cfd78f38.png"
+    },
+    {
+      "id": "px_mage_m5",
+      "cls": "mage",
+      "gender": "male",
+      "name": "沙海秘賢",
+      "src": "assets/heroes/mage_m5.png",
+      "file": "mage_m5.png",
+      "accent": "#e3b478",
+      "desc": "male sand mage with curly black hair and turban, amber layered robes, floating scroll and ornate crescent staff",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male sand mage with curly black hair and turban, amber layered robes, floating scroll and ornate crescent staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_mage_m5",
+          "cls": "mage",
+          "gender": "male",
+          "name": "沙海秘賢",
+          "src": "assets/heroes/mage_m5.png",
+          "file": "mage_m5.png",
+          "accent": "#e3b478",
+          "desc": "male sand mage with curly black hair and turban, amber layered robes, floating scroll and ornate crescent staff",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male sand mage with curly black hair and turban, amber layered robes, floating scroll and ornate crescent staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-2bbe8b3a-8aa4-48ae-877c-7d901f05ffd9.png",
+          "log": "docs\\hero-art\\generation-old\\px_mage_m5.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-2bbe8b3a-8aa4-48ae-877c-7d901f05ffd9.png"
+    },
+    {
+      "id": "px_mage_m6",
+      "cls": "mage",
+      "gender": "male",
+      "name": "墨羽咒師",
+      "src": "assets/heroes/mage_m6.png",
+      "file": "mage_m6.png",
+      "accent": "#9aa6d6",
+      "desc": "male raven mage with slick silver undercut, feathered black-violet cloak, high collar, raven-head staff and violet spellbook",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male raven mage with slick silver undercut, feathered black-violet cloak, high collar, raven-head staff and violet spellbook. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_mage_m6",
+          "cls": "mage",
+          "gender": "male",
+          "name": "墨羽咒師",
+          "src": "assets/heroes/mage_m6.png",
+          "file": "mage_m6.png",
+          "accent": "#9aa6d6",
+          "desc": "male raven mage with slick silver undercut, feathered black-violet cloak, high collar, raven-head staff and violet spellbook",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male raven mage with slick silver undercut, feathered black-violet cloak, high collar, raven-head staff and violet spellbook. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-1d8b8de2-dfa2-46c2-836e-be4eace2913e.png",
+          "log": "docs\\hero-art\\generation-old\\px_mage_m6.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-1d8b8de2-dfa2-46c2-836e-be4eace2913e.png"
+    },
+    {
+      "id": "px_mage_m7",
+      "cls": "mage",
+      "gender": "male",
+      "name": "碧潮學士",
+      "src": "assets/heroes/mage_m7.png",
+      "file": "mage_m7.png",
+      "accent": "#7dd5d0",
+      "desc": "male sea mage with tousled turquoise hair, navy coat with pale seafoam trims, coral staff and floating water orb",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male sea mage with tousled turquoise hair, navy coat with pale seafoam trims, coral staff and floating water orb. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_mage_m7",
+          "cls": "mage",
+          "gender": "male",
+          "name": "碧潮學士",
+          "src": "assets/heroes/mage_m7.png",
+          "file": "mage_m7.png",
+          "accent": "#7dd5d0",
+          "desc": "male sea mage with tousled turquoise hair, navy coat with pale seafoam trims, coral staff and floating water orb",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male sea mage with tousled turquoise hair, navy coat with pale seafoam trims, coral staff and floating water orb. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-ae9a72b1-3a92-4b83-be47-3e42525f8f74.png",
+          "log": "docs\\hero-art\\generation-old\\px_mage_m7.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-ae9a72b1-3a92-4b83-be47-3e42525f8f74.png"
+    },
+    {
+      "id": "px_mage_m8",
+      "cls": "mage",
+      "gender": "male",
+      "name": "晴空術士",
+      "src": "assets/heroes/mage_m8.png",
+      "file": "mage_m8.png",
+      "accent": "#c4e4ff",
+      "desc": "male sky mage with warm brown windswept hair, white-blue short cape and fitted robes, winged staff and small cloud spellbook",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male sky mage with warm brown windswept hair, white-blue short cape and fitted robes, winged staff and small cloud spellbook. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_mage_m8",
+          "cls": "mage",
+          "gender": "male",
+          "name": "晴空術士",
+          "src": "assets/heroes/mage_m8.png",
+          "file": "mage_m8.png",
+          "accent": "#c4e4ff",
+          "desc": "male sky mage with warm brown windswept hair, white-blue short cape and fitted robes, winged staff and small cloud spellbook",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male sky mage with warm brown windswept hair, white-blue short cape and fitted robes, winged staff and small cloud spellbook. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-66d0ccd8-d6a0-4abc-adf2-fbfc11da12a0.png",
+          "log": "docs\\hero-art\\generation-old\\px_mage_m8.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-66d0ccd8-d6a0-4abc-adf2-fbfc11da12a0.png"
+    },
+    {
+      "id": "px_mage_f5",
+      "cls": "mage",
+      "gender": "female",
+      "name": "赤砂星巫",
+      "src": "assets/heroes/mage_f5.png",
+      "file": "mage_f5.png",
+      "accent": "#e4b1a0",
+      "desc": "female astrologer with dark auburn braid, desert ivory and rust-red robe, gold crescent headdress and star-topped staff",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female astrologer with dark auburn braid, desert ivory and rust-red robe, gold crescent headdress and star-topped staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_mage_f5",
+          "cls": "mage",
+          "gender": "female",
+          "name": "赤砂星巫",
+          "src": "assets/heroes/mage_f5.png",
+          "file": "mage_f5.png",
+          "accent": "#e4b1a0",
+          "desc": "female astrologer with dark auburn braid, desert ivory and rust-red robe, gold crescent headdress and star-topped staff",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female astrologer with dark auburn braid, desert ivory and rust-red robe, gold crescent headdress and star-topped staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-83a807e7-2c13-4a35-b6ee-9608cd976ced.png",
+          "log": "docs\\hero-art\\generation-old\\px_mage_f5.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-83a807e7-2c13-4a35-b6ee-9608cd976ced.png"
+    },
+    {
+      "id": "px_mage_f6",
+      "cls": "mage",
+      "gender": "female",
+      "name": "墨夜書姬",
+      "src": "assets/heroes/mage_f6.png",
+      "file": "mage_f6.png",
+      "accent": "#c0b3df",
+      "desc": "female scholar mage with straight black chin-length bob, violet monocle, elaborate black-purple academic coat and large book plus feather wand",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female scholar mage with straight black chin-length bob, violet monocle, elaborate black-purple academic coat and large book plus feather wand. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_mage_f6",
+          "cls": "mage",
+          "gender": "female",
+          "name": "墨夜書姬",
+          "src": "assets/heroes/mage_f6.png",
+          "file": "mage_f6.png",
+          "accent": "#c0b3df",
+          "desc": "female scholar mage with straight black chin-length bob, violet monocle, elaborate black-purple academic coat and large book plus feather wand",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female scholar mage with straight black chin-length bob, violet monocle, elaborate black-purple academic coat and large book plus feather wand. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-8435a42f-e657-4598-b036-64cadef6b8e0.png",
+          "log": "docs\\hero-art\\generation-old\\px_mage_f6.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-8435a42f-e657-4598-b036-64cadef6b8e0.png"
+    },
+    {
+      "id": "px_mage_f7",
+      "cls": "mage",
+      "gender": "female",
+      "name": "珊瑚幻歌",
+      "src": "assets/heroes/mage_f7.png",
+      "file": "mage_f7.png",
+      "accent": "#f4aca5",
+      "desc": "female sea mage with coral pink twin buns, seafoam and pearl robe, shell hair ornament and coral branching staff",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female sea mage with coral pink twin buns, seafoam and pearl robe, shell hair ornament and coral branching staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_mage_f7",
+          "cls": "mage",
+          "gender": "female",
+          "name": "珊瑚幻歌",
+          "src": "assets/heroes/mage_f7.png",
+          "file": "mage_f7.png",
+          "accent": "#f4aca5",
+          "desc": "female sea mage with coral pink twin buns, seafoam and pearl robe, shell hair ornament and coral branching staff",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female sea mage with coral pink twin buns, seafoam and pearl robe, shell hair ornament and coral branching staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-97f307df-b002-429f-9cac-0798bf0f7d1d.png",
+          "log": "docs\\hero-art\\generation-old\\px_mage_f7.json"
+        },
+        {
+          "id": "px_mage_f7",
+          "cls": "mage",
+          "gender": "female",
+          "name": "珊瑚幻歌",
+          "src": "assets/heroes/mage_f7.png",
+          "file": "mage_f7.png",
+          "accent": "#f4aca5",
+          "desc": "female sea mage with coral pink twin buns, seafoam and pearl robe, shell hair ornament and coral branching staff",
+          "prompt": "Use case: stylized-concept. Corrected isolated sprite atlas. Preserve this reference character identity exactly: chibi female sea mage, coral pink twin bun curls, shell/coral hair ornaments, pearl and seafoam robe, coral staff. Keep high-detail crisp pixel-art. CRITICAL all eight full-body sprites are 30% SMALLER than reference and strictly isolated in a FOUR COLUMNS TWO ROWS grid. Each entire sprite, hair staff and effect, occupies ONLY central60% WIDTH and70% HEIGHT of its cell, with at least20% transparent left/right margins. Nothing can touch or cross another sprite. NO sweeping water rings, NO wide waves, NO diffuse glow. Magic effects are tiny compact blue dots directly beside staff head only. Top row neutral idle, same idle eyesclosed blink, staff forward cast, one hand forward cast. Bottom row staff overhead cast, low staff pointing cast, spellbook charge, forward finishing cast with tiny star sparkle. Same outfit and scale, feet entirely visible, all face right threequarter. Genuine alpha transparent background everywhere around sprites, no scene, shadow, ground, haze, labels, text or gridlines.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-b8aa2325-21ef-40d5-a2bf-5e54c7dcdfff.png",
+          "replaces": "px_mage_f7.json; original kept at generatedPath in that log",
+          "reason": "broad water effect connected neighboring sprites",
+          "log": "docs\\hero-art\\generation-old\\px_mage_f7-correction.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-b8aa2325-21ef-40d5-a2bf-5e54c7dcdfff.png"
+    },
+    {
+      "id": "px_mage_f8",
+      "cls": "mage",
+      "gender": "female",
+      "name": "青空魔女",
+      "src": "assets/heroes/mage_f8.png",
+      "file": "mage_f8.png",
+      "accent": "#a6d9ef",
+      "desc": "female sky witch with fluffy pale blue hair, oversized ivory pointed hat with blue ribbons, navy coat and feather-tipped wand",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female sky witch with fluffy pale blue hair, oversized ivory pointed hat with blue ribbons, navy coat and feather-tipped wand. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_mage_f8",
+          "cls": "mage",
+          "gender": "female",
+          "name": "青空魔女",
+          "src": "assets/heroes/mage_f8.png",
+          "file": "mage_f8.png",
+          "accent": "#a6d9ef",
+          "desc": "female sky witch with fluffy pale blue hair, oversized ivory pointed hat with blue ribbons, navy coat and feather-tipped wand",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female sky witch with fluffy pale blue hair, oversized ivory pointed hat with blue ribbons, navy coat and feather-tipped wand. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-72712146-7d4e-4a12-954b-ead023565a2d.png",
+          "log": "docs\\hero-art\\generation-old\\px_mage_f8.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-72712146-7d4e-4a12-954b-ead023565a2d.png"
+    },
+    {
+      "id": "px_ranger_m5",
+      "cls": "ranger",
+      "gender": "male",
+      "name": "砂狼遊獵",
+      "src": "assets/heroes/ranger_m5.png",
+      "file": "ranger_m5.png",
+      "accent": "#d9ba8c",
+      "desc": "male desert ranger with dark short hair, sand hood pushed back, layered leather wraps, wolf buckle and recurved bronze bow",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male desert ranger with dark short hair, sand hood pushed back, layered leather wraps, wolf buckle and recurved bronze bow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_ranger_m5",
+          "cls": "ranger",
+          "gender": "male",
+          "name": "砂狼遊獵",
+          "src": "assets/heroes/ranger_m5.png",
+          "file": "ranger_m5.png",
+          "accent": "#d9ba8c",
+          "desc": "male desert ranger with dark short hair, sand hood pushed back, layered leather wraps, wolf buckle and recurved bronze bow",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male desert ranger with dark short hair, sand hood pushed back, layered leather wraps, wolf buckle and recurved bronze bow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-4528415f-8a45-48a4-a6a2-8229d600b128.png",
+          "log": "docs\\hero-art\\generation-old\\px_ranger_m5.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-4528415f-8a45-48a4-a6a2-8229d600b128.png"
+    },
+    {
+      "id": "px_ranger_m6",
+      "cls": "ranger",
+      "gender": "male",
+      "name": "霧松巡林",
+      "src": "assets/heroes/ranger_m6.png",
+      "file": "ranger_m6.png",
+      "accent": "#9fbfbd",
+      "desc": "male ranger with long silver braid, pine-green traveling coat, wide-brimmed hunter hat and tall carved wooden longbow",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male ranger with long silver braid, pine-green traveling coat, wide-brimmed hunter hat and tall carved wooden longbow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_ranger_m6",
+          "cls": "ranger",
+          "gender": "male",
+          "name": "霧松巡林",
+          "src": "assets/heroes/ranger_m6.png",
+          "file": "ranger_m6.png",
+          "accent": "#9fbfbd",
+          "desc": "male ranger with long silver braid, pine-green traveling coat, wide-brimmed hunter hat and tall carved wooden longbow",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male ranger with long silver braid, pine-green traveling coat, wide-brimmed hunter hat and tall carved wooden longbow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-01d7220a-851c-4ef7-a1cd-ba9c1f95b5ed.png",
+          "log": "docs\\hero-art\\generation-old\\px_ranger_m6.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-01d7220a-851c-4ef7-a1cd-ba9c1f95b5ed.png"
+    },
+    {
+      "id": "px_ranger_m7",
+      "cls": "ranger",
+      "gender": "male",
+      "name": "鷹眼機弩",
+      "src": "assets/heroes/ranger_m7.png",
+      "file": "ranger_m7.png",
+      "accent": "#b4a8d5",
+      "desc": "male crossbow ranger with spiky violet hair and brass goggles, navy leather coat, metal shoulder guard and compact mechanical crossbow",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male crossbow ranger with spiky violet hair and brass goggles, navy leather coat, metal shoulder guard and compact mechanical crossbow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_ranger_m7",
+          "cls": "ranger",
+          "gender": "male",
+          "name": "鷹眼機弩",
+          "src": "assets/heroes/ranger_m7.png",
+          "file": "ranger_m7.png",
+          "accent": "#b4a8d5",
+          "desc": "male crossbow ranger with spiky violet hair and brass goggles, navy leather coat, metal shoulder guard and compact mechanical crossbow",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male crossbow ranger with spiky violet hair and brass goggles, navy leather coat, metal shoulder guard and compact mechanical crossbow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-e03e2dff-47f9-4eb2-bf35-4c0e3d1a5dba.png",
+          "log": "docs\\hero-art\\generation-old\\px_ranger_m7.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-e03e2dff-47f9-4eb2-bf35-4c0e3d1a5dba.png"
+    },
+    {
+      "id": "px_ranger_m8",
+      "cls": "ranger",
+      "gender": "male",
+      "name": "赤楓追跡",
+      "src": "assets/heroes/ranger_m8.png",
+      "file": "ranger_m8.png",
+      "accent": "#dc9073",
+      "desc": "male autumn ranger with auburn ponytail, red maple cloak, cream leather vest and elegant black-gold compound bow",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male autumn ranger with auburn ponytail, red maple cloak, cream leather vest and elegant black-gold compound bow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_ranger_m8",
+          "cls": "ranger",
+          "gender": "male",
+          "name": "赤楓追跡",
+          "src": "assets/heroes/ranger_m8.png",
+          "file": "ranger_m8.png",
+          "accent": "#dc9073",
+          "desc": "male autumn ranger with auburn ponytail, red maple cloak, cream leather vest and elegant black-gold compound bow",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male autumn ranger with auburn ponytail, red maple cloak, cream leather vest and elegant black-gold compound bow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-e3fc3b21-c4ff-482b-8fbf-15cdb4e8ceef.png",
+          "log": "docs\\hero-art\\generation-old\\px_ranger_m8.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-e3fc3b21-c4ff-482b-8fbf-15cdb4e8ceef.png"
+    },
+    {
+      "id": "px_ranger_f5",
+      "cls": "ranger",
+      "gender": "female",
+      "name": "沙狐弓姬",
+      "src": "assets/heroes/ranger_f5.png",
+      "file": "ranger_f5.png",
+      "accent": "#e1c184",
+      "desc": "female desert ranger with long black side braid, tan hood, red desert sash, fitted modest leather gear and ornate recurved bow",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female desert ranger with long black side braid, tan hood, red desert sash, fitted modest leather gear and ornate recurved bow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_ranger_f5",
+          "cls": "ranger",
+          "gender": "female",
+          "name": "沙狐弓姬",
+          "src": "assets/heroes/ranger_f5.png",
+          "file": "ranger_f5.png",
+          "accent": "#e1c184",
+          "desc": "female desert ranger with long black side braid, tan hood, red desert sash, fitted modest leather gear and ornate recurved bow",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female desert ranger with long black side braid, tan hood, red desert sash, fitted modest leather gear and ornate recurved bow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-b7e6c040-6322-45f6-97e7-8d5313044e1b.png",
+          "log": "docs\\hero-art\\generation-old\\px_ranger_f5.json"
+        },
+        {
+          "id": "px_ranger_f5",
+          "cls": "ranger",
+          "gender": "female",
+          "name": "沙狐弓姬",
+          "src": "assets/heroes/ranger_f5.png",
+          "file": "ranger_f5.png",
+          "accent": "#e1c184",
+          "desc": "female desert ranger with long black side braid, tan hood, red desert sash, fitted modest leather gear and ornate recurved bow",
+          "prompt": "Use case: stylized-concept. Corrected production sprite atlas with EXACT character identity of reference: chibi female desert ranger, black long side braid, tan hood, red sash/cape, modest bronze/leather desert gear and gold turquoise recurved bow. Crisp high-detail chibi pixel art. Layout mandatory: 4 COLUMNS, 2 ROWS, exactly8 entirely separate full-body sprites. All sprites at least30% SMALLER THAN REFERENCE, centered individually inside their cell. Hair, cape, bow and arrows ALL contained inside central60% WIDTH and70% HEIGHT of its cell. At least20% fully transparent blank margin on every left/rightcell edge. No sprite, weapon, arrow or glow touches another sprite. Use compact shortbow and short arrows. Toprow idle bow lowered, same pose eyesclosed blink, bowdraw tilted slightly up, bowdraw aimingright. Bottomrow aimup with bentarms compact bow, kneel aimsame shortbowright, crouchedchargedbow with tiny orange dot only, finishing shortarrow shotright. NO shooting arrow across cells; NO long trails, electricityrings, broad glow, scene, ground, shadows, haze, text or gridlines. Pure alpha transparency outside sprites. Allface right threequarter, same outfit and size, feetand weapons fullyvisible.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-4a3a2c97-9aca-4ec6-b69a-2df3875751a8.png",
+          "replaces": "px_ranger_f5.json; original kept at generatedPath in that log",
+          "reason": "neighboring bow arrow/effect connected spritecomponents",
+          "log": "docs\\hero-art\\generation-old\\px_ranger_f5-correction.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-4a3a2c97-9aca-4ec6-b69a-2df3875751a8.png"
+    },
+    {
+      "id": "px_ranger_f6",
+      "cls": "ranger",
+      "gender": "female",
+      "name": "松霧巡守",
+      "src": "assets/heroes/ranger_f6.png",
+      "file": "ranger_f6.png",
+      "accent": "#a0cfb5",
+      "desc": "female forest ranger with silver-green bob, mushroom-shaped green hunter hat, layered forest cape and branch-shaped longbow",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female forest ranger with silver-green bob, mushroom-shaped green hunter hat, layered forest cape and branch-shaped longbow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_ranger_f6",
+          "cls": "ranger",
+          "gender": "female",
+          "name": "松霧巡守",
+          "src": "assets/heroes/ranger_f6.png",
+          "file": "ranger_f6.png",
+          "accent": "#a0cfb5",
+          "desc": "female forest ranger with silver-green bob, mushroom-shaped green hunter hat, layered forest cape and branch-shaped longbow",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female forest ranger with silver-green bob, mushroom-shaped green hunter hat, layered forest cape and branch-shaped longbow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-ad78adfe-77b1-4b66-a1db-aa4191c6e875.png",
+          "log": "docs\\hero-art\\generation-old\\px_ranger_f6.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-ad78adfe-77b1-4b66-a1db-aa4191c6e875.png"
+    },
+    {
+      "id": "px_ranger_f7",
+      "cls": "ranger",
+      "gender": "female",
+      "name": "雷隼弩手",
+      "src": "assets/heroes/ranger_f7.png",
+      "file": "ranger_f7.png",
+      "accent": "#b2aff4",
+      "desc": "female crossbow ranger with purple high ponytail, brass eye visor, armored blue leather jacket and double-limbed mechanical crossbow",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female crossbow ranger with purple high ponytail, brass eye visor, armored blue leather jacket and double-limbed mechanical crossbow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_ranger_f7",
+          "cls": "ranger",
+          "gender": "female",
+          "name": "雷隼弩手",
+          "src": "assets/heroes/ranger_f7.png",
+          "file": "ranger_f7.png",
+          "accent": "#b2aff4",
+          "desc": "female crossbow ranger with purple high ponytail, brass eye visor, armored blue leather jacket and double-limbed mechanical crossbow",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female crossbow ranger with purple high ponytail, brass eye visor, armored blue leather jacket and double-limbed mechanical crossbow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-cf18ef8c-18ba-4454-9748-cc8c276e3f5e.png",
+          "log": "docs\\hero-art\\generation-old\\px_ranger_f7.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-cf18ef8c-18ba-4454-9748-cc8c276e3f5e.png"
+    },
+    {
+      "id": "px_ranger_f8",
+      "cls": "ranger",
+      "gender": "female",
+      "name": "楓羽獵姬",
+      "src": "assets/heroes/ranger_f8.png",
+      "file": "ranger_f8.png",
+      "accent": "#e8a47c",
+      "desc": "female autumn ranger with orange twin braids, crimson feather cloak, dark leather boots and maple-leaf decorated golden bow",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female autumn ranger with orange twin braids, crimson feather cloak, dark leather boots and maple-leaf decorated golden bow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_ranger_f8",
+          "cls": "ranger",
+          "gender": "female",
+          "name": "楓羽獵姬",
+          "src": "assets/heroes/ranger_f8.png",
+          "file": "ranger_f8.png",
+          "accent": "#e8a47c",
+          "desc": "female autumn ranger with orange twin braids, crimson feather cloak, dark leather boots and maple-leaf decorated golden bow",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female autumn ranger with orange twin braids, crimson feather cloak, dark leather boots and maple-leaf decorated golden bow. Adapt the four attack poses to distinctive bow/crossbow draw, upward shot, forward shot, low shot and critical charged volley.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-6d65e304-5d78-4af0-aa80-f9bb5a89e3df.png",
+          "log": "docs\\hero-art\\generation-old\\px_ranger_f8.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-6d65e304-5d78-4af0-aa80-f9bb5a89e3df.png"
+    },
+    {
+      "id": "px_cleric_m5",
+      "cls": "cleric",
+      "gender": "male",
+      "name": "曦鐘司祭",
+      "src": "assets/heroes/cleric_m5.png",
+      "file": "cleric_m5.png",
+      "accent": "#edd398",
+      "desc": "male cleric with soft blond curls, ivory coat with golden bell patterns, long saffron stole and staff topped with a hanging bell",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male cleric with soft blond curls, ivory coat with golden bell patterns, long saffron stole and staff topped with a hanging bell. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_cleric_m5",
+          "cls": "cleric",
+          "gender": "male",
+          "name": "曦鐘司祭",
+          "src": "assets/heroes/cleric_m5.png",
+          "file": "cleric_m5.png",
+          "accent": "#edd398",
+          "desc": "male cleric with soft blond curls, ivory coat with golden bell patterns, long saffron stole and staff topped with a hanging bell",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male cleric with soft blond curls, ivory coat with golden bell patterns, long saffron stole and staff topped with a hanging bell. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-a51c9674-22cf-4ba0-9223-a9974061ad15.png",
+          "log": "docs\\hero-art\\generation-old\\px_cleric_m5.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-a51c9674-22cf-4ba0-9223-a9974061ad15.png"
+    },
+    {
+      "id": "px_cleric_m6",
+      "cls": "cleric",
+      "gender": "male",
+      "name": "海燈祝士",
+      "src": "assets/heroes/cleric_m6.png",
+      "file": "cleric_m6.png",
+      "accent": "#9cd6d9",
+      "desc": "male maritime cleric with dark blue slicked-back hair, teal white robes, pearl collar and staff with a suspended glowing lantern",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male maritime cleric with dark blue slicked-back hair, teal white robes, pearl collar and staff with a suspended glowing lantern. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_cleric_m6",
+          "cls": "cleric",
+          "gender": "male",
+          "name": "海燈祝士",
+          "src": "assets/heroes/cleric_m6.png",
+          "file": "cleric_m6.png",
+          "accent": "#9cd6d9",
+          "desc": "male maritime cleric with dark blue slicked-back hair, teal white robes, pearl collar and staff with a suspended glowing lantern",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male maritime cleric with dark blue slicked-back hair, teal white robes, pearl collar and staff with a suspended glowing lantern. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-bdc77b97-89d7-46c8-9271-c3c25eefe2d9.png",
+          "log": "docs\\hero-art\\generation-old\\px_cleric_m6.json"
+        },
+        {
+          "id": "px_cleric_m6",
+          "prompt": "Edit the reference RPG pixel sprite animation atlas to correct spacing only. Keep the SAME character identity, hair, face, outfit and held staff/book: male maritime cleric with dark blue slicked-back hair, teal white robes, pearl collar and staff with a suspended glowing lantern. Keep eight distinct individually drawn full-body poses: idle eyesopen, blink, diagonal staff cast, forward staff cast, overhead staff cast, lateral staff cast, braced critical charge, forward critical impact. Exactly4 columns2rows. Current bottom poses2 and3 touch each other, unusable for animation. REDRAW ALL8 SPRITES SMALLER with each whole body and staff/book strictly inside the CENTRAL60 percent of its own equal cell, leaving20 percent fully transparent margins along all FOUR edges. NO magic rings, swirls, columns, trails, floor glow or floating sparks. Critical represented by powerful arm/staff stance and tiny glow only on the staff head. Do not connect neighboring cells. Every sprite must be fully separated by wide transparent gaps. Same charming detailed clustered pixel game art, no text, no gridlines, true transparent alpha background. Each character same scale; weapons can be held more vertically and compactly to fit.",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-a5d4ba81-b790-47d6-9f8a-62b03a35ed3c.png",
+          "src": "assets/heroes/cleric_m6.png",
+          "retry": true,
+          "log": "docs\\hero-art\\generation-root\\px_cleric_m6-retry.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-a5d4ba81-b790-47d6-9f8a-62b03a35ed3c.png"
+    },
+    {
+      "id": "px_cleric_m7",
+      "cls": "cleric",
+      "gender": "male",
+      "name": "暮星聖使",
+      "src": "assets/heroes/cleric_m7.png",
+      "file": "cleric_m7.png",
+      "accent": "#c3ace7",
+      "desc": "male celestial cleric with long lavender hair, plum ivory vestments, crescent shoulder badge, star-topped staff and holy book",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male celestial cleric with long lavender hair, plum ivory vestments, crescent shoulder badge, star-topped staff and holy book. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_cleric_m7",
+          "cls": "cleric",
+          "gender": "male",
+          "name": "暮星聖使",
+          "src": "assets/heroes/cleric_m7.png",
+          "file": "cleric_m7.png",
+          "accent": "#c3ace7",
+          "desc": "male celestial cleric with long lavender hair, plum ivory vestments, crescent shoulder badge, star-topped staff and holy book",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male celestial cleric with long lavender hair, plum ivory vestments, crescent shoulder badge, star-topped staff and holy book. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-933ac5be-0458-4ef6-89e6-1411d815ce9c.png",
+          "log": "docs\\hero-art\\generation-old\\px_cleric_m7.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-933ac5be-0458-4ef6-89e6-1411d815ce9c.png"
+    },
+    {
+      "id": "px_cleric_m8",
+      "cls": "cleric",
+      "gender": "male",
+      "name": "秋穗祭官",
+      "src": "assets/heroes/cleric_m8.png",
+      "file": "cleric_m8.png",
+      "accent": "#dfbf7b",
+      "desc": "male harvest cleric with chestnut braided hair, rust orange cloak and cream vestments, wheat circlet and wooden sun staff",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male harvest cleric with chestnut braided hair, rust orange cloak and cream vestments, wheat circlet and wooden sun staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_cleric_m8",
+          "cls": "cleric",
+          "gender": "male",
+          "name": "秋穗祭官",
+          "src": "assets/heroes/cleric_m8.png",
+          "file": "cleric_m8.png",
+          "accent": "#dfbf7b",
+          "desc": "male harvest cleric with chestnut braided hair, rust orange cloak and cream vestments, wheat circlet and wooden sun staff",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male harvest cleric with chestnut braided hair, rust orange cloak and cream vestments, wheat circlet and wooden sun staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-6589010d-d66a-43fa-8294-2d733eb7da68.png",
+          "log": "docs\\hero-art\\generation-old\\px_cleric_m8.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-6589010d-d66a-43fa-8294-2d733eb7da68.png"
+    },
+    {
+      "id": "px_cleric_f5",
+      "cls": "cleric",
+      "gender": "female",
+      "name": "曦鈴聖詠",
+      "src": "assets/heroes/cleric_f5.png",
+      "file": "cleric_f5.png",
+      "accent": "#f1d1a3",
+      "desc": "female cleric with golden braided crown hair, cream and gold dress vestments, bell ribbons and bell-headed staff",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female cleric with golden braided crown hair, cream and gold dress vestments, bell ribbons and bell-headed staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_cleric_f5",
+          "cls": "cleric",
+          "gender": "female",
+          "name": "曦鈴聖詠",
+          "src": "assets/heroes/cleric_f5.png",
+          "file": "cleric_f5.png",
+          "accent": "#f1d1a3",
+          "desc": "female cleric with golden braided crown hair, cream and gold dress vestments, bell ribbons and bell-headed staff",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female cleric with golden braided crown hair, cream and gold dress vestments, bell ribbons and bell-headed staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-4cc9cf84-4888-44ad-8d7f-747a405093c2.png",
+          "log": "docs\\hero-art\\generation-old\\px_cleric_f5.json"
+        },
+        {
+          "id": "px_cleric_f5",
+          "prompt": "Edit the reference RPG pixel sprite animation atlas to correct spacing only. Keep the SAME character identity, hair, face, outfit and held staff/book: female cleric with golden braided crown hair, cream and gold dress vestments, bell ribbons and bell-headed staff. Keep eight distinct individually drawn full-body poses: idle eyesopen, blink, diagonal staff cast, forward staff cast, overhead staff cast, lateral staff cast, braced critical charge, forward critical impact. Exactly4 columns2rows. Current bottom poses2 and3 touch each other, unusable for animation. REDRAW ALL8 SPRITES SMALLER with each whole body and staff/book strictly inside the CENTRAL60 percent of its own equal cell, leaving20 percent fully transparent margins along all FOUR edges. NO magic rings, swirls, columns, trails, floor glow or floating sparks. Critical represented by powerful arm/staff stance and tiny glow only on the staff head. Do not connect neighboring cells. Every sprite must be fully separated by wide transparent gaps. Same charming detailed clustered pixel game art, no text, no gridlines, true transparent alpha background. Each character same scale; weapons can be held more vertically and compactly to fit.",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-6aab1b33-4ec4-4b0f-8495-2cc340086e34.png",
+          "src": "assets/heroes/cleric_f5.png",
+          "retry": true,
+          "log": "docs\\hero-art\\generation-root\\px_cleric_f5-retry.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-6aab1b33-4ec4-4b0f-8495-2cc340086e34.png"
+    },
+    {
+      "id": "px_cleric_f6",
+      "cls": "cleric",
+      "gender": "female",
+      "name": "海珠祝禱",
+      "src": "assets/heroes/cleric_f6.png",
+      "file": "cleric_f6.png",
+      "accent": "#b0e5db",
+      "desc": "female maritime cleric with blue short wavy hair, pale turquoise hood, pearl-trimmed white robe, shell-headed staff and small prayer book",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female maritime cleric with blue short wavy hair, pale turquoise hood, pearl-trimmed white robe, shell-headed staff and small prayer book. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_cleric_f6",
+          "cls": "cleric",
+          "gender": "female",
+          "name": "海珠祝禱",
+          "src": "assets/heroes/cleric_f6.png",
+          "file": "cleric_f6.png",
+          "accent": "#b0e5db",
+          "desc": "female maritime cleric with blue short wavy hair, pale turquoise hood, pearl-trimmed white robe, shell-headed staff and small prayer book",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female maritime cleric with blue short wavy hair, pale turquoise hood, pearl-trimmed white robe, shell-headed staff and small prayer book. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-88501b01-46ec-4c27-90a3-8315efc690d9.png",
+          "log": "docs\\hero-art\\generation-old\\px_cleric_f6.json"
+        },
+        {
+          "id": "px_cleric_f6",
+          "prompt": "Edit the reference RPG pixel sprite animation atlas to correct spacing only. Keep the SAME character identity, hair, face, outfit and held staff/book: female maritime cleric with blue short wavy hair, pale turquoise hood, pearl-trimmed white robe, shell-headed staff and small prayer book. Keep eight distinct individually drawn full-body poses: idle eyesopen, blink, diagonal staff cast, forward staff cast, overhead staff cast, lateral staff cast, braced critical charge, forward critical impact. Exactly4 columns2rows. Current bottom poses2 and3 touch each other, unusable for animation. REDRAW ALL8 SPRITES SMALLER with each whole body and staff/book strictly inside the CENTRAL60 percent of its own equal cell, leaving20 percent fully transparent margins along all FOUR edges. NO magic rings, swirls, columns, trails, floor glow or floating sparks. Critical represented by powerful arm/staff stance and tiny glow only on the staff head. Do not connect neighboring cells. Every sprite must be fully separated by wide transparent gaps. Same charming detailed clustered pixel game art, no text, no gridlines, true transparent alpha background. Each character same scale; weapons can be held more vertically and compactly to fit.",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-5f00c814-8236-41f6-b8cc-93f1ab643001.png",
+          "src": "assets/heroes/cleric_f6.png",
+          "retry": true,
+          "log": "docs\\hero-art\\generation-root\\px_cleric_f6-retry.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-5f00c814-8236-41f6-b8cc-93f1ab643001.png"
+    },
+    {
+      "id": "px_cleric_f7",
+      "cls": "cleric",
+      "gender": "female",
+      "name": "暮星修女",
+      "src": "assets/heroes/cleric_f7.png",
+      "file": "cleric_f7.png",
+      "accent": "#c7b8eb",
+      "desc": "female celestial cleric with lavender long hair and dark veil, ivory purple vestments, tiny star ornaments and crescent staff",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female celestial cleric with lavender long hair and dark veil, ivory purple vestments, tiny star ornaments and crescent staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_cleric_f7",
+          "cls": "cleric",
+          "gender": "female",
+          "name": "暮星修女",
+          "src": "assets/heroes/cleric_f7.png",
+          "file": "cleric_f7.png",
+          "accent": "#c7b8eb",
+          "desc": "female celestial cleric with lavender long hair and dark veil, ivory purple vestments, tiny star ornaments and crescent staff",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female celestial cleric with lavender long hair and dark veil, ivory purple vestments, tiny star ornaments and crescent staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-b33c15f5-ec82-4e79-abda-e8db712f5cef.png",
+          "log": "docs\\hero-art\\generation-old\\px_cleric_f7.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-b33c15f5-ec82-4e79-abda-e8db712f5cef.png"
+    },
+    {
+      "id": "px_cleric_f8",
+      "cls": "cleric",
+      "gender": "female",
+      "name": "秋禾聖女",
+      "src": "assets/heroes/cleric_f8.png",
+      "file": "cleric_f8.png",
+      "accent": "#e2b772",
+      "desc": "female harvest cleric with warm brown twin braids, russet cape, ivory dress vestments, wheat circlet and harvest-sun staff",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female harvest cleric with warm brown twin braids, russet cape, ivory dress vestments, wheat circlet and harvest-sun staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_cleric_f8",
+          "cls": "cleric",
+          "gender": "female",
+          "name": "秋禾聖女",
+          "src": "assets/heroes/cleric_f8.png",
+          "file": "cleric_f8.png",
+          "accent": "#e2b772",
+          "desc": "female harvest cleric with warm brown twin braids, russet cape, ivory dress vestments, wheat circlet and harvest-sun staff",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female harvest cleric with warm brown twin braids, russet cape, ivory dress vestments, wheat circlet and harvest-sun staff. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+          "tool": "built-in image_gen.imagegen",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-ffcc9511-cb56-4f95-baab-5881ef32402f.png",
+          "log": "docs\\hero-art\\generation-old\\px_cleric_f8.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-ffcc9511-cb56-4f95-baab-5881ef32402f.png"
+    },
+    {
+      "id": "px_berserker_m5",
+      "cls": "berserker",
+      "gender": "male",
+      "name": "沙蠍戰魁",
+      "src": "assets/heroes/berserker_m5.png",
+      "file": "berserker_m5.png",
+      "accent": "#ddaa77",
+      "desc": "male berserker with black mohawk, bronze desert shoulder armor, rust scarf, heavy leather boots and huge scorpion-hook battleaxe",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male berserker with black mohawk, bronze desert shoulder armor, rust scarf, heavy leather boots and huge scorpion-hook battleaxe. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_berserker_m5",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male berserker with black mohawk, bronze desert shoulder armor, rust scarf, heavy leather boots and huge scorpion-hook battleaxe. ",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-4619adaf-bbdc-4909-985c-ba95669f78c6.png",
+          "src": "assets/heroes/berserker_m5.png",
+          "log": "docs/hero-art/expansion-root-generation-log.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-4619adaf-bbdc-4909-985c-ba95669f78c6.png"
+    },
+    {
+      "id": "px_berserker_m6",
+      "cls": "berserker",
+      "gender": "male",
+      "name": "苔岩巨刃",
+      "src": "assets/heroes/berserker_m6.png",
+      "file": "berserker_m6.png",
+      "accent": "#9fc498",
+      "desc": "male berserker with green swept-back hair, mossy stone shoulder guards, brown thick leather armor and massive chipped stone greatsword",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male berserker with green swept-back hair, mossy stone shoulder guards, brown thick leather armor and massive chipped stone greatsword. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_berserker_m6",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male berserker with green swept-back hair, mossy stone shoulder guards, brown thick leather armor and massive chipped stone greatsword. ",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-a04af5fc-1007-40a5-ae42-bfb871cc18ae.png",
+          "src": "assets/heroes/berserker_m6.png",
+          "log": "docs/hero-art/expansion-root-generation-log.json"
+        },
+        {
+          "id": "px_berserker_m6",
+          "prompt": "Edit the referenced character animation atlas. Preserve the moss-green-haired male stone berserker identity, stone armor, rugged sword and same art direction, with eight distinct poses idle, blink, four distinct attacks, criticalCharge and criticalImpact, exactly four columns and two rows. Correct the layout: the sword and effects of bottom row pose2 currently touch bottom row pose3. Draw all8 full-body sprites SMALLER, with20 percent transparent empty margin around each complete sprite including weapon/effects in its individual cell. All eight characters MUST be disconnected, no touching neighboring sprite, no particle or sword crossing any cell boundary. Keep critical effects tiny and compact and remove floating rocks. Keep consistent baseline and same outfit all8. Genuine transparent background and generous safe margins.",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-d04580b0-e696-4a51-b3a1-839f0b67d2d8.png",
+          "src": "assets/heroes/berserker_m6.png",
+          "retry": true,
+          "log": "docs\\hero-art\\generation-root\\px_berserker_m6-retry.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-d04580b0-e696-4a51-b3a1-839f0b67d2d8.png"
+    },
+    {
+      "id": "px_berserker_m7",
+      "cls": "berserker",
+      "gender": "male",
+      "name": "霹靂戰鼓",
+      "src": "assets/heroes/berserker_m7.png",
+      "file": "berserker_m7.png",
+      "accent": "#b3adf3",
+      "desc": "male thunder berserker with white spiky hair, dark violet angular armor, orange sash and enormous lightning-shaped warhammer",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male thunder berserker with white spiky hair, dark violet angular armor, orange sash and enormous lightning-shaped warhammer. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_berserker_m7",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male thunder berserker with white spiky hair, dark violet angular armor, orange sash and enormous lightning-shaped warhammer. ",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-31a815e1-09e0-4e3d-a5cc-fe7d1d497cb2.png",
+          "src": "assets/heroes/berserker_m7.png",
+          "log": "docs/hero-art/expansion-root-generation-log.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-31a815e1-09e0-4e3d-a5cc-fe7d1d497cb2.png"
+    },
+    {
+      "id": "px_berserker_m8",
+      "cls": "berserker",
+      "gender": "male",
+      "name": "赤銅鐵衛",
+      "src": "assets/heroes/berserker_m8.png",
+      "file": "berserker_m8.png",
+      "accent": "#d69772",
+      "desc": "male forge berserker with auburn braided beard and cropped hair, brass goggles, bulky copper plate armor, black apron tabard and heavy double-headed axe",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male forge berserker with auburn braided beard and cropped hair, brass goggles, bulky copper plate armor, black apron tabard and heavy double-headed axe. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_berserker_m8",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male forge berserker with auburn braided beard and cropped hair, brass goggles, bulky copper plate armor, black apron tabard and heavy double-headed axe. ",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-a0573090-ad47-43a9-bb54-5f770f0a835e.png",
+          "src": "assets/heroes/berserker_m8.png",
+          "log": "docs/hero-art/expansion-root-generation-log.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-a0573090-ad47-43a9-bb54-5f770f0a835e.png"
+    },
+    {
+      "id": "px_berserker_f5",
+      "cls": "berserker",
+      "gender": "female",
+      "name": "砂蠍戰姬",
+      "src": "assets/heroes/berserker_f5.png",
+      "file": "berserker_f5.png",
+      "accent": "#daa879",
+      "desc": "female desert berserker with black high braided ponytail, modest bronze battle armor, rust scarf and giant hook-shaped greataxe",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female desert berserker with black high braided ponytail, modest bronze battle armor, rust scarf and giant hook-shaped greataxe. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_berserker_f5",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female desert berserker with black high braided ponytail, modest bronze battle armor, rust scarf and giant hook-shaped greataxe. \nIMPORTANT strict layout: eight separated poses of this SINGLE adult character in exact four columns and two rows. Keep each character, weapon and all energy effects within its OWN cell with 18 percent transparent margin on every side. No glow or particles crossing cell boundaries. Same compact beautiful pixel RPG style as existing heroes. True transparent alpha, no background or floor.",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-75d1a0a4-fc60-452a-9fc1-66490de5b1f5.png",
+          "src": "assets/heroes/berserker_f5.png",
+          "retry": false,
+          "log": "docs\\hero-art\\generation-root\\px_berserker_f5.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-75d1a0a4-fc60-452a-9fc1-66490de5b1f5.png"
+    },
+    {
+      "id": "px_berserker_f6",
+      "cls": "berserker",
+      "gender": "female",
+      "name": "苔石戰蘭",
+      "src": "assets/heroes/berserker_f6.png",
+      "file": "berserker_f6.png",
+      "accent": "#a5c7a4",
+      "desc": "female stone berserker with emerald short tousled hair, bulky stone shoulder pieces, dark green leather battle coat and huge carved stone sword",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female stone berserker with emerald short tousled hair, bulky stone shoulder pieces, dark green leather battle coat and huge carved stone sword. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_berserker_f6",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female stone berserker with emerald short tousled hair, bulky stone shoulder pieces, dark green leather battle coat and huge carved stone sword. \nIMPORTANT strict layout: eight separated poses of this SINGLE adult character in exact four columns and two rows. Keep each character, weapon and all energy effects within its OWN cell with 18 percent transparent margin on every side. No glow or particles crossing cell boundaries. Same compact beautiful pixel RPG style as existing heroes. True transparent alpha, no background or floor.",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-06baa235-033f-4db9-b1a3-da95314a0127.png",
+          "src": "assets/heroes/berserker_f6.png",
+          "retry": false,
+          "log": "docs\\hero-art\\generation-root\\px_berserker_f6.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-06baa235-033f-4db9-b1a3-da95314a0127.png"
+    },
+    {
+      "id": "px_berserker_f7",
+      "cls": "berserker",
+      "gender": "female",
+      "name": "雷鼓戰姬",
+      "src": "assets/heroes/berserker_f7.png",
+      "file": "berserker_f7.png",
+      "accent": "#bdb0f3",
+      "desc": "female thunder berserker with silver spiky high ponytail, violet fully armored battle dress, blue lightning ornaments and enormous angular warhammer",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female thunder berserker with silver spiky high ponytail, violet fully armored battle dress, blue lightning ornaments and enormous angular warhammer. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_berserker_f7",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female thunder berserker with silver spiky high ponytail, violet fully armored battle dress, blue lightning ornaments and enormous angular warhammer. \nIMPORTANT strict layout: eight separated poses of this SINGLE adult character in exact four columns and two rows. Keep each character, weapon and all energy effects within its OWN cell with 18 percent transparent margin on every side. No glow or particles crossing cell boundaries. Same compact beautiful pixel RPG style as existing heroes. True transparent alpha, no background or floor.",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-6dd53c62-9c2a-400f-9159-48e956b61e03.png",
+          "src": "assets/heroes/berserker_f7.png",
+          "retry": false,
+          "log": "docs\\hero-art\\generation-root\\px_berserker_f7.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-6dd53c62-9c2a-400f-9159-48e956b61e03.png"
+    },
+    {
+      "id": "px_berserker_f8",
+      "cls": "berserker",
+      "gender": "female",
+      "name": "熔銅鍛姬",
+      "src": "assets/heroes/berserker_f8.png",
+      "file": "berserker_f8.png",
+      "accent": "#e6a66f",
+      "desc": "female forge berserker with red hair in twin buns, brass goggles, copper plate over black leather, sturdy boots and gigantic double-headed forge axe",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female forge berserker with red hair in twin buns, brass goggles, copper plate over black leather, sturdy boots and gigantic double-headed forge axe. ",
+      "status": "saved",
+      "attempts": [
+        {
+          "id": "px_berserker_f8",
+          "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: female forge berserker with red hair in twin buns, brass goggles, copper plate over black leather, sturdy boots and gigantic double-headed forge axe. \nIMPORTANT strict layout: eight separated poses of this SINGLE adult character in exact four columns and two rows. Keep each character, weapon and all energy effects within its OWN cell with 18 percent transparent margin on every side. No glow or particles crossing cell boundaries. Same compact beautiful pixel RPG style as existing heroes. True transparent alpha, no background or floor.",
+          "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-8f82296b-bcbb-4cf0-a96a-300dfd6d7844.png",
+          "src": "assets/heroes/berserker_f8.png",
+          "retry": false,
+          "log": "docs\\hero-art\\generation-root\\px_berserker_f8.json"
+        }
+      ],
+      "currentGeneratedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-8f82296b-bcbb-4cf0-a96a-300dfd6d7844.png"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "px_ranger_f5",
+  "cls": "ranger",
+  "gender": "female",
+  "name": "沙狐弓姬",
+  "src": "assets/heroes/ranger_f5.png",
+  "file": "ranger_f5.png",
+  "accent": "#e1c184",
+  "desc": "female desert ranger with long black side braid, tan hood, red desert sash, fitted modest leather gear and ornate recurved bow",
+  "prompt": "Use case: stylized-concept. Corrected production sprite atlas with EXACT character identity of reference: chibi female desert ranger, black long side braid, tan hood, red sash/cape, modest bronze/leather desert gear and gold turquoise recurved bow. Crisp high-detail chibi pixel art. Layout mandatory: 4 COLUMNS, 2 ROWS, exactly8 entirely separate full-body sprites. All sprites at least30% SMALLER THAN REFERENCE, centered individually inside their cell. Hair, cape, bow and arrows ALL contained inside central60% WIDTH and70% HEIGHT of its cell. At least20% fully transparent blank margin on every left/rightcell edge. No sprite, weapon, arrow or glow touches another sprite. Use compact shortbow and short arrows. Toprow idle bow lowered, same pose eyesclosed blink, bowdraw tilted slightly up, bowdraw aimingright. Bottomrow aimup with bentarms compact bow, kneel aimsame shortbowright, crouchedchargedbow with tiny orange dot only, finishing shortarrow shotright. NO shooting arrow across cells; NO long trails, electricityrings, broad glow, scene, ground, shadows, haze, text or gridlines. Pure alpha transparency outside sprites. Allface right threequarter, same outfit and size, feetand weapons fullyvisible.",
+  "tool": "built-in image_gen.imagegen",
+  "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-4a3a2c97-9aca-4ec6-b69a-2df3875751a8.png",
+  "replaces": "px_ranger_f5.json; original kept at generatedPath in that log",
+  "reason": "neighboring bow arrow/effect connected spritecomponents"
+}

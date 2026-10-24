@@ -1,0 +1,13 @@
+{
+  "id": "px_knight_m8",
+  "cls": "knight",
+  "gender": "male",
+  "name": "星辰王侍",
+  "src": "assets/heroes/knight_m8.png",
+  "file": "knight_m8.png",
+  "accent": "#b7adff",
+  "desc": "male royal knight with long violet hair in low ponytail, elegant midnight armor with star motifs, white cape, violet shield and needle-point rapier",
+  "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male royal knight with long violet hair in low ponytail, elegant midnight armor with star motifs, white cape, violet shield and needle-point rapier. ",
+  "tool": "built-in image_gen.imagegen",
+  "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-d4c71b37-e03f-4c82-85f8-7ac5563ef5c4.png"
+}
