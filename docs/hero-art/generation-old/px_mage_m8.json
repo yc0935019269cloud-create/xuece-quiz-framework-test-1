@@ -1,0 +1,13 @@
+{
+  "id": "px_mage_m8",
+  "cls": "mage",
+  "gender": "male",
+  "name": "晴空術士",
+  "src": "assets/heroes/mage_m8.png",
+  "file": "mage_m8.png",
+  "accent": "#c4e4ff",
+  "desc": "male sky mage with warm brown windswept hair, white-blue short cape and fitted robes, winged staff and small cloud spellbook",
+  "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male sky mage with warm brown windswept hair, white-blue short cape and fitted robes, winged staff and small cloud spellbook. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+  "tool": "built-in image_gen.imagegen",
+  "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-66d0ccd8-d6a0-4abc-adf2-fbfc11da12a0.png"
+}

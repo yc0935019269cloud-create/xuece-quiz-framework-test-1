@@ -1,0 +1,372 @@
+{
+  "url": "file:///E:/NEWTEST/%E6%96%B0%E5%88%B7%E9%A1%8C%E5%BA%AB%E6%A1%86%E6%9E%B6%20-%20TEST%201/index.html",
+  "widths": [
+    1000,
+    390
+  ],
+  "checks": [
+    "1000: all eight class cards render",
+    "1000/assassin unlock deducts exact cost and creates class",
+    "1000/assassin selection uses male default",
+    "1000/assassin unlocked class and selection persist reload",
+    "1000/assassin hub male actual default pose renders",
+    "1000/assassin male filter has eight",
+    "1000/assassin female filter has eight",
+    "1000/assassin all filter has sixteen",
+    "1000/assassin female preview actual default pose renders",
+    "1000/assassin female default never offers paid purchase",
+    "1000/assassin free female wear costs no gems",
+    "1000/assassin hub female actual default pose renders",
+    "1000/assassin abyss start exposes real available nodes",
+    "1000/assassin abyss first battle actual default pose renders",
+    "1000/assassin abyss map actual default pose renders",
+    "1000/assassin map run class is persisted",
+    "1000/assassin learning battle actual default pose renders",
+    "1000/assassin actual learning answer records combo and damage",
+    "1000/assassin real learning ultimate is cast",
+    "1000/assassin vouchers exclude both free defaults",
+    "1000/assassin voucher premium preview actual default pose renders",
+    "1000/assassin premium voucher wears and consumes only one ticket",
+    "1000/assassin owned premium cannot redeem twice",
+    "1000/assassin premium hub actual default pose renders",
+    "1000/monk unlock deducts exact cost and creates class",
+    "1000/monk selection uses male default",
+    "1000/monk unlocked class and selection persist reload",
+    "1000/monk hub male actual default pose renders",
+    "1000/monk male filter has eight",
+    "1000/monk female filter has eight",
+    "1000/monk all filter has sixteen",
+    "1000/monk female preview actual default pose renders",
+    "1000/monk female default never offers paid purchase",
+    "1000/monk free female wear costs no gems",
+    "1000/monk hub female actual default pose renders",
+    "1000/monk abyss start exposes real available nodes",
+    "1000/monk abyss first battle actual default pose renders",
+    "1000/monk abyss map actual default pose renders",
+    "1000/monk map run class is persisted",
+    "1000/monk learning battle actual default pose renders",
+    "1000/monk actual learning answer records combo and damage",
+    "1000/monk real learning ultimate is cast",
+    "1000/monk vouchers exclude both free defaults",
+    "1000/monk voucher premium preview actual default pose renders",
+    "1000/monk premium voucher wears and consumes only one ticket",
+    "1000/monk owned premium cannot redeem twice",
+    "1000/monk premium hub actual default pose renders",
+    "1000/bard unlock deducts exact cost and creates class",
+    "1000/bard selection uses male default",
+    "1000/bard unlocked class and selection persist reload",
+    "1000/bard hub male actual default pose renders",
+    "1000/bard male filter has eight",
+    "1000/bard female filter has eight",
+    "1000/bard all filter has sixteen",
+    "1000/bard female preview actual default pose renders",
+    "1000/bard female default never offers paid purchase",
+    "1000/bard free female wear costs no gems",
+    "1000/bard hub female actual default pose renders",
+    "1000/bard abyss start exposes real available nodes",
+    "1000/bard abyss first battle actual default pose renders",
+    "1000/bard abyss map actual default pose renders",
+    "1000/bard map run class is persisted",
+    "1000/bard learning battle actual default pose renders",
+    "1000/bard actual learning answer records combo and damage",
+    "1000/bard real learning ultimate is cast",
+    "1000/bard vouchers exclude both free defaults",
+    "1000/bard voucher premium preview actual default pose renders",
+    "1000/bard premium voucher wears and consumes only one ticket",
+    "1000/bard owned premium cannot redeem twice",
+    "1000/bard premium hub actual default pose renders",
+    "1000: vouchers exclude existing free knight actor",
+    "1000: export/import and reload preserve classes, skins, tickets, question record, learning progress and run class",
+    "1000: runtime lesson fixtures disappear on reload",
+    "1000: restored premium skin actual default pose renders",
+    "1000: female wardrobe preview and all eight cards finish rendering",
+    "1000: wardrobe fits viewport",
+    "1000: no browser page errors",
+    "390: all eight class cards render",
+    "390/assassin unlock deducts exact cost and creates class",
+    "390/assassin selection uses male default",
+    "390/assassin unlocked class and selection persist reload",
+    "390/assassin hub male actual default pose renders",
+    "390/assassin male filter has eight",
+    "390/assassin female filter has eight",
+    "390/assassin all filter has sixteen",
+    "390/assassin female preview actual default pose renders",
+    "390/assassin female default never offers paid purchase",
+    "390/assassin free female wear costs no gems",
+    "390/assassin hub female actual default pose renders",
+    "390/assassin abyss start exposes real available nodes",
+    "390/assassin abyss first battle actual default pose renders",
+    "390/assassin abyss map actual default pose renders",
+    "390/assassin map run class is persisted",
+    "390/assassin learning battle actual default pose renders",
+    "390/assassin actual learning answer records combo and damage",
+    "390/assassin real learning ultimate is cast",
+    "390/assassin vouchers exclude both free defaults",
+    "390/assassin voucher premium preview actual default pose renders",
+    "390/assassin premium voucher wears and consumes only one ticket",
+    "390/assassin owned premium cannot redeem twice",
+    "390/assassin premium hub actual default pose renders",
+    "390/monk unlock deducts exact cost and creates class",
+    "390/monk selection uses male default",
+    "390/monk unlocked class and selection persist reload",
+    "390/monk hub male actual default pose renders",
+    "390/monk male filter has eight",
+    "390/monk female filter has eight",
+    "390/monk all filter has sixteen",
+    "390/monk female preview actual default pose renders",
+    "390/monk female default never offers paid purchase",
+    "390/monk free female wear costs no gems",
+    "390/monk hub female actual default pose renders",
+    "390/monk abyss start exposes real available nodes",
+    "390/monk abyss first battle actual default pose renders",
+    "390/monk abyss map actual default pose renders",
+    "390/monk map run class is persisted",
+    "390/monk learning battle actual default pose renders",
+    "390/monk actual learning answer records combo and damage",
+    "390/monk real learning ultimate is cast",
+    "390/monk vouchers exclude both free defaults",
+    "390/monk voucher premium preview actual default pose renders",
+    "390/monk premium voucher wears and consumes only one ticket",
+    "390/monk owned premium cannot redeem twice",
+    "390/monk premium hub actual default pose renders",
+    "390/bard unlock deducts exact cost and creates class",
+    "390/bard selection uses male default",
+    "390/bard unlocked class and selection persist reload",
+    "390/bard hub male actual default pose renders",
+    "390/bard male filter has eight",
+    "390/bard female filter has eight",
+    "390/bard all filter has sixteen",
+    "390/bard female preview actual default pose renders",
+    "390/bard female default never offers paid purchase",
+    "390/bard free female wear costs no gems",
+    "390/bard hub female actual default pose renders",
+    "390/bard abyss start exposes real available nodes",
+    "390/bard abyss first battle actual default pose renders",
+    "390/bard abyss map actual default pose renders",
+    "390/bard map run class is persisted",
+    "390/bard learning battle actual default pose renders",
+    "390/bard actual learning answer records combo and damage",
+    "390/bard real learning ultimate is cast",
+    "390/bard vouchers exclude both free defaults",
+    "390/bard voucher premium preview actual default pose renders",
+    "390/bard premium voucher wears and consumes only one ticket",
+    "390/bard owned premium cannot redeem twice",
+    "390/bard premium hub actual default pose renders",
+    "390: vouchers exclude existing free knight actor",
+    "390: export/import and reload preserve classes, skins, tickets, question record, learning progress and run class",
+    "390: runtime lesson fixtures disappear on reload",
+    "390: restored premium skin actual default pose renders",
+    "390: female wardrobe preview and all eight cards finish rendering",
+    "390: wardrobe fits viewport",
+    "390: no browser page errors"
+  ],
+  "pageErrors": [],
+  "storageRestored": [
+    1000,
+    390
+  ],
+  "pixelReadUnavailable": [
+    {
+      "label": "1000/assassin hub male",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/assassin female preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/assassin hub female",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/assassin abyss first battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/assassin abyss map",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/assassin learning battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/assassin voucher premium preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/assassin premium hub",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/monk hub male",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/monk female preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/monk hub female",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/monk abyss first battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/monk abyss map",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/monk learning battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/monk voucher premium preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/monk premium hub",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/bard hub male",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/bard female preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/bard hub female",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/bard abyss first battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/bard abyss map",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/bard learning battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/bard voucher premium preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000/bard premium hub",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "1000: restored premium skin",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/assassin hub male",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/assassin female preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/assassin hub female",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/assassin abyss first battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/assassin abyss map",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/assassin learning battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/assassin voucher premium preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/assassin premium hub",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/monk hub male",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/monk female preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/monk hub female",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/monk abyss first battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/monk abyss map",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/monk learning battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/monk voucher premium preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/monk premium hub",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/bard hub male",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/bard female preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/bard hub female",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/bard abyss first battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/bard abyss map",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/bard learning battle",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/bard voucher premium preview",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390/bard premium hub",
+      "reason": "file:// canvas origin restriction"
+    },
+    {
+      "label": "390: restored premium skin",
+      "reason": "file:// canvas origin restriction"
+    }
+  ],
+  "limits": "Disposable desktop Edge contexts at 1000/390px, file:// by default; not physical iPad or live cloud sync.",
+  "ok": true
+}

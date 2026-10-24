@@ -295,7 +295,7 @@ const Screens = (() => {
     const giftsHTML = (pending.length || vouchers) ? `<div class="daily mt" id="voucherBox">
           <div class="row"><b class="gold-t">🎁 禮物</b><span class="grow"></span><span class="small-t">新造型兌換券 <b class="purple-t">${vouchers}</b> 張</span></div>
           ${pending.map(g => `<div class="small-t">${g.title}</div><div class="row mt" style="justify-content:flex-end"><button class="px-btn small gold" data-gift="${g.id}">領取 ×${g.vouchers}</button></div>`).join('')}
-          ${vouchers ? '<div class="small-t dim">兌換券可任選一款新造型（價值 160～240 魂晶）。</div><div class="row mt" style="justify-content:flex-end"><button class="px-btn small purple" id="voucherUse">選新造型兌換</button></div>' : ''}
+          ${vouchers ? '<div class="small-t dim">兌換券可任選一款新造型（價值 160～260 魂晶）。</div><div class="row mt" style="justify-content:flex-end"><button class="px-btn small purple" id="voucherUse">選新造型兌換</button></div>' : ''}
         </div>` : '';
     const tod = timeOfDay();
     // 營地選單依功能分區（每區一個標題，按鈕照常排列）
@@ -1046,7 +1046,9 @@ const Screens = (() => {
         row.appendChild(b);
       } else row.appendChild(U.h('<span class="tag ok">出征中</span>'));
       if (own) {
-        const sb = U.h(`<button class="px-btn pink">👗 造型（${(p.ownedHeroSkins || []).filter(x => x.startsWith(K.id + ':')).length + 1}/${C.HERO_SKINS[K.id].length}）</button>`);
+        const skins = C.HERO_SKINS[K.id] || [];
+        const count = skins.filter(s => !s.cost || (p.ownedHeroSkins || []).includes(K.id + ':' + s.id)).length;
+        const sb = U.h(`<button class="px-btn pink">👗 造型（${count}/${skins.length}）</button>`);
         sb.onclick = () => heroSkinModal(K);
         row.appendChild(sb);
       }
@@ -1072,7 +1074,7 @@ const Screens = (() => {
           <p class="small-t dim">點選下面的造型可以免費試穿。造型只改變外觀（戰鬥、營地、深淵地圖都會換上），不影響能力。魂晶：<b class="purple-t">${p.gems}</b></p>
           <div class="row">${wearing ? '<span class="tag ok">穿著中</span>' : owned(tryId) ? '<button class="px-btn gold" id="hwear">換上這套</button>' : `<button class="px-btn purple" id="hbuy" ${p.gems < sk.cost ? 'disabled' : ''}>購買並換上（${sk.cost} 魂晶）</button>`}</div>
           ${sk.actor ? '<div class="hero-preview-actions mt"><span class="small-t dim">動畫試看</span><div class="row"><button class="px-btn small" data-hmove="0">攻擊 1</button><button class="px-btn small" data-hmove="1">攻擊 2</button><button class="px-btn small" data-hmove="2">攻擊 3</button><button class="px-btn small" data-hmove="3">攻擊 4</button><button class="px-btn small gold" data-hmove="crit">爆擊</button></div></div>' : ''}</div></div>
-        <div class="row hero-skin-filters mt">${[['all','全部新造型（8）'],['male','男生（4）'],['female','女生（4）'],['classic','經典造型']].map(([id,label])=>`<button class="px-btn small ${id===group?'gold':''}" data-hgroup="${id}">${label}</button>`).join('')}</div>
+        <div class="row hero-skin-filters mt">${[['all',`全部新造型（${list.filter(s=>s.actor).length}）`],['male',`男生（${list.filter(s=>s.actor&&s.gender==='male').length}）`],['female',`女生（${list.filter(s=>s.actor&&s.gender==='female').length}）`],...(list.some(s=>!s.actor)?[['classic','經典造型']]:[])].map(([id,label])=>`<button class="px-btn small ${id===group?'gold':''}" data-hgroup="${id}">${label}</button>`).join('')}</div>
         <div class="grid hero-skin-grid mt">${visible.map(s => `<button class="px-btn style-opt ${s.id === tryId ? 'sel' : ''}" data-sk="${s.id}">${SP.tile(C.skinIcon(s), s.actor?72:48)}<span>${s.name}<br>${owned(s.id) ? (currentId() === s.id ? '<b class="green-t">穿著中</b>' : '<b class="dim">已擁有</b>') : `<b class="purple-t">${s.cost}</b>`}</span></button>`).join('')}</div>`;
       box.querySelectorAll('[data-hgroup]').forEach(b=>b.onclick=()=>{group=b.dataset.hgroup;draw();});
       box.querySelectorAll('[data-hmove]').forEach(b=>b.onclick=async()=>{b.disabled=true;try{await HeroAnim.play(box.querySelector('.big-stage'),b.dataset.hmove==='crit'?'critical':'attack',Number(b.dataset.hmove)||0);}finally{b.disabled=false;}});
@@ -1094,10 +1096,10 @@ const Screens = (() => {
     const box = U.$('#vch', m.el);
     function draw() {
       const K = C.cls(cls), left = p.skinVouchers || 0;
-      const all = C.HERO_SKINS[cls].filter(s => s.actor);
+      const all = C.HERO_SKINS[cls].filter(s => s.actor && s.cost > 0);
       const visible = all.filter(s => gender === 'all' || s.gender === gender);
       const sk = all.find(s => s.id === tryId) || null;
-      if (!left) { box.innerHTML = '<p class="center">兌換券已用完，明天再來領吧！</p><div class="row" style="justify-content:center"><button class="px-btn gold" id="vdone">好的</button></div>'; U.$('#vdone', box).onclick = () => m.close(); return; }
+      if (!left) { box.innerHTML = '<p class="center">兌換券已用完，之後收到新的贈禮時還能再兌換。</p><div class="row" style="justify-content:center"><button class="px-btn gold" id="vdone">好的</button></div>'; U.$('#vdone', box).onclick = () => m.close(); return; }
       box.innerHTML = `<p class="small-t dim">剩餘兌換券：<b class="purple-t">${left}</b> 張。先點造型免費試穿預覽，確定後再兌換；兌換後可在「職業殿堂 → 造型」隨時更換。</p>
         <div class="row hero-skin-filters">${C.CLASSES.map(k => `<button class="px-btn small ${k.id === cls ? 'gold' : ''}" data-vc="${k.id}">${k.name}${p.classes[k.id] ? '' : '🔒'}</button>`).join('')}</div>
         <div class="row hero-skin-filters mt">${[['all', '全部'], ['male', '男生'], ['female', '女生']].map(([id, label]) => `<button class="px-btn small ${id === gender ? 'gold' : ''}" data-vg="${id}">${label}</button>`).join('')}</div>

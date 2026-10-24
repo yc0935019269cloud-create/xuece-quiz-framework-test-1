@@ -1,0 +1,13 @@
+{
+  "id": "px_cleric_m7",
+  "cls": "cleric",
+  "gender": "male",
+  "name": "暮星聖使",
+  "src": "assets/heroes/cleric_m7.png",
+  "file": "cleric_m7.png",
+  "accent": "#c3ace7",
+  "desc": "male celestial cleric with long lavender hair, plum ivory vestments, crescent shoulder badge, star-topped staff and holy book",
+  "prompt": "Use case: stylized-concept. Asset type: production pixel-art character 8-pose atlas for RPG animation. Reference image only for the cute chibi high-detail crisp pixel-art style and 4-column 2-row layout. Make a NEW actor, do not replicate reference costume. Transparent background with real alpha everywhere around sprites, NO scene, shadow, haze, ground, labels, text, border or grid. Exactly EIGHT full-body copies of ONE consistent actor, FOUR columns TWO rows, each within its equal-sized cell with generous padding and clear transparent gaps. All face right in 3/4 view. Top row: neutral idle, same idle eyes closed blink, diagonal slash, forward thrust. Bottom row: overhead strike, low sweeping strike, crouching critical charge, dramatic critical finishing strike with compact magic effect. Same outfit and proportions in every pose. Each sprite must include both feet and entire weapon, nothing crossing cell boundaries. Chibi big head, expressive anime eyes, black pixel outline, carefully shaded chunky pixels. Subject: male celestial cleric with long lavender hair, plum ivory vestments, crescent shoulder badge, star-topped staff and holy book. Adapt the four attack poses to distinctive rightward spellcasting gestures with staff, spellbook or free hand; crit poses are charge then magical burst.",
+  "tool": "built-in image_gen.imagegen",
+  "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-933ac5be-0458-4ef6-89e6-1411d815ce9c.png"
+}

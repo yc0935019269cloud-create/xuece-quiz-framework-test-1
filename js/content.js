@@ -234,6 +234,42 @@ const C = (() => {
         { id: 'b_exec', name: '斬首', lv: 10, cd: 0, icon: 117, kind: 'execute', val: 0.3, desc: '被動：怪物生命低於 30%（首領 18%）時，答對直接擊殺' }]
     }
   ];
+  /* 新職業維持既有技能等級與冷卻節奏；造型由 heroes.js 註冊。 */
+  CLASSES.push(
+    {
+      id: 'assassin', name: '影刃', tile: 'ha:px_assassin_m1', cost: 140, color: '#b89aff',
+      desc: '雙匕首的迅捷刺客，擅長先手與收尾。', base: { hp: 54, atk: 11, def: 0, crit: 0.16 },
+      passive: '伏擊：滿血敵人受到的答對傷害 +35%，閃避率 +5%', apply: p => { p.opener = 0.35; p.dodge += 0.05; },
+      skills: [
+        { id: 'a_trace', name: '洞察破綻', lv: 2, cd: 3, icon: 'question', kind: 'elim', val: 1, desc: '刪去本題 1 個錯誤選項' },
+        { id: 'a_cross', name: '雙刃交錯', lv: 4, cd: 4, icon: 105, kind: 'double', desc: '本題答對時攻擊兩次' },
+        { id: 'a_siphon', name: '影之汲取', lv: 6, cd: 5, icon: 111, kind: 'leech', val: 0.35, mult: 1.5, desc: '本題答對傷害 ×1.5，並回復傷害的 35%' },
+        { id: 'a_vanish', name: '煙幕遁影', lv: 8, cd: 5, icon: 'fox', kind: 'dodge', desc: '本題答錯時必定閃避反擊' },
+        { id: 'a_finish', name: '暗影追獵', lv: 10, cd: 0, icon: 106, kind: 'hunter', val: 0.3, desc: '被動：怪物生命低於 30% 時，答對必定暴擊' }]
+    },
+    {
+      id: 'monk', name: '武僧', tile: 'ha:px_monk_m1', cost: 150, color: '#ffbd75',
+      desc: '以拳掌與穩定呼吸作戰，連續答對凝聚護體真氣。', base: { hp: 72, atk: 10, def: 1, crit: 0.07 },
+      passive: '調息：每 3 連擊獲得 4 護盾，此效果最多累積至最大生命的 20%', apply: p => { p.rhythmShield = 4; },
+      skills: [
+        { id: 'o_focus', name: '明心', lv: 2, cd: 3, icon: 'question', kind: 'elim', val: 1, desc: '刪去本題 1 個錯誤選項' },
+        { id: 'o_palm', name: '破山掌', lv: 4, cd: 4, icon: 107, kind: 'smite', val: 2.4, desc: '本題答對時傷害 ×2.4' },
+        { id: 'o_breath', name: '回春吐納', lv: 6, cd: 5, icon: 'heart', kind: 'heal', val: 0.25, desc: '回復 25% 最大生命' },
+        { id: 'o_guard', name: '金鐘罩', lv: 8, cd: 5, icon: 102, kind: 'shield', val: 0.3, desc: '獲得 30% 最大生命的護盾' },
+        { id: 'o_resolve', name: '氣貫全身', lv: 10, cd: 0, icon: 119, kind: 'focus', val: 3, desc: '被動：調息每次額外獲得 3 護盾，仍受 20% 上限限制' }]
+    },
+    {
+      id: 'bard', name: '吟遊詩人', tile: 'ha:px_bard_m1', cost: 160, color: '#7edfcf',
+      desc: '以里拉琴奏出魔法音符，用節拍維持攻勢與回復。', base: { hp: 62, atk: 9, def: 1, crit: 0.08 },
+      passive: '和弦：本場每答對 4 題，該題傷害 +30% 並回復 4 生命', apply: p => { p.cadence = 4; },
+      skills: [
+        { id: 'd_clue', name: '靈感樂句', lv: 2, cd: 4, icon: 'question', kind: 'elim', val: 2, desc: '刪去本題 2 個錯誤選項' },
+        { id: 'd_crescendo', name: '漸強和弦', lv: 4, cd: 5, icon: 130, kind: 'rage', val: 0.2, desc: '本場戰鬥攻擊力 +20%' },
+        { id: 'd_ballad', name: '療癒歌謠', lv: 6, cd: 5, icon: 'fairy', kind: 'heal', val: 0.3, desc: '回復 30% 最大生命' },
+        { id: 'd_lullaby', name: '靜謐小夜曲', lv: 8, cd: 6, icon: 128, kind: 'freeze', desc: '本題答錯不會受到反擊' },
+        { id: 'd_encore', name: '安可曲', lv: 10, cd: 0, icon: 'heart', kind: 'encore', val: 3, desc: '被動：和弦每次額外回復 3 生命' }]
+    }
+  );
   const ALL_SKILLS = CLASSES.flatMap(c => c.skills);
   /* 職業等級：以該職業遠征結算獲得的經驗累積，各職業分開 */
   const classNeed = lv => Math.round(300 * Math.pow(lv, 1.4));

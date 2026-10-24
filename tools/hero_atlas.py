@@ -84,14 +84,19 @@ def analyze(path):
     if any(centers[i+1]-centers[i]<width*.09 for i in [0,1,2,4,5,6]):raise ValueError('Pose centers too close')
     return {'width':width,'height':height,'transparentFraction':round(transparent,4),'frames':frames}
 
-atlas={};errors=[]
-for actor in MANIFEST['actors']:
-    path=ROOT/actor['file']
-    if not path.exists():errors.append({'id':actor['id'],'error':'Missing PNG'});continue
-    try:atlas[actor['id']]=analyze(path)
-    except Exception as exc:errors.append({'id':actor['id'],'error':str(exc)})
-(ROOT/'docs/hero-art/atlas-check.json').write_text(json.dumps({'ok':len(atlas),'expected':40,'errors':errors,'atlas':atlas},ensure_ascii=False,indent=2),encoding='utf-8')
-(ROOT/'js/hero-atlas.js').write_text('/* Generated source rectangles; PNGs remain untouched. */\nwindow.HERO_ATLAS='+json.dumps(atlas,separators=(',',':'))+';\n',encoding='utf-8')
-print(json.dumps({'ok':len(atlas),'expected':40,'errors':errors},ensure_ascii=False))
-if errors:sys.exit(1)
+def main():
+    atlas={};errors=[]
+    for actor in MANIFEST['actors']:
+        path=ROOT/actor['file']
+        if not path.exists():errors.append({'id':actor['id'],'error':'Missing PNG'});continue
+        try:atlas[actor['id']]=analyze(path)
+        except Exception as exc:errors.append({'id':actor['id'],'error':str(exc)})
+    (ROOT/'docs/hero-art/atlas-check.json').write_text(json.dumps({'ok':len(atlas),'expected':len(MANIFEST['actors']),'errors':errors,'atlas':atlas},ensure_ascii=False,indent=2),encoding='utf-8')
+    (ROOT/'js/hero-atlas.js').write_text('/* Generated source rectangles; PNGs remain untouched. */\nwindow.HERO_ATLAS='+json.dumps(atlas,separators=(',',':'))+';\n',encoding='utf-8')
+    print(json.dumps({'ok':len(atlas),'expected':len(MANIFEST['actors']),'errors':errors},ensure_ascii=False))
+    if errors:sys.exit(1)
 
+
+
+if __name__ == "__main__":
+    main()

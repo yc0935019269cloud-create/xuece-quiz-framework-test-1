@@ -1,0 +1,7 @@
+{
+  "id": "px_cleric_f6",
+  "prompt": "Edit the reference RPG pixel sprite animation atlas to correct spacing only. Keep the SAME character identity, hair, face, outfit and held staff/book: female maritime cleric with blue short wavy hair, pale turquoise hood, pearl-trimmed white robe, shell-headed staff and small prayer book. Keep eight distinct individually drawn full-body poses: idle eyesopen, blink, diagonal staff cast, forward staff cast, overhead staff cast, lateral staff cast, braced critical charge, forward critical impact. Exactly4 columns2rows. Current bottom poses2 and3 touch each other, unusable for animation. REDRAW ALL8 SPRITES SMALLER with each whole body and staff/book strictly inside the CENTRAL60 percent of its own equal cell, leaving20 percent fully transparent margins along all FOUR edges. NO magic rings, swirls, columns, trails, floor glow or floating sparks. Critical represented by powerful arm/staff stance and tiny glow only on the staff head. Do not connect neighboring cells. Every sprite must be fully separated by wide transparent gaps. Same charming detailed clustered pixel game art, no text, no gridlines, true transparent alpha background. Each character same scale; weapons can be held more vertically and compactly to fit.",
+  "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e38-9430-7a03-828e-d1369793d488\\exec-5f00c814-8236-41f6-b8cc-93f1ab643001.png",
+  "src": "assets/heroes/cleric_f6.png",
+  "retry": true
+}

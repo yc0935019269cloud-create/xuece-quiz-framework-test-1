@@ -210,7 +210,7 @@ const Store = (() => {
     return SP.pet(id, size, cls, style, sk ? sk.pal : null, acc || null);
   }
   // 沒有設定過造型時：騎士預設穿「薔薇近衛」（免費）；明確選過經典預設款（空字串）則照舊
-  const DEFAULT_SKIN = { knight: 'px_knight_m2' };
+  const DEFAULT_SKIN = { knight: 'px_knight_m2', assassin: 'px_assassin_m1', monk: 'px_monk_m1', bard: 'px_bard_m1' };
   function heroSkinId(c) { const v = (profile.heroSkin || {})[c]; return v === undefined ? (DEFAULT_SKIN[c] || '') : v; }
   function heroTile(id) {
     const c = id || profile.activeClass, sid = heroSkinId(c);

@@ -1,0 +1,15 @@
+{
+  "id": "px_knight_f7",
+  "cls": "knight",
+  "gender": "female",
+  "name": "霜蘭劍衛",
+  "src": "assets/heroes/knight_f7.png",
+  "file": "knight_f7.png",
+  "accent": "#a3d9ee",
+  "desc": "female frost knight with blue-white twin braids, pale blue full armor with fur shoulders, crystal kite shield and glowing ice sword",
+  "prompt": "Use case: stylized-concept. Create a corrected production sprite atlas using reference image solely for exact character identity, blue-white twin braids, fur shoulders, icy silver armor and blue crystal sword/shield. CRITICAL LAYOUT: all eight chibi full-body sprites MUST BE AT LEAST 25% SMALLER THAN REFERENCE, placed on a 4-column 2-row regular grid. Every sprite, including all hair, cape, sword and effects, fits inside only the CENTRAL 60% WIDTH and 70% HEIGHT of its own cell, leaving at least 20% completely transparent padding on every left/right cell edge. Absolutely NO contacting or overlapping adjacent sprites. No background, no shadow, no ground, NO broad glow or haze: true alpha transparency. Top row idle, eyes closed blink, diagonal sword slash, forward short sword thrust. Bottom row overhead sword swing, low short sword sweep, crouched charge, finishing thrust with very small ice shards. Every actor faces right in 3/4, consistent outfit and same scale. Crisp high-detail chibi pixel-art style. Transparent PNG, no text or gridlines. Sprite layout and isolation more important than large characters.",
+  "tool": "built-in image_gen.imagegen",
+  "generatedPath": "C:\\Users\\USER\\.codex\\generated_images\\01a16e39-aea1-7612-b15c-7d8f01fbb0a7\\exec-d67b93a1-fa2b-4557-9902-b154083ddfa2.png",
+  "replaces": "px_knight_f7.json; previous original kept at generatedPath in that log",
+  "reason": "bottom row neighboring poses joined into one alpha component"
+}

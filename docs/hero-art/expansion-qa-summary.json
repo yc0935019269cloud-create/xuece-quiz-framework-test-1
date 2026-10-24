@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-24",
+  "cacheVersion": 149,
+  "classes": 8,
+  "newClasses": [
+    "assassin",
+    "monk",
+    "bard"
+  ],
+  "actors": 128,
+  "newActors": 88,
+  "poses": 1024,
+  "validation": {
+    "newAssetAtlases": 88,
+    "originalPngUnchanged": 40,
+    "mechanicsChecks": 19,
+    "wardrobePurchasesAndWear": 128,
+    "battleClasses": 8,
+    "normalAnimations": 512,
+    "criticalAnimations": 128,
+    "routeChecks": 154,
+    "routeWidths": [
+      1000,
+      390
+    ],
+    "storageRestored": [
+      1000,
+      390
+    ],
+    "galleryClasses": 8,
+    "galleryActionsPerClass": 6,
+    "canvasCacheLimit": 24,
+    "allGameScriptSyntax": 32,
+    "strictContentCheck": true,
+    "fileOffline": true
+  },
+  "limits": [
+    "Edge headless contexts on Windows; no physical iPad test",
+    "HTTP canvas pixel checks; file:// UI, image loading and screenshots verified separately",
+    "No real-account cloud round trip",
+    "Eight original poses with timing, movement and class effects; not frame-by-frame video"
+  ],
+  "ok": true
+}

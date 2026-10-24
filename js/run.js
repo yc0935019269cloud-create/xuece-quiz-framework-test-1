@@ -443,6 +443,7 @@ class Run {
       let base = Math.max(1, p.atk - (s.bf.curse || 0)) * p.atkMul * (s.bf.elixir ? 1.5 : 1) * (1 + (s.bf.rage || 0));
       if (p.fury) base *= 1 + p.fury * Math.floor((1 - p.hp / p.maxHp) * 10);
       if (p.arcane && q.type !== 'single') base *= 1 + p.arcane;
+      if (p.opener && mon.hp === mon.maxHp) { base *= 1 + p.opener; ev.push({ t: 'skill', name: '伏擊' }); }
       if (this.has('lastlamp') && p.hp < p.maxHp * 0.5) base *= 1.35;
       let mult = 1 + Math.min(s.combo, p.comboCap) * 0.1 * (this.has('bracer') ? 2 : 1);
       if (this.has('quill') && q.type !== 'single') mult *= 1.6;
@@ -452,6 +453,8 @@ class Run {
       if (this.has('bell') && s.bf.charged) mult *= 1.8;
       if (this.has('lens') && (mon.elite || mon.boss)) mult *= 1.2;
       s.bf.okN = (s.bf.okN || 0) + 1;
+      const cadence = p.cadence && s.bf.okN % 4 === 0;
+      if (cadence) { mult *= 1.3; ev.push({ t: 'skill', name: '和弦' }); }
       const hunter = this.passive('hunter');
       const critRate = p.crit - (this.hasTrait('hex') ? 0.1 : 0) + (this.has('medal7') ? 0.05 * Math.min(s.combo, p.comboCap) : 0);
       let crit = Math.random() < critRate || !!(hunter && mon.hp < mon.maxHp * hunter.val) || (this.has('pendulum') && s.bf.okN % 4 === 0);
@@ -463,8 +466,15 @@ class Run {
       if (s.bf.chill) { dmg = Math.max(1, Math.round(dmg * 0.7)); s.bf.chill = false; }
       if (this.hasMech('fortify') && s.combo < 3) dmg = Math.max(1, Math.round(dmg * 0.7));
       if (s.bf.minion > 0) { dmg = Math.max(1, Math.round(dmg * 0.5)); s.bf.minion--; ev.push({ t: 'mstatus', text: '僕從擋下一半！' }); }
+      const beforeCombo = s.combo;
       s.combo++;
       if (this.has('sliderule') && q.type !== 'single') s.combo++;
+      // 連擊加速可能一次跨過整數門檻；只觸發一次，且不壓低其他技能給的護盾。
+      if (p.rhythmShield && Math.floor(s.combo / 3) > Math.floor(beforeCombo / 3)) {
+        const focus = this.passive('focus');
+        const gain = Math.max(0, Math.min(p.rhythmShield + (focus ? focus.val : 0), Math.floor(p.maxHp * 0.2) - s.shield));
+        if (gain) { s.shield += gain; ev.push({ t: 'status', text: '調息：護盾 +' + gain }); }
+      }
       let dealt = 0;
       if (this.hasTrait('dodge') && Math.random() < 0.25) ev.push({ t: 'mdodge' });
       else if (s.bf.guardUp) { s.bf.guardUp = false; ev.push({ t: 'mstatus', text: '格擋！傷害無效' }); }
@@ -497,6 +507,7 @@ class Run {
         mon.hp = 0; ev.push({ t: 'execute' });
       }
       let h = p.regen + (this.has('fang') ? 2 : 0) + (this.has('lastlamp') ? 3 : 0);
+      if (cadence) { const encore = this.passive('encore'); h += p.cadence + (encore ? encore.val : 0); }
       if (this.has('cloak')) h += Math.round(dealt * 0.15);
       if (this.petIs('fairy')) h += 1 + Math.floor(this.petLv() / 2);
       if (h) { const v = this.heal(h); if (v) ev.push({ t: 'heal', v }); }

@@ -723,8 +723,16 @@ const LEARN_UI = (() => {
       mage: { name: '隕星術', dmg: () => 45, desc: '造成 45 傷害' },
       ranger: { name: '流星三連', dmg: () => 36, desc: '造成 36 傷害，連擊 +2' },
       cleric: { name: '聖光審判', dmg: () => 30, desc: '造成 30 傷害，回復 2 ❤' },
-      berserker: { name: '血怒斬', dmg: () => 25 + (B.max - B.hp) * 8, desc: '造成 25＋每失去 1 ❤ 再 +8 的傷害' }
+      berserker: { name: '血怒斬', dmg: () => 25 + (B.max - B.hp) * 8, desc: '造成 25＋每失去 1 ❤ 再 +8 的傷害' },
+      assassin: { name: '千影斷空', dmg: () => 38 + (B.combo >= 3 ? 12 : 0), desc: '造成 38 傷害，達到 3 連擊時提高至 50' },
+      monk: { name: '真氣・破山', dmg: () => 32, desc: '造成 32 傷害，回復 1 ❤ 並擋下下一次反擊' },
+      bard: { name: '星海安可曲', dmg: () => 32, desc: '造成 32 傷害，回復 1 ❤ 並保留 1 點能量' }
     }[clsId] || { name: '必殺技', dmg: () => 35, desc: '造成 35 傷害' };
+    const classBattleHint = {
+      assassin: '伏擊：第一次答對攻擊滿血敵人，傷害 +35%；答錯時有 5% 機率閃避。',
+      monk: '調息：每 3 連擊獲得一次格擋，不累積；必殺技回復 1 ❤ 並格擋一次。',
+      bard: '和弦：對目前敵人每第一次答對 4 題，該題傷害 +30% 並回復 1 ❤。'
+    }[clsId] || '';
     const TRAIT = {
       charge: { name: '蓄力', desc: '每答 2 題蓄力一次：蓄力時答錯受 2 點傷害；答對則「破防」傷害 ×1.5' },
       shell: { name: '硬殼', desc: '硬殼在時普通攻擊只有 6 成傷害；暴擊或必殺技可以打碎硬殼' },
@@ -765,7 +773,7 @@ const LEARN_UI = (() => {
           <div class="lb-hud"><span class="lb-hp" id="lbHp"></span><span class="lb-en" id="lbEn" title="知識能量：讀概念卡、玩互動、每 5 連擊各 +1；集滿 3 點可以放必殺技"></span></div>
           <button class="lb-ult" id="lbUlt" title="${U.esc(ULT.name)}：${U.esc(ULT.desc)}">⚡ 必殺技</button>
           <div class="lb-combo" id="lbCombo"></div>
-          <div class="lb-hero" id="lbHero"><span class="lb-hbody" id="lbHeroBody"><i class="shadow"></i>${SP.tile(Store.heroTile(), 150, 'anim-bob')}</span>${pet ? `<span class="lb-pet" id="lbPet">${Store.petHTML(pet, 54)}</span>` : ''}</div>
+          <div class="lb-hero" id="lbHero" title="${U.esc(classBattleHint)}"><span class="lb-hbody" id="lbHeroBody"><i class="shadow"></i>${SP.tile(Store.heroTile(), 150, 'anim-bob')}</span>${pet ? `<span class="lb-pet" id="lbPet">${Store.petHTML(pet, 54)}</span>` : ''}</div>
           <div id="lbMonWrap"></div></div>`));
         U.$('#lbUlt').onclick = ult;
       }
@@ -885,8 +893,14 @@ const LEARN_UI = (() => {
       const m = monAt(); if (!BON() || !m) return;
       if (firstOk) { B.combo++; B.maxCombo = Math.max(B.maxCombo, B.combo); }
       const mult = firstOk ? 1 + 0.15 * Math.min(B.combo - 1, 8) : 1;
-      const crit = firstOk && Math.random() < 0.08 + 0.03 * Math.min(B.combo, 8) + (clsId === 'ranger' ? 0.1 : 0);
+      const crit = firstOk && Math.random() < 0.08 + 0.03 * Math.min(B.combo, 8) + (clsId === 'ranger' ? 0.1 : clsId === 'assassin' ? 0.08 : 0);
       let dmg = (firstOk ? 10 : 5) * mult * (crit ? 1.6 : 1), tags = [];
+      if (firstOk && clsId === 'assassin' && m.hp === m.max) { dmg *= 1.35; tags.push('伏擊！'); }
+      if (firstOk && clsId === 'monk' && B.combo % 3 === 0 && !B.shield) { B.shield = 1; tags.push('調息・護體'); }
+      if (firstOk && clsId === 'bard') {
+        m.songN = (m.songN || 0) + 1;
+        if (m.songN % 4 === 0) { dmg *= 1.3; const healed = B.hp < B.max; B.hp = Math.min(B.max, B.hp + 1); tags.push(healed ? '和弦・+1❤' : '和弦！'); }
+      }
       if (m.charged && firstOk) { dmg *= 1.5; m.charged = false; tags.push('破防！'); }
       if (m.shell) { if (crit) { m.shell = false; tags.push('殼碎了！'); } else dmg *= 0.6; }
       dmg = Math.max(1, Math.round(dmg));
@@ -925,7 +939,8 @@ const LEARN_UI = (() => {
       const lost = B.combo;
       B.combo = 0;
       let dmg = m.charged ? 2 : 1; const wasCharged = m.charged; m.charged = false;
-      const blocked = B.shield > 0; if (blocked) { B.shield = 0; dmg = 0; }
+      const dodged = clsId === 'assassin' && Math.random() < 0.05;
+      const blocked = B.shield > 0 || dodged; if (blocked) { if (!dodged) B.shield = 0; dmg = 0; }
       B.hp -= dmg; if (dmg) B.hurt = (B.hurt || 0) + 1;
       let fell = false;
       if (B.hp <= 0) { B.falls++; B.hp = B.max; fell = true; }
@@ -936,7 +951,7 @@ const LEARN_UI = (() => {
       if (lost >= 3) banner(`${lost} 連擊中斷`, 'dim');
       (async () => {
         await FX.monStrike(m.fx);
-        if (blocked) { fxText('hero', '🛡 格擋！', 'miss'); SFX.play('miss'); return drawMon(); }
+        if (blocked) { fxText('hero', dodged ? '遁影・閃避！' : '🛡 格擋！', 'miss'); SFX.play('miss'); return drawMon(); }
         anim('#lbHeroBody', 'anim-hurt'); lb.classList.remove('shake', 'hurtflash'); void lb.offsetWidth; lb.classList.add('shake', 'hurtflash');
         SFX.play('hurt'); fxText('hero', `-${dmg}❤` + (wasCharged ? ' 蓄力一擊！' : ''), '');
         if (fell) setTimeout(() => { say('你倒下了……夥伴把你扶起來：「沒關係，再來一次！」'); SFX.play('heal'); }, 450);
@@ -956,6 +971,8 @@ const LEARN_UI = (() => {
       if (clsId === 'knight') B.shield = 1;
       if (clsId === 'cleric') B.hp = Math.min(B.max, B.hp + 2);
       if (clsId === 'ranger') { B.combo += 2; B.maxCombo = Math.max(B.maxCombo, B.combo); }
+      if (clsId === 'monk') { B.shield = 1; B.hp = Math.min(B.max, B.hp + 1); }
+      if (clsId === 'bard') { B.en = 1; B.hp = Math.min(B.max, B.hp + 1); }
       const killed = m.hp <= 0, rage = enrage(m);
       save(); hud();
       banner(`⚡ ${ULT.name}`, 'ult'); say(`「${ULT.name}」！`);
@@ -965,6 +982,8 @@ const LEARN_UI = (() => {
         tags.forEach((t, i) => setTimeout(() => banner(t, 'gold'), 300 + i * 250));
         if (clsId === 'cleric') fxText('hero', '+2❤', 'heal');
         if (clsId === 'knight') fxText('hero', '🛡 守護', 'heal');
+        if (clsId === 'monk') fxText('hero', '+1❤ 🛡 護體', 'heal');
+        if (clsId === 'bard') fxText('hero', '+1❤ ⚡+1', 'heal');
         if (rage) rageFx();
         if (killed) kill(m, dmg - before >= 8); else drawMon();
       })();
