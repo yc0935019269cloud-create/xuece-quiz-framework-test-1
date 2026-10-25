@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T18:14:37.854Z",
+ "at": "2026-10-25T18:44:08.471Z",
  "checks": [
   {
    "name": "準備頁：科目／題本樹（含年份）／題型／星號／出題方式／同類題／狀態／題數／彈珠數都在",
@@ -65,8 +65,8 @@
     "error": "",
     "item": {
      "kind": "bank",
-     "id": "eye115-exam-ans-reflex-107-309",
-     "key": "A",
+     "id": "eye115-exam-cornea-general-108-306",
+     "key": "D",
      "type": "single"
     }
    }
@@ -89,8 +89,8 @@
      "error": "",
      "item": {
       "kind": "bank",
-      "id": "eye115-exam-ans-reflex-107-309",
-      "key": "A",
+      "id": "eye115-exam-cornea-general-108-306",
+      "key": "D",
       "type": "single"
      }
     },
@@ -99,13 +99,45 @@
      "c": 1,
      "w": 0,
      "last": 1,
-     "t": 1792952080466
+     "t": 1792953850819
     }
    }
   },
   {
    "name": "去發射：面板收起、遮罩拿掉（還有彈珠）",
    "pass": true
+  },
+  {
+   "name": "♪ 音量：彈珠畫面裡打開刷題地牢的總音量／背景音樂／音效／全部靜音，改了直接寫進 VOL，圖示跟著靜音切換，Esc／點外面關閉",
+   "pass": true,
+   "extra": {
+    "vol1": {
+     "shown": true,
+     "sliders": [
+      "master",
+      "music",
+      "sfx",
+      "amb",
+      "amb_rain",
+      "amb_waves",
+      "amb_stream",
+      "amb_fire"
+     ],
+     "mute": true,
+     "top": true
+    },
+    "music": 0.3,
+    "muted": {
+     "v": true,
+     "icon": "🔇"
+    },
+    "unmuted": {
+     "v": false,
+     "icon": "♪"
+    },
+    "closedEsc": true,
+    "closedOutside": true
+   }
   },
   {
    "name": "遊戲在 iframe 內載入完成、發射偵測就緒（發射音效已解碼）",
@@ -152,8 +184,7 @@
     },
     "locked": true,
     "firedLog": [
-     0,
-     0,
+     1,
      1
     ],
     "firedAtStart": 0
@@ -176,8 +207,8 @@
     "error": "",
     "item": {
      "kind": "bank",
-     "id": "ans-pathways-q-6",
-     "key": "D",
+     "id": "s114-eye-ans-exam106-u14-q0022",
+     "key": "C",
      "type": "single"
     }
    }
@@ -201,8 +232,8 @@
      "error": "",
      "item": {
       "kind": "bank",
-      "id": "ans-pathways-q-6",
-      "key": "D",
+      "id": "s114-eye-ans-exam106-u14-q0022",
+      "key": "C",
       "type": "single"
      }
     },
@@ -227,12 +258,12 @@
      "error": "",
      "item": {
       "kind": "bank",
-      "id": "ans-reflex-q-10",
-      "key": "C",
+      "id": "eye115-exam-ans-clinical-109-33",
+      "key": "D",
       "type": "single"
      }
     },
-    "startsBefore": 182
+    "startsBefore": 104
    }
   },
   {
@@ -285,7 +316,7 @@
       "i": 0,
       "done": 1,
       "best": 2,
-      "last": 1792952227005,
+      "last": 1792953992989,
       "run": null
      },
      "rev": 5
@@ -308,10 +339,23 @@
     "left": 0,
     "right": 390,
     "bottom": 844,
-    "h": 529.6875,
-    "bar": 68.59375,
+    "h": 576.734375,
+    "bar": 104.59375,
     "vw": 390,
     "vh": 844,
+    "overflow": 0
+   }
+  },
+  {
+   "name": "手機：♪ 音量面板完整在畫面內",
+   "pass": true,
+   "extra": {
+    "left": 42,
+    "right": 382,
+    "bottom": 626.59375,
+    "vw": 390,
+    "vh": 844,
+    "shown": true,
     "overflow": 0
    }
   }
@@ -320,6 +364,7 @@
  "shots": [
   "output\\playwright\\peglin-web-setup-desktop.png",
   "output\\playwright\\peglin-web-answered.png",
+  "output\\playwright\\peglin-web-volume.png",
   "output\\playwright\\peglin-web-game-title.png",
   "output\\playwright\\peglin-web-game-map.png",
   "output\\playwright\\peglin-web-game-battle.png",
@@ -329,10 +374,11 @@
   "output\\playwright\\peglin-web-learn.png",
   "output\\playwright\\peglin-web-no-web.png",
   "output\\playwright\\peglin-web-setup-mobile.png",
-  "output\\playwright\\peglin-web-mobile-panel.png"
+  "output\\playwright\\peglin-web-mobile-panel.png",
+  "output\\playwright\\peglin-web-mobile-volume.png"
  ],
  "firedAtStart": 0,
  "restored": true,
- "pass": 21,
- "total": 21
+ "pass": 23,
+ "total": 23
 }

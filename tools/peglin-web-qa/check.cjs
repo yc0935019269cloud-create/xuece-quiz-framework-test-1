@@ -67,6 +67,24 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     g = await G();
     ok('去發射：面板收起、遮罩拿掉（還有彈珠）', !g.panel && await page.evaluate(() => document.querySelector('#pgwShield').hidden));
 
+    /* ---------- 2b. ♪：在彈珠畫面裡調刷題地牢的音樂與音效（同一組 VOL 設定） ---------- */
+    await page.evaluate(() => VOL.set('muted', false));   // 測試一開始設成靜音，這裡先恢復，才能驗證「按一下＝靜音」
+    await page.click('#pgwVolBtn');
+    const vol1 = await page.evaluate(() => { const v = document.querySelector('#pgwVol'), r = v.getBoundingClientRect(); return { shown: !v.hidden, sliders: [...v.querySelectorAll('input[type=range]')].map(x => x.dataset.k), mute: !!v.querySelector('[data-mute]'), top: document.elementFromPoint(r.x + r.width / 2, r.y + 20)?.closest('#pgwVol') !== null }; });
+    await page.evaluate(() => { const r = document.querySelector('#pgwVol input[data-k="music"]'); r.value = 30; r.dispatchEvent(new Event('input', { bubbles: true })); });
+    const music = await page.evaluate(() => VOL.get('music'));
+    await page.click('#pgwVol [data-mute]');
+    const muted = await page.evaluate(() => ({ v: VOL.get('muted'), icon: document.querySelector('#pgwVolBtn').textContent }));
+    await shot('volume');
+    await page.click('#pgwVol [data-mute]');
+    const unmuted = await page.evaluate(() => ({ v: VOL.get('muted'), icon: document.querySelector('#pgwVolBtn').textContent }));
+    await page.keyboard.press('Escape');
+    const closedEsc = await page.evaluate(() => document.querySelector('#pgwVol').hidden);
+    await page.click('#pgwVolBtn'); await page.mouse.click(300, 400);
+    const closedOutside = await page.evaluate(() => document.querySelector('#pgwVol').hidden);
+    ok('♪ 音量：彈珠畫面裡打開刷題地牢的總音量／背景音樂／音效／全部靜音，改了直接寫進 VOL，圖示跟著靜音切換，Esc／點外面關閉', vol1.shown && vol1.top && ['master', 'music', 'sfx'].every(k => vol1.sliders.includes(k)) && vol1.mute && Math.abs(music - 0.3) < 0.001 && muted.v === true && muted.icon === '🔇' && unmuted.v === false && unmuted.icon === '♪' && closedEsc && closedOutside, { vol1, music, muted, unmuted, closedEsc, closedOutside });
+    await page.evaluate(() => VOL.set('muted', true));   // 其餘測試維持靜音
+
     /* ---------- 3. 真的玩：等 Unity 載入，進第一關，發射到彈珠用完 ---------- */
     await page.waitForFunction(() => PEGLIN.web.state && PEGLIN.web.state.ready, null, { timeout: 300000 });
     await page.waitForFunction(() => PEGLIN.web.state.armed, null, { timeout: 60000 }).catch(() => {});
@@ -225,6 +243,11 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     const mob = await page.evaluate(() => { const p = document.querySelector('#pgwPanel').getBoundingClientRect(), b = document.querySelector('.pgw-bar').getBoundingClientRect(); return { left: p.left, right: p.right, bottom: p.bottom, h: p.height, bar: b.height, vw: innerWidth, vh: innerHeight, overflow: document.documentElement.scrollWidth - innerWidth }; });
     ok('手機：題目面板滿版貼底、高度不超過 8 成、狀態列不擠爆', mob.left === 0 && Math.abs(mob.right - mob.vw) <= 1 && Math.abs(mob.bottom - mob.vh) <= 1 && mob.h <= mob.vh * 0.8 && mob.bar < 140 && mob.overflow <= 1, mob);
     await shot('mobile-panel');
+    await page.click('#pgwVolBtn');
+    const mvol = await page.evaluate(() => { const r = document.querySelector('#pgwVol').getBoundingClientRect(); return { left: r.left, right: r.right, bottom: r.bottom, vw: innerWidth, vh: innerHeight, shown: !document.querySelector('#pgwVol').hidden, overflow: document.documentElement.scrollWidth - innerWidth }; });
+    ok('手機：♪ 音量面板完整在畫面內', mvol.shown && mvol.left >= 0 && mvol.right <= mvol.vw && mvol.bottom <= mvol.vh && mvol.overflow <= 1, mvol);
+    await shot('mobile-volume');
+    await page.keyboard.press('Escape');
     await page.evaluate(() => PEGLIN.web.close(true));
   } catch (e) {
     report.issues.push('exception: ' + (e && e.stack || e)); console.log('EXCEPTION', e);

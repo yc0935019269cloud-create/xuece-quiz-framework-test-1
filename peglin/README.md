@@ -26,11 +26,12 @@ peglin/web.html（外框頁）── 載入 https://yc0935019269cloud-create.git
 - **實測行為**（2026-10-25，對方 main `1cf98a4`、Pages 建置 `625a722`）：戰鬥中每次發射算一顆；戰鬥後「把彈珠打進路口選下一關」也是真的發射，算一顆；開新冒險點第一關時，遊戲有時會自動發射一顆選路線（兩次實測一次有、一次沒有），有的話也會算到。換下一顆彈珠、菜單、教學翻頁、標題畫面的展示彈珠都不會算。
 - **載入兩段**：`createUnityInstance` 完成後，遊戲還要自己預載資源、載入標題場景（畫面先後出現「Loading N%」與綠色進度條；SwiftShader 上要幾十秒），這段時間點遊戲沒有反應。
 - **彈珠用完**：遊戲上蓋一層遮罩（包括地圖、商店、獎勵畫面），點一下出下一題；遊戲裡按鍵也會被外框頁擋下並出題。可以隨時按「📖 答題」先答題存彈珠。
+- **刷題地牢的音量**：上方 ♪ 打開刷題地牢自己的總音量、背景音樂、音效、全部靜音（和頂部「♪ 音樂與音量」同一組設定）。遊戲本身的音樂音效請用遊戲裡的「選項」調。
 - **紀錄**：直接寫進這個網頁的進度——刷題 `Store.record`（錯題本、統計，答對 +8 經驗、+1 魂晶，答錯 +2 經驗，與本機版同步規則相同）；學習檢核 `LEARN_UI.applyPeglin({type:'check', ok: 第一次就對})`，整課走完 `applyPeglin({type:'lesson'})`。之後照常雲端同步。`test: true` 的場次不寫紀錄。
 - **範圍**：彈珠刷題的條件和自由遠征相同（科目、`Screens.setPicker` 題本樹與年份、題型、星號、出題順序、同類題、狀態、題數），排序規則與 `screens.js` 的 `prefOrder` 一致；彈珠學習沿用原本的選課樹。
 - **網址**：預設 `https://yc0935019269cloud-create.github.io/peglinnnnnnn/`，可在彈珠頁「⚙ 網頁版遊戲網址」改；只接受自己的 github.io 或 localhost（外框頁也檢查，避免網址參數被拿來載入別人的程式）。
 - **限制**：遊戲本身不知道有題目，所以沒有答對傷害加成、答錯扣血；遊戲音效若被遊戲內設定完全關掉可能偵測不到（未實測）；第一次載入約 30 MB；Peglin 的冒險存檔由遊戲自己存在瀏覽器（與 peglinnnnnnn 網頁本身的存檔分開）。可以點的圖解、互動模擬、字母發音只在學習模式。
-- **測試**：`tools/peglin-web-qa/check.cjs`（headless Edge＋SwiftShader，file:// 開 index.html，實際載入遊戲、等標題畫面出現、開新冒險、打進第一關發射，備份／還原 localStorage）21／21 通過；結果 `docs/peglin-web/qa.json`、截圖 `output/playwright/peglin-web-*.png`。需要網路，整趟約 8 分鐘。沒有實機 iPad／手機實玩測試。
+- **測試**：`tools/peglin-web-qa/check.cjs`（headless Edge＋SwiftShader，file:// 開 index.html，實際載入遊戲、等標題畫面出現、開新冒險、打進第一關發射，備份／還原 localStorage）23／23 通過；結果 `docs/peglin-web/qa.json`、截圖 `output/playwright/peglin-web-*.png`。需要網路，整趟約 8 分鐘。沒有實機 iPad／手機實玩測試。
 
 ## 本機版架構：題庫在這裡，遊戲本體在 E:\PeglinQuiz
 

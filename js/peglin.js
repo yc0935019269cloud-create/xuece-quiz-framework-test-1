@@ -285,9 +285,11 @@ const PEGLIN = (() => {
         <span class="pgw-stat" id="pgwStat"></span>
         <span class="grow"></span>
         <button class="px-btn small" id="pgwAsk" title="先答題，把彈珠存起來">📖 ${learn ? '下一步' : '答題'}</button>
+        <button class="px-btn small" id="pgwVolBtn" title="刷題地牢的音樂與音效" aria-label="刷題地牢的音樂與音效" aria-expanded="false">♪</button>
         ${typeof Calc !== 'undefined' ? '<button class="px-btn small" id="pgwCalc" title="計算機" aria-label="計算機">🧮</button>' : ''}
         ${typeof PAD !== 'undefined' ? '<button class="px-btn small" id="pgwPad" title="計算紙" aria-label="計算紙">📝</button>' : ''}
         <button class="px-btn small" id="pgwExit">✕ 結束</button>
+        <div class="pgw-vol panel" id="pgwVol" role="dialog" aria-label="刷題地牢的音樂與音效" hidden></div>
       </div>
       <div class="pgw-stage">
         <iframe id="pgwFrame" title="哥布林彈珠" allow="autoplay; fullscreen; gamepad" src="${U.esc(hostUrl())}"></iframe>
@@ -301,6 +303,7 @@ const PEGLIN = (() => {
       webClose();
     };
     U.$('#pgwAsk').onclick = () => { if (!G.panel) next(); };
+    U.$('#pgwVolBtn').onclick = () => toggleVol();
     if (U.$('#pgwCalc')) U.$('#pgwCalc').onclick = () => Calc.toggle();
     if (U.$('#pgwPad')) U.$('#pgwPad').onclick = () => PAD.toggle();
     U.$('#pgwShield').onclick = () => { if (!G.panel) next(); };   // 彈珠用完時點遊戲畫面任何地方都出下一題
@@ -323,8 +326,19 @@ const PEGLIN = (() => {
     } else if (d.type === 'blocked') { if (!G.panel) next(); }
     hud();
   }
+  /* 刷題地牢自己的音樂與音效（和頂部「♪ 音樂與音量」同一組控制：Screens.volumeControls），不是遊戲本身的音量 */
+  function volOutside(e) { const v = U.$('#pgwVol'); if (v && !v.contains(e.target) && !U.$('#pgwVolBtn').contains(e.target)) toggleVol(false); }
+  const volBlur = () => toggleVol(false);   // 點進遊戲（iframe）時父頁收不到 pointerdown，只會 blur
+  function toggleVol(on) {
+    const v = U.$('#pgwVol'), b = U.$('#pgwVolBtn'); if (!v) return;
+    on = on === undefined ? v.hidden : on;
+    if (on) { v.innerHTML = '<h3>刷題地牢的音樂與音效</h3><p class="dim small-t">遊戲本身的音量請用遊戲裡的「選項」。</p>'; v.appendChild(Screens.volumeControls()); v.onchange = () => hud(); document.addEventListener('pointerdown', volOutside, true); window.addEventListener('blur', volBlur); }
+    else { document.removeEventListener('pointerdown', volOutside, true); window.removeEventListener('blur', volBlur); }
+    v.hidden = !on; b.setAttribute('aria-expanded', String(on)); hud();
+  }
   function onKey(e) {
     if (!G || document.querySelector('.modal-bg')) return;
+    if (e.key === 'Escape' && !U.$('#pgwVol').hidden) { e.preventDefault(); toggleVol(false); return; }
     if (e.key === 'Escape') { if (G.panel && G.credits > 0) { e.preventDefault(); closePanel(); } return; }
     if (!G.panel || e.ctrlKey || e.metaKey || e.altKey) return;
     if (e.target && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
@@ -340,6 +354,7 @@ const PEGLIN = (() => {
     U.$('#pgwStat').innerHTML = `${G.mode === 'learn' ? `已完成 ${G.reads + G.graded} 步` : `已答 ${G.graded} 題`}${G.graded ? `・一次答對 ${G.right}/${G.graded}` : ''}・已發射 ${G.fired} 顆${load ? `<em>${load}</em>` : ''}`;
     U.$('#pgwShieldBtn').innerHTML = `⚪ 彈珠用完了<small>點這裡${G.mode === 'learn' ? '繼續上課' : '答下一題'}，${G.per > 1 ? `每${G.mode === 'learn' ? '完成' : '答'} ${G.per} ${unitWord()}` : '答完'}可以再發射 ${G.shots} 顆</small>`;
     U.$('#pgwAsk').hidden = G.panel;
+    U.$('#pgwVolBtn').textContent = typeof VOL !== 'undefined' && VOL.get('muted') ? '🔇' : '♪';
   }
   function post(msg) { const f = U.$('#pgwFrame'); try { f && f.contentWindow && f.contentWindow.postMessage(Object.assign({ pgw: 1 }, msg), '*'); } catch {} }
   function lock(on) {
@@ -455,7 +470,7 @@ const PEGLIN = (() => {
   function webClose(silent) {
     if (!G) return;
     const g = G; clearItem(); G = null;
-    window.removeEventListener('message', onMsg); document.removeEventListener('keydown', onKey, true);
+    window.removeEventListener('message', onMsg); document.removeEventListener('keydown', onKey, true); document.removeEventListener('pointerdown', volOutside, true); window.removeEventListener('blur', volBlur);
     const f = U.$('#pgwFrame'); try { f.contentWindow.postMessage({ pgw: 1, type: 'quit' }, '*'); } catch {}
     const el = U.$('#pgw'); if (el) el.remove();
     document.documentElement.classList.remove('pgw-open');

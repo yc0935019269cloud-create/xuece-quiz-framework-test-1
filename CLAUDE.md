@@ -28,14 +28,14 @@
 ### 網頁版彈珠（2026-10-26，v153）——推上 GitHub 後任何裝置開 Page 就能玩
 
 - 預設玩法改成網頁版：`peglin/web.html` 外框頁載入 peglinnnnnnn 已部署在 GitHub Pages 的 Unity WebGL 建置（`https://yc0935019269cloud-create.github.io/peglinnnnnnn/` 的 Build／StreamingAssets，檔名從對方 index.html 讀，也載入它的 ipad-display.js）。**不修改 peglinnnnnnn repo**（它是純 Peglin，沒有出題介面、URL 參數或 JS 橋接）；GitHub Pages 有 `Access-Control-Allow-Origin: *`，file:// 也能載入。本機啟動器流程完整保留（側欄「🖥 本機版」、準備頁下方本機版按鈕）。
-- 題目放在遊戲外層（`js/peglin.js` 的 `webOpen`／`quizSession`／`learnSession`，`css/peglin.css` 的 `.pgw*`，z-index 45、在 modal 之下）：**答題換彈珠**——每答（學習＝每完成）`per` 題可發射 `shots` 顆，`onWrong` 選答錯算不算；彈珠用完時遊戲被遮罩蓋住（含地圖、商店、獎勵畫面），點遊戲任何地方或在遊戲裡按鍵（外框頁擋下並 postMessage `blocked`）就出下一題；「📖」可先答題存彈珠。HUD 有計算機／計算紙。
+- 題目放在遊戲外層（`js/peglin.js` 的 `webOpen`／`quizSession`／`learnSession`，`css/peglin.css` 的 `.pgw*`，z-index 45、在 modal 之下）：**答題換彈珠**——每答（學習＝每完成）`per` 題可發射 `shots` 顆，`onWrong` 選答錯算不算；彈珠用完時遊戲被遮罩蓋住（含地圖、商店、獎勵畫面），點遊戲任何地方或在遊戲裡按鍵（外框頁擋下並 postMessage `blocked`）就出下一題；「📖」可先答題存彈珠。HUD 有計算機／計算紙，以及 ♪（v155）：在遊戲層裡打開刷題地牢自己的總音量／背景音樂／音效／全部靜音／戰鬥震動（`Screens.volumeControls`，和頂部「♪ 音樂與音量」同一組 VOL 設定；靜音時按鈕變 🔇；Esc、點外面或點進遊戲就關）。遊戲本身的音量仍用遊戲裡的「選項」，外框頁不控制。
 - 發射偵測：外框頁攔 `decodeAudioData`（先記壓縮資料指紋）與 `AudioBufferSourceNode.start`；所有彈珠共用的發射音效 `UI_Tock_02`（指紋 `1602:4f96324f`；AAC 解碼後 4096 樣本≈0.0929 s 雙聲道，備援區間 0.082–0.098 s，全遊戲沒有其他音效落在此區間）播放＝一顆，1.2 秒內算同一顆（Unity 每次 start 會呼叫兩次、多重彈珠會連響）。實測：戰鬥每發一顆、戰鬥後把彈珠打進路口選下一關也算一顆、開局偶爾會自動選路一顆；換彈珠、菜單、教學翻頁、標題畫面展示彈珠不算。
 - 紀錄：刷題 `Store.record`（錯題本、統計；答對 +8 經驗 +1 魂晶、答錯 +2 經驗，與本機版同步規則相同）；學習檢核 `LEARN_UI.applyPeglin({type:'check', ok: 第一次就對})`（答錯進複習盒），一課走完 `applyPeglin({type:'lesson'})`；選的課上完後輪流複習這幾課的題目（`CTX_RE` 承上題不進複習）。場次 `test: true` 不寫紀錄。答錯可「稍後再出一次」。
 - 彈珠刷題範圍和自由遠征一致：科目、`Screens.setPicker` 題本樹＋年份、題型、星號、出題順序（smart／rand／new／wrong，`orderUnits` 照 screens.js 的 `prefOrder`）、同類題、狀態、題數；本機版打包也改用同一套。彈珠學習沿用原選課樹，另加彈珠設定。設定存 `peglin-config`／`peglin-learn`（多了 per／shots／onWrong）。
 - GitHub Pages 上不再自動探測本機啟動器（避免別台裝置跳「存取本機網路」詢問），要用本機版按側欄「偵測本機啟動器」；file:// 與 localhost 照舊自動偵測。網頁版與本機版都不能用時才顯示原本的說明。遊戲網址可在彈珠頁「⚙ 網頁版遊戲網址」改，外框頁與 peglin.js 都只接受 `yc0935019269cloud-create.github.io` 或 localhost（避免網址參數載入別人的程式）；`peglin-web.debug` 只給 QA 讀外框頁狀態。
 - 限制：遊戲不知道有題目，沒有答對傷害加成／答錯扣血；遊戲內音效關到 0 時能否偵測未實測；createUnityInstance 完成後遊戲還要自己預載資源與載入標題（SwiftShader 上幾十秒，實機較快）；首次載入約 30 MB；Peglin 存檔存在瀏覽器、與 peglinnnnnnn 網頁本身分開；可以點的圖解、互動、字母發音只在學習模式。沒有實機 iPad／手機實玩測試。
 - 對方 repo 改版時：先確認發射音效仍是 UI_Tock_02（長度備援通常就夠），新指紋可加在 web.html 的 `LAUNCH_FP` 或用網址參數 `fp=`。
-- QA：`tools/peglin-web-qa/check.cjs`（headless Edge＋SwiftShader、file://、實際載入遊戲開新冒險打進第一關發射；備份還原 localStorage）**21／21 通過**、無頁面錯誤：準備頁與自由遠征同一套條件與題數、答對寫紀錄＋給彈珠、戰鬥中實際發射逐顆偵測（點了沒發射的不算）、用完遮罩＋外框鎖鍵盤、按鍵／點遊戲叫出下一題、答錯進錯題本並稍後再出、結束移除 iframe、test 場次不寫紀錄、彈珠學習一課走完記完成＋檢核錯題進複習盒＋每 2 步換 1 顆、網頁版連不到顯示原說明、390px 手機版。另用常駐 driver 打完一整場戰鬥＋選路線＋第二關驗證偵測（每發一顆、不多算）。結果 `docs/peglin-web/qa.json`、截圖 `output/playwright/peglin-web-*.png`。詳細介接見 `peglin/README.md`。
+- QA：`tools/peglin-web-qa/check.cjs`（headless Edge＋SwiftShader、file://、實際載入遊戲開新冒險打進第一關發射；備份還原 localStorage）**23／23 通過**、無頁面錯誤：準備頁與自由遠征同一套條件與題數、答對寫紀錄＋給彈珠、戰鬥中實際發射逐顆偵測（點了沒發射的不算）、用完遮罩＋外框鎖鍵盤、按鍵／點遊戲叫出下一題、答錯進錯題本並稍後再出、結束移除 iframe、test 場次不寫紀錄、彈珠學習一課走完記完成＋檢核錯題進複習盒＋每 2 步換 1 顆、網頁版連不到顯示原說明、♪ 刷題地牢音量面板（桌機與 390px）、390px 手機版。另用常駐 driver 打完一整場戰鬥＋選路線＋第二關驗證偵測（每發一顆、不多算）。結果 `docs/peglin-web/qa.json`、截圖 `output/playwright/peglin-web-*.png`。詳細介接見 `peglin/README.md`。
 
 ## 角色與動畫（2026-10-04）
 
