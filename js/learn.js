@@ -44,11 +44,12 @@ const LEARN_UI = (() => {
   reindex();
 
   /* 星號存在學習存檔內，沿用備份與雲端同步；只存內容參照，不複製教材或圖片。 */
-  const starKey = r => JSON.stringify(r.kind === 'term' ? [r.kind, r.p, r.l, r.img, r.name] : [r.kind, r.p, r.id]);
+  const starKey = r => JSON.stringify(r.kind === 'term' ? [r.kind, r.p, r.l, r.img, r.name] : r.kind === 'page' ? [r.kind, r.p, r.l, r.i] : [r.kind, r.p, r.id]);
   const isStarred = r => Object.hasOwn(D.starred || {}, starKey(r));
   function starButton(r) {
     if (!r) return '';
     const on = isStarred(r), term = r.kind === 'term';
+    if (r.kind === 'page') return `<button type="button" class="px-btn small knowledge-star page-star ${on ? 'gold' : ''}" data-knowledge-star="${U.esc(JSON.stringify(r))}" aria-pressed="${on}" title="${on ? '已收進知識筆記；再按一次取消' : '把這一頁收進知識筆記的星號收藏'}">${on ? '★ 已收藏此頁' : '☆ 收藏此頁'}</button>`;
     if (term) return `<button type="button" class="knowledge-star knowledge-star-icon ${on ? 'gold' : ''}" data-knowledge-star="${U.esc(JSON.stringify(r))}" aria-pressed="${on}" aria-label="${on ? '取消星號' : '加星號'}：${U.esc(r.name)}" title="${on ? '取消星號' : '加星號，收進知識筆記'}">${on ? '★' : '☆'}</button>`;
     return `<button type="button" class="px-btn small knowledge-star ${on ? 'gold' : ''}" data-knowledge-star="${U.esc(JSON.stringify(r))}" aria-pressed="${on}">${on ? (term ? '★ 已加星號' : '★ 已加入知識比較') : (term ? '☆ 加星號' : '☆ 加入知識比較')}</button>`;
   }
@@ -97,6 +98,18 @@ const LEARN_UI = (() => {
     });
     return out;
   }
+  /* 收藏整頁（課程任何一頁的「☆ 收藏此頁」）：存單元／課／第幾頁＋頁面標題；教材改版頁序變了就用標題找回 */
+  const stepTitle = (s, l) => s.title || (s.type === 'intro' ? l.title : STEP[s.type].name);
+  function pageStep(l, r) {
+    let i = r.i;
+    if (!l.steps[i] || (r.t && stepTitle(l.steps[i], l) !== r.t)) { const j = l.steps.findIndex(s => stepTitle(s, l) === r.t); if (j >= 0) i = j; }
+    return l.steps[i] ? { s: l.steps[i], i } : null;
+  }
+  function pageText(s) {
+    const out = [], skip = new Set(['html', 'img', 'img_source', 'id', 'type', 'x', 'y', 'qids', 'pick', 'height']);
+    const walk = v => { if (typeof v === 'string') out.push(v); else if (Array.isArray(v)) v.forEach(walk); else if (v && typeof v === 'object') Object.entries(v).forEach(([k, x]) => { if (!skip.has(k)) walk(x); }); };
+    walk(s); return out.join(' ').slice(0, 6000);
+  }
   const starredTermCount = () => Object.values(D.starred || {}).filter(r => r.kind === 'term').length;
   function starredItems() {
     return Object.values(D.starred || {}).map(r => {
@@ -110,6 +123,10 @@ const LEARN_UI = (() => {
       if (r.kind === 'question') {
         const q = Store.Q[r.id];
         return q ? { r, p, l, q, title: q.stem || '圖片題', text: [q.ans, q.ex, q.tag].join(' ') } : null;
+      }
+      if (r.kind === 'page') {
+        const x = pageStep(l, r);
+        return x ? { r, p, l, pg: x.s, pi: x.i, title: stepTitle(x.s, l), text: pageText(x.s) } : null;
       }
       if (r.kind === 'check') {
         const c = l.steps.flatMap(s => s.type === 'check' ? [s] : s.type === 'practice' ? (s.checks || []) : []).find(c => c.id === r.id);
@@ -191,6 +208,7 @@ const LEARN_UI = (() => {
 
   /* ---------- 給 AI 助教的「目前學習頁面」（js/ai.js 的「把這頁講得更好懂」讀取） ----------
    * cur 是課程播放器的即時狀態；換頁、作答後發出 learnpage 事件，讓 AI 視窗更新按鈕。 */
+  let openPage = null;   // 知識筆記「到這一頁」：{ key, i }，play() 開課後跳到那一頁（只能跳到看過的範圍）
   let cur = null;   // { p, l, st, el, boss: { c, k, n } | { end: true } | null, done, shown }
   const pageMoved = patch => { if (cur && patch) Object.assign(cur, patch); document.dispatchEvent(new Event('learnpage')); };
   // 作答後焦點移到「繼續」但不讓瀏覽器自動捲動（以前會把題目推到戰鬥條底下）；
@@ -1043,7 +1061,8 @@ const LEARN_UI = (() => {
       next.disabled = true; next.textContent = st.i === l.steps.length - 1 ? '完成本課 ✔' : '繼續 ▶';
       next.onclick = () => { SFX.play('click'); advance(); };
       if (s.type !== 'practice') say(review ? '回顧一下～看完按「繼續」往下。' : U.pick(LINES[s.type]));
-      const head = `<div class="lp-type">${STEP[s.type].ic} ${STEP[s.type].name}</div>${review ? '<span class="tag lp-rv">🔁 回顧中・作答不計分</span>' : ''}`;
+      const pageRef = { kind: 'page', p: p.id, l: l.id, i: st.i, t: stepTitle(s, l) };
+      const head = `<div class="lp-type-row"><div class="lp-type">${STEP[s.type].ic} ${STEP[s.type].name}</div>${review ? '<span class="tag lp-rv">🔁 回顧中・作答不計分</span>' : ''}<span class="grow"></span>${starButton(pageRef)}</div>`;
       window.scrollTo(0, 0);
       if (!review) enterSeg();
       if (s.type === 'card' || s.type === 'interactive') gainEnergy();
@@ -1229,6 +1248,10 @@ const LEARN_UI = (() => {
       else U.$('#dRev').onclick = () => { tab = 'review'; screen(); };
     }
     drawBattle();
+    const jump = openPage && openPage.key === key ? openPage.i : null; openPage = null;
+    if (jump != null && st.done && jump > R.far && jump < l.steps.length) R.far = jump;   // 已經上完的課：收藏頁可以直接打開
+    if (jump != null && jump !== st.i && jump <= R.far && jump < l.steps.length) { if (st.i === R.far) R.farSub = R.sub; st.i = jump; R.sub = jump === R.far ? (R.farSub || 0) : 0; save(); }
+    else if (jump != null && jump > R.far) setTimeout(() => U.toast('這一頁還沒讀到，先從目前的進度開始'), 200);
     step();
     pinBattle();
   }
@@ -1246,7 +1269,7 @@ const LEARN_UI = (() => {
     body.innerHTML = head + `<h3>${U.esc(s.title || '看圖認識')}</h3>${s.body ? md(s.body) : ''}
       <div class="dg"><div class="dg-wrap" id="dgWrap"><img src="${U.esc(U.img(s.img))}" alt="">${pts.map((pt, i) => `<button class="dg-pin" data-i="${i}" style="left:${pt.x}%;top:${pt.y}%">${i + 1}</button>`).join('')}</div>
       <div class="dg-side" id="dgSide"></div></div>${s.source ? `<div class="lp-src">圖片來源：${inl(s.source)}</div>` : ''}`;
-    const side = U.$('#dgSide'), pins = U.$$('.dg-pin', body), wrap = U.$('#dgWrap');
+    const side = U.$('#dgSide', body), pins = U.$$('.dg-pin', body), wrap = U.$('#dgWrap', body);
     /* 標記點太靠近時（手機版圖片只有 300px 寬）：縮小圓點並把重疊的點稍微推開，只改畫面位置、不改資料 */
     const spread = () => {
       const img = wrap.querySelector('img'), r = img && img.getBoundingClientRect();
@@ -1284,8 +1307,8 @@ const LEARN_UI = (() => {
         side.innerHTML = `<div class="dg-info"><b class="gold-t">📍 設定標記位置（${k + 1}/${list.length}）</b><p>請在圖上點出「<b>${U.esc(pts[i].name)}</b>」的位置${pts[i].x != null ? '（目前位置已標示，點新的位置修正）' : ''}。</p>
           <div class="row"><button class="px-btn small" id="dgSkip">${pts[i].x != null ? '位置正確，下一個' : '跳過'}</button><button class="px-btn small" id="dgStop">完成</button></div><p class="dim small-t">設定只存在這台電腦的瀏覽器。</p></div>`;
         pins.forEach((b, j) => b.classList.toggle('on', j === i));
-        U.$('#dgSkip').onclick = e => { e.stopPropagation(); k++; askPin(); };
-        U.$('#dgStop').onclick = e => { e.stopPropagation(); k = list.length; askPin(); };
+        U.$('#dgSkip', body).onclick = e => { e.stopPropagation(); k++; askPin(); };
+        U.$('#dgStop', body).onclick = e => { e.stopPropagation(); k = list.length; askPin(); };
       };
       wrap.classList.add('setting');
       wrap.onclick = e => {
@@ -1304,16 +1327,16 @@ const LEARN_UI = (() => {
       const show = i => {
         pins.forEach((b, j) => b.classList.toggle('on', j === i)); U.$$('.dg-list li', side).forEach((li, j) => li.classList.toggle('on', j === i));
         const english = pts[i].name.match(/[A-Za-z].*$/)?.[0];
-        U.$('#dgInfo').innerHTML = `<div class="knowledge-term-heading"><b class="gold-t">${i + 1}. ${U.esc(pts[i].name)}</b>${pointStar(pts[i])}${english ? `<button type="button" class="dg-pronounce" aria-label="播放 ${U.esc(english)} 發音" title="播放英文發音">🔊</button>` : ''}</div>${pts[i].desc ? md(pts[i].desc) : ''}`;
+        U.$('#dgInfo', body).innerHTML = `<div class="knowledge-term-heading"><b class="gold-t">${i + 1}. ${U.esc(pts[i].name)}</b>${pointStar(pts[i])}${english ? `<button type="button" class="dg-pronounce" aria-label="播放 ${U.esc(english)} 發音" title="播放英文發音">🔊</button>` : ''}</div>${pts[i].desc ? md(pts[i].desc) : ''}`;
         const voice = side.querySelector('.dg-pronounce');
         if (voice) voice.onclick = () => { if (typeof GLOSS !== 'undefined') GLOSS.speak(english); };
         SFX.play('click');
       };
       pins.forEach(b => b.onclick = () => show(+b.dataset.i));
       U.$$('.dg-list li', side).forEach(li => li.onclick = e => { if (!e.target.closest('[data-knowledge-star]')) show(+li.dataset.i); });
-      U.$('#dgHide').onclick = () => { hide = !hide; explore(); };
-      U.$('#dgFix').onclick = () => setup(pts.map((pt, i) => i), explore);
-      const qb = U.$('#dgQuiz'); if (qb) qb.onclick = quiz;
+      U.$('#dgHide', body).onclick = () => { hide = !hide; explore(); };
+      U.$('#dgFix', body).onclick = () => setup(pts.map((pt, i) => i), explore);
+      const qb = U.$('#dgQuiz', body); if (qb) qb.onclick = quiz;
       if (mode === 'explore') cb.onDone();
     };
     const quiz = () => {
@@ -1328,12 +1351,13 @@ const LEARN_UI = (() => {
           const i = +b.dataset.i, want = qs[k];
           if (i === want) {
             b.classList.add('good'); SFX.play('correct'); cb.onItem(tries === 0, true);
-            U.$('#dgFb').innerHTML = `<b class="green-t">✔ 正確！</b>${pts[want].desc ? md(pts[want].desc) : ''}`;
+            U.$('#dgFb', body).innerHTML = `<b class="green-t">✔ 正確！</b>${pts[want].desc ? md(pts[want].desc) : ''}`;
             pins.forEach(x => x.onclick = null); k++; setTimeout(() => { pins.forEach(x => x.classList.remove('good', 'bad')); ask(); }, 1300);
           } else {
             tries++; b.classList.add('bad'); SFX.play('wrong'); cb.onWrong();
+            if (tries === 1) noteTermMiss(pinKey, pts[want].name);
             setTimeout(() => b.classList.remove('bad'), 500);
-            U.$('#dgFb').innerHTML = `<span class="red-t">那是「${U.esc(pts[i].name)}」。</span>${tries >= 2 ? '' : '再找找看！'}`;
+            U.$('#dgFb', body).innerHTML = `<span class="red-t">那是「${U.esc(pts[i].name)}」。</span>${tries >= 2 ? '' : '再找找看！'}`;
             if (tries >= 2) {
               pins[want].classList.add('good'); cb.onItem(false, false); addRevDiagram();
               pins.forEach(x => x.onclick = null); k++; setTimeout(() => { pins.forEach(x => x.classList.remove('good', 'bad')); ask(); }, 1800);
@@ -1356,8 +1380,8 @@ const LEARN_UI = (() => {
     const fr = body.querySelector('iframe');
     const doc = /<html[\s>]/i.test(s.html) ? s.html : `<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0;font-family:system-ui,'Microsoft JhengHei',sans-serif;background:#fbf7ec;color:#2e2116}</style></head><body>${s.html}</body></html>`;
     fr.srcdoc = doc;
-    U.$('#iReset').onclick = () => { fr.srcdoc = ''; setTimeout(() => { fr.srcdoc = doc; }, 30); };
-    U.$('#iBig').onclick = () => {
+    U.$('#iReset', body).onclick = () => { fr.srcdoc = ''; setTimeout(() => { fr.srcdoc = doc; }, 30); };
+    U.$('#iBig', body).onclick = () => {
       const m = U.modal({ title: s.title || '互動內容', body: '<iframe class="lp-iframe big" sandbox="allow-scripts"></iframe>' });
       m.el.classList.add('wide'); m.body.querySelector('iframe').srcdoc = doc;
     };
@@ -1404,6 +1428,103 @@ const LEARN_UI = (() => {
   /* 範圍：科目 → path 各層 → 單元 → 課；cfg.rv = { s 科目, r 範圍（g:科目␁層…／p:單元 id）, l 課 id, mode due|all, n 張數 } */
   const RSEP = '\u0001';
   const relPath = p => { const pth = pathOf(p), nm = C.SUBJECTS[p.subject] ? C.SUBJECTS[p.subject].name : ''; return pth[0] === nm || pth[0] === p.subject ? pth.slice(1) : pth; };
+  /* ---------- 弱點知識點：把學習時答錯的東西，對回它所屬的教材重點 ----------
+   * 檢核題（D.rev 的 w＝答錯次數）→ 題目前面最近的那張概念卡；實戰裡的自編題 → 那一課；
+   * 圖解辨識第一次點錯（D.miss）→ 那個構造名稱；題庫錯題本的題目 → 題目標籤對到「有教這個標籤」的課（teaches）。
+   * 「我懂了」記下當時的答錯次數（D.cfg.known），之後再錯、次數變多就會重新出現。 */
+  function noteTermMiss(pinKey, name) {
+    const [p, l, si] = String(pinKey).split('/'); if (!PK[p] || si == null) return;
+    D.miss = D.miss || {};
+    const k = `term|${pinKey}|${name}`, m = D.miss[k] || (D.miss[k] = { p, l, si: +si, name, n: 0 });
+    m.n++; m.at = Date.now(); save();
+  }
+  let tagLes = null;
+  function tagLessons() {
+    if (tagLes) return tagLes;
+    tagLes = {};
+    packs.forEach(p => p.lessons.forEach(l => (l.teaches || []).forEach(t => (tagLes[t] = tagLes[t] || []).push({ p, l }))));
+    return tagLes;
+  }
+  function weakPoints() {
+    const out = new Map(), known = D.cfg.known || {};
+    const add = (key, base, f) => { let x = out.get(key); if (!x) out.set(key, x = Object.assign({ key, n: 0, checks: [], qids: [], terms: 0 }, base)); f(x); };
+    Object.entries(D.rev).forEach(([id, r]) => {
+      const it = ITEMS[id]; if (!it || it.k !== 'check' || !(r.w > 0)) return;
+      const p = PK[it.p], l = p?.lessons.find(x => x.id === it.l); if (!l || !C.SUBJECTS[p.subject]) return;
+      const si = l.steps.findIndex(st => st === it.c || (st.type === 'practice' && (st.checks || []).includes(it.c)));
+      let ci = -1;
+      if (si >= 0 && l.steps[si].type !== 'practice') for (let j = si; j >= 0; j--) if (l.steps[j].type === 'card') { ci = j; break; }
+      const key = ci >= 0 ? `card|${p.id}|${l.id}|${ci}` : `les|${p.id}|${l.id}`;
+      add(key, { kind: ci >= 0 ? 'card' : 'lesson', p, l, si: ci >= 0 ? ci : Math.max(0, si), title: ci >= 0 ? l.steps[ci].title : l.title }, x => { x.n += r.w; x.checks.push(id); });
+    });
+    Object.values(D.miss || {}).forEach(m => {
+      const p = PK[m.p], l = p?.lessons.find(x => x.id === m.l), st = l?.steps[m.si];
+      if (!st || st.type !== 'diagram' || !C.SUBJECTS[p.subject]) return;
+      const i = st.points.findIndex(pt => pt.name === m.name); if (i < 0) return;
+      add(`term|${m.p}|${m.l}|${m.si}|${m.name}`, { kind: 'term', p, l, s: st, i, si: m.si, title: m.name }, x => { x.n += m.n; x.terms += m.n; });
+    });
+    const TL = tagLessons();
+    Object.entries(Store.wrong).forEach(([qid, w]) => {
+      const q = Store.Q[qid]; if (!q || w.done) return;
+      const subj = (Store.EX[q.exam] || {}).subj;
+      const tags = String(q.tag || '').split('、').map(t => t.trim()).filter(Boolean);
+      const tg = tags.find(t => (TL[t] || []).some(x => x.p.subject === subj)); if (!tg) return;
+      const ls = TL[tg].filter(x => x.p.subject === subj && C.SUBJECTS[x.p.subject]); if (!ls.length) return;
+      add(`tag|${subj}|${tg}`, { kind: 'tag', p: ls[0].p, l: ls[0].l, lessons: ls, si: 0, title: tg }, x => { x.n += Math.max(1, w.n || 0); x.qids.push(qid); });
+    });
+    return [...out.values()].filter(x => !(known[x.key] >= x.n)).sort((a, b) => b.n - a.n || a.title.localeCompare(b.title));
+  }
+  const WK_KIND = { card: '概念', lesson: '整課', term: '構造名稱', tag: '題庫考點' };
+  function weakBody(x) {
+    const missed = x.checks.map(id => ITEMS[id]?.c).filter(Boolean);
+    const missedHTML = missed.length ? `<h5>你答錯的題目</h5>${missed.map(c => `<div class="knowledge-page-check">${checkAnswerHTML(c)}</div>`).join('')}` : '';
+    const qHTML = x.qids.length ? `<h5>錯題本裡的題目</h5>${x.qids.map(id => { const q = Store.Q[id], ex = Store.EX[q.exam]; return `<button type="button" class="cram-question-link" data-related-q="${U.esc(id)}"><span><b class="tag">題庫題</b> ${U.esc(QV.exLabel(ex))}・第 ${U.esc(q.n)} 題</span><span class="dim small-t">${U.esc(String(q.stem || '圖片題').replace(/【[^】]*】\s*/, '').replace(/\s+/g, ' ').slice(0, 100))}</span></button>`; }).join('')}` : '';
+    if (x.kind === 'card') return noteCard(x.p, x.l, x.l.steps[x.si]) + missedHTML;
+    if (x.kind === 'term') return knowledgeCard({ r: termRef(x.p, x.l, x.s, x.s.points[x.i]), p: x.p, l: x.l, s: x.s, i: x.i });
+    if (x.kind === 'tag') {
+      const kw = x.title.toLowerCase();
+      const cards = x.lessons.flatMap(({ p, l }) => l.steps.filter(st => st.type === 'card' && noteText(st).includes(kw)).slice(0, 2).map(st => noteCard(p, l, st)));
+      return `<p class="small-t">有教這個考點的課：${x.lessons.map(({ p, l }) => `<button type="button" class="px-btn small" data-wk-go="${U.esc(JSON.stringify([p.id, l.id]))}">${U.esc(p.title)} › ${U.esc(l.title)}</button>`).join(' ')}</p>${cards.join('')}${qHTML}`;
+    }
+    return `<p class="small-t">這幾題出現在「${U.esc(x.l.title)}」的實戰，建議回到那一課再看一次。</p>${missedHTML}`;
+  }
+  function weakSection(cf) {
+    const all = weakPoints(), list = all.filter(x => cf.s === 'all' || x.p.subject === cf.s);
+    const shown = list.slice(0, cf.wk || 12);
+    const row = x => `<article class="weak-pt" data-wk="${U.esc(x.key)}">
+        <div class="row"><span class="tag">${WK_KIND[x.kind]}</span><b class="weak-t">${inl(x.title)}</b><span class="grow"></span><span class="red-t small-t">錯 ${x.n} 次</span></div>
+        <div class="dim small-t">${U.esc(C.SUBJECTS[x.p.subject].name)}・${U.esc(x.p.title)}${x.kind === 'tag' ? '' : ` › ${U.esc(x.l.title)}`}${x.checks.length ? `・檢核題 ${x.checks.length}` : ''}${x.qids.length ? `・題庫題 ${x.qids.length}` : ''}${x.terms ? `・圖解點錯 ${x.terms} 次` : ''}</div>
+        <div class="row weak-act"><button type="button" class="px-btn small blue" data-wk-show aria-expanded="false">📘 看重點</button>
+          ${x.checks.length ? `<button type="button" class="px-btn small" data-wk-run>🔁 再練（${x.checks.length} 題）</button>` : ''}
+          ${x.qids.length ? `<button type="button" class="px-btn small" data-wk-bank>📚 練題庫題（${x.qids.length}）</button>` : ''}
+          ${x.kind === 'tag' ? '' : `<button type="button" class="px-btn small" data-wk-page>${x.kind === 'term' ? '🔍 回圖解再認一次' : '回到這一頁 ▶'}</button>`}
+          <span class="grow"></span><button type="button" class="px-btn small green" data-wk-ok>✓ 我懂了</button></div>
+        <div class="weak-body" hidden></div></article>`;
+    return { all, list, html: `<section class="weak-sec panel dark mt"><h3>🎯 弱點知識點 <span class="dim small-t">${list.length} 個</span></h3>
+      <p class="dim small-t">從你在學習模式答錯的檢核題、圖解辨識點錯的構造，以及題庫錯題本對得到課程的題目整理出來。先「看重點」回到原本的教材，再「練」一次；懂了按「我懂了」，之後再錯會重新出現。</p>
+      ${shown.length ? `<div class="weak-list">${shown.map(row).join('')}</div>` : `<p class="dim">${all.length ? '這個科目目前沒有弱點，太好了！' : '目前沒有弱點紀錄。在學習模式答錯的題目、圖解點錯的構造，會自動整理到這裡。'}</p>`}
+      ${list.length > shown.length ? `<div class="row mt"><button type="button" class="px-btn small" id="wkMore">再顯示 ${Math.min(12, list.length - shown.length)} 個</button></div>` : ''}</section>` };
+  }
+  function bindWeak(body, cf, list, re) {
+    const find = el => list.find(x => x.key === el.closest('[data-wk]').dataset.wk);
+    body.onclick = e => {
+      const t = e.target.closest('[data-wk-show],[data-wk-run],[data-wk-bank],[data-wk-page],[data-wk-ok],[data-wk-go],[data-related-q],#wkMore');
+      if (!t || !body.contains(t)) return;
+      if (t.id === 'wkMore') { cf.wk = (cf.wk || 12) + 12; re(); return; }
+      if (t.hasAttribute('data-related-q')) { const q = Store.Q[t.dataset.relatedQ]; if (q) QV.previewModal(q); return; }
+      if (t.hasAttribute('data-wk-go')) { const [pid, lid] = JSON.parse(t.dataset.wkGo), p = PK[pid], l = p?.lessons.find(y => y.id === lid); if (l) { SFX.play('click'); play(p, l); } return; }
+      const x = find(t); if (!x) return;
+      SFX.play('click');
+      if (t.hasAttribute('data-wk-show')) {
+        const box = t.closest('[data-wk]').querySelector('.weak-body'), open = box.hidden;
+        if (open && !box.childElementCount) { box.innerHTML = weakBody(x); if (typeof GLOSS !== 'undefined') GLOSS.scan(box); }
+        box.hidden = !open; t.setAttribute('aria-expanded', String(open)); t.textContent = open ? '📘 收起' : '📘 看重點';
+      } else if (t.hasAttribute('data-wk-run')) reviewRun(U.shuffle(x.checks.slice()));
+      else if (t.hasAttribute('data-wk-bank')) Screens.startRun({ mode: 'list', title: `弱點練習：${x.title}`, ids: x.qids.slice(), types: ['single', 'multi', 'fill', 'open'], count: x.qids.length });
+      else if (t.hasAttribute('data-wk-page')) { openPage = { key: lkey(x.p, x.l), i: x.si }; play(x.p, x.l); }
+      else if (t.hasAttribute('data-wk-ok')) { D.cfg.known = D.cfg.known || {}; D.cfg.known[x.key] = x.n; re(); U.toast('好，之後再錯才會重新出現'); }
+    };
+  }
   function reviewHome() {
     const body = U.$('#learnBody');
     const cf = D.cfg.rv = Object.assign({ s: 'all', r: '', l: '', mode: 'due', n: 20 }, D.cfg.rv || {});
@@ -1411,7 +1532,8 @@ const LEARN_UI = (() => {
     const all = Object.keys(D.rev).filter(id => ITEMS[id] && PK[ITEMS[id].p]);
     const isDue = id => D.rev[id].due <= now;
     const totalDue = all.filter(isDue).length;
-    const subs = [...new Set(all.map(id => PK[ITEMS[id].p].subject))].filter(s => C.SUBJECTS[s]);
+    const weakAll = weakPoints();
+    const subs = [...new Set(all.map(id => PK[ITEMS[id].p].subject).concat(weakAll.map(x => x.p.subject)))].filter(s => C.SUBJECTS[s]);
     if (cf.s !== 'all' && !subs.includes(cf.s)) Object.assign(cf, { s: 'all', r: '', l: '' });
     const inS = cf.s === 'all' ? all : all.filter(id => PK[ITEMS[id].p].subject === cf.s);
     const inR = (id, r) => {
@@ -1445,12 +1567,14 @@ const LEARN_UI = (() => {
     const boxes = BOX_DAYS.slice(1).map((d, i) => scope.filter(id => D.rev[id].box === i + 1).length);
     const soon = scope.filter(id => D.rev[id].due > now && D.rev[id].due < now + DAY).length;
     const narrowed = cf.s !== 'all' || cf.r || cf.l;
-    body.innerHTML = `<div class="row"><div><h3 style="margin:0">今天要複習 <span class="gold-t">${totalDue}</span> 張${narrowed ? `<span class="dim small-t">（此範圍到期 ${sDue.length} 張）</span>` : ''}</h3>
-        <div class="dim small-t">答錯的檢核題會立刻進來；完成一課後，記憶卡隔天開始出現。答對就升一盒、間隔拉長，答錯回第 1 盒。</div></div>
+    const weak = weakSection(cf);
+    body.innerHTML = `<div class="row rv-subj">${[['all', '全部科目']].concat(subs.map(x => [x, C.SUBJECTS[x].name])).map(([v, l]) => `<span class="chip ${cf.s === v ? 'on' : ''}" data-rvs="${v}">${l}</span>`).join('')}</div>
+      ${weak.html}
+      <section class="rv-sec panel dark mt"><div class="row"><div><h3 style="margin:0">🗓 記憶卡複習：今天到期 <span class="gold-t">${totalDue}</span> 張${narrowed ? `<span class="dim small-t">（此範圍到期 ${sDue.length} 張）</span>` : ''}</h3>
+        <div class="dim small-t">把學過的重點和答錯過的檢核題，照遺忘曲線排時間再考你一次：答錯的題當天就排進來；上完一課，那課的記憶卡隔天開始出現。答對了下次隔久一點（1、2、4、7、15、30 天），答錯就從明天重新開始。</div></div>
         <span class="grow"></span><button class="px-btn gold big" id="rvGo" ${take ? '' : 'disabled'}>開始複習${take ? `（${take} 張）` : ''} ▶</button></div>
       <div class="rv-scope mt">
-        <div class="row">${[['all', '全部科目']].concat(subs.map(x => [x, C.SUBJECTS[x].name])).map(([v, l]) => `<span class="chip ${cf.s === v ? 'on' : ''}" data-rvs="${v}">${l}</span>`).join('')}</div>
-        <div class="row mt">
+        <div class="row">
           <label class="small-t">範圍 <select class="px-in" id="rvR" ${cf.s === 'all' ? 'disabled' : ''}><option value="">${cf.s === 'all' ? '先選科目再縮小範圍' : `整個科目（${cnt(inS)}）`}</option>${ropts.map(o => `<option value="${U.esc(o.v)}" ${cf.r === o.v ? 'selected' : ''}>${'　'.repeat(o.d)}${o.g ? '📁 ' : '📘 '}${U.esc(o.label)}（${cnt(inS.filter(id => inR(id, o.v)))}）</option>`).join('')}</select></label>
           ${lopts.length ? `<label class="small-t">課 <select class="px-in" id="rvL"><option value="">整個單元（${cnt(inRange)}）</option>${lopts.map(l => `<option value="${U.esc(l.id)}" ${cf.l === l.id ? 'selected' : ''}>${U.esc(l.title)}（${cnt(inRange.filter(id => ITEMS[id].l === l.id))}）</option>`).join('')}</select></label>` : ''}
         </div>
@@ -1458,8 +1582,9 @@ const LEARN_UI = (() => {
           <span class="small-t" style="margin-left:12px">一次</span>${[10, 20, 50, 0].map(v => `<span class="chip ${cf.n === v ? 'on' : ''}" data-rvn="${v}">${v || '不限'}</span>`).join('')}</div>
         ${cf.mode === 'all' ? '<div class="dim small-t">提前複習：到期的先出；還沒到期的卡答對不會升盒（不打亂排程），答錯照樣回第 1 盒。</div>' : ''}
       </div>
-      <div class="rv-boxes mt">${boxes.map((n, i) => `<div class="rv-box"><b>${n}</b><small>第 ${i + 1} 盒<br>${BOX_DAYS[i + 1]} 天後</small></div>`).join('')}</div>
-      <p class="dim small-t">${narrowed ? '此範圍' : '全部'}共 ${scope.length} 張・24 小時內還會到期 ${soon} 張・累計複習 ${D.stat.reviews} 次</p>`;
+      <div class="rv-boxes mt" title="每一格是「下次多久後再考」：越右邊代表越熟">${boxes.map((n, i) => `<div class="rv-box"><b>${n}</b><small>${BOX_DAYS[i + 1]} 天後<br>再考</small></div>`).join('')}</div>
+      <p class="dim small-t">${narrowed ? '此範圍' : '全部'}共 ${scope.length} 張・24 小時內還會到期 ${soon} 張・累計複習 ${D.stat.reviews} 次</p></section>`;
+    bindWeak(body, cf, weak.list, () => { save(); reviewHome(); });
     const re = () => { save(); reviewHome(); };
     U.$$('[data-rvs]', body).forEach(c => c.onclick = () => { SFX.play('click'); Object.assign(cf, { s: c.dataset.rvs, r: '', l: '' }); re(); });
     U.$$('[data-rvm]', body).forEach(c => c.onclick = () => { SFX.play('click'); cf.mode = c.dataset.rvm; re(); });
@@ -1585,7 +1710,25 @@ const LEARN_UI = (() => {
       : `<div class="lnote-card"><h4>⭐ 本課重點</h4><ol>${s.points.map(x => `<li>${inl(x)}</li>`).join('')}</ol></div>`;
   }
   let knowledgeUnit = '', knowledgeType = 'all', knowledgePage = 0;
+  function checkAnswerHTML(c) {
+    const answer = c.kind === 'name' ? `${c.zh[0]} ／ ${c.en[0]}` : c.kind === 'single' ? c.choices[c.answer] : c.kind === 'multi' ? c.answer.map(i => c.choices[i]).join(' ／ ') : c.kind === 'tf' ? (c.answer ? '對' : '錯') : c.kind === 'order' ? c.items.join(' → ') : [].concat(c.answer).join(' ／ ');
+    return `<h4>${inl(c.q)}</h4>${imgsHTML(c.img, c.img_source)}${c.choices ? `<ol>${c.choices.map(t => `<li>${inl(t)}</li>`).join('')}</ol>` : ''}<div class="knowledge-answer"><b class="gold-t">正確答案</b>${md(answer)}${c.explain ? md(c.explain) : ''}</div>`;
+  }
+  /* 收藏的整頁：照原頁內容顯示（範例步驟全部展開、檢核題附答案；圖解、互動、字母卡在畫面放好後再接上） */
+  function pageCard(x) {
+    const { r, p, l, pg: s, pi } = x, ttl = stepTitle(s, l);
+    const qlink = id => { const q = Store.Q[id], ex = q && Store.EX[q.exam]; return q && ex ? `<button type="button" class="cram-question-link" data-related-q="${U.esc(id)}"><span><b class="tag">題庫題</b> ${U.esc(QV.exLabel(ex))}・第 ${U.esc(q.n)} 題</span><span class="dim small-t">${U.esc(String(q.stem || '圖片題').replace(/【[^】]*】\s*/, '').replace(/\s+/g, ' ').slice(0, 100))}</span></button>` : ''; };
+    let content;
+    if (s.type === 'card' || s.type === 'recap') content = noteCard(p, l, s);
+    else if (s.type === 'intro') content = `<div class="lnote-card"><h4>${U.esc(ttl)}</h4>${md(s.body)}${(l.goals || []).length ? `<div class="lp-goals"><b>🎯 這課學完你會：</b><ul>${l.goals.map(g => `<li>${inl(g)}</li>`).join('')}</ul></div>` : ''}</div>`;
+    else if (s.type === 'example') content = `<div class="lnote-card"><h4>🧩 ${U.esc(ttl)}</h4><div class="lp-prob">${md(s.problem)}</div><div class="lp-steps">${(s.steps || []).map((t, k) => `<div class="lp-step"><b>${k + 1}</b><div>${md(t)}</div></div>`).join('')}${s.answer ? `<div class="lp-exans">✅ ${md(s.answer)}</div>` : ''}</div></div>`;
+    else if (s.type === 'check') content = `<div class="lnote-card">${checkAnswerHTML(s)}</div>`;
+    else if (s.type === 'practice') content = `<div class="lnote-card"><h4>⚔ ${U.esc(ttl)}</h4>${(s.qids || []).map(qlink).join('')}${(s.checks || []).map(c => `<div class="knowledge-page-check">${checkAnswerHTML(c)}</div>`).join('')}${!(s.qids || []).length && !(s.checks || []).length ? '<p class="dim small-t">這一頁的題目是從題庫隨機抽的，到課程裡練習。</p>' : ''}</div>`;
+    else content = `<div class="knowledge-page-live" data-page-live="${U.esc(JSON.stringify([p.id, l.id, pi]))}"></div>`;
+    return `<article class="knowledge-card knowledge-page"><div class="row"><span class="tag">${STEP[s.type].ic} ${STEP[s.type].name}頁</span><span class="grow"></span><button type="button" class="px-btn small" data-open-page="${U.esc(JSON.stringify([p.id, l.id, pi]))}">到這一頁 ▶</button>${starButton(r)}</div><p class="dim small-t">${U.esc(p.title)} › ${U.esc(l.title)}・第 ${pi + 1} 頁</p>${content}</article>`;
+  }
   function knowledgeCard(x) {
+    if (x.pg) return pageCard(x);
     const { r, p, l, s, i, q, c } = x;
     let content;
     if (s) {
@@ -1593,21 +1736,18 @@ const LEARN_UI = (() => {
       const placed = pos[0] != null && pos[1] != null && pos.every(v => Number.isFinite(+v));
       content = `<h4>${U.esc(pt.name)}</h4>${pt.desc ? md(pt.desc) : ''}<p class="dim small-t">${U.esc(s.title || '對應圖解')}・標記 ${i + 1}${placed ? '' : '（尚未設定位置）'}</p><div class="dg-wrap knowledge-image"><img loading="lazy" src="${U.esc(U.img(s.img))}" alt="${U.esc(s.title || pt.name)}">${placed ? `<span class="dg-pin knowledge-pin" style="left:${pos[0]}%;top:${pos[1]}%">${i + 1}</span>` : ''}</div>${s.source ? `<div class="lp-src">圖片來源：${inl(s.source)}</div>` : ''}`;
     } else if (q) content = QV.previewHTML(q) + QV.explainHTML(q);
-    else {
-      const answer = c.kind === 'name' ? `${c.zh[0]} ／ ${c.en[0]}` : c.kind === 'single' ? c.choices[c.answer] : c.kind === 'multi' ? c.answer.map(i => c.choices[i]).join(' ／ ') : c.kind === 'tf' ? (c.answer ? '對' : '錯') : c.kind === 'order' ? c.items.join(' → ') : [].concat(c.answer).join(' ／ ');
-      content = `<h4>${inl(c.q)}</h4>${imgsHTML(c.img, c.img_source)}${c.choices ? `<ol>${c.choices.map(t => `<li>${inl(t)}</li>`).join('')}</ol>` : ''}<div class="knowledge-answer"><b class="gold-t">正確答案</b>${md(answer)}${c.explain ? md(c.explain) : ''}</div>`;
-    }
+    else content = checkAnswerHTML(c);
     return `<article class="lnote-card knowledge-card" ${s ? `data-diagram-context="${U.esc(JSON.stringify([p.id, l.id, l.steps.indexOf(s)]))}"` : ''}><div class="row"><span class="tag">${r.kind === 'term' ? '解剖名稱' : '題目答案'}</span><span class="grow"></span>${starButton(r)}</div><p class="dim small-t">${U.esc(p.title)} › ${U.esc(l.title)}</p>${content}</article>`;
   }
   function knowledgeSection(all, kw) {
     const scoped = all.filter(x => noteSubj === 'all' || x.p.subject === noteSubj);
     const units = [...new Map(scoped.map(x => [x.p.id, x.p])).values()];
     if (knowledgeUnit && !units.some(p => p.id === knowledgeUnit)) knowledgeUnit = '';
-    const list = scoped.filter(x => (!knowledgeUnit || x.p.id === knowledgeUnit) && (knowledgeType === 'all' || (knowledgeType === 'term' ? x.r.kind === 'term' : x.r.kind !== 'term')) && (!kw || [x.title, x.text, x.p.title, x.l.title].join(' ').toLowerCase().includes(kw))).sort((a, b) => (b.r.at || 0) - (a.r.at || 0));
+    const list = scoped.filter(x => (!knowledgeUnit || x.p.id === knowledgeUnit) && (knowledgeType === 'all' || (knowledgeType === 'term' ? x.r.kind === 'term' : knowledgeType === 'page' ? x.r.kind === 'page' : x.r.kind !== 'term' && x.r.kind !== 'page')) && (!kw || [x.title, x.text, x.p.title, x.l.title].join(' ').toLowerCase().includes(kw))).sort((a, b) => (b.r.at || 0) - (a.r.at || 0));
     const pages = Math.max(1, Math.ceil(list.length / 20));
     knowledgePage = Math.min(knowledgePage, pages - 1);
-    const terms = scoped.filter(x => x.r.kind === 'term').length;
-    return `<section class="knowledge-collection panel dark mt" aria-label="星號收藏與知識比較"><h3>★ 星號收藏・知識比較</h3><p class="dim small-t">${terms} 個名稱・${scoped.length - terms} 題答案。點開名稱後按小星星收藏；練習題看過答案後可加入比較。</p><div class="row knowledge-filters"><label>單元 <select class="px-in" id="knowledgeUnit"><option value="">全部已加星號的單元</option>${units.map(p => `<option value="${U.esc(p.id)}" ${knowledgeUnit === p.id ? 'selected' : ''}>${U.esc(C.SUBJECTS[p.subject].name + ' › ' + p.title)}</option>`).join('')}</select></label><label>內容 <select class="px-in" id="knowledgeType">${[['all', '全部'], ['term', '解剖名稱與原圖'], ['answer', '題目答案']].map(([v, t]) => `<option value="${v}" ${knowledgeType === v ? 'selected' : ''}>${t}</option>`).join('')}</select></label></div><p class="dim small-t" aria-live="polite">符合 ${list.length} 筆${list.length > 20 ? `・第 ${knowledgePage + 1} / ${pages} 頁` : ''}</p><div class="knowledge-grid">${list.slice(knowledgePage * 20, (knowledgePage + 1) * 20).map(knowledgeCard).join('') || `<p class="dim">${scoped.length ? '這個篩選下沒有星號項目。' : '還沒有星號收藏。遇到不熟的名稱，點開名詞後按「☆」，就會連同原圖收在這裡；練習題可在看答案後按「☆ 加入知識比較」。'}</p>`}</div>${pages > 1 ? `<div class="row mt"><button class="px-btn small" id="knowledgePrev" ${knowledgePage ? '' : 'disabled'}>上一頁</button><span>${knowledgePage + 1} / ${pages}</span><button class="px-btn small" id="knowledgeNext" ${knowledgePage < pages - 1 ? '' : 'disabled'}>下一頁</button></div>` : ''}</section>`;
+    const terms = scoped.filter(x => x.r.kind === 'term').length, pagesN = scoped.filter(x => x.r.kind === 'page').length;
+    return `<section class="knowledge-collection panel dark mt" aria-label="星號收藏與知識比較"><h3>★ 星號收藏・知識比較</h3><p class="dim small-t">${pagesN} 頁・${terms} 個名稱・${scoped.length - terms - pagesN} 題答案。課程每一頁右上角可以「☆ 收藏此頁」；點開名稱後按小星星收藏；練習題看過答案後可加入比較。</p><div class="row knowledge-filters"><label>單元 <select class="px-in" id="knowledgeUnit"><option value="">全部已加星號的單元</option>${units.map(p => `<option value="${U.esc(p.id)}" ${knowledgeUnit === p.id ? 'selected' : ''}>${U.esc(C.SUBJECTS[p.subject].name + ' › ' + p.title)}</option>`).join('')}</select></label><label>內容 <select class="px-in" id="knowledgeType">${[['all', '全部'], ['page', '收藏的頁面'], ['term', '解剖名稱與原圖'], ['answer', '題目答案']].map(([v, t]) => `<option value="${v}" ${knowledgeType === v ? 'selected' : ''}>${t}</option>`).join('')}</select></label></div><p class="dim small-t" aria-live="polite">符合 ${list.length} 筆${list.length > 20 ? `・第 ${knowledgePage + 1} / ${pages} 頁` : ''}</p><div class="knowledge-grid">${list.slice(knowledgePage * 20, (knowledgePage + 1) * 20).map(knowledgeCard).join('') || `<p class="dim">${scoped.length ? '這個篩選下沒有星號項目。' : '還沒有星號收藏。覺得重要的課程頁面，按頁面右上角的「☆ 收藏此頁」就會整頁收在這裡；遇到不熟的名稱，點開名詞後按「☆」，就會連同原圖收在這裡；練習題可在看答案後按「☆ 加入知識比較」。'}</p>`}</div>${pages > 1 ? `<div class="row mt"><button class="px-btn small" id="knowledgePrev" ${knowledgePage ? '' : 'disabled'}>上一頁</button><span>${knowledgePage + 1} / ${pages}</span><button class="px-btn small" id="knowledgeNext" ${knowledgePage < pages - 1 ? '' : 'disabled'}>下一頁</button></div>` : ''}</section>`;
   }
   function notes() {
     const body = U.$('#learnBody');
@@ -1672,7 +1812,23 @@ const LEARN_UI = (() => {
         return `<button type="button" class="cram-question-link" data-related-q="${U.esc(id)}" data-related-source="${source}"><span><b class="tag">${label}</b> ${U.esc(title)}</span><span class="dim small-t">${U.esc(snippet)}</span></button>`;
       }).join('');
     }));
-    body.onclick = e => { const link = e.target.closest('[data-related-q]'); if (link && body.contains(link)) { const q = Store.Q[link.dataset.relatedQ]; if (q) QV.previewModal(q); } };
+    body.onclick = e => {
+      const link = e.target.closest('[data-related-q]'); if (link && body.contains(link)) { const q = Store.Q[link.dataset.relatedQ]; if (q) QV.previewModal(q); return; }
+      const op = e.target.closest('[data-open-page]'); if (!op || !body.contains(op)) return;
+      const [pid, lid, si] = JSON.parse(op.dataset.openPage), p = PK[pid], l = p?.lessons.find(x => x.id === lid);
+      if (l) { SFX.play('click'); openPage = { key: lkey(p, l), i: si }; play(p, l); }
+    };
+    U.$$('[data-page-live]', body).forEach(el => {
+      const [pid, lid, si] = JSON.parse(el.dataset.pageLive), p = PK[pid], l = p?.lessons.find(x => x.id === lid), s = l?.steps[si];
+      if (!s) return;
+      if (s.type === 'diagram') {
+        el.dataset.diagramContext = JSON.stringify([pid, lid, si]);
+        renderDiagram(el, `<h4>🔍 ${U.esc(s.title || '圖解')}</h4>`, { ...s, mode: 'explore' }, `${pid}/${lid}/${si}`, { onItem() {}, onWrong() {}, onDone() {} });
+        if (typeof GLOSS !== 'undefined') GLOSS.scan(el);
+      } else if (s.type === 'interactive') renderInteractive(el, '', s);
+      else if (s.type === 'letters') renderLetters(el, '', s);
+      else el.innerHTML = `<h4>${U.esc(stepTitle(s, l))}</h4>${pageText(s) ? md(pageText(s).slice(0, 600)) : ''}`;
+    });
     U.$$('[data-formula-jump]', body).forEach(a => a.onclick = e => { e.preventDefault(); const target = document.getElementById(a.getAttribute('href').slice(1)); if (target) { target.open = true; target.scrollIntoView({ block: 'start' }); target.querySelector('summary').focus({ preventScroll: true }); } });
     U.$$('details.ltree', body).forEach(d => d.addEventListener('toggle', e => { if (e.target !== d) return; if (d.open && d.dataset.les) fill(d); if (!kw) { D.cfg.open[d.dataset.k] = d.open; save(); } }));
     U.$$('[data-nf]', body).forEach(c => c.onclick = () => { noteSubj = c.dataset.nf; knowledgePage = 0; SFX.play('click'); notes(); });

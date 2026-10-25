@@ -1590,3 +1590,23 @@ html.read-light .lp-foot { background: linear-gradient(to bottom, rgba(45,35,64,
 .win-grip::after { content: ''; position: absolute; inset: -10px; }
 @media (hover: none) { .win-grip::after { inset: -16px; } }
 html:has(.win-resizing) { cursor: nwse-resize; }
+
+/* 課程頁「☆ 收藏此頁」與知識筆記裡收藏的整頁 */
+.lp-type-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.lp-type-row .lp-type { margin-bottom: 0; }
+.lp-type-row .page-star { font-size: 13px; }
+.knowledge-grid > .knowledge-page { grid-column: 1 / -1; }
+.knowledge-page > .lnote-card { border-top: 0; margin-top: 4px; padding-top: 0; }
+.knowledge-page .knowledge-page-check { border-top: 2px dashed var(--hi); margin-top: 10px; padding-top: 6px; }
+.knowledge-page-live .dg-wrap { max-width: 100%; }
+
+/* 複習頁：弱點知識點 */
+.weak-list { display: flex; flex-direction: column; gap: 10px; }
+.weak-pt { background: var(--bg2); border: 3px solid var(--line); border-left: 6px solid var(--red); padding: 10px 12px; }
+.weak-pt .weak-t { font-size: 17px; color: var(--gold); font-weight: normal; }
+.weak-act { margin-top: 8px; gap: 6px; }
+.weak-body { margin-top: 10px; border-top: 2px dashed var(--hi); padding-top: 8px; }
+.weak-body h5 { margin: 10px 0 4px; color: var(--orange); font-weight: normal; }
+.weak-body > .lnote-card { border-top: 0; margin-top: 0; padding-top: 0; }
+.bank-tabs { margin-bottom: 10px; }
+@media (max-width: 640px) { .weak-act .grow { display: none; } }

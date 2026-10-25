@@ -325,9 +325,7 @@ const Screens = (() => {
       { id: 'free', g: 'adv', icon: 105, t: '自由遠征', d: '自選科目、題本與題數' },
       { id: 'peglin', g: 'peg', icon: 'coin', t: '彈珠刷題', d: '一題一球（需本機啟動器）' },
       { id: 'peglinLearn', g: 'peg', icon: 66, t: '彈珠學習', d: '讀一張卡打一顆球（需本機啟動器）' },
-      { id: 'bank', g: 'study', icon: 63, t: '題庫', d: `瀏覽 ${window.QB.questions.length} 題，直接作答看詳解` },
-      { id: 'wrong', g: 'study', icon: 65, t: '錯題本', d: '自動收錄錯題、標記掌握' },
-      { id: 'wrongrun', g: 'study', icon: 64, t: '錯題重刷', d: `以錯題本出征（${wrongN} 題未掌握）` },
+      { id: 'bank', g: 'study', icon: 63, t: '題庫', d: `${window.QB.questions.length} 題・錯題本 ${wrongN} 題未掌握` },
       { id: 'ai', g: 'study', icon: 84, t: 'AI 助教', d: '問觀念、問題目，附出處' },
       { id: 'pomo', g: 'study', icon: 115, t: '番茄鐘', d: `今天 🍅 ${POMO.data.log.filter(l => new Date(l.t).toDateString() === new Date().toDateString()).length} 顆・專注花園 ${POMO.data.garden.length} 株` },
       { id: 'ext-brain3d', g: 'study', icon: 'eye', t: '腦與視覺路徑 3D', d: '3D 解剖圖譜・開新分頁 ↗', url: 'https://yc0935019269cloud-create.github.io/anatomy-3d-atlas/brain-visual-atlas-3d/%E8%85%A6%E8%88%87%E8%A6%96%E8%A6%BA%E8%B7%AF%E5%BE%913D.html' },
@@ -350,7 +348,6 @@ const Screens = (() => {
           : `<button class="px-btn blue qr-main" data-quick="learn"><span>▶</span><span><b>開始學習</b><small>${U.esc(LEARN_UI.tileDesc())}</small></span></button>`}
         ${run ? '<button class="px-btn" data-quick="continue">⚔ 繼續遠征</button>' : ''}
         <button class="px-btn" data-quick="bank">📚 題庫</button>
-        <button class="px-btn" data-quick="wrongrun">🔁 錯題重刷${wrongN ? `（${wrongN}）` : ''}</button>
       </div>`;
     scr().innerHTML = `${quick}<div class="panel camp-wrap ${folded ? 'folded' : ''}">
         <div class="camp-head"><h2 style="margin:0">冒險者營地</h2><span class="small-t dim camp-hint">點點看夥伴、勇者、篝火、信箱、花盆和池塘吧！${(Store.settings.campTime || 'auto') === 'auto' ? '（時段：依現在時間）' : ''}</span><span class="grow"></span><button class="px-btn small" id="campFold" aria-expanded="${!folded}">${folded ? '▸ 展開營地' : '▾ 收起營地'}</button></div>
@@ -392,7 +389,6 @@ const Screens = (() => {
       if (url) { window.open(url, '_blank', 'noopener'); return; }
       const g = b.dataset.go;
       if (g === 'continue') App.go('run', new Run(Store.loadRun()));
-      else if (g === 'wrongrun') wrongRunModal();
       else if (g === 'ai') AI.open();
       else App.go(g);
     });
@@ -402,7 +398,6 @@ const Screens = (() => {
       const g = b.dataset.quick;
       if (g === 'resume') App.go('learn', { resume: true });
       else if (g === 'continue') App.go('run', new Run(Store.loadRun()));
-      else if (g === 'wrongrun') wrongRunModal();
       else App.go(g);
     });
     U.$('#campFold').onclick = () => {
@@ -586,7 +581,7 @@ const Screens = (() => {
     const state = Object.assign({ subjects: [], exams: [], types: [], status: 'all', search: '', page: 0, favorites: 'all', favoriteFolder: '' }, init || {});
     const expanded = new Set();
     let fOpen = true; try { fOpen = localStorage.getItem('bankFilters') !== '0'; } catch (e) {}
-    scr().innerHTML = `<div class="panel"><h2>題庫</h2>
+    scr().innerHTML = `<div class="panel">${bankTabs('bank')}<h2>題庫</h2>
       <div class="bank-bar"><button class="px-btn small" id="fToggle" aria-expanded="${fOpen}" aria-controls="bankFilters">${fOpen ? '▾ 收起篩選' : '▸ 篩選'}</button><span class="bank-sum" id="fsum"></span><span id="cnt" class="gold-t"></span><button class="px-btn small gold" id="runit">用這些題目出征</button></div>
       <div class="filters mt${fOpen ? '' : ' folded'}" id="bankFilters">
         <div class="frow"><label>科目</label><span id="fsj">${chipGroup(Object.keys(C.SUBJECTS).map(s => [s, C.SUBJECTS[s].name]), state.subjects)}</span></div>
@@ -647,6 +642,7 @@ const Screens = (() => {
       U.$$('[data-p]', pg).forEach(b => b.onclick = () => { state.page += Number(b.dataset.p); draw(); window.scrollTo(0, 0); });
     };
     const upd = () => { state.page = 0; draw(); };
+    bindBankTabs();
     U.$('#fToggle').onclick = () => {
       const f = U.$('#bankFilters'), open = f.classList.toggle('folded') === false, b = U.$('#fToggle');
       b.textContent = open ? '▾ 收起篩選' : '▸ 篩選'; b.setAttribute('aria-expanded', String(open));
@@ -687,10 +683,16 @@ const Screens = (() => {
   }
 
   /* ---------- 錯題本 ---------- */
+  /* 題庫底下的兩個分頁：全部題目／錯題本（錯題本不再是營地上獨立的入口） */
+  function bankTabs(cur) {
+    const n = Object.values(Store.wrong).filter(w => !w.done).length;
+    return `<div class="row tabs bank-tabs">${[['bank', '📚 全部題目'], ['wrong', `📕 錯題本${n ? `（${n}）` : ''}`]].map(([k, t]) => `<button class="px-btn ${cur === k ? 'sel gold' : ''}" data-bank-tab="${k}" ${cur === k ? 'aria-current="page"' : ''}>${t}</button>`).join('')}</div>`;
+  }
+  function bindBankTabs() { U.$$('[data-bank-tab]').forEach(b => b.onclick = () => { if (b.getAttribute('aria-current')) return; SFX.play('click'); App.go(b.dataset.bankTab); }); }
   function wrongbook() {
     const state = { subjects: [], types: [], mode: 'todo', sort: 'recent' };
-    scr().innerHTML = `<div class="panel"><h2>錯題本</h2>
-      <p class="dim small-t">答錯的題目會自動收錄；之後連續答對 2 次會自動標記為「已掌握」。</p>
+    scr().innerHTML = `<div class="panel">${bankTabs('wrong')}<h2>錯題本</h2>
+      <p class="dim small-t">答錯的題目會自動收錄，也可以在題目旁按「＋ 加入錯題本」自己加；之後連續答對 2 次會自動標記為「已掌握」。想重刷就按「錯題重刷遠征」。</p>
       <div class="filters">
         <div class="frow"><label>科目</label><span id="fsj">${chipGroup(MAIN_SUBJ.map(s => [s, C.SUBJECTS[s].name]), [])}</span></div>
         <div class="frow"><label>題型</label><span id="ft">${chipGroup(TYPES, [])}</span></div>
@@ -700,6 +702,7 @@ const Screens = (() => {
       <div class="row mt"><span id="cnt" class="gold-t"></span><span class="grow"></span>
         <button class="px-btn small gold" id="rerun">錯題重刷遠征</button><button class="px-btn small" id="drill">逐題重刷</button><button class="px-btn small red" id="clean">移除已掌握</button></div>
       <div class="qlist mt" id="ql"></div></div>`;
+    bindBankTabs();
     const list = () => {
       let ids = Object.keys(Store.wrong).filter(id => Store.Q[id]);
       ids = ids.filter(id => state.mode === 'all' || (state.mode === 'done') === !!Store.wrong[id].done);
@@ -743,12 +746,6 @@ const Screens = (() => {
     U.$('#clean').onclick = () => { Object.keys(Store.wrong).forEach(id => { if (Store.wrong[id].done) delete Store.wrong[id]; }); Store.saveWrong(); draw(); U.toast('已移除所有已掌握的錯題'); };
     draw();
   }
-  function wrongRunModal() {
-    const ids = Object.keys(Store.wrong).filter(id => !Store.wrong[id].done && Store.Q[id]);
-    if (!ids.length) { U.toast('錯題本目前沒有未掌握的題目'); return; }
-    runCountModal('錯題重刷', ids, ['single', 'multi', 'fill', 'open']);
-  }
-
   /* ---------- 寵物小屋 ---------- */
   function pets() {
     const p = P();

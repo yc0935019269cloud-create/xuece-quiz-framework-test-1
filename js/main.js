@@ -1,6 +1,6 @@
 /* 進入點與畫面切換 */
 const App = (() => {
-  const TITLES = { peglin: '彈珠刷題', peglinLearn: '彈珠學習', hub: APP_TITLE, map: '冒險地圖', free: '自由遠征', abyss: '深淵遠征', classes: '職業殿堂', bank: '題庫', wrong: '錯題本', pets: '寵物小屋', upg: '永久強化', relics: '遺物圖鑑', bestiary: '怪物圖鑑', ach: '成就與收藏', pomo: '番茄鐘', learn: '學習模式', import: '導入素材', prompts: 'AI 提示詞', char: '統計', settings: '設定與存檔', run: '遠征中' };
+  const TITLES = { peglin: '彈珠刷題', peglinLearn: '彈珠學習', hub: APP_TITLE, map: '冒險地圖', free: '自由遠征', abyss: '深淵遠征', classes: '職業殿堂', bank: '題庫', wrong: '題庫・錯題本', pets: '寵物小屋', upg: '永久強化', relics: '遺物圖鑑', bestiary: '怪物圖鑑', ach: '成就與收藏', pomo: '番茄鐘', learn: '學習模式', import: '導入素材', prompts: 'AI 提示詞', char: '統計', settings: '設定與存檔', run: '遠征中' };
   const MUSIC = { hub: 'title', run: null };
   function refreshTop() {
     U.$('#resGem').textContent = Store.profile.gems;
