@@ -108,22 +108,26 @@ const Screens = (() => {
   /* ---------- 開始遠征 ---------- */
   /* 出題順序（自由遠征）：smart＝先出「沒作答過＋錯題」並隨機穿插（錯題權重 3 倍），寫對過的排在後面；
      new／wrong＝未作答／錯題排前面；其他＝完全隨機。用加權隨機排序（-ln(u)/w），題組以第一題判斷。 */
-  function prefOrder(units, pref) {
-    if (!pref || pref === 'rand') return U.shuffle(units);
+  function prefOrder(units, pref, patFirst) {
+    if ((!pref || pref === 'rand') && !patFirst) return U.shuffle(units);
     const isWrong = id => (Store.wrong[id] && !Store.wrong[id].done) || (Store.qs[id]?.a && !Store.qs[id].last);
     const isNew = id => !Store.qs[id]?.a;
     // smart：權重見 Store.smartWeight（錯題 3、沒答過 1、部位已在別題答過 0.3、寫對過 0＝排最後）；
     // 同一部位在這一場裡也只讓第一題保持原權重，其餘同部位的題往後排，避免同一個構造連續出現
-    const seen = pref === 'smart' ? Store.partsAnswered() : null;
+    // patFirst（未刷過題型優先）：題型已刷過的 ×0.15（Store.typeFactor），同一場裡同題型也只讓第一題排前面
+    const seen = pref === 'smart' ? Store.partsAnswered() : null, seenT = patFirst ? Store.typesAnswered() : null;
     const keyed = units.map(u => {
-      const id = u[0], w = isWrong(id), n = isNew(id);
-      const sw = pref === 'smart' ? Store.smartWeight(id, seen) : 1;
-      const tier = pref === 'smart' ? (sw > 0 ? 0 : 1) : pref === 'new' ? (n ? 0 : 1) : (w ? 0 : 1);
-      return [u, tier, -Math.log(Math.random() || 1e-9) / (sw || 1), Store.partKey(Store.Q[id])];
+      const id = u[0], w = isWrong(id), n = isNew(id), q = Store.Q[id];
+      const sw = (pref === 'smart' ? Store.smartWeight(id, seen) : 1) * (seenT ? Store.typeFactor(id, seenT) : 1);
+      const tier = pref === 'smart' ? (sw > 0 ? 0 : 1) : pref === 'new' ? (n ? 0 : 1) : pref === 'wrong' ? (w ? 0 : 1) : 0;
+      return [u, tier, -Math.log(Math.random() || 1e-9) / (sw || 1), pref === 'smart' ? Store.partKey(q) : null, patFirst ? Store.typeKey(q) : null];
     }).sort((a, b) => a[1] - b[1] || a[2] - b[2]);
-    if (pref !== 'smart') return keyed.map(x => x[0]);
+    if (pref !== 'smart' && !patFirst) return keyed.map(x => x[0]);
     const first = [], later = [], used = new Set();
-    keyed.forEach(x => { if (x[1] === 0 && used.has(x[3])) later.push(x); else { used.add(x[3]); first.push(x); } });
+    keyed.forEach(x => {
+      const ks = [x[3], x[4]].filter(Boolean);
+      if (x[1] === 0 && ks.some(k => used.has(k))) later.push(x); else { ks.forEach(k => used.add(k)); first.push(x); }
+    });
     const rest = first.filter(x => x[1] === 1);
     return first.filter(x => x[1] === 0).concat(later, rest).map(x => x[0]);
   }
@@ -135,7 +139,7 @@ const Screens = (() => {
       if (q.group) { if (!seen[q.group]) { seen[q.group] = []; units.push(seen[q.group]); } seen[q.group].push(q.id); }
       else units.push([q.id]);
     });
-    const order = cfg.ordered ? units : prefOrder(units, cfg.pref);
+    const order = cfg.ordered ? units : prefOrder(units, cfg.pref, cfg.patFirst);
     const out = [];
     for (const u of order) { for (const id of u) { if (out.length < cfg.count) out.push(id); } if (out.length >= cfg.count) break; }
     return out;
@@ -161,6 +165,17 @@ const Screens = (() => {
     return list.map(([v, l]) => `<span class="chip ${selected.includes(v) ? 'on' : ''}" data-v="${v}">${l}</span>`).join('');
   }
   /* 「★ 只出星號部位的題目」開關（自由遠征、深淵遠征） */
+  /* 未刷過題型優先：歷年國考只換數字的同類題（content/patterns 分組）刷過一題後，其他同類題往後排 */
+  function patSubjects() { const P = window.QB.patterns || {}, s = new Set(); for (const id in P) { const q = Store.Q[id]; if (q) s.add(Store.EX[q.exam].subj); } return [...s].map(x => (C.SUBJECTS[x] || {}).name || x); }
+  function patChip(state) {
+    const subs = patSubjects();
+    return `<span id="fpat"><span class="chip ${state.patFirst ? 'on' : ''}" data-pat role="switch" aria-checked="${!!state.patFirst}">🧩 未刷過題型優先</span></span>
+      <span class="small-t dim">${subs.length ? `同一題型（歷年國考只換數字或小改選項）刷過一題，其他同型題往後排；目前已分類：${U.esc(subs.join('、'))}` : '目前還沒有分類好的題型'}</span>`;
+  }
+  function bindPat(state) {
+    const c = U.$('#fpat [data-pat]'); if (!c) return;
+    c.onclick = () => { state.patFirst = !state.patFirst; c.classList.toggle('on', state.patFirst); c.setAttribute('aria-checked', String(state.patFirst)); SFX.play('click'); };
+  }
   function bindStar(state, upd) {
     if (state.starOnly === true) state.starOnly = 'related';   // 舊設定（只有一個開關時）＝相關題
     U.$$('#fstar .chip').forEach(c => c.onclick = () => {
@@ -523,6 +538,7 @@ const Screens = (() => {
         <div class="frow"><label>題型</label><span id="ft">${chipGroup(TYPES, state.types)}</span></div>
         <div class="frow"><label>星號</label><span id="fstar"><span class="chip ${state.starOnly === 'exact' ? 'on' : ''}" data-v="exact">★ 只刷星號部位本身</span><span class="chip ${state.starOnly && state.starOnly !== 'exact' ? 'on' : ''}" data-v="related">★ 星號部位＋相關題</span></span><span class="small-t dim" style="margin-left:6px">學習模式已加星號 ${typeof LEARN_UI !== 'undefined' ? LEARN_UI.starredTermCount() : 0} 個部位</span></div>
         <div class="frow"><label>出題</label><span id="fp">${chipGroup([['smart', '未作答＋錯題優先'], ['rand', '隨機'], ['new', '未作答優先'], ['wrong', '錯題優先']], [state.pref], false)}</span></div>
+        <div class="frow"><label>同類題</label>${patChip(state)}</div>
         <div class="frow"><label>狀態</label><span id="fs">${chipGroup(STATUS, [state.status], false)}</span></div>
         <div class="frow"><label>題數</label><span id="fc">${chipGroup([['10', '10'], ['15', '15'], ['20', '20'], ['30', '30'], ['50', '50'], ['9999', '全部']], [state.count], false)}</span>
           <input class="px-in" id="fcn" type="number" min="3" max="500" placeholder="自訂" style="width:90px"></div>
@@ -538,6 +554,7 @@ const Screens = (() => {
     bindStar(state, upd);
     bindChips(scr(), '#fs', state, 'status', false, upd);
     bindChips(scr(), '#fp', state, 'pref', false);
+    bindPat(state);
     bindChips(scr(), '#fc', state, 'count', false, () => { U.$('#fcn').value = ''; upd(); });
     U.$('#fcn').oninput = e => { if (e.target.value) { state.count = String(U.clamp(Number(e.target.value), 1, 999)); U.$$('#fc .chip').forEach(c => c.classList.remove('on')); upd(); } };
     upd();
@@ -558,7 +575,7 @@ const Screens = (() => {
     const row = U.h(`<div class="qrow"><div class="thumb ${img ? '' : 'txt'}">${img ? `<img src="${U.img(img)}" loading="lazy">` : U.esc(txt)}</div>
       <div><span class="tag" style="border-color:${C.SUBJECTS[ex.subj].color}">${U.esc(QV.exLabel(ex))}</span><span class="tag">第 ${U.esc(q.n)} 題</span><span class="tag ${q.type}">${QV.typeName(q)}</span>
       ${q.label ? `<span class="tag">${U.esc(q.label)}</span>` : ''}${st && q.tag ? `<span class="dim small-t">${U.esc(q.tag)}</span>` : ''}
-      ${w ? `<span class="small-t ${w.done ? 'green-t' : 'red-t'}">${w.done ? '（錯題已掌握）' : `（錯 ${w.n} 次）`}</span>` : ''}</div>
+      ${w ? `<span class="small-t ${w.done ? 'green-t' : 'red-t'}">${w.done ? '（錯題已掌握）' : w.n ? `（錯 ${w.n} 次）` : '（手動加入）'}</span>` : ''}</div>
       <div>${stTag}</div></div>`);
     row.onclick = () => QV.practiceModal(q, () => { const nr = qrow(q); row.replaceWith(nr); });
     return row;
@@ -588,7 +605,7 @@ const Screens = (() => {
       const row = U.h(`<article class="bank-card" data-qid="${U.esc(q.id)}">
         <div class="bank-head"><div class="qmeta"><span class="tag" style="border-color:${(C.SUBJECTS[ex.subj] || {}).color || '#888'}">${U.esc(QV.exLabel(ex))}</span>
           <span class="tag">第 ${U.esc(q.n)} 題</span><span class="tag ${q.type}">${QV.typeName(q)}</span>${q.label ? `<span class="tag">${U.esc(q.label)}</span>` : ''}
-          ${w ? `<span class="small-t ${w.done ? 'green-t' : 'red-t'}">${w.done ? '（錯題已掌握）' : `（錯 ${w.n} 次）`}</span>` : ''}</div><div class="bank-status">${stTag}</div></div>
+          ${w ? `<span class="small-t ${w.done ? 'green-t' : 'red-t'}">${w.done ? '（錯題已掌握）' : w.n ? `（錯 ${w.n} 次）` : '（手動加入）'}</span>` : ''}</div><div class="bank-status">${stTag}</div></div>
         <div class="bank-preview">${QV.previewHTML(q)}</div>
         <div class="bank-actions"><button class="px-btn small bank-toggle" aria-expanded="false" aria-controls="bank-ex-${U.esc(q.id)}">▸ 展開詳解</button>${FAV_UI.controls(q)}<span class="grow"></span><button class="px-btn small bank-practice">練習此題</button></div>
         <div class="bank-explanation" id="bank-ex-${U.esc(q.id)}" hidden></div></article>`);
@@ -948,7 +965,7 @@ const Screens = (() => {
   function abyss() {
     const p = P(), A = p.abyss;
     const last = p.abyssCfg || {};
-    const state = { subjects: (last.subjects || MAIN_SUBJ.slice()).filter(x => C.SUBJECTS[x]), exams: (last.exams || []).filter(id => Store.EX[id]), types: last.types || ['single', 'multi', 'fill'], pref: last.pref2 ? last.pref : 'smart', starOnly: last.starOnly === true ? 'related' : (last.starOnly || false), diff: Math.min(last.diff ?? A.maxDiff, A.maxDiff) };
+    const state = { subjects: (last.subjects || MAIN_SUBJ.slice()).filter(x => C.SUBJECTS[x]), exams: (last.exams || []).filter(id => Store.EX[id]), types: last.types || ['single', 'multi', 'fill'], pref: last.pref2 ? last.pref : 'smart', patFirst: !!last.patFirst, starOnly: last.starOnly === true ? 'related' : (last.starOnly || false), diff: Math.min(last.diff ?? A.maxDiff, A.maxDiff) };
     // 有選題本時，只有這些題本所屬的科目會登場（首領也只出這些科目）
     const effSubj = () => state.exams.length ? state.subjects.filter(x => state.exams.some(id => Store.EX[id].subj === x)) : state.subjects;
     scr().innerHTML = `<div class="abyss-grid">
@@ -960,6 +977,7 @@ const Screens = (() => {
           <div class="frow"><label>題型</label><span id="ft">${chipGroup(TYPES, state.types)}</span></div>
           <div class="frow"><label>星號</label><span id="fstar"><span class="chip ${state.starOnly === 'exact' ? 'on' : ''}" data-v="exact">★ 只刷星號部位本身</span><span class="chip ${state.starOnly && state.starOnly !== 'exact' ? 'on' : ''}" data-v="related">★ 星號部位＋相關題</span></span><span class="small-t dim" style="margin-left:6px">學習模式已加星號 ${typeof LEARN_UI !== 'undefined' ? LEARN_UI.starredTermCount() : 0} 個部位</span></div>
           <div class="frow"><label>出題</label><span id="fp">${chipGroup([['smart', '未作答＋錯題優先'], ['rand', '隨機'], ['new', '未作答優先'], ['wrong', '錯題優先']], [state.pref], false)}</span></div>
+          <div class="frow"><label>同類題</label>${patChip(state)}</div>
         </div>
         <p id="cnt" class="gold-t small-t"></p>
         <h3 class="mt">試煉等級（效果累加）</h3>
@@ -1000,15 +1018,16 @@ const Screens = (() => {
     bindChips(scr(), '#ft', state, 'types', true, upd);
     bindStar(state, upd);
     bindChips(scr(), '#fp', state, 'pref', false);
+    bindPat(state);
     drawDiffs(); upd();
     U.$('#chcls').onclick = () => App.go('classes');
     U.$('#go').onclick = () => {
       if (!state.subjects.length || !state.types.length) { U.toast('科目、題型至少各選一項'); return; }
       const subs = effSubj();
       if (!subs.length) { U.toast('選的題本不在已選的科目裡'); return; }
-      p.abyssCfg = { subjects: state.subjects.slice(), exams: state.exams.slice(), types: state.types.slice(), pref: state.pref, pref2: true, diff: state.diff, starOnly: state.starOnly || false }; Store.saveProfile();
+      p.abyssCfg = { subjects: state.subjects.slice(), exams: state.exams.slice(), types: state.types.slice(), pref: state.pref, pref2: true, patFirst: !!state.patFirst, diff: state.diff, starOnly: state.starOnly || false }; Store.saveProfile();
       const names = (state.subjects.length === MAIN_SUBJ.length && MAIN_SUBJ.length > 1 && !state.exams.length ? '全科' : subs.map(x => C.SUBJECTS[x].name).join('・')) + (state.exams.length ? `・${state.exams.length} 本` : '');
-      startRun({ mode: 'abyss', title: `深淵遠征（${names}）`, subjects: subs, exams: state.exams.slice(), years: (state.years || []).slice(), types: state.types.slice(), pref: state.pref, diff: state.diff, starOnly: state.starOnly || false });
+      startRun({ mode: 'abyss', title: `深淵遠征（${names}）`, subjects: subs, exams: state.exams.slice(), years: (state.years || []).slice(), types: state.types.slice(), pref: state.pref, patFirst: !!state.patFirst, diff: state.diff, starOnly: state.starOnly || false });
     };
   }
 

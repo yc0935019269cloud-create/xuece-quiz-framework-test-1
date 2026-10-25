@@ -445,3 +445,10 @@
 - 展示頁 `docs/hero-art/preview.html` 可 file://，按職業切換 16 款並試播；快取 v149。驗證與界限見交接文件及 `docs/hero-art/expansion-*-qa.json`。Edge 的 file:// 畫布受來源規則限制，像素讀取在 HTTP 驗證，離線流程另測；沒有實機 iPad 或真實帳號雲端往返驗證。
 
 - 本版正式 QA：88 新圖集／128 atlas、1,024 姿勢、128 購買換裝、8 職業實際答題、640 次動畫、154 項 1000／390px 路線／存檔、32 支 JS 與 strict check 全通過。摘要 `docs/hero-art/expansion-qa-summary.json`；獨立 context 的 localStorage 已還原。
+
+## 加入錯題本按鈕、視光學國考同題型分組、未刷過題型優先（2026-10-25，v150）
+
+- 題目上方「☆ 收藏／收藏資料夾」旁新增「＋ 加入錯題本／✓ 已在錯題本」（`js/favorites.js` 的 `buttons()`，所以遠征、題庫練習、學習模式的題庫實戰、題庫卡片都有）。`Store.setWrongbook(id, on)`／`Store.inWrongbook(id)`；手動加入的紀錄 `n: 0, manual: true`，之後連續答對 2 次一樣會畢業，錯題本列表顯示「（手動加入）」。`Store.record` 會發 `wrongbookchange` 事件，答錯後按鈕自動變成「已在錯題本」（避免誤按移出）。
+- 同題型分組正本：`content/patterns/optometry.json`（格式 `xd-patterns/1`，說明在 `docs/格式_題庫.md` 最後一節）；人工檢查清單 `docs/視光學_題型分類.md`。範圍＝視光學科目全部歷年國考題 810 題（114 大一下 01～09 單元、115 大二上視光學二），逐題人工判讀：141 組、429 題；其餘 381 題各自獨立。原則：解法與算法完全相同、只換數字或小改選項（含同一題重考）才同組；換未知數、多一個步驟、換寫法都分開。`tools/build.py` 的 `build_patterns` 檢查並輸出 `QB.patterns`／`QB.patternNames`。
+- 自由遠征與深淵遠征新增「同類題：🧩 未刷過題型優先」（預設關，深淵記在 `profile.abyssCfg.patFirst`）。`Store.typeKey`／`typesAnswered`／`typeFactor`：同組有任何一題作答過，其他題權重 ×0.15（目前仍是錯題的不降）；自由遠征 `prefOrder` 另把同一場裡重複的題型排到後面；深淵 `drawQuestion` 每次抽題重算。其他科目還沒分組時這個選項不影響出題。
+- QA（headless Edge HTTP，獨立 context）15 項通過：分組資料完整、遠征／題庫／學習實戰都有按鈕且可切換、答錯後自動顯示、勾選後已刷題型的同類題在自由遠征出現比例 16.5%→2.9%、深淵 400 次抽題 87→9 次、同一場前 120 題沒有重複題型、無頁面錯誤。分組沒有經過老師審核；沒有實機 iPad 測試。

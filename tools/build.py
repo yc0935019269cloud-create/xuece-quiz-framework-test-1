@@ -1009,6 +1009,44 @@ def build_glossary():
     return out, bad
 
 
+def build_patterns(QB):
+    """content/patterns/*.json（xd-patterns/1）：同題型分組（只換數字或小改選項的題目放同一組）。
+    遠征的「未刷過題型優先」會把已刷過同組題目的其他題降低權重。"""
+    Q = {q['id'] for q in QB['questions']}
+    qmap, names, bad, owner = {}, {}, 0, {}
+    for f in sorted(glob.glob(os.path.join(CONTENT, 'patterns', '*.json'))):
+        try:
+            d = json.load(open(f, encoding='utf-8'))
+        except json.JSONDecodeError as e:
+            print(f'✘ {rel(f)}\n    JSON 格式錯誤：第 {e.lineno} 行：{e.msg}'); bad += 1; continue
+        errs = []
+        for i, g in enumerate(d.get('groups') or []):
+            w = f'groups[{i}]'
+            gid, ids = g.get('id'), g.get('qids')
+            if not is_str(gid) or not is_str(g.get('name')) or not isinstance(ids, list):
+                errs.append(f'{w} 需要 id、name、qids'); continue
+            if gid in names:
+                errs.append(f'{w} id 重複：{gid}'); continue
+            miss = [x for x in ids if x not in Q]
+            if miss:
+                errs.append(f'{w}（{gid}）找不到題目：{_short(miss)}'); continue
+            dup = [x for x in ids if x in owner]
+            if dup:
+                errs.append(f'{w}（{gid}）題目已在別組：' + '、'.join(f'{x}（{owner[x]}）' for x in dup[:3])); continue
+            if len(set(ids)) < 2:
+                errs.append(f'{w}（{gid}）至少要兩題才算同題型'); continue
+            names[gid] = g['name']
+            for x in ids:
+                owner[x] = gid; qmap[x] = gid
+        if errs:
+            bad += 1
+            print(f'✘ {rel(f)}'); [print('    ' + x) for x in errs]
+        else:
+            n = len(d.get('groups') or [])
+            print(f'✔ {rel(f)}  〔同題型分組〕{n} 組、{sum(len(g["qids"]) for g in d.get("groups") or [])} 題')
+    return qmap, names, bad
+
+
 def main():
     global BUNDLE
     args = set(sys.argv[1:])
@@ -1019,6 +1057,8 @@ def main():
             pj['subjects'].append({k: sj[k] for k in ('id', 'name', 'theme', 'desc', 'color', 'region', 'words') if sj.get(k)})
     print()
     QB, b1 = build_bank(pj, args)
+    QB['patterns'], QB['patternNames'], b4 = build_patterns(QB)
+    b1 = b1 or b4
     LEARN, b2 = build_learn(pj, QB, args)
     LEARN['glossary'], b3 = build_glossary()
     b2 = b2 or b3

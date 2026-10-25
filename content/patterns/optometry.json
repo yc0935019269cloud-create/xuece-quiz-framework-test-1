@@ -1,0 +1,1284 @@
+{
+ "format": "xd-patterns/1",
+ "subject": "optometry",
+ "title": "視光學歷年國考：同題型分組",
+ "rule": "同一組＝解題邏輯與算法完全相同，只換數字或小改選項（含同一題重考）。換未知數（例如反過來求距離）、多一個步驟（例如先換算焦距或扣工作距離）、換成另一種寫法（正柱鏡）都算不同題型，不放同一組。只收兩題以上的組；沒列出的題目各自是獨立題型。",
+ "scope": "視光學科目的歷年國考題（114 大一下第01～09單元、115 大二上視光學二），共 810 題。",
+ "groups": [
+  {
+   "id": "opt-t001",
+   "name": "5 分角視標在某距離的高度",
+   "qids": [
+    "s114-optometry-exam106-u01-st-rf-23",
+    "s114-optometry-exam106-u01-sp-rf-10",
+    "s114-optometry-exam113-u01-sp-rf-44",
+    "s114-optometry-exam110-u01-sp-rf-8"
+   ]
+  },
+  {
+   "id": "opt-t002",
+   "name": "小數或 Snellen 視力換算 logMAR",
+   "qids": [
+    "s114-optometry-exam108-u01-sp-sg-8",
+    "s114-optometry-exam106-u01-st-rf-7",
+    "s114-optometry-exam106-u01-vt-op-39"
+   ]
+  },
+  {
+   "id": "opt-t003",
+   "name": "6/30 換算小數、MAR 與 logMAR",
+   "qids": [
+    "s114-optometry-exam106-u01-sp-rf-20",
+    "s114-optometry-exam112-u01-vh-vo-33"
+   ]
+  },
+  {
+   "id": "opt-t004",
+   "name": "logMAR 逐字計分：一行全對再加下一行幾個字",
+   "qids": [
+    "s114-optometry-exam108-u01-vt-op-12",
+    "s114-optometry-exam107-u01-vt-op-5"
+   ]
+  },
+  {
+   "id": "opt-t005",
+   "name": "logMAR 逐字計分：跨好幾行",
+   "qids": [
+    "s114-optometry-exam112-u01-sp-rf-3",
+    "s114-optometry-exam108-u01-vh-op-11"
+   ]
+  },
+  {
+   "id": "opt-t006",
+   "name": "在非標準距離看到某行：換算真正視力",
+   "qids": [
+    "s114-optometry-exam107-u01-sp-rf-15",
+    "s114-optometry-exam106-u01-sp-rf-21",
+    "s114-optometry-exam111-u01-sp-rf-8",
+    "s114-optometry-exam106-u01-vt-op-41"
+   ]
+  },
+  {
+   "id": "opt-t007",
+   "name": "非標準距離時視標所占的視角",
+   "qids": [
+    "s114-optometry-exam106-u01-vt-op-40",
+    "s114-optometry-exam109-u01-vt-op-6"
+   ]
+  },
+  {
+   "id": "opt-t008",
+   "name": "簡化眼：眼軸每 1 mm 約改變 2.6～3 D",
+   "qids": [
+    "s114-optometry-exam109-u01-vh-vo-38",
+    "s114-optometry-exam114-u01-vh-vo-33"
+   ]
+  },
+  {
+   "id": "opt-t009",
+   "name": "矯正後視力仍不佳：用針孔分辨屈光或病理",
+   "qids": [
+    "s114-optometry-exam109-u01-vt-op-23",
+    "s114-optometry-exam111-u01-sp-rf-36",
+    "s114-optometry-exam110-u01-sp-rf-31",
+    "s114-optometry-exam106-u01-st-rf-33",
+    "optom2-exam-u2-106-sp-18",
+    "optom2-exam-u2-108-st-35",
+    "optom2-exam-u2-107-st-31",
+    "optom2-exam-u2-109-st-10"
+   ]
+  },
+  {
+   "id": "opt-t010",
+   "name": "針孔孔徑約 1.0～1.5 mm",
+   "qids": [
+    "s114-optometry-exam111-u01-sp-rf-19",
+    "s114-optometry-exam114-u01-vh-op-22",
+    "optom2-exam-u2-113-vh-24"
+   ]
+  },
+  {
+   "id": "opt-t011",
+   "name": "遠視：平行光聚焦在網膜後、用凸透鏡矯正",
+   "qids": [
+    "s114-optometry-exam108-u01-st-rf-7",
+    "s114-optometry-exam107-u01-sp-sg-4",
+    "s114-optometry-exam108-u01-st-sg-7"
+   ]
+  },
+  {
+   "id": "opt-t012",
+   "name": "未矯正近視看近：所需調節力",
+   "qids": [
+    "s114-optometry-exam106-u01-sp-sg-11",
+    "s114-optometry-exam108-u09-opt-q0167",
+    "s114-optometry-exam111-u09-opt-q0343"
+   ]
+  },
+  {
+   "id": "opt-t013",
+   "name": "正負柱鏡處方互換",
+   "qids": [
+    "s114-optometry-exam111-u02-sp-rf-13",
+    "s114-optometry-exam110-u02-sp-sg-22",
+    "s114-optometry-exam112-u02-sp-sg-28",
+    "s114-optometry-exam106-u02-sp-rf-9",
+    "s114-optometry-exam109-u02-st-rf-23",
+    "s114-optometry-exam106-u02-st-rf-3"
+   ]
+  },
+  {
+   "id": "opt-t014",
+   "name": "等效球鏡度 S + C/2",
+   "qids": [
+    "s114-optometry-exam111-u02-sp-rf-26",
+    "s114-optometry-exam106-u02-st-rf-47",
+    "s114-optometry-exam106-u02-st-sg-5",
+    "optom2-exam-u2-113-sp-36"
+   ]
+  },
+  {
+   "id": "opt-t015",
+   "name": "由處方或兩主經線判斷散光類型（單純／複合／混合）",
+   "qids": [
+    "s114-optometry-exam110-u02-vh-op-6",
+    "s114-optometry-exam108-u02-vt-vo-1",
+    "s114-optometry-exam106-u02-st-rf-26",
+    "s114-optometry-exam112-u02-sp-rf-10",
+    "s114-optometry-exam109-u02-vh-vo-24",
+    "s114-optometry-exam106-u02-vt-op-3",
+    "s114-optometry-exam110-u02-sp-rf-7",
+    "s114-optometry-exam114-u05-opt-q0442"
+   ]
+  },
+  {
+   "id": "opt-t016",
+   "name": "由處方判斷順規／逆規（先換成負柱鏡）",
+   "qids": [
+    "s114-optometry-exam112-u02-sp-rf-7",
+    "s114-optometry-exam106-u02-sp-rf-11",
+    "s114-optometry-exam106-u02-st-sg-11",
+    "s114-optometry-exam114-u02-vh-vo-6"
+   ]
+  },
+  {
+   "id": "opt-t017",
+   "name": "同時判斷順規／逆規與散光類型",
+   "qids": [
+    "s114-optometry-exam109-u02-st-sg-9",
+    "s114-optometry-exam109-u02-vt-vo-20",
+    "s114-optometry-exam111-u02-sp-rf-7"
+   ]
+  },
+  {
+   "id": "opt-t018",
+   "name": "斜散光的軸度範圍",
+   "qids": [
+    "s114-optometry-exam107-u02-st-sg-4",
+    "s114-optometry-exam111-u02-sp-sg-8",
+    "optom2-exam-u2-107-sp-25"
+   ]
+  },
+  {
+   "id": "opt-t019",
+   "name": "順規散光：最強屈光力的主經線在垂直附近",
+   "qids": [
+    "s114-optometry-exam110-u02-sp-sg-9",
+    "s114-optometry-exam111-u02-vh-vo-4"
+   ]
+  },
+  {
+   "id": "opt-t020",
+   "name": "年齡與順規／逆規：年輕順規、年老逆規",
+   "qids": [
+    "s114-optometry-exam108-u02-vt-op-3",
+    "s114-optometry-exam106-u02-sp-rf-35",
+    "s114-optometry-exam109-u02-sp-rf-3",
+    "s114-optometry-exam109-u02-sp-rf-4"
+   ]
+  },
+  {
+   "id": "opt-t021",
+   "name": "散光類型 ↔ 兩條焦線相對網膜的位置",
+   "qids": [
+    "s114-optometry-exam109-u02-vh-vo-2",
+    "s114-optometry-exam108-u02-sp-rf-5",
+    "s114-optometry-exam107-u02-vt-vo-5",
+    "s114-optometry-exam107-u02-st-rf-8"
+   ]
+  },
+  {
+   "id": "opt-t022",
+   "name": "兩條焦線一前一後 → 混合性散光",
+   "qids": [
+    "s114-optometry-exam108-u02-st-rf-4",
+    "s114-optometry-exam110-u02-sp-rf-6"
+   ]
+  },
+  {
+   "id": "opt-t023",
+   "name": "不規則散光（圓錐角膜）最適合硬式隱形眼鏡",
+   "qids": [
+    "s114-optometry-exam108-u02-sp-sg-10",
+    "s114-optometry-exam111-u02-vh-op-4"
+   ]
+  },
+  {
+   "id": "opt-t024",
+   "name": "角膜散光：哪個方向較平、焦線方向與位置",
+   "qids": [
+    "s114-optometry-exam109-u02-st-sg-7",
+    "s114-optometry-exam106-u02-vh-op-1"
+   ]
+  },
+  {
+   "id": "opt-t025",
+   "name": "JCC 散光度數：紅／白點對軸被選，調柱鏡並補球面（負柱鏡寫法）",
+   "qids": [
+    "optom2-exam-u2-109-st-39",
+    "optom2-exam-u2-107-vt-18",
+    "optom2-exam-u2-107-vh-9",
+    "optom2-exam-u2-111-vh-24",
+    "optom2-exam-u2-112-sp-38",
+    "optom2-exam-u2-112-vh-23"
+   ]
+  },
+  {
+   "id": "opt-t026",
+   "name": "JCC 改了柱鏡度數：依等效球補球面",
+   "qids": [
+    "optom2-exam-u2-110-sp-37",
+    "optom2-exam-u2-113-sp-31",
+    "optom2-exam-u2-108-vt-21",
+    "optom2-exam-u2-108-sp-40"
+   ]
+  },
+  {
+   "id": "opt-t027",
+   "name": "JCC 度數：紅點或白點對軸較清楚時柱鏡該加或減",
+   "qids": [
+    "optom2-exam-u2-112-sp-39",
+    "optom2-exam-u2-108-vh-18"
+   ]
+  },
+  {
+   "id": "opt-t028",
+   "name": "JCC 軸度：追紅點決定柱鏡軸往哪轉",
+   "qids": [
+    "optom2-exam-u2-107-vt-21",
+    "optom2-exam-u2-107-vt-22",
+    "optom2-exam-u2-109-vh-23",
+    "optom2-exam-u2-110-vh-24"
+   ]
+  },
+  {
+   "id": "opt-t029",
+   "name": "JCC 找軸度：紅白點跨在柱鏡軸兩側 45°",
+   "qids": [
+    "optom2-exam-u2-113-sp-38",
+    "optom2-exam-u2-106-vt-46"
+   ]
+  },
+  {
+   "id": "opt-t030",
+   "name": "JCC 找軸度：把 A 對準柱鏡軸",
+   "qids": [
+    "optom2-exam-u2-107-st-34",
+    "optom2-exam-u2-113-vh-25"
+   ]
+  },
+  {
+   "id": "opt-t031",
+   "name": "JCC 先後放 90/180 與 45/135：判斷軸度落在哪一區",
+   "qids": [
+    "optom2-exam-u2-108-st-34",
+    "optom2-exam-u2-106-st-46"
+   ]
+  },
+  {
+   "id": "opt-t032",
+   "name": "JCC 紅點代表負柱鏡軸",
+   "qids": [
+    "optom2-exam-u2-107-st-33",
+    "optom2-exam-u2-106-st-45"
+   ]
+  },
+  {
+   "id": "opt-t033",
+   "name": "JCC 先確認軸度再確認度數",
+   "qids": [
+    "optom2-exam-u2-110-sp-36",
+    "optom2-exam-u2-108-vh-19"
+   ]
+  },
+  {
+   "id": "opt-t034",
+   "name": "正視眼前放 JCC：紅白點方向對應的焦線位置",
+   "qids": [
+    "optom2-exam-u2-106-vt-31",
+    "optom2-exam-u2-107-vh-23",
+    "optom2-exam-u2-111-sp-41",
+    "optom2-exam-u2-106-vh-21"
+   ]
+  },
+  {
+   "id": "opt-t035",
+   "name": "鐘面圖：最黑線的鐘點換算負柱鏡軸",
+   "qids": [
+    "optom2-exam-u2-108-st-31",
+    "optom2-exam-u2-106-vt-2",
+    "optom2-exam-u2-109-vh-22",
+    "optom2-exam-u2-112-sp-32",
+    "optom2-exam-u2-111-sp-35",
+    "optom2-exam-u2-106-st-13",
+    "optom2-exam-u2-106-vt-33",
+    "optom2-exam-u2-106-vh-23",
+    "optom2-exam-u2-108-vh-21",
+    "optom2-exam-u2-111-vh-21"
+   ]
+  },
+  {
+   "id": "opt-t036",
+   "name": "鐘面圖：相鄰兩條線一樣黑，軸度取中間",
+   "qids": [
+    "optom2-exam-u2-113-vh-19",
+    "optom2-exam-u2-110-sp-30"
+   ]
+  },
+  {
+   "id": "opt-t037",
+   "name": "紅綠測試：哪一色清楚 → 焦點位置與該加正或負",
+   "qids": [
+    "optom2-exam-u2-106-st-27",
+    "optom2-exam-u2-109-st-33",
+    "optom2-exam-u2-106-vh-18",
+    "optom2-exam-u2-108-vt-22",
+    "optom2-exam-u2-108-sp-39"
+   ]
+  },
+  {
+   "id": "opt-t038",
+   "name": "紅綠測試：近視負度數過多會覺得綠色清楚",
+   "qids": [
+    "optom2-exam-u2-109-vh-20",
+    "optom2-exam-u2-106-vt-6"
+   ]
+  },
+  {
+   "id": "opt-t039",
+   "name": "紅綠測試：紅綠焦點相差約 0.44～0.50 D",
+   "qids": [
+    "optom2-exam-u2-107-vh-26",
+    "optom2-exam-u2-109-st-37"
+   ]
+  },
+  {
+   "id": "opt-t040",
+   "name": "紅綠測試的用途是確認球面度數",
+   "qids": [
+    "optom2-exam-u2-111-sp-32",
+    "optom2-exam-u2-108-st-38",
+    "optom2-exam-u2-108-vt-23"
+   ]
+  },
+  {
+   "id": "opt-t041",
+   "name": "紅綠測試利用色像差",
+   "qids": [
+    "optom2-exam-u2-108-sp-34",
+    "optom2-exam-u2-106-sp-44"
+   ]
+  },
+  {
+   "id": "opt-t042",
+   "name": "霧視時把視力降到約 0.3～0.5",
+   "qids": [
+    "optom2-exam-u2-109-vh-21",
+    "optom2-exam-u2-113-sp-37"
+   ]
+  },
+  {
+   "id": "opt-t043",
+   "name": "霧視是把影像推到網膜前（不是網膜後）",
+   "qids": [
+    "optom2-exam-u2-110-vh-22",
+    "optom2-exam-u2-106-sp-47"
+   ]
+  },
+  {
+   "id": "opt-t044",
+   "name": "不規則散光適合用裂孔板",
+   "qids": [
+    "optom2-exam-u2-108-st-32",
+    "optom2-exam-u2-107-st-35"
+   ]
+  },
+  {
+   "id": "opt-t045",
+   "name": "哪一項不是自覺式驗光",
+   "qids": [
+    "optom2-exam-u2-111-sp-31",
+    "optom2-exam-u2-110-vh-19"
+   ]
+  },
+  {
+   "id": "opt-t046",
+   "name": "第一次最佳球面：最多正度數（最少負度數）達最佳視力",
+   "qids": [
+    "optom2-exam-u2-109-st-35",
+    "optom2-exam-u2-108-vt-24"
+   ]
+  },
+  {
+   "id": "opt-t047",
+   "name": "稜鏡度定義：由偏移量與距離求稜鏡度",
+   "qids": [
+    "s114-optometry-exam108-u04-opt-q0198",
+    "s114-optometry-exam108-u04-opt-q0179",
+    "s114-optometry-exam108-u04-opt-q0155",
+    "s114-optometry-exam107-u04-opt-q0131",
+    "s114-optometry-exam106-u04-opt-q0044",
+    "s114-optometry-exam106-u04-opt-q0019",
+    "s114-optometry-exam111-u04-opt-q0334"
+   ]
+  },
+  {
+   "id": "opt-t048",
+   "name": "稜鏡度定義：由稜鏡度與距離求偏移量",
+   "qids": [
+    "s114-optometry-exam106-u04-opt-q0063",
+    "s114-optometry-exam110-u04-opt-q0306"
+   ]
+  },
+  {
+   "id": "opt-t049",
+   "name": "稜鏡度定義：由稜鏡度與偏移量求距離",
+   "qids": [
+    "s114-optometry-exam110-u04-opt-q0300",
+    "s114-optometry-exam111-u04-opt-q0349"
+   ]
+  },
+  {
+   "id": "opt-t050",
+   "name": "光往基底偏、像往頂點移：判斷影像方向或基底方向",
+   "qids": [
+    "s114-optometry-exam107-u04-opt-q0085",
+    "s114-optometry-exam114-u04-opt-q0444",
+    "s114-optometry-exam108-u04-opt-q0202",
+    "s114-optometry-exam110-u04-opt-q0301"
+   ]
+  },
+  {
+   "id": "opt-t051",
+   "name": "球面鏡單方向偏心：Prentice 求稜鏡量（與基底方向）",
+   "qids": [
+    "s114-optometry-exam106-u04-opt-q0018",
+    "s114-optometry-exam108-u04-opt-q0207",
+    "s114-optometry-exam106-u04-opt-q0021",
+    "s114-optometry-exam106-u04-opt-q0045",
+    "s114-optometry-exam106-u04-opt-q0059",
+    "s114-optometry-exam111-u04-opt-q0335",
+    "s114-optometry-exam107-u04-opt-q0132",
+    "s114-optometry-exam111-u04-opt-q0357"
+   ]
+  },
+  {
+   "id": "opt-t052",
+   "name": "球面鏡兩方向偏心：Prentice 求水平＋垂直稜鏡",
+   "qids": [
+    "s114-optometry-exam111-u04-opt-q0348",
+    "s114-optometry-exam114-u04-opt-q0436"
+   ]
+  },
+  {
+   "id": "opt-t053",
+   "name": "球面鏡：由需要的稜鏡量反推偏心量（與方向）",
+   "qids": [
+    "s114-optometry-exam108-u04-opt-q0174",
+    "s114-optometry-exam106-u04-opt-q0037",
+    "s114-optometry-exam109-u04-opt-q0246",
+    "s114-optometry-exam112-u04-opt-q0385"
+   ]
+  },
+  {
+   "id": "opt-t054",
+   "name": "球柱鏡（軸 180）：由垂直稜鏡反推光心偏移",
+   "qids": [
+    "s114-optometry-exam110-u04-opt-q0308",
+    "s114-optometry-exam112-u04-opt-q0386"
+   ]
+  },
+  {
+   "id": "opt-t055",
+   "name": "DBOC 與 PD 不合：判斷基底方向（正／負鏡，無計算）",
+   "qids": [
+    "s114-optometry-exam106-u04-opt-q0051",
+    "s114-optometry-exam109-u04-opt-q0225",
+    "s114-optometry-exam109-u04-opt-q0271",
+    "s114-optometry-exam106-u04-opt-q0066",
+    "s114-optometry-exam111-u04-opt-q0325"
+   ]
+  },
+  {
+   "id": "opt-t056",
+   "name": "雙眼同度數 DBOC≠PD：求總水平稜鏡",
+   "qids": [
+    "s114-optometry-exam108-u04-opt-q0170",
+    "s114-optometry-exam108-u04-opt-q0181"
+   ]
+  },
+  {
+   "id": "opt-t057",
+   "name": "單眼 PD 錯置：雙眼不同度數的水平稜鏡",
+   "qids": [
+    "s114-optometry-exam106-u04-opt-q0050",
+    "s114-optometry-exam112-u04-opt-q0379"
+   ]
+  },
+  {
+   "id": "opt-t058",
+   "name": "不等視看近：雙眼垂直差異稜鏡（球面鏡）",
+   "qids": [
+    "s114-optometry-exam107-u04-opt-q0084",
+    "s114-optometry-exam107-u04-opt-q0102",
+    "s114-optometry-exam108-u04-opt-q0180",
+    "s114-optometry-exam108-u04-opt-q0201",
+    "s114-optometry-exam108-u04-opt-q0175"
+   ]
+  },
+  {
+   "id": "opt-t059",
+   "name": "不等視看近：垂直＋水平稜鏡（球面鏡，向下且向鼻側）",
+   "qids": [
+    "s114-optometry-exam106-u04-opt-q0038",
+    "s114-optometry-exam109-u04-opt-q0242"
+   ]
+  },
+  {
+   "id": "opt-t060",
+   "name": "球柱鏡（軸 90/180）垂直偏心：雙眼各自稜鏡",
+   "qids": [
+    "s114-optometry-exam110-u04-opt-q0297",
+    "s114-optometry-exam107-u04-opt-q0092"
+   ]
+  },
+  {
+   "id": "opt-t061",
+   "name": "球柱鏡（軸 90/180）兩方向偏心：求水平與垂直稜鏡",
+   "qids": [
+    "s114-optometry-exam106-u04-opt-q0039",
+    "s114-optometry-exam108-u04-opt-q0169",
+    "s114-optometry-exam109-u04-opt-q0230",
+    "s114-optometry-exam112-u04-opt-q0378",
+    "s114-optometry-exam112-u04-opt-q0375"
+   ]
+  },
+  {
+   "id": "opt-t062",
+   "name": "球柱鏡兩方向偏心後換算遠處影像位移",
+   "qids": [
+    "s114-optometry-exam107-u04-opt-q0103",
+    "s114-optometry-exam108-u04-opt-q0156"
+   ]
+  },
+  {
+   "id": "opt-t063",
+   "name": "球柱鏡（軸 90/180）水平偏心：用水平經線度數求稜鏡",
+   "qids": [
+    "s114-optometry-exam112-u04-opt-q0381",
+    "s114-optometry-exam112-u04-opt-q0373",
+    "s114-optometry-exam110-u04-opt-q0307",
+    "s114-optometry-exam109-u04-opt-q0244"
+   ]
+  },
+  {
+   "id": "opt-t064",
+   "name": "斜軸柱鏡偏心：用 sin² 求該方向度數再算稜鏡",
+   "qids": [
+    "s114-optometry-exam113-u04-opt-q0415",
+    "s114-optometry-exam108-u04-opt-q0177"
+   ]
+  },
+  {
+   "id": "opt-t065",
+   "name": "整副眼鏡位移：雙眼各自的稜鏡效應",
+   "qids": [
+    "s114-optometry-exam107-u04-opt-q0087",
+    "s114-optometry-exam111-u04-opt-q0336"
+   ]
+  },
+  {
+   "id": "opt-t066",
+   "name": "雙眼垂直稜鏡換算成單眼相對量",
+   "qids": [
+    "s114-optometry-exam114-u04-opt-q0443",
+    "s114-optometry-exam111-u04-opt-q0346"
+   ]
+  },
+  {
+   "id": "opt-t067",
+   "name": "由遠用 PD 估近用 PD",
+   "qids": [
+    "s114-optometry-exam108-u04-opt-q0164",
+    "s114-optometry-exam106-u04-opt-q0046"
+   ]
+  },
+  {
+   "id": "opt-t068",
+   "name": "驗度儀：鏡片前／後表面貼鏡托量到前／後頂點度數",
+   "qids": [
+    "s114-optometry-exam109-u04-opt-q0263",
+    "s114-optometry-exam108-u04-opt-q0160"
+   ]
+  },
+  {
+   "id": "opt-t069",
+   "name": "驗度儀：光心不在十字中心代表有稜鏡",
+   "qids": [
+    "s114-optometry-exam107-u04-opt-q0142",
+    "s114-optometry-exam112-u04-opt-q0392"
+   ]
+  },
+  {
+   "id": "opt-t070",
+   "name": "驗度儀：兩主經線讀數寫成處方",
+   "qids": [
+    "s114-optometry-exam108-u04-opt-q0212",
+    "s114-optometry-exam114-u04-opt-q0438"
+   ]
+  },
+  {
+   "id": "opt-t071",
+   "name": "驗度儀：十字視標單線／三線讀數寫成處方",
+   "qids": [
+    "s114-optometry-exam109-u04-opt-q0245",
+    "s114-optometry-exam109-u04-opt-q0254"
+   ]
+  },
+  {
+   "id": "opt-t072",
+   "name": "檢影毛值扣工作距離（球面）",
+   "qids": [
+    "s114-optometry-exam106-u05-opt-q0074",
+    "s114-optometry-exam109-u05-opt-q0251",
+    "s114-optometry-exam106-u05-opt-q0070",
+    "s114-optometry-exam109-u05-opt-q0219",
+    "s114-optometry-exam106-u05-opt-q0028",
+    "s114-optometry-exam110-u05-opt-q0293"
+   ]
+  },
+  {
+   "id": "opt-t073",
+   "name": "檢影毛值為球柱處方：扣工作距離只改球面",
+   "qids": [
+    "s114-optometry-exam112-u05-opt-q0395",
+    "s114-optometry-exam106-u05-opt-q0052",
+    "s114-optometry-exam111-u05-opt-q0358",
+    "s114-optometry-exam106-u05-opt-q0029",
+    "s114-optometry-exam111-u05-opt-q0329"
+   ]
+  },
+  {
+   "id": "opt-t074",
+   "name": "檢影兩主經線讀數扣工作距離後寫成散光處方",
+   "qids": [
+    "s114-optometry-exam106-u05-opt-q0010",
+    "s114-optometry-exam108-u05-opt-q0188",
+    "s114-optometry-exam109-u05-opt-q0279",
+    "s114-optometry-exam108-u05-opt-q0151",
+    "s114-optometry-exam108-u05-opt-q0166",
+    "s114-optometry-exam114-u05-opt-q0430",
+    "s114-optometry-exam112-u05-opt-q0368",
+    "s114-optometry-exam109-u05-opt-q0262",
+    "s114-optometry-exam108-u05-opt-q0213",
+    "s114-optometry-exam110-u03-sp-sg-23"
+   ]
+  },
+  {
+   "id": "opt-t075",
+   "name": "檢影光帶方向讀數：先換成被量的主經線再寫處方",
+   "qids": [
+    "s114-optometry-exam107-u05-opt-q0098",
+    "s114-optometry-exam107-u05-opt-q0118",
+    "s114-optometry-exam113-u05-opt-q0410",
+    "s114-optometry-exam112-u05-opt-q0393",
+    "s114-optometry-exam106-u05-opt-q0030",
+    "s114-optometry-exam106-u05-opt-q0049"
+   ]
+  },
+  {
+   "id": "opt-t076",
+   "name": "兩主經線度數（已是淨值）寫成散光處方",
+   "qids": [
+    "s114-optometry-exam111-u05-opt-q0344",
+    "s114-optometry-exam109-u05-opt-q0237",
+    "s114-optometry-exam106-u05-opt-q0035",
+    "s114-optometry-exam111-u05-opt-q0345"
+   ]
+  },
+  {
+   "id": "opt-t077",
+   "name": "同一鏡片在不同距離中和：反推散光處方",
+   "qids": [
+    "s114-optometry-exam107-u05-opt-q0109",
+    "s114-optometry-exam109-u05-opt-q0280",
+    "s114-optometry-exam106-u05-opt-q0026",
+    "s114-optometry-exam108-u05-opt-q0162",
+    "s114-optometry-exam108-u03-vt-op-17"
+   ]
+  },
+  {
+   "id": "opt-t078",
+   "name": "中和後改變工作距離：判斷反光動向",
+   "qids": [
+    "s114-optometry-exam107-u05-opt-q0115",
+    "s114-optometry-exam106-u05-opt-q0068"
+   ]
+  },
+  {
+   "id": "opt-t079",
+   "name": "平行光檢影動向：判斷屈光狀態",
+   "qids": [
+    "s114-optometry-exam107-u05-opt-q0080",
+    "s114-optometry-exam106-u05-opt-q0012",
+    "s114-optometry-exam109-u05-opt-q0282",
+    "s114-optometry-exam109-u05-opt-q0234",
+    "s114-optometry-exam109-u05-opt-q0253"
+   ]
+  },
+  {
+   "id": "opt-t080",
+   "name": "移動式檢影：由中和距離求屈光度",
+   "qids": [
+    "s114-optometry-exam106-u05-opt-q0013",
+    "s114-optometry-exam107-u05-opt-q0139"
+   ]
+  },
+  {
+   "id": "opt-t081",
+   "name": "工作輔助鏡放錯：修正中和讀數",
+   "qids": [
+    "s114-optometry-exam110-u05-opt-q0318",
+    "s114-optometry-exam106-u05-opt-q0069"
+   ]
+  },
+  {
+   "id": "opt-t082",
+   "name": "只有球面度數：順動／逆動該加哪種鏡片",
+   "qids": [
+    "s114-optometry-exam107-u05-opt-q0116",
+    "s114-optometry-exam113-u05-opt-q0422"
+   ]
+  },
+  {
+   "id": "opt-t083",
+   "name": "戴著眼鏡或隱形眼鏡做檢影：把中和讀數加回原鏡片",
+   "qids": [
+    "s114-optometry-exam108-u05-opt-q0199",
+    "s114-optometry-exam114-u05-opt-q0435",
+    "s114-optometry-exam110-u03-sp-sg-27"
+   ]
+  },
+  {
+   "id": "opt-t084",
+   "name": "Hofstetter 最小調節幅度：由年齡求",
+   "qids": [
+    "s114-optometry-exam106-u09-opt-q0076",
+    "s114-optometry-exam106-u09-opt-q0014",
+    "s114-optometry-exam109-u09-opt-q0260",
+    "s114-optometry-exam109-u09-opt-q0272"
+   ]
+  },
+  {
+   "id": "opt-t085",
+   "name": "Hofstetter 最小調節幅度：反推年齡",
+   "qids": [
+    "s114-optometry-exam108-u09-opt-q0192",
+    "s114-optometry-exam107-u09-opt-q0125"
+   ]
+  },
+  {
+   "id": "opt-t086",
+   "name": "Hofstetter 平均調節幅度：由年齡求",
+   "qids": [
+    "s114-optometry-exam109-u09-opt-q0222",
+    "s114-optometry-exam113-u09-opt-q0426",
+    "s114-optometry-exam108-u09-opt-q0217"
+   ]
+  },
+  {
+   "id": "opt-t087",
+   "name": "Hofstetter 最小值保留一半：求試驗性 ADD",
+   "qids": [
+    "s114-optometry-exam108-u09-opt-q0153",
+    "s114-optometry-exam110-u09-opt-q0321"
+   ]
+  },
+  {
+   "id": "opt-t088",
+   "name": "保留一半調節幅度：由調節幅度與工作距離求暫定 ADD",
+   "qids": [
+    "s114-optometry-exam108-u09-opt-q0165",
+    "s114-optometry-exam109-u09-opt-q0285",
+    "s114-optometry-exam109-u09-opt-q0258",
+    "s114-optometry-exam114-u09-opt-q0434",
+    "s114-optometry-exam106-u09-opt-q0075",
+    "s114-optometry-exam107-u09-opt-q0101",
+    "s114-optometry-exam107-u09-opt-q0123"
+   ]
+  },
+  {
+   "id": "opt-t089",
+   "name": "遠視者老花：遠用度數＋半幅 ADD＝近用處方",
+   "qids": [
+    "s114-optometry-exam110-u09-opt-q0322",
+    "s114-optometry-exam112-u09-opt-q0371",
+    "s114-optometry-exam106-u09-opt-q0009"
+   ]
+  },
+  {
+   "id": "opt-t090",
+   "name": "負鏡片法（已矯正或正視）求調節幅度",
+   "qids": [
+    "s114-optometry-exam111-u09-opt-q0362",
+    "s114-optometry-exam109-u09-opt-q0288",
+    "s114-optometry-exam111-u09-opt-q0352"
+   ]
+  },
+  {
+   "id": "opt-t091",
+   "name": "負鏡片法（未矯正遠視）求調節幅度",
+   "qids": [
+    "s114-optometry-exam109-u09-opt-q0286",
+    "s114-optometry-exam112-u09-opt-q0400"
+   ]
+  },
+  {
+   "id": "opt-t092",
+   "name": "正視眼：由調節幅度求近點",
+   "qids": [
+    "s114-optometry-exam108-u09-opt-q0184",
+    "s114-optometry-exam112-u09-opt-q0389"
+   ]
+  },
+  {
+   "id": "opt-t093",
+   "name": "正視或已全矯正：由近點求調節幅度",
+   "qids": [
+    "s114-optometry-exam108-u09-opt-q0208",
+    "s114-optometry-exam112-u09-opt-q0399",
+    "s114-optometry-exam111-u09-opt-q0360"
+   ]
+  },
+  {
+   "id": "opt-t094",
+   "name": "由遠點與近點距離求調節幅度（兩點都在眼前）",
+   "qids": [
+    "s114-optometry-exam106-u09-opt-q0041",
+    "s114-optometry-exam110-u09-opt-q0304"
+   ]
+  },
+  {
+   "id": "opt-t095",
+   "name": "未矯正近視：由度數與近點求調節幅度",
+   "qids": [
+    "s114-optometry-exam113-u09-opt-q0423",
+    "s114-optometry-exam107-u09-opt-q0141",
+    "s114-optometry-exam110-u09-opt-q0313",
+    "s114-optometry-exam109-u09-opt-q0259"
+   ]
+  },
+  {
+   "id": "opt-t096",
+   "name": "未矯正近視：由度數或遠點與調節幅度求近點",
+   "qids": [
+    "s114-optometry-exam107-u09-opt-q0091",
+    "s114-optometry-exam107-u09-opt-q0128",
+    "s114-optometry-exam109-u09-opt-q0228",
+    "s114-optometry-exam106-u09-opt-q0005"
+   ]
+  },
+  {
+   "id": "opt-t097",
+   "name": "未矯正遠視：由度數與調節幅度求近點",
+   "qids": [
+    "s114-optometry-exam111-u09-opt-q0342",
+    "s114-optometry-exam107-u09-opt-q0090"
+   ]
+  },
+  {
+   "id": "opt-t098",
+   "name": "由調節幅度與近點反推遠點",
+   "qids": [
+    "s114-optometry-exam107-u09-opt-q0081",
+    "s114-optometry-exam108-u09-opt-q0191",
+    "s114-optometry-exam111-u09-opt-q0340"
+   ]
+  },
+  {
+   "id": "opt-t099",
+   "name": "近視度數換算遠點距離",
+   "qids": [
+    "s114-optometry-exam106-u09-opt-q0043",
+    "s114-optometry-exam108-u09-opt-q0178",
+    "s114-optometry-exam112-u09-opt-q0388",
+    "s114-optometry-exam106-u09-opt-q0058"
+   ]
+  },
+  {
+   "id": "opt-t100",
+   "name": "由遠點位置（眼前或眼後）換算屈光度",
+   "qids": [
+    "s114-optometry-exam107-u09-opt-q0112",
+    "s114-optometry-exam106-u09-opt-q0034",
+    "s114-optometry-exam106-u09-opt-q0064"
+   ]
+  },
+  {
+   "id": "opt-t101",
+   "name": "眼前加鏡片後的遠點位置",
+   "qids": [
+    "s114-optometry-exam107-u09-opt-q0130",
+    "s114-optometry-exam114-u09-opt-q0441"
+   ]
+  },
+  {
+   "id": "opt-t102",
+   "name": "由戴鏡後的遠點反推原屈光度",
+   "qids": [
+    "s114-optometry-exam107-u09-opt-q0096",
+    "s114-optometry-exam107-u09-opt-q0129"
+   ]
+  },
+  {
+   "id": "opt-t103",
+   "name": "未矯正遠視看近：所需調節力",
+   "qids": [
+    "s114-optometry-exam106-u09-opt-q0031",
+    "s114-optometry-exam112-u09-opt-q0402"
+   ]
+  },
+  {
+   "id": "opt-t104",
+   "name": "戴的鏡片與真實度數不同：修正推近法量到的調節幅度",
+   "qids": [
+    "s114-optometry-exam110-u09-opt-q0295",
+    "s114-optometry-exam107-u09-opt-q0099"
+   ]
+  },
+  {
+   "id": "opt-t105",
+   "name": "完全矯正後不同屈光狀態的近點相同",
+   "qids": [
+    "s114-optometry-exam114-u09-opt-q0440",
+    "s114-optometry-exam109-u09-opt-q0277"
+   ]
+  },
+  {
+   "id": "opt-t106",
+   "name": "同樣遠點 50 cm、近點 8 cm、閱讀 33 cm：判斷是否需要 ADD",
+   "qids": [
+    "s114-optometry-exam110-u09-opt-q0302",
+    "s114-optometry-exam106-u09-opt-q0016"
+   ]
+  },
+  {
+   "id": "opt-t107",
+   "name": "NPC 記錄 a／b 代表破裂點／恢復點",
+   "qids": [
+    "s114-optometry-exam107-u09-opt-q0078",
+    "s114-optometry-exam106-u09-opt-q0067"
+   ]
+  },
+  {
+   "id": "opt-t108",
+   "name": "NPC 不同視標結果不同 → 內聚不足",
+   "qids": [
+    "s114-optometry-exam111-u09-opt-q0326",
+    "s114-optometry-exam107-u09-opt-q0079"
+   ]
+  },
+  {
+   "id": "opt-t109",
+   "name": "NPC 破裂點偏遠 → 內聚不足",
+   "qids": [
+    "s114-optometry-exam107-u09-opt-q0138",
+    "s114-optometry-exam106-u09-opt-q0032"
+   ]
+  },
+  {
+   "id": "opt-t110",
+   "name": "看近調節時懸韌帶是放鬆（不是收縮）",
+   "qids": [
+    "s114-optometry-exam112-u09-opt-q0364",
+    "s114-optometry-exam110-u09-opt-q0303",
+    "s114-optometry-exam113-u09-opt-q0413",
+    "s114-optometry-exam106-u09-opt-q0033",
+    "s114-optometry-exam111-u09-opt-q0339"
+   ]
+  },
+  {
+   "id": "opt-t111",
+   "name": "遠點定義：調節放鬆時最遠清楚點",
+   "qids": [
+    "s114-optometry-exam109-u09-opt-q0249",
+    "s114-optometry-exam110-u09-opt-q0311"
+   ]
+  },
+  {
+   "id": "opt-t112",
+   "name": "遠點與黃斑中央凹為共軛點",
+   "qids": [
+    "s114-optometry-exam106-u09-opt-q0017",
+    "s114-optometry-exam109-u09-opt-q0270"
+   ]
+  },
+  {
+   "id": "opt-t113",
+   "name": "60 歲左右調節幅度約 0.5～1 D",
+   "qids": [
+    "s114-optometry-exam113-u09-opt-q0424",
+    "s114-optometry-exam108-u09-opt-q0163"
+   ]
+  },
+  {
+   "id": "opt-t114",
+   "name": "角膜 K 值換算曲率半徑",
+   "qids": [
+    "s114-optometry-exam108-u06-opt-q0157",
+    "s114-optometry-exam106-u06-opt-q0011"
+   ]
+  },
+  {
+   "id": "opt-t115",
+   "name": "角膜曲率半徑換算 K 值",
+   "qids": [
+    "s114-optometry-exam109-u06-opt-q0240",
+    "s114-optometry-exam108-u06-opt-q0187"
+   ]
+  },
+  {
+   "id": "opt-t116",
+   "name": "K 值寫成角膜散光（負柱鏡度數與軸度）",
+   "qids": [
+    "s114-optometry-exam107-u06-opt-q0140",
+    "s114-optometry-exam110-u06-opt-q0317",
+    "s114-optometry-exam109-u06-opt-q0250"
+   ]
+  },
+  {
+   "id": "opt-t117",
+   "name": "由角膜曲率半徑判斷順規／逆規",
+   "qids": [
+    "s114-optometry-exam112-u06-opt-q0398",
+    "s114-optometry-exam113-u06-opt-q0419",
+    "s114-optometry-exam108-u06-opt-q0210",
+    "s114-optometry-exam106-u06-opt-q0003"
+   ]
+  },
+  {
+   "id": "opt-t118",
+   "name": "角膜半徑差 0.1 mm ≈ 0.50 D 散光",
+   "qids": [
+    "s114-optometry-exam106-u06-opt-q0020",
+    "s114-optometry-exam110-u06-opt-q0310",
+    "s114-optometry-exam110-u06-opt-q0296"
+   ]
+  },
+  {
+   "id": "opt-t119",
+   "name": "K 值主經線在斜向 → 斜散光",
+   "qids": [
+    "s114-optometry-exam109-u06-opt-q0252",
+    "s114-optometry-exam106-u06-opt-q0056"
+   ]
+  },
+  {
+   "id": "opt-t120",
+   "name": "Javal 法則：由角膜散光預測屈光散光",
+   "qids": [
+    "s114-optometry-exam113-u06-opt-q0409",
+    "s114-optometry-exam109-u06-opt-q0239"
+   ]
+  },
+  {
+   "id": "opt-t121",
+   "name": "殘餘散光＝全眼散光－角膜散光",
+   "qids": [
+    "s114-optometry-exam111-u06-opt-q0350",
+    "s114-optometry-exam110-u06-opt-q0309",
+    "s114-optometry-exam108-u06-opt-q0204",
+    "s114-optometry-exam106-u06-opt-q0061",
+    "s114-optometry-exam109-u06-opt-q0268"
+   ]
+  },
+  {
+   "id": "opt-t122",
+   "name": "由眼鏡處方反推角膜哪個方向較平（散光全來自角膜）",
+   "qids": [
+    "s114-optometry-exam109-u06-opt-q0223",
+    "s114-optometry-exam106-u06-opt-q0004"
+   ]
+  },
+  {
+   "id": "opt-t123",
+   "name": "傳統角膜弧度儀量測中央約 3 mm 範圍",
+   "qids": [
+    "s114-optometry-exam113-u06-opt-q0416",
+    "s114-optometry-exam107-u06-opt-q0135",
+    "s114-optometry-exam110-u06-opt-q0305"
+   ]
+  },
+  {
+   "id": "opt-t124",
+   "name": "雙眼平衡的目的是讓兩眼調節平衡",
+   "qids": [
+    "optom2-exam-u4-106-st-44",
+    "optom2-exam-u4-109-st-40",
+    "optom2-exam-u4-106-vh-24",
+    "optom2-exam-u4-107-vh-30"
+   ]
+  },
+  {
+   "id": "opt-t125",
+   "name": "哪一項不是雙眼平衡的目的（斜位矯正量）",
+   "qids": [
+    "optom2-exam-u4-107-vh-1",
+    "optom2-exam-u4-114-vh-21"
+   ]
+  },
+  {
+   "id": "opt-t126",
+   "name": "兩眼最佳視力不等：用稜鏡分離紅綠法平衡",
+   "qids": [
+    "optom2-exam-u4-107-sp-9",
+    "optom2-exam-u4-109-vh-2",
+    "optom2-exam-u4-114-vh-23",
+    "optom2-exam-u4-111-sp-40"
+   ]
+  },
+  {
+   "id": "opt-t127",
+   "name": "稜鏡分離平衡：上／下影像較清楚 → 哪一眼加 +0.25",
+   "qids": [
+    "optom2-exam-u4-109-sp-39",
+    "optom2-exam-u4-109-st-34",
+    "optom2-exam-u4-107-vh-36"
+   ]
+  },
+  {
+   "id": "opt-t128",
+   "name": "沒有融像刺激的平衡法：交替遮蓋與垂直稜鏡分離",
+   "qids": [
+    "optom2-exam-u4-107-vh-40",
+    "optom2-exam-u4-111-sp-37"
+   ]
+  },
+  {
+   "id": "opt-t129",
+   "name": "瞳孔光反射不經過外側膝狀體與視覺皮質",
+   "qids": [
+    "s114-optometry-exam112-u07-opt-q0382",
+    "s114-optometry-exam108-u07-opt-q0148",
+    "s114-optometry-exam110-u07-opt-q0289"
+   ]
+  },
+  {
+   "id": "opt-t130",
+   "name": "瞳孔光反射相關腦神經：第二對與第三對",
+   "qids": [
+    "s114-optometry-exam109-u07-opt-q0218",
+    "s114-optometry-exam107-u07-opt-q0127"
+   ]
+  },
+  {
+   "id": "opt-t131",
+   "name": "瞳孔光反射路徑的先後順序",
+   "qids": [
+    "s114-optometry-exam111-u07-opt-q0324",
+    "s114-optometry-exam108-u07-opt-q0197"
+   ]
+  },
+  {
+   "id": "opt-t132",
+   "name": "RAPD 用手電筒搖擺測試檢查",
+   "qids": [
+    "s114-optometry-exam111-u07-opt-q0327",
+    "s114-optometry-exam108-u07-opt-q0209"
+   ]
+  },
+  {
+   "id": "opt-t133",
+   "name": "縮瞳肌由動眼神經（第三對）支配",
+   "qids": [
+    "s114-optometry-exam107-u07-opt-q0107",
+    "s114-optometry-exam107-u07-opt-q0095"
+   ]
+  },
+  {
+   "id": "opt-t134",
+   "name": "近反射三聯：內聚、縮瞳、調節",
+   "qids": [
+    "s114-optometry-exam106-u07-opt-q0007",
+    "s114-optometry-exam114-u09-opt-q0427",
+    "s114-optometry-exam109-u09-opt-q0275"
+   ]
+  },
+  {
+   "id": "opt-t135",
+   "name": "正常視野範圍：顳側＞下方＞鼻側、上方",
+   "qids": [
+    "optom2-exam-u3-110-sp-11",
+    "optom2-exam-u3-109-lt-45"
+   ]
+  },
+  {
+   "id": "opt-t136",
+   "name": "視交叉（腦下垂體腫瘤）→ 雙顳側偏盲",
+   "qids": [
+    "optom2-exam-u3-106-lt-35",
+    "optom2-exam-u3-113-lh-43"
+   ]
+  },
+  {
+   "id": "opt-t137",
+   "name": "檢影接近中和點時反射光變快、變亮、變寬",
+   "qids": [
+    "s114-optometry-exam106-u03-sp-rf-29",
+    "s114-optometry-exam106-u03-st-rf-9"
+   ]
+  },
+  {
+   "id": "opt-t138",
+   "name": "手動中和：負透鏡移動時影像順動",
+   "qids": [
+    "s114-optometry-exam107-u03-st-sg-45",
+    "s114-optometry-exam110-u03-sp-sg-47"
+   ]
+  },
+  {
+   "id": "opt-t139",
+   "name": "色覺異常最不影響立體視",
+   "qids": [
+    "s114-optometry-exam109-u08-opt-q0278",
+    "s114-optometry-exam107-u08-opt-q0120"
+   ]
+  },
+  {
+   "id": "opt-t140",
+   "name": "不用戴分離眼鏡的立體視測試：Lang、Frisby",
+   "qids": [
+    "s114-optometry-exam112-u08-opt-q0390",
+    "s114-optometry-exam111-u08-opt-q0333"
+   ]
+  },
+  {
+   "id": "opt-t141",
+   "name": "單眼線索最少的立體視測試：隨機亂點（TNO）",
+   "qids": [
+    "s114-optometry-exam111-u08-opt-q0332",
+    "s114-optometry-exam112-u08-opt-q0391"
+   ]
+  }
+ ]
+}

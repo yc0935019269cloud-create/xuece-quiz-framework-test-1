@@ -163,12 +163,13 @@ class Run {
     const pref = s.cfg.pref || 'rand';
     // 預設：先從「沒作答過＋錯題」裡隨機抽（錯題機率約 3 倍），這兩種都出完才出寫對過的題
     // 同一部位（同名構造在不同圖）已經答過的，權重降成 0.3，讓完全沒答過的部位先出
-    if (pref === 'smart') {
-      const seen = Store.partsAnswered(), w = cands.map(q => Store.smartWeight(q.id, seen)), tot = w.reduce((a, b) => a + b, 0);
-      if (tot > 0) { let r = Math.random() * tot, k = 0; while (k < w.length - 1 && (r -= w[k]) > 0) k++; if (!w[k]) k = w.reduce((m, x, i) => (x ? i : m), 0); cands = [cands[k]]; }
-    }
+    // 未刷過題型優先：同題型（只換數字的歷年題）已經刷過的題目權重 ×0.15（Store.typeFactor）
+    const seenT = s.cfg.patFirst ? Store.typesAnswered() : null, tf = q => seenT ? Store.typeFactor(q.id, seenT) : 1;
+    const pickW = w => { const tot = w.reduce((a, b) => a + b, 0); if (tot <= 0) return; let r = Math.random() * tot, k = 0; while (k < w.length - 1 && (r -= w[k]) > 0) k++; if (!w[k]) k = w.reduce((m, x, i) => (x ? i : m), 0); cands = [cands[k]]; };
+    if (pref === 'smart') { const seen = Store.partsAnswered(); pickW(cands.map(q => Store.smartWeight(q.id, seen) * tf(q))); }
     if (pref === 'new') { const c2 = cands.filter(q => !Store.qs[q.id]?.a); if (c2.length && U.chance(0.8)) cands = c2; }
     if (pref === 'wrong') { const c2 = cands.filter(q => Store.wrong[q.id] && !Store.wrong[q.id].done || (Store.qs[q.id]?.a && !Store.qs[q.id].last)); if (c2.length && U.chance(0.7)) cands = c2; }
+    if (seenT && pref !== 'smart' && cands.length > 1) pickW(cands.map(tf));
     // 題組盡量從第一題開始
     let q = U.pick(cands);
     if (q.group) { const first = cands.filter(x => x.group === q.group).sort((a, b) => a.n - b.n)[0]; if (first) q = first; }

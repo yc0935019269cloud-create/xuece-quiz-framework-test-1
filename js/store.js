@@ -117,6 +117,7 @@ const Store = (() => {
       if (wrong[qid].streak >= 2) { wrong[qid].done = true; }
     }
     saveQs(); saveWrong(); save(K.profile, profile);
+    document.dispatchEvent(new CustomEvent('wrongbookchange', { detail: { id: qid } }));   // 題目旁的「錯題本」按鈕跟著更新
   }
   function status(qid) {
     const s = qs[qid];
@@ -140,6 +141,22 @@ const Store = (() => {
     if (!qs[id]?.a) return seen && seen.has(partKey(Q[id])) ? 0.3 : 1;
     return 0;
   }
+  /* 手動加入／移出錯題本（題目旁的「＋ 錯題本」按鈕）。手動加入的 n＝0，之後答對 2 次一樣會畢業。 */
+  const inWrongbook = id => !!(wrong[id] && !wrong[id].done);
+  function setWrongbook(id, on) {
+    if (!Q[id]) return;
+    if (on) { const w = wrong[id] || (wrong[id] = { t: Date.now(), n: 0, streak: 0, done: false }); w.done = false; w.streak = 0; w.t = Date.now(); if (!w.n) w.manual = true; }
+    else delete wrong[id];
+    saveWrong();
+    document.dispatchEvent(new CustomEvent('wrongbookchange', { detail: { id } }));
+  }
+  /* 「題型」：content/patterns 的同題型分組（歷年國考只換數字或小改選項的題）；沒分組的題目各自一型。
+     遠征勾「未刷過題型優先」時，題型已經刷過（同組任何一題作答過）的題目權重降成 0.15；
+     目前還是錯題的不降（錯題本來就要再練）。 */
+  const typeKey = q => { const p = window.QB.patterns && window.QB.patterns[q.id]; return p ? 't:' + p : 'q:' + q.id; };
+  function typesAnswered() { const s = new Set(); Object.keys(qs).forEach(id => { if (qs[id]?.a && Q[id]) s.add(typeKey(Q[id])); }); return s; }
+  const isWrongNow = id => (wrong[id] && !wrong[id].done) || (qs[id]?.a && !qs[id].last);
+  function typeFactor(id, seen) { return Q[id] && !isWrongNow(id) && seen && seen.has(typeKey(Q[id])) ? 0.15 : 1; }
   function filter(opt) {
     // opt: {subjects:[], years:[], exams:[], types:[], status:'all'|'new'|'wrong'|'right'|'unmastered'|'wrongbook', search, ids}
     let list = window.QB.questions;
@@ -252,7 +269,7 @@ const Store = (() => {
   return {
     get profile() { return profile; }, get qs() { return qs; }, get wrong() { return wrong; }, get settings() { return settings; }, get favorites() { return favorites; },
     isFavorite, setFavorite, setFavoriteFolders, createFavoriteFolder, renameFavoriteFolder, deleteFavoriteFolder, favoriteCount,
-    Q, EX, partKey, partsAnswered, smartWeight, reindex, addClassXp, heroTile, heroSkinId, daily, touchStreak, petName, petHTML, record, status, filter, examStats, addGems, addAccXp, accNeed, upg, petXp, saveProfile, saveWrong, saveRun, loadRun,
+    Q, EX, partKey, partsAnswered, smartWeight, typeKey, typesAnswered, typeFactor, inWrongbook, setWrongbook, reindex, addClassXp, heroTile, heroSkinId, daily, touchStreak, petName, petHTML, record, status, filter, examStats, addGems, addAccXp, accNeed, upg, petXp, saveProfile, saveWrong, saveRun, loadRun,
     exportAll, importAll, resetAll, saveSettings,
     onTop(fn) { UI_refreshTop = fn; }
   };

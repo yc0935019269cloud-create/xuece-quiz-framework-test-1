@@ -14,6 +14,7 @@ const FAV_UI = (() => {
     const names = Store.favorites.folders.filter(f => item?.folders.includes(f.id)).map(f => f.name);
     return `<button class="px-btn small fav-toggle ${saved ? 'gold' : ''}" data-fav-toggle="${U.esc(id)}" aria-pressed="${saved}" aria-label="${saved ? '取消收藏' : '收藏此題'}">${saved ? '★ 已收藏' : '☆ 收藏'}</button>
       <button class="px-btn small" data-fav-folders="${U.esc(id)}">收藏資料夾</button>
+      ${Store.inWrongbook(id) ? `<button class="px-btn small red wb-toggle" data-wrong-toggle="${U.esc(id)}" aria-pressed="true" title="已在錯題本；再按一次移出">✓ 已在錯題本</button>` : `<button class="px-btn small wb-toggle" data-wrong-toggle="${U.esc(id)}" aria-pressed="false" title="把這題放進錯題本，之後用錯題重刷">＋ 加入錯題本</button>`}
       ${saved ? `<span class="fav-label dim small-t" title="${U.esc(names.join('、') || '未分類')}">${U.esc(names.slice(0, 2).join('、') || '未分類')}${names.length > 2 ? ` 等 ${names.length} 個資料夾` : ''}</span>` : ''}`;
   }
   function controls(q) {
@@ -23,13 +24,15 @@ const FAV_UI = (() => {
     for (const w of watchers) if (!w.root.isConnected) watchers.delete(w);
     watchers.add({ root, fn });
   }
-  document.addEventListener('favoriteschange', () => {
-    const active = document.activeElement?.closest('[data-fav-toggle], [data-fav-folders]');
-    const action = active?.hasAttribute('data-fav-toggle') ? 'data-fav-toggle' : 'data-fav-folders', id = active?.getAttribute(action);
+  const refresh = e => {
+    const active = document.activeElement?.closest('[data-fav-toggle], [data-fav-folders], [data-wrong-toggle]');
+    const action = ['data-fav-toggle', 'data-wrong-toggle', 'data-fav-folders'].find(a => active?.hasAttribute(a)), id = active?.getAttribute(action);
     document.querySelectorAll('[data-fav-id]').forEach(el => { el.innerHTML = buttons(el.dataset.favId); });
-    for (const w of watchers) { if (w.root.isConnected) w.fn(); else watchers.delete(w); }
+    if (e.type === 'favoriteschange') for (const w of watchers) { if (w.root.isConnected) w.fn(); else watchers.delete(w); }
     if (id) [...document.querySelectorAll('[' + action + ']')].find(el => el.getAttribute(action) === id)?.focus({ preventScroll: true });
-  });
+  };
+  document.addEventListener('favoriteschange', refresh);
+  document.addEventListener('wrongbookchange', refresh);
   function modal(opt) {
     const onClose = opt.onClose;
     const dlg = U.modal(Object.assign({}, opt, { onClose() { pausedTime(); onClose?.(); } }));
@@ -94,8 +97,9 @@ const FAV_UI = (() => {
     return dlg;
   }
   document.addEventListener('click', e => {
-    const btn = e.target.closest('[data-fav-toggle], [data-fav-folders], [data-fav-manage]');
+    const btn = e.target.closest('[data-fav-toggle], [data-fav-folders], [data-fav-manage], [data-wrong-toggle]');
     if (!btn) return;
+    if (btn.hasAttribute('data-wrong-toggle')) { const id = btn.dataset.wrongToggle, on = !Store.inWrongbook(id); Store.setWrongbook(id, on); U.toast(on ? '已加入錯題本' : '已從錯題本移出'); return; }
     if (btn.hasAttribute('data-fav-toggle')) { const id = btn.dataset.favToggle; Store.setFavorite(id, !Store.isFavorite(id)); }
     else open(btn.dataset.favFolders);
   });
