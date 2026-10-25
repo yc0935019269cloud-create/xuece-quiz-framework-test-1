@@ -195,6 +195,21 @@ const Screens = (() => {
     b.onclick = () => { miss.forEach(([t]) => { state.types.push(t); const c = U.$(`${chipSel} .chip[data-v="${t}"]`); if (c) c.classList.add('on'); }); SFX.play('click'); upd(); };
     cntEl.lastChild.appendChild(b);
   }
+  /* 範圍統計（遠征選題）：刷過＝作答過至少一次；題型＝content/patterns 的同類題分組（沒分組的題目各自一型），
+     同組任何一題作答過就算這個題型刷過（與「未刷過題型優先」用同一個 Store.typeKey） */
+  function scopeStats(list) {
+    const seenT = Store.typesAnswered(), types = new Map(); let done = 0, loose = 0;
+    const P = window.QB.patterns || {};
+    list.forEach(q => { if (Store.qs[q.id]?.a) done++; if (!P[q.id]) loose++; const k = Store.typeKey(q); if (!types.has(k)) types.set(k, seenT.has(k)); });
+    const tDone = [...types.values()].filter(Boolean).length;
+    return { total: list.length, done, todo: list.length - done, types: types.size, tDone, tTodo: types.size - tDone, loose };
+  }
+  const scopeLine = list => {
+    if (!list.length) return '';
+    const s = scopeStats(list);
+    const note = s.loose === s.total ? '（這個範圍還沒有同類題分組，每題各算一型）' : s.loose ? `（其中 ${s.loose} 題還沒有同類題分組，各算一型）` : '';
+    return `<span class="small-t scope-stats" style="display:block;color:var(--text)">已刷 ${s.done} 題・未刷 ${s.todo} 題｜題型 ${s.types} 種：已刷 ${s.tDone}・未刷 ${s.tTodo}${note}</span>`;
+  };
   function bindChips(root, sel, state, key, multi = true, onChange) {
     U.$$(sel + ' .chip', root).forEach(c => c.onclick = () => {
       const v = isNaN(c.dataset.v) || key === 'status' || key === 'count' || key === 'exams' ? c.dataset.v : Number(c.dataset.v);
@@ -511,7 +526,7 @@ const Screens = (() => {
       buttons: [{ label: '出發！', cls: 'gold', close: false, onClick: () => go() }]
     });
     state.order = 'rand';
-    const upd = () => { const n = Store.filter(Object.assign({}, base, { types: state.types, status: state.status })).length; U.$('#cnt', m.el).textContent = `符合條件：${n} 題（將出 ${Math.min(n, Number(state.count))} 題）`; };
+    const upd = () => { const list = Store.filter(Object.assign({}, base, { types: state.types, status: state.status })), n = list.length; U.$('#cnt', m.el).innerHTML = `符合條件：${n} 題（將出 ${Math.min(n, Number(state.count))} 題）${scopeLine(list)}`; };
     bindChips(m.el, '#fc', state, 'count', false, upd);
     bindChips(m.el, '#fs', state, 'status', false, upd);
     bindChips(m.el, '#ft', state, 'types', true, upd);
@@ -541,7 +556,7 @@ const Screens = (() => {
       <p id="cnt" class="gold-t"></p>
       <p class="dim small-t">提示：題數越多，樓層越深、首領越強，獎勵也越多。題本不選＝全部。沒有標準答案的填答／非選題採「揭曉後自評」。</p>
       <div class="row"><button class="px-btn gold big" id="go">出發遠征！</button></div></div>`;
-    const upd = () => { const n = Store.filter(state).filter(q => state.types.includes('open') || q.type !== 'open').length; U.$('#cnt').textContent = `符合條件：${n} 題（將出 ${Math.min(n, Number(state.count))} 題）`; if (!n) typeHint(U.$('#cnt'), state, state, '#ft', upd); };
+    const upd = () => { const list = Store.filter(state).filter(q => state.types.includes('open') || q.type !== 'open'), n = list.length; U.$('#cnt').innerHTML = `符合條件：${n} 題（將出 ${Math.min(n, Number(state.count))} 題）${scopeLine(list)}`; if (!n) typeHint(U.$('#cnt'), state, state, '#ft', upd); };
     const drawSets = setPicker(U.$('#fy'), state, upd);
     bindChips(scr(), '#fsj', state, 'subjects', true, () => { drawSets(); upd(); });
     drawSets();
@@ -1006,8 +1021,8 @@ const Screens = (() => {
       U.$('#bl').innerHTML = effSubj().map(x => `<div class="small-t mb"><b style="color:${C.SUBJECTS[x].color}">${C.SUBJECTS[x].name}</b>：${C.themeOf(x) === 'mix' ? '<span class="dim">綜合主題：首領從所有主題隨機登場</span>' : C.BOSS_DEFS[C.themeOf(x)].map((b, i) => `${i + 1}章 ${b.name}<span class="tag ng">${C.MECHS[b.mech].name}</span>`).join(' ')}</div>`).join('') || '<span class="dim">請選擇科目</span>';
     };
     const upd = () => {
-      const n = Store.filter({ subjects: state.subjects, exams: state.exams, years: state.years, types: state.types, starOnly: state.starOnly }).filter(q => state.types.includes('open') || q.type !== 'open').length;
-      U.$('#cnt').textContent = `題池：${n} 題${state.exams.length ? `（已選 ${state.exams.length} 本題本）` : '（範圍不選＝所選科目全部題本）'}。冒險中會持續抽題、不限題數；首領戰只出該首領科目的題目。`; drawBoss();
+      const list = Store.filter({ subjects: state.subjects, exams: state.exams, years: state.years, types: state.types, starOnly: state.starOnly }).filter(q => state.types.includes('open') || q.type !== 'open'), n = list.length;
+      U.$('#cnt').innerHTML = `題池：${n} 題${state.exams.length ? `（已選 ${state.exams.length} 本題本）` : '（範圍不選＝所選科目全部題本）'}。冒險中會持續抽題、不限題數；首領戰只出該首領科目的題目。${scopeLine(list)}`; drawBoss();
       if (!n) typeHint(U.$('#cnt'), { subjects: state.subjects, exams: state.exams, years: state.years, starOnly: state.starOnly }, state, '#ft', upd);
     };
     const drawSets = setPicker(U.$('#fy'), state, upd);

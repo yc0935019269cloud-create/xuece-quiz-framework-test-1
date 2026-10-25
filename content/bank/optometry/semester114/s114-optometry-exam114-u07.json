@@ -122,6 +122,59 @@
           "examFocus": []
         }
       }
+    },
+    {
+      "n": "sp-rf-18",
+      "type": "single",
+      "stem": "【114 年第二次專技普考・驗光生《驗光學概要》 第 18 題】\n\n瞳孔的近距離反應測試（near response test）主要目的為測量下列那三種反應的聯帶運動（synkinesis）？",
+      "choices": [
+        "眼調節（accommodation）、眼球震顫（nystagmus）、散瞳（pupil dilation）",
+        "開散（divergence）、縮瞳（pupil constriction）、眨眼反射（blinking reflex）",
+        "眼球震顫、開散、散瞳",
+        "縮瞳、眼調節、內聚（convergence）"
+      ],
+      "answer": "D",
+      "explain": [
+        "**考點**：看近時的**近反應三聯**＝調節、內聚、縮瞳（D）。",
+        "- 眼球震顫、開散、散瞳、眨眼都不屬於近反應。",
+        "",
+        "**出處**：114 年第二次專技普考・驗光生《驗光學概要》 第 18 題。"
+      ],
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光生普考｜驗光學概要"
+      ],
+      "level": 1,
+      "source_year": "114",
+      "source_number": "18",
+      "source_subject": "驗光生普考｜驗光學概要"
+    },
+    {
+      "n": "vh-op-11",
+      "type": "single",
+      "stem": "【114 年第二次專技高考・驗光師《視光學》 第 11 題】\n\n對於瞳孔檢查中，下列何者錯誤？",
+      "choices": [
+        "亮室瞳孔大小約為1.5～4.0 公厘",
+        "暗室瞳孔大小約為3.0～8.0 公厘",
+        "相對性傳入瞳孔檢查中（swinging flashlight test or afferent pupillary defect test）會出現先收縮後一直放大的現象",
+        "近（調節）反應瞳孔檢查中，看近物時瞳孔應該出現收縮的現象"
+      ],
+      "answer": "C",
+      "explain": [
+        "**考點**：瞳孔大小參考值與搖擺手電筒測試。",
+        "- A、B ✓：亮室約 1.5～4 mm、暗室約 3～8 mm（參考值）；D ✓ 看近時瞳孔縮小。",
+        "- C ✗：正常時燈光移到另一眼，瞳孔維持收縮（最多輕微回彈）；RAPD 是燈移到患眼時兩眼瞳孔**立即放大**。「先收縮後一直放大」不是正確描述。",
+        "",
+        "**出處**：114 年第二次專技高考・驗光師《視光學》 第 11 題。"
+      ],
+      "tags": [
+        "瞳孔反應：光反射、RAPD 與 Horner syndrome",
+        "驗光師高考｜視光學"
+      ],
+      "level": 2,
+      "source_year": "114",
+      "source_number": "11",
+      "source_subject": "驗光師高考｜視光學"
     }
   ]
 }

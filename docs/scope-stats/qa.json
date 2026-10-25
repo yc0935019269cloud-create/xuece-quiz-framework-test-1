@@ -1,0 +1,162 @@
+{
+ "at": "2026-10-25T18:08:23.282Z",
+ "pass": 17,
+ "total": 17,
+ "results": [
+  {
+   "name": "[1100] 自由遠征一打開就顯示已刷／未刷與題型",
+   "pass": true,
+   "extra": "符合條件：4015 題（將出 20 題）已刷 0 題・未刷 4015 題｜題型 3727 種：已刷 0・未刷 3727（其中 3586 題還沒有同類題分組，各算一型）"
+  },
+  {
+   "name": "[1100] 只選一本題本：題數、已刷、題型數與 Store 計算一致",
+   "pass": true,
+   "extra": {
+    "t1": "符合條件：23 題（將出 20 題）已刷 0 題・未刷 23 題｜題型 18 種：已刷 0・未刷 18（其中 6 題還沒有同類題分組，各算一型）",
+    "expect": {
+     "n": 23,
+     "done": 0,
+     "types": 18,
+     "tDone": 0,
+     "ids": [
+      "s114-optometry-exam108-u04-opt-q0155",
+      "s114-optometry-exam108-u04-opt-q0156",
+      "s114-optometry-exam108-u04-opt-q0160",
+      "s114-optometry-exam108-u04-opt-q0164",
+      "s114-optometry-exam108-u04-opt-q0168",
+      "s114-optometry-exam108-u04-opt-q0169",
+      "s114-optometry-exam108-u04-opt-q0170",
+      "s114-optometry-exam108-u04-opt-q0174",
+      "s114-optometry-exam108-u04-opt-q0175",
+      "s114-optometry-exam108-u04-opt-q0176",
+      "s114-optometry-exam108-u04-opt-q0177",
+      "s114-optometry-exam108-u04-opt-q0179",
+      "s114-optometry-exam108-u04-opt-q0180",
+      "s114-optometry-exam108-u04-opt-q0181",
+      "s114-optometry-exam108-u04-opt-q0183",
+      "s114-optometry-exam108-u04-opt-q0189",
+      "s114-optometry-exam108-u04-opt-q0198",
+      "s114-optometry-exam108-u04-opt-q0200",
+      "s114-optometry-exam108-u04-opt-q0201",
+      "s114-optometry-exam108-u04-opt-q0202",
+      "s114-optometry-exam108-u04-opt-q0203",
+      "s114-optometry-exam108-u04-opt-q0207",
+      "s114-optometry-exam108-u04-opt-q0212"
+     ]
+    }
+   }
+  },
+  {
+   "name": "[1100] 作答同類題組的一題：已刷 +1 題、題型已刷 +1 種（同組其他題不重複算）",
+   "pass": true,
+   "extra": {
+    "t2": "符合條件：23 題（將出 20 題）已刷 1 題・未刷 22 題｜題型 18 種：已刷 1・未刷 17（其中 6 題還沒有同類題分組，各算一型）",
+    "grp": {
+     "g": 3
+    }
+   }
+  },
+  {
+   "name": "[1100] 沒有同類題分組的題本：註明每題各算一型",
+   "pass": true,
+   "extra": "符合條件：18 題（將出 18 題）已刷 0 題・未刷 18 題｜題型 18 種：已刷 0・未刷 18（這個範圍還沒有同類題分組，每題各算一型）"
+  },
+  {
+   "name": "[1100] 深淵遠征題池也顯示已刷／未刷與題型",
+   "pass": true
+  },
+  {
+   "name": "[1100] 冒險地圖出發視窗也顯示（找得到視窗時）",
+   "pass": true,
+   "extra": "符合條件：7 題（將出 7 題）已刷 0 題・未刷 7 題｜題型 7 種：已刷 0・未刷 7（這個範圍還沒有同類題分組，每題各算一型）"
+  },
+  {
+   "name": "[1100] 沒有橫向捲動",
+   "pass": true
+  },
+  {
+   "name": "[1100] localStorage 已還原",
+   "pass": true
+  },
+  {
+   "name": "[390] 自由遠征一打開就顯示已刷／未刷與題型",
+   "pass": true,
+   "extra": "符合條件：4015 題（將出 20 題）已刷 0 題・未刷 4015 題｜題型 3727 種：已刷 0・未刷 3727（其中 3586 題還沒有同類題分組，各算一型）"
+  },
+  {
+   "name": "[390] 只選一本題本：題數、已刷、題型數與 Store 計算一致",
+   "pass": true,
+   "extra": {
+    "t1": "符合條件：23 題（將出 20 題）已刷 0 題・未刷 23 題｜題型 18 種：已刷 0・未刷 18（其中 6 題還沒有同類題分組，各算一型）",
+    "expect": {
+     "n": 23,
+     "done": 0,
+     "types": 18,
+     "tDone": 0,
+     "ids": [
+      "s114-optometry-exam108-u04-opt-q0155",
+      "s114-optometry-exam108-u04-opt-q0156",
+      "s114-optometry-exam108-u04-opt-q0160",
+      "s114-optometry-exam108-u04-opt-q0164",
+      "s114-optometry-exam108-u04-opt-q0168",
+      "s114-optometry-exam108-u04-opt-q0169",
+      "s114-optometry-exam108-u04-opt-q0170",
+      "s114-optometry-exam108-u04-opt-q0174",
+      "s114-optometry-exam108-u04-opt-q0175",
+      "s114-optometry-exam108-u04-opt-q0176",
+      "s114-optometry-exam108-u04-opt-q0177",
+      "s114-optometry-exam108-u04-opt-q0179",
+      "s114-optometry-exam108-u04-opt-q0180",
+      "s114-optometry-exam108-u04-opt-q0181",
+      "s114-optometry-exam108-u04-opt-q0183",
+      "s114-optometry-exam108-u04-opt-q0189",
+      "s114-optometry-exam108-u04-opt-q0198",
+      "s114-optometry-exam108-u04-opt-q0200",
+      "s114-optometry-exam108-u04-opt-q0201",
+      "s114-optometry-exam108-u04-opt-q0202",
+      "s114-optometry-exam108-u04-opt-q0203",
+      "s114-optometry-exam108-u04-opt-q0207",
+      "s114-optometry-exam108-u04-opt-q0212"
+     ]
+    }
+   }
+  },
+  {
+   "name": "[390] 作答同類題組的一題：已刷 +1 題、題型已刷 +1 種（同組其他題不重複算）",
+   "pass": true,
+   "extra": {
+    "t2": "符合條件：23 題（將出 20 題）已刷 1 題・未刷 22 題｜題型 18 種：已刷 1・未刷 17（其中 6 題還沒有同類題分組，各算一型）",
+    "grp": {
+     "g": 3
+    }
+   }
+  },
+  {
+   "name": "[390] 沒有同類題分組的題本：註明每題各算一型",
+   "pass": true,
+   "extra": "符合條件：18 題（將出 18 題）已刷 0 題・未刷 18 題｜題型 18 種：已刷 0・未刷 18（這個範圍還沒有同類題分組，每題各算一型）"
+  },
+  {
+   "name": "[390] 深淵遠征題池也顯示已刷／未刷與題型",
+   "pass": true
+  },
+  {
+   "name": "[390] 冒險地圖出發視窗也顯示（找得到視窗時）",
+   "pass": true,
+   "extra": "符合條件：7 題（將出 7 題）已刷 0 題・未刷 7 題｜題型 7 種：已刷 0・未刷 7（這個範圍還沒有同類題分組，每題各算一型）"
+  },
+  {
+   "name": "[390] 沒有橫向捲動",
+   "pass": true
+  },
+  {
+   "name": "[390] localStorage 已還原",
+   "pass": true
+  },
+  {
+   "name": "沒有頁面錯誤",
+   "pass": true,
+   "extra": []
+  }
+ ]
+}
