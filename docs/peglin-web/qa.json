@@ -1,0 +1,338 @@
+{
+ "at": "2026-10-25T18:14:37.854Z",
+ "checks": [
+  {
+   "name": "準備頁：科目／題本樹（含年份）／題型／星號／出題方式／同類題／狀態／題數／彈珠數都在",
+   "pass": true,
+   "extra": {
+    "subj": 7,
+    "subjects": 7,
+    "tree": true,
+    "years": true,
+    "types": [
+     "single",
+     "multi",
+     "fill",
+     "open"
+    ],
+    "star": 2,
+    "pref": [
+     "smart",
+     "rand",
+     "new",
+     "wrong"
+    ],
+    "pat": true,
+    "status": 6,
+    "count": 6,
+    "shots": true
+   }
+  },
+  {
+   "name": "題本樹勾選後寫進設定、題數與自由遠征同一套 Store.filter 計算",
+   "pass": true,
+   "extra": {
+    "exams": 157,
+    "types": [
+     "single"
+    ],
+    "expect": 641,
+    "text": "符合條件：641 題（每輪出 20 題）"
+   }
+  },
+  {
+   "name": "網頁版偵測到可用（GitHub Pages 有回應），按鈕可按、沒有顯示「不能用」說明",
+   "pass": true
+  },
+  {
+   "name": "GitHub Pages 以外不自動探測本機啟動器的說明存在（file:// 會自動探測）",
+   "pass": true
+  },
+  {
+   "name": "開啟後覆蓋整個畫面、iframe 載入外框頁、第一題立刻出現、遊戲被鎖住",
+   "pass": true,
+   "extra": {
+    "credits": 0,
+    "pts": 0,
+    "fired": 0,
+    "graded": 0,
+    "right": 0,
+    "reads": 0,
+    "lessons": 0,
+    "panel": true,
+    "ready": false,
+    "armed": false,
+    "error": "",
+    "item": {
+     "kind": "bank",
+     "id": "eye115-exam-ans-reflex-107-309",
+     "key": "A",
+     "type": "single"
+    }
+   }
+  },
+  {
+   "name": "答對：Store.record 寫進作答紀錄、彈珠 +2、按鈕變「去發射」",
+   "pass": true,
+   "extra": {
+    "g": {
+     "credits": 2,
+     "pts": 0,
+     "fired": 0,
+     "graded": 1,
+     "right": 1,
+     "reads": 0,
+     "lessons": 0,
+     "panel": true,
+     "ready": false,
+     "armed": false,
+     "error": "",
+     "item": {
+      "kind": "bank",
+      "id": "eye115-exam-ans-reflex-107-309",
+      "key": "A",
+      "type": "single"
+     }
+    },
+    "rec1": {
+     "a": 1,
+     "c": 1,
+     "w": 0,
+     "last": 1,
+     "t": 1792952080466
+    }
+   }
+  },
+  {
+   "name": "去發射：面板收起、遮罩拿掉（還有彈珠）",
+   "pass": true
+  },
+  {
+   "name": "遊戲在 iframe 內載入完成、發射偵測就緒（發射音效已解碼）",
+   "pass": true,
+   "extra": {
+    "credits": 2,
+    "pts": 0,
+    "fired": 0,
+    "graded": 1,
+    "right": 1,
+    "reads": 0,
+    "lessons": 0,
+    "panel": false,
+    "ready": true,
+    "armed": true,
+    "error": "",
+    "item": null
+   }
+  },
+  {
+   "name": "遊戲自己的載入完成、標題畫面出現（Logo 白色像素比例）",
+   "pass": true,
+   "extra": {
+    "title": 0.44356944444444446
+   }
+  },
+  {
+   "name": "戰鬥中實際發射：每次發射偵測一顆、給的 2 顆用完、遊戲被蓋住並鎖住輸入",
+   "pass": true,
+   "extra": {
+    "g": {
+     "credits": 0,
+     "pts": 0,
+     "fired": 2,
+     "graded": 1,
+     "right": 1,
+     "reads": 0,
+     "lessons": 0,
+     "panel": false,
+     "ready": true,
+     "armed": true,
+     "error": "",
+     "item": null
+    },
+    "locked": true,
+    "firedLog": [
+     0,
+     0,
+     1
+    ],
+    "firedAtStart": 0
+   }
+  },
+  {
+   "name": "鎖住時在遊戲裡按空白鍵：被擋下並打開下一題",
+   "pass": true,
+   "extra": {
+    "credits": 0,
+    "pts": 0,
+    "fired": 2,
+    "graded": 1,
+    "right": 1,
+    "reads": 0,
+    "lessons": 0,
+    "panel": true,
+    "ready": true,
+    "armed": true,
+    "error": "",
+    "item": {
+     "kind": "bank",
+     "id": "ans-pathways-q-6",
+     "key": "D",
+     "type": "single"
+    }
+   }
+  },
+  {
+   "name": "答錯：進錯題本、預設「答錯也算數」仍給 2 顆、這題排到後面再出一次",
+   "pass": true,
+   "extra": {
+    "wb": true,
+    "g2": {
+     "credits": 2,
+     "pts": 0,
+     "fired": 2,
+     "graded": 2,
+     "right": 1,
+     "reads": 0,
+     "lessons": 0,
+     "panel": true,
+     "ready": true,
+     "armed": true,
+     "error": "",
+     "item": {
+      "kind": "bank",
+      "id": "ans-pathways-q-6",
+      "key": "D",
+      "type": "single"
+     }
+    },
+    "t0": 20
+   }
+  },
+  {
+   "name": "彈珠用完：點遊戲畫面被遮罩接住、出下一題，遊戲沒有收到這一下",
+   "pass": true,
+   "extra": {
+    "g": {
+     "credits": 0,
+     "pts": 0,
+     "fired": 4,
+     "graded": 2,
+     "right": 1,
+     "reads": 0,
+     "lessons": 0,
+     "panel": true,
+     "ready": true,
+     "armed": true,
+     "error": "",
+     "item": {
+      "kind": "bank",
+      "id": "ans-reflex-q-10",
+      "key": "C",
+      "type": "single"
+     }
+    },
+    "startsBefore": 182
+   }
+  },
+  {
+   "name": "結束：覆蓋層與遊戲 iframe 移除、跳出這次的摘要",
+   "pass": true
+  },
+  {
+   "name": "測試場次（test: true）：作答不寫進紀錄，但彈珠照算",
+   "pass": true
+  },
+  {
+   "name": "找到可自動走完的課（閱讀卡＋單選／是非／多選檢核＋固定題號題庫題）",
+   "pass": true,
+   "extra": {
+    "p": "s114-eye-ans-retina-layers-p1",
+    "l": "ten-layers-1",
+    "title": "十層不是死背：把它分成四種東西",
+    "n": 13
+   }
+  },
+  {
+   "name": "學習準備頁：選好的課、彈珠設定（每完成 2 步 1 顆）",
+   "pass": true
+  },
+  {
+   "name": "一課走完：applyPeglin 記成完成（done、星等）、檢核答錯進複習盒、每 2 步換 1 顆",
+   "pass": true,
+   "extra": {
+    "g": {
+     "credits": 8,
+     "pts": 0,
+     "fired": 0,
+     "graded": 7,
+     "right": 6,
+     "reads": 9,
+     "lessons": 1,
+     "panel": true,
+     "ready": true,
+     "armed": false,
+     "error": "",
+     "item": {
+      "kind": "check",
+      "id": "cb12dad1c",
+      "ckind": "single",
+      "answer": 0
+     }
+    },
+    "learnD": {
+     "les": {
+      "i": 0,
+      "done": 1,
+      "best": 2,
+      "last": 1792952227005,
+      "run": null
+     },
+     "rev": 5
+    },
+    "steps": 15
+   }
+  },
+  {
+   "name": "網頁版連不到（也沒有本機啟動器）：顯示原本的說明、開始按鈕停用",
+   "pass": true
+  },
+  {
+   "name": "手機寬度準備頁沒有橫向捲動",
+   "pass": true
+  },
+  {
+   "name": "手機：題目面板滿版貼底、高度不超過 8 成、狀態列不擠爆",
+   "pass": true,
+   "extra": {
+    "left": 0,
+    "right": 390,
+    "bottom": 844,
+    "h": 529.6875,
+    "bar": 68.59375,
+    "vw": 390,
+    "vh": 844,
+    "overflow": 0
+   }
+  }
+ ],
+ "issues": [],
+ "shots": [
+  "output\\playwright\\peglin-web-setup-desktop.png",
+  "output\\playwright\\peglin-web-answered.png",
+  "output\\playwright\\peglin-web-game-title.png",
+  "output\\playwright\\peglin-web-game-map.png",
+  "output\\playwright\\peglin-web-game-battle.png",
+  "output\\playwright\\peglin-web-out-of-balls.png",
+  "output\\playwright\\peglin-web-wrong-answer.png",
+  "output\\playwright\\peglin-web-summary.png",
+  "output\\playwright\\peglin-web-learn.png",
+  "output\\playwright\\peglin-web-no-web.png",
+  "output\\playwright\\peglin-web-setup-mobile.png",
+  "output\\playwright\\peglin-web-mobile-panel.png"
+ ],
+ "firedAtStart": 0,
+ "restored": true,
+ "pass": 21,
+ "total": 21
+}

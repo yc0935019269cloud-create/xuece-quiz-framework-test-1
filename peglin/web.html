@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>哥布林彈珠・刷題地牢</title>
+<style>
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #000; }
+#wrap { position: fixed; inset: 0; background: #000; }
+#unity-canvas { display: block; width: 100% !important; height: 100% !important; border: 0; outline: none; touch-action: none; }
+#loading { position: absolute; inset: 0; display: grid; place-content: center; gap: 14px; color: #eee; font: 16px system-ui, sans-serif; text-align: center; pointer-events: none; }
+#loading[hidden], #warning[hidden] { display: none; }
+progress { width: min(240px, 70vw); height: 6px; accent-color: #8fbd68; }
+#warning { position: absolute; top: 16px; left: 16px; right: 16px; color: #fff; background: #5e2020; padding: 12px; font: 14px system-ui, sans-serif; overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<!-- 網頁版彈珠的外框頁：載入 peglinnnnnnn 已部署在 GitHub Pages 的 Unity WebGL 建置（不修改該 repo），
+     並從外面偵測「發射」：所有彈珠共用的發射音效 UI_Tock_02 被播放＝發射一球，透過 postMessage 通知刷題地牢（js/peglin.js）。 -->
+<main id="wrap">
+<canvas id="unity-canvas" tabindex="0" aria-label="哥布林彈珠遊戲"></canvas>
+<div id="loading" role="status"><span id="loading-text">正在載入遊戲…</span><progress id="progress" max="1" value="0" aria-label="遊戲載入進度"></progress></div>
+<div id="warning" role="alert" hidden></div>
+</main>
+<script>
+(() => {
+  const DEFAULT_BASE = 'https://yc0935019269cloud-create.github.io/peglinnnnnnn/';
+  // 只接受自己的 GitHub Pages 與本機測試伺服器（避免網址參數被拿來載入別人的程式）
+  const ALLOW = /^(https:\/\/yc0935019269cloud-create\.github\.io\/|https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?\/)/;
+  const qs = new URLSearchParams(location.search);
+  let base = qs.get('base') || DEFAULT_BASE; if (!base.endsWith('/')) base += '/';
+  const debug = qs.get('debug') === '1';
+  const canvas = document.getElementById('unity-canvas'), loading = document.getElementById('loading');
+  const post = msg => { if (parent !== window) parent.postMessage(Object.assign({ pgw: 1 }, msg), '*'); };
+  function fail(message) {
+    const w = document.getElementById('warning'); w.textContent = message; w.hidden = false; loading.hidden = true;
+    post({ type: 'error', message });
+  }
+  if (!ALLOW.test(base)) { fail('遊戲網址不在允許清單：' + base); return; }
+
+  /* ---------- 發射偵測 ----------
+     Unity WebGL 的短音效（< 128 KB）一律經 decodeAudioData 解碼成 AudioBuffer，播放時 createBufferSource().start()。
+     解碼前先記下壓縮資料的指紋（長度＋FNV-1a），解碼後把 AudioBuffer 對應到指紋；start() 時查表。
+     發射音效 UI_Tock_02（雙聲道 73 ms，所有彈珠共用；整個遊戲沒有其他音效接近這個長度）。
+     多重彈珠一次會播好幾聲，1.2 秒內算同一球。 */
+  // 已知指紋（2026-10-16 建置 625a722 實測）；長度判斷是備援，對方重建後指紋變了也抓得到
+  const LAUNCH_FP = new Set(['1602:4f96324f'].concat(qs.getAll('fp')));
+  let armed = false;
+  // WebGL 版音效是 AAC，解碼長度補到 1024 樣本的倍數：UI_Tock_02（3224 樣本）→ 4096 樣本≈0.0929 秒；
+  // 最接近的其他音效 cursor_style_2（2466 樣本）→ 3072 樣本≈0.0697 秒，所以區間只收 4 個 AAC 音框
+  const launchLike = buf => buf.numberOfChannels === 2 && buf.duration > 0.082 && buf.duration < 0.098;
+  const tags = new WeakMap(), decoded = [], starts = [];
+  function fingerprint(data) {
+    const u = new Uint8Array(data.buffer || data, data.byteOffset || 0, data.byteLength); let h = 0x811c9dc5;
+    for (let i = 0, n = Math.min(u.length, 65536); i < n; i++) { h ^= u[i]; h = Math.imul(h, 16777619); }
+    return u.length + ':' + (h >>> 0).toString(16);
+  }
+  const AC = window.AudioContext || window.webkitAudioContext;
+  const ctxProto = AC && (window.BaseAudioContext || AC).prototype;
+  if (ctxProto && ctxProto.decodeAudioData) {
+    const decode = ctxProto.decodeAudioData;
+    ctxProto.decodeAudioData = function (data, ok, err) {
+      let fp = ''; try { fp = fingerprint(data); } catch (e) {}
+      const mark = buf => {
+        try {
+          if (!buf) return buf;
+          const launch = LAUNCH_FP.has(fp) || launchLike(buf); tags.set(buf, { fp, launch });
+          if (debug) decoded.push({ fp, dur: +buf.duration.toFixed(4), ch: buf.numberOfChannels, launch });
+          if (launch && !armed) { armed = true; post({ type: 'armed', fp }); }
+        } catch (e) {}
+        return buf;
+      };
+      const p = decode.call(this, data, ok ? buf => { mark(buf); ok(buf); } : undefined, err);
+      return p && p.then ? p.then(buf => ok ? buf : mark(buf)) : p;
+    };
+  }
+  let lastShot = 0, shots = 0, raw = 0;
+  const srcProto = window.AudioBufferSourceNode && AudioBufferSourceNode.prototype;
+  if (srcProto) {
+    const start = srcProto.start;
+    srcProto.start = function () {
+      try {
+        const t = this.buffer && tags.get(this.buffer);
+        if (debug && t) starts.push({ fp: t.fp, at: Math.round(performance.now()) });
+        if (t && t.launch) {
+          raw++;
+          const now = performance.now();
+          if (now - lastShot > 1200) { shots++; post({ type: 'shot', shots }); }
+          lastShot = now;
+        }
+      } catch (e) {}
+      return start.apply(this, arguments);
+    };
+  }
+
+  /* ---------- 答題期間鎖住遊戲輸入（刷題地牢也會用遮罩蓋住；這裡再擋鍵盤，避免焦點留在遊戲裡按空白鍵發射） ---------- */
+  let locked = false;
+  const BLOCK = ['keydown', 'keyup', 'keypress', 'pointerdown', 'pointerup', 'mousedown', 'mouseup', 'click', 'touchstart', 'touchend', 'wheel'];
+  BLOCK.forEach(type => window.addEventListener(type, e => {
+    if (!locked) return;
+    e.stopImmediatePropagation(); if (e.cancelable) e.preventDefault();
+    if (type === 'keydown' || type === 'pointerdown' || type === 'touchstart') post({ type: 'blocked' });
+  }, { capture: true, passive: false }));
+
+  let instance = null;
+  window.addEventListener('message', e => {
+    const d = e.data; if (e.source !== parent || !d || d.pgw !== 1) return;
+    if (d.type === 'lock') { locked = !!d.on; if (locked) { try { canvas.blur(); } catch (er) {} } else canvas.focus({ preventScroll: true }); }
+    else if (d.type === 'quit' && instance) instance.Quit().catch(() => {});
+  });
+  if (debug) window.__pgw = { decoded, starts, get shots() { return shots; }, get raw() { return raw; }, get locked() { return locked; }, get instance() { return instance; }, base };
+
+  /* ---------- 載入：設定取自對方 index.html（檔名改了也跟得上），失敗就用目前已知的檔名 ---------- */
+  async function readConfig() {
+    const cfg = { dataUrl: 'Build/WebRelease.data.unityweb', frameworkUrl: 'Build/WebRelease.framework.js.unityweb', codeUrl: 'Build/WebRelease.wasm.unityweb', streamingAssetsUrl: 'StreamingAssets', companyName: 'LocalPeglinResearch', productName: 'PeglinBrowserLab', productVersion: '', loader: 'Build/WebRelease.loader.js', extra: [] };
+    try {
+      const html = await (await fetch(base + 'index.html', { cache: 'no-store' })).text();
+      for (const k of ['dataUrl', 'frameworkUrl', 'codeUrl', 'streamingAssetsUrl', 'companyName', 'productName', 'productVersion']) { const m = html.match(new RegExp(k + '\\s*:\\s*"([^"]+)"')); if (m) cfg[k] = m[1]; }
+      const lm = html.match(/["']([^"']*\.loader\.js)["']/); if (lm) cfg.loader = lm[1];
+      cfg.extra = [...html.matchAll(/<script\s+src="([^"]+)"/g)].map(m => m[1]).filter(s => !/loader\.js/.test(s) && /^[\w./-]+(\?[\w=&.-]*)?$/.test(s));
+    } catch (e) {}
+    return cfg;
+  }
+  const loadScript = src => new Promise((resolve, reject) => { const s = document.createElement('script'); s.src = src; s.onload = resolve; s.onerror = () => reject(new Error('無法載入 ' + src)); document.body.appendChild(s); });
+  (async () => {
+    const c = await readConfig();
+    const abs = p => /^https?:/.test(p) ? p : base + p;
+    // 對方 index.html 的 ipad-display.js 會讀全域的 config／canvas／showBanner（iPad Chrome 相容模式），這裡照樣提供
+    window.canvas = canvas;
+    window.showBanner = (message, type) => { if (type === 'error') fail(message); else console.warn(message); };
+    window.config = { arguments: [], dataUrl: abs(c.dataUrl), frameworkUrl: abs(c.frameworkUrl), codeUrl: abs(c.codeUrl), streamingAssetsUrl: abs(c.streamingAssetsUrl), companyName: c.companyName, productName: c.productName, productVersion: c.productVersion, matchWebGLToCanvasSize: true, showBanner: window.showBanner };
+    for (const s of c.extra) { try { await loadScript(abs(s)); } catch (e) {} }
+    try { await loadScript(abs(c.loader)); } catch (e) { fail('遊戲載入失敗，請檢查網路後重新整理。'); return; }
+    post({ type: 'loading' });
+    try {
+      instance = await createUnityInstance(canvas, window.config, v => {
+        document.getElementById('progress').value = v; document.getElementById('loading-text').textContent = '正在載入遊戲… ' + Math.round(v * 100) + '%';
+        post({ type: 'progress', value: v });
+      });
+      loading.hidden = true; post({ type: 'ready', armed });
+    } catch (e) { fail(String(e && e.message || e)); }
+  })();
+})();
+</script>
+</body>
+</html>

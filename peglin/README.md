@@ -1,8 +1,38 @@
-# 彈珠刷題／彈珠學習：Peglin 原版整合
+# 彈珠刷題／彈珠學習：Peglin 整合
 
-在**真正的 Peglin** 戰鬥裡刷題或上課：每次瞄準前先答一題（彈珠刷題）或讀一張卡／做一題檢核（彈珠學習），再自己瞄準發射。
+兩種玩法，營地「⚪ 彈珠（Peglin）」進入後預設用網頁版：
 
-## 架構：題庫在這裡，遊戲本體在 E:\PeglinQuiz
+| | 網頁版（預設） | 本機版 PeglinQuiz |
+|---|---|---|
+| 遊戲 | peglinnnnnnn 部署在 GitHub Pages 的 Unity WebGL 建置（**不修改那個 repo**） | E:\PeglinQuiz 的桌面版＋BepInEx 外掛 |
+| 哪裡能玩 | 任何裝置開這個網站（GitHub Page 或本機資料夾）都能玩，需要網路與 WebGL 2 | 只有裝了啟動器的這台電腦 |
+| 題目在哪 | 遊戲外層的面板（刷題地牢自己的題目／學習卡元件） | 遊戲裡的面板 |
+| 獎懲 | 答題換彈珠：每答（完成）N 題可以發射 M 顆；答錯算不算可選 | 答對傷害加成、答錯扣血 |
+
+## 網頁版：答題換彈珠
+
+```
+js/peglin.js（題目面板、彈珠數、紀錄）
+   │  <iframe src="peglin/web.html">，postMessage 溝通
+   ▼
+peglin/web.html（外框頁）── 載入 https://yc0935019269cloud-create.github.io/peglinnnnnnn/ 的 Build/ 與 StreamingAssets/
+   ├─ 設定（檔名）讀對方 index.html；也載入它的 ipad-display.js（iPad Chrome 相容模式）
+   ├─ 發射偵測：攔 decodeAudioData／AudioBufferSourceNode.start，發射音效 UI_Tock_02 一播放＝發射一顆 → {type:'shot'}
+   └─ 鎖輸入：彈珠用完時擋掉遊戲內的鍵盤／點擊，按了就通知父頁出下一題 → {type:'blocked'}
+```
+
+- **為什麼這樣做**：WebGL 版遊戲是「純 Peglin」，沒有任何出題介面、URL 參數、JS 橋接或 postMessage（只有一個讀瀏覽器語言的 jslib）。不改那個 repo，就只能從外面包一層：題目放在外層，靠音效判斷發射。
+- **發射偵測**：所有彈珠共用的發射音效是 `UI_Tock_02`（331 個彈珠預製物引用同一段；原始 3224 樣本 73 ms）。WebGL 版是 AAC，解碼後補到 4096 樣本≈0.0929 秒、雙聲道；全遊戲 295 段音效沒有其他落在這個長度（最接近的游標音效解碼後 0.0697 秒）。外框頁先比對壓縮資料指紋（`1602:4f96324f`），再用長度區間 0.082～0.098 秒當備援，所以對方重建後指紋變了也抓得到。多重彈珠 1.2 秒內算同一顆。
+- **實測行為**（2026-10-25，對方 main `1cf98a4`、Pages 建置 `625a722`）：戰鬥中每次發射算一顆；戰鬥後「把彈珠打進路口選下一關」也是真的發射，算一顆；開新冒險點第一關時，遊戲有時會自動發射一顆選路線（兩次實測一次有、一次沒有），有的話也會算到。換下一顆彈珠、菜單、教學翻頁、標題畫面的展示彈珠都不會算。
+- **載入兩段**：`createUnityInstance` 完成後，遊戲還要自己預載資源、載入標題場景（畫面先後出現「Loading N%」與綠色進度條；SwiftShader 上要幾十秒），這段時間點遊戲沒有反應。
+- **彈珠用完**：遊戲上蓋一層遮罩（包括地圖、商店、獎勵畫面），點一下出下一題；遊戲裡按鍵也會被外框頁擋下並出題。可以隨時按「📖 答題」先答題存彈珠。
+- **紀錄**：直接寫進這個網頁的進度——刷題 `Store.record`（錯題本、統計，答對 +8 經驗、+1 魂晶，答錯 +2 經驗，與本機版同步規則相同）；學習檢核 `LEARN_UI.applyPeglin({type:'check', ok: 第一次就對})`，整課走完 `applyPeglin({type:'lesson'})`。之後照常雲端同步。`test: true` 的場次不寫紀錄。
+- **範圍**：彈珠刷題的條件和自由遠征相同（科目、`Screens.setPicker` 題本樹與年份、題型、星號、出題順序、同類題、狀態、題數），排序規則與 `screens.js` 的 `prefOrder` 一致；彈珠學習沿用原本的選課樹。
+- **網址**：預設 `https://yc0935019269cloud-create.github.io/peglinnnnnnn/`，可在彈珠頁「⚙ 網頁版遊戲網址」改；只接受自己的 github.io 或 localhost（外框頁也檢查，避免網址參數被拿來載入別人的程式）。
+- **限制**：遊戲本身不知道有題目，所以沒有答對傷害加成、答錯扣血；遊戲音效若被遊戲內設定完全關掉可能偵測不到（未實測）；第一次載入約 30 MB；Peglin 的冒險存檔由遊戲自己存在瀏覽器（與 peglinnnnnnn 網頁本身的存檔分開）。可以點的圖解、互動模擬、字母發音只在學習模式。
+- **測試**：`tools/peglin-web-qa/check.cjs`（headless Edge＋SwiftShader，file:// 開 index.html，實際載入遊戲、等標題畫面出現、開新冒險、打進第一關發射，備份／還原 localStorage）21／21 通過；結果 `docs/peglin-web/qa.json`、截圖 `output/playwright/peglin-web-*.png`。需要網路，整趟約 8 分鐘。沒有實機 iPad／手機實玩測試。
+
+## 本機版架構：題庫在這裡，遊戲本體在 E:\PeglinQuiz
 
 ```
 這個資料夾（或 GitHub Page）的營地頁 js/peglin.js
@@ -16,8 +46,8 @@ E:\PeglinQuiz\Start-PeglinQuiz.exe（本機啟動器，讀 E:\PeglinQuiz\peglin-
 
 - **遊戲本體不會進到這個資料夾**；這裡只放原始碼（`mod-src/`）與建置腳本。
 - **題本取自「你目前開的那個網頁」**：在本機資料夾開就用本機題庫，在 GitHub Page 開就用 GitHub Page 上的題庫與課程。題本和圖片由網頁打包後交給啟動器（`file://` 開啟時圖片改由啟動器從 webRoot 讀）。
-- **別人無法使用**：兩個彈珠模式要呼叫本機 `127.0.0.1:18769`，別人的電腦沒有這個服務，只會看到說明、按鈕停用；啟動器也只接受 `peglin-link.json` 的 `allowOrigins`（你的 GitHub Page）、localhost 與本機檔案的呼叫，其他網站一律 403。
-- GitHub Page 是 https、啟動器是本機 http：Chrome／Edge 第一次可能詢問「允許存取本機網路裝置」，請按允許。GitHub Page 上不會在載入時主動探測本機，只有進入彈珠頁面才會連（避免別人的瀏覽器跳出詢問）。
+- **別台電腦用不了本機版**：要呼叫本機 `127.0.0.1:18769`，別人的電腦沒有這個服務（請用網頁版）；啟動器也只接受 `peglin-link.json` 的 `allowOrigins`（你的 GitHub Page）、localhost 與本機檔案的呼叫，其他網站一律 403。
+- GitHub Page 是 https、啟動器是本機 http：Chrome／Edge 第一次可能詢問「允許存取本機網路裝置」，請按允許。GitHub Page 上不會主動探測本機（連進入彈珠頁面也不會），要用本機版時在側欄「🖥 本機版 PeglinQuiz」按「偵測本機啟動器」；file:// 與 localhost 開啟時照舊自動偵測。網頁版和本機版都連不到時，才顯示原本的說明。
 
 ## 使用
 1. 雙擊 `E:\PeglinQuiz\Start-PeglinQuiz.exe`（右下角系統匣圖示；右鍵可勾「開機時自動啟動（背景）」、開啟紀錄資料夾）。

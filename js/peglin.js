@@ -1,13 +1,15 @@
-/* Peglin 原版整合：彈珠刷題／彈珠學習
- * 網頁（本機資料夾、localhost、或自己的 GitHub Page）→ 本機啟動器 Start-PeglinQuiz.exe（127.0.0.1:18769）
- * → PeglinQuiz 裡的遊戲本體；作答紀錄回流到錯題本、學習模式與統計，並備份到題庫框架資料夾的 peglin/紀錄/。
- * 題本內容一律取自「目前這個網頁」載入的題庫與課程（在 GitHub Page 開就用 GitHub Page 的題庫）。
- * 別台電腦沒有啟動器，所以兩個彈珠模式只會顯示說明、不能啟動。 */
+/* Peglin 整合：彈珠刷題／彈珠學習，兩種玩法
+ * 1. 網頁版（預設，任何裝置都能玩）：peglin/web.html 外框頁載入 peglinnnnnnn 已部署在 GitHub Pages 的 Unity WebGL 建置（不修改那個 repo）。
+ *    遊戲本身沒有出題介面，題目顯示在遊戲外層：答題換彈珠，外框頁偵測發射音效（每發射一顆扣一顆），用完就蓋住遊戲、點一下出下一題。
+ *    作答直接寫進這個網頁的進度（錯題本、學習模式、統計），照常雲端同步。
+ * 2. 本機版：網頁 → 本機啟動器 Start-PeglinQuiz.exe（127.0.0.1:18769）→ PeglinQuiz 裡的遊戲本體（BepInEx 外掛在戰鬥裡出題）；
+ *    作答紀錄回流到錯題本、學習模式與統計，並備份到題庫框架資料夾的 peglin/紀錄/。別台電腦沒有啟動器。
+ * 題目與課程一律取自「目前這個網頁」載入的題庫（在 GitHub Page 開就用 GitHub Page 的題庫）。 */
 const PEGLIN = (() => {
   const base = 'http://127.0.0.1:18769';
   let polling = false, busy = false, bridge = null, probing = null, lastBackup = 0, dirty = false;
   const selfServed = () => location.origin === base;
-  // 在 GitHub Page 上不主動探測本機（避免別人的瀏覽器跳出「存取本機網路」詢問）；進入彈珠頁面才探測
+  // 在 GitHub Page 上不主動探測本機（避免別人的瀏覽器跳出「存取本機網路」詢問）；要用本機版時按「偵測本機啟動器」
   const autoProbe = () => selfServed() || location.protocol === 'file:' || /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
 
   /* ---------- 本機啟動器 ---------- */
@@ -23,7 +25,7 @@ const PEGLIN = (() => {
     })();
     return probing;
   }
-  const NO_BRIDGE = '找不到本機彈珠服務。彈珠刷題／彈珠學習只能在安裝了 PeglinQuiz 的電腦上使用：請先雙擊 E:\\PeglinQuiz\\Start-PeglinQuiz.exe（右下角系統匣可設定開機自動啟動），再重新整理這一頁。';
+  const NO_BRIDGE = '找不到本機彈珠服務。本機版只能在安裝了 PeglinQuiz 的電腦上使用：請先雙擊 E:\\PeglinQuiz\\Start-PeglinQuiz.exe（右下角系統匣可設定開機自動啟動），再重新整理這一頁。';
   async function api(path, data) {
     if (!(await detect())) throw new Error(NO_BRIDGE);
     let r;
@@ -32,7 +34,7 @@ const PEGLIN = (() => {
     const d = await r.json(); if (!r.ok) throw new Error(d.error || '本機服務連線失敗'); return d;
   }
 
-  /* ---------- 作答紀錄同步 ---------- */
+  /* ---------- 作答紀錄同步（本機版） ---------- */
   const doneKey = () => SKEY('peglin-events');
   async function sync() {
     if (busy || !bridge) return; busy = true;
@@ -50,7 +52,7 @@ const PEGLIN = (() => {
       }
       if (n) { localStorage.setItem(doneKey(), JSON.stringify([...done])); App.refreshTop(); dirty = true; if (lessons) U.toast(`彈珠學習：完成 ${lessons} 課，已記進學習模式`); }
       const st = document.querySelector('#peglinSync');
-      if (st) st.textContent = `已同步 ${done.size} 筆彈珠紀錄・答錯題進錯題本、學習檢核錯題進複習盒`;
+      if (st) st.textContent = `本機版已同步 ${done.size} 筆彈珠紀錄・答錯題進錯題本、學習檢核錯題進複習盒`;
       report(rows);
       if (dirty && Date.now() - lastBackup > 60000) backup().catch(() => {});
     } catch (e) { const st = document.querySelector('#peglinSync'); if (st) st.textContent = e.message; }
@@ -74,23 +76,23 @@ const PEGLIN = (() => {
     await api('wrongbook', { project: (QB.meta || {}).id, markdown: wrongbookMd() });
     lastBackup = Date.now(); dirty = false; return d;
   }
-  /* 目前套用的題本在遊戲裡的戰況 */
+  /* 目前套用的題本在遊戲裡的戰況（本機版） */
   function report(rows) {
     const box = document.querySelector('#pgReport'); if (!box) return;
     let cur = null; try { cur = JSON.parse(localStorage.getItem(SKEY('peglin-session')) || 'null'); } catch {}
     if (!cur) { box.innerHTML = ''; return; }
     const mine = rows.filter(r => r.session === cur.id && r.kind !== 'lesson');
-    const title = cur.mode === 'learn' ? '本次學習' : '本輪戰報';
+    const title = cur.mode === 'learn' ? '本機版・本次學習' : '本機版・本輪戰報';
     if (!mine.length) { box.innerHTML = `<h3>${title}</h3><p>「${U.esc(cur.label)}」已套用（${cur.count} ${cur.mode === 'learn' ? '步' : '題'}），還沒開始。</p>`; return; }
     const ok = mine.filter(r => r.ok).length;
     let run = 0, best = 0; for (const r of mine) { run = r.ok ? run + 1 : 0; best = Math.max(best, run); }
     const lastWrong = new Map(); for (const r of mine) { if (r.ok) lastWrong.delete(r.qid); else lastWrong.set(r.qid, true); }
     const wrong = [...lastWrong.keys()].filter(id => Store.Q[id]).slice(-5).reverse();
     const doneLessons = rows.filter(r => r.session === cur.id && r.kind === 'lesson').length;
-    const stem = q => U.esc(String(q.stem || q.ans || q.id).replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/[*_`#>|]/g, '').slice(0, 42));
     box.innerHTML = `<h3>${title}</h3><p>「${U.esc(cur.label)}」：已答 <b>${mine.length}</b> 次・答對 <b>${Math.round(ok * 100 / mine.length)}%</b>・最長連對 <b>${best}</b>${cur.mode === 'learn' ? `・完成 <b>${doneLessons}</b> 課` : ''}</p>`
-      + (wrong.length ? `<p class="dim">還沒扳回來的題：</p><ul>${wrong.map(id => `<li>${stem(Store.Q[id])}</li>`).join('')}</ul>` : '');
+      + (wrong.length ? `<p class="dim">還沒扳回來的題：</p><ul>${wrong.map(id => `<li>${stemText(Store.Q[id])}</li>`).join('')}</ul>` : '');
   }
+  const stemText = q => U.esc(String(q.stem || q.ans || q.id).replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/[*_`#>|]/g, '').slice(0, 42));
   function startSync() {
     if (polling) return; polling = true;
     const tick = async () => { if (await detect()) sync(); };
@@ -107,18 +109,46 @@ const PEGLIN = (() => {
     for (const key of ['config', 'learn', 'session']) if (key in data) localStorage.setItem(SKEY('peglin-' + key), JSON.stringify(data[key]));
   }
 
-  /* ---------- 題本（彈珠刷題） ---------- */
-  function pool(cfg) { return Store.filter(cfg); }
-  function queue(cfg) {
-    const units = [], seen = new Map();
-    for (const q of pool(cfg)) {
-      if (q.group) { if (!seen.has(q.group)) { const a = []; units.push(a); seen.set(q.group, a); } seen.get(q.group).push(q); }
-      else units.push([q]);
-    }
-    const chosen = [];
-    for (const unit of (cfg.ordered ? units : U.shuffle(units))) { if (chosen.length >= cfg.count) break; chosen.push(...unit); }
-    return chosen;
+  /* ---------- 題目範圍：與自由遠征相同（科目、題本樹、年份、題型、星號、狀態、出題順序、同類題） ---------- */
+  const TYPES = [['single', '單選'], ['multi', '多選'], ['fill', '填答'], ['open', '非選']];
+  const STATUS = [['all', '全部'], ['new', '未作答'], ['wrong', '曾答錯'], ['lastwrong', '上次答錯'], ['unmastered', '未答對過'], ['right', '答對過']];
+  const PREF = [['smart', '未作答＋錯題優先'], ['rand', '隨機'], ['new', '未作答優先'], ['wrong', '錯題優先']];
+  const COUNTS = [['10', '10'], ['15', '15'], ['20', '20'], ['30', '30'], ['50', '50'], ['9999', '全部']];
+  function pool(cfg) {
+    const list = Store.filter({ subjects: cfg.subjects, exams: cfg.exams, years: cfg.years, types: cfg.types, starOnly: cfg.starOnly, status: cfg.status });
+    return list.filter(q => (cfg.types || []).includes('open') || q.type !== 'open');
   }
+  /* 出題順序與自由遠征（screens.js 的 prefOrder）相同：smart＝沒作答過＋錯題先出（錯題權重 3），同部位／同題型往後排 */
+  function orderUnits(units, pref, patFirst) {
+    if ((!pref || pref === 'rand') && !patFirst) return U.shuffle(units);
+    const isWrong = id => (Store.wrong[id] && !Store.wrong[id].done) || (Store.qs[id]?.a && !Store.qs[id].last);
+    const isNew = id => !Store.qs[id]?.a;
+    const seen = pref === 'smart' ? Store.partsAnswered() : null, seenT = patFirst ? Store.typesAnswered() : null;
+    const keyed = units.map(u => {
+      const id = u[0], q = Store.Q[id];
+      const sw = (pref === 'smart' ? Store.smartWeight(id, seen) : 1) * (seenT ? Store.typeFactor(id, seenT) : 1);
+      const tier = pref === 'smart' ? (sw > 0 ? 0 : 1) : pref === 'new' ? (isNew(id) ? 0 : 1) : pref === 'wrong' ? (isWrong(id) ? 0 : 1) : 0;
+      return [u, tier, -Math.log(Math.random() || 1e-9) / (sw || 1), pref === 'smart' ? Store.partKey(q) : null, patFirst ? Store.typeKey(q) : null];
+    }).sort((a, b) => a[1] - b[1] || a[2] - b[2]);
+    if (pref !== 'smart' && !patFirst) return keyed.map(x => x[0]);
+    const first = [], later = [], used = new Set();
+    keyed.forEach(x => {
+      const ks = [x[3], x[4]].filter(Boolean);
+      if (x[1] === 0 && ks.some(k => used.has(k))) later.push(x); else { ks.forEach(k => used.add(k)); first.push(x); }
+    });
+    return first.filter(x => x[1] === 0).concat(later, first.filter(x => x[1] === 1)).map(x => x[0]);
+  }
+  function quizIds(cfg, n) {
+    const units = [], seen = {};
+    pool(cfg).forEach(q => { if (q.group) { if (!seen[q.group]) units.push(seen[q.group] = []); seen[q.group].push(q.id); } else units.push([q.id]); });
+    const out = [];
+    for (const u of orderUnits(units, cfg.pref, cfg.patFirst)) { for (const id of u) if (out.length < n) out.push(id); if (out.length >= n) break; }
+    return out;
+  }
+  const roundSize = cfg => Number(cfg.count) || 20;
+  const queue = cfg => quizIds(cfg, roundSize(cfg)).map(id => Store.Q[id]);
+
+  /* ---------- 題本打包（本機版） ---------- */
   async function imageData(path) {
     const im = new Image(); im.crossOrigin = 'anonymous';
     await new Promise((resolve, reject) => { im.onload = resolve; im.onerror = () => reject(new Error('無法匯出圖片：' + path)); im.src = U.img(path); });
@@ -144,14 +174,14 @@ const PEGLIN = (() => {
     return { images, missingImages: missing };
   }
   const newId = () => crypto.randomUUID ? crypto.randomUUID() : 'pg-' + Date.now();
+  const subjLabel = subs => subs.length >= Object.keys(C.SUBJECTS).length ? '全部科目' : subs.map(s => C.SUBJECTS[s]?.name).filter(Boolean).join('・') || '全部科目';
   async function exportSession(cfg, status) {
     const chosen = queue(cfg); if (!chosen.length) throw new Error('沒有符合條件的題目，請放寬篩選。');
     const paths = new Set(), questions = chosen.map(q => bankItem(q, paths));
-    const names = cfg.subjects.map(s => C.SUBJECTS[s]?.name).filter(Boolean);
-    return { version: 1, mode: 'quiz', id: newId(), label: names.join('・') || '全部科目', source: location.href.split('#')[0], wrongPenalty: cfg.wrongPenalty, reward: cfg.reward, retryWrong: cfg.retryWrong, ordered: !!cfg.ordered, questions, ...(await embedImages(paths, status)), created: new Date().toISOString() };
+    return { version: 1, mode: 'quiz', id: newId(), label: subjLabel(cfg.subjects), source: location.href.split('#')[0], wrongPenalty: cfg.wrongPenalty, reward: cfg.reward, retryWrong: cfg.retryWrong, ordered: false, questions, ...(await embedImages(paths, status)), created: new Date().toISOString() };
   }
 
-  /* ---------- 課程（彈珠學習）：把學習模式的一課攤平成「閱讀卡＋檢核題」 ---------- */
+  /* ---------- 課程（本機版）：把學習模式的一課攤平成「閱讀卡＋檢核題」 ---------- */
   const joinMd = v => Array.isArray(v) ? v.map(joinMd).join('\n') : String(v ?? '');
   const L = i => String.fromCharCode(65 + i);
   function checkItem(c, paths) {
@@ -169,9 +199,11 @@ const PEGLIN = (() => {
   }
   // 「承上題」單獨抽出來看不懂，學習時不出（與 learn.js 相同規則）
   const FOLLOW_RE = /^\s*(【[^】]*】\s*)?(承上|承前|續上|接上|同上|延續上)/;
+  // 檢核題寫「承上例／完成剛才的任務後…」的只在課程原位置出，不進複習（與 learn.js 的 ctxDep 相同）
+  const CTX_RE = /承上|上題|上例|前例|前一題|完成剛才的任務/;
   function pickBank(pick, n, subj) {
     const words = (pick.match || []).map(w => w.toLowerCase());
-    const list = Store.filter({ subjects: pick.subjects || (subj ? [subj] : []), types: pick.types || ['single', 'multi', 'fill'] })
+    const list = Store.filter({ subjects: pick.subjects || (subj ? [subj] : []), exams: pick.exams, ids: pick.ids, types: pick.types || ['single', 'multi', 'fill'] })
       .filter(q => q.type !== 'open' && !FOLLOW_RE.test(q.stem || '') && words.some(w => (q.tag || '').toLowerCase().includes(w) || (pick.inEx !== false && (q.ex || '').toLowerCase().includes(w))));
     const fresh = list.filter(q => !Store.qs[q.id]?.a), old = list.filter(q => Store.qs[q.id]?.a);
     return U.shuffle(fresh).concat(U.shuffle(old)).slice(0, n);
@@ -206,14 +238,287 @@ const PEGLIN = (() => {
     const list = selectedLessons(lcfg); if (!list.length) throw new Error('請先點選要上的課（可以多選）。');
     const paths = new Set(), questions = list.flatMap(({ p, l }) => lessonItems(p, l, paths));
     if (!questions.length) throw new Error('選到的課沒有可以帶進遊戲的內容。');
-    const label = list.length === 1 ? `${list[0].p.title}｜${list[0].l.title}` : `${list[0].l.title} 等 ${list.length} 課`;
-    return { version: 1, mode: 'learn', id: newId(), label, lessonCount: list.length, source: location.href.split('#')[0], wrongPenalty: lcfg.wrongPenalty, reward: lcfg.reward, retryWrong: false, ordered: true, questions, ...(await embedImages(paths, status)), created: new Date().toISOString() };
+    return { version: 1, mode: 'learn', id: newId(), label: lessonLabel(list), lessonCount: list.length, source: location.href.split('#')[0], wrongPenalty: lcfg.wrongPenalty, reward: lcfg.reward, retryWrong: false, ordered: true, questions, ...(await embedImages(paths, status)), created: new Date().toISOString() };
+  }
+  const lessonLabel = list => list.length === 1 ? `${list[0].p.title}｜${list[0].l.title}` : `${list[0].l.title} 等 ${list.length} 課`;
+
+  /* ======================================================================
+   * 網頁版：peglin/web.html 載入 GitHub Pages 上的 WebGL 建置，題目在遊戲外層
+   * ====================================================================== */
+  const WEB_DEFAULT = 'https://yc0935019269cloud-create.github.io/peglinnnnnnn/';
+  const WEB_ALLOW = /^(https:\/\/yc0935019269cloud-create\.github\.io\/|https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?\/)/;   // 與 peglin/web.html 相同
+  function webBase() { let b = String(readCfg('peglin-web', {}).base || '').trim(); if (b && !b.endsWith('/')) b += '/'; return b && WEB_ALLOW.test(b) ? b : WEB_DEFAULT; }
+  // 外框頁跟著 index.html 的快取版本（js/peglin.js?v=N）
+  const hostVer = () => ((document.querySelector('script[src*="js/peglin.js"]') || {}).src || '').match(/[?&]v=(\d+)/)?.[1] || '1';
+  const hostUrl = () => `peglin/web.html?v=${hostVer()}` + (webBase() !== WEB_DEFAULT ? '&base=' + encodeURIComponent(webBase()) : '') + (readCfg('peglin-web', {}).debug ? '&debug=1' : '');   // debug：QA 讀外框頁狀態
+  let webProbe = null;
+  function probeWeb(force) {
+    if (webProbe && !force) return webProbe;
+    return webProbe = (async () => {
+      let gl = null; try { gl = document.createElement('canvas').getContext('webgl2'); } catch {}
+      if (!gl) return { ok: false, msg: '這個瀏覽器不支援 WebGL 2，沒辦法開網頁版彈珠（請改用新版 Chrome、Edge 或 Safari）。' };
+      try { gl.getExtension('WEBGL_lose_context')?.loseContext(); } catch {}
+      const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 8000);
+      try {
+        const r = await fetch(webBase() + 'index.html', { cache: 'no-store', signal: ctl.signal });
+        if (r.ok && /createUnityInstance/.test(await r.text())) return { ok: true };
+        return { ok: false, msg: `網頁版遊戲（${webBase()}）沒有回應正確的內容。` };
+      } catch { return { ok: false, msg: `連不到網頁版遊戲（${webBase()}）：需要網路連線。` }; }
+      finally { clearTimeout(t); }
+    })();
+  }
+
+  /* ---------- 一場網頁版彈珠：答題換彈珠 ----------
+   * G：目前這一場。S（session）提供 next()（下一個題目／卡片，null＝這一輪結束）與 again()（再來一輪）。
+   * 每答（或每完成）per 個，可以發射 shots 顆；onWrong='none' 時答錯不算數。外框頁每偵測到一次發射扣一顆。 */
+  let G = null;
+  const STEP_NAME = { intro: '📖 導入', card: '💡 概念', example: '✏️ 範例', recap: '🔁 回顧', diagram: '🖼 圖解', interactive: '🎛 互動', letters: '🔤 字母', check: '✅ 檢核', bank: '⚔ 題目' };
+  function webOpen(S) {
+    if (G) webClose(true);
+    G = { S, mode: S.mode, per: Math.max(1, S.per || 1), shots: Math.max(1, S.shots || 1), onWrong: S.onWrong || 'count', test: !!S.test,
+      credits: 0, pts: 0, fired: 0, graded: 0, right: 0, reads: 0, lessons: 0, wrong: [], panel: false, loaded: 0, ready: false, armed: false, error: '', ctl: null, keyBox: null, goBtn: null, item: null };
+    const learn = S.mode === 'learn';
+    const el = U.h(`<div class="pgw" id="pgw" role="dialog" aria-modal="true" aria-label="${learn ? '彈珠學習' : '彈珠刷題'}">
+      <div class="pgw-bar">
+        <span class="pgw-title">${learn ? '📘 彈珠學習' : '⚪ 彈珠刷題'}<small>${U.esc(S.label)}</small></span>
+        <span class="pgw-ammo" id="pgwAmmo" role="status"></span>
+        <span class="pgw-stat" id="pgwStat"></span>
+        <span class="grow"></span>
+        <button class="px-btn small" id="pgwAsk" title="先答題，把彈珠存起來">📖 ${learn ? '下一步' : '答題'}</button>
+        ${typeof Calc !== 'undefined' ? '<button class="px-btn small" id="pgwCalc" title="計算機" aria-label="計算機">🧮</button>' : ''}
+        ${typeof PAD !== 'undefined' ? '<button class="px-btn small" id="pgwPad" title="計算紙" aria-label="計算紙">📝</button>' : ''}
+        <button class="px-btn small" id="pgwExit">✕ 結束</button>
+      </div>
+      <div class="pgw-stage">
+        <iframe id="pgwFrame" title="哥布林彈珠" allow="autoplay; fullscreen; gamepad" src="${U.esc(hostUrl())}"></iframe>
+        <div class="pgw-shield" id="pgwShield"><button type="button" class="pgw-shield-btn" id="pgwShieldBtn"></button></div>
+        <section class="pgw-panel" id="pgwPanel" tabindex="-1" hidden><div class="pgw-head" id="pgwHead"></div><div id="pgwQ"></div></section>
+      </div></div>`);
+    document.body.appendChild(el);
+    document.documentElement.classList.add('pgw-open');
+    U.$('#pgwExit').onclick = async () => {
+      if (G.graded + G.reads && !(await U.confirm('結束彈珠', '會關閉遊戲畫面。這次的作答都已經記進進度了，確定結束嗎？'))) return;
+      webClose();
+    };
+    U.$('#pgwAsk').onclick = () => { if (!G.panel) next(); };
+    if (U.$('#pgwCalc')) U.$('#pgwCalc').onclick = () => Calc.toggle();
+    if (U.$('#pgwPad')) U.$('#pgwPad').onclick = () => PAD.toggle();
+    U.$('#pgwShield').onclick = () => { if (!G.panel) next(); };   // 彈珠用完時點遊戲畫面任何地方都出下一題
+    U.$('#pgwFrame').addEventListener('load', () => lock(G && G.credits <= 0));
+    window.addEventListener('message', onMsg);
+    document.addEventListener('keydown', onKey, true);
+    next();   // 遊戲載入時先答第一題
+  }
+  function onMsg(e) {
+    const f = U.$('#pgwFrame'), d = e.data;
+    if (!G || !f || e.source !== f.contentWindow || !d || d.pgw !== 1) return;
+    if (d.type === 'progress') G.loaded = d.value;
+    else if (d.type === 'ready') { G.ready = true; G.armed = G.armed || !!d.armed; lock(G.credits <= 0); }
+    else if (d.type === 'armed') G.armed = true;
+    else if (d.type === 'error') G.error = d.message || '遊戲載入失敗';
+    else if (d.type === 'shot') {
+      G.fired++;
+      if (G.credits > 0) G.credits--;
+      if (G.credits <= 0 && !G.panel) lock(true);
+    } else if (d.type === 'blocked') { if (!G.panel) next(); }
+    hud();
+  }
+  function onKey(e) {
+    if (!G || document.querySelector('.modal-bg')) return;
+    if (e.key === 'Escape') { if (G.panel && G.credits > 0) { e.preventDefault(); closePanel(); } return; }
+    if (!G.panel || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.target && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
+    if (G.keyBox && G.keyBox._key && G.keyBox._key(e)) { e.preventDefault(); e.stopPropagation(); return; }
+    if (e.key === 'Enter' && G.goBtn && document.body.contains(G.goBtn)) { e.preventDefault(); e.stopPropagation(); G.goBtn.click(); }
+  }
+  const unitWord = () => G.mode === 'learn' ? '步' : '題';
+  function hud() {
+    if (!G) return;
+    const need = G.per - G.pts;
+    U.$('#pgwAmmo').innerHTML = `⚪ × <b>${G.credits}</b>${G.per > 1 ? `<small>再${G.mode === 'learn' ? '完成' : '答'} ${need} ${unitWord()}可再發射 ${G.shots} 顆</small>` : ''}`;
+    const load = G.error ? `⚠ ${U.esc(G.error)}` : !G.ready ? `遊戲載入中 ${Math.round(G.loaded * 100)}%` : !G.armed ? '發射偵測準備中…' : '';
+    U.$('#pgwStat').innerHTML = `${G.mode === 'learn' ? `已完成 ${G.reads + G.graded} 步` : `已答 ${G.graded} 題`}${G.graded ? `・一次答對 ${G.right}/${G.graded}` : ''}・已發射 ${G.fired} 顆${load ? `<em>${load}</em>` : ''}`;
+    U.$('#pgwShieldBtn').innerHTML = `⚪ 彈珠用完了<small>點這裡${G.mode === 'learn' ? '繼續上課' : '答下一題'}，${G.per > 1 ? `每${G.mode === 'learn' ? '完成' : '答'} ${G.per} ${unitWord()}` : '答完'}可以再發射 ${G.shots} 顆</small>`;
+    U.$('#pgwAsk').hidden = G.panel;
+  }
+  function post(msg) { const f = U.$('#pgwFrame'); try { f && f.contentWindow && f.contentWindow.postMessage(Object.assign({ pgw: 1 }, msg), '*'); } catch {} }
+  function lock(on) {
+    if (!G) return;
+    U.$('#pgwShield').hidden = !on && !G.panel;
+    post({ type: 'lock', on: !!on || G.panel });
+    if (!on && !G.panel) { const f = U.$('#pgwFrame'); try { f.focus(); } catch {} }
+  }
+  function openPanel() {
+    G.panel = true; U.$('#pgw').classList.add('panel-open');
+    const p = U.$('#pgwPanel'); p.hidden = false; lock(true); p.scrollTop = 0; p.focus({ preventScroll: true });
+  }
+  function closePanel() {
+    clearItem(); G.panel = false; U.$('#pgw').classList.remove('panel-open'); U.$('#pgwPanel').hidden = true;
+    lock(G.credits <= 0); hud();
+  }
+  function clearItem() { if (G.ctl) { try { G.ctl.destroy(); } catch {} } G.ctl = null; G.keyBox = null; G.goBtn = null; G.item = null; }
+  /* 答完／讀完：累積到 per 個就換 shots 顆彈珠 */
+  function earn(counted) { if (counted) { G.pts++; while (G.pts >= G.per) { G.pts -= G.per; G.credits += G.shots; } } hud(); }
+  const goLabel = () => G.credits > 0 ? `🎯 去發射（⚪×${G.credits}）` : G.mode === 'learn' ? '下一步 ▶' : '下一題 ▶';
+  function proceed(it) {
+    if (it && it.lessonEnd && !it.review) finishLesson(it.les);
+    if (G.credits > 0) closePanel(); else next();
+  }
+  function goButton(box, it, label) {
+    const b = U.h(`<div class="row mt pgw-go"><button class="px-btn gold big">${label || goLabel()}</button></div>`);
+    box.appendChild(b); G.goBtn = b.firstElementChild; G.goBtn.onclick = () => { SFX.play('click'); proceed(it); };
+    return G.goBtn;
+  }
+  function next() {
+    if (!G) return;
+    clearItem();
+    const it = G.S.next(); openPanel();
+    const body = U.$('#pgwQ'); body.innerHTML = '';
+    if (!it) { renderEnd(body); hud(); return; }
+    G.item = it;
+    const kind = it.kind === 'read' ? it.s.type : it.kind;
+    const pos = G.S.pos ? G.S.pos() : '';
+    U.$('#pgwHead').innerHTML = `<span class="pgw-kind">${STEP_NAME[kind] || '📖 閱讀'}${it.review ? '・複習' : ''}</span>${it.les ? `<span class="pgw-where">${U.esc(it.les.l.title)}</span>` : ''}<span class="grow"></span><span class="dim small-t">${pos}</span>`;
+    if (it.kind === 'bank') renderBank(body, it); else if (it.kind === 'check') renderCheckItem(body, it); else renderRead(body, it);
+    hud();
+  }
+  function graded(it, firstOk, ok) {
+    G.graded++; if (firstOk) G.right++; if (!ok) G.wrong.push(it);
+    if (!G.test) {
+      if (it.kind === 'bank') { Store.record(it.q.id, ok); Store.addAccXp(ok ? 8 : 2); if (ok) Store.addGems(1); }
+      else if (typeof LEARN_UI !== 'undefined') { LEARN_UI.applyPeglin({ type: 'check', id: it.c.id, ok: firstOk, first: firstOk }); if (firstOk) Store.addAccXp(4); }
+      App.refreshTop();
+    }
+    if (it.les && !it.review) { it.les.n++; if (firstOk) it.les.ok++; }
+    if (G.S.graded) G.S.graded(it, ok);
+    earn(G.onWrong === 'count' || ok);
+  }
+  function renderBank(body, it) {
+    const wrap = U.h('<div class="qwrap"></div>'); body.appendChild(wrap);
+    G.ctl = QV.render(wrap, it.q, {
+      mode: 'practice', nextLabel: '繼續 ▶', onNext: () => proceed(it),
+      onAnswer: res => { SFX.play(res.ok ? 'correct' : 'wrong'); graded(it, !!res.ok, !!res.ok); const nb = wrap.querySelector('.next-btn'); if (nb) nb.textContent = goLabel(); }
+    });
+  }
+  function renderCheckItem(body, it) {
+    const box = U.h('<div class="lc"></div>'), wrap = U.h('<div class="lp-body pgw-lp t-check"></div>');
+    wrap.appendChild(box); body.appendChild(wrap); G.keyBox = box;
+    LEARN_UI.renderCheck(box, it.c, { onDone: (firstOk, ok) => { G.keyBox = null; graded(it, firstOk, ok); goButton(wrap, it); } });
+  }
+  const arr = v => v == null || v === '' ? [] : Array.isArray(v) ? v : [v];
+  const md = v => U.md(joinMd(v));
+  const inl = v => U.md(joinMd(v)).replace(/^<div class="md"><p>([\s\S]*)<\/p><\/div>$/, '$1');
+  const imgs = (v, src) => arr(v).map(x => `<img class="lp-img" src="${U.esc(U.img(x))}" alt="" title="點圖放大">`).join('') + (src ? `<div class="lp-src">圖片來源：${inl(src)}</div>` : '');
+  const list = (cls, title, v) => arr(v).length ? `<div class="${cls}"><b>${title}</b><ul>${arr(v).map(k => `<li>${inl(k)}</li>`).join('')}</ul></div>` : '';
+  /* 閱讀卡：沿用學習模式的版面元件（lp-keys、lp-exam…）；圖解與互動模擬只放圖和文字，完整互動請到學習模式 */
+  function readHTML(s, l) {
+    const h = t => `<h3>${U.esc(t || '')}</h3>`, note = t => `<p class="dim small-t">${t}</p>`;
+    switch (s.type) {
+      case 'intro': return h(s.title || l.title) + md(s.body) + list('lp-goals', '🎯 這課學完你會：', l.goals);
+      case 'card': {
+        const parts = joinMd(s.body).split(/^[ \t]*\[\[img\]\][ \t]*$/m), pics = imgs(s.img, s.img_source || s.source);
+        return h(s.title) + (parts.length > 1 ? md(parts[0]) + pics + md(parts.slice(1).join('\n')) : pics + md(s.body)) + list('lp-keys', '📌 重點', s.keys)
+          + list('lp-exam', '🎯 國考重點', s.exam) + (s.demo ? `<div class="lp-demo"><b>✏️ 示範</b>${md(s.demo)}</div>` : '') + (s.tip ? `<div class="lp-tip">🐾 ${inl(s.tip)}</div>` : '');
+      }
+      case 'example': return h(s.title || '範例') + `<div class="lp-prob">${md(s.problem)}</div><details class="pgw-sol"><summary>💡 看解法（${arr(s.steps).length} 步）</summary><div class="lp-steps">${arr(s.steps).map((x, i) => `<div class="lp-step"><b>${i + 1}</b><div>${md(x)}</div></div>`).join('')}${s.answer ? `<div class="lp-exans">✅ ${md(s.answer)}</div>` : ''}</div></details>`;
+      case 'recap': return h('本課重點') + list('lp-keys', '📌 重點', s.points) + (arr(s.flash).length ? `<div class="pgw-flash"><b>🃏 記憶卡（點開看答案）</b>${arr(s.flash).map(f => `<details><summary>${inl(f.front)}</summary>${md(f.back)}</details>`).join('')}</div>` : '') + (s.next ? note('下一課：' + U.esc(joinMd(s.next).replace(/^下一課[：:]\s*/, ''))) : '');
+      case 'diagram': return h(s.title || '看圖認構造') + md(s.body) + imgs(s.img, s.img_source || s.source) + (arr(s.points).length ? `<ol class="pgw-points">${arr(s.points).map(x => `<li><b>${U.esc(x.name || x.zh || '')}</b>${x.en ? ` <span class="dim">${U.esc(x.en)}</span>` : ''}${x.desc ? `：${inl(x.desc)}` : ''}</li>`).join('')}</ol>` : '') + note('可以點的互動圖解請到「📘 學習模式」操作。');
+      case 'letters': return h(s.title || '字母') + md(s.body) + arr(s.groups).map(g => `<div class="pgw-letters"><b>${U.esc(g.name || '')}</b><div>${arr(g.items).map(x => `<span><big>${U.esc(x.ch)}</big><small>${U.esc(x.roman || '')}</small></span>`).join('')}</div></div>`).join('') + note('點字母聽發音請到「📘 學習模式」。');
+      case 'interactive': return h(s.title || '互動模擬') + md(s.body) + note('互動模擬請在「📘 學習模式」操作。');
+      default: return h(s.title) + md(s.body || s.problem);
+    }
+  }
+  function renderRead(body, it) {
+    const wrap = U.h(`<div class="lp-body pgw-lp t-${U.esc(it.s.type)}">${readHTML(it.s, it.les.l)}</div>`); body.appendChild(wrap);
+    if (typeof GLOSS !== 'undefined' && GLOSS.scan) { try { GLOSS.scan(wrap); } catch {} }
+    const counted = G.pts + 1 >= G.per;
+    const b = goButton(wrap, it, G.credits > 0 || counted ? '讀完了，去發射 ▶' : '讀完了，下一步 ▶');
+    b.onclick = () => { SFX.play('click'); G.reads++; earn(true); proceed(it); };
+  }
+  function renderEnd(body) {
+    U.$('#pgwHead').innerHTML = '<span class="pgw-kind">🏁 這一輪完成</span>';
+    body.innerHTML = `<div class="pgw-end"><h3>${G.mode === 'learn' ? '這次選的課都完成了' : '這一輪的題目答完了'}</h3>
+      <p>${G.mode === 'learn' ? `完成 ${G.lessons} 課、讀了 ${G.reads} 張卡、` : ''}答了 ${G.graded} 題（一次答對 ${G.right}）・已發射 ${G.fired} 顆彈珠</p>
+      <div class="row">${G.S.again ? '<button class="px-btn gold" data-end="again">再來一輪 ▶</button>' : ''}${G.credits > 0 ? `<button class="px-btn" data-end="shoot">先把剩下的 ⚪×${G.credits} 打完</button>` : ''}<button class="px-btn" data-end="exit">結束</button></div></div>`;
+    U.$$('[data-end]', body).forEach(b => b.onclick = () => {
+      const a = b.dataset.end;
+      if (a === 'again') { if (G.S.again()) next(); else U.toast('沒有符合條件的題目了，請放寬篩選'); }
+      else if (a === 'shoot') closePanel();
+      else webClose();
+    });
+  }
+  function finishLesson(les) {
+    if (!les || les.done) return; les.done = true; G.lessons++;
+    if (!G.test && typeof LEARN_UI !== 'undefined') { LEARN_UI.applyPeglin({ type: 'lesson', pack: les.p.id, lesson: les.l.id, n: les.n, ok: les.ok }); App.refreshTop(); }
+    U.toast(`彈珠學習：完成「${les.l.title}」${les.n ? `（檢核 ${les.ok}/${les.n}）` : ''}`);
+  }
+  function webClose(silent) {
+    if (!G) return;
+    const g = G; clearItem(); G = null;
+    window.removeEventListener('message', onMsg); document.removeEventListener('keydown', onKey, true);
+    const f = U.$('#pgwFrame'); try { f.contentWindow.postMessage({ pgw: 1, type: 'quit' }, '*'); } catch {}
+    const el = U.$('#pgw'); if (el) el.remove();
+    document.documentElement.classList.remove('pgw-open');
+    if (silent) return;
+    if (g.graded + g.reads) {
+      const wrongs = g.wrong.filter(it => it.kind === 'bank').slice(-5).reverse();
+      U.modal({ title: g.mode === 'learn' ? '這次的彈珠學習' : '這次的彈珠刷題', body: `<p>${g.mode === 'learn' ? `完成 <b>${g.lessons}</b> 課・讀了 <b>${g.reads}</b> 張卡・` : ''}答了 <b>${g.graded}</b> 題・一次答對 <b>${g.right}</b>・發射 <b>${g.fired}</b> 顆彈珠</p>`
+        + (g.test ? '<p class="dim small-t">（測試場次：沒有寫進紀錄）</p>' : `<p class="dim small-t">${g.mode === 'learn' ? '檢核答錯的已放進「🔁 複習」，' : ''}答錯的題目已進錯題本。</p>`)
+        + (wrongs.length ? `<p class="dim">還要再練的題：</p><ul>${wrongs.map(it => `<li>${stemText(it.q)}</li>`).join('')}</ul>` : '') });
+    }
+    if (U.$('.peglin-page')) screen(g.mode);
+  }
+  /* 彈珠刷題：照自由遠征的條件排一輪題目；答錯可以稍後再出一次 */
+  function quizSession(cfg, ids) {
+    let q = ids.slice(), i = 0; const retried = new Set();
+    return {
+      mode: 'quiz', label: subjLabel(cfg.subjects), per: cfg.per, shots: cfg.shots, onWrong: cfg.onWrong, test: !!cfg.test,
+      pos: () => `第 ${Math.min(i, q.length)} / ${q.length} 題`,
+      next() { while (i < q.length) { const x = Store.Q[q[i++]]; if (x) return { kind: 'bank', q: x }; } return null; },
+      graded(it, ok) { if (!ok && cfg.retryWrong && !retried.has(it.q.id)) { retried.add(it.q.id); q.splice(Math.min(q.length, i + 3), 0, it.q.id); } },
+      again() { q = quizIds(cfg, roundSize(cfg)); i = 0; retried.clear(); return q.length > 0; }
+    };
+  }
+  /* 彈珠學習：依課程順序走每一步（閱讀卡、檢核、題庫實戰），上完再輪流複習這幾課的題目 */
+  function learnItems(list) {
+    const out = [];
+    list.forEach(({ p, l }) => {
+      const les = { p, l, n: 0, ok: 0 }, start = out.length, add = it => out.push(Object.assign(it, { les }));
+      l.steps.forEach(s => {
+        if (s.type === 'check') add({ kind: 'check', c: s });
+        else if (s.type === 'practice') {
+          const qs = (s.qids || []).map(id => Store.Q[id]).filter(q => q && !FOLLOW_RE.test(q.stem || ''));
+          if (s.pick) pickBank(s.pick, s.pick.n || 2, p.subject).forEach(q => { if (!qs.includes(q)) qs.push(q); });
+          qs.forEach(q => add({ kind: 'bank', q }));
+          (s.checks || []).forEach(c => add({ kind: 'check', c }));
+        } else add({ kind: 'read', s });
+      });
+      if (out.length > start) out[out.length - 1].lessonEnd = true;
+    });
+    return out;
+  }
+  function learnSession(lcfg, list) {
+    const items = learnItems(list); let i = 0, rev = null, ri = 0;
+    return {
+      mode: 'learn', label: lessonLabel(list), per: lcfg.per, shots: lcfg.shots, onWrong: lcfg.onWrong, test: !!lcfg.test,
+      pos: () => rev ? '複習' : `第 ${Math.min(i, items.length)} / ${items.length} 步`,
+      next() {
+        if (i < items.length) return items[i++];
+        if (!rev) {
+          rev = items.filter(x => x.kind === 'bank' || (x.kind === 'check' && !CTX_RE.test(joinMd(x.c.q)))); ri = 0;
+          if (rev.length) U.toast('選的課都上完了，接著複習這幾課的題目');
+        }
+        if (!rev.length) return null;
+        if (ri >= rev.length) { rev = U.shuffle(rev); ri = 0; }
+        return Object.assign({}, rev[ri++], { review: true, lessonEnd: false });
+      }
+    };
   }
 
   /* ---------- 畫面 ---------- */
   const readCfg = (k, d) => { try { return Object.assign(d, JSON.parse(localStorage.getItem(SKEY(k)) || '{}')); } catch { return d; } };
   function screen(mode) {
-    startSync();
+    if (autoProbe() || bridge) startSync();
     mode = mode === 'learn' ? 'learn' : (mode || readCfg('peglin-mode', { m: 'quiz' }).m);
     localStorage.setItem(SKEY('peglin-mode'), JSON.stringify({ m: mode }));
     U.$('#topTitle').textContent = mode === 'learn' ? '彈珠學習' : '彈珠刷題';
@@ -222,14 +527,20 @@ const PEGLIN = (() => {
       <section class="peglin-hero panel"><div><span class="peglin-eyebrow">PEGLIN × ${learn ? '你的課程' : '你的題庫'}</span>
         <div class="peglin-modes" role="tablist"><button class="px-btn ${!learn ? 'gold' : ''}" data-mode="quiz" role="tab" aria-selected="${!learn}">⚪ 彈珠刷題</button><button class="px-btn ${learn ? 'gold' : ''}" data-mode="learn" role="tab" aria-selected="${learn}">📘 彈珠學習</button></div>
         <h1>${learn ? '讀一張卡，<br>打一顆球。' : '先想清楚，<br>再打出漂亮的一球。'}</h1>
-        <p>${learn ? '把學習模式的一課帶進真正的 Peglin：每次瞄準前讀下一張概念卡或做一題檢核，答錯先給提示再試一次。整課讀完會記成完成，檢核錯題進複習盒。' : '在真正的 Peglin 戰鬥裡刷題。作答後閱讀詳解，再回到彈珠盤瞄準；暴擊、刷新、炸彈、敵人與遺物都沿用原版玩法。'}</p>
-        <div class="peglin-steps">${(learn ? ['① 選課程', '② 遊戲內閱讀與檢核', '③ 回營地看進度'] : ['① 選題本', '② 遊戲內作答', '③ 瞄準發射']).map(x => `<span>${x}</span>`).join('')}</div></div>
+        <p>${learn ? '在這個頁面直接開哥布林打彈珠（網頁版，手機、平板、電腦都能玩）：每讀完一張概念卡或做完一題檢核，就換到彈珠可以發射。整課讀完會記成完成，檢核錯題進複習盒。' : '在這個頁面直接開哥布林打彈珠（網頁版，手機、平板、電腦都能玩）：答題換彈珠，彈珠用完遊戲會先暫停，答下一題再繼續。題目範圍和自由遠征一樣挑。'}</p>
+        <div class="peglin-steps">${(learn ? ['① 選課程與彈珠數', '② 讀卡／檢核換彈珠', '③ 瞄準發射'] : ['① 選範圍與彈珠數', '② 答題換彈珠', '③ 瞄準發射']).map(x => `<span>${x}</span>`).join('')}</div></div>
         <div class="peglin-orbit" aria-hidden="true"><i class="peglin-orb"></i>${Array.from({ length: 18 }, (_, i) => `<b style="--x:${12 + (i % 5) * 18}%;--y:${25 + Math.floor(i / 5) * 18}%" class="${i === 7 ? 'critical' : i === 13 ? 'refresh' : ''}"></b>`).join('')}<span>${learn ? '一卡・一球' : '一題・一球'}</span></div></section>
       <div id="pgGate" class="panel peglin-gate" hidden></div>
       <div class="peglin-layout"><section class="panel peglin-setup" id="pgSetup"></section>
-      <aside class="panel peglin-side"><h2>你的學習營地</h2><p>作答保留原題 ID：答錯進錯題本、學習檢核錯題進複習盒；紀錄與錯題本會備份到題庫資料夾的 <code>peglin/紀錄/</code>。</p><p id="peglinSync" class="peglin-sync" role="status">正在尋找本機彈珠服務…</p><div id="pgReport" class="peglin-report"></div>
-        <div class="col">${[['learn', '📘 學習模式'], ['wrong', '📕 錯題本'], ['settings', '💾 設定與存檔'], ['hub', '🏕 回到營地']].map(([go, t]) => `<button class="px-btn" data-pggo="${go}">${t}</button>`).join('')}<button class="px-btn" id="pgBackup">立即備份到題庫資料夾</button><button class="px-btn" id="pgRestore">從題庫資料夾讀回進度</button></div>
-        <p class="dim small-t" id="pgWhere"></p></aside></div></div>`;
+      <aside class="panel peglin-side"><h2>你的學習營地</h2><p>作答直接記進這個網頁的進度：答錯進錯題本、學習檢核錯題進複習盒；開了雲端同步的話，其他裝置也看得到。</p>
+        <p id="pgWebState" class="peglin-sync" role="status">🌐 正在檢查網頁版遊戲…</p><div id="pgReport" class="peglin-report"></div>
+        <div class="col">${[['learn', '📘 學習模式'], ['bank', '📚 題庫・錯題本'], ['settings', '💾 設定與存檔'], ['hub', '🏕 回到營地']].map(([go, t]) => `<button class="px-btn" data-pggo="${go}">${t}</button>`).join('')}</div>
+        <details class="peglin-local" id="pgLocal"><summary>🖥 本機版 PeglinQuiz（需要啟動器）</summary>
+          <p id="peglinSync" class="peglin-sync" role="status">${autoProbe() ? '正在尋找本機彈珠服務…' : '在這個網址不會自動偵測本機啟動器（避免瀏覽器詢問「存取本機網路」）。'}</p>
+          <div class="col"><button class="px-btn" id="pgDetect">偵測本機啟動器</button><button class="px-btn" id="pgBackup" hidden>立即備份到題庫資料夾</button><button class="px-btn" id="pgRestore" hidden>從題庫資料夾讀回進度</button></div>
+          <p class="dim small-t" id="pgWhere"></p></details>
+        <details class="peglin-local"><summary>⚙ 網頁版遊戲網址</summary><p class="dim small-t">預設是 peglinnnnnnn 的 GitHub Pages。只接受自己的 github.io 或本機測試伺服器。</p>
+          <input class="px-in" id="pgWebBase" value="${U.esc(webBase())}" spellcheck="false" autocomplete="off"><div class="row mt"><button class="px-btn small" id="pgWebSave">儲存並重新檢查</button><button class="px-btn small" id="pgWebReset">恢復預設</button></div></details></aside></div></div>`;
     U.$$('[data-mode]', root).forEach(b => b.onclick = () => screen(b.dataset.mode));
     U.$$('[data-pggo]', root).forEach(b => b.onclick = () => App.go(b.dataset.pggo));
     const ctx = { setStatus: t => { const el = U.$('#pgStatusText'); if (el) el.textContent = t; } };
@@ -242,22 +553,36 @@ const PEGLIN = (() => {
         Store.importAll(JSON.stringify(d)); location.reload();
       } catch (e) { ctx.setStatus(e.message); }
     };
+    U.$('#pgDetect').onclick = () => { startSync(); gate(true); };
+    const saveBase = v => { const c = readCfg('peglin-web', {}); c.base = v; localStorage.setItem(SKEY('peglin-web'), JSON.stringify(c)); webProbe = null; };
+    U.$('#pgWebSave').onclick = () => {
+      let v = U.$('#pgWebBase').value.trim(); if (v && !v.endsWith('/')) v += '/';
+      if (v && !WEB_ALLOW.test(v)) { U.toast('只接受 https://yc0935019269cloud-create.github.io/… 或本機 localhost'); return; }
+      saveBase(v === WEB_DEFAULT ? '' : v); U.$('#pgWebBase').value = webBase(); gate();
+    };
+    U.$('#pgWebReset').onclick = () => { saveBase(''); U.$('#pgWebBase').value = webBase(); gate(); };
     (learn ? learnSetup : quizSetup)(U.$('#pgSetup'), ctx);
     gate();
   }
-  /* 沒有本機服務時：說明並停用啟動按鈕（別台電腦、或還沒開啟動器） */
-  async function gate() {
-    const b = await detect(true), g = U.$('#pgGate'); if (!g) return;
-    const btns = U.$$('#pgLaunch, #pgApply, #pgBackup, #pgRestore');
+  /* 網頁版可不可以用、本機版有沒有連上；兩個都沒有才顯示原本的說明 */
+  async function gate(probeLocal) {
+    const [web, b] = await Promise.all([probeWeb(), probeLocal || autoProbe() ? detect(true) : Promise.resolve(bridge)]);
+    const g = U.$('#pgGate'); if (!g) return;
+    const ws = U.$('#pgWebState');
+    ws.textContent = web.ok ? '🌐 網頁版可用：直接在這個頁面開遊戲，手機、平板、電腦都能玩（需要網路）。' : '🌐 網頁版目前不能用：' + web.msg;
+    ws.classList.toggle('bad', !web.ok);
+    U.$$('#pgWeb').forEach(x => x.disabled = !web.ok);
+    U.$$('#pgLocalRow').forEach(x => x.hidden = !b);
+    U.$$('#pgBackup, #pgRestore').forEach(x => x.hidden = !b);
+    U.$$('#pgLaunch, #pgApply, #pgBackup, #pgRestore').forEach(x => x.disabled = !b);
     if (b) {
-      g.hidden = true; btns.forEach(x => x.disabled = false);
       const w = U.$('#pgWhere'); if (w) w.textContent = `遊戲本體：${b.root}Peglin・紀錄：${b.dataDir}・題庫取自目前這個網頁（${location.host || '本機檔案'}）。`;
       sync();
-    } else {
-      g.hidden = false; btns.forEach(x => x.disabled = true);
-      g.innerHTML = `<h3>這台電腦沒有連上本機彈珠服務</h3><p>${NO_BRIDGE}</p><p class="dim small-t">其他模式（學習、遠征、錯題本…）都能照常使用。若是在 GitHub Page 開啟，瀏覽器可能會詢問是否允許「存取本機網路裝置」，請選允許。</p><button class="px-btn" id="pgRetry">重新偵測</button>`;
-      U.$('#pgRetry').onclick = gate;
-      const st = U.$('#peglinSync'); if (st) st.textContent = '未連線：作答紀錄會在連上後自動同步。';
+    } else if (probeLocal || autoProbe()) { const st = U.$('#peglinSync'); if (st) st.textContent = '本機版未連線（不影響網頁版）：' + NO_BRIDGE; }
+    g.hidden = web.ok || !!b;
+    if (!g.hidden) {
+      g.innerHTML = `<h3>這台電腦目前沒辦法開彈珠</h3><p>${U.esc(web.msg)}</p><p>${NO_BRIDGE}</p><p class="dim small-t">其他模式（學習、遠征、題庫…）都能照常使用。若是在 GitHub Page 開啟本機版，瀏覽器可能會詢問是否允許「存取本機網路裝置」，請選允許。</p><button class="px-btn" id="pgRetry">重新偵測</button>`;
+      U.$('#pgRetry').onclick = () => { webProbe = null; gate(true); };
     }
   }
   async function launchWith(make, ctx, launch) {
@@ -268,14 +593,30 @@ const PEGLIN = (() => {
       localStorage.setItem(SKEY('peglin-session'), JSON.stringify({ id: s.id, mode: s.mode, label: s.label, count: s.questions.length, at: s.created }));
       if (launch) await api('launch', {});
       const unit = s.mode === 'learn' ? '步' : '題';
-      st.textContent = (launch ? `已套用「${s.label}」${s.questions.length} ${unit}，Peglin 啟動中；選「新的遊戲／繼續」，戰鬥時就會出現。` : `已套用「${s.label}」${s.questions.length} ${unit}，下次瞄準時換成這份。`) + (r.imagesFromDisk ? `（${r.imagesFromDisk} 張圖由本機題庫資料夾補上）` : '');
+      st.textContent = (launch ? `已套用「${s.label}」${s.questions.length} ${unit}，本機 Peglin 啟動中；選「新的遊戲／繼續」，戰鬥時就會出現。` : `已套用「${s.label}」${s.questions.length} ${unit}，本機版下次瞄準時換成這份。`) + (r.imagesFromDisk ? `（${r.imagesFromDisk} 張圖由本機題庫資料夾補上）` : '');
     } catch (e) { st.textContent = e.message; } finally { buttons.forEach(b => b.disabled = false); if (!bridge) gate(); }
   }
-  const actionHtml = (label, note) => `<div class="peglin-action"><b id="pgPool"></b><span id="pgStatusText" role="status"></span><div class="row"><button class="px-btn gold big" id="pgLaunch">${label} ▶</button><button class="px-btn" id="pgApply">只套用</button></div><p class="dim small-t">${note}</p></div>`;
+  const actionHtml = (label, note) => `<div class="peglin-action"><b id="pgPool"></b><span id="pgStatusText" role="status"></span>
+    <div class="row"><button class="px-btn gold big" id="pgWeb" disabled>${label} ▶</button></div><p class="dim small-t">${note}</p>
+    <div id="pgLocalRow" class="peglin-local-row" hidden><b>🖥 本機版 PeglinQuiz</b><div class="peglin-fields">${penaltyHtml}</div>
+      <div class="row"><button class="px-btn" id="pgLaunch">用本機 Peglin 啟動</button><button class="px-btn" id="pgApply">只套用到本機版</button></div></div></div>`;
   const penaltyHtml = `<label>答錯扣血<select class="px-in" id="pgPenalty"><option value="0">不扣血・專心練習</option><option value="3">3 HP・輕鬆</option><option value="5">5 HP・標準</option><option value="10">10 HP・挑戰</option></select></label>
       <label>答對獎勵<select class="px-in" id="pgReward"><option value="normal">標準・答對傷害 ×1.2 起，連對加成</option><option value="strong">強力・答對傷害 ×1.3 起，連對加成</option><option value="off">關閉・純原版手感</option></select></label>`;
+  /* 一次可以發射幾顆：每答（完成）per 個，可以發射 shots 顆 */
+  const shotsHtml = (c, learn) => {
+    const opt = (list, cur, unit) => list.map(n => `<option value="${n}" ${Number(cur) === n ? 'selected' : ''}>${n} ${unit}</option>`).join('');
+    return `<div class="pg-shots"><span>每${learn ? '完成' : '答'}</span><select class="px-in" id="pgPer" aria-label="${learn ? '每完成幾步' : '每答幾題'}">${opt([1, 2, 3, 5], c.per, learn ? '步' : '題')}</select>
+      <span>可以發射</span><select class="px-in" id="pgShots" aria-label="可以發射幾顆彈珠">${opt([1, 2, 3, 4, 5, 10], c.shots, '顆')}</select>
+      <select class="px-in" id="pgOnWrong" aria-label="答錯時"><option value="count" ${c.onWrong !== 'none' ? 'selected' : ''}>答錯也算數</option><option value="none" ${c.onWrong === 'none' ? 'selected' : ''}>答對才算數</option></select></div>
+      <p class="dim small-t">${learn ? '讀完一張卡或做完一題檢核都算一步。' : ''}彈珠用完時遊戲會被蓋住（包括地圖、商店畫面），點一下就出下一${learn ? '步' : '題'}；也可以隨時按「📖」先答題存彈珠。</p>`;
+  };
+  function bindShots(c, save) {
+    U.$('#pgPer').onchange = e => { c.per = Number(e.target.value); save(); };
+    U.$('#pgShots').onchange = e => { c.shots = Number(e.target.value); save(); };
+    U.$('#pgOnWrong').onchange = e => { c.onWrong = e.target.value; save(); };
+  }
 
-  /* ---------- 分類整理：單元編號、名稱清理 ---------- */
+  /* ---------- 分類整理（彈珠學習的課程樹）：單元編號、名稱清理 ---------- */
   const CN = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9, 十: 10 };
   const cnNum = s => s.length === 1 ? CN[s] : s.length === 2 && s[0] === '十' ? 10 + CN[s[1]] : s.length === 2 && s[1] === '十' ? CN[s[0]] * 10 : CN[s[0]] * 10 + CN[s[2]];
   /* 「第10單元 眼角膜分層構造」→ { no: 10, tag: 'U10', name: '眼角膜分層構造' }；第99單元（中英名詞）排最後 */
@@ -289,111 +630,86 @@ const PEGLIN = (() => {
     if (m) return { no: +m[1] + (m[2] ? m[2] / 10 : 0), tag: 'U' + m[1] + (m[2] ? '-' + m[2] : ''), name: s.slice(m[0].length) || s };
     return { no: 500, tag: '', name: s };
   }
-  const cleanSet = s => String(s || '').replace(/^【[^】]*】\s*/, '').replace(/（(自編)?練習）$/, '').replace(/^眼解剖實驗：/, '').trim();
-  const yearOf = s => { const m = String(s || '').match(/(\d{2,3})\s*(年國考|學年度)/); return m ? { n: +m[1], short: m[1] + (m[2] === '學年度' ? ' 學年' : ' 年'), label: m[1] + (m[2] === '學年度' ? ' 學年度' : ' 年國考') } : null; };
-  const byNo = (a, b) => a.no - b.no || a.name.localeCompare(b.name, 'zh-Hant');
+  const subjectChips = (list, cur, count) => `<div class="pg-subjects" role="group" aria-label="科目">${list.map(s => `<button type="button" class="pg-subj ${cur === s ? 'on' : ''}" data-subj="${U.esc(s)}"><b>${U.esc(C.SUBJECTS[s].name)}</b><small>${count(s)}</small></button>`).join('')}</div>`;
 
-  /* 題庫：科目 → 來源（學期／課程）→ 單元 → 題本（國考年份） */
-  function examTree(subj) {
-    const secs = new Map();
-    Object.values(Store.EX).filter(e => e.subj === subj && e.count).forEach(e => {
-      const p = e.path || [];
-      const sec = p.length ? p[0] : '其他題本';
-      const year = p.length >= 4 ? yearOf(p[1]) : null;
-      const unitRaw = p.length >= 4 ? p[3] : p.length >= 2 ? p[p.length - 1] : e.name;
-      const u = unitInfo(p.length >= 2 ? unitRaw : cleanSet(e.name));
-      if (!secs.has(sec)) secs.set(sec, new Map());
-      const units = secs.get(sec), key = u.tag + u.name;
-      if (!units.has(key)) units.set(key, { ...u, key: sec + '|' + key, sets: [] });
-      units.get(key).sets.push({ e, year, label: year ? year.short : unitInfo(cleanSet(e.name)).tag || cleanSet(e.name) });
-    });
-    return [...secs.entries()].map(([name, units]) => ({ name, units: [...units.values()].sort(byNo).map(u => ({ ...u, sets: u.sets.sort((a, b) => (a.year?.n || 0) - (b.year?.n || 0) || (a.e.order || 0) - (b.e.order || 0)) })) }))
-      .sort((a, b) => a.name.localeCompare(b.name, 'zh-Hant'));
-  }
-  const setChip = (s, sel) => `<button type="button" class="pg-chip ${sel.has(s.e.id) ? 'on' : ''}" data-ex="${U.esc(s.e.id)}" title="${U.esc(QV.exLabel(s.e))}">${U.esc(s.label)}<small>${s.e.count}</small></button>`;
-  function quizTree(box, cfg, onChange) {
-    const open = new Set();
-    let view = cfg.view || 'unit';
-    function draw() {
-      const sel = new Set(cfg.exams);
-      const subjects = cfg.subjects.length === 1 ? cfg.subjects : Object.keys(C.SUBJECTS);
-      const all = ids => ids.length && ids.every(id => sel.has(id));
-      const some = ids => ids.some(id => sel.has(id));
-      const qn = ids => ids.reduce((a, id) => a + (Store.EX[id]?.count || 0), 0);
-      let hasYears = false;
-      const body = subjects.map(sj => {
-        const tree = examTree(sj); if (!tree.length) return '';
-        const secHtml = tree.map(sec => {
-          const units = sec.units, ids = units.flatMap(u => u.sets.map(s => s.e.id));
-          const yearMode = view === 'year' && units.some(u => u.sets.some(s => s.year));
-          if (units.some(u => u.sets.some(s => s.year))) hasYears = true;
-          let rows;
-          if (yearMode) {
-            const years = new Map();
-            units.forEach(u => u.sets.forEach(s => { const k = s.year ? s.year.label : '其他'; if (!years.has(k)) years.set(k, { n: s.year?.n || 999, list: [] }); years.get(k).list.push({ ...s, label: (u.tag || u.name.slice(0, 6)) }); }));
-            rows = [...years.entries()].sort((a, b) => a[1].n - b[1].n).map(([label, y]) => {
-              const yids = y.list.map(s => s.e.id);
-              return `<div class="pg-row ${some(yids) ? 'has' : ''}"><button type="button" class="pg-row-head" data-pickall="${yids.join(',')}"><i class="pg-check ${all(yids) ? 'on' : some(yids) ? 'part' : ''}"></i><b>${U.esc(label)}</b><small>${y.list.length} 單元・${qn(yids)} 題</small></button><div class="pg-chips">${y.list.map(s => setChip(s, sel)).join('')}</div></div>`;
-            }).join('');
-          } else {
-            rows = units.map(u => {
-              const uids = u.sets.map(s => s.e.id), single = u.sets.length === 1;
-              return `<div class="pg-row ${some(uids) ? 'has' : ''}"><button type="button" class="pg-row-head" data-pickall="${uids.join(',')}"><i class="pg-check ${all(uids) ? 'on' : some(uids) ? 'part' : ''}"></i>${u.tag ? `<span class="pg-tag">${U.esc(u.tag)}</span>` : ''}<b>${U.esc(u.name)}</b><small>${single ? '' : u.sets.length + ' 本・'}${qn(uids)} 題</small></button>${single ? '' : `<div class="pg-chips">${u.sets.map(s => setChip(s, sel)).join('')}</div>`}</div>`;
-            }).join('');
-          }
-          const k = sj + '|' + sec.name, isOpen = open.has(k) || some(ids) || (tree.length === 1 && subjects.length === 1);
-          return `<details class="pg-sec" data-k="${U.esc(k)}" ${isOpen ? 'open' : ''}><summary><b>${U.esc(sec.name)}</b><small>${sec.units.length} 單元・${qn(ids)} 題${some(ids) ? `・<em>已選 ${ids.filter(id => sel.has(id)).length} 本</em>` : ''}</small><button type="button" class="px-btn small" data-pickall="${ids.join(',')}">${all(ids) ? '全部取消' : '全選'}</button></summary><div class="pg-rows">${rows}</div></details>`;
-        }).join('');
-        return subjects.length > 1 ? `<h3 class="pg-subj-h">${U.esc(C.SUBJECTS[sj].name)}</h3>${secHtml}` : secHtml;
-      }).join('');
-      const n = cfg.exams.length;
-      box.innerHTML = `<div class="pg-tree-bar"><span>${n ? `已選 <b>${n}</b> 本題本・${qn(cfg.exams)} 題` : '未勾選＝使用這個科目的全部題本'}</span><span class="grow"></span>
-        ${hasYears ? `<div class="pg-seg" role="group" aria-label="分類方式"><button type="button" class="${view === 'unit' ? 'on' : ''}" data-view="unit">依單元</button><button type="button" class="${view === 'year' ? 'on' : ''}" data-view="year">依年份</button></div>` : ''}
-        ${n ? '<button type="button" class="px-btn small" data-clear>清除</button>' : ''}</div>${body || '<p class="dim">這個科目沒有題本。</p>'}`;
-    }
-    box.addEventListener('toggle', e => { const k = e.target.dataset?.k; if (k) e.target.open ? open.add(k) : open.delete(k); }, true);
-    box.onclick = ev => {
-      const v = ev.target.closest('[data-view]'), pa = ev.target.closest('[data-pickall]'), ch = ev.target.closest('[data-ex]');
-      if (v) { view = cfg.view = v.dataset.view; }
-      else if (ev.target.closest('[data-clear]')) cfg.exams = [];
-      else if (pa) { ev.preventDefault(); const ids = pa.dataset.pickall.split(','), every = ids.every(id => cfg.exams.includes(id)); cfg.exams = every ? cfg.exams.filter(id => !ids.includes(id)) : [...new Set(cfg.exams.concat(ids))]; }
-      else if (ch) { const id = ch.dataset.ex, i = cfg.exams.indexOf(id); i >= 0 ? cfg.exams.splice(i, 1) : cfg.exams.push(id); }
-      else return;
-      if (window.SFX) SFX.play('click'); draw(); onChange && onChange();
-    };
-    draw();
-    return draw;
-  }
-  const subjectChips = (list, cur, allowAll, count) => `<div class="pg-subjects" role="group" aria-label="科目">${list.map(s => `<button type="button" class="pg-subj ${cur === s ? 'on' : ''}" data-subj="${U.esc(s)}"><b>${U.esc(C.SUBJECTS[s].name)}</b><small>${count(s)}</small></button>`).join('')}${allowAll ? `<button type="button" class="pg-subj ${cur === '*' ? 'on' : ''}" data-subj="*"><b>全部科目</b><small>混合出題</small></button>` : ''}</div>`;
-
+  /* 彈珠刷題：範圍選擇與自由遠征相同（Screens.setPicker 的題本樹＋同一組條件），再加彈珠設定 */
   function quizSetup(box, ctx) {
     const ids = Object.keys(C.SUBJECTS);
-    const cfg = readCfg('peglin-config', { subjects: [ids[0]], exams: [], types: ['single', 'multi', 'fill', 'open'], status: 'all', count: 20, ordered: false, wrongPenalty: 5, reward: 'normal', retryWrong: true, view: 'unit' });
-    cfg.subjects = cfg.subjects.filter(s => ids.includes(s)); if (!cfg.subjects.length) cfg.subjects = [ids[0]];
-    const qCount = s => `${Store.filter({ subjects: [s] }).length.toLocaleString()} 題`;
-    box.innerHTML = `<h2>準備這次的題本</h2>
-      <div class="pg-step"><span class="pg-step-no">1</span><div><h3>科目</h3>${subjectChips(ids, cfg.subjects.length === 1 ? cfg.subjects[0] : '*', true, qCount)}</div></div>
-      <div class="pg-step"><span class="pg-step-no">2</span><div><h3>範圍 <small>勾整個單元，或只點某幾年的題本</small></h3><div id="pgSets" class="pg-tree"></div></div></div>
-      <div class="pg-step"><span class="pg-step-no">3</span><div><h3>出題方式</h3><div class="peglin-fields">
-        <label>練習範圍<select class="px-in" id="pgStatus"><option value="all">全部題目</option><option value="new">尚未作答</option><option value="wrongbook">錯題本重練</option><option value="lastwrong">上次答錯</option><option value="unmastered">還沒答對過</option></select></label>
-        <label>每輪題數<select class="px-in" id="pgCount">${[10, 20, 30, 50, 100].map(n => `<option value="${n}">${n} 題</option>`).join('')}</select></label>
-        ${penaltyHtml}</div>
-        <div class="peglin-types">${[['single', '單選／是非'], ['multi', '多選'], ['fill', '填答'], ['open', '非選自評']].map(([t, n]) => `<label><input type="checkbox" value="${t}" ${cfg.types.includes(t) ? 'checked' : ''}> ${n}</label>`).join('')}<label><input type="checkbox" id="pgOrdered" ${cfg.ordered ? 'checked' : ''}> 按題本順序</label><label><input type="checkbox" id="pgRetry" ${cfg.retryWrong ? 'checked' : ''}> 答錯的題稍後再出一次</label></div></div></div>
-      ${actionHtml('套用題本並啟動 Peglin', '每次瞄準前出一題：答對→這一球傷害加成（連對越高，每 5 連對回血）；答錯→扣血但不致死。題目用完會打散再來一輪；關掉遊戲再開會接著上次進度。遊戲內可用 1–9／A–I 作答、Enter 繼續。')}
+    const cfg = readCfg('peglin-config', { subjects: ids.slice(), exams: [], years: [], types: ['single', 'multi', 'fill'], starOnly: false, status: 'all', pref: 'smart', patFirst: false, count: '20', per: 1, shots: 1, onWrong: 'count', retryWrong: true, wrongPenalty: 5, reward: 'normal' });
+    cfg.subjects = (cfg.subjects || []).filter(s => ids.includes(s)); if (!cfg.subjects.length) cfg.subjects = ids.slice();
+    cfg.exams = (cfg.exams || []).filter(id => Store.EX[id]); cfg.years = cfg.years || [];
+    cfg.count = String(cfg.count || 20); if (!STATUS.some(([v]) => v === cfg.status)) cfg.status = 'all';
+    if (!PREF.some(([v]) => v === cfg.pref)) cfg.pref = 'smart';
+    if (cfg.starOnly === true) cfg.starOnly = 'related';
+    const chips = (list, sel) => list.map(([v, l]) => `<span class="chip ${sel.includes(v) ? 'on' : ''}" data-v="${v}">${l}</span>`).join('');
+    const patSubs = (() => { const P = window.QB.patterns || {}, s = new Set(); for (const id in P) { const q = Store.Q[id]; if (q) s.add(Store.EX[q.exam].subj); } return [...s].map(x => (C.SUBJECTS[x] || {}).name || x); })();
+    const starN = typeof LEARN_UI !== 'undefined' && LEARN_UI.starredTermCount ? LEARN_UI.starredTermCount() : 0;
+    box.innerHTML = `<h2>準備這次的題目</h2>
+      <p class="dim small-t">範圍的挑法和「自由遠征」一樣。</p>
+      <div class="filters peglin-filters">
+        <div class="frow"><label>科目</label><span id="pgSj">${chips(ids.map(s => [s, C.SUBJECTS[s].name]), cfg.subjects)}</span></div>
+        <div class="frow"><label>題本</label><span id="pgSets"></span></div>
+        <div class="frow"><label>題型</label><span id="pgTypes">${chips(TYPES, cfg.types)}</span></div>
+        <div class="frow"><label>星號</label><span id="pgStar">${chips([['exact', '★ 只刷星號部位本身'], ['related', '★ 星號部位＋相關題']], [cfg.starOnly])}</span><span class="small-t dim" style="margin-left:6px">學習模式已加星號 ${starN} 個部位</span></div>
+        <div class="frow"><label>出題</label><span id="pgPref">${chips(PREF, [cfg.pref])}</span></div>
+        <div class="frow"><label>同類題</label><span id="pgPat"><span class="chip ${cfg.patFirst ? 'on' : ''}" role="switch" aria-checked="${!!cfg.patFirst}">🧩 未刷過題型優先</span></span><span class="small-t dim">${patSubs.length ? `同一題型刷過一題，其他同型題往後排；目前已分類：${U.esc(patSubs.join('、'))}` : '目前還沒有分類好的題型'}</span></div>
+        <div class="frow"><label>狀態</label><span id="pgStatus">${chips(STATUS, [cfg.status])}</span></div>
+        <div class="frow"><label>題數</label><span id="pgCount">${chips(COUNTS, [cfg.count])}</span><input class="px-in" id="pgCountN" type="number" min="1" max="999" placeholder="自訂" style="width:90px" value="${COUNTS.some(([v]) => v === cfg.count) ? '' : U.esc(cfg.count)}"></div>
+      </div>
+      <p id="pgCnt" class="gold-t"></p>
+      <div class="pg-step-box"><h3>⚪ 彈珠</h3>${shotsHtml(cfg, false)}
+        <label class="pg-check-l"><input type="checkbox" id="pgRetryWrong" ${cfg.retryWrong ? 'checked' : ''}> 答錯的題稍後再出一次</label></div>
+      ${actionHtml('開始彈珠刷題', '會在這個頁面打開哥布林打彈珠（第一次載入約 30 MB，之後瀏覽器會快取）。一題答完就能發射；彈珠用完、遊戲會先暫停等你答題。一輪題目答完可以再來一輪。')}
       <button class="px-btn mt" id="pgPreview">先試答一題（不計紀錄）</button>`;
-    U.$('#pgStatus').value = cfg.status; U.$('#pgCount').value = cfg.count; U.$('#pgPenalty').value = cfg.wrongPenalty; U.$('#pgReward').value = cfg.reward;
-    const update = () => { const list = pool(cfg), n = list.length; U.$('#pgPool').textContent = `${n.toLocaleString()} 題可用 · 這輪 ${Math.min(n, cfg.count)} 題${list.some(q => q.group) ? '（題組一併保留）' : ''}`; localStorage.setItem(SKEY('peglin-config'), JSON.stringify(cfg)); };
-    const drawTree = quizTree(U.$('#pgSets'), cfg, update);
-    U.$$('[data-subj]', box).forEach(b => b.onclick = () => {
-      cfg.subjects = b.dataset.subj === '*' ? ids.slice() : [b.dataset.subj]; cfg.exams = [];
-      U.$$('[data-subj]', box).forEach(x => x.classList.toggle('on', x === b)); drawTree(); update();
+    U.$('#pgPenalty').value = cfg.wrongPenalty; U.$('#pgReward').value = cfg.reward;
+    const save = () => localStorage.setItem(SKEY('peglin-config'), JSON.stringify(cfg));
+    const update = () => {
+      const n = pool(cfg).length, cnt = U.$('#pgCnt');
+      cnt.textContent = `符合條件：${n.toLocaleString()} 題（每輪出 ${Math.min(n, roundSize(cfg))} 題）`;
+      U.$('#pgPool').textContent = `${n.toLocaleString()} 題可用・每輪 ${Math.min(n, roundSize(cfg))} 題`;
+      // 題池是 0、但選的題本其實有別的題型：提示並一鍵勾選（和自由遠征一樣）
+      if (!n) {
+        const all = Store.filter({ subjects: cfg.subjects, exams: cfg.exams, years: cfg.years, starOnly: cfg.starOnly, status: cfg.status });
+        const miss = TYPES.filter(([t]) => !cfg.types.includes(t) && all.some(q => q.type === t));
+        if (miss.length) {
+          const names = miss.map(([, x]) => `「${x}」`).join('、'), b = U.h(`<button class="px-btn small gold" style="margin-left:6px">勾選${names}</button>`);
+          cnt.appendChild(U.h(`<span class="small-t" style="display:block;color:var(--text)">這些題本的題目是${names}題，題型要勾選才會出題。</span>`)); cnt.lastChild.appendChild(b);
+          b.onclick = () => { miss.forEach(([t]) => { cfg.types.push(t); const c = U.$(`#pgTypes .chip[data-v="${t}"]`); if (c) c.classList.add('on'); }); SFX.play('click'); update(); };
+        }
+      }
+      save();
+    };
+    const drawSets = Screens.setPicker(U.$('#pgSets'), cfg, update);
+    const bind = (sel, key, multi, after) => U.$$(sel + ' .chip', box).forEach(c => c.onclick = () => {
+      const v = c.dataset.v;
+      if (multi) { const a = cfg[key], i = a.indexOf(v); i >= 0 ? a.splice(i, 1) : a.push(v); c.classList.toggle('on'); }
+      else { cfg[key] = v; U.$$(sel + ' .chip', box).forEach(x => x.classList.toggle('on', x === c)); }
+      SFX.play('click'); after && after(); update();
     });
-    for (const [id, key] of [['pgStatus', 'status'], ['pgCount', 'count'], ['pgPenalty', 'wrongPenalty'], ['pgReward', 'reward']]) U.$('#' + id).onchange = e => { cfg[key] = key === 'status' || key === 'reward' ? e.target.value : Number(e.target.value); update(); };
-    U.$$('.peglin-types input[value]', box).forEach(x => x.onchange = () => { cfg.types = U.$$('.peglin-types input[value]:checked', box).map(x => x.value); update(); });
-    U.$('#pgOrdered').onchange = e => { cfg.ordered = e.target.checked; update(); };
-    U.$('#pgRetry').onchange = e => { cfg.retryWrong = e.target.checked; update(); };
-    U.$('#pgLaunch').onclick = () => launchWith(st => exportSession(cfg, st), ctx, true);
-    U.$('#pgApply').onclick = () => launchWith(st => exportSession(cfg, st), ctx, false);
+    bind('#pgSj', 'subjects', true, () => drawSets());
+    bind('#pgTypes', 'types', true);
+    bind('#pgPref', 'pref', false);
+    bind('#pgStatus', 'status', false);
+    bind('#pgCount', 'count', false, () => { U.$('#pgCountN').value = ''; });
+    U.$$('#pgStar .chip', box).forEach(c => c.onclick = () => {
+      cfg.starOnly = cfg.starOnly === c.dataset.v ? false : c.dataset.v;   // 兩個互斥，再按一次關掉
+      U.$$('#pgStar .chip', box).forEach(x => x.classList.toggle('on', x.dataset.v === cfg.starOnly)); SFX.play('click'); update();
+      if (cfg.starOnly && !(typeof LEARN_UI !== 'undefined' && LEARN_UI.starredQids().size)) U.toast('還沒有加星號的部位：到學習模式的圖解點名稱旁的 ☆ 加星號', 4000);
+    });
+    const pat = U.$('#pgPat .chip'); pat.onclick = () => { cfg.patFirst = !cfg.patFirst; pat.classList.toggle('on', cfg.patFirst); pat.setAttribute('aria-checked', String(cfg.patFirst)); SFX.play('click'); save(); };
+    U.$('#pgCountN').oninput = e => { if (e.target.value) { cfg.count = String(U.clamp(Number(e.target.value), 1, 999)); U.$$('#pgCount .chip', box).forEach(c => c.classList.remove('on')); update(); } };
+    bindShots(cfg, save);
+    U.$('#pgRetryWrong').onchange = e => { cfg.retryWrong = e.target.checked; save(); };
+    U.$('#pgPenalty').onchange = e => { cfg.wrongPenalty = Number(e.target.value); save(); };
+    U.$('#pgReward').onchange = e => { cfg.reward = e.target.value; save(); };
+    const check = () => { if (!cfg.subjects.length || !cfg.types.length) { U.toast('科目、題型至少各選一項'); return false; } return true; };
+    U.$('#pgWeb').onclick = () => {
+      if (!check()) return;
+      const list = quizIds(cfg, roundSize(cfg)); if (!list.length) { U.toast('沒有符合條件的題目，請放寬篩選'); return; }
+      webOpen(quizSession(cfg, list));
+    };
+    U.$('#pgLaunch').onclick = () => check() && launchWith(st => exportSession(cfg, st), ctx, true);
+    U.$('#pgApply').onclick = () => check() && launchWith(st => exportSession(cfg, st), ctx, false);
     U.$('#pgPreview').onclick = () => {
       const q = queue(cfg)[0]; if (!q) { U.toast('目前沒有可用的題目'); return; }
       const m = U.modal({ title: '試答（不計入紀錄）', body: document.createElement('div') });
@@ -423,7 +739,7 @@ const PEGLIN = (() => {
     const packs = (typeof LEARN_UI !== 'undefined' && LEARN_UI.packs) || [];
     if (!packs.length) { box.innerHTML = '<h2>選課帶進遊戲</h2><p>目前沒有學習單元。先到「📥 導入素材」或在 content/learn/ 放入課程。</p>'; return; }
     const subs = Object.keys(C.SUBJECTS).filter(s => packs.some(p => p.subject === s));
-    const lcfg = readCfg('peglin-learn', { subject: subs[0], sel: [], wrongPenalty: 0, reward: 'normal' });
+    const lcfg = readCfg('peglin-learn', { subject: subs[0], sel: [], per: 1, shots: 1, onWrong: 'count', wrongPenalty: 0, reward: 'normal' });
     if (!subs.includes(lcfg.subject)) lcfg.subject = subs[0];
     if (!Array.isArray(lcfg.sel)) lcfg.sel = lcfg.pack && lcfg.lesson ? [lcfg.pack + '/' + lcfg.lesson] : [];
     const valid = new Set(packs.flatMap(p => p.lessons.map(l => p.id + '/' + l.id)));
@@ -438,14 +754,14 @@ const PEGLIN = (() => {
     box.innerHTML = `<h2>選課帶進遊戲</h2>
       <div class="pg-step"><span class="pg-step-no">1</span><div><h3>科目</h3><div id="plSubjects"></div></div></div>
       <div class="pg-step"><span class="pg-step-no">2</span><div><h3>點選要上的課 <small>點一下加入、再點一下取消；可以跨單元多選，會依課程順序上</small><button type="button" class="px-btn small" id="plNext">＋ 加入下一課</button></h3><div id="plTree" class="pg-tree"></div></div></div>
-      <div class="pg-step"><span class="pg-step-no">3</span><div><h3>這次的課表 <small>依課程順序</small><button type="button" class="px-btn small" id="plClear">清除</button></h3><div id="plPreview" class="peglin-lesson-preview"></div>
-        <div class="peglin-fields mt">${penaltyHtml}</div></div></div>
-      ${actionHtml('帶這些課進 Peglin', '每次瞄準前：讀一張卡（導入、概念、範例、回顧）或做一題檢核。檢核答錯先給提示再試一次；每課讀完會記成「完成」並給星等。課上完後會接著複習這幾課的題目。圖解與互動模擬仍請在「📘 學習模式」操作。')}`;
+      <div class="pg-step"><span class="pg-step-no">3</span><div><h3>這次的課表 <small>依課程順序</small><button type="button" class="px-btn small" id="plClear">清除</button></h3><div id="plPreview" class="peglin-lesson-preview"></div></div></div>
+      <div class="pg-step"><span class="pg-step-no">4</span><div><h3>⚪ 彈珠</h3>${shotsHtml(lcfg, true)}</div></div>
+      ${actionHtml('開始彈珠學習', '會在這個頁面打開哥布林打彈珠：讀一張卡（導入、概念、範例、回顧）或做一題檢核就能發射。檢核答錯先給提示再試一次；每課讀完會記成「完成」並給星等，選的課上完後接著複習這幾課的題目。可以點的圖解與互動模擬仍請在「📘 學習模式」操作。')}`;
     U.$('#pgPenalty').value = lcfg.wrongPenalty; U.$('#pgReward').value = lcfg.reward;
     const save = () => localStorage.setItem(SKEY('peglin-learn'), JSON.stringify(lcfg));
     const toggle = k => { const i = lcfg.sel.indexOf(k); i >= 0 ? lcfg.sel.splice(i, 1) : lcfg.sel.push(k); };
     function drawSubjects() {
-      U.$('#plSubjects').innerHTML = subjectChips(subs, lcfg.subject, false, lessonCount);
+      U.$('#plSubjects').innerHTML = subjectChips(subs, lcfg.subject, lessonCount);
       U.$$('#plSubjects [data-subj]').forEach(b => b.onclick = () => { lcfg.subject = b.dataset.subj; openUnit = ''; drawAll(); });
     }
     function drawTree() {
@@ -481,7 +797,8 @@ const PEGLIN = (() => {
       if (!list.length) { U.$('#pgPool').textContent = '還沒選課：在上面點一下課程就會加入'; U.$('#plPreview').innerHTML = '<p class="dim small-t">（尚未選課）</p>'; U.$('#plClear').hidden = true; return; }
       U.$('#plClear').hidden = false;
       const count = list.reduce((a, { l }) => { l.steps.forEach(s => { if (s.type === 'check') a.q++; else if (s.type === 'practice') a.q += (s.qids || []).length + (s.pick ? (s.pick.n || 2) : 0) + (s.checks || []).length; else a.r++; }); return a; }, { r: 0, q: 0 });
-      U.$('#pgPool').textContent = `已選 ${list.length} 課・約 ${count.r} 張閱讀卡＋${count.q} 題檢核（約 ${count.r + count.q} 球）`;
+      const steps = count.r + count.q, per = Math.max(1, lcfg.per || 1), balls = Math.floor(steps / per) * Math.max(1, lcfg.shots || 1);
+      U.$('#pgPool').textContent = `已選 ${list.length} 課・約 ${count.r} 張閱讀卡＋${count.q} 題檢核（約可發射 ${balls} 顆）`;
       U.$('#plPreview').innerHTML = list.map(({ p, l }, i) => `<div class="pg-plan"><span class="pg-lno">${i + 1}</span><div><b>${isDone(L, p, l) ? '✓ ' : ''}${U.esc(l.title)}</b><small>${U.esc(p.title)}</small></div><button type="button" class="pg-x" data-rm="${U.esc(key(p, l))}" title="取消這一課" aria-label="取消這一課">✕</button></div>`).join('');
       U.$$('#plPreview [data-rm]').forEach(b => b.onclick = () => { toggle(b.dataset.rm); drawAll(); });
     }
@@ -493,13 +810,19 @@ const PEGLIN = (() => {
         if (!isDone(L, p, l) && !lcfg.sel.includes(key(p, l))) { lcfg.sel.push(key(p, l)); openUnit = u.key; drawAll(); const el = U.$(`#plTree [data-k="${CSS.escape(key(p, l))}"]`); if (el) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); return; }
       U.toast('這個科目的課都上完或都選了');
     };
+    bindShots(lcfg, () => { save(); preview(); });
     U.$('#pgPenalty').onchange = e => { lcfg.wrongPenalty = Number(e.target.value); save(); };
     U.$('#pgReward').onchange = e => { lcfg.reward = e.target.value; save(); };
+    U.$('#pgWeb').onclick = () => {
+      const list = selectedLessons(lcfg); if (!list.length) { U.toast('請先點選要上的課（可以多選）'); return; }
+      webOpen(learnSession(lcfg, list));
+    };
     U.$('#pgLaunch').onclick = () => launchWith(st => exportLearn(lcfg, st), ctx, true);
     U.$('#pgApply').onclick = () => launchWith(st => exportLearn(lcfg, st), ctx, false);
     drawAll();
   }
 
   document.addEventListener('DOMContentLoaded', () => { if (autoProbe()) startSync(); });
-  return { screen, sync, detect, exportSession, exportLearn, lessonItems, queue, exportData, importData, backup };
+  return { screen, sync, detect, exportSession, exportLearn, lessonItems, queue, exportData, importData, backup,
+    web: { open: webOpen, close: webClose, probe: probeWeb, quizIds, quizSession, learnSession, selectedLessons, get state() { return G; } } };
 })();
