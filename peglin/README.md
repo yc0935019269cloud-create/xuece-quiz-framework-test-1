@@ -34,7 +34,7 @@ peglin/web.html（外框頁）── 載入 https://yc0935019269cloud-create.git
 - **範圍**：彈珠刷題的條件和自由遠征相同（科目、`Screens.setPicker` 題本樹與年份、題型、星號、出題順序、同類題、狀態、題數），排序規則與 `screens.js` 的 `prefOrder` 一致；彈珠學習沿用原本的選課樹。
 - **網址**：預設 `https://yc0935019269cloud-create.github.io/peglinnnnnnn/`，可在彈珠頁「⚙ 網頁版遊戲網址」改；只接受自己的 github.io 或 localhost（外框頁也檢查，避免網址參數被拿來載入別人的程式）。
 - **限制**：遊戲本身不知道有題目，所以沒有答對傷害加成、答錯扣血；遊戲音效若被遊戲內設定完全關掉可能偵測不到（未實測）；第一次載入約 30 MB；Peglin 的冒險存檔由遊戲自己存在瀏覽器（與 peglinnnnnnn 網頁本身的存檔分開）。可以點的圖解、互動模擬、字母發音只在學習模式。
-- **測試**：`tools/peglin-web-qa/check.cjs`（headless Edge＋SwiftShader，file:// 開 index.html，實際載入遊戲、等標題畫面出現、開新冒險、打進第一關發射，備份／還原 localStorage）23／23 通過；結果 `docs/peglin-web/qa.json`、截圖 `output/playwright/peglin-web-*.png`。需要網路，整趟約 8 分鐘。沒有實機 iPad／手機實玩測試。
+- **測試**：`tools/peglin-web-qa/check.cjs`（headless Edge＋SwiftShader，file:// 開 index.html，實際載入遊戲、等標題畫面出現、開新冒險、打進第一關發射，備份／還原 localStorage）28／28 通過；結果 `docs/peglin-web/qa.json`、截圖 `output/playwright/peglin-web-*.png`。需要網路，整趟約 8 分鐘。沒有實機 iPad／手機實玩測試。
 
 ## 本機版架構：題庫在這裡，遊戲本體在 E:\PeglinQuiz
 

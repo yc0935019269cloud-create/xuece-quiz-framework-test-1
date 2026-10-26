@@ -35,7 +35,7 @@
 - GitHub Pages 上不再自動探測本機啟動器（避免別台裝置跳「存取本機網路」詢問），要用本機版按側欄「偵測本機啟動器」；file:// 與 localhost 照舊自動偵測。網頁版與本機版都不能用時才顯示原本的說明。遊戲網址可在彈珠頁「⚙ 網頁版遊戲網址」改，外框頁與 peglin.js 都只接受 `yc0935019269cloud-create.github.io` 或 localhost（避免網址參數載入別人的程式）；`peglin-web.debug` 只給 QA 讀外框頁狀態。
 - 限制：遊戲不知道有題目，沒有答對傷害加成／答錯扣血；遊戲內音效關到 0 時能否偵測未實測；createUnityInstance 完成後遊戲還要自己預載資源與載入標題（SwiftShader 上幾十秒，實機較快）；首次載入約 30 MB；Peglin 存檔存在瀏覽器、與 peglinnnnnnn 網頁本身分開；可以點的圖解、互動、字母發音只在學習模式。沒有實機 iPad／手機實玩測試。
 - 對方 repo 改版時：先確認發射音效仍是 UI_Tock_02（長度備援通常就夠），新指紋可加在 web.html 的 `LAUNCH_FP` 或用網址參數 `fp=`。
-- QA：`tools/peglin-web-qa/check.cjs`（headless Edge＋SwiftShader、file://、實際載入遊戲開新冒險打進第一關發射；備份還原 localStorage）**23／23 通過**、無頁面錯誤：準備頁與自由遠征同一套條件與題數、答對寫紀錄＋給彈珠、戰鬥中實際發射逐顆偵測（點了沒發射的不算）、用完遮罩＋外框鎖鍵盤、按鍵／點遊戲叫出下一題、答錯進錯題本並稍後再出、結束移除 iframe、test 場次不寫紀錄、彈珠學習一課走完記完成＋檢核錯題進複習盒＋每 2 步換 1 顆、網頁版連不到顯示原說明、♪ 刷題地牢音量面板（桌機與 390px）、390px 手機版。另用常駐 driver 打完一整場戰鬥＋選路線＋第二關驗證偵測（每發一顆、不多算）。結果 `docs/peglin-web/qa.json`、截圖 `output/playwright/peglin-web-*.png`。詳細介接見 `peglin/README.md`。
+- QA：`tools/peglin-web-qa/check.cjs`（headless Edge＋SwiftShader、file://、實際載入遊戲開新冒險打進第一關發射；備份還原 localStorage）**28／28 通過**、無頁面錯誤：準備頁與自由遠征同一套條件與題數、答對寫紀錄＋給彈珠、戰鬥中實際發射逐顆偵測（點了沒發射的不算）、用完遮罩＋外框鎖鍵盤、按鍵／點遊戲叫出下一題、答錯進錯題本並稍後再出、結束移除 iframe、test 場次不寫紀錄、彈珠學習一課走完記完成＋檢核錯題進複習盒＋每 2 步換 1 顆、網頁版連不到顯示原說明、♪ 刷題地牢音量面板（桌機與 390px）、390px 手機版。另用常駐 driver 打完一整場戰鬥＋選路線＋第二關驗證偵測（每發一顆、不多算）。結果 `docs/peglin-web/qa.json`、截圖 `output/playwright/peglin-web-*.png`。詳細介接見 `peglin/README.md`。
 
 ## 角色與動畫（2026-10-04）
 

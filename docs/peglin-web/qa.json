@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T18:44:08.471Z",
+ "at": "2026-10-26T03:37:02.425Z",
  "checks": [
   {
    "name": "準備頁：科目／題本樹（含年份）／題型／星號／出題方式／同類題／狀態／題數／彈珠數都在",
@@ -37,7 +37,23 @@
      "single"
     ],
     "expect": 641,
-    "text": "符合條件：641 題（每輪出 20 題）"
+    "text": "符合條件：641 題（每輪出 20 題）已刷 0 題・未刷 641 題｜題型 641 種：已刷 0・未刷 641（這個範圍還沒有同類題分組，每題各算一型）"
+   }
+  },
+  {
+   "name": "範圍統計：顯示已刷／未刷題數與題型已刷／未刷，數字和遠征同一套計算",
+   "pass": true,
+   "extra": {
+    "s": {
+     "total": 641,
+     "done": 0,
+     "todo": 641,
+     "types": 641,
+     "tDone": 0,
+     "tTodo": 641,
+     "loose": 641
+    },
+    "text": "已刷 0 題・未刷 641 題｜題型 641 種：已刷 0・未刷 641（這個範圍還沒有同類題分組，每題各算一型）"
    }
   },
   {
@@ -65,14 +81,52 @@
     "error": "",
     "item": {
      "kind": "bank",
-     "id": "eye115-exam-cornea-general-108-306",
-     "key": "D",
+     "id": "eye115-exam-blood-vessels-107-19",
+     "key": "B",
      "type": "single"
     }
    }
   },
   {
-   "name": "答對：Store.record 寫進作答紀錄、彈珠 +2、按鈕變「去發射」",
+   "name": "✕ 暫時關閉題目：收起、遮罩還在、按鍵不作答；點遊戲畫面回到同一題",
+   "pass": true,
+   "extra": {
+    "parked": {
+     "panel": false,
+     "parked": true,
+     "shield": true,
+     "ask": "📖 回到題目"
+    },
+    "stillUnanswered": true,
+    "back": {
+     "kind": "bank",
+     "id": "eye115-exam-blood-vessels-107-19",
+     "key": "B",
+     "type": "single"
+    }
+   }
+  },
+  {
+   "name": "工作列：💬 AI 助教可開關；🍅 番茄鐘可開始、暫停鈕出現、結束後按鈕回到 🍅",
+   "pass": true,
+   "extra": {
+    "aiOpen": true,
+    "pomo1": {
+     "shown": true,
+     "btn": true
+    },
+    "pomo2": {
+     "phase": "focus",
+     "pause": true
+    },
+    "pomo3": {
+     "phase": "idle",
+     "btn": "🍅"
+    }
+   }
+  },
+  {
+   "name": "答對：Store.record 寫進作答紀錄、彈珠 +2、主按鈕是「下一題」、旁邊有「去發射」",
    "pass": true,
    "extra": {
     "g": {
@@ -89,8 +143,8 @@
      "error": "",
      "item": {
       "kind": "bank",
-      "id": "eye115-exam-cornea-general-108-306",
-      "key": "D",
+      "id": "eye115-exam-blood-vessels-107-19",
+      "key": "B",
       "type": "single"
      }
     },
@@ -99,12 +153,39 @@
      "c": 1,
      "w": 0,
      "last": 1,
-     "t": 1792953850819
+     "t": 1792985826897
     }
    }
   },
   {
-   "name": "去發射：面板收起、遮罩拿掉（還有彈珠）",
+   "name": "連續作答：按下一題面板不關、換成新題目，彈珠保留",
+   "pass": true,
+   "extra": {
+    "credits": 2,
+    "pts": 0,
+    "fired": 0,
+    "graded": 1,
+    "right": 1,
+    "reads": 0,
+    "lessons": 0,
+    "panel": true,
+    "ready": false,
+    "armed": false,
+    "error": "",
+    "item": {
+     "kind": "bank",
+     "id": "eye115-exam-ans-reflex-112-11",
+     "key": "B",
+     "type": "single"
+    }
+   }
+  },
+  {
+   "name": "連續答第二題後彈珠累積到 4 顆",
+   "pass": true
+  },
+  {
+   "name": "按去發射：面板收起、遮罩拿掉（還有彈珠）",
    "pass": true
   },
   {
@@ -143,11 +224,11 @@
    "name": "遊戲在 iframe 內載入完成、發射偵測就緒（發射音效已解碼）",
    "pass": true,
    "extra": {
-    "credits": 2,
+    "credits": 4,
     "pts": 0,
     "fired": 0,
-    "graded": 1,
-    "right": 1,
+    "graded": 2,
+    "right": 2,
     "reads": 0,
     "lessons": 0,
     "panel": false,
@@ -165,15 +246,15 @@
    }
   },
   {
-   "name": "戰鬥中實際發射：每次發射偵測一顆、給的 2 顆用完、遊戲被蓋住並鎖住輸入",
+   "name": "戰鬥中實際發射：每次發射偵測一顆、存的彈珠用完、遊戲被蓋住並鎖住輸入",
    "pass": true,
    "extra": {
     "g": {
      "credits": 0,
      "pts": 0,
-     "fired": 2,
-     "graded": 1,
-     "right": 1,
+     "fired": 4,
+     "graded": 2,
+     "right": 2,
      "reads": 0,
      "lessons": 0,
      "panel": false,
@@ -184,6 +265,8 @@
     },
     "locked": true,
     "firedLog": [
+     1,
+     1,
      1,
      1
     ],
@@ -196,9 +279,9 @@
    "extra": {
     "credits": 0,
     "pts": 0,
-    "fired": 2,
-    "graded": 1,
-    "right": 1,
+    "fired": 4,
+    "graded": 2,
+    "right": 2,
     "reads": 0,
     "lessons": 0,
     "panel": true,
@@ -207,8 +290,8 @@
     "error": "",
     "item": {
      "kind": "bank",
-     "id": "s114-eye-ans-exam106-u14-q0022",
-     "key": "C",
+     "id": "eye115-exam-blood-retina-113-211",
+     "key": "A",
      "type": "single"
     }
    }
@@ -221,9 +304,9 @@
     "g2": {
      "credits": 2,
      "pts": 0,
-     "fired": 2,
-     "graded": 2,
-     "right": 1,
+     "fired": 4,
+     "graded": 3,
+     "right": 2,
      "reads": 0,
      "lessons": 0,
      "panel": true,
@@ -232,8 +315,8 @@
      "error": "",
      "item": {
       "kind": "bank",
-      "id": "s114-eye-ans-exam106-u14-q0022",
-      "key": "C",
+      "id": "eye115-exam-blood-retina-113-211",
+      "key": "A",
       "type": "single"
      }
     },
@@ -247,9 +330,9 @@
     "g": {
      "credits": 0,
      "pts": 0,
-     "fired": 4,
-     "graded": 2,
-     "right": 1,
+     "fired": 6,
+     "graded": 3,
+     "right": 2,
      "reads": 0,
      "lessons": 0,
      "panel": true,
@@ -258,12 +341,12 @@
      "error": "",
      "item": {
       "kind": "bank",
-      "id": "eye115-exam-ans-clinical-109-33",
-      "key": "D",
+      "id": "eye-quiz-blood-supply-23",
+      "key": "C",
       "type": "single"
      }
     },
-    "startsBefore": 104
+    "startsBefore": 250
    }
   },
   {
@@ -316,7 +399,7 @@
       "i": 0,
       "done": 1,
       "best": 2,
-      "last": 1792953992989,
+      "last": 1792985997568,
       "run": null
      },
      "rev": 5
@@ -379,6 +462,6 @@
  ],
  "firedAtStart": 0,
  "restored": true,
- "pass": 23,
- "total": 23
+ "pass": 28,
+ "total": 28
 }
