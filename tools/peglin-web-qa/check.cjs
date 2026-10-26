@@ -42,6 +42,8 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
       return { exams: cfg.exams.length, types: cfg.types, expect, text: document.querySelector('#pgCnt').textContent };
     });
     ok('題本樹勾選後寫進設定、題數與自由遠征同一套 Store.filter 計算', pick.exams > 0 && pick.text.includes(pick.expect.toLocaleString()), pick);
+    const scope = await page.evaluate(() => { const cfg = JSON.parse(localStorage.getItem(SKEY('peglin-config'))); const list = Store.filter({ subjects: cfg.subjects, exams: cfg.exams, years: cfg.years, types: cfg.types, starOnly: cfg.starOnly, status: cfg.status }).filter(q => cfg.types.includes('open') || q.type !== 'open'); const s = Screens.scopeStats(list), el = document.querySelector('#pgCnt .scope-stats'); return { s, text: el && el.textContent }; });
+    ok('範圍統計：顯示已刷／未刷題數與題型已刷／未刷，數字和遠征同一套計算', !!scope.text && scope.text.includes(`已刷 ${scope.s.done} 題`) && scope.text.includes(`未刷 ${scope.s.todo} 題`) && scope.text.includes(`題型 ${scope.s.types} 種`) && scope.text.includes(`未刷 ${scope.s.tTodo}`), scope);
     await page.evaluate(() => { const sel = document.querySelector('#pgShots'); sel.value = '2'; sel.dispatchEvent(new Event('change')); const pref = document.querySelector('#pgPref .chip[data-v="rand"]'); pref.click(); });
     await page.waitForFunction(() => !document.querySelector('#pgWeb').disabled, null, { timeout: 20000 });
     ok('網頁版偵測到可用（GitHub Pages 有回應），按鈕可按、沒有顯示「不能用」說明', await page.evaluate(() => !document.querySelector('#pgWeb').disabled && document.querySelector('#pgGate').hidden && /網頁版可用/.test(document.querySelector('#pgWebState').textContent)));
@@ -56,16 +58,41 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     await page.setViewportSize({ width: 1280, height: Math.round(720 + barH) });
     let g = await G();
     ok('開啟後覆蓋整個畫面、iframe 載入外框頁、第一題立刻出現、遊戲被鎖住', g && g.panel && g.item.kind === 'bank' && g.credits === 0 && await page.evaluate(() => !!document.querySelector('#pgwFrame') && !document.querySelector('#pgwShield').hidden), g);
+    // ✕ 暫時關閉：題目收起、遮罩還在（沒彈珠）、按鍵不會在看不到的題目上作答；點遮罩回到同一題
+    await page.click('#pgwHide');
+    const parked = await page.evaluate(() => ({ panel: PEGLIN.web.state.panel, parked: PEGLIN.web.state.parked, shield: !document.querySelector('#pgwShield').hidden, ask: document.querySelector('#pgwAsk').textContent }));
+    await page.keyboard.press('1');
+    const stillUnanswered = await page.evaluate(() => !document.querySelector('#pgwQ .result-box .verdict'));
+    await page.click('#pgwShieldBtn');
+    const back = await G();
+    ok('✕ 暫時關閉題目：收起、遮罩還在、按鍵不作答；點遊戲畫面回到同一題', !parked.panel && parked.parked && parked.shield && /回到題目/.test(parked.ask) && stillUnanswered && back.panel && back.item && back.item.id === g.item.id, { parked, stillUnanswered, back: back.item });
+    // 工作列有 AI 助教與番茄鐘
+    await page.click('#pgwAi'); const aiOpen = await page.evaluate(() => !document.querySelector('#aiPanel').hidden); await page.click('#pgwAi');
+    await page.click('#pgwPomoBtn');
+    const pomo1 = await page.evaluate(() => ({ shown: !document.querySelector('#pgwPomo').hidden, btn: !!document.querySelector('#pgwPomo [data-pp="cycle"]') }));
+    await page.click('#pgwPomo [data-pp="cycle"]');
+    const pomo2 = await page.evaluate(() => ({ phase: POMO.data.st.phase, pause: !!document.querySelector('#pgwPomo [data-pp="pause"]') }));
+    await page.click('#pgwPomo [data-pp="end"]');
+    await page.waitForTimeout(1100);
+    const pomo3 = await page.evaluate(() => ({ phase: POMO.data.st.phase, btn: document.querySelector('#pgwPomoBtn').textContent }));
+    await page.keyboard.press('Escape');
+    ok('工作列：💬 AI 助教可開關；🍅 番茄鐘可開始、暫停鈕出現、結束後按鈕回到 🍅', aiOpen && pomo1.shown && pomo1.btn && pomo2.phase === 'focus' && pomo2.pause && pomo3.phase === 'idle' && /🍅/.test(pomo3.btn), { aiOpen, pomo1, pomo2, pomo3 });
     const q1 = g.item, before1 = await page.evaluate(id => JSON.stringify(Store.qs[id] || null), q1.id);
     await page.click(`#pgwQ .opt[data-l="${q1.key[0]}"]`);
     await page.waitForSelector('#pgwQ .next-btn');
     g = await G();
     const rec1 = await page.evaluate(id => Store.qs[id], q1.id);
-    ok('答對：Store.record 寫進作答紀錄、彈珠 +2、按鈕變「去發射」', g.credits === 2 && rec1 && rec1.a >= 1 && JSON.stringify(rec1) !== before1 && /去發射/.test(await page.textContent('#pgwQ .next-btn')), { g, rec1 });
+    ok('答對：Store.record 寫進作答紀錄、彈珠 +2、主按鈕是「下一題」、旁邊有「去發射」', g.credits === 2 && rec1 && rec1.a >= 1 && JSON.stringify(rec1) !== before1 && /下一題/.test(await page.textContent('#pgwQ .next-btn')) && /去發射/.test(await page.textContent('#pgwQ .pgw-shoot')), { g, rec1 });
     await shot('answered');
-    await page.click('#pgwQ .next-btn');
+    // 連續作答：按「下一題」面板不關、換新題，彈珠存著；再答完按「去發射」才收起
+    const firstId = g.item.id; await page.click('#pgwQ .next-btn');
+    const cont = await G();
+    ok('連續作答：按下一題面板不關、換成新題目，彈珠保留', cont.panel && cont.item && cont.item.id !== firstId && cont.credits === 2, cont);
+    await page.click(`#pgwQ .opt[data-l="${cont.item.key[0]}"]`); await page.waitForSelector('#pgwQ .pgw-shoot');
+    ok('連續答第二題後彈珠累積到 4 顆', (await G()).credits === 4);
+    await page.click('#pgwQ .pgw-shoot');
     g = await G();
-    ok('去發射：面板收起、遮罩拿掉（還有彈珠）', !g.panel && await page.evaluate(() => document.querySelector('#pgwShield').hidden));
+    ok('按去發射：面板收起、遮罩拿掉（還有彈珠）', !g.panel && await page.evaluate(() => document.querySelector('#pgwShield').hidden));
 
     /* ---------- 2b. ♪：在彈珠畫面裡調刷題地牢的音樂與音效（同一組 VOL 設定） ---------- */
     await page.evaluate(() => VOL.set('muted', false));   // 測試一開始設成靜音，這裡先恢復，才能驗證「按一下＝靜音」
@@ -123,7 +150,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     }
     g = await G();
     const locked = await frame().evaluate(() => window.__pgw && window.__pgw.locked);
-    ok('戰鬥中實際發射：每次發射偵測一顆、給的 2 顆用完、遊戲被蓋住並鎖住輸入', g.fired >= 2 && g.credits === 0 && !g.panel && locked === true && firedLog.every(n => n <= 1) && await page.evaluate(() => !document.querySelector('#pgwShield').hidden), { g, locked, firedLog, firedAtStart });
+    ok('戰鬥中實際發射：每次發射偵測一顆、存的彈珠用完、遊戲被蓋住並鎖住輸入', g.fired >= 2 && g.credits === 0 && !g.panel && locked === true && firedLog.every(n => n <= 1) && await page.evaluate(() => !document.querySelector('#pgwShield').hidden), { g, locked, firedLog, firedAtStart });
     await sleep(9000);
     await shot('out-of-balls');
 
@@ -143,7 +170,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
       ok('答錯：進錯題本、預設「答錯也算數」仍給 2 顆、這題排到後面再出一次', wb && g2.credits === 2 && await total() === t0 + 1, { wb, g2, t0 });
     }
     await shot('wrong-answer');
-    await page.click('#pgwQ .next-btn:visible');
+    await page.click('#pgwQ .pgw-shoot');
     // 彈珠用完時遊戲被遮罩蓋住：點遊戲畫面只會叫出題目，點擊不會傳進遊戲（模擬兩次發射把彈珠用完）
     await frame().evaluate(() => { parent.postMessage({ pgw: 1, type: 'shot' }, '*'); setTimeout(() => parent.postMessage({ pgw: 1, type: 'shot' }, '*'), 1500); });
     await page.waitForFunction(() => PEGLIN.web.state.credits === 0 && !document.querySelector('#pgwShield').hidden, null, { timeout: 8000 }).catch(() => {});

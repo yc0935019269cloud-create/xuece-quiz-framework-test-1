@@ -285,16 +285,19 @@ const PEGLIN = (() => {
         <span class="pgw-stat" id="pgwStat"></span>
         <span class="grow"></span>
         <button class="px-btn small" id="pgwAsk" title="先答題，把彈珠存起來">📖 ${learn ? '下一步' : '答題'}</button>
+        ${typeof POMO !== 'undefined' ? '<button class="px-btn small" id="pgwPomoBtn" title="番茄鐘" aria-label="番茄鐘" aria-expanded="false">🍅</button>' : ''}
         <button class="px-btn small" id="pgwVolBtn" title="刷題地牢的音樂與音效" aria-label="刷題地牢的音樂與音效" aria-expanded="false">♪</button>
+        ${typeof AI !== 'undefined' ? '<button class="px-btn small" id="pgwAi" title="AI 助教" aria-label="AI 助教">💬</button>' : ''}
         ${typeof Calc !== 'undefined' ? '<button class="px-btn small" id="pgwCalc" title="計算機" aria-label="計算機">🧮</button>' : ''}
         ${typeof PAD !== 'undefined' ? '<button class="px-btn small" id="pgwPad" title="計算紙" aria-label="計算紙">📝</button>' : ''}
         <button class="px-btn small" id="pgwExit">✕ 結束</button>
         <div class="pgw-vol panel" id="pgwVol" role="dialog" aria-label="刷題地牢的音樂與音效" hidden></div>
+        <div class="pgw-vol panel" id="pgwPomo" role="dialog" aria-label="番茄鐘" hidden></div>
       </div>
       <div class="pgw-stage">
         <iframe id="pgwFrame" title="哥布林彈珠" allow="autoplay; fullscreen; gamepad" src="${U.esc(hostUrl())}"></iframe>
         <div class="pgw-shield" id="pgwShield"><button type="button" class="pgw-shield-btn" id="pgwShieldBtn"></button></div>
-        <section class="pgw-panel" id="pgwPanel" tabindex="-1" hidden><div class="pgw-head" id="pgwHead"></div><div id="pgwQ"></div></section>
+        <section class="pgw-panel" id="pgwPanel" tabindex="-1" hidden><button type="button" class="pgw-hide" id="pgwHide" title="暫時關閉題目（點📖或彈珠用完時會回到這一題）" aria-label="暫時關閉題目">✕</button><div class="pgw-head" id="pgwHead"></div><div id="pgwQ"></div></section>
       </div></div>`);
     document.body.appendChild(el);
     document.documentElement.classList.add('pgw-open');
@@ -302,11 +305,14 @@ const PEGLIN = (() => {
       if (G.graded + G.reads && !(await U.confirm('結束彈珠', '會關閉遊戲畫面。這次的作答都已經記進進度了，確定結束嗎？'))) return;
       webClose();
     };
-    U.$('#pgwAsk').onclick = () => { if (!G.panel) next(); };
-    U.$('#pgwVolBtn').onclick = () => toggleVol();
+    U.$('#pgwAsk').onclick = () => ask();
+    U.$('#pgwHide').onclick = () => hidePanel();
+    U.$('#pgwVolBtn').onclick = () => togglePop('vol');
+    if (U.$('#pgwPomoBtn')) { U.$('#pgwPomoBtn').onclick = () => togglePop('pomo'); G.pomoTimer = setInterval(pomoTick, 1000); pomoTick(); }
+    if (U.$('#pgwAi')) U.$('#pgwAi').onclick = () => AI.toggle();
     if (U.$('#pgwCalc')) U.$('#pgwCalc').onclick = () => Calc.toggle();
     if (U.$('#pgwPad')) U.$('#pgwPad').onclick = () => PAD.toggle();
-    U.$('#pgwShield').onclick = () => { if (!G.panel) next(); };   // 彈珠用完時點遊戲畫面任何地方都出下一題
+    U.$('#pgwShield').onclick = () => ask();   // 彈珠用完時點遊戲畫面任何地方都出題（暫時關閉的題目會回來）
     U.$('#pgwFrame').addEventListener('load', () => lock(G && G.credits <= 0));
     window.addEventListener('message', onMsg);
     document.addEventListener('keydown', onKey, true);
@@ -323,23 +329,50 @@ const PEGLIN = (() => {
       G.fired++;
       if (G.credits > 0) G.credits--;
       if (G.credits <= 0 && !G.panel) lock(true);
-    } else if (d.type === 'blocked') { if (!G.panel) next(); }
+    } else if (d.type === 'blocked') ask();
     hud();
   }
-  /* 刷題地牢自己的音樂與音效（和頂部「♪ 音樂與音量」同一組控制：Screens.volumeControls），不是遊戲本身的音量 */
-  function volOutside(e) { const v = U.$('#pgwVol'); if (v && !v.contains(e.target) && !U.$('#pgwVolBtn').contains(e.target)) toggleVol(false); }
-  const volBlur = () => toggleVol(false);   // 點進遊戲（iframe）時父頁收不到 pointerdown，只會 blur
-  function toggleVol(on) {
-    const v = U.$('#pgwVol'), b = U.$('#pgwVolBtn'); if (!v) return;
+  /* 工作列的小視窗：♪ 刷題地牢自己的音樂與音效（和頂部「♪ 音樂與音量」同一組 Screens.volumeControls，不是遊戲本身的音量）、🍅 番茄鐘 */
+  const POPS = { vol: ['#pgwVol', '#pgwVolBtn'], pomo: ['#pgwPomo', '#pgwPomoBtn'] };
+  let popOpen = null;
+  function popOutside(e) { if (!popOpen) return; const [p, b] = POPS[popOpen]; if (!U.$(p).contains(e.target) && !U.$(b).contains(e.target)) togglePop(popOpen, false); }
+  const popBlur = () => { if (popOpen) togglePop(popOpen, false); };   // 點進遊戲（iframe）時父頁收不到 pointerdown，只會 blur
+  function togglePop(name, on) {
+    const v = U.$(POPS[name][0]), b = U.$(POPS[name][1]); if (!v || !b) return;
     on = on === undefined ? v.hidden : on;
-    if (on) { v.innerHTML = '<h3>刷題地牢的音樂與音效</h3><p class="dim small-t">遊戲本身的音量請用遊戲裡的「選項」。</p>'; v.appendChild(Screens.volumeControls()); v.onchange = () => hud(); document.addEventListener('pointerdown', volOutside, true); window.addEventListener('blur', volBlur); }
-    else { document.removeEventListener('pointerdown', volOutside, true); window.removeEventListener('blur', volBlur); }
+    if (on && popOpen && popOpen !== name) togglePop(popOpen, false);
+    if (on) {
+      if (name === 'vol') { v.innerHTML = '<h3>刷題地牢的音樂與音效</h3><p class="dim small-t">遊戲本身的音量請用遊戲裡的「選項」。</p>'; v.appendChild(Screens.volumeControls()); v.onchange = () => hud(); }
+      else fillPomo(v);
+      if (!popOpen) { document.addEventListener('pointerdown', popOutside, true); window.addEventListener('blur', popBlur); }
+      popOpen = name;
+    } else if (popOpen === name) { document.removeEventListener('pointerdown', popOutside, true); window.removeEventListener('blur', popBlur); popOpen = null; }
     v.hidden = !on; b.setAttribute('aria-expanded', String(on)); hud();
+  }
+  /* 番茄鐘：顯示頂部迷你計時器的內容，按鈕呼叫 POMO 的計時控制（時間長度、花園在營地的番茄鐘頁設定） */
+  const pomoSt = () => { try { return POMO.data.st || {}; } catch { return {}; } };
+  const pomoNow = () => (U.$('#pomoMini') || {}).innerHTML || '🍅';
+  function pomoTick() { const b = U.$('#pgwPomoBtn'); if (!b) return; b.innerHTML = pomoNow(); const n = U.$('#pgwPomo .pgw-pomo-now'); if (n) n.innerHTML = pomoNow(); }
+  function fillPomo(v) {
+    const st = pomoSt(), running = ['focus', 'short', 'long'].includes(st.phase), btn = (a, t, gold) => `<button class="px-btn ${gold ? 'gold' : ''}" data-pp="${a}">${t}</button>`;
+    v.innerHTML = `<h3>🍅 番茄鐘</h3><p class="pgw-pomo-now">${pomoNow()}</p><div class="col">`
+      + (running ? btn(st.paused ? 'resume' : 'pause', st.paused ? '▶ 繼續' : '⏸ 暫停', true) + btn('skip', '⏭ 跳過這段') + btn('end', '⏹ 結束循環')
+        : st.phase === 'ready' && st.nextStep ? btn('next', '▶ 開始下一段', true) + btn('skip', '⏭ 跳過') + btn('end', '⏹ 結束循環')
+        : btn('cycle', '▶ 開始番茄鐘', true))
+      + '</div><p class="dim small-t">每段多長、花園與紀錄請到營地的「番茄鐘」。</p>';
+    U.$$('[data-pp]', v).forEach(b => b.onclick = () => {
+      const a = b.dataset.pp;
+      if (a === 'pause') POMO.pause(); else if (a === 'resume') POMO.resume(); else if (a === 'skip') POMO.skipStep(); else if (a === 'end') POMO.endCycle(); else if (a === 'cycle') POMO.startCycle();
+      else if (a === 'next') { const s = pomoSt(), n = s.nextStep; s.nextStep = null; POMO.start(n.t, n.m); }
+      fillPomo(v); pomoTick();
+    });
   }
   function onKey(e) {
     if (!G || document.querySelector('.modal-bg')) return;
-    if (e.key === 'Escape' && !U.$('#pgwVol').hidden) { e.preventDefault(); toggleVol(false); return; }
-    if (e.key === 'Escape') { if (G.panel && G.credits > 0) { e.preventDefault(); closePanel(); } return; }
+    if (e.key === 'Escape' && popOpen) { e.preventDefault(); togglePop(popOpen, false); return; }
+    if (e.key === 'Escape') { if (G.panel) { e.preventDefault(); hidePanel(); } return; }
+    // 題目暫時關閉時，不讓數字鍵／Enter 在看不到的題目上作答（計算機、AI 助教等自己的輸入不受影響）
+    if (!G.panel && G.parked && (e.target === document.body || (e.target.closest && e.target.closest('#pgw'))) && !/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) { e.stopImmediatePropagation(); return; }
     if (!G.panel || e.ctrlKey || e.metaKey || e.altKey) return;
     if (e.target && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
     if (G.keyBox && G.keyBox._key && G.keyBox._key(e)) { e.preventDefault(); e.stopPropagation(); return; }
@@ -354,6 +387,7 @@ const PEGLIN = (() => {
     U.$('#pgwStat').innerHTML = `${G.mode === 'learn' ? `已完成 ${G.reads + G.graded} 步` : `已答 ${G.graded} 題`}${G.graded ? `・一次答對 ${G.right}/${G.graded}` : ''}・已發射 ${G.fired} 顆${load ? `<em>${load}</em>` : ''}`;
     U.$('#pgwShieldBtn').innerHTML = `⚪ 彈珠用完了<small>點這裡${G.mode === 'learn' ? '繼續上課' : '答下一題'}，${G.per > 1 ? `每${G.mode === 'learn' ? '完成' : '答'} ${G.per} ${unitWord()}` : '答完'}可以再發射 ${G.shots} 顆</small>`;
     U.$('#pgwAsk').hidden = G.panel;
+    U.$('#pgwAsk').textContent = G.parked ? '📖 回到題目' : `📖 ${G.mode === 'learn' ? '下一步' : '答題'}`;
     U.$('#pgwVolBtn').textContent = typeof VOL !== 'undefined' && VOL.get('muted') ? '🔇' : '♪';
   }
   function post(msg) { const f = U.$('#pgwFrame'); try { f && f.contentWindow && f.contentWindow.postMessage(Object.assign({ pgw: 1 }, msg), '*'); } catch {} }
@@ -368,25 +402,44 @@ const PEGLIN = (() => {
     const p = U.$('#pgwPanel'); p.hidden = false; lock(true); p.scrollTop = 0; p.focus({ preventScroll: true });
   }
   function closePanel() {
-    clearItem(); G.panel = false; U.$('#pgw').classList.remove('panel-open'); U.$('#pgwPanel').hidden = true;
+    clearItem(); G.panel = false; G.parked = false; U.$('#pgw').classList.remove('panel-open'); U.$('#pgwPanel').hidden = true;
     lock(G.credits <= 0); hud();
+  }
+  /* ✕ 暫時關閉：題目留著（G.parked），按📖、點遮罩或遊戲裡按鍵時回到同一題；已答完又有彈珠就等於「去發射」 */
+  const answered = () => !!((G.goBtn && document.body.contains(G.goBtn)) || U.$('#pgwQ .next-btn'));
+  function hidePanel() {
+    if (!G || !G.panel) return;
+    if (G.item && answered() && G.credits > 0) return proceed(G.item, true);
+    G.panel = false; G.parked = true; U.$('#pgw').classList.remove('panel-open'); U.$('#pgwPanel').hidden = true;
+    lock(G.credits <= 0); hud();
+  }
+  function ask() {
+    if (!G || G.panel) return;
+    if (G.parked) { G.parked = false; openPanel(); hud(); } else next();
   }
   function clearItem() { if (G.ctl) { try { G.ctl.destroy(); } catch {} } G.ctl = null; G.keyBox = null; G.goBtn = null; G.item = null; }
   /* 答完／讀完：累積到 per 個就換 shots 顆彈珠 */
   function earn(counted) { if (counted) { G.pts++; while (G.pts >= G.per) { G.pts -= G.per; G.credits += G.shots; } } hud(); }
-  const goLabel = () => G.credits > 0 ? `🎯 去發射（⚪×${G.credits}）` : G.mode === 'learn' ? '下一步 ▶' : '下一題 ▶';
-  function proceed(it) {
+  /* 答完一題：預設接著寫下一題（彈珠一路存著，Enter 也是下一題）；要打彈珠時按「🎯 去發射」 */
+  function proceed(it, shoot) {
     if (it && it.lessonEnd && !it.review) finishLesson(it.les);
-    if (G.credits > 0) closePanel(); else next();
+    if (shoot && G.credits > 0) closePanel(); else next();
   }
-  function goButton(box, it, label) {
-    const b = U.h(`<div class="row mt pgw-go"><button class="px-btn gold big">${label || goLabel()}</button></div>`);
-    box.appendChild(b); G.goBtn = b.firstElementChild; G.goBtn.onclick = () => { SFX.play('click'); proceed(it); };
+  const nextLabel = () => G.mode === 'learn' ? '下一步 ▶' : '下一題 ▶';
+  const shootBtn = (before) => {
+    const b = U.h(`<button class="px-btn big pgw-shoot">🎯 去發射（⚪×${G.credits}）</button>`);
+    b.onclick = () => { SFX.play('click'); before && before(); proceed(G.item, true); };
+    return b;
+  };
+  function goButton(box, it, label, before) {
+    const row = U.h(`<div class="row mt pgw-go"><button class="px-btn gold big">${label || nextLabel()}</button></div>`);
+    box.appendChild(row); G.goBtn = row.firstElementChild; G.goBtn.onclick = () => { SFX.play('click'); before && before(); proceed(it, false); };
+    if (G.credits > 0 || (before && G.pts + 1 >= G.per)) row.appendChild(shootBtn(before));
     return G.goBtn;
   }
   function next() {
     if (!G) return;
-    clearItem();
+    clearItem(); G.parked = false;
     const it = G.S.next(); openPanel();
     const body = U.$('#pgwQ'); body.innerHTML = '';
     if (!it) { renderEnd(body); hud(); return; }
@@ -411,8 +464,12 @@ const PEGLIN = (() => {
   function renderBank(body, it) {
     const wrap = U.h('<div class="qwrap"></div>'); body.appendChild(wrap);
     G.ctl = QV.render(wrap, it.q, {
-      mode: 'practice', nextLabel: '繼續 ▶', onNext: () => proceed(it),
-      onAnswer: res => { SFX.play(res.ok ? 'correct' : 'wrong'); graded(it, !!res.ok, !!res.ok); const nb = wrap.querySelector('.next-btn'); if (nb) nb.textContent = goLabel(); }
+      mode: 'practice', nextLabel: '繼續 ▶', onNext: () => proceed(it, false),
+      onAnswer: res => {
+        SFX.play(res.ok ? 'correct' : 'wrong'); graded(it, !!res.ok, !!res.ok);
+        const nb = wrap.querySelector('.next-btn'); if (!nb) return;
+        nb.textContent = nextLabel(); if (G.credits > 0) nb.after(shootBtn());
+      }
     });
   }
   function renderCheckItem(body, it) {
@@ -446,9 +503,7 @@ const PEGLIN = (() => {
   function renderRead(body, it) {
     const wrap = U.h(`<div class="lp-body pgw-lp t-${U.esc(it.s.type)}">${readHTML(it.s, it.les.l)}</div>`); body.appendChild(wrap);
     if (typeof GLOSS !== 'undefined' && GLOSS.scan) { try { GLOSS.scan(wrap); } catch {} }
-    const counted = G.pts + 1 >= G.per;
-    const b = goButton(wrap, it, G.credits > 0 || counted ? '讀完了，去發射 ▶' : '讀完了，下一步 ▶');
-    b.onclick = () => { SFX.play('click'); G.reads++; earn(true); proceed(it); };
+    goButton(wrap, it, '讀完了，下一步 ▶', () => { G.reads++; earn(true); });
   }
   function renderEnd(body) {
     U.$('#pgwHead').innerHTML = '<span class="pgw-kind">🏁 這一輪完成</span>';
@@ -470,7 +525,7 @@ const PEGLIN = (() => {
   function webClose(silent) {
     if (!G) return;
     const g = G; clearItem(); G = null;
-    window.removeEventListener('message', onMsg); document.removeEventListener('keydown', onKey, true); document.removeEventListener('pointerdown', volOutside, true); window.removeEventListener('blur', volBlur);
+    window.removeEventListener('message', onMsg); document.removeEventListener('keydown', onKey, true); document.removeEventListener('pointerdown', popOutside, true); window.removeEventListener('blur', popBlur); popOpen = null; clearInterval(g.pomoTimer);
     const f = U.$('#pgwFrame'); try { f.contentWindow.postMessage({ pgw: 1, type: 'quit' }, '*'); } catch {}
     const el = U.$('#pgw'); if (el) el.remove();
     document.documentElement.classList.remove('pgw-open');
@@ -679,8 +734,9 @@ const PEGLIN = (() => {
     U.$('#pgPenalty').value = cfg.wrongPenalty; U.$('#pgReward').value = cfg.reward;
     const save = () => localStorage.setItem(SKEY('peglin-config'), JSON.stringify(cfg));
     const update = () => {
-      const n = pool(cfg).length, cnt = U.$('#pgCnt');
-      cnt.textContent = `符合條件：${n.toLocaleString()} 題（每輪出 ${Math.min(n, roundSize(cfg))} 題）`;
+      const list = pool(cfg), n = list.length, cnt = U.$('#pgCnt');
+      // 和自由遠征同一行：已刷／未刷題數、題型已刷／未刷（Screens.scopeLine）
+      cnt.innerHTML = `符合條件：${n.toLocaleString()} 題（每輪出 ${Math.min(n, roundSize(cfg))} 題）${Screens.scopeLine ? Screens.scopeLine(list) : ''}`;
       U.$('#pgPool').textContent = `${n.toLocaleString()} 題可用・每輪 ${Math.min(n, roundSize(cfg))} 題`;
       // 題池是 0、但選的題本其實有別的題型：提示並一鍵勾選（和自由遠征一樣）
       if (!n) {

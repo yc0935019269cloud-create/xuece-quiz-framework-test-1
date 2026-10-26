@@ -1296,5 +1296,5 @@ const Screens = (() => {
     U.$('#rs').onclick = async () => { if (await U.confirm('重置全部進度', '所有作答紀錄、錯題、角色成長都會被清除，無法復原！')) Store.resetAll(); };
   }
 
-  return { setPicker, syncSubjects, hub, map, free, abyss, classes, bestiary, bank, wrongbook, pets, upg, relics, char, settings, startRun, qrow, volumeControls, ach: () => CampFun.achScreen() };
+  return { setPicker, scopeStats, scopeLine, syncSubjects, hub, map, free, abyss, classes, bestiary, bank, wrongbook, pets, upg, relics, char, settings, startRun, qrow, volumeControls, ach: () => CampFun.achScreen() };
 })();
