@@ -316,11 +316,16 @@ const PEGLIN = (() => {
     U.$('#pgwFrame').addEventListener('load', () => lock(G && G.credits <= 0));
     window.addEventListener('message', onMsg);
     document.addEventListener('keydown', onKey, true);
+    G.cloudTimer = setInterval(() => cloudTick(), 120000); document.addEventListener('visibilitychange', cloudVis);
     next();   // 遊戲載入時先答第一題
   }
   function onMsg(e) {
     const f = U.$('#pgwFrame'), d = e.data;
-    if (!G || !f || e.source !== f.contentWindow || !d || d.pgw !== 1) return;
+    if (d && d.pgw === 1 && d.type === 'export') { const w = expWait[d.id]; if (w) { delete expWait[d.id]; w(d.snap); } return; }   // 結束後（舊框已改名）也要收得到
+    if (!f || e.source !== f.contentWindow || !d || d.pgw !== 1) return;
+    if (!G) return;
+    if (d.type === 'hello') { cloudHello(d.snap); return; }
+    if (d.type === 'imported') { const m = PGC(); m.localAt = Date.now(); savePGC(m); if (d.first) U.toast('已套用雲端的彈珠存檔（這台第一次載入，遊戲重新開啟一次）', 5000); return; }
     if (d.type === 'progress') G.loaded = d.value;
     else if (d.type === 'ready') { G.ready = true; G.armed = G.armed || !!d.armed; lock(G.credits <= 0); }
     else if (d.type === 'armed') G.armed = true;
@@ -390,7 +395,7 @@ const PEGLIN = (() => {
     U.$('#pgwAsk').textContent = G.parked ? '📖 回到題目' : `📖 ${G.mode === 'learn' ? '下一步' : '答題'}`;
     U.$('#pgwVolBtn').textContent = typeof VOL !== 'undefined' && VOL.get('muted') ? '🔇' : '♪';
   }
-  function post(msg) { const f = U.$('#pgwFrame'); try { f && f.contentWindow && f.contentWindow.postMessage(Object.assign({ pgw: 1 }, msg), '*'); } catch {} }
+  function post(msg, frame) { const f = frame || U.$('#pgwFrame'); try { f && f.contentWindow && f.contentWindow.postMessage(Object.assign({ pgw: 1 }, msg), '*'); } catch {} }
   function lock(on) {
     if (!G) return;
     U.$('#pgwShield').hidden = !on && !G.panel;
@@ -524,11 +529,18 @@ const PEGLIN = (() => {
   }
   function webClose(silent) {
     if (!G) return;
-    const g = G; clearItem(); G = null;
-    window.removeEventListener('message', onMsg); document.removeEventListener('keydown', onKey, true); document.removeEventListener('pointerdown', popOutside, true); window.removeEventListener('blur', popBlur); popOpen = null; clearInterval(g.pomoTimer);
-    const f = U.$('#pgwFrame'); try { f.contentWindow.postMessage({ pgw: 1, type: 'quit' }, '*'); } catch {}
-    const el = U.$('#pgw'); if (el) el.remove();
+    const g = G, upload = cloudOn() && g.cloudReady; clearItem(); G = null;
+    document.removeEventListener('keydown', onKey, true); document.removeEventListener('pointerdown', popOutside, true); window.removeEventListener('blur', popBlur); popOpen = null;
+    clearInterval(g.pomoTimer); clearInterval(g.cloudTimer); document.removeEventListener('visibilitychange', cloudVis);
+    const el = U.$('#pgw'), f = U.$('#pgwFrame');
+    if (el) { el.style.display = 'none'; el.id = 'pgwClosing'; } if (f) f.id = 'pgwFrameClosing';   // 改名：馬上再開一場時不會撞到 ID
     document.documentElement.classList.remove('pgw-open');
+    // 先把最新的遊戲存檔讀出來（最多等 2.5 秒）再關掉遊戲，然後在背景上傳
+    (upload && f ? requestExport(2500, f) : Promise.resolve(null)).then(snap => {
+      try { f.contentWindow.postMessage({ pgw: 1, type: 'quit' }, '*'); } catch {}
+      if (!U.$('#pgw')) window.removeEventListener('message', onMsg); if (el) el.remove();
+      if (snap) cloudUpload(snap, g.cloudRev).catch(e => U.toast('彈珠存檔上傳失敗：' + e.message, 4000));
+    });
     if (silent) return;
     if (g.graded + g.reads) {
       const wrongs = g.wrong.filter(it => it.kind === 'bank').slice(-5).reverse();
@@ -538,6 +550,52 @@ const PEGLIN = (() => {
     }
     if (U.$('.peglin-page')) screen(g.mode);
   }
+  /* ---------- 哥布林彈珠存檔的雲端同步（有登入雲端同步時；CLOUD.peglinGet／peglinPut，資料表另一筆 <題庫>:peglin） ----------
+     本機 SKEY('peglin-cloud')＝{ at: 這台上次同步到的雲端版本時間, localAt: 當時本機存檔最新時間, rev }。
+     開遊戲：雲端有別台的新版、這台沒改過 → 套用雲端；兩邊都改過 → 較晚的為準，輸的那份留一份在本機（peglin-cloud-bak）。
+     上傳：玩的時候每 2 分鐘、切走分頁、按結束時，存檔有變動才上傳（存檔約數十 KB）。 */
+  const PGC = () => readCfg('peglin-cloud', {});
+  const savePGC = m => { try { localStorage.setItem(SKEY('peglin-cloud'), JSON.stringify(m)); } catch {} };
+  const cloudOn = () => !!G && !G.test && typeof CLOUD !== 'undefined' && CLOUD.signedIn;
+  const within = (p, ms) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error('逾時')), ms))]);
+  function pgBak(from, data, at) { try { localStorage.setItem(SKEY('peglin-cloud-bak'), JSON.stringify({ from, at, saved: new Date().toISOString(), data })); } catch {} }
+  async function cloudHello(snap) {
+    let imp = null;
+    try {
+      if (cloudOn()) {
+        const row = await within(CLOUD.peglinGet(), 7000), m = PGC(), files = row && row.data && row.data.files;
+        if (G) G.cloudRev = row ? row.rev : null;
+        if (files && row.updated_at !== m.at) {
+          const localChanged = !!(snap && snap.n && snap.newest > (m.localAt || 0));
+          if (localChanged && snap.newest > Date.parse(row.updated_at)) { pgBak('雲端', row.data, row.updated_at); U.toast('彈珠存檔：這台比雲端新，先用這台的（雲端那份已備份在這台）', 5000); }
+          else {
+            if (localChanged) pgBak('這台裝置', { files: snap.files }, new Date(snap.newest).toISOString());
+            imp = { files }; savePGC({ at: row.updated_at, localAt: Date.now(), rev: row.rev });
+            U.toast(`已載入雲端的彈珠存檔（${row.device || '其他裝置'}）`, 4000);
+          }
+        }
+      }
+    } catch (e) { U.toast('彈珠存檔：讀取雲端失敗（' + e.message + '），先用這台的', 4000); }
+    if (G) G.cloudReady = true;
+    post({ type: 'start', import: imp });
+  }
+  let expSeq = 0; const expWait = {};
+  function requestExport(ms = 4000, frame) {
+    return new Promise(res => { const id = ++expSeq; expWait[id] = res; post({ type: 'export', id }, frame); setTimeout(() => { if (expWait[id]) { delete expWait[id]; res(null); } }, ms); });
+  }
+  async function cloudUpload(snap, rev, keepalive) {
+    if (!snap || !snap.n || typeof CLOUD === 'undefined' || !CLOUD.signedIn) return;
+    const m = PGC(); if (snap.newest <= (m.localAt || 0)) return;   // 存檔沒變動
+    const row = await CLOUD.peglinPut({ files: snap.files, savedAt: new Date(snap.newest).toISOString() }, rev != null ? rev : m.rev, keepalive);
+    if (row) { savePGC({ at: row.updated_at, localAt: snap.newest, rev: row.rev }); if (G) G.cloudRev = row.rev; }
+  }
+  async function cloudTick(keepalive) {
+    if (!cloudOn() || !G.cloudReady || G.uploading) return;
+    const g = G; g.uploading = true;
+    try { await cloudUpload(await requestExport(), g.cloudRev, keepalive); } catch (e) { /* 下次再試 */ } finally { g.uploading = false; }
+  }
+  const cloudVis = () => { if (document.hidden) cloudTick(true); };
+
   /* 彈珠刷題：照自由遠征的條件排一輪題目；答錯可以稍後再出一次 */
   function quizSession(cfg, ids) {
     let q = ids.slice(), i = 0; const retried = new Set();

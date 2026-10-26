@@ -62,6 +62,23 @@ const CLOUD = (() => {
   async function head() { const a = await api(rowQ() + '&select=rev,device,updated_at', { token: await token() }); return a && a[0] || null; }
   async function full() { const a = await api(rowQ() + '&select=rev,device,updated_at,data', { token: await token() }); return a && a[0] || null; }
 
+  /* ---------- 哥布林彈珠存檔（js/peglin.js 網頁版）：同一張 saves 表另一筆 project＝<題庫 id>:peglin；
+     只在開遊戲時讀一次、玩的時候有變動才寫，不跟著每 30 秒的進度同步。較晚寫入的蓋過較早的。 */
+  const pgQ = () => `/rest/v1/saves?user_id=eq.${M.sess.uid}&project=eq.${encodeURIComponent(PROJECT + ':peglin')}`;
+  async function peglinGet() {
+    if (!cfg() || !M.sess) return null;
+    const a = await api(pgQ() + '&select=rev,device,updated_at,data', { token: await token() }); return a && a[0] || null;
+  }
+  async function peglinPut(data, rev, keepalive) {
+    if (!cfg() || !M.sess) return null;
+    const tk = await token(), body = { rev: (rev || 0) + 1, data, device: device(), updated_at: new Date().toISOString() };
+    if (rev == null) {
+      try { const r = await api('/rest/v1/saves', { method: 'POST', token: tk, prefer: 'return=representation', body: Object.assign({ user_id: M.sess.uid, project: PROJECT + ':peglin' }, body), keepalive }); if (r && r[0]) return r[0]; }
+      catch (e) { if (e.status !== 409) throw e; }   // 別台已經建過這一筆：改成更新
+    }
+    const r = await api(pgQ(), { method: 'PATCH', token: tk, prefer: 'return=representation', body, keepalive }); return r && r[0] || null;
+  }
+
   /* ---------- 本機狀態 ---------- */
   function snap() {
     const o = JSON.parse(Store.exportAll()); delete o.at;
@@ -277,5 +294,5 @@ const CLOUD = (() => {
   });
   document.addEventListener('DOMContentLoaded', () => setTimeout(init, 0));
 
-  return { open, panel, sync, cfg, token, get signedIn() { return !!M.sess; }, get email() { return M.sess ? M.sess.email : ''; } };
+  return { open, panel, sync, cfg, token, peglinGet, peglinPut, get signedIn() { return !!M.sess; }, get email() { return M.sess ? M.sess.email : ''; } };
 })();

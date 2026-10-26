@@ -1,0 +1,101 @@
+{
+ "at": "2026-10-26T05:03:07.762Z",
+ "checks": [
+  {
+   "name": "A：結束時把本機遊戲存檔上傳成另一筆 <題庫>:peglin（只有 Save_0.data 等頂層檔案，不含 Unity 子資料夾）",
+   "pass": true,
+   "extra": {
+    "c1": [
+     "Save_0.data"
+    ],
+    "calls": [
+     "POST /rest/v1/saves eye-anatomy-y2:peglin",
+     "GET /rest/v1/saves eq.eye-anatomy-y2:peglin"
+    ]
+   }
+  },
+  {
+   "name": "A：結束時只寫彈珠那一筆，沒有連帶上傳刷題進度",
+   "pass": true,
+   "extra": [
+    "POST /rest/v1/saves eye-anatomy-y2:peglin",
+    "GET /rest/v1/saves eq.eye-anatomy-y2:peglin"
+   ]
+  },
+  {
+   "name": "A：存檔沒變動時不重複上傳",
+   "pass": true,
+   "extra": [
+    "GET /rest/v1/saves eq.eye-anatomy-y2",
+    "GET /rest/v1/saves eq.eye-anatomy-y2",
+    "GET /rest/v1/saves eq.eye-anatomy-y2",
+    "GET /rest/v1/saves eq.eye-anatomy-y2:peglin",
+    "GET /rest/v1/saves eq.eye-anatomy-y2:peglin",
+    "PATCH /rest/v1/saves eq.eye-anatomy-y2:peglin",
+    "GET /rest/v1/saves eq.eye-anatomy-y2:peglin",
+    "GET /rest/v1/saves eq.eye-anatomy-y2:peglin",
+    "PATCH /rest/v1/saves eq.eye-anatomy-y2:peglin",
+    "GET /rest/v1/saves eq.eye-anatomy-y2:peglin",
+    "PATCH /rest/v1/saves eq.eye-anatomy-y2:peglin",
+    "GET /rest/v1/saves eq.eye-anatomy-y2",
+    "GET /rest/v1/saves eq.eye-anatomy-y2",
+    "GET /rest/v1/saves eq.eye-anatomy-y2",
+    "GET /rest/v1/saves eq.eye-anatomy-y2:peglin",
+    "GET /rest/v1/saves eq.eye-anatomy-y2:peglin"
+   ]
+  },
+  {
+   "name": "B：開遊戲前套用雲端存檔（寫進這台自己的存檔資料夾），這台舊的那份備份在本機",
+   "pass": true,
+   "extra": {
+    "bSave": {
+     "/idbfs/bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb/Save_0.data": [
+      1,
+      2,
+      3
+     ]
+    },
+    "bBak": "這台裝置"
+   }
+  },
+  {
+   "name": "B：玩過後結束時上傳新存檔",
+   "pass": true,
+   "extra": {
+    "b64": "BAUGBw==",
+    "ts": 1792991009604
+   }
+  },
+  {
+   "name": "A：下次開遊戲自動拿到 B 的新存檔（A 沒改過，不留備份）",
+   "pass": true
+  },
+  {
+   "name": "A：兩邊都改過且這台較新 → 不套用雲端、雲端那份備份在本機",
+   "pass": true
+  },
+  {
+   "name": "A：結束後把較新的這份上傳",
+   "pass": true
+  },
+  {
+   "name": "C（新裝置、沒有存檔資料夾）：遊戲建好資料夾後寫入雲端存檔並自動重載一次",
+   "pass": true,
+   "extra": {
+    "/idbfs/cccccccccccccccccccccccccccccccc/Save_0.data": [
+     8,
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "name": "沒登入雲端同步：開關遊戲都不呼叫雲端",
+   "pass": true,
+   "extra": []
+  }
+ ],
+ "issues": [],
+ "pass": 10,
+ "total": 10
+}

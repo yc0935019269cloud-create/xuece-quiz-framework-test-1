@@ -103,12 +103,62 @@ progress { width: min(240px, 70vw); height: 6px; accent-color: #8fbd68; }
     if (type === 'keydown' || type === 'pointerdown' || type === 'touchstart') post({ type: 'blocked' });
   }, { capture: true, passive: false }));
 
-  let instance = null;
-  window.addEventListener('message', e => {
+  /* ---------- 遊戲存檔（雲端同步用）：Unity 把 persistentDataPath 存在 IndexedDB「/idbfs」的 FILE_DATA，
+     路徑 /idbfs/<雜湊>/Save_0.data 等。啟動前可以把雲端那份寫進去；任何時候都能讀出最新的交給刷題地牢上傳。
+     雜湊資料夾要等遊戲第一次啟動才會出現：新裝置第一次套用雲端存檔時，等遊戲建好資料夾再寫入並自動重載一次。 */
+  // 每次用完就關連線（Unity 之後要用版本 21 開同一個資料庫，沒關會被擋住）
+  const idb = mode => new Promise((res, rej) => { const r = indexedDB.open('/idbfs'); r.onerror = () => rej(r.error); r.onsuccess = () => { const db = r.result; db.onversionchange = () => db.close(); if (!db.objectStoreNames.contains('FILE_DATA')) { db.close(); return res(null); } const tx = db.transaction('FILE_DATA', mode); tx.oncomplete = tx.onabort = tx.onerror = () => db.close(); res(tx.objectStore('FILE_DATA')); }; });
+  async function saveDir() {
+    const st = await idb('readonly'); if (!st) return null;
+    const keys = await new Promise(res => { const q = st.getAllKeys(); q.onsuccess = () => res(q.result || []); q.onerror = () => res([]); });
+    const m = keys.map(k => /^(\/idbfs\/[0-9a-f]{32})\/Save_0\.data$/.exec(k)).filter(Boolean);
+    return m.length ? m[m.length - 1][1] : null;
+  }
+  const toB64 = u => { let s = ''; const b = new Uint8Array(u.buffer, u.byteOffset, u.byteLength); for (let i = 0; i < b.length; i += 8192) s += String.fromCharCode.apply(null, b.subarray(i, i + 8192)); return btoa(s); };
+  const fromB64 = s => { const t = atob(s), a = new Int8Array(t.length); for (let i = 0; i < t.length; i++) a[i] = t.charCodeAt(i); return a; };
+  async function snapshot() {
+    const dir = await saveDir(); if (!dir) return { dir: null, n: 0, newest: 0, files: {} };
+    const st = await idb('readonly'), files = {}; let newest = 0;
+    await new Promise(res => { st.openCursor().onsuccess = e => { const c = e.target.result; if (!c) return res(); const k = String(c.key), v = c.value;
+      if (k.startsWith(dir + '/') && !k.slice(dir.length + 1).includes('/') && v && v.contents) { const ts = +new Date(v.timestamp) || 0; newest = Math.max(newest, ts); files[k.slice(dir.length + 1)] = { b64: toB64(v.contents), ts }; }
+      c.continue(); }; });
+    return { dir, n: Object.keys(files).length, newest, files };
+  }
+  async function writeFiles(dir, files) {
+    const st = await idb('readwrite'); if (!st) return 0; const now = Date.now(); let n = 0;
+    await new Promise(res => { for (const [name, f] of Object.entries(files)) { if (!/^[\w.\-]+$/.test(name) || typeof f.b64 !== 'string') continue; st.put({ timestamp: new Date(now), mode: 33206, contents: fromB64(f.b64) }, dir + '/' + name); n++; } st.transaction.addEventListener('complete', res); st.transaction.addEventListener('error', res); });
+    return n;
+  }
+  let pendingImport = null;
+  async function waitDirThenImport() {   // 新裝置：等遊戲第一次建好存檔資料夾，寫入雲端存檔後重載一次
+    for (let i = 0; i < 180 && pendingImport; i++) {
+      await new Promise(r => setTimeout(r, 2000));
+      const dir = await saveDir(); if (!dir) continue;
+      try { if (instance) await instance.Quit(); } catch (e) {}
+      await writeFiles(dir, pendingImport); pendingImport = null;
+      post({ type: 'imported', first: true }); location.reload(); return;
+    }
+  }
+
+  let instance = null, startGate = null;
+  window.addEventListener('message', async e => {
     const d = e.data; if (e.source !== parent || !d || d.pgw !== 1) return;
     if (d.type === 'lock') { locked = !!d.on; if (locked) { try { canvas.blur(); } catch (er) {} } else canvas.focus({ preventScroll: true }); }
     else if (d.type === 'quit' && instance) instance.Quit().catch(() => {});
+    else if (d.type === 'export') { let snap = null; try { snap = await snapshot(); } catch (er) {} post({ type: 'export', id: d.id, snap }); }
+    else if (d.type === 'start' && startGate) startGate(d);
   });
+  // 有父頁（刷題地牢）時，啟動遊戲前先回報本機存檔，等父頁決定要不要套用雲端存檔（最多等 10 秒）
+  async function cloudGate() {
+    if (parent === window) return;
+    let snap = null; try { snap = await snapshot(); } catch (e) {}
+    const d = await new Promise(res => { startGate = res; post({ type: 'hello', snap }); setTimeout(() => res({}), 10000); });
+    startGate = null;
+    if (d.import && d.import.files) {
+      if (snap && snap.dir) { await writeFiles(snap.dir, d.import.files); post({ type: 'imported' }); }
+      else { pendingImport = d.import.files; waitDirThenImport(); }
+    }
+  }
   if (debug) window.__pgw = { decoded, starts, get shots() { return shots; }, get raw() { return raw; }, get locked() { return locked; }, get instance() { return instance; }, base };
 
   /* ---------- 載入：設定取自對方 index.html（檔名改了也跟得上），失敗就用目前已知的檔名 ---------- */
@@ -124,6 +174,7 @@ progress { width: min(240px, 70vw); height: 6px; accent-color: #8fbd68; }
   }
   const loadScript = src => new Promise((resolve, reject) => { const s = document.createElement('script'); s.src = src; s.onload = resolve; s.onerror = () => reject(new Error('無法載入 ' + src)); document.body.appendChild(s); });
   (async () => {
+    try { await cloudGate(); } catch (e) {}
     const c = await readConfig();
     const abs = p => /^https?:/.test(p) ? p : base + p;
     // 對方 index.html 的 ipad-display.js 會讀全域的 config／canvas／showBanner（iPad Chrome 相容模式），這裡照樣提供
