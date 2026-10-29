@@ -1,10 +1,10 @@
 {
  "checks": [
   {
-   "name": "眼解剖國考題載入（eye115 共 230）",
+   "name": "眼解剖國考題載入（eye115 ≥ 230）",
    "pass": true,
    "extra": {
-    "e": 230,
+    "e": 238,
     "l": 52,
     "quiz": 29,
     "noEx": 0,
@@ -15,7 +15,7 @@
    "name": "實驗用國考補充題載入（eyelab 共 52）",
    "pass": true,
    "extra": {
-    "e": 230,
+    "e": 238,
     "l": 52,
     "quiz": 29,
     "noEx": 0,
@@ -26,7 +26,7 @@
    "name": "國考題每題都有詳解",
    "pass": true,
    "extra": {
-    "e": 230,
+    "e": 238,
     "l": 52,
     "quiz": 29,
     "noEx": 0,
@@ -37,7 +37,7 @@
    "name": "老師隨堂考 29 題仍在",
    "pass": true,
    "extra": {
-    "e": 230,
+    "e": 238,
     "l": 52,
     "quiz": 29,
     "noEx": 0,
@@ -54,9 +54,9 @@
    "extra": 1
   },
   {
-   "name": "ans-basics：複習課每張概念卡都有 🎯 與 ✏️",
+   "name": "ans-basics：複習課有 🎯 國考重點",
    "pass": true,
-   "extra": []
+   "extra": 4
   },
   {
    "name": "ans-basics：全部概念卡都有國考重點",
@@ -86,9 +86,9 @@
    "extra": 1
   },
   {
-   "name": "ans-pathways：複習課每張概念卡都有 🎯 與 ✏️",
+   "name": "ans-pathways：複習課有 🎯 國考重點",
    "pass": true,
-   "extra": []
+   "extra": 4
   },
   {
    "name": "ans-pathways：全部概念卡都有國考重點",
@@ -118,9 +118,9 @@
    "extra": 1
   },
   {
-   "name": "ans-trigeminal：複習課每張概念卡都有 🎯 與 ✏️",
+   "name": "ans-trigeminal：複習課有 🎯 國考重點",
    "pass": true,
-   "extra": []
+   "extra": 3
   },
   {
    "name": "ans-trigeminal：全部概念卡都有國考重點",
@@ -150,9 +150,9 @@
    "extra": 1
   },
   {
-   "name": "ans-reflex：複習課每張概念卡都有 🎯 與 ✏️",
+   "name": "ans-reflex：複習課有 🎯 國考重點",
    "pass": true,
-   "extra": []
+   "extra": 4
   },
   {
    "name": "ans-reflex：全部概念卡都有國考重點",
@@ -182,9 +182,9 @@
    "extra": 2
   },
   {
-   "name": "ans-clinical：複習課每張概念卡都有 🎯 與 ✏️",
+   "name": "ans-clinical：複習課有 🎯 國考重點",
    "pass": true,
-   "extra": []
+   "extra": 15
   },
   {
    "name": "ans-clinical：全部概念卡都有國考重點",
@@ -214,9 +214,9 @@
    "extra": 1
   },
   {
-   "name": "cornea-general：複習課每張概念卡都有 🎯 與 ✏️",
+   "name": "cornea-general：複習課有 🎯 國考重點",
    "pass": true,
-   "extra": []
+   "extra": 4
   },
   {
    "name": "cornea-general：全部概念卡都有國考重點",
@@ -246,9 +246,9 @@
    "extra": 1
   },
   {
-   "name": "cornea-layers：複習課每張概念卡都有 🎯 與 ✏️",
+   "name": "cornea-layers：複習課有 🎯 國考重點",
    "pass": true,
-   "extra": []
+   "extra": 10
   },
   {
    "name": "cornea-layers：全部概念卡都有國考重點",
@@ -278,9 +278,9 @@
    "extra": 1
   },
   {
-   "name": "cornea-supply：複習課每張概念卡都有 🎯 與 ✏️",
+   "name": "cornea-supply：複習課有 🎯 國考重點",
    "pass": true,
-   "extra": []
+   "extra": 11
   },
   {
    "name": "cornea-supply：全部概念卡都有國考重點",
@@ -310,9 +310,9 @@
    "extra": 1
   },
   {
-   "name": "blood-vessels：複習課每張概念卡都有 🎯 與 ✏️",
+   "name": "blood-vessels：複習課有 🎯 國考重點",
    "pass": true,
-   "extra": []
+   "extra": 13
   },
   {
    "name": "blood-vessels：全部概念卡都有國考重點",
@@ -342,9 +342,9 @@
    "extra": 1
   },
   {
-   "name": "blood-ciliary：複習課每張概念卡都有 🎯 與 ✏️",
+   "name": "blood-ciliary：複習課有 🎯 國考重點",
    "pass": true,
-   "extra": []
+   "extra": 13
   },
   {
    "name": "blood-ciliary：全部概念卡都有國考重點",
@@ -374,9 +374,9 @@
    "extra": 1
   },
   {
-   "name": "blood-retina：複習課每張概念卡都有 🎯 與 ✏️",
+   "name": "blood-retina：複習課有 🎯 國考重點",
    "pass": true,
-   "extra": []
+   "extra": 15
   },
   {
    "name": "blood-retina：全部概念卡都有國考重點",

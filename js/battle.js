@@ -223,6 +223,7 @@ const RunUI = (() => {
           </div>
           <div class="skillbar" id="skills"></div>
           </div>
+          ${R.abyss ? `<details class="abyss-progress" id="abyssProgress"><summary><span id="abyssProgressCount"></span></summary><div id="abyssProgressTypes"></div></details>` : ''}
           <div class="qpanel panel dark" id="qpanel"></div>
         </div>
         <div class="side">${sideHTML(true)}</div>
@@ -232,6 +233,7 @@ const RunUI = (() => {
     updateHud();
     renderSkills();
     renderQuestion();
+    updateAbyssProgress();
     if (m.boss && !s.bf.intro) {
       s.bf.intro = true; R.save(); SFX.play('boss');
       U.modal({ title: `首領現身：${m.name}`, narrow: true, body: `<div class="center">${SP.icon(m.tile, 120, 'anim-bob', `filter:${m.filter};transform:scaleX(-1)`)}</div>
@@ -309,6 +311,14 @@ const RunUI = (() => {
     const cb = document.getElementById('combo'); if (cb) cb.textContent = s.combo >= 2 ? `${s.combo} 連擊！` : '';
   }
 
+  function updateAbyssProgress() {
+    const count = document.getElementById('abyssProgressCount');
+    if (!count || !R.abyss) return;
+    const stats = Screens.scopeStats(R.pool());
+    count.textContent = `範圍 已刷 ${stats.done}／共 ${stats.total} 題`;
+    document.getElementById('abyssProgressTypes').textContent = `題型 已刷 ${stats.tDone}／共 ${stats.types} 種（同類題組任一題作答過即算已刷）`;
+  }
+
   function renderQuestion() {
     const s = R.s;
     stopTimer();
@@ -357,6 +367,7 @@ const RunUI = (() => {
     busy = true;
     SFX.play(res.ok ? 'correct' : 'wrong');
     const ev = R.resolve(q, res);
+    updateAbyssProgress();
     // 作答當下的衝擊（定格＋閃光＋低頻＋震動）；招式動畫隨後播放
     const hit = ev.find(e => e.t === 'hit'), hurt = ev.find(e => e.t === 'hurt');
     if (hit) FX.impact(hit.crit ? 'crit' : ev.some(e => e.t === 'kill') ? 'kill' : 'hit');

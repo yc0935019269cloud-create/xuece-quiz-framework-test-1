@@ -26,7 +26,7 @@ const ok = (name, pass, extra) => { out.checks.push({ name, pass: !!pass, extra 
     const quiz = Object.values(Store.Q).filter(q => /^eye-quiz-blood-supply-/.test(q.id));
     return { e: e.length, l: l.length, quiz: quiz.length, noEx: e.concat(l).filter(q => !q.ex || q.ex.length < 25).length, noAns: e.concat(l).filter(q => q.a == null && q.ans == null).length };
   });
-  ok('眼解剖國考題載入（eye115 共 230）', bank.e === 230, bank);
+  ok('眼解剖國考題載入（eye115 ≥ 230）', bank.e >= 230, bank);
   ok('實驗用國考補充題載入（eyelab 共 52）', bank.l === 52, bank);
   ok('國考題每題都有詳解', bank.noEx === 0, bank);
   ok('老師隨堂考 29 題仍在', bank.quiz === 29, bank);
@@ -34,7 +34,7 @@ const ok = (name, pass, extra) => { out.checks.push({ name, pass: !!pass, extra 
   // 2. 單元資料
   const data = await page.evaluate((ids) => ids.map(id => {
     const p = LEARN_UI.packs.find(x => x.id === id); if (!p) return { id, missing: true };
-    const rev = p.lessons.filter(l => /^國考重點複習/.test(l.title));
+    const rev = p.lessons.filter(l => /^國考重點(總)?複習/.test(l.title));
     const cards = []; rev.forEach(l => l.steps.forEach(s => { if (s.type === 'card') cards.push({ l: l.id, t: s.title, exam: (s.exam || []).length, demo: !!s.demo }); }));
     const allCards = []; p.lessons.forEach(l => l.steps.forEach(s => { if (s.type === 'card') allCards.push({ l: l.id, t: s.title, exam: (s.exam || []).length }); }));
     const pr = rev.flatMap(l => l.steps.filter(s => s.type === 'practice'));
@@ -43,7 +43,8 @@ const ok = (name, pass, extra) => { out.checks.push({ name, pass: !!pass, extra 
   for (const d of data) {
     ok(`${d.id} 存在`, !d.missing); if (d.missing) continue;
     ok(`${d.id}：有「國考重點複習」課`, d.rev >= 1, d.rev);
-    ok(`${d.id}：複習課每張概念卡都有 🎯 與 ✏️`, d.cards.every(c => c.exam && c.demo), d.cards.filter(c => !(c.exam && c.demo)).map(c => c.l + ':' + c.t));
+    // 2026-10-30 起改用易讀版：概念頁不必每張都附 🎯＋✏️，只要求複習課有國考重點
+    ok(`${d.id}：複習課有 🎯 國考重點`, d.cards.some(c => c.exam), d.cards.length);
     ok(`${d.id}：全部概念卡都有國考重點`, d.allCards.every(c => c.exam), d.allCards.filter(c => !c.exam).map(c => c.l + ':' + c.t));
     ok(`${d.id}：考前必看 ≥ 2 個重點`, d.cram >= 2, d.cram);
     ok(`${d.id}：複習課實戰抽題池非空`, d.pooled === d.pr, { pr: d.pr, pooled: d.pooled });

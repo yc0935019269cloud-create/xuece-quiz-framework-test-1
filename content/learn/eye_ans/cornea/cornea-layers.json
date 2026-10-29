@@ -63,7 +63,10 @@
             "{p:④ Descemet 膜（德士密氏膜）}",
             "{g:⑤ 內皮}",
             "房水",
-            ":::"
+            ":::",
+            "",
+            "> [!why] 為什麼順序要從外向內？",
+            "> 題目以空氣與房水作方向錨點；先找上皮與內皮，再填中間三層。"
           ],
           "exam": [
             "**考法**：五層順序「上、鮑、基、德、內」（114 師高 8、111 生普 6）。"
@@ -96,12 +99,17 @@
             "> [!big] {o:上皮}＝**非角化、非分泌性的複層鱗狀上皮**，**5–6 層**、約 **50 µm**，受傷後**不留疤**。",
             "",
             "[[img]]",
+            "- 厚度約占整個角膜的 **1/10**（50 µm ÷ 約 500 µm）。",
             "- **周邊比中央厚**。",
             "- 有秩序地退化、凋亡、脫落，約 **6–8 天**整層更新。",
-            "- 受傷時 **24–48 小時**內再生，**不留疤**。"
+            "- 受傷時 **24–48 小時**內再生，**不留疤**。",
+            "",
+            "> [!why] 為什麼表淺上皮傷常能恢復？",
+            "> 輪部與基底細胞補充上皮；若損傷更深或幹細胞不足，結果可能不同。",
+            "📌 講義重點：非角化、非分泌性的複層鱗狀上皮（講義 p.10，紅字）。"
           ],
           "exam": [
-            "**考法**：非角質化複層鱗狀上皮、表面微絨毛、約占全厚 1/10（106 師特 34、106 師高 21、109 師高 8、109 師特 10）。"
+            "**考法**：非角質化複層鱗狀上皮（「角質化」是錯的）、表面有微絨毛、約占全厚 1/10、上皮可再生（106 師特 34、106 師特 21、109 師特 8、109 師特 10）。"
           ],
           "img": "img/eye-anat-fig/cornea_epi.jpg",
           "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
@@ -120,19 +128,15 @@
         },
         {
           "type": "card",
-          "title": "上皮的三種細胞",
+          "title": "上皮表層：淚膜與屏障",
           "body": [
-            "> [!big] 由外到內：**表層**（微絨毛＋緊密連接）→ **翼狀** → **基底**（柱狀、半胞橋小體固定）。",
+            "> [!big] 表層細胞用微絨毛穩住淚膜，細胞間緊密連接限制滲入。",
             "",
             "[[img]]",
-            "| 細胞 | 位置與層數 | 形狀 | 特點 |",
-            "|---|---|---|---|",
-            "| **表層細胞** | 最外層，2–3 層 | 多角形、越往外越扁 | **微絨毛＋醣萼**穩定淚膜；**緊密連接**擋水 |",
-            "| **翼狀細胞**（傘狀） | 中間，2–3 層 | 多角形、核扁平、往前凸 | — |",
-            "| **基底細胞** | 最深，單層 | **高柱狀**、柵欄狀 | 側面**胞橋小體**連接；**半胞橋小體**固定在基底膜 |",
-            "",
-            "- 表層的**緊密連接**：擋住淚液裡的水與親水性物質，不讓它進基質。",
-            "- 基底的**半胞橋小體**：防止整片上皮剝離。"
+            "- 表層約 2～3 層；細胞越往外越扁。",
+            "- 微絨毛上覆蓋醣萼；緊密連接限制水及親水性物質進入基質。",
+            "> [!why] 為什麼表面要穩住淚膜？",
+            "> 均勻淚膜有助維持平滑的光學表面與保護作用。"
           ],
           "exam": [
             "**考法**：上皮三種細胞（表層、翼狀、基底）；單層與複層（108 師特 17）。"
@@ -143,6 +147,76 @@
             "front": "角膜上皮基底細胞靠什麼附著在基底膜上？",
             "back": "半胞橋小體（hemidesmosomes）"
           }
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜表層細胞的緊密連接主要限制哪一方向的移動？",
+          "choices": [
+            "淚液中的水與親水性物質進入角膜",
+            "光線進入眼球",
+            "神經進入上皮",
+            "淚液沿表面鋪展"
+          ],
+          "answer": 0,
+          "hint": "從細胞的位置推它的工作。",
+          "explain": "表層細胞間緊密連接構成屏障，限制淚液中的水與親水性物質進入。"
+        },
+        {
+          "type": "card",
+          "title": "翼狀與基底細胞：補充與固定",
+          "body": [
+            "> [!big] 翼狀細胞在中間；最深的柱狀基底細胞把上皮固定在基底膜。",
+            "",
+            "[[img]]",
+            "- 翼狀細胞約 2～3 層，多角形、核扁平，前面凸起。",
+            "- 基底細胞為單層高柱狀，側面以胞橋小體相連。",
+            "- 基底細胞以**半胞橋小體（半橋粒）**附著基底膜。",
+            "> [!why] 為什麼需要半橋粒？",
+            "> 它把基底細胞錨定於基底膜，有助防止整片上皮剝離。"
+          ],
+          "img": "img/eye-anat-fig/cornea_epi.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "exam": [
+            "**考法**：基底上皮與基底膜的附著靠半橋粒（109 師特 7）。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "上皮三種細胞一張表",
+          "body": [
+            "> [!big] 由外到內：{b:表層}（扁、微絨毛）→ {g:翼狀}（多角形）→ {o:基底}（柱狀、半橋粒）。",
+            "[[img]]",
+            "| 層次 | 形狀 | 層數 | 特色 |",
+            "|---|---|---|---|",
+            "| {b:表層細胞} | 最扁（寬約 45 µm、厚約 4 µm） | 2～3 層 | 微絨毛＋醣萼、**緊密連接** |",
+            "| {g:翼狀細胞} | 多角形、核扁平 | 2～3 層 | 在中間，前面凸起 |",
+            "| {o:基底細胞} | 高柱狀，單層 | **1 層** | **半橋粒**固定基底膜；分裂補充 |",
+            "> [!tip] 記法",
+            "> 越靠外越**扁**；只有最深的基底細胞是**單層柱狀**，也是主要負責分裂補充的細胞層。",
+            "",
+            "> [!why] 為什麼越外越扁？",
+            "> 表層要鋪成平整的表面並擋住外界；最深的基底細胞則要站得穩、還要分裂補充。"
+          ],
+          "exam": [
+            "**考法**：上皮是複層（有基底、翼狀、表層三種細胞）；內皮才是單層六角形（109 師特 8：「六角狀、相鄰房水」是內皮的特徵）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_epi.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜基底上皮細胞藉何構造固定於基底膜？",
+          "choices": [
+            "半橋粒",
+            "微絨毛",
+            "間隙連接",
+            "角膜基質層板"
+          ],
+          "answer": 0,
+          "hint": "從細胞的位置推它的工作。",
+          "explain": "半橋粒（hemidesmosome）將基底細胞固定在基底膜；微絨毛有助淚膜穩定。"
         },
         {
           "type": "check",
@@ -160,14 +234,35 @@
         },
         {
           "type": "card",
-          "title": "上皮從哪裡補充？輪部幹細胞與 XYZ 假說",
+          "title": "輪部：角膜與結膜的交界，也是幹細胞的家",
           "body": [
-            "> [!big] 新的上皮細胞來自**輪部幹細胞**（Vogt 柵欄的基底層）；健康時 **X＋Y＝Z**（補充＝脫落）。",
-            "",
+            "> [!big] {y:輪部（limbus）}是角膜與結膜的交界，角膜上皮的{y:幹細胞}住在這裡。",
             "[[img]]",
-            "- **輪部（limbus）**：角膜的複層鱗狀上皮 ↔ 結膜的複層柱狀上皮（含杯狀細胞）的交界。",
-            "- **輪部幹細胞**可能在 **Vogt 柵欄（palisades of Vogt）**的基底層，是單能幹細胞。",
-            "",
+            "::: cols b p",
+            "### 角膜這一側",
+            "- 複層鱗狀上皮",
+            "- **沒有**杯狀細胞",
+            "|||",
+            "### 結膜這一側",
+            "- 複層柱狀上皮",
+            "- 有分泌黏液的**杯狀細胞**",
+            ":::",
+            "- 幹細胞可能位在輪部 **Vogt 柵欄**的基底層，是單能幹細胞。",
+            "> [!why] 為什麼幹細胞放在邊緣？",
+            "> 常見的解釋：邊緣被眼瞼與輪部血管保護，較少受傷；新細胞再一路往中央補。",
+            "📌 講義重點：輪部 Vogt 柵欄與單能幹細胞（講義 p.19，紅字）。"
+          ],
+          "exam": [
+            "**考法**：結膜與角膜的連接處＝輪部（108 生特 7）；上皮幹細胞在輪部（111 生普 7）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_limbus.jpg",
+          "img_source": "Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "card",
+          "title": "XYZ 假說：補充＝脫落",
+          "body": [
+            "> [!big] 健康的上皮：{o:X}（向心補充）＋{o:Y}（往上分層）＝{o:Z}（表層脫落）。",
             "::: cols o o o",
             "### X",
             "- 基底細胞增生",
@@ -179,17 +274,32 @@
             "|||",
             "### Z",
             "- 表層細胞**脫落**到淚膜",
-            ":::"
+            ":::",
+            "> [!why] 為什麼要三個方向都有？",
+            "> 表層持續掉（Z），就要有人補：往上補（Y），再從邊緣往中央補（X）；收支平衡，上皮才維持固定厚度。",
+            "📌 講義重點：XYZ 假說（講義 p.21，紅字）。"
           ],
           "exam": [
-            "**考法**：幹細胞在**輪部**（108 生特 7、111 生普 7、109 師特 10）；再生能力以上皮最強（107 師高 10）。"
+            "**考法**：再生能力以上皮最強（107 師特 10）；X＝向心移動、Z＝脫落。"
           ],
-          "img": "img/eye-anat-fig/cornea_limbus.jpg",
-          "img_source": "Rapidreflex，Wikimedia Commons「Human eye with eyelid pulled open, anterior view.jpg」，CC BY-SA 4.0（https://commons.wikimedia.org/wiki/File:Human_eye_with_eyelid_pulled_open,_anterior_view.jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "flash": {
             "front": "XYZ 假說的 X、Y、Z 各代表什麼？",
             "back": "X：基底細胞增生並向心移動；Y：往上分化成各層；Z：表層細胞脫落到淚膜"
           }
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "XYZ 假說中，由角膜周邊向中央移動的補充屬於哪一項？",
+          "choices": [
+            "X",
+            "Y",
+            "Z",
+            "以上皆非"
+          ],
+          "answer": 0,
+          "hint": "從細胞的位置推它的工作。",
+          "explain": "X 包括基底細胞增生與向心移動；Y 指向上形成各層，Z 指表層脫落。"
         },
         {
           "type": "check",
@@ -204,6 +314,38 @@
           "answer": 2,
           "hint": "Z 軸想成垂直於表面、離開角膜的方向。",
           "explain": "**Z＝表層細胞脫落**到淚膜。X 是向心移動；Y 是往上分化。內皮與 XYZ 假說無關。"
+        },
+        {
+          "type": "card",
+          "title": "幹細胞缺陷：結膜上皮會爬進角膜",
+          "body": [
+            "> [!big] 輪部幹細胞缺陷 → 角膜補不回來，{r:結膜上皮爬進角膜}（結膜化）。",
+            "::: flow",
+            "輪部幹細胞缺陷",
+            "角膜上皮補不上 → 慢性上皮缺損",
+            "結膜上皮（含杯狀細胞）長進角膜＝結膜化",
+            ":::",
+            "- 結膜化的角膜表面不平、不透明，常伴血管長入 → 視力下降。",
+            "> [!why] 為什麼會被結膜佔領？",
+            "> 輪部像一道邊界，平常擋住結膜上皮；幹細胞不足、邊界失守，結膜細胞就往角膜中央移動。"
+          ],
+          "exam": [
+            "**考法**：「角膜幹細胞缺陷 → 慢性上皮缺損及結膜化」是正確敘述（109 師特 10）。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜輪部幹細胞嚴重缺陷時，最可能出現：",
+          "choices": [
+            "結膜上皮長進角膜（結膜化）、慢性上皮缺損",
+            "內皮細胞數目增加",
+            "基質變厚且更透明",
+            "Bowman 層重新長出"
+          ],
+          "answer": 0,
+          "hint": "輪部是角膜與結膜的邊界。",
+          "explain": "幹細胞是上皮的補給來源；缺陷時角膜上皮補不上，結膜上皮越界進入（結膜化），並造成慢性上皮缺損。"
         },
         {
           "type": "example",
@@ -292,16 +434,14 @@
           "type": "card",
           "title": "上皮基底膜",
           "body": [
-            "> [!big] 基底細胞分泌的薄膜：**IV 型膠原＋層黏蛋白（laminin）**；急性受傷時**纖維連接蛋白（fibronectin）**增加。",
+            "> [!big] 上皮基底膜由基底細胞分泌，正常含 IV 型膠原與層黏蛋白。",
             "",
             "[[img]]",
-            "- fibronectin 增加 → 幫助上皮移行、修復。",
-            "- 基底膜最靠近 **Bowman 層**。",
-            "",
-            "> [!note] 臨床",
-            "> 1. 基底膜異常 → **反覆性角膜糜爛**、上皮缺損；可用 **PTK**（治療性雷射角膜切除術）。",
-            "> 2. **老化、糖尿病** → 基底膜變厚、多層化。",
-            "> 3. **上皮水腫** → 基底細胞附著變鬆，上皮容易剝離。"
+            "- IV 是羅馬數字 **4**：IV 型膠原（type IV collagen）。",
+            "- 急性受傷時纖維連接蛋白（fibronectin）增加，有助上皮移行。",
+            "- 基底膜緊鄰 Bowman 層。",
+            "> [!why] 為什麼需要基底膜？",
+            "> 它提供上皮附著的基底；異常時上皮較難穩定附著。"
           ],
           "exam": [
             "**考法**：上皮基底膜最靠近 **Bowman 層**（106 師特 15）；基底細胞靠**半橋粒**（109 師特 7）。"
@@ -312,6 +452,55 @@
             "front": "角膜上皮基底膜的主要成分？",
             "back": "IV 型膠原與層黏蛋白（laminin）"
           }
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜上皮基底膜中的 IV 型膠原，IV 代表第幾型？",
+          "choices": [
+            "第 4 型",
+            "第 1 型",
+            "第 6 型",
+            "第 8 型"
+          ],
+          "answer": 0,
+          "hint": "先確認受損的是哪個構造。",
+          "explain": "羅馬數字 IV 表示 4；上皮基底膜含 IV 型膠原，Descemet 膜以 VIII 型為主。"
+        },
+        {
+          "type": "card",
+          "title": "基底膜異常：反覆糜爛",
+          "body": [
+            "> [!big] 基底膜異常使上皮附著不穩，可能反覆脫落。",
+            "",
+            "[[img]]",
+            "- 反覆性角膜糜爛與上皮缺損可評估保護與 PTK 治療。",
+            "- 老化、糖尿病可使基底膜增厚、多層化。",
+            "- 上皮水腫可使基底細胞的附著變鬆。",
+            "- 上皮基底膜失養症（又稱 Cogan／地圖-點狀-指紋狀）是反覆糜爛常見原因之一，它是**基底膜**的問題，不是基質失養症。",
+            "> [!why] 為什麼容易反覆？",
+            "> 附著界面有問題，即使上皮重新覆蓋，也可能再次剝離。",
+            "📌 講義重點：反覆性角膜糜爛（講義 p.24，紅字）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_bm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "exam": [
+            "**考法**：基底膜位於上皮與 Bowman 層之間（106 師特 15）；基底膜異常可導致反覆糜爛。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜上皮反覆剝落，若問題在附著界面，應優先考慮哪個構造異常？",
+          "choices": [
+            "上皮基底膜",
+            "水晶體囊",
+            "玻璃體皮質",
+            "視網膜色素上皮"
+          ],
+          "answer": 0,
+          "hint": "先確認受損的是哪個構造。",
+          "explain": "基底膜異常可使上皮附著不穩而反覆糜爛。"
         },
         {
           "type": "check",
@@ -329,29 +518,103 @@
         },
         {
           "type": "card",
-          "title": "Bowman 層：沒有細胞、壞了不會長回來",
+          "title": "Bowman 層是什麼？和上皮基底膜別搞混",
           "body": [
-            "> [!big] {y:Bowman 層}是**前基質的特化區**（不是上皮的基底膜）：**無細胞**、8–14 µm、{r:**破壞後不再生**}。",
-            "",
+            "> [!big] {y:Bowman 層}是{y:前基質的特化區}，無細胞、8–14 µm；它{r:不是}上皮的基底膜。",
             "[[img]]",
-            "- **狹窄、無細胞（acellular）**、均質，厚 **8–14 µm**。",
-            "- 由 **I、III、V 型膠原**組成。",
+            "| 比較 | 上皮基底膜 | Bowman 層 |",
+            "|---|---|---|",
+            "| 誰做的 | 基底細胞分泌 | 前基質特化 |",
+            "| 膠原 | IV 型＋laminin | I、III、V 型 |",
+            "| 細胞 | 無 | **無細胞** |",
+            "| 位置 | 上皮正下方 | 基底膜與基質之間 |",
             "- 前面和上皮界線清楚，後面和基質融合。",
-            "- 對感染和外傷**相對有抵抗力**；神經會穿過它。",
-            "- 一旦破壞，由**疤痕**取代。",
-            "",
-            "> [!tip] 兩個「膜」的差別",
-            "> {y:Bowman} **不會**再生；{p:Descemet} **會**再生（由內皮分泌）。"
+            "> [!why] 為什麼說它是「層」不是「膜」？",
+            "> 它其實是一片緻密的膠原纖維（淺層基質），不是由上皮分泌的薄膜；名字裡的「膜」容易誤導。",
+            "📌 講義重點：Bowman 層不是上皮的基底膜（講義 p.25）。"
           ],
           "exam": [
-            "**考法**：Bowman 層**無細胞**、不再生（110 師高 8）；神經穿過它（109 師特 8）。"
+            "**考法**：Bowman 層**無細胞**（110 師高 8）；它是無細胞的淺層基質、由膠原纖維形成（109 師特 10 D）；上皮基底膜最靠近 Bowman 層（106 師特 15）。"
           ],
           "img": "img/eye-anat-fig/cornea_bm.jpg",
-          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "card",
+          "title": "Bowman 層壞了：疤痕取代，不會長回來",
+          "body": [
+            "> [!big] Bowman 層受損後{r:不再生}，由{r:疤痕}取代，留下混濁。",
+            "::: flow",
+            "傷口深及 Bowman 層",
+            "新膠原以不規則方式排列",
+            "疤痕 → 角膜混濁、不規則散光",
+            ":::",
+            "- 對感染和外傷**相對有抵抗力**；所以傷到它通常已經是較深的傷。",
+            "> [!tip] 兩個「膜」的差別",
+            "> {y:Bowman} **不會**再生；{p:Descemet} **會**再生（由內皮分泌）。",
+            "",
+            "> [!why] 為什麼不規則的膠原會讓角膜混濁？",
+            "> 修復用的膠原粗細、方向都亂，光被散射，就像毛玻璃。",
+            "📌 講義重點：Bowman 層無細胞且破壞後不再生（講義 p.25，紅字）。"
+          ],
+          "exam": [
+            "**考法**：Bowman 層不再生；上皮受傷只要沒傷到 Bowman 層可再生不留疤（106 生特 9 C）。"
+          ],
           "flash": {
             "front": "Bowman 層受損後會不會再生？",
             "back": "不會再生，由疤痕組織取代"
           }
+        },
+        {
+          "type": "card",
+          "title": "神經穿過 Bowman 層進入上皮",
+          "body": [
+            "> [!big] 角膜的神經從輪部進入基質，{b:穿過 Bowman 層}，到上皮底部分布。",
+            "::: flow",
+            "輪部",
+            "基質（神經叢）",
+            "穿過 Bowman 層",
+            "上皮底部、表層（痛覺極敏銳）",
+            ":::",
+            "- 有神經穿過：**Bowman 層、上皮、基質**。",
+            "- **沒有**神經：**Descemet 膜、內皮**。",
+            "> [!why] 為什麼 Bowman 層一破就特別痛？",
+            "> 神經正好穿過這一層往上皮走，傷口一旦深到這裡，神經末梢就暴露了。",
+            "📌 講義重點：神經集中在前基質、Bowman 層下方（講義 p.47）；Descemet 膜與內皮沒有神經。"
+          ],
+          "exam": [
+            "**考法**：角膜神經纖維通過哪些層？Bowman、上皮、基質（109 師特 8）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_nerve.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列哪一層「沒有」角膜神經纖維分布？",
+          "choices": [
+            "Bowman 層",
+            "上皮層",
+            "前基質",
+            "Descemet 膜"
+          ],
+          "answer": 3,
+          "hint": "神經從前面進來，一路往上皮走。",
+          "explain": "神經從輪部進入基質、穿過 Bowman 層到上皮；Descemet 膜與內皮沒有神經支配。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Bowman 層受損後的典型修復方式是？",
+          "choices": [
+            "由疤痕取代",
+            "由內皮重新分泌完整 Bowman 層",
+            "變成透明水晶體",
+            "由表層淚液填滿"
+          ],
+          "answer": 0,
+          "hint": "先確認受損的是哪個構造。",
+          "explain": "Bowman 層不能完整再生；較深傷口可能由排列不規則的疤痕取代。"
         },
         {
           "type": "check",
@@ -466,7 +729,9 @@
             "[[img]]",
             "- 又稱**固有層（substantia propria）**，提供角膜的**結構完整性**。",
             "- 膠原外圍包著蛋白聚醣：**硫酸角質素、硫酸軟骨素、硫酸皮膚素**。",
-            "- **角膜細胞**：扁平的纖維母細胞、核大偏一側，負責製造基質與膠原；另有遊走的巨噬細胞、組織球和少量淋巴球。"
+            "",
+            "> [!why] 為什麼基質提供支撐？",
+            "> 多層膠原板層與細胞外基質形成角膜的主要厚度，支撐形狀。"
           ],
           "exam": [
             "**考法**：基質最厚（約 90%）、I 型膠原（107 生特 6、106 師特 14）。"
@@ -481,16 +746,24 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "角膜基質中負責製造膠原與基質的細胞是：",
+          "q": "角膜基質中製造膠原與細胞外基質的主要細胞是？",
           "choices": [
-            "基底細胞",
             "角膜細胞（keratocyte）",
-            "內皮細胞",
-            "杯狀細胞"
+            "杯狀細胞",
+            "視桿細胞",
+            "水晶體纖維"
           ],
-          "answer": 1,
-          "hint": "它是一種扁平的纖維母細胞。",
-          "explain": "**角膜細胞（keratocyte）**是基質裡的纖維母細胞，製造基質與膠原纖維。基底細胞在上皮；內皮細胞負責打水；杯狀細胞在結膜。"
+          "answer": 0,
+          "hint": "把結構的排列和功能連起來。",
+          "explain": "角膜細胞是基質中負責製造膠原與基質的細胞。"
+        },
+        {
+          "type": "check",
+          "kind": "tf",
+          "q": "角膜基質完全沒有細胞，只有膠原纖維。",
+          "answer": false,
+          "hint": "基質裡有一種扁平的纖維母細胞。",
+          "explain": "基質有**角膜細胞（keratocyte）**。真正無細胞的是 Bowman 層與 Descemet 膜。"
         },
         {
           "type": "card",
@@ -512,7 +785,11 @@
             "- 抗張力、但較**柔軟**",
             "- **含水較高**，最容易水腫",
             ":::",
-            "後基質規則平行，所以**層狀角膜移植**時容易剝離。"
+            "後基質規則平行，所以**層狀角膜移植**時容易剝離。",
+            "",
+            "> [!why] 為什麼兩處的功能不同？",
+            "> 前方板層交織有助抵抗剪力；後方較平行，且含水較高。",
+            "📌 講義重點：前方交織、後方規則疊放（講義 p.28，紅字）。"
           ],
           "exam": [
             "**考法**：前 1/3 與後 2/3 基質的差異（排列、含水量）屬進階題，偶見於角膜移植相關題。"
@@ -527,16 +804,30 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "內皮幫浦失效時，最容易水腫的是：",
+          "q": "內皮幫浦失效時，哪一部分基質較容易水腫？",
           "choices": [
-            "上皮基底膜",
+            "後基質",
+            "前基質一定最早",
             "Bowman 層",
-            "前 1/3 基質",
-            "後基質"
+            "角膜外的鞏膜"
           ],
-          "answer": 3,
-          "hint": "哪一部分本來含水就比較多、又最靠近內皮？",
-          "explain": "**後基質**含水量較高、排列鬆，內皮幫浦一失效就先腫起來。前基質交織緊密、較不易腫。"
+          "answer": 0,
+          "hint": "把結構的排列和功能連起來。",
+          "explain": "後基質含水較高，內皮失效時較容易水腫。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "內皮幫浦失效後，角膜為什麼會變混濁？",
+          "choices": [
+            "水進入基質，膠原間距與排列被打亂，光散射增加",
+            "血管長入角膜擋住光線",
+            "膠原纖維變粗",
+            "上皮變得角質化"
+          ],
+          "answer": 0,
+          "hint": "透明靠的是整齊排列的細纖維。",
+          "explain": "水分過多會撐開、打亂規則排列的膠原，光被散射 → 水腫混濁。"
         },
         {
           "type": "card",
@@ -555,7 +846,10 @@
             "- **缺氧** → 角膜水腫",
             "- **基質損傷** → 疤痕",
             "- **層板紊亂** → 圓錐角膜",
-            ":::"
+            ":::",
+            "",
+            "> [!why] 為什麼水腫會混濁？",
+            "> 水分過多使基質膠原間距與規則排列改變，光散射增加。"
           ],
           "exam": [
             "**考法**：透明度＝膠原規則、無血管、內皮幫浦（113 師高 9、107 師高 2、112 生普 7）。"
@@ -577,34 +871,62 @@
         },
         {
           "type": "card",
-          "title": "基質相關疾病",
+          "title": "透明題怎麼考：什麼是原因、什麼是陷阱",
           "body": [
-            "> [!big] 脂質沉積 → **老年環**；三種基質失養症：**斑狀＝黏多醣、顆粒＝玻璃樣、格子＝類澱粉**。",
-            "",
-            "[[img]]",
-            "- 老化 → **老年環（arcus senilis）**；高膽固醇血症 → **青年環（arcus juvenilis）**。",
-            "",
-            "| 基質失養症（沉積在前基質） | 沉積物 |",
+            "> [!big] 選{g:規則排列、無血管、內皮抽水}；{r:彈性纖維}和「有膠原」都是陷阱。",
+            "| 敘述 | 是透明的原因嗎？ |",
             "|---|---|",
-            "| **斑狀**（Macular） | **黏多醣**（醣胺聚醣） |",
-            "| **顆粒狀**（Granular） | **玻璃樣物質**（hyaline） |",
-            "| **格子狀**（Lattice） | **類澱粉**（amyloid） |",
-            "",
-            "> [!tip] 記法",
-            "> **M**arilyn **M**onroe（Macular–Mucopolysaccharide）、**G**ranular–**H**yaline、**L**attice–**A**myloid。",
-            "",
-            "> [!warn] 講義寫反了",
-            "> 講義 p.32 把「玻璃樣＝斑狀、黏多醣＝顆粒狀」寫反；這裡依標準教科書配對，考前請跟老師確認。"
+            "| 膠原纖維細、排列規則 | {g:是} |",
+            "| 角膜無血管 | {g:是} |",
+            "| 上皮緊密連接（擋水）＋內皮 Na⁺/K⁺ 幫浦（抽水） | {g:是} |",
+            "| 含有彈性纖維 | {r:不是}（角膜沒有大量彈性纖維） |",
+            "| 「是膠原組成」 | {r:不是}（鞏膜也是膠原卻不透明） |",
+            "| 間隙連接、水分子擴散 | {r:不是}（①④ 錯） |",
+            "> [!why] 為什麼這樣分？",
+            "> 透明＝光被散射得很少。細而整齊的纖維、沒有血管擋光、水被抽乾不撐開纖維，三件事都讓散射變少。"
           ],
           "exam": [
-            "**考法**：基質疾病（圓錐角膜、基質營養不良）：「科根（Cogan）」其實是上皮基底膜失養症，不是基質失養症（111 生普 34）。"
+            "**考法**：透明＝纖維規則＋無血管（112 生普 7）；緊密連接＋鈉鉀幫浦（107 師特 2）；上皮缺損也會影響透光（113 師高 9 D）。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列何者「不是」角膜保持透明的原因？",
+          "choices": [
+            "膠原纖維排列規則",
+            "角膜沒有血管",
+            "內皮細胞的鈉鉀幫浦把水抽出",
+            "基質含有豐富的彈性纖維"
+          ],
+          "answer": 3,
+          "hint": "角膜和鞏膜一樣，沒有大量彈性纖維。",
+          "explain": "彈性纖維不是角膜透明的原因（角膜也沒有大量彈性纖維）。其他三項都是。"
+        },
+        {
+          "type": "card",
+          "title": "周邊的灰白環：老年環與青年環",
+          "body": [
+            "> [!big] 角膜周邊的灰白環是{y:脂質沉積}：老人叫{y:老年環}，年輕人若有高膽固醇叫{y:青年環}。",
+            "[[img]]",
+            "::: cols y p",
+            "### 老年環 arcus senilis",
+            "- 隨年齡增加",
+            "- 脂質沉積在周邊基質",
+            "|||",
+            "### 青年環 arcus juvenilis",
+            "- 年輕人出現",
+            "- 與高膽固醇血症有關",
+            ":::",
+            "> [!why] 為什麼出現在周邊？",
+            "> 周邊靠近輪部血管，血中的脂質較容易沉積在這裡；所以年輕人出現環要想到血脂。",
+            "📌 講義重點：老年環與青年環（講義 p.32，紅字）。"
+          ],
+          "exam": [
+            "**考法**：年輕人角膜周邊出現灰白環 → 想到高膽固醇（青年環）。"
           ],
           "img": "img/eye-anat-fig/cornea_stroma.jpg",
-          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
-          "flash": {
-            "front": "格子狀角膜失養症的沉積物？",
-            "back": "類澱粉（amyloid）"
-          }
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -619,6 +941,51 @@
           "answer": 1,
           "hint": "隨年齡增加，什麼物質會沉積在基質？",
           "explain": "老化造成**脂質**沉積於基質周邊 → **老年環**。Fleischer ring 是圓錐角膜的鐵環；格子狀失養症是類澱粉；Vogt 柵欄是輪部構造。"
+        },
+        {
+          "type": "card",
+          "title": "三種基質失養症：沉積物配對",
+          "body": [
+            "> [!big] 三種失養症都沉積在{b:前基質}：斑狀＝{o:黏多醣}、顆粒＝{g:玻璃樣}、格子＝{p:類澱粉}。",
+            "[[img]]",
+            "| 基質失養症 | 沉積物 |",
+            "|---|---|",
+            "| **斑狀**（Macular） | **黏多醣**（醣胺聚醣） |",
+            "| **顆粒狀**（Granular） | **玻璃樣物質**（hyaline） |",
+            "| **格子狀**（Lattice） | **類澱粉**（amyloid） |",
+            "",
+            "> [!tip] 記法",
+            "> **M**arilyn **M**onroe（Macular–Mucopolysaccharide）、**G**ranular–**H**yaline、**L**attice–**A**myloid。",
+            "",
+            "> [!warn] 講義寫反了",
+            "> 講義 p.32 把「玻璃樣＝斑狀、黏多醣＝顆粒狀」寫反；這裡依標準教科書配對，考前請跟老師確認。",
+            "",
+            "> [!why] 為什麼是「失養症」不是發炎？",
+            "> 這是遺傳性的代謝／沉積問題，物質慢慢堆在基質，使原本均勻的結構被打亂、光散射增加。"
+          ],
+          "exam": [
+            "**考法**：基質失養症的沉積物配對；「科根（Cogan）」其實是上皮基底膜失養症，不是基質失養症（111 生普 34）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_stroma.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "格子狀角膜失養症的沉積物？",
+            "back": "類澱粉（amyloid）"
+          }
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "格子狀（lattice）角膜失養症的典型沉積物為？",
+          "choices": [
+            "類澱粉",
+            "脂質",
+            "鐵",
+            "鈣"
+          ],
+          "answer": 0,
+          "hint": "把結構的排列和功能連起來。",
+          "explain": "格子狀與類澱粉配對；講義 p.32 的其他兩種配對有疑點，應與老師確認。"
         },
         {
           "type": "example",
@@ -701,27 +1068,29 @@
       "steps": [
         {
           "type": "intro",
-          "title": "Descemet 膜：最後撐住眼球的那片膜",
+          "title": "Descemet 膜：內皮的基底膜",
           "body": [
-            "> [!big] {p:Descemet 膜（德士密氏膜）}強韌又有彈性，是**內皮的基底膜**：破了**會再生**，而且**隨年紀變厚**。",
+            "> [!big] {p:Descemet 膜}是內皮分泌的基底膜，隨年齡增厚。",
             "",
-            "嚴重的角膜潰瘍把上皮和基質都吃掉時，最後還撐著眼球不破的，常常就是這片膜。"
+            "深度潰瘍時，它可能暫時留在基質後方；若向前膨出，仍有穿孔危險。"
           ]
         },
         {
           "type": "card",
-          "title": "Descemet 膜的特徵",
+          "title": "位置：內皮的基底膜",
           "body": [
-            "> [!big] **VIII 型膠原**；內皮分泌 → **可再生**；**隨年齡增厚**；周邊終點是 **Schwalbe 線**。",
+            "> [!big] {p:Descemet 膜}位於基質和內皮之間，是內皮的基底膜。",
             "",
             "[[img]]",
-            "- **強韌、有抵抗力、均質、有彈性**，把基質從後面「綁住」。",
-            "- 主要由 **VIII 型膠原**與醣蛋白組成。",
-            "- 後方非帶狀層持續產生 → 小孩較薄、成人較厚。",
-            "- 周邊終止在小樑網前端，形成 **Schwalbe 線（Schwalbe's line）**。"
+            "- 由外向內：上皮 → Bowman → 基質 → Descemet → 內皮。",
+            "- 內皮是一層細胞；膜本身不是細胞層。",
+            "- 📌 講義重點：內皮基底膜（p.33）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 內皮貼著自己分泌的基底膜；上皮基底膜則靠近 Bowman 層。"
           ],
           "exam": [
-            "**考法**：Descemet 膜＝內皮的基底膜（107 生普 5）；隨年齡增厚（113 生普 2、113 師高 8）。"
+            "🎯 107 題本 n=205、111 普考第 6 題、114 高考第 8 題：別把兩端的膜交換。"
           ],
           "img": "img/eye-anat-fig/cornea_dm.jpg",
           "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
@@ -729,6 +1098,40 @@
             "front": "Descemet 膜的周邊終點叫什麼？",
             "back": "Schwalbe 線（小樑網前端）"
           }
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "由角膜基質往房水方向走，先後遇到哪些構造？",
+          "choices": [
+            "內皮 → Descemet 膜",
+            "Descemet 膜 → 內皮",
+            "Bowman 層 → 上皮",
+            "上皮 → Bowman 層"
+          ],
+          "answer": 1,
+          "hint": "先把位置與功能連起來想。",
+          "explain": "基質後方依序是 Descemet 膜與單層內皮。"
+        },
+        {
+          "type": "card",
+          "title": "成分與韌性",
+          "body": [
+            "> [!big] Descemet 膜以 VIII 型膠原與醣蛋白組成。",
+            "",
+            "[[img]]",
+            "- 它強韌、均質且有彈性，支持基質的後方。",
+            "- 上皮基底膜以 IV 型膠原為主；基質以 I 型為主。",
+            "- 📌 講義重點：VIII 型膠原（p.33）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 膜的材料與結構提供抗拉及相對抗酵素分解的能力。"
+          ],
+          "exam": [
+            "🎯 陷阱：基底膜不代表都以同一型膠原為主。"
+          ],
+          "img": "img/eye-anat-fig/cornea_dm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -745,6 +1148,26 @@
           "explain": "Descemet 膜主要是 **VIII 型膠原**。I 型是基質；IV 型是上皮基底膜；III 型出現在 Bowman 層。"
         },
         {
+          "type": "card",
+          "title": "膜能再生，內皮細胞不同",
+          "body": [
+            "> [!big] Descemet 膜可由內皮再分泌；成人內皮細胞增殖能力有限。",
+            "",
+            "[[img]]",
+            "- 膜受損後，在有足夠功能性內皮的條件下可形成新的基底膜。",
+            "- 內皮缺損通常靠鄰近細胞移行、擴大填補。",
+            "- 📌 講義重點：膜由內皮生成，可再生（p.33）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 膜是細胞分泌的材料；「材料可再生」不等於細胞能大量增殖。"
+          ],
+          "exam": [
+            "🎯 106 題本 n=207、111 高考第 9 題：內皮單層，受傷後通常不能正常再生。"
+          ],
+          "img": "img/eye-anat-fig/cornea_dm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
           "type": "check",
           "kind": "tf",
           "q": "Descemet 膜破壞後可以由內皮細胞再生。",
@@ -754,29 +1177,114 @@
         },
         {
           "type": "card",
-          "title": "Hassall-Henle 小體 vs guttae",
+          "title": "為什麼年紀越大膜越厚？",
           "body": [
-            "> [!big] 都是 Descemet 膜後面的疣狀突起：**周邊＝正常老化**（Hassall-Henle）；**中央＝生病**（guttae，Fuchs）。",
+            "> [!big] 後方非帶狀層持續生成，讓 Descemet 膜隨年齡增厚。",
             "",
             "[[img]]",
-            "::: cols g r",
-            "### Hassall-Henle 小體",
-            "- 位置：**周邊**",
-            "- **隨年齡增加**，正常老化",
-            "|||",
-            "### Guttae（滴狀贅疣）",
-            "- 位置：**中央**",
-            "- 見於 **Fuchs 內皮失養症**",
-            ":::"
+            "- 出生前已形成前方帶狀層；出生後繼續累積後方非帶狀層。",
+            "- 老人內皮細胞密度通常下降，剩餘細胞可擴大。",
+            "- 📌 講義重點：兒童與成人膜厚比較（p.34）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 持續堆疊基底膜材料，使膜變厚；細胞數的變化是另一件事。"
           ],
           "exam": [
-            "**考法**：Hassall–Henle 小體（周邊正常）vs guttae（中央病態，Fuchs 失養症）的區分。"
+            "🎯 113 題本 n=202、113 師高第 8 題：變厚，不是變薄。"
+          ],
+          "img": "img/eye-anat-fig/cornea_dm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "年長者的 Descemet 膜通常增厚，主要因為什麼？",
+          "choices": [
+            "內皮持續沉積後方非帶狀層",
+            "上皮每天直接堆疊在膜上",
+            "內皮細胞不斷大量分裂",
+            "房水結晶形成 Bowman 層"
+          ],
+          "answer": 0,
+          "hint": "先把位置與功能連起來想。",
+          "explain": "內皮持續分泌後方非帶狀層，並非成人內皮大量分裂。"
+        },
+        {
+          "type": "card",
+          "title": "Schwalbe 線：膜的周邊終點",
+          "body": [
+            "> [!big] Descemet 膜在小樑網前界終止，形成 Schwalbe 線。",
+            "",
+            "[[img]]",
+            "- 找方位：沿膜向周邊走 → 前房角的小樑網前界。",
+            "- 📌 講義重點：周邊終點（p.33）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 它是膜延伸至前房角時形成的解剖界標。"
+          ],
+          "exam": [
+            "🎯 陷阱：Schwalbe 線是終點，不是中央的疣狀突起。"
+          ],
+          "img": "img/eye-anat-fig/cornea_dm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "card",
+          "title": "角膜老化：膜與細胞分開記",
+          "body": [
+            "> [!big] 老化時膜可增厚，基質細胞卻可能減少。",
+            "",
+            "[[img]]",
+            "- 上皮基底膜可增厚；角膜基質可變硬。",
+            "- 基質有角膜細胞，不是無細胞層。",
+            "- 內皮常呈六角形，老年密度遠低於 20,000 cells/mm²；中央角膜約 520–550 µm，周邊較厚。",
+            "- 📌 講義重點：內皮細胞擴大與膜變厚（p.34）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 不同構造隨年齡改變的方向不必一致。"
+          ],
+          "exam": [
+            "🎯 113 題本 n=202：膜變薄是錯誤選項。"
+          ],
+          "img": "img/eye-anat-fig/cornea_dm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "老化的角膜，哪個組合最符合？",
+          "choices": [
+            "Descemet 膜變薄，基質細胞增多",
+            "Descemet 膜增厚，基質角膜細胞可減少",
+            "內皮細胞大量再生，膜消失",
+            "上皮基底膜必然變薄"
+          ],
+          "answer": 1,
+          "hint": "先把位置與功能連起來想。",
+          "explain": "老化時 Descemet 膜與上皮基底膜可增厚，基質細胞可減少。"
+        },
+        {
+          "type": "card",
+          "title": "周邊小體與中央 guttae",
+          "body": [
+            "> [!big] 看突起位置，再結合內皮狀態判讀。",
+            "",
+            "[[img]]",
+            "- 周邊 Hassall–Henle 小體隨年齡增加，常見於正常老化。",
+            "- 中央 guttae 常見於 Fuchs 內皮失養症。",
+            "- 📌 講義重點：周邊與中央的對照（p.35）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 兩者都是後表面突起，但中央 guttae 也可能有其他原因，不能單憑位置診斷。"
+          ],
+          "exam": [
+            "🎯 記法：H 在周邊；Fuchs 常從中央 guttae 開始。"
           ],
           "img": "img/eye-anat-fig/cornea_dm.jpg",
           "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "flash": {
             "front": "Descemet 膜中央出現疣狀突起（guttae）代表什麼？",
-            "back": "Fuchs 內皮失養症"
+            "back": "常見於 Fuchs 內皮失養症；仍須結合內皮功能與臨床判斷。"
           }
         },
         {
@@ -791,34 +1299,112 @@
           ],
           "answer": 1,
           "hint": "位置在周邊還是中央？",
-          "explain": "周邊、隨年齡增加 → **Hassall-Henle 小體**，屬正常老化。中央的 guttae 才是 Fuchs 的表現。"
+          "explain": "周邊少量突起且內皮功能正常，最符合 **Hassall-Henle 小體**。中央 guttae 常見於 Fuchs，但並非單憑位置即可診斷。"
         },
         {
           "type": "card",
-          "title": "Descemet 膜相關疾病",
+          "title": "Fuchs：突起與內皮失功能",
           "body": [
-            "> [!big] 三類：**失養症**（FECD、CHED、PPCD）、**破裂**（hydrops、產鉗傷、Haab 紋）、**手術與發炎**（DMD、descemetocele）。",
+            "> [!big] Fuchs 常有中央 guttae，且內皮功能逐漸下降。",
             "",
             "[[img]]",
-            "**1. 失養症**",
-            "- **FECD**（Fuchs 內皮失養症）：DM 增厚＋局部 **guttae**",
-            "- **CHED**（先天遺傳性內皮失養症）：出生即有；DM **瀰漫性明顯增厚**、缺乏正常分層 → 嚴重瀰漫水腫",
-            "- **PPCD**（後多形性角膜失養症）：內皮**上皮化生** → DM 多層、結節或帶狀",
+            "- 異常基底膜沉積形成突起；內皮細胞逐漸流失。",
+            "- 幫浦功能不足 → 水腫、視力模糊；晨間可能較明顯。",
+            "- 📌 講義重點：FECD 的膜增厚與 guttae（p.36、41）。",
             "",
-            "**2. 破裂與撕裂**",
-            "| 原因 | 裂痕 | 結果 |",
-            "|---|---|---|",
-            "| **急性角膜水腫（hydrops）** | 圓錐角膜基質變薄把 DM 撐破 | 房水湧入、嚴重水腫與疼痛 |",
-            "| **產鉗傷** | **垂直或斜向** | 新生兒水腫，留下永久散光 |",
-            "| **先天性青光眼（牛眼）** | **水平或同心圓**＝**Haab's striae** | 眼壓撐大眼球 |",
-            "",
-            "**3. 手術與發炎**",
-            "- **DM 脫離（DMD）**：白內障超音波乳化術等手術中機械性分離 → 持續水腫。",
-            "- **後彈力膜膨出（descemetocele）**：潰瘍吃光上皮與基質，DM 抗酵素、被眼壓往前推 → **即將穿孔，眼科急症**。",
-            "- **DM 皺摺**：角膜水腫造成。"
+            "> [!why] 為什麼？",
+            "> 內皮維持角膜低水合；功能下降時水分較易累積。"
           ],
           "exam": [
-            "**考法**：Descemet 膜破裂 → 水腫（急性水腫、圓錐角膜）；多為眼病學題。"
+            "🎯 陷阱：guttae 可有其他成因，診斷須綜合內皮與臨床表現。"
+          ],
+          "img": "img/eye-anat-fig/cornea_dm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪種失養症常見中央 guttae 與內皮細胞逐漸流失？",
+          "choices": [
+            "Fuchs 內皮失養症",
+            "角膜老年環",
+            "圓錐角膜",
+            "反覆性上皮糜爛"
+          ],
+          "answer": 0,
+          "hint": "先看膜的位置、變化或裂痕方向。",
+          "explain": "Fuchs 內皮失養症常見中央 guttae 與內皮功能下降。"
+        },
+        {
+          "type": "card",
+          "title": "另兩種內皮失養",
+          "body": [
+            "> [!big] CHED 與 PPCD 都可改變內皮與其基底膜。",
+            "",
+            "[[img]]",
+            "- CHED：先天遺傳，膜可瀰漫增厚、分層異常，伴角膜水腫。",
+            "- PPCD：內皮可呈上皮樣變化，膜可呈多層、結節或帶狀。",
+            "- 📌 講義重點：兩種失養的形態（p.36）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 內皮的狀態改變，也會影響它產生的基底膜。"
+          ],
+          "exam": [
+            "🎯 陷阱：兩者的膜形態不能混為單一特徵。"
+          ],
+          "img": "img/eye-anat-fig/cornea_dm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "出生即有角膜瀰漫水腫，Descemet 膜瀰漫增厚且分層異常，講義所列何者最符合？",
+          "choices": [
+            "CHED",
+            "產鉗傷",
+            "正常周邊 Hassall–Henle 小體",
+            "單純上皮糜爛"
+          ],
+          "answer": 0,
+          "hint": "先把位置與功能連起來想。",
+          "explain": "CHED 可出生即表現，伴瀰漫性膜異常與水腫。"
+        },
+        {
+          "type": "card",
+          "title": "破裂：圓錐角膜急性水腫",
+          "body": [
+            "> [!big] 圓錐角膜可因後方破裂，讓房水進入基質。",
+            "",
+            "[[img]]",
+            "- 基質變薄、角膜擴張 → Descemet 膜破裂。",
+            "- 房水進入 → 急性水腫、混濁，可伴疼痛。",
+            "- 📌 講義重點：acute corneal hydrops（p.37）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 破口使房水進入原本維持較低水合的基質。"
+          ],
+          "exam": [
+            "🎯 陷阱：急性水腫不代表每個圓錐角膜患者都會發生。"
+          ],
+          "img": "img/eye-anat-fig/cornea_dm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "card",
+          "title": "裂痕方向：產鉗與青光眼",
+          "body": [
+            "> [!big] 產鉗傷常垂直或斜向；Haab 紋常水平或同心圓。",
+            "",
+            "[[img]]",
+            "- 產鉗造成機械傷，可能有新生兒水腫及後續散光。",
+            "- 先天性青光眼眼壓升高、眼球擴張 → Haab 紋。",
+            "- 📌 講義重點：兩種裂痕方向（p.37）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 不同拉扯方向形成不同典型裂痕；方向是線索，需結合病史。"
+          ],
+          "exam": [
+            "🎯 記法：「鉗直斜，青水平圓」。"
           ],
           "img": "img/eye-anat-fig/cornea_dm.jpg",
           "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
@@ -830,16 +1416,16 @@
         {
           "type": "check",
           "kind": "single",
-          "q": "嚴重角膜潰瘍後，上皮與基質都被破壞，只剩一層膜被眼壓往前推出，隨時可能穿孔。這層膜與病名是：",
+          "q": "新生兒 Descemet 膜出現垂直或斜向裂痕，哪一項是相符原因？",
           "choices": [
-            "Bowman 層，圓錐角膜",
-            "Descemet 膜，後彈力膜膨出（descemetocele）",
-            "上皮基底膜，反覆性糜爛",
-            "Descemet 膜，Fuchs 失養症"
+            "產鉗傷",
+            "先天性青光眼的典型 Haab 紋",
+            "基底膜纖維連接蛋白增加",
+            "年齡相關周邊 Hassall-Henle 小體"
           ],
-          "answer": 1,
-          "hint": "哪一層能抵抗酵素分解？",
-          "explain": "Descemet 膜能**抵抗酵素分解**，基質沒了還撐著，被眼壓推出 → **descemetocele**，是眼科急症。"
+          "answer": 0,
+          "hint": "先看膜的位置、變化或裂痕方向。",
+          "explain": "產鉗傷可造成垂直或斜向裂痕；Haab 紋多為水平或同心圓。"
         },
         {
           "type": "check",
@@ -856,12 +1442,102 @@
           "explain": "水平或同心圓裂痕 = **Haab's striae**，來自**先天性青光眼**眼壓把眼球撐大。產鉗傷是**垂直或斜向**。"
         },
         {
+          "type": "card",
+          "title": "手術後分離",
+          "body": [
+            "> [!big] Descemet 膜與後基質分離，可能造成持續水腫。",
+            "",
+            "[[img]]",
+            "- 眼內手術的機械作用可造成膜分離（DMD）。",
+            "- 局部或瀰漫的水腫也可能伴隨膜皺摺。",
+            "- 📌 講義重點：手術分離與水腫皺摺（p.38）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 分離會影響內皮與基質之間正常的水合調節。"
+          ],
+          "exam": [
+            "🎯 陷阱：分離不等同於膜破裂。"
+          ],
+          "img": "img/eye-anat-fig/cornea_dm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "card",
+          "title": "潰瘍後膨出",
+          "body": [
+            "> [!big] 深度潰瘍後的 Descemetocele 有穿孔風險。",
+            "",
+            "[[img]]",
+            "- 上皮與基質嚴重流失，剩餘膜受眼壓向前膨出。",
+            "- 因膜相對抵抗酵素分解，可能暫時留下。",
+            "- 📌 講義重點：後彈力膜膨出是眼科急症（p.38）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 保護眼內的組織已非常薄，所以可能進一步穿孔。"
+          ],
+          "exam": [
+            "🎯 陷阱：膨出與單純水腫、膜分離不同。"
+          ],
+          "img": "img/eye-anat-fig/cornea_dm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "白內障手術後膜與後方基質分離，並出現持續角膜水腫，最符合哪一種情況？",
+          "choices": [
+            "Descemet 膜分離（DMD）",
+            "正常周邊 Hassall-Henle 小體",
+            "上皮杯狀細胞增生",
+            "Haab 紋"
+          ],
+          "answer": 0,
+          "hint": "先確認膜是破裂、膨出，還是與基質分開。",
+          "explain": "眼內手術可造成 Descemet 膜與基質分離，影響內皮調節水合，可能導致持續水腫。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "嚴重角膜潰瘍後，上皮與基質都被破壞，只剩一層膜被眼壓往前推出，隨時可能穿孔。這層膜與病名是：",
+          "choices": [
+            "Bowman 層，圓錐角膜",
+            "Descemet 膜，後彈力膜膨出（descemetocele）",
+            "上皮基底膜，反覆性糜爛",
+            "Descemet 膜，Fuchs 失養症"
+          ],
+          "answer": 1,
+          "hint": "哪一層能抵抗酵素分解？",
+          "explain": "Descemet 膜能**抵抗酵素分解**，基質沒了還撐著，被眼壓推出 → **descemetocele**，是眼科急症。"
+        },
+        {
+          "type": "card",
+          "title": "神經與發育：題目常用來比較",
+          "body": [
+            "> [!big] 角膜神經進入基質、Bowman 層及上皮，不進入 Descemet 膜與內皮。",
+            "",
+            "[[img]]",
+            "- 上皮源自表面外胚層；基質及內皮主要由神經脊來源細胞形成。",
+            "- Descemet 膜由內皮形成；發育時間早於 Bowman 層。",
+            "- 角膜感覺主要來自三叉神經 V1；進入上皮的神經纖維無髓鞘。",
+            "- Bowman 層屬前基質特化構造，不是上皮的基底膜；各層並非同時形成。",
+            "- 📌 講義重點：神經不進入膜與內皮（p.47）。",
+            "",
+            "> [!why] 為什麼？",
+            "> 神經由前方基質往上皮分支；各層來源及形成時間並不相同。"
+          ],
+          "exam": [
+            "🎯 109 特考第 8 題、108 特考第 2 題：內皮不是內胚層。"
+          ],
+          "img": "img/eye-anat-fig/cornea_dm.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
           "type": "example",
           "title": "圓錐角膜病人突然單眼變白、劇痛",
           "problem": "一位圓錐角膜病人某天突然單眼角膜變白、視力驟降、疼痛。從構造解釋發生了什麼事。",
           "steps": [
             "圓錐角膜的基質**持續變薄**，錐頂越來越凸。",
-            "Descemet 膜被撐到超過**彈性極限** → 突然**破裂**。",
+            "角膜擴張與後方組織受損，可能造成 Descemet 膜突然破裂。",
             "房水從破口**大量湧入基質** → 嚴重基質水腫、混濁、劇痛。"
           ],
           "answer": "急性角膜水腫（acute corneal hydrops）"
@@ -902,7 +1578,7 @@
           "type": "recap",
           "points": [
             "Descemet 膜：VIII 型膠原、內皮的基底膜、可再生、隨年齡增厚、終點 Schwalbe 線。",
-            "周邊 Hassall-Henle 小體＝老化；中央 guttae＝Fuchs。",
+            "周邊 Hassall-Henle 小體常見於老化；中央 guttae 常見於 Fuchs，需結合臨床判斷。",
             "失養症：FECD、CHED、PPCD；破裂：hydrops、產鉗傷（垂直／斜向）、Haab striae（水平／同心圓）。",
             "DM 脫離、descemetocele（急症）、DM 皺摺（水腫）。"
           ],
@@ -942,18 +1618,69 @@
         },
         {
           "type": "card",
-          "title": "內皮的構造與功能",
+          "title": "內皮在哪裡？",
           "body": [
-            "> [!big] **單層六角形**（像蜂巢），靠 **Na⁺/K⁺-ATPase 幫浦**把水打出基質，維持角膜**脫水**與透明。",
+            "> [!big] 內皮是面向房水的單層細胞。",
             "",
             "[[img]]",
-            "- **單層**、**六角形**、立方狀細胞。",
-            "- 側面以**緊密連接**相連，以**半胞橋小體**附著在 Descemet 膜。",
-            "- 形成**屏障**擋住房水，但讓養分從前房擴散進角膜。",
-            "- 幫浦要耗能 → 細胞質有大量**粒線體**。"
+            "- 外到內：上皮 → Bowman 層 → 基質 → Descemet 膜 → 內皮。",
+            "- 內皮貼在自己的基底膜 Descemet 膜上，後方接觸房水。",
+            "- 正常主要呈六角形蜂巢排列；形狀可近扁平或低立方。",
+            "- 為什麼看位置？才能區分上皮基底膜靠 Bowman，內皮基底膜是 Descemet。",
+            "📌 講義重點：單層六角蜂巢（p.39）。"
           ],
           "exam": [
-            "**考法**：內皮：單層六角形、不能再生、幫浦、粒線體（106 師特 17、111 師高 9、106 生普 7、106 生特 9、109 師特 22）。"
+            "🎯 106 n=117、107 n=205、108 n=110、111 n=9：多層、圓形與位置是常見陷阱。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "card",
+          "title": "連結：限制滲漏而非密封",
+          "body": [
+            "> [!big] 內皮是允許物質通過的不完全屏障。",
+            "",
+            "[[img]]",
+            "- 細胞側面有緊密連接；半胞橋小體協助附著 Descemet 膜。",
+            "- 它限制房水流入基質，但養分仍可擴散通過。",
+            "- 為什麼不能說完全阻絕？角膜後方仍需物質交換。",
+            "📌 講義重點：緊密連接、附著與營養擴散（p.39）。"
+          ],
+          "exam": [
+            "🎯 107 n=2：緊密連接與鈉鉀幫浦共同維持透明；不要把間隙連接當作主要屏障。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "內皮屏障與房水交換何者正確？",
+          "choices": [
+            "完全阻止所有房水與養分進入",
+            "限制滲漏但仍允許部分物質擴散",
+            "靠神經纖維把水送入基質",
+            "僅由上皮維持屏障"
+          ],
+          "answer": 1,
+          "hint": "先回想剛才的構造與因果。",
+          "explain": "內皮是不完全屏障；養分仍可通過，幫浦與屏障合作。"
+        },
+        {
+          "type": "card",
+          "title": "幫浦與屏障一起控水",
+          "body": [
+            "> [!big] 鈉鉀幫浦建立離子梯度，協助基質排出多餘水分。",
+            "",
+            "[[img]]",
+            "- Na⁺/K⁺-ATPase 消耗能量，離子運輸促進水移向房水。",
+            "- 適當低水合讓基質排列有利透光，不是把角膜抽乾。",
+            "- 為什麼要屏障和幫浦一起？一面限制滲入，一面移除多餘水。",
+            "📌 講義重點：鈉鉀幫浦維持基質水分平衡（p.39）。"
+          ],
+          "exam": [
+            "🎯 106 n=117、106 n=207、107 n=2：方向是基質往前房，不能把幫浦說成水分主動運輸本身。"
           ],
           "img": "img/eye-anat-fig/cornea_endo.jpg",
           "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
@@ -961,6 +1688,37 @@
             "front": "維持角膜脫水狀態最重要的構造與離子幫浦？",
             "back": "內皮層的 Na⁺/K⁺-ATPase 幫浦"
           }
+        },
+        {
+          "type": "card",
+          "title": "耗能的幫浦需要粒線體",
+          "body": [
+            "> [!big] 主動離子運輸需要 ATP，因此內皮有大量粒線體。",
+            "",
+            "[[img]]",
+            "- 粒線體供應能量，幫浦才能持續維持離子梯度。",
+            "- 核醣體主要合成蛋白質；高基氏體處理與運送蛋白質。",
+            "- 內質網參與蛋白質與脂質合成；不是此題的主要供能胞器。"
+          ],
+          "exam": [
+            "🎯 109 n=122：考主動運輸與粒線體的因果。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜內皮細胞含許多粒線體，主要與何功能的能量需求有關？",
+          "choices": [
+            "主動運輸與幫浦",
+            "製造淚液中的油脂",
+            "接受光線形成視覺",
+            "產生水晶體纖維"
+          ],
+          "answer": 0,
+          "hint": "先判斷內皮的屏障、幫浦或細胞變化。",
+          "explain": "內皮幫浦涉及主動運輸，故細胞需要能量。"
         },
         {
           "type": "check",
@@ -978,31 +1736,40 @@
         },
         {
           "type": "card",
-          "title": "內皮細胞密度與老化",
+          "title": "細胞不夠時怎麼補洞",
           "body": [
-            "> [!big] 出生 **4500** → 成人 **2400–3000** cells/mm²；每年少 **0.6%**、**不分裂**；**< 500** → 水腫。",
+            "> [!big] 成人內皮分裂能力極有限，靠鄰近細胞移行、擴大補缺口。",
             "",
             "[[img]]",
-            "| 時期 | 細胞密度 |",
-            "|---|---|",
-            "| 出生 | 約 **4500 cells/mm²** |",
-            "| 第一年 | 減少約 **26%**，之後變慢 |",
-            "| 成人 | **2400–3000 cells/mm²** |",
-            "| 臨界值 | **< 500 cells/mm²** → 角膜水腫 |",
-            "",
-            "> [!key] 死掉的空位怎麼補？",
-            "> 旁邊的細胞**擴大、變形**填補（不是縮小、也不是分裂）：",
-            "> **多形大小（polymegathism）**＝大小不一；**多形態（pleomorphism）**＝形狀不一（不再是漂亮的六角形）。"
+            "- 細胞數隨年齡下降，補洞不等於原有細胞數恢復。",
+            "- 為什麼細胞變大？剩下的細胞要覆蓋更大面積。",
+            "- 正常上皮更新較快；不能把補充維生素當成已證實的內皮再生方法。",
+            "📌 講義重點：成人不靠有絲分裂補充（p.40）。"
           ],
           "exam": [
-            "**考法**：密度 3000 → 500 cells/mm²、年流失 0.6%（108 師高 8、114 師高 7、108 生普 5）；鏡面顯微鏡（106 師高 19）。"
+            "🎯 106 n=207、106 n=309、108 n=8、114 n=7：擴大不是縮小，也不是正常再生。"
           ],
           "img": "img/eye-anat-fig/cornea_endo.jpg",
-          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
-          "flash": {
-            "front": "角膜內皮細胞密度低於多少時會水腫？",
-            "back": "約 500 cells/mm²"
-          }
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "card",
+          "title": "密度：出生到成人",
+          "body": [
+            "> [!big] 講義給的密度是參考值，會因人與年齡不同。",
+            "",
+            "[[img]]",
+            "- 出生約 4500 cells/mm²；第一年約減少 26%，之後變慢。",
+            "- 成人約 2400–3000；年輕成人考題常用約 3000 cells/mm²。",
+            "- 成人年流失約 0.6% 為概略值；不是每個人的固定速率。",
+            "- 為什麼不能當固定值？年齡、個體與疾病皆影響密度。",
+            "📌 講義重點：密度與年流失（p.40）。"
+          ],
+          "exam": [
+            "🎯 108 n=8、114 n=7：注意單位 cells/mm²；老年人不是 20000。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -1019,36 +1786,118 @@
           "explain": "**內皮細胞**成人不分裂、每年約減少 0.6%。上皮 6–8 天更新；Descemet 膜會增厚、可再生。"
         },
         {
-          "type": "check",
-          "kind": "fill",
-          "q": "內皮細胞死亡後，鄰近細胞擴大填補，造成細胞「大小」不一，這種現象稱為 ____。",
-          "answer": [
-            "多形大小",
-            "polymegathism",
-            "細胞大小不一"
+          "type": "card",
+          "title": "大小與形狀：兩個英文",
+          "body": [
+            "> [!big] mega 看大小；morphism 看形狀。",
+            "",
+            "[[img]]",
+            "- polymegathism：細胞大小不一。",
+            "- pleomorphism：細胞形狀不一，六角形比例可能下降。",
+            "- 為什麼會不均？失去細胞後，相鄰細胞移行擴大代償。",
+            "📌 講義重點：大小變異與形狀變異（p.40）。"
           ],
-          "hint": "mega＝大。",
-          "explain": "**polymegathism（多形大小）**是細胞**大小**變異；**pleomorphism（多形態）**是細胞**形狀**變異。"
+          "exam": [
+            "🎯 記法：「mega 大小，morph 形狀」；不要把兩個名詞對調。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "內皮細胞受損後，鄰近細胞大小不一稱為？",
+          "choices": [
+            "polymegathism",
+            "pleomorphism",
+            "keratoconus",
+            "descemetocele"
+          ],
+          "answer": 0,
+          "hint": "先判斷內皮的屏障、幫浦或細胞變化。",
+          "explain": "polymegathism 指大小不一；pleomorphism 指形狀不一。"
         },
         {
           "type": "card",
-          "title": "內皮的疾病",
+          "title": "密度低時：風險而非判決",
           "body": [
-            "> [!big] **Fuchs**（guttae、早上最糊）、**PBK**（白內障手術後）、**PPCD**（續發青光眼）、**內皮炎**（HSV／CMV）。",
+            "> [!big] 約 500 cells/mm² 是水腫風險的概略考試參考值。",
             "",
             "[[img]]",
-            "| 疾病 | 病理 | 特徵 |",
-            "|---|---|---|",
-            "| **Fuchs 內皮失養症（FECD）** | 進行性、遺傳、**雙側** | **guttae**＋內皮加速流失；**夜間水腫、早上最模糊**，最後**泡性角膜病變** |",
-            "| **偽晶體／無晶體泡性角膜病變（PBK／ABK）** | 眼內手術造成的**醫源性**損傷 | 機械傷或超音波能量過久耗盡內皮 → 永久失代償、慢性水腫 |",
-            "| **後多形性角膜失養症（PPCD）** | 罕見**體染色體顯性** | 內皮**上皮樣**、增生成多層；帶狀、囊泡、地圖狀病灶；**續發性青光眼** |",
-            "| **內皮炎** | **HSV、CMV** | 瀰漫角膜後沉著物（KPs）、局部基質水腫、**眼壓升高** |",
-            "",
-            "> [!why] Fuchs 為什麼早上最模糊？",
-            "> 睡覺閉眼時淚膜不蒸發，水留在角膜裡；睜眼後水分慢慢蒸發才變清楚。"
+            "- 幫浦儲備不足時，基質可能積水而變混濁。",
+            "- 為什麼不是絕對門檻？剩餘細胞功能與手術等因素也影響代償。",
+            "- 高於或低於 500 都不能單憑數字斷言一定清澈或一定水腫。",
+            "📌 講義重點：低密度可能水腫（p.40）。"
           ],
           "exam": [
-            "**考法**：內皮疾病與隱形眼鏡缺氧（107 生普 6）；可只換內皮層（108 師特 10）。"
+            "🎯 108 n=205、108 n=8、114 n=7：考題常用約 500 cells/mm²。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "角膜內皮細胞密度低於多少時會水腫？",
+            "back": "約 500 cells/mm² 是概略參考值，水腫與否仍依個別內皮功能而異。"
+          }
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "內皮密度約 500 cells/mm² 的意義何者正確？",
+          "choices": [
+            "每個人到此數值必定水腫",
+            "低於此值不可能水腫",
+            "概略風險參考，仍需看功能及個別狀況",
+            "表示細胞可以大量再生"
+          ],
+          "answer": 2,
+          "hint": "先回想剛才的構造與因果。",
+          "explain": "500 是考題常用概略值；水腫也取決於剩餘細胞功能等因素。"
+        },
+        {
+          "type": "card",
+          "title": "如何量與比較形狀",
+          "body": [
+            "> [!big] 鏡面顯微鏡用來觀察內皮細胞密度與形態。",
+            "",
+            "[[img]]",
+            "- 鏡面顯微鏡：看內皮細胞大小、形狀及密度。",
+            "- 前眼部 OCT：看前眼部斷層與厚度；地形圖：看角膜曲率。",
+            "- 眼壓計量眼壓。為什麼分工具？每一項測的是不同問題。"
+          ],
+          "exam": [
+            "🎯 106 n=19：看內皮形狀選 specular microscope。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪種檢查最適合觀察內皮細胞形狀與密度？",
+          "choices": [
+            "眼壓計",
+            "角膜地形圖",
+            "鏡面顯微鏡",
+            "視野計"
+          ],
+          "answer": 2,
+          "hint": "先回想剛才的構造與因果。",
+          "explain": "鏡面顯微鏡可評估內皮細胞形態與密度。"
+        },
+        {
+          "type": "card",
+          "title": "Fuchs：早晨較模糊",
+          "body": [
+            "> [!big] Fuchs 內皮失養症可因細胞失代償而水腫。",
+            "",
+            "[[img]]",
+            "- 常雙側進行，Descemet 膜可見滴狀突起 guttae。",
+            "- 閉眼時蒸發減少，水腫可能較明顯；睜眼後可能改善。",
+            "- 進展時可能出現泡性角膜病變；症狀不一定人人相同。",
+            "📌 講義重點：guttae、晨間模糊（p.41）。"
+          ],
+          "exam": [
+            "🎯 中央 guttae 與晨糊支持 Fuchs，但不能單憑突起位置確診。"
           ],
           "img": "img/eye-anat-fig/cornea_endo.jpg",
           "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
@@ -1072,16 +1921,148 @@
           "explain": "雙側＋早上最模糊＋中央 guttae → **Fuchs 內皮失養症（FECD）**。PPCD 是內皮上皮化；內皮炎有 KPs 與眼壓升高；圓錐角膜是基質變薄。"
         },
         {
+          "type": "card",
+          "title": "術後泡性角膜病變",
+          "body": [
+            "> [!big] 內皮儲備不足，眼內手術後可能持續水腫。",
+            "",
+            "[[img]]",
+            "- 偽晶體 PBK、無晶體 ABK 可見慢性基質水腫與上皮下水泡。",
+            "- 為什麼術後發生？機械傷或超音波能量可能耗損內皮儲備。",
+            "- 不是每次手術都會失代償；需看個人風險。",
+            "📌 講義重點：PBK／ABK（p.41）。"
+          ],
+          "exam": [
+            "🎯 108 n=110：適合的病例可考慮內皮角膜移植，不必一律全層移植。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "白內障術後出現持續角膜水腫與上皮下水泡，若原因為內皮失代償，稱為？",
+          "choices": [
+            "偽晶體泡性角膜病變",
+            "Fleischer 鐵環",
+            "Vogt 柵欄",
+            "Haab 紋"
+          ],
+          "answer": 0,
+          "hint": "先判斷內皮的屏障、幫浦或細胞變化。",
+          "explain": "眼內手術後的內皮失代償可導致偽晶體泡性角膜病變（PBK）。"
+        },
+        {
+          "type": "card",
+          "title": "PPCD：病變細胞出現上皮樣特性",
+          "body": [
+            "> [!big] PPCD 的病變內皮可增生，與正常成人內皮不同。",
+            "",
+            "[[img]]",
+            "- 後多形性角膜失養症（PPCD）可有帶狀、囊泡或地圖狀病灶。",
+            "- 病變細胞可呈上皮樣並形成多層；部分患者有續發青光眼。",
+            "- 為什麼這不推翻正常規則？這是疾病中的異常表現。",
+            "📌 講義重點：PPCD 的上皮樣變化（p.42）。"
+          ],
+          "exam": [
+            "🎯 正常內皮通常不靠分裂補傷；不要套到 PPCD 的病變細胞。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "PPCD 的病變內皮可形成多層，最合理的解釋是？",
+          "answer": 1,
+          "hint": "區分正常修復與疾病異常。",
+          "explain": "PPCD 的病變內皮可呈上皮樣及增生；不能推論正常成人內皮能以分裂補傷。",
+          "choices": [
+            "正常成人內皮受傷都會快速分裂",
+            "這是疾病中上皮樣細胞的異常表現",
+            "表示 Descemet 膜由淚腺生成",
+            "所有 PPCD 病人都必定失明"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "內皮炎：發炎損害排水",
+          "body": [
+            "> [!big] 內皮炎可伴局部水腫、角膜後沉著物與眼壓上升。",
+            "",
+            "[[img]]",
+            "- HSV 或 CMV 可引起內皮炎，但不能只憑單一徵象判定病原。",
+            "- 為什麼會水腫？受炎症影響的內皮排水功能下降。",
+            "- 講義列 KPs、基質水腫及眼壓升高；表現可有差異。",
+            "📌 講義重點：病毒性內皮炎（p.42）。"
+          ],
+          "exam": [
+            "🎯 KPs 與水腫須結合病史、檢查與其他鑑別。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "card",
+          "title": "相關國考的比較選項",
+          "body": [
+            "> [!big] 單層與六角形是兩個不同問題。",
+            "",
+            "[[img]]",
+            "- 單層：水晶體前上皮、視網膜色素上皮（RPE）、角膜內皮。",
+            "- 常見六角形：RPE、角膜內皮，以及水晶體纖維橫切面。",
+            "- 角膜上皮是多層；基質有角質細胞，不是無細胞。",
+            "- 為什麼要分開？單層的組織不一定以六角形作為考題判別。"
+          ],
+          "exam": [
+            "🎯 108 n=117、113 n=9、113 n=13；杯狀細胞不是這題的六角形答案。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪些結構通常以單層排列？",
+          "choices": [
+            "角膜上皮、基質、角膜內皮",
+            "水晶體前上皮、視網膜色素上皮、角膜內皮",
+            "角膜上皮、結膜杯狀細胞、基質",
+            "Bowman 層、Descemet 膜、基質"
+          ],
+          "answer": 1,
+          "hint": "先回想剛才的構造與因果。",
+          "explain": "水晶體前上皮、RPE 和角膜內皮是題目中的單層細胞。"
+        },
+        {
+          "type": "card",
+          "title": "來源與神經：辨別混合選項",
+          "body": [
+            "> [!big] 內皮與基質源自神經脊，角膜上皮源自體表外胚層。",
+            "",
+            "[[img]]",
+            "- 水晶體與結膜上皮也源自體表外胚層；內皮不是內胚層。",
+            "- 發育先上皮、內皮，後基質；Bowman 層為後期形成的淺基質特化。",
+            "- 上皮神經無髓鞘；Descemet 膜與內皮沒有神經纖維。",
+            "- 為什麼內皮不因自身神經而痛？角膜感覺纖維主要走前方組織。"
+          ],
+          "exam": [
+            "🎯 106 n=116、107 n=102、108 n=102、109 n=108、114 n=1。"
+          ],
+          "img": "img/eye-anat-fig/cornea_endo.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
           "type": "example",
           "title": "白內障手術前為什麼要照內皮？",
           "problem": "一位 75 歲病人術前內皮細胞密度 900 cells/mm²，醫師很猶豫。用內皮的特性說明風險。",
           "steps": [
             "成人內皮**不會分裂**，手術損失的細胞無法補回。",
             "白內障超音波乳化術的機械傷與超音波能量，會**再消耗**一部分內皮。",
-            "900 已經偏低，若再掉到 **< 500 cells/mm²** → 幫浦不足 → 角膜水腫。",
+            "900 已偏低；若細胞繼續流失，內皮幫浦可能不足而水腫。約 500 cells/mm² 是概略參考值，不是絕對門檻。",
             "結果可能變成**偽晶體泡性角膜病變（PBK）**。"
           ],
-          "answer": "內皮不再生，術後可能掉到 500 以下 → 失代償水腫（PBK）"
+          "answer": "內皮細胞難以補回，手術後可能失代償水腫（PBK）；風險需依個別狀況評估。"
         },
         {
           "type": "practice",
@@ -1115,7 +2096,7 @@
           "type": "recap",
           "points": [
             "內皮：單層六角形蜂巢狀；緊密連接＋半胞橋小體；Na⁺/K⁺-ATPase 維持脫水。",
-            "密度：出生 4500 → 成人 2400–3000；每年 −0.6%、不分裂；< 500 → 水腫。",
+            "密度：出生約 4500 → 成人約 2400–3000；每年流失約 0.6%；約 500 是水腫風險參考值，並非絕對門檻。",
             "代償：polymegathism（大小不一）、pleomorphism（形狀不一）。",
             "疾病：FECD（guttae、早上最糊）、PBK、PPCD（續發青光眼）、內皮炎（HSV／CMV）。"
           ],
@@ -1152,7 +2133,7 @@
           "type": "intro",
           "title": "同樣受傷，結果差很多：看傷到哪一層",
           "body": [
-            "> [!big] 樹枝刮傷三天就好；化學灼傷永遠模糊：差別在**傷到哪一層**、那一層**能不能再生**。",
+            "> [!big] 角膜受傷後能否恢復，取決於受損深度、嚴重程度與各層的修復能力。",
             "",
             "> [!note] 補充說明",
             "> 本課依標準教科書補充（不是上課講義原文），細節以課本與授課老師為準。"
@@ -1160,29 +2141,71 @@
         },
         {
           "type": "card",
-          "title": "五層總表：誰能再生？",
+          "title": "先定位五層",
           "body": [
-            "> [!big] {g:能再生：上皮、基底膜、Descemet 膜}；{r:不能：Bowman 層、成人內皮}；基質用**疤痕**修復。",
+            "> [!big] 從淚液側到房水側，依序找五層。",
             "",
             "[[img]]",
-            "| 層 | 厚度／組成 | 細胞 | 能不能再生 |",
-            "|---|---|---|---|",
-            "| {o:上皮} | 約 50 µm，5–6 層非角化複層鱗狀 | 有（幹細胞在輪部） | {g:**能**}，6–8 天更新，不留疤 |",
-            "| 上皮基底膜 | IV 型膠原＋laminin | 無（上皮分泌） | {g:能}，但異常會反覆糜爛 |",
-            "| {y:Bowman 層} | 8–14 µm，前基質特化區 | **無** | {r:**不能**}，疤痕取代 |",
-            "| {b:基質} | 約 500 µm，佔 90%，200–250 層板 | 角膜細胞 | 疤痕（不規則膠原）修復 |",
-            "| {p:Descemet 膜} | 內皮的基底膜，VIII 型膠原，隨年齡增厚（出生約 3 µm、成人約 10–12 µm，常用參考值） | 無（內皮分泌） | {g:**能**} |",
-            "| {g:內皮} | 單層六角形；4500 → 2400–3000 cells/mm² | 有 | {r:**不能**}（成人不分裂）；< 500 → 水腫 |"
+            "- 上皮 → Bowman 層 → 基質 → Descemet 膜 → 內皮。",
+            "- 上皮基底膜在上皮與 Bowman 之間；它不是 Bowman。",
+            "- 內皮貼著 Descemet 膜並朝向房水。",
+            "- 為什麼先定位？同叫「膜」，來源與修復能力不同。"
           ],
           "exam": [
-            "**考法**：五層總表：誰能再生、誰有細胞（110 師高 8、107 師高 10、106 師特 17）。"
+            "🎯 考法：基底膜緊鄰 Bowman；五層順序（106-115、111-206、114-8）。"
           ],
           "img": "img/eye-anat-fig/cornea_5.jpg",
-          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
-          "flash": {
-            "front": "角膜五層中，哪些不能再生？",
-            "back": "Bowman 層（由疤痕取代）與成人內皮（不分裂，數量不足會水腫）"
-          }
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "card",
+          "title": "哪些層有細胞",
+          "body": [
+            "> [!big] 上皮、基質和內皮有細胞；Bowman 層與膜本身無細胞。",
+            "",
+            "[[img]]",
+            "- 基質內有角膜細胞，並非一整層細胞片。",
+            "- Bowman 是前基質特化區，無細胞。",
+            "- 為什麼要分開？有細胞不等於能完整再生。",
+            "📌 講義重點：Bowman 層不是上皮的基底膜（p.25）。"
+          ],
+          "exam": [
+            "🎯 考法：比較上皮、Bowman、基質與內皮（110-8）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_5.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "若上皮基底膜受損，其後方最靠近的構造是哪一個？",
+          "choices": [
+            "內皮",
+            "Bowman 層",
+            "Descemet 膜",
+            "房水"
+          ],
+          "answer": "B",
+          "hint": "先定位相關構造，再依功能判斷。",
+          "explain": "上皮基底膜位於上皮下方，緊鄰 Bowman 層；Descemet 膜則貼近內皮。"
+        },
+        {
+          "type": "card",
+          "title": "上皮修補",
+          "body": [
+            "> [!big] 表淺上皮缺損通常可修復，且不形成基質疤痕。",
+            "",
+            "[[img]]",
+            "- 輪部幹細胞提供更新來源；正常更新約 6–8 天。",
+            "- 若只傷上皮、基底膜完整，通常可恢復而不留疤。",
+            "- 為什麼？細胞可移行與增生，基質未被破壞。",
+            "- 傷口實際癒合時間依範圍和狀況而異。"
+          ],
+          "exam": [
+            "🎯 考法：比較再生速度及表淺傷（107-10、106-309）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_5.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
           "type": "check",
@@ -1200,22 +2223,50 @@
         },
         {
           "type": "card",
-          "title": "由受傷深度推後果：越深越難回復",
+          "title": "半橋粒",
           "body": [
-            "> [!big] 只傷上皮 → 幾天好、不留疤；傷到 Bowman／基質 → **疤痕、不規則散光**；內皮壞 → **不可逆水腫**。",
+            "> [!big] 基底細胞靠半橋粒附著在上皮基底膜上。",
             "",
             "[[img]]",
-            "| 傷到哪一層 | 結果 |",
-            "|---|---|",
-            "| 只有上皮（基底膜完整） | 6–8 天再生、**不留疤** |",
-            "| 上皮基底膜異常 | 上皮黏不牢 → **反覆性糜爛**（常在清晨睜眼時痛）；可用 PTK |",
-            "| 深及 Bowman／前基質 | **疤痕**：新膠原不規則 → 混濁、**不規則散光** |",
-            "| 基質（發炎、感染） | 疤痕混濁；後基質含水多，易**水腫** |",
-            "| Descemet 膜破裂 | 房水湧入 → 水腫（hydrops、產鉗傷、Haab 紋） |",
-            "| 內皮失能 | **不可逆**：數量不足 → 水腫，早晨最模糊（Fuchs） |"
+            "- 基底膜由基底細胞分泌，含 IV 型膠原與 laminin。",
+            "- 半橋粒連「細胞—基底膜」；橋粒連「細胞—細胞」。",
+            "- 緊密連接有屏障功能；間隙連接供細胞溝通。",
+            "- 為什麼重要？黏附結構失常，上皮較容易脫離。"
           ],
           "exam": [
-            "**考法**：由受傷深度推後果：沒傷到 Bowman 層可再生不留疤（106 生特 9）。"
+            "🎯 考法：辨認半橋粒與其他細胞連接（109-107）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_5.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列何種上皮連接主要將基底細胞固定在基底膜？",
+          "choices": [
+            "緊密連接",
+            "半橋粒",
+            "間隙連接",
+            "橋粒"
+          ],
+          "answer": "B",
+          "hint": "先定位相關構造，再依功能判斷。",
+          "explain": "半橋粒連接細胞與基底膜；橋粒連接相鄰細胞，緊密與間隙連接另有功能。"
+        },
+        {
+          "type": "card",
+          "title": "反覆糜爛",
+          "body": [
+            "> [!big] 清晨反覆刺痛流淚，要想到上皮黏附不良。",
+            "",
+            "[[img]]",
+            "- 受傷後基底膜或黏附複合體異常，上皮可能反覆剝離。",
+            "- 為什麼晨起痛？睜眼時眼瞼可能牽動鬆脫上皮。",
+            "- 📌 講義重點：可依情況保護表面，難治時評估 PTK（p.24）。",
+            "- 症狀只是線索，需檢查確認，並非只能由基底膜造成。"
+          ],
+          "exam": [
+            "🎯 陷阱：上皮反覆糜爛與內皮水腫的位置不同。"
           ],
           "img": "img/eye-anat-fig/cornea_5.jpg",
           "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
@@ -1223,6 +2274,52 @@
             "front": "反覆性糜爛是哪一層的問題？",
             "back": "上皮基底膜（上皮黏不牢）；可用 PTK 治療"
           }
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜曾受傷，清晨睜眼時反覆疼痛流淚，最應先想到哪種機制？",
+          "choices": [
+            "內皮細胞快速增殖",
+            "晶狀體變厚",
+            "上皮與基底膜黏附不良",
+            "視網膜神經纖維斷裂"
+          ],
+          "answer": "C",
+          "hint": "先定位相關構造，再依功能判斷。",
+          "explain": "舊傷後反覆晨起痛可提示上皮黏附不良；仍需檢查才能診斷。"
+        },
+        {
+          "type": "card",
+          "title": "基質疤痕",
+          "body": [
+            "> [!big] 傷及 Bowman 與前基質時，修復可能留下混濁疤痕。",
+            "",
+            "[[img]]",
+            "- Bowman 約 8–14 µm，破壞後不完整再生。",
+            "- 基質約占角膜厚度 90%，層板原本排列規則。",
+            "- 為什麼變混濁？修復膠原排列不規則，光散射增加。",
+            "- 📌 講義重點：疤痕可影響視力，並造成不規則散光（p.26）。"
+          ],
+          "exam": [
+            "🎯 考法：Bowman 不再生、基質疤痕修復（107-10）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_5.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "前基質疤痕造成視力下降，最直接的光學原因是？",
+          "choices": [
+            "膠原排列改變而增加散射",
+            "內皮變成多層",
+            "眼球停止分泌房水",
+            "所有角膜神經立即消失"
+          ],
+          "answer": "A",
+          "hint": "先定位相關構造，再依功能判斷。",
+          "explain": "疤痕修復的膠原排列較不規則，會增加散射並影響透明。"
         },
         {
           "type": "check",
@@ -1236,34 +2333,27 @@
           ],
           "answer": "A",
           "hint": "上皮再生靠誰？基底膜完整時會留疤嗎？",
-          "explain": "上皮可再生（輪部幹細胞補充），基底膜完整時沿著原有的「地基」長回去，約 6–8 天恢復、不留疤。留疤是傷到 Bowman 層或基質才會發生。"
+          "explain": "上皮可由細胞移行與增生修復，輪部幹細胞供應更新；表淺傷且基底膜完整時通常不留疤。正常更新約 6–8 天，傷口癒合時間依情況而異。"
         },
         {
           "type": "card",
-          "title": "由疾病回推哪一層，再選對的治療",
+          "title": "後方的膜",
           "body": [
-            "> [!big] **只換壞的那一層**：基質病 → **DALK**（保留自己的內皮）；內皮病 → **EK**（DSEK／DMEK）。",
+            "> [!big] Descemet 膜是內皮分泌的基底膜。",
             "",
             "[[img]]",
-            "| 疾病／情況 | 病變層 | 治療 |",
-            "|---|---|---|",
-            "| 反覆性上皮糜爛 | 上皮基底膜 | 保護、PTK（表層雷射） |",
-            "| 晚期圓錐角膜、深基質疤痕 | 基質（前層） | **DALK**（保留 DM＋內皮） |",
-            "| Fuchs 內皮失養症 | 內皮／DM | **EK**（DSEK、DMEK） |",
-            "| 偽晶體泡性角膜病變（PBK） | 內皮 | **EK** |",
-            "",
-            "- 為什麼可行？基質層板**平行、容易沿層間剝離**。",
-            "- 內皮不能再生 → 內皮病只能「換新的內皮」才能恢復幫浦。",
-            "- 全層穿透性移植（PKP）全部都換，只在多層都壞時才需要。"
+            "- 含 VIII 型膠原；隨年齡增厚，出生約 3 µm、成人約 10–12 µm。",
+            "- 為什麼能再形成？有功能的內皮可繼續分泌膜成分。",
+            "- 無細胞的膜不等於會分裂的內皮細胞。"
           ],
           "exam": [
-            "**考法**：由疾病回推哪一層，再選對的治療（角膜移植選全層或層狀）。"
+            "🎯 陷阱：上皮基底膜靠前；Descemet 膜靠後（106-115）。"
           ],
-          "img": "img/eye-anat-fig/cornea_graft.jpg",
+          "img": "img/eye-anat-fig/cornea_5.jpg",
           "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "flash": {
-            "front": "內皮失代償（Fuchs、PBK）適合哪種移植？為什麼？",
-            "back": "EK（DSEK／DMEK）；病變只在內皮／DM，前、中層基質健康，只換壞的層"
+            "front": "角膜五層中，哪些不能再生？",
+            "back": "Bowman 層（由疤痕取代）與成人內皮（不分裂，數量不足會水腫）"
           }
         },
         {
@@ -1281,15 +2371,150 @@
           "explain": "病變在基質（前層）、內皮健康 → **DALK**：換掉病變的前基質，保留自己的 Descemet 膜與內皮。EK 是換內皮；PTK 是表層雷射；神經移植是治療神經營養性角膜病變。"
         },
         {
+          "type": "card",
+          "title": "膜破裂",
+          "body": [
+            "> [!big] Descemet 膜破裂後，房水可進入基質造成急性水腫。",
+            "",
+            "[[img]]",
+            "- 圓錐角膜急性 hydrops、產鉗傷及先天性青光眼的 Haab 紋都涉及破裂。",
+            "- 為什麼水腫？後方屏障被破壞，房水進入角膜。",
+            "- 水腫的程度與後續恢復，依傷勢及內皮狀況而異。"
+          ],
+          "exam": [
+            "🎯 陷阱：膜破裂的水腫與前基質疤痕是不同機制。"
+          ],
+          "img": "img/eye-anat-fig/cornea_5.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "card",
+          "title": "內皮補洞",
+          "body": [
+            "> [!big] 成人內皮細胞流失後，主要靠鄰近細胞移行、變大補洞。",
+            "",
+            "[[img]]",
+            "- 內皮是面向房水的單層細胞，正常多呈六角形。",
+            "- 幫浦與不完全屏障共同維持適度水合，利於透明。",
+            "- 為什麼不能等它長回來？成人內皮體內增殖能力極低。",
+            "- 補充葉黃素或維生素不能保證內皮細胞再生。"
+          ],
+          "exam": [
+            "🎯 考法：位置、六角形、再生與營養補充（108-110、106-309）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_5.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "上皮完整、內皮嚴重受損時，角膜仍可能水腫的主要原因是？",
+          "choices": [
+            "內皮控水功能不足",
+            "上皮變成基質",
+            "Bowman 層分泌房水",
+            "淚液必定完全消失"
+          ],
+          "answer": "A",
+          "hint": "先定位相關構造，再依功能判斷。",
+          "explain": "內皮幫浦與屏障失代償時，基質水合增加，即使上皮完整仍可能水腫。"
+        },
+        {
+          "type": "card",
+          "title": "內皮失代償",
+          "body": [
+            "> [!big] 內皮功能不足時，多餘水分可能造成角膜水腫。",
+            "",
+            "[[img]]",
+            "- 正常成人密度常約 2400–3000 cells/mm²；個體差異大。",
+            "- 約 500 cells/mm² 是水腫風險的概略參考，不是絕對門檻。",
+            "- 為什麼晨起模糊？Fuchs 失代償的水腫可在醒來時較明顯。",
+            "- 中央 guttae 可見於 Fuchs，也有其他原因；不能單憑它確診。"
+          ],
+          "exam": [
+            "🎯 陷阱：數量之外，細胞功能也影響水合。"
+          ],
+          "img": "img/eye-anat-fig/cornea_5.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜水腫病人見到中央 guttae，下列判讀何者最恰當？",
+          "choices": [
+            "單靠 guttae 必可確診 Fuchs",
+            "需結合內皮及臨床檢查評估",
+            "必定只傷到表層上皮",
+            "細胞密度一低於 500 就必然水腫"
+          ],
+          "answer": "B",
+          "hint": "先定位相關構造，再依功能判斷。",
+          "explain": "中央 guttae 是有用線索，但亦可見於其他情況；水腫與密度門檻都需結合個體狀況。"
+        },
+        {
+          "type": "card",
+          "title": "前層病變",
+          "body": [
+            "> [!big] 前層或基質病變而內皮健康，可評估 DALK。",
+            "",
+            "[[img]]",
+            "- DALK 換前層與基質，保留自己的 Descemet 膜和內皮。",
+            "- 晚期圓錐角膜或深基質疤痕可作為評估情境。",
+            "- 為什麼可保留？病變主要在前方，健康內皮仍可控水。",
+            "- 術式仍取決於病灶、檢查及手術條件。"
+          ],
+          "exam": [
+            "🎯 陷阱：DALK 是前層移植，不是單換內皮。"
+          ],
+          "img": "img/eye-anat-fig/cornea_5.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "card",
+          "title": "後層病變",
+          "body": [
+            "> [!big] 內皮失代償可評估內皮角膜移植（EK）。",
+            "",
+            "[[img]]",
+            "- Fuchs 或偽晶體泡性角膜病變可因內皮功能不良而水腫。",
+            "- DMEK 移植供者 Descemet 膜與內皮；DSEK／DSAEK 還含後基質。",
+            "- 為什麼換後層？用供者內皮恢復控水功能。",
+            "- 全層穿透性移植 PKP 也可依病變和情況評估。"
+          ],
+          "exam": [
+            "🎯 考法：內皮可以做分層移植（108-110）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_5.jpg",
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
+          "flash": {
+            "front": "內皮失代償（Fuchs、PBK）適合哪種移植？為什麼？",
+            "back": "可評估 EK：DMEK 移植供者 Descemet 膜與內皮；DSEK／DSAEK 還包含後基質，術式依病情選擇。"
+          }
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "DSEK 與 DMEK 的供者組織有何差別？",
+          "choices": [
+            "DSEK 還包含後基質，DMEK 主要為 Descemet 膜與內皮",
+            "兩者都只移植上皮",
+            "DMEK 包含全部前基質",
+            "兩者均不包含內皮"
+          ],
+          "answer": "A",
+          "hint": "先定位相關構造，再依功能判斷。",
+          "explain": "DSEK／DSAEK 的移植物含後基質、Descemet 膜與內皮；DMEK 為後兩者。"
+        },
+        {
           "type": "example",
           "title": "三個病人：由症狀回推受損層",
           "problem": "甲：女性，每天清晨睜眼時右眼劇痛流淚，數月前曾被指甲刮傷，白天好轉。\n乙：70 歲，早上視力最模糊、中午稍好；內皮顯微鏡見中央 guttae，密度 450 cells/mm²。\n丙：角膜潰瘍癒合後，視力下降、不規則散光，細隙燈下見前基質灰白疤痕，內皮正常。\n請各判斷受損的層與合理方向。",
           "steps": [
             "**甲**：舊傷後清晨痛 → 上皮黏附不牢 → **上皮基底膜**異常 → 反覆性糜爛；方向：保護、必要時 PTK。",
-            "**乙**：guttae（Descemet 膜增厚贅疣）＋ 密度 < 500 ＋ 早晨最模糊 → **內皮／DM**：Fuchs 失代償、角膜水腫；因為內皮不能再生，方向：EK（DSEK／DMEK）。",
-            "**丙**：前基質疤痕、內皮正常、不規則散光 → **Bowman／前基質**：疤痕修復；方向：若影響視力，用 DALK（保留自己的內皮）。"
+            "**乙**：晨起模糊、中央 guttae 與低密度提示內皮失代償；可考慮 Fuchs 合併水腫，需完整檢查，必要時評估 EK。",
+            "**丙**：前基質疤痕、內皮正常、不規則散光 → 前層病變；若視力受影響，可依病灶與手術條件評估 DALK。"
           ],
-          "answer": "甲＝上皮基底膜（反覆性糜爛）；乙＝內皮／Descemet 膜（Fuchs，EK）；丙＝Bowman／前基質疤痕（DALK）。關鍵：先判斷病變層，再看能不能再生、選「只換壞的層」。"
+          "answer": "甲：考慮上皮黏附異常；乙：考慮內皮失代償；丙：前基質疤痕。先定位病變，再依檢查與病情評估治療。"
         },
         {
           "type": "practice",
@@ -1316,7 +2541,7 @@
               ],
               "answer": "ABCE",
               "hint": "想想每一層有沒有細胞、能不能再生。",
-              "explain": "A ✔；B ✔；C ✔ 由內皮分泌，可再生；D ✘ 成人內皮不分裂；E ✔。"
+              "explain": "A ✔；B ✔ 正常更新約 6–8 天，表淺上皮傷通常不留基質疤痕；C ✔ 功能性內皮可分泌膜；D ✘ 成人體內增殖能力極低；E ✔ 是可能原因之一。"
             },
             {
               "kind": "single",
@@ -1336,9 +2561,9 @@
         {
           "type": "recap",
           "points": [
-            "五層：上皮（可再生）→ 基底膜 → Bowman（不再生）→ 基質（疤痕修復）→ Descemet 膜（可再生）→ 內皮（成人不再生）。",
-            "傷到哪一層決定預後：只傷上皮不留疤；Bowman／基質 → 疤痕、不規則散光；內皮失能 → 不可逆水腫。",
-            "由疾病回推層：反覆性糜爛＝基底膜；圓錐角膜、深基質疤痕＝DALK；Fuchs、PBK＝EK。"
+            "先定位：上皮 → Bowman → 基質 → Descemet 膜 → 內皮；上皮基底膜位於上皮下方。",
+            "表淺上皮通常無疤修復；基質受傷可能留疤；內皮失代償可能水腫。",
+            "先定位病變再評估：前層且內皮健康可考慮 DALK；內皮失代償可考慮 EK。"
           ],
           "flash": [
             {
@@ -1351,7 +2576,7 @@
             },
             {
               "front": "DALK 與 EK 各換什麼？",
-              "back": "DALK 換前（深）層基質、保留 DM＋內皮；EK 換 DM＋內皮、保留基質"
+              "back": "DALK 換前層與基質，保留受者 DM 和內皮；DMEK 換供者 DM 和內皮，DSEK 還含後基質。"
             }
           ],
           "next": "角膜單元到這裡完成；可以回到「角膜的營養、神經與臨床應用」複習移植原理。"
@@ -1376,36 +2601,53 @@
         },
         {
           "type": "card",
-          "title": "速查一：五層、細胞、再生",
+          "title": "先建立地圖：五層",
           "body": [
-            "> [!big] 上、鮑、基、德、內；{o:上皮}**非角質化**、可再生；{y:Bowman} **無細胞**、不再生；{g:內皮}**不能再生**。",
+            "> [!big] 由外向內：上、鮑、基、德、內。",
             "",
             "[[img]]",
-            "| 層 | 重點 |",
-            "|---|---|",
-            "| {o:上皮} | **非角質化**複層鱗狀（約 5～7 層）；表面微絨毛幫淚膜附著；基底細胞靠**半橋粒（hemidesmosome）**；**幹細胞在輪部**，可再生 |",
-            "| {y:Bowman 層（Bowman's layer）} | **無細胞**、受傷**不再生**會留疤；神經穿過它進上皮 |",
-            "| {b:基質} | 最厚（約 90%）；I 型膠原；有角質細胞；疤痕修復 |",
-            "| {p:Descemet 膜（Descemet's membrane）} | 內皮的**基底膜**；無細胞；**隨年齡增厚** |",
-            "| {g:內皮} | **單層六角形**；**不能再生**；**鈉鉀幫浦**抽水 → 大量**粒線體** |",
-            "",
-            "> [!key] 輪部（limbus）",
-            "> 角膜與結膜的交界，角膜上皮幹細胞所在；幹細胞缺乏 → 慢性上皮缺損、**結膜化**。"
+            "上皮基底膜緊貼 Bowman；Descemet 是內皮基底膜。",
+            "📌 講義重點：角膜位於眼球纖維層前六分之一，中央無血管。",
+            "為什麼先記位置？受傷深度決定修復和疤痕。"
           ],
           "exam": [
-            "**五層順序**（114 師高 8、111 生普 6、106 師特 15、107 生普 5）；**非角質化**（106 師特 34、106 師高 21、109 師特 10）；**無細胞的層**（110 師高 8）。",
-            "**輪部幹細胞**（108 生特 7、111 生普 7、109 師特 10）；**再生能力**（107 師高 10、106 師特 17、106 生特 9）；**半橋粒**（109 師特 7）；**神經通過的層**（109 師特 8）。"
+            "五層順序與兩個基底膜不要混淆。"
           ],
           "img": "img/eye-anat-fig/cornea_5.jpg",
           "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
-          "demo": [
-            "**示範**：問「角膜神經通過哪些層」→ 從輪部沿基質進入、穿過 Bowman 層到上皮：基質、Bowman、上皮（②④⑤）；Descemet 膜與內皮沒有。",
-            "**示範**：「角膜上皮是角質化複層鱗狀上皮」錯；正確是**非角質化**。"
-          ],
           "flash": {
             "front": "角膜五層由外到內？",
             "back": "上皮 → Bowman 層 → 基質 → Descemet 膜 → 內皮。"
           }
+        },
+        {
+          "type": "card",
+          "title": "表面上皮：保護與修補",
+          "body": [
+            "> [!big] 角膜上皮是非角質化的複層鱗狀上皮。",
+            "",
+            "表面微絨毛有助淚膜附著；約占全厚十分之一。",
+            "基底細胞以半橋粒固定；輪部幹細胞提供補充。",
+            "為什麼可再生？輪部細胞持續補充上皮。",
+            "📌 講義重點：上皮缺損深度影響癒合結果。"
+          ],
+          "exam": [
+            "把皮膚的角質化誤套到角膜，是常見陷阱。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜上皮基底細胞主要以何種構造附著於基底膜？",
+          "choices": [
+            "半橋粒",
+            "間隙連接",
+            "神經髓鞘",
+            "粒線體"
+          ],
+          "answer": 0,
+          "hint": "先分辨受損位置與作用。",
+          "explain": "半橋粒協助基底細胞與基底膜固定。"
         },
         {
           "type": "check",
@@ -1423,27 +2665,88 @@
         },
         {
           "type": "card",
-          "title": "速查二：發育：誰來自哪一層？",
+          "title": "Bowman 與感覺",
           "body": [
-            "> [!big] {o:上皮 ← 體表外胚層}；{b:基質}、{g:內皮} ← **神經脊**。眼睛**沒有**內胚層來源。",
+            "> [!big] Bowman 層無細胞，受損後不會原樣再生。",
             "",
-            "| 組織 | 來源 |",
-            "|---|---|",
-            "| 角膜**上皮** | **體表外胚層**（和水晶體同源） |",
-            "| 角膜**基質、內皮** | **神經脊細胞**（變成間葉細胞移入）；鞏膜、虹膜基質同源 |",
-            "| 內胚層？ | **沒有** |",
-            "",
-            "- **發育順序**：先有 Descemet 膜，**Bowman 層最晚**形成；若只比三個細胞層，**基質最晚**。",
-            "- 進入上皮的神經纖維**沒有髓鞘**（有髓鞘會混濁）。",
-            "- **對照**：眼外肌 ← 中胚層；視網膜、視神經 ← 神經外胚層；水晶體、結膜上皮 ← 體表外胚層。"
+            "神經自基質穿過 Bowman 到上皮，末梢無髓鞘。",
+            "為什麼表面損傷會痛？三叉神經 V1 感覺末梢分布於此。",
+            "單純表淺上皮損傷通常可修復；較深損傷可能留疤。"
           ],
           "exam": [
-            "**角膜發育**（106 師特 16、108 師特 2、109 生特 1、108 生普 1）；**最晚形成**（114 師高 1、106 生普 14）；**體表外胚層**（107 師特 2）。",
-            "**陷阱**：把內皮說成「內胚層」演化來的（106 師特 16、108 師特 2 都用過）。"
-          ],
-          "demo": [
-            "**示範**：「角膜內皮細胞是由內胚層移入而來」✗；「角膜基質是神經脊細胞演化成間質細胞移入」✓。"
+            "V1 是第五腦神經的眼神經分支。"
           ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "角膜感覺路徑中的 V1 代表什麼？",
+          "choices": [
+            "三叉神經的眼神經分支",
+            "第一腦神經嗅神經",
+            "顏面神經第一分支",
+            "視網膜第一層"
+          ],
+          "answer": 0,
+          "hint": "先辨認細胞類型，再看層次或來源。",
+          "explain": "V 是第五腦神經三叉神經；V1 是它的第一分支，即眼神經。"
+        },
+        {
+          "type": "card",
+          "title": "基質與透明",
+          "body": [
+            "> [!big] 基質占角膜厚度約九成，規則排列幫助透明。",
+            "",
+            "主要是 I 型膠原與角質細胞；受損可形成疤痕。",
+            "為什麼混濁？排列紊亂或水腫增加光散射。",
+            "透明還需要無血管和適當水合，不能只靠單一因素。"
+          ],
+          "exam": [
+            "彈性纖維、細胞間通訊不能取代膠原規則排列。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "深層基質排列受到破壞後為何可能產生混濁？",
+          "choices": [
+            "膠原排列改變使光散射增加",
+            "因所有神經立即再生",
+            "因角膜變成正常血管組織",
+            "因上皮必然角質化"
+          ],
+          "answer": 0,
+          "hint": "先分辨受損位置與作用。",
+          "explain": "基質排列紊亂或疤痕會增加散射；臨床結果依損傷而異。"
+        },
+        {
+          "type": "card",
+          "title": "兩種胚胎來源",
+          "body": [
+            "> [!big] 上皮來自體表外胚層；基質與內皮主要來自神經脊。",
+            "",
+            "水晶體與結膜上皮也來自體表外胚層。",
+            "鞏膜及虹膜基質主要來自神經脊；眼外肌主要來自中胚層。",
+            "視網膜與視神經來自神經外胚層。",
+            "為什麼「內皮」不是內胚層？名稱描述位置，並非胚層來源。"
+          ],
+          "exam": [
+            "內皮不是內胚層；看清題目問組織還是胚層。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "胚胎發育時角膜內皮主要來自？",
+          "choices": [
+            "神經脊細胞",
+            "體表外胚層",
+            "視網膜神經外胚層",
+            "腸道內胚層"
+          ],
+          "answer": 0,
+          "hint": "先辨認細胞類型，再看層次或來源。",
+          "explain": "角膜內皮及基質主要來自神經脊細胞；角膜上皮來自體表外胚層。"
         },
         {
           "type": "check",
@@ -1461,28 +2764,76 @@
         },
         {
           "type": "card",
-          "title": "速查三：內皮、單層、六角形",
+          "title": "發育先後：先看選項",
           "body": [
-            "> [!big] **單層**：水晶體上皮、RPE、角膜內皮；**六角形**：RPE、水晶體纖維橫切面、角膜內皮。",
+            "> [!big] 選項包含 Bowman 時，它比其他列出的角膜層晚形成。",
             "",
-            "[[img]]",
-            "- **內皮密度**：年輕成人約 **3000 /mm²**，每年流失約 **0.6%**，鄰近細胞**擴大**填補；**< 約 500 /mm²** 水腫。",
-            "- 看密度與形狀用**鏡面顯微鏡（specular microscope）**；前眼 OCT 看厚度、角膜地形圖看曲率。",
-            "- **角膜老化**：上皮基底膜增厚、角質細胞減少、基質變硬、**Descemet 膜增厚**（不是變薄）、內皮變少。",
-            "- **內皮損傷**：隱形眼鏡缺氧 → 多形性、水腫、**幫浦功能下降**。可只換內皮（DSAEK／DMEK）。",
-            "",
-            "> [!key] 透明度的原因",
-            "> 膠原粗細一致、排列規則＋無血管＋內皮 Na⁺/K⁺ 幫浦（上皮**緊密連接 tight junction** 擋水）。**間隙連接（gap junction）**是細胞通訊，不是主因；彈性纖維不是角膜特色；Ca²⁺ 等離子只是細胞功能的背景，也不是透明的主因。"
+            "若題目只比較上皮、基質、內皮三個細胞層，答案是基質。",
+            "為什麼兩題答案不同？一題把 Bowman 納入比較，另一題沒有。",
+            "📌 講義重點：Descemet 是內皮分泌的基底膜。"
           ],
           "exam": [
-            "**單層／六角形**（108 師特 17、113 師高 13）；**內皮密度與流失**（108 師高 8、114 師高 7、108 生普 5）；**不能再生**（106 師特 17、111 師高 9、106 生普 7、106 生特 9）；**透明度**（107 師高 2、113 師高 9、112 生普 7）。",
-            "**鏡面顯微鏡**（106 師高 19）；**粒線體**（109 師特 22）；**老化**（113 生普 2、113 師高 8）；**可只移植內皮**（108 師特 10）。"
+            "106 生普 14 與 114 師高 1 的比較範圍不同。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "一題只比較角膜上皮、內皮與基質三個細胞層，依本課國考脈絡何者最晚形成？",
+          "choices": [
+            "基質",
+            "上皮",
+            "內皮",
+            "三者完全同時"
+          ],
+          "answer": 0,
+          "hint": "先分辨受損位置與作用。",
+          "explain": "僅比較三個細胞層時是基質；若納入 Bowman，題目答案不同。"
+        },
+        {
+          "type": "card",
+          "title": "內皮屏障與幫浦",
+          "body": [
+            "> [!big] 內皮是不完全屏障，幫浦協助把水移向房水。",
+            "",
+            "[[img]]",
+            "內皮單層、細胞多呈六角形，具有豐富粒線體。",
+            "為什麼需要幫浦？基質會吸水，過度水合會散射光。",
+            "上皮緊密連接也提供屏障；gap junction 主要是細胞通訊。"
+          ],
+          "exam": [
+            "Na⁺/K⁺ 幫浦需能量；內皮不是完全隔水。"
           ],
           "img": "img/eye-anat-fig/cornea_endo.jpg",
-          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
-          "demo": [
-            "**示範**：選項「流失的內皮細胞鄰近細胞會**縮小**」錯 → 是鄰近細胞**擴大**。",
-            "**示範**：「Descemet 膜隨年齡變薄」錯 → **變厚**。"
+          "img_source": "Secker, G.A., and Daniels, J.T., Limbal epithelial stem cells of the cornea (June 30, 2009), StemBook, ed. The Stem Cell，Wikimedia Commons「The human cornea in cross-section..jpg」，CC BY 3.0（https://commons.wikimedia.org/wiki/File:The_human_cornea_in_cross-section..jpg）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "內皮屏障與幫浦如何共同維持透明？",
+          "choices": [
+            "限制液體進入並協助水移向房水",
+            "完全阻斷房水接觸內皮",
+            "將水持續送入基質",
+            "由間隙連接完全阻水"
+          ],
+          "answer": 0,
+          "hint": "先分辨受損位置與作用。",
+          "explain": "內皮是不完全屏障，幫浦協助維持適當水合。"
+        },
+        {
+          "type": "card",
+          "title": "內皮損失與觀察",
+          "body": [
+            "> [!big] 內皮細胞減少時，鄰近細胞移行並擴大填補。",
+            "",
+            "成人體內增殖能力有限，不能依賴正常再生。",
+            "年輕成人約 3000 cells/mm²；隨年齡下降。",
+            "約 500 以下水腫風險升高，但並非絕對臨床門檻。",
+            "為什麼細胞變大？要以較少細胞覆蓋原有面積。"
+          ],
+          "exam": [
+            "鏡面顯微鏡看密度與形狀；OCT 看層次厚度、地形圖看曲率。"
           ],
           "flash": {
             "front": "內皮密度低到多少會水腫？",
@@ -1492,16 +2843,60 @@
         {
           "type": "check",
           "kind": "single",
+          "q": "檢查角膜內皮細胞密度及形狀，最直接的儀器是？",
+          "choices": [
+            "鏡面顯微鏡",
+            "眼底攝影機",
+            "色覺檢查表",
+            "檢影鏡"
+          ],
+          "answer": 0,
+          "hint": "先辨認細胞類型，再看層次或來源。",
+          "explain": "鏡面顯微鏡可觀察與分析角膜內皮細胞密度及形態。"
+        },
+        {
+          "type": "card",
+          "title": "形狀、層數與老化",
+          "body": [
+            "> [!big] 單層與六角形是兩種不同的分類。",
+            "",
+            "單層：水晶體上皮、視網膜色素上皮、角膜內皮。",
+            "六角形：視網膜色素上皮、水晶體纖維橫切面、角膜內皮。",
+            "為什麼要分開？細胞形狀與排列層數不能互相推論。",
+            "老化時 Descemet 膜增厚、內皮細胞減少。"
+          ],
+          "exam": [
+            "不要把水晶體上皮誤當作此題六角形細胞。"
+          ]
+        },
+        {
+          "type": "check",
+          "kind": "single",
           "q": "下列何者之細胞型態呈現「六角形」？①水晶體上皮 ②角膜上皮 ③視網膜色素上皮 ④水晶體纖維橫切面 ⑤角膜內皮",
           "choices": [
             "①②③",
             "①④⑤",
-            "②④⑥",
+            "②③④",
             "③④⑤"
           ],
           "answer": "D",
           "hint": "想一想蜂巢。",
           "explain": "視網膜色素上皮、水晶體纖維橫切面、角膜內皮呈六角形（③④⑤）。"
+        },
+        {
+          "type": "card",
+          "title": "內皮失功能與移植",
+          "body": [
+            "> [!big] 內皮功能不足可造成基質水腫。",
+            "",
+            "隱形眼鏡相關缺氧可影響內皮形態與功能。",
+            "DSAEK、DMEK 可選擇性替換病變內皮層。",
+            "為什麼不是移植所有層？病變主要在內皮時可考慮層板手術。",
+            "📌 講義重點：治療選擇仍須依實際病情評估。"
+          ],
+          "exam": [
+            "不要把內皮移植當作所有角膜疾病的共同治療。"
+          ]
         },
         {
           "type": "example",

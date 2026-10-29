@@ -1,0 +1,146 @@
+{
+  "at": "2026-10-29T17:11:33.258Z",
+  "pass": 17,
+  "total": 17,
+  "results": [
+    {
+      "name": "1100 深淵開場範圍統計",
+      "pass": true,
+      "detail": {
+        "text": "範圍 已刷 0／共 13 題",
+        "setup": {
+          "id": "ans-basics-q-1",
+          "exam": "ans-basics-q",
+          "subj": "eye_ans",
+          "stats": {
+            "total": 13,
+            "done": 0,
+            "todo": 13,
+            "types": 13,
+            "tDone": 0,
+            "tTodo": 13,
+            "loose": 13
+          }
+        }
+      }
+    },
+    {
+      "name": "1100 題型展開",
+      "pass": true,
+      "detail": "題型 已刷 0／共 13 種（同類題組任一題作答過即算已刷）"
+    },
+    {
+      "name": "1100 新題作答立即加一",
+      "pass": true,
+      "detail": "範圍 已刷 1／共 13 題"
+    },
+    {
+      "name": "1100 重答不重複計數",
+      "pass": true,
+      "detail": "範圍 已刷 1／共 13 題"
+    },
+    {
+      "name": "1100 星號與題本題型篩選",
+      "pass": true,
+      "detail": {
+        "stats": {
+          "total": 1,
+          "done": 1,
+          "todo": 0,
+          "types": 1,
+          "tDone": 1,
+          "tTodo": 0,
+          "loose": 1
+        },
+        "count": "範圍 已刷 1／共 1 題",
+        "ids": [
+          "ans-basics-q-1"
+        ]
+      }
+    },
+    {
+      "name": "1100 無橫向捲動",
+      "pass": true
+    },
+    {
+      "name": "1100 自由遠征沒有範圍進度",
+      "pass": true
+    },
+    {
+      "name": "1100 還原 localStorage",
+      "pass": true
+    },
+    {
+      "name": "390 深淵開場範圍統計",
+      "pass": true,
+      "detail": {
+        "text": "範圍 已刷 0／共 13 題",
+        "setup": {
+          "id": "ans-basics-q-1",
+          "exam": "ans-basics-q",
+          "subj": "eye_ans",
+          "stats": {
+            "total": 13,
+            "done": 0,
+            "todo": 13,
+            "types": 13,
+            "tDone": 0,
+            "tTodo": 13,
+            "loose": 13
+          }
+        }
+      }
+    },
+    {
+      "name": "390 題型展開",
+      "pass": true,
+      "detail": "題型 已刷 0／共 13 種（同類題組任一題作答過即算已刷）"
+    },
+    {
+      "name": "390 新題作答立即加一",
+      "pass": true,
+      "detail": "範圍 已刷 1／共 13 題"
+    },
+    {
+      "name": "390 重答不重複計數",
+      "pass": true,
+      "detail": "範圍 已刷 1／共 13 題"
+    },
+    {
+      "name": "390 星號與題本題型篩選",
+      "pass": true,
+      "detail": {
+        "stats": {
+          "total": 1,
+          "done": 1,
+          "todo": 0,
+          "types": 1,
+          "tDone": 1,
+          "tTodo": 0,
+          "loose": 1
+        },
+        "count": "範圍 已刷 1／共 1 題",
+        "ids": [
+          "ans-basics-q-1"
+        ]
+      }
+    },
+    {
+      "name": "390 無橫向捲動",
+      "pass": true
+    },
+    {
+      "name": "390 自由遠征沒有範圍進度",
+      "pass": true
+    },
+    {
+      "name": "390 還原 localStorage",
+      "pass": true
+    },
+    {
+      "name": "無頁面錯誤",
+      "pass": true,
+      "detail": []
+    }
+  ]
+}

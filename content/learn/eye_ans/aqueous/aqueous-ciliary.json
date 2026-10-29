@@ -1,0 +1,2821 @@
+{
+  "schema": "xd-learn/1",
+  "id": "aqueous-ciliary",
+  "subject": "eye_ans",
+  "banks": [
+    "eye115-aqueous-106-tn",
+    "eye115-aqueous-106-ts",
+    "eye115-aqueous-106-vn",
+    "eye115-aqueous-106-vs",
+    "eye115-aqueous-107-tn",
+    "eye115-aqueous-108-ts",
+    "eye115-aqueous-108-vn",
+    "eye115-aqueous-109-vn",
+    "eye115-aqueous-110-vn",
+    "eye115-aqueous-111-tn",
+    "eye115-aqueous-112-tn",
+    "eye115-aqueous-113-tn",
+    "eye115-aqueous-114-tn",
+    "eye115-aqueous-114-vn",
+    "eye115-aqueous-108-vs",
+    "eye115-aqueous-108-tn",
+    "eye115-aqueous-112-vn",
+    "eye115-aqueous-109-tn",
+    "eye115-aqueous-110-tn"
+  ],
+  "prior": [
+    "eye115-exam-cornea-supply-107",
+    "eye115-exam-ans-reflex-106",
+    "eye115-exam-ans-reflex-111",
+    "eye115-exam-blood-ciliary-110"
+  ],
+  "path": [
+    "115 大二上",
+    "房水與睫狀體",
+    "房水與睫狀體"
+  ],
+  "unit": "房水與睫狀體",
+  "title": "房水與睫狀體",
+  "desc": "前後房、房水循流、睫狀體調節與房水形成。",
+  "level": 2,
+  "minutes": 85,
+  "order": 30,
+  "source": "課堂講義 aqueous and ciliary body (2026) v2，PDF 第 2–4、8–11、23–24、43、53 頁；國考題取自考選部試卷與標準答案，詳解自編。 第 15–16、20–41 頁；屏障及水、離子運輸另參考 https://pmc.ncbi.nlm.nih.gov/articles/PMC3010334/ 與 https://pmc.ncbi.nlm.nih.gov/articles/PMC3018825/。",
+  "tags": [
+    "房水",
+    "睫狀體",
+    "前房",
+    "後房"
+  ],
+  "lessons": [
+    {
+      "id": "l1",
+      "title": "前房與後房（融合逐字稿）",
+      "goals": [
+        "辨認前房與後房邊界、瞳孔通道及容量",
+        "依房水流向辨認生成處與兩房"
+      ],
+      "teaches": [
+        "前後房"
+      ],
+      "pace": "free",
+      "steps": [
+        {
+          "type": "intro",
+          "title": "先認空間，再追房水",
+          "body": [
+            "老師先用虹膜定位前後房：前後兩個空間有開口相通，房水會流動。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "先找虹膜：一片隔板",
+          "body": [
+            "> [!big] 以虹膜為地標：前面是前房，後面是後房。",
+            "[[img]]",
+            "圖 ② 為{b:前房}，③ 為{o:後房}；角膜在前，水晶體在虹膜後。",
+            "為什麼要先找虹膜？同一張切面圖的兩個空間以它為定位基準。",
+            "記法：虹膜「前前、後後」；虹膜可調節瞳孔大小。"
+          ],
+          "exam": [
+            "考法：辨虹膜相對角膜與水晶體的位置；陷阱：不要把虹膜本身當兩房的通道（106 師高 1）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；專案既有中文標註。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "在眼球切面上，判斷前房或後房時，老師先用哪個構造當地標？",
+          "choices": [
+            "虹膜",
+            "視神經",
+            "視網膜",
+            "玻璃體"
+          ],
+          "answer": "A",
+          "hint": "先在切面圖找出虹膜，再依位置判斷。",
+          "explain": "虹膜前方是前房，後方是後房；先找到它才能定位兩個空間。"
+        },
+        {
+          "type": "card",
+          "title": "前房：瞳孔區要另看",
+          "body": [
+            "> [!big] {b:前房}在角膜後，周邊後界是虹膜前表面。",
+            "[[img]]",
+            "前界：角膜後表面。",
+            "中央瞳孔區的後界是水晶體前表面。",
+            "為什麼中央不同？瞳孔是虹膜中央的開口，該處沒有虹膜擋住水晶體。",
+            "成人中央深度約 2.5～3 mm，個體有差異。"
+          ],
+          "exam": [
+            "考法：前房前界及中央、周邊後界；陷阱：不要說後界全是虹膜（110 師高 12；講義 p.8）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；專案既有中文標註。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "眼睛前房的前界是下列何者？",
+          "choices": [
+            "角膜後表面",
+            "虹膜後表面",
+            "玻璃體前表面",
+            "視網膜"
+          ],
+          "answer": "A",
+          "hint": "先回想空間位置與因果關係，再選答案。",
+          "explain": "前房在角膜後方；虹膜位於其周邊後方。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "前房中央瞳孔區的後界主要是哪個構造？",
+          "choices": [
+            "角膜後表面",
+            "水晶體前表面",
+            "視網膜",
+            "虹膜後表面"
+          ],
+          "answer": "B",
+          "hint": "先在切面圖找出虹膜，再依位置判斷。",
+          "explain": "瞳孔中央沒有虹膜，前房在該處的後界是水晶體前表面。"
+        },
+        {
+          "type": "card",
+          "title": "後房：虹膜後方的窄空間",
+          "body": [
+            "> [!big] {o:後房}在虹膜後、水晶體與懸韌帶前。",
+            "[[img]]",
+            "主要前界：虹膜後表面；後界：水晶體及懸韌帶。",
+            "外側是睫狀體；玻璃體腔位於水晶體更後方。",
+            "為什麼玻璃體不是後房？兩者隔著水晶體及懸韌帶。"
+          ],
+          "exam": [
+            "考法：配對後房前後界；陷阱：玻璃體與角膜都不是這一對（114 生普 9；講義 p.9）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；專案既有中文標註。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "眼睛後房的前界與後界分別是什麼？",
+          "choices": [
+            "虹膜後表面；水晶體與懸韌帶",
+            "角膜；玻璃體",
+            "水晶體；角膜",
+            "虹膜前表面；角膜"
+          ],
+          "answer": "A",
+          "hint": "後房位於虹膜後方、水晶體與懸韌帶前方。",
+          "explain": "後房位於虹膜後方、水晶體與懸韌帶前方。"
+        },
+        {
+          "type": "card",
+          "title": "兩房的門：瞳孔",
+          "body": [
+            "> [!big] 房水從{o:後房}經瞳孔流到{b:前房}。",
+            "[[img]]",
+            "睫狀體的睫狀突產生房水，進入後房；之後穿過瞳孔到前房。",
+            "為什麼能通？虹膜中央的瞳孔像隔板上的門；虹膜本身不是通道。",
+            "🧑‍🏫 老師說會考：辨認房水由後房經瞳孔到前房。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:01:04–00:01:44）"
+          ],
+          "exam": [
+            "考法：判斷流向及產生處；陷阱：水晶體不分泌房水（110 師高 12；106 師高 1）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；專案既有中文標註。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "睫狀突產生的房水進入後房後，通常經哪條路徑進入前房？",
+          "choices": [
+            "由瞳孔進入前房",
+            "直接穿過角膜進入前房",
+            "先進入玻璃體腔再流回前房",
+            "由水晶體內部穿過"
+          ],
+          "answer": "A",
+          "hint": "先在切面圖找出虹膜，再依位置判斷。",
+          "explain": "虹膜中央的瞳孔連通兩房；房水由後房通過瞳孔進入前房。"
+        },
+        {
+          "type": "card",
+          "title": "容量：前大後小",
+          "body": [
+            "> [!big] {b:前房}通常比{o:後房}大。",
+            "[[img]]",
+            "::: cols b o",
+            "### 前房",
+            "約 0.25 mL",
+            "|||",
+            "### 後房",
+            "約 0.06 mL",
+            ":::",
+            "為什麼？前房在角膜與虹膜間張開；後房主要是虹膜後、水晶體周邊較窄的空間。",
+            "記法：前大後小；數字是講義約值，不是每個人的固定容量。"
+          ],
+          "exam": [
+            "考法：選出顛倒前後房大小的錯誤敘述；陷阱：名字有「後」不代表空間較大（106 師高 1；講義 p.4）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0（https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png）；專案既有中文標註。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "眼球前房和後房的容量，何者通常較大？",
+          "choices": [
+            "前房較大",
+            "後房較大",
+            "兩者必定等大",
+            "無法比較，因為後房不是空間"
+          ],
+          "answer": "A",
+          "hint": "先回想空間位置與因果關係，再選答案。",
+          "explain": "前房約 0.25 mL、後房約 0.06 mL；後房在虹膜與水晶體之間較窄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "某選項說「前房較小，後房較大」；依一般成人前後房容量應如何判斷？",
+          "choices": [
+            "正確，後房約 0.25 mL",
+            "錯誤，前房通常較大",
+            "正確，兩房一定等大",
+            "無法判斷，前房不含房水"
+          ],
+          "answer": "B",
+          "hint": "先在切面圖找出虹膜，再依位置判斷。",
+          "explain": "講義約值前房 0.25 mL、後房 0.06 mL，因此前房通常較大。"
+        },
+        {
+          "type": "practice",
+          "title": "國考實戰",
+          "pick": {
+            "match": [
+              "前後房"
+            ],
+            "subjects": [
+              "eye_ans"
+            ],
+            "n": 3
+          }
+        },
+        {
+          "type": "recap",
+          "points": [
+            "前房：角膜後、虹膜前；瞳孔中央後方是水晶體。",
+            "後房：虹膜後、水晶體與懸韌帶前；以瞳孔通前房。"
+          ],
+          "flash": [
+            {
+              "front": "前房與後房怎麼相通？",
+              "back": "經瞳孔相通。"
+            },
+            {
+              "front": "後房後界主要有哪些？",
+              "back": "水晶體與懸韌帶。"
+            }
+          ],
+          "next": "完成！"
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "title": "房水從哪裡來、往哪裡去（融合逐字稿）",
+      "goals": [
+        "說出房水來源、主要循流路線和功能"
+      ],
+      "teaches": [
+        "房水來源",
+        "房水性質",
+        "房水路徑",
+        "房水功能"
+      ],
+      "pace": "free",
+      "steps": [
+        {
+          "type": "intro",
+          "title": "跟著房水走一圈",
+          "body": [
+            "先認識房水，再追蹤它從睫狀突到出口的旅程；最後想想，這趟循環為什麼重要。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "透明、持續更新的液體",
+          "body": [
+            "> [!big] 房水是前房與後房內透明、無色的水樣液。",
+            "[[img]]",
+            "它持續生成，也持續排出；不是固定不動的一灘水。",
+            "為什麼要透明？光要通過眼前節，房水的清澈有助光線傳遞。",
+            "生成速率常用約 2～2.5 μL/min（微升／分鐘），會隨生理狀態變動。"
+          ],
+          "exam": [
+            "考法：辨認性質與生成速率；陷阱：μL 是微升，不是毫升（109 師高 11）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0；https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "若每分鐘生成約 2～2.5 μL 房水，這個數值代表什麼？",
+          "choices": [
+            "每分鐘生成量的常用概略值",
+            "前房固定容積",
+            "每小時的眼壓",
+            "所有人任何時間都相同的固定速率"
+          ],
+          "answer": "A",
+          "hint": "先想房水的來源、方向或作用。",
+          "explain": "μL／分鐘是生成速率的概略值，不是容積；速率會變動。"
+        },
+        {
+          "type": "card",
+          "title": "血漿是原料，不是成品",
+          "body": [
+            "> [!big] 房水源自血漿，但成分不與血漿完全相同。",
+            "[[img]]",
+            "為什麼不同？睫狀上皮有選擇性屏障及運輸，進入房水的物質比例會改變。",
+            "房水含水、電解質、葡萄糖與抗壞血酸；蛋白質濃度比血漿低。",
+            "🧑‍🏫 老師說會考：房水與血漿的成分差別。（出處：Sonnet校訂_時間戳.txt（48d3cb30df49）＋00:07:15.450）"
+          ],
+          "exam": [
+            "考法：血漿與房水的組成比較；陷阱：源於血漿不代表兩者一模一樣（109 師高 11）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0；https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "房水雖然源自血漿，為什麼不能說房水與血漿成分完全一樣？",
+          "choices": [
+            "睫狀上皮會選擇性運送物質",
+            "房水完全不含水",
+            "房水由淚腺製造",
+            "血漿不含任何離子"
+          ],
+          "answer": "A",
+          "hint": "先回想空間位置與因果關係，再選答案。",
+          "explain": "睫狀上皮選擇性運送，因此房水與血漿相似但不完全相同。"
+        },
+        {
+          "type": "card",
+          "title": "皺褶部是主要製造處",
+          "body": [
+            "> [!big] 睫狀體皺褶部的睫狀突，主要由無色素上皮分泌房水。",
+            "[[img]]",
+            "皺褶部（pars plicata）在前，有睫狀突；平坦部（pars plana）在後。",
+            "為什麼選皺褶部？此處的睫狀突上皮是主要分泌部位。",
+            "記法：前皺有突做房水；後平不是主要工廠。"
+          ],
+          "exam": [
+            "考法：選分泌構造；陷阱：平坦部、角膜及小樑網都不是主要分泌處（112 生普 8；106 生特 21；110 師高 11）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0；https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "房水主要由睫狀體哪個部位分泌至後房？",
+          "choices": [
+            "皺褶部的睫狀突無色素上皮",
+            "平坦部的鞏膜",
+            "角膜上皮",
+            "水晶體前囊"
+          ],
+          "answer": "A",
+          "hint": "皺褶部的睫狀突含無色素上皮，是主要分泌部位。",
+          "explain": "皺褶部的睫狀突含無色素上皮，是主要分泌部位。"
+        },
+        {
+          "type": "card",
+          "title": "先從後房出發",
+          "body": [
+            "> [!big] 新房水先進入虹膜後方的後房，再經瞳孔到前房。",
+            "[[img]]",
+            "老師以虹膜作分界：虹膜前是前房，虹膜後是後房。",
+            "為什麼經瞳孔？虹膜分隔兩房，瞳孔是兩者相通的開口。",
+            "🧑‍🏫 老師說會考：房水由睫狀突進入後房，經瞳孔到前房。（出處：Sonnet校訂_時間戳.txt（48d3cb30df49）＋00:01:04.450–00:01:36.450）"
+          ],
+          "exam": [
+            "考法：前後房與瞳孔排序；陷阱：不是前房→瞳孔→後房（108 生特 8；114 師高 10）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0；https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "房水要從虹膜後方流到虹膜前方，正常情況先通過哪個開口？",
+          "choices": [
+            "許萊姆氏管",
+            "瞳孔",
+            "角膜",
+            "視神經管"
+          ],
+          "answer": "B",
+          "hint": "先想房水的來源、方向或作用。",
+          "explain": "瞳孔連通後房與前房；許萊姆氏管在前房隅角排水路線的下游。"
+        },
+        {
+          "type": "card",
+          "title": "沿主要排水路走",
+          "body": [
+            "> [!big] 前房的房水可由隅角的小樑網進入許萊姆氏管。",
+            "[[img]]",
+            "::: flow",
+            "睫狀突 → 後房",
+            "瞳孔 → 前房",
+            "小樑網 → 許萊姆氏管",
+            "集液管 → 鞏膜表層靜脈",
+            ":::",
+            "為什麼先網後管？房水先通過隅角的小樑網，才進入外側的管道。",
+            "🧑‍🏫 老師強調：從瞳孔到前房，再經小樑網排向血管。（出處：Sonnet校訂_時間戳.txt（854a2e4ba722）＋00:00:36.400–00:00:57.600）"
+          ],
+          "exam": [
+            "考法：排序整條主要路徑；陷阱：不能把許萊姆氏管放在小樑網之前（106 師特 18；111 生普 8）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0；https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "房水循環的主要路線，何者正確？",
+          "choices": [
+            "睫狀突→後房→瞳孔→前房→小樑網→許萊姆氏管",
+            "睫狀突→前房→瞳孔→後房→許萊姆氏管",
+            "角膜→前房→小樑網→後房",
+            "水晶體→後房→許萊姆氏管→瞳孔"
+          ],
+          "answer": "A",
+          "hint": "房水先進後房，通過瞳孔到前房，再經小樑網進入許萊姆氏管。",
+          "explain": "房水先進後房，通過瞳孔到前房，再經小樑網進入許萊姆氏管。"
+        },
+        {
+          "type": "card",
+          "title": "另一條流出路",
+          "body": [
+            "> [!big] 葡萄膜鞏膜途徑也是房水的流出路線。",
+            "[[img]]",
+            "小樑途徑：經小樑網與許萊姆氏管，通常是主要路線。",
+            "葡萄膜鞏膜途徑：房水經睫狀肌等組織間隙向外流出。",
+            "為什麼要分兩路？題目常把許萊姆氏管誤放在葡萄膜鞏膜途徑。"
+          ],
+          "exam": [
+            "考法：辨別兩個排出途徑；陷阱：角膜基質細胞與視網膜不是這兩條排水路（107 生普 10；114 師高 9；106 生普 15）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0；https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列哪一組是房水的兩種流出途徑？",
+          "choices": [
+            "小樑途徑與葡萄膜鞏膜途徑",
+            "角膜上皮與視網膜",
+            "淚腺與水晶體",
+            "瞳孔與視神經"
+          ],
+          "answer": "A",
+          "hint": "先想房水的來源、方向或作用。",
+          "explain": "小樑途徑與葡萄膜鞏膜途徑都是流出路線；許萊姆氏管屬前者。"
+        },
+        {
+          "type": "card",
+          "title": "排出阻力影響眼壓",
+          "body": [
+            "> [!big] 生成持續時，流出阻力增加會使房水先累積、眼壓可能上升。",
+            "[[img]]",
+            "老師用水龍頭比喻：水持續流入，排水變慢，水便先累積。",
+            "為什麼不是永遠累積？眼壓改變可影響流出，直到可能形成新的流入、流出平衡。",
+            "眼壓有助維持眼球形狀；眼壓與青光眼不能直接畫上等號。"
+          ],
+          "exam": [
+            "考法：排出受阻與眼壓；陷阱：不是角膜製造房水（113 生普 10）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0；https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "房水生成持續，若前房小樑網流出阻力增加，眼壓可能如何變化？",
+          "choices": [
+            "房水先累積，眼壓上升",
+            "房水立即停止生成，眼壓必定不變",
+            "眼壓必定歸零",
+            "流出阻力與眼壓完全無關"
+          ],
+          "answer": "A",
+          "hint": "先回想空間位置與因果關係，再選答案。",
+          "explain": "流出變慢而生成仍持續時，房水先累積，眼壓升高後才可能達到新的平衡。"
+        },
+        {
+          "type": "card",
+          "title": "為無血管組織送養分",
+          "body": [
+            "> [!big] 房水為角膜與水晶體提供養分，並帶走代謝物。",
+            "[[img]]",
+            "角膜與水晶體無血管，細胞仍需要葡萄糖等養分；角膜上皮的葡萄糖主要由房水供應。",
+            "為什麼需要循環？送入養分，也帶走乳酸、二氧化碳等代謝物。",
+            "角膜氧氣另有淚液與輪部等來源；不能說氧全靠房水。",
+            "老師把房水的循環比作無血管組織的供應方式。（出處：Sonnet校訂_時間戳.txt（48d3cb30df49）＋00:02:50.890–00:03:38.890）"
+          ],
+          "exam": [
+            "考法：選主要受房水營養的無血管組織；陷阱：虹膜與睫狀體有血管（108 師高 11；114 生普 8；107 師特 10）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0；https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "透明的水晶體沒有血管，其細胞主要如何取得營養？",
+          "choices": [
+            "經房水等周圍液體交換物質",
+            "由水晶體內密集血管直接供應",
+            "由淚腺直接灌入水晶體",
+            "靠瞳孔產生血液"
+          ],
+          "answer": "A",
+          "hint": "先回想空間位置與因果關係，再選答案。",
+          "explain": "水晶體沒有血管，透過周圍液體交換養分與代謝物。"
+        },
+        {
+          "type": "card",
+          "title": "房水也參與保護",
+          "body": [
+            "> [!big] 房水中的抗壞血酸（維生素 C）有抗氧化作用。",
+            "[[img]]",
+            "為什麼有用？抗壞血酸可清除自由基，有助抵禦氧化與輻射傷害。",
+            "乳酸是代謝產物，不是本題問的抗氧化物。",
+            "正常房水通常沒有可見發炎細胞；發炎時免疫反應可改變。"
+          ],
+          "exam": [
+            "考法：辨認抗氧化成分；陷阱：乳酸、白蛋白與免疫球蛋白不是本題答案（106 生普 22；114 生普 8）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "BruceBlaus, Wikimedia Commons, Blausen 0390 EyeAnatomy Sectional, CC BY 3.0；https://commons.wikimedia.org/wiki/File:Blausen_0390_EyeAnatomy_Sectional.png"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "國考問房水中有抗氧化作用的物質，應選哪一項？",
+          "choices": [
+            "乳酸",
+            "抗壞血酸",
+            "白蛋白",
+            "二氧化碳"
+          ],
+          "answer": "B",
+          "hint": "先想房水的來源、方向或作用。",
+          "explain": "抗壞血酸即維生素 C，能清除自由基；乳酸與二氧化碳是代謝產物。"
+        },
+        {
+          "type": "practice",
+          "title": "國考實戰",
+          "pick": {
+            "match": [
+              "房水來源",
+              "房水性質",
+              "房水路徑",
+              "房水功能"
+            ],
+            "subjects": [
+              "eye_ans"
+            ],
+            "n": 6
+          },
+          "qids": [
+            "eye115-exam-cornea-supply-107-110"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "前皺有突做房水；後房→瞳孔→前房→小樑網→許萊姆氏管。",
+            "另一條是葡萄膜鞏膜途徑；房水供養無血管組織，生成與排出影響眼壓。"
+          ],
+          "flash": [
+            {
+              "front": "房水從哪裡產生？",
+              "back": "睫狀體皺褶部的睫狀突無色素上皮。"
+            },
+            {
+              "front": "房水先到前房還是後房？",
+              "back": "先到後房，再經瞳孔到前房。"
+            }
+          ],
+          "next": "完成！"
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "title": "睫狀體：位置、肌肉與調節（融合逐字稿）",
+      "goals": [
+        "辨認睫狀體前後兩部及肌肉",
+        "從肌肉收縮推導水晶體調節與血供"
+      ],
+      "teaches": [
+        "睫狀體位置"
+      ],
+      "pace": "free",
+      "steps": [
+        {
+          "type": "intro",
+          "title": "一圈組織，兩項工作",
+          "body": [
+            "睫狀體圍在水晶體周圍：睫狀突分泌房水，睫狀肌透過懸韌帶改變水晶體形狀。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "一圈組織，前後相接",
+          "body": [
+            "> [!big] 睫狀體位在虹膜和脈絡膜之間，屬於葡萄膜。",
+            "[[img]]",
+            "虹膜 → 睫狀體 → 脈絡膜：沿眼壁由前向後找。",
+            "為什麼是一圈？它環繞水晶體，連結懸韌帶，也包含血管與肌肉。",
+            "有色素和豐富血流；發炎可與虹膜炎一起表現為虹膜睫狀體炎。"
+          ],
+          "exam": [
+            "考法：判斷位置與特性；陷阱：把它放在脈絡膜後方或說它無血流（108 師特 13）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；原作者未標示，課堂學習使用。"
+        },
+        {
+          "type": "card",
+          "title": "前皺後平",
+          "body": [
+            "> [!big] 前方皺褶部有睫狀突，後方平坦部接鋸齒緣。",
+            "[[img]]",
+            "皺褶部（pars plicata）：表面突起，睫狀突參與房水生成。",
+            "平坦部（pars plana）：表面較平，後界是鋸齒緣。",
+            "為什麼要分？外形與功能位置不同，題目常把前後倒置。",
+            "記法：前皺有突、後平到鋸齒。"
+          ],
+          "exam": [
+            "考法：配英文與前後位置；陷阱：plana 並非前方皺褶部（108 師特 13；112 生普 8）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；原作者未標示，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "睫狀體由前往後，皺褶部與平坦部的順序何者正確？",
+          "choices": [
+            "皺褶部→平坦部",
+            "平坦部→皺褶部",
+            "兩者都是視網膜層",
+            "先到鋸齒緣再到平坦部"
+          ],
+          "answer": "A",
+          "hint": "先辨認構造或動作的方向，再推下一步。",
+          "explain": "前方有睫狀突的是皺褶部；平坦部在後並延伸至鋸齒緣。"
+        },
+        {
+          "type": "card",
+          "title": "平坦部的臨床意義",
+          "body": [
+            "> [!big] 平坦部是玻璃體手術可選擇的進入區域。",
+            "[[img]]",
+            "它位於皺褶部與鋸齒緣之間；選擇合適位置有助避開水晶體與視網膜等構造。",
+            "為什麼不能只背距離？實際位置依眼球條件及術式由專業人員評估。",
+            "🧑‍🏫 老師說會考：記得平坦部在手術進入位置的意義。（出處：Sonnet校訂_時間戳.txt（48d3cb30df49）＋00:15:50.840–00:16:04.910）"
+          ],
+          "exam": [
+            "考法：辨識平坦部的臨床用途；陷阱：相對安全不等於任何位置都安全（講義 p.13）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；原作者未標示，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "平坦部位於哪兩個構造之間？",
+          "choices": [
+            "皺褶部與鋸齒緣",
+            "角膜與瞳孔",
+            "視神經與黃斑",
+            "鞏膜棘與角膜內皮"
+          ],
+          "answer": "A",
+          "hint": "先想位置和因果關係。",
+          "explain": "平坦部在皺褶部後方，向後接鋸齒緣。"
+        },
+        {
+          "type": "card",
+          "title": "由外向內看分層",
+          "body": [
+            "> [!big] 睫狀體從外向內可依講義分成五層。",
+            "[[img]]",
+            "睫狀體上板 → 基質 → 色素上皮 → 無色素上皮 → 內界膜。",
+            "為什麼這樣排列？兩層上皮向後分別與視網膜色素上皮及神經視網膜連續。",
+            "基質含肌肉和血管；上皮的分泌與屏障下一課再細讀。",
+            "🧑‍🏫 老師說會考：注意睫狀體各層及其先後。（出處：Sonnet校訂_時間戳.txt（48d3cb30df49）＋00:17:47.590–00:18:30.990）"
+          ],
+          "exam": [
+            "考法：由外向內排序；陷阱：無色素上皮靠內側，非靠鞏膜外側（講義 p.15）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；原作者未標示，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "睫狀體從外向內，上皮兩層的排列為何？",
+          "choices": [
+            "無色素上皮在外、色素上皮在內",
+            "色素上皮在外、無色素上皮在內",
+            "兩層都是肌肉",
+            "兩層都位於鞏膜之外"
+          ],
+          "answer": "B",
+          "hint": "先想位置和因果關係。",
+          "explain": "色素上皮較外，無色素上皮較內。"
+        },
+        {
+          "type": "card",
+          "title": "三種肌纖維的方向",
+          "body": [
+            "> [!big] 睫狀肌是平滑肌，分縱走、放射與環狀纖維。",
+            "[[img]]",
+            "縱走（longitudinal）：由鞏膜棘向後連至脈絡膜上板。",
+            "放射（radial）：斜向，介於兩者之間；環狀（circular）：較內側、接近水晶體。",
+            "為什麼要辨方向？不同排列幫助理解肌肉與鞏膜棘、懸韌帶的關係。",
+            "記法：由外向內「縱、斜、環」。"
+          ],
+          "exam": [
+            "考法：選出不屬於三種分類者；陷阱：軸向不是本題所列分類（106 師特 1）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；原作者未標示，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列哪一種不是睫狀肌常用的三組纖維分類？",
+          "choices": [
+            "軸向",
+            "縱走",
+            "放射",
+            "環狀"
+          ],
+          "answer": "A",
+          "hint": "先辨認構造或動作的方向，再推下一步。",
+          "explain": "三組是縱走、放射與環狀；軸向不是這題所列的分類。"
+        },
+        {
+          "type": "card",
+          "title": "拉力與水晶體形狀",
+          "body": [
+            "> [!big] 懸韌帶的張力改變，會影響有彈性的水晶體形狀。",
+            "[[img]]",
+            "睫狀突與懸韌帶相連；懸韌帶連到水晶體。",
+            "為什麼帶鬆會變凸？拉力減少後，水晶體靠自身彈性回復較凸的形狀。",
+            "老師用肌肉兩側靠近、中央韌帶變鬆來解釋（Sonnet校訂_時間戳.txt（48d3cb30df49）＋00:23:06.880–00:23:19.880）。"
+          ],
+          "exam": [
+            "考法：區分肌肉與韌帶；陷阱：懸韌帶不是會主動收縮的肌肉（111 師高 11）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；原作者未標示，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "懸韌帶張力下降後，水晶體為何通常較凸？",
+          "choices": [
+            "韌帶主動收縮推擠水晶體",
+            "水晶體自身彈性使其回復較凸",
+            "水晶體充滿房水",
+            "角膜向後拉動水晶體"
+          ],
+          "answer": "B",
+          "hint": "先想位置和因果關係。",
+          "explain": "向外拉力減少，水晶體依自身彈性變凸。"
+        },
+        {
+          "type": "card",
+          "title": "看近：肌縮、帶鬆、晶凸",
+          "body": [
+            "> [!big] 睫狀肌收縮，懸韌帶張力下降，水晶體變凸。",
+            "[[img]]",
+            "::: flow",
+            "近視物 → 睫狀肌收縮",
+            "睫狀環向內 → 懸韌帶張力下降",
+            "水晶體彈性回復 → 較凸、屈光力增加",
+            ":::",
+            "為什麼環狀肌重要？環縮小，懸韌帶受到的向外拉力減少。"
+          ],
+          "exam": [
+            "考法：由肌肉推導水晶體；陷阱：肌肉收縮不等於懸韌帶收縮（111 師高 11）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；原作者未標示，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "看近物時，睫狀肌收縮後，懸韌帶與水晶體通常如何變化？",
+          "choices": [
+            "懸韌帶張力下降，水晶體變凸",
+            "懸韌帶拉緊，水晶體變扁",
+            "懸韌帶變成肌肉並主動收縮",
+            "水晶體立刻失去全部屈光力"
+          ],
+          "answer": "A",
+          "hint": "先辨認構造或動作的方向，再推下一步。",
+          "explain": "睫狀肌收縮使懸韌帶張力下降，水晶體依自身彈性變凸。"
+        },
+        {
+          "type": "card",
+          "title": "看遠：反方向",
+          "body": [
+            "> [!big] 從近轉遠時，睫狀肌放鬆、懸韌帶較緊，水晶體較扁。",
+            "[[img]]",
+            "記法：肌鬆 → 帶緊 → 晶扁。",
+            "為什麼較扁？向外的懸韌帶張力增加，拉平有彈性的水晶體。",
+            "這是相對變化，並非水晶體完全變成平面。"
+          ],
+          "exam": [
+            "考法：近遠比較；陷阱：不要把看近的肌肉收縮套到看遠（111 生普 9）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；原作者未標示，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "從近處改看遠處時，睫狀肌與懸韌帶的變化何者正確？",
+          "choices": [
+            "睫狀肌較放鬆，懸韌帶張力增加",
+            "睫狀肌更收縮，懸韌帶更鬆",
+            "睫狀肌與懸韌帶都主動收縮",
+            "水晶體必定變成平面"
+          ],
+          "answer": "A",
+          "hint": "先辨認構造或動作的方向，再推下一步。",
+          "explain": "遠視時睫狀肌相對放鬆，懸韌帶拉力增加，使水晶體較扁。"
+        },
+        {
+          "type": "card",
+          "title": "同一肌肉也影響排水",
+          "body": [
+            "> [!big] 睫狀肌收縮可牽動鞏膜棘，促進小樑途徑流出。",
+            "[[img]]",
+            "縱走纖維與鞏膜棘相連；收縮可牽動小樑網。",
+            "為什麼房水較易排出？小樑組織受牽拉後，流出阻力可下降。",
+            "🧑‍🏫 老師強調：調節與房水排出都和睫狀肌有關。（出處：Sonnet校訂_時間戳.txt（48d3cb30df49）＋00:20:45.760–00:21:19.760）"
+          ],
+          "exam": [
+            "考法：將肌肉作用連到小樑網；陷阱：不要誤認這是在製造房水。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；原作者未標示，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "睫狀肌收縮如何影響小樑途徑？",
+          "choices": [
+            "牽動鞏膜棘與小樑網，有助房水流出",
+            "關閉所有房水流出通道",
+            "讓角膜分泌房水",
+            "使許萊姆氏管移入後房"
+          ],
+          "answer": "A",
+          "hint": "先想位置和因果關係。",
+          "explain": "睫狀肌可牽動鞏膜棘與小樑網，降低流出阻力。"
+        },
+        {
+          "type": "card",
+          "title": "神經傳遞收縮指令",
+          "body": [
+            "> [!big] 副交感纖維經睫狀神經節與短睫狀神經支配睫狀肌。",
+            "[[img]]",
+            "動眼神經 → 睫狀神經節換元 → 短睫狀神經 → 睫狀肌。",
+            "為什麼先記換元站？神經節後纖維才沿短睫狀神經抵達肌肉。"
+          ],
+          "exam": [
+            "考法：判斷副交感的路徑；陷阱：短睫狀神經是路線，睫狀神經節才是換元站（講義 p.16）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；原作者未標示，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "副交感纖維到睫狀肌前，在哪裡換元？",
+          "choices": [
+            "睫狀神經節",
+            "視神經乳頭",
+            "許萊姆氏管",
+            "上頸神經節"
+          ],
+          "answer": "A",
+          "hint": "先想位置和因果關係。",
+          "explain": "節前纖維在睫狀神經節換元，節後纖維經短睫狀神經抵達睫狀肌。"
+        },
+        {
+          "type": "card",
+          "title": "血管供應工作中的組織",
+          "body": [
+            "> [!big] 長後睫狀動脈與前睫狀動脈參與虹膜及睫狀體供血。",
+            "[[img]]",
+            "兩者吻合形成虹膜大動脈環，分支供應鄰近組織。",
+            "為什麼需要血供？肌肉與上皮需要氧和營養；睫狀突血管也提供房水生成的原料。",
+            "老師連回前面學過的血管路徑（Sonnet校訂_時間戳.txt（48d3cb30df49）＋00:21:49.040–00:22:27.520）。"
+          ],
+          "exam": [
+            "考法：主要供血來源；陷阱：勿選中央視網膜動脈或渦靜脈（110 生普 15）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；原作者未標示，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "虹膜與睫狀體的主要血供，何者正確？",
+          "choices": [
+            "後長睫狀動脈與前睫狀動脈參與供血",
+            "只靠中央視網膜動脈",
+            "完全沒有血管",
+            "只靠淚腺動脈"
+          ],
+          "answer": "A",
+          "hint": "先辨認構造或動作的方向，再推下一步。",
+          "explain": "後長睫狀動脈與前睫狀動脈形成虹膜大動脈環，供應虹膜與睫狀體。"
+        },
+        {
+          "type": "practice",
+          "title": "國考實戰：睫狀體的位置與調節",
+          "qids": [
+            "eye115-exam-ans-reflex-106-101",
+            "eye115-exam-ans-reflex-111-11",
+            "eye115-exam-blood-ciliary-110-215",
+            "eye115-aqueous-108-vs-13"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "前皺後平；皺褶部有分泌房水的睫狀突。",
+            "看近：肌縮→帶鬆→晶凸；看遠相反。",
+            "睫狀肌為副交感支配，後長與前睫狀動脈參與供血。"
+          ],
+          "flash": [
+            {
+              "front": "看近物時，睫狀肌和懸韌帶怎麼變？",
+              "back": "睫狀肌收縮，懸韌帶張力下降，水晶體變凸。"
+            }
+          ],
+          "next": "完成！"
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "title": "睫狀上皮與房水怎麼形成",
+      "goals": [
+        "分辨 PE、NPE 與血房水屏障",
+        "用離子及水移動解釋三種房水形成機轉與藥物"
+      ],
+      "teaches": [
+        "房水形成與排出"
+      ],
+      "pace": "free",
+      "steps": [
+        {
+          "type": "intro",
+          "title": "從血漿原料到後房",
+          "body": [
+            "先找睫狀突，再認兩層上皮的方向，最後追離子、水與藥物作用。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "原料從哪裡來？",
+          "body": [
+            "> [!big] 血漿提供原料，睫狀突上皮再選擇性製造房水。",
+            "[[img]]",
+            "睫狀突位於皺褶部（pars plicata），基質有豐富的有窗孔毛細血管。生成速率約 2～2.5 μL/min；房水存在前房與後房。",
+            "為什麼不是血漿直接變房水？原料通過血管後，仍要經上皮選擇與運送，所以組成不完全相同。",
+            "🧑‍🏫 老師說會考：房水與血漿的成分差異常考。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:07:15.450）"
+          ],
+          "exam": [
+            "考法：109 師高 11 比較性質；112 生普 8 問來源。陷阱：平坦部、角膜都不是主要生成處。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；講義未標明原始作者，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "睫狀突的毛細血管有窗孔，為什麼房水不等於原封不動的血漿？",
+          "choices": [
+            "上皮仍會選擇並運送物質",
+            "所有血漿蛋白都直接進入後房",
+            "角膜直接把血液變成房水",
+            "房水完全沒有水"
+          ],
+          "answer": "A",
+          "hint": "先回想剛才的方向與因果。",
+          "explain": "血管提供原料，上皮屏障和運輸改變進入後房的組成。"
+        },
+        {
+          "type": "card",
+          "title": "由血管走向後房",
+          "body": [
+            "> [!big] 基質 → PE → NPE → 後房，兩層上皮頂端互相面對。",
+            "[[img]]",
+            "::: flow",
+            "睫狀突血管與基質",
+            "色素上皮 PE（靠基質）",
+            "無色素上皮 NPE（靠後房）",
+            "後房 → 瞳孔 → 前房",
+            ":::",
+            "為什麼先認方向？才能定位分泌面與屏障；圖示為睫狀體位置圖，微觀層次請依文字流程判讀。",
+            "口訣：外色、內無色；前皺有突做房水。"
+          ],
+          "exam": [
+            "考法：112 生普 8、108 生特 8；陷阱：皺褶部製造，平坦部不作主要分泌。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；講義未標明原始作者，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "從睫狀突基質往後房看，兩層睫狀上皮的順序為何？",
+          "choices": [
+            "色素上皮 PE → 無色素上皮 NPE",
+            "NPE → PE",
+            "角膜內皮 → PE",
+            "視網膜 → 鞏膜"
+          ],
+          "answer": "A",
+          "hint": "想想物質從血液到後房要通過哪些構造。",
+          "explain": "PE 靠近基質，NPE 靠近後房；兩層上皮的頂端彼此相對。"
+        },
+        {
+          "type": "card",
+          "title": "一對搭檔的接面",
+          "body": [
+            "> [!big] PE 與 NPE 頂端相對，兩層可藉間隙連結協同運輸。",
+            "[[img]]",
+            "PE 與 NPE 分別是色素與無色素睫狀上皮；NPE 面向後房。向後 PE 接視網膜色素上皮，NPE 接神經視網膜。",
+            "為什麼需要連通？兩層合作，讓物質由基質側轉送到房水側。",
+            "🧑‍🏫 老師強調：間隙連結幫助細胞間物質流通。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:30:49.610）"
+          ],
+          "exam": [
+            "考法：辨別雙層接面與屏障位置；陷阱：間隙連結與緊密連結功能不同（講義 p.20–24）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；講義未標明原始作者，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "PE 與 NPE 之間的間隙連結有助於什麼？",
+          "choices": [
+            "讓兩層細胞交換物質",
+            "形成角膜最外層",
+            "直接把後房封成沒有水的空間",
+            "使瞳孔消失"
+          ],
+          "answer": "A",
+          "hint": "先回想剛才的方向與因果。",
+          "explain": "兩層可透過間隙連結協作；相鄰 NPE 緊密連結則限制細胞間通過。"
+        },
+        {
+          "type": "card",
+          "title": "選擇性屏障",
+          "body": [
+            "> [!big] 相鄰 NPE 的緊密連結限制物質從細胞間隙穿過。",
+            "[[img]]",
+            "為什麼房水蛋白質遠少於血漿？血管雖有窗孔，物質還要通過有選擇性的上皮屏障。",
+            "屏障並非完全不透；分子能否通過仍與大小及性質有關。",
+            "講義 p.28 與 p.23、38、41 對連結位置不一致；此處沿用後者及既有文獻核對，待向老師確認。"
+          ],
+          "exam": [
+            "考法：109 師高 11 的血漿比較；陷阱：有窗孔不等於血漿可直接流入後房。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；講義未標明原始作者，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "睫狀體血房水屏障的主要緊密連結，位於何處？",
+          "choices": [
+            "相鄰無色素上皮 NPE 細胞之間",
+            "PE 與 NPE 兩層的每一接面",
+            "有窗孔的睫狀突微血管窗孔內",
+            "角膜表面的淚膜內"
+          ],
+          "answer": "A",
+          "hint": "想想物質從血液到後房要通過哪些構造。",
+          "explain": "相鄰 NPE 細胞的緊密連結限制旁細胞通道；PE 與 NPE 頂端相接，但不要把它與 NPE 間緊密連結混為一談。"
+        },
+        {
+          "type": "card",
+          "title": "三種機制先抓大方向",
+          "body": [
+            "> [!big] 主動分泌是主要機制；超濾與擴散也參與提供原料。",
+            "[[img]]",
+            "::: cols o b",
+            "### 主動分泌",
+            "離子運輸需要能量，水跟隨",
+            "|||",
+            "### 被動過程",
+            "超濾看壓差；擴散看濃度差",
+            ":::",
+            "為什麼分成三種？它們的驅動力不同，但可先後合作，不是三條互不相干的水管。",
+            "講義估計 70／20／10 是教學約數，並非人人固定比例。"
+          ],
+          "exam": [
+            "考法：辨認主要機轉；陷阱：水跟隨是被動，不代表整個分泌過程無需能量（講義 p.31）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；講義未標明原始作者，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "依講義的房水形成比例，哪一項是主要機轉？",
+          "choices": [
+            "主動分泌，約 70%",
+            "超濾，約 70%",
+            "擴散，約 70%",
+            "三者永遠各占三分之一"
+          ],
+          "answer": "A",
+          "hint": "想想物質從血液到後房要通過哪些構造。",
+          "explain": "講義列主動分泌約 70%、超濾約 20%、擴散約 10%；是概略教學比例。"
+        },
+        {
+          "type": "card",
+          "title": "先搬離子，水才跟",
+          "body": [
+            "> [!big] 上皮運送離子形成滲透梯度，水再往後房被動跟隨。",
+            "[[img]]",
+            "::: flow",
+            "血漿原料進基質",
+            "PE 與 NPE 協同運離子",
+            "房水側形成滲透梯度",
+            "水跟隨 → 後房",
+            ":::",
+            "為什麼說主動分泌？建立離子梯度需能量；水順滲透梯度移動本身不由 ATP 幫浦直接打出。",
+            "🧑‍🏫 老師強調：主動運輸要能量與 ATP。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:37:37.540）"
+          ],
+          "exam": [
+            "考法：108 生特 8 問生成於後房；陷阱：不要把離子幫浦當成直接打水的幫浦。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；講義未標明原始作者，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "睫狀上皮建立離子梯度後，水如何進入房水？",
+          "choices": [
+            "沿滲透梯度被動跟隨",
+            "由鈉鉀幫浦直接消耗 ATP 打水",
+            "由水晶體收縮把水吸入",
+            "逆滲透梯度且完全不需其他機制"
+          ],
+          "answer": "A",
+          "hint": "先回想剛才的方向與因果。",
+          "explain": "離子運輸建立梯度，水順滲透梯度移動。"
+        },
+        {
+          "type": "card",
+          "title": "鈉鉀幫浦",
+          "body": [
+            "> [!big] NPE 的 Na⁺/K⁺-ATPase 用 ATP 維持有利於分泌的離子梯度。",
+            "[[img]]",
+            "鈉鉀幫浦把 Na⁺送出細胞、K⁺送入細胞；在 NPE 房水側協助鈉轉運。",
+            "為什麼 NPE 有許多粒線體？運輸需要能量，粒線體提供 ATP。",
+            "老師把多粒線體和需要能量連在一起。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:29:50.590）"
+          ],
+          "exam": [
+            "考法：講義 p.25、32–33；陷阱：消耗 ATP 的是離子運輸，不是直接泵水。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；講義未標明原始作者，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "睫狀上皮 Na⁺/K⁺-ATPase 與房水形成的關係，何者正確？",
+          "choices": [
+            "利用 ATP 維持離子梯度，水再隨滲透梯度移動",
+            "直接以 ATP 將水泵到後房",
+            "讓房水與血漿蛋白濃度完全相等",
+            "只負責讓瞳孔放大"
+          ],
+          "answer": "A",
+          "hint": "想想物質從血液到後房要通過哪些構造。",
+          "explain": "鈉鉀幫浦主動運送離子；水則沿形成的滲透梯度被動跟隨。"
+        },
+        {
+          "type": "card",
+          "title": "碳酸酐酶與藥物",
+          "body": [
+            "> [!big] 碳酸酐酶協助形成 HCO₃⁻；抑制它可減少房水生成。",
+            "[[img]]",
+            "CO₂＋H₂O ⇌ H⁺＋HCO₃⁻；碳酸酐酶加速相關反應。",
+            "為什麼抑制酵素能降生成？HCO₃⁻ 相關離子運輸減少，水跟隨也減少。",
+            "乙醯唑胺 acetazolamide 屬碳酸酐酶抑制劑；老師從 CO₂ 與水連到 HCO₃⁻。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:39:15.300）"
+          ],
+          "exam": [
+            "考法：分「少製造」和「多排出」；陷阱：此藥主要減少生成，非直接疏通小樑（講義 p.32、40）。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；講義未標明原始作者，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "乙醯唑胺 acetazolamide 降低房水生成的主要機制是什麼？",
+          "choices": [
+            "抑制碳酸酐酶，減少相關離子與水的運輸",
+            "直接用手術移除小樑網",
+            "把 NPE 變成角膜上皮",
+            "直接增加淚液蒸發"
+          ],
+          "answer": "A",
+          "hint": "想想物質從血液到後房要通過哪些構造。",
+          "explain": "乙醯唑胺抑制碳酸酐酶，使 HCO₃⁻ 相關運輸及水的移動減少，房水生成下降。"
+        },
+        {
+          "type": "card",
+          "title": "兩種被動推力",
+          "body": [
+            "> [!big] 超濾看壓力差；擴散看濃度差。",
+            "[[img]]",
+            "超濾：毛細血管與周圍的壓力差，推動水與小分子進基質。",
+            "擴散：物質沿濃度梯度移動，例如氧氣或 CO₂。",
+            "為什麼稱被動？不必直接消耗 ATP 把每個分子逆梯度搬運。",
+            "記法：壓推濾，濃差散。"
+          ],
+          "exam": [
+            "考法：講義 p.34–35；陷阱：壓差與濃度差不要互換。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；講義未標明原始作者，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "在睫狀突形成基質液時，哪一組驅動力配對正確？",
+          "choices": [
+            "超濾靠壓力差；擴散靠濃度差",
+            "超濾靠濃度差；擴散靠壓力差",
+            "兩者都靠水晶體主動收縮",
+            "兩者都必須將每個分子逆濃度梯度搬運"
+          ],
+          "answer": "A",
+          "hint": "想想物質從血液到後房要通過哪些構造。",
+          "explain": "超濾由壓力差驅動，擴散依濃度差進行；不要把兩者顛倒。"
+        },
+        {
+          "type": "card",
+          "title": "從生成接到排出",
+          "body": [
+            "> [!big] 睫狀突產生的房水，先到後房，再經瞳孔到前房。",
+            "[[img]]",
+            "前房的主要排水路是小樑網 → 許萊姆氏管；葡萄膜鞏膜途徑也是流出路。",
+            "為什麼要分生成與排出？眼壓受兩者平衡影響，藥物可能作用在不同環節。",
+            "看近時睫狀肌收縮，可牽動小樑網、增加傳統途徑流出。"
+          ],
+          "exam": [
+            "考法：108 生普 33；陷阱：該題把葡萄膜鞏膜途徑說成主要排出途徑是錯的。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；講義未標明原始作者，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "關於房水生成與流出，下列何者正確？",
+          "choices": [
+            "β 阻斷劑可降低房水生成",
+            "葡萄膜鞏膜途徑一定是正常人的唯一流出路徑",
+            "房水先經前房才到後房",
+            "睫狀肌收縮必定讓小樑網流出停止"
+          ],
+          "answer": "A",
+          "hint": "想想物質從血液到後房要通過哪些構造。",
+          "explain": "β 阻斷劑可減少生成；正常房水仍有小樑與葡萄膜鞏膜等流出途徑。"
+        },
+        {
+          "type": "card",
+          "title": "β 阻斷劑放在哪一類？",
+          "body": [
+            "> [!big] β 阻斷劑主要減少房水生成。",
+            "[[img]]",
+            "先分類：乙醯唑胺與 β 阻斷劑皆是「少製造」；小樑或葡萄膜鞏膜流出屬「多排出」方向。",
+            "為什麼能降眼壓？生成量下降可改變生成與流出的平衡。",
+            "🧑‍🏫 老師說會考：注意 beta blocker 的抑制作用。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:48:35.350）"
+          ],
+          "exam": [
+            "考法：108 生普 33；陷阱：阻斷劑不是 β 促效劑，減少生成不等於直接打開排水管。"
+          ],
+          "img": "img/eye-anat-fig/aqueous-ciliary-lecture-p14.png",
+          "img_source": "課堂講義 aqueous and ciliary body (2026) v2，第 14 頁原圖；講義未標明原始作者，課堂學習使用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列哪個配對最能區分少製造與多排出？",
+          "choices": [
+            "β 阻斷劑減少生成；睫狀肌收縮可增加小樑流出",
+            "β 阻斷劑直接移除小樑網；睫狀肌停止流出",
+            "兩者都讓角膜生成房水",
+            "兩者都只作用於玻璃體"
+          ],
+          "answer": "A",
+          "hint": "先回想剛才的方向與因果。",
+          "explain": "β 阻斷劑減少生成；睫狀肌收縮牽動小樑網，增加傳統途徑流出。"
+        },
+        {
+          "type": "practice",
+          "title": "國考實戰：房水生成與流出",
+          "qids": [
+            "eye115-aqueous-108-tn-33",
+            "eye115-aqueous-109-vn-11",
+            "eye115-aqueous-112-tn-8"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "基質→PE→NPE→後房；相鄰 NPE 緊密連結是睫狀上皮屏障。",
+            "主動分泌搬離子、水跟隨；講義估計主動／超濾／擴散約 70／20／10。",
+            "鈉鉀幫浦需要 ATP；乙醯唑胺抑制碳酸酐酶、降低房水生成。"
+          ],
+          "flash": [
+            {
+              "front": "睫狀體血房水屏障的主要緊密連結在哪？",
+              "back": "相鄰的無色素睫狀上皮（NPE）細胞之間。"
+            },
+            {
+              "front": "房水生成的主動分泌，水如何移動？",
+              "back": "上皮運送離子形成滲透梯度，水被動跟隨。"
+            }
+          ],
+          "next": "完成！"
+        }
+      ]
+    },
+    {
+      "id": "l5",
+      "title": "前房隅角與排出",
+      "goals": [
+        "定位隅角地標與小樑網三層",
+        "比較兩條房水流出路徑與流出阻力"
+      ],
+      "teaches": [
+        "房水形成與排出"
+      ],
+      "pace": "free",
+      "steps": [
+        {
+          "type": "intro",
+          "title": "追蹤前房的出口",
+          "body": [
+            "先找前房隅角，再沿兩條排水路走；比較三層小樑與流出阻力。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "先找出口",
+          "body": [
+            "> [!big] 前房周邊的隅角，是角膜與虹膜交會附近的排水區。",
+            "[[img]]",
+            "圖是眼前段整體位置圖；細部三層依後頁文字辨認。",
+            "為什麼要先找周邊？房水經瞳孔進前房後，主要由周邊隅角的小樑網離開。",
+            "🧑‍🏫 老師強調：小樑網是本次房水排出的重點。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:00:44.400）"
+          ],
+          "exam": [
+            "考法：106 生普 15；陷阱：角膜內皮不是主要排水口。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；原圖 CC BY 3.0，詳見專案圖檔來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "房水進入前房後，主要從哪裡離開？",
+          "choices": [
+            "前房隅角的小樑網",
+            "角膜上皮",
+            "視網膜",
+            "水晶體"
+          ],
+          "answer": "A",
+          "hint": "先回想位置與水流方向。",
+          "explain": "傳統路徑由前房周邊小樑網進入許萊姆氏管。"
+        },
+        {
+          "type": "card",
+          "title": "隅角的前後地標",
+          "body": [
+            "> [!big] Schwalbe 線在小樑網前緣，鞏膜棘在後方。",
+            "[[img]]",
+            "Schwalbe 線是角膜 Descemet 膜周邊終止處的地標。",
+            "為什麼要認地標？隅角鏡觀察時可用前後位置定位小樑網；鞏膜棘附近與睫狀肌相連。",
+            "記法：前 Schwalbe、中小樑、後鞏膜棘。",
+            "🧑‍🏫 老師強調：先找前方 Schwalbe 線，再找後方鞏膜棘。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:01:33.600）"
+          ],
+          "exam": [
+            "考法：隅角地標（講義 p.43–53）；陷阱：Schwalbe 線不是排水管。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；原圖 CC BY 3.0，詳見專案圖檔來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "由前往後辨認隅角，哪個順序正確？",
+          "choices": [
+            "鞏膜棘→小樑網→Schwalbe 線",
+            "Schwalbe 線→小樑網→鞏膜棘",
+            "瞳孔→視網膜→角膜",
+            "許萊姆管→水晶體→虹膜"
+          ],
+          "answer": "B",
+          "hint": "先回想位置與水流方向。",
+          "explain": "前方 Schwalbe 線、小樑網、後方鞏膜棘。"
+        },
+        {
+          "type": "card",
+          "title": "小樑網三層",
+          "body": [
+            "> [!big] 從前房向外，依序經葡萄膜、角鞏膜與近管組織。",
+            "[[img]]",
+            "::: flow",
+            "葡萄膜小樑網（uveal meshwork）",
+            "角鞏膜小樑網（corneoscleral meshwork）",
+            "近管組織（juxtacanalicular tissue，JCT）",
+            "許萊姆氏管",
+            ":::",
+            "為什麼這樣記？這是房水由前房走向管腔的方向，不能倒背成水流。",
+            "老師把第一層描述成較大孔隙，往外再進入更緊密的層次。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:05:45.730）"
+          ],
+          "exam": [
+            "考法：小樑網分層（講義 p.43–53）；陷阱：JCT 靠近管，不是最靠前房的層。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；原圖 CC BY 3.0，詳見專案圖檔來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "由前房往許萊姆氏管，三層順序為何？",
+          "choices": [
+            "近管→角鞏膜→葡萄膜",
+            "葡萄膜→角鞏膜→近管",
+            "角鞏膜→葡萄膜→近管",
+            "葡萄膜→近管→角鞏膜"
+          ],
+          "answer": "B",
+          "hint": "先回想位置與水流方向。",
+          "explain": "順序是葡萄膜、角鞏膜、近管組織。"
+        },
+        {
+          "type": "card",
+          "title": "阻力在哪裡？",
+          "body": [
+            "> [!big] 近管組織與許萊姆氏管內壁附近是傳統流出的重要阻力區。",
+            "[[img]]",
+            "葡萄膜小樑網孔隙較大；靠近管的區域對流出阻力尤其重要。",
+            "為什麼隅角看起來開放仍可能出問題？入口開著，不代表內部排水阻力正常。",
+            "老師以「看起來開開的，但是水過不去」提醒區分入口與內部阻力。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:06:21.710）"
+          ],
+          "exam": [
+            "考法：流出阻力（講義 p.43–53）；陷阱：開角不等於流出一定正常。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；原圖 CC BY 3.0，詳見專案圖檔來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "隅角外觀開放，但房水仍排得不順，可能原因是？",
+          "choices": [
+            "傳統排水組織阻力增大",
+            "房水必定完全不再生成",
+            "隅角開放代表阻力一定為零",
+            "房水改成由角膜生成"
+          ],
+          "answer": "A",
+          "hint": "先回想位置與水流方向。",
+          "explain": "隅角外觀與小樑流出阻力是不同層次。"
+        },
+        {
+          "type": "card",
+          "title": "管子接到哪裡？",
+          "body": [
+            "> [!big] 許萊姆氏管接集液管，房水最後流入表層鞏膜靜脈。",
+            "[[img]]",
+            "::: flow",
+            "前房 → 小樑網",
+            "許萊姆氏管（Schlemm canal）",
+            "集液管 → 靜脈網",
+            "表層鞏膜靜脈",
+            ":::",
+            "為什麼需要後段？管內房水仍需經集液通道回到靜脈循環。",
+            "老師提醒先看小樑，再接管與血管。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:00:47.400）"
+          ],
+          "exam": [
+            "考法：106 師特 18、111 生普 8；陷阱：先小樑再許萊姆管。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；原圖 CC BY 3.0，詳見專案圖檔來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "房水走傳統途徑時，通過小樑網後接哪個構造？",
+          "choices": [
+            "瞳孔",
+            "許萊姆氏管",
+            "水晶體",
+            "視神經"
+          ],
+          "answer": "B",
+          "hint": "先回想位置與水流方向。",
+          "explain": "小樑網之後進入許萊姆氏管，再通往靜脈。"
+        },
+        {
+          "type": "card",
+          "title": "另一條路",
+          "body": [
+            "> [!big] 葡萄膜鞏膜途徑經睫狀肌間隙與睫狀體上、脈絡膜上空間流出。",
+            "[[img]]",
+            "{o:傳統途徑}：小樑網 → 許萊姆氏管 → 靜脈。",
+            "{b:葡萄膜鞏膜途徑}：經睫狀肌及周圍組織向後外方流出。",
+            "為什麼分兩路？兩者經過構造不同，許萊姆氏管屬傳統途徑。比例受年齡與狀態影響，不能把數字當固定值。"
+          ],
+          "exam": [
+            "考法：107 生普 10、114 師高 9；陷阱：葡萄膜鞏膜途徑不以許萊姆氏管為主要通道。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；原圖 CC BY 3.0，詳見專案圖檔來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪個配對正確？",
+          "choices": [
+            "葡萄膜鞏膜途徑→許萊姆氏管",
+            "傳統途徑→小樑網及許萊姆氏管",
+            "傳統途徑→視網膜",
+            "葡萄膜鞏膜途徑→角膜上皮"
+          ],
+          "answer": "B",
+          "hint": "先回想位置與水流方向。",
+          "explain": "許萊姆氏管屬小樑傳統途徑；另一條經睫狀肌與周圍組織。"
+        },
+        {
+          "type": "card",
+          "title": "肌肉怎麼影響排水？",
+          "body": [
+            "> [!big] 睫狀肌收縮可牽動鞏膜棘與小樑網，增加傳統途徑流出。",
+            "[[img]]",
+            "看近時睫狀肌收縮；它與鞏膜棘附近的結構相連。",
+            "為什麼流出增加？牽引可改變小樑網排列、降低流出阻力。",
+            "🧑‍🏫 老師強調：肌肉收縮會把小樑網稍微拉開。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:02:04.700）"
+          ],
+          "exam": [
+            "考法：108 生普 33；陷阱：肌肉收縮不等於房水一定不能排出。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；原圖 CC BY 3.0，詳見專案圖檔來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "看近時睫狀肌收縮，對小樑流出有何作用？",
+          "choices": [
+            "牽動小樑網，可增加流出",
+            "封閉所有流出途徑",
+            "使房水先流回後房",
+            "直接生成角膜"
+          ],
+          "answer": "A",
+          "hint": "先回想位置與水流方向。",
+          "explain": "睫狀肌的牽引可增加傳統途徑流出。"
+        },
+        {
+          "type": "practice",
+          "title": "國考實戰：排水路",
+          "qids": [
+            "eye115-aqueous-106-vs-18",
+            "eye115-aqueous-107-tn-10",
+            "eye115-aqueous-111-tn-8",
+            "eye115-aqueous-114-vn-9"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "前房隅角：前 Schwalbe 線、中小樑、後鞏膜棘。",
+            "葡萄膜 → 角鞏膜 → 近管 → 許萊姆氏管 → 靜脈。",
+            "葡萄膜鞏膜是另一條路；睫狀肌收縮可增加傳統流出。"
+          ],
+          "flash": [
+            {
+              "front": "小樑網由前房向外三層的順序？",
+              "back": "葡萄膜小樑網 → 角鞏膜小樑網 → 近管組織。"
+            },
+            {
+              "front": "傳統房水流出路徑經過什麼管？",
+              "back": "小樑網後進入許萊姆氏管，再通往靜脈。"
+            }
+          ],
+          "next": "完成！"
+        }
+      ]
+    },
+    {
+      "id": "l6",
+      "title": "眼壓與青光眼",
+      "goals": [
+        "理解眼壓平衡與青光眼的區別",
+        "比較開角、閉角及瞳孔阻滯"
+      ],
+      "teaches": [
+        "房水功能"
+      ],
+      "pace": "free",
+      "steps": [
+        {
+          "type": "intro",
+          "title": "從水流看眼壓",
+          "body": [
+            "從生成與排出平衡，理解眼壓與兩種隅角狀態。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "眼壓是平衡",
+          "body": [
+            "> [!big] 眼壓取決於房水生成、流出阻力與下游靜脈壓。",
+            "[[img]]",
+            "把眼睛想成有進水和排水的水槽：穩定時生成與排出達到平衡。",
+            "為什麼排出受阻會升壓？水仍持續生成，壓力上升直到流出與生成重新平衡。"
+          ],
+          "exam": [
+            "113 生普 10：排出受阻可使眼壓升高；陷阱：房水不是角膜生成。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "房水生成不變，傳統流出阻力增加時，眼壓可能如何變化？",
+          "choices": [
+            "上升",
+            "必定下降",
+            "必定不變",
+            "降至零"
+          ],
+          "answer": "A",
+          "hint": "回想本頁的因果關係。",
+          "explain": "排出較困難，壓力通常上升，直到生成與流出重新平衡。"
+        },
+        {
+          "type": "card",
+          "title": "靜脈壓的角色",
+          "body": [
+            "> [!big] 表層鞏膜靜脈壓是傳統排水路下游的壓力。",
+            "[[img]]",
+            "房水經小樑網與許萊姆氏管，最後流入靜脈。",
+            "為什麼下游壓力重要？下游壓力上升會減小相同眼壓下的壓差，使流出較困難。",
+            "老師把生成、排出與靜脈壓一起看成平衡。（854a2e4ba722／Sonnet校訂_時間戳.txt 00:21:47.890）"
+          ],
+          "exam": [
+            "考法：辨識影響眼壓的因素；陷阱：不可把靜脈壓當作所有情況的絕對眼壓下限。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "表層鞏膜靜脈壓上升時，其他條件不變，傳統途徑的流出有何趨勢？",
+          "choices": [
+            "更容易",
+            "較困難",
+            "完全不受影響",
+            "改由角膜排出"
+          ],
+          "answer": "B",
+          "hint": "回想本頁的因果關係。",
+          "explain": "下游壓力上升，流出的壓力差減小。"
+        },
+        {
+          "type": "card",
+          "title": "常用眼壓範圍",
+          "body": [
+            "> [!big] 常用正常眼壓參考範圍約 10–21 mmHg。",
+            "[[img]]",
+            "這是族群參考範圍，不是診斷青光眼的唯一界線。",
+            "為什麼不能只看數字？高眼壓可能沒有青光眼損傷；眼壓在參考範圍內仍可能有青光眼。",
+            "🧑‍🏫 老師說會考：記得正常眼壓約 10–21 mmHg。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:21:57.290）"
+          ],
+          "exam": [
+            "考法：10–21 mmHg；陷阱：高眼壓不等於一定是青光眼。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "眼壓超過參考範圍，是否足以單獨確診青光眼？",
+          "choices": [
+            "足以",
+            "不足，還須評估視神經及視野等",
+            "只看年齡即可",
+            "代表隅角必定閉鎖"
+          ],
+          "answer": "B",
+          "hint": "回想本頁的因果關係。",
+          "explain": "眼壓是風險與評估因素之一，不能單憑數值確診。"
+        },
+        {
+          "type": "card",
+          "title": "青光眼傷害什麼",
+          "body": [
+            "> [!big] 青光眼以視神經損傷及相應視野缺損為核心。",
+            "[[img]]",
+            "視神經將視網膜訊息送往腦部；受損可能造成視野缺失。",
+            "為什麼高眼壓不等於青光眼？壓力與神經損傷不是同一個測量結果，需一起評估。"
+          ],
+          "exam": [
+            "考法：高眼壓與青光眼的區別；陷阱：沒有症狀不代表沒有損傷。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。"
+        },
+        {
+          "type": "card",
+          "title": "開角：入口開，排水仍可能不順",
+          "body": [
+            "> [!big] 開角時隅角可見開放，但小樑排水阻力仍可能升高。",
+            "[[img]]",
+            "老師用「看起來開著，水還是過不去」說明入口與內部通道的差別。（854a2e4ba722／Sonnet校訂_時間戳.txt 00:06:21.710）",
+            "為什麼眼壓可能上升？流出阻力增大，房水不容易經傳統途徑離開。"
+          ],
+          "exam": [
+            "考法：開角與流出阻力；陷阱：隅角開放不代表排水正常。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "隅角鏡顯示隅角開放，卻有小樑流出阻力增加，最符合哪個理解？",
+          "choices": [
+            "入口開放仍可能排水不良",
+            "必定沒有青光眼",
+            "虹膜一定堵住小樑",
+            "房水停止生成"
+          ],
+          "answer": "A",
+          "hint": "回想本頁的因果關係。",
+          "explain": "隅角外觀與通道流出功能是不同問題。"
+        },
+        {
+          "type": "card",
+          "title": "閉角：虹膜擋住入口",
+          "body": [
+            "> [!big] 閉角是周邊虹膜遮擋小樑網，使房水較難接觸排水入口。",
+            "[[img]]",
+            "對照記法：{o:開角＝入口開、內阻可能高}；{b:閉角＝入口被虹膜遮住}。",
+            "為什麼阻擋會影響眼壓？傳統途徑的入口被遮蔽，房水流出可下降。"
+          ],
+          "exam": [
+            "考法：開角／閉角對照；陷阱：閉角不一定都是急性發作。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "閉角機轉中，直接遮擋小樑網入口的構造是？",
+          "choices": [
+            "周邊虹膜",
+            "視網膜",
+            "視神經",
+            "角膜上皮"
+          ],
+          "answer": "A",
+          "hint": "回想本頁的因果關係。",
+          "explain": "周邊虹膜與隅角接觸可遮住小樑網。"
+        },
+        {
+          "type": "card",
+          "title": "瞳孔阻滯：前後壓差",
+          "body": [
+            "> [!big] 瞳孔阻滯使後房房水較難通過瞳孔到前房。",
+            "[[img]]",
+            "::: flow",
+            "後房通過瞳孔受阻",
+            "後房相對前房壓力增加",
+            "虹膜向前膨隆",
+            "周邊虹膜可遮擋小樑網",
+            ":::",
+            "為什麼虹膜會前凸？前後房壓差推動虹膜向壓力較低的前房。",
+            "老師以水過不去、後方壓力把虹膜往前推解釋。（854a2e4ba722／Sonnet校訂_時間戳.txt 00:27:48.860）"
+          ],
+          "exam": [
+            "考法：瞳孔阻滯的因果順序；陷阱：不是房水從前房流回後房造成。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "瞳孔阻滯引起虹膜前凸的主要原因是？",
+          "choices": [
+            "後房相對前房壓力增加",
+            "前房壓力必定較高",
+            "視神經牽拉虹膜",
+            "角膜產生房水"
+          ],
+          "answer": "A",
+          "hint": "回想本頁的因果關係。",
+          "explain": "房水較難通過瞳孔，後房相對壓力升高可推虹膜前凸。"
+        },
+        {
+          "type": "card",
+          "title": "雷射虹膜切開術",
+          "body": [
+            "> [!big] 周邊虹膜開口可讓房水繞過瞳孔阻滯。",
+            "[[img]]",
+            "老師用「打一個洞讓水過來」說明兩房壓差減少。（854a2e4ba722／Sonnet校訂_時間戳.txt 00:29:42.140）",
+            "為什麼可能打開隅角？壓差減少後虹膜前凸可緩解；效果取決於閉角機轉。"
+          ],
+          "exam": [
+            "考法：瞳孔阻滯與虹膜切開；陷阱：並非所有閉角都只由瞳孔阻滯造成。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "虹膜切開術對瞳孔阻滯的主要目的為何？",
+          "choices": [
+            "提供前後房間替代通道",
+            "直接切除水晶體",
+            "使視神經再生",
+            "停止所有房水生成"
+          ],
+          "answer": "A",
+          "hint": "回想本頁的因果關係。",
+          "explain": "開口提供房水通路，減少前後房壓差。"
+        },
+        {
+          "type": "practice",
+          "title": "國考實戰：眼壓與房水",
+          "qids": [
+            "eye115-aqueous-113-tn-10"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "眼壓由生成、流出阻力與下游靜脈壓共同影響。",
+            "開角看入口與內阻；閉角看周邊虹膜遮擋。",
+            "瞳孔阻滯→後房相對壓升→虹膜前凸→可能閉角。"
+          ],
+          "flash": [
+            {
+              "front": "隅角開放為何仍可能排水不良？",
+              "back": "小樑等流出組織的阻力仍可能增加。"
+            },
+            {
+              "front": "瞳孔阻滯如何促成閉角？",
+              "back": "後房相對壓升使虹膜前凸，周邊虹膜可遮擋小樑網。"
+            }
+          ],
+          "next": "完成！"
+        }
+      ]
+    },
+    {
+      "id": "l7",
+      "title": "降眼壓藥物",
+      "goals": [
+        "分辨減少房水生成與增加流出的藥物",
+        "連結睫狀肌、瞳孔阻滯與藥物作用"
+      ],
+      "teaches": [
+        "房水形成與排出"
+      ],
+      "pace": "free",
+      "steps": [
+        {
+          "type": "intro",
+          "title": "先想水從哪裡來、從哪裡走",
+          "body": [
+            "把藥物放進房水的水路：減少製造，或增加排出。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "先看兩個把手",
+          "body": [
+            "> [!big] 降眼壓可以少製造，也可以增加流出。",
+            "[[img]]",
+            "睫狀突製造房水→後房→瞳孔→前房→排出。",
+            "為什麼兩邊都能降壓？減少進水或改善排水，都可能降低達成平衡所需的眼壓。",
+            "流入大於流出時眼壓可上升；常用正常參考範圍約 10–21 mmHg，不能單靠眼壓診斷青光眼。",
+            "{o:少製造}：β 阻斷劑、碳酸酐酶抑制劑、α₂ 促效劑。",
+            "{b:多排出}：前列腺素類、毛果芸香鹼；各自走的路不同。"
+          ],
+          "exam": [
+            "107 師特 14 A–C：生成與排出平衡、10–21 mmHg、流入大於流出時眼壓升高；108 生普 33、34：β 阻斷劑減少生成，藥物治療以降眼壓為目標。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。此圖供前後房定位，不顯示藥物作用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列哪一組是主要減少房水生成的藥物？",
+          "choices": [
+            "β 阻斷劑與碳酸酐酶抑制劑",
+            "前列腺素類與毛果芸香鹼",
+            "僅靠虹膜切開術",
+            "人工淚液"
+          ],
+          "answer": "A",
+          "hint": "先判斷作用的位置和方向。",
+          "explain": "β 阻斷劑與碳酸酐酶抑制劑減少生成；後兩種藥物主要促進流出。"
+        },
+        {
+          "type": "card",
+          "title": "β 阻斷劑：減少進水",
+          "body": [
+            "> [!big] Timolol 是減少房水生成的 β 阻斷劑。",
+            "[[img]]",
+            "β 受器位於睫狀上皮；阻斷訊號後，房水生成減少。",
+            "為什麼眼壓會降低？排出條件不變時，進水變少，平衡眼壓可下降。",
+            "老師解國考題時用 blocker「阻斷」辨識減少生成。（854a2e4ba722／Sonnet校訂_時間戳.txt 00:32:36.060）"
+          ],
+          "exam": [
+            "108 生普 33 C：β 阻斷劑抑制房水產生；陷阱：不是主要靠拉開小樑網。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。此圖供前後房定位，不顯示藥物作用。"
+        },
+        {
+          "type": "card",
+          "title": "碳酸酐酶：供應離子運輸",
+          "body": [
+            "> [!big] 抑制碳酸酐酶，房水生成會減少。",
+            "[[img]]",
+            "碳酸酐酶（carbonic anhydrase）協助產生碳酸氫根 HCO₃⁻。",
+            "為什麼影響房水？碳酸氫根參與睫狀上皮的離子運輸，水隨滲透作用移動。",
+            "碳酸酐酶抑制劑（CAI）例：acetazolamide、dorzolamide。",
+            "老師先講酵素提供碳酸氫根，再連到房水生成。（48d3cb30df49／Sonnet校訂_時間戳.txt 00:39:15.300）"
+          ],
+          "exam": [
+            "考法：CAI 對生成的作用；陷阱：不是讓小樑網直接張開。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。此圖供前後房定位，不顯示藥物作用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Acetazolamide 降低眼壓的主要方向是？",
+          "choices": [
+            "促進瞳孔散大",
+            "抑制碳酸酐酶、減少房水生成",
+            "直接讓虹膜出現孔洞",
+            "增加房水生成"
+          ],
+          "answer": "B",
+          "hint": "先判斷作用的位置和方向。",
+          "explain": "抑制碳酸酐酶後，參與分泌的碳酸氫根供應減少。"
+        },
+        {
+          "type": "card",
+          "title": "α₂ 促效劑：減少生成",
+          "body": [
+            "> [!big] Brimonidine 活化 α₂ 受器，可減少房水生成。",
+            "[[img]]",
+            "促效劑（agonist）是活化受器；阻斷劑（blocker）是阻止受器訊號。",
+            "為什麼會少製造？α₂ 訊號可降低睫狀上皮 cAMP，減少房水分泌。",
+            "部分 α₂ 藥物也可增加葡萄膜鞏膜流出；分類時先記少製造。"
+          ],
+          "exam": [
+            "考法：brimonidine 與 α₂；陷阱：促效劑不一定增加房水生成。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。此圖供前後房定位，不顯示藥物作用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Brimonidine 是 α₂ 促效劑，對房水生成的主要作用為何？",
+          "choices": [
+            "增加生成",
+            "減少生成",
+            "完全停止房水流動",
+            "只能造成瞳孔散大"
+          ],
+          "answer": "B",
+          "hint": "先判斷作用的位置和方向。",
+          "explain": "α₂ 受器被活化後可減少睫狀上皮的房水生成，部分藥物另有流出作用。"
+        },
+        {
+          "type": "card",
+          "title": "前列腺素：走另一條出口",
+          "body": [
+            "> [!big] 前列腺素類主要增加葡萄膜鞏膜流出。",
+            "[[img]]",
+            "例：latanoprost（拉坦前列素）。房水經睫狀肌間隙等組織流向鞏膜上腔。",
+            "為什麼能降壓？這條非傳統途徑的流出增加，房水更容易離開眼內。",
+            "🧑‍🏫 老師說會考：前列腺素藥物要記，會促進另一條路徑排出。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:15:58.420–00:16:27.420）"
+          ],
+          "exam": [
+            "講義 p.62；陷阱：不是把小樑途徑當成葡萄膜鞏膜途徑。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。此圖供前後房定位，不顯示藥物作用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "Latanoprost 的主要降壓方向為何？",
+          "choices": [
+            "抑制碳酸酐酶",
+            "增加葡萄膜鞏膜流出",
+            "堵住小樑網",
+            "增加房水生成"
+          ],
+          "answer": "B",
+          "hint": "先判斷作用的位置和方向。",
+          "explain": "前列腺素類主要增加葡萄膜鞏膜途徑流出。"
+        },
+        {
+          "type": "card",
+          "title": "毛果芸香鹼：牽開小樑",
+          "body": [
+            "> [!big] Pilocarpine 活化蕈毒鹼受器，使睫狀肌收縮。",
+            "[[img]]",
+            "::: flow",
+            "睫狀肌收縮",
+            "牽拉鞏膜棘與小樑組織",
+            "小樑途徑流出增加",
+            ":::",
+            "為什麼不是升壓？肌肉的牽引可使流出通道較通暢；不要把肌肉收縮誤當小樑孔縮小。",
+            "老師用睫狀肌拉開小樑來解題。（854a2e4ba722／Sonnet校訂_時間戳.txt 00:33:05.240）"
+          ],
+          "exam": [
+            "107 師特 14 D、108 生普 33 D：肌肉收縮增加小樑流出，不是使小樑孔縮小而升壓。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。此圖供前後房定位，不顯示藥物作用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "毛果芸香鹼促進小樑流出的主要連鎖是？",
+          "choices": [
+            "睫狀肌放鬆→小樑牽開",
+            "睫狀肌收縮→牽拉小樑組織→流出增加",
+            "抑制碳酸酐酶→房水增加",
+            "虹膜生成房水→流出增加"
+          ],
+          "answer": "B",
+          "hint": "先判斷作用的位置和方向。",
+          "explain": "蕈毒鹼受器活化促使睫狀肌收縮，牽拉小樑組織，增加傳統途徑流出。"
+        },
+        {
+          "type": "card",
+          "title": "同一藥還會縮瞳",
+          "body": [
+            "> [!big] 毛果芸香鹼也刺激瞳孔括約肌，造成縮瞳。",
+            "[[img]]",
+            "為什麼和隅角有關？在部分瞳孔阻滯性閉角情況，縮瞳可能協助周邊虹膜離開小樑入口；效果依機轉與眼部狀況而異。",
+            "老師分享自己點藥後瞳孔縮小、眼睛脹痛、看東西變小的經驗；這是個人經驗，不代表每人相同。（854a2e4ba722／Sonnet校訂_時間戳.txt 00:19:49.290）",
+            "🧑‍🏫 老師強調：要知道 pilocarpine。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:20:18.410）"
+          ],
+          "exam": [
+            "113 生普 32：急性閉角的首選藥不是阿托平；陷阱：縮瞳藥不保證解除所有閉角。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。此圖供前後房定位，不顯示藥物作用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪個藥物與縮瞳及睫狀肌收縮較相符？",
+          "choices": [
+            "Atropine",
+            "Pilocarpine",
+            "Timolol",
+            "Acetazolamide"
+          ],
+          "answer": "B",
+          "hint": "先判斷作用的位置和方向。",
+          "explain": "Pilocarpine 活化蕈毒鹼受器，可使括約肌與睫狀肌收縮；atropine 則阻斷蕈毒鹼受器。"
+        },
+        {
+          "type": "card",
+          "title": "閉角治療要看阻滯位置",
+          "body": [
+            "> [!big] 瞳孔阻滯可以用虹膜切開建立替代通路。",
+            "[[img]]",
+            "後房房水過瞳孔困難→後房相對壓力增加→虹膜前凸，可遮住小樑入口。",
+            "為什麼開孔有用？房水可繞過瞳孔通過虹膜開口，減輕前後房壓差。",
+            "急性發作需眼科緊急處理；穩定眼壓、雷射與水晶體處置由眼科依個案決定，也要評估另一眼風險。",
+            "阿托平造成散瞳，不是瞳孔阻滯性急性閉角的首選藥。"
+          ],
+          "exam": [
+            "113 生普 32：題目以虹膜切開、對側預防及白內障因素為正確，阿托平首選為陷阱；對側處置需個別評估。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。此圖供前後房定位，不顯示藥物作用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "瞳孔阻滯時，雷射周邊虹膜切開主要提供什麼？",
+          "choices": [
+            "房水繞過瞳孔的前後房通路",
+            "切除睫狀體的通道",
+            "恢復視神經的手術",
+            "讓房水停止生成的通道"
+          ],
+          "answer": "A",
+          "hint": "先判斷作用的位置和方向。",
+          "explain": "虹膜開口提供替代通道，可減少前後房壓差；其他閉角機轉未必因此解除。"
+        },
+        {
+          "type": "card",
+          "title": "最後用方向整理",
+          "body": [
+            "> [!big] 記法：β、碳、α 少製造；前列走葡萄，毛果拉小樑。",
+            "[[img]]",
+            "{o:少製造}：timolol、acetazolamide、brimonidine。",
+            "{b:多排出}：latanoprost→葡萄膜鞏膜；pilocarpine→小樑。",
+            "為什麼不能只背「排出」？兩種藥促進的主要途徑不同，小樑與葡萄膜鞏膜要分清楚。",
+            "青光眼藥物有點眼、口服及注射等形式，依藥物和病情選用。"
+          ],
+          "exam": [
+            "108 生普 33、34：辨識生成與流出，以及藥物治療目的；陷阱：不把促視神經再生當作主要目的。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖；CC BY 3.0，詳見專案來源紀錄。此圖供前後房定位，不顯示藥物作用。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪一組「藥物→主要作用」配對正確？",
+          "choices": [
+            "Timolol→增加葡萄膜鞏膜流出",
+            "Latanoprost→減少房水生成",
+            "Pilocarpine→增加小樑流出",
+            "Acetazolamide→直接牽開小樑"
+          ],
+          "answer": "C",
+          "hint": "先判斷作用的位置和方向。",
+          "explain": "毛果芸香鹼使睫狀肌收縮、牽拉小樑組織；其他配對方向錯置。"
+        },
+        {
+          "type": "practice",
+          "title": "國考實戰：生成與排出",
+          "qids": [
+            "eye115-aqueous-108-tn-33"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "少製造：β 阻斷、碳酸酐酶抑制、α₂ 促效。",
+            "多排出：前列腺素類增加葡萄膜鞏膜流出；毛果芸香鹼促進小樑流出。",
+            "瞳孔阻滯的雷射虹膜切開提供替代水路，治療需依個案判斷。"
+          ],
+          "flash": [
+            {
+              "front": "前列腺素類和 pilocarpine 分別主要增加哪條流出路？",
+              "back": "前列腺素類主要增加葡萄膜鞏膜流出；pilocarpine 牽拉小樑，增加傳統流出。"
+            },
+            {
+              "front": "β 阻斷劑與碳酸酐酶抑制劑如何降低眼壓？",
+              "back": "主要減少睫狀上皮的房水生成。"
+            }
+          ],
+          "next": "接著整理房水與睫狀體的國考重點。"
+        }
+      ]
+    },
+    {
+      "id": "l8",
+      "title": "國考重點總複習",
+      "goals": [
+        "串連前後房、睫狀體、房水生成與排出",
+        "比較眼壓、青光眼與藥物考法"
+      ],
+      "teaches": [
+        "前後房",
+        "房水來源",
+        "房水功能",
+        "房水路徑",
+        "睫狀體構造",
+        "睫狀肌",
+        "房水形成與排出"
+      ],
+      "pace": "free",
+      "steps": [
+        {
+          "type": "intro",
+          "title": "從一滴房水連到考題",
+          "body": [
+            "先定位、走水路，再用壓力與藥物把整個單元串起來。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "前房與後房",
+          "body": [
+            "> [!big] 虹膜是分界，前房較大，前後房由瞳孔相通。",
+            "[[img]]",
+            "前房在角膜與虹膜之間；後房在虹膜後方、水晶體與懸韌帶前方。",
+            "為什麼房水要穿過瞳孔？虹膜將兩個空間分開，瞳孔提供連通。",
+            "記法：虹膜前是前房，虹膜後是後房。"
+          ],
+          "exam": [
+            "106 師高 1、110 師高 12、114 生普 9；陷阱：不要把前後房大小與水晶體分泌顛倒。"
+          ],
+          "demo": [
+            "辨識：先找虹膜，再分辨前房與後房。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "後房的前界與後界，最符合哪一組？",
+          "choices": [
+            "角膜與虹膜",
+            "虹膜與水晶體、懸韌帶",
+            "視網膜與鞏膜",
+            "瞳孔與角膜"
+          ],
+          "answer": "B",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "虹膜位於後房前方；水晶體與懸韌帶構成後方界限。"
+        },
+        {
+          "type": "card",
+          "title": "房水的起點與路線",
+          "body": [
+            "> [!big] 睫狀突→後房→瞳孔→前房→小樑網→許萊姆氏管。",
+            "[[img]]",
+            "為什麼先後房再前房？分泌面朝後房，房水經瞳孔進入前房。",
+            "🧑‍🏫 老師說會考：記住房水從後房經瞳孔流向前房。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:01:04–00:01:44）",
+            "虹膜、水晶體、角膜及視網膜都不是主要分泌處。"
+          ],
+          "exam": [
+            "106 生普 15、106 生特 21、106 師特 18、110 師高 11、111 生普 8、114 師高 10；陷阱：小樑網在許萊姆管前。"
+          ],
+          "demo": [
+            "106 師特 18：①先圈睫狀體；②後房接瞳孔再前房；③小樑接許萊姆管，選 D。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "房水在前房後依傳統途徑先經哪個構造再進許萊姆氏管？",
+          "choices": [
+            "瞳孔",
+            "小樑網",
+            "水晶體",
+            "視網膜"
+          ],
+          "answer": "B",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "前房房水先進小樑網，再到許萊姆氏管。"
+        },
+        {
+          "type": "card",
+          "title": "房水的功能與成分",
+          "body": [
+            "> [!big] 房水滋養無血管組織，也協助維持眼形。",
+            "[[img]]",
+            "角膜與水晶體缺乏血管，房水供應營養並帶走代謝物；抗壞血酸具抗氧化作用。",
+            "為什麼清澈？正常房水蛋白含量低，通常無可見發炎細胞；血房水屏障有助限制物質進入。",
+            "🧑‍🏫 老師說會考：比較房水與血漿的成分差異。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:07:15–00:07:22）",
+            "房水與血漿類似但不完全相同，生成速率約 2–2.5 μL/min。"
+          ],
+          "exam": [
+            "106 生普 22、108 師高 11、108 生特 8、109 師高 11、113 生普 10、114 生普 8；107 師特 10；陷阱：VII 並非房水分泌的主要副交感路徑。"
+          ],
+          "demo": [
+            "辨識：看到抗氧化作用，想起抗壞血酸。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "房水中哪一物質可提供抗氧化作用？",
+          "choices": [
+            "抗壞血酸",
+            "乳酸",
+            "白蛋白",
+            "視蛋白"
+          ],
+          "answer": "A",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "抗壞血酸具有抗氧化作用；不表示補充維生素可保證預防疾病。"
+        },
+        {
+          "type": "card",
+          "title": "睫狀體的位置與兩部",
+          "body": [
+            "> [!big] 前方皺褶部有睫狀突；後方平坦部是手術定位區。",
+            "[[img]]",
+            "睫狀體位於虹膜與脈絡膜之間，含色素與豐富血流；發炎可涉及虹膜睫狀體。",
+            "為什麼皺褶部是生成重點？其睫狀突上皮分泌房水；平坦部不是主要分泌位置。",
+            "🧑‍🏫 老師說會考：記住平坦部在眼內手術的臨床重要性。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:15:50–00:16:04）",
+            "手術進入位置須由專業人員依個案測量，不把逐字稿可疑距離當操作指示。"
+          ],
+          "exam": [
+            "108 師特 13、109 師高 11、112 生普 8；陷阱：前皺後平不能倒過來。"
+          ],
+          "demo": [
+            "辨識：看到部位順序，先用前皺後平排除顛倒選項。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "睫狀體前方與後方的排列為何？",
+          "choices": [
+            "前平坦、後皺褶",
+            "前皺褶、後平坦",
+            "前視網膜、後角膜",
+            "前鞏膜、後瞳孔"
+          ],
+          "answer": "B",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "前方皺褶部有睫狀突；後方為平坦部。"
+        },
+        {
+          "type": "card",
+          "title": "睫狀體層次與肌肉",
+          "body": [
+            "> [!big] 由外向內辨認五層，肌肉又可依走向分三組。",
+            "[[img]]",
+            "睫狀體由外向內：睫狀體上板、睫狀肌、血管層、色素上皮、無色素上皮。",
+            "為什麼分類？五層描述組織位置；縱走、放射／斜走、環狀描述肌纖維方向，是不同分類。",
+            "🧑‍🏫 老師說會考：注意睫狀體各層的排列。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:17:57–00:18:06）",
+            "血供有長後睫狀動脈與前睫狀動脈參與。"
+          ],
+          "exam": [
+            "106 師特 1、110 生普 15；講義 p.13–16；陷阱：軸向不是常用三分類之一。"
+          ],
+          "demo": [
+            "106 師特 1：①確認題目問肌肉方向；②縱走、放射及環狀為三組；③不要把整體五層當肌肉走向。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "下列哪一項屬睫狀肌的常用方向分類？",
+          "choices": [
+            "環狀",
+            "視網膜狀",
+            "角膜狀",
+            "瞳孔狀"
+          ],
+          "answer": "A",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "睫狀肌有縱走、放射／斜走及環狀纖維。"
+        },
+        {
+          "type": "card",
+          "title": "近看與肌肉牽引",
+          "body": [
+            "> [!big] 肌縮→懸韌帶鬆→水晶體變凸，看近時屈光力增加。",
+            "[[img]]",
+            "為什麼肌縮反而讓帶子鬆？睫狀環縮小，懸韌帶張力下降，水晶體依自身彈性變凸。",
+            "同一睫狀肌還可牽拉鞏膜棘與小樑組織，使小樑流出增加。",
+            "記法：肌縮、帶鬆、晶凸；拉小樑、助排水。",
+            "🧑‍🏫 老師強調：睫狀體的房水生成與調節是兩個重要功能。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:33:56–00:34:45；其中生成一詞轉錄標待確認，依講義核對）"
+          ],
+          "exam": [
+            "111 師高 11、108 生普 33 D；陷阱：肌肉收縮不等於韌帶拉緊。"
+          ],
+          "demo": [
+            "辨識：看近時先想到肌縮、帶鬆、晶凸。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "看近時水晶體變凸的直接力學連鎖為何？",
+          "choices": [
+            "睫狀肌收縮→懸韌帶張力下降",
+            "睫狀肌放鬆→懸韌帶張力下降",
+            "睫狀肌收縮→懸韌帶張力上升",
+            "虹膜分泌房水→水晶體收縮"
+          ],
+          "answer": "A",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "肌肉收縮使懸韌帶張力下降，水晶體因彈性變凸。"
+        },
+        {
+          "type": "card",
+          "title": "兩層上皮與屏障",
+          "body": [
+            "> [!big] 間質→色素上皮→無色素上皮→後房。",
+            "[[img]]",
+            "兩層上皮頂端彼此相接；相鄰無色素上皮（NPE）的緊密連結是血房水屏障的重要部分。",
+            "為什麼房水蛋白較少？屏障限制血液中大分子進入，並非完全不可通過。",
+            "講義 p.28 與 p.23、38、41 對連結位置不一致，需向老師確認。"
+          ],
+          "exam": [
+            "講義 p.20–28、38、41；陷阱：PE／NPE 相接與 NPE 細胞間緊密連結不可混為一談。"
+          ],
+          "demo": [
+            "辨識題：①先找面向後房的 NPE；②再找相鄰 NPE 間連結；③不要把兩層相接處直接當成同一個屏障。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "血房水屏障的重要緊密連結主要位在哪裡？",
+          "choices": [
+            "相鄰無色素睫狀上皮細胞之間",
+            "相鄰角膜上皮表面之間",
+            "視網膜感光細胞之間",
+            "虹膜與角膜之間"
+          ],
+          "answer": "A",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "常見教科書描述為相鄰無色素上皮細胞間的緊密連結；本講義一頁有矛盾待確認。"
+        },
+        {
+          "type": "card",
+          "title": "生成：主動與被動",
+          "body": [
+            "> [!big] 主動分泌搬運離子，水因滲透而跟隨。",
+            "[[img]]",
+            "睫狀上皮使用能量運送離子；碳酸酐酶提供碳酸氫根，參與離子運輸。",
+            "為什麼還有超濾與擴散？壓力差推動超濾、濃度差推動擴散，兩者不等同主動運輸。",
+            "記法：壓推濾、濃差散、耗能主動搬。"
+          ],
+          "exam": [
+            "109 師高 11；講義 p.31–40；陷阱：來源與血漿相關，不代表兩者成分完全相同。"
+          ],
+          "demo": [
+            "辨識：題目把平坦部當作主要分泌處時，要改回皺褶部。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪一項最符合睫狀上皮主動分泌的敘述？",
+          "choices": [
+            "離子運輸建立梯度，水可隨滲透移動",
+            "只有重力決定房水生成",
+            "房水由角膜內皮製造",
+            "濃度差擴散一定需要 ATP"
+          ],
+          "answer": "A",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "主動離子運輸建立滲透梯度；擴散依濃度差，不等同耗能運輸。"
+        },
+        {
+          "type": "card",
+          "title": "兩條排水路",
+          "body": [
+            "> [!big] 小樑網是主要路徑；葡萄膜鞏膜是另一條路。",
+            "[[img]]",
+            "{o:傳統}：前房→小樑網→許萊姆氏管→集液管與表層鞏膜靜脈。",
+            "{b:葡萄膜鞏膜}：經睫狀肌間隙等組織流向鞏膜上腔。",
+            "為什麼不能混記？許萊姆管屬小樑途徑，不是葡萄膜鞏膜途徑；各路比例會變。",
+            "老師比喻排水口「看起來開開的，但是水過不去」。（854a2e4ba722／Sonnet校訂_時間戳.txt 00:06:21–00:06:34）"
+          ],
+          "exam": [
+            "107 生普 10、108 生普 33、114 師高 9；陷阱：角膜內皮與視網膜不是主要排水路。"
+          ],
+          "demo": [
+            "114 師高 9：①找兩條出口②③；②刪除角膜基質細胞①和視網膜④；③選 C。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪一組將出口與構造正確配對？",
+          "choices": [
+            "小樑途徑→許萊姆氏管",
+            "葡萄膜鞏膜途徑→必經許萊姆氏管",
+            "角膜內皮→主要出口",
+            "視網膜→主要出口"
+          ],
+          "answer": "A",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "許萊姆氏管位於傳統小樑排水路徑。"
+        },
+        {
+          "type": "card",
+          "title": "隅角地標與阻力",
+          "body": [
+            "> [!big] 小樑由前房側走向近管組織，再到許萊姆氏管。",
+            "[[img]]",
+            "Schwalbe 線與鞏膜棘是辨認隅角的地標；小樑依序可分葡萄膜、角鞏膜及近管組織。",
+            "為什麼入口開仍可能升壓？近管組織與許萊姆管內壁附近的流出阻力增加，水仍難離開。",
+            "記法：葡→角→近→管。"
+          ],
+          "exam": [
+            "講義 p.43–53；112 生普 2；陷阱：開角不等於排出正常。"
+          ],
+          "demo": [
+            "辨識題：①從前房向外找小樑；②先葡萄膜小樑、再角鞏膜小樑、近管組織；③最後到許萊姆管。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "從前房側向許萊姆氏管走，小樑層次如何排列？",
+          "choices": [
+            "葡萄膜→角鞏膜→近管組織",
+            "近管→葡萄膜→角鞏膜",
+            "角鞏膜→許萊姆管→近管",
+            "視網膜→虹膜→角膜"
+          ],
+          "answer": "A",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "依序為葡萄膜、角鞏膜、近管組織，接許萊姆氏管。"
+        },
+        {
+          "type": "card",
+          "title": "眼壓是平衡的結果",
+          "body": [
+            "> [!big] 眼壓與生成、排出阻力及表層鞏膜靜脈壓有關。",
+            "[[img]]",
+            "為什麼排水變差會升壓？生成持續時，較高壓力可能才足以推動流出達到新平衡。",
+            "🧑‍🏫 老師說會考：記住常用眼壓參考範圍約 10–21 mmHg。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:21:57–00:22:00）",
+            "此範圍不是診斷界線；正常眼壓也可能有青光眼，升高也不等於必然患病。"
+          ],
+          "exam": [
+            "113 生普 10；陷阱：正常眼壓不保證視神經健康。"
+          ],
+          "demo": [
+            "113 生普 10：①A 小樑排出、B 阻力增加可升壓；②D 有助眼球形狀；③C 說角膜產生房水，選 C。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "房水生成持續而小樑排出阻力增加時，眼壓可能如何變化？",
+          "choices": [
+            "上升",
+            "一定下降到零",
+            "必定完全不變",
+            "與排出毫無關係"
+          ],
+          "answer": "A",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "排出阻力上升時，較高眼壓可能才足以推動房水平衡流出。"
+        },
+        {
+          "type": "card",
+          "title": "開角與閉角",
+          "body": [
+            "> [!big] 開角是入口可見但排水仍可能差；閉角是周邊虹膜遮住入口。",
+            "[[img]]",
+            "瞳孔阻滯：後房到前房受阻→後房相對壓力上升→虹膜前凸→隅角受遮。",
+            "為什麼虹膜切開可幫忙？提供繞過瞳孔的通路，減少前後房壓差；其他閉角機轉不一定因此解除。",
+            "急性閉角需眼科緊急處理；眼壓與視神經檢查須合併評估。",
+            "🧑‍🏫 老師強調：開放型在課堂例子中較常見；實際比例會因族群而不同。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:26:46）"
+          ],
+          "exam": [
+            "講義 p.67–76；陷阱：開角仍可有青光眼。"
+          ],
+          "demo": [
+            "辨識：虹膜切開提供繞過瞳孔的通路，不代表所有閉角機轉都能解除。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "開角型青光眼仍可能發生的原因為何？",
+          "choices": [
+            "隅角入口可見，但流出阻力增加",
+            "房水完全不再生成",
+            "角膜直接分泌房水",
+            "視神經必定正常"
+          ],
+          "answer": "A",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "入口開放不保證小樑及下游流出阻力正常。"
+        },
+        {
+          "type": "card",
+          "title": "藥物依方向分類",
+          "body": [
+            "> [!big] β、碳、α 少製造；前列走葡萄，毛果拉小樑。",
+            "[[img]]",
+            "{o:少製造}：β 阻斷劑、碳酸酐酶抑制劑、α₂ 促效劑；部分 α₂ 藥另可增加流出。",
+            "{b:多排出}：前列腺素類主要增加葡萄膜鞏膜流出；pilocarpine 使睫狀肌收縮，牽拉小樑。",
+            "為什麼都能降壓？減少進水或改善排水，均可降低平衡眼壓。",
+            "🧑‍🏫 老師說會考：β blocker 抑制房水分泌要注意。（出處：48d3cb30df49／Sonnet校訂_時間戳.txt 00:48:35–00:48:43）",
+            "🧑‍🏫 老師說會考：前列腺素藥物要記，與另一條流出路有關。（出處：854a2e4ba722／Sonnet校訂_時間戳.txt 00:15:58–00:16:27）"
+          ],
+          "exam": [
+            "108 生普 33；陷阱：前列腺素與毛果芸香鹼的主要出口不同。"
+          ],
+          "demo": [
+            "108 生普 33：①A 水路正確；②C β 阻斷少生成、D 肌縮助小樑；③主要流出不是葡萄膜鞏膜，選 B。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "哪組藥物及主要作用配對正確？",
+          "choices": [
+            "Timolol→減少生成；latanoprost→增加葡萄膜鞏膜流出",
+            "Timolol→增加生成；latanoprost→堵住小樑",
+            "Pilocarpine→抑制碳酸酐酶",
+            "Acetazolamide→直接牽開小樑"
+          ],
+          "answer": "A",
+          "hint": "先在腦中定位構造，再判斷方向。",
+          "explain": "β 阻斷劑減少生成；前列腺素類主要增加葡萄膜鞏膜流出。"
+        },
+        {
+          "type": "card",
+          "title": "易混淆總對照",
+          "body": [
+            "> [!big] 先分位置與出口，再看隅角狀態和藥物作用方向。",
+            "[[img]]",
+            "| 對照 | 第一項 | 第二項 |",
+            "|---|---|---|",
+            "| 前房 vs 後房 | 前房：角膜後、虹膜前 | 後房：虹膜後、水晶體及懸韌帶前；兩房經瞳孔相通 |",
+            "| 小樑途徑 vs 葡萄膜鞏膜途徑 | 前房→小樑網→許萊姆氏管→集液管與表層鞏膜靜脈；通常為主要途徑 | 房水經睫狀肌等組織間隙流出；不必經許萊姆氏管 |",
+            "| 開角 vs 閉角 | 隅角入口可見，但流出阻力仍可能升高 | 周邊虹膜遮擋隅角；瞳孔阻滯只是可能機轉之一 |",
+            "| 降眼壓藥：減少生成 vs 增加流出 | β 阻斷劑、碳酸酐酶抑制劑、α₂ 促效劑減少房水生成；部分 α₂ 促效劑也增加流出 | 前列腺素類主要增加葡萄膜鞏膜流出；毛果芸香鹼促進小樑流出 |",
+            "為什麼先分兩邊？看見同一個「降眼壓」結果，仍要回到減少生成或增加哪條流出路。",
+            "記法：虹膜分前後；小樑接管、葡萄繞流；β、碳、α 減生成，前列走葡萄、毛果拉小樑。"
+          ],
+          "exam": [
+            "前後房、兩條出口、隅角與藥物作用方向；陷阱：開角不代表排水正常（出處：106 生特 19、107 生普 10、108 生普 33、113 生普 33）。"
+          ],
+          "img": "img/eye-anat-fig/cornea_aqueous.jpg",
+          "img_source": "既有角膜與房水解剖圖，CC BY 3.0；供前段定位，不能辨識細胞與排水微觀構造。"
+        },
+        {
+          "type": "example",
+          "title": "國考拆解：前房位在哪裡？（106 生特 19）",
+          "problem": "眼球中，前房之相對位置為下列何者？\nA 角膜前方\nB 角膜後方，虹膜前方\nC 虹膜後方，水晶體前方\nD 水晶體後方，視網膜前方",
+          "steps": [
+            "先找虹膜：虹膜前方的空間稱前房，虹膜後方是後房。",
+            "再找前房的前界：角膜位於前房前方，因此前房是「角膜後、虹膜前」。",
+            "A 在角膜前；C 在虹膜後；D 在水晶體後，都不是前房的位置。"
+          ],
+          "answer": "B：角膜後方，虹膜前方。"
+        },
+        {
+          "type": "example",
+          "title": "國考拆解：分辨兩條排水路（107 生普 10）",
+          "problem": "有關房水排出（outflow）途徑的敘述，下列何者正確？\nA 小樑途徑（trabecular route）是主要的排出途徑，所占的流量最大\nB 由前房經瞳孔流向後房\nC 可由葡萄膜鞏膜途徑（uveoscleral route）的許萊姆氏管（schlemm’s canal）排出\nD 可由角膜的內皮細胞吸收",
+          "steps": [
+            "先找題目問的房水流出路線，把每個選項中的構造與途徑配對。",
+            "傳統途徑從前房經小樑網、許萊姆氏管，再到集液管與表層鞏膜靜脈；葡萄膜鞏膜途徑經睫狀肌等組織間隙。",
+            "排除把兩條路混在一起或把排水方向顛倒的選項。"
+          ],
+          "answer": "A。"
+        },
+        {
+          "type": "example",
+          "title": "國考拆解：隅角閉鎖與睫狀肌（110 生普 8）",
+          "problem": "高度遠視的老年人，容易有隅角閉鎖性青光眼的急性發作。下列相關敘述何者錯誤？\nA 高度遠視的老年人一般前房較淺，隅角較窄\nB 若有白內障，水晶體密度增加形狀變突，也可能致使虹膜前傾壓迫隅角\nC 隅角有小樑網（trabecular meshwork），大部分的房水都是由此處排出的\nD 點散瞳劑也可能是造成急性發作的原因，因為睫狀肌麻痺，懸韌帶放鬆造成水晶體屈光度增加，向前突 出壓迫隅角",
+          "steps": [
+            "先看題目要找「錯誤」：高度遠視眼可能較短、前房較淺，隅角也可能較窄。",
+            "隅角的小樑網參與主要房水排出；晶體增厚可能讓虹膜向前、影響隅角。",
+            "D 將睫狀肌麻痺後的懸韌帶狀態寫反：肌肉放鬆時，懸韌帶張力通常增加。散瞳仍可能誘發閉角，不能因此否認其風險。"
+          ],
+          "answer": "D：錯在睫狀肌麻痺時說懸韌帶放鬆。"
+        },
+        {
+          "type": "example",
+          "title": "國考拆解：生成與排出的陷阱（108 生普 33）",
+          "problem": "有關房水的產生與排出的敘述，下列何者錯誤？\nA 房水從睫狀突產生於後房後，經由瞳孔到前房\nB 在前房隅角主要經由葡萄膜鞏膜途徑（uveoscleral route）排出\nC 乙型阻斷劑（beta blocker）可抑制房水的產生\nD 近距離視物如看書會因睫狀肌的調節（accomodation）收縮而增加小樑途徑的排出",
+          "steps": [
+            "先看題目要找「錯誤」：睫狀突分泌房水至後房，再經瞳孔到前房。",
+            "β 阻斷劑可減少房水生成；睫狀肌收縮可牽拉小樑組織，促進傳統途徑流出。",
+            "葡萄膜鞏膜途徑也是出口，但題目把它說成主要途徑；通常以小樑途徑為主，比例會變動。"
+          ],
+          "answer": "B：通常主要經小樑途徑排出。"
+        },
+        {
+          "type": "practice",
+          "title": "國考實戰：把水路與壓力連起來",
+          "qids": [
+            "eye115-aqueous-106-vs-18",
+            "eye115-aqueous-109-vn-11",
+            "eye115-aqueous-114-vn-9",
+            "eye115-aqueous-108-tn-33",
+            "eye115-aqueous-113-tn-10",
+            "eye115-aqueous-106-ts-319",
+            "eye115-aqueous-106-ts-329",
+            "eye115-aqueous-106-ts-330",
+            "eye115-aqueous-106-vn-3",
+            "eye115-aqueous-106-vn-24",
+            "eye115-aqueous-108-tn-234",
+            "eye115-aqueous-108-ts-309",
+            "eye115-aqueous-108-ts-311",
+            "eye115-aqueous-109-tn-209",
+            "eye115-aqueous-110-tn-208",
+            "eye115-aqueous-112-tn-202",
+            "eye115-aqueous-112-vn-13",
+            "eye115-aqueous-113-tn-233"
+          ]
+        },
+        {
+          "type": "recap",
+          "points": [
+            "前皺有突；後房→瞳孔→前房→小樑→許萊姆管。",
+            "肌縮帶鬆晶凸；小樑與葡萄膜鞏膜是兩條流出路。",
+            "眼壓取決於生成與流出條件；開角仍可能排水不良。",
+            "β、碳、α 少製造；前列走葡萄，毛果拉小樑。"
+          ],
+          "flash": [
+            {
+              "front": "房水的主要流路？",
+              "back": "睫狀突→後房→瞳孔→前房→小樑網→許萊姆氏管。"
+            },
+            {
+              "front": "近看時睫狀肌、懸韌帶、水晶體如何改變？",
+              "back": "肌縮、帶鬆、晶凸。"
+            },
+            {
+              "front": "前列腺素與毛果芸香鹼主要增加哪條流出？",
+              "back": "前列腺素主要增加葡萄膜鞏膜流出；毛果芸香鹼促進小樑流出。"
+            }
+          ],
+          "next": "回題庫檢查容易混淆的選項。"
+        }
+      ]
+    }
+  ]
+}
