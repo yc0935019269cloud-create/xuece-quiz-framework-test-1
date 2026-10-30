@@ -381,6 +381,8 @@ const IMP = (() => {
           if (!s.img || !s.points.length) { W.push(`${where}：圖解缺圖片或標記點，已略過`); return; }
           const np = s.points.filter(pt => pt.x == null).length;
           if (np) W.push(`${where}：圖解有 ${np} 個標記沒有座標，第一次開啟時會請你在圖上點出位置`);
+        } else if (s.type === 'termlist') {
+          if (!Array.isArray(s.groups) || !s.groups.length || !s.groups.every(g => g && g.name && Array.isArray(g.items) && g.items.length && g.items.every(x => x && x.zh && x.en && Array.isArray(x.views) && x.views.every(v => v && v.img && v.title && v.from && ['x','y'].every(k => typeof v[k] === 'number' && v[k] >= 0 && v[k] <= 100))))) { W.push(`${where}：構造清單格式錯誤，已略過`); return; }
         } else if (s.type === 'interactive') { s.html = str(s.html); if (!s.html) { W.push(`${where}：互動內容沒有 html，已略過`); return; } }
         else { W.push(`${where}：未知的步驟類型「${s.type}」，已略過`); return; }
         if (s.flash && s.flash.front && s.flash.back) s.flash = { front: str(s.flash.front), back: str(s.flash.back), id: s.flash.id || 'f' + hash(base + str(s.flash.front)) }; else delete s.flash;

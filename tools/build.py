@@ -31,7 +31,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT = os.path.join(ROOT, 'content')
 THEMES = ['lit', 'lang', 'math', 'calc', 'hist', 'sci', 'mix']
 QTYPES = ['single', 'multi', 'tf', 'fill', 'open']
-STEP_TYPES = ['intro', 'card', 'check', 'example', 'practice', 'recap', 'diagram', 'interactive', 'letters']
+STEP_TYPES = ['intro', 'card', 'check', 'example', 'practice', 'recap', 'diagram', 'interactive', 'letters', 'termlist']
 CHECK_KINDS = ['single', 'multi', 'tf', 'fill', 'order', 'self', 'name']
 MD_FIELDS = ['body', 'q', 'hint', 'explain', 'problem', 'tip', 'front', 'back', 'desc', 'stem', 'text', 'task', 'html', 'demo']
 ID_RE = r'[A-Za-z0-9][A-Za-z0-9_-]*'
@@ -628,6 +628,24 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
                     check_check(c, f'{SW}.checks[{ci}]', R)
                 if not s.get('qids') and not pick and not s.get('checks'):
                     R.err(SW, 'practice 至少要有 qids、pick、checks 其中一種')
+            elif t == 'termlist':
+                groups = s.get('groups')
+                if not isinstance(groups, list) or not groups:
+                    R.err(SW, 'termlist 需要非空 groups')
+                    continue
+                for g in groups:
+                    if not isinstance(g, dict) or not is_str(g.get('name')) or not isinstance(g.get('items'), list) or not g['items']:
+                        R.err(SW, '每組需要 name 與非空 items'); continue
+                    for item in g['items']:
+                        if not isinstance(item, dict) or not is_str(item.get('zh')) or not is_str(item.get('en')) or not isinstance(item.get('views'), list):
+                            R.err(SW, '構造需要 zh、en、views'); continue
+                        if 'star' in item and not isinstance(item['star'], bool): R.err(SW, 'star 必須為布林值')
+                        if 'tag' in item and not is_str(item['tag']): R.err(SW, 'tag 必須為字串')
+                        if 'count' in item and (type(item['count']) is not int or item['count'] < 0): R.err(SW, 'count 必須為非負整數')
+                        for v in item['views']:
+                            if not isinstance(v, dict) or not all(is_str(v.get(k)) for k in ('img', 'title', 'from')) or not all(type(v.get(k)) in (int, float) and 0 <= v[k] <= 100 for k in ('x', 'y')):
+                                R.err(SW, 'views 需要 img、title、from 與 0–100 座標'); continue
+                            if not re.match(r'^(https?:|data:)', v['img']) and not os.path.exists(os.path.join(ROOT, v['img'])): R.err(SW, f'找不到圖片 {v["img"]}')
             elif t == 'diagram':
                 if not is_str(s.get('img')):
                     R.err(SW, 'diagram 需要 img')

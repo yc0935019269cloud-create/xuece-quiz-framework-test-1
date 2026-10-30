@@ -4,7 +4,7 @@ const LEARN_UI = (() => {
   const STEP = {
     intro: { ic: '🚪', name: '導入' }, card: { ic: '📘', name: '概念' }, check: { ic: '❓', name: '檢核' },
     example: { ic: '🧩', name: '範例' }, practice: { ic: '⚔', name: '實戰' }, recap: { ic: '⭐', name: '回顧' },
-    diagram: { ic: '🔍', name: '圖解' }, interactive: { ic: '🎮', name: '互動' }, letters: { ic: '🔤', name: '字母' }
+    diagram: { ic: '🔍', name: '圖解' }, interactive: { ic: '🎮', name: '互動' }, letters: { ic: '🔤', name: '字母' }, termlist: { ic: '📋', name: '構造清單' }
   };
   const LEVEL = ['', '基礎', '標準', '進階'];
   const BOX_DAYS = [0, 1, 2, 4, 7, 15, 30]; // 複習盒：答對升一盒，答錯回第 1 盒
@@ -170,7 +170,8 @@ const LEARN_UI = (() => {
 
   /* ---------- 小工具 ---------- */
   const scr = () => U.$('#screen');
-  const md = s => U.md(s || '');
+  // [[卡片標題|顯示文字]]：課程內跳頁連結（例：考點地圖點一行直接到那張卡）；播放器在 step() 綁定點擊，其他地方只顯示文字
+  const md = s => U.md(s || '').replace(/\[\[([^\]|<]+)\|([^\]<]+)\]\]/g, '<span class="lp-goto" role="link" tabindex="0" data-goto-title="$1">$2</span>');
   const sameAns = U.sameAns;
   const inl = s => U.md(s || '').replace(/^<div class="md"><p>([\s\S]*)<\/p><\/div>$/, '$1'); // 單行文字不要段落間距
   function packProgress(p) {
@@ -188,7 +189,7 @@ const LEARN_UI = (() => {
     check: ['換你試試看！', '剛剛學的，馬上用用看。'], example: ['先自己想一下，再看下一步。', '一步一步拆開來看～'],
     practice: ['上戰場！這是題庫裡的題目。', '實戰時間到！'], recap: ['快完成了，最後整理一下重點！'],
     ok: ['答對了！好厲害！', '完全正確✨', '就是這樣！'], ng: ['沒關係，看提示再試一次。', '差一點點！'], reveal: ['這題放進複習盒了，之後再挑戰。'],
-    diagram: ['先點點看每個標記，認識一下～', '看圖認位置，最後要考喔！'], interactive: ['動手玩玩看，觀察會發生什麼！', '拉拉看、按按看～'], letters: ['點一個字母聽聽看！', '慢慢點，聽發音、看由來～']
+    diagram: ['先點點看每個標記，認識一下～', '看圖認位置，最後要考喔！'], interactive: ['動手玩玩看，觀察會發生什麼！', '拉拉看、按按看～'], letters: ['點一個字母聽聽看！', '慢慢點，聽發音、看由來～'], termlist: ['點位置查看各個角度。']
   };
   const imgList = v => (Array.isArray(v) ? v : v ? [v] : []);
   const imgsHTML = (v, src) => { const L = imgList(v), h = L.map(x => `<img class="lp-img" src="${U.esc(U.img(x))}" alt="" title="點圖放大">`).join(''); return (L.length > 1 ? `<div class="lp-imgs">${h}</div>` : h) + (src ? `<div class="lp-src">圖片來源：${inl(src)}</div>` : ''); };
@@ -246,7 +247,7 @@ const LEARN_UI = (() => {
   function stepText(s, shown) {
     const L = [];
     const pt = x => typeof x === 'string' ? x : `${x.name}${x.desc ? '：' + x.desc : ''}`;
-    if (s.type === 'intro') L.push(`標題：${s.title || ''}`, s.body || '');
+    if (s.type === 'intro') L.push(`標題：${s.title || ''}`, [].concat(s.body || '').join('\n').replace(/\[\[[^\]|]+\|([^\]]+)\]\]/g, '$1'));
     else if (s.type === 'card') {
       L.push(`標題：${s.title}`, s.body || '');
       if ((s.keys || []).length) L.push('重點：\n' + s.keys.map(k => '- ' + k).join('\n'));
@@ -262,6 +263,8 @@ const LEARN_UI = (() => {
       L.push('（這是互動動畫，AI 看不到畫面）');
     } else if (s.type === 'letters') {
       L.push(`標題：${s.title || '字母'}`, s.body || '', ...(s.groups || []).map(g => `【${g.name}】\n` + g.items.map(x => `${x.ch}（${[x.name, x.roman].filter(Boolean).join('，')}）：${x.desc || ''}`).join('\n')));
+    } else if (s.type === 'termlist') {
+      L.push(`標題：${s.title || '構造清單'}`, s.body || '', ...(s.groups || []).map(g => `【${g.name}】\n` + g.items.map(x => `${x.zh}｜${x.en}${x.count != null ? `（提及 ${x.count} 次）` : ''}`).join('\n')));
     } else if (s.type === 'diagram') {
       L.push(`標題：${s.title || '看圖認識'}`, s.body || '', '圖上的標記：\n' + (s.points || []).map((x, i) => `${i + 1}. ${pt(x)}`).join('\n'));
     } else if (s.type === 'recap') {
@@ -1071,6 +1074,14 @@ const LEARN_UI = (() => {
       if (s.type === 'intro') {
         body.innerHTML = head + `<h3>${U.esc(s.title || l.title)}</h3>${md(s.body)}` +
           ((l.goals || []).length ? `<div class="lp-goals"><b>🎯 這課學完你會：</b><ul>${l.goals.map(g => `<li>${inl(g)}</li>`).join('')}</ul></div>` : '');
+        const bare = t => String(t || '').replace(/⭐/g, '').trim();
+        U.$$('#lpBody .lp-goto').forEach(el => {
+          const j = l.steps.findIndex(x => x.title && bare(x.title) === bare(el.dataset.gotoTitle));
+          if (j < 0) { el.classList.add('off'); return; }
+          // 地圖連結可以直接跳到還沒讀到的頁（中間的檢核題之後回頭看算回顧、不計分）
+          const go = e => { e.preventDefault(); if (j > R.far) { if (st.i === R.far) R.farSub = R.sub; R.far = j; R.farSub = 0; } goTo(j); };
+          el.onclick = go; el.onkeydown = e => { if (e.key === 'Enter') go(e); };
+        });
         ready('開始 ▶');
       } else if (s.type === 'card') {
         const atlasLesson = l.id === 'review' && (p.path || []).includes('實驗課（依老師講義）') && s.title.startsWith('總圖｜')
@@ -1103,6 +1114,8 @@ const LEARN_UI = (() => {
           onItem: (firstOk, ok) => { tally(firstOk); if (ok) onRightHit(firstOk); },
           onWrong: onWrongHit, onDone: () => { save(); ready(); focusNext(); }
         });
+      } else if (s.type === 'termlist') {
+        renderTermlist(body, head, s); ready();
       } else if (s.type === 'interactive') {
         renderInteractive(body, head, s);
         ready();
@@ -1258,6 +1271,32 @@ const LEARN_UI = (() => {
 
   /* ---------- 圖解：標記點探索＋點選辨識測驗 ----------
    * step: { img, points:[{x,y,name,desc}], mode:'both'|'explore'|'quiz', body, source }  x/y 為圖片寬高的百分比 */
+  function renderTermlist(body, head, s) {
+    const groups = s.groups || [];
+    body.innerHTML = head + `<h3>${U.esc(s.title || '構造清單')}</h3>${md(s.body || '')}<div class="term-tools"><label>搜尋 <input class="px-in term-search" type="search" placeholder="中文或 English"></label><button type="button" class="px-btn small term-open">全部展開</button><button type="button" class="px-btn small term-close">全部收起</button></div>` + groups.map((g, gi) => `<section class="term-group"><h4>${U.esc(g.name)}</h4>${g.note ? `<p>${U.esc(g.note)}</p>` : ''}${g.items.map((x, ii) => `<div class="term-item" data-gi="${gi}" data-ii="${ii}"><div class="term-row"><span>${x.star ? '⭐ ' : ''}${U.esc(x.zh)}${x.tag ? `<small>${U.esc(x.tag)}</small>` : ''}${x.count != null ? `<small>提及 ${x.count} 次</small>` : ''}</span><span>${U.esc(x.en)}</span><button type="button" class="px-btn small term-speak" aria-label="播放 ${U.esc(x.en)} 發音">🔊</button><button type="button" class="px-btn small term-toggle" aria-expanded="false">📍 位置</button></div><div class="term-views" hidden></div></div>`).join('')}</section>`).join('');
+    const setOpen = (row, open) => {
+      const panel = row.querySelector('.term-views'), button = row.querySelector('.term-toggle');
+      if (open && !panel.dataset.loaded) {
+        const item = groups[+row.dataset.gi].items[+row.dataset.ii];
+        panel.innerHTML = item.views.length ? item.views.map(v => `<figure><div class="dg-wrap"><img class="lp-img" src="${U.esc(U.img(v.img))}" alt="${U.esc(v.title)}"><span class="dg-pin term-pin" style="left:${v.x}%;top:${v.y}%" aria-label="位置"></span></div><figcaption>${U.esc(v.title)}<br><small>${U.esc(v.from)}</small></figcaption></figure>`).join('') : '<p>暫無圖（之後補）</p>';
+        panel.dataset.loaded = '1';
+      }
+      panel.hidden = !open; button.setAttribute('aria-expanded', String(open));
+    };
+    body.querySelectorAll('.term-item').forEach(row => {
+      const item = groups[+row.dataset.gi].items[+row.dataset.ii];
+      row.querySelector('.term-speak').onclick = () => { if (typeof GLOSS !== 'undefined') GLOSS.speak(item.en); };
+      row.querySelector('.term-toggle').onclick = () => setOpen(row, row.querySelector('.term-views').hidden);
+    });
+    body.querySelector('.term-open').onclick = () => body.querySelectorAll('.term-item:not([hidden])').forEach(row => setOpen(row, true));
+    body.querySelector('.term-close').onclick = () => body.querySelectorAll('.term-item').forEach(row => setOpen(row, false));
+    body.querySelector('.term-search').oninput = e => {
+      const q = e.target.value.trim().toLowerCase();
+      body.querySelectorAll('.term-item').forEach(row => { const x = groups[+row.dataset.gi].items[+row.dataset.ii]; row.hidden = !(`${x.zh} ${x.en}`.toLowerCase().includes(q)); });
+      body.querySelectorAll('.term-group').forEach(g => { g.hidden = !g.querySelector('.term-item:not([hidden])'); });
+    };
+  }
+
   function renderDiagram(body, head, s, pinKey, cb) {
     D.pins = D.pins || {};
     const ov = D.pins[pinKey] || {};
@@ -1825,7 +1864,8 @@ const LEARN_UI = (() => {
         el.dataset.diagramContext = JSON.stringify([pid, lid, si]);
         renderDiagram(el, `<h4>🔍 ${U.esc(s.title || '圖解')}</h4>`, { ...s, mode: 'explore' }, `${pid}/${lid}/${si}`, { onItem() {}, onWrong() {}, onDone() {} });
         if (typeof GLOSS !== 'undefined') GLOSS.scan(el);
-      } else if (s.type === 'interactive') renderInteractive(el, '', s);
+      } else if (s.type === 'termlist') renderTermlist(el, '', s);
+      else if (s.type === 'interactive') renderInteractive(el, '', s);
       else if (s.type === 'letters') renderLetters(el, '', s);
       else el.innerHTML = `<h4>${U.esc(stepTitle(s, l))}</h4>${pageText(s) ? md(pageText(s).slice(0, 600)) : ''}`;
     });
