@@ -42,7 +42,9 @@ const Screens = (() => {
   }
   /* 國考年份：path 裡的「106 年國考」「106 年」（不含「114 學年度」這類課程資料） */
   const yearOf = e => { for (const x of e.path || []) { const m = /^\s*(\d{2,3})\s*年(國考)?\s*$/.exec(String(x)); if (m) return Number(m[1]); } return null; };
-  const treeIds = n => [...n.sets.map(s => s.e.id), ...[...n.kids.values()].flatMap(treeIds)];
+  const allIds = n => [...n.sets.map(s => s.e.id), ...[...n.kids.values()].flatMap(allIds)];
+  // 上層「全選」不含 optIn 題本（答案疑義）；只有 optIn 題本的那一層，全選才會選到它們
+  const treeIds = n => { const ids = allIds(n), plain = ids.filter(id => !(Store.EX[id] || {}).optIn); return plain.length ? plain : ids; };
   /* 題本挑選器（自由遠征、深淵遠征）：依分類樹收合，每層可一鍵全選；state.exams 空陣列＝全部。
    * 回傳重畫函式；科目改變時呼叫它。展開狀態在這次畫面內記住。 */
   function setPicker(box, state, onChange, opts = {}) {

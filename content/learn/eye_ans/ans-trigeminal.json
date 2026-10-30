@@ -1037,7 +1037,6 @@
             "n": 6
           },
           "qids": [
-            "eye115-exam-ans-trigeminal-108-31",
             "eye115-exam-ans-trigeminal-108-222",
             "eye115-exam-ans-trigeminal-109-131",
             "eye115-exam-ans-trigeminal-110-223",
@@ -1120,9 +1119,8 @@
           "use": "感覺分布題。",
           "tip": "下眼瞼是 V2；三叉神經痛多 V2、V1 最少。",
           "evidence": {
-            "count": 7,
+            "count": 6,
             "questionIds": [
-              "eye115-exam-ans-trigeminal-108-31",
               "eye115-exam-ans-trigeminal-110-221",
               "eye115-exam-ans-trigeminal-109-306",
               "eye115-exam-ans-trigeminal-108-222",
@@ -1149,7 +1147,7 @@
           "use": "通道題。",
           "tip": "視神經走視神經管；V2 走圓孔；VII 不進眼眶。",
           "evidence": {
-            "count": 10,
+            "count": 9,
             "questionIds": [
               "eye115-exam-ans-trigeminal-114-3",
               "eye115-exam-ans-trigeminal-114-5",
@@ -1159,8 +1157,7 @@
               "eye115-exam-ans-trigeminal-113-32",
               "eye115-exam-ans-trigeminal-106-202",
               "eye115-exam-ans-trigeminal-107-324",
-              "eye115-exam-ans-trigeminal-108-323",
-              "eye115-exam-ans-trigeminal-113-206"
+              "eye115-exam-ans-trigeminal-108-323"
             ],
             "years": [
               106,

@@ -371,7 +371,8 @@ def build_bank(pj, args):
         set_ids[sid] = rel(f)
         exams.append({'id': sid, 'subj': st['subject'], 'name': st['name'], 'title': st.get('title') or st['name'],
                       'year': st.get('year'), 'pdf': st.get('source_url') or st.get('pdf'), 'source': st.get('source') or '',
-                      'order': st.get('order', 999), 'count': len(out), 'path': st.get('path') or []})
+                      'order': st.get('order', 999), 'count': len(out), 'path': st.get('path') or [],
+                      **({'optIn': True} if st.get('optIn') else {})})
         for gid, g in gmap.items():
             ns = [x for x in g['qs'] if isinstance(x, int)]
             groups[f'{sid}:{gid}'] = {'text': g['text'], 'imgs': g['imgs'] if isinstance(g['imgs'], list) else [g['imgs']], 'title': g['title'], 'marks': g.get('marks'), 'range': [min(ns), max(ns)] if ns else [0, 0]}

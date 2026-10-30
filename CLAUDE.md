@@ -509,3 +509,8 @@
 - 每列名稱旁 ☆ 可單獨收藏：指向該構造第一張原圖的那一點（views 帶 p／l／name，同 `termRef`），收進知識筆記星號收藏；同構造在別張圖已收藏時顯示 ★。測試 `tools/midterm/star-check.cjs`（14 項）。
 - 產生器 `tools/midterm/build_midterm.py`（可重跑，掃 eye_anat 圖鑑 diagram 點位）、檢查 `tools/midterm/check.cjs`（112 項通過）、截圖 `tools/midterm/_shot.cjs`。補圖之後重跑產生器即可。
 - 課程地圖跳頁：課文寫 `[[卡片標題|顯示文字]]` 會變成跳到該卡的連結（emomo 考點地圖使用）。
+
+## 答案疑義題本（2026-10-30，v162）
+
+- 題本 `set.optIn: true`＝只有明確勾選才出題：`Store.filter` 沒指定題本（全部）時排除，`Screens.setPicker` 上層「全選」也不含（只有 optIn 的那一層全選才會選到）。
+- `content/bank/eye_ans/disputed/eye115-disputed.json`：8 題選項措辭有歧義的國考題（path `115 大二上 → 答案疑義（要自己勾選才會出題）`），已從原題本、學習單元的實戰／例題 qids、知識筆記 evidence 移出（題目 id 改成 `eye115-disputed-<n>`，舊作答紀錄不沿用）。已核對考選部標準答案與更正答案：9 題（含 108 生特 6 角膜與鞏膜題）都無更正；報告 `tmp/official/report.md`。教材文字裡的出處（如「110 生普 15」）保留。

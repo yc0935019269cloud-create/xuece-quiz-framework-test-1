@@ -162,6 +162,7 @@ const Store = (() => {
     let list = window.QB.questions;
     if (opt.ids) { const set = new Set(opt.ids); list = list.filter(q => set.has(q.id)); }
     if (opt.exams && opt.exams.length) { const s = new Set(opt.exams); list = list.filter(q => s.has(q.exam)); }
+    else if (!opt.ids) list = list.filter(q => !EX[q.exam].optIn);   // optIn 題本（例：答案疑義）只有明確勾選才出題，沒選題本＝全部時不含
     if (opt.subjects && opt.subjects.length) { const s = new Set(opt.subjects); list = list.filter(q => s.has(EX[q.exam].subj)); }
     if (opt.years && opt.years.length) { const s = new Set(opt.years.map(Number)); list = list.filter(q => s.has(examYear(EX[q.exam]))); }
     if (opt.types && opt.types.length) { const s = new Set(opt.types); list = list.filter(q => s.has(q.type)); }

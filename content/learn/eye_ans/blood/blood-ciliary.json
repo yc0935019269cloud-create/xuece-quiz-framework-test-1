@@ -7,7 +7,6 @@
     "eye115-exam-blood-ciliary-107",
     "eye115-exam-blood-ciliary-108",
     "eye115-exam-blood-ciliary-109",
-    "eye115-exam-blood-ciliary-110",
     "eye115-exam-blood-ciliary-111",
     "eye115-exam-blood-ciliary-112",
     "eye115-exam-blood-ciliary-113",
@@ -689,7 +688,7 @@
           ],
           "exam": [
             "配對赤道後脈絡膜與後短，勿選後長（出處：109 生特 16、113 師高 24）。",
-            "後長與前睫狀均供應前節；110 生普 15 原答案為後長，但前睫狀也供應，題目有疑義（出處：110 生普 15）。"
+            "後長與前睫狀都供應虹膜與睫狀體（前節），兩條都要記。"
           ],
           "img": "img/eye-anat-fig/v2_ciliary.jpg",
           "img_source": "Henry Vandyke Carter，Wikimedia Commons「Gray873.png」，Public domain（https://commons.wikimedia.org/wiki/File:Gray873.png）；中文標註與配色為本課加註（圖上英文為原圖標籤）",
@@ -1110,7 +1109,6 @@
           "qids": [
             "eye115-exam-blood-ciliary-108-17",
             "eye115-exam-blood-ciliary-109-316",
-            "eye115-exam-blood-ciliary-110-215",
             "eye115-exam-blood-ciliary-114-22",
             "eye115-exam-blood-ciliary-106-7",
             "eye115-exam-blood-ciliary-107-130",
@@ -1172,17 +1170,15 @@
           "use": "睫狀動脈題。",
           "tip": "後短不是供應睫狀體。",
           "evidence": {
-            "count": 5,
+            "count": 4,
             "questionIds": [
               "eye115-exam-blood-ciliary-109-316",
               "eye115-exam-blood-retina-113-216",
-              "eye115-exam-blood-ciliary-110-215",
               "eye115-exam-blood-ciliary-112-23",
               "eye-quiz-blood-supply-25"
             ],
             "years": [
               109,
-              110,
               112,
               113
             ]
