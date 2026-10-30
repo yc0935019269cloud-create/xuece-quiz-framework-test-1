@@ -95,6 +95,17 @@ for key, views in approximate.items():
             if key in keys: keys.remove(key)
         del registry[key]
 
+# 補充圖（各種角度）：tools/midterm/extra_views.json，每張圖列出構造中文名與百分比座標。
+# 只加進總複習的 📍 位置，不新增學習單元；名稱必須對到上面的構造，否則停下來報錯。
+EXTRA = Path(__file__).with_name('extra_views.json')
+for fig in (json.loads(EXTRA.read_text(encoding='utf-8')) if EXTRA.exists() else []):
+    for pt in fig['points']:
+        key = next((k for k, d in registry.items() if d['zh'] == pt['zh']), None)
+        assert key, f"extra_views：{fig['img']} 的「{pt['zh']}」對不到任何構造"
+        view = {'img': fig['img'], 'x': pt['x'], 'y': pt['y'], 'title': fig['title'], 'from': '補充圖・' + fig['source']}
+        if not any((v['img'], v['x'], v['y']) == (view['img'], view['x'], view['y']) for v in registry[key]['views']):
+            registry[key]['views'].append(view)
+
 # ⭐＝實驗課老師在逐字稿裡明說會考／考試考（2026-10-30 使用者：《會考的.html》是自己勾的，不採用）。
 # 來源：E:\學習\大二上\眼解剖實驗\逐字稿\校訂逐字稿\20261016_眼解剖實驗_Turbo_01\<檔>\校訂逐字稿.txt 行號
 LAB = '眼解剖實驗逐字稿 '
