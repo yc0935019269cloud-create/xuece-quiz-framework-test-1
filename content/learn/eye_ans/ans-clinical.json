@@ -1704,105 +1704,31 @@
       "steps": [
         {
           "type": "intro",
-          "title": "IV、VI 麻痺與海綿竇",
+          "title": "考點地圖：IV、VI 與反射",
           "body": [
-            "> [!big] {p:IV 麻痺 → 上斜視、頭歪健側}；{b:VI 麻痺 → 內斜視、水平複視}。",
-            "",
-            "海綿竇病變、眼心反射也在這一課一起整理。"
+            "> [!big] 國考以神經路徑、麻痺方向與病灶定位為主，再考海綿竇和眼心反射。",
+            "1. IV 的背側出腦與交叉支配（113 師高 31）",
+            "2. 單側 IV 麻痺：眼位、複視與頭傾（107 師高 32）",
+            "3. 雙側 IV 麻痺：旋轉與 V 型（111 師高 33）",
+            "4. VI 麻痺：外展、複視與頭轉（108 生普 15）",
+            "5. VI 與 VII：橋腦定位（107 師特 35）",
+            "6. VI 行程與麻痺原因（107 師高 31、114 師高 30）",
+            "7. 海綿竇的腔內與外側壁（106 師特 11、110 師高 32）",
+            "8. 眼心反射的傳入與傳出（114 師高 24）"
           ]
         },
         {
           "type": "card",
-          "title": "先分方向：IV 與 VI",
+          "title": "IV 路徑：背側出腦、先交叉",
           "body": [
-            "> [!big] 先找受損的肌肉，再推眼位和複視方向。",
-            "",
+            "> [!big] 滑車神經在中腦背側出腦，纖維交叉後支配對側上斜肌。",
             "[[img]]",
-            "",
-            "| 神經 | 肌肉 | 主要困難 |",
-            "|---|---|---|",
-            "| IV | 上斜肌 | 內收時向下看 |",
-            "| VI | 外直肌 | 向患側外展 |",
-            "",
-            "> [!why] 為什麼？",
-            "> 肌肉失去拉力後，對抗肌的作用相對占優勢；兩眼影像分離而產生複視。"
+            "- IV 細、軸索少且顱內行程長，頭部外傷可能傷及。",
+            "- 上斜肌參與內旋與下轉；內收時下轉作用特別重要。"
           ],
           "exam": [
-            "🎯 先判方向，再判神經；III 麻痺的瞳孔表現依受累範圍而異。"
-          ],
-          "img": [
-            "img/eye-anat-fig/so_trochlea.jpg",
-            "img/eye-anat-fig/nuc_iv.jpg"
-          ],
-          "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
-        },
-        {
-          "type": "check",
-          "kind": "single",
-          "q": "右眼外展受限，應先想到哪條神經？",
-          "choices": [
-            "右 IV",
-            "右 VI",
-            "左 VI",
-            "視神經 II"
-          ],
-          "answer": 1,
-          "hint": "先想受損肌肉原本的作用。",
-          "explain": "右外直肌由右 VI 支配；外展受限先考慮右 VI。"
-        },
-        {
-          "type": "card",
-          "title": "滑車神經的路徑",
-          "body": [
-            "> [!big] IV 從腦幹背側出來，纖維交叉後支配對側上斜肌。",
-            "",
-            "[[img]]",
-            "",
-            "- 在中腦與 III 相鄰，但 IV 走背側、III 走腹側。",
-            "- IV 細且顱內行程長，頭部外傷可能傷及。",
-            "",
-            "> [!why] 為什麼？",
-            "> 核發出的纖維交叉，所以核病灶與周邊神經病灶的側別不能直接混為一談。"
-          ],
-          "exam": [
-            "🎯 記「滑車背出、交叉」；勿把神經受損側和核受損側混同。"
-          ],
-          "img": [
-            "img/eye-anat-fig/so_trochlea.jpg",
-            "img/eye-anat-fig/nuc_iv.jpg"
-          ],
-          "img_source": "Patrick J. Lynch, medical illustrator，Wikimedia Commons「Lateral orbit anatomy 2.jpg」，CC BY 2.5（https://commons.wikimedia.org/wiki/File:Lateral_orbit_anatomy_2.jpg）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 652.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_652.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
-        },
-        {
-          "type": "check",
-          "kind": "single",
-          "q": "滑車神經出腦幹的方向與纖維交叉，何者正確？",
-          "choices": [
-            "腹側出、不交叉",
-            "背側出、交叉",
-            "背側出、不交叉",
-            "腹側出、交叉"
-          ],
-          "answer": 1,
-          "hint": "先想受損肌肉原本的作用。",
-          "explain": "IV 從背側出腦幹，纖維在出腦幹前交叉。"
-        },
-        {
-          "type": "card",
-          "title": "IV 麻痺：從肌肉推頭位",
-          "body": [
-            "> [!big] 上斜肌無力時，患眼較高，內收向下看時垂直複視較明顯。",
-            "",
-            "[[img]]",
-            "",
-            "- 上斜肌參與內旋；無力時可出現外旋。",
-            "- 常見代償：頭傾向健側；先天性可查舊照片。",
-            "",
-            "> [!why] 為什麼？",
-            "> 向內下看需要上斜肌的下轉作用；把頭傾向健側有助減輕複視。"
-          ],
-          "exam": [
-            "🎯 右 IV：右眼較高、頭傾左；往左下看較困難。"
+            "辨認背側出腦，不是腹側（出處：113 師高 31、110 生普 22）。",
+            "核支配對側上斜肌，勿與周邊神經受損側混淆（出處：113 師高 20、107 生普 24）。"
           ],
           "img": [
             "img/eye-anat-fig/so_trochlea.jpg",
@@ -1826,20 +1752,17 @@
         },
         {
           "type": "card",
-          "title": "雙側 IV：旋轉與 V 型",
+          "title": "單側 IV 麻痺：高、內下、頭傾健側",
           "body": [
-            "> [!big] 雙側 IV 麻痺可出現外旋與 V 型斜視。",
-            "",
+            "> [!big] IV 麻痺使患眼偏高，內收向下看時垂直複視較明顯。",
             "[[img]]",
-            "",
-            "- 雙馬竇氏鏡可量測旋轉偏斜；雙側病例常見較大的外旋。",
-            "- V 型表示向上與向下看時水平偏斜不同；向下看較內偏。",
-            "",
-            "> [!why] 為什麼？",
-            "> 雙側上斜肌無力會影響眼球旋轉與不同垂直注視位置的水平眼位。"
+            "- 上斜肌內旋作用減弱，可出現外旋；瞳孔通常不受影響。",
+            "- 代償常將頭傾向健側（wry neck）；懷疑先天性時可查舊照片。",
+            "- 右 IV：右眼較高，左看及向下看較困難，頭傾左。"
           ],
           "exam": [
-            "🎯 常見旋轉量大於 10° 是線索，不是單一確診標準。"
+            "右 IV 向左看較嚴重，勿誤選向右看（出處：107 師高 32）。",
+            "患眼偏高、頭傾健側；勿把上斜肌錯認為下斜肌（出處：107 師高 20）。"
           ],
           "img": [
             "img/eye-anat-fig/so_trochlea.jpg",
@@ -1863,23 +1786,63 @@
         },
         {
           "type": "card",
-          "title": "VI 麻痺：眼睛向外走不動",
+          "title": "雙側 IV 麻痺：外旋與 V 型",
           "body": [
-            "> [!big] 外直肌由 VI 支配；麻痺時患眼外展不足，常有內斜及水平複視。",
-            "",
+            "> [!big] 雙側 IV 麻痺可有交替性上斜、外旋及 V 型斜視。",
             "[[img]]",
-            "",
-            "- 向患側看時需要患眼外展，複視通常加重。",
-            "- 可轉頭朝患側，減少需要患眼外展的程度。",
-            "",
-            "> [!why] 為什麼？",
-            "> 外直肌拉力減弱，內直肌相對占優；轉頭可讓眼球留在較容易融合的位置。"
+            "- 雙馬竇氏鏡量測旋轉偏斜；雙側常有較大的外旋。",
+            "- V 型：向下看時較內偏；外旋大於 10° 是線索，並非單獨確診標準。"
           ],
           "exam": [
-            "🎯 記「VI 外展，頭轉患側」。"
+            "雙側 IV 常考 V 型，勿選 A 型（出處：111 師高 33）。",
+            "雙馬竇氏鏡測旋轉偏斜，不是測水平偏斜的專屬工具（出處：107 師特 34）。"
           ],
           "img": "img/eye-anat-fig/cav_vi.jpg",
           "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "右眼外展受限，應先想到哪條神經？",
+          "choices": [
+            "右 IV",
+            "右 VI",
+            "左 VI",
+            "視神經 II"
+          ],
+          "answer": 1,
+          "hint": "先想受損肌肉原本的作用。",
+          "explain": "右外直肌由右 VI 支配；外展受限先考慮右 VI。"
+        },
+        {
+          "type": "card",
+          "title": "VI 麻痺：外展不足、頭轉患側",
+          "body": [
+            "> [!big] VI 支配外直肌；麻痺時患眼外展不足，常有內斜與水平複視。",
+            "[[img]]",
+            "- 向患側看需要患眼外展，複視通常加重。",
+            "- 頭轉向患側，可減少患眼外展需求。"
+          ],
+          "exam": [
+            "外展不足與內斜並列，勿誤說向鼻側看時複視最重（出處：108 生普 15）。",
+            "代償頭轉患側，不是頭傾健側（出處：108 師高 13）。"
+          ],
+          "img": "img/eye-anat-fig/cav_vi.jpg",
+          "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
+        },
+        {
+          "type": "check",
+          "kind": "single",
+          "q": "滑車神經出腦幹的方向與纖維交叉，何者正確？",
+          "choices": [
+            "腹側出、不交叉",
+            "背側出、交叉",
+            "背側出、不交叉",
+            "腹側出、交叉"
+          ],
+          "answer": 1,
+          "hint": "先想受損肌肉原本的作用。",
+          "explain": "IV 從背側出腦幹，纖維在出腦幹前交叉。"
         },
         {
           "type": "check",
@@ -1897,22 +1860,21 @@
         },
         {
           "type": "card",
-          "title": "橋腦定位：VI 與 VII",
+          "title": "VI 與 VII：橋腦定位",
           "body": [
-            "> [!big] VI 核附近有 VII 神經纖維繞行，同側 VI 與 VII 徵象可提示橋腦病灶。",
-            "",
+            "> [!big] VII 纖維繞過 VI 核，同側 VI、VII 徵象可提示橋腦病灶。",
             "[[img]]",
-            "",
-            "- 核區病灶可影響同側水平凝視及顏面神經。",
-            "- 若同時累及錐體束，可出現對側肢體無力。",
-            "",
-            "> [!why] 為什麼？",
-            "> 顏面神經纖維繞過 VI 核；運動路徑在腦幹下方交叉，故腦幹病灶的肢體徵象常在對側。"
+            "- 核區受損可影響同側水平凝視與顏面神經。",
+            "- 若病灶同時累及錐體束，可出現對側肢體無力。"
           ],
           "exam": [
-            "🎯 神經束病灶不必然累及錐體束；伴隨對側肢體無力才提示範圍延伸。"
+            "VI 與 VII 同時麻痺，定位橋腦而非中腦（出處：107 師特 35）。",
+            "合併錐體束時肢體無力在對側；並非所有病灶都會累及（出處：108 師高 13）。"
           ],
-          "img": "img/eye-anat-fig/cav_vi.jpg",
+          "img": [
+            "img/eye-anat-fig/cav_vi.jpg",
+            "img/eye-anat-fig/nuc_vi.jpg"
+          ],
           "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
         },
         {
@@ -1931,44 +1893,32 @@
         },
         {
           "type": "card",
-          "title": "VI 的行程與原因",
+          "title": "VI 行程與麻痺原因",
           "body": [
-            "> [!big] VI 經海綿竇、眶上裂及總腱環到外直肌。",
-            "",
+            "> [!big] VI 經海綿竇、眶上裂及總腱環，最後支配外直肌。",
             "[[img]]",
-            "",
-            "- 顱壓升高、外傷、缺血或海綿竇病變都可能造成 VI 麻痺。",
-            "- 後交通動脈瘤常考壓迫 III；實際病因須臨床評估。",
-            "",
-            "> [!why] 為什麼？",
-            "> VI 顱內行程長，沿途不同位置受損都可能影響外展。"
-          ],
-          "exam": [
-            "🎯 不可只憑眼位將原因斷定為某一病灶。"
-          ],
-          "img": [
-            "img/eye-anat-fig/cav_vi.jpg",
-            "img/eye-anat-fig/nuc_vi.jpg"
-          ],
-          "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）"
-        },
-        {
-          "type": "card",
-          "title": "海綿竇：受影響的腦神經",
-          "body": [
-            "> [!big] 海綿竇病變可影響 III、IV、V1、V2、VI；V3 不在其中。",
-            "",
-            "[[img]]",
-            "把「腔內」與「外側壁」分開看：VI 位於竇內，III、IV、V1、V2 位於外側壁。",
-            "- 頸動脈海綿竇瘻管可影響這些路徑；受累組合依病灶範圍而異。"
+            "- 顱壓升高、外傷、缺血或海綿竇病變均可能影響 VI。",
+            "- 後交通動脈瘤常考壓迫 III；不能只憑眼位斷定病因。"
           ],
           "img": "img/eye-anat-fig/cav_vi.jpg",
           "img_source": "Okkes Kuybu, MD and Diana，Wikimedia Commons「Anatomy of the cavernous sinus.jpg」，CC BY 4.0（https://commons.wikimedia.org/wiki/File:Anatomy_of_the_cavernous_sinus.jpg）；Dr. Johannes Sobotta，Wikimedia Commons「Sobo 1909 668.png」，Public domain（https://commons.wikimedia.org/wiki/File:Sobo_1909_668.png）（中文名稱與紅色編號為本課加註，圖上原有文字為原作者標籤）",
           "exam": [
-            "**考法**：海綿竇外側壁與頸動脈海綿竇瘻管（106 師特 11、110 師高 32）。"
+            "VI 走眶上裂，不是視神經管（出處：114 師高 30）。",
+            "常見原因題中，後交通動脈瘤較典型壓迫 III（出處：107 師高 31）。"
+          ]
+        },
+        {
+          "type": "card",
+          "title": "海綿竇：腔內與外側壁",
+          "body": [
+            "> [!big] 海綿竇外側壁有 III、IV、V1、V2；VI 與頸內動脈位於竇腔內。",
+            "[[img]]",
+            "- V3 走卵圓孔，不經海綿竇。",
+            "- 頸動脈海綿竇瘻管可能影響經過的神經；受累組合依病灶範圍而異。"
           ],
-          "demo": [
-            "**示範**：題目問「不屬於海綿竇的神經」→ V3，而不是 V1 或 V2。"
+          "exam": [
+            "外側壁病灶時，VI 支配的外直肌可相對保留（出處：106 師特 11）。",
+            "瘻管題的不包括選 V3，勿誤選 IV 或 VI（出處：110 師高 32）。"
           ]
         },
         {
@@ -1987,21 +1937,18 @@
         },
         {
           "type": "card",
-          "title": "眼心反射：把感覺與動作分開",
+          "title": "眼心反射：V 傳入、X 傳出",
           "body": [
-            "> [!big] 眼外肌牽拉或眼球受壓，可透過 V 傳入、X 傳出，使心跳減慢。",
-            "",
+            "> [!big] 眼外肌牽拉或眼球受壓可引發眼心反射，使心跳減慢。",
             "::: flow",
-            "眼球或眼外肌受刺激",
+            "眼球受壓或眼外肌牽拉",
             "三叉神經 V 傳入 → 腦幹",
             "迷走神經 X 傳出 → 心跳減慢",
-            ":::",
-            "",
-            "> [!why] 為什麼？",
-            "> 感覺訊號先送進腦幹，再由副交感傳出影響心臟；支配眼肌的 III 並非此反射傳出神經。"
+            ":::"
           ],
           "exam": [
-            "🎯 114 師高 24：分清 V 傳入、X 傳出。"
+            "辨認 V 傳入、X 傳出，勿把支配眼肌的 III 當成反射弧神經（出處：114 師高 24）。",
+            "眼外肌牽拉可觸發反射；反應是心率降低（出處：114 師高 24）。"
           ]
         },
         {
@@ -2019,37 +1966,57 @@
           "explain": "眼心反射以三叉神經 V 傳入、迷走神經 X 傳出；不是支配眼外肌的 III。"
         },
         {
+          "type": "card",
+          "title": "易混淆總對照：IV、VI 與海綿竇",
+          "body": [
+            "> [!big] 先辨頭「傾」或「轉」，再辨海綿竇外側壁或腔內。",
+            "| 比較 | IV 麻痺 | VI 麻痺 |",
+            "|---|---|---|",
+            "| 肌肉與困難 | 上斜肌；內收下看 | 外直肌；外展 |",
+            "| 眼位與複視 | 患眼較高、垂直複視 | 內斜、水平複視 |",
+            "| 代償頭位 | 傾健側 | 轉患側 |",
+            "| 海綿竇 | IV 在外側壁 | VI 在腔內；V3 不經竇 |"
+          ],
+          "exam": [
+            "區分頭傾健側與頭轉患側（出處：107 師高 32、108 師高 13）。",
+            "區分 IV 外側壁與 VI 腔內（出處：106 師特 11）。"
+          ]
+        },
+        {
           "type": "example",
-          "title": "把國考題走一遍：雙側滑車神經麻痺（111 師高 33）",
-          "problem": "關於雙側滑車神經麻痺的表現，下列何者錯誤？\nA 往左看時右眼眼位較高　B 往右看時左眼眼位較高　C 雙馬竇氏鏡旋轉斜視 > 10°　D 患者會有 A 型眼位",
+          "title": "國考逐步解析：雙側 IV（111 師高 33）",
+          "problem": "【111 年第二次專技高考・驗光師《眼球解剖生理學與倫理法規》 第 33 題】\n\n關於雙側滑車神經麻痺的表現，下列何者錯誤？\nA. 往左看時右眼眼位較高\nB. 往右看時左眼眼位較高\nC. 以雙馬竇氏鏡檢查（double Maddox rod test）旋轉斜視（cyclodeviation）的角度大於10 度\nD. 患者會有A 型（A pattern）眼位",
           "steps": [
-            "A、B：雙側 IV → 內收時上斜肌無力 → 該眼較高 ✓。",
-            "C：旋轉斜視大（> 10°）✓。",
-            "D：雙側 IV 是 **V 型**（向下看內斜增加），不是 A 型 ✗。"
+            "A：左看時右眼內收，右上斜肌無力可使右眼較高，正確。",
+            "B：右看時左眼內收，左眼可較高，正確。",
+            "C：雙側可有大於 10 度外旋；這是線索而非必備條件，題目敘述可成立。",
+            "D：典型為 V 型，不是 A 型；本題選錯誤項。"
           ],
           "answer": "D。"
         },
         {
           "type": "example",
-          "title": "把國考題走一遍：外旋神經麻痺（108 師高 13）",
-          "problem": "關於外旋神經麻痺的敘述，下列何者錯誤？\nA 病因在纖維束，可能伴隨同側肢體麻痺　B 內斜視與水平複視　C 病因在腦幹神經核，會伴隨顏面神經麻痺　D 頭會習慣性轉向麻痺的同側",
+          "title": "國考逐步解析：VI 與橋腦（108 師高 13）",
+          "problem": "【108 年特種考試・驗光師《眼球解剖生理學與倫理法規》 第 13 題】\n\n關於外旋神經麻痺的敘述，下列何者錯誤？\nA. 造成麻痺的原因若在纖維束（fasciculus），可能伴隨同側肢體麻痺\nB. 會造成內斜視與水平複視\nC. 造成麻痺的原因若在腦幹的神經核，會伴隨顏面神經的麻痺\nD. 頭會習慣性轉向麻痺的同側",
           "steps": [
-            "B、D ✓（內斜、轉向患側）。",
-            "C：VII 纖維繞過 VI 核 → 核病灶合併 VII 麻痺 ✓。",
-            "A：纖維束病灶會合併**對側**肢體偏癱，不是同側 ✗。"
+            "A：纖維束病灶若累及錐體束，可造成對側肢體無力；同側是錯的。",
+            "B：外直肌無力可造成內斜與水平複視，正確。",
+            "C：VII 纖維繞過 VI 核，核區病灶可伴顏面麻痺；實際不一定每例皆有。",
+            "D：頭轉向患側可減少外展需求，正確。"
           ],
           "answer": "A。"
         },
         {
           "type": "example",
-          "title": "逐步拆題：眼心反射（114 師高 24）",
-          "problem": "眼外肌受牽拉後心跳減慢，反射的傳入與傳出分別為何？",
+          "title": "國考逐步解析：海綿竇外側壁（106 師特 11）",
+          "problem": "【106 年特種考試・驗光師《眼球解剖生理學與倫理法規》 第 11 題】\n\n若海綿竇（cavernous sinus）的外側壁受到病灶影響，那一條眼外肌的功能會比其他眼外肌相對正常？\nA. 內直肌\nB. 上斜肌\nC. 外直肌\nD. 下斜肌",
           "steps": [
-            "先找刺激：眼球與眼外肌的感覺經三叉神經 V 傳入。",
-            "再找反應：心跳變慢由迷走神經 X 傳出。",
-            "眼肌運動神經 III 並非這個反射的心臟傳出路徑。"
+            "A：內直肌由 III 支配；III 走外側壁，可能受影響。",
+            "B：上斜肌由 IV 支配；IV 走外側壁，可能受影響。",
+            "C：外直肌由 VI 支配；VI 在竇腔內，外側壁病灶可相對保留，選 C。",
+            "D：下斜肌由 III 支配；III 走外側壁，可能受影響。"
           ],
-          "answer": "V 傳入，X 傳出。"
+          "answer": "C。"
         },
         {
           "type": "practice",
@@ -2068,10 +2035,14 @@
             "n": 6
           },
           "qids": [
+            "eye115-exam-ans-clinical-110-222",
             "eye115-exam-ans-clinical-107-32",
-            "eye115-exam-ans-clinical-111-33",
-            "eye115-exam-ans-clinical-108-13",
+            "eye115-exam-ans-clinical-107-134",
+            "eye115-exam-ans-clinical-108-215",
+            "eye115-exam-ans-clinical-107-135",
             "eye115-exam-ans-clinical-107-31",
+            "eye115-exam-ans-clinical-114-30",
+            "eye115-exam-ans-clinical-110-32",
             "eye115-exam-ans-clinical-114-24"
           ],
           "checks": []
@@ -2079,14 +2050,49 @@
         {
           "type": "recap",
           "points": [
-            "IV：患側上斜視、頭歪健側、旋轉斜視、雙側 V 型；先天性看舊照片。",
-            "VI：內斜視、頭轉患側；核病灶合併 VII；後交通動脈瘤壓 III 不是 VI。",
-            "CCF 影響 III、IV、V1、V2、VI；眼心反射 V → X。"
+            "IV 背側出腦並交叉；上斜肌無力時患眼偏高、頭傾健側。",
+            "雙側 IV 可外旋及 V 型；雙馬竇氏鏡測旋轉偏斜。",
+            "VI 麻痺外展不足、內斜及水平複視，頭轉患側。",
+            "VI 與 VII 徵象提示橋腦；累及錐體束可有對側肢體無力。",
+            "VI 經海綿竇與眶上裂；竇外側壁是 III、IV、V1、V2，V3 不經過。",
+            "眼心反射由 V 傳入、X 傳出，心跳減慢。"
           ],
           "flash": [
             {
               "front": "雙側 IV 麻痺是 A 型還是 V 型？",
               "back": "V 型。"
+            },
+            {
+              "front": "右 IV 麻痺常見頭傾方向？",
+              "back": "左側（健側）；右眼內收向下看較困難。"
+            },
+            {
+              "front": "VI 麻痺的眼位與代償頭位？",
+              "back": "常見內斜；頭轉向患側。"
+            },
+            {
+              "front": "海綿竇中 VI 與 V3 的位置？",
+              "back": "VI 在竇腔內；V3 不經海綿竇。"
+            },
+            {
+              "front": "眼心反射傳入、傳出？",
+              "back": "V 傳入，X 傳出。"
+            },
+            {
+              "front": "右 IV 麻痺常見頭傾方向？",
+              "back": "左側（健側）；右眼內收向下看較困難。"
+            },
+            {
+              "front": "VI 麻痺的眼位與代償頭位？",
+              "back": "常見內斜；頭轉向患側。"
+            },
+            {
+              "front": "海綿竇中 VI 與 V3 的位置？",
+              "back": "VI 在竇腔內；V3 不經海綿竇。"
+            },
+            {
+              "front": "眼心反射傳入、傳出？",
+              "back": "V 傳入，X 傳出。"
             }
           ],
           "next": "完成！"
