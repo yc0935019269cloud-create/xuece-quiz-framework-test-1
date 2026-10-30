@@ -380,6 +380,7 @@ const PEGLIN = (() => {
     if (!G.panel && G.parked && (e.target === document.body || (e.target.closest && e.target.closest('#pgw'))) && !/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) { e.stopImmediatePropagation(); return; }
     if (!G.panel || e.ctrlKey || e.metaKey || e.altKey) return;
     if (e.target && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
+    if (e.target.closest?.('.pgw-nav, #pgwHead')) return;
     if (G.keyBox && G.keyBox._key && G.keyBox._key(e)) { e.preventDefault(); e.stopPropagation(); return; }
     if (e.key === 'Enter' && G.goBtn && document.body.contains(G.goBtn)) { e.preventDefault(); e.stopPropagation(); G.goBtn.click(); }
   }
@@ -439,30 +440,52 @@ const PEGLIN = (() => {
   function goButton(box, it, label, before) {
     const row = U.h(`<div class="row mt pgw-go"><button class="px-btn gold big">${label || nextLabel()}</button></div>`);
     box.appendChild(row); G.goBtn = row.firstElementChild; G.goBtn.onclick = () => { SFX.play('click'); before && before(); proceed(it, false); };
-    if (G.credits > 0 || (before && G.pts + 1 >= G.per)) row.appendChild(shootBtn(before));
+    if (G.credits > 0 || (before && !it.back && G.pts + 1 >= G.per)) row.appendChild(shootBtn(before));
     return G.goBtn;
   }
-  function next() {
+  function next(revisit = false) {
     if (!G) return;
     clearItem(); G.parked = false;
-    const it = G.S.next(); openPanel();
-    const body = U.$('#pgwQ'); body.innerHTML = '';
-    if (!it) { renderEnd(body); hud(); return; }
+    const it = revisit ? G.S.current() : G.S.next(); openPanel();
+    const body = U.$('#pgwQ'); body.innerHTML = ''; U.$('#pgwPanel .pgw-nav')?.remove();
+    if (!it) {
+      renderEnd(body);
+      if (G.mode === 'learn') {
+        U.$('#pgwHead').insertAdjacentHTML('beforeend', '<button type="button" class="px-btn small" id="pgwSwitch">📚 換課</button>');
+        U.$('#pgwSwitch').onclick = switchLessons;
+      }
+      hud(); return;
+    }
     G.item = it;
     const kind = it.kind === 'read' ? it.s.type : it.kind;
     const pos = G.S.pos ? G.S.pos() : '';
     U.$('#pgwHead').innerHTML = `<span class="pgw-kind">${STEP_NAME[kind] || '📖 閱讀'}${it.review ? '・複習' : ''}</span>${it.les ? `<span class="pgw-where">${U.esc(it.les.l.title)}</span>` : ''}<span class="grow"></span><span class="dim small-t">${pos}</span>`;
+    if (G.mode === 'learn' && it.les) {
+      const head = U.$('#pgwHead'), S = G.S, cur = S.cur();
+      head.insertAdjacentHTML('beforeend', `<button type="button" class="px-btn small" id="pgwSwitch">📚 換課</button>${LEARN_UI.pageStar(it.les.p.id, it.les.l.id, it.si)}${it.back ? '<span class="tag">🔁 回顧中・作答不計分</span>' : ''}`);
+      head.querySelector('#pgwSwitch').onclick = switchLessons;
+      const nav = U.h('<div class="pgw-nav"></div>');
+      const lessonStart = S.items.findIndex(x => x.les === it.les);
+      nav.innerHTML = `${cur > 0 ? '<button type="button" class="px-btn small" data-prev>◀ 上一頁</button>' : ''}<div class="pgw-pips" aria-label="課內頁面">${S.items.map((x, k) => x.les === it.les ? `<button type="button" class="pgw-pip ${k === cur ? 'on' : ''}" data-page="${k}" aria-label="第 ${k - lessonStart + 1} 步" ${k === cur ? 'aria-current="step"' : ''} ${k > S.frontier() ? 'disabled' : ''}></button>` : '').join('')}</div>`;
+      body.before(nav); nav.querySelectorAll('[data-page], [data-prev]').forEach(b => b.onclick = () => { const k = b.hasAttribute('data-prev') ? cur - 1 : +b.dataset.page; if (S.goto(k)) next(true); });
+    }
     if (it.kind === 'bank') renderBank(body, it); else if (it.kind === 'check') renderCheckItem(body, it); else renderRead(body, it);
     hud();
   }
   function graded(it, firstOk, ok) {
+    if (it.back) return;
+    if (it.les && !it.review) it.done = true;
     G.graded++; if (firstOk) G.right++; if (!ok) G.wrong.push(it);
     if (!G.test) {
       if (it.kind === 'bank') { Store.record(it.q.id, ok); Store.addAccXp(ok ? 8 : 2); if (ok) Store.addGems(1); }
       else if (typeof LEARN_UI !== 'undefined') { LEARN_UI.applyPeglin({ type: 'check', id: it.c.id, ok: firstOk, first: firstOk }); if (firstOk) Store.addAccXp(4); }
       App.refreshTop();
     }
-    if (it.les && !it.review) { it.les.n++; if (firstOk) it.les.ok++; }
+    if (it.les && !it.review) {
+      it.les.n++; if (firstOk) it.les.ok++;
+      // Navigation can leave an answered final page before its continue button is pressed.
+      if (it.lessonEnd) finishLesson(it.les);
+    }
     if (G.S.graded) G.S.graded(it, ok);
     earn(G.onWrong === 'count' || ok);
   }
@@ -508,7 +531,7 @@ const PEGLIN = (() => {
   function renderRead(body, it) {
     const wrap = U.h(`<div class="lp-body pgw-lp t-${U.esc(it.s.type)}">${readHTML(it.s, it.les.l)}</div>`); body.appendChild(wrap);
     if (typeof GLOSS !== 'undefined' && GLOSS.scan) { try { GLOSS.scan(wrap); } catch {} }
-    goButton(wrap, it, '讀完了，下一步 ▶', () => { G.reads++; earn(true); });
+    goButton(wrap, it, '讀完了，下一步 ▶', () => { if (!it.back) { it.done = true; G.reads++; earn(true); } });
   }
   function renderEnd(body) {
     U.$('#pgwHead').innerHTML = '<span class="pgw-kind">🏁 這一輪完成</span>';
@@ -533,7 +556,7 @@ const PEGLIN = (() => {
     document.removeEventListener('keydown', onKey, true); document.removeEventListener('pointerdown', popOutside, true); window.removeEventListener('blur', popBlur); popOpen = null;
     clearInterval(g.pomoTimer); clearInterval(g.cloudTimer); document.removeEventListener('visibilitychange', cloudVis);
     const el = U.$('#pgw'), f = U.$('#pgwFrame');
-    if (el) { el.style.display = 'none'; el.id = 'pgwClosing'; } if (f) f.id = 'pgwFrameClosing';   // 改名：馬上再開一場時不會撞到 ID
+    if (el) { el.style.display = 'none'; el.id = 'pgwClosing'; el.querySelectorAll('[id]').forEach(x => { if (x !== f) x.id += 'Closing'; }); } if (f) f.id = 'pgwFrameClosing';   // 改名：馬上再開一場時不會撞到 ID
     document.documentElement.classList.remove('pgw-open');
     // 先把最新的遊戲存檔讀出來（最多等 2.5 秒）再關掉遊戲，然後在背景上傳
     (upload && f ? requestExport(2500, f) : Promise.resolve(null)).then(snap => {
@@ -612,25 +635,39 @@ const PEGLIN = (() => {
     const out = [];
     list.forEach(({ p, l }) => {
       const les = { p, l, n: 0, ok: 0 }, start = out.length, add = it => out.push(Object.assign(it, { les }));
-      l.steps.forEach(s => {
-        if (s.type === 'check') add({ kind: 'check', c: s });
+      l.steps.forEach((s, si) => {
+        const addStep = it => add(Object.assign(it, { si }));
+        if (s.type === 'check') addStep({ kind: 'check', c: s });
         else if (s.type === 'practice') {
           const qs = (s.qids || []).map(id => Store.Q[id]).filter(q => q && !FOLLOW_RE.test(q.stem || ''));
           if (s.pick) pickBank(s.pick, s.pick.n || 2, p.subject).forEach(q => { if (!qs.includes(q)) qs.push(q); });
-          qs.forEach(q => add({ kind: 'bank', q }));
-          (s.checks || []).forEach(c => add({ kind: 'check', c }));
-        } else add({ kind: 'read', s });
+          qs.forEach(q => addStep({ kind: 'bank', q }));
+          (s.checks || []).forEach(c => addStep({ kind: 'check', c }));
+        } else addStep({ kind: 'read', s });
       });
       if (out.length > start) out[out.length - 1].lessonEnd = true;
     });
     return out;
   }
   function learnSession(lcfg, list) {
-    const items = learnItems(list); let i = 0, rev = null, ri = 0;
+    const items = learnItems(list); let i = 0, view = null, rev = null, ri = 0, reviewingIndex = null;
     return {
-      mode: 'learn', label: lessonLabel(list), per: lcfg.per, shots: lcfg.shots, onWrong: lcfg.onWrong, test: !!lcfg.test,
-      pos: () => rev ? '複習' : `第 ${Math.min(i, items.length)} / ${items.length} 步`,
+      mode: 'learn', label: lessonLabel(list), lcfg: { ...lcfg, sel: list.map(({ p, l }) => p.id + '/' + l.id) }, items,
+      per: lcfg.per, shots: lcfg.shots, onWrong: lcfg.onWrong, test: !!lcfg.test,
+      cur: () => view === null ? (reviewingIndex ?? i - 1) : view,
+      frontier: () => i - 1,
+      goto(k) { if (!Number.isInteger(k) || k < 0 || k >= i) return false; view = k; return true; },
+      current() {
+        const k = this.cur(), x = items[k];
+        return !x ? null : (k === i - 1 && !x.done ? x : { ...x, back: true, review: true, lessonEnd: false });
+      },
+      pos() { return rev && view === null ? '複習' : `第 ${Math.min(this.cur() + 1, items.length)} / ${items.length} 步`; },
       next() {
+        if (view !== null) {
+          if (view < i - 1) { view++; return this.current(); }
+          view = null;
+          if (!items[i - 1].done) return items[i - 1];
+        }
         if (i < items.length) return items[i++];
         if (!rev) {
           rev = items.filter(x => x.kind === 'bank' || (x.kind === 'check' && !CTX_RE.test(joinMd(x.c.q)))); ri = 0;
@@ -638,7 +675,8 @@ const PEGLIN = (() => {
         }
         if (!rev.length) return null;
         if (ri >= rev.length) { rev = U.shuffle(rev); ri = 0; }
-        return Object.assign({}, rev[ri++], { review: true, lessonEnd: false });
+        const item = rev[ri++]; reviewingIndex = items.indexOf(item);
+        return Object.assign({}, item, { review: true, lessonEnd: false });
       }
     };
   }
@@ -881,15 +919,8 @@ const PEGLIN = (() => {
     return [...secs.entries()].map(([name, units]) => ({ name, units: [...units.values()].sort(unitSort).map(u => ({ ...u, packs: u.packs.sort((a, b) => (a.order ?? 99) - (b.order ?? 99) || a.title.localeCompare(b.title, 'zh-Hant', { numeric: true })) })) }))
       .sort((a, b) => a.name.localeCompare(b.name, 'zh-Hant'));
   }
-  function learnSetup(box, ctx) {
-    const packs = (typeof LEARN_UI !== 'undefined' && LEARN_UI.packs) || [];
-    if (!packs.length) { box.innerHTML = '<h2>選課帶進遊戲</h2><p>目前沒有學習單元。先到「📥 導入素材」或在 content/learn/ 放入課程。</p>'; return; }
-    const subs = Object.keys(C.SUBJECTS).filter(s => packs.some(p => p.subject === s));
-    const lcfg = readCfg('peglin-learn', { subject: subs[0], sel: [], per: 1, shots: 1, onWrong: 'count', wrongPenalty: 0, reward: 'normal' });
-    if (!subs.includes(lcfg.subject)) lcfg.subject = subs[0];
-    if (!Array.isArray(lcfg.sel)) lcfg.sel = lcfg.pack && lcfg.lesson ? [lcfg.pack + '/' + lcfg.lesson] : [];
-    const valid = new Set(packs.flatMap(p => p.lessons.map(l => p.id + '/' + l.id)));
-    lcfg.sel = lcfg.sel.filter(k => valid.has(k));
+  function lessonPicker(box, lcfg, onChange) {
+    const packs = LEARN_UI.packs, subs = Object.keys(C.SUBJECTS).filter(s => packs.some(p => p.subject === s));
     const les = () => { try { return JSON.parse(localStorage.getItem(SKEY('learn')) || '{}').les || {}; } catch { return {}; } };
     const key = (p, l) => p.id + '/' + l.id;
     const isDone = (L, p, l) => !!(L[key(p, l)] || {}).done;
@@ -897,23 +928,21 @@ const PEGLIN = (() => {
     const subjOfSel = s => packs.filter(p => p.subject === s).reduce((a, p) => a + p.lessons.filter(l => lcfg.sel.includes(key(p, l))).length, 0);
     const lessonCount = s => { const L = les(); let d = 0, t = 0; packs.filter(p => p.subject === s).forEach(p => p.lessons.forEach(l => { t++; if (isDone(L, p, l)) d++; })); const n = subjOfSel(s); return `${d} / ${t} 課${n ? `・已選 ${n}` : ''}`; };
     let openUnit = '';
+    const save = () => onChange && onChange();
     box.innerHTML = `<h2>選課帶進遊戲</h2>
-      <div class="pg-step"><span class="pg-step-no">1</span><div><h3>科目</h3><div id="plSubjects"></div></div></div>
-      <div class="pg-step"><span class="pg-step-no">2</span><div><h3>點選要上的課 <small>點一下加入、再點一下取消；可以跨單元多選，會依課程順序上</small><button type="button" class="px-btn small" id="plNext">＋ 加入下一課</button></h3><div id="plTree" class="pg-tree"></div></div></div>
-      <div class="pg-step"><span class="pg-step-no">3</span><div><h3>這次的課表 <small>依課程順序</small><button type="button" class="px-btn small" id="plClear">清除</button></h3><div id="plPreview" class="peglin-lesson-preview"></div></div></div>
-      <div class="pg-step"><span class="pg-step-no">4</span><div><h3>⚪ 彈珠</h3>${shotsHtml(lcfg, true)}</div></div>
-      ${actionHtml('開始彈珠學習', '會在這個頁面打開哥布林打彈珠：讀一張卡（導入、概念、範例、回顧）或做一題檢核就能發射。檢核答錯先給提示再試一次；每課讀完會記成「完成」並給星等，選的課上完後接著複習這幾課的題目。可以點的圖解與互動模擬仍請在「📘 學習模式」操作。')}`;
-    U.$('#pgPenalty').value = lcfg.wrongPenalty; U.$('#pgReward').value = lcfg.reward;
-    const save = () => localStorage.setItem(SKEY('peglin-learn'), JSON.stringify(lcfg));
+      <div class="pg-step"><span class="pg-step-no">1</span><div><h3>科目</h3><div data-picker="plSubjects"></div></div></div>
+      <div class="pg-step"><span class="pg-step-no">2</span><div><h3>點選要上的課 <small>點一下加入、再點一下取消；可以跨單元多選，會依課程順序上</small><button type="button" class="px-btn small" data-picker="plNext">＋ 加入下一課</button></h3><div data-picker="plTree" class="pg-tree"></div></div></div>
+      <div class="pg-step"><span class="pg-step-no">3</span><div><h3>這次的課表 <small>依課程順序</small><button type="button" class="px-btn small" data-picker="plClear">清除</button></h3><div data-picker="plPreview" class="peglin-lesson-preview"></div></div></div>
+      <div data-pool></div>`;
     const toggle = k => { const i = lcfg.sel.indexOf(k); i >= 0 ? lcfg.sel.splice(i, 1) : lcfg.sel.push(k); };
     function drawSubjects() {
-      U.$('#plSubjects').innerHTML = subjectChips(subs, lcfg.subject, lessonCount);
-      U.$$('#plSubjects [data-subj]').forEach(b => b.onclick = () => { lcfg.subject = b.dataset.subj; openUnit = ''; drawAll(); });
+      box.querySelector('[data-picker="plSubjects"]').innerHTML = subjectChips(subs, lcfg.subject, lessonCount);
+      box.querySelectorAll('[data-picker="plSubjects"] [data-subj]').forEach(b => b.onclick = () => { lcfg.subject = b.dataset.subj; openUnit = ''; drawAll(); });
     }
     function drawTree() {
       const tree = packTree(packs, lcfg.subject), L = les(), sel = new Set(lcfg.sel);
       if (!openUnit) { const u = tree.flatMap(s => s.units).find(u => u.packs.some(p => p.lessons.some(l => sel.has(key(p, l))))); if (u) openUnit = u.key; }
-      U.$('#plTree').innerHTML = tree.map(sec => `<div class="pg-sec-static"><div class="pg-sec-title"><b>${U.esc(sec.name)}</b><small>${sec.units.length} 單元</small></div>
+      box.querySelector('[data-picker="plTree"]').innerHTML = tree.map(sec => `<div class="pg-sec-static"><div class="pg-sec-title"><b>${U.esc(sec.name)}</b><small>${sec.units.length} 單元</small></div>
         ${sec.units.map((u, ui) => {
           const sub = u.group && u.group !== (sec.units[ui - 1] || {}).group ? `<div class="pg-subgroup">${U.esc(u.group)}</div>` : '';
           const all = u.packs.flatMap(p => p.lessons.map(l => ({ p, l, k: key(p, l) })));
@@ -927,9 +956,9 @@ const PEGLIN = (() => {
                 return `<button type="button" class="pg-lesson ${on ? 'on' : ''} ${ok ? 'done' : ''}" data-k="${U.esc(k)}" aria-pressed="${on}"><i class="pg-check ${on ? 'on' : ''}"></i><span class="pg-lno">${ok ? '✓' : i + 1}</span><span class="pg-ltitle">${U.esc(l.title)}</span><small>${st ? '★'.repeat(st) : `${l.steps.length} 步`}</small></button>`;
               }).join('')}`).join('')}</div>` : ''}</div>`;
         }).join('')}</div>`).join('');
-      U.$$('#plTree [data-unit]').forEach(b => b.onclick = () => { openUnit = openUnit === b.dataset.unit ? '' : b.dataset.unit; drawTree(); });
-      U.$$('#plTree [data-k]').forEach(b => b.onclick = () => { toggle(b.dataset.k); if (window.SFX) SFX.play('click'); drawAll(); });
-      U.$$('#plTree [data-unitall]').forEach(b => b.onclick = () => {
+      box.querySelectorAll('[data-picker="plTree"] [data-unit]').forEach(b => b.onclick = () => { openUnit = openUnit === b.dataset.unit ? '' : b.dataset.unit; drawTree(); });
+      box.querySelectorAll('[data-picker="plTree"] [data-k]').forEach(b => b.onclick = () => { toggle(b.dataset.k); if (window.SFX) SFX.play('click'); drawAll(); });
+      box.querySelectorAll('[data-picker="plTree"] [data-unitall]').forEach(b => b.onclick = () => {
         const ks = b.dataset.unitall.split(',').filter(Boolean), unitKeys = (b.parentElement.querySelector('[data-unitall]:not([data-only])') || b).dataset.unitall.split(',');
         if (b.hasAttribute('data-only')) lcfg.sel = lcfg.sel.filter(k => !unitKeys.includes(k)).concat(ks);
         else if (ks.every(k => lcfg.sel.includes(k))) lcfg.sel = lcfg.sel.filter(k => !ks.includes(k));
@@ -938,25 +967,61 @@ const PEGLIN = (() => {
       });
     }
     function preview() {
-      save();
       const list = selectedLessons(lcfg), L = les();
-      if (!list.length) { U.$('#pgPool').textContent = '還沒選課：在上面點一下課程就會加入'; U.$('#plPreview').innerHTML = '<p class="dim small-t">（尚未選課）</p>'; U.$('#plClear').hidden = true; return; }
-      U.$('#plClear').hidden = false;
+      if (!list.length) { box.querySelector('[data-pool]').textContent = '還沒選課：在上面點一下課程就會加入'; box.querySelector('[data-picker="plPreview"]').innerHTML = '<p class="dim small-t">（尚未選課）</p>'; box.querySelector('[data-picker="plClear"]').hidden = true; save(); return; }
+      box.querySelector('[data-picker="plClear"]').hidden = false;
       const count = list.reduce((a, { l }) => { l.steps.forEach(s => { if (s.type === 'check') a.q++; else if (s.type === 'practice') a.q += (s.qids || []).length + (s.pick ? (s.pick.n || 2) : 0) + (s.checks || []).length; else a.r++; }); return a; }, { r: 0, q: 0 });
       const steps = count.r + count.q, per = Math.max(1, lcfg.per || 1), balls = Math.floor(steps / per) * Math.max(1, lcfg.shots || 1);
-      U.$('#pgPool').textContent = `已選 ${list.length} 課・約 ${count.r} 張閱讀卡＋${count.q} 題檢核（約可發射 ${balls} 顆）`;
-      U.$('#plPreview').innerHTML = list.map(({ p, l }, i) => `<div class="pg-plan"><span class="pg-lno">${i + 1}</span><div><b>${isDone(L, p, l) ? '✓ ' : ''}${U.esc(l.title)}</b><small>${U.esc(p.title)}</small></div><button type="button" class="pg-x" data-rm="${U.esc(key(p, l))}" title="取消這一課" aria-label="取消這一課">✕</button></div>`).join('');
-      U.$$('#plPreview [data-rm]').forEach(b => b.onclick = () => { toggle(b.dataset.rm); drawAll(); });
+      box.querySelector('[data-pool]').textContent = `已選 ${list.length} 課・約 ${count.r} 張閱讀卡＋${count.q} 題檢核（約可發射 ${balls} 顆）`;
+      box.querySelector('[data-picker="plPreview"]').innerHTML = list.map(({ p, l }, i) => `<div class="pg-plan"><span class="pg-lno">${i + 1}</span><div><b>${isDone(L, p, l) ? '✓ ' : ''}${U.esc(l.title)}</b><small>${U.esc(p.title)}</small></div><button type="button" class="pg-x" data-rm="${U.esc(key(p, l))}" title="取消這一課" aria-label="取消這一課">✕</button></div>`).join('');
+      box.querySelectorAll('[data-picker="plPreview"] [data-rm]').forEach(b => b.onclick = () => { toggle(b.dataset.rm); drawAll(); });
+      save();
     }
-    function drawAll() { save(); drawSubjects(); drawTree(); preview(); }
-    U.$('#plClear').onclick = () => { lcfg.sel = []; drawAll(); };
-    U.$('#plNext').onclick = () => {
+    function drawAll() { drawSubjects(); drawTree(); preview(); }
+    box.querySelector('[data-picker="plClear"]').onclick = () => { lcfg.sel = []; drawAll(); };
+    box.querySelector('[data-picker="plNext"]').onclick = () => {
       const L = les();
       for (const sec of packTree(packs, lcfg.subject)) for (const u of sec.units) for (const p of u.packs) for (const l of p.lessons)
-        if (!isDone(L, p, l) && !lcfg.sel.includes(key(p, l))) { lcfg.sel.push(key(p, l)); openUnit = u.key; drawAll(); const el = U.$(`#plTree [data-k="${CSS.escape(key(p, l))}"]`); if (el) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); return; }
+        if (!isDone(L, p, l) && !lcfg.sel.includes(key(p, l))) { lcfg.sel.push(key(p, l)); openUnit = u.key; drawAll(); const el = box.querySelector(`[data-picker="plTree"] [data-k="${CSS.escape(key(p, l))}"]`); if (el) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); return; }
       U.toast('這個科目的課都上完或都選了');
     };
-    bindShots(lcfg, () => { save(); preview(); });
+    drawAll();
+    return { refresh: preview };
+  }
+  function switchLessons() {
+    const cfg = { ...G.S.lcfg, sel: G.S.lcfg.sel.slice() };
+    const opener = document.activeElement;
+    const onKey = e => { if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); m.close(); } };
+    const m = U.modal({ title: '📚 換課', contained: true,
+      body: '<div class="pgw-picker"></div><div class="row mt pgw-switch-actions"><button type="button" class="px-btn gold" data-start>開始這些課 ▶</button><button type="button" class="px-btn" data-cancel>取消</button></div>',
+      onClose: () => { document.removeEventListener('keydown', onKey, true); if (opener?.isConnected) opener.focus({ preventScroll: true }); } });
+    document.addEventListener('keydown', onKey, true);
+    lessonPicker(m.body.querySelector('.pgw-picker'), cfg, () => {});
+    m.body.querySelector('[data-cancel]').onclick = () => m.close();
+    m.body.querySelector('[data-start]').onclick = () => {
+      const list = selectedLessons(cfg); if (!list.length) { U.toast('請先點選要上的課'); return; }
+      localStorage.setItem(SKEY('peglin-learn'), JSON.stringify(cfg));
+      G.S = learnSession(cfg, list); U.$('#pgw .pgw-title small').textContent = G.S.label;
+      m.close(); next();
+    };
+  }
+  function learnSetup(box, ctx) {
+    const packs = (typeof LEARN_UI !== 'undefined' && LEARN_UI.packs) || [];
+    if (!packs.length) { box.innerHTML = '<h2>選課帶進遊戲</h2><p>目前沒有學習單元。先到「📥 導入素材」或在 content/learn/ 放入課程。</p>'; return; }
+    const subs = Object.keys(C.SUBJECTS).filter(s => packs.some(p => p.subject === s));
+    const lcfg = readCfg('peglin-learn', { subject: subs[0], sel: [], per: 1, shots: 1, onWrong: 'count', wrongPenalty: 0, reward: 'normal' });
+    if (!subs.includes(lcfg.subject)) lcfg.subject = subs[0];
+    if (!Array.isArray(lcfg.sel)) lcfg.sel = lcfg.pack && lcfg.lesson ? [lcfg.pack + '/' + lcfg.lesson] : [];
+    const valid = new Set(packs.flatMap(p => p.lessons.map(l => p.id + '/' + l.id)));
+    lcfg.sel = lcfg.sel.filter(k => valid.has(k));
+    box.innerHTML = `<div class="pg-picker"></div><div class="pg-step"><span class="pg-step-no">4</span><div><h3>⚪ 彈珠</h3>${shotsHtml(lcfg, true)}</div></div>${actionHtml('開始彈珠學習', '會在這個頁面打開哥布林打彈珠：讀一張卡（導入、概念、範例、回顧）或做一題檢核就能發射。檢核答錯先給提示再試一次；每課讀完會記成「完成」並給星等，選的課上完後接著複習這幾課的題目。可以點的圖解與互動模擬仍請在「📘 學習模式」操作。')}`;
+    U.$('#pgPenalty').value = lcfg.wrongPenalty; U.$('#pgReward').value = lcfg.reward;
+    const save = () => {
+      localStorage.setItem(SKEY('peglin-learn'), JSON.stringify(lcfg));
+      box.querySelector('#pgPool').textContent = box.querySelector('[data-pool]').textContent;
+    };
+    const picker = lessonPicker(box.querySelector('.pg-picker'), lcfg, save);
+    bindShots(lcfg, () => picker.refresh());
     U.$('#pgPenalty').onchange = e => { lcfg.wrongPenalty = Number(e.target.value); save(); };
     U.$('#pgReward').onchange = e => { lcfg.reward = e.target.value; save(); };
     U.$('#pgWeb').onclick = () => {
@@ -965,7 +1030,6 @@ const PEGLIN = (() => {
     };
     U.$('#pgLaunch').onclick = () => launchWith(st => exportLearn(lcfg, st), ctx, true);
     U.$('#pgApply').onclick = () => launchWith(st => exportLearn(lcfg, st), ctx, false);
-    drawAll();
   }
 
   document.addEventListener('DOMContentLoaded', () => { if (autoProbe()) startSync(); });

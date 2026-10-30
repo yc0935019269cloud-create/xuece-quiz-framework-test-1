@@ -1,0 +1,159 @@
+{
+  "at": "2026-10-30T14:54:06.237Z",
+  "game": "Offline iframe fixture; real Unity game not loaded",
+  "checks": [
+    {
+      "name": "prep page course count preserved",
+      "pass": true
+    },
+    {
+      "name": "first-page previous hidden and future pips disabled",
+      "pass": true
+    },
+    {
+      "name": "page star saved to learning storage",
+      "pass": true,
+      "details": {
+        "data": {
+          "[\"page\",\"ans-basics\",\"l1\",0]": {
+            "kind": "page",
+            "p": "ans-basics",
+            "l": "l1",
+            "i": 0,
+            "t": "瞳孔會自己變大變小，你卻控制不了它",
+            "at": 1793372047311
+          }
+        },
+        "ref": {
+          "p": "ans-basics",
+          "l": "l1"
+        }
+      }
+    },
+    {
+      "name": "read marks original item done",
+      "pass": true
+    },
+    {
+      "name": "previous page and review label",
+      "pass": true
+    },
+    {
+      "name": "revisit does not reward or record, returns to undone frontier",
+      "pass": true,
+      "details": {
+        "before": {
+          "credits": 1,
+          "reads": 1,
+          "learn": "{\"les\":{},\"rev\":{},\"cfg\":{\"battle\":true,\"open\":{}},\"last\":null,\"stat\":{\"lessons\":0,\"checks\":0,\"right\":0,\"reviews\":0,\"kills\":0,\"bosses\":0},\"starred\":{\"[\\\"page\\\",\\\"ans-basics\\\",\\\"l1\\\",0]\":{\"kind\":\"page\",\"p\":\"ans-basics\",\"l\":\"l1\",\"i\":0,\"t\":\"瞳孔會自己變大變小，你卻控制不了它\",\"at\":1793372047311}}}",
+          "qs": "{}"
+        },
+        "after": {
+          "credits": 1,
+          "reads": 1,
+          "learn": "{\"les\":{},\"rev\":{},\"cfg\":{\"battle\":true,\"open\":{}},\"last\":null,\"stat\":{\"lessons\":0,\"checks\":0,\"right\":0,\"reviews\":0,\"kills\":0,\"bosses\":0},\"starred\":{\"[\\\"page\\\",\\\"ans-basics\\\",\\\"l1\\\",0]\":{\"kind\":\"page\",\"p\":\"ans-basics\",\"l\":\"l1\",\"i\":0,\"t\":\"瞳孔會自己變大變小，你卻控制不了它\",\"at\":1793372047311}}}",
+          "qs": "{}",
+          "back": false
+        }
+      }
+    },
+    {
+      "name": "visited pip jumps back",
+      "pass": true
+    },
+    {
+      "name": "grading marks original check done",
+      "pass": true
+    },
+    {
+      "name": "revisited check does not grade, reward, or record",
+      "pass": true
+    },
+    {
+      "name": "picker preselects current lesson",
+      "pass": true
+    },
+    {
+      "name": "cancel preserves session, saved selection, and prep tree",
+      "pass": true
+    },
+    {
+      "name": "390px picker has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "switch unit and lesson starts new course, preserving marbles and stats",
+      "pass": true,
+      "details": {
+        "stats": {
+          "credits": 3,
+          "pts": 1,
+          "fired": 3,
+          "graded": 1,
+          "right": 1,
+          "reads": 2,
+          "lessons": 0,
+          "wrong": 0
+        },
+        "key": "s114-eye-ans-retina-layers-p1/retina-map-1",
+        "saved": [
+          "s114-eye-ans-retina-layers-p1/retina-map-1"
+        ],
+        "labelMatches": true
+      }
+    },
+    {
+      "name": "modal and prep selectors are independent",
+      "pass": true
+    },
+    {
+      "name": "390px no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "star remains available to knowledge notes",
+      "pass": true
+    },
+    {
+      "name": "frontier, copy isolation, done-skip, and normal review rules",
+      "pass": true,
+      "details": {
+        "invalid": true,
+        "fresh": true,
+        "isolated": true,
+        "undone": true,
+        "doneSkipped": true,
+        "reviewContinues": true
+      }
+    },
+    {
+      "name": "practice bank item retains practice step index",
+      "pass": true
+    },
+    {
+      "name": "revisited bank answer does not reward or record",
+      "pass": true
+    },
+    {
+      "name": "test session rewards and completes without saving progress",
+      "pass": true
+    },
+    {
+      "name": "revisiting final page cannot finish lesson twice",
+      "pass": true
+    },
+    {
+      "name": "zero page errors",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "localStorage restored exactly",
+      "pass": true
+    }
+  ],
+  "issues": [],
+  "restored": true,
+  "pass": 23,
+  "total": 23
+}

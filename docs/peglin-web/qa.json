@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T03:37:02.425Z",
+ "at": "2026-10-30T14:54:14.016Z",
  "checks": [
   {
    "name": "準備頁：科目／題本樹（含年份）／題型／星號／出題方式／同類題／狀態／題數／彈珠數都在",
@@ -32,12 +32,12 @@
    "name": "題本樹勾選後寫進設定、題數與自由遠征同一套 Store.filter 計算",
    "pass": true,
    "extra": {
-    "exams": 157,
+    "exams": 175,
     "types": [
      "single"
     ],
-    "expect": 641,
-    "text": "符合條件：641 題（每輪出 20 題）已刷 0 題・未刷 641 題｜題型 641 種：已刷 0・未刷 641（這個範圍還沒有同類題分組，每題各算一型）"
+    "expect": 674,
+    "text": "符合條件：674 題（每輪出 20 題）已刷 0 題・未刷 674 題｜題型 674 種：已刷 0・未刷 674（這個範圍還沒有同類題分組，每題各算一型）"
    }
   },
   {
@@ -45,15 +45,15 @@
    "pass": true,
    "extra": {
     "s": {
-     "total": 641,
+     "total": 674,
      "done": 0,
-     "todo": 641,
-     "types": 641,
+     "todo": 674,
+     "types": 674,
      "tDone": 0,
-     "tTodo": 641,
-     "loose": 641
+     "tTodo": 674,
+     "loose": 674
     },
-    "text": "已刷 0 題・未刷 641 題｜題型 641 種：已刷 0・未刷 641（這個範圍還沒有同類題分組，每題各算一型）"
+    "text": "已刷 0 題・未刷 674 題｜題型 674 種：已刷 0・未刷 674（這個範圍還沒有同類題分組，每題各算一型）"
    }
   },
   {
@@ -81,7 +81,7 @@
     "error": "",
     "item": {
      "kind": "bank",
-     "id": "eye115-exam-blood-vessels-107-19",
+     "id": "ans-trigeminal-q-6",
      "key": "B",
      "type": "single"
     }
@@ -100,7 +100,7 @@
     "stillUnanswered": true,
     "back": {
      "kind": "bank",
-     "id": "eye115-exam-blood-vessels-107-19",
+     "id": "ans-trigeminal-q-6",
      "key": "B",
      "type": "single"
     }
@@ -143,7 +143,7 @@
      "error": "",
      "item": {
       "kind": "bank",
-      "id": "eye115-exam-blood-vessels-107-19",
+      "id": "ans-trigeminal-q-6",
       "key": "B",
       "type": "single"
      }
@@ -153,7 +153,7 @@
      "c": 1,
      "w": 0,
      "last": 1,
-     "t": 1792985826897
+     "t": 1793372057811
     }
    }
   },
@@ -174,8 +174,8 @@
     "error": "",
     "item": {
      "kind": "bank",
-     "id": "eye115-exam-ans-reflex-112-11",
-     "key": "B",
+     "id": "eye-quiz-blood-supply-19",
+     "key": "D",
      "type": "single"
     }
    }
@@ -290,8 +290,8 @@
     "error": "",
     "item": {
      "kind": "bank",
-     "id": "eye115-exam-blood-retina-113-211",
-     "key": "A",
+     "id": "s114-eye-ans-exam111-u11-q0193",
+     "key": "B",
      "type": "single"
     }
    }
@@ -315,8 +315,8 @@
      "error": "",
      "item": {
       "kind": "bank",
-      "id": "eye115-exam-blood-retina-113-211",
-      "key": "A",
+      "id": "s114-eye-ans-exam111-u11-q0193",
+      "key": "B",
       "type": "single"
      }
     },
@@ -341,12 +341,12 @@
      "error": "",
      "item": {
       "kind": "bank",
-      "id": "eye-quiz-blood-supply-23",
-      "key": "C",
+      "id": "s114-eye-ans-exam108-u10-q0092",
+      "key": "D",
       "type": "single"
      }
     },
-    "startsBefore": 250
+    "startsBefore": 226
    }
   },
   {
@@ -384,7 +384,7 @@
      "reads": 9,
      "lessons": 1,
      "panel": true,
-     "ready": true,
+     "ready": false,
      "armed": false,
      "error": "",
      "item": {
@@ -399,7 +399,7 @@
       "i": 0,
       "done": 1,
       "best": 2,
-      "last": 1792985997568,
+      "last": 1793372247062,
       "run": null
      },
      "rev": 5
@@ -422,7 +422,7 @@
     "left": 0,
     "right": 390,
     "bottom": 844,
-    "h": 576.734375,
+    "h": 501.6875,
     "bar": 104.59375,
     "vw": 390,
     "vh": 844,

@@ -19,7 +19,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   const G = () => page.evaluate(() => { const g = PEGLIN.web.state; return g && { credits: g.credits, pts: g.pts, fired: g.fired, graded: g.graded, right: g.right, reads: g.reads, lessons: g.lessons, panel: g.panel, ready: g.ready, armed: g.armed, error: g.error, item: g.item && (g.item.kind === 'bank' ? { kind: 'bank', id: g.item.q.id, key: g.item.q.key, type: g.item.q.type } : g.item.kind === 'check' ? { kind: 'check', id: g.item.c.id, ckind: g.item.c.kind, answer: g.item.c.answer } : { kind: 'read', type: g.item.s.type }) }; });
   const frame = () => page.frames().find(f => /peglin\/web\.html/.test(f.url()));
   try {
-    await page.evaluate(() => { VOL.set('muted', true); localStorage.setItem(SKEY('peglin-web'), JSON.stringify({ debug: true })); });
+    await page.evaluate(() => { U.clearModals(); Object.defineProperty(CLOUD, 'signedIn', { configurable: true, get: () => true }); VOL.set('muted', true); localStorage.setItem(SKEY('peglin-web'), JSON.stringify({ debug: true })); });
 
     /* ---------- 1. 準備頁：範圍選擇與自由遠征一致 ---------- */
     await page.evaluate(() => App.go('peglin'));
@@ -278,6 +278,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     await page.evaluate(() => PEGLIN.web.close(true));
   } catch (e) {
     report.issues.push('exception: ' + (e && e.stack || e)); console.log('EXCEPTION', e);
+    report.webStatus = await page.locator('#pgWebState').textContent().catch(() => null);
     try { await shot('exception'); } catch {}
   } finally {
     await page.evaluate(b => { localStorage.clear(); for (const [k, v] of Object.entries(b)) localStorage.setItem(k, v); }, backup).catch(() => {});
@@ -287,5 +288,6 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
     fs.writeFileSync(path.join(ROOT, 'docs/peglin-web/qa.json'), JSON.stringify(report, null, 1));
     console.log(`\n${report.pass}/${report.total} passed, issues: ${report.issues.length}, localStorage restored: ${report.restored}`);
     await browser.close();
+    if (report.issues.length || !report.restored) process.exitCode = 1;
   }
 })();
