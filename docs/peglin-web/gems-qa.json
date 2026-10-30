@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-30T15:05:08.472Z",
+  "checks": [
+    {
+      "name": "abyss trial multiplier lowered but still increasing (X: 2.5 -> 1.6)",
+      "pass": true,
+      "details": {
+        "step": 0.06,
+        "m10": 1.6,
+        "m1": 1.06,
+        "p": {
+          "quizRight": 3,
+          "learnRight": 2,
+          "cooldownH": 12
+        }
+      }
+    },
+    {
+      "name": "quiz: first-try correct gives quizRight",
+      "pass": true,
+      "details": {
+        "got": 3
+      }
+    },
+    {
+      "name": "quiz: HUD shows earned gems",
+      "pass": true
+    },
+    {
+      "name": "quiz: same question again in session gives 0",
+      "pass": true
+    },
+    {
+      "name": "quiz: wrong answer gives 0",
+      "pass": true
+    },
+    {
+      "name": "quiz: end screen shows session total",
+      "pass": true
+    },
+    {
+      "name": "quiz: question rewarded within cooldown gives 0 in a new session",
+      "pass": true
+    },
+    {
+      "name": "quiz: test session gives 0",
+      "pass": true
+    },
+    {
+      "name": "learn: reading pages gives 0",
+      "pass": true,
+      "details": {
+        "g0": 3,
+        "now": 3
+      }
+    },
+    {
+      "name": "learn: first-try correct check gives learnRight",
+      "pass": true,
+      "details": {
+        "got": 2
+      }
+    },
+    {
+      "name": "learn: revisited page gives 0",
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "issues": []
+}

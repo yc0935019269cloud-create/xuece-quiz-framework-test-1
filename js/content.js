@@ -157,6 +157,13 @@ const C = (() => {
       { name: '核融合惡魔', tile: 110, filter: 'hue-rotate(20deg) saturate(2.4) brightness(1.1)', mech: 'enrage', line: 'E = mc²，我的怒火無窮無盡！' }]
   };
 
+  /* ---- 魂晶平衡：集中在這裡調整（說明見 CLAUDE.md「魂晶平衡」） ----
+   * trialStep：深淵遠征每一級試煉的結算加成（舊版 0.15，試煉 X 會變 2.5 倍；現在 0.06，試煉 X 為 1.6 倍）
+   * peglin：網頁版彈珠。quizRight＝彈珠刷題第一次就答對、learnRight＝彈珠學習檢核／實戰第一次就答對；
+   *   同一題在同一場只算一次、cooldownH 小時內已在彈珠拿過魂晶的題目不再給；回顧頁、課後複習輪、test 場次不給。
+   *   整課完成沿用學習模式的完成獎勵（第一次 3＋星數×2）。 */
+  const GEMS = { trialStep: 0.06, peglin: { quizRight: 3, learnRight: 2, cooldownH: 12 } };
+
   /* ---- 試煉等級（深淵遠征難度，累加） ---- */
   const DIFFS = [
     { n: 0, name: '見習', desc: '標準規則' },
@@ -441,5 +448,5 @@ const C = (() => {
   /* 某科目的首領池：mix 主題每次隨機挑一個主題 */
   const bossTheme = subj => { const t = themeOf(subj); return t === 'mix' ? THEME_KEYS[Math.floor(Math.random() * THEME_KEYS.length)] : t; };
   const monPrefix = subj => { const S = SUBJECTS[subj]; return (S && S.words && S.words.length) ? S.words : PREFIX[themeOf(subj)] || PREFIX.mix; };
-  return { addSubject, THEMES, THEME_KEYS, themeOf, bossTheme, monPrefix, SUBJECTS, PREFIX, MONSTERS, BOSSES, VARIANT, RELICS, TALENTS, ITEMS, PETS, PET_MAX, petNeed, UPGRADES, EVENTS, MECHS, TRAITS, ELITE_AFFIX, BOSS_DEFS, DIFFS, CLASSES, ALL_SKILLS, PET_SKINS, SKIN_COST, PET_ACCS, CLASS_PERKS, classNeed, NODES, relic, talent, pet, skill, cls };
+  return { addSubject, THEMES, THEME_KEYS, themeOf, bossTheme, monPrefix, SUBJECTS, PREFIX, MONSTERS, BOSSES, VARIANT, RELICS, TALENTS, ITEMS, PETS, PET_MAX, petNeed, UPGRADES, EVENTS, MECHS, TRAITS, ELITE_AFFIX, BOSS_DEFS, DIFFS, GEMS, CLASSES, ALL_SKILLS, PET_SKINS, SKIN_COST, PET_ACCS, CLASS_PERKS, classNeed, NODES, relic, talent, pet, skill, cls };
 })();

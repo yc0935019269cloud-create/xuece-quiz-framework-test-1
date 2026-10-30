@@ -1019,7 +1019,7 @@ const Screens = (() => {
       const dl = U.$('#dl'); dl.innerHTML = '';
       C.DIFFS.forEach(d => {
         const lock = d.n > A.maxDiff;
-        const el = U.h(`<div class="diff ${state.diff === d.n ? 'sel' : ''} ${lock ? 'locked' : ''}"><b>${lock ? '🔒 ' : ''}${d.name}</b><span class="small-t">${lock ? '通關上一級解鎖' : d.desc}${d.n && !lock ? `（魂晶 +${d.n * 15}%）` : ''}</span></div>`);
+        const el = U.h(`<div class="diff ${state.diff === d.n ? 'sel' : ''} ${lock ? 'locked' : ''}"><b>${lock ? '🔒 ' : ''}${d.name}</b><span class="small-t">${lock ? '通關上一級解鎖' : d.desc}${d.n && !lock ? `（魂晶 +${Math.round(d.n * C.GEMS.trialStep * 100)}%）` : ''}</span></div>`);
         if (!lock) el.onclick = () => { state.diff = d.n; SFX.play('click'); drawDiffs(); };
         dl.appendChild(el);
       });

@@ -276,7 +276,7 @@ const PEGLIN = (() => {
   function webOpen(S) {
     if (G) webClose(true);
     G = { S, mode: S.mode, per: Math.max(1, S.per || 1), shots: Math.max(1, S.shots || 1), onWrong: S.onWrong || 'count', test: !!S.test,
-      credits: 0, pts: 0, fired: 0, graded: 0, right: 0, reads: 0, lessons: 0, wrong: [], panel: false, loaded: 0, ready: false, armed: false, error: '', ctl: null, keyBox: null, goBtn: null, item: null };
+      credits: 0, pts: 0, fired: 0, graded: 0, right: 0, reads: 0, lessons: 0, gems: 0, gemIds: new Set(), wrong: [], panel: false, loaded: 0, ready: false, armed: false, error: '', ctl: null, keyBox: null, goBtn: null, item: null };
     const learn = S.mode === 'learn';
     const el = U.h(`<div class="pgw" id="pgw" role="dialog" aria-modal="true" aria-label="${learn ? '彈珠學習' : '彈珠刷題'}">
       <div class="pgw-bar">
@@ -390,7 +390,7 @@ const PEGLIN = (() => {
     const need = G.per - G.pts;
     U.$('#pgwAmmo').innerHTML = `⚪ × <b>${G.credits}</b>${G.per > 1 ? `<small>再${G.mode === 'learn' ? '完成' : '答'} ${need} ${unitWord()}可再發射 ${G.shots} 顆</small>` : ''}`;
     const load = G.error ? `⚠ ${U.esc(G.error)}` : !G.ready ? `遊戲載入中 ${Math.round(G.loaded * 100)}%` : !G.armed ? '發射偵測準備中…' : '';
-    U.$('#pgwStat').innerHTML = `${G.mode === 'learn' ? `已完成 ${G.reads + G.graded} 步` : `已答 ${G.graded} 題`}${G.graded ? `・一次答對 ${G.right}/${G.graded}` : ''}・已發射 ${G.fired} 顆${load ? `<em>${load}</em>` : ''}`;
+    U.$('#pgwStat').innerHTML = `${G.mode === 'learn' ? `已完成 ${G.reads + G.graded} 步` : `已答 ${G.graded} 題`}${G.graded ? `・一次答對 ${G.right}/${G.graded}` : ''}・已發射 ${G.fired} 顆${G.gems ? `・💎 魂晶 +${G.gems}` : ''}${load ? `<em>${load}</em>` : ''}`;
     U.$('#pgwShieldBtn').innerHTML = `⚪ 彈珠用完了<small>點這裡${G.mode === 'learn' ? '繼續上課' : '答下一題'}，${G.per > 1 ? `每${G.mode === 'learn' ? '完成' : '答'} ${G.per} ${unitWord()}` : '答完'}可以再發射 ${G.shots} 顆</small>`;
     U.$('#pgwAsk').hidden = G.panel;
     U.$('#pgwAsk').textContent = G.parked ? '📖 回到題目' : `📖 ${G.mode === 'learn' ? '下一步' : '答題'}`;
@@ -477,7 +477,9 @@ const PEGLIN = (() => {
     if (it.les && !it.review) it.done = true;
     G.graded++; if (firstOk) G.right++; if (!ok) G.wrong.push(it);
     if (!G.test) {
-      if (it.kind === 'bank') { Store.record(it.q.id, ok); Store.addAccXp(ok ? 8 : 2); if (ok) Store.addGems(1); }
+      const R = C.GEMS.peglin, gid = it.kind === 'bank' ? it.q.id : it.c.id;
+      if (firstOk && !it.review) peglinGems(gid, G.mode === 'learn' ? R.learnRight : R.quizRight);
+      if (it.kind === 'bank') { Store.record(it.q.id, ok); Store.addAccXp(ok ? 8 : 2); }
       else if (typeof LEARN_UI !== 'undefined') { LEARN_UI.applyPeglin({ type: 'check', id: it.c.id, ok: firstOk, first: firstOk }); if (firstOk) Store.addAccXp(4); }
       App.refreshTop();
     }
@@ -488,6 +490,15 @@ const PEGLIN = (() => {
     }
     if (G.S.graded) G.S.graded(it, ok);
     earn(G.onWrong === 'count' || ok);
+  }
+  /* 彈珠的魂晶（數值在 C.GEMS.peglin）：同一場同一題只算一次，冷卻時間內已拿過的題目不再給，避免反覆刷同一題 */
+  function peglinGems(id, n) {
+    if (!G || G.test || !n || G.gemIds.has(id)) return 0;
+    G.gemIds.add(id);
+    const P = Store.profile, now = Date.now(), cd = C.GEMS.peglin.cooldownH * 3600e3, m = P.peglinGem || (P.peglinGem = {});
+    for (const k in m) if (now - m[k] > cd) delete m[k];
+    if (m[id]) return 0;
+    m[id] = now; P.stats.gemsEarned += n; Store.addGems(n); G.gems += n; return n;
   }
   function renderBank(body, it) {
     const wrap = U.h('<div class="qwrap"></div>'); body.appendChild(wrap);
@@ -536,7 +547,7 @@ const PEGLIN = (() => {
   function renderEnd(body) {
     U.$('#pgwHead').innerHTML = '<span class="pgw-kind">🏁 這一輪完成</span>';
     body.innerHTML = `<div class="pgw-end"><h3>${G.mode === 'learn' ? '這次選的課都完成了' : '這一輪的題目答完了'}</h3>
-      <p>${G.mode === 'learn' ? `完成 ${G.lessons} 課、讀了 ${G.reads} 張卡、` : ''}答了 ${G.graded} 題（一次答對 ${G.right}）・已發射 ${G.fired} 顆彈珠</p>
+      <p>${G.mode === 'learn' ? `完成 ${G.lessons} 課、讀了 ${G.reads} 張卡、` : ''}答了 ${G.graded} 題（一次答對 ${G.right}）・已發射 ${G.fired} 顆彈珠${G.test ? '' : `・獲得魂晶 <b class="purple-t">+${G.gems}</b>`}</p>
       <div class="row">${G.S.again ? '<button class="px-btn gold" data-end="again">再來一輪 ▶</button>' : ''}${G.credits > 0 ? `<button class="px-btn" data-end="shoot">先把剩下的 ⚪×${G.credits} 打完</button>` : ''}<button class="px-btn" data-end="exit">結束</button></div></div>`;
     U.$$('[data-end]', body).forEach(b => b.onclick = () => {
       const a = b.dataset.end;
@@ -547,8 +558,9 @@ const PEGLIN = (() => {
   }
   function finishLesson(les) {
     if (!les || les.done) return; les.done = true; G.lessons++;
-    if (!G.test && typeof LEARN_UI !== 'undefined') { LEARN_UI.applyPeglin({ type: 'lesson', pack: les.p.id, lesson: les.l.id, n: les.n, ok: les.ok }); App.refreshTop(); }
-    U.toast(`彈珠學習：完成「${les.l.title}」${les.n ? `（檢核 ${les.ok}/${les.n}）` : ''}`);
+    let got = 0;
+    if (!G.test && typeof LEARN_UI !== 'undefined') { const g0 = Store.profile.gems; LEARN_UI.applyPeglin({ type: 'lesson', pack: les.p.id, lesson: les.l.id, n: les.n, ok: les.ok }); got = Math.max(0, Store.profile.gems - g0); G.gems += got; App.refreshTop(); hud(); }
+    U.toast(`彈珠學習：完成「${les.l.title}」${les.n ? `（檢核 ${les.ok}/${les.n}）` : ''}${got ? `・魂晶 +${got}` : ''}`);
   }
   function webClose(silent) {
     if (!G) return;

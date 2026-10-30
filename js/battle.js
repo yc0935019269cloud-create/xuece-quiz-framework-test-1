@@ -758,7 +758,7 @@ const RunUI = (() => {
       let gems = st.correct * 2 + st.kills * 3 + st.elites * 5 + st.floorsCleared + (win ? 25 : 0) + (s.phase === 'out' ? 8 : 0);
       if (R.abyss) gems += st.bosses * 25 + (s.act - 1) * 15 + (win ? 40 : 0) + (st.secret ? 80 : 0);
       if (R.has('soul')) gems += st.kills * 2;
-      gems = Math.round(gems * (1 + 0.1 * Store.upg('gem')) * (1 + 0.15 * (s.diff || 0)) * (retreat ? 0.5 : 1));
+      gems = Math.round(gems * (1 + 0.1 * Store.upg('gem')) * (1 + C.GEMS.trialStep * (s.diff || 0)) * (retreat ? 0.5 : 1));
       const accXp = st.xp + st.correct * 5;
       const acc = st.answered ? st.correct / st.answered : 0;
       let stars = 0;
@@ -804,7 +804,7 @@ const RunUI = (() => {
       <div class="grid g3 mt">
         <div class="panel dark"><div class="dim">作答</div><b style="font-size:22px">${st.correct} / ${st.answered}</b><div class="small-t">命中率 ${r.acc}%</div></div>
         <div class="panel dark"><div class="dim">${R.abyss ? '深淵進度' : '到達樓層'}</div><b style="font-size:22px">${R.abyss ? `第 ${s.act} 章` : s.floor}</b><div class="small-t">擊敗 ${st.kills} 隻怪物${st.bosses ? `（首領 ${st.bosses}）` : ''}</div></div>
-        <div class="panel dark"><div class="dim">獲得魂晶</div><b style="font-size:22px" class="purple-t">+${r.gems}</b><div class="small-t">帳號／${C.cls(s.cls).name}經驗 +${r.accXp}${r.lvUps ? `<br>帳號升 ${r.lvUps} 級！` : ''}${r.clsUps ? `<br><b class="gold-t">${C.cls(s.cls).name}升到 Lv.${Store.profile.classes[s.cls].lv}！</b>` : ''}${s.diff ? `<br>試煉加成 +${s.diff * 15}%` : ''}</div></div>
+        <div class="panel dark"><div class="dim">獲得魂晶</div><b style="font-size:22px" class="purple-t">+${r.gems}</b><div class="small-t">帳號／${C.cls(s.cls).name}經驗 +${r.accXp}${r.lvUps ? `<br>帳號升 ${r.lvUps} 級！` : ''}${r.clsUps ? `<br><b class="gold-t">${C.cls(s.cls).name}升到 Lv.${Store.profile.classes[s.cls].lv}！</b>` : ''}${s.diff ? `<br>試煉加成 +${Math.round(s.diff * C.GEMS.trialStep * 100)}%` : ''}</div></div>
       </div>
       ${wrongs.length ? `<h3 class="mt">本局錯題（已自動收入錯題本）</h3><div class="qlist" id="wl"></div>` : '<p class="green-t center mt">本局沒有錯題，太強了！</p>'}
       <div class="row mt" style="justify-content:center">
