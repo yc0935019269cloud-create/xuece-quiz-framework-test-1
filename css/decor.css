@@ -7,6 +7,8 @@
 .camp[data-night="dim"].tod-dusk .scene-bg { filter: sepia(.25) brightness(.88) saturate(1.1); }
 .camp[data-night="dim"].tod-night .decor-obj { filter: brightness(.6) saturate(.8); }
 .camp[data-night="dim"].tod-dusk .decor-obj { filter: brightness(.9) sepia(.12); }
+.camp[data-night="tod"].tod-night .decor-obj { filter: brightness(.85) saturate(.9); }
+.camp[data-night="tod"].tod-dusk .decor-obj { filter: brightness(.95) sepia(.1); }
 
 .camp-wrap .camp-obj.decor-obj, .camp-obj.decor-obj { zoom: 1; position: absolute; line-height: 0; cursor: pointer; }
 .decor-obj .dc-img { display: block; width: 100%; height: 100%; position: relative; }
@@ -71,6 +73,9 @@
 .dc-filters { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 10px; }
 .dc-scene-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
 .dc-scene-grid.big { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.dc-tod-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3px; width: 100%; min-width: 0; }
+.dc-tod-preview { min-width: 0; font-size: 11px; line-height: 1.5; }
+.dc-tod-preview img { display: block; width: 100%; height: auto; aspect-ratio: 4/1; image-rendering: pixelated; }
 .dc-scene-card { display: flex; flex-direction: column; gap: 6px; padding: 8px; background: var(--panel2); border: 3px solid var(--line); color: var(--text); font: inherit; text-align: center; cursor: pointer; align-items: center; }
 .dc-scene-card.cur { box-shadow: inset 0 0 0 3px var(--gold); } .dc-scene-card.lock { opacity: .75; cursor: default; }
 .dc-scene-th { position: relative; display: block; width: 100%; aspect-ratio: 4/1.6; background: #3a5a3a center bottom / cover no-repeat; image-rendering: pixelated; border: 2px solid var(--line); }

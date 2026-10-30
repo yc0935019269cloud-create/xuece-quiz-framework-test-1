@@ -3,6 +3,7 @@ import json, re, sys
 from collections import deque
 from pathlib import Path
 from PIL import Image
+from decor_scene_assets import validate_scene
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'docs/decor/asset-check.json'
@@ -46,7 +47,7 @@ def check():
         if missing: errors.append(f'{key}: missing ids: {sorted(missing)}')
         if extra: errors.append(f'{key}: unexpected ids: {sorted(extra)}')
         for entry in entries:
-            ident = entry.get('id', '?'); problems = []; notices = []
+            ident = entry.get('id', '?'); problems = []; notices = []; alignment = None
             try:
                 path = (ROOT / entry['file']).resolve()
                 if not path.is_relative_to(ROOT): raise ValueError('path outside project')
@@ -73,9 +74,13 @@ def check():
                 else:
                     if im.size != (1536,384): problems.append('scene size is not 1536×384')
                     if im.convert('RGBA').getchannel('A').getextrema() != (255,255): problems.append('scene is not opaque')
+                    scene_errors, alignment = validate_scene(ROOT, entry)
+                    problems.extend(scene_errors)
             except (OSError, ValueError, KeyError, TypeError) as exc:
                 problems.append(str(exc))
-            results.append({'id': ident, 'type': key, 'errors': problems, 'warnings': notices})
+            result = {'id': ident, 'type': key, 'errors': problems, 'warnings': notices}
+            if alignment is not None: result['alignment'] = alignment
+            results.append(result)
             errors.extend(f'{ident}: {x}' for x in problems)
             warnings.extend(f'{ident}: {x}' for x in notices)
     if len(manifest.get('series', [])) != 7: errors.append('series: expected 7 entries')

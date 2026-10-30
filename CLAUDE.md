@@ -523,6 +523,7 @@
   - 素材：66 件物件（6 系列各 10 件：木屋小窩、森林精靈、學院書房、海濱假日、和風庭園、星辰魔法，N／R／SR／SSR；另有 6 件雜物）＋ 8 張場景（1536×384）在 `assets/decor/`，由 Codex 用 image_gen 生成後轉成真像素格、二值透明。清單 `assets/decor/manifest.json` → `python tools/decor_data.py` 產生 `js/decor-data.js`（勿手改）。**中文名稱與介紹的正本在 `tools/decor_text.py`**（曾被 PowerShell 管線弄成「?」），改完依序跑 `decor_text.py`、`decor_data.py`；素材檢查 `python tools/check_decor_assets.py`（結果 `docs/decor/asset-check.json`），審圖總覽 `docs/decor/contact-*.png`。
   - 經濟：單抽 20／十連 180（保證 SR 以上）；雜物 12%、N 50%、R 27%、SR 9%、SSR 2%（場景和 SSR 物件平分）；每池 60 抽保底 SSR。碎片：N／R 3 片、SR 2 片、SSR／雜物 1 片解鎖一件，之後每湊滿一份多一件可擺；雜物退 2 魂晶、重複場景退 30。直購：木屋／森林／學院的 N 40、R 90；場景海邊 300、秋楓 300、櫻花 350、雪原 400。卡池：冒險者雜貨（木屋＋森林＋學院、魔法圖書館）、海風與櫻（海濱＋和風、浮空島）、星辰祕庫（星辰魔法、水晶洞窟、星空天文台）。
   - 存檔 `Store.profile.decor`（shards／scenes／scene／placed〔x、y 為比例〕／pity／log），隨 exportAll 與雲端同步；舊存檔自動補預設（經典草原、未擺放）。經典草原沿用原本 CSS 營地；圖片場景 `night: dim` 依時段調暗、`self`（圖書館、水晶洞窟、天文台）不調暗。布置模式可拖曳（滑鼠／觸控）、翻轉、收回，最多 40 件；抽屜物件在觸控裝置是點一下放入再拖曳。
+- **場景四個時段（v167）**：8 張圖片場景各有早晨／白天／黃昏／夜晚四張重畫的圖 `assets/decor/scenes/<id>_<morning|day|dusk|night>.png`（Codex 以原圖為參考逐張編修，地面線對齊、檢查器比對四張的地面位置，誤差 0px；原 `<id>.png` 保留）。manifest 每個場景有 `tod`，營地依 `timeOfDay()`（自動或營地時段按鈕）換圖，有 `tod` 的場景不再用 CSS 調暗；商店場景卡顯示四個時段小圖。審圖 `docs/decor/contact-scenes-tod.png`，產生紀錄 `docs/decor/tod-generation.json`、`tools/decor_tod.py`。
 - QA：`tools/decor-qa/check.cjs`（Playwright＋Edge 一次性 context、file://、1100／390px，98 項：購買、單抽／十連、20,000 抽機率、十連保證、保底、碎片門檻、實際拖曳與重載、場景切換與夜間濾鏡、匯出匯入、舊存檔、彈珠未登入被擋、無頁面錯誤），結果 `docs/decor/qa.json`、截圖 `output/playwright/decor-*.png`。沒有實機 iPad／手機測試。
 
 ## 魂晶平衡（2026-10-30，v165→v166）

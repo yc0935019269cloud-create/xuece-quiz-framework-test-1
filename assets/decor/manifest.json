@@ -42,65 +42,113 @@
       "id": "scene_beach",
       "name": "海邊沙灘",
       "desc": "浪花一波波打上岸，連錯題都被沖淡了。",
-      "file": "assets/decor/scenes/scene_beach.png",
+      "file": "assets/decor/scenes/scene_beach_day.png",
       "ground": 0.28,
-      "night": "dim"
+      "night": "self",
+      "tod": {
+        "morning": "assets/decor/scenes/scene_beach_morning.png",
+        "day": "assets/decor/scenes/scene_beach_day.png",
+        "dusk": "assets/decor/scenes/scene_beach_dusk.png",
+        "night": "assets/decor/scenes/scene_beach_night.png"
+      }
     },
     {
       "id": "scene_autumn",
       "name": "秋楓山丘",
       "desc": "滿山紅葉，遠方瀑布的聲音很適合背書。",
-      "file": "assets/decor/scenes/scene_autumn.png",
+      "file": "assets/decor/scenes/scene_autumn_day.png",
       "ground": 0.28,
-      "night": "dim"
+      "night": "self",
+      "tod": {
+        "morning": "assets/decor/scenes/scene_autumn_morning.png",
+        "day": "assets/decor/scenes/scene_autumn_day.png",
+        "dusk": "assets/decor/scenes/scene_autumn_dusk.png",
+        "night": "assets/decor/scenes/scene_autumn_night.png"
+      }
     },
     {
       "id": "scene_sakura",
       "name": "櫻花庭院",
       "desc": "花瓣落在課本上，順手夾成書籤吧。",
-      "file": "assets/decor/scenes/scene_sakura.png",
+      "file": "assets/decor/scenes/scene_sakura_day.png",
       "ground": 0.28,
-      "night": "dim"
+      "night": "self",
+      "tod": {
+        "morning": "assets/decor/scenes/scene_sakura_morning.png",
+        "day": "assets/decor/scenes/scene_sakura_day.png",
+        "dusk": "assets/decor/scenes/scene_sakura_dusk.png",
+        "night": "assets/decor/scenes/scene_sakura_night.png"
+      }
     },
     {
       "id": "scene_snow",
       "name": "雪原小鎮",
       "desc": "屋頂冒著炊煙，雪地裡的腳印通往圖書館。",
-      "file": "assets/decor/scenes/scene_snow.png",
+      "file": "assets/decor/scenes/scene_snow_day.png",
       "ground": 0.28,
-      "night": "dim"
+      "night": "self",
+      "tod": {
+        "morning": "assets/decor/scenes/scene_snow_morning.png",
+        "day": "assets/decor/scenes/scene_snow_day.png",
+        "dusk": "assets/decor/scenes/scene_snow_dusk.png",
+        "night": "assets/decor/scenes/scene_snow_night.png"
+      }
     },
     {
       "id": "scene_library",
       "name": "魔法圖書館",
       "desc": "書架高得看不見頂，聽說有一本書記著所有考題。",
-      "file": "assets/decor/scenes/scene_library.png",
+      "file": "assets/decor/scenes/scene_library_day.png",
       "ground": 0.28,
-      "night": "self"
+      "night": "self",
+      "tod": {
+        "morning": "assets/decor/scenes/scene_library_morning.png",
+        "day": "assets/decor/scenes/scene_library_day.png",
+        "dusk": "assets/decor/scenes/scene_library_dusk.png",
+        "night": "assets/decor/scenes/scene_library_night.png"
+      }
     },
     {
       "id": "scene_island",
       "name": "浮空島",
       "desc": "雲海上的小島，瀑布往下流進天空。",
-      "file": "assets/decor/scenes/scene_island.png",
+      "file": "assets/decor/scenes/scene_island_day.png",
       "ground": 0.28,
-      "night": "dim"
+      "night": "self",
+      "tod": {
+        "morning": "assets/decor/scenes/scene_island_morning.png",
+        "day": "assets/decor/scenes/scene_island_day.png",
+        "dusk": "assets/decor/scenes/scene_island_dusk.png",
+        "night": "assets/decor/scenes/scene_island_night.png"
+      }
     },
     {
       "id": "scene_crystal",
       "name": "水晶洞窟",
       "desc": "地底深處的水晶自己會發光，不必點燈。",
-      "file": "assets/decor/scenes/scene_crystal.png",
+      "file": "assets/decor/scenes/scene_crystal_day.png",
       "ground": 0.28,
-      "night": "self"
+      "night": "self",
+      "tod": {
+        "morning": "assets/decor/scenes/scene_crystal_morning.png",
+        "day": "assets/decor/scenes/scene_crystal_day.png",
+        "dusk": "assets/decor/scenes/scene_crystal_dusk.png",
+        "night": "assets/decor/scenes/scene_crystal_night.png"
+      }
     },
     {
       "id": "scene_starobs",
       "name": "星空天文台",
       "desc": "今晚的星星排成了你最常錯的那個公式。",
-      "file": "assets/decor/scenes/scene_starobs.png",
+      "file": "assets/decor/scenes/scene_starobs_night.png",
       "ground": 0.28,
-      "night": "self"
+      "night": "self",
+      "tod": {
+        "morning": "assets/decor/scenes/scene_starobs_morning.png",
+        "day": "assets/decor/scenes/scene_starobs_day.png",
+        "dusk": "assets/decor/scenes/scene_starobs_dusk.png",
+        "night": "assets/decor/scenes/scene_starobs_night.png"
+      }
     }
   ],
   "items": [

@@ -330,7 +330,7 @@ const Screens = (() => {
           ${vouchers ? '<div class="small-t dim">兌換券可任選一款新造型（價值 160～260 魂晶）。</div><div class="row mt" style="justify-content:flex-end"><button class="px-btn small purple" id="voucherUse">選新造型兌換</button></div>' : ''}
         </div>` : '';
     const tod = timeOfDay();
-    const dsc = DECOR.sceneFor();
+    const dsc = DECOR.sceneFor(tod);
     // 營地選單依功能分區（每區一個標題，按鈕照常排列）
     const MENU_GROUPS = [['study', '📚 讀書與刷題'], ['adv', '⚔️ 冒險'], ['peg', '⚪ 彈珠（Peglin）'], ['col', '🧙 角色與收藏'], ['tool', '🛠 工具與設定']];
     const tiles = [
@@ -370,7 +370,7 @@ const Screens = (() => {
       </div>`;
     scr().innerHTML = `${quick}<div class="panel camp-wrap ${folded ? 'folded' : ''}">
         <div class="camp-head"><h2 style="margin:0">冒險者營地</h2><span class="small-t dim camp-hint">點點看夥伴、勇者、篝火、信箱、花盆和池塘吧！${(Store.settings.campTime || 'auto') === 'auto' ? '（時段：依現在時間）' : ''}</span><span class="grow"></span><button class="px-btn small" id="decorEdit">🛠 布置營地</button><button class="px-btn small" id="decorScene">🖼 場景</button><button class="px-btn small" id="decorShop">🛍 商店</button><button class="px-btn small" id="campFold" aria-expanded="${!folded}">${folded ? '▸ 展開營地' : '▾ 收起營地'}</button></div>
-        <div class="camp tod-${tod}${dsc ? ' scene-img' : ''}" id="camp" data-night="${dsc ? dsc.night : 'orig'}" style="--ground:url(${groundURL()})">
+        <div class="camp tod-${tod}${dsc ? ' scene-img' : ''}" id="camp" data-night="${dsc ? (dsc.tod ? 'tod' : dsc.night) : 'orig'}" style="--ground:url(${groundURL()})">
           ${dsc ? `<div class="scene-bg" style="background-image:url('${U.esc(dsc.file)}')"></div>` : ''}
           <div class="sky">${stars}<div class="celestial"></div><div class="cloud c1"></div><div class="cloud c2"></div></div>
           <div class="hill" style="background-image:url(${hillURL()})"></div><div class="ground"></div>
@@ -464,6 +464,7 @@ const Screens = (() => {
       // 夥伴在營地裡走來走去
       campTimer = setInterval(() => {
         if (!document.body.contains(petEl)) { clearInterval(campTimer); return; }
+        if (timeOfDay() !== tod) { hub(); return; }
         if (petEl.dataset.busy || CampFun.tick()) return;
         if (tod === 'night' && U.chance(0.7)) { petEl.classList.add('sleepy'); return; }
         petEl.classList.remove('sleepy');

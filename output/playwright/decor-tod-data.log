@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "E:\NEWTEST\新刷題庫框架 - TEST 1\tools\decor_data.py", line 23, in <module>
+    main()
+    ~~~~^^
+  File "E:\NEWTEST\新刷題庫框架 - TEST 1\tools\decor_data.py", line 17, in main
+    raise ValueError(f"{entry['id']}: {'; '.join(errors)}")
+ValueError: scene_autumn: ground alignment original/night: 6.0px > 3px; ground alignment morning/night: 6.0px > 3px; ground alignment day/night: 6.0px > 3px

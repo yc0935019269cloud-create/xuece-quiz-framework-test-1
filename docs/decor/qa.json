@@ -1,12 +1,12 @@
 {
- "at": "2026-10-30T14:39:19.165Z",
+ "at": "2026-10-30T15:24:07.643Z",
  "realData": true,
  "supplementedFromFixture": {
   "scenes": 0,
   "items": 0
  },
- "pass": 98,
- "total": 98,
+ "pass": 168,
+ "total": 168,
  "errors": [],
  "results": [
   {
@@ -71,6 +71,10 @@
   },
   {
    "name": "[1100] 商店分頁「場景」可顯示且無橫向捲動",
+   "pass": true
+  },
+  {
+   "name": "[1100] shop shows four labelled, loadable time variants for all eight scenes",
    "pass": true
   },
   {
@@ -150,11 +154,147 @@
    "pass": true
   },
   {
-   "name": "[1100] dim 場景夜晚套用變暗濾鏡",
+   "name": "[1100] time variants bypass night dimming",
    "pass": true
   },
   {
    "name": "[1100] self 場景夜晚不再調暗",
+   "pass": true
+  },
+  {
+   "name": "[1100] all eight scenes have four time paths in generated data",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_beach morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_beach day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_beach dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_beach night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_autumn morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_autumn day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_autumn dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_autumn night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_sakura morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_sakura day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_sakura dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_sakura night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_snow morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_snow day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_snow dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_snow night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_library morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_library day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_library dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_library night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_island morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_island day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_island dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_island night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_crystal morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_crystal day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_crystal dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_crystal night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_starobs morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_starobs day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_starobs dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_starobs night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[1100] automatic scene time matches the camp time class",
    "pass": true
   },
   {
@@ -270,6 +410,10 @@
    "pass": true
   },
   {
+   "name": "[390] shop shows four labelled, loadable time variants for all eight scenes",
+   "pass": true
+  },
+  {
    "name": "[390] 抽獎頁顯示保底與機率表",
    "pass": true
   },
@@ -346,11 +490,147 @@
    "pass": true
   },
   {
-   "name": "[390] dim 場景夜晚套用變暗濾鏡",
+   "name": "[390] time variants bypass night dimming",
    "pass": true
   },
   {
    "name": "[390] self 場景夜晚不再調暗",
+   "pass": true
+  },
+  {
+   "name": "[390] all eight scenes have four time paths in generated data",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_beach morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_beach day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_beach dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_beach night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_autumn morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_autumn day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_autumn dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_autumn night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_sakura morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_sakura day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_sakura dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_sakura night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_snow morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_snow day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_snow dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_snow night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_library morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_library day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_library dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_library night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_island morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_island day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_island dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_island night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_crystal morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_crystal day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_crystal dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_crystal night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_starobs morning button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_starobs day button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_starobs dusk button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_starobs night button selects its image without a CSS filter",
+   "pass": true
+  },
+  {
+   "name": "[390] automatic scene time matches the camp time class",
    "pass": true
   },
   {

@@ -1,0 +1,1037 @@
+{
+  "method": "24 individual built-in imagegen lighting-weather edits using each original as edit target",
+  "edits": [
+    {
+      "id": "scene_beach",
+      "time": "morning",
+      "reference": "assets/decor/scenes/scene_beach.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-9ea381f0-b3e2-40d1-aa6d-2f64778d4b6c.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied pixel-art camp panorama to MORNING. Return one 4:1 panorama, same exact framing and landmark positions as input, no border or labels. Preserve every palm tree, island, rock, coastline and mountain silhouette in exactly the same coordinates. Preserve ground surface boundary at y=270/384 (70.3% height) and bottom soil band at 354/384. Only repaint illumination: soft pink-gold morning haze, pale peach sunrise sky with clouds retained in place, gentle rosy ocean reflections, softly lit warm sand. Keep hand-painted crisp pixel art, limited palette, no characters/furniture/text. Do not zoom, crop, stretch, move objects or redraw terrain geometry.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          634
+        ],
+        "registration": {
+          "matches": 214,
+          "inliers": 182,
+          "affine": [
+            [
+              1.0002923225208862,
+              -0.000615810089635546,
+              -0.1355818306158484
+            ],
+            [
+              4.35427891524909e-05,
+              0.8607507730942489,
+              27.050593838687035
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 266,
+          "generatedFloorRow": 266,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 257
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_beach",
+      "time": "dusk",
+      "reference": "assets/decor/scenes/scene_beach.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-6410cdbc-4643-4950-ad77-f13503abd91b.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its DUSK version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve palms, rocky shores, islands and mountain silhouettes. Sand surface starts at y=270/384; soil at y=354/384. Change ONLY lighting, sky colours and light sources: warm low orange sun, amber horizon, violet upper sky, lit windows and lanterns. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 123,
+          "inliers": 90,
+          "affine": [
+            [
+              1.0004800601643848,
+              -0.0013907060975391905,
+              0.09874090132800095
+            ],
+            [
+              0.00017338105420456744,
+              0.7577199999082729,
+              23.349818387825625
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 266,
+          "generatedFloorRow": 259,
+          "correctionPx": 7,
+          "sourceAnchoredFloorFromRow": 257
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_beach",
+      "time": "night",
+      "reference": "assets/decor/scenes/scene_beach.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-eb14cdbc-5880-43b6-8a1f-ff5f4c493d60.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its NIGHT version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve palms, rocky shores, islands and mountain silhouettes. Sand surface starts at y=270/384; soil at y=354/384. Change ONLY lighting, sky colours and light sources: deep indigo sky, stars and moon, cool moonlight and reflections, existing windows/lanterns glowing warm amber. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 186,
+          "inliers": 139,
+          "affine": [
+            [
+              1.00090381282675,
+              -6.707531601821327e-05,
+              -0.3721747676371453
+            ],
+            [
+              9.76748456418434e-05,
+              0.7517521853611265,
+              23.669717820379997
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 266,
+          "generatedFloorRow": 260,
+          "correctionPx": 6,
+          "sourceAnchoredFloorFromRow": 257
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_autumn",
+      "time": "morning",
+      "reference": "assets/decor/scenes/scene_autumn.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-96770497-cce0-483e-926c-998c466b41cb.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its MORNING version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve red maple trees on both sides, mountain peaks, left waterfall and castle on right hill. Ground clearing starts at y=273/384; soil at y=360/384. Change ONLY lighting, sky colours and light sources: soft pink-gold dawn haze, gentle sunrise illumination. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 210,
+          "inliers": 186,
+          "affine": [
+            [
+              1.0001657503302583,
+              0.000963519641441833,
+              0.2945701664701479
+            ],
+            [
+              -1.1452726468194237e-05,
+              0.7512527968562712,
+              23.84638775046056
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 269,
+          "generatedFloorRow": 269,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 260
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_autumn",
+      "time": "dusk",
+      "reference": "assets/decor/scenes/scene_autumn.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-3961a84a-b6ee-488c-84e4-53dc87520aa2.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its DUSK version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve red maple trees on both sides, mountain peaks, left waterfall and castle on right hill. Ground clearing starts at y=273/384; soil at y=360/384. Change ONLY lighting, sky colours and light sources: warm low orange sun, amber horizon, violet upper sky, lit windows and lanterns. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 254,
+          "inliers": 221,
+          "affine": [
+            [
+              1.000299540732332,
+              0.00237931062165562,
+              0.035176543630069196
+            ],
+            [
+              -8.509642451028191e-05,
+              0.7515331231174188,
+              23.90821696775634
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 269,
+          "generatedFloorRow": 268,
+          "correctionPx": 1,
+          "sourceAnchoredFloorFromRow": 260
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_autumn",
+      "time": "night",
+      "reference": "assets/decor/scenes/scene_autumn.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-249b6fb7-d898-4342-b3e2-4038989dd402.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its NIGHT version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve red maple trees on both sides, mountain peaks, left waterfall and castle on right hill. Ground clearing starts at y=273/384; soil at y=360/384. Change ONLY lighting, sky colours and light sources: deep indigo sky, stars and moon, cool moonlight and reflections, existing windows/lanterns glowing warm amber. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 223,
+          "inliers": 209,
+          "affine": [
+            [
+              0.9999676053246734,
+              0.0004750711620496663,
+              0.3075728896561062
+            ],
+            [
+              9.616891495697763e-06,
+              0.7508830527099983,
+              24.019162274934985
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 269,
+          "generatedFloorRow": 268,
+          "correctionPx": 1,
+          "sourceAnchoredFloorFromRow": 260
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_sakura",
+      "time": "morning",
+      "reference": "assets/decor/scenes/scene_sakura.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-900a9bd6-17a9-4e58-95af-a2ce98c9cb50.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its MORNING version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve cherry trees, left pavilion, lanterns, central bridge, pond, Mount Fuji and right castle. Lawn starts at y=258/384. Change ONLY lighting, sky colours and light sources: soft pink-gold dawn haze, gentle sunrise illumination. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          90,
+          2172,
+          632
+        ],
+        "registration": {
+          "matches": 371,
+          "inliers": 358,
+          "affine": [
+            [
+              0.9997981804663821,
+              0.0015772322359821475,
+              0.3147283779062991
+            ],
+            [
+              -9.208151274671714e-05,
+              1.0008114916823259,
+              0.42826359673894754
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 257,
+          "generatedFloorRow": 257,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 248
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_sakura",
+      "time": "dusk",
+      "reference": "assets/decor/scenes/scene_sakura.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-3e15a7da-f46c-4b58-8242-55ebc0312a65.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its DUSK version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve cherry trees, left pavilion, lanterns, central bridge, pond, Mount Fuji and right castle. Lawn starts at y=258/384. Change ONLY lighting, sky colours and light sources: warm low orange sun, amber horizon, violet upper sky, lit windows and lanterns. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 188,
+          "inliers": 169,
+          "affine": [
+            [
+              0.99964549573436,
+              0.0025488911489096764,
+              0.26731762922917984
+            ],
+            [
+              4.323718949111524e-05,
+              0.747493328778159,
+              24.27981233245405
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 257,
+          "generatedFloorRow": 257,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 248
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_sakura",
+      "time": "night",
+      "reference": "assets/decor/scenes/scene_sakura.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-57223aca-2dd0-46e5-8868-bdbe73525728.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its NIGHT version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve cherry trees, left pavilion, lanterns, central bridge, pond, Mount Fuji and right castle. Lawn starts at y=258/384. Change ONLY lighting, sky colours and light sources: deep indigo sky, stars and moon, cool moonlight and reflections, existing windows/lanterns glowing warm amber. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 178,
+          "inliers": 165,
+          "affine": [
+            [
+              1.0001615956680057,
+              -0.00392011144996126,
+              0.833441599848566
+            ],
+            [
+              -1.3551389859547416e-05,
+              0.7513272548363837,
+              23.867025304521917
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 257,
+          "generatedFloorRow": 256,
+          "correctionPx": 1,
+          "sourceAnchoredFloorFromRow": 248
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_snow",
+      "time": "morning",
+      "reference": "assets/decor/scenes/scene_snow.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-e2cdc4a9-1b2b-4be5-971e-8cd8c1c70a50.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its MORNING version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve cabins, pines, bridge, central distant castle and mountain peaks. Snow surface at y=276/384, soil boundary y=294/384. Change ONLY lighting, sky colours and light sources: soft pink-gold dawn haze, gentle sunrise illumination. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 382,
+          "inliers": 319,
+          "affine": [
+            [
+              1.0004225715365387,
+              0.0004117937928232287,
+              0.01802838740619437
+            ],
+            [
+              -3.6928077924358e-05,
+              0.7554623369896794,
+              23.341166837799495
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 269,
+          "generatedFloorRow": 269,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 260
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_snow",
+      "time": "dusk",
+      "reference": "assets/decor/scenes/scene_snow.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-a9f5c97f-cde5-401f-9506-74413f3f2371.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its DUSK version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve cabins, pines, bridge, central distant castle and mountain peaks. Snow surface at y=276/384, soil boundary y=294/384. Change ONLY lighting, sky colours and light sources: warm low orange sun, amber horizon, violet upper sky, lit windows and lanterns. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 241,
+          "inliers": 199,
+          "affine": [
+            [
+              1.0004230669979899,
+              -0.0014041927207764787,
+              0.3641206946600528
+            ],
+            [
+              9.687033265674437e-05,
+              0.7493397512081685,
+              24.0561027724393
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 269,
+          "generatedFloorRow": 269,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 260
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_snow",
+      "time": "night",
+      "reference": "assets/decor/scenes/scene_snow.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-3c8535b3-e392-412b-8477-087a2d0207e0.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its NIGHT version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve cabins, pines, bridge, central distant castle and mountain peaks. Snow surface at y=276/384, soil boundary y=294/384. Change ONLY lighting, sky colours and light sources: deep indigo sky, stars and moon, cool moonlight and reflections, existing windows/lanterns glowing warm amber. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 239,
+          "inliers": 179,
+          "affine": [
+            [
+              0.9999456725650954,
+              3.415957417672111e-05,
+              0.32576136375421627
+            ],
+            [
+              6.953317659635515e-05,
+              0.751081351647013,
+              23.93625993076916
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 269,
+          "generatedFloorRow": 269,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 260
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_library",
+      "time": "morning",
+      "reference": "assets/decor/scenes/scene_library.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-3ed26162-f249-48b7-9543-42509abea74c.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its MORNING version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Indoor library. Preserve every shelf, staircase, arches, center three windows, chandeliers and fireplaces. Floor starts at y=267/384. Change daylight THROUGH WINDOWS and illumination/lamp glow, preserve window frames. Morning pink-gold windows and raking rays; day blue bright windows, unlit lamps and soft sun shafts; dusk orange violet windows and warm lit lamps. No stars/moon during day. Change ONLY lighting, sky colours and light sources: soft pink-gold dawn haze, gentle sunrise illumination. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          90,
+          2172,
+          634
+        ],
+        "registration": {
+          "matches": 253,
+          "inliers": 234,
+          "affine": [
+            [
+              0.9998100235571251,
+              0.0013333433616063487,
+              0.40219997379179406
+            ],
+            [
+              -7.367671030105797e-05,
+              0.9952470726627597,
+              0.5379710771941634
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 263,
+          "generatedFloorRow": 263,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 254
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_library",
+      "time": "day",
+      "reference": "assets/decor/scenes/scene_library.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-1a48c186-9221-4c46-a5fa-27844efc9bca.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its DAY version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Indoor library. Preserve every shelf, staircase, arches, center three windows, chandeliers and fireplaces. Floor starts at y=267/384. Change daylight THROUGH WINDOWS and illumination/lamp glow, preserve window frames. Morning pink-gold windows and raking rays; day blue bright windows, unlit lamps and soft sun shafts; dusk orange violet windows and warm lit lamps. No stars/moon during day. Change ONLY lighting, sky colours and light sources: clear bright daytime, blue sky and soft white clouds, natural daylight, lamps off. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          90,
+          2172,
+          633
+        ],
+        "registration": {
+          "matches": 234,
+          "inliers": 217,
+          "affine": [
+            [
+              0.9996260591991479,
+              -0.0004754078019779946,
+              0.4451750088066361
+            ],
+            [
+              7.160460232561675e-06,
+              0.9954100087430493,
+              0.8397704268863725
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 263,
+          "generatedFloorRow": 263,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 254
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_library",
+      "time": "dusk",
+      "reference": "assets/decor/scenes/scene_library.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-e095a1bd-98ca-4fad-959b-e14bf7d58c0e.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its DUSK version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Indoor library. Preserve every shelf, staircase, arches, center three windows, chandeliers and fireplaces. Floor starts at y=267/384. Change daylight THROUGH WINDOWS and illumination/lamp glow, preserve window frames. Morning pink-gold windows and raking rays; day blue bright windows, unlit lamps and soft sun shafts; dusk orange violet windows and warm lit lamps. No stars/moon during day. Change ONLY lighting, sky colours and light sources: warm low orange sun, amber horizon, violet upper sky, lit windows and lanterns. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          38,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 226,
+          "inliers": 206,
+          "affine": [
+            [
+              0.999829000554748,
+              -3.7393287397392223e-06,
+              0.3287294260814299
+            ],
+            [
+              -0.0001853880012613286,
+              0.7910239056848565,
+              14.890526514337873
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 263,
+          "generatedFloorRow": 262,
+          "correctionPx": 1,
+          "sourceAnchoredFloorFromRow": 254
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_island",
+      "time": "morning",
+      "reference": "assets/decor/scenes/scene_island.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-95333a5a-83f3-478f-98eb-051df652c710.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its MORNING version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve every floating island, castle, waterfall, cloud and mountain silhouette. Foreground grass top y=291/384, soil y=315/384. Change ONLY lighting, sky colours and light sources: soft pink-gold dawn haze, gentle sunrise illumination. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 260,
+          "inliers": 213,
+          "affine": [
+            [
+              0.9998642770095901,
+              0.004491216273701547,
+              0.09827978909275768
+            ],
+            [
+              0.0003868401856091816,
+              0.7516194937808421,
+              23.668537505336754
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 287,
+          "generatedFloorRow": 287,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 278
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_island",
+      "time": "dusk",
+      "reference": "assets/decor/scenes/scene_island.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-75e188fe-affb-40a9-87e0-5c36afe63937.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its DUSK version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve every floating island, castle, waterfall, cloud and mountain silhouette. Foreground grass top y=291/384, soil y=315/384. Change ONLY lighting, sky colours and light sources: warm low orange sun, amber horizon, violet upper sky, lit windows and lanterns. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 277,
+          "inliers": 227,
+          "affine": [
+            [
+              0.9997872950361656,
+              -0.00016957820265335537,
+              0.3701443482212683
+            ],
+            [
+              0.00016802522576643165,
+              0.7439817320863105,
+              24.651872554238672
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 287,
+          "generatedFloorRow": 287,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 278
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_island",
+      "time": "night",
+      "reference": "assets/decor/scenes/scene_island.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-71e91dba-2a97-48de-b295-0036c0b38757.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its NIGHT version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve every floating island, castle, waterfall, cloud and mountain silhouette. Foreground grass top y=291/384, soil y=315/384. Change ONLY lighting, sky colours and light sources: deep indigo sky, stars and moon, cool moonlight and reflections, existing windows/lanterns glowing warm amber. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 184,
+          "inliers": 137,
+          "affine": [
+            [
+              0.9994946059344428,
+              -0.003958457953684779,
+              1.1728939930358389
+            ],
+            [
+              0.000611680726861936,
+              0.7491345380708201,
+              24.033411183422718
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 287,
+          "generatedFloorRow": 286,
+          "correctionPx": 1,
+          "sourceAnchoredFloorFromRow": 278
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_crystal",
+      "time": "morning",
+      "reference": "assets/decor/scenes/scene_crystal.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-53899e0a-e21f-42a0-90ef-ad3612ef37b8.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its MORNING version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. UNDERGROUND crystal cave: preserve all stalactites, stalagmites, every crystal and waterfall and bridges. Ground starts at y=264/384, rocky bottom at y=336/384. Time must read by morning pale rose-gold light shafts through EXISTING ceiling cracks and soft lilac crystals; day strong cool white shafts, cyan crystals; dusk fading amber shafts, coral/violet crystal glow. Do not open new holes or move rocks. Change ONLY lighting, sky colours and light sources: soft pink-gold dawn haze, gentle sunrise illumination. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 296,
+          "inliers": 271,
+          "affine": [
+            [
+              1.0001909523380899,
+              -0.00046472182446209796,
+              0.3014673459210173
+            ],
+            [
+              2.7680241442250937e-05,
+              0.7555447740640451,
+              11.544664965130066
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 260,
+          "generatedFloorRow": 260,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 251
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_crystal",
+      "time": "day",
+      "reference": "assets/decor/scenes/scene_crystal.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-9b44cfe9-d7ba-4a2a-b7fc-cb9f6f686e4b.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its DAY version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. UNDERGROUND crystal cave: preserve all stalactites, stalagmites, every crystal and waterfall and bridges. Ground starts at y=264/384, rocky bottom at y=336/384. Time must read by morning pale rose-gold light shafts through EXISTING ceiling cracks and soft lilac crystals; day strong cool white shafts, cyan crystals; dusk fading amber shafts, coral/violet crystal glow. Do not open new holes or move rocks. Change ONLY lighting, sky colours and light sources: clear bright daytime, blue sky and soft white clouds, natural daylight, lamps off. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          589
+        ],
+        "registration": {
+          "matches": 400,
+          "inliers": 383,
+          "affine": [
+            [
+              0.9998983010136149,
+              -9.845335178077054e-05,
+              0.4249453769880294
+            ],
+            [
+              -0.00019426374263280683,
+              0.9230698498697284,
+              15.03094665587611
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 260,
+          "generatedFloorRow": 259,
+          "correctionPx": 1,
+          "sourceAnchoredFloorFromRow": 251
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_crystal",
+      "time": "dusk",
+      "reference": "assets/decor/scenes/scene_crystal.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-ef69a132-fccc-4131-a881-2b0550f8874d.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its DUSK version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. UNDERGROUND crystal cave: preserve all stalactites, stalagmites, every crystal and waterfall and bridges. Ground starts at y=264/384, rocky bottom at y=336/384. Time must read by morning pale rose-gold light shafts through EXISTING ceiling cracks and soft lilac crystals; day strong cool white shafts, cyan crystals; dusk fading amber shafts, coral/violet crystal glow. Do not open new holes or move rocks. Change ONLY lighting, sky colours and light sources: warm low orange sun, amber horizon, violet upper sky, lit windows and lanterns. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 273,
+          "inliers": 248,
+          "affine": [
+            [
+              0.9999050489288759,
+              0.0001688104654719288,
+              0.518969663248978
+            ],
+            [
+              -4.495562266090248e-05,
+              0.7480032884163483,
+              24.222819447777603
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 260,
+          "generatedFloorRow": 260,
+          "correctionPx": 0,
+          "sourceAnchoredFloorFromRow": 251
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_starobs",
+      "time": "morning",
+      "reference": "assets/decor/scenes/scene_starobs.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-2f695072-a7a0-4cae-8561-be4fd6d4a481.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its MORNING version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve left observatory dome and telescope, right observatory, far mountains, lake, town and stone terrace railing. Terrace floor starts at y=285/384. Morning pink-gold horizon with faint fading stars; day bright blue sky, white clouds, no moon/stars, lamps unlit; dusk orange horizon to violet sky with first stars, lit windows. Change ONLY lighting, sky colours and light sources: soft pink-gold dawn haze, gentle sunrise illumination. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 74,
+          "inliers": 50,
+          "affine": [
+            [
+              0.9996867952013994,
+              -0.0008791729930337367,
+              0.5026490502688161
+            ],
+            [
+              6.31232681212313e-05,
+              0.7593578257709324,
+              23.013867207905434
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 266,
+          "generatedFloorRow": 265,
+          "correctionPx": 1,
+          "sourceAnchoredFloorFromRow": 257
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_starobs",
+      "time": "day",
+      "reference": "assets/decor/scenes/scene_starobs.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-61baf4d4-c852-44bf-813f-66da872eaec9.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its DAY version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve left observatory dome and telescope, right observatory, far mountains, lake, town and stone terrace railing. Terrace floor starts at y=285/384. Morning pink-gold horizon with faint fading stars; day bright blue sky, white clouds, no moon/stars, lamps unlit; dusk orange horizon to violet sky with first stars, lit windows. Change ONLY lighting, sky colours and light sources: clear bright daytime, blue sky and soft white clouds, natural daylight, lamps off. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 102,
+          "inliers": 74,
+          "affine": [
+            [
+              0.999919946731951,
+              0.005513908112801273,
+              -0.29024635960594036
+            ],
+            [
+              -0.00018189836408919456,
+              0.7493353837547829,
+              24.323244861605968
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 266,
+          "generatedFloorRow": 265,
+          "correctionPx": 1,
+          "sourceAnchoredFloorFromRow": 257
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    },
+    {
+      "id": "scene_starobs",
+      "time": "dusk",
+      "reference": "assets/decor/scenes/scene_starobs.png",
+      "source": "C:\\Users\\USER\\.codex\\generated_images\\01a18d53-e751-74b1-82ad-c8b913964531\\exec-cec077f0-212b-4126-b922-caa1826dfe13.png",
+      "prompt": "Use case: lighting-weather EDIT. Edit the supplied original pixel-art panorama into its DUSK version. ONE 4:1 panorama filling canvas with no borders or labels. Same composition, same exact pixel coordinates of all landmarks and horizon and ground line. Preserve left observatory dome and telescope, right observatory, far mountains, lake, town and stone terrace railing. Terrace floor starts at y=285/384. Morning pink-gold horizon with faint fading stars; day bright blue sky, white clouds, no moon/stars, lamps unlit; dusk orange horizon to violet sky with first stars, lit windows. Change ONLY lighting, sky colours and light sources: warm low orange sun, amber horizon, violet upper sky, lit windows and lanterns. Keep crisp hand-drawn pixel art with limited colour palette. Preserve all terrain edges and ground band height within one logical pixel. No zoom/crop/stretch/rearrangement/new structures/characters/furniture/text/watermark.",
+      "processing": {
+        "crop": [
+          0,
+          0,
+          2172,
+          724
+        ],
+        "registration": {
+          "matches": 126,
+          "inliers": 104,
+          "affine": [
+            [
+              0.9994913753024811,
+              0.0026609164129283995,
+              0.2967308533498298
+            ],
+            [
+              -0.0002514020862791362,
+              0.7585508728627027,
+              23.538350861142852
+            ]
+          ]
+        },
+        "floor": {
+          "originalFloorRow": 266,
+          "generatedFloorRow": 265,
+          "correctionPx": 1,
+          "sourceAnchoredFloorFromRow": 257
+        },
+        "grid": [
+          512,
+          128
+        ],
+        "palette": 128,
+        "nearestScale": 3
+      }
+    }
+  ]
+}

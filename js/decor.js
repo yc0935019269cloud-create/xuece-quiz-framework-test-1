@@ -163,7 +163,7 @@ const DECOR = (() => {
   function clearAll() { ensure().placed = []; save(); }
   function setScene(id) { const d = ensure(); if (!d.scenes.includes(id) || !(scene(id))) return false; d.scene = id; save(); return true; }
   /* 目前場景（classic 或資料不存在回傳 null＝用原本的 CSS 營地） */
-  function sceneFor() { const d = ensure(); if (d.scene === 'classic') return null; const s = scene(d.scene); return s && s.file ? s : null; }
+  function sceneFor(tod) { const d = ensure(); if (d.scene === 'classic') return null; const s = scene(d.scene); return s && s.file ? { ...s, file: s.tod && s.tod[tod] || s.file } : null; }
 
   /* ---------- 小工具 ---------- */
   const E = s => U.esc(s);
@@ -178,6 +178,8 @@ const DECOR = (() => {
   }
   const rarTag = r => `<span class="dc-rar r-${r}">${RNAME[r]}</span>`;
   const sceneThumb = s => `<span class="dc-scene-th" style="${s.file ? `background-image:url('${E(s.file)}')` : ''}" data-id="${E(s.id)}">${s.file ? '' : '<i class="dc-classic"></i>'}<em>${E(s.name)}</em></span>`;
+  const TOD_LABELS = { morning: '早晨', day: '白天', dusk: '黃昏', night: '夜晚' };
+  const sceneStrip = s => s.tod ? `<span class="dc-tod-strip" aria-label="${E(s.name)} 四個時段">${Object.entries(TOD_LABELS).map(([tod, label]) => `<span class="dc-tod-preview" data-scene="${E(s.id)}" data-time="${tod}"><img loading="lazy" src="${E(s.tod[tod])}" alt="${E(s.name)}・${label}" width="1536" height="384"><span>${label}</span></span>`).join('')}</span>` : '';
   const getHow = id => {
     if (id === 'classic') return '預設擁有';
     if (SCENE_PRICE[id]) return `商店直購 ${SCENE_PRICE[id]} 魂晶`;
@@ -415,7 +417,7 @@ const DECOR = (() => {
     const d = ensure(), list = data().scenes;
     body.innerHTML = `<div class="dc-scene-grid big">${list.map(s => {
       const own = d.scenes.includes(s.id), pr = SCENE_PRICE[s.id];
-      return `<div class="dc-scene-card ${d.scene === s.id ? 'cur' : ''} ${own ? '' : 'lock'}">${sceneThumb(s)}<span class="small-t">${E(s.desc || '')}</span>
+      return `<div class="dc-scene-card ${d.scene === s.id ? 'cur' : ''} ${own ? '' : 'lock'}">${sceneThumb(s)}${sceneStrip(s)}<span class="small-t">${E(s.desc || '')}</span>
         ${own ? `<button class="px-btn small ${d.scene === s.id ? '' : 'gold'}" data-apply="${E(s.id)}" ${d.scene === s.id ? 'disabled' : ''}>${d.scene === s.id ? '使用中' : '套用'}</button>`
           : `<span class="small-t">取得方式：${E(getHow(s.id))}</span>${pr ? `<button class="px-btn small gold" data-buy="${E(s.id)}" ${gems() < pr ? 'disabled' : ''}>購買 ${pr}</button>` : ''}`}</div>`;
     }).join('')}</div>`;

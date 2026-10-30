@@ -1,0 +1,45 @@
+[
+  {
+    "check": "assets",
+    "exitCode": 1,
+    "log": "output\\playwright\\decor-tod-assets.log"
+  },
+  {
+    "check": "text",
+    "exitCode": 0,
+    "log": "output\\playwright\\decor-tod-text.log"
+  },
+  {
+    "check": "data",
+    "exitCode": 1,
+    "log": "output\\playwright\\decor-tod-data.log"
+  },
+  {
+    "check": "browser",
+    "exitCode": 1,
+    "log": "output\\playwright\\decor-tod-browser.log"
+  },
+  {
+    "check": "build",
+    "exitCode": 0,
+    "log": "output\\playwright\\decor-tod-build.log"
+  },
+  {
+    "check": "assets",
+    "exitCode": 0,
+    "log": "output\\playwright\\decor-tod-assets-corrected.log",
+    "afterFloorSeamCorrection": true
+  },
+  {
+    "check": "data",
+    "exitCode": 0,
+    "log": "output\\playwright\\decor-tod-data-corrected.log",
+    "afterFloorSeamCorrection": true
+  },
+  {
+    "check": "browser",
+    "exitCode": 0,
+    "log": "output\\playwright\\decor-tod-browser-corrected.log",
+    "afterFloorSeamCorrection": true
+  }
+]

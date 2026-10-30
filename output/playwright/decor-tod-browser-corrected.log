@@ -1,0 +1,170 @@
+PASS [1100] 載入 DECOR，資料 真實，補假場景 0、補假物件 0
+PASS [1100] 新檔預設：擁有 classic、沒擺東西
+PASS [1100] 營地有三個按鈕與選單磚
+PASS [1100] 直購物件＋場景：扣 340 魂晶、擁有；SSR 不能買、場景不能重買
+PASS [1100] 魂晶不足不能買／不能抽，且不扣
+PASS [1100] 單抽 20、十連 180（扣款已含退款還原）
+PASS [1100] 20000 抽機率落在容許範圍
+PASS [1100] SSR 由 3 個物件＋1 場景平分（都出現、比例接近）
+PASS [1100] 400 次十連都至少一件 SR 以上
+PASS [1100] 保底：前 59 抽無 SSR（rng 固定），第 60 抽必 SSR、計數歸零
+PASS [1100] 碎片門檻 N 3 片解鎖、SR 2、SSR 1、雜物 1，6 片＝2 件
+PASS [1100] 雜物退 2 魂晶（淨 -18）；重複場景退 30（淨 +10），新場景解鎖
+PASS [1100] 商店分頁「抽獎」可顯示且無橫向捲動
+PASS [1100] 商店分頁「直購」可顯示且無橫向捲動
+PASS [1100] 商店分頁「背包」可顯示且無橫向捲動
+PASS [1100] 商店分頁「場景」可顯示且無橫向捲動
+PASS [1100] shop shows four labelled, loadable time variants for all eight scenes
+PASS [1100] 抽獎頁顯示保底與機率表
+PASS [1100] 十連結果視窗顯示 10 張卡
+PASS [1100] 可略過動畫
+PASS [1100] 十連後魂晶減少且畫面更新
+PASS [1100] 直購頁按鈕購買 N 物件 -40
+PASS [1100] 布置模式出現抽屜與可用物件
+PASS [1100] 點物件放進營地，庫存 -1
+PASS [1100] 用完的物件在抽屜變灰不能再放
+PASS [1100] 滑鼠拖曳移動物件（x 變化約 0.16）
+PASS [1100] 拖到營地外會夾在地面帶內 (0.03≤x≤0.97, 0≤y≤1)
+PASS [1100] 翻轉：↔ 翻轉 寫入 f
+PASS [1100] 收回：物件回到庫存
+PASS [1100] 最多擺 40 件
+PASS [1100] 離開布置模式
+PASS [1100] 重新載入後物件位置保留
+PASS [1100] 物件水平位置＝x 比例
+PASS [1100] 一般模式點物件顯示名稱泡泡
+PASS [1100] 預設為 classic 的 CSS 營地
+PASS [1100] 套用圖片場景：背景圖層出現、隱藏 sky/ground
+PASS [1100] time variants bypass night dimming
+PASS [1100] self 場景夜晚不再調暗
+PASS [1100] all eight scenes have four time paths in generated data
+PASS [1100] scene_beach morning button selects its image without a CSS filter
+PASS [1100] scene_beach day button selects its image without a CSS filter
+PASS [1100] scene_beach dusk button selects its image without a CSS filter
+PASS [1100] scene_beach night button selects its image without a CSS filter
+PASS [1100] scene_autumn morning button selects its image without a CSS filter
+PASS [1100] scene_autumn day button selects its image without a CSS filter
+PASS [1100] scene_autumn dusk button selects its image without a CSS filter
+PASS [1100] scene_autumn night button selects its image without a CSS filter
+PASS [1100] scene_sakura morning button selects its image without a CSS filter
+PASS [1100] scene_sakura day button selects its image without a CSS filter
+PASS [1100] scene_sakura dusk button selects its image without a CSS filter
+PASS [1100] scene_sakura night button selects its image without a CSS filter
+PASS [1100] scene_snow morning button selects its image without a CSS filter
+PASS [1100] scene_snow day button selects its image without a CSS filter
+PASS [1100] scene_snow dusk button selects its image without a CSS filter
+PASS [1100] scene_snow night button selects its image without a CSS filter
+PASS [1100] scene_library morning button selects its image without a CSS filter
+PASS [1100] scene_library day button selects its image without a CSS filter
+PASS [1100] scene_library dusk button selects its image without a CSS filter
+PASS [1100] scene_library night button selects its image without a CSS filter
+PASS [1100] scene_island morning button selects its image without a CSS filter
+PASS [1100] scene_island day button selects its image without a CSS filter
+PASS [1100] scene_island dusk button selects its image without a CSS filter
+PASS [1100] scene_island night button selects its image without a CSS filter
+PASS [1100] scene_crystal morning button selects its image without a CSS filter
+PASS [1100] scene_crystal day button selects its image without a CSS filter
+PASS [1100] scene_crystal dusk button selects its image without a CSS filter
+PASS [1100] scene_crystal night button selects its image without a CSS filter
+PASS [1100] scene_starobs morning button selects its image without a CSS filter
+PASS [1100] scene_starobs day button selects its image without a CSS filter
+PASS [1100] scene_starobs dusk button selects its image without a CSS filter
+PASS [1100] scene_starobs night button selects its image without a CSS filter
+PASS [1100] automatic scene time matches the camp time class
+PASS [1100] 場景視窗列出所有場景，未擁有者不可點
+PASS [1100] 場景視窗可切回經典草原
+PASS [1100] 重新載入後場景保留
+PASS [1100] 重新載入後營地顯示場景圖層
+PASS [1100] 圖檔缺失時顯示佔位框、不當機
+PASS [1100] exportAll／importAll 來回保留 decor
+PASS [1100] 沒有 decor 的舊備份可匯入並補預設
+PASS [1100] 舊存檔（無 decor）開營地與商店正常
+PASS [1100] peglin 沒登入時只顯示「請先登入」
+PASS [1100] peglinLearn 沒登入時只顯示「請先登入」
+PASS [1100] 登入按鈕開出雲端同步視窗
+PASS [1100] 沒有頁面錯誤
+PASS [390] 載入 DECOR，資料 真實，補假場景 0、補假物件 0
+PASS [390] 新檔預設：擁有 classic、沒擺東西
+PASS [390] 營地有三個按鈕與選單磚
+PASS [390] 直購物件＋場景：扣 340 魂晶、擁有；SSR 不能買、場景不能重買
+PASS [390] 魂晶不足不能買／不能抽，且不扣
+PASS [390] 單抽 20、十連 180（扣款已含退款還原）
+PASS [390] 20000 抽機率落在容許範圍
+PASS [390] SSR 由 3 個物件＋1 場景平分（都出現、比例接近）
+PASS [390] 400 次十連都至少一件 SR 以上
+PASS [390] 保底：前 59 抽無 SSR（rng 固定），第 60 抽必 SSR、計數歸零
+PASS [390] 碎片門檻 N 3 片解鎖、SR 2、SSR 1、雜物 1，6 片＝2 件
+PASS [390] 雜物退 2 魂晶（淨 -18）；重複場景退 30（淨 +10），新場景解鎖
+PASS [390] 商店分頁「抽獎」可顯示且無橫向捲動
+PASS [390] 商店分頁「直購」可顯示且無橫向捲動
+PASS [390] 商店分頁「背包」可顯示且無橫向捲動
+PASS [390] 商店分頁「場景」可顯示且無橫向捲動
+PASS [390] shop shows four labelled, loadable time variants for all eight scenes
+PASS [390] 抽獎頁顯示保底與機率表
+PASS [390] 十連結果視窗顯示 10 張卡
+PASS [390] 可略過動畫
+PASS [390] 十連後魂晶減少且畫面更新
+PASS [390] 直購頁按鈕購買 N 物件 -40
+PASS [390] 布置模式出現抽屜與可用物件
+PASS [390] 點物件放進營地，庫存 -1
+PASS [390] 用完的物件在抽屜變灰不能再放
+PASS [390] 觸控拖曳移動物件（x 變化約 0.25）
+PASS [390] 拖到營地外會夾在地面帶內 (0.03≤x≤0.97, 0≤y≤1)
+PASS [390] 翻轉：↔ 翻轉 寫入 f
+PASS [390] 收回：物件回到庫存
+PASS [390] 最多擺 40 件
+PASS [390] 離開布置模式
+PASS [390] 重新載入後物件位置保留
+PASS [390] 物件水平位置＝x 比例
+PASS [390] 一般模式點物件顯示名稱泡泡
+PASS [390] 預設為 classic 的 CSS 營地
+PASS [390] 套用圖片場景：背景圖層出現、隱藏 sky/ground
+PASS [390] time variants bypass night dimming
+PASS [390] self 場景夜晚不再調暗
+PASS [390] all eight scenes have four time paths in generated data
+PASS [390] scene_beach morning button selects its image without a CSS filter
+PASS [390] scene_beach day button selects its image without a CSS filter
+PASS [390] scene_beach dusk button selects its image without a CSS filter
+PASS [390] scene_beach night button selects its image without a CSS filter
+PASS [390] scene_autumn morning button selects its image without a CSS filter
+PASS [390] scene_autumn day button selects its image without a CSS filter
+PASS [390] scene_autumn dusk button selects its image without a CSS filter
+PASS [390] scene_autumn night button selects its image without a CSS filter
+PASS [390] scene_sakura morning button selects its image without a CSS filter
+PASS [390] scene_sakura day button selects its image without a CSS filter
+PASS [390] scene_sakura dusk button selects its image without a CSS filter
+PASS [390] scene_sakura night button selects its image without a CSS filter
+PASS [390] scene_snow morning button selects its image without a CSS filter
+PASS [390] scene_snow day button selects its image without a CSS filter
+PASS [390] scene_snow dusk button selects its image without a CSS filter
+PASS [390] scene_snow night button selects its image without a CSS filter
+PASS [390] scene_library morning button selects its image without a CSS filter
+PASS [390] scene_library day button selects its image without a CSS filter
+PASS [390] scene_library dusk button selects its image without a CSS filter
+PASS [390] scene_library night button selects its image without a CSS filter
+PASS [390] scene_island morning button selects its image without a CSS filter
+PASS [390] scene_island day button selects its image without a CSS filter
+PASS [390] scene_island dusk button selects its image without a CSS filter
+PASS [390] scene_island night button selects its image without a CSS filter
+PASS [390] scene_crystal morning button selects its image without a CSS filter
+PASS [390] scene_crystal day button selects its image without a CSS filter
+PASS [390] scene_crystal dusk button selects its image without a CSS filter
+PASS [390] scene_crystal night button selects its image without a CSS filter
+PASS [390] scene_starobs morning button selects its image without a CSS filter
+PASS [390] scene_starobs day button selects its image without a CSS filter
+PASS [390] scene_starobs dusk button selects its image without a CSS filter
+PASS [390] scene_starobs night button selects its image without a CSS filter
+PASS [390] automatic scene time matches the camp time class
+PASS [390] 場景視窗列出所有場景，未擁有者不可點
+PASS [390] 場景視窗可切回經典草原
+PASS [390] 重新載入後場景保留
+PASS [390] 重新載入後營地顯示場景圖層
+PASS [390] 圖檔缺失時顯示佔位框、不當機
+PASS [390] exportAll／importAll 來回保留 decor
+PASS [390] 沒有 decor 的舊備份可匯入並補預設
+PASS [390] 舊存檔（無 decor）開營地與商店正常
+PASS [390] peglin 沒登入時只顯示「請先登入」
+PASS [390] peglinLearn 沒登入時只顯示「請先登入」
+PASS [390] 登入按鈕開出雲端同步視窗
+PASS [390] 沒有頁面錯誤
+
+168/168 passed

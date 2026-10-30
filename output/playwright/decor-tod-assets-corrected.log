@@ -1,0 +1,7 @@
+E:\NEWTEST\新刷題庫框架 - TEST 1\tools\check_decor_assets.py:60: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  if set(alpha.getdata()) - {0, 255}: problems.append('non-binary alpha')
+E:\NEWTEST\新刷題庫框架 - TEST 1\tools\check_decor_assets.py:65: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  colors = {p[:3] for p in rgba.getdata() if p[3]};
+E:\NEWTEST\新刷題庫框架 - TEST 1\tools\check_decor_assets.py:73: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  if len({p for p in corner.getdata() if p[3]}) == 2 and sum(p[3]>0 for p in corner.getdata()) > corner.width*corner.height//2: notices.append('possible checkerboard; inspect visually')
+PASS: 0 errors, 0 warnings; E:\NEWTEST\新刷題庫框架 - TEST 1\docs\decor\asset-check.json

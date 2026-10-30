@@ -407,49 +407,241 @@
       "id": "scene_beach",
       "type": "scenes",
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "alignment": {
+        "anchorRow": 269,
+        "method": "RGB edge detection in 48 column bands; pairwise median absolute row distance",
+        "medianRows": {
+          "original": 266.0,
+          "morning": 269.0,
+          "day": 266.0,
+          "dusk": 269.0,
+          "night": 269.0
+        },
+        "pairwiseMedianDeltaPx": {
+          "original/morning": 0.0,
+          "original/day": 0.0,
+          "original/dusk": 0.0,
+          "original/night": 0.0,
+          "morning/day": 0.0,
+          "morning/dusk": 0.0,
+          "morning/night": 0.0,
+          "day/dusk": 0.0,
+          "day/night": 0.0,
+          "dusk/night": 0.0
+        },
+        "tolerancePx": 3
+      }
     },
     {
       "id": "scene_autumn",
       "type": "scenes",
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "alignment": {
+        "anchorRow": 269,
+        "method": "RGB edge detection in 48 column bands; pairwise median absolute row distance",
+        "medianRows": {
+          "original": 269.0,
+          "morning": 269.0,
+          "day": 269.0,
+          "dusk": 269.0,
+          "night": 269.0
+        },
+        "pairwiseMedianDeltaPx": {
+          "original/morning": 0.0,
+          "original/day": 0.0,
+          "original/dusk": 0.0,
+          "original/night": 0.0,
+          "morning/day": 0.0,
+          "morning/dusk": 0.0,
+          "morning/night": 0.0,
+          "day/dusk": 0.0,
+          "day/night": 0.0,
+          "dusk/night": 0.0
+        },
+        "tolerancePx": 3
+      }
     },
     {
       "id": "scene_sakura",
       "type": "scenes",
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "alignment": {
+        "anchorRow": 257,
+        "method": "RGB edge detection in 48 column bands; pairwise median absolute row distance",
+        "medianRows": {
+          "original": 257.0,
+          "morning": 257.0,
+          "day": 257.0,
+          "dusk": 246.5,
+          "night": 246.5
+        },
+        "pairwiseMedianDeltaPx": {
+          "original/morning": 0.0,
+          "original/day": 0.0,
+          "original/dusk": 0.0,
+          "original/night": 0.0,
+          "morning/day": 0.0,
+          "morning/dusk": 0.0,
+          "morning/night": 0.0,
+          "day/dusk": 0.0,
+          "day/night": 0.0,
+          "dusk/night": 0.0
+        },
+        "tolerancePx": 3
+      }
     },
     {
       "id": "scene_snow",
       "type": "scenes",
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "alignment": {
+        "anchorRow": 269,
+        "method": "RGB edge detection in 48 column bands; pairwise median absolute row distance",
+        "medianRows": {
+          "original": 269.0,
+          "morning": 269.0,
+          "day": 269.0,
+          "dusk": 269.0,
+          "night": 269.0
+        },
+        "pairwiseMedianDeltaPx": {
+          "original/morning": 0.0,
+          "original/day": 0.0,
+          "original/dusk": 0.0,
+          "original/night": 0.0,
+          "morning/day": 0.0,
+          "morning/dusk": 0.0,
+          "morning/night": 0.0,
+          "day/dusk": 0.0,
+          "day/night": 0.0,
+          "dusk/night": 0.0
+        },
+        "tolerancePx": 3
+      }
     },
     {
       "id": "scene_library",
       "type": "scenes",
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "alignment": {
+        "anchorRow": 263,
+        "method": "RGB edge detection in 48 column bands; pairwise median absolute row distance",
+        "medianRows": {
+          "original": 263.0,
+          "morning": 263.0,
+          "day": 263.0,
+          "dusk": 263.0,
+          "night": 263.0
+        },
+        "pairwiseMedianDeltaPx": {
+          "original/morning": 0.0,
+          "original/day": 0.0,
+          "original/dusk": 0.0,
+          "original/night": 0.0,
+          "morning/day": 0.0,
+          "morning/dusk": 0.0,
+          "morning/night": 0.0,
+          "day/dusk": 0.0,
+          "day/night": 0.0,
+          "dusk/night": 0.0
+        },
+        "tolerancePx": 3
+      }
     },
     {
       "id": "scene_island",
       "type": "scenes",
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "alignment": {
+        "anchorRow": 287,
+        "method": "RGB edge detection in 48 column bands; pairwise median absolute row distance",
+        "medianRows": {
+          "original": 287.0,
+          "morning": 287.0,
+          "day": 287.0,
+          "dusk": 287.0,
+          "night": 287.0
+        },
+        "pairwiseMedianDeltaPx": {
+          "original/morning": 0.0,
+          "original/day": 0.0,
+          "original/dusk": 0.0,
+          "original/night": 0.0,
+          "morning/day": 0.0,
+          "morning/dusk": 0.0,
+          "morning/night": 0.0,
+          "day/dusk": 0.0,
+          "day/night": 0.0,
+          "dusk/night": 0.0
+        },
+        "tolerancePx": 3
+      }
     },
     {
       "id": "scene_crystal",
       "type": "scenes",
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "alignment": {
+        "anchorRow": 260,
+        "method": "RGB edge detection in 48 column bands; pairwise median absolute row distance",
+        "medianRows": {
+          "original": 260.0,
+          "morning": 260.0,
+          "day": 260.0,
+          "dusk": 260.0,
+          "night": 260.0
+        },
+        "pairwiseMedianDeltaPx": {
+          "original/morning": 0.0,
+          "original/day": 0.0,
+          "original/dusk": 0.0,
+          "original/night": 0.0,
+          "morning/day": 0.0,
+          "morning/dusk": 0.0,
+          "morning/night": 0.0,
+          "day/dusk": 0.0,
+          "day/night": 0.0,
+          "dusk/night": 0.0
+        },
+        "tolerancePx": 3
+      }
     },
     {
       "id": "scene_starobs",
       "type": "scenes",
       "errors": [],
-      "warnings": []
+      "warnings": [],
+      "alignment": {
+        "anchorRow": 266,
+        "method": "RGB edge detection in 48 column bands; pairwise median absolute row distance",
+        "medianRows": {
+          "original": 266.0,
+          "morning": 266.0,
+          "day": 266.0,
+          "dusk": 266.0,
+          "night": 266.0
+        },
+        "pairwiseMedianDeltaPx": {
+          "original/morning": 0.0,
+          "original/day": 0.0,
+          "original/dusk": 0.0,
+          "original/night": 0.0,
+          "morning/day": 0.0,
+          "morning/dusk": 0.0,
+          "morning/night": 0.0,
+          "day/dusk": 0.0,
+          "day/night": 0.0,
+          "dusk/night": 0.0
+        },
+        "tolerancePx": 3
+      }
     }
   ]
 }

@@ -102,6 +102,28 @@ const realData = fs.existsSync(path.join(ROOT, 'js/decor-data.js'));
       for (const [tab, label] of [['gacha', '抽獎'], ['buy', '直購'], ['bag', '背包'], ['scenes', '場景']]) {
         await page.click(`[data-tab="${tab}"]`);
         ok(`${tag} 商店分頁「${label}」可顯示且無橫向捲動`, (await page.$('#dcBody') !== null) && await noScroll() && (await page.textContent('#dcBody')).length > 20, await page.evaluate(() => document.documentElement.scrollWidth));
+        if (tab === 'scenes') {
+          const previews = await page.evaluate(async () => {
+            const cards = [...document.querySelectorAll('#dcBody .dc-scene-card')];
+            const scenes = DECOR.data().scenes.filter(s => s.id !== 'classic');
+            const labels = { morning: '早晨', day: '白天', dusk: '黃昏', night: '夜晚' };
+            const checks = await Promise.all(scenes.map(async s => {
+              const card = cards.find(c => c.querySelector(`.dc-scene-th[data-id="${s.id}"]`));
+              if (!card || card.querySelectorAll('.dc-tod-preview').length !== 4) return false;
+              for (const [time, label] of Object.entries(labels)) {
+                const preview = card.querySelector(`.dc-tod-preview[data-time="${time}"]`);
+                const img = preview && preview.querySelector('img');
+                if (!img || img.getAttribute('src') !== s.tod[time] || !preview.textContent.includes(label)) return false;
+                img.loading = 'eager';
+                try { await img.decode(); } catch (_) { return false; }
+                if (img.naturalWidth !== 1536 || img.naturalHeight !== 384) return false;
+              }
+              return true;
+            }));
+            return { scenes: scenes.length, checks };
+          });
+          ok(`${tag} shop shows four labelled, loadable time variants for all eight scenes`, previews.scenes === 8 && previews.checks.every(Boolean) && await noScroll(), previews);
+        }
         await page.screenshot({ path: path.join(OUT, `decor-${width}-shop-${tab}.png`), fullPage: true });
       }
       await page.click('[data-tab="gacha"]');
@@ -187,9 +209,33 @@ const realData = fs.existsSync(path.join(ROOT, 'js/decor-data.js'));
       const sc = await page.evaluate(() => ({ bg: getComputedStyle(document.querySelector('.scene-bg')).backgroundImage, ground: getComputedStyle(document.querySelector('.camp .ground')).display, sky: getComputedStyle(document.querySelector('.camp .sky')).display, size: getComputedStyle(document.querySelector('.scene-bg')).backgroundSize }));
       ok(`${tag} 套用圖片場景：背景圖層出現、隱藏 sky/ground`, /scene_beach/.test(sc.bg) && sc.ground === 'none' && sc.sky === 'none' && sc.size === 'cover', sc);
       await page.evaluate(() => { Store.settings.campTime = 'night'; Store.saveSettings(); App.go('hub'); }); await page.waitForSelector('.scene-bg');
-      ok(`${tag} dim 場景夜晚套用變暗濾鏡`, /brightness\(0?\.5\)/.test(await page.evaluate(() => getComputedStyle(document.querySelector('.scene-bg')).filter)));
+      ok(`${tag} time variants bypass night dimming`, (await page.evaluate(() => getComputedStyle(document.querySelector('.scene-bg')).filter)) === 'none');
       await page.evaluate(() => { DECOR.ensure().scenes.push('scene_library'); DECOR.setScene('scene_library'); App.go('hub'); }); await page.waitForSelector('.scene-bg');
       ok(`${tag} self 場景夜晚不再調暗`, (await page.evaluate(() => getComputedStyle(document.querySelector('.scene-bg')).filter)) === 'none');
+      const sceneOwnershipBefore = await page.evaluate(() => DECOR.ensure().scenes.slice());
+      const imageScenes = await page.evaluate(() => DECOR.data().scenes.filter(s => s.file).map(s => s.id));
+      ok(`${tag} all eight scenes have four time paths in generated data`, imageScenes.length === 8 && await page.evaluate(() => DECOR.data().scenes.filter(s => s.file).every(s => ['morning', 'day', 'dusk', 'night'].every(t => s.tod && s.tod[t]))));
+      for (const id of imageScenes) {
+        await page.evaluate(id => { const d = DECOR.ensure(); if (!d.scenes.includes(id)) d.scenes.push(id); DECOR.setScene(id); App.go('hub'); }, id);
+        for (const time of ['morning', 'day', 'dusk', 'night']) {
+          await page.click(`.tod-pick [data-tod="${time}"]`);
+          const actual = await page.evaluate(async ({ id, time }) => {
+            const camp = document.querySelector('#camp'), bg = camp.querySelector('.scene-bg');
+            const style = getComputedStyle(bg), file = `assets/decor/scenes/${id}_${time}.png`;
+            const im = new Image(); im.src = file;
+            try { await im.decode(); } catch (_) { return { loaded: false }; }
+            return { file: style.backgroundImage, filter: style.filter, loaded: im.naturalWidth === 1536 && im.naturalHeight === 384,
+              matches: style.backgroundImage.includes(file), time: camp.classList.contains(`tod-${time}`), saved: Store.settings.campTime === time };
+          }, { id, time });
+          ok(`${tag} ${id} ${time} button selects its image without a CSS filter`, actual.loaded && actual.matches && actual.time && actual.saved && actual.filter === 'none', actual);
+        }
+      }
+      await page.click('.tod-pick [data-tod="auto"]');
+      ok(`${tag} automatic scene time matches the camp time class`, await page.evaluate(() => {
+        const camp = document.querySelector('#camp'); const time = [...camp.classList].find(c => c.startsWith('tod-')).slice(4);
+        return getComputedStyle(camp.querySelector('.scene-bg')).backgroundImage.includes(`_${time}.png`);
+      }));
+      await page.evaluate(scenes => { DECOR.ensure().scenes = scenes; Store.saveProfile(); }, sceneOwnershipBefore);
       await page.evaluate(() => { Store.settings.campTime = 'day'; Store.saveSettings(); DECOR.setScene('scene_beach'); App.go('hub'); }); await page.waitForSelector('.scene-bg');
       await page.screenshot({ path: path.join(OUT, `decor-${width}-camp-beach.png`) });
       await page.click('#decorScene'); await page.waitForSelector('.dc-scene-card');
