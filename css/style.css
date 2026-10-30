@@ -706,8 +706,8 @@ input[type=range]::-moz-range-thumb { width: 14px; height: 18px; background: var
 .camp-pot { left: 73%; bottom: 22px; }
 .camp-pond { right: 2%; bottom: 3px; width: min(170px, 22%); z-index: 1; }
 .camp-pond > img { width: 100%; display: block; image-rendering: pixelated; }
-.tod-night .camp-pond, .tod-night .camp-pot, .tod-night .camp-mail { filter: brightness(.55) saturate(.8); }
-.tod-dusk .camp-pond { filter: brightness(.85) sepia(.15); }
+
+
 .camp-bar { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; align-items: center; margin: 8px 0 2px; }
 .camp-bar .px-btn { font-size: 13px; padding: 2px 10px; }
 .camp-bar .love { display: inline-flex; align-items: center; gap: 1px; margin-right: 8px; font-size: 16px; }
@@ -1629,3 +1629,23 @@ html:has(.win-resizing) { cursor: nwse-resize; }
   .term-row .term-speak { grid-column: 2; grid-row: 1 / span 2; }
   .term-row .term-toggle { grid-column: 3; grid-row: 1 / span 2; }
 }
+
+/* Pixel-grid camp props: fixed boxes preserve drag coordinates and ground anchors. */
+.camp-board { width:36px; height:44px; }
+.camp-fire { width:70px; height:78px; }
+.camp-mail { width:40px; height:48px; }
+.camp-pot { width:48px; height:56px; }
+.camp-pond { aspect-ratio:48 / 14; }
+.camp-art { display:block; position:absolute; top:0; left:0; width:100%; image-rendering:pixelated; background-repeat:no-repeat; }
+.board-art { height:36px; background-image:url('../assets/camp/board.png'); background-size:100% 100%; }
+.fire-art { height:70px; background-image:url('../assets/camp/fire.png'); background-size:400% 100%; animation:campFireFrames .8s steps(4) infinite; }
+.mail-art { height:40px; background-image:url('../assets/camp/mail.png'); background-size:200% 100%; }
+.camp-mail.read .mail-art { background-position:100% 0; }
+.pot-art { height:48px; background-image:url('../assets/camp/pot.png'); background-size:500% 100%; }
+.pond-art { height:100%; background-image:url('../assets/camp/pond.png'); background-size:400% 100%; animation:campPondFrames 2s steps(4) infinite; }
+@keyframes campFireFrames { to { background-position:133.333333% 0; } }
+@keyframes campPondFrames { to { background-position:133.333333% 0; } }
+.camp[data-night="dim"].tod-night :is(.camp-board,.camp-mail,.camp-pot,.camp-pond), .camp[data-night="orig"].tod-night :is(.camp-board,.camp-mail,.camp-pot,.camp-pond) { filter:brightness(.6) saturate(.8); }
+.camp[data-night="dim"].tod-dusk :is(.camp-board,.camp-mail,.camp-pot,.camp-pond), .camp[data-night="orig"].tod-dusk :is(.camp-board,.camp-mail,.camp-pot,.camp-pond) { filter:brightness(.9) sepia(.12); }
+.camp[data-night="tod"].tod-night :is(.camp-board,.camp-mail,.camp-pot,.camp-pond) { filter:brightness(.85) saturate(.9); }
+.camp[data-night="tod"].tod-dusk :is(.camp-board,.camp-mail,.camp-pot,.camp-pond) { filter:brightness(.95) sepia(.1); }

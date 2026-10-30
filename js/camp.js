@@ -237,7 +237,7 @@ const CampFun = (() => {
   function drawPot() {
     const el = U.$('#cPot', X.scene); if (!el) return;
     const c = camp();
-    el.innerHTML = `<div class="shadow"></div>${SP.pix('pot' + c.pot.st, 48, '', c.pot.st >= 3 ? `filter:hue-rotate(${c.pot.col * 60}deg)` : '')}`;
+    el.innerHTML = `<div class="shadow"></div><span class="camp-art pot-art" style="background-position:${Math.max(0, Math.min(4, c.pot.st)) * 25}% 0;${c.pot.st >= 3 ? `filter:hue-rotate(${c.pot.col * 60}deg)` : ''}"></span>`;
   }
 
   /* ---- 信箱 ---- */
@@ -387,9 +387,9 @@ const CampFun = (() => {
     X.petId = Store.profile.activePet; X.name = X.petId ? Store.petName(X.petId) : '';
     const sc = X.scene;
     sc.insertAdjacentHTML('beforeend', `
-      <div class="camp-obj camp-mail ${X.D.mail ? 'read' : ''}" id="cMail" data-base="mail" title="信箱：每天一封信">${SP.pix('mailbox', 40)}<i class="flag-dot"></i></div>
+      <div class="camp-obj camp-mail ${X.D.mail ? 'read' : ''}" id="cMail" data-base="mail" title="信箱：每天一封信"><span class="camp-art mail-art"></span><i class="flag-dot"></i></div>
       <div class="camp-obj camp-pot" id="cPot" data-base="pot" title="花盆：每天澆一次水"></div>
-      <div class="camp-obj camp-pond" id="cPond" data-base="pond" title="池塘：點一下拋竿，上鉤時再點一下"><img class="px" src="${pondURL()}" alt=""></div>`);
+      <div class="camp-obj camp-pond" id="cPond" data-base="pond" title="池塘：點一下拋竿，上鉤時再點一下"><span class="camp-art pond-art"></span></div>`);
     drawPot();
     U.$('#cMail', sc).onclick = e => { e.stopPropagation(); mail(); };
     U.$('#cPot', sc).onclick = e => { e.stopPropagation(); pot(); };

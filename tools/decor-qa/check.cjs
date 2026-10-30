@@ -50,6 +50,24 @@ const realData = fs.existsSync(path.join(ROOT, 'js/decor-data.js'));
       ok(`${tag} 營地有三個按鈕與選單磚`, await page.evaluate(() => !!document.querySelector('#decorEdit') && !!document.querySelector('#decorScene') && !!document.querySelector('[data-go="decor"]')));
       await page.screenshot({ path: path.join(OUT, `decor-${width}-camp-classic.png`) });
 
+      // Base art is file-loadable and animated in discrete frames.
+      const art = await page.evaluate(async () => {
+        const names = ['board', 'fire', 'mail', 'pot', 'pond'];
+        const loaded = await Promise.all(names.map(name => new Promise(resolve => { const im = new Image(); im.onload = () => resolve(im.naturalWidth > 0); im.onerror = () => resolve(false); im.src = `assets/camp/${name}.png`; })));
+        const anim = ['fire', 'pond'].map(name => getComputedStyle(document.querySelector(`.${name}-art`)).animationTimingFunction.includes('steps(4)'));
+        const mail = document.querySelector('#cMail'), img = mail.querySelector('.mail-art'); mail.classList.remove('read'); const up = getComputedStyle(img).backgroundPosition; mail.classList.add('read'); const down = getComputedStyle(img).backgroundPosition; mail.classList.remove('read');
+        return { loaded, anim, mailStates: up !== down, sprites: names.every(name => getComputedStyle(document.querySelector(`.${name}-art`)).backgroundImage.includes(`/camp/${name}.png`)) };
+      });
+      ok(`${tag} base images and stepped animations`, art.loaded.every(Boolean) && art.anim.every(Boolean) && art.mailStates && art.sprites, art);
+      if (width === 1100) {
+        for (const scene of ['classic', 'scene_beach']) for (const time of ['morning', 'day', 'dusk', 'night']) {
+          await page.evaluate(({scene, time}) => { const d = DECOR.ensure(); if (!d.scenes.includes('scene_beach')) d.scenes.push('scene_beach'); d.scene = scene; Store.settings.campTime = time; Store.saveSettings(); Store.saveProfile(); App.go('hub'); }, {scene, time});
+          await page.screenshot({ path: path.join(OUT, `decor-base-art-${scene}-${time}.png`) });
+        }
+        await page.evaluate(() => { const d = DECOR.ensure(); d.scene = 'classic'; d.scenes = ['classic']; Store.settings.campTime = 'auto'; Store.saveSettings(); Store.saveProfile(); App.go('hub'); });
+      }
+
+
       // 直購
       const r1 = await page.evaluate(() => { const g = Store.profile.gems; const a = DECOR.buy('cabin_stool'), b = DECOR.buy('scene_beach'), c = DECOR.buy('cabin_hut'), d2 = DECOR.buy('scene_beach'); return { dg: g - Store.profile.gems, a, b, c, d2, copies: DECOR.copies('cabin_stool'), own: DECOR.ownsScene('scene_beach') }; });
       ok(`${tag} 直購物件＋場景：扣 340 魂晶、擁有；SSR 不能買、場景不能重買`, r1.dg === 340 && r1.a.ok && r1.b.ok && !r1.c.ok && !r1.d2.ok && r1.copies === 1 && r1.own, r1);

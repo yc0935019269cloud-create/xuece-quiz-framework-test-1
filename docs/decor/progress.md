@@ -43,3 +43,9 @@
   the corrected helper and remaining mobile drag/reset cases have not been run.
 - Strict content build passed. No page errors were recorded before the test
   stopped. See `qa.json` for the original run and its two failures.
+
+## Camp base art (2026-10-31)
+
+- Built-in imagegen produced one transparent five-object sheet using the item contact sheet as a visual reference. `tools/decor-qa/make-camp-art.py` slices and snaps the art to logical pixels, quantizes the palette, applies binary alpha and nearest-neighbor 4x scaling. Programmatic changes derive four fire and pond frames, two mailbox states and five growth stages.
+- Sprite strips live in `assets/camp/`; `contact-camp-base.png` shows all frames and states on classic grass and two scene backgrounds at day and night. Boxes preserve the measured desktop dimensions: 36x44, 70x78, 40x48, 48x56 and 170x49.6; mobile uses the existing zoom.
+- Review fix: fire frame 2 had a fully transparent 4px row (source rows 112-115) across the flame; it was filled by copying the row band above, directly in `assets/camp/fire.png`. Rerunning `make-camp-art.py` would bring the gap back. Full decor QA after the fix: 230/230 pass.
