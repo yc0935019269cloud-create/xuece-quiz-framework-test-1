@@ -514,3 +514,12 @@
 
 - 題本 `set.optIn: true`＝只有明確勾選才出題：`Store.filter` 沒指定題本（全部）時排除，`Screens.setPicker` 上層「全選」也不含（只有 optIn 的那一層全選才會選到）。
 - `content/bank/eye_ans/disputed/eye115-disputed.json`：8 題選項措辭有歧義的國考題（path `115 大二上 → 答案疑義（要自己勾選才會出題）`），已從原題本、學習單元的實戰／例題 qids、知識筆記 evidence 移出（題目 id 改成 `eye115-disputed-<n>`，舊作答紀錄不沿用）。已核對考選部標準答案與更正答案：9 題（含 108 生特 6 角膜與鞏膜題）都無更正；報告 `tmp/official/report.md`。教材文字裡的出處（如「110 生普 15」）保留。
+
+## 背景商店與營地布置、彈珠模式要登入（2026-10-30，v163）
+
+- **彈珠刷題／彈珠學習要先登入雲端同步**：`js/peglin.js` 的 `loginGate`，沒登入（`CLOUD.signedIn` 為假）只顯示「🔒 請先登入」與「☁ 登入雲端同步」按鈕（開 `CLOUD.open()`），登入完成後自動進入原畫面。舊的 `tools/peglin-web-qa/check.cjs` 要先模擬登入才能測遊戲流程。
+- **背景商店**（營地選單「角色與收藏」→ 🛍 背景商店，`App.go('decor')`；營地標題列也有「🛠 布置營地」「🖼 場景」「商店」）：`js/decor.js`（`DECOR`）＋`css/decor.css`。規格正本 `docs/背景商店設計.md`（物件清單、卡池、機率、保底、碎片、價格、存檔格式）。
+  - 素材：66 件物件（6 系列各 10 件：木屋小窩、森林精靈、學院書房、海濱假日、和風庭園、星辰魔法，N／R／SR／SSR；另有 6 件雜物）＋ 8 張場景（1536×384）在 `assets/decor/`，由 Codex 用 image_gen 生成後轉成真像素格、二值透明。清單 `assets/decor/manifest.json` → `python tools/decor_data.py` 產生 `js/decor-data.js`（勿手改）。**中文名稱與介紹的正本在 `tools/decor_text.py`**（曾被 PowerShell 管線弄成「?」），改完依序跑 `decor_text.py`、`decor_data.py`；素材檢查 `python tools/check_decor_assets.py`（結果 `docs/decor/asset-check.json`），審圖總覽 `docs/decor/contact-*.png`。
+  - 經濟：單抽 20／十連 180（保證 SR 以上）；雜物 12%、N 50%、R 27%、SR 9%、SSR 2%（場景和 SSR 物件平分）；每池 60 抽保底 SSR。碎片：N／R 3 片、SR 2 片、SSR／雜物 1 片解鎖一件，之後每湊滿一份多一件可擺；雜物退 2 魂晶、重複場景退 30。直購：木屋／森林／學院的 N 40、R 90；場景海邊 300、秋楓 300、櫻花 350、雪原 400。卡池：冒險者雜貨（木屋＋森林＋學院、魔法圖書館）、海風與櫻（海濱＋和風、浮空島）、星辰祕庫（星辰魔法、水晶洞窟、星空天文台）。
+  - 存檔 `Store.profile.decor`（shards／scenes／scene／placed〔x、y 為比例〕／pity／log），隨 exportAll 與雲端同步；舊存檔自動補預設（經典草原、未擺放）。經典草原沿用原本 CSS 營地；圖片場景 `night: dim` 依時段調暗、`self`（圖書館、水晶洞窟、天文台）不調暗。布置模式可拖曳（滑鼠／觸控）、翻轉、收回，最多 40 件；抽屜物件在觸控裝置是點一下放入再拖曳。
+- QA：`tools/decor-qa/check.cjs`（Playwright＋Edge 一次性 context、file://、1100／390px，98 項：購買、單抽／十連、20,000 抽機率、十連保證、保底、碎片門檻、實際拖曳與重載、場景切換與夜間濾鏡、匯出匯入、舊存檔、彈珠未登入被擋、無頁面錯誤），結果 `docs/decor/qa.json`、截圖 `output/playwright/decor-*.png`。沒有實機 iPad／手機測試。

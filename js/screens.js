@@ -330,6 +330,7 @@ const Screens = (() => {
           ${vouchers ? '<div class="small-t dim">兌換券可任選一款新造型（價值 160～260 魂晶）。</div><div class="row mt" style="justify-content:flex-end"><button class="px-btn small purple" id="voucherUse">選新造型兌換</button></div>' : ''}
         </div>` : '';
     const tod = timeOfDay();
+    const dsc = DECOR.sceneFor();
     // 營地選單依功能分區（每區一個標題，按鈕照常排列）
     const MENU_GROUPS = [['study', '📚 讀書與刷題'], ['adv', '⚔️ 冒險'], ['peg', '⚪ 彈珠（Peglin）'], ['col', '🧙 角色與收藏'], ['tool', '🛠 工具與設定']];
     const tiles = [
@@ -348,6 +349,7 @@ const Screens = (() => {
       { id: 'ext-brain3d', g: 'study', icon: 'eye', t: '腦與視覺路徑 3D', d: '3D 解剖圖譜・開新分頁 ↗', url: 'https://yc0935019269cloud-create.github.io/anatomy-3d-atlas/brain-visual-atlas-3d/%E8%85%A6%E8%88%87%E8%A6%96%E8%A6%BA%E8%B7%AF%E5%BE%913D.html' },
       { id: 'ext-refraction', g: 'study', icon: 102, t: '視光室', d: '第一人稱驗光練習・開新分頁 ↗', url: 'https://yc0935019269cloud-create.github.io/Mvmpa5555/' },
       { id: 'classes', g: 'col', icon: C.cls(p.activeClass).tile, t: '職業殿堂', d: `目前：${C.cls(p.activeClass).name} Lv.${(p.classes[p.activeClass] || { lv: 1 }).lv}・切換/解鎖職業` },
+      { id: 'decor', g: 'col', icon: 89, t: '背景商店', d: '買／抽營地布置與場景，自己布置營地' },
       { id: 'pets', g: 'col', icon: 'heart', t: '寵物小屋', d: '培養夥伴、買造型與配件' },
       { id: 'upg', g: 'col', icon: 74, t: '永久強化', d: '用魂晶提升能力' },
       { id: 'relics', g: 'col', icon: 91, t: '遺物圖鑑', d: '解鎖更強的遺物' },
@@ -367,8 +369,9 @@ const Screens = (() => {
         <button class="px-btn" data-quick="bank">📚 題庫</button>
       </div>`;
     scr().innerHTML = `${quick}<div class="panel camp-wrap ${folded ? 'folded' : ''}">
-        <div class="camp-head"><h2 style="margin:0">冒險者營地</h2><span class="small-t dim camp-hint">點點看夥伴、勇者、篝火、信箱、花盆和池塘吧！${(Store.settings.campTime || 'auto') === 'auto' ? '（時段：依現在時間）' : ''}</span><span class="grow"></span><button class="px-btn small" id="campFold" aria-expanded="${!folded}">${folded ? '▸ 展開營地' : '▾ 收起營地'}</button></div>
-        <div class="camp tod-${tod}" id="camp" style="--ground:url(${groundURL()})">
+        <div class="camp-head"><h2 style="margin:0">冒險者營地</h2><span class="small-t dim camp-hint">點點看夥伴、勇者、篝火、信箱、花盆和池塘吧！${(Store.settings.campTime || 'auto') === 'auto' ? '（時段：依現在時間）' : ''}</span><span class="grow"></span><button class="px-btn small" id="decorEdit">🛠 布置營地</button><button class="px-btn small" id="decorScene">🖼 場景</button><button class="px-btn small" id="decorShop">🛍 商店</button><button class="px-btn small" id="campFold" aria-expanded="${!folded}">${folded ? '▸ 展開營地' : '▾ 收起營地'}</button></div>
+        <div class="camp tod-${tod}${dsc ? ' scene-img' : ''}" id="camp" data-night="${dsc ? dsc.night : 'orig'}" style="--ground:url(${groundURL()})">
+          ${dsc ? `<div class="scene-bg" style="background-image:url('${U.esc(dsc.file)}')"></div>` : ''}
           <div class="sky">${stars}<div class="celestial"></div><div class="cloud c1"></div><div class="cloud c2"></div></div>
           <div class="hill" style="background-image:url(${hillURL()})"></div><div class="ground"></div>
           <div class="camp-obj camp-board" id="cBoard" title="每日任務">${SP.tile(63, 36)}</div>
@@ -376,6 +379,7 @@ const Screens = (() => {
           <div class="camp-obj camp-hero" id="cHero"><div class="shadow"></div>${FX.heroHD(Store.heroTile(), p.activeClass, 124)}</div>
           ${pet ? `<div class="camp-obj camp-pet ${tod === 'night' ? 'sleepy' : ''}" id="cPet" style="left:52%"><div class="shadow"></div>${Store.petHTML(p.activePet, 66)}<div class="zzz">z<sup>z</sup></div></div>` : ''}
         </div>
+        <div class="decor-drawer" id="decorDrawer" hidden></div>
         <div class="camp-bar" id="campBar"></div>
         <div class="tod-pick">${TOD.map(([k, l]) => `<button class="px-btn small ${(Store.settings.campTime || 'auto') === k ? 'sel' : ''}" data-tod="${k}">${l}</button>`).join('')}</div>
       </div>
@@ -468,6 +472,7 @@ const Screens = (() => {
         petEl.style.left = nx + '%';
       }, 3200);
     }
+    DECOR.mount(U.$('#camp'), { bubble });
     CampFun.init({ scene: U.$('#camp'), petEl, heroEl, fireEl, tod, bubble, hearts, D, bar: U.$('#campBar') });
   }
 

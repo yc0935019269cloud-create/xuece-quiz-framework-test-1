@@ -1,0 +1,455 @@
+{
+  "ok": true,
+  "counts": {
+    "items": 66,
+    "scenes": 8
+  },
+  "errors": [],
+  "warnings": [],
+  "assets": [
+    {
+      "id": "cabin_stool",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "cabin_barrel",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "cabin_crate",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "cabin_lantern",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "cabin_chair",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "cabin_table",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "cabin_petbed",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "cabin_shelf",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "cabin_stove",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "cabin_hut",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "forest_mush",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "forest_fern",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "forest_stump",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "forest_rock",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "forest_flowers",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "forest_birdhouse",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "forest_logbench",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "forest_fairylamp",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "forest_bigmush",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "forest_spirittree",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "acad_books",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "acad_ink",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "acad_scroll",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "acad_hourglass",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "acad_desk",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "acad_globe",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "acad_board",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "acad_telescope",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "acad_trophy",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "acad_tower",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "sea_shell",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "sea_star",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "sea_bucket",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "sea_ring",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "sea_umbrella",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "sea_chair",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "sea_castle",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "sea_petbed",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "sea_palm",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "sea_lighthouse",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "jp_cushion",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "jp_teaset",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "jp_paperlamp",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "jp_bamboo",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "jp_bonsai",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "jp_koibowl",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "jp_chime",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "jp_stonelamp",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "jp_torii",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "jp_sakura",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "arc_crystal",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "arc_rune",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "arc_candle",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "arc_potion",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "arc_cauldron",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "arc_orb",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "arc_lectern",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "arc_moon",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "arc_cloudbed",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "arc_portal",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "junk_boot",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "junk_can",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "junk_twig",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "junk_bucket",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "junk_paper",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "junk_rock",
+      "type": "items",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "scene_beach",
+      "type": "scenes",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "scene_autumn",
+      "type": "scenes",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "scene_sakura",
+      "type": "scenes",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "scene_snow",
+      "type": "scenes",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "scene_library",
+      "type": "scenes",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "scene_island",
+      "type": "scenes",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "scene_crystal",
+      "type": "scenes",
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "scene_starobs",
+      "type": "scenes",
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

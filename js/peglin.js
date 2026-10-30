@@ -645,9 +645,26 @@ const PEGLIN = (() => {
 
   /* ---------- 畫面 ---------- */
   const readCfg = (k, d) => { try { return Object.assign(d, JSON.parse(localStorage.getItem(SKEY(k)) || '{}')); } catch { return d; } };
+  /* 彈珠刷題／彈珠學習都要先登入雲端同步（遊戲存檔與作答紀錄要跟著帳號走） */
+  function loginGate(mode) {
+    U.$('#topTitle').textContent = mode === 'learn' ? '彈珠學習' : '彈珠刷題';
+    const root = U.$('#screen');
+    root.innerHTML = `<div class="peglin-page"><section class="panel peglin-gate peglin-login" id="pgLogin">
+      <h3>🔒 請先登入</h3>
+      <p>彈珠刷題與彈珠學習要先用信箱登入雲端同步，才能使用。登入後遊戲存檔與作答紀錄會跟著帳號走，換手機、平板也能接著玩。</p>
+      <div class="row mt" style="flex-wrap:wrap;gap:10px"><button class="px-btn gold" id="pgLoginBtn">☁ 登入雲端同步</button><button class="px-btn" data-pggo="hub">🏕 回到營地</button></div>
+      <p class="dim small-t">${typeof CLOUD !== 'undefined' && CLOUD.cfg() ? '' : '這個網址還沒設定雲端專案，請先在登入視窗貼上設定（見 docs/雲端同步設定.md）。'}</p></section></div>`;
+    U.$$('[data-pggo]', root).forEach(b => b.onclick = () => App.go(b.dataset.pggo));
+    U.$('#pgLoginBtn').onclick = () => { SFX.play('click'); if (typeof CLOUD !== 'undefined') CLOUD.open(); };
+    const t = setInterval(() => {
+      if (!document.body.contains(U.$('#pgLogin'))) { clearInterval(t); return; }
+      if (typeof CLOUD !== 'undefined' && CLOUD.signedIn) { clearInterval(t); U.clearModals(); screen(mode); }
+    }, 700);
+  }
   function screen(mode) {
-    if (autoProbe() || bridge) startSync();
     mode = mode === 'learn' ? 'learn' : (mode || readCfg('peglin-mode', { m: 'quiz' }).m);
+    if (!(typeof CLOUD !== 'undefined' && CLOUD.signedIn)) return loginGate(mode);
+    if (autoProbe() || bridge) startSync();
     localStorage.setItem(SKEY('peglin-mode'), JSON.stringify({ m: mode }));
     U.$('#topTitle').textContent = mode === 'learn' ? '彈珠學習' : '彈珠刷題';
     const root = U.$('#screen'), learn = mode === 'learn';

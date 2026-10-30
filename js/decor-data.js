@@ -1,0 +1,1033 @@
+// 自動產生，請勿手改；來源：assets/decor/manifest.json
+window.DECOR_DATA = {
+  "version": 1,
+  "series": [
+    {
+      "id": "cabin",
+      "name": "木屋小窩",
+      "desc": "把冒險的疲憊留在門外。"
+    },
+    {
+      "id": "forest",
+      "name": "森林精靈",
+      "desc": "讓一點綠意陪你讀書。"
+    },
+    {
+      "id": "academy",
+      "name": "學院書房",
+      "desc": "在書香裡慢慢解開難題。"
+    },
+    {
+      "id": "seaside",
+      "name": "海濱假日",
+      "desc": "讓海風替筆記翻頁。"
+    },
+    {
+      "id": "sakura",
+      "name": "和風庭園",
+      "desc": "坐下來聽一陣微風。"
+    },
+    {
+      "id": "arcane",
+      "name": "星辰魔法",
+      "desc": "替平凡的夜晚添一點魔法。"
+    },
+    {
+      "id": "junk",
+      "name": "雜物堆",
+      "desc": "不起眼的小東西也有故事。"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_beach",
+      "name": "海邊沙灘",
+      "desc": "浪花一波波打上岸，連錯題都被沖淡了。",
+      "file": "assets/decor/scenes/scene_beach.png",
+      "ground": 0.28,
+      "night": "dim"
+    },
+    {
+      "id": "scene_autumn",
+      "name": "秋楓山丘",
+      "desc": "滿山紅葉，遠方瀑布的聲音很適合背書。",
+      "file": "assets/decor/scenes/scene_autumn.png",
+      "ground": 0.28,
+      "night": "dim"
+    },
+    {
+      "id": "scene_sakura",
+      "name": "櫻花庭院",
+      "desc": "花瓣落在課本上，順手夾成書籤吧。",
+      "file": "assets/decor/scenes/scene_sakura.png",
+      "ground": 0.28,
+      "night": "dim"
+    },
+    {
+      "id": "scene_snow",
+      "name": "雪原小鎮",
+      "desc": "屋頂冒著炊煙，雪地裡的腳印通往圖書館。",
+      "file": "assets/decor/scenes/scene_snow.png",
+      "ground": 0.28,
+      "night": "dim"
+    },
+    {
+      "id": "scene_library",
+      "name": "魔法圖書館",
+      "desc": "書架高得看不見頂，聽說有一本書記著所有考題。",
+      "file": "assets/decor/scenes/scene_library.png",
+      "ground": 0.28,
+      "night": "self"
+    },
+    {
+      "id": "scene_island",
+      "name": "浮空島",
+      "desc": "雲海上的小島，瀑布往下流進天空。",
+      "file": "assets/decor/scenes/scene_island.png",
+      "ground": 0.28,
+      "night": "dim"
+    },
+    {
+      "id": "scene_crystal",
+      "name": "水晶洞窟",
+      "desc": "地底深處的水晶自己會發光，不必點燈。",
+      "file": "assets/decor/scenes/scene_crystal.png",
+      "ground": 0.28,
+      "night": "self"
+    },
+    {
+      "id": "scene_starobs",
+      "name": "星空天文台",
+      "desc": "今晚的星星排成了你最常錯的那個公式。",
+      "file": "assets/decor/scenes/scene_starobs.png",
+      "ground": 0.28,
+      "night": "self"
+    }
+  ],
+  "items": [
+    {
+      "id": "cabin_stool",
+      "name": "木頭小板凳",
+      "desc": "坐上去會嘎吱叫，但很穩。",
+      "series": "cabin",
+      "rarity": "N",
+      "file": "assets/decor/items/cabin_stool.png",
+      "w": 32,
+      "h": 33,
+      "px": [
+        46,
+        48
+      ]
+    },
+    {
+      "id": "cabin_barrel",
+      "name": "橡木桶",
+      "desc": "裝過蘋果汁，現在裝滿了草稿紙。",
+      "series": "cabin",
+      "rarity": "N",
+      "file": "assets/decor/items/cabin_barrel.png",
+      "w": 40,
+      "h": 49,
+      "px": [
+        39,
+        48
+      ]
+    },
+    {
+      "id": "cabin_crate",
+      "name": "補給木箱",
+      "desc": "遠征前把藥水和筆記都塞進來。",
+      "series": "cabin",
+      "rarity": "N",
+      "file": "assets/decor/items/cabin_crate.png",
+      "w": 40,
+      "h": 38,
+      "px": [
+        48,
+        45
+      ]
+    },
+    {
+      "id": "cabin_lantern",
+      "name": "立式提燈",
+      "desc": "晚上讀書的好夥伴，蟲子也這麼覺得。",
+      "series": "cabin",
+      "rarity": "N",
+      "file": "assets/decor/items/cabin_lantern.png",
+      "w": 28,
+      "h": 58,
+      "px": [
+        23,
+        48
+      ]
+    },
+    {
+      "id": "cabin_chair",
+      "name": "搖搖椅",
+      "desc": "搖著搖著就睡著了，記得先背完再坐。",
+      "series": "cabin",
+      "rarity": "R",
+      "file": "assets/decor/items/cabin_chair.png",
+      "w": 52,
+      "h": 55,
+      "px": [
+        45,
+        48
+      ]
+    },
+    {
+      "id": "cabin_table",
+      "name": "圓木桌",
+      "desc": "大家圍著它討論考古題。",
+      "series": "cabin",
+      "rarity": "R",
+      "file": "assets/decor/items/cabin_table.png",
+      "w": 60,
+      "h": 51,
+      "px": [
+        48,
+        41
+      ]
+    },
+    {
+      "id": "cabin_petbed",
+      "name": "寵物軟墊窩",
+      "desc": "夥伴最愛的午睡地點，墊子還有太陽的味道。",
+      "series": "cabin",
+      "rarity": "R",
+      "file": "assets/decor/items/cabin_petbed.png",
+      "w": 54,
+      "h": 40,
+      "px": [
+        48,
+        36
+      ]
+    },
+    {
+      "id": "cabin_shelf",
+      "name": "小書架",
+      "desc": "一層放課本，一層放零食。",
+      "series": "cabin",
+      "rarity": "SR",
+      "file": "assets/decor/items/cabin_shelf.png",
+      "w": 64,
+      "h": 71,
+      "px": [
+        43,
+        48
+      ]
+    },
+    {
+      "id": "cabin_stove",
+      "name": "鑄鐵暖爐",
+      "desc": "冬天的營地全靠它，順便烤地瓜。",
+      "series": "cabin",
+      "rarity": "SR",
+      "file": "assets/decor/items/cabin_stove.png",
+      "w": 60,
+      "h": 90,
+      "px": [
+        32,
+        48
+      ]
+    },
+    {
+      "id": "cabin_hut",
+      "name": "小木屋",
+      "desc": "終於有屋頂了！下雨也能繼續刷題。",
+      "series": "cabin",
+      "rarity": "SSR",
+      "file": "assets/decor/items/cabin_hut.png",
+      "w": 130,
+      "h": 116,
+      "px": [
+        48,
+        43
+      ]
+    },
+    {
+      "id": "forest_mush",
+      "name": "紅點蘑菇",
+      "desc": "很可愛，但千萬別吃。",
+      "series": "forest",
+      "rarity": "N",
+      "file": "assets/decor/items/forest_mush.png",
+      "w": 30,
+      "h": 31,
+      "px": [
+        46,
+        48
+      ]
+    },
+    {
+      "id": "forest_fern",
+      "name": "蕨類叢",
+      "desc": "葉子底下常躲著一隻青蛙。",
+      "series": "forest",
+      "rarity": "N",
+      "file": "assets/decor/items/forest_fern.png",
+      "w": 40,
+      "h": 32,
+      "px": [
+        48,
+        38
+      ]
+    },
+    {
+      "id": "forest_stump",
+      "name": "樹墩",
+      "desc": "數年輪可以練習計數，也可以當桌子。",
+      "series": "forest",
+      "rarity": "N",
+      "file": "assets/decor/items/forest_stump.png",
+      "w": 40,
+      "h": 30,
+      "px": [
+        48,
+        36
+      ]
+    },
+    {
+      "id": "forest_rock",
+      "name": "青苔石",
+      "desc": "長了青苔的石頭，摸起來軟軟涼涼的。",
+      "series": "forest",
+      "rarity": "N",
+      "file": "assets/decor/items/forest_rock.png",
+      "w": 40,
+      "h": 28,
+      "px": [
+        48,
+        34
+      ]
+    },
+    {
+      "id": "forest_flowers",
+      "name": "野花叢",
+      "desc": "白的、紫的，蝴蝶最喜歡停在這裡。",
+      "series": "forest",
+      "rarity": "R",
+      "file": "assets/decor/items/forest_flowers.png",
+      "w": 48,
+      "h": 44,
+      "px": [
+        48,
+        44
+      ]
+    },
+    {
+      "id": "forest_birdhouse",
+      "name": "鳥屋",
+      "desc": "住了一隻每天早上準時叫你起床的鳥。",
+      "series": "forest",
+      "rarity": "R",
+      "file": "assets/decor/items/forest_birdhouse.png",
+      "w": 44,
+      "h": 81,
+      "px": [
+        26,
+        48
+      ]
+    },
+    {
+      "id": "forest_logbench",
+      "name": "原木長椅",
+      "desc": "整根樹幹做的，夠坐三個人一起背單字。",
+      "series": "forest",
+      "rarity": "R",
+      "file": "assets/decor/items/forest_logbench.png",
+      "w": 70,
+      "h": 38,
+      "px": [
+        48,
+        26
+      ]
+    },
+    {
+      "id": "forest_fairylamp",
+      "name": "精靈燈籠柱",
+      "desc": "燈裡的光點會自己飛來飛去。",
+      "series": "forest",
+      "rarity": "SR",
+      "file": "assets/decor/items/forest_fairylamp.png",
+      "w": 46,
+      "h": 76,
+      "px": [
+        29,
+        48
+      ]
+    },
+    {
+      "id": "forest_bigmush",
+      "name": "蘑菇小屋",
+      "desc": "門太小，只有寵物進得去。",
+      "series": "forest",
+      "rarity": "SR",
+      "file": "assets/decor/items/forest_bigmush.png",
+      "w": 90,
+      "h": 92,
+      "px": [
+        47,
+        48
+      ]
+    },
+    {
+      "id": "forest_spirittree",
+      "name": "精靈古樹",
+      "desc": "很老很老的樹，樹根之間發出淡淡綠光。",
+      "series": "forest",
+      "rarity": "SSR",
+      "file": "assets/decor/items/forest_spirittree.png",
+      "w": 140,
+      "h": 149,
+      "px": [
+        45,
+        48
+      ]
+    },
+    {
+      "id": "acad_books",
+      "name": "書堆",
+      "desc": "總有一天會全部讀完的……大概。",
+      "series": "academy",
+      "rarity": "N",
+      "file": "assets/decor/items/acad_books.png",
+      "w": 34,
+      "h": 28,
+      "px": [
+        48,
+        40
+      ]
+    },
+    {
+      "id": "acad_ink",
+      "name": "羽毛筆與墨水",
+      "desc": "寫錯了不能擦，所以要想清楚再寫。",
+      "series": "academy",
+      "rarity": "N",
+      "file": "assets/decor/items/acad_ink.png",
+      "w": 26,
+      "h": 43,
+      "px": [
+        29,
+        48
+      ]
+    },
+    {
+      "id": "acad_scroll",
+      "name": "卷軸架",
+      "desc": "一卷一卷的筆記，攤開來比人還長。",
+      "series": "academy",
+      "rarity": "N",
+      "file": "assets/decor/items/acad_scroll.png",
+      "w": 44,
+      "h": 44,
+      "px": [
+        48,
+        48
+      ]
+    },
+    {
+      "id": "acad_hourglass",
+      "name": "沙漏",
+      "desc": "考試時間只剩一半了！",
+      "series": "academy",
+      "rarity": "N",
+      "file": "assets/decor/items/acad_hourglass.png",
+      "w": 28,
+      "h": 48,
+      "px": [
+        28,
+        48
+      ]
+    },
+    {
+      "id": "acad_desk",
+      "name": "讀書桌",
+      "desc": "桌燈一開，專注力加一。",
+      "series": "academy",
+      "rarity": "R",
+      "file": "assets/decor/items/acad_desk.png",
+      "w": 70,
+      "h": 63,
+      "px": [
+        48,
+        43
+      ]
+    },
+    {
+      "id": "acad_globe",
+      "name": "地球儀",
+      "desc": "轉一圈，看看世界有多大。",
+      "series": "academy",
+      "rarity": "R",
+      "file": "assets/decor/items/acad_globe.png",
+      "w": 44,
+      "h": 62,
+      "px": [
+        34,
+        48
+      ]
+    },
+    {
+      "id": "acad_board",
+      "name": "小黑板",
+      "desc": "畫滿了三角形和圓，誰留下的？",
+      "series": "academy",
+      "rarity": "R",
+      "file": "assets/decor/items/acad_board.png",
+      "w": 60,
+      "h": 60,
+      "px": [
+        48,
+        48
+      ]
+    },
+    {
+      "id": "acad_telescope",
+      "name": "黃銅望遠鏡",
+      "desc": "可以看到很遠的地方，例如下週的考試。",
+      "series": "academy",
+      "rarity": "SR",
+      "file": "assets/decor/items/acad_telescope.png",
+      "w": 60,
+      "h": 72,
+      "px": [
+        40,
+        48
+      ]
+    },
+    {
+      "id": "acad_trophy",
+      "name": "金榜獎盃",
+      "desc": "給每一個沒有放棄的考生。",
+      "series": "academy",
+      "rarity": "SR",
+      "file": "assets/decor/items/acad_trophy.png",
+      "w": 44,
+      "h": 53,
+      "px": [
+        40,
+        48
+      ]
+    },
+    {
+      "id": "acad_tower",
+      "name": "白塔模型",
+      "desc": "照著遠方那座塔做的模型，塔頂好像有一盞燈。",
+      "series": "academy",
+      "rarity": "SSR",
+      "file": "assets/decor/items/acad_tower.png",
+      "w": 90,
+      "h": 114,
+      "px": [
+        38,
+        48
+      ]
+    },
+    {
+      "id": "sea_shell",
+      "name": "大海螺",
+      "desc": "放在耳邊，聽得到海浪聲。",
+      "series": "seaside",
+      "rarity": "N",
+      "file": "assets/decor/items/sea_shell.png",
+      "w": 28,
+      "h": 24,
+      "px": [
+        48,
+        41
+      ]
+    },
+    {
+      "id": "sea_star",
+      "name": "海星",
+      "desc": "五隻手臂，比你多三隻可以寫字。",
+      "series": "seaside",
+      "rarity": "N",
+      "file": "assets/decor/items/sea_star.png",
+      "w": 26,
+      "h": 25,
+      "px": [
+        48,
+        46
+      ]
+    },
+    {
+      "id": "sea_bucket",
+      "name": "沙桶與小鏟",
+      "desc": "堆沙堡的必備工具。",
+      "series": "seaside",
+      "rarity": "N",
+      "file": "assets/decor/items/sea_bucket.png",
+      "w": 32,
+      "h": 28,
+      "px": [
+        48,
+        42
+      ]
+    },
+    {
+      "id": "sea_ring",
+      "name": "救生圈",
+      "desc": "被考試淹沒時請抓緊它。",
+      "series": "seaside",
+      "rarity": "N",
+      "file": "assets/decor/items/sea_ring.png",
+      "w": 40,
+      "h": 51,
+      "px": [
+        38,
+        48
+      ]
+    },
+    {
+      "id": "sea_umbrella",
+      "name": "條紋陽傘",
+      "desc": "在傘下讀書，不怕曬也不怕下雨。",
+      "series": "seaside",
+      "rarity": "R",
+      "file": "assets/decor/items/sea_umbrella.png",
+      "w": 80,
+      "h": 80,
+      "px": [
+        48,
+        48
+      ]
+    },
+    {
+      "id": "sea_chair",
+      "name": "海灘躺椅",
+      "desc": "躺下來複習一下……不知不覺就天黑了。",
+      "series": "seaside",
+      "rarity": "R",
+      "file": "assets/decor/items/sea_chair.png",
+      "w": 70,
+      "h": 64,
+      "px": [
+        48,
+        44
+      ]
+    },
+    {
+      "id": "sea_castle",
+      "name": "沙堡",
+      "desc": "漲潮前要好好欣賞它。",
+      "series": "seaside",
+      "rarity": "R",
+      "file": "assets/decor/items/sea_castle.png",
+      "w": 56,
+      "h": 51,
+      "px": [
+        48,
+        44
+      ]
+    },
+    {
+      "id": "sea_petbed",
+      "name": "貝殼寵物床",
+      "desc": "睡在貝殼裡的夥伴，夢裡都是海。",
+      "series": "seaside",
+      "rarity": "SR",
+      "file": "assets/decor/items/sea_petbed.png",
+      "w": 60,
+      "h": 56,
+      "px": [
+        48,
+        45
+      ]
+    },
+    {
+      "id": "sea_palm",
+      "name": "椰子樹",
+      "desc": "小心掉下來的椰子。",
+      "series": "seaside",
+      "rarity": "SR",
+      "file": "assets/decor/items/sea_palm.png",
+      "w": 100,
+      "h": 117,
+      "px": [
+        41,
+        48
+      ]
+    },
+    {
+      "id": "sea_lighthouse",
+      "name": "小燈塔",
+      "desc": "夜裡為迷路的船，也為熬夜的你點燈。",
+      "series": "seaside",
+      "rarity": "SSR",
+      "file": "assets/decor/items/sea_lighthouse.png",
+      "w": 110,
+      "h": 135,
+      "px": [
+        39,
+        48
+      ]
+    },
+    {
+      "id": "jp_cushion",
+      "name": "坐墊",
+      "desc": "跪坐久了腳會麻，所以要軟一點。",
+      "series": "sakura",
+      "rarity": "N",
+      "file": "assets/decor/items/jp_cushion.png",
+      "w": 34,
+      "h": 16,
+      "px": [
+        48,
+        23
+      ]
+    },
+    {
+      "id": "jp_teaset",
+      "name": "茶具組",
+      "desc": "泡一壺茶，慢慢想下一題。",
+      "series": "sakura",
+      "rarity": "N",
+      "file": "assets/decor/items/jp_teaset.png",
+      "w": 34,
+      "h": 25,
+      "px": [
+        48,
+        35
+      ]
+    },
+    {
+      "id": "jp_paperlamp",
+      "name": "紙燈籠",
+      "desc": "風一吹就輕輕轉動。",
+      "series": "sakura",
+      "rarity": "N",
+      "file": "assets/decor/items/jp_paperlamp.png",
+      "w": 30,
+      "h": 53,
+      "px": [
+        27,
+        48
+      ]
+    },
+    {
+      "id": "jp_bamboo",
+      "name": "竹籬笆",
+      "desc": "把營地圍出一個安靜的角落。",
+      "series": "sakura",
+      "rarity": "N",
+      "file": "assets/decor/items/jp_bamboo.png",
+      "w": 60,
+      "h": 45,
+      "px": [
+        48,
+        36
+      ]
+    },
+    {
+      "id": "jp_bonsai",
+      "name": "松樹盆栽",
+      "desc": "修剪了好多年，才長成這個形狀。",
+      "series": "sakura",
+      "rarity": "R",
+      "file": "assets/decor/items/jp_bonsai.png",
+      "w": 46,
+      "h": 50,
+      "px": [
+        44,
+        48
+      ]
+    },
+    {
+      "id": "jp_koibowl",
+      "name": "錦鯉石缸",
+      "desc": "兩條錦鯉繞著圈游，看著看著就靜下來了。",
+      "series": "sakura",
+      "rarity": "R",
+      "file": "assets/decor/items/jp_koibowl.png",
+      "w": 52,
+      "h": 42,
+      "px": [
+        48,
+        39
+      ]
+    },
+    {
+      "id": "jp_chime",
+      "name": "風鈴架",
+      "desc": "叮鈴一聲，提醒你該休息了。",
+      "series": "sakura",
+      "rarity": "R",
+      "file": "assets/decor/items/jp_chime.png",
+      "w": 40,
+      "h": 74,
+      "px": [
+        26,
+        48
+      ]
+    },
+    {
+      "id": "jp_stonelamp",
+      "name": "石燈籠",
+      "desc": "石頭雕的燈，點起來很有味道。",
+      "series": "sakura",
+      "rarity": "SR",
+      "file": "assets/decor/items/jp_stonelamp.png",
+      "w": 50,
+      "h": 69,
+      "px": [
+        35,
+        48
+      ]
+    },
+    {
+      "id": "jp_torii",
+      "name": "小鳥居",
+      "desc": "穿過去的時候，記得在心裡許個願。",
+      "series": "sakura",
+      "rarity": "SR",
+      "file": "assets/decor/items/jp_torii.png",
+      "w": 90,
+      "h": 86,
+      "px": [
+        48,
+        46
+      ]
+    },
+    {
+      "id": "jp_sakura",
+      "name": "櫻花樹",
+      "desc": "一年四季都開著花的櫻花樹，有點奇怪，但很美。",
+      "series": "sakura",
+      "rarity": "SSR",
+      "file": "assets/decor/items/jp_sakura.png",
+      "w": 130,
+      "h": 133,
+      "px": [
+        47,
+        48
+      ]
+    },
+    {
+      "id": "arc_crystal",
+      "name": "水晶簇",
+      "desc": "紫色水晶會隨心情變亮變暗。",
+      "series": "arcane",
+      "rarity": "N",
+      "file": "assets/decor/items/arc_crystal.png",
+      "w": 34,
+      "h": 38,
+      "px": [
+        43,
+        48
+      ]
+    },
+    {
+      "id": "arc_rune",
+      "name": "符文石",
+      "desc": "刻著看不懂的符號，摸了會有點刺刺的。",
+      "series": "arcane",
+      "rarity": "N",
+      "file": "assets/decor/items/arc_rune.png",
+      "w": 36,
+      "h": 39,
+      "px": [
+        44,
+        48
+      ]
+    },
+    {
+      "id": "arc_candle",
+      "name": "浮空蠟燭",
+      "desc": "三根蠟燭飄在空中，從來不會滴蠟。",
+      "series": "arcane",
+      "rarity": "N",
+      "file": "assets/decor/items/arc_candle.png",
+      "w": 24,
+      "h": 18,
+      "px": [
+        48,
+        36
+      ]
+    },
+    {
+      "id": "arc_potion",
+      "name": "藥水架",
+      "desc": "紅的回血，藍的回魔，綠的……不要喝。",
+      "series": "arcane",
+      "rarity": "N",
+      "file": "assets/decor/items/arc_potion.png",
+      "w": 44,
+      "h": 38,
+      "px": [
+        48,
+        42
+      ]
+    },
+    {
+      "id": "arc_cauldron",
+      "name": "魔法大釜",
+      "desc": "咕嘟咕嘟冒著泡，聞起來像薄荷。",
+      "series": "arcane",
+      "rarity": "R",
+      "file": "assets/decor/items/arc_cauldron.png",
+      "w": 56,
+      "h": 60,
+      "px": [
+        41,
+        44
+      ]
+    },
+    {
+      "id": "arc_orb",
+      "name": "占星水晶球",
+      "desc": "問它明天考什麼，它只會發光。",
+      "series": "arcane",
+      "rarity": "R",
+      "file": "assets/decor/items/arc_orb.png",
+      "w": 44,
+      "h": 60,
+      "px": [
+        35,
+        48
+      ]
+    },
+    {
+      "id": "arc_lectern",
+      "name": "魔法書台",
+      "desc": "書會自己翻到你需要的那一頁。",
+      "series": "arcane",
+      "rarity": "R",
+      "file": "assets/decor/items/arc_lectern.png",
+      "w": 50,
+      "h": 53,
+      "px": [
+        45,
+        48
+      ]
+    },
+    {
+      "id": "arc_moon",
+      "name": "新月雕像",
+      "desc": "月光照到的時候，雕像會輕輕發亮。",
+      "series": "arcane",
+      "rarity": "SR",
+      "file": "assets/decor/items/arc_moon.png",
+      "w": 60,
+      "h": 99,
+      "px": [
+        29,
+        48
+      ]
+    },
+    {
+      "id": "arc_cloudbed",
+      "name": "雲朵寵物窩",
+      "desc": "軟綿綿的雲，夥伴睡上去就不想起來。",
+      "series": "arcane",
+      "rarity": "SR",
+      "file": "assets/decor/items/arc_cloudbed.png",
+      "w": 60,
+      "h": 45,
+      "px": [
+        48,
+        36
+      ]
+    },
+    {
+      "id": "arc_portal",
+      "name": "星門",
+      "desc": "門的另一邊是星空，走進去之前先把題目寫完。",
+      "series": "arcane",
+      "rarity": "SSR",
+      "file": "assets/decor/items/arc_portal.png",
+      "w": 110,
+      "h": 129,
+      "px": [
+        41,
+        48
+      ]
+    },
+    {
+      "id": "junk_boot",
+      "name": "舊靴子",
+      "desc": "……又是靴子？至少退你 2 顆魂晶。",
+      "series": "junk",
+      "rarity": "junk",
+      "file": "assets/decor/items/junk_boot.png",
+      "w": 28,
+      "h": 26,
+      "px": [
+        48,
+        44
+      ]
+    },
+    {
+      "id": "junk_can",
+      "name": "生鏽空罐",
+      "desc": "裡面什麼都沒有，搖起來還會響。",
+      "series": "junk",
+      "rarity": "junk",
+      "file": "assets/decor/items/junk_can.png",
+      "w": 22,
+      "h": 31,
+      "px": [
+        34,
+        48
+      ]
+    },
+    {
+      "id": "junk_twig",
+      "name": "枯樹枝",
+      "desc": "可以拿來當指揮棒，或是生火。",
+      "series": "junk",
+      "rarity": "junk",
+      "file": "assets/decor/items/junk_twig.png",
+      "w": 36,
+      "h": 58,
+      "px": [
+        30,
+        48
+      ]
+    },
+    {
+      "id": "junk_bucket",
+      "name": "破水桶",
+      "desc": "底部有個洞，裝什麼漏什麼。",
+      "series": "junk",
+      "rarity": "junk",
+      "file": "assets/decor/items/junk_bucket.png",
+      "w": 32,
+      "h": 31,
+      "px": [
+        48,
+        47
+      ]
+    },
+    {
+      "id": "junk_paper",
+      "name": "揉爛的考卷",
+      "desc": "大大的紅叉叉。下次一定會更好。",
+      "series": "junk",
+      "rarity": "junk",
+      "file": "assets/decor/items/junk_paper.png",
+      "w": 26,
+      "h": 26,
+      "px": [
+        48,
+        48
+      ]
+    },
+    {
+      "id": "junk_rock",
+      "name": "普通石頭",
+      "desc": "真的很普通。",
+      "series": "junk",
+      "rarity": "junk",
+      "file": "assets/decor/items/junk_rock.png",
+      "w": 30,
+      "h": 22,
+      "px": [
+        48,
+        35
+      ]
+    }
+  ]
+};
