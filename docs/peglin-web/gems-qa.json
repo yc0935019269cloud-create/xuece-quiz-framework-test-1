@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-30T15:05:08.472Z",
+  "at": "2026-10-30T15:10:21.850Z",
   "checks": [
     {
       "name": "abyss trial multiplier lowered but still increasing (X: 2.5 -> 1.6)",
@@ -10,7 +10,37 @@
         "m1": 1.06,
         "p": {
           "quizRight": 3,
-          "learnRight": 2,
+          "learnRight": 3,
+          "cooldownH": 12
+        }
+      }
+    },
+    {
+      "name": "abyss base unchanged, free expedition and learn raised",
+      "pass": true,
+      "details": {
+        "trialStep": 0.06,
+        "free": {
+          "right": 3,
+          "win": 40,
+          "out": 20
+        },
+        "abyss": {
+          "right": 2,
+          "win": 25,
+          "out": 8
+        },
+        "learn": {
+          "right": 4,
+          "first": 10,
+          "star": 5,
+          "rankS": 10,
+          "rankA": 4,
+          "repeatMul": 0.25
+        },
+        "peglin": {
+          "quizRight": 3,
+          "learnRight": 3,
           "cooldownH": 12
         }
       }
@@ -58,7 +88,7 @@
       "name": "learn: first-try correct check gives learnRight",
       "pass": true,
       "details": {
-        "got": 2
+        "got": 3
       }
     },
     {

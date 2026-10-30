@@ -18,6 +18,8 @@ const check = (name, pass, details) => { report.checks.push({ name, pass: !!pass
   try {
     const t = await page.evaluate(() => ({ step: C.GEMS.trialStep, m10: 1 + C.GEMS.trialStep * 10, m1: 1 + C.GEMS.trialStep, p: C.GEMS.peglin }));
     check('abyss trial multiplier lowered but still increasing (X: 2.5 -> 1.6)', Math.abs(t.m10 - 1.6) < 1e-9 && t.m1 > 1 && t.m10 > t.m1, t);
+    const G2 = await page.evaluate(() => C.GEMS);
+    check('abyss base unchanged, free expedition and learn raised', G2.abyss.right === 2 && G2.abyss.win === 25 && G2.abyss.out === 8 && G2.free.right > G2.abyss.right && G2.learn.right > 0 && G2.learn.repeatMul < 1, G2);
     const ids = await page.evaluate(() => {
       U.clearModals(); Store.settings.confirmSingle = false; delete Store.profile.peglinGem;
       Object.defineProperty(CLOUD, 'signedIn', { configurable: true, get: () => true });

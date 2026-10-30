@@ -1235,10 +1235,11 @@ const LEARN_UI = (() => {
       const rank = bt.seg === undefined || !BON() ? '' :
         acc >= 0.9 && !bt.falls && (!bt.bossDone || bt.bossWin) && (bt.maxCombo || 0) >= Math.min(5, R.n) ? 'S' :
         acc >= 0.75 && !bt.falls ? 'A' : acc >= 0.5 ? 'B' : 'C';
-      const rankGem = rank === 'S' ? 3 : rank === 'A' ? 1 : 0;
+      const GL = C.GEMS.learn, rep = first ? 1 : GL.repeatMul;
+      const rankGem = Math.round((rank === 'S' ? GL.rankS : rank === 'A' ? GL.rankA : 0) * rep), rightGem = Math.round(R.ok * GL.right * rep);
       const newBestRank = rank && RK.indexOf(rank) > RK.indexOf(st.rank || '');
       if (newBestRank) st.rank = rank;
-      const gain = (first ? 3 + star * 2 : (star > (st.best || 0) ? (star - (st.best || 0)) * 2 : 0)) + (bt.gems || 0) + rankGem;
+      const gain = (first ? GL.first + star * GL.star : (star > (st.best || 0) ? (star - (st.best || 0)) * GL.star : 0)) + rightGem + (bt.gems || 0) + rankGem;
       st.done = (st.done || 0) + 1; st.best = Math.max(st.best || 0, star); st.last = Date.now(); st.run = null; st.i = 0;
       D.stat.lessons++;
       l.steps.forEach(s => { if (s.type === 'card' && s.flash) addRev(s.flash.id); if (s.type === 'recap') (s.flash || []).forEach(f => addRev(f.id)); });
@@ -1255,7 +1256,7 @@ const LEARN_UI = (() => {
         <div class="lp-stars">${stars(star).split('').map((c, i) => `<span style="animation-delay:${i * .25}s" class="${c === '★' ? 'on' : ''}">${c}</span>`).join('')}</div>
         <p>第一次就答對 <b class="gold-t">${R.ok}</b> / ${R.n} 題（${U.pct(R.ok, R.n)}%）・用時約 ${mins} 分鐘</p>
         ${bt.seg !== undefined && (bt.kills || bt.bossDone) ? `<p>⚔ 擊敗怪物 ${bt.kills || 0} 隻${bt.maxCombo >= 2 ? `・最高 <b class="gold-t">${bt.maxCombo}</b> 連擊` : ''}${bt.chests ? `・寶箱 ${bt.chests} 個` : ''}${bt.bossDone ? `・課末魔王 ${bt.bossWin ? '<b class="gold-t">討伐成功</b>' : '撤退'}` : ''}${bt.falls ? `・倒下 ${bt.falls} 次` : bt.hurt ? `・受傷 ${bt.hurt} 次` : '・<b class="green-t">無傷通關</b>'}</p>` : ''}
-        <p>${gain ? `獲得 <b class="purple-t">${gain}</b> 魂晶${rankGem ? `（評等 ${rank} 加成 +${rankGem}）` : ''}・` : ''}帳號經驗 +${first ? 25 : 8}${ups ? '・<b class="gold-t">帳號升級！</b>' : ''}</p>
+        <p>${gain ? `獲得 <b class="purple-t">${gain}</b> 魂晶${rightGem || rankGem ? `（${rightGem ? `答對 +${rightGem}` : ''}${rightGem && rankGem ? '、' : ''}${rankGem ? `評等 ${rank} +${rankGem}` : ''}${first ? '' : '，重上的課減量'}）` : ''}・` : ''}帳號經驗 +${first ? 25 : 8}${ups ? '・<b class="gold-t">帳號升級！</b>' : ''}</p>
         <p class="dim small-t">答錯的檢核題與本課記憶卡已放進「🔁 複習」。</p>
         <div class="row mt" style="justify-content:center">
           <button class="px-btn" id="dBack">回單元</button>
@@ -1898,7 +1899,7 @@ const LEARN_UI = (() => {
       <div class="lpips big mt">${['intro', 'card', 'check', 'card', 'check', 'check', 'card', 'check', 'example', 'practice', 'recap'].map(t => `<i class="t-${t}"></i>`).join('')}</div>
       <p class="dim small-t">▲ 一課的樣子：導入 → (概念 → 檢核) × N → 範例 → 實戰 → 回顧。每課約 10～20 分鐘，中途離開會自動存進度。</p>
       <h3 class="mt">⚔ 學習戰鬥</h3><p class="small-t">每一段（概念卡＋它後面的檢核題）會出現怪物。<b>答對</b>就用職業招式攻擊；<b>第一次就答對</b>會累積連擊，連擊越高傷害越高、越容易暴擊，每 4 連擊夥伴會追擊、每 5 連擊 +⚡。<b>讀概念卡、玩互動內容</b>也會累積 ⚡，集滿 3 點就能按「⚡ 必殺技」放職業大招。怪物可能有特性：<b>蓄力</b>（答錯受 2 點傷害、答對可破防）、<b>硬殼</b>（暴擊或必殺技才打得碎）、<b>寶藏怪</b>（幾題後逃走，快打倒牠）。打得快會有增援，整段零失誤會掉寶箱。整課最後有<b>課末魔王</b>（半血後暴怒），課末依正確率、連擊與是否倒下給 S／A／B／C 評等。倒下也沒關係，夥伴會扶你起來，學習進度不受影響。不想戰鬥可以按右上角切換成「🕊 平靜模式」。</p>
-      <h3 class="mt">星星怎麼算？</h3><p class="small-t">看「第一次就答對」的比例：90% 以上 ★★★、70% 以上 ★★、其他 ★。第一次完成一課給魂晶，之後拿到更高星數會補差額。</p>`;
+      <h3 class="mt">星星怎麼算？</h3><p class="small-t">看「第一次就答對」的比例：90% 以上 ★★★、70% 以上 ★★、其他 ★。第一次完成一課給魂晶，之後拿到更高星數會補差額；每題第一次就答對也有魂晶（完成這課時一起結算）。已完成的課再上一次，答對與評等的魂晶會減量。</p>`;
   }
 
   function tileDesc() {
@@ -1919,7 +1920,7 @@ const LEARN_UI = (() => {
     if (!l) return false;
     const st = D.les[lkey(p, l)] || (D.les[lkey(p, l)] = { i: 0, done: 0, best: 0 });
     const acc = ev.n ? ev.ok / ev.n : 1, star = acc >= 0.9 ? 3 : acc >= 0.7 ? 2 : 1, first = !st.done;
-    const gain = first ? 3 + star * 2 : (star > (st.best || 0) ? (star - (st.best || 0)) * 2 : 0);
+    const GL = C.GEMS.learn, gain = first ? GL.first + star * GL.star : (star > (st.best || 0) ? (star - (st.best || 0)) * GL.star : 0);
     st.done = (st.done || 0) + 1; st.best = Math.max(st.best || 0, star); st.last = Date.now(); st.run = null; st.i = 0;
     D.stat.lessons++; D.last = { p: p.id, l: l.id };
     l.steps.forEach(s => { if (s.type === 'card' && s.flash) addRev(s.flash.id); if (s.type === 'recap') (s.flash || []).forEach(f => addRev(f.id)); });

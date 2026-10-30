@@ -161,8 +161,17 @@ const C = (() => {
    * trialStep：深淵遠征每一級試煉的結算加成（舊版 0.15，試煉 X 會變 2.5 倍；現在 0.06，試煉 X 為 1.6 倍）
    * peglin：網頁版彈珠。quizRight＝彈珠刷題第一次就答對、learnRight＝彈珠學習檢核／實戰第一次就答對；
    *   同一題在同一場只算一次、cooldownH 小時內已在彈珠拿過魂晶的題目不再給；回顧頁、課後複習輪、test 場次不給。
-   *   整課完成沿用學習模式的完成獎勵（第一次 3＋星數×2）。 */
-  const GEMS = { trialStep: 0.06, peglin: { quizRight: 3, learnRight: 2, cooldownH: 12 } };
+   *   整課完成沿用學習模式的完成獎勵（learn.first＋星數×learn.star）。
+   * free：自由遠征／冒險地圖的答對、通關、題目用盡（深淵另用 abyss，基礎量維持舊值）
+   * learn：學習模式。right＝每題第一次就答對（一課完成時結算）、first＋star×星數＝第一次完成、
+   *   rankS／rankA＝戰鬥評等；重上已完成的課，答對與評等獎勵乘 repeatMul，完成獎勵只補星數差額。 */
+  const GEMS = {
+    trialStep: 0.06,
+    free: { right: 3, win: 40, out: 20 },
+    abyss: { right: 2, win: 25, out: 8 },
+    learn: { right: 4, first: 10, star: 5, rankS: 10, rankA: 4, repeatMul: 0.25 },
+    peglin: { quizRight: 3, learnRight: 3, cooldownH: 12 }
+  };
 
   /* ---- 試煉等級（深淵遠征難度，累加） ---- */
   const DIFFS = [

@@ -755,7 +755,8 @@ const RunUI = (() => {
     if (!s.settled && s.phase === 'dead' && s.map && s.map.cur === 'secret') { s.phase = 'win'; st.secretLost = true; st.boss = true; }
     if (!s.settled) {
       const win = s.phase === 'win', dead = s.phase === 'dead', retreat = s.phase === 'retreat';
-      let gems = st.correct * 2 + st.kills * 3 + st.elites * 5 + st.floorsCleared + (win ? 25 : 0) + (s.phase === 'out' ? 8 : 0);
+      const GB = R.abyss ? C.GEMS.abyss : C.GEMS.free;
+      let gems = st.correct * GB.right + st.kills * 3 + st.elites * 5 + st.floorsCleared + (win ? GB.win : 0) + (s.phase === 'out' ? GB.out : 0);
       if (R.abyss) gems += st.bosses * 25 + (s.act - 1) * 15 + (win ? 40 : 0) + (st.secret ? 80 : 0);
       if (R.has('soul')) gems += st.kills * 2;
       gems = Math.round(gems * (1 + 0.1 * Store.upg('gem')) * (1 + C.GEMS.trialStep * (s.diff || 0)) * (retreat ? 0.5 : 1));
