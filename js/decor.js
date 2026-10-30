@@ -45,6 +45,7 @@ const DECOR = (() => {
     if (!d.scenes.includes('classic')) d.scenes.unshift('classic');
     if (typeof d.scene !== 'string' || !d.scenes.includes(d.scene)) d.scene = 'classic';
     if (!Array.isArray(d.placed)) d.placed = [];
+    if (!d.base || typeof d.base !== 'object' || Array.isArray(d.base)) d.base = {};
     if (!d.pity || typeof d.pity !== 'object') d.pity = {};
     if (typeof d.draws !== 'number') d.draws = 0;
     if (!Array.isArray(d.log)) d.log = [];
@@ -207,6 +208,24 @@ const DECOR = (() => {
     fixImgs(M.scene);
   }
   function styleOne(el, o) { const it = item(o.id); if (it) el.style.cssText = decorStyle(o, it, M.sc); }
+  const BASE_NAMES = { board: '公告板', fire: '篝火', mail: '信箱', pot: '花盆', pond: '池塘' };
+  function styleBase(el, o) {
+    // Keep the original CSS position and size, including its mobile zoom.
+    el.style.removeProperty('translate');
+    if (!o || !Number.isFinite(o.x) || !Number.isFinite(o.y)) return;
+    const r = M.scene.getBoundingClientRect(), b = el.getBoundingClientRect();
+    const zoom = parseFloat(getComputedStyle(el).zoom) || 1;
+    const x = r.left + clamp(o.x, .03, .97) * r.width;
+    const y = r.bottom - (OFF + clamp(o.y, 0, 1) * M.sc.ground * 100) / 100 * r.height;
+    el.style.translate = `${(x - (b.left + b.width / 2)) / zoom}px ${(y - b.bottom) / zoom}px`;
+  }
+  function renderBase() {
+    const base = ensure().base;
+    M.scene.querySelectorAll('[data-base]').forEach(el => {
+      styleBase(el, base[el.dataset.base]);
+      el.classList.toggle('sel', !!M.edit && M.baseSel === el.dataset.base);
+    });
+  }
   function posFromPoint(cx, cy) {
     const r = M.scene.getBoundingClientRect(), g = M.sc.ground;
     return { x: clamp((cx - r.left) / r.width, 0.03, 0.97), y: clamp(((r.bottom - cy) / r.height * 100 - OFF) / (g * 100), 0, 1) };
@@ -214,13 +233,14 @@ const DECOR = (() => {
   function drawer() {
     const dr = U.$('#decorDrawer'); if (!dr) return;
     const d = ensure(), owned = data().items.filter(i => available(i.id) > 0 || placedCount(i.id) > 0);
-    const selO = M.sel && find(M.sel), selIt = selO && item(selO.id);
+    const selO = M.sel && find(M.sel), selIt = selO && item(selO.id), baseName = M.baseSel && BASE_NAMES[M.baseSel];
     dr.innerHTML = `<div class="dc-dr-head"><b class="gold-t">🛠 布置營地</b><span class="small-t dim">點下面的物件放進營地；在營地裡拖曳移動。已擺 ${d.placed.length}/${MAX_PLACED}</span><span class="grow"></span>
-        <button class="px-btn small" id="dcClear">清空</button><button class="px-btn small gold" id="dcDone">完成</button></div>
-      <div class="dc-sel ${selIt ? '' : 'none'}">${selIt ? `<b>${E(selIt.name)}</b><button class="px-btn small" id="dcFlip">↔ 翻轉</button><button class="px-btn small red" id="dcDel">🗑 收回</button>` : '<span class="small-t dim">點營地裡的物件可以翻轉或收回。</span>'}</div>
+        <button class="px-btn small" id="dcResetBase">↺ 基本物件回原位</button><button class="px-btn small" id="dcClear">清空</button><button class="px-btn small gold" id="dcDone">完成</button></div>
+      <div class="dc-sel ${selIt || baseName ? '' : 'none'}">${selIt ? `<b>${E(selIt.name)}</b><button class="px-btn small" id="dcFlip">↔ 翻轉</button><button class="px-btn small red" id="dcDel">🗑 收回</button>` : baseName ? `<b>${E(baseName)}</b><span class="small-t dim">拖曳移動基本物件</span>` : '<span class="small-t dim">點營地裡的物件可以翻轉或收回。</span>'}</div>
       <div class="dc-chips">${owned.length ? owned.map(i => { const a = available(i.id); return `<button class="dc-chip r-${i.rarity} ${a <= 0 ? 'used' : ''}" data-id="${E(i.id)}" ${a <= 0 ? 'disabled' : ''} title="${E(i.name)}">${imgHTML(i)}<small>×${Math.max(0, a)}</small></button>`; }).join('') : '<p class="small-t dim">還沒有物件。到商店抽獎或直購吧！</p>'}</div>`;
     fixImgs(dr);
     U.$('#dcDone', dr).onclick = () => setEdit(false);
+    U.$('#dcResetBase', dr).onclick = async () => { if (await U.confirm('基本物件回原位', '要將公告板、篝火、信箱、花盆和池塘放回原位嗎？')) { ensure().base = {}; save(); M.baseSel = null; renderBase(); drawer(); } };
     U.$('#dcClear', dr).onclick = async () => { if (!ensure().placed.length) return; if (await U.confirm('清空營地', '要把營地裡所有擺放的物件都收回嗎？')) { clearAll(); M.sel = null; renderPlaced(); drawer(); } };
     const fl = U.$('#dcFlip', dr); if (fl) fl.onclick = () => { flip(M.sel); renderPlaced(); drawer(); };
     const del = U.$('#dcDel', dr); if (del) del.onclick = () => { remove(M.sel); M.sel = null; renderPlaced(); drawer(); };
@@ -229,7 +249,7 @@ const DECOR = (() => {
       ch.addEventListener('click', () => {
         if (suppress) { suppress = false; return; }
         const o = place(ch.dataset.id, 0.3 + rng() * 0.6, 0.1 + rng() * 0.8); if (!o) { U.toast('放不下了（數量用完或已達 ' + MAX_PLACED + ' 件）'); return; }
-        SFX.play('click'); M.sel = o.k; renderPlaced(); drawer();
+        SFX.play('click'); M.sel = o.k; M.baseSel = null; renderBase(); renderPlaced(); drawer();
       });
       ch.addEventListener('pointerdown', e => {
         if (e.pointerType !== 'mouse' || e.button !== 0 || ch.disabled) return;
@@ -244,7 +264,7 @@ const DECOR = (() => {
           const r = M.scene.getBoundingClientRect();
           if (ev.clientX >= r.left && ev.clientX <= r.right && ev.clientY >= r.top && ev.clientY <= r.bottom + 20) {
             const pp = posFromPoint(ev.clientX, ev.clientY), o = place(ch.dataset.id, pp.x, pp.y);
-            if (o) { SFX.play('click'); M.sel = o.k; renderPlaced(); drawer(); }
+            if (o) { SFX.play('click'); M.sel = o.k; M.baseSel = null; renderBase(); renderPlaced(); drawer(); }
           }
         };
         window.addEventListener('pointermove', mv); window.addEventListener('pointerup', up);
@@ -257,7 +277,7 @@ const DECOR = (() => {
     M.scene.classList.toggle('editing', M.edit);
     const dr = U.$('#decorDrawer'); if (dr) dr.hidden = !M.edit;
     const b = U.$('#decorEdit'); if (b) b.classList.toggle('sel', M.edit);
-    M.sel = null; renderPlaced();
+    M.sel = null; M.baseSel = null; renderBase(); renderPlaced();
     if (M.edit) { drawer(); SFX.play('open'); } else if (dr) dr.innerHTML = '';
   }
   function sceneModal() {
@@ -268,35 +288,44 @@ const DECOR = (() => {
     }).join('')}</div><p class="small-t dim mt">更多場景請到「背景商店」。</p>`, buttons: [{ label: '前往商店', onClick: () => App.go('decor') }, { label: '關閉' }] });
     m.el.querySelectorAll('.dc-scene-card:not([disabled])').forEach(b => b.onclick = () => { if (setScene(b.dataset.id)) { SFX.play('win'); m.close(); Screens.hub(); } });
   }
-  /* 由 Screens.hub() 在營地畫好、CampFun.init 之前呼叫 */
+  /* 由 Screens.hub() 在 CampFun.init 之後呼叫，讓基本物件已存在。 */
   function mount(sceneEl, ctx) {
     ctx = ctx || {};
+    if (M && M.baseObserver) M.baseObserver.disconnect();
     const sc = sceneFor() || CLASSIC;
-    M = { scene: sceneEl, sc, sel: null, edit: false, bubble: ctx.bubble };
+    M = { scene: sceneEl, sc, sel: null, baseSel: null, edit: false, bubble: ctx.bubble };
     ensure();
+    renderBase();
+    if (typeof ResizeObserver !== 'undefined') { M.baseObserver = new ResizeObserver(() => { if (M && M.scene === sceneEl && sceneEl.isConnected) renderBase(); }); M.baseObserver.observe(sceneEl); }
     renderPlaced();
     // 布置中：擋掉營地原本的點擊互動（勇者、夥伴、篝火、點地面跑過去）
-    sceneEl.addEventListener('click', e => { if (M && M.edit) { e.stopImmediatePropagation(); e.stopPropagation(); if (!e.target.closest('.decor-obj')) { M.sel = null; renderPlaced(); drawer(); } } }, true);
+    sceneEl.addEventListener('click', e => { if (M && M.edit) { e.stopImmediatePropagation(); e.stopPropagation(); if (!e.target.closest('.decor-obj, [data-base]')) { M.sel = null; M.baseSel = null; renderBase(); renderPlaced(); drawer(); } } }, true);
     // 拖曳
     sceneEl.addEventListener('pointerdown', e => {
-      const el = e.target.closest('.decor-obj'); if (!M.edit || !el) return;
+      const el = e.target.closest('.decor-obj, .camp-obj[data-base]'); if (!M.edit || !el || (e.pointerType === 'mouse' && e.button !== 0)) return;
       e.preventDefault();
-      const o = find(el.dataset.k); if (!o) return;
+      const isBase = !!el.dataset.base, key = isBase ? el.dataset.base : el.dataset.k;
+      const o = isBase ? ensure().base[key] : find(key); if (!isBase && !o) return;
       const r = sceneEl.getBoundingClientRect(), g = M.sc.ground;
-      const fx = r.left + o.x * r.width, fy = r.bottom - (OFF + o.y * g * 100) / 100 * r.height;
+      const box = el.getBoundingClientRect();
+      const fx = isBase ? box.left + box.width / 2 : r.left + o.x * r.width;
+      const fy = isBase ? box.bottom : r.bottom - (OFF + o.y * g * 100) / 100 * r.height;
       const dx = e.clientX - fx, dy = e.clientY - fy;
-      const wasSel = M.sel === o.k; let moved = false;
-      if (!wasSel) { M.sel = o.k; sceneEl.querySelectorAll('.decor-obj').forEach(x => x.classList.toggle('sel', x === el)); drawer(); }
+      let moved = false, pos = o;
+      M.sel = isBase ? null : key; M.baseSel = isBase ? key : null;
+      sceneEl.querySelectorAll('.decor-obj, .camp-obj[data-base]').forEach(x => x.classList.toggle('sel', x === el)); drawer();
       try { el.setPointerCapture(e.pointerId); } catch (_) {}
       const mv = ev => {
         if (!moved && Math.hypot(ev.clientX - e.clientX, ev.clientY - e.clientY) < 3) return;
         moved = true;
-        const pp = posFromPoint(ev.clientX - dx, ev.clientY - dy); o.x = pp.x; o.y = pp.y; styleOne(el, o); el.classList.add('sel', 'drag');
+        const pp = posFromPoint(ev.clientX - dx, ev.clientY - dy);
+        if (isBase) { pos = pp; styleBase(el, pos); } else { o.x = pp.x; o.y = pp.y; styleOne(el, o); }
+        el.classList.add('sel', 'drag');
       };
       const up = () => {
         el.removeEventListener('pointermove', mv); el.removeEventListener('pointerup', up); el.removeEventListener('pointercancel', up);
         el.classList.remove('drag');
-        if (moved) { move(o.k, o.x, o.y); renderPlaced(); }
+        if (moved) { if (isBase) { ensure().base[key] = pos; save(); } else { move(o.k, o.x, o.y); renderPlaced(); } }
       };
       el.addEventListener('pointermove', mv); el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up);
     });

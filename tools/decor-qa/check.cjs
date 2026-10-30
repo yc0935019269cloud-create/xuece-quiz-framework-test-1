@@ -2,7 +2,9 @@
 // 用法（PowerShell）：$env:NODE_PATH='E:\NEWTEST\skull-atlas-3d\node_modules'; node tools/decor-qa/check.cjs
 // 真正的 js/decor-data.js 存在就用它；否則注入依設計文件表格產生的假資料（圖檔 404，會顯示佔位框）。
 const { chromium } = require('playwright'), fs = require('fs'), path = require('path'), url = require('url');
+const { execFileSync } = require('child_process');
 const ROOT = path.resolve(__dirname, '../..'), OUT = path.join(ROOT, 'output/playwright');
+const originalDecor = execFileSync('git', ['show', '14652e0:js/decor.js'], { cwd: ROOT, encoding: 'utf8' });
 fs.mkdirSync(OUT, { recursive: true }); fs.mkdirSync(path.join(ROOT, 'docs/decor'), { recursive: true });
 const results = []; const ok = (name, cond, extra) => { results.push({ name, pass: !!cond, extra: cond ? undefined : extra }); console.log((cond ? 'PASS ' : 'FAIL ') + name + (cond ? '' : ' ' + JSON.stringify(extra))); };
 const SER = [['cabin', '木屋小窩'], ['forest', '森林精靈'], ['academy', '學院書房'], ['seaside', '海濱假日'], ['sakura', '和風庭園'], ['arcane', '星辰魔法'], ['junk', '雜物堆']];
@@ -202,6 +204,100 @@ const realData = fs.existsSync(path.join(ROOT, 'js/decor-data.js'));
       await page.click('.decor-obj');
       await page.waitForSelector('#camp .bubble', { timeout: 2000 }).then(() => ok(`${tag} 一般模式點物件顯示名稱泡泡`, true)).catch(() => ok(`${tag} 一般模式點物件顯示名稱泡泡`, false));
       await page.screenshot({ path: path.join(OUT, `decor-${width}-camp-placed.png`) });
+
+      // Base objects: compare old-save defaults to the committed pre-change code,
+      // then drag each object using actual mouse or touch pointer input.
+      const oldDecorState = await page.evaluate(() => {
+        const d = DECOR.ensure(), saved = { scenes: d.scenes.slice(), placed: d.placed.slice() };
+        d.placed = []; if (!d.scenes.includes('scene_beach')) d.scenes.push('scene_beach'); delete d.base;
+        Store.saveProfile(); return saved;
+      });
+      const ref = await ctx.newPage();
+      let oldDecorServed = false;
+      ref.on('pageerror', e => errors.push(tag + ' reference ' + String(e)));
+      await ref.route('**/js/decor.js?*', route => { oldDecorServed = true; return route.fulfill({ status: 200, contentType: 'text/javascript', body: originalDecor }); });
+      const baseKeys = ['board', 'fire', 'mail', 'pot', 'pond'];
+      const boxes = async p => p.evaluate(() => {
+        const c = document.querySelector('#camp').getBoundingClientRect();
+        return Object.fromEntries([...document.querySelectorAll('#camp .camp-obj[data-base]')].map(e => {
+          const r = e.getBoundingClientRect(); return [e.dataset.base, { left: r.left - c.left, bottom: c.bottom - r.bottom, width: r.width, height: r.height }];
+        }));
+      });
+      const sameBoxes = (a, b) => baseKeys.every(k => a[k] && b[k] && ['left', 'bottom', 'width', 'height'].every(v => Math.abs(a[k][v] - b[k][v]) < 1));
+      const pointer = async (selector, dx = 0, dy = 0) => {
+        // Some default objects are partly covered by the hero in normal mode.
+        // Find a genuinely hit-testable point on the requested object.
+        const { x, y } = await page.evaluate(selector => {
+          const el = document.querySelector(selector), b = el.getBoundingClientRect();
+          for (const rx of [.5, .9, .1, .75, .25, .97, .03]) for (const ry of [.5, .2, .8]) {
+            const x = b.left + b.width * rx, y = b.top + b.height * ry, hit = document.elementFromPoint(x, y);
+            if (hit && (hit === el || el.contains(hit))) return { x, y };
+          }
+          throw new Error('No visible pointer target for ' + selector);
+        }, selector);
+        if (width === 390) {
+          const cd = await ctx.newCDPSession(page);
+          await cd.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y }] });
+          if (dx || dy) for (let i = 1; i <= 6; i++) await cd.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x + dx * i / 6, y: y + dy * i / 6 }] });
+          await cd.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+          await cd.detach();
+        } else {
+          await page.mouse.move(x, y); await page.mouse.down();
+          if (dx || dy) await page.mouse.move(x + dx, y + dy, { steps: 6 });
+          await page.mouse.up();
+        }
+      };
+      for (const sceneId of ['classic', 'scene_beach']) {
+        await page.evaluate(id => { const d = DECOR.ensure(); d.scene = id; delete d.base; Store.saveProfile(); App.go('hub'); }, sceneId);
+        await ref.goto(url.pathToFileURL(path.join(ROOT, 'index.html')).href);
+        await ref.waitForFunction(() => typeof Screens !== 'undefined' && typeof App !== 'undefined');
+        await ref.evaluate(() => App.go('hub'));
+        const defaults = await boxes(page), previous = await boxes(ref);
+        ok(`${tag} ${sceneId} old save uses unchanged pre-feature object positions`, oldDecorServed && sameBoxes(defaults, previous) && await page.evaluate(() => Object.keys(DECOR.ensure().base).length === 0), { oldDecorServed, defaults, previous });
+        if (sceneId === 'classic') {
+          await pointer('#cFire');
+          ok(`${tag} campfire still flares outside edit mode`, await page.evaluate(() => document.querySelector('#cFire').classList.contains('flare')));
+          await pointer('#cBoard');
+          ok(`${tag} board still opens the daily bubble outside edit mode`, await page.evaluate(() => document.querySelector('#daily').classList.contains('pulse') && !!document.querySelector('#camp .bubble')));
+          await pointer('#cPond');
+          ok(`${tag} pond still starts fishing outside edit mode`, await page.evaluate(() => !!document.querySelector('#cPond .bobber')));
+          // At 390px the default layout (unchanged from before this feature) puts the hero over the mailbox;
+          // then click it the way the page would after the player drags it free: dispatch on the element.
+          const mailCovered = await pointer('#cMail').then(() => false, () => true);
+          if (mailCovered) await page.evaluate(() => document.querySelector('#cMail').click());
+          ok(`${tag} mailbox still opens its letter outside edit mode${mailCovered ? ' (hero covers it at this width; clicked directly)' : ''}`, await page.evaluate(() => !!document.querySelector('.modal .letter')));
+          if (await page.$('.modal .letter')) await page.click('.modal .px-btn.gold');
+          await pointer('#cPot');
+          ok(`${tag} flower pot still waters outside edit mode`, await page.evaluate(() => !!document.querySelector('#cPot .water-fx')));
+          await page.evaluate(() => App.go('hub'));
+        }
+        await page.click('#decorEdit');
+        if (sceneId === 'classic') {
+          await page.evaluate(() => { document.querySelector('#daily').classList.remove('pulse'); document.querySelector('#cFire').classList.remove('flare'); });
+          for (const id of ['cFire', 'cBoard', 'cPond', 'cMail', 'cPot']) await pointer('#' + id);
+          ok(`${tag} clicking base objects in edit mode suppresses camp interactions`, await page.evaluate(() => !document.querySelector('#cFire').classList.contains('flare') && !document.querySelector('#daily').classList.contains('pulse') && !document.querySelector('#cPond .bobber') && !document.querySelector('#cPot .water-fx') && !document.querySelector('#camp .bubble') && !document.querySelector('.modal')));
+          ok(`${tag} hero and pet are not draggable`, await page.evaluate(() => !document.querySelector('#cHero').hasAttribute('data-base') && (!document.querySelector('#cPet') || !document.querySelector('#cPet').hasAttribute('data-base')) && getComputedStyle(document.querySelector('#cHero')).pointerEvents === 'none'));
+        }
+        for (const key of baseKeys) {
+          const before = (await boxes(page))[key], dx = key === 'pond' ? -18 : 18;
+          await pointer(`.camp-obj[data-base="${key}"]`, dx, -7);
+          const after = (await boxes(page))[key];
+          const state = await page.evaluate(key => ({ pos: DECOR.ensure().base[key], remove: !!document.querySelector('#dcDel'), flip: !!document.querySelector('#dcFlip') }), key);
+          ok(`${tag} ${sceneId} ${key} responds to ${width === 390 ? 'touch' : 'mouse'} drag without a remove button`, !!state.pos && state.pos.x >= .03 && state.pos.x <= .97 && state.pos.y >= 0 && state.pos.y <= 1 && !state.remove && !state.flip && Math.abs(after.left - before.left - dx) < 3, { before, after, state });
+        }
+        const savedBase = await page.evaluate(() => JSON.stringify(DECOR.ensure().base)), movedBoxes = await boxes(page);
+        await page.screenshot({ path: path.join(OUT, `decor-${width}-base-${sceneId}.png`) });
+        await goto(); await page.evaluate(() => App.go('hub'));
+        ok(`${tag} ${sceneId} all base positions survive reload`, await page.evaluate(() => JSON.stringify(DECOR.ensure().base)) === savedBase && sameBoxes(movedBoxes, await boxes(page)));
+        await page.click('#decorEdit'); await page.click('#dcResetBase');
+        await page.click('.modal .px-btn.gold');
+        const reset = await boxes(page);
+        ok(`${tag} ${sceneId} confirmed reset clears saved positions and restores original pixels`, sameBoxes(defaults, reset) && await page.evaluate(() => Object.keys(DECOR.ensure().base).length === 0), { defaults, reset });
+        await goto(); await page.evaluate(() => App.go('hub'));
+        ok(`${tag} ${sceneId} reset survives reload`, sameBoxes(defaults, await boxes(page)) && await page.evaluate(() => Object.keys(DECOR.ensure().base).length === 0));
+      }
+      await ref.close();
+      await page.evaluate(saved => { const d = DECOR.ensure(); d.scenes = saved.scenes; d.placed = saved.placed; d.scene = 'classic'; d.base = {}; Store.saveProfile(); App.go('hub'); }, oldDecorState);
 
       // 場景
       ok(`${tag} 預設為 classic 的 CSS 營地`, await page.evaluate(() => !document.querySelector('.scene-bg') && getComputedStyle(document.querySelector('.camp .ground')).display !== 'none'));

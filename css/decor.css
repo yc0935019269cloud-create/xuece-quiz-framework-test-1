@@ -18,7 +18,10 @@
 .camp.editing .decor-obj { touch-action: none; cursor: grab; }
 .camp.editing .decor-obj.sel { outline: 2px solid var(--gold); outline-offset: 2px; }
 .camp.editing .decor-obj.drag { cursor: grabbing; opacity: .85; }
-.camp.editing .camp-hero, .camp.editing .camp-pet, .camp.editing .camp-fire, .camp.editing .camp-board, .camp.editing .camp-mail, .camp.editing .camp-pot, .camp.editing .camp-pond { pointer-events: none; }
+.camp.editing .camp-obj[data-base] { touch-action: none; cursor: grab; }
+.camp.editing .camp-obj[data-base].sel { outline: 2px solid var(--gold); outline-offset: 2px; }
+.camp.editing .camp-obj[data-base].drag { cursor: grabbing; opacity: .85; }
+.camp.editing .camp-hero, .camp.editing .camp-pet { pointer-events: none; }
 
 .decor-drawer { margin: 8px 0 2px; padding: 10px; background: var(--panel2); border: 3px solid var(--line); box-shadow: inset 0 0 0 2px var(--hi); }
 .dc-dr-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }

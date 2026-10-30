@@ -387,9 +387,9 @@ const CampFun = (() => {
     X.petId = Store.profile.activePet; X.name = X.petId ? Store.petName(X.petId) : '';
     const sc = X.scene;
     sc.insertAdjacentHTML('beforeend', `
-      <div class="camp-obj camp-mail ${X.D.mail ? 'read' : ''}" id="cMail" title="信箱：每天一封信">${SP.pix('mailbox', 40)}<i class="flag-dot"></i></div>
-      <div class="camp-obj camp-pot" id="cPot" title="花盆：每天澆一次水"></div>
-      <div class="camp-obj camp-pond" id="cPond" title="池塘：點一下拋竿，上鉤時再點一下"><img class="px" src="${pondURL()}" alt=""></div>`);
+      <div class="camp-obj camp-mail ${X.D.mail ? 'read' : ''}" id="cMail" data-base="mail" title="信箱：每天一封信">${SP.pix('mailbox', 40)}<i class="flag-dot"></i></div>
+      <div class="camp-obj camp-pot" id="cPot" data-base="pot" title="花盆：每天澆一次水"></div>
+      <div class="camp-obj camp-pond" id="cPond" data-base="pond" title="池塘：點一下拋竿，上鉤時再點一下"><img class="px" src="${pondURL()}" alt=""></div>`);
     drawPot();
     U.$('#cMail', sc).onclick = e => { e.stopPropagation(); mail(); };
     U.$('#cPot', sc).onclick = e => { e.stopPropagation(); pot(); };

@@ -374,8 +374,8 @@ const Screens = (() => {
           ${dsc ? `<div class="scene-bg" style="background-image:url('${U.esc(dsc.file)}')"></div>` : ''}
           <div class="sky">${stars}<div class="celestial"></div><div class="cloud c1"></div><div class="cloud c2"></div></div>
           <div class="hill" style="background-image:url(${hillURL()})"></div><div class="ground"></div>
-          <div class="camp-obj camp-board" id="cBoard" title="每日任務">${SP.tile(63, 36)}</div>
-          <div class="camp-obj camp-fire" id="cFire"><div class="shadow"></div>${PetArt.html('campfire', 70, '', '', null, null, { still: 1 })}<div class="fire-glow"></div></div>
+          <div class="camp-obj camp-board" id="cBoard" data-base="board" title="每日任務">${SP.tile(63, 36)}</div>
+          <div class="camp-obj camp-fire" id="cFire" data-base="fire"><div class="shadow"></div>${PetArt.html('campfire', 70, '', '', null, null, { still: 1 })}<div class="fire-glow"></div></div>
           <div class="camp-obj camp-hero" id="cHero"><div class="shadow"></div>${FX.heroHD(Store.heroTile(), p.activeClass, 124)}</div>
           ${pet ? `<div class="camp-obj camp-pet ${tod === 'night' ? 'sleepy' : ''}" id="cPet" style="left:52%"><div class="shadow"></div>${Store.petHTML(p.activePet, 66)}<div class="zzz">z<sup>z</sup></div></div>` : ''}
         </div>
@@ -473,8 +473,8 @@ const Screens = (() => {
         petEl.style.left = nx + '%';
       }, 3200);
     }
-    DECOR.mount(U.$('#camp'), { bubble });
     CampFun.init({ scene: U.$('#camp'), petEl, heroEl, fireEl, tod, bubble, hearts, D, bar: U.$('#campBar') });
+    DECOR.mount(U.$('#camp'), { bubble });
   }
 
   /* ---------- 冒險地圖 ---------- */

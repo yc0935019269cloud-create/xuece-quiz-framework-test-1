@@ -24,3 +24,22 @@
   saw stale data. After the one seam correction, only the failed asset/data/
   browser steps were repeated. Passing text/build checks were not repeated.
   Execution history is in `output/playwright/decor-tod-final-checks.json`.
+
+## Draggable base objects (2026-10-30)
+
+- Board, campfire, mailbox, flower pot and pond can be dragged in edit mode.
+  Their saved coordinates use `profile.decor.base[key] = {x, y}`, the same
+  normalized ground-band coordinates and clamps as placed decor items.
+  Hero and pet stay outside the draggable set. The confirmed reset clears only
+  base positions; absent positions retain the original CSS layout.
+- Existing CSS zoom is preserved, and an observed camp resize reapplies saved
+  positions. Base selections have no remove or flip action. Normal interactions
+  remain attached; the camp capture handler blocks them in edit mode.
+- The requested one-pass browser QA produced 147/149 passes: desktop 109/109,
+  mobile 38/40. The mobile test attempted to tap the mailbox center, which is
+  obscured by the hero in the unchanged default layout; it then timed out while
+  waiting for a letter modal and stopped the remaining mobile cases. The test
+  helper was corrected to find a visible hit-testable point after that run;
+  the corrected helper and remaining mobile drag/reset cases have not been run.
+- Strict content build passed. No page errors were recorded before the test
+  stopped. See `qa.json` for the original run and its two failures.
