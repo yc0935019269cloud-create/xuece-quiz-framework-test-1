@@ -54,6 +54,11 @@ const LEARN_UI = (() => {
     return `<button type="button" class="px-btn small knowledge-star ${on ? 'gold' : ''}" data-knowledge-star="${U.esc(JSON.stringify(r))}" aria-pressed="${on}">${on ? (term ? '★ 已加星號' : '★ 已加入知識比較') : (term ? '☆ 加星號' : '☆ 加入知識比較')}</button>`;
   }
   const termRef = (p, l, s, pt) => ({ kind: 'term', p: p.id, l: l.id, img: s.img, name: pt.name });
+  // 總複習清單（termlist）的一列：收藏指向它第一張原圖的那一點；同一構造已在別張圖加過星號就顯示 ★、按了取消那一筆
+  function termStar(x) {
+    const refs = (x.views || []).filter(v => v.p && v.l && v.name).map(v => ({ kind: 'term', p: v.p, l: v.l, img: v.img, name: v.name }));
+    return refs.length ? starButton(refs.find(isStarred) || refs[0]) : '';
+  }
   function glossStar(entry, el) {
     const norm = s => String(s || '').normalize('NFKC').toLowerCase().replace(/[\s\-‐–—'’·・.,，、()（）]/g, '');
     const names = new Set([entry.zh, entry.en, ...(entry.match || [])].map(norm));
@@ -1273,7 +1278,7 @@ const LEARN_UI = (() => {
    * step: { img, points:[{x,y,name,desc}], mode:'both'|'explore'|'quiz', body, source }  x/y 為圖片寬高的百分比 */
   function renderTermlist(body, head, s) {
     const groups = s.groups || [];
-    body.innerHTML = head + `<h3>${U.esc(s.title || '構造清單')}</h3>${md(s.body || '')}<div class="term-tools"><label>搜尋 <input class="px-in term-search" type="search" placeholder="中文或 English"></label><button type="button" class="px-btn small term-open">全部展開</button><button type="button" class="px-btn small term-close">全部收起</button></div>` + groups.map((g, gi) => `<section class="term-group"><h4>${U.esc(g.name)}</h4>${g.note ? `<p>${U.esc(g.note)}</p>` : ''}${g.items.map((x, ii) => `<div class="term-item" data-gi="${gi}" data-ii="${ii}"><div class="term-row"><span>${x.star ? '⭐ ' : ''}${U.esc(x.zh)}${x.tag ? `<small>${U.esc(x.tag)}</small>` : ''}${x.count != null ? `<small>提及 ${x.count} 次</small>` : ''}</span><span>${U.esc(x.en)}</span><button type="button" class="px-btn small term-speak" aria-label="播放 ${U.esc(x.en)} 發音">🔊</button><button type="button" class="px-btn small term-toggle" aria-expanded="false">📍 位置</button></div><div class="term-views" hidden></div></div>`).join('')}</section>`).join('');
+    body.innerHTML = head + `<h3>${U.esc(s.title || '構造清單')}</h3>${md(s.body || '')}<div class="term-tools"><label>搜尋 <input class="px-in term-search" type="search" placeholder="中文或 English"></label><button type="button" class="px-btn small term-open">全部展開</button><button type="button" class="px-btn small term-close">全部收起</button></div>` + groups.map((g, gi) => `<section class="term-group"><h4>${U.esc(g.name)}</h4>${g.note ? `<p>${U.esc(g.note)}</p>` : ''}${g.items.map((x, ii) => `<div class="term-item" data-gi="${gi}" data-ii="${ii}"><div class="term-row"><span>${x.star ? '⭐ ' : ''}${U.esc(x.zh)}${termStar(x)}${x.tag ? `<small>${U.esc(x.tag)}</small>` : ''}${x.count != null ? `<small>提及 ${x.count} 次</small>` : ''}</span><span>${U.esc(x.en)}</span><button type="button" class="px-btn small term-speak" aria-label="播放 ${U.esc(x.en)} 發音">🔊</button><button type="button" class="px-btn small term-toggle" aria-expanded="false">📍 位置</button></div><div class="term-views" hidden></div></div>`).join('')}</section>`).join('');
     const setOpen = (row, open) => {
       const panel = row.querySelector('.term-views'), button = row.querySelector('.term-toggle');
       if (open && !panel.dataset.loaded) {

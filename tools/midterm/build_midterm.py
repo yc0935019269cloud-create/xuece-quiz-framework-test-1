@@ -80,7 +80,9 @@ for filename, pack in packs.items():
                 if is_approx: approximate[key].add(pt['name'] + ' — ' + step.get('title', '圖解'))
                 # 只標大致位置的點也列出，圖說註明「大致位置」（使用者要求視網膜四分支、虹膜大動脈環等加回）
                 if all(isinstance(pt.get(k), (int, float)) and 0 <= pt[k] <= 100 for k in ('x', 'y')):
-                    view = {'img': step['img'], 'x': pt['x'], 'y': pt['y'], 'title': (step.get('title') or '圖解') + ('（紅圈為大致位置）' if is_approx else ''), 'from': pack['title'] + ' › ' + lesson['title']}
+                    view = {'img': step['img'], 'x': pt['x'], 'y': pt['y'], 'title': (step.get('title') or '圖解') + ('（紅圈為大致位置）' if is_approx else ''), 'from': pack['title'] + ' › ' + lesson['title'],
+                            # 星號收藏用：指回原圖鑑的那一點（同 learn.js termRef）
+                            'p': pack['id'], 'l': lesson['id'], 'name': pt['name']}
                     if not any((v['img'], v['x'], v['y']) == (view['img'], view['x'], view['y']) for v in entry['views']): entry['views'].append(view)
                 if key not in packkeys[filename]:
                     packkeys[filename].append(key)
@@ -218,7 +220,7 @@ for lid, title, groups, intro in [
     assert ids, lid
     lessons.append({'id': lid, 'title': title, 'steps': [
         {'type': 'intro', 'title': title, 'body': intro + '\n\n清單可搜尋、聽英文與展開各圖位置，再用紅圈題練習。'},
-        {'type': 'termlist', 'title': '構造總清單', 'body': '⭐ 標記老師提及會考；按位置查看各張圖。', 'groups': groups},
+        {'type': 'termlist', 'title': '構造總清單', 'body': '⭐＝老師說會考｜名稱旁的 ☆ 點了收進知識筆記的星號收藏（連原圖）｜📍 位置看各張圖。', 'groups': groups},
         {'type': 'practice', 'title': '跑台模擬', 'qids': ids},
         {'type': 'recap', 'points': ['先辨認圖的方向，再找相鄰構造。', '練習同時寫出中文與英文。', '換不同切面與模型再確認一次。']}
     ]})
