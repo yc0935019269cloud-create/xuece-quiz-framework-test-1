@@ -494,10 +494,10 @@ const LEARN_UI = (() => {
     if (p.subject !== 'eye_anat') return path;
     const name = C.SUBJECTS[p.subject]?.name || '眼解剖實驗';
     const relative = path[0] === name || path[0] === p.subject ? path.slice(1) : path;
-    return ['實驗課（依老師講義）', '實驗手冊名詞（考試範圍）', '其他'].includes(relative[0]) ? path : [name, '其他', ...relative];
+    return ['期中總複習', '實驗課（依老師講義）', '實驗手冊名詞（考試範圍）', '其他'].includes(relative[0]) ? path : [name, '其他', ...relative];
   };
   const sortLabBranches = tree => {
-    const lab = tree.find(x => x.s === 'eye_anat'), order = ['實驗課（依老師講義）', '實驗手冊名詞（考試範圍）', '其他'];
+    const lab = tree.find(x => x.s === 'eye_anat'), order = ['期中總複習', '實驗課（依老師講義）', '實驗手冊名詞（考試範圍）', '其他'];
     if (lab) lab.kids.sort((a, b) => (order.includes(a.name) ? order.indexOf(a.name) : 3) - (order.includes(b.name) ? order.indexOf(b.name) : 3));
   };
   let searchQ = '';
