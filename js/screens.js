@@ -306,6 +306,29 @@ const Screens = (() => {
   const GIFTS = [
     { id: 'skin-voucher-2026-10-05', vouchers: 1, title: '限時贈禮：新造型兌換券 ×1，可任選一款新造型！' }
   ];
+  /* 更新公告：每個 id 每個存檔只彈出一次（記在 profile.newsSeen）；之後要再公告就加一筆新 id */
+  const NEWS = [
+    { id: 'decor-shop-2026-10-31', title: '🛍 更新公告：背景商店開張！', go: 'decor', goLabel: '🛍 去背景商店', body: `
+      <p>營地可以自己布置了！用魂晶買物件、抽卡，把營地布置成你喜歡的樣子。</p>
+      <p class="gold-t mt">📍 在哪裡？</p>
+      <ul class="small-t"><li>營地上方的「🛍 商店」按鈕</li><li>或營地選單「🧙 角色與收藏」→「背景商店」</li></ul>
+      <p class="gold-t mt">✨ 新功能</p>
+      <ul class="small-t">
+        <li><b>66 件物件、6 個系列</b>：木屋小窩、森林精靈、學院書房、海濱假日、和風庭園、星辰魔法，分 N／R／SR／SSR 稀有度，也有會抽到的雜物。</li>
+        <li><b>三個卡池</b>：單抽 20、十連 180 魂晶（十連保證 SR 以上），每池 60 抽保底 SSR。</li>
+        <li><b>碎片解鎖</b>：抽到同一件累積碎片，湊滿才解鎖；再湊滿可以多擺一件。部分 N／R 物件可直接買。</li>
+        <li><b>8 張場景</b>：有的直接買、有的要抽；每張都有早晨、白天、黃昏、夜晚四種樣貌，依時間變化。營地上方「🖼 場景」切換。</li>
+        <li><b>🛠 布置營地</b>：拖曳擺放、翻轉、收回物件；篝火、池塘、信箱、花盆、告示板、勇者和夥伴也能移動，「↺ 基本物件回原位」可一鍵還原。</li>
+      </ul>
+      <p class="small-t dim mt">另外：彈珠刷題、彈珠學習要先登入雲端同步才能玩；學習模式、自由遠征、彈珠模式賺的魂晶也提高了。</p>` }
+  ];
+  function newsModal() {
+    const p = P(), seen = p.newsSeen || [];
+    const n = NEWS.find(x => !seen.includes(x.id));
+    if (!n || U.$('#modalRoot').children.length) return;
+    p.newsSeen = seen.concat(n.id); Store.saveProfile();
+    U.modal({ title: n.title, body: n.body, contained: true, buttons: [{ label: '知道了' }, { label: n.goLabel, cls: 'gold', onClick: () => App.go(n.go) }] });
+  }
   function hub() {
     clearInterval(campTimer);
     const p = P(), run = Store.loadRun();
@@ -475,6 +498,7 @@ const Screens = (() => {
     }
     CampFun.init({ scene: U.$('#camp'), petEl, heroEl, fireEl, tod, bubble, hearts, D, bar: U.$('#campBar') });
     DECOR.mount(U.$('#camp'), { bubble });
+    newsModal();
   }
 
   /* ---------- 冒險地圖 ---------- */

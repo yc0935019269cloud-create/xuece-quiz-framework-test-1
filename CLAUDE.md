@@ -549,3 +549,13 @@
 - 理由：使用者覺得學習模式與自由遠征比深淵少太多，所以把兩者拉到和調降後的深淵同一個級距；學習模式的戰鬥擊殺／寶箱魂晶（1～3）沒改。彈珠比同類模式略低（還要花時間發射）。
 - 防刷：學習模式回顧頁不 tally、不計分；複習盒不變（每 5 張 1）。彈珠：答錯、閱讀頁、回顧頁、課後複習輪、`test: true` 都不給；同場同題一次；12 小時內已在彈珠拿過的題目（`profile.peglinGem`）不再給。彈珠 HUD「💎 魂晶 +N」、結束畫面、完成一課提示會顯示。本機啟動器舊流程仍答對 +1。
 - QA：`tools/peglin-web-qa/gems.cjs`（離線、模擬登入、不載入真遊戲）13／13，結果 `docs/peglin-web/gems-qa.json`；`learn-nav.cjs`、`learn-battle-pin-qa/check.cjs` 回歸通過。每分鐘收益是估算，沒有用真玩家實測。
+
+## AI-Brain 知識庫指引
+- 改程式或內容前，先讀 E:\AI-Brain\02-Projects\刷題庫框架\index.md，依「需求 → 去哪裡」只讀需要的檔案片段；細節查同資料夾的 auto-* 索引。
+- 完成修改後：
+  1. 執行 `python E:\AI-Brain\_scripts\gen_quiz_index.py` 重跑索引產生器（約 1 秒）。
+  2. 有實質更新時，更新 E:\AI-Brain\02-Projects\刷題庫框架\status.md（必要時 decisions.md、index.md），並在 E:\AI-Brain\99-Changelog.md 加一行「- 日期 專案：一句話」。
+
+## 更新公告彈窗（2026-10-31，v170）
+
+- `js/screens.js` 的 `NEWS` 清單＋`newsModal()`：進營地時若有沒看過的公告就彈出一次（記在 `profile.newsSeen`，跟著存檔／雲端同步，換裝置不會再跳）；已有其他視窗開著時不彈。第一則是背景商店開張（位置、卡池、碎片、四時段場景、布置與拖曳），附「去背景商店」按鈕。之後要公告就加一筆新 id（舊 id 不要改）。
