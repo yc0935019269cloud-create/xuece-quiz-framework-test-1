@@ -51,7 +51,7 @@ def exclude(zh, en):
         return '靜脈或硬膜靜脈竇'
     if re.search(r'神經核|nucleus|nuclei|神經節細胞|細胞|受器|receptor', text, re.I) and not re.search(r'外側膝狀體|lateral geniculate', text, re.I):
         return '神經核或細胞等無法在跑台大體標本辨識'
-    if re.search(r'神經纖維層|photoreceptor layer|神經節細胞層|retinal pigment epithelium|微血管|capillary|小動脈|arteriole|自主神經叢|神經叢|plexus|動脈環|arterial circle|視神經血管環|circle of zinn|內側縱束|medial longitudinal fasciculus|gennari', text, re.I):
+    if re.search(r'神經纖維層|photoreceptor layer|神經節細胞層|retinal pigment epithelium|微血管|capillary|自主神經叢|神經叢|plexus|視神經血管環|circle of zinn|內側縱束|medial longitudinal fasciculus|gennari', text, re.I):
         return '細微構造或僅可標大致位置，跑台大體標本無法可靠辨識'
     return ''
 
@@ -78,14 +78,16 @@ for filename, pack in packs.items():
                 entry = registry.setdefault(key, {'zh': zh, 'en': en, 'views': []})
                 is_approx = bool(re.search(r'大致|概略|約略', pt.get('desc', '')))
                 if is_approx: approximate[key].add(pt['name'] + ' — ' + step.get('title', '圖解'))
-                if not is_approx and all(isinstance(pt.get(k), (int, float)) and 0 <= pt[k] <= 100 for k in ('x', 'y')):
-                    view = {'img': step['img'], 'x': pt['x'], 'y': pt['y'], 'title': step.get('title') or '圖解', 'from': pack['title'] + ' › ' + lesson['title']}
+                # 只標大致位置的點也列出，圖說註明「大致位置」（使用者要求視網膜四分支、虹膜大動脈環等加回）
+                if all(isinstance(pt.get(k), (int, float)) and 0 <= pt[k] <= 100 for k in ('x', 'y')):
+                    view = {'img': step['img'], 'x': pt['x'], 'y': pt['y'], 'title': (step.get('title') or '圖解') + ('（紅圈為大致位置）' if is_approx else ''), 'from': pack['title'] + ' › ' + lesson['title']}
                     if not any((v['img'], v['x'], v['y']) == (view['img'], view['x'], view['y']) for v in entry['views']): entry['views'].append(view)
                 if key not in packkeys[filename]:
                     packkeys[filename].append(key)
 
 for key, views in approximate.items():
-    excluded['僅標示概略位置的圖位，未作精確紅圈'].update(views)
+    excluded['僅標示概略位置的圖位（照列，圖說註明大致位置）'].update(views)
+    registry[key]['views'].sort(key=lambda v: '大致位置' in v['title'])
     if not registry[key]['views']:
         excluded['所有來源都僅標示概略位置，未列構造'].add(registry[key]['zh'] + ' / ' + registry[key]['en'])
         for keys in packkeys.values():
@@ -165,10 +167,15 @@ alias_keys = defaultdict(set)
 for key, d in all_candidates.items():
     for v in variants(key, d): alias_keys[v.lower()].add(key)
 alias_keys = {v: next(iter(ks)) for v, ks in alias_keys.items() if len(ks) == 1}
+# 上課常只說「顳上、鼻下」：四分支的簡稱也算（後面接「靜脈」的在計數前先遮掉）
+for short, full in (('顳上', '顳上動脈'), ('顳下', '顳下動脈'), ('鼻上', '鼻上動脈'), ('鼻下', '鼻下動脈')):
+    k = next((k for k, d in all_candidates.items() if d['zh'] == full), None)
+    if k: alias_keys[short] = k
 patterns = [((r'(?<![a-z])' + re.escape(v) + r'(?![a-z])') if v.isascii() else re.escape(v)) for v in sorted(alias_keys, key=len, reverse=True)]
 matcher = re.compile('|'.join(patterns), re.I)
 for title, codes in [('眼球血液供應', ('100501', '101201', '101202')), ('眼球自主神經系統', ('090701', '090702', '091401', '091402'))]:
     text = '\n'.join(texts[c] for c in codes)
+    text = re.sub(r'(顳上|顳下|鼻上|鼻下)靜脈', '〔靜脈〕', text)
     counts = defaultdict(int)
     for m in matcher.finditer(text): counts[alias_keys[m.group().lower()]] += 1
     found = []
