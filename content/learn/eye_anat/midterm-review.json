@@ -412,7 +412,6 @@
                       "name": "蝶骨小翼 lesser wing of sphenoid bone"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -460,7 +459,6 @@
                       "name": "蝶骨大翼 greater wing of sphenoid bone"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -546,7 +544,6 @@
                       "name": "蝶鞍 sella turcica"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -574,6 +571,7 @@
                       "name": "眶上孔 supraorbital foramen"
                     }
                   ],
+                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -611,6 +609,7 @@
                       "name": "眶下孔 infraorbital foramen"
                     }
                   ],
+                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -927,7 +926,6 @@
                       "name": "額竇 frontal sinus"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -997,8 +995,7 @@
                       "l": "l1",
                       "name": "上直肌 superior rectus"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "提上眼瞼肌",
@@ -1060,8 +1057,7 @@
                       "l": "l1",
                       "name": "上斜肌 superior oblique"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "滑車",
@@ -1113,8 +1109,7 @@
                       "l": "l2",
                       "name": "外直肌 lateral rectus"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "內直肌",
@@ -1462,7 +1457,6 @@
                       "name": "大腦前動脈 anterior cerebral artery"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -1497,7 +1491,6 @@
                       "name": "大腦中動脈 middle cerebral artery"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -1620,7 +1613,6 @@
                       "name": "前脈絡叢動脈 anterior choroidal artery"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -1658,7 +1650,6 @@
                       "name": "眼動脈 ophthalmic artery"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -2115,6 +2106,7 @@
                       "name": "視神經盤 optic disc"
                     }
                   ],
+                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -2313,6 +2305,7 @@
                       "name": "眼神經 ophthalmic nerve"
                     }
                   ],
+                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -2434,7 +2427,6 @@
                       "name": "中腦膜動脈 middle meningeal artery"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -2894,7 +2886,6 @@
                       "name": "視神經 optic nerve"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -2942,7 +2933,6 @@
                       "name": "視束 optic tract"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -2997,7 +2987,6 @@
                       "name": "梅氏環 Meyer's loop"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -3025,7 +3014,6 @@
                       "name": "視放射 optic radiation"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -3043,7 +3031,6 @@
                       "name": "鮑氏環 Baum's loop"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -3119,7 +3106,6 @@
                       "name": "頂枕溝 parieto-occipital sulcus"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -3157,7 +3143,6 @@
                       "name": "距狀溝 calcarine sulcus"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -3175,7 +3160,6 @@
                       "name": "中央溝 central sulcus"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 }
               ]
@@ -3207,8 +3191,7 @@
                       "l": "l1",
                       "name": "中腦 midbrain"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "橋腦",
@@ -3254,8 +3237,7 @@
                       "l": "l4",
                       "name": "橋腦 pons"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "延腦",
@@ -3281,8 +3263,7 @@
                       "l": "l1",
                       "name": "延腦 medulla"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "丘腦",
@@ -3335,7 +3316,6 @@
                       "name": "上丘（核） superior colliculus"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -3353,7 +3333,6 @@
                       "name": "下丘 inferior colliculus"
                     }
                   ],
-                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -3396,8 +3375,7 @@
                       "l": "l1",
                       "name": "睫狀神經節 ciliary ganglion"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "睫狀短神經",
@@ -3413,8 +3391,7 @@
                       "l": "l3",
                       "name": "睫狀短神經 short ciliary nerve"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "睫狀長神經",
@@ -3430,8 +3407,7 @@
                       "l": "l3",
                       "name": "睫狀長神經 long ciliary nerve"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "鼻睫神經",
@@ -3516,8 +3492,7 @@
                       "l": "l2",
                       "name": "三叉神經（CN V） trigeminal nerve"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "眼神經",
@@ -3544,6 +3519,7 @@
                       "name": "眼神經 ophthalmic nerve"
                     }
                   ],
+                  "star": true,
                   "tag": "實驗課也有"
                 },
                 {
@@ -3673,8 +3649,7 @@
                       "l": "l1",
                       "name": "淚腺 lacrimal gland"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "淚點",
@@ -3879,6 +3854,7 @@
                       "name": "視神經盤 optic disc"
                     }
                   ],
+                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -3923,8 +3899,7 @@
                       "l": "l1",
                       "name": "硬腦膜 dura mater"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "黃斑部",
@@ -4192,7 +4167,6 @@
                       "name": "視神經 optic nerve"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -4308,7 +4282,6 @@
                       "name": "視束 optic tract"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -4405,7 +4378,6 @@
                       "name": "視放射 optic radiation"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -4461,7 +4433,6 @@
                       "name": "梅氏環 Meyer's loop"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -4479,7 +4450,6 @@
                       "name": "鮑氏環 Baum's loop"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -4565,7 +4535,6 @@
                       "name": "蝶鞍 sella turcica"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -4641,7 +4610,6 @@
                       "name": "頂枕溝 parieto-occipital sulcus"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -4679,7 +4647,6 @@
                       "name": "距狀溝 calcarine sulcus"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -4750,7 +4717,8 @@
                       "l": "l3",
                       "name": "初級視覺皮質 primary visual cortex"
                     }
-                  ]
+                  ],
+                  "star": true
                 },
                 {
                   "zh": "額葉",
@@ -4782,8 +4750,7 @@
                       "l": "l3",
                       "name": "頂葉 parietal lobe"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "顳葉",
@@ -4799,8 +4766,7 @@
                       "l": "l3",
                       "name": "顳葉 temporal lobe"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "枕葉",
@@ -4816,8 +4782,7 @@
                       "l": "l3",
                       "name": "枕葉 occipital lobe"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "中央溝",
@@ -4834,7 +4799,6 @@
                       "name": "中央溝 central sulcus"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -4851,8 +4815,7 @@
                       "l": "l3",
                       "name": "大腦縱裂 longitudinal cerebral fissure"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "大腦半球",
@@ -4868,8 +4831,7 @@
                       "l": "l3",
                       "name": "大腦半球 cerebral hemisphere"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "側腦室",
@@ -4895,8 +4857,7 @@
                       "l": "l6",
                       "name": "側腦室 lateral ventricle"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "上丘",
@@ -4923,7 +4884,6 @@
                       "name": "上丘（核） superior colliculus"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -4941,7 +4901,6 @@
                       "name": "下丘 inferior colliculus"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 }
               ]
@@ -5355,7 +5314,6 @@
                       "name": "蝶骨小翼 lesser wing of sphenoid bone"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -5403,7 +5361,6 @@
                       "name": "蝶骨大翼 greater wing of sphenoid bone"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -5459,6 +5416,7 @@
                       "name": "眶上孔 supraorbital foramen"
                     }
                   ],
+                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -5496,6 +5454,7 @@
                       "name": "眶下孔 infraorbital foramen"
                     }
                   ],
+                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -5785,8 +5744,7 @@
                       "l": "l2",
                       "name": "圓孔 foramen rotundum"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "卵圓孔",
@@ -5842,8 +5800,7 @@
                       "l": "l2",
                       "name": "卵圓孔 foramen ovale"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "棘孔",
@@ -5889,8 +5846,7 @@
                       "l": "l2",
                       "name": "棘孔 foramen spinosum"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "蝶鞍",
@@ -5947,7 +5903,6 @@
                       "name": "蝶鞍 sella turcica"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -5964,8 +5919,7 @@
                       "l": "l2",
                       "name": "蝶骨體 body of sphenoid bone"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "雞冠",
@@ -6033,8 +5987,7 @@
                       "l": "l3",
                       "name": "嗅孔 olfactory foramina"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "破裂孔",
@@ -6060,8 +6013,7 @@
                       "l": "l4",
                       "name": "破裂孔 foramen lacerum"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "內耳道",
@@ -6077,8 +6029,7 @@
                       "l": "l3",
                       "name": "內耳道 internal acoustic meatus"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "頸靜脈孔",
@@ -6104,8 +6055,7 @@
                       "l": "l4",
                       "name": "頸靜脈孔 jugular foramen"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "舌下神經管",
@@ -6131,8 +6081,7 @@
                       "l": "l4",
                       "name": "舌下神經管 hypoglossal canal"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "枕骨大孔",
@@ -6168,8 +6117,7 @@
                       "l": "l2",
                       "name": "枕骨大孔 foramen magnum"
                     }
-                  ],
-                  "star": true
+                  ]
                 },
                 {
                   "zh": "門齒孔",
@@ -6728,7 +6676,6 @@
                       "name": "額竇 frontal sinus"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -6913,7 +6860,6 @@
                       "name": "大腦前動脈 anterior cerebral artery"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -6948,7 +6894,6 @@
                       "name": "大腦中動脈 middle cerebral artery"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -7071,7 +7016,6 @@
                       "name": "前脈絡叢動脈 anterior choroidal artery"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -7109,7 +7053,6 @@
                       "name": "眼動脈 ophthalmic artery"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -7566,6 +7509,7 @@
                       "name": "視神經盤 optic disc"
                     }
                   ],
+                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -7764,6 +7708,7 @@
                       "name": "眼神經 ophthalmic nerve"
                     }
                   ],
+                  "star": true,
                   "tag": "手冊也有"
                 },
                 {
@@ -7885,7 +7830,6 @@
                       "name": "中腦膜動脈 middle meningeal artery"
                     }
                   ],
-                  "star": true,
                   "tag": "手冊也有"
                 },
                 {

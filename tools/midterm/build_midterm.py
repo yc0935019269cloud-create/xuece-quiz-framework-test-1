@@ -9,7 +9,6 @@ ROOT = Path(__file__).resolve().parents[2]
 ATLAS = ROOT / 'content/learn/eye_anat'
 EXTERNAL = Path('E:/NEWTEST/eye_work/atlas/names.py')
 TRANSCRIPTS = Path('E:/學習/大二上/眼解剖/逐字稿/校訂逐字稿/20261016_眼解剖_Turbo_01')
-STAR_FILE = Path('E:/學習/大二上/眼解剖實驗/逐字稿/會考的.html')
 OUT = ATLAS / 'midterm-review.json'
 REPORT = ROOT / 'tmp/midterm/selfcheck.md'
 spec = importlib.util.spec_from_file_location('atlas_names', EXTERNAL)
@@ -96,16 +95,28 @@ for key, views in approximate.items():
             if key in keys: keys.remove(key)
         del registry[key]
 
-raw = STAR_FILE.read_text(encoding='utf-8')
-stars = json.loads(re.search(r'<script id="termData" type="application/json">(.*?)</script>', raw, re.S).group(1))['terms']
+# ⭐＝實驗課老師在逐字稿裡明說會考／考試考（2026-10-30 使用者：《會考的.html》是自己勾的，不採用）。
+# 來源：E:\學習\大二上\眼解剖實驗\逐字稿\校訂逐字稿\20261016_眼解剖實驗_Turbo_01\<檔>\校訂逐字稿.txt 行號
+LAB = '眼解剖實驗逐字稿 '
+LAB_EXAM = [
+    (r'^(額骨|蝶骨|顴骨|上[頜頷]骨|[腭顎]骨|淚骨|篩骨)$', LAB + '252005 5 L407「這七塊骨頭我考…考試都會考」'),
+    (r'^(視神經管|眶上裂|眶下裂|眶上孔|眶上切跡|眶下孔|眶下管|眶下溝|篩前孔|篩後孔|鼻淚管)', LAB + '252005 5 L117「孔洞的名稱跟透過的構造…國考」'),
+    (r'^(上[頜頷]竇|篩竇)$', LAB + '252005 5 L348「考試問你誰容易骨折：下方、內側」'),
+    (r'^頸內動脈$', LAB + '252005 5 L423「頸內動脈…國考都會考」'),
+    (r'^視神經(眼內段|眶內段|管內段|顱內段)|^視乳頭', LAB + '252005 8 L57 視神經四段「考試都有考」'),
+    (r'^視神經盤$', LAB + '252005 8 L84「考這個白色的構造，不能寫視神經」'),
+    (r'^(視交叉|腦下垂體|蝶竇)$', LAB + '54 L131–141「視交叉剛考試有考…真人、模型都會考」'),
+    (r'^(舌回|楔葉|楔狀葉)$', LAB + '55 L100「考試問你舌回受損影響上方還是下方視野」'),
+    (r'^(初級)?視覺皮質$|^紋狀皮質$', LAB + '55 L81「考試問你哪級腦區，寫紋狀皮質沒分」'),
+    (r'^(鼻睫神經|額神經|淚神經|淚腺神經|滑車神經|動眼神經|外旋神經|外展神經|總腱環|肌腱環)', LAB + '56 L48–194「國考有考 肌腱環內外」「裡面的神經都要看得出來…考第幾對」'),
+    (r'^(眼神經|上[頜頷]神經)', LAB + '57 L18–29「考的是海綿竇跟神經的關係」（外側壁 III、IV、V1、V2，穿過 VI）'),
+]
 star_keys = defaultdict(list)
 unmatched_stars = []
-for term in stars:
-    key = identify(term['zh'], term['en'])
-    if key in registry:
-        star_keys[key].append(term['zh'] + ' / ' + term['en'])
-    else:
-        unmatched_stars.append(term['zh'] + ' / ' + term['en'])
+for pat, src in LAB_EXAM:
+    hit = [k for k, d in registry.items() if re.search(pat, d['zh'])]
+    for k in hit: star_keys[k].append(src)
+    if not hit: unmatched_stars.append(src)
 
 manual_files = ['lab-manual-orbit', 'lab-manual-lid', 'lab-manual-vessel', 'lab-manual-visual', 'lab-manual-brain', 'lab-manual-tear']
 lab_files = ['lab-visual-path', 'lab-orbit', 'lab-blood']
