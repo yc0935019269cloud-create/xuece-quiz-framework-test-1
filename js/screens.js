@@ -376,8 +376,8 @@ const Screens = (() => {
           <div class="hill" style="background-image:url(${hillURL()})"></div><div class="ground"></div>
           <div class="camp-obj camp-board" id="cBoard" data-base="board" title="每日任務">${SP.tile(63, 36)}</div>
           <div class="camp-obj camp-fire" id="cFire" data-base="fire"><div class="shadow"></div>${PetArt.html('campfire', 70, '', '', null, null, { still: 1 })}<div class="fire-glow"></div></div>
-          <div class="camp-obj camp-hero" id="cHero"><div class="shadow"></div>${FX.heroHD(Store.heroTile(), p.activeClass, 124)}</div>
-          ${pet ? `<div class="camp-obj camp-pet ${tod === 'night' ? 'sleepy' : ''}" id="cPet" style="left:52%"><div class="shadow"></div>${Store.petHTML(p.activePet, 66)}<div class="zzz">z<sup>z</sup></div></div>` : ''}
+          <div class="camp-obj camp-hero" id="cHero" data-base="hero"><div class="shadow"></div>${FX.heroHD(Store.heroTile(), p.activeClass, 124)}</div>
+          ${pet ? `<div class="camp-obj camp-pet ${tod === 'night' ? 'sleepy' : ''}" id="cPet" data-base="pet" style="left:52%"><div class="shadow"></div>${Store.petHTML(p.activePet, 66)}<div class="zzz">z<sup>z</sup></div></div>` : ''}
         </div>
         <div class="decor-drawer" id="decorDrawer" hidden></div>
         <div class="camp-bar" id="campBar"></div>
@@ -465,7 +465,7 @@ const Screens = (() => {
       campTimer = setInterval(() => {
         if (!document.body.contains(petEl)) { clearInterval(campTimer); return; }
         if (timeOfDay() !== tod) { hub(); return; }
-        if (petEl.dataset.busy || CampFun.tick()) return;
+        if (petEl.dataset.busy || U.$('#camp')?.classList.contains('editing') || CampFun.tick()) return;
         if (tod === 'night' && U.chance(0.7)) { petEl.classList.add('sleepy'); return; }
         petEl.classList.remove('sleepy');
         const cur = parseFloat(petEl.style.left) || 52, nx = U.rnd(40, 68);

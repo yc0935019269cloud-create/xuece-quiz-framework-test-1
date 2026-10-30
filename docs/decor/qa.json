@@ -1,12 +1,12 @@
 {
- "at": "2026-10-30T15:35:46.541Z",
+ "at": "2026-10-30T16:53:25.500Z",
  "realData": true,
  "supplementedFromFixture": {
   "scenes": 0,
   "items": 0
  },
- "pass": 218,
- "total": 218,
+ "pass": 228,
+ "total": 228,
  "errors": [],
  "results": [
   {
@@ -170,11 +170,15 @@
    "pass": true
   },
   {
+   "name": "[1100] hero still talks outside edit mode",
+   "pass": true
+  },
+  {
    "name": "[1100] clicking base objects in edit mode suppresses camp interactions",
    "pass": true
   },
   {
-   "name": "[1100] hero and pet are not draggable",
+   "name": "[1100] hero and pet are draggable in edit mode",
    "pass": true
   },
   {
@@ -195,6 +199,14 @@
   },
   {
    "name": "[1100] classic pond responds to mouse drag without a remove button",
+   "pass": true
+  },
+  {
+   "name": "[1100] classic hero responds to mouse drag without a remove button",
+   "pass": true
+  },
+  {
+   "name": "[1100] classic pet responds to mouse drag without a remove button",
    "pass": true
   },
   {
@@ -231,6 +243,14 @@
   },
   {
    "name": "[1100] scene_beach pond responds to mouse drag without a remove button",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_beach hero responds to mouse drag without a remove button",
+   "pass": true
+  },
+  {
+   "name": "[1100] scene_beach pet responds to mouse drag without a remove button",
    "pass": true
   },
   {
@@ -606,11 +626,15 @@
    "pass": true
   },
   {
+   "name": "[390] hero still talks outside edit mode",
+   "pass": true
+  },
+  {
    "name": "[390] clicking base objects in edit mode suppresses camp interactions",
    "pass": true
   },
   {
-   "name": "[390] hero and pet are not draggable",
+   "name": "[390] hero and pet are draggable in edit mode",
    "pass": true
   },
   {
@@ -631,6 +655,14 @@
   },
   {
    "name": "[390] classic pond responds to touch drag without a remove button",
+   "pass": true
+  },
+  {
+   "name": "[390] classic hero responds to touch drag without a remove button",
+   "pass": true
+  },
+  {
+   "name": "[390] classic pet responds to touch drag without a remove button",
    "pass": true
   },
   {
@@ -667,6 +699,14 @@
   },
   {
    "name": "[390] scene_beach pond responds to touch drag without a remove button",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_beach hero responds to touch drag without a remove button",
+   "pass": true
+  },
+  {
+   "name": "[390] scene_beach pet responds to touch drag without a remove button",
    "pass": true
   },
   {

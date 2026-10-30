@@ -207,6 +207,8 @@ const realData = fs.existsSync(path.join(ROOT, 'js/decor-data.js'));
 
       // Base objects: compare old-save defaults to the committed pre-change code,
       // then drag each object using actual mouse or touch pointer input.
+      // Make sure a pet is in the camp so pet dragging is covered.
+      await page.evaluate(() => { const p = Store.profile; if (!p.activePet) { p.pets.luckycat = p.pets.luckycat || { lv: 1, xp: 0 }; p.activePet = 'luckycat'; p.starterPicked = true; Store.saveProfile(); } App.go('hub'); });
       const oldDecorState = await page.evaluate(() => {
         const d = DECOR.ensure(), saved = { scenes: d.scenes.slice(), placed: d.placed.slice() };
         d.placed = []; if (!d.scenes.includes('scene_beach')) d.scenes.push('scene_beach'); delete d.base;
@@ -216,11 +218,14 @@ const realData = fs.existsSync(path.join(ROOT, 'js/decor-data.js'));
       let oldDecorServed = false;
       ref.on('pageerror', e => errors.push(tag + ' reference ' + String(e)));
       await ref.route('**/js/decor.js?*', route => { oldDecorServed = true; return route.fulfill({ status: 200, contentType: 'text/javascript', body: originalDecor }); });
-      const baseKeys = ['board', 'fire', 'mail', 'pot', 'pond'];
+      // The hero stands still, so its box is compared like the base objects; the pet wanders, so it is checked by saved position.
+      const baseKeys = ['board', 'fire', 'mail', 'pot', 'pond', 'hero'];
+      const hasPet = await page.evaluate(() => !!document.querySelector('#cPet'));
+      const dragKeys = hasPet ? [...baseKeys, 'pet'] : baseKeys;
       const boxes = async p => p.evaluate(() => {
         const c = document.querySelector('#camp').getBoundingClientRect();
-        return Object.fromEntries([...document.querySelectorAll('#camp .camp-obj[data-base]')].map(e => {
-          const r = e.getBoundingClientRect(); return [e.dataset.base, { left: r.left - c.left, bottom: c.bottom - r.bottom, width: r.width, height: r.height }];
+        return Object.fromEntries([...document.querySelectorAll('#camp .camp-obj[data-base], #cHero')].map(e => {
+          const r = e.getBoundingClientRect(); return [e.dataset.base || 'hero', { left: r.left - c.left, bottom: c.bottom - r.bottom, width: r.width, height: r.height }];
         }));
       });
       const sameBoxes = (a, b) => baseKeys.every(k => a[k] && b[k] && ['left', 'bottom', 'width', 'height'].every(v => Math.abs(a[k][v] - b[k][v]) < 1));
@@ -269,30 +274,40 @@ const realData = fs.existsSync(path.join(ROOT, 'js/decor-data.js'));
           if (await page.$('.modal .letter')) await page.click('.modal .px-btn.gold');
           await pointer('#cPot');
           ok(`${tag} flower pot still waters outside edit mode`, await page.evaluate(() => !!document.querySelector('#cPot .water-fx')));
+          await page.evaluate(() => document.querySelectorAll('#camp .bubble').forEach(b => b.remove()));
+          await pointer('#cHero');
+          ok(`${tag} hero still talks outside edit mode`, await page.evaluate(() => document.querySelector('#cHero').classList.contains('hop') && !!document.querySelector('#camp .bubble')));
           await page.evaluate(() => App.go('hub'));
         }
         await page.click('#decorEdit');
         if (sceneId === 'classic') {
           await page.evaluate(() => { document.querySelector('#daily').classList.remove('pulse'); document.querySelector('#cFire').classList.remove('flare'); });
-          for (const id of ['cFire', 'cBoard', 'cPond', 'cMail', 'cPot']) await pointer('#' + id);
-          ok(`${tag} clicking base objects in edit mode suppresses camp interactions`, await page.evaluate(() => !document.querySelector('#cFire').classList.contains('flare') && !document.querySelector('#daily').classList.contains('pulse') && !document.querySelector('#cPond .bobber') && !document.querySelector('#cPot .water-fx') && !document.querySelector('#camp .bubble') && !document.querySelector('.modal')));
-          ok(`${tag} hero and pet are not draggable`, await page.evaluate(() => !document.querySelector('#cHero').hasAttribute('data-base') && (!document.querySelector('#cPet') || !document.querySelector('#cPet').hasAttribute('data-base')) && getComputedStyle(document.querySelector('#cHero')).pointerEvents === 'none'));
+          await page.evaluate(() => { document.querySelectorAll('#camp .bubble').forEach(b => b.remove()); document.querySelector('#cHero').classList.remove('hop'); });
+          for (const id of ['cFire', 'cBoard', 'cPond', 'cMail', 'cPot', 'cHero', ...(hasPet ? ['cPet'] : [])]) await pointer('#' + id);
+          ok(`${tag} clicking base objects in edit mode suppresses camp interactions`, await page.evaluate(() => !document.querySelector('#cHero').classList.contains('hop') && !document.querySelector('#cFire').classList.contains('flare') && !document.querySelector('#daily').classList.contains('pulse') && !document.querySelector('#cPond .bobber') && !document.querySelector('#cPot .water-fx') && !document.querySelector('#camp .bubble') && !document.querySelector('.modal')));
+          ok(`${tag} hero and pet are draggable in edit mode`, await page.evaluate(() => document.querySelector('#cHero').dataset.base === 'hero' && (!document.querySelector('#cPet') || document.querySelector('#cPet').dataset.base === 'pet') && getComputedStyle(document.querySelector('#cHero')).pointerEvents !== 'none'), { hasPet });
         }
-        for (const key of baseKeys) {
+        for (const key of dragKeys) {
           const before = (await boxes(page))[key], dx = key === 'pond' ? -18 : 18;
           await pointer(`.camp-obj[data-base="${key}"]`, dx, -7);
           const after = (await boxes(page))[key];
-          const state = await page.evaluate(key => ({ pos: DECOR.ensure().base[key], remove: !!document.querySelector('#dcDel'), flip: !!document.querySelector('#dcFlip') }), key);
-          ok(`${tag} ${sceneId} ${key} responds to ${width === 390 ? 'touch' : 'mouse'} drag without a remove button`, !!state.pos && state.pos.x >= .03 && state.pos.x <= .97 && state.pos.y >= 0 && state.pos.y <= 1 && !state.remove && !state.flip && Math.abs(after.left - before.left - dx) < 3, { before, after, state });
+          const state = await page.evaluate(key => {
+            const el = document.querySelector(`.camp-obj[data-base="${key}"]`), c = document.querySelector('#camp').getBoundingClientRect(), r = el.getBoundingClientRect();
+            return { pos: DECOR.ensure().base[key], centerX: (r.left + r.width / 2 - c.left) / c.width, shadow: !!el.querySelector(':scope > .shadow'), remove: !!document.querySelector('#dcDel'), flip: !!document.querySelector('#dcFlip') };
+          }, key);
+          // The pet may be mid-walk before the drag, so check that it lands where it was saved instead of a fixed pixel shift.
+          const moved = key === 'pet' ? state.pos && Math.abs(state.centerX - state.pos.x) < .02 : Math.abs(after.left - before.left - dx) < 3;
+          const shadowOk = !['hero', 'pet'].includes(key) || state.shadow;
+          ok(`${tag} ${sceneId} ${key} responds to ${width === 390 ? 'touch' : 'mouse'} drag without a remove button`, !!state.pos && state.pos.x >= .03 && state.pos.x <= .97 && state.pos.y >= 0 && state.pos.y <= 1 && !state.remove && !state.flip && moved && shadowOk, { before, after, state });
         }
         const savedBase = await page.evaluate(() => JSON.stringify(DECOR.ensure().base)), movedBoxes = await boxes(page);
         await page.screenshot({ path: path.join(OUT, `decor-${width}-base-${sceneId}.png`) });
         await goto(); await page.evaluate(() => App.go('hub'));
-        ok(`${tag} ${sceneId} all base positions survive reload`, await page.evaluate(() => JSON.stringify(DECOR.ensure().base)) === savedBase && sameBoxes(movedBoxes, await boxes(page)));
+        ok(`${tag} ${sceneId} all base positions survive reload`, await page.evaluate(() => JSON.stringify(DECOR.ensure().base)) === savedBase && sameBoxes(movedBoxes, await boxes(page)) && (!hasPet || await page.evaluate(() => !!document.querySelector('#cPet').style.translate)));
         await page.click('#decorEdit'); await page.click('#dcResetBase');
         await page.click('.modal .px-btn.gold');
         const reset = await boxes(page);
-        ok(`${tag} ${sceneId} confirmed reset clears saved positions and restores original pixels`, sameBoxes(defaults, reset) && await page.evaluate(() => Object.keys(DECOR.ensure().base).length === 0), { defaults, reset });
+        ok(`${tag} ${sceneId} confirmed reset clears saved positions and restores original pixels`, sameBoxes(defaults, reset) && await page.evaluate(() => Object.keys(DECOR.ensure().base).length === 0 && !(document.querySelector('#cPet') || {}).style?.translate), { defaults, reset });
         await goto(); await page.evaluate(() => App.go('hub'));
         ok(`${tag} ${sceneId} reset survives reload`, sameBoxes(defaults, await boxes(page)) && await page.evaluate(() => Object.keys(DECOR.ensure().base).length === 0));
       }

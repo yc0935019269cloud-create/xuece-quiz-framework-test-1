@@ -208,11 +208,13 @@ const DECOR = (() => {
     fixImgs(M.scene);
   }
   function styleOne(el, o) { const it = item(o.id); if (it) el.style.cssText = decorStyle(o, it, M.sc); }
-  const BASE_NAMES = { board: '公告板', fire: '篝火', mail: '信箱', pot: '花盆', pond: '池塘' };
+  const BASE_NAMES = { board: '公告板', fire: '篝火', mail: '信箱', pot: '花盆', pond: '池塘', hero: '勇者', pet: '夥伴' };
   function styleBase(el, o) {
     // Keep the original CSS position and size, including its mobile zoom.
     el.style.removeProperty('translate');
     if (!o || !Number.isFinite(o.x) || !Number.isFinite(o.y)) return;
+    // The pet wanders by changing left%; measure from its home spot so the saved offset moves its whole walking area.
+    if (el.dataset.base === 'pet') { el.style.transition = 'none'; el.style.left = '52%'; void el.offsetWidth; el.style.transition = ''; }
     const r = M.scene.getBoundingClientRect(), b = el.getBoundingClientRect();
     const zoom = parseFloat(getComputedStyle(el).zoom) || 1;
     const x = r.left + clamp(o.x, .03, .97) * r.width;
@@ -240,7 +242,7 @@ const DECOR = (() => {
       <div class="dc-chips">${owned.length ? owned.map(i => { const a = available(i.id); return `<button class="dc-chip r-${i.rarity} ${a <= 0 ? 'used' : ''}" data-id="${E(i.id)}" ${a <= 0 ? 'disabled' : ''} title="${E(i.name)}">${imgHTML(i)}<small>×${Math.max(0, a)}</small></button>`; }).join('') : '<p class="small-t dim">還沒有物件。到商店抽獎或直購吧！</p>'}</div>`;
     fixImgs(dr);
     U.$('#dcDone', dr).onclick = () => setEdit(false);
-    U.$('#dcResetBase', dr).onclick = async () => { if (await U.confirm('基本物件回原位', '要將公告板、篝火、信箱、花盆和池塘放回原位嗎？')) { ensure().base = {}; save(); M.baseSel = null; renderBase(); drawer(); } };
+    U.$('#dcResetBase', dr).onclick = async () => { if (await U.confirm('基本物件回原位', '要將公告板、篝火、信箱、花盆、池塘、勇者和夥伴放回原位嗎？')) { ensure().base = {}; save(); M.baseSel = null; renderBase(); drawer(); } };
     U.$('#dcClear', dr).onclick = async () => { if (!ensure().placed.length) return; if (await U.confirm('清空營地', '要把營地裡所有擺放的物件都收回嗎？')) { clearAll(); M.sel = null; renderPlaced(); drawer(); } };
     const fl = U.$('#dcFlip', dr); if (fl) fl.onclick = () => { flip(M.sel); renderPlaced(); drawer(); };
     const del = U.$('#dcDel', dr); if (del) del.onclick = () => { remove(M.sel); M.sel = null; renderPlaced(); drawer(); };
