@@ -1,7 +1,7 @@
 {
- "date": "2026-10-31T16:14:24.205Z",
- "pass": 25,
- "total": 28,
+ "date": "2026-10-31T17:07:18.346Z",
+ "pass": 23,
+ "total": 26,
  "results": [
   {
    "ok": true,
@@ -41,11 +41,7 @@
   },
   {
    "ok": false,
-   "msg": "desktop 點底線名詞＝選句子，不開說明"
-  },
-  {
-   "ok": true,
-   "msg": "desktop 長按底線名詞開說明，且不會選到句子"
+   "msg": "desktop 第一頁找不到底線名詞"
   },
   {
    "ok": true,
@@ -53,7 +49,7 @@
   },
   {
    "ok": true,
-   "msg": "desktop 一般單元點名詞照舊開說明"
+   "msg": "desktop 一般單元點名詞照舊開說明 undefined"
   },
   {
    "ok": true,
@@ -97,11 +93,7 @@
   },
   {
    "ok": false,
-   "msg": "mobile 點底線名詞＝選句子，不開說明"
-  },
-  {
-   "ok": true,
-   "msg": "mobile 長按底線名詞開說明，且不會選到句子"
+   "msg": "mobile 第一頁找不到底線名詞"
   },
   {
    "ok": true,
@@ -109,7 +101,7 @@
   },
   {
    "ok": false,
-   "msg": "mobile 一般單元點名詞照舊開說明"
+   "msg": "mobile 一般單元點名詞照舊開說明 undefined"
   },
   {
    "ok": true,
