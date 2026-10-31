@@ -1,0 +1,119 @@
+{
+ "date": "2026-10-31T16:14:24.205Z",
+ "pass": 25,
+ "total": 28,
+ "results": [
+  {
+   "ok": true,
+   "msg": "desktop 句子對位：2 頁、每頁最多一句對不到（章名）"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 播放時念到的句子亮起（第 1 句）"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 進度跳到第 10 句時亮起第 10 句"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 亮起的文字就是正在念的那一句"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 念的時候點第 20 句會跳過去念 (now 20, t 103.9)"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 暫停時點句子＝選取（按鈕變「從選取的句子念」）"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 再點一次同一句＝取消選取"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 選取後按播放從那句開始念 (now 30)"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 念到後面時自動捲到亮起的句子"
+  },
+  {
+   "ok": false,
+   "msg": "desktop 點底線名詞＝選句子，不開說明"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 長按底線名詞開說明，且不會選到句子"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 沒有橫向捲動"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 一般單元點名詞照舊開說明"
+  },
+  {
+   "ok": true,
+   "msg": "desktop 沒有頁面錯誤 "
+  },
+  {
+   "ok": true,
+   "msg": "mobile 句子對位：2 頁、每頁最多一句對不到（章名）"
+  },
+  {
+   "ok": true,
+   "msg": "mobile 播放時念到的句子亮起（第 1 句）"
+  },
+  {
+   "ok": true,
+   "msg": "mobile 進度跳到第 10 句時亮起第 10 句"
+  },
+  {
+   "ok": true,
+   "msg": "mobile 亮起的文字就是正在念的那一句"
+  },
+  {
+   "ok": true,
+   "msg": "mobile 念的時候點第 20 句會跳過去念 (now 20, t 103.9)"
+  },
+  {
+   "ok": true,
+   "msg": "mobile 暫停時點句子＝選取（按鈕變「從選取的句子念」）"
+  },
+  {
+   "ok": true,
+   "msg": "mobile 再點一次同一句＝取消選取"
+  },
+  {
+   "ok": true,
+   "msg": "mobile 選取後按播放從那句開始念 (now 30)"
+  },
+  {
+   "ok": true,
+   "msg": "mobile 念到後面時自動捲到亮起的句子"
+  },
+  {
+   "ok": false,
+   "msg": "mobile 點底線名詞＝選句子，不開說明"
+  },
+  {
+   "ok": true,
+   "msg": "mobile 長按底線名詞開說明，且不會選到句子"
+  },
+  {
+   "ok": true,
+   "msg": "mobile 沒有橫向捲動"
+  },
+  {
+   "ok": false,
+   "msg": "mobile 一般單元點名詞照舊開說明"
+  },
+  {
+   "ok": true,
+   "msg": "mobile 沒有頁面錯誤 "
+  }
+ ]
+}
