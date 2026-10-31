@@ -80,6 +80,45 @@ add('nv-light-reflex', ['光反射'], '瞳孔光反射', 'pupillary light reflex
     '傳入：視神經（II）；傳出：動眼神經（III）裡的副交感（E-W 核 → 睫狀神經節 → 短睫狀神經 → 括約肌）。單眼照光兩眼都縮。',
     '傳入缺損：照患眼雙眼都差；傳出缺損：患眼對兩邊照光都不縮。')
 
+add('nv-cornea', ['角膜'], '角膜', 'cornea',
+    '正常角膜沒有血管（所以透明）：睜眼時氧氣主要由大氣經淚液溶入，葡萄糖主要來自房水。角膜是眼睛最主要的屈光構造，整體約 +43 D（前表面約 +48、後表面約 −5），約占全眼 2/3；調節靠水晶體。',
+    '五層由外到內：上皮 → Bowman 層 → 基質 → Descemet 膜 → 內皮。中央約 540 µm、中央薄陡、周邊厚平；水平直徑約 11.5～12 mm。')
+add('nv-limbus', ['輪部'], '角膜輪部', 'limbus',
+    '角膜、結膜與鞏膜交界。有輪部微血管網（與前睫狀動脈相關，但血管不長進正常角膜），也是角膜上皮幹細胞的家（Vogt 柵欄）；幹細胞缺損時上皮難修復、甚至結膜化。')
+add('nv-contact-lens', ['琉璃瞳片', '瞳片'], '琉璃瞳片（隱形眼鏡）', 'contact lens',
+    '覆在角膜上的鏡片可限制角膜氧供；影響程度與透氧性、配戴方式有關（閉眼過夜時氧更少）。')
+add('nv-bowman', ['鮑曼層', 'Bowman 層'], 'Bowman 層（鮑曼層）', "Bowman's layer",
+    '上皮基底膜下方、前基質的緻密膠原層，沒有細胞；受損不會原樣再生，深及 Bowman 或基質的傷會留疤。',
+    '老師說會考 ⭐⭐⭐。對照：Descemet 膜可由內皮修復。')
+add('nv-stroma', ['基質'], '角膜基質', 'corneal stroma',
+    '占角膜厚度約九成；約 78% 是水，以 I 型膠原為主，約 200～250 層膠原板。前 1/3 交織、抗剪力強；後方板層平行、較易水腫。主要細胞是 keratocyte（角膜基質細胞）。')
+add('nv-keratocyte', ['角膜基質細胞'], '角膜基質細胞（keratocyte）', 'keratocyte',
+    '基質裡的主要細胞，負責維持膠原與細胞外基質。基質有細胞，不能和無細胞的 Bowman 層混淆。')
+add('nv-descemet', ['德士密膜', 'Descemet 膜', '施瓦貝線'], 'Descemet 膜（德士密膜）', "Descemet's membrane",
+    '內皮的基底膜，強韌，由內皮持續生成、隨年齡增厚，受傷可修復；周邊止於 Schwalbe 線。深潰瘍只剩這層時會鼓起（descemetocele）。沒有神經。',
+    '產傷裂痕多垂直或斜向；先天性青光眼的 Haab 紋多水平或同心圓。')
+add('nv-endothelium', ['角膜內皮', '內皮'], '角膜內皮', 'corneal endothelium',
+    '單層細胞，以屏障＋Na⁺/K⁺-ATPase 幫浦把水抽出基質、維持透明。成人幾乎不分裂，缺損由鄰近細胞擴大移動補洞（大小不一 polymegathism、形狀不一 pleomorphism）。沒有神經。',
+    '密度：出生約 4,000、成人約 2,000～3,000 cells/mm²；術前低於 1,500 要警覺；約 500 以下可能失代償。')
+add('nv-epithelium', ['角膜上皮', '上皮'], '角膜上皮', 'corneal epithelium',
+    '非角化複層鱗狀上皮，約 5～6 層，快速更新。表層緊密連結（屏障）、細胞間橋粒、基底細胞以半橋粒固定於基底膜；微絨毛與糖萼幫助淚膜穩定。黏附不牢會反覆糜爛。')
+
+add('nv-fuchs', ['錘紋', 'Fuchs', '內皮失養'], 'Fuchs 內皮失養症', "Fuchs endothelial dystrophy",
+    '內皮表面出現 guttae（贅疣），縫光燈鏡面反光下像錘打過的金屬；內皮漸漸失功能，角膜水腫。',
+    '老師強調 ⭐。內皮低密度、Fuchs 都是內眼手術（如白內障）前要評估的風險。')
+add('nv-polymegathism', ['大小變異', '形狀變異'], '內皮大小變異／形狀變異', 'polymegathism / pleomorphism',
+    'polymegathism＝內皮細胞大小不一；pleomorphism＝形狀不一。成人內皮幾乎不分裂，缺損靠鄰近細胞擴大、移動補洞，所以會出現這兩種變化。')
+add('nv-decomp', ['失代償'], '角膜內皮失代償', 'endothelial decompensation',
+    '內皮密度太低（約 500 cells/mm² 以下）撐不住控水，角膜水腫、霧白。術前低於約 1,500 要警覺（警覺值，不是絕對禁忌）。')
+add('nv-keratoconus', ['圓錐角膜', '福格特紋', '不規則散光'], '圓錐角膜', 'keratoconus',
+    '角膜局部變薄並向前凸成錐狀，造成不規則散光。Fleischer 環＝錐體周圍上皮的鐵沉積；Vogt 紋與基質皺摺有關。')
+add('nv-fleischer', ['Fleischer 環', '弗萊舍環', '鐵環'], 'Fleischer 環', 'Fleischer ring',
+    '圓錐角膜錐底周圍上皮內的鐵沉積，呈褐色環。老師說要記 ⭐⭐。')
+add('nv-dystrophy', ['顆粒狀失養', '斑狀失養', '格狀失養', '失養症'], '角膜基質失養症', 'stromal corneal dystrophy',
+    '老師說會考 ⭐⭐⭐：斑狀（macular，斑狀混濁）、顆粒狀（granular，顆粒狀沉積）、格狀（lattice，分枝格線狀沉積）。不同種類的沉積成分與表現不同。')
+add('nv-stemcell', ['幹細胞', 'Vogt 柵欄', '福格特柵欄', '結膜化'], '角膜上皮幹細胞（輪部）', 'limbal stem cells',
+    '角膜上皮的幹細胞住在輪部（Vogt 柵欄是它們的微環境）。缺損時上皮難以修復，結膜會長進來蓋住角膜（結膜化）。老師說要記 ⭐⭐。')
+
 out = Path(__file__).resolve().parents[2] / 'content' / 'glossary' / 'eye-novel.json'
 out.write_text(json.dumps({'schema': 'xd-glossary/1', 'id': 'eye-novel', 'entries': E}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
 print(out, len(E))
