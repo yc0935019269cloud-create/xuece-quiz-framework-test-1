@@ -119,6 +119,48 @@ add('nv-dystrophy', ['顆粒狀失養', '斑狀失養', '格狀失養', '失養�
 add('nv-stemcell', ['幹細胞', 'Vogt 柵欄', '福格特柵欄', '結膜化'], '角膜上皮幹細胞（輪部）', 'limbal stem cells',
     '角膜上皮的幹細胞住在輪部（Vogt 柵欄是它們的微環境）。缺損時上皮難以修復，結膜會長進來蓋住角膜（結膜化）。老師說要記 ⭐⭐。')
 
+add('nv-bells', ['顏面神經麻痺', '兔眼'], '顏面神經（VII）麻痺', "facial nerve palsy (Bell's palsy)",
+    '眼輪匝肌無力 → 閉眼不全（兔眼）、下眼瞼外翻、角膜暴露；也可有淚液分泌與舌前 2/3 味覺受影響。單純 VII 麻痺不會造成眼球運動障礙（開眼靠 III 的提上眼瞼肌與交感的穆勒氏肌）。')
+add('nv-facial', ['顏面神經'], '顏面神經（VII）', 'facial nerve (CN VII)',
+    '運動：眼輪匝肌（閉眼）與表情肌。副交感：淚腺、鼻腺、部分唾液腺。感覺：舌前 2/3 味覺（舌後 1/3 主要走舌咽神經 IX）。角膜眨眼反射的傳出神經。')
+add('nv-lacrimal-path', ['上泌涎核', '大淺岩神經'], '淚腺分泌路徑', 'lacrimal secretory pathway',
+    '上泌涎核 → 顏面神經 → 大淺岩神經 → 翼腭神經節（換元）→ 搭三叉神經分支（淚腺神經）→ 淚腺。淚腺感覺走三叉神經；淚水反射：V 傳入、VII 傳出。')
+add('nv-glossopharyngeal', ['舌咽神經'], '舌咽神經（IX）', 'glossopharyngeal nerve',
+    '舌後 1/3 的味覺主要走舌咽神經；舌前 2/3 走顏面神經。也帶副交感（腮腺）。')
+add('nv-sympathomimetic', ['擬交感', '古柯鹼', '去氧腎上腺素', '古柯', 'cocaine', 'phenylephrine'], '擬交感藥（cocaine、phenylephrine）', 'sympathomimetic',
+    '使瞳孔擴張肌收縮而散瞳，不麻痺睫狀肌，所以看近仍清楚。對照抗膽鹼藥（atropine、tropicamide）：散瞳＋調節麻痺。')
+add('nv-anticholinergic', ['抗膽鹼', '托吡卡胺', 'tropicamide'], '抗膽鹼藥（atropine、tropicamide）', 'anticholinergic',
+    '阻斷括約肌與睫狀肌的蕈毒鹼受器 → 散瞳＋調節麻痺（看近模糊）。')
+add('nv-pilocarpine', ['芸香葉', '匹羅卡品', 'pilocarpine', '毛果芸香鹼'], 'pilocarpine（擬副交感）', 'pilocarpine',
+    '激動蕈毒鹼受器 → 括約肌收縮縮瞳；睫狀肌收縮拉開小樑網、增加小樑流出、降眼壓。受器若已被抗膽鹼藥阻斷，縮瞳效果差。')
+add('nv-denervation', ['去神經', '超敏感'], '去神經超敏感', 'denervation supersensitivity',
+    '神經受損後，失去支配的肌肉對很稀的藥也會有明顯反應；受病程等影響，藥物反應不能單獨確診。')
+
+add('nv-iv-palsy', ['滑車神經麻痺'], '滑車神經（IV）麻痺', 'trochlear nerve palsy',
+    'IV 由中腦背側出腦、纖維先交叉 → 支配對側上斜肌；細、顱內行程長，頭部外傷易傷。單側麻痺：患眼偏高、內收向下看垂直複視最明顯、可外旋，代償頭傾健側；瞳孔不受影響。',
+    '雙側：交替上斜、外旋（>10° 是線索）、V 型斜視；雙馬竇氏鏡量旋轉偏斜。')
+add('nv-maddox', ['雙馬竇氏鏡', '馬竇氏鏡'], '雙馬竇氏鏡', 'double Maddox rod',
+    '兩眼各放一支馬竇氏桿，看到兩條線，比較傾斜角度來量旋轉偏斜（例如雙側滑車神經麻痺的外旋）。')
+add('nv-v-pattern', ['V 型', 'V型'], 'V 型斜視', 'V pattern',
+    '向下看時比向上看更內偏（或向上看更外偏）。雙側滑車神經麻痺常考 V 型，不是 A 型。')
+add('nv-vi-palsy', ['外展神經麻痺', '外旋神經麻痺'], '外展神經（VI）麻痺', 'abducens nerve palsy',
+    '外直肌無力：外展不足、內斜、水平複視，向患側看加重；代償頭轉向患側。VI 經海綿竇（竇腔內）、眶上裂、總腱環。顱壓升高、外傷、缺血、海綿竇病變可影響。',
+    '同側 VI＋VII 徵象提示橋腦（VII 纖維繞過 VI 核）；累及錐體束 → 對側肢體無力。')
+add('nv-pyramidal', ['錐體束'], '錐體束', 'pyramidal tract',
+    '從大腦下行到脊髓的運動路徑，在延腦交叉；橋腦病灶累及錐體束時，肢體無力在對側。')
+add('nv-hzo', ['帶狀疱疹', '哈欽森徵象', 'Hutchinson'], '眼部帶狀疱疹與 Hutchinson 徵象', 'herpes zoster ophthalmicus',
+    '病毒潛伏在三叉神經節，沿 V1 侵犯眼睛。鼻尖起疹（Hutchinson 徵象，鼻睫神經支配）→ 眼部受累風險升高，但不是必然。')
+add('nv-tn', ['三叉神經痛'], '三叉神經痛', 'trigeminal neuralgia',
+    '觸電般的陣發劇痛，最常見於 V2、其次 V3、V1 較少，可多區；血管壓迫神經根是可能原因。')
+add('nv-ccf', ['頸動脈海綿竇瘻管', '瘻管'], '頸動脈海綿竇瘻管', 'carotid-cavernous fistula',
+    '頸內動脈與海綿竇異常相通，眼紅、突出、可聽到搏動聲；可影響經過海綿竇的 III、IV、V1、V2、VI——V3 不經海綿竇。')
+add('nv-cs-wall', ['外側壁', '竇腔'], '海綿竇的外側壁與竇腔', 'cavernous sinus wall and lumen',
+    '外側壁：III、IV、V1、V2；竇腔內：VI 與內頸動脈。外側壁病灶時，VI 支配的外直肌可相對保留。海綿竇與顏面、眼靜脈交通，臉部感染可向後擴散。')
+add('nv-asi', ['前節缺血', '前段缺血'], '眼前節缺血', 'anterior segment ischemia',
+    '前睫狀動脈由直肌的肌動脈延續（外直肌通常 1 條、其餘直肌各 2 條）；同時處理多條直肌會斷掉多條前睫狀動脈 → 前節缺血。')
+add('nv-conjunctiva', ['結膜', '杯狀細胞'], '結膜', 'conjunctiva',
+    '有血管（前睫狀動脈與瞼動脈供血）與杯狀細胞，參與眼表保護。角膜緣有血管叢，但角膜本身無血管——不能推成結膜也無血管。')
+
 out = Path(__file__).resolve().parents[2] / 'content' / 'glossary' / 'eye-novel.json'
 out.write_text(json.dumps({'schema': 'xd-glossary/1', 'id': 'eye-novel', 'entries': E}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
 print(out, len(E))

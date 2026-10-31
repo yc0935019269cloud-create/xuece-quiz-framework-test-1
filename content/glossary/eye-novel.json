@@ -567,6 +567,256 @@
    "note": "角膜上皮的幹細胞住在輪部（Vogt 柵欄是它們的微環境）。缺損時上皮難以修復，結膜會長進來蓋住角膜（結膜化）。老師說要記 ⭐⭐。",
    "rel": "",
    "only": "novel"
+  },
+  {
+   "id": "nv-bells",
+   "match": [
+    "顏面神經麻痺",
+    "兔眼"
+   ],
+   "zh": "顏面神經（VII）麻痺",
+   "en": "facial nerve palsy (Bell's palsy)",
+   "parts": [],
+   "note": "眼輪匝肌無力 → 閉眼不全（兔眼）、下眼瞼外翻、角膜暴露；也可有淚液分泌與舌前 2/3 味覺受影響。單純 VII 麻痺不會造成眼球運動障礙（開眼靠 III 的提上眼瞼肌與交感的穆勒氏肌）。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-facial",
+   "match": [
+    "顏面神經"
+   ],
+   "zh": "顏面神經（VII）",
+   "en": "facial nerve (CN VII)",
+   "parts": [],
+   "note": "運動：眼輪匝肌（閉眼）與表情肌。副交感：淚腺、鼻腺、部分唾液腺。感覺：舌前 2/3 味覺（舌後 1/3 主要走舌咽神經 IX）。角膜眨眼反射的傳出神經。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-lacrimal-path",
+   "match": [
+    "上泌涎核",
+    "大淺岩神經"
+   ],
+   "zh": "淚腺分泌路徑",
+   "en": "lacrimal secretory pathway",
+   "parts": [],
+   "note": "上泌涎核 → 顏面神經 → 大淺岩神經 → 翼腭神經節（換元）→ 搭三叉神經分支（淚腺神經）→ 淚腺。淚腺感覺走三叉神經；淚水反射：V 傳入、VII 傳出。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-glossopharyngeal",
+   "match": [
+    "舌咽神經"
+   ],
+   "zh": "舌咽神經（IX）",
+   "en": "glossopharyngeal nerve",
+   "parts": [],
+   "note": "舌後 1/3 的味覺主要走舌咽神經；舌前 2/3 走顏面神經。也帶副交感（腮腺）。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-sympathomimetic",
+   "match": [
+    "擬交感",
+    "古柯鹼",
+    "去氧腎上腺素",
+    "古柯",
+    "cocaine",
+    "phenylephrine"
+   ],
+   "zh": "擬交感藥（cocaine、phenylephrine）",
+   "en": "sympathomimetic",
+   "parts": [],
+   "note": "使瞳孔擴張肌收縮而散瞳，不麻痺睫狀肌，所以看近仍清楚。對照抗膽鹼藥（atropine、tropicamide）：散瞳＋調節麻痺。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-anticholinergic",
+   "match": [
+    "抗膽鹼",
+    "托吡卡胺",
+    "tropicamide"
+   ],
+   "zh": "抗膽鹼藥（atropine、tropicamide）",
+   "en": "anticholinergic",
+   "parts": [],
+   "note": "阻斷括約肌與睫狀肌的蕈毒鹼受器 → 散瞳＋調節麻痺（看近模糊）。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-pilocarpine",
+   "match": [
+    "芸香葉",
+    "匹羅卡品",
+    "pilocarpine",
+    "毛果芸香鹼"
+   ],
+   "zh": "pilocarpine（擬副交感）",
+   "en": "pilocarpine",
+   "parts": [],
+   "note": "激動蕈毒鹼受器 → 括約肌收縮縮瞳；睫狀肌收縮拉開小樑網、增加小樑流出、降眼壓。受器若已被抗膽鹼藥阻斷，縮瞳效果差。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-denervation",
+   "match": [
+    "去神經",
+    "超敏感"
+   ],
+   "zh": "去神經超敏感",
+   "en": "denervation supersensitivity",
+   "parts": [],
+   "note": "神經受損後，失去支配的肌肉對很稀的藥也會有明顯反應；受病程等影響，藥物反應不能單獨確診。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-iv-palsy",
+   "match": [
+    "滑車神經麻痺"
+   ],
+   "zh": "滑車神經（IV）麻痺",
+   "en": "trochlear nerve palsy",
+   "parts": [],
+   "note": "IV 由中腦背側出腦、纖維先交叉 → 支配對側上斜肌；細、顱內行程長，頭部外傷易傷。單側麻痺：患眼偏高、內收向下看垂直複視最明顯、可外旋，代償頭傾健側；瞳孔不受影響。",
+   "rel": "雙側：交替上斜、外旋（>10° 是線索）、V 型斜視；雙馬竇氏鏡量旋轉偏斜。",
+   "only": "novel"
+  },
+  {
+   "id": "nv-maddox",
+   "match": [
+    "雙馬竇氏鏡",
+    "馬竇氏鏡"
+   ],
+   "zh": "雙馬竇氏鏡",
+   "en": "double Maddox rod",
+   "parts": [],
+   "note": "兩眼各放一支馬竇氏桿，看到兩條線，比較傾斜角度來量旋轉偏斜（例如雙側滑車神經麻痺的外旋）。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-v-pattern",
+   "match": [
+    "V 型",
+    "V型"
+   ],
+   "zh": "V 型斜視",
+   "en": "V pattern",
+   "parts": [],
+   "note": "向下看時比向上看更內偏（或向上看更外偏）。雙側滑車神經麻痺常考 V 型，不是 A 型。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-vi-palsy",
+   "match": [
+    "外展神經麻痺",
+    "外旋神經麻痺"
+   ],
+   "zh": "外展神經（VI）麻痺",
+   "en": "abducens nerve palsy",
+   "parts": [],
+   "note": "外直肌無力：外展不足、內斜、水平複視，向患側看加重；代償頭轉向患側。VI 經海綿竇（竇腔內）、眶上裂、總腱環。顱壓升高、外傷、缺血、海綿竇病變可影響。",
+   "rel": "同側 VI＋VII 徵象提示橋腦（VII 纖維繞過 VI 核）；累及錐體束 → 對側肢體無力。",
+   "only": "novel"
+  },
+  {
+   "id": "nv-pyramidal",
+   "match": [
+    "錐體束"
+   ],
+   "zh": "錐體束",
+   "en": "pyramidal tract",
+   "parts": [],
+   "note": "從大腦下行到脊髓的運動路徑，在延腦交叉；橋腦病灶累及錐體束時，肢體無力在對側。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-hzo",
+   "match": [
+    "帶狀疱疹",
+    "哈欽森徵象",
+    "Hutchinson"
+   ],
+   "zh": "眼部帶狀疱疹與 Hutchinson 徵象",
+   "en": "herpes zoster ophthalmicus",
+   "parts": [],
+   "note": "病毒潛伏在三叉神經節，沿 V1 侵犯眼睛。鼻尖起疹（Hutchinson 徵象，鼻睫神經支配）→ 眼部受累風險升高，但不是必然。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-tn",
+   "match": [
+    "三叉神經痛"
+   ],
+   "zh": "三叉神經痛",
+   "en": "trigeminal neuralgia",
+   "parts": [],
+   "note": "觸電般的陣發劇痛，最常見於 V2、其次 V3、V1 較少，可多區；血管壓迫神經根是可能原因。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-ccf",
+   "match": [
+    "頸動脈海綿竇瘻管",
+    "瘻管"
+   ],
+   "zh": "頸動脈海綿竇瘻管",
+   "en": "carotid-cavernous fistula",
+   "parts": [],
+   "note": "頸內動脈與海綿竇異常相通，眼紅、突出、可聽到搏動聲；可影響經過海綿竇的 III、IV、V1、V2、VI——V3 不經海綿竇。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-cs-wall",
+   "match": [
+    "外側壁",
+    "竇腔"
+   ],
+   "zh": "海綿竇的外側壁與竇腔",
+   "en": "cavernous sinus wall and lumen",
+   "parts": [],
+   "note": "外側壁：III、IV、V1、V2；竇腔內：VI 與內頸動脈。外側壁病灶時，VI 支配的外直肌可相對保留。海綿竇與顏面、眼靜脈交通，臉部感染可向後擴散。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-asi",
+   "match": [
+    "前節缺血",
+    "前段缺血"
+   ],
+   "zh": "眼前節缺血",
+   "en": "anterior segment ischemia",
+   "parts": [],
+   "note": "前睫狀動脈由直肌的肌動脈延續（外直肌通常 1 條、其餘直肌各 2 條）；同時處理多條直肌會斷掉多條前睫狀動脈 → 前節缺血。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-conjunctiva",
+   "match": [
+    "結膜",
+    "杯狀細胞"
+   ],
+   "zh": "結膜",
+   "en": "conjunctiva",
+   "parts": [],
+   "note": "有血管（前睫狀動脈與瞼動脈供血）與杯狀細胞，參與眼表保護。角膜緣有血管叢，但角膜本身無血管——不能推成結膜也無血管。",
+   "rel": "",
+   "only": "novel"
   }
  ]
 }
