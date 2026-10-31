@@ -574,4 +574,5 @@
 
 - 學習單元 `style: "novel"` 的每一頁上方有朗讀列（`js/novel-audio.js`）：🔊 朗讀本頁／暫停、進度條（可點跳）、速度 0.8～2×、「自動翻頁」（念完自動按繼續，一章念完接下一章）。設定存 localStorage `novelAudio`，不進存檔。手機鎖屏的播放／暫停／下一首用 MediaSession。沒有音檔的頁面不顯示朗讀列。`LEARN_UI.curPage()` 提供目前單元／課／頁。
 - 音檔是事先錄好的 Microsoft 神經語音（edge-tts，`zh-TW-HsiaoChenNeural`，非官方管道，日後可能失效），32 kbps 單聲道 mp3：`assets/novel-audio/<單元>/<課>-<頁>.mp3`，清單 `assets/novel-audio/manifest.json`（含文字雜湊）→ 產生 `js/novel-audio-data.js`（勿手改）。**每寫完或改完章節就跑 `python tools/novel_tts.py`**（只重錄文字有變的頁，刪掉不用的音檔；需要 edge-tts 與 ffmpeg），再把 index.html `?v=N` 加一。一卷約 35 MB、150 分鐘。
+- 逐句朗讀：念到的句子會亮起並自動捲動；點句子選取／再點取消，暫停時選取後按播放從該句開始，播放中點句子直接跳讀。點底線名詞開啟說明。逐句時間由 `tools/novel_tts.py` 產生，尚無時間資料的頁面需重新錄製才有逐句功能。
 - QA：`tools/novel-qa/audio.cjs`（file://，1100／390px，32 項：每頁有音檔、播放、速度記住、念完翻頁、整章接下一章、暫停、關掉自動翻頁、離開課程停止、一般單元沒有朗讀列、無頁面錯誤），結果 `docs/novel/audio-qa.json`。沒有實機 iPhone 鎖屏背景播放測試；朗讀時背景音樂不會自動降低。

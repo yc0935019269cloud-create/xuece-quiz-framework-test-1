@@ -1664,3 +1664,7 @@ html:has(.win-resizing) { cursor: nwse-resize; }
 .nv-audio .nv-rate { font: inherit; font-size: 13px; padding: 1px 4px; }
 .nv-audio .nv-auto { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap; }
 html.read-light .nv-audio { background: rgba(0,0,0,.05); }
+/* 念到的句子、選取的句子（CSS Custom Highlight） */
+::highlight(nv-now) { background-color: rgba(255, 200, 70, .38); }
+::highlight(nv-sel) { background-color: rgba(110, 170, 255, .4); }
+.nv-audio .nv-tip { flex-basis: 100%; }
