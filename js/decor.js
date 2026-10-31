@@ -18,6 +18,7 @@ const DECOR = (() => {
   const POOL_ORDER = ['standard', 'seasakura', 'arcane'];
   const CLASSIC = { id: 'classic', name: '經典草原', desc: '營地原本的草原風景。', file: '', ground: 0.14, night: 'orig' };
   const OFF = 3; // 物件 y=0 時，離營地底部的百分比
+  const BASE_YMAX = 0.6; // 基本物件最多往後放到地面帶的 60%，不會跑到水邊、山坡上
   const SERIES_FALLBACK = { cabin: '木屋小窩', forest: '森林精靈', academy: '學院書房', seaside: '海濱假日', sakura: '和風庭園', arcane: '星辰魔法', junk: '雜物堆' };
 
   /* ---------- 資料 ---------- */
@@ -217,9 +218,13 @@ const DECOR = (() => {
     if (el.dataset.base === 'pet') { el.style.transition = 'none'; el.style.left = '52%'; void el.offsetWidth; el.style.transition = ''; }
     const r = M.scene.getBoundingClientRect(), b = el.getBoundingClientRect();
     const zoom = parseFloat(getComputedStyle(el).zoom) || 1;
-    const x = r.left + clamp(o.x, .03, .97) * r.width;
-    const y = r.bottom - (OFF + clamp(o.y, 0, 1) * M.sc.ground * 100) / 100 * r.height;
+    // Keep the whole object inside the scene and on the near part of the ground (not up at the water/hill line).
+    const half = r.width ? b.width / 2 / r.width : 0;
+    const fx = half >= .49 ? .5 : clamp(o.x, half + .01, .99 - half), fy = clamp(o.y, 0, BASE_YMAX);
+    const x = r.left + fx * r.width;
+    const y = r.bottom - (OFF + fy * M.sc.ground * 100) / 100 * r.height;
     el.style.translate = `${(x - (b.left + b.width / 2)) / zoom}px ${(y - b.bottom) / zoom}px`;
+    return { x: fx, y: fy };
   }
   function renderBase() {
     const base = ensure().base;
@@ -321,7 +326,7 @@ const DECOR = (() => {
         if (!moved && Math.hypot(ev.clientX - e.clientX, ev.clientY - e.clientY) < 3) return;
         moved = true;
         const pp = posFromPoint(ev.clientX - dx, ev.clientY - dy);
-        if (isBase) { pos = pp; styleBase(el, pos); } else { o.x = pp.x; o.y = pp.y; styleOne(el, o); }
+        if (isBase) { pos = styleBase(el, pp) || pp; } else { o.x = pp.x; o.y = pp.y; styleOne(el, o); }
         el.classList.add('sel', 'drag');
       };
       const up = () => {

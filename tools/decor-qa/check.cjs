@@ -201,7 +201,8 @@ const realData = fs.existsSync(path.join(ROOT, 'js/decor-data.js'));
       await page.mouse.move(campBox.x + campBox.width + 200, campBox.y - 300, { steps: 4 }); await page.mouse.up();
       const clamped = await page.evaluate(k => { const o = DECOR.ensure().placed.find(x => x.k === k); return { x: o.x, y: o.y }; }, bef.k);
       ok(`${tag} 拖到營地外會夾在地面帶內 (0.03≤x≤0.97, 0≤y≤1)`, clamped.x <= 0.97 && clamped.x >= 0.03 && clamped.y <= 1 && clamped.y >= 0, clamped);
-      // 選取、翻轉、收回（選取靠真的點擊）
+      // 選取、翻轉、收回（選取靠真的點擊）；先放回中間，角落可能被池塘蓋住
+      await page.evaluate(k => { DECOR.move(k, .5, .3); DECOR.setEdit(true); }, bef.k);
       const b3 = await (await page.$(`.decor-obj[data-k="${bef.k}"]`)).boundingBox();
       await page.mouse.click(b3.x + b3.width / 2, b3.y + b3.height / 2);
       await page.waitForSelector('#dcFlip');
