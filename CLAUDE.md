@@ -569,3 +569,9 @@
 - 單元設 `style: "novel"`、`calm: true`：build 不套節奏與卡片長度警告；`js/learn.js` 在 `.lp` 加 `data-style="novel"`（段首縮排、場次標題縮小、不顯示「概念」標籤），完成畫面改成「讀完本章／下一章」。
 - 考點名詞底線：`js/glossary.js` 在小說頁每個名詞每頁只標第一次；小說專用名詞在 `content/glossary/eye-novel.json`（由 `tools/novel/glossary_src.py` 產生），每筆 `only: "novel"`，只在小說頁標，不影響其他學習頁。
 - QA：`tools/novel-qa/check.cjs`（每章逐頁到完成畫面、無戰鬥條、縮排、名詞不重複標、小說名詞不外漏到 ans-basics、桌機＋390px）。第一卷 6 章約 3.4 萬字，250 項通過。沒有醫學審稿、沒有實機 iPad 測試。
+
+## 連載小說朗讀（2026-11-01，v175）
+
+- 學習單元 `style: "novel"` 的每一頁上方有朗讀列（`js/novel-audio.js`）：🔊 朗讀本頁／暫停、進度條（可點跳）、速度 0.8～2×、「自動翻頁」（念完自動按繼續，一章念完接下一章）。設定存 localStorage `novelAudio`，不進存檔。手機鎖屏的播放／暫停／下一首用 MediaSession。沒有音檔的頁面不顯示朗讀列。`LEARN_UI.curPage()` 提供目前單元／課／頁。
+- 音檔是事先錄好的 Microsoft 神經語音（edge-tts，`zh-TW-HsiaoChenNeural`，非官方管道，日後可能失效），32 kbps 單聲道 mp3：`assets/novel-audio/<單元>/<課>-<頁>.mp3`，清單 `assets/novel-audio/manifest.json`（含文字雜湊）→ 產生 `js/novel-audio-data.js`（勿手改）。**每寫完或改完章節就跑 `python tools/novel_tts.py`**（只重錄文字有變的頁，刪掉不用的音檔；需要 edge-tts 與 ffmpeg），再把 index.html `?v=N` 加一。一卷約 35 MB、150 分鐘。
+- QA：`tools/novel-qa/audio.cjs`（file://，1100／390px，32 項：每頁有音檔、播放、速度記住、念完翻頁、整章接下一章、暫停、關掉自動翻頁、離開課程停止、一般單元沒有朗讀列、無頁面錯誤），結果 `docs/novel/audio-qa.json`。沒有實機 iPhone 鎖屏背景播放測試；朗讀時背景音樂不會自動降低。

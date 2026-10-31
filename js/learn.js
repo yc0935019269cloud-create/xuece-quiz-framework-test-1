@@ -1934,5 +1934,6 @@ const LEARN_UI = (() => {
     const p = packs.find(x => x.id === packId), l = p && p.lessons.find(x => x.id === lessonId), step = l && l.steps[stepIndex];
     return step ? starButton({ kind: 'page', p: p.id, l: l.id, i: stepIndex, t: stepTitle(step, l) }) : '';
   }
-  return { pageStar, starredQids, starredTermCount, reindex, screen, tileDesc, lastInfo, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, pageCtx, glossStar, get packs() { return packs; } };
+  const curPage = () => cur && cur.st ? { p: cur.p.id, l: cur.l.id, i: cur.st.i, style: cur.p.style || '' } : null;   // 連載小說朗讀（js/novel-audio.js）用
+  return { curPage, pageStar, starredQids, starredTermCount, reindex, screen, tileDesc, lastInfo, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, pageCtx, glossStar, get packs() { return packs; } };
 })();

@@ -1655,3 +1655,12 @@ html:has(.win-resizing) { cursor: nwse-resize; }
 .lp[data-style="novel"] .lp-body .lp-type { display: none; }
 .lp[data-style="novel"] .lp-body h3 { font-size: 16px; opacity: .8; text-align: center; letter-spacing: .3em; margin-bottom: 16px; }
 .lp[data-style="novel"] .lp-body h3::before, .lp[data-style="novel"] .lp-body h3::after { content: '　❖　'; opacity: .6; }
+
+/* 連載小說朗讀列（js/novel-audio.js） */
+.nv-audio { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 14px; padding: 6px 8px; border: 2px solid var(--line); background: rgba(0,0,0,.18); text-indent: 0; }
+.nv-audio .nv-prog { flex: 1 1 120px; height: 8px; background: rgba(255,255,255,.15); cursor: pointer; position: relative; }
+.nv-audio .nv-prog i { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--gold); }
+.nv-audio .nv-time { min-width: 76px; text-align: center; font-variant-numeric: tabular-nums; }
+.nv-audio .nv-rate { font: inherit; font-size: 13px; padding: 1px 4px; }
+.nv-audio .nv-auto { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap; }
+html.read-light .nv-audio { background: rgba(0,0,0,.05); }
