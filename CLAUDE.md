@@ -561,3 +561,11 @@
 ## 更新公告彈窗（2026-10-31，v170）
 
 - `js/screens.js` 的 `NEWS` 清單＋`newsModal()`：進營地時若有沒看過的公告就彈出一次（記在 `profile.newsSeen`，跟著存檔／雲端同步，換裝置不會再跳）；已有其他視窗開著時不彈。第一則是背景商店開張（位置、卡池、碎片、四時段場景、布置與拖曳），附「去背景商店」按鈕。之後要公告就加一筆新 id（舊 id 不要改）。
+
+## 連載小說《觀瞳記》（2026-10-31，v174）
+
+- 眼解剖生理學（115 大二上）的原創長篇武俠推理連載，走懂藥少女 × 貴公子 × 後宮毒案路線；融入 emomo 說會考、自主神經 5 單元、血液供應 3 單元的國考重點。規劃檔在 `docs/novel/`：`考點總清單.md`（E/A/B 編號與章號，全書寫完要逐條核對）、`大綱.md`（世界、人物、伏筆表、分卷與細綱）、`寫作規則.md`（給主筆的文風與知識放法）。
+- 流程：Claude 寫細綱與審稿，Codex（gpt-6.1-terra，同一卷沿用同一個 `codex exec resume` 對話）寫正文到 `tmp/novel/chNN.md`；審定稿放 `docs/novel/正文/第N卷/chNN.md`（正文正本），`python tools/novel/build_novel.py` 轉成 `content/learn/eye_ans/novel/guantong-vN.json`（每卷一單元、每章一課、每場一張 card），再 `python tools/build.py --strict`。
+- 單元設 `style: "novel"`、`calm: true`：build 不套節奏與卡片長度警告；`js/learn.js` 在 `.lp` 加 `data-style="novel"`（段首縮排、場次標題縮小、不顯示「概念」標籤），完成畫面改成「讀完本章／下一章」。
+- 考點名詞底線：`js/glossary.js` 在小說頁每個名詞每頁只標第一次；小說專用名詞在 `content/glossary/eye-novel.json`（由 `tools/novel/glossary_src.py` 產生），每筆 `only: "novel"`，只在小說頁標，不影響其他學習頁。
+- QA：`tools/novel-qa/check.cjs`（每章逐頁到完成畫面、無戰鬥條、縮排、名詞不重複標、小說名詞不外漏到 ans-basics、桌機＋390px）。第一卷 6 章約 3.4 萬字，250 項通過。沒有醫學審稿、沒有實機 iPad 測試。

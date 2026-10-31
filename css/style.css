@@ -1649,3 +1649,9 @@ html:has(.win-resizing) { cursor: nwse-resize; }
 .camp[data-night="dim"].tod-dusk :is(.camp-board,.camp-mail,.camp-pot,.camp-pond), .camp[data-night="orig"].tod-dusk :is(.camp-board,.camp-mail,.camp-pot,.camp-pond) { filter:brightness(.9) sepia(.12); }
 .camp[data-night="tod"].tod-night :is(.camp-board,.camp-mail,.camp-pot,.camp-pond) { filter:brightness(.85) saturate(.9); }
 .camp[data-night="tod"].tod-dusk :is(.camp-board,.camp-mail,.camp-pot,.camp-pond) { filter:brightness(.95) sepia(.1); }
+
+/* 連載小說（style: "novel"）：段首縮排、行距放寬，場次標題縮小 */
+.lp[data-style="novel"] .lp-body p { text-indent: 2em; line-height: 1.95; margin: 0 0 .6em; letter-spacing: .02em; }
+.lp[data-style="novel"] .lp-body .lp-type { display: none; }
+.lp[data-style="novel"] .lp-body h3 { font-size: 16px; opacity: .8; text-align: center; letter-spacing: .3em; margin-bottom: 16px; }
+.lp[data-style="novel"] .lp-body h3::before, .lp[data-style="novel"] .lp-body h3::after { content: '　❖　'; opacity: .6; }

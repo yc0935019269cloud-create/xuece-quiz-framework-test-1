@@ -661,7 +661,7 @@ const LEARN_UI = (() => {
     D.last = { p: p.id, l: l.id };
     save();
     const S = C.SUBJECTS[p.subject];
-    scr().innerHTML = `<div class="panel learn lp" data-pack="${U.esc(p.id)}" data-lesson="${U.esc(l.id)}" style="--sc:${S.color}">
+    scr().innerHTML = `<div class="panel learn lp" data-pack="${U.esc(p.id)}" data-lesson="${U.esc(l.id)}"${p.style === 'novel' ? ' data-style="novel"' : ''} style="--sc:${S.color}">
       <div class="row lp-head"><button class="px-btn small" id="lpExit" title="進度會自動保存">✕ 離開</button>
         <div class="grow lp-title"><small>${U.esc(p.title)}</small><b>${U.esc(l.title)}</b></div>
         <button class="px-btn small" id="lpBattle"${p.calm ? ' hidden' : ''} title="戰鬥模式：答對攻擊、答錯被反擊（不影響學習進度）">${BON() ? '⚔ 戰鬥中' : '🕊 平靜模式'}</button><button class="px-btn small" data-read-toggle title="閱讀模式：正文改成米色紙張底，長時間閱讀比較舒服">${readLight() ? '🌙 深色' : '📖 閱讀模式'}</button><span class="lp-cnt" id="lpCnt"></span></div>
@@ -1254,17 +1254,17 @@ const LEARN_UI = (() => {
         <h2>🎉 完成「${U.esc(l.title)}」</h2>
         ${rank ? `<div class="lp-rank r-${rank}"><b>${rank}</b><small>${newBestRank ? '新紀錄！' : '戰鬥評等'}</small></div>` : ''}
         <div class="lp-stars">${stars(star).split('').map((c, i) => `<span style="animation-delay:${i * .25}s" class="${c === '★' ? 'on' : ''}">${c}</span>`).join('')}</div>
-        <p>第一次就答對 <b class="gold-t">${R.ok}</b> / ${R.n} 題（${U.pct(R.ok, R.n)}%）・用時約 ${mins} 分鐘</p>
+        ${p.style === 'novel' ? `<p>讀完本章・用時約 ${mins} 分鐘</p>` : `<p>第一次就答對 <b class="gold-t">${R.ok}</b> / ${R.n} 題（${U.pct(R.ok, R.n)}%）・用時約 ${mins} 分鐘</p>`}
         ${bt.seg !== undefined && (bt.kills || bt.bossDone) ? `<p>⚔ 擊敗怪物 ${bt.kills || 0} 隻${bt.maxCombo >= 2 ? `・最高 <b class="gold-t">${bt.maxCombo}</b> 連擊` : ''}${bt.chests ? `・寶箱 ${bt.chests} 個` : ''}${bt.bossDone ? `・課末魔王 ${bt.bossWin ? '<b class="gold-t">討伐成功</b>' : '撤退'}` : ''}${bt.falls ? `・倒下 ${bt.falls} 次` : bt.hurt ? `・受傷 ${bt.hurt} 次` : '・<b class="green-t">無傷通關</b>'}</p>` : ''}
         <p>${gain ? `獲得 <b class="purple-t">${gain}</b> 魂晶${rightGem || rankGem ? `（${rightGem ? `答對 +${rightGem}` : ''}${rightGem && rankGem ? '、' : ''}${rankGem ? `評等 ${rank} +${rankGem}` : ''}${first ? '' : '，重上的課減量'}）` : ''}・` : ''}帳號經驗 +${first ? 25 : 8}${ups ? '・<b class="gold-t">帳號升級！</b>' : ''}</p>
-        <p class="dim small-t">答錯的檢核題與本課記憶卡已放進「🔁 複習」。</p>
+        ${p.style === 'novel' ? '' : '<p class="dim small-t">答錯的檢核題與本課記憶卡已放進「🔁 複習」。</p>'}
         <div class="row mt" style="justify-content:center">
           <button class="px-btn" id="dBack">回單元</button>
-          ${nl ? `<button class="px-btn gold big" id="dNext">下一課：${U.esc(nl.title)} ▶</button>` : `<button class="px-btn gold" id="dRev">去複習</button>`}
+          ${nl ? `<button class="px-btn gold big" id="dNext">${p.style === 'novel' ? '下一章' : '下一課'}：${U.esc(nl.title)} ▶</button>` : p.style === 'novel' ? '' : `<button class="px-btn gold" id="dRev">去複習</button>`}
         </div></div>`;
       U.$('#dBack').onclick = () => packView(p);
       if (nl) U.$('#dNext').onclick = () => play(p, nl);
-      else U.$('#dRev').onclick = () => { tab = 'review'; screen(); };
+      else if (U.$('#dRev')) U.$('#dRev').onclick = () => { tab = 'review'; screen(); };
     }
     drawBattle();
     const jump = openPage && openPage.key === key ? openPage.i : null; openPage = null;

@@ -586,7 +586,7 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
                     R.err(SW, f'{t} 需要 body')
                 if t == 'card' and not is_str(s.get('title')):
                     R.err(SW, 'card 需要 title')
-                if t == 'card' and len(s.get('body') or '') > 900 and pack.get('style') != 'atlas':
+                if t == 'card' and len(s.get('body') or '') > 900 and pack.get('style') not in ('atlas', 'novel'):
                     R.warn(SW, '概念卡超過 900 字，建議拆成兩張卡（中間插一題檢核）')
                 if s.get('flash') is not None:
                     check_flash(s['flash'], SW + '.flash', R)
@@ -686,7 +686,7 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
                     R.err(SW, 'recap 需要 points（重點陣列）')
                 for fi, f in enumerate(s.get('flash') or []):
                     check_flash(f, f'{SW}.flash[{fi}]', R)
-        if pack.get('style') == 'atlas':   # 圖鑑式單元：以看圖為主，不套用卡片／檢核題／範例的節奏建議
+        if pack.get('style') in ('atlas', 'novel'):   # 圖鑑式單元、連載小說：以看圖為主，不套用卡片／檢核題／範例的節奏建議
             continue
         if types[0] != 'intro':
             R.warn(W, '節奏：第一步建議是 intro（導入）')
@@ -1019,7 +1019,8 @@ def build_glossary():
             seen[e['id']] = rel(f)
             out.append({'id': e['id'], 'match': m, 'zh': e['zh'], 'en': e['en'],
                         'parts': [p for p in e.get('parts') or [] if isinstance(p, list) and len(p) == 2],
-                        'note': e.get('note') or '', 'rel': e.get('rel') or ''})
+                        'note': e.get('note') or '', 'rel': e.get('rel') or '',
+                        **({'only': e['only']} if e.get('only') == 'novel' else {})})
         if errs:
             bad += 1
             print(f'✘ {rel(f)}'); [print('    ' + x) for x in errs]

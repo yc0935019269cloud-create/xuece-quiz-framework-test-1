@@ -24,14 +24,15 @@ const GLOSS = (() => {
     return true;
   }
 
-  function wrapText(node) {
+  function wrapText(node, seen) {
     const t = node.nodeValue;
     if (!t || t.trim().length < 2) return;
     re.lastIndex = 0;
     let m, last = 0, frag = null;
     while ((m = re.exec(t))) {
       const e = byKey.get(m[0].toLowerCase());
-      if (!e) continue;
+      if (!e || (seen && seen.has(e.id)) || (e.only === 'novel' && !seen)) continue;   // only: 'novel'＝只在連載小說裡標
+      if (seen) seen.add(e.id);
       frag = frag || document.createDocumentFragment();
       if (m.index > last) frag.appendChild(document.createTextNode(t.slice(last, m.index)));
       const s = document.createElement('span');
@@ -52,7 +53,9 @@ const GLOSS = (() => {
     });
     const list = [];
     while (w.nextNode()) list.push(w.currentNode);
-    list.forEach(wrapText);
+    // 連載小說（data-style="novel"）：同一頁每個名詞只標第一次，避免整頁都是底線
+    const seen = root.closest && root.closest('[data-style="novel"]') ? new Set([...root.querySelectorAll('.gl')].map(x => x.dataset.g)) : null;
+    list.forEach(n => wrapText(n, seen));
   }
 
   const find = id => ((window.LEARN && window.LEARN.glossary) || []).find(e => e.id === id);
