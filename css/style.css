@@ -704,7 +704,7 @@ input[type=range]::-moz-range-thumb { width: 14px; height: 18px; background: var
 .camp-mail .flag-dot { position: absolute; right: 2px; top: 6px; width: 8px; height: 8px; background: #ff5c6c; border: 2px solid var(--line); animation: ptTwinkle 1.2s steps(2) infinite; }
 .camp-mail.read .flag-dot { display: none; }
 .camp-pot { left: 73%; bottom: 22px; }
-.camp-pond { right: 2%; bottom: 3px; width: min(170px, 22%); z-index: 1; }
+.camp-pond { right: 2%; bottom: 3px; width: min(128px, 17%); z-index: 1; }
 .camp-pond > img { width: 100%; display: block; image-rendering: pixelated; }
 
 
@@ -772,7 +772,7 @@ input[type=range]::-moz-range-thumb { width: 14px; height: 18px; background: var
 }
 @media (max-width: 640px) {
   .camp-wrap .camp-obj { zoom: .72; }
-  .camp-wrap .camp-pond { zoom: 1; width: 26%; }
+  .camp-wrap .camp-pond { zoom: 1; width: 21%; }
   .camp-wrap .camp-hero { left: 17%; }
   .camp-mail { left: 34%; }
   .camp-pot { left: 66%; }
@@ -1635,7 +1635,7 @@ html:has(.win-resizing) { cursor: nwse-resize; }
 .camp-fire { width:70px; height:78px; }
 .camp-mail { width:40px; height:48px; }
 .camp-pot { width:48px; height:56px; }
-.camp-pond { aspect-ratio:48 / 14; }
+.camp-pond { aspect-ratio:64 / 38; }
 .camp-art { display:block; position:absolute; top:0; left:0; width:100%; image-rendering:pixelated; background-repeat:no-repeat; }
 .board-art { height:36px; background-image:url('../assets/camp/board.png'); background-size:100% 100%; }
 .fire-art { height:70px; background-image:url('../assets/camp/fire.png'); background-size:400% 100%; animation:campFireFrames .8s steps(4) infinite; }
