@@ -845,10 +845,15 @@ const Screens = (() => {
     const accOwned = aid => !aid || p.ownedAcc.includes(aid);
     const skinName = sid => ([{ id: '', name: '原色' }].concat(C.PET_SKINS[id] || []).find(s => s.id === sid) || {}).name;
     const accInfo = aid => aid ? C.PET_ACCS.find(a => a.id === aid) : { id: '', name: '不戴', cost: 0 };
+    const skinInfo = sid => (C.PET_SKINS[id] || []).find(s => s.id === sid);
+    const skinCost = sid => (skinInfo(sid) || {}).cost || C.SKIN_COST;
+    const isArt = sid => !!(skinInfo(sid) || {}).img;
     const draw = () => {
       const skins = [{ id: '', name: '原色' }].concat(C.PET_SKINS[id] || []);
-      const needSkin = !skinOwned(trySkin), needAcc = !accOwned(tryAcc);
-      const cost = (needSkin ? C.SKIN_COST : 0) + (needAcc ? accInfo(tryAcc).cost : 0);
+      // Drawn skins cannot wear accessories: keep only an accessory the player already owns, and do not charge for one.
+      if (isArt(trySkin) && !accOwned(tryAcc)) tryAcc = p.petAcc[id] || '';
+      const needSkin = !skinOwned(trySkin), needAcc = !isArt(trySkin) && !accOwned(tryAcc);
+      const cost = (needSkin ? skinCost(trySkin) : 0) + (needAcc ? accInfo(tryAcc).cost : 0);
       const wearing = trySkin === (p.petSkin[id] || '') && tryAcc === (p.petAcc[id] || '');
       box.innerHTML = `<div class="row" style="align-items:flex-start;gap:18px">
         <div class="col" style="align-items:center">
@@ -858,7 +863,8 @@ const Screens = (() => {
         <div class="grow">
           <div class="row">名字：<input class="px-in" id="pnm" maxlength="8" value="${U.esc(Store.petName(id))}"><button class="px-btn small" id="pnb">改名</button></div>
           <div class="try-bar mt">
-            <div><b class="gold-t">試穿中</b>：${skinName(trySkin)}${needSkin ? '<span class="tag ng">未擁有</span>' : ''}・${accInfo(tryAcc).name}${needAcc ? '<span class="tag ng">未擁有</span>' : ''}</div>
+            <div><b class="gold-t">試穿中</b>：${skinName(trySkin)}${needSkin ? '<span class="tag ng">未擁有</span>' : ''}${isArt(trySkin) ? '' : `・${accInfo(tryAcc).name}${needAcc ? '<span class="tag ng">未擁有</span>' : ''}`}</div>
+            ${isArt(trySkin) && skinInfo(trySkin).desc ? `<div class="small-t dim">${U.esc(skinInfo(trySkin).desc)}</div>` : ''}
             <div class="row mt">
               ${wearing ? '<span class="tag ok">目前穿著</span>'
                 : cost ? `<button class="px-btn gold small" id="buy" ${p.gems < cost ? 'disabled' : ''}>購買並穿上（${cost} 魂晶）</button>`
@@ -867,18 +873,20 @@ const Screens = (() => {
               <span class="small-t dim">魂晶：<b class="purple-t">${p.gems}</b></span>
             </div>
           </div>
-          <p class="small-t dim">點任何造型或服裝都能免費試穿；造型每隻 ${C.SKIN_COST} 魂晶，配件與套裝買一次所有夥伴都能穿。</p>
+          <p class="small-t dim">點任何造型或服裝都能免費試穿；換色造型每隻 ${C.SKIN_COST} 魂晶，手繪造型 80～120 魂晶，配件與套裝買一次所有夥伴都能穿。</p>
           <h3>造型</h3><div class="row" id="sks"></div>
-          <h3 class="mt">配件與整套服裝</h3><div class="row" id="acs"></div>
+          <h3 class="mt">✨ 手繪造型</h3><div class="row" id="sksArt"></div>
+          <h3 class="mt">配件與整套服裝</h3>${isArt(trySkin) ? '<p class="small-t dim" id="artNoAcc">手繪造型不能戴配件；換回換色造型就能再戴。</p>' : '<div class="row" id="acs"></div>'}
         </div></div>`;
-      const sks = U.$('#sks', box), acs = U.$('#acs', box);
+      const sks = U.$('#sks', box), sksArt = U.$('#sksArt', box), acs = U.$('#acs', box);
       skins.forEach(s => {
         const owned = skinOwned(s.id), on = trySkin === s.id;
-        const b = U.h(`<button class="px-btn small style-opt ${on ? 'sel' : ''}">${Store.petHTML(id, 44, '', '', s.id, tryAcc)}<span>${s.name}${owned ? ((p.petSkin[id] || '') === s.id ? '<br><b class="green-t">穿著中</b>' : '<br><b class="dim">已擁有</b>') : `<br><b class="purple-t">${C.SKIN_COST}</b>`}</span></button>`);
+        const b = U.h(`<button class="px-btn small style-opt ${on ? 'sel' : ''}">${Store.petHTML(id, 44, '', '', s.id, tryAcc)}<span>${s.name}${owned ? ((p.petSkin[id] || '') === s.id ? '<br><b class="green-t">穿著中</b>' : '<br><b class="dim">已擁有</b>') : `<br><b class="purple-t">${s.cost || C.SKIN_COST}</b>`}</span></button>`);
         b.onclick = () => { trySkin = s.id; SFX.play('pet'); draw(); PetArt.act(U.$('#fit', box), 'hop'); };
-        sks.appendChild(b);
+        (s.img ? sksArt : sks).appendChild(b);
       });
-      [{ id: '', name: '不戴', cost: 0 }].concat(C.PET_ACCS.filter(a => !a.hidden || accOwned(a.id))).forEach(a => {
+      if (!sksArt.children.length) sksArt.previousElementSibling.remove(), sksArt.remove();
+      if (acs) [{ id: '', name: '不戴', cost: 0 }].concat(C.PET_ACCS.filter(a => !a.hidden || accOwned(a.id))).forEach(a => {
         const owned = accOwned(a.id), on = tryAcc === a.id;
         const b = U.h(`<button class="px-btn small style-opt ${on ? 'sel' : ''} ${a.set ? 'is-set' : ''}">${Store.petHTML(id, 44, '', '', trySkin, a.id)}<span>${a.name}${owned ? ((p.petAcc[id] || '') === a.id ? '<br><b class="green-t">穿著中</b>' : (a.id ? '<br><b class="dim">已擁有</b>' : '')) : `<br><b class="purple-t">${a.cost}</b>`}</span></button>`);
         b.onclick = () => { tryAcc = a.id; SFX.play('pet'); draw(); PetArt.act(U.$('#fit', box), a.set ? 'wave' : 'hop'); };

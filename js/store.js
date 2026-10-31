@@ -225,6 +225,8 @@ const Store = (() => {
     const sid = skinId === undefined ? profile.petSkin[id] : skinId;
     const sk = sid && (C.PET_SKINS[id] || []).find(x => x.id === sid);
     const acc = accId === undefined ? profile.petAcc[id] : accId;
+    // Drawn skins come as image frames and cannot wear accessories.
+    if (sk && sk.img) return SP.pet(id, size, cls, style, { img: sk.img }, null);
     return SP.pet(id, size, cls, style, sk ? sk.pal : null, acc || null);
   }
   // 沒有設定過造型時：騎士預設穿「薔薇近衛」（免費）；明確選過經典預設款（空字串）則照舊

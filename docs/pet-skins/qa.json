@@ -1,0 +1,173 @@
+{
+ "date": "2026-10-31T17:35:48.010Z",
+ "pass": 24,
+ "total": 24,
+ "results": [
+  {
+   "name": "[1100] all 45 drawn skins x 6 frames load",
+   "pass": true,
+   "info": []
+  },
+  {
+   "name": "[1100] skins registered in C.PET_SKINS with price and image folder",
+   "pass": true
+  },
+  {
+   "name": "[1100] classic palette skins are untouched",
+   "pass": true
+  },
+  {
+   "name": "[1100] old save with a classic skin still uses the procedural sprite",
+   "pass": true
+  },
+  {
+   "name": "[1100] fitting room lists classic and drawn skins separately",
+   "pass": true,
+   "info": {
+    "art": 5,
+    "classic": 5,
+    "hs": false,
+    "mhs": false
+   }
+  },
+  {
+   "name": "[1100] fitting room has no horizontal scroll",
+   "pass": true,
+   "info": {
+    "art": 5,
+    "classic": 5,
+    "hs": false,
+    "mhs": false
+   }
+  },
+  {
+   "name": "[1100] trying a drawn skin shows its frames, hides accessories, shows the price",
+   "pass": true,
+   "info": {
+    "fit": "assets/pets/cat/moon/idle0.png",
+    "note": true,
+    "acs": false,
+    "buy": "購買並穿上（120 魂晶）"
+   }
+  },
+  {
+   "name": "[1100] buying deducts 120 and records ownership",
+   "pass": true,
+   "info": {
+    "gems": 880,
+    "owned": [
+     "cat:black",
+     "cat:art_moon"
+    ],
+    "wear": "art_moon"
+   }
+  },
+  {
+   "name": "[1100] camp pet shows the drawn skin after reload",
+   "pass": true,
+   "info": "assets/pets/cat/moon/idle0.png"
+  },
+  {
+   "name": "[1100] battle and learn markup use the drawn skin",
+   "pass": true
+  },
+  {
+   "name": "[1100] animation swaps frames (happy, surprise, sleep, breathing)",
+   "pass": true,
+   "info": [
+    "happy.png",
+    "surprise.png",
+    "sleep.png",
+    "idle1.png",
+    "idle0.png"
+   ]
+  },
+  {
+   "name": "[1100] drawn skin ignores a worn accessory",
+   "pass": true
+  },
+  {
+   "name": "[1100] switching back to a classic skin restores accessories",
+   "pass": true
+  },
+  {
+   "name": "[390] old save with a classic skin still uses the procedural sprite",
+   "pass": true
+  },
+  {
+   "name": "[390] fitting room lists classic and drawn skins separately",
+   "pass": true,
+   "info": {
+    "art": 5,
+    "classic": 5,
+    "hs": false,
+    "mhs": false
+   }
+  },
+  {
+   "name": "[390] fitting room has no horizontal scroll",
+   "pass": true,
+   "info": {
+    "art": 5,
+    "classic": 5,
+    "hs": false,
+    "mhs": false
+   }
+  },
+  {
+   "name": "[390] trying a drawn skin shows its frames, hides accessories, shows the price",
+   "pass": true,
+   "info": {
+    "fit": "assets/pets/cat/moon/idle0.png",
+    "note": true,
+    "acs": false,
+    "buy": "購買並穿上（120 魂晶）"
+   }
+  },
+  {
+   "name": "[390] buying deducts 120 and records ownership",
+   "pass": true,
+   "info": {
+    "gems": 880,
+    "owned": [
+     "cat:black",
+     "cat:art_moon"
+    ],
+    "wear": "art_moon"
+   }
+  },
+  {
+   "name": "[390] camp pet shows the drawn skin after reload",
+   "pass": true,
+   "info": "assets/pets/cat/moon/idle0.png"
+  },
+  {
+   "name": "[390] battle and learn markup use the drawn skin",
+   "pass": true
+  },
+  {
+   "name": "[390] animation swaps frames (happy, surprise, sleep, breathing)",
+   "pass": true,
+   "info": [
+    "happy.png",
+    "surprise.png",
+    "sleep.png",
+    "idle0.png",
+    "idle1.png"
+   ]
+  },
+  {
+   "name": "[390] drawn skin ignores a worn accessory",
+   "pass": true
+  },
+  {
+   "name": "[390] switching back to a classic skin restores accessories",
+   "pass": true
+  },
+  {
+   "name": "no page errors",
+   "pass": true,
+   "info": []
+  }
+ ]
+}

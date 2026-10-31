@@ -137,7 +137,7 @@ const CampFun = (() => {
     const expr = U.pick(['happy', 'wink', 'neutral', 'surprise']);
     const pose = U.chance(0.4) ? 'wave' : '';
     const sk = p.petSkin[id] && (C.PET_SKINS[id] || []).find(x => x.id === p.petSkin[id]);
-    const src = PetArt.url(id, sk ? sk.pal : null, p.petAcc[id] || null, 0, expr, pose);
+    const src = PetArt.url(id, sk ? (sk.img ? { img: sk.img } : sk.pal) : null, sk && sk.img ? null : p.petAcc[id] || null, 0, expr, pose);
     const bg = U.pick(['#ffe3ec', '#e3f4ff', '#fff4d6', '#e8ffe3', '#efe6ff']);
     const d = new Date(), date = `${d.getFullYear()}/${d.getMonth() + 1}/${d.getDate()}`;
     SFX.play('open');

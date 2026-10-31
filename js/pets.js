@@ -351,7 +351,14 @@ const PetArt = (() => {
   const over = (grid, top) => { for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) if (top[y][x]) grid[y][x] = top[y][x]; };
 
   const cache = {};
+  /* Drawn skins (skin.img = folder of PNG frames) use files instead of the procedural canvas; no accessories. */
+  function artFrame(dir, frame, expr, pose) {
+    const f = expr === 'sleep' ? 'sleep' : expr === 'surprise' ? 'surprise' : expr === 'blink' ? 'blink'
+      : (expr === 'happy' || expr === 'wink' || pose) ? 'happy' : frame ? 'idle1' : 'idle0';
+    return dir + f + '.png';
+  }
   function url(id, skin, acc, frame = 0, expr = 'neutral', pose = '') {
+    if (skin && skin.img) return artFrame(skin.img, frame, expr, pose);
     const key = [id, JSON.stringify(skin || {}), acc || '', frame, expr, pose].join('|');
     if (cache[key]) return cache[key];
     const D = DEFS[id] || DEFS.slime, A = acc && ACC[acc];
