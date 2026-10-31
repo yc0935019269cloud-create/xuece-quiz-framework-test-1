@@ -23,6 +23,9 @@
 .camp.editing .camp-obj[data-base].drag { cursor: grabbing; opacity: .85; }
 /* While decorating, draw the hero and pet under other objects so their large frames do not cover things to grab. */
 .camp.editing .camp-hero, .camp.editing .camp-pet { z-index: 1; }
+/* Saved flip of the pet: its walk flip (.flip) then turns it back the other way. */
+.camp-pet[data-f="1"] .pet-sp { transform: scaleX(-1); }
+.camp-pet[data-f="1"].flip .pet-sp { transform: none; }
 
 .decor-drawer { margin: 8px 0 2px; padding: 10px; background: var(--panel2); border: 3px solid var(--line); box-shadow: inset 0 0 0 2px var(--hi); }
 .dc-dr-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }

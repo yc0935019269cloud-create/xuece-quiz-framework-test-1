@@ -1,0 +1,398 @@
+{
+ "date": "2026-10-31T17:07:49.426Z",
+ "pass": 39,
+ "total": 39,
+ "results": [
+  {
+   "name": "[1100] default order: pond first, hero and pet last",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "fire",
+    "mail",
+    "pot",
+    "hero",
+    "pet"
+   ]
+  },
+  {
+   "name": "[1100] all objects stay at z-index <= 3 (below camp effects)",
+   "pass": true
+  },
+  {
+   "name": "[1100] shop item selected: flip, 4 layer buttons and remove",
+   "pass": true,
+   "info": {
+    "layer": 4,
+    "flip": true,
+    "del": true
+   }
+  },
+  {
+   "name": "[1100] item 最前 puts it last in stacking order",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "fire",
+    "mail",
+    "pot",
+    "hero",
+    "pet",
+    "item:p11yh"
+   ]
+  },
+  {
+   "name": "[1100] item 最後 puts it first in stacking order",
+   "pass": true,
+   "info": [
+    "item:p11yh",
+    "pond",
+    "board",
+    "fire",
+    "mail",
+    "pot",
+    "hero",
+    "pet"
+   ]
+  },
+  {
+   "name": "[1100] item 往前一層 moves it up",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "fire",
+    "mail",
+    "pot",
+    "hero",
+    "item:p11yh",
+    "pet"
+   ]
+  },
+  {
+   "name": "[1100] item 往後一層 moves it down",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "fire",
+    "mail",
+    "pot",
+    "item:p11yh",
+    "hero",
+    "pet"
+   ]
+  },
+  {
+   "name": "[1100] item flip saved as o.f",
+   "pass": true
+  },
+  {
+   "name": "[1100] base object selected: flip and 4 layer buttons, no remove",
+   "pass": true,
+   "info": {
+    "layer": 4,
+    "flip": true,
+    "del": false
+   }
+  },
+  {
+   "name": "[1100] campfire flip uses scale and saves base.fire.f",
+   "pass": true
+  },
+  {
+   "name": "[1100] campfire 最前 goes above hero and pet",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "mail",
+    "pot",
+    "item:p11yh",
+    "hero",
+    "pet",
+    "fire"
+   ]
+  },
+  {
+   "name": "[1100] dragging after flip/layer keeps z and f",
+   "pass": true,
+   "info": {
+    "z": 8,
+    "f": 1,
+    "x": 0.16634241245136186,
+    "y": 0.24285714285714285
+   }
+  },
+  {
+   "name": "[1100] pet flip is a data flag (walk flip still works)",
+   "pass": true
+  },
+  {
+   "name": "[1100] selected pet is not lowered in edit mode",
+   "pass": true
+  },
+  {
+   "name": "[1100] hero 最後 goes to the back",
+   "pass": true,
+   "info": [
+    "hero",
+    "pond",
+    "board",
+    "mail",
+    "pot",
+    "item:p11yh",
+    "pet",
+    "fire"
+   ]
+  },
+  {
+   "name": "[1100] order and flips survive reload",
+   "pass": true,
+   "info": {
+    "o2": [
+     "hero",
+     "pond",
+     "board",
+     "mail",
+     "pot",
+     "item:p11yh",
+     "pet",
+     "fire"
+    ],
+    "ordSaved": [
+     "hero",
+     "pond",
+     "board",
+     "mail",
+     "pot",
+     "item:p11yh",
+     "pet",
+     "fire"
+    ]
+   }
+  },
+  {
+   "name": "[1100] hero stays at the back outside edit mode (z-index 2, first in DOM)",
+   "pass": true
+  },
+  {
+   "name": "[1100] reset clears base and item layer keys, default order back",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "mail",
+    "pot",
+    "fire",
+    "item:p11yh",
+    "hero",
+    "pet"
+   ]
+  },
+  {
+   "name": "[1100] reset keeps item flip and position",
+   "pass": true
+  },
+  {
+   "name": "[390] default order: pond first, hero and pet last",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "fire",
+    "mail",
+    "pot",
+    "hero",
+    "pet"
+   ]
+  },
+  {
+   "name": "[390] all objects stay at z-index <= 3 (below camp effects)",
+   "pass": true
+  },
+  {
+   "name": "[390] shop item selected: flip, 4 layer buttons and remove",
+   "pass": true,
+   "info": {
+    "layer": 4,
+    "flip": true,
+    "del": true
+   }
+  },
+  {
+   "name": "[390] item 最前 puts it last in stacking order",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "fire",
+    "mail",
+    "pot",
+    "hero",
+    "pet",
+    "item:p15ee"
+   ]
+  },
+  {
+   "name": "[390] item 最後 puts it first in stacking order",
+   "pass": true,
+   "info": [
+    "item:p15ee",
+    "pond",
+    "board",
+    "fire",
+    "mail",
+    "pot",
+    "hero",
+    "pet"
+   ]
+  },
+  {
+   "name": "[390] item 往前一層 moves it up",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "fire",
+    "mail",
+    "pot",
+    "hero",
+    "item:p15ee",
+    "pet"
+   ]
+  },
+  {
+   "name": "[390] item 往後一層 moves it down",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "fire",
+    "mail",
+    "pot",
+    "item:p15ee",
+    "hero",
+    "pet"
+   ]
+  },
+  {
+   "name": "[390] item flip saved as o.f",
+   "pass": true
+  },
+  {
+   "name": "[390] base object selected: flip and 4 layer buttons, no remove",
+   "pass": true,
+   "info": {
+    "layer": 4,
+    "flip": true,
+    "del": false
+   }
+  },
+  {
+   "name": "[390] campfire flip uses scale and saves base.fire.f",
+   "pass": true
+  },
+  {
+   "name": "[390] campfire 最前 goes above hero and pet",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "mail",
+    "pot",
+    "item:p15ee",
+    "hero",
+    "pet",
+    "fire"
+   ]
+  },
+  {
+   "name": "[390] dragging after flip/layer keeps z and f",
+   "pass": true,
+   "info": {
+    "z": 8,
+    "f": 1,
+    "x": 0.27691761363636364,
+    "y": 0.19561688311688313
+   }
+  },
+  {
+   "name": "[390] pet flip is a data flag (walk flip still works)",
+   "pass": true
+  },
+  {
+   "name": "[390] selected pet is not lowered in edit mode",
+   "pass": true
+  },
+  {
+   "name": "[390] hero 最後 goes to the back",
+   "pass": true,
+   "info": [
+    "hero",
+    "pond",
+    "board",
+    "mail",
+    "pot",
+    "item:p15ee",
+    "pet",
+    "fire"
+   ]
+  },
+  {
+   "name": "[390] order and flips survive reload",
+   "pass": true,
+   "info": {
+    "o2": [
+     "hero",
+     "pond",
+     "board",
+     "mail",
+     "pot",
+     "item:p15ee",
+     "pet",
+     "fire"
+    ],
+    "ordSaved": [
+     "hero",
+     "pond",
+     "board",
+     "mail",
+     "pot",
+     "item:p15ee",
+     "pet",
+     "fire"
+    ]
+   }
+  },
+  {
+   "name": "[390] hero stays at the back outside edit mode (z-index 2, first in DOM)",
+   "pass": true
+  },
+  {
+   "name": "[390] reset clears base and item layer keys, default order back",
+   "pass": true,
+   "info": [
+    "pond",
+    "board",
+    "mail",
+    "pot",
+    "fire",
+    "item:p15ee",
+    "hero",
+    "pet"
+   ]
+  },
+  {
+   "name": "[390] reset keeps item flip and position",
+   "pass": true
+  },
+  {
+   "name": "no page errors",
+   "pass": true,
+   "info": []
+  }
+ ]
+}

@@ -193,7 +193,7 @@ const DECOR = (() => {
   let M = null; // 營地目前的狀態
   function decorStyle(o, it, sc) {
     const g = sc.ground;
-    return `left:${(o.x * 100).toFixed(2)}%;bottom:${(OFF + o.y * g * 100).toFixed(2)}%;width:calc(${it.w}px * var(--ds,1));aspect-ratio:${it.w}/${it.h};z-index:${o.y > 0.5 ? 1 : 2};transform:translateX(-50%)${o.f ? ' scaleX(-1)' : ''}`;
+    return `left:${(o.x * 100).toFixed(2)}%;bottom:${(OFF + o.y * g * 100).toFixed(2)}%;width:calc(${it.w}px * var(--ds,1));aspect-ratio:${it.w}/${it.h};z-index:2;transform:translateX(-50%)${o.f ? ' scaleX(-1)' : ''}`;
   }
   function renderPlaced() {
     if (!M) return;
@@ -207,8 +207,10 @@ const DECOR = (() => {
     const anchor = M.scene.querySelector('.camp-hero');
     M.scene.insertBefore(frag, anchor || null);
     fixImgs(M.scene);
+    applyOrder();
   }
   function styleOne(el, o) { const it = item(o.id); if (it) el.style.cssText = decorStyle(o, it, M.sc); }
+  const LAYER_BTNS = [['up', '⬆ 往前一層'], ['down', '⬇ 往後一層'], ['top', '⏫ 最前'], ['bottom', '⏬ 最後']].map(([k, t]) => `<button class="px-btn small" data-layer="${k}">${t}</button>`).join('');
   const BASE_NAMES = { board: '公告板', fire: '篝火', mail: '信箱', pot: '花盆', pond: '池塘', hero: '勇者', pet: '夥伴' };
   function styleBase(el, o) {
     // Keep the original CSS position and size, including its mobile zoom.
@@ -229,9 +231,69 @@ const DECOR = (() => {
   function renderBase() {
     const base = ensure().base;
     M.scene.querySelectorAll('[data-base]').forEach(el => {
-      styleBase(el, base[el.dataset.base]);
+      const b = base[el.dataset.base];
+      styleBase(el, b);
+      flipBase(el, b && b.f);
       el.classList.toggle('sel', !!M.edit && M.baseSel === el.dataset.base);
     });
+    applyOrder();
+  }
+  // The pet already flips its sprite while walking, so its saved flip is a data flag handled in CSS.
+  function flipBase(el, f) {
+    if (el.dataset.base === 'pet') { if (f) el.dataset.f = '1'; else delete el.dataset.f; }
+    else el.style.scale = f ? '-1 1' : '';
+  }
+  /* ---------- 前後順序 ----------
+     Every object gets the same inline z-index (2), so camp effects (z 4-9) stay on top;
+     stacking is the DOM order, sorted by a saved key (o.z / base[key].z). Defaults keep the old look. */
+  const BASE_Z = { pond: 1, board: 2, fire: 2, mail: 2, pot: 2, hero: 3, pet: 3 };
+  function layerKey(el) {
+    if (el.dataset.base) { const b = ensure().base[el.dataset.base]; return b && Number.isFinite(b.z) ? b.z : (BASE_Z[el.dataset.base] || 2); }
+    const o = find(el.dataset.k); return o && Number.isFinite(o.z) ? o.z : (o && o.y > 0.5 ? 1.5 : 2.5);
+  }
+  function layerEls() {
+    return [...M.scene.querySelectorAll('.decor-obj, .camp-obj[data-base]')].map((el, i) => ({ el, i, z: layerKey(el) }))
+      .sort((a, b) => a.z - b.z || a.i - b.i).map(x => x.el);
+  }
+  function applyOrder() {
+    if (!M) return;
+    const cur = [...M.scene.querySelectorAll('.decor-obj, .camp-obj[data-base]')], list = layerEls();
+    // Re-inserting restarts CSS animations and the pet's walk, so only move nodes when the order changed.
+    if (list.some((el, i) => el !== cur[i])) list.forEach(el => M.scene.appendChild(el));
+    list.forEach(el => {
+      // While decorating, the hero's and pet's large boxes would cover what is behind them, so they sit low unless selected.
+      const k = el.dataset.base, low = M.edit && (k === 'hero' || k === 'pet') && M.baseSel !== k;
+      el.style.zIndex = low ? 1 : 2;
+    });
+  }
+  function setLayerKey(el, z) {
+    if (el.dataset.base) { const d = ensure(); d.base[el.dataset.base] = Object.assign({}, d.base[el.dataset.base], { z }); }
+    else { const o = find(el.dataset.k); if (o) o.z = z; }
+  }
+  function selEl() {
+    if (!M) return null;
+    if (M.baseSel) return M.scene.querySelector(`.camp-obj[data-base="${M.baseSel}"]`);
+    return M.sel ? [...M.scene.querySelectorAll('.decor-obj')].find(e => e.dataset.k === M.sel) || null : null;
+  }
+  function layer(cmd) {
+    const el = selEl(); if (!el) return false;
+    const list = layerEls(), i = list.indexOf(el); if (i < 0) return false;
+    const r = el.getBoundingClientRect();
+    const ov = x => { const q = x.getBoundingClientRect(); return r.left < q.right && q.left < r.right && r.top < q.bottom && q.top < r.bottom; };
+    list.splice(i, 1);
+    let j;
+    if (cmd === 'top') j = list.length;
+    else if (cmd === 'bottom') j = 0;
+    else if (cmd === 'up') { const k = list.slice(i).findIndex(ov); j = k < 0 ? Math.min(i + 1, list.length) : i + k + 1; }
+    else { let k = -1; for (let t = i - 1; t >= 0; t--) if (ov(list[t])) { k = t; break; } j = k < 0 ? Math.max(i - 1, 0) : k; }
+    list.splice(j, 0, el);
+    list.forEach((x, n) => setLayerKey(x, n + 1));
+    save(); applyOrder();
+    return true;
+  }
+  function flipSel() {
+    if (M.baseSel) { const d = ensure(), b = d.base[M.baseSel] || {}; d.base[M.baseSel] = Object.assign({}, b, { f: b.f ? 0 : 1 }); save(); renderBase(); return; }
+    flip(M.sel); renderPlaced();
   }
   function posFromPoint(cx, cy) {
     const r = M.scene.getBoundingClientRect(), g = M.sc.ground;
@@ -243,13 +305,14 @@ const DECOR = (() => {
     const selO = M.sel && find(M.sel), selIt = selO && item(selO.id), baseName = M.baseSel && BASE_NAMES[M.baseSel];
     dr.innerHTML = `<div class="dc-dr-head"><b class="gold-t">🛠 布置營地</b><span class="small-t dim">點下面的物件放進營地；在營地裡拖曳移動。已擺 ${d.placed.length}/${MAX_PLACED}</span><span class="grow"></span>
         <button class="px-btn small" id="dcResetBase">↺ 基本物件回原位</button><button class="px-btn small" id="dcClear">清空</button><button class="px-btn small gold" id="dcDone">完成</button></div>
-      <div class="dc-sel ${selIt || baseName ? '' : 'none'}">${selIt ? `<b>${E(selIt.name)}</b><button class="px-btn small" id="dcFlip">↔ 翻轉</button><button class="px-btn small red" id="dcDel">🗑 收回</button>` : baseName ? `<b>${E(baseName)}</b><span class="small-t dim">拖曳移動基本物件</span>` : '<span class="small-t dim">點營地裡的物件可以翻轉或收回。</span>'}</div>
+      <div class="dc-sel ${selIt || baseName ? '' : 'none'}">${selIt || baseName ? `<b>${E(selIt ? selIt.name : baseName)}</b><button class="px-btn small" id="dcFlip">↔ 翻轉</button>${LAYER_BTNS}${selIt ? '<button class="px-btn small red" id="dcDel">🗑 收回</button>' : ''}` : '<span class="small-t dim">點營地裡的物件可以翻轉、調整前後或收回。</span>'}</div>
       <div class="dc-chips">${owned.length ? owned.map(i => { const a = available(i.id); return `<button class="dc-chip r-${i.rarity} ${a <= 0 ? 'used' : ''}" data-id="${E(i.id)}" ${a <= 0 ? 'disabled' : ''} title="${E(i.name)}">${imgHTML(i)}<small>×${Math.max(0, a)}</small></button>`; }).join('') : '<p class="small-t dim">還沒有物件。到商店抽獎或直購吧！</p>'}</div>`;
     fixImgs(dr);
     U.$('#dcDone', dr).onclick = () => setEdit(false);
-    U.$('#dcResetBase', dr).onclick = async () => { if (await U.confirm('基本物件回原位', '要將公告板、篝火、信箱、花盆、池塘、勇者和夥伴放回原位嗎？')) { ensure().base = {}; save(); M.baseSel = null; renderBase(); drawer(); } };
+    U.$('#dcResetBase', dr).onclick = async () => { if (await U.confirm('基本物件回原位', '要將公告板、篝火、信箱、花盆、池塘、勇者和夥伴放回原位，並把所有物件的前後順序恢復預設嗎？（擺放的家具位置不變）')) { const d = ensure(); d.base = {}; d.placed.forEach(o => { delete o.z; }); save(); M.baseSel = null; renderBase(); renderPlaced(); drawer(); } };
     U.$('#dcClear', dr).onclick = async () => { if (!ensure().placed.length) return; if (await U.confirm('清空營地', '要把營地裡所有擺放的物件都收回嗎？')) { clearAll(); M.sel = null; renderPlaced(); drawer(); } };
-    const fl = U.$('#dcFlip', dr); if (fl) fl.onclick = () => { flip(M.sel); renderPlaced(); drawer(); };
+    const fl = U.$('#dcFlip', dr); if (fl) fl.onclick = () => { flipSel(); drawer(); };
+    dr.querySelectorAll('[data-layer]').forEach(b => b.onclick = () => { if (layer(b.dataset.layer)) SFX.play('click'); });
     const del = U.$('#dcDel', dr); if (del) del.onclick = () => { remove(M.sel); M.sel = null; renderPlaced(); drawer(); };
     dr.querySelectorAll('.dc-chip').forEach(ch => {
       let suppress = false;
@@ -320,7 +383,7 @@ const DECOR = (() => {
       const dx = e.clientX - fx, dy = e.clientY - fy;
       let moved = false, pos = o;
       M.sel = isBase ? null : key; M.baseSel = isBase ? key : null;
-      sceneEl.querySelectorAll('.decor-obj, .camp-obj[data-base]').forEach(x => x.classList.toggle('sel', x === el)); drawer();
+      sceneEl.querySelectorAll('.decor-obj, .camp-obj[data-base]').forEach(x => x.classList.toggle('sel', x === el)); applyOrder(); drawer();
       try { el.setPointerCapture(e.pointerId); } catch (_) {}
       const mv = ev => {
         if (!moved && Math.hypot(ev.clientX - e.clientX, ev.clientY - e.clientY) < 3) return;
@@ -332,7 +395,7 @@ const DECOR = (() => {
       const up = () => {
         el.removeEventListener('pointermove', mv); el.removeEventListener('pointerup', up); el.removeEventListener('pointercancel', up);
         el.classList.remove('drag');
-        if (moved) { if (isBase) { ensure().base[key] = pos; save(); } else { move(o.k, o.x, o.y); renderPlaced(); } }
+        if (moved) { if (isBase) { const d = ensure(); d.base[key] = Object.assign({}, d.base[key], { x: pos.x, y: pos.y }); save(); } else { move(o.k, o.x, o.y); renderPlaced(); } }
       };
       el.addEventListener('pointermove', mv); el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up);
     });

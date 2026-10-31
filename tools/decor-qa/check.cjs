@@ -317,7 +317,7 @@ const realData = fs.existsSync(path.join(ROOT, 'js/decor-data.js'));
           // The pet may be mid-walk before the drag, so check that it lands where it was saved instead of a fixed pixel shift.
           const moved = key === 'pet' ? state.pos && Math.abs(state.centerX - state.pos.x) < .02 : Math.abs(after.left - before.left - dx) < 3;
           const shadowOk = !['hero', 'pet'].includes(key) || state.shadow;
-          ok(`${tag} ${sceneId} ${key} responds to ${width === 390 ? 'touch' : 'mouse'} drag without a remove button`, !!state.pos && state.pos.x >= .03 && state.pos.x <= .97 && state.pos.y >= 0 && state.pos.y <= 1 && !state.remove && !state.flip && moved && shadowOk, { before, after, state });
+          ok(`${tag} ${sceneId} ${key} responds to ${width === 390 ? 'touch' : 'mouse'} drag (flip, no remove button)`, !!state.pos && state.pos.x >= .03 && state.pos.x <= .97 && state.pos.y >= 0 && state.pos.y <= 1 && !state.remove && state.flip && moved && shadowOk, { before, after, state });
         }
         const savedBase = await page.evaluate(() => JSON.stringify(DECOR.ensure().base)), movedBoxes = await boxes(page);
         await page.screenshot({ path: path.join(OUT, `decor-${width}-base-${sceneId}.png`) });
