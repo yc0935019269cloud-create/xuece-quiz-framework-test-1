@@ -571,7 +571,8 @@
 - 流程：Claude 寫細綱與審稿，Codex（gpt-6.1-terra，同一卷沿用同一個 `codex exec resume` 對話）寫正文到 `tmp/novel/chNN.md`；審定稿放 `docs/novel/正文/第N卷/chNN.md`（正文正本），`python tools/novel/build_novel.py` 轉成 `content/learn/eye_ans/novel/guantong-vN.json`（每卷一單元、每章一課、每場一張 card），再 `python tools/build.py --strict`。
 - 單元設 `style: "novel"`、`calm: true`：build 不套節奏與卡片長度警告；`js/learn.js` 在 `.lp` 加 `data-style="novel"`（段首縮排、場次標題縮小、不顯示「概念」標籤），完成畫面改成「讀完本章／下一章」。
 - 考點名詞底線：`js/glossary.js` 在小說頁每個名詞每頁只標第一次；小說專用名詞在 `content/glossary/eye-novel.json`（由 `tools/novel/glossary_src.py` 產生），每筆 `only: "novel"`，只在小說頁標，不影響其他學習頁。
-- QA：`tools/novel-qa/check.cjs`（每章逐頁到完成畫面、無戰鬥條、縮排、名詞不重複標、小說名詞不外漏到 ans-basics、桌機＋390px）。第一卷 6 章約 3.4 萬字，250 項通過。沒有醫學審稿、沒有實機 iPad 測試。
+- QA：`tools/novel-qa/check.cjs`（每章逐頁到完成畫面、無戰鬥條、縮排、名詞不重複標、小說名詞不外漏到 ans-basics、桌機＋390px）。
+- **全書完成（2026-11-01）**：五卷 35 章、約 21 萬字（掖庭香／琉璃與碎雪／南嶺行／百草谷／歸京）；考點總清單 111 條全部對應到章節，每章 Claude 逐章審稿；小說名詞字典 101 條。QA 1,560 項 0 問題。沒有醫學審稿、沒有實機 iPad 測試。
 
 ## 連載小說朗讀（2026-11-01，v175）
 

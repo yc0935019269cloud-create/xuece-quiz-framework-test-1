@@ -1153,6 +1153,194 @@
    "note": "糖尿病（古稱消渴）傷害視網膜微血管 → 滲漏、黃斑水腫。增殖期：缺血 → 脆弱新生血管 → 玻璃體出血；虹膜／隅角新生血管 → 新生血管性青光眼；纖維血管膜收縮 → 牽引性視網膜剝離（滲出性剝離是視網膜下積液，機轉不同）。",
    "rel": "",
    "only": "novel"
+  },
+  {
+   "id": "nv-rapd",
+   "match": [
+    "擺動光試驗",
+    "相對性傳入瞳孔缺損",
+    "RAPD"
+   ],
+   "zh": "相對性傳入瞳孔缺損（RAPD）",
+   "en": "relative afferent pupillary defect",
+   "parts": [],
+   "note": "擺動光試驗：光在兩眼間來回照；照到傳入有缺損的那一眼時，兩眼瞳孔反而放大。傳入缺損：照患眼雙眼反應差、照健眼正常；傳出缺損：患眼對兩側照光都差。視力差本身不等於瞳孔變大。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-oligo",
+   "match": [
+    "寡突膠細胞",
+    "Schwann 細胞",
+    "許旺細胞"
+   ],
+   "zh": "寡突膠細胞與 Schwann 細胞",
+   "en": "oligodendrocyte / Schwann cell",
+   "parts": [],
+   "note": "視神經屬中樞神經，髓鞘由寡突膠細胞形成；周邊神經的髓鞘才是 Schwann 細胞。視神經纖維通過篩板之後才開始有髓鞘，眼內段與視盤通常無髓鞘。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-on-segments",
+   "match": [
+    "ISNT",
+    "軸突"
+   ],
+   "zh": "視神經的分段與構造",
+   "en": "optic nerve segments",
+   "parts": [],
+   "note": "眼內段約 1 mm、眶內段約 25 mm（最長、彎曲容許眼球轉動）、管內段、顱內段；約 120 萬條軸突。視盤無感光細胞＝生理盲點。盤緣厚度常見下 > 上 > 鼻 > 顳（ISNT），有個體差異，不能單獨診斷青光眼。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-cortical-blind",
+   "match": [
+    "皮質盲"
+   ],
+   "zh": "皮質盲與光反射",
+   "en": "cortical blindness",
+   "parts": [],
+   "note": "光反射路徑在中腦（頂蓋前核 → E-W 核），不經外側膝狀體與視覺皮質；所以視覺皮質病變的人看不見，瞳孔卻可照光收縮。「會縮瞳」不等於「看得見」。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-aneurysm",
+   "match": [
+    "血管瘤",
+    "動脈瘤"
+   ],
+   "zh": "顱內動脈瘤與神經壓迫",
+   "en": "intracranial aneurysm",
+   "parts": [],
+   "note": "後交通動脈瘤典型壓迫動眼神經（III）：瞳孔先受累散大、眼皮下垂、眼珠偏外下。眼動脈瘤可壓迫同側視神經 → 單眼視力缺損。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-adie",
+   "match": [
+    "Adie 瞳孔",
+    "艾迪瞳孔",
+    "Adie"
+   ],
+   "zh": "Adie 瞳孔",
+   "en": "Adie tonic pupil",
+   "parts": [],
+   "note": "副交感功能失調：瞳孔散大、對光反應差，眼瞼通常正常。可對極稀的 pilocarpine 出現明顯縮瞳（去神經超敏感，但不能單獨確診）。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-lnd",
+   "match": [
+    "光近分離"
+   ],
+   "zh": "光近分離",
+   "en": "light–near dissociation",
+   "parts": [],
+   "note": "對光反應受損、看近時縮瞳保留——常見於中腦頂蓋前區病變（光反射路徑壞、近反射路徑還在）。壓迫性動眼神經麻痺則光與近反應都差。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-presbyopia",
+   "match": [
+    "老花"
+   ],
+   "zh": "老花眼",
+   "en": "presbyopia",
+   "parts": [],
+   "note": "調節幅度隨年齡遞減，約 40 歲出現老花。看近時睫狀肌收縮、懸韌帶放鬆、水晶體變厚、屈光力增加；角膜不參與調節；看近時隅角不會變寬。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-near-triad",
+   "match": [
+    "近反射三聯",
+    "額葉眼區"
+   ],
+   "zh": "近反射三聯徵",
+   "en": "near triad",
+   "parts": [],
+   "note": "調節＋內聚＋縮瞳（開散不是）。近反射涉及視覺皮質（枕葉 17、18、19 區）與額葉眼區（8 區）；光反射不需要視覺皮質。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-aion",
+   "match": [
+    "前缺血性視神經病變"
+   ],
+   "zh": "前缺血性視神經病變（AION）",
+   "en": "anterior ischemic optic neuropathy",
+   "parts": [],
+   "note": "與後睫狀循環灌流不足有關。視神經頭表面靠中央視網膜動脈，深部靠後短睫狀動脈（Zinn–Haller 環）。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-artery-wall",
+   "match": [
+    "內彈性膜",
+    "內膜",
+    "中膜",
+    "外膜"
+   ],
+   "zh": "動脈壁的分層",
+   "en": "arterial wall layers",
+   "parts": [],
+   "note": "內膜（接觸血液）、內彈性膜（內膜與中膜交界）、中膜（平滑肌）、外膜（連接周圍組織）。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-haab",
+   "match": [
+    "Haab 紋",
+    "海布紋",
+    "牛眼",
+    "產鉗"
+   ],
+   "zh": "Descemet 膜裂紋：產傷與 Haab 紋",
+   "en": "Haab striae vs forceps injury",
+   "parts": [],
+   "note": "老師說會考 ⭐⭐⭐：產鉗產傷造成的 Descemet 膜裂紋多垂直或斜向；先天性青光眼（眼球變大，俗稱牛眼）的 Haab 紋多水平或同心圓。方向是常見型態，不是絕對。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-hemianopia",
+   "match": [
+    "同名偏盲"
+   ],
+   "zh": "同名偏盲與視路定位",
+   "en": "homonymous hemianopia",
+   "parts": [],
+   "note": "交叉後病灶（視徑、外側膝狀體、視放射、枕葉）→ 雙眼對側同一半看不見（例如左大腦中動脈出血 → 右側同名偏盲）。單眼全盲才找同側視神經（交叉前，例如眼動脈瘤壓迫）。視徑、外側膝狀體由前脈絡叢動脈參與供應（膝狀體另有後脈絡叢）；前脈絡叢是腦血管，不是眼球的脈絡膜。",
+   "rel": "",
+   "only": "novel"
+  },
+  {
+   "id": "nv-imaging",
+   "match": [
+    "CTA",
+    "MRA",
+    "電腦斷層血管攝影",
+    "磁振血管攝影",
+    "螢光血管攝影",
+    "吲哚青綠"
+   ],
+   "zh": "血管的影像檢查",
+   "en": "vascular imaging",
+   "parts": [],
+   "note": "CTA／MRA 看顱內血管（例如動脈瘤）；螢光血管攝影（FA）主要看視網膜血管；吲哚青綠（ICG）常看脈絡膜血管。",
+   "rel": "",
+   "only": "novel"
   }
  ]
 }
