@@ -690,8 +690,9 @@ const LEARN_UI = (() => {
     let inBoss = false;
     const prev = U.$('#lpPrev');
     function goTo(i) {
-      if (inBoss || i < 0 || i > R.far || i === st.i || i >= l.steps.length) return;
+      if (inBoss || i < 0 || (!st.done && i > R.far) || i === st.i || i >= l.steps.length) return;
       if (st.i === R.far) R.farSub = R.sub;
+      if (st.done) R.jumpReview = true;
       st.i = i; R.sub = i === R.far ? (R.farSub || 0) : 0; save(); SFX.play('click'); step();
     }
     function advance() {
@@ -1060,8 +1061,8 @@ const LEARN_UI = (() => {
       cleanupQ();
       const s = l.steps[st.i];
       U.$('#lpCnt').textContent = `${st.i + 1} / ${l.steps.length}`;
-      const review = st.i < R.far;
-      U.$$('#lpPips i').forEach((x, i) => { x.classList.toggle('on', i < st.i); x.classList.toggle('cur', i === st.i); x.classList.toggle('seen', i <= R.far && i !== st.i); });
+      const review = !!R.jumpReview || st.i < R.far;
+      U.$$('#lpPips i').forEach((x, i) => { x.classList.toggle('on', i < st.i); x.classList.toggle('cur', i === st.i); x.classList.toggle('seen', (st.done || i <= R.far) && i !== st.i); });
       prev.hidden = st.i === 0;
       const body = U.$('#lpBody');
       body._key = null;
@@ -1073,7 +1074,7 @@ const LEARN_UI = (() => {
       const head = `<div class="lp-type-row"><div class="lp-type">${STEP[s.type].ic} ${STEP[s.type].name}</div>${review ? '<span class="tag lp-rv">🔁 回顧中・作答不計分</span>' : ''}<span class="grow"></span>${starButton(pageRef)}</div>`;
       window.scrollTo(0, 0);
       if (!review) enterSeg();
-      if (s.type === 'card' || s.type === 'interactive') gainEnergy();
+      if (!review && (s.type === 'card' || s.type === 'interactive')) gainEnergy();
       pageMoved({ boss: null, done: false, shown: 0 });
 
       if (s.type === 'intro') {
@@ -1268,6 +1269,7 @@ const LEARN_UI = (() => {
     }
     drawBattle();
     const jump = openPage && openPage.key === key ? openPage.i : null; openPage = null;
+    if (jump != null && st.done && jump >= 0 && jump < l.steps.length && jump !== st.i) R.jumpReview = true;
     if (jump != null && st.done && jump > R.far && jump < l.steps.length) R.far = jump;   // 已經上完的課：收藏頁可以直接打開
     if (jump != null && jump !== st.i && jump <= R.far && jump < l.steps.length) { if (st.i === R.far) R.farSub = R.sub; st.i = jump; R.sub = jump === R.far ? (R.farSub || 0) : 0; save(); }
     else if (jump != null && jump > R.far) setTimeout(() => U.toast('這一頁還沒讀到，先從目前的進度開始'), 200);
