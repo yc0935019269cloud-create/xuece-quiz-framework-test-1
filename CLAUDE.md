@@ -588,3 +588,8 @@
 - 9 種夥伴各多 5 款手繪造型（草莓、蜜蜂、小水手、雲朵、月夜），共 45 款，畫風同背景商店；每款 6 張圖（待機 2 張呼吸、眨眼、開心、睡覺、驚訝），原本的小動作與特效照常。價格 80／90／100／110／120 魂晶（依主題），寵物小屋 → 造型 →「✨ 手繪造型」試穿購買，紀錄同換色造型（`ownedSkins` 的 `寵物:art_主題`）。原本換色造型（40）與存檔不變。規格、價格理由：`docs/寵物造型.md`。
 - `assets/pets/<寵物>/<主題>/<pose>.png`（60×60 邏輯像素放大 4 倍）；`js/pet-skins-data.js` 自動產生，把造型（`img` 資料夾、`cost`、`desc`）加進 `C.PET_SKINS`；`js/pets.js` 的 `artFrame` 依表情挑圖；`js/store.js` 的 `petHTML` 遇到手繪造型不畫配件（配件畫在程式生成的寵物上，對不上新圖；換回換色造型就恢復，試穿時不收配件錢）；營地拍照也支援。
 - 重新產生：Codex 畫的草稿（每款一列 6 姿勢）在 `docs/pet-skins/draft-sheets/`（約 53 MB，已 .gitignore、只在本機），`python tools/pet-skins/make.py` 切格、轉像素、輸出圖片／清單／JS 與審圖 `docs/pet-skins/contact.png`。QA：`tools/pet-skins-qa/check.cjs` 24/24（270 張圖載入、購買穿上、營地／戰鬥／學習、換圖動畫、配件、舊存檔、390px）。沒有實機測試。
+
+## 看圖搜尋
+
+- `js/picfind.js` 提供 `PICFIND.open(term)`：先依名詞和別名搜尋學習包圖解及構造清單的紅圈位置，再按需查詢 Wikimedia Commons；無站內圖時自動連線。字源視窗與 AI 回答都有「🖼 看圖」，指定外觀的提問會在回答後自動開啟。
+- 站內圖沿用教材圖片與放大視窗；Commons 中繼資料以文字呈現，附授權與出處。網路搜尋結果僅供參考，圖片可能是示意圖。測試：`tools/picfind-qa/check.cjs`，結果 `docs/picfind-qa.json`。

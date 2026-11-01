@@ -1,0 +1,127 @@
+{
+  "checks": [
+    {
+      "name": "1100 site image data [{\"n\":\"瞳孔\",\"count\":0},{\"n\":\"睫狀體\",\"count\":3},{\"n\":\"眼動脈\",\"count\":3}]",
+      "ok": true
+    },
+    {
+      "name": "1100 red circle",
+      "ok": true
+    },
+    {
+      "name": "1100 existing zoom",
+      "ok": true
+    },
+    {
+      "name": "1100 Commons metadata",
+      "ok": true
+    },
+    {
+      "name": "1100 untrusted script",
+      "ok": true
+    },
+    {
+      "name": "1100 layout",
+      "ok": true
+    },
+    {
+      "name": "1100 Esc",
+      "ok": true
+    },
+    {
+      "name": "1100 auto Commons",
+      "ok": true
+    },
+    {
+      "name": "1100 offline",
+      "ok": true
+    },
+    {
+      "name": "1100 glossary button",
+      "ok": true
+    },
+    {
+      "name": "1100 glossary opens",
+      "ok": true
+    },
+    {
+      "name": "1100 AI chooser",
+      "ok": true
+    },
+    {
+      "name": "1100 AI chooser opens",
+      "ok": true
+    },
+    {
+      "name": "1100 AI auto open",
+      "ok": true
+    },
+    {
+      "name": "1100 no page errors",
+      "ok": true
+    },
+    {
+      "name": "390 site image data [{\"n\":\"瞳孔\",\"count\":0},{\"n\":\"睫狀體\",\"count\":3},{\"n\":\"眼動脈\",\"count\":3}]",
+      "ok": true
+    },
+    {
+      "name": "390 red circle",
+      "ok": true
+    },
+    {
+      "name": "390 existing zoom",
+      "ok": true
+    },
+    {
+      "name": "390 Commons metadata",
+      "ok": true
+    },
+    {
+      "name": "390 untrusted script",
+      "ok": true
+    },
+    {
+      "name": "390 layout",
+      "ok": true
+    },
+    {
+      "name": "390 Esc",
+      "ok": true
+    },
+    {
+      "name": "390 auto Commons",
+      "ok": true
+    },
+    {
+      "name": "390 offline",
+      "ok": true
+    },
+    {
+      "name": "390 glossary button",
+      "ok": true
+    },
+    {
+      "name": "390 glossary opens",
+      "ok": true
+    },
+    {
+      "name": "390 AI chooser",
+      "ok": true
+    },
+    {
+      "name": "390 AI chooser opens",
+      "ok": true
+    },
+    {
+      "name": "390 AI auto open",
+      "ok": true
+    },
+    {
+      "name": "390 no page errors",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "passed": 30,
+  "total": 30
+}

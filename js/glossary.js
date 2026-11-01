@@ -140,7 +140,7 @@ const GLOSS = (() => {
     pop.className = 'gl-pop'; pop.setAttribute('role', 'dialog');
     pop.innerHTML = `<div class="gl-h"><b>${esc(e.zh)}</b>${typeof LEARN_UI !== 'undefined' ? LEARN_UI.glossStar(e, el) : ''}<span class="gl-en">${esc(e.en)}</span>` +
       (true ? `<button type="button" class="gl-play" data-text="${esc(e.en)}" aria-label="播放發音" title="播放發音">🔊</button>` : '') +
-      `</div>` +
+      `<button type="button" class="gl-picture">🖼 看圖</button></div>` +
       (e.parts.length ? `<div class="gl-parts">${e.parts.map(([a, b]) => `<div class="gl-part"><span class="gl-w">${esc(a)}</span><span>${esc(b)}</span></div>`).join('')}</div>` : '') +
       (e.note ? `<div class="gl-note">${esc(e.note)}</div>` : '') +
       (e.rel ? `<div class="gl-rel">🔗 ${esc(e.rel)}</div>` : '');
@@ -164,6 +164,8 @@ const GLOSS = (() => {
 
   // 點名詞開、點別處關；鍵盤 Enter／空白鍵也能開
   document.addEventListener('click', ev => {
+    const picture = ev.target.closest && ev.target.closest('.gl-picture');
+    if (picture && curEl) { ev.preventDefault(); ev.stopPropagation(); const entry = find(curEl.dataset.g); close(); if (entry) PICFIND.open(entry); return; }
     const play = ev.target.closest && ev.target.closest('.gl-play');
     if (play) { ev.preventDefault(); ev.stopPropagation(); speak(play.dataset.text); return; }
     const el = ev.target.closest && ev.target.closest('.gl');

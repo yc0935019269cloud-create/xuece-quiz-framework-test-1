@@ -212,7 +212,7 @@ const LEARN_UI = (() => {
   document.addEventListener('click', e => {
     const im = e.target.closest && e.target.closest('img.lp-img');
     if (!im) return;
-    const box = U.h(`<div class="img-zoom" role="dialog" aria-label="放大圖片"><button class="px-btn small img-zoom-x" aria-label="關閉">✕</button><div class="img-zoom-in"><img src="${U.esc(im.getAttribute('src'))}" alt=""></div></div>`);
+    const box = U.h(`<div class="img-zoom" role="dialog" aria-label="放大圖片"><button class="px-btn small img-zoom-x" aria-label="關閉">✕</button><div class="img-zoom-in"><img src="${U.esc(im.dataset.zoomSrc || im.getAttribute('src'))}" alt=""></div></div>`);
     const close = () => { box.remove(); document.removeEventListener('keydown', key, true); };
     const key = ev => { if (ev.key === 'Escape') { ev.stopPropagation(); close(); } };
     box.addEventListener('click', ev => { if (ev.target === box || ev.target.closest('.img-zoom-x') || ev.target.classList.contains('img-zoom-in')) close(); });

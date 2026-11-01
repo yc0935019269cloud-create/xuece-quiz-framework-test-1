@@ -240,7 +240,10 @@ const AI = (() => {
     } catch (e) {
       Object.assign(pending, { pending: false, err: true, text: '這次未送出或連線未完成：' + e.message });
     }
+    const pictureTerm = !pending.err && /長怎樣|長什麼樣|的圖|看圖|照片/.test(text) ? PICFIND.findTerms(text)[0] : null;
+    if (pictureTerm) pending.pictureNote = pictureTerm.zh || pictureTerm.en;
     S.busy = false; draw();
+    if (pictureTerm) PICFIND.open(pictureTerm);
   }
 
   /* ---------- 查證：維基百科＋PubMed（網頁直接查，不扣次數） ---------- */
@@ -304,9 +307,10 @@ const AI = (() => {
     const refs = m.refs || [];
     const ver = m.ver;
     return `<div class="ai-msg bot" data-i="${i}"><div class="ai-bub">${cite(U.md(m.text), refs.length)}${m.truncated ? '<p class="dim small-t">（回答太長被截斷了，可以請它「繼續」）</p>' : ''}
+      ${m.pictureNote ? `<p class="dim small-t">已為你找出「${U.esc(m.pictureNote)}」的圖</p>` : ''}
       ${refs.length ? `<div class="ai-refs">${refs.map((r, k) => `<button class="ai-ref" data-ref="${k + 1}" title="${U.esc(r.title)}">[${k + 1}] ${r.k === 'q' ? '📝' : '📘'} ${U.esc(r.title)}</button>`).join('')}</div>` : ''}
       <div class="ai-foot"><span class="dim">${U.esc(m.provider || '')}${m.model ? '・' + U.esc(m.model) : ''}</span><span class="grow"></span>
-        <button class="px-btn small" data-act="star">${typeof LEARN_UI !== 'undefined' && LEARN_UI.aiFind(m.ask || S.msgs[i - 1]?.show || '', m.text) ? '★ 已收藏' : '☆ 收藏'}</button><button class="px-btn small" data-act="verify" ${ver && ver.loading ? 'disabled' : ''}>🔎 查證</button><button class="px-btn small" data-act="copy">複製</button></div>
+        <button class="px-btn small" data-act="star">${typeof LEARN_UI !== 'undefined' && LEARN_UI.aiFind(m.ask || S.msgs[i - 1]?.show || '', m.text) ? '★ 已收藏' : '☆ 收藏'}</button><button class="px-btn small" data-act="picture">🖼 看圖</button><button class="px-btn small" data-act="verify" ${ver && ver.loading ? 'disabled' : ''}>🔎 查證</button><button class="px-btn small" data-act="copy">複製</button></div>
       ${ver ? ver.loading ? '<div class="ai-ver dim small-t">查詢維基百科與 PubMed…</div>' : `<div class="ai-ver small-t">
         <div class="dim">關鍵字：${U.esc([...(ver.kw.zh || []), ...(ver.kw.en || [])].join('、') || '（無）')}</div>
         ${ver.items.length ? ver.items.map(x => `<div class="ai-vi"><b>${x.src}</b> <a href="${U.esc(x.url)}" target="_blank" rel="noopener">${U.esc(x.title)}</a>${x.snip ? `<div class="dim">${U.esc(x.snip.slice(0, 160))}</div>` : ''}</div>`).join('')
@@ -387,6 +391,7 @@ const AI = (() => {
         case 'new': S.msgs = []; S.q = null; draw(); return;
         case 'unq': S.q = null; draw(); return;
         case 'star': return m && bookmark(m, +mEl.dataset.i);
+        case 'picture': return m && PICFIND.choose(m.text, m.ask || S.msgs[+mEl.dataset.i - 1]?.show || '');
         case 'verify': return m && verify(m);
         case 'compare': return m && compare(m);
         case 'copy': if (m) navigator.clipboard && navigator.clipboard.writeText(m.text).then(() => U.toast('已複製'), () => U.toast('無法複製')); return;
