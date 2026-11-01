@@ -44,11 +44,20 @@ const LEARN_UI = (() => {
   reindex();
 
   /* 星號存在學習存檔內，沿用備份與雲端同步；只存內容參照，不複製教材或圖片。 */
-  const starKey = r => JSON.stringify(r.kind === 'term' ? [r.kind, r.p, r.l, r.img, r.name] : r.kind === 'page' ? [r.kind, r.p, r.l, r.i] : [r.kind, r.p, r.id]);
+  const starKey = r => JSON.stringify(r.kind === 'term' ? [r.kind, r.p, r.l, r.img, r.name] : r.kind === 'page' ? [r.kind, r.p, r.l, r.i] : r.kind === 'ai' ? [r.kind, r.id] : [r.kind, r.p, r.id]);
   const isStarred = r => Object.hasOwn(D.starred || {}, starKey(r));
+  function aiFind(q, a) { return Object.entries(D.starred || {}).find(([, r]) => r.kind === 'ai' && r.q === q && r.a === a); }
+  function aiStar(entry) {
+    const p = PK[entry.p], l = p?.lessons.find(x => x.id === entry.l);
+    if (!l || !entry.q || !entry.a || aiFind(entry.q, entry.a)) return false;
+    const r = { kind: 'ai', p: p.id, l: l.id, q: entry.q, a: entry.a, id: Date.now().toString(36) + '-' + Math.random().toString(36).slice(2), at: Date.now() };
+    D.starred = D.starred || {}; D.starred[starKey(r)] = r; save(); return true;
+  }
+  function aiUnstar(key) { if (D.starred?.[key]?.kind !== 'ai') return false; delete D.starred[key]; save(); return true; }
   function starButton(r) {
     if (!r) return '';
     const on = isStarred(r), term = r.kind === 'term';
+    if (r.kind === 'ai') return `<button type="button" class="px-btn small knowledge-star gold" data-knowledge-star="${U.esc(JSON.stringify(r))}" aria-label="取消收藏 AI 問答">★</button>`;
     if (r.kind === 'page') return `<button type="button" class="px-btn small knowledge-star page-star ${on ? 'gold' : ''}" data-knowledge-star="${U.esc(JSON.stringify(r))}" aria-pressed="${on}" title="${on ? '已收進知識筆記；再按一次取消' : '把這一頁收進知識筆記的星號收藏'}">${on ? '★ 已收藏此頁' : '☆ 收藏此頁'}</button>`;
     if (term) return `<button type="button" class="knowledge-star knowledge-star-icon ${on ? 'gold' : ''}" data-knowledge-star="${U.esc(JSON.stringify(r))}" aria-pressed="${on}" aria-label="${on ? '取消星號' : '加星號'}：${U.esc(r.name)}" title="${on ? '取消星號' : '加星號，收進知識筆記'}">${on ? '★' : '☆'}</button>`;
     return `<button type="button" class="px-btn small knowledge-star ${on ? 'gold' : ''}" data-knowledge-star="${U.esc(JSON.stringify(r))}" aria-pressed="${on}">${on ? (term ? '★ 已加星號' : '★ 已加入知識比較') : (term ? '☆ 加星號' : '☆ 加入知識比較')}</button>`;
@@ -120,6 +129,7 @@ const LEARN_UI = (() => {
     return Object.values(D.starred || {}).map(r => {
       const p = PK[r.p], l = p?.lessons.find(x => x.id === r.l);
       if (!p || !l || !C.SUBJECTS[p.subject]) return null;
+      if (r.kind === 'ai') return { r, p, l, title: r.q || '', text: r.a || '' };
       if (r.kind === 'term') {
         const s = l.steps.find(x => x.type === 'diagram' && x.img === r.img && x.points.some(pt => pt.name === r.name));
         const i = s?.points.findIndex(pt => pt.name === r.name), pt = s?.points[i];
@@ -481,7 +491,7 @@ const LEARN_UI = (() => {
   /* ---------- 主畫面 ---------- */
   let tab = 'courses', subjF = 'all';
   const lastLesson = () => { const pk = D.last && PK[D.last.p], l = pk && pk.lessons.find(x => x.id === D.last.l); return l ? { pk, l } : null; };
-  function lastInfo() { const x = lastLesson(); return x ? { pack: x.pk.title, lesson: x.l.title } : null; }
+  function lastInfo() { const x = lastLesson(); return x ? { pack: x.pk.title, lesson: x.l.title, p: x.pk.id, l: x.l.id } : null; }
   function screen(arg) {
     if (arg && arg.resume && lastLesson()) { const x = lastLesson(); return play(x.pk, x.l); }
     if (arg && arg.pack && PK[arg.pack]) return packView(PK[arg.pack]);
@@ -1776,6 +1786,7 @@ const LEARN_UI = (() => {
   }
   function knowledgeCard(x) {
     if (x.pg) return pageCard(x);
+    if (x.r.kind === 'ai') { const { r, p, l } = x; return `<article class="lnote-card knowledge-card knowledge-ai"><div class="row"><span class="tag">AI 問答</span><span class="grow"></span><button type="button" class="px-btn small" data-open-page="${U.esc(JSON.stringify([p.id, l.id, 0]))}">到這一課 ▶</button>${starButton(r)}</div><p class="dim small-t">${U.esc(C.SUBJECTS[p.subject].name)} › ${U.esc(p.title)} › ${U.esc(l.title)}</p><p><b>${U.esc(r.q)}</b></p>${U.md(r.a)}<p class="dim small-t">${r.at ? U.esc(new Date(r.at).toLocaleDateString()) : ''}</p></article>`; }
     const { r, p, l, s, i, q, c } = x;
     let content;
     if (s) {
@@ -1790,11 +1801,11 @@ const LEARN_UI = (() => {
     const scoped = all.filter(x => noteSubj === 'all' || x.p.subject === noteSubj);
     const units = [...new Map(scoped.map(x => [x.p.id, x.p])).values()];
     if (knowledgeUnit && !units.some(p => p.id === knowledgeUnit)) knowledgeUnit = '';
-    const list = scoped.filter(x => (!knowledgeUnit || x.p.id === knowledgeUnit) && (knowledgeType === 'all' || (knowledgeType === 'term' ? x.r.kind === 'term' : knowledgeType === 'page' ? x.r.kind === 'page' : x.r.kind !== 'term' && x.r.kind !== 'page')) && (!kw || [x.title, x.text, x.p.title, x.l.title].join(' ').toLowerCase().includes(kw))).sort((a, b) => (b.r.at || 0) - (a.r.at || 0));
+    const list = scoped.filter(x => (!knowledgeUnit || x.p.id === knowledgeUnit) && (knowledgeType === 'all' || (knowledgeType === 'answer' ? (x.r.kind === 'question' || x.r.kind === 'check') : x.r.kind === knowledgeType)) && (!kw || [x.title, x.text, x.p.title, x.l.title].join(' ').toLowerCase().includes(kw))).sort((a, b) => (b.r.at || 0) - (a.r.at || 0));
     const pages = Math.max(1, Math.ceil(list.length / 20));
     knowledgePage = Math.min(knowledgePage, pages - 1);
-    const terms = scoped.filter(x => x.r.kind === 'term').length, pagesN = scoped.filter(x => x.r.kind === 'page').length;
-    return `<section class="knowledge-collection panel dark mt" aria-label="星號收藏與知識比較"><h3>★ 星號收藏・知識比較</h3><p class="dim small-t">${pagesN} 頁・${terms} 個名稱・${scoped.length - terms - pagesN} 題答案。課程每一頁右上角可以「☆ 收藏此頁」；點開名稱後按小星星收藏；練習題看過答案後可加入比較。</p><div class="row knowledge-filters"><label>單元 <select class="px-in" id="knowledgeUnit"><option value="">全部已加星號的單元</option>${units.map(p => `<option value="${U.esc(p.id)}" ${knowledgeUnit === p.id ? 'selected' : ''}>${U.esc(C.SUBJECTS[p.subject].name + ' › ' + p.title)}</option>`).join('')}</select></label><label>內容 <select class="px-in" id="knowledgeType">${[['all', '全部'], ['page', '收藏的頁面'], ['term', '解剖名稱與原圖'], ['answer', '題目答案']].map(([v, t]) => `<option value="${v}" ${knowledgeType === v ? 'selected' : ''}>${t}</option>`).join('')}</select></label></div><p class="dim small-t" aria-live="polite">符合 ${list.length} 筆${list.length > 20 ? `・第 ${knowledgePage + 1} / ${pages} 頁` : ''}</p><div class="knowledge-grid">${list.slice(knowledgePage * 20, (knowledgePage + 1) * 20).map(knowledgeCard).join('') || `<p class="dim">${scoped.length ? '這個篩選下沒有星號項目。' : '還沒有星號收藏。覺得重要的課程頁面，按頁面右上角的「☆ 收藏此頁」就會整頁收在這裡；遇到不熟的名稱，點開名詞後按「☆」，就會連同原圖收在這裡；練習題可在看答案後按「☆ 加入知識比較」。'}</p>`}</div>${pages > 1 ? `<div class="row mt"><button class="px-btn small" id="knowledgePrev" ${knowledgePage ? '' : 'disabled'}>上一頁</button><span>${knowledgePage + 1} / ${pages}</span><button class="px-btn small" id="knowledgeNext" ${knowledgePage < pages - 1 ? '' : 'disabled'}>下一頁</button></div>` : ''}</section>`;
+    const terms = scoped.filter(x => x.r.kind === 'term').length, pagesN = scoped.filter(x => x.r.kind === 'page').length, aiN = scoped.filter(x => x.r.kind === 'ai').length;
+    return `<section class="knowledge-collection panel dark mt" aria-label="星號收藏與知識比較"><h3>★ 星號收藏・知識比較</h3><p class="dim small-t">${pagesN} 頁・${terms} 個名稱・${scoped.length - terms - pagesN - aiN} 題答案・${aiN} 則 AI 問答。課程每一頁右上角可以「☆ 收藏此頁」；點開名稱後按小星星收藏；練習題看過答案後可加入比較。</p><div class="row knowledge-filters"><label>單元 <select class="px-in" id="knowledgeUnit"><option value="">全部已加星號的單元</option>${units.map(p => `<option value="${U.esc(p.id)}" ${knowledgeUnit === p.id ? 'selected' : ''}>${U.esc(C.SUBJECTS[p.subject].name + ' › ' + p.title)}</option>`).join('')}</select></label><label>內容 <select class="px-in" id="knowledgeType">${[['all', '全部'], ['page', '收藏的頁面'], ['term', '解剖名稱與原圖'], ['answer', '題目答案'], ['ai', 'AI 問答']].map(([v, t]) => `<option value="${v}" ${knowledgeType === v ? 'selected' : ''}>${t}</option>`).join('')}</select></label></div><p class="dim small-t" aria-live="polite">符合 ${list.length} 筆${list.length > 20 ? `・第 ${knowledgePage + 1} / ${pages} 頁` : ''}</p><div class="knowledge-grid">${list.slice(knowledgePage * 20, (knowledgePage + 1) * 20).map(knowledgeCard).join('') || `<p class="dim">${scoped.length ? '這個篩選下沒有星號項目。' : '還沒有星號收藏。覺得重要的課程頁面，按頁面右上角的「☆ 收藏此頁」就會整頁收在這裡；遇到不熟的名稱，點開名詞後按「☆」，就會連同原圖收在這裡；練習題可在看答案後按「☆ 加入知識比較」。'}</p>`}</div>${pages > 1 ? `<div class="row mt"><button class="px-btn small" id="knowledgePrev" ${knowledgePage ? '' : 'disabled'}>上一頁</button><span>${knowledgePage + 1} / ${pages}</span><button class="px-btn small" id="knowledgeNext" ${knowledgePage < pages - 1 ? '' : 'disabled'}>下一頁</button></div>` : ''}</section>`;
   }
   function notes() {
     const body = U.$('#learnBody');
@@ -1936,6 +1947,6 @@ const LEARN_UI = (() => {
     const p = packs.find(x => x.id === packId), l = p && p.lessons.find(x => x.id === lessonId), step = l && l.steps[stepIndex];
     return step ? starButton({ kind: 'page', p: p.id, l: l.id, i: stepIndex, t: stepTitle(step, l) }) : '';
   }
-  const curPage = () => cur && cur.st ? { p: cur.p.id, l: cur.l.id, i: cur.st.i, style: cur.p.style || '' } : null;   // 連載小說朗讀（js/novel-audio.js）用
-  return { curPage, pageStar, starredQids, starredTermCount, reindex, screen, tileDesc, lastInfo, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, pageCtx, glossStar, get packs() { return packs; } };
+  const curPage = () => cur && cur.st && document.body.contains(cur.el) ? { p: cur.p.id, l: cur.l.id, i: cur.st.i, style: cur.p.style || '' } : null;   // 連載小說朗讀（js/novel-audio.js）用
+  return { curPage, aiStar, aiUnstar, aiFind, pageStar, starredQids, starredTermCount, reindex, screen, tileDesc, lastInfo, exportData, applyPeglin, leave: cleanup, renderCheck, sameAns, pageCtx, glossStar, get packs() { return packs; } };
 })();

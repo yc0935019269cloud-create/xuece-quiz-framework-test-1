@@ -214,7 +214,7 @@ const AI = (() => {
       if (u.role === 'user' && a.role === 'assistant' && !a.err && !a.pending) { hist.push({ role: 'user', content: u.plain }, { role: 'assistant', content: a.text }); i++; }
     }
     hist = hist.slice(-HISTORY);
-    const userMsg = { role: 'user', show: opt.show || text, plain: pg ? `${pgText}【問題】\n${text}` : text, q: q && q.id, pageLabel: pg && pg.label, imageCount: 0 };
+    const userMsg = { role: 'user', show: opt.show || text, plain: pg ? `${pgText}【問題】\n${text}` : text, q: q && q.id, pageLabel: pg && pg.label, lessonCtx: typeof LEARN_UI !== 'undefined' && LEARN_UI.curPage(), imageCount: 0 };
     S.msgs.push(userMsg);
     const pending = { role: 'assistant', pending: true, t0: Date.now() };
     S.msgs.push(pending); S.busy = true; draw();
@@ -306,7 +306,7 @@ const AI = (() => {
     return `<div class="ai-msg bot" data-i="${i}"><div class="ai-bub">${cite(U.md(m.text), refs.length)}${m.truncated ? '<p class="dim small-t">（回答太長被截斷了，可以請它「繼續」）</p>' : ''}
       ${refs.length ? `<div class="ai-refs">${refs.map((r, k) => `<button class="ai-ref" data-ref="${k + 1}" title="${U.esc(r.title)}">[${k + 1}] ${r.k === 'q' ? '📝' : '📘'} ${U.esc(r.title)}</button>`).join('')}</div>` : ''}
       <div class="ai-foot"><span class="dim">${U.esc(m.provider || '')}${m.model ? '・' + U.esc(m.model) : ''}</span><span class="grow"></span>
-        <button class="px-btn small" data-act="verify" ${ver && ver.loading ? 'disabled' : ''}>🔎 查證</button><button class="px-btn small" data-act="copy">複製</button></div>
+        <button class="px-btn small" data-act="star">${typeof LEARN_UI !== 'undefined' && LEARN_UI.aiFind(m.ask || S.msgs[i - 1]?.show || '', m.text) ? '★ 已收藏' : '☆ 收藏'}</button><button class="px-btn small" data-act="verify" ${ver && ver.loading ? 'disabled' : ''}>🔎 查證</button><button class="px-btn small" data-act="copy">複製</button></div>
       ${ver ? ver.loading ? '<div class="ai-ver dim small-t">查詢維基百科與 PubMed…</div>' : `<div class="ai-ver small-t">
         <div class="dim">關鍵字：${U.esc([...(ver.kw.zh || []), ...(ver.kw.en || [])].join('、') || '（無）')}</div>
         ${ver.items.length ? ver.items.map(x => `<div class="ai-vi"><b>${x.src}</b> <a href="${U.esc(x.url)}" target="_blank" rel="noopener">${U.esc(x.title)}</a>${x.snip ? `<div class="dim">${U.esc(x.snip.slice(0, 160))}</div>` : ''}</div>`).join('')
@@ -321,6 +321,7 @@ const AI = (() => {
       <p>可以問觀念、問題目為什麼選這個答案、請它出類似題或整理重點。</p>
       <p>回答會先參考這個遊戲裡的題庫與教材，並標出處 [1]；點出處可以直接打開那一題或那一課。</p>
       <p>AI 也會出錯，重要的內容請對照講義，或按 🔎 查證。</p></div>`;
+    if (typeof GLOSS !== 'undefined') list.querySelectorAll('.ai-msg.bot[data-i] .ai-bub').forEach(el => GLOSS.scan(el));
     list.scrollTop = list.scrollHeight;
     sendBtn.disabled = S.busy;
     const q = S.q && Store.Q[S.q];
@@ -344,6 +345,25 @@ const AI = (() => {
     if (r.k === 'q') { const q = Store.Q[r.id]; if (q) QV.practiceModal(q); }
     else { App.go('learn', { pack: r.pack }); }
   }
+  async function bookmark(m, i) {
+    if (typeof LEARN_UI === 'undefined') return;
+    const q = m.ask || S.msgs[i - 1]?.show || '', found = LEARN_UI.aiFind(q, m.text);
+    if (found) { panel.style.zIndex = '49'; try { if (await U.confirm('取消收藏', '確定要移除這則 AI 問答？')) { LEARN_UI.aiUnstar(found[0]); draw(); } } finally { panel.style.zIndex = ''; } return; }
+    const packs = LEARN_UI.packs.filter(p => C.SUBJECTS[p.subject] && p.lessons?.length);
+    if (!packs.length) { U.toast('目前沒有可收藏的課程'); return; }
+    const preferred = LEARN_UI.curPage() || S.msgs[i - 1]?.lessonCtx || LEARN_UI.lastInfo();
+    const initial = packs.find(p => p.id === preferred?.p && p.lessons.some(l => l.id === preferred.l)) || packs[0];
+    const body = U.h('<div class="ai-star-form col"><label>科目 <select class="px-in" data-field="subject"></select></label><label>單元 <select class="px-in" data-field="pack"></select></label><label>課 <select class="px-in" data-field="lesson"></select></label></div>');
+    const sub = body.querySelector('[data-field=subject]'), pack = body.querySelector('[data-field=pack]'), lesson = body.querySelector('[data-field=lesson]');
+    const opts = (select, items, selected) => { select.innerHTML = items.map(([v, t]) => `<option value="${U.esc(v)}">${U.esc(t)}</option>`).join(''); if (selected) select.value = selected; };
+    const setLessons = selected => { const p = packs.find(x => x.id === pack.value); opts(lesson, p.lessons.map(l => [l.id, l.title]), selected); };
+    const setPacks = (selected, lid) => { opts(pack, packs.filter(p => p.subject === sub.value).map(p => [p.id, p.title]), selected); setLessons(lid); };
+    opts(sub, [...new Set(packs.map(p => p.subject))].map(id => [id, C.SUBJECTS[id].name]), initial.subject);
+    setPacks(initial.id, preferred?.p === initial.id ? preferred.l : null);
+    sub.onchange = () => setPacks(); pack.onchange = () => setLessons();
+    const dialog = U.modal({ title: '收藏 AI 問答', body, narrow: true, buttons: [{ label: '取消' }, { label: '收藏', cls: 'gold', onClick: () => { if (LEARN_UI.aiStar({ p: pack.value, l: lesson.value, q, a: m.text })) { U.toast('已收藏到知識筆記'); draw(); } } }] });
+    dialog.el.parentElement.style.zIndex = '100';
+  }
   function build() {
     panel = U.h(`<div id="aiPanel" class="aip" hidden tabindex="-1">
       <div class="aip-head"><span>💬 AI 助教</span><span class="grow"></span><button class="aip-btn" data-act="new" title="新對話">🗑</button><button class="aip-btn" data-act="close" title="關閉（Esc）">✕</button></div>
@@ -366,6 +386,7 @@ const AI = (() => {
         case 'close': return toggle(false);
         case 'new': S.msgs = []; S.q = null; draw(); return;
         case 'unq': S.q = null; draw(); return;
+        case 'star': return m && bookmark(m, +mEl.dataset.i);
         case 'verify': return m && verify(m);
         case 'compare': return m && compare(m);
         case 'copy': if (m) navigator.clipboard && navigator.clipboard.writeText(m.text).then(() => U.toast('已複製'), () => U.toast('無法複製')); return;

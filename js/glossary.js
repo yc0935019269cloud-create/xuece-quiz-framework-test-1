@@ -2,7 +2,7 @@
  * 點了在旁邊跳出小視窗顯示拆字、意思、相關構造，點別處／Esc／捲動就關掉。
  * 字典：data/learn.js 的 window.LEARN.glossary（原始檔 content/glossary/*.json）。 */
 const GLOSS = (() => {
-  const SCOPE = '.lp-body, .lnote-card, .lnotes';
+  const SCOPE = '.lp-body, .lnote-card, .lnotes, .ai-msg.bot .ai-bub';
   const SKIP = 'button, a, input, textarea, select, code, pre, .gl, .gl-pop, .dg-pin, .dg-list, .lc-opt, .lc-key, .lp-src, script, style, svg';
   let byKey = null, re = null, pop = null, curEl = null;
 
