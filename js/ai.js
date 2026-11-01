@@ -118,10 +118,15 @@ const AI = (() => {
 7. 如果附了【目前的學習頁面】，「這頁」「這題」指的就是它。附圖是該頁的真實圖片，包含顯示中的編號標記；請結合圖像、編號對照與頁面文字回答構造位置、方向及關係。看不清楚時明說，不能只按名稱猜圖；沒有附圖時不要聲稱已看過圖片。互動動畫未附即時截圖時，你只能讀取其文字說明。請你「講得更好懂」時，先一句話講重點，再拆成很小的步驟，點出容易搞錯的地方；名詞、數值、正負號慣例要和頁面一致。
 8. 標示「學生還沒作答」的題目：除非學生明確要答案，否則只講需要的觀念和思考方向，不要說出正確答案，也不要一路排除到只剩一個選項。
 學生要求比較時，表格必須使用有效的 Markdown pipe 表格格式。
+學生要求途徑或流程時，使用 ::: flow 區塊，每行一站，最後以 ::: 結束。
 9. 回答最後另起一行，照這個格式輸出查證用關鍵字（學生看不到這行）：
 查證關鍵字：中文關鍵字1, 中文關鍵字2｜English keyword 1, English keyword 2`;
   const TODO = '※ 學生還沒作答這題：除非學生明確要答案，否則不要說出正確答案。';
   const TABLE_INSTRUCTION = '【本次表格格式】請輸出一個 Markdown pipe 表格：比較項目為欄、比較面向為列，第一欄是面向名稱；每格簡短（約 25 個中文字以內），格內不要換行。表格之後最多列出 3 點「易混淆提醒」。使用參考資料時在對應儲存格內標註 [n]。使用繁體中文。';
+  const FLOW_INSTRUCTION = '【本次流程圖格式】請用一個或多個 ::: flow 區塊呈現途徑，每行一站、依順序排列，每站不超過 12 個中文字，區塊以 ::: 結尾。分支或平行路徑各用獨立區塊，前面各加一行粗體標籤，例如 **交感路徑**。突觸或中繼站標示換元，例如上頸神經節（換元）。流程後最多列 3 點「考點提醒」，使用參考資料處標註 [n]。使用繁體中文。';
+  // 明確要求表格時優先，否則依途徑關鍵字套用流程格式。
+  const wantsTable = text => /表格|比較表|列表比較|做成表/.test(text);
+  const wantsFlow = text => /途徑|路徑|流程圖|路線|傳導路|反射弧|怎麼走|流向/.test(text);
   function qBlock(q, todo) {
     const ex = Store.EX[q.exam];
     const ch = (q.choices || []).map((c, i) => `${QV.labelOf(q, i)}. ${plain(c)}`).join('\n');
@@ -208,7 +213,7 @@ const AI = (() => {
     const refs = opt.noCtx ? [] : search(query, subj, new Set([...qs.map(x => x.id), ...(pg ? pg.skip : [])]));
     const ref = refs.length ? '【參考資料】\n' + refs.map((r, i) => `[${i + 1}]（${r.k === 'q' ? '題庫' : '教材'}｜${r.title}）\n${r.text}`).join('\n\n') + '\n\n' : '';
     const pgText = pg ? plain(pg.text) + (pg.todo && !pg.qid ? '\n' + TODO : '') + '\n\n' : '';
-    const full = (opt.raw ? text : `${ref}${pgText}${qs.map(x => qBlock(x, pg && pg.todo && x.id === pg.qid) + '\n\n').join('')}【問題】\n${text}`) + (opt.table || /表格|比較表|列表比較|做成表/.test(text) ? '\n\n' + TABLE_INSTRUCTION : '');
+    const full = (opt.raw ? text : `${ref}${pgText}${qs.map(x => qBlock(x, pg && pg.todo && x.id === pg.qid) + '\n\n').join('')}【問題】\n${text}`) + (opt.table || (!opt.flow && wantsTable(text)) ? '\n\n' + TABLE_INSTRUCTION : (opt.flow || wantsFlow(text) ? '\n\n' + FLOW_INSTRUCTION : ''));
     // 之前的對話（只帶成功的一問一答，問題不含參考資料，省字數）
     let hist = [];
     for (let i = 0; i < S.msgs.length - 1; i++) {
@@ -312,7 +317,7 @@ const AI = (() => {
       ${m.pictureNote ? `<p class="dim small-t">已為你找出「${U.esc(m.pictureNote)}」的圖</p>` : ''}
       ${refs.length ? `<div class="ai-refs">${refs.map((r, k) => `<button class="ai-ref" data-ref="${k + 1}" title="${U.esc(r.title)}">[${k + 1}] ${r.k === 'q' ? '📝' : '📘'} ${U.esc(r.title)}</button>`).join('')}</div>` : ''}
       <div class="ai-foot"><span class="dim">${U.esc(m.provider || '')}${m.model ? '・' + U.esc(m.model) : ''}</span><span class="grow"></span>
-        ${/^\s*\|/m.test(m.text) ? '<button class="px-btn small" data-act="copy-table">📋 複製表格</button>' : ''}<button class="px-btn small" data-act="star">${typeof LEARN_UI !== 'undefined' && LEARN_UI.aiFind(m.ask || S.msgs[i - 1]?.show || '', m.text) ? '★ 已收藏' : '☆ 收藏'}</button><button class="px-btn small" data-act="picture">🖼 看圖</button><button class="px-btn small" data-act="verify" ${ver && ver.loading ? 'disabled' : ''}>🔎 查證</button><button class="px-btn small" data-act="copy">複製</button></div>
+        ${/^\s*:::\s*flow(?:\s|$)/m.test(m.text) ? '<button class="px-btn small" data-act="copy-flow">📋 複製流程</button>' : ''}${/^\s*\|/m.test(m.text) ? '<button class="px-btn small" data-act="copy-table">📋 複製表格</button>' : ''}<button class="px-btn small" data-act="star">${typeof LEARN_UI !== 'undefined' && LEARN_UI.aiFind(m.ask || S.msgs[i - 1]?.show || '', m.text) ? '★ 已收藏' : '☆ 收藏'}</button><button class="px-btn small" data-act="picture">🖼 看圖</button><button class="px-btn small" data-act="verify" ${ver && ver.loading ? 'disabled' : ''}>🔎 查證</button><button class="px-btn small" data-act="copy">複製</button></div>
       ${ver ? ver.loading ? '<div class="ai-ver dim small-t">查詢維基百科與 PubMed…</div>' : `<div class="ai-ver small-t">
         <div class="dim">關鍵字：${U.esc([...(ver.kw.zh || []), ...(ver.kw.en || [])].join('、') || '（無）')}</div>
         ${ver.items.length ? ver.items.map(x => `<div class="ai-vi"><b>${x.src}</b> <a href="${U.esc(x.url)}" target="_blank" rel="noopener">${U.esc(x.title)}</a>${x.snip ? `<div class="dim">${U.esc(x.snip.slice(0, 160))}</div>` : ''}</div>`).join('')
@@ -378,11 +383,14 @@ const AI = (() => {
       <div class="aip-ctx small-t" hidden></div>
       <div class="aip-page small-t" hidden></div>
       <form class="ai-table-form" hidden><label>要比較的東西</label><div class="ai-table-items"><input class="px-in" placeholder="項目 1" required><input class="px-in" placeholder="項目 2" required></div><button type="button" class="px-btn small" data-act="table-add">＋ 新增項目</button><label>比較哪些面向（可留空，讓 AI 決定）<input class="px-in" name="aspects"></label><button class="px-btn small gold" type="submit">做表格 ▶</button></form>
-      <div class="aip-in"><textarea rows="2" placeholder="輸入問題（Enter 送出，Shift+Enter 換行）"></textarea><button class="px-btn small" data-act="table">📊 比較表</button><button class="px-btn gold" data-act="send">送出</button></div>
+      <form class="ai-flow-form" hidden><label>要畫什麼的途徑／流程<input class="px-in" name="topic" placeholder="例如：瞳孔光反射" required></label><label>起點（可留空）<input class="px-in" name="start"></label><label>終點（可留空）<input class="px-in" name="end"></label><button class="px-btn small gold" type="submit">畫流程圖 ▶</button></form>
+      <div class="aip-in"><textarea rows="2" placeholder="輸入問題（Enter 送出，Shift+Enter 換行）"></textarea><button class="px-btn small" data-act="table">📊 比較表</button><button class="px-btn small" data-act="flow">➜ 流程圖</button><button class="px-btn gold" data-act="send">送出</button></div>
     </div>`);
     document.body.appendChild(panel);
     list = U.$('.aip-list', panel); inp = U.$('textarea', panel); sendBtn = U.$('[data-act="send"]', panel); stEl = U.$('.aip-st', panel); ctxEl = U.$('.aip-ctx', panel); pageEl = U.$('.aip-page', panel);
     const tableForm = U.$('.ai-table-form', panel), tableItems = U.$('.ai-table-items', panel);
+    const flowForm = U.$('.ai-flow-form', panel);
+    flowForm.onsubmit = e => { e.preventDefault(); if (S.busy) return; const topic = flowForm.elements.topic.value.trim(); if (!topic) return; const start = flowForm.elements.start.value.trim(), end = flowForm.elements.end.value.trim(); flowForm.hidden = true; send(`請畫出${topic}的途徑／流程${start ? `，起點：${start}` : ''}${end ? `，終點：${end}` : ''}`, { flow: true }); };
     tableForm.onsubmit = e => { e.preventDefault(); if (S.busy) return; const items = [...tableItems.querySelectorAll('input')].map(x => x.value.trim()).filter(Boolean); if (items.length < 2) { U.toast('請輸入至少兩個比較項目'); return; } const aspects = tableForm.elements.aspects.value.trim(); tableForm.hidden = true; send(`請用表格比較：${items.join('、')}${aspects ? `（面向：${aspects}）` : ''}`, { table: true }); };
     panel.addEventListener('click', e => {
       const a = e.target.closest('[data-act],[data-ai],[data-ref]'); if (!a) return;
@@ -391,7 +399,8 @@ const AI = (() => {
       if (a.dataset.ai === 'login') return CLOUD.open();
       switch (a.dataset.act) {
         case 'send': return go();
-        case 'table': tableForm.hidden = !tableForm.hidden; if (!tableForm.hidden) tableItems.querySelector('input').focus(); return;
+        case 'flow': flowForm.hidden = !flowForm.hidden; if (!flowForm.hidden) { tableForm.hidden = true; flowForm.elements.topic.focus(); } return;
+        case 'table': tableForm.hidden = !tableForm.hidden; if (!tableForm.hidden) { flowForm.hidden = true; tableItems.querySelector('input').focus(); } return;
         case 'table-add': { const n = tableItems.children.length; if (n >= 6) return; const input = document.createElement('input'); input.className = 'px-in'; input.placeholder = `項目 ${n + 1}`; tableItems.appendChild(input); if (n + 1 === 6) a.disabled = true; input.focus(); return; }
         case 'page': return askPage();
         case 'close': return toggle(false);
@@ -402,6 +411,7 @@ const AI = (() => {
         case 'verify': return m && verify(m);
         case 'compare': return m && compare(m);
         case 'copy': if (m) navigator.clipboard && navigator.clipboard.writeText(m.text).then(() => U.toast('已複製'), () => U.toast('無法複製')); return;
+        case 'copy-flow': { if (!navigator.clipboard) { U.toast('無法複製'); return; } const flows = [...mEl.querySelectorAll('.md-flow')].map(flow => { const prev = flow.previousElementSibling; const label = prev && prev.tagName === 'P' && prev.children.length === 1 && prev.firstElementChild.tagName === 'STRONG' ? prev.innerText.trim() + '：' : ''; return label + [...flow.querySelectorAll('.md-fstep')].map(step => step.innerText.trim()).join(' → '); }); navigator.clipboard.writeText(flows.join('\n')).then(() => U.toast('已複製流程'), () => U.toast('無法複製')); return; }
         case 'copy-table': { const table = mEl.querySelector('table'); if (!table || !navigator.clipboard) { U.toast('無法複製'); return; } const tsv = [...table.rows].map(row => [...row.cells].map(cell => cell.innerText.replace(/[\t\r\n]+/g, ' ').trim()).join('\t')).join('\n'); navigator.clipboard.writeText(tsv).then(() => U.toast('已複製表格'), () => U.toast('無法複製')); return; }
       }
     });

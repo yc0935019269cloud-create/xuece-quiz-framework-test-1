@@ -171,6 +171,7 @@
 
 - AI 回答可收藏至指定課程的知識筆記；回答中的詞彙可點開解說與發音。
 - 「📊 比較表」可指定項目與面向；回答表格可橫向捲動、複製為試算表格式，收藏後仍能閱讀。
+- 「➜ 流程圖」可指定主題與起終點，也能複製或收藏；自由提問同時要求表格與流程時優先表格。
 
 - `js/ai.js`：浮動聊天視窗（營地「AI 助教」、☰ 選單、題目詳解的「💬 問 AI」→ `data-askai`）。本機 BM25（中文雙字詞）從題庫＋學習卡找參考資料，回答附 [n] 出處（點了開題目或課程）；🔎 查證查維基百科（中／英，先找同名條目）與 PubMed，可再請 AI 對照。對話只存在記憶體。載入順序：pad.js → ai.js → toolmenu.js。
 - 後端：`supabase/ai-setup.sql`（`ai_limits` 個別設定（預設空＝登入就能用、不限次數；可對信箱設 daily_limit 或 blocked）、`ai_usage` 每日用量、`ai_status`／`ai_take`，RLS 無 policy）＋ `supabase/functions/ai-chat/index.ts`（Edge Function，只用 fetch；依序 Google → Groq → OpenRouter → NVIDIA，成功才扣次數）。設定與管理：`docs/AI助教設定.md`。

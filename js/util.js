@@ -71,9 +71,9 @@ const U = (() => {
       // ::: cols（欄位用 ||| 分開）／ ::: flow（每行一站，畫成箭頭流程）／ ::: 結尾
       if ((m = l.match(/^\s*:::\s*(cols|flow)((?:\s+[obgrpy])*)\s*$/))) {
         const kind = m[1], tint = m[2].trim().split(/\s+/).filter(Boolean), b = []; i++;
-        while (i < lines.length && !/^\s*:::\s*$/.test(lines[i])) { b.push(lines[i]); i++; }
-        i++;
-        if (kind === 'flow') out += `<div class="md-flow">${b.filter(x => x.trim()).map(x => `<span class="md-fstep">${inline(x.trim().replace(/^[-*]\s+/, ''))}</span>`).join('<span class="md-farr">➜</span>')}</div>`;
+        while (i < lines.length && !/^\s*:::\s*$/.test(lines[i])) { if (kind === 'flow' && (/^\s*:::\s*flow(?:\s|$)/.test(lines[i]) || (/^\s*\*\*.+\*\*\s*$/.test(lines[i]) && /^\s*:::\s*flow(?:\s|$)/.test(lines[i + 1] || '')))) break; b.push(lines[i]); i++; }
+        if (i < lines.length && /^\s*:::\s*$/.test(lines[i])) i++;
+        if (kind === 'flow') out += `<div class="md-flow">${(opt.scrollTables ? b.flatMap(x => x.split(/\s*(?:→|➜|->)\s*/)) : b).filter(x => x.trim()).map(x => `<span class="md-fstep">${inline(x.trim().replace(/^[-*]\s+/, ''))}</span>`).join('<span class="md-farr">➜</span>')}</div>`;
         else { const cols = [[]]; b.forEach(x => /^\s*\|\|\|\s*$/.test(x) ? cols.push([]) : cols[cols.length - 1].push(x)); out += `<div class="md-cols" style="--n:${cols.length}">${cols.map((c, k) => `<div class="md-col${tint[k] ? ' c-' + tint[k] : ''}">${md(c.join('\n'))}</div>`).join('')}</div>`; }
         continue;
       }

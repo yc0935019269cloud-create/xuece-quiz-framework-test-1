@@ -1,0 +1,119 @@
+{
+  "checks": [
+    {
+      "name": "1100 form instruction",
+      "ok": true
+    },
+    {
+      "name": "1100 flow stations and inline split",
+      "ok": true
+    },
+    {
+      "name": "1100 glossary",
+      "ok": true
+    },
+    {
+      "name": "1100 glossary popup actions",
+      "ok": true
+    },
+    {
+      "name": "1100 read-light colors",
+      "ok": true
+    },
+    {
+      "name": "1100 no overflow",
+      "ok": true
+    },
+    {
+      "name": "1100 copied labels and stations",
+      "ok": true
+    },
+    {
+      "name": "1100 unterminated",
+      "ok": true
+    },
+    {
+      "name": "1100 free text",
+      "ok": true
+    },
+    {
+      "name": "1100 table priority",
+      "ok": true
+    },
+    {
+      "name": "1100 bookmarked flow",
+      "ok": true
+    },
+    {
+      "name": "1100 bookmark glossary and no overflow",
+      "ok": true
+    },
+    {
+      "name": "1100 bookmark read-light colors",
+      "ok": true
+    },
+    {
+      "name": "1100 no page errors",
+      "ok": true
+    },
+    {
+      "name": "390 form instruction",
+      "ok": true
+    },
+    {
+      "name": "390 flow stations and inline split",
+      "ok": true
+    },
+    {
+      "name": "390 glossary",
+      "ok": true
+    },
+    {
+      "name": "390 glossary popup actions",
+      "ok": true
+    },
+    {
+      "name": "390 read-light colors",
+      "ok": true
+    },
+    {
+      "name": "390 no overflow",
+      "ok": true
+    },
+    {
+      "name": "390 copied labels and stations",
+      "ok": true
+    },
+    {
+      "name": "390 unterminated",
+      "ok": true
+    },
+    {
+      "name": "390 free text",
+      "ok": true
+    },
+    {
+      "name": "390 table priority",
+      "ok": true
+    },
+    {
+      "name": "390 bookmarked flow",
+      "ok": true
+    },
+    {
+      "name": "390 bookmark glossary and no overflow",
+      "ok": true
+    },
+    {
+      "name": "390 bookmark read-light colors",
+      "ok": true
+    },
+    {
+      "name": "390 no page errors",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "passed": 28,
+  "total": 28
+}
