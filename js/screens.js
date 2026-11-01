@@ -320,14 +320,29 @@ const Screens = (() => {
         <li><b>8 張場景</b>：有的直接買、有的要抽；每張都有早晨、白天、黃昏、夜晚四種樣貌，依時間變化。營地上方「🖼 場景」切換。</li>
         <li><b>🛠 布置營地</b>：拖曳擺放、翻轉、收回物件；篝火、池塘、信箱、花盆、告示板、勇者和夥伴也能移動，「↺ 基本物件回原位」可一鍵還原。</li>
       </ul>
-      <p class="small-t dim mt">另外：彈珠刷題、彈珠學習要先登入雲端同步才能玩；學習模式、自由遠征、彈珠模式賺的魂晶也提高了。</p>` }
+      <p class="small-t dim mt">另外：彈珠刷題、彈珠學習要先登入雲端同步才能玩；學習模式、自由遠征、彈珠模式賺的魂晶也提高了。</p>` },
+    { id: 'ai-tutor-2026-11-01', title: '💬 更新公告：AI 助教變強了！', go: 'ai', goLabel: '💬 打開 AI 助教', gems: 20, body: `
+      <p class="gold-t">🎁 期中考加油！已送你 <b>20 魂晶</b>。</p>
+      <p class="gold-t mt">📍 AI 助教在哪？</p>
+      <ul class="small-t"><li>營地的「AI 助教」，或右上角 ☰ 選單</li><li>題目詳解的「💬 問 AI」</li><li>上課時打開，會自動帶著你正在讀的那一頁（要先登入雲端同步）</li></ul>
+      <p class="gold-t mt">✨ 新功能</p>
+      <ul class="small-t">
+        <li><b>☆ 收藏回答</b>：每則回答都能收藏，自己選要收在哪一科、哪個單元、哪一課（預設是你正在讀的那課）。收在「學習模式 → 知識筆記 → ★ 星號收藏」的「AI 問答」。</li>
+        <li><b>名詞點開</b>：回答裡的解剖名詞有底線，點一下看說明、按 🔊 聽英文怎麼念。</li>
+        <li><b>🖼 看圖</b>：想知道構造長怎樣，按「🖼 看圖」或直接問「睫狀體長怎樣」。先給網站裡用紅圈標好的圖，再到維基共享資源找照片。</li>
+        <li><b>📊 比較表</b>：把想比較的東西放進去（例如交感 vs 副交感），自動做成表格；可以「📋 複製表格」貼到試算表。</li>
+        <li><b>➜ 流程圖</b>：問「瞳孔光反射的途徑」「房水怎麼流出去」，會畫成一站一站的箭頭流程。</li>
+      </ul>` }
   ];
   function newsModal() {
     const p = P(), seen = p.newsSeen || [];
     const n = NEWS.find(x => !seen.includes(x.id));
     if (!n || U.$('#modalRoot').children.length) return;
-    p.newsSeen = seen.concat(n.id); Store.saveProfile();
-    U.modal({ title: n.title, body: n.body, contained: true, buttons: [{ label: '知道了' }, { label: n.goLabel, cls: 'gold', onClick: () => App.go(n.go) }] });
+    p.newsSeen = seen.concat(n.id);
+    if (n.gems) { p.gems += n.gems; SFX.play('coin'); }   // 公告附贈魂晶：和 newsSeen 一起存，每個存檔只領一次
+    Store.saveProfile(); App.refreshTop();
+    const go = () => n.go === 'ai' ? AI.open() : App.go(n.go);
+    U.modal({ title: n.title, body: n.body, contained: true, buttons: [{ label: '知道了' }, { label: n.goLabel, cls: 'gold', onClick: go }] });
   }
   function hub() {
     clearInterval(campTimer);
