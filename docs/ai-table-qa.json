@@ -1,0 +1,119 @@
+{
+  "checks": [
+    {
+      "name": "1100 six item limit",
+      "ok": true
+    },
+    {
+      "name": "1100 form instruction",
+      "ok": true
+    },
+    {
+      "name": "1100 scroll container",
+      "ok": true
+    },
+    {
+      "name": "1100 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "1100 sticky first column",
+      "ok": true
+    },
+    {
+      "name": "1100 sticky while scrolling",
+      "ok": true
+    },
+    {
+      "name": "1100 glossary in cell",
+      "ok": true
+    },
+    {
+      "name": "1100 ragged row padded",
+      "ok": true
+    },
+    {
+      "name": "1100 TSV copied",
+      "ok": true
+    },
+    {
+      "name": "1100 free text instruction",
+      "ok": true
+    },
+    {
+      "name": "1100 bookmarked table",
+      "ok": true
+    },
+    {
+      "name": "1100 bookmark glossary",
+      "ok": true
+    },
+    {
+      "name": "1100 bookmark no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "1100 no page errors",
+      "ok": true
+    },
+    {
+      "name": "390 six item limit",
+      "ok": true
+    },
+    {
+      "name": "390 form instruction",
+      "ok": true
+    },
+    {
+      "name": "390 scroll container",
+      "ok": true
+    },
+    {
+      "name": "390 no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "390 sticky first column",
+      "ok": true
+    },
+    {
+      "name": "390 sticky while scrolling",
+      "ok": true
+    },
+    {
+      "name": "390 glossary in cell",
+      "ok": true
+    },
+    {
+      "name": "390 ragged row padded",
+      "ok": true
+    },
+    {
+      "name": "390 TSV copied",
+      "ok": true
+    },
+    {
+      "name": "390 free text instruction",
+      "ok": true
+    },
+    {
+      "name": "390 bookmarked table",
+      "ok": true
+    },
+    {
+      "name": "390 bookmark glossary",
+      "ok": true
+    },
+    {
+      "name": "390 bookmark no horizontal overflow",
+      "ok": true
+    },
+    {
+      "name": "390 no page errors",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "passed": 28,
+  "total": 28
+}

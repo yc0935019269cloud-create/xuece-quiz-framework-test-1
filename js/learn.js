@@ -1786,7 +1786,7 @@ const LEARN_UI = (() => {
   }
   function knowledgeCard(x) {
     if (x.pg) return pageCard(x);
-    if (x.r.kind === 'ai') { const { r, p, l } = x; return `<article class="lnote-card knowledge-card knowledge-ai"><div class="row"><span class="tag">AI 問答</span><span class="grow"></span><button type="button" class="px-btn small" data-open-page="${U.esc(JSON.stringify([p.id, l.id, 0]))}">到這一課 ▶</button>${starButton(r)}</div><p class="dim small-t">${U.esc(C.SUBJECTS[p.subject].name)} › ${U.esc(p.title)} › ${U.esc(l.title)}</p><p><b>${U.esc(r.q)}</b></p>${U.md(r.a)}<p class="dim small-t">${r.at ? U.esc(new Date(r.at).toLocaleDateString()) : ''}</p></article>`; }
+    if (x.r.kind === 'ai') { const { r, p, l } = x; return `<article class="lnote-card knowledge-card knowledge-ai"><div class="row"><span class="tag">AI 問答</span><span class="grow"></span><button type="button" class="px-btn small" data-open-page="${U.esc(JSON.stringify([p.id, l.id, 0]))}">到這一課 ▶</button>${starButton(r)}</div><p class="dim small-t">${U.esc(C.SUBJECTS[p.subject].name)} › ${U.esc(p.title)} › ${U.esc(l.title)}</p><p><b>${U.esc(r.q)}</b></p>${U.md(r.a, { scrollTables: true })}<p class="dim small-t">${r.at ? U.esc(new Date(r.at).toLocaleDateString()) : ''}</p></article>`; }
     const { r, p, l, s, i, q, c } = x;
     let content;
     if (s) {

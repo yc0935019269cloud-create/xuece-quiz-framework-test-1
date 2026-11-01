@@ -46,7 +46,7 @@ const U = (() => {
     return s;
   }
   const CALLOUT = { big: '', tip: '💡 記法', warn: '⚠️ 陷阱', why: '🤔 為什麼', exam: '🎯 國考這樣考', note: '📎 補充', key: '📌 一定要記' };
-  function md(src) {
+  function md(src, opt = {}) {
     const lines = String(src || '').replace(/\r/g, '').split('\n');
     let out = '', i = 0;
     while (i < lines.length) {
@@ -57,14 +57,16 @@ const U = (() => {
       if (/^\s*\|/.test(l)) {
         const rows = [];
         while (i < lines.length && /^\s*\|/.test(lines[i])) { rows.push(lines[i]); i++; }
-        let t = '<table>';
+        const count = Math.max(...rows.filter(r => !r.trim().replace(/^\||\|$/g, '').split('|').every(c => /^\s*:?-+:?\s*$/.test(c))).map(r => r.trim().replace(/^\||\|$/g, '').split('|').length), 0);
+        let t = opt.scrollTables ? '<div class="md-table-scroll" tabindex="0"><table>' : '<table>';
         rows.forEach((r, ri) => {
           const cells = r.trim().replace(/^\||\|$/g, '').split('|');
           if (cells.every(c => /^\s*:?-+:?\s*$/.test(c))) return;
+          if (opt.scrollTables) while (cells.length < count) cells.push('');
           const tag = ri === 0 ? 'th' : 'td';
           t += '<tr>' + cells.map(c => `<${tag}>${inline(c.trim())}</${tag}>`).join('') + '</tr>';
         });
-        out += t + '</table>'; continue;
+        out += t + (opt.scrollTables ? '</table></div>' : '</table>'); continue;
       }
       // ::: cols（欄位用 ||| 分開）／ ::: flow（每行一站，畫成箭頭流程）／ ::: 結尾
       if ((m = l.match(/^\s*:::\s*(cols|flow)((?:\s+[obgrpy])*)\s*$/))) {
