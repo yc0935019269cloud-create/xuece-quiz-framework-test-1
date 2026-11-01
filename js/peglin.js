@@ -297,7 +297,7 @@ const PEGLIN = (() => {
       <div class="pgw-stage">
         <iframe id="pgwFrame" title="哥布林彈珠" allow="autoplay; fullscreen; gamepad" src="${U.esc(hostUrl())}"></iframe>
         <div class="pgw-shield" id="pgwShield"><button type="button" class="pgw-shield-btn" id="pgwShieldBtn"></button></div>
-        <section class="pgw-panel" id="pgwPanel" tabindex="-1" hidden><button type="button" class="pgw-hide" id="pgwHide" title="暫時關閉題目（點📖或彈珠用完時會回到這一題）" aria-label="暫時關閉題目">✕</button><div class="pgw-head" id="pgwHead"></div><div id="pgwQ"></div></section>
+        <section class="pgw-panel" id="pgwPanel" tabindex="-1" hidden><button type="button" class="pgw-hide" id="pgwHide" title="暫時關閉題目（點📖或彈珠用完時會回到這一題）" aria-label="暫時關閉題目">✕</button><div class="pgw-head" id="pgwHead"></div>${learn ? '' : '<details class="pgw-scope" id="pgwScope"><summary></summary><div></div></details>'}<div id="pgwQ"></div></section>
       </div></div>`);
     document.body.appendChild(el);
     document.documentElement.classList.add('pgw-open');
@@ -443,6 +443,12 @@ const PEGLIN = (() => {
     if (G.credits > 0 || (before && !it.back && G.pts + 1 >= G.per)) row.appendChild(shootBtn(before));
     return G.goBtn;
   }
+  function updateScope() {
+    const el = U.$('#pgwScope'); if (!el || !G || !G.S.scope) return;
+    const s = Screens.scopeStats(G.S.scope);
+    el.querySelector('summary').textContent = `範圍：已刷 ${s.done} 題・未刷 ${s.todo} 題（共 ${s.total}）`;
+    el.querySelector('div').textContent = `題型已刷 ${s.tDone}／${s.types} 種（同類題組任一題作答過即算已刷）`;
+  }
   function next(revisit = false) {
     if (!G) return;
     clearItem(); G.parked = false;
@@ -469,6 +475,7 @@ const PEGLIN = (() => {
       nav.innerHTML = `${cur > 0 ? '<button type="button" class="px-btn small" data-prev>◀ 上一頁</button>' : ''}<div class="pgw-pips" aria-label="課內頁面">${S.items.map((x, k) => x.les === it.les ? `<button type="button" class="pgw-pip ${k === cur ? 'on' : ''}" data-page="${k}" aria-label="第 ${k - lessonStart + 1} 步" ${k === cur ? 'aria-current="step"' : ''} ${k > S.frontier() ? 'disabled' : ''}></button>` : '').join('')}</div>`;
       body.before(nav); nav.querySelectorAll('[data-page], [data-prev]').forEach(b => b.onclick = () => { const k = b.hasAttribute('data-prev') ? cur - 1 : +b.dataset.page; if (S.goto(k)) next(true); });
     }
+    updateScope();
     if (it.kind === 'bank') renderBank(body, it); else if (it.kind === 'check') renderCheckItem(body, it); else renderRead(body, it);
     hud();
   }
@@ -488,6 +495,7 @@ const PEGLIN = (() => {
       // Navigation can leave an answered final page before its continue button is pressed.
       if (it.lessonEnd) finishLesson(it.les);
     }
+    updateScope();
     if (G.S.graded) G.S.graded(it, ok);
     earn(G.onWrong === 'count' || ok);
   }
@@ -634,8 +642,9 @@ const PEGLIN = (() => {
   /* 彈珠刷題：照自由遠征的條件排一輪題目；答錯可以稍後再出一次 */
   function quizSession(cfg, ids) {
     let q = ids.slice(), i = 0; const retried = new Set();
+    const scope = Array.isArray(cfg.types) ? pool(cfg) : [...new Set(ids)].map(id => Store.Q[id]).filter(Boolean);
     return {
-      mode: 'quiz', label: subjLabel(cfg.subjects), per: cfg.per, shots: cfg.shots, onWrong: cfg.onWrong, test: !!cfg.test,
+      mode: 'quiz', scope, label: subjLabel(cfg.subjects), per: cfg.per, shots: cfg.shots, onWrong: cfg.onWrong, test: !!cfg.test,
       pos: () => `第 ${Math.min(i, q.length)} / ${q.length} 題`,
       next() { while (i < q.length) { const x = Store.Q[q[i++]]; if (x) return { kind: 'bank', q: x }; } return null; },
       graded(it, ok) { if (!ok && cfg.retryWrong && !retried.has(it.q.id)) { retried.add(it.q.id); q.splice(Math.min(q.length, i + 3), 0, it.q.id); } },

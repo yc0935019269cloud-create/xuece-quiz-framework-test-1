@@ -1,0 +1,60 @@
+{
+  "at": "2026-11-01T13:13:07.833Z",
+  "checks": [
+    {
+      "name": "full selected scope matches setup statistics, not queue",
+      "pass": true,
+      "details": {
+        "expected": {
+          "total": 674,
+          "done": 0,
+          "todo": 674,
+          "types": 674,
+          "tDone": 0,
+          "tTodo": 674,
+          "loose": 674
+        },
+        "actual": "範圍：已刷 0 題・未刷 674 題（共 674）",
+        "session": 674
+      }
+    },
+    {
+      "name": "question types expand",
+      "pass": true
+    },
+    {
+      "name": "390px one line and no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "answer updates done and todo immediately",
+      "pass": true,
+      "details": {
+        "stats": {
+          "total": 674,
+          "done": 1,
+          "todo": 673,
+          "types": 674,
+          "tDone": 1,
+          "tTodo": 673,
+          "loose": 674
+        },
+        "text": "範圍：已刷 1 題・未刷 673 題（共 674）"
+      }
+    },
+    {
+      "name": "landscape question remains visible",
+      "pass": true
+    },
+    {
+      "name": "learn mode has no scope line",
+      "pass": true
+    },
+    {
+      "name": "no page errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "issues": []
+}

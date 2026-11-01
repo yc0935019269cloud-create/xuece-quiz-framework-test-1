@@ -132,6 +132,9 @@ html.pgw-open,html.pgw-open body{overflow:hidden}
 .pgw-head .grow{flex:1}
 .pgw-kind{font-weight:bold;color:#e8dab0}
 .pgw-where{color:#91a18b;font-size:13px}
+.pgw-scope{min-width:0;margin:-2px 0 6px;color:#b9c9b3;font-size:12px;line-height:1.35}
+.pgw-scope summary{cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pgw-scope div{overflow-wrap:anywhere}
 .pgw-lp{min-height:0;margin-top:0}
 .pgw-go{justify-content:center}
 .pgw-sol{margin-top:10px}
