@@ -1184,7 +1184,12 @@ const LEARN_UI = (() => {
           next.onclick = () => { SFX.play('click'); if (!last) { R.sub++; save(); sub(); } else advance(); };
           if (it.q) {
             const q = Store.Q[it.q];
-            ctl = QV.render(box, q, { mode: 'learn', onReveal: () => questionStar(box, q, p, l), onAnswer: res => { questionStar(box, q, p, l); if (review) { SFX.play(res.ok ? 'correct' : 'wrong'); ready(); return; } Store.record(q.id, res.ok); SFX.play(res.ok ? 'correct' : 'wrong'); say(res.ok ? U.pick(LINES.ok) : '這題已經收進錯題本，之後可以重刷。'); tally(res.ok); if (res.ok) onRightHit(true); else onWrongHit(); ready(); pageMoved({ done: true }); } });
+            const midtermPractice = p.id === 'eyelab-midterm' && ['manual', 'lab', 'lecture', 'mock-exam'].includes(l.id);
+            ctl = QV.render(box, q, { mode: 'learn', onEndPractice: midtermPractice ? async () => {
+              if (!(await U.confirm('結束這次實戰？', '已答的會保留'))) return;
+              if (!review) R.midtermEnded = true;
+              pk.midtermStarted = false; advance();
+            } : null, onReveal: () => questionStar(box, q, p, l), onAnswer: res => { questionStar(box, q, p, l); if (review) { SFX.play(res.ok ? 'correct' : 'wrong'); ready(); return; } Store.record(q.id, res.ok); SFX.play(res.ok ? 'correct' : 'wrong'); say(res.ok ? U.pick(LINES.ok) : '這題已經收進錯題本，之後可以重刷。'); tally(res.ok); if (res.ok) onRightHit(true); else onWrongHit(); ready(); pageMoved({ done: true }); } });
             body._key = null;
           } else {
             const c = s.checks[it.c];
@@ -1247,12 +1252,12 @@ const LEARN_UI = (() => {
     function finish() {
       cleanup();
       const acc = R.n ? R.ok / R.n : 1;
-      const star = acc >= 0.9 ? 3 : acc >= 0.7 ? 2 : 1;
+      const star = R.midtermEnded && !R.n ? 0 : acc >= 0.9 ? 3 : acc >= 0.7 ? 2 : 1;
       const first = !st.done;
       const bt = R.bt || {};
       // 戰鬥評等：S＝90% 以上第一次答對＋沒倒下＋（有魔王就要討伐成功）＋連擊夠長；倒下最高 B
       const RK = ['C', 'B', 'A', 'S'];
-      const rank = bt.seg === undefined || !BON() ? '' :
+      const rank = bt.seg === undefined || !BON() || (R.midtermEnded && !R.n) ? '' :
         acc >= 0.9 && !bt.falls && (!bt.bossDone || bt.bossWin) && (bt.maxCombo || 0) >= Math.min(5, R.n) ? 'S' :
         acc >= 0.75 && !bt.falls ? 'A' : acc >= 0.5 ? 'B' : 'C';
       const GL = C.GEMS.learn, rep = first ? 1 : GL.repeatMul;

@@ -231,7 +231,7 @@ ORDER = {
  '眼球與眼底': '眼球 角膜 鞏膜 虹膜 睫狀體 睫狀肌 水晶體 脈絡膜 視網膜 顳側視網膜 鼻側視網膜 鋸齒緣 黃斑部 中央小凹 視神經盤',
  '動脈': '頸內動脈 眼動脈 視網膜中央動脈 睫狀視網膜動脈 顳上動脈 顳下動脈 鼻上動脈 鼻下動脈 睫狀動脈 睫狀後動脈 睫狀後長動脈 睫狀後短動脈 睫狀前動脈 虹膜大動脈環 淚動脈 眶上動脈 滑車上動脈 滑車下動脈 前篩動脈 後篩動脈 內瞼動脈 外瞼動脈 上瞼動脈弓 下瞼動脈弓 肌動脈 鼻背動脈 前脈絡叢動脈 大腦前動脈 前交通動脈 大腦中動脈 後交通動脈 大腦後動脈 威利氏環 基底動脈 椎動脈 頸外動脈 上頷動脈 中腦膜動脈 眶下動脈 顏面動脈 眼角動脈 淺顳動脈',
  '腦神經與神經節': '動眼神經 滑車神經 三叉神經 眼神經 淚腺神經 額神經 鼻睫神經 睫狀長神經 睫狀短神經 前篩神經 後篩神經 滑車上神經 滑車下神經 外旋神經 外展神經 顏面神經 睫狀神經節 翼顎神經節 上頸神經節',
- '視覺路徑': '視神經 篩板前區 篩板後區 視神經眶內段 視神經管內段 視神經顱內段 視交叉 視束 外側膝狀體 視放射 梅氏環 鮑氏環 距狀溝 視覺皮質 初級視覺皮質',
+ '視覺路徑': '視神經 視神經球內段 篩板前區 篩板後區 視神經眶內段 視神經管內段 視神經顱內段 視交叉 視束 外側膝狀體 視放射 梅氏環 鮑氏環 距狀溝 視覺皮質 初級視覺皮質',
  '腦與腦幹': '大腦半球 額葉 頂葉 顳葉 枕葉 頂枕溝 中央溝 大腦縱裂 楔葉 舌回 側腦室 丘腦 中腦 上丘 上丘臂 下丘 頂蓋 橋腦 延腦 小腦 腦下垂體',
  '腦膜與其他': '硬腦膜'
 }
@@ -243,6 +243,21 @@ def regroup(groups):
         buckets[category].append(row)
     return [{'name': name, 'items': sorted(rows, key=lambda row: ORDER[name].index(row['zh']) if row['zh'] in ORDER[name] else len(ORDER[name]))} for name, rows in buckets.items() if rows]
 groups1, groups2, groups3 = map(regroup, (groups1, groups2, groups3))
+
+# 篩板前區是球內段的一部分；沿用其圖點並清楚標示為概略位置。
+prelaminar = next((d for d in registry.values() if d['zh'] == '篩板前區'), None)
+intraocular_views = [dict(v, title=v['title'] + '（紅圈為大致位置）')
+                     for v in (prelaminar or {}).get('views', [])
+                     if v['title'] == '視神經盤剖面']
+for groups in (groups1, groups2, groups3):
+    for group in groups:
+        if group['name'] != '視覺路徑': continue
+        rows = group['items']
+        segments = {'視神經眶內段', '視神經管內段', '視神經顱內段'}
+        if not segments.intersection(row['zh'] for row in rows): continue
+        index = next(i for i, row in enumerate(rows) if row['zh'] in segments | {'篩板前區', '篩板後區'})
+        rows.insert(index, {'zh': '視神經球內段', 'en': 'Intraocular part of optic nerve',
+                            'views': [dict(v) for v in intraocular_views]})
 
 # Existing marked fill questions; round-robin groups and deduplicate qids.
 questions = []

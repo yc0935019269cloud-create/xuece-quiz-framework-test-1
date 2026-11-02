@@ -139,7 +139,7 @@ const QV = (() => {
         const wrap2 = U.h(`<div class="col" style="width:100%;align-items:center;gap:6px">
           <input class="px-in fill-in" data-part="zh" style="width:min(320px,100%);font-size:18px" placeholder="中文名稱" autocomplete="off" lang="zh-Hant">
           <input class="px-in fill-in" data-part="en" style="width:min(320px,100%);font-size:18px" placeholder="English name" autocomplete="off" autocapitalize="off" spellcheck="false" lang="en">
-          <button class="px-btn gold">送出 ⏎</button></div>`);
+          <div class="row" style="justify-content:center;flex-wrap:wrap;gap:6px"><button class="px-btn gold">送出 ⏎</button>${opts.onEndPractice ? '<button class="px-btn small" data-give-up>👀 看答案</button><button class="px-btn small" data-end-practice>⏹ 結束這次實戰</button>' : ''}</div></div>`);
         const [zi, ei] = wrap2.querySelectorAll('input'), sb2 = wrap2.querySelector('button');
         const send2 = () => {
           if (locked) return;
@@ -150,6 +150,15 @@ const QV = (() => {
           finishFill(ok, `${z} / ${e}`);
         };
         sb2.onclick = send2;
+        if (opts.onEndPractice) {
+          const give = wrap2.querySelector('[data-give-up]'), end = wrap2.querySelector('[data-end-practice]');
+          give.onclick = ev => {
+            if (!give.contains(ev.target) || locked) return;
+            zi.disabled = ei.disabled = sb2.disabled = true;
+            give.remove(); finishFill(false, '');
+          };
+          end.onclick = ev => { if (end.contains(ev.target)) opts.onEndPractice(); };
+        }
         zi.onkeydown = ev => { if (ev.key === 'Enter') { ev.preventDefault(); ev.stopPropagation(); ei.focus(); } };
         ei.onkeydown = ev => { if (ev.key === 'Enter') { ev.preventDefault(); ev.stopPropagation(); send2(); } };
         ans.appendChild(wrap2);
@@ -191,7 +200,8 @@ const QV = (() => {
     function finishFill(ok, mine) {
       locked = true;
       document.removeEventListener('keydown', onKey);
-      resBox.innerHTML = (ok ? `<div class="verdict green-t">✔ 答對了！</div>` : `<div class="verdict red-t">✘ 答錯了</div><div class="center">你的答案：${U.esc(mine)}</div>`);
+      ans.querySelector('[data-give-up]')?.remove();
+      resBox.innerHTML = (ok ? `<div class="verdict green-t">✔ 答對了！</div>` : `<div class="verdict red-t">✘ 答錯了</div>${mine ? `<div class="center">你的答案：${U.esc(mine)}</div>` : ''}`);
       const exWrap = U.h('<div></div>');
       if (Store.settings.autoExplain || !ok) exWrap.innerHTML = explainHTML(q);
       const row = U.h('<div class="row mt" style="justify-content:center"></div>');

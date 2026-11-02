@@ -18,7 +18,7 @@ ok('brainstem structure and pins', !!brainstem && brainstem.steps[0].groups.flat
 const mockNine = pack.lessons[3].steps[1].groups[0].items[8];
 ok('mock item 9 short posterior ciliary arteries', mockNine.zh.includes('後短睫狀動脈') && mockNine.en === 'Short posterior ciliary arteries（SPCA）' && mockNine.views.length > 0);
 ok('groups', pack.lessons.slice(0, 4).every((l, i) => JSON.stringify(l.steps[1].groups.map(g => g.name)) === JSON.stringify(expectedGroups[i])));
-ok('row counts', JSON.stringify(pack.lessons.slice(0, 4).map(l => l.steps[1].groups.reduce((n, g) => n + g.items.length, 0))) === JSON.stringify([138,56,82,19]));
+ok('row counts', JSON.stringify(pack.lessons.slice(0, 4).map(l => l.steps[1].groups.reduce((n, g) => n + g.items.length, 0))) === JSON.stringify([139,56,82,19]));
 ok('no exam stars', !JSON.stringify(pack).includes('⭐') && !JSON.stringify(pack).includes('老師說會考') && pack.lessons.slice(0, 4).every(l => l.steps[1].groups.every(g => g.items.every(x => !x.star))));
 ok('mock numbering and missing image', pack.lessons[3].steps[1].groups[0].items.every((x, i) => x.zh.startsWith(`${i + 1}. `)) && !pack.lessons[3].steps[1].groups[0].items[7].views.length);
 (async () => {
