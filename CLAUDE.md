@@ -518,6 +518,7 @@
 - **補充圖（各種角度）**：`tools/midterm/extra_views.json`（21 張公有領域 Gray 圖，存 `img/eye-lab/extra/`；另含舊圖 gray188／190／193 補上的點位），產生器把它們加進各構造的 📍 views（名稱對不到會報錯）。點位依格線放大定位、紅圈疊圖核對（工具 `tmp/views/grid.py`，未提交）；非專業審稿。只有一張圖的構造 105 → 46；剩下多為小分支（眼瞼動脈弓、篩動脈／神經、睫狀動脈、四分支）、視神經分段、梅氏／鮑氏環，需要專門圖再補。
 - 每列名稱旁 ☆ 可單獨收藏：指向該構造第一張原圖的那一點（views 帶 p／l／name，同 `termRef`），收進知識筆記星號收藏；同構造在別張圖已收藏時顯示 ★。測試 `tools/midterm/star-check.cjs`（14 項）。
 - 產生器 `tools/midterm/build_midterm.py`（可重跑，掃 eye_anat 圖鑑 diagram 點位）、檢查 `tools/midterm/check.cjs`（112 項通過）、截圖 `tools/midterm/_shot.cjs`。補圖之後重跑產生器即可。
+- **2026-11-02 改版（v190）**：各課依區塊分組（骨質眼窩、眼瞼與淚器、眼外肌與眼眶、眼球與眼底、動脈、腦神經、視覺路徑、腦與腦幹、腦膜），相關／名稱相近的構造相鄰；拿掉 ⭐ 老師說會考（`LAB_EXAM` 不再渲染）；實驗課複習刪掉與實驗手冊總複習重複的構造。新增「模擬考」課（老師給的 19 個構造，第 5、7 項都是梅氏環合為一列；淚腺眼眶部目前無圖）與「切片」課（KMU 切片 j006a／j007a 軸切、Sg-3／Sg-4 矢狀切，圖在 `img/eye-lab-private/slices/`，矢狀切空白圖為去字版）：一覽表 📍 看切片紅圈＋4 張切片大圖 explore（每點可收藏）；只收本複習範圍的構造，梅氏環、硬腦膜（小腦天幕／大腦鐮）為大致位置。點位正本 `tools/midterm/slice_points/<切片>.json`（全部標籤、引線尖端，核對圖 `docs/midterm-slices/overlay-*.png`）→ 選點 `tools/midterm/slice_points.json`（理由 `docs/midterm-slices/selection.md`）→ 產生器。切片圖也加進其他課同名構造的 📍。check.cjs 225 項。
 - 課程地圖跳頁：課文寫 `[[卡片標題|顯示文字]]` 會變成跳到該卡的連結（emomo 考點地圖使用）。
 
 ## 答案疑義題本（2026-10-30，v162）

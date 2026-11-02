@@ -1,0 +1,363 @@
+[
+  {
+    "slice": "j006a",
+    "image": "img/eye-lab-private/slices/j006a-blank.jpg",
+    "points": [
+      {
+        "zh": "淚囊",
+        "en": "lacrimal sac",
+        "x": 44.92,
+        "y": 18.45,
+        "approx": false
+      },
+      {
+        "zh": "內直肌",
+        "en": "medial rectus",
+        "x": 44.15,
+        "y": 30.0,
+        "approx": false
+      },
+      {
+        "zh": "外直肌",
+        "en": "lateral rectus",
+        "x": 40.6,
+        "y": 30.0,
+        "approx": false
+      },
+      {
+        "zh": "蝶骨大翼",
+        "en": "greater wing of sphenoid bone",
+        "x": 40.52,
+        "y": 33.18,
+        "approx": false
+      },
+      {
+        "zh": "顴骨",
+        "en": "Zygomatic bone",
+        "x": 63.8,
+        "y": 23.65,
+        "approx": false
+      },
+      {
+        "zh": "篩竇",
+        "en": "ethmoidal sinus",
+        "x": 53.55,
+        "y": 28.99,
+        "approx": false
+      },
+      {
+        "zh": "蝶竇",
+        "en": "sphenoidal sinus",
+        "x": 49.25,
+        "y": 39.78,
+        "approx": false
+      },
+      {
+        "zh": "視神經",
+        "en": "Optic nerve",
+        "x": 49.4,
+        "y": 44.33,
+        "approx": false,
+        "note": "原圖合標：Optic nerve and optic chiasma"
+      },
+      {
+        "zh": "視交叉",
+        "en": "Optic chiasm",
+        "x": 49.4,
+        "y": 44.33,
+        "approx": false,
+        "note": "原圖合標：Optic nerve and optic chiasma"
+      },
+      {
+        "zh": "視束",
+        "en": "Optic tract",
+        "x": 51.45,
+        "y": 45.78,
+        "approx": false
+      },
+      {
+        "zh": "側腦室",
+        "en": "lateral ventricle",
+        "x": 58.73,
+        "y": 58.38,
+        "approx": false
+      },
+      {
+        "zh": "下丘",
+        "en": "inferior colliculus",
+        "x": 51.45,
+        "y": 61.05,
+        "approx": false
+      },
+      {
+        "zh": "視放射",
+        "en": "optic radiation",
+        "x": 58.0,
+        "y": 71.01,
+        "approx": false
+      },
+      {
+        "zh": "距狀溝",
+        "en": "calcarine sulcus",
+        "x": 52.2,
+        "y": 76.35,
+        "approx": false
+      },
+      {
+        "zh": "硬腦膜",
+        "en": "dura mater",
+        "x": 49.95,
+        "y": 72.02,
+        "approx": true,
+        "note": "小腦天幕"
+      },
+      {
+        "zh": "梅氏環",
+        "en": "Meyer's loop",
+        "x": 60.03,
+        "y": 58.38,
+        "approx": true,
+        "note": "側腦室下角旁往顳葉方向的視放射，示意位置"
+      }
+    ]
+  },
+  {
+    "slice": "j007a",
+    "image": "img/eye-lab-private/slices/j007a-blank.jpg",
+    "points": [
+      {
+        "zh": "顴骨",
+        "en": "Zygomatic bone",
+        "x": 34.7,
+        "y": 26.86,
+        "approx": false
+      },
+      {
+        "zh": "蝶竇",
+        "en": "sphenoidal sinus",
+        "x": 45.6,
+        "y": 44.69,
+        "approx": false
+      },
+      {
+        "zh": "頸內動脈",
+        "en": "internal carotid artery",
+        "x": 44.15,
+        "y": 47.94,
+        "approx": false
+      },
+      {
+        "zh": "外旋神經",
+        "en": "abducens nerve",
+        "x": 44.9,
+        "y": 52.06,
+        "approx": false
+      },
+      {
+        "zh": "淺顳動脈",
+        "en": "superficial temporal artery",
+        "x": 31.05,
+        "y": 48.95,
+        "approx": false,
+        "note": "原圖合標：Superficial temporal vein and artery"
+      },
+      {
+        "zh": "三叉神經",
+        "en": "trigeminal nerve",
+        "x": 43.45,
+        "y": 55.23,
+        "approx": false
+      },
+      {
+        "zh": "小腦",
+        "en": "cerebellum",
+        "x": 42.75,
+        "y": 67.87,
+        "approx": false
+      },
+      {
+        "zh": "中鼻甲",
+        "en": "middle nasal concha",
+        "x": 50.05,
+        "y": 24.77,
+        "approx": false
+      },
+      {
+        "zh": "鼻淚管",
+        "en": "nasolacrimal duct",
+        "x": 52.7,
+        "y": 25.42,
+        "approx": false
+      },
+      {
+        "zh": "上頷竇",
+        "en": "maxillary sinus",
+        "x": 54.4,
+        "y": 29.03,
+        "approx": false
+      },
+      {
+        "zh": "基底動脈",
+        "en": "basilar artery",
+        "x": 49.3,
+        "y": 52.06,
+        "approx": false
+      },
+      {
+        "zh": "顏面神經",
+        "en": "facial nerve",
+        "x": 57.25,
+        "y": 56.32,
+        "approx": false,
+        "note": "原圖合標：Facial and vestibulocochlear nerve"
+      },
+      {
+        "zh": "橋腦",
+        "en": "pons",
+        "x": 48.55,
+        "y": 55.23,
+        "approx": false
+      },
+      {
+        "zh": "枕葉",
+        "en": "occipital lobe",
+        "x": 54.4,
+        "y": 80.29,
+        "approx": false
+      },
+      {
+        "zh": "硬腦膜",
+        "en": "dura mater",
+        "x": 47.75,
+        "y": 81.52,
+        "approx": true,
+        "note": "大腦鐮"
+      }
+    ]
+  },
+  {
+    "slice": "sg3",
+    "image": "img/eye-lab-private/slices/sg3-blank.jpg",
+    "points": [
+      {
+        "zh": "中腦",
+        "en": "midbrain",
+        "x": 47.87,
+        "y": 18.15,
+        "approx": false
+      },
+      {
+        "zh": "小腦",
+        "en": "cerebellum",
+        "x": 42.09,
+        "y": 21.85,
+        "approx": false
+      },
+      {
+        "zh": "橋腦",
+        "en": "pons",
+        "x": 50.69,
+        "y": 21.75,
+        "approx": false
+      },
+      {
+        "zh": "動眼神經",
+        "en": "oculomotor nerve",
+        "x": 51.12,
+        "y": 18.8,
+        "approx": false
+      },
+      {
+        "zh": "額竇",
+        "en": "frontal sinus",
+        "x": 72.42,
+        "y": 16.15,
+        "approx": false
+      },
+      {
+        "zh": "視束",
+        "en": "Optic tract",
+        "x": 55.81,
+        "y": 18.2,
+        "approx": false
+      },
+      {
+        "zh": "腦下垂體",
+        "en": "pituitary gland",
+        "x": 56.68,
+        "y": 19.6,
+        "approx": false
+      },
+      {
+        "zh": "基底動脈",
+        "en": "basilar artery",
+        "x": 52.35,
+        "y": 22.45,
+        "approx": false
+      },
+      {
+        "zh": "下鼻甲",
+        "en": "inferior nasal concha",
+        "x": 65.2,
+        "y": 26.05,
+        "approx": false
+      },
+      {
+        "zh": "硬腦膜",
+        "en": "dura mater",
+        "x": 36.75,
+        "y": 12.1,
+        "approx": true,
+        "note": "大腦鐮"
+      }
+    ]
+  },
+  {
+    "slice": "sg4",
+    "image": "img/eye-lab-private/slices/sg4-blank.jpg",
+    "points": [
+      {
+        "zh": "側腦室",
+        "en": "lateral ventricle",
+        "x": 47.44,
+        "y": 14.8,
+        "approx": false
+      },
+      {
+        "zh": "額竇",
+        "en": "frontal sinus",
+        "x": 30.47,
+        "y": 16.75,
+        "approx": false
+      },
+      {
+        "zh": "蝶竇",
+        "en": "sphenoidal sinus",
+        "x": 43.75,
+        "y": 23.05,
+        "approx": false
+      },
+      {
+        "zh": "中鼻甲",
+        "en": "middle nasal concha",
+        "x": 34.3,
+        "y": 23.15,
+        "approx": false
+      },
+      {
+        "zh": "下頷骨",
+        "en": "mandible",
+        "x": 32.13,
+        "y": 39.2,
+        "approx": false
+      },
+      {
+        "zh": "丘腦",
+        "en": "thalamus",
+        "x": 53.36,
+        "y": 16.35,
+        "approx": false
+      }
+    ]
+  }
+]

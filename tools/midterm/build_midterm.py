@@ -137,7 +137,6 @@ supplement = [identify('鋸齒緣', 'ora serrata'), identify('瞼板腺', 'tarsa
 
 def item(key, tag='', count=None, star=False):
     d = dict(registry[key])
-    if star: d['star'] = True
     if tag: d['tag'] = tag
     if count is not None: d['count'] = count
     return d
@@ -210,7 +209,39 @@ for title, codes in [('眼球血液供應', ('100501', '101201', '101202')), ('�
     found.sort(key=lambda x: (-x[1], all_candidates[x[0]]['zh']))
     lecture_tables.append((title, found))
     exam_terms = {'眼球血液供應': {'睫狀視網膜動脈', '視網膜中央動脈'}, '眼球自主神經系統': {'鼻睫神經', '中腦', '內直肌', '睫狀肌'}}
-    groups3.append({'name': title, 'items': [item(k, count=n, star=(d['zh'] in exam_terms[title])) for k, n, valid in found if valid for d in [registry[k]]]})
+    groups3.append({'name': title, 'items': [item(k, count=n, star=False) for k, n, valid in found if valid for d in [registry[k]]]})
+
+# Preserve each source row, except lab rows matching the manual by either name.
+def identity(row):
+    return norm(row['zh']), norm(row['en'])
+manual_names = [set(), set()]
+for g in groups1:
+    for row in g['items']:
+        for i, value in enumerate(identity(row)):
+            if value: manual_names[i].add(value)
+removed = [row for g in groups2 for row in g['items'] if any(value and value in manual_names[i] for i, value in enumerate(identity(row)))]
+groups2 = [{'name': g['name'], 'items': [row for row in g['items'] if not any(value and value in manual_names[i] for i, value in enumerate(identity(row)))]} for g in groups2]
+
+# Explicit anatomical ordering keeps similar names and paths adjacent while retaining duplicates.
+ORDER = {
+ '骨質眼窩': '鼻骨 淚骨 額骨 篩骨 蝶骨 蝶骨體 蝶骨小翼 蝶骨大翼 顴骨 顴骨顳突 顳骨 顳骨顴突 上頜骨 上頷骨腭突 腭骨 腭骨水平板 枕骨 頂骨 下頷骨 犁骨 篩骨垂直板 雞冠 中鼻甲 下鼻甲 蝶鞍 眉弓 滑車窩 淚腺窩 淚窩 外側結節 眶上孔 眶下孔 眶上裂 眶下裂 視神經管 前篩孔 後篩孔 篩板 嗅孔 圓孔 卵圓孔 棘孔 破裂孔 頸動脈管 頸靜脈孔 內耳道 舌下神經管 枕骨大孔 門齒孔 莖乳孔 頂孔 下頷孔 頦孔 上頷竇 篩竇 額竇 蝶竇 莖突 乳突 枕髁 鱗狀縫 矢狀縫 人字縫 冠狀縫 枕外隆凸 下頷窩 外耳道',
+ '眼瞼與淚器': '眼瞼 前瞼 後瞼 眼輪匝肌 瞼板 瞼板腺 穆勒氏肌 外側瞼韌帶 內側瞼韌帶 淚腺 淚點 淚小管 淚囊 鼻淚管',
+ '眼外肌與眼眶': '提上眼瞼肌 上直肌 下直肌 內直肌 外直肌 上斜肌 下斜肌 滑車 辛氏環',
+ '眼球與眼底': '眼球 角膜 鞏膜 虹膜 睫狀體 睫狀肌 水晶體 脈絡膜 視網膜 顳側視網膜 鼻側視網膜 鋸齒緣 黃斑部 中央小凹 視神經盤',
+ '動脈': '頸內動脈 眼動脈 視網膜中央動脈 睫狀視網膜動脈 顳上動脈 顳下動脈 鼻上動脈 鼻下動脈 睫狀動脈 睫狀後動脈 睫狀後長動脈 睫狀後短動脈 睫狀前動脈 虹膜大動脈環 淚動脈 眶上動脈 滑車上動脈 滑車下動脈 前篩動脈 後篩動脈 內瞼動脈 外瞼動脈 上瞼動脈弓 下瞼動脈弓 肌動脈 鼻背動脈 前脈絡叢動脈 大腦前動脈 前交通動脈 大腦中動脈 後交通動脈 大腦後動脈 威利氏環 基底動脈 椎動脈 頸外動脈 上頷動脈 中腦膜動脈 眶下動脈 顏面動脈 眼角動脈 淺顳動脈',
+ '腦神經與神經節': '動眼神經 滑車神經 三叉神經 眼神經 淚腺神經 額神經 鼻睫神經 睫狀長神經 睫狀短神經 前篩神經 後篩神經 滑車上神經 滑車下神經 外旋神經 外展神經 顏面神經 睫狀神經節 翼顎神經節 上頸神經節',
+ '視覺路徑': '視神經 篩板前區 篩板後區 視神經眶內段 視神經管內段 視神經顱內段 視交叉 視束 外側膝狀體 視放射 梅氏環 鮑氏環 距狀溝 視覺皮質 初級視覺皮質',
+ '腦與腦幹': '大腦半球 額葉 頂葉 顳葉 枕葉 頂枕溝 中央溝 大腦縱裂 楔葉 舌回 側腦室 丘腦 中腦 上丘 上丘臂 下丘 頂蓋 橋腦 延腦 小腦 腦下垂體',
+ '腦膜與其他': '硬腦膜'
+}
+ORDER = {k: v.split() for k, v in ORDER.items()}
+def regroup(groups):
+    buckets = {name: [] for name in ORDER}
+    for row in (row for g in groups for row in g['items']):
+        category = next((name for name, order in ORDER.items() if row['zh'] in order), '腦膜與其他')
+        buckets[category].append(row)
+    return [{'name': name, 'items': sorted(rows, key=lambda row: ORDER[name].index(row['zh']) if row['zh'] in ORDER[name] else len(ORDER[name]))} for name, rows in buckets.items() if rows]
+groups1, groups2, groups3 = map(regroup, (groups1, groups2, groups3))
 
 # Existing marked fill questions; round-robin groups and deduplicate qids.
 questions = []
@@ -242,18 +273,92 @@ for lid, title, groups, intro in [
     assert ids, lid
     lessons.append({'id': lid, 'title': title, 'steps': [
         {'type': 'intro', 'title': title, 'body': intro + '\n\n清單可搜尋、聽英文與展開各圖位置，再用紅圈題練習。'},
-        {'type': 'termlist', 'title': '構造總清單', 'body': '⭐＝老師說會考｜名稱旁的 ☆ 點了收進知識筆記的星號收藏（連原圖）｜📍 位置看各張圖。', 'groups': groups},
+        {'type': 'termlist', 'title': '構造總清單', 'body': '名稱旁的 ☆ 點了收進知識筆記的星號收藏（連原圖）｜📍 位置看各張圖。', 'groups': groups},
         {'type': 'practice', 'title': '跑台模擬', 'qids': ids},
         {'type': 'recap', 'points': ['先辨認圖的方向，再找相鄰構造。', '練習同時寫出中文與英文。', '換不同切面與模型再確認一次。']}
     ]})
+
+mock_specs = [
+ ('距狀溝（禽距溝）', 'Calcarine sulcus', 'cal', ''),
+ ('腦下垂體', 'Pituitary gland (hypophysis)', 'pit', ''),
+ ('提上眼瞼肌', 'Levator palpebrae superioris', 'lps', ''),
+ ('鼻淚管', 'Nasolacrimal duct', 'nld', ''),
+ ('外側膝狀體', 'Lateral geniculate nucleus/body', 'lgn', ''),
+ ('梅氏環', "Meyer's loop", 'meyer', ''),
+ ('眶上裂', 'Superior orbital fissure', 'sof', ''),
+ ('淚腺的眼眶部', 'Orbital part of lacrimal gland', None, ''),
+ ('後睫狀動脈', 'Posterior ciliary arteries', identify('睫狀後動脈', 'posterior ciliary artery'), ''),
+ ('硬腦膜', 'Dura mater', 'dura', ''),
+ ('前睫狀動脈', 'Anterior ciliary arteries', 'aca-cil', ''),
+ ('瞼板腺', 'Tarsal (meibomian) glands', 'meibomian', ''),
+ ('眼角動脈', 'Angular artery', 'angular-a', ''),
+ ('滑車神經', 'Trochlear nerve (CN IV)', 'cn4', ''),
+ ('睫狀神經節', 'Ciliary ganglion', 'cil-gang', ''),
+ ('顴骨的上頜突', 'Maxillary process of zygomatic bone', 'zygomatic', '顴骨圖位僅供大致參考，非上頜突精確標點'),
+ ('中大腦動脈', 'Middle cerebral artery (MCA)', 'mca', ''),
+ ('視網膜顳上小動脈', 'Superior temporal retinal arteriole', 'sta-ret', ''),
+ ('外展神經', 'Abducens nerve', 'cn6', ''),
+]
+mock_rows = []
+mock_keys = set()
+for number, (zh, en, key, note) in enumerate(mock_specs, 1):
+    views = [dict(v) for v in registry.get(key, {}).get('views', [])]
+    if key == 'zygomatic':
+        for view in views: view['title'] += '（顴骨位置，非上頜突精確標點）'
+    row = {'zh': f'{number}. {zh}', 'en': en, 'views': views}
+    if not views: note = (note + '；' if note else '') + '目前沒有圖'
+    if note: row['tag'] = note
+    mock_rows.append(row)
+    if key and key != 'zygomatic': mock_keys.add(key)
+mock_ids = list(dict.fromkeys(qid for key, qid in questions if key in mock_keys))
+mock_steps = [
+ {'type': 'intro', 'title': '模擬考', 'body': '老師給的模擬考範圍，共 19 個構造；原第 5 與第 7 項合併為梅氏環。'},
+ {'type': 'termlist', 'title': '模擬考構造清單', 'body': '名稱旁的 ☆ 可收藏原圖位置；📍 位置可展開各張圖。', 'groups': [{'name': '模擬考範圍', 'items': mock_rows}]},
+]
+if mock_ids: mock_steps.append({'type': 'practice', 'title': '跑台模擬', 'qids': mock_ids})
+mock_steps.append({'type': 'recap', 'points': ['依序辨認 19 個構造，練習中英文名稱與圖上位置。']})
+lessons.append({'id': 'mock-exam', 'title': '模擬考', 'steps': mock_steps})
+
+# Reviewed slice coordinates are maintained separately from the source atlas points.
+slices = json.loads(Path(__file__).with_name('slice_points.json').read_text(encoding='utf-8'))
+slice_rows = {}
+for fig in slices:
+    for pt in fig['points']:
+        name = pt['zh'] + ' ' + pt['en']
+        view = {'img': fig['image'], 'x': pt['x'], 'y': pt['y'],
+                'title': fig['slice'] + ('（紅圈為大致位置）' if pt['approx'] else ''),
+                'from': 'KMU, Anatomy', 'p': 'eyelab-midterm', 'l': 'slices', 'name': name}
+        row = slice_rows.setdefault(pt['zh'], {'zh': pt['zh'], 'en': pt['en'], 'views': []})
+        row['views'].append(view)
+# Reuse those same views in existing review rows with the same Chinese name.
+for lesson in lessons:
+    for step in lesson['steps']:
+        if step['type'] != 'termlist': continue
+        for group in step['groups']:
+            for row in group['items']:
+                zh = re.sub(r'^\d+\.\s*', '', row['zh'])
+                if zh in slice_rows: row['views'].extend(dict(v) for v in slice_rows[zh]['views'])
+slice_steps = [{'type': 'termlist', 'title': '切片上的構造',
+    'body': '下一頁起將逐張放大切片。標示「大致位置」的點僅供概略辨認。',
+    'groups': regroup([{'items': list(slice_rows.values())}])}]
+for fig in slices:
+    points = []
+    for pt in fig['points']:
+        desc = pt.get('note', '') + ('（大致位置）' if pt['approx'] else '')
+        points.append({'name': pt['zh'] + ' ' + pt['en'], 'x': pt['x'], 'y': pt['y'], 'desc': desc})
+    slice_steps.append({'type': 'diagram', 'title': fig['slice'], 'img': fig['image'],
+                        'mode': 'explore', 'source': fig['slice'] + '｜KMU, Anatomy', 'points': points})
+slice_steps.append({'type': 'recap', 'points': ['先確認切片方向，再依相鄰構造辨認；大致位置僅供概略參考。']})
+lessons.append({'id': 'slices', 'title': '切片', 'steps': slice_steps})
 
 pack = {'schema': 'xd-learn/1', 'id': 'eyelab-midterm', 'subject': 'eye_anat', 'path': ['眼解剖實驗', '期中總複習', '期中總複習'], 'order': 0, 'style': 'atlas', 'title': '期中總複習（跑台）', 'unit': '期中總複習', 'desc': '實驗手冊約 70 分、正課提及約 30 分；跑台用人體切片與模型，靜脈與看不到的構造不考。', 'level': 2, 'minutes': 60, 'lessons': lessons}
 OUT.write_text(json.dumps(pack, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 lines = ['# 期中總複習自評', '', '計數以完整校訂逐字稿的字面別名出現次數計算；同一位置取最長名稱，歧義別名不計，校訂稿未逐段回聽，同音誤字與代稱不會自動補計。', '']
 for lesson in lessons:
-    groups = lesson['steps'][1]['groups']; items = [x for g in groups for x in g['items']]
+    groups = next(s['groups'] for s in lesson['steps'] if s['type'] == 'termlist'); items = [x for g in groups for x in g['items']]
     images = sum(len(x['views']) for x in items)
-    lines.append(f"- {lesson['title']}：{len(groups)} 組、{len(items)} 列；有圖 {sum(bool(x['views']) for x in items)}、無圖 {sum(not x['views'] for x in items)}；平均 {images/len(items):.2f} 圖／列；跑台 {len(lesson['steps'][2]['qids'])} 題。")
+    lines.append(f"- {lesson['title']}：{len(groups)} 組、{len(items)} 列；有圖 {sum(bool(x['views']) for x in items)}、無圖 {sum(not x['views'] for x in items)}；平均 {images/len(items):.2f} 圖／列；跑台 {len(next((s['qids'] for s in lesson['steps'] if s['type'] == 'practice'), []))} 題。")
+lines += ['', '## 實驗課移除重複列'] + ['- ' + row['zh'] + ' / ' + row['en'] for row in removed]
 lines += ['', '## 排除清單']
 for reason, vals in excluded.items(): lines += ['', '### ' + reason] + ['- ' + x for x in sorted(vals)]
 lines += ['', '## 實驗課星號配對']

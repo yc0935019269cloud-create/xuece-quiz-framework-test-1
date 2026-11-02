@@ -4,6 +4,17 @@ const root = path.resolve(__dirname, '../..');
 const pack = JSON.parse(fs.readFileSync(path.join(root, 'content/learn/eye_anat/midterm-review.json'), 'utf8'));
 const failures = [], checks = [];
 function ok(label, pass, detail) { checks.push({ label, pass: !!pass }); if (!pass) failures.push({ label, detail }); }
+const expectedGroups = [
+  ['骨質眼窩','眼瞼與淚器','眼外肌與眼眶','眼球與眼底','動脈','腦神經與神經節','視覺路徑','腦與腦幹'],
+  ['骨質眼窩','眼球與眼底','視覺路徑','腦與腦幹','腦膜與其他'],
+  ['骨質眼窩','眼瞼與淚器','眼外肌與眼眶','眼球與眼底','動脈','腦神經與神經節','視覺路徑','腦與腦幹'],
+  ['模擬考範圍']
+];
+ok('lesson ids', JSON.stringify(pack.lessons.map(l => l.id)) === JSON.stringify(['manual','lab','lecture','mock-exam','slices']));
+ok('groups', pack.lessons.slice(0, 4).every((l, i) => JSON.stringify(l.steps[1].groups.map(g => g.name)) === JSON.stringify(expectedGroups[i])));
+ok('row counts', JSON.stringify(pack.lessons.slice(0, 4).map(l => l.steps[1].groups.reduce((n, g) => n + g.items.length, 0))) === JSON.stringify([138,56,82,19]));
+ok('no exam stars', !JSON.stringify(pack).includes('⭐') && !JSON.stringify(pack).includes('老師說會考') && pack.lessons.slice(0, 4).every(l => l.steps[1].groups.every(g => g.items.every(x => !x.star))));
+ok('mock numbering and missing image', pack.lessons[3].steps[1].groups[0].items.every((x, i) => x.zh.startsWith(`${i + 1}. `)) && !pack.lessons[3].steps[1].groups[0].items[7].views.length);
 (async () => {
   const browser = await chromium.launch({ channel: 'msedge', headless: true });
   for (const width of [1100, 390]) {
@@ -14,7 +25,7 @@ function ok(label, pass, detail) { checks.push({ label, pass: !!pass }); if (!pa
     await page.waitForFunction(() => typeof App !== 'undefined' && typeof LEARN_UI !== 'undefined');
     const backup = await page.evaluate(() => ({ ...localStorage }));
     try {
-      for (const [li, lesson] of pack.lessons.entries()) {
+      for (const [li, lesson] of pack.lessons.slice(0, 4).entries()) {
         await page.evaluate(({ id }) => { const d = LEARN_UI.exportData(); d.cfg.battle = false; d.les['eyelab-midterm/' + id] = { i: 1, done: 0, best: 0, run: { ok: 0, n: 0, sub: 0, pk: {}, t0: Date.now() } }; localStorage.setItem(SKEY('learn'), JSON.stringify(d)); }, lesson);
         await page.reload(); await page.waitForFunction(() => typeof App !== 'undefined');
         await page.evaluate(() => App.go('learn', { pack: 'eyelab-midterm' }));
@@ -22,6 +33,8 @@ function ok(label, pass, detail) { checks.push({ label, pass: !!pass }); if (!pa
         const prefix = `${width} ${lesson.id}`;
         const expected = lesson.steps[1].groups.flatMap(g => g.items);
         ok(prefix + ' all rows', await page.locator('.term-item').count() === expected.length);
+        ok(prefix + ' group titles', JSON.stringify(await page.locator('.term-group h4').allTextContents()) === JSON.stringify(expectedGroups[li]));
+        ok(prefix + ' no exam marks', !(await page.locator('#lpBody').innerText()).includes('⭐') && !(await page.locator('#lpBody').innerText()).includes('老師說會考'));
         ok(prefix + ' initially no images', await page.locator('.term-views img').count() === 0);
         ok(prefix + ' all closed', await page.locator('.term-toggle[aria-expanded="true"]').count() === 0);
         const row = page.locator('.term-item').first();
@@ -65,6 +78,39 @@ function ok(label, pass, detail) { checks.push({ label, pass: !!pass }); if (!pa
         await page.locator('.fill-in[data-part="en"]').press('Enter');
         await page.waitForTimeout(300);
         ok(prefix + ' practice submits', await page.locator('.fill-in[data-part="zh"]').isDisabled());
+      }
+
+      const sliceLesson = pack.lessons.find(l => l.id === 'slices');
+      const sliceData = JSON.parse(fs.readFileSync(path.join(root, 'tools/midterm/slice_points.json'), 'utf8'));
+      for (let si = 0; si < 5; si++) {
+        await page.evaluate(i => { const d = LEARN_UI.exportData(); d.cfg.battle = false; d.les['eyelab-midterm/slices'] = { i, done: 0, best: 0, run: { ok: 0, n: 0, sub: 0, pk: {}, t0: Date.now() } }; localStorage.setItem(SKEY('learn'), JSON.stringify(d)); }, si);
+        await page.reload(); await page.waitForFunction(() => typeof App !== 'undefined');
+        await page.evaluate(() => App.go('learn', { pack: 'eyelab-midterm' }));
+        await page.locator('[data-play="4"]').click();
+        if (!si) {
+          const rows = sliceLesson.steps[0].groups.flatMap(g => g.items);
+          ok(width + ' slice rows', await page.locator('.term-item').count() === rows.length && rows.every(r => r.views.length));
+          await page.locator('.term-search').fill(rows[0].zh);
+          ok(width + ' slice search', await page.locator('.term-item:visible').count() >= 1);
+          await page.locator('.term-search').fill('');
+          await page.locator('.term-open').click();
+          const loaded = await page.locator('.term-views img').evaluateAll(ims => Promise.all(ims.map(im => im.decode().then(() => im.naturalWidth > 0).catch(() => false))));
+          ok(width + ' slice views load', loaded.length === rows.reduce((n, r) => n + r.views.length, 0) && loaded.every(Boolean));
+          ok(width + ' slice row stars', await page.locator('.term-item .knowledge-star').count() === rows.length);
+        } else {
+          const fig = sliceData[si - 1];
+          ok(width + ' ' + fig.slice + ' pins', await page.locator('.dg-pin').count() === fig.points.length);
+          ok(width + ' ' + fig.slice + ' image loads', await page.locator('.dg-wrap img').evaluate(im => im.decode().then(() => im.naturalWidth > 0).catch(() => false)));
+          await page.locator('.dg-pin').first().click({ force: true });
+          ok(width + ' ' + fig.slice + ' pin name', (await page.locator('#dgInfo').innerText()).includes(fig.points[0].zh));
+          const star = page.locator('#dgInfo .knowledge-star'); const before = await star.getAttribute('aria-pressed'); await star.click();
+          ok(width + ' ' + fig.slice + ' pin star', await star.getAttribute('aria-pressed') !== before);
+          if (fig.points.some(p => p.approx)) {
+            const idx = fig.points.findIndex(p => p.approx); await page.locator('.dg-list li').nth(idx).click();
+            ok(width + ' ' + fig.slice + ' approximate note', (await page.locator('#dgInfo').innerText()).includes('大致位置'));
+          }
+        }
+        ok(width + ' slice page ' + si + ' no overflow', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       }
       ok(width + ' no page errors', errors.length === 0, errors);
     } finally {
