@@ -1306,7 +1306,7 @@ const LEARN_UI = (() => {
   // 同部位採 Store.partKey 的規格；編號及英文縮寫只是清單的顯示文字。
   const midtermNorm = s => String(s || '').normalize('NFKC').toLowerCase().replace(/^\s*\d+\s*[.、]\s*/, '').replace(/[\s\-‐–—'’·・.,，、()（）]/g, '');
   // ???????????????? lab ?????
-  const midtermModes = [['all', '全部'], ['checked', '只考勾的'], ['unchecked', '只考沒勾的']];
+  const midtermModes = [['all', '全部'], ['checked', '只考勾的'], ['unchecked', '只考沒勾的'], ['starred', '只考星號的']];
   function midtermConfig(p, l) {
     D.cfg.termPick ||= {}; D.cfg.termPick[p.id] ||= {}; D.cfg.termPick[p.id][l.id] ||= [];
     D.cfg.termMode ||= {}; D.cfg.termMode[p.id] ||= {};
@@ -1333,7 +1333,9 @@ const LEARN_UI = (() => {
   }
   function midtermPool(p, l, mode) {
     const picks = new Set(midtermConfig(p, l).picks), rows = l.steps.find(s => s.type === 'termlist').groups.flatMap(g => g.items);
-    const selected = rows.filter(x => mode === 'all' || (mode === 'checked') === picks.has(midtermNorm(x.zh)));
+    const chinese = name => midtermNorm(String(name || '').split(/[A-Za-z]/)[0]);
+    const stars = new Set(Object.values(D.starred || {}).filter(r => r.kind === 'term').map(r => chinese(r.name)).filter(Boolean));
+    const selected = rows.filter(x => mode === 'all' || (mode === 'starred' ? [x.zh, ...(x.views || []).map(v => v.name)].some(name => stars.has(chinese(name))) : (mode === 'checked') === picks.has(midtermNorm(x.zh))));
     const buckets = new Map(selected.map(x => [midtermNorm(x.zh), (x.qids || []).filter(id => Store.Q[id])]));
     const structures = new Map(selected.map(x => [midtermNorm(x.zh), new Set(buckets.get(midtermNorm(x.zh)))]));
     return { buckets, structures, selected, missing: selected.filter(x => !buckets.get(midtermNorm(x.zh)).length).length };
@@ -1343,12 +1345,12 @@ const LEARN_UI = (() => {
     const draw = () => {
       const pool = midtermPool(p, l, mode), ids = new Set([...pool.buckets.values()].flat()), n = ids.size;
       if (count !== 'all' && count > n) count = 'all';
-      body.innerHTML = head + `<div class="midterm-setup"><h3>⚔ 實戰設定</h3><label>範圍 ${midtermSelect(mode)}</label><p>符合 ${pool.selected.length} 個構造，共 ${n} 題；其中 ${pool.missing} 個構造沒有跑台題。</p><p>已勾選中沒有跑台題：${midtermPool(p, l, 'checked').missing} 個構造。</p>${n ? `<div class="midterm-count">題數 ${[10, 20, 30, 'all'].map(v => `<button type="button" class="px-btn small ${String(count) === String(v) ? 'gold' : ''}" data-count="${v}" ${v !== 'all' && v > n ? 'disabled' : ''}>${v === 'all' ? '全部 ' + n : v}</button>`).join('')}</div><button type="button" class="px-btn gold midterm-start">開始實戰 ▶</button>` : '<p>這個範圍沒有可出的跑台題</p>'}<button type="button" class="px-btn small midterm-back">回構造清單</button></div>`;
+      body.innerHTML = head + `<div class="midterm-setup"><h3>⚔ 實戰設定</h3><label>範圍 ${midtermSelect(mode)}</label><p>${mode === 'starred' ? `星號 ${pool.selected.length} 個構造・${n} 題` : `符合 ${pool.selected.length} 個構造，共 ${n} 題`}；其中 ${pool.missing} 個構造沒有跑台題。</p><p>已勾選中沒有跑台題：${midtermPool(p, l, 'checked').missing} 個構造。</p>${n ? `<div class="midterm-count">題數 ${[10, 20, 30, 'all'].map(v => `<button type="button" class="px-btn small ${String(count) === String(v) ? 'gold' : ''}" data-count="${v}" ${v !== 'all' && v > n ? 'disabled' : ''}>${v === 'all' ? '全部 ' + n : v}</button>`).join('')}</div><button type="button" class="px-btn gold midterm-start">開始實戰 ▶</button>` : mode === 'starred' ? `<p>${pool.selected.length ? '這個範圍沒有可出的跑台題' : '這一課還沒有星號構造（在清單或圖上按 ☆ 加入）'}</p><button type="button" class="px-btn gold midterm-start" disabled>開始實戰 ▶</button>` : '<p>這個範圍沒有可出的跑台題</p>'}<button type="button" class="px-btn small midterm-back">回構造清單</button></div>`;
       body.querySelector('.midterm-mode').onchange = e => { mode = e.target.value; D.cfg.termMode[p.id][l.id] = mode; save(); draw(); };
       body.querySelector('.midterm-back').onclick = back;
       body.querySelectorAll('[data-count]').forEach(b => b.onclick = () => { count = b.dataset.count === 'all' ? 'all' : Number(b.dataset.count); D.cfg.termCount[p.id][l.id] = count; save(); draw(); });
       const button = body.querySelector('.midterm-start');
-      if (button) button.onclick = () => {
+      if (button && !button.disabled) button.onclick = () => {
         const shuffle = a => a.sort(() => Math.random() - .5), groups = shuffle([...pool.structures.values()].filter(a => a.size).map(a => shuffle([...a]))), picked = [], seen = new Set(), target = count === 'all' ? n : Math.min(count, n);
         while (picked.length < target && groups.some(a => a.length)) for (const a of groups) { while (a.length && seen.has(a[0])) a.shift(); if (a.length && picked.length < target) { const id = a.shift(); seen.add(id); picked.push(id); } }
         start(picked);
