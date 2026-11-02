@@ -790,7 +790,7 @@
                 },
                 {
                   "zh": "眶上裂",
-                  "en": "superior orbital fissure",
+                  "en": "superior orbital fissure（SOF）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/openstax_orbit_m.jpg",
@@ -857,11 +857,14 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 890，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "SOF"
+                  ]
                 },
                 {
                   "zh": "眶下裂",
-                  "en": "inferior orbital fissure",
+                  "en": "inferior orbital fissure（IOF）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/openstax_orbit_m.jpg",
@@ -891,7 +894,10 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 190，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "IOF"
+                  ]
                 },
                 {
                   "zh": "視神經管",
@@ -1616,7 +1622,7 @@
                 },
                 {
                   "zh": "鼻淚管",
-                  "en": "nasolacrimal duct",
+                  "en": "nasolacrimal duct（NLD）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray896.jpg",
@@ -1648,6 +1654,9 @@
                       "l": "slices",
                       "name": "鼻淚管 nasolacrimal duct"
                     }
+                  ],
+                  "abbreviations": [
+                    "NLD"
                   ]
                 }
               ]
@@ -1657,7 +1666,7 @@
               "items": [
                 {
                   "zh": "提上眼瞼肌",
-                  "en": "levator palpebrae superioris",
+                  "en": "levator palpebrae superioris（LPS）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -1696,11 +1705,14 @@
                       "title": "眼眶內的神經（上面觀，Gray 圖）",
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 776，公有領域（Wikimedia Commons）"
                     }
+                  ],
+                  "abbreviations": [
+                    "LPS"
                   ]
                 },
                 {
                   "zh": "上直肌",
-                  "en": "superior rectus",
+                  "en": "superior rectus（SR）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -1729,11 +1741,14 @@
                       "title": "眶尖：總腱環與穿過的神經（前面觀，Gray 圖）",
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 890，公有領域（Wikimedia Commons）"
                     }
+                  ],
+                  "abbreviations": [
+                    "SR"
                   ]
                 },
                 {
                   "zh": "下直肌",
-                  "en": "inferior rectus",
+                  "en": "inferior rectus（IR）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -1762,11 +1777,14 @@
                       "title": "眶尖：總腱環與穿過的神經（前面觀，Gray 圖）",
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 890，公有領域（Wikimedia Commons）"
                     }
+                  ],
+                  "abbreviations": [
+                    "IR"
                   ]
                 },
                 {
                   "zh": "內直肌",
-                  "en": "medial rectus",
+                  "en": "medial rectus（MR）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -1815,11 +1833,14 @@
                       "l": "slices",
                       "name": "內直肌 medial rectus"
                     }
+                  ],
+                  "abbreviations": [
+                    "MR"
                   ]
                 },
                 {
                   "zh": "外直肌",
-                  "en": "lateral rectus",
+                  "en": "lateral rectus（LR）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -1885,11 +1906,14 @@
                       "l": "slices",
                       "name": "外直肌 lateral rectus"
                     }
+                  ],
+                  "abbreviations": [
+                    "LR"
                   ]
                 },
                 {
                   "zh": "上斜肌",
-                  "en": "superior oblique",
+                  "en": "superior oblique（SO）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -1918,11 +1942,14 @@
                       "title": "眶尖：總腱環與穿過的神經（前面觀，Gray 圖）",
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 890，公有領域（Wikimedia Commons）"
                     }
+                  ],
+                  "abbreviations": [
+                    "SO"
                   ]
                 },
                 {
                   "zh": "下斜肌",
-                  "en": "inferior oblique",
+                  "en": "inferior oblique（IO）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -1944,6 +1971,9 @@
                       "l": "l1",
                       "name": "下斜肌 inferior oblique"
                     }
+                  ],
+                  "abbreviations": [
+                    "IO"
                   ]
                 },
                 {
@@ -2070,7 +2100,7 @@
                 },
                 {
                   "zh": "視神經盤",
-                  "en": "optic disc",
+                  "en": "optic disc（ONH）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/fundus_od.jpg",
@@ -2103,7 +2133,10 @@
                       "name": "視神經盤 optic disc"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "ONH"
+                  ]
                 }
               ]
             },
@@ -2112,7 +2145,7 @@
               "items": [
                 {
                   "zh": "頸內動脈",
-                  "en": "internal carotid artery",
+                  "en": "internal carotid artery（ICA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -2222,11 +2255,14 @@
                       "name": "頸內動脈 internal carotid artery"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "ICA"
+                  ]
                 },
                 {
                   "zh": "眼動脈",
-                  "en": "ophthalmic artery",
+                  "en": "ophthalmic artery（OA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/oc_blood_m.jpg",
@@ -2259,11 +2295,14 @@
                       "name": "眼動脈 ophthalmic artery"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "OA"
+                  ]
                 },
                 {
                   "zh": "視網膜中央動脈",
-                  "en": "central retinal artery",
+                  "en": "central retinal artery（CRA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/oc_blood_m.jpg",
@@ -2296,11 +2335,14 @@
                       "name": "視網膜中央動脈 central retinal artery"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "CRA"
+                  ]
                 },
                 {
                   "zh": "視網膜中央動脈",
-                  "en": "central retinal artery",
+                  "en": "central retinal artery（CRA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/oc_blood_m.jpg",
@@ -2333,7 +2375,10 @@
                       "name": "視網膜中央動脈 central retinal artery"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "CRA"
+                  ]
                 },
                 {
                   "zh": "顳上動脈",
@@ -2422,7 +2467,7 @@
                 },
                 {
                   "zh": "睫狀後長動脈",
-                  "en": "long posterior ciliary artery",
+                  "en": "long posterior ciliary artery（LPCA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray873.jpg",
@@ -2435,11 +2480,14 @@
                       "name": "睫狀後長動脈 long posterior ciliary artery"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "LPCA"
+                  ]
                 },
                 {
                   "zh": "睫狀後短動脈",
-                  "en": "short posterior ciliary artery",
+                  "en": "short posterior ciliary artery（SPCA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray873.jpg",
@@ -2462,7 +2510,10 @@
                       "name": "睫狀後短動脈 short posterior ciliary artery"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "SPCA"
+                  ]
                 },
                 {
                   "zh": "睫狀前動脈",
@@ -2774,7 +2825,7 @@
                 },
                 {
                   "zh": "前脈絡叢動脈",
-                  "en": "anterior choroidal artery",
+                  "en": "anterior choroidal artery（AChA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/beal_base.jpg",
@@ -2787,11 +2838,14 @@
                       "name": "前脈絡叢動脈 anterior choroidal artery"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "AChA"
+                  ]
                 },
                 {
                   "zh": "大腦前動脈",
-                  "en": "anterior cerebral artery",
+                  "en": "anterior cerebral artery（ACA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -2811,11 +2865,14 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "ACA"
+                  ]
                 },
                 {
                   "zh": "前交通動脈",
-                  "en": "anterior communicating artery",
+                  "en": "anterior communicating artery（AComA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -2835,11 +2892,15 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "AComA",
+                    "ACoA"
+                  ]
                 },
                 {
                   "zh": "大腦中動脈",
-                  "en": "middle cerebral artery",
+                  "en": "middle cerebral artery（MCA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -2859,11 +2920,14 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "MCA"
+                  ]
                 },
                 {
                   "zh": "後交通動脈",
-                  "en": "posterior communicating artery",
+                  "en": "posterior communicating artery（PComA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -2883,11 +2947,15 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "PComA",
+                    "PCoA"
+                  ]
                 },
                 {
                   "zh": "大腦後動脈",
-                  "en": "posterior cerebral artery",
+                  "en": "posterior cerebral artery（PCA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -2907,7 +2975,10 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "PCA"
+                  ]
                 },
                 {
                   "zh": "威利氏環",
@@ -2935,7 +3006,7 @@
                 },
                 {
                   "zh": "基底動脈",
-                  "en": "basilar artery",
+                  "en": "basilar artery（BA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -3005,11 +3076,14 @@
                       "name": "基底動脈 basilar artery"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "BA"
+                  ]
                 },
                 {
                   "zh": "椎動脈",
-                  "en": "vertebral artery",
+                  "en": "vertebral artery（VA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -3039,11 +3113,14 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "VA"
+                  ]
                 },
                 {
                   "zh": "頸外動脈",
-                  "en": "external carotid artery",
+                  "en": "external carotid artery（ECA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/eca.jpg",
@@ -3070,7 +3147,10 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 510，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "ECA"
+                  ]
                 },
                 {
                   "zh": "上頷動脈",
@@ -3098,7 +3178,7 @@
                 },
                 {
                   "zh": "中腦膜動脈",
-                  "en": "middle meningeal artery",
+                  "en": "middle meningeal artery（MMA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/sobo679.jpg",
@@ -3111,7 +3191,10 @@
                       "name": "中腦膜動脈 middle meningeal artery"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "MMA"
+                  ]
                 },
                 {
                   "zh": "眶下動脈",
@@ -3197,7 +3280,7 @@
                 },
                 {
                   "zh": "淺顳動脈",
-                  "en": "superficial temporal artery",
+                  "en": "superficial temporal artery（STA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/eca.jpg",
@@ -3234,7 +3317,10 @@
                       "name": "淺顳動脈 superficial temporal artery"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "STA"
+                  ]
                 }
               ]
             },
@@ -3243,7 +3329,7 @@
               "items": [
                 {
                   "zh": "動眼神經",
-                  "en": "oculomotor nerve",
+                  "en": "oculomotor nerve（CN III）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/cavsinus_m.jpg",
@@ -3316,11 +3402,14 @@
                       "name": "動眼神經 oculomotor nerve"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "CN III"
+                  ]
                 },
                 {
                   "zh": "滑車神經",
-                  "en": "trochlear nerve",
+                  "en": "trochlear nerve（CN IV）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/cavsinus_m.jpg",
@@ -3380,11 +3469,14 @@
                       "name": "滑車神經 trochlear nerve"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "CN IV"
+                  ]
                 },
                 {
                   "zh": "三叉神經",
-                  "en": "trigeminal nerve",
+                  "en": "trigeminal nerve（CN V）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/bs_ant.jpg",
@@ -3436,11 +3528,14 @@
                       "l": "brainstem",
                       "name": "三叉神經 trigeminal nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN V"
                   ]
                 },
                 {
                   "zh": "眼神經",
-                  "en": "ophthalmic nerve",
+                  "en": "ophthalmic nerve（CN V1）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/cavsinus_m.jpg",
@@ -3470,11 +3565,15 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 776，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "CN V1",
+                    "V1"
+                  ]
                 },
                 {
                   "zh": "眼神經",
-                  "en": "ophthalmic nerve",
+                  "en": "ophthalmic nerve（CN V1）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/cavsinus_m.jpg",
@@ -3504,7 +3603,11 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 776，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "CN V1",
+                    "V1"
+                  ]
                 },
                 {
                   "zh": "淚腺神經",
@@ -3721,7 +3824,7 @@
                 },
                 {
                   "zh": "外旋神經",
-                  "en": "abducens nerve",
+                  "en": "abducens nerve（CN VI）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/cavsinus_m.jpg",
@@ -3774,7 +3877,10 @@
                       "name": "外展神經 Abducens nerve"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "CN VI"
+                  ]
                 },
                 {
                   "zh": "睫狀神經節",
@@ -3804,7 +3910,7 @@
                 },
                 {
                   "zh": "翼顎神經節",
-                  "en": "pterygopalatine ganglion",
+                  "en": "pterygopalatine ganglion（PPG）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray779.jpg",
@@ -3816,11 +3922,14 @@
                       "l": "l3",
                       "name": "翼顎神經節 pterygopalatine ganglion"
                     }
+                  ],
+                  "abbreviations": [
+                    "PPG"
                   ]
                 },
                 {
                   "zh": "上頸神經節",
-                  "en": "superior cervical ganglion",
+                  "en": "superior cervical ganglion（SCG）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray779.jpg",
@@ -3832,11 +3941,14 @@
                       "l": "l3",
                       "name": "上頸神經節 superior cervical ganglion"
                     }
+                  ],
+                  "abbreviations": [
+                    "SCG"
                   ]
                 },
                 {
                   "zh": "上頸神經節",
-                  "en": "superior cervical ganglion",
+                  "en": "superior cervical ganglion（SCG）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray779.jpg",
@@ -3848,6 +3960,9 @@
                       "l": "l3",
                       "name": "上頸神經節 superior cervical ganglion"
                     }
+                  ],
+                  "abbreviations": [
+                    "SCG"
                   ]
                 }
               ]
@@ -3857,7 +3972,7 @@
               "items": [
                 {
                   "zh": "視神經",
-                  "en": "Optic nerve",
+                  "en": "Optic nerve（CN II）",
                   "views": [
                     {
                       "img": "img/eye-anat-visual-path/visual-path-specimen.png",
@@ -4031,7 +4146,11 @@
                       "name": "視神經 Optic nerve"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "CN II",
+                    "ON"
+                  ]
                 },
                 {
                   "zh": "篩板前區",
@@ -4336,7 +4455,7 @@
                 },
                 {
                   "zh": "外側膝狀體",
-                  "en": "Lateral geniculate nucleus",
+                  "en": "Lateral geniculate nucleus（LGN）",
                   "views": [
                     {
                       "img": "img/eye-anat-visual-path/visual-path-specimen.png",
@@ -4376,7 +4495,11 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 722，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "tag": "實驗課也有"
+                  "tag": "實驗課也有",
+                  "abbreviations": [
+                    "LGN",
+                    "LGB"
+                  ]
                 },
                 {
                   "zh": "視放射",
@@ -5873,7 +5996,7 @@
                 },
                 {
                   "zh": "內耳道",
-                  "en": "internal acoustic meatus",
+                  "en": "internal acoustic meatus（IAM）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/base/atlas_p04.jpg",
@@ -5892,6 +6015,9 @@
                       "title": "顱底內面（Gray 圖）",
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 193，公有領域（Wikimedia Commons）"
                     }
+                  ],
+                  "abbreviations": [
+                    "IAM"
                   ]
                 },
                 {
@@ -6313,7 +6439,7 @@
                 },
                 {
                   "zh": "外耳道",
-                  "en": "external acoustic meatus",
+                  "en": "external acoustic meatus（EAM）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/base/atlas_p02.jpg",
@@ -6332,6 +6458,9 @@
                       "title": "顱骨側面觀（Gray 圖）",
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 188，公有領域（Wikimedia Commons）"
                     }
+                  ],
+                  "abbreviations": [
+                    "EAM"
                   ]
                 }
               ]
@@ -6918,7 +7047,7 @@
               "items": [
                 {
                   "zh": "眶上裂",
-                  "en": "superior orbital fissure",
+                  "en": "superior orbital fissure（SOF）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/openstax_orbit_m.jpg",
@@ -6985,7 +7114,10 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 890，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 6
+                  "count": 6,
+                  "abbreviations": [
+                    "SOF"
+                  ]
                 },
                 {
                   "zh": "視神經管",
@@ -7187,7 +7319,7 @@
               "items": [
                 {
                   "zh": "提上眼瞼肌",
-                  "en": "levator palpebrae superioris",
+                  "en": "levator palpebrae superioris（LPS）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -7227,11 +7359,14 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 776，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 5
+                  "count": 5,
+                  "abbreviations": [
+                    "LPS"
+                  ]
                 },
                 {
                   "zh": "上直肌",
-                  "en": "superior rectus",
+                  "en": "superior rectus（SR）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -7261,11 +7396,14 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 890，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 5
+                  "count": 5,
+                  "abbreviations": [
+                    "SR"
+                  ]
                 },
                 {
                   "zh": "內直肌",
-                  "en": "medial rectus",
+                  "en": "medial rectus（MR）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -7315,11 +7453,14 @@
                       "name": "內直肌 medial rectus"
                     }
                   ],
-                  "count": 29
+                  "count": 29,
+                  "abbreviations": [
+                    "MR"
+                  ]
                 },
                 {
                   "zh": "外直肌",
-                  "en": "lateral rectus",
+                  "en": "lateral rectus（LR）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -7386,7 +7527,10 @@
                       "name": "外直肌 lateral rectus"
                     }
                   ],
-                  "count": 5
+                  "count": 5,
+                  "abbreviations": [
+                    "LR"
+                  ]
                 }
               ]
             },
@@ -7752,7 +7896,7 @@
                 },
                 {
                   "zh": "視神經盤",
-                  "en": "optic disc",
+                  "en": "optic disc（ONH）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/fundus_od.jpg",
@@ -7785,7 +7929,10 @@
                       "name": "視神經盤 optic disc"
                     }
                   ],
-                  "count": 32
+                  "count": 32,
+                  "abbreviations": [
+                    "ONH"
+                  ]
                 }
               ]
             },
@@ -7794,7 +7941,7 @@
               "items": [
                 {
                   "zh": "頸內動脈",
-                  "en": "internal carotid artery",
+                  "en": "internal carotid artery（ICA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -7904,11 +8051,14 @@
                       "name": "頸內動脈 internal carotid artery"
                     }
                   ],
-                  "count": 52
+                  "count": 52,
+                  "abbreviations": [
+                    "ICA"
+                  ]
                 },
                 {
                   "zh": "頸內動脈",
-                  "en": "internal carotid artery",
+                  "en": "internal carotid artery（ICA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -8018,11 +8168,14 @@
                       "name": "頸內動脈 internal carotid artery"
                     }
                   ],
-                  "count": 4
+                  "count": 4,
+                  "abbreviations": [
+                    "ICA"
+                  ]
                 },
                 {
                   "zh": "眼動脈",
-                  "en": "ophthalmic artery",
+                  "en": "ophthalmic artery（OA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/oc_blood_m.jpg",
@@ -8055,11 +8208,14 @@
                       "name": "眼動脈 ophthalmic artery"
                     }
                   ],
-                  "count": 72
+                  "count": 72,
+                  "abbreviations": [
+                    "OA"
+                  ]
                 },
                 {
                   "zh": "眼動脈",
-                  "en": "ophthalmic artery",
+                  "en": "ophthalmic artery（OA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/oc_blood_m.jpg",
@@ -8092,11 +8248,14 @@
                       "name": "眼動脈 ophthalmic artery"
                     }
                   ],
-                  "count": 14
+                  "count": 14,
+                  "abbreviations": [
+                    "OA"
+                  ]
                 },
                 {
                   "zh": "視網膜中央動脈",
-                  "en": "central retinal artery",
+                  "en": "central retinal artery（CRA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/oc_blood_m.jpg",
@@ -8129,7 +8288,10 @@
                       "name": "視網膜中央動脈 central retinal artery"
                     }
                   ],
-                  "count": 19
+                  "count": 19,
+                  "abbreviations": [
+                    "CRA"
+                  ]
                 },
                 {
                   "zh": "睫狀視網膜動脈",
@@ -8224,7 +8386,7 @@
                 },
                 {
                   "zh": "睫狀後長動脈",
-                  "en": "long posterior ciliary artery",
+                  "en": "long posterior ciliary artery（LPCA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray873.jpg",
@@ -8237,11 +8399,14 @@
                       "name": "睫狀後長動脈 long posterior ciliary artery"
                     }
                   ],
-                  "count": 9
+                  "count": 9,
+                  "abbreviations": [
+                    "LPCA"
+                  ]
                 },
                 {
                   "zh": "睫狀後短動脈",
-                  "en": "short posterior ciliary artery",
+                  "en": "short posterior ciliary artery（SPCA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray873.jpg",
@@ -8264,7 +8429,10 @@
                       "name": "睫狀後短動脈 short posterior ciliary artery"
                     }
                   ],
-                  "count": 17
+                  "count": 17,
+                  "abbreviations": [
+                    "SPCA"
+                  ]
                 },
                 {
                   "zh": "睫狀前動脈",
@@ -8386,7 +8554,7 @@
                 },
                 {
                   "zh": "大腦前動脈",
-                  "en": "anterior cerebral artery",
+                  "en": "anterior cerebral artery（ACA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -8406,11 +8574,14 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 12
+                  "count": 12,
+                  "abbreviations": [
+                    "ACA"
+                  ]
                 },
                 {
                   "zh": "前交通動脈",
-                  "en": "anterior communicating artery",
+                  "en": "anterior communicating artery（AComA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -8430,11 +8601,15 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 3
+                  "count": 3,
+                  "abbreviations": [
+                    "AComA",
+                    "ACoA"
+                  ]
                 },
                 {
                   "zh": "大腦中動脈",
-                  "en": "middle cerebral artery",
+                  "en": "middle cerebral artery（MCA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -8454,11 +8629,14 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 14
+                  "count": 14,
+                  "abbreviations": [
+                    "MCA"
+                  ]
                 },
                 {
                   "zh": "大腦後動脈",
-                  "en": "posterior cerebral artery",
+                  "en": "posterior cerebral artery（PCA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -8478,7 +8656,10 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 8
+                  "count": 8,
+                  "abbreviations": [
+                    "PCA"
+                  ]
                 },
                 {
                   "zh": "威利氏環",
@@ -8506,7 +8687,7 @@
                 },
                 {
                   "zh": "基底動脈",
-                  "en": "basilar artery",
+                  "en": "basilar artery（BA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -8576,11 +8757,14 @@
                       "name": "基底動脈 basilar artery"
                     }
                   ],
-                  "count": 10
+                  "count": 10,
+                  "abbreviations": [
+                    "BA"
+                  ]
                 },
                 {
                   "zh": "椎動脈",
-                  "en": "vertebral artery",
+                  "en": "vertebral artery（VA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
@@ -8610,11 +8794,14 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 10
+                  "count": 10,
+                  "abbreviations": [
+                    "VA"
+                  ]
                 },
                 {
                   "zh": "頸外動脈",
-                  "en": "external carotid artery",
+                  "en": "external carotid artery（ECA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/eca.jpg",
@@ -8641,7 +8828,10 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 510，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 17
+                  "count": 17,
+                  "abbreviations": [
+                    "ECA"
+                  ]
                 },
                 {
                   "zh": "上頷動脈",
@@ -8756,7 +8946,7 @@
               "items": [
                 {
                   "zh": "動眼神經",
-                  "en": "oculomotor nerve",
+                  "en": "oculomotor nerve（CN III）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/cavsinus_m.jpg",
@@ -8829,11 +9019,14 @@
                       "name": "動眼神經 oculomotor nerve"
                     }
                   ],
-                  "count": 32
+                  "count": 32,
+                  "abbreviations": [
+                    "CN III"
+                  ]
                 },
                 {
                   "zh": "滑車神經",
-                  "en": "trochlear nerve",
+                  "en": "trochlear nerve（CN IV）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/cavsinus_m.jpg",
@@ -8893,11 +9086,14 @@
                       "name": "滑車神經 trochlear nerve"
                     }
                   ],
-                  "count": 9
+                  "count": 9,
+                  "abbreviations": [
+                    "CN IV"
+                  ]
                 },
                 {
                   "zh": "三叉神經",
-                  "en": "trigeminal nerve",
+                  "en": "trigeminal nerve（CN V）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/bs_ant.jpg",
@@ -8950,11 +9146,14 @@
                       "name": "三叉神經 trigeminal nerve"
                     }
                   ],
-                  "count": 59
+                  "count": 59,
+                  "abbreviations": [
+                    "CN V"
+                  ]
                 },
                 {
                   "zh": "眼神經",
-                  "en": "ophthalmic nerve",
+                  "en": "ophthalmic nerve（CN V1）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/cavsinus_m.jpg",
@@ -8984,7 +9183,11 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 776，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 4
+                  "count": 4,
+                  "abbreviations": [
+                    "CN V1",
+                    "V1"
+                  ]
                 },
                 {
                   "zh": "淚腺神經",
@@ -9128,7 +9331,7 @@
                 },
                 {
                   "zh": "顏面神經",
-                  "en": "facial nerve",
+                  "en": "facial nerve（CN VII）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/bs_ant.jpg",
@@ -9171,7 +9374,10 @@
                       "name": "顏面神經 facial nerve"
                     }
                   ],
-                  "count": 6
+                  "count": 6,
+                  "abbreviations": [
+                    "CN VII"
+                  ]
                 },
                 {
                   "zh": "睫狀神經節",
@@ -9202,7 +9408,7 @@
                 },
                 {
                   "zh": "翼顎神經節",
-                  "en": "pterygopalatine ganglion",
+                  "en": "pterygopalatine ganglion（PPG）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray779.jpg",
@@ -9215,11 +9421,14 @@
                       "name": "翼顎神經節 pterygopalatine ganglion"
                     }
                   ],
-                  "count": 5
+                  "count": 5,
+                  "abbreviations": [
+                    "PPG"
+                  ]
                 },
                 {
                   "zh": "上頸神經節",
-                  "en": "superior cervical ganglion",
+                  "en": "superior cervical ganglion（SCG）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray779.jpg",
@@ -9232,7 +9441,10 @@
                       "name": "上頸神經節 superior cervical ganglion"
                     }
                   ],
-                  "count": 3
+                  "count": 3,
+                  "abbreviations": [
+                    "SCG"
+                  ]
                 }
               ]
             },
@@ -9241,7 +9453,7 @@
               "items": [
                 {
                   "zh": "視神經",
-                  "en": "Optic nerve",
+                  "en": "Optic nerve（CN II）",
                   "views": [
                     {
                       "img": "img/eye-anat-visual-path/visual-path-specimen.png",
@@ -9415,11 +9627,15 @@
                       "name": "視神經 Optic nerve"
                     }
                   ],
-                  "count": 61
+                  "count": 61,
+                  "abbreviations": [
+                    "CN II",
+                    "ON"
+                  ]
                 },
                 {
                   "zh": "視神經",
-                  "en": "Optic nerve",
+                  "en": "Optic nerve（CN II）",
                   "views": [
                     {
                       "img": "img/eye-anat-visual-path/visual-path-specimen.png",
@@ -9593,7 +9809,11 @@
                       "name": "視神經 Optic nerve"
                     }
                   ],
-                  "count": 17
+                  "count": 17,
+                  "abbreviations": [
+                    "CN II",
+                    "ON"
+                  ]
                 },
                 {
                   "zh": "視交叉",
@@ -10033,7 +10253,7 @@
                 },
                 {
                   "zh": "外側膝狀體",
-                  "en": "Lateral geniculate nucleus",
+                  "en": "Lateral geniculate nucleus（LGN）",
                   "views": [
                     {
                       "img": "img/eye-anat-visual-path/visual-path-specimen.png",
@@ -10073,11 +10293,15 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 722，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 5
+                  "count": 5,
+                  "abbreviations": [
+                    "LGN",
+                    "LGB"
+                  ]
                 },
                 {
                   "zh": "外側膝狀體",
-                  "en": "Lateral geniculate nucleus",
+                  "en": "Lateral geniculate nucleus（LGN）",
                   "views": [
                     {
                       "img": "img/eye-anat-visual-path/visual-path-specimen.png",
@@ -10117,7 +10341,11 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 722，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "count": 9
+                  "count": 9,
+                  "abbreviations": [
+                    "LGN",
+                    "LGB"
+                  ]
                 },
                 {
                   "zh": "視放射",
@@ -10819,7 +11047,7 @@
                 },
                 {
                   "zh": "3. 提上眼瞼肌",
-                  "en": "Levator palpebrae superioris",
+                  "en": "Levator palpebrae superioris（LPS）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/orb_lat.jpg",
@@ -10858,11 +11086,14 @@
                       "title": "眼眶內的神經（上面觀，Gray 圖）",
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 776，公有領域（Wikimedia Commons）"
                     }
+                  ],
+                  "abbreviations": [
+                    "LPS"
                   ]
                 },
                 {
                   "zh": "4. 鼻淚管",
-                  "en": "Nasolacrimal duct",
+                  "en": "Nasolacrimal duct（NLD）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray896.jpg",
@@ -10894,11 +11125,14 @@
                       "l": "slices",
                       "name": "鼻淚管 nasolacrimal duct"
                     }
+                  ],
+                  "abbreviations": [
+                    "NLD"
                   ]
                 },
                 {
                   "zh": "5. 外側膝狀體",
-                  "en": "Lateral geniculate nucleus/body",
+                  "en": "Lateral geniculate nucleus/body（LGN）",
                   "views": [
                     {
                       "img": "img/eye-anat-visual-path/visual-path-specimen.png",
@@ -10937,6 +11171,10 @@
                       "title": "視覺路徑示意（Gray 圖）",
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 722，公有領域（Wikimedia Commons）"
                     }
+                  ],
+                  "abbreviations": [
+                    "LGN",
+                    "LGB"
                   ]
                 },
                 {
@@ -10967,7 +11205,7 @@
                 },
                 {
                   "zh": "7. 眶上裂",
-                  "en": "Superior orbital fissure",
+                  "en": "Superior orbital fissure（SOF）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/openstax_orbit_m.jpg",
@@ -11033,6 +11271,9 @@
                       "title": "眶尖：總腱環與穿過的神經（前面觀，Gray 圖）",
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 890，公有領域（Wikimedia Commons）"
                     }
+                  ],
+                  "abbreviations": [
+                    "SOF"
                   ]
                 },
                 {
@@ -11043,7 +11284,7 @@
                 },
                 {
                   "zh": "9. 後短睫狀動脈",
-                  "en": "Short posterior ciliary arteries",
+                  "en": "Short posterior ciliary arteries（SPCA）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/gray873.jpg",
@@ -11065,6 +11306,9 @@
                       "l": "l3",
                       "name": "睫狀後短動脈 short posterior ciliary artery"
                     }
+                  ],
+                  "abbreviations": [
+                    "SPCA"
                   ]
                 },
                 {
@@ -11253,6 +11497,9 @@
                       "l": "brainstem",
                       "name": "滑車神經 trochlear nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN IV"
                   ]
                 },
                 {
@@ -11356,6 +11603,9 @@
                       "title": "腦底動脈（Gray 圖，下面觀）",
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 516，公有領域（Wikimedia Commons）"
                     }
+                  ],
+                  "abbreviations": [
+                    "MCA"
                   ]
                 },
                 {
@@ -11376,7 +11626,7 @@
                 },
                 {
                   "zh": "19. 外展神經",
-                  "en": "Abducens nerve",
+                  "en": "Abducens nerve（CN VI）",
                   "views": [
                     {
                       "img": "img/eye-anat-manual/cavsinus_m.jpg",
@@ -11418,6 +11668,9 @@
                       "l": "brainstem",
                       "name": "外展神經 Abducens nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN VI"
                   ]
                 }
               ]
@@ -11709,7 +11962,7 @@
                 },
                 {
                   "zh": "鼻淚管",
-                  "en": "nasolacrimal duct",
+                  "en": "nasolacrimal duct（NLD）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/j007a-blank.jpg",
@@ -11721,6 +11974,9 @@
                       "l": "slices",
                       "name": "鼻淚管 nasolacrimal duct"
                     }
+                  ],
+                  "abbreviations": [
+                    "NLD"
                   ]
                 }
               ]
@@ -11730,7 +11986,7 @@
               "items": [
                 {
                   "zh": "內直肌",
-                  "en": "medial rectus",
+                  "en": "medial rectus（MR）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/j006a-blank.jpg",
@@ -11742,11 +11998,14 @@
                       "l": "slices",
                       "name": "內直肌 medial rectus"
                     }
+                  ],
+                  "abbreviations": [
+                    "MR"
                   ]
                 },
                 {
                   "zh": "外直肌",
-                  "en": "lateral rectus",
+                  "en": "lateral rectus（LR）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/j006a-blank.jpg",
@@ -11758,6 +12017,9 @@
                       "l": "slices",
                       "name": "外直肌 lateral rectus"
                     }
+                  ],
+                  "abbreviations": [
+                    "LR"
                   ]
                 }
               ]
@@ -11767,7 +12029,7 @@
               "items": [
                 {
                   "zh": "頸內動脈",
-                  "en": "internal carotid artery",
+                  "en": "internal carotid artery（ICA）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/j007a-blank.jpg",
@@ -11779,11 +12041,14 @@
                       "l": "slices",
                       "name": "頸內動脈 internal carotid artery"
                     }
+                  ],
+                  "abbreviations": [
+                    "ICA"
                   ]
                 },
                 {
                   "zh": "基底動脈",
-                  "en": "basilar artery",
+                  "en": "basilar artery（BA）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/j007a-blank.jpg",
@@ -11805,11 +12070,14 @@
                       "l": "slices",
                       "name": "基底動脈 basilar artery"
                     }
+                  ],
+                  "abbreviations": [
+                    "BA"
                   ]
                 },
                 {
                   "zh": "淺顳動脈",
-                  "en": "superficial temporal artery",
+                  "en": "superficial temporal artery（STA）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/j007a-blank.jpg",
@@ -11821,6 +12089,9 @@
                       "l": "slices",
                       "name": "淺顳動脈 superficial temporal artery"
                     }
+                  ],
+                  "abbreviations": [
+                    "STA"
                   ]
                 }
               ]
@@ -11830,7 +12101,7 @@
               "items": [
                 {
                   "zh": "動眼神經",
-                  "en": "oculomotor nerve",
+                  "en": "oculomotor nerve（CN III）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/sg3-blank.jpg",
@@ -11852,11 +12123,14 @@
                       "l": "brainstem",
                       "name": "動眼神經 oculomotor nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN III"
                   ]
                 },
                 {
                   "zh": "三叉神經",
-                  "en": "trigeminal nerve",
+                  "en": "trigeminal nerve（CN V）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/j007a-blank.jpg",
@@ -11878,11 +12152,14 @@
                       "l": "brainstem",
                       "name": "三叉神經 trigeminal nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN V"
                   ]
                 },
                 {
                   "zh": "外旋神經",
-                  "en": "abducens nerve",
+                  "en": "abducens nerve（CN VI）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/j007a-blank.jpg",
@@ -11904,11 +12181,14 @@
                       "l": "brainstem",
                       "name": "外展神經 Abducens nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN VI"
                   ]
                 },
                 {
                   "zh": "顏面神經",
-                  "en": "facial nerve",
+                  "en": "facial nerve（CN VII）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/j007a-blank.jpg",
@@ -11930,6 +12210,9 @@
                       "l": "brainstem",
                       "name": "顏面神經 facial nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN VII"
                   ]
                 }
               ]
@@ -11939,7 +12222,7 @@
               "items": [
                 {
                   "zh": "視神經",
-                  "en": "Optic nerve",
+                  "en": "Optic nerve（CN II）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/j006a-blank.jpg",
@@ -11961,6 +12244,10 @@
                       "l": "brainstem",
                       "name": "視神經 Optic nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN II",
+                    "ON"
                   ]
                 },
                 {
@@ -12305,13 +12592,13 @@
               "desc": ""
             },
             {
-              "name": "內直肌 medial rectus",
+              "name": "內直肌 medial rectus（MR）",
               "x": 44.15,
               "y": 30.0,
               "desc": ""
             },
             {
-              "name": "外直肌 lateral rectus",
+              "name": "外直肌 lateral rectus（LR）",
               "x": 40.6,
               "y": 30.0,
               "desc": ""
@@ -12341,7 +12628,7 @@
               "desc": ""
             },
             {
-              "name": "視神經 Optic nerve",
+              "name": "視神經 Optic nerve（CN II）",
               "x": 49.4,
               "y": 44.33,
               "desc": "原圖合標：Optic nerve and optic chiasma"
@@ -12416,25 +12703,25 @@
               "desc": ""
             },
             {
-              "name": "頸內動脈 internal carotid artery",
+              "name": "頸內動脈 internal carotid artery（ICA）",
               "x": 44.15,
               "y": 47.94,
               "desc": ""
             },
             {
-              "name": "外旋神經 abducens nerve",
+              "name": "外旋神經 abducens nerve（CN VI）",
               "x": 44.9,
               "y": 52.06,
               "desc": ""
             },
             {
-              "name": "淺顳動脈 superficial temporal artery",
+              "name": "淺顳動脈 superficial temporal artery（STA）",
               "x": 31.05,
               "y": 48.95,
               "desc": "原圖合標：Superficial temporal vein and artery"
             },
             {
-              "name": "三叉神經 trigeminal nerve",
+              "name": "三叉神經 trigeminal nerve（CN V）",
               "x": 43.45,
               "y": 55.23,
               "desc": ""
@@ -12452,7 +12739,7 @@
               "desc": ""
             },
             {
-              "name": "鼻淚管 nasolacrimal duct",
+              "name": "鼻淚管 nasolacrimal duct（NLD）",
               "x": 52.7,
               "y": 25.42,
               "desc": ""
@@ -12464,13 +12751,13 @@
               "desc": ""
             },
             {
-              "name": "基底動脈 basilar artery",
+              "name": "基底動脈 basilar artery（BA）",
               "x": 49.3,
               "y": 52.06,
               "desc": ""
             },
             {
-              "name": "顏面神經 facial nerve",
+              "name": "顏面神經 facial nerve（CN VII）",
               "x": 57.25,
               "y": 56.32,
               "desc": "原圖合標：Facial and vestibulocochlear nerve"
@@ -12521,7 +12808,7 @@
               "desc": ""
             },
             {
-              "name": "動眼神經 oculomotor nerve",
+              "name": "動眼神經 oculomotor nerve（CN III）",
               "x": 51.12,
               "y": 18.8,
               "desc": ""
@@ -12545,7 +12832,7 @@
               "desc": ""
             },
             {
-              "name": "基底動脈 basilar artery",
+              "name": "基底動脈 basilar artery（BA）",
               "x": 52.35,
               "y": 22.45,
               "desc": ""
@@ -12631,7 +12918,7 @@
               "items": [
                 {
                   "zh": "動眼神經",
-                  "en": "oculomotor nerve",
+                  "en": "oculomotor nerve（CN III）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/brainstem-blank.png",
@@ -12643,11 +12930,14 @@
                       "l": "brainstem",
                       "name": "動眼神經 oculomotor nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN III"
                   ]
                 },
                 {
                   "zh": "滑車神經",
-                  "en": "trochlear nerve",
+                  "en": "trochlear nerve（CN IV）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/brainstem-blank.png",
@@ -12669,11 +12959,14 @@
                       "l": "brainstem",
                       "name": "滑車神經 trochlear nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN IV"
                   ]
                 },
                 {
                   "zh": "三叉神經",
-                  "en": "trigeminal nerve",
+                  "en": "trigeminal nerve（CN V）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/brainstem-blank.png",
@@ -12685,11 +12978,14 @@
                       "l": "brainstem",
                       "name": "三叉神經 trigeminal nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN V"
                   ]
                 },
                 {
                   "zh": "外展神經",
-                  "en": "Abducens nerve",
+                  "en": "Abducens nerve（CN VI）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/brainstem-blank.png",
@@ -12701,11 +12997,14 @@
                       "l": "brainstem",
                       "name": "外展神經 Abducens nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN VI"
                   ]
                 },
                 {
                   "zh": "顏面神經",
-                  "en": "facial nerve",
+                  "en": "facial nerve（CN VII）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/brainstem-blank.png",
@@ -12717,6 +13016,9 @@
                       "l": "brainstem",
                       "name": "顏面神經 facial nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN VII"
                   ]
                 }
               ]
@@ -12726,7 +13028,7 @@
               "items": [
                 {
                   "zh": "視神經",
-                  "en": "Optic nerve",
+                  "en": "Optic nerve（CN II）",
                   "views": [
                     {
                       "img": "img/eye-lab-private/slices/brainstem-blank.png",
@@ -12738,6 +13040,10 @@
                       "l": "brainstem",
                       "name": "視神經 Optic nerve"
                     }
+                  ],
+                  "abbreviations": [
+                    "CN II",
+                    "ON"
                   ]
                 }
               ]
@@ -12821,7 +13127,7 @@
           "source": "教科書腦幹背面觀／腹面觀（使用者提供，原圖浮水印：康复小部落）",
           "points": [
             {
-              "name": "滑車神經 trochlear nerve",
+              "name": "滑車神經 trochlear nerve（CN IV）",
               "x": 19.28,
               "y": 40.12,
               "desc": "腦幹背面觀"
@@ -12845,19 +13151,19 @@
               "desc": "腦幹腹面觀"
             },
             {
-              "name": "外展神經 Abducens nerve",
+              "name": "外展神經 Abducens nerve（CN VI）",
               "x": 71.77,
               "y": 54.94,
               "desc": "腦幹腹面觀"
             },
             {
-              "name": "顏面神經 facial nerve",
+              "name": "顏面神經 facial nerve（CN VII）",
               "x": 66.61,
               "y": 60.47,
               "desc": "腦幹腹面觀"
             },
             {
-              "name": "視神經 Optic nerve",
+              "name": "視神經 Optic nerve（CN II）",
               "x": 76.94,
               "y": 22.09,
               "desc": "腦幹腹面觀"
@@ -12869,19 +13175,19 @@
               "desc": "腦幹腹面觀"
             },
             {
-              "name": "動眼神經 oculomotor nerve",
+              "name": "動眼神經 oculomotor nerve（CN III）",
               "x": 80.21,
               "y": 36.05,
               "desc": "腦幹腹面觀"
             },
             {
-              "name": "滑車神經 trochlear nerve",
+              "name": "滑車神經 trochlear nerve（CN IV）",
               "x": 81.07,
               "y": 40.12,
               "desc": "腦幹腹面觀"
             },
             {
-              "name": "三叉神經 trigeminal nerve",
+              "name": "三叉神經 trigeminal nerve（CN V）",
               "x": 86.4,
               "y": 45.64,
               "desc": "腦幹腹面觀"

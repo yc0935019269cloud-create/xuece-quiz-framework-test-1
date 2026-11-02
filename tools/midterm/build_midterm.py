@@ -390,6 +390,28 @@ lessons.append({'id': 'brainstem', 'title': '腦幹圖', 'steps': [
     {'type': 'recap', 'points': ['辨認背面觀與腹面觀，並以相鄰構造確認位置。']}
 ]})
 
+# Decorate only after all rows and diagram references have been assembled.
+abbrevs = json.loads(Path(__file__).with_name('abbrev.json').read_text(encoding='utf-8'))
+def display_abbrev(zh, en):
+    zh = re.sub(r'^\d+\.\s*', '', zh)
+    vals = abbrevs.get(zh, [])
+    if vals and not any(re.search(r'(?<![A-Za-z0-9])' + re.escape(v) + r'(?![A-Za-z0-9])', en, re.I) for v in vals):
+        return en + '\uFF08' + vals[0] + '\uFF09'
+    return en
+for lesson in lessons:
+    for step in lesson['steps']:
+        if step['type'] == 'termlist':
+            for group in step['groups']:
+                for row in group['items']:
+                    zh = re.sub(r'^\d+\.\s*', '', row['zh'])
+                    if zh in abbrevs:
+                        row['en'] = display_abbrev(zh, row['en'])
+                        row['abbreviations'] = abbrevs[zh]
+        elif lesson['id'] in ('slices', 'brainstem') and step['type'] == 'diagram':
+            for point in step['points']:
+                zh, _, en = point['name'].partition(' ')
+                point['name'] = zh + ' ' + display_abbrev(zh, en)
+
 pack = {'schema': 'xd-learn/1', 'id': 'eyelab-midterm', 'subject': 'eye_anat', 'path': ['眼解剖實驗', '期中總複習', '期中總複習'], 'order': 0, 'style': 'atlas', 'title': '期中總複習（跑台）', 'unit': '期中總複習', 'desc': '實驗手冊約 70 分、正課提及約 30 分；跑台用人體切片與模型，靜脈與看不到的構造不考。', 'level': 2, 'minutes': 60, 'lessons': lessons}
 OUT.write_text(json.dumps(pack, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 lines = ['# 期中總複習自評', '', '計數以完整校訂逐字稿的字面別名出現次數計算；同一位置取最長名稱，歧義別名不計，校訂稿未逐段回聽，同音誤字與代稱不會自動補計。', '']

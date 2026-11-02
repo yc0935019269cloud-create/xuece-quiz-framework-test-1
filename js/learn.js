@@ -455,7 +455,7 @@ const LEARN_UI = (() => {
     } else if (c.kind === 'name') {
       // 看圖寫名稱：中文、英文各一格；大小寫、空白、連字號、撇號不計較，c.zh／c.en 是所有可接受的寫法
       const norm = v => String(v || '').toLowerCase().normalize('NFKC').replace(/[\s\-‐–—'’`·・.,，、()（）]/g, '').replace(/^the/, '');
-      const okOf = (v, list) => list.some(a => norm(a) === norm(v));
+      const okOf = (v, list) => list.some(a => norm(a) === norm(v) || U.sameAns(v, a));
       ans.innerHTML = `<div class="lc-name"><label><span>中文</span><input class="px-in lc-in" data-k="zh" autocomplete="off" placeholder="中文名稱"></label>
         <label><span>English</span><input class="px-in lc-in" data-k="en" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="English name"></label>
         <div class="row" style="justify-content:center"><button class="px-btn small lc-giveup">看答案</button><button class="px-btn gold lc-send">送出 ⏎</button></div></div>`;
@@ -1310,7 +1310,7 @@ const LEARN_UI = (() => {
     body.querySelector('.term-close').onclick = () => body.querySelectorAll('.term-item').forEach(row => setOpen(row, false));
     body.querySelector('.term-search').oninput = e => {
       const q = e.target.value.trim().toLowerCase();
-      body.querySelectorAll('.term-item').forEach(row => { const x = groups[+row.dataset.gi].items[+row.dataset.ii]; row.hidden = !(`${x.zh} ${x.en}`.toLowerCase().includes(q)); });
+      body.querySelectorAll('.term-item').forEach(row => { const x = groups[+row.dataset.gi].items[+row.dataset.ii]; row.hidden = !(`${x.zh} ${x.en} ${(x.abbreviations || []).join(" ")}`.toLowerCase().includes(q)); });
       body.querySelectorAll('.term-group').forEach(g => { g.hidden = !g.querySelector('.term-item:not([hidden])'); });
     };
   }

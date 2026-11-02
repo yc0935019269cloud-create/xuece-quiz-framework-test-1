@@ -14,7 +14,7 @@ ok('lesson ids', JSON.stringify(pack.lessons.map(l => l.id)) === JSON.stringify(
 const brainstem = pack.lessons.find(l => l.id === 'brainstem');
 ok('brainstem structure and pins', !!brainstem && brainstem.steps[0].groups.flatMap(g => g.items).length === 10 && brainstem.steps[1].points.length === 11);
 const mockNine = pack.lessons[3].steps[1].groups[0].items[8];
-ok('mock item 9 short posterior ciliary arteries', mockNine.zh.includes('後短睫狀動脈') && mockNine.en === 'Short posterior ciliary arteries' && mockNine.views.length > 0);
+ok('mock item 9 short posterior ciliary arteries', mockNine.zh.includes('後短睫狀動脈') && mockNine.en === 'Short posterior ciliary arteries（SPCA）' && mockNine.views.length > 0);
 ok('groups', pack.lessons.slice(0, 4).every((l, i) => JSON.stringify(l.steps[1].groups.map(g => g.name)) === JSON.stringify(expectedGroups[i])));
 ok('row counts', JSON.stringify(pack.lessons.slice(0, 4).map(l => l.steps[1].groups.reduce((n, g) => n + g.items.length, 0))) === JSON.stringify([138,56,82,19]));
 ok('no exam stars', !JSON.stringify(pack).includes('⭐') && !JSON.stringify(pack).includes('老師說會考') && pack.lessons.slice(0, 4).every(l => l.steps[1].groups.every(g => g.items.every(x => !x.star))));
@@ -52,6 +52,12 @@ ok('mock numbering and missing image', pack.lessons[3].steps[1].groups[0].items.
         ok(prefix + ' speech', await page.evaluate(en => window.__spoken[0] === en, expected[0].en));
         await page.locator('.term-search').fill(expected[0].en);
         ok(prefix + ' search', await page.locator('.term-item:visible').count() >= 1 && await page.locator('.term-item:visible').count() < expected.length);
+        if (expected.some(x => x.zh.includes('外側膝狀體'))) {
+          const lgn = page.locator('.term-item').filter({ hasText: '外側膝狀體' }).first();
+          ok(prefix + ' LGN displayed', (await lgn.innerText()).includes('（LGN）'));
+          await page.locator('.term-search').fill('LGN');
+          ok(prefix + ' LGN search', await lgn.isVisible());
+        }
         await page.locator('.term-search').fill(expected[0].zh);
         ok(prefix + ' Chinese search', await page.locator('.term-item:visible').count() >= 1 && await page.locator('.term-item:visible').count() < expected.length);
         await page.locator('.term-search').fill('');

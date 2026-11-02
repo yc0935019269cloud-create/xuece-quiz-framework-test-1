@@ -216,13 +216,15 @@ const U = (() => {
     const raw = String(b);
     a = normAns(a); b = normAns(b);
     if (a === b) return true;
+    const cn = s => s.replace(/\bcn\s*(vii|vi|iv|iii|ii|v|[1-7])\b/gi, (_, n) => 'cn' + ({i:1, ii:2, iii:3, iv:4, v:5, vi:6, vii:7}[n.toLowerCase()] || n));
+    if (cn(a) === cn(b)) return true;
     const x = numOf(a), y = numOf(b);
     if (x !== null && y !== null && Math.abs(x - y) < 1e-9) return true;
     if (HAN.test(raw) && LAT.test(raw)) {
-      const la = loose(a);
-      if (la === loose(raw)) return true;
+      const la = cn(loose(a));
+      if (la === cn(loose(raw))) return true;
       const parts = raw.split(/\s*[\/／]\s*/);
-      if (parts.length === 2 && la === loose(parts[1]) + loose(parts[0])) return true;
+      if (parts.length === 2 && la === cn(loose(parts[1]) + loose(parts[0]))) return true;
     }
     return false;
   }
