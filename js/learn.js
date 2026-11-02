@@ -1154,8 +1154,8 @@ const LEARN_UI = (() => {
       } else if (s.type === 'practice') {
         const pk = R.pk[st.i] || (R.pk[st.i] = { items: [] });
         if (p.id === 'eyelab-midterm' && ['manual', 'lab', 'lecture', 'mock-exam'].includes(l.id) && !pk.midtermStarted) {
-          midtermSetup(body, head, p, l, ids => {
-            pk.items = ids.map(q => ({ q })); pk.midtermStarted = true; pk.fought = false;
+          midtermSetup(body, head, p, l, (ids, rowOf) => {
+            pk.items = ids.map(q => ({ q, r: (rowOf || {})[q] })); pk.midtermStarted = true; pk.fought = false;
             R.sub = 0; if (st.i === R.far) R.farSub = 0;
             segItems[segOf[st.i]] = ids.length; save(); step();
           }, () => goTo(l.steps.findIndex(x => x.type === 'termlist')));
@@ -1185,6 +1185,7 @@ const LEARN_UI = (() => {
           if (it.q) {
             const q = Store.Q[it.q];
             const midtermPractice = p.id === 'eyelab-midterm' && ['manual', 'lab', 'lecture', 'mock-exam'].includes(l.id);
+            if (midtermPractice) midtermHint(box, l, it);
             ctl = QV.render(box, q, { mode: 'learn', onEndPractice: midtermPractice ? async () => {
               if (!(await U.confirm('結束這次實戰？', '已答的會保留'))) return;
               if (!review) R.midtermEnded = true;
@@ -1343,6 +1344,15 @@ const LEARN_UI = (() => {
     const structures = new Map(selected.map(x => [midtermNorm(x.zh), new Set(buckets.get(midtermNorm(x.zh)))]));
     return { buckets, structures, selected, missing: selected.filter(x => !buckets.get(midtermNorm(x.zh)).length).length };
   }
+  // 期中總複習實戰：題目上方顯示這題考的分類，有小提示時可點開（不算放棄、不影響計分）
+  function midtermHint(box, l, it) {
+    const rows = (l.steps.find(s => s.type === 'termlist')?.groups || []).flatMap(g => g.items);
+    const row = (it.r && rows.find(x => midtermNorm(x.zh) === it.r)) || rows.find(x => (x.qids || []).includes(it.q));
+    if (!row || !(row.cat || row.hint)) return;
+    box.insertAdjacentHTML('beforebegin', `<div class="midterm-hint">${row.cat ? `<span class="tag">🏷 考的是：${U.esc(row.cat)}</span>` : ''}${row.hint ? `<button type="button" class="px-btn small midterm-hint-btn" aria-expanded="false">💡 小提示</button><span class="midterm-hint-text" hidden>${U.esc(row.hint)}</span>` : ''}</div>`);
+    const wrap = box.previousElementSibling, btn = wrap.querySelector('.midterm-hint-btn');
+    if (btn) wrap.addEventListener('click', e => { if (!btn.contains(e.target)) return; const t = wrap.querySelector('.midterm-hint-text'); t.hidden = !t.hidden; btn.setAttribute('aria-expanded', String(!t.hidden)); });
+  }
   function midtermSetup(body, head, p, l, start, back) {
     const cfg = midtermConfig(p, l), groupNames = l.steps.find(s => s.type === 'termlist').groups.map(g => g.name); let mode = cfg.mode, count = D.cfg.termCount[p.id][l.id] || 20;
     const draw = () => {
@@ -1360,9 +1370,9 @@ const LEARN_UI = (() => {
       body.querySelectorAll('[data-count]').forEach(b => b.onclick = () => { count = b.dataset.count === 'all' ? 'all' : Number(b.dataset.count); D.cfg.termCount[p.id][l.id] = count; save(); draw(); });
       const button = body.querySelector('.midterm-start');
       if (button && !button.disabled) button.onclick = () => {
-        const shuffle = a => a.sort(() => Math.random() - .5), groups = shuffle([...pool.structures.values()].filter(a => a.size).map(a => shuffle([...a]))), picked = [], seen = new Set(), target = count === 'all' ? n : Math.min(count, n);
-        while (picked.length < target && groups.some(a => a.length)) for (const a of groups) { while (a.length && seen.has(a[0])) a.shift(); if (a.length && picked.length < target) { const id = a.shift(); seen.add(id); picked.push(id); } }
-        start(picked);
+        const shuffle = a => a.sort(() => Math.random() - .5), groups = shuffle([...pool.structures.entries()].filter(([, a]) => a.size).map(([key, a]) => Object.assign(shuffle([...a]), { key }))), picked = [], rowOf = {}, seen = new Set(), target = count === 'all' ? n : Math.min(count, n);
+        while (picked.length < target && groups.some(a => a.length)) for (const a of groups) { while (a.length && seen.has(a[0])) a.shift(); if (a.length && picked.length < target) { const id = a.shift(); seen.add(id); picked.push(id); rowOf[id] = a.key; } }
+        start(picked, rowOf);
       };
     }; draw();
   }

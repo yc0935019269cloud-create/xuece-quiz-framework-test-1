@@ -473,6 +473,42 @@ for lesson in lessons:
                 zh, _, en = point['name'].partition(' ')
                 point['name'] = zh + ' ' + display_abbrev(zh, en)
 
+# Remove unsuitable image/structure pairs after all sources (including slices)
+# have been merged. Preserve the last view when no replacement exists.
+block_path = Path(__file__).with_name('view_blocklist.json')
+blocked = json.loads(block_path.read_text(encoding='utf-8-sig')) if block_path.exists() else []
+blocked_pairs = {(b['img'], b['zh']) for b in blocked}
+question_images = {}
+for f in sorted((ROOT / 'content/bank/eye_anat/lab').rglob('*.json')):
+    data = json.loads(f.read_text(encoding='utf-8-sig'))
+    for q in data['questions']:
+        imgs = q.get('img', [])
+        question_images[data['set']['id'] + '-' + str(q['n'])] = [imgs] if isinstance(imgs, str) else imgs
+for lesson in lessons:
+    for step in lesson['steps']:
+        if step['type'] != 'termlist': continue
+        for group in step['groups']:
+            for row in group['items']:
+                zh = re.sub(r'^\d+\.\s*', '', row['zh'])
+                original = row.get('views', [])
+                kept = [v for v in original if (v['img'], zh) not in blocked_pairs]
+                if kept: row['views'] = kept
+                if 'qids' in row:
+                    row['qids'] = [qid for qid in row['qids'] if not any((img, zh) in blocked_pairs for img in question_images.get(qid, []))]
+
+# Category tag and optional hint shown on practice questions (hints.json).
+hints_path = Path(__file__).with_name('hints.json')
+hints = json.loads(hints_path.read_text(encoding='utf-8-sig')) if hints_path.exists() else {}
+for lesson in lessons:
+    for step in lesson['steps']:
+        if step['type'] != 'termlist': continue
+        for group in step['groups']:
+            for row in group['items']:
+                h = hints.get(re.sub(r'^\d+\.\s*', '', row['zh']))
+                if not h: continue
+                if h.get('cat'): row['cat'] = h['cat']
+                if h.get('hint'): row['hint'] = h['hint']
+
 pack = {'schema': 'xd-learn/1', 'id': 'eyelab-midterm', 'subject': 'eye_anat', 'path': ['眼解剖實驗', '期中總複習', '期中總複習'], 'order': 0, 'style': 'atlas', 'title': '期中總複習（跑台）', 'unit': '期中總複習', 'desc': '實驗手冊約 70 分、正課提及約 30 分；跑台用人體切片與模型，靜脈與看不到的構造不考。', 'level': 2, 'minutes': 60, 'lessons': lessons}
 OUT.write_text(json.dumps(pack, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 lines = ['# 期中總複習自評', '', '計數以完整校訂逐字稿的字面別名出現次數計算；同一位置取最長名稱，歧義別名不計，校訂稿未逐段回聽，同音誤字與代稱不會自動補計。', '']

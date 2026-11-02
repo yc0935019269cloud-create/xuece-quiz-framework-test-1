@@ -1646,6 +1646,7 @@ html:has(.win-resizing) { cursor: nwse-resize; }
 .lp-goto.off::after { content: none; }
 .term-tools label { white-space: nowrap; }
 .midterm-pick-tools,.midterm-count{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0}.midterm-pick-tools label{display:flex;align-items:center;gap:6px}.midterm-check{display:flex;align-items:center;justify-content:center;min-width:28px}.midterm-check input{width:20px;height:20px;accent-color:#d5a839}.term-row.midterm-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto auto 28px}.midterm-setup{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.midterm-setup h3,.midterm-setup p,.midterm-setup .midterm-count{flex-basis:100%;margin:4px 0}
+.midterm-hint{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:8px 0 0;max-width:100%}.midterm-hint .tag{white-space:normal}.midterm-hint-text{flex-basis:100%;min-width:0;overflow-wrap:anywhere;font-size:.92em;color:var(--gold,#d5a839)}
 @media (max-width: 500px) {
   .term-row { grid-template-columns: minmax(0, 1fr) auto auto; row-gap: 2px; }
   .term-row > span:first-child { grid-column: 1; grid-row: 1; }

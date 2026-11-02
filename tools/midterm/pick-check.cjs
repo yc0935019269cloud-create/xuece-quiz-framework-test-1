@@ -93,6 +93,26 @@ const root = path.resolve(__dirname, '../..');
         check((await selected()).length === count, `${count} question limit`);
         await page.locator('#lpPrev').click(); await page.locator('.midterm-mode').selectOption('checked');
       }
+      // category tag + optional hint on drawn questions
+      await page.locator('.term-search').fill('');
+      await page.locator('.midterm-mode').selectOption('all'); await practice();
+      await page.locator('[data-count="10"]').click(); await page.locator('.midterm-start').click();
+      await page.locator('.midterm-hint').first().waitFor();
+      const catOk = await page.evaluate(() => { const it = LEARN_UI.exportData().les['eyelab-midterm/manual'].run.pk[2].items[0]; const rows = LEARN_UI.packs.find(p => p.id === 'eyelab-midterm').lessons.find(l => l.id === 'manual').steps.find(s => s.type === 'termlist').groups.flatMap(g => g.items); const norm = s => String(s || '').normalize('NFKC').toLowerCase().replace(/^\s*\d+\s*[.、]\s*/, '').replace(/[\s\-‐–—'’·・.,，、()（）]/g, ''); const row = rows.find(x => norm(x.zh) === it.r); return !!row && !!row.cat && (row.qids || []).includes(it.q) && document.querySelector('.midterm-hint').textContent.includes('🏷 考的是：' + row.cat); });
+      check(catOk, 'drawn question shows its row category');
+      await page.locator('#lpPrev').click(); await page.locator('[data-pick="none"]').click();
+      const hintRow = groups.flatMap((g, gi) => g.items.map((x, ii) => ({ gi, ii, x }))).find(r => r.x.hint && r.x.qids?.length);
+      await page.locator(`.term-item[data-gi="${hintRow.gi}"][data-ii="${hintRow.ii}"] input`).check();
+      await page.locator('.midterm-mode').selectOption('checked'); await practice(); await page.locator('.midterm-start').click();
+      const hb = page.locator('.midterm-hint-btn'); await hb.waitFor();
+      check((await hb.innerText()).includes('💡 小提示') && await page.locator('.midterm-hint-text').isHidden(), 'hint button shown, text hidden by default');
+      const before = await page.evaluate(() => { const r = LEARN_UI.exportData().les['eyelab-midterm/manual'].run; return [r.ok, r.n, r.sub]; });
+      await hb.click();
+      check(await page.locator('.midterm-hint-text').isVisible() && (await page.locator('.midterm-hint-text').innerText()) === hintRow.x.hint, 'tap reveals hint');
+      const after = await page.evaluate(() => { const r = LEARN_UI.exportData().les['eyelab-midterm/manual'].run; return [r.ok, r.n, r.sub]; });
+      check(JSON.stringify(before) === JSON.stringify(after) && await page.locator('.lp-q input:not([disabled])').count() > 0, 'hint does not count as give-up or change score');
+      check(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'hint no horizontal overflow');
+      await page.locator('#lpPrev').click();
       check(errors.length === 0, 'page errors: ' + errors.join(', '));
     } finally {
       await page.evaluate(saved => { localStorage.clear(); Object.entries(saved).forEach(([k,v]) => localStorage.setItem(k,v)); }, backup);

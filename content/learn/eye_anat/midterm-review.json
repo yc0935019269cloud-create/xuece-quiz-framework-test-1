@@ -68,7 +68,8 @@
                   "qids": [
                     "eyelab-m-orbit-q-l1-1-1",
                     "eyelab-orbit-q-l1-1-7"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "淚骨",
@@ -140,7 +141,8 @@
                     "eyelab-orbit-q-l1-2-5",
                     "eyelab-orbit-q-l1-3-4",
                     "eyelab-orbit-q-l4-2-3"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "額骨",
@@ -204,7 +206,8 @@
                     "eyelab-orbit-q-l1-2-1",
                     "eyelab-orbit-q-l1-3-1",
                     "eyelab-orbit-q-l5-2-4"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "篩骨",
@@ -283,7 +286,8 @@
                     "eyelab-orbit-q-l1-2-4",
                     "eyelab-orbit-q-l1-3-3",
                     "eyelab-orbit-q-l4-2-4"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "蝶骨",
@@ -325,7 +329,8 @@
                     "eyelab-m-orbit-q-l1-1-5",
                     "eyelab-orbit-q-l1-1-2",
                     "eyelab-orbit-q-l1-3-2"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "蝶骨小翼",
@@ -369,7 +374,8 @@
                     "eyelab-orbit-q-l1-2-2",
                     "eyelab-orbit-q-l2-2-9",
                     "eyelab-orbit-q-l2-3-6"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "蝶骨大翼",
@@ -434,7 +440,8 @@
                     "eyelab-orbit-q-l2-2-10",
                     "eyelab-orbit-q-l2-3-7",
                     "eyelab-orbit-q-l4-2-2"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "顴骨",
@@ -514,7 +521,8 @@
                     "eyelab-orbit-q-l1-1-5",
                     "eyelab-orbit-q-l1-2-7",
                     "eyelab-orbit-q-l1-3-5"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "上頜骨",
@@ -585,7 +593,8 @@
                     "eyelab-orbit-q-l1-2-8",
                     "eyelab-orbit-q-l1-3-6",
                     "eyelab-orbit-q-l4-2-6"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "腭骨",
@@ -617,7 +626,8 @@
                     "eyelab-m-orbit-q-l1-2-3",
                     "eyelab-orbit-q-l1-2-6",
                     "eyelab-orbit-q-l1-3-7"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "蝶鞍",
@@ -680,7 +690,8 @@
                     "eyelab-orbit-q-l2-3-8",
                     "eyelab-orbit-q-l3-1-9",
                     "eyelab-vp-q-l3-1-3"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "眉弓",
@@ -708,7 +719,8 @@
                   "qids": [
                     "eyelab-m-orbit-q-l2-1-3",
                     "eyelab-orbit-q-l2-2-1"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "滑車窩",
@@ -729,7 +741,9 @@
                   "qids": [
                     "eyelab-m-orbit-q-l2-1-4",
                     "eyelab-orbit-q-l2-2-2"
-                  ]
+                  ],
+                  "cat": "骨性標記",
+                  "hint": "額骨眶面內上角的小凹"
                 },
                 {
                   "zh": "淚腺窩",
@@ -750,7 +764,9 @@
                   "qids": [
                     "eyelab-m-orbit-q-l2-1-5",
                     "eyelab-orbit-q-l2-2-3"
-                  ]
+                  ],
+                  "cat": "骨性標記",
+                  "hint": "眶頂外上方的淺窩"
                 },
                 {
                   "zh": "淚窩",
@@ -778,7 +794,8 @@
                   "qids": [
                     "eyelab-m-orbit-q-l2-1-7",
                     "eyelab-orbit-q-l2-2-4"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "外側結節",
@@ -799,7 +816,8 @@
                   "qids": [
                     "eyelab-m-orbit-q-l2-1-12",
                     "eyelab-orbit-q-l2-2-5"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "眶上孔",
@@ -838,7 +856,8 @@
                     "eyelab-m-orbit-q-l2-1-1",
                     "eyelab-m-orbit-q-l2-2-1",
                     "eyelab-orbit-q-l2-1-1"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "眶下孔",
@@ -888,7 +907,8 @@
                     "eyelab-m-orbit-q-l2-2-2",
                     "eyelab-orbit-q-l2-1-2",
                     "eyelab-orbit-q-l4-2-5"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "眶上裂",
@@ -969,7 +989,8 @@
                   ],
                   "abbreviations": [
                     "SOF"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "眶下裂",
@@ -1011,7 +1032,8 @@
                   ],
                   "abbreviations": [
                     "IOF"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "視神經管",
@@ -1079,7 +1101,8 @@
                     "eyelab-orbit-q-l2-3-1",
                     "eyelab-orbit-q-l3-1-4",
                     "eyelab-vp-q-l1-4-1"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "前篩孔",
@@ -1107,7 +1130,9 @@
                   "qids": [
                     "eyelab-m-orbit-q-l2-1-8",
                     "eyelab-orbit-q-l2-2-6"
-                  ]
+                  ],
+                  "cat": "孔裂管",
+                  "hint": "眶內側壁上緣靠前"
                 },
                 {
                   "zh": "後篩孔",
@@ -1135,7 +1160,9 @@
                   "qids": [
                     "eyelab-m-orbit-q-l2-1-9",
                     "eyelab-orbit-q-l2-2-7"
-                  ]
+                  ],
+                  "cat": "孔裂管",
+                  "hint": "眶內側壁上緣靠後"
                 },
                 {
                   "zh": "上頷竇",
@@ -1178,7 +1205,8 @@
                     "eyelab-m-orbit-q-l3-3-1",
                     "eyelab-orbit-q-l5-5-1",
                     "eyelab-orbit-q-l5-6-1"
-                  ]
+                  ],
+                  "cat": "鼻竇"
                 },
                 {
                   "zh": "篩竇",
@@ -1209,7 +1237,8 @@
                   "qids": [
                     "eyelab-m-orbit-q-l3-1-2",
                     "eyelab-orbit-q-l5-5-2"
-                  ]
+                  ],
+                  "cat": "鼻竇"
                 },
                 {
                   "zh": "額竇",
@@ -1264,7 +1293,8 @@
                   "qids": [
                     "eyelab-m-orbit-q-l3-2-1",
                     "eyelab-orbit-q-l5-4-1"
-                  ]
+                  ],
+                  "cat": "鼻竇"
                 },
                 {
                   "zh": "蝶竇",
@@ -1370,7 +1400,8 @@
                     "eyelab-orbit-q-l5-4-2",
                     "eyelab-orbit-q-l5-7-1",
                     "eyelab-vp-q-l3-1-4"
-                  ]
+                  ],
+                  "cat": "鼻竇"
                 },
                 {
                   "zh": "蝶竇",
@@ -1476,7 +1507,8 @@
                     "eyelab-orbit-q-l5-4-2",
                     "eyelab-orbit-q-l5-7-1",
                     "eyelab-vp-q-l3-1-4"
-                  ]
+                  ],
+                  "cat": "鼻竇"
                 }
               ]
             },
@@ -1507,7 +1539,8 @@
                   ],
                   "qids": [
                     "eyelab-m-lid-q-l2-3-1"
-                  ]
+                  ],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "前瞼",
@@ -1533,7 +1566,8 @@
                   ],
                   "qids": [
                     "eyelab-m-lid-q-l2-1-1"
-                  ]
+                  ],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "後瞼",
@@ -1559,7 +1593,8 @@
                   ],
                   "qids": [
                     "eyelab-m-lid-q-l2-1-2"
-                  ]
+                  ],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "眼輪匝肌",
@@ -1585,7 +1620,8 @@
                   ],
                   "qids": [
                     "eyelab-m-lid-q-l2-1-3"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "瞼板",
@@ -1615,7 +1651,8 @@
                   "qids": [
                     "eyelab-m-lid-q-l2-1-5",
                     "eyelab-m-lid-q-l2-2-1"
-                  ]
+                  ],
+                  "cat": "韌帶與瞼板"
                 },
                 {
                   "zh": "瞼板腺",
@@ -1648,7 +1685,8 @@
                   ],
                   "qids": [
                     "eyelab-m-lid-q-l2-1-6"
-                  ]
+                  ],
+                  "cat": "腺體"
                 },
                 {
                   "zh": "穆勒氏肌",
@@ -1667,7 +1705,8 @@
                   ],
                   "qids": [
                     "eyelab-m-lid-q-l2-1-7"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "外側瞼韌帶",
@@ -1686,7 +1725,8 @@
                   ],
                   "qids": [
                     "eyelab-m-lid-q-l2-2-2"
-                  ]
+                  ],
+                  "cat": "韌帶與瞼板"
                 },
                 {
                   "zh": "內側瞼韌帶",
@@ -1705,7 +1745,8 @@
                   ],
                   "qids": [
                     "eyelab-m-lid-q-l2-2-3"
-                  ]
+                  ],
+                  "cat": "韌帶與瞼板"
                 },
                 {
                   "zh": "淚腺",
@@ -1738,7 +1779,8 @@
                   ],
                   "qids": [
                     "eyelab-m-tear-q-l1-1-1"
-                  ]
+                  ],
+                  "cat": "腺體"
                 },
                 {
                   "zh": "淚點",
@@ -1771,7 +1813,8 @@
                   ],
                   "qids": [
                     "eyelab-m-tear-q-l1-1-2"
-                  ]
+                  ],
+                  "cat": "淚道"
                 },
                 {
                   "zh": "淚小管",
@@ -1790,7 +1833,8 @@
                   ],
                   "qids": [
                     "eyelab-m-tear-q-l1-1-3"
-                  ]
+                  ],
+                  "cat": "淚道"
                 },
                 {
                   "zh": "淚囊",
@@ -1819,7 +1863,8 @@
                   ],
                   "qids": [
                     "eyelab-m-tear-q-l1-1-4"
-                  ]
+                  ],
+                  "cat": "淚道"
                 },
                 {
                   "zh": "鼻淚管",
@@ -1862,7 +1907,8 @@
                   ],
                   "abbreviations": [
                     "NLD"
-                  ]
+                  ],
+                  "cat": "淚道"
                 }
               ]
             },
@@ -1918,7 +1964,8 @@
                   ],
                   "abbreviations": [
                     "LPS"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "上直肌",
@@ -1958,7 +2005,8 @@
                   ],
                   "abbreviations": [
                     "SR"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "下直肌",
@@ -1998,7 +2046,8 @@
                   ],
                   "abbreviations": [
                     "IR"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "內直肌",
@@ -2058,7 +2107,8 @@
                   ],
                   "abbreviations": [
                     "MR"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "外直肌",
@@ -2135,7 +2185,8 @@
                   ],
                   "abbreviations": [
                     "LR"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "上斜肌",
@@ -2175,7 +2226,8 @@
                   ],
                   "abbreviations": [
                     "SO"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "下斜肌",
@@ -2208,7 +2260,8 @@
                   ],
                   "abbreviations": [
                     "IO"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "滑車",
@@ -2227,7 +2280,8 @@
                   ],
                   "qids": [
                     "eyelab-m-lid-q-l1-1-4"
-                  ]
+                  ],
+                  "cat": "其他"
                 },
                 {
                   "zh": "辛氏環",
@@ -2253,7 +2307,8 @@
                   ],
                   "qids": [
                     "eyelab-m-lid-q-l1-1-9"
-                  ]
+                  ],
+                  "cat": "韌帶與瞼板"
                 }
               ]
             },
@@ -2316,7 +2371,8 @@
                   "qids": [
                     "eyelab-blood-q-l3-2-5",
                     "eyelab-m-vessel-q-l3-2-5"
-                  ]
+                  ],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "黃斑部",
@@ -2345,7 +2401,8 @@
                     "eyelab-blood-q-l3-3-6",
                     "eyelab-m-vessel-q-l3-3-6",
                     "eyelab-vp-q-l1-2-2"
-                  ]
+                  ],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "視神經盤",
@@ -2391,7 +2448,8 @@
                   ],
                   "abbreviations": [
                     "ONH"
-                  ]
+                  ],
+                  "cat": "眼球構造"
                 }
               ]
             },
@@ -2523,7 +2581,8 @@
                   ],
                   "abbreviations": [
                     "ICA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "眼動脈",
@@ -2571,7 +2630,8 @@
                   ],
                   "abbreviations": [
                     "OA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "視網膜中央動脈",
@@ -2619,7 +2679,8 @@
                   ],
                   "abbreviations": [
                     "CRA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "視網膜中央動脈",
@@ -2667,7 +2728,8 @@
                   ],
                   "abbreviations": [
                     "CRA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "顳上動脈",
@@ -2688,7 +2750,9 @@
                   "qids": [
                     "eyelab-blood-q-l3-3-2",
                     "eyelab-m-vessel-q-l3-3-2"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "眼底血管向外上方延伸"
                 },
                 {
                   "zh": "顳下動脈",
@@ -2709,7 +2773,9 @@
                   "qids": [
                     "eyelab-blood-q-l3-3-3",
                     "eyelab-m-vessel-q-l3-3-3"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "眼底血管向外下方延伸"
                 },
                 {
                   "zh": "鼻上動脈",
@@ -2730,7 +2796,9 @@
                   "qids": [
                     "eyelab-blood-q-l3-3-4",
                     "eyelab-m-vessel-q-l3-3-4"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "眼底血管向內上方延伸"
                 },
                 {
                   "zh": "鼻下動脈",
@@ -2751,7 +2819,9 @@
                   "qids": [
                     "eyelab-blood-q-l3-3-5",
                     "eyelab-m-vessel-q-l3-3-5"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "眼底血管向內下方延伸"
                 },
                 {
                   "zh": "睫狀動脈",
@@ -2772,7 +2842,8 @@
                   "qids": [
                     "eyelab-blood-q-l2-1-4",
                     "eyelab-m-vessel-q-l2-1-4"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "睫狀後長動脈",
@@ -2796,7 +2867,9 @@
                   ],
                   "abbreviations": [
                     "LPCA"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "向前行至虹膜根部"
                 },
                 {
                   "zh": "睫狀後短動脈",
@@ -2832,7 +2905,9 @@
                   ],
                   "abbreviations": [
                     "SPCA"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "穿過鞏膜供應脈絡膜"
                 },
                 {
                   "zh": "睫狀前動脈",
@@ -2853,7 +2928,9 @@
                   "qids": [
                     "eyelab-blood-q-l3-1-3",
                     "eyelab-m-vessel-q-l3-1-3"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "伴隨眼外肌向前走行"
                 },
                 {
                   "zh": "虹膜大動脈環",
@@ -2874,7 +2951,8 @@
                   "qids": [
                     "eyelab-blood-q-l3-1-5",
                     "eyelab-m-vessel-q-l3-1-5"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "淚動脈",
@@ -2919,7 +2997,8 @@
                     "eyelab-m-vessel-q-l2-1-5",
                     "eyelab-m-vessel-q-l2-2-3",
                     "eyelab-m-vessel-q-l5-2-6"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "眶上動脈",
@@ -2962,7 +3041,8 @@
                     "eyelab-blood-q-l2-2-6",
                     "eyelab-m-vessel-q-l2-1-7",
                     "eyelab-m-vessel-q-l2-2-6"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "滑車上動脈",
@@ -2995,7 +3075,8 @@
                     "eyelab-blood-q-l2-2-7",
                     "eyelab-m-vessel-q-l2-1-8",
                     "eyelab-m-vessel-q-l2-2-7"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "滑車下動脈",
@@ -3016,7 +3097,9 @@
                   "qids": [
                     "eyelab-blood-q-l2-2-10",
                     "eyelab-m-vessel-q-l2-2-10"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "眼動脈終末支之一，走向內眥"
                 },
                 {
                   "zh": "前篩動脈",
@@ -3037,7 +3120,9 @@
                   "qids": [
                     "eyelab-blood-q-l2-2-4",
                     "eyelab-m-vessel-q-l2-2-4"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "由眶內側壁前部出眶"
                 },
                 {
                   "zh": "後篩動脈",
@@ -3058,7 +3143,9 @@
                   "qids": [
                     "eyelab-blood-q-l2-2-5",
                     "eyelab-m-vessel-q-l2-2-5"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "由眶內側壁後部出眶"
                 },
                 {
                   "zh": "內瞼動脈",
@@ -3079,7 +3166,8 @@
                   "qids": [
                     "eyelab-blood-q-l2-2-8",
                     "eyelab-m-vessel-q-l2-2-8"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "外瞼動脈",
@@ -3100,7 +3188,8 @@
                   "qids": [
                     "eyelab-blood-q-l2-1-6",
                     "eyelab-m-vessel-q-l2-1-6"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "上瞼動脈弓",
@@ -3121,7 +3210,8 @@
                   "qids": [
                     "eyelab-blood-q-l5-2-7",
                     "eyelab-m-vessel-q-l5-2-7"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "下瞼動脈弓",
@@ -3142,7 +3232,8 @@
                   "qids": [
                     "eyelab-blood-q-l5-2-8",
                     "eyelab-m-vessel-q-l5-2-8"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "肌動脈",
@@ -3163,7 +3254,8 @@
                   "qids": [
                     "eyelab-blood-q-l2-2-2",
                     "eyelab-m-vessel-q-l2-2-2"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "鼻背動脈",
@@ -3208,7 +3300,8 @@
                     "eyelab-m-vessel-q-l2-1-9",
                     "eyelab-m-vessel-q-l2-2-9",
                     "eyelab-m-vessel-q-l5-2-9"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "前脈絡叢動脈",
@@ -3232,7 +3325,8 @@
                   ],
                   "abbreviations": [
                     "AChA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "大腦前動脈",
@@ -3263,7 +3357,8 @@
                   ],
                   "abbreviations": [
                     "ACA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "前交通動脈",
@@ -3295,7 +3390,8 @@
                   "abbreviations": [
                     "AComA",
                     "ACoA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "大腦中動脈",
@@ -3326,7 +3422,8 @@
                   ],
                   "abbreviations": [
                     "MCA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "後交通動脈",
@@ -3358,7 +3455,8 @@
                   "abbreviations": [
                     "PComA",
                     "PCoA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "大腦後動脈",
@@ -3389,7 +3487,8 @@
                   ],
                   "abbreviations": [
                     "PCA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "威利氏環",
@@ -3417,7 +3516,8 @@
                   "qids": [
                     "eyelab-blood-q-l1-2-1",
                     "eyelab-m-vessel-q-l1-2-1"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "基底動脈",
@@ -3500,7 +3600,8 @@
                   ],
                   "abbreviations": [
                     "BA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "椎動脈",
@@ -3543,7 +3644,8 @@
                   ],
                   "abbreviations": [
                     "VA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "頸外動脈",
@@ -3581,7 +3683,8 @@
                   ],
                   "abbreviations": [
                     "ECA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "上頷動脈",
@@ -3609,7 +3712,8 @@
                   "qids": [
                     "eyelab-blood-q-l5-1-2",
                     "eyelab-m-vessel-q-l5-1-2"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "中腦膜動脈",
@@ -3633,7 +3737,8 @@
                   ],
                   "abbreviations": [
                     "MMA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "眶下動脈",
@@ -3661,7 +3766,8 @@
                   "qids": [
                     "eyelab-blood-q-l5-2-5",
                     "eyelab-m-vessel-q-l5-2-5"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "顏面動脈",
@@ -3701,7 +3807,8 @@
                     "eyelab-blood-q-l5-2-3",
                     "eyelab-m-vessel-q-l5-1-3",
                     "eyelab-m-vessel-q-l5-2-3"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "眼角動脈",
@@ -3729,7 +3836,8 @@
                   "qids": [
                     "eyelab-blood-q-l5-2-1",
                     "eyelab-m-vessel-q-l5-2-1"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "淺顳動脈",
@@ -3777,7 +3885,8 @@
                   ],
                   "abbreviations": [
                     "STA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 }
               ]
             },
@@ -3866,7 +3975,8 @@
                   ],
                   "abbreviations": [
                     "CN III"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "滑車神經",
@@ -3937,7 +4047,8 @@
                   ],
                   "abbreviations": [
                     "CN IV"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "三叉神經",
@@ -3999,7 +4110,8 @@
                   ],
                   "abbreviations": [
                     "CN V"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "眼神經",
@@ -4042,7 +4154,8 @@
                   "abbreviations": [
                     "CN V1",
                     "V1"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "眼神經",
@@ -4085,7 +4198,8 @@
                   "abbreviations": [
                     "CN V1",
                     "V1"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "淚腺神經",
@@ -4128,7 +4242,9 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l3-4-3"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "眼神經外側支，沿外直肌上緣"
                 },
                 {
                   "zh": "額神經",
@@ -4161,7 +4277,9 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l3-4-4"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "眼神經分支，沿眶頂前行"
                 },
                 {
                   "zh": "鼻睫神經",
@@ -4198,7 +4316,9 @@
                   "qids": [
                     "eyelab-m-brain-q-l3-1-4",
                     "eyelab-m-brain-q-l3-4-2"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "眼神經分支，跨視神經向內"
                 },
                 {
                   "zh": "睫狀長神經",
@@ -4217,7 +4337,9 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l3-1-3"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "繞過神經節向眼球前行"
                 },
                 {
                   "zh": "睫狀短神經",
@@ -4236,7 +4358,9 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l3-1-2"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "由眶內小神經節向眼球走行"
                 },
                 {
                   "zh": "前篩神經",
@@ -4255,7 +4379,9 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l3-5-1"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "通過眶內側壁前部孔道"
                 },
                 {
                   "zh": "後篩神經",
@@ -4274,7 +4400,9 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l3-5-2"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "通過眶內側壁後部孔道"
                 },
                 {
                   "zh": "滑車上神經",
@@ -4300,7 +4428,9 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l3-6-1"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "額神經分支，向內額部走行"
                 },
                 {
                   "zh": "滑車下神經",
@@ -4326,7 +4456,9 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l3-6-2"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "鼻睫支末端，分布內眥"
                 },
                 {
                   "zh": "外旋神經",
@@ -4390,7 +4522,8 @@
                   ],
                   "abbreviations": [
                     "CN VI"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "睫狀神經節",
@@ -4419,7 +4552,8 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l3-1-1"
-                  ]
+                  ],
+                  "cat": "神經節"
                 },
                 {
                   "zh": "翼顎神經節",
@@ -4441,7 +4575,8 @@
                   ],
                   "abbreviations": [
                     "PPG"
-                  ]
+                  ],
+                  "cat": "神經節"
                 },
                 {
                   "zh": "上頸神經節",
@@ -4464,7 +4599,8 @@
                   ],
                   "abbreviations": [
                     "SCG"
-                  ]
+                  ],
+                  "cat": "神經節"
                 },
                 {
                   "zh": "上頸神經節",
@@ -4487,7 +4623,8 @@
                   ],
                   "abbreviations": [
                     "SCG"
-                  ]
+                  ],
+                  "cat": "神經節"
                 }
               ]
             },
@@ -4680,7 +4817,8 @@
                   "abbreviations": [
                     "CN II",
                     "ON"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視神經球內段",
@@ -4697,7 +4835,9 @@
                       "name": "篩板前區 prelaminar region"
                     }
                   ],
-                  "qids": []
+                  "qids": [],
+                  "cat": "視覺路徑",
+                  "hint": "位於眼球壁內的起始段"
                 },
                 {
                   "zh": "篩板前區",
@@ -4718,7 +4858,9 @@
                   "qids": [
                     "eyelab-m-visual-q-l1-1-1",
                     "eyelab-vp-q-l1-3-1"
-                  ]
+                  ],
+                  "cat": "視覺路徑",
+                  "hint": "位於鞏膜篩板之前"
                 },
                 {
                   "zh": "篩板後區",
@@ -4739,7 +4881,9 @@
                   "qids": [
                     "eyelab-m-visual-q-l1-1-2",
                     "eyelab-vp-q-l1-3-3"
-                  ]
+                  ],
+                  "cat": "視覺路徑",
+                  "hint": "位於鞏膜篩板之後"
                 },
                 {
                   "zh": "視神經眶內段",
@@ -4760,7 +4904,9 @@
                   "qids": [
                     "eyelab-m-visual-q-l1-2-1",
                     "eyelab-vp-q-l1-1-2"
-                  ]
+                  ],
+                  "cat": "視覺路徑",
+                  "hint": "位於眼眶內呈彎曲走行"
                 },
                 {
                   "zh": "視神經管內段",
@@ -4779,7 +4925,9 @@
                   ],
                   "qids": [
                     "eyelab-m-visual-q-l1-3-1"
-                  ]
+                  ],
+                  "cat": "視覺路徑",
+                  "hint": "穿過蝶骨小翼的骨性通道"
                 },
                 {
                   "zh": "視神經顱內段",
@@ -4798,7 +4946,9 @@
                   ],
                   "qids": [
                     "eyelab-m-visual-q-l1-4-1"
-                  ]
+                  ],
+                  "cat": "視覺路徑",
+                  "hint": "自管口延伸至交叉前"
                 },
                 {
                   "zh": "視交叉",
@@ -4910,7 +5060,8 @@
                     "eyelab-vp-q-l2-1-2",
                     "eyelab-vp-q-l2-2-2",
                     "eyelab-vp-q-l3-1-1"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視束",
@@ -5030,7 +5181,8 @@
                     "eyelab-vp-q-l1-5-3",
                     "eyelab-vp-q-l2-1-3",
                     "eyelab-vp-q-l2-2-3"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "外側膝狀體",
@@ -5083,7 +5235,8 @@
                   "abbreviations": [
                     "LGN",
                     "LGB"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視放射",
@@ -5135,7 +5288,8 @@
                     "eyelab-m-visual-q-l3-1-6",
                     "eyelab-vp-q-l2-1-5",
                     "eyelab-vp-q-l2-2-6"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "梅氏環",
@@ -5166,7 +5320,9 @@
                   "qids": [
                     "eyelab-m-visual-q-l3-1-5",
                     "eyelab-vp-q-l2-2-5"
-                  ]
+                  ],
+                  "cat": "視覺路徑",
+                  "hint": "視放射繞過顳角的那一段"
                 },
                 {
                   "zh": "鮑氏環",
@@ -5187,7 +5343,9 @@
                   "qids": [
                     "eyelab-m-visual-q-l3-1-7",
                     "eyelab-vp-q-l2-2-7"
-                  ]
+                  ],
+                  "cat": "視覺路徑",
+                  "hint": "視放射經頂葉向後走行"
                 },
                 {
                   "zh": "距狀溝",
@@ -5240,7 +5398,8 @@
                     "eyelab-vp-q-l3-1-6",
                     "eyelab-vp-q-l3-2-3",
                     "eyelab-vp-q-l3-3-1"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "視覺皮質",
@@ -5282,7 +5441,8 @@
                     "eyelab-m-visual-q-l3-1-8",
                     "eyelab-vp-q-l2-1-6",
                     "eyelab-vp-q-l2-2-8"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 }
               ]
             },
@@ -5329,7 +5489,8 @@
                     "eyelab-m-visual-q-l3-2-1",
                     "eyelab-vp-q-l3-1-5",
                     "eyelab-vp-q-l3-3-2"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "中央溝",
@@ -5357,7 +5518,8 @@
                   "qids": [
                     "eyelab-m-visual-q-l3-3-1",
                     "eyelab-vp-q-l3-4-5"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "丘腦",
@@ -5396,7 +5558,8 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l1-1-4"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "中腦",
@@ -5445,7 +5608,8 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l1-1-1"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "上丘",
@@ -5500,7 +5664,8 @@
                   "qids": [
                     "eyelab-m-brain-q-l1-1-5",
                     "eyelab-vp-q-l3-7-1"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "下丘",
@@ -5558,7 +5723,8 @@
                   "qids": [
                     "eyelab-m-brain-q-l1-1-6",
                     "eyelab-vp-q-l3-7-2"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "頂蓋",
@@ -5584,7 +5750,8 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l1-1-7"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "橋腦",
@@ -5683,7 +5850,8 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l1-1-2"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "延腦",
@@ -5712,7 +5880,8 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l1-1-3"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "腦下垂體",
@@ -5771,7 +5940,8 @@
                     "eyelab-blood-q-l4-2-7",
                     "eyelab-m-vessel-q-l4-2-7",
                     "eyelab-vp-q-l3-1-2"
-                  ]
+                  ],
+                  "cat": "腺體"
                 }
               ]
             }
@@ -5874,7 +6044,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l2-3-9"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "顴骨顳突",
@@ -5904,7 +6075,8 @@
                   "qids": [
                     "eyelab-orbit-q-l4-1-4",
                     "eyelab-orbit-q-l4-2-13"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "顳骨",
@@ -5941,7 +6113,8 @@
                   "qids": [
                     "eyelab-orbit-q-l1-1-8",
                     "eyelab-orbit-q-l5-1-7"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "顳骨顴突",
@@ -5971,7 +6144,8 @@
                   "qids": [
                     "eyelab-orbit-q-l4-1-5",
                     "eyelab-orbit-q-l4-2-12"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "上頷骨腭突",
@@ -6004,7 +6178,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l4-1-2"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "腭骨水平板",
@@ -6037,7 +6212,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l4-1-3"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "枕骨",
@@ -6067,7 +6243,8 @@
                   "qids": [
                     "eyelab-orbit-q-l4-2-9",
                     "eyelab-orbit-q-l5-1-5"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "頂骨",
@@ -6104,7 +6281,8 @@
                   "qids": [
                     "eyelab-orbit-q-l5-1-1",
                     "eyelab-orbit-q-l5-2-3"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "下頷骨",
@@ -6158,7 +6336,8 @@
                   "qids": [
                     "eyelab-orbit-q-l5-1-10",
                     "eyelab-orbit-q-l5-3-5"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "犁骨",
@@ -6191,7 +6370,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l5-3-4"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "篩骨垂直板",
@@ -6217,7 +6397,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l5-3-3"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "雞冠",
@@ -6253,7 +6434,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l3-1-1"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "中鼻甲",
@@ -6303,7 +6485,8 @@
                   "qids": [
                     "eyelab-orbit-q-l5-3-1",
                     "eyelab-orbit-q-l5-4-3"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "下鼻甲",
@@ -6350,7 +6533,8 @@
                   "qids": [
                     "eyelab-orbit-q-l5-3-2",
                     "eyelab-orbit-q-l5-4-4"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "篩板",
@@ -6380,7 +6564,8 @@
                   "qids": [
                     "eyelab-orbit-q-l3-1-2",
                     "eyelab-vp-q-l1-3-2"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "篩板",
@@ -6417,7 +6602,8 @@
                   "qids": [
                     "eyelab-orbit-q-l3-1-2",
                     "eyelab-vp-q-l1-3-2"
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "嗅孔",
@@ -6443,7 +6629,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l3-1-3"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "圓孔",
@@ -6483,7 +6670,9 @@
                   "qids": [
                     "eyelab-orbit-q-l2-3-3",
                     "eyelab-orbit-q-l3-1-6"
-                  ]
+                  ],
+                  "cat": "孔裂管",
+                  "hint": "蝶骨大翼通往翼腭窩"
                 },
                 {
                   "zh": "卵圓孔",
@@ -6551,7 +6740,9 @@
                     "eyelab-orbit-q-l2-3-4",
                     "eyelab-orbit-q-l3-1-7",
                     "eyelab-orbit-q-l4-1-6"
-                  ]
+                  ],
+                  "cat": "孔裂管",
+                  "hint": "蝶骨大翼通往顳下窩"
                 },
                 {
                   "zh": "棘孔",
@@ -6616,7 +6807,9 @@
                     "eyelab-orbit-q-l2-3-5",
                     "eyelab-orbit-q-l3-1-8",
                     "eyelab-orbit-q-l4-1-7"
-                  ]
+                  ],
+                  "cat": "孔裂管",
+                  "hint": "蝶骨大翼後外側的小孔"
                 },
                 {
                   "zh": "破裂孔",
@@ -6653,7 +6846,9 @@
                   "qids": [
                     "eyelab-orbit-q-l3-1-10",
                     "eyelab-orbit-q-l4-1-8"
-                  ]
+                  ],
+                  "cat": "孔裂管",
+                  "hint": "顱底蝶骨與顳骨交界"
                 },
                 {
                   "zh": "頸動脈管",
@@ -6679,7 +6874,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l4-1-9"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "頸靜脈孔",
@@ -6723,7 +6919,8 @@
                   "qids": [
                     "eyelab-orbit-q-l3-1-12",
                     "eyelab-orbit-q-l4-1-10"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "內耳道",
@@ -6752,7 +6949,8 @@
                   ],
                   "abbreviations": [
                     "IAM"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "舌下神經管",
@@ -6789,7 +6987,8 @@
                   "qids": [
                     "eyelab-orbit-q-l3-1-13",
                     "eyelab-orbit-q-l4-1-15"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "枕骨大孔",
@@ -6836,7 +7035,8 @@
                   "qids": [
                     "eyelab-orbit-q-l3-1-14",
                     "eyelab-orbit-q-l4-1-16"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "門齒孔",
@@ -6862,7 +7062,9 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l4-1-1"
-                  ]
+                  ],
+                  "cat": "孔裂管",
+                  "hint": "硬顎前部正中"
                 },
                 {
                   "zh": "莖乳孔",
@@ -6888,7 +7090,9 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l4-1-12"
-                  ]
+                  ],
+                  "cat": "孔裂管",
+                  "hint": "顳骨兩個突起之間"
                 },
                 {
                   "zh": "頂孔",
@@ -6907,7 +7111,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l5-1-2"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "下頷孔",
@@ -6926,7 +7131,9 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l5-1-9"
-                  ]
+                  ],
+                  "cat": "孔裂管",
+                  "hint": "下頜支內面的入口"
                 },
                 {
                   "zh": "頦孔",
@@ -6952,7 +7159,9 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l5-3-6"
-                  ]
+                  ],
+                  "cat": "孔裂管",
+                  "hint": "下頜骨體前外側"
                 },
                 {
                   "zh": "莖突",
@@ -6989,7 +7198,8 @@
                   "qids": [
                     "eyelab-orbit-q-l4-1-11",
                     "eyelab-orbit-q-l4-2-11"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "乳突",
@@ -7037,7 +7247,8 @@
                     "eyelab-orbit-q-l4-1-13",
                     "eyelab-orbit-q-l4-2-10",
                     "eyelab-orbit-q-l5-1-8"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "枕髁",
@@ -7063,7 +7274,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l4-1-14"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "鱗狀縫",
@@ -7089,7 +7301,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l4-2-1"
-                  ]
+                  ],
+                  "cat": "其他"
                 },
                 {
                   "zh": "矢狀縫",
@@ -7119,7 +7332,8 @@
                   "qids": [
                     "eyelab-orbit-q-l5-1-3",
                     "eyelab-orbit-q-l5-2-1"
-                  ]
+                  ],
+                  "cat": "其他"
                 },
                 {
                   "zh": "人字縫",
@@ -7145,7 +7359,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l5-1-4"
-                  ]
+                  ],
+                  "cat": "其他"
                 },
                 {
                   "zh": "冠狀縫",
@@ -7171,7 +7386,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l5-2-2"
-                  ]
+                  ],
+                  "cat": "其他"
                 },
                 {
                   "zh": "枕外隆凸",
@@ -7197,7 +7413,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l5-1-6"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "下頷窩",
@@ -7223,7 +7440,8 @@
                   ],
                   "qids": [
                     "eyelab-orbit-q-l4-2-7"
-                  ]
+                  ],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "外耳道",
@@ -7252,7 +7470,8 @@
                   ],
                   "abbreviations": [
                     "EAM"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 }
               ]
             },
@@ -7281,7 +7500,8 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 722，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "qids": []
+                  "qids": [],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "鼻側視網膜",
@@ -7305,7 +7525,8 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 722，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "qids": []
+                  "qids": [],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "鋸齒緣",
@@ -7339,7 +7560,8 @@
                       "from": "補充圖・Gray's Anatomy 1918 Fig. 875，公有領域（Wikimedia Commons）"
                     }
                   ],
-                  "qids": []
+                  "qids": [],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "中央小凹",
@@ -7368,7 +7590,9 @@
                   ],
                   "qids": [
                     "eyelab-vp-q-l1-2-3"
-                  ]
+                  ],
+                  "cat": "眼球構造",
+                  "hint": "黃斑中央視錐細胞密集處"
                 }
               ]
             },
@@ -7406,7 +7630,8 @@
                   ],
                   "qids": [
                     "eyelab-vp-q-l3-2-1"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 }
               ]
             },
@@ -7430,7 +7655,8 @@
                   ],
                   "qids": [
                     "eyelab-vp-q-l3-5-2"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "額葉",
@@ -7463,7 +7689,8 @@
                   ],
                   "qids": [
                     "eyelab-vp-q-l3-4-1"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "頂葉",
@@ -7489,7 +7716,8 @@
                   ],
                   "qids": [
                     "eyelab-vp-q-l3-4-2"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "顳葉",
@@ -7522,7 +7750,8 @@
                   ],
                   "qids": [
                     "eyelab-vp-q-l3-4-3"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "枕葉",
@@ -7585,7 +7814,8 @@
                   ],
                   "qids": [
                     "eyelab-vp-q-l3-4-4"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "大腦縱裂",
@@ -7611,7 +7841,8 @@
                   ],
                   "qids": [
                     "eyelab-vp-q-l3-5-1"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "楔葉",
@@ -7648,7 +7879,8 @@
                   "qids": [
                     "eyelab-vp-q-l3-1-7",
                     "eyelab-vp-q-l3-3-3"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "舌回",
@@ -7685,7 +7917,8 @@
                   "qids": [
                     "eyelab-vp-q-l3-1-8",
                     "eyelab-vp-q-l3-3-4"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "側腦室",
@@ -7734,7 +7967,8 @@
                   ],
                   "qids": [
                     "eyelab-vp-q-l3-6-1"
-                  ]
+                  ],
+                  "cat": "腦室與腦膜"
                 }
               ]
             },
@@ -7799,7 +8033,8 @@
                   "qids": [
                     "eyelab-vp-q-l1-1-3",
                     "eyelab-vp-q-l1-3-4"
-                  ]
+                  ],
+                  "cat": "腦室與腦膜"
                 }
               ]
             }
@@ -7957,7 +8192,8 @@
                   ],
                   "abbreviations": [
                     "SOF"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "視神經管",
@@ -8025,7 +8261,8 @@
                     "eyelab-orbit-q-l2-3-1",
                     "eyelab-orbit-q-l3-1-4",
                     "eyelab-vp-q-l1-4-1"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 }
               ]
             },
@@ -8057,7 +8294,8 @@
                   "count": 4,
                   "qids": [
                     "eyelab-m-lid-q-l2-3-1"
-                  ]
+                  ],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "眼輪匝肌",
@@ -8084,7 +8322,8 @@
                   "count": 3,
                   "qids": [
                     "eyelab-m-lid-q-l2-1-3"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "穆勒氏肌",
@@ -8104,7 +8343,8 @@
                   "count": 9,
                   "qids": [
                     "eyelab-m-lid-q-l2-1-7"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "淚腺",
@@ -8138,7 +8378,8 @@
                   "count": 17,
                   "qids": [
                     "eyelab-m-tear-q-l1-1-1"
-                  ]
+                  ],
+                  "cat": "腺體"
                 },
                 {
                   "zh": "淚腺",
@@ -8172,7 +8413,8 @@
                   "count": 27,
                   "qids": [
                     "eyelab-m-tear-q-l1-1-1"
-                  ]
+                  ],
+                  "cat": "腺體"
                 }
               ]
             },
@@ -8229,7 +8471,8 @@
                   ],
                   "abbreviations": [
                     "LPS"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "上直肌",
@@ -8270,7 +8513,8 @@
                   ],
                   "abbreviations": [
                     "SR"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "內直肌",
@@ -8331,7 +8575,8 @@
                   ],
                   "abbreviations": [
                     "MR"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "外直肌",
@@ -8409,7 +8654,8 @@
                   ],
                   "abbreviations": [
                     "LR"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 }
               ]
             },
@@ -8456,7 +8702,8 @@
                     }
                   ],
                   "count": 15,
-                  "qids": []
+                  "qids": [],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "虹膜",
@@ -8518,7 +8765,8 @@
                     }
                   ],
                   "count": 21,
-                  "qids": []
+                  "qids": [],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "睫狀體",
@@ -8553,7 +8801,8 @@
                     }
                   ],
                   "count": 12,
-                  "qids": []
+                  "qids": [],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "睫狀體",
@@ -8588,7 +8837,8 @@
                     }
                   ],
                   "count": 7,
-                  "qids": []
+                  "qids": [],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "睫狀肌",
@@ -8613,7 +8863,8 @@
                     }
                   ],
                   "count": 25,
-                  "qids": []
+                  "qids": [],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "水晶體",
@@ -8655,7 +8906,8 @@
                     }
                   ],
                   "count": 3,
-                  "qids": []
+                  "qids": [],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "脈絡膜",
@@ -8713,7 +8965,8 @@
                   "qids": [
                     "eyelab-blood-q-l3-2-5",
                     "eyelab-m-vessel-q-l3-2-5"
-                  ]
+                  ],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "視網膜",
@@ -8758,7 +9011,8 @@
                     }
                   ],
                   "count": 86,
-                  "qids": []
+                  "qids": [],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "黃斑部",
@@ -8787,7 +9041,8 @@
                     "eyelab-blood-q-l3-3-6",
                     "eyelab-m-vessel-q-l3-3-6",
                     "eyelab-vp-q-l1-2-2"
-                  ]
+                  ],
+                  "cat": "眼球構造"
                 },
                 {
                   "zh": "視神經盤",
@@ -8833,7 +9088,8 @@
                   ],
                   "abbreviations": [
                     "ONH"
-                  ]
+                  ],
+                  "cat": "眼球構造"
                 }
               ]
             },
@@ -8965,7 +9221,8 @@
                   ],
                   "abbreviations": [
                     "ICA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "頸內動脈",
@@ -9092,7 +9349,8 @@
                   ],
                   "abbreviations": [
                     "ICA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "眼動脈",
@@ -9140,7 +9398,8 @@
                   ],
                   "abbreviations": [
                     "OA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "眼動脈",
@@ -9188,7 +9447,8 @@
                   ],
                   "abbreviations": [
                     "OA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "視網膜中央動脈",
@@ -9236,14 +9496,16 @@
                   ],
                   "abbreviations": [
                     "CRA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "睫狀視網膜動脈",
                   "en": "cilioretinal artery",
                   "views": [],
                   "count": 14,
-                  "qids": []
+                  "qids": [],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "顳上動脈",
@@ -9264,7 +9526,9 @@
                   "qids": [
                     "eyelab-blood-q-l3-3-2",
                     "eyelab-m-vessel-q-l3-3-2"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "眼底血管向外上方延伸"
                 },
                 {
                   "zh": "顳下動脈",
@@ -9285,7 +9549,9 @@
                   "qids": [
                     "eyelab-blood-q-l3-3-3",
                     "eyelab-m-vessel-q-l3-3-3"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "眼底血管向外下方延伸"
                 },
                 {
                   "zh": "鼻上動脈",
@@ -9306,7 +9572,9 @@
                   "qids": [
                     "eyelab-blood-q-l3-3-4",
                     "eyelab-m-vessel-q-l3-3-4"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "眼底血管向內上方延伸"
                 },
                 {
                   "zh": "鼻下動脈",
@@ -9327,7 +9595,9 @@
                   "qids": [
                     "eyelab-blood-q-l3-3-5",
                     "eyelab-m-vessel-q-l3-3-5"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "眼底血管向內下方延伸"
                 },
                 {
                   "zh": "睫狀動脈",
@@ -9348,7 +9618,8 @@
                   "qids": [
                     "eyelab-blood-q-l2-1-4",
                     "eyelab-m-vessel-q-l2-1-4"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "睫狀後長動脈",
@@ -9372,7 +9643,9 @@
                   ],
                   "abbreviations": [
                     "LPCA"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "向前行至虹膜根部"
                 },
                 {
                   "zh": "睫狀後短動脈",
@@ -9408,7 +9681,9 @@
                   ],
                   "abbreviations": [
                     "SPCA"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "穿過鞏膜供應脈絡膜"
                 },
                 {
                   "zh": "睫狀前動脈",
@@ -9429,7 +9704,9 @@
                   "qids": [
                     "eyelab-blood-q-l3-1-3",
                     "eyelab-m-vessel-q-l3-1-3"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "伴隨眼外肌向前走行"
                 },
                 {
                   "zh": "淚動脈",
@@ -9474,7 +9751,8 @@
                     "eyelab-m-vessel-q-l2-1-5",
                     "eyelab-m-vessel-q-l2-2-3",
                     "eyelab-m-vessel-q-l5-2-6"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "眶上動脈",
@@ -9517,7 +9795,8 @@
                     "eyelab-blood-q-l2-2-6",
                     "eyelab-m-vessel-q-l2-1-7",
                     "eyelab-m-vessel-q-l2-2-6"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "滑車上動脈",
@@ -9550,7 +9829,8 @@
                     "eyelab-blood-q-l2-2-7",
                     "eyelab-m-vessel-q-l2-1-8",
                     "eyelab-m-vessel-q-l2-2-7"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "大腦前動脈",
@@ -9581,7 +9861,8 @@
                   ],
                   "abbreviations": [
                     "ACA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "前交通動脈",
@@ -9613,7 +9894,8 @@
                   "abbreviations": [
                     "AComA",
                     "ACoA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "大腦中動脈",
@@ -9644,7 +9926,8 @@
                   ],
                   "abbreviations": [
                     "MCA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "大腦後動脈",
@@ -9675,7 +9958,8 @@
                   ],
                   "abbreviations": [
                     "PCA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "威利氏環",
@@ -9703,7 +9987,8 @@
                   "qids": [
                     "eyelab-blood-q-l1-2-1",
                     "eyelab-m-vessel-q-l1-2-1"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "基底動脈",
@@ -9786,7 +10071,8 @@
                   ],
                   "abbreviations": [
                     "BA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "椎動脈",
@@ -9829,7 +10115,8 @@
                   ],
                   "abbreviations": [
                     "VA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "頸外動脈",
@@ -9867,7 +10154,8 @@
                   ],
                   "abbreviations": [
                     "ECA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "上頷動脈",
@@ -9895,7 +10183,8 @@
                   "qids": [
                     "eyelab-blood-q-l5-1-2",
                     "eyelab-m-vessel-q-l5-1-2"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "眶下動脈",
@@ -9923,7 +10212,8 @@
                   "qids": [
                     "eyelab-blood-q-l5-2-5",
                     "eyelab-m-vessel-q-l5-2-5"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "顏面動脈",
@@ -9963,7 +10253,8 @@
                     "eyelab-blood-q-l5-2-3",
                     "eyelab-m-vessel-q-l5-1-3",
                     "eyelab-m-vessel-q-l5-2-3"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "眼角動脈",
@@ -9991,7 +10282,8 @@
                   "qids": [
                     "eyelab-blood-q-l5-2-1",
                     "eyelab-m-vessel-q-l5-2-1"
-                  ]
+                  ],
+                  "cat": "動脈"
                 }
               ]
             },
@@ -10080,7 +10372,8 @@
                   ],
                   "abbreviations": [
                     "CN III"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "滑車神經",
@@ -10151,7 +10444,8 @@
                   ],
                   "abbreviations": [
                     "CN IV"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "三叉神經",
@@ -10214,7 +10508,8 @@
                   ],
                   "abbreviations": [
                     "CN V"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "眼神經",
@@ -10257,7 +10552,8 @@
                   "abbreviations": [
                     "CN V1",
                     "V1"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "淚腺神經",
@@ -10301,7 +10597,9 @@
                   "count": 12,
                   "qids": [
                     "eyelab-m-brain-q-l3-4-3"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "眼神經外側支，沿外直肌上緣"
                 },
                 {
                   "zh": "額神經",
@@ -10335,7 +10633,9 @@
                   "count": 12,
                   "qids": [
                     "eyelab-m-brain-q-l3-4-4"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "眼神經分支，沿眶頂前行"
                 },
                 {
                   "zh": "鼻睫神經",
@@ -10373,7 +10673,9 @@
                   "qids": [
                     "eyelab-m-brain-q-l3-1-4",
                     "eyelab-m-brain-q-l3-4-2"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "眼神經分支，跨視神經向內"
                 },
                 {
                   "zh": "睫狀長神經",
@@ -10393,7 +10695,9 @@
                   "count": 11,
                   "qids": [
                     "eyelab-m-brain-q-l3-1-3"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "繞過神經節向眼球前行"
                 },
                 {
                   "zh": "睫狀短神經",
@@ -10413,7 +10717,9 @@
                   "count": 28,
                   "qids": [
                     "eyelab-m-brain-q-l3-1-2"
-                  ]
+                  ],
+                  "cat": "神經",
+                  "hint": "由眶內小神經節向眼球走行"
                 },
                 {
                   "zh": "顏面神經",
@@ -10464,7 +10770,8 @@
                   "qids": [],
                   "abbreviations": [
                     "CN VII"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "睫狀神經節",
@@ -10494,7 +10801,8 @@
                   "count": 38,
                   "qids": [
                     "eyelab-m-brain-q-l3-1-1"
-                  ]
+                  ],
+                  "cat": "神經節"
                 },
                 {
                   "zh": "翼顎神經節",
@@ -10517,7 +10825,8 @@
                   ],
                   "abbreviations": [
                     "PPG"
-                  ]
+                  ],
+                  "cat": "神經節"
                 },
                 {
                   "zh": "上頸神經節",
@@ -10541,7 +10850,8 @@
                   ],
                   "abbreviations": [
                     "SCG"
-                  ]
+                  ],
+                  "cat": "神經節"
                 }
               ]
             },
@@ -10734,7 +11044,8 @@
                   "abbreviations": [
                     "CN II",
                     "ON"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視神經",
@@ -10922,7 +11233,8 @@
                   "abbreviations": [
                     "CN II",
                     "ON"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視交叉",
@@ -11034,7 +11346,8 @@
                     "eyelab-vp-q-l2-1-2",
                     "eyelab-vp-q-l2-2-2",
                     "eyelab-vp-q-l3-1-1"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視交叉",
@@ -11146,7 +11459,8 @@
                     "eyelab-vp-q-l2-1-2",
                     "eyelab-vp-q-l2-2-2",
                     "eyelab-vp-q-l3-1-1"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視束",
@@ -11266,7 +11580,8 @@
                     "eyelab-vp-q-l1-5-3",
                     "eyelab-vp-q-l2-1-3",
                     "eyelab-vp-q-l2-2-3"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視束",
@@ -11386,7 +11701,8 @@
                     "eyelab-vp-q-l1-5-3",
                     "eyelab-vp-q-l2-1-3",
                     "eyelab-vp-q-l2-2-3"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "外側膝狀體",
@@ -11439,7 +11755,8 @@
                   "abbreviations": [
                     "LGN",
                     "LGB"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "外側膝狀體",
@@ -11492,7 +11809,8 @@
                   "abbreviations": [
                     "LGN",
                     "LGB"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視放射",
@@ -11544,7 +11862,8 @@
                     "eyelab-m-visual-q-l3-1-6",
                     "eyelab-vp-q-l2-1-5",
                     "eyelab-vp-q-l2-2-6"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 }
               ]
             },
@@ -11569,7 +11888,8 @@
                   "count": 5,
                   "qids": [
                     "eyelab-vp-q-l3-5-2"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "額葉",
@@ -11603,7 +11923,8 @@
                   "count": 3,
                   "qids": [
                     "eyelab-vp-q-l3-4-1"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "枕葉",
@@ -11667,7 +11988,8 @@
                   "count": 4,
                   "qids": [
                     "eyelab-vp-q-l3-4-4"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "枕葉",
@@ -11731,7 +12053,8 @@
                   "count": 3,
                   "qids": [
                     "eyelab-vp-q-l3-4-4"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "中腦",
@@ -11781,7 +12104,8 @@
                   "count": 41,
                   "qids": [
                     "eyelab-m-brain-q-l1-1-1"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "上丘",
@@ -11836,7 +12160,8 @@
                   "qids": [
                     "eyelab-m-brain-q-l1-1-5",
                     "eyelab-vp-q-l3-7-1"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "上丘臂",
@@ -11854,7 +12179,9 @@
                     }
                   ],
                   "count": 3,
-                  "qids": []
+                  "qids": [],
+                  "cat": "腦區與腦溝",
+                  "hint": "中腦背側連向外側膝狀體"
                 },
                 {
                   "zh": "下丘",
@@ -11912,7 +12239,8 @@
                   "qids": [
                     "eyelab-m-brain-q-l1-1-6",
                     "eyelab-vp-q-l3-7-2"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "橋腦",
@@ -12012,7 +12340,8 @@
                   "count": 11,
                   "qids": [
                     "eyelab-m-brain-q-l1-1-2"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "小腦",
@@ -12057,7 +12386,8 @@
                     }
                   ],
                   "count": 3,
-                  "qids": []
+                  "qids": [],
+                  "cat": "腦區與腦溝"
                 }
               ]
             }
@@ -12176,7 +12506,8 @@
                     "eyelab-vp-q-l3-1-6",
                     "eyelab-vp-q-l3-2-3",
                     "eyelab-vp-q-l3-3-1"
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "2. 腦下垂體",
@@ -12234,7 +12565,8 @@
                     "eyelab-blood-q-l4-2-7",
                     "eyelab-m-vessel-q-l4-2-7",
                     "eyelab-vp-q-l3-1-2"
-                  ]
+                  ],
+                  "cat": "腺體"
                 },
                 {
                   "zh": "3. 提上眼瞼肌",
@@ -12285,7 +12617,8 @@
                   ],
                   "abbreviations": [
                     "LPS"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "4. 鼻淚管",
@@ -12328,7 +12661,8 @@
                   ],
                   "abbreviations": [
                     "NLD"
-                  ]
+                  ],
+                  "cat": "淚道"
                 },
                 {
                   "zh": "5. 外側膝狀體",
@@ -12380,7 +12714,8 @@
                   "abbreviations": [
                     "LGN",
                     "LGB"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "6. 梅氏環",
@@ -12410,7 +12745,9 @@
                   "qids": [
                     "eyelab-m-visual-q-l3-1-5",
                     "eyelab-vp-q-l2-2-5"
-                  ]
+                  ],
+                  "cat": "視覺路徑",
+                  "hint": "視放射繞過顳角的那一段"
                 },
                 {
                   "zh": "7. 眶上裂",
@@ -12490,14 +12827,16 @@
                   ],
                   "abbreviations": [
                     "SOF"
-                  ]
+                  ],
+                  "cat": "孔裂管"
                 },
                 {
                   "zh": "8. 淚腺的眼眶部",
                   "en": "Orbital part of lacrimal gland",
                   "views": [],
                   "tag": "目前沒有圖",
-                  "qids": []
+                  "qids": [],
+                  "cat": "腺體"
                 },
                 {
                   "zh": "9. 後短睫狀動脈",
@@ -12532,7 +12871,9 @@
                   ],
                   "abbreviations": [
                     "SPCA"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "穿過鞏膜供應脈絡膜"
                 },
                 {
                   "zh": "10. 硬腦膜",
@@ -12592,7 +12933,8 @@
                   "qids": [
                     "eyelab-vp-q-l1-1-3",
                     "eyelab-vp-q-l1-3-4"
-                  ]
+                  ],
+                  "cat": "腦室與腦膜"
                 },
                 {
                   "zh": "11. 前睫狀動脈",
@@ -12612,7 +12954,9 @@
                   "qids": [
                     "eyelab-blood-q-l3-1-3",
                     "eyelab-m-vessel-q-l3-1-3"
-                  ]
+                  ],
+                  "cat": "動脈",
+                  "hint": "伴隨眼外肌向前走行"
                 },
                 {
                   "zh": "12. 瞼板腺",
@@ -12645,7 +12989,8 @@
                   ],
                   "qids": [
                     "eyelab-m-lid-q-l2-1-6"
-                  ]
+                  ],
+                  "cat": "腺體"
                 },
                 {
                   "zh": "13. 眼角動脈",
@@ -12672,7 +13017,8 @@
                   "qids": [
                     "eyelab-blood-q-l5-2-1",
                     "eyelab-m-vessel-q-l5-2-1"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "14. 滑車神經",
@@ -12742,7 +13088,8 @@
                   ],
                   "abbreviations": [
                     "CN IV"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "15. 睫狀神經節",
@@ -12771,7 +13118,8 @@
                   ],
                   "qids": [
                     "eyelab-m-brain-q-l3-1-1"
-                  ]
+                  ],
+                  "cat": "神經節"
                 },
                 {
                   "zh": "16. 顴骨的上頜突",
@@ -12826,7 +13174,8 @@
                     }
                   ],
                   "tag": "顴骨圖位僅供大致參考，非上頜突精確標點",
-                  "qids": []
+                  "qids": [],
+                  "cat": "骨性標記"
                 },
                 {
                   "zh": "17. 中大腦動脈",
@@ -12856,7 +13205,8 @@
                   ],
                   "abbreviations": [
                     "MCA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "18. 視網膜顳上小動脈",
@@ -12873,7 +13223,9 @@
                       "name": "顳上動脈 superior temporal arteriole"
                     }
                   ],
-                  "qids": []
+                  "qids": [],
+                  "cat": "動脈",
+                  "hint": "眼底血管向外上方延伸"
                 },
                 {
                   "zh": "19. 外展神經",
@@ -12926,7 +13278,8 @@
                   ],
                   "abbreviations": [
                     "CN VI"
-                  ]
+                  ],
+                  "cat": "神經"
                 }
               ]
             }
@@ -13014,7 +13367,8 @@
                       "l": "slices",
                       "name": "蝶骨大翼 greater wing of sphenoid bone"
                     }
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "顴骨",
@@ -13040,7 +13394,8 @@
                       "l": "slices",
                       "name": "顴骨 Zygomatic bone"
                     }
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "下頷骨",
@@ -13056,7 +13411,8 @@
                       "l": "slices",
                       "name": "下頷骨 mandible"
                     }
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "中鼻甲",
@@ -13082,7 +13438,8 @@
                       "l": "slices",
                       "name": "中鼻甲 middle nasal concha"
                     }
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "下鼻甲",
@@ -13098,7 +13455,8 @@
                       "l": "slices",
                       "name": "下鼻甲 inferior nasal concha"
                     }
-                  ]
+                  ],
+                  "cat": "骨"
                 },
                 {
                   "zh": "上頷竇",
@@ -13114,7 +13472,8 @@
                       "l": "slices",
                       "name": "上頷竇 maxillary sinus"
                     }
-                  ]
+                  ],
+                  "cat": "鼻竇"
                 },
                 {
                   "zh": "篩竇",
@@ -13130,7 +13489,8 @@
                       "l": "slices",
                       "name": "篩竇 ethmoidal sinus"
                     }
-                  ]
+                  ],
+                  "cat": "鼻竇"
                 },
                 {
                   "zh": "額竇",
@@ -13156,7 +13516,8 @@
                       "l": "slices",
                       "name": "額竇 frontal sinus"
                     }
-                  ]
+                  ],
+                  "cat": "鼻竇"
                 },
                 {
                   "zh": "蝶竇",
@@ -13192,7 +13553,8 @@
                       "l": "slices",
                       "name": "蝶竇 sphenoidal sinus"
                     }
-                  ]
+                  ],
+                  "cat": "鼻竇"
                 }
               ]
             },
@@ -13213,7 +13575,8 @@
                       "l": "slices",
                       "name": "淚囊 lacrimal sac"
                     }
-                  ]
+                  ],
+                  "cat": "淚道"
                 },
                 {
                   "zh": "鼻淚管",
@@ -13232,7 +13595,8 @@
                   ],
                   "abbreviations": [
                     "NLD"
-                  ]
+                  ],
+                  "cat": "淚道"
                 }
               ]
             },
@@ -13256,7 +13620,8 @@
                   ],
                   "abbreviations": [
                     "MR"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 },
                 {
                   "zh": "外直肌",
@@ -13275,7 +13640,8 @@
                   ],
                   "abbreviations": [
                     "LR"
-                  ]
+                  ],
+                  "cat": "肌肉"
                 }
               ]
             },
@@ -13299,7 +13665,8 @@
                   ],
                   "abbreviations": [
                     "ICA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "基底動脈",
@@ -13328,7 +13695,8 @@
                   ],
                   "abbreviations": [
                     "BA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 },
                 {
                   "zh": "淺顳動脈",
@@ -13347,7 +13715,8 @@
                   ],
                   "abbreviations": [
                     "STA"
-                  ]
+                  ],
+                  "cat": "動脈"
                 }
               ]
             },
@@ -13381,7 +13750,8 @@
                   ],
                   "abbreviations": [
                     "CN III"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "三叉神經",
@@ -13410,7 +13780,8 @@
                   ],
                   "abbreviations": [
                     "CN V"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "外旋神經",
@@ -13439,7 +13810,8 @@
                   ],
                   "abbreviations": [
                     "CN VI"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "顏面神經",
@@ -13468,7 +13840,8 @@
                   ],
                   "abbreviations": [
                     "CN VII"
-                  ]
+                  ],
+                  "cat": "神經"
                 }
               ]
             },
@@ -13503,7 +13876,8 @@
                   "abbreviations": [
                     "CN II",
                     "ON"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視交叉",
@@ -13519,7 +13893,8 @@
                       "l": "slices",
                       "name": "視交叉 Optic chiasm"
                     }
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視束",
@@ -13545,7 +13920,8 @@
                       "l": "slices",
                       "name": "視束 Optic tract"
                     }
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "視放射",
@@ -13561,7 +13937,8 @@
                       "l": "slices",
                       "name": "視放射 optic radiation"
                     }
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 },
                 {
                   "zh": "梅氏環",
@@ -13577,7 +13954,9 @@
                       "l": "slices",
                       "name": "梅氏環 Meyer's loop"
                     }
-                  ]
+                  ],
+                  "cat": "視覺路徑",
+                  "hint": "視放射繞過顳角的那一段"
                 },
                 {
                   "zh": "距狀溝",
@@ -13593,7 +13972,8 @@
                       "l": "slices",
                       "name": "距狀溝 calcarine sulcus"
                     }
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 }
               ]
             },
@@ -13614,7 +13994,8 @@
                       "l": "slices",
                       "name": "枕葉 occipital lobe"
                     }
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "側腦室",
@@ -13640,7 +14021,8 @@
                       "l": "slices",
                       "name": "側腦室 lateral ventricle"
                     }
-                  ]
+                  ],
+                  "cat": "腦室與腦膜"
                 },
                 {
                   "zh": "丘腦",
@@ -13656,7 +14038,8 @@
                       "l": "slices",
                       "name": "丘腦 thalamus"
                     }
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "中腦",
@@ -13672,7 +14055,8 @@
                       "l": "slices",
                       "name": "中腦 midbrain"
                     }
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "下丘",
@@ -13698,7 +14082,8 @@
                       "l": "brainstem",
                       "name": "下丘 inferior colliculus"
                     }
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "橋腦",
@@ -13734,7 +14119,8 @@
                       "l": "brainstem",
                       "name": "橋腦 pons"
                     }
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "小腦",
@@ -13760,7 +14146,8 @@
                       "l": "slices",
                       "name": "小腦 cerebellum"
                     }
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "腦下垂體",
@@ -13786,7 +14173,8 @@
                       "l": "brainstem",
                       "name": "腦下垂體 pituitary gland"
                     }
-                  ]
+                  ],
+                  "cat": "腺體"
                 }
               ]
             },
@@ -13827,7 +14215,8 @@
                       "l": "slices",
                       "name": "硬腦膜 dura mater"
                     }
-                  ]
+                  ],
+                  "cat": "腦室與腦膜"
                 }
               ]
             }
@@ -14188,7 +14577,8 @@
                   ],
                   "abbreviations": [
                     "CN III"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "滑車神經",
@@ -14217,7 +14607,8 @@
                   ],
                   "abbreviations": [
                     "CN IV"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "三叉神經",
@@ -14236,7 +14627,8 @@
                   ],
                   "abbreviations": [
                     "CN V"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "外展神經",
@@ -14255,7 +14647,8 @@
                   ],
                   "abbreviations": [
                     "CN VI"
-                  ]
+                  ],
+                  "cat": "神經"
                 },
                 {
                   "zh": "顏面神經",
@@ -14274,7 +14667,8 @@
                   ],
                   "abbreviations": [
                     "CN VII"
-                  ]
+                  ],
+                  "cat": "神經"
                 }
               ]
             },
@@ -14299,7 +14693,8 @@
                   "abbreviations": [
                     "CN II",
                     "ON"
-                  ]
+                  ],
+                  "cat": "視覺路徑"
                 }
               ]
             },
@@ -14320,7 +14715,8 @@
                       "l": "brainstem",
                       "name": "上丘 superior colliculus"
                     }
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "下丘",
@@ -14336,7 +14732,8 @@
                       "l": "brainstem",
                       "name": "下丘 inferior colliculus"
                     }
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "橋腦",
@@ -14352,7 +14749,8 @@
                       "l": "brainstem",
                       "name": "橋腦 pons"
                     }
-                  ]
+                  ],
+                  "cat": "腦區與腦溝"
                 },
                 {
                   "zh": "腦下垂體",
@@ -14368,7 +14766,8 @@
                       "l": "brainstem",
                       "name": "腦下垂體 pituitary gland"
                     }
-                  ]
+                  ],
+                  "cat": "腺體"
                 }
               ]
             }
