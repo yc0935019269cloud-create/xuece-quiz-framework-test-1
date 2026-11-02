@@ -287,7 +287,7 @@ mock_specs = [
  ('梅氏環', "Meyer's loop", 'meyer', ''),
  ('眶上裂', 'Superior orbital fissure', 'sof', ''),
  ('淚腺的眼眶部', 'Orbital part of lacrimal gland', None, ''),
- ('後睫狀動脈', 'Posterior ciliary arteries', identify('睫狀後動脈', 'posterior ciliary artery'), ''),
+ ('後短睫狀動脈', 'Short posterior ciliary arteries', 'spca', ''),
  ('硬腦膜', 'Dura mater', 'dura', ''),
  ('前睫狀動脈', 'Anterior ciliary arteries', 'aca-cil', ''),
  ('瞼板腺', 'Tarsal (meibomian) glands', 'meibomian', ''),
@@ -350,6 +350,45 @@ for fig in slices:
                         'mode': 'explore', 'source': fig['slice'] + '｜KMU, Anatomy', 'points': points})
 slice_steps.append({'type': 'recap', 'points': ['先確認切片方向，再依相鄰構造辨認；大致位置僅供概略參考。']})
 lessons.append({'id': 'slices', 'title': '切片', 'steps': slice_steps})
+
+# Only exact review structures (including established Chinese synonyms) are selected.
+brain = json.loads(Path(__file__).with_name('slice_points').joinpath('brainstem.json').read_text(encoding='utf-8-sig'))
+brain_aliases = {'腦橋': '橋腦', '面神經': '顏面神經', '垂體': '腦下垂體'}
+review_rows = {}
+for lesson in lessons:
+    for step in lesson['steps']:
+        if step['type'] == 'termlist':
+            for group in step['groups']:
+                for row in group['items']:
+                    review_rows.setdefault(re.sub(r'^\d+\.\s*', '', row['zh']), row)
+brain_rows = {}
+brain_points = []
+for pt in brain['points']:
+    zh = brain_aliases.get(pt['zh'], pt['zh'])
+    if zh not in review_rows: continue
+    source_row = review_rows[zh]
+    name = zh + ' ' + source_row['en']
+    view = {'img': brain['image'], 'x': pt['x'], 'y': pt['y'],
+            'title': '腦幹' + ('背面觀' if pt['panel'] == 'dorsal' else '腹面觀'),
+            'from': '教科書腦幹背面觀／腹面觀（使用者提供，原圖浮水印：康复小部落）',
+            'p': 'eyelab-midterm', 'l': 'brainstem', 'name': name}
+    row = brain_rows.setdefault(zh, {'zh': zh, 'en': source_row['en'], 'views': []})
+    row['views'].append(view)
+    brain_points.append({'name': name, 'x': pt['x'], 'y': pt['y'], 'desc': view['title']})
+for lesson in lessons:
+    for step in lesson['steps']:
+        if step['type'] != 'termlist': continue
+        for group in step['groups']:
+            for row in group['items']:
+                zh = re.sub(r'^\d+\.\s*', '', row['zh'])
+                key = {'外旋神經': '外展神經'}.get(zh, zh)
+                if key in brain_rows: row['views'] = row['views'] + [dict(v) for v in brain_rows[key]['views']]
+lessons.append({'id': 'brainstem', 'title': '腦幹圖', 'steps': [
+    {'type': 'termlist', 'title': '腦幹圖上的構造', 'body': '先辨認背面觀與腹面觀。', 'groups': regroup([{'items': list(brain_rows.values())}])},
+    {'type': 'diagram', 'title': '腦幹背面觀／腹面觀', 'img': brain['image'], 'mode': 'explore',
+     'source': '教科書腦幹背面觀／腹面觀（使用者提供，原圖浮水印：康复小部落）', 'points': brain_points},
+    {'type': 'recap', 'points': ['辨認背面觀與腹面觀，並以相鄰構造確認位置。']}
+]})
 
 pack = {'schema': 'xd-learn/1', 'id': 'eyelab-midterm', 'subject': 'eye_anat', 'path': ['眼解剖實驗', '期中總複習', '期中總複習'], 'order': 0, 'style': 'atlas', 'title': '期中總複習（跑台）', 'unit': '期中總複習', 'desc': '實驗手冊約 70 分、正課提及約 30 分；跑台用人體切片與模型，靜脈與看不到的構造不考。', 'level': 2, 'minutes': 60, 'lessons': lessons}
 OUT.write_text(json.dumps(pack, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

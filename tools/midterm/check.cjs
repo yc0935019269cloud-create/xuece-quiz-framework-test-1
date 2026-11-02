@@ -10,7 +10,11 @@ const expectedGroups = [
   ['骨質眼窩','眼瞼與淚器','眼外肌與眼眶','眼球與眼底','動脈','腦神經與神經節','視覺路徑','腦與腦幹'],
   ['模擬考範圍']
 ];
-ok('lesson ids', JSON.stringify(pack.lessons.map(l => l.id)) === JSON.stringify(['manual','lab','lecture','mock-exam','slices']));
+ok('lesson ids', JSON.stringify(pack.lessons.map(l => l.id)) === JSON.stringify(['manual','lab','lecture','mock-exam','slices','brainstem']));
+const brainstem = pack.lessons.find(l => l.id === 'brainstem');
+ok('brainstem structure and pins', !!brainstem && brainstem.steps[0].groups.flatMap(g => g.items).length === 10 && brainstem.steps[1].points.length === 11);
+const mockNine = pack.lessons[3].steps[1].groups[0].items[8];
+ok('mock item 9 short posterior ciliary arteries', mockNine.zh.includes('後短睫狀動脈') && mockNine.en === 'Short posterior ciliary arteries' && mockNine.views.length > 0);
 ok('groups', pack.lessons.slice(0, 4).every((l, i) => JSON.stringify(l.steps[1].groups.map(g => g.name)) === JSON.stringify(expectedGroups[i])));
 ok('row counts', JSON.stringify(pack.lessons.slice(0, 4).map(l => l.steps[1].groups.reduce((n, g) => n + g.items.length, 0))) === JSON.stringify([138,56,82,19]));
 ok('no exam stars', !JSON.stringify(pack).includes('⭐') && !JSON.stringify(pack).includes('老師說會考') && pack.lessons.slice(0, 4).every(l => l.steps[1].groups.every(g => g.items.every(x => !x.star))));
