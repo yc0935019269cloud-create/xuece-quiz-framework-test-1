@@ -512,6 +512,8 @@
 
 ## 眼解剖實驗期中總複習（跑台，2026-10-30，v160）
 
+- 四堂跑台複習可逐構造勾選範圍與實戰題數；勾選、範圍和題數保存在學習存檔，題池涵蓋對應構造的跑台題。
+
 - 縮寫清單在 `tools/midterm/abbrev.json`；重跑外部圖鑑產生器 `E:\NEWTEST\eye_work\atlas\build_all.py` 後，再執行 `python tools/midterm/apply_abbrev.py`。
 
 - `content/learn/eye_anat/midterm-review.json`（id `eyelab-midterm`，path `眼解剖實驗 → 期中總複習`，order 0）三課：實驗手冊總複習（約 70 分；手冊第 1、2、4、5、8、10 頁，132 列）、實驗課複習（老師講義三單元＋鋸齒緣、瞼板腺，150 列）、眼解剖生理學正課提及總複習（約 30 分；血液供應與自主神經 7 份逐字稿提及 ≥3 次的可見大體構造，依次數排序，77 列）。每課＝一頁長清單＋40 題跑台模擬（既有跑台題庫）＋回顧。

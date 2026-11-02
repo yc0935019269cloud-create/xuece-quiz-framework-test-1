@@ -1,6 +1,8 @@
 const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path'), { pathToFileURL } = require('url');
 const root = path.resolve(__dirname, '../..');
+const out = path.join(root, 'tmp/midterm-pick-regression');
+fs.mkdirSync(out, { recursive: true });
 const pack = JSON.parse(fs.readFileSync(path.join(root, 'content/learn/eye_anat/midterm-review.json'), 'utf8'));
 const failures = [], checks = [];
 function ok(label, pass, detail) { checks.push({ label, pass: !!pass }); if (!pass) failures.push({ label, detail }); }
@@ -72,7 +74,7 @@ ok('mock numbering and missing image', pack.lessons[3].steps[1].groups[0].items.
         ok(prefix + ' no horizontal overflow', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
         await page.locator('.term-close').click();
         ok(prefix + ' close all', await page.locator('.term-toggle[aria-expanded="true"]').count() === 0);
-        await page.screenshot({ path: path.join(root, `output/playwright/midterm-${lesson.id}-${width}.png`) });
+        await page.screenshot({ path: path.join(out, `midterm-${lesson.id}-${width}.png`) });
         ok(prefix + ' AI context', await page.evaluate(() => LEARN_UI.pageCtx().text.includes('構造清單')));
         await page.locator('#lpBody .knowledge-star').first().click();
         await page.evaluate(() => App.go('learn', { tab: 'notes' }));
@@ -81,7 +83,8 @@ ok('mock numbering and missing image', pack.lessons[3].steps[1].groups[0].items.
         await page.evaluate(() => App.go('learn', { pack: 'eyelab-midterm' }));
         await page.locator(`[data-play="${li}"]`).click();
         await page.locator('#lpNext').click();
-        const qid = lesson.steps[2].qids[0];
+        await page.locator('.midterm-start').click();
+        const qid = await page.evaluate(id => { const d = LEARN_UI.exportData(), st = d.les['eyelab-midterm/' + id]; return st.run.pk[st.i].items[0].q; }, lesson.id);
         const answer = await page.evaluate(id => Store.Q[id].accept[0].split('/').map(s => s.trim()), qid);
         await page.locator('.fill-in[data-part="zh"]').fill(answer[0]);
         await page.locator('.fill-in[data-part="en"]').fill(answer[1]);
@@ -130,7 +133,7 @@ ok('mock numbering and missing image', pack.lessons[3].steps[1].groups[0].items.
     }
   }
   await browser.close();
-  fs.writeFileSync(path.join(root, 'output/playwright/midterm-qa.json'), JSON.stringify({ checks, failures }, null, 2));
+  fs.writeFileSync(path.join(out, 'midterm-qa.json'), JSON.stringify({ checks, failures }, null, 2));
   console.log(`${checks.length} checks; ${failures.length} failures`);
   if (failures.length) { console.log(JSON.stringify(failures, null, 2)); process.exitCode = 1; }
 })().catch(e => { console.error(e); process.exitCode = 1; });

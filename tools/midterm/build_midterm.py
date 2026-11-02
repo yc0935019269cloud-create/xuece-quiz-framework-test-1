@@ -2,6 +2,7 @@
 import importlib.util
 import json
 import re
+import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
@@ -318,6 +319,51 @@ mock_steps = [
 if mock_ids: mock_steps.append({'type': 'practice', 'title': '跑台模擬', 'qids': mock_ids})
 mock_steps.append({'type': 'recap', 'points': ['依序辨認 19 個構造，練習中英文名稱與圖上位置。']})
 lessons.append({'id': 'mock-exam', 'title': '模擬考', 'steps': mock_steps})
+
+# Match the interactive picker's former name and accepted-answer rules.
+def pick_norm(value):
+    value = unicodedata.normalize('NFKC', value or '').lower()
+    value = re.sub(r'^\s*\d+\s*[.、]\s*', '', value)
+    return re.sub(r"[\s\-‐–—'’·・.,，、()（）]", '', value)
+
+pick_aliases = defaultdict(set)
+for key, (zh_names, en_names) in names.NAMES.items():
+    for alias in zh_names + en_names:
+        # The old alias table retained en dashes, which the lookup removed.
+        if '–' not in alias:
+            pick_aliases[pick_norm(alias)].add(key)
+
+def pick_identity(zh, en=''):
+    en = re.sub(r'[（(][^）)]*[）)]\s*$', '', en or '')
+    for name in (pick_norm(en), pick_norm(zh)):
+        ids = pick_aliases.get(name, set())
+        if len(ids) == 1:
+            return next(iter(ids))
+    return 'zh:' + pick_norm(zh)
+
+pick_questions = []
+for f in sorted((ROOT / 'content/bank/eye_anat/lab').rglob('*.json')):
+    data = json.loads(f.read_text(encoding='utf-8-sig'))
+    for q in data['questions']:
+        answer = q.get('answer', '')
+        if q.get('type') != 'fill' or not isinstance(answer, str) or '/' not in answer:
+            continue
+        candidates = {pick_norm(answer.split('/')[0])}
+        candidates.update(pick_norm(a.split('/')[0]) for a in q.get('accept', []))
+        identities = {pick_identity(n) for n in candidates}
+        for a in [answer, *q.get('accept', [])]:
+            parts = a.split('/')
+            if len(parts) > 1 and parts[1]:
+                identities.add(pick_identity(parts[0], parts[1]))
+        pick_questions.append((data['set']['id'] + '-' + str(q['n']), candidates, identities))
+
+for lesson in lessons:
+    rows = [row for step in lesson['steps'] if step['type'] == 'termlist'
+            for group in step['groups'] for row in group['items']]
+    for row in rows:
+        key, identity = pick_norm(row['zh']), pick_identity(row['zh'], row['en'])
+        row['qids'] = [qid for qid, candidates, identities in pick_questions
+                       if key in candidates or identity in identities]
 
 # Reviewed slice coordinates are maintained separately from the source atlas points.
 slices = json.loads(Path(__file__).with_name('slice_points.json').read_text(encoding='utf-8'))

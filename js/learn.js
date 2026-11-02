@@ -701,6 +701,7 @@ const LEARN_UI = (() => {
     const prev = U.$('#lpPrev');
     function goTo(i) {
       if (inBoss || i < 0 || (!st.done && i > R.far) || i === st.i || i >= l.steps.length) return;
+      if (p.id === 'eyelab-midterm' && l.steps[i].type === 'practice' && (st.done || i < R.far) && R.pk[i]) R.pk[i].midtermStarted = false;
       if (st.i === R.far) R.farSub = R.sub;
       if (st.done) R.jumpReview = true;
       st.i = i; R.sub = i === R.far ? (R.farSub || 0) : 0; save(); SFX.play('click'); step();
@@ -748,7 +749,7 @@ const LEARN_UI = (() => {
       const k = segItems.length - 1;
       if (x.type === 'check') segItems[k] += 1;
       if (x.type === 'diagram' && x.mode !== 'explore') segItems[k] += Math.min(5, (x.points || []).length);
-      if (x.type === 'practice') segItems[k] += (x.qids || []).length + (x.checks || []).length + (x.pick ? (x.pick.n || 2) : 0);
+      if (x.type === 'practice') segItems[k] += p.id === 'eyelab-midterm' && R.pk[i]?.midtermStarted ? R.pk[i].items.length : (x.qids || []).length + (x.checks || []).length + (x.pick ? (x.pick.n || 2) : 0);
     });
     R.bt = Object.assign({ hp: 5, max: 5, en: 0, seg: -1, mon: null, kills: 0, falls: 0, gems: 0, seen: [], combo: 0, maxCombo: 0, segUsed: 0, segWrong: 0, chests: 0, ults: 0, shield: 0 }, R.bt || {});
     const B = R.bt;
@@ -1083,7 +1084,7 @@ const LEARN_UI = (() => {
       const pageRef = { kind: 'page', p: p.id, l: l.id, i: st.i, t: stepTitle(s, l) };
       const head = `<div class="lp-type-row"><div class="lp-type">${STEP[s.type].ic} ${STEP[s.type].name}</div>${review ? '<span class="tag lp-rv">🔁 回顧中・作答不計分</span>' : ''}<span class="grow"></span>${starButton(pageRef)}</div>`;
       window.scrollTo(0, 0);
-      if (!review) enterSeg();
+      if (!review && !(p.id === 'eyelab-midterm' && s.type === 'practice' && ['manual', 'lab', 'lecture', 'mock-exam'].includes(l.id) && !R.pk[st.i]?.midtermStarted)) enterSeg();
       if (!review && (s.type === 'card' || s.type === 'interactive')) gainEnergy();
       pageMoved({ boss: null, done: false, shown: 0 });
 
@@ -1131,7 +1132,7 @@ const LEARN_UI = (() => {
           onWrong: onWrongHit, onDone: () => { save(); ready(); focusNext(); }
         });
       } else if (s.type === 'termlist') {
-        renderTermlist(body, head, s); ready();
+        renderTermlist(body, head, s, p.id === 'eyelab-midterm' && ['manual', 'lab', 'lecture', 'mock-exam'].includes(l.id) ? { p, l, changed: () => { const i = l.steps.findIndex(x => x.type === 'practice'); if (R.pk[i]) R.pk[i].midtermStarted = false; } } : null); ready();
       } else if (s.type === 'interactive') {
         renderInteractive(body, head, s);
         ready();
@@ -1152,6 +1153,14 @@ const LEARN_UI = (() => {
         body._key = e => { if (e.key === 'Enter' && document.body.contains(nb)) { reveal(); return true; } return false; };
       } else if (s.type === 'practice') {
         const pk = R.pk[st.i] || (R.pk[st.i] = { items: [] });
+        if (p.id === 'eyelab-midterm' && ['manual', 'lab', 'lecture', 'mock-exam'].includes(l.id) && !pk.midtermStarted) {
+          midtermSetup(body, head, p, l, ids => {
+            pk.items = ids.map(q => ({ q })); pk.midtermStarted = true; pk.fought = false;
+            R.sub = 0; if (st.i === R.far) R.farSub = 0;
+            segItems[segOf[st.i]] = ids.length; save(); step();
+          }, () => goTo(l.steps.findIndex(x => x.type === 'termlist')));
+          return;
+        }
         // 舊進度裡還沒做到的承上題拿掉
         if (pk.items.length) pk.items = pk.items.filter((x, i) => i <= (R.sub || 0) || !x.q || !followUp(x.q));
         if (!pk.items.length) {
@@ -1289,9 +1298,62 @@ const LEARN_UI = (() => {
 
   /* ---------- 圖解：標記點探索＋點選辨識測驗 ----------
    * step: { img, points:[{x,y,name,desc}], mode:'both'|'explore'|'quiz', body, source }  x/y 為圖片寬高的百分比 */
-  function renderTermlist(body, head, s) {
+  // 同部位採 Store.partKey 的規格；編號及英文縮寫只是清單的顯示文字。
+  const midtermNorm = s => String(s || '').normalize('NFKC').toLowerCase().replace(/^\s*\d+\s*[.、]\s*/, '').replace(/[\s\-‐–—'’·・.,，、()（）]/g, '');
+  // ???????????????? lab ?????
+  const midtermModes = [['all', '全部'], ['checked', '只考勾的'], ['unchecked', '只考沒勾的']];
+  function midtermConfig(p, l) {
+    D.cfg.termPick ||= {}; D.cfg.termPick[p.id] ||= {}; D.cfg.termPick[p.id][l.id] ||= [];
+    D.cfg.termMode ||= {}; D.cfg.termMode[p.id] ||= {};
+    D.cfg.termCount ||= {}; D.cfg.termCount[p.id] ||= {};
+    return { picks: D.cfg.termPick[p.id][l.id], mode: D.cfg.termMode[p.id][l.id] || 'all' };
+  }
+  function midtermSelect(mode) {
+    return `<select class="px-in midterm-mode" aria-label="實戰範圍">${midtermModes.map(([v, t]) => `<option value="${v}"${v === mode ? ' selected' : ''}>${t}</option>`).join('')}</select>`;
+  }
+  function midtermList(body, groups, p, l, changed) {
+    const cfg = midtermConfig(p, l), keys = groups.flatMap(g => g.items.map(x => midtermNorm(x.zh)));
+    body.querySelector('.term-tools').insertAdjacentHTML('beforebegin', `<div class="midterm-pick-tools"><label>範圍 ${midtermSelect(cfg.mode)}</label><b class="midterm-counter"></b><button type="button" class="px-btn small" data-pick="all">全勾</button><button type="button" class="px-btn small" data-pick="none">全不勾</button><button type="button" class="px-btn small" data-pick="visible">勾目前搜尋到的</button></div>`);
+    const rows = [...body.querySelectorAll('.term-item')];
+    rows.forEach(row => {
+      const x = groups[+row.dataset.gi].items[+row.dataset.ii], key = midtermNorm(x.zh);
+      row.querySelector('.term-row').classList.add('midterm-row');
+      row.querySelector('.term-row').insertAdjacentHTML('beforeend', `<label class="midterm-check"><input type="checkbox" aria-label="勾選 ${U.esc(x.zh)}" ${cfg.picks.includes(key) ? 'checked' : ''}></label>`);
+      row.querySelector('input').onchange = e => { const set = new Set(cfg.picks); e.target.checked ? set.add(key) : set.delete(key); cfg.picks.splice(0, cfg.picks.length, ...set); changed(); refresh(); save(); };
+    });
+    const refresh = () => { body.querySelector('.midterm-counter').textContent = `已勾 ${keys.filter(k => cfg.picks.includes(k)).length}／共 ${keys.length}`; rows.forEach(row => { const x = groups[+row.dataset.gi].items[+row.dataset.ii]; row.querySelector('input').checked = cfg.picks.includes(midtermNorm(x.zh)); }); };
+    body.querySelector('.midterm-mode').onchange = e => { D.cfg.termMode[p.id][l.id] = e.target.value; changed(); save(); };
+    body.querySelectorAll('[data-pick]').forEach(b => b.onclick = () => { const set = new Set(cfg.picks); if (b.dataset.pick === 'none') set.clear(); else rows.filter(r => b.dataset.pick === 'all' || !r.hidden).forEach(r => set.add(midtermNorm(groups[+r.dataset.gi].items[+r.dataset.ii].zh))); cfg.picks.splice(0, cfg.picks.length, ...set); changed(); refresh(); save(); });
+    refresh();
+  }
+  function midtermPool(p, l, mode) {
+    const picks = new Set(midtermConfig(p, l).picks), rows = l.steps.find(s => s.type === 'termlist').groups.flatMap(g => g.items);
+    const selected = rows.filter(x => mode === 'all' || (mode === 'checked') === picks.has(midtermNorm(x.zh)));
+    const buckets = new Map(selected.map(x => [midtermNorm(x.zh), (x.qids || []).filter(id => Store.Q[id])]));
+    const structures = new Map(selected.map(x => [midtermNorm(x.zh), new Set(buckets.get(midtermNorm(x.zh)))]));
+    return { buckets, structures, selected, missing: selected.filter(x => !buckets.get(midtermNorm(x.zh)).length).length };
+  }
+  function midtermSetup(body, head, p, l, start, back) {
+    const cfg = midtermConfig(p, l); let mode = cfg.mode, count = D.cfg.termCount[p.id][l.id] || 20;
+    const draw = () => {
+      const pool = midtermPool(p, l, mode), ids = new Set([...pool.buckets.values()].flat()), n = ids.size;
+      if (count !== 'all' && count > n) count = 'all';
+      body.innerHTML = head + `<div class="midterm-setup"><h3>⚔ 實戰設定</h3><label>範圍 ${midtermSelect(mode)}</label><p>符合 ${pool.selected.length} 個構造，共 ${n} 題；其中 ${pool.missing} 個構造沒有跑台題。</p><p>已勾選中沒有跑台題：${midtermPool(p, l, 'checked').missing} 個構造。</p>${n ? `<div class="midterm-count">題數 ${[10, 20, 30, 'all'].map(v => `<button type="button" class="px-btn small ${String(count) === String(v) ? 'gold' : ''}" data-count="${v}" ${v !== 'all' && v > n ? 'disabled' : ''}>${v === 'all' ? '全部 ' + n : v}</button>`).join('')}</div><button type="button" class="px-btn gold midterm-start">開始實戰 ▶</button>` : '<p>這個範圍沒有可出的跑台題</p>'}<button type="button" class="px-btn small midterm-back">回構造清單</button></div>`;
+      body.querySelector('.midterm-mode').onchange = e => { mode = e.target.value; D.cfg.termMode[p.id][l.id] = mode; save(); draw(); };
+      body.querySelector('.midterm-back').onclick = back;
+      body.querySelectorAll('[data-count]').forEach(b => b.onclick = () => { count = b.dataset.count === 'all' ? 'all' : Number(b.dataset.count); D.cfg.termCount[p.id][l.id] = count; save(); draw(); });
+      const button = body.querySelector('.midterm-start');
+      if (button) button.onclick = () => {
+        const shuffle = a => a.sort(() => Math.random() - .5), groups = shuffle([...pool.structures.values()].filter(a => a.size).map(a => shuffle([...a]))), picked = [], seen = new Set(), target = count === 'all' ? n : Math.min(count, n);
+        while (picked.length < target && groups.some(a => a.length)) for (const a of groups) { while (a.length && seen.has(a[0])) a.shift(); if (a.length && picked.length < target) { const id = a.shift(); seen.add(id); picked.push(id); } }
+        start(picked);
+      };
+    }; draw();
+  }
+  function renderTermlist(body, head, s, pickContext) {
     const groups = s.groups || [];
     body.innerHTML = head + `<h3>${U.esc(s.title || '構造清單')}</h3>${md(s.body || '')}<div class="term-tools"><label>搜尋 <input class="px-in term-search" type="search" placeholder="中文或 English"></label><button type="button" class="px-btn small term-open">全部展開</button><button type="button" class="px-btn small term-close">全部收起</button></div>` + groups.map((g, gi) => `<section class="term-group"><h4>${U.esc(g.name)}</h4>${g.note ? `<p>${U.esc(g.note)}</p>` : ''}${g.items.map((x, ii) => `<div class="term-item" data-gi="${gi}" data-ii="${ii}"><div class="term-row"><span>${x.star ? '⭐ ' : ''}${U.esc(x.zh)}${termStar(x)}${x.tag ? `<small>${U.esc(x.tag)}</small>` : ''}${x.count != null ? `<small>提及 ${x.count} 次</small>` : ''}</span><span>${U.esc(x.en)}</span><button type="button" class="px-btn small term-speak" aria-label="播放 ${U.esc(x.en)} 發音">🔊</button><button type="button" class="px-btn small term-toggle" aria-expanded="false">📍 位置</button></div><div class="term-views" hidden></div></div>`).join('')}</section>`).join('');
+    if (pickContext) midtermList(body, groups, pickContext.p, pickContext.l, pickContext.changed);
     const setOpen = (row, open) => {
       const panel = row.querySelector('.term-views'), button = row.querySelector('.term-toggle');
       if (open && !panel.dataset.loaded) {
