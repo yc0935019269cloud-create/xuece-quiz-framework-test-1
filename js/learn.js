@@ -1311,7 +1311,10 @@ const LEARN_UI = (() => {
     D.cfg.termPick ||= {}; D.cfg.termPick[p.id] ||= {}; D.cfg.termPick[p.id][l.id] ||= [];
     D.cfg.termMode ||= {}; D.cfg.termMode[p.id] ||= {};
     D.cfg.termCount ||= {}; D.cfg.termCount[p.id] ||= {};
-    return { picks: D.cfg.termPick[p.id][l.id], mode: D.cfg.termMode[p.id][l.id] || 'all' };
+    D.cfg.termGroups ||= {}; D.cfg.termGroups[p.id] ||= {};
+    const groups = l.steps.find(s => s.type === 'termlist').groups;
+    if (!Array.isArray(D.cfg.termGroups[p.id][l.id])) D.cfg.termGroups[p.id][l.id] = groups.map(g => g.name);
+    return { picks: D.cfg.termPick[p.id][l.id], groups: D.cfg.termGroups[p.id][l.id], mode: D.cfg.termMode[p.id][l.id] || 'all' };
   }
   function midtermSelect(mode) {
     return `<select class="px-in midterm-mode" aria-label="實戰範圍">${midtermModes.map(([v, t]) => `<option value="${v}"${v === mode ? ' selected' : ''}>${t}</option>`).join('')}</select>`;
@@ -1332,7 +1335,7 @@ const LEARN_UI = (() => {
     refresh();
   }
   function midtermPool(p, l, mode) {
-    const picks = new Set(midtermConfig(p, l).picks), rows = l.steps.find(s => s.type === 'termlist').groups.flatMap(g => g.items);
+    const cfg = midtermConfig(p, l), picks = new Set(cfg.picks), chosenGroups = new Set(cfg.groups), rows = l.steps.find(s => s.type === 'termlist').groups.filter(g => chosenGroups.has(g.name)).flatMap(g => g.items);
     const chinese = name => midtermNorm(String(name || '').split(/[A-Za-z]/)[0]);
     const stars = new Set(Object.values(D.starred || {}).filter(r => r.kind === 'term').map(r => chinese(r.name)).filter(Boolean));
     const selected = rows.filter(x => mode === 'all' || (mode === 'starred' ? [x.zh, ...(x.views || []).map(v => v.name)].some(name => stars.has(chinese(name))) : (mode === 'checked') === picks.has(midtermNorm(x.zh))));
@@ -1341,12 +1344,18 @@ const LEARN_UI = (() => {
     return { buckets, structures, selected, missing: selected.filter(x => !buckets.get(midtermNorm(x.zh)).length).length };
   }
   function midtermSetup(body, head, p, l, start, back) {
-    const cfg = midtermConfig(p, l); let mode = cfg.mode, count = D.cfg.termCount[p.id][l.id] || 20;
+    const cfg = midtermConfig(p, l), groupNames = l.steps.find(s => s.type === 'termlist').groups.map(g => g.name); let mode = cfg.mode, count = D.cfg.termCount[p.id][l.id] || 20;
     const draw = () => {
       const pool = midtermPool(p, l, mode), ids = new Set([...pool.buckets.values()].flat()), n = ids.size;
       if (count !== 'all' && count > n) count = 'all';
-      body.innerHTML = head + `<div class="midterm-setup"><h3>⚔ 實戰設定</h3><label>範圍 ${midtermSelect(mode)}</label><p>${mode === 'starred' ? `星號 ${pool.selected.length} 個構造・${n} 題` : `符合 ${pool.selected.length} 個構造，共 ${n} 題`}；其中 ${pool.missing} 個構造沒有跑台題。</p><p>已勾選中沒有跑台題：${midtermPool(p, l, 'checked').missing} 個構造。</p>${n ? `<div class="midterm-count">題數 ${[10, 20, 30, 'all'].map(v => `<button type="button" class="px-btn small ${String(count) === String(v) ? 'gold' : ''}" data-count="${v}" ${v !== 'all' && v > n ? 'disabled' : ''}>${v === 'all' ? '全部 ' + n : v}</button>`).join('')}</div><button type="button" class="px-btn gold midterm-start">開始實戰 ▶</button>` : mode === 'starred' ? `<p>${pool.selected.length ? '這個範圍沒有可出的跑台題' : '這一課還沒有星號構造（在清單或圖上按 ☆ 加入）'}</p><button type="button" class="px-btn gold midterm-start" disabled>開始實戰 ▶</button>` : '<p>這個範圍沒有可出的跑台題</p>'}<button type="button" class="px-btn small midterm-back">回構造清單</button></div>`;
+      body.innerHTML = head + `<div class="midterm-setup"><h3>⚔ 實戰設定</h3><label>範圍 ${midtermSelect(mode)}</label><p>${mode === 'starred' ? `星號 ${pool.selected.length} 個構造・${n} 題` : `符合 ${pool.selected.length} 個構造，共 ${n} 題`}；其中 ${pool.missing} 個構造沒有跑台題。</p><p>已勾選中沒有跑台題：${midtermPool(p, l, 'checked').missing} 個構造。</p>${n ? `<div class="midterm-count">題數 ${[10, 20, 30, 'all'].map(v => `<button type="button" class="px-btn small ${String(count) === String(v) ? 'gold' : ''}" data-count="${v}" ${v !== 'all' && v > n ? 'disabled' : ''}>${v === 'all' ? '全部 ' + n : v}</button>`).join('')}</div><button type="button" class="px-btn gold midterm-start">開始實戰 ▶</button>` : `<p>這個組合沒有可出的跑台題</p><button type="button" class="px-btn gold midterm-start" disabled>開始實戰 ▶</button>`}<button type="button" class="px-btn small midterm-back">回構造清單</button></div>`;
+      const setup = body.querySelector('.midterm-setup');
+      setup.querySelector('label').insertAdjacentHTML('afterend', `<div class="midterm-groups"><b>大分類</b> <button type="button" class="px-btn small" data-groups="all">全選</button> <button type="button" class="px-btn small" data-groups="none">全不選</button><div style="display:flex;flex-wrap:wrap;gap:6px;margin:8px 0">${groupNames.map((name, i) => `<button type="button" class="px-btn small ${cfg.groups.includes(name) ? 'gold' : ''}" data-group="${i}" aria-pressed="${cfg.groups.includes(name)}">${U.esc(name)}</button>`).join('')}</div></div>`);
+      setup.querySelector('p').textContent = `${mode === 'starred' ? '星號' : '符合'} ${pool.selected.length} 個構造・${n} 題；其中 ${pool.missing} 個構造沒有跑台題。`;
+      if (!n) { const message = setup.querySelectorAll('p')[2]; message.textContent = '這個組合沒有可出的跑台題'; if (mode === 'starred' && !pool.selected.length) message.insertAdjacentHTML('afterend', '<p>這一課還沒有星號構造（在清單或圖上按 ☆ 加入）</p>'); setup.querySelector('.midterm-start').textContent = '開始實戰 ▶'; }
       body.querySelector('.midterm-mode').onchange = e => { mode = e.target.value; D.cfg.termMode[p.id][l.id] = mode; save(); draw(); };
+      body.querySelectorAll('[data-group]').forEach(b => b.onclick = () => { const name = groupNames[+b.dataset.group], set = new Set(cfg.groups); set.has(name) ? set.delete(name) : set.add(name); cfg.groups.splice(0, cfg.groups.length, ...set); save(); draw(); });
+      body.querySelectorAll('[data-groups]').forEach(b => b.onclick = () => { cfg.groups.splice(0, cfg.groups.length, ...(b.dataset.groups === 'all' ? groupNames : [])); save(); draw(); });
       body.querySelector('.midterm-back').onclick = back;
       body.querySelectorAll('[data-count]').forEach(b => b.onclick = () => { count = b.dataset.count === 'all' ? 'all' : Number(b.dataset.count); D.cfg.termCount[p.id][l.id] = count; save(); draw(); });
       const button = body.querySelector('.midterm-start');
