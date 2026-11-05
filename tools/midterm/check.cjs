@@ -66,11 +66,29 @@ ok('mock numbering and missing image', pack.lessons[3].steps[1].groups[0].items.
         await page.locator('.term-open').click();
         const expectedViews = expected.reduce((n, x) => n + x.views.length, 0);
         ok(prefix + ' expand all', await page.locator('.term-toggle[aria-expanded="true"]').count() === expected.length);
-        ok(prefix + ' all images and markers', await page.locator('.term-views img').count() === expectedViews && await page.locator('.term-pin').count() === expectedViews);
+        ok(prefix + ' all images and markers', await page.locator('.term-views img').count() === expectedViews && await page.locator('.term-pin, .term-arrow').count() === expectedViews);
         const imageResults = await page.locator('.term-views img').evaluateAll(ims => Promise.all(ims.map(im => im.decode().then(() => im.naturalWidth > 0).catch(() => false))));
         ok(prefix + ' images decode', imageResults.every(Boolean), imageResults.filter(x => !x).length);
-        const positions = await page.locator('.term-pin').evaluateAll(pins => pins.every(p => { const r = p.getBoundingClientRect(), parent = p.parentElement.getBoundingClientRect(); const x = parseFloat(p.style.left), y = parseFloat(p.style.top); return r.width > 0 && r.height > 0 && getComputedStyle(p).borderTopColor === 'rgb(255, 0, 0)' && Math.abs((r.left + r.width / 2 - parent.left) / parent.width * 100 - x) < 2 && Math.abs((r.top + r.height / 2 - parent.top) / parent.height * 100 - y) < 2; }));
-        ok(prefix + ' visible red circles', positions);
+        const positions = await page.locator('.term-pin').evaluateAll(pins => pins.every(p => { const r = p.getBoundingClientRect(), parent = p.parentElement.getBoundingClientRect(); const x = parseFloat(p.style.left), y = parseFloat(p.style.top), color = p.classList.contains('term-pin-dot') ? getComputedStyle(p).backgroundColor : getComputedStyle(p).borderTopColor; return r.width > 0 && r.height > 0 && color === 'rgb(255, 0, 0)' && Math.abs((r.left + r.width / 2 - parent.left) / parent.width * 100 - x) < 2 && Math.abs((r.top + r.height / 2 - parent.top) / parent.height * 100 - y) < 2; }));
+        ok(prefix + ' visible red markers', positions);
+        if (width === 390 && li === 0) {
+          for (const [mark, selector] of [['dot','.term-pin-dot'], ['arrow','.term-arrow']]) {
+            const el = page.locator('.term-views ' + selector).first();
+            ok(prefix + ' ' + mark + ' rendered', await el.count() === 1 && await el.isVisible());
+            ok(prefix + ' ' + mark + ' fits viewport', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+          }
+          for (const mark of ['dot','arrow']) {
+            const result = await page.evaluate(mark => {
+              const rows = LEARN_UI.packs.find(p => p.id === 'eyelab-midterm').lessons[0].steps[1].groups.flatMap(g => g.items);
+              const item = rows.find(r => PICFIND.siteImages({zh:r.zh,en:r.en}).some(v => v.mark === mark));
+              if (!item) return false;
+              PICFIND.open({zh:item.zh,en:item.en});
+              return !!document.querySelector('.picfind ' + (mark === 'dot' ? '.term-pin-dot' : '.term-arrow')) && document.documentElement.scrollWidth <= innerWidth + 1;
+            }, mark);
+            ok(prefix + ' picfind ' + mark + ' fits viewport', result);
+            await page.keyboard.press('Escape');
+          }
+        }
         ok(prefix + ' no horizontal overflow', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
         await page.locator('.term-close').click();
         ok(prefix + ' close all', await page.locator('.term-toggle[aria-expanded="true"]').count() === 0);

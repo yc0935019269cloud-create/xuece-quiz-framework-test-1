@@ -1,0 +1,1143 @@
+{
+  "checks": 267,
+  "failures": [],
+  "auditSources": 19,
+  "auditPoints": 86,
+  "newImages": 6,
+  "newImagePoints": 56,
+  "manualRemovedQids": [
+    "eyelab-blood-q-l1-2-1",
+    "eyelab-blood-q-l1-2-5",
+    "eyelab-blood-q-l2-1-6",
+    "eyelab-blood-q-l2-2-10",
+    "eyelab-blood-q-l2-2-2",
+    "eyelab-blood-q-l2-2-6",
+    "eyelab-blood-q-l2-2-8",
+    "eyelab-blood-q-l2-2-9",
+    "eyelab-blood-q-l3-1-5",
+    "eyelab-blood-q-l3-3-2",
+    "eyelab-blood-q-l3-3-3",
+    "eyelab-blood-q-l3-3-4",
+    "eyelab-blood-q-l3-3-5",
+    "eyelab-blood-q-l5-2-1",
+    "eyelab-blood-q-l5-2-3",
+    "eyelab-m-vessel-q-l1-2-1",
+    "eyelab-m-vessel-q-l1-2-5",
+    "eyelab-m-vessel-q-l2-1-6",
+    "eyelab-m-vessel-q-l2-2-10",
+    "eyelab-m-vessel-q-l2-2-2",
+    "eyelab-m-vessel-q-l2-2-6",
+    "eyelab-m-vessel-q-l2-2-8",
+    "eyelab-m-vessel-q-l2-2-9",
+    "eyelab-m-vessel-q-l3-1-5",
+    "eyelab-m-vessel-q-l3-3-2",
+    "eyelab-m-vessel-q-l3-3-3",
+    "eyelab-m-vessel-q-l3-3-4",
+    "eyelab-m-vessel-q-l3-3-5",
+    "eyelab-m-vessel-q-l5-2-1",
+    "eyelab-m-vessel-q-l5-2-3",
+    "eyelab-m-visual-q-l1-5-1"
+  ],
+  "allBlockedArteryQuestionIds": 31,
+  "fallbacks": [
+    {
+      "lesson": "manual",
+      "zh": "滑車下動脈",
+      "img": "img/eye-anat-manual/gray514.jpg"
+    },
+    {
+      "lesson": "manual",
+      "zh": "前脈絡叢動脈",
+      "img": "img/eye-anat-manual/beal_base.jpg"
+    }
+  ],
+  "details": [
+    {
+      "label": "row names/order unchanged",
+      "pass": true
+    },
+    {
+      "label": "manual/頸內動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/眼動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/視網膜中央動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/視網膜中央動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/顳上動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/顳下動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/鼻上動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/鼻下動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/睫狀動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/睫狀後長動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/睫狀後短動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/睫狀前動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/虹膜大動脈環 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/淚動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/眶上動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/滑車上動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/滑車下動脈 single explicit fallback",
+      "pass": true
+    },
+    {
+      "label": "manual/滑車下動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/前篩動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/後篩動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/內瞼動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/外瞼動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/上瞼動脈弓 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/下瞼動脈弓 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/肌動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/鼻背動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/前脈絡叢動脈 single explicit fallback",
+      "pass": true
+    },
+    {
+      "label": "manual/前脈絡叢動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/大腦前動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/前交通動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/大腦中動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/後交通動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/大腦後動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/威利氏環 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/基底動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/椎動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/頸外動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/上頷動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/中腦膜動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/眶下動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/顏面動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/眼角動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual/淺顳動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "manual practice excludes blocked artery qids",
+      "pass": true
+    },
+    {
+      "label": "lab practice excludes blocked artery qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/頸內動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/頸內動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/眼動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/眼動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/視網膜中央動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/顳上動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/顳下動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/鼻上動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/鼻下動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/睫狀動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/睫狀後長動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/睫狀後短動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/睫狀前動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/淚動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/眶上動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/滑車上動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/大腦前動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/前交通動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/大腦中動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/大腦後動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/威利氏環 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/基底動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/椎動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/頸外動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/上頷動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/眶下動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/顏面動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture/眼角動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "lecture practice excludes blocked artery qids",
+      "pass": true
+    },
+    {
+      "label": "mock-exam/眼角動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "mock-exam practice excludes blocked artery qids",
+      "pass": true
+    },
+    {
+      "label": "slices/頸內動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "slices/基底動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "slices/淺顳動脈 blocked source absent from row qids",
+      "pass": true
+    },
+    {
+      "label": "six added images",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg at most 1600px wide",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg source URL and license",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/顳上動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/顳上動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/顳下動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/顳下動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/鼻上動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/鼻上動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/鼻下動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/鼻下動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/視網膜中央動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/視網膜中央動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/視神經盤 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/黃斑部 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-left.jpg/視網膜 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg at most 1600px wide",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg source URL and license",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/顳上動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/顳上動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/顳下動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/顳下動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/鼻上動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/鼻上動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/鼻下動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/鼻下動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/視網膜中央動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/視網膜中央動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/視神經盤 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/黃斑部 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-fundus-right.jpg/視網膜 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray513-neck.jpg at most 1600px wide",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray513-neck.jpg source URL and license",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray513-neck.jpg/頸內動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray513-neck.jpg/頸外動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray513-neck.jpg/椎動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray513-neck.jpg/顏面動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray513-neck.jpg/顏面動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg at most 1600px wide",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg source URL and license",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/頸內動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/大腦前動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/大腦前動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/前交通動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/前交通動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/大腦中動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/大腦中動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/後交通動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/後交通動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/大腦後動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/大腦後動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/威利氏環 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/基底動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray519-circle.jpg/椎動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg at most 1600px wide",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg source URL and license",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/頸內動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/眼動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/眼動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/淚動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/淚動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/眶上動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/眶上動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/滑車上動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/滑車上動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/鼻背動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/鼻背動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/內瞼動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/內瞼動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/前篩動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/前篩動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/後篩動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/後篩動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/肌動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/肌動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/視網膜中央動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/視網膜中央動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/睫狀動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/睫狀動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/視神經 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray514-orbit.jpg/淚腺 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg at most 1600px wide",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg source URL and license",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/視網膜中央動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/視網膜中央動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/睫狀後長動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/睫狀後長動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/睫狀後短動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/睫狀後短動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/睫狀前動脈 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/睫狀前動脈 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/虹膜大動脈環 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/虹膜大動脈環 valid tail",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/虹膜 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/水晶體 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/角膜 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/睫狀體 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/視網膜 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/脈絡膜 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/鞏膜 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/artery2-gray877-section.jpg/視神經 valid marker",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/servier_brain_art_inf.jpg/頸內動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/servier_brain_art_inf.jpg/大腦前動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/servier_brain_art_inf.jpg/前交通動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/servier_brain_art_inf.jpg/大腦中動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/servier_brain_art_inf.jpg/後交通動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/servier_brain_art_inf.jpg/大腦後動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/servier_brain_art_inf.jpg/基底動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/servier_brain_art_inf.jpg/椎動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/beal_base.jpg/頸內動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/beal_base.jpg/前脈絡叢動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/beal_base.jpg/威利氏環 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/beal_base.jpg/基底動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/beal_base.jpg/椎動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/oc_blood_m.jpg/頸內動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/oc_blood_m.jpg/眼動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/oc_blood_m.jpg/視網膜中央動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/oc_blood_m.jpg/睫狀動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/oc_blood_m.jpg/淚動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/oc_blood_m.jpg/眶上動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/oc_blood_m.jpg/滑車上動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/oc_blood_m.jpg/外瞼動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/oc_blood_m.jpg/鼻背動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/cavsinus_m.jpg/頸內動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray777.jpg/頸內動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray514.jpg/頸內動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray514.jpg/眼動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray514.jpg/淚動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray514.jpg/眶上動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray514.jpg/滑車上動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray514.jpg/滑車下動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray514.jpg/前篩動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray514.jpg/後篩動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray514.jpg/內瞼動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray514.jpg/肌動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray514.jpg/鼻背動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/sobo679.jpg/頸內動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/sobo679.jpg/眼動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/sobo679.jpg/中腦膜動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray516_brain_base_arteries.jpg/頸內動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray516_brain_base_arteries.jpg/大腦前動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray516_brain_base_arteries.jpg/前交通動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray516_brain_base_arteries.jpg/大腦中動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray516_brain_base_arteries.jpg/後交通動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray516_brain_base_arteries.jpg/大腦後動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray516_brain_base_arteries.jpg/威利氏環 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray516_brain_base_arteries.jpg/基底動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray516_brain_base_arteries.jpg/椎動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/commons_superior_cervical_ganglion.jpg/頸內動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab-private/slices/j007a-blank.jpg/頸內動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab-private/slices/j007a-blank.jpg/基底動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab-private/slices/j007a-blank.jpg/淺顳動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/onh_diag_m.jpg/視網膜中央動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/onh_diag_m.jpg/睫狀後短動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/fundus_od.jpg/視網膜中央動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/fundus_od.jpg/顳上動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/fundus_od.jpg/顳下動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/fundus_od.jpg/鼻上動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/fundus_od.jpg/鼻下動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray877_horizontal_vessels.jpg/視網膜中央動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray877_horizontal_vessels.jpg/睫狀前動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray877_horizontal_vessels.jpg/虹膜大動脈環 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray873.jpg/睫狀後長動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray873.jpg/睫狀後短動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray873.jpg/睫狀前動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray873.jpg/虹膜大動脈環 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray515.jpg/淚動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray515.jpg/眶上動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray515.jpg/上瞼動脈弓 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray515.jpg/下瞼動脈弓 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray515.jpg/鼻背動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray515.jpg/眶下動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray515.jpg/顏面動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/gray515.jpg/眼角動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab-private/slices/sg3-blank.jpg/基底動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/eca.jpg/頸外動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/eca.jpg/上頷動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/eca.jpg/顏面動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-anat-manual/eca.jpg/淺顳動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray508_face_arteries.jpg/頸外動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray508_face_arteries.jpg/顏面動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray508_face_arteries.jpg/眼角動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray508_face_arteries.jpg/淺顳動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray510_maxillary_artery.jpg/頸外動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray510_maxillary_artery.jpg/上頷動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray510_maxillary_artery.jpg/眶下動脈 audited marker recorded",
+      "pass": true
+    },
+    {
+      "label": "img/eye-lab/extra/gray510_maxillary_artery.jpg/淺顳動脈 audited marker recorded",
+      "pass": true
+    }
+  ],
+  "strictBuild": {
+    "command": "python tools/build.py --strict",
+    "interpreter": "C:/Users/USER/AppData/Local/Python/pythoncore-3.14-64/python.exe",
+    "exitCode": 0,
+    "log": "tmp/artery2-build.log"
+  },
+  "midtermCheck": {
+    "command": "node tools/midterm/check.cjs",
+    "checks": 239,
+    "failures": [],
+    "exitCode": 0,
+    "log": "tmp/artery2-check.log"
+  },
+  "beforeAtMostOneView": 16,
+  "afterAtMostOneClearView": 8,
+  "afterAtMostOneDistinctSource": 10,
+  "blockedThisRun": 21,
+  "rendererPending": true,
+  "protectedFilesUnchanged": true
+}

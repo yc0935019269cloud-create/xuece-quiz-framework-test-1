@@ -103,9 +103,22 @@ for fig in (json.loads(EXTRA.read_text(encoding='utf-8')) if EXTRA.exists() else
     for pt in fig['points']:
         key = next((k for k, d in registry.items() if d['zh'] == pt['zh']), None)
         assert key, f"extra_views：{fig['img']} 的「{pt['zh']}」對不到任何構造"
-        view = {'img': fig['img'], 'x': pt['x'], 'y': pt['y'], 'title': fig['title'], 'from': '補充圖・' + fig['source']}
+        # Targeted review-only correction; source atlas points stay unchanged.
+        if pt.get('replace'):
+            registry[key]['views'] = [v for v in registry[key]['views'] if v['img'] != fig['img']]
+        view = {'img': fig['img'], 'x': pt['x'], 'y': pt['y'], 'title': fig['title'] + ('（紅圈為大致位置）' if pt.get('approx') else ''), 'from': '補充圖・' + fig['source']}
+        # Star target for rows whose views are all extra figures (learn.js extraStarItem).
+        view.update(p='eyelab-midterm', l='extra', name=registry[key]['zh'] + ' ' + registry[key]['en'])
+        if pt.get('mark'):
+            assert pt['mark'] in ('ring', 'dot', 'arrow')
+            view['mark'] = pt['mark']
+            if pt['mark'] == 'arrow':
+                view['fx'], view['fy'] = pt['from']['x'], pt['from']['y']
         if not any((v['img'], v['x'], v['y']) == (view['img'], view['x'], view['y']) for v in registry[key]['views']):
-            registry[key]['views'].append(view)
+            if pt.get('primary'):
+                registry[key]['views'].insert(0, view)
+            else:
+                registry[key]['views'].append(view)
 
 # ⭐＝實驗課老師在逐字稿裡明說會考／考試考（2026-10-30 使用者：《會考的.html》是自己勾的，不採用）。
 # 來源：E:\學習\大二上\眼解剖實驗\逐字稿\校訂逐字稿\20261016_眼解剖實驗_Turbo_01\<檔>\校訂逐字稿.txt 行號
@@ -479,12 +492,30 @@ block_path = Path(__file__).with_name('view_blocklist.json')
 blocked = json.loads(block_path.read_text(encoding='utf-8-sig')) if block_path.exists() else []
 blocked_pairs = {(b['img'], b['zh']) for b in blocked}
 question_images = {}
+# Bank JPGs have the red ring baked into a separate qNNN image. Match the
+# source diagram by the atlas's stable <pack>-q-<lesson>-<figure> set ID and
+# validate the named point; comparing the question JPG path alone misses it.
+question_figures = {}
+for pack in packs.values():
+    for lesson in pack['lessons']:
+        diagrams = [s for s in lesson['steps'] if s.get('type') == 'diagram']
+        for ordinal, diagram in enumerate(diagrams, 1):
+            question_figures[f"{pack['id']}-q-{lesson['id']}-{ordinal}"] = diagram
 for f in sorted((ROOT / 'content/bank/eye_anat/lab').rglob('*.json')):
     data = json.loads(f.read_text(encoding='utf-8-sig'))
     for q in data['questions']:
         imgs = q.get('img', [])
-        question_images[data['set']['id'] + '-' + str(q['n'])] = [imgs] if isinstance(imgs, str) else imgs
+        imgs = [imgs] if isinstance(imgs, str) else list(imgs)
+        diagram = question_figures.get(data['set']['id'])
+        answer = q.get('answer', '')
+        if diagram and isinstance(answer, str) and '/' in answer:
+            qzh, qen = map(str.strip, answer.split('/', 1))
+            identity = identify(qzh, qen)
+            if any(identify(*split(pt['name'])) == identity for pt in diagram.get('points', [])):
+                imgs.append(diagram['img'])
+        question_images[data['set']['id'] + '-' + str(q['n'])] = imgs
 for lesson in lessons:
+    removed_qids = set()
     for step in lesson['steps']:
         if step['type'] != 'termlist': continue
         for group in step['groups']:
@@ -492,9 +523,25 @@ for lesson in lessons:
                 zh = re.sub(r'^\d+\.\s*', '', row['zh'])
                 original = row.get('views', [])
                 kept = [v for v in original if (v['img'], zh) not in blocked_pairs]
-                if kept: row['views'] = kept
+                if original and not kept:
+                    replacement = registry.get(identify(zh, row.get('en', '')), {}).get('views', [])
+                    kept = [dict(v) for v in replacement if (v['img'], zh) not in blocked_pairs]
+                if kept:
+                    row['views'] = kept
+                elif original and any(b.get('fallback') and b['zh'] == zh and b['img'] in {v['img'] for v in original} for b in blocked):
+                    # A blocked final source is a single labelled fallback, never
+                    # multiple apparently valid views or an eligible question.
+                    preferred = next((b['img'] for b in blocked if b['zh'] == zh and b.get('fallback')), None)
+                    fallback = dict(next((v for v in original if v['img'] == preferred), original[0]))
+                    fallback['title'] += '（位置僅供參考）'
+                    row['views'] = [fallback]
                 if 'qids' in row:
-                    row['qids'] = [qid for qid in row['qids'] if not any((img, zh) in blocked_pairs for img in question_images.get(qid, []))]
+                    rejected = {qid for qid in row['qids'] if any((img, zh) in blocked_pairs for img in question_images.get(qid, []))}
+                    removed_qids.update(rejected)
+                    row['qids'] = [qid for qid in row['qids'] if qid not in rejected]
+    for step in lesson['steps']:
+        if step['type'] == 'practice' and 'qids' in step:
+            step['qids'] = [qid for qid in step['qids'] if qid not in removed_qids]
 
 # Category tag and optional hint shown on practice questions (hints.json).
 hints_path = Path(__file__).with_name('hints.json')
@@ -508,6 +555,29 @@ for lesson in lessons:
                 if not h: continue
                 if h.get('cat'): row['cat'] = h['cat']
                 if h.get('hint'): row['hint'] = h['hint']
+
+override_path = Path(__file__).with_name('mark_overrides.json')
+overrides = json.loads(override_path.read_text(encoding='utf-8')) if override_path.exists() else []
+lookup = {(o['img'], o['zh']): o for o in overrides}
+assert len(lookup) == len(overrides), 'duplicate mark override'
+used = set()
+for lesson in lessons:
+    for step in lesson['steps']:
+        if step['type'] != 'termlist': continue
+        for group in step['groups']:
+            for row in group['items']:
+                zh = re.sub(r'^\d+\.\s*', '', row['zh'])
+                for view in row['views']:
+                    key = (view['img'], zh)
+                    if key not in lookup: continue
+                    o = lookup[key]; used.add(key)
+                    assert o['mark'] in ('ring', 'dot', 'arrow')
+                    view['mark'] = o['mark']
+                    if o['mark'] == 'arrow':
+                        view['fx'], view['fy'] = o['from']['x'], o['from']['y']
+                        assert all(isinstance(n, (int, float)) and 0 <= n <= 100 for n in (view['fx'], view['fy']))
+                    if '大致位置' in view['title']: view['title'] = view['title'].replace('紅圈為大致位置', '標記為大致位置')
+assert used == set(lookup), f'unmatched mark overrides: {set(lookup) - used}'
 
 pack = {'schema': 'xd-learn/1', 'id': 'eyelab-midterm', 'subject': 'eye_anat', 'path': ['眼解剖實驗', '期中總複習', '期中總複習'], 'order': 0, 'style': 'atlas', 'title': '期中總複習（跑台）', 'unit': '期中總複習', 'desc': '實驗手冊約 70 分、正課提及約 30 分；跑台用人體切片與模型，靜脈與看不到的構造不考。', 'level': 2, 'minutes': 60, 'lessons': lessons}
 OUT.write_text(json.dumps(pack, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

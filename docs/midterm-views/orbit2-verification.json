@@ -1,0 +1,106 @@
+{
+  "errors": [],
+  "targets": [
+    {
+      "zh": "滑車窩",
+      "views": 1,
+      "best": "img/eye-lab/extra/orbit2-gerrish210-trochlear.png",
+      "status": "450px 疊圖已人工核對",
+      "qids": 0
+    },
+    {
+      "zh": "淚腺窩",
+      "views": 2,
+      "best": "img/eye-lab/extra/orbit2-gray135-lacrimal-fossa.png",
+      "status": "450px 疊圖已人工核對",
+      "qids": 0
+    },
+    {
+      "zh": "淚窩",
+      "views": 2,
+      "best": "img/eye-lab/extra/orbit2-gray192-medial.png",
+      "status": "450px 疊圖已人工核對",
+      "qids": 0
+    },
+    {
+      "zh": "外側結節",
+      "views": 1,
+      "best": "img/eye-lab/extra/orbit2-lateral-specimen.png",
+      "status": "概略定位，隆起未確證",
+      "qids": 0
+    },
+    {
+      "zh": "前篩孔",
+      "views": 5,
+      "best": "img/eye-lab/extra/orbit2-gray193-superior.png",
+      "status": "450px 疊圖已人工核對",
+      "qids": 0
+    },
+    {
+      "zh": "後篩孔",
+      "views": 5,
+      "best": "img/eye-lab/extra/orbit2-gray193-superior.png",
+      "status": "450px 疊圖已人工核對",
+      "qids": 0
+    },
+    {
+      "zh": "視神經管",
+      "views": 6,
+      "best": "img/eye-lab/extra/orbit2-gray192-medial.png",
+      "status": "450px 疊圖已人工核對",
+      "qids": 3
+    },
+    {
+      "zh": "眶上孔",
+      "views": 2,
+      "best": "img/eye-lab/extra/orbit2-gray190-anterior.png",
+      "status": "450px 疊圖已人工核對",
+      "qids": 2
+    },
+    {
+      "zh": "眶下孔",
+      "views": 4,
+      "best": "img/eye-lab/extra/orbit2-gray190-anterior.png",
+      "status": "450px 疊圖已人工核對",
+      "qids": 3
+    },
+    {
+      "zh": "蝶鞍",
+      "views": 7,
+      "best": "img/eye-lab/extra/orbit2-gray192-medial.png",
+      "status": "450px 疊圖已人工核對",
+      "qids": 3
+    }
+  ],
+  "excludedQuestionCount": 27,
+  "excludedQuestionIds": [
+    "eyelab-m-lid-q-l2-1-4",
+    "eyelab-m-orbit-q-l1-1-2",
+    "eyelab-m-orbit-q-l1-1-4",
+    "eyelab-m-orbit-q-l2-1-1",
+    "eyelab-m-orbit-q-l2-1-10",
+    "eyelab-m-orbit-q-l2-1-11",
+    "eyelab-m-orbit-q-l2-1-12",
+    "eyelab-m-orbit-q-l2-1-2",
+    "eyelab-m-orbit-q-l2-1-4",
+    "eyelab-m-orbit-q-l2-1-5",
+    "eyelab-m-orbit-q-l2-1-6",
+    "eyelab-m-orbit-q-l2-1-7",
+    "eyelab-m-orbit-q-l2-1-8",
+    "eyelab-m-orbit-q-l2-1-9",
+    "eyelab-orbit-q-l1-1-3",
+    "eyelab-orbit-q-l1-1-4",
+    "eyelab-orbit-q-l1-3-7",
+    "eyelab-orbit-q-l2-2-2",
+    "eyelab-orbit-q-l2-2-3",
+    "eyelab-orbit-q-l2-2-4",
+    "eyelab-orbit-q-l2-2-5",
+    "eyelab-orbit-q-l2-2-6",
+    "eyelab-orbit-q-l2-2-7",
+    "eyelab-orbit-q-l2-2-8",
+    "eyelab-orbit-q-l4-2-3",
+    "eyelab-orbit-q-l4-2-4",
+    "eyelab-vp-q-l3-1-3"
+  ],
+  "blocklistedOrbitPairs": 38
+}

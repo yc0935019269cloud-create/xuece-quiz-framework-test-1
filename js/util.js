@@ -293,7 +293,16 @@ const U = (() => {
     });
     g.addEventListener('dblclick', e => { e.preventDefault(); put(null); panel.style.removeProperty('--mh'); opt.reset(); });
   }
-  return { img, sameAns, $, $$, esc, h, rnd, chance, pick, shuffle, pickN, clamp, sleep, pct, md, toast, modal, clearModals, confirm, grip };
+  function termMark(v) {
+    const coord = n => Number.isFinite(+n) ? clamp(+n, 0, 100) : 50;
+    const x = coord(v.x), y = coord(v.y);
+    if (v.mark === 'arrow' && v.fx != null && v.fy != null) {
+      const fx = coord(v.fx), fy = coord(v.fy);
+      return `<svg class="term-arrow" viewBox="0 0 100 100" preserveAspectRatio="none" aria-label="位置"><line x1="${fx}" y1="${fy}" x2="${x}" y2="${y}" class="term-arrow-under"/><line x1="${fx}" y1="${fy}" x2="${x}" y2="${y}" class="term-arrow-line"/><circle cx="${x}" cy="${y}" r="1" class="term-arrow-tip"/></svg>`;
+    }
+    return `<span class="dg-pin term-pin${v.mark === 'dot' ? ' term-pin-dot' : ''}" style="left:${x}%;top:${y}%" aria-label="位置"></span>`;
+  }
+  return { img, sameAns, $, $$, esc, h, rnd, chance, pick, shuffle, pickN, clamp, sleep, pct, md, toast, modal, clearModals, confirm, grip, termMark };
 })();
 
 /* 懸停提示：有 data-tip 或 title 的元素，滑鼠移上去立即顯示像素風提示框（手機點一下顯示） */

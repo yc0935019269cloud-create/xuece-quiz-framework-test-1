@@ -21,10 +21,11 @@
   function siteImages(term) {
     const keys = new Set(names(term).map(norm)), result = [], seen = new Set();
     const matches = (...values) => values.some(v => typeof v === 'string' && keys.has(norm(v)));
-    const add = (img, x, y, title, source) => {
+    const add = (img, x, y, title, source, view = {}) => {
       if (!img || x == null || y == null || !Number.isFinite(+x) || !Number.isFinite(+y) || +x < 0 || +x > 100 || +y < 0 || +y > 100) return;
-      const k = `${img}|${+x}|${+y}`; if (seen.has(k)) return; seen.add(k);
-      result.push({ img, x: +x, y: +y, title, source });
+      const k = `${img}|${+x}|${+y}`;
+      if (seen.has(k)) { if (view.mark) Object.assign(result.find(v => `${v.img}|${v.x}|${v.y}` === k), { mark: view.mark, fx: view.fx, fy: view.fy }); return; } seen.add(k);
+      result.push({ img, x: +x, y: +y, title, source, mark: view.mark, fx: view.fx, fy: view.fy });
     };
     for (const p of (typeof LEARN_UI === 'undefined' ? [] : LEARN_UI.packs)) for (const l of (p.lessons || [])) for (const s of (l.steps || [])) {
       const title = [p.title || p.name, l.title || l.name].filter(Boolean).join(' / ');
@@ -32,7 +33,7 @@
         const combined = String(pt.name || '').match(/^\s*([\u3400-\u9fff]+)\s+(.+?)\s*$/);
         if (matches(pt.name, pt.zh, pt.en, ...(combined ? [combined[1], combined[2]] : []))) add(s.img, pt.x, pt.y, title, s.source);
       }
-      if (s.type === 'termlist') for (const g of (s.groups || [])) for (const item of (g.items || [])) if (matches(item.zh, item.en, item.name)) for (const v of (item.views || [])) add(v.img, v.x, v.y, title, v.from || v.source);
+      if (s.type === 'termlist') for (const g of (s.groups || [])) for (const item of (g.items || [])) if (matches(item.zh, item.en, item.name)) for (const v of (item.views || [])) add(v.img, v.x, v.y, title, v.from || v.source, v);
     }
     return result.slice(0, 12);
   }
@@ -45,7 +46,7 @@
     for (const item of images) {
       const fig = document.createElement('figure'), wrap = document.createElement('div'); wrap.className = 'dg-wrap';
       const img = document.createElement('img'); img.className = 'lp-img'; img.src = U.img(item.img); img.alt = '點圖放大';
-      const pin = document.createElement('span'); pin.className = 'dg-pin term-pin'; pin.style.left = item.x + '%'; pin.style.top = item.y + '%'; pin.setAttribute('aria-label', '位置'); wrap.append(img, pin);
+      wrap.append(img, U.h(U.termMark(item)));
       const caption = document.createElement('figcaption'); caption.textContent = item.title + (item.source ? '｜圖片來源：' + item.source : ''); fig.append(wrap, caption); grid.appendChild(fig);
     }
     if (!images.length) { const p = document.createElement('p'); p.textContent = '網站裡還沒有這個構造的圖'; grid.appendChild(p); }

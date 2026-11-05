@@ -125,8 +125,16 @@ const LEARN_UI = (() => {
     walk(s); return out.join(' ').slice(0, 6000);
   }
   const starredTermCount = () => Object.values(D.starred || {}).filter(r => r.kind === 'term').length;
+  // 期中總複習的補充圖沒有對應的圖解步驟，收藏卡直接用構造清單裡的那張圖
+  function extraStarItem(r, p) {
+    for (const l of p.lessons) for (const st of l.steps) if (st.type === 'termlist') for (const g of st.groups) for (const x of g.items) for (const v of x.views || []) {
+      if (v.l === 'extra' && v.img === r.img && v.name === r.name) return { r, p, l, s: { type: 'diagram', title: v.title, img: v.img, source: v.from, points: [{ name: v.name, x: v.x, y: v.y }] }, i: 0, title: v.name, text: '' };
+    }
+    return null;
+  }
   function starredItems() {
     return Object.values(D.starred || {}).map(r => {
+      if (r.kind === 'term' && r.l === 'extra' && PK[r.p] && C.SUBJECTS[PK[r.p].subject]) return extraStarItem(r, PK[r.p]);
       const p = PK[r.p], l = p?.lessons.find(x => x.id === r.l);
       if (!p || !l || !C.SUBJECTS[p.subject]) return null;
       if (r.kind === 'ai') return { r, p, l, title: r.q || '', text: r.a || '' };
@@ -1384,7 +1392,7 @@ const LEARN_UI = (() => {
       const panel = row.querySelector('.term-views'), button = row.querySelector('.term-toggle');
       if (open && !panel.dataset.loaded) {
         const item = groups[+row.dataset.gi].items[+row.dataset.ii];
-        panel.innerHTML = item.views.length ? item.views.map(v => `<figure><div class="dg-wrap"><img class="lp-img" src="${U.esc(U.img(v.img))}" alt="${U.esc(v.title)}"><span class="dg-pin term-pin" style="left:${v.x}%;top:${v.y}%" aria-label="位置"></span></div><figcaption>${U.esc(v.title)}<br><small>${U.esc(v.from)}</small></figcaption></figure>`).join('') : '<p>暫無圖（之後補）</p>';
+        panel.innerHTML = item.views.length ? item.views.map(v => `<figure><div class="dg-wrap"><img class="lp-img" src="${U.esc(U.img(v.img))}" alt="${U.esc(v.title)}">${U.termMark(v)}</div><figcaption>${U.esc(v.title)}<br><small>${U.esc(v.from)}</small></figcaption></figure>`).join('') : '<p>暫無圖（之後補）</p>';
         panel.dataset.loaded = '1';
       }
       panel.hidden = !open; button.setAttribute('aria-expanded', String(open));

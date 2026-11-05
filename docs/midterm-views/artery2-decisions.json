@@ -1,0 +1,776 @@
+[
+  {
+    "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
+    "zh": "頸內動脈",
+    "x": 44.3,
+    "y": 35.6,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-01.png"
+  },
+  {
+    "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
+    "zh": "大腦前動脈",
+    "x": 46.8,
+    "y": 29,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-01.png"
+  },
+  {
+    "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
+    "zh": "前交通動脈",
+    "x": 49,
+    "y": 31.4,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-01.png"
+  },
+  {
+    "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
+    "zh": "大腦中動脈",
+    "x": 40.2,
+    "y": 37.8,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-01.png"
+  },
+  {
+    "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
+    "zh": "後交通動脈",
+    "x": 45.4,
+    "y": 41.2,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-01.png"
+  },
+  {
+    "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
+    "zh": "大腦後動脈",
+    "x": 39,
+    "y": 47,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-01.png"
+  },
+  {
+    "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
+    "zh": "基底動脈",
+    "x": 49,
+    "y": 60,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-01.png"
+  },
+  {
+    "img": "img/eye-anat-manual/servier_brain_art_inf.jpg",
+    "zh": "椎動脈",
+    "x": 46.2,
+    "y": 79,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-01.png"
+  },
+  {
+    "img": "img/eye-anat-manual/beal_base.jpg",
+    "zh": "頸內動脈",
+    "x": 59,
+    "y": 11,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-02.png"
+  },
+  {
+    "img": "img/eye-anat-manual/beal_base.jpg",
+    "zh": "前脈絡叢動脈",
+    "x": 63,
+    "y": 14,
+    "status": "block",
+    "reason": "細小起始分支在450px圖中無法與鄰近血管分開辨認",
+    "overlay": "artery2-old-02.png"
+  },
+  {
+    "img": "img/eye-anat-manual/beal_base.jpg",
+    "zh": "威利氏環",
+    "x": 43,
+    "y": 20,
+    "status": "block",
+    "reason": "舊圈落在視交叉白色組織，未指向血管環",
+    "overlay": "artery2-old-02.png"
+  },
+  {
+    "img": "img/eye-anat-manual/beal_base.jpg",
+    "zh": "基底動脈",
+    "x": 47,
+    "y": 44,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-02.png"
+  },
+  {
+    "img": "img/eye-anat-manual/beal_base.jpg",
+    "zh": "椎動脈",
+    "x": 33,
+    "y": 72,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-02.png"
+  },
+  {
+    "img": "img/eye-anat-manual/oc_blood_m.jpg",
+    "zh": "頸內動脈",
+    "x": 25,
+    "y": 37,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-03.png"
+  },
+  {
+    "img": "img/eye-anat-manual/oc_blood_m.jpg",
+    "zh": "眼動脈",
+    "x": 30,
+    "y": 71,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-03.png"
+  },
+  {
+    "img": "img/eye-anat-manual/oc_blood_m.jpg",
+    "zh": "視網膜中央動脈",
+    "x": 46,
+    "y": 64,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-03.png"
+  },
+  {
+    "img": "img/eye-anat-manual/oc_blood_m.jpg",
+    "zh": "睫狀動脈",
+    "x": 58,
+    "y": 56,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-03.png"
+  },
+  {
+    "img": "img/eye-anat-manual/oc_blood_m.jpg",
+    "zh": "淚動脈",
+    "x": 50,
+    "y": 77,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-03.png"
+  },
+  {
+    "img": "img/eye-anat-manual/oc_blood_m.jpg",
+    "zh": "眶上動脈",
+    "x": 76,
+    "y": 45.5,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-03.png"
+  },
+  {
+    "img": "img/eye-anat-manual/oc_blood_m.jpg",
+    "zh": "滑車上動脈",
+    "x": 79,
+    "y": 35.5,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-03.png"
+  },
+  {
+    "img": "img/eye-anat-manual/oc_blood_m.jpg",
+    "zh": "外瞼動脈",
+    "x": 79,
+    "y": 92,
+    "status": "block",
+    "reason": "去字示意圖中為無名線尾，缺乏可辨識的眼瞼與動脈弓關係",
+    "overlay": "artery2-old-03.png"
+  },
+  {
+    "img": "img/eye-anat-manual/oc_blood_m.jpg",
+    "zh": "鼻背動脈",
+    "x": 74,
+    "y": 31,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-03.png"
+  },
+  {
+    "img": "img/eye-anat-manual/cavsinus_m.jpg",
+    "zh": "頸內動脈",
+    "x": 37,
+    "y": 41,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-04.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray777.jpg",
+    "zh": "頸內動脈",
+    "x": 35,
+    "y": 38,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-05.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray514.jpg",
+    "zh": "頸內動脈",
+    "x": 39,
+    "y": 94,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-06.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray514.jpg",
+    "zh": "眼動脈",
+    "x": 51,
+    "y": 78,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-06.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray514.jpg",
+    "zh": "淚動脈",
+    "x": 56,
+    "y": 66,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-06.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray514.jpg",
+    "zh": "眶上動脈",
+    "x": 64,
+    "y": 12,
+    "status": "block",
+    "reason": "舊圈落在兩條末梢分支之間的空白，改用校訂近景",
+    "overlay": "artery2-old-06.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray514.jpg",
+    "zh": "滑車上動脈",
+    "x": 46,
+    "y": 12,
+    "status": "correct",
+    "reason": "依使用者要求由 Frontal 文字旁移到血管本身：(46.8,14.8)",
+    "overlay": "artery2-old-06.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray514.jpg",
+    "zh": "滑車下動脈",
+    "x": 43,
+    "y": 22,
+    "status": "block",
+    "reason": "Gray 514 未標示滑車下動脈，舊圈在不明顯細線附近",
+    "overlay": "artery2-old-06.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray514.jpg",
+    "zh": "前篩動脈",
+    "x": 32,
+    "y": 40,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-06.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray514.jpg",
+    "zh": "後篩動脈",
+    "x": 32,
+    "y": 56,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-06.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray514.jpg",
+    "zh": "內瞼動脈",
+    "x": 52,
+    "y": 14,
+    "status": "block",
+    "reason": "舊圈在標籤引線旁的空白處，沒有圈中血管",
+    "overlay": "artery2-old-06.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray514.jpg",
+    "zh": "肌動脈",
+    "x": 44,
+    "y": 71,
+    "status": "block",
+    "reason": "舊點在黃色神經旁，未準確指向 Muscular 引線所指細分支",
+    "overlay": "artery2-old-06.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray514.jpg",
+    "zh": "鼻背動脈",
+    "x": 37,
+    "y": 15,
+    "status": "block",
+    "reason": "舊圈偏離紅色鼻背分支，改用校訂近景",
+    "overlay": "artery2-old-06.png"
+  },
+  {
+    "img": "img/eye-anat-manual/sobo679.jpg",
+    "zh": "頸內動脈",
+    "x": 43,
+    "y": 42,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-07.png"
+  },
+  {
+    "img": "img/eye-anat-manual/sobo679.jpg",
+    "zh": "眼動脈",
+    "x": 38,
+    "y": 28,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-07.png"
+  },
+  {
+    "img": "img/eye-anat-manual/sobo679.jpg",
+    "zh": "中腦膜動脈",
+    "x": 77,
+    "y": 43,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-07.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray516_brain_base_arteries.jpg",
+    "zh": "頸內動脈",
+    "x": 41,
+    "y": 38.5,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-08.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray516_brain_base_arteries.jpg",
+    "zh": "大腦前動脈",
+    "x": 50.9,
+    "y": 32,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-08.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray516_brain_base_arteries.jpg",
+    "zh": "前交通動脈",
+    "x": 50.7,
+    "y": 36.4,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-08.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray516_brain_base_arteries.jpg",
+    "zh": "大腦中動脈",
+    "x": 34,
+    "y": 36.5,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-08.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray516_brain_base_arteries.jpg",
+    "zh": "後交通動脈",
+    "x": 43.5,
+    "y": 46,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-08.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray516_brain_base_arteries.jpg",
+    "zh": "大腦後動脈",
+    "x": 42,
+    "y": 52,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-08.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray516_brain_base_arteries.jpg",
+    "zh": "威利氏環",
+    "x": 55.5,
+    "y": 45,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-08.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray516_brain_base_arteries.jpg",
+    "zh": "基底動脈",
+    "x": 50,
+    "y": 57,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-08.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray516_brain_base_arteries.jpg",
+    "zh": "椎動脈",
+    "x": 44.5,
+    "y": 68,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-08.png"
+  },
+  {
+    "img": "img/eye-lab/extra/commons_superior_cervical_ganglion.jpg",
+    "zh": "頸內動脈",
+    "x": 56.5,
+    "y": 82.8,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-09.png"
+  },
+  {
+    "img": "img/eye-lab-private/slices/j007a-blank.jpg",
+    "zh": "頸內動脈",
+    "x": 44.15,
+    "y": 47.94,
+    "status": "block",
+    "reason": "切片全圖450px時血管僅數像素且與多條引線重疊，無法辨識",
+    "overlay": "artery2-old-10.png"
+  },
+  {
+    "img": "img/eye-lab-private/slices/j007a-blank.jpg",
+    "zh": "基底動脈",
+    "x": 49.3,
+    "y": 52.06,
+    "status": "block",
+    "reason": "切片全圖450px時血管僅數像素且與多條引線重疊，無法辨識",
+    "overlay": "artery2-old-10.png"
+  },
+  {
+    "img": "img/eye-lab-private/slices/j007a-blank.jpg",
+    "zh": "淺顳動脈",
+    "x": 31.05,
+    "y": 48.95,
+    "status": "block",
+    "reason": "切片全圖450px時血管僅數像素且與多條引線重疊，無法辨識",
+    "overlay": "artery2-old-10.png"
+  },
+  {
+    "img": "img/eye-anat-manual/onh_diag_m.jpg",
+    "zh": "視網膜中央動脈",
+    "x": 48.5,
+    "y": 70,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-11.png"
+  },
+  {
+    "img": "img/eye-anat-manual/onh_diag_m.jpg",
+    "zh": "睫狀後短動脈",
+    "x": 17.5,
+    "y": 68,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-11.png"
+  },
+  {
+    "img": "img/eye-anat-manual/fundus_od.jpg",
+    "zh": "視網膜中央動脈",
+    "x": 80,
+    "y": 38,
+    "status": "block",
+    "reason": "舊圈遠離視神經盤，不能標為中央動脈在盤內的位置",
+    "overlay": "artery2-old-12.png"
+  },
+  {
+    "img": "img/eye-anat-manual/fundus_od.jpg",
+    "zh": "顳上動脈",
+    "x": 64.84,
+    "y": 25.78,
+    "status": "block",
+    "reason": "舊點落在血管旁視網膜或交叉處；400px圓圈不能可靠區別動脈與靜脈，改用左右眼校訂標記",
+    "overlay": "artery2-old-12.png"
+  },
+  {
+    "img": "img/eye-anat-manual/fundus_od.jpg",
+    "zh": "顳下動脈",
+    "x": 68.75,
+    "y": 68.75,
+    "status": "block",
+    "reason": "舊點落在血管旁視網膜或交叉處；400px圓圈不能可靠區別動脈與靜脈，改用左右眼校訂標記",
+    "overlay": "artery2-old-12.png"
+  },
+  {
+    "img": "img/eye-anat-manual/fundus_od.jpg",
+    "zh": "鼻上動脈",
+    "x": 86.72,
+    "y": 34.38,
+    "status": "block",
+    "reason": "舊點落在血管旁視網膜或交叉處；400px圓圈不能可靠區別動脈與靜脈，改用左右眼校訂標記",
+    "overlay": "artery2-old-12.png"
+  },
+  {
+    "img": "img/eye-anat-manual/fundus_od.jpg",
+    "zh": "鼻下動脈",
+    "x": 86.72,
+    "y": 64.84,
+    "status": "block",
+    "reason": "舊點落在血管旁視網膜或交叉處；400px圓圈不能可靠區別動脈與靜脈，改用左右眼校訂標記",
+    "overlay": "artery2-old-12.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray877_horizontal_vessels.jpg",
+    "zh": "視網膜中央動脈",
+    "x": 89,
+    "y": 39.3,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-13.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray877_horizontal_vessels.jpg",
+    "zh": "睫狀前動脈",
+    "x": 26.1,
+    "y": 86.1,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-13.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray877_horizontal_vessels.jpg",
+    "zh": "虹膜大動脈環",
+    "x": 17.5,
+    "y": 45.3,
+    "status": "block",
+    "reason": "舊圈落在睫狀突網絡，未對準圖例2的動脈環切面交點",
+    "overlay": "artery2-old-13.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray873.jpg",
+    "zh": "睫狀後長動脈",
+    "x": 58,
+    "y": 43.5,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-14.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray873.jpg",
+    "zh": "睫狀後短動脈",
+    "x": 26,
+    "y": 52,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-14.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray873.jpg",
+    "zh": "睫狀前動脈",
+    "x": 68.5,
+    "y": 12,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-14.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray873.jpg",
+    "zh": "虹膜大動脈環",
+    "x": 77,
+    "y": 45,
+    "status": "block",
+    "reason": "放大核對舊點在睫狀肌灰色帶內，並非清楚的動脈環血管",
+    "overlay": "artery2-old-14.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray515.jpg",
+    "zh": "淚動脈",
+    "x": 34,
+    "y": 40,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-15.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray515.jpg",
+    "zh": "眶上動脈",
+    "x": 68,
+    "y": 32,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-15.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray515.jpg",
+    "zh": "上瞼動脈弓",
+    "x": 50,
+    "y": 58,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-15.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray515.jpg",
+    "zh": "下瞼動脈弓",
+    "x": 46,
+    "y": 67,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-15.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray515.jpg",
+    "zh": "鼻背動脈",
+    "x": 76,
+    "y": 40,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-15.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray515.jpg",
+    "zh": "眶下動脈",
+    "x": 55,
+    "y": 91,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-15.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray515.jpg",
+    "zh": "顏面動脈",
+    "x": 68,
+    "y": 95,
+    "status": "block",
+    "reason": "舊圈在圖下端空白處，偏離血管",
+    "overlay": "artery2-old-15.png"
+  },
+  {
+    "img": "img/eye-anat-manual/gray515.jpg",
+    "zh": "眼角動脈",
+    "x": 82,
+    "y": 51,
+    "status": "block",
+    "reason": "舊圈在角靜脈旁，不能可靠指認較內側的眼角動脈",
+    "overlay": "artery2-old-15.png"
+  },
+  {
+    "img": "img/eye-lab-private/slices/sg3-blank.jpg",
+    "zh": "基底動脈",
+    "x": 52.35,
+    "y": 22.45,
+    "status": "block",
+    "reason": "全身矢狀切片的圈處太小且與引線重疊，未見可辨認的動脈管腔",
+    "overlay": "artery2-old-16.png"
+  },
+  {
+    "img": "img/eye-anat-manual/eca.jpg",
+    "zh": "頸外動脈",
+    "x": 41.5,
+    "y": 62,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-17.png"
+  },
+  {
+    "img": "img/eye-anat-manual/eca.jpg",
+    "zh": "上頷動脈",
+    "x": 38.5,
+    "y": 22.5,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-17.png"
+  },
+  {
+    "img": "img/eye-anat-manual/eca.jpg",
+    "zh": "顏面動脈",
+    "x": 45,
+    "y": 40,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-17.png"
+  },
+  {
+    "img": "img/eye-anat-manual/eca.jpg",
+    "zh": "淺顳動脈",
+    "x": 33.5,
+    "y": 14.5,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-17.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray508_face_arteries.jpg",
+    "zh": "頸外動脈",
+    "x": 38,
+    "y": 70,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-18.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray508_face_arteries.jpg",
+    "zh": "顏面動脈",
+    "x": 54,
+    "y": 73,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-18.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray508_face_arteries.jpg",
+    "zh": "眼角動脈",
+    "x": 76.5,
+    "y": 45,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-18.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray508_face_arteries.jpg",
+    "zh": "淺顳動脈",
+    "x": 38.8,
+    "y": 38,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-18.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray510_maxillary_artery.jpg",
+    "zh": "頸外動脈",
+    "x": 22,
+    "y": 65,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-19.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray510_maxillary_artery.jpg",
+    "zh": "上頷動脈",
+    "x": 30,
+    "y": 50,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-19.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray510_maxillary_artery.jpg",
+    "zh": "眶下動脈",
+    "x": 58,
+    "y": 31,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-19.png"
+  },
+  {
+    "img": "img/eye-lab/extra/gray510_maxillary_artery.jpg",
+    "zh": "淺顳動脈",
+    "x": 17.5,
+    "y": 25,
+    "status": "keep",
+    "reason": "450px可見血管走向及鄰接關係；標籤圖僅作探索辨識",
+    "overlay": "artery2-old-19.png"
+  }
+]

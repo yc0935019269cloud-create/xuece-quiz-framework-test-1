@@ -48,6 +48,14 @@ const ROOT = path.resolve(__dirname, '..', '..'); const URL = require('url').pat
     ok(`${vp.width} 別張圖已加星號 → 清單顯示 ★（${multi}）`, shown === 'true', shown);
     const sw = await page.evaluate(() => document.documentElement.scrollWidth - innerWidth);
     ok(`${vp.width} 無橫向捲動`, sw <= 1, sw);
+    // 只有補充圖的構造（滑車窩）也能收藏，知識筆記看得到那張圖
+    await open();
+    await page.fill('#lpBody input.term-search', '滑車窩');
+    await page.evaluate(() => [...document.querySelectorAll('#lpBody .term-item')].find(e => e.offsetParent).querySelector('.knowledge-star').click());
+    await page.evaluate(() => App.go('learn', { tab: 'notes' }));
+    await page.waitForTimeout(500);
+    const extraCard = await page.evaluate(() => { const c = [...document.querySelectorAll('.knowledge-card')].find(e => e.innerText.includes('滑車窩')); return c ? { img: !!c.querySelector('img'), txt: c.innerText.slice(0, 40) } : null; });
+    ok(`${vp.width} 補充圖構造可收藏並出現在知識筆記`, extraCard && extraCard.img, extraCard);
     ok(`${vp.width} 無頁面錯誤`, !errs.length, errs);
     await page.evaluate(s => { localStorage.clear(); const o = JSON.parse(s); for (const k in o) localStorage.setItem(k, o[k]); }, backup);
     await ctx.close();
