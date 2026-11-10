@@ -427,6 +427,9 @@
 
 ## 韓文：字母單元（2026-10-22，v145）
 
+- l6 的 40 字母一覽後新增獨立收尾音頁：七個代表音、11 個雙收尾音，點開聽例字並看嘴型與讀法；不計分。
+- 新增例字音檔需執行 `python tools/tts/gen_lang.py` 下載，離線時音檔尚未齊全。
+
 - 新科目 `korean`（韓文，theme lang，`content/project.json`）與單元 `content/learn/korean/hangul-letters.json`：6 課（字形原理 4 張卡、基本子音 14、雙子音 5、基本母音 10、複合母音 11、全部 40 個一覽）。使用者要求「像眼解剖實驗那樣點開、聽發音、看字形由來，不要練習題、不被學習框架鎖住」。
 - 新步驟類型 `letters`（`js/learn.js` 的 `renderLetters`、`tools/build.py` 檢查、`css/style.css` 的 `.kl-*`）：`{type:'letters', lang:'ko', title, body, groups:[{name, desc, items:[{ch, name, roman, say:[{label,t,roman}], desc, img?, ex:{w,roman,zh}}]}]}`。點字母開視窗並自動念第一個 say，可聽名稱／收尾／例字，◀ ▶ 或方向鍵換字，不計分、不進複習盒。
 - **讀音用注音標近似音，不用羅馬拼音**（使用者要求）：`roman` 欄位實際放注音（字母格子、🔊 按鈕、例字），`(ㄍ)(ㄉ)(ㄅ)` 括號＝收尾嘴型做到但不放開，「緊」＝緊音；說明文字也不用英文字母比喻。第 1 課開頭有讀法說明。

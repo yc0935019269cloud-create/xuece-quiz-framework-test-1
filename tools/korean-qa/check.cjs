@@ -20,6 +20,7 @@ const ok = (c, msg) => { checks++; if (!c) problems.push(msg); };
     await page.route('http://127.0.0.1:18769/**', r => r.fulfill({ status: 200, contentType: 'application/json', body: '{"ok":false}' }));
     await page.goto(URL);
     await page.waitForFunction(() => typeof App !== 'undefined' && document.querySelector('#screen .panel'));
+    const storage = await page.evaluate(() => ({ ...localStorage }));
     await page.evaluate(() => { try { VOL.set('muted', true); } catch (e) {} });
     await page.evaluate(() => App.go('learn'));
     await page.waitForTimeout(300);
@@ -60,7 +61,11 @@ const ok = (c, msg) => { checks++; if (!c) problems.push(msg); };
           ok(tts.every(u => /assets\/tts\/ko\//.test(u)), `${mode} l${li + 1} 有字母沒用到本機音檔：${tts.filter(u => !/assets\/tts\/ko\//.test(u)).slice(0, 3)}`);
           await page.click('.kl-modal .close');
           ok(!(await page.$('.kl-modal')), `${mode} 視窗沒關`);
-          if (li === 5) ok(n === 40, `${mode} 一覽不是 40 個字母（${n}）`);
+          if (li === 5 && si === 0) ok(n === 40, `${mode} 一覽不是 40 個字母（${n}）`);
+          if (li === 5 && si === 1) {
+            const groups = await page.locator('#lpBody .kl-g').allTextContents();
+            ok(n === 18 && groups.length === 2 && groups[0].includes('七個代表音') && groups[1].includes('雙收尾音'), `${mode} 收尾音分組或數量不正確`);
+          }
         }
         const nb = await page.$('#lpNext');
         if (nb && si < pk[li] - 1) await nb.click();
@@ -71,6 +76,7 @@ const ok = (c, msg) => { checks++; if (!c) problems.push(msg); };
     await page.evaluate(() => App.go('camp'));
     await page.waitForTimeout(200);
     ok(!errs.length, `${mode} 頁面錯誤：${errs.slice(0, 3).join(' | ')}`);
+    await page.evaluate(saved => { localStorage.clear(); Object.entries(saved).forEach(([k, v]) => localStorage.setItem(k, v)); }, storage);
     await ctx.close();
   }
   await b.close();
