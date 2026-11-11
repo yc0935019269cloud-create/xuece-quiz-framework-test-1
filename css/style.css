@@ -1711,3 +1711,30 @@ html.read-light .nv-audio { background: rgba(0,0,0,.05); }
 .picfind .term-pin { pointer-events: none; }
 .picfind-choice { display: flex; flex-wrap: wrap; gap: 8px; }
 .picfind-choice input { max-width: 100%; }
+/* 韓文字母自我檢查單字卡 */
+.kfc-root { width:100%; min-width:0; outline-offset:3px; }
+.kfc-filters,.kfc-toolbar,.kfc-actions { display:flex; justify-content:center; flex-wrap:wrap; gap:8px; margin:12px 0; }
+.kfc-filters [aria-pressed="true"],.kfc-toolbar [aria-pressed="true"] { outline:3px solid var(--sc,#4fa8ff); outline-offset:1px; }
+.kfc-toolbar { align-items:center; justify-content:space-between; }
+.kfc-counts { text-align:center; margin:12px 0; }
+.kfc-viewport { overflow:hidden; padding:22px 0; perspective:1000px; }
+.kfc-mover { width:min(85vw,420px,100%); height:300px; margin:auto; position:relative; transition:transform .23s ease,opacity .23s ease; }
+.kfc-dragging { transition:none; }
+.kfc-card { position:relative; width:100%; height:100%; transform-style:preserve-3d; transition:transform .45s; cursor:grab; touch-action:none; user-select:none; }
+.kfc-flipped { transform:rotateY(180deg); }
+.kfc-face { box-sizing:border-box; position:absolute; inset:0; backface-visibility:hidden; border:3px solid var(--line,#493d51); box-shadow:4px 4px 0 #0004; background:#fffaf0; color:#2e2116; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px; gap:14px; overflow-wrap:anywhere; }
+.kfc-front > b { font-size:96px; line-height:1.25; font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; }
+.kfc-back { transform:rotateY(180deg); }
+.kfc-front[aria-hidden="true"],.kfc-back[aria-hidden="true"] { pointer-events:none; }
+.kfc-back p { font-size:17px; line-height:1.65; margin:0; }
+.kfc-zy { font-size:32px; text-align:center; }
+.kfc-tag { position:absolute; top:12px; left:12px; padding:5px 10px; font-size:14px; border:2px solid currentColor; }
+.kfc-tag-c { background:#dceeff; color:#153f73; }
+.kfc-tag-v { background:#f1e1ff; color:#592576; }
+.kfc-tag-f { background:#ffebce; color:#733b08; }
+.kfc-hint { position:absolute; top:5px; z-index:2; padding:10px; font-weight:bold; border:3px solid currentColor; opacity:0; pointer-events:none; }
+.kfc-yes { right:10px; background:#ddffe6; color:#16592a; }
+.kfc-no { left:10px; background:#fff0d8; color:#854000; }
+.kfc-actions .px-btn { min-height:44px; }
+.kfc-summary { text-align:center; padding:24px 8px; border:2px solid var(--line); }
+@media(prefers-reduced-motion:reduce) { .kfc-card,.kfc-mover { transition-duration:.01s; } }

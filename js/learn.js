@@ -4,7 +4,7 @@ const LEARN_UI = (() => {
   const STEP = {
     intro: { ic: '🚪', name: '導入' }, card: { ic: '📘', name: '概念' }, check: { ic: '❓', name: '檢核' },
     example: { ic: '🧩', name: '範例' }, practice: { ic: '⚔', name: '實戰' }, recap: { ic: '⭐', name: '回顧' },
-    diagram: { ic: '🔍', name: '圖解' }, interactive: { ic: '🎮', name: '互動' }, letters: { ic: '🔤', name: '字母' }, termlist: { ic: '📋', name: '構造清單' }
+    diagram: { ic: '🔍', name: '圖解' }, interactive: { ic: '🎮', name: '互動' }, letters: { ic: '🔤', name: '字母' }, flashcards: { ic: '🃏', name: '單字卡' }, termlist: { ic: '📋', name: '構造清單' }
   };
   const LEVEL = ['', '基礎', '標準', '進階'];
   const BOX_DAYS = [0, 1, 2, 4, 7, 15, 30]; // 複習盒：答對升一盒，答錯回第 1 盒
@@ -212,7 +212,7 @@ const LEARN_UI = (() => {
     check: ['換你試試看！', '剛剛學的，馬上用用看。'], example: ['先自己想一下，再看下一步。', '一步一步拆開來看～'],
     practice: ['上戰場！這是題庫裡的題目。', '實戰時間到！'], recap: ['快完成了，最後整理一下重點！'],
     ok: ['答對了！好厲害！', '完全正確✨', '就是這樣！'], ng: ['沒關係，看提示再試一次。', '差一點點！'], reveal: ['這題放進複習盒了，之後再挑戰。'],
-    diagram: ['先點點看每個標記，認識一下～', '看圖認位置，最後要考喔！'], interactive: ['動手玩玩看，觀察會發生什麼！', '拉拉看、按按看～'], letters: ['點一個字母聽聽看！', '慢慢點，聽發音、看由來～'], termlist: ['點位置查看各個角度。']
+    diagram: ['先點點看每個標記，認識一下～', '看圖認位置，最後要考喔！'], interactive: ['動手玩玩看，觀察會發生什麼！', '拉拉看、按按看～'], letters: ['點一個字母聽聽看！', '慢慢點，聽發音、看由來～'], flashcards: ['先自己念，再翻面聽聽看！', '左滑會念了，右滑還不會～'], termlist: ['點位置查看各個角度。']
   };
   const imgList = v => (Array.isArray(v) ? v : v ? [v] : []);
   const imgsHTML = (v, src) => { const L = imgList(v), h = L.map(x => `<img class="lp-img" src="${U.esc(U.img(x))}" alt="" title="點圖放大">`).join(''); return (L.length > 1 ? `<div class="lp-imgs">${h}</div>` : h) + (src ? `<div class="lp-src">圖片來源：${inl(src)}</div>` : ''); };
@@ -284,6 +284,8 @@ const LEARN_UI = (() => {
       const words = String(s.html || '').replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
       if (words) L.push('互動畫面上的文字：' + cut(words, 600));
       L.push('（這是互動動畫，AI 看不到畫面）');
+    } else if (s.type === 'flashcards') {
+      L.push(`標題：${s.title || '單字卡'}`, s.body || '', ...(s.cards || []).map(x => `${x.ch}｜${x.tag}｜${x.zy}｜${x.how}`));
     } else if (s.type === 'letters') {
       L.push(`標題：${s.title || '字母'}`, s.body || '', ...(s.groups || []).map(g => `【${g.name}】\n` + g.items.map(x => `${x.ch}（${[x.name, x.roman].filter(Boolean).join('，')}）：${x.desc || ''}`).join('\n')));
     } else if (s.type === 'termlist') {
@@ -1144,6 +1146,9 @@ const LEARN_UI = (() => {
       } else if (s.type === 'interactive') {
         renderInteractive(body, head, s);
         ready();
+      } else if (s.type === 'flashcards') {
+        renderFlashcards(body, head, s, `${p.id}/${l.id}/${st.i}`);
+        ready();
       } else if (s.type === 'letters') {
         renderLetters(body, head, s);
         ready();
@@ -1577,6 +1582,112 @@ const LEARN_UI = (() => {
     body.querySelectorAll('.kl-t').forEach(b => { b.onclick = () => open(+b.dataset.k); });
   }
 
+  function renderFlashcards(body, head, s, context) {
+    const cards = s.cards || [], key = `kfc/${context}`;
+    let known = new Set();
+    try { const a = JSON.parse(localStorage.getItem(key)); if (Array.isArray(a)) known = new Set(a.filter(i => Number.isInteger(i) && i >= 0 && i < cards.length)); } catch (_) {}
+    const persist = () => { try { localStorage.setItem(key, JSON.stringify([...known])); } catch (_) {} };
+    let filter = '全部', shuffle = false, deck = [], history = [], pos = 0, back = false, busy = false;
+    body.innerHTML = head + `<h3>${U.esc(s.title || '單字卡')}</h3>${md(s.body || '')}<div class="kfc-root" tabindex="0" aria-label="單字卡自我檢查"></div>`;
+    const root = body.querySelector('.kfc-root');
+    const matches = i => filter === '全部' || cards[i].tag === filter;
+    const speak = () => { const c = cards[deck[pos]]; if (c && typeof GLOSS !== 'undefined') GLOSS.speak(c.say.t, { lang: s.lang || 'ko' }); };
+    const start = ids => {
+      deck = ids || cards.map((_, i) => i).filter(i => matches(i) && !known.has(i));
+      if (shuffle) for (let i = deck.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [deck[i], deck[j]] = [deck[j], deck[i]]; }
+      history = []; pos = 0; back = busy = false; draw();
+    };
+    const flip = () => {
+      if (busy || pos >= deck.length) return;
+      back = !back;
+      const c = root.querySelector('.kfc-card'); c.classList.toggle('kfc-flipped', back);
+      c.setAttribute('aria-label', back ? '單字卡背面，按空白鍵翻面' : '單字卡正面，按空白鍵翻面');
+      root.querySelector('.kfc-front').setAttribute('aria-hidden', String(back));
+      root.querySelector('.kfc-back').setAttribute('aria-hidden', String(!back));
+      root.querySelector('[data-kfc-speak]').tabIndex = back ? 0 : -1;
+      if (back) speak();
+    };
+    const grade = yes => {
+      if (busy || pos >= deck.length) return;
+      busy = true;
+      const i = deck[pos], was = known.has(i);
+      history.push({ i, yes, was });
+      if (yes) known.add(i); else known.delete(i);
+      persist();
+      const mover = root.querySelector('.kfc-mover');
+      mover.classList.add('kfc-flying'); mover.style.transform = `translateX(${yes ? -140 : 140}%) rotate(${yes ? -20 : 20}deg)`; mover.style.opacity = '0';
+      setTimeout(() => { if (!root.isConnected) return; pos++; back = busy = false; draw(); }, 230);
+    };
+    const undo = () => {
+      if (busy || !history.length) return;
+      const h = history.pop(); if (h.was) known.add(h.i); else known.delete(h.i);
+      persist(); pos--; back = false; draw();
+    };
+    const reset = () => { if (busy) return; known.clear(); persist(); start(); };
+    const keydown = e => {
+      if (e.ctrlKey || e.altKey || e.metaKey || e.repeat || e.target.closest('input,textarea,select') || document.querySelector('.modal-bg')) return false;
+      if (e.key === ' ') { flip(); return true; }
+      if (e.key === 'ArrowLeft') { grade(true); return true; }
+      if (e.key === 'ArrowRight') { grade(false); return true; }
+      return false;
+    };
+    root.onkeydown = e => { if (keydown(e)) { e.preventDefault(); e.stopPropagation(); } };
+    body._key = keydown;
+    function draw() {
+      const focused = root.contains(document.activeElement);
+      const yes = history.filter(h => h.yes).length, no = history.length - yes, c = cards[deck[pos]];
+      root.innerHTML = `<div class="kfc-filters">${['全部', '子音', '母音', '收尾音'].map(t => `<button class="px-btn small" data-kfc-filter="${t}" aria-pressed="${filter === t}">${t}</button>`).join('')}</div>
+        <div class="kfc-toolbar"><span class="kfc-progress">第 ${deck.length ? Math.min(pos + 1, deck.length) : 0} / ${deck.length}</span><button class="px-btn small" data-kfc-shuffle aria-pressed="${shuffle}">🔀 打亂：${shuffle ? '開' : '關'}</button></div>
+        <div class="kfc-counts" aria-live="polite">會念了 <b data-kfc-yes>${yes}</b>　還不會 <b data-kfc-no>${no}</b></div>
+        ${c ? `<div class="kfc-viewport"><div class="kfc-mover"><div class="kfc-hint kfc-yes">會念了</div><div class="kfc-hint kfc-no">還不會</div><div class="kfc-card" role="button" tabindex="0" aria-label="單字卡正面，按空白鍵翻面">
+          <div class="kfc-face kfc-front" aria-hidden="false"><span class="kfc-tag kfc-tag-${c.tag === '子音' ? 'c' : c.tag === '母音' ? 'v' : 'f'}">${U.esc(c.tag)}</span><b lang="ko">${U.esc(c.ch)}</b><small>點一下翻面</small></div>
+          <div class="kfc-face kfc-back" aria-hidden="true"><b class="kfc-zy">${U.esc(c.zy)}</b><p>${U.esc(c.how)}</p><div><button class="px-btn" data-kfc-speak tabindex="-1" aria-label="播放發音">🔊</button> <small>${U.esc(c.say.roman || '')}</small></div></div>
+        </div></div></div><div class="kfc-actions"><button class="px-btn" data-kfc-grade="yes">← 會念了</button><button class="px-btn" data-kfc-grade="no">還不會 →</button></div>` : `<div class="kfc-summary" aria-live="polite"><h4>${no ? '這輪練習結束' : '完成！這些字母都會念了'}</h4><p>會念了 ${yes} 張、還不會 ${no} 張</p>${no ? `<button class="px-btn blue" data-kfc-retry>只練還不會的 ${no} 張</button>` : '<p>可以切換分類，或全部重來再檢查一次。</p>'}</div>`}
+        <div class="kfc-actions"><button class="px-btn small" data-kfc-undo ${!history.length || busy ? 'disabled' : ''}>↶ 上一張</button><button class="px-btn small" data-kfc-reset>全部重來</button></div>`;
+      root.querySelectorAll('[data-kfc-filter]').forEach(b => b.onclick = () => { if (busy) return; filter = b.dataset.kfcFilter; start(); });
+      if (focused) root.focus({ preventScroll: true });
+      root.querySelector('[data-kfc-shuffle]').onclick = () => {
+        if (busy) return; shuffle = !shuffle;
+        const rest = deck.slice(pos);
+        if (shuffle) for (let i = rest.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [rest[i], rest[j]] = [rest[j], rest[i]]; }
+        else rest.sort((a, b) => a - b);
+        deck = deck.slice(0, pos).concat(rest); back = false; draw();
+      };
+      root.querySelectorAll('[data-kfc-grade]').forEach(b => b.onclick = () => grade(b.dataset.kfcGrade === 'yes'));
+      root.querySelector('[data-kfc-undo]').onclick = undo;
+      root.querySelector('[data-kfc-reset]').onclick = reset;
+      const retry = root.querySelector('[data-kfc-retry]'); if (retry) retry.onclick = () => start(history.filter(h => !h.yes).map(h => h.i));
+      if (!c) return;
+      root.querySelector('[data-kfc-speak]').onclick = e => { e.stopPropagation(); speak(); };
+      const card = root.querySelector('.kfc-card'), mover = root.querySelector('.kfc-mover');
+      let drag = null;
+      card.onpointerdown = e => {
+        if (busy || !e.isPrimary || e.button !== 0 || e.target.closest('[data-kfc-speak]')) return;
+        drag = { id: e.pointerId, x: e.clientX, y: e.clientY, at: performance.now(), moved: 0 };
+        card.setPointerCapture(e.pointerId); card.focus({ preventScroll: true }); mover.classList.add('kfc-dragging');
+      };
+      card.onpointermove = e => {
+        if (!drag || e.pointerId !== drag.id) return;
+        const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+        drag.moved = Math.max(drag.moved, Math.hypot(dx, dy));
+        mover.style.transform = `translate(${dx}px,${dy * .18}px) rotate(${dx / 22}deg)`;
+        root.querySelector('.kfc-yes').style.opacity = Math.min(1, Math.max(0, -dx / 70));
+        root.querySelector('.kfc-no').style.opacity = Math.min(1, Math.max(0, dx / 70));
+      };
+      const release = (e, cancel) => {
+        if (!drag || e.pointerId !== drag.id) return;
+        const d = drag; drag = null; mover.classList.remove('kfc-dragging');
+        const dx = e.clientX - d.x, velocity = Math.abs(dx) / Math.max(1, performance.now() - d.at);
+        if (!cancel && (Math.abs(dx) > card.offsetWidth * .3 || (Math.abs(dx) > 35 && velocity > .65))) grade(dx < 0);
+        else { mover.style.transform = ''; root.querySelectorAll('.kfc-hint').forEach(x => x.style.opacity = 0); if (!cancel && d.moved < 10 && Math.hypot(dx, e.clientY - d.y) < 10) flip(); }
+      };
+      card.onpointerup = e => release(e, false);
+      card.onpointercancel = e => release(e, true);
+      card.onlostpointercapture = e => { if (drag) release(e, true); };
+    }
+    start();
+  }
+
   /* ---------- 複習（間隔重複） ---------- */
   /* 範圍：科目 → path 各層 → 單元 → 課；cfg.rv = { s 科目, r 範圍（g:科目␁層…／p:單元 id）, l 課 id, mode due|all, n 張數 } */
   const RSEP = '\u0001';
@@ -1982,6 +2093,7 @@ const LEARN_UI = (() => {
       } else if (s.type === 'termlist') renderTermlist(el, '', s);
       else if (s.type === 'interactive') renderInteractive(el, '', s);
       else if (s.type === 'letters') renderLetters(el, '', s);
+      else if (s.type === 'flashcards') renderFlashcards(el, '', s, `${pid}/${lid}/${si}`);
       else el.innerHTML = `<h4>${U.esc(stepTitle(s, l))}</h4>${pageText(s) ? md(pageText(s).slice(0, 600)) : ''}`;
     });
     U.$$('[data-formula-jump]', body).forEach(a => a.onclick = e => { e.preventDefault(); const target = document.getElementById(a.getAttribute('href').slice(1)); if (target) { target.open = true; target.scrollIntoView({ block: 'start' }); target.querySelector('summary').focus({ preventScroll: true }); } });

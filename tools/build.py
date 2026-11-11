@@ -31,7 +31,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT = os.path.join(ROOT, 'content')
 THEMES = ['lit', 'lang', 'math', 'calc', 'hist', 'sci', 'mix']
 QTYPES = ['single', 'multi', 'tf', 'fill', 'open']
-STEP_TYPES = ['intro', 'card', 'check', 'example', 'practice', 'recap', 'diagram', 'interactive', 'letters', 'termlist']
+STEP_TYPES = ['intro', 'card', 'check', 'example', 'practice', 'recap', 'diagram', 'interactive', 'letters', 'flashcards', 'termlist']
 CHECK_KINDS = ['single', 'multi', 'tf', 'fill', 'order', 'self', 'name']
 MD_FIELDS = ['body', 'q', 'hint', 'explain', 'problem', 'tip', 'front', 'back', 'desc', 'stem', 'text', 'task', 'html', 'demo']
 ID_RE = r'[A-Za-z0-9][A-Za-z0-9_-]*'
@@ -669,6 +669,14 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
                     R.err(SW, 'interactive 需要 html')
                 elif re.search(r'<script[^>]+src=|<link[^>]+href=["\']https?:', s['html'], re.I):
                     R.warn(SW, '互動內容引用了外部檔案，離線時會失效（請改成全部內嵌）')
+            elif t == 'flashcards':
+                cards = s.get('cards')
+                if not isinstance(cards, list) or not cards:
+                    R.err(SW, 'flashcards 需要非空 cards 陣列')
+                else:
+                    for ci, c in enumerate(cards):
+                        if not isinstance(c, dict) or not all(is_str(c.get(k)) for k in ('ch', 'zy', 'how')) or c.get('tag') not in ('子音', '母音', '收尾音') or not isinstance(c.get('say'), dict) or not is_str(c['say'].get('t')):
+                            R.err(SW, f'flashcards.cards[{ci}] 需要 ch、合法 tag、zy、how、say.t')
             elif t == 'letters':
                 gs = s.get('groups')
                 if not isinstance(gs, list) or not gs or not all(isinstance(g, dict) and is_str(g.get('name')) and isinstance(g.get('items'), list) and g['items'] for g in gs):
