@@ -425,17 +425,18 @@
 - 看圖寫名稱題分兩格（v142）：`js/question.js` 的填答題，若每個 accept 都是「中文 / English」，就顯示「中文名稱」「English name」兩格（中文格 Enter 跳英文格、英文格 Enter 送出），兩格都要對才算對（任一組 accept 的中文與英文都用 `U.sameAns` 比對）；遠征、題庫練習、學習實戰共用。其他填答題維持一格。
 - 星號篩選分兩種（v143）：「★ 只刷星號部位本身」（`starOnly:'exact'`，只收答案就是該部位的題，例如各張圖上問頸內動脈的看圖題）與「★ 星號部位＋相關題」（`'related'`，再加標籤相同的題；舊設定 `true` 視為 related）。兩個 chip 互斥、再按一次關閉。`LEARN_UI.starredQids(mode)`。
 
-## 韓文：字母單元（2026-11-11，v200）
+## 韓文：字母單元（2026-11-11，v201）
 
 - l6 前兩頁：全部字母一覽合併基本子音14、雙子音5、基本母音10、複合母音11、代表收尾音7、雙收尾音11，共58格；原收尾音說明保留在代表音群組。第二頁為58張 `flashcards` 自我檢查卡，注音與手寫念法、背面自動播原有 say 第一筆，沿用原有音檔。
+- l6 第三頁新增 `trial` 試煉關：固定398題（L1 40／L2 112／B1 123／B2 123），雙收尾音32題。正本`tools/korean-qa/trial_words.json`唯讀；`build_trial.py`固定種子201、驗算後替換第三步。可選聽力／拆字、排除雙收尾音、10／20／30／全部；首答正確率與答錯重出僅存本輪，設定存`ktr/settings/<單元>/<課>/<步驟>`。知識筆記只提示回課程操作，不進複習盒或戰鬥。新增77個整詞音檔、下載失敗0；GLOSS.speak新增可省略rate選項，慢速0.7倍。題庫表與驗收結果見`docs/korean-trial-report.md`。
 - 單字卡左滑會念、右滑還不會，支援指標拖動／空白翻面／方向鍵判定／按鈕／撤銷／分類／打亂／只練還不會／全部重來。進度僅存 `kfc/<單元id>/<課id>/<步驟序號>` 的會念卡序號（try/catch），不計分、不進複習盒、不戰鬥；學習頁與知識筆記共用 `.kfc-*` 播放器。規格及驗收詳見 `docs/korean-flashcards-report.md`。
-- 新增例字音檔需執行 `python tools/tts/gen_lang.py` 下載，離線時音檔尚未齊全。
+- 2026-11-11 起韓文音檔全部改用微軟神經語音 ko-KR-SunHiNeural（首爾標準語女聲，edge-tts，免費），使用者要求「最標準」。新增字詞後執行 `python tools/tts/gen_lang.py`；`assets/tts/ko/_voice.json` 記錄每個檔的語音，語音不同或沒紀錄的檔會自動重錄。
 
 - 新科目 `korean`（韓文，theme lang，`content/project.json`）與單元 `content/learn/korean/hangul-letters.json`：6 課（字形原理 4 張卡、基本子音 14、雙子音 5、基本母音 10、複合母音 11、全部 40 個一覽）。使用者要求「像眼解剖實驗那樣點開、聽發音、看字形由來，不要練習題、不被學習框架鎖住」。
 - 新步驟類型 `letters`（`js/learn.js` 的 `renderLetters`、`tools/build.py` 檢查、`css/style.css` 的 `.kl-*`）：`{type:'letters', lang:'ko', title, body, groups:[{name, desc, items:[{ch, name, roman, say:[{label,t,roman}], desc, img?, ex:{w,roman,zh}}]}]}`。點字母開視窗並自動念第一個 say，可聽名稱／收尾／例字，◀ ▶ 或方向鍵換字，不計分、不進複習盒。
 - **讀音用注音標近似音，不用羅馬拼音**（使用者要求）：`roman` 欄位實際放注音（字母格子、🔊 按鈕、例字），`(ㄍ)(ㄉ)(ㄅ)` 括號＝收尾嘴型做到但不放開，「緊」＝緊音；說明文字也不用英文字母比喻。第 1 課開頭有讀法說明。
 - 單元層級 `calm: true`：這個單元不顯示戰鬥條與戰鬥切換（`play()` 內的 `BON()`），不改使用者的全域戰鬥設定。
-- 發音：`GLOSS.speak(text, {lang:'ko'})` 先播 `assets/tts/ko/<每個字 Unicode 十六進位用 - 連接>.mp3`（109 個，約 900 KB，Google 翻譯語音合成），沒有檔案才連 Google 線上語音，最後 speechSynthesis。新增字詞後執行 `python tools/tts/gen_lang.py`（只下載缺的）。
+- 發音：`GLOSS.speak(text, {lang:'ko'})` 先播 `assets/tts/ko/<每個字 Unicode 十六進位用 - 連接>.mp3`（206 個，約 2.5 MB，SunHi 語音），沒有檔案才連 Google 線上語音，最後 speechSynthesis。
 - 示意圖 `img/korean/*.svg`（側面發音器官：ㄱ 舌根擋喉、ㄴ 舌尖貼齦、ㅁ 口、ㅅ 齒、ㅇ 喉；天地人母音）是自繪示意圖，依《訓民正音》解例本制字原理；發音說明以現代首爾標準語、羅馬拼音用 2000 年國語羅馬字表記法。
 - QA：`tools/korean-qa/check.cjs`（桌機＋390px，6 課逐步、40 字母逐一開啟、發音請求都走本機音檔、圖載入、無橫向捲動、calm 無戰鬥條、無頁面錯誤；262 項通過）。沒有實機 iPhone 播放測試。
 

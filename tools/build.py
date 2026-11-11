@@ -31,7 +31,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT = os.path.join(ROOT, 'content')
 THEMES = ['lit', 'lang', 'math', 'calc', 'hist', 'sci', 'mix']
 QTYPES = ['single', 'multi', 'tf', 'fill', 'open']
-STEP_TYPES = ['intro', 'card', 'check', 'example', 'practice', 'recap', 'diagram', 'interactive', 'letters', 'flashcards', 'termlist']
+STEP_TYPES = ['intro', 'card', 'check', 'example', 'practice', 'recap', 'diagram', 'interactive', 'letters', 'flashcards', 'trial', 'termlist']
 CHECK_KINDS = ['single', 'multi', 'tf', 'fill', 'order', 'self', 'name']
 MD_FIELDS = ['body', 'q', 'hint', 'explain', 'problem', 'tip', 'front', 'back', 'desc', 'stem', 'text', 'task', 'html', 'demo']
 ID_RE = r'[A-Za-z0-9][A-Za-z0-9_-]*'
@@ -669,6 +669,33 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
                     R.err(SW, 'interactive 需要 html')
                 elif re.search(r'<script[^>]+src=|<link[^>]+href=["\']https?:', s['html'], re.I):
                     R.warn(SW, '互動內容引用了外部檔案，離線時會失效（請改成全部內嵌）')
+            elif t == 'trial':
+                bank = s.get('bank')
+                if not isinstance(bank, list) or not bank:
+                    R.err(SW, 'trial 需要非空 bank')
+                else:
+                    ids = set()
+                    for qi, q in enumerate(bank):
+                        qw = f'{SW}.bank[{qi}]'
+                        if not isinstance(q, dict) or q.get('kind') not in ('L1', 'L2', 'B1', 'B2'):
+                            R.err(qw, 'trial 題型必須是 L1／L2／B1／B2'); continue
+                        if not is_str(q.get('id')) or q['id'] in ids:
+                            R.err(qw, 'trial 題目需要不重複 id')
+                        if is_str(q.get('id')):
+                            ids.add(q['id'])
+                        if not isinstance(q.get('dbl'), bool):
+                            R.err(qw, 'trial 題目需要 dbl 布林值')
+                        if q['kind'] == 'B1':
+                            try:
+                                a, b, *c = q['answer']
+                                ch = chr(0xAC00 + 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ'.index(a) * 588 + 'ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ'.index(b) * 28 + ([''] + list('ㄱㄲㄳㄴㄵㄶㄷㄹㄺㄻㄼㄽㄾㄿㅀㅁㅂㅄㅅㅆㅇㅈㅊㅋㅌㅍㅎ')).index(c[0] if c else ''))
+                                assert len(q['answer']) in (2, 3) and ch == q['syllable']
+                                assert isinstance(q['tiles'], list) and 6 <= len(q['tiles']) <= 8
+                                assert all(q['tiles'].count(x) >= q['answer'].count(x) for x in q['answer'])
+                            except (KeyError, ValueError, TypeError, AssertionError):
+                                R.err(qw, 'B1 答案必須可組回字塊、方塊庫需包含完整答案')
+                        elif not isinstance(q.get('options'), list) or len(q['options']) != 4 or not all(is_str(x) for x in q['options']) or len(set(q['options'])) != 4 or q.get('answer') not in q['options']:
+                            R.err(qw, 'trial 選項必須四個、不重複且包含答案')
             elif t == 'flashcards':
                 cards = s.get('cards')
                 if not isinstance(cards, list) or not cards:

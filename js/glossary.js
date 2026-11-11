@@ -90,6 +90,7 @@ const GLOSS = (() => {
     t => `https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=${lang}&q=` + encodeURIComponent(t.slice(0, 180))
   ];
   function speak(text, opt) {
+    const rate = opt && Number.isFinite(opt.rate) ? Math.max(0.5, Math.min(2, opt.rate)) : 1;
     const lang = opt && opt.lang && !/^en\b/i.test(opt.lang) ? String(opt.lang).replace(/[^a-zA-Z-]/g, '') : '';
     const SRC = lang ? sourcesFor(lang) : SOURCES;
     text = String(text || '').replace(/\s+/g, ' ').trim();
@@ -105,7 +106,7 @@ const GLOSS = (() => {
       try {
         if (speechSynthesis.paused) speechSynthesis.resume();
         const u = new SpeechSynthesisUtterance(text);
-        u.lang = lang || 'en-US'; if (voice && !lang) u.voice = voice; u.rate = 0.9;
+        u.lang = lang || 'en-US'; if (voice && !lang) u.voice = voice; u.rate = 0.9 * rate;
         u.onend = release; u.onerror = release;
         speechSynthesis.speak(u);
       } catch (e) { release(); }
@@ -113,6 +114,8 @@ const GLOSS = (() => {
     if (!player) { try { player = new Audio(); player.preload = 'auto'; } catch (e) { player = null; } }
     if (!player) return viaTTS();
     const a = player;
+    a.defaultPlaybackRate = rate;
+    a.playbackRate = rate;
     try { a.pause(); } catch (e) {}
     const tryAt = k => {
       if (!live()) return;

@@ -81,6 +81,7 @@ const ok = (c, msg) => { checks++; if (!c) problems.push(msg); };
           }
         }
         if (li === 5 && si === 1) await flashcardsQA(page, mode);
+        if (li === 5 && si === 2) await trialQA(page, mode, tts);
         const nb = await page.$('#lpNext');
         if (nb && si < pk[li] - 1) await nb.click();
       }
@@ -159,3 +160,100 @@ async function flashcardsQA(page, mode) {
   ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${mode} 單字卡無橫向捲動`);
 }
 
+async function trialQA(page, mode, tts) {
+  const root = page.locator('.ktr-root');
+  const bank = await page.evaluate(id => LEARN_UI.packs.find(p => p.id === id).lessons[5].steps[2].bank, PACK);
+  const byId = new Map(bank.map(q => [q.id, q]));
+  const click = s => root.locator(s).click();
+  const shot = async name => { if (SHOT) await page.screenshot({ path: path.join(SHOT, `trial-${name}-${mode}.png`), fullPage: true }); };
+  const ids = async () => JSON.parse(await root.getAttribute('data-ids'));
+  const config = async (listen, build, noDouble) => {
+    await root.locator('[data-ktr-config="listen"]').setChecked(listen);
+    await root.locator('[data-ktr-config="build"]').setChecked(build);
+    await root.locator('[data-ktr-config="noDouble"]').setChecked(noDouble);
+    await root.locator('[data-ktr-count]').selectOption('10');
+  };
+  ok(await root.count() === 1, `${mode} 第三頁試煉關存在`);
+  ok(await root.locator('[data-ktr-config]').count() === 3 && await root.locator('[data-ktr-count] option').count() === 4, `${mode} 設定種類／雙收尾音／題數`);
+  await shot('settings');
+  await config(false, false, false);
+  ok(await root.locator('[data-ktr-start]').isDisabled(), `${mode} 至少選一種類`);
+  await config(true, false, true); await click('[data-ktr-start]');
+  let chosen = await ids();
+  ok(chosen.length === 10 && chosen.every(id => byId.get(id).kind[0] === 'L' && !byId.get(id).dbl), `${mode} 只聽力、排除雙收尾音、10題`);
+  await click('[data-ktr-exit]');
+  await config(false, true, true); await click('[data-ktr-start]'); chosen = await ids();
+  ok(chosen.length === 10 && chosen.every(id => byId.get(id).kind[0] === 'B' && !byId.get(id).dbl), `${mode} 只拆字、排除雙收尾音、10題`);
+  await click('[data-ktr-exit]'); await config(true, true, false);
+  // 找到每型至少兩題的固定種子，仍走實際U.shuffle與開始按鈕；只在抽題同步區間置換亂數。
+  const seed = await page.evaluate(id => {
+    const bank = LEARN_UI.packs.find(p => p.id === id).lessons[5].steps[2].bank, old = Math.random;
+    const rng = seed => () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; };
+    try {
+      for (let seed = 1; seed < 10000; seed++) {
+        Math.random = rng(seed); const sample = U.shuffle(bank.slice()).slice(0, 10);
+        if (['L1','L2','B1','B2'].every(k => sample.filter(q => q.kind === k).length >= 2)) return seed;
+      }
+      throw Error('找不到測試種子');
+    } finally { Math.random = old; }
+  }, PACK);
+  tts.length = 0;
+  await page.evaluate(seed => {
+    const old = Math.random;
+    Math.random = () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; };
+    try { document.querySelector('[data-ktr-start]').click(); } finally { Math.random = old; }
+  }, seed);
+  const original = await ids(), wrongIds = [], seen = new Set(), rightKinds = new Set(), wrongKinds = new Set();
+  let attempts = 0;
+  while (await root.getAttribute('data-phase') === 'question' && attempts < 30) {
+    const q = byId.get(await root.getAttribute('data-qid'));
+    const retry = attempts >= 10, wrong = !retry && !seen.has(q.kind);
+    if (retry) ok(wrongIds.includes(q.id), `${mode} 最後僅重出錯題 ${q.id}`);
+    else { seen.add(q.kind); if (wrong) wrongIds.push(q.id); }
+    await page.waitForTimeout(120);
+    if (!retry && wrong) await shot(q.kind);
+    if (q.kind[0] === 'L') {
+      await click('[data-ktr-slow]'); await page.waitForTimeout(160);
+      ok(await page.evaluate(() => Math.abs(window.__koreanQAAudio.find(a => a.src.includes('/tts/ko/'))?.playbackRate - .7) < .001), `${mode} 慢速實際0.7倍`);
+      await click('[data-ktr-audio]'); await page.waitForTimeout(60);
+      ok(await page.evaluate(() => window.__koreanQAAudio.find(a => a.src.includes('/tts/ko/'))?.playbackRate === 1), `${mode} 正常播放恢復1倍`);
+    }
+    if (q.kind === 'B1') {
+      const used = new Set();
+      const answerIndices = q.answer.map(t => { const i = q.tiles.findIndex((x, j) => x === t && !used.has(j)); used.add(i); return i; });
+      let indices = answerIndices;
+      if (wrong) { const bad = q.tiles.findIndex(t => t !== q.answer[0]); indices = [bad, ...q.tiles.map((_, i) => i).filter(i => i !== bad)].slice(0, q.answer.length); }
+      await click(`[data-ktr-tile="${indices[0]}"]`);
+      ok(await root.locator('[data-ktr-slot="0"] b').textContent() === q.tiles[indices[0]], `${mode} B1填第一格`);
+      if (wrong) await shot('B1-half');
+      await click('[data-ktr-slot="0"]');
+      ok(await root.locator('[data-ktr-slot="0"] b').textContent() === '？', `${mode} B1退回`);
+      for (const i of indices) await click(`[data-ktr-tile="${i}"]`);
+    } else {
+      const index = q.options.findIndex(x => wrong ? x !== q.answer : x === q.answer);
+      await root.focus(); await page.keyboard.press(String(index + 1));
+      ok(await root.locator(`[data-ktr-option="${index}"]`).getAttribute('aria-pressed') === 'true', `${mode} ${q.kind} 鍵盤選項`);
+    }
+    await root.focus(); await page.keyboard.press('Enter');
+    ok(await root.locator(wrong ? '.ktr-wrong' : '.ktr-correct').count() === 1, `${mode} ${q.kind} ${wrong ? '答錯' : '答對'}判定`);
+    (wrong ? wrongKinds : rightKinds).add(q.kind);
+    ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${mode} ${q.kind} 無橫向捲動`);
+    if (wrong || attempts < 10) await shot(wrong ? 'wrong' : 'correct');
+    if (!wrong && !await root.locator('.ktr-correct').count()) throw Error('答對驗證失敗');
+    await page.keyboard.press('Enter'); attempts++;
+  }
+  ok(['L1','L2','B1','B2'].every(k => rightKinds.has(k) && wrongKinds.has(k)), `${mode} 四型各實際答對與答錯`);
+  ok(attempts === 14 && original.length === 10, `${mode} 10題加4題重出、共14次`);
+  ok(await root.getAttribute('data-phase') === 'summary', `${mode} 結算畫面`);
+  ok(await root.locator('.ktr-score').getAttribute('data-correct') === '6' && await root.locator('.ktr-score').getAttribute('data-total') === '10', `${mode} 首答6/10即60%`);
+  ok(await root.locator('[data-ktr-missed]').count() === 4, `${mode} 錯題清單四題`);
+  await shot('summary');
+  await click('[data-ktr-errors]');
+  ok((await ids()).length === 4 && (await ids()).every(id => wrongIds.includes(id)), `${mode} 只練錯的僅四題`);
+  await click('[data-ktr-exit]');
+  await root.locator('[data-ktr-count]').selectOption('all'); await click('[data-ktr-start]');
+  ok((await ids()).length === bank.length, `${mode} 全部題數`);
+  await click('[data-ktr-exit]');
+  ok(tts.length > 0 && tts.every(u => /assets\/tts\/ko\//.test(u)), `${mode} 試煉發音皆本機音檔`);
+  ok(tts.every(u => { const f = require('url').fileURLToPath(u.split('?')[0]); return fs.existsSync(f) && fs.statSync(f).size >= 500; }), `${mode} 音檔存在且非空`);
+}

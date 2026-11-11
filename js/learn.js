@@ -4,7 +4,7 @@ const LEARN_UI = (() => {
   const STEP = {
     intro: { ic: '🚪', name: '導入' }, card: { ic: '📘', name: '概念' }, check: { ic: '❓', name: '檢核' },
     example: { ic: '🧩', name: '範例' }, practice: { ic: '⚔', name: '實戰' }, recap: { ic: '⭐', name: '回顧' },
-    diagram: { ic: '🔍', name: '圖解' }, interactive: { ic: '🎮', name: '互動' }, letters: { ic: '🔤', name: '字母' }, flashcards: { ic: '🃏', name: '單字卡' }, termlist: { ic: '📋', name: '構造清單' }
+    diagram: { ic: '🔍', name: '圖解' }, interactive: { ic: '🎮', name: '互動' }, letters: { ic: '🔤', name: '字母' }, flashcards: { ic: '🃏', name: '單字卡' }, trial: { ic: '🏁', name: '試煉關' }, termlist: { ic: '📋', name: '構造清單' }
   };
   const LEVEL = ['', '基礎', '標準', '進階'];
   const BOX_DAYS = [0, 1, 2, 4, 7, 15, 30]; // 複習盒：答對升一盒，答錯回第 1 盒
@@ -209,6 +209,7 @@ const LEARN_UI = (() => {
   function say(t) { const b = U.$('#lpSay'); if (!b) return; b.textContent = t; b.classList.remove('pop'); void b.offsetWidth; b.classList.add('pop'); }
   const LINES = {
     intro: ['新的一課開始囉！', '先看看這課要學什麼～'], card: ['慢慢讀，重點框起來了！', '看懂了再往下喔。', '這張很重要！'],
+    trial: ['聽一聽，再拆開看看！', '答錯也沒關係，最後會再試一次。'],
     check: ['換你試試看！', '剛剛學的，馬上用用看。'], example: ['先自己想一下，再看下一步。', '一步一步拆開來看～'],
     practice: ['上戰場！這是題庫裡的題目。', '實戰時間到！'], recap: ['快完成了，最後整理一下重點！'],
     ok: ['答對了！好厲害！', '完全正確✨', '就是這樣！'], ng: ['沒關係，看提示再試一次。', '差一點點！'], reveal: ['這題放進複習盒了，之後再挑戰。'],
@@ -284,6 +285,8 @@ const LEARN_UI = (() => {
       const words = String(s.html || '').replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
       if (words) L.push('互動畫面上的文字：' + cut(words, 600));
       L.push('（這是互動動畫，AI 看不到畫面）');
+    } else if (s.type === 'trial') {
+      L.push('試煉關：從固定題庫抽出聽力選字母／選字、字塊拆字／組字練習，答錯會重出，不計入存檔分數。');
     } else if (s.type === 'flashcards') {
       L.push(`標題：${s.title || '單字卡'}`, s.body || '', ...(s.cards || []).map(x => `${x.ch}｜${x.tag}｜${x.zy}｜${x.how}`));
     } else if (s.type === 'letters') {
@@ -1146,6 +1149,8 @@ const LEARN_UI = (() => {
       } else if (s.type === 'interactive') {
         renderInteractive(body, head, s);
         ready();
+      } else if (s.type === 'trial') {
+        renderTrial(body, head, s, `${p.id}/${l.id}/${st.i}`); ready();
       } else if (s.type === 'flashcards') {
         renderFlashcards(body, head, s, `${p.id}/${l.id}/${st.i}`);
         ready();
@@ -1582,6 +1587,114 @@ const LEARN_UI = (() => {
     body.querySelectorAll('.kl-t').forEach(b => { b.onclick = () => open(+b.dataset.k); });
   }
 
+  /* 試煉關只在記憶體中判分；本機僅記住選題設定。 */
+  function renderTrial(body, head, s, context) {
+    const bank = s.bank || [], key = `ktr/settings/${context}`, defaults = { listen: true, build: true, noDouble: false, count: '10' };
+    let cfg = { ...defaults };
+    try {
+      const v = JSON.parse(localStorage.getItem(key));
+      if (v && typeof v === 'object') {
+        for (const k of ['listen', 'build', 'noDouble']) if (typeof v[k] === 'boolean') cfg[k] = v[k];
+        if (['10', '20', '30', 'all'].includes(v.count)) cfg.count = v.count;
+      }
+    } catch (_) {}
+    body.innerHTML = head + `<h3>${U.esc(s.title)}</h3>${md(s.body || '')}<div class="ktr-root" tabindex="0"></div>`;
+    const root = body.querySelector('.ktr-root'), esc = U.esc;
+    let queue = [], initial = [], at = 0, selected = [], checked = false, first = new Map(), wrong = new Set(), started = 0, streak = 0, phase = 'setup', token = 0;
+    const pool = () => bank.filter(q => (q.kind[0] === 'L' ? cfg.listen : cfg.build) && (!cfg.noDouble || !q.dbl));
+    const store = () => { try { localStorage.setItem(key, JSON.stringify(cfg)); } catch (_) {} };
+    const speak = (q, rate = 1) => { if (q?.audio && typeof GLOSS !== 'undefined') GLOSS.speak(q.audio, { lang: s.lang || 'ko', rate }); };
+    const focus = () => root.focus({ preventScroll: true });
+    const audioButtons = q => q.audio ? '<button class="px-btn ktr-audio" data-ktr-audio aria-label="播放題目發音">🔊</button><button class="px-btn" data-ktr-slow>🐢 慢速</button>' : '';
+    function setup() {
+      phase = 'setup'; token++; root.dataset.phase = phase; delete root.dataset.qid; root.dataset.ids = '[]';
+      root.innerHTML = `<div class="ktr-settings"><fieldset><legend>練習種類</legend><label><input type="checkbox" data-ktr-config="listen" ${cfg.listen ? 'checked' : ''}> 🎧 聽力練習</label><label><input type="checkbox" data-ktr-config="build" ${cfg.build ? 'checked' : ''}> 🧩 拆字練習</label></fieldset><label><input type="checkbox" data-ktr-config="noDouble" ${cfg.noDouble ? 'checked' : ''}> 不要雙收尾音的題目</label><label>題數 <select class="px-in" data-ktr-count>${['10','20','30','all'].map(n => `<option value="${n}" ${cfg.count === n ? 'selected' : ''}>${n === 'all' ? '全部' : n}</option>`).join('')}</select></label><p class="ktr-available" aria-live="polite"></p><button class="px-btn gold" data-ktr-start>開始試煉</button></div>`;
+      const update = () => { root.querySelector('.ktr-available').textContent = `目前可用 ${pool().length} 題${cfg.listen || cfg.build ? '' : '；請至少勾選一種練習'}`; root.querySelector('[data-ktr-start]').disabled = !pool().length; };
+      root.querySelectorAll('[data-ktr-config]').forEach(el => el.onchange = () => { cfg[el.dataset.ktrConfig] = el.checked; store(); update(); });
+      root.querySelector('[data-ktr-count]').onchange = e => { cfg.count = e.target.value; store(); update(); };
+      root.querySelector('[data-ktr-start]').onclick = () => start(); update();
+    }
+    function start(only) {
+      store();
+      const available = only || pool();
+      initial = U.shuffle(available.slice()).slice(0, only || cfg.count === 'all' ? available.length : Math.min(+cfg.count, available.length));
+      if (!initial.length) return setup();
+      queue = initial.slice(); at = 0; first = new Map(); wrong = new Set(); started = Date.now(); streak = 0; phase = 'question';
+      question(); focus();
+    }
+    function question() {
+      if (at >= queue.length) return summary();
+      const q = queue[at], myToken = ++token; checked = false; selected = [];
+      root.dataset.phase = 'question'; root.dataset.qid = q.id; root.dataset.kind = q.kind; root.dataset.ids = JSON.stringify(initial.map(x => x.id));
+      const prompt = { L1: '聽聲音，選出字母', L2: '聽聲音，選出整個字詞', B1: '依序填入初聲、中聲與終聲', B2: '把字母組成一個字塊' }[q.kind];
+      const word = q.word ? [...q.word].map((ch, i) => i === q.pick ? `<strong class="ktr-target">${q.kind === 'B2' ? '？' : esc(ch)}</strong>` : esc(ch)).join('') : '';
+      root.innerHTML = `<div class="ktr-top"><div class="bar"><i style="width:${100 * at / queue.length}%;background:var(--green)"></i></div><button class="px-btn small" data-ktr-exit>✕ 結束</button></div><p class="ktr-progress">第 ${at + 1} / ${queue.length} 題${at >= initial.length ? '・再挑戰' : ''}</p><h4>${prompt}</h4><div class="ktr-sound">${audioButtons(q)}</div>
+        ${q.kind[0] === 'B' ? `<div class="ktr-word" lang="ko">${word}</div><p class="ktr-meaning">${esc(q.zh)}</p>` : ''}
+        ${q.kind === 'B1' ? `<div class="ktr-slots">${q.answer.map((_, i) => `<button class="px-btn ktr-slot" data-ktr-slot="${i}" aria-label="${['初聲','中聲','終聲'][i]}"><small>${['初聲','中聲','終聲'][i]}</small><b>？</b></button>`).join('')}</div><div class="ktr-tiles">${q.tiles.map((t, i) => `<button class="px-btn" data-ktr-tile="${i}" lang="ko">${esc(t)}</button>`).join('')}</div>` : `${q.kind === 'B2' ? `<div class="ktr-parts">${q.parts.map(esc).join(' ＋ ')}</div>` : ''}<div class="ktr-options">${q.options.map((o, i) => `<button class="px-btn" data-ktr-option="${i}" aria-pressed="false"><small>${i + 1}</small><span lang="ko">${esc(o)}</span></button>`).join('')}</div>`}
+        <div class="ktr-feedback" aria-live="polite"></div><div class="ktr-bottom"><button class="px-btn gold" data-ktr-check disabled>檢查</button></div>`;
+      root.querySelector('[data-ktr-exit]').onclick = () => { setup(); focus(); };
+      root.querySelector('[data-ktr-audio]')?.addEventListener('click', () => speak(q));
+      root.querySelector('[data-ktr-slow]')?.addEventListener('click', () => speak(q, .7));
+      root.querySelectorAll('[data-ktr-option]').forEach(b => b.onclick = () => choose(+b.dataset.ktrOption));
+      root.querySelectorAll('[data-ktr-tile]').forEach(b => b.onclick = () => choose(+b.dataset.ktrTile));
+      root.querySelectorAll('[data-ktr-slot]').forEach(b => b.onclick = () => { if (checked) return; selected[+b.dataset.ktrSlot] = undefined; updateSelection(); });
+      root.querySelector('[data-ktr-check]').onclick = check;
+      setTimeout(() => { if (root.isConnected && token === myToken && q.kind[0] === 'L') speak(q); }, 100);
+    }
+    function choose(i) {
+      if (checked || phase !== 'question') return;
+      const q = queue[at];
+      if (q.kind === 'B1') {
+        if (i >= q.tiles.length || selected.includes(i)) return;
+        const slot = q.answer.findIndex((_, j) => selected[j] == null);
+        if (slot >= 0) selected[slot] = i;
+      } else { if (i >= q.options.length) return; selected = [i]; }
+      updateSelection();
+    }
+    function updateSelection() {
+      const q = queue[at];
+      if (q.kind === 'B1') {
+        root.querySelectorAll('[data-ktr-tile]').forEach(b => b.disabled = selected.includes(+b.dataset.ktrTile));
+        root.querySelectorAll('[data-ktr-slot]').forEach(b => b.querySelector('b').textContent = selected[+b.dataset.ktrSlot] == null ? '？' : q.tiles[selected[+b.dataset.ktrSlot]]);
+      } else root.querySelectorAll('[data-ktr-option]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.ktrOption === selected[0])));
+      root.querySelector('[data-ktr-check]').disabled = q.kind === 'B1' ? !q.answer.every((_, i) => selected[i] != null) : !selected.length;
+    }
+    function check() {
+      if (checked || phase !== 'question' || root.querySelector('[data-ktr-check]').disabled) return;
+      const q = queue[at];
+      const right = q.kind === 'B1' ? q.answer.every((x, i) => q.tiles[selected[i]] === x) : q.options[selected[0]] === q.answer;
+      checked = true;
+      if (!first.has(q.id)) first.set(q.id, right);
+      if (!right) { wrong.add(q.id); queue.push(q); streak = 0; } else streak++;
+      SFX.play(right ? 'coin' : 'miss');
+      const feedback = root.querySelector('.ktr-feedback');
+      feedback.className = `ktr-feedback ${right ? 'ktr-correct' : 'ktr-wrong'}`;
+      feedback.innerHTML = `<b>${right ? '答對了！' : '正確答案：' + esc(Array.isArray(q.answer) ? q.answer.join(' ＋ ') : q.answer)}</b>${!right ? `<p>注音近似（逐字塊）：${esc(q.zy)}<br>${esc(q.zh)}</p>` : ''}${streak && streak % 5 === 0 ? `<p class="ktr-streak">連續答對 ${streak} 題！</p>` : ''}`;
+      root.querySelectorAll('[data-ktr-option],[data-ktr-tile],[data-ktr-slot]').forEach(b => b.disabled = true);
+      const next = root.querySelector('[data-ktr-check]'); next.textContent = '繼續'; next.onclick = () => { at++; question(); focus(); };
+      feedback.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+    function summary() {
+      phase = 'summary'; token++; root.dataset.phase = phase; delete root.dataset.qid;
+      const correct = [...first.values()].filter(Boolean).length, elapsed = Math.max(1, Math.round((Date.now() - started) / 1000)), missed = initial.filter(q => wrong.has(q.id));
+      root.innerHTML = `<div class="ktr-summary"><h4>試煉完成！</h4><p class="ktr-score" data-correct="${correct}" data-total="${initial.length}">第一次作答正確率 ${Math.round(correct * 100 / initial.length)}%（${correct} / ${initial.length}）</p><p>用時 ${Math.floor(elapsed / 60)} 分 ${elapsed % 60} 秒</p><h4>答錯過的題目（${missed.length}）</h4>${missed.length ? `<ul class="ktr-missed">${missed.map(q => `<li>${esc(q.word || q.answer)} <small>${esc(q.zh)}</small> <button class="px-btn small" data-ktr-missed="${esc(q.id)}" aria-label="播放 ${esc(q.word || q.answer)} 發音">🔊</button></li>`).join('')}</ul>` : '<p>全部一次答對！</p>'}<div class="ktr-actions"><button class="px-btn gold" data-ktr-again>再來一輪</button><button class="px-btn" data-ktr-errors ${missed.length ? '' : 'disabled'}>只練錯的</button><button class="px-btn" data-ktr-settings>回設定</button></div></div>`;
+      root.querySelectorAll('[data-ktr-missed]').forEach(b => b.onclick = () => speak(bank.find(q => q.id === b.dataset.ktrMissed)));
+      root.querySelector('[data-ktr-again]').onclick = () => start();
+      root.querySelector('[data-ktr-errors]').onclick = () => start(missed);
+      root.querySelector('[data-ktr-settings]').onclick = () => { setup(); focus(); };
+    }
+    const onKey = e => {
+      if (phase !== 'question' || e.repeat || e.ctrlKey || e.altKey || e.metaKey || document.querySelector('.modal-bg')) return false;
+      if (/^[1-8]$/.test(e.key)) { choose(+e.key - 1); return true; }
+      if (e.key === 'Enter') { root.querySelector('[data-ktr-check]').click(); return true; }
+      return false;
+    };
+    root.onkeydown = e => { if (onKey(e)) { e.preventDefault(); e.stopPropagation(); } };
+    body._key = onKey;
+    setup();
+  }
+
+  /* 自我檢查單字卡：只保存會念的卡片序號，不寫學習判分或複習排程。 */
   function renderFlashcards(body, head, s, context) {
     const cards = s.cards || [], key = `kfc/${context}`;
     let known = new Set();
@@ -2094,6 +2207,7 @@ const LEARN_UI = (() => {
       else if (s.type === 'interactive') renderInteractive(el, '', s);
       else if (s.type === 'letters') renderLetters(el, '', s);
       else if (s.type === 'flashcards') renderFlashcards(el, '', s, `${pid}/${lid}/${si}`);
+      else if (s.type === 'trial') el.innerHTML = '<p>試煉關請在課程中進行。</p>';
       else el.innerHTML = `<h4>${U.esc(stepTitle(s, l))}</h4>${pageText(s) ? md(pageText(s).slice(0, 600)) : ''}`;
     });
     U.$$('[data-formula-jump]', body).forEach(a => a.onclick = e => { e.preventDefault(); const target = document.getElementById(a.getAttribute('href').slice(1)); if (target) { target.open = true; target.scrollIntoView({ block: 'start' }); target.querySelector('summary').focus({ preventScroll: true }); } });
