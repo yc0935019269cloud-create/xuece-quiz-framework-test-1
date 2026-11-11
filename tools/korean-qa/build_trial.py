@@ -14,6 +14,14 @@ JONG = [''] + list('ㄱㄲㄳㄴㄵㄶㄷㄹㄺㄻㄼㄽㄾㄿㅀㅁㅂㅄㅅㅆ
 DOUBLE = set('ㄳㄵㄶㄺㄻㄼㄽㄾㄿㅀㅄ')
 CONF = [list(x) for x in ('ㄱㅋㄲ', 'ㄷㅌㄸ', 'ㅂㅍㅃ', 'ㅅㅆ', 'ㅈㅊㅉ', 'ㄴㄹ', 'ㅁㅂ', 'ㅇㅎ',
                                'ㅓㅗ', 'ㅕㅛ', 'ㅜㅡ', 'ㅗㅜ', 'ㅐㅔ', 'ㅒㅖ', 'ㅙㅚㅞ', 'ㅘㅝ', 'ㅟㅢ')]
+# 聽力題要「聽得出差別」：干擾選項一律取自不同發音部位／不同母音類（使用者 2026-11-11：「不能出那麼像」）。
+CGROUP = ['ㄱㅋㄲ', 'ㄴㄷㅌㄸㄹ', 'ㅁㅂㅍㅃ', 'ㅅㅆㅈㅊㅉ', 'ㅇㅎ']
+VGROUP = ['ㅏㅑㅘ', 'ㅓㅕㅗㅛㅝ', 'ㅜㅠㅡ', 'ㅣㅟㅢ', 'ㅐㅒㅔㅖㅙㅚㅞ']
+# 跨組但聽起來仍接近的組合，也不放在同一題
+BAN = {frozenset(p) for p in ('ㅢㅡ', 'ㅟㅜ', 'ㅝㅜ', 'ㅘㅏ', 'ㅗㅜ', 'ㅛㅠ', 'ㅓㅡ')}
+W = 'ㅘㅙㅚㅝㅞㅟ'   # ㄨ 開頭的複合母音，一題最多一個
+BAN |= {frozenset((a, b)) for a in W for b in W if a != b}
+L2_MIN_DIST = 3
 VREP = {c: g[0] for g in ('ㅐㅔ', 'ㅒㅖ', 'ㅙㅚㅞ') for c in g}
 TREP = {c: g[0] for g in ('ㄱㄲㅋㄳㄺ', 'ㄴㄵㄶ', 'ㄷㅅㅆㅈㅊㅌㅎ', 'ㄹㄼㄽㄾㅀ', 'ㅁㄻ', 'ㅂㅍㄿㅄ', 'ㅇ') for c in g}
 
@@ -63,6 +71,46 @@ def mutations(word, pick):
     return list(dict.fromkeys(preferred + other))
 
 
+def group_of(ch):
+    return next(g for g in CGROUP + VGROUP if ch in g)
+
+
+def far_letters(ch, rng):
+    """L1：三個干擾字母各來自不同組，且都和答案不同組。"""
+    groups = [g for g in (CGROUP if ch in CHO else VGROUP) if ch not in g]
+    rng.shuffle(groups)
+    out = []
+    for g in groups:
+        ok = [c for c in g if all(frozenset((c, x)) not in BAN for x in [ch] + out)]
+        if ok:
+            out.append(rng.choice(ok))
+        if len(out) == 3:
+            return out
+    raise AssertionError(f'找不到夠不像的干擾字母：{ch}')
+
+
+def dist(a, b):
+    """兩個字詞正規化發音後，初聲／中聲／終聲不同的位置數；音節數不同時每多一個音節算 3。"""
+    na, nb = normal(a), normal(b)
+    d = 3 * abs(len(na) - len(nb))
+    return d + sum(x != y for p, q in zip(na, nb) for x, y in zip(p, q))
+
+
+def far_words(word, pool, rng):
+    """L2：三個別的真實字詞，和答案及彼此都至少差 L2_MIN_DIST 個位置；優先同音節數。"""
+    cands = [w for w in pool if w != word and dist(w, word) >= L2_MIN_DIST]
+    same = [w for w in cands if len(w) == len(word)]
+    other = [w for w in cands if len(w) != len(word)]
+    rng.shuffle(same); rng.shuffle(other)
+    out = []
+    for w in same + other:
+        if all(dist(w, x) >= L2_MIN_DIST for x in out):
+            out.append(w)
+        if len(out) == 3:
+            return out
+    raise AssertionError(f'找不到夠不像的干擾字：{word}')
+
+
 def four(answer, candidates, rng, norm=lambda x: x):
     result, seen = [answer], {norm(answer)}
     for x in candidates:
@@ -95,10 +143,11 @@ def generate(pack, words):
         return ' ／ '.join(out)
 
     bank = []
+    listenable = [w['w'] for w in words if w.get('listen') is not False]
     for x in letters:
         pool = CHO if x['ch'] in CHO else JUNG
         bank.append(dict(id='L1-' + x['ch'], kind='L1', dbl=False, audio=x['say'][0]['t'],
-                         answer=x['ch'], options=four(x['ch'], near(x['ch'], pool), rng, lambda c: VREP.get(c, c)),
+                         answer=x['ch'], options=four(x['ch'], far_letters(x['ch'], rng), rng, lambda c: VREP.get(c, c)),
                          zy=x['roman'], zh='子音' if pool is CHO else '母音'))
     for word in words:
         w = word['w']; pick = word.get('pick', len(w) - 1)
@@ -111,7 +160,7 @@ def generate(pack, words):
         candidates = mutations(w, pick)
         if word.get('listen') is not False:
             bank.append(dict(common, id='L2-' + w, kind='L2', answer=w,
-                             options=four(w, candidates, rng, normal)))
+                             options=four(w, far_words(w, listenable, rng), rng, normal)))
         tiles = answer.copy()
         extras = []
         if parts[2] in DOUBLE:
@@ -145,7 +194,13 @@ def validate(bank, words):
             if q['kind'] in ('L1', 'L2'):
                 norm = normal if q['kind'] == 'L2' else lambda c: VREP.get(c, c)
                 assert len({norm(x) for x in q['options']}) == 4, q['id']
-        if q['kind'] in ('L2', 'B2'):
+            if q['kind'] == 'L1':
+                assert len({group_of(x) for x in q['options']}) == 4, ('L1 干擾字母和答案同組', q['id'])
+                assert not any(frozenset((a, b)) in BAN for a in q['options'] for b in q['options'] if a != b), ('L1 選項太像', q['id'])
+            if q['kind'] == 'L2':
+                opts = q['options']
+                assert all(dist(a, b) >= L2_MIN_DIST for i, a in enumerate(opts) for b in opts[i + 1:]), ('L2 選項太像', q['id'])
+        if q['kind'] == 'B2':
             w, pick = q['word'], q['pick']
             for opt in q['options']:
                 if q['kind'] == 'B2':
