@@ -290,7 +290,7 @@ const LEARN_UI = (() => {
     } else if (s.type === 'flashcards') {
       L.push(`標題：${s.title || '單字卡'}`, s.body || '', ...(s.cards || []).map(x => `${x.ch}｜${x.tag}｜${x.zy}｜${x.how}`));
     } else if (s.type === 'letters') {
-      L.push(`標題：${s.title || '字母'}`, s.body || '', ...(s.groups || []).map(g => `【${g.name}】\n` + g.items.map(x => `${x.ch}（${[x.name, x.roman].filter(Boolean).join('，')}）：${x.desc || ''}`).join('\n')));
+      L.push(`標題：${s.title || '字母'}`, s.body || '', ...(s.groups || []).map(g => `【${g.name}】\n` + g.items.map(x => `${x.ch}（${[x.name, x.roman].filter(Boolean).join('，')}）：${x.desc || ''}${x.init ? '【字首和詞中念法不同】' + x.init.txt : ''}`).join('\n')));
     } else if (s.type === 'termlist') {
       L.push(`標題：${s.title || '構造清單'}`, s.body || '', ...(s.groups || []).map(g => `【${g.name}】\n` + g.items.map(x => `${x.zh}｜${x.en}${x.count != null ? `（提及 ${x.count} 次）` : ''}`).join('\n')));
     } else if (s.type === 'diagram') {
@@ -1558,7 +1558,7 @@ const LEARN_UI = (() => {
     body.innerHTML = head + `<h3>${U.esc(s.title || '字母')}</h3>${s.body ? md(s.body) : ''}` +
       (s.groups || []).map((g, gi) => `<section class="kl-g"><h4>${U.esc(g.name)}</h4>${g.desc ? `<div class="kl-gd">${md(g.desc)}</div>` : ''}<div class="kl-grid">${g.items.map(x => {
         const k = all.findIndex(a => a.x === x);
-        return `<button class="kl-t" data-k="${k}"><b lang="${U.esc(s.lang || '')}">${U.esc(x.ch)}</b><small>${U.esc(x.roman || '')}</small></button>`;
+        return `<button class="kl-t${x.init ? ' kl-init' : ''}" data-k="${k}"${x.init ? ' aria-label="' + U.esc(x.ch) + '，字首和詞中念法不同"' : ''}>${x.init ? '<i class="kl-mark">字首</i>' : ''}<b lang="${U.esc(s.lang || '')}">${U.esc(x.ch)}</b><small>${U.esc(x.roman || '')}</small></button>`;
       }).join('')}</div></section>`).join('');
     const say = (t, auto) => { if (typeof GLOSS !== 'undefined' && t) GLOSS.speak(t, { lang: s.lang || 'en' }); else if (!auto) U.toast('這台裝置沒辦法播放聲音'); };
     const open = k => {
@@ -1568,12 +1568,14 @@ const LEARN_UI = (() => {
         seen.add(k); const tile = body.querySelector(`.kl-t[data-k="${k}"]`); if (tile) tile.classList.add('seen');
         m.body.innerHTML = `<div class="kl-d"><div class="kl-dh"><b class="kl-big" lang="${U.esc(s.lang || '')}">${U.esc(x.ch)}</b><div><div class="kl-nm">${U.esc(x.name || '')}</div>${x.roman ? `<div class="kl-zy">近似音 <b>${U.esc(x.roman)}</b></div>` : ''}<div class="dim small-t">${U.esc(g.name)}</div></div></div>
           <div class="kl-say">${(x.say || []).map((v, i) => `<button class="px-btn small blue" data-say="${i}">🔊 ${U.esc(v.label)}<span lang="${U.esc(s.lang || '')}">${U.esc(v.t)}</span>${v.roman ? `<small>${U.esc(v.roman)}</small>` : ''}</button>`).join('')}</div>
+          ${x.init ? `<div class="kl-initbox"><b>⚑ 字首和詞中念法不同</b>${md(x.init.txt || '')}${x.init.ex ? `<div class="kl-ex"><button class="px-btn small" data-init-ex>🔊 <span lang="${U.esc(s.lang || '')}">${U.esc(x.init.ex.w)}</span></button> <span class="dim">${U.esc(x.init.ex.roman || '')}</span> ${U.esc(x.init.ex.zh || '')}${x.init.ex.hint ? `<small class="kl-hint">${U.esc(x.init.ex.hint)}</small>` : ''}</div>` : ''}</div>` : ''}
           ${x.img ? `<img class="kl-img" src="${U.esc(U.img(x.img))}" alt="${U.esc(x.ch + ' 的字形由來')}">` : ''}
           <div class="kl-desc">${md(x.desc || '')}</div>
           ${x.ex ? `<div class="kl-ex"><b>例字</b> <button class="px-btn small" data-ex>🔊 <span lang="${U.esc(s.lang || '')}">${U.esc(x.ex.w)}</span></button> <span class="dim">${U.esc(x.ex.roman || '')}</span> ${U.esc(x.ex.zh || '')}</div>` : ''}
           <div class="row kl-nav"><button class="px-btn small" data-nav="-1"${k ? '' : ' disabled'}>◀ 上一個</button><span class="dim small-t">${k + 1} / ${all.length}</span><button class="px-btn small" data-nav="1"${k < all.length - 1 ? '' : ' disabled'}>下一個 ▶</button></div></div>`;
         m.body.querySelectorAll('[data-say]').forEach(b => { b.onclick = () => say(x.say[+b.dataset.say].t); });
         const ex = m.body.querySelector('[data-ex]'); if (ex) ex.onclick = () => say(x.ex.w);
+        const iex = m.body.querySelector('[data-init-ex]'); if (iex) iex.onclick = () => say(x.init.ex.w);
         m.body.querySelectorAll('[data-nav]').forEach(b => { b.onclick = () => go(+b.dataset.nav); });
         if ((x.say || []).length) say(x.say[0].t, true);
       };
@@ -1753,8 +1755,8 @@ const LEARN_UI = (() => {
         <div class="kfc-toolbar"><span class="kfc-progress">第 ${deck.length ? Math.min(pos + 1, deck.length) : 0} / ${deck.length}</span><button class="px-btn small" data-kfc-shuffle aria-pressed="${shuffle}">🔀 打亂：${shuffle ? '開' : '關'}</button></div>
         <div class="kfc-counts" aria-live="polite">會念了 <b data-kfc-yes>${yes}</b>　還不會 <b data-kfc-no>${no}</b></div>
         ${c ? `<div class="kfc-viewport"><div class="kfc-mover"><div class="kfc-hint kfc-yes">會念了</div><div class="kfc-hint kfc-no">還不會</div><div class="kfc-card" role="button" tabindex="0" aria-label="單字卡正面，按空白鍵翻面">
-          <div class="kfc-face kfc-front" aria-hidden="false"><span class="kfc-tag kfc-tag-${c.tag === '子音' ? 'c' : c.tag === '母音' ? 'v' : 'f'}">${U.esc(c.tag)}</span><b lang="ko">${U.esc(c.ch)}</b><small>點一下翻面</small></div>
-          <div class="kfc-face kfc-back" aria-hidden="true"><b class="kfc-zy">${U.esc(c.zy)}</b><p>${U.esc(c.how)}</p><div><button class="px-btn" data-kfc-speak tabindex="-1" aria-label="播放發音">🔊</button> <small>${U.esc(c.say.roman || '')}</small></div></div>
+          <div class="kfc-face kfc-front" aria-hidden="false"><span class="kfc-tag kfc-tag-${c.tag === '子音' ? 'c' : c.tag === '母音' ? 'v' : 'f'}">${U.esc(c.tag)}</span>${c.init ? '<span class="kfc-mark">字首變音</span>' : ''}<b lang="ko">${U.esc(c.ch)}</b><small>點一下翻面</small></div>
+          <div class="kfc-face kfc-back" aria-hidden="true"><b class="kfc-zy">${U.esc(c.zy)}</b><p>${U.esc(c.how)}</p>${c.init ? `<div class="kfc-init">⚑ ${U.esc(c.init)}</div>` : ''}<div><button class="px-btn" data-kfc-speak tabindex="-1" aria-label="播放發音">🔊</button> <small>${U.esc(c.say.roman || '')}</small></div></div>
         </div></div></div><div class="kfc-actions"><button class="px-btn" data-kfc-grade="yes">← 會念了</button><button class="px-btn" data-kfc-grade="no">還不會 →</button></div>` : `<div class="kfc-summary" aria-live="polite"><h4>${no ? '這輪練習結束' : '完成！這些字母都會念了'}</h4><p>會念了 ${yes} 張、還不會 ${no} 張</p>${no ? `<button class="px-btn blue" data-kfc-retry>只練還不會的 ${no} 張</button>` : '<p>可以切換分類，或全部重來再檢查一次。</p>'}</div>`}
         <div class="kfc-actions"><button class="px-btn small" data-kfc-undo ${!history.length || busy ? 'disabled' : ''}>↶ 上一張</button><button class="px-btn small" data-kfc-reset>全部重來</button></div>`;
       root.querySelectorAll('[data-kfc-filter]').forEach(b => b.onclick = () => { if (busy) return; filter = b.dataset.kfcFilter; start(); });

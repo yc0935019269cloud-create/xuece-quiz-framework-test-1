@@ -39,6 +39,8 @@ def texts():
                             out.add((s['lang'], v['t']))
                         if x.get('ex'):
                             out.add((s['lang'], x['ex']['w']))
+                        if (x.get('init') or {}).get('ex'):
+                            out.add((s['lang'], x['init']['ex']['w']))
     return sorted(out)
 
 

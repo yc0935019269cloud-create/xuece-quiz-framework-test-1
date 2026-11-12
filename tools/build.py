@@ -714,6 +714,8 @@ def validate_pack(pack, Q, subj_ids, exam_ids=()):
                             if not isinstance(x, dict) or not is_str(x.get('ch')):
                                 R.err(SW, 'letters 的每個 item 需要 ch'); continue
                             x['desc'] = join_md(x.get('desc') or '')
+                            if 'init' in x and not (isinstance(x['init'], dict) and is_str(x['init'].get('txt'))):
+                                R.err(SW, f'letters 的 {x["ch"]} init 需要 txt')
                             if x.get('img') and not re.match(r'^(https?:|data:)', x['img']) and not os.path.exists(os.path.join(ROOT, x['img'])):
                                 R.warn(SW, f'找不到圖片 {x["img"]}')
             elif t == 'recap':
